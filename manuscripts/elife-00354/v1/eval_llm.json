@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C110"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The finding that all regenerated rice plants show significant methylation losses is well-supported by high-quality BS-seq data (15\u00d7 coverage, low error rates) from nine independent lines using rigorous statistical methods (Fischer's exact test, FDR < 0.01, stringent methylation difference thresholds). The experimental design, technical quality metrics, and analytical pipeline are clearly described and appropriate."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C44",
+      "C111",
+      "C112"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The stability of methylation losses across generations is strongly supported by longitudinal data showing 84% of T2 hypomethylated sites remain hypomethylated in T4 and T6 generations. The stringent DMR threshold (70% reduction) likely ensures homozygous changes were analyzed, consistent with observed stability. However, formal segregation analysis was not performed to definitively rule out heterozygous segregating sites."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C35",
+      "C63",
+      "C72",
+      "C78",
+      "C93",
+      "C94"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The enrichment of methylation losses at gene promoters is well-supported by statistical analysis comparing observed DMR overlap with 100 randomized control sets matching size and number distributions. The finding that DMRs are depleted at TEs but enriched at promoters is consistent across multiple lines and uses appropriate statistical controls."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C64",
+      "C80",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The association between promoter hypomethylation and gene expression changes is supported by integrated BS-seq and mRNA-seq data from seven lines. The directional bias toward upregulation, distance-dependent effect from TSS, and use of appropriate statistical thresholds (4-fold change, FDR < 0.01) strengthen the finding. However, causality is inferred from correlation rather than directly demonstrated."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C41",
+      "C42",
+      "C43",
+      "C59",
+      "C60"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The stochastic nature of methylation loss during tissue culture is well-demonstrated by analyzing untransformed callus and three regenerated plants from a single parent (WT2011). The observation of distinct methylation profiles in individual regenerants from the same parent, combined with evidence that losses occur in callus and are maintained upon regeneration, strongly supports the conclusion that tissue culture (not transformation) induces stochastic hypomethylation."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C62"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The association between DNA methylation loss and reduced 24-nt siRNA levels is supported by smRNA-seq data showing depletion at hypomethylated regions. This is consistent with known RdDM pathway biology where siRNAs direct DNA methylation. The correlation is clear from the data presented in Figure 3C."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C77"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "CHH hypermethylation in callus at gene promoters, and its complete elimination upon regeneration, is well-supported by BS-seq data from two callus samples and three regenerated plants. The finding extends prior Arabidopsis work and the inference that CHH hypermethylation is linked to the dedifferentiated state is reasonable given the temporal pattern, though the mechanism is not explored."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The absence of global TE hypomethylation in rice callus, contrasting with Arabidopsis, is supported by BS-seq data analysis. This represents a clear species difference in tissue culture response and is appropriately noted as distinct from prior findings."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C66"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The observation that lines from the same original regenerant show similar methylation profiles while different regenerants show different affected genes is supported by hierarchical clustering (Figure 1E) and mRNA-seq analysis (Figure 4\u2014figure supplement 3). This demonstrates both the heritability of specific changes and the stochastic nature of which sites are affected."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C49"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the data demonstrate stable epigenetic changes and gene expression alterations, the direct link to somaclonal variation (phenotypic variability) remains speculative. No phenotypic data are presented to demonstrate that the observed molecular changes actually cause phenotypic variation. This is acknowledged as a hypothesis supported by correlation with literature but requires experimental validation."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The claim that gene misexpression is a 'direct consequence' of methylation loss is inferred from correlation and directional bias but lacks experimental validation. No functional experiments (e.g., targeted demethylation, methylation restoration) were performed to establish causality. The correlation is strong and biologically plausible, but the causal claim exceeds what the correlative data can support."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "The claim that breeding crosses 'are likely to correct the vast majority of tissue culture-induced epigenetic changes' is speculative and not supported by data in this study. No experiments tracking methylation through crosses were performed. Given that 84% of changes are stable across self-fertilized generations, the assumption that outcrossing would eliminate these changes requires experimental validation."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The relationship between methylation loss and TE reactivation is unclear from the data. While subtle methylation depletion is observed at reactivated TEs, the authors explicitly state the association 'was not clear' and data are not shown. The inference that methylation loss 'may in part be responsible' for TE reactivation is weakly supported and requires further investigation."
+  }
+]

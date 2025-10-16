@@ -1,0 +1,207 @@
+{
+  "submission": {
+    "id": "269b056e-9021-45c8-9712-a5bb3a0332db",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:07:40.678439Z",
+    "updated_at": "2025-10-16T21:07:40.678439Z"
+  },
+  "content": [
+    {
+      "id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "submission_id": "269b056e-9021-45c8-9712-a5bb3a0332db",
+      "content_type": "manuscript",
+      "content_text": "# Launching eLife, Part 1\n\n## Authors\n\n- Randy Schekman \u2020\n- Mark Patterson\n- Fiona Watt\n- Detlef Weigel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe new open-access journal eLife has launched, making its first content available in PubMed Central. In addition to publishing science of the highest quality, the journal aims to improve both the peer-review process and the presentation of new research results.\n",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a2cdeda3-c92e-432d-9afe-f18f47ba3739",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C1",
+      "claim": "eLife is a new open-access journal",
+      "claim_type": "EXPLICIT",
+      "source_text": "The new open-access journal eLife has launched",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a definitional statement about the journal's access model, representing established fact about the journal's characteristics at the time of publication",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "37b6f1ae-7d53-42e8-9eb2-8c7ca6297d1b",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C2",
+      "claim": "eLife has launched",
+      "claim_type": "EXPLICIT",
+      "source_text": "The new open-access journal eLife has launched",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a factual statement about the operational status of the journal at the time of this manuscript",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "34d57f94-4b99-4a17-abfa-726dd4eaaa03",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C3",
+      "claim": "eLife has made its first content available in PubMed Central",
+      "claim_type": "EXPLICIT",
+      "source_text": "The new open-access journal eLife has launched, making its first content available in PubMed Central",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a factual statement about a specific action taken by the journal regarding content distribution",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "e74a9637-3df3-458c-8611-538c8d34077a",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C4",
+      "claim": "eLife aims to publish science of the highest quality",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition to publishing science of the highest quality, the journal aims to improve both the peer-review process and the presentation of new research results",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a stated goal or mission of the journal as declared by its editors",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "aee10cf4-a84e-49e1-a2f2-8d7292fe199a",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C5",
+      "claim": "eLife aims to improve the peer-review process",
+      "claim_type": "EXPLICIT",
+      "source_text": "the journal aims to improve both the peer-review process and the presentation of new research results",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an explicitly stated objective of the journal",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "c4163f7d-676f-4a5a-88e8-1fd405326d23",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C6",
+      "claim": "eLife aims to improve the presentation of new research results",
+      "claim_type": "EXPLICIT",
+      "source_text": "the journal aims to improve both the peer-review process and the presentation of new research results",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an explicitly stated objective of the journal",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "50614336-3c97-4b98-acb5-3be5c2a4adb1",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C7",
+      "claim": "The current peer-review process has room for improvement",
+      "claim_type": "IMPLICIT",
+      "source_text": "the journal aims to improve both the peer-review process and the presentation of new research results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The stated aim to improve the peer-review process logically implies that the current process is not optimal and can be enhanced",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "d65baae7-a28a-41fe-a806-711e7ac7d0c5",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "claim_id": "C8",
+      "claim": "The current presentation of research results has room for improvement",
+      "claim_type": "IMPLICIT",
+      "source_text": "the journal aims to improve both the peer-review process and the presentation of new research results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The stated aim to improve the presentation of research results logically implies that current presentation methods are not optimal",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6bb6000d-a101-4e45-92fa-cc2e1c0fadd7",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1-C3 represent verifiable factual statements about the journal's operational status and characteristics at the time of publication. The launch of eLife as an open-access journal and its content availability in PubMed Central are concrete, observable facts that can be independently confirmed and do not require experimental validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "159e45c7-2a66-4595-b217-faea6d9919ef",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C4-C6 represent stated aspirations and goals rather than demonstrated results. While these objectives are clearly articulated, the manuscript provides no evidence, methodology, or metrics to evaluate whether these aims will be or have been achieved. Assessment of these goals would require future evaluation of the journal's actual practices and outcomes.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    },
+    {
+      "id": "e4a01b9a-cd99-4bc1-9cc6-e72ad0074cf3",
+      "content_id": "fb59d8b0-b017-4e59-b88a-c88d93a2a3c6",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claims C7-C8 are implicit inferences about deficiencies in current scientific publishing practices. The manuscript provides no empirical evidence, literature review, or systematic analysis to support these assertions about the peer-review process or research presentation needing improvement. These claims rely entirely on unstated assumptions without supporting documentation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:07:40.678439Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a2cdeda3-c92e-432d-9afe-f18f47ba3739",
+      "result_id": "6bb6000d-a101-4e45-92fa-cc2e1c0fadd7"
+    },
+    {
+      "claim_id": "37b6f1ae-7d53-42e8-9eb2-8c7ca6297d1b",
+      "result_id": "6bb6000d-a101-4e45-92fa-cc2e1c0fadd7"
+    },
+    {
+      "claim_id": "34d57f94-4b99-4a17-abfa-726dd4eaaa03",
+      "result_id": "6bb6000d-a101-4e45-92fa-cc2e1c0fadd7"
+    },
+    {
+      "claim_id": "e74a9637-3df3-458c-8611-538c8d34077a",
+      "result_id": "159e45c7-2a66-4595-b217-faea6d9919ef"
+    },
+    {
+      "claim_id": "aee10cf4-a84e-49e1-a2f2-8d7292fe199a",
+      "result_id": "159e45c7-2a66-4595-b217-faea6d9919ef"
+    },
+    {
+      "claim_id": "c4163f7d-676f-4a5a-88e8-1fd405326d23",
+      "result_id": "159e45c7-2a66-4595-b217-faea6d9919ef"
+    },
+    {
+      "claim_id": "50614336-3c97-4b98-acb5-3be5c2a4adb1",
+      "result_id": "e4a01b9a-cd99-4bc1-9cc6-e72ad0074cf3"
+    },
+    {
+      "claim_id": "d65baae7-a28a-41fe-a806-711e7ac7d0c5",
+      "result_id": "e4a01b9a-cd99-4bc1-9cc6-e72ad0074cf3"
+    }
+  ],
+  "comparisons": []
+}

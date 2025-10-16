@@ -1,0 +1,2239 @@
+{
+  "submission": {
+    "id": "cb11079c-5a39-4879-80eb-057150c92a0a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:32:03.024285Z",
+    "updated_at": "2025-10-16T21:32:03.024285Z"
+  },
+  "content": [
+    {
+      "id": "46033364-2f99-4106-b437-5505fc668e93",
+      "submission_id": "cb11079c-5a39-4879-80eb-057150c92a0a",
+      "content_type": "manuscript",
+      "content_text": "# A novel sphingolipid-TORC1 pathway critically promotes postembryonic development in Caenorhabditis elegans\n\n## Authors\n\n- Huanhu Zhu<sup>1</sup>\n- Huali Shen<sup>1</sup>\n- Aileen K Sewell<sup>1</sup>\n- Marina Kniazeva<sup>1</sup>\n- Min Han<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, University of Colorado, Boulder Boulder United States\n2. Department of Molecular, Cellular and Developmental Biology University of Colorado, Boulder Boulder United States\n3. Department of Chemistry and Institute of Biomedical Sciences Fudan University Shanghai China\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00429.001 Regulation of animal development in response to nutritional cues is an intensely studied problem related to disease and aging. While extensive studies indicated roles of the Target of Rapamycin (TOR) in sensing certain nutrients for controlling growth and metabolism, the roles of fatty acids and lipids in TOR-involved nutrient/food responses are obscure. Caenorhabditis elegans halts postembryonic growth and development shortly after hatching in response to monomethyl branched-chain fatty acid (mmBCFA) deficiency. Here, we report that an mmBCFA-derived sphingolipid, d17iso-glucosylceramide, is a critical metabolite in regulating growth and development. Further analysis indicated that this lipid function is mediated by TORC1 and antagonized by the NPRL-2/3 complex in the intestine. Strikingly, the essential lipid function is bypassed by activating TORC1 or inhibiting NPRL-2/3. Our findings uncover a novel lipid-TORC1 signaling pathway that coordinates nutrient and metabolic status with growth and development, advancing our understanding of the physiological roles of mmBCFAs, ceramides, and TOR. DOI: http://dx.doi.org/10.7554/eLife.00429.001\n\n## Introduction\n\nRegulation of animal growth and development in response to nutritional cues is an intensely studied problem (Hietakangas and Cohen, 2009; Zoncu et al., 2011). In animals, nutrient signals are perceived in specialized tissues and are then communicated to all other tissues to coordinate growth and development. The target of rapamycin (TOR) complexes (TORC1 and TORC2) are known to function in sensing various nutrient signals (Ma and Blenis, 2009; Laplante and Sabatini, 2012; Zoncu et al., 2012), and their roles are connected to growth, metabolism, stress responses, and cancers (Hansen et al., 2008; He and Klionsky, 2009; Howell and Manning, 2011). While amino acids, energy, and growth factors have been described as nutrient inputs to TOR complexes, roles of lipid molecules as signals to these systems in controlling postembryonic growth and development were not known. Clearly, it is also essential to use whole-animal models to investigate how different signaling systems in different tissues interact to specify decisions regarding postembryonic development and behaviors.\n\nIn Caenorhabditis elegans, the first larval stage has been established as a model system for the study of animal growth and development in response to food availability. When hatched in food-free surroundings, this nematode enters a quiescent state, termed L1 diapause (Johnson et al., 1984; Munoz and Riddle, 2003; Baugh and Sternberg, 2006). An insulin/IGF-1 receptor signaling (IIS) pathway plays a critical role in the induction of L1 diapause and survival of the developmentally arrested animals (Gems et al., 1998; Baugh and Sternberg, 2006; Kniazeva et al., 2008; Lee and Ashrafi, 2008; Jones et al., 2009; Soukas et al., 2009). Moreover, TOR complexes have also been indicated to play prominent roles in regulating postembryonic growth and lifespan in C. elegans (Vellai et al., 2003; Syntichaki et al., 2007; Hansen et al., 2008; Honjoh et al., 2009; Lucanic et al., 2011).\n\nMonomethyl branched-chain fatty acids (mmBCFAs) are widely present in bacteria, plants, and animals, including humans (Nicolaides and Ray, 1965; Ran-Ressler et al., 2008). In mammals, mmBCFAs are derived from branched-chain amino acids (BCAAs) (Morii and Kaneda, 1982; Oku et al., 1994), although the remainder of the de novo pathway has not been delineated. The physiological roles of these FA variants are essentially unknown, even though they were found to be present at very high levels in certain tissues (Nicolaides and Ray, 1965; Ran-Ressler et al., 2008). In C. elegans, readily detectable mmBCFAs C15ISO and C17ISO are synthesized from the BCAA leucine (Kniazeva et al., 2004). The key enzymes in this de novo synthesis pathway, including the branched-chain ketoacid dehydrogenase complex (BCKDC), an FA elongase (ELO-5), and an acyl CoA synthetase (ACS-1), are evolutionarily conserved (Kniazeva et al., 2004, 2008).\n\nWe have previously shown that newly hatched C. elegans that are deficient for mmBCFAs cannot initiate postembryonic growth and development, and instead enter L1 diapause. Further genetic analysis suggested that this developmental arrest is independent of the IIS pathway (Kniazeva et al., 2004, 2008). It was not clear whether the essential roles of mmBCFAs and their derived lipids were due to structural requirements for animal development, as was suggested by other studies, or due to regulatory functions specific to cellular signaling processes. Testing these hypotheses using model organisms is highly significant because roles of fatty acids and lipids function as nutrient signals for postembryonic development are in general poorly understood.\n\nIn this study, we discovered that (1) an mmBCFA-derived glucosylceramide (d17iso-GlcCer) mediates the function of mmBCFAs in promoting postembryonic growth and development and (2) d17iso-GlcCer acts through a signaling system that includes the NPRL-2/NPRL-3 protein complex (negative factor) and TORC1 (positive factor) to promote postembryonic development.\n\n## Results\n\n## A sphingolipid composed of a mmBCFA-derived long chain base mediates the essential role of mmBCFAs in the initiation of postembryonic growth and development\n\nelo-5 loss-of-function mutants (termed elo-5(\u2212) hereafter) are deficient for mmBCFAs and are developmentally arrested at the early L1 stage. This phenotype is completely rescued by dietary supplementation of mmBCFAs (Kniazeva et al., 2004, 2008). We found that in mmBCFA-deficient elo-5(\u2212) larvae, the amount of mmBCFA-containing sphingolipids were dramatically reduced and thus asked if this mmBCFA function is mediated by a sphingolipid.\n\nSphingolipids are a class of well-known bioactive lipids (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sphingolipid biogenesis pathway in C. elegans, including the catalytic enzymes (blue) and corresponding genes (red) used in this study. Molecular structures in green and in light blue indicate the long chain base and side chain fatty acid, respectively. (B) Summary of growth phenotype of various mutants with indicated lipid supplementations. elo-5(gk208), cgt-1(tm1027), and cgt-3(tm504) were the alleles of the (\u2212) mutants. LCB: long chain base; SPA: sphinganine. See Supplementary file 1 for numerical data or more detailed description of the phenotypes. (C) Mass spectrometry of iso-branched d17iso-sphinganine (d17iso-SPA) isolated from the bacteria S. spiritivorum. The major peak (m/z = 288.4) corresponds to d17iso-SPA in each panel. The lower panel shows fragmentation of d17iso-SPA by MS-MS scan. The fragment peaks are labeled with the name of lost residues. (D) d17iso-SPA rescues elo-5(\u2212) animals more efficiently than C15ISO and C17ISO. Error bar, SD. (E) Gas chromatography of methyl-esterified fatty acid extracts from rescued elo-5(\u2212) animals fed with d17iso-SPA. Low concentration of d17iso-SPA (second and third panels) supplement did not restore C15iso or C17iso fatty acid levels.DOI: http://dx.doi.org/10.7554/eLife.00429.003\n\nWe then examined if dietary supplementation with either of these two types of sphingolipids could substitute for mmBCFAs to rescue elo-5(\u2212) animals from L1 arrest. Because the d17iso-LCB was not commercially available, we purified d17iso-sphinganine (d17iso-SPA; Figure 1A) from a d17iso-sphingolipid producing bacteria S. spiritivorum (Yabuuchi et al., 1983) using mass spectrometry analysis. This purified d17iso-SPA fraction, but not a chemically synthesized c17iso-sphingolipid with a straight-chain d18:1-LCB or a straight-chain LCB d16-SPA, was found to be sufficient to overcome elo-5(\u2212) L1 arrest (Figure 1B,C; Supplementary file 1). Additionally, efficient rescue was also achieved with a custom synthesized d17iso-SPA (Figure 1D). Therefore, d17iso-sphingolipid is sufficient to promote the postembryonic growth and development of mmBCFA-deficient animals.\n\nWe then carried out further tests to confirm that this rescue effect of d17iso-SPA supplementation resulted from the function of this metabolite itself, but not from its catabolic conversion back to C15ISO or C17ISO. First, we fed elo-5(\u2212) larvae with various quantities of C15ISO, C17ISO, or d17iso-SPA. We observed that d17iso-SPA suppressed the L1 arrest at a much lower concentration than C15ISO or C17ISO (Figure 1D). Second, we observed that the low concentrations of d17iso-SPA suppressed the L1 arrest without restoring mmBCFA levels (Figure 1E). Finally, we found that supplementation with d17iso-SPA, but not mmBCFAs, also suppressed the L1 arrest phenotype caused by feeding RNAi of sptl-1, a gene encoding a serine palmitoyltransferase homolog in C. elegans required for d17iso-SPA biosynthesis (Figure 1A,B; Seamen et al., 2009). We thus conclude that mmBCFAs promote postembryonic development through d17iso-SPA.\n\nThis growth-promoting function of d17iso-SPA may be mediated by a more complex sphingolipid derived from it. Because it is technically difficult to purify or synthesize sphingolipids of more complex structure (e.g., glucosylceramide [GlcCer]) and directly test their effect by dietary supplementation, we examined additional enzymes involved in sphingolipid synthesis. Specifically, fath-1(C25A1.5) encodes a homolog of mammalian fatty acid 2-hydrolase (FA2H) responsible for the synthesis of the FA side chain of ceramides, whereas cgt-1 and cgt-3 encode two ceramide glucosyltransferases that glucosylate ceramides to GlcCer (Figure 1A). Both fath-1(RNAi)-treated animals (Figure 1B; Supplementary file 1) and the cgt-1(\u2212);cgt-3(\u2212) double mutant (Marza et al., 2009) cause larval arrest. We found the arrest under either condition could not be overcome by feeding d17iso-SPA (Figure 1B; Supplementary file 1). Disrupting the function of glycosyltransferases that further modify GlcCer does not cause larval arrest (Griffitts et al., 2003). These results suggest that d17iso-glucosylceramide (d17iso-GlcCer) (Figure 1A) may be the lipid molecule that mediates the role of mmBCFAs and d17iso-SPA in promoting postembryonic growth and development in C. elegans.\n\n## Mutation ku540 permits mmBCFA-depleted C. elegans to bypass L1 arrest and propagate continuously\n\nd17iso-sphingolipid may play either a structural or regulatory role for the initiation of postembryonic development. If it is the latter, the requirement of d17iso-sphingolipid for postembryonic development might be bypassed by genetically activating the downstream regulatory pathway. To test this possibility and identify the mechanism, we performed a genetic screen, modified from a previous screen (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig2-v1.jpg)\n\n**Figure 2.:** ku540 mutant suppresses L1 arrest of mmBCFA and sphingolipid biosynthetic mutants without restoring the levels of mmBCFAs.(A) Screening strategy to isolate elo-5(\u2212) suppressors. Green-colored C. elegans carry the extrachromosomal array containing copies of the elo-5(+), sur-5-gfp, and rol-6(dn) genes. (B) Percentages of animals reaching adulthood (bypass L1 arrest) when fed with/without C17ISO supplement. elo-5(\u2212);ku540 mutant animals reach adulthood without C17ISO supplement. Error bar, SD. (C) Images showing that elo-5(\u2212) animals arrested at L1 and elo-5(\u2212);ku540 animals reached adulthood. (D) Mass spectrometry by precursor scan m/z = \u2212241.2 showing no detectable C15FA-containing lipids in elo-5(\u2212);ku540 animals. Numeric data for the levels of PA and PE are shown in Figure 2\u2014figure supplement 1A. (E) Bar graph of relative FA composition by gas chromatography (GC) of methyl-esterified fatty acid extracts. These data indicate no detectable C15ISO or C17ISO was restored in elo-5(\u2212) ku540 animals. GC graph is shown in Figure 2\u2014figure supplement 1B. (F) and (G) Mass spectrometry of d17iso-ceramide\u2013containing lipids by precursor scan m/z = +250.3, and d16-ceramide\u2013containing lipids by precursor scan m/z = +236.3 (F). d17iso-ceramides and d17iso-glucosylceramides are detectable in wild-type but not elo-5(\u2212);ku540 animals (G). In contrast, d16-ceramides and d16-glucosylceramides are present in elo-5(\u2212);ku540, but not wild-type, animals. Numeric data for relevant peaks are shown in Figure 2\u2014figure supplement 1C,D. (H) and (I) Percentages of animals of the indicated genotypes and treatment that reached adulthood. Error bar, SD. (H) The addition of ku540 dramatically suppressed the L1 arrest phenotype of cgt-1(\u2212);cgt-3(RNAi) with and without the C17ISO supplement. The inclusion of elo-5(\u2212) was due to its close linkage with ku540. When C17ISO was added to remove the negative effect of elo-5(\u2212), about 90% of elo-5(\u2212);ku540; cgt-1(\u2212);cgt-3(RNAi) animals reached adulthood. C17ISO itself does not rescue the phenotype. (I). ku540 suppressed the L1 arrest phenotype the cgt-1(\u2212);cgt-3 (\u2212) double mutants (83.4%, n = 126). In this particular test, elo-5(\u2212) ku540;cgt-1(\u2212);cgt-3(\u2212) homozygous animals were the progeny of elo-5(\u2212/+) ku540(\u2212/+);cgt-1(\u2212/+);cgt-3(\u2212) heterozygous mothers, and the presented data were obtained after normalizing against heterozygous populations (see \u2018Materials and methods\u2019). In all the other tests shown in Figure 2, elo-5(\u2212) ku540 homozygous animals were the progeny of homozygous mothers.DOI: http://dx.doi.org/10.7554/eLife.00429.004\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** elo-5(\u2212) ku540 animals.(A) Tables show relative intensities of the five strongest signals by mass spectrometry precursor scan (m/z = \u2212241.2) in wild-type animals (second right column) and their normalized relative intensities in elo-5(\u2212) ku540 animals (right column). The low intensities of these lipids in elo-5(\u2212) ku540 animals indicate that the C15ISO mmBCFA level was not restored elo-5(\u2212) ku540 animals. (B) Gas chromatography of methyl-esterified fatty acid extracts showing no detectable C15ISO or C17ISO in elo-5(\u2212) ku540 animals. (C) Table shows relative intensities of normal d17iso-sphingolipid by mass spectrometry precursor scan (m/z = +250.3) in wild-type animals (second right column) and their normalized relative intensities in elo-5(\u2212) ku540 animals (right column). The low intensities of these lipids in elo-5(\u2212) ku540 animals indicate that the d17iso-sphingolipid level was not restored elo-5(\u2212) ku540 animals. (D) Table shows relative intensities of abnormal d16-sphingolipid by mass spectrometry precursor scan (m/z = +238.3) in elo-5(\u2212) ku540 animals (second right column). These sphingolipids are not present in wild-type animals (right column).DOI: http://dx.doi.org/10.7554/eLife.00429.005\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** fath-1(\u2212) by nprl-3(ku540).Microscopic images showing that nprl-3(ku540) suppresses the L1 arrest phenotype of fath-1 (injection RNAi) with or without C17ISO supplementation.DOI: http://dx.doi.org/10.7554/eLife.00429.006\n\nMass spectrometry (MS) and gas chromatography (GC) analyses indicated that elo-5(\u2212);ku540 did not restore mmBCFA levels, and consequently the levels of d17iso-sphingolipids (Figure 2D\u2013G). elo-5(\u2212);ku540 animals had no detectable C15ISO-containing or C17ISO-containing lipids (Figure 2D,E, Figure 2\u2014figure supplement 1A,B). In contrast to wild type animals, elo-5(-);ku540 animals had ceramides and glucosylceramides containing straight chain d16LCB rather than d17isoLCB (Figure 2F,G, Figure 2\u2014figure supplement 1C,D), which is similar to the elo-5(\u2212) single mutant (Entchev et al., 2008). These data indicated that the suppression of L1 arrest by the ku540 mutation is neither due to a change in mmBCFA nor the metabolism of the derived sphingolipids. Therefore, our data suggest that ku540 renders mmBCFAs nonessential for C. elegans development.\n\n## Mutation ku540 also permits animals to bypass the requirement for d17iso-GlcCer in postembryonic development\n\nThe above results suggested that ku540 might modify a signaling pathway downstream of d17iso-sphingolipids. If so, ku540 should also suppress mutations disrupting the biosynthesis of this sphingolipid. This question was addressed by the following tests. As shown above, RNAi of fath-1, or mutating both cgt-1 and cgt-3, caused larval arrest that could not be rescued by feeding with either mmBCFAs or d17iso-SPA (Figure 1A,B). We found that the L1 arrest under both conditions, just like the arrest caused by elo-5(\u2212), was effectively suppressed by ku540 (Figure 2H,I and Figure 2\u2014figure supplement 2). These results provided strong evidence that d17iso-GlcCer mediated the roles of mmBCFAs and d17iso-SPA in postembryonic development. Taken together, our biochemical and genetic data indicate that ku540 bypasses the requirement of mmBCFAs and d17iso-GlcCer in development and does so by modifying a regulatory function downstream of d17iso-GlcCer.\n\n## ku540 is a loss-of-function mutation of nprl-3 that may function with nprl-2\n\nWe cloned the gene containing the\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig3-v1.jpg)\n\n**Figure 3.:** ku540 is a loss-of-function missense mutation of nprl-3.(A) Predicted structure and position of the ku540 mutation in the nprl-3 gene (F35H10.7). (B) Abbreviated alignment of C. elegans NPRL-3 with its orthologs in other organisms. (C) C. elegans images showing nprl-3(RNAi) mimics the effect of the ku540 mutation in rescuing the L1 arrest phenotype caused by blocking mmBCFA or glucosyl-ceramide biosynthesis. nprl-3 dsRNA injection rescued 61.0% of elo-5(\u2212) (n = 123) and 6.8% of cgt-1(\u2212) cgt-3(\u2212) (n = 71) animals to or beyond L3 stage. nprl-2 dsRNA injection also rescued 42.4% of elo-5(\u2212) animals to or beyond L3 stage (n = 128). All data have been normalized to heterozygous populations (see \u2018Materials and methods\u2019).DOI: http://dx.doi.org/10.7554/eLife.00429.007\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** nprl-3.(A) A simplified diagram of the mapping process. ku540 is genetically linked to the E03H12 SNP marker on chromosome IV (upper section). Further three-point mapping narrowed the ku540 locus to near unc-24, by visible markers (red) and by physical mutations (blue) found by genomic deep sequencing (middle section). The three candidate gene mutations resulting in amino acid changes are shown (lower section). (B) DIC and fluorescence images showing two representative animals carrying a nprl-3 promoter::GFP transgene. The head is indicated by a black arrow. GFP is visible in most tissues with stronger expression seen in the head and tail regions.DOI: http://dx.doi.org/10.7554/eLife.00429.008\n\nIn Saccharomyces cerevisiae, NPR3 was shown to form a heterodimer with NPR2. Mutations in both proteins cause multiple growth defects when cells were cultured in low-quality amino acid conditions (Neklesa and Davis, 2009). We found that RNAi by dsRNA injection of the C. elegans NPR2 homolog nprl-2 (F49E8.1) also suppressed the developmental arrest of elo-5(\u2212) larvae (Figure 3C). This suggested that NPRL-2 and NPRL-3 in C. elegans may also function in a complex to negatively impact mmBCFA/d17iso-GlcCer-mediated L1 growth.\n\n## NPRL-3 regulates d17iso-GlcCer function in L1 growth by repressing TORC1 activity\n\nThe NPR2/3 complex was proposed to be a negative regulator of the TOR pathway in S. cerevisiae, based on the observations that mutations in these two genes caused growth defects in an amino acid scarce environment and that the defects could be effectively suppressed by blocking the TOR pathway (Neklesa and Davis, 2009). We thus explored the possibility that TOR Complex 1 (TORC1) is also the downstream target of NPRL2/3 in growth regulation in C. elegans and that nprl-3(ku540) alleviates d17iso-GlcCer deficiency-induced growth arrest by activating the TORC1 pathway.\n\nWe reasoned that if reducing nprl-2/3 activity rescued elo-5(\u2212) L1 growth by up-regulating the TORC1 pathway in C. elegans, then reducing, but not eliminating, TORC1 activity may reverse the rescue effects of nprl-3(ku540) on elo-5(\u2212) mutant background. Caenorhabditis elegans has orthologs of key components of mammalian TORC1, including regulatory elements raga-1 (RagA) and rheb-1 (Rheb) (Long et al., 2002; Schreiber et al., 2010). Feeding RNAi of raga-1 and rheb-1 have been shown to be specific and effective to reduce, but not eliminate, TORC1 function (Hansen et al., 2007; Syntichaki et al., 2007; Lemire et al., 2009; Figure 4\u2014figure supplement 1; see \u2018Materials and methods\u2019). We thus tested the effect of raga-1(RNAi) and rheb-1(RNAi) on elo-5(\u2212) nprl-3(ku540) mutants.\n\nWhile nprl-3(ku540) effectively suppressed the L1 arrest phenotype of elo-5(\u2212), the suppression dramatically decreased when raga-1(RNAi) or rheb-1(RNAi) were applied to the elo-5(\u2212) nprl-3(ku540) double mutant (Table 1). This indicates that the rescue effect of nprl-3(ku540) on elo-5(\u2212) depends on intact TORC1 activity.10.7554/eLife.00429.009Table 1.Intact TORC1 function is necessary for mmBCFA-mediated growth regulationDOI: http://dx.doi.org/10.7554/eLife.00429.009GenotypeRNAiDietary C17ISONormalized % of F1 reached adulthoodNpelo-5(\u2212)Vector\u22120208elo-5(\u2212)Vector+86.92050elo-5(\u2212) nprl-3(\u2212)Vector\u221271.569elo-5(\u2212) nprl-3(\u2212)Vector+111.51030.24elo-5(\u2212) nprl-3(\u2212)raga-1 (a)\u221235.556elo-5(\u2212) nprl-3(\u2212)raga-1 (a)+102.5830.031elo-5(\u2212) nprl-3(\u2212)raga-1 (b)\u221225.5214elo-5(\u2212) nprl-3(\u2212)raga-1 (b)+88.02790.00001elo-5(\u2212) nprl-3(\u2212)rheb-1 (a)\u221214.2351elo-5(\u2212) nprl-3(\u2212)rheb-1 (a)+64.65260.0000001elo-5(\u2212) nprl-3(\u2212)rheb-1 (b)\u221232.5201elo-5(\u2212) nprl-3(\u2212)rheb-1 (b)+86.01160.0037elo-5(\u2212) nprl-3(\u2212)rsks-1 (a)\u221215.068elo-5(\u2212) nprl-3(\u2212)rsks-1 (a)+72.5830.022elo-5(\u2212) nprl-3(\u2212)rsks-1 (b)\u221219.0183elo-5(\u2212) nprl-3(\u2212)rsks-1 (b)+61.01800.0034elo-5(\u2212) nprl-3(\u2212)ife-2 (a)\u221210.5144elo-5(\u2212) nprl-3(\u2212)ife-2 (a)+71.5490.003elo-5(\u2212) nprl-3(\u2212)ife-2 (b)\u22120103elo-5(\u2212) nprl-3(\u2212)ife-2 (b)+103.51500elo-5(\u2212) nprl-3(\u2212)let-363\u22120>100elo-5(\u2212) nprl-3(\u2212)let-363+0>100NAPercentages of elo-5(\u2212);nprl-3(ku540) homozygotes with the indicated RNAi treatments that reached adulthood, where (a) and (b) indicate two different RNAi constructs targeting different parts of the same gene. The presented percentage of elo-5(\u2212) nprl-3(ku540) animals that reached adulthood was calculated by normalizing against the percentage of elo-5(\u2212/+) nprl-3(ku540)/+ heterozygotes (see \u2018Materials and methods\u2019 for detail). Without C17ISO supplementation, RNAi knockdown of multiple TORC1 components reverted elo-5(\u2212);nprl-3(ku540) animals to larval arrest.\n\nWe carried out further analyses by repeating the above tests in the presence of dietary C17ISO that rescues the defects of elo-5(\u2212). We found that the effects of raga-1(RNAi) and rheb-1(RNAi) in the above tests were essentially eliminated by C17ISO supplementation (Table 1). This result further indicates that the reversal of the nprl-3(ku540) suppression by raga-1(RNAi) or rheb-1(RNAi) depends on mmBCFA deficiency. In other words, reducing, but not eliminating, TORC1 activity neutralized the effect of nprl-3(ku540) and restored the L1 arrest phenotype of elo-5(\u2212).\n\nTo further examine whether the rescuing effect of nprl-3(ku540) on elo-5(\u2212) L1 arrest required the canonical activity of TORC1, we used RNAi to knock down C. elegans orthologs of elf4E (ife-2) and p70S6K(rsks-1), two well-known downstream targets of TORC1 (Long et al., 2002; Syntichaki et al., 2007; Anjum and Blenis, 2008; Sheaffer et al., 2008). We found that elo-5(\u2212) nprl-3(ku540) animals treated with ife-2(RNAi) or rsks-1(RNAi), with or without C17ISO supplement, yielded results similar to those obtained with raga-1(RNAi) and rheb-1(RNAi) (Table 1). Taken together, these results indicate that TORC1 acts downstream of d17iso-GlcCer and is negatively regulated by NPRL-3.\n\nThe let-363/TOR(\u2212) mutations cause late larval arrest and other severe defects (Long et al., 2002), but injection RNAi causes an early embryonic lethal phenotype (Sonnichsen et al., 2005), indicating that LET-363/TOR, a key component of both TORC1 and TORC2, plays critical regulatory roles in a broad range of developmental stages and a maternal effect largely masks its roles in earlier stages, including its likely functions during L1 growth. The defects caused by feeding RNAi of let-363/TOR (Long et al., 2002) are more severe than that by feeding RNAi of other TORC1 components, described above. elo-5(\u2212) nprl-3(\u2212);let-363(RNAi) animals displayed pleiotropic phenotypes that could not be rescued by C17ISO supplement (Table 1), which is consistent with TORC1 acting downstream of ELO-5.\n\n## Hyperactivation of TORC1 bypasses mmBCFA deficiency\u2013induced L1 arrest\n\nIf d17iso-GlcCer mainly acts through TORC1 for the growth regulation function, constitutive activation of TORC1 should be sufficient to overcome the L1 arrest of\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative florescent images showing that elo-5(\u2212) animals with each of four RFP-marked transgenes, which constitutively activated TORC1, bypass L1 arrest to reach beyond L3 stage (statistical data are described in the text and Figure 4B). The rpl-28 promoter drives ubiquitous expression, whereas the ges-1 promoter drives the expression specifically in the intestine (Edgar and McGhee, 1986). Arrow in the upper left panel marks an arrested L1. (B) Percentage of homozygous elo-5(\u2212) animals carrying the daf-15::rap-1(22) transgene reached L3-adult stages (n = 161). The data were normalized against that of elo-5(\u2212/+) heterozygous animals. Error bar, SD. (C). Immunofluorescence images showing FIB-1 expression and localization in intestinal cells of L3 larvae. DAPI-stained nuclei are blue. Green fluorescence indicates the staining of antibody against FIB-1. FIB-1 localization in the nucleoli is largely abolished in elo-5(\u2212) animals and restored by the nprl-3(\u2212) mutation (the percentages of condensed nucleoli localization for the three genotypes from top to bottom are 95% [n=42], 24% [n=112] and 93% [n=68]). (D) A model for the regulation of postembryonic growth and development by mmBCFAs and GlcCer.DOI: http://dx.doi.org/10.7554/eLife.00429.010\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** C. elegans with raga-1(RNAi) treatment.Animals without C17ISO supplement were developmentally arrested at L1 stage (arrows). Animals with C17ISO supplement reached adulthood (arrowhead), suggesting that the arrest depends on mmBCFA deficiency and is not caused by RNAi itself.DOI: http://dx.doi.org/10.7554/eLife.00429.011\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Normalized percentages of elo-5(\u2212) animals that reached adulthood on various supplements. While 1 mM C17ISO could suppress the L1 arrest of elo-5(\u2212), 10 mM leucine could not. Error bar: SD.DOI: http://dx.doi.org/10.7554/eLife.00429.012\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Cartoon illustration of a simplified DAF-7/TGF-\u03b2 pathway in C. elegans. Mutations in daf-3, daf-5, or bra-1 have been shown to cause constitutive activity of the TGF-\u03b2 pathway and suppress dauer formation (Patterson and Padgett, 2000). (B) Percentages of animals of the indicated genotypes that reached adulthood on elo-5 (RNAi) plates. Mutation in none of these negative regulators of the daf-7 pathway permitted the elo-5(RNAi)\u2013treated animals to bypass L1 arrest, suggesting that the TGF-\u03b2 pathway does not act downstream of mmBCFAs. (C) Percentages of daf-7(\u2212) animals that exited dauer stage to reach adulthood on indicated RNAi plates. elo-5(RNAi) enhanced the constitutive dauer formation phenotype of a daf-7(\u2212) mutant. (D) Percentages of daf-7(\u2212) animals that exited dauer stage to reach adulthood on various branched lipid supplements. Neither C17ISO nor d17iso-SPA could suppress the constitutive dauer formation of daf-7(\u2212), suggesting that DAF-7/TGF-\u03b2 does not act upstream of mmBCFAs or d17iso-sphingolipid. (E) Percentages of asna-1(\u2212) animals that reached adulthood on plates with various branched-chain lipid supplements. asna-1 encodes a protein required for proper DAF-7/TGF-\u03b2 function and an asna-1(\u2212) mutation causes L1 arrest (Kao et al., 2007). Neither C17ISO nor d17iso-SPA permits asna-1(\u2212) animals to bypass L1 arrest.DOI: http://dx.doi.org/10.7554/eLife.00429.013\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A)\u2013(H) DIC and GFP images illustrating LMP-1::GFP (A\u2013D) and GLO-1::GFP (E\u2013H) expression patterns are similar throughout the intestine of young wild-type or elo-5(RNAi) larvae. Both LMP-1::GFP (A\u2013D) and GLO-1::GFP are lysosomal markers in C. elegans. These data indicate that lysosomal integrity is not disrupted in mmBCFA-deficient animals.DOI: http://dx.doi.org/10.7554/eLife.00429.014\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00429/elife-00429-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** let-363 -and elo-5-deficient animals.(A)\u2013(H) DIC and Rhodamine channel fluorescence images of larvae stained with Neutral red. (A\u2013D) let-363 homozygous L3 animals have increased size and intensity of Neutral red stained lysosomes (D) compared to the heterozygous control (B). (E\u2013H) elo-5 homozygous L1 arrested animals show similar Neutral red intensity and staining pattern (H) when compared to the heterozygous control (F). These data indicate that (1) lysosome integrity is not disrupted in elo-5(\u2212) animals, and (2) unlike let-363(\u2212), elo-5(\u2212) animals do not show increased Neutral red staining in the intestine.DOI: http://dx.doi.org/10.7554/eLife.00429.015\n\nThe second TORC1-activating transgene used was raga-1Q63L that has been proven to constitutively activate TORC1 both in mammals and C. elegans (Kim et al., 2008; Schreiber et al., 2010). We found that 50.4% of elo-5(\u2212) mutants containing the raga-1Q63L transgene bypassed L1 arrest and reached L3\u2013L4 stage (n = 248, p=1.0 \u00d7 10\u22126; normalized against elo-5(\u2212/+) heterozygotes containing the transgene; Figure 4A) while none of elo-5(\u2212) mutants without this transgene did (n = 136). Finally, we also tested a third TORC1-activating transgene, rheb-1Q71LQ72D, and found that it also permitted 41.4% of elo-5(\u2212) animals to grow beyond the L1 stage (n = 169; normalized against elo-5(\u2212/+) heterozygotes containing the transgene; Figure 4A). These results led to the conclusion that TORC1 acts downstream of d17iso-GlcCer to promote L1 growth and development and that this activity is negatively regulated by NPRL-2/3.\n\n## The mmBCFA/d17iso-GlcCer/TORC1 pathway acts in the intestine to promote postembryonic development\n\nPrevious studies on elo-5, acs-1, tat-2, and cgt-1/cgt-3 mutants suggested that biosynthesis and localization of mmBCFAs and their derived sphingolipids in the intestine are essential and sufficient for postembryonic development (Marza et al., 2009; Seamen et al., 2009; Kniazeva et al., 2012). The fact that elo-5(\u2212);nprl-3(ku540) animals treated with ife-2 RNAi, that targets intestinal but not neuronal expression of the gene (Syntichaki et al., 2007), are L1 arrested (Table 1) also points to the requirement of TORC1 activity in the intestine. To directly evaluate a role of intestinal TORC1 in mmBCFA/d17iso-GlcCer regulated growth, we made a raga-1Q63L TORC1 hyperactivating transgene driven by the intestinal-specific promoter ges-1 (Edgar and McGhee, 1986). We found that elo-5(\u2212) animals containing this transgene bypassed the L1 arrest (37.9%, n = 132, normalized against elo-5(\u2212/+) heterozygotes containing the transgene; Figure 4A). The rescue with the intestinal expression was similar to that by a ubiquitously expressed raga-1Q63L transgene (above). A neuronal-specific rgef-1 promoter\u2013driven (Brignull et al., 2006) raga-1Q63L, however, could not suppress the L1 arrest of elo-5(\u2212) animals (0%, n > 100). These results suggest that the intestinal d17iso-GlcCer/TORC1 pathway regulates postembryonic growth.\n\nAlthough the genetic data described above sufficiently indicate that TORC1 acts downstream of d17iso-GlcCer and NPRL-2/3 for L1 growth, we carried out further tests to observe downstream activity of TORC1 in the intestine. Because the biochemical assay for p70S6K phosphorylation has not been established in C. elegans\u2019 TOR-related studies, we adopted the strategy by Sheaffer et al. (2008), where localization of FIB-1, a Box C/D small nucleolar ribonucleoprotein (snoRNP) was used as a marker of TORC1 activation in C. elegans. In wild-type animals, FIB-1 is highly expressed and localized in the nucleolus, where it methylates pre-rRNAs during ribosome maturation, but the expression is decreased and no longer localized to the nucleolus in let-363/TOR(\u2212) animals (Sheaffer et al., 2008). We found that the nucleolar localized FIB-1 was dramatically reduced in intestinal cells of mmBCFA-deficient [elo-5(RNAi)] animals (Figure 4C). Furthermore, nprl-3(\u2212) rescued the FIB-1 expression and nucleolar localization in elo-5(\u2212) back to that of wild type (Figure 4C). Combining the results from the functional and biochemical assays described above, we conclude that TORC1 is the key downstream factor mediating mmBCFA and d17iso-GlcCer functions in the intestine to promote postembryonic growth and development (Figure 4D).\n\n## Discussion\n\n## Roles of the mmBCFA/GlcCer/TORC1 pathway in promoting postembryonic development\n\nIn this study, we uncovered and characterized a novel GlcCer-stimulated TORC1 pathway that promotes postembryonic development (Figure 4D). This discovery reveals a specific link between lipids and the TORC1 signaling pathway. Both ceramide and TORC1 have been individually implicated for roles in stress response, apoptosis, cancers, and other cellular processes by studies in C. elegans and mammals (Hannun and Obeid, 2008; Hansen et al., 2008; He and Klionsky, 2009; Howell and Manning, 2011; Laplante and Sabatini, 2012; Menuz et al., 2009; Zoncu et al., 2011). It is conceivable that some of these functions are mediated by this GlcCer/TORC1 signaling pathway. Moreover, our data suggest that this GlcCer/TORC1 pathway may serve as a \u2018check point\u2019 to coordinate metabolic status in the intestine with postembryonic growth and development. d17iso-GlcCer is a sphingolipid metabolite rather than a nutrient directly absorbed from food (Merrill et al., 1997); it is the product of a long biosynthetic pathway involving many enzymatic steps and thus may reflect the availability of many metabolites and enzymes.\n\nAlthough leucine is a precursor molecule of mmBCFA biosynthesis, this long lipid synthesis pathway is unlikely part of a mechanism to specifically sense the level of essential amino acids. Furthermore, mmBCFA levels are stable in starved L1 larvae (Kniazeva et al., 2008; Figure 4\u2014figure supplement 4C), suggesting that mmBCFA levels do not directly reflect the feeding status through a direct substrate\u2013product relationship. There are several reported leucine-sensing mechanisms, based on studies using tissue culture cells (Bonfils et al., 2012; Duran et al., 2012; Han et al., 2012; Zoncu et al., 2012). To test if such a pathway acts in parallel to the mmBCFA/d17iso-GlcCer pathway to promote TORC1 in the C. elegans intestine, we supplemented elo-5(\u2212) animals with a high level of dietary leucine (10 mM) and failed to observe any suppression of the L1 arrest phenotype (Figure 4\u2014figure supplement 2), consistent with the idea that TORC1 activation by mmBCFA/d17iso-GlcCer is essential in the intestine of L1 larvae and cannot be effectively compensated by another leucine/TORC1 mechanism in C. elegans.\n\nIn C. elegans, both the IIS and DAF-7/TGF-\u03b2 pathways have been shown to play critical roles in the regulation of postembryonic growth and development in response to nutrient/food availability (Baugh and Sternberg, 2006; Mukhopadhyay and Tissenbaum, 2007; Fielenbach and Antebi, 2008; Lee and Ashrafi, 2008; Jones et al., 2009; Soukas et al., 2009). Our previous data and this study indicated that the GlcCer/TORC1 pathway is initiated in the intestine (Figure 4) and is independent of the IIS pathway (Kniazeva et al., 2008). Our additional analysis also suggests that the GlcCer/TORC1 pathway is DAF-7/TGF-\u03b2 pathway independent (Figure 4\u2014figure supplement 3). This independence may facilitate the role of such a pathway to promote specific developmental events under specific physiological conditions.\n\n## The GlcCer/TORC1 signaling pathway is likely conserved in mammals\n\nThere are several reasons for us to believe that such a GlcCer/TORC1 pathway is likely conserved in mammals. First, the components of TORC1 are conserved between C. elegans and mammals. The NPRL-3 protein we identified in this pathway is conserved in all eukaryotes, and its negative regulatory role on TOR has been characterized in budding yeast (Neklesa and Davis, 2009). Several proteins (such as NPR2 and IML1) that are reported to form a complex with NPR3 in budding yeast have orthologs in C. elegans as well as mammals (Neklesa and Davis, 2009; Wu and Tu, 2011). NPRL2 (human ortholog of NPR2) and DEPDC5 (human ortholog of IML1) have been reported to function as tumor suppressors (Merrill et al., 1997; Li et al., 2004; Neklesa and Davis, 2009). This property is consistent with the role of this complex in repressing TOR-mediated growth regulation that was identified in budding yeast and this study. Second, a role for GlcCer in nutrient sensing is consistent with studies showing that ceramide and sphingolipids play roles in cell signaling and growth control in both invertebrates and mammals (Deng et al., 2008; Hannun and Obeid, 2008; Menuz et al., 2009). The finding that mouse mutants with blocked GlcCer biosynthesis die as early embryos suggests the essential role of these lipids in growth and development (Yamashita et al., 1999). Third, the TOR pathway is down-regulated by inhibiting the abnormally high GlcCer biosynthesis in polycystic kidney disease in mouse models (Natoli et al., 2010), suggesting a possible conserved link between GlcCer and TOR activities.\n\nIt is currently unknown whether an iso-branched LCB is also required for the potential role of GlcCer in mammals, given that most LCBs in mammals are straight-chain LCBs. However, it is important to note that mmBCFAs (derived from branched-chain amino acids) are also present in mammals. For example, they are constituents of sphingolipids in skin cells and the intestinal tract of human newborns. They are also found to be incorporated into LCBs (to form an iso- or an anteiso-LCB similar to that in C. elegans) in multiple mammalian tissues (Aungst, 1989; Karlsson, 1997; Oku et al., 2000; Ran-Ressler et al., 2008). Therefore, their important physiological functions, including possible roles in ceramide-involved growth regulation, may be assumed, albeit not yet uncovered experimentally.\n\n## Activation of TORC1 by d17iso-GlcCer\n\nHow does d17iso-GlcCer regulate the activity of TORC1? Recent work in mammalian cells has indicated that TORC1, for its role in sensing amino acids, localizes at the surface of the lysosome, likely in lipid rafts (Nada et al., 2009). If such a mechanism is conserved in all animals, conceptually, d17iso-GlcCer could act as a ligand that binds to a \u2018receptor\u2019 to either repress the NPRL-2/3 complex or activate the TOR complex at the surface of the lysosome. Alternatively, this lipid could be required for lysosome biogenesis or could be an essential constituent of the membrane microdomain that permits the proper localization or activity of TORC1 on the lysosome. By examining lysosomal markers LMP-1::GFP (Artal-Sanz et al., 2006; O\u2019Rourke et al., 2009; Rabbitts et al., 2008), GLO-1::GFP (Schroeder et al., 2007; Zhang et al., 2010), and Neutral red (Long et al., 2002), we did not observe obvious defects in lysosome formation in elo-5(\u2212) mutants (Figure 4\u2014figure supplements 4 and 5). Major defects in lysosome formation would also be inconsistent with our genetic suppression data and previous studies on GlcCer by others (Entchev et al., 2008; van der Poel et al., 2011). One possible mechanism is that d17iso-GlcCer acts through the V-ATPase pathway, since the lysosomal V-ATPase has been shown to be stimulated by GlcCer and to play an essential role in TORC1 activation in studies using tissue culture cells (van der Poel et al., 2011; Zoncu et al., 2011; Bar-Peled et al., 2012). Further biochemical and genetic analyses are needed to test this hypothesis in C. elegans.\n\nIt may be important to point out again that activation of TORC1 bypasses the robust L1 arrest phenotype caused by either mmBCFA or d17iso-GlcCer deficiency. Remarkably, the elo-5(\u2212); nprl-3(ku540) double mutants, still deficient for these lipids, propagate continuously. Therefore, the only essential biochemical role of d17iso-GlcCer might be to activate TORC1 or repress NPRL-3. In other words, the biochemical mechanism underlying this role of d17iso-GlcCer appears to be very specifically connected to TORC1 activation.\n\n## Materials and methods\n\n## Caenorhabditis elegans strains and maintenance\n\nThe following strains were obtained from the Caenorhabditis Genetics Center Database (CGC) or as indicated; wild-type N2 Bristol, elo-5(gk208), rrf-3(pk1426), daf-3(mgDf90), bra-1(nk1), daf-5(e1386), asna-1(ok938)/hT2[bli-4(e937)let?(q782)qIs48], let-363 (ok3018), pwIs50[lmp-1::GFP + Cbr-unc-119(+)], hjIs9 [ges-1p::glo-1::GFP + unc-119(+)]. The cgt-1(tm1027) and cgt-3(tm504) mutants were provided by the Mitani Lab (National BioResource Project, Tokyo, Japan). Caenorhabditis elegans were maintained at 20\u00b0C on NGM plates (referred to as standard plates) with Escherichia coli OP50 bacterial food (OP50/NGM). Washes and bleaching were done according to standard protocols (Stiernagle, 2006).\n\n## Dietary supplements\n\nFatty acids C13ISO, C17ISO (Larodan), C16:1 n7, C18:1 n7, and C20:4 n6 (Sigma), as well as C17iso-d18:1-Ceramide and d17iso-SPA (custom synthesis; Larodan) were prepared as 10 mM stocks in DMSO. Leucine (Sigma) was prepared as a 100 mM stock in water. A stock solution was mixed with 500 \u00b5l of OP50 overnight bacterial suspension in a 1:10 ratio.\n\n## Preparation of the C17ISO-deficient eggs and larvae\n\nUsing elo-5(gk208) mutants. elo-5(gk208) adults maintained on the plates with S. maltophlia (Kniazeva et al., 2008) were washed off in M9 buffer, bleached, and eggs were plated on NGM plates spotted with 300 \u00b5l of OP50 overnight liquid culture supplemented with 1 mM C13ISO, which is a less efficient mmBCFA supplement than C17ISO and allows apparent normal growth only in the first generation followed by uniformly arrested C17ISO-deficient L1s in the second generation. Control animals were prepared in the same way, except C17ISO was used as a supplement for the N2 strain instead of elo-5(gk208).Using RNAi. Adult animals of the corresponding strains were washed off OP50/NGM plates, bleached, and eggs plated on elo-5(RNAi) plates prepared according to the standard protocol. Adults of the next generation were bleached for eggs, producing C17ISO-deficient larvae.\n\n## Preparation of C17ISO-deficient late larvae and adults\n\nA mixed population of elo-5(gk208) mutants maintained on plates with C17ISO supplement, which promoted wild-type growth and proliferation, were collected, washed, and incubated for 1 hr in M9 before replating on OP50/NGM plates without supplement. The next day, animals were washed off and used in the corresponding experiments. Depletion of C17ISO was confirmed by GC analysis of the FA composition in total lipid extracts from a representative group of animals.\n\n## Lipid analysis by gas chromatography and mass spectrometry\n\nGas chromatography method was described in a previous report (Kniazeva et al., 2008). Mass spectrometry sample preparation was described in our previous report (Kniazeva et al., 2012). Briefly, lipid extracts were dissolved in 1 ml of methanol with 1 mM formic acid and subjected to quantitative lipid analysis using a 4000 Q-Trap mass spectrometer (AB Sciex). Samples were infused at a flow rate of 8 \u03bcl/min using a Harvard Apparatus syringe pump (Harvard Apparatus). The detailed scan modes are described in the figure legends.\n\n## Purification of d17iso-LCB from Sphingobacterium spiritivorum\n\nThe S. spiritivorum strain was obtained from ATCC (#33861) and cultured under the conditions suggested by www.atcc.org. The total lipids were extracted by the method of Bligh and Dyer (1959). The alkaline stable lipid fraction was purified as described previously (Naka et al., 2003). The hydrolysis of sphingolipids to generate side chain fatty acid and LCB fractions was done as described previously (Naka et al., 2003), with an additional last step using 100% methanol to extract the dry LCB fraction after evaporation of the chloroform solvent. The final fraction of LCB was verified by mass spectrum.\n\n## Isolation of nprl-3(ku540) through a genetic screen\n\nWe performed a screen that was significantly different from our previously published screen that resulted in isolation of three tat-2(\u2212) alleles that suppress elo-5(gk208) (Seamen et al., 2009). The original strain used in this genetic screen was elo-5(gk208) injected with elo-5(genomic rescuing), elo-5Promoter::GFP (Kniazeva et al., 2004), and rol-6(dn) constructs. L4-staged P0 animals were mutagenized with standard EMS treatment and then single cloned to 10-cm plates containing 1 mM C13ISO. Suppressor candidates were determined in the F2 generation by the ability to reach gravid adulthood without carrying the GFP or rol-6 marker and the ability to grow to gravid adulthood without any supplement. From \u223c2000 haploid genomes, 4 suppressor candidates were isolated. Among these four, and several suppressor mutations isolated in a previous screen (Seamen et al., 2009), only ku540 permits elo-5(\u2212) animals to grow indefinitely without any mmBCFA supplementation and without recovering the production of mmBCFAs.\n\nIn our previously published screen (Seamen et al., 2009), we isolated three mutations in tat-2 that can suppress elo-5(\u2212)\u2013induced L1 arrest in the presence of C13ISO, or temporarily suppress the L1 arrest for one generation without C13ISO supplement. The hypothesis was that tat-2(\u2212) alters the subcellular localization of certain mmBCFA-containing lipids so that their levels (from a slow C13ISO to C17ISO conversion or from maternal sources) are sufficiently maintained for one more generation. Therefore, tat-2(\u2212) does not bypass the requirement of mmBCFAs for growth. The tat-2(\u2212) mutations were also found to partially and temporarily suppress the lethality associated with disrupting the function of the enzyme (SPTL-1) in the first step of sphingolipid biosynthesis, suggesting a potential link between sphingolipids and mmBCFAs. However, this observation may not be interpreted as the proof that mmBCFAs function through sphingolipids for the following reasons. (1) Unlike feeding d17iso-SPA or the downstream suppressor nprl-3(ku540) that fully suppresses mmBCFA deficiency [elo-5(\u2212)]\u2013induced L1 arrest (this study), tat-2(\u2212)does not bypass the requirement of mmBCFAs for growth for more than one generation. (2) sptl-1(\u2212) disrupts all sphingolipid biosynthesis and its phenotype is, in contrast to elo-5(\u2212), highly pleiotropic, as animals showed various morphological and growth defects and die at various larval stages. (3) tat-2 does not exclusively function with mmBCFA-containing lipids; it is also a critical player in steroid metabolism as exemplified by a recent article (Liu et al., 2012). Therefore, the link between mmBCFA and sphingolipids through their interactions with tat-2 could be indirect and the partial suppression of sptl-1(\u2212) by tat-2(\u2212) could be due to suppression of mmBCFA-unrelated functions of sphingolipids.\n\n## SNP mapping of ku540 and cloning of the nprl-3 gene\n\nFor SNP mapping of ku540, we used a Hawaii strain based elo-5(gk208) mutant (Seamen et al., 2009) to cross with elo-5(gk208) ku540 animals and determined the locus of ku540 by linkage analysis (Davis et al., 2005). The three-point-mapping strain dpy-13(e184)elo-5(gk208)unc-24(e138) was also used in this study. The elo-5(\u2212)ku540 genomic DNA was prepared using the Genomic DNA Sample Preparation Kit (Illumina) and sent for Illumina deep sequencing (High Throughput Next-Generation Sequencing Core, University of Colorado). The raw data was analyzed using Maqgene (Bigelow et al., 2009), and candidate mutations were confirmed by PCR and sequencing. Homologs of NPRL-2 and NPRL-3 were identified at ensembl.org. The alignment among NPRL3 homologs was done using MacVector software.\n\n## Analysis of elo-5(gk208) nprl-3(ku540) double mutants\n\nExcept for Figure 2I, all elo-5(\u2212) nprl-3(ku540) animals being tested for Figure 2 were from homozygous mothers. For Figure 2I, because the control cgt-3(\u2212);cgt-1(\u2212) animals were fully arrested at L1 and were derived from cgt-3(\u2212);cgt-1(\u2212)/nT1[qIs51] heterozygotes, we had to use heterozygous cgt-3(\u2212);elo-5(\u2212) nprl-3(ku540)/nT1[qIs51];cgt-1(\u2212)/nT1[qIs51] P0 animals to generate cgt-1(\u2212);cgt-3(\u2212);elo-5(\u2212) nprl-3(ku540) homozygous animals to generate comparable data. Because it is difficult to determine the genotype of arrested L1 animals, the ratios of homozygous cgt-1(\u2212);cgt-3(\u2212);elo-5(\u2212) nprl-3(ku540) animals that reached adulthood were calculated by the ratio of the homozygous animals in the total adult population, with a normalization by dividing by the expected ratio of 20%, from the Mendelian distribution of strains containing a recessive lethal translocation balancer (Edgley et al., 2006).\n\nGeneration of elo-5(\u2212) nprl-3(ku540) homozygous animals for the tests shown in Table 1 and Figure 4B is described below.\n\n## RNAi analysis by feeding and injection\n\nAll RNAi by feeding, except cgt-3(RNAi) and let-363(RNAi), used bacterial clones from the MRC RNAi library (Kamath et al., 2003) or the ORF-RNAi Library (Open Biosystems) (Figures 1\u20133). cgt-3(RNAi) and let-363(RNAi) constructs were made as described (Marza et al., 2009; Honjoh et al., 2009). Feeding RNAi experiments were done as previously described (Kniazeva et al., 2008). The DNA templates for nprl-3 and nprl-2 dsRNA synthesis were amplified from the RNAi-containing bacterial strain (MRC RNAi library) by PCR using T7 primers. dsRNA was synthesized using a MEGAscript RNAi Kit (Life Technologies) and then injected into adults of elo-5(\u2212)/nT1[qIs51], elo-5(-)nprl-3(ku540)/nT1[qIs51], or cgt-3(-);cgt-1(-)/nT1[qIs51]. The eggs were collected from the 8th to 24th hr after injection. Nongreen F1 adult animals were verified by PCR to confirm the homozygosity of elo-5(\u2212) or cgt-1(\u2212);cgt-3(\u2212) animals.\n\n## Feeding RNAi analysis of TORC1 components and downstream targets\n\nAll RNAi (raga-1, rheb-1, rsks-1, ife-2) by feeding used sequence confirmed bacterial clones from both the MRC RNAi library (Kamath et al., 2003) or the ORF-RNAi Library (Open Biosystems) (Table 1). These RNAi clones have been extensively used for TORC1-related studies in many publications/meeting abstracts, and their efficiency and specificity have been well established. Furthermore, results from those references and our experiments have shown RNAi feeding of these genes did not reproduce the strong larval lethal phenotype (Hansen et al., 2007; Syntichaki et al., 2007; Lemire et al., 2009; Ching et al., 2010; Polley and Fay, 2012). This difference indicates that TORC1 function is not completely eliminated by RNAi feeding of these genes (raga-1, rheb-1, rsks-1, ife-2).\n\nThe elo-5(\u2212) nprl-3(ku540) animals were balanced by a GFP-labeled nT1[qIs51] balancer and treated with feeding RNAi. In the next generation, similar to the method described above, the ratios of homozygous elo-5(\u2212) nprl-3(\u2212) animals that reached adulthood were calculated by the ratio of homozygous elo-5(\u2212) nprl-3(\u2212) animals in the total adult population, with a normalization by dividing by the expected ratio 20%. As reported, RNAi knockdown of TORC1 components and the downstream target genes would affect the normal development of C. elegans (Long et al., 2002; Syntichaki et al., 2007; Zoncu et al., 2011). In our experiments, the usage of the heterozygous elo-5(\u2212) nprl-3(ku540)/nT1[qIs51] animals for the RNAi knockdown experiment allowed us to exclude the potential negative effect from RNAi treatment of TORC1 components and TORC1 target genes themselves. Any of those elo-5(\u2212) nprl-3(\u2212)\u2013independent negative effects from those RNAi treatments would affect the heterozygous as well as the homozygous elo-5(\u2212) nprl-3(\u2212) animals, and therefore not be included in the ratio in the data presented in Table 1.\n\n## Generation of transgenes\n\nFor the pPD95.77-nprl-3::GFP plasmid, we cloned the potential 1 kbps promoter region upstream of the operon containing nrpl-3 and inserted it into the pPD95.77 vector (Figure 4A,B). For raga-1Q63L, the genomic DNA including the full coding region was cloned into pPD95.77, driven by a ubiquitous RPL28 promoter. For ges-1::raga-1Q63L, the genomic DNA including the full coding region was cloned into pPD95.77, driven by an intestinal-specific ges-1 promoter. For rheb-1Q71LQ72D, the genomic DNA including the full coding region and about 1 kbps of upstream sequence was cloned into pPD95.77. Amino acid mutations in both mutants were introduced by replacement with PCR-generated DNA fragments containing the designed mutations. For daf-15::rap-1(22), the genomic DNA of daf-15, including the full coding region and the 1 kbps potential promoter region upstream of daf-15, was cloned from the fosmid WRM061cH04. After the stop codon of daf-15 was removed, it was fused with the genomic DNA encoding the last 22 amino acids and the 3\u2032 UTR of rap-1. For pPD95.77-nprl-3::GFP, 25 ng/\u03bcl of plasmid was injected in wild-type animals. For the daf-15::rap-1(22) rescue experiment, elo-5(\u2212)/nT1[qIs51] animals were injected with 10 ng/\u00b5l daf-15::rap-1(22) and 25 ng/\u00b5l psur-5::RFP plasmid. In the next generation, the ratios of homozygous elo-5(\u2212) animals that reached L3-young adulthood were calculated by the ratio of homozygous elo-5(\u2212) nprl-3(\u2212) animals in RFP-positive L3-young adult population, with a normalization by dividing by the expected ratio 20%, as described above. The reason for using heterozygous elo-5(\u2212)/nT1[qIs51] animals for this experiment is similar to that for the RNAi knockdown experiment we described above. By this method, we exclude the negative effect we observed from constitutively active TORC1 transgenes (daf-15::rap-1(22), raga-1Q63L, ges-1::raga-1Q63L or rheb-1Q71LQ72D) for their rescue effects.\n\n## Neutral red staining\n\nThe Neutral red staining was performed following Long et al. (2002). Animals were fed with Neutral red containing bacteria food for <10 min before evaluation by microscopy.\n\n## Microscopy\n\nAnalysis of GFP expression and phenotypic abnormalities were performed with Nomarski optics using a Zeiss Axioplan2 microscope and a Zeiss AxioCam MRm CCD camera. Plate phenotypes were observed using a Leica MZ16F dissecting microscope, and pictures were taken with a Hamamatsu C4742-95 CCD camera.\n\n## Statistical analysis\n\nAll statistical analyses, except the dsRNA feeding for TOR-related genes, were performed using Student\u2019s t-test, and p<0.05 was considered a significant difference. The Fisher\u2019s exact test was used for analysis of the TOR-related dsRNA feeding experiments and raga-1Q63L rescue experiment, and p<0.05 was considered a significant difference.\n",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7554617-79b8-4ba4-a9e7-653fb8fd3096",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C1",
+      "claim": "Caenorhabditis elegans halts postembryonic growth and development shortly after hatching in response to monomethyl branched-chain fatty acid (mmBCFA) deficiency.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Caenorhabditis elegans halts postembryonic growth and development shortly after hatching in response to monomethyl branched-chain fatty acid (mmBCFA) deficiency.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is a well-established observation from prior work (cited in the manuscript) and confirmed by experimental data in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "775c95ce-c0d0-4a31-a204-17a6d72eedf7",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C2",
+      "claim": "d17iso-glucosylceramide is a critical metabolite in regulating growth and development in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "an mmBCFA-derived sphingolipid, d17iso-glucosylceramide, is a critical metabolite in regulating growth and development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Supported by genetic and biochemical experiments showing that disrupting d17iso-GlcCer biosynthesis causes developmental arrest and that this function is mediated through TORC1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "c0948555-503a-4039-b037-a00101d5550c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C3",
+      "claim": "The d17iso-glucosylceramide lipid function is mediated by TORC1 in the intestine.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this lipid function is mediated by TORC1 and antagonized by the NPRL-2/3 complex in the intestine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Demonstrated through genetic suppression experiments, RNAi knockdown, and tissue-specific rescue experiments showing intestinal TORC1 is required.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "2921350e-6c34-4c51-aa76-9b88f848cbc1",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C4",
+      "claim": "The NPRL-2/3 complex antagonizes d17iso-glucosylceramide function in promoting postembryonic development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this lipid function is mediated by TORC1 and antagonized by the NPRL-2/3 complex in the intestine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Supported by the finding that nprl-3(ku540) mutation suppresses mmBCFA deficiency-induced arrest and that NPRL-2/3 acts as a negative regulator of TORC1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "22b697da-d692-4ef8-88a2-88c6c9a61f15",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C5",
+      "claim": "The essential lipid function of d17iso-glucosylceramide is bypassed by activating TORC1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Strikingly, the essential lipid function is bypassed by activating TORC1 or inhibiting NPRL-2/3.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally by showing that TORC1-activating transgenes (raga-1Q63L, rheb-1Q71LQ72D, daf-15::rap-1(22)) suppress elo-5(-) L1 arrest.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "4f1731be-62fb-49e1-9074-9550cf516d5a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C6",
+      "claim": "The essential lipid function of d17iso-glucosylceramide is bypassed by inhibiting NPRL-2/3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Strikingly, the essential lipid function is bypassed by activating TORC1 or inhibiting NPRL-2/3.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Shown by the nprl-3(ku540) mutation and nprl-2/3 RNAi experiments that suppress mmBCFA deficiency-induced developmental arrest.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "61a98924-1681-4fa4-a883-01b62fb6b7d5",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C7",
+      "claim": "TOR complexes (TORC1 and TORC2) function in sensing various nutrient signals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The target of rapamycin (TOR) complexes (TORC1 and TORC2) are known to function in sensing various nutrient signals",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established scientific knowledge cited from multiple references (Ma and Blenis, 2009; Laplante and Sabatini, 2012; Zoncu et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1e81c11b-d7a9-4064-b48f-ae2f22c6bdd8",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C8",
+      "claim": "TOR complexes are connected to growth, metabolism, stress responses, and cancers.",
+      "claim_type": "EXPLICIT",
+      "source_text": "their roles are connected to growth, metabolism, stress responses, and cancers",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Established from prior literature cited in the manuscript (Hansen et al., 2008; He and Klionsky, 2009; Howell and Manning, 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "381a4fd9-3eef-45f9-b793-177c4dae5892",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C9",
+      "claim": "Amino acids, energy, and growth factors have been described as nutrient inputs to TOR complexes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While amino acids, energy, and growth factors have been described as nutrient inputs to TOR complexes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established knowledge from the TOR signaling field, referenced in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "503e1b15-3993-4893-ad68-e6c7f14a90c9",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C10",
+      "claim": "Roles of lipid molecules as signals to TOR systems in controlling postembryonic growth and development were not known prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source_text": "roles of lipid molecules as signals to these systems in controlling postembryonic growth and development were not known.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an assertion about the state of knowledge in the field prior to the current study, based on literature review.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1ec73f93-3e62-4f04-985b-52feaf1e5ca2",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C11",
+      "claim": "C. elegans enters L1 diapause when hatched in food-free surroundings.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When hatched in food-free surroundings, this nematode enters a quiescent state, termed L1 diapause",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is well-established knowledge about C. elegans biology, cited from multiple references (Johnson et al., 1984; Munoz and Riddle, 2003; Baugh and Sternberg, 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "076eed32-23b1-45ec-910b-21a1b984cb61",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C12",
+      "claim": "An insulin/IGF-1 receptor signaling (IIS) pathway plays a critical role in the induction of L1 diapause and survival of developmentally arrested animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An insulin/IGF-1 receptor signaling (IIS) pathway plays a critical role in the induction of L1 diapause and survival of the developmentally arrested animals",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Established from prior studies cited in the manuscript (Gems et al., 1998; Baugh and Sternberg, 2006; Kniazeva et al., 2008; Lee and Ashrafi, 2008; Jones et al., 2009; Soukas et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "89c86a74-8e5f-4d4e-9cd3-5655d5e32d5e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C13",
+      "claim": "TOR complexes play prominent roles in regulating postembryonic growth and lifespan in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TOR complexes have also been indicated to play prominent roles in regulating postembryonic growth and lifespan in C. elegans",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on prior literature cited (Vellai et al., 2003; Syntichaki et al., 2007; Hansen et al., 2008; Honjoh et al., 2009; Lucanic et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "5859f1a1-88df-4e0c-aee8-4748bfe5b5fe",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C14",
+      "claim": "Monomethyl branched-chain fatty acids (mmBCFAs) are widely present in bacteria, plants, and animals, including humans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Monomethyl branched-chain fatty acids (mmBCFAs) are widely present in bacteria, plants, and animals, including humans",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge from prior studies (Nicolaides and Ray, 1965; Ran-Ressler et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "4dbc853e-1716-4b75-9a09-dbbc31e54825",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C15",
+      "claim": "In mammals, mmBCFAs are derived from branched-chain amino acids (BCAAs).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In mammals, mmBCFAs are derived from branched-chain amino acids (BCAAs)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Established from prior research cited (Morii and Kaneda, 1982; Oku et al., 1994).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ceceecd0-af65-44aa-918c-fa2d56db5a66",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C16",
+      "claim": "The remainder of the de novo mmBCFA biosynthesis pathway in mammals has not been delineated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "although the remainder of the de novo pathway has not been delineated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the current state of knowledge in the field regarding mammalian mmBCFA biosynthesis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "c22dcc59-a09b-4651-b1c2-eabe6bb56774",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C17",
+      "claim": "The physiological roles of mmBCFAs are essentially unknown.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The physiological roles of these FA variants are essentially unknown",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents the state of knowledge in the field prior to this study, despite mmBCFAs being found at high levels in certain tissues.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "93f60c24-ce3e-45a3-a597-3769b25189ad",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C18",
+      "claim": "In C. elegans, mmBCFAs C15ISO and C17ISO are synthesized from the branched-chain amino acid leucine.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In C. elegans, readily detectable mmBCFAs C15ISO and C17ISO are synthesized from the BCAA leucine",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This was established in prior work by the authors (Kniazeva et al., 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "46912750-69e5-498b-9c5d-9b81fab0fd6e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C19",
+      "claim": "The key enzymes in mmBCFA de novo synthesis pathway in C. elegans, including BCKDC, ELO-5, and ACS-1, are evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The key enzymes in this de novo synthesis pathway, including the branched-chain ketoacid dehydrogenase complex (BCKDC), an FA elongase (ELO-5), and an acyl CoA synthetase (ACS-1), are evolutionarily conserved",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on prior work by the authors (Kniazeva et al., 2004, 2008) showing conservation of these enzymes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "4bacba68-0ddb-49af-82dd-273ad3714870",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C20",
+      "claim": "Newly hatched C. elegans that are deficient for mmBCFAs cannot initiate postembryonic growth and development, and instead enter L1 diapause.",
+      "claim_type": "EXPLICIT",
+      "source_text": "newly hatched C. elegans that are deficient for mmBCFAs cannot initiate postembryonic growth and development, and instead enter L1 diapause.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This was previously shown by the authors (Kniazeva et al., 2004, 2008) and is confirmed in the current study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "0822fe27-b684-42d9-86fd-a6de0602b426",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C21",
+      "claim": "The developmental arrest caused by mmBCFA deficiency is independent of the IIS pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Further genetic analysis suggested that this developmental arrest is independent of the IIS pathway",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "Based on genetic analysis from prior work (Kniazeva et al., 2004, 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "a3606866-b311-40da-80e3-be86efcc0912",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C22",
+      "claim": "elo-5 loss-of-function mutants are deficient for mmBCFAs and are developmentally arrested at the early L1 stage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "elo-5 loss-of-function mutants (termed elo-5(\u2212) hereafter) are deficient for mmBCFAs and are developmentally arrested at the early L1 stage.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This phenotype is demonstrated experimentally in this study and was previously reported (Kniazeva et al., 2004, 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e7153e54-23a8-4af3-8b7d-c763cec472a3",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C23",
+      "claim": "The elo-5(-) developmental arrest phenotype is completely rescued by dietary supplementation of mmBCFAs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This phenotype is completely rescued by dietary supplementation of mmBCFAs",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "Demonstrated experimentally in prior work (Kniazeva et al., 2004, 2008) and confirmed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e51544a1-d316-40bb-b4f0-5f06c1d01e8e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C24",
+      "claim": "In mmBCFA-deficient elo-5(-) larvae, the amount of mmBCFA-containing sphingolipids are dramatically reduced.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that in mmBCFA-deficient elo-5(\u2212) larvae, the amount of mmBCFA-containing sphingolipids were dramatically reduced",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from mass spectrometry analysis performed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "91770539-1f7c-408a-bdba-01f18dff8061",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C25",
+      "claim": "Sphingolipids are a class of well-known bioactive lipids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sphingolipids are a class of well-known bioactive lipids",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge in the field of lipid biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "6618ab73-4c05-45bb-9068-08b927c42a56",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C26",
+      "claim": "d17iso-sphinganine (d17iso-SPA) purified from S. spiritivorum is sufficient to overcome elo-5(-) L1 arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This purified d17iso-SPA fraction, but not a chemically synthesized c17iso-sphingolipid with a straight-chain d18:1-LCB or a straight-chain LCB d16-SPA, was found to be sufficient to overcome elo-5(\u2212) L1 arrest",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through dietary supplementation experiments showing rescue of developmental arrest.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e7820e26-f557-4311-914c-6b66bc6082d8",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C27",
+      "claim": "Straight-chain sphingolipids (c17iso with d18:1-LCB or d16-SPA) cannot rescue elo-5(-) L1 arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This purified d17iso-SPA fraction, but not a chemically synthesized c17iso-sphingolipid with a straight-chain d18:1-LCB or a straight-chain LCB d16-SPA, was found to be sufficient to overcome elo-5(\u2212) L1 arrest",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through dietary supplementation experiments showing lack of rescue.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d1749506-9664-43de-9729-51db769bcda0",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C28",
+      "claim": "Custom synthesized d17iso-SPA efficiently rescues elo-5(-) developmental arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, efficient rescue was also achieved with a custom synthesized d17iso-SPA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Shown experimentally through supplementation assays (Figure 1D).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9f6d6d6e-0a73-43d2-a2e7-ea7ac57f18c7",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C29",
+      "claim": "d17iso-sphingolipid is sufficient to promote the postembryonic growth and development of mmBCFA-deficient animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, d17iso-sphingolipid is sufficient to promote the postembryonic growth and development of mmBCFA-deficient animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from the rescue experiments showing d17iso-SPA supplementation overcomes elo-5(-) arrest.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "303991d6-2ddf-406e-860e-a03eaba61dca",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C30",
+      "claim": "d17iso-SPA suppresses L1 arrest at a much lower concentration than C15ISO or C17ISO.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We observed that d17iso-SPA suppressed the L1 arrest at a much lower concentration than C15ISO or C17ISO",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through dose-response experiments (Figure 1D).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "f0d1eb77-2733-4dd6-8618-17941472bd72",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C31",
+      "claim": "Low concentrations of d17iso-SPA suppress L1 arrest without restoring mmBCFA levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we observed that the low concentrations of d17iso-SPA suppressed the L1 arrest without restoring mmBCFA levels",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Shown by gas chromatography analysis (Figure 1E) combined with rescue assays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "24a7e6de-0e31-42a4-b13e-21ae63e7373a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C32",
+      "claim": "Supplementation with d17iso-SPA, but not mmBCFAs, suppresses the L1 arrest phenotype caused by sptl-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we found that supplementation with d17iso-SPA, but not mmBCFAs, also suppressed the L1 arrest phenotype caused by feeding RNAi of sptl-1",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally through RNAi and supplementation assays (Figure 1B).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "2a8abeeb-fefb-43d7-a031-4339e1e28ce8",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C33",
+      "claim": "sptl-1 encodes a serine palmitoyltransferase homolog in C. elegans required for d17iso-SPA biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "sptl-1, a gene encoding a serine palmitoyltransferase homolog in C. elegans required for d17iso-SPA biosynthesis",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on prior characterization of sptl-1 (Seamen et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d3b3dfff-b8c1-4675-a473-76dd3f8e2269",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C34",
+      "claim": "mmBCFAs promote postembryonic development through d17iso-SPA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We thus conclude that mmBCFAs promote postembryonic development through d17iso-SPA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from multiple lines of evidence including rescue experiments, dose-response studies, and genetic analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "8f146258-150c-4ab7-8555-428ca0fc622c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C35",
+      "claim": "fath-1 encodes a homolog of mammalian fatty acid 2-hydrolase (FA2H) responsible for the synthesis of the FA side chain of ceramides.",
+      "claim_type": "EXPLICIT",
+      "source_text": "fath-1(C25A1.5) encodes a homolog of mammalian fatty acid 2-hydrolase (FA2H) responsible for the synthesis of the FA side chain of ceramides",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "Based on sequence homology and functional characterization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d54ec8df-fac7-48f7-9b3a-1e6dac99dcc3",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C36",
+      "claim": "cgt-1 and cgt-3 encode two ceramide glucosyltransferases that glucosylate ceramides to GlcCer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cgt-1 and cgt-3 encode two ceramide glucosyltransferases that glucosylate ceramides to GlcCer",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "Based on functional characterization of these genes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "f87cafd5-9b19-461f-8e16-b931fa832672",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C37",
+      "claim": "fath-1(RNAi)-treated animals cause larval arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both fath-1(RNAi)-treated animals (Figure 1B; Supplementary file 1) and the cgt-1(\u2212);cgt-3(\u2212) double mutant (Marza et al., 2009) cause larval arrest.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally through RNAi experiments (Figure 1B).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "fdff21c4-cf1a-429a-90ff-cf3e400786a3",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C38",
+      "claim": "The cgt-1(-);cgt-3(-) double mutant causes larval arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both fath-1(RNAi)-treated animals (Figure 1B; Supplementary file 1) and the cgt-1(\u2212);cgt-3(\u2212) double mutant (Marza et al., 2009) cause larval arrest.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "Shown in this study and previously reported (Marza et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "361a72bf-a7e1-483d-b2c4-e85376efc1b9",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C39",
+      "claim": "The arrest caused by fath-1(RNAi) or cgt-1(-);cgt-3(-) double mutant could not be overcome by feeding d17iso-SPA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found the arrest under either condition could not be overcome by feeding d17iso-SPA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through supplementation experiments (Figure 1B).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9b849105-acd4-4f9a-a7e7-7af316738267",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C40",
+      "claim": "Disrupting the function of glycosyltransferases that further modify GlcCer does not cause larval arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Disrupting the function of glycosyltransferases that further modify GlcCer does not cause larval arrest",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Griffitts et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ccd669ac-a4c5-4430-82e6-474b7e635eea",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C41",
+      "claim": "d17iso-glucosylceramide (d17iso-GlcCer) may be the lipid molecule that mediates the role of mmBCFAs and d17iso-SPA in promoting postembryonic growth and development in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results suggest that d17iso-glucosylceramide (d17iso-GlcCer) (Figure 1A) may be the lipid molecule that mediates the role of mmBCFAs and d17iso-SPA in promoting postembryonic growth and development in C. elegans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the genetic pathway analysis showing that enzymes downstream of d17iso-SPA but upstream of more complex sphingolipids are required.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "0a19dd8f-8e6e-405e-81fa-b34892e3a80a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C42",
+      "claim": "The ku540 mutation permits mmBCFA-depleted C. elegans to bypass L1 arrest and propagate continuously.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutation ku540 permits mmBCFA-depleted C. elegans to bypass L1 arrest and propagate continuously",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through genetic screening and phenotypic analysis (Figure 2).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "09310b10-5104-4566-944a-4df8606f5609",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C43",
+      "claim": "elo-5(-);ku540 mutant animals reach adulthood without C17ISO supplement.",
+      "claim_type": "EXPLICIT",
+      "source_text": "elo-5(\u2212);ku540 mutant animals reach adulthood without C17ISO supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Shown experimentally through growth assays (Figure 2B, 2C).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e1fe08d1-10b8-4c5f-b8d6-bd19e014d68a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C44",
+      "claim": "elo-5(-);ku540 animals have no detectable C15ISO-containing or C17ISO-containing lipids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "elo-5(\u2212);ku540 did not restore mmBCFA levels, and consequently the levels of d17iso-sphingolipids... elo-5(\u2212);ku540 animals had no detectable C15ISO-containing or C17ISO-containing lipids",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through mass spectrometry and gas chromatography analysis (Figure 2D-G).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "a7033697-5844-412c-bef1-a18323006aac",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C45",
+      "claim": "elo-5(-);ku540 animals have ceramides and glucosylceramides containing straight chain d16LCB rather than d17isoLCB.",
+      "claim_type": "EXPLICIT",
+      "source_text": "elo-5(-);ku540 animals had ceramides and glucosylceramides containing straight chain d16LCB rather than d17isoLCB",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Shown by mass spectrometry analysis (Figure 2F, 2G).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d6e2a451-67da-4869-b320-2d876ddc7298",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C46",
+      "claim": "The suppression of L1 arrest by the ku540 mutation is neither due to a change in mmBCFA nor the metabolism of the derived sphingolipids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These data indicated that the suppression of L1 arrest by the ku540 mutation is neither due to a change in mmBCFA nor the metabolism of the derived sphingolipids.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from lipid analysis showing no restoration of mmBCFAs or d17iso-sphingolipids in elo-5(-);ku540 animals.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1ef8dd6b-da4b-4449-a96f-94eca3f3d974",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C47",
+      "claim": "ku540 renders mmBCFAs nonessential for C. elegans development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, our data suggest that ku540 renders mmBCFAs nonessential for C. elegans development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the observation that elo-5(-);ku540 animals develop normally without mmBCFAs.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "8cbb99e6-6855-4a4d-9430-ddd1c5d56633",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C48",
+      "claim": "ku540 suppresses the L1 arrest caused by RNAi of fath-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the L1 arrest under both conditions, just like the arrest caused by elo-5(\u2212), was effectively suppressed by ku540",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 2\u2014figure supplement 2).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "5271012d-fde5-4a68-8627-1d89bbb511b4",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C49",
+      "claim": "ku540 suppresses the L1 arrest caused by mutating both cgt-1 and cgt-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the L1 arrest under both conditions, just like the arrest caused by elo-5(\u2212), was effectively suppressed by ku540",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 2H, 2I).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ed4a1d6d-f0de-4648-b5e8-853bc38969ea",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C50",
+      "claim": "d17iso-GlcCer mediates the roles of mmBCFAs and d17iso-SPA in postembryonic development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results provided strong evidence that d17iso-GlcCer mediated the roles of mmBCFAs and d17iso-SPA in postembryonic development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from genetic epistasis experiments showing ku540 suppresses defects in the GlcCer biosynthesis pathway.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "b5a51015-58aa-4268-901e-f40be356c1d0",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C51",
+      "claim": "ku540 bypasses the requirement of mmBCFAs and d17iso-GlcCer in development by modifying a regulatory function downstream of d17iso-GlcCer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "our biochemical and genetic data indicate that ku540 bypasses the requirement of mmBCFAs and d17iso-GlcCer in development and does so by modifying a regulatory function downstream of d17iso-GlcCer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the combination of lipid analysis and genetic suppression data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "56428768-4020-4ec4-9885-3870f9d6dfec",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C52",
+      "claim": "ku540 is a loss-of-function missense mutation of nprl-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ku540 is a loss-of-function mutation of nprl-3 that may function with nprl-2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through genetic mapping, sequencing, and complementation analysis (Figure 3).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "bd041676-ed84-4f5b-8604-a0b6d875fec9",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C53",
+      "claim": "The ku540 mutation changes a conserved glycine residue (G388) to glutamic acid in NPRL-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The ku540 mutation changes a conserved glycine residue (G388) to glutamic acid",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Determined through DNA sequencing (Figure 3A, 3B).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "dbdf9da2-a7dc-4c0f-8e34-239a6218636e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C54",
+      "claim": "NPRL-3 is conserved in all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "NPRL-3 is conserved in all eukaryotes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on sequence homology analysis across species (Figure 3B).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "8777a0c5-2561-42e8-8bfb-f3c2f926a636",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C55",
+      "claim": "nprl-3(RNAi) mimics the effect of the ku540 mutation in rescuing the L1 arrest phenotype caused by blocking mmBCFA or glucosyl-ceramide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "nprl-3(RNAi) mimics the effect of the ku540 mutation in rescuing the L1 arrest phenotype caused by blocking mmBCFA or glucosyl-ceramide biosynthesis.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through RNAi experiments (Figure 3C).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "fed59323-b71d-457a-b424-45699502d9db",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C56",
+      "claim": "nprl-2 dsRNA injection rescues elo-5(-) animals from L1 arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "nprl-2 dsRNA injection also rescued 42.4% of elo-5(\u2212) animals to or beyond L3 stage",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through injection RNAi experiments (Figure 3C).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "63bef30d-11a1-4cb2-9c20-914a66477f67",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C57",
+      "claim": "NPRL-2 and NPRL-3 in C. elegans may function in a complex to negatively impact mmBCFA/d17iso-GlcCer-mediated L1 growth.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This suggested that NPRL-2 and NPRL-3 in C. elegans may also function in a complex to negatively impact mmBCFA/d17iso-GlcCer-mediated L1 growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the observation that RNAi of either nprl-2 or nprl-3 suppresses elo-5(-) arrest, similar to yeast NPR2/3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d5c7a9cb-a249-4681-aa42-d9d6f67fed9f",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C58",
+      "claim": "In S. cerevisiae, NPR3 forms a heterodimer with NPR2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In Saccharomyces cerevisiae, NPR3 was shown to form a heterodimer with NPR2.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on prior work in yeast (Neklesa and Davis, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "be53e6a6-4cb0-4f73-9fdb-b8fa6c155b8c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C59",
+      "claim": "Mutations in both NPR2 and NPR3 in S. cerevisiae cause multiple growth defects when cells are cultured in low-quality amino acid conditions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutations in both proteins cause multiple growth defects when cells were cultured in low-quality amino acid conditions",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work in yeast (Neklesa and Davis, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "bdc19765-83fb-4429-a2df-d35aedae597c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C60",
+      "claim": "The NPR2/3 complex was proposed to be a negative regulator of the TOR pathway in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The NPR2/3 complex was proposed to be a negative regulator of the TOR pathway in S. cerevisiae",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work showing that blocking TOR suppresses NPR2/3 mutant defects (Neklesa and Davis, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "0473d732-671d-41fe-904d-cf583c2fab2d",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C61",
+      "claim": "Reducing, but not eliminating, TORC1 activity reverses the rescue effects of nprl-3(ku540) on elo-5(-) mutant background.",
+      "claim_type": "EXPLICIT",
+      "source_text": "then reducing, but not eliminating, TORC1 activity may reverse the rescue effects of nprl-3(ku540) on elo-5(\u2212) mutant background.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through RNAi experiments targeting TORC1 components (Table 1).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "c82e4dcd-297e-4285-90bd-7378eb593d8b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C62",
+      "claim": "C. elegans has orthologs of key components of mammalian TORC1, including raga-1 (RagA) and rheb-1 (Rheb).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Caenorhabditis elegans has orthologs of key components of mammalian TORC1, including regulatory elements raga-1 (RagA) and rheb-1 (Rheb)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on sequence homology and prior characterization (Long et al., 2002; Schreiber et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "04289d95-a0ab-46c3-9f97-9e4d77c99bb9",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C63",
+      "claim": "Feeding RNAi of raga-1 and rheb-1 are specific and effective to reduce, but not eliminate, TORC1 function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Feeding RNAi of raga-1 and rheb-1 have been shown to be specific and effective to reduce, but not eliminate, TORC1 function",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior studies (Hansen et al., 2007; Syntichaki et al., 2007; Lemire et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "f7af8e57-406c-4022-b172-d307f8dfc2a4",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C64",
+      "claim": "The suppression of elo-5(-) L1 arrest by nprl-3(ku540) dramatically decreases when raga-1(RNAi) or rheb-1(RNAi) are applied.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While nprl-3(ku540) effectively suppressed the L1 arrest phenotype of elo-5(\u2212), the suppression dramatically decreased when raga-1(RNAi) or rheb-1(RNAi) were applied to the elo-5(\u2212) nprl-3(ku540) double mutant",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally through RNAi experiments (Table 1).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "c68e1336-db56-416b-8d6a-99811763a29b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C65",
+      "claim": "The rescue effect of nprl-3(ku540) on elo-5(-) depends on intact TORC1 activity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This indicates that the rescue effect of nprl-3(ku540) on elo-5(\u2212) depends on intact TORC1 activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from the observation that reducing TORC1 activity reverses the ku540 suppression effect.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d98109e4-509a-42d5-b70f-3247770750e3",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C66",
+      "claim": "The effects of raga-1(RNAi) and rheb-1(RNAi) in reversing nprl-3(ku540) suppression are eliminated by C17ISO supplementation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the effects of raga-1(RNAi) and rheb-1(RNAi) in the above tests were essentially eliminated by C17ISO supplementation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Table 1).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "2fcf71a6-4a5e-4f67-885a-d6bd84f164c4",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C67",
+      "claim": "Reducing TORC1 activity neutralizes the effect of nprl-3(ku540) and restores the L1 arrest phenotype of elo-5(-).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In other words, reducing, but not eliminating, TORC1 activity neutralized the effect of nprl-3(ku540) and restored the L1 arrest phenotype of elo-5(\u2212).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from RNAi experiments showing that partial TORC1 knockdown reverses ku540 suppression in the absence of C17ISO.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d9e6e750-0d31-4c1b-ade5-3979555c4965",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C68",
+      "claim": "elf4E (ife-2) and p70S6K (rsks-1) are well-known downstream targets of TORC1 in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "C. elegans orthologs of elf4E (ife-2) and p70S6K(rsks-1), two well-known downstream targets of TORC1",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on prior characterization of the TORC1 pathway (Long et al., 2002; Syntichaki et al., 2007; Anjum and Blenis, 2008; Sheaffer et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1329c345-ae8b-48c8-bacf-7109e6542874",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C69",
+      "claim": "elo-5(-) nprl-3(ku540) animals treated with ife-2(RNAi) or rsks-1(RNAi) yield results similar to those obtained with raga-1(RNAi) and rheb-1(RNAi).",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that elo-5(\u2212) nprl-3(ku540) animals treated with ife-2(RNAi) or rsks-1(RNAi), with or without C17ISO supplement, yielded results similar to those obtained with raga-1(RNAi) and rheb-1(RNAi)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Table 1).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "eebffab5-3bb7-4934-8af8-864f8978bf04",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C70",
+      "claim": "TORC1 acts downstream of d17iso-GlcCer and is negatively regulated by NPRL-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "these results indicate that TORC1 acts downstream of d17iso-GlcCer and is negatively regulated by NPRL-3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from genetic epistasis experiments showing that TORC1 activity is required for nprl-3(ku540) suppression.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "726f172f-4598-439d-b157-54b11189d2ec",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C71",
+      "claim": "let-363/TOR(-) mutations cause late larval arrest and other severe defects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The let-363/TOR(\u2212) mutations cause late larval arrest and other severe defects",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior characterization (Long et al., 2002).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "25dc6e68-765e-4306-9620-00b9725525df",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C72",
+      "claim": "Injection RNAi of let-363/TOR causes an early embryonic lethal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but injection RNAi causes an early embryonic lethal phenotype",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Sonnichsen et al., 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "36fc003d-558f-4b9a-8a1f-9fcfa8793f46",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C73",
+      "claim": "LET-363/TOR plays critical regulatory roles in a broad range of developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "indicating that LET-363/TOR, a key component of both TORC1 and TORC2, plays critical regulatory roles in a broad range of developmental stages",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "Inferred from the different phenotypes at different developmental stages when TOR is disrupted.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9fa58f68-20c2-46a7-a6dc-83c592a46dc2",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C74",
+      "claim": "A maternal effect largely masks LET-363/TOR roles in earlier developmental stages, including L1 growth.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a maternal effect largely masks its roles in earlier stages, including its likely functions during L1 growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the difference between injection RNAi (early lethal) and feeding RNAi or mutation (later defects).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e1cbd9b9-fb96-489b-94c0-dfbd2db2876d",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C75",
+      "claim": "elo-5(-) nprl-3(-);let-363(RNAi) animals display pleiotropic phenotypes that cannot be rescued by C17ISO supplement.",
+      "claim_type": "EXPLICIT",
+      "source_text": "elo-5(\u2212) nprl-3(\u2212);let-363(RNAi) animals displayed pleiotropic phenotypes that could not be rescued by C17ISO supplement",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Table 1).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "86e0c023-c058-4fa3-90af-c58741eeb69f",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C76",
+      "claim": "The pleiotropic phenotypes of elo-5(-) nprl-3(-);let-363(RNAi) are consistent with TORC1 acting downstream of ELO-5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which is consistent with TORC1 acting downstream of ELO-5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the genetic epistasis relationship where complete loss of TORC1 cannot be rescued by mmBCFAs.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "35e062b0-08db-4e2e-a9bc-f1ea7fbaa550",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C77",
+      "claim": "Constitutive activation of TORC1 is sufficient to overcome the L1 arrest of elo-5(-) animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If d17iso-GlcCer mainly acts through TORC1 for the growth regulation function, constitutive activation of TORC1 should be sufficient to overcome the L1 arrest of elo-5(-) animals.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through experiments with TORC1-activating transgenes (Figure 4).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "0e73d594-f469-44c9-a548-6083de5f0f1b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C78",
+      "claim": "The daf-15::rap-1(22) transgene permits 50.6% of elo-5(-) animals to bypass L1 arrest and reach L3-adult stages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that 50.6% of elo-5(\u2212) animals containing the daf-15::rap-1(22) transgene bypassed L1 arrest and reached L3\u2013adult stages",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 4B).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "b3c51869-be76-4d30-bb2f-cbb78ea0b3a5",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C79",
+      "claim": "The raga-1Q63L transgene permits 50.4% of elo-5(-) mutants to bypass L1 arrest and reach L3-L4 stage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that 50.4% of elo-5(\u2212) mutants containing the raga-1Q63L transgene bypassed L1 arrest and reached L3\u2013L4 stage",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 4A).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "bfe29acd-6b6e-4505-86e3-9637a4b59d3d",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C80",
+      "claim": "raga-1Q63L has been proven to constitutively activate TORC1 both in mammals and C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "raga-1Q63L that has been proven to constitutively activate TORC1 both in mammals and C. elegans",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Kim et al., 2008; Schreiber et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "dc9621c1-a4ab-433c-83c6-c5bef58df6c8",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C81",
+      "claim": "The rheb-1Q71LQ72D transgene permits 41.4% of elo-5(-) animals to grow beyond the L1 stage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we also tested a third TORC1-activating transgene, rheb-1Q71LQ72D, and found that it also permitted 41.4% of elo-5(\u2212) animals to grow beyond the L1 stage",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 4A).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "a3ffc07b-3102-4b4e-bd55-e4865fb515ad",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C82",
+      "claim": "TORC1 acts downstream of d17iso-GlcCer to promote L1 growth and development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results led to the conclusion that TORC1 acts downstream of d17iso-GlcCer to promote L1 growth and development",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from multiple lines of genetic evidence including TORC1 activation bypassing lipid deficiency.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "344e756d-7493-4ba9-a5d7-c1290da9dff4",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C83",
+      "claim": "TORC1 activity in promoting L1 growth is negatively regulated by NPRL-2/3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TORC1 acts downstream of d17iso-GlcCer to promote L1 growth and development and that this activity is negatively regulated by NPRL-2/3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from genetic epistasis experiments showing NPRL-2/3 loss-of-function activates TORC1-dependent growth.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "aab78714-b8c6-4903-901d-bed4d1af655c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C84",
+      "claim": "Biosynthesis and localization of mmBCFAs and their derived sphingolipids in the intestine are essential and sufficient for postembryonic development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Previous studies on elo-5, acs-1, tat-2, and cgt-1/cgt-3 mutants suggested that biosynthesis and localization of mmBCFAs and their derived sphingolipids in the intestine are essential and sufficient for postembryonic development",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Marza et al., 2009; Seamen et al., 2009; Kniazeva et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "f8bfa44b-d094-4d57-96db-ab53a8db16d6",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C85",
+      "claim": "elo-5(-);nprl-3(ku540) animals treated with ife-2 RNAi are L1 arrested.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The fact that elo-5(\u2212);nprl-3(ku540) animals treated with ife-2 RNAi, that targets intestinal but not neuronal expression of the gene (Syntichaki et al., 2007), are L1 arrested (Table 1) also points to the requirement of TORC1 activity in the intestine.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Table 1).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9970f9eb-91ad-4d58-8eb3-913c1cbf9f2c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C86",
+      "claim": "ife-2 RNAi targets intestinal but not neuronal expression of the gene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ife-2 RNAi, that targets intestinal but not neuronal expression of the gene",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior characterization (Syntichaki et al., 2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "204953ca-d6d2-4bfe-bd1b-1b4f3f48889c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C87",
+      "claim": "An intestinal-specific ges-1 promoter-driven raga-1Q63L transgene permits 37.9% of elo-5(-) animals to bypass L1 arrest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that elo-5(\u2212) animals containing this transgene bypassed the L1 arrest (37.9%, n = 132, normalized against elo-5(\u2212/+) heterozygotes containing the transgene",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 4A).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "6d1c8778-d341-4fd4-91d7-19410265a894",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C88",
+      "claim": "A neuronal-specific rgef-1 promoter-driven raga-1Q63L cannot suppress the L1 arrest of elo-5(-) animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A neuronal-specific rgef-1 promoter\u2013driven (Brignull et al., 2006) raga-1Q63L, however, could not suppress the L1 arrest of elo-5(\u2212) animals (0%, n > 100).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally through tissue-specific rescue experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "0e9ba77b-b018-48bc-83a8-45b3c94ecf50",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C89",
+      "claim": "The intestinal d17iso-GlcCer/TORC1 pathway regulates postembryonic growth.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results suggest that the intestinal d17iso-GlcCer/TORC1 pathway regulates postembryonic growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from tissue-specific rescue experiments showing intestinal but not neuronal TORC1 activation is sufficient.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ef094d42-225c-42a5-9eb7-0be7567713dd",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C90",
+      "claim": "FIB-1 is a Box C/D small nucleolar ribonucleoprotein (snoRNP) used as a marker of TORC1 activation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "localization of FIB-1, a Box C/D small nucleolar ribonucleoprotein (snoRNP) was used as a marker of TORC1 activation in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Sheaffer et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "86aba187-9e3a-4d1f-90de-9166bf1ced8f",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C91",
+      "claim": "In wild-type animals, FIB-1 is highly expressed and localized in the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In wild-type animals, FIB-1 is highly expressed and localized in the nucleolus, where it methylates pre-rRNAs during ribosome maturation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "Based on prior characterization (Sheaffer et al., 2008) and confirmed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9d362278-8e2a-4db2-bcb7-03fd46e0fc12",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C92",
+      "claim": "FIB-1 expression is decreased and no longer localized to the nucleolus in let-363/TOR(-) animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but the expression is decreased and no longer localized to the nucleolus in let-363/TOR(\u2212) animals",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Sheaffer et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "6337186f-e684-4119-9b32-fbf62254244d",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C93",
+      "claim": "The nucleolar localized FIB-1 is dramatically reduced in intestinal cells of mmBCFA-deficient [elo-5(RNAi)] animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the nucleolar localized FIB-1 was dramatically reduced in intestinal cells of mmBCFA-deficient [elo-5(RNAi)] animals",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through immunofluorescence microscopy (Figure 4C).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "45b9c66a-47f9-475a-bae7-9f387c61ad0e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C94",
+      "claim": "nprl-3(-) rescues the FIB-1 expression and nucleolar localization in elo-5(-) back to that of wild type.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, nprl-3(\u2212) rescued the FIB-1 expression and nucleolar localization in elo-5(\u2212) back to that of wild type",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through immunofluorescence microscopy (Figure 4C).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "804e4bac-fcaf-4851-8e26-b191b44adf3a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C95",
+      "claim": "TORC1 is the key downstream factor mediating mmBCFA and d17iso-GlcCer functions in the intestine to promote postembryonic growth and development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we conclude that TORC1 is the key downstream factor mediating mmBCFA and d17iso-GlcCer functions in the intestine to promote postembryonic growth and development",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from the combination of genetic, biochemical, and tissue-specific analyses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "11ab830e-84e0-4721-b701-b917782fc089",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C96",
+      "claim": "The discovery of the GlcCer-stimulated TORC1 pathway reveals a specific link between lipids and the TORC1 signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This discovery reveals a specific link between lipids and the TORC1 signaling pathway.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the significance of the findings presented in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e96be88d-2aab-43b0-b894-f32de540c8c9",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C97",
+      "claim": "Both ceramide and TORC1 have been individually implicated for roles in stress response, apoptosis, cancers, and other cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both ceramide and TORC1 have been individually implicated for roles in stress response, apoptosis, cancers, and other cellular processes by studies in C. elegans and mammals",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on extensive prior literature cited in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "8a0dc979-2188-403b-9c2c-d4707e3c7797",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C98",
+      "claim": "Some functions of ceramide and TORC1 may be mediated by the GlcCer/TORC1 signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is conceivable that some of these functions are mediated by this GlcCer/TORC1 signaling pathway.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential broader implications of the discovered pathway.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "f7b4271c-0add-4479-bfd3-a1cec8fd6bda",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C99",
+      "claim": "The GlcCer/TORC1 pathway may serve as a 'check point' to coordinate metabolic status in the intestine with postembryonic growth and development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "our data suggest that this GlcCer/TORC1 pathway may serve as a 'check point' to coordinate metabolic status in the intestine with postembryonic growth and development.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is an interpretation and hypothesis about the physiological role of the pathway based on the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "3a6ded11-d160-4b39-8dfd-2257e911b0e0",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C100",
+      "claim": "d17iso-GlcCer is a sphingolipid metabolite rather than a nutrient directly absorbed from food.",
+      "claim_type": "EXPLICIT",
+      "source_text": "d17iso-GlcCer is a sphingolipid metabolite rather than a nutrient directly absorbed from food",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on established knowledge about sphingolipid biosynthesis (Merrill et al., 1997).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ae8d7861-1092-468a-b26c-3d62222c728b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C101",
+      "claim": "d17iso-GlcCer is the product of a long biosynthetic pathway involving many enzymatic steps and may reflect the availability of many metabolites and enzymes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is the product of a long biosynthetic pathway involving many enzymatic steps and thus may reflect the availability of many metabolites and enzymes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the potential signaling role of d17iso-GlcCer based on its position in a complex biosynthetic pathway.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e124d449-346c-4bf5-aa9d-697bfc4bca5a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C102",
+      "claim": "The mmBCFA biosynthesis pathway is unlikely part of a mechanism to specifically sense the level of essential amino acids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although leucine is a precursor molecule of mmBCFA biosynthesis, this long lipid synthesis pathway is unlikely part of a mechanism to specifically sense the level of essential amino acids.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation based on the complexity of the pathway and the experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "3602a27c-3a3b-4ae1-9fa6-01c04049f70c",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C103",
+      "claim": "mmBCFA levels are stable in starved L1 larvae.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, mmBCFA levels are stable in starved L1 larvae",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "Based on prior work (Kniazeva et al., 2008) and data in this study (Figure 4\u2014figure supplement 4C).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "3e381d9b-be7d-49a5-9fab-f5b40a4625b6",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C104",
+      "claim": "mmBCFA levels do not directly reflect the feeding status through a direct substrate-product relationship.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggesting that mmBCFA levels do not directly reflect the feeding status through a direct substrate\u2013product relationship.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "Inferred from the observation that mmBCFA levels remain stable during starvation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "668f0487-d990-42e3-b4ef-79ee05243a43",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C105",
+      "claim": "Supplementing elo-5(-) animals with a high level of dietary leucine (10 mM) does not suppress the L1 arrest phenotype.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To test if such a pathway acts in parallel to the mmBCFA/d17iso-GlcCer pathway to promote TORC1 in the C. elegans intestine, we supplemented elo-5(\u2212) animals with a high level of dietary leucine (10 mM) and failed to observe any suppression of the L1 arrest phenotype",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated experimentally (Figure 4\u2014figure supplement 2).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9f0ed113-706c-4b31-9b8e-adc28ca79d6b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C106",
+      "claim": "TORC1 activation by mmBCFA/d17iso-GlcCer is essential in the intestine of L1 larvae and cannot be effectively compensated by another leucine/TORC1 mechanism in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "consistent with the idea that TORC1 activation by mmBCFA/d17iso-GlcCer is essential in the intestine of L1 larvae and cannot be effectively compensated by another leucine/TORC1 mechanism in C. elegans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Concluded from the failure of leucine supplementation to rescue elo-5(-) arrest.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ecfae2b3-a02d-4152-8149-eb9aec275790",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C107",
+      "claim": "Both the IIS and DAF-7/TGF-\u03b2 pathways play critical roles in the regulation of postembryonic growth and development in response to nutrient/food availability in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In C. elegans, both the IIS and DAF-7/TGF-\u03b2 pathways have been shown to play critical roles in the regulation of postembryonic growth and development in response to nutrient/food availability",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on extensive prior literature cited in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9d8c7596-1697-40f2-b718-69a1ae33fa5a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C108",
+      "claim": "The GlcCer/TORC1 pathway is initiated in the intestine.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our previous data and this study indicated that the GlcCer/TORC1 pathway is initiated in the intestine",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Demonstrated through tissue-specific rescue experiments (Figure 4).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "33dda5da-796b-4e6e-aead-b0c08afb286e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C109",
+      "claim": "The GlcCer/TORC1 pathway is independent of the IIS pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the GlcCer/TORC1 pathway is initiated in the intestine (Figure 4) and is independent of the IIS pathway",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "Based on prior genetic analysis (Kniazeva et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "f22a11b6-b4ee-49e9-9a0d-909f2955aa57",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C110",
+      "claim": "The GlcCer/TORC1 pathway is DAF-7/TGF-\u03b2 pathway independent.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our additional analysis also suggests that the GlcCer/TORC1 pathway is DAF-7/TGF-\u03b2 pathway independent",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through genetic analysis (Figure 4\u2014figure supplement 3).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "2737b4b5-0105-473b-bade-c53189dab86e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C111",
+      "claim": "The independence of the GlcCer/TORC1 pathway from IIS and TGF-\u03b2 pathways may facilitate its role to promote specific developmental events under specific physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This independence may facilitate the role of such a pathway to promote specific developmental events under specific physiological conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the potential functional significance of pathway independence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "7975ce04-46b1-457c-b855-fb00020d9047",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C112",
+      "claim": "The GlcCer/TORC1 signaling pathway is likely conserved in mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There are several reasons for us to believe that such a GlcCer/TORC1 pathway is likely conserved in mammals.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference based on conservation of pathway components and related observations in mammals.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ed57d40b-3e3e-4d95-bdfa-f6a34ac2d223",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C113",
+      "claim": "The components of TORC1 are conserved between C. elegans and mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "First, the components of TORC1 are conserved between C. elegans and mammals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge based on sequence homology and functional studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "58375370-8b81-474c-8527-3513cbc90f14",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C114",
+      "claim": "The NPRL-3 protein is conserved in all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The NPRL-3 protein we identified in this pathway is conserved in all eukaryotes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on sequence homology analysis across species.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e25dc0d9-78d0-408a-b249-d57dd154031e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C115",
+      "claim": "The negative regulatory role of NPRL-3 on TOR has been characterized in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and its negative regulatory role on TOR has been characterized in budding yeast",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Neklesa and Davis, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "06a78d9e-7023-450d-9dc6-8ab356ede4df",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C116",
+      "claim": "NPR2 and IML1, which form a complex with NPR3 in budding yeast, have orthologs in C. elegans and mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Several proteins (such as NPR2 and IML1) that are reported to form a complex with NPR3 in budding yeast have orthologs in C. elegans as well as mammals",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "Based on sequence homology and prior characterization (Neklesa and Davis, 2009; Wu and Tu, 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "e56e7e79-b866-444e-95a3-f2ca66c93712",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C117",
+      "claim": "NPRL2 (human ortholog of NPR2) and DEPDC5 (human ortholog of IML1) have been reported to function as tumor suppressors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "NPRL2 (human ortholog of NPR2) and DEPDC5 (human ortholog of IML1) have been reported to function as tumor suppressors",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior studies (Merrill et al., 1997; Li et al., 2004; Neklesa and Davis, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "c0c071aa-4189-4d80-a082-cfe29674dd66",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C118",
+      "claim": "The tumor suppressor property of NPRL2 and DEPDC5 is consistent with their role in repressing TOR-mediated growth regulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This property is consistent with the role of this complex in repressing TOR-mediated growth regulation that was identified in budding yeast and this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference connecting the tumor suppressor function to the mechanistic role in TOR regulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "55905431-98df-4e1c-a8e8-e134fd631944",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C119",
+      "claim": "A role for GlcCer in nutrient sensing is consistent with studies showing that ceramide and sphingolipids play roles in cell signaling and growth control in both invertebrates and mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Second, a role for GlcCer in nutrient sensing is consistent with studies showing that ceramide and sphingolipids play roles in cell signaling and growth control in both invertebrates and mammals",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Based on prior literature (Deng et al., 2008; Hannun and Obeid, 2008; Menuz et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "d02e6889-9849-4a35-a195-98134a18c5b9",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C120",
+      "claim": "Mouse mutants with blocked GlcCer biosynthesis die as early embryos.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The finding that mouse mutants with blocked GlcCer biosynthesis die as early embryos suggests the essential role of these lipids in growth and development",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Yamashita et al., 1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "3c1f1b93-4296-44e7-8db7-92bca49cb2a1",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C121",
+      "claim": "The TOR pathway is down-regulated by inhibiting the abnormally high GlcCer biosynthesis in polycystic kidney disease in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Third, the TOR pathway is down-regulated by inhibiting the abnormally high GlcCer biosynthesis in polycystic kidney disease in mouse models",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (Natoli et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "562c5040-9ce4-4d23-9856-cbfedb481171",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C122",
+      "claim": "The down-regulation of TOR by inhibiting GlcCer biosynthesis in polycystic kidney disease suggests a possible conserved link between GlcCer and TOR activities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggesting a possible conserved link between GlcCer and TOR activities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about conservation based on observations in mouse models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "cd70e400-f096-43b0-866a-d75ac529ced0",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C123",
+      "claim": "It is currently unknown whether an iso-branched LCB is required for the potential role of GlcCer in mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is currently unknown whether an iso-branched LCB is also required for the potential role of GlcCer in mammals",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the current state of knowledge regarding mammalian sphingolipid structure-function relationships.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1816c13c-5253-4f6f-9d03-d86827c40816",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C124",
+      "claim": "Most LCBs in mammals are straight-chain LCBs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "given that most LCBs in mammals are straight-chain LCBs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about mammalian sphingolipid composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "aff4035d-32c5-4409-bd45-bc2143a035b3",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C125",
+      "claim": "mmBCFAs (derived from branched-chain amino acids) are present in mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, it is important to note that mmBCFAs (derived from branched-chain amino acids) are also present in mammals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge from prior studies of mammalian lipid composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "abffb154-b99a-41bc-833f-f99e415b24ab",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C126",
+      "claim": "mmBCFAs are constituents of sphingolipids in skin cells and the intestinal tract of human newborns.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, they are constituents of sphingolipids in skin cells and the intestinal tract of human newborns.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior studies (Aungst, 1989; Karlsson, 1997; Oku et al., 2000; Ran-Ressler et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "19dab2c4-28c5-4c93-9707-a624004bb548",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C127",
+      "claim": "mmBCFAs are incorporated into LCBs (to form an iso- or an anteiso-LCB similar to that in C. elegans) in multiple mammalian tissues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "They are also found to be incorporated into LCBs (to form an iso- or an anteiso-LCB similar to that in C. elegans) in multiple mammalian tissues",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior studies (Aungst, 1989; Karlsson, 1997; Oku et al., 2000; Ran-Ressler et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "5104de28-0379-4524-bd06-a5dbf28935b0",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C128",
+      "claim": "mmBCFAs in mammals may have important physiological functions, including possible roles in ceramide-involved growth regulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, their important physiological functions, including possible roles in ceramide-involved growth regulation, may be assumed, albeit not yet uncovered experimentally.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential mammalian functions based on the C. elegans findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "a080e49a-5ee9-41dc-9f92-254f5a8c6e6a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C129",
+      "claim": "TORC1 localizes at the surface of the lysosome, likely in lipid rafts, for its role in sensing amino acids in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Recent work in mammalian cells has indicated that TORC1, for its role in sensing amino acids, localizes at the surface of the lysosome, likely in lipid rafts",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on recent work in mammalian cells (Nada et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "72f58e02-b5d9-41f4-86db-992a27321b92",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C130",
+      "claim": "d17iso-GlcCer could act as a ligand that binds to a 'receptor' to either repress the NPRL-2/3 complex or activate the TOR complex at the surface of the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If such a mechanism is conserved in all animals, conceptually, d17iso-GlcCer could act as a ligand that binds to a 'receptor' to either repress the NPRL-2/3 complex or activate the TOR complex at the surface of the lysosome.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about the molecular mechanism of d17iso-GlcCer action.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "509366db-eb90-4550-b0dc-bed6c6df4a6e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C131",
+      "claim": "d17iso-GlcCer could be required for lysosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Alternatively, this lipid could be required for lysosome biogenesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is an alternative speculative hypothesis about d17iso-GlcCer function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "5278a1d6-cd17-48e1-8c83-9ba1e296c988",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C132",
+      "claim": "d17iso-GlcCer could be an essential constituent of the membrane microdomain that permits the proper localization or activity of TORC1 on the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "or could be an essential constituent of the membrane microdomain that permits the proper localization or activity of TORC1 on the lysosome.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is another speculative hypothesis about d17iso-GlcCer function in membrane organization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "9d123ff5-74c5-4ad0-9a65-8af677791f27",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C133",
+      "claim": "No obvious defects in lysosome formation were observed in elo-5(-) mutants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By examining lysosomal markers LMP-1::GFP (Artal-Sanz et al., 2006; O'Rourke et al., 2009; Rabbitts et al., 2008), GLO-1::GFP (Schroeder et al., 2007; Zhang et al., 2010), and Neutral red (Long et al., 2002), we did not observe obvious defects in lysosome formation in elo-5(\u2212) mutants",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through microscopy analysis of lysosomal markers (Figure 4\u2014figure supplements 4 and 5).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "154c1a4e-68fe-4dfc-9102-78e83771abbf",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C134",
+      "claim": "Major defects in lysosome formation would be inconsistent with the genetic suppression data and previous studies on GlcCer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Major defects in lysosome formation would also be inconsistent with our genetic suppression data and previous studies on GlcCer by others",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an inference based on the genetic data and prior work (Entchev et al., 2008; van der Poel et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "cbd88e9a-e8e6-4344-befe-7ad4452516f4",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C135",
+      "claim": "One possible mechanism is that d17iso-GlcCer acts through the V-ATPase pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One possible mechanism is that d17iso-GlcCer acts through the V-ATPase pathway",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis based on prior work in tissue culture cells.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "4d399af9-e089-4380-abca-247d0af7e41b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C136",
+      "claim": "The lysosomal V-ATPase has been shown to be stimulated by GlcCer and to play an essential role in TORC1 activation in studies using tissue culture cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "since the lysosomal V-ATPase has been shown to be stimulated by GlcCer and to play an essential role in TORC1 activation in studies using tissue culture cells",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Based on prior work (van der Poel et al., 2011; Zoncu et al., 2011; Bar-Peled et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "2790269c-53e6-4323-9b33-97add514754a",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C137",
+      "claim": "Activation of TORC1 bypasses the robust L1 arrest phenotype caused by either mmBCFA or d17iso-GlcCer deficiency.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It may be important to point out again that activation of TORC1 bypasses the robust L1 arrest phenotype caused by either mmBCFA or d17iso-GlcCer deficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through experiments with TORC1-activating transgenes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "43b13b32-625e-4812-ab5e-f74ec3020e5e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C138",
+      "claim": "The elo-5(-); nprl-3(ku540) double mutants, still deficient for mmBCFAs and d17iso-GlcCer, propagate continuously.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Remarkably, the elo-5(\u2212); nprl-3(ku540) double mutants, still deficient for these lipids, propagate continuously.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Demonstrated through phenotypic analysis (Figure 2).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "df74b3f9-0d00-44b2-a87d-1f0872d399d1",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C139",
+      "claim": "The only essential biochemical role of d17iso-GlcCer might be to activate TORC1 or repress NPRL-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, the only essential biochemical role of d17iso-GlcCer might be to activate TORC1 or repress NPRL-3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference based on the complete bypass of lipid requirement by TORC1 activation or NPRL-3 loss.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "c79431e9-2ca3-46a8-a3d4-e8052f21f88d",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "claim_id": "C140",
+      "claim": "The biochemical mechanism underlying the role of d17iso-GlcCer appears to be very specifically connected to TORC1 activation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In other words, the biochemical mechanism underlying this role of d17iso-GlcCer appears to be very specifically connected to TORC1 activation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the specificity of the lipid-TORC1 connection based on the genetic bypass experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "423b187e-737c-492c-8573-71468571d71b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that mmBCFA deficiency causes L1 developmental arrest in C. elegans is well-supported by multiple lines of evidence including prior work and current experimental data showing elo-5(-) mutants arrest at L1 and are rescued by mmBCFA supplementation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that mmBCFAs function through d17iso-sphinganine (d17iso-SPA) is strongly supported by rescue experiments showing d17iso-SPA, but not straight-chain sphingolipids, rescues elo-5(-) arrest at lower concentrations than mmBCFAs and without restoring mmBCFA levels, and by genetic epistasis with sptl-1.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that d17iso-glucosylceramide (d17iso-GlcCer) mediates the essential function of mmBCFAs is well-supported by genetic pathway analysis showing that disrupting enzymes downstream of d17iso-SPA (fath-1, cgt-1/cgt-3) causes arrest that cannot be rescued by d17iso-SPA, while disrupting enzymes further downstream does not cause arrest.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that nprl-3(ku540) mutation bypasses mmBCFA/d17iso-GlcCer requirement by acting downstream is strongly supported by genetic screening, lipid analysis showing no restoration of mmBCFAs or d17iso-sphingolipids, suppression of multiple pathway mutants, and molecular identification of the mutation in nprl-3.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that NPRL-2/3 negatively regulates TORC1 downstream of d17iso-GlcCer is well-supported by genetic epistasis experiments showing that reducing TORC1 activity (via RNAi of raga-1, rheb-1, ife-2, rsks-1) reverses the nprl-3(ku540) suppression effect in the absence of mmBCFAs but not when mmBCFAs are supplemented.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "868e73e2-b1cd-4800-82a6-e892090bed43",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that activating TORC1 bypasses d17iso-GlcCer requirement is strongly supported by multiple TORC1-activating transgenes (daf-15::rap-1(22), raga-1Q63L, rheb-1Q71LQ72D) rescuing elo-5(-) arrest at ~40-50% efficiency, and by elo-5(-);nprl-3(ku540) animals propagating continuously despite lacking mmBCFAs and d17iso-GlcCer.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that the d17iso-GlcCer/TORC1 pathway functions in the intestine is well-supported by tissue-specific rescue experiments showing intestinal-specific (ges-1 promoter) but not neuronal-specific (rgef-1 promoter) TORC1 activation rescues elo-5(-) arrest, and by ife-2 RNAi (intestinal-specific) blocking nprl-3(ku540) suppression.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "dbe28420-4e43-43fc-bf27-72c218a2c0c4",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that TORC1 activity is reduced in mmBCFA-deficient animals and restored by nprl-3(-) is supported by FIB-1 nucleolar localization analysis, a validated marker of TORC1 activity in C. elegans, showing reduced FIB-1 nucleolar localization in elo-5(RNAi) animals that is rescued by nprl-3(ku540).",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "341dba36-adc9-439e-bd68-93660a6d605d",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that the mmBCFA/d17iso-GlcCer/TORC1 pathway is independent of IIS and DAF-7/TGF-\u03b2 pathways is supported by prior genetic analysis (for IIS) and additional genetic experiments in this study (for TGF-\u03b2), establishing this as a distinct developmental regulatory pathway.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "4ef37bc0-fa32-45c6-a9c9-19575bc1269b",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that lysosome formation is not grossly disrupted in mmBCFA-deficient animals is supported by analysis of multiple lysosomal markers (LMP-1::GFP, GLO-1::GFP, Neutral red) showing no obvious defects, which is consistent with the genetic suppression data indicating a signaling rather than structural role for d17iso-GlcCer.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "cfc3266a-ed04-4dbd-88fa-f44725b51365",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R11",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The result that leucine supplementation cannot bypass mmBCFA deficiency is supported by experimental data showing 10 mM leucine fails to rescue elo-5(-) arrest, indicating that the mmBCFA/d17iso-GlcCer/TORC1 pathway is essential and cannot be compensated by leucine-sensing mechanisms in L1 larvae.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "ff6c83f6-1895-44b1-b553-7957baf973e2",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R12",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The result that the GlcCer/TORC1 pathway is likely conserved in mammals is based on reasonable inferences from component conservation, prior studies in yeast and mammals, and tumor suppressor functions of NPRL2/DEPDC5, but lacks direct experimental validation in mammalian systems. This represents a well-reasoned hypothesis requiring future experimental testing.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    },
+    {
+      "id": "4c369469-d75c-4585-9a98-7176917d7f01",
+      "content_id": "46033364-2f99-4106-b437-5505fc668e93",
+      "result_id": "R13",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The proposed molecular mechanisms for how d17iso-GlcCer activates TORC1 (ligand-receptor interaction, lysosome biogenesis, membrane microdomain constituent, or V-ATPase pathway) are speculative hypotheses that require further biochemical and genetic validation. While the V-ATPase hypothesis is supported by prior work in tissue culture, none of these mechanisms have been directly tested in this study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:32:03.024285Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7554617-79b8-4ba4-a9e7-653fb8fd3096",
+      "result_id": "423b187e-737c-492c-8573-71468571d71b"
+    },
+    {
+      "claim_id": "4bacba68-0ddb-49af-82dd-273ad3714870",
+      "result_id": "423b187e-737c-492c-8573-71468571d71b"
+    },
+    {
+      "claim_id": "a3606866-b311-40da-80e3-be86efcc0912",
+      "result_id": "423b187e-737c-492c-8573-71468571d71b"
+    },
+    {
+      "claim_id": "e7153e54-23a8-4af3-8b7d-c763cec472a3",
+      "result_id": "423b187e-737c-492c-8573-71468571d71b"
+    },
+    {
+      "claim_id": "775c95ce-c0d0-4a31-a204-17a6d72eedf7",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "e51544a1-d316-40bb-b4f0-5f06c1d01e8e",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "6618ab73-4c05-45bb-9068-08b927c42a56",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "e7820e26-f557-4311-914c-6b66bc6082d8",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "d1749506-9664-43de-9729-51db769bcda0",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "9f6d6d6e-0a73-43d2-a2e7-ea7ac57f18c7",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "303991d6-2ddf-406e-860e-a03eaba61dca",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "f0d1eb77-2733-4dd6-8618-17941472bd72",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "24a7e6de-0e31-42a4-b13e-21ae63e7373a",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "d3b3dfff-b8c1-4675-a473-76dd3f8e2269",
+      "result_id": "1d80f4e6-4dde-42e4-91c8-8630066b67eb"
+    },
+    {
+      "claim_id": "8f146258-150c-4ab7-8555-428ca0fc622c",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "d54ec8df-fac7-48f7-9b3a-1e6dac99dcc3",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "f87cafd5-9b19-461f-8e16-b931fa832672",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "fdff21c4-cf1a-429a-90ff-cf3e400786a3",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "361a72bf-a7e1-483d-b2c4-e85376efc1b9",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "9b849105-acd4-4f9a-a7e7-7af316738267",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "ccd669ac-a4c5-4430-82e6-474b7e635eea",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "ed4a1d6d-f0de-4648-b5e8-853bc38969ea",
+      "result_id": "1f7906ad-6dc4-44fc-b2ba-5f27687d5c18"
+    },
+    {
+      "claim_id": "0a19dd8f-8e6e-405e-81fa-b34892e3a80a",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "09310b10-5104-4566-944a-4df8606f5609",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "e1fe08d1-10b8-4c5f-b8d6-bd19e014d68a",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "a7033697-5844-412c-bef1-a18323006aac",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "d6e2a451-67da-4869-b320-2d876ddc7298",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "1ef8dd6b-da4b-4449-a96f-94eca3f3d974",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "8cbb99e6-6855-4a4d-9430-ddd1c5d56633",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "5271012d-fde5-4a68-8627-1d89bbb511b4",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "b5a51015-58aa-4268-901e-f40be356c1d0",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "56428768-4020-4ec4-9885-3870f9d6dfec",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "bd041676-ed84-4f5b-8604-a0b6d875fec9",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "8777a0c5-2561-42e8-8bfb-f3c2f926a636",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "fed59323-b71d-457a-b424-45699502d9db",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "63bef30d-11a1-4cb2-9c20-914a66477f67",
+      "result_id": "69d9c9ec-b385-4037-84d3-22cf6a0c0e92"
+    },
+    {
+      "claim_id": "c0948555-503a-4039-b037-a00101d5550c",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "2921350e-6c34-4c51-aa76-9b88f848cbc1",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "0473d732-671d-41fe-904d-cf583c2fab2d",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "f7af8e57-406c-4022-b172-d307f8dfc2a4",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "c68e1336-db56-416b-8d6a-99811763a29b",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "d98109e4-509a-42d5-b70f-3247770750e3",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "2fcf71a6-4a5e-4f67-885a-d6bd84f164c4",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "1329c345-ae8b-48c8-bacf-7109e6542874",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "eebffab5-3bb7-4934-8af8-864f8978bf04",
+      "result_id": "7d0f8f67-87a3-4a96-9965-c7eb5a1ced6e"
+    },
+    {
+      "claim_id": "22b697da-d692-4ef8-88a2-88c6c9a61f15",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "35e062b0-08db-4e2e-a9bc-f1ea7fbaa550",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "0e73d594-f469-44c9-a548-6083de5f0f1b",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "b3c51869-be76-4d30-bb2f-cbb78ea0b3a5",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "dc9621c1-a4ab-433c-83c6-c5bef58df6c8",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "a3ffc07b-3102-4b4e-bd55-e4865fb515ad",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "344e756d-7493-4ba9-a5d7-c1290da9dff4",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "2790269c-53e6-4323-9b33-97add514754a",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "43b13b32-625e-4812-ab5e-f74ec3020e5e",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "df74b3f9-0d00-44b2-a87d-1f0872d399d1",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "c79431e9-2ca3-46a8-a3d4-e8052f21f88d",
+      "result_id": "868e73e2-b1cd-4800-82a6-e892090bed43"
+    },
+    {
+      "claim_id": "aab78714-b8c6-4903-901d-bed4d1af655c",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "f8bfa44b-d094-4d57-96db-ab53a8db16d6",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "204953ca-d6d2-4bfe-bd1b-1b4f3f48889c",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "6d1c8778-d341-4fd4-91d7-19410265a894",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "0e9ba77b-b018-48bc-83a8-45b3c94ecf50",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "804e4bac-fcaf-4851-8e26-b191b44adf3a",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "9d8c7596-1697-40f2-b718-69a1ae33fa5a",
+      "result_id": "6f5e66eb-a7d2-40d5-9ab7-45a40ea9b691"
+    },
+    {
+      "claim_id": "ef094d42-225c-42a5-9eb7-0be7567713dd",
+      "result_id": "dbe28420-4e43-43fc-bf27-72c218a2c0c4"
+    },
+    {
+      "claim_id": "86aba187-9e3a-4d1f-90de-9166bf1ced8f",
+      "result_id": "dbe28420-4e43-43fc-bf27-72c218a2c0c4"
+    },
+    {
+      "claim_id": "9d362278-8e2a-4db2-bcb7-03fd46e0fc12",
+      "result_id": "dbe28420-4e43-43fc-bf27-72c218a2c0c4"
+    },
+    {
+      "claim_id": "6337186f-e684-4119-9b32-fbf62254244d",
+      "result_id": "dbe28420-4e43-43fc-bf27-72c218a2c0c4"
+    },
+    {
+      "claim_id": "45b9c66a-47f9-475a-bae7-9f387c61ad0e",
+      "result_id": "dbe28420-4e43-43fc-bf27-72c218a2c0c4"
+    },
+    {
+      "claim_id": "0822fe27-b684-42d9-86fd-a6de0602b426",
+      "result_id": "341dba36-adc9-439e-bd68-93660a6d605d"
+    },
+    {
+      "claim_id": "33dda5da-796b-4e6e-aead-b0c08afb286e",
+      "result_id": "341dba36-adc9-439e-bd68-93660a6d605d"
+    },
+    {
+      "claim_id": "f22a11b6-b4ee-49e9-9a0d-909f2955aa57",
+      "result_id": "341dba36-adc9-439e-bd68-93660a6d605d"
+    },
+    {
+      "claim_id": "9d123ff5-74c5-4ad0-9a65-8af677791f27",
+      "result_id": "4ef37bc0-fa32-45c6-a9c9-19575bc1269b"
+    },
+    {
+      "claim_id": "154c1a4e-68fe-4dfc-9102-78e83771abbf",
+      "result_id": "4ef37bc0-fa32-45c6-a9c9-19575bc1269b"
+    },
+    {
+      "claim_id": "668f0487-d990-42e3-b4ef-79ee05243a43",
+      "result_id": "cfc3266a-ed04-4dbd-88fa-f44725b51365"
+    },
+    {
+      "claim_id": "9f0ed113-706c-4b31-9b8e-adc28ca79d6b",
+      "result_id": "cfc3266a-ed04-4dbd-88fa-f44725b51365"
+    },
+    {
+      "claim_id": "7975ce04-46b1-457c-b855-fb00020d9047",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "ed57d40b-3e3e-4d95-bdfa-f6a34ac2d223",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "58375370-8b81-474c-8527-3513cbc90f14",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "e25dc0d9-78d0-408a-b249-d57dd154031e",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "06a78d9e-7023-450d-9dc6-8ab356ede4df",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "e56e7e79-b866-444e-95a3-f2ca66c93712",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "c0c071aa-4189-4d80-a082-cfe29674dd66",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "55905431-98df-4e1c-a8e8-e134fd631944",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "d02e6889-9849-4a35-a195-98134a18c5b9",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "3c1f1b93-4296-44e7-8db7-92bca49cb2a1",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "562c5040-9ce4-4d23-9856-cbfedb481171",
+      "result_id": "ff6c83f6-1895-44b1-b553-7957baf973e2"
+    },
+    {
+      "claim_id": "72f58e02-b5d9-41f4-86db-992a27321b92",
+      "result_id": "4c369469-d75c-4585-9a98-7176917d7f01"
+    },
+    {
+      "claim_id": "509366db-eb90-4550-b0dc-bed6c6df4a6e",
+      "result_id": "4c369469-d75c-4585-9a98-7176917d7f01"
+    },
+    {
+      "claim_id": "5278a1d6-cd17-48e1-8c83-9ba1e296c988",
+      "result_id": "4c369469-d75c-4585-9a98-7176917d7f01"
+    },
+    {
+      "claim_id": "cbd88e9a-e8e6-4344-befe-7ad4452516f4",
+      "result_id": "4c369469-d75c-4585-9a98-7176917d7f01"
+    }
+  ],
+  "comparisons": []
+}

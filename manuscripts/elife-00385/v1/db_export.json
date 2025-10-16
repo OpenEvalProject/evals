@@ -1,0 +1,207 @@
+{
+  "submission": {
+    "id": "f4eef346-979c-4b9e-a04e-841eeac626b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:22:58.949417Z",
+    "updated_at": "2025-10-16T21:22:58.949417Z"
+  },
+  "content": [
+    {
+      "id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "submission_id": "f4eef346-979c-4b9e-a04e-841eeac626b0",
+      "content_type": "manuscript",
+      "content_text": "# Mathematics and malaria\n\n## Authors\n\n- Prabhat Jha<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Dalla Lana School of Public Health, and the Centre for Global Health Research University of Toronto Canada jhap@smh.ca\n\n\u2020 Corresponding author\n\n## Abstract\n\nPopulations of malaria parasites are strongly influenced by their interactions with human immunity, and a better understanding of these interactions can help to explain why the risks from this potentially lethal disease vary according to location and age.\n",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ab3d9aca-977c-4123-b365-0f35c686fdb6",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C1",
+      "claim": "Populations of malaria parasites are strongly influenced by their interactions with human immunity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Populations of malaria parasites are strongly influenced by their interactions with human immunity",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is presented as an established understanding in the field (KNOWLEDGE) and serves as the foundational premise for the manuscript's discussion (INFERENCE).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "625cadcf-4035-447e-8a85-44d3caa14c38",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C2",
+      "claim": "A better understanding of malaria parasite-human immunity interactions can help explain why risks from malaria vary according to location.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a better understanding of these interactions can help to explain why the risks from this potentially lethal disease vary according to location and age",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This claim proposes a potential benefit of improved understanding (SPECULATION) and implies a causal relationship between immunity interactions and geographic risk variation (INFERENCE).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "90f411dd-42d8-4a05-9318-a193e2231267",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C3",
+      "claim": "A better understanding of malaria parasite-human immunity interactions can help explain why risks from malaria vary according to age.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a better understanding of these interactions can help to explain why the risks from this potentially lethal disease vary according to location and age",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This claim proposes a potential benefit of improved understanding (SPECULATION) and implies a causal relationship between immunity interactions and age-related risk variation (INFERENCE).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "4eb403fa-6451-4aac-badb-de3a1713812d",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C4",
+      "claim": "Malaria is a potentially lethal disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this potentially lethal disease",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a well-established medical fact about malaria's severity and mortality risk, representing established scientific consensus.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "7383cad4-21f2-4800-b40f-334622311969",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C5",
+      "claim": "Risks from malaria vary according to location.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the risks from this potentially lethal disease vary according to location and age",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established epidemiological knowledge about geographic variation in malaria risk.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "9a77a747-f858-4907-b610-0d53c44c7665",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C6",
+      "claim": "Risks from malaria vary according to age.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the risks from this potentially lethal disease vary according to location and age",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established epidemiological knowledge about age-related variation in malaria risk.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "cba389e4-2061-4ebb-9066-485a0efc1b73",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C7",
+      "claim": "Human immunity interacts with malaria parasites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "their interactions with human immunity",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an established immunological fact about the host-pathogen relationship in malaria.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "7f1627ce-c555-4cbb-ae73-842be1fd71b2",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "claim_id": "C8",
+      "claim": "The variation in malaria risks by location and age is not fully understood.",
+      "claim_type": "IMPLICIT",
+      "source_text": "a better understanding of these interactions can help to explain why the risks from this potentially lethal disease vary according to location and age",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement that better understanding 'can help to explain' the variation implies that current understanding is incomplete, making this an implicit claim inferred from the explicit text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "212f6dda-0916-47bc-92fb-1c06f8c250cf",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1 and C7 represent well-established immunological knowledge about malaria parasite-host interactions. These are foundational facts in malaria biology supported by extensive prior literature, though no new empirical evidence is presented in this abstract. The claims serve as accepted premises rather than novel findings.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "82a67ab6-eec2-4b10-bdaf-a60f146b37c4",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4, C5, and C6 describe well-documented epidemiological patterns of malaria. The lethality of malaria and its geographic and age-related risk variation are established facts supported by extensive epidemiological data from prior work. These represent consensus knowledge in the field rather than novel empirical contributions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    },
+    {
+      "id": "55980b40-8dbc-4b30-84cc-ef89a7b7ee60",
+      "content_id": "456e3c1c-61d4-4c70-bbdd-cdcaa6c15a48",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C2, C3, and C8 propose that improved understanding of immunity-parasite interactions could explain geographic and age-related risk variation, implicitly acknowledging current understanding is incomplete. This is speculative and represents a research hypothesis rather than a demonstrated finding. No empirical evidence, mechanistic data, or analytical framework is provided to support this proposed explanatory relationship.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:22:58.949417Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ab3d9aca-977c-4123-b365-0f35c686fdb6",
+      "result_id": "212f6dda-0916-47bc-92fb-1c06f8c250cf"
+    },
+    {
+      "claim_id": "cba389e4-2061-4ebb-9066-485a0efc1b73",
+      "result_id": "212f6dda-0916-47bc-92fb-1c06f8c250cf"
+    },
+    {
+      "claim_id": "4eb403fa-6451-4aac-badb-de3a1713812d",
+      "result_id": "82a67ab6-eec2-4b10-bdaf-a60f146b37c4"
+    },
+    {
+      "claim_id": "7383cad4-21f2-4800-b40f-334622311969",
+      "result_id": "82a67ab6-eec2-4b10-bdaf-a60f146b37c4"
+    },
+    {
+      "claim_id": "9a77a747-f858-4907-b610-0d53c44c7665",
+      "result_id": "82a67ab6-eec2-4b10-bdaf-a60f146b37c4"
+    },
+    {
+      "claim_id": "625cadcf-4035-447e-8a85-44d3caa14c38",
+      "result_id": "55980b40-8dbc-4b30-84cc-ef89a7b7ee60"
+    },
+    {
+      "claim_id": "90f411dd-42d8-4a05-9318-a193e2231267",
+      "result_id": "55980b40-8dbc-4b30-84cc-ef89a7b7ee60"
+    },
+    {
+      "claim_id": "7f1627ce-c555-4cbb-ae73-842be1fd71b2",
+      "result_id": "55980b40-8dbc-4b30-84cc-ef89a7b7ee60"
+    }
+  ],
+  "comparisons": []
+}

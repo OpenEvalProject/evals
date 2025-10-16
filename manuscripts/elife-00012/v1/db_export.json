@@ -1,0 +1,2229 @@
+{
+  "submission": {
+    "id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T20:23:57.663757Z",
+    "updated_at": "2025-10-16T20:23:57.663757Z"
+  },
+  "content": [
+    {
+      "id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "content_type": "manuscript",
+      "content_text": "# Changing the responses of cortical neurons from sub- to suprathreshold using single spikes in vivo\n\n## Authors\n\n- Verena Pawlak<sup>1</sup>\n- David S Greenberg<sup>1</sup>\n- Henning Sprekeler<sup>2</sup>\n- Wulfram Gerstner<sup>2</sup>\n- Jason ND Kerr<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Network Imaging Group Max Planck Institute for Biological Cybernetics T\u00fcbingen Germany\n2. School of Computer and Communication Sciences and School of Life Sciences Brain Mind Institute, Ecole Polytechnique Federale de Lausanne Lausanne Switzerland\n3. Bernstein Center for Computational Neuroscience Tu\u0308bingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00012.001 Action Potential (APs) patterns of sensory cortex neurons encode a variety of stimulus features, but how can a neuron change the feature to which it responds? Here, we show that in vivo a spike-timing-dependent plasticity (STDP) protocol\u2014consisting of pairing a postsynaptic AP with visually driven presynaptic inputs\u2014modifies a neurons' AP-response in a bidirectional way that depends on the relative AP-timing during pairing. Whereas postsynaptic APs repeatedly following presynaptic activation can convert subthreshold into suprathreshold responses, APs repeatedly preceding presynaptic activation reduce AP responses to visual stimulation. These changes were paralleled by restructuring of the neurons response to surround stimulus locations and membrane-potential time-course. Computational simulations could reproduce the observed subthreshold voltage changes only when presynaptic temporal jitter was included. Together this shows that STDP rules can modify output patterns of sensory neurons and the timing of single-APs plays a crucial role in sensory coding and plasticity. DOI: http://dx.doi.org/10.7554/eLife.00012.001\n\n## Introduction\n\nThe formation of sensory percepts in the mammalian cortex is thought to involve the propagation of action potentials through populations of connected neurons in response to sensory stimulation (Hebb, 1949; Harris, 2005). Rules that dictate changes in the strength, or efficacy, of these connections rely on persistent correlated activity between the connected neurons (for recent review, see Abraham, 2008). For these changes in synaptic efficacy to be functional and recognized by the down-stream neurons targeted by the axon, the changes need to influence AP patterns. Plasticity induction involving precisely timed action-potentials, known as spike-timing-dependent plasticity (Markram et al., 1997; Bi and Poo, 1998), has been suggested as a candidate mechanism to determine which stimulus driven inputs are strengthened and weakened (out of the many possible sensory driven inputs). What makes STDP rules so appealing for modification of synaptic strength in the cortex is that the low numbers of APs and low repetition frequencies used to induce plastic changes in STDP protocols (Feldman, 2012) are consistent with low AP firing rates observed in awake freely moving animals exploring a novel environment (Lee et al., 2006; Sawinski et al., 2009). In addition, cortical neurons are capable of AP-responses that are temporally precise over multiple trials (Bair and Koch, 1996; Marsalek et al., 1997; Tchumatchenko et al., 2011), similar to the precision typically used during STDP pairing protocols (for recent review see, Feldman, 2012). Lastly, most modeling studies of synaptic plasticity using STDP rules assume that synaptic modification leads to changes in spiking (Gerstner et al., 1996; Song and Abbott, 2001) with a recent study suggesting that STDP underlies sensory map plasticity in the young and adult cortex (Young et al., 2007). However, evidence for single-neuron STDP in vivo remains scarce and confined to subthreshold changes (Meliza and Dan, 2006; Jacob et al., 2007) and remains controversial (Lisman and Spruston, 2005, 2010; Fregnac et al., 2010; Shouval et al., 2010). While extracellular studies have suggested STDP can modify spiking patterns in anesthetized (Fu et al., 2002) and freely moving animals (Celikel et al., 2004), this evidence remains difficult to interpret without information on single-cell membrane potential dynamics.\n\nThe visual cortex is perfectly suited to study STDP since visual cortex neuronal responses and receptive fields are known to be highly plastic (Gilbert, 1998), and sensory maps can undergo plastic changes with experience (Daw and Wyatt, 1976; Li et al., 2008) or after removal of visual input (Wiesel and Hubel, 1963; Kaas et al., 1990; Gilbert and Wiesel, 1992). Finally during visual stimulation, the action potential output for many visual cortex neurons is tuned to specific locations in the visual field and to specific stimulus features (Hubel and Wiesel, 1959), even though each neuron receives synaptic inputs corresponding to surrounding locations or many different stimulus features (Ferster, 1986; Jia et al., 2010). Together these conditions make a perfect system to test whether STDP rules can, with a few tens of spikes, reliably change a subtreshold responding neuron into a neuron responding to the same stimulus with APs and change a neuron's visually driven AP patterns in a timing dependent manner.\n\n## Results\n\nWe addressed these questions by pairing precisely timed postsynaptic spikes to presynaptic inputs arising from visual stimulation. We used STDP protocols similar to those previously applied in vivo (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig1-v1.jpg)\n\n**Figure 1.:** (A) Flashed vertical bars were presented to an anesthetized rat from a stimulus screen. (B) Continuous whole-cell current-clamp recording with down-state triggered visual stimulus presentations (grey boxes) and hyperpolarizing step currents (\u2212100 pA) to estimate input resistance. Flashed vertical bars were presented in one of four different positions across the stimulus screen. (C) Detailed view of whole-cell current-clamp recording of a voltage response (magenta, green arrow marks initial peak) to a 500 ms (grey box) flashed bar presented only during down-states (period marked in blue, dashed line indicates threshold used for online down-state detection). (D) Average membrane potential responses (green arrows indicate initial response peaks) to flashed bar stimulus for five different neurons. (E) Pairing consisted of injecting depolarizing current into the postsynaptic neuron to elicit a single AP timed to occur either before (left, \u2018\u2212Timing\u2019) or after (right, \u2018+Timing\u2019) the response peak (green arrow). (F) Scatter plot showing timing of evoked APs for each recording vs timing of initial response peak (n = 32). Time 0 denotes stimulus onset. Histograms show the number of neurons with positive timing and negative timing.DOI: http://dx.doi.org/10.7554/eLife.00012.003\n\nAll four stimulus positions evoked either subthreshold or suprathreshold responses, consistent with the broad receptive fields of neurons in younger rats (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig2-v1.jpg)\n\n**Figure 2.:** (A) Time course of the experiment. Before the pairing, responses to visual stimulation were recorded, during the pairing, visual stimulation was paired with APs evoked by brief current injection (repeated 40 times), followed by recording of visual responses. (B) Average membrane potential responses to stimulus presentation at the pairing position, before (dashed line) and after pairing (black line). The portion of the response before the pairing APs are potentiated, while the portion after is depressed. Small black arrow indicates timing of pairing APs. (C) Scatter plot showing the change in peak amplitude vs the time difference between the pairing APs relative to the peak. Delivering APs before the peak (red circles) decreases the peak amplitude, while delivering them after increases it (green circles). (D) Subthreshold membrane potential response to flashed bar (grey box) before pairing with a postsynaptic spike after the initial peak (positive timing), and suprathreshold response to same flashed bar stimulus after pairing. (E) Number of APs evoked per visual stimulus before and after pairing, for the neuron shown in (D). (F) Number of APs evoked per visual stimulus before and after pairing, for a neuron that received a negative timing protocol (postsynaptic spike before the initial peak). (G) Average number of APs evoked per stimulus before pairing compared to after pairing for all neurons with positive timing induction (n = 15). (H) Average number of APs evoked per stimulus before pairing compared to after pairing for all neurons with negative timing induction (n = 17).DOI: http://dx.doi.org/10.7554/eLife.00012.004\n\nThe small changes in membrane potential observed here and in other studies raise the issue of whether the observed plasticity is sufficient to modify spiking responses in the postsynaptic neuron. Synaptic plasticity of a given neuron's inputs is functionally effective only if it alters neuronal spiking, so that information is passed on to downstream synaptic targets. To link STDP to changes in spiking at the single cell level, we therefore tested whether a sensory-driven but subthreshold-responding neuron (Figure 2D, left) could be changed through STDP induction into a suprathreshold-responding neuron (Figure 2D, right). In most neurons that received positive timing inductions sensory-evoked spiking rates increased after the pairing protocol (Figure 2E). Specifically, of the 15 neurons tested, 11 showed an increase in the average number of APs evoked by stimulus presentation, 1 showed a decrease, and 3 never discharged a stimulus-evoked AP (Figure 2G). Strikingly, in eight neurons the paired stimulus evoked spiking only after induction, that is over 50% transitioned from non-spiking to spiking. Over the 15 neurons tested, an additional 0.11 \u00b1 0.06 APs per stimulus were observed for the paired stimulus position after induction (p=0.01, initial response 0.06 \u00b1 0.04 APs per stimulus). In four cases increases in AP firing were significant at the single-neuron level (p<0.05), despite the modest numbers of stimulus presentation trials and low firing rates (see \u2018Materials and methods\u2019).\n\nWe next tested whether the STDP protocol could decrease the sensory-evoked spiking rates using negative timing inductions, in which pairing spikes occurred before the initial peak. For this to occur, we identified a stimulus position that evoked spiking in the recorded neuron (successful in 15 out of 17 recordings, 0.84 \u00b1 0.23 APs per stimulus), and then proceeded to pair spiking with stimulus presentation at this position. After pairing, the average number of APs evoked by stimulus presentation decreased (0.18 \u00b1 0.10 APs per stimulus after induction, p=0.04, n = 15). Of these 15 neurons 12 showed a decrease in spiking and 3 an increase after induction (Figure 2H). These changes were statistically significant at the single-neuron level (p<0.05) in four cases, all of which showed a decrease in spiking. Together this shows that an STDP protocol that induces small bidirectional changes in the membrane potential can both increase and decrease stimulus-evoked spiking depending on the relative timing of the single pairing spikes.\n\nThese changes in spiking responses observed after STDP induction could not be accounted for by neurons becoming more depolarized (down-state membrane potential \u221264.8 \u00b1 1.5 mV before vs \u221264.2\u00b1 1.5 mV after, p=0.61, n = 32) or by input resistance changes (323 \u00b1 39 M\u2126 before vs 419 \u00b1 54 M\u2126 after, p=0.16), and neither depolarization nor input resistance changes were correlated with changes in spiking (p>0.05). In a control group, where visual stimuli were presented but no APs were paired, stimulus-driven spiking rates in the second half of the recording were not significantly different from the first half (p=0.20, four neurons with four positions each), indicating that the increase in spiking was due to the STDP protocol. Finally, we note that increases in AP firing at the paired position for positive timing inductions remained significant even after removing the two neurons exhibiting the greatest increases (p=0.036, n = 13). Together, these results provide a robust demonstration that repeated pairing of a single AP to a visual stimulus \u223c40 times can initiate spiking responses in non-spiking neurons and can increase or diminish existing spiking responses. This is consistent with an STDP-driven change in functional status and provides experimental validation that STDP could provide a plasticity mechanism for changing receptive fields (Young et al., 2007).\n\nWe next measured whether induced spiking changes also extended within the receptive field to non-paired stimulus positions (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig3-v1.jpg)\n\n**Figure 3.:** (A) Stimulus-AP pairing was performed for a single stimulus position, but responses to neighboring and more distant positions were also measured before and after the pairing phase of the experiment. (B) Number of APs evoked per visual stimulus before and after pairing with positive timing. Stimulus-evoked spiking is shown for the paired position (upper), a neighboring position (center) and a more distant position (lower). The increase in stimulus-evoked spiking is greatest at the paired position, and the size of the change decays with distance. (C) As in (B), but showing an example where the paired position displays an increase in firing (upper) while a more distant position displays a decrease (lower). (D) Rates of spiking evoked by sensory stimulation in the recording shown in (B), before and after pairing (paired position marked by grey box); vertical arrows indicate direction of the change from before to after pairing. Dashed vertical lines indicate the suprathreshold stimulus response center before and after pairing, which shifted from position 1.00 to 2.86. (E) As in (D), but for the recording shown in (C), where a more distant position decreased its rate of stimulus-evoked spiking; response center shifted from 3.62 to 2.06. (F) Shifts in the suprathreshold stimulus response center after the pairing. Each arrow indicates the response center positions before and after pairing for a single experiment with positive (green) or negative timing (red). Vertical positions of arrows are arbitrary. Note that suprathreshold response center shifts could not be calculated for some recordings with insufficient spiking (see \u2018Materials and methods\u2019). Positive timing experiments display a shift toward the paired position. (G) Increase in stimulus-evoked spiking for neurons receiving positive timing inductions, as a function of distance from the paired position. Asterisks indicate significance at the p<0.05 level (Wilcoxon rank sum test).DOI: http://dx.doi.org/10.7554/eLife.00012.005\n\nWe further examined whether these changes displayed any common pattern, and might admit some simple description. To test this we considered neurons' spiking responses as functions of stimulus position, and calculated the \u2018stimulus response centers\u2019 of these functions in the space of stimulus positions (Figure 3D,E, dashed lines). Stimulus response centers were calculated as weighted averages of the four stimulus positions, with each position weighted by the rate of stimulus-evoked spiking. This analysis showed a simple but robust trend in the positive timing experiments: after stimulus-AP pairing, the stimulus response center moved toward the pairing position (Figure 3F). The shift in the suprathreshold response center was strongly correlated with the difference between pairing position and the response center before pairing (R = 0.81, p=0.008). For the negative timing inductions the majority of response centers moved away from the pairing position, but these changes were small and the trend was not significant (p=0.70).\n\nWe next examined whether the shifts in response centers observed for suprathreshold responses were also reflected in subthreshold responses. Subthreshold response centers, calculated by weighting each position by the peak amplitude, also shifted toward the pairing position for positive timings, albeit much less robustly than the suprathreshold shifts (R = 0.53, p=0.04,\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mean amplitude of the subthreshold response peak in a single recording with a positive timing induction, for all stimulus positions before and after pairing. Grey box indicates the pairing position, vertical arrows indicate the direction of the change from before to after pairing, and dashed vertical lines the subthreshold stimulus response center before and after pairing, which shifted from position 2.44 to 2.89 (horizontal arrow). (B) As in (A), but for a recording in which subthreshold responses at the pairing position transitioned from weakest of the four positions to strongest after pairing; response center shifted from 2.55 to 2.46. (C) Shifts in the subthreshold stimulus response center after stimulus-AP pairing, for positive timing inductions (green) and negative timing inductions (red). Each arrow indicates the response center positions before and after pairing for a single experiment with positive (green) or negative timing (red). Vertical positions of arrows are arbitrary.DOI: http://dx.doi.org/10.7554/eLife.00012.006\n\nA key difference between the present study and previous in vitro STDP experiments (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig5-v1.jpg)\n\n**Figure 5.:** (A) Average difference between before and after pairing membrane potential time course in response to visual stimulation at the paired position for a single neuron, aligned to the time of the pairing spike (dashed vertical line, t = 0). (B) Average (black) difference between before and after pairing membrane potential response to visual stimulation, as a function of time difference from the pairing spike. Individual neurons are shown in grey, green lines indicate SEM and the example neuron from (A) is shown in blue. (C) As in (B), but for non-paired stimulus positions adjacent to the paired position (left) and more distant positions (center, right). (D) Structure of the computational model showing that for each stimulus 400 presynaptic neurons were activated, providing input to a single postsynaptic neuron. Input spikes had a Gaussian probability distribution around target firing times. During pairing, a single postsynaptic spike (bottom) is induced at a predetermined time and input weights are increased if an input spike arrives at the respective synapse just before the induced spike (green area) and decreased if an input spike occurs just after the induced spike (red area). (E) Schematic showing mean firing rates over time for input neurons with \u03c3 = 5 ms used for calculating F. (F) Average difference in membrane potential when the input spike precision is \u223c5 ms (individual simulations grey, mean red) compared to a theoretical curve. (G) Timing of the positive (green) and negative (red) peaks of the membrane potential change relative to the induced postsynaptic spike as a function of the jitter in input spike timing. (H) Schematic showing mean firing rates over time for input neurons with \u03c3 = 40 ms used for calculating I. (I) Average difference in membrane potential when the input spike precision is \u223c40 ms. (J) Transfer of plasticity to a neighboring stimulus position when a subpopulation of synapses and timing are shared (red) compared to membrane potential difference from (I, black). (K) Transfer of plasticity to a neighboring stimulus position when a subpopulation of synapses are shared but timing is not (blue), and when no synapses are shared (green).DOI: http://dx.doi.org/10.7554/eLife.00012.007\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) (Left) Structure of the computational model. For each stimulus, 400 presynaptic input neurons are activated and each sends zero, one, or several spikes to a single postsynaptic output neuron. (Upper right) Schematic diagram illustrating input spike trains using patterned spike timing (see \u2018Input spike patterns\u2019 in \u2018Materials and methods\u2019). Spike times are Gaussian-distributed around target times from a fixed template that is different for each input neuron. During pairing, a single postsynaptic spike (lower right) is induced at a fixed time. Synapse strengths are updated according to a STDP rule, increasing when an input spike arrives at the respective synapse briefly before the induced spike (green area) and decreasing when an input spike occurs briefly after the induced spike (red area). (B)\u2013(E) Various activity patterns used to model the firing of presynaptic input neurons. Each panel shows raster plots and mean firing rates over time for two input neurons. (B) Inputs with patterned spike timing and 5 ms jitter produce precisely timed activity patterns. (C) Patterned spike timing with 40 ms jitter is less temporally precise. (D) The time varying firing rates scheme exhibits a clear onset time and a different maximum firing rate for each neuron. (E) The activity wave scheme exhibits rapid decay in firing rates after the maximum rate has been reached.DOI: http://dx.doi.org/10.7554/eLife.00012.008\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A)\u2013(C) Responses of a single postsynaptic neuron to individual stimulus presentations (grey) and average response (black), before pairing. (A) Time varying firing rates. (B) Patterned spike timing with 5 ms jitter. (C) Patterned spike timing with 40 ms jitter. (D)\u2013(F) Mean responses from all simulated postsynaptic neurons (grey) and combined population averages before (blue) and after pairing (red) (population averages computed over 9 neurons with negative timing simulations 15 with positive timing simulations). (D) Time varying firing rates. (E) Patterned spike timing with 5 ms jitter. (F) Patterned spike timing with 40 ms jitter.DOI: http://dx.doi.org/10.7554/eLife.00012.009\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00012/elife-00012-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A)\u2013(D) Mean firing rates over time for input neurons (see Figure 5\u2014figure supplement 1 for details). (E)\u2013(H) Input spikes converge on the output neuron and elicit a membrane potential response, (schematic shown, see Figure 5\u2014figure supplement 2 for simulation results). Colored triangles indicate potential timings of postsynaptic spikes in simulated pairing experiments. (I)\u2013(L) Time course of changes in the membrane potential response relative to the time of the pairing spike (t = 0). Results depends on the time of the pairing spike (colors correspond to triangles in (E\u2013H), with yellow around response onset and red after response peak). (M)\u2013(P) Time course of changes in the membrane potential response relative to the time of the pairing spike (t = 0), averaged over two different timings for the pairing spike (see \u2018Simulation protocol\u2019 in \u2018Materials and methods\u2019). Results are shown for various values of A(\u2212) in the STDP learning window (see inset; A(+) = 0.2, A(\u2212) = 0.16, 0.18, 0.2, 0.22 or 0.24).DOI: http://dx.doi.org/10.7554/eLife.00012.010\n\nWe hypothesized that this peak shift and broadening effect results from variable timing of synaptic inputs from L4 and L2/3 (Fagiolini et al., 1994; Niell and Stryker, 2008), since potentiating or depressing an input with more variable jitter in the timing will potentially affect a greater range of the subthreshold stimulus response. To test this, we built an STDP model with a plasticity rule (Gerstner et al., 1996; Song et al., 2000) consistent with previous in vitro studies (Figure 5D\u2013K) to examine STDP effects for various presynaptic activity patterns (Figure 5E,H). The membrane voltage in the neuron model is the sum of excitatory postsynaptic potentials (EPSPs), each described as a double exponential with rise time 2 ms and decay time 10 ms. Amplitudes of EPSPs were chosen from an exponential distribution with mean amplitude of 2 mV. With this set of parameters and 400 presynaptic inputs, the summed EPSPs had amplitudes and time courses similar to those measured in the experiment. Since the model was designed to describe experiments where spiking is induced artificially by the experimenter, firing is not an intrinsic property of the model but firing times were set \u2018by hand\u2019 at the target times designated for current injection by the experimental protocol (Figure 5D). Modeling each input's stimulus response as fixed and temporally precise produced membrane potential changes similar to those reported for in vitro STDP timing curves (Figure 5F). However, introducing jitter into the presynaptic activity (Figure 5G) caused the positive and negative peaks of the change in membrane potential to broaden and become more distant from the pairing spike with increasing jitter (Figure 5G). With a presynaptic jitter of 40 ms the model produced a biphasic change in the mean membrane potential (Figure 5H,I) that closely resembled the in vivo experimental results (Figure 5B), with a maximal potentiation 50 ms before and maximal depression 74 ms after the postsynaptic spike. The model also reproduced partial transfer of STDP effects to neighboring stimulus positions (Figure 5J, red) in a spike timing dependent manner (Figure 5K) and given the assumption that a subset of presynaptic neurons respond with similar spiking patterns for multiple stimulus positions. These modeling results show that the membrane potential changes observed in vivo are broader than those observed in vitro and that the broader time course can be explained by variably-timed inputs (but see Lin et al., 2003; Froemke et al., 2005; Zhang et al., 2009 for alternative sources of broader STDP windows). Additionally, the slight transfer of changes in synaptic strength from one stimulus position to the next within a receptive field can be explained by partial overlap of the inputs activated by different stimuli as previously suggested (Meliza and Dan, 2006).\n\n## Discussion\n\nOur results demonstrate that an STDP protocol using less than 50 paired APs can convert a neuron's visually evoked responses from non-spiking to spiking, can increase and diminish existing spiking responses, and can induce a rearrangement of the neurons sub- and suprathreshold responses to stimuli presented at locations surrounding the paired location. Our current findings extend our knowledge about STDP-induced subthreshold changes in vivo (Meliza and Dan, 2006; Jacob et al., 2007) to the suprathreshold domain. Our study also provides a bridge between the changes in spiking observed across many neurons' receptives fields after alteration of sensory input for example through retinal lesions (Wiesel and Hubel, 1963; Kaas et al., 1990; Gilbert and Wiesel, 1992) and subtle changes in subthreshold responses induced by STDP at the single neuron level both in vitro (Magee and Johnston, 1997; Markram et al., 1997; Bi and Poo, 1998) and in vivo (Meliza and Dan, 2006; Jacob et al., 2007). Such a connection between receptive field plasticity, rearrangement of a neuron's tuning properties and STDP has been suggested by theoretical studies (Song and Abbott, 2001; Young et al., 2007), but to date has not been shown experimentally. As the rates of AP activity used in the pairing protocols was similar to activity reported for upper cortical layer populations in the visual cortex of both headfixed awake (Greenberg et al., 2008) and freely exploring rodents (Sawinski et al., 2009), this form of plasticity could represent a more general plasticity principle that relies on low firing rates and is central to individual neurons joining or leaving cell-assemblies, as proposed by Donald Hebb (Hebb, 1949).\n\nIn the present study we manipulated the timing of spikes relative to an avalanche of stimulus-triggered presynaptic events and observed significant changes in the firing properties of the postsynaptic neuron. In other words, we focused on manifestations of Hebbian plasticity that depended upon spike timing. We cannot exclude, however, that purely subthreshold manipulation of the postsynaptic voltage could have caused similar, or even stronger effects of Hebbian plasticity (Lisman and Spruston, 2005, 2010; Fregnac et al., 2010; Shouval et al., 2010). While STDP highlights the timing-dependence on a millisecond time scale, Hebbian synaptic plasticity also manifests itself in experimental protocols manipulating firing rates and postsynaptic voltage (Artola et al., 1990; Sjostrom et al., 2001). In fact, previous models assuming that Hebbian synaptic plasticity depends critically on postsynaptic voltage, have allowed general theories of plasticity with both rate- and timing-dependent plasticity as special cases (Clopath et al., 2010). Optimality theories of STDP developed over the last 10 years, have proposed that the fundamental reason why pre-before-post induces LTP is to strengthen the causal link between input and output. Thus, the optimal timing between pre- and post should be related to the rise time or width of the PSP caused by the presynaptic input (Pfister et al., 2006; Bohte and Mozer, 2007; Toyoizumi et al., 2007; Parra et al., 2009; Hennequin et al., 2010; Pool and Mato, 2011). There is no similar optimality theory as to why synaptic depression should be spike-triggered, as unspecific forms of depression of synapses (not temporally linked to the output spike) would work just as well from a theoretical point of view (Pfister et al., 2006; Bohte and Mozer, 2007; Toyoizumi et al., 2007; Hennequin et al., 2010; Pool and Mato, 2011). What our study proposes is that timing based post-before-pre LTD (negative timing) is a robust mechanism for manipulating neuronal spiking responses along with the previously proposed pre-before post LTP (positive timing) (Gerstner et al., 1996; Song and Abbott, 2001).\n\nThe present study shows a robust timing effect for the change in voltage of the initial peak, where negative timing protocols produced decreased synaptic efficacy and positive timing protocols resulted in an increased synaptic efficacy, similar to that seen in vitro. What is not consistent with previous in vitro STDP studies, where synaptic efficacy changes were derived from post-synaptic potentials, is our reported lack of dependence of the peak changes on the milisecond timescale. From in vitro studies it would be expected that a pre- before post pairing with a delay during pairing of around 40 ms would produce almost no change and a pre- before post with a delay of around 2 ms would produce the most change (Bi and Poo, 1998). Our reported initial peak changes were not at t = 0 but were seen for a diverse range of timings within a time range of \u223c100 ms (Figure 2C). We suggest that this discrepancy with previous studies (also see Fregnac et al., 2010) is due to the complexity of in vivo responses to visual stimulation which are made up of an avalanche of both inhibitory and excitatory synaptic events (Hirsch et al., 1998; Okun and Lampl, 2008). It is therefore an oversimplification to capture such complex responses by measuring only the peak of the initial response. Here we measured the evoked voltage across the entire time course of the response and aligned the voltage changes around the timing of pairing APs. With this approach we were able to show a very robust timing dependence, not just of an isolated synaptic input, but of the integrated inputs made up of multiple synaptic events (Figure 5A\u2013C). The peak response of this voltage change was not always at t = 0 as would have been expected from in vitro experimental studies (Markram et al., 1997; Bi and Poo, 1998; Froemke et al., 2005) and assumed in STDP timing models. We found peak response changes at about 30\u201350 ms before and after the pairing spike. Our model suggests that this discrepancy is due to the very precise pre-synaptic timing during the pairing protocol from one trial to the next used in in vitro STDP studies which is contrary to the variable L4 and L2/3 visual response latencies found in vivo (Fagiolini et al., 1994; Niell and Stryker, 2008). In our STDP model, variability of input timing alone was sufficient to explain this broadening effect in our data compared to that expected from in vitro STDP studies.\n\nThe absolute voltage changes brought about by STDP in our study were on the order of 2 mV, yet such a change was sufficient to significantly alter the stimulus evoked spiking probability. Hence, our study suggests that small voltage changes have a dramatic effect on spiking output. We can only speculate on the mechanism because the dependence of spike generation on synaptically driven depolarizations is very complex (Shu et al., 2007), and somewhat unknown. This is especially the case in vivo (Hasenstaub et al., 2007) where combinations of various non-linear currents over the sub-threshold voltage range are present (Waters and Helmchen, 2006) and the spatial location of active synaptic inputs during evoked sensory stimulation (Varga et al., 2011) are not known. Despite these in vivo uncertainties, complex membrane-potential waveforms at the soma in vitro can reliably generate spikes (Mainen and Sejnowski, 1995) and recent simulations paired with experiments (Tchumatchenko et al., 2011) show that cortical pyramidal neurons can rapidly and reliably change firing rates in response to very small changes in somatic depolarization and hyperpolarization (twofold spiking difference induced with a 40 pA current injection).\n\nIn the current study we show that spike-timing-dependent plasticity rules using very few pairing APs can turn a neuron that hitherto did not emit a spike in response to a visual stimulus into one that frequently spikes, while pairing APs with a different timing can reduce established spiking. We propose that this is a fundamental mechanism by which neurons join and leave cell-assemblies (Wallace and Kerr, 2010) as previously proposed (Hebb, 1949) in which very few precisely timed spikes select specific temporal synaptic sequences for long-term storage from the many that are activated during a sensory learning process. Since these spikes will be transmitted to hundreds of other downstream neurons, such a change in tuning has direct implications for the function of neuronal circuits in which the respective neuron is embedded.\n\n## Materials and methods\n\n## Animal preparation\n\nAll experimental procedures were performed according to the animal welfare guidelines of the Max Planck Society. Male Lister Hooded rats at postnatal day 23\u201328 were anesthetized with urethane (1.6\u20132 g/kg body weight, i.p.). Supplementary doses of urethane (10% of original dose) were administered as required to maintain anesthetic depth at a level where paw withdrawal and corneal reflexes were absent. The general anesthesia depth during all recordings were identified as stage III-3 based on lack of whisker movement and tail response, and the frequency spectrum of electrocorticogram (ECG) signals (Kubicki and Rieger, 1968; Friedberg et al., 1999). Body temperature was monitored throughout the experiment with a thermal probe and maintained at 37\u00b0C. The animal skull was exposed and cleaned and a metal plate was attached with dental acrylic cement. A craniotomy and a dural opening were made above the left cortex (2.5 mm anterior lambda, 4.2 mm lateral from the midline). The exposed cortex was superfused with Normal Rat Ringer's (NRR) solution (in mM): 135 NaCl, 5.4 KCl, 5 HEPES, 1 MgCl2 and 1.8 CaCl2 (pH 7.2) (Kerr et al., 2005). Astrocytes were labeled with sulforhodamine 101 (Nimmerjahn et al., 2004). The craniotomy was filled with agarose (type III-A, 1% in NRR) and covered with an immobilized glass coverslip.\n\n## Intrinsic optical imaging\n\nThe animal's eyes were covered with cotton pads and NRR during the surgery until immediately before the imaging session. The part of primary visual cortex responding to visual stimuli presented directly in front of the animal's nose was determined using intrinsic optical imaging (Grinvald et al., 1986). The cortical surface was illuminated with red light (630-nm interference filter) while presenting moving gratings (see below) to both eyes. Reflectance images were acquired with a Cascade CCD camera (type 512B; Photometrics, Tucson, AZ, USA) equipped with a lens pair of a 135-mm and a 50-mm focal length objective (NA 0.46, 2.7\u00d7 magnification) using custom software written in Labview (National Instruments, Austin, TX, USA). Briefly, individual trials were 6 s long (100 ms frame duration), with 2 s prestimulus time and 4 s stimulus time. Typically, \u2018blank\u2019 trials were alternated with stimulus presentation trials and a total of 40 trials comprised one imaging block. Imaging blocks were conducted for two different stimulus types: bars (white on black background, individual bar 2.4\u00b0 wide) moving (at 11\u00b0/s) vertically and horizontally. Care was taken to shield the optical system from stimulus light. The surface blood vessel pattern was imaged for reference using green illumination (546 nm).\n\n## Two-photon imaging\n\nTwo-photon imaging was performed using a custom-built two-photon laser-scanning microscope (excitation wavelength 872 nm, Ti:Sapphire laser model Mai Tai HP; Spectra-Physics, Newport, RI, USA). Fluorescence images were acquired as described before (Kerr et al., 2005).\n\n## Electrophysiology\n\nAn ECG was recorded with the tip of a 500-\u00b5m-diameter Teflon-coated silver wire placed against the pial surface in one corner of the craniotomy. A reference electrode was placed over the cerebellum through a small hole in the occipital bone. Electrocorticogram signals were acquired with a custom-built AC-coupled amplifier (input impedance 1 M\u03a9, bandwidth 0.1 Hz to 8 kHz). The animal's eyes were covered with cotton pads soaked with NRR until shortly before establishing whole-cell recordings. To establish whole-cell configuration in vivo, neurons were visualized as dark spots in the sulforhodamine 101 counterstain using two-photon fluorescence imaging (Kerr et al., 2005) and approached with a patch pipette. In a few cases, in which for example surface blood vessels prevented sufficiently clear visualization of single neurons in the targeted area, the \u2018blind\u2019 patch technique (Margrie et al., 2003) was used to establish whole-cell configuration. Altogether, in vivo whole-cell recordings from 71 neurons (n = 58 rats) were established. In four recordings no STDP induction protocol was applied (see below), in 66 recordings exactly one STDP induction protocol was applied, and in one extraordinarily long recording (2 hr 17 min) two STDP induction protocols were applied (spaced more than 1 hr apart). Thus, the presented data set consists of n = 72 data points. Recorded neurons were located in primary visual cortex in L2/3, 169 \u00b1 3 \u00b5m below the pial surface (range 112\u2013225 \u03bcm, median = 170 \u03bcm; lower quartile = 150 \u03bcm; upper quartile = 186 \u03bcm) and within the responsive area identified with intrinsic optical imaging (see above, diameter of targeted area was approximately 850 \u00b5M around the center of the spot generated by intrinsic imaging). Since the location of this area was very consistent across animals in a set of initial experiments (n = 58 rats, with not all initial experiments yielding data points), intrinsic imaging was performed only in this initial set of experiments and in the following experiments, neurons were targeted stereotactically in this location. Only recordings from neurons that showed firing properties characteristic of pyramidal neurons were included, whereas fast-spiking neurons were excluded. Patch pipettes (5\u20139 M\u2126) contained (in mM): 135 K-gluconate, 10 HEPES, 10 phosphocreatine-Na, 4 KCl, 4 ATP-Mg, 0.3 GTP-Na, 0.02 Alexa Fluor 594, and 0.2% biocytin (pH 7.2, 310 mOsm). Membrane potential was recorded using an Axoclamp 2B amplifier (Molecular Devices, Sunnyvale, CA, USA). Input resistance was estimated by application of current steps (\u2212100 pA, 200 ms). Data was digitized at 31.5 kHz using a CED Power 1401 data acquisition board (CED; Cambridge Electronic Design, Cambridge, United Kingdom).\n\n## Visual stimuli during electrophysiology\n\nVisual stimuli (500 ms flashed bars, white against a black background) were triggered by the membrane potential entering a down-state (Kerr and Plenz, 2002) (trigger for visual stimuli was typically \u223c60 ms from down-state onset). These flashed bars (horizontal or vertical bars) were presented in 1 of 4 alternating locations on an Iiyama (Vision Master Pro 21, Tokyo, Japan, refresh rate 60 kHz) CRT monitor (1600 \u00d7 1200 pixels) placed 34 cm away from the animal's nose spanning 60.9\u00b0 in width and 48\u00b0 in height of the visual field. Bars were non-overlapping and either 15.2\u00b0 wide and 48\u00b0 high (vertical bars) or 60.9\u00b0 wide and 12\u00b0 high (horizontal bars). In some experiments (8 out of the overall 72 recordings) a higher initial stimulus-evoked spiking rate was achieved using a stimulus size that spanned 20.3\u00b0 in width and 16\u00b0 in height of the visual field resulting in initial presentation of stimuli in 9 non-overlapping positions on the screen. In all experiments, stimulation was repeated approximately every 3\u20134 s, while the exact inter-stimulus interval depended on the specific down-state onset. This resulted in an inter-stimulus interval of 3.7 \u00b1 0.1 s before pairing and 3.9 \u00b1 0.1 s during pairing (p=0.9).\n\n## STDP induction protocol\n\nThe STDP induction protocol was performed using custom-written routines running in Spike2 (CED; Cambridge Electronic Design) and Matlab (Mathworks, Natick, MA, USA). Before the STDP induction protocol, stable membrane potential responses were recorded for each of the four stimulus positions. Next, a stimulus position that evoked a robust and fast-onset response was selected and the average initial peak time after stimulus onset for the selected stimulus position was calculated. Then, this visual stimulus was paired with one or a few APs evoked by injection of a step current (15 ms, 1010 \u00b1 102 pA). The time of the evoked AP was chosen so that the AP occurred within a few tens of milliseconds either before (negative timing) or after (positive timing) the time of the initial response peak. Pairing was repeated around 40 times every 3\u20134 s. After pairing, the visual stimuli in each of the four stimulus positions were presented for as long as the whole-cell recording lasted, with rejection of trials that did not meet the criteria for inclusion into analysis (see section \u2018Analysis and statistics\u2019 below). Subsequent analysis of the chosen pairing positions revealed that for both positive and negative timing experiments, the position selected for pairing ranged from the strongest to the weakest in evoked spiking responses. Overall the selection of the pairing position was not biased toward or away from the positions with the strongest pre-pairing suprathreshold responses, in that the rank of stimulus-evoked spiking at the pairing position tended neither toward first nor last among the four stimulus positions (median not significantly different from 2.5; p=0.29, n = 15 for positive timing; p=0.61, n = 17 for negative timing, Wilcoxon signed rank tests).\n\n## Histochemistry\n\nRats were perfused transcardially with phosphate buffer (pH 7.2) followed by 4% paraformaldehyde in phosphate buffer. The cortex was cut coronally in 100 or 150 \u03bcm microtome sections. Biocytin-filled neurons were visualized with the avidin\u2013biotin\u2013horseradish peroxidase reaction (Vectastain Elite ABC kit; Vector Laboratories, Burlingame, CA, USA).\n\n## Chemicals\n\nChemicals were obtained from Sigma (St. Louis, MO, USA) with the exception of Alexa Fluor 594 Na-hydrazide (Invitrogen, Carlsbad, CA, USA).\n\n## Analysis and statistics\n\nMembrane potential recordings were analyzed using custom written routines running in Matlab (Mathworks) and Igor (WaveMetrics, Lake Oswego, OR, USA). The down-state membrane potential preceding each stimulus was calculated as mean across a 60\u201370 ms \u2018baseline window\u2019 before the onset of the stimulus-evoked response. The peak amplitude of each stimulus-evoked subthreshold response was calculated by determining the maximum voltage from the end of the baseline window to the end of a \u2018peak window\u2019, and subtracting from this the preceding down-state potential (Figure 1C). The peak window for each recording was determined by examining the subthreshold response averaged over all stimuli, and choosing the window to contain the first major peak in the average response (initial peak). For analysis of subthreshold stimulus-evoked responses, membrane potential responses to individual stimulus presentations were included only when they displayed no spiking from 50 ms before stimulus onset to 200 ms after and when the membrane potential remained in the down-state until the start of the response. Recordings were accepted when the amplitude of subthreshold stimulus-evoked responses before the STDP induction protocol was stable and when the resting membrane potential did not change by more than 8% during the course of the recording. For calculating the time course of membrane potential changes relative to the pairing spike (Figure 5A\u2013C), we calculated the time of each neuron's pairing spikes relative to the stimulus as the maximum of a Gaussian filtered (\u03c3 = 10 ms) peristimulus time histogram (PSTH) of APs evoked by current injection during pairing. Stimulus response centers were calculated as weighted averages using the formula: C=(\u22111\u2264i\u22644iRi)/(\u22111\u2264i\u22644Ri), where Ri denotes the response at position i: the mean number of APs evoked by stimulus presentation for suprathreshold response centers, and the mean peak amplitude of the membrane potential response for subthreshold response centers. Suprathreshold response centers were calculated for neurons with the four stimulus positions arranged in a line and at least two stimulus-evoked APs before and after pairing (n = 9 neurons for positive timing, 7 for negative timing). For positive timing experiments, the total number of observed stimulus-evoked APs at the pairing position was 1.4 \u00b1 0.9 total APs observed before induction and 9.7 \u00b1 4.2 after (mean \u00b1 SEM across neurons, n = 15), yielding 0.06 \u00b1 0.04 APs per stimulus before induction and 0.17 \u00b1 0.06 after over 29.4 \u00b1 2.1 trials before induction and 61.3 \u00b1 9.4 after. Negative timing experiments with initial spiking yielded 29.5 \u00b1 12.3 total APs before induction (n = 15) and 18.1 \u00b1 6.8 after (n = 15), yielding 0.84 \u00b1 0.23 APs per stimulus before induction and 0.66 \u00b1 0.27 after over 36.6 \u00b1 7.7 trials before induction and 38.4 \u00b1 7.6 after. One-tailed t-tests were used to determine significance of sub- and suprathreshold stimulus responses at the population level, with the direction of the expected change dictated by the STDP rule. One-tailed Wilcoxon rank sum tests were used to examine individual neurons' changes in stimulus-evoked AP firing after STDP induction. Two-tailed t-tests were used to determine population wide changes in peak height and AP firing after STDP induction. The significance of average changes in the mean PSP at fixed timings before and after the pairing spike was calculated by applying one-tailed t-tests to mean voltages over time windows 60\u201365 ms before or 37.5\u201342.5 ms after the pairing spike. All other statistical evaluations of increases and decreases were two-tailed Wilcoxon rank sum tests. T-tests were used to examine association between. All reported values are mean \u00b1 SEM unless otherwise stated.\n\n## STDP model\n\n## Neuron model\n\nWe simulated a single postsynaptic neuron whose membrane potential V(t) integrates input spikes by summing the excitatory postsynaptic potentials (EPSPs) evoked by the arrival of spikes at N different synapses:(1)V(t)=\u2211i=1N\u2211fwi\u03b5(t\u2212tif),where tif is the time when the f-th spike arrives at synapse i and wi are synapse strengths. The EPSP shape was \u03b5(t)=exp(\u2212t/\u03c4decay)\u2212exp(\u2212t/\u03c4rise) with \u03c4rise = 2 ms and \u03c4decay = 10 ms. Initial synapse strengths were exponentially distributed, with a mean of 2 mV chosen to reproduce the membrane potential response amplitudes observed in experimental data. The postsynaptic neuron spiked only during pairing, and at a fixed time tpost after every stimulus.\n\n## Plasticity\n\nWe used a simple STDP model (Gerstner et al., 1996; Song et al., 2000) where each input spike changes the synaptic strength according to a function W:(2)\u0394wi=\u2211fW(tpost\u2212tif)\n\nWe used the biphasic window function(3)W(\u0394t)=A(+)\u03b8(\u0394t)e\u2212\u0394t/\u03c4(+)\u2212A(\u2212)\u03b8(\u2212\u0394t)e\u0394t/\u03c4(\u2212),where \u03b8(t) = 1 for t > 0 and 0 otherwise, \u03c4(+) = \u03c4(\u2212) = 20 ms, A(+) = 0.2 and A(\u2212) = 0.2 for results shown in the main text and the range 0.16 \u2264 A(\u2212) \u2264 0.24 is explored in Figure 5\u2014figure supplement 3.\n\n## Input spike patterns\n\nWe modeled the spiking of presynaptic neurons according to three types of activity patterns:\n\n## Time varying firing rates\n\nInput spikes occur at random times and are generated with a time-dependent firing rate \u03c1i(t) = ri\u03c1(t), which has the same time course \u03c1(t) for all input neurons, but different scaling factors ri drawn from an exponential distribution (Baddeley et al., 1997) with mean 0.25. \u03c1(t) is 0 until 300 ms after stimulus onset, then rises to a maximum and slowly decays (Figure 5\u2014figure supplement 1D):(4)\u03c1(1)(t>300\u2009ms)=\u03c10(1\u2212e\u2212t\u2212300\u2009ms20\u2009ms)e\u2212t\u2212300\u2009ms3\u2009s,with \u03c10 = 5 Hz. In mathematical terms, presynaptic spike trains are independent inhomogeneous Poisson processes.\n\n## Patterned spike timing\n\nBefore modeling the input spikes for any stimulus presentations, a template spike train is generated separately for each presynaptic neuron using equation 4. The actual input spike times for a single stimulus presentation are generated by jittering the spike times in each template with Gaussian noise of mean 0 and variance \u03c32. Thus spike arrival times vary across stimulus presentations with \u03c3 controlling temporal precision. To account for unreliability in presynaptic spiking and synaptic release, each input spike crosses the synapse with probability 1/4. For these activity patterns, the mean firing rate follows a different time course for each synapse and consists of one or several Gaussian peaks (Figure 5D\u2013I)(5)\u03c1i(t)=14\u2211fG\u03c32(t\u2212t)if,where GV is the probability density function for a Gaussian with mean 0 and variance V. The EPSPs generated at different synapses sum up to a membrane potential response with amplitude and shape similar to those observed for the time varying firing rate patterns described by equation 4 (Figure 5\u2014figure supplement 2A\u2013C). The sole difference is a broadening of the response onset due to the spike jitter.\n\n## Activity wave\n\nA brief barrage of input spikes occurs shortly after stimulus onset (Figure 5\u2014figure supplement 1E):(6)\u03c1(2)(t>300\u2009ms)=Cri(t\u2212300\u2009ms)2et\u2212300\u2009ms20\u2009ms,where the neuron-specific amplitudes are again drawn from an exponential distribution and C is chosen so that peak firing rates are 20 Hz. The main difference from the time varying firing rate case is that inputs become active for a much shorter duration.\n\n## Stimulus tuning of presynaptic neurons\n\nStimulation at position s activates 400 synapses in the range 1 \u2264 i \u2212 400(1 \u2212 \u03ba)(s \u2212 1) \u2264 400, where \u03ba defines the overlap between groups of synapses activated by different stimuli. We examined patterned spike timing inputs with 40 ms jitter for three cases: i) no synaptic overlap between stimuli (\u03ba = 0, green trace in Figure 5K), ii) overlapping synaptic activations (\u03ba = 0.5) but no shared timing, with all neurons changing their templates spike trains depending on the stimulus (blue trace in Figure 5K) and iii) shared synapses and shared timing, with neurons keeping the same templates for all stimuli (red trace in Figure 5K).\n\n## Simulation protocol\n\nThe simulations follow a protocol similar to the experiments. We first estimated the membrane potential response before pairing by averaging over 20 stimulus presentations for each stimulus position, followed by 30 pairing trials for a single stimulus position. For time varying firing rates and patterned spike timing, the time of postsynaptic pairing spikes tpost was either 350 ms after stimulus onset (50 ms after membrane potential response onset, n = 9 simulations) or 400 ms after stimulus onset (100 ms after membrane potential response onset, n = 15) after the onset of the membrane potential response. For the activity wave input patterns tpost was 20 or 80 ms after response onset. These early and late values for tpost were chosen to occur before and after the peak of the response, and the number of neurons simulated for each case was matched to experimental data. The membrane potential response after pairing was estimated by averaging over 80 trials. The simulation results plotted in the main text (Figure 5) were performed with patterned spike timing inputs. These plots show the difference between the membrane potential response before and after pairing for single neurons and in a population average, aligned to the time of the postsynaptic spike.\n",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael H\u00e4usser, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00012.011](https://doi.org/10.7554/eLife.00012.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cSpike-timing dependent plasticity (STDP) changes responses of cortical neurons from sub- to suprathreshold in vivo\u201d for consideration at eLife. Your article has been evaluated by a Senior Editor and 3 reviewers, one of whom is a member of eLife's Board of Reviewing Editors.\n\nThe Reviewing Editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments based on the reviewers' reports. Overall our view is that new experiments, while desirable, are not absolutely essential for the revision; however, new analysis, modeling, and revision will be required.\n\n1. There appears to be a major discrepancy between the effect of plasticity on the subthreshold and suprathreshold responses. The changes in the subthreshold responses are quite small: for example, in Figure 2B the change in EPSP is at most 2mV, as well as in Figure 2C, the most positive pairing except two outliers show less than 20% change. Citing from the text \u201cpositive timing inductions increased the peak voltage amplitude by 21.9 \u00b1 9.0 % (n = 15) or 1.3 \u00b1 0.6 m\u201d. However, in contrast the resulting change in spike probability per stimulus is huge. For positive pairing you get an increase from 0.06 sp/stim to 1.8 sp/stim (this is more than 200%). It is difficult to reconcile these two findings. The conclusion should be that the cell subthreshold response is very close to threshold such that an addition of \u223c1.3 mV on average will make a 200% change in spiking probability. It would be very helpful to know not only how many cells were recorded but also how many stimulations and how many spikes were recorded. You give statistics in terms of number of neurons, but to have a reliable estimate of 0.06 spikes/stim one needs to have many stimuli, and it would be good to know how many you have recorded. From the figures, e.g. Figure 3C it looks as if there is sometimes only a single spike response in some of the conditions. The authors seem to provide evidence against the possibility that a change in Rin or depolarisation would account for it. We are not convinced that they make a very convincing case here, because they provide average data, and so it could be that on average the change in Rin is small, but that there is a good correlation between neurons that show a change in firing rate and neurons that show a change in Rin. The transition from EPSP to spike is nonlinear so the small change in Rin or in depolarisation is just as good as a candidate as a small change in EPSP size. The fact that a sham control did not show anything could be because the STDP protocol does change something, but maybe not what the authors propose. The authors therefore need to supply more analysis and provide an explanation (e.g., using modelling) how a 20% change in EPSP peak size can lead to a 200% in spike probability.\n\n2. Related to the previous point, a surprising finding is that the LTD protocol strongly affects subthreshold peak amplitudes (in fact, the effect is more robust as compared to the LTP protocol, -32.4% vs +21.9%), but it does not seem to affect spiking output, whereas the LTP paradigm does. Perhaps this is caused by the large spread and not-normal distribution of baseline spiking within the cell population that was used for the LTD protocol, and perhaps by the relatively low number of cells. Here the authors should have probably aimed for applying the protocol to robustly spiking neurons only. Clearly, a decrease in spiking will be hard to detect in cells that barely spike to start with. Right now the data look more like a negative control for the LTP experiments. As the paper does not further address this finding, we think the authors should more clearly discuss this and analyze the data to address this apparent discrepancy \u2013 e.g., why could the experiments be inconclusive; or, if the authors believe the experiments are conclusive, what would then be the functional/behavioral relevance of LTD?\n\n3. It seems that the effects of STDP on sub and suprathreshold activity were analyzed independently. The authors must have information on a possible relationship within cells. Does LTD/LTP paradigm affect the gain and threshold of the neuronal input \u2013 output function? (e.g., see Carvalho and Buonomano, Neuron, 2009)?\n\n4. No negative control experiments are provided in the text or figures (at least regarding subthreshold activity). Is LTP/LTD really dependent on spike pairing? In other words, could the effect depend on just depolarization instead? Similarly, since the pairing was performed at different positions there is likely a great variability in pre-pairing PSP peak amplitudes. The authors may want to check whether or not the success rate or level of STDP related to pre-peak amplitudes, and provide a scatterplot of pre vs post pairing EPSP amplitudes.\n\n5. The relevance of Figure 4 is unclear. There are no statistics provided \u2013 are the results in Figure 4C significant or not? In Figure 4C, we are told there are shifts, but what are these shifts and what do they signify? Why is this \u201cspatial reorganization\u201d (this and other figures)? The Distance from Paired Position: is that the same as the Position from Paired Position and the Distance from Pairing Position (Figure 3)? Is this really a true distance because it is in a part of the RF? In the text the authors use this figure to essentially describe a general, qualitative phenomenon for which the statistics are not provided, and then they elaborate on it as if it is proven. Either the authors should use statistical tests to confirm the significance of the results; or they should provide more data; or they should remove this part of the paper.\n\n6. The neuromodulation results (Figure 6) are not obviously related to the rest of the study, and the experiments are of lower impact and quality than those in the rest of the paper. Although the role of neuromodulation in learning and synaptic plasticity is important, the link with the rest of the paper is not well explained, and Figure 6 therefore seems out of context. What does the reader learn from the contents of Figure 6 that is critical to their understanding of the other results? To know that STDP rules change the tuning cortical neuron spiking, why does the reader need to learn about the need for cholinergic neuromodulation in particular? Moreover, the biological relevance of cholinergic blockade is unclear \u2013 i.e., why does in vivo plasticity require cholinergic neuromodulation, when in vitro plasticity clearly does not (e.g., Markram et al Science 1997; Froemke Nature 2002; Feldman Neuron 2000; Sjostrom et al Neuron 2001 to provide few examples). Given these concerns, we recommend removing these results and the corresponding figure from the paper as it currently does not significantly strengthen the manuscript.\n\n7. The authors use the STDP model as the explanation for why they observe this increase before APs (LTP window) and a decrease after (LTD window). But as the authors do not test the LTD window experimentally, this decrease may in principle be due to something else, such as increase in inhibition, a change in I_H, or some other intrinsic conductance. In general, the authors have pushed very strongly the idea that STDP in particular (as opposed to classical Hebbian LTP/LTD) underlies the phenomenology. Certainly the results are consistent with STDP, but they do not demonstrate definitively that STDP definitively underlies the plasticity. For example, Blum and Abbott's Neural Comput 1996 paper was based on classical Hebbian learning, yet has in hindsight been reinterpreted as supporting STDP, but already the Hebbian postulate itself specifies the need for temporal order and temporal asymmetry in in learning rules: cell A has to repeatedly and persistently fire before cell B. And the LTD could in principle be due to Gunther Stent's LTD. So why do we need STDP to explain this? The fact that Pawlak et al use a single spike to induce plasticity does not necessarily mean this is STDP; it just means a single postsynaptic spike is enough. The alternative possibilities need to be acknowledged and discussed more thoroughly.\n",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9ebc15cf-986a-445e-a8c7-577b02f48fb0",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C1",
+      "claim": "Action potential patterns of sensory cortex neurons encode a variety of stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Action Potential (APs) patterns of sensory cortex neurons encode a variety of stimulus features",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a well-established principle in neuroscience based on extensive prior research in sensory coding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "5252de00-fc1c-4947-9c5e-ca68b11835a2",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C2",
+      "claim": "An STDP protocol consisting of pairing a postsynaptic AP with visually driven presynaptic inputs modifies a neuron's AP-response in a bidirectional way that depends on the relative AP-timing during pairing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in vivo a spike-timing-dependent plasticity (STDP) protocol\u2014consisting of pairing a postsynaptic AP with visually driven presynaptic inputs\u2014modifies a neurons' AP-response in a bidirectional way that depends on the relative AP-timing during pairing",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is the primary experimental finding of the study, supported by the in vivo electrophysiology data presented.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7653fe26-d871-4e0b-a6aa-4b2e2d47ca87",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C3",
+      "claim": "Postsynaptic APs repeatedly following presynaptic activation can convert subthreshold into suprathreshold responses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Whereas postsynaptic APs repeatedly following presynaptic activation can convert subthreshold into suprathreshold responses",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific experimental result demonstrated in the study, shown in Figure 2D-E and related data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f77861b1-4b18-4114-a8b3-c8d0b44a7da1",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C4",
+      "claim": "APs repeatedly preceding presynaptic activation reduce AP responses to visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "APs repeatedly preceding presynaptic activation reduce AP responses to visual stimulation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental finding from the negative timing protocol experiments, shown in Figure 2F,H.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2b369dd6-3e9c-4886-83d4-7ebf2431f74f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C5",
+      "claim": "Changes in AP responses were paralleled by restructuring of the neuron's response to surround stimulus locations and membrane-potential time-course.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These changes were paralleled by restructuring of the neurons response to surround stimulus locations and membrane-potential time-course",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data showing changes in responses to non-paired stimulus positions, as shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "3103a4c0-e024-4032-b421-a9591cced682",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C6",
+      "claim": "Computational simulations could reproduce the observed subthreshold voltage changes only when presynaptic temporal jitter was included.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Computational simulations could reproduce the observed subthreshold voltage changes only when presynaptic temporal jitter was included",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a finding from computational modeling work presented in Figure 5, showing that jitter is necessary to match experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "e6303853-f0de-4bbd-92e1-b19d4c44b684",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C7",
+      "claim": "STDP rules can modify output patterns of sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Together this shows that STDP rules can modify output patterns of sensory neurons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the experimental data showing changes in spiking patterns after STDP protocols.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "d0ea664b-71a4-46a5-bfa0-1cc3e76037f4",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C8",
+      "claim": "The timing of single-APs plays a crucial role in sensory coding and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the timing of single-APs plays a crucial role in sensory coding and plasticity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the timing-dependent effects observed in the STDP experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "6f7c5407-c569-45e1-a3f1-b1f49454d15b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C9",
+      "claim": "The formation of sensory percepts in the mammalian cortex is thought to involve the propagation of action potentials through populations of connected neurons in response to sensory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The formation of sensory percepts in the mammalian cortex is thought to involve the propagation of action potentials through populations of connected neurons in response to sensory stimulation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Hebb (1949) and Harris (2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "5f599424-5eca-46f6-8814-3a3bc0b6e79e",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C10",
+      "claim": "Rules that dictate changes in the strength of connections rely on persistent correlated activity between the connected neurons.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rules that dictate changes in the strength, or efficacy, of these connections rely on persistent correlated activity between the connected neurons",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge in neuroscience, referenced to Abraham (2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "a45a7c25-545c-4b21-af09-744db2e089a0",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C11",
+      "claim": "For changes in synaptic efficacy to be functional and recognized by downstream neurons, the changes need to influence AP patterns.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For these changes in synaptic efficacy to be functional and recognized by the down-stream neurons targeted by the axon, the changes need to influence AP patterns",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference based on understanding of neural communication through action potentials.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "8a0e7ee2-b5a4-41d1-9683-16b97a7072cc",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C12",
+      "claim": "Spike-timing-dependent plasticity has been suggested as a candidate mechanism to determine which stimulus driven inputs are strengthened and weakened.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Plasticity induction involving precisely timed action-potentials, known as spike-timing-dependent plasticity (Markram et al., 1997; Bi and Poo, 1998), has been suggested as a candidate mechanism to determine which stimulus driven inputs are strengthened and weakened",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a theoretical proposal from the literature, cited from Markram et al. (1997) and Bi and Poo (1998).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7d9883c6-a44f-4739-be3a-bf7a9f5f0f7d",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C13",
+      "claim": "The low numbers of APs and low repetition frequencies used to induce plastic changes in STDP protocols are consistent with low AP firing rates observed in awake freely moving animals exploring a novel environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the low numbers of APs and low repetition frequencies used to induce plastic changes in STDP protocols (Feldman, 2012) are consistent with low AP firing rates observed in awake freely moving animals exploring a novel environment",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Feldman (2012), Lee et al. (2006), and Sawinski et al. (2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "896e066c-cf31-4bdd-b269-a45e1a383fb6",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C14",
+      "claim": "Cortical neurons are capable of AP-responses that are temporally precise over multiple trials.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cortical neurons are capable of AP-responses that are temporally precise over multiple trials",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Bair and Koch (1996), Marsalek et al. (1997), and Tchumatchenko et al. (2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1390d4c2-739a-4f22-a9f0-2c1ba7be0aed",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C15",
+      "claim": "Most modeling studies of synaptic plasticity using STDP rules assume that synaptic modification leads to changes in spiking.",
+      "claim_type": "EXPLICIT",
+      "source_text": "most modeling studies of synaptic plasticity using STDP rules assume that synaptic modification leads to changes in spiking",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Gerstner et al. (1996) and Song and Abbott (2001).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "0ff702b2-4d6a-4ec5-b7d2-f88e70a963fe",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C16",
+      "claim": "STDP underlies sensory map plasticity in the young and adult cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a recent study suggesting that STDP underlies sensory map plasticity in the young and adult cortex",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a claim from Young et al. (2007), cited in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "18747d9d-1a52-49fb-a3a6-f4f44c8ddfb1",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C17",
+      "claim": "Evidence for single-neuron STDP in vivo remains scarce and confined to subthreshold changes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, evidence for single-neuron STDP in vivo remains scarce and confined to subthreshold changes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a characterization of the state of the field, supported by references to Meliza and Dan (2006) and Jacob et al. (2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2469d578-c510-46b5-bef2-dbfc9e292a7b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C18",
+      "claim": "Evidence for STDP modifying spiking patterns in vivo remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and remains controversial",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Lisman and Spruston (2005, 2010), Fregnac et al. (2010), and Shouval et al. (2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "aab079fb-cd79-4257-a5e2-3a6d6d09cdcc",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C19",
+      "claim": "Extracellular studies have suggested STDP can modify spiking patterns in anesthetized and freely moving animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While extracellular studies have suggested STDP can modify spiking patterns in anesthetized (Fu et al., 2002) and freely moving animals (Celikel et al., 2004)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Fu et al. (2002) and Celikel et al. (2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1d4c16f3-7cc6-4db4-9706-e2f19845484b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C20",
+      "claim": "Evidence from extracellular studies remains difficult to interpret without information on single-cell membrane potential dynamics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this evidence remains difficult to interpret without information on single-cell membrane potential dynamics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference about the limitations of extracellular recording methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1b459e14-24f5-4b41-9772-59a635027a96",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C21",
+      "claim": "Visual cortex neuronal responses and receptive fields are highly plastic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "visual cortex neuronal responses and receptive fields are known to be highly plastic",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Gilbert (1998).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "af44dedf-e2d3-4dbd-8cfe-c4e87716611a",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C22",
+      "claim": "Sensory maps can undergo plastic changes with experience or after removal of visual input.",
+      "claim_type": "EXPLICIT",
+      "source_text": "sensory maps can undergo plastic changes with experience (Daw and Wyatt, 1976; Li et al., 2008) or after removal of visual input",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations including Daw and Wyatt (1976), Li et al. (2008), Wiesel and Hubel (1963), Kaas et al. (1990), and Gilbert and Wiesel (1992).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "85486014-d5c6-4fa8-97f1-4b4066cdd437",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C23",
+      "claim": "During visual stimulation, the action potential output for many visual cortex neurons is tuned to specific locations in the visual field and to specific stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally during visual stimulation, the action potential output for many visual cortex neurons is tuned to specific locations in the visual field and to specific stimulus features",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Hubel and Wiesel (1959).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2e72eabc-1d1f-4bf0-bbde-52a1f338dd3d",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C24",
+      "claim": "Each visual cortex neuron receives synaptic inputs corresponding to surrounding locations or many different stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source_text": "even though each neuron receives synaptic inputs corresponding to surrounding locations or many different stimulus features",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Ferster (1986) and Jia et al. (2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "228167ff-2e1c-4439-b0b3-8302d004040b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C25",
+      "claim": "All four stimulus positions evoked either subthreshold or suprathreshold responses, consistent with the broad receptive fields of neurons in younger rats.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All four stimulus positions evoked either subthreshold or suprathreshold responses, consistent with the broad receptive fields of neurons in younger rats",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an observation from the experimental data, with an inference about developmental receptive field properties.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "d35ffc20-d30c-4c1c-81d6-51d01c6bb57c",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C26",
+      "claim": "The portion of the response before the pairing APs are potentiated, while the portion after is depressed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The portion of the response before the pairing APs are potentiated, while the portion after is depressed",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific observation from the experimental data shown in Figure 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "fe4e3900-612d-4369-951b-444be8c8dbbf",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C27",
+      "claim": "Delivering APs before the peak decreases the peak amplitude, while delivering them after increases it.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Delivering APs before the peak (red circles) decreases the peak amplitude, while delivering them after increases it (green circles)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the experimental data shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "b1c8f506-936a-4cbc-baff-2fdf8e666ddb",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C28",
+      "claim": "Over 50% of neurons transitioned from non-spiking to spiking after positive timing induction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Strikingly, in eight neurons the paired stimulus evoked spiking only after induction, that is over 50% transitioned from non-spiking to spiking",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from the experimental data (8 out of 15 neurons).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7b0e89c1-d02a-4683-8094-83f58161d002",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C29",
+      "claim": "An additional 0.11 \u00b1 0.06 APs per stimulus were observed for the paired stimulus position after positive timing induction (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Over the 15 neurons tested, an additional 0.11 \u00b1 0.06 APs per stimulus were observed for the paired stimulus position after induction (p=0.01, initial response 0.06 \u00b1 0.04 APs per stimulus)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative statistical result from the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2387c9bc-0011-4682-9793-cc202b18650d",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C30",
+      "claim": "After negative timing pairing, the average number of APs evoked by stimulus presentation decreased (0.18 \u00b1 0.10 APs per stimulus after induction, p=0.04, n = 15).",
+      "claim_type": "EXPLICIT",
+      "source_text": "After pairing, the average number of APs evoked by stimulus presentation decreased (0.18 \u00b1 0.10 APs per stimulus after induction, p=0.04, n = 15)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative statistical result from the negative timing experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "991a702a-3f1c-4910-abeb-285ecdfed54f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C31",
+      "claim": "Changes in spiking responses observed after STDP induction could not be accounted for by neurons becoming more depolarized.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These changes in spiking responses observed after STDP induction could not be accounted for by neurons becoming more depolarized (down-state membrane potential \u221264.8 \u00b1 1.5 mV before vs \u221264.2\u00b1 1.5 mV after, p=0.61, n = 32)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a control analysis showing no significant change in resting membrane potential.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "40ccccc8-c754-49d0-b00d-c601519e55c0",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C32",
+      "claim": "Changes in spiking responses could not be accounted for by input resistance changes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "or by input resistance changes (323 \u00b1 39 M\u03a9 before vs 419 \u00b1 54 M\u03a9 after, p=0.16)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a control analysis showing no significant change in input resistance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "56581867-804e-4e65-9890-f68a9cc93253",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C33",
+      "claim": "Neither depolarization nor input resistance changes were correlated with changes in spiking (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source_text": "and neither depolarization nor input resistance changes were correlated with changes in spiking (p>0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis ruling out alternative explanations for the observed changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "9d67f05f-4f5c-4abb-bd07-4c95397bce5f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C34",
+      "claim": "In a control group where visual stimuli were presented but no APs were paired, stimulus-driven spiking rates in the second half of the recording were not significantly different from the first half (p=0.20).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In a control group, where visual stimuli were presented but no APs were paired, stimulus-driven spiking rates in the second half of the recording were not significantly different from the first half (p=0.20, four neurons with four positions each)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a control experiment demonstrating that the observed changes require the pairing protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "40600e65-a723-4f58-a857-68fa615d2868",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C35",
+      "claim": "The increase in spiking was due to the STDP protocol.",
+      "claim_type": "EXPLICIT",
+      "source_text": "indicating that the increase in spiking was due to the STDP protocol",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the control experiment showing no changes without pairing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "6c2fbbe3-8ae6-4850-b41f-345433da963d",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C36",
+      "claim": "Repeated pairing of a single AP to a visual stimulus \u223c40 times can initiate spiking responses in non-spiking neurons and can increase or diminish existing spiking responses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Together, these results provide a robust demonstration that repeated pairing of a single AP to a visual stimulus \u223c40 times can initiate spiking responses in non-spiking neurons and can increase or diminish existing spiking responses",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary conclusion from the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "a7c46fad-e660-4b33-a0b3-a46356c9dad1",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C37",
+      "claim": "The observed changes are consistent with an STDP-driven change in functional status.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is consistent with an STDP-driven change in functional status",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the experimental results in the context of STDP theory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "c8c3c593-77c8-4da0-9bf5-1ae755bb1e67",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C38",
+      "claim": "The results provide experimental validation that STDP could provide a plasticity mechanism for changing receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and provides experimental validation that STDP could provide a plasticity mechanism for changing receptive fields",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the experimental data, connecting to theoretical predictions from Young et al. (2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "c521de9c-a15b-4613-8095-6463d8464ba9",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C39",
+      "claim": "The increase in stimulus-evoked spiking is greatest at the paired position, and the size of the change decays with distance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The increase in stimulus-evoked spiking is greatest at the paired position, and the size of the change decays with distance",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the experimental data shown in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "a5211882-7b83-4f03-91eb-be1e54caece3",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C40",
+      "claim": "After stimulus-AP pairing with positive timing, the stimulus response center moved toward the pairing position.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This analysis showed a simple but robust trend in the positive timing experiments: after stimulus-AP pairing, the stimulus response center moved toward the pairing position",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from analysis of the experimental data shown in Figure 3F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f8a57fa4-e558-44f2-a704-c4248f614f9f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C41",
+      "claim": "The shift in the suprathreshold response center was strongly correlated with the difference between pairing position and the response center before pairing (R = 0.81, p=0.008).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The shift in the suprathreshold response center was strongly correlated with the difference between pairing position and the response center before pairing (R = 0.81, p=0.008)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "78a8a204-406f-438e-ab3b-8138a681d5b6",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C42",
+      "claim": "For the negative timing inductions the majority of response centers moved away from the pairing position, but these changes were small and the trend was not significant (p=0.70).",
+      "claim_type": "EXPLICIT",
+      "source_text": "For the negative timing inductions the majority of response centers moved away from the pairing position, but these changes were small and the trend was not significant (p=0.70)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical result from the negative timing experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "4ffbdd26-58dc-4988-b58a-18c405dfb06c",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C43",
+      "claim": "Subthreshold response centers also shifted toward the pairing position for positive timings, albeit much less robustly than the suprathreshold shifts (R = 0.53, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Subthreshold response centers, calculated by weighting each position by the peak amplitude, also shifted toward the pairing position for positive timings, albeit much less robustly than the suprathreshold shifts (R = 0.53, p=0.04",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical result from analysis of subthreshold responses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "a97f3405-54b2-4bc2-8800-4060f1593496",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C44",
+      "claim": "A key difference between the present study and previous in vitro STDP experiments is that in vivo visual stimulation evokes a complex avalanche of synaptic inputs with variable timing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A key difference between the present study and previous in vitro STDP experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the differences between in vitro and in vivo conditions, though the full statement is implied across multiple sentences.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "79024fe9-f6e8-42c2-b291-5f84e213245c",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C45",
+      "claim": "The membrane potential changes observed in vivo are broader than those observed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The peak response of this voltage change was not always at t = 0 as would have been expected from in vitro experimental studies (Markram et al., 1997; Bi and Poo, 1998; Froemke et al., 2005) and assumed in STDP timing models. We found peak response changes at about 30\u201350 ms before and after the pairing spike",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the experimental data shown in Figure 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "ad8a0cac-6b46-4fc8-b364-7c872413f78d",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C46",
+      "claim": "The broader time course of membrane potential changes can be explained by variably-timed inputs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our model suggests that this discrepancy is due to the very precise pre-synaptic timing during the pairing protocol from one trial to the next used in in vitro STDP studies which is contrary to the variable L4 and L2/3 visual response latencies found in vivo",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion from the computational modeling work, supported by simulations shown in Figure 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "0ca6c06f-cc87-48af-a177-3d2666199e4a",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C47",
+      "claim": "Variability of input timing alone was sufficient to explain the broadening effect in the data compared to that expected from in vitro STDP studies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our STDP model, variability of input timing alone was sufficient to explain this broadening effect in our data compared to that expected from in vitro STDP studies",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the computational modeling work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "df0b6fee-1725-4f6a-87b7-09c9a2736fd6",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C48",
+      "claim": "The absolute voltage changes brought about by STDP were on the order of 2 mV.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The absolute voltage changes brought about by STDP in our study were on the order of 2 mV",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative observation from the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "71041294-c4a5-4380-b6ce-27f5faec5c45",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C49",
+      "claim": "A 2 mV voltage change was sufficient to significantly alter the stimulus evoked spiking probability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "yet such a change was sufficient to significantly alter the stimulus evoked spiking probability",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the experimental data showing changes in spiking despite small voltage changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "a39503a0-e136-4d00-9e6c-6b15a9036261",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C50",
+      "claim": "Small voltage changes have a dramatic effect on spiking output.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence, our study suggests that small voltage changes have a dramatic effect on spiking output",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that 2 mV changes significantly altered spiking probability.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f5e9e72c-15b1-4350-a16a-9ff4c9d3dc80",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C51",
+      "claim": "The dependence of spike generation on synaptically driven depolarizations is very complex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We can only speculate on the mechanism because the dependence of spike generation on synaptically driven depolarizations is very complex",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the complexity of spike generation mechanisms, cited from Shu et al. (2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1ae5249e-c9fb-4482-a0a0-3baca620cdde",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C52",
+      "claim": "Complex membrane-potential waveforms at the soma in vitro can reliably generate spikes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Despite these in vivo uncertainties, complex membrane-potential waveforms at the soma in vitro can reliably generate spikes",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Mainen and Sejnowski (1995).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f5270560-1c4b-41c0-8537-7edaf52daf85",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C53",
+      "claim": "Cortical pyramidal neurons can rapidly and reliably change firing rates in response to very small changes in somatic depolarization and hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "recent simulations paired with experiments (Tchumatchenko et al., 2011) show that cortical pyramidal neurons can rapidly and reliably change firing rates in response to very small changes in somatic depolarization and hyperpolarization (twofold spiking difference induced with a 40 pA current injection)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Tchumatchenko et al. (2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "fc6422ae-ae83-4ea2-a0de-5c530c1415db",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C54",
+      "claim": "Spike-timing-dependent plasticity rules using very few pairing APs can turn a neuron that did not emit a spike in response to a visual stimulus into one that frequently spikes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the current study we show that spike-timing-dependent plasticity rules using very few pairing APs can turn a neuron that hitherto did not emit a spike in response to a visual stimulus into one that frequently spikes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the main experimental finding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "e9b3ff09-c029-499f-a8da-cc328210c493",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C55",
+      "claim": "Pairing APs with a different timing can reduce established spiking.",
+      "claim_type": "EXPLICIT",
+      "source_text": "while pairing APs with a different timing can reduce established spiking",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the negative timing experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "98f9d8b3-057b-4ad9-954c-138eb3e8c96f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C56",
+      "claim": "STDP is a fundamental mechanism by which neurons join and leave cell-assemblies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We propose that this is a fundamental mechanism by which neurons join and leave cell-assemblies",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative proposal about the functional role of STDP, connecting to Hebb's theory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "73b58033-202a-40cc-aa93-c48a02c8673b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C57",
+      "claim": "Very few precisely timed spikes select specific temporal synaptic sequences for long-term storage from the many that are activated during a sensory learning process.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in which very few precisely timed spikes select specific temporal synaptic sequences for long-term storage from the many that are activated during a sensory learning process",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the functional significance of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2b8a9d25-9b25-41f5-8d55-128b29f02a8a",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C58",
+      "claim": "Changes in tuning have direct implications for the function of neuronal circuits in which the respective neuron is embedded.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since these spikes will be transmitted to hundreds of other downstream neurons, such a change in tuning has direct implications for the function of neuronal circuits in which the respective neuron is embedded",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference about the network-level consequences of single-neuron plasticity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7fe2e6da-04f5-4870-a066-884d1fa49cfb",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C59",
+      "claim": "Male Lister Hooded rats at postnatal day 23\u201328 were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Male Lister Hooded rats at postnatal day 23\u201328 were anesthetized with urethane",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the experimental subjects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1f58ae4e-55a4-45f2-bf7e-b19f062416b9",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C60",
+      "claim": "Recorded neurons were located in primary visual cortex in L2/3, 169 \u00b1 3 \u00b5m below the pial surface.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Recorded neurons were located in primary visual cortex in L2/3, 169 \u00b1 3 \u00b5m below the pial surface (range 112\u2013225 \u03bcm, median = 170 \u03bcm; lower quartile = 150 \u03bcm; upper quartile = 186 \u03bcm)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the recording locations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "25a02726-c150-4d16-a0cd-43a005672a44",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C61",
+      "claim": "Only recordings from neurons that showed firing properties characteristic of pyramidal neurons were included.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Only recordings from neurons that showed firing properties characteristic of pyramidal neurons were included, whereas fast-spiking neurons were excluded",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about neuron selection criteria.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "e3204338-a4da-42ca-9d6d-c9b55d068f5e",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C62",
+      "claim": "Visual stimuli were triggered by the membrane potential entering a down-state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Visual stimuli (500 ms flashed bars, white against a black background) were triggered by the membrane potential entering a down-state",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the experimental protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7524fcf0-d703-4e27-87ef-c870f678cf86",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C63",
+      "claim": "The STDP induction protocol was performed by pairing visual stimulus with one or a few APs evoked by injection of a step current.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Next, a stimulus position that evoked a robust and fast-onset response was selected and the average initial peak time after stimulus onset for the selected stimulus position was calculated. Then, this visual stimulus was paired with one or a few APs evoked by injection of a step current (15 ms, 1010 \u00b1 102 pA)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the STDP protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "e1a2bbc1-f323-4857-b915-4b9fa9de886f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C64",
+      "claim": "Pairing was repeated around 40 times every 3\u20134 s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pairing was repeated around 40 times every 3\u20134 s",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the pairing protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "97c9b228-0d43-42e4-bce7-13636d2b44f8",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C65",
+      "claim": "The selection of the pairing position was not biased toward or away from the positions with the strongest pre-pairing suprathreshold responses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Overall the selection of the pairing position was not biased toward or away from the positions with the strongest pre-pairing suprathreshold responses, in that the rank of stimulus-evoked spiking at the pairing position tended neither toward first nor last among the four stimulus positions",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological control showing unbiased selection of pairing positions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "55c1a459-d111-4c9a-9f58-9c5a4518f224",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C66",
+      "claim": "The STDP model used a biphasic window function with \u03c4(+) = \u03c4(\u2212) = 20 ms, A(+) = 0.2 and A(\u2212) = 0.2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We used the biphasic window function... where \u03b8(t) = 1 for t > 0 and 0 otherwise, \u03c4(+) = \u03c4(\u2212) = 20 ms, A(+) = 0.2 and A(\u2212) = 0.2 for results shown in the main text",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the computational model parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "87468dc0-9854-49ab-8a8e-47ab4126fd95",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C67",
+      "claim": "Initial synapse strengths in the model were exponentially distributed, with a mean of 2 mV chosen to reproduce the membrane potential response amplitudes observed in experimental data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Initial synapse strengths were exponentially distributed, with a mean of 2 mV chosen to reproduce the membrane potential response amplitudes observed in experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological detail about the computational model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7e14eba5-e293-4f19-bb96-5e32997a65f7",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C68",
+      "claim": "Modeling each input's stimulus response as fixed and temporally precise produced membrane potential changes similar to those reported for in vitro STDP timing curves.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Modeling each input's stimulus response as fixed and temporally precise produced membrane potential changes similar to those reported for in vitro STDP timing curves",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the computational modeling work shown in Figure 5F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "76eecf9a-6d0c-4918-8ef3-e5fdb2b79faa",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C69",
+      "claim": "Introducing jitter into the presynaptic activity caused the positive and negative peaks of the change in membrane potential to broaden and become more distant from the pairing spike with increasing jitter.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, introducing jitter into the presynaptic activity (Figure 5G) caused the positive and negative peaks of the change in membrane potential to broaden and become more distant from the pairing spike with increasing jitter",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the computational modeling work shown in Figure 5G.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "55b87c67-f6e0-43a7-9c16-74545da5b787",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C70",
+      "claim": "With a presynaptic jitter of 40 ms the model produced a biphasic change in the mean membrane potential that closely resembled the in vivo experimental results.",
+      "claim_type": "EXPLICIT",
+      "source_text": "With a presynaptic jitter of 40 ms the model produced a biphasic change in the mean membrane potential (Figure 5H,I) that closely resembled the in vivo experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the computational modeling work comparing simulations to experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f5e9dd1f-2533-4512-af0b-b810774b2777",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C71",
+      "claim": "The model reproduced partial transfer of STDP effects to neighboring stimulus positions in a spike timing dependent manner given the assumption that a subset of presynaptic neurons respond with similar spiking patterns for multiple stimulus positions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The model also reproduced partial transfer of STDP effects to neighboring stimulus positions (Figure 5J, red) in a spike timing dependent manner (Figure 5K) and given the assumption that a subset of presynaptic neurons respond with similar spiking patterns for multiple stimulus positions",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the computational modeling work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "d7e92684-a1ff-4cce-9728-371bc7ecdd5a",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C72",
+      "claim": "The slight transfer of changes in synaptic strength from one stimulus position to the next within a receptive field can be explained by partial overlap of the inputs activated by different stimuli.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, the slight transfer of changes in synaptic strength from one stimulus position to the next within a receptive field can be explained by partial overlap of the inputs activated by different stimuli as previously suggested",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion from the modeling work, connecting to previous suggestions from Meliza and Dan (2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "c05e86af-71a4-4abc-bcc2-2ee71f660c0f",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C73",
+      "claim": "The results demonstrate that an STDP protocol using less than 50 paired APs can convert a neuron's visually evoked responses from non-spiking to spiking.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results demonstrate that an STDP protocol using less than 50 paired APs can convert a neuron's visually evoked responses from non-spiking to spiking",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the main experimental finding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "93dcc87b-76c6-4998-bd46-3c53a82ceefc",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C74",
+      "claim": "An STDP protocol using less than 50 paired APs can increase and diminish existing spiking responses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "can increase and diminish existing spiking responses",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the experimental findings for both positive and negative timing protocols.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "4cb9d80c-3a00-4eb1-87e8-70a10677625b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C75",
+      "claim": "An STDP protocol using less than 50 paired APs can induce a rearrangement of the neuron's sub- and suprathreshold responses to stimuli presented at locations surrounding the paired location.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and can induce a rearrangement of the neurons sub- and suprathreshold responses to stimuli presented at locations surrounding the paired location",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the experimental findings shown in Figures 3 and 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "e490fe42-7479-49ac-bc25-def86659a828",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C76",
+      "claim": "The current findings extend knowledge about STDP-induced subthreshold changes in vivo to the suprathreshold domain.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our current findings extend our knowledge about STDP-induced subthreshold changes in vivo (Meliza and Dan, 2006; Jacob et al., 2007) to the suprathreshold domain",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a characterization of the contribution of the study relative to prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "aab76d41-d722-4700-a92b-94a77f3ddf5e",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C77",
+      "claim": "The study provides a bridge between changes in spiking observed across many neurons' receptive fields after alteration of sensory input and subtle changes in subthreshold responses induced by STDP at the single neuron level.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our study also provides a bridge between the changes in spiking observed across many neurons' receptives fields after alteration of sensory input for example through retinal lesions (Wiesel and Hubel, 1963; Kaas et al., 1990; Gilbert and Wiesel, 1992) and subtle changes in subthreshold responses induced by STDP at the single neuron level both in vitro (Magee and Johnston, 1997; Markram et al., 1997; Bi and Poo, 1998) and in vivo",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a characterization of the conceptual contribution of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "d9403fdc-088d-45fb-ac54-6be9497ac463",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C78",
+      "claim": "A connection between receptive field plasticity, rearrangement of a neuron's tuning properties and STDP has been suggested by theoretical studies but has not been shown experimentally to date.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such a connection between receptive field plasticity, rearrangement of a neuron's tuning properties and STDP has been suggested by theoretical studies (Song and Abbott, 2001; Young et al., 2007), but to date has not been shown experimentally",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a characterization of the state of the field prior to this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "470313e5-f2be-4ca8-87d1-8dcc2ad91d5b",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C79",
+      "claim": "The rates of AP activity used in the pairing protocols were similar to activity reported for upper cortical layer populations in the visual cortex of both headfixed awake and freely exploring rodents.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As the rates of AP activity used in the pairing protocols was similar to activity reported for upper cortical layer populations in the visual cortex of both headfixed awake (Greenberg et al., 2008) and freely exploring rodents (Sawinski et al., 2009)",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is a comparison of the experimental protocol to physiological conditions reported in the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "44815ee7-0a12-4705-b7c1-69dbee562d03",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C80",
+      "claim": "This form of plasticity could represent a more general plasticity principle that relies on low firing rates and is central to individual neurons joining or leaving cell-assemblies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this form of plasticity could represent a more general plasticity principle that relies on low firing rates and is central to individual neurons joining or leaving cell-assemblies, as proposed by Donald Hebb",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the broader significance of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7a2e83b9-9f35-4b02-babe-728b18a4e1f1",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C81",
+      "claim": "The study manipulated the timing of spikes relative to an avalanche of stimulus-triggered presynaptic events and observed significant changes in the firing properties of the postsynaptic neuron.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the present study we manipulated the timing of spikes relative to an avalanche of stimulus-triggered presynaptic events and observed significant changes in the firing properties of the postsynaptic neuron",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the experimental approach and findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "3b6ae676-8693-492a-8b50-1e238234e5ca",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C82",
+      "claim": "The study focused on manifestations of Hebbian plasticity that depended upon spike timing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In other words, we focused on manifestations of Hebbian plasticity that depended upon spike timing",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a characterization of the experimental approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f9e77080-c660-4ca0-b705-8e469e5bb135",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C83",
+      "claim": "Purely subthreshold manipulation of the postsynaptic voltage could have caused similar, or even stronger effects of Hebbian plasticity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We cannot exclude, however, that purely subthreshold manipulation of the postsynaptic voltage could have caused similar, or even stronger effects of Hebbian plasticity",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is an acknowledgment of alternative mechanisms that were not tested, citing Lisman and Spruston (2005, 2010), Fregnac et al. (2010), and Shouval et al. (2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2972a1f1-a065-4589-aba2-5a02e3c9e58e",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C84",
+      "claim": "Hebbian synaptic plasticity also manifests itself in experimental protocols manipulating firing rates and postsynaptic voltage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While STDP highlights the timing-dependence on a millisecond time scale, Hebbian synaptic plasticity also manifests itself in experimental protocols manipulating firing rates and postsynaptic voltage",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge cited from Artola et al. (1990) and Sjostrom et al. (2001).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "db6806de-aaac-4c34-b1aa-c03e45c142cd",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C85",
+      "claim": "Previous models assuming that Hebbian synaptic plasticity depends critically on postsynaptic voltage have allowed general theories of plasticity with both rate- and timing-dependent plasticity as special cases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In fact, previous models assuming that Hebbian synaptic plasticity depends critically on postsynaptic voltage, have allowed general theories of plasticity with both rate- and timing-dependent plasticity as special cases",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Clopath et al. (2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "e458dadd-66fc-4c7a-a309-be54d4940004",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C86",
+      "claim": "Optimality theories of STDP have proposed that the fundamental reason why pre-before-post induces LTP is to strengthen the causal link between input and output.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Optimality theories of STDP developed over the last 10 years, have proposed that the fundamental reason why pre-before-post induces LTP is to strengthen the causal link between input and output",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a theoretical framework cited from multiple sources including Pfister et al. (2006), Bohte and Mozer (2007), Toyoizumi et al. (2007), and others.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f7665ca5-9c0c-49cd-b7a8-60bee2183d2a",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C87",
+      "claim": "The optimal timing between pre- and post should be related to the rise time or width of the PSP caused by the presynaptic input.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the optimal timing between pre- and post should be related to the rise time or width of the PSP caused by the presynaptic input",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a theoretical prediction cited from multiple sources.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2c67fef5-1874-4420-9fe1-f14ec556635a",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C88",
+      "claim": "There is no similar optimality theory as to why synaptic depression should be spike-triggered.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There is no similar optimality theory as to why synaptic depression should be spike-triggered, as unspecific forms of depression of synapses (not temporally linked to the output spike) would work just as well from a theoretical point of view",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a characterization of the theoretical literature on STDP.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "b965f8f1-f268-4a10-bdff-636e24243c98",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C89",
+      "claim": "Timing based post-before-pre LTD (negative timing) is a robust mechanism for manipulating neuronal spiking responses along with the previously proposed pre-before post LTP (positive timing).",
+      "claim_type": "EXPLICIT",
+      "source_text": "What our study proposes is that timing based post-before-pre LTD (negative timing) is a robust mechanism for manipulating neuronal spiking responses along with the previously proposed pre-before post LTP (positive timing)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion from the experimental data, particularly the negative timing results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "0643c864-da47-45c6-b04a-d691b190fdf8",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C90",
+      "claim": "The present study shows a robust timing effect for the change in voltage of the initial peak, where negative timing protocols produced decreased synaptic efficacy and positive timing protocols resulted in increased synaptic efficacy, similar to that seen in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The present study shows a robust timing effect for the change in voltage of the initial peak, where negative timing protocols produced decreased synaptic efficacy and positive timing protocols resulted in an increased synaptic efficacy, similar to that seen in vitro",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of the experimental findings on peak amplitude changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "6e4fa6b5-37df-4959-8035-c568faacf2cd",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C91",
+      "claim": "The reported lack of dependence of the peak changes on the millisecond timescale is not consistent with previous in vitro STDP studies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "What is not consistent with previous in vitro STDP studies, where synaptic efficacy changes were derived from post-synaptic potentials, is our reported lack of dependence of the peak changes on the milisecond timescale",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a comparison of the current findings to prior in vitro work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "cf44fb77-5ef6-46fd-a4d9-809737342f40",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C92",
+      "claim": "From in vitro studies it would be expected that a pre-before post pairing with a delay during pairing of around 40 ms would produce almost no change and a pre-before post with a delay of around 2 ms would produce the most change.",
+      "claim_type": "EXPLICIT",
+      "source_text": "From in vitro studies it would be expected that a pre- before post pairing with a delay during pairing of around 40 ms would produce almost no change and a pre- before post with a delay of around 2 ms would produce the most change",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a characterization of expectations from prior in vitro work, cited from Bi and Poo (1998).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "cbb7ce90-08aa-4623-aa85-33f975579f58",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C93",
+      "claim": "The reported initial peak changes were not at t = 0 but were seen for a diverse range of timings within a time range of \u223c100 ms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our reported initial peak changes were not at t = 0 but were seen for a diverse range of timings within a time range of \u223c100 ms",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the experimental data shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "3904e39d-8857-486b-9f9e-ad7e3127b394",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C94",
+      "claim": "The discrepancy with previous studies is due to the complexity of in vivo responses to visual stimulation which are made up of an avalanche of both inhibitory and excitatory synaptic events.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We suggest that this discrepancy with previous studies (also see Fregnac et al., 2010) is due to the complexity of in vivo responses to visual stimulation which are made up of an avalanche of both inhibitory and excitatory synaptic events",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of why the results differ from in vitro studies, citing Hirsch et al. (1998) and Okun and Lampl (2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "a7049ad1-28c4-408d-a8d5-199d3c934109",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C95",
+      "claim": "It is an oversimplification to capture complex in vivo responses by measuring only the peak of the initial response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is therefore an oversimplification to capture such complex responses by measuring only the peak of the initial response",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a methodological insight about the limitations of peak-only analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "67edcb51-6735-4253-8286-c81a4393d527",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C96",
+      "claim": "Measuring the evoked voltage across the entire time course of the response and aligning the voltage changes around the timing of pairing APs revealed a very robust timing dependence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we measured the evoked voltage across the entire time course of the response and aligned the voltage changes around the timing of pairing APs. With this approach we were able to show a very robust timing dependence, not just of an isolated synaptic input, but of the integrated inputs made up of multiple synaptic events",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological approach and finding from the study shown in Figure 5A-C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "5c166344-0358-4d92-8dbb-ef794a2f47dd",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C97",
+      "claim": "Peak response changes occurred at about 30\u201350 ms before and after the pairing spike.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found peak response changes at about 30\u201350 ms before and after the pairing spike",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding from the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7b7390ad-7ff2-4c21-8422-8960f60986de",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C98",
+      "claim": "The discrepancy between in vivo and in vitro peak timing is due to the very precise pre-synaptic timing during the pairing protocol from one trial to the next used in in vitro STDP studies which is contrary to the variable L4 and L2/3 visual response latencies found in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our model suggests that this discrepancy is due to the very precise pre-synaptic timing during the pairing protocol from one trial to the next used in in vitro STDP studies which is contrary to the variable L4 and L2/3 visual response latencies found in vivo",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion from the modeling work, citing Fagiolini et al. (1994) and Niell and Stryker (2008) for the variable latencies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "2ddadee1-8c61-475b-85ea-4a0ae19752b1",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C99",
+      "claim": "In four cases increases in AP firing were significant at the single-neuron level (p<0.05) for positive timing inductions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In four cases increases in AP firing were significant at the single-neuron level (p<0.05), despite the modest numbers of stimulus presentation trials and low firing rates",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical result from the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "beaff3ca-9372-47f0-96b2-b1d1bf1e6d45",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C100",
+      "claim": "Changes in spiking after negative timing were statistically significant at the single-neuron level (p<0.05) in four cases, all of which showed a decrease in spiking.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These changes were statistically significant at the single-neuron level (p<0.05) in four cases, all of which showed a decrease in spiking",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical result from the negative timing experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "856c1197-8d4c-4cb9-9214-0fd3a7e6b5ec",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C101",
+      "claim": "Increases in AP firing at the paired position for positive timing inductions remained significant even after removing the two neurons exhibiting the greatest increases (p=0.036, n = 13).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, we note that increases in AP firing at the paired position for positive timing inductions remained significant even after removing the two neurons exhibiting the greatest increases (p=0.036, n = 13)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a robustness check on the statistical significance of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "99b04486-e6a4-4695-8a85-72f5939a0ac4",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C102",
+      "claim": "Of the 15 neurons tested with positive timing, 11 showed an increase in the average number of APs evoked by stimulus presentation, 1 showed a decrease, and 3 never discharged a stimulus-evoked AP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, of the 15 neurons tested, 11 showed an increase in the average number of APs evoked by stimulus presentation, 1 showed a decrease, and 3 never discharged a stimulus-evoked AP",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a detailed breakdown of the experimental results for positive timing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "afba4a96-04d3-43dd-a1b3-2158b492bc82",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "claim_id": "C103",
+      "claim": "Of 15 neurons tested with negative timing that initially showed spiking, 12 showed a decrease in spiking and 3 showed an increase after induction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Of these 15 neurons 12 showed a decrease in spiking and 3 an increase after induction",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a detailed breakdown of the experimental results for negative timing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d3f215db-96e9-413e-acbe-25d097ad44cb",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Positive timing STDP reliably converts subthreshold to suprathreshold responses with strong statistical support (p=0.01, 8/15 neurons transitioned, significant even after removing outliers). Appropriate controls rule out alternative explanations including membrane potential changes, input resistance changes, and spontaneous drift. The experimental design with ~40 pairings is physiologically plausible.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "662fb5bb-acec-4f4f-8e43-3263420b7334",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Negative timing STDP reduces AP responses with statistical significance (p=0.04, 12/15 neurons decreased, 4 significant at single-neuron level). This bidirectional effect complements the positive timing results and demonstrates timing-dependent plasticity. The effect size is smaller than positive timing but remains robust across the population.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Suprathreshold response center shifts toward paired position are well-supported (R=0.81, p=0.008), but subthreshold shifts are weaker (R=0.53, p=0.04) and negative timing shows no significant trend (p=0.70). The spatial transfer mechanism relies on assumptions about shared presynaptic inputs that are modeled but not experimentally validated. The decay of plasticity with distance is shown but the underlying circuit mechanisms remain unclear.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Computational modeling demonstrates that presynaptic temporal jitter (~40ms) is necessary and sufficient to reproduce the broader STDP timing windows observed in vivo compared to in vitro (peak changes at 30-50ms vs t=0). The model uses physiologically realistic parameters (2mV mean EPSP, exponential distribution, 400 inputs) and successfully predicts both the biphasic voltage changes and partial spatial transfer. While alternative mechanisms are acknowledged, the jitter hypothesis is well-supported by the simulations matching experimental data.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "25b45e25-a748-485e-8647-e3e8875cf1d8",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The observation that ~2mV voltage changes produce significant spiking changes is empirically demonstrated, but the underlying mechanism remains speculative. The authors acknowledge the complexity of spike generation in vivo and can only cite in vitro studies showing reliable spike generation from complex waveforms. The lack of mechanistic understanding of how such small voltage changes translate to large spiking changes in vivo limits confidence, though the empirical observation itself is clear.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "d79f7df9-9b0e-459b-a730-ea7572e9af78",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The study successfully demonstrates that STDP rules can modify output patterns of sensory neurons using physiologically realistic protocols (~40 pairings, low firing rates). The results extend prior in vivo work from subthreshold to suprathreshold domain and provide experimental validation for theoretical predictions about receptive field plasticity. The bidirectional nature of the plasticity (both LTP and LTD) and the timing dependence are robustly demonstrated across multiple neurons with appropriate controls.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "51433cfd-eb3d-41fc-a962-219eca606efb",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The study shows robust timing-dependent changes in peak amplitude: negative timing (APs before peak) decreases amplitude while positive timing (APs after peak) increases it, consistent with STDP rules. This bidirectional effect on the initial peak is clearly demonstrated in the data (Figure 2B-C) and represents a key validation that the protocol induces STDP-like plasticity in vivo.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "51faa8bb-785e-43b1-a4ed-0ca0a345d643",
+      "content_id": "d15d20bf-3b93-4ebd-b568-77763b7dd137",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "These claims about STDP being a fundamental mechanism for neurons joining/leaving cell assemblies and selecting synaptic sequences for long-term storage are speculative interpretations that extend beyond the experimental data. While the physiological relevance is argued by comparison to firing rates in awake animals, the actual functional role in cell assembly dynamics and learning is not tested. These remain hypotheses requiring future experimental validation in behaving animals.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "1b58cdf1-d480-42da-94b6-2475981fcce9",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers identified a major discrepancy between small subthreshold changes (~2 mV or 20% EPSP change) and large suprathreshold effects (>200% increase in spike probability). They state 'it is difficult to reconcile these two findings' and request additional analysis and modeling to explain 'how a 20% change in EPSP peak size can lead to a 200% in spike probability.' The reviewers are not convinced by the authors' evidence ruling out Rin or depolarization changes, noting that average data may mask correlations at the single-cell level.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "55df1f46-1527-4f5a-bfbb-bb197e80e899",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express concern about the reliability of the positive timing (LTP) spiking results, requesting information on 'how many stimulations and how many spikes were recorded' beyond just neuron counts. They note that 'from the figures, e.g. Figure 3C it looks as if there is sometimes only a single spike response in some of the conditions,' suggesting insufficient sampling to reliably estimate low spike probabilities like 0.06 spikes/stim. While the effect is statistically significant at the population level, reviewers question whether the data are robust enough to support the strong claims about sub-to-suprathreshold conversion.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers identify a 'surprising finding' that the LTD protocol strongly affects subthreshold responses (-32.4%) but 'does not seem to affect spiking output, whereas the LTP paradigm does.' They suggest this may be due to 'large spread and not-normal distribution of baseline spiking' and low cell numbers, noting that 'a decrease in spiking will be hard to detect in cells that barely spike to start with.' Reviewers state the data 'look more like a negative control for the LTP experiments' and request clearer discussion of why experiments may be inconclusive or what the functional relevance of LTD would be if conclusive.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "957e1a79-c0d6-4e9e-a66d-c167a96c560a",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Reviewers challenge the authors' conclusion that changes in Rin or depolarization do not account for spiking changes. They state 'we are not convinced that they make a very convincing case here, because they provide average data, and so it could be that on average the change in Rin is small, but that there is a good correlation between neurons that show a change in firing rate and neurons that show a change in Rin.' Reviewers note that 'the transition from EPSP to spike is nonlinear so the small change in Rin or in depolarisation is just as good as a candidate as a small change in EPSP size.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "ad843712-4313-4249-ada7-c44dc8925ea7",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers note that 'no negative control experiments are provided in the text or figures (at least regarding subthreshold activity)' and question whether 'LTP/LTD really dependent on spike pairing' or 'could the effect depend on just depolarization instead?' While the authors present a sham control for spiking, reviewers suggest 'the fact that a sham control did not show anything could be because the STDP protocol does change something, but maybe not what the authors propose,' indicating uncertainty about the mechanistic interpretation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "9ac72610-e085-408d-bc20-0919bc3e2451",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers state 'the relevance of Figure 4 is unclear' and note 'there are no statistics provided \u2013 are the results in Figure 4C significant or not?' They criticize that 'the authors use this figure to essentially describe a general, qualitative phenomenon for which the statistics are not provided, and then they elaborate on it as if it is proven.' Reviewers request either statistical tests to confirm significance, more data, or removal of this section, indicating they do not accept the spatial reorganization claims as currently presented.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "119142db-a6fb-4097-928d-4f254ff955b3",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers challenge the strong attribution to STDP specifically, stating 'the authors have pushed very strongly the idea that STDP in particular (as opposed to classical Hebbian LTP/LTD) underlies the phenomenology. Certainly the results are consistent with STDP, but they do not demonstrate definitively that STDP definitively underlies the plasticity.' They note that 'the fact that Pawlak et al use a single spike to induce plasticity does not necessarily mean this is STDP; it just means a single postsynaptic spike is enough' and request that 'alternative possibilities need to be acknowledged and discussed more thoroughly.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not raise concerns about the computational modeling results showing that presynaptic jitter is necessary to reproduce the broader temporal profile of voltage changes observed in vivo compared to in vitro. The request for additional modeling in point 1 implicitly accepts the existing modeling framework as valid, suggesting reviewers view this computational work as a reasonable explanation for the in vivo/in vitro differences.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R9",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not challenge any of the background and contextual claims about sensory coding, STDP theory, or the state of the field. These claims provide the scientific rationale for the study and are implicitly accepted by the reviewers' focus on the experimental results and their interpretation rather than the motivation or background.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29",
+      "content_id": "84457244-77a3-4c47-b022-01230b4fc168",
+      "result_id": "R10",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not raise concerns about the basic experimental methods, animal subjects, recording locations, or pairing protocols. Their critiques focus on data analysis, interpretation, and the need for additional controls rather than questioning the validity of the core methodological approach.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5252de00-fc1c-4947-9c5e-ca68b11835a2",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "7653fe26-d871-4e0b-a6aa-4b2e2d47ca87",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "b1c8f506-936a-4cbc-baff-2fdf8e666ddb",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "7b0e89c1-d02a-4683-8094-83f58161d002",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "2ddadee1-8c61-475b-85ea-4a0ae19752b1",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "856c1197-8d4c-4cb9-9214-0fd3a7e6b5ec",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "99b04486-e6a4-4695-8a85-72f5939a0ac4",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "991a702a-3f1c-4910-abeb-285ecdfed54f",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "40ccccc8-c754-49d0-b00d-c601519e55c0",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "56581867-804e-4e65-9890-f68a9cc93253",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "9d67f05f-4f5c-4abb-bd07-4c95397bce5f",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "40600e65-a723-4f58-a857-68fa615d2868",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "c05e86af-71a4-4abc-bcc2-2ee71f660c0f",
+      "result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb"
+    },
+    {
+      "claim_id": "f77861b1-4b18-4114-a8b3-c8d0b44a7da1",
+      "result_id": "662fb5bb-acec-4f4f-8e43-3263420b7334"
+    },
+    {
+      "claim_id": "2387c9bc-0011-4682-9793-cc202b18650d",
+      "result_id": "662fb5bb-acec-4f4f-8e43-3263420b7334"
+    },
+    {
+      "claim_id": "beaff3ca-9372-47f0-96b2-b1d1bf1e6d45",
+      "result_id": "662fb5bb-acec-4f4f-8e43-3263420b7334"
+    },
+    {
+      "claim_id": "afba4a96-04d3-43dd-a1b3-2158b492bc82",
+      "result_id": "662fb5bb-acec-4f4f-8e43-3263420b7334"
+    },
+    {
+      "claim_id": "93dcc87b-76c6-4998-bd46-3c53a82ceefc",
+      "result_id": "662fb5bb-acec-4f4f-8e43-3263420b7334"
+    },
+    {
+      "claim_id": "2b369dd6-3e9c-4886-83d4-7ebf2431f74f",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "c521de9c-a15b-4613-8095-6463d8464ba9",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "a5211882-7b83-4f03-91eb-be1e54caece3",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "f8a57fa4-e558-44f2-a704-c4248f614f9f",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "78a8a204-406f-438e-ab3b-8138a681d5b6",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "4ffbdd26-58dc-4988-b58a-18c405dfb06c",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "4cb9d80c-3a00-4eb1-87e8-70a10677625b",
+      "result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af"
+    },
+    {
+      "claim_id": "3103a4c0-e024-4032-b421-a9591cced682",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "a97f3405-54b2-4bc2-8800-4060f1593496",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "79024fe9-f6e8-42c2-b291-5f84e213245c",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "ad8a0cac-6b46-4fc8-b364-7c872413f78d",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "0ca6c06f-cc87-48af-a177-3d2666199e4a",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "7e14eba5-e293-4f19-bb96-5e32997a65f7",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "76eecf9a-6d0c-4918-8ef3-e5fdb2b79faa",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "55b87c67-f6e0-43a7-9c16-74545da5b787",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "f5e9dd1f-2533-4512-af0b-b810774b2777",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "d7e92684-a1ff-4cce-9728-371bc7ecdd5a",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "6e4fa6b5-37df-4959-8035-c568faacf2cd",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "cbb7ce90-08aa-4623-aa85-33f975579f58",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "3904e39d-8857-486b-9f9e-ad7e3127b394",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "67edcb51-6735-4253-8286-c81a4393d527",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "5c166344-0358-4d92-8dbb-ef794a2f47dd",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "7b7390ad-7ff2-4c21-8422-8960f60986de",
+      "result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1"
+    },
+    {
+      "claim_id": "df0b6fee-1725-4f6a-87b7-09c9a2736fd6",
+      "result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8"
+    },
+    {
+      "claim_id": "71041294-c4a5-4380-b6ce-27f5faec5c45",
+      "result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8"
+    },
+    {
+      "claim_id": "a39503a0-e136-4d00-9e6c-6b15a9036261",
+      "result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8"
+    },
+    {
+      "claim_id": "f5e9e72c-15b1-4350-a16a-9ff4c9d3dc80",
+      "result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8"
+    },
+    {
+      "claim_id": "1ae5249e-c9fb-4482-a0a0-3baca620cdde",
+      "result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8"
+    },
+    {
+      "claim_id": "f5270560-1c4b-41c0-8537-7edaf52daf85",
+      "result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8"
+    },
+    {
+      "claim_id": "e6303853-f0de-4bbd-92e1-b19d4c44b684",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "d0ea664b-71a4-46a5-bfa0-1cc3e76037f4",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "6c2fbbe3-8ae6-4850-b41f-345433da963d",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "a7c46fad-e660-4b33-a0b3-a46356c9dad1",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "c8c3c593-77c8-4da0-9bf5-1ae755bb1e67",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "fc6422ae-ae83-4ea2-a0de-5c530c1415db",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "e9b3ff09-c029-499f-a8da-cc328210c493",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "c05e86af-71a4-4abc-bcc2-2ee71f660c0f",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "93dcc87b-76c6-4998-bd46-3c53a82ceefc",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "e490fe42-7479-49ac-bc25-def86659a828",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "aab76d41-d722-4700-a92b-94a77f3ddf5e",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "b965f8f1-f268-4a10-bdff-636e24243c98",
+      "result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78"
+    },
+    {
+      "claim_id": "d35ffc20-d30c-4c1c-81d6-51d01c6bb57c",
+      "result_id": "51433cfd-eb3d-41fc-a962-219eca606efb"
+    },
+    {
+      "claim_id": "fe4e3900-612d-4369-951b-444be8c8dbbf",
+      "result_id": "51433cfd-eb3d-41fc-a962-219eca606efb"
+    },
+    {
+      "claim_id": "0643c864-da47-45c6-b04a-d691b190fdf8",
+      "result_id": "51433cfd-eb3d-41fc-a962-219eca606efb"
+    },
+    {
+      "claim_id": "98f9d8b3-057b-4ad9-954c-138eb3e8c96f",
+      "result_id": "51faa8bb-785e-43b1-a4ed-0ca0a345d643"
+    },
+    {
+      "claim_id": "73b58033-202a-40cc-aa93-c48a02c8673b",
+      "result_id": "51faa8bb-785e-43b1-a4ed-0ca0a345d643"
+    },
+    {
+      "claim_id": "2b8a9d25-9b25-41f5-8d55-128b29f02a8a",
+      "result_id": "51faa8bb-785e-43b1-a4ed-0ca0a345d643"
+    },
+    {
+      "claim_id": "44815ee7-0a12-4705-b7c1-69dbee562d03",
+      "result_id": "51faa8bb-785e-43b1-a4ed-0ca0a345d643"
+    },
+    {
+      "claim_id": "d35ffc20-d30c-4c1c-81d6-51d01c6bb57c",
+      "result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9"
+    },
+    {
+      "claim_id": "fe4e3900-612d-4369-951b-444be8c8dbbf",
+      "result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9"
+    },
+    {
+      "claim_id": "df0b6fee-1725-4f6a-87b7-09c9a2736fd6",
+      "result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9"
+    },
+    {
+      "claim_id": "71041294-c4a5-4380-b6ce-27f5faec5c45",
+      "result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9"
+    },
+    {
+      "claim_id": "a39503a0-e136-4d00-9e6c-6b15a9036261",
+      "result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9"
+    },
+    {
+      "claim_id": "0643c864-da47-45c6-b04a-d691b190fdf8",
+      "result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9"
+    },
+    {
+      "claim_id": "7653fe26-d871-4e0b-a6aa-4b2e2d47ca87",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "b1c8f506-936a-4cbc-baff-2fdf8e666ddb",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "7b0e89c1-d02a-4683-8094-83f58161d002",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "6c2fbbe3-8ae6-4850-b41f-345433da963d",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "fc6422ae-ae83-4ea2-a0de-5c530c1415db",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "c05e86af-71a4-4abc-bcc2-2ee71f660c0f",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "99b04486-e6a4-4695-8a85-72f5939a0ac4",
+      "result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899"
+    },
+    {
+      "claim_id": "f77861b1-4b18-4114-a8b3-c8d0b44a7da1",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "2387c9bc-0011-4682-9793-cc202b18650d",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "78a8a204-406f-438e-ab3b-8138a681d5b6",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "e9b3ff09-c029-499f-a8da-cc328210c493",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "93dcc87b-76c6-4998-bd46-3c53a82ceefc",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "b965f8f1-f268-4a10-bdff-636e24243c98",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "afba4a96-04d3-43dd-a1b3-2158b492bc82",
+      "result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18"
+    },
+    {
+      "claim_id": "991a702a-3f1c-4910-abeb-285ecdfed54f",
+      "result_id": "957e1a79-c0d6-4e9e-a66d-c167a96c560a"
+    },
+    {
+      "claim_id": "40ccccc8-c754-49d0-b00d-c601519e55c0",
+      "result_id": "957e1a79-c0d6-4e9e-a66d-c167a96c560a"
+    },
+    {
+      "claim_id": "56581867-804e-4e65-9890-f68a9cc93253",
+      "result_id": "957e1a79-c0d6-4e9e-a66d-c167a96c560a"
+    },
+    {
+      "claim_id": "9d67f05f-4f5c-4abb-bd07-4c95397bce5f",
+      "result_id": "ad843712-4313-4249-ada7-c44dc8925ea7"
+    },
+    {
+      "claim_id": "40600e65-a723-4f58-a857-68fa615d2868",
+      "result_id": "ad843712-4313-4249-ada7-c44dc8925ea7"
+    },
+    {
+      "claim_id": "2b369dd6-3e9c-4886-83d4-7ebf2431f74f",
+      "result_id": "9ac72610-e085-408d-bc20-0919bc3e2451"
+    },
+    {
+      "claim_id": "c521de9c-a15b-4613-8095-6463d8464ba9",
+      "result_id": "9ac72610-e085-408d-bc20-0919bc3e2451"
+    },
+    {
+      "claim_id": "a5211882-7b83-4f03-91eb-be1e54caece3",
+      "result_id": "9ac72610-e085-408d-bc20-0919bc3e2451"
+    },
+    {
+      "claim_id": "f8a57fa4-e558-44f2-a704-c4248f614f9f",
+      "result_id": "9ac72610-e085-408d-bc20-0919bc3e2451"
+    },
+    {
+      "claim_id": "4ffbdd26-58dc-4988-b58a-18c405dfb06c",
+      "result_id": "9ac72610-e085-408d-bc20-0919bc3e2451"
+    },
+    {
+      "claim_id": "4cb9d80c-3a00-4eb1-87e8-70a10677625b",
+      "result_id": "9ac72610-e085-408d-bc20-0919bc3e2451"
+    },
+    {
+      "claim_id": "5252de00-fc1c-4947-9c5e-ca68b11835a2",
+      "result_id": "119142db-a6fb-4097-928d-4f254ff955b3"
+    },
+    {
+      "claim_id": "e6303853-f0de-4bbd-92e1-b19d4c44b684",
+      "result_id": "119142db-a6fb-4097-928d-4f254ff955b3"
+    },
+    {
+      "claim_id": "a7c46fad-e660-4b33-a0b3-a46356c9dad1",
+      "result_id": "119142db-a6fb-4097-928d-4f254ff955b3"
+    },
+    {
+      "claim_id": "3b6ae676-8693-492a-8b50-1e238234e5ca",
+      "result_id": "119142db-a6fb-4097-928d-4f254ff955b3"
+    },
+    {
+      "claim_id": "3103a4c0-e024-4032-b421-a9591cced682",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "a97f3405-54b2-4bc2-8800-4060f1593496",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "79024fe9-f6e8-42c2-b291-5f84e213245c",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "ad8a0cac-6b46-4fc8-b364-7c872413f78d",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "0ca6c06f-cc87-48af-a177-3d2666199e4a",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "7e14eba5-e293-4f19-bb96-5e32997a65f7",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "76eecf9a-6d0c-4918-8ef3-e5fdb2b79faa",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "55b87c67-f6e0-43a7-9c16-74545da5b787",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "f5e9dd1f-2533-4512-af0b-b810774b2777",
+      "result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa"
+    },
+    {
+      "claim_id": "9ebc15cf-986a-445e-a8c7-577b02f48fb0",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "6f7c5407-c569-45e1-a3f1-b1f49454d15b",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "5f599424-5eca-46f6-8814-3a3bc0b6e79e",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "a45a7c25-545c-4b21-af09-744db2e089a0",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "8a0e7ee2-b5a4-41d1-9683-16b97a7072cc",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "7d9883c6-a44f-4739-be3a-bf7a9f5f0f7d",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "896e066c-cf31-4bdd-b269-a45e1a383fb6",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "1390d4c2-739a-4f22-a9f0-2c1ba7be0aed",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "0ff702b2-4d6a-4ec5-b7d2-f88e70a963fe",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "18747d9d-1a52-49fb-a3a6-f4f44c8ddfb1",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "2469d578-c510-46b5-bef2-dbfc9e292a7b",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "aab079fb-cd79-4257-a5e2-3a6d6d09cdcc",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "1d4c16f3-7cc6-4db4-9706-e2f19845484b",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "1b459e14-24f5-4b41-9772-59a635027a96",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "af44dedf-e2d3-4dbd-8cfe-c4e87716611a",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "85486014-d5c6-4fa8-97f1-4b4066cdd437",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "2e72eabc-1d1f-4bf0-bbde-52a1f338dd3d",
+      "result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41"
+    },
+    {
+      "claim_id": "7fe2e6da-04f5-4870-a066-884d1fa49cfb",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "1f58ae4e-55a4-45f2-bf7e-b19f062416b9",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "25a02726-c150-4d16-a0cd-43a005672a44",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "e3204338-a4da-42ca-9d6d-c9b55d068f5e",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "7524fcf0-d703-4e27-87ef-c870f678cf86",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "e1a2bbc1-f323-4857-b915-4b9fa9de886f",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "97c9b228-0d43-42e4-bce7-13636d2b44f8",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "55c1a459-d111-4c9a-9f58-9c5a4518f224",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    },
+    {
+      "claim_id": "87468dc0-9854-49ab-8a8e-47ab4126fd95",
+      "result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a7fb889d-349f-46df-83f0-76b3717dc4f2",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "f2e0f82c-93a9-4b3c-ae1c-c5d6abe336af",
+      "peer_result_id": "9ac72610-e085-408d-bc20-0919bc3e2451",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both agree spatial reorganization claims are uncertain. LLM cites weaker subthreshold shifts (R=0.53, p=0.04) and lack of experimental validation for shared input assumptions. Peer reviewers note missing statistics for Figure 4C and criticize elaboration on unproven phenomena.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "d8bd5cb5-1d8f-43ef-bcee-c21380a39f04",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "0e8e9b73-a732-4791-86e4-28d53d55b1a1",
+      "peer_result_id": "c5b3cf0d-af31-4fdc-9039-a18f1ec7bfaa",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both accept computational modeling showing presynaptic jitter explains broader in vivo STDP windows. Peer reviewers implicitly accept this framework by requesting additional modeling rather than challenging the jitter hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "ca71c441-1c5d-4a1e-a68e-1cbb74768144",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "51433cfd-eb3d-41fc-a962-219eca606efb",
+      "peer_result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "LLM finds bidirectional timing-dependent amplitude changes (C26, C27, C90) clearly demonstrated. Peer reviewers are uncertain about the same claims, focusing on the discrepancy between small subthreshold changes (~2mV) and large suprathreshold effects (>200% spike probability increase), stating 'it is difficult to reconcile these two findings.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "20ba1bcf-8aa2-41c2-97d8-b78cc8c81408",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "25b45e25-a748-485e-8647-e3e8875cf1d8",
+      "peer_result_id": "1b58cdf1-d480-42da-94b6-2475981fcce9",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both uncertain about mechanism linking small voltage changes to large spiking changes (C48-C50). LLM notes lack of mechanistic understanding in vivo. Peer reviewers question how 20% EPSP change produces 200% spike probability change and are unconvinced by evidence ruling out Rin or depolarization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "7666c59b-1d4c-4927-8f9e-0eb74f565456",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb",
+      "peer_result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "LLM finds positive timing LTP effects well-supported (p=0.01, 8/15 neurons, robust controls). Peer reviewers uncertain about reliability, noting insufficient sampling ('sometimes only a single spike response') to estimate low probabilities like 0.06 spikes/stim, questioning robustness despite population-level significance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "34e48840-33a2-4abb-8756-052e5333ff17",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "662fb5bb-acec-4f4f-8e43-3263420b7334",
+      "peer_result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "LLM finds negative timing LTD effects supported (p=0.04, 12/15 neurons). Peer reviewers uncertain, noting LTD strongly affects subthreshold (-32.4%) but 'does not seem to affect spiking output,' suggesting data 'look more like a negative control' due to low baseline spiking and distribution issues.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "918ba0c1-c04a-48fa-bd6b-8872b4dec3d2",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb",
+      "peer_result_id": "957e1a79-c0d6-4e9e-a66d-c167a96c560a",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNSUPPORTED",
+      "agreement_status": "disagree",
+      "notes": "LLM accepts controls ruling out Rin and membrane potential changes (C31-C33) as adequate. Peer reviewers reject this, stating authors 'are not convinced' because average data may mask single-cell correlations, and nonlinear spike generation means small Rin/depolarization changes are 'just as good as a candidate' as EPSP changes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "10ecd4b2-21a1-48dd-b23b-8e17d7824364",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78",
+      "peer_result_id": "55df1f46-1527-4f5a-bfbb-bb197e80e899",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap (C36, C54, C73). LLM supports overall demonstration of STDP modifying sensory neuron outputs with physiologically realistic protocols. Peer reviewers uncertain about positive timing results due to sampling concerns, questioning reliability of the sub-to-suprathreshold conversion claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "c1ef68f1-f879-4f1b-a150-6cc4a96b09b3",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78",
+      "peer_result_id": "75eb43a8-13df-4a28-a2d8-125d43fbdd18",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap (C55, C74, C89). LLM supports bidirectional plasticity demonstration. Peer reviewers uncertain about negative timing effects, noting LTD protocol affects subthreshold but not spiking, with low cell numbers and distribution issues making decrease detection difficult.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "9f36594d-aa56-4370-8f84-95efe8fe09b8",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "d3f215db-96e9-413e-acbe-25d097ad44cb",
+      "peer_result_id": "ad843712-4313-4249-ada7-c44dc8925ea7",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "LLM accepts pairing protocol controls (C34-C35) as appropriate. Peer reviewers uncertain, noting 'no negative control experiments are provided' for subthreshold activity and questioning whether effects depend on 'just depolarization instead' of spike pairing specifically.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "ce44f7a0-1a62-4968-ac2f-6d6a82c0215e",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "d79f7df9-9b0e-459b-a730-ea7572e9af78",
+      "peer_result_id": "119142db-a6fb-4097-928d-4f254ff955b3",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C7, C37). LLM supports STDP demonstration with appropriate validation. Peer reviewers uncertain about STDP attribution specifically, stating 'results are consistent with STDP, but they do not demonstrate definitively that STDP definitively underlies the plasticity,' requesting acknowledgment of alternative Hebbian mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "bef923bd-6f23-4cf5-a67e-e56559134147",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": "51faa8bb-785e-43b1-a4ed-0ca0a345d643",
+      "peer_result_id": null,
+      "llm_status": "UNSUPPORTED",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims about cell assembly dynamics and synaptic sequence selection (C56-C58, C80) only in LLM results. LLM correctly identifies these as speculative interpretations extending beyond experimental data, requiring future validation in behaving animals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "cb9e10ee-5e49-47ba-855b-78874713c50e",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": null,
+      "peer_result_id": "803e2cf2-60d1-4edc-a161-2d034e9e8f41",
+      "llm_status": null,
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "notes": "Background and contextual claims (C1, C9-C24) only explicitly evaluated by peer reviewers, who accept them as valid scientific rationale. LLM did not group these claims separately for evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    },
+    {
+      "id": "fa234dc6-9bb6-47ae-ba2e-2fb985cbd636",
+      "submission_id": "5e7a2d8b-fe0c-4971-84b6-80b4255bfa5c",
+      "llm_result_id": null,
+      "peer_result_id": "8c8199fa-8231-43b2-8a6f-a58ff077fe29",
+      "llm_status": null,
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "notes": "Basic methodological claims (C59-C67) only explicitly evaluated by peer reviewers, who accept core experimental methods as valid. LLM did not separately evaluate these foundational methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:23:57.663757Z"
+    }
+  ]
+}

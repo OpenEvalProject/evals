@@ -1,0 +1,147 @@
+{
+  "submission": {
+    "id": "1e1de5f3-a357-4d83-b30f-17d5eff0f816",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:08:26.763265Z",
+    "updated_at": "2025-10-16T21:08:26.763265Z"
+  },
+  "content": [
+    {
+      "id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "submission_id": "1e1de5f3-a357-4d83-b30f-17d5eff0f816",
+      "content_type": "manuscript",
+      "content_text": "# Could a hormone point the way to life extension?\n\n## Authors\n\n- Cynthia Kenyon \u2020\n\n### Affiliations\n\n1. University of California, San Francisco San Francisco United States cynthia.kenyon@ucsf.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nMice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.\n",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "56a9d729-cd6e-4080-8d1e-84bbea62a567",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "claim_id": "C1",
+      "claim": "Mice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is presented as a factual finding from experimental research involving genetically modified mice, implying direct experimental data supports this observation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    },
+    {
+      "id": "8f3f3899-b0cc-4e88-aafa-5af10f43d1cc",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "claim_id": "C2",
+      "claim": "Fibroblast growth factor-21 is a hormone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The text explicitly refers to fibroblast growth factor-21 as 'this hormone', indicating its classification as a hormone is established knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    },
+    {
+      "id": "2db6c36d-9519-4e8e-bcb3-02cb7c0c7c60",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "claim_id": "C3",
+      "claim": "Mice can be genetically modified to produce high levels of fibroblast growth factor-21.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The statement describes a genetic modification that was performed on mice, indicating this is based on actual experimental methodology and data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    },
+    {
+      "id": "4432eb2f-156c-45a0-81af-7259e69995ec",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "claim_id": "C4",
+      "claim": "Fibroblast growth factor-21 may be relevant to life extension.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Could a hormone point the way to life extension? Mice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title poses a question about hormones and life extension, and the abstract describes FGF-21's effect on longevity, implying a connection between this hormone and potential life extension applications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    },
+    {
+      "id": "2a46f416-6f8a-4051-b9ad-ab8dc96fa2d7",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "claim_id": "C5",
+      "claim": "Increased levels of fibroblast growth factor-21 are associated with increased lifespan in mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice that have been genetically modified to produce high levels of fibroblast growth factor-21 live longer than mice with normal levels of this hormone.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct statement of an observed relationship between FGF-21 levels and lifespan based on experimental comparison between modified and normal mice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fceb7cda-e358-488e-a2c2-5236ac411ce2",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C3, and C5 describe the core finding that FGF-21 overexpression extends mouse lifespan, with C2 providing background on FGF-21 as a hormone. However, the abstract provides no experimental details: no sample sizes, statistical tests, p-values, controls, or quantitative lifespan data. Without access to methodology, statistical analysis, or experimental rigor details from the full manuscript, the result cannot be evaluated as supported or unsupported.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    },
+    {
+      "id": "9f829800-bf70-4803-a228-d7d9c561ac1e",
+      "content_id": "c1c83e9f-e63f-42d6-aaa5-8fe86a81fa3f",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C4 represents a speculative inference about FGF-21's potential relevance to life extension based on the mouse longevity data. While the inference is reasonable given the experimental finding, it remains a hypothesis requiring validation in other model systems or species. The claim appropriately uses tentative language ('may be relevant') but lacks supporting evidence beyond the single mouse study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:08:26.763265Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "56a9d729-cd6e-4080-8d1e-84bbea62a567",
+      "result_id": "fceb7cda-e358-488e-a2c2-5236ac411ce2"
+    },
+    {
+      "claim_id": "8f3f3899-b0cc-4e88-aafa-5af10f43d1cc",
+      "result_id": "fceb7cda-e358-488e-a2c2-5236ac411ce2"
+    },
+    {
+      "claim_id": "2db6c36d-9519-4e8e-bcb3-02cb7c0c7c60",
+      "result_id": "fceb7cda-e358-488e-a2c2-5236ac411ce2"
+    },
+    {
+      "claim_id": "2a46f416-6f8a-4051-b9ad-ab8dc96fa2d7",
+      "result_id": "fceb7cda-e358-488e-a2c2-5236ac411ce2"
+    },
+    {
+      "claim_id": "4432eb2f-156c-45a0-81af-7259e69995ec",
+      "result_id": "9f829800-bf70-4803-a228-d7d9c561ac1e"
+    }
+  ],
+  "comparisons": []
+}

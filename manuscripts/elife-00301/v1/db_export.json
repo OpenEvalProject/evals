@@ -1,0 +1,223 @@
+{
+  "submission": {
+    "id": "0829e2b7-8469-45bb-85bd-6c967a42b4d3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:11:44.176960Z",
+    "updated_at": "2025-10-16T21:11:44.176960Z"
+  },
+  "content": [
+    {
+      "id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "submission_id": "0829e2b7-8469-45bb-85bd-6c967a42b4d3",
+      "content_type": "manuscript",
+      "content_text": "# Getting to grips with hepatitis\n\n## Authors\n\n- Zhijian J Chen<sup>1</sup> \u2020\n- Jin Ye<sup>2</sup>\n\n### Affiliations\n\n1. Department of Molecular Biology and the Howard Hughes Medical Institute University of Texas Southwestern Medical Center Dallas United States zhijian.chen@utsouthwestern.edu\n2. Department of Molecular Genetics University of Texas Southwestern Medical Center Dallas United States jin.ye@utsouthwestern.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified as a protein that transports bile acids in the liver.\n",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "082fe7bd-288c-4716-9553-bf9240ecd27b",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C1",
+      "claim": "A receptor has been identified that allows hepatitis B virus to enter human liver cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "The statement reports a scientific discovery that has been identified, implying empirical research findings. As this is an abstract summarizing research, it likely refers to data from studies and may cite specific research work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "00f5982c-94ad-4a41-8881-049c070eec5e",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C2",
+      "claim": "A receptor has been identified that allows hepatitis D virus to enter human liver cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "The statement reports a scientific discovery that has been identified, implying empirical research findings. As this is an abstract summarizing research, it likely refers to data from studies and may cite specific research work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "ce60c88e-1c40-402e-84cb-7bced1be9cb9",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C3",
+      "claim": "The identified receptor is a protein that transports bile acids in the liver.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified as a protein that transports bile acids in the liver.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This characterization of the receptor's identity and function represents a specific research finding that would be based on experimental data and potentially references to prior work establishing the protein's bile acid transport function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "4303401a-9ed3-438a-bc65-bc43d48a8dcd",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C4",
+      "claim": "Hepatitis B virus enters human liver cells through a receptor-mediated mechanism.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The mention of a receptor that 'allows' viral entry implies a receptor-mediated entry mechanism, which is inferred from the explicit statement and draws on established knowledge of viral entry processes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "bb94713a-2ad7-4557-b7db-6e79aea6b703",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C5",
+      "claim": "Hepatitis D virus enters human liver cells through a receptor-mediated mechanism.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The mention of a receptor that 'allows' viral entry implies a receptor-mediated entry mechanism, which is inferred from the explicit statement and draws on established knowledge of viral entry processes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "db675125-9bc3-420e-bd90-0bae3f36885f",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C6",
+      "claim": "Hepatitis B and hepatitis D viruses use the same receptor to enter human liver cells.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The use of the singular 'receptor' for both viruses implies they share the same receptor, though this is not explicitly stated. This is a logical inference from the grammatical structure of the sentence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "fe1205d8-81b8-488d-ad6d-4d449ba82aa2",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C7",
+      "claim": "The bile acid transport protein is expressed in human liver cells.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified as a protein that transports bile acids in the liver.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "For the protein to function as a receptor for viral entry into liver cells and to transport bile acids in the liver, it must be expressed in liver cells. This is a logical inference supported by established biological knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "5b772380-8348-4f3d-95f1-42de51be4098",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C8",
+      "claim": "Hepatitis B virus targets human liver cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement explicitly mentions that the virus enters 'human liver cells,' which reflects established scientific knowledge about the tissue tropism of hepatitis B virus.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "c0d44837-cf13-4db7-a60c-1d799cb74470",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "claim_id": "C9",
+      "claim": "Hepatitis D virus targets human liver cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The receptor that allows hepatitis B and hepatitis D viruses to enter human liver cells has been identified",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement explicitly mentions that the virus enters 'human liver cells,' which reflects established scientific knowledge about the tissue tropism of hepatitis D virus.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "827b89b3-3022-4c89-a48e-fdd4ae77e52c",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1-C3 and C6 report the identification of a bile acid transporter as the shared receptor for HBV and HDV entry. However, this appears to be a commentary summarizing cited work rather than primary research. Without access to the original studies, the experimental validation, controls, sample sizes, and statistical analyses cannot be evaluated. The evidence types indicate reliance on citations and data from other sources.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "0e7d2459-9ecf-4929-86ae-f65dfe8bc0e4",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C4 and C5 assert receptor-mediated entry mechanisms for HBV and HDV based on inference and general knowledge rather than experimental data presented in this manuscript. While these are reasonable mechanistic inferences from the receptor identification, they lack direct experimental validation in the provided text and represent interpretations rather than demonstrated findings.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    },
+    {
+      "id": "569401f5-3d5f-4d8d-88cf-e6d323aec503",
+      "content_id": "a2c64812-7229-44e3-943f-e97985bee3d4",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C7-C9 regarding liver cell expression of the bile acid transporter and hepatotropism of HBV and HDV represent well-established scientific knowledge supported by extensive prior literature. These are not novel findings of this work but rather foundational facts that provide context for understanding the receptor identification result.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:11:44.176960Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "082fe7bd-288c-4716-9553-bf9240ecd27b",
+      "result_id": "827b89b3-3022-4c89-a48e-fdd4ae77e52c"
+    },
+    {
+      "claim_id": "00f5982c-94ad-4a41-8881-049c070eec5e",
+      "result_id": "827b89b3-3022-4c89-a48e-fdd4ae77e52c"
+    },
+    {
+      "claim_id": "ce60c88e-1c40-402e-84cb-7bced1be9cb9",
+      "result_id": "827b89b3-3022-4c89-a48e-fdd4ae77e52c"
+    },
+    {
+      "claim_id": "db675125-9bc3-420e-bd90-0bae3f36885f",
+      "result_id": "827b89b3-3022-4c89-a48e-fdd4ae77e52c"
+    },
+    {
+      "claim_id": "4303401a-9ed3-438a-bc65-bc43d48a8dcd",
+      "result_id": "0e7d2459-9ecf-4929-86ae-f65dfe8bc0e4"
+    },
+    {
+      "claim_id": "bb94713a-2ad7-4557-b7db-6e79aea6b703",
+      "result_id": "0e7d2459-9ecf-4929-86ae-f65dfe8bc0e4"
+    },
+    {
+      "claim_id": "fe1205d8-81b8-488d-ad6d-4d449ba82aa2",
+      "result_id": "569401f5-3d5f-4d8d-88cf-e6d323aec503"
+    },
+    {
+      "claim_id": "5b772380-8348-4f3d-95f1-42de51be4098",
+      "result_id": "569401f5-3d5f-4d8d-88cf-e6d323aec503"
+    },
+    {
+      "claim_id": "c0d44837-cf13-4db7-a60c-1d799cb74470",
+      "result_id": "569401f5-3d5f-4d8d-88cf-e6d323aec503"
+    }
+  ],
+  "comparisons": []
+}

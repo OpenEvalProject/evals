@@ -1,0 +1,2669 @@
+{
+  "submission": {
+    "id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:18:23.119977Z",
+    "updated_at": "2025-10-16T21:18:23.119977Z"
+  },
+  "content": [
+    {
+      "id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "content_type": "manuscript",
+      "content_text": "# Hierarchical organization of context in the hippocampal episodic code\n\n## Authors\n\n- Susumu Takahashi<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory of Neural Circuitry, Graduate School of Brain Science Doshisha University Kizugawa Japan\n2. Precursory Research for Embryonic Science and Technology (PRESTO) Japan Science and Technology Agency Kawaguchi Japan\n3. Faculty of Computer Science and Engineering Kyoto Sangyo University Kyoto Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00321.001 The hippocampal system appears to be critically important in establishing episodic memory of both internal and external events within contexts as well as spatial memory, which enables flexible spatial navigation. However, the neuronal substrates that function across different memories in the hippocampal system are poorly understood. I monitored large-scale activity patterns of hippocampal neuronal ensembles in rats performing a novel, continuous task that combined one visually guided and two memory-guided types of navigations in a constant environment. I found that the activity patterns of the hippocampal ensemble represent spatiotemporal contexts (journeys) constructed by temporally ordered past, present and expected future places in tandem with visually or mnemonically guided non-spatial contexts (task-demands) to form episodes. This finding therefore suggests that the hierarchical organization of contexts based on pattern separation and completion enables the hippocampus to play a dual role in spatial navigation and recall of episodic memory. DOI: http://dx.doi.org/10.7554/eLife.00321.001\n\n## Introduction\n\nThere have been two frameworks suggested for the principal role of the hippocampus in memory: spatial memory and episodic memory (Scoville and Milner, 1957; O'Keefe and Nadel, 1978; Vargha-Khadem et al., 1997; Eichenbaum et al., 1999). During spatial behaviors, hippocampal pyramidal neurons discharge specifically at a certain location in the environment (the \u2018place field'), suggesting that hippocampal neurons function in spatial memory (O'Keefe and Dostrovsky, 1971; McNaughton and Morris, 1987; Muller et al., 1987). In contrast, episodic memory provides a record of past experiences in relation to a broad range of materials (Wood et al., 1999) and is structured by spatial, temporal, and non-spatial contexts (Tulving, 1983). Recent studies indicate that on the basis of the pattern separation and completion proposed by Marr (Marr, 1969), the place field of a given neuron changes (remapping) relative to three different contexts: spatial context characterized by environmental features (Bostock et al., 1991; Kentros et al., 1998), spatiotemporal context (journey) affected by the experienced origin and expected destination (Frank et al., 2000; Wood et al., 2000), and internally and externally guided non-spatial context (task-demand) (Gothard et al., 1996; Anderson and Jeffery, 2003; Smith and Mizumori, 2006). Moreover, during a temporal gap between events, the place cells encode successive moments or fire at a specific part of an episode (Pastalkova et al., 2008; MacDonald et al., 2011). These lines of evidence suggest that the hippocampal place code is not only closely related to the \u2018where' of episodic memory but also to the \u2018when and how'. To test whether the changes and dynamics of the hippocampal place code are the neuronal basis of spatial and episodic-like memory, it is necessary to conduct a multifaceted experiment in which many hippocampal neurons are simultaneously monitored during repeated exposures to either spatiotemporal or non-spatial contexts in a constant spatial environment.\n\n## Results\n\n## A continuous task with one visually guided and two memory-guided decisions\n\nRats were trained to navigate their way through a figure \u20188' maze in a continuous task that incorporated both visual discrimination and two types of memory-guided responses (see \u2018Materials and methods',\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig1-v1.jpg)\n\n**Figure 1.:** (A) The rat has to decide which direction to turn at the decision point (DP). If correct, the rat gets reward signals (MFB stimulations) at one of the reward zones (RZ). In the DA subtask, a barrier appears for 5 s in the central stem (blue line) so that the rat has to wait in the delay zone (DZ). An example of a running trajectory of a rat (G111125) is superimposed on the maze. (B) Possible journeys for three subtasks. For the VD subtask, one of the light cues is illuminated to indicate a direction. For the memory-guided (SA and DA) subtasks, both of the light cues are illuminated to alternate the direction based on memory. (C) Examples of running trajectories of the rat (G111125). The red dots indicate the location of the onset of the estimated turn for each lap. (D) The subtask sequence in a task. Each subtask consisted of 20 laps, except the second VD subtask in each session, which only consisted of 10 laps.DOI: http://dx.doi.org/10.7554/eLife.00321.003\n\n## Coding of place, journey and task-demand in the hippocampal place cells\n\nEnsemble activity was recorded from a total of 1119 pyramidal cells in the CA1 of the dorsal hippocampus using arrays of 10 extracellular dodecatrodes (Takahashi and Sakurai, 2005) in five rats running in the maze. All rats were familiarized with the task before recording, and performed the task with a high level of accuracy (overall: 99 \u00b1 2%, VD: 99 \u00b1 1%, SA: 97 \u00b1 3%, DA: 99 \u00b1 1% correctly performed [mean \u00b1 SEM]; Table 1). Laps containing errors of cue interpretation were excluded from the following analyses.10.7554/eLife.00321.004Table 1.Variability between rats: behavioral and electrophysiological measurementsDOI: http://dx.doi.org/10.7554/eLife.00321.004Rat No.B120303F120112G111125K120224L120221TotalNo. of erroneous laps01051Errors (%)00.703.50.7Running speed (cm/sec \u00b1 SD) in the central stem33.13 \u00b1 6.1745.61 \u00b1 11.7322.09 \u00b1 15.0841.77 \u00b1 11.7752.03 \u00b1 16.95No. of pyramidal cells238744121932021119No. of place cells (spatial information > 1.0 bits/spike)1272119959116522Spatial information (bits/spike, mean \u00b1 SEM)2.39 \u00b1 0.211.26 \u00b1 0.362.47 \u00b1 0.211.21 \u00b1 0.182.50 \u00b1 0.24Unit isolation quality (isolation distance, mean \u00b1 SEM)22.42 \u00b1 1.7027.69 \u00b1 2.8145.41 \u00b1 7.8623.26 \u00b1 1.5933.60 \u00b1 2.11No. of interneurons19524151073\n\nSeveral studies suggest that the hippocampal place code is influenced by running speed and head direction (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig2-v1.jpg)\n\n**Figure 2.:** The proportion of place cells showing significantly different firing rates between different journeys within a given subtask and between different task-demands within a journey when running speed, head direction and lateral position were taken into account. Numbers indicate percentages.DOI: http://dx.doi.org/10.7554/eLife.00321.005\n\nThe place codes could be changed in terms of firing rates (rate remapping) or both firing rates and location (global/complete remapping;\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig3-v1.jpg)\n\n**Figure 3.:** Representative color-coded rate maps for eight possible trial types. (A) The rate maps with the first cell in (B) show stable place-specific activity in repeated sessions of an identical journey within a given task-demand. The rate was coded on a color scale from blue (silent) to red (maximum rate). The pixels that were not sampled are white. The symbols above the map indicate the journey, task-demand and illuminated light-cue. For each cell, the rate scale corresponds to the peak firing rate in Hz in that condition (indicated to the right of the rate maps). (B) The rate maps for six CA1 pyramidal cells. The maps are averages for repeated sessions. Each row shows the data from one pyramidal cell. Note that different journeys in the same place resulted in place fields similar in locations, but different task-demands caused different firing intensities in those place fields.DOI: http://dx.doi.org/10.7554/eLife.00321.006\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A schematic showing remapping of the place fields that occurred between journeys (spatiotemporal contexts) and task-demands (non-spatial contexts) at the single cell level. Changes in both firing location and rates in the place field (global remapping) occurred between the different journeys. By contrast, only changes in the firing rates (rate remapping) occurred between the task-demands.DOI: http://dx.doi.org/10.7554/eLife.00321.007\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig4-v1.jpg)\n\n**Figure 4.:** (A) The similarities were measured between a pair of trial types (VD1, VD2, VD3, VD4, SA1, SA2, DA1, and DA2) or between repeated exposures to an identical trial type. Because the central stem of the maze was the common running route among the different journeys within a given subtask, the region of interest (ROI) was set at the region highlighted in the green shaded box. Box plots of the spatial (B) and rate (C) similarities between repeated exposures to an identical journey and task-demand (red), between different journeys within a given task-demand (green), and between different task-demands within a journey (blue) (median, first and third quartiles, minimum, and maximum indicated). Repeated exposures are marked with an apostrophe.DOI: http://dx.doi.org/10.7554/eLife.00321.008\n\n## Episode-specific neuronal trajectory of the hippocampal ensemble activity\n\nThe activity patterns relative to the place, journey and task-demand during tasks suggested that the dynamics of the ensemble activity pattern rather than just the firing pattern of single cells should be considered. The dynamics of neuronal ensemble activity as a trajectory through a state space were therefore analyzed (neuronal trajectory; see \u2018Materials and methods';\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig5-v1.jpg)\n\n**Figure 5.:** At each location, the Euclidian distance from the trajectory on a single lap (black) to the mean trial type trajectories (red and blue) was calculated (dA, dB). If dA was less than dB, the lap at the location bin was classified as trial type A, and vice versa for trial type B.DOI: http://dx.doi.org/10.7554/eLife.00321.009\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig6-v1.jpg)\n\n**Figure 6.:** (A) An example time course of mean, journey-specific trajectories for right-to-left (red) and left-to-right (blue) laps in the SA subtask, plotted on the first to third principal component space (Rat #: B120303, n = 91 cells). The points marked 1, 2 and 3 correspond to the mean locations where the rat entered the lower arm, and turned and entered the reward zone, respectively. (B) Example individual trajectories for laps in the subtask in (A). (C) The classification accuracy of determining the journeys (shown in right) at different locations in the VD, SA, and DA subtasks (thin black line, n = 5 rats; solid black line, mean; blue dashed line, p=0.001, binomial test; black dashed line, chance level; red vertical line, mean turn onset). The classifier was based on a distance-dependent classification scheme. (D) As (C), except that the subtask condition under which the future direction is not predictable until arriving at the decision point. A high level of accuracy can be observed even before the onset of the turn (arrow heads).DOI: http://dx.doi.org/10.7554/eLife.00321.010\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig7-v1.jpg)\n\n**Figure 7.:** The classification accuracy for determining a trial type from all of the possible trial types (episodes) (thin line, n = 5 rats; thick black line, mean; blue dashed line, p=0.001, binomial test; black dashed line, chance level). The classifier was based on a distance-dependent classification scheme. The average accuracy for each rat was significantly higher than chance at the respective specific locations.DOI: http://dx.doi.org/10.7554/eLife.00321.011\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A schematic of the hypothetical, episode-specific neuronal trajectories of an individual trial type (red lines: VD subtask, green lines: SA subtask, blue lines: DA subtask; red dashed lines: same origin and destination) in the first to third PC space. As expected from the place field properties, the same right-to-left/left-to-right journey produces a similar neuronal trajectory at the ensemble level. However, the trajectories are shifted between the task-demands in certain spaces (PC2 in this schematic), thereby generalizing a journey over task-demands. When the future direction changes from the expectation at the decision point, the trajectory shifts to the corresponding one (red dashed lines, VD2, VD4). The trajectory shift can be triggered not only by external events (the light-cues) but also by internal events (expected future direction) before the behavioral choicesDOI: http://dx.doi.org/10.7554/eLife.00321.012\n\n## Relative ability for distinguishing journeys, task-demands, and trial types in the hippocampal episodic code\n\nThe above results suggest that hippocampal ensemble activity contains sufficient information concerning journey, task-demand and trial type. To compare the relative information content among them for neuronal ensemble activity of each rat, I quantitatively assessed the performances of the binary classification of neuronal trajectories in the central stem of the maze between a pair of journeys irrespective of subtask, between a pair of task-demands irrespective of journey, and between a pair of trial types. For all categories, the average output of the binary classifiers showed a high level of accuracy at the ensemble level (\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig8-v1.jpg)\n\n**Figure 8.:** Average binary classification accuracies of distinguishing pairs of journeys (i.e., VD1, SA1, and DA1 vs VD3, SA2, and DA2), pairs of task-demands (i.e., VD vs SA, VD vs DA, and SA vs DA), and pairs of trial types (i.e., all possible pairings of VD1, VD2, VD3, VD4, SA1, SA2, DA1, and DA2). For each rat, the accuracy was calculated based on the most frequently classified choices in the central stem. The error bars indicate SD.DOI: http://dx.doi.org/10.7554/eLife.00321.013\n\n## Hierarchical representation of journey and task-demand in hippocampal ensemble activity\n\nThe results obtained showing the similarities of the place fields may imply the pattern completion/generalization of the journey represented in the hippocampal ensemble activity in the spatial domain. If this assumption is correct, knowing the neuronal trajectories for right-to-left and left-to-right journeys in one subtask should allow classification into right-to-left and left-to-right journeys in the other subtasks. To test this, the similarities between the ensemble activity patterns in the central stem of the maze were quantitatively analyzed using a distance-dependent classification scheme. As expected, based on the mean right-to-left/left-to-right trajectories in any one of three subtasks, the classifier outputs could predict the corresponding individual journeys within the other remaining two subtasks at a high level of accuracy at the ensemble level (see \u2018Materials and methods';\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig9-v1.jpg)\n\n**Figure 9.:** (A) Schematic of a classification scheme for estimating generalization accuracy. At each location, the distance from the trajectory in two target subtasks on a single trial to the mean right-to-left (R-L) and left-to-right (L-R) journey trajectories in a reference subtask was measured (d-to-RL and d-to-LR). If the actual journey was R-L, and d-to-RL was less than d-to-LR, the lap at that location was classified as a correct generalization, and vice versa. The figure shows an example in which a reference subtask is VD and a neuronal trajectory in the R-L journey of an SA subtask was examined. (B) The generalization accuracy for determining a R-L/L-R journey from the neuronal trajectory in each lap in two of the three subtasks based on the distance to the mean neuronal trajectories in a remaining reference subtask as a function of the number of cells (red: reference: VD, target: SA and DA; green: reference: SA, target: VD and DA; blue: reference DA, target: VD and SA). Cells recorded from five rats were combined. The accuracy was calculated based on the most frequently classified journeys in the central stem. The error bars show the SD for 1000 random choices of the cells used; the dashed line shows the chance level, and the bar next to the dashed line shows the range of accuracies using random shuffling (control).DOI: http://dx.doi.org/10.7554/eLife.00321.014\n\n## Discussion\n\nTo summarize, although the same prominent environmental features were encountered in the same locations, the spatial representation of the hippocampal CA1 at various points in the maze were dissimilar in both firing location and rate among different journeys, irrespective of either visually or mnemonically guided demands, in a global remapping manner. The result supports the view that hippocampal pyramidal cells show journey-dependent coding during internally or externally guided goal-directed behaviors (Ferbinteanu et al., 2011). However, when the rats experienced changes in prominent, non-spatial features with internal and external events (i.e., subtask differences), the hippocampus only modulated the journey-dependent activity by primarily changing the intensity of the firing rates. The latter finding indicates that the extent to which the place fields remap is demand-specific (Smith and Mizumori, 2006) in a rate remapping manner. Neither the journey-dependent nor demand-specific coding was chiefly influenced by the running speed, head direction, or lateral position. In addition to the evidence from the place field measurements, even when the given task-demands were different, the classifier could sufficiently predict the journey from the ensemble activity patterns, suggesting that the journey representation is generalized and that non-spatial demand-specific representation is hierarchically ranked at a lower level. The neuronal trajectory of the ensemble activity differed enough to classify any trial type; prior to its behavioral choice, significant accuracy could be achieved even in a visually-guided situation in which memory-guided decision could not be made. The neuronal ensemble code for distinguishing trial types in the hippocampal ensemble activity was relatively equal to that for journeys and task-demands. Thus, the results imply that based not only on externally induced but also internally generated events, the hippocampus processes the combination of journey and task-demand as a single episode.\n\nPrevious studies have reported that hippocampal neurons might convey information related to where an animal is located (place-specific coding) (O'Keefe and Dostrovsky, 1971; McNaughton and Morris, 1987; Muller et al., 1987; Bostock et al., 1991; Kentros et al., 1998), where it had just been (retrospective coding) (Frank et al., 2000; Wood et al., 2000; Ferbinteanu and Shapiro, 2003; Ferbinteanu et al., 2011), where it is about to go next (prospective coding) (Frank et al., 2000; Wood et al., 2000; Ferbinteanu and Shapiro, 2003; Ainge et al., 2007a; Ferbinteanu et al., 2011) and what demand it currently faces (demand-specific coding) (Gothard et al., 1996; Anderson and Jeffery, 2003; Smith and Mizumori, 2006). However, the relationship among them in the hippocampal neuronal ensemble codes was unclear in these studies because each piece of information was independently examined. I report that all of this information can be simultaneously preserved in the hippocampal output to form episodes. The information for journey and task-demand is not horizontally but hierarchically organized; expected future events in the hippocampus can trigger episode separation. From the viewpoint of context, journey and task-demand can be considered to be spatiotemporal and non-spatial contexts, respectively. Thus, the hierarchical organization of spatiotemporal and non-spatial contexts in the hippocampal episodic code, which is based on the context version of pattern separation and completion through the remapping of place fields, not only enables flexible spatial navigation but also contributes to the recall of episodic memory.\n\n## Materials and methods\n\n## Animals\n\nFive male Wister rats (300\u2013400 g) were housed individually in cages (20 \u00d7 25 \u00d7 23 cm). All of them were implanted with a custom-made microdrive with 10 dodecatrodes and 2 reference electrodes. The rats were kept at 80% of free-feeding body weight. All rats were maintained on a 12-hr light/12-hr dark schedule. Testing occurred in the light phase.\n\n## Surgery, electrode preparation and recording\n\nUnder isoflurane anesthesia, two stimulation electrodes were inserted into the MFB in the right lateral hypothalamus (AP 2.5, ML 1.0, DV 9.5); a custom-made microdrive with 10 independently movable 12-wire bundled dodecatrodes and 2 tetrodes were fixed to the skull above the left hippocampus (AP 3.8, ML 3.0, DV 0.5). Two tetrodes were used to record a reference signal. Each stimulation electrode consisted of two insulated stainless steel wires (coated diameter, 0.2 mm) together with \u223c0.5 mm of insulation removed from one tip. The 10 dodecatrodes were lowered into the hippocampal CA1 pyramidal layer within 2 weeks of surgery. In all cases, the unit-recording dodecatrodes and reference tetrodes were constructed from 8 \u03bcm and 12.5 \u03bcm HML-coated tungsten (99.95%) wires, respectively.\n\nAfter the rats had made a full recovery (\u223c2 weeks after surgery), they were allowed to explore the task maze and identify the reward zones (Figure 1A, RZ). During the physiological recording, the data from all channels of the dodecatrodes were unity-gain buffered, filtered (600 Hz\u20136 kHz), amplified (gain = 5000) and continuously sampled at 25 kHz on a 128-channel custom-made recording system with Lynx-8 amplifiers (Neuralynx, Bozeman, MT) and AD converters (16-bit resolution, National Instruments, Austin, TX). One channel of each dodecatrode was branched away, filtered (0.1 Hz\u20136 kHz) and amplified (gain = 500) to detect local field potentials (LFP). The recordings were included in the data analysis if sharp wave ripple events in the LFP in the corresponding dodecatrode were identified during the immobility period. Two sets of small red and green light-emitting diodes (10-cm separation), mounted above the headstage amplifier, were recorded by an overhead digital video camera and sampled at 60 Hz to track the rat's head position and direction. The neuronal data were recorded on a single recording day for each rat.\n\n## MFB stimulation\n\nAfter the surgery, the optimal stimulation parameters were obtained when the rat performed nose poke responses. The optimal MFB stimulation consisted of a train of 2 ms wide, 100\u2013200 \u03bcA, biphasic current pulses, delivered at 100 Hz for 200 ms. In the correct laps, the optimal MFB simulation was obtained 5\u201310 times in the reward zone. The neuronal recordings during the stimulation period were removed prior to analysis.\n\n## Task and behavioral training\n\nThe task demanded a visually or memory-guided decision in VD, SA and DA at a decision point in the figure 8-shaped maze (overall: 100 cm by 140 cm, 20 cm height; path: 20 cm width; matte black acryl resin, Figure 1A). To prevent the rats from accessing unnecessary distal room cues, the task was performed under dim light. Initially, two barriers were put into the maze to construct an O-shaped track. After electrode implantation, the rats were trained to run along the left/right O-shaped track unidirectionally for reward signals (MFB stimulation) at a reward zone (Figure 1A, RZ). Once the rats were running smoothly along both left and right O-shaped tracks (\u223c3 to 7 days), all of them were trained to run in the VD subtask for a reward in the figure 8-shaped maze. In the VD subtask, one of the two visual cues (LED-lights at the right and left corners; Figure 1A) was illuminated randomly; the visual cue at the decision point of the maze (Figure 1A, DP) indicated which direction to turn to receive reward signals. The rats did not access the visual cue until reaching the decision point (Figure 1A) because the height of the walls of the maze (20 cm) was much higher than the level of the rat's eyes (\u223c5 cm) and the rats did not stand up during the experiment. The rats were trained for \u223c3 to 7 days until they achieved a threshold of 80% decisions correct for >20 laps at a constant running speed (>20 cm/s). Next, they were trained to run in the SA subtask for >20 laps. In the SA subtask, both LEDs were illuminated so that the rats could not rely on the visual cue. Instead, the rat had to choose a direction opposite to the previous one. Those alternating behaviors spontaneously occurred and the rats easily achieved the threshold of 80% decisions correct for >20 laps (\u223c1 to 3 days). Finally, the rats were trained to run in the DA subtask for 20 laps. The DA subtask was almost identical to the SA subtask, except that a 5-s delay period was incorporated. During the delay period, a barrier appeared for 5 s, 20 cm ahead of the entrance to the central stem (Figure 1A, blue line). Because the rats initially tended to move back from the barrier during the first few laps of the DA subtask, two other barriers were set at both sides of the return rail to prevent such behavior until it ceased. The rats achieved a threshold of 90% decisions correct for >20 laps (1 day).\n\nAfter the rats correctly performed all three subtasks, they continuously performed all the subtasks within about 1 hr in the following sequence\u2014VD (20 laps), SA (20 laps), VD (10 laps), DA (20 laps), VD (20 laps), SA (20 laps), VD (10 laps), and DA (20 laps)\u2014and were rewarded each time they arrived at the reward zone at the correct return rail. The unit-recordings were made within 2\u20136 training days after each rat conducted this final sequence of subtasks. The number of possible journeys in the VD subtask was twice that of the other subtasks. Thus, to increase the sample size for the VD subtask for analysis, and to clearly distinguish the behaviorally similar SA and DA subtasks, 10 laps of the VD subtask were interpolated between the SA and DA subtasks. The rats achieved a 95% correct decision rating from the beginning of the continuous task.\n\n## Spike sorting\n\nSpike sorting was performed offline using an automatic spike sorting software program with KlustaKwik (Harris et al., 2000) and FastICA (Hyvarinen, 1999) called \u2018ICSort', which is a custom-made program using Matlab and the C++ programming language. ICSort completed two steps: clustering and separation. Initially, in the clustering step, ICSort automatically sorted the first, second and third principal components' feature vectors of all the extracted spikes in the high-dimensional clustering space using KlustaKwik. Then, the extracted spike waveforms in each sorted cluster were concatenated. Next, in the separation step, ICSort used FastICA to find spatial filters to separate the spike waveforms into spatially fixed and distinct, maximally independent components (ICs). To determine which ICs were indicative of neuronal activity, spikes of >50 \u03bcV were extracted from each IC and checked to determine whether there was a clear refractory period in the inter-spike interval (ISI) histogram. Finally, the ICSort aggregated these distributed ICs into single units based on each ICA basis vector, which represents the relative distance between the source of the IC and the tip of the electrode. This approach has been previously described in detail (Takahashi et al., 2003a, 2003b; Takahashi and Sakurai, 2007, 2009a, 2009b).\n\n## Place maps\n\nThe spatial firing rate distributions (\u2018place fields') for each cell were constructed in the standard manner by summing the total number of spikes that occurred in a given location bin (5 cm by 5 cm), dividing by the amount of time that the rat spent in that location, and smoothing with a Gaussian centered on each bin (Leutgeb et al., 2005). The firing rate at a point, x, was calculated as:f(x)=\u2211i=1nw(si\u2212xh)/\u222b0Tw(y(t)\u2212xh)dt,where n is the number of spikes, si the position of the i-th spike, y(t) the position of the rat at time t, and (0, T) the period of the recording. The kernel function, w, was a Gaussian of h = 5 cm width. Positions more than 5 cm away from the tracked path were regarded as unvisited.\n\n## Cell identification and recording periods\n\nAfter spike sorting, putative pyramidal cells were distinguished from putative fast spiking interneurons by the spike width (0.4 ms) and the average firing rate (5 Hz). The low rate cells (<0.1 Hz) were excluded. Only cells identified as pyramidal were used in the analyses outlined below.\n\nIt is well known that during immobility periods, including delay periods, hippocampal activity is not place-specific (McNaughton et al., 1983; Pastalkova et al., 2008). Thus, spikes during immobility periods in the maze were excluded.\n\n## Spatial information\n\nThe spatial information was calculated as the number of bits per spike according to the formula (Skaggs et al., 1993):Spatial Information=\u2211iPi(Ri/R)log2(Ri/R),where i indexes over the position bins in the trial type, Pi is the probability that the rat was in bin i, Ri the mean firing rate in bin i, and R the overall mean firing rate over the trial type. More spatially specific firing leads to a larger value for this measurement.\n\n## Statistical comparison of firing rates using ANCOVA\n\nTo analyze the activity of cells in the central stem of the maze, the central stem was divided into spatial bins of equal length (approximately 0.35 cm). The following parameters were calculated for each traversal through each of the bins: (1) firing rate was calculated as the spike count in the bin divided by the time spent in the bin, and convolved with the Gaussian (SD = 5 cm); (2) running speed was measured as the time to traverse the constant length bin; (3) head direction was calculated as the mean of the animal's head directions (in degrees) within the bin; (4) lateral position was represented by the mean of the x coordinates of the rat's head within the bin. For each cell, a one-way ANCOVA was performed between different journeys within a given subtask or between different task-demands within a journey as independent (fixed) variables, firing rate as the dependent measure, and with running speed, head direction and lateral position as covariates (R version 2.15.2; The R Project for Statistical Computing, Vienna, Austria).\n\n## Spatial similarity\n\nThe spatial similarity of the place fields between two trial types or repeated exposures was calculated using the spatial correlation between the maps (Leutgeb et al., 2005). The region of interest (ROI) is defined along a common running route (i.e., the central stem; Figure 4A) between the trial types or sessions.\n\n## Rate similarity\n\nChanges in the firing rates between two trial types were expressed by calculating a modified difference/sum score (Leutgeb et al., 2005). The score for a pair of trial types or repeated exposures was obtained by calculating the unsigned difference between the rates in the two trial types or repeated exposures and dividing the difference by the sum of the two rates. To maintain consistency across spatial similarity, the rate similarity was obtained by subtracting the score from one. The possible scores ranged from an asymptotic value of 0\u20131. The ROI is defined in the same way as spatial similarity.\n\n## Neuronal trajectory analysis\n\nThe dynamics of the neuronal ensemble activity were analyzed as a trajectory through a state space (neuronal trajectory; Figure 5) (Briggman et al., 2005; Mazor and Laurent, 2005; Harvey et al., 2012). Initially, the path of the rat was linearlized for each journey by projecting the actual trajectory followed by the rat on that lap onto a user-defined idealized path using nearest neighbor Delaunay triangulation. Spatial bins had a resolution of approximately 0.35 cm. At each location on the linearized path, the spike count that convolved with the Gaussian (SD = 5 cm) of the ensemble containing n simultaneously monitored cells was defined as a point in an n-dimensional space, with each dimension representing the activity of a single neuron. Since the neuronal trajectory is in n-dimensional space, to visualize the neuronal trajectory in three-dimensional space, principal component analysis (PCA) was used as a dimension-reduction technique. The data were organized into m locations by an n-cell data set.\n\nThe distances between the trajectories were measured as Euclidian distances between the corresponding locations. The classification was performed for individual laps based on the distances to the mean lap trajectories. If the distance to the mean target trajectory was less than the distance to the other mean trajectories, the location for that lap was classified as the targeted choice. Classification accuracy was calculated at each location by averaging across laps for the individual trial types. In all of the distance classifications, the mean trajectories were calculated excluding the test trajectory (i.e., leave-one-out cross validation). In Figure 8, the classification accuracy was measured for each rat based on the most frequently classified choices at the central stem of the maze. The target cells were all simultaneously monitored place cells in each rat. In Figure 9, the classification accuracy for generalization was calculated based on the most frequently classified choices at the central stem of the maze; the combination of target cells for the classification were randomly chosen 1000 times. For control conditions, shuffling was performed by randomizing the sequence of laps 1000 times.\n\n## Behavior analysis\n\nThe rats could make a decision as soon as the visual cue was detected. However, the exact point where the rats mentally detect the visual cue cannot be estimated because measuring the awareness of the visual cue for rats is difficult to perform. Instead, the timing of the behavioral output was estimated based on the location of turn onset. The turn onset was defined as the last location when the rat was in the central stem or the upper junction of the maze (i.e., DP in Figure 1A) and when the angular velocity was below a threshold value (0.12 rev/s) (Harvey et al., 2012) (Figure 1C). These locations of turn onset were considered the signature of the rats' behavioral decision in the analyses.\n\n## Statistical analysis\n\nThe spatial and rate similarities, behavior analysis and neuronal trajectory analysis were performed using custom-made programs based on Matlab functions (Matlab 7.14; MathWorks, Natic, MA). All comparisons for the spatial and rate similarities were completed using the Wilcoxon rank sum test. The statistical test for classifier accuracy was performed using the binomial test. The statistical ANCOVA comparison was performed using Matlab functions in conjunction with R (R version 2.15.2; The R Project for Statistical Computing).\n\n## Histology\n\nAfter the task was performed, the rats were sacrificed by pentobarbital sodium overdose and perfused with formalin. The brains were cut coronally at 30 \u03bcm and stained with cresyl violet. Each section through the relevant part of the hippocampus was retained for analysis. All dodecatrodes were identified and the tip of each electrode was found by comparing it with the adjacent sections. The recordings from a given dodecatrode were included in the data analysis if its deepest position was under the CA1 pyramidal cell layer.\n",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Eichenbaum, Boston University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00321.015](https://doi.org/10.7554/eLife.00321.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cHierarchical organization of context in the hippocampal episodic code\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Howard Eichenbaum (Reviewing editor), Jozsef Csicsvari (peer reviewer), and Emma Wood (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments based on the reviewers' reports.\n\n* The reviewers agree that the paper could be useful and important, but requires additional analyses and improved presentation of the findings. There is a major concern about the need to control for potential differences between location, speed, and head direction in making claims about differential firing on the stem of the maze prior to left and right turn trials (see, for example, Wood et al., 2000). This will require substantial further analyses and likely restriction of the analyses to the central portion of the maze stem.\n\n* There are also concerns about the language and presentation of data. Part of the problem is the use of too much jargon.\n\n* In addition, the description of generalization is difficult to follow. In particular, Figure 7 is hard to interpret, so perhaps the data can be presented in a more intuitive way. The premise is understandable \u2013 that knowing the R-L and L-R neuronal trajectories in one task allows classification into R-L and L-R for the other tasks, but the figure does not aid that understanding. Also, it would be useful that provide some analysis and discussion of the relative ability to classify into trajectories (L-R vs R-L) vs into tasks (VD, SA, DA) vs into specific trial types (i.e., task and trajectory information combined).\n\n[Editors' note: the following comments were also sent to the author before acceptance.]\n\nThe author attempted to address the concerns of all the reviewers by performing ANCOVAs to eliminate cells for which differences in direction, speed, or lateral position could account for differences in firing patterns associated with distinct trajectories. However, nearly all the examples are taken from areas of the maze stem at the beginning or end of the stem where the animal's behavior, location, and direction of movement clearly differ. This is evident in the nearly all the examples shown in Figure 3 (exceptions are RatF120112-cell 53 and RatG111125-cell 326). We fear that somehow the ANCOVAs are not detecting this confound and this could undermine the conclusions. We recommend that you select a middle region of the maze stem that excludes the top and bottom areas where the trajectory of the rat separates, and use only the data from the middle region for all analyses.\n",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "648e9974-ac8d-4dfd-afee-c141311bd09c",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C1",
+      "claim": "The hippocampal system is critically important in establishing episodic memory of both internal and external events within contexts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The hippocampal system appears to be critically important in establishing episodic memory of both internal and external events within contexts as well as spatial memory",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This reflects established scientific consensus about hippocampal function, supported by the broader literature cited in the introduction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d27cd63e-13e6-4b1f-bf31-ec74daeb84b3",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C2",
+      "claim": "The hippocampal system is critically important for spatial memory which enables flexible spatial navigation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The hippocampal system appears to be critically important in establishing episodic memory of both internal and external events within contexts as well as spatial memory, which enables flexible spatial navigation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established scientific knowledge about hippocampal function in spatial navigation, referenced throughout the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "05f02149-d284-444a-a9e1-966a0b89a792",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C3",
+      "claim": "The neuronal substrates that function across different memories in the hippocampal system are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the neuronal substrates that function across different memories in the hippocampal system are poorly understood.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents a gap in scientific knowledge that motivates the current study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "1e5a05b9-cee0-4f97-96fc-a0ca9344b4a7",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C4",
+      "claim": "The activity patterns of the hippocampal ensemble represent spatiotemporal contexts (journeys) constructed by temporally ordered past, present and expected future places.",
+      "claim_type": "EXPLICIT",
+      "source_text": "I found that the activity patterns of the hippocampal ensemble represent spatiotemporal contexts (journeys) constructed by temporally ordered past, present and expected future places",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the experimental data collected in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "58291444-2656-4e20-a9de-6b5a4c5cb91b",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C5",
+      "claim": "The activity patterns of the hippocampal ensemble represent visually or mnemonically guided non-spatial contexts (task-demands) in tandem with spatiotemporal contexts to form episodes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "I found that the activity patterns of the hippocampal ensemble represent spatiotemporal contexts (journeys) constructed by temporally ordered past, present and expected future places in tandem with visually or mnemonically guided non-spatial contexts (task-demands) to form episodes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the experimental data showing integration of multiple context types.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5d025bae-48ce-4d2c-98b2-d1f055efc976",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C6",
+      "claim": "The hierarchical organization of contexts based on pattern separation and completion enables the hippocampus to play a dual role in spatial navigation and recall of episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This finding therefore suggests that the hierarchical organization of contexts based on pattern separation and completion enables the hippocampus to play a dual role in spatial navigation and recall of episodic memory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the experimental findings about how context organization supports dual hippocampal functions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "295c5886-5c72-488c-abb6-7079673634e6",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C7",
+      "claim": "Hippocampal pyramidal neurons discharge specifically at a certain location in the environment (the 'place field').",
+      "claim_type": "EXPLICIT",
+      "source_text": "During spatial behaviors, hippocampal pyramidal neurons discharge specifically at a certain location in the environment (the 'place field')",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge from prior research (O'Keefe and Dostrovsky, 1971; McNaughton and Morris, 1987; Muller et al., 1987).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f4b88f36-31b5-4740-a02d-9330b7d44d29",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C8",
+      "claim": "Hippocampal neurons function in spatial memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggesting that hippocampal neurons function in spatial memory",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an established interpretation of place field findings from the cited literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f0f2a17d-e3d2-4992-8278-a06d6f39839d",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C9",
+      "claim": "Episodic memory provides a record of past experiences in relation to a broad range of materials.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, episodic memory provides a record of past experiences in relation to a broad range of materials",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about episodic memory from Wood et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8c357211-cf6c-4844-9c30-98d3c2014908",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C10",
+      "claim": "Episodic memory is structured by spatial, temporal, and non-spatial contexts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and is structured by spatial, temporal, and non-spatial contexts",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge from Tulving, 1983 about the structure of episodic memory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "99568a7b-9d2b-454a-8475-3884f05d63d9",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C11",
+      "claim": "The place field of a given neuron changes (remapping) relative to spatial context characterized by environmental features.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the place field of a given neuron changes (remapping) relative to three different contexts: spatial context characterized by environmental features",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies (Bostock et al., 1991; Kentros et al., 1998).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8b0eed60-909f-4dcd-a123-3b923911f2c8",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C12",
+      "claim": "The place field of a given neuron changes (remapping) relative to spatiotemporal context (journey) affected by the experienced origin and expected destination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "spatiotemporal context (journey) affected by the experienced origin and expected destination",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies (Frank et al., 2000; Wood et al., 2000).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "ee70e85a-4597-4260-bd61-7fa0a1ed06f9",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C13",
+      "claim": "The place field of a given neuron changes (remapping) relative to internally and externally guided non-spatial context (task-demand).",
+      "claim_type": "EXPLICIT",
+      "source_text": "and internally and externally guided non-spatial context (task-demand)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies (Gothard et al., 1996; Anderson and Jeffery, 2003; Smith and Mizumori, 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d6c4ccb9-10c8-4622-86c5-d7db8223f747",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C14",
+      "claim": "During a temporal gap between events, place cells encode successive moments or fire at a specific part of an episode.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, during a temporal gap between events, the place cells encode successive moments or fire at a specific part of an episode",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies (Pastalkova et al., 2008; MacDonald et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f0730696-228a-4211-832a-74e5a1ba38b8",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C15",
+      "claim": "The hippocampal place code is closely related to the 'where' of episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These lines of evidence suggest that the hippocampal place code is not only closely related to the 'where' of episodic memory but also to the 'when and how'.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an inference drawn from the cited literature about the relationship between place coding and episodic memory components.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "b876dd1a-1694-45c3-a76b-4b7bffda0a2c",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C16",
+      "claim": "The hippocampal place code is closely related to the 'when and how' of episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These lines of evidence suggest that the hippocampal place code is not only closely related to the 'where' of episodic memory but also to the 'when and how'.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an inference drawn from the cited literature about temporal and procedural aspects of episodic memory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "2aceaa7d-a1b4-490e-8f2d-f5926da13b28",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C17",
+      "claim": "Rats were trained to navigate through a figure '8' maze in a continuous task that incorporated both visual discrimination and two types of memory-guided responses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rats were trained to navigate their way through a figure '8' maze in a continuous task that incorporated both visual discrimination and two types of memory-guided responses",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design and behavioral task used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "195d52ab-239f-42c1-9071-99fccdb61f02",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C18",
+      "claim": "Ensemble activity was recorded from a total of 1119 pyramidal cells in the CA1 of the dorsal hippocampus using arrays of 10 extracellular dodecatrodes in five rats.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ensemble activity was recorded from a total of 1119 pyramidal cells in the CA1 of the dorsal hippocampus using arrays of 10 extracellular dodecatrodes (Takahashi and Sakurai, 2005) in five rats running in the maze.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental methodology and sample size.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8b56f5ad-a0dd-4e19-8ee4-4b21d2c2e53f",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C19",
+      "claim": "All rats were familiarized with the task before recording and performed the task with a high level of accuracy (overall: 99 \u00b1 2%).",
+      "claim_type": "EXPLICIT",
+      "source_text": "All rats were familiarized with the task before recording, and performed the task with a high level of accuracy (overall: 99 \u00b1 2%, VD: 99 \u00b1 1%, SA: 97 \u00b1 3%, DA: 99 \u00b1 1% correctly performed [mean \u00b1 SEM]",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This reports behavioral performance data from the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "b5d1228e-24fa-44c3-8285-3bbe7523db2e",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C20",
+      "claim": "The hippocampal place code is influenced by running speed and head direction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Several studies suggest that the hippocampal place code is influenced by running speed and head direction",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This references established findings from prior studies about factors affecting place coding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "e486bf32-f46d-4126-9ea7-4e540fde92aa",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C21",
+      "claim": "Place codes can be changed in terms of firing rates (rate remapping) or both firing rates and location (global/complete remapping).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The place codes could be changed in terms of firing rates (rate remapping) or both firing rates and location (global/complete remapping",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This describes established concepts of remapping types in hippocampal place coding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "2574e0e8-eea9-4ff2-8fb8-cc8af7730122",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C22",
+      "claim": "Different journeys in the same place resulted in place fields similar in locations, but different task-demands caused different firing intensities in those place fields.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Note that different journeys in the same place resulted in place fields similar in locations, but different task-demands caused different firing intensities in those place fields.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the experimental data shown in the rate maps.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "670c43df-a2e4-458e-b352-f1622932ddf0",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C23",
+      "claim": "Changes in both firing location and rates in the place field (global remapping) occurred between the different journeys.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Changes in both firing location and rates in the place field (global remapping) occurred between the different journeys.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the experimental data analysis of place field remapping.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "ee0b2372-874f-416b-9812-c67764948b74",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C24",
+      "claim": "Only changes in the firing rates (rate remapping) occurred between the task-demands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By contrast, only changes in the firing rates (rate remapping) occurred between the task-demands.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the experimental data analysis showing differential remapping patterns.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "9c689bf8-a77c-470f-aa84-6cc99ad44c0d",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C25",
+      "claim": "The spatial representation of the hippocampal CA1 at various points in the maze were dissimilar in both firing location and rate among different journeys, irrespective of either visually or mnemonically guided demands, in a global remapping manner.",
+      "claim_type": "EXPLICIT",
+      "source_text": "although the same prominent environmental features were encountered in the same locations, the spatial representation of the hippocampal CA1 at various points in the maze were dissimilar in both firing location and rate among different journeys, irrespective of either visually or mnemonically guided demands, in a global remapping manner.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the experimental data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "547217d7-339c-4245-9ae8-04e846786c79",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C26",
+      "claim": "Hippocampal pyramidal cells show journey-dependent coding during internally or externally guided goal-directed behaviors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The result supports the view that hippocampal pyramidal cells show journey-dependent coding during internally or externally guided goal-directed behaviors",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This finding from the current data supports prior work by Ferbinteanu et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "17b552ec-db8d-4f7b-842d-a68945065bbc",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C27",
+      "claim": "When rats experienced changes in prominent, non-spatial features with internal and external events (i.e., subtask differences), the hippocampus only modulated the journey-dependent activity by primarily changing the intensity of the firing rates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, when the rats experienced changes in prominent, non-spatial features with internal and external events (i.e., subtask differences), the hippocampus only modulated the journey-dependent activity by primarily changing the intensity of the firing rates.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the experimental data showing task-demand effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "46e0f853-fe6d-410a-b4ba-4b67e906646b",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C28",
+      "claim": "The extent to which the place fields remap is demand-specific in a rate remapping manner.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The latter finding indicates that the extent to which the place fields remap is demand-specific (Smith and Mizumori, 2006) in a rate remapping manner.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This finding from the current data supports and extends prior work by Smith and Mizumori, 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "7d610041-a6ca-4f0f-8e8c-27c1cfba1f33",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C29",
+      "claim": "Neither the journey-dependent nor demand-specific coding was chiefly influenced by the running speed, head direction, or lateral position.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Neither the journey-dependent nor demand-specific coding was chiefly influenced by the running speed, head direction, or lateral position.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the ANCOVA analysis controlling for these behavioral variables.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "3446c0a0-cda3-46db-9bfa-626be814bdce",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C30",
+      "claim": "Even when the given task-demands were different, the classifier could sufficiently predict the journey from the ensemble activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition to the evidence from the place field measurements, even when the given task-demands were different, the classifier could sufficiently predict the journey from the ensemble activity patterns",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the neuronal trajectory classification analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "affdc4db-bca9-4e6c-908e-4264680d5ff8",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C31",
+      "claim": "The journey representation is generalized and non-spatial demand-specific representation is hierarchically ranked at a lower level.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggesting that the journey representation is generalized and that non-spatial demand-specific representation is hierarchically ranked at a lower level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the classification analysis showing differential representation of journey vs. task-demand.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "816ef7d6-bbc2-4a70-96fb-cc8ea5a88724",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C32",
+      "claim": "The neuronal trajectory of the ensemble activity differed enough to classify any trial type.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The neuronal trajectory of the ensemble activity differed enough to classify any trial type",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the neuronal trajectory classification analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "34df6653-d4ea-42f2-af01-e7acffabd547",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C33",
+      "claim": "Prior to its behavioral choice, significant accuracy could be achieved even in a visually-guided situation in which memory-guided decision could not be made.",
+      "claim_type": "EXPLICIT",
+      "source_text": "prior to its behavioral choice, significant accuracy could be achieved even in a visually-guided situation in which memory-guided decision could not be made.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the temporal analysis of classification accuracy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8e6dcf6a-1e35-4137-b114-3a4c1f779694",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C34",
+      "claim": "The neuronal ensemble code for distinguishing trial types in the hippocampal ensemble activity was relatively equal to that for journeys and task-demands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The neuronal ensemble code for distinguishing trial types in the hippocampal ensemble activity was relatively equal to that for journeys and task-demands.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the comparative classification analysis shown in Figure 8.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "ce4820c6-4989-443d-afce-1a1cf430e741",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C35",
+      "claim": "Based not only on externally induced but also internally generated events, the hippocampus processes the combination of journey and task-demand as a single episode.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the results imply that based not only on externally induced but also internally generated events, the hippocampus processes the combination of journey and task-demand as a single episode.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the experimental findings about episodic representation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "6f5d9c31-af8c-41c5-8b2d-2c2953c32281",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C36",
+      "claim": "Hippocampal neurons might convey information related to where an animal is located (place-specific coding).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Previous studies have reported that hippocampal neurons might convey information related to where an animal is located (place-specific coding)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes established findings from multiple cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d80251af-e99e-4fc7-bf9c-cb69a92d9314",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C37",
+      "claim": "Hippocampal neurons might convey information related to where an animal had just been (retrospective coding).",
+      "claim_type": "EXPLICIT",
+      "source_text": "where it had just been (retrospective coding)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes established findings from cited studies (Frank et al., 2000; Wood et al., 2000; Ferbinteanu and Shapiro, 2003; Ferbinteanu et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8723aa8d-657e-4d1d-9689-e10726aa0028",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C38",
+      "claim": "Hippocampal neurons might convey information related to where an animal is about to go next (prospective coding).",
+      "claim_type": "EXPLICIT",
+      "source_text": "where it is about to go next (prospective coding)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes established findings from cited studies (Frank et al., 2000; Wood et al., 2000; Ferbinteanu and Shapiro, 2003; Ainge et al., 2007a; Ferbinteanu et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "caa75671-6c65-4f6f-bcb6-48c7ca0f460b",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C39",
+      "claim": "Hippocampal neurons might convey information related to what demand an animal currently faces (demand-specific coding).",
+      "claim_type": "EXPLICIT",
+      "source_text": "and what demand it currently faces (demand-specific coding)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes established findings from cited studies (Gothard et al., 1996; Anderson and Jeffery, 2003; Smith and Mizumori, 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8a811eed-d746-4044-ad4e-3653d8ce9657",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C40",
+      "claim": "The relationship among place-specific, retrospective, prospective, and demand-specific coding in the hippocampal neuronal ensemble codes was unclear in previous studies because each piece of information was independently examined.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the relationship among them in the hippocampal neuronal ensemble codes was unclear in these studies because each piece of information was independently examined.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This identifies a gap in prior research that the current study addresses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "1f88be2c-5807-49f4-a2a5-206afac70413",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C41",
+      "claim": "All of the information (place-specific, retrospective, prospective, and demand-specific) can be simultaneously preserved in the hippocampal output to form episodes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "I report that all of this information can be simultaneously preserved in the hippocampal output to form episodes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the current study's experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "73cb8415-c1a9-4436-a7f5-880295335d81",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C42",
+      "claim": "The information for journey and task-demand is not horizontally but hierarchically organized.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The information for journey and task-demand is not horizontally but hierarchically organized",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the experimental findings about the organization of information.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5c38be55-289f-48f1-b8c4-17cb3a47456d",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C43",
+      "claim": "Expected future events in the hippocampus can trigger episode separation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "expected future events in the hippocampus can trigger episode separation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the findings about prospective coding and episode formation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "49900c26-22da-493b-8c7f-d9cb01f1bdd0",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C44",
+      "claim": "Journey and task-demand can be considered to be spatiotemporal and non-spatial contexts, respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "From the viewpoint of context, journey and task-demand can be considered to be spatiotemporal and non-spatial contexts, respectively.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a conceptual interpretation of the experimental findings in terms of context theory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "dc38e4f6-927a-4d14-b858-44bd780e7ae6",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C45",
+      "claim": "The hierarchical organization of spatiotemporal and non-spatial contexts in the hippocampal episodic code, which is based on the context version of pattern separation and completion through the remapping of place fields, enables flexible spatial navigation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the hierarchical organization of spatiotemporal and non-spatial contexts in the hippocampal episodic code, which is based on the context version of pattern separation and completion through the remapping of place fields, not only enables flexible spatial navigation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about functional implications drawn from the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "474a8e36-23c7-4229-a4bb-b38e6ffbb9d0",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C46",
+      "claim": "The hierarchical organization of spatiotemporal and non-spatial contexts in the hippocampal episodic code contributes to the recall of episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but also contributes to the recall of episodic memory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about functional implications drawn from the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "906a1ac4-e3a0-4153-bc1c-0f4c1e4f9c26",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C47",
+      "claim": "Five male Wister rats (300\u2013400 g) were housed individually in cages (20 \u00d7 25 \u00d7 23 cm).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Five male Wister rats (300\u2013400 g) were housed individually in cages (20 \u00d7 25 \u00d7 23 cm).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental subjects and housing conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "39a8e3e0-1c94-4511-a55c-7cfe21701392",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C48",
+      "claim": "All rats were implanted with a custom-made microdrive with 10 dodecatrodes and 2 reference electrodes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All of them were implanted with a custom-made microdrive with 10 dodecatrodes and 2 reference electrodes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the surgical procedure and recording equipment used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "001eee97-7697-405f-b240-a48c6a50da3b",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C49",
+      "claim": "The rats were kept at 80% of free-feeding body weight.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The rats were kept at 80% of free-feeding body weight.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental protocol for maintaining motivation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "4ccfea27-84fd-4bf0-b776-d432ab0c6191",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C50",
+      "claim": "All rats were maintained on a 12-hr light/12-hr dark schedule.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All rats were maintained on a 12-hr light/12-hr dark schedule.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the housing conditions for the experimental subjects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "9cbbfb3a-fed8-4b25-b099-a366965b270f",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C51",
+      "claim": "Testing occurred in the light phase.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Testing occurred in the light phase.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the timing of experimental sessions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "45c177f8-3022-408b-97a9-0ad4f39b086a",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C52",
+      "claim": "Two stimulation electrodes were inserted into the MFB in the right lateral hypothalamus (AP 2.5, ML 1.0, DV 9.5).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Under isoflurane anesthesia, two stimulation electrodes were inserted into the MFB in the right lateral hypothalamus (AP 2.5, ML 1.0, DV 9.5)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the surgical procedure for electrode implantation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "61052adc-6258-49d8-b129-d0db6eee4bda",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C53",
+      "claim": "A custom-made microdrive with 10 independently movable 12-wire bundled dodecatrodes and 2 tetrodes were fixed to the skull above the left hippocampus (AP 3.8, ML 3.0, DV 0.5).",
+      "claim_type": "EXPLICIT",
+      "source_text": "a custom-made microdrive with 10 independently movable 12-wire bundled dodecatrodes and 2 tetrodes were fixed to the skull above the left hippocampus (AP 3.8, ML 3.0, DV 0.5).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the surgical procedure for recording electrode implantation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d00f337b-b5b9-4a35-802e-d800a8c501b8",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C54",
+      "claim": "The 10 dodecatrodes were lowered into the hippocampal CA1 pyramidal layer within 2 weeks of surgery.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The 10 dodecatrodes were lowered into the hippocampal CA1 pyramidal layer within 2 weeks of surgery.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the post-surgical procedure for positioning recording electrodes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "b13c7817-6fa5-499b-ae30-1d2767cb0576",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C55",
+      "claim": "The data from all channels of the dodecatrodes were unity-gain buffered, filtered (600 Hz\u20136 kHz), amplified (gain = 5000) and continuously sampled at 25 kHz.",
+      "claim_type": "EXPLICIT",
+      "source_text": "During the physiological recording, the data from all channels of the dodecatrodes were unity-gain buffered, filtered (600 Hz\u20136 kHz), amplified (gain = 5000) and continuously sampled at 25 kHz",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the technical specifications of the recording system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "a15309e2-121a-41fb-a2a9-f3fa67e6ba4c",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C56",
+      "claim": "Two sets of small red and green light-emitting diodes (10-cm separation), mounted above the headstage amplifier, were recorded by an overhead digital video camera and sampled at 60 Hz to track the rat's head position and direction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two sets of small red and green light-emitting diodes (10-cm separation), mounted above the headstage amplifier, were recorded by an overhead digital video camera and sampled at 60 Hz to track the rat's head position and direction.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method for tracking animal position and orientation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "1f6d5dca-43fd-4c71-a063-b09f0b35398f",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C57",
+      "claim": "The neuronal data were recorded on a single recording day for each rat.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The neuronal data were recorded on a single recording day for each rat.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the temporal structure of data collection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "abe60b7c-350f-4c0a-923d-4e836fa3d759",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C58",
+      "claim": "The optimal MFB stimulation consisted of a train of 2 ms wide, 100\u2013200 \u03bcA, biphasic current pulses, delivered at 100 Hz for 200 ms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The optimal MFB stimulation consisted of a train of 2 ms wide, 100\u2013200 \u03bcA, biphasic current pulses, delivered at 100 Hz for 200 ms.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the parameters used for reward stimulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "aab07374-189e-4da6-b500-a7a21c1cd8a8",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C59",
+      "claim": "In the correct laps, the optimal MFB simulation was obtained 5\u201310 times in the reward zone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the correct laps, the optimal MFB simulation was obtained 5\u201310 times in the reward zone.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the reward schedule used in the experiment.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f4847f2f-b7fa-43ad-8856-1bc01c5e92cb",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C60",
+      "claim": "The neuronal recordings during the stimulation period were removed prior to analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The neuronal recordings during the stimulation period were removed prior to analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a data preprocessing step to avoid stimulation artifacts.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "c3d73aab-6dea-47e8-b9ae-2a3c925548af",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C61",
+      "claim": "The task was performed under dim light to prevent the rats from accessing unnecessary distal room cues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To prevent the rats from accessing unnecessary distal room cues, the task was performed under dim light.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes an experimental control to limit visual cues.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "51afbf98-f1e8-43d7-b6db-57e491fdd430",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C62",
+      "claim": "In the VD subtask, one of the two visual cues (LED-lights at the right and left corners) was illuminated randomly; the visual cue at the decision point of the maze indicated which direction to turn to receive reward signals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the VD subtask, one of the two visual cues (LED-lights at the right and left corners; Figure 1A) was illuminated randomly; the visual cue at the decision point of the maze (Figure 1A, DP) indicated which direction to turn to receive reward signals.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the task structure for the visual discrimination subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "fab4ae67-a9e1-40bd-b9b9-008055a5e5b0",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C63",
+      "claim": "The rats did not access the visual cue until reaching the decision point because the height of the walls of the maze (20 cm) was much higher than the level of the rat's eyes (\u223c5 cm) and the rats did not stand up during the experiment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The rats did not access the visual cue until reaching the decision point (Figure 1A) because the height of the walls of the maze (20 cm) was much higher than the level of the rat's eyes (\u223c5 cm) and the rats did not stand up during the experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This describes an experimental control and inference about when visual information was available.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8fe50277-e3e7-43c7-85d6-0b29d4f76460",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C64",
+      "claim": "In the SA subtask, both LEDs were illuminated so that the rats could not rely on the visual cue.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the SA subtask, both LEDs were illuminated so that the rats could not rely on the visual cue.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the task structure for the spatial alternation subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "b7ea0be3-e06e-4a29-a6d8-b003e3e108c7",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C65",
+      "claim": "In the SA subtask, the rat had to choose a direction opposite to the previous one.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Instead, the rat had to choose a direction opposite to the previous one.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the behavioral requirement for the spatial alternation subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5146ace1-39cd-4d20-9b79-3660c4432328",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C66",
+      "claim": "Those alternating behaviors spontaneously occurred and the rats easily achieved the threshold of 80% decisions correct for >20 laps (\u223c1 to 3 days).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Those alternating behaviors spontaneously occurred and the rats easily achieved the threshold of 80% decisions correct for >20 laps (\u223c1 to 3 days).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the behavioral performance and training duration for the SA subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "23f298c5-987e-44c6-a847-bb940b6ad59f",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C67",
+      "claim": "The DA subtask was almost identical to the SA subtask, except that a 5-s delay period was incorporated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The DA subtask was almost identical to the SA subtask, except that a 5-s delay period was incorporated.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the task structure for the delayed alternation subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "356a629b-3539-4e5a-8d29-97a214af0410",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C68",
+      "claim": "During the delay period, a barrier appeared for 5 s, 20 cm ahead of the entrance to the central stem.",
+      "claim_type": "EXPLICIT",
+      "source_text": "During the delay period, a barrier appeared for 5 s, 20 cm ahead of the entrance to the central stem",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the implementation of the delay in the DA subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "4d8bcdbd-2c55-4b98-81b0-77b2bda5e88c",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C69",
+      "claim": "Spike sorting was performed offline using an automatic spike sorting software program with KlustaKwik and FastICA called 'ICSort'.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Spike sorting was performed offline using an automatic spike sorting software program with KlustaKwik (Harris et al., 2000) and FastICA (Hyvarinen, 1999) called 'ICSort'",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational method used for spike sorting.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "429608e6-c7b0-4438-a064-7cefb4d8e3a7",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C70",
+      "claim": "Putative pyramidal cells were distinguished from putative fast spiking interneurons by the spike width (0.4 ms) and the average firing rate (5 Hz).",
+      "claim_type": "EXPLICIT",
+      "source_text": "After spike sorting, putative pyramidal cells were distinguished from putative fast spiking interneurons by the spike width (0.4 ms) and the average firing rate (5 Hz).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the criteria used for cell type classification.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "3e9358cc-2a22-4b6f-8335-920145f53365",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C71",
+      "claim": "During immobility periods, including delay periods, hippocampal activity is not place-specific.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is well known that during immobility periods, including delay periods, hippocampal activity is not place-specific",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge from cited studies (McNaughton et al., 1983; Pastalkova et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "58531b1d-1a5d-449d-a78f-567461b13502",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C72",
+      "claim": "Spikes during immobility periods in the maze were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, spikes during immobility periods in the maze were excluded.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a data preprocessing step based on the knowledge about immobility periods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "50fc1a4a-d88b-44d6-ab82-6617891ae9dd",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C73",
+      "claim": "More spatially specific firing leads to a larger value for spatial information measurement.",
+      "claim_type": "EXPLICIT",
+      "source_text": "More spatially specific firing leads to a larger value for this measurement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the interpretation of the spatial information metric.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "0c9bfb44-ceb0-4a5f-a66b-95cf9b975c4d",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C74",
+      "claim": "For each cell, a one-way ANCOVA was performed between different journeys within a given subtask or between different task-demands within a journey as independent (fixed) variables, firing rate as the dependent measure, and with running speed, head direction and lateral position as covariates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For each cell, a one-way ANCOVA was performed between different journeys within a given subtask or between different task-demands within a journey as independent (fixed) variables, firing rate as the dependent measure, and with running speed, head direction and lateral position as covariates",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the statistical analysis method used to control for behavioral variables.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "648e8bb9-5e4d-417b-a9ac-e66e941019cb",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C75",
+      "claim": "The spatial similarity of the place fields between two trial types or repeated exposures was calculated using the spatial correlation between the maps.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The spatial similarity of the place fields between two trial types or repeated exposures was calculated using the spatial correlation between the maps",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method for quantifying spatial similarity of place fields.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "e3a15137-07bd-4c90-b6a4-94b799bea8f7",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C76",
+      "claim": "Changes in the firing rates between two trial types were expressed by calculating a modified difference/sum score.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Changes in the firing rates between two trial types were expressed by calculating a modified difference/sum score",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method for quantifying rate changes between conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "becf7c2d-bb22-4f68-a05d-9166e5465966",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C77",
+      "claim": "The dynamics of the neuronal ensemble activity were analyzed as a trajectory through a state space (neuronal trajectory).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The dynamics of the neuronal ensemble activity were analyzed as a trajectory through a state space (neuronal trajectory",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the analytical approach used to examine ensemble activity patterns.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "152dc275-dc04-4b80-85b1-24b740fcf788",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C78",
+      "claim": "Principal component analysis (PCA) was used as a dimension-reduction technique to visualize the neuronal trajectory in three-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the neuronal trajectory is in n-dimensional space, to visualize the neuronal trajectory in three-dimensional space, principal component analysis (PCA) was used as a dimension-reduction technique.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method used for dimensionality reduction and visualization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5105ed44-4ec6-4cfc-baf7-4f907fad3c69",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C79",
+      "claim": "The distances between the trajectories were measured as Euclidian distances between the corresponding locations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The distances between the trajectories were measured as Euclidian distances between the corresponding locations.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the metric used for comparing neuronal trajectories.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "3900bece-7d1a-469f-a44c-3812f2d6cfd1",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C80",
+      "claim": "The classification was performed for individual laps based on the distances to the mean lap trajectories.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The classification was performed for individual laps based on the distances to the mean lap trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the classification scheme used for trajectory analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f4be1ff2-b3c4-42ae-8d9c-07b09300b7dd",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C81",
+      "claim": "In all of the distance classifications, the mean trajectories were calculated excluding the test trajectory (i.e., leave-one-out cross validation).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In all of the distance classifications, the mean trajectories were calculated excluding the test trajectory (i.e., leave-one-out cross validation).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the cross-validation procedure used to avoid overfitting.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "238305ad-0656-4db4-8da0-f0810acb1cd2",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C82",
+      "claim": "The rats could make a decision as soon as the visual cue was detected.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The rats could make a decision as soon as the visual cue was detected.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the behavioral capability of the rats in the VD subtask.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5c7f68f6-fb48-4bb2-81c1-1a61f0b927f0",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C83",
+      "claim": "The exact point where the rats mentally detect the visual cue cannot be estimated because measuring the awareness of the visual cue for rats is difficult to perform.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the exact point where the rats mentally detect the visual cue cannot be estimated because measuring the awareness of the visual cue for rats is difficult to perform.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges a methodological limitation in determining the precise timing of cue detection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f1a87861-a277-4a5c-9d50-37c85f0ba685",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C84",
+      "claim": "The turn onset was defined as the last location when the rat was in the central stem or the upper junction of the maze and when the angular velocity was below a threshold value (0.12 rev/s).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The turn onset was defined as the last location when the rat was in the central stem or the upper junction of the maze (i.e., DP in Figure 1A) and when the angular velocity was below a threshold value (0.12 rev/s)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the operational definition used to identify behavioral decision points.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "a5d934eb-679f-42cf-9d37-6487fc384427",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C85",
+      "claim": "These locations of turn onset were considered the signature of the rats' behavioral decision in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These locations of turn onset were considered the signature of the rats' behavioral decision in the analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretive assumption about what turn onset represents behaviorally.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "48e2ec9a-d5d6-4792-97b7-54fd9225b6af",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C86",
+      "claim": "The recordings from a given dodecatrode were included in the data analysis if its deepest position was under the CA1 pyramidal cell layer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The recordings from a given dodecatrode were included in the data analysis if its deepest position was under the CA1 pyramidal cell layer.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the anatomical criterion for including recording sites in the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "fa4cf69b-da5c-479e-b7ba-2851ade2f3e2",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C87",
+      "claim": "Based on the mean right-to-left/left-to-right trajectories in any one of three subtasks, the classifier outputs could predict the corresponding individual journeys within the other remaining two subtasks at a high level of accuracy at the ensemble level.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As expected, based on the mean right-to-left/left-to-right trajectories in any one of three subtasks, the classifier outputs could predict the corresponding individual journeys within the other remaining two subtasks at a high level of accuracy at the ensemble level",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the generalization analysis showing cross-subtask prediction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "128fc534-cb07-4c0e-ba7f-a0976311d0e9",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C88",
+      "claim": "The hippocampal ensemble code contains sufficient information concerning journey, task-demand and trial type.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The above results suggest that hippocampal ensemble activity contains sufficient information concerning journey, task-demand and trial type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the classification analysis results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "273404d1-d215-4bc0-8fb5-b31561338538",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C89",
+      "claim": "The average output of the binary classifiers showed a high level of accuracy at the ensemble level for all categories (journey, task-demand, and trial type).",
+      "claim_type": "EXPLICIT",
+      "source_text": "For all categories, the average output of the binary classifiers showed a high level of accuracy at the ensemble level",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This summarizes the classification performance across different comparison types.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "13b60031-f262-4bf2-ac78-23c8f5679c21",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C90",
+      "claim": "The results obtained showing the similarities of the place fields may imply the pattern completion/generalization of the journey represented in the hippocampal ensemble activity in the spatial domain.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The results obtained showing the similarities of the place fields may imply the pattern completion/generalization of the journey represented in the hippocampal ensemble activity in the spatial domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the computational mechanism underlying the observed place field similarities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "16c2f4ca-c4a6-4978-ac65-9a7d74a64f93",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C91",
+      "claim": "Knowing the neuronal trajectories for right-to-left and left-to-right journeys in one subtask should allow classification into right-to-left and left-to-right journeys in the other subtasks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If this assumption is correct, knowing the neuronal trajectories for right-to-left and left-to-right journeys in one subtask should allow classification into right-to-left and left-to-right journeys in the other subtasks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction derived from the pattern completion hypothesis that was then tested.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "07c0a6ed-c200-4622-bae3-6072c12bcfcc",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C92",
+      "claim": "All of the information (place-specific, retrospective, prospective, and demand-specific) can be simultaneously preserved in the hippocampal output.",
+      "claim_type": "IMPLICIT",
+      "source_text": "I report that all of this information can be simultaneously preserved in the hippocampal output to form episodes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the successful classification of trial types which requires integration of multiple information types.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "ae079d01-7ade-4d31-97fb-9744d74c14da",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C93",
+      "claim": "The hippocampus processes the combination of journey and task-demand as a single episode based on both externally induced and internally generated events.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Thus, the results imply that based not only on externally induced but also internally generated events, the hippocampus processes the combination of journey and task-demand as a single episode.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the finding that trial types can be distinguished even before external cues are available.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "afc845be-4b51-4b8d-8f06-3254b9c190d5",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C94",
+      "claim": "Pattern separation and completion are computational mechanisms proposed by Marr for hippocampal function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "on the basis of the pattern separation and completion proposed by Marr (Marr, 1969)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This references Marr's theoretical framework for hippocampal computation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "94de8736-5175-4ead-ba84-0759221b21fa",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C95",
+      "claim": "The context version of pattern separation and completion occurs through the remapping of place fields.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which is based on the context version of pattern separation and completion through the remapping of place fields",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of how pattern separation/completion manifests in the observed remapping phenomena.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d810c2fc-da8d-4915-9a83-0c8c8b4aa0ad",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C96",
+      "claim": "The hippocampus plays a dual role in spatial navigation and recall of episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "enables the hippocampus to play a dual role in spatial navigation and recall of episodic memory",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a functional interpretation of the findings about hierarchical context organization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d3c642b8-fb34-4ccf-9c3a-aa8cdf093e0c",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C97",
+      "claim": "There have been two frameworks suggested for the principal role of the hippocampus in memory: spatial memory and episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There have been two frameworks suggested for the principal role of the hippocampus in memory: spatial memory and episodic memory",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes two major theoretical frameworks from the cited literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "26262b0d-c76d-40b9-af38-42ebcdee4554",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C98",
+      "claim": "The proportion of place cells showing significantly different firing rates between different journeys within a given subtask was analyzed when running speed, head direction and lateral position were taken into account.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The proportion of place cells showing significantly different firing rates between different journeys within a given subtask and between different task-demands within a journey when running speed, head direction and lateral position were taken into account.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the analysis approach shown in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d450a830-d94b-4c1f-a41f-fbf32b089318",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C99",
+      "claim": "The same right-to-left/left-to-right journey produces a similar neuronal trajectory at the ensemble level.",
+      "claim_type": "IMPLICIT",
+      "source_text": "As expected from the place field properties, the same right-to-left/left-to-right journey produces a similar neuronal trajectory at the ensemble level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the place field analysis and trajectory classification results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "86f23bb9-49b3-4c07-8f91-fb2e2a9e23ab",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C100",
+      "claim": "The trajectories are shifted between the task-demands in certain spaces, thereby generalizing a journey over task-demands.",
+      "claim_type": "IMPLICIT",
+      "source_text": "However, the trajectories are shifted between the task-demands in certain spaces (PC2 in this schematic), thereby generalizing a journey over task-demands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the rate remapping findings and trajectory analysis showing task-demand effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "0f935c30-e00c-4d5e-b054-ffe190c17a74",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C101",
+      "claim": "When the future direction changes from the expectation at the decision point, the trajectory shifts to the corresponding one.",
+      "claim_type": "IMPLICIT",
+      "source_text": "When the future direction changes from the expectation at the decision point, the trajectory shifts to the corresponding one (red dashed lines, VD2, VD4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the trajectory analysis in the VD subtask where cues can change expectations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5d25bcf5-7ae9-4795-a2e0-aa23997ccf09",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C102",
+      "claim": "The trajectory shift can be triggered not only by external events (the light-cues) but also by internal events (expected future direction) before the behavioral choices.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The trajectory shift can be triggered not only by external events (the light-cues) but also by internal events (expected future direction) before the behavioral choices",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the finding that trajectories diverge before behavioral choice points even in memory-guided tasks.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "cd7380a2-195a-4781-bc54-27da42c2f7d4",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C103",
+      "claim": "The average accuracy for each rat was significantly higher than chance at the respective specific locations for trial type classification.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The average accuracy for each rat was significantly higher than chance at the respective specific locations.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical finding from the classification analysis shown in Figure 7.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "2523418d-666a-4b50-9f36-9e4a9efbac6a",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C104",
+      "claim": "The central stem of the maze was the common running route among the different journeys within a given subtask.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because the central stem of the maze was the common running route among the different journeys within a given subtask",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a feature of the experimental design relevant to the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "7c074d54-4fa7-4852-9565-0d62da5c80d7",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C105",
+      "claim": "The region of interest (ROI) was set at the central stem for similarity analyses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the region of interest (ROI) was set at the region highlighted in the green shaded box.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the spatial region selected for quantitative analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "3d457793-775d-431f-b0b6-596d633df122",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C106",
+      "claim": "Laps containing errors of cue interpretation were excluded from the analyses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Laps containing errors of cue interpretation were excluded from the following analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a data preprocessing step to focus on correct performance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "de82e4e7-d5c4-461c-821c-bfe695797926",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C107",
+      "claim": "The low rate cells (<0.1 Hz) were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The low rate cells (<0.1 Hz) were excluded.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a criterion for excluding cells with insufficient activity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "eec8ad48-a105-441b-ade8-7741df308413",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C108",
+      "claim": "Only cells identified as pyramidal were used in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Only cells identified as pyramidal were used in the analyses outlined below.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the cell type selection criterion for analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "c4bc8332-5799-4ad1-b5da-a534f9dde8ad",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C109",
+      "claim": "The recordings were included in the data analysis if sharp wave ripple events in the LFP in the corresponding dodecatrode were identified during the immobility period.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The recordings were included in the data analysis if sharp wave ripple events in the LFP in the corresponding dodecatrode were identified during the immobility period.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a criterion for verifying proper electrode placement in CA1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "6737a609-6674-4870-ae84-5332b27a2f11",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C110",
+      "claim": "The number of possible journeys in the VD subtask was twice that of the other subtasks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The number of possible journeys in the VD subtask was twice that of the other subtasks.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a feature of the experimental design related to the VD subtask structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "3c0e7b2f-5c24-43f7-9667-04fc6b1b67ed",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C111",
+      "claim": "10 laps of the VD subtask were interpolated between the SA and DA subtasks to increase the sample size for the VD subtask for analysis and to clearly distinguish the behaviorally similar SA and DA subtasks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, to increase the sample size for the VD subtask for analysis, and to clearly distinguish the behaviorally similar SA and DA subtasks, 10 laps of the VD subtask were interpolated between the SA and DA subtasks.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This explains the rationale for the specific task sequence design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "2504a7f6-2ef1-4635-9c27-1ca55bf7b7a2",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "claim_id": "C112",
+      "claim": "The rats achieved a 95% correct decision rating from the beginning of the continuous task.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The rats achieved a 95% correct decision rating from the beginning of the continuous task.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This reports the behavioral performance level during recording sessions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "944ba808-2e56-4e76-8341-4b0f21afd21b",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The experimental design and methodology are well-documented with appropriate sample sizes (5 rats, 1119 pyramidal cells), proper surgical procedures, validated recording equipment, and high behavioral performance (99\u00b12% accuracy). The methods section provides sufficient detail for reproducibility including electrode specifications, recording parameters, and behavioral training protocols.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "255c3515-af34-4608-856e-41bc50ba92ae",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The finding that journeys produce global remapping while task-demands produce rate remapping is well-supported by multiple lines of evidence including place field analysis, ANCOVA controlling for behavioral confounds (running speed, head direction, lateral position), and spatial/rate similarity measurements. The differential remapping patterns are consistent across analyses and properly controlled for alternative explanations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "7d577025-3df6-4544-bb94-a28567cfb31f",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The hierarchical organization of journey over task-demand is supported by cross-subtask generalization analysis showing that journey trajectories learned in one subtask can predict journeys in other subtasks at high accuracy. The use of leave-one-out cross-validation and distance-based classification provides robust evidence for pattern completion/generalization of journey representations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8230dc8f-c6ee-43f6-9357-1f9e99df7f3b",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The finding that neuronal trajectories can distinguish trial types (episodes) with accuracy equal to journey and task-demand classification is supported by systematic binary classification analysis with proper statistical testing (binomial test, p<0.001). The temporal analysis showing significant accuracy before behavioral choice even in visually-guided conditions provides strong evidence for prospective coding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "ded9b073-ab86-4ab1-9925-4e25eda95964",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The main finding that hippocampal ensembles simultaneously represent spatiotemporal contexts (journeys) and non-spatial contexts (task-demands) to form episodes is well-supported by converging evidence from place field remapping, trajectory classification, and temporal dynamics. The integration of place-specific, retrospective, prospective, and demand-specific information is demonstrated through multiple analytical approaches.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "576ed022-cb8d-4fa6-af14-4a79fe67b805",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the hierarchical organization of contexts is supported by the experimental data, the broader claim that this enables dual roles in spatial navigation and episodic memory recall is largely inferential. The study demonstrates coding properties but does not directly test functional contributions to navigation or memory recall through causal manipulations or behavioral assays that specifically probe these functions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "a709657f-1731-4dd2-81d9-7bab91d88488",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The computational and statistical methods are appropriate and well-described. Spike sorting using ICSort with KlustaKwik and FastICA is validated, cell classification criteria are standard, ANCOVA properly controls for behavioral covariates, and the neuronal trajectory analysis with PCA and leave-one-out cross-validation follows established practices. The exclusion of immobility periods is justified by prior literature.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8c18404a-cae2-4469-a88d-902e47e7c7e8",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The inference about when rats detect visual cues and make decisions relies on indirect behavioral measures (turn onset based on angular velocity threshold). While the authors acknowledge the limitation that exact cue detection timing cannot be measured, this introduces uncertainty in interpreting the temporal dynamics of neural activity relative to decision-making, particularly for claims about prospective coding in the VD subtask.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "47f8340b-1deb-4bc4-a373-c9497840127e",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The behavioral task design is well-controlled with appropriate measures to isolate different cognitive demands. The use of MFB stimulation as reward, dim lighting to control visual cues, wall height to restrict cue visibility, and the interpolation of VD trials to balance sample sizes are all justified. High performance (95-99% accuracy) and exclusion of error trials ensure data quality.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5bf501d3-9c5d-4744-966c-1b13e79e785d",
+      "content_id": "221fbe1a-0d09-43ab-b0b0-3f99f05b3da7",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The background claims about hippocampal function, place cells, episodic memory, and remapping are well-established in the literature and properly cited. The identification of the knowledge gap (C3, C40) regarding how different types of information are integrated in hippocampal ensembles appropriately motivates the current study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "cd28c869-a194-486d-907c-4c3a4002add9",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raised major concerns about controlling for behavioral confounds (location, speed, head direction) when claiming differential firing patterns on the maze stem. The initial ANCOVA analysis (C29, C74, C98) was deemed insufficient, as reviewers noted 'nearly all the examples are taken from areas of the maze stem at the beginning or end of the stem where the animal's behavior, location, and direction of movement clearly differ' and feared 'the ANCOVAs are not detecting this confound.' They recommended restricting analyses to the central portion of the maze stem, indicating uncertainty about whether journey-dependent and task-demand coding claims are adequately supported by current evidence.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "4b589f44-6376-407f-9ce2-d42185d71afa",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers found the generalization analysis and hierarchical organization claims difficult to evaluate due to presentation issues. They stated 'the description of generalization is difficult to follow' and 'Figure 7 is hard to interpret,' noting that while 'the premise is understandable \u2013 that knowing the R-L and L-R neuronal trajectories in one task allows classification into R-L and L-R for the other tasks...the figure does not aid that understanding.' They requested additional analysis comparing classification ability across trajectories, tasks, and trial types, suggesting the evidence for pattern completion/generalization and hierarchical organization requires clearer demonstration.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers requested 'analysis and discussion of the relative ability to classify into trajectories (L-R vs R-L) vs into tasks (VD, SA, DA) vs into specific trial types (i.e., task and trajectory information combined).' While the claims report high classification accuracy across categories, reviewers' request for comparative analysis suggests they found the evidence insufficient to fully support claims about the relative strength and equality of neuronal codes for distinguishing different types of information. The underlying concern about behavioral confounds also affects confidence in these classification results.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5c3ff09e-dbf9-489c-afe2-d485282fda20",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These high-level interpretive claims about hierarchical organization, episodic coding, and dual hippocampal function depend on the validity of the underlying journey-dependent and task-demand findings. Since reviewers expressed major concerns about confounding variables that 'could undermine the conclusions' and requested substantial reanalysis with spatial restrictions, the broader theoretical claims about hierarchical context organization and episodic memory remain uncertain pending resolution of the methodological issues. Reviewers acknowledged the paper 'could be useful and important' but required 'additional analyses' before accepting these interpretations.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "acac5920-57ee-4ee4-a122-79240ce1e2d2",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims represent established background knowledge from the literature about hippocampal function, place cells, episodic memory, remapping, and various coding types. Reviewers did not challenge these foundational concepts and instead cited relevant work (e.g., 'see, for example, Wood et al., 2000'), indicating acceptance of this established scientific knowledge as the basis for the current study.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "75fec748-f36e-42b4-914a-da9d45308a90",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These methodological and procedural claims describe the experimental design, recording techniques, behavioral training, and data preprocessing steps. Reviewers did not challenge the basic methodology or behavioral performance, focusing instead on the need for additional statistical controls and spatial restrictions in the analysis phase. The absence of criticism of these foundational methods indicates implicit acceptance.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "fe91db24-0917-4696-9a8c-468f329074cc",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers did not object to the analytical methods themselves (ANCOVA, spatial correlation, trajectory analysis, PCA), they expressed concern that the ANCOVA implementation was insufficient and that the spatial region of analysis (ROI) needed restriction. The statement that 'somehow the ANCOVAs are not detecting this confound' suggests the statistical approach may be inadequately applied rather than fundamentally flawed, requiring methodological refinement rather than replacement.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "bb731393-de3b-403b-9118-7aabd21c4029",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims about place field properties, trajectory similarities, and shifts between conditions are subject to the same concerns about behavioral confounds raised by reviewers. Since the examples in Figure 3 were criticized for being 'taken from areas of the maze stem at the beginning or end of the stem where the animal's behavior, location, and direction of movement clearly differ,' the validity of observations about trajectory shifts and rate remapping patterns remains uncertain until analyses are restricted to appropriate spatial regions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "9ebf18f9-c551-444b-8f7a-59b6e4251d1c",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R9",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims identify gaps in prior research that motivate the current study. Reviewers acknowledged the paper addresses an important question and 'could be useful and important,' implicitly supporting the premise that understanding how different types of hippocampal coding relate to each other represents a meaningful scientific gap worth investigating.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "5371b25d-dd8e-491b-a6df-bec02b0832cd",
+      "content_id": "e82a73f8-7c6c-4a6d-accf-b007b6767993",
+      "result_id": "R10",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These conceptual interpretations about spatiotemporal and non-spatial contexts, pattern separation/completion mechanisms, and dual hippocampal roles depend on the validity of the empirical findings. Since reviewers raised concerns that could 'undermine the conclusions' and required substantial reanalysis, these theoretical interpretations remain uncertain pending resolution of the methodological issues with the underlying data.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2aceaa7d-a1b4-490e-8f2d-f5926da13b28",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "195d52ab-239f-42c1-9071-99fccdb61f02",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "8b56f5ad-a0dd-4e19-8ee4-4b21d2c2e53f",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "906a1ac4-e3a0-4153-bc1c-0f4c1e4f9c26",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "39a8e3e0-1c94-4511-a55c-7cfe21701392",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "001eee97-7697-405f-b240-a48c6a50da3b",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "4ccfea27-84fd-4bf0-b776-d432ab0c6191",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "9cbbfb3a-fed8-4b25-b099-a366965b270f",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "45c177f8-3022-408b-97a9-0ad4f39b086a",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "61052adc-6258-49d8-b129-d0db6eee4bda",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "d00f337b-b5b9-4a35-802e-d800a8c501b8",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "b13c7817-6fa5-499b-ae30-1d2767cb0576",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "a15309e2-121a-41fb-a2a9-f3fa67e6ba4c",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "1f6d5dca-43fd-4c71-a063-b09f0b35398f",
+      "result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b"
+    },
+    {
+      "claim_id": "670c43df-a2e4-458e-b352-f1622932ddf0",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "ee0b2372-874f-416b-9812-c67764948b74",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "9c689bf8-a77c-470f-aa84-6cc99ad44c0d",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "547217d7-339c-4245-9ae8-04e846786c79",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "17b552ec-db8d-4f7b-842d-a68945065bbc",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "46e0f853-fe6d-410a-b4ba-4b67e906646b",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "7d610041-a6ca-4f0f-8e8c-27c1cfba1f33",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "26262b0d-c76d-40b9-af38-42ebcdee4554",
+      "result_id": "255c3515-af34-4608-856e-41bc50ba92ae"
+    },
+    {
+      "claim_id": "3446c0a0-cda3-46db-9bfa-626be814bdce",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "affdc4db-bca9-4e6c-908e-4264680d5ff8",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "fa4cf69b-da5c-479e-b7ba-2851ade2f3e2",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "128fc534-cb07-4c0e-ba7f-a0976311d0e9",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "273404d1-d215-4bc0-8fb5-b31561338538",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "13b60031-f262-4bf2-ac78-23c8f5679c21",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "16c2f4ca-c4a6-4978-ac65-9a7d74a64f93",
+      "result_id": "7d577025-3df6-4544-bb94-a28567cfb31f"
+    },
+    {
+      "claim_id": "816ef7d6-bbc2-4a70-96fb-cc8ea5a88724",
+      "result_id": "8230dc8f-c6ee-43f6-9357-1f9e99df7f3b"
+    },
+    {
+      "claim_id": "34df6653-d4ea-42f2-af01-e7acffabd547",
+      "result_id": "8230dc8f-c6ee-43f6-9357-1f9e99df7f3b"
+    },
+    {
+      "claim_id": "8e6dcf6a-1e35-4137-b114-3a4c1f779694",
+      "result_id": "8230dc8f-c6ee-43f6-9357-1f9e99df7f3b"
+    },
+    {
+      "claim_id": "cd7380a2-195a-4781-bc54-27da42c2f7d4",
+      "result_id": "8230dc8f-c6ee-43f6-9357-1f9e99df7f3b"
+    },
+    {
+      "claim_id": "1e5a05b9-cee0-4f97-96fc-a0ca9344b4a7",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "58291444-2656-4e20-a9de-6b5a4c5cb91b",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "ce4820c6-4989-443d-afce-1a1cf430e741",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "1f88be2c-5807-49f4-a2a5-206afac70413",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "73cb8415-c1a9-4436-a7f5-880295335d81",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "5c38be55-289f-48f1-b8c4-17cb3a47456d",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "07c0a6ed-c200-4622-bae3-6072c12bcfcc",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "ae079d01-7ade-4d31-97fb-9744d74c14da",
+      "result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964"
+    },
+    {
+      "claim_id": "5d025bae-48ce-4d2c-98b2-d1f055efc976",
+      "result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805"
+    },
+    {
+      "claim_id": "49900c26-22da-493b-8c7f-d9cb01f1bdd0",
+      "result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805"
+    },
+    {
+      "claim_id": "dc38e4f6-927a-4d14-b858-44bd780e7ae6",
+      "result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805"
+    },
+    {
+      "claim_id": "474a8e36-23c7-4229-a4bb-b38e6ffbb9d0",
+      "result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805"
+    },
+    {
+      "claim_id": "94de8736-5175-4ead-ba84-0759221b21fa",
+      "result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805"
+    },
+    {
+      "claim_id": "d810c2fc-da8d-4915-9a83-0c8c8b4aa0ad",
+      "result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805"
+    },
+    {
+      "claim_id": "4d8bcdbd-2c55-4b98-81b0-77b2bda5e88c",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "429608e6-c7b0-4438-a064-7cefb4d8e3a7",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "58531b1d-1a5d-449d-a78f-567461b13502",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "0c9bfb44-ceb0-4a5f-a66b-95cf9b975c4d",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "648e8bb9-5e4d-417b-a9ac-e66e941019cb",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "e3a15137-07bd-4c90-b6a4-94b799bea8f7",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "becf7c2d-bb22-4f68-a05d-9166e5465966",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "152dc275-dc04-4b80-85b1-24b740fcf788",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "5105ed44-4ec6-4cfc-baf7-4f907fad3c69",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "3900bece-7d1a-469f-a44c-3812f2d6cfd1",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "f4be1ff2-b3c4-42ae-8d9c-07b09300b7dd",
+      "result_id": "a709657f-1731-4dd2-81d9-7bab91d88488"
+    },
+    {
+      "claim_id": "fab4ae67-a9e1-40bd-b9b9-008055a5e5b0",
+      "result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8"
+    },
+    {
+      "claim_id": "238305ad-0656-4db4-8da0-f0810acb1cd2",
+      "result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8"
+    },
+    {
+      "claim_id": "5c7f68f6-fb48-4bb2-81c1-1a61f0b927f0",
+      "result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8"
+    },
+    {
+      "claim_id": "f1a87861-a277-4a5c-9d50-37c85f0ba685",
+      "result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8"
+    },
+    {
+      "claim_id": "a5d934eb-679f-42cf-9d37-6487fc384427",
+      "result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8"
+    },
+    {
+      "claim_id": "abe60b7c-350f-4c0a-923d-4e836fa3d759",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "aab07374-189e-4da6-b500-a7a21c1cd8a8",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "f4847f2f-b7fa-43ad-8856-1bc01c5e92cb",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "c3d73aab-6dea-47e8-b9ae-2a3c925548af",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "51afbf98-f1e8-43d7-b6db-57e491fdd430",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "8fe50277-e3e7-43c7-85d6-0b29d4f76460",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "b7ea0be3-e06e-4a29-a6d8-b003e3e108c7",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "23f298c5-987e-44c6-a847-bb940b6ad59f",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "356a629b-3539-4e5a-8d29-97a214af0410",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "3d457793-775d-431f-b0b6-596d633df122",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "6737a609-6674-4870-ae84-5332b27a2f11",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "3c0e7b2f-5c24-43f7-9667-04fc6b1b67ed",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "2504a7f6-2ef1-4635-9c27-1ca55bf7b7a2",
+      "result_id": "47f8340b-1deb-4bc4-a373-c9497840127e"
+    },
+    {
+      "claim_id": "648e9974-ac8d-4dfd-afee-c141311bd09c",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "d27cd63e-13e6-4b1f-bf31-ec74daeb84b3",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "05f02149-d284-444a-a9e1-966a0b89a792",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "295c5886-5c72-488c-abb6-7079673634e6",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "f4b88f36-31b5-4740-a02d-9330b7d44d29",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "f0f2a17d-e3d2-4992-8278-a06d6f39839d",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "8c357211-cf6c-4844-9c30-98d3c2014908",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "99568a7b-9d2b-454a-8475-3884f05d63d9",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "8b0eed60-909f-4dcd-a123-3b923911f2c8",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "ee70e85a-4597-4260-bd61-7fa0a1ed06f9",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "d6c4ccb9-10c8-4622-86c5-d7db8223f747",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "f0730696-228a-4211-832a-74e5a1ba38b8",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "b876dd1a-1694-45c3-a76b-4b7bffda0a2c",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "b5d1228e-24fa-44c3-8285-3bbe7523db2e",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "e486bf32-f46d-4126-9ea7-4e540fde92aa",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "6f5d9c31-af8c-41c5-8b2d-2c2953c32281",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "d80251af-e99e-4fc7-bf9c-cb69a92d9314",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "8723aa8d-657e-4d1d-9689-e10726aa0028",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "caa75671-6c65-4f6f-bcb6-48c7ca0f460b",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "8a811eed-d746-4044-ad4e-3653d8ce9657",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "afc845be-4b51-4b8d-8f06-3254b9c190d5",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "d3c642b8-fb34-4ccf-9c3a-aa8cdf093e0c",
+      "result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d"
+    },
+    {
+      "claim_id": "670c43df-a2e4-458e-b352-f1622932ddf0",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "ee0b2372-874f-416b-9812-c67764948b74",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "9c689bf8-a77c-470f-aa84-6cc99ad44c0d",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "547217d7-339c-4245-9ae8-04e846786c79",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "17b552ec-db8d-4f7b-842d-a68945065bbc",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "46e0f853-fe6d-410a-b4ba-4b67e906646b",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "7d610041-a6ca-4f0f-8e8c-27c1cfba1f33",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "26262b0d-c76d-40b9-af38-42ebcdee4554",
+      "result_id": "cd28c869-a194-486d-907c-4c3a4002add9"
+    },
+    {
+      "claim_id": "3446c0a0-cda3-46db-9bfa-626be814bdce",
+      "result_id": "4b589f44-6376-407f-9ce2-d42185d71afa"
+    },
+    {
+      "claim_id": "affdc4db-bca9-4e6c-908e-4264680d5ff8",
+      "result_id": "4b589f44-6376-407f-9ce2-d42185d71afa"
+    },
+    {
+      "claim_id": "fa4cf69b-da5c-479e-b7ba-2851ade2f3e2",
+      "result_id": "4b589f44-6376-407f-9ce2-d42185d71afa"
+    },
+    {
+      "claim_id": "13b60031-f262-4bf2-ac78-23c8f5679c21",
+      "result_id": "4b589f44-6376-407f-9ce2-d42185d71afa"
+    },
+    {
+      "claim_id": "16c2f4ca-c4a6-4978-ac65-9a7d74a64f93",
+      "result_id": "4b589f44-6376-407f-9ce2-d42185d71afa"
+    },
+    {
+      "claim_id": "816ef7d6-bbc2-4a70-96fb-cc8ea5a88724",
+      "result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a"
+    },
+    {
+      "claim_id": "34df6653-d4ea-42f2-af01-e7acffabd547",
+      "result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a"
+    },
+    {
+      "claim_id": "8e6dcf6a-1e35-4137-b114-3a4c1f779694",
+      "result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a"
+    },
+    {
+      "claim_id": "128fc534-cb07-4c0e-ba7f-a0976311d0e9",
+      "result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a"
+    },
+    {
+      "claim_id": "273404d1-d215-4bc0-8fb5-b31561338538",
+      "result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a"
+    },
+    {
+      "claim_id": "cd7380a2-195a-4781-bc54-27da42c2f7d4",
+      "result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a"
+    },
+    {
+      "claim_id": "1e5a05b9-cee0-4f97-96fc-a0ca9344b4a7",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "58291444-2656-4e20-a9de-6b5a4c5cb91b",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "5d025bae-48ce-4d2c-98b2-d1f055efc976",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "ce4820c6-4989-443d-afce-1a1cf430e741",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "1f88be2c-5807-49f4-a2a5-206afac70413",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "73cb8415-c1a9-4436-a7f5-880295335d81",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "5c38be55-289f-48f1-b8c4-17cb3a47456d",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "dc38e4f6-927a-4d14-b858-44bd780e7ae6",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "474a8e36-23c7-4229-a4bb-b38e6ffbb9d0",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "07c0a6ed-c200-4622-bae3-6072c12bcfcc",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "ae079d01-7ade-4d31-97fb-9744d74c14da",
+      "result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20"
+    },
+    {
+      "claim_id": "648e9974-ac8d-4dfd-afee-c141311bd09c",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "d27cd63e-13e6-4b1f-bf31-ec74daeb84b3",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "295c5886-5c72-488c-abb6-7079673634e6",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "f4b88f36-31b5-4740-a02d-9330b7d44d29",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "f0f2a17d-e3d2-4992-8278-a06d6f39839d",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "8c357211-cf6c-4844-9c30-98d3c2014908",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "99568a7b-9d2b-454a-8475-3884f05d63d9",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "8b0eed60-909f-4dcd-a123-3b923911f2c8",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "ee70e85a-4597-4260-bd61-7fa0a1ed06f9",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "d6c4ccb9-10c8-4622-86c5-d7db8223f747",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "f0730696-228a-4211-832a-74e5a1ba38b8",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "b876dd1a-1694-45c3-a76b-4b7bffda0a2c",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "b5d1228e-24fa-44c3-8285-3bbe7523db2e",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "e486bf32-f46d-4126-9ea7-4e540fde92aa",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "6f5d9c31-af8c-41c5-8b2d-2c2953c32281",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "d80251af-e99e-4fc7-bf9c-cb69a92d9314",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "8723aa8d-657e-4d1d-9689-e10726aa0028",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "caa75671-6c65-4f6f-bcb6-48c7ca0f460b",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "afc845be-4b51-4b8d-8f06-3254b9c190d5",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "d3c642b8-fb34-4ccf-9c3a-aa8cdf093e0c",
+      "result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2"
+    },
+    {
+      "claim_id": "2aceaa7d-a1b4-490e-8f2d-f5926da13b28",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "195d52ab-239f-42c1-9071-99fccdb61f02",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "8b56f5ad-a0dd-4e19-8ee4-4b21d2c2e53f",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "906a1ac4-e3a0-4153-bc1c-0f4c1e4f9c26",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "39a8e3e0-1c94-4511-a55c-7cfe21701392",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "001eee97-7697-405f-b240-a48c6a50da3b",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "4ccfea27-84fd-4bf0-b776-d432ab0c6191",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "9cbbfb3a-fed8-4b25-b099-a366965b270f",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "45c177f8-3022-408b-97a9-0ad4f39b086a",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "61052adc-6258-49d8-b129-d0db6eee4bda",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "d00f337b-b5b9-4a35-802e-d800a8c501b8",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "b13c7817-6fa5-499b-ae30-1d2767cb0576",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "a15309e2-121a-41fb-a2a9-f3fa67e6ba4c",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "1f6d5dca-43fd-4c71-a063-b09f0b35398f",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "abe60b7c-350f-4c0a-923d-4e836fa3d759",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "aab07374-189e-4da6-b500-a7a21c1cd8a8",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "f4847f2f-b7fa-43ad-8856-1bc01c5e92cb",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "c3d73aab-6dea-47e8-b9ae-2a3c925548af",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "51afbf98-f1e8-43d7-b6db-57e491fdd430",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "fab4ae67-a9e1-40bd-b9b9-008055a5e5b0",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "8fe50277-e3e7-43c7-85d6-0b29d4f76460",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "b7ea0be3-e06e-4a29-a6d8-b003e3e108c7",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "5146ace1-39cd-4d20-9b79-3660c4432328",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "23f298c5-987e-44c6-a847-bb940b6ad59f",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "356a629b-3539-4e5a-8d29-97a214af0410",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "4d8bcdbd-2c55-4b98-81b0-77b2bda5e88c",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "429608e6-c7b0-4438-a064-7cefb4d8e3a7",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "3e9358cc-2a22-4b6f-8335-920145f53365",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "58531b1d-1a5d-449d-a78f-567461b13502",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "3d457793-775d-431f-b0b6-596d633df122",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "de82e4e7-d5c4-461c-821c-bfe695797926",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "eec8ad48-a105-441b-ade8-7741df308413",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "c4bc8332-5799-4ad1-b5da-a534f9dde8ad",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "6737a609-6674-4870-ae84-5332b27a2f11",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "3c0e7b2f-5c24-43f7-9667-04fc6b1b67ed",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "2504a7f6-2ef1-4635-9c27-1ca55bf7b7a2",
+      "result_id": "75fec748-f36e-42b4-914a-da9d45308a90"
+    },
+    {
+      "claim_id": "0c9bfb44-ceb0-4a5f-a66b-95cf9b975c4d",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "648e8bb9-5e4d-417b-a9ac-e66e941019cb",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "e3a15137-07bd-4c90-b6a4-94b799bea8f7",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "becf7c2d-bb22-4f68-a05d-9166e5465966",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "152dc275-dc04-4b80-85b1-24b740fcf788",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "5105ed44-4ec6-4cfc-baf7-4f907fad3c69",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "3900bece-7d1a-469f-a44c-3812f2d6cfd1",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "f4be1ff2-b3c4-42ae-8d9c-07b09300b7dd",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "f1a87861-a277-4a5c-9d50-37c85f0ba685",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "a5d934eb-679f-42cf-9d37-6487fc384427",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "48e2ec9a-d5d6-4792-97b7-54fd9225b6af",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "2523418d-666a-4b50-9f36-9e4a9efbac6a",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "7c074d54-4fa7-4852-9565-0d62da5c80d7",
+      "result_id": "fe91db24-0917-4696-9a8c-468f329074cc"
+    },
+    {
+      "claim_id": "2574e0e8-eea9-4ff2-8fb8-cc8af7730122",
+      "result_id": "bb731393-de3b-403b-9118-7aabd21c4029"
+    },
+    {
+      "claim_id": "d450a830-d94b-4c1f-a41f-fbf32b089318",
+      "result_id": "bb731393-de3b-403b-9118-7aabd21c4029"
+    },
+    {
+      "claim_id": "86f23bb9-49b3-4c07-8f91-fb2e2a9e23ab",
+      "result_id": "bb731393-de3b-403b-9118-7aabd21c4029"
+    },
+    {
+      "claim_id": "0f935c30-e00c-4d5e-b054-ffe190c17a74",
+      "result_id": "bb731393-de3b-403b-9118-7aabd21c4029"
+    },
+    {
+      "claim_id": "5d25bcf5-7ae9-4795-a2e0-aa23997ccf09",
+      "result_id": "bb731393-de3b-403b-9118-7aabd21c4029"
+    },
+    {
+      "claim_id": "05f02149-d284-444a-a9e1-966a0b89a792",
+      "result_id": "9ebf18f9-c551-444b-8f7a-59b6e4251d1c"
+    },
+    {
+      "claim_id": "8a811eed-d746-4044-ad4e-3653d8ce9657",
+      "result_id": "9ebf18f9-c551-444b-8f7a-59b6e4251d1c"
+    },
+    {
+      "claim_id": "49900c26-22da-493b-8c7f-d9cb01f1bdd0",
+      "result_id": "5371b25d-dd8e-491b-a6df-bec02b0832cd"
+    },
+    {
+      "claim_id": "94de8736-5175-4ead-ba84-0759221b21fa",
+      "result_id": "5371b25d-dd8e-491b-a6df-bec02b0832cd"
+    },
+    {
+      "claim_id": "d810c2fc-da8d-4915-9a83-0c8c8b4aa0ad",
+      "result_id": "5371b25d-dd8e-491b-a6df-bec02b0832cd"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "17f9a35f-a1c5-4228-9b7b-4c24cb9f69f6",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "255c3515-af34-4608-856e-41bc50ba92ae",
+      "peer_result_id": "cd28c869-a194-486d-907c-4c3a4002add9",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Perfect claim overlap (C23-C29, C98) on journey/task-demand remapping findings. LLM found ANCOVA controls sufficient for behavioral confounds, while peer reviewers expressed major concerns that confounds (location, speed, head direction) were inadequately controlled, stating 'the ANCOVAs are not detecting this confound' and requesting spatial restriction analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "3fffb412-3fa1-4399-9041-e26ed5eec1c7",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d",
+      "peer_result_id": "acac5920-57ee-4ee4-a122-79240ce1e2d2",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "High overlap (90.9%) on background literature claims about hippocampal function, place cells, episodic memory, and remapping. Both agree these foundational concepts are well-established and properly cited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "d798786a-51c3-4ac0-85ca-c371d6a39666",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "7d577025-3df6-4544-bb94-a28567cfb31f",
+      "peer_result_id": "4b589f44-6376-407f-9ce2-d42185d71afa",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Strong overlap (71.4%) on hierarchical organization and generalization claims (C30-C31, C87, C90-C91). LLM found cross-subtask generalization analysis robust, while peer reviewers found the analysis 'difficult to follow' with Figure 7 'hard to interpret,' requesting additional comparative analyses before accepting pattern completion claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "defa858e-096c-4c12-a20a-693e5ec3c65e",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "ded9b073-ab86-4ab1-9925-4e25eda95964",
+      "peer_result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Good overlap (72.7%) on main findings about simultaneous representation of spatiotemporal and non-spatial contexts (C4-C5, C35, C41-C43, C92-C93). LLM found converging evidence sufficient, while peer reviewers expressed uncertainty pending resolution of behavioral confound concerns that 'could undermine the conclusions.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "68cd7e14-26bc-4127-92e0-aa245bd63dc5",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "8230dc8f-c6ee-43f6-9357-1f9e99df7f3b",
+      "peer_result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Strong overlap (66.7%) on episode classification and prospective coding claims (C32-C34, C103). LLM found binary classification with statistical testing convincing, while peer reviewers requested comparative analysis of 'relative ability to classify into trajectories vs tasks vs specific trial types,' suggesting insufficient evidence for claims about equal coding strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "87fe6f5b-eba2-4c6b-a634-c4b489c30376",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "944ba808-2e56-4e76-8341-4b0f21afd21b",
+      "peer_result_id": "75fec748-f36e-42b4-914a-da9d45308a90",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Moderate overlap (38.9%) on experimental design and methodology claims (C17-C19, C47-C57). Both agree the basic methods, sample sizes, recording equipment, and behavioral training protocols are appropriate and well-documented.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "8fed3bba-b25b-4756-ae0e-4f4bfd925416",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "a709657f-1731-4dd2-81d9-7bab91d88488",
+      "peer_result_id": "fe91db24-0917-4696-9a8c-468f329074cc",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Exact overlap (50%) on computational/statistical methods (C74-C81). LLM found ANCOVA and trajectory analysis methods appropriate, while peer reviewers expressed concern that 'the ANCOVAs are not detecting this confound,' suggesting the implementation rather than the method itself needs refinement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "72dcaeea-9cf9-430d-a31f-1177c12fc6b4",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "47f8340b-1deb-4bc4-a373-c9497840127e",
+      "peer_result_id": "75fec748-f36e-42b4-914a-da9d45308a90",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Moderate overlap (36.1%) on behavioral task design and controls (C58-C68, C106, C110-C112). Both agree the task design with MFB stimulation, lighting controls, and high performance metrics is well-controlled and appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "880a7267-59ec-4860-b3f4-78d87ed31ebb",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805",
+      "peer_result_id": "5371b25d-dd8e-491b-a6df-bec02b0832cd",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Exact overlap (50%) on broader functional interpretations (C44, C95-C96). Both agree these claims about dual hippocampal roles in navigation and episodic memory are inferential and depend on validity of empirical findings, which remain under question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "228e7707-46b2-4c7c-a896-2a8375f95cb5",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "576ed022-cb8d-4fa6-af14-4a79fe67b805",
+      "peer_result_id": "5c3ff09e-dbf9-489c-afe2-d485282fda20",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Partial overlap (21.4%) on functional role claims (C6, C45-C46). Both agree these theoretical interpretations about dual hippocampal function are largely inferential and not directly tested through causal manipulations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "26e17100-e37c-4045-9490-bb2aeece129e",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "5bf501d3-9c5d-4744-966c-1b13e79e785d",
+      "peer_result_id": "9ebf18f9-c551-444b-8f7a-59b6e4251d1c",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Small overlap (9.1%) on knowledge gap identification (C3, C40). Both agree the study addresses an important gap in understanding how different types of hippocampal coding relate to each other.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "2fb7b0a0-15c8-447c-a43b-0fbf7163870e",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8",
+      "peer_result_id": "fe91db24-0917-4696-9a8c-468f329074cc",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Small overlap (12.5%) on behavioral timing inference (C84-C85). Both express uncertainty about inferring exact cue detection and decision timing from indirect behavioral measures, which affects interpretation of temporal neural dynamics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "f8d9b7be-2c1f-498d-a56c-c57ca50229fa",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "7d577025-3df6-4544-bb94-a28567cfb31f",
+      "peer_result_id": "01438ac4-43d1-4cbc-a988-1bb5c8470d3a",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (18.2%) on trajectory analysis claims (C88-C89). LLM found evidence for hierarchical organization supported, while peer reviewers' concerns about behavioral confounds extend to these trajectory-based claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "9d1087bc-c667-4693-b0f9-46b5044b6fe3",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8",
+      "peer_result_id": "75fec748-f36e-42b4-914a-da9d45308a90",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (2.5%) on behavioral timing (C63). LLM expressed uncertainty about indirect timing measures, while peer reviewers did not challenge the basic behavioral methodology, focusing instead on spatial analysis concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "ee8da55a-2a5b-467d-a8cb-e8e7e568178e",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "a709657f-1731-4dd2-81d9-7bab91d88488",
+      "peer_result_id": "75fec748-f36e-42b4-914a-da9d45308a90",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Small overlap (6.8%) on spike sorting and cell classification methods (C69-C70, C72). Both implicitly accept these standard preprocessing methods as appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    },
+    {
+      "id": "4897e7b2-e973-417e-8b58-9addcbb7e3d6",
+      "submission_id": "a0059d3e-39b0-4427-8495-780d247ec99d",
+      "llm_result_id": "8c18404a-cae2-4469-a88d-902e47e7c7e8",
+      "peer_result_id": "bb731393-de3b-403b-9118-7aabd21c4029",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "No direct pairing in suggested list. Peer R8 addresses place field properties and trajectory shifts (C22, C99-C102) subject to behavioral confound concerns, while LLM R8 addresses behavioral timing inference (C63, C82-C85). Both express uncertainty but on different aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:18:23.119977Z"
+    }
+  ]
+}

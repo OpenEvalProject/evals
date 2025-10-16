@@ -1,0 +1,1851 @@
+{
+  "submission": {
+    "id": "fcf5d72c-f7c0-42af-b025-83016b101afd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:10:38.977400Z",
+    "updated_at": "2025-10-16T21:10:38.977400Z"
+  },
+  "content": [
+    {
+      "id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "submission_id": "fcf5d72c-f7c0-42af-b025-83016b101afd",
+      "content_type": "manuscript",
+      "content_text": "# rsEGFP2 enables fast RESOLFT nanoscopy of living cells\n\n## Authors\n\n- Tim Grotjohann<sup>1</sup>\n- Ilaria Testa<sup>1</sup>\n- Matthias Reuss<sup>2</sup>\n- Tanja Brakemann<sup>1</sup>\n- Christian Eggeling<sup>1</sup>\n- Stefan W Hell<sup>1</sup> \u2020\n- Stefan Jakobs<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of NanoBiophotonics Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n2. Abberior Instruments GmbH G\u00f6ttingen Germany\n3. Science for Life Laboratory, Advanced Light Microscopy Karolinska Institutet Solna Sweden\n4. Department of Neurology University of G\u00f6ttingen G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00248.001 The super-resolution microscopy called RESOLFT relying on fluorophore switching between longlived states, stands out by its coordinate-targeted sequential sample interrogation using low light levels. While RESOLFT has been shown to discern nanostructures in living cells, the reversibly photoswitchable green fluorescent protein (rsEGFP) employed in these experiments was switched rather slowly and recording lasted tens of minutes. We now report on the generation of rsEGFP2 providing faster switching and the use of this protein to demonstrate 25\u2013250 times faster recordings. DOI: http://dx.doi.org/10.7554/eLife.00248.001\n\n## Introduction\n\nWhile for many decades lens-based optical microscopy could not resolve features finer than half the wavelength of light (\u03bb/2 > 200 nm), the recent development of fluorescence nanoscopy or super-resolution imaging methods boosted its resolution potential (Hell, 2003, 2009; Huang et al., 2010). In all these methods, the diffraction barrier is overcome by employing a fluorophore transition between two states, typically a fluorescent on- and a non-fluorescent off-state (Hell, 2009) in order to separate neighboring features. The method called RESOLFT differs from stochastic single fluorophore on-off-switching methods by the fact that a doughnut or a line pattern is scanned across the sample, determining at any point in time the nanosized coordinate range where the fluorophores are in the on-state. Using long lifetimes of the on- and off-states reduces the light intensities required for optical switching by orders of magnitude over the related STED approach, making RESOLFT attractive for extended live-cell or large area imaging.\n\nAlthough it was suggested almost a decade ago (Hell, 2003; Hell et al., 2003) and its viability shown in principle (Hofmann et al., 2005; Dedecker et al., 2007; Schwentker et al., 2007) the wider applicability of RESOLFT nanoscopy to biological imaging has been demonstrated only recently (Brakemann et al., 2011; Grotjohann et al., 2011; Rego et al., 2012). The reason is that fluorescent protein based RESOLFT critically relies on reversibly switchable fluorescent proteins (RSFPs) providing many on-off cycles, such as the recently designed rsEGFP (Grotjohann et al., 2011). Unfortunately, in these demonstrations, the still relatively slow switching kinetics of rsEGFP entailed pixel dwell times of 10\u201320 ms at switching light intensities of ~1 kW/cm2. Hence images of 10 \u00b5m \u00d7 10 \u00b5m in size and a pixel step size of 20 nm required recording times of about an hour. In this study we describe the generation, characterization and application of a novel RSFP, namely rsEGFP2, which facilitates faster switching and, together with modifications of the initial switching scheme, enables 25\u2013250 faster RESOLFT recordings in living cells.\n\n## Results and discussion\n\nWe observed that already the exchange of a single amino acid in the chromophore of the photostable and widely-used enhanced green fluorescent protein (EGFP) (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig1-v1.jpg)\n\n**Figure 1.:** (A) Absorption (black dashed line), excitation (red dotted line), and emission (green solid line) spectra of rsEGFP2 in its equilibrium state at pH 7.5. (B) Switching curves of rsEGFP2 (blue) and rsEGFP (red). Switching was performed on purified proteins immobilized in a PAA-layer (pH ~6.5) by alternating irradiation with 491 nm (~2 kW/cm\u00b2) and 405 nm light (~2 kW/cm\u00b2, 40 \u00b5s). Fluorescence was recorded only during irradiation with light of 491 nm. Each curve is an average over 10 switching cycles. (C) Changes in the absorption spectrum of rsEGFP2 upon switching with light of 488 nm from the equilibrium to the off-state. The spectra were taken at the indicated time points and recorded on purified rsEGFP2 at pH 7.5 (D) Absorption spectra of equilibrium-state rsEGFP2 at different pH values. The absorption bands at 408 nm and 503 nm presumably correspond to the protonated and the de-protonated cis-chromophore, respectively. (E) Switching fatigue of rsEGFP2 (blue) and rsEGFP (red). Switching was performed on living PtK2 cells expressing Vimentin-rsEGFP or Vimentin-rsEGFP2 by alternate irradiation with 405 nm (2 kW/cm\u00b2) and 491 nm (5.7 kW/cm\u00b2) light. Illumination times were chosen so that the fluorescence was fully switched to the minimum or maximum, respectively, in each cycle. Each plotted data point is the average (over 100 cycles) of the maximum fluorescence intensity in each cycle. The data points were fitted by a mono-exponential function, and the resulting curve was baseline corrected and normalized to 1. (F) Comparison of the ensemble off-switching halftimes (defined as the time after which the fluorescence reached 50% of its initial value) of rsEGFP (red) and rsEGFP2 (blue) at different 491 nm light intensities. On-switching 405 nm light was kept constant (3 kW/cm2). Data were collected on living PtK2 cells expressing Vimentin-rsEGFP or Vimentin-rsEGFP2, respectively. Inset: Graph showing the ratio (R) of the off-switching halftime of rsEGFP divided by the off-switching halftime of rsEGFP2 against the 491 nm light intensity.DOI: http://dx.doi.org/10.7554/eLife.00248.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Differences are highlighted.DOI: http://dx.doi.org/10.7554/eLife.00248.004\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Average and standard deviation of >30 FCS measurements at various laser intensities between 5 and 100 kW/cm2. Values normalized to EGFP. The error bars represent the error in the FCS experiments with the value for EGFP normalized to 1 in each individual experiment.DOI: http://dx.doi.org/10.7554/eLife.00248.005\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Off-switching kinetics of rsEGFP and rsEGFP2 embedded in a PAA layer (pH ~6.5) determined at different intensities of the 491 nm off-switching light. Each curve is an average of 100 measurements. In each measurement the proteins were switched into the on-state for 40 \u00b5s with 405 nm light (2 kW/cm\u00b2) and subsequently the decay of fluorescence was recorded over time at the indicated 491 nm light intensities. (B) Dependence of the residual fluorescence (off-state fluorescence) in the ensemble off-state as a function of the off-switching light intensity. (C) Dependence of the residual fluorescence (off-state fluorescence) in the off-state of Vimentin-rsEGFP or Vimentin-rsEGFP2 in living Ptk2 cells as a function of the off-switching light intensity.DOI: http://dx.doi.org/10.7554/eLife.00248.006\n\nAdopting the fluorescent state at equilibrium, rsEGFP2 has its fluorescence excitation and emission maximum at 478 nm and 503 nm, respectively (Figure 1A). In the fluorescent state, a solution of rsEGFP2 exhibits an extinction coefficient of \u03b5 \u2248 61,000 M\u22121cm\u22121 and a fluorescence quantum yield of \u03a6Fl = 0.3 (Table 1). Hence the brightness (given by \u03b5 \u03a6Fl) of rsEGFP2 is similar to that of rsEGFP and about 60% of that of EGFP at low light intensity irradiation. Single-molecule spectroscopy measurements performed at higher light intensities (5 to 100 kW/cm2) showed that the single molecule brightness of rsEGFP and rsEGFP2 were ~52% and ~44% of that of EGFP, respectively (Figure 1\u2014figure supplement 2). The slight difference between brightness values determined at low and high light intensities may be attributed to the increased population of unidentified dark states at higher intensities. rsEGFP2 exhibits a \u2018negative\u2019 switching mode, that is irradiation with light of around 480 nm induces fluorescence and, in a competing process, switches rsEGFP2 off. Subsequent irradiation with light of around 405 nm switches the protein back from the off- into the on-state (Figure 1B). Irradiation of a purified rsEGFP2 solution with light of ~480 nm leads to a decrease of the 483 nm absorption band, which presumably corresponds to the anionic (de-protonated) cis-chromophore, and to the onset of an absorption band peaking at 408 nm, presumably corresponding to the neutral (protonated) trans-chromophore state (Andresen et al., 2005; Andresen et al., 2007) (Figure 1C). The single molecule brightness, that is the number of emitted photons per time unit, of rsEGFP and rsEGFP2 are similar. However, because a single switching cycle of rsEGFP2 is on average shorter than a single switching cycle of rsEGFP, rsEGFP2 emits fewer photons in a single cycle than rsEGFP. The pKa of the chromophore in the thermal equilibrium state is ~5.8 (Figure 1D). Hence the pKa of rsEGFP2 is lower by 0.7 pH units than the pKa of rsEGFP. As reported previously for similar RSFPs, the light driven switching of rsEGFP2 is likely due to a cis/trans isomerization of the chromophore, accompanied by a change of the chromophoric protonation state (Andresen et al., 2005; Andresen et al., 2007; Bourgeois and Adam, 2012).\n\nThe total number of switching cycles before bleaching is critical for the usability of a RSFP for RESOLFT microscopy (Hell, 2009). To compare rsEGFP2 with rsEGFP in this regard, we immobilized purified proteins in polyacrylamide layers (PAA). Applying light intensities that have previously been used for RESOLFT (few kW/cm2), we recorded the fluorescence during 6,000 on-off switching cycles (Figure 1E). The illumination times were adapted for the two proteins such that the signal reached a maximum or minimum in each cycle. We found that under these conditions the fluorescence was halved not before ~1,100 (rsEGFP) and ~2,100 (rsEGFP2) cycles, demonstrating that rsEGFP2 accommodates even more switches than rsEGFP.\n\nIn most negative switching RSFPs, including rsEGFP, the ensemble off-switching with blue light is slower by 2\u20133 orders of magnitude, compared to the on-switching with UV light at comparable light intensities, rendering the off-switching the time-limiting step in RESOLFT microscopy. We compared the off-switching half-time (time after which the fluorescence signal is reduced to 50%) of rsEGFP2 and rsEGFP as a function of the off-switching light intensity (491 nm) (Figure 1F). We found that the difference in the off-switching halftimes of rsEGFP2 and rsEGFP depends on the light intensities applied. The lesser the light intensities, the more pronounced is the speed advantage of rsEGFP2. At a light intensity of 5.5 kW/cm2 the off-switching of rsEGFP2 was ~6.5 times faster than the off-switching of rsEGFP (Figure 1F, inset). Presumably the switching speed advantage for rsEGFP2 is even higher at lower intensities. For undesirable intensities of >100 kW/cm2, the differences between rsEGFP and rsEGFP2 are negligible (Figure 1F, inset). These measurements also revealed that the level to which the fluorescence intensity of an ensemble of rsEGFP2 proteins can be reduced (the off-state fluorescence), depends on the intensities for off-switching (Figure 1\u2014figure supplement 3). Hence the light intensities and the irradiation times used for off-switching influence both the switching speed as well as the lowest residual fluorescence. Furthermore, we observed that the buffer conditions, most notably the pH, and the cellular environments also influence the absolute switching speed, potentially requiring adaptations of the illumination protocol to the observed samples.\n\nIn mammalian cells, rsEGFP2 can be fused to histone H2B and alpha-tubulin, which require a truly monomeric fusion tag (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig2-v1.jpg)\n\n**Figure 2.:** (A) rsEGFP2-KDEL (targeting to the ER), (B) Keratin19-rsEGFP2, (C) Histone H2B-rsEGFP2, (D) Vimentin-rsEGFP2, (E) Pex16-rsEGFP2, and (F) rsEGFP2-alpha-tubulin. Shown are single confocal sections (C, F) and maximum intensity projections of confocal images (A, B, D, E) recorded on living cells. Fluorescence was excited by simultaneous irradiation with light of 488 nm and 405 nm. (A\u2013E): PtK2 cells; (F): Vero cell. Scale bars: 10 \u03bcm.DOI: http://dx.doi.org/10.7554/eLife.00248.008\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Purified monomeric EGFP, dimeric dTomato, tetrameric DsRed, and rsEGFP2 were separated on a semi-native gel (a two-phase polyacrylamide gel) consisting out of a 12.5% separation gel (6.3 ml H2O, 5 ml 1.5 M Tris\u2013HCl pH 8.8, 8.3 ml Rotiphorese Gel 30 solution [Roth, Karlsruhe, Germany], 200 \u03bcl 10% [wt/vol] sodiumdodecyl sulphate [SDS], 200 \u03bcl 10% [wt/vol] ammonium persulfate (APS), 20 \u03bcl Tetramethylethylendiamin [TEMED]) and a 5% loading gel (5.6 ml H2O, 2.5ml 1.5 M Tris\u2013HCl pH 6.8, 1.7 ml Rotiphorese Gel 30 solution, 100 \u03bcl 10% [wt/vol] SDS, 100 \u03bcl 10% [wt/vol] APS, 10 \u03bcl TEMED). Images were taken with a custom-built gel documentation system. To detect green fluorescence (EGFP and rsEGFP2) the gel was irradiated with light of 470 \u00b1 5 nm and fluorescence was detected at 525 \u00b1 30 nm. To detect red fluorescence (dTomato and DsRed) the gel was irradiated with light of 545 \u00b1 10 nm and fluorescence was recorded at 617 \u00b1 37. Both images were overlaid and are represented in false colors.DOI: http://dx.doi.org/10.7554/eLife.00248.009\n\nThe possibility to switch rsEGFP2 faster than rsEGFP, its higher switching stamina, and its faster maturation kinetics, suggested that this protein would be superior for fast live-cell RESOLFT imaging. We first expressed rsEGFP2 fused to the C-terminus of Vimentin in mammalian PtK2 (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cells expressing Vimentin-rsEGFP2: initial confocal (left) and subsequent RESOLFT images taken every 100 s. Lower row: magnifications of the indicated areas. (B) Lateral resolution measurement: raw images of cells expressing Keratin19-rsEGFP2 recorded with a RESOLFT Quad P microscope (Abberior Instruments GmbH, G\u00f6ttingen, Germany) with similar imaging conditions as in (A) (on: 405 nm, 5 kW/cm\u00b2, 20 \u00b5s; off: 488 nm, 34 kW/cm\u00b2, 360 \u00b5s; read-out: 488 nm, 76 kW/cm\u00b2, 20 \u00b5s). From left to right: confocal raw image and corresponding raw RESOLFT image. Magnifications of the boxed areas in the RESOLFT image. The graphs show averaged line profiles across the indicated filaments (i\u2013iv) within the respective boxes. The line profiles used for averaging were taken equidistant (20 nm) along the whole respective indicated area. (C),(D) rsEGFP2 targeted to the ER (rsEGFP2-KDEL): (C) 10 \u00b5m \u00d7 10 \u00b5m initial confocal (left) and subsequent RESOLFT images recorded every 5.9 s, and (D) 2.8 \u00b5m \u00d7 3.2 \u00b5m RESOLFT image-series imaged at 2 Hz. (E) RESOLFT imaging of peroxisomes labeled by Pex16-rsEGFP2 fusion proteins. Pixel step sizes: 20 nm (A, B) and 40 nm (C\u2013E). Pixel dwell times: 380 \u00b5s (A), 400 \u00b5s (B), 75 \u00b5s (C, D), and 120 \u00b5s (E). In (D) and (E) pixels were interpolated to a size of 20 nm \u00d7 20 nm. The arrows indicate moving structures. Richardson Lucy restoration was used for all RESOLFT images except (B). Scale bars: 1 \u00b5m.DOI: http://dx.doi.org/10.7554/eLife.00248.010\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Figure 3A.No image processing was applied. Shown are PtK2 cells expressing Vimentin-rsEGFP2: initial confocal (left) and subsequent RESOLFT images taken every 100 s. Scale bar: 1 \u00b5m.DOI: http://dx.doi.org/10.7554/eLife.00248.011\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A),(B) Typical examples. Shown are raw images of cells expressing Keratin19-rsEGFP2 taken on a RESOLFT Quad P microscope (Abberior Instruments GmbH, G\u00f6ttingen, Germany) with a pixel dwell time similar as in Figure 3D,E. Imaging conditions: (on: 405 nm, 8 kW/cm\u00b2, 2 \u00b5s; off: 488 nm, 68 kW/cm\u00b2, 61 \u00b5s; read-out: 488 nm, 200 kW/cm\u00b2, 7 \u00b5s; pixel size: 40 \u00d7 40 nm). From left to right: confocal raw image and corresponding raw RESOLFT image. The graphs show averaged line profiles across the indicated filaments within the respective boxes. The line profiles used for averaging were taken equidistant (40 nm) along the whole respective indicated area. Scale bar: 1 \u00b5m.DOI: http://dx.doi.org/10.7554/eLife.00248.012\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00248/elife-00248-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Repeated imaging of peroxisomes labeled by Pex16-rsEGFP or Pex16-EGFP2 fusion proteins. Imaging conditions were as in Figure 3D. Pixel step size: 40 nm; on: 405 nm, 4 kW/cm\u00b2, 20 \u00b5s; off: 491 nm, 20 kW/cm\u00b2, 50 \u00b5s; read-out: 491 nm, 76 kW/cm\u00b2, 5 \u00b5s; pixel dwell time: 75 \u00b5s. Images were taken every 5 s. Shown are raw data. (B) Decay of the summed fluorescence intensities of the images shown in (A). Note that rsEGFP photobleaches faster than rsEGFP2. Scale bar: 1 \u00b5m.DOI: http://dx.doi.org/10.7554/eLife.00248.013\n\nTo determine the obtainable resolution, we imaged cells expressing Keratin19-rsEGFP2 filaments using similar illumination conditions as before. Evaluating the intensity profiles of these filaments in the focal plane revealed a resolution <50 nm in raw image data (Figure 3B).\n\nNext, we targeted rsEGFP2 to the lumen of the endoplasmic reticulum (ER). Since the ER is a fast moving structure we increased the recording speed further by doubling the light intensities (on: 405 nm, 4 kW/cm\u00b2, 20 \u00b5s; off: 491 nm, 20 kW/cm\u00b2, 50 \u00b5s; read-out: 491 nm, 76 kW/cm\u00b2, 5 \u00b5s) thus cutting the pixel dwell time down to 75 \u00b5s, which is ~250 times faster than reported previously using rsEGFP. We did not introduce an irradiation break within a single switching cycle. Because we aimed at capturing fast movements, we also increased the pixel size to 40 nm \u00d7 40 nm, thus covering a field of 100 \u00b5m\u00b2 in 5.9 s (Figure 3C). Repeated imaging revealed fast changes occurring in the range of seconds in the highly interconnected ER. To visualize movements of the ER in the sub-second range, we reduced the field of view to ~9 \u00b5m2 corresponding to 0.5 s frame times. Figure 3D shows six RESOLFT images out of a time lapse movie containing 100 images (Movie 2) revealing changes in the ER structure occurring in <1 s. Since the ER-tubules are too large to determine the obtained resolution, we imaged again Keratin19-rsEGFP2 expressing cells using a similar dwell time and established <90 nm in raw data (Figure 3\u2014figure supplement 2), meaning that speed was obtained at the expense of resolution.10.7554/eLife.00248.015Movie 2.Animated sequence of RESOLFT recordings of a living PtK2 cell expressing rsEGFP2 targeted to the ER as shown in Figure 3D. 100 RESOLFT images were taken every 0.5 s. Image size: 2.8 \u00b5m \u00d7 3.2 \u00b5m. The speed of the movie corresponds to the imaging speed.DOI: http://dx.doi.org/10.7554/eLife.00248.015\n\nLikewise, when rsEGFP2 was fused to the protein Pex16 to highlight the peroxisomes in living PtK2 cells, we could follow the movement of individual peroxisomes in the RESOLFT-mode in a 3 \u00b5m \u00d7 2 \u00b5m field of view at 2 Hz (Figure 3E; Movie 3). Since the fluorescent proteins are confined to individual peroxisomes and do not diffuse over large distances, labeled peroxisomes are well suited for a direct comparison of rsEGFP2 and rsEGFP bleaching. The comparison showed that the overall photobleaching of rsEGFP2 was substantially lower than that of rsEGFP when the above fast RESOLFT imaging conditions were applied (Figure 3\u2014figure supplement 3).10.7554/eLife.00248.016Movie 3.Animated sequence of RESOLFT recordings of a living PtK2 cell expressing Pex16-rsEGFP2 to highlight the peroxisomes as shown in Figure 3E. 20 RESOLFT images were taken every 0.5 s. Image size: 3 \u00b5m \u00d7 2 \u00b5m. The speed of the movie corresponds to the imaging speed.DOI: http://dx.doi.org/10.7554/eLife.00248.016\n\nPhototoxicity is a major concern in (superresolution) fluorescence microscopy of living cells. Among the established methods, STED-microscopy entails relatively large intensities, (5\u2013200 MW/cm2), depending on the desired resolution. However, since the wavelengths (560\u2013800 nm) used for STED are in the comparatively benign long-wavelength part of the spectrum (Hell, 2009), STED microscopy can image living cells and tissues, including neurons in the cerebral cortex of a living mouse (Berning et al., 2012). In the RSFP-based RESOLFT microscopy demonstrated here, the employed light intensities (1\u201380 kW/cm2) are several orders of magnitude lower than in STED-microscopy and comparable to those used in live-cell confocal fluorescence microscopy. Stochastic single-molecule based approaches, such as the methods called PALM (Manley et al., 2008; Shroff et al., 2008), STORM (Jones et al., 2011; Shim et al., 2012), and GSDIM (F\u00f6lling et al., 2008), typically use similar light intensities for imaging living cells (0.1\u2013100 kW/cm\u00b2 depending on the exposure time or camera frame rate), but they apply these intensities (i.e. temporal and spatial photon densities) continuously to all points in the imaged area. Since our RESOLFT approach has been implemented as a point-scanning system, the intensities employed are applied only for a brief duration on a small, sub-micrometer sized region of the imaged area. Hence any pixel is only illuminated during a small fraction of the recording time of the image. In the stochastic methods, the whole imaged area is irradiated for the entire time of recording, that is for a couple of seconds or minutes. Therefore, in the RESOLFT microscopy demonstrated here, the total light dose impinging on the cell is lower by 3\u20134 orders of magnitude compared to the stochastic single-molecule based approaches. Concretely, for recording the shown RESOLFT images, 2\u201310 J/cm\u00b2 were applied for switching into the on-state, and 25\u2013300 J/cm\u00b2 for eliciting fluorescence and switching the protein off. PALM live-cell imaging reportedly requires light doses of 1,000\u2013100,000 J/cm\u00b2 for on-switching with UV (405 nm) light and 25,000\u2013300,000 J/cm\u00b2 for fluorescence excitation (Manley et al., 2008; Shroff et al., 2008). Live-cell GSDIM experiments using a yellow fluorescent protein required even larger irradiation doses (100,000\u2013900,000 J/cm\u00b2) (F\u00f6lling et al., 2008; Testa et al., 2010). Although RESOLFT microscopy may induce phototoxicity after extended exposure, similarly to live-cell confocal microscopy, it currently is the superresolution method entailing the lowest light dose. Therefore, perhaps not surprisingly, RESOLFT microscopy has been used to image neurons in living organotypical hippocampal cultures over several hours without noticeable photodegradation (Testa et al., 2012). Note that the comparatively low-dose/low-intensity requirement of the RESOLFT concept is due to the fact that it uses long-lived on- and off-states in combination with the fact that it does not require fast emission of many photons for establishing molecular coordinates (localization). Since the applied intensities are largely determined by the on-off switching kinetics, the concept offers ample room for accommodating novel proteins with switching kinetics entailing even lower light doses and intensities.\n\nIn conclusion, rsEGFP2 is a bright, monomeric, photostable, quickly maturating, and fast switching alternative to rsEGFP with comparatively low photobleaching. We expect it to outperform other green fluorescent RSFPs (Ando et al., 2007; Stiel et al., 2007) because of its faster maturation and good usability for functional protein tagging. An implementation of quick illumination sequences allowed us to realize up to 250-fold faster recordings as compared to previous reports, thus facilitating live-cell RESOLFT nanoscopy with pixel dwell times down to 70 \u00b5s. Since one can adjust both the duration and the illumination intensity, as well as the optical switching scheme, RESOLFT nanoscopy allows one to adapt speed and resolution within a certain range, to the sample needs.\n\nFinally, we note that in the point-scanning scheme used here, the total recording time of the image scales with the area of recording. Parallelization of the scanning procedure with an array of doughnuts or lines (so-called \u2018structured illumination\u2019) (Gustafsson, 2005; Schwentker et al., 2007; Rego et al., 2012) overcomes this dependence on the field of view and cuts down the recording time by the degree of parallelization. Owing to the low-light level operation, the degree of parallelization can easily amount up to a factor of 100\u20131000. For this reason, given the short pixel dwell times attained herein, parallelized RESOLFT versions should enable video-rate nanoscopy across the whole field of view of the objective lens.\n\n## Materials and methods\n\n## Mutagenesis\n\nFor site-directed mutagenesis, the QuikChange Site Directed Mutagenesis Kit (Stratagene, La Jolla, CA) or a multiple-site mutagenesis approach using several primers were used.\n\n## Protein expression, purification and characterization\n\nThe experimental procedures were essentially as described previously (Grotjohann et al., 2011). In brief, proteins were expressed in the E. coli strain BL21-CP-RIL and purified by Ni-NTA affinity chromatography (His SpinTrap, GE Healthcare), according to the manufacturer's instructions. The purified proteins were concentrated by ultrafiltration and taken up in 100 mM Tris\u2013HCl, 150 mM NaCl, pH 7.5.\n\nFor the determination of the absorption, excitation and emission spectra of rsEGFP2, a protein solution (pH 7.5) was analyzed with a Varian Cary 4000 UV/VIS photospectrometer and a Varian Cary Eclipse fluorescence spectrometer, respectively. At this pH, the majority of the equilibrium-state rsEGFP2 chromophores are in the deprotonated cis-state (see Figure 1D). To determine its emission spectrum, rsEGFP2 was excited at 460 nm; the excitation spectrum was determined by measuring fluorescence at 520 nm. The fluorescence quantum yields and the molar extinction coefficients at the respective absorption maximum were determined relative to the reported values of EGFP (quantum yield \u03a6FL = 0.60, molar extinction coefficient at 489 nm \u03b5 = 53,000 M\u22121 cm\u22121) (Patterson et al., 1997). Irradiation-dependent changes in the absorption were quantified by illuminating the protein solution in a cuvette with a fiber coupled mercury lamp (Lecia Microsystems, Wetzlar, Germany) equipped with a (488 \u00b1 5) nm excitation filter. For each measurement of the spectrum the irradiation was briefly interrupted.\n\nFor the embedding of rsEGFP2 in a PAA layer, 24.5 \u00b5l of purified rsEGFP2 (~0.1 mM) was mixed with 17.5 \u00b5l Tris\u2013HCl pH 7.5, 30 \u00b5l acrylamide (Rotiphorese Gel 30, Roth, Karlsruhe, Germany), 0.75 \u00b5l 10 % ammonium persulfate and 1\u00b5l 10 % TEMED. About 10 \u00b5l of this solution was placed on a glass slide and a cover slip was pressed onto the sample. After complete polymerization, the sample was sealed with silicon-based glue (Picodent twinsil, Picodent, Wipperf\u00fcrth, Germany).\n\n## Determination of chromophore maturation halftime\n\nTo determine the time required for chromophore maturation in rsEGFP2, the E. coli cell strain TOP10 (Invitrogen, Carlsbad, CA) was transformed with the inducible expression plasmid pBad-rsEGFP2 and grown overnight at 37\u00b0C in LB-Amp medium. The overnight culture was used to inoculate 200 ml LB-Amp growth medium. At an OD600 of 0.5 to 0.6, addition of arabinose to a final concentration of 0.2% induced the protein expression. The cultures were further incubated at 37\u00b0C for 2 hr. Cells were opened up by several freeze\u2013thaw cycles and pelleted by centrifugation. rsEGFP2 was purified immediately from the supernatant using a His SpinTrap column (GE Healthcare, Freiburg, Germany). The proteins were diluted in buffer (final concentration: 20 mM NaH2PO4, 500 mM NaCl, 30 mM imidazol, pH 7.5). Care was taken that all preparation steps took place at 4\u00b0C. Finally, fluorescence emission spectra of rsEGFP2 were taken at several time points using a fluorescence spectrometer (Varian Cary Eclipse) while incubating the protein solution at 37\u00b0C.\n\n## Mammalian cell culture\n\nPtK2 (Potorous tridactylis) cells were cultured under constant conditions at 37\u00b0C and 5% CO2 in DMEM (Invitrogen, Carlsbad, CA) containing 5% FCS (PAA, Pasching, Austria), 100 units per ml streptomycin, 100 \u00b5g/ml penicillin (all Biochrom, Berlin, Germany), and 1 mM pyruvate (Sigma, St. Louis, USA ). For transfection, cells were seeded on cover glasses in 6-well plates. At the next day, cells were transfected with plasmid DNA using Nanofectin (PAA, Pasching, Austria) according to the manufacturer's instructions. After 24 hr the growth medium was replaced. Cells were imaged 24\u201372 hr after transfection.\n\n## Cloning\n\nTo generate the various fusion constructs of rsEGFP with Keratin19, with the histone H2B, with Vimentin, or with the peroxisomal membrane protein Pex16, rsEGFP was amplified (forward primer: GATCCACCGGTCGCGGCGTGAGCAAGGGCGAGGAGCTG/reverse primer: ACAACTTAAGAACAACAATTGTTACTTGTACAGCTCGTCCATGCC). The PCR fragment was cloned into the gateway destination vector pMD-tdEosFP-N using the restriction sites AgeI and AflII, thereby replacing the tdEosFP coding sequence against the rsEGFP2 sequence. The final plasmids pMD-Ker19-rsEGFP2, pMD-H2B-rsEGFP2, pMD-Vim-rsEGFP2 and pMD-Pex16-rsEGFP2 were constructed by gateway vector conversion (Invitrogen, Carlsbad, CA) using the donor vectors pDONR223-Krt19, pDONR223-Hist1H2BN, pDONR223-Vim and pDONR223-Pex16, respectively (Lamesch et al., 2007). Pex16-rsEGFP was cloned accordingly.\n\nTo generate pMD-rsEGFP2-\u03b1-Tubulin, rsEGFP2 was amplified (forward primer: GATCCGCTAGCGCTAATGGTGAGCAAGGGCGAGGAG/reverse primer: CACTCGAGATCTGAGTCCGGACTTGTACAGCTCGTCCATGCC) and cloned into the vector pEGFP-Tub (Clontech, Mountain View, CA) using the restriction sites NheI and BglII replacing EGFP.\n\nTo generate a construct that targets rsEGFP2 to the ER, the rsEGFP2 sequence was PCR-amplified (forward primer: CTGCAGGTCGACATGGTGAGCAAGGGCGAGGA/reverse primer: TTCTG CGGCCGCCTTGTACAGCTCGTCCATGCCGCCGGT). The PCR product was ligated into the vector pEF/myc/ER (Invitrogen, Carlsbad, CA) using the SalI and NotI restriction sites.\n\n## RESOLFT microscope\n\nA home-built RESOLFT microscope (Grotjohann et al., 2011; Testa et al., 2012) was adapted for imaging rsEGFP2 in living cells. The microscope utilized three separate beam paths for generating focal spots: two at 491 nm wavelength for excitation and off-switching and one at 405 nm for on-switching of the fluorophores. The two focal spots at 491 nm comprised: (i) a normal diffraction-limited focus with a Gaussian profile for reading out the fluorescence signal and (ii) a focus with a central intensity minimum (\u2018zero\u2019) for off-switching at the focal periphery in the xy-plane, obtained by passing the beam through a vortex phase mask (463 nm mask, vortex plate VPP-A, RPC Photonics, Rochester, NY). The first two foci were both generated by the same laser diode (50 mW, Calypso 50, Cobolt, Stockholm, Sweden). The third focal spot, again with a normal diffraction-limited Gaussian profile, was generated by a laser diode at 405 nm wavelength (30 mW, BCL-030-405-S, CrystaLaser, Reno, NV, USA) and used for the on-switching of rsEGFP2.\n\nThe microscope was equipped with a glycerol-immersion objective lens (PL APO, CORR CS, 63\u00d7, 1.3NA, glycerol; Leica Microsystems, Wetzlar, Germany). A piezo system (ENV40/20, Piezosystem Jena, Jena, Germany) was used to move the objective lens along the optical axis. A separate piezo stage (NV40, Piezosystem Jena) was implemented to translate the sample with nanometer precision in the xy-plane. The fluorescence signal was filtered by a band pass filter (532/70 nm) and detected by an avalanche photo diode (Perkin Elmer, Waltham, MA, USA); fluorescence photons were only allowed to be counted when the 491 nm read-out beam was switched on. The individual laser beam paths were triggered either by an acousto-optic modulator (MTS 130A3, Pegasus Optik GmbH, Wallenhorst, Germany) or by an acousto-optic tunable filter (AOTF.nC/TN, Pegasus Optik GmbH). The pulse sequence and duration were defined by a pulse generator (Model 9514, QUANTUM COMPOSERS, Bozeman, MT, USA) and triggered by a fast acquisition card (MCA-3 Series/P7882, FAST ComTec GmbH, Oberhaching, Germany) pixel by pixel.\n\nAlternatively, we assembled the Abberior RESOLFT Quad P microscopy kit provided by Abberior Instruments GmbH, G\u00f6ttingen, Germany, which used the same arrangement and wavelengths as the home-built system, except for the fact that scanning was accomplished by a galvanometer beam scanning system (Quad scanner) and the body of the microscope was an Olympus iX81 inverted microscope. Imaging was performed with a 100\u00d7 Olympus oil immersion objective lens of 1.4 numerical aperture.\n\n## Image acquisition and analysis\n\nImage acquisition was performed with the software Imspector (www.imspector.de). Each image was recorded by applying a specific pulse scheme, pixel by pixel. The fluorescence signal was recorded only when the 491 nm read-out Gaussian shaped beam was on. Between each pixel pulse sequence (pixel dwell times 75\u2013380 \u00b5s) a delay of 20 \u00b5s was inserted for synchronization, resulting in effective dwell times of 95\u2013400 \u00b5s. The laser intensities used in our illumination scheme ranged between 1\u2013100 kW/cm2. The approximately 10% remaining switching background introduces some diffraction-limited components in the final raw image. To remove this background, we deconvolved the final image by Richardson\u2013Lucy (Richardson, 1972; Lucy, 1974) restoration with a 10% diffraction-limited PSF added to the RESOLFT PSF, as detailed previously (Hofmann et al., 2005). 10 iterations were performed. All experiments were performed at 35\u00b0C except those presented in Figure 3B and Figure 3\u2014figure supplement 2.\n\n## Determination of the single-molecule brightness\n\nThe single-molecule brightness of EGFP, rsEGFP and rsEGFP2 were determined using fluorescence fluctuation spectroscopy, specifically fluorescence correlation spectroscopy (FCS) (Haustein and Schwille, 2003) and fluorescence intensity distribution analysis (Chen et al., 1999; Kask et al., 1999). Both methods analyze characteristic fluctuations \u03b4F(t) in the fluorescence signal F(t) in time t about an average value F(t) = <F(t)> + \u03b4F(t) by either calculating the second-order auto-correlation function G(tc) (FCS, with correlation time tc) or by building up a frequency histogram P(n, \u2206T) of photon counts detected per time window \u2206T (FIDA, with number of photons n). Fluctuations in F arise for example from diffusion of the fluorescent proteins in and out of the confocal detection volume or by transitions into and out of a dark state such as the triplet, other metastable dark or the switch-off state.\n\nFCS and FIDA data were analyzed using common theory. As outlined in detail previously (Eggeling et al., 2007), the analysis most importantly resulted in three characteristic molecular parameters of the fluorescent proteins: the single-molecule brightness (or count-rate per particle) q (from FIDA measurements with \u2206T = 10 \u00b5s), the observation time \u03c4obs (from FCS measurements), and the average population of a \u00b5s-long-lived dark state (probably the triplet state of the fluorophore, from FCS measurements). In Figure 1\u2014figure supplement 2 the q values in relation to the normalized q value of EGFP are shown. Without saturating the excitation, the brightness q ~ \u03a6FL \u03b5 scales with the fluorescence quantum yield \u03a6FL and the extinction coefficient \u03b5 (compare Table 1). For EGFP, the observation time \u03c4obs is given by its average transit time through the focal spot, while for rsEGFP and rsEGFP2 it is given by both the transit time and\u2014if faster\u2014the average switch-off time (Eggeling et al., 2007).\n\nThe fluorescence fluctuation data were recorded on a FCS reader (Insight, Inovation GmbH, Osnabr\u00fcck, Germany), applying a water immersion objective (60\u00d7 UPLSAPO, NA 1.2, Olympus, Japan). Data was recorded for different powers of the 491 nm excitation laser (Viper, Qioptiq, Hamble, UK) and for the fluorescent proteins in aqueous solution (PBS buffer, pH 7.5).\n\nThe observation times \u03c4obs were ~225 \u00b5s for EGFP (in accordance to the expected focal transit time), while those of rsEGFP and rsEGFP2 were shorter, reaching a value of ~40 \u00b5s at excitation powers >50 \u00b5W (15 kW/cm2) for rsEGFP and ~10\u201315 \u00b5s for rsEGFP2. The shorter observation times in the case of rsEGFP and rsEGFP2 result from a fast population of >200 \u00b5s-lived dark states (for details see (Eggeling et al., 2007)).\n",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f96309bd-1474-4c78-aaaa-2e6e5136cd44",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C1",
+      "claim": "RESOLFT microscopy relies on fluorophore switching between long-lived states and uses coordinate-targeted sequential sample interrogation using low light levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The super-resolution microscopy called RESOLFT relying on fluorophore switching between longlived states, stands out by its coordinate-targeted sequential sample interrogation using low light levels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established principle of RESOLFT microscopy based on prior scientific understanding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "dd7d035c-284a-423b-a009-dc8a259642b9",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C2",
+      "claim": "RESOLFT has been shown to discern nanostructures in living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While RESOLFT has been shown to discern nanostructures in living cells, the reversibly photoswitchable green fluorescent protein (rsEGFP) employed in these experiments was switched rather slowly and recording lasted tens of minutes.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to previous demonstrations of RESOLFT in living cells, citing prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "419a14fb-f0e7-4807-84d2-eebba34d4227",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C3",
+      "claim": "rsEGFP used in previous RESOLFT experiments was switched rather slowly and recording lasted tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the reversibly photoswitchable green fluorescent protein (rsEGFP) employed in these experiments was switched rather slowly and recording lasted tens of minutes.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes limitations of previous work using rsEGFP.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4538d4d5-5133-4f70-bb41-084fc743d3cf",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C4",
+      "claim": "rsEGFP2 provides faster switching than rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We now report on the generation of rsEGFP2 providing faster switching and the use of this protein to demonstrate 25\u2013250 times faster recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "c2005d9b-a63c-45dc-b5cb-cacfc99760f3",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C5",
+      "claim": "rsEGFP2 enables 25\u2013250 times faster recordings than rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We now report on the generation of rsEGFP2 providing faster switching and the use of this protein to demonstrate 25\u2013250 times faster recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding supported by experimental measurements shown in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "e23c815e-a84c-4aad-87a3-dab034190af0",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C6",
+      "claim": "Lens-based optical microscopy could not resolve features finer than half the wavelength of light (\u03bb/2 > 200 nm) for many decades.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While for many decades lens-based optical microscopy could not resolve features finer than half the wavelength of light (\u03bb/2 > 200 nm), the recent development of fluorescence nanoscopy or super-resolution imaging methods boosted its resolution potential",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This refers to the historical diffraction limit in optical microscopy, which is established scientific knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "d3aed943-efb7-4882-bdca-fe09e60abf4d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C7",
+      "claim": "Recent development of fluorescence nanoscopy or super-resolution imaging methods boosted the resolution potential of optical microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the recent development of fluorescence nanoscopy or super-resolution imaging methods boosted its resolution potential (Hell, 2003, 2009; Huang et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to developments in the field supported by cited references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "b60214ee-c24f-4988-a1f3-6dcac9b03993",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C8",
+      "claim": "In super-resolution methods, the diffraction barrier is overcome by employing a fluorophore transition between two states, typically a fluorescent on- and a non-fluorescent off-state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In all these methods, the diffraction barrier is overcome by employing a fluorophore transition between two states, typically a fluorescent on- and a non-fluorescent off-state (Hell, 2009) in order to separate neighboring features.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the general principle of super-resolution microscopy, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "86bdd139-b51e-474c-808e-099f360a8fa6",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C9",
+      "claim": "RESOLFT differs from stochastic single fluorophore on-off-switching methods by using a doughnut or line pattern scanned across the sample.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The method called RESOLFT differs from stochastic single fluorophore on-off-switching methods by the fact that a doughnut or a line pattern is scanned across the sample, determining at any point in time the nanosized coordinate range where the fluorophores are in the on-state.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the distinguishing feature of RESOLFT methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "94a97b92-c836-4a7b-b301-be8f87d8e5c8",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C10",
+      "claim": "Using long lifetimes of the on- and off-states reduces the light intensities required for optical switching by orders of magnitude over the related STED approach.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using long lifetimes of the on- and off-states reduces the light intensities required for optical switching by orders of magnitude over the related STED approach, making RESOLFT attractive for extended live-cell or large area imaging.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This explains the theoretical advantage of RESOLFT based on the properties of long-lived states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "3753d351-d5a7-4b75-a8e3-a765de7efe6f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C11",
+      "claim": "RESOLFT was suggested almost a decade ago.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although it was suggested almost a decade ago (Hell, 2003; Hell et al., 2003)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to the historical development of RESOLFT with specific citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "9d35bb10-b036-4900-80e6-b22fee7f1cac",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C12",
+      "claim": "The viability of RESOLFT was shown in principle in 2005-2007.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and its viability shown in principle (Hofmann et al., 2005; Dedecker et al., 2007; Schwentker et al., 2007)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to proof-of-principle demonstrations supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "8feddcd6-ad6c-4835-93d5-53f1a6f0f86c",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C13",
+      "claim": "The wider applicability of RESOLFT nanoscopy to biological imaging has been demonstrated only recently.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the wider applicability of RESOLFT nanoscopy to biological imaging has been demonstrated only recently (Brakemann et al., 2011; Grotjohann et al., 2011; Rego et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to recent demonstrations in biological systems with supporting citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "017400f4-d52d-4101-b09a-748b3e26910d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C14",
+      "claim": "Fluorescent protein based RESOLFT critically relies on reversibly switchable fluorescent proteins (RSFPs) providing many on-off cycles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The reason is that fluorescent protein based RESOLFT critically relies on reversibly switchable fluorescent proteins (RSFPs) providing many on-off cycles, such as the recently designed rsEGFP (Grotjohann et al., 2011).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This explains the requirement for RESOLFT based on the nature of the technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "a1c3adaa-127f-490f-9eb6-f70aceeafcda",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C15",
+      "claim": "The slow switching kinetics of rsEGFP entailed pixel dwell times of 10\u201320 ms at switching light intensities of ~1 kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Unfortunately, in these demonstrations, the still relatively slow switching kinetics of rsEGFP entailed pixel dwell times of 10\u201320 ms at switching light intensities of ~1 kW/cm2.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes the performance characteristics of rsEGFP from previous work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "7e836f4b-8481-4bed-ab12-fe3e41c4e57c",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C16",
+      "claim": "Images of 10 \u00b5m \u00d7 10 \u00b5m in size with a pixel step size of 20 nm using rsEGFP required recording times of about an hour.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence images of 10 \u00b5m \u00d7 10 \u00b5m in size and a pixel step size of 20 nm required recording times of about an hour.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the pixel dwell times and image dimensions from previous work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "5d80672a-17ed-49d4-9bab-524f3bb8377f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C17",
+      "claim": "rsEGFP2 facilitates faster switching together with modifications of the initial switching scheme.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this study we describe the generation, characterization and application of a novel RSFP, namely rsEGFP2, which facilitates faster switching and, together with modifications of the initial switching scheme, enables 25\u2013250 faster RESOLFT recordings in living cells.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding of the study supported by experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4032f536-e886-41e9-9c61-a3c1058709a5",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C18",
+      "claim": "The exchange of a single amino acid in the chromophore of EGFP can generate a reversibly switchable fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We observed that already the exchange of a single amino acid in the chromophore of the photostable and widely-used enhanced green fluorescent protein (EGFP)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental observation made in generating rsEGFP2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "b89af8d5-1233-4834-9be9-c32680f5b6f7",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C19",
+      "claim": "rsEGFP2 has its fluorescence excitation maximum at 478 nm in the fluorescent state at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Adopting the fluorescent state at equilibrium, rsEGFP2 has its fluorescence excitation and emission maximum at 478 nm and 503 nm, respectively (Figure 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measured spectroscopic property shown in Figure 1A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "8a557d03-b7fa-495e-a683-1441f46eb61a",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C20",
+      "claim": "rsEGFP2 has its fluorescence emission maximum at 503 nm in the fluorescent state at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Adopting the fluorescent state at equilibrium, rsEGFP2 has its fluorescence excitation and emission maximum at 478 nm and 503 nm, respectively (Figure 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measured spectroscopic property shown in Figure 1A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4108bc85-074e-4a5f-ae30-511266461dae",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C21",
+      "claim": "rsEGFP2 exhibits an extinction coefficient of \u03b5 \u2248 61,000 M\u22121cm\u22121 in the fluorescent state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the fluorescent state, a solution of rsEGFP2 exhibits an extinction coefficient of \u03b5 \u2248 61,000 M\u22121cm\u22121 and a fluorescence quantum yield of \u03a6Fl = 0.3 (Table 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measured photophysical property reported in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "9f3a6dd2-bc31-4f5c-9f45-2940d4b685ec",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C22",
+      "claim": "rsEGFP2 exhibits a fluorescence quantum yield of \u03a6Fl = 0.3 in the fluorescent state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the fluorescent state, a solution of rsEGFP2 exhibits an extinction coefficient of \u03b5 \u2248 61,000 M\u22121cm\u22121 and a fluorescence quantum yield of \u03a6Fl = 0.3 (Table 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measured photophysical property reported in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "9dc2a49d-1090-46ec-80d5-d6a275feb3bf",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C23",
+      "claim": "The brightness of rsEGFP2 is similar to that of rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence the brightness (given by \u03b5 \u03a6Fl) of rsEGFP2 is similar to that of rsEGFP and about 60% of that of EGFP at low light intensity irradiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the measured extinction coefficient and quantum yield values.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "fd8abcd1-c595-44a2-8cd7-587bacc238b3",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C24",
+      "claim": "The brightness of rsEGFP2 is about 60% of that of EGFP at low light intensity irradiation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence the brightness (given by \u03b5 \u03a6Fl) of rsEGFP2 is similar to that of rsEGFP and about 60% of that of EGFP at low light intensity irradiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the measured photophysical properties.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "989287aa-beff-4c73-921e-04f263be4054",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C25",
+      "claim": "The single molecule brightness of rsEGFP was ~52% of that of EGFP at light intensities of 5 to 100 kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single-molecule spectroscopy measurements performed at higher light intensities (5 to 100 kW/cm2) showed that the single molecule brightness of rsEGFP and rsEGFP2 were ~52% and ~44% of that of EGFP, respectively (Figure 1\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured by single-molecule spectroscopy shown in Figure 1\u2014figure supplement 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "6f095f4f-e09f-42b6-af64-b7b142b0465e",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C26",
+      "claim": "The single molecule brightness of rsEGFP2 was ~44% of that of EGFP at light intensities of 5 to 100 kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single-molecule spectroscopy measurements performed at higher light intensities (5 to 100 kW/cm2) showed that the single molecule brightness of rsEGFP and rsEGFP2 were ~52% and ~44% of that of EGFP, respectively (Figure 1\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured by single-molecule spectroscopy shown in Figure 1\u2014figure supplement 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "cc36e518-15cf-45e2-a81b-55e7a8d91998",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C27",
+      "claim": "The slight difference between brightness values determined at low and high light intensities may be attributed to the increased population of unidentified dark states at higher intensities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The slight difference between brightness values determined at low and high light intensities may be attributed to the increased population of unidentified dark states at higher intensities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a proposed explanation for the observed difference in brightness measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "cce5d011-456b-4607-9b89-023903cdbc1c",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C28",
+      "claim": "rsEGFP2 exhibits a 'negative' switching mode where irradiation with light of around 480 nm induces fluorescence and switches rsEGFP2 off.",
+      "claim_type": "EXPLICIT",
+      "source_text": "rsEGFP2 exhibits a 'negative' switching mode, that is irradiation with light of around 480 nm induces fluorescence and, in a competing process, switches rsEGFP2 off.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the observed switching behavior of rsEGFP2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "0b97bff4-79b7-4c7c-9a72-9a508f7141eb",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C29",
+      "claim": "Irradiation with light of around 405 nm switches rsEGFP2 back from the off- into the on-state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Subsequent irradiation with light of around 405 nm switches the protein back from the off- into the on-state (Figure 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the observed switching behavior shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "a615bb8b-2acb-4aec-89e3-b048b65a96fd",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C30",
+      "claim": "Irradiation of purified rsEGFP2 with light of ~480 nm leads to a decrease of the 483 nm absorption band.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Irradiation of a purified rsEGFP2 solution with light of ~480 nm leads to a decrease of the 483 nm absorption band, which presumably corresponds to the anionic (de-protonated) cis-chromophore",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observed spectroscopic change shown in Figure 1C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f28b1d7f-7b35-4790-b1e2-b75b8a309d39",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C31",
+      "claim": "The 483 nm absorption band of rsEGFP2 presumably corresponds to the anionic (de-protonated) cis-chromophore.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which presumably corresponds to the anionic (de-protonated) cis-chromophore",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an interpretation based on known chromophore properties.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f4d3b363-2e6b-4189-91a0-47cc33b44494",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C32",
+      "claim": "Irradiation of purified rsEGFP2 with light of ~480 nm leads to the onset of an absorption band peaking at 408 nm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and to the onset of an absorption band peaking at 408 nm, presumably corresponding to the neutral (protonated) trans-chromophore state (Andresen et al., 2005; Andresen et al., 2007) (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observed spectroscopic change shown in Figure 1C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f335b1cb-f9fb-4ea6-a34f-3646790839a1",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C33",
+      "claim": "The 408 nm absorption band of rsEGFP2 presumably corresponds to the neutral (protonated) trans-chromophore state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "presumably corresponding to the neutral (protonated) trans-chromophore state (Andresen et al., 2005; Andresen et al., 2007)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an interpretation based on cited work on similar proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "8fba4a87-57f7-4eb0-8881-19ba2bc8505a",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C34",
+      "claim": "rsEGFP2 emits fewer photons in a single switching cycle than rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, because a single switching cycle of rsEGFP2 is on average shorter than a single switching cycle of rsEGFP, rsEGFP2 emits fewer photons in a single cycle than rsEGFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the measured switching kinetics and brightness.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "fe20375a-375c-4686-9717-63206325728f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C35",
+      "claim": "The pKa of the rsEGFP2 chromophore in the thermal equilibrium state is ~5.8.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The pKa of the chromophore in the thermal equilibrium state is ~5.8 (Figure 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured from pH-dependent absorption spectra shown in Figure 1D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4c431e23-4fb6-460e-af07-9da002212394",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C36",
+      "claim": "The pKa of rsEGFP2 is lower by 0.7 pH units than the pKa of rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence the pKa of rsEGFP2 is lower by 0.7 pH units than the pKa of rsEGFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated by comparing the measured pKa values of the two proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "da12ccc0-13c3-4683-86d1-ce167a5eb7b3",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C37",
+      "claim": "The light driven switching of rsEGFP2 is likely due to a cis/trans isomerization of the chromophore, accompanied by a change of the chromophoric protonation state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As reported previously for similar RSFPs, the light driven switching of rsEGFP2 is likely due to a cis/trans isomerization of the chromophore, accompanied by a change of the chromophoric protonation state (Andresen et al., 2005; Andresen et al., 2007; Bourgeois and Adam, 2012).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred based on cited work on similar proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "61e0458b-63d5-491a-9716-38e38ca8bba9",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C38",
+      "claim": "The total number of switching cycles before bleaching is critical for the usability of a RSFP for RESOLFT microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The total number of switching cycles before bleaching is critical for the usability of a RSFP for RESOLFT microscopy (Hell, 2009).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an established principle in RESOLFT microscopy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "b2584531-a913-4030-af2b-9dc8706d5fe6",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C39",
+      "claim": "The fluorescence of rsEGFP was halved after ~1,100 switching cycles at light intensities of few kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that under these conditions the fluorescence was halved not before ~1,100 (rsEGFP) and ~2,100 (rsEGFP2) cycles",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured from switching fatigue experiments shown in Figure 1E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "efed0f44-e3ce-46fa-9399-aa36b7821061",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C40",
+      "claim": "The fluorescence of rsEGFP2 was halved after ~2,100 switching cycles at light intensities of few kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that under these conditions the fluorescence was halved not before ~1,100 (rsEGFP) and ~2,100 (rsEGFP2) cycles",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured from switching fatigue experiments shown in Figure 1E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "edcdaa47-e750-46ff-acc9-24802fc7728f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C41",
+      "claim": "rsEGFP2 accommodates more switches than rsEGFP before bleaching.",
+      "claim_type": "EXPLICIT",
+      "source_text": "demonstrating that rsEGFP2 accommodates even more switches than rsEGFP.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is concluded from the switching fatigue measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "e7b5be4d-dab2-465a-a6d0-2e78630338af",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C42",
+      "claim": "In most negative switching RSFPs, including rsEGFP, the ensemble off-switching with blue light is slower by 2\u20133 orders of magnitude compared to the on-switching with UV light at comparable light intensities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In most negative switching RSFPs, including rsEGFP, the ensemble off-switching with blue light is slower by 2\u20133 orders of magnitude, compared to the on-switching with UV light at comparable light intensities, rendering the off-switching the time-limiting step in RESOLFT microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "evidence_reasoning": "This describes a general property of negative switching RSFPs based on known behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "c57f1182-00c7-4970-9010-e98c63983d6f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C43",
+      "claim": "Off-switching is the time-limiting step in RESOLFT microscopy using negative switching RSFPs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "rendering the off-switching the time-limiting step in RESOLFT microscopy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is inferred from the relative switching speeds.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "a40d7b66-ca17-417d-b944-84b4496021e2",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C44",
+      "claim": "The difference in the off-switching halftimes of rsEGFP2 and rsEGFP depends on the light intensities applied.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the difference in the off-switching halftimes of rsEGFP2 and rsEGFP depends on the light intensities applied.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed from measurements shown in Figure 1F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "1045b4c1-967b-4506-a73e-824d3a343481",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C45",
+      "claim": "The lesser the light intensities, the more pronounced is the speed advantage of rsEGFP2 over rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The lesser the light intensities, the more pronounced is the speed advantage of rsEGFP2.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed from the intensity-dependent measurements in Figure 1F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "34352b40-622f-45b1-a3ee-df5d8ceb57bf",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C46",
+      "claim": "At a light intensity of 5.5 kW/cm2 the off-switching of rsEGFP2 was ~6.5 times faster than the off-switching of rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At a light intensity of 5.5 kW/cm2 the off-switching of rsEGFP2 was ~6.5 times faster than the off-switching of rsEGFP (Figure 1F, inset).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific measurement shown in Figure 1F inset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "576ac277-3fcc-4be5-8d9f-281d6262513d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C47",
+      "claim": "The switching speed advantage for rsEGFP2 is presumably even higher at lower intensities than 5.5 kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Presumably the switching speed advantage for rsEGFP2 is even higher at lower intensities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is extrapolated from the observed trend in the data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "8b1f227b-9b87-4dd5-a2f0-4dbe8bf55f07",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C48",
+      "claim": "For intensities of >100 kW/cm2, the differences between rsEGFP and rsEGFP2 switching speeds are negligible.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For undesirable intensities of >100 kW/cm2, the differences between rsEGFP and rsEGFP2 are negligible (Figure 1F, inset).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed from measurements shown in Figure 1F inset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "5ae0c76f-c832-4e62-adb9-cff34297e027",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C49",
+      "claim": "The level to which the fluorescence intensity of an ensemble of rsEGFP2 proteins can be reduced depends on the intensities for off-switching.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These measurements also revealed that the level to which the fluorescence intensity of an ensemble of rsEGFP2 proteins can be reduced (the off-state fluorescence), depends on the intensities for off-switching (Figure 1\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed from measurements shown in Figure 1\u2014figure supplement 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "def53b68-c6b5-446f-b731-1695e48d8a8d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C50",
+      "claim": "The light intensities and the irradiation times used for off-switching influence both the switching speed as well as the lowest residual fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence the light intensities and the irradiation times used for off-switching influence both the switching speed as well as the lowest residual fluorescence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is concluded from the observed dependencies on light intensity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "9c5ffba1-7037-447c-b59c-42bdb4efc1eb",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C51",
+      "claim": "The buffer conditions, most notably the pH, and the cellular environments influence the absolute switching speed of rsEGFP2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, we observed that the buffer conditions, most notably the pH, and the cellular environments also influence the absolute switching speed, potentially requiring adaptations of the illumination protocol to the observed samples.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from experiments under different conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "529cf1f1-8864-4012-a888-9b7713485c03",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C52",
+      "claim": "rsEGFP2 can be fused to histone H2B in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In mammalian cells, rsEGFP2 can be fused to histone H2B and alpha-tubulin, which require a truly monomeric fusion tag",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the expression experiments shown in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "39dc2681-f3c9-49b7-953f-59f0cc0a8dee",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C53",
+      "claim": "rsEGFP2 can be fused to alpha-tubulin in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In mammalian cells, rsEGFP2 can be fused to histone H2B and alpha-tubulin, which require a truly monomeric fusion tag",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the expression experiments shown in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "967524a5-11b0-4c98-b434-974a9d229524",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C54",
+      "claim": "Histone H2B and alpha-tubulin require a truly monomeric fusion tag.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which require a truly monomeric fusion tag",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about these proteins' requirements for proper function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "6bf6206e-0ab1-4565-99ee-2f24194206b5",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C55",
+      "claim": "rsEGFP2 is monomeric.",
+      "claim_type": "IMPLICIT",
+      "source_text": "In mammalian cells, rsEGFP2 can be fused to histone H2B and alpha-tubulin, which require a truly monomeric fusion tag",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the successful fusion to proteins requiring monomeric tags and confirmed by gel analysis in Figure 2\u2014figure supplement 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "60fed52f-50da-43d1-901c-bf170121cd8a",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C56",
+      "claim": "rsEGFP2 can be targeted to various cellular structures including the ER, keratin, histones, vimentin, peroxisomes, and microtubules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Figure 2 shows rsEGFP2 fused to various cellular structures",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the imaging data in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "eaf4de6b-0cb4-45a7-81a1-a8c0d8eedc83",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C57",
+      "claim": "The possibility to switch rsEGFP2 faster than rsEGFP suggested that this protein would be superior for fast live-cell RESOLFT imaging.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The possibility to switch rsEGFP2 faster than rsEGFP, its higher switching stamina, and its faster maturation kinetics, suggested that this protein would be superior for fast live-cell RESOLFT imaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference from the measured properties of rsEGFP2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "3a43473f-8b5f-4eee-b230-e4ec2c908d98",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C58",
+      "claim": "rsEGFP2 has higher switching stamina than rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "its higher switching stamina",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the switching fatigue experiments in Figure 1E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "517768d5-419c-4f7a-be38-e4a851649174",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C59",
+      "claim": "rsEGFP2 has faster maturation kinetics than rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and its faster maturation kinetics",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured and reported in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "5072c1ae-bd2d-4c2c-a85f-6397c5061e1e",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C60",
+      "claim": "RESOLFT images of Vimentin-rsEGFP2 in living cells were recorded with a pixel dwell time of 380 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pixel dwell times: 380 \u00b5s (A)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is the experimental parameter used for imaging in Figure 3A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "5c8819c0-ba9e-4e18-965f-34898201bf1b",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C61",
+      "claim": "RESOLFT imaging of Vimentin-rsEGFP2 revealed changes in the vimentin network occurring over minutes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Figure 3A shows initial confocal (left) and subsequent RESOLFT images taken every 100 s",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the time-lapse imaging in Figure 3A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "245ccc1c-5e1d-43be-b14c-fbfd41a32913",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C62",
+      "claim": "RESOLFT imaging of Keratin19-rsEGFP2 achieved a resolution of <50 nm in raw image data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Evaluating the intensity profiles of these filaments in the focal plane revealed a resolution <50 nm in raw image data (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured from line profiles in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "63db8a9a-44eb-49a5-a5a7-95e8bbf02d5d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C63",
+      "claim": "The ER is a fast moving structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the ER is a fast moving structure we increased the recording speed further",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about ER dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "211c568d-ca33-47d6-ad6a-1fa37f159f05",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C64",
+      "claim": "RESOLFT imaging of the ER with rsEGFP2 was performed with a pixel dwell time of 75 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pixel dwell times: 380 \u00b5s (A), 400 \u00b5s (B), 75 \u00b5s (C, D)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is the experimental parameter used for imaging in Figure 3C,D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "7b4185e6-abff-4fe3-a4e3-2b8d295643c2",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C65",
+      "claim": "A pixel dwell time of 75 \u00b5s is ~250 times faster than reported previously using rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "thus cutting the pixel dwell time down to 75 \u00b5s, which is ~250 times faster than reported previously using rsEGFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated by comparing to previous rsEGFP imaging times.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "744b8a4e-1a8d-4e88-9715-dd47b665fdbb",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C66",
+      "claim": "RESOLFT imaging of the ER with rsEGFP2 covered a field of 100 \u00b5m\u00b2 in 5.9 s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because we aimed at capturing fast movements, we also increased the pixel size to 40 nm \u00d7 40 nm, thus covering a field of 100 \u00b5m\u00b2 in 5.9 s (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is the imaging speed achieved in the experiments shown in Figure 3C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "3eb1339d-d587-4a61-bc49-1e14bdb9a015",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C67",
+      "claim": "Repeated RESOLFT imaging revealed fast changes occurring in the range of seconds in the highly interconnected ER.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Repeated imaging revealed fast changes occurring in the range of seconds in the highly interconnected ER.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed in the time-lapse imaging shown in Figure 3C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "e027a9b1-b231-4865-82dd-806984327b74",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C68",
+      "claim": "RESOLFT imaging of the ER at 2 Hz (0.5 s frame times) revealed changes in the ER structure occurring in <1 s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To visualize movements of the ER in the sub-second range, we reduced the field of view to ~9 \u00b5m2 corresponding to 0.5 s frame times. Figure 3D shows six RESOLFT images out of a time lapse movie containing 100 images (Movie 2) revealing changes in the ER structure occurring in <1 s.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the time-lapse imaging in Figure 3D and Movie 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "ad5152ff-a1e0-4374-8945-1c7dfadc08ec",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C69",
+      "claim": "RESOLFT imaging of Keratin19-rsEGFP2 with 75 \u00b5s dwell time achieved <90 nm resolution in raw data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the ER-tubules are too large to determine the obtained resolution, we imaged again Keratin19-rsEGFP2 expressing cells using a similar dwell time and established <90 nm in raw data (Figure 3\u2014figure supplement 2), meaning that speed was obtained at the expense of resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is measured from line profiles in Figure 3\u2014figure supplement 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "e8c2c212-61f8-4d51-96f7-b45c8a1c68f1",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C70",
+      "claim": "Speed in RESOLFT imaging was obtained at the expense of resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "meaning that speed was obtained at the expense of resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from comparing the resolution at different imaging speeds.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "fd2c7888-5c3a-478d-ba32-e0b64b3d0ddd",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C71",
+      "claim": "RESOLFT imaging of peroxisomes labeled with Pex16-rsEGFP2 was performed at 2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Likewise, when rsEGFP2 was fused to the protein Pex16 to highlight the peroxisomes in living PtK2 cells, we could follow the movement of individual peroxisomes in the RESOLFT-mode in a 3 \u00b5m \u00d7 2 \u00b5m field of view at 2 Hz (Figure 3E; Movie 3).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is the imaging speed achieved in the experiments shown in Figure 3E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "1379618d-3e30-4fce-8579-4ab395192e7f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C72",
+      "claim": "Fluorescent proteins fused to Pex16 are confined to individual peroxisomes and do not diffuse over large distances.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the fluorescent proteins are confined to individual peroxisomes and do not diffuse over large distances, labeled peroxisomes are well suited for a direct comparison of rsEGFP2 and rsEGFP bleaching.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on the known biology of peroxisomal membrane proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "c41ee571-51b1-4296-9243-a79930b7fb4a",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C73",
+      "claim": "The overall photobleaching of rsEGFP2 was substantially lower than that of rsEGFP when fast RESOLFT imaging conditions were applied.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The comparison showed that the overall photobleaching of rsEGFP2 was substantially lower than that of rsEGFP when the above fast RESOLFT imaging conditions were applied (Figure 3\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the bleaching comparison in Figure 3\u2014figure supplement 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "65e97c5d-a4da-4704-bc7f-1c8483eff2b0",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C74",
+      "claim": "Phototoxicity is a major concern in superresolution fluorescence microscopy of living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Phototoxicity is a major concern in (superresolution) fluorescence microscopy of living cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a well-established concern in the field of live-cell microscopy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "5f452544-b492-41c2-9b32-c883b03322ce",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C75",
+      "claim": "STED-microscopy entails relatively large intensities of 5\u2013200 MW/cm2, depending on the desired resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Among the established methods, STED-microscopy entails relatively large intensities, (5\u2013200 MW/cm2), depending on the desired resolution.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the typical operating parameters of STED microscopy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "49094521-9c4e-4dff-ad67-bb3abe45ba3d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C76",
+      "claim": "The wavelengths (560\u2013800 nm) used for STED are in the comparatively benign long-wavelength part of the spectrum.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, since the wavelengths (560\u2013800 nm) used for STED are in the comparatively benign long-wavelength part of the spectrum (Hell, 2009), STED microscopy can image living cells and tissues",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about the photobiological effects of different wavelengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "0f3e2152-8542-4d25-85d9-38901f11fd12",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C77",
+      "claim": "STED microscopy can image neurons in the cerebral cortex of a living mouse.",
+      "claim_type": "EXPLICIT",
+      "source_text": "including neurons in the cerebral cortex of a living mouse (Berning et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to a specific demonstration in cited work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f15a5454-7fe5-4436-96ab-503bc2307658",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C78",
+      "claim": "The light intensities employed in RSFP-based RESOLFT microscopy (1\u201380 kW/cm2) are several orders of magnitude lower than in STED-microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the RSFP-based RESOLFT microscopy demonstrated here, the employed light intensities (1\u201380 kW/cm2) are several orders of magnitude lower than in STED-microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a comparison of the measured intensities used in the two techniques.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "bad8da50-aa4d-45e8-8ce5-1533f4ad2545",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C79",
+      "claim": "The light intensities used in RSFP-based RESOLFT microscopy are comparable to those used in live-cell confocal fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and comparable to those used in live-cell confocal fluorescence microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a comparison to typical confocal microscopy parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "b80bd644-9df0-485b-a072-4cde3f39524f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C80",
+      "claim": "Stochastic single-molecule based approaches (PALM, STORM, GSDIM) typically use light intensities of 0.1\u2013100 kW/cm\u00b2 for imaging living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Stochastic single-molecule based approaches, such as the methods called PALM (Manley et al., 2008; Shroff et al., 2008), STORM (Jones et al., 2011; Shim et al., 2012), and GSDIM (F\u00f6lling et al., 2008), typically use similar light intensities for imaging living cells (0.1\u2013100 kW/cm\u00b2 depending on the exposure time or camera frame rate)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes the typical operating parameters of these methods from cited work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "13143deb-a9b6-4496-b474-7233f488c6df",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C81",
+      "claim": "In stochastic single-molecule methods, the intensities are applied continuously to all points in the imaged area.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but they apply these intensities (i.e. temporal and spatial photon densities) continuously to all points in the imaged area.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the fundamental operating principle of stochastic methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "16e18d4b-4768-40c2-a8c2-fe248abba96b",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C82",
+      "claim": "In point-scanning RESOLFT, the intensities are applied only for a brief duration on a small, sub-micrometer sized region of the imaged area.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since our RESOLFT approach has been implemented as a point-scanning system, the intensities employed are applied only for a brief duration on a small, sub-micrometer sized region of the imaged area.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the implementation of the RESOLFT system used in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "1863cf6c-7c0b-4607-af23-f49ab304ea80",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C83",
+      "claim": "In RESOLFT microscopy, any pixel is only illuminated during a small fraction of the recording time of the image.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence any pixel is only illuminated during a small fraction of the recording time of the image.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the point-scanning implementation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "e1d6fef7-5f93-476c-b097-968f1b6b2e75",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C84",
+      "claim": "In stochastic methods, the whole imaged area is irradiated for the entire time of recording.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the stochastic methods, the whole imaged area is irradiated for the entire time of recording, that is for a couple of seconds or minutes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the fundamental operating principle of stochastic methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "6b6ffb74-761b-4662-b444-490bf40edd74",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C85",
+      "claim": "The total light dose impinging on the cell in RESOLFT microscopy is lower by 3\u20134 orders of magnitude compared to stochastic single-molecule based approaches.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, in the RESOLFT microscopy demonstrated here, the total light dose impinging on the cell is lower by 3\u20134 orders of magnitude compared to the stochastic single-molecule based approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the measured intensities and exposure times.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4912e09c-54a5-4074-ae66-9f0c9a4c66c7",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C86",
+      "claim": "For recording the shown RESOLFT images, 2\u201310 J/cm\u00b2 were applied for switching into the on-state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Concretely, for recording the shown RESOLFT images, 2\u201310 J/cm\u00b2 were applied for switching into the on-state",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from the experimental parameters used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "86e67f76-c7b9-49da-8292-58e85aacabe0",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C87",
+      "claim": "For recording the shown RESOLFT images, 25\u2013300 J/cm\u00b2 were applied for eliciting fluorescence and switching the protein off.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and 25\u2013300 J/cm\u00b2 for eliciting fluorescence and switching the protein off.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from the experimental parameters used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "026761d3-2dd2-4846-aa2e-7210b09a4c17",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C88",
+      "claim": "PALM live-cell imaging requires light doses of 1,000\u2013100,000 J/cm\u00b2 for on-switching with UV (405 nm) light.",
+      "claim_type": "EXPLICIT",
+      "source_text": "PALM live-cell imaging reportedly requires light doses of 1,000\u2013100,000 J/cm\u00b2 for on-switching with UV (405 nm) light",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is reported from cited work on PALM imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "c64dd791-a351-4577-84f5-e1ef94394796",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C89",
+      "claim": "PALM live-cell imaging requires light doses of 25,000\u2013300,000 J/cm\u00b2 for fluorescence excitation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and 25,000\u2013300,000 J/cm\u00b2 for fluorescence excitation (Manley et al., 2008; Shroff et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is reported from cited work on PALM imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "dab1dae1-4234-42a1-800b-81ffe80b8225",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C90",
+      "claim": "Live-cell GSDIM experiments using a yellow fluorescent protein required irradiation doses of 100,000\u2013900,000 J/cm\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Live-cell GSDIM experiments using a yellow fluorescent protein required even larger irradiation doses (100,000\u2013900,000 J/cm\u00b2) (F\u00f6lling et al., 2008; Testa et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is reported from cited work on GSDIM imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "58970d60-3fa1-4fb5-a744-7584574d793b",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C91",
+      "claim": "RESOLFT microscopy is currently the superresolution method entailing the lowest light dose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, perhaps not surprisingly, RESOLFT microscopy has been used to image neurons in living organotypical hippocampal cultures over several hours without noticeable photodegradation (Testa et al., 2012). Note that the comparatively low-dose/low-intensity requirement of the RESOLFT concept is due to the fact that it uses long-lived on- and off-states in combination with the fact that it does not require fast emission of many photons for establishing molecular coordinates (localization). Since the applied intensities are largely determined by the on-off switching kinetics, the concept offers ample room for accommodating novel proteins with switching kinetics entailing even lower light doses and intensities.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the comparison of light doses across different methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "6e74f78c-2910-4377-8e90-edbc41d06ea1",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C92",
+      "claim": "RESOLFT microscopy has been used to image neurons in living organotypical hippocampal cultures over several hours without noticeable photodegradation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "RESOLFT microscopy has been used to image neurons in living organotypical hippocampal cultures over several hours without noticeable photodegradation (Testa et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to a specific demonstration in cited work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "a5fcd71a-6f99-49cc-8f61-75467f505532",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C93",
+      "claim": "The comparatively low-dose/low-intensity requirement of RESOLFT is due to the fact that it uses long-lived on- and off-states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Note that the comparatively low-dose/low-intensity requirement of the RESOLFT concept is due to the fact that it uses long-lived on- and off-states in combination with the fact that it does not require fast emission of many photons for establishing molecular coordinates (localization).",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This explains the physical basis for the low light requirements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "828a7114-2612-431b-9376-3c9335f0622e",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C94",
+      "claim": "RESOLFT does not require fast emission of many photons for establishing molecular coordinates (localization).",
+      "claim_type": "EXPLICIT",
+      "source_text": "in combination with the fact that it does not require fast emission of many photons for establishing molecular coordinates (localization).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a fundamental difference between RESOLFT and localization-based methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "8b5aa322-a513-46e7-ba31-48fe1448171a",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C95",
+      "claim": "The applied intensities in RESOLFT are largely determined by the on-off switching kinetics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the applied intensities are largely determined by the on-off switching kinetics, the concept offers ample room for accommodating novel proteins with switching kinetics entailing even lower light doses and intensities.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This explains the relationship between switching kinetics and required intensities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f83ba278-e243-4c4e-afc7-b65b548e2a23",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C96",
+      "claim": "The RESOLFT concept offers room for accommodating novel proteins with switching kinetics entailing even lower light doses and intensities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the concept offers ample room for accommodating novel proteins with switching kinetics entailing even lower light doses and intensities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a forward-looking statement about future possibilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "7930005e-ca9a-4d01-bbf4-7fcf6a15ba86",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C97",
+      "claim": "rsEGFP2 is a bright, monomeric, photostable, quickly maturating, and fast switching alternative to rsEGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In conclusion, rsEGFP2 is a bright, monomeric, photostable, quickly maturating, and fast switching alternative to rsEGFP with comparatively low photobleaching.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This summarizes the measured properties of rsEGFP2 from the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "883c39b3-081f-45e4-b910-c6442bc0aa1f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C98",
+      "claim": "rsEGFP2 has comparatively low photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with comparatively low photobleaching.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the bleaching comparison experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4e0407cb-ded0-4049-b583-f02a9f551d26",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C99",
+      "claim": "rsEGFP2 is expected to outperform other green fluorescent RSFPs because of its faster maturation and good usability for functional protein tagging.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We expect it to outperform other green fluorescent RSFPs (Ando et al., 2007; Stiel et al., 2007) because of its faster maturation and good usability for functional protein tagging.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "evidence_reasoning": "This is a prediction based on the measured properties of rsEGFP2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "7d812aef-03f6-4351-bab6-d04b4043bc86",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C100",
+      "claim": "Quick illumination sequences allowed up to 250-fold faster recordings compared to previous reports.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An implementation of quick illumination sequences allowed us to realize up to 250-fold faster recordings as compared to previous reports, thus facilitating live-cell RESOLFT nanoscopy with pixel dwell times down to 70 \u00b5s.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the imaging experiments in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4150c6c0-2cd7-458b-8a8f-e9ec17a1da00",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C101",
+      "claim": "Live-cell RESOLFT nanoscopy with rsEGFP2 can be performed with pixel dwell times down to 70 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "thus facilitating live-cell RESOLFT nanoscopy with pixel dwell times down to 70 \u00b5s.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is achieved in the imaging experiments shown in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "147c5a31-57a9-49f9-8f70-c0afe353fbc1",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C102",
+      "claim": "RESOLFT nanoscopy allows one to adjust both the duration and the illumination intensity, as well as the optical switching scheme.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since one can adjust both the duration and the illumination intensity, as well as the optical switching scheme, RESOLFT nanoscopy allows one to adapt speed and resolution within a certain range, to the sample needs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "evidence_reasoning": "This describes the flexibility of the RESOLFT approach demonstrated in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "715acf3f-02bd-4b29-a7f5-798e8480c020",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C103",
+      "claim": "RESOLFT nanoscopy allows one to adapt speed and resolution within a certain range to the sample needs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "RESOLFT nanoscopy allows one to adapt speed and resolution within a certain range, to the sample needs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated by the different imaging conditions used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f4492e90-8eb9-4b65-bf09-89c51204f8f9",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C104",
+      "claim": "In the point-scanning scheme, the total recording time of the image scales with the area of recording.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, we note that in the point-scanning scheme used here, the total recording time of the image scales with the area of recording.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a fundamental property of point-scanning microscopy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "d49ddb4f-d497-4b7b-b84c-d91e435cfcd0",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C105",
+      "claim": "Parallelization of the scanning procedure with an array of doughnuts or lines overcomes the dependence on the field of view.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Parallelization of the scanning procedure with an array of doughnuts or lines (so-called 'structured illumination') (Gustafsson, 2005; Schwentker et al., 2007; Rego et al., 2012) overcomes this dependence on the field of view and cuts down the recording time by the degree of parallelization.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This describes a known approach to speed up imaging, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "d1c14749-7f77-496a-9853-b96aa6288e9d",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C106",
+      "claim": "The degree of parallelization in RESOLFT can easily amount up to a factor of 100\u20131000.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Owing to the low-light level operation, the degree of parallelization can easily amount up to a factor of 100\u20131000.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an estimate based on the low light levels required for RESOLFT.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4189c187-3cb3-4ee4-ac63-fe178ca4958f",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C107",
+      "claim": "Parallelized RESOLFT versions should enable video-rate nanoscopy across the whole field of view of the objective lens.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For this reason, given the short pixel dwell times attained herein, parallelized RESOLFT versions should enable video-rate nanoscopy across the whole field of view of the objective lens.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction based on the achieved pixel dwell times and potential parallelization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "9424221b-6e98-4b03-b5a7-52d3b18b3416",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C108",
+      "claim": "rsEGFP2 was generated by site-directed mutagenesis.",
+      "claim_type": "IMPLICIT",
+      "source_text": "For site-directed mutagenesis, the QuikChange Site Directed Mutagenesis Kit (Stratagene, La Jolla, CA) or a multiple-site mutagenesis approach using several primers were used.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method used to generate rsEGFP2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f417b74e-6af2-460f-983e-13301ac8b6ea",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C109",
+      "claim": "rsEGFP2 was expressed in E. coli strain BL21-CP-RIL.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In brief, proteins were expressed in the E. coli strain BL21-CP-RIL",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the expression system used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f4eee7e4-ff7b-428f-95ff-5801a4590899",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C110",
+      "claim": "rsEGFP2 was purified by Ni-NTA affinity chromatography.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and purified by Ni-NTA affinity chromatography (His SpinTrap, GE Healthcare), according to the manufacturer's instructions.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the purification method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "bced9455-08ec-4c98-8fd1-8e026965a9fc",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C111",
+      "claim": "The home-built RESOLFT microscope utilized three separate beam paths for generating focal spots.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The microscope utilized three separate beam paths for generating focal spots: two at 491 nm wavelength for excitation and off-switching and one at 405 nm for on-switching of the fluorophores.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the optical setup of the microscope used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "5f71e223-28ed-47a1-8e73-da0a9a210b7b",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C112",
+      "claim": "A focus with a central intensity minimum for off-switching was obtained by passing the beam through a vortex phase mask.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a focus with a central intensity minimum ('zero') for off-switching at the focal periphery in the xy-plane, obtained by passing the beam through a vortex phase mask (463 nm mask, vortex plate VPP-A, RPC Photonics, Rochester, NY).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method used to generate the doughnut-shaped beam.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "336d12bc-d118-4bce-b5c7-c23f61f906f0",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C113",
+      "claim": "Richardson\u2013Lucy restoration with 10 iterations was used to remove switching background from RESOLFT images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To remove this background, we deconvolved the final image by Richardson\u2013Lucy (Richardson, 1972; Lucy, 1974) restoration with a 10% diffraction-limited PSF added to the RESOLFT PSF, as detailed previously (Hofmann et al., 2005). 10 iterations were performed.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the image processing method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "49286acd-aadd-4667-91bd-56e0e32041d3",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C114",
+      "claim": "The approximately 10% remaining switching background introduces some diffraction-limited components in the final raw image.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The approximately 10% remaining switching background introduces some diffraction-limited components in the final raw image.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This describes an artifact in the raw RESOLFT images.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "93a99249-b27c-49a4-ad65-60ae2204b6a2",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "claim_id": "C115",
+      "claim": "All experiments except those in Figure 3B and Figure 3\u2014figure supplement 2 were performed at 35\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All experiments were performed at 35\u00b0C except those presented in Figure 3B and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This specifies the experimental conditions used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2c3e0c88-b17d-4249-8d63-c8c86746661a",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The spectroscopic and photophysical characterization of rsEGFP2 is well-supported by direct measurements including absorption/emission spectra, extinction coefficient, quantum yield, pKa determination, and switching behavior. The mechanistic interpretation of cis/trans isomerization is appropriately qualified as inference based on cited work with similar proteins. The data are internally consistent and use standard characterization methods.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4317b48d-7941-46b1-a15b-40af3cf4330e",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The switching kinetics and photostability data are well-supported by quantitative measurements comparing rsEGFP2 to rsEGFP. The finding that rsEGFP2 switches faster (6.5\u00d7 at 5.5 kW/cm\u00b2) and withstands more switching cycles (~2,100 vs ~1,100) is directly measured. The observation that switching speed advantage depends on light intensity is appropriately documented, though extrapolation to lower intensities (C47) is speculative. The influence of pH and cellular environment on switching speed is noted but could benefit from more systematic characterization.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "e7e2e6c5-2a3c-4a1e-835f-71f034c0af10",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The monomericity and functional tagging capability of rsEGFP2 are well-supported by successful fusion to multiple cellular proteins including histone H2B and alpha-tubulin, which are known to require monomeric tags. The semi-native gel analysis (Figure 2\u2014figure supplement 1) provides direct evidence of monomeric state. Successful targeting to diverse cellular structures (ER, keratin, vimentin, peroxisomes, microtubules) demonstrates broad applicability for cell biology applications.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The main result\u2014that rsEGFP2 enables 25-250\u00d7 faster RESOLFT imaging\u2014is well-supported by multiple imaging demonstrations with different cellular structures at various speeds (pixel dwell times from 75-380 \u03bcs vs. previous 10-20 ms). Resolution measurements (<50 nm for keratin at slower speeds, <90 nm at faster speeds) are quantified from line profiles. The trade-off between speed and resolution is appropriately acknowledged. The combination of faster switching kinetics, higher photostability, and lower photobleaching provides a mechanistic basis for the improved performance. Time-lapse imaging of dynamic structures (ER, peroxisomes) validates biological applicability.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "4b841b07-9e39-4b9c-835c-6794c08750f4",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The comparison of light doses across super-resolution methods is well-supported by quantitative calculations and cited literature. The claim that RESOLFT uses 3-4 orders of magnitude lower total dose than stochastic methods (PALM, STORM, GSDIM) is justified by the point-scanning implementation where each pixel is only briefly illuminated. Specific dose values for RESOLFT (2-10 J/cm\u00b2 on-switching, 25-300 J/cm\u00b2 off-switching/readout) are calculated from experimental parameters and compare favorably to PALM (1,000-100,000 J/cm\u00b2 UV, 25,000-300,000 J/cm\u00b2 excitation) and GSDIM (100,000-900,000 J/cm\u00b2). The mechanistic explanation based on long-lived states and lack of localization requirement is sound.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    },
+    {
+      "id": "270908ae-f9d0-4822-8231-388d77449643",
+      "content_id": "f6ddc5c2-2de0-4d5b-b9fc-a9337b2d792f",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The predictions about parallelized RESOLFT enabling video-rate nanoscopy are speculative and not demonstrated in this work. While the reasoning is sound\u2014that parallelization by 100-1000\u00d7 combined with 70 \u03bcs pixel dwell times could enable video-rate imaging\u2014this remains a theoretical projection. The cited work on parallelization approaches exists, but actual implementation with rsEGFP2 and demonstration of video-rate performance across full fields of view would be required to support this result. This represents proposed future work rather than a demonstrated finding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:10:38.977400Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4032f536-e886-41e9-9c61-a3c1058709a5",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "b89af8d5-1233-4834-9be9-c32680f5b6f7",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "8a557d03-b7fa-495e-a683-1441f46eb61a",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "4108bc85-074e-4a5f-ae30-511266461dae",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "9f3a6dd2-bc31-4f5c-9f45-2940d4b685ec",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "9dc2a49d-1090-46ec-80d5-d6a275feb3bf",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "fd8abcd1-c595-44a2-8cd7-587bacc238b3",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "989287aa-beff-4c73-921e-04f263be4054",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "6f095f4f-e09f-42b6-af64-b7b142b0465e",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "cc36e518-15cf-45e2-a81b-55e7a8d91998",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "cce5d011-456b-4607-9b89-023903cdbc1c",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "0b97bff4-79b7-4c7c-9a72-9a508f7141eb",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "a615bb8b-2acb-4aec-89e3-b048b65a96fd",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "f28b1d7f-7b35-4790-b1e2-b75b8a309d39",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "f4d3b363-2e6b-4189-91a0-47cc33b44494",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "f335b1cb-f9fb-4ea6-a34f-3646790839a1",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "8fba4a87-57f7-4eb0-8881-19ba2bc8505a",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "fe20375a-375c-4686-9717-63206325728f",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "4c431e23-4fb6-460e-af07-9da002212394",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "da12ccc0-13c3-4683-86d1-ce167a5eb7b3",
+      "result_id": "2c3e0c88-b17d-4249-8d63-c8c86746661a"
+    },
+    {
+      "claim_id": "61e0458b-63d5-491a-9716-38e38ca8bba9",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "b2584531-a913-4030-af2b-9dc8706d5fe6",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "efed0f44-e3ce-46fa-9399-aa36b7821061",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "edcdaa47-e750-46ff-acc9-24802fc7728f",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "e7b5be4d-dab2-465a-a6d0-2e78630338af",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "c57f1182-00c7-4970-9010-e98c63983d6f",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "a40d7b66-ca17-417d-b944-84b4496021e2",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "1045b4c1-967b-4506-a73e-824d3a343481",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "34352b40-622f-45b1-a3ee-df5d8ceb57bf",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "576ac277-3fcc-4be5-8d9f-281d6262513d",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "8b1f227b-9b87-4dd5-a2f0-4dbe8bf55f07",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "5ae0c76f-c832-4e62-adb9-cff34297e027",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "def53b68-c6b5-446f-b731-1695e48d8a8d",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "9c5ffba1-7037-447c-b59c-42bdb4efc1eb",
+      "result_id": "4317b48d-7941-46b1-a15b-40af3cf4330e"
+    },
+    {
+      "claim_id": "529cf1f1-8864-4012-a888-9b7713485c03",
+      "result_id": "e7e2e6c5-2a3c-4a1e-835f-71f034c0af10"
+    },
+    {
+      "claim_id": "39dc2681-f3c9-49b7-953f-59f0cc0a8dee",
+      "result_id": "e7e2e6c5-2a3c-4a1e-835f-71f034c0af10"
+    },
+    {
+      "claim_id": "967524a5-11b0-4c98-b434-974a9d229524",
+      "result_id": "e7e2e6c5-2a3c-4a1e-835f-71f034c0af10"
+    },
+    {
+      "claim_id": "6bf6206e-0ab1-4565-99ee-2f24194206b5",
+      "result_id": "e7e2e6c5-2a3c-4a1e-835f-71f034c0af10"
+    },
+    {
+      "claim_id": "60fed52f-50da-43d1-901c-bf170121cd8a",
+      "result_id": "e7e2e6c5-2a3c-4a1e-835f-71f034c0af10"
+    },
+    {
+      "claim_id": "4538d4d5-5133-4f70-bb41-084fc743d3cf",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "c2005d9b-a63c-45dc-b5cb-cacfc99760f3",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "5d80672a-17ed-49d4-9bab-524f3bb8377f",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "eaf4de6b-0cb4-45a7-81a1-a8c0d8eedc83",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "3a43473f-8b5f-4eee-b230-e4ec2c908d98",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "517768d5-419c-4f7a-be38-e4a851649174",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "5072c1ae-bd2d-4c2c-a85f-6397c5061e1e",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "5c8819c0-ba9e-4e18-965f-34898201bf1b",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "245ccc1c-5e1d-43be-b14c-fbfd41a32913",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "211c568d-ca33-47d6-ad6a-1fa37f159f05",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "7b4185e6-abff-4fe3-a4e3-2b8d295643c2",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "744b8a4e-1a8d-4e88-9715-dd47b665fdbb",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "3eb1339d-d587-4a61-bc49-1e14bdb9a015",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "e027a9b1-b231-4865-82dd-806984327b74",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "ad5152ff-a1e0-4374-8945-1c7dfadc08ec",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "e8c2c212-61f8-4d51-96f7-b45c8a1c68f1",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "fd2c7888-5c3a-478d-ba32-e0b64b3d0ddd",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "c41ee571-51b1-4296-9243-a79930b7fb4a",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "7930005e-ca9a-4d01-bbf4-7fcf6a15ba86",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "883c39b3-081f-45e4-b910-c6442bc0aa1f",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "7d812aef-03f6-4351-bab6-d04b4043bc86",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "4150c6c0-2cd7-458b-8a8f-e9ec17a1da00",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "147c5a31-57a9-49f9-8f70-c0afe353fbc1",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "715acf3f-02bd-4b29-a7f5-798e8480c020",
+      "result_id": "f5a4d132-34d7-43ec-9bfa-4fc1777d3bd9"
+    },
+    {
+      "claim_id": "65e97c5d-a4da-4704-bc7f-1c8483eff2b0",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "5f452544-b492-41c2-9b32-c883b03322ce",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "49094521-9c4e-4dff-ad67-bb3abe45ba3d",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "0f3e2152-8542-4d25-85d9-38901f11fd12",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "f15a5454-7fe5-4436-96ab-503bc2307658",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "bad8da50-aa4d-45e8-8ce5-1533f4ad2545",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "b80bd644-9df0-485b-a072-4cde3f39524f",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "13143deb-a9b6-4496-b474-7233f488c6df",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "16e18d4b-4768-40c2-a8c2-fe248abba96b",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "1863cf6c-7c0b-4607-af23-f49ab304ea80",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "e1d6fef7-5f93-476c-b097-968f1b6b2e75",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "6b6ffb74-761b-4662-b444-490bf40edd74",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "4912e09c-54a5-4074-ae66-9f0c9a4c66c7",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "86e67f76-c7b9-49da-8292-58e85aacabe0",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "026761d3-2dd2-4846-aa2e-7210b09a4c17",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "c64dd791-a351-4577-84f5-e1ef94394796",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "dab1dae1-4234-42a1-800b-81ffe80b8225",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "58970d60-3fa1-4fb5-a744-7584574d793b",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "6e74f78c-2910-4377-8e90-edbc41d06ea1",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "a5fcd71a-6f99-49cc-8f61-75467f505532",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "828a7114-2612-431b-9376-3c9335f0622e",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "8b5aa322-a513-46e7-ba31-48fe1448171a",
+      "result_id": "4b841b07-9e39-4b9c-835c-6794c08750f4"
+    },
+    {
+      "claim_id": "f4492e90-8eb9-4b65-bf09-89c51204f8f9",
+      "result_id": "270908ae-f9d0-4822-8231-388d77449643"
+    },
+    {
+      "claim_id": "d49ddb4f-d497-4b7b-b84c-d91e435cfcd0",
+      "result_id": "270908ae-f9d0-4822-8231-388d77449643"
+    },
+    {
+      "claim_id": "d1c14749-7f77-496a-9853-b96aa6288e9d",
+      "result_id": "270908ae-f9d0-4822-8231-388d77449643"
+    },
+    {
+      "claim_id": "4189c187-3cb3-4ee4-ac63-fe178ca4958f",
+      "result_id": "270908ae-f9d0-4822-8231-388d77449643"
+    }
+  ],
+  "comparisons": []
+}

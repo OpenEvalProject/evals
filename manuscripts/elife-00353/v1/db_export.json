@@ -1,0 +1,179 @@
+{
+  "submission": {
+    "id": "2ba1e704-3044-4c90-be4a-95a1b0c47112",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:19:42.630700Z",
+    "updated_at": "2025-10-16T21:19:42.630700Z"
+  },
+  "content": [
+    {
+      "id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "submission_id": "2ba1e704-3044-4c90-be4a-95a1b0c47112",
+      "content_type": "manuscript",
+      "content_text": "# A good life\n\n## Authors\n\n- Eve Marder \u2020\n\n### Affiliations\n\n1. Department of Biology and the Volen National Center for Complex Systems Brandeis University Waltham United States marder@brandeis.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nFollowing a career in science involves long hours and hard work, but as Eve Marder explains in the first of a series of columns, it can also be extremely rewarding.\n",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6230aee4-a52e-4987-ae4d-9b9e6cf7c200",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C1",
+      "claim": "Following a career in science involves long hours and hard work.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Following a career in science involves long hours and hard work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement draws from established understanding about the nature of scientific careers and professional demands in research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "d2b88a3a-c542-4c28-9ecd-6d80eec03440",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C2",
+      "claim": "Following a career in science can be extremely rewarding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Following a career in science involves long hours and hard work, but as Eve Marder explains in the first of a series of columns, it can also be extremely rewarding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established understanding about the subjective benefits and satisfaction that can come from scientific careers, as acknowledged by the author.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "0523e856-1fc3-48e2-9eee-a3d35ef56204",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C3",
+      "claim": "Eve Marder is affiliated with the Department of Biology at Brandeis University.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Department of Biology and the Volen National Center for Complex Systems Brandeis University Waltham United States",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly stated factual information about the author's institutional affiliation provided in the manuscript metadata.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "cf4975fd-65de-41c7-9304-54199e8aec90",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C4",
+      "claim": "Eve Marder is affiliated with the Volen National Center for Complex Systems at Brandeis University.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Department of Biology and the Volen National Center for Complex Systems Brandeis University Waltham United States",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly stated factual information about the author's institutional affiliation provided in the manuscript metadata.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "5d10e76f-951a-4fce-b26e-e888a6330b55",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C5",
+      "claim": "Brandeis University is located in Waltham, United States.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Brandeis University Waltham United States",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly stated factual information about the geographic location of the institution provided in the affiliation section.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "660d27e9-8b64-45ad-896d-7115f7ccab8b",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C6",
+      "claim": "This manuscript is the first in a series of columns by Eve Marder.",
+      "claim_type": "EXPLICIT",
+      "source_text": "as Eve Marder explains in the first of a series of columns",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly stated information about the nature and position of this work within a planned series of publications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "d5efcc2e-1866-4dc1-88dc-cde885185caa",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "claim_id": "C7",
+      "claim": "Eve Marder is the corresponding author of this manuscript.",
+      "claim_type": "EXPLICIT",
+      "source_text": "\u2020 Corresponding author",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is explicitly indicated in the author metadata section with the corresponding author designation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9bcac32-7796-4cc9-ae0f-efbd89c91318",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C2 present general characterizations about scientific careers being demanding yet rewarding. These are opinion statements based on general knowledge rather than empirical findings demonstrated in this manuscript. No data, systematic analysis, or evidence is provided to support these assertions within this work, though they may reflect widely held views about scientific careers.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    },
+    {
+      "id": "a6892279-099c-4da3-914e-f17e74118b05",
+      "content_id": "e0ecef85-8452-433e-9150-8fbc51a1ad4c",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C3-C7 are factual metadata statements about author affiliation, institutional location, publication series, and corresponding authorship. These are directly stated in the manuscript header and are straightforward, verifiable administrative facts that require no additional evidence or analysis.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:19:42.630700Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6230aee4-a52e-4987-ae4d-9b9e6cf7c200",
+      "result_id": "e9bcac32-7796-4cc9-ae0f-efbd89c91318"
+    },
+    {
+      "claim_id": "d2b88a3a-c542-4c28-9ecd-6d80eec03440",
+      "result_id": "e9bcac32-7796-4cc9-ae0f-efbd89c91318"
+    },
+    {
+      "claim_id": "0523e856-1fc3-48e2-9eee-a3d35ef56204",
+      "result_id": "a6892279-099c-4da3-914e-f17e74118b05"
+    },
+    {
+      "claim_id": "cf4975fd-65de-41c7-9304-54199e8aec90",
+      "result_id": "a6892279-099c-4da3-914e-f17e74118b05"
+    },
+    {
+      "claim_id": "5d10e76f-951a-4fce-b26e-e888a6330b55",
+      "result_id": "a6892279-099c-4da3-914e-f17e74118b05"
+    },
+    {
+      "claim_id": "660d27e9-8b64-45ad-896d-7115f7ccab8b",
+      "result_id": "a6892279-099c-4da3-914e-f17e74118b05"
+    },
+    {
+      "claim_id": "d5efcc2e-1866-4dc1-88dc-cde885185caa",
+      "result_id": "a6892279-099c-4da3-914e-f17e74118b05"
+    }
+  ],
+  "comparisons": []
+}

@@ -7,24 +7,36 @@ workflow (extract, eval LLM, eval peer, compare, db_export) and saving
 all outputs to prepare for database import.
 
 Usage:
-    python batch_cllm.py [--dry-run] [--limit N] [--continue-on-error] [--force]
+    python batch_cllm.py [--dry-run] [--limit N] [--continue-on-error] [--force] [--parallel N]
 
 Options:
     --dry-run, -n          Show what would be done without processing
     --limit N, -l N        Only process first N manuscript versions
     --continue-on-error    Continue processing even if CLLM fails
     --force, -f            Overwrite existing CLLM outputs
+    --parallel N, -p N     Process N manuscripts in parallel (default: 10, use 1 for sequential)
 """
 
 import json
 import re
 import subprocess
 import sys
+import threading
 from argparse import ArgumentParser
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 # Path to CLLM tool in its venv
 CLLM_BIN = Path(__file__).parent.parent / "cllm" / ".venv" / "bin" / "cllm"
+
+# Global lock for thread-safe printing
+print_lock = threading.Lock()
+
+
+def safe_print(*args, **kwargs):
+    """Thread-safe print function."""
+    with print_lock:
+        print(*args, **kwargs)
 
 
 def has_peer_reviews(version_dir: Path) -> bool:
@@ -91,6 +103,7 @@ def run_cllm_workflow(
     peer_reviews_file: Path | None,
     dry_run: bool = False,
     verbose: bool = True,
+    use_safe_print: bool = False,
 ) -> bool:
     """
     Run the full CLLM workflow on a manuscript version.
@@ -108,10 +121,12 @@ def run_cllm_workflow(
         peer_reviews_file: Path to peer reviews file (optional)
         dry_run: If True, only print what would be done
         verbose: Enable verbose logging
+        use_safe_print: If True, use thread-safe printing
 
     Returns:
         True if workflow succeeded, False otherwise
     """
+    _print = safe_print if use_safe_print else print
     # Output file paths
     claims_file = version_dir / "claims.json"
     eval_llm_file = version_dir / "eval_llm.json"
@@ -120,24 +135,24 @@ def run_cllm_workflow(
     db_export_file = version_dir / "db_export.json"
 
     if dry_run:
-        print(f"      → Would run CLLM workflow:")
-        print(f"        1. Extract claims -> {claims_file.name}")
-        print(f"        2. Evaluate (LLM) -> {eval_llm_file.name}")
+        _print(f"      → Would run CLLM workflow:")
+        _print(f"        1. Extract claims -> {claims_file.name}")
+        _print(f"        2. Evaluate (LLM) -> {eval_llm_file.name}")
         if peer_reviews_file:
-            print(f"        3. Evaluate (peer) -> {eval_peer_file.name}")
-            print(f"        4. Compare -> {cmp_file.name}")
-        print(f"        5. Database export -> {db_export_file.name}")
+            _print(f"        3. Evaluate (peer) -> {eval_peer_file.name}")
+            _print(f"        4. Compare -> {cmp_file.name}")
+        _print(f"        5. Database export -> {db_export_file.name}")
         return True
 
     if not CLLM_BIN.exists():
-        print(f"      ✗ CLLM binary not found at {CLLM_BIN}")
+        _print(f"      ✗ CLLM binary not found at {CLLM_BIN}")
         return False
 
     verbose_flag = ["-v"] if verbose else []
 
     try:
         # Stage 1: Extract claims
-        print(f"      [1/4] Extracting claims...")
+        _print(f"      [1/5] Extracting claims...")
         result = subprocess.run(
             [
                 str(CLLM_BIN),
@@ -152,11 +167,11 @@ def run_cllm_workflow(
         )
 
         if result.returncode != 0:
-            print(f"      ✗ Claim extraction failed: {result.stderr}")
+            _print(f"      ✗ Claim extraction failed: {result.stderr}")
             return False
 
         # Stage 2: Evaluate with LLM
-        print(f"      [2/4] Evaluating claims (LLM)...")
+        _print(f"      [2/5] Evaluating claims (LLM)...")
         result = subprocess.run(
             [
                 str(CLLM_BIN),
@@ -172,12 +187,12 @@ def run_cllm_workflow(
         )
 
         if result.returncode != 0:
-            print(f"      ✗ LLM evaluation failed: {result.stderr}")
+            _print(f"      ✗ LLM evaluation failed: {result.stderr}")
             return False
 
         # Stage 3: Evaluate with peer reviews (if available)
         if peer_reviews_file:
-            print(f"      [3/4] Evaluating claims (peer reviews)...")
+            _print(f"      [3/5] Evaluating claims (peer reviews)...")
             result = subprocess.run(
                 [
                     str(CLLM_BIN),
@@ -194,11 +209,11 @@ def run_cllm_workflow(
             )
 
             if result.returncode != 0:
-                print(f"      ✗ Peer evaluation failed: {result.stderr}")
+                _print(f"      ✗ Peer evaluation failed: {result.stderr}")
                 return False
 
             # Stage 4: Compare evaluations
-            print(f"      [4/4] Comparing evaluations...")
+            _print(f"      [4/5] Comparing evaluations...")
             result = subprocess.run(
                 [
                     str(CLLM_BIN),
@@ -214,35 +229,86 @@ def run_cllm_workflow(
             )
 
             if result.returncode != 0:
-                print(f"      ✗ Comparison failed: {result.stderr}")
+                _print(f"      ✗ Comparison failed: {result.stderr}")
                 return False
         else:
-            print(f"      [3/4] Skipping peer evaluation (no reviews)")
-            print(f"      [4/4] Skipping comparison (no peer evaluation)")
+            _print(f"      [3/5] Skipping peer evaluation (no reviews)")
+            _print(f"      [4/5] Skipping comparison (no peer evaluation)")
 
         # Stage 5: Create database export
-        print(f"      [5/5] Creating database export...")
+        _print(f"      [5/5] Creating database export...")
         success = create_db_export(version_dir)
 
         if not success:
-            print(f"      ✗ Database export failed")
+            _print(f"      ✗ Database export failed")
             return False
 
-        print(f"      ✓ CLLM workflow completed")
-        print(f"        Files: {claims_file.name}, {eval_llm_file.name}", end="")
+        _print(f"      ✓ CLLM workflow completed")
+        _print(f"        Files: {claims_file.name}, {eval_llm_file.name}", end="")
         if peer_reviews_file:
-            print(f", {eval_peer_file.name}, {cmp_file.name}, {db_export_file.name}")
+            _print(f", {eval_peer_file.name}, {cmp_file.name}, {db_export_file.name}")
         else:
-            print(f", {db_export_file.name}")
+            _print(f", {db_export_file.name}")
 
         return True
 
     except subprocess.TimeoutExpired:
-        print(f"      ✗ CLLM workflow timed out")
+        _print(f"      ✗ CLLM workflow timed out")
         return False
     except Exception as e:
-        print(f"      ✗ Error: {e}")
+        _print(f"      ✗ Error: {e}")
         return False
+
+
+def process_single_manuscript(args):
+    """
+    Wrapper function to process a single manuscript (used for parallel processing).
+
+    Args:
+        args: Tuple of (index, total, article_id, version_dir, manuscript_file, force, dry_run, verbose)
+
+    Returns:
+        Tuple of (article_id, version_name, status, message)
+        where status is 'success', 'skipped', or 'failed'
+    """
+    i, total, article_id, version_dir, manuscript_file, force, dry_run, verbose = args
+    version_name = version_dir.name
+
+    # Check if already processed (look for claims.json)
+    claims_file = version_dir / "claims.json"
+    if not force and claims_file.exists():
+        safe_print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+        safe_print(f"      ⏭️  Already processed (use --force to overwrite)")
+        safe_print()
+        return (article_id, version_name, 'skipped', 'Already processed')
+
+    safe_print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+
+    # Check for peer reviews
+    peer_reviews_file = None
+    review_files = list(version_dir.glob("reviews_v*.md"))
+    if review_files and has_peer_reviews(version_dir):
+        peer_reviews_file = review_files[0]
+        safe_print(f"      📝 Peer reviews: {peer_reviews_file.name}")
+    else:
+        safe_print(f"      📝 No peer reviews")
+
+    # Run CLLM workflow
+    success = run_cllm_workflow(
+        version_dir,
+        manuscript_file,
+        peer_reviews_file,
+        dry_run=dry_run,
+        verbose=verbose,
+        use_safe_print=True,
+    )
+
+    safe_print()
+
+    if success:
+        return (article_id, version_name, 'success', 'Completed')
+    else:
+        return (article_id, version_name, 'failed', 'Workflow failed')
 
 
 def process_manuscript_versions(
@@ -252,7 +318,8 @@ def process_manuscript_versions(
     continue_on_error: bool = False,
     force: bool = False,
     verbose: bool = True,
-) -> tuple[int, int, int]:
+    parallel: int = 1,
+) -> tuple[int, int, int, int]:
     """
     Process all manuscript version folders.
 
@@ -263,6 +330,7 @@ def process_manuscript_versions(
         continue_on_error: If True, continue processing even if CLLM fails
         force: If True, overwrite existing CLLM outputs
         verbose: Enable verbose CLLM logging
+        parallel: Number of manuscripts to process in parallel (1 for sequential)
 
     Returns:
         (total_processed, successful, failed, skipped)
@@ -289,49 +357,96 @@ def process_manuscript_versions(
     failed = 0
     skipped = 0
 
-    print(f"\n📊 Processing {total} manuscript versions...\n")
-
-    for i, (article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1):
-        version_name = version_dir.name  # e.g., "v1"
-
-        # Check if already processed (look for claims.json)
-        claims_file = version_dir / "claims.json"
-        if not force and claims_file.exists():
-            print(f"📄 [{i}/{total}] {article_id}/{version_name}")
-            print(f"      ⏭️  Already processed (use --force to overwrite)")
-            skipped += 1
-            print()
-            continue
-
-        print(f"📄 [{i}/{total}] {article_id}/{version_name}")
-
-        # Check for peer reviews
-        peer_reviews_file = None
-        review_files = list(version_dir.glob("reviews_v*.md"))
-        if review_files and has_peer_reviews(version_dir):
-            peer_reviews_file = review_files[0]
-            print(f"      📝 Peer reviews: {peer_reviews_file.name}")
-        else:
-            print(f"      📝 No peer reviews")
-
-        # Run CLLM workflow
-        success = run_cllm_workflow(
-            version_dir,
-            manuscript_file,
-            peer_reviews_file,
-            dry_run=dry_run,
-            verbose=verbose,
-        )
-
-        if success:
-            successful += 1
-        else:
-            failed += 1
-            if not continue_on_error:
-                print(f"\n❌ Stopping due to error. Use --continue-on-error to continue.\n")
-                return i, successful, failed, skipped
-
+    print(f"\n📊 Processing {total} manuscript versions...")
+    if parallel > 1:
+        print(f"⚡ Parallel mode: {parallel} concurrent processes\n")
+    else:
         print()
+
+    # Choose sequential or parallel processing
+    if parallel <= 1:
+        # Sequential processing (original behavior)
+        for i, (article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1):
+            version_name = version_dir.name  # e.g., "v1"
+
+            # Check if already processed (look for claims.json)
+            claims_file = version_dir / "claims.json"
+            if not force and claims_file.exists():
+                print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+                print(f"      ⏭️  Already processed (use --force to overwrite)")
+                skipped += 1
+                print()
+                continue
+
+            print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+
+            # Check for peer reviews
+            peer_reviews_file = None
+            review_files = list(version_dir.glob("reviews_v*.md"))
+            if review_files and has_peer_reviews(version_dir):
+                peer_reviews_file = review_files[0]
+                print(f"      📝 Peer reviews: {peer_reviews_file.name}")
+            else:
+                print(f"      📝 No peer reviews")
+
+            # Run CLLM workflow
+            success = run_cllm_workflow(
+                version_dir,
+                manuscript_file,
+                peer_reviews_file,
+                dry_run=dry_run,
+                verbose=verbose,
+            )
+
+            if success:
+                successful += 1
+            else:
+                failed += 1
+                if not continue_on_error:
+                    print(f"\n❌ Stopping due to error. Use --continue-on-error to continue.\n")
+                    return i, successful, failed, skipped
+
+            print()
+    else:
+        # Parallel processing
+        # Prepare arguments for each manuscript
+        tasks = [
+            (i, total, article_id, version_dir, manuscript_file, force, dry_run, verbose)
+            for i, (article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1)
+        ]
+
+        # Process in parallel
+        with ProcessPoolExecutor(max_workers=parallel) as executor:
+            # Submit all tasks
+            futures = {executor.submit(process_single_manuscript, task): task for task in tasks}
+
+            # Collect results as they complete
+            for future in as_completed(futures):
+                try:
+                    article_id, version_name, status, message = future.result()
+
+                    if status == 'success':
+                        successful += 1
+                    elif status == 'skipped':
+                        skipped += 1
+                    elif status == 'failed':
+                        failed += 1
+                        if not continue_on_error:
+                            # Cancel remaining tasks
+                            for f in futures:
+                                f.cancel()
+                            safe_print(f"\n❌ Stopping due to error. Use --continue-on-error to continue.\n")
+                            # Return current counts
+                            processed = successful + skipped + failed
+                            return processed, successful, failed, skipped
+
+                except Exception as e:
+                    safe_print(f"❌ Error processing manuscript: {e}")
+                    failed += 1
+                    if not continue_on_error:
+                        safe_print(f"\n❌ Stopping due to error. Use --continue-on-error to continue.\n")
+                        processed = successful + skipped + failed
+                        return processed, successful, failed, skipped
 
     return total, successful, failed, skipped
 
@@ -373,6 +488,13 @@ def main():
         help="Disable verbose CLLM logging"
     )
 
+    parser.add_argument(
+        "--parallel", "-p",
+        type=int,
+        default=10,
+        help="Process N manuscripts in parallel (default: 10, use 1 for sequential)"
+    )
+
     args = parser.parse_args()
 
     # Setup paths
@@ -390,6 +512,10 @@ def main():
     print(f"Manuscripts directory: {manuscripts_dir}")
     if args.limit:
         print(f"Limit: {args.limit} versions")
+    if args.parallel > 1:
+        print(f"Parallel processing: {args.parallel} concurrent processes")
+    else:
+        print(f"Sequential processing")
     if args.dry_run:
         print("Mode: DRY RUN (no processing will be performed)")
     if args.continue_on_error:
@@ -408,6 +534,7 @@ def main():
             continue_on_error=args.continue_on_error,
             force=args.force,
             verbose=not args.quiet,
+            parallel=args.parallel,
         )
 
         print("=" * 70)

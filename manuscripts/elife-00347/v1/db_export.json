@@ -1,0 +1,211 @@
+{
+  "submission": {
+    "id": "24c592ee-24fc-4461-a5f4-158fa30c33d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:19:14.361449Z",
+    "updated_at": "2025-10-16T21:19:14.361449Z"
+  },
+  "content": [
+    {
+      "id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "submission_id": "24c592ee-24fc-4461-a5f4-158fa30c33d0",
+      "content_type": "manuscript",
+      "content_text": "# Sliding to the rescue of damaged DNA\n\n## Authors\n\n- Bryan Gibb<sup>1</sup>\n- Eric C Greene<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biophysics, and the Howard Hughes Medical Institute Columbia University New York United States bg2390@columbia.edu\n2. Department of Biochemistry and Molecular Biophysics, and the Howard Hughes Medical Institute Columbia University New York United States ecg2108@columbia.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nSingle-molecule imaging experiments have shed new light on the methods used by the enzyme RecA to align single- and double-stranded DNA so that double-strand breaks can be repaired.\n",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "400de272-3ce6-4204-b8dd-3032795071b9",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C1",
+      "claim": "Single-molecule imaging experiments have been conducted on the enzyme RecA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single-molecule imaging experiments have shed new light on the methods used by the enzyme RecA",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The statement refers to experimental work (single-molecule imaging) that has been performed, implying data collection. The claim is inferred from the abstract's description of what these experiments accomplished.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "3df60691-3cb6-4ebd-af9c-fc91c426a8e1",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C2",
+      "claim": "Single-molecule imaging experiments have provided new insights into RecA's methods.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single-molecule imaging experiments have shed new light on the methods used by the enzyme RecA",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'shed new light' indicates that experimental data from single-molecule imaging has revealed previously unknown or unclear information about RecA's mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "c93e3009-b1cc-41ac-adf8-1bc53566538a",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C3",
+      "claim": "RecA is an enzyme.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the enzyme RecA",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "RecA is explicitly identified as an enzyme, which is established scientific knowledge in molecular biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "7b2cdd83-ccac-4957-b979-14935d614177",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C4",
+      "claim": "RecA aligns single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the methods used by the enzyme RecA to align single- and double-stranded DNA",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The abstract explicitly states that RecA aligns single-stranded DNA, which is supported by the single-molecule imaging experiments mentioned and is consistent with established knowledge of RecA function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "8a8027dc-8407-4a85-82a4-1d3e5624c19b",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C5",
+      "claim": "RecA aligns double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the methods used by the enzyme RecA to align single- and double-stranded DNA",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The abstract explicitly states that RecA aligns double-stranded DNA, which is supported by the single-molecule imaging experiments mentioned and is consistent with established knowledge of RecA function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "4d6e99e5-fc56-4b3d-9e11-9a2a8798ba09",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C6",
+      "claim": "RecA's alignment of DNA is involved in the repair of double-strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the methods used by the enzyme RecA to align single- and double-stranded DNA so that double-strand breaks can be repaired",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly connects RecA's DNA alignment function to double-strand break repair through the causal phrase 'so that.' This is supported by experimental data and established knowledge of RecA's role in DNA repair.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "c1b40e30-5de4-4388-b7d4-f9fe0535f7ce",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C7",
+      "claim": "Double-strand breaks in DNA can be repaired.",
+      "claim_type": "EXPLICIT",
+      "source_text": "so that double-strand breaks can be repaired",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement that double-strand breaks can be repaired is presented as established fact and reflects fundamental knowledge in DNA repair biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "f368de14-d004-43b1-95a3-a7c8872b6bbf",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C8",
+      "claim": "RecA functions in DNA damage rescue mechanisms.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Sliding to the rescue of damaged DNA",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The title metaphorically describes RecA's role in 'rescuing' damaged DNA, which combined with the abstract's content about double-strand break repair, implies RecA is part of DNA damage response mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "77e8d12a-53a8-4e75-85ed-81fbed5516bd",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "claim_id": "C9",
+      "claim": "RecA uses a sliding mechanism in its function.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Sliding to the rescue of damaged DNA",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "The title's emphasis on 'sliding' in the context of RecA's function, combined with the mention of single-molecule imaging experiments that revealed new insights into RecA's methods, implies that sliding is a key mechanistic feature of RecA's activity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d497d72f-c50d-4382-b595-81d968f54934",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C2, and C9 assert that single-molecule imaging experiments revealed new insights into RecA's sliding mechanism. However, the abstract provides no experimental details, methodological information, sample sizes, controls, statistical analyses, or actual data to evaluate the validity of these findings. Without access to the full manuscript or cited primary research, the evidentiary basis cannot be assessed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    },
+    {
+      "id": "55066b0a-ccec-4fec-abbe-c4d01274b234",
+      "content_id": "abb05baa-3cc7-44c5-8371-e65172cbcf5d",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C3-C8 describe RecA's enzymatic function in aligning single- and double-stranded DNA for double-strand break repair. While some aspects reflect established knowledge (C3, C7), the specific mechanistic claims about DNA alignment methods (C4, C5, C6) and damage rescue function (C8) lack supporting experimental evidence in this abstract. As this appears to be a commentary piece, these claims likely summarize cited work that cannot be evaluated without the full manuscript.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:19:14.361449Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "400de272-3ce6-4204-b8dd-3032795071b9",
+      "result_id": "d497d72f-c50d-4382-b595-81d968f54934"
+    },
+    {
+      "claim_id": "3df60691-3cb6-4ebd-af9c-fc91c426a8e1",
+      "result_id": "d497d72f-c50d-4382-b595-81d968f54934"
+    },
+    {
+      "claim_id": "77e8d12a-53a8-4e75-85ed-81fbed5516bd",
+      "result_id": "d497d72f-c50d-4382-b595-81d968f54934"
+    },
+    {
+      "claim_id": "c93e3009-b1cc-41ac-adf8-1bc53566538a",
+      "result_id": "55066b0a-ccec-4fec-abbe-c4d01274b234"
+    },
+    {
+      "claim_id": "7b2cdd83-ccac-4957-b979-14935d614177",
+      "result_id": "55066b0a-ccec-4fec-abbe-c4d01274b234"
+    },
+    {
+      "claim_id": "8a8027dc-8407-4a85-82a4-1d3e5624c19b",
+      "result_id": "55066b0a-ccec-4fec-abbe-c4d01274b234"
+    },
+    {
+      "claim_id": "4d6e99e5-fc56-4b3d-9e11-9a2a8798ba09",
+      "result_id": "55066b0a-ccec-4fec-abbe-c4d01274b234"
+    },
+    {
+      "claim_id": "c1b40e30-5de4-4388-b7d4-f9fe0535f7ce",
+      "result_id": "55066b0a-ccec-4fec-abbe-c4d01274b234"
+    },
+    {
+      "claim_id": "f368de14-d004-43b1-95a3-a7c8872b6bbf",
+      "result_id": "55066b0a-ccec-4fec-abbe-c4d01274b234"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,147 @@
+{
+  "submission": {
+    "id": "7f71b909-3dd8-463c-aacd-b697672052e3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:23:30.073825Z",
+    "updated_at": "2025-10-16T21:23:30.073825Z"
+  },
+  "content": [
+    {
+      "id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "submission_id": "7f71b909-3dd8-463c-aacd-b697672052e3",
+      "content_type": "manuscript",
+      "content_text": "# Helping chromosomes and chromatids stay on track\n\n## Authors\n\n- Soni Lacefield<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology Indiana University Bloomington United States sonil@indiana.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe prevention of premature interactions between microtubules and kinetochores is essential to ensuring that meiosis produces gametes with the correct number of chromosomes.\n",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f83788d-5b11-4473-be06-212ec6111df2",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "claim_id": "C1",
+      "claim": "Prevention of premature interactions between microtubules and kinetochores is essential to ensuring correct chromosome number in gametes produced by meiosis",
+      "claim_type": "EXPLICIT",
+      "source_text": "The prevention of premature interactions between microtubules and kinetochores is essential to ensuring that meiosis produces gametes with the correct number of chromosomes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim draws from established understanding of meiotic mechanisms and represents a logical inference about the relationship between microtubule-kinetochore interactions and chromosome segregation fidelity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    },
+    {
+      "id": "45a838e2-ed5d-4623-9814-bfecbb2c285b",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "claim_id": "C2",
+      "claim": "Microtubules and kinetochores can interact prematurely during meiosis",
+      "claim_type": "IMPLICIT",
+      "source_text": "The prevention of premature interactions between microtubules and kinetochores is essential to ensuring that meiosis produces gametes with the correct number of chromosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement about preventing premature interactions logically implies that such premature interactions are possible and would occur without preventive mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    },
+    {
+      "id": "4b060f5d-9ff4-4313-85d9-5a96e8087495",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "claim_id": "C3",
+      "claim": "Premature microtubule-kinetochore interactions can lead to gametes with incorrect chromosome numbers",
+      "claim_type": "IMPLICIT",
+      "source_text": "The prevention of premature interactions between microtubules and kinetochores is essential to ensuring that meiosis produces gametes with the correct number of chromosomes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The necessity of preventing premature interactions to ensure correct chromosome number logically implies that failure to prevent such interactions would result in incorrect chromosome numbers. This also aligns with established knowledge of chromosome segregation errors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    },
+    {
+      "id": "215a17ef-5c08-4dc7-a86a-dc6ddff98ef6",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "claim_id": "C4",
+      "claim": "Meiosis produces gametes",
+      "claim_type": "EXPLICIT",
+      "source_text": "The prevention of premature interactions between microtubules and kinetochores is essential to ensuring that meiosis produces gametes with the correct number of chromosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a fundamental fact of reproductive biology that is stated directly in the manuscript and represents established scientific knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    },
+    {
+      "id": "8ca9dfbb-1014-48c2-a027-f058a8cbe1c4",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "claim_id": "C5",
+      "claim": "Gametes should have a correct number of chromosomes",
+      "claim_type": "IMPLICIT",
+      "source_text": "The prevention of premature interactions between microtubules and kinetochores is essential to ensuring that meiosis produces gametes with the correct number of chromosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The emphasis on ensuring the 'correct number' of chromosomes implies there is an expected or proper chromosome number for gametes, which is established biological knowledge (haploid state).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "520443e1-095f-44ca-912f-3f36ca9e9f73",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1-C3 present a logical framework about premature microtubule-kinetochore interactions affecting chromosome segregation fidelity in meiosis. However, the provided manuscript excerpt contains no experimental data, statistical analyses, or citations to support these assertions. This appears to be a commentary or editorial introduction rather than a presentation of original findings, making it impossible to evaluate the evidentiary support from the manuscript itself.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    },
+    {
+      "id": "19022026-1678-4054-853c-80125debc690",
+      "content_id": "ad01833e-ebc5-4c32-bfcc-f2c99fb7302d",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4 and C5 represent well-established fundamental facts of reproductive biology: that meiosis produces gametes and that gametes should have the correct (haploid) chromosome number. These are not novel findings but rather foundational knowledge that serves as context for the manuscript's discussion.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:23:30.073825Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f83788d-5b11-4473-be06-212ec6111df2",
+      "result_id": "520443e1-095f-44ca-912f-3f36ca9e9f73"
+    },
+    {
+      "claim_id": "45a838e2-ed5d-4623-9814-bfecbb2c285b",
+      "result_id": "520443e1-095f-44ca-912f-3f36ca9e9f73"
+    },
+    {
+      "claim_id": "4b060f5d-9ff4-4313-85d9-5a96e8087495",
+      "result_id": "520443e1-095f-44ca-912f-3f36ca9e9f73"
+    },
+    {
+      "claim_id": "215a17ef-5c08-4dc7-a86a-dc6ddff98ef6",
+      "result_id": "19022026-1678-4054-853c-80125debc690"
+    },
+    {
+      "claim_id": "8ca9dfbb-1014-48c2-a027-f058a8cbe1c4",
+      "result_id": "19022026-1678-4054-853c-80125debc690"
+    }
+  ],
+  "comparisons": []
+}

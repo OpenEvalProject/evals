@@ -1,0 +1,167 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C100"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The claims establish that bacterial RNA induces IL-1\u03b2 through a MyD88- and Unc93b1-dependent pathway, but not through MAVS or TLR11. Multiple genetic knockouts (C33, C34, C35) with appropriate controls (RNase treatment C32, TLR11 knockout C35) provide converging evidence. The pathway dependence is clearly demonstrated through loss-of-function experiments."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "TLR13 is identified as responsible for detecting bacterial RNA through knockdown experiments (C37) with two independent shRNAs and rescue with RNAi-resistant TLR13 (C38). The rescue experiment is a critical control that demonstrates specificity and rules out off-target effects, strongly supporting that TLR13 is the receptor."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The claims demonstrate that 23S rRNA, but not 16S rRNA, is the active ligand. This is shown with native RNA from two bacterial species (LAB and E. coli) and with in vitro transcribed RNA, ruling out bacterial modifications as necessary. The use of TLR2/4 double knockout cells controls for contaminating ligands. The specificity for 23S over 16S rRNA is consistently demonstrated."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C72"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Systematic deletion analysis (C44) narrowed the active region to domain V, and a chemically synthesized 13-nucleotide sequence (2054-2068) was sufficient to induce IL-1\u03b2 (C45, C72). The use of synthetic RNA demonstrates sufficiency without any bacterial context, and the systematic approach provides strong evidence for necessity. The identification of the minimal sequence is well-supported."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C28",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C30",
+      "C75"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The exquisite sequence specificity of TLR13 is demonstrated through comprehensive point mutagenesis showing that single nucleotide changes at positions 2055-2064 abolish activity (C46, C48), while position 2054 tolerates mutation (C47). Importantly, 2'-O-methylation at position 2058 is tolerated while base changes are not (C49), indicating base-specific recognition. Mutations in full-length 23S rRNA confirm these findings (C50), and TLR13 dependence is shown for both full-length and minimal sequences (C51). This unprecedented specificity for a nucleic acid sensor (C75) is exceptionally well-documented."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C94"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Genetic knockout of TLR13 (C61) abolished IL-1\u03b2 and multiple cytokine responses to the 23S rRNA sequence (C62, C64-C68) while preserving responses to R848 (C63), demonstrating specificity. The knockout phenotype is unique compared to other TLR knockouts (C94). The genetic validation with appropriate controls strongly supports TLR13 as essential for the response to bacterial 23S rRNA."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The ISR23 sequence is shown to be conserved across multiple bacterial species (C57) and tested experimentally. The H. marismortui variant with 4 divergent nucleotides failed to stimulate IL-1\u03b2 (C59), providing direct experimental evidence that sequence conservation correlates with immunostimulatory activity. This supports the biological relevance of the identified sequence."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C69"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The claims establish that ISR23 is located at the catalytic center of the ribosome (C52) and includes residues critical for peptide bond synthesis (C53-C56). These are well-established structural facts from prior work. The inference that TLR13 targets this essential bacterial feature (C69) is logical and supported by the experimental demonstration that mutations at catalytic residues abolish TLR13 activation."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C93"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "These claims about evolutionary implications, potential bacterial evasion, and autoimmune risks are largely speculative (C60, C81, C82, C85-C88, C93). While the BLAST search identifying ISR23-like sequences in human mRNAs is data-based (C83), and the observation that human RNA doesn't activate TLR13 is mentioned (C84, though data not shown), the mechanistic explanations and evolutionary hypotheses lack direct experimental support. These remain interesting speculations requiring future investigation."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "These claims about TLR cooperation (C95, C96), the need for in vivo studies (C97), and mechanisms of RNA access to TLR13 (C98, C99) are acknowledged by the authors as requiring further investigation. While C99 is supported by the observation that transfection is not required, the specific trafficking mechanisms remain speculative. These represent important future directions rather than established results."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The claims about ISR23 as a potential adjuvant are speculative applications of the findings. While the inference that ISR23 would not work in humans due to TLR13 absence is logical (C101), and the potent cytokine-inducing activity is demonstrated, the actual utility as an adjuvant in non-human animals (C102) remains untested. These are reasonable proposals for future application but lack experimental validation."
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "submission": {
+    "id": "52c4cc23-37a5-43e2-aaaf-07ff1ab9f1d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:18:43.633027Z",
+    "updated_at": "2025-10-16T21:18:43.633027Z"
+  },
+  "content": [
+    {
+      "id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "submission_id": "52c4cc23-37a5-43e2-aaaf-07ff1ab9f1d4",
+      "content_type": "manuscript",
+      "content_text": "# Enzymes provide demographers with food for thought\n\n## Authors\n\n- Mark Jit<sup>1</sup> \u2020\n- Patrick Gerland<sup>2</sup>\n\n### Affiliations\n\n1. Modelling and Economics Unit Health Protection Agency London UK and the Department of Infectious Disease Epidemiology London School of Hygiene and Tropical Medicine London United Kingdom mark.jit@hpa.org.uk\n2. Population Division, Department of Economic and Social Affairs, United Nations New York United States gerland@un.org\n\n\u2020 Corresponding author\n\n## Abstract\n\nLife expectancy has increased by 20 years since the middle of the last century, but children under five have fared better than adult males.\n",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "509bba42-e28d-43aa-a09b-87461efe1df4",
+      "content_id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "claim_id": "C1",
+      "claim": "Life expectancy has increased by 20 years since the middle of the last century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Life expectancy has increased by 20 years since the middle of the last century",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim references a specific quantitative change in life expectancy over a defined time period, which would be based on demographic data and is part of established demographic knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    },
+    {
+      "id": "b499577c-ed55-424d-aa03-98ec0d4b43ff",
+      "content_id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "claim_id": "C2",
+      "claim": "Children under five have experienced greater improvements in survival or mortality outcomes compared to adult males since the middle of the last century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "children under five have fared better than adult males",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The statement that children under five 'have fared better' in the context of life expectancy increases implies a comparative analysis of mortality or survival improvements between these demographic groups, which would be based on demographic data and requires inference about what 'fared better' means in this context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    },
+    {
+      "id": "2ca58052-a88b-45ab-8e40-963b2b926c20",
+      "content_id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "claim_id": "C3",
+      "claim": "The middle of the last century serves as a meaningful baseline period for measuring changes in life expectancy.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Life expectancy has increased by 20 years since the middle of the last century",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "By using 'the middle of the last century' as a reference point for comparison, the authors implicitly treat this period as a valid baseline, which is a common practice in demographic analysis and requires inference from the choice of temporal framing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    },
+    {
+      "id": "b5a1282e-e8f3-4bbf-ac15-b3d5e40989ec",
+      "content_id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "claim_id": "C4",
+      "claim": "There are differential patterns of mortality improvement across age and sex groups over the past several decades.",
+      "claim_type": "IMPLICIT",
+      "source_text": "children under five have fared better than adult males",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The comparison between children under five and adult males implies that mortality improvements have not been uniform across demographic groups, suggesting differential patterns that would be evident in demographic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b620ae51-152e-40f7-89f0-0e62c10a87f9",
+      "content_id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C3 together assert a 20-year increase in life expectancy since the mid-20th century using that period as a baseline. However, the abstract provides no supporting data, statistical evidence, geographic scope, or citation to validate this specific quantitative claim. Without access to the underlying demographic data or methodology, the magnitude and generalizability of this claim cannot be verified.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    },
+    {
+      "id": "28e73ac2-26d6-479b-864e-1f858dda65f3",
+      "content_id": "4cd7e80b-165f-4327-a04d-bde1c4e60a24",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C2 and C4 assert differential mortality improvements, specifically that children under five have fared better than adult males. The abstract does not provide the comparative data, metrics used (e.g., absolute vs. relative mortality reduction), statistical tests, or geographic context needed to evaluate this claim. The term 'fared better' is vague and requires clarification of whether it refers to absolute mortality decline, relative percentage improvement, or life expectancy contribution, making the claim impossible to verify from the provided text.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:18:43.633027Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "509bba42-e28d-43aa-a09b-87461efe1df4",
+      "result_id": "b620ae51-152e-40f7-89f0-0e62c10a87f9"
+    },
+    {
+      "claim_id": "2ca58052-a88b-45ab-8e40-963b2b926c20",
+      "result_id": "b620ae51-152e-40f7-89f0-0e62c10a87f9"
+    },
+    {
+      "claim_id": "b499577c-ed55-424d-aa03-98ec0d4b43ff",
+      "result_id": "28e73ac2-26d6-479b-864e-1f858dda65f3"
+    },
+    {
+      "claim_id": "b5a1282e-e8f3-4bbf-ac15-b3d5e40989ec",
+      "result_id": "28e73ac2-26d6-479b-864e-1f858dda65f3"
+    }
+  ],
+  "comparisons": []
+}
