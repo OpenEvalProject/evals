@@ -1,0 +1,175 @@
+{
+  "submission": {
+    "id": "852ef427-f2b1-4c1d-8c3f-91cb6637e4e2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:10:39.832586Z",
+    "updated_at": "2025-10-16T22:10:39.832586Z"
+  },
+  "content": [
+    {
+      "id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "submission_id": "852ef427-f2b1-4c1d-8c3f-91cb6637e4e2",
+      "content_type": "manuscript",
+      "content_text": "# \u2018Cryptic\u2019 exons reveal some of their secrets\n\n## Authors\n\n- John A Calarco<sup>1</sup> \u2020\n\n### Affiliations\n\n1. FAS Center for Systems Biology Harvard University Cambridge United States jcalarco@fas.harvard.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nBy regulating the inclusion of \u2018cryptic\u2019 exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.\n",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "319da9d6-601b-40d7-be8f-989e4e2d9706",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "claim_id": "C1",
+      "claim": "NOVA proteins regulate the inclusion of 'cryptic' exons in messenger RNA in nerve cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract presents this as a finding about NOVA protein function. The use of 'by regulating' suggests this is based on experimental observations or data, though the abstract format makes this an inference from the research described.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "f93ba192-e5ec-406f-abc1-20ebb223242e",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "claim_id": "C2",
+      "claim": "NOVA proteins influence the abundance of proteins corresponding to transcripts containing cryptic exons.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is stated as a consequence of NOVA protein regulation. The claim about protein abundance being influenced suggests experimental measurement or logical inference from the regulatory mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "9ffd959b-c824-4ab4-8da5-d6b918d041ea",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "claim_id": "C3",
+      "claim": "Cryptic exons can be included in messenger RNA in nerve cells.",
+      "claim_type": "IMPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement about regulating inclusion logically implies that cryptic exons can be included. This draws on the understanding that regulation implies the existence of the process being regulated.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "a01439f7-51eb-44be-8ac2-f3f80a1ba472",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "claim_id": "C4",
+      "claim": "The regulation of cryptic exon inclusion by NOVA proteins occurs specifically in nerve cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The explicit mention of 'in nerve cells' indicates tissue-specific regulation, which would be based on experimental observations in this cell type.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "b28f6d0d-9dc2-42f7-ae9e-7cb4c909dec1",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "claim_id": "C5",
+      "claim": "Cryptic exons have secrets that can be revealed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "'Cryptic' exons reveal some of their secrets",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "The title uses metaphorical language suggesting that previously unknown aspects of cryptic exon biology are being uncovered. This is an interpretive claim about the state of knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "a3f9b7e4-9d17-481f-8359-bad8912511b2",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "claim_id": "C6",
+      "claim": "Changes in cryptic exon inclusion affect the final protein abundance rather than just mRNA structure.",
+      "claim_type": "IMPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The causal connection from mRNA exon inclusion to protein abundance implies a functional consequence at the protein level, drawing on knowledge of gene expression mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ee8d564-35c6-4f00-bbb1-253d231e1273",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C3, C4, and C6 describe a mechanistic model where NOVA proteins regulate cryptic exon inclusion in nerve cells with downstream effects on protein abundance. However, the abstract provides no experimental methods, statistical analyses, sample sizes, controls, or raw data to critically evaluate these claims. This appears to be a commentary piece summarizing or interpreting other work rather than presenting original experimental evidence.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "1f52f1f0-98b5-43cf-84a4-6ef2e7334701",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C2 asserts that NOVA protein regulation influences protein abundance, representing a functional consequence. No experimental data, protein quantification methods, statistical validation, or controls are provided in the abstract to assess whether this effect was actually measured or is an inference from the regulatory mechanism. Without access to the full manuscript or underlying data, this claim cannot be evaluated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    },
+    {
+      "id": "7df546dd-129e-4b0b-a7e7-6a02fae53ce0",
+      "content_id": "79167af4-3a92-4056-a12d-bc07495042b6",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C5 is a metaphorical statement from the title suggesting new insights into cryptic exon biology. This is interpretive rather than a testable scientific claim. Without the full manuscript content, it is impossible to determine what specific 'secrets' were revealed or whether the discoveries represent genuinely novel insights versus reinterpretation of existing knowledge.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:10:39.832586Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "319da9d6-601b-40d7-be8f-989e4e2d9706",
+      "result_id": "2ee8d564-35c6-4f00-bbb1-253d231e1273"
+    },
+    {
+      "claim_id": "9ffd959b-c824-4ab4-8da5-d6b918d041ea",
+      "result_id": "2ee8d564-35c6-4f00-bbb1-253d231e1273"
+    },
+    {
+      "claim_id": "a01439f7-51eb-44be-8ac2-f3f80a1ba472",
+      "result_id": "2ee8d564-35c6-4f00-bbb1-253d231e1273"
+    },
+    {
+      "claim_id": "a3f9b7e4-9d17-481f-8359-bad8912511b2",
+      "result_id": "2ee8d564-35c6-4f00-bbb1-253d231e1273"
+    },
+    {
+      "claim_id": "f93ba192-e5ec-406f-abc1-20ebb223242e",
+      "result_id": "1f52f1f0-98b5-43cf-84a4-6ef2e7334701"
+    },
+    {
+      "claim_id": "b28f6d0d-9dc2-42f7-ae9e-7cb4c909dec1",
+      "result_id": "7df546dd-129e-4b0b-a7e7-6a02fae53ce0"
+    }
+  ],
+  "comparisons": []
+}

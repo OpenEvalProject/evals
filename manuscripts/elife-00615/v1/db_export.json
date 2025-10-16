@@ -1,0 +1,247 @@
+{
+  "submission": {
+    "id": "aad18ecd-1a6a-4489-a2c0-298563c0435e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:20:57.107885Z",
+    "updated_at": "2025-10-16T22:20:57.107885Z"
+  },
+  "content": [
+    {
+      "id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "submission_id": "aad18ecd-1a6a-4489-a2c0-298563c0435e",
+      "content_type": "manuscript",
+      "content_text": "# What does it take to recruit and retain senior women faculty?\n\n## Authors\n\n- Fiona M Watt<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Centre for Stem Cells and Regenerative Medicine King's College London London United Kingdom fiona.watt@kcl.ac.uk\n\n\u2020 Corresponding author\n\n## Abstract\n\neLife deputy editor Fiona M Watt recounts some of her personal experiences as a senior female academic in a male-dominated environment.\n",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2b1048c2-7a75-4a83-89f9-69afe5c0a5ae",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C1",
+      "claim": "Fiona M Watt is affiliated with the Centre for Stem Cells and Regenerative Medicine at King's College London.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Centre for Stem Cells and Regenerative Medicine King's College London London United Kingdom fiona.watt@kcl.ac.uk",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The affiliation information is directly stated as factual institutional data in the author information section.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "77036b09-ca01-4230-b1c6-2adf1aca195d",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C2",
+      "claim": "Fiona M Watt serves as a deputy editor for eLife.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eLife deputy editor Fiona M Watt recounts some of her personal experiences as a senior female academic in a male-dominated environment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The abstract explicitly identifies Fiona M Watt's role as deputy editor at eLife.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "533c34d5-9489-4314-bdc1-450c659a3f28",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C3",
+      "claim": "Fiona M Watt is a senior female academic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eLife deputy editor Fiona M Watt recounts some of her personal experiences as a senior female academic in a male-dominated environment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The abstract directly describes Fiona M Watt as a senior female academic.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "a95e95f0-ed49-4e86-90fa-03f4d0ae5e78",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C4",
+      "claim": "Fiona M Watt has personal experiences in a male-dominated academic environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eLife deputy editor Fiona M Watt recounts some of her personal experiences as a senior female academic in a male-dominated environment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The abstract explicitly states that she recounts personal experiences in such an environment.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "52d6b738-4874-4138-9c06-9e32548b4241",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C5",
+      "claim": "The academic environment in which Fiona M Watt has worked is male-dominated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eLife deputy editor Fiona M Watt recounts some of her personal experiences as a senior female academic in a male-dominated environment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The abstract explicitly characterizes the academic environment as male-dominated.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "ecc3380d-901e-4fc6-afcf-a48b28ab51da",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C6",
+      "claim": "The manuscript addresses the topic of recruiting and retaining senior women faculty.",
+      "claim_type": "EXPLICIT",
+      "source_text": "What does it take to recruit and retain senior women faculty?",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The title explicitly frames the manuscript's topic as a question about recruitment and retention of senior women faculty.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "47c3c468-41ba-415b-bd1b-7b03bf19e00e",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C7",
+      "claim": "There are challenges or considerations specific to recruiting senior women faculty.",
+      "claim_type": "IMPLICIT",
+      "source_text": "What does it take to recruit and retain senior women faculty?",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The framing of the title as a question implies that recruiting senior women faculty requires specific considerations or involves particular challenges that warrant examination.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "88501065-2542-4909-b479-e8d8b0590986",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C8",
+      "claim": "There are challenges or considerations specific to retaining senior women faculty.",
+      "claim_type": "IMPLICIT",
+      "source_text": "What does it take to recruit and retain senior women faculty?",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The framing of the title as a question implies that retaining senior women faculty requires specific considerations or involves particular challenges that warrant examination.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "a940f4b4-d19d-49fe-95c2-f0dcf7f7f704",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "claim_id": "C9",
+      "claim": "Personal experiences of senior female academics are relevant to understanding recruitment and retention of senior women faculty.",
+      "claim_type": "IMPLICIT",
+      "source_text": "eLife deputy editor Fiona M Watt recounts some of her personal experiences as a senior female academic in a male-dominated environment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The connection between the title's question about recruitment/retention and the abstract's focus on personal experiences implies that such experiences provide relevant insights into the topic.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3ca57bd3-6001-42a2-9fbb-da90914cb256",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1, C2, and C3 are explicit factual statements about the author's institutional affiliation, editorial role, and academic status. These are directly verifiable from the manuscript's author information and abstract, representing standard bibliographic data.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "a944270c-cc48-4a98-8dc6-001372dfa723",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C6 is an explicit statement that the manuscript addresses recruitment and retention of senior women faculty, directly supported by the manuscript's title. This is a straightforward factual claim about the stated topic of the work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "4fef4008-f6de-4f08-9f71-04852ef6a786",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4 and C5 are explicit statements from the abstract indicating that the author has personal experiences in a male-dominated academic environment. These claims are directly stated in the manuscript text and represent the author's self-description of her professional context.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "93bc03ac-cd82-4fa8-a45f-169b1b7a2254",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C7 and C8 infer that specific challenges exist in recruiting and retaining senior women faculty based on the title's interrogative framing. While this is a reasonable inference, the provided excerpt does not contain the full manuscript text demonstrating what these challenges are, whether they are empirically supported, or how they are addressed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    },
+    {
+      "id": "cc906f53-c86d-4f30-a1e5-6f0fa2951b8a",
+      "content_id": "df5e0779-f5aa-4367-8a70-72e255cc6c6e",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C9 infers that personal experiences are relevant to understanding recruitment and retention issues. While the connection between the title and abstract is logical, the provided excerpt does not include the full manuscript content needed to assess whether the personal experiences actually provide substantive evidence, data, or actionable insights on the topic.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:57.107885Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b1048c2-7a75-4a83-89f9-69afe5c0a5ae",
+      "result_id": "3ca57bd3-6001-42a2-9fbb-da90914cb256"
+    },
+    {
+      "claim_id": "77036b09-ca01-4230-b1c6-2adf1aca195d",
+      "result_id": "3ca57bd3-6001-42a2-9fbb-da90914cb256"
+    },
+    {
+      "claim_id": "533c34d5-9489-4314-bdc1-450c659a3f28",
+      "result_id": "3ca57bd3-6001-42a2-9fbb-da90914cb256"
+    },
+    {
+      "claim_id": "ecc3380d-901e-4fc6-afcf-a48b28ab51da",
+      "result_id": "a944270c-cc48-4a98-8dc6-001372dfa723"
+    },
+    {
+      "claim_id": "a95e95f0-ed49-4e86-90fa-03f4d0ae5e78",
+      "result_id": "4fef4008-f6de-4f08-9f71-04852ef6a786"
+    },
+    {
+      "claim_id": "52d6b738-4874-4138-9c06-9e32548b4241",
+      "result_id": "4fef4008-f6de-4f08-9f71-04852ef6a786"
+    },
+    {
+      "claim_id": "47c3c468-41ba-415b-bd1b-7b03bf19e00e",
+      "result_id": "93bc03ac-cd82-4fa8-a45f-169b1b7a2254"
+    },
+    {
+      "claim_id": "88501065-2542-4909-b479-e8d8b0590986",
+      "result_id": "93bc03ac-cd82-4fa8-a45f-169b1b7a2254"
+    },
+    {
+      "claim_id": "a940f4b4-d19d-49fe-95c2-f0dcf7f7f704",
+      "result_id": "cc906f53-c86d-4f30-a1e5-6f0fa2951b8a"
+    }
+  ],
+  "comparisons": []
+}

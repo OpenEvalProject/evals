@@ -1,0 +1,179 @@
+{
+  "submission": {
+    "id": "b3581761-fdb5-40ce-9991-e218cdda25a0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:27:04.198240Z",
+    "updated_at": "2025-10-16T22:27:04.198240Z"
+  },
+  "content": [
+    {
+      "id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "submission_id": "b3581761-fdb5-40ce-9991-e218cdda25a0",
+      "content_type": "manuscript",
+      "content_text": "# A sticky solution\n\n## Authors\n\n- David Gresham<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for Genomics and Systems Biology, Department of Biology New York University New York United States dgresham@nyu.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nSelection favours single-celled mutants that stick together when a sugar needed for growth is in short supply, suggesting that multicellular life may have evolved as a by-product of selection for more efficient usage of resources.\n",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "279b2173-5670-449e-a889-3b64198f1c4b",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C1",
+      "claim": "Selection favors single-celled mutants that stick together when a sugar needed for growth is in short supply.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Selection favours single-celled mutants that stick together when a sugar needed for growth is in short supply",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim appears to be based on experimental observations or data from a study being discussed, and involves inference about selective pressures acting on mutants under resource-limited conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "c7e86474-9c0e-46c7-85cd-8b5b0b7b8306",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C2",
+      "claim": "Multicellular life may have evolved as a by-product of selection for more efficient usage of resources.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggesting that multicellular life may have evolved as a by-product of selection for more efficient usage of resources",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The use of 'may have' and 'suggesting' indicates this is a speculative evolutionary hypothesis inferred from the observations about mutant selection under resource limitation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "7141ff17-e518-4c97-88f5-46172978a94a",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C3",
+      "claim": "Single-celled organisms can develop mutations that cause them to adhere to one another.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Selection favours single-celled mutants that stick together",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The existence of 'mutants that stick together' implies that mutations can arise that produce adhesive phenotypes in single-celled organisms, which is inferred from the explicit statement about selection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "2f908b19-a04e-45fd-981d-17e8cb2d9317",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C4",
+      "claim": "Sticking together provides a selective advantage to single-celled organisms under conditions of sugar limitation.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Selection favours single-celled mutants that stick together when a sugar needed for growth is in short supply",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The statement that selection 'favours' these mutants under specific conditions implies they have a fitness advantage, which is inferred from the explicit claim about selection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "4a7e9803-0baa-4e57-89e3-c1f6ea69552d",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C5",
+      "claim": "Resource limitation can drive evolutionary transitions toward multicellularity.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Selection favours single-celled mutants that stick together when a sugar needed for growth is in short supply, suggesting that multicellular life may have evolved as a by-product of selection for more efficient usage of resources",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This broader evolutionary principle is implied by connecting the specific observation of selection under resource limitation to the general hypothesis about multicellular evolution.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "b836760d-5bed-4c63-a3e1-c8a68c29481a",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C6",
+      "claim": "Multicellularity can arise as a by-product rather than as a direct target of selection.",
+      "claim_type": "IMPLICIT",
+      "source_text": "multicellular life may have evolved as a by-product of selection for more efficient usage of resources",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'by-product' implies that multicellularity itself was not directly selected for, but rather emerged as a consequence of selection for another trait (resource efficiency).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "f4c3928e-900e-4fe9-b405-23807ec9a37f",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "claim_id": "C7",
+      "claim": "Efficient resource usage can be enhanced by cells sticking together.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Selection favours single-celled mutants that stick together when a sugar needed for growth is in short supply, suggesting that multicellular life may have evolved as a by-product of selection for more efficient usage of resources",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "The connection between cells sticking together under resource limitation and the hypothesis about selection for efficient resource usage implies that adhesion improves resource efficiency.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a751693-d4fc-4b12-9d70-2ee4f1157401",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C3, C4, and C7 describe selection for adhesive mutants under sugar limitation and assert this improves resource efficiency. However, the abstract provides no experimental details, sample sizes, statistical tests, controls, or mechanistic data to evaluate these claims. The mechanism linking adhesion to resource efficiency (C7) is inferred but not demonstrated. Without access to methods, data, or statistical validation from the underlying study, the empirical support cannot be assessed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    },
+    {
+      "id": "6c207eb6-f968-4c04-8eee-6a12233ceeff",
+      "content_id": "553c4d5a-6c4b-414a-94c0-75f537c69e24",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claims C2, C5, and C6 present a speculative evolutionary hypothesis that multicellularity evolved as a by-product of selection for resource efficiency. These claims are explicitly marked as speculative ('may have evolved,' 'suggesting') and extrapolate from a specific experimental observation to a general evolutionary principle. This broad evolutionary interpretation requires substantial additional evidence including comparative studies across taxa, phylogenetic analyses, and demonstration that the observed mechanism generalizes, none of which are indicated in the abstract.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:27:04.198240Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "279b2173-5670-449e-a889-3b64198f1c4b",
+      "result_id": "3a751693-d4fc-4b12-9d70-2ee4f1157401"
+    },
+    {
+      "claim_id": "7141ff17-e518-4c97-88f5-46172978a94a",
+      "result_id": "3a751693-d4fc-4b12-9d70-2ee4f1157401"
+    },
+    {
+      "claim_id": "2f908b19-a04e-45fd-981d-17e8cb2d9317",
+      "result_id": "3a751693-d4fc-4b12-9d70-2ee4f1157401"
+    },
+    {
+      "claim_id": "f4c3928e-900e-4fe9-b405-23807ec9a37f",
+      "result_id": "3a751693-d4fc-4b12-9d70-2ee4f1157401"
+    },
+    {
+      "claim_id": "c7e86474-9c0e-46c7-85cd-8b5b0b7b8306",
+      "result_id": "6c207eb6-f968-4c04-8eee-6a12233ceeff"
+    },
+    {
+      "claim_id": "4a7e9803-0baa-4e57-89e3-c1f6ea69552d",
+      "result_id": "6c207eb6-f968-4c04-8eee-6a12233ceeff"
+    },
+    {
+      "claim_id": "b836760d-5bed-4c63-a3e1-c8a68c29481a",
+      "result_id": "6c207eb6-f968-4c04-8eee-6a12233ceeff"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,179 @@
+{
+  "submission": {
+    "id": "6481a955-eb26-4e96-a64f-48df71055993",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:04:09.157802Z",
+    "updated_at": "2025-10-16T22:04:09.157802Z"
+  },
+  "content": [
+    {
+      "id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "submission_id": "6481a955-eb26-4e96-a64f-48df71055993",
+      "content_type": "manuscript",
+      "content_text": "# Nerve endings reveal hidden diversity in the skin\n\n## Authors\n\n- Eric E Turner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for Integrative Brain Research Seattle Children's Research Institute Seattle USA eric.turner@seattlechildrens.org\n\n\u2020 Corresponding author\n\n## Abstract\n\nExperiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.\n",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8cb0210-8d64-43a6-be5d-f11c16932811",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C1",
+      "claim": "Experiments on transgenic mice have been conducted to study sensory neurons in the skin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The claim references experiments that were performed, indicating empirical research was conducted.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "ececd57f-b599-4ea6-8315-0ec0ebfcbe21",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C2",
+      "claim": "The morphologies of sensory neurons in the skin of mice are more complex than previously expected.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This finding is presented as a result revealed by the experiments, indicating it is supported by experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "6390fc55-690e-4936-8e20-25261a15c1a5",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C3",
+      "claim": "The morphologies of sensory neurons in the skin of mice are more diverse than previously expected.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This finding is presented as a result revealed by the experiments, indicating it is supported by experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "cc559aca-554a-4095-bd9b-892ad2e8872c",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C4",
+      "claim": "Prior to these experiments, there was an expectation about the complexity and diversity of sensory neuron morphologies in mouse skin.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'than expected' implies that there was a pre-existing expectation or understanding that the new findings contradict or exceed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "f90ebd67-e62f-4fb5-9fdd-186fd0c32059",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C5",
+      "claim": "Transgenic mice can be used as a model system to reveal morphological features of sensory neurons in skin.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The successful revelation of morphological features through transgenic mouse experiments implies that this is a viable experimental approach for studying these structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "e75851e5-e749-4fa4-b5f0-b50480b47994",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C6",
+      "claim": "Sensory neurons have nerve endings in the skin.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Nerve endings reveal hidden diversity in the skin",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The title references nerve endings in the skin, which draws on established anatomical knowledge that sensory neurons terminate as nerve endings in skin tissue.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "da312d2d-1d61-4046-91eb-bf9857a34a1a",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "claim_id": "C7",
+      "claim": "There is hidden diversity in the skin that can be revealed through studying nerve endings.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nerve endings reveal hidden diversity in the skin",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The title and abstract together indicate that the experiments revealed previously hidden diversity, suggesting this is a finding from the research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "30ce1a73-b386-468c-954d-2fbf69285459",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1-C3, C5, and C7 describe the main finding that transgenic mouse experiments revealed greater complexity and diversity in sensory neuron morphologies. However, this abstract provides no methods, data, statistical analyses, sample sizes, controls, or operational definitions of 'complexity' and 'diversity.' Without access to experimental details, quantification methods, or supporting data, the validity of these conclusions cannot be assessed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    },
+    {
+      "id": "1b03f02b-bbfb-4ddb-bd1c-d1557b92a224",
+      "content_id": "d7bf19c2-c362-473f-b880-b11668c726ae",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C6 reflects established anatomical knowledge about sensory neuron nerve endings in skin. Claim C4 asserts prior expectations existed but provides no citations or specific references to document what was previously expected or believed about sensory neuron morphology. Without substantiation of the baseline expectation, the comparative claim of exceeding expectations cannot be fully evaluated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:04:09.157802Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8cb0210-8d64-43a6-be5d-f11c16932811",
+      "result_id": "30ce1a73-b386-468c-954d-2fbf69285459"
+    },
+    {
+      "claim_id": "ececd57f-b599-4ea6-8315-0ec0ebfcbe21",
+      "result_id": "30ce1a73-b386-468c-954d-2fbf69285459"
+    },
+    {
+      "claim_id": "6390fc55-690e-4936-8e20-25261a15c1a5",
+      "result_id": "30ce1a73-b386-468c-954d-2fbf69285459"
+    },
+    {
+      "claim_id": "f90ebd67-e62f-4fb5-9fdd-186fd0c32059",
+      "result_id": "30ce1a73-b386-468c-954d-2fbf69285459"
+    },
+    {
+      "claim_id": "da312d2d-1d61-4046-91eb-bf9857a34a1a",
+      "result_id": "30ce1a73-b386-468c-954d-2fbf69285459"
+    },
+    {
+      "claim_id": "cc559aca-554a-4095-bd9b-892ad2e8872c",
+      "result_id": "1b03f02b-bbfb-4ddb-bd1c-d1557b92a224"
+    },
+    {
+      "claim_id": "e75851e5-e749-4fa4-b5f0-b50480b47994",
+      "result_id": "1b03f02b-bbfb-4ddb-bd1c-d1557b92a224"
+    }
+  ],
+  "comparisons": []
+}

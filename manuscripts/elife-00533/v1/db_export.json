@@ -1,0 +1,179 @@
+{
+  "submission": {
+    "id": "c835aae2-a26a-4ecf-9c14-ba5a4186e81f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:15:49.739890Z",
+    "updated_at": "2025-10-16T22:15:49.739890Z"
+  },
+  "content": [
+    {
+      "id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "submission_id": "c835aae2-a26a-4ecf-9c14-ba5a4186e81f",
+      "content_type": "manuscript",
+      "content_text": "# Learning about loss\n\n## Authors\n\n- Alejandro S\u00e1nchez Alvarado<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Stowers Institute for Medical Research Kansas City, Missouri United States asa@stowers.org\n\n\u2020 Corresponding author\n\n## Abstract\n\nResearchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.\n",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0fc82756-5c55-4577-a04f-0adecb73bb57",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C1",
+      "claim": "Two genes have been identified by researchers: follistatin and activin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The statement indicates that researchers have identified these genes through research, implying empirical investigation. The identification itself is presented as a research finding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "c82c6860-bd4e-4290-955a-44b2d6c5b4b0",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C2",
+      "claim": "Follistatin and activin have an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is presented as a research finding based on identification by researchers, suggesting it is supported by experimental data or observations from the study being reported.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "f2d907d4-390e-40bd-91f8-b2c1487e7218",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C3",
+      "claim": "Certain flatworms have the ability to identify wounds that require the production of new tissue.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This capability of flatworms is stated as an established fact in the context of the research. It draws on both the research findings and established knowledge about flatworm regenerative abilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "7e680a74-cf09-4e57-b545-ba449e7eb7b4",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C4",
+      "claim": "Follistatin plays a role in wound identification in certain flatworms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific component of the main finding, indicating follistatin individually has been identified as having this role through research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "d2adcad5-548c-4cc1-8cde-8e4f9b8f0d2d",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C5",
+      "claim": "Activin plays a role in wound identification in certain flatworms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific component of the main finding, indicating activin individually has been identified as having this role through research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "ae649580-a651-4bd1-8202-7a04f01d188e",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C6",
+      "claim": "Wound identification in certain flatworms is linked to the production of new tissue.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement indicates that wound identification is functionally connected to determining when new tissue production is required, which is a logical inference from the described biological process and aligns with regeneration biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "a42699af-1ab0-465e-a26d-bee9ed00b94b",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "claim_id": "C7",
+      "claim": "Not all wounds in flatworms require the production of new tissue.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Researchers have identified two genes\u2014 follistatin and activin \u2014as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'wounds that require the production of new tissue' implies that there are wounds that do not require new tissue production, otherwise the specification would be unnecessary.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fb2adb0d-1ae5-48b7-97de-db6a6a046701",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The claims assert that follistatin and activin have important roles in flatworm wound identification, but the abstract provides no experimental methods, statistical validation, mechanistic data, or controls to evaluate this finding. Without access to the methodology, sample sizes, functional assays, or genetic manipulation experiments, it is impossible to assess whether the claimed roles are supported by rigorous evidence or represent preliminary correlative observations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    },
+    {
+      "id": "1dc4266e-dc9d-4035-ae0d-5f6a4a5f1201",
+      "content_id": "10ab939e-02ff-48e9-a254-63c15f36e749",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims describe the biological context of flatworm wound discrimination and tissue regeneration. While C3 and C6 align with established knowledge about planarian regeneration, C7 makes an implicit inference about wound heterogeneity that lacks explicit experimental support in the provided text. The abstract format does not provide sufficient detail to verify whether these capabilities were demonstrated in the current study or are cited from prior work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:15:49.739890Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fc82756-5c55-4577-a04f-0adecb73bb57",
+      "result_id": "fb2adb0d-1ae5-48b7-97de-db6a6a046701"
+    },
+    {
+      "claim_id": "c82c6860-bd4e-4290-955a-44b2d6c5b4b0",
+      "result_id": "fb2adb0d-1ae5-48b7-97de-db6a6a046701"
+    },
+    {
+      "claim_id": "7e680a74-cf09-4e57-b545-ba449e7eb7b4",
+      "result_id": "fb2adb0d-1ae5-48b7-97de-db6a6a046701"
+    },
+    {
+      "claim_id": "d2adcad5-548c-4cc1-8cde-8e4f9b8f0d2d",
+      "result_id": "fb2adb0d-1ae5-48b7-97de-db6a6a046701"
+    },
+    {
+      "claim_id": "f2d907d4-390e-40bd-91f8-b2c1487e7218",
+      "result_id": "1dc4266e-dc9d-4035-ae0d-5f6a4a5f1201"
+    },
+    {
+      "claim_id": "ae649580-a651-4bd1-8202-7a04f01d188e",
+      "result_id": "1dc4266e-dc9d-4035-ae0d-5f6a4a5f1201"
+    },
+    {
+      "claim_id": "a42699af-1ab0-465e-a26d-bee9ed00b94b",
+      "result_id": "1dc4266e-dc9d-4035-ae0d-5f6a4a5f1201"
+    }
+  ],
+  "comparisons": []
+}

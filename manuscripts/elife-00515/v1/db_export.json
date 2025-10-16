@@ -1,0 +1,135 @@
+{
+  "submission": {
+    "id": "089d8be8-6f85-4b6d-a771-3b05d3a57a6e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:13:50.813255Z",
+    "updated_at": "2025-10-16T22:13:50.813255Z"
+  },
+  "content": [
+    {
+      "id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "submission_id": "089d8be8-6f85-4b6d-a771-3b05d3a57a6e",
+      "content_type": "manuscript",
+      "content_text": "# A new answer to old questions\n\n## Authors\n\n- Yves Barral<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry ETH Zurich, Zurich Switzerland yves.barral@bc.biol.ethz.ch\n\n\u2020 Corresponding author\n\n## Abstract\n\nSudden changes in the level of a coenzyme called NADPH might be the underlying cause of aging in cells.\n",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "935b7a6d-82d8-444f-a237-12dea00c81e1",
+      "content_id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "claim_id": "C1",
+      "claim": "NADPH is a coenzyme",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sudden changes in the level of a coenzyme called NADPH",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The classification of NADPH as a coenzyme is established biochemical knowledge, stated as a definitional fact in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    },
+    {
+      "id": "6f8667bf-7513-47fd-aced-7a8162312595",
+      "content_id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "claim_id": "C2",
+      "claim": "Sudden changes in NADPH levels might be the underlying cause of aging in cells",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sudden changes in the level of a coenzyme called NADPH might be the underlying cause of aging in cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The use of 'might be' indicates this is a speculative or hypothetical claim about causation. The claim appears to be inferred from research findings not detailed in this abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    },
+    {
+      "id": "3269576a-3570-42c8-b216-fe838f353923",
+      "content_id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "claim_id": "C3",
+      "claim": "NADPH levels can undergo sudden changes",
+      "claim_type": "IMPLICIT",
+      "source_text": "Sudden changes in the level of a coenzyme called NADPH",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement presupposes that NADPH levels are capable of sudden changes, which is an implicit factual claim underlying the main assertion.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    },
+    {
+      "id": "399c00be-1a31-4d1f-9af0-884a196fa55b",
+      "content_id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "claim_id": "C4",
+      "claim": "Cellular aging has an underlying cause",
+      "claim_type": "IMPLICIT",
+      "source_text": "might be the underlying cause of aging in cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The reference to 'the underlying cause' implies that cellular aging has a causal mechanism, which is an implicit assumption in the statement.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    },
+    {
+      "id": "8bc48a7c-d933-4ea0-82ed-929202acd9ba",
+      "content_id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "claim_id": "C5",
+      "claim": "There are old questions about aging in cells",
+      "claim_type": "IMPLICIT",
+      "source_text": "A new answer to old questions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title implies the existence of longstanding questions about cellular aging that this work addresses, though these questions are not explicitly stated.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a18e2dd-41b8-4f5e-9f2b-57e67b131053",
+      "content_id": "aac3d880-0e49-4d66-850f-4f8b5892112f",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "The central claim (C2) that sudden NADPH changes might cause cellular aging is explicitly speculative with no experimental data, statistical analysis, or mechanistic evidence provided in the abstract. While C1 is established knowledge and C3-C5 provide context, the causal relationship remains a hypothesis without supporting evidence. This represents a proposed answer to longstanding questions (C5) but requires experimental validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:13:50.813255Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "935b7a6d-82d8-444f-a237-12dea00c81e1",
+      "result_id": "3a18e2dd-41b8-4f5e-9f2b-57e67b131053"
+    },
+    {
+      "claim_id": "6f8667bf-7513-47fd-aced-7a8162312595",
+      "result_id": "3a18e2dd-41b8-4f5e-9f2b-57e67b131053"
+    },
+    {
+      "claim_id": "3269576a-3570-42c8-b216-fe838f353923",
+      "result_id": "3a18e2dd-41b8-4f5e-9f2b-57e67b131053"
+    },
+    {
+      "claim_id": "399c00be-1a31-4d1f-9af0-884a196fa55b",
+      "result_id": "3a18e2dd-41b8-4f5e-9f2b-57e67b131053"
+    },
+    {
+      "claim_id": "8bc48a7c-d933-4ea0-82ed-929202acd9ba",
+      "result_id": "3a18e2dd-41b8-4f5e-9f2b-57e67b131053"
+    }
+  ],
+  "comparisons": []
+}

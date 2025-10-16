@@ -1,0 +1,2441 @@
+{
+  "submission": {
+    "id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:36:55.773946Z",
+    "updated_at": "2025-10-16T22:36:55.773946Z"
+  },
+  "content": [
+    {
+      "id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "content_type": "manuscript",
+      "content_text": "# Phosphorylation-mediated PTEN conformational closure and deactivation revealed with protein semisynthesis\n\n## Authors\n\n- David Bolduc<sup>1</sup>\n- Meghdad Rahdar<sup>2</sup>\n- Becky Tu-Sekine<sup>3</sup>\n- Sindhu Carmen Sivakumaren<sup>1</sup>\n- Daniel Raben<sup>3</sup>\n- L Mario Amzel<sup>4</sup>\n- Peter Devreotes<sup>5</sup>\n- Sandra B Gabelli<sup>4</sup> \u2020\n- Philip Cole<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Pharmacology and Molecular Sciences Johns Hopkins University School of Medicine Baltimore United States\n2. Department of Pharmacology University of California, San Diego San Diego United States\n3. Department of Biological Chemistry Johns Hopkins University School of Medicine Baltimore United States\n4. Department of Biophysics and Biophysical Chemistry Johns Hopkins University School of Medicine Baltimore United States\n5. Department of Cell Biology Johns Hopkins University School of Medicine Baltimore United States\n6. Departments of Medicine and Oncology Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00691.001 The tumor suppressor PIP 3 phosphatase PTEN is phosphorylated on four clustered Ser/Thr on its C-terminal tail (aa 380\u2013385) and these phosphorylations are proposed to induce a reduction in PTEN\u2019s plasma membrane recruitment. How these phosphorylations affect the structure and enzymatic function of PTEN is poorly understood. To gain insight into the mechanistic basis of PTEN regulation by phosphorylation, we generated semisynthetic site-specifically tetra-phosphorylated PTEN using expressed protein ligation. By employing a combination of biophysical and enzymatic approaches, we have found that purified tail-phosphorylated PTEN relative to its unphosphorylated counterpart shows reduced catalytic activity and membrane affinity and undergoes conformational compaction likely involving an intramolecular interaction between its C-tail and the C2 domain. Our results suggest that there is a competition between membrane phospholipids and PTEN phospho-tail for binding to the C2 domain. These findings reveal a key aspect of PTEN\u2019s regulation and suggest pharmacologic approaches for direct PTEN activation. DOI: http://dx.doi.org/10.7554/eLife.00691.001\n\n## Introduction\n\nPTEN (phosphatase and tensin homolog deleted on chromosome 10) suppresses cell proliferation, migration and survival by dephosphorylating the lipid second messenger phosphatidyl inositol 3,4,5-triphosphate (PIP3), thereby opposing phosphatidyl inositol-3 kinase (PI3K) signaling and preventing AKT protein kinase activation (Maehama and Dixon, 1998; Myers et al., 1998; Sun et al., 1999; Iijima and Devreotes, 2002). PTEN is one of the most frequently mutated genes in cancer, with inactivating mutations found in many solid tumor types (Li et al., 1997; Steck et al., 1997). The PTEN gene has been shown to be inactivated through somatic and germline mutations as well as transcriptionally suppressed through epigenetic mechanisms (Salvesen et al., 2001; Meng et al., 2007; Hollander et al., 2011). Homozygous deletion of PTEN is embryonically lethal in mice while heterozygous mice are predisposed to developing tumors (Suzuki et al., 1998; Di Cristofano et al., 1999; Podsypanina et al., 1999). Germline mutations in PTEN predispose people to spontaneous tumor formation as seen in Cowden syndrome (Nelen et al., 1997).\n\nPTEN is a 47 kDa (403 aa) protein composed of a \u2018dual-specificity\u2019 phosphatase domain, a C2 domain that mediates membrane association, and a 52 aa C-terminal tail (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig1-v1.jpg)\n\n**Figure 1.:** (A) PTEN is composed of phosphatase domain, a C2 domain, and a C-terminal tail that is phosphorylated multiple times within a cluster of Ser and Thr residues (S380/T382/T383/S385). (B) C-terminally truncated PTEN containing an intein generated thioester at its C-terminus is ligated to a synthetic PTEN tail peptide with or without phosphorylation at the S380/T382/T383/S385 cluster. The final product is full length PTEN in the phosphorylated (4p-PTEN) or unphosphorylated (n-PTEN) form. (C) C-terminal tail peptides were synthesized in the unphosphorylated form or phosphorylated at S380/T382/T383/S385. Note that the N-Cys replaces a natural Tyr in PTEN. (D) The ligation reaction precedes smoothly over 72 hr. (E) Western blot with an anti-phospho PTEN antibody reveals 4p-PTEN but not n-PTEN is phosphorylated.DOI: http://dx.doi.org/10.7554/eLife.00691.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** n-PTEN and 4p-PTEN are full length semisynthetic proteins and contain the Tyr 379 to Cys mutation to facilitate the native chemical ligation reaction. t-PTEN contains amino acids 1\u2013378.DOI: http://dx.doi.org/10.7554/eLife.00691.004\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Unphosphorylated PTEN tail peptide (expected mass: m/z 2852). (B) Phosphorylated PTEN tail peptide (expected mass: m/z 3172). (C) Unphosphorylated semisynthetic PTEN (n-PTEN) (expected mass: m/z 47,106.2). (D) Phosphorylated semisynthetic PTEN (4p-PTEN) (expected mass: m/z 47,426.2). The spectra for C and D were normalized to the external reference bovine serum albumin. The approximate accuracy for the mass spectrometric measurements of these protein masses is \u00b150 Da.DOI: http://dx.doi.org/10.7554/eLife.00691.005\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The chromatograms and elution volumes of (A) n-PTEN and (B) 4p-PTEN purified by FPLC on a size exclusion column. (C) The chromatogram of protein standards on a size exclusion column (Peak A: Thyroglobulin, MW = 670,000, elution volume = 8.7 ml; Peak B: gamma globulin, MW = 158,000, elution volume = 9.7 ml; Peak C: Ovalbumin, MW = 44,000, elution volume = 14.6 ml; Peak D: Myoglobin, MW = 17,000, elution volume = 16.3 ml; Peak E: Vitamin B12, MW = 1350, elution volume = 19.5 ml). (D) Phosphatase assays using diC6 PIP3 for WT GST-PTEN and Y379C GST-PTEN purified from E. coli. Data are reported as the mean \u00b1 the SEM of three experiments performed in duplicate. (E) Generation of 4p-PTEN by expressed protein ligation in the presence or absence of 25 \u03bcM VO-OHpic, a potent PTEN inhibitor monitored by western blot. (F) 50 ng of 4p-PTEN treated with 2 \u03bcM n-PTEN (left) or 1 \u03bcM CIP (right). Dephosphorylation of the phospho-tail is monitored by western blot.DOI: http://dx.doi.org/10.7554/eLife.00691.006\n\n## Results\n\n## Semisynthesis of tetraphosphorylated and unphosphorylated PTEN (4p-PTEN and n-PTEN)\n\nA requirement for expressed protein ligation is the correct positioning of a Cys for the native chemical ligation reaction (Muir et al., 1998; Schwarzer and Cole, 2005; Vila-Perell\u00f3 and Muir, 2010). Initial attempts at generating semisynthetic PTEN focused on an Escherichia coli expression system. In this way, we showed that PTEN-intein fusion proteins allowed for generation of catalytically active recombinant PTEN thioester fragments (data not shown). We also determined using GST-PTEN that Cys was well-tolerated at the position needed for ligation, showing no change in catalytic activity induced by Y379C mutation (Figure 1\u2014figure supplement 3D). However, expression in E. coli of the intein-fusion protein suffered from low yields of soluble PTEN protein expression (<0.1 mg/l culture) which was insufficient for our needs.\n\nWe thus subcloned aa 1\u2013378 of PTEN (t-PTEN) into a baculovirus plasmid for insect cell expression. Ligation with a tetraphosphorylated (and unphosphorylated as a control) N-Cys synthetic peptide aa 379\u2013403 (Figure 1C) proceeded smoothly over 72 hr, providing 8\u201310 mg/l of culture purified semisynthteic PTEN protein (Figure 1B,D). Tetraphosphorylated (4p-PTEN), unphosphorylated (n-PTEN) and C-terminally truncated PTEN (t-PTEN) were generated in this way (Figure 1\u2014figure supplement 1). Semisynthetic proteins were >90% pure using Coomassie staining and their structural integrity confirmed by mass spectrometry (Figure 1\u2014figure supplement 2C and D). Western blot with commercial anti-phospho-PTEN Ab showed that 4p-PTEN, and not n-PTEN, was appropriately phosphorylated (Figure 1E). It should also be noted that baculovirus systems have rarely been used for intein expression vectors (Pradhan et al., 1999), possibly in part because of the expression of chitinase in these hosts which interferes with the standard chitin affinity purification scheme. Nevertheless, we found the presence of chitinase to be a surmountable issue by a chromatographic pre-clearing step with a bed of fibrous cellulose. We also found that High Five insect cells rather than the more typical SF9 insect cells were critical for robust expression. Despite the theoretical concern about autodephosphorylation (Zhang et al., 2012), 4p-PTEN prepared in the presence of a PTEN phosphatase vanadate-based inhibitor was equally phosphorylated to that prepared in its absence (Figure 1\u2014figure supplement 3E). Further experiments showed that 4p-PTEN did not undergo spontaneous pSer/pThr hydrolysis over 24 hr as monitored by western blot (Figure 1\u2014figure supplement 3F).\n\n## Enzymatic characterization of 4p-PTEN\n\nInitial analysis of 4p-PTEN catalytic activity was carried out with a soluble PIP\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig2-v1.jpg)\n\n**Figure 2.:** (A) PTEN activity to a soluble substrate, diC6-PIP3. (n-PTEN: kcat = 2.6 \u00b1 0.1 min\u22121, Km = 67 \u00b1 4.2 \u03bcM, kcat/Km = 0.038 \u00b1 0.001 min\u22121\u03bcM\u22121; 4p-PTEN: kcat/Km = 0.005 \u00b1 0.0002 min\u22121\u03bcM\u22121) (B and C) PTEN activity to palmitoyl PIP3 incorporated into phosphatidylcholine vesicles. In the bulk dilution experiment (B) enzymatic activity for n-PTEN and 4p-PTEN was measured at a fixed surface concentration of 1% PIP3 while the bulk concentration was varied. In the surface dilution experiment (C) activity was measured at a fixed bulk concentration of 50 \u03bcM PIP3 while the surface concentration was varied. (D) 4p-PTEN has lower activity than n-PTEN only at low PIP3 concentrations. (E) Summary of the interfacial kinetic analysis of n-PTEN and 4p-PTEN. Data are reported as the mean \u00b1 the SEM from three experiments performed in duplicate. Apparent Vmax values were obtained from the best fit curves from the first four points of the surface dilution experiments.DOI: http://dx.doi.org/10.7554/eLife.00691.007\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) 32P labeled PIP3 was generated as outlined in the \u2018Materials and methods\u2019 section. (B) PTEN activity to radiolabled palmitoyl PIP3 incorporated into phosphatidylcholine vesicles is linear with respect to enzyme concentration. (C) Apparent kcat and apparent Km values were obtained by nonlinear regression analysis for each form of PTEN for surface dilution experiments (top row) and bulk dilution experiments (bottom row). Apparent kcat and apparent Km values were then fit to the equations in the \u2018Materials and methods\u2019 section to obtain the interfacial kinetic parameters in tabulated in Figure 2E and Figure 2\u2014figure Supplement 2DOI: http://dx.doi.org/10.7554/eLife.00691.008\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) In the bulk dilution experiment enzymatic activity for t-PTEN was measured at a fixed surface concentration of 1% PIP3 while the bulk concentration was varied. (B) In the surface dilution experiment activity was measured at a fixed bulk concentration of 50 \u00b5M PIP3 while the surface concentration was varied. Data a represented as the mean \u00b1 the SEM of three experiments performed in duplicate. (C) Summary of the interfacial kinetic analysis of t-PTEN. Data are reported as the mean \u00b1 the SEM from three experiments performed in duplicate. Apparent Vmax values were obtained from the best fit curves from the first four points of the surface dilution experiments.DOI: http://dx.doi.org/10.7554/eLife.00691.009\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** At a low surface concentration of PIP3 (0.01%) incorporated vesicles, (A) PIP2 and (B) Phosphatidylserine stimulate the enzymatic activity of n-PTEN and 4p-PTEN. Data are reported as the mean \u00b1 the SEM of three experiments performed in duplicate.DOI: http://dx.doi.org/10.7554/eLife.00691.010\n\n## Anionic lipid vesicle 4p\u2013PTEN-interactions\n\nTo further analyze the apparent membrane affinity loss conferred by PTEN tail phosphorylation, we explored the binding interactions of semisynthetic PTENs with vesicles containing anionic phospholipids. As reported previously for unphosphorylated PTEN produced in\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig3-v1.jpg)\n\n**Figure 3.:** The percent of n-PTEN and 4p-PTEN bound to sedimented phosphatidylcholine LMVs incorporated with (A) PIP2 or (B) phosphatidylserine was determined by quantification of western blot bands. Data are reported as the mean \u00b1 the SEM of three separate experiments.DOI: http://dx.doi.org/10.7554/eLife.00691.011\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative blots of the percent of n-PTEN and 4p-PTEN bound to sedimented phosphatidylcholine LMVs incorporated with (A) PIP2 or (B) phosphatidylserine.DOI: http://dx.doi.org/10.7554/eLife.00691.012\n\n## Conformational analysis of 4p-PTEN using ion exchange chromatography, limited proteolysis, and alkaline phosphatase sensitivity\n\nIt has been proposed that C-terminal phosphorylation of PTEN may alter its conformation (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig4-v1.jpg)\n\n**Figure 4.:** (A) With a gradient of 0\u201350% NaCl over 250 ml on an anion exchange column, 4p-PTEN elutes at \u223c70 ml while n-PTEN elutes at \u223c100 ml. (B) 2 \u03bcg of n-PTEN and 4p-PTEN were digested with varying amounts of trypsin then visualized by colloidal blue staining or by western blot with an antibody to the N- or C-terminus of PTEN. Asterisks denote bands that are in higher abundance in the digestion of n-PTEN compared to 4p-PTEN. N-terminal sequencing of these bands identifies the cleavage sites as (*) R15, (**) R84 and (***) R161. (C) Denatured 4p-PTEN treated with 0.5 \u03bcM alkaline phosphatase is significantly more sensitive to dephosphorylation of the tail phosphocluster compared to the native form of 4p-PTEN treated with 1 \u03bcM alkaline phosphatase.DOI: http://dx.doi.org/10.7554/eLife.00691.013\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The elution pattern on anion exchange of t-PTEN is similar to that of n-PTEN (Figure 4A). (B) Western blot with an antibody to phospho T366/S370 shows phosphorylation at these sites is removed by mutation to alanine. X-mutant contains T366A/S370A as defined in Figure 6\u2014figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.00691.014\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Native folded 4p-PTEN treated with 1 \u03bcM alkaline phosphatase. (B) 4p-PTEN denatured by repeated freeze thaw cycles treated with 0.5 \u03bcM alkaline phosphatase. Removal of tail phosphorylation was monitored by western blot with an antibody to the tail phospho cluster. Data are represented as the mean \u00b1 the SEM of three experiments.DOI: http://dx.doi.org/10.7554/eLife.00691.015\n\nTo further explore the conformation of 4p-PTEN, we compared its susceptibility to trypsin proteolysis relative to n-PTEN. 4p-PTEN appeared more protease resistant vs its unphosphorylated counterpart as seen most clearly at 25 and 50 ng trypsin (Figure 4B). Based on western blots with N-terminal and C-terminal PTEN Abs, several large metastable fragments still containing C-terminal epitopes were observed in n-PTEN, indicative of enhanced protease sensitivity in the catalytic domain in the unphosphorylated protein. N-terminal sequencing identified several of these cleavage positions (Figure 4B).\n\nAlkaline phosphatase sensitivity and western blotting was used to assess the exposure of the C-terminal 380\u2013385 phospho cluster in 4p-PTEN (Wang et al., 2002). The half-life of alkaline phosphatase-mediated dephosphorylation of 4p-PTEN under the conditions used was found to be \u223c60 min (Figure 4C and Figure 4\u2014figure supplement 2A). Serendipitously, we found that freeze-thawing dilute 4p-PTEN led to apparent denaturation of the protein since it was much more susceptible to alkaline phosphatase catalyzed dephosphorylation of the tail phosphate cluster. Under the same conditions, near complete dephosphorylation was observed within 7.5 min. To more precisely determine this rate, we cut in half the concentration of alkaline phosphatase, and assumed that this process follows a pseudo-first-order kinetic mechanism. In this way, we estimate that native 4p-PTEN vs denatured 4p-PTEN shows a 25-fold reduced rate of alkaline phosphatase-catalyzed dephosphorylation of the tail phospho cluster (Figure 4C and Figure 4\u2014figure supplement 2B). We infer that this rate-differential suggests a closed:open 4p-PTEN conformational equilibrium of 25:1 under the conditions of this experiment.\n\n## Small angle X-ray scattering (SAXS) analysis of semisynthetic PTENs\n\nTo gain more information on the structural changes induced by PTEN tail phosphorylation, we performed small angle X-ray scattering (SAXS) analysis of t-PTEN, n-PTEN, and 4p-PTEN. The scattering plots are shown in\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig5-v1.jpg)\n\n**Figure 5.:** (A) Scattering diagrams and (B) pair distribution function (Pofr) plots for t-PTEN, n-PTEN, and 4p-PTEN. (C) The molecular envelopes for t-PTEN, n-PTEN, and 4p-PTEN overlaid with the tailless crystal structure containing the phosphatase domain (blue), C2 domain (magenta), and CBRIII loop (yellow). (D) Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN.DOI: http://dx.doi.org/10.7554/eLife.00691.016\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Molecular envelopes of t-PTEN, n-PTEN, and 4p-PTEN were generated from SAXS scattering data using the ab initio modeling program DAMMIN. Outputs from ten DAMMIN runs were averaged for each protein using DAMAVER and are shown overlaid with the tailless crystal structure with phosphatase domain shown in blue, the C2 domain shown in magenta and the CBRIII loop shown in yellow. Front, side and top views are shown for each protein.DOI: http://dx.doi.org/10.7554/eLife.00691.017\n\nMolecular envelopes of t-PTEN, n-PTEN and 4p-PTEN were generated from the scattering data using the ab initio modeling program DAMMIN (Putnam et al., 2007; Franke and Svergun, 2009; Jacques and Trewhella, 2012). Outputs from 10 DAMMIN runs, averaged for each protein using DAMAVER, are shown overlaid with the tailless crystal structure in Figure 5C (Figure 5\u2014figure Supplement 1). The tailless crystal structure containing the phosphatase and C2 domains fits nicely into the two-lobed globular portion of each envelope. The molecular envelope for n-PTEN reveals an elongated extension proximal to the C2 domain (Figure 5C). The molecular envelope for t-PTEN, which contains half of the 52 residue tail, shows a small extension, similar in length to that of 4p-PTEN, but perhaps not as wide. Interestingly, the 4p-PTEN phosphatase domain appears to undergo a modest change in shape relative to t-PTEN and n-PTEN (Figure 5C and Figure 5\u2014figure supplement 1).\n\n## Mutagenesis analysis of semisynthetic PTENs\n\nBased on prior models as well as the proteolysis and SAXS experiments, we constructed several mutant semisynthetic PTENs to investigate possible PTEN residues that contribute to the closed conformation of 4p-PTEN (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig6-v1.jpg)\n\n**Figure 6.:** (A) The rate of dephosphorylation of 4p-PTEN and its mutants was measured by quantification of bands from western blot analysis after treatment of the PTEN protein with 1 \u03bcM alkaline phosphatase. Data points are shown as the mean \u00b1 the SEM of three experiments. (B) PTEN activity was measured against 160 \u03bcM diC6-PIP3 substrate. (C) Km curve of D5 4p-PTEN mutant (kcat = 3.0 \u00b1 0.3 min\u22121, Km = 112 \u00b1 22 \u03bcM, kcat/Km = 0.027 \u00b1 0.003 min\u22121\u03bcM\u22121). Data points are shown as the mean \u00b1 the SEM of three experiments performed in duplicate.DOI: http://dx.doi.org/10.7554/eLife.00691.018\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** PTEN mutants were generated analogously to n-PTEN and 4p-PTEN semisynthetic proteins as outlined in the \u2018Materials and method\u2019 section.DOI: http://dx.doi.org/10.7554/eLife.00691.019\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Mutating T366 and S370 to alanine in the unligated (C-terminally truncated) X-mutant removes the observance of multiple peaks in the anion exchange chromatogram.DOI: http://dx.doi.org/10.7554/eLife.00691.020\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** 4p-PTEN and its mutants were treated with 1 \u03bcM alkaline phosphatase. Dephosphorylation of the phospho-tail cluster was monitored by western blot with an antibody to the phospho-tail.DOI: http://dx.doi.org/10.7554/eLife.00691.021\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (Top) D5 n-PTEN elutes as a sharp peak around 100 ml. (Bottom) D5 4p-PTEN elutes as a broad peak starting at 90 ml and finishing past 156 ml.DOI: http://dx.doi.org/10.7554/eLife.00691.022\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** n-PTEN and its mutants activity was measured with 160 \u03bcM soluble diC6 PIP3. Phosphate release was monitored by Malachite green detection. Data are represented as the mean \u00b1 the SEM of three experiments preformed in duplicate.DOI: http://dx.doi.org/10.7554/eLife.00691.023\n\nIn contrast, the D5 mutant 4p-PTEN showed a distinctive biochemical behavior. With respect to anion exchange chromatography, D5 mutant 4p-PTEN eluted broadly with much of the protein eluting at higher NaCl concentrations than the unphosphorylated D5 mutant (Figure 6\u2014figure supplement 4). Later elution is the expected profile for a typical phosphorylated protein relative to an unphosphorylated protein compared with the paradoxical pattern for n- and 4p- semisynthetic PTENs. In addition, D5 mutant 4p-PTEN was dephosphorylated about eightfold faster than the native wt 4p-PTEN and only threefold slower than denatured wt 4p-PTEN, implying that the tail phosphate cluster is dramatically more exposed in the D5 mutant (Figure 6A and Figure 6\u2014figure Supplement 3). We considered the possibility that Asp substitutions of the Lys residues in the D5 mutant led to overall protein destabilization and denaturation. However, D5- mutant 4p-PTEN readily processed soluble PIP3 substrate, \u223cthreefold faster than wt and A5-mutant 4p-PTENs (Figure 6B). Moreover, the D5-mutant 4p-PTEN phosphatase activity showed saturation with soluble PIP3 (Figure 6C), with catalytic parameters approaching those of n-PTEN, consistent with a more open conformation than that of wt 4p-PTEN. Taken together, these results make clear that the penta-Asp substitutions in the CBRIII loop are non-denaturing but can significantly disrupt the closed conformation of 4p-PTEN, presumably by electrostatic repulsion of the anionic tail. As reported previously (Campbell et al., 2003), the activity of the N-mutant which contains mutations of K13, R14, and R15 to alanine, is reduced compared to wt (Figure 6B and Figure 6\u2014figure supplement 5).\n\n## Intermolecular interactions between t-PTEN and C-tail phosphopeptide\n\nWe investigated the possibility that the synthetic C-tail tetraphosphorylated peptide (aa 379\u2013403, 4p-25mer) used in ligation could modulate the activity of truncated (t-PTEN, aa 1\u2013378) in an intermolecular fashion using the soluble PIP\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig7-v1.jpg)\n\n**Figure 7.:** (A) Tail peptide inhibition of t-PTEN with either n-25mer or 4p-25mer. (B) Km curve of t-PTEN in the absence (kcat = 2.9 \u00b1 0.1 min\u22121; Km = 33 \u00b1 2.1 \u03bcM, kcat/Km = 0.088 \u00b1 0.004 min\u22121\u03bcM\u22121) or presence (kcat/Km = 0.006 \u00b1 0.0003 min\u22121\u03bcM\u22121) of 1 \u03bcM 4p-25mer phosphopeptide. (C) Reduced inhibition of D5 t-PTEN mutant in the presence of 4p-25mer peptide. (D) Vesicle sedimentation of t-PTEN in absence and presence of 10 \u03bcM tail peptides. Data points are shown as the mean \u00b1 the SEM of three experiments performed in duplicate.DOI: http://dx.doi.org/10.7554/eLife.00691.024\n\n## Discussion\n\nThe evidence developed here points to a straightforward model for how phosphorylation regulates PTEN structure and function. Upon phosphorylation on the 380\u2013385 Ser/Thr cluster, the PTEN C-terminal modified tail clamps down intramolecularly on the C2 domain in the vicinity of the CBRIII loop, preventing PTEN from binding the plasma membrane and reducing its catalytic action toward PIP\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00691/elife-00691-fig8-v1.jpg)\n\n**Figure 8.:** Upon phosphorylation, PTEN adopts a more compact conformation with the phosphorylated tail condensing around the CBRIII loop and membrane binding surface of the C2 domain, preventing it from binding to the plasma membrane. When dephosphorylated, the tail of PTEN is no longer bound tightly to the C2 domain, allowing for the open PTEN protein to bind efficiently to the plasma membrane. Both phosphorylated and unphosphorylated PTEN are in the same open conformation when bound to the plasma membrane.DOI: http://dx.doi.org/10.7554/eLife.00691.025\n\nWhile it is formally possible that the phospho-tail of PTEN could cause indirect effects on the C2 domain by binding elsewhere on the PTEN body, the accumulated evidence argues for a direct phospho-tail\u2013C2 interaction. The SAXS results suggest that phospho-tail is in close proximity to the C2 domain. Replacement of the PTEN Lys cluster of the CBRIII loop with Asp residues (5D mutant) but not Ala residues (5A mutant) in 4p-PTEN renders the phospho-tail more susceptible to alkaline phosphatase hydrolysis, presumably because the anionic phosphate tail clashes with the Asp carboxylate negative charges. The intermolecular effects of the 4p-25mer C-tail on the t-PTEN body and their reduced sensitivity conferred by CBRIII loop mutation further corroborate the phospho-tail\u2013C2 interaction. Prior studies suggest that the five clustered Lys residues of the CBRIII loop are found on the membrane binding surface of the C2 domain, and their mutation decreases PTEN binding to lipid vesicles in vitro and plasma membranes in cell transfection experiments (Lee et al., 1999; McConnachie et al., 2003).\n\nIt is within the realm of possibility that 4p-PTEN can bind to membrane in its closed conformation, albeit with significantly reduced affinity. Our best evidence against the possibility that conformationally closed 4p-PTEN binds membrane is that the interfacial Kms (iKms) for 4p-PTEN, n-PTEN, and t-PTEN are all the same, within error, in dephosphorylating vesicle-bound PIP3 (Figure 2). Since the Kms for soluble PIP3 dephosphorylation are different for 4p-PTEN and n-PTEN (Figure 2), it would be surprising that the iKms would be the same if the conformation of 4p-PTEN were closed when bound to vesicle. It is plausible, however, that some closed 4p-PTEN with reduced membrane affinity is interacting with vesicle while in a catalytically impaired state, which would contribute only in a minor way to the iKm. Nevertheless, we also know how important the CBRIII loop is for membrane binding which, as discussed above, is likely abutting the phospho-tail in the closed conformation. Thus, the information available strongly supports the model in Figure 8.\n\nWe observed here that C-terminal phosphorylation of PTEN significantly reduces the enzyme\u2019s lipid bilayer affinity and also its catalytic efficiency with soluble PIP3 substrate and at low (<1 mol%) PIP3 surface concentrations in vesicles. Since physiologic membrane surface concentrations of PIP3 are in the range of 0.001 mol% or less, C-terminal phosphorylation of PTEN should confer an important reduction in enzymatic activity in vivo (Rahdar et al., 2009). It is interesting that the soluble PIP3 Km for 4p-PTEN vs n-PTEN is elevated whereas the interfacial Km (iKm) with vesicles containing PIP3 is the same for both enzyme forms. Both the trypsin protease pattern and SAXS analysis of 4p-PTEN vs n-PTEN reveal apparent structural/dynamic changes within the catalytic domain upon phosphorylation that may account for the altered phosphatase properties. Such conformational changes in the catalytic domain upon phosphorylation may come from direct interactions with the tail, though they could also be transmitted allosterically through tail-C2 binding since the C2 domain makes intimate contacts with the catalytic domain. It should be noted that the CBRIII loop, while critical for vesicle interaction, is dispensable for soluble PIP3 substrate processing, as shown here and previously (McConnachie et al., 2003). Thus, there are at least some differences between interactions of PTEN with soluble PIP3 and membrane-embedded PIP3.\n\nResults from previous experiments involving co-immunoprecipitation of the co-transfected PTEN tail and body as separate pieces hinted at the potential of a conformational change induced by phosphorylation (Rahdar et al., 2009). However, in contrast to the findings here, the co-immunoprecipitation of the PTEN tail and body was disrupted by the altered residues in the N-mutant and A5-mutant PTENs. Since the N-mutant and A5-mutant 4p-PTENs showed the same apparent closed equilibrium constant as wt 4p-PTEN, this suggests that there may be differences in this trans interaction identified in mammalian cell extracts vs the closed conformation of the intact 4p-PTEN molecule analyzed in the current study. Indeed, we found higher than expected apparent affinity between the 4p-25mer and the t-PTEN body (IC50 1 \u03bcM) and more complete inhibition (>95%) of the lipid phosphatase activity of t-PTEN by the 4p-25mer with soluble PIP3 substrate than would be predicted based on results with 4p-PTEN (4p-PTEN:n-PTEN activity was \u223c6:1). The \u223c25:1 equilibrium favoring the closed conformation of 4p-PTEN based on alkaline phosphatase susceptibility seems relatively small compared with an apparent Kd of \u223c1 \u03bcM for the 4p-25mer-t-PTEN intermolecular interaction. Such results may suggest structural differences in the intermolecular complex vs the intramolecular conformational change. While there are several plausible explanations for this, one interesting possibility is that there may be energetic strain associated with achieving conformational closure in the intramolecular case of 4p-PTEN not associated with a phospho-tail\u2013t-PTEN intermolecular interaction.\n\nLong-range intramolecular protein conformational switching induced by phosphorylation has been observed in several well-established cases including CrkL, Src, and SHP-1/2 (Lu et al., 2001; Rosen et al., 1995; Sicheri et al., 1997; Xu et al., 1997; Zhang et al., 2003). Each of these examples involves an SH2 domain interacting with a phosphotyrosine. We propose a Src-like model for PTEN, in which a cluster of pSer/pThr drives an apparently long distance intramolecular binding interaction to deactivate the enzyme. How 4p-PTEN may be reactivated in vivo remains an important question. There are presumably cellular phosphatase enzymes that can dephosphorylate phospho-PTEN or ligands which can bind allosterically to phospho-PTEN that may promote conformational opening. In contrast to prior suggestions based on trans experiments, we see no evidence of the autodephosphorylation of 4p-PTEN (Zhang et al., 2012). As we are reliant on western blots with an antibody that may recognize states of depleted phosphorylation of the tail, partial autodephosphorylation cannot be completely ruled out by our experiments. However, the stability of the closed conformation of 4p-PTEN over the dozens of hours of expressed protein ligation points to resistance of the tail phosphates to PTEN enzymatic removal. Because of the structural concealment of the 380\u20135 phosphoSer/Thr residues in the closed 4p-PTEN conformation, such autodephosphorylation may be especially disfavored.\n\nThere are several biomedical implications of the findings here. Altered protein\u2013protein interactions or efficiency of ubiquitylation may be influenced by phosphorylation-mediated conformational closure of phospho-PTEN. While PTEN is a tumor suppressor and can be mutated in cancer, it is often wild type but expressed at low levels. Direct stimulation of cellular phospho-PTEN by pharmacologic agents could prove to be effective as an anti-cancer therapy. A related approach has been explored to activate the tumor suppressor p53 (Foster et al., 1999) and the apoptotic protein procaspase (Gray et al., 2010). It may be possible to find small molecules that bind specifically to the phospho-tail and prevent its intramolecular engagement with the C2 domain or bind somewhere on the PTEN body and stabilize the open PTEN conformation allosterically. The soluble PIP3 substrate dephosphorylation assay with 4p-PTEN should provide a means for screening for such activators. Alternatively, inhibitors of CK2 and/or GSK3\u03b2 protein kinase, the enzymes responsible for PTEN C-tail phosphorylation, may be effective in targeting PIP3/Akt-driven tumors.\n\nThis investigation also highlights the use of intein-mediated protein thioester formation in an insect cell expression system for investigation of post-translational modifications. Multi-site phosphorylation has been elegantly studied in the TGF\u03b2 signaling axis using protein semisynthesis previously (Huse et al., 2001; Wu et al., 2001), but these experiments did not require insect cell expression of an intein-fusion protein. Our efforts here suggest that baculovirus expression systems are an attractive option, rather than a last resort, for expressed protein ligation with challenging eukaryotic proteins.\n\n## Materials and methods\n\n## Reagents\n\nAll lipids were from Avanti Polar Lipids (Alabaster, AL). Antibodies were from Santa Cruz Biotechnology (Dallas, TX) (SC-6818) and Novus Biological (Littleton, CO) (NBP1-4136 and NBP1-44,412). MESNA was from Sigma (St. Louis, MO). All Fmoc-amino acids were from EMD (Billerica, MA).\n\n## Peptide synthesis\n\nAll peptides were synthesized on a PS3 peptide synthesizer from Protein Technologies (Tuscon, AZ) or by hand using Fmoc based standard solid phase peptide synthesis.\n\n## Generation and purification of semisynthetic PTEN\n\nPTEN C-terminally truncated at residue 378 was first subcloned into the pTXB1 vector from NEB which contains the GyrA intein from the organism Mycobacterium xenopi. Tyr 379 was mutated to a Cys to facilitate the intein mediated cleavage reaction. The PTEN-intein-cbd DNA sequence was then subcloned into the pFastBac1 baculovirus entry vector and the subsequent baculovirus was generated. The PTEN-intein-cbd fusion protein was expressed in HighFive insect cells.\n\nThe fusion protein in 40 ml of cell lysate from 1 l of cell culture was first passed over a 10 ml bed of fibrous cellulose (Whatman) to remove viral chitinase, then bound to a 6 ml bed of chitin beads from NEB in a gravity flow chromatography column from Bio-Rad (2.5 cm diameter). The chitin bead column with fusion protein bound was then washed with 250 ml of washing buffer (50 mM HEPES pH 7.6, 250 mM NaCl, 0.1% Triton X-100). C-terminally truncated PTEN (t-PTEN) was generated by DTT cleavage of the fusion protein, producing t-PTEN at yields of \u223c8\u201310 mg per liter of cell culture. Full length semisynthetic PTEN was then generated on the chitin column by adding 400 mM MESNA and 2 mM of C-terminal peptide buffered with 3 ml of 50 mM HEPES (pH 7.2), 150 mM NaCl. Based on the post ligation yield of PTEN protein it is estimated that there is a maximum PTEN-thioester concentration of \u223c80 \u03bcM in the ligation reaction. The ligation reactions were carried out for 48\u201372 hr at room temperature and monitored by SDS PAGE. Upon completion of the ligation reaction the ligation mixture was eluted from the chromatography column with 15 ml of dialysis buffer (50 mM Tris pH 8.0, 150 mM NaCl, 10 mM DTT) and subsequently dialyzed into 4 l of dialysis buffer for a period of 48 hr with multiple buffer exchanges in a dialysis cassette (Slidealyzer) with a 12K MWCO in order to remove excess unreacted peptide. Proteins were then concentrated following dialysis to >5 mg/ml (>100 \u03bcM). We estimate that there is <10 \u03bcM of residual unligated peptides at this stage. Due to large dilutions (>1000-fold) of the semisynthetic enzyme for enzymatic and other biochemical assays, small amounts of residual contaminating peptide remaining after dialysis would not be expected to interfere with any assays. Semisynthetic PTEN proteins produced in this way yields 8\u201310 mg of protein per liter of insect cell culture with the desired modifications on the C-terminus at purities of >90% based on Coomassie stained SDSPAGE. The semisynthetic protein was further purified for SAXS and soluble substrate assays by anion exchange chromatography (monoQ) using an AKTA FPLC from GE Healthcare. Proteins were purified with a gradient of 0\u201350% Buffer B over 250 ml at a flow rate of 1.0 ml/min (Buffer A: 50 mM Tris pH 8.0, 10 mM DTT; Buffer B: 50 mM Tris pH 8.0, 1.0 M NaCl, 10 mM DTT). After FPLC purification by anion exchange chromatography and concentration the final yield of semisynthetic PTEN protein was 2\u20133 mg per liter of cell culture with estimated purity >95% by coomassie stained SDS-PAGE. Size-exclusion chromatography was carried out with a Superdex 200 column in the following buffer: 50 mM Tris pH8.0, 150 mM NaCl, 10 mM DTT.\n\n## Generation of radiolabed PIP3\n\nRadiolabeled PIP3 was generated as previously described (McConnache et al., 2003). Briefly, PIP3 labeled with 32Pi at the three position of the inositol ring was generated by incubating PI3K (Echleon) and PIP2:PS (1:1) vesicles in the presence of 250 mCi 32P-ATP, 1 mM ATP and 2.5 mM MgCl2 in PI3K assay buffer (25 mM HEPES pH 7.6, 120 mM NaCl and 1 mM EGTA). After a Bligh-Dyer extraction of PIP3, thin-layer chromatography (TLC) showed radiolabeled PIP3 to be the major product (Figure 2\u2014figure supplement 3). TLC solvent conditions: (CHCl3:Acetone:MeOH;Acetic Acid:H20); (70:20:50:20:20).\n\n## Vesicle based phosphatase assays\n\nLipid phosphatase assays were modified from those already described in the literature (McConnachie et al., 2003). 32P radiolabeled PIP3 was incorporated into vesicles containing unlabeled PIP3, phosphatidylcholine (PC), and/or phosphatidylserine (PS) and/or PIP2 by sonication of dried lipids hydrated in the presence of PTEN assay buffer (50 mM Tris pH 8.0, 150 mM NaCl, 10 mM DTT, 1 mM EGTA). Lipids were sonicated in 100 \u03bcl volumes in glass test tubes at room temperature until the solution clarified. Vesicles made in this way are 30\u201350 nm in diameter. Vesicles were used in assays within 15 min of being made. In assay reactions, the ratio of the number of vesicles to the number of PTEN molecules was maintained at 4:1 or greater. Ovalbumin (0.05 mg/ml) was used to stabilize the PTEN protein in the assays. 25 \u03bcl reactions were initiated by the addition of vesicle substrate and incubated at 30\u00b0C for 3 min. The reaction was quenched with 3 M perchloric acid. Hydrolyzed 32Pi was then separated from 32P-PIP3 by a Bligh\u2013Dyer extraction. The aqueous phase was then treated with 1% ammonium molybdate and the resulting phosphate\u2013molybdate complex was extracted with toluene:isobutanol (1:1). This organic phase was then counted using a Beckman scintillation counter.\n\n## Interfacial kinetic analysis\n\nAnalysis of the kinetic parameters of the semisynthetic PTEN proteins were determined in accordance with the procedures pioneered by Dennis and coworkers and previously performed for recombinant PTEN produced in E. coli (Deems et al., 1975; Hendrickson and Dennis, 1984; McConnachie et al., 2003). With this type of analysis, the initial velocity of an interfacial enzyme follows the equation below:V0=(Vmax*Xs*[S0])/(iKm*Ks+iKm*[S0]+Xs*[S0])\n\nTwo types of experiments were performed, bulk dilution (BD) and surface dilution (SD). In BD experiments, the surface concentration of PIP3 was held constant and bulk concentration of PIP3 was varied by varying the concentration of PIP3 and the carrier lipid PC proportionately. In SD experiments, the bulk concentration of PIP3 was held constant and the surface concentration was varied by varying the amount of PC. In both types of experiments rectangular hyperbolas were obtained with apparent Vmax and apparent Km values. Apparent Vmax and apparent Km values were then fit to the equations below to determine the kinetic variables for each PTEN protein.ikm=(Vmax\u00a0SD/Vmax\u00a0BD\u22121)XsKs=Km\u00a0BD(Xs/iKm+1)kcat=Vmax\u00a0SD*[ET]\n\n## Vesicle pulldowns\n\nLarge Multilamillar Vesicles (LMVs) containing various amounts of PC, PS and/or PIP2 were generated by vigorously vortexing dried lipids that were hydrated in the presence of PTEN buffer for 5 min in 1 ml volumes. The LMVs were then incubated with different forms of PTEN protein for 30 min at 25\u2070C. The vesicles and bound protein in 50 \u03bcl volumes were then pelleted at 180,000g using a Beckman ultracentrifuge for 2 hr. The supernatant was removed from the vesicle pellet, the pellet washed with buffer, then boiled in 10% SDS loading dye and run on SDS-PAGE. The amount of PTEN protein that bound to the LMVs was then visualized by western blot using an anti-PTEN antibody from Santa Cruz Biotechnologies (SC-6818). The amount bound was quantified using Carestream Media image quantification software. For tail peptide competition assays the amount of tail peptide used was 10 \u03bcM.\n\n## Trypsin digests\n\n2 \u03bcg of semisynthetic PTEN in 20 \u03bcl reactions volumes was digested with varying amounts of trypsin (Promega, V511A) for 10 min at 37\u00b0C in PTEN assay buffer. Reactions then were quenched with SDS loading dye and run on SDS-PAGE. The digestion fragments were visualized by Colloidal Blue stain from Invitrogen (LC6025) or by western blot (antibodies SC-6818 or NBP1-44,412).\n\n## Sequencing of trypsin digest fragments\n\nTrypsin digestion products were run on a 10% SDS-PAGE gel and transferred to a PVDF membrane. The membrane was then stained with Coomassie stain. The bands of interest were cut out of the membrane and analyzed by N-terminal Edman degradation sequencing at the JHMI Synthesis and Sequencing Facility.\n\n## Phosphatase sensitivity assay\n\n50 ng of semisynthetic phosphorylated PTEN and its mutants were dephosphorylated in the presence of 1 \u03bcM alkaline phosphatase from NEB (CIP) for varying periods of time in phosphatase assay buffer (50 mM Tris pH 8.0, 20 mM NaCl, 25 \u03bcM MgCl2 and 10 mM DTT) at room temperature in 20 \u03bcl. Dephosphorylation of PTEN was monitored by western blot with an antibody to the phospho-tail cluster (NBP1-4136). The fraction of phospho-PTEN remaining was determined using Carestream Media image quantification software.\n\n## Soluble substrate activity assay\n\nPTEN activity to a water soluble substrate (diC6 PIP3) was determined by measuring the release of inorganic phosphate with a malachite green (Van Veldhoven and Mannaert, 1987) detection kit from R and D Biosystems. 25 \u03bcl reactions were allowed to proceed for 5\u201310 minutes at 30\u00b0C in assay buffer (50 mM Tris pH 8.0, 10 mM BME) before being quenched by malachite green reagent. Amounts of PTEN used per data point ranged from 0.5 to 20 \u03bcg. Reactions were shown to be linear with respect to time and enzyme concentration in the ranges used. For in trans peptide inhibition assays, the amount of tail peptide used (quantified by amino acid analysis) is indicated in the figure legend. It is unlikely that any peptide ligated to t-PTEN given the low concentrations of peptide used, short reaction times and the low reactivity of the DTT-thioester toward native chemical ligation. In fact, with the vesicle pulldowns that used 10 \u03bcM phosphopeptide and t-PTEN, there is no evidence of ligation observed by western blot.\n\n## Small-angle X-ray scattering (SAXS)\n\nSAXS experiments were performed at Brookhaven National Laboratories at the National Synchrotron Light Source (NSLS), beamline X9 using a MarCCD detector, located 3.4 m from the sample. Data for each protein sample was collected in triplicate. All samples were in PTEN assay buffer. 20 \u03bcl of each sample was continuously passed through a capillary tube exposed to a 400 \u00d7 200 \u03bcm X-ray beam and data recorded for 30s. Normalization for beamline intensity, buffer subtraction and merging of data were carried out using proc.py software developed by the beamline staff (Allaire and Yang, 2011).\n\nSAXS data analysis was carried out using software from the ATSAS program suite. The radius of gyration (Rg) was calculated using a Guinier approximation with the program PRIMUS (Konarev et al., 2003). The pair distribution function P(r) and the maximum particle dimension (Dmax) were determined using GNOM (Svergun et al., 1992). Ten ab initio models were generated for each protein using DAMMIN, then averaged using DAMAVER (Volkov and Svergun, 2003; Putnam et al., 2007; Franke and Svergun, 2009). The resulting molecular envelopes were fit with the tailless crystal structure in PyMOL. Figures of the models were made using PyMOL.\n",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Barbara Imperiali, Massachusetts Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00691.026](https://doi.org/10.7554/eLife.00691.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors' note: this article was originally rejected after peer review but a revision was invited after the concerns of the reviewers were addressed with new experimental data.]\n\nThank you for choosing to send your work entitled \u201cPhosphorylation-mediated PTEN Conformational Closure and Deactivation Revealed with Protein Semisynthesis\u201d for consideration at eLife. Your article has now been peer reviewed and we regret to inform you that the current submission will not be considered further for publication at this time. Your submission has been evaluated by 3 reviewers, one of whom is a member of our Board of Reviewing Editors, and a Senior editor, and the decision was reached after discussions between the reviewers.\n\nAs you will see below, all three reviewers were enthusiastic about the application of protein semisynthesis towards studies on the role of phosphorylation in the regulation of PTEN structure and localization. However, specific concerns were raised in two of the reviews that make the manuscript unsuitable for publication in eLife at the current time. We believe that the reviewers\u2019 comments and the post-review discussion with Reviewer 3 provide useful information as to how the manuscript could be revised to address the concerns that have been raised and we would invite you to consider whether it would be possible for you to revise the manuscript to address these comments in a reasonable period of time.\n\nReviewer #1:\n\nThis manuscript presents studies that seek to gain insight into the mechanistic basis of phosphorylation-mediated PTEN regulation. The approach centers on the development and biochemical and biophysical analysis of a semisynthetic PTEN variant that is uniformly and uniquely modified with four phosphorylated serine and threonine residues in the C-terminal tail.\n\nI find this to be a significant contribution for the following reasons:\n\n1) The research specifically addresses the physical basis for the effects of PTEN phosphorylation with respect to whether the modifications directly alter the membrane association properties of the protein or whether they cause a change in inter- or intramolecular interactions, which result in changes membrane association.\n\n2) The uniquely phosphorylated proteins provide information that is not readily accessible via mutational analysis with encoded amino acids or via enzyme-catalyzed phosphorylation since one cannot readily achieve uniquely phosphorylated materials.\n\n3) Multiple lines of evidence are presented for a model (Figure 7) in which the tail-phosphorylated PTEN (4p-PTEN) more favorably adopts a compact structure, which may feature the negatively-charged tail in a buried state that reduces plasma-membrane binding. In contrast the non-phosphorylated n-PTEN is preferentially in a more open state making the membrane-associating face of PTEN more available for binding to membrane.\n\nConcerns:\n\n1) The authors should include the protein concentration in the ligation reaction \u2013 the yields are impressive so it is useful to know this detail.\n\n2) It is noted in the methods that the PTEN-intein-cbd is produced in HighFive insect cells at a concentration of 10 mg/L culture \u2013 and then further noted that the final ligated semisynthetic proteins are produced in yields of \u223c 10 mg/L insect cell culture (at >90% purity). It is not clear how this is possible what with the loss of mass from intein-cbd cleavage and the subsequent manipulations related to the thioester exchange, ligation, and purification. This needs to be clarified as it speaks to the next issue that concerns the purity of the semisynthetic protein products. Additionally, there is no detail provided on how the semisynthetic material is purified after the ligation and how are the unligated protein and excess peptide removed?\n\n3) It is noted that western blot analysis with the \u201canti-phospho-PTEN\u201d Ab confirms that the final material is appropriately phosphorylated. Is it certain that this anti-P Ab only recognizes the fully tetra-phosphorylated C-terminus? One might imagine that constructs with reduced phosphorylation might also be recognized. This question also comes up in the context of studies on auto-dephosphorylation. Perhaps, some erosion of the total phosphorylation is acceptable \u2013 but the authors should definitely comment here.\n\n4) The authors should state on the yield after anion exchange chromatography that affords extra pure material for SAXS. This would provide information on the purity of the material directly from the ligation reaction. This issue is particularly important when considering and comparing the catalytic parameters and vesicle binding of 4p-PTEN.\n\n5) It would be useful to contrast the current work with the Muir study on the type I TGF-beta receptor soluble domain wherein a hyperphosphorylated N-terminal tail is attached to the protein via semisynthesis and Smad2 activation is studied. The authors do cite reviews in which theses studies are highlighted, but it would be appropriate to highlight these particular examples wherein hyperphosphorylated sequences are incorporated into proteins to study structure and function.\n\nReviewer #2:\n\nThis is a superb study of the biophysical properties of the protein phosphatase PTEN. I really could find no issues with the report.\n\nReviewer #3:\n\nThe protein ligation technique is very useful for studies on site specific phosphorylation, and the Cole lab has used this method cleverly to interrogate the function of PTEN phosphorylation. The methods used are appropriate and described thoroughly and the data collection is sound.\n\n1) The main weakness is that while phosphorylation leads to protein compaction, reduced catalysis and reduced lipid affinity, the study lacks evidence that the inhibitory effects on activity and/or binding are necessarily caused by the conformational changes reflected by SAXS and proteolysis. Without this evidence, the autoinhibitory model shown in Figure 7 is speculative, which reduces the impact of the study.\n\n2) Figure 2A suggests that 4p-PTEN might reduce kcat, as well as kcat/Km. More evidence is needed proving that the effect of phosphorylation on catalysis can be explained only by reduced phospholipid binding. If possible, kcat should be measured with less error (e.g., using alternative substrates), in order to eliminate the possibility that phosphorylation affects turnover rate as well as binding constants, which would indicate mechanisms beyond simple steric interference with the active site.\n\nAdditional comments from Reviewer 3 based on the discussion between the reviewers:\n\nDiscussion on comment 1: With respect to the presented \u201cautoinhibitory model\u201d it would be possible for the authors to indicate that the model that is put forward in the paper is one of many possibilities, and perhaps present hypotheses for alternate models that might be consistent with their observations.\n\nDiscussion on comment 2: The additional work that would be needed to demonstrate autoinhibition would require (1) showing similar kinetic parameters between t-PTEN and n-PTEN, and (2) showing that the phosphorylated C-terminal peptide inhibits t-PTEN in trans down to an activity comparable to 4p-PTEN. In order to argue that autoinhibition works by interfering with lipid binding, evidence would be needed showing that (3) the phospho-C-terminal peptide interacts with the lipid-binding interface, and (4) that conservative mutations at the lipid-binding interface interfere with peptide binding and relieve autoinhibition of 4p-PTEN. Other strategies might also be suitable, but these are among the experiments that I believe were used to demonstrate autoinhibition in Src kinases.\n\nThe question about kcat could readily be addressed using p-nitrophenylphosphate or perhaps another short chain acyl PI3,4,5P3 (e.g., C2, C3, C4) with greater solubility in aqueous solution.\n",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12c87b70-d932-41ad-88ff-d54451df443a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C1",
+      "claim": "PTEN suppresses cell proliferation, migration and survival by dephosphorylating the lipid second messenger phosphatidyl inositol 3,4,5-triphosphate (PIP3)",
+      "claim_type": "EXPLICIT",
+      "source_text": "PTEN (phosphatase and tensin homolog deleted on chromosome 10) suppresses cell proliferation, migration and survival by dephosphorylating the lipid second messenger phosphatidyl inositol 3,4,5-triphosphate (PIP3)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by citations (Maehama and Dixon, 1998; Myers et al., 1998; Sun et al., 1999; Iijima and Devreotes, 2002) and represents established scientific knowledge about PTEN function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8e7139c7-19ab-4480-bde4-97e3c76ffaa5",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C2",
+      "claim": "PTEN opposes phosphatidyl inositol-3 kinase (PI3K) signaling and prevents AKT protein kinase activation",
+      "claim_type": "EXPLICIT",
+      "source_text": "thereby opposing phosphatidyl inositol-3 kinase (PI3K) signaling and preventing AKT protein kinase activation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by the same citations as C1 and represents established knowledge about PTEN's role in the PI3K/AKT pathway.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "79288cdb-6218-4b93-abc8-281f5f36ecdb",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C3",
+      "claim": "PTEN is one of the most frequently mutated genes in cancer, with inactivating mutations found in many solid tumor types",
+      "claim_type": "EXPLICIT",
+      "source_text": "PTEN is one of the most frequently mutated genes in cancer, with inactivating mutations found in many solid tumor types",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Supported by citations (Li et al., 1997; Steck et al., 1997) and represents established knowledge about PTEN's role as a tumor suppressor.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "08df8950-0a6e-4b85-a0fb-cecd6b6dd274",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C4",
+      "claim": "The PTEN gene has been shown to be inactivated through somatic and germline mutations as well as transcriptionally suppressed through epigenetic mechanisms",
+      "claim_type": "EXPLICIT",
+      "source_text": "The PTEN gene has been shown to be inactivated through somatic and germline mutations as well as transcriptionally suppressed through epigenetic mechanisms",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations (Salvesen et al., 2001; Meng et al., 2007; Hollander et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "76fd3465-56b7-4126-9192-896df361ff4e",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C5",
+      "claim": "Homozygous deletion of PTEN is embryonically lethal in mice",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homozygous deletion of PTEN is embryonically lethal in mice",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations (Suzuki et al., 1998; Di Cristofano et al., 1999; Podsypanina et al., 1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a578c5e6-f364-4eb1-aff2-beb0c66ff0cd",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C6",
+      "claim": "Heterozygous PTEN mice are predisposed to developing tumors",
+      "claim_type": "EXPLICIT",
+      "source_text": "while heterozygous mice are predisposed to developing tumors",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by the same citations as C5 (Suzuki et al., 1998; Di Cristofano et al., 1999; Podsypanina et al., 1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7eb9e6ed-72b9-451f-8ebc-c9ee52e30e8b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C7",
+      "claim": "Germline mutations in PTEN predispose people to spontaneous tumor formation as seen in Cowden syndrome",
+      "claim_type": "EXPLICIT",
+      "source_text": "Germline mutations in PTEN predispose people to spontaneous tumor formation as seen in Cowden syndrome",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation (Nelen et al., 1997).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "686b1ef9-2684-4e70-9d17-98bb98320f1a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C8",
+      "claim": "PTEN is a 47 kDa (403 aa) protein composed of a 'dual-specificity' phosphatase domain, a C2 domain that mediates membrane association, and a 52 aa C-terminal tail",
+      "claim_type": "EXPLICIT",
+      "source_text": "PTEN is a 47 kDa (403 aa) protein composed of a 'dual-specificity' phosphatase domain, a C2 domain that mediates membrane association, and a 52 aa C-terminal tail",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established structural composition of PTEN protein.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7bc2bff6-3a1f-499c-ba0a-3adaed24367b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C9",
+      "claim": "The authors generated semisynthetic site-specifically tetra-phosphorylated PTEN using expressed protein ligation",
+      "claim_type": "EXPLICIT",
+      "source_text": "we generated semisynthetic site-specifically tetra-phosphorylated PTEN using expressed protein ligation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary methodological achievement of the study, supported by experimental data shown in Figure 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "571b83b7-a8db-49cc-a5ef-9afb9133d7dd",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C10",
+      "claim": "Purified tail-phosphorylated PTEN relative to its unphosphorylated counterpart shows reduced catalytic activity",
+      "claim_type": "EXPLICIT",
+      "source_text": "we have found that purified tail-phosphorylated PTEN relative to its unphosphorylated counterpart shows reduced catalytic activity",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding supported by experimental data in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "dc992407-1840-420b-aaaa-0a349dca5c29",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C11",
+      "claim": "Purified tail-phosphorylated PTEN shows reduced membrane affinity compared to its unphosphorylated counterpart",
+      "claim_type": "EXPLICIT",
+      "source_text": "we have found that purified tail-phosphorylated PTEN relative to its unphosphorylated counterpart shows reduced catalytic activity and membrane affinity",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding supported by experimental data in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "0c48b47c-d291-4b89-b9f9-9381d9fb0e94",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C12",
+      "claim": "Tail-phosphorylated PTEN undergoes conformational compaction likely involving an intramolecular interaction between its C-tail and the C2 domain",
+      "claim_type": "EXPLICIT",
+      "source_text": "we have found that purified tail-phosphorylated PTEN relative to its unphosphorylated counterpart shows reduced catalytic activity and membrane affinity and undergoes conformational compaction likely involving an intramolecular interaction between its C-tail and the C2 domain",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Supported by multiple experimental approaches including SAXS, ion exchange chromatography, and limited proteolysis (Figures 4 and 5), with inference about the specific interaction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d200abe1-8b70-4895-848d-0ff038354882",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C13",
+      "claim": "There is a competition between membrane phospholipids and PTEN phospho-tail for binding to the C2 domain",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results suggest that there is a competition between membrane phospholipids and PTEN phospho-tail for binding to the C2 domain",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the combined data on membrane binding, enzymatic activity, and conformational changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "cb2a1f60-bcf5-4f39-a8f1-db9b33253bf8",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C14",
+      "claim": "PTEN is phosphorylated on four clustered Ser/Thr on its C-terminal tail (aa 380\u2013385)",
+      "claim_type": "EXPLICIT",
+      "source_text": "The tumor suppressor PIP 3 phosphatase PTEN is phosphorylated on four clustered Ser/Thr on its C-terminal tail (aa 380\u2013385)",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established knowledge about PTEN post-translational modification.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f13fbd3a-5539-44a8-a9ff-5607d143b141",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C15",
+      "claim": "PTEN phosphorylations on the C-terminal tail are proposed to induce a reduction in PTEN's plasma membrane recruitment",
+      "claim_type": "EXPLICIT",
+      "source_text": "these phosphorylations are proposed to induce a reduction in PTEN's plasma membrane recruitment",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents a prior hypothesis in the field that the current study tests.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7fcbffb0-0ab5-40c9-8a9e-5b8ca1b58993",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C16",
+      "claim": "Cys was well-tolerated at position 379 of PTEN, showing no change in catalytic activity induced by Y379C mutation",
+      "claim_type": "EXPLICIT",
+      "source_text": "We also determined using GST-PTEN that Cys was well-tolerated at the position needed for ligation, showing no change in catalytic activity induced by Y379C mutation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by experimental data shown in Figure 1\u2014figure supplement 3D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "fb16700b-2f2c-4fa1-aa9c-18f5bbaa2fd6",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C17",
+      "claim": "Expression in E. coli of the intein-fusion protein suffered from low yields of soluble PTEN protein expression (<0.1 mg/l culture)",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, expression in E. coli of the intein-fusion protein suffered from low yields of soluble PTEN protein expression (<0.1 mg/l culture) which was insufficient for our needs",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation about protein expression yields.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c17f79e8-550c-4f30-95cf-f884ea5bfd3c",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C18",
+      "claim": "Ligation with a tetraphosphorylated N-Cys synthetic peptide proceeded smoothly over 72 hr, providing 8\u201310 mg/l of culture purified semisynthetic PTEN protein",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ligation with a tetraphosphorylated (and unphosphorylated as a control) N-Cys synthetic peptide aa 379\u2013403 (Figure 1C) proceeded smoothly over 72 hr, providing 8\u201310 mg/l of culture purified semisynthteic PTEN protein",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental result about protein yield from the ligation procedure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c6eb8a6f-c403-47e4-8fc3-e7d899322d7b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C19",
+      "claim": "Semisynthetic proteins were >90% pure using Coomassie staining",
+      "claim_type": "EXPLICIT",
+      "source_text": "Semisynthetic proteins were >90% pure using Coomassie staining",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation about protein purity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "cd7e5be0-e45d-4ea8-b3fa-66b89762f079",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C20",
+      "claim": "The structural integrity of semisynthetic PTEN proteins was confirmed by mass spectrometry",
+      "claim_type": "EXPLICIT",
+      "source_text": "their structural integrity confirmed by mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by mass spectrometry data shown in Figure 1\u2014figure supplement 2C and D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d0e26fb8-fd97-4b62-be15-f624dd636779",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C21",
+      "claim": "4p-PTEN, and not n-PTEN, was appropriately phosphorylated as shown by Western blot with commercial anti-phospho-PTEN Ab",
+      "claim_type": "EXPLICIT",
+      "source_text": "Western blot with commercial anti-phospho-PTEN Ab showed that 4p-PTEN, and not n-PTEN, was appropriately phosphorylated",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by Western blot data shown in Figure 1E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "b8fe3a17-fe0b-4c92-b09e-4fbb8629edea",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C22",
+      "claim": "4p-PTEN prepared in the presence of a PTEN phosphatase vanadate-based inhibitor was equally phosphorylated to that prepared in its absence",
+      "claim_type": "EXPLICIT",
+      "source_text": "4p-PTEN prepared in the presence of a PTEN phosphatase vanadate-based inhibitor was equally phosphorylated to that prepared in its absence",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by experimental data shown in Figure 1\u2014figure supplement 3E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7a8667cf-c32b-4e89-8b8a-937f16e6a0b9",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C23",
+      "claim": "4p-PTEN did not undergo spontaneous pSer/pThr hydrolysis over 24 hr as monitored by western blot",
+      "claim_type": "EXPLICIT",
+      "source_text": "Further experiments showed that 4p-PTEN did not undergo spontaneous pSer/pThr hydrolysis over 24 hr as monitored by western blot",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by experimental data shown in Figure 1\u2014figure supplement 3F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "29ad578e-a313-44b2-9778-905dbb3d1828",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C24",
+      "claim": "For n-PTEN with soluble diC6-PIP3 substrate, kcat = 2.6 \u00b1 0.1 min\u22121, Km = 67 \u00b1 4.2 \u03bcM, kcat/Km = 0.038 \u00b1 0.001 min\u22121\u03bcM\u22121",
+      "claim_type": "EXPLICIT",
+      "source_text": "n-PTEN: kcat = 2.6 \u00b1 0.1 min\u22121, Km = 67 \u00b1 4.2 \u03bcM, kcat/Km = 0.038 \u00b1 0.001 min\u22121\u03bcM\u22121",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are kinetic parameters determined experimentally and shown in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "97120349-eac5-4843-978a-8f9ca80b0c2f",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C25",
+      "claim": "For 4p-PTEN with soluble diC6-PIP3 substrate, kcat/Km = 0.005 \u00b1 0.0002 min\u22121\u03bcM\u22121",
+      "claim_type": "EXPLICIT",
+      "source_text": "4p-PTEN: kcat/Km = 0.005 \u00b1 0.0002 min\u22121\u03bcM\u22121",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a kinetic parameter determined experimentally and shown in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "1d3e8f08-4e19-4375-af48-d075b7bbfbad",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C26",
+      "claim": "4p-PTEN has lower activity than n-PTEN only at low PIP3 concentrations",
+      "claim_type": "EXPLICIT",
+      "source_text": "4p-PTEN has lower activity than n-PTEN only at low PIP3 concentrations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the enzymatic assays shown in Figure 2D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "bb901370-75da-475a-97d1-8be085834052",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C27",
+      "claim": "The interfacial Km (iKm) for 4p-PTEN, n-PTEN, and t-PTEN are all the same, within error, in dephosphorylating vesicle-bound PIP3",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our best evidence against the possibility that conformationally closed 4p-PTEN binds membrane is that the interfacial Kms (iKms) for 4p-PTEN, n-PTEN, and t-PTEN are all the same, within error, in dephosphorylating vesicle-bound PIP3",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is derived from the interfacial kinetic analysis shown in Figure 2E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d459259f-7a65-46e5-a706-c42535204c54",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C28",
+      "claim": "At a low surface concentration of PIP3 (0.01%) in incorporated vesicles, PIP2 stimulates the enzymatic activity of n-PTEN and 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "At a low surface concentration of PIP3 (0.01%) incorporated vesicles, (A) PIP2 and (B) Phosphatidylserine stimulate the enzymatic activity of n-PTEN and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "98b27177-b3f0-449d-80bc-80040d63ad52",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C29",
+      "claim": "At a low surface concentration of PIP3 (0.01%) in incorporated vesicles, Phosphatidylserine stimulates the enzymatic activity of n-PTEN and 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "At a low surface concentration of PIP3 (0.01%) incorporated vesicles, (A) PIP2 and (B) Phosphatidylserine stimulate the enzymatic activity of n-PTEN and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "60f1778b-01ce-4d9b-aab4-8cb1503fb8a5",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C30",
+      "claim": "Unphosphorylated PTEN produced in E. coli binds to vesicles containing anionic phospholipids",
+      "claim_type": "EXPLICIT",
+      "source_text": "As reported previously for unphosphorylated PTEN produced in",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to previously published findings that are being replicated with semisynthetic PTEN.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "205a2f91-7780-40fd-a4d7-11c1f75435b8",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C31",
+      "claim": "4p-PTEN shows reduced binding to vesicles containing PIP2 compared to n-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "The percent of n-PTEN and 4p-PTEN bound to sedimented phosphatidylcholine LMVs incorporated with (A) PIP2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by vesicle sedimentation assay data shown in Figure 3A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c007185a-5e6a-4f30-8ac7-40c3b086d9e6",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C32",
+      "claim": "4p-PTEN shows reduced binding to vesicles containing phosphatidylserine compared to n-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "The percent of n-PTEN and 4p-PTEN bound to sedimented phosphatidylcholine LMVs incorporated with (A) PIP2 or (B) phosphatidylserine",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by vesicle sedimentation assay data shown in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e53a200b-c674-4a54-8542-a6d3f97b1852",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C33",
+      "claim": "It has been proposed that C-terminal phosphorylation of PTEN may alter its conformation",
+      "claim_type": "EXPLICIT",
+      "source_text": "It has been proposed that C-terminal phosphorylation of PTEN may alter its conformation",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to prior hypotheses in the literature that the current study investigates.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "4786e144-788c-4ca5-9cee-1b92e229ebaf",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C34",
+      "claim": "With a gradient of 0\u201350% NaCl over 250 ml on an anion exchange column, 4p-PTEN elutes at \u223c70 ml while n-PTEN elutes at \u223c100 ml",
+      "claim_type": "EXPLICIT",
+      "source_text": "With a gradient of 0\u201350% NaCl over 250 ml on an anion exchange column, 4p-PTEN elutes at \u223c70 ml while n-PTEN elutes at \u223c100 ml",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation from ion exchange chromatography shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "5b70917f-9969-4a38-8820-af2103e88db6",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C35",
+      "claim": "4p-PTEN appeared more protease resistant vs its unphosphorylated counterpart as seen most clearly at 25 and 50 ng trypsin",
+      "claim_type": "EXPLICIT",
+      "source_text": "4p-PTEN appeared more protease resistant vs its unphosphorylated counterpart as seen most clearly at 25 and 50 ng trypsin",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "Supported by limited proteolysis data shown in Figure 4B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "ed69a0b5-a2f5-4abb-8bfc-921351ee8374",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C36",
+      "claim": "Several large metastable fragments still containing C-terminal epitopes were observed in n-PTEN, indicative of enhanced protease sensitivity in the catalytic domain in the unphosphorylated protein",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on western blots with N-terminal and C-terminal PTEN Abs, several large metastable fragments still containing C-terminal epitopes were observed in n-PTEN, indicative of enhanced protease sensitivity in the catalytic domain in the unphosphorylated protein",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Based on Western blot data in Figure 4B with inference about the location of protease sensitivity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "93972eb3-afe5-4a6e-8e11-0bd69f803dd7",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C37",
+      "claim": "The half-life of alkaline phosphatase-mediated dephosphorylation of 4p-PTEN under the conditions used was found to be \u223c60 min",
+      "claim_type": "EXPLICIT",
+      "source_text": "The half-life of alkaline phosphatase-mediated dephosphorylation of 4p-PTEN under the conditions used was found to be \u223c60 min",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental measurement shown in Figure 4C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d80c0910-309d-4852-95fa-f1c29274c752",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C38",
+      "claim": "Freeze-thawing dilute 4p-PTEN led to apparent denaturation of the protein since it was much more susceptible to alkaline phosphatase catalyzed dephosphorylation of the tail phosphate cluster",
+      "claim_type": "EXPLICIT",
+      "source_text": "Serendipitously, we found that freeze-thawing dilute 4p-PTEN led to apparent denaturation of the protein since it was much more susceptible to alkaline phosphatase catalyzed dephosphorylation of the tail phosphate cluster",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "Based on experimental observation with inference about denaturation from Figure 4C and Figure 4\u2014figure supplement 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "9eed155f-e3bf-408a-b772-22d5e71f5441",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C39",
+      "claim": "Native 4p-PTEN vs denatured 4p-PTEN shows a 25-fold reduced rate of alkaline phosphatase-catalyzed dephosphorylation of the tail phospho cluster",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this way, we estimate that native 4p-PTEN vs denatured 4p-PTEN shows a 25-fold reduced rate of alkaline phosphatase-catalyzed dephosphorylation of the tail phospho cluster",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result derived from experimental data in Figure 4C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "fceabf62-5341-4063-b195-6a66b6526dcf",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C40",
+      "claim": "A closed:open 4p-PTEN conformational equilibrium of 25:1 exists under the conditions of the alkaline phosphatase experiment",
+      "claim_type": "EXPLICIT",
+      "source_text": "We infer that this rate-differential suggests a closed:open 4p-PTEN conformational equilibrium of 25:1 under the conditions of this experiment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the 25-fold difference in dephosphorylation rates between native and denatured 4p-PTEN.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8af39d38-7193-4199-8240-493e4c91ca06",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C41",
+      "claim": "The radius of gyration (Rg) for t-PTEN is 28.5 \u00b1 0.1 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source_text": "Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from SAXS analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "71d5f150-6812-4d2c-9db1-23a8a8df8339",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C42",
+      "claim": "The radius of gyration (Rg) for n-PTEN is 30.5 \u00b1 0.1 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source_text": "Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from SAXS analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a3081e8e-8074-40cd-83a6-9ad0ed91ffac",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C43",
+      "claim": "The radius of gyration (Rg) for 4p-PTEN is 27.9 \u00b1 0.1 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source_text": "Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from SAXS analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "2494005e-8955-4f56-a297-9f608540f262",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C44",
+      "claim": "The maximum particle dimension (Dmax) for t-PTEN is 95 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source_text": "Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from SAXS analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f1b98f6c-bc5d-443e-99c2-442967d1c7bf",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C45",
+      "claim": "The maximum particle dimension (Dmax) for n-PTEN is 110 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source_text": "Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from SAXS analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "fc520fd9-e3d4-4ae1-a612-e7ace267f28e",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C46",
+      "claim": "The maximum particle dimension (Dmax) for 4p-PTEN is 95 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source_text": "Summary of Rg and Dmax values for t-PTEN, n-PTEN, and 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from SAXS analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "5ec71f12-713e-4027-93ac-c7f041bb17e3",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C47",
+      "claim": "The molecular envelope for n-PTEN reveals an elongated extension proximal to the C2 domain",
+      "claim_type": "EXPLICIT",
+      "source_text": "The molecular envelope for n-PTEN reveals an elongated extension proximal to the C2 domain",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from SAXS molecular envelope reconstruction shown in Figure 5C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "007286d9-8508-4895-a217-d9e75e9ae624",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C48",
+      "claim": "The molecular envelope for t-PTEN shows a small extension, similar in length to that of 4p-PTEN, but perhaps not as wide",
+      "claim_type": "EXPLICIT",
+      "source_text": "The molecular envelope for t-PTEN, which contains half of the 52 residue tail, shows a small extension, similar in length to that of 4p-PTEN, but perhaps not as wide",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from SAXS molecular envelope reconstruction shown in Figure 5C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "14472302-eb15-47af-b121-76e9aceea698",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C49",
+      "claim": "The 4p-PTEN phosphatase domain appears to undergo a modest change in shape relative to t-PTEN and n-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, the 4p-PTEN phosphatase domain appears to undergo a modest change in shape relative to t-PTEN and n-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from SAXS molecular envelope reconstruction shown in Figure 5C and Figure 5\u2014figure supplement 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7cbdee5f-96e4-44e8-a616-86787591cce9",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C50",
+      "claim": "The D5 mutant 4p-PTEN showed a distinctive biochemical behavior with respect to anion exchange chromatography, eluting broadly with much of the protein eluting at higher NaCl concentrations than the unphosphorylated D5 mutant",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, the D5 mutant 4p-PTEN showed a distinctive biochemical behavior. With respect to anion exchange chromatography, D5 mutant 4p-PTEN eluted broadly with much of the protein eluting at higher NaCl concentrations than the unphosphorylated D5 mutant",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation shown in Figure 6\u2014figure supplement 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e8361682-63c2-4120-97a3-76daa49b98c3",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C51",
+      "claim": "D5 mutant 4p-PTEN was dephosphorylated about eightfold faster than the native wt 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, D5 mutant 4p-PTEN was dephosphorylated about eightfold faster than the native wt 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from alkaline phosphatase sensitivity assays shown in Figure 6A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7bacf77d-a418-4194-9bf7-c3131db576a8",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C52",
+      "claim": "D5 mutant 4p-PTEN was dephosphorylated only threefold slower than denatured wt 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "and only threefold slower than denatured wt 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from alkaline phosphatase sensitivity assays shown in Figure 6A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "67eb6499-e8f6-4da1-9c17-589b523173d3",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C53",
+      "claim": "The tail phosphate cluster is dramatically more exposed in the D5 mutant compared to wild-type 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "implying that the tail phosphate cluster is dramatically more exposed in the D5 mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the alkaline phosphatase sensitivity data in Figure 6A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "cc6ffb3d-b8b8-427d-b3df-603cc4cfc28f",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C54",
+      "claim": "D5-mutant 4p-PTEN readily processed soluble PIP3 substrate, \u223cthreefold faster than wt and A5-mutant 4p-PTENs",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, D5- mutant 4p-PTEN readily processed soluble PIP3 substrate, \u223cthreefold faster than wt and A5-mutant 4p-PTENs",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental result from enzymatic assays shown in Figure 6B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f3dd4184-2772-454d-a3c5-e5c00957b6d1",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C55",
+      "claim": "The D5-mutant 4p-PTEN phosphatase activity showed saturation with soluble PIP3 with catalytic parameters approaching those of n-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, the D5-mutant 4p-PTEN phosphatase activity showed saturation with soluble PIP3 (Figure 6C), with catalytic parameters approaching those of n-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental result shown in Figure 6C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "4799df25-155c-4efe-8847-e884d19f90cb",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C56",
+      "claim": "For D5 4p-PTEN mutant with soluble diC6-PIP3 substrate, kcat = 3.0 \u00b1 0.3 min\u22121, Km = 112 \u00b1 22 \u03bcM, kcat/Km = 0.027 \u00b1 0.003 min\u22121\u03bcM\u22121",
+      "claim_type": "EXPLICIT",
+      "source_text": "Km curve of D5 4p-PTEN mutant (kcat = 3.0 \u00b1 0.3 min\u22121, Km = 112 \u00b1 22 \u03bcM, kcat/Km = 0.027 \u00b1 0.003 min\u22121\u03bcM\u22121)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are kinetic parameters determined experimentally and shown in Figure 6C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "0be0fc83-d64b-4dea-8ec7-b6ff38c5a14a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C57",
+      "claim": "The penta-Asp substitutions in the CBRIII loop are non-denaturing but can significantly disrupt the closed conformation of 4p-PTEN, presumably by electrostatic repulsion of the anionic tail",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, these results make clear that the penta-Asp substitutions in the CBRIII loop are non-denaturing but can significantly disrupt the closed conformation of 4p-PTEN, presumably by electrostatic repulsion of the anionic tail",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is based on multiple experimental results with the D5 mutant, with inference about the mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "b81d1a68-1d86-48d8-bfec-f6a1033838c3",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C58",
+      "claim": "The activity of the N-mutant which contains mutations of K13, R14, and R15 to alanine, is reduced compared to wt",
+      "claim_type": "EXPLICIT",
+      "source_text": "As reported previously (Campbell et al., 2003), the activity of the N-mutant which contains mutations of K13, R14, and R15 to alanine, is reduced compared to wt",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is supported by both current experimental data (Figure 6B) and prior citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "adacdb63-eb49-4023-ada6-f2a0582ece75",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C59",
+      "claim": "The synthetic C-tail tetraphosphorylated peptide (aa 379\u2013403, 4p-25mer) can modulate the activity of truncated t-PTEN in an intermolecular fashion",
+      "claim_type": "EXPLICIT",
+      "source_text": "We investigated the possibility that the synthetic C-tail tetraphosphorylated peptide (aa 379\u2013403, 4p-25mer) used in ligation could modulate the activity of truncated (t-PTEN, aa 1\u2013378) in an intermolecular fashion",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by experimental data in Figure 7.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "29a2fbac-764c-4195-bdad-8ca178004a23",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C60",
+      "claim": "For t-PTEN in the absence of 4p-25mer peptide with soluble diC6-PIP3 substrate, kcat = 2.9 \u00b1 0.1 min\u22121; Km = 33 \u00b1 2.1 \u03bcM, kcat/Km = 0.088 \u00b1 0.004 min\u22121\u03bcM\u22121",
+      "claim_type": "EXPLICIT",
+      "source_text": "Km curve of t-PTEN in the absence (kcat = 2.9 \u00b1 0.1 min\u22121; Km = 33 \u00b1 2.1 \u03bcM, kcat/Km = 0.088 \u00b1 0.004 min\u22121\u03bcM\u22121)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are kinetic parameters determined experimentally and shown in Figure 7B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "09500f96-790c-471d-892c-909eb7900fb3",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C61",
+      "claim": "For t-PTEN in the presence of 1 \u03bcM 4p-25mer phosphopeptide with soluble diC6-PIP3 substrate, kcat/Km = 0.006 \u00b1 0.0003 min\u22121\u03bcM\u22121",
+      "claim_type": "EXPLICIT",
+      "source_text": "or presence (kcat/Km = 0.006 \u00b1 0.0003 min\u22121\u03bcM\u22121) of 1 \u03bcM 4p-25mer phosphopeptide",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a kinetic parameter determined experimentally and shown in Figure 7B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "0cd0ffc2-157a-496e-8d4f-e7b7a13af074",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C62",
+      "claim": "There is reduced inhibition of D5 t-PTEN mutant in the presence of 4p-25mer peptide compared to wild-type t-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "Reduced inhibition of D5 t-PTEN mutant in the presence of 4p-25mer peptide",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental result shown in Figure 7C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "83007f86-a0fc-448a-8127-1baee20d8eb7",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C63",
+      "claim": "Upon phosphorylation on the 380\u2013385 Ser/Thr cluster, the PTEN C-terminal modified tail clamps down intramolecularly on the C2 domain in the vicinity of the CBRIII loop",
+      "claim_type": "EXPLICIT",
+      "source_text": "Upon phosphorylation on the 380\u2013385 Ser/Thr cluster, the PTEN C-terminal modified tail clamps down intramolecularly on the C2 domain in the vicinity of the CBRIII loop",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main mechanistic model proposed based on the accumulated experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "52f427af-fc12-414d-ac7c-1eac5b833c1d",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C64",
+      "claim": "Phosphorylation of the PTEN C-terminal tail prevents PTEN from binding the plasma membrane",
+      "claim_type": "EXPLICIT",
+      "source_text": "preventing PTEN from binding the plasma membrane",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is part of the mechanistic model supported by membrane binding and enzymatic activity data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8afe382b-25a9-476e-a397-509a5cef84d3",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C65",
+      "claim": "Phosphorylation of the PTEN C-terminal tail reduces its catalytic action toward PIP3",
+      "claim_type": "EXPLICIT",
+      "source_text": "and reducing its catalytic action toward PIP3",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly supported by enzymatic activity measurements in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "9148399d-c691-46bb-b08f-8c5bf4009938",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C66",
+      "claim": "Physiologic membrane surface concentrations of PIP3 are in the range of 0.001 mol% or less",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since physiologic membrane surface concentrations of PIP3 are in the range of 0.001 mol% or less",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation (Rahdar et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "964483e1-2b7d-44c8-b200-af81ce3f11e8",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C67",
+      "claim": "C-terminal phosphorylation of PTEN should confer an important reduction in enzymatic activity in vivo",
+      "claim_type": "EXPLICIT",
+      "source_text": "C-terminal phosphorylation of PTEN should confer an important reduction in enzymatic activity in vivo",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the in vitro enzymatic data combined with knowledge of physiologic PIP3 concentrations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "2fb16c66-f8c1-4195-a485-bb8f3889cd22",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C68",
+      "claim": "The soluble PIP3 Km for 4p-PTEN vs n-PTEN is elevated",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is interesting that the soluble PIP3 Km for 4p-PTEN vs n-PTEN is elevated",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the kinetic data in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "368b6816-6a36-47e4-8012-f6119fc1f628",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C69",
+      "claim": "The interfacial Km (iKm) with vesicles containing PIP3 is the same for both 4p-PTEN and n-PTEN enzyme forms",
+      "claim_type": "EXPLICIT",
+      "source_text": "whereas the interfacial Km (iKm) with vesicles containing PIP3 is the same for both enzyme forms",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the interfacial kinetic analysis in Figure 2E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "13b8e892-f116-48f7-b616-2696e0081910",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C70",
+      "claim": "Both the trypsin protease pattern and SAXS analysis of 4p-PTEN vs n-PTEN reveal apparent structural/dynamic changes within the catalytic domain upon phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both the trypsin protease pattern and SAXS analysis of 4p-PTEN vs n-PTEN reveal apparent structural/dynamic changes within the catalytic domain upon phosphorylation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on experimental observations from Figures 4B and 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "48e23362-2667-4c6b-b53c-ce9fbb7b6b9b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C71",
+      "claim": "Conformational changes in the catalytic domain upon phosphorylation may come from direct interactions with the tail or be transmitted allosterically through tail-C2 binding",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such conformational changes in the catalytic domain upon phosphorylation may come from direct interactions with the tail, though they could also be transmitted allosterically through tail-C2 binding since the C2 domain makes intimate contacts with the catalytic domain",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about possible mechanisms for the observed conformational changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a9fd8fe1-9dfb-4c6f-af4f-928dfb2ab747",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C72",
+      "claim": "The CBRIII loop, while critical for vesicle interaction, is dispensable for soluble PIP3 substrate processing",
+      "claim_type": "EXPLICIT",
+      "source_text": "It should be noted that the CBRIII loop, while critical for vesicle interaction, is dispensable for soluble PIP3 substrate processing, as shown here and previously",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "Supported by current experimental data and prior citation (McConnachie et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "9f7d43e5-3c9d-4ad6-9219-1fee489b11b0",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C73",
+      "claim": "There are at least some differences between interactions of PTEN with soluble PIP3 and membrane-embedded PIP3",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, there are at least some differences between interactions of PTEN with soluble PIP3 and membrane-embedded PIP3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the different kinetic behaviors observed with soluble vs membrane-embedded substrates.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7c430c02-9d85-4153-bbb4-e3ec09a3a00a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C74",
+      "claim": "Previous experiments involving co-immunoprecipitation of the co-transfected PTEN tail and body as separate pieces hinted at the potential of a conformational change induced by phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source_text": "Results from previous experiments involving co-immunoprecipitation of the co-transfected PTEN tail and body as separate pieces hinted at the potential of a conformational change induced by phosphorylation",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation (Rahdar et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7ec9c120-2f5c-4633-9f6f-2caa2dc99492",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C75",
+      "claim": "The co-immunoprecipitation of the PTEN tail and body was disrupted by the altered residues in the N-mutant and A5-mutant PTENs",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, in contrast to the findings here, the co-immunoprecipitation of the PTEN tail and body was disrupted by the altered residues in the N-mutant and A5-mutant PTENs",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from prior work (Rahdar et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d7417db3-b7bd-4060-b61b-3a63d2416f8a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C76",
+      "claim": "There may be differences in the trans interaction identified in mammalian cell extracts vs the closed conformation of the intact 4p-PTEN molecule",
+      "claim_type": "EXPLICIT",
+      "source_text": "this suggests that there may be differences in this trans interaction identified in mammalian cell extracts vs the closed conformation of the intact 4p-PTEN molecule analyzed in the current study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the differences between prior co-IP results and current findings with semisynthetic PTEN.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "48d85828-cab3-4270-8815-ea577d53c868",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C77",
+      "claim": "The apparent affinity between the 4p-25mer and the t-PTEN body has an IC50 of approximately 1 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, we found higher than expected apparent affinity between the 4p-25mer and the t-PTEN body (IC50 1 \u03bcM)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is derived from the peptide inhibition experiments in Figure 7A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e4c49d9c-b3d7-4328-b372-2886baa8ae30",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C78",
+      "claim": "The 4p-25mer shows more complete inhibition (>95%) of the lipid phosphatase activity of t-PTEN with soluble PIP3 substrate than would be predicted based on results with 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "and more complete inhibition (>95%) of the lipid phosphatase activity of t-PTEN by the 4p-25mer with soluble PIP3 substrate than would be predicted based on results with 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation from Figure 7.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "62a518a2-76ab-4528-87b6-526aecd24f45",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C79",
+      "claim": "The 4p-PTEN:n-PTEN activity ratio is approximately 6:1",
+      "claim_type": "IMPLICIT",
+      "source_text": "4p-PTEN:n-PTEN activity was \u223c6:1",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is derived from comparing the enzymatic activities in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "1025ae99-aa9c-4d0b-836f-d072512a737c",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C80",
+      "claim": "There may be structural differences in the intermolecular complex vs the intramolecular conformational change",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such results may suggest structural differences in the intermolecular complex vs the intramolecular conformational change",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning to explain the discrepancy between intermolecular and intramolecular interaction strengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "4f5cc340-9a3c-48ad-ad14-79fc1b0996e2",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C81",
+      "claim": "There may be energetic strain associated with achieving conformational closure in the intramolecular case of 4p-PTEN not associated with a phospho-tail\u2013t-PTEN intermolecular interaction",
+      "claim_type": "EXPLICIT",
+      "source_text": "While there are several plausible explanations for this, one interesting possibility is that there may be energetic strain associated with achieving conformational closure in the intramolecular case of 4p-PTEN not associated with a phospho-tail\u2013t-PTEN intermolecular interaction",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about a possible explanation for observed differences.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c05b802e-0616-4134-8c8d-518bed657d8c",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C82",
+      "claim": "Long-range intramolecular protein conformational switching induced by phosphorylation has been observed in several well-established cases including CrkL, Src, and SHP-1/2",
+      "claim_type": "EXPLICIT",
+      "source_text": "Long-range intramolecular protein conformational switching induced by phosphorylation has been observed in several well-established cases including CrkL, Src, and SHP-1/2",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "Supported by citations (Lu et al., 2001; Rosen et al., 1995; Sicheri et al., 1997; Xu et al., 1997; Zhang et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a8be8779-542f-47e4-95cc-3e6baf3b7954",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C83",
+      "claim": "Each of the examples of conformational switching (CrkL, Src, SHP-1/2) involves an SH2 domain interacting with a phosphotyrosine",
+      "claim_type": "EXPLICIT",
+      "source_text": "Each of these examples involves an SH2 domain interacting with a phosphotyrosine",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established knowledge about these protein regulatory mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "63e2dab9-4683-4668-b83b-898ce2921234",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C84",
+      "claim": "The authors propose a Src-like model for PTEN, in which a cluster of pSer/pThr drives an apparently long distance intramolecular binding interaction to deactivate the enzyme",
+      "claim_type": "EXPLICIT",
+      "source_text": "We propose a Src-like model for PTEN, in which a cluster of pSer/pThr drives an apparently long distance intramolecular binding interaction to deactivate the enzyme",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main mechanistic model proposed based on the accumulated experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "89e783b4-20c2-4751-aa71-362fbf07592b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C85",
+      "claim": "There are presumably cellular phosphatase enzymes that can dephosphorylate phospho-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "There are presumably cellular phosphatase enzymes that can dephosphorylate phospho-PTEN",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about how 4p-PTEN might be reactivated in cells.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "9002b3a6-b1b7-42ef-b8f2-69e2b3accb7b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C86",
+      "claim": "Ligands which can bind allosterically to phospho-PTEN may promote conformational opening",
+      "claim_type": "EXPLICIT",
+      "source_text": "or ligands which can bind allosterically to phospho-PTEN that may promote conformational opening",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about potential mechanisms for PTEN reactivation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "11986bac-d93d-42ad-9d88-9508c95931df",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C87",
+      "claim": "The authors see no evidence of the autodephosphorylation of 4p-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast to prior suggestions based on trans experiments, we see no evidence of the autodephosphorylation of 4p-PTEN",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on the stability of 4p-PTEN observed in multiple experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e3359291-4ed0-4d31-ae4d-bcdc176b79df",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C88",
+      "claim": "The stability of the closed conformation of 4p-PTEN over the dozens of hours of expressed protein ligation points to resistance of the tail phosphates to PTEN enzymatic removal",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the stability of the closed conformation of 4p-PTEN over the dozens of hours of expressed protein ligation points to resistance of the tail phosphates to PTEN enzymatic removal",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observed stability of 4p-PTEN during the ligation procedure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c064cf08-1b79-4fed-9408-855b8f1465a8",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C89",
+      "claim": "Because of the structural concealment of the 380\u20135 phosphoSer/Thr residues in the closed 4p-PTEN conformation, autodephosphorylation may be especially disfavored",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because of the structural concealment of the 380\u20135 phosphoSer/Thr residues in the closed 4p-PTEN conformation, such autodephosphorylation may be especially disfavored",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the conformational data showing the phospho-tail is buried.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "0f66ea94-2366-4f84-9f38-521c82e921ea",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C90",
+      "claim": "Altered protein\u2013protein interactions or efficiency of ubiquitylation may be influenced by phosphorylation-mediated conformational closure of phospho-PTEN",
+      "claim_type": "EXPLICIT",
+      "source_text": "Altered protein\u2013protein interactions or efficiency of ubiquitylation may be influenced by phosphorylation-mediated conformational closure of phospho-PTEN",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about potential biomedical implications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "71be9a69-5c4a-4d4d-90a2-777a6919f9ea",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C91",
+      "claim": "PTEN is often wild type but expressed at low levels in cancer",
+      "claim_type": "EXPLICIT",
+      "source_text": "While PTEN is a tumor suppressor and can be mutated in cancer, it is often wild type but expressed at low levels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established knowledge about PTEN status in cancer.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "efc7d658-662d-4330-acf0-6ff1ec4d268c",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C92",
+      "claim": "Direct stimulation of cellular phospho-PTEN by pharmacologic agents could prove to be effective as an anti-cancer therapy",
+      "claim_type": "EXPLICIT",
+      "source_text": "Direct stimulation of cellular phospho-PTEN by pharmacologic agents could prove to be effective as an anti-cancer therapy",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about potential therapeutic applications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8eaf4fc1-51bd-4c64-a069-baaf52066727",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C93",
+      "claim": "A related approach to direct protein activation has been explored to activate the tumor suppressor p53",
+      "claim_type": "EXPLICIT",
+      "source_text": "A related approach has been explored to activate the tumor suppressor p53",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation (Foster et al., 1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8961a97a-c853-41e7-9893-c0160bdc81c9",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C94",
+      "claim": "A related approach to direct protein activation has been explored to activate the apoptotic protein procaspase",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the apoptotic protein procaspase",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation (Gray et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "532af468-e580-4a08-bf5c-fa896f8e53ba",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C95",
+      "claim": "It may be possible to find small molecules that bind specifically to the phospho-tail and prevent its intramolecular engagement with the C2 domain",
+      "claim_type": "EXPLICIT",
+      "source_text": "It may be possible to find small molecules that bind specifically to the phospho-tail and prevent its intramolecular engagement with the C2 domain",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about potential drug discovery strategies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "6cbb2ec8-1438-4def-912a-672d6172e5f0",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C96",
+      "claim": "It may be possible to find small molecules that bind somewhere on the PTEN body and stabilize the open PTEN conformation allosterically",
+      "claim_type": "EXPLICIT",
+      "source_text": "or bind somewhere on the PTEN body and stabilize the open PTEN conformation allosterically",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about potential drug discovery strategies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8f3e28f2-0959-4211-96e0-cba134ba70ab",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C97",
+      "claim": "The soluble PIP3 substrate dephosphorylation assay with 4p-PTEN should provide a means for screening for PTEN activators",
+      "claim_type": "EXPLICIT",
+      "source_text": "The soluble PIP3 substrate dephosphorylation assay with 4p-PTEN should provide a means for screening for such activators",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the established assay methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "16393201-1bcb-4c3d-96ec-381ac7be6507",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C98",
+      "claim": "Inhibitors of CK2 and/or GSK3\u03b2 protein kinase may be effective in targeting PIP3/Akt-driven tumors",
+      "claim_type": "EXPLICIT",
+      "source_text": "Alternatively, inhibitors of CK2 and/or GSK3\u03b2 protein kinase, the enzymes responsible for PTEN C-tail phosphorylation, may be effective in targeting PIP3/Akt-driven tumors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is speculative reasoning about potential therapeutic strategies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e0a18232-bd18-4dbd-872a-16fa0ed5163b",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C99",
+      "claim": "CK2 and GSK3\u03b2 protein kinases are the enzymes responsible for PTEN C-tail phosphorylation",
+      "claim_type": "EXPLICIT",
+      "source_text": "the enzymes responsible for PTEN C-tail phosphorylation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established knowledge about PTEN phosphorylation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "6b059ad5-44b2-4b96-ace0-0c8b2eb98994",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C100",
+      "claim": "Multi-site phosphorylation has been elegantly studied in the TGF\u03b2 signaling axis using protein semisynthesis previously",
+      "claim_type": "EXPLICIT",
+      "source_text": "Multi-site phosphorylation has been elegantly studied in the TGF\u03b2 signaling axis using protein semisynthesis previously",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations (Huse et al., 2001; Wu et al., 2001).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "3c0269b6-5c91-4167-ac79-e0245563ad6a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C101",
+      "claim": "Previous protein semisynthesis experiments studying TGF\u03b2 signaling did not require insect cell expression of an intein-fusion protein",
+      "claim_type": "EXPLICIT",
+      "source_text": "but these experiments did not require insect cell expression of an intein-fusion protein",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is stated in contrast to the current methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "def00a13-bbd6-472b-b487-15018fa4f0f2",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C102",
+      "claim": "Baculovirus expression systems are an attractive option for expressed protein ligation with challenging eukaryotic proteins",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our efforts here suggest that baculovirus expression systems are an attractive option, rather than a last resort, for expressed protein ligation with challenging eukaryotic proteins",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the successful application of the baculovirus system in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a7600f7c-075c-4cd9-84f1-3a3f3dd13ac7",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C103",
+      "claim": "High Five insect cells rather than the more typical SF9 insect cells were critical for robust expression of PTEN-intein fusion protein",
+      "claim_type": "EXPLICIT",
+      "source_text": "We also found that High Five insect cells rather than the more typical SF9 insect cells were critical for robust expression",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation about optimal expression conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a108b637-b02a-4d50-8844-701a8cff01c9",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C104",
+      "claim": "Baculovirus systems have rarely been used for intein expression vectors, possibly in part because of the expression of chitinase in these hosts which interferes with the standard chitin affinity purification scheme",
+      "claim_type": "EXPLICIT",
+      "source_text": "It should also be noted that baculovirus systems have rarely been used for intein expression vectors (Pradhan et al., 1999), possibly in part because of the expression of chitinase in these hosts which interferes with the standard chitin affinity purification scheme",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This combines citation with inference about why baculovirus systems are rarely used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d7bfcff0-5279-4a14-ad01-add22727a33f",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C105",
+      "claim": "The presence of chitinase in baculovirus systems is a surmountable issue by a chromatographic pre-clearing step with a bed of fibrous cellulose",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nevertheless, we found the presence of chitinase to be a surmountable issue by a chromatographic pre-clearing step with a bed of fibrous cellulose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a methodological solution developed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "24fdb5b7-3e8c-43bd-a54c-56269a113b66",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C106",
+      "claim": "The five clustered Lys residues of the CBRIII loop are found on the membrane binding surface of the C2 domain",
+      "claim_type": "EXPLICIT",
+      "source_text": "Prior studies suggest that the five clustered Lys residues of the CBRIII loop are found on the membrane binding surface of the C2 domain",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations (Lee et al., 1999; McConnachie et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "14d0a74e-d21b-41c0-881e-042407d0f872",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C107",
+      "claim": "Mutation of the five clustered Lys residues of the CBRIII loop decreases PTEN binding to lipid vesicles in vitro",
+      "claim_type": "EXPLICIT",
+      "source_text": "and their mutation decreases PTEN binding to lipid vesicles in vitro",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations (Lee et al., 1999; McConnachie et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "7c85cea9-e455-4dd3-89b6-528afa5f7bc1",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C108",
+      "claim": "Mutation of the five clustered Lys residues of the CBRIII loop decreases PTEN binding to plasma membranes in cell transfection experiments",
+      "claim_type": "EXPLICIT",
+      "source_text": "and plasma membranes in cell transfection experiments",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations (Lee et al., 1999; McConnachie et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "31fffc09-a49e-461f-afe3-28dc679b94da",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C109",
+      "claim": "Both phosphorylated and unphosphorylated PTEN are in the same open conformation when bound to the plasma membrane",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both phosphorylated and unphosphorylated PTEN are in the same open conformation when bound to the plasma membrane",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is part of the model shown in Figure 8, inferred from the equal interfacial Km values.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "ba70e21a-5fb4-4373-9741-416b127bfaab",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C110",
+      "claim": "When dephosphorylated, the tail of PTEN is no longer bound tightly to the C2 domain, allowing for the open PTEN protein to bind efficiently to the plasma membrane",
+      "claim_type": "EXPLICIT",
+      "source_text": "When dephosphorylated, the tail of PTEN is no longer bound tightly to the C2 domain, allowing for the open PTEN protein to bind efficiently to the plasma membrane",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is part of the mechanistic model shown in Figure 8, based on the accumulated experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c8424f7e-1407-42cf-adb7-2ab5b7083cba",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C111",
+      "claim": "Vesicles made by sonication of dried lipids hydrated in PTEN assay buffer are 30\u201350 nm in diameter",
+      "claim_type": "EXPLICIT",
+      "source_text": "Vesicles made in this way are 30\u201350 nm in diameter",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a characterization of the vesicles used in the enzymatic assays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "6ca6818d-1361-4cf9-bacc-6c151dec439f",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C112",
+      "claim": "In assay reactions, the ratio of the number of vesicles to the number of PTEN molecules was maintained at 4:1 or greater",
+      "claim_type": "EXPLICIT",
+      "source_text": "In assay reactions, the ratio of the number of vesicles to the number of PTEN molecules was maintained at 4:1 or greater",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological parameter of the enzymatic assays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "bf02488a-16e5-4e13-b707-92b56e23bd87",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C113",
+      "claim": "The approximate accuracy for the mass spectrometric measurements of PTEN protein masses is \u00b150 Da",
+      "claim_type": "EXPLICIT",
+      "source_text": "The approximate accuracy for the mass spectrometric measurements of these protein masses is \u00b150 Da",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the precision of the mass spectrometry measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "8c34b74c-9822-484d-892a-a2ea0354e009",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C114",
+      "claim": "After FPLC purification by anion exchange chromatography and concentration, the final yield of semisynthetic PTEN protein was 2\u20133 mg per liter of cell culture with estimated purity >95% by coomassie stained SDS-PAGE",
+      "claim_type": "EXPLICIT",
+      "source_text": "After FPLC purification by anion exchange chromatography and concentration the final yield of semisynthetic PTEN protein was 2\u20133 mg per liter of cell culture with estimated purity >95% by coomassie stained SDS-PAGE",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the yield and purity achieved with the purification protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "30627589-6552-42c2-89c7-5ef4ef4b7bbb",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "claim_id": "C115",
+      "claim": "The tailless crystal structure containing the phosphatase and C2 domains fits nicely into the two-lobed globular portion of each SAXS molecular envelope",
+      "claim_type": "EXPLICIT",
+      "source_text": "The tailless crystal structure containing the phosphatase and C2 domains fits nicely into the two-lobed globular portion of each envelope",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from fitting the crystal structure into the SAXS envelopes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The successful generation of semisynthetic site-specifically tetra-phosphorylated PTEN is well-supported by multiple lines of evidence including mass spectrometry, Western blot validation, protein yields, and purity assessments. The methodological innovation of using baculovirus/insect cell expression for intein-mediated protein ligation is adequately demonstrated with appropriate controls (Y379C mutation validation, stability tests).",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "199e8629-5acd-40cc-bbc7-892bbcb7af75",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The finding that tail-phosphorylated PTEN shows reduced catalytic activity is strongly supported by comprehensive kinetic analysis with both soluble and membrane-embedded substrates. The interfacial kinetic analysis is rigorous, showing ~7.6-fold reduction in kcat/Km for soluble substrate while interfacial Km values remain equivalent. The concentration-dependent effects are well-characterized, though the physiological relevance at very low PIP3 concentrations could benefit from cellular validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "233cf915-cdf1-43a2-bba1-3708bd04dbb9",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reduced membrane affinity of 4p-PTEN compared to n-PTEN is clearly demonstrated through vesicle sedimentation assays with both PIP2 and phosphatidylserine-containing vesicles. The data are quantitative and reproducible (n=3). This result directly supports the proposed mechanism that phosphorylation prevents membrane binding by occluding the C2 domain membrane-binding surface.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Conformational compaction of 4p-PTEN is supported by multiple orthogonal biophysical approaches: ion exchange chromatography (paradoxical early elution), limited proteolysis (increased protease resistance), alkaline phosphatase sensitivity (25-fold protection), and SAXS analysis (reduced Rg and Dmax). The convergence of these independent methods provides strong evidence for a closed conformation, though the precise molecular details of the C-tail/C2 interaction remain inferential.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "479f401b-1b2c-4782-9adc-9fa5382d2d80",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The proposed competition between membrane phospholipids and phospho-tail for C2 domain binding is well-supported by the combined evidence of reduced membrane binding, maintained interfacial Km when membrane-bound, and prior structural knowledge of the CBRIII loop location. The model that both phosphorylated and unphosphorylated PTEN adopt the same open conformation when membrane-bound is consistent with the equal interfacial Km values observed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "677e3a60-0783-4de5-8ec2-e52e4477ae99",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The D5 mutant experiments provide strong evidence that the CBRIII loop is critical for maintaining the closed conformation of 4p-PTEN. The 8-fold faster dephosphorylation rate, altered chromatographic behavior, and restored catalytic activity with kinetic parameters approaching n-PTEN all support electrostatic repulsion between the penta-Asp substitutions and the phospho-tail. The demonstration that D5 mutations are non-denaturing (retained catalytic activity) strengthens the interpretation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The intermolecular interaction between 4p-25mer peptide and t-PTEN validates the tail-body interaction in trans. The ~15-fold reduction in kcat/Km, >95% inhibition, and IC50 of ~1 \u03bcM provide quantitative support. The reduced inhibition with D5 t-PTEN mutant corroborates the CBRIII loop involvement. However, the apparent discrepancy between the strong intermolecular interaction and the 25:1 closed:open equilibrium for intact 4p-PTEN suggests possible conformational strain in the intramolecular case, which warrants further investigation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "fe7ac5a6-03a2-4c1e-b96a-b5d65b06c203",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the in vitro data strongly suggest that C-terminal phosphorylation would reduce PTEN activity in vivo, this conclusion relies on extrapolation from in vitro measurements to physiological conditions. The claim about physiological PIP3 concentrations (0.001 mol%) is cited but the actual in vivo impact of phosphorylation on PTEN function requires cellular validation, which is not provided in this study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "73f29ccf-ecf6-4929-a399-484d52a9a69d",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The proposed Src-like regulatory model where pSer/pThr cluster drives intramolecular deactivation is well-supported by the accumulated experimental evidence from enzymatic, biophysical, and mutagenesis studies. The model integrates multiple observations coherently: conformational closure, reduced membrane binding, decreased catalytic activity, and CBRIII loop involvement. While some mechanistic details remain inferential, the overall model is the most parsimonious explanation for the data.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f34c99f5-3564-4f3b-8eac-300091becbcd",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The mechanistic explanations for conformational changes in the catalytic domain and differences between soluble vs. membrane-embedded substrate interactions are speculative. While the observations (different Km for soluble substrate, same iKm for membrane substrate, altered protease patterns) are valid, the proposed mechanisms (direct tail interaction vs. allosteric transmission, energetic strain in intramolecular closure) require additional structural or computational validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "ffb6ada1-ef85-479b-86d7-8f8e70d6ce8f",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R11",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The lack of autodephosphorylation of 4p-PTEN is well-supported by stability data over 24 hours and during the 72-hour ligation procedure. The inference that structural concealment of the phospho-tail prevents autodephosphorylation is consistent with the alkaline phosphatase protection data showing 25-fold reduced accessibility. This contradicts prior suggestions of autodephosphorylation and is an important mechanistic insight.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9",
+      "content_id": "1fb96d74-82a8-4f97-b00a-619f26c92fd0",
+      "result_id": "R12",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The therapeutic implications and drug discovery strategies are speculative and represent future work rather than demonstrated results. While the soluble substrate assay could theoretically screen for activators, no such screening has been performed. The suggestions about small molecule activators or kinase inhibitors are reasonable hypotheses but lack experimental validation in this study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "2e80a135-caba-446f-ade0-c5809886fc67",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 1",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 1 acknowledges the semisynthesis approach as significant but raises concerns about methodological clarity: questions about protein concentration in ligation, yield calculations that 'need to be clarified,' purification details that are missing, and whether the anti-phospho-PTEN antibody 'only recognizes the fully tetra-phosphorylated C-terminus' or might detect partially phosphorylated species. These concerns indicate the phosphorylation completeness and purity require better documentation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "54a18282-f3a7-47c0-b07e-d85369aaafa5",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 3",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 3 notes that 'Figure 2A suggests that 4p-PTEN might reduce kcat, as well as kcat/Km' and requests 'more evidence' to prove phosphorylation effects can be explained 'only by reduced phospholipid binding.' The reviewer asks that 'kcat should be measured with less error' using alternative substrates to 'eliminate the possibility that phosphorylation affects turnover rate as well as binding constants.' This indicates uncertainty about whether the reduced activity is solely due to membrane binding defects.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "f3ccf3bb-75e9-424c-8092-8a1592767f08",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 1",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer 1 explicitly supports this finding, stating that 'Multiple lines of evidence are presented for a model...which may feature the negatively-charged tail in a buried state that reduces plasma-membrane binding.' The reduced membrane binding of 4p-PTEN is accepted as part of the evidence supporting the conformational closure model.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 1",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer 1 affirms that 'Multiple lines of evidence are presented for a model...in which the tail-phosphorylated PTEN (4p-PTEN) more favorably adopts a compact structure.' The conformational compaction data from SAXS, ion exchange chromatography, and proteolysis are accepted as supporting evidence for the structural changes upon phosphorylation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "11fde4c7-efea-4293-8a27-d37b513c360e",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 3",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 3 states 'The main weakness is that while phosphorylation leads to protein compaction, reduced catalysis and reduced lipid affinity, the study lacks evidence that the inhibitory effects on activity and/or binding are necessarily caused by the conformational changes.' The reviewer notes 'Without this evidence, the autoinhibitory model shown in Figure 7 is speculative, which reduces the impact of the study.' This indicates the mechanistic model linking conformational closure to functional inhibition requires stronger causal evidence.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "130eb15f-e505-4770-81a2-3da66cc42682",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 3",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 3 requests experiments showing 'that conservative mutations at the lipid-binding interface interfere with peptide binding and relieve autoinhibition of 4p-PTEN' as part of demonstrating the autoinhibitory mechanism. While the D5 mutant data are presented, the reviewer's request for additional evidence to establish causality suggests these findings alone are insufficient to fully support the proposed mechanism.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 3",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 3 requests evidence 'showing that the phosphorylated C-terminal peptide inhibits t-PTEN in trans down to an activity comparable to 4p-PTEN' and that 'the phospho-C-terminal peptide interacts with the lipid-binding interface' to demonstrate autoinhibition. While the trans-inhibition data are presented, the reviewer's request for additional experiments indicates these results need further validation to establish the autoinhibitory mechanism.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "70fd0c5a-877c-43de-af43-e1ae69c6d0ce",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 1",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer 1 notes 'The uniquely phosphorylated proteins provide information that is not readily accessible via mutational analysis with encoded amino acids or via enzyme-catalyzed phosphorylation' and finds the semisynthesis approach to be 'a significant contribution.' The methodological innovation using baculovirus expression is implicitly accepted as part of the successful protein production strategy.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "c0e801be-77b9-4cae-bacf-7916f8d37a0b",
+      "content_id": "f2fd4d26-3443-43e8-9319-33c936b12cc4",
+      "result_id": "R9",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Reviewer 1",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 1 requests 'the yield after anion exchange chromatography that affords extra pure material for SAXS' to 'provide information on the purity of the material directly from the ligation reaction.' This concern about purity documentation, particularly for SAXS analysis, indicates uncertainty about whether the reported purity levels are adequate for the biophysical measurements.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7bc2bff6-3a1f-499c-ba0a-3adaed24367b",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "7fcbffb0-0ab5-40c9-8a9e-5b8ca1b58993",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "fb16700b-2f2c-4fa1-aa9c-18f5bbaa2fd6",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "c17f79e8-550c-4f30-95cf-f884ea5bfd3c",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "c6eb8a6f-c403-47e4-8fc3-e7d899322d7b",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "cd7e5be0-e45d-4ea8-b3fa-66b89762f079",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "d0e26fb8-fd97-4b62-be15-f624dd636779",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "b8fe3a17-fe0b-4c92-b09e-4fbb8629edea",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "7a8667cf-c32b-4e89-8b8a-937f16e6a0b9",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "def00a13-bbd6-472b-b487-15018fa4f0f2",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "a7600f7c-075c-4cd9-84f1-3a3f3dd13ac7",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "a108b637-b02a-4d50-8844-701a8cff01c9",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "d7bfcff0-5279-4a14-ad01-add22727a33f",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "8c34b74c-9822-484d-892a-a2ea0354e009",
+      "result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a"
+    },
+    {
+      "claim_id": "571b83b7-a8db-49cc-a5ef-9afb9133d7dd",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "29ad578e-a313-44b2-9778-905dbb3d1828",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "97120349-eac5-4843-978a-8f9ca80b0c2f",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "1d3e8f08-4e19-4375-af48-d075b7bbfbad",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "bb901370-75da-475a-97d1-8be085834052",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "8afe382b-25a9-476e-a397-509a5cef84d3",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "2fb16c66-f8c1-4195-a485-bb8f3889cd22",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "368b6816-6a36-47e4-8012-f6119fc1f628",
+      "result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75"
+    },
+    {
+      "claim_id": "dc992407-1840-420b-aaaa-0a349dca5c29",
+      "result_id": "233cf915-cdf1-43a2-bba1-3708bd04dbb9"
+    },
+    {
+      "claim_id": "205a2f91-7780-40fd-a4d7-11c1f75435b8",
+      "result_id": "233cf915-cdf1-43a2-bba1-3708bd04dbb9"
+    },
+    {
+      "claim_id": "c007185a-5e6a-4f30-8ac7-40c3b086d9e6",
+      "result_id": "233cf915-cdf1-43a2-bba1-3708bd04dbb9"
+    },
+    {
+      "claim_id": "52f427af-fc12-414d-ac7c-1eac5b833c1d",
+      "result_id": "233cf915-cdf1-43a2-bba1-3708bd04dbb9"
+    },
+    {
+      "claim_id": "0c48b47c-d291-4b89-b9f9-9381d9fb0e94",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "4786e144-788c-4ca5-9cee-1b92e229ebaf",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "5b70917f-9969-4a38-8820-af2103e88db6",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "ed69a0b5-a2f5-4abb-8bfc-921351ee8374",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "93972eb3-afe5-4a6e-8e11-0bd69f803dd7",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "d80c0910-309d-4852-95fa-f1c29274c752",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "9eed155f-e3bf-408a-b772-22d5e71f5441",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "fceabf62-5341-4063-b195-6a66b6526dcf",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "8af39d38-7193-4199-8240-493e4c91ca06",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "71d5f150-6812-4d2c-9db1-23a8a8df8339",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "a3081e8e-8074-40cd-83a6-9ad0ed91ffac",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "2494005e-8955-4f56-a297-9f608540f262",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "f1b98f6c-bc5d-443e-99c2-442967d1c7bf",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "fc520fd9-e3d4-4ae1-a612-e7ace267f28e",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "5ec71f12-713e-4027-93ac-c7f041bb17e3",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "007286d9-8508-4895-a217-d9e75e9ae624",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "14472302-eb15-47af-b121-76e9aceea698",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "13b8e892-f116-48f7-b616-2696e0081910",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "30627589-6552-42c2-89c7-5ef4ef4b7bbb",
+      "result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11"
+    },
+    {
+      "claim_id": "d200abe1-8b70-4895-848d-0ff038354882",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "83007f86-a0fc-448a-8127-1baee20d8eb7",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "24fdb5b7-3e8c-43bd-a54c-56269a113b66",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "14d0a74e-d21b-41c0-881e-042407d0f872",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "7c85cea9-e455-4dd3-89b6-528afa5f7bc1",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "31fffc09-a49e-461f-afe3-28dc679b94da",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "ba70e21a-5fb4-4373-9741-416b127bfaab",
+      "result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80"
+    },
+    {
+      "claim_id": "7cbdee5f-96e4-44e8-a616-86787591cce9",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "e8361682-63c2-4120-97a3-76daa49b98c3",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "7bacf77d-a418-4194-9bf7-c3131db576a8",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "67eb6499-e8f6-4da1-9c17-589b523173d3",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "cc6ffb3d-b8b8-427d-b3df-603cc4cfc28f",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "f3dd4184-2772-454d-a3c5-e5c00957b6d1",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "4799df25-155c-4efe-8847-e884d19f90cb",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "0be0fc83-d64b-4dea-8ec7-b6ff38c5a14a",
+      "result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99"
+    },
+    {
+      "claim_id": "adacdb63-eb49-4023-ada6-f2a0582ece75",
+      "result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2"
+    },
+    {
+      "claim_id": "29a2fbac-764c-4195-bdad-8ca178004a23",
+      "result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2"
+    },
+    {
+      "claim_id": "09500f96-790c-471d-892c-909eb7900fb3",
+      "result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2"
+    },
+    {
+      "claim_id": "0cd0ffc2-157a-496e-8d4f-e7b7a13af074",
+      "result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2"
+    },
+    {
+      "claim_id": "48d85828-cab3-4270-8815-ea577d53c868",
+      "result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2"
+    },
+    {
+      "claim_id": "e4c49d9c-b3d7-4328-b372-2886baa8ae30",
+      "result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2"
+    },
+    {
+      "claim_id": "964483e1-2b7d-44c8-b200-af81ce3f11e8",
+      "result_id": "fe7ac5a6-03a2-4c1e-b96a-b5d65b06c203"
+    },
+    {
+      "claim_id": "9148399d-c691-46bb-b08f-8c5bf4009938",
+      "result_id": "fe7ac5a6-03a2-4c1e-b96a-b5d65b06c203"
+    },
+    {
+      "claim_id": "63e2dab9-4683-4668-b83b-898ce2921234",
+      "result_id": "73f29ccf-ecf6-4929-a399-484d52a9a69d"
+    },
+    {
+      "claim_id": "83007f86-a0fc-448a-8127-1baee20d8eb7",
+      "result_id": "73f29ccf-ecf6-4929-a399-484d52a9a69d"
+    },
+    {
+      "claim_id": "52f427af-fc12-414d-ac7c-1eac5b833c1d",
+      "result_id": "73f29ccf-ecf6-4929-a399-484d52a9a69d"
+    },
+    {
+      "claim_id": "8afe382b-25a9-476e-a397-509a5cef84d3",
+      "result_id": "73f29ccf-ecf6-4929-a399-484d52a9a69d"
+    },
+    {
+      "claim_id": "48e23362-2667-4c6b-b53c-ce9fbb7b6b9b",
+      "result_id": "f34c99f5-3564-4f3b-8eac-300091becbcd"
+    },
+    {
+      "claim_id": "9f7d43e5-3c9d-4ad6-9219-1fee489b11b0",
+      "result_id": "f34c99f5-3564-4f3b-8eac-300091becbcd"
+    },
+    {
+      "claim_id": "1025ae99-aa9c-4d0b-836f-d072512a737c",
+      "result_id": "f34c99f5-3564-4f3b-8eac-300091becbcd"
+    },
+    {
+      "claim_id": "4f5cc340-9a3c-48ad-ad14-79fc1b0996e2",
+      "result_id": "f34c99f5-3564-4f3b-8eac-300091becbcd"
+    },
+    {
+      "claim_id": "11986bac-d93d-42ad-9d88-9508c95931df",
+      "result_id": "ffb6ada1-ef85-479b-86d7-8f8e70d6ce8f"
+    },
+    {
+      "claim_id": "e3359291-4ed0-4d31-ae4d-bcdc176b79df",
+      "result_id": "ffb6ada1-ef85-479b-86d7-8f8e70d6ce8f"
+    },
+    {
+      "claim_id": "c064cf08-1b79-4fed-9408-855b8f1465a8",
+      "result_id": "ffb6ada1-ef85-479b-86d7-8f8e70d6ce8f"
+    },
+    {
+      "claim_id": "efc7d658-662d-4330-acf0-6ff1ec4d268c",
+      "result_id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9"
+    },
+    {
+      "claim_id": "532af468-e580-4a08-bf5c-fa896f8e53ba",
+      "result_id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9"
+    },
+    {
+      "claim_id": "6cbb2ec8-1438-4def-912a-672d6172e5f0",
+      "result_id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9"
+    },
+    {
+      "claim_id": "8f3e28f2-0959-4211-96e0-cba134ba70ab",
+      "result_id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9"
+    },
+    {
+      "claim_id": "16393201-1bcb-4c3d-96ec-381ac7be6507",
+      "result_id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9"
+    },
+    {
+      "claim_id": "7bc2bff6-3a1f-499c-ba0a-3adaed24367b",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "7fcbffb0-0ab5-40c9-8a9e-5b8ca1b58993",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "fb16700b-2f2c-4fa1-aa9c-18f5bbaa2fd6",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "c17f79e8-550c-4f30-95cf-f884ea5bfd3c",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "c6eb8a6f-c403-47e4-8fc3-e7d899322d7b",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "cd7e5be0-e45d-4ea8-b3fa-66b89762f079",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "d0e26fb8-fd97-4b62-be15-f624dd636779",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "b8fe3a17-fe0b-4c92-b09e-4fbb8629edea",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "7a8667cf-c32b-4e89-8b8a-937f16e6a0b9",
+      "result_id": "2e80a135-caba-446f-ade0-c5809886fc67"
+    },
+    {
+      "claim_id": "571b83b7-a8db-49cc-a5ef-9afb9133d7dd",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "29ad578e-a313-44b2-9778-905dbb3d1828",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "97120349-eac5-4843-978a-8f9ca80b0c2f",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "1d3e8f08-4e19-4375-af48-d075b7bbfbad",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "bb901370-75da-475a-97d1-8be085834052",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "d459259f-7a65-46e5-a706-c42535204c54",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "98b27177-b3f0-449d-80bc-80040d63ad52",
+      "result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5"
+    },
+    {
+      "claim_id": "dc992407-1840-420b-aaaa-0a349dca5c29",
+      "result_id": "f3ccf3bb-75e9-424c-8092-8a1592767f08"
+    },
+    {
+      "claim_id": "205a2f91-7780-40fd-a4d7-11c1f75435b8",
+      "result_id": "f3ccf3bb-75e9-424c-8092-8a1592767f08"
+    },
+    {
+      "claim_id": "c007185a-5e6a-4f30-8ac7-40c3b086d9e6",
+      "result_id": "f3ccf3bb-75e9-424c-8092-8a1592767f08"
+    },
+    {
+      "claim_id": "0c48b47c-d291-4b89-b9f9-9381d9fb0e94",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "4786e144-788c-4ca5-9cee-1b92e229ebaf",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "5b70917f-9969-4a38-8820-af2103e88db6",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "ed69a0b5-a2f5-4abb-8bfc-921351ee8374",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "93972eb3-afe5-4a6e-8e11-0bd69f803dd7",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "d80c0910-309d-4852-95fa-f1c29274c752",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "9eed155f-e3bf-408a-b772-22d5e71f5441",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "fceabf62-5341-4063-b195-6a66b6526dcf",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "8af39d38-7193-4199-8240-493e4c91ca06",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "71d5f150-6812-4d2c-9db1-23a8a8df8339",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "a3081e8e-8074-40cd-83a6-9ad0ed91ffac",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "2494005e-8955-4f56-a297-9f608540f262",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "f1b98f6c-bc5d-443e-99c2-442967d1c7bf",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "fc520fd9-e3d4-4ae1-a612-e7ace267f28e",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "5ec71f12-713e-4027-93ac-c7f041bb17e3",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "007286d9-8508-4895-a217-d9e75e9ae624",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "14472302-eb15-47af-b121-76e9aceea698",
+      "result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea"
+    },
+    {
+      "claim_id": "d200abe1-8b70-4895-848d-0ff038354882",
+      "result_id": "11fde4c7-efea-4293-8a27-d37b513c360e"
+    },
+    {
+      "claim_id": "83007f86-a0fc-448a-8127-1baee20d8eb7",
+      "result_id": "11fde4c7-efea-4293-8a27-d37b513c360e"
+    },
+    {
+      "claim_id": "52f427af-fc12-414d-ac7c-1eac5b833c1d",
+      "result_id": "11fde4c7-efea-4293-8a27-d37b513c360e"
+    },
+    {
+      "claim_id": "8afe382b-25a9-476e-a397-509a5cef84d3",
+      "result_id": "11fde4c7-efea-4293-8a27-d37b513c360e"
+    },
+    {
+      "claim_id": "63e2dab9-4683-4668-b83b-898ce2921234",
+      "result_id": "11fde4c7-efea-4293-8a27-d37b513c360e"
+    },
+    {
+      "claim_id": "7cbdee5f-96e4-44e8-a616-86787591cce9",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "e8361682-63c2-4120-97a3-76daa49b98c3",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "7bacf77d-a418-4194-9bf7-c3131db576a8",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "67eb6499-e8f6-4da1-9c17-589b523173d3",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "cc6ffb3d-b8b8-427d-b3df-603cc4cfc28f",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "f3dd4184-2772-454d-a3c5-e5c00957b6d1",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "4799df25-155c-4efe-8847-e884d19f90cb",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "0be0fc83-d64b-4dea-8ec7-b6ff38c5a14a",
+      "result_id": "130eb15f-e505-4770-81a2-3da66cc42682"
+    },
+    {
+      "claim_id": "adacdb63-eb49-4023-ada6-f2a0582ece75",
+      "result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25"
+    },
+    {
+      "claim_id": "29a2fbac-764c-4195-bdad-8ca178004a23",
+      "result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25"
+    },
+    {
+      "claim_id": "09500f96-790c-471d-892c-909eb7900fb3",
+      "result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25"
+    },
+    {
+      "claim_id": "0cd0ffc2-157a-496e-8d4f-e7b7a13af074",
+      "result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25"
+    },
+    {
+      "claim_id": "48d85828-cab3-4270-8815-ea577d53c868",
+      "result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25"
+    },
+    {
+      "claim_id": "e4c49d9c-b3d7-4328-b372-2886baa8ae30",
+      "result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25"
+    },
+    {
+      "claim_id": "def00a13-bbd6-472b-b487-15018fa4f0f2",
+      "result_id": "70fd0c5a-877c-43de-af43-e1ae69c6d0ce"
+    },
+    {
+      "claim_id": "a7600f7c-075c-4cd9-84f1-3a3f3dd13ac7",
+      "result_id": "70fd0c5a-877c-43de-af43-e1ae69c6d0ce"
+    },
+    {
+      "claim_id": "a108b637-b02a-4d50-8844-701a8cff01c9",
+      "result_id": "70fd0c5a-877c-43de-af43-e1ae69c6d0ce"
+    },
+    {
+      "claim_id": "d7bfcff0-5279-4a14-ad01-add22727a33f",
+      "result_id": "70fd0c5a-877c-43de-af43-e1ae69c6d0ce"
+    },
+    {
+      "claim_id": "8c34b74c-9822-484d-892a-a2ea0354e009",
+      "result_id": "c0e801be-77b9-4cae-bacf-7916f8d37a0b"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f02b87f3-4595-4fa9-be27-7c9af5c6f26b",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "677e3a60-0783-4de5-8ec2-e52e4477ae99",
+      "peer_result_id": "130eb15f-e505-4770-81a2-3da66cc42682",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Perfect claim overlap (C50-C57) on D5 mutant experiments. LLM finds evidence strong for CBRIII loop involvement in closed conformation. Peer reviewer requests additional experiments showing conservative mutations at lipid-binding interface interfere with peptide binding and relieve autoinhibition, indicating current evidence insufficient for full support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "fc8eb167-7e31-407d-9f22-557e9a36aa71",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "09fb3fe8-4d46-4cb4-8f2c-15b7bd662ca2",
+      "peer_result_id": "e4e1e02a-f378-4b7a-8eee-77913e7c2c25",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Perfect claim overlap (C59-C62, C77-C78) on trans-inhibition experiments. LLM accepts the intermolecular interaction data as validating tail-body interaction. Peer reviewer requests additional evidence showing phospho-peptide inhibits t-PTEN to activity comparable to 4p-PTEN and demonstrates interaction with lipid-binding interface, indicating need for further validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "fc8f9937-af45-45d8-b742-808c17c8693f",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "f7c73f04-d509-43d9-9e3a-8aba5ae22a11",
+      "peer_result_id": "38ae9941-9bf5-4db2-8f08-6d8978c212ea",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "High claim overlap (C12, C34-C49; 17/19 claims shared). Both agree conformational compaction is well-supported by multiple orthogonal biophysical approaches (SAXS, ion exchange, proteolysis, alkaline phosphatase). LLM includes C70 and C115 not in peer review, but core evidence for structural changes is accepted by both.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a37015e7-5704-4588-bd4d-00e23cd5e7f6",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "73f29ccf-ecf6-4929-a399-484d52a9a69d",
+      "peer_result_id": "11fde4c7-efea-4293-8a27-d37b513c360e",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Strong claim overlap (C63-C65, C84) on autoinhibitory model. LLM finds Src-like regulatory model well-supported by accumulated evidence. Peer reviewer states main weakness is lack of evidence that inhibitory effects on activity/binding are necessarily caused by conformational changes, calling the autoinhibitory model speculative without causal evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "29a89d55-56df-4f41-8c50-75f8c0c5407a",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "233cf915-cdf1-43a2-bba1-3708bd04dbb9",
+      "peer_result_id": "f3ccf3bb-75e9-424c-8092-8a1592767f08",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Strong claim overlap (C11, C31-C32; 3/4 claims shared). Both accept reduced membrane affinity of 4p-PTEN as demonstrated by vesicle sedimentation assays. Peer reviewer explicitly states this is part of evidence supporting conformational closure model. LLM includes C64 not in peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "5b465bad-0787-4d3a-904a-e9df40bb741b",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a",
+      "peer_result_id": "2e80a135-caba-446f-ade0-c5809886fc67",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Good claim overlap (C9, C16-C23; 9/14 claims shared). LLM finds semisynthetic tetra-phosphorylated PTEN generation well-supported by mass spec, Western blot, yields, and purity. Peer reviewer acknowledges significance but raises concerns about methodological clarity: protein concentration, yield calculations, purification details, and antibody specificity for fully vs. partially phosphorylated species.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "3a5f7e9d-bc92-4783-a1e2-92a6b16ac5bb",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "199e8629-5acd-40cc-bbc7-892bbcb7af75",
+      "peer_result_id": "54a18282-f3a7-47c0-b07e-d85369aaafa5",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Moderate claim overlap (C10, C24-C27; 5/8 LLM claims, 5/7 peer claims shared). LLM finds reduced catalytic activity strongly supported by kinetic analysis. Peer reviewer notes Figure 2A suggests 4p-PTEN might reduce kcat as well as kcat/Km, requests more evidence and better kcat measurements to eliminate possibility that phosphorylation affects turnover rate, not just binding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "1864ab5c-f6a4-4dab-b928-e9821754f15a",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a",
+      "peer_result_id": "70fd0c5a-877c-43de-af43-e1ae69c6d0ce",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Partial claim overlap (C102-C105; 4/14 LLM claims). Both agree on methodological innovation of semisynthesis approach using baculovirus/insect cell expression. Peer reviewer notes uniquely phosphorylated proteins provide information not accessible via mutational analysis, finding this a significant contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "d33ea992-7e06-44f2-b81c-5e6ce7fc9871",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "479f401b-1b2c-4782-9adc-9fa5382d2d80",
+      "peer_result_id": "11fde4c7-efea-4293-8a27-d37b513c360e",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "Low claim overlap (C13, C63; 2/7 LLM claims, 2/5 peer claims). LLM supports competition model between membrane phospholipids and phospho-tail. Peer review addresses broader autoinhibitory model (includes C64, C65, C84) and questions causal link between conformational changes and functional inhibition. Partial overlap makes direct comparison complex.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "2df06727-d86e-42b5-b8fd-4fd77f2080be",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "54f6d1e0-da8a-40c2-a19a-1dd459246d8a",
+      "peer_result_id": "c0e801be-77b9-4cae-bacf-7916f8d37a0b",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal claim overlap (C114 only; 1/14 LLM claims). LLM accepts purity assessments as adequate. Peer reviewer requests yield after anion exchange for SAXS to clarify purity of material directly from ligation, indicating uncertainty about whether reported purity levels are sufficient for biophysical measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "ead7c08d-3b71-4636-9891-6185af587edb",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "fe7ac5a6-03a2-4c1e-b96a-b5d65b06c203",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims C67, C66 on in vivo implications only in LLM results. LLM marks uncertain due to extrapolation from in vitro to physiological conditions without cellular validation. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "e06222b8-d9d2-4114-bd85-602d59e4db3f",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "f34c99f5-3564-4f3b-8eac-300091becbcd",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims C71, C73, C80, C81 on mechanistic explanations for conformational changes only in LLM results. LLM marks uncertain as proposed mechanisms are speculative and require structural/computational validation. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "dd9e8867-3de6-4723-9906-8dee3d6da46d",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "ffb6ada1-ef85-479b-86d7-8f8e70d6ce8f",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims C87-C89 on lack of autodephosphorylation only in LLM results. LLM finds well-supported by stability data and alkaline phosphatase protection. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    },
+    {
+      "id": "a63cd5a2-3d30-44af-80b2-2a27696ce512",
+      "submission_id": "f8a043dd-3497-4906-adc9-88d439da31d7",
+      "llm_result_id": "b19a37e3-4dd9-4c8a-a0a0-4d5e53f6bad9",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims C92, C95-C98 on therapeutic implications only in LLM results. LLM marks uncertain as these represent speculative future work without experimental validation. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:36:55.773946Z"
+    }
+  ]
+}

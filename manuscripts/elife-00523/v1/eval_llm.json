@@ -1,0 +1,129 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The experimental design is sound with appropriate sample sizes (204 individuals, three cell types), rigorous quality control (genetic and technical outlier removal), and conservative statistical thresholds (10% FDR with permutation-based correction). The quantitative discovery of thousands of eQTLs, mQTLs, and eQTMs across cell types is well-documented with clear methodology."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The finding that developmental and inter-individual methylation variation operate through different mechanisms is supported by multiple lines of evidence: (1) promoter methylation correlates negatively with expression across genes regardless of eQTM direction (C32), (2) differentiated sites are significantly enriched for eQTMs and mQTLs (C33-C34, C36-C37, p<2.2\u00d710\u207b\u00b9\u2076), and (3) the coefficient of variation metric appropriately controls for mean methylation levels. The interpretation that differentiation establishes a 'platform' for inter-individual variation (C38) is a reasonable inference from the data."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The context-dependent role of DNA methylation is well-supported by enrichment analyses comparing observed vs. expected overlaps with genomic features. The significant depletion of mQTLs in CGI promoters and enrichment in non-CGI promoters (C42-C43) demonstrates differential genetic control, while the enrichment of negative eQTMs in regulatory regions (C39-C41) and eQTLs in CGI (C46-C47, p<0.03) shows functional context matters. The use of matched null SNP sets for comparison strengthens these conclusions."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The allele-specific expression analysis provides strong evidence that genetic variation, not non-genetic methylation, drives ASE. The significant difference in allelic imbalance between eQTL heterozygotes and homozygotes (p<2.2\u00d710\u207b\u00b9\u2076 in fibroblasts) contrasts with the lack of difference between homomethylated and semimethylated individuals for eQTMs (p=0.79, 0.42, 0.49). Appropriate quality control excluded mapping bias. The interpretation that methylation is cell-level rather than allelic (C54) is acknowledged as limited and requiring further validation."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Synergistic interactions between genetic variants and DNA methylation are demonstrated with appropriate statistical rigor. The enrichment is significant in LCLs and T-cells (\u03c0\u2081=4.3%, 9.3%, p<0.001) and suggested in fibroblasts (\u03c0\u2081=12.4%, 7.2\u00d7 permuted maximum). The use of 1000 permutations to establish confidence intervals and control for SNP-methylation correlation (filtering p<0.05) strengthens the findings. The modest number of individually significant interactions (3-91 at 10% FDR) reflects appropriate conservative thresholds."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the Bayesian Network analysis identifies all three causative models (INDEP, SME, SEM) across cell types, the causal inference has important limitations. The high-confidence calls (61%, 36%, 27% in F, L, T) use both BN and Causal Inference Test, but the directionality of causation in observational data remains inherently uncertain. The examples provided (DPYSL4, HLA-F, DGKQ) are plausible but speculative. The conclusion about passive vs. active roles is reasonable but would benefit from experimental validation such as targeted methylation editing or temporal profiling."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The TF-methylation associations show strong enrichment (\u03c0\u2081=18%, 9%, 25% in F, L, T) with 27-99 significant TFs at 10% FDR across 17,747-209,136 tests. The use of ENCODE ChIP-seq data and exclusion of sites within 1 Mb of TF genes controls for cis-effects. The SNP-TF-methylation interaction analysis, while limited (N=114), shows enrichment (\u03c0\u2081=15%) and provides mechanistic insight into passive methylation roles. The permutation-based expected distributions appropriately establish significance thresholds."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C75"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The finding that cell-type differential methylation provides a platform for inter-individual regulatory variation is supported by the enrichment of eQTMs and mQTLs at differentiated sites (C33-C34, C36-C37) and prior literature on differentiation (C35). The observation that repressive methylation states can show both positive and negative inter-individual associations (C75) is consistent with the context-dependent findings. This represents a conceptual advance in understanding how developmental and population-level variation interact."
+  }
+]

@@ -1,0 +1,147 @@
+{
+  "submission": {
+    "id": "2e6d5af2-d275-4bdb-911d-0f3e7210a3b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:25:12.068397Z",
+    "updated_at": "2025-10-16T22:25:12.068397Z"
+  },
+  "content": [
+    {
+      "id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "submission_id": "2e6d5af2-d275-4bdb-911d-0f3e7210a3b2",
+      "content_type": "manuscript",
+      "content_text": "# Hip, hip, hooray!\n\n## Authors\n\n- Emma Pewsey<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Materials Science and Metallurgy University of Cambridge Cambridge United Kingdom ep320@cam.ac.uk\n\n\u2020 Corresponding author\n\n## Abstract\n\nX-rays are best known for showing where bones have fractured, but researchers can also use X-rays to investigate why bones break, which could lead to treatments that reduce the number of elderly people who suffer broken hips.\n",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6393719f-b3e9-4605-b73b-6793014e7035",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "claim_id": "C1",
+      "claim": "X-rays can show where bones have fractured.",
+      "claim_type": "EXPLICIT",
+      "source_text": "X-rays are best known for showing where bones have fractured",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established medical knowledge about the common diagnostic use of X-rays in identifying bone fractures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    },
+    {
+      "id": "06162544-498e-4c06-87c8-b49a2411db16",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "claim_id": "C2",
+      "claim": "X-rays can be used to investigate why bones break.",
+      "claim_type": "EXPLICIT",
+      "source_text": "researchers can also use X-rays to investigate why bones break",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The statement indicates an established research application of X-rays beyond diagnosis, inferring their utility in understanding bone failure mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    },
+    {
+      "id": "e96c5ba0-5a85-4fc5-a732-24a647b2ea2f",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "claim_id": "C3",
+      "claim": "Understanding why bones break could lead to treatments that reduce the number of elderly people who suffer broken hips.",
+      "claim_type": "EXPLICIT",
+      "source_text": "researchers can also use X-rays to investigate why bones break, which could lead to treatments that reduce the number of elderly people who suffer broken hips",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The use of 'could lead to' indicates this is a speculative statement about potential future outcomes based on logical inference from research applications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    },
+    {
+      "id": "25737b2c-ea60-44c6-b539-cfb73fd5a2ff",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "claim_id": "C4",
+      "claim": "Elderly people suffer from broken hips.",
+      "claim_type": "IMPLICIT",
+      "source_text": "reduce the number of elderly people who suffer broken hips",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement implicitly asserts that hip fractures occur in elderly populations, which is established medical knowledge about age-related bone health issues.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    },
+    {
+      "id": "341b035f-136a-4472-b2af-37a44412c462",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "claim_id": "C5",
+      "claim": "X-ray investigation of bone fracture mechanisms is a research application.",
+      "claim_type": "IMPLICIT",
+      "source_text": "researchers can also use X-rays to investigate why bones break",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The mention of 'researchers' using X-rays for investigation implies this is an active area of scientific research, distinct from clinical diagnostic use.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2c0388a2-c6f4-41ea-88b4-efe7842b31ee",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1, C2, and C5 describe established applications of X-ray technology in both clinical diagnosis and research contexts. These are well-documented uses of X-ray imaging in medical and materials science fields and represent general knowledge rather than novel findings requiring experimental validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    },
+    {
+      "id": "6e3b7cb5-ee23-4a2a-9def-d6686e0ed504",
+      "content_id": "95152241-bf01-4468-ad97-465ea29c2a11",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C3 is explicitly speculative ('could lead to') about future therapeutic outcomes, while C4 establishes the clinical problem. No experimental data, mechanistic evidence, or preliminary results are provided to assess the likelihood or pathway by which X-ray investigation would lead to treatments. This represents a hypothesis for future work rather than a supported conclusion.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:25:12.068397Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6393719f-b3e9-4605-b73b-6793014e7035",
+      "result_id": "2c0388a2-c6f4-41ea-88b4-efe7842b31ee"
+    },
+    {
+      "claim_id": "06162544-498e-4c06-87c8-b49a2411db16",
+      "result_id": "2c0388a2-c6f4-41ea-88b4-efe7842b31ee"
+    },
+    {
+      "claim_id": "341b035f-136a-4472-b2af-37a44412c462",
+      "result_id": "2c0388a2-c6f4-41ea-88b4-efe7842b31ee"
+    },
+    {
+      "claim_id": "e96c5ba0-5a85-4fc5-a732-24a647b2ea2f",
+      "result_id": "6e3b7cb5-ee23-4a2a-9def-d6686e0ed504"
+    },
+    {
+      "claim_id": "25737b2c-ea60-44c6-b539-cfb73fd5a2ff",
+      "result_id": "6e3b7cb5-ee23-4a2a-9def-d6686e0ed504"
+    }
+  ],
+  "comparisons": []
+}

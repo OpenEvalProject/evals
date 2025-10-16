@@ -1,0 +1,207 @@
+{
+  "submission": {
+    "id": "cdb5d3a4-0a14-441a-897f-c388b4392ccb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:10:41.820117Z",
+    "updated_at": "2025-10-16T22:10:41.820117Z"
+  },
+  "content": [
+    {
+      "id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "submission_id": "cdb5d3a4-0a14-441a-897f-c388b4392ccb",
+      "content_type": "manuscript",
+      "content_text": "# Nanoscopy at low light intensities shows its potential\n\n## Authors\n\n- Travis J Gould<sup>1</sup>\n- Joerg Bewersdorf<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell Biology and the Kavli Institute for Neuroscience Yale University School of Medicine New Haven United States travis.gould@yale.edu\n2. Departments of Cell Biology and Biomedical Engineering, and the Kavli Institute for Neuroscience Yale University School of Medicine New Haven United States joerg.bewersdorf@yale.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nA new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.\n",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b821fda-424e-4d4c-bf31-e0a603697d0b",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C1",
+      "claim": "Nanoscopy can be performed at low light intensities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nanoscopy at low light intensities shows its potential",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title asserts that nanoscopy at low light intensities demonstrates potential, implying it can be performed under these conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "5ca8c430-5eb1-4c10-b5a3-1c6f41c72f38",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C2",
+      "claim": "A new form of green fluorescent protein exists.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly states a new form of GFP exists, with the context suggesting this is based on research findings being discussed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "2a25e41f-cc6c-49cd-a05c-915d4b3482e7",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C3",
+      "claim": "The new form of green fluorescent protein enables super-resolution imaging to be performed faster on living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract directly states that this new GFP variant allows faster super-resolution imaging on living cells, implying experimental validation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "51af79af-b411-4720-84f9-2f242f2abb23",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C4",
+      "claim": "The new form of green fluorescent protein enables super-resolution imaging with low radiation doses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly states that the new GFP allows imaging with low radiation doses, suggesting this is a demonstrated capability.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "c890b210-0c43-4ffd-abd6-a69a4b7bf2af",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C5",
+      "claim": "Super-resolution imaging can be performed on living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "evidence_reasoning": "The statement assumes and asserts that super-resolution imaging is applicable to living cells, which is both established knowledge and demonstrated in the context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "2c5b7479-9457-4544-8c99-8c8403b283d0",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C6",
+      "claim": "Low radiation doses are desirable for imaging living cells.",
+      "claim_type": "IMPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The emphasis on 'low radiation doses' as a feature implies this is a desirable characteristic, based on established knowledge that high radiation can damage living cells.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "4c9d4cdc-4fd5-4bcb-b582-83f2d66ef428",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C7",
+      "claim": "Faster imaging speed is a desirable characteristic for super-resolution imaging of living cells.",
+      "claim_type": "IMPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The presentation of 'faster' imaging as an advantage implies this is a desirable feature, likely because living cells are dynamic and faster imaging reduces motion artifacts and phototoxicity exposure time.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "9a5a9ff9-b904-40e3-a8c2-982d96de4da8",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "claim_id": "C8",
+      "claim": "The new green fluorescent protein variant represents a technological advancement in super-resolution microscopy.",
+      "claim_type": "IMPLICIT",
+      "source_text": "A new form of green fluorescent protein allows super-resolution imaging to be performed faster on living cells with low radiation doses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The combination of faster imaging and lower radiation doses presented as enabled by this new GFP variant implies it represents an improvement over existing methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "01252f2c-e1cc-4dce-bc44-2d5c563c357f",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C2-C5 assert that a new GFP variant enables faster super-resolution imaging with low radiation doses on living cells. However, the provided text (title and abstract only) contains no experimental data, quantitative measurements, statistical analyses, or methodological details to verify these capabilities. Without access to the actual experimental evidence, controls, comparative benchmarks, or quantification of 'faster' and 'low radiation doses', the support for these claims cannot be assessed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "614a1f27-5d03-404a-8bd4-1c5460ad51dd",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C8 represent broader conclusions that nanoscopy at low light intensities is feasible and represents a technological advancement. These are inferential claims derived from the specific GFP findings (R1), but since the underlying experimental evidence is not provided in the excerpt, the support for these higher-level conclusions cannot be evaluated. The title's phrasing 'shows its potential' suggests preliminary or proof-of-concept work rather than fully validated claims.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    },
+    {
+      "id": "5c612e5c-8c9f-41be-aebe-6ec12e8854c1",
+      "content_id": "aabc53ac-1161-4330-8719-0b07f1defa4d",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C6 and C7 assert that low radiation doses and faster imaging speeds are desirable for live-cell imaging. These are well-established principles in the field based on known phototoxicity effects and the dynamic nature of living cells. These contextual claims rely on general scientific knowledge rather than specific experimental validation and are appropriately supported by the broader literature.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:10:41.820117Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ca8c430-5eb1-4c10-b5a3-1c6f41c72f38",
+      "result_id": "01252f2c-e1cc-4dce-bc44-2d5c563c357f"
+    },
+    {
+      "claim_id": "2a25e41f-cc6c-49cd-a05c-915d4b3482e7",
+      "result_id": "01252f2c-e1cc-4dce-bc44-2d5c563c357f"
+    },
+    {
+      "claim_id": "51af79af-b411-4720-84f9-2f242f2abb23",
+      "result_id": "01252f2c-e1cc-4dce-bc44-2d5c563c357f"
+    },
+    {
+      "claim_id": "c890b210-0c43-4ffd-abd6-a69a4b7bf2af",
+      "result_id": "01252f2c-e1cc-4dce-bc44-2d5c563c357f"
+    },
+    {
+      "claim_id": "4b821fda-424e-4d4c-bf31-e0a603697d0b",
+      "result_id": "614a1f27-5d03-404a-8bd4-1c5460ad51dd"
+    },
+    {
+      "claim_id": "9a5a9ff9-b904-40e3-a8c2-982d96de4da8",
+      "result_id": "614a1f27-5d03-404a-8bd4-1c5460ad51dd"
+    },
+    {
+      "claim_id": "2c5b7479-9457-4544-8c99-8c8403b283d0",
+      "result_id": "5c612e5c-8c9f-41be-aebe-6ec12e8854c1"
+    },
+    {
+      "claim_id": "4c9d4cdc-4fd5-4bcb-b582-83f2d66ef428",
+      "result_id": "5c612e5c-8c9f-41be-aebe-6ec12e8854c1"
+    }
+  ],
+  "comparisons": []
+}

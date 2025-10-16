@@ -1,0 +1,37 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C2-C5 assert that a new GFP variant enables faster super-resolution imaging with low radiation doses on living cells. However, the provided text (title and abstract only) contains no experimental data, quantitative measurements, statistical analyses, or methodological details to verify these capabilities. Without access to the actual experimental evidence, controls, comparative benchmarks, or quantification of 'faster' and 'low radiation doses', the support for these claims cannot be assessed."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C8"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C1 and C8 represent broader conclusions that nanoscopy at low light intensities is feasible and represents a technological advancement. These are inferential claims derived from the specific GFP findings (R1), but since the underlying experimental evidence is not provided in the excerpt, the support for these higher-level conclusions cannot be evaluated. The title's phrasing 'shows its potential' suggests preliminary or proof-of-concept work rather than fully validated claims."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6 and C7 assert that low radiation doses and faster imaging speeds are desirable for live-cell imaging. These are well-established principles in the field based on known phototoxicity effects and the dynamic nature of living cells. These contextual claims rely on general scientific knowledge rather than specific experimental validation and are appropriately supported by the broader literature."
+  }
+]

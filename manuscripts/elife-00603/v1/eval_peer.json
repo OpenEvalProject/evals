@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C106"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly praised the experimental design, stating 'The data look very nice, with physiology-aligned sampling points based on growth phase and nutrient availability.' They noted the dataset is 'excellent and carefully analyzed' and the physiological sampling strategy is 'robust,' indicating acceptance of the experimental approach and data quality claims."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C30",
+      "C31",
+      "C32",
+      "C95",
+      "C96"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers acknowledged Arboretum's capability to 'infer ancestral states at internal nodes across the tree' as 'an important aspect of the approach,' but raised fundamental concerns about its constraint that 'every gene must be assigned to exactly one module.' They noted this 'can lead to problems in the conclusions' and that 'changes of genes from one module to another could potentially be due to small probability shifts of assignment within the algorithm,' requesting additional analysis or discussion of these limitations."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C33",
+      "C34",
+      "C35",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Reviewers directly challenged the five-module classification, stating 'Only five modules are inferred, whereas by eye it is clear from Figures 3 and 4 that there are more than five expression patterns in each species, due to subtle (but likely important) temporal differences.' They criticized that 'Simply defining modules based on \"strong\" versus \"mild\" induction or repression, without subdividing modules by temporal patterns, does not provide a lot of resolution' and questioned 'what do these module groupings really reflect?'"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C23",
+      "C26",
+      "C36",
+      "C38"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers did not explicitly reject claims about module divergence correlating with phylogenetic distance, their concern that 'the method \"over-fits\" the data by classifying genes into discrete bins without saying anything quantitative about the divergence in expression' and that module shifts 'could potentially be due to small probability shifts of assignment within the algorithm' casts doubt on the reliability of these divergence measurements. They requested statistical tests to assess whether observed shifts are significant."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers' concern that 'changes of genes from one module to another could potentially be due to small probability shifts of assignment within the algorithm' directly affects claims about module stability and gene reassignments. Their observation that 'genes in Figure 7C look mildly induced to similar levels in Smik and Sbay, but the middle panel shows that the genes are classified into different modules' suggests that some reported reassignments may be artifacts of the discrete classification rather than biologically meaningful changes."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims about regulatory changes accompanying lifestyle transitions depend on the module reassignment analysis. Given reviewers' concerns about the biological interpretation of modules ('what do these module groupings really reflect?') and the potential for spurious module shifts, the connection between observed module changes and lifestyle adaptations requires more careful interpretation than currently provided."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C25",
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims about paralogs contributing to regulatory divergence are based on module reassignment patterns. Reviewers' concern that module shifts 'could potentially be due to small probability shifts of assignment within the algorithm' and their request for 'a statistical test that would assess whether a shift was significant' indicate uncertainty about whether the observed paralog reassignments represent genuine regulatory divergence or algorithmic artifacts."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The classification of paralog fates (neo-functionalization, sub-functionalization, etc.) depends entirely on module assignments. Given reviewers' concerns about the single-module constraint ('One would canonically expect that most genes have pleiotropic functions, i.e., could easily be part of more than one module') and the lack of statistical significance testing for module shifts, these detailed classifications of paralog evolutionary trajectories are uncertain."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers did not specifically critique the heat shock data, their general concerns about the Arboretum algorithm's limitations apply equally to both glucose depletion and heat shock analyses. Claims that patterns are 'general evolutionary principles' based on similarity between the two conditions inherit the same uncertainties about module assignment reliability and biological interpretation."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not raise concerns about the cis-regulatory analyses (nucleosome positioning, transcription factor binding site enrichment). These claims are based on independent analyses of promoter sequences and chromatin structure data rather than the Arboretum module assignments, and thus are not affected by the reviewers' methodological critiques."
+  }
+]

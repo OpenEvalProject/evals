@@ -1,0 +1,163 @@
+{
+  "submission": {
+    "id": "4ba0df93-37ae-49a1-8d46-7b5965e730c0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:19:07.449486Z",
+    "updated_at": "2025-10-16T22:19:07.449486Z"
+  },
+  "content": [
+    {
+      "id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "submission_id": "4ba0df93-37ae-49a1-8d46-7b5965e730c0",
+      "content_type": "manuscript",
+      "content_text": "# Different routes to the same destination\n\n## Authors\n\n- Kachiko Hayashi<sup>1</sup>\n- Akiko Iwasaki<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Immunobiology Yale University School of Medicine New Haven United States kachiko.hayashi@yale.edu\n2. Department of Immunobiology Yale University School of Medicine New Haven United States akiko.iwasaki@yale.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe toll-like receptors that detect viral DNA and viral RNA in cells take different paths from the endoplasmic reticulum to the endosome.\n",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8978cefa-b57d-47f6-9210-3c8411005811",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "claim_id": "C1",
+      "claim": "Toll-like receptors detect viral DNA in cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The toll-like receptors that detect viral DNA and viral RNA in cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established scientific knowledge about the function of toll-like receptors in innate immunity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "8ef677ce-2da4-41c1-b575-98e50c9a1028",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "claim_id": "C2",
+      "claim": "Toll-like receptors detect viral RNA in cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The toll-like receptors that detect viral DNA and viral RNA in cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established scientific knowledge about the function of toll-like receptors in innate immunity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "8b78da65-f357-40ce-b338-2e85dca3029b",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "claim_id": "C3",
+      "claim": "Toll-like receptors that detect viral DNA take different paths from the endoplasmic reticulum to the endosome compared to those that detect viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The toll-like receptors that detect viral DNA and viral RNA in cells take different paths from the endoplasmic reticulum to the endosome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The abstract presents this as the main finding or topic of discussion, indicating it is based on research findings that would be detailed in the full manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "ea9b15e0-ef40-4cbb-842e-0a3466d98558",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "claim_id": "C4",
+      "claim": "Toll-like receptors traffic from the endoplasmic reticulum to the endosome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The toll-like receptors that detect viral DNA and viral RNA in cells take different paths from the endoplasmic reticulum to the endosome.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This reflects established knowledge about intracellular trafficking of toll-like receptors and is stated as a premise in the abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "f92ec1c8-1715-44e3-8a20-912c2bc5bd61",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "claim_id": "C5",
+      "claim": "Despite taking different trafficking paths, viral DNA-detecting and viral RNA-detecting toll-like receptors reach the same destination (the endosome).",
+      "claim_type": "IMPLICIT",
+      "source_text": "Different routes to the same destination",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title metaphorically indicates that different toll-like receptors use different routes but arrive at the same location, which is explicitly stated as the endosome in the abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "80854732-1e8a-4d19-adcf-2c832ec727fd",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "claim_id": "C6",
+      "claim": "There are multiple distinct trafficking pathways from the endoplasmic reticulum to the endosome for toll-like receptors.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The toll-like receptors that detect viral DNA and viral RNA in cells take different paths from the endoplasmic reticulum to the endosome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement that receptors take 'different paths' logically implies the existence of multiple distinct pathways.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6993eedb-e2d3-42a8-a43b-5a078d44a426",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C3-C6 describe the main finding that DNA- and RNA-detecting TLRs use different trafficking routes from ER to endosome. However, only the abstract is provided without access to experimental data, methods, controls, statistical analyses, or consideration of alternative explanations that would be necessary to evaluate this result. The evidence type is marked as 'INFERENCE' but the underlying experimental support cannot be assessed from the abstract alone.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    },
+    {
+      "id": "fdb3b50f-80cb-4f50-a8a5-18b6d749e090",
+      "content_id": "cf6431dc-a82d-485c-bf4b-e37d2b29d1af",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C2 represent established knowledge about TLR detection of viral nucleic acids. While these are generally accepted in immunology, without access to the full manuscript we cannot verify whether the authors have accurately represented this prior work, cited appropriate sources, or provided the proper context. Critical evaluation requires verification of how prior knowledge is used to support the current work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:19:07.449486Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8b78da65-f357-40ce-b338-2e85dca3029b",
+      "result_id": "6993eedb-e2d3-42a8-a43b-5a078d44a426"
+    },
+    {
+      "claim_id": "ea9b15e0-ef40-4cbb-842e-0a3466d98558",
+      "result_id": "6993eedb-e2d3-42a8-a43b-5a078d44a426"
+    },
+    {
+      "claim_id": "f92ec1c8-1715-44e3-8a20-912c2bc5bd61",
+      "result_id": "6993eedb-e2d3-42a8-a43b-5a078d44a426"
+    },
+    {
+      "claim_id": "80854732-1e8a-4d19-adcf-2c832ec727fd",
+      "result_id": "6993eedb-e2d3-42a8-a43b-5a078d44a426"
+    },
+    {
+      "claim_id": "8978cefa-b57d-47f6-9210-3c8411005811",
+      "result_id": "fdb3b50f-80cb-4f50-a8a5-18b6d749e090"
+    },
+    {
+      "claim_id": "8ef677ce-2da4-41c1-b575-98e50c9a1028",
+      "result_id": "fdb3b50f-80cb-4f50-a8a5-18b6d749e090"
+    }
+  ],
+  "comparisons": []
+}

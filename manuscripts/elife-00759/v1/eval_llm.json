@@ -1,0 +1,123 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C56",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C84",
+      "C94",
+      "C95"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The tracking system is well-documented with clear technical specifications and validated against human labeling (99.6% accuracy on 500 frames). The methodology is reproducible and the system capabilities are demonstrated through successful tracking of 17 groups over extended periods."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Individual behavioral patterns are directly observed from tracking data with clear visual evidence (heat maps, histograms). The power-law distribution of dwell times is a robust statistical finding shown consistently across mice, though the biological interpretation remains descriptive."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C29",
+      "C32",
+      "C59"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The inadequacy of independent and pairwise models is demonstrated through multiple converging lines of evidence: visual comparison of predicted vs. observed distributions, quantitative information-theoretic measures (pairwise information <5%), and maximum entropy modeling showing pairwise models capture only ~57-60% of correlations. The evidence is consistent and compelling."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C33",
+      "C60"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Third-order models are shown to capture 92.8% \u00b1 2.9% of correlations with third-order interactions contributing ~30% of total correlation structure. The quantitative improvement over pairwise models is substantial and consistent across groups. However, the analysis lacks cross-validation or held-out test sets to assess generalization."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C61"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The synergistic information structure is well-quantified: knowing three mice locations provides 25% information about the fourth, more than double the sum of pairwise information. This directly supports the necessity of high-order interactions. The 75% individuality measure provides important context about the balance between social and individual factors."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the mathematical interpretation of model parameters as functional interactions is valid, the biological interpretation is speculative. The claim that negative interactions suggest competition (C39) is explicitly marked as speculation. The sparseness observation (C40) is descriptive but its mechanistic interpretation requires additional validation."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Environmental effects are demonstrated with quantitative differences between SE and CE groups (pairwise contributions 74.6% vs 61.9%, fourth-order 0% vs 6%). However, critical concerns include: (1) sample sizes per condition are not clearly stated but appear small given 17 total groups, (2) no statistical tests with p-values are reported for group comparisons, (3) confounds from housing density (4 vs 16 mice) are not addressed, (4) the developmental manipulation lacks proper controls for social experience vs. environmental complexity."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The temporal dynamics showing progressive socialization in SE but not CE groups is an interesting observation, but the analysis treats time points as independent despite obvious temporal correlations. No statistical tests are provided for the temporal trends, and the interpretation of 'socialization' is somewhat circular given that it's defined by the same correlation measures being analyzed."
+  }
+]

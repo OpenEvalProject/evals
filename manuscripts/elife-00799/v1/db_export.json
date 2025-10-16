@@ -1,0 +1,195 @@
+{
+  "submission": {
+    "id": "4b601976-0675-4fa7-baf2-6c8aa9693a65",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:45:34.493471Z",
+    "updated_at": "2025-10-16T22:45:34.493471Z"
+  },
+  "content": [
+    {
+      "id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "submission_id": "4b601976-0675-4fa7-baf2-6c8aa9693a65",
+      "content_type": "manuscript",
+      "content_text": "# The eLife approach to peer review\n\n## Authors\n\n- Randy Schekman \u2020\n- Fiona Watt\n- Detlef Weigel\n\n\u2020 Corresponding author\n\n## Abstract\n\nAll editorial decisions at eLife are taken by working scientists in a process that emphasizes fairness, speed and transparency.\n",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d198c53d-24ca-404b-b76c-505b872f9226",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C1",
+      "claim": "All editorial decisions at eLife are taken by working scientists.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All editorial decisions at eLife are taken by working scientists in a process that emphasizes fairness, speed and transparency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a direct statement about eLife's editorial process structure, presented as established fact about the journal's operational model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "1943eaa3-0d99-488f-9b33-f5ee3a900804",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C2",
+      "claim": "The editorial decision process at eLife emphasizes fairness.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All editorial decisions at eLife are taken by working scientists in a process that emphasizes fairness, speed and transparency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a direct assertion about one of the core values emphasized in eLife's editorial process.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "5c0612ab-94af-49b2-a601-a44bfe0f6ba1",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C3",
+      "claim": "The editorial decision process at eLife emphasizes speed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All editorial decisions at eLife are taken by working scientists in a process that emphasizes fairness, speed and transparency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a direct assertion about one of the core values emphasized in eLife's editorial process.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "cd66240c-f7f3-4371-ad06-1ad2c30f8cc6",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C4",
+      "claim": "The editorial decision process at eLife emphasizes transparency.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All editorial decisions at eLife are taken by working scientists in a process that emphasizes fairness, speed and transparency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a direct assertion about one of the core values emphasized in eLife's editorial process.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "465df3ef-e449-4cd4-83b2-67b8ba840081",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C5",
+      "claim": "Randy Schekman is the corresponding author of this manuscript.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Randy Schekman \u2020 ... \u2020 Corresponding author",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is explicitly stated in the author list with the corresponding author designation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "a0bc6b08-c9c7-4605-b5f8-ed67ff364b22",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C6",
+      "claim": "Fiona Watt is an author of this manuscript.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Fiona Watt",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is explicitly stated in the author list.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "7ef95f15-7b9e-4130-b8b2-29bb71e6af8f",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C7",
+      "claim": "Detlef Weigel is an author of this manuscript.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Detlef Weigel",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is explicitly stated in the author list.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "ae4d70cf-9fc9-43c3-949d-9e873475baf0",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "claim_id": "C8",
+      "claim": "eLife uses a peer review process.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The eLife approach to peer review",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title indicates that eLife has an approach to peer review, which logically implies that eLife uses peer review as part of its editorial process.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f1b00594-3bf1-48c3-9baa-b8b2d5b98c82",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C5-C7 are metadata about manuscript authorship that are explicitly stated in the author list. These are verifiable structural facts about the document itself and require no additional validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    },
+    {
+      "id": "b9e4807c-b707-4e12-8ba2-18108e857254",
+      "content_id": "ed95fca5-9283-4596-8916-2a0337ccc8e1",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claims C1-C4 and C8 describe eLife's editorial process and its emphasis on fairness, speed, and transparency, but no empirical evidence, metrics, or data are provided to validate these assertions. The manuscript presents these as statements of intent or policy rather than demonstrated outcomes, lacking the quantitative or qualitative evidence needed to support claims about process characteristics.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:45:34.493471Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "465df3ef-e449-4cd4-83b2-67b8ba840081",
+      "result_id": "f1b00594-3bf1-48c3-9baa-b8b2d5b98c82"
+    },
+    {
+      "claim_id": "a0bc6b08-c9c7-4605-b5f8-ed67ff364b22",
+      "result_id": "f1b00594-3bf1-48c3-9baa-b8b2d5b98c82"
+    },
+    {
+      "claim_id": "7ef95f15-7b9e-4130-b8b2-29bb71e6af8f",
+      "result_id": "f1b00594-3bf1-48c3-9baa-b8b2d5b98c82"
+    },
+    {
+      "claim_id": "d198c53d-24ca-404b-b76c-505b872f9226",
+      "result_id": "b9e4807c-b707-4e12-8ba2-18108e857254"
+    },
+    {
+      "claim_id": "1943eaa3-0d99-488f-9b33-f5ee3a900804",
+      "result_id": "b9e4807c-b707-4e12-8ba2-18108e857254"
+    },
+    {
+      "claim_id": "5c0612ab-94af-49b2-a601-a44bfe0f6ba1",
+      "result_id": "b9e4807c-b707-4e12-8ba2-18108e857254"
+    },
+    {
+      "claim_id": "cd66240c-f7f3-4371-ad06-1ad2c30f8cc6",
+      "result_id": "b9e4807c-b707-4e12-8ba2-18108e857254"
+    },
+    {
+      "claim_id": "ae4d70cf-9fc9-43c3-949d-9e873475baf0",
+      "result_id": "b9e4807c-b707-4e12-8ba2-18108e857254"
+    }
+  ],
+  "comparisons": []
+}

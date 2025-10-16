@@ -1,0 +1,2345 @@
+{
+  "submission": {
+    "id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:39:06.699859Z",
+    "updated_at": "2025-10-16T22:39:06.699859Z"
+  },
+  "content": [
+    {
+      "id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "content_type": "manuscript",
+      "content_text": "# TRiC\u2019s tricks inhibit huntingtin aggregation\n\n## Authors\n\n- Sarah H Shahmoradian<sup>1</sup>\n- Jesus G Galaz-Montoya<sup>2</sup>\n- Michael F Schmid<sup>2</sup>\n- Yao Cong<sup>2</sup>\n- Boxue Ma<sup>2</sup>\n- Christoph Spiess<sup>3</sup>\n- Judith Frydman<sup>3</sup>\n- Steven J Ludtke<sup>2</sup>\n- Wah Chiu<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Physiology and Biophysics Baylor College of Medicine Houston United States\n2. National Center for Macromolecular Imaging, and the Verna and Marrs McLean Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States\n3. Department of Biology Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00710.001 In Huntington\u2019s disease, a mutated version of the huntingtin protein leads to cell death. Mutant huntingtin is known to aggregate, a process that can be inhibited by the eukaryotic chaperonin TRiC (TCP1-ring complex) in vitro and in vivo. A structural understanding of the genesis of aggregates and their modulation by cellular chaperones could facilitate the development of therapies but has been hindered by the heterogeneity of amyloid aggregates. Using cryo-electron microscopy (cryoEM) and single particle cryo-electron tomography (SPT) we characterize the growth of fibrillar aggregates of mutant huntingtin exon 1 containing an expanded polyglutamine tract with 51 residues (mhttQ51), and resolve 3-D structures of the chaperonin TRiC interacting with mhttQ51. We find that TRiC caps mhttQ51 fibril tips via the apical domains of its subunits, and also encapsulates smaller mhtt oligomers within its chamber. These two complementary mechanisms provide a structural description for TRiC\u2019s inhibition of mhttQ51 aggregation in vitro. DOI: http://dx.doi.org/10.7554/eLife.00710.001\n\n## Introduction\n\nThe presence of huntingtin aggregates in the brain correlates strongly with functional deficits in individuals with Huntington\u2019s disease (HD) (DiFiglia et al., 1997). These aggregates originate from a mutation in the huntingtin gene that causes an expansion of glutamine (Q) repeats in the huntingtin protein (Zoghbi and Orr, 2009). This polyglutamine expansion (Q>36) contributes to mutant huntingtin\u2019s (mhtt) tendency to aggregate within the cell (Nekooki-Machida et al., 2009). Variants of mhtt exon1 containing an expanded polyglutamine (polyQ) tract greater than 36 residues are commonly used as models to investigate mutant huntingtin\u2019s properties in vitro and in vivo. Understanding how polyQ aggregation is modulated by cellular factors, including molecular chaperones, might lead to therapeutic strategies to treat polyQ pathogenesis. Some chaperones, such as the eukaryotic chaperonin TRiC, are key regulators of protein aggregation (Muchowski and Wacker, 2005; Liebman and Meredith, 2010; Voisine et al., 2010). In fact, TRiC modulates and suppresses polyglutamine aggregation, including that of mhtt variants having polyQ tracts of different length. TRiCs inhibition of mhtt aggregation has been biochemically characterized for several variants both in vitro and in vivo (Kitamura et al., 2006; Tam et al., 2006).\n\nTRiC is a \u223c1 MDa double-ring complex that interacts with \u223c10% of all cytosolic proteins and is stringently required for the proper folding of many essential proteins (Yam et al., 2008). TRiC can assume different conformations in different biochemical states (Cong et al., 2012) and can bind substrates like actin and tubulin through different sites, either at its apical tips, which are conformationally flexible in the apo state (Llorca et al., 1999), or inside the chamber (Dekker et al., 2011; Mu\u00f1oz et al., 2011). TRiC\u2019s interactions with polyQ aggregates are also likely to be variable, as seen with other chaperone/substrate complexes (Kim et al., 2002).\n\nThere is no existing structural model for how TRiC suppresses mhtt aggregation, and most structural biology techniques are not suited to characterize conformationally heterogeneous specimens such as mhtt aggregates in complex with TRiC. However, cryo-electron microscopy (cryoEM) can preserve specimens in close-to-solution conformations because the samples remain frozen-hydrated without chemical fixation or staining during the entire microscopy session (Dubochet et al., 1988). Additionally, cryo-electron tomography (cryoET) allows for visualization of entire protein aggregates in 3-D. Furthermore, 3-D subtomogram processing approaches (Walz et al., 1997; B\u00f6hm et al., 2000; Bartesaghi et al., 2008; F\u00f6rster et al., 2008; Schmid and Booth, 2008), also known as single particle tomography (SPT), have facilitated the determination of the structure of heterogeneous specimens by classifying and averaging subvolumes containing a 3-D view of individual macromolecular complexes, potentially with different conformations and compositions. Indeed, SPT is an emerging technique in structural biology that can resolve the structure of heterogeneous macromolecular complexes at nanometer resolution.\n\n## Results\n\n## Mutant huntingtin aggregates display different morphologies in the absence and presence of TRiC\n\nWe imaged mhtt exon1 containing 51 glutamine repeats (mhttQ51) (\u2018Materials and methods\u2019 under \u2018In vitro GST-Q51 aggregation assay\u2019) using 2-D cryoEM (\u2018Materials and methods\u2019 under \u2018Cryo electron microscopy\u2019) to assess the progression of its aggregation over time and how TRiC affects it (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig1-v1.jpg)\n\n**Figure 1.:** 2-D cryoEM images of (A) mhttQ51 at 45 min, (B) 4 hr, and (C) 24 hr post-initiation of aggregation (PIA), and of mhttQ51 incubated with TRiC and imaged at (D) 45 min (E) 4 hr and (F) 24 hr PIA. (G, H) Higher magnification images of mhttQ51 + TRiC at 4 hr PIA. Some TRiCs are seemingly attached to mhtt fibrils (red boxes), while others are seemingly freestanding (blue boxes).DOI: http://dx.doi.org/10.7554/eLife.00710.003\n\nAt 45 min post-initiation of aggregation (PIA) in the absence of TRiC, we see a few isolated mhttQ51 fibrils (Figure 1A). Even at early time points, mhttQ51 fibers exhibit extensive heterogeneity, varying both in length and width, with the tips appearing more tapered than the bulk of the fiber. By a process that is not yet fully understood, thin fibrils progress to form thicker fibers, and eventually form branched-out aggregates or \u2018sheaves\u2019 with a dense central core by 4 hr PIA (Figure 1B). At longer incubation times, we observe a dramatic increase in the number and thickness of such sheaves, characterized as large fiber bundles densely packed in their central regions and splayed out at both ends. The number of sheaves and their thickness appears to plateau at 24 hr PIA (Figure 1C).\n\nOn the other hand, in the presence of TRiC, not even thin mhttQ51 fibrils are visible at early time points (45 min PIA; Figure 1D). At 4 hr and 24 hr PIA (Figure 1E,F), sparse fibrils and a few small sheaves are present, but there are no aggregates as large as those seen in the absence of TRiC at the same time points (Figure 1B,C). TRiC does not completely decorate mhttQ51 fibrils, but rather binds at discrete locations, which are often discernible fibril tips (Figure 1G\u2013H). In a 2-D cryoEM image, the entire volume of the actual specimen is projected onto a plane; therefore, some TRiCs seemingly close to a fibril in 2-D might be floating above or below it and not bound at all. Since 2-D cryoEM images cannot unambiguously show whether TRiC is directly bound to mhttQ5, we performed cryoET experiments.\n\nWe collected and reconstructed 20 tilt series of mhttQ51 incubated with TRiC at 4 hr PIA (\u2018Materials and methods\u2019 under \u2018Cryo electron tomography and tomogram annotation\u2019). We also reconstructed tilt series of TRiC in the absence of mhttQ51 as a control.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig2-v1.jpg)\n\n**Figure 2.:** (A) 2-D slice through a tomogram of TRiC incubated with mhttQ51 imaged at 4 hr post initiation of aggregation. (B) 2-D reprojection of the entire tomogram and (C) 3-D annotation of its features, showing mhtt fibrils in yellow, freestanding TRiCs in blue, and fibril-bound TRiCs in magenta. Zoomed-in field shows fibril-bound TRiC localizing mostly to discernible tips of mhtt fibrils (seemingly detached magenta TRiC is attached to a fibril on another z-slice of the tomogram).DOI: http://dx.doi.org/10.7554/eLife.00710.004\n\nIn both our 2-D images (Figure 1G\u2013H) and 3-D tomograms (Figure 2, Video 1), we identified two distinct populations of particles similar in size and shape to TRiC. Particles in one population seem to be attached to mhttQ51 fibrils (\u2018fibril-bound TRiC\u2019), while those in the other do not (\u2018freestanding TRiC\u2019).\n\nTo circumvent some of the difficulties presented by the structural heterogeneity of our specimens and to improve the resolvability of features, we extracted subtomograms from the fibril-bound and freestanding TRiC populations and processed them separately to obtain 3-D averages. We developed new algorithms recently available in EMAN2 (http://blake.bcm.edu/emanwiki/SPT/Spt) and used them for all our SPT processing.\n\n## Analysis of fibril-bound TRiC suggests an end-on interaction with mhttQ51 fibrils\n\nGiven TRiC\u2019s aggressive inhibitory effect on mhtt aggregation and the tendency of mhtt aggregates to localize to the carbon instead of the ice in cryoEM grid holes, finding sizable fibrillar aggregates in complex with TRiC proved challenging. We processed a total of 326 fibril-bound TRiC subvolumes extracted from our tomograms using a completely bias-free subvolume alignment and averaging strategy (\u2018Materials and methods\u2019 under \u2018Single particle tomography [SPT]\u2019). This represented about one quarter of 1216 TRiC subvolumes extracted from all our mhtt-TRiC tomograms combined.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig3-v1.jpg)\n\n**Figure 3.:** SPT symmetry-free and model-free averages of fibril-bound TRiC reveal extra density at the chaperonin\u2019s apical tips. Each panel shows an end-on and a side view isosurface for a 3-D average of TRiC in complex with mhttQ51 fibrils, and corresponding 2-D projections (black/white). Independent sets from single tomograms are labeled A, B, C, D and E. Within each, the numbering (i, ii and iii) indicates mutually exclusive averages. The numbers of subvolumes contributing to each average are (A.i.) 7, (A.ii.) 10, (A.iii.) 13, (B.i.) 7, (B.ii.) 10, (B.iii.) 5, (C) 12, (D) 8 and (E) 12. All the averages show overall TRiC-like morphology with extra densities protruding beyond the apical domains of the chaperonin.DOI: http://dx.doi.org/10.7554/eLife.00710.006\n\n## Analysis of freestanding TRiC shows extra density within its central chamber\n\nWe also sought to understand whether, and how, freestanding TRiC might interact with smaller mhttQ51 oligomers. We extracted a total of 890 freestanding TRiC subvolumes from our tomograms and performed SPT (i.e., subvolume alignment, classification, and averaging). These were about three quarters of the 1216 TRiC subvolumes extracted from all our mhtt-TRiC tomograms combined. When processing the subvolumes from each tomogram separately, SPT averages were consistent with the results from the combined data set, indicating a high level of self-consistency in the results. Our statistical analyses (\u2018Materials and methods\u2019 under \u2018Criteria to discriminate between cavity-empty and cavity-occupied freestanding TRIC\u2019,\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig4-v1.jpg)\n\n**Figure 4.:** (A) Ranked correlation scores for freestanding TRiCs against a hollow TRiC reference yield a continuous fast-decaying plot, suggesting structural heterogeneity. (B) Mean-density distributions for cavity-empty TRiC (blue) and cavity-occupied TRiC (green) sets, masking the particles to (i) include all the density in each particle, (ii) include the cavity of each molecule only, and (iii) include TRiC density but exclude the cavity. Corresponding t-scores for the difference (or shift) between the blue and green distributions are shown for each masking condition.DOI: http://dx.doi.org/10.7554/eLife.00710.007\n\nThe final cavity-empty TRiC average from the combined dataset highly resembles apo-TRiC and was produced using the same bias-free approach applied to fibril-bound TRiC (\u2018Materials and methods\u2019 under \u2018Single particle tomography [SPT]\u2019). The average is pseudo eightfold symmetrical, barrel-shaped, and hollow (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig5-v1.jpg)\n\n**Figure 5.:** SPT symmetry-free and template-free processing of freestanding TRiC demonstrates pseudo-eightfold symmetry in an average of (A) 356 cavity-empty TRiCs and (B) 356 cavity-occupied TRiCs. 2-D projections for each average are shown in black/white. The plots show volumetric rotational correlation analyses to test for C8 (blue) and D8 (green) symmetry in each average. The cavity size in B is significantly reduced, due to internalized density.DOI: http://dx.doi.org/10.7554/eLife.00710.008\n\nApplying the same bias-free approach to the cavity-occupied TRiC set (also about one third of the entire 1216 TRiC subvolumes) produced an average with significant extra density lining the interior of the chaperonin\u2019s cavity, attributable to a poorly localized substrate (Figure 5B).\n\nIn order to validate our results for freestanding TRiC in the presence of mhtt, we performed control experiments using TRiC in the absence of mhtt (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig6-v1.jpg)\n\n**Figure 6.:** End-on and cut-away views for (A) the published cryoEM structure of apo-TRiC (EMDB 1960), low-pass filtered to match the resolution of freestanding TRiCs, and (B) model-free SPT TRiC average of 208 subvolumes from TRiC-only tomograms or \u2018control TRiC\u2019 (no mhtt added). Corresponding projections for the control are shown.DOI: http://dx.doi.org/10.7554/eLife.00710.009\n\nComputing the Fourier shell correlation (FSC) between the cavity-empty and cavity-occupied TRiC averages gives a value of \u223c52 \u00c5 using the FSC = 0.333 threshold. As these maps are not expected to be identical, this test gives a measure of self-consistency and provides the minimum resolution achieved in the two maps independently. This threshold is appropriate when the two maps are being compared, but not averaged, as a 0.5 threshold is appropriate when a map is being compared to a high-resolution reference (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig7-v1.jpg)\n\n**Figure 7.:** FSC of cavity-empty TRiC (maroon) and cavity-occupied TRiC (blue) with the published structure of apo-TRiC. The FSC of cavity-empty TRiC with cavity-occupied TRiC is shown in green.DOI: http://dx.doi.org/10.7554/eLife.00710.010\n\nTo further localize the interior density in the cavity-occupied TRiC data set, we adopted a hollow-template-guided alignment strategy (\u2018Materials and methods\u2019 under \u2018Localization of density within cavity-occupied TRiC SPT average\u2019). This additional analysis results in a TRiC average with a large density asymmetrically located within the cavity (\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig8-v1.jpg)\n\n**Figure 8.:** (A) Hollow-template-guided average of 356 cavity-occupied TRiCs, 2-D projections (black/white) and rotational correlation analysis to test for C8 (blue) and D8 (green) symmetry, showing a \u2018dip\u2019 in self-correlation at azimuth equal to 180\u00b0 due to the presence of localized inner mass. (B) End-on (left) and cut-away side (right) views of the superimposition of the cavity-empty TRiC average (blue wire) from Figure 5A, and the difference map (yellow) between it and the cavity-occupied average in (A).DOI: http://dx.doi.org/10.7554/eLife.00710.011\n\n## Discussion\n\nOur study of mhtt fibrillogenesis in the absence and presence of TRiC provides new insights into how this chaperonin inhibits mhttQ51 aggregation. Our aggregation and suppression of aggregation reactions followed well characterized conditions, previously described using filter trap assays that detect mhttQ51 amyloid aggregates (Tam et al., 2006). The mhtt concentration in our experiments was chosen to allow mhtt aggregation to occur in a reasonably short time in the absence of TRiC (Scherzinger et al., 1999), and the ratio of TRiC to mhtt was chosen to yield initial-stage fibril aggregates and yet thwart large-aggregate growth (Behrends et al., 2006). It is worth noting however that the TRiC:mhtt ratio under normal physiological conditions has not been carefully explored. Nonetheless, increasing cellular levels of TRiC has a beneficial effect in suppressing mhtt toxicity and aggregation (Behrends et al., 2006; Kitamura et al., 2006; Tam et al., 2006).\n\nIn our 2-D cryoEM images, the formation of groups of sheaves as seen in Figure 1C could correspond to the large inclusions observed in cells expressing mhtt. On the other hand, the smaller aggregates (Figures 1E,F and 3), which are not detectable by filter-trap assays, could correspond to the multiple, smaller foci seen in cells overexpressing TRiC or some of its subunits (Behrends et al., 2006; Tam et al., 2006). Importantly, overexpression of TRiC is known to suppress mhtt toxicity in a variety of systems (Behrends et al., 2006; Kitamura et al., 2006; Tam et al., 2006) and thus our observations provide a structural basis for the observed effect of TRiC.\n\nWe envision the progression of mhttQ51 aggregation as a process whereby, after the nucleation stage, small and thin irregular fibrils with exposed hydrophobic moieties (\u2018fibril tips\u2019) drive the growth of the aggregates into large sheaves. TRiC is known to bind hydrophobic motifs via its apical substrate-binding domains (Spiess et al., 2006), and has also been shown to crosslink with the N-terminal N17 motif of mhtt, which drives mhtt oligomerization (Tam et al., 2009). It is therefore likely that the binding we demonstrate here between mhttQ51 fibrils and TRiC (Figures 1\u20133), which thwarts the progression of fibers into sheaves, may involve mhttQ51 hydrophobic moieties that include the N17 domain. Interestingly, this domain has been proposed to function as a \u2018molecular switch\u2019 (Greiner and Yang, 2011) controlled by multiple post-translational modifications that can determine the fate of mhtt exon-1 either by rendering it innocuous or enhancing its pathogenicity. By virtue of its interaction with the N17 domain, TRiC might provide a protective effect against deleterious post-translational modifications.\n\nAlthough we do not observe a unique structure for fibril-bound TRiC, we demonstrate that TRiC binds mhtt fibrils via its apical tips to cap them. This fibril-capping mechanism could explain why inhibition of aggregation is observed in vitro at substoichiometric ratios of TRiC to mhtt. It may also explain why mhtt aggregates look different in vivo when TRiC is overexpressed, and become SDS soluble (Tam et al., 2006).\n\nIt is conceivable that TRiC might bind fibrils through one of its ends while the binding sites at the other end remain available to snatch mhttQ51 oligomers lurking in their proximity. On the other hand, internalization of smaller mhttQ51 oligomers would also contribute to inhibition of sheaf formation by decreasing the effective concentration of oligomers in the reaction mixture. Our freestanding TRiC averages, free from template and symmetry bias (Figure 5), reveal a subpopulation with extra density inside the chaperonin\u2019s cavity. Although other substrates have also been shown to bind deep inside the cavity of apo-TRiC (Mu\u00f1oz et al., 2011), the finding that mhtt exon-1 might also be encapsulated is unprecedented. While it is conceivable for native substrates to be copurified with apo-TRiC, their presence within the chaperonin\u2019s cavity is rare. For instance, our controls show that extra density is only detectable in \u223c10% of the particles in the absence of added mhtt. On the other hand, we see significant extra density in \u223c40\u201350% of the freestanding TRiC particles from our TRiC + mhtt tomograms. Furthermore, previous studies have demonstrated that TRiC does not bind GST (Feldman et al., 2003). Therefore, it is unlikely that either native substrates or the GST moiety that is cleaved from mhttQ51 to initiate aggregation could account for the internalized mass we observe (Figures 5B and 8). Rather, this density likely represents mhtt.\n\nGiven the modest resolution of our cavity-occupied average, it is challenging to measure the encapsulated mass. However, our estimates suggest an average size of \u223c60 kDa (\u2018Materials and methods\u2019 under \u2018Estimation of the size of mhttQ51 oligomers encapsulated by TRiC\u2019), which would correspond to an oligomer of about six mhttQ51 exon1 monomers. The mhttQ51 oligomers that might be encapsulated by TRiC could be analogous to precursor forms of the 100\u2013230 kDa toxic oligomers previously reported (Behrends et al., 2006). Furthermore, it is possible that the extra density we see inside TRiC (Figures 5B and 8) corresponds to an average of encapsulated mhtt oligomers of different sizes and conformations.\n\nWhile previous biochemical studies showed the inhibitory effect of TRiC on mhttQ51 aggregation, the structural basis of this process was not explained. The compositional and conformational heterogeneity of such a specimen precludes resolving nanometer resolution structures from it with any technique in structural biology other than SPT. Indeed, our approach demonstrates TRiC\u2019s association with mhttQ51 fibrillar aggregates, and our results suggest TRiC might also sequester small mhttQ51 oligomers to effectively inhibit mhtt aggregation (\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00710/elife-00710-fig9-v1.jpg)\n\n**Figure 9.:** In the absence of TRiC (top row), mhttQ51 (orange) aggregation progresses from monomers and oligomers into fibrils and large sheaves. On the other hand, the presence of TRiC (bottom row) prevents the progression of mhtt fibrils into the large bundled \u2018sheaf\u2019 form by capping (purple) fibril tips and encapsulating (blue) mhtt oligomers. TRiCs that are not bound to mhtt are shown in gray.DOI: http://dx.doi.org/10.7554/eLife.00710.012\n\nWhile our observation that TRiC can bind substrates via its apical domains is consistent with the current understanding of TRiC\u2013substrate interactions, our data is unprecedented in demonstrating the direct binding of fibrils (a substrate too large to be internalized). The suggestion that TRiC might cap fibril growth as well as internalize smaller oligomers indicates a broad scope for this chaperonin\u2019s action on protein aggregates. The ability of TRiC to recognize and handle both types of proposed mhtt toxic species observed in Huntington\u2019s disease (DiFiglia et al., 1997; Arrasate and Finkbeiner, 2011; Nucifora et al., 2012), namely oligomers and fibrillar aggregates, could account for the reduced toxicity of mhtQ51 and other mhtt species when TRiC is overexpressed in cells (Behrends et al., 2006; Tam et al., 2006). TRiC\u2019s interaction with mhtt aggregates might render them more amenable to processing by cellular pathways of quality control, such as autophagy and proteolytic degradation by the proteasome (Sarkar et al., 2009).\n\nSince mhtt oligomers and fibrillar aggregates are strongly implicated in the pathogenesis of Huntington\u2019s disease (Sathasivam et al., 2010), the interactions that we describe between TRiC and mhttQ51 provide a structural mechanism for the chaperonin\u2019s aggressive inhibition of mhtt aggregation in vitro and suggest a potential for TRiC-inspired therapeutics (Sontag et al., 2013).\n\n## Materials and methods\n\n## In vitro GST-Q51 aggregation assay\n\nAggregation of GST-huntingtin exon 1 fusion proteins with 51 glutamine repeats (GST-mhttQ51) at a concentration of 6 \u00b5M was initiated in vitro by adding AcTEV protease (Invitrogen), both alone and in presence of 1.2 \u00b5M TRiC at a t = 0 hr (Tam et al., 2006) in TEV Buffer (Invitrogen, Grand Island, NY). Samples were subjected to spin-column equilibration using Bio-Spin Columns with Bio-Gel P-30 (Bio-Rad). Samples were incubated at 30\u00b0C and aliquots vitrified at t= 0 hr, 0.75 hr, 4 hr, and 24 hr.\n\n## Cryo electron microscopy\n\nAll aliquots were applied to 200-mesh holey carbon Quantifoil copper grids (rinsed in PBS, Biological Industries) and plunge-frozen into liquid ethane at liquid nitrogen temperature (unfixed, unstained), as described (Dubochet et al., 1988). 2-D images were collected using the standard minimum dose system on a 200KV JEOL electron microscope (JEM 2100, LaB6 gun), with a sampling of 2.86 \u00c5/pixel, a target underfocus of 4 \u03bcm and a total dose of \u223c20 e/\u00c52.\n\n## Cryo electron tomography and tomogram annotation\n\nWe collected 20 tilt series of mhttQ51 + TRiC at t = 4 hr using SerialEM (Mastronarde, 2005) on a JEM2100 electron microscope equipped with a LaB6 gun operating at 200 kV, from \u221260\u00b0 to 60\u00b0, at 2\u00b0 increments, target underfocus of 5 \u03bcm, sampling of 4.4 \u00c5/pixel and a cumulative dose of \u223c62 e/\u00c52. 6 of the 20 tilt series appeared appropriate for tomographic reconstruction and were reconstructed into tomograms using IMOD (Kremer et al., 1996). The 14 unused tilt series either displayed charging, thick ice, or suboptimal sample distribution. MhttQ51 fibrils were annotated in yellow, while fibril-bound TRiC were annotated in magenta and freestanding TRiC in blue using AVIZO 6.1 software (Visage Imaging GmbH) (Figure 2C).\n\n## Single particle tomography (SPT)\n\nAll SPT processing and averaging was done with subtomograms extracted from the original raw tomograms (unbinned) using e2spt_boxer.py in EMAN2 (Tang et al., 2007). To avoid missing wedge bias, we used cross-correlation map normalization (Schmid and Booth, 2008). Our bias-free subtomogram processing uses unsupervised hierarchical ascendant classification and averaging (HAC), a technique involving pairwise alignment of sub-tomograms and clustering based on similarity (Bartesaghi et al., 2008; F\u00f6rster et al., 2008; Schmid and Booth, 2008), without the aid of a reference and without imposing symmetry at any point. For fibril-bound TRiC, we visually inspected the new averages generated in each iteration to find representative examples of structures with extra density at the ends of the chaperonin (Figure 3). For each freestanding TRiC population (cavity-empty and cavity-occupied) as well as control TRiCs, we allowed HAC to converge to one final average of all the particles (Figure 5A,B). We noticed significant but poorly localized extra density inside the chamber of the cavity-occupied population.\n\n## Criteria to discriminate between cavity-empty and cavity-occupied freestanding TRIC\n\nWe tested our hypothesis that some freestanding TRiCs might be empty while others might contain mhttQ51 oligomers by aligning the particles against a hollow D8 symmetrical apo-TRiC reference (Booth et al., 2008) and ranking them according to their correlation with it. Cavity-empty TRiCs would have a higher correlation to the hollow reference than cavity-occupied ones. Indeed, our classification method separated freestanding TRiCs into two groups, and our statistical analyses show that the difference in mass within the cavity between the groups is significant (Figure 4B).\n\nWhen processing the subvolumes in each tomogram, we divided the set into two halves: TRiCs with highest correlation against the reference or \u2018cavity-empty group\u2019, and TRiCs with lowest correlation against the reference or \u2018cavity-occupied group\u2019. Indeed, the average of the first group was a hollow apo-TRiC-like structure, while the average from the second showed a large but poorly localized mass within the chaperonin\u2019s cavity.\n\nThe larger set from grouping the freestanding TRiC subtomograms from all our tomograms (890 subtomograms) allowed for a more scrupulous classification, although there is no clear \u2018cutoff\u2019 in the plot of ranked correlation coefficients from aligning the particles against the D8 TRiC reference (Figure 4A). To discriminate between cavity-empty and cavity-occupied TRiC, we divided the ranked subtomograms into quintiles (subsets of 178) and averaged the particles in each quintile. The average from each of the two highest quintiles had an empty cavity, while the cavity for each average from the two lowest quintiles contained a large density. The average from the middle quintile was neither clearly empty nor significantly occupied; therefore, we did not subject those subtomograms to further analysis. We made a final cavity-empty set from the two top quintiles and a final cavity-occupied set from the two bottom quintiles, each with 356 subtomograms. That is, each freestanding set (cavity-empty and cavity-occupied) was comprised of 40% of all freestanding TRiCs. In the context of all TRiC subvolumes extracted, each of these sets represented about one third of all particles picked (i.e., 356 of 1216).\n\nWe tested the statistical significance of our classification by performing t-tests on histograms (Figure 4B) that compared the mean density distribution of the cavity-empty group against that of the cavity-occupied group under three separate masking conditions, to examine the density variations across different regions of the subvolumes. The first mask included all the density in each subvolume (mask A), the second mask included only the density in each particle\u2019s cavity (mask B), and the third mask was the difference between the first two masks, thus corresponding to TRiC\u2019s density in each subvolume (mask C). For each masking condition, we plotted the mean density distribution of each set (cavity-empty and cavity-occupied) as separate histograms in one plot.\n\nThe displacement between the cavity-empty and the cavity-occupied histograms using mask A is statistically significant beyond a 99.9% confidence interval (CI), according to its t-value. This means that the cavity-empty particles are significantly different from the cavity-occupied particles when the entire density in the subvolumes is considered. The displacement between the histograms using mask B is also statistically significant beyond a 99.9% confidence interval (CI), and the difference is much larger according to the t-value. This means that the difference between the particles in each group is very large when only the cavity is considered. Lastly, there was no significant displacement between the histograms using mask C, as confirmed by its low t-value, far below the 95% CI value. This means that when the cavity is excluded, the particles in each group are not significantly different. Therefore, our analyses show that the statistically significant differences between the cavity-empty and cavity-occupied TRiC sets are due to the central chamber of the chaperonin rather than the chaperonin itself. This validated our classification and justified further processing the cavity-empty group independently from the cavity-occupied one.\n\n## Assessment of the quality of bias-free freestanding TRiC averages\n\nTRiC has eight highly similar subunits; therefore, if the densities from our tomograms picked as TRiC were in fact TRiC and our methodology averaged them correctly, our maps would display pseudo-eightfold symmetry. Indeed, our rotational correlation plots on the template-free and symmetry-free TRiC averages reveal the presence of pseudo-eightfold symmetry in them (Figure 5). We assessed the resolution of the cavity-empty structure as 46 \u00c5 by computing an FSC with the apo-TRiC map (Cong et al., 2012) using the FSC = 0.5 threshold, as is appropriate when comparing a map to a much higher resolution structure, as formulated previously (Rosenthal and Henderson, 2003) (Figure 7).\n\n## Localization of density within cavity-occupied TRiC SPT average\n\nBecause TRiC\u2019s eight subunits differ the most in their apical tips and their C-termini within the cavity, both containing substrate-binding sites, it is unlikely that any internalized oligomers would bind to all subunits uniformly or line up TRiC\u2019s cavity (Figure 5B). Therefore, we applied a hollow-template-guided approach to further localize the inner mass within the chamber of the cavity-occupied TRiC average. This consisted of aligning the raw cavity-occupied TRiCs to a hollow D8 symmetric apo-TRiC reference (Booth et al., 2008) to generate an initial average. We then seeded iterative refinement of the raw subtomograms using this initial average. During all the iterations, the particles were masked to include only the cavity and were allowed only to visit D8 related orientations. Since the first round of alignment was against the D8 reference, restricting subsequent iterations to visit D8-related positions preserved the initial alignment of the particles against the reference while allowing the internal density to converge within the frame of TRiC after 17 iterations. While this procedure localized the internalized density in our cavity-occupied average, it had little effect on the cavity of the cavity-empty set. Of note, the \u2018dip\u2019 in the overall shape of the rotational correlation plot for the cavity-occupied average with the localized density can be explained by the presence of a large mass inside (Figure 8A). Applying the same classification and processing strategy to fibril-bound and control TRiCs as applied to freestanding TRiC did not yield any averages with comparable density inside the cavity.\n\n## Estimation of the size of mhttQ51 oligomers encapsulated by TRiC\n\nThe normalized cavity-occupied (Figure 8A) and cavity-empty (Figure 5A) TRiC averages were aligned to one another, and the power spectrum of one structure was filtered to match that of the other. Then, the cavity-empty average was subtracted from the cavity-occupied average to generate a difference map (Figure 8B).\n\nWe estimated the mass of the mhttQ51 density internalized by TRiC using three different methods. First, we applied a mask to our final cavity-empty average (Figure 5A) that included the TRiC density only, thus excluding the cavity. We calculated the mean density inside this mask and multiplied this value by the volume of the mask. This yielded the final total mass of TRiC (without the cavity) in arbitrary units. Then we applied a mask to the difference map between the final cavity-empty average (Figure 5A) and the final cavity-occupied average (Figure 8A) that would include the region of the cavity only. We also computed the total mass within this mask, in arbitrary units. Using the actual mass of TRiC (\u223c950 kDa) to scale the masses in arbitrary units, we estimated the mass of the density in the cavity to be \u223c55 kDa.\n\nFor our second method of estimation, we first averaged the density values of the histograms in Figure 4B(iii). These histograms correspond to the density distribution of TRiC particles when the cavity is excluded, and therefore the average value in arbitrary units is proportional to TRiC\u2019s mass. On the other hand, the histograms in Figure 4B(ii) correspond to the density distribution within the cavity of TRiC particles. The average density of the histogram from the cavity-empty group (blue) was considered to be \u2018background\u2019, in arbitrary units. Therefore, we subtracted this value from the average of the cavity-occupied histogram (green). This final value for average density in the cavity region in arbitrary units should be proportional to the average mass of encapsulated oligomers. Knowing the actual mass of TRiC (\u223c950 kDa) allowed for the scaling of masses in arbitrary units, yielding a value of \u223c65 kDa for the mass within the cavity. Taken together, our two estimates indicate an average size of \u223c60 kDa for mhttQ51 oligomers encapsulated by TRiC.\n\nFinally, in the rotational correlation plots for the cavity-empty average (Figure 5A) and the cavity-occupied average before the substrate was localized (Figure 5B), the seven peaks in correlation (excluding the first peak) have a somewhat uniform height. On the other hand, the plot dips at azimuth equal to 180\u00b0 for the cavity-occupied average (Figure 8A). The first peak is bound to be higher in any rotational correlation plot because self-correlation will always be at its maximum when no rotations have occurred (all voxels in the volume correlate well; even those beyond the molecule but within the box). The difference in height (or correlation) between the next two highest peaks (two and eight) with the middle peak (five) in the rotational correlation plot of the cavity-occupied average arises from the mass of the encapsulated density: when the mass coincides perfectly with its copy, there is high correlation; when it is in opposite alignment to itself, the correlation dips. Therefore, using the mass of TRiC (\u223c950 kDa) to scale this difference indicates a substrate size of \u223c50 kDA. This is slightly underestimated, since the difference would ideally be calculated between the first and the middle peaks, but the first peak is unusable due to the perfect correlation of all voxels at the default position before any rotations occur.\n\n## Accession numbers\n\nThe Electron Microscopy Data Bank accession numbers for the TRiC-mhttQ51 structures reported in this paper are as follows: For the cavity-empty TRiC average as shown in Figure 5A, the EMDB accession number is EMD-5531. For the cavity-occupied TRiC average as shown in Figure 8A, the EMDB accession number is EMD-5530. For two of the fibril-bound TRiC averages shown in Figure 3A, the EMDB accession numbers are EMD-5532 and EMD-5533.\n",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Werner K\u00fchlbrandt, Max Planck Institute for Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00710.013](https://doi.org/10.7554/eLife.00710.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTRiC\u2019s Tricks Inhibit Huntingtin Aggregation\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Werner K\u00fchlbrandt, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nSubstantive concerns:\n\n1) Although the authors state that the in vitro conditions employed in this work resemble those in vivo, it is not evident that a 1:5 molar ratio of TRiC to mhtt can be physiological, even if TRiC is one of the most abundant chaperonins in the cell. What would be typical in vivo levels of TRiC or mhtt? Please elaborate.\n\n2) The number of glutamine residues in the pathogenic huntingtin exon 1 is typically 51\u201383. Which form is most abundant in cells? Why was the form with the lowest pathogenic Q frequency used? Is this form typical under physiological conditions?\n\n3) One of the most interesting findings in the study is that a large portion of TRiC decorates the tip of the Htt fibril (instead of uniformly labeling the fibril). The implications of this finding in the context of mHtt fibril formation remain unclear.\n\n4) TRiC was found at discrete locations along the fibrils. Can it be that many of the interactions between the TRiC and the fibrils were lost during sample preparation? How frequently was TRiC found at fibril ends and how many along fibrils? What was the ratio between free fibril ends/TRiC capped ends? Please provide some statistics.\n\n5) After incubation with huntingtin, what proportion of TRiC was not interacting with the fibrils? Did these \u201cunbound\u201d complexes contain protein in their cavity ?\n\n6) Was the map resolution really isotropic (as mentioned in the Methods section)?\n\n7) The two TRiC rings in Figures 5 A and B are very similar, and it is difficult to be sure that the difference between them is significant, as anyone knows who has ever correlated low-resolution EM maps. The smooth distribution of correlation factors in Figure 4 does not help, and the histograms of Figure 4 also do not indicate a clear difference between the two classes. Is there a quantitative measure to convince the reader that the difference between the two classes is real?\n\n8) The difference density in Figure 8B looks nice, but would be even more convincing if the authors were to show a control with empty TRiCs processed by the same procedure alongside.\n",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9bbb176e-1a82-4657-a601-813813851c14",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C1",
+      "claim": "In Huntington's disease, a mutated version of the huntingtin protein leads to cell death.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In Huntington's disease, a mutated version of the huntingtin protein leads to cell death.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established scientific knowledge about Huntington's disease pathology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "efae4aed-1559-45df-9f85-64f218895e4a",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C2",
+      "claim": "Mutant huntingtin is known to aggregate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutant huntingtin is known to aggregate",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in the field, supported by prior research as indicated by the context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "edfd2bcc-d3b3-4b95-b04c-f448ccaff27e",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C3",
+      "claim": "The eukaryotic chaperonin TRiC can inhibit mutant huntingtin aggregation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a process that can be inhibited by the eukaryotic chaperonin TRiC (TCP1-ring complex) in vitro",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This refers to established findings from prior research on TRiC's inhibitory effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d9ba3111-0bfc-44ba-a769-3737efc1dcd8",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C4",
+      "claim": "The eukaryotic chaperonin TRiC can inhibit mutant huntingtin aggregation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a process that can be inhibited by the eukaryotic chaperonin TRiC (TCP1-ring complex) in vitro and in vivo",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This refers to established findings from prior research on TRiC's inhibitory effects in living systems.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "83fc288a-5beb-4d53-97aa-e4c7fc1dd14f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C5",
+      "claim": "TRiC caps mhttQ51 fibril tips via the apical domains of its subunits.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We find that TRiC caps mhttQ51 fibril tips via the apical domains of its subunits",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the cryo-EM and SPT structural analysis presented in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "5b8f6285-a418-457e-b24f-47e27c89454a",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C6",
+      "claim": "TRiC encapsulates smaller mhtt oligomers within its chamber.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and also encapsulates smaller mhtt oligomers within its chamber",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the structural analysis of freestanding TRiC particles.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4698e855-5bfa-4d84-bc55-56131a04fbc5",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C7",
+      "claim": "The presence of huntingtin aggregates in the brain correlates strongly with functional deficits in individuals with Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The presence of huntingtin aggregates in the brain correlates strongly with functional deficits in individuals with Huntington's disease (DiFiglia et al., 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a specific citation to DiFiglia et al., 1997.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "94c793cc-6007-484b-9ab7-2a6c94244a2a",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C8",
+      "claim": "Huntingtin aggregates originate from a mutation in the huntingtin gene that causes an expansion of glutamine repeats in the huntingtin protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These aggregates originate from a mutation in the huntingtin gene that causes an expansion of glutamine (Q) repeats in the huntingtin protein",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the genetic basis of Huntington's disease, supported by the citation to Zoghbi and Orr, 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "121fb7dd-4f8d-4daa-82a6-c81fa64b9477",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C9",
+      "claim": "Polyglutamine expansion greater than 36 residues contributes to mutant huntingtin's tendency to aggregate within the cell.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This polyglutamine expansion (Q>36) contributes to mutant huntingtin's (mhtt) tendency to aggregate within the cell",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge supported by the citation to Nekooki-Machida et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "e5992b3d-677c-4d51-9b52-9df062daaec8",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C10",
+      "claim": "Variants of mhtt exon1 containing an expanded polyglutamine tract greater than 36 residues are commonly used as models to investigate mutant huntingtin's properties in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Variants of mhtt exon1 containing an expanded polyglutamine (polyQ) tract greater than 36 residues are commonly used as models to investigate mutant huntingtin's properties in vitro and in vivo.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes common practice in the field of Huntington's disease research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "51f3d4bc-0b09-46d3-8b22-bc7dc7396972",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C11",
+      "claim": "TRiC is a key regulator of protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Some chaperones, such as the eukaryotic chaperonin TRiC, are key regulators of protein aggregation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by multiple citations indicating established knowledge about TRiC's role.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "8bdd72fd-00d8-4a59-aa56-6e0a58340e6b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C12",
+      "claim": "TRiC modulates and suppresses polyglutamine aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In fact, TRiC modulates and suppresses polyglutamine aggregation, including that of mhtt variants having polyQ tracts of different length.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about TRiC's function in the context of polyglutamine diseases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "bb4c0ee8-ea12-48d5-bfc7-3f0cdf46ec5c",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C13",
+      "claim": "TRiC's inhibition of mhtt aggregation has been biochemically characterized for several variants both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiCs inhibition of mhtt aggregation has been biochemically characterized for several variants both in vitro and in vivo (Kitamura et al., 2006; Tam et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by specific citations to prior biochemical studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "84d9cd71-8792-49a3-9afe-51798b4b6eb5",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C14",
+      "claim": "TRiC is a approximately 1 MDa double-ring complex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC is a \u223c1 MDa double-ring complex",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established structural knowledge about TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "f4e46ff8-51fb-4ab3-a459-68ccbfaf9af0",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C15",
+      "claim": "TRiC interacts with approximately 10% of all cytosolic proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "that interacts with \u223c10% of all cytosolic proteins",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Yam et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c500d08a-fa54-48ab-b5ea-60b392c39a7b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C16",
+      "claim": "TRiC is stringently required for the proper folding of many essential proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and is stringently required for the proper folding of many essential proteins",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge supported by the citation to Yam et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c7e4fcf1-173b-46d7-b58e-422cedc47e5b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C17",
+      "claim": "TRiC can assume different conformations in different biochemical states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC can assume different conformations in different biochemical states",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Cong et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6434111b-ca94-44a0-8ddc-b24fba612b3c",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C18",
+      "claim": "TRiC can bind substrates like actin and tubulin through different sites, either at its apical tips or inside the chamber.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC can bind substrates like actin and tubulin through different sites, either at its apical tips, which are conformationally flexible in the apo state (Llorca et al., 1999), or inside the chamber",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to prior structural studies of TRiC-substrate interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "1738e90f-f10d-4c34-9848-34d93992361c",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C19",
+      "claim": "TRiC's apical tips are conformationally flexible in the apo state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which are conformationally flexible in the apo state (Llorca et al., 1999)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Llorca et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6ba398f2-3182-4510-81c0-7d698a218a01",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C20",
+      "claim": "TRiC's interactions with polyQ aggregates are likely to be variable.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC's interactions with polyQ aggregates are also likely to be variable",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from observations with other chaperone/substrate complexes, supported by citation to Kim et al., 2002.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "56302558-b7b6-48dd-819b-e26a9663e7ac",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C21",
+      "claim": "There is no existing structural model for how TRiC suppresses mhtt aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There is no existing structural model for how TRiC suppresses mhtt aggregation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the state of knowledge in the field prior to this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "24bec834-4309-455a-a601-cd371909604d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C22",
+      "claim": "Most structural biology techniques are not suited to characterize conformationally heterogeneous specimens such as mhtt aggregates in complex with TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "most structural biology techniques are not suited to characterize conformationally heterogeneous specimens such as mhtt aggregates in complex with TRiC",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on understanding of the limitations of conventional structural biology methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "34b5588b-6aa0-4357-9c01-b03484648c64",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C23",
+      "claim": "Cryo-electron microscopy can preserve specimens in close-to-solution conformations because the samples remain frozen-hydrated without chemical fixation or staining during the entire microscopy session.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cryo-electron microscopy (cryoEM) can preserve specimens in close-to-solution conformations because the samples remain frozen-hydrated without chemical fixation or staining during the entire microscopy session",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about cryoEM methodology, supported by citation to Dubochet et al., 1988.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "1f3abb0b-ae99-4706-aa8c-b57df0906c8f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C24",
+      "claim": "Cryo-electron tomography allows for visualization of entire protein aggregates in 3-D.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cryo-electron tomography (cryoET) allows for visualization of entire protein aggregates in 3-D",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the capability of cryoET as a technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "02e41a78-3ed2-49cf-84c5-daf2af302152",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C25",
+      "claim": "Single particle tomography can resolve the structure of heterogeneous macromolecular complexes at nanometer resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, SPT is an emerging technique in structural biology that can resolve the structure of heterogeneous macromolecular complexes at nanometer resolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the capabilities of SPT as an emerging technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "83ef0b82-0ced-40b7-a432-d2e0489cc438",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C26",
+      "claim": "At 45 min post-initiation of aggregation in the absence of TRiC, a few isolated mhttQ51 fibrils are visible.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At 45 min post-initiation of aggregation (PIA) in the absence of TRiC, we see a few isolated mhttQ51 fibrils",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the 2-D cryoEM imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "7ba0059c-8338-4a84-9bc1-c825c55a77ac",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C27",
+      "claim": "MhttQ51 fibers exhibit extensive heterogeneity, varying both in length and width.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Even at early time points, mhttQ51 fibers exhibit extensive heterogeneity, varying both in length and width",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the imaging data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "bb2a194e-58a2-4317-8363-d9c511738dca",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C28",
+      "claim": "The tips of mhttQ51 fibers appear more tapered than the bulk of the fiber.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with the tips appearing more tapered than the bulk of the fiber",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a morphological observation from the imaging data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4c669454-4977-4582-890f-a727a6d5fc0b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C29",
+      "claim": "Thin mhttQ51 fibrils progress to form thicker fibers and eventually form branched-out aggregates or 'sheaves' with a dense central core by 4 hr post-initiation of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By a process that is not yet fully understood, thin fibrils progress to form thicker fibers, and eventually form branched-out aggregates or 'sheaves' with a dense central core by 4 hr PIA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the temporal progression observed in the imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d5038404-2f41-4892-942b-64fef8eeb0df",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C30",
+      "claim": "At longer incubation times, there is a dramatic increase in the number and thickness of mhttQ51 sheaves.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At longer incubation times, we observe a dramatic increase in the number and thickness of such sheaves",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative observation from the time-course imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "3174ab92-334d-4fd9-8308-18ba794384e3",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C31",
+      "claim": "The number of mhttQ51 sheaves and their thickness appears to plateau at 24 hr post-initiation of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The number of sheaves and their thickness appears to plateau at 24 hr PIA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the time-course experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "a2e0fb44-3883-4582-8816-bbc17bcc0493",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C32",
+      "claim": "In the presence of TRiC, not even thin mhttQ51 fibrils are visible at 45 min post-initiation of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, in the presence of TRiC, not even thin mhttQ51 fibrils are visible at early time points (45 min PIA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the TRiC + mhtt imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "43aa1936-9541-4416-adc7-043c285f6862",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C33",
+      "claim": "At 4 hr and 24 hr post-initiation of aggregation in the presence of TRiC, sparse fibrils and a few small sheaves are present.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At 4 hr and 24 hr PIA (Figure 1E,F), sparse fibrils and a few small sheaves are present",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the imaging experiments with TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c5140573-2878-4e59-86a4-8eece1559210",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C34",
+      "claim": "In the presence of TRiC, there are no mhttQ51 aggregates as large as those seen in the absence of TRiC at the same time points.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but there are no aggregates as large as those seen in the absence of TRiC at the same time points",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a comparative observation between TRiC and no-TRiC conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "b5a014be-701b-4686-b590-9460222f4255",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C35",
+      "claim": "TRiC does not completely decorate mhttQ51 fibrils, but rather binds at discrete locations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC does not completely decorate mhttQ51 fibrils, but rather binds at discrete locations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the imaging data showing TRiC binding patterns.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4943c249-a96e-4669-85d8-5802f0009892",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C36",
+      "claim": "TRiC binding locations on mhttQ51 fibrils are often discernible fibril tips.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which are often discernible fibril tips",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific observation about where TRiC binds on fibrils.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "aaf80d6f-4b0b-46d7-903b-7221ee9fd8ad",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C37",
+      "claim": "In a 2-D cryoEM image, the entire volume of the actual specimen is projected onto a plane.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In a 2-D cryoEM image, the entire volume of the actual specimen is projected onto a plane",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a fundamental property of 2-D projection imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "bcb341c4-067d-4aeb-bc87-586431c693f9",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C38",
+      "claim": "Some TRiCs seemingly close to a fibril in 2-D might be floating above or below it and not bound at all.",
+      "claim_type": "EXPLICIT",
+      "source_text": "therefore, some TRiCs seemingly close to a fibril in 2-D might be floating above or below it and not bound at all",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the nature of 2-D projection imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "42cb30bb-3175-4858-877a-d168a1b58b7e",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C39",
+      "claim": "2-D cryoEM images cannot unambiguously show whether TRiC is directly bound to mhttQ51.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since 2-D cryoEM images cannot unambiguously show whether TRiC is directly bound to mhttQ5, we performed cryoET experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a limitation of 2-D imaging that motivated the use of tomography.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "55245efe-4141-43ea-9180-3ad5d5079cab",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C40",
+      "claim": "Two distinct populations of particles similar in size and shape to TRiC were identified in both 2-D images and 3-D tomograms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In both our 2-D images (Figure 1G\u2013H) and 3-D tomograms (Figure 2, Video 1), we identified two distinct populations of particles similar in size and shape to TRiC.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from both imaging modalities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "26c002d8-01a0-4af5-aba4-9e280663c0cf",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C41",
+      "claim": "One population of TRiC particles seems to be attached to mhttQ51 fibrils ('fibril-bound TRiC').",
+      "claim_type": "EXPLICIT",
+      "source_text": "Particles in one population seem to be attached to mhttQ51 fibrils ('fibril-bound TRiC')",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the tomographic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "b4d40253-bc55-4e74-8b21-263147806eb8",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C42",
+      "claim": "One population of TRiC particles does not appear to be attached to fibrils ('freestanding TRiC').",
+      "claim_type": "EXPLICIT",
+      "source_text": "while those in the other do not ('freestanding TRiC')",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the tomographic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "39806abe-7131-4814-8f92-167fe67810e6",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C43",
+      "claim": "A total of 326 fibril-bound TRiC subvolumes were extracted from tomograms and processed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We processed a total of 326 fibril-bound TRiC subvolumes extracted from our tomograms",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative description of the data processing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "29f0719f-43f8-4899-8efd-f07e4a24f6a7",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C44",
+      "claim": "The 326 fibril-bound TRiC subvolumes represented about one quarter of 1216 TRiC subvolumes extracted from all mhtt-TRiC tomograms combined.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This represented about one quarter of 1216 TRiC subvolumes extracted from all our mhtt-TRiC tomograms combined.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative description of the dataset composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "f8cbbc1d-a786-4bc2-995d-0d8a688c0f3f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C45",
+      "claim": "SPT symmetry-free and model-free averages of fibril-bound TRiC reveal extra density at the chaperonin's apical tips.",
+      "claim_type": "EXPLICIT",
+      "source_text": "SPT symmetry-free and model-free averages of fibril-bound TRiC reveal extra density at the chaperonin's apical tips.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the SPT analysis of fibril-bound TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "fb5ab5cd-62bc-4594-9403-fdd99f7cbdf7",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C46",
+      "claim": "All the averages of fibril-bound TRiC show overall TRiC-like morphology with extra densities protruding beyond the apical domains of the chaperonin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All the averages show overall TRiC-like morphology with extra densities protruding beyond the apical domains of the chaperonin.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a consistent observation across multiple independent averages.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d45e3ef0-1cce-453e-be02-dc4c0d8cde8d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C47",
+      "claim": "A total of 890 freestanding TRiC subvolumes were extracted from tomograms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We extracted a total of 890 freestanding TRiC subvolumes from our tomograms",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative description of the data processing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "95339626-1ffe-45a1-9b68-a6436c8a9523",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C48",
+      "claim": "The 890 freestanding TRiC subvolumes were about three quarters of the 1216 TRiC subvolumes extracted from all mhtt-TRiC tomograms combined.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These were about three quarters of the 1216 TRiC subvolumes extracted from all our mhtt-TRiC tomograms combined.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative description of the dataset composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "5a31a128-a0c3-432b-b7ff-e9088755bfc6",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C49",
+      "claim": "Ranked correlation scores for freestanding TRiCs against a hollow TRiC reference yield a continuous fast-decaying plot, suggesting structural heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ranked correlation scores for freestanding TRiCs against a hollow TRiC reference yield a continuous fast-decaying plot, suggesting structural heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The plot is data, and the interpretation of structural heterogeneity is inferred from the plot characteristics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "429b3905-e9aa-4b78-b12d-12406dff14ce",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C50",
+      "claim": "The final cavity-empty TRiC average from the combined dataset highly resembles apo-TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The final cavity-empty TRiC average from the combined dataset highly resembles apo-TRiC",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a comparative observation from the structural analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "25588e98-c9c3-4d15-9a72-3d4f70fbb6c8",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C51",
+      "claim": "The cavity-empty TRiC average is pseudo eightfold symmetrical, barrel-shaped, and hollow.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The average is pseudo eightfold symmetrical, barrel-shaped, and hollow",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the structural features observed in the average.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "53460460-acce-4c78-ada5-09c28fffa4b1",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C52",
+      "claim": "The cavity-occupied TRiC average has significant extra density lining the interior of the chaperonin's cavity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Applying the same bias-free approach to the cavity-occupied TRiC set (also about one third of the entire 1216 TRiC subvolumes) produced an average with significant extra density lining the interior of the chaperonin's cavity",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the SPT analysis of cavity-occupied TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "dcbd7291-ac14-4671-80a9-310b1a7ff7f8",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C53",
+      "claim": "The extra density in cavity-occupied TRiC is attributable to a poorly localized substrate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "attributable to a poorly localized substrate",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the presence of extra density in the cavity region.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "f51ee49f-8c2c-45ee-94de-67cc48a3535d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C54",
+      "claim": "The Fourier shell correlation between the cavity-empty and cavity-occupied TRiC averages gives a value of approximately 52 \u00c5 using the FSC = 0.333 threshold.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Computing the Fourier shell correlation (FSC) between the cavity-empty and cavity-occupied TRiC averages gives a value of \u223c52 \u00c5 using the FSC = 0.333 threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measure of resolution from the FSC analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "cd61b403-d38f-4d99-a70a-ea314c5ebcad",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C55",
+      "claim": "The hollow-template-guided alignment strategy results in a TRiC average with a large density asymmetrically located within the cavity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This additional analysis results in a TRiC average with a large density asymmetrically located within the cavity",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the refined analysis of cavity-occupied TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "963edff7-e6e5-430c-a63c-c99035f8f401",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C56",
+      "claim": "The aggregation and suppression of aggregation reactions followed well characterized conditions, previously described using filter trap assays that detect mhttQ51 amyloid aggregates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our aggregation and suppression of aggregation reactions followed well characterized conditions, previously described using filter trap assays that detect mhttQ51 amyloid aggregates (Tam et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This references established experimental protocols from prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "3187fd7e-fb38-4b8e-88fe-4f0223ffacd8",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C57",
+      "claim": "The mhtt concentration in the experiments was chosen to allow mhtt aggregation to occur in a reasonably short time in the absence of TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The mhtt concentration in our experiments was chosen to allow mhtt aggregation to occur in a reasonably short time in the absence of TRiC",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on prior work cited (Scherzinger et al., 1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "35f1f2e6-ae4b-4ffe-bb74-0bd19a7ae033",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C58",
+      "claim": "The ratio of TRiC to mhtt was chosen to yield initial-stage fibril aggregates and yet thwart large-aggregate growth.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the ratio of TRiC to mhtt was chosen to yield initial-stage fibril aggregates and yet thwart large-aggregate growth",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on prior work cited (Behrends et al., 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "e376329d-1c79-449f-a3e5-43041608354f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C59",
+      "claim": "The TRiC:mhtt ratio under normal physiological conditions has not been carefully explored.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is worth noting however that the TRiC:mhtt ratio under normal physiological conditions has not been carefully explored.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a gap in current knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "e278ac25-ec92-4ba0-b358-e396a24251f9",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C60",
+      "claim": "Increasing cellular levels of TRiC has a beneficial effect in suppressing mhtt toxicity and aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nonetheless, increasing cellular levels of TRiC has a beneficial effect in suppressing mhtt toxicity and aggregation",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations to prior studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "cdb47977-8411-4dbe-8b76-491511e286d4",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C61",
+      "claim": "The formation of groups of sheaves could correspond to the large inclusions observed in cells expressing mhtt.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our 2-D cryoEM images, the formation of groups of sheaves as seen in Figure 1C could correspond to the large inclusions observed in cells expressing mhtt.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative connection between in vitro observations and cellular phenomena.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "8e36e267-3c68-4411-b119-7dbb9ea576eb",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C62",
+      "claim": "The smaller aggregates observed in the presence of TRiC could correspond to the multiple, smaller foci seen in cells overexpressing TRiC or some of its subunits.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, the smaller aggregates (Figures 1E,F and 3), which are not detectable by filter-trap assays, could correspond to the multiple, smaller foci seen in cells overexpressing TRiC or some of its subunits",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative connection to cellular observations, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "7307bc2d-a5cb-433e-83be-49856ec8ebba",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C63",
+      "claim": "Overexpression of TRiC is known to suppress mhtt toxicity in a variety of systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, overexpression of TRiC is known to suppress mhtt toxicity in a variety of systems",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations to prior studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "f09ab984-3550-4a27-83f7-7d5f1f3e7fb2",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C64",
+      "claim": "The observations provide a structural basis for the observed effect of TRiC on mhtt toxicity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and thus our observations provide a structural basis for the observed effect of TRiC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from connecting the structural findings to known biological effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "60786129-c6e3-4331-8cb5-c7758775f32d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C65",
+      "claim": "After the nucleation stage, small and thin irregular mhttQ51 fibrils with exposed hydrophobic moieties ('fibril tips') drive the growth of the aggregates into large sheaves.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We envision the progression of mhttQ51 aggregation as a process whereby, after the nucleation stage, small and thin irregular fibrils with exposed hydrophobic moieties ('fibril tips') drive the growth of the aggregates into large sheaves.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a mechanistic model inferred from the observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c19bd3d2-dc93-41da-9e78-7f78ed7cac87",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C66",
+      "claim": "TRiC is known to bind hydrophobic motifs via its apical substrate-binding domains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC is known to bind hydrophobic motifs via its apical substrate-binding domains",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Spiess et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6cf913a9-f2a3-452d-9106-5c7726d1c46d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C67",
+      "claim": "TRiC has been shown to crosslink with the N-terminal N17 motif of mhtt, which drives mhtt oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and has also been shown to crosslink with the N-terminal N17 motif of mhtt, which drives mhtt oligomerization",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Tam et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "36f8b8e4-87ed-4e3b-bd71-66b73fac273f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C68",
+      "claim": "The binding between mhttQ51 fibrils and TRiC may involve mhttQ51 hydrophobic moieties that include the N17 domain.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is therefore likely that the binding we demonstrate here between mhttQ51 fibrils and TRiC (Figures 1\u20133), which thwarts the progression of fibers into sheaves, may involve mhttQ51 hydrophobic moieties that include the N17 domain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from combining the structural observations with known binding properties of TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "9ba044b7-4d76-4379-b22f-f42aa39fd23b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C69",
+      "claim": "The N17 domain has been proposed to function as a 'molecular switch' controlled by multiple post-translational modifications that can determine the fate of mhtt exon-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, this domain has been proposed to function as a 'molecular switch' (Greiner and Yang, 2011) controlled by multiple post-translational modifications that can determine the fate of mhtt exon-1 either by rendering it innocuous or enhancing its pathogenicity.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Greiner and Yang, 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "01866b26-c00f-427c-8c1d-991aa8a4b8ce",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C70",
+      "claim": "By virtue of its interaction with the N17 domain, TRiC might provide a protective effect against deleterious post-translational modifications.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By virtue of its interaction with the N17 domain, TRiC might provide a protective effect against deleterious post-translational modifications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about TRiC's protective mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "11f842c3-ae45-47d0-a535-5be01870ae45",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C71",
+      "claim": "TRiC binds mhtt fibrils via its apical tips to cap them.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we demonstrate that TRiC binds mhtt fibrils via its apical tips to cap them",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary conclusion from the structural analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4ccc4479-9e48-40eb-a32f-c6d2ba521bd0",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C72",
+      "claim": "The fibril-capping mechanism could explain why inhibition of aggregation is observed in vitro at substoichiometric ratios of TRiC to mhtt.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This fibril-capping mechanism could explain why inhibition of aggregation is observed in vitro at substoichiometric ratios of TRiC to mhtt.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural mechanism to explain biochemical observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "e5bf14b0-16fa-43dc-91c1-f3aa0c0da688",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C73",
+      "claim": "The fibril-capping mechanism may explain why mhtt aggregates look different in vivo when TRiC is overexpressed, and become SDS soluble.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It may also explain why mhtt aggregates look different in vivo when TRiC is overexpressed, and become SDS soluble",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the structural mechanism to explain prior observations cited (Tam et al., 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "90b41e40-1e5c-4080-9ef0-39faed3e641b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C74",
+      "claim": "TRiC might bind fibrils through one of its ends while the binding sites at the other end remain available to snatch mhttQ51 oligomers lurking in their proximity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is conceivable that TRiC might bind fibrils through one of its ends while the binding sites at the other end remain available to snatch mhttQ51 oligomers lurking in their proximity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about TRiC's dual mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "21ca7303-601c-4570-be9d-b8ed004c3293",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C75",
+      "claim": "Internalization of smaller mhttQ51 oligomers would contribute to inhibition of sheaf formation by decreasing the effective concentration of oligomers in the reaction mixture.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, internalization of smaller mhttQ51 oligomers would also contribute to inhibition of sheaf formation by decreasing the effective concentration of oligomers in the reaction mixture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a mechanistic inference about how oligomer sequestration would affect aggregation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "19dda3f7-be7e-4f16-93f9-862c6657a9b3",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C76",
+      "claim": "Other substrates have been shown to bind deep inside the cavity of apo-TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although other substrates have also been shown to bind deep inside the cavity of apo-TRiC",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Mu\u00f1oz et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "2ac58da3-221d-45a9-a10c-30c2af915324",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C77",
+      "claim": "The finding that mhtt exon-1 might be encapsulated by TRiC is unprecedented.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the finding that mhtt exon-1 might also be encapsulated is unprecedented",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the novelty of the finding in the context of existing knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "ea81be05-b2ea-41fb-b054-b89d3ae4d838",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C78",
+      "claim": "Native substrates can be copurified with apo-TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While it is conceivable for native substrates to be copurified with apo-TRiC",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a known possibility in TRiC purification.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "98c4fcf1-27d4-445a-80cf-226abf3cae01",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C79",
+      "claim": "The presence of native substrates within the chaperonin's cavity is rare.",
+      "claim_type": "EXPLICIT",
+      "source_text": "their presence within the chaperonin's cavity is rare",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the typical state of purified TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "cb18a62e-039b-4744-9d1f-b9dbe2b265b7",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C80",
+      "claim": "Extra density is only detectable in approximately 10% of the TRiC particles in the absence of added mhtt.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For instance, our controls show that extra density is only detectable in \u223c10% of the particles in the absence of added mhtt.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative observation from the control experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "734c7bd0-27b4-4509-a9cf-03837a785718",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C81",
+      "claim": "Significant extra density is seen in approximately 40-50% of the freestanding TRiC particles from TRiC + mhtt tomograms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, we see significant extra density in \u223c40\u201350% of the freestanding TRiC particles from our TRiC + mhtt tomograms.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative observation from the experimental samples.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "0dc79a0b-6ea0-4ec6-8401-80488c26f371",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C82",
+      "claim": "Previous studies have demonstrated that TRiC does not bind GST.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, previous studies have demonstrated that TRiC does not bind GST",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Feldman et al., 2003.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "68e982e7-0cd7-4c5c-b115-582f4746ae0f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C83",
+      "claim": "It is unlikely that either native substrates or the GST moiety cleaved from mhttQ51 could account for the internalized mass observed in cavity-occupied TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, it is unlikely that either native substrates or the GST moiety that is cleaved from mhttQ51 to initiate aggregation could account for the internalized mass we observe",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the control data and prior knowledge about TRiC-GST interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "06f8b7ef-1fd4-4988-bf1e-53e3560554de",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C84",
+      "claim": "The internalized density in cavity-occupied TRiC likely represents mhtt.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rather, this density likely represents mhtt.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred by process of elimination from the control experiments and prior knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "1be34a6f-bd01-48de-bfed-2007fbf64fb1",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C85",
+      "claim": "The estimated average size of encapsulated mass is approximately 60 kDa.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, our estimates suggest an average size of \u223c60 kDa",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is derived from quantitative analysis of the density in the cavity-occupied average.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "cf2e3e89-a452-4454-bb77-b7ce81922626",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C86",
+      "claim": "An encapsulated mass of approximately 60 kDa would correspond to an oligomer of about six mhttQ51 exon1 monomers.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which would correspond to an oligomer of about six mhttQ51 exon1 monomers",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the estimated mass and the known mass of mhttQ51 monomers.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d95f6272-effc-4059-b9eb-3bf90007a537",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C87",
+      "claim": "The mhttQ51 oligomers that might be encapsulated by TRiC could be analogous to precursor forms of the 100\u2013230 kDa toxic oligomers previously reported.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The mhttQ51 oligomers that might be encapsulated by TRiC could be analogous to precursor forms of the 100\u2013230 kDa toxic oligomers previously reported",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative connection to prior observations, supported by citation to Behrends et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "255c25ef-3bcd-4942-aa59-c7ff83dc456d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C88",
+      "claim": "It is possible that the extra density inside TRiC corresponds to an average of encapsulated mhtt oligomers of different sizes and conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, it is possible that the extra density we see inside TRiC (Figures 5B and 8) corresponds to an average of encapsulated mhtt oligomers of different sizes and conformations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation for the poorly localized nature of the internal density.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "46e65d63-3231-46b3-8fb7-6e304b0e3edf",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C89",
+      "claim": "Previous biochemical studies showed the inhibitory effect of TRiC on mhttQ51 aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While previous biochemical studies showed the inhibitory effect of TRiC on mhttQ51 aggregation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes prior knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d0667220-5fe1-410b-99aa-fb338225cf1b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C90",
+      "claim": "The structural basis of TRiC's inhibition of mhttQ51 aggregation was not explained by previous studies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the structural basis of this process was not explained",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a gap in prior knowledge that this study addresses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "7113ef0a-5804-4581-8c37-f56ab63156bf",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C91",
+      "claim": "The compositional and conformational heterogeneity of mhtt-TRiC specimens precludes resolving nanometer resolution structures with any technique in structural biology other than SPT.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The compositional and conformational heterogeneity of such a specimen precludes resolving nanometer resolution structures from it with any technique in structural biology other than SPT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the unique capability of SPT for this type of specimen.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "58844539-fe2f-421a-8014-a9bf3b5fd9a7",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C92",
+      "claim": "The approach demonstrates TRiC's association with mhttQ51 fibrillar aggregates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, our approach demonstrates TRiC's association with mhttQ51 fibrillar aggregates",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "1d3643d7-0dcb-4582-b00e-cabc95429225",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C93",
+      "claim": "The results suggest TRiC might sequester small mhttQ51 oligomers to effectively inhibit mhtt aggregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and our results suggest TRiC might also sequester small mhttQ51 oligomers to effectively inhibit mhtt aggregation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural data showing cavity-occupied TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "a0388ee4-d59c-47ba-bb2b-8b4d4ee7e88f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C94",
+      "claim": "The observation that TRiC can bind substrates via its apical domains is consistent with the current understanding of TRiC\u2013substrate interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While our observation that TRiC can bind substrates via its apical domains is consistent with the current understanding of TRiC\u2013substrate interactions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This places the findings in the context of existing knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "0cf63588-bbac-4f6d-935a-ae86b0a6ab90",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C95",
+      "claim": "The data is unprecedented in demonstrating the direct binding of fibrils by TRiC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "our data is unprecedented in demonstrating the direct binding of fibrils (a substrate too large to be internalized)",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the novelty of the finding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "ff8be373-e50d-4942-ada8-d08f08e9c5b7",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C96",
+      "claim": "The suggestion that TRiC might cap fibril growth as well as internalize smaller oligomers indicates a broad scope for this chaperonin's action on protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The suggestion that TRiC might cap fibril growth as well as internalize smaller oligomers indicates a broad scope for this chaperonin's action on protein aggregates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the dual mechanisms observed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "0db31ceb-01ef-47f5-8c8a-2ce500d53b8b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C97",
+      "claim": "Oligomers and fibrillar aggregates are two types of proposed mhtt toxic species observed in Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The ability of TRiC to recognize and handle both types of proposed mhtt toxic species observed in Huntington's disease (DiFiglia et al., 1997; Arrasate and Finkbeiner, 2011; Nucifora et al., 2012), namely oligomers and fibrillar aggregates",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations to prior studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "3db8ba9a-fa0e-4f51-bb94-ca9c80d53d3e",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C98",
+      "claim": "TRiC's ability to recognize and handle both oligomers and fibrillar aggregates could account for the reduced toxicity of mhtQ51 when TRiC is overexpressed in cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "could account for the reduced toxicity of mhtQ51 and other mhtt species when TRiC is overexpressed in cells",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the structural findings to explain prior observations cited.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "7315b619-2a95-4010-9b42-671398509362",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C99",
+      "claim": "TRiC's interaction with mhtt aggregates might render them more amenable to processing by cellular pathways of quality control, such as autophagy and proteolytic degradation by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC's interaction with mhtt aggregates might render them more amenable to processing by cellular pathways of quality control, such as autophagy and proteolytic degradation by the proteasome",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about downstream effects, with citation to Sarkar et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c55b5888-960e-4516-818d-b1132584324a",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C100",
+      "claim": "Mhtt oligomers and fibrillar aggregates are strongly implicated in the pathogenesis of Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since mhtt oligomers and fibrillar aggregates are strongly implicated in the pathogenesis of Huntington's disease",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation to Sathasivam et al., 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "831ee38a-6ba6-42aa-942b-31237a312583",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C101",
+      "claim": "The interactions between TRiC and mhttQ51 provide a structural mechanism for the chaperonin's aggressive inhibition of mhtt aggregation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the interactions that we describe between TRiC and mhttQ51 provide a structural mechanism for the chaperonin's aggressive inhibition of mhtt aggregation in vitro",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a primary conclusion connecting the structural findings to biochemical observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "76d6af4a-f477-4242-a102-363b4a341f68",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C102",
+      "claim": "The findings suggest a potential for TRiC-inspired therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and suggest a potential for TRiC-inspired therapeutics",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative implication for therapeutic development, with citation to Sontag et al., 2013.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "3133d6a5-0983-4bd5-90c6-c27cbab16416",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C103",
+      "claim": "Aggregation of GST-huntingtin exon 1 fusion proteins with 51 glutamine repeats was initiated at a concentration of 6 \u00b5M by adding AcTEV protease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Aggregation of GST-huntingtin exon 1 fusion proteins with 51 glutamine repeats (GST-mhttQ51) at a concentration of 6 \u00b5M was initiated in vitro by adding AcTEV protease (Invitrogen)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental protocol used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "b1e52336-369a-4394-9b07-4c9701b7382d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C104",
+      "claim": "Samples were incubated at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Samples were incubated at 30\u00b0C",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "3fb7e09b-ff43-4492-8129-e7fff063a748",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C105",
+      "claim": "Aliquots were vitrified at t= 0 hr, 0.75 hr, 4 hr, and 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Samples were incubated at 30\u00b0C and aliquots vitrified at t= 0 hr, 0.75 hr, 4 hr, and 24 hr.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the time points for sample preparation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d20c32bc-c0f0-4db2-abdc-8335a46c14b9",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C106",
+      "claim": "2-D images were collected using a 200KV JEOL electron microscope with a sampling of 2.86 \u00c5/pixel.",
+      "claim_type": "EXPLICIT",
+      "source_text": "2-D images were collected using the standard minimum dose system on a 200KV JEOL electron microscope (JEM 2100, LaB6 gun), with a sampling of 2.86 \u00c5/pixel",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the imaging parameters used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "a5d419c4-3e1a-4974-9151-679c638334b5",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C107",
+      "claim": "20 tilt series of mhttQ51 + TRiC at t = 4 hr were collected.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We collected 20 tilt series of mhttQ51 + TRiC at t = 4 hr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the tomography data collection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "49274423-b1f0-40b6-98d2-d74687c790c6",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C108",
+      "claim": "Tilt series were collected from \u221260\u00b0 to 60\u00b0, at 2\u00b0 increments.",
+      "claim_type": "EXPLICIT",
+      "source_text": "from \u221260\u00b0 to 60\u00b0, at 2\u00b0 increments",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the tomography acquisition parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "2eea6979-865b-48d7-bc2c-6e5f6e905b4e",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C109",
+      "claim": "6 of the 20 tilt series appeared appropriate for tomographic reconstruction and were reconstructed into tomograms using IMOD.",
+      "claim_type": "EXPLICIT",
+      "source_text": "6 of the 20 tilt series appeared appropriate for tomographic reconstruction and were reconstructed into tomograms using IMOD",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data processing and quality control.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4db75936-2624-4719-8515-201758688ed2",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C110",
+      "claim": "All SPT processing and averaging was done with subtomograms extracted from the original raw tomograms using e2spt_boxer.py in EMAN2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All SPT processing and averaging was done with subtomograms extracted from the original raw tomograms (unbinned) using e2spt_boxer.py in EMAN2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational methods used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "2e910217-6818-4b06-a642-62de1dbe420e",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C111",
+      "claim": "Cross-correlation map normalization was used to avoid missing wedge bias.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To avoid missing wedge bias, we used cross-correlation map normalization",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological approach to address a known artifact in tomography.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6b6a97cf-4991-4159-88f7-ceb38fab94d4",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C112",
+      "claim": "The bias-free subtomogram processing uses unsupervised hierarchical ascendant classification and averaging without the aid of a reference and without imposing symmetry at any point.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our bias-free subtomogram processing uses unsupervised hierarchical ascendant classification and averaging (HAC), a technique involving pairwise alignment of sub-tomograms and clustering based on similarity (Bartesaghi et al., 2008; F\u00f6rster et al., 2008; Schmid and Booth, 2008), without the aid of a reference and without imposing symmetry at any point.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational approach used to avoid bias in the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "66ed7a4b-33df-445a-b086-5bc6b7dfcc86",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C113",
+      "claim": "TRiC has eight highly similar subunits.",
+      "claim_type": "EXPLICIT",
+      "source_text": "TRiC has eight highly similar subunits",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established structural knowledge about TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "e3a5b983-aa15-4837-9145-8e8a9e264747",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C114",
+      "claim": "If the densities picked as TRiC were in fact TRiC and the methodology averaged them correctly, the maps would display pseudo-eightfold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source_text": "therefore, if the densities from our tomograms picked as TRiC were in fact TRiC and our methodology averaged them correctly, our maps would display pseudo-eightfold symmetry",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference from the known structure of TRiC.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "3498231c-4de8-4f24-835f-6d802663984d",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C115",
+      "claim": "The rotational correlation plots on the template-free and symmetry-free TRiC averages reveal the presence of pseudo-eightfold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, our rotational correlation plots on the template-free and symmetry-free TRiC averages reveal the presence of pseudo-eightfold symmetry in them",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative validation of the structural averages.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6b5ac0a7-55a3-4efb-b009-66cf7efdc30b",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C116",
+      "claim": "The resolution of the cavity-empty structure was assessed as 46 \u00c5 by computing an FSC with the apo-TRiC map using the FSC = 0.5 threshold.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We assessed the resolution of the cavity-empty structure as 46 \u00c5 by computing an FSC with the apo-TRiC map (Cong et al., 2012) using the FSC = 0.5 threshold",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measure of resolution from the FSC analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "ddd93126-9ced-4d2f-9910-50ba74c17dec",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C117",
+      "claim": "TRiC's eight subunits differ the most in their apical tips and their C-termini within the cavity, both containing substrate-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because TRiC's eight subunits differ the most in their apical tips and their C-termini within the cavity, both containing substrate-binding sites",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established structural knowledge about TRiC subunit differences.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "bb1dbe1c-de30-4c28-b3b0-0af407a3e0fe",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C118",
+      "claim": "It is unlikely that any internalized oligomers would bind to all TRiC subunits uniformly or line up TRiC's cavity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is unlikely that any internalized oligomers would bind to all subunits uniformly or line up TRiC's cavity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural heterogeneity of TRiC's binding sites.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "cd84e1b0-cb46-4de3-a0f7-8d46b7ee9f28",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C119",
+      "claim": "A hollow-template-guided approach was applied to further localize the inner mass within the chamber of the cavity-occupied TRiC average.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, we applied a hollow-template-guided approach to further localize the inner mass within the chamber of the cavity-occupied TRiC average.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes an additional computational analysis performed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "9cd10106-b0b3-4439-986f-9c5d4b2c76b2",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C120",
+      "claim": "The hollow-template-guided procedure localized the internalized density in the cavity-occupied average but had little effect on the cavity of the cavity-empty set.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While this procedure localized the internalized density in our cavity-occupied average, it had little effect on the cavity of the cavity-empty set.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the differential effect of the analysis on the two populations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "5f549766-9edb-4701-972a-5441d37b6dc6",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C121",
+      "claim": "The 'dip' in the rotational correlation plot for the cavity-occupied average with the localized density can be explained by the presence of a large mass inside.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Of note, the 'dip' in the overall shape of the rotational correlation plot for the cavity-occupied average with the localized density can be explained by the presence of a large mass inside",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the rotational correlation analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "f13d2143-7cf3-4c90-a797-3bbcc5156c38",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "claim_id": "C122",
+      "claim": "Applying the same classification and processing strategy to fibril-bound and control TRiCs as applied to freestanding TRiC did not yield any averages with comparable density inside the cavity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Applying the same classification and processing strategy to fibril-bound and control TRiCs as applied to freestanding TRiC did not yield any averages with comparable density inside the cavity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a negative control result that validates the specificity of the cavity-occupied finding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The time-course 2-D cryoEM observations clearly demonstrate that TRiC prevents progression of mhttQ51 fibrils into large sheaves. The comparative data between +/- TRiC conditions at multiple time points (45 min, 4 hr, 24 hr) consistently show TRiC's inhibitory effect. While 2-D imaging cannot definitively prove direct binding, the morphological observations of aggregate suppression are well-documented.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The 3-D tomography and SPT analysis provide strong structural evidence for TRiC binding to fibril tips via apical domains. The bias-free, model-free averaging approach (326 subvolumes from 6 tomograms) and consistent observation of extra density at apical tips across multiple independent averages validate this finding. The use of 3-D tomography overcomes the limitations of 2-D projection imaging.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "2af366c8-7666-40b6-8140-60349760a167",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The cavity-occupied TRiC finding is well-supported by statistical classification, control experiments, and multiple lines of evidence. The ~4-5 fold increase in cavity occupation with mhtt (40-50%) vs without (10%) is significant. The exclusion of GST and native substrates as alternative explanations strengthens the conclusion. The estimated oligomer size (~60 kDa, ~6 monomers) is reasonable given the modest resolution (~52 \u00c5), though detailed structural features cannot be resolved.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "5ab6f166-846f-42c1-9d1e-7fd63838509e",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The SPT methodology is appropriately validated through multiple approaches: bias-free processing without reference or symmetry imposition, demonstration of expected pseudo-eightfold symmetry in the averages, and resolution assessment via FSC. The use of cross-correlation map normalization to avoid missing wedge bias is appropriate. The modest resolution (46-52 \u00c5) is acknowledged and appropriate for the heterogeneous specimen.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "7595fa49-2ad0-4699-ab29-4cff50560bc0",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The dual mechanism model (fibril capping + oligomer encapsulation) is well-supported by the structural data from Results R2 and R3. The model provides a coherent structural explanation for TRiC's known biochemical inhibition of mhtt aggregation. While some aspects involve inference about how the two mechanisms operate together, the individual structural observations are solid and the integrated model is parsimonious.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The experimental design follows well-established protocols from prior work. The mhtt concentration (6 \u00b5M) and TRiC:mhtt ratio are appropriately chosen based on cited studies to allow aggregation while enabling TRiC inhibition. The imaging parameters and data collection procedures are clearly described. The quality control (6 of 20 tilt series used) demonstrates appropriate rigor.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "15d58092-7a85-4dc2-bb14-ad2b2e395087",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims connect the in vitro structural observations to cellular phenomena and prior in vivo observations. While the connections are plausible and supported by citations to prior work, they remain somewhat speculative. The in vitro conditions may not fully recapitulate the cellular environment, and direct validation of these connections in cells would strengthen the conclusions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841",
+      "content_id": "c3e7ba98-f534-4b48-9ecb-5b5efbd9be7f",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These mechanistic hypotheses extend beyond the direct structural observations. While they are reasonable inferences based on the data and prior knowledge (e.g., N17 domain involvement, protective effects against PTMs, dual-end binding), they remain speculative and would require additional experiments to validate. The heterogeneity of encapsulated oligomers (C88) is acknowledged but not fully characterized.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6edfa96f-2484-4ac0-8f50-7dba276783ca",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers question whether the 1:5 molar ratio of TRiC to mhtt used in experiments is physiologically relevant, stating 'it is not evident that a 1:5 molar ratio of TRiC to mhtt can be physiological' and requesting elaboration on typical in vivo levels. While the authors cite prior work justifying their conditions, reviewers express uncertainty about the physiological relevance of these experimental parameters.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "7d0bc9c5-40ad-4132-8144-beed24fe1052",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers question the choice of mhttQ51 (the lowest pathogenic Q frequency) asking 'Which form is most abundant in cells?' and 'Is this form typical under physiological conditions?' This indicates uncertainty about whether the model system accurately represents the most relevant pathogenic species, though reviewers do not reject the approach outright.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers acknowledge this as 'one of the most interesting findings' that TRiC decorates fibril tips, but state 'the implications of this finding in the context of mHtt fibril formation remain unclear.' This indicates the structural observation is accepted but its mechanistic and biological significance requires further clarification.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "6b2a4a05-4cce-4bd8-8022-163834129d7a",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request quantitative statistics on TRiC binding patterns, asking 'How frequently was TRiC found at fibril ends and how many along fibrils? What was the ratio between free fibril ends/TRiC capped ends?' They also raise concern that 'many of the interactions between the TRiC and the fibrils were lost during sample preparation.' This indicates uncertainty about the completeness and representativeness of the observed binding patterns.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers ask 'what proportion of TRiC was not interacting with the fibrils? Did these \"unbound\" complexes contain protein in their cavity?' While the manuscript provides some quantitative data (890 freestanding vs 326 fibril-bound), reviewers seek additional clarification about the functional state and contents of the unbound population.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "a64e9f8f-3125-4a70-bd3b-9f7ee9907668",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers question 'Was the map resolution really isotropic (as mentioned in the Methods section)?' This expresses doubt about the resolution assessment claims, suggesting the reviewers are uncertain whether the reported resolution characteristics are accurate given the limitations of tomographic reconstruction.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "68931983-ce53-4907-899f-46e5e3b8f8d7",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express significant doubt about the distinction between cavity-empty and cavity-occupied TRiC classes, stating 'it is difficult to be sure that the difference between them is significant' and noting that 'the smooth distribution of correlation factors in Figure 4 does not help, and the histograms of Figure 4 also do not indicate a clear difference between the two classes.' They request 'a quantitative measure to convince the reader that the difference between the two classes is real.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "eed30670-16d5-4b76-9666-75456bdef9ce",
+      "content_id": "c29cf71f-3fe5-402a-850b-e4aa9ccbab22",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers state that 'The difference density in Figure 8B looks nice, but would be even more convincing if the authors were to show a control with empty TRiCs processed by the same procedure alongside.' While the manuscript includes control data showing ~10% vs ~40-50% occupancy, reviewers request additional controls to strengthen confidence in the cavity-occupied density interpretation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83ef0b82-0ced-40b7-a432-d2e0489cc438",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "7ba0059c-8338-4a84-9bc1-c825c55a77ac",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "bb2a194e-58a2-4317-8363-d9c511738dca",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "4c669454-4977-4582-890f-a727a6d5fc0b",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "d5038404-2f41-4892-942b-64fef8eeb0df",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "3174ab92-334d-4fd9-8308-18ba794384e3",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "a2e0fb44-3883-4582-8816-bbc17bcc0493",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "43aa1936-9541-4416-adc7-043c285f6862",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "c5140573-2878-4e59-86a4-8eece1559210",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "b5a014be-701b-4686-b590-9460222f4255",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "4943c249-a96e-4669-85d8-5802f0009892",
+      "result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6"
+    },
+    {
+      "claim_id": "83fc288a-5beb-4d53-97aa-e4c7fc1dd14f",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "55245efe-4141-43ea-9180-3ad5d5079cab",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "26c002d8-01a0-4af5-aba4-9e280663c0cf",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "39806abe-7131-4814-8f92-167fe67810e6",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "29f0719f-43f8-4899-8efd-f07e4a24f6a7",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "f8cbbc1d-a786-4bc2-995d-0d8a688c0f3f",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "fb5ab5cd-62bc-4594-9403-fdd99f7cbdf7",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "11f842c3-ae45-47d0-a535-5be01870ae45",
+      "result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f"
+    },
+    {
+      "claim_id": "5b8f6285-a418-457e-b24f-47e27c89454a",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "d45e3ef0-1cce-453e-be02-dc4c0d8cde8d",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "95339626-1ffe-45a1-9b68-a6436c8a9523",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "5a31a128-a0c3-432b-b7ff-e9088755bfc6",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "429b3905-e9aa-4b78-b12d-12406dff14ce",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "25588e98-c9c3-4d15-9a72-3d4f70fbb6c8",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "53460460-acce-4c78-ada5-09c28fffa4b1",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "dcbd7291-ac14-4671-80a9-310b1a7ff7f8",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "f51ee49f-8c2c-45ee-94de-67cc48a3535d",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "cd61b403-d38f-4d99-a70a-ea314c5ebcad",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "cb18a62e-039b-4744-9d1f-b9dbe2b265b7",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "734c7bd0-27b4-4509-a9cf-03837a785718",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "0dc79a0b-6ea0-4ec6-8401-80488c26f371",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "68e982e7-0cd7-4c5c-b115-582f4746ae0f",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "06f8b7ef-1fd4-4988-bf1e-53e3560554de",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "1be34a6f-bd01-48de-bfed-2007fbf64fb1",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "cf2e3e89-a452-4454-bb77-b7ce81922626",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "cd84e1b0-cb46-4de3-a0f7-8d46b7ee9f28",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "9cd10106-b0b3-4439-986f-9c5d4b2c76b2",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "f13d2143-7cf3-4c90-a797-3bbcc5156c38",
+      "result_id": "2af366c8-7666-40b6-8140-60349760a167"
+    },
+    {
+      "claim_id": "4db75936-2624-4719-8515-201758688ed2",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "2e910217-6818-4b06-a642-62de1dbe420e",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "6b6a97cf-4991-4159-88f7-ceb38fab94d4",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "66ed7a4b-33df-445a-b086-5bc6b7dfcc86",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "e3a5b983-aa15-4837-9145-8e8a9e264747",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "3498231c-4de8-4f24-835f-6d802663984d",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "6b5ac0a7-55a3-4efb-b009-66cf7efdc30b",
+      "result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e"
+    },
+    {
+      "claim_id": "f09ab984-3550-4a27-83f7-7d5f1f3e7fb2",
+      "result_id": "7595fa49-2ad0-4699-ab29-4cff50560bc0"
+    },
+    {
+      "claim_id": "58844539-fe2f-421a-8014-a9bf3b5fd9a7",
+      "result_id": "7595fa49-2ad0-4699-ab29-4cff50560bc0"
+    },
+    {
+      "claim_id": "1d3643d7-0dcb-4582-b00e-cabc95429225",
+      "result_id": "7595fa49-2ad0-4699-ab29-4cff50560bc0"
+    },
+    {
+      "claim_id": "ff8be373-e50d-4942-ada8-d08f08e9c5b7",
+      "result_id": "7595fa49-2ad0-4699-ab29-4cff50560bc0"
+    },
+    {
+      "claim_id": "831ee38a-6ba6-42aa-942b-31237a312583",
+      "result_id": "7595fa49-2ad0-4699-ab29-4cff50560bc0"
+    },
+    {
+      "claim_id": "963edff7-e6e5-430c-a63c-c99035f8f401",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "3187fd7e-fb38-4b8e-88fe-4f0223ffacd8",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "35f1f2e6-ae4b-4ffe-bb74-0bd19a7ae033",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "3133d6a5-0983-4bd5-90c6-c27cbab16416",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "b1e52336-369a-4394-9b07-4c9701b7382d",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "3fb7e09b-ff43-4492-8129-e7fff063a748",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "d20c32bc-c0f0-4db2-abdc-8335a46c14b9",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "a5d419c4-3e1a-4974-9151-679c638334b5",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "49274423-b1f0-40b6-98d2-d74687c790c6",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "2eea6979-865b-48d7-bc2c-6e5f6e905b4e",
+      "result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6"
+    },
+    {
+      "claim_id": "cdb47977-8411-4dbe-8b76-491511e286d4",
+      "result_id": "15d58092-7a85-4dc2-bb14-ad2b2e395087"
+    },
+    {
+      "claim_id": "8e36e267-3c68-4411-b119-7dbb9ea576eb",
+      "result_id": "15d58092-7a85-4dc2-bb14-ad2b2e395087"
+    },
+    {
+      "claim_id": "4ccc4479-9e48-40eb-a32f-c6d2ba521bd0",
+      "result_id": "15d58092-7a85-4dc2-bb14-ad2b2e395087"
+    },
+    {
+      "claim_id": "e5bf14b0-16fa-43dc-91c1-f3aa0c0da688",
+      "result_id": "15d58092-7a85-4dc2-bb14-ad2b2e395087"
+    },
+    {
+      "claim_id": "3db8ba9a-fa0e-4f51-bb94-ca9c80d53d3e",
+      "result_id": "15d58092-7a85-4dc2-bb14-ad2b2e395087"
+    },
+    {
+      "claim_id": "36f8b8e4-87ed-4e3b-bd71-66b73fac273f",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "01866b26-c00f-427c-8c1d-991aa8a4b8ce",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "90b41e40-1e5c-4080-9ef0-39faed3e641b",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "21ca7303-601c-4570-be9d-b8ed004c3293",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "d95f6272-effc-4059-b9eb-3bf90007a537",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "255c25ef-3bcd-4942-aa59-c7ff83dc456d",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "7315b619-2a95-4010-9b42-671398509362",
+      "result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841"
+    },
+    {
+      "claim_id": "963edff7-e6e5-430c-a63c-c99035f8f401",
+      "result_id": "6edfa96f-2484-4ac0-8f50-7dba276783ca"
+    },
+    {
+      "claim_id": "3187fd7e-fb38-4b8e-88fe-4f0223ffacd8",
+      "result_id": "6edfa96f-2484-4ac0-8f50-7dba276783ca"
+    },
+    {
+      "claim_id": "35f1f2e6-ae4b-4ffe-bb74-0bd19a7ae033",
+      "result_id": "6edfa96f-2484-4ac0-8f50-7dba276783ca"
+    },
+    {
+      "claim_id": "e376329d-1c79-449f-a3e5-43041608354f",
+      "result_id": "6edfa96f-2484-4ac0-8f50-7dba276783ca"
+    },
+    {
+      "claim_id": "e278ac25-ec92-4ba0-b358-e396a24251f9",
+      "result_id": "6edfa96f-2484-4ac0-8f50-7dba276783ca"
+    },
+    {
+      "claim_id": "121fb7dd-4f8d-4daa-82a6-c81fa64b9477",
+      "result_id": "7d0bc9c5-40ad-4132-8144-beed24fe1052"
+    },
+    {
+      "claim_id": "e5992b3d-677c-4d51-9b52-9df062daaec8",
+      "result_id": "7d0bc9c5-40ad-4132-8144-beed24fe1052"
+    },
+    {
+      "claim_id": "3133d6a5-0983-4bd5-90c6-c27cbab16416",
+      "result_id": "7d0bc9c5-40ad-4132-8144-beed24fe1052"
+    },
+    {
+      "claim_id": "83fc288a-5beb-4d53-97aa-e4c7fc1dd14f",
+      "result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3"
+    },
+    {
+      "claim_id": "b5a014be-701b-4686-b590-9460222f4255",
+      "result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3"
+    },
+    {
+      "claim_id": "4943c249-a96e-4669-85d8-5802f0009892",
+      "result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3"
+    },
+    {
+      "claim_id": "f8cbbc1d-a786-4bc2-995d-0d8a688c0f3f",
+      "result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3"
+    },
+    {
+      "claim_id": "fb5ab5cd-62bc-4594-9403-fdd99f7cbdf7",
+      "result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3"
+    },
+    {
+      "claim_id": "11f842c3-ae45-47d0-a535-5be01870ae45",
+      "result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3"
+    },
+    {
+      "claim_id": "b5a014be-701b-4686-b590-9460222f4255",
+      "result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a"
+    },
+    {
+      "claim_id": "4943c249-a96e-4669-85d8-5802f0009892",
+      "result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a"
+    },
+    {
+      "claim_id": "26c002d8-01a0-4af5-aba4-9e280663c0cf",
+      "result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a"
+    },
+    {
+      "claim_id": "39806abe-7131-4814-8f92-167fe67810e6",
+      "result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a"
+    },
+    {
+      "claim_id": "29f0719f-43f8-4899-8efd-f07e4a24f6a7",
+      "result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a"
+    },
+    {
+      "claim_id": "b4d40253-bc55-4e74-8b21-263147806eb8",
+      "result_id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8"
+    },
+    {
+      "claim_id": "d45e3ef0-1cce-453e-be02-dc4c0d8cde8d",
+      "result_id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8"
+    },
+    {
+      "claim_id": "95339626-1ffe-45a1-9b68-a6436c8a9523",
+      "result_id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8"
+    },
+    {
+      "claim_id": "53460460-acce-4c78-ada5-09c28fffa4b1",
+      "result_id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8"
+    },
+    {
+      "claim_id": "734c7bd0-27b4-4509-a9cf-03837a785718",
+      "result_id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8"
+    },
+    {
+      "claim_id": "f51ee49f-8c2c-45ee-94de-67cc48a3535d",
+      "result_id": "a64e9f8f-3125-4a70-bd3b-9f7ee9907668"
+    },
+    {
+      "claim_id": "6b5ac0a7-55a3-4efb-b009-66cf7efdc30b",
+      "result_id": "a64e9f8f-3125-4a70-bd3b-9f7ee9907668"
+    },
+    {
+      "claim_id": "5a31a128-a0c3-432b-b7ff-e9088755bfc6",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "429b3905-e9aa-4b78-b12d-12406dff14ce",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "25588e98-c9c3-4d15-9a72-3d4f70fbb6c8",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "53460460-acce-4c78-ada5-09c28fffa4b1",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "dcbd7291-ac14-4671-80a9-310b1a7ff7f8",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "f51ee49f-8c2c-45ee-94de-67cc48a3535d",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "cd61b403-d38f-4d99-a70a-ea314c5ebcad",
+      "result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7"
+    },
+    {
+      "claim_id": "53460460-acce-4c78-ada5-09c28fffa4b1",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "dcbd7291-ac14-4671-80a9-310b1a7ff7f8",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "cd61b403-d38f-4d99-a70a-ea314c5ebcad",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "cb18a62e-039b-4744-9d1f-b9dbe2b265b7",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "734c7bd0-27b4-4509-a9cf-03837a785718",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "0dc79a0b-6ea0-4ec6-8401-80488c26f371",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "68e982e7-0cd7-4c5c-b115-582f4746ae0f",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    },
+    {
+      "claim_id": "06f8b7ef-1fd4-4988-bf1e-53e3560554de",
+      "result_id": "eed30670-16d5-4b76-9666-75456bdef9ce"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "77b790c0-019c-40f3-a0aa-c1a62cab54ba",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "2af366c8-7666-40b6-8140-60349760a167",
+      "peer_result_id": "eed30670-16d5-4b76-9666-75456bdef9ce",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both evaluate cavity-occupied TRiC findings (C52, C53, C55, C80-C84). LLM finds evidence sufficient with ~4-5 fold increase and control experiments. Peer reviewers request additional controls with empty TRiCs processed identically, expressing uncertainty about the difference density interpretation despite acknowledging it 'looks nice'.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "b6890e6b-2f21-4126-80b1-f84d44eecf24",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "2af366c8-7666-40b6-8140-60349760a167",
+      "peer_result_id": "68931983-ce53-4907-899f-46e5e3b8f8d7",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address cavity-occupied vs cavity-empty TRiC classification (C49-C55). LLM considers statistical classification and controls sufficient. Peer reviewers express significant doubt about distinguishing the two classes, stating 'it is difficult to be sure that the difference between them is significant' and requesting quantitative measures to prove the difference is real.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "901c159d-1535-4c9c-811a-4244c1f30cad",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f",
+      "peer_result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both evaluate TRiC binding to fibril tips via apical domains (C5, C45, C46, C71). LLM finds 3-D tomography and SPT analysis provide strong structural evidence. Peer reviewers acknowledge this as 'one of the most interesting findings' but state 'the implications of this finding in the context of mHtt fibril formation remain unclear,' indicating acceptance of observation but uncertainty about biological significance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "0eaa32d3-5890-4379-8d20-13de969c6c48",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "53d23727-3e66-405f-bd1b-47f4f0e37d5f",
+      "peer_result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address TRiC binding patterns and fibril interactions (C41, C43, C44). LLM supports the structural evidence from tomography. Peer reviewers request quantitative statistics on binding frequency and ratios, and express concern that 'many of the interactions between the TRiC and the fibrils were lost during sample preparation,' indicating uncertainty about completeness of observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "1724c6a9-1306-4f23-ab77-9b94090ce7c5",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6",
+      "peer_result_id": "6edfa96f-2484-4ac0-8f50-7dba276783ca",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both evaluate experimental design parameters (C56, C57, C58). LLM finds the 1:5 TRiC:mhtt ratio appropriately justified by prior work. Peer reviewers question whether this ratio 'can be physiological' and request elaboration on typical in vivo levels, expressing uncertainty about physiological relevance despite cited justifications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "94b0de17-5ccd-4209-a935-bc15dbcb0d94",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "5ab6f166-846f-42c1-9d1e-7fd63838509e",
+      "peer_result_id": "a64e9f8f-3125-4a70-bd3b-9f7ee9907668",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address resolution assessment (C116). LLM finds SPT methodology appropriately validated with FSC-based resolution assessment. Peer reviewers question 'Was the map resolution really isotropic (as mentioned in the Methods section)?' expressing doubt about reported resolution characteristics given tomographic reconstruction limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "c5a76c3a-4d18-4fe6-96d3-35325cb8df1c",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "2af366c8-7666-40b6-8140-60349760a167",
+      "peer_result_id": "f9c34a3b-9827-45f2-8195-92c2ce5fade8",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "Partial overlap on cavity-related claims (C47, C48, C52, C81). LLM supports cavity occupation findings. Peer reviewers seek clarification about unbound TRiC population and their cavity contents, though manuscript provides some quantitative data (890 freestanding vs 326 fibril-bound). Different focus: LLM on occupied cavities, reviewers on unbound population characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "57d0c256-6c27-4dc7-ade3-7427bbf0a5a8",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6",
+      "peer_result_id": "6b2a4a05-4cce-4bd8-8022-163834129d7a",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "Minimal overlap (C35, C36) on aggregate prevention observations. LLM supports time-course 2-D cryoEM demonstration of fibril prevention. Peer reviewers' uncertainty focuses on quantitative binding statistics and sample preparation losses, which extends beyond the specific claims in LLM R1 about aggregate morphology observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "07c73b32-7db9-461f-bdb8-c52af3ad7ef6",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "3c5352bb-3774-4fe0-b32b-5cc80c5ff8c6",
+      "peer_result_id": "a974eecd-c473-479b-8b62-7b1a8e1eecc3",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "Minimal overlap (C35, C36) on fibril prevention. LLM supports 2-D cryoEM observations of aggregate suppression. Peer reviewers acknowledge TRiC decorating fibril tips as interesting but find implications unclear. Different scopes: LLM on morphological observations, reviewers on mechanistic implications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "d845d6d9-387d-49ad-bd58-7852635f0eb0",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "4fde9459-5b2e-40a1-9f73-efd5fce584b6",
+      "peer_result_id": "7d0bc9c5-40ad-4132-8144-beed24fe1052",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "Minimal overlap (C103) on experimental conditions. LLM supports overall experimental design following established protocols. Peer reviewers question choice of mhttQ51 (lowest pathogenic Q frequency), asking if this form is most abundant and typical under physiological conditions. Different focus areas within experimental design evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "85327230-2d85-4a15-a5d0-fc2514aa735e",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "2af366c8-7666-40b6-8140-60349760a167",
+      "peer_result_id": "a64e9f8f-3125-4a70-bd3b-9f7ee9907668",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "notes": "Minimal overlap (C54) on resolution. LLM supports cavity-occupied findings with acknowledged modest resolution. Peer reviewers question isotropy of resolution specifically. Very limited claim overlap; different aspects of resolution assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "28246794-ccea-4b22-a7f2-08c161088814",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "7595fa49-2ad0-4699-ab29-4cff50560bc0",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM evaluates dual mechanism model (C64, C92, C93, C96, C101) integrating fibril capping and oligomer encapsulation. No corresponding peer review result directly addresses this integrated mechanistic model, though individual components are questioned in other peer results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "9b4dc703-323d-4670-b7b8-1257ee0b975a",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "15d58092-7a85-4dc2-bb14-ad2b2e395087",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM expresses uncertainty about connections to cellular phenomena (C61, C62, C72, C73, C98), noting in vitro conditions may not recapitulate cellular environment. No corresponding peer review result directly addresses these specific claims about cellular relevance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    },
+    {
+      "id": "611cbede-33c7-41e6-b3ce-b4915bebf5a1",
+      "submission_id": "24e98cad-bec9-47db-940c-a0fe1361709f",
+      "llm_result_id": "9c609e2f-3156-461b-8f7b-8c90f4c4a841",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM expresses uncertainty about mechanistic hypotheses extending beyond direct observations (C68, C70, C74, C75, C87, C88, C99), including N17 domain involvement and dual-end binding. No corresponding peer review result directly addresses these specific mechanistic speculations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:39:06.699859Z"
+    }
+  ]
+}

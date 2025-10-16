@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The single molecule tracking methodology is well-validated with appropriate controls. The bimodal distribution of pMHC mobility, peptide specificity controls, and colocalization with TCR provide strong converging evidence that slow-moving pMHC represent bound pMHC:TCR complexes. The use of different exposure times to discriminate bound from free pMHC is technically sound."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C90",
+      "C91"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The measured dwell times (5.2 s for 5c.c7 and 53.8 s for AND) are well-supported by proper photobleaching controls showing \u03c4_bl >> \u03c4_obs, exponential distributions consistent with first-order kinetics, and agreement with independent SPR measurements. The temporal dynamic range (50 ms to 5 min) is appropriate for capturing these timescales."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C65",
+      "C95",
+      "C119"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The 1:1 stoichiometry claim relies on observing ~6 total ZAP70 molecules (3 ZAP70-EGFP \u00d7 2 for 1:1 expression ratio) per pMHC, compared to 10 ITAMs per TCR. While this suggests single TCR triggering, the uncertainty in ZAP70-EGFP expression ratio, incomplete ITAM phosphorylation, and the range of observed stoichiometries (1-10 ZAP70-EGFP) introduce ambiguity. Additional validation of the expression ratio and more direct TCR counting would strengthen this conclusion."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C96",
+      "C117",
+      "C118"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The conclusion that signal amplification occurs downstream is well-supported by the 1:1 stoichiometry observations, lack of serial triggering on minute timescales, and absence of molecular-scale cooperativity. This is a logical inference from the single molecule data showing individual pMHC molecules trigger individual TCRs without supernumerary triggering."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C49",
+      "C50",
+      "C61",
+      "C64",
+      "C93",
+      "C123",
+      "C124"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The linear trajectories of pMHC:TCR complexes toward the cell center, matching well-characterized actomyosin-driven transport, provide strong evidence for cytoskeletal engagement. The immediate onset after T cell landing and stable co-movement of ZAP70 with pMHC further support this conclusion. This is consistent with extensive prior literature on immunological synapse formation."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C76",
+      "C77",
+      "C27",
+      "C28",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The stochastic reaction-diffusion simulations comprehensively demonstrate that serial rebinding cannot account for the observed dwell times except under unrealistic conditions (very large TCR clusters or extremely fast k_on). The mathematical framework is sound and the conclusion that \u03c4_esc \u2248 \u03c4_off for physiologically relevant cluster sizes (1-100 TCRs) is well-supported across a wide parameter space."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C79",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The discrepancy between FRET measurements (~150 ms) and tracking measurements (~5 s) for 5c.c7 TCR is acknowledged but not fully resolved. While the authors observe minimal effects of cytoskeleton disruption (contradicting the FRET study's interpretation), the 35-fold difference in measured kinetics between methods remains unexplained. The proposed conformational flexibility hypothesis (C29, C109-C114) is speculative and requires additional experimental validation."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The conformational flexibility hypothesis to reconcile FRET and tracking measurements is plausible and supported by structural studies showing pMHC:TCR flexibility. However, this remains speculative without direct experimental evidence. The reasoning that conformational changes could produce FRET signals without unbinding is sound, but requires validation through additional experiments such as force spectroscopy or structural dynamics studies."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C66",
+      "C67",
+      "C68",
+      "C92",
+      "C94"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The demonstration that individual pMHC molecules trigger TCR without involvement of other MHC molecules is strongly supported by single molecule resolution showing isolated pMHC:TCR:ZAP70 complexes. The long-lived functional interactions, ZAP70 recruitment as a triggering marker, and continuous tracking of individual complexes provide robust evidence for this conclusion."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The interpretation of intensity changes (step decreases as unbinding, step increases as ZAP70 binding) is reasonable given \u03c4_off << \u03c4_bl. The observation that ZAP70 events are rare but long-lived (12-107 s) argues against rapid unbinding/rebinding. The range of ZAP70 stoichiometries suggesting time-dependent accumulation is a cautious interpretation consistent with the data."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C115",
+      "C116"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The conclusion that cellular-level cooperativity arises from intracellular feedback rather than molecular-scale cooperativity is well-reasoned. The observation that pMHC:TCR:ZAP70 complexes form according to mass action laws with predictable kinetics matching solution measurements supports a model where complexity emerges downstream of the initial triggering event."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The comparison between AND and 226 TCRs is well-justified by their identical CDR3 sequences and shared gene segments. The consistency between in situ measurements and SPR data for kinetic off-rates provides validation for the tracking approach and supports the conclusion that live cell measurements reflect genuine molecular binding kinetics."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C129",
+      "C130"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The use of Ni-NTA lipids to ensure monodispersion is well-validated by prior literature and confirmed by single-step photobleaching in the current experiments. The observation that pMHC dimers (rare, detected by two-step photobleaching) produce equivalent ZAP70 output to monomers further supports the 1:1 triggering model and validates the single molecule approach."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The experimental design spanning pMHC densities from 0.2 to 100 molecules/\u03bcm\u00b2 is appropriate, covering both sub-threshold and supra-threshold conditions. The contextualization against Ca\u00b2\u207a flux thresholds and microcluster formation densities from prior work demonstrates thoughtful experimental design to probe different activation regimes."
+  }
+]

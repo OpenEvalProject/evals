@@ -1,0 +1,243 @@
+{
+  "submission": {
+    "id": "e8460cc8-1102-461a-ad1d-40ce52467068",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:31:53.585860Z",
+    "updated_at": "2025-10-16T22:31:53.585860Z"
+  },
+  "content": [
+    {
+      "id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "submission_id": "e8460cc8-1102-461a-ad1d-40ce52467068",
+      "content_type": "manuscript",
+      "content_text": "# Designer antiandrogens join the race against drug resistance\n\n## Authors\n\n- Jatinder S Josan<sup>1</sup>\n- John A Katzenellenbogen<sup>2</sup>\n\n### Affiliations\n\n1. Department of Chemistry University of Illinois at Urbana-Champaign Urbana United States jsjosan@illinois.edu\n2. the Department of Chemistry University of Illinois at Urbana-Champaign Urbana United States jkatzene@illinois.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nBy using in silico models of the complexes formed by analogues of a cancer drug and its receptor, it may be possible to strategically redesign existing drugs and win the race against mutations that lead to drug resistance in prostate cancer.\n",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cc5be48c-d48f-4dc0-b736-dbb348263817",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C1",
+      "claim": "Antiandrogens are being developed or modified to combat drug resistance in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Designer antiandrogens join the race against drug resistance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title indicates that designer (modified/new) antiandrogens are being developed to address drug resistance, though the specific details are not provided in this excerpt.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "93a3f149-3a04-45bd-a63c-84446e11194a",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C2",
+      "claim": "Drug resistance is a problem in prostate cancer treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Designer antiandrogens join the race against drug resistance",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The title and abstract reference drug resistance in prostate cancer as a challenge that needs to be addressed, drawing on established knowledge that resistance is a clinical problem.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "8daee4cd-cd93-42cb-b450-d08b0de515d4",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C3",
+      "claim": "In silico models can be used to study complexes formed between cancer drug analogues and their receptors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By using in silico models of the complexes formed by analogues of a cancer drug and its receptor",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly states that in silico models can be used to study drug-receptor complexes, reflecting established computational modeling approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "6f7f25b9-9f89-4d5c-8c2b-5543f08adcdf",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C4",
+      "claim": "Cancer drugs form complexes with their receptors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in silico models of the complexes formed by analogues of a cancer drug and its receptor",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement assumes the established biological principle that drugs interact with and bind to receptors to form complexes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "891a7b13-5685-4353-a8c3-0ec6ef7917f1",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C5",
+      "claim": "Strategic redesign of existing drugs may be possible using in silico models of drug-receptor complexes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By using in silico models of the complexes formed by analogues of a cancer drug and its receptor, it may be possible to strategically redesign existing drugs",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The use of 'may be possible' indicates this is a speculative or prospective claim about the potential application of in silico modeling to drug redesign.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "69f0505c-780d-4dd4-ba6c-553f2355d97f",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C6",
+      "claim": "Mutations lead to drug resistance in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "win the race against mutations that lead to drug resistance in prostate cancer",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly states that mutations lead to drug resistance in prostate cancer, reflecting established understanding of resistance mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "009ae906-2ace-4f46-a962-e2cdc866ae2c",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C7",
+      "claim": "Strategic drug redesign using in silico models could help overcome mutation-driven drug resistance in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By using in silico models of the complexes formed by analogues of a cancer drug and its receptor, it may be possible to strategically redesign existing drugs and win the race against mutations that lead to drug resistance in prostate cancer",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The abstract proposes that in silico modeling-guided drug redesign may help address mutation-driven resistance, presented as a prospective possibility ('may be possible').",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "3d35b8a3-55b0-40ea-be3a-1750c8e4902d",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C8",
+      "claim": "Antiandrogens are used as cancer drugs in prostate cancer treatment.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Designer antiandrogens join the race against drug resistance... in prostate cancer",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The context of antiandrogens being developed to combat drug resistance in prostate cancer implies they are therapeutic agents for this disease, based on established medical knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "8aeb298c-ebf6-496c-81a0-f764172ae853",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C9",
+      "claim": "There is competition or urgency in developing solutions to drug resistance in prostate cancer.",
+      "claim_type": "IMPLICIT",
+      "source_text": "join the race against drug resistance... win the race against mutations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The metaphor of a 'race' implies competitive urgency and time pressure in developing solutions to drug resistance, suggesting this is an active area of research with clinical importance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "e5bed433-d506-4d05-9b1f-79c401bbbfe2",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C10",
+      "claim": "Analogues of cancer drugs can be studied to inform drug design.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By using in silico models of the complexes formed by analogues of a cancer drug and its receptor, it may be possible to strategically redesign existing drugs",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The abstract indicates that studying drug analogues through computational models can inform strategic drug redesign, reflecting medicinal chemistry approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "93be996d-0f98-40fb-a44a-201050dbc85b",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "claim_id": "C11",
+      "claim": "Receptor interactions are relevant to understanding drug resistance mechanisms.",
+      "claim_type": "IMPLICIT",
+      "source_text": "in silico models of the complexes formed by analogues of a cancer drug and its receptor... win the race against mutations that lead to drug resistance",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The connection between studying drug-receptor complexes and overcoming resistance implies that receptor interactions are important for understanding resistance mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1697eb9b-7057-4966-900b-a768bebad687",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C2, C6, C8, and C9 establish the clinical problem context: drug resistance in prostate cancer is driven by mutations, antiandrogens are therapeutic agents, and there is urgency to address resistance. These are well-established facts in oncology supported by extensive prior literature, appropriately referenced as general knowledge claims in a commentary piece.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    },
+    {
+      "id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd",
+      "content_id": "75ee933f-a272-48e9-b0ab-84fc5bc358b3",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C3-C5, C7, C10-C11 propose that in silico modeling of drug-receptor complexes can guide strategic redesign of antiandrogens to overcome mutation-driven resistance. While the underlying computational methods are established (C3, C4), the specific application to overcome resistance (C5, C7) is presented as speculative ('may be possible'). This is appropriately qualified as a prospective approach in a commentary piece, but lacks experimental validation or demonstration, making the result uncertain rather than supported.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:53.585860Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "93a3f149-3a04-45bd-a63c-84446e11194a",
+      "result_id": "1697eb9b-7057-4966-900b-a768bebad687"
+    },
+    {
+      "claim_id": "69f0505c-780d-4dd4-ba6c-553f2355d97f",
+      "result_id": "1697eb9b-7057-4966-900b-a768bebad687"
+    },
+    {
+      "claim_id": "3d35b8a3-55b0-40ea-be3a-1750c8e4902d",
+      "result_id": "1697eb9b-7057-4966-900b-a768bebad687"
+    },
+    {
+      "claim_id": "8aeb298c-ebf6-496c-81a0-f764172ae853",
+      "result_id": "1697eb9b-7057-4966-900b-a768bebad687"
+    },
+    {
+      "claim_id": "cc5be48c-d48f-4dc0-b736-dbb348263817",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    },
+    {
+      "claim_id": "8daee4cd-cd93-42cb-b450-d08b0de515d4",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    },
+    {
+      "claim_id": "6f7f25b9-9f89-4d5c-8c2b-5543f08adcdf",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    },
+    {
+      "claim_id": "891a7b13-5685-4353-a8c3-0ec6ef7917f1",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    },
+    {
+      "claim_id": "009ae906-2ace-4f46-a962-e2cdc866ae2c",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    },
+    {
+      "claim_id": "e5bed433-d506-4d05-9b1f-79c401bbbfe2",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    },
+    {
+      "claim_id": "93be996d-0f98-40fb-a44a-201050dbc85b",
+      "result_id": "bff595f7-5cb0-4a9e-aff8-6556e6cec4fd"
+    }
+  ],
+  "comparisons": []
+}

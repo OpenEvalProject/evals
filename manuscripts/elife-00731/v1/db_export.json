@@ -1,0 +1,2565 @@
+{
+  "submission": {
+    "id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:40:55.248769Z",
+    "updated_at": "2025-10-16T22:40:55.248769Z"
+  },
+  "content": [
+    {
+      "id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "content_type": "manuscript",
+      "content_text": "# The rise and fall of the Phytophthora infestans lineage that triggered the Irish potato famine\n\n## Authors\n\n- Kentaro Yoshida<sup>1</sup>\n- Verena J Schuenemann<sup>2</sup>\n- Liliana M Cano<sup>1</sup>\n- Marina Pais<sup>1</sup>\n- Bagdevi Mishra<sup>3</sup>\n- Rahul Sharma<sup>3</sup>\n- Chirsta Lanz<sup>6</sup>\n- Frank N Martin<sup>7</sup>\n- Sophien Kamoun<sup>1</sup>\n- Johannes Krause<sup>2</sup>\n- Marco Thines<sup>3</sup>\n- Detlef Weigel<sup>9</sup>\n- Hern\u00e1n A Burbano<sup>9</sup> \u2020\n\n### Affiliations\n\n1. The Sainsbury Laboratory Norwich United Kingdom\n2. Institute of Archaeological Sciences University of T\u00fcbingen T\u00fcbingen Germany\n3. Biodiversity and Climate Research Centre Frankfurt Germany\n4. Institute of Ecology, Evolution and Diversity Goethe University Frankfurt Germany\n5. Senckenberg Gesellschaft f\u00fcr Naturforschung Frankfurt Germany\n6. Genome Center Max Planck Institute for Developmental Biology T\u00fcbingen Germany\n7. Agriculture Research Services United States Department of Agriculture Salinas United States\n8. Centre for Integrated Fungal Research Frankfurt Germany\n9. Department of Molecular Biology Max Planck Institute for Developmental Biology T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00731.001 Phytophthora infestans , the cause of potato late blight, is infamous for having triggered the Irish Great Famine in the 1840s. Until the late 1970s, P. infestans diversity outside of its Mexican center of origin was low, and one scenario held that a single strain, US-1, had dominated the global population for 150 years; this was later challenged based on DNA analysis of historical herbarium specimens. We have compared the genomes of 11 herbarium and 15 modern strains. We conclude that the 19th century epidemic was caused by a unique genotype, HERB-1, that persisted for over 50 years. HERB-1 is distinct from all examined modern strains, but it is a close relative of US-1, which replaced it outside of Mexico in the 20th century. We propose that HERB-1 and US-1 emerged from a metapopulation that was established in the early 1800s outside of the species' center of diversity. DOI: http://dx.doi.org/10.7554/eLife.00731.001\n\n## Introduction\n\nPotato late blight's impact on humankind is rivaled by few other plant diseases. The Spanish introduced Europeans to the South American staple crop potato shortly after their conquest of the New World, but for three centuries Europe stayed free of P. infestans, the causal agent of late blight. In 1845, the oomycete P. infestans finally reached Europe, spreading rapidly from Belgium to other countries of mainland Europe and then to Great Britain and Ireland. The impact of the epidemic reached catastrophic levels in Ireland, where the population was more dependent on potato for their subsistence than in other parts of Europe (Bourke, 1964; Reader, 2009). The subsequent Great Famine killed around 1 million people, and an additional million were forced to leave the island (Turner, 2005). Even today, the Irish population remains less than three quarters of what it was at the beginning of the 1840s. These dramatic consequences of the P. infestans epidemic were due to the absence of chemical and genetic methods to combat it; such means became available only several decades later.\n\nEver since triggering the Irish famine, P. infestans has continued to wreak havoc on potato fields throughout the world. Late blight remains the most destructive disease of the third largest food crop, resulting in annual losses of potatoes that would be sufficient to feed anywhere from 80 to many hundreds of millions of people (Fisher et al., 2012). Phytophthora infestans is an extraordinarily virulent and adaptable pathogen (Fry, 2008; Haas et al., 2009). In agricultural systems, sexual reproduction may trigger explosive population shifts that are driven by the emergence and migration of asexual lineages (Fry et al., 1992, 2009; Cooke et al., 2012). The species is thought to originate from Toluca Valley, Mexico, where it infects wild relatives of potato, frequently undergoes sexual reproduction and co-occurs with the two closely related species P. mirabilis and P. ipomoeae (Tooley et al., 1985; Goodwin et al., 1994; Flier et al., 2003; Gr\u00fcnwald and Flier, 2005). In its center of origin, P. infestans is characterized by high levels of genetic and phenotypic diversity (Gr\u00fcnwald and Flier, 2005).\n\nThe genomes of a few P. infestans strains have been described (Haas et al., 2009; Raffaele et al., 2010a; Cooke et al., 2012). Compared to other species in the genus, the 240 Mb T30-4 reference genome of P. infestans is large, with three quarters of the genome consisting of repetitive DNA. A large number of genes codes for effector proteins, many of which are delivered inside plant cells to promote host colonization, for instance by suppressing plant immunity. RXLR proteins, the main class of host-translocated effectors, are encoded by about 550 genes in the P. infestans T30-4 genome. RXLR effectors that can be recognized by plant immune receptors, known as Resistance (R) proteins, are said to have \u2018avirulence\u2019 activity. Upon introduction of a cognate R gene into the host population, such avirulence effectors become a liability for the pathogen, and natural selection favors the spread of pseudogenized or mutated alleles (Vleeshouwers et al., 2011).\n\nThe detailed descriptions and drawings of Heinrich Anton de Bary and the reports of several other pioneers of plant pathology leave no doubt that the 19th century blight epidemic was triggered by P. infestans (de Bary, 1876; Bourke, 1964). What remains controversial is the relationship of the 19th century strains to modern isolates. The quest for understanding the origin of the strain that resulted in the Irish famine began with extant samples. Prior to the late 1970s, global P. infestans populations outside of South America and Mexico, the centers of diversity of the host and the pathogen, were dominated by a single clonal lineage that had the mitochondrial (mtDNA) haplotype Ib and was called US-1 (Goodwin et al., 1994). It was therefore proposed that the US-1 lineage was a direct descendant of the strain that first caused widespread late blight in North America from 1843 on, and then triggered the Irish famine beginning in 1845 (Bourke, 1964; Goodwin et al., 1994). This hypothesis was subsequently directly addressed by PCR analysis of infected 19th century potato leaves stored in herbaria. The conclusion from these studies was that the historic strains belonged to a mtDNA haplotype, Ia, that was distinct from that of the US-1 lineage (Ristaino et al., 2001; May and Ristaino, 2004). Because Ia was at the time not only the predominant haplotype in the Toluca Valley in Mexico (Gavino and Fry, 2002; Flier et al., 2003), but had also been found in South America (Perez et al., 2001), May and Ristaino (2004) speculated that the 19th century and US-1 lineages represented two independent epidemics of divergent lineages that had both originated in South America and spread from there to North America and Europe. A caveat was that these far-reaching conclusions were based on only three mtDNA SNPs (Ristaino et al., 2001; May and Ristaino, 2004).\n\nSince these first herbarium analyses, the retrieval and sequencing of DNA from museum specimens, fossil remains and archaeological samples\u2014collectively known as ancient DNA (aDNA) (P\u00e4\u00e4bo et al., 2004)\u2014have seen impressive advances thanks to the advent of high-throughput sequencing technologies. The combined analysis of modern and ancient genomes of human pathogens has begun to solve important questions about their history and evolution (Bos et al., 2011, 2012). Here we show that aDNA methods hold similar promise for plant pathology and that they can improve our understanding of historically important plant pathogen epidemics.\n\nTo determine how the historic P. infestans strain(s) relate to extant isolates, we shotgun-sequenced 11 herbarium samples of infected potato and tomato leaves collected from continental Europe, Great Britain, Ireland, and North America in the period from 1845 to 1896, and extracted information on P. infestans mitochondrial and nuclear genomes. To understand the subsequent evolution of the pathogen, we compared the historic P. infestans genomes to those of 15 modern 20th century strains that span the genetic diversity of the species, and to the two sister species P. ipomoeae and P. mirabilis. Our analyses revealed that the 19th century epidemic was caused by a single genotype, HERB-1, that persisted for at least 50 years. While it is distinct from all examined modern strains, HERB-1 is closely related to the 20th century US-1 genotype, suggesting that these two pandemic genotypes may have emerged from a secondary metapopulation rather than from the species\u2019 Mexican center of diversity.\n\n## Results\n\n## Preservation of ancient DNA and genome statistics\n\nNineteenth-century samples of potato and tomato leaves with\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig1-v1.jpg)\n\n**Figure 1.:** Red indicates number of historic and blue of modern samples. More information on the samples is given in Tables 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.00731.004\n\nThe first set of libraries was used for verification of aDNA-like characteristics, and the second set was used for production. In this second set we used a repair protocol that removes aDNA-associated lesions, mainly characterized by cytosine deamination to uracil (U), which is subsequently converted to and read as thymine (T) (Hofreiter et al., 2001; Briggs et al., 2007, 2010; Brotherton et al., 2007). The combination of uracil-DNA-glycosylase (UDG) and endonuclease VIII, which removes uracil residues and repairs abasic sites, reduces the overall per-base error rate to as low as one 20th of unrepaired aDNA (Briggs et al., 2010).\n\nAncient DNA fragments are typically shorter than 100 bp (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig2-v1.jpg)\n\n**Figure 2.:** (A) Lengths of merged reads from historic sample M-0182898. (B) Mean lengths of merged reads from historic samples. (C) Nucleotide mis-incorporation in reads from the historic sample M-0182898. (D) Deamination at first 5\u2032 end base in historic samples. (E) Percentage of merged reads that mapped to the P. infestans reference genome.DOI: http://dx.doi.org/10.7554/eLife.00731.006\n\nMerged sequences were mapped to the P. infestans T30-4 reference genome (Haas et al., 2009). Deamination of C to U in aDNA is highest at the first base (Briggs et al., 2007), and C-to-T was the predominant substitution at the 5\u2032-end of molecules (Figure 2C,D). Based on mapping against the reference genome, we estimated the fraction of P. infestans DNA in the samples to be between 1% and 20% (Figure 2E). Most of the remaining reads could be mapped to the reference genomes for potato and tomato (Potato Genome Sequencing Consortium, 2011; The Tomato Genome Consortium, 2012).\n\nIn addition to 11 historic samples from Ireland, Great Britain, continental Europe and North America (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig3-v1.jpg)\n\n**Figure 3.:** (A) Mean nuclear genome coverage from historic (red) and modern (blue) samples. (B) Homo- and heterozygous SNPs in each sample. (C) Inverse cumulative coverage for all homozygous SNPs across all samples. (D) Same as (C) for homo- and heterozygous SNPs.DOI: http://dx.doi.org/10.7554/eLife.00731.007\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Rescue cov.\u2014minimum coverage required to accept SNP calls in low-coverage genomes based on these SNPs having been found in high-coverage genomes. The cutoffs enclosed in orange rectangles were used for the final analysis.DOI: http://dx.doi.org/10.7554/eLife.00731.008\n\n## A unique type I mtDNA haplotype in 19th century P. infestans strains\n\nWe reconstructed the mtDNA genomes from historic and modern strains using an iterative mapping assembler (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig4-v1.jpg)\n\n**Figure 4.:** Sites with less than 90% information were not considered, leaving 24,560 sites in the final dataset. Numbers at branches indicate bootstrap support (100 replicates), and scale indicates changes.DOI: http://dx.doi.org/10.7554/eLife.00731.009\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Sites with less than 90% information were not considered, leaving 24,560 sites in the final dataset. Numbers at branches indicate bootstrap support (100 replicates).DOI: http://dx.doi.org/10.7554/eLife.00731.010\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Msp1 restriction site (grey) for reference haplotype modern strains (blue) and historic strains (red).The Msp1 (CCGG) restriction site is only present in the Ib haplotype; all other strains have a C-to-T substitution (CTGG).DOI: http://dx.doi.org/10.7554/eLife.00731.011\n\nThe clonal lineage US-1, with the diagnostic mtDNA haplotype Ib, was the predominant genotype throughout the world until about 1980 (Goodwin et al., 1994). The two US-1 representatives in our material, DDR7602 (Germany) and LBUS5 (South Africa), clustered together with the Ib reference genome and samples P6096 (Peru) and P1362 (Mexico) (Figure 4 and Figure 4\u2014figure supplement 1), even though these last two samples had not been classified before as US-1 isolates. Although the US-1 genotype is closely related to the herbarium strains, US-1 is not a derivative of HERB-1. Rather, HERB-1 and US-1 are sister groups that share a common ancestor. There are three private substitutions that define the US-1 clade, and two that define the HERB-1 clade. In agreement with the previous report by Ristaino et al. (2001), all historic samples had a T at the position diagnostic for haplotype Ib (Figure 4\u2014figure supplement 2), which distinguishes them from the US-1 lineage, which carries instead a C at this position. In contrast to the previous report (Ristaino et al., 2001), we found no other sequence differences around this diagnostic site.\n\n## Relationship between HERB-1 and modern strains and divergence times\n\nAs the HERB-1 strains were sampled in the 19th century, their genomes should harbor fewer substitutions compared to modern strains, which have continued to evolve for over a hundred years. This can be exploited to directly calculate substitution rates and divergence times using the sampling age as tip calibration in a Bayesian framework analysis. Shorter evolutionary time usually translate into branch shortening in phylogenetic trees that include both modern and ancient pathogen strains (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig5-v1.jpg)\n\n**Figure 5.:** DOI: http://dx.doi.org/10.7554/eLife.00731.012\n\nGiven the correlation between sample age and the number of mtDNA substitutions, a multiple sequence alignment of 12 nearly complete modern and the 13 HERB-1 mtDNA genomes was used as input for a Bayesian framework analysis using algorithms implemented in the software package Beast (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig6-v1.jpg)\n\n**Figure 6.:** Bayesian consensus tree from 147,000 inferred trees. Posterior probability support above 50% is shown next to each node. Blue horizontal bars represent the 95% HPD interval for the node height. Light yellow bars indicate major historical events discussed in the text. See Figure 5 and Table 3 for detailed estimates at the four main nodes in P. infestans.DOI: http://dx.doi.org/10.7554/eLife.00731.013\n\nTo understand the evolutionary relationships between historical and modern strains in more detail, we also compared their nuclear genomes. We built phylogenetic trees with high-coverage genomes using maximum parsimony (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig7-v1.jpg)\n\n**Figure 7.:** (A) Maximum-parsimony tree, considering only sites with at least 95% information, leaving 4,498,351 sites in the final dataset. Numbers at branches indicate bootstrap support (100 replicates), and scale indicates genetic distance. (B) Maximum-likelihood tree. (C) Heat map of genetic differentiation (color scale indicates SNP differences). US-1 strains DDR7062 and LBUS5 have the genomes sequences closest to M-0182896 (asterisks). The two US-1 isolates in turn are outliers compared to all other modern strains (highlighted by a gray box).DOI: http://dx.doi.org/10.7554/eLife.00731.015\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Neighbor-joining tree of high-coverage genomes using 4,595,012 homo- and heterozygous SNPs. Numbers at branches indicate bootstrap support (100 replicates), and scale indicates genetic distance. (B) Neighbor-joining tree of high- and low-coverage genomes using 2,101,039 homozygous and heterozygous SNPs. Numbers at branches indicate bootstrap support above 50, from 100 replicates. Scale indicates genetic distance. (C) Maximum parsimony tree of high- and low-coverage genomes using 315,394 SNPs homozygous and heterozygous SNPs (using only sites with at least 80% information).DOI: http://dx.doi.org/10.7554/eLife.00731.016\n\n## Ploidy increase in modern strains\n\nThe independent diversification of the pandemic HERB-1 and US-1 lineages together with a very recent common ancestor are consistent with both lineages having originated from the same metapopulation. To test whether the global replacement of HERB-1 by US-1 in the 20th century was due to adaptive mutations, we searched for positively selected genes using PAML (Yang, 2007). We did not find any evidence for genes or sites that had experienced branch-specific positive selection in any of the lineages, only a mosaic pattern with potentially positively selected genes shared across lineages. Alternative scenarios could be that inactivating mutations were more important than non-synonymous substitutions, or that higher overall diversity and re-assortment of beneficial gene variants by recombination contributed to the success of US-1.\n\nGenetic diversity can be increased by polyploidy, which has been reported in isolates of\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig8-v1.jpg)\n\n**Figure 8.:** (A) Diagram of expected read frequencies of reads at biallelic SNPs for diploid, triploid and tetraploid genomes. (B) Reference read frequency at biallelic SNPs in gene dense regions (GDRs) for the historic sample M-0182896, two modern samples, and simulated diploid, triploid and tetraploid genomes. The simulated tetraploid genome is assumed to have 20% of pattern 1 and 80% of pattern 3 shown in (A). The shape and kurtosis of the observed distributions are similar to the corresponding simulated ones. (C) Polymorphic positions with more than one allele in the GDR.DOI: http://dx.doi.org/10.7554/eLife.00731.017\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.00731.018\n\nTo further confirm the ploidy inferences, we classified 40,352 SNPs as derived or ancestral based on information from the outgroup species\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig9-v1.jpg)\n\n**Figure 9.:** Alleles were classified as ancestral or derived using outgroup species P. mirabilis and P. ipomoeae. There were 40,532 segregating sites. (A) Distributions of derived alleles at sites segregating between M-0182896 and DDR7602. (B) Annotation of the different site classes.DOI: http://dx.doi.org/10.7554/eLife.00731.019\n\n## Effector genes\n\nPhytophthora infestans secretes a large repertoire of effector proteins, some of which are recognized by plant immune receptors encoded by R genes (Haas et al., 2009; Vleeshouwers et al., 2011). These R genes occur in wild potato (Solanum) species mostly originating from the pathogen center of diversity in Mexico, and have been introduced by breeding into cultivated potato since the beginning of the 20th century (Hawkes, 1990). The analysis of effector gene sequences in HERB-1 strains should reveal the effector repertoire prior to its disruption by the selective forces imposed by resistance gene breeding. Given that 19th century potato cultivars in North America and Europe were fully susceptible to late blight, we presume that they did not yet contain resistance genes that are effective against HERB-1. Conversely, the first R genes for P. infestans resistance, introduced into cultivated potato only after the dates for our HERB-1 samples, should be effective against HERB-1 strains, which are predicted to carry matching avirulence effector genes. The R genes include in particular R1 to R4 from Solanum demissum (Hawkes, 1990).\n\nTo date, 10 avirulence effector genes, recognized by 10 matching Solanum R genes, have been described in P. infestans (Vleeshouwers et al., 2011). We first estimated the presence/absence profiles of these effector genes based on the fraction of gene length that was covered by reads (\u2018breadth of coverage\u2019) in each high-coverage genome, and by merged reads from low-coverage genomes (Table 4). We deduced the amino acid sequences of these 10 effectors using both alignments of reads to the reference genome and de novo assemblies. All examined avirulence effector genes except Avr3b were present as full-length and intact coding sequences in the historic samples (Table 4), without any frame shift or nonsense mutations. The HERB-1 alleles of Avr1, Avr2, Avr3a and Avr4 were shared with those of the US-1 strain DDR7602 (Table 5\u2014source data 1). In conclusion, the Avr1, Avr2, Avr3a and Avr4 alleles of HERB-1 are intact, presumably functional copies that are identical to ones that can be recognized by the matching R genes R1, R2, R3a and R4 (Armstrong et al., 2005; van Poppel et al., 2008; Gilroy et al., 2011; Vleeshouwers et al., 2011). This is consistent with the expectation that the HERB-1 genotype must have been avirulent on the first potato cultivars that acquired late blight resistance.10.7554/eLife.00731.020Table 4.Presence or absence of avirulence effector genes in historic and modern samples, expressed as percentages of effector genes covered by readsDOI: http://dx.doi.org/10.7554/eLife.00731.020Avr geneR geneHERB-1*US-1\u202020th century non-US-1OutgroupsEC3527EC3626P1777706_3928ANL07434MergedPm PIC99114Pip PIC99167Avr1R1100100001000010098100Avr2R2100100100100100811007797100Avr3aR3a100100100100100100100100028Avr3bR3b000010000100100100Avr4R41001001001009589100998592Avrblb1Rpi-blb110010010010010010010010000Avrblb2Rpi-blb21001001001009210010089880Avrvnt1Rpi-vnt1100100100100100100100100100100AvrSmira1Rpi-Smira110010010010010010010010097100AvrSmira2Rpi-Smira21001001001001001001001001000Sequences and polymorphisms are shown in Table 5 and Table 5\u2014source data 1.*Same sequences obtained for M-0182896 and merged sequences.\u2020Same sequences obtained for DDR7602 and LBUS5.10.7554/eLife.00731.021Table 5.Amino acid differences in the avirulence effectors AVR1, AVR2, AVR3a and AVR4 encoded by the T30-4 reference genome, HERB-1 and DDR7602 (US-1)DOI: http://dx.doi.org/10.7554/eLife.00731.02110.7554/eLife.00731.022Table 5\u2014source data 1.Full-length sequences of deduced amino acid sequences of HERB-1 AVR1, AVR2, AVR3a and AVR4.DOI: http://dx.doi.org/10.7554/eLife.00731.022PositionSubstitutionNoteT30-4HERB1DDR7602AVR1 (PITG_16,663)\u200380TTT, SHERB-1 polymorphisms shared with T30-4 and DDR7602.\u2003142II, TT\u2003154VV, AA\u2003185III, VAVR2 (PITG_22,870)\u200331NKKHERB-1 identical to DDR7602.AVR3a (PITG_14,371)\u200319SCCHERB-1 identical to DDR7602; both correspond to AVR3aKI isoform.\u200380EKK\u2003103MII\u2003139MLLAVR4 (PITG_07,387)\u200319TT, ITHERB-1 polymorphisms shared with T30-4 and DDR7602.\u2003139LSL, S\u2003221LVL, V\u2003271VFV, FIDs in parentheses refer to gene models in reference genome. Full-length sequences of deduced amino acid sequences of HERB-1 AVR1, AVR2, AVR3a and AVR4 are provided in Table 5\u2014source data 1.\n\nWe examined in more detail\n\n![Figure 10.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig10-v1.jpg)\n\n**Figure 10.:** Avr3a and its cognate resistance gene R3a.(A) Diagram of AVR3A effector protein. (B) Frequency of Avr3a alleles in historic and modern P. infestans strains. (C) Neighbor-joining tree of R3a homologs from potato, based on 0.67 kb partial nucleotide sequences of S. tuberosum R3a (blue, accession number AY849382.1) and homologs (dark grey) in GenBank, and de novo assembled contigs from M-0182896 (red). Numbers at branches indicate bootstrap support with 500 replicates. Scale indicates changes.DOI: http://dx.doi.org/10.7554/eLife.00731.023\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig10-figsupp1-v1.jpg)\n\n**Figure 10\u2014figure supplement 1.:** TBLASTN query was performed with 549 RXLR proteins as a query and contigs as a database. When the High-scoring Segment Pair (HSP) and matched amino acids both covered \u226599% of the query length, we recorded a hit. Results with the optimal k-mer size are highlighted.DOI: http://dx.doi.org/10.7554/eLife.00731.024\n\nThe absence of the Avr3b effector gene in HERB-1 could be viewed as puzzling, given that the S. demissum R3 locus was one of the first to be bred into potato. However, R3b, the matching R gene of Avr3b, is within 0.4 cM of R3a in the complex R3 locus (Li et al., 2011). Based on the absence of an Avr3b gene in HERB-1, we conclude that initial introgression of the R3 locus from S. demissum was based on the resistance phenotype conferred by the R3a gene. The R3 phenotype scored during the initial introgression must have been the recognition of Avr3a by R3a, and the presence of R3b must have been irrelevant until P. infestans strains carrying Avr3b emerged.\n\n## Discussion\n\nTo characterize the P. infestans strain(s) that triggered the Irish potato famine, we have sequenced several mtDNA and nuclear genomes of 19th century P. infestans strains. Because we wanted to interpret our findings in the context of extant genetic diversity, we investigated several modern strains as well. We could reconstruct the phylogenetic relationship between historic and modern strains using dozens of variants in complete mtDNA genomes, and millions of SNPs in the nuclear genomes, compared to previous work that had to rely on three mtDNA SNPs (Ristaino et al., 2001; May and Ristaino, 2004). The topologies of mtDNA and nuclear phylogenies were very similar, with the nuclear genomes yielding additional insights into differences in heterozygosity, ploidy levels and effector gene complement between historic and modern strains. Contrary to previous inferences (Ristaino et al., 2001; May and Ristaino, 2004), the 19th century strains are closely related to the modern US-1 lineage, but are characterized by a single, distinct mtDNA haplotype, HERB-1. Finally, from estimates of the divergence times of the different lineages, we were able to associate key events in P. infestans evolution with historic records of human migration and late blight spread.\n\n## Relationship between historical and modern strains\n\nHistoric strains from different geographic locations all carried a mtDNA haplotype, HERB-1, that had not been recognized before (Figure 4). Although collected over a period of 50 years, the strains were distinguished from each other by few nuclear SNPs, indicating that the 19th century outbreak was a true pandemic of a rapidly spreading clonal genotype. That HERB-1 has so far not been found in any modern strain may point to its extinction after the 19th century pandemic, possibly associated with the onset of resistance gene breeding in the 20th century. We cannot, however, exclude that HERB-1 still infects some localized, genetically unimproved host populations, since we have explored only a fraction of current P. infestans genetic diversity. With the diagnostic variants we have discovered, one can now probe modern populations to determine whether or not HERB-1 still persists somewhere.\n\nHistoric pathogen samples are molecular fossils that can be used as tip calibration points to estimate major divergence events in the evolution of a pathogen (Bos et al., 2011). Using the collection dates of the herbarium samples and isolation dates of the modern P. infestans strains, we estimated that type I and type II mtDNA haplotypes diverged close to the beginning of the 16th century (Figure 6 and Table 3). This coincides with the first contact between Americans and Europeans in Mexico, which potentially fuelled P. infestans population migration and expansion outside its center of diversity. This major event in human history might thus have been responsible for wider dissemination of the P. infestans pathogen in the New World, several centuries before its introduction to Europe. In addition, the divergence estimates allowed us to date the split between P. mirabilis and P. infestans about 1300 ya. Even though this was firmly during the period of pre-Columbian civilization, what led to their relatively recent speciation remains unknown.\n\nTo test the congruence of mtDNA and nuclear phylogenies, we reconstructed phylogenies with over 4 million nuclear SNPs from high-quality genomes (Figure 7). This confirmed the historic sample M-0182896 as a sister group to US-1 strains, a conclusion that was supported by a broader analysis that included the low-coverage historic samples (Figure 7\u2014figure supplement 1). The private SNPs shared by the HERB-1 lineage ruled out that US-1 isolates are, as previously proposed (Goodwin et al., 1994), direct descendants of the historic strains. Nevertheless, US-1 is more closely related to the historic strains than to the modern strains that have come to dominate the global population in the past two decades.\n\nWe therefore propose a revision of the previous scenario, which posited that a single\n\n![Figure 11.](https://cdn.elifesciences.org/articles/00731/elife-00731-fig11-v1.jpg)\n\n**Figure 11.:** P. infestans lineages HERB-1 and US-1.The location of the metapopulation that gave rise to HERB-1 and US-1 remains uncertain; here it is proposed to have been in North America.DOI: http://dx.doi.org/10.7554/eLife.00731.025\n\n## Genetic and genomic differences between historic and modern strains\n\nHost R genes that confer resistance to historic P. infestans strains, such as R3a, were bred into cultivated potato Solanum tuberosum from the wild species S. demissum at the beginning of the 20th century, years after our youngest historic sample had been collected in 1896. In agreement with the products of these R genes being able to recognize HERB-1 effectors, HERB-1 strains seem to have only the Avr3aKI allele, which interacts with the product of the R gene R3a to trigger a host immune response (Armstrong et al., 2005; Huang et al., 2005). Moreover, de novo assembly of potato DNA did not provide evidence for the presence of R3a in the herbarium hosts, consistent with the narrative of potato breeding (Figure 10C; Hawkes, 1990). While it is uncertain when HERB-1 was displaced by the US-1 lineage, the US-1 lineage also carries only the Avr3aKI allele (Armstrong et al., 2005). The origin of the Avr3aEM allele that emerged to high frequency after the breeding of R3a into cultivated potatoes remains unclear.\n\nA major genomic difference between the HERB-1 and US-1 lineages is the shift in ploidy, from diploid to triploid and even tetraploid (Figure 8 and Figure 8\u2014figure supplement 1). Polyploidization could have provided an opportunity for US-1 isolates to enhance allelic diversity in the absence of frequent sexual reproduction, and could thus have contributed to their global success. Asexual reproduction leads to an increase of deleterious mutation in the population due to a lack of meiotic recombination (Felsenstein, 1974). Therefore, if the major selection pressure that led to the replacement of HERB-1 by US-1 was the introduction of resistance gene breeding, greater variation at effector genes in polyploid US-1 strains could have contributed to the replacement of HERB-1 soon after R genes from S. demissum and other wild species had been introduced into modern potato germplasm.\n\n## Conclusions\n\nWe present the first genome-wide analyses of historic plant pathogen strains. The aDNA in the herbarium samples, which were about 150 years old, was remarkably well conserved, much better than most examples of aDNA from animals and humans, and only comparable with permafrost samples (Miller et al., 2008; Rasmussen et al., 2010).\n\nOur analyses not only highlight how knowledge of the genetics and geographic distribution of modern strains is insufficient to correctly infer the source of historic epidemics (Goodwin et al., 1994), but they also reveal the shortcomings of inferences that are based on a very small number of genetic markers in historic strains (Ristaino et al., 2001; May and Ristaino, 2004). With our much richer dataset, we could demonstrate that the late blight outbreaks during the 19th century were a pandemic caused by a single P. infestans lineage, but that this lineage was not the direct ancestor of the one that had come to dominate the global P. infestans population during much of the 20th century. Infected plant specimens stored in herbaria around the world are thus a largely untapped source to learn about events that affected millions of people during our recent history.\n\n## Material and methods\n\n## Herbarium sampling\n\nPlant specimens were sent to the Senckenberg Museum in Frankfurt am Main by the Botanische Staatssammlung M\u00fcnchen and the Kew Royal Botanical Gardens, where potato and tomato leaves with lesions indicative of P. infestans infection were sampled, retrieving both the lesions and healthy surrounding tissue. Sampling was carried out under sterile conditions in a laboratory with no prior exposure to P. infestans. Samples were subsequently sent to the Palaeogenetics laboratory at the University of T\u00fcbingen.\n\n## DNA extraction and sequencing library preparation\n\nPreamplification steps of historic samples were performed in clean room facilities with no prior exposure to P. infestans DNA. Samples were extracted following the protocol of (Kistler, 2012), using 380\u2013500 \u00b5g of each sample. Tissue was crushed with mortal and pestle, 1.2 ml extraction buffer (1% SDS, 10 mM Tris pH 8.0, 5 mM NaCl, 50 mM DTT, 0.4 mg/ml proteinase K, 10 mM EDTA, 2.5 mM N-phenacylthiazolium bromide) was added, and samples were incubated over night at 37\u00b0C with constant agitation. A modified protocol with the Qiagen Plant DNEasy Mini kit (Qiagen, Hilden, Germany) was then used to purify the extracted DNA.\n\nTwo independent Illumina sequencing libraries were created for each DNA extract. In the first library, C-to-T damage caused by deamination of cytosines (Hofreiter et al., 2001) was not repaired. 20 \u00b5l of each DNA extract, extraction blank control and water library blank control were converted into sequencing libraries as described (Meyer and Kircher, 2010) with modifications for aDNA (Meyer et al., 2012). To avoid potential sequencing artifacts caused by DNA damage, a second library was made from, 30 \u00b5l of each DNA extract, extraction blank control and water library blank control, and treated with uracil-DNA glycosylase (UDG) and Endonuclease VIII before conversion into sequencing libraries (Briggs et al., 2010). Each library received sample-specific double indices after preparation via amplification with two \u2018index\u2019 PCR primers (Meyer et al., 2012). Indexed libraries were individually amplified in 100 \u00b5l reactions containing 5 \u00b5l library template, 2 units of AccuPrime Pfx DNA polymerase (Invitrogen, Karlsruhe, Germany), 1 unit of 10\u00d7 PCR Mix and 0.3 \u00b5M primers spanning the index sequences of the libraries. The following thermal profile was used: 2-min initial denaturation at 95\u00b0C, two or three cycles consisting of 15 s denaturation at 95\u00b0C, a 30-s annealing at 60\u00b0C and a 2-min elongation at 68\u00b0C, and a 5-min final elongation at 68\u00b0C. Amplified products were purified and quantified on an Agilent 2100 Bioanalyzer DNA 1000 chip.\n\nDNA extracts of the modern P. infestans samples P17721, P10650, P6096, P11633, P10127, P9464, P12204 and P13626 and P. mirabilis P7722 were obtained from the World Phytophthora and Oomycete Genetic Resource Collection, fragmented to 300 bp using a S220 Covaris instrument according to the manufacturers\u2019 protocol (Duty cycle 10%, intensity 4, cycles per burst 200, time [in s] 120), and converted into sequencing libraries following the above steps as described for the historic samples without UDG treatment (Kircher, 2012; Meyer et al., 2012). For P. mirabilis PIC99114 and P. ipomoeae PIC99167, genomic DNA used before (Raffaele et al., 2010b; Cooke et al., 2012) was converted into Illumina sequencing libraries. Genomic DNA from the other modern strains was isolated as described (Cooke et al., 2012).\n\nLibraries were sequenced on Illumina GAIIx, HiSeq 2000 or MiSeq instruments (Table 2). To estimate the fraction of P. infestans aDNA in the herbarium samples, we performed pilot sequencing. Once the samples with the highest amount of P. infestans were identified, production runs were carried out on an Illumina HiSeq 2000 instrument. For P. infestans 06_3928A analysis, we used publicly available short reads (ENA ERP002420).\n\n## Read mapping and SNP calling\n\nReads for the herbarium samples were de-indexed as described (Kircher, 2012). Forward and reverse reads were merged after adapter trimming, requiring at least 11 nucleotides overlap (Burbano et al., 2010). Only fragments that that allowed merging of reads were used in subsequent analyses. Merged reads were mapped to the P. infestans T30-4 reference genome (Haas et al., 2009) with BWA, allowing two gaps and without seeding (Li and Durbin, 2009). PCR duplicates were identified based on read start and end alignment coordinates. For each cluster of duplicates a consensus sequence was calculated as described (Kircher, 2012). Only reads with a Phred-like mapping quality score of at least 30 were used further. Alignments were converted to BAM files (Li et al., 2009). For modern strains, single reads were mapped in a similar manner, and subsequent processing was performed as described (Cooke et al., 2012).\n\nSNPs in the herbarium samples were called by independently comparing each strain with the P. infestans T30-4 genome. Raw allele counts for each position were obtained using pileup from SAMtools (Li et al., 2009). To decide the cutoffs for SNP calling we resorted to simulations. Reads from two 50-fold and 3-fold coverage genomes were simulated using the pIRS software (Hu et al., 2012), with empirical base-calling and GC%-depth profiles trained on five modern P. infestans genomes (P13527, P13626, 06_3928A, NL07434 and P17777). Based on the simulated data we called both homo and heterozygous SNPs employing different cutoffs for SNP concordance (Figure 3\u2014figure supplement 1). Genotypes calls were classified as high quality if coverage was at least 10. We also considered low-quality SNPs, if a high-quality SNP call had been made in a different strain, using specific coverage cutoffs for rescuing low-quality SNPs (Figure 3\u2014figure supplement 1). We calculated sensitivity and accuracy of SNP calls for different combination of cutoffs and selected the following criteria:Minimum coverage of 10 for high quality calls.Concordance \u226580% for homozygous SNPs.Concordance between 20% and 80% for heterozygous SNPs.Minimum coverage of 3 to rescue low-quality SNPs.\n\nWe called synonymous, nonsynonymous and nonsense polymorphisms employing snpEff (Cingolani et al., 2012).\n\n## Mitochondrial DNA (mtDNA) assembly and phylogenetic analyses\n\nFragments that could be aligned to any of the four reference haplotypes (Ia, IIa, Ib and IIb) were used to assemble mtDNA genomes. For each strain four different assemblies (one for each reference haplotype) were built using an iterative mapping assembly program (Green et al., 2008; Burbano et al., 2010). Only positions with coverage of at least 3 were included in the assemblies. The four assemblies were aligned using Kalign (Lassmann and Sonnhammer, 2005) with default parameters, and a consensus assembly was generated based on the alignment.\n\nThe 1.8-kb insertion present in haplotype II was not considered for phylogenetic reconstruction. The mtDNA phylogeny was built using a maximum parsimony and a maximum likelihood tree using MEGA5 (Tamura et al., 2011). For both, positions with less than 90% site coverage were eliminated. There were a total of 24,560 positions in the final dataset, compared to the multiple sequence alignment length (37,762 bp). For the maximum likelihood reconstruction we used the Hasegawa-Kishino-Yano (HKY) model assuming that a certain fraction of sites are evolutionarily invariable. The model was selected using MEGA5 (Tamura et al., 2011).\n\n## Nuclear genome phylogenetic analyses\n\nWe reconstructed the nuclear phylogeny for the high-coverage samples alone and for all samples together independently, using maximum parsimony and maximum likelihood approaches. We built the neighbor-joining trees based on a genetic distance matrix calculated from both homo- and heterozygous SNPs (Xu et al., 2012). For the high-coverage genomes we used only the SNPs positions with complete information in all samples. For the low-coverage genomes we used homo- and heterozygous SNPs, and allowing for missing data. So that we could include heterozygous SNPs in the analysis, we randomly sampled one allele at each site. The maximum parsimony trees were calculated with 100 replicates in MEGA5 using the Close-Neighbor-Interchange algorithm with search level 0, in which the initial trees were obtained with the random addition of sequences (10 replicates). All positions with less than 95% site coverage were eliminated (Tamura et al., 2011). For the high-coverage genomes-only analysis, all positions with less than 85% site coverage were eliminated. For the all-sample analysis the threshold was lowered to 80%. Maximum likelihood trees were built using RaxML 7.0.4 with 100 replicates using the rapid bootstrap algorithm (Stamatakis, 2006).\n\n## Effector analyses\n\nTo address presence and absence polymorphisms of effectors, we used a previously published pipeline (Raffaele et al., 2010a). We calculated the fraction of each gene that was covered by reads (\u2018breadth of coverage\u2019) for each strain. We regarded zero breadth of coverage as absence of the gene. For herbarium and modern samples with genome-wide coverage depth less than 20\u00d7, we merged BAM files from each strain into a single BAM file, and used this to estimated breadth of coverage.\n\nWe also tested for presence/absence polymorphisms of RXLR effector genes between herbarium samples and modern strains using de novo assembly of short reads. First, we extracted 140 bp fragments from M-0182896 merged reads, and assembled these with SOAPdenovo v1.05 (Luo et al., 2012). We aligned the six-frame translation of resulting contigs to a non-redundant protein database using blastx (Altschul et al., 1990). Most contigs matched proteins from either potato, Solanum tuberosum, or to microbial species P. infestans, Pantoea vagans and Pseudomonas sp. To focus on P. infestans, we aligned fragments that were at least 140 bp to the genomes of P. infestans, S. tuberosum, P. vagans, P. syringae pv. syringae, and P. fluorescens with blastn. We extracted fragments that aligned the P. infestans genomic regions encoding RXLR effector genes, but over at most 90 bp. These and unmapped fragments were de novo assembled with SOAPdenovo v1.05. A k-mer size of 67 was deemed optimal, because it resulted in the highest coverage of Avr1, Avr2 and Avr3a, and resulted in the largest number of RXLR proteins with TBLASTN hits (Figure 10\u2014figure supplement 1). We obtained partial sequences of Avr4 and Avrblb1. We visually evaluated BWA alignments of M-0182896 in the Avr4 and Avrblb1 genomic regions and identified T30-4 sequences uncovered by alignments using Integrative Genomics Viewer (Robinson et al., 2011). We then identified T30-4 genomic regions with at least 99% similarity to these uncovered regions. In BWA, if reads match several genomic regions, one genomic location is randomly chosen as default (Li and Durbin, 2009). Thus, it is possible that BWA alignment distributes reads coming from the same gene across several, closely related genes in the target genome. We assembled such reads that mapped to closely related sequences in the reference genome together with the partial sequences of Avr4 and Avrblb1 using Geneious Pro 5.6.3 to obtain full-length sequences of these Avr genes.\n\n## Selection tests\n\nHomozygous SNPs from modern P. infestans strains EC3527, EC3626, NL07434, 06_3928A, DDR7602, LBUS5, P17777 and the historic strain M-0182896 were used for selection tests. Gene sequences were converted into amino acid sequences using EMBOSS tools (Rice et al., 2000), and Pla2Nal v14 (Suyama et al., 2006) was used to convert protein alignments to codon alignments. The codeml module of PAML package v4.6 (Yang, 2007) was used for positive selection studies with site models M7 (parameters NSsites = 7, fix_omega = 0, omega = 2 and kappa = 3) and M8 (NSsites = 8, fix_omega = 0, omega = 2 and kappa = 3). A 5% level of significance was established with Likelihood ratio test. Genes were considered to be under positive selection if at least one site was found to be under selection with a Bayes Empirical Bayes confidence >95%.\n\n## Ploidy analyses\n\nTo estimate ploidy levels, we assessed the distributions of read counts at biallelic SNPs. For diploid species, the mean frequency of reads for each allele at non-homozygous sites is 1/2, while we expect two modes for triploid genomes, at 1/3 and 2/3, and four modes for tetraploid genomes, at 1/4, 1/2 and 3/4 (Figure 8A). We simulated genomes with different ploidy levels using pIRS (Hu et al., 2012), based on two strains, P. infestans T30-4 and EC3527. The SNPs used for the construction of two simulated chromosomes were determined with SAMtools v0.1.8 mpileup and bcftools v0.1.17 (Li et al., 2009). For the diploid genome, we simulated 10x coverage reads for each of two different chromosomes. For the triploid genome, we merged simulated 5\u00d7 and 15\u00d7 coverage reads from two different chromosomes. For the tetraploid genome, we merged simulated 10\u00d7 coverage reads from two different chromosomes (Figure 8B). Next, we aligned the simulated reads to the P. infestans T30-4 reference genome with BWA and called heterozygous SNPs under the following criteria: minimum coverage of 10 for high-quality calls, and concordance between 20% and 80% for heterozygous SNPs. Since tetraploid species are considered to be a mixtures of two ratio, we mixed SNPs from the 20\u00d7 coverage diploid reads and the 20\u00d7 coverage tetraploid reads in following ratios: 0:100, 10:90, 20:80, 30:70, 40:60, 50:50, 60:40, 70:30, 80:20, 90:10 and 100:0. Finally, we estimated frequency of reads assigning each allele at each SNP position. Based on shapes, standard deviation, skewedness and kurtosis of the observed distributions and comparison with the simulated distributions, we classified the tested P. infestans genomes as diploid, triploid and tetraploid.\n\n## Substitution rates and divergence times for P. infestans\n\nIn order to test whether we can detect a temporal signal in the ancient P. infestans mtDNA sequences compared to modern strains, that is, shorter branches in the ancient strains compared to the modern ones, we calculated the nucleotide distance as the number of substitutions between HERB-1, haplotype Ia and haplotype Ib mtDNA genomes to the outgroup P17777. The analysis involved 19 nucleotide sequences. All positions with less than 90% site coverage were eliminated, resulting in 34,174 informative positions. The samples were subsequently grouped into ancient and modern strains. The ancient and modern nucleotide distances were significantly different (Mann\u2013Whitney U-test, p=0.0003). We furthermore correlated the nucleotide distance of HERB-1, haplotype Ia and haplotype Ib mtDNA genomes to the outgroup P17777 with the tip age of each sample.\n\nTo estimate divergence times of P. infestans strains, substitution rates were calculated in a Bayesian framework analysis using the software package BEAST 1.7.5 (Drummond et al., 2012). A multiple sequence alignment that included all 12 nearly complete modern P. infestans mtDNA sequences plus all 13 herbaria samples was used as input. In order to test if the mtDNAs evolved clock like a likelihood ratio test was performed in MEGA5 (Tamura et al., 2011) by comparing the maximum likelihood (ML) value for the given topology using only the modern strains with and without the molecular clock constraints. The null hypothesis of equal evolutionary rate throughout the tree was not rejected at a 5% significance level (p=0.115). All positions containing gaps and missing data were eliminated resulting in a total of 22,591 positions in the final dataset.\n\nAs a result a strict molecular clock and the HKY sequence evolution model were used for the Bayesian framework. For the tree prior, five different models were tested including four coalescence models: constant size, expansion growth, exponential growth, logistic growth and a epidemiology birth\u2013death model (Stadler, 2010). For each tree prior, three MCMC runs were carried out with 10,000,000 iterations each and subsequently merged using LogCombiner 1.7.5 from the BEAST package. Resulting ESS values and overall posterior likelihoods were compared using the software Tracer (Rambaut and Drummond, 2007). The birth-death model gave the highest ESS values and posterior likelihood and was therefore chosen for the subsequent dating analysis. The collection dates for all herbaria samples as well as the isolation dates for all modern strains were used as tip calibration points (Table 1). Three MCMC runs were carried out with 50,000,000 iterations each, sampling every 10,000 steps. The first 1,000,000 iterations were discarded as burn-in resulting in a total of 147,000,000 iterations.\n",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "c7f49e17-2fd8-46f4-9671-29f23c98cc6a",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Baulcombe, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00731.026](https://doi.org/10.7554/eLife.00731.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cHerbarium metagenomics reveals the rise and fall of the Phytophthora lineage that triggered the Irish potato famine\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 4 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: David Baulcombe (Reviewing editor); Paul Birch (peer reviewer); William Fry (peer reviewer).\n\nThe reviewers agreed that this is an interesting and important paper. It draws on both the availability of historic samples of P. infestans and the power of next-generation sequencing to re-evaluate the 19th century pandemic that precipitated the Irish Famine. Overall, the conclusion of a single clonal lineage, HERB-1, dominating the late blight population outside of Mexico for at least 50 years, closely related to US-1, but perhaps giving way to variants derived from the latter, is well supported by the data. The derivation of both HERB-1 and US-1 from a common ancestor within a \u201cmetapopulation\u201d outside of Mexico, the accepted centre of P. infestans diversity, again seems likely. Of interest is the apparent increase in ploidy levels in 20th century isolates, compared to HERB-1 and US-1, although it should be stressed that this is based entirely on projected allele frequencies (rather than backed up by other means).\n\nIn addition, there is part of the analysis that they consider to lack detail and that the conclusions may be reaching too far. These concerns are summarised by one of the reviewers who writes:\n\n1) The authors state: \u201cGiven that nineteenth century potato strains [surely they mean cultivars?] in North America and Europe did not yet contain resistance genes to control HERB-1, one would expect HERB-1 to contain a full effector gene complement\u201d, as it has not yet been disrupted \u201c\u2026by the selective forces imposed by resistance gene breeding\u201d. What exactly is meant by a \u201cfull effector gene complement\u201d? I guess they intend the focus to be on avirulences recognised by the S. demissum R genes? These would be AVR1, 2, 3a, 3b, and 4 of those shown in Table 2; the others are not pertinent to their line of logic. In Table 2, the coverage of AVR2 is 100% for the isolate 06_3928A, a \u201cBlue_13\u201d genotype representative. Actually, this genotype lacks AVR2, expressing instead AVR2-like, which suggests that the % coverage they show in this table is lacking the detail to reach their conclusion: \u201cconsistent with the expectation that the HERB-1 genotype was avirulent on the first potato cultivars that acquired late blight resistance through breeding\u201d. The focus is on AVR3a, and it is interesting that the KI allele alone exists in the HERB-1 lineage. Did they specifically amplify and sequence this gene from all of the herbarium samples? If their conclusions are based entirely on sequence assemblies (from NGS of ancient DNA), then they need to be backed up by additional experiments. AVR4 has been well documented to be \u201clost\u201d through mutation that leads to truncated proteins. Is AVR4 intact in the historical samples? I am surprised by the apparent absence of Avr3b. This is a gene that is conserved in P. parasitica, for example. Indeed, they show good coverage in mirabilis and ipomeae in Table 2. Did they specifically check this absence by alternative means (i.e., PCR and sequencing)?\n\n2) The reviewers believe that these concerns can be addressed in a straightforward fashion, if you amplify and directly study AVR3a (done), AVR2/2-like and AVR4 sequences across the samples to add weight to conclusions about HERB-1 being avirulent. You could also include Avrblb1, avrBlb2, and AvrVnt1 in this, as controls. The corresponding R genes have not been bred into the cultivated potato, so they represent a contrast in terms of the selection pressures that they refer to in 20th century breeding efforts (i.e., introduction of the demissum R genes).\n\nPlease respond to these suggestions, including additional data where appropriate, in a revised manuscript.\n\nAn expert reviewer on phylogenetic analysis makes the following substantive point:\n\n3) Before running the BEAST analysis, the modern sequences alone are clock tested. I doubt whether these data contain enough signal to detect substantial rate variation, but it is important to test whether there is enough temporal signal in the data to trust the dating analyses.\n\nTo do this, it is common to correlate the sampling date against the root-to-tip distance from the ML tree (or NJ tree). This would give a visual indication of the amount of temporal signal in these data (e.g., Harris et al. Science 2010). Second, (and optionally) it is also common to carry out randomisation tests, rerunning the BEAST dating analyses a few times after randomly permuting the sampling dates (see e.g., Firth et al. MBE 2010).\n",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcab0fbe-5bd7-4f3e-8199-c37a5f909f21",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C1",
+      "claim": "Phytophthora infestans caused the Irish potato famine in the 1840s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Phytophthora infestans, the cause of potato late blight, is infamous for having triggered the Irish Great Famine in the 1840s.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established historical and scientific knowledge, supported by references to historical records and previous scientific work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "501d9bb5-8887-4508-b436-25a79ed14e57",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C2",
+      "claim": "P. infestans diversity outside of its Mexican center of origin was low until the late 1970s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Until the late 1970s, P. infestans diversity outside of its Mexican center of origin was low",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement refers to established scientific understanding from prior research on P. infestans population genetics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "dd08573f-5290-4e02-a295-c58f2a459725",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C3",
+      "claim": "A single strain, US-1, was proposed to have dominated the global P. infestans population for 150 years.",
+      "claim_type": "EXPLICIT",
+      "source_text": "one scenario held that a single strain, US-1, had dominated the global population for 150 years",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to a previously proposed hypothesis in the scientific literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "eda69adf-9db1-4887-9dd7-02988d41e86c",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C4",
+      "claim": "The US-1 dominance hypothesis was challenged based on DNA analysis of historical herbarium specimens.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this was later challenged based on DNA analysis of historical herbarium specimens",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to subsequent research that contradicted the US-1 hypothesis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3db258d1-6a83-48c3-b734-7b3875557cc3",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C5",
+      "claim": "The study compared genomes of 11 herbarium and 15 modern P. infestans strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We have compared the genomes of 11 herbarium and 15 modern strains.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design and data collection performed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "43b9aee5-a3ef-47a3-b9ea-50e2cab07a9c",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C6",
+      "claim": "The 19th century epidemic was caused by a unique genotype called HERB-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We conclude that the 19th century epidemic was caused by a unique genotype, HERB-1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is based on genomic data analysis and phylogenetic inference from the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "1d63daaf-4ea4-4640-9f8d-ea326efa43ec",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C7",
+      "claim": "HERB-1 persisted for over 50 years.",
+      "claim_type": "EXPLICIT",
+      "source_text": "HERB-1, that persisted for over 50 years",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the collection dates of herbarium samples spanning 1845 to 1896 that all contained HERB-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "fa4ee47e-e9f4-48c6-a82f-5b92396467f1",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C8",
+      "claim": "HERB-1 is distinct from all examined modern strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "HERB-1 is distinct from all examined modern strains",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on genomic comparison data showing genetic differences between HERB-1 and modern strains.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "a0d6e157-b0ee-433e-8d8e-a1741e1057bc",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C9",
+      "claim": "HERB-1 is a close relative of US-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is a close relative of US-1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is based on phylogenetic analysis showing close evolutionary relationship between HERB-1 and US-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "5bf8476a-a7c2-4808-82f4-87874ee62489",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C10",
+      "claim": "US-1 replaced HERB-1 outside of Mexico in the 20th century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "US-1, which replaced it outside of Mexico in the 20th century",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the absence of HERB-1 in modern samples and the dominance of US-1 in 20th century populations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "6e78a3ff-1eca-4306-9d6b-4ced2fdd145d",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C11",
+      "claim": "HERB-1 and US-1 emerged from a metapopulation established in the early 1800s outside of the species' center of diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We propose that HERB-1 and US-1 emerged from a metapopulation that was established in the early 1800s outside of the species' center of diversity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a hypothesis proposed based on phylogenetic analysis and divergence time estimates, involving some speculation about population history.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3f557548-fc04-46de-bec9-d69e9daf0cda",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C12",
+      "claim": "The Spanish introduced Europeans to the potato shortly after their conquest of the New World.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Spanish introduced Europeans to the South American staple crop potato shortly after their conquest of the New World",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established historical knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "98def034-a197-4811-aa72-0cd339f9f532",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C13",
+      "claim": "Europe stayed free of P. infestans for three centuries after the introduction of potato.",
+      "claim_type": "EXPLICIT",
+      "source_text": "for three centuries Europe stayed free of P. infestans, the causal agent of late blight",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on historical records and previous research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "b7aac5bb-b25a-4fc5-8fc8-7da41c5dca29",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C14",
+      "claim": "P. infestans reached Europe in 1845.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In 1845, the oomycete P. infestans finally reached Europe",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established historical fact documented in historical records.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "046762c0-6463-4305-bcfc-26c54d7fff8f",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C15",
+      "claim": "P. infestans spread rapidly from Belgium to other countries of mainland Europe and then to Great Britain and Ireland.",
+      "claim_type": "EXPLICIT",
+      "source_text": "spreading rapidly from Belgium to other countries of mainland Europe and then to Great Britain and Ireland",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on historical records of the disease spread.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "a1faf153-e887-4fcb-8d33-1e1785fb742c",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C16",
+      "claim": "The Irish population was more dependent on potato for subsistence than other parts of Europe.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The impact of the epidemic reached catastrophic levels in Ireland, where the population was more dependent on potato for their subsistence than in other parts of Europe",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is supported by historical research cited in the manuscript (Bourke, 1964; Reader, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "fad2d48f-5ece-4aa1-bd64-5b803133070e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C17",
+      "claim": "The Great Famine killed around 1 million people.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The subsequent Great Famine killed around 1 million people",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a historical fact supported by cited historical research (Turner, 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "57e8fdfc-11b0-4c38-8692-9ecc0416e06f",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C18",
+      "claim": "An additional million people were forced to leave Ireland due to the famine.",
+      "claim_type": "EXPLICIT",
+      "source_text": "an additional million were forced to leave the island",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a historical fact supported by cited research (Turner, 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "969321be-1e76-484d-9dc9-e9ffa981c7a2",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C19",
+      "claim": "The Irish population remains less than three quarters of what it was at the beginning of the 1840s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Even today, the Irish population remains less than three quarters of what it was at the beginning of the 1840s.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a demographic fact that can be verified from population records.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "cd49cbd0-a19c-43ed-9a0f-f14853d7d36d",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C20",
+      "claim": "Chemical and genetic methods to combat P. infestans became available only several decades after the 1840s epidemic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These dramatic consequences of the P. infestans epidemic were due to the absence of chemical and genetic methods to combat it; such means became available only several decades later.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on historical knowledge of agricultural development.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "448d7920-3625-4a82-8941-99a3fe3307bc",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C21",
+      "claim": "Late blight remains the most destructive disease of potato, the third largest food crop.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Late blight remains the most destructive disease of the third largest food crop",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in plant pathology, supported by cited research (Fisher et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e54afc39-dfd3-478d-a1c2-95382f82f38e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C22",
+      "claim": "Annual losses of potatoes due to late blight would be sufficient to feed anywhere from 80 to many hundreds of millions of people.",
+      "claim_type": "EXPLICIT",
+      "source_text": "resulting in annual losses of potatoes that would be sufficient to feed anywhere from 80 to many hundreds of millions of people",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This estimate is cited from Fisher et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "30dc73ed-759a-4bcd-99a8-e652725e123f",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C23",
+      "claim": "P. infestans is an extraordinarily virulent and adaptable pathogen.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Phytophthora infestans is an extraordinarily virulent and adaptable pathogen",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited research (Fry, 2008; Haas et al., 2009) and general knowledge in plant pathology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "9fa70f37-2c5e-4565-808a-24ad1334f597",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C24",
+      "claim": "Sexual reproduction in P. infestans may trigger explosive population shifts driven by the emergence and migration of asexual lineages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agricultural systems, sexual reproduction may trigger explosive population shifts that are driven by the emergence and migration of asexual lineages",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by cited research (Fry et al., 1992, 2009; Cooke et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "abbd7b59-e422-45af-93a9-1e45249f74b1",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C25",
+      "claim": "P. infestans is thought to originate from Toluca Valley, Mexico.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The species is thought to originate from Toluca Valley, Mexico",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by multiple cited studies on P. infestans biogeography.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e017a95c-e562-49e4-adc9-1349052bfb3f",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C26",
+      "claim": "In Toluca Valley, P. infestans infects wild relatives of potato.",
+      "claim_type": "EXPLICIT",
+      "source_text": "where it infects wild relatives of potato",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by cited research on P. infestans ecology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "fde176b1-49fb-4eab-a0d9-1ac49953dfce",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C27",
+      "claim": "P. infestans frequently undergoes sexual reproduction in Toluca Valley.",
+      "claim_type": "EXPLICIT",
+      "source_text": "frequently undergoes sexual reproduction",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by cited population genetic studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "587b1054-1de4-4c19-ae9a-ef77cb1b1fc0",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C28",
+      "claim": "P. infestans co-occurs with two closely related species P. mirabilis and P. ipomoeae in Toluca Valley.",
+      "claim_type": "EXPLICIT",
+      "source_text": "co-occurs with the two closely related species P. mirabilis and P. ipomoeae",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by cited taxonomic and ecological studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "f161e613-bbc0-45bd-bdee-dae2e59afd6e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C29",
+      "claim": "P. infestans is characterized by high levels of genetic and phenotypic diversity in its center of origin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In its center of origin, P. infestans is characterized by high levels of genetic and phenotypic diversity",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by cited population genetic studies (Gr\u00fcnwald and Flier, 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "aee0cef5-145a-48cb-b4ee-3c2d808206ae",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C30",
+      "claim": "The P. infestans T30-4 reference genome is 240 Mb in size.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the 240 Mb T30-4 reference genome of P. infestans",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is a published genome characteristic from cited research (Haas et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e73ec9e7-ce23-4af4-87f0-1f8a25655325",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C31",
+      "claim": "Three quarters of the P. infestans T30-4 genome consists of repetitive DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with three quarters of the genome consisting of repetitive DNA",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is a published genome characteristic from cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "5cd042ab-75a3-4b7f-b599-49c8dd3fa16a",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C32",
+      "claim": "The P. infestans T30-4 genome is large compared to other species in the genus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Compared to other species in the genus, the 240 Mb T30-4 reference genome of P. infestans is large",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on comparative genomics from cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "24962c7e-d38f-4302-8add-36a6f57246d4",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C33",
+      "claim": "A large number of genes in P. infestans code for effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A large number of genes codes for effector proteins",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is based on genome annotation from cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "b7c33cb2-75bf-4283-a990-f5cb86a0bfef",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C34",
+      "claim": "Many P. infestans effector proteins are delivered inside plant cells to promote host colonization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "many of which are delivered inside plant cells to promote host colonization",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about effector function supported by cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "781bc28d-1c05-4855-ac03-5c07bcdf8a4b",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C35",
+      "claim": "Some P. infestans effectors suppress plant immunity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "for instance by suppressing plant immunity",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about effector function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e39c3ed7-d153-4869-81ff-b5827267bdcf",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C36",
+      "claim": "RXLR proteins are the main class of host-translocated effectors in P. infestans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "RXLR proteins, the main class of host-translocated effectors",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge in P. infestans molecular biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "da1f67a0-6eb6-416c-bf59-e08281258a9f",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C37",
+      "claim": "About 550 genes encode RXLR proteins in the P. infestans T30-4 genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "are encoded by about 550 genes in the P. infestans T30-4 genome",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is a specific count from genome annotation in cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "0306df46-c323-446b-b502-9952a7d8ca21",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C38",
+      "claim": "RXLR effectors that can be recognized by plant immune receptors are said to have 'avirulence' activity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "RXLR effectors that can be recognized by plant immune receptors, known as Resistance (R) proteins, are said to have 'avirulence' activity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established terminology and concept in plant pathology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "6ca77483-783a-4407-b918-008adb83f697",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C39",
+      "claim": "Upon introduction of a cognate R gene into the host population, avirulence effectors become a liability for the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Upon introduction of a cognate R gene into the host population, such avirulence effectors become a liability for the pathogen",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established evolutionary theory in plant-pathogen interactions, supported by cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "dd7ea7fb-a496-491e-bd47-d793f9d5fc40",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C40",
+      "claim": "Natural selection favors the spread of pseudogenized or mutated alleles of avirulence effectors after R gene introduction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "natural selection favors the spread of pseudogenized or mutated alleles",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is evolutionary theory supported by cited research (Vleeshouwers et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "6ac1488f-c064-466c-b1f1-0ce872ee2f35",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C41",
+      "claim": "The detailed descriptions and drawings of Heinrich Anton de Bary leave no doubt that the 19th century blight epidemic was triggered by P. infestans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The detailed descriptions and drawings of Heinrich Anton de Bary and the reports of several other pioneers of plant pathology leave no doubt that the 19th century blight epidemic was triggered by P. infestans",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on historical scientific documentation cited in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "917f4f46-dcde-4633-a008-ccb698449aae",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C42",
+      "claim": "The relationship of 19th century P. infestans strains to modern isolates remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source_text": "What remains controversial is the relationship of the 19th century strains to modern isolates.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This refers to ongoing scientific debate documented in the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "2c0932e1-daf8-43fc-8196-058586874120",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C43",
+      "claim": "Prior to the late 1970s, global P. infestans populations outside of South America and Mexico were dominated by a single clonal lineage with mtDNA haplotype Ib called US-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Prior to the late 1970s, global P. infestans populations outside of South America and Mexico, the centers of diversity of the host and the pathogen, were dominated by a single clonal lineage that had the mitochondrial (mtDNA) haplotype Ib and was called US-1",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established from cited population genetic studies (Goodwin et al., 1994).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4076bb9b-388d-44cb-8647-83a941e368a7",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C44",
+      "claim": "It was proposed that the US-1 lineage was a direct descendant of the strain that first caused widespread late blight in North America from 1843 on.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It was therefore proposed that the US-1 lineage was a direct descendant of the strain that first caused widespread late blight in North America from 1843 on",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to a hypothesis from cited research (Bourke, 1964; Goodwin et al., 1994).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e6dab6e5-44cb-45e4-b049-2c951c79bd28",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C45",
+      "claim": "PCR analysis of infected 19th century potato leaves stored in herbaria concluded that historic strains belonged to mtDNA haplotype Ia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The conclusion from these studies was that the historic strains belonged to a mtDNA haplotype, Ia, that was distinct from that of the US-1 lineage",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from cited research (Ristaino et al., 2001; May and Ristaino, 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "59f39033-74b7-44d6-bf67-76ccbf1edb4e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C46",
+      "claim": "Haplotype Ia was the predominant haplotype in the Toluca Valley in Mexico at the time of the previous studies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because Ia was at the time not only the predominant haplotype in the Toluca Valley in Mexico",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on cited population surveys (Gavino and Fry, 2002; Flier et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "b431f095-58a6-46eb-88e3-923fe88385f5",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C47",
+      "claim": "Haplotype Ia had been found in South America.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but had also been found in South America",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on cited research (Perez et al., 2001).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "6be7ff90-9f98-4f02-a014-d13148b940fa",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C48",
+      "claim": "May and Ristaino (2004) speculated that the 19th century and US-1 lineages represented two independent epidemics of divergent lineages that both originated in South America.",
+      "claim_type": "EXPLICIT",
+      "source_text": "May and Ristaino (2004) speculated that the 19th century and US-1 lineages represented two independent epidemics of divergent lineages that had both originated in South America and spread from there to North America and Europe.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a hypothesis from cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e70fbb74-1a58-4056-9f4e-aab8ea19264e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C49",
+      "claim": "The far-reaching conclusions about two independent epidemics were based on only three mtDNA SNPs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A caveat was that these far-reaching conclusions were based on only three mtDNA SNPs",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a critique of the methodology in cited research (Ristaino et al., 2001; May and Ristaino, 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "27ac210b-18fd-461f-beea-e3052d559231",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C50",
+      "claim": "Ancient DNA (aDNA) methods have seen impressive advances thanks to high-throughput sequencing technologies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the retrieval and sequencing of DNA from museum specimens, fossil remains and archaeological samples\u2014collectively known as ancient DNA (aDNA)\u2014have seen impressive advances thanks to the advent of high-throughput sequencing technologies",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in the field of ancient DNA research, supported by cited review (P\u00e4\u00e4bo et al., 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3b4df2e5-46e6-4e21-9405-29b345dfe43b",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C51",
+      "claim": "The combined analysis of modern and ancient genomes of human pathogens has begun to solve important questions about their history and evolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The combined analysis of modern and ancient genomes of human pathogens has begun to solve important questions about their history and evolution",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited research on ancient pathogen genomes (Bos et al., 2011, 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "0c328835-fe1a-45c4-9c9f-29a9b9db0283",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C52",
+      "claim": "Ancient DNA methods hold promise for plant pathology.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we show that aDNA methods hold similar promise for plant pathology",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the successful application of aDNA methods in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "9fbdab38-2235-4011-b118-50a28fcf0b48",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C53",
+      "claim": "Ancient DNA methods can improve understanding of historically important plant pathogen epidemics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "they can improve our understanding of historically important plant pathogen epidemics",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated by the results of this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "9e2c0d37-c82a-47fa-9e35-4ee35231c868",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C54",
+      "claim": "The study shotgun-sequenced 11 herbarium samples of infected potato and tomato leaves collected from 1845 to 1896.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we shotgun-sequenced 11 herbarium samples of infected potato and tomato leaves collected from continental Europe, Great Britain, Ireland, and North America in the period from 1845 to 1896",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental methods and samples used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "844ff247-c4e5-44b6-9dd9-4c67fd8c1236",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C55",
+      "claim": "The study extracted information on P. infestans mitochondrial and nuclear genomes from herbarium samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and extracted information on P. infestans mitochondrial and nuclear genomes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data obtained from the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "7796731a-0723-4646-8626-ca9c3c7a4359",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C56",
+      "claim": "The study compared historic P. infestans genomes to those of 15 modern 20th century strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we compared the historic P. infestans genomes to those of 15 modern 20th century strains that span the genetic diversity of the species",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the comparative analysis performed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "06d71707-a593-4fbb-8c55-e36c97d448a6",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C57",
+      "claim": "The study compared P. infestans genomes to the two sister species P. ipomoeae and P. mirabilis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and to the two sister species P. ipomoeae and P. mirabilis",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the outgroup species used for phylogenetic analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "bfefe5ab-2a17-48d7-b058-f4973db2f4a8",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C58",
+      "claim": "HERB-1 and US-1 are sister groups that share a common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rather, HERB-1 and US-1 are sister groups that share a common ancestor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a phylogenetic inference based on genomic data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "27ffa8f5-01c1-40a5-ab12-3b3cd816a68e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C59",
+      "claim": "There are three private substitutions that define the US-1 clade.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There are three private substitutions that define the US-1 clade",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific finding from the genomic sequence analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "dd42be64-dea0-4e8c-92f3-890b719a9eb6",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C60",
+      "claim": "There are two private substitutions that define the HERB-1 clade.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and two that define the HERB-1 clade",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific finding from the genomic sequence analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "d4072291-e1f0-467b-8fc3-1eb24fee82ed",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C61",
+      "claim": "Ancient DNA fragments are typically shorter than 100 bp.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ancient DNA fragments are typically shorter than 100 bp",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about ancient DNA characteristics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "081fb5f3-6ca9-4ed8-98a1-9079f9813a41",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C62",
+      "claim": "The combination of uracil-DNA-glycosylase (UDG) and endonuclease VIII reduces the overall per-base error rate to as low as one 20th of unrepaired aDNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The combination of uracil-DNA-glycosylase (UDG) and endonuclease VIII, which removes uracil residues and repairs abasic sites, reduces the overall per-base error rate to as low as one 20th of unrepaired aDNA",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a methodological finding from cited research (Briggs et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "f000f079-f30e-479c-9b23-923b12dc6fb5",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C63",
+      "claim": "Deamination of C to U in aDNA is highest at the first base.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Deamination of C to U in aDNA is highest at the first base",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about aDNA damage patterns, supported by cited research (Briggs et al., 2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "0d2de94c-33d8-4014-bc21-ec010a20a138",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C64",
+      "claim": "C-to-T was the predominant substitution at the 5\u2032-end of molecules in the herbarium samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "C-to-T was the predominant substitution at the 5\u2032-end of molecules",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the sequence data analysis confirming aDNA characteristics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "325c56dd-cdbe-42c9-8c6b-75176e075db1",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C65",
+      "claim": "The fraction of P. infestans DNA in the herbarium samples was estimated to be between 1% and 20%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on mapping against the reference genome, we estimated the fraction of P. infestans DNA in the samples to be between 1% and 20%",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative estimate from the mapping analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "38199729-c297-45a5-b4f8-07c20b03be89",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C66",
+      "claim": "Most of the remaining reads from herbarium samples could be mapped to the reference genomes for potato and tomato.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Most of the remaining reads could be mapped to the reference genomes for potato and tomato",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the sequence mapping analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "33ee840b-6e25-499a-8a8c-2f64a9711b7e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C67",
+      "claim": "All historic samples had a T at the position diagnostic for haplotype Ib.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement with the previous report by Ristaino et al. (2001), all historic samples had a T at the position diagnostic for haplotype Ib",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific sequence finding from the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "57f83200-58bf-4a24-9bab-1a014eca2433",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C68",
+      "claim": "The US-1 lineage carries a C at the position diagnostic for haplotype Ib.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which distinguishes them from the US-1 lineage, which carries instead a C at this position",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific sequence finding distinguishing US-1 from HERB-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "be50b4b6-fc3d-497f-8ba8-b2da335604dd",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C69",
+      "claim": "No other sequence differences were found around the diagnostic site, in contrast to the previous report.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast to the previous report, we found no other sequence differences around this diagnostic site.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding that contradicts previous research (Ristaino et al., 2001).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "543fc129-6911-4e66-a5e3-5712511a3662",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C70",
+      "claim": "HERB-1 strains should harbor fewer substitutions compared to modern strains because they were sampled in the 19th century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As the HERB-1 strains were sampled in the 19th century, their genomes should harbor fewer substitutions compared to modern strains, which have continued to evolve for over a hundred years.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference based on evolutionary theory and sampling time.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "c551e627-7220-4cbc-aeed-2f58289382c4",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C71",
+      "claim": "Sampling age can be used as tip calibration to directly calculate substitution rates and divergence times in a Bayesian framework analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This can be exploited to directly calculate substitution rates and divergence times using the sampling age as tip calibration in a Bayesian framework analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an established method in molecular evolution, as demonstrated in cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "27f3837b-64ca-4d70-8566-3dfef12ed8b8",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C72",
+      "claim": "Shorter evolutionary time usually translates into branch shortening in phylogenetic trees that include both modern and ancient pathogen strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Shorter evolutionary time usually translate into branch shortening in phylogenetic trees that include both modern and ancient pathogen strains",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a principle of phylogenetic analysis applied to ancient DNA.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "52711501-9121-4484-a543-230aa4cd7b47",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C73",
+      "claim": "The study estimated that type I and type II mtDNA haplotypes diverged close to the beginning of the 16th century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we estimated that type I and type II mtDNA haplotypes diverged close to the beginning of the 16th century",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a divergence time estimate from Bayesian phylogenetic analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "12874663-a395-48c0-bde0-759b0fd9834d",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C74",
+      "claim": "The divergence of type I and type II haplotypes coincides with the first contact between Americans and Europeans in Mexico.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This coincides with the first contact between Americans and Europeans in Mexico",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference connecting the molecular dating to historical events.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3a518cb3-0b13-4385-abac-f992004fc278",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C75",
+      "claim": "First contact between Americans and Europeans potentially fuelled P. infestans population migration and expansion outside its center of diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which potentially fuelled P. infestans population migration and expansion outside its center of diversity",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis connecting historical events to pathogen evolution.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "a53c3a01-cfe0-4708-b71c-e48e9f1f0403",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C76",
+      "claim": "The split between P. mirabilis and P. infestans occurred about 1300 years ago.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the divergence estimates allowed us to date the split between P. mirabilis and P. infestans about 1300 ya",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a divergence time estimate from the phylogenetic analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3566d615-8487-4b73-a2f5-dd359684fe65",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C77",
+      "claim": "The speciation of P. mirabilis and P. infestans occurred during the period of pre-Columbian civilization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Even though this was firmly during the period of pre-Columbian civilization",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference connecting the molecular dating to historical periods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "cc968f52-4a7a-45a1-8f7f-63c82a6466c1",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C78",
+      "claim": "What led to the speciation of P. mirabilis and P. infestans remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source_text": "what led to their relatively recent speciation remains unknown",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges a gap in understanding despite the dating estimate.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "1fa21c57-1c18-4a39-bebe-26ffda60be83",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C79",
+      "claim": "The study did not find evidence for genes or sites that had experienced branch-specific positive selection in any of the lineages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We did not find any evidence for genes or sites that had experienced branch-specific positive selection in any of the lineages",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a negative result from the PAML selection analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "b432098a-358d-47a2-886a-5ed7a9fd56e1",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C80",
+      "claim": "A mosaic pattern with potentially positively selected genes shared across lineages was found.",
+      "claim_type": "EXPLICIT",
+      "source_text": "only a mosaic pattern with potentially positively selected genes shared across lineages",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the selection analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "8288c672-a2c5-4b70-9832-71ad6f5801ec",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C81",
+      "claim": "Inactivating mutations may have been more important than non-synonymous substitutions in the success of US-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Alternative scenarios could be that inactivating mutations were more important than non-synonymous substitutions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative alternative explanation for the lack of positive selection signal.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "a2db10da-8421-4d2d-bcc0-485f22ba86ec",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C82",
+      "claim": "Higher overall diversity and re-assortment of beneficial gene variants by recombination could have contributed to the success of US-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "or that higher overall diversity and re-assortment of beneficial gene variants by recombination contributed to the success of US-1",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative alternative explanation for US-1 success.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e78c8053-2949-4c57-8b24-3b3a8aad8125",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C83",
+      "claim": "Polyploidy has been reported in isolates of P. infestans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Genetic diversity can be increased by polyploidy, which has been reported in isolates of",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to previous reports in the literature about P. infestans ploidy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e585d40d-cd52-4a1e-9cb1-9feea695d3f8",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C84",
+      "claim": "The historic sample M-0182896 is diploid.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on shapes, standard deviation, skewedness and kurtosis of the observed distributions and comparison with the simulated ones, we classified the tested P. infestans genomes as diploid, triploid and tetraploid.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the allele frequency distribution analysis shown in Figure 8.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "44bd446b-2cb8-4a98-a0f3-09fa42ee85bb",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C85",
+      "claim": "Some modern P. infestans strains are triploid or tetraploid.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Based on shapes, standard deviation, skewedness and kurtosis of the observed distributions and comparison with the simulated ones, we classified the tested P. infestans genomes as diploid, triploid and tetraploid.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the allele frequency distribution analysis and comparison with simulated genomes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "8e035ff3-85ca-4fbc-b486-30a93ff598de",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C86",
+      "claim": "All examined avirulence effector genes except Avr3b were present as full-length and intact coding sequences in the historic samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All examined avirulence effector genes except Avr3b were present as full-length and intact coding sequences in the historic samples",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the effector gene analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "932c447b-2fce-4f93-a35e-e84e517041c0",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C87",
+      "claim": "The HERB-1 alleles of Avr1, Avr2, Avr3a and Avr4 were shared with those of the US-1 strain DDR7602.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The HERB-1 alleles of Avr1, Avr2, Avr3a and Avr4 were shared with those of the US-1 strain DDR7602",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from sequence comparison of effector genes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "cfbbfe2f-1c18-44b2-a894-6aa8b70b23f6",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C88",
+      "claim": "The Avr1, Avr2, Avr3a and Avr4 alleles of HERB-1 are intact, presumably functional copies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the Avr1, Avr2, Avr3a and Avr4 alleles of HERB-1 are intact, presumably functional copies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the absence of frame shifts or nonsense mutations in the sequences.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "96da2afb-abdb-4165-abdd-60d51b85e5de",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C89",
+      "claim": "The HERB-1 Avr alleles can be recognized by the matching R genes R1, R2, R3a and R4.",
+      "claim_type": "EXPLICIT",
+      "source_text": "that are identical to ones that can be recognized by the matching R genes R1, R2, R3a and R4",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from sequence identity with known avirulence alleles, supported by cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3b9998cc-e829-4092-9bad-e35fae7758c5",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C90",
+      "claim": "The HERB-1 genotype must have been avirulent on the first potato cultivars that acquired late blight resistance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is consistent with the expectation that the HERB-1 genotype must have been avirulent on the first potato cultivars that acquired late blight resistance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference from the presence of intact avirulence genes in HERB-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "ebd77f46-2e10-4549-8ad8-3b25af67129d",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C91",
+      "claim": "19th century potato cultivars in North America and Europe were fully susceptible to late blight.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Given that 19th century potato cultivars in North America and Europe were fully susceptible to late blight, we presume that they did not yet contain resistance genes that are effective against HERB-1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on historical knowledge of potato breeding and disease resistance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "cd62d12b-c6f0-4241-b66e-359f0b0ff9a8",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C92",
+      "claim": "The first R genes for P. infestans resistance were introduced into cultivated potato after the dates of the HERB-1 samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Conversely, the first R genes for P. infestans resistance, introduced into cultivated potato only after the dates for our HERB-1 samples",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on historical knowledge of potato breeding, supported by cited research (Hawkes, 1990).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "26fdd367-9ef9-4166-8f7a-6cdcab5bee39",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C93",
+      "claim": "The first R genes include R1 to R4 from Solanum demissum.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The R genes include in particular R1 to R4 from Solanum demissum",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from potato breeding history, supported by cited research (Hawkes, 1990).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "2ef35ce6-ef5e-457f-9e85-f2e6cb31d6dc",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C94",
+      "claim": "R3b is within 0.4 cM of R3a in the complex R3 locus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, R3b, the matching R gene of Avr3b, is within 0.4 cM of R3a in the complex R3 locus",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a genetic mapping result from cited research (Li et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "1e7fbef7-0283-41fc-bc62-d20de762c105",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C95",
+      "claim": "Initial introgression of the R3 locus from S. demissum was based on the resistance phenotype conferred by the R3a gene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on the absence of an Avr3b gene in HERB-1, we conclude that initial introgression of the R3 locus from S. demissum was based on the resistance phenotype conferred by the R3a gene.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the absence of Avr3b in HERB-1 and the presence of Avr3a.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "28dc6c65-ddb6-4686-8a16-78844544815c",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C96",
+      "claim": "The R3 phenotype scored during initial introgression was the recognition of Avr3a by R3a.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The R3 phenotype scored during the initial introgression must have been the recognition of Avr3a by R3a",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the effector gene composition of HERB-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "f88f1d4f-9574-45e1-a4a7-1a904031b573",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C97",
+      "claim": "The presence of R3b was irrelevant until P. infestans strains carrying Avr3b emerged.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the presence of R3b must have been irrelevant until P. infestans strains carrying Avr3b emerged",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference from the absence of Avr3b in HERB-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "8715edec-2d04-4d6c-bdcf-7574920344f1",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C98",
+      "claim": "The ancient DNA in the herbarium samples was remarkably well conserved.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The aDNA in the herbarium samples, which were about 150 years old, was remarkably well conserved",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the successful sequencing and analysis of the samples.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "262fe3d6-2a80-4fff-8ea8-c2faf6e9f1ce",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C99",
+      "claim": "The DNA preservation in herbarium samples was much better than most examples of aDNA from animals and humans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "much better than most examples of aDNA from animals and humans",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a comparative assessment based on the quality of DNA recovered.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "08218c40-2d2d-41b3-8a9c-c6520d92c376",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C100",
+      "claim": "The DNA preservation in herbarium samples was only comparable with permafrost samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and only comparable with permafrost samples",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is a comparison with other high-quality ancient DNA sources from cited research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "63faae66-3f5a-4c8b-9bc6-5afa4e87cc72",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C101",
+      "claim": "Knowledge of the genetics and geographic distribution of modern strains is insufficient to correctly infer the source of historic epidemics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our analyses not only highlight how knowledge of the genetics and geographic distribution of modern strains is insufficient to correctly infer the source of historic epidemics",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the discrepancy between previous inferences and the current findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "50978559-8feb-46e1-8c06-81dc33baa973",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C102",
+      "claim": "Inferences based on a very small number of genetic markers in historic strains have shortcomings.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but they also reveal the shortcomings of inferences that are based on a very small number of genetic markers in historic strains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a critique based on the much richer dataset in the current study compared to previous work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "bb60a8ad-7aa5-4369-bcef-f7e1fdeea437",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C103",
+      "claim": "The late blight outbreaks during the 19th century were a pandemic caused by a single P. infestans lineage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we could demonstrate that the late blight outbreaks during the 19th century were a pandemic caused by a single P. infestans lineage",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the genomic analysis showing all historic samples belong to HERB-1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "121de89f-6835-4881-ac89-0c5d12f8b5b6",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C104",
+      "claim": "The 19th century lineage was not the direct ancestor of the lineage that dominated the global P. infestans population during much of the 20th century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but that this lineage was not the direct ancestor of the one that had come to dominate the global P. infestans population during much of the 20th century",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on phylogenetic analysis showing HERB-1 and US-1 are sister groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "de5071e0-2ad2-4906-97da-e6931edd1679",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C105",
+      "claim": "Infected plant specimens stored in herbaria around the world are a largely untapped source to learn about events that affected millions of people during recent history.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Infected plant specimens stored in herbaria around the world are thus a largely untapped source to learn about events that affected millions of people during our recent history.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a broader implication drawn from the success of this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "7092336a-697b-4274-9c30-b7300cd50423",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C106",
+      "claim": "Historic strains from different geographic locations all carried the HERB-1 mtDNA haplotype.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Historic strains from different geographic locations all carried a mtDNA haplotype, HERB-1, that had not been recognized before",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the mtDNA sequencing and phylogenetic analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "0ca1df55-955e-454b-a54d-25206d3aa198",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C107",
+      "claim": "HERB-1 had not been recognized before this study.",
+      "claim_type": "EXPLICIT",
+      "source_text": "that had not been recognized before",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is evident from the absence of HERB-1 in previous literature and databases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "a64916ac-4351-476c-b4c1-becc022c5a77",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C108",
+      "claim": "Historic strains collected over 50 years were distinguished from each other by few nuclear SNPs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although collected over a period of 50 years, the strains were distinguished from each other by few nuclear SNPs",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the nuclear genome comparison.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "d359da68-af88-425f-a6dd-6d1ecae8f1fa",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C109",
+      "claim": "The 19th century outbreak was a true pandemic of a rapidly spreading clonal genotype.",
+      "claim_type": "EXPLICIT",
+      "source_text": "indicating that the 19th century outbreak was a true pandemic of a rapidly spreading clonal genotype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the genetic uniformity of HERB-1 across different locations and time points.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "f499dbcd-eef1-4f1e-a048-cbec28ae8b13",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C110",
+      "claim": "HERB-1 has not been found in any modern strain so far.",
+      "claim_type": "EXPLICIT",
+      "source_text": "That HERB-1 has so far not been found in any modern strain",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on the analysis of modern strains in this study and absence in previous reports.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3ea9879d-b63d-42aa-b87d-f8809c949d77",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C111",
+      "claim": "HERB-1 may have gone extinct after the 19th century pandemic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "may point to its extinction after the 19th century pandemic",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis based on the absence of HERB-1 in modern populations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "1e4ecd56-a1b5-4c19-9538-dc2848ee187e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C112",
+      "claim": "HERB-1 extinction may have been associated with the onset of resistance gene breeding in the 20th century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "possibly associated with the onset of resistance gene breeding in the 20th century",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis connecting HERB-1 extinction to agricultural practices.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "7b22940e-b7eb-41bd-9c18-f6c2fd27f826",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C113",
+      "claim": "HERB-1 may still infect some localized, genetically unimproved host populations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We cannot, however, exclude that HERB-1 still infects some localized, genetically unimproved host populations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This acknowledges an alternative possibility that cannot be ruled out.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "74c093f2-b225-4b5b-88d1-080fcc3367aa",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C114",
+      "claim": "Only a fraction of current P. infestans genetic diversity has been explored.",
+      "claim_type": "EXPLICIT",
+      "source_text": "since we have explored only a fraction of current P. infestans genetic diversity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges the limitation of the sampling in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "17dc185e-a905-4d90-84f8-3cfeee2c5db0",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C115",
+      "claim": "The diagnostic variants discovered can be used to probe modern populations to determine whether HERB-1 still persists.",
+      "claim_type": "EXPLICIT",
+      "source_text": "With the diagnostic variants we have discovered, one can now probe modern populations to determine whether or not HERB-1 still persists somewhere.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a practical application suggested based on the study findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "6a0bacf8-e98a-4a57-9657-0ad9ccb25c07",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C116",
+      "claim": "Historic pathogen samples are molecular fossils that can be used as tip calibration points to estimate major divergence events.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Historic pathogen samples are molecular fossils that can be used as tip calibration points to estimate major divergence events in the evolution of a pathogen",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an established method in molecular evolution, as demonstrated in cited research (Bos et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4182a711-ef40-41af-bd87-bae08d40da28",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C117",
+      "claim": "This major event in human history (first contact in Mexico) might have been responsible for wider dissemination of P. infestans in the New World.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This major event in human history might thus have been responsible for wider dissemination of the P. infestans pathogen in the New World, several centuries before its introduction to Europe.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis connecting historical events to pathogen dispersal.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "c4f5a9f9-7175-4259-bfbc-4c5541d59744",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C118",
+      "claim": "P. infestans was disseminated in the New World several centuries before its introduction to Europe.",
+      "claim_type": "EXPLICIT",
+      "source_text": "several centuries before its introduction to Europe",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the divergence time estimates and historical context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "890fa0d4-e830-4c16-92cd-5d5e68035dd8",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C119",
+      "claim": "US-1 is more closely related to the historic strains than to the modern strains that have dominated the global population in the past two decades.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nevertheless, US-1 is more closely related to the historic strains than to the modern strains that have come to dominate the global population in the past two decades.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion from the phylogenetic analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "328ff07b-713e-4945-aaf3-6a71e3ffc1a4",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C120",
+      "claim": "The location of the metapopulation that gave rise to HERB-1 and US-1 remains uncertain.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The location of the metapopulation that gave rise to HERB-1 and US-1 remains uncertain",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges uncertainty in the proposed scenario.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4210e907-052a-4412-889d-973f22c5c316",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C121",
+      "claim": "The metapopulation is proposed to have been in North America.",
+      "claim_type": "EXPLICIT",
+      "source_text": "here it is proposed to have been in North America",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about the location of the metapopulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "06bb2495-3ec4-4d81-bd41-3de81d1a1d05",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C122",
+      "claim": "Host R genes that confer resistance to historic P. infestans strains were bred into cultivated potato from S. demissum at the beginning of the 20th century.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Host R genes that confer resistance to historic P. infestans strains, such as R3a, were bred into cultivated potato Solanum tuberosum from the wild species S. demissum at the beginning of the 20th century",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is historical knowledge from potato breeding, supported by cited research (Hawkes, 1990).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "aed32853-b1f7-4d68-9878-ad40b2abf0f8",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C123",
+      "claim": "R genes were bred into potato years after the youngest historic sample was collected in 1896.",
+      "claim_type": "EXPLICIT",
+      "source_text": "years after our youngest historic sample had been collected in 1896",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "evidence_reasoning": "This is based on historical breeding records and the sample collection dates.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "d55c646d-c6bf-489e-9625-c3f2a8ec1c19",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C124",
+      "claim": "HERB-1 strains have only the Avr3aKI allele.",
+      "claim_type": "EXPLICIT",
+      "source_text": "HERB-1 strains seem to have only the Avr3aKI allele",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the effector gene sequence analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "ca5ccb2e-49bc-42c6-8cf7-038868a70b7e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C125",
+      "claim": "The Avr3aKI allele interacts with the product of R3a to trigger a host immune response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which interacts with the product of the R gene R3a to trigger a host immune response",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge from cited research (Armstrong et al., 2005; Huang et al., 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "bac69a57-3758-4f78-b520-8edf2db034b6",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C126",
+      "claim": "De novo assembly of potato DNA did not provide evidence for the presence of R3a in the herbarium hosts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, de novo assembly of potato DNA did not provide evidence for the presence of R3a in the herbarium hosts",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the analysis of host plant DNA in the samples.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "9c10ae29-e8b5-4188-a232-4cd1035e8a75",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C127",
+      "claim": "The absence of R3a in herbarium hosts is consistent with the narrative of potato breeding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "consistent with the narrative of potato breeding",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is consistent with historical knowledge from cited research (Hawkes, 1990).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "2de3ccea-afca-4ca7-89bd-942c94be7a1d",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C128",
+      "claim": "It is uncertain when HERB-1 was displaced by the US-1 lineage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While it is uncertain when HERB-1 was displaced by the US-1 lineage",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges a gap in the temporal understanding of lineage replacement.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "143d7637-fc89-4c8e-b101-662f52f5eb47",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C129",
+      "claim": "The US-1 lineage carries only the Avr3aKI allele.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the US-1 lineage also carries only the Avr3aKI allele",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on sequence data and cited research (Armstrong et al., 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "eac75c3c-112b-4da6-b31f-d81812359740",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C130",
+      "claim": "The origin of the Avr3aEM allele that emerged to high frequency after R3a breeding remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The origin of the Avr3aEM allele that emerged to high frequency after the breeding of R3a into cultivated potatoes remains unclear.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges an unresolved question about effector evolution.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "79db895c-2fbf-4d7f-91a5-8ec384a99371",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C131",
+      "claim": "A major genomic difference between HERB-1 and US-1 lineages is the shift in ploidy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A major genomic difference between the HERB-1 and US-1 lineages is the shift in ploidy, from diploid to triploid and even tetraploid",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a finding from the ploidy analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "cbd752cb-4fac-42ec-a561-d2f8fa9df31b",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C132",
+      "claim": "Polyploidization could have provided an opportunity for US-1 isolates to enhance allelic diversity in the absence of frequent sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Polyploidization could have provided an opportunity for US-1 isolates to enhance allelic diversity in the absence of frequent sexual reproduction",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about the adaptive advantage of polyploidy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "423a17e1-b5f1-4ca5-a24b-837d8c211c4e",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C133",
+      "claim": "Polyploidization could have contributed to the global success of US-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and could thus have contributed to their global success",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis connecting polyploidy to evolutionary success.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "d3e90529-ec9f-40b6-983e-f5d5089f36c3",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C134",
+      "claim": "Asexual reproduction leads to an increase of deleterious mutation in the population due to lack of meiotic recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Asexual reproduction leads to an increase of deleterious mutation in the population due to a lack of meiotic recombination",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established evolutionary theory, supported by cited research (Felsenstein, 1974).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "ed481755-d30b-40b1-b9b3-dd7534957441",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C135",
+      "claim": "The major selection pressure that led to the replacement of HERB-1 by US-1 may have been the introduction of resistance gene breeding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, if the major selection pressure that led to the replacement of HERB-1 by US-1 was the introduction of resistance gene breeding",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conditional hypothesis about the cause of lineage replacement.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "13730cdf-ae4c-446a-b222-e7a833d057a4",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C136",
+      "claim": "Greater variation at effector genes in polyploid US-1 strains could have contributed to the replacement of HERB-1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "greater variation at effector genes in polyploid US-1 strains could have contributed to the replacement of HERB-1 soon after R genes from S. demissum and other wild species had been introduced into modern potato germplasm",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis connecting polyploidy, effector diversity, and lineage replacement.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "a51f2a73-3eed-4d9f-9c9f-4df2e979b8f4",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C137",
+      "claim": "This is the first genome-wide analysis of historic plant pathogen strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We present the first genome-wide analyses of historic plant pathogen strains.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a claim about the novelty of the study approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4c3d545f-ca5b-45aa-b33e-bef51163b03a",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C138",
+      "claim": "Samples were sent to the Senckenberg Museum in Frankfurt am Main by the Botanische Staatssammlung M\u00fcnchen and the Kew Royal Botanical Gardens.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Plant specimens were sent to the Senckenberg Museum in Frankfurt am Main by the Botanische Staatssammlung M\u00fcnchen and the Kew Royal Botanical Gardens",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the source of the herbarium samples.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "9fed56e3-da9c-4f4a-af20-f419f2a550fa",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C139",
+      "claim": "Sampling was carried out under sterile conditions in a laboratory with no prior exposure to P. infestans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sampling was carried out under sterile conditions in a laboratory with no prior exposure to P. infestans.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the contamination control measures in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "71ee8ffb-a6ae-4224-a314-4a908f755653",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C140",
+      "claim": "Preamplification steps of historic samples were performed in clean room facilities with no prior exposure to P. infestans DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Preamplification steps of historic samples were performed in clean room facilities with no prior exposure to P. infestans DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the contamination control measures in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "43422bd9-621e-4806-b1f5-280cb19784f7",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C141",
+      "claim": "Two independent Illumina sequencing libraries were created for each DNA extract.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two independent Illumina sequencing libraries were created for each DNA extract.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design for library preparation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e7773f72-54ef-4f5f-ba46-7d971bd69fca",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C142",
+      "claim": "In the first library, C-to-T damage caused by deamination of cytosines was not repaired.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the first library, C-to-T damage caused by deamination of cytosines was not repaired.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the treatment of the first set of libraries.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e847bf57-8254-4a0f-9da9-38b94e8e38fb",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "claim_id": "C143",
+      "claim": "A second library was treated with uracil-DNA glycosylase (UDG) and Endonuclease VIII before conversion into sequencing libraries.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To avoid potential sequencing artifacts caused by DNA damage, a second library was made from, 30 \u00b5l of each DNA extract, extraction blank control and water library blank control, and treated with uracil-DNA glycosylase (UDG) and Endonuclease VIII before conversion into sequencing libraries",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the treatment of the second set of libraries to reduce aDNA damage artifacts.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "283533d9-6500-47e9-a24c-504d578e0129",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The identification of HERB-1 as a unique, previously unrecognized genotype causing the 19th century pandemic is well-supported by comprehensive genomic data from 11 herbarium samples spanning 1845-1896. The genetic uniformity across geographic locations and time points (few nuclear SNPs differentiating samples), combined with distinct mtDNA signatures and appropriate ancient DNA authentication (deamination patterns, fragment lengths), provides strong converging evidence for a single clonal pandemic lineage.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The phylogenetic relationship between HERB-1 and US-1 as sister lineages (not ancestor-descendant) is well-supported by both mtDNA and nuclear genome analyses showing private substitutions defining each clade (3 for US-1, 2 for HERB-1). The metapopulation hypothesis is reasonable given the phylogenetic evidence and divergence timing, though the specific geographic location remains speculative and acknowledged as uncertain by the authors.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The divergence time estimates using tip calibration in a Bayesian framework are methodologically sound and follow established practices in ancient DNA research. The temporal signal is validated (Mann-Whitney U-test, p=0.0003), and the estimates for Type I/II haplotype divergence (~16th century) and P. mirabilis/P. infestans split (~1300 ya) are supported by appropriate statistical analyses with clear confidence intervals. The connection to historical events is appropriately presented as hypothesis rather than established fact.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "2e69133c-902f-4e85-a5c8-cdaac51f3436",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The ploidy shift from diploid HERB-1 to polyploid modern strains is well-supported by allele frequency distribution analysis validated against simulated genomes with known ploidy levels. The methodology appropriately uses multiple distribution characteristics (shape, standard deviation, skewness, kurtosis) for classification. While the adaptive significance of polyploidy for US-1 success remains speculative, the ploidy determination itself is robustly supported by the data.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The effector gene analysis showing intact avirulence genes (Avr1, Avr2, Avr3a, Avr4) in HERB-1 is well-supported by sequence data with no frame shifts or nonsense mutations. The consistency with historical breeding records (R genes introduced after 1896) and the absence of R3a in herbarium host DNA strengthens the conclusions. The inference about R3a-based selection at the R3 locus is logical given Avr3b absence in HERB-1, though some mechanistic details remain speculative.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The exceptional preservation of ancient DNA in herbarium samples is well-documented through multiple quality metrics: characteristic fragment length distributions, C-to-T deamination patterns at 5' ends, 1-20% pathogen DNA content, and successful genome reconstruction. The use of UDG treatment, clean room facilities, and appropriate controls demonstrates rigorous methodology. The comparison to permafrost-quality preservation is justified by the data quality achieved.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "3a6093c9-055b-430e-a647-a9bc4483f1cc",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The demonstration that ancient DNA methods can successfully address questions in plant pathology is supported by the comprehensive genomic analysis presented. The critique of previous work based on limited markers (3 SNPs) is valid given the millions of SNPs analyzed here. However, the broader claim about herbaria as 'largely untapped sources' extends beyond what this single study can fully support, though the successful application provides strong proof-of-concept.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "386093bf-cce3-4863-879c-66dcffcb5034",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The absence of branch-specific positive selection in PAML analysis is a negative result that could reflect either true biology or methodological limitations (e.g., power, model assumptions). The alternative explanations proposed (inactivating mutations, recombination, polyploidy effects) are reasonable but speculative. Without additional functional validation or alternative analytical approaches, the evolutionary mechanisms driving US-1 success remain uncertain.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "e8532bc1-6a71-433c-8fef-17be5f955cc3",
+      "content_id": "cd6a4ba4-7155-4408-a998-649449be52b4",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The fate of HERB-1 (extinction vs. persistence in unsampled populations) cannot be definitively determined from the available data. While absence from modern samples and 20th century collections suggests extinction, the acknowledged sampling limitations (only a fraction of global diversity explored) mean persistence in localized populations cannot be ruled out. The proposed connection to resistance breeding is plausible but remains speculative without temporal data on the actual replacement timing.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "abc8f83f-2c1c-4197-972f-647a2d61e037",
+      "content_id": "c7f49e17-2fd8-46f4-9671-29f23c98cc6a",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly state that 'the conclusion of a single clonal lineage, HERB-1, dominating the late blight population outside of Mexico for at least 50 years, closely related to US-1, but perhaps giving way to variants derived from the latter, is well supported by the data.' They affirm the finding that HERB-1 was a pandemic of a rapidly spreading clonal genotype and that it was not the direct ancestor of US-1.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "c3057fe5-ca2a-456a-879d-ec6a05d61d09",
+      "content_id": "c7f49e17-2fd8-46f4-9671-29f23c98cc6a",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers state that 'the derivation of both HERB-1 and US-1 from a common ancestor within a \"metapopulation\" outside of Mexico, the accepted centre of P. infestans diversity, again seems likely.' This indicates acceptance of the phylogenetic relationship and the metapopulation hypothesis, though the exact location remains uncertain.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "168efef3-2ade-462c-8d6e-ba855391e758",
+      "content_id": "c7f49e17-2fd8-46f4-9671-29f23c98cc6a",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express significant concerns about the effector gene analysis, questioning what is meant by 'full effector gene complement' and noting that 'the % coverage they show in this table is lacking the detail to reach their conclusion.' They request additional validation: 'If their conclusions are based entirely on sequence assemblies (from NGS of ancient DNA), then they need to be backed up by additional experiments' including direct PCR and sequencing of AVR2/2-like, AVR3a, and AVR4.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "2cf27463-5d7d-4aec-9b69-01f1d05fcc52",
+      "content_id": "c7f49e17-2fd8-46f4-9671-29f23c98cc6a",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers note the ploidy findings are 'of interest' but explicitly stress 'it should be stressed that this is based entirely on projected allele frequencies (rather than backed up by other means).' This indicates the conclusion lacks independent validation and remains tentative despite being interesting.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "c49aa82b-d405-409d-9268-6148bba1efbb",
+      "content_id": "c7f49e17-2fd8-46f4-9671-29f23c98cc6a",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "An expert reviewer on phylogenetic analysis requests validation of temporal signal before trusting the dating analyses, stating 'it is important to test whether there is enough temporal signal in the data to trust the dating analyses.' They recommend correlation of sampling date against root-to-tip distance and randomization tests, indicating the divergence time estimates need additional methodological support.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3db258d1-6a83-48c3-b734-7b3875557cc3",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "43b9aee5-a3ef-47a3-b9ea-50e2cab07a9c",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "1d63daaf-4ea4-4640-9f8d-ea326efa43ec",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "fa4ee47e-e9f4-48c6-a82f-5b92396467f1",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "9e2c0d37-c82a-47fa-9e35-4ee35231c868",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "844ff247-c4e5-44b6-9dd9-4c67fd8c1236",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "7796731a-0723-4646-8626-ca9c3c7a4359",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "06d71707-a593-4fbb-8c55-e36c97d448a6",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "33ee840b-6e25-499a-8a8c-2f64a9711b7e",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "57f83200-58bf-4a24-9bab-1a014eca2433",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "be50b4b6-fc3d-497f-8ba8-b2da335604dd",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "bb60a8ad-7aa5-4369-bcef-f7e1fdeea437",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "7092336a-697b-4274-9c30-b7300cd50423",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "0ca1df55-955e-454b-a54d-25206d3aa198",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "a64916ac-4351-476c-b4c1-becc022c5a77",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "d359da68-af88-425f-a6dd-6d1ecae8f1fa",
+      "result_id": "283533d9-6500-47e9-a24c-504d578e0129"
+    },
+    {
+      "claim_id": "a0d6e157-b0ee-433e-8d8e-a1741e1057bc",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "5bf8476a-a7c2-4808-82f4-87874ee62489",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "6e78a3ff-1eca-4306-9d6b-4ced2fdd145d",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "bfefe5ab-2a17-48d7-b058-f4973db2f4a8",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "27ffa8f5-01c1-40a5-ab12-3b3cd816a68e",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "dd42be64-dea0-4e8c-92f3-890b719a9eb6",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "121de89f-6835-4881-ac89-0c5d12f8b5b6",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "890fa0d4-e830-4c16-92cd-5d5e68035dd8",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "328ff07b-713e-4945-aaf3-6a71e3ffc1a4",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "4210e907-052a-4412-889d-973f22c5c316",
+      "result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d"
+    },
+    {
+      "claim_id": "543fc129-6911-4e66-a5e3-5712511a3662",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "c551e627-7220-4cbc-aeed-2f58289382c4",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "27f3837b-64ca-4d70-8566-3dfef12ed8b8",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "52711501-9121-4484-a543-230aa4cd7b47",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "12874663-a395-48c0-bde0-759b0fd9834d",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "3a518cb3-0b13-4385-abac-f992004fc278",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "a53c3a01-cfe0-4708-b71c-e48e9f1f0403",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "3566d615-8487-4b73-a2f5-dd359684fe65",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "cc968f52-4a7a-45a1-8f7f-63c82a6466c1",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "6a0bacf8-e98a-4a57-9657-0ad9ccb25c07",
+      "result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563"
+    },
+    {
+      "claim_id": "e78c8053-2949-4c57-8b24-3b3a8aad8125",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "e585d40d-cd52-4a1e-9cb1-9feea695d3f8",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "44bd446b-2cb8-4a98-a0f3-09fa42ee85bb",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "79db895c-2fbf-4d7f-91a5-8ec384a99371",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "cbd752cb-4fac-42ec-a561-d2f8fa9df31b",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "423a17e1-b5f1-4ca5-a24b-837d8c211c4e",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "d3e90529-ec9f-40b6-983e-f5d5089f36c3",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "ed481755-d30b-40b1-b9b3-dd7534957441",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "13730cdf-ae4c-446a-b222-e7a833d057a4",
+      "result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436"
+    },
+    {
+      "claim_id": "8e035ff3-85ca-4fbc-b486-30a93ff598de",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "932c447b-2fce-4f93-a35e-e84e517041c0",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "cfbbfe2f-1c18-44b2-a894-6aa8b70b23f6",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "96da2afb-abdb-4165-abdd-60d51b85e5de",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "3b9998cc-e829-4092-9bad-e35fae7758c5",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "ebd77f46-2e10-4549-8ad8-3b25af67129d",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "cd62d12b-c6f0-4241-b66e-359f0b0ff9a8",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "26fdd367-9ef9-4166-8f7a-6cdcab5bee39",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "2ef35ce6-ef5e-457f-9e85-f2e6cb31d6dc",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "1e7fbef7-0283-41fc-bc62-d20de762c105",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "28dc6c65-ddb6-4686-8a16-78844544815c",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "f88f1d4f-9574-45e1-a4a7-1a904031b573",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "06bb2495-3ec4-4d81-bd41-3de81d1a1d05",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "aed32853-b1f7-4d68-9878-ad40b2abf0f8",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "d55c646d-c6bf-489e-9625-c3f2a8ec1c19",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "ca5ccb2e-49bc-42c6-8cf7-038868a70b7e",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "bac69a57-3758-4f78-b520-8edf2db034b6",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "9c10ae29-e8b5-4188-a232-4cd1035e8a75",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "2de3ccea-afca-4ca7-89bd-942c94be7a1d",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "143d7637-fc89-4c8e-b101-662f52f5eb47",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "eac75c3c-112b-4da6-b31f-d81812359740",
+      "result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b"
+    },
+    {
+      "claim_id": "d4072291-e1f0-467b-8fc3-1eb24fee82ed",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "081fb5f3-6ca9-4ed8-98a1-9079f9813a41",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "f000f079-f30e-479c-9b23-923b12dc6fb5",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "0d2de94c-33d8-4014-bc21-ec010a20a138",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "325c56dd-cdbe-42c9-8c6b-75176e075db1",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "38199729-c297-45a5-b4f8-07c20b03be89",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "8715edec-2d04-4d6c-bdcf-7574920344f1",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "262fe3d6-2a80-4fff-8ea8-c2faf6e9f1ce",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "08218c40-2d2d-41b3-8a9c-c6520d92c376",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "a51f2a73-3eed-4d9f-9c9f-4df2e979b8f4",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "4c3d545f-ca5b-45aa-b33e-bef51163b03a",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "9fed56e3-da9c-4f4a-af20-f419f2a550fa",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "71ee8ffb-a6ae-4224-a314-4a908f755653",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "43422bd9-621e-4806-b1f5-280cb19784f7",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "e7773f72-54ef-4f5f-ba46-7d971bd69fca",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "e847bf57-8254-4a0f-9da9-38b94e8e38fb",
+      "result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c"
+    },
+    {
+      "claim_id": "27ac210b-18fd-461f-beea-e3052d559231",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "3b4df2e5-46e6-4e21-9405-29b345dfe43b",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "0c328835-fe1a-45c4-9c9f-29a9b9db0283",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "9fbdab38-2235-4011-b118-50a28fcf0b48",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "63faae66-3f5a-4c8b-9bc6-5afa4e87cc72",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "50978559-8feb-46e1-8c06-81dc33baa973",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "de5071e0-2ad2-4906-97da-e6931edd1679",
+      "result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc"
+    },
+    {
+      "claim_id": "1fa21c57-1c18-4a39-bebe-26ffda60be83",
+      "result_id": "386093bf-cce3-4863-879c-66dcffcb5034"
+    },
+    {
+      "claim_id": "b432098a-358d-47a2-886a-5ed7a9fd56e1",
+      "result_id": "386093bf-cce3-4863-879c-66dcffcb5034"
+    },
+    {
+      "claim_id": "8288c672-a2c5-4b70-9832-71ad6f5801ec",
+      "result_id": "386093bf-cce3-4863-879c-66dcffcb5034"
+    },
+    {
+      "claim_id": "a2db10da-8421-4d2d-bcc0-485f22ba86ec",
+      "result_id": "386093bf-cce3-4863-879c-66dcffcb5034"
+    },
+    {
+      "claim_id": "f499dbcd-eef1-4f1e-a048-cbec28ae8b13",
+      "result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3"
+    },
+    {
+      "claim_id": "3ea9879d-b63d-42aa-b87d-f8809c949d77",
+      "result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3"
+    },
+    {
+      "claim_id": "1e4ecd56-a1b5-4c19-9538-dc2848ee187e",
+      "result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3"
+    },
+    {
+      "claim_id": "7b22940e-b7eb-41bd-9c18-f6c2fd27f826",
+      "result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3"
+    },
+    {
+      "claim_id": "74c093f2-b225-4b5b-88d1-080fcc3367aa",
+      "result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3"
+    },
+    {
+      "claim_id": "17dc185e-a905-4d90-84f8-3cfeee2c5db0",
+      "result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3"
+    },
+    {
+      "claim_id": "43b9aee5-a3ef-47a3-b9ea-50e2cab07a9c",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "1d63daaf-4ea4-4640-9f8d-ea326efa43ec",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "fa4ee47e-e9f4-48c6-a82f-5b92396467f1",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "a0d6e157-b0ee-433e-8d8e-a1741e1057bc",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "5bf8476a-a7c2-4808-82f4-87874ee62489",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "bfefe5ab-2a17-48d7-b058-f4973db2f4a8",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "bb60a8ad-7aa5-4369-bcef-f7e1fdeea437",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "121de89f-6835-4881-ac89-0c5d12f8b5b6",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "7092336a-697b-4274-9c30-b7300cd50423",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "0ca1df55-955e-454b-a54d-25206d3aa198",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "a64916ac-4351-476c-b4c1-becc022c5a77",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "d359da68-af88-425f-a6dd-6d1ecae8f1fa",
+      "result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037"
+    },
+    {
+      "claim_id": "6e78a3ff-1eca-4306-9d6b-4ced2fdd145d",
+      "result_id": "c3057fe5-ca2a-456a-879d-ec6a05d61d09"
+    },
+    {
+      "claim_id": "bfefe5ab-2a17-48d7-b058-f4973db2f4a8",
+      "result_id": "c3057fe5-ca2a-456a-879d-ec6a05d61d09"
+    },
+    {
+      "claim_id": "8e035ff3-85ca-4fbc-b486-30a93ff598de",
+      "result_id": "168efef3-2ade-462c-8d6e-ba855391e758"
+    },
+    {
+      "claim_id": "932c447b-2fce-4f93-a35e-e84e517041c0",
+      "result_id": "168efef3-2ade-462c-8d6e-ba855391e758"
+    },
+    {
+      "claim_id": "cfbbfe2f-1c18-44b2-a894-6aa8b70b23f6",
+      "result_id": "168efef3-2ade-462c-8d6e-ba855391e758"
+    },
+    {
+      "claim_id": "96da2afb-abdb-4165-abdd-60d51b85e5de",
+      "result_id": "168efef3-2ade-462c-8d6e-ba855391e758"
+    },
+    {
+      "claim_id": "3b9998cc-e829-4092-9bad-e35fae7758c5",
+      "result_id": "168efef3-2ade-462c-8d6e-ba855391e758"
+    },
+    {
+      "claim_id": "d55c646d-c6bf-489e-9625-c3f2a8ec1c19",
+      "result_id": "168efef3-2ade-462c-8d6e-ba855391e758"
+    },
+    {
+      "claim_id": "e585d40d-cd52-4a1e-9cb1-9feea695d3f8",
+      "result_id": "2cf27463-5d7d-4aec-9b69-01f1d05fcc52"
+    },
+    {
+      "claim_id": "44bd446b-2cb8-4a98-a0f3-09fa42ee85bb",
+      "result_id": "2cf27463-5d7d-4aec-9b69-01f1d05fcc52"
+    },
+    {
+      "claim_id": "79db895c-2fbf-4d7f-91a5-8ec384a99371",
+      "result_id": "2cf27463-5d7d-4aec-9b69-01f1d05fcc52"
+    },
+    {
+      "claim_id": "52711501-9121-4484-a543-230aa4cd7b47",
+      "result_id": "c49aa82b-d405-409d-9268-6148bba1efbb"
+    },
+    {
+      "claim_id": "a53c3a01-cfe0-4708-b71c-e48e9f1f0403",
+      "result_id": "c49aa82b-d405-409d-9268-6148bba1efbb"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f3424ca9-a037-4be5-b8bd-7c0e2f5aa471",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "283533d9-6500-47e9-a24c-504d578e0129",
+      "peer_result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both agree that HERB-1 as a single clonal pandemic lineage is well-supported by genomic data. Shared claims include C6, C7, C8, C103, C106, C107, C108, C109. LLM result includes additional claims (C5, C54-57, C67-69) not explicitly addressed in peer review, but core conclusion about HERB-1 identity is concordant.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "d5002182-ba5e-484e-991e-45ad81b240ab",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d",
+      "peer_result_id": "abc8f83f-2c1c-4197-972f-647a2d61e037",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both support the phylogenetic relationship showing HERB-1 and US-1 as sister lineages (not ancestor-descendant). Shared claims C9, C10, C58, C104. Peer review explicitly confirms HERB-1 was not the direct ancestor of US-1, aligning with LLM assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "bef06f68-e4a0-4cc9-8063-4639a8f7f469",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "3f762bf9-7b40-47a2-892b-fc9a451f5e7d",
+      "peer_result_id": "c3057fe5-ca2a-456a-879d-ec6a05d61d09",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both support the metapopulation hypothesis for common ancestry of HERB-1 and US-1. Shared claims C11, C58. Both acknowledge uncertainty about specific geographic location while finding the overall hypothesis plausible.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "b758144b-3b20-4c78-b460-55359218b443",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "800eb571-7f2c-40c4-88f4-c8ff9e02523b",
+      "peer_result_id": "168efef3-2ade-462c-8d6e-ba855391e758",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Significant disagreement on effector gene analysis. Shared claims C86, C87, C88, C89, C90, C124. LLM finds the intact avirulence genes well-supported by sequence data, while peer reviewers question the conclusions, noting insufficient detail in coverage data and requesting additional PCR validation experiments. Peer reviewers are skeptical of conclusions based solely on NGS assemblies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "4e934fc4-e185-4ca3-8b5b-971907f93fc1",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "2e69133c-902f-4e85-a5c8-cdaac51f3436",
+      "peer_result_id": "2cf27463-5d7d-4aec-9b69-01f1d05fcc52",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Disagreement on ploidy determination. Shared claims C84, C85, C131. LLM finds the allele frequency distribution analysis methodologically sound and well-validated, while peer reviewers note findings are 'of interest' but stress they are based entirely on projected allele frequencies without independent validation by other means.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "afb8895c-8901-4ac1-825a-f3f53a106ca4",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "4d537fc7-16c9-4d41-b0cf-c98b2a89d563",
+      "peer_result_id": "c49aa82b-d405-409d-9268-6148bba1efbb",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Disagreement on divergence time estimates. Shared claims C73, C76. LLM finds the tip calibration methodology sound with validated temporal signal, while peer reviewer requests additional validation including correlation of sampling date against root-to-tip distance and randomization tests before trusting the dating analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "94db4fde-985a-47f0-9d2e-4c121ae5e4b0",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "ebb51daf-e4f5-4cc5-965d-1fb87a5fa92c",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM evaluates ancient DNA preservation quality (C61-66, C98-100, C137-143) as well-supported. No corresponding peer review result explicitly addresses these methodological quality claims, though peer reviewers implicitly accept the data quality by engaging with substantive findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "b062c8eb-f284-43e4-bf18-fb05c5af4560",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "3a6093c9-055b-430e-a647-a9bc4483f1cc",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM evaluates claims about ancient DNA methods in plant pathology (C50-53, C101-102, C105) as supported. No direct peer review result addresses these broader methodological claims, though peer acceptance of the study's publication implies general agreement with the approach's validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "be167ef5-fd3d-40e6-9b62-91199482c7ca",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "386093bf-cce3-4863-879c-66dcffcb5034",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM finds claims about positive selection analysis (C79-82) uncertain due to negative results and methodological limitations. No corresponding peer review result explicitly addresses these selection analysis claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    },
+    {
+      "id": "f5d5da4b-7396-499d-aa9c-cb1b1aee16fb",
+      "submission_id": "0a17cb29-a313-46d9-b60b-7e524cb3afb8",
+      "llm_result_id": "e8532bc1-6a71-433c-8fef-17be5f955cc3",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "LLM finds claims about HERB-1 fate (C110-115) uncertain due to sampling limitations. No corresponding peer review result explicitly addresses the extinction versus persistence question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:40:55.248769Z"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims describe well-established mathematical and statistical properties of ordinary least squares and Deming regression methods. The mathematical relationships (e.g., C17, C18, C19, C20) are correct and supported by multiple citations to authoritative sources (C11, C12, C16). The theoretical foundation is sound."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The demonstration in Figure 1 clearly shows the relative slopes of the three regression lines on synthetic data. These visual observations (C13-C15) are consistent with the mathematical properties established in R1 and serve as a valid pedagogical illustration of the theoretical concepts."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C47",
+      "C48"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the authors correctly apply three regression methods to the Ressler et al. data (C22), they do not validate whether linear models are appropriate for these relationships or assess regression assumptions (linearity, homoscedasticity, independence). The observation of poor agreement (C47) is noted but not rigorously quantified. Without assessing model appropriateness, the utility of this reanalysis remains unclear."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The claims about complexity in biological systems (C26, C40) and the potential for bidirectional causation (C27-C29) or feedback regulation (C42) are well-established concepts in biology. While these are general statements rather than novel findings, they accurately represent the current understanding of biological complexity and provide valid motivation for the authors' methodological concerns."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "The claim that orthogonal regression 'more accurately describes the trend' (C34) is based solely on visual inspection without quantitative criteria for accuracy. The authors provide no statistical justification for why orthogonal regression is superior when the true causal structure is unknown. The assertion that plotting multiple lines gives a 'fuller picture' (C31) is intuitive but unvalidated\u2014no evidence is provided that this approach improves interpretation or decision-making in practice."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "The recommendation to routinely present three regression lines (C43) lacks empirical validation. The authors provide no comparative studies, user testing, or evidence that this approach improves data interpretation or reduces errors in practice. The claim that this will 'prove useful across the full range of biomedical sciences' (C46) is speculative. Without demonstrating practical benefits or addressing potential confusion from presenting multiple lines, this methodological recommendation is insufficiently supported."
+  }
+]

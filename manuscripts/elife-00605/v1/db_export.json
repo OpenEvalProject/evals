@@ -1,0 +1,147 @@
+{
+  "submission": {
+    "id": "4c8c4baa-f78d-4b0c-98a3-aac681ca27f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:20:19.132872Z",
+    "updated_at": "2025-10-16T22:20:19.132872Z"
+  },
+  "content": [
+    {
+      "id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "submission_id": "4c8c4baa-f78d-4b0c-98a3-aac681ca27f8",
+      "content_type": "manuscript",
+      "content_text": "# What's new is older\n\n## Authors\n\n- Lara M Rangel<sup>1</sup>\n- Howard Eichenbaum<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Center for Memory and Brain Boston University Boston United States rangel@bu.edu\n2. Center for Memory and Brain Boston University Boston United States hbe@bu.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nDistinct populations of active cells in the dentate gyrus of the hippocampus may facilitate the unique encoding of changes in the environment.\n",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "947dc8ff-f84f-4e97-b1a7-4c600ea4f390",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "claim_id": "C1",
+      "claim": "The dentate gyrus is a region within the hippocampus.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Distinct populations of active cells in the dentate gyrus of the hippocampus may facilitate the unique encoding of changes in the environment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The phrase 'dentate gyrus of the hippocampus' indicates an anatomical relationship that is part of established neuroanatomical knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    },
+    {
+      "id": "0e3ddec6-86f3-4c89-9988-04040980a045",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "claim_id": "C2",
+      "claim": "The dentate gyrus contains distinct populations of active cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Distinct populations of active cells in the dentate gyrus of the hippocampus may facilitate the unique encoding of changes in the environment.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "The statement explicitly refers to 'distinct populations of active cells' in the dentate gyrus, drawing on established understanding of neural organization and the context of the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    },
+    {
+      "id": "10c86dcc-858d-443a-9367-03ebf480c6c9",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "claim_id": "C3",
+      "claim": "Distinct populations of active cells in the dentate gyrus may facilitate the unique encoding of changes in the environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Distinct populations of active cells in the dentate gyrus of the hippocampus may facilitate the unique encoding of changes in the environment.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The use of 'may facilitate' indicates a speculative or hypothetical relationship between distinct cell populations and encoding of environmental changes, suggesting this is a proposed mechanism rather than definitively established.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    },
+    {
+      "id": "cb7ccadd-443c-4b41-85b3-416f83d8ec3c",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "claim_id": "C4",
+      "claim": "The dentate gyrus is involved in encoding changes in the environment.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Distinct populations of active cells in the dentate gyrus of the hippocampus may facilitate the unique encoding of changes in the environment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement implies that the dentate gyrus plays a role in encoding environmental changes, as it discusses how its cell populations may facilitate this process.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    },
+    {
+      "id": "170865cb-a259-4f98-876c-a4562881048e",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "claim_id": "C5",
+      "claim": "The encoding of changes in the environment can be unique.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Distinct populations of active cells in the dentate gyrus of the hippocampus may facilitate the unique encoding of changes in the environment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'unique encoding' explicitly states that the encoding process has distinctive or unique characteristics, though the basis for this uniqueness is inferred from the role of distinct cell populations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9dbfd4fb-0fd1-4f03-8857-62056d9db27b",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C1 states an established neuroanatomical fact that the dentate gyrus is a region within the hippocampus. This is well-documented in neuroscience literature and represents basic anatomical knowledge that does not require experimental validation in this manuscript.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    },
+    {
+      "id": "c3f81060-d0ae-48e0-98b3-a3fef4eca80f",
+      "content_id": "93d7fbba-7e14-4431-8afb-ccad1fe5f1dc",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C2-C5 collectively propose that distinct populations of active cells in the dentate gyrus facilitate unique encoding of environmental changes. However, the evidence is marked as speculative (C3 uses 'may facilitate') and relies on inference rather than experimental data presented in this manuscript. The abstract provides no experimental results, statistical analyses, or methodological details to support these claims, making it impossible to evaluate whether the proposed mechanism is demonstrated or merely hypothesized. Additional experimental evidence, controls, and quantitative analyses would be required to elevate this from speculation to a supported finding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:20:19.132872Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "947dc8ff-f84f-4e97-b1a7-4c600ea4f390",
+      "result_id": "9dbfd4fb-0fd1-4f03-8857-62056d9db27b"
+    },
+    {
+      "claim_id": "0e3ddec6-86f3-4c89-9988-04040980a045",
+      "result_id": "c3f81060-d0ae-48e0-98b3-a3fef4eca80f"
+    },
+    {
+      "claim_id": "10c86dcc-858d-443a-9367-03ebf480c6c9",
+      "result_id": "c3f81060-d0ae-48e0-98b3-a3fef4eca80f"
+    },
+    {
+      "claim_id": "cb7ccadd-443c-4b41-85b3-416f83d8ec3c",
+      "result_id": "c3f81060-d0ae-48e0-98b3-a3fef4eca80f"
+    },
+    {
+      "claim_id": "170865cb-a259-4f98-876c-a4562881048e",
+      "result_id": "c3f81060-d0ae-48e0-98b3-a3fef4eca80f"
+    }
+  ],
+  "comparisons": []
+}

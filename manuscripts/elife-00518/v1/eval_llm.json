@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "TAX-6\u2022CNB-1 (Calcineurin) directly binds to DAF-16 and negatively regulates its nuclear localization. This is well-supported by co-IP from worm lysates (C34), in vitro pull-down with purified proteins (C35-C36), domain mapping (C37), and functional evidence showing DAF-16 nuclear accumulation in tax-6 mutants (C38, C41). The combination of biochemical and genetic evidence strongly supports direct regulation."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "UNC-43 (CAMKII) antagonizes Calcineurin to promote DAF-16 nuclear localization and longevity. Strong genetic evidence includes: unc-43 RNAi suppresses tax-6(lf) phenotypes (C45, C51), unc-43(gf) causes DAF-16 nuclear accumulation and lifespan extension (C48-C49), and the double mutant unc-43(gf);cnb-1(null) is longer-lived than either single mutant (C50). The epistasis relationships clearly demonstrate antagonistic regulation."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "UNC-43 activates DAF-16 independently of the NSY-1/SEK-1 MAP kinase pathway. RNAi knockdown and genetic null mutations of MAP kinase components fail to block UNC-43-dependent DAF-16 nuclear localization (C54-C56). The evidence clearly demonstrates that UNC-43 acts through a distinct mechanism, not through the previously characterized MAP kinase pathway."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C26"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "UNC-43 directly phosphorylates DAF-16 at S286. This is strongly supported by: co-IP from worms (C58), in vitro binding with purified proteins (C59), in vitro kinase assays with radioactive ATP (C60), mass spectrometry identification of S286 (C61), and phospho-specific antibody validation showing S286 but not T240 phosphorylation increases in unc-43(gf) mutants in vivo (C62-C63). The convergence of multiple independent methods provides robust support."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C27"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "TAX-6\u2022CNB-1 specifically dephosphorylates DAF-16 at S286. In vitro phosphatase assays with purified proteins show dramatic reduction of S286 phosphorylation while T240 phosphorylation remains unchanged (C64-C65). This site-specific dephosphorylation, combined with the binding data from R1, demonstrates that Calcineurin directly opposes UNC-43 phosphorylation at the same residue."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "Phosphorylation of DAF-16 at S286 is necessary and sufficient for UNC-43/TAX-6-mediated regulation. The S286A mutation blocks nuclear localization in both unc-43(gf) and tax-6(null) backgrounds (C66-C67) and fails to rescue longevity (C68-C69), while the phosphomimetic S286D mutation causes constitutive nuclear localization and lifespan extension (C70-C71). These gain- and loss-of-function mutagenesis experiments definitively establish S286 as the critical regulatory site."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C30",
+      "C5"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "UNC-43 is required for stress-induced DAF-16 nuclear accumulation. Multiple stress conditions (heat, oxidative stress via paraquat, starvation) all induce DAF-16 nuclear localization in wild-type but not unc-43(null) animals (C72-C74). This demonstrates that UNC-43 functions as a general stress-responsive kinase that activates DAF-16 under diverse stress conditions, establishing a distinct regulatory mode from insulin signaling."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C31",
+      "C32",
+      "C6"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "UNC-43/TAX-6 and insulin signaling pathways act in parallel and cooperatively to regulate DAF-16 and lifespan. Both unc-43(gf) and tax-6(null) further extend the lifespan of daf-2(RNAi) animals beyond either single perturbation (C78-C79), while unc-43(null) partially suppresses daf-2 longevity (C80). These non-epistatic genetic interactions demonstrate that the two pathways converge on DAF-16 through distinct mechanisms and can act cooperatively."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C76",
+      "C77"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "CAMKII and insulin signaling regulate DAF-16 through distinct phosphorylation sites with opposite functional consequences. Neither tax-6(gf) nor unc-43(null) can override daf-2(RNAi)-induced nuclear localization (C81), and neither tax-6(null) nor unc-43(gf) can overcome daf-18(RNAi) inhibition (C82). Combined with evidence that S286 (CAMKII site) differs from T240 (AKT site) and has opposite effects (C76-C77), this demonstrates independent but coordinated regulation."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C33",
+      "C9"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "The CAMKII/Calcineurin regulation of FOXO is conserved in mammals. The S286 site is conserved across species (C85), mammalian CAMKIIA and Calcineurin bind FOXO3 (C86-C87), CAMKIIA phosphorylates FOXO3 at the conserved S298 site in vivo (C88-C89), and Calcineurin specifically dephosphorylates S298 but not the AKT site S252 (C90-C92). The parallel findings in mammalian cells strongly support evolutionary conservation of this regulatory mechanism."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "CAMKII phosphorylation at S298 activates FOXO3 transcriptional activity while Calcineurin inhibits it. Luciferase reporter assays show CAMKIIA stimulates FOXO3 activity in an S298-dependent manner (C94), requires kinase activity (C95), with constitutively active CAMKIIA showing enhanced effect (C96), while Calcineurin inhibits FOXO3 activity (C97). These functional assays in mammalian cells demonstrate that the regulatory mechanism has conserved functional consequences."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C28",
+      "C29"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "TAX-6\u2022CNB-1 and UNC-43 regulate C. elegans lifespan through reversible phosphorylation of DAF-16 at S286, with a mode of action distinct from insulin signaling. This integrative conclusion is well-supported by the combined evidence from R1-R6 showing direct binding, site-specific phosphorylation/dephosphorylation, and functional consequences. The mechanism differs from IIS because phosphorylation activates rather than represses DAF-16, establishing a novel regulatory paradigm."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "SUPPORTED",
+    "status_reasoning": "DAF-16 integrates hormonal signals from insulin signaling and stress signals from CAMKII/Calcineurin through parallel, coordinated pathways. This model is well-supported by the combined evidence from R7-R9 showing: (1) UNC-43 responds to diverse stresses, (2) the pathways act non-epistatically, and (3) they regulate distinct phosphorylation sites. The proposed integration model is a reasonable synthesis of the experimental findings."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "The hypothesis that sustained FOXO3 activation from Calcineurin inhibition causes new-onset diabetes in transplant patients is speculative and not supported by experimental evidence in this study. While the authors establish that Calcineurin inhibits FOXO3, they provide no data linking FOXO3 activation to diabetes pathogenesis, no experiments in diabetic models, and no clinical validation. This represents an interesting hypothesis for future work but is not a supported result of the current study."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C119"
+    ],
+    "reviewer_id": "LLM",
+    "reviewer_name": "LLM",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The claims about CAMKII/FOXO regulation playing conserved roles in stress response and broad physiological functions are reasonable extrapolations but remain speculative. While conservation is demonstrated (R10), the functional importance across diverse physiological contexts and species is inferred rather than experimentally validated. The statements are appropriately qualified as speculative by the authors, but additional experiments in diverse contexts would be needed to elevate these to supported results."
+  }
+]

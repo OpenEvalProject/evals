@@ -1,0 +1,159 @@
+{
+  "submission": {
+    "id": "b0b5231c-b44c-40e5-976b-af88902725cb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:17:55.971075Z",
+    "updated_at": "2025-10-16T22:17:55.971075Z"
+  },
+  "content": [
+    {
+      "id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "submission_id": "b0b5231c-b44c-40e5-976b-af88902725cb",
+      "content_type": "manuscript",
+      "content_text": "# Bacteria herald a new era of gene editing\n\n## Authors\n\n- David J Segal<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Genome Center and the Department of Biochemistry and Molecular Medicine University of California, Davis United States djsegal@ucdavis.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe demonstration that nucleases guided by bacterial RNA can disrupt human genes represents a landmark in the rapidly developing field of genome engineering.\n",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cc2b221f-1727-460b-b302-fa95fb19a96e",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "claim_id": "C1",
+      "claim": "Nucleases can be guided by bacterial RNA",
+      "claim_type": "EXPLICIT",
+      "source_text": "The demonstration that nucleases guided by bacterial RNA can disrupt human genes represents a landmark in the rapidly developing field of genome engineering.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "The claim refers to a 'demonstration' which implies experimental data has been generated. The statement also appears to reference work that has been demonstrated, suggesting citation of prior research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "0600a3d4-7415-4f8e-b65b-2782e9da99eb",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "claim_id": "C2",
+      "claim": "Bacterial RNA-guided nucleases can disrupt human genes",
+      "claim_type": "EXPLICIT",
+      "source_text": "The demonstration that nucleases guided by bacterial RNA can disrupt human genes represents a landmark in the rapidly developing field of genome engineering.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "The ability to disrupt human genes is explicitly stated as having been demonstrated, indicating experimental data. This is presented as established work, suggesting citation support.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "bf77a38c-51f0-43a1-8283-3ac54d8dc397",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "claim_id": "C3",
+      "claim": "The demonstration of bacterial RNA-guided nucleases disrupting human genes represents a landmark achievement",
+      "claim_type": "EXPLICIT",
+      "source_text": "The demonstration that nucleases guided by bacterial RNA can disrupt human genes represents a landmark in the rapidly developing field of genome engineering.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The characterization as a 'landmark' is an evaluative statement based on the author's expert assessment of the significance within the field context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "adcddf98-4d6c-417a-9ad7-4ad25bbc8c9e",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "claim_id": "C4",
+      "claim": "Genome engineering is a rapidly developing field",
+      "claim_type": "EXPLICIT",
+      "source_text": "The demonstration that nucleases guided by bacterial RNA can disrupt human genes represents a landmark in the rapidly developing field of genome engineering.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This characterization of the field's development pace reflects the author's knowledge of the field's trajectory and current state.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "12b565f3-2335-4120-be2f-144347e3d267",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "claim_id": "C5",
+      "claim": "Bacterial RNA-guided nuclease technology represents a new era of gene editing",
+      "claim_type": "IMPLICIT",
+      "source_text": "Bacteria herald a new era of gene editing",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The title implies that bacterial systems (specifically the RNA-guided nucleases discussed in the abstract) are ushering in a transformative period for gene editing. This is an interpretive claim about the technology's impact.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "29be85fb-da9d-4356-8007-ced8934ae2fd",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "claim_id": "C6",
+      "claim": "Bacterial systems are the source of RNA-guided nuclease technology",
+      "claim_type": "IMPLICIT",
+      "source_text": "Bacteria herald a new era of gene editing; The demonstration that nucleases guided by bacterial RNA can disrupt human genes",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "The reference to 'bacterial RNA' and bacteria heralding gene editing implies these systems originate from bacteria, which is established knowledge about CRISPR systems.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7869c00-3c0b-4d3a-8c70-72b9cff3b59f",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C2, and C6 describe bacterial RNA-guided nucleases disrupting human genes as a demonstrated capability from cited prior work. However, the abstract alone does not provide access to the underlying citations, data, or methodological details needed to verify the accuracy of these attributions or assess the quality of the supporting evidence.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    },
+    {
+      "id": "882979a2-e181-4f61-ba23-1d6c082b1c75",
+      "content_id": "a1b44eda-9446-4b8c-9d9a-9734366543e2",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C3 and C5 present evaluative assessments characterizing the technology as a 'landmark achievement' and 'new era' in gene editing. These are subjective interpretations of significance rather than empirical findings, and the abstract provides no objective criteria, comparative analysis, or detailed field context to substantiate these characterizations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:17:55.971075Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc2b221f-1727-460b-b302-fa95fb19a96e",
+      "result_id": "a7869c00-3c0b-4d3a-8c70-72b9cff3b59f"
+    },
+    {
+      "claim_id": "0600a3d4-7415-4f8e-b65b-2782e9da99eb",
+      "result_id": "a7869c00-3c0b-4d3a-8c70-72b9cff3b59f"
+    },
+    {
+      "claim_id": "29be85fb-da9d-4356-8007-ced8934ae2fd",
+      "result_id": "a7869c00-3c0b-4d3a-8c70-72b9cff3b59f"
+    },
+    {
+      "claim_id": "bf77a38c-51f0-43a1-8283-3ac54d8dc397",
+      "result_id": "882979a2-e181-4f61-ba23-1d6c082b1c75"
+    },
+    {
+      "claim_id": "12b565f3-2335-4120-be2f-144347e3d267",
+      "result_id": "882979a2-e181-4f61-ba23-1d6c082b1c75"
+    }
+  ],
+  "comparisons": []
+}

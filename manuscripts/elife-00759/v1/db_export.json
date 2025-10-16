@@ -1,0 +1,1535 @@
+{
+  "submission": {
+    "id": "42c7e2c9-abff-4c59-85d1-5cdd1755db9b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:43:14.007962Z",
+    "updated_at": "2025-10-16T22:43:14.007962Z"
+  },
+  "content": [
+    {
+      "id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "submission_id": "42c7e2c9-abff-4c59-85d1-5cdd1755db9b",
+      "content_type": "manuscript",
+      "content_text": "# High-order social interactions in groups of mice\n\n## Authors\n\n- Yair Shemesh<sup>1</sup>\n- Yehezkel Sztainberg<sup>1</sup>\n- Oren Forkosh<sup>1</sup>\n- Tamar Shlapobersky<sup>1</sup>\n- Alon Chen<sup>1</sup> \u2020\n- Elad Schneidman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Weizmann Institute of Science Rehovot Israel\n2. Max Planck Institute of Psychiatry Munich Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00759.001 Social behavior in mammals is often studied in pairs under artificial conditions, yet groups may rely on more complicated social structures. Here, we use a novel system for tracking multiple animals in a rich environment to characterize the nature of group behavior and interactions, and show strongly correlated group behavior in mice. We have found that the minimal models that rely only on individual traits and pairwise correlations between animals are not enough to capture group behavior, but that models that include third-order interactions give a very accurate description of the group. These models allow us to infer social interaction maps for individual groups. Using this approach, we show that environmental complexity during adolescence affects the collective group behavior of adult mice, in particular altering the role of high-order structure. Our results provide new experimental and mathematical frameworks for studying group behavior and social interactions. DOI: http://dx.doi.org/10.7554/eLife.00759.001\n\n## Introduction\n\nUnderstanding the nature and impact of the interactions that underlie the behavior of groups of organisms is a central question, shared across biology, physics, psychology, and mathematics. The coherence of \u2018collective behavior\u2019 patterns of large groups of animals, such as insect swarms (Buhl et al., 2006; Simpson et al., 2006) fish schools (Sumpter et al., 2008; Katz et al., 2011), bird flocks (Cavagna et al., 2010; Nagy et al., 2010), and human crowds (Song et al., 2010; Gallup et al., 2012), presents us with fundamental questions relating to distributed information processing, computation, and learning. The adequacy of different mathematical models of the interactions between animals in describing the behavior of large groups has therefore been of great interest (Winfree, 1967; Vicsek et al., 1995; Couzin et al., 2002; Lathe, 2004; Couzin et al., 2005; Ben-Jacob, 2009; Cavagna et al., 2010; Lukeman et al., 2010; Nagy et al., 2010; Bialek et al., 2012).\n\nSmaller groups of animals present an interesting and sometimes more difficult scenario, where individual traits may play an important role in shaping the group behavior (Lathe, 2004). This may be especially true in mammals, where both individual behavior and interactions are often assumed to be more complex. It has therefore been common to study \u2018social behavior\u2019 in small groups and explore the interplay of individual and group relations in decision-making (Couzin et al., 2011), information transfer (Leadbeater and Chittka, 2007), learning (Couzin et al., 2005), and more. Yet, much of our understanding of social behavior has come from studies of just pairs of animals under artificial settings (Insel and Fernald, 2004; Langford et al., 2006; Moy et al., 2008; Branson et al., 2009; Dankert et al., 2009; Blumstein et al., 2010; Silverman et al., 2010; Ben-Ami Bartal et al., 2011; de Chaumont et al., 2012). It is not clear, however, what the detailed analysis of social interaction at the level of a single pair implies for larger groups. In particular, new features may emerge that characterize the group as a whole that cannot be inferred from the study of individuals or pairs (Cavagna et al., 2010).\n\nTo study the nature of interactions underlying social behavior in a group, we used a novel automatic system for tracking individuals in small groups of mice over long periods of time, in an environment that is ethologically relevant. Systems for tracking individual animals in simple and enriched environments have been used in recent years to characterize individual behavior (Branson et al., 2009; Green et al., 2012; Freund et al., 2013), and even to relate individual behavior to neurogenesis (Freund et al., 2013). We focused here on the nature of group behavior, and in particular how group behavior is the result of individuality, pairwise, and potentially higher-order interactions between the animals. We then used a maximum entropy-based modeling framework (Jaynes, 1957; Schneidman et al., 2003, 2006) to quantify the nature of correlated group behavior and map the social interactions between individuals. Finally, we compared the joint activity patterns and social contacts of mice subjected to environmental manipulations.\n\n## Results\n\nWe analyzed the behavior of 17 groups of mice, each composed of four adult mice in an arena resembling an ethologically relevant context that has an interesting environment for exploration (see \u2018Materials and methods\u2019) (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top view of the arena showing the 10 regions of interest: (1) open field, (2) Z wall, (3) water, (4 and 5) feeders, (6) on small nest, (7) on large nest, (8) block, (9) in small nest, (10) in large nest. For further details of the arena, see Figure 1\u2014figure supplement 1. (B) Video recording and color-based tracking of a group of mice in the dark. (C) A 15-min segment of the tracked paths of each of the four mice in a group. (D) A \u2018heat map\u2019 showing the relative amount of time the mice spent in different parts of the arena. Data shown is from one typical group on the second day of the experiment (red corresponds to highly visited points, and blue to less favorable ones). (E) Individual histograms of the time spent in the different regions of the arena (same group as in D). See legend at the bottom for the color coding of the regions. (F) Distribution of continuous time periods spent by one typical mouse at each region. Most areas show a similar behavior resembling scale free distribution.DOI: http://dx.doi.org/10.7554/eLife.00759.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A special arena for automated tracking of individual and group behavior was designed and constructed. The arena consisted of a 70 cm \u00d7 50 cm \u00d7 50 cm cage that included several objects: a Z-shaped wall, a water dispenser, two feeders, a small nest and a large nest, an elevated block, and two elevated ramps. Two UVA fluorescent lamps were placed 3 m above the arena floor to illuminate the surrounding area during the night with 370\u2013380 nm wavelength light. During the day the arena was lit by one white-light fluorescent lamp (36W). To prevent reflections from objects in the room, a black curtain was drawn from the fluorescent lights down to the arena. A color sensitive camera was placed 1 m above the arena.DOI: http://dx.doi.org/10.7554/eLife.00759.004\n\nMice spent much more time in certain locations in the arena (see \u2018heat map\u2019 in Figure 1D). We therefore used a discretized representation of their spatial configurations, based on the ten most visited regions of interest in the arena. We found that individual mice in the group had distinct personal preferences for certain locations (Figure 1E), and the relative amounts of time spent in different places. Despite these individual differences, the amount of time that each mouse spent continuously at each location had a power-law-like behavior (Figure 1F). This power-law distribution was similar for the different mice, when they were each analyzed individually, despite their individual differences on other parameters. It is unclear, however, how one should interpret these individual characteristics of the mice, given that they share the same space. We therefore moved on to consider what portion of the joint configurations can be explained in terms of individual behavior, and how are the mice affected by their peers, that is via social interactions?\n\n## Strongly correlated group behavior among mice\n\nTo characterize the behavior of the mice as a group, we studied their joint spatial configurations over long periods of time. We defined the \u2018state\u2019 of the group at time t, as a vector, (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig2-v1.jpg)\n\n**Figure 2.:** (A) The joint configuration of the mice at each time frame was represented by a 4-dimensional vector, where each dimension denotes the location of a particular mouse in 1 of the 10 regions of interest. (B) Comparison between the empirical probability distribution of the observed configurations and a predicted distribution from a model that assumes independence between mice. Configurations were ranked from the most to the least prevalent. (C) Fraction of uncertainty about the location of a mouse that can be read from the location of other group members (mutual information about location, divided by location entropy). Every dot shows the fraction of information about the location of mouse i that can be read from the joint location of the other three vs the sum of pairwise information terms between i and each of the other mice. Each of the 32 dots corresponds to 1 mouse (4 mice in 8 groups), and the information that can be read from his group members. The results are for day 2 of the test.DOI: http://dx.doi.org/10.7554/eLife.00759.006\n\nTo quantify the strength of dependencies between the mice, we first asked how much does knowing the location of one mouse tells us about that of the others. (If the mice were completely individual and ignored one another, then knowing the location of one mouse would tell us nothing about that of the others.)\n\nSince the entropy of the distribution of locations of a mouse, H(xi)=\u2212\u2211xip(xi)log2p(xi) measures how much we do not know about its location, then the dependency between mice can be measured in terms of how much of this uncertainty is reduced by knowing the location of another mouse. This is exactly the mutual information I(xi;xj)=H(xi)\u2212H(xi|xj) between the location of one mouse xi and that of the other mouse xj. To get a normalized measure of the fraction of uncertainty about the location of mouse i that can be \u2018read\u2019 from mouse j, we divided I(xi;xj) by the entropy of location of mouse i, H(xi). We found that knowing the location of one mouse gives relatively little information about the location of another\u2014typically less than 5% (averaged on all pairs, Figure 5\u2014figure supplement 1). However, knowing the joint locations of three mice gives much more information about that of the fourth one\u2014over all groups and mice I(xi;{xj,xk,xl}) was, on average, 25% of H(xi). Figure 2C shows that this information was highly synergistic\u2014namely that the information about the location of one mouse that can be read from the locations of the other mice can be more than double the sum of pairwise information values of that mouse with all the others: I(xi;xj) + I(xi;xk) + I(xi;xl). Thus, the group is not only more complex than a collection of individuals, but much more complex than even the full collection of pairs.\n\nThe remaining 75% of uncertainty about the location of each mouse is exactly the level of individuality of each mouse, which cannot be explained in terms of the location of the other mice. If there were more information about the location of one mouse from the locations of the others, then that mouse would be less \u2018free\u2019 to decide on its location. We therefore turned to characterize group behavior in terms of the combination of individual mouse traits and the dependencies between mice.\n\n## High-order social interactions are necessary to explain group behavior\n\nDissecting the role of individual behavior and the dependencies between animals in shaping the group\u2019s behavior is difficult, since we need to infer from the joint behavior what the underlying contributions of \u2018pure\u2019 mouse individuality and the nature of the interactions are. The difficulty arises since in general, for any given set of observable features of the behavior, there can be multiple models that will be consistent with these observables. We therefore used the idea of maximum entropy (ME) models from physics (Jaynes, 1957) to construct minimal models of the group, based on different order of dependencies between the animals. Since the entropy of a distribution measures its randomness of lack of structure, then among all models that are consistent with some desired feature of the data, the maximum entropy model is the most parsimonious explanation that does not make any additional assumptions beyond the required features. This minimal model is mathematically unique and can be found numerically (Schneidman et al., 2003). Such models have been successfully used to infer functional dependencies between neurons, genes, proteins and more (e.g., Schneidman et al., 2006; Ganmor et al., 2011; Lezon et al., 2007; Marre et al., 2009; Mora et al., 2010; Stephens et al., 2010; Stephens et al., 2013; Bialek et al., 2012).\n\nWe built a hierarchy of maximum entropy models to describe the group configurations, based on successive orders of correlations between the mice (one that relies only on individual behavior of the mice, one that adds pairwise dependencies between mice, third order, etc.). The relationship between these models then allowed us to dissect exactly the contribution of each order to the total group behavior.\n\nThe first-order model is one that relies only on the individual behavior of each of the mice, but assumes no dependencies among them at all. The maximum entropy model in this case is built on the observed probability of finding each mouse in one of the regions in the arena, and is exactly the independent model (that we used above), namely p(1)(x1, x2, x3, x4) = p(x1) p(x2) p(x3) p(x4). As it was clear already from Figure 2B, the independent model is insufficient to describe the behavior of the group.\n\nNext, we tried to describe the group configurations using a model that takes into account both the individual behavior and the pairwise relations between mice. The minimal pairwise-based model is then given by the maximum entropy distribution that is consistent with the distribution of states that we observe for each mouse individually (i.e., first-order statistics), and the pairwise correlations between them (i.e., second-order statistics). Unlike the independent case, this cannot be performed by a simple factorized probability distribution and must be found numerically by solving an optimization problem in which we maximize the entropy with a given set of constraints. The solution of this optimization problem (see \u2018Materials and methods\u2019) is given byp(2)(x1,x2,x3,x4)=1Zexp(\u2211i\u03b1i(xi)fi(xi)+\u2211i<j\u03b2ij(xi,xj)fij(xi,xj))\u2009,where the parameters, \u03b1i(xi) for each mouse i for location xi and \u03b2ij(xi,xj) for each pair i and j (one for every combination of locations, xi and xj), are set such that the marginal probabilities of the model agree with the empirically observed p(xi) and p(xi,xj); fi(x) is an indicator function, which equals 1 when mouse i is in location xi and 0 otherwise, and fij(xi,xj) is an indicator function, which equals 1 when mouse i is in xi and mouse j is in xj; Z is the normalization factor, or partition function.\n\nWe can build more complex models of group behavior by adding orders of interactions between mice. Thus, the third-order model is given by a maximum entropy distribution of a similar form, which has the same single mouse, and pairwise statistics, but also the empirically third-order statistics. This third-order model, p(3), has, in addition to \u03b1i(xi)\u2019s and \u03b2ij(xi,xj)\u2019s, interaction parameters for each triplet and locations \u03b3ijk(xi, xj, xk). The fourth-order model, p(4), uses all possible correlations among mice. We emphasize that the maximum entropy models give the most parsimonious explanation of the data for each order, and therefore are not just an arbitrary \u2018modeling approach\u2019 but rather the least structured models one could build for the observed data. This hierarchy of maximum entropy models allows us to dissect the role of individual behavior, pairwise relations, triplets and so on, since every model adds a unique set of independent constraints.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig3-v1.jpg)\n\n**Figure 3.:** (A) In each panel we present the accuracy of the corresponding ME model, from first to fourth order, in describing the empirical data for the group. Each dot corresponds to one configuration state of the group, and its probability is shown for the data (x-axis) and the prediction of the model (y-axis). The grey funnel shows the 95% confidence interval of estimation of the empirical distribution of configurations. Examples of two specific configurations are highlighted in all graphs (green and blue dot), to show improvement of model accuracy over orders. (B) Breakdown of the total group correlations, or multi-information I, to the contribution of the pairwise interactions between mice, NI(2), triplet interactions between them, I(3), and fourth-order contribution I(4).DOI: http://dx.doi.org/10.7554/eLife.00759.007\n\nTo quantify the accuracy of each of these models in capturing the full group configurations, and the relative contribution of each interaction order in explaining the group behavior, we first estimated the total correlations of all orders in the group that go beyond the individual behavior of the mice. We used the \u2018multi-information\u2019 of the group (Schneidman et al., 2003), which is a generalized form of the mutual information between two variables that measures dependencies among a group of variables IN({x1,x2,...,xN}). It measures by how much the dependencies between mice change the configurations of the mice, compared to what would be expected if the mice were independent, through the difference between the entropy of the independent (first-order) model and the entropy of the empirical distribution, (see \u2018Materials and methods\u2019). IN can be uniquely broken down to the sum of exact contributions of each order of correlations, when the contribution of order k to IN, is given by I(k)=H[p(k\u22121)]\u2212H[pk], where H[pk] is the entropy of the ME models of order k (Schneidman et al., 2003). Here, IN = I(2) + I(3) + I(4), which then gives the second-order, third-order and fourth-order contributions to the correlation in the group beyond what the individuality predicts. We found that over all groups, the contribution of the pairwise ME model, given by I(2) was 57.2% \u00b1 10.2% of IN. We found that I(3) carried nearly a third of the total correlations, and so p(3) that relies on individual traits, pairwise and triple interactions between the mice explains 92.8% \u00b1 2.9% of the correlations (Figure 3B shows as an example the results for the group shown in Figure 3A). Thus, for a group of four mice even using all pairwise interactions is not enough to capture the group behavior; the third-order interactions are therefore necessary and capture about a third of the correlation structure. This strong high-order dependency is consistent with the synergistic effect seen in Figure 2 in terms of the information that can be read about the location of a mouse from that of the other mice.\n\n## Inferring the pairwise and triplewise functional interaction maps underlying group behavior\n\nThe maximum entropy models we have used to describe the group behavior are a generalized form of the Potts model from statistical physics, which describes the behavior of spins in a lattice in terms of the interactions between them (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig4-v1.jpg)\n\n**Figure 4.:** (A) Accuracy of a \u2018regularized\u2019 third-order maximum entropy model of the spatial configurations of the same groups of mice from Figure 3A. Model predictions are plotted against the empirical distribution. For details of parameter selections for the regularized model see Figure 4\u2014figure supplement 1. (B) The distribution of ME parameters according to the order of interactions in the regularized p* model (shown above the horizontal line), compared to the model without regularization (shown below the line). The distribution is over parameters of all eight groups of SE mice taken together. (C) Full pairwise interaction maps for four representative groups. (Group S2 is magnified as it is used in following panels.) In each of these maps, the colored dots represent the location of a mouse according to the color coding in the bottom of the figure. The colors of the mice are depicted near their corresponding locations. The color of a vertex shows whether the interaction is positive (red) or negative (blue) and its width reflects the interaction strength. An alternative presentation of all the pairwise interaction parameters is shown in Figure 4\u2014figure supplement 2. (D) The dominant positive and negative pairwise interactions are shown overlaid on a diagram of the arena. \u2018Filled mice\u2019 show positive interactions, and \u2018empty mice\u2019 show negative interactions. A star denotes that the mouse is on the nest. The value of the corresponding interaction is shown on the bottom of each panel. (E) The dominant positive and negative triplewise interactions for the same group as in D, overlaid on a diagram of the arena.DOI: http://dx.doi.org/10.7554/eLife.00759.008\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** We found the 3rd order maximum entropy model for the mice configurations, with an additional penalty term that minimized the number of non-zero parameters (see Materials and methods). The balance between maximizing the model's entropy and minimizing the penalty is controlled by parameter \u2208. (A) The effect of the tradeoff parameter on the accuracy of the model is shown as the Jensen\u2013Shannon divergence (DJS) between the third order maximum entropy model with the penalty term and the model without the penalty term (as in Figure 3). The Jensen\u2013Shannon divergence equals 0 when the two models are identical, and would be 1 at its maximal value\u2014when the two distributions are distinct. The results are from the second day of the same group as in Figure 3a. (B) The fraction of parameters that equal zero is shown for each order (1st, 2nd and 3rd order parameters of the maximum entropy model) is shown as a function of \u2208. The chosen value , which we used in \u22080=2\u221216Figure 4 is marked by a dashed line on the graphs.DOI: http://dx.doi.org/10.7554/eLife.00759.009\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** These interactions are the weights of the second-order interactions in the regularized third-order maximum entropy model. Each panel corresponds to one pair of mice, and its rows and columns correspond to the locations within the arena according to the legend at the bottom of the figure.DOI: http://dx.doi.org/10.7554/eLife.00759.010\n\n## Social interactions and correlated group behavior depend on past environment\n\nSince the nature of the environment and availability of resources determine population density, aggression, dominance, and territoriality in mice (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig5-v1.jpg)\n\n**Figure 5.:** (A) Experimental design. At the age of 4 weeks (day 0 of the experiment), mice were separated into two different housing conditions: standard environment and complex environment. After 6 weeks, groups of four mice from both treatments were color marked, returned to their cages for an additional week, and then put in the arena for recording their group social behavior. (B) Behavioral ethograms of two representative groups from each treatment (left). Data shown in these panels is for the 12 hr of the second day. Average percentage of time spent at the different regions over all groups for each treatment (right). (C) Similarity of group behavior between all SE and CE groups. For each pair of groups, the Jensen\u2013Shannon divergence between the third-order maximum entropy models of the groups was calculated. Matrix entries are ordered by their corresponding SE or CE label. (D) Total group correlation (multi-information, I) of the SE and the CE groups over 4 consecutive days. (NE) The contribution of each order of interaction to the total correlation in the groups. Figure 5\u2014figure supplement 1 presents the differences in the distribution of the fraction of information about the location of one mouse that can be \u2018read\u2019 from the location of the other mice for SE and CE groups.DOI: http://dx.doi.org/10.7554/eLife.00759.011\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00759/elife-00759-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top: mice in standard conditions. We estimated pairwise mutual information between all pairs, and normalized by mouse entropy (main text). Histogram of values over all mice is shown as a horizontal bar in blue, with median as central line, and the left and blue boxes show the range of 25% and 75% values, correspondingly. The histogram of the fraction of information that can be read from the joint location of the other three mice is shown in green. The sum of pairwise information for each mouse with the others is shown in red. Bottom: same as top, but for complex environment groups. Green star denotes the significant difference between the histograms of the group information values of complex and standard groups (Klomogorov\u2013Smirnoff, p<0.0001).DOI: http://dx.doi.org/10.7554/eLife.00759.012\n\nWe found that the total group correlation IN values of the SE and CE groups were similar on the first day, but then the SE groups became more correlated. In contrast, the correlations among the CE mice remained unchanged (Figure 5D). In other words, there was a progressive increase in social correlation, or \u2018socialization\u2019 in the SE groups, which was absent in the CE groups. We emphasize that these are differences at the level of group behavior that go beyond the differences between the individual (single animal) behavior patterns of SE and CE mice.\n\nFinally, we found that the contribution of the different orders of interactions to the group behavior differed significantly between the SE and CE groups. In the CE groups the contribution of pairwise interaction to the full group correlations was higher than in SE groups (74.6% \u00b1 2.5% in CE groups compared to 61.9% \u00b1 2.4% for the SE ones, averaged over all four days). The dominance of the low-order interactions was also reflected by the virtual lack of contribution of fourth-order interaction in the CE groups, whereas the SE groups showed more complex high-order structure (fourth-order interactions contribution to the total correlation in the SE groups was 6.0% \u00b1 0.7% [Figure 5E]). The larger role of pairwise interactions in shaping the group\u2019s behavior is also reflected in the information about the location of one mouse that can be read from the locations of the other three mice. In the CE groups the information from three mice about the fourth was far less synergistic than in the case of SE groups (Figure 5\u2014figure supplement 1). Thus, mice exposed to a complex environment during adolescence were more individual, and their weaker group correlations relied more on pairwise rather than higher-order dependencies.\n\n## Discussion\n\nQuantifying social interactions presents an ethological challenge both experimentally and theoretically (Adolphs, 2010). While even solitary species display social behavior such as mating, aggression, and maternal care, species that live in groups display profoundly more complex social repertoires (Silk, 2013). This group behavior, ideally dissected into individual and group parts, is also likely to depend on the environmental context (Insel and Fernald, 2004). Thus, understanding group social behavior requires a framework combining an experimental system for recording group behavior with high resolution both spatially and temporally in a reliable manner over long time windows, and a mathematical formalism to quantify the nature of interactions and their contribution to the group\u2019s behavior.\n\nMice are an ideal model organism for investigating social behavior in mammals and the neural mechanisms that underlie it. Together with the ability to manipulate their genomic make-up (Lewandoski, 2001), and record neural activity (electrophysiologically or optically), mice live in groups and form diverse societies with different characteristics such as group size, hierarchy, aggression, and social tolerance (Bronson, 1979). However, despite the complex nature of their social organization, the current methodologies used for analysis of social behavior in mice have focused mainly on dyadic interactions such as in the classical three-chamber social approach test and the partition test (Silverman et al., 2010). One common approach has been to record, via video, the interaction between two animals and then have defined behaviors scored by trained human observers (Moretti et al., 2005). This allows for identifying intricate social behaviors and can provide new insights about underlying features of social interaction, but demands immense human resources and is prone to human error. Another approach has focused on the behavior of one individual towards other restricted conspecifics (Nadler et al., 2004; Moy et al., 2008; Ben-Ami Bartal et al., 2011), which allows for an automated behavioral scoring system. However, since only one animal is free to roam, its behavior might be altered due to the synthetic dynamics of interactions. de Chaumont et al. (de Chaumont et al., 2012) reported an automated video tracking system for social interaction between two rats, which were analyzed based on their relative locations in a 10 min test. This method holds the advantages of both rats roaming free and the use of an automated system; however, the ability to distinguish between different behaviors is limited.\n\nThe system we introduce here enables automatic tracking of group behavior of mice in the dark, over long periods of time, and in a semi-natural environment, with high spatiotemporal resolution while maintaining individual identities. Similar systems for tracking multiple individuals (Freund et al., 2013) allow for tracking animals over long periods of time, using radio-frequency identification (RFID) tagging of individual animals. We note that RFID-based systems allow for the tracking of a very large number of animals, whereas our tracking capacity depends on the number of distinguishable dyes and spatial marking patterns on the mice (our preliminary results suggest we can expand even the current system to more than 10 mice). However, the strength of our system is in its much higher spatial and temporal resolution, and the ability to track and analyze details of individual behavior of the animals and between them.\n\nClearly, these kinds of systems would change the way individual and social behavior can be studied and quantified. The recent work by Freund et al. used the tracking of many mice over several months to study the individual mouse behavior within a large group and showed correlation between the roaming behavior of a mouse and the level of neurogenesis in its hippocampus (Freund et al., 2013). The work we have presented here addresses the complementary question of the nature of group behavior that goes beyond individual traits, focusing on the interactions between animals. Our results show the limitations of individual-based and even pairwise-based approaches, and identify irreducible high-order structure among mice. Moreover, although every individual group is likely to have its own unique nature, hierarchy, traits and rules, we were still able to identify universal features of the groups that govern their behavior and distinguish different behavioral contexts. Combining detailed behavioral and genetic analysis at the level of individuals as seen in Freund et al. (2013), in association with the kind of group analysis used, may enable the identification of genetic and neuronal correlates of complex social interactions.\n\nOur analysis of the groups relied on a representation of the mice in their preferred locations in the arena. This is a discretized version of the full physical space, but even at this level the number of potential group configurations, which is exponential in the number of animals, is very large. We found strongly correlated group structure among the animals, which dictate which configurations are permitted and which are not. Moreover, we found that more information was obtained from the joint position of the other mice than from summing all the information provided by the interactions between the pairs of mice. To assess the contribution of individuality and of pairwise and higher-order interactions among the mice, we used tools from information theory to quantify any kind of dependency, of any order, be it linear or non-linear. Intriguingly, the pairwise-based model of the group that assumed no higher-order contribution could only explain approximately 60% of the correlation structure in the group, whereas models that included also third-order dependencies (but not fourth-order ones) captured approximately 90% of the group correlation structure. How should one interpret these results together? The ME model shows how well we can describe the distribution, whereas the information about location reflects how deterministic the behavior of one mouse is given the others. What we can read about the location of a mouse from the location of the others is much more than what one would naively expect from the pairwise relations between mice, which amounts to approximately 5%. This strong synergistic effect is the result of high-order dependency between the animals (which the maximum entropy models reflect), but it is still the case that three-quarters of the uncertainty we have about the location of a mouse comes from its own individuality. That is, the mice still have a significant individual component, even given the other mice.\n\nThe need for models that include high-order interactions is surprising, since intuitively one might have expected that it would be possible to construct a mathematically accurate description of the group once all the interactions between pairs of mice were known. After all, most social behaviors, such as fights, chases, courtship, and grooming, are usually observed in pairs. Our analysis of the social interaction network underlying the group behavior relied on a family of maximum entropy models, which enabled us to uniquely dissect the contribution of different orders of correlations in the group. This approach has been useful for different biological networks, from small to large networks of neurons (Schneidman et al., 2006; Shlens et al., 2006; Marre et al., 2009; Ohiorhenuan et al., 2010; Ganmor et al., 2011), genes (Lezon et al., 2007), T cells (Mora et al., 2010), letters in words (Stephens and Bialek, 2010), the structure of images (Stephens et al., 2013), and birds in large flocks (Bialek et al., 2012). Interestingly, in almost all these cases the contribution of pairwise interactions was very large and dominated the network structure, especially in small networks\u2014in clear contrast to what we found for the mice.\n\nThe parameters of the maximum entropy models can be interpreted as functional social interactions between the animals (similar to the parameters of the corresponding Potts models from physics). We emphasize that these functional interactions reflect statistical dependencies, and will probably differ from explicit physical interactions between the animals that one could measure. Yet, these statistical dependencies highlight the most prominent relations that underlie the patterns of group behavior. The strongest functional interactions corresponded not to the most frequent events, but rather to those events that are most surprising or not predicted from lower orders of interactions, thus presenting interactions of a truly social nature. Our results show that the dominant interactions in the group are negative ones, namely compound configurations that tend not to happen compared to expectations based on individual behavior. This may suggest competition as a dominant force in the social structure. In addition, the relative sparseness of the interaction maps indicates that even a small number of social events can have a strong, macroscopic impact on the group.\n\nAs an example of how the combination of group tracking and the analysis based on information theory tools can enhance our understanding of the effect of external factors on group behavior, we compared the effects of different environmental exposures on social behavior. We found that growing up in a complex environment with more mice, which better resembles a natural habitat, resulted in groups that were far less correlated as a group, and their social structure could be explained to a much larger degree based on pairwise interactions. We suggest that this approach could now enable the quantitative characterization of many different aspects of group behavior that have so far only been studied in much more restricted set-ups, such as the effects of stress, rewards, and learning on the group.\n\nSeveral technical and mathematical issues should be further explored to allow the extension of our approach to other groups of animals and contexts. First, we reiterate that our analysis has focused on a reduced description of the mice configurations (regions of interest), and not absolute or relative coordinate space. While it is not immediately clear how to construct such models, they have the potential to reveal new features and dependencies in the group, and with respect to cues from the environment as well. Moreover, it would be interesting to consider how our analysis might be related to more standard hierarchy models in groups. Second, we have focused on the joint configurations of the mice at given time points, and have not included temporal correlations between them. Third, it will be interesting to consider how the number of animals in the group affects the nature of group correlations and the contributions of the different interaction orders. Preliminary results suggest that our system can be expanded in terms of tracking more mice using additional dyes and using spatial color patterns on the mice.\n\nWe expect that mapping of the social interactions among other and larger groups of animals, and their dynamics, will change our understanding of group behavior in terms of the interplay between genetics, individuality, environment, and social hierarchy. Of particular interest would be the extension of our approach to study animal models of maladaptive social behavior. For example, our analysis would allow identifying mutants that rely on different kinds of low or high-order interactions compared to wild type littermates; such analysis would be useful for studying mechanisms underlying social intolerance and group stability, as well as models of autism and schizophrenia. Because our approach is based on high throughput as well as high spatiotemporal resolution, it may also be useful in detecting subtle changes in social behavior in mice that may not be detectable in standard social behavior paradigms even for standard parameters such as exploration, feeding or locomotor activity.\n\n## Materials and methods\n\n## Arena\n\nMice were studied in a specialized arena designed for automated tracking of individual and group behavior. The arena consisted of an open 70 cm \u00d7 50 cm \u00d7 50 cm box and included the following objects: Z-shaped wall, a water dispenser, two feeders, a small nest and a large nest, an elevated block, and two elevated ramps (Figure 1\u2014figure supplement 1). Food and water were given ad libitum. Two UVA fluorescent lamps (18 W) were placed 3 m above the arena\u2019s floor to illuminate the surrounding area with 370\u2013380 nm \u2018black light\u2019. To avoid reflections from white objects in the room, a black curtain was drawn from the fluorescent lamps down to the arena. A color sensitive camera (Panasonic Color CCTV, WV-CL924AE) was placed 1 m above the arena. The camera analog input is converted to digital information with a digitizer (Picolo Diligent frame grabber board), and recoded on a standard computer. Mice trajectories were automatically detected offline using specially written software in Matlab (Mathworks, Natick, MA).\n\n## Animals\n\nAdult male ICR mice (Harlan Laboratories, Jerusalem, Israel) were used for the standard and complex environment experiment. Throughout the experiments, the animals were maintained in a temperature-controlled mouse facility (22\u00b0C \u00b1 1) on a reverse 12 hr light\u2013dark cycle. Food and water were given ad libitum. All experimental protocols were approved by the Institutional Animal Care and Use Committee of The Weizmann Institute of Science.\n\n## Color marking\n\nMice were mildly anesthetized with a mix of ketamine (70 mg/kg) and xylazin (7 mg/kg). Their eyes were protected against drying using eye gel (viscotears liquid gel; Alcon). The fur of the mice was stained using a regular brush with fluorescent semi-permanent hair dyes that glow under black light. The fur was dried with a fan (low power and heat) for 3 min. After awakening, mice were kept in separate carton boxes for 4 hr before reunion. Mice were introduced to the arena for tracking 5 days after the fur staining. The dyes used were Electric banana, (HCR 11012), composed of natural ingredients, Virgin snow white (HCR 11033), and Raven (HCR 11007), from Tish & Snooky\u2019s (manicpanic.com), and High octane orange, from specialeffectsusa.com.Color under black lightColor under regular lightDyes ratioGreenYellow100% Electric bananaPurpleWhite100% Virgin snow whiteWhiteYellowish20% Electric banana, 80% Virgin snow whiteRedRed80% High octane orange, 20% Electric bananaOrangeOrange20% High octane orange, 80% Electric bananaBlackBlack100% Raven\n\n## Standard and complex environment conditions\n\nAt the age of weaning (4 weeks), mice were randomly distributed into 2 types of groups: standard environment (SE) mice that were housed in groups of 4 in standard laboratory cages, and complex environment (CE) mice that were housed in groups of 16 male mice in a relatively spacious and complex cage, with a variety of objects such as shelters, tunnels, running wheels, and mouse nest boxes (Sztainberg and Chen, 2010). After a period of 6 weeks, CE mice were randomly divided into groups of four, color marked, and introduced to the novel arena, as the SE mice, for analysis of group social behavior.\n\n## Mouse tracking\n\nMice were identified and tracked automatically, according to their fur colors, which were learned from labeled data. Because of low signal-to-noise ratio, due to the dim lighting and the camera\u2019s sensitivity, some frames had reflection artifacts or missing parts. To overcome this noise, we used a Bayesian model to infer the most likely location of a mouse given the observed location of connected colored blobs. Validation of the tracking algorithm was performed by comparing the algorithm\u2019s performance to human labeling of 500 randomly chosen frames, which gave 99.6% accuracy.\n\n## Sampling rate\n\nThe raw camera acquisition rate was 25 frames/s (40 ms per frame). In analyzing the configurations of the mice we used a lower resolution of 240 ms per frame, as this did not have a major effect on the state distribution, but was more robust to single frame noise.\n\n## Estimating mutual information about mouse locations\n\nThe uncertainty about the location of mouse i is given by the entropy of its location distribution, H(xi)=\u2212\u2211xip(xi)log2p(xi). The mutual information between the location of mouse i and that of mouse j is given by I(xi;xj)=H(xi)\u2212H(xi|xj), where H(xi|xj)=\u2212\u2211xi,xjp(xi,xj)log2p(xi|xj) is the average conditional entropy or uncertainty about mouse i given the location of mouse j. The fraction of the uncertainty about the location of mouse i that can be extracted from the location of mouse j is then given by I(xi;xj)H(xi). The fraction of uncertainty about the location of mouse i that can be \u2018read\u2019 from the joint location of the three other mice is given by(1)I(xi;{xj,xk,xl})H(xi)The naive additive pairwise information fraction was defined as(2)I(xi;xj)H(xi)+I(xi;xk)H(xi)+I(xi;xl)H(xi)\n\n## Group correlations and multi-information\n\nThe total correlation of all orders between mice was quantified by the multi-information of the group (Schneidman et al., 2003)(3)IN({xi})=\u2211jH(xj)\u2212H({xi})=\u2211{xi}p({xi})log2p({xi})\u220fjp(xj)where the joint entropy of the mice configurations is defined by(4)H({xi})=\u2212\u2211{xi}p({xi})log2p({xi})\n\n(where {xi}={x1,x2,x3,x4}) and the entropy of the independent mice model or the sum of the entropies of the mice is \u2211iH(xi).\n\n## Maximum entropy models for mice configurations\n\nFor a given set of observed average functions of the group, <fi({xi})>, the maximum entropy model, which is the minimally structured model that is consistent with these measured functions, is given by(5)p({xi})=1Zexp(\u2211i\u03bbifi({xi}))where \u03bbi are set such that the average of each fi under the model,<fi>p is identical to the empirical expectation value, <fi>empirical, and Z is the normalization or partition function (Jaynes, 1957).\n\nFor each group of mice, we then find a hierarchy of maximum entropy models that gives the minimal description of the mice configurations, relying only on pairwise correlations between mice (p(2)), pairwise and triplewise correlations (p(3)), and all correlations (p(4); pairs, triplets, and quadruplet correlations). The constraints of each of these maximum entropy models are the empirical marginal of different orders, that is, single mice pempirical (xi), pairs pempirical (xi,xj), and so on. For example, the pairwise model is the maximum entropy distribution over all mice, such that the marginal probabilities p(xi) and p(xi,xj), the pairwise marginal probability to find mouse i and mouse j in location xi and xj, are the same as empirically found in the data. Formally, we seek p({xi}) that maximizes(6)L(p({xi}),{\u03b1i(xi)},{\u03b2ij(xi,xj)})=\u2212\u2211{xi}p({xi})log2p({xi})\u2212\u2211i\u2211xi\u03b1i(xi)(p(xi)\u2212pempirical(xi))\u2212\u2211i<j\u2211xi,xj\u03b2ij(xi,xj)(p(xi,xj)\u2212pempirical(xi,xj))\u2212\u03bb0(\u2211{xi}p({xi})\u22121)\n\nThe resulting maximum entropy distribution is given by(7)p(2)({xi})=1Z2exp(\u2211i\u2211xi\u03b1i(xi)fi(xi)+\u2211i<j\u2211xi,xj\u03b2ij(xi,xj)fij(xi,xj))where the Lagrange multipliers \u03b1i(xi) and \u03b2ij(xi,xj) have to be chosen to satisfy the constraints, and fi(xi) is an indicator function which equals 1 if mouse i is in location xi, and 0 otherwise; the partition function Z2 is a normalization factor.\n\nThe maximum entropy models were fit using a combination of the generalized iterative scaling algorithm (Darroch and Ratcliff, 1972), and a maximum-likelihood optimization using a variant of the gradient descent algorithm with line search (Nesterov, 2005).\n\nThe maximum entropy models of different orders form a hierarchy of correlation-based descriptions of the mice, from p(1) where all mice are independent, to p(4) which is an a description that allows arbitrary complex interactions; their entropies decrease monotonically toward the true entropy.(8)H[p(1)]\u2265H[p(2)]\u2265\u2026\u2265H[p(N)]=H\n\nThe multi-information IN = H[p(1)] \u2212 H[p(N)] can be broken down to the sum of contributions of each order of correlation, where the k\u2019th order contribution is given by I(k) = H[p(k-1)] \u2212 H[p(k)], and IN = I(2) + I(3) + \u2026 + I(N).\n\n## Regularized maximum entropy models\n\nTo build a more compact model for the mice configurations and isolate the significant functional correlations between the mice, we constructed a model, p*, for the mice configurations that has the maximal entropy given a set of constraints, but also minimizing the total sum of the non-zero parameters of the model. Thus we added a penalty term (\u2018regularization\u2019), to the standard maximum entropy optimization problem from equation 6, and maximize(9)L(p({xi}),{\u03b1i(xi)},{\u03b2ij(xi,xj)},{\u03b3ijk(xi,xj)})\u2212\u03b50(\u2211i|\u03b1i|+\u2211i<j|\u03b2ij|+\u2211i<j<k|\u03b3ijk|)where \u03b50 is an adjustable parameter that controls the trade off between maximizing the entropy and minimizing the total sum of absolute values of the parameters or the L1 norm, also known as lasso regularization (Dud\u0131k et al., 2007).\n\n## Measuring similarity between group configurations\n\nSimilarity between groups was quantified by the Jensen\u2013Shannon divergence (DJS) between the regularized third-order models of the groups (Lin, 1991). Since the mice were arbitrarily labeled, we used the permutation of mouse identities that gave the smallest value of DJS between two groups. Thus the distance between groups i and j is(10)d(i,j)=min\u03c0Djs(pi({xk}),pj(\u03c0{xk}))\u200a,where \u03c0 is a permutation of the mice labels such that(11)\u03c0(x1,x2,x3,x4)=(xk1,xk2,xk3,xk4)where k1\u2208{1,...,4} and are unique.\n",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "74d8e3f1-6056-4611-90d4-35577762d2f8",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C1",
+      "claim": "Social behavior in mammals is often studied in pairs under artificial conditions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Social behavior in mammals is often studied in pairs under artificial conditions, yet groups may rely on more complicated social structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the current state of research practices in the field, reflecting established knowledge about how social behavior studies are typically conducted.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "8a985e41-6339-4ecd-b5c6-217939ca3a78",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C2",
+      "claim": "Groups may rely on more complicated social structures than pairs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Social behavior in mammals is often studied in pairs under artificial conditions, yet groups may rely on more complicated social structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference that motivates the study, suggesting that group dynamics may be more complex than dyadic interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "b90d0c1a-202d-4b55-9dc1-3e8fc2c1f6fc",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C3",
+      "claim": "Minimal models that rely only on individual traits and pairwise correlations between animals are not enough to capture group behavior in mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We have found that the minimal models that rely only on individual traits and pairwise correlations between animals are not enough to capture group behavior, but that models that include third-order interactions give a very accurate description of the group.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the experimental data and modeling analysis presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "332e2930-d76b-410b-b28d-25c4282bd599",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C4",
+      "claim": "Models that include third-order interactions give a very accurate description of group behavior in mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We have found that the minimal models that rely only on individual traits and pairwise correlations between animals are not enough to capture group behavior, but that models that include third-order interactions give a very accurate description of the group.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding supported by the maximum entropy modeling results presented in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e002e63f-80ab-4ce6-8459-2576b0b6d73f",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C5",
+      "claim": "Environmental complexity during adolescence affects the collective group behavior of adult mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using this approach, we show that environmental complexity during adolescence affects the collective group behavior of adult mice, in particular altering the role of high-order structure.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the experimental comparison between standard environment and complex environment groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "5c04fe1b-3321-49de-ad2a-c4a2b3d4caa0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C6",
+      "claim": "Environmental complexity during adolescence alters the role of high-order structure in group behavior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using this approach, we show that environmental complexity during adolescence affects the collective group behavior of adult mice, in particular altering the role of high-order structure.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific finding about how environmental complexity affects the mathematical structure of social interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "c5395715-3b84-4549-b1ae-0d59ef356252",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C7",
+      "claim": "Insect swarms exhibit coherent collective behavior patterns.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The coherence of 'collective behavior' patterns of large groups of animals, such as insect swarms (Buhl et al., 2006; Simpson et al., 2006) fish schools (Sumpter et al., 2008; Katz et al., 2011), bird flocks (Cavagna et al., 2010; Nagy et al., 2010), and human crowds (Song et al., 2010; Gallup et al., 2012), presents us with fundamental questions relating to distributed information processing, computation, and learning.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by the cited references about insect swarm behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "83799152-e38d-4c20-a3a4-bb9f69e0b10b",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C8",
+      "claim": "Fish schools exhibit coherent collective behavior patterns.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The coherence of 'collective behavior' patterns of large groups of animals, such as insect swarms (Buhl et al., 2006; Simpson et al., 2006) fish schools (Sumpter et al., 2008; Katz et al., 2011), bird flocks (Cavagna et al., 2010; Nagy et al., 2010), and human crowds (Song et al., 2010; Gallup et al., 2012), presents us with fundamental questions relating to distributed information processing, computation, and learning.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by the cited references about fish school behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "227063cd-3b0d-4e3e-a1df-50e18f6126d0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C9",
+      "claim": "Bird flocks exhibit coherent collective behavior patterns.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The coherence of 'collective behavior' patterns of large groups of animals, such as insect swarms (Buhl et al., 2006; Simpson et al., 2006) fish schools (Sumpter et al., 2008; Katz et al., 2011), bird flocks (Cavagna et al., 2010; Nagy et al., 2010), and human crowds (Song et al., 2010; Gallup et al., 2012), presents us with fundamental questions relating to distributed information processing, computation, and learning.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by the cited references about bird flock behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "92a3caec-dfe4-460c-96a3-f167d75a0d88",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C10",
+      "claim": "Human crowds exhibit coherent collective behavior patterns.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The coherence of 'collective behavior' patterns of large groups of animals, such as insect swarms (Buhl et al., 2006; Simpson et al., 2006) fish schools (Sumpter et al., 2008; Katz et al., 2011), bird flocks (Cavagna et al., 2010; Nagy et al., 2010), and human crowds (Song et al., 2010; Gallup et al., 2012), presents us with fundamental questions relating to distributed information processing, computation, and learning.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by the cited references about human crowd behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "64674653-7528-4def-94a2-eea064676091",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C11",
+      "claim": "Individual traits may play an important role in shaping group behavior in smaller groups of animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Smaller groups of animals present an interesting and sometimes more difficult scenario, where individual traits may play an important role in shaping the group behavior (Lathe, 2004).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is supported by a citation and represents a logical inference about the nature of small group dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "1a3a51fc-a798-4d50-980a-5855e955fb52",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C12",
+      "claim": "Individual behavior and interactions in mammals are often assumed to be more complex than in other animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This may be especially true in mammals, where both individual behavior and interactions are often assumed to be more complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects a general assumption in the field about mammalian behavior complexity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "77de6460-793c-4cd8-ba4d-f44659a9d54a",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C13",
+      "claim": "Much of our understanding of social behavior has come from studies of just pairs of animals under artificial settings.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Yet, much of our understanding of social behavior has come from studies of just pairs of animals under artificial settings (Insel and Fernald, 2004; Langford et al., 2006; Moy et al., 2008; Branson et al., 2009; Dankert et al., 2009; Blumstein et al., 2010; Silverman et al., 2010; Ben-Ami Bartal et al., 2011; de Chaumont et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by multiple citations and reflects established knowledge about research practices in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "2d008d62-f687-4c33-a230-b04852d8081f",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C14",
+      "claim": "It is not clear what the detailed analysis of social interaction at the level of a single pair implies for larger groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is not clear, however, what the detailed analysis of social interaction at the level of a single pair implies for larger groups.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This identifies a gap in current understanding in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "b2a4f66d-2ac4-46c3-9ffc-d9f8715e8f58",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C15",
+      "claim": "New features may emerge that characterize the group as a whole that cannot be inferred from the study of individuals or pairs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In particular, new features may emerge that characterize the group as a whole that cannot be inferred from the study of individuals or pairs (Cavagna et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is supported by a citation and represents an inference about emergent properties in groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "793a0649-6890-4bad-80c4-a297c62528d5",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C16",
+      "claim": "The study analyzed the behavior of 17 groups of mice, each composed of four adult mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We analyzed the behavior of 17 groups of mice, each composed of four adult mice in an arena resembling an ethologically relevant context that has an interesting environment for exploration",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design and sample size used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e08ecfa8-01bc-436d-9b8a-1fede12216a8",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C17",
+      "claim": "Mice spent much more time in certain locations in the arena.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice spent much more time in certain locations in the arena (see 'heat map' in Figure 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the experimental data shown in the heat map.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "35f9c176-372b-4f1b-aa5a-223a113c8e05",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C18",
+      "claim": "Individual mice in the group had distinct personal preferences for certain locations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that individual mice in the group had distinct personal preferences for certain locations (Figure 1E), and the relative amounts of time spent in different places.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the analysis of individual mouse behavior shown in Figure 1E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "cac0a9b3-8456-4109-a269-f6e6b76cbe08",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C19",
+      "claim": "The amount of time that each mouse spent continuously at each location had a power-law-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Despite these individual differences, the amount of time that each mouse spent continuously at each location had a power-law-like behavior (Figure 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the statistical analysis of dwell times shown in Figure 1F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "a8f3964a-2b70-4375-a297-81d35c40b6cb",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C20",
+      "claim": "The power-law distribution of dwell times was similar for different mice when analyzed individually.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This power-law distribution was similar for the different mice, when they were each analyzed individually, despite their individual differences on other parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation about the consistency of the power-law behavior across individual mice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "9e99963f-b692-4f29-b0b1-83c21e104d15",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C21",
+      "claim": "The independent model that assumes no dependencies between mice is insufficient to describe the behavior of the group.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As it was clear already from Figure 2B, the independent model is insufficient to describe the behavior of the group.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This conclusion is drawn from the comparison between empirical data and the independent model shown in Figure 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "7e872fbd-c91f-4bf0-b4d2-658015e3ed3d",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C22",
+      "claim": "Knowing the location of one mouse gives relatively little information about the location of another\u2014typically less than 5%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that knowing the location of one mouse gives relatively little information about the location of another\u2014typically less than 5% (averaged on all pairs, Figure 5\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding from the mutual information analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "d6d68396-e530-460c-a9f5-c662f025bd32",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C23",
+      "claim": "Knowing the joint locations of three mice gives much more information about that of the fourth one\u2014on average 25% of the location entropy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, knowing the joint locations of three mice gives much more information about that of the fourth one\u2014over all groups and mice I(xi;{xj,xk,xl}) was, on average, 25% of H(xi).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding from the multi-way information analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "d5ba144f-a26a-439a-82c8-1478e5eaef7b",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C24",
+      "claim": "The information about the location of one mouse that can be read from the locations of the other mice is highly synergistic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Figure 2C shows that this information was highly synergistic\u2014namely that the information about the location of one mouse that can be read from the locations of the other mice can be more than double the sum of pairwise information values of that mouse with all the others",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding about the synergistic nature of information shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "fe884552-7f5d-4828-bf9d-5f25c9797cd4",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C25",
+      "claim": "The remaining 75% of uncertainty about the location of each mouse is the level of individuality of each mouse, which cannot be explained in terms of the location of the other mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The remaining 75% of uncertainty about the location of each mouse is exactly the level of individuality of each mouse, which cannot be explained in terms of the location of the other mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the information-theoretic analysis, combining data with logical inference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "af3d4ac4-b0ac-40cc-a25e-bdc72d4763c0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C26",
+      "claim": "Maximum entropy models provide the most parsimonious explanation that does not make any additional assumptions beyond required features.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the entropy of a distribution measures its randomness of lack of structure, then among all models that are consistent with some desired feature of the data, the maximum entropy model is the most parsimonious explanation that does not make any additional assumptions beyond the required features.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a fundamental property of maximum entropy models from information theory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "3fa3020b-2433-4d03-b739-2f546eea26a9",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C27",
+      "claim": "The maximum entropy model is mathematically unique and can be found numerically.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This minimal model is mathematically unique and can be found numerically (Schneidman et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a mathematical property of maximum entropy models supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "1f03234b-55af-4ea1-ae13-019d58efddfa",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C28",
+      "claim": "Maximum entropy models have been successfully used to infer functional dependencies between neurons, genes, proteins and more.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such models have been successfully used to infer functional dependencies between neurons, genes, proteins and more (e.g., Schneidman et al., 2006; Ganmor et al., 2011; Lezon et al., 2007; Marre et al., 2009; Mora et al., 2010; Stephens et al., 2010; Stephens et al., 2013; Bialek et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations showing applications of maximum entropy models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e471fc0f-af7f-4d73-b9b1-d1bc99f5a614",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C29",
+      "claim": "The contribution of the pairwise ME model to total correlations was 57.2% \u00b1 10.2% over all groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that over all groups, the contribution of the pairwise ME model, given by I(2) was 57.2% \u00b1 10.2% of IN.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from the maximum entropy modeling analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "ec4ac87e-f791-427a-8df1-7dbf99af991c",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C30",
+      "claim": "Third-order interactions carried nearly a third of the total correlations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that I(3) carried nearly a third of the total correlations, and so p(3) that relies on individual traits, pairwise and triple interactions between the mice explains 92.8% \u00b1 2.9% of the correlations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding about the contribution of third-order interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "feefdf08-4c76-45ee-8163-7ea03bafa58b",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C31",
+      "claim": "The third-order model explains 92.8% \u00b1 2.9% of the correlations in mouse groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that I(3) carried nearly a third of the total correlations, and so p(3) that relies on individual traits, pairwise and triple interactions between the mice explains 92.8% \u00b1 2.9% of the correlations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result showing the accuracy of the third-order model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "9c4780ab-a6c5-4333-b457-0a2fcfedc04d",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C32",
+      "claim": "For a group of four mice, even using all pairwise interactions is not enough to capture the group behavior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, for a group of four mice even using all pairwise interactions is not enough to capture the group behavior; the third-order interactions are therefore necessary and capture about a third of the correlation structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the modeling results about the necessity of third-order interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "ac5eed7c-e723-4597-88d3-7da6b1ccc2c0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C33",
+      "claim": "Third-order interactions are necessary to capture group behavior and capture about a third of the correlation structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, for a group of four mice even using all pairwise interactions is not enough to capture the group behavior; the third-order interactions are therefore necessary and capture about a third of the correlation structure.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding about the importance of third-order interactions from the modeling analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "4636693c-e426-4a4b-a419-996aad4b4329",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C34",
+      "claim": "The parameters of maximum entropy models can be interpreted as functional social interactions between animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The parameters of the maximum entropy models can be interpreted as functional social interactions between the animals (similar to the parameters of the corresponding Potts models from physics).",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation based on the mathematical structure of the models and analogy to physics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "3910ab83-a622-4ef7-807d-557c034286f3",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C35",
+      "claim": "Functional interactions reflect statistical dependencies and will probably differ from explicit physical interactions between animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We emphasize that these functional interactions reflect statistical dependencies, and will probably differ from explicit physical interactions between the animals that one could measure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a clarification about the interpretation of the model parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "c2aafd82-8cb8-4dc6-a87c-97eeb77a4e54",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C36",
+      "claim": "The strongest functional interactions corresponded not to the most frequent events, but to those events that are most surprising or not predicted from lower orders of interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The strongest functional interactions corresponded not to the most frequent events, but rather to those events that are most surprising or not predicted from lower orders of interactions, thus presenting interactions of a truly social nature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the model parameters based on the data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "5f178821-689c-47f4-9bdd-a2f3eb2f2292",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C37",
+      "claim": "The dominant interactions in the group are negative ones.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results show that the dominant interactions in the group are negative ones, namely compound configurations that tend not to happen compared to expectations based on individual behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the analysis of interaction parameters in the models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "1f037e3b-0d8b-46b9-b6ed-3d25d562419c",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C38",
+      "claim": "Negative interactions represent compound configurations that tend not to happen compared to expectations based on individual behavior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results show that the dominant interactions in the group are negative ones, namely compound configurations that tend not to happen compared to expectations based on individual behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of what negative interactions mean in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "889f099a-0e56-40ef-83a9-431f5e5cbf0a",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C39",
+      "claim": "The dominance of negative interactions may suggest competition as a dominant force in the social structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This may suggest competition as a dominant force in the social structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the negative interactions finding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "bf4fe61c-e613-4afb-ac37-ccfd78c9d7ca",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C40",
+      "claim": "The relative sparseness of the interaction maps indicates that even a small number of social events can have a strong, macroscopic impact on the group.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, the relative sparseness of the interaction maps indicates that even a small number of social events can have a strong, macroscopic impact on the group.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the sparseness observed in the interaction maps.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "9481ea24-6da5-4681-804c-e47281ce5896",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C41",
+      "claim": "Growing up in a complex environment with more mice resulted in groups that were far less correlated as a group.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that growing up in a complex environment with more mice, which better resembles a natural habitat, resulted in groups that were far less correlated as a group, and their social structure could be explained to a much larger degree based on pairwise interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the comparison between standard and complex environment groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "75986ecc-7179-4828-956e-35536867d4cd",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C42",
+      "claim": "The social structure of complex environment groups could be explained to a much larger degree based on pairwise interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that growing up in a complex environment with more mice, which better resembles a natural habitat, resulted in groups that were far less correlated as a group, and their social structure could be explained to a much larger degree based on pairwise interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding about the nature of interactions in complex environment groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "d1456a1d-d59b-42f9-ab2d-81929625d0ef",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C43",
+      "claim": "The total group correlation values of SE and CE groups were similar on the first day.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the total group correlation IN values of the SE and CE groups were similar on the first day, but then the SE groups became more correlated.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the temporal analysis of group correlations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "97cb56cc-33eb-4e78-8ede-8b1ad9428f37",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C44",
+      "claim": "SE groups became more correlated over time while CE groups remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that the total group correlation IN values of the SE and CE groups were similar on the first day, but then the SE groups became more correlated. In contrast, the correlations among the CE mice remained unchanged (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding about the temporal dynamics of correlations in different groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "8397a32e-7b70-4310-ad88-410c08af64e7",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C45",
+      "claim": "There was a progressive increase in social correlation, or 'socialization' in the SE groups, which was absent in the CE groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In other words, there was a progressive increase in social correlation, or 'socialization' in the SE groups, which was absent in the CE groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the temporal correlation patterns observed in the data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "fdaa8b4b-3086-47b6-b1dd-7ae68198b256",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C46",
+      "claim": "The contribution of different orders of interactions to group behavior differed significantly between SE and CE groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, we found that the contribution of the different orders of interactions to the group behavior differed significantly between the SE and CE groups.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the comparison of interaction order contributions between groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "064f4c6f-3461-406b-86ed-627b18c74e94",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C47",
+      "claim": "In CE groups the contribution of pairwise interaction to full group correlations was 74.6% \u00b1 2.5% compared to 61.9% \u00b1 2.4% for SE groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the CE groups the contribution of pairwise interaction to the full group correlations was higher than in SE groups (74.6% \u00b1 2.5% in CE groups compared to 61.9% \u00b1 2.4% for the SE ones, averaged over all four days).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding comparing pairwise contributions between groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e5951995-26c8-4de7-b1ce-a0d6070e3c63",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C48",
+      "claim": "CE groups showed virtually no contribution of fourth-order interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The dominance of the low-order interactions was also reflected by the virtual lack of contribution of fourth-order interaction in the CE groups, whereas the SE groups showed more complex high-order structure",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding about the absence of fourth-order interactions in CE groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "f8317a0a-1248-4e22-9762-f5d6d1ed8174",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C49",
+      "claim": "SE groups showed more complex high-order structure with fourth-order interactions contributing 6.0% \u00b1 0.7% to total correlation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The dominance of the low-order interactions was also reflected by the virtual lack of contribution of fourth-order interaction in the CE groups, whereas the SE groups showed more complex high-order structure (fourth-order interactions contribution to the total correlation in the SE groups was 6.0% \u00b1 0.7% [Figure 5E]).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding about fourth-order interactions in SE groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "cd752d03-fc6f-400a-b643-cb654b4a06f5",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C50",
+      "claim": "In CE groups the information from three mice about the fourth was far less synergistic than in SE groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The larger role of pairwise interactions in shaping the group's behavior is also reflected in the information about the location of one mouse that can be read from the locations of the other three mice. In the CE groups the information from three mice about the fourth was far less synergistic than in the case of SE groups (Figure 5\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding about the synergistic nature of information in different groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "bb5cb041-78dd-4672-846f-d27138f49d2c",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C51",
+      "claim": "Mice exposed to a complex environment during adolescence were more individual.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, mice exposed to a complex environment during adolescence were more individual, and their weaker group correlations relied more on pairwise rather than higher-order dependencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the analysis of CE group behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "f9e0cbcb-57dd-4ce1-b95d-e316ec8fc85a",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C52",
+      "claim": "Mice exposed to complex environments had weaker group correlations that relied more on pairwise rather than higher-order dependencies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, mice exposed to a complex environment during adolescence were more individual, and their weaker group correlations relied more on pairwise rather than higher-order dependencies.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary finding about the nature of correlations in CE groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "0ca0ebe2-9732-4bc3-8d87-6aaf94db6163",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C53",
+      "claim": "Mice are an ideal model organism for investigating social behavior in mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice are an ideal model organism for investigating social behavior in mammals and the neural mechanisms that underlie it.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established knowledge about the utility of mice as a model organism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "5cee7d6e-3bef-4490-974d-287fe46585c1",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C54",
+      "claim": "Mice live in groups and form diverse societies with different characteristics such as group size, hierarchy, aggression, and social tolerance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Together with the ability to manipulate their genomic make-up (Lewandoski, 2001), and record neural activity (electrophysiologically or optically), mice live in groups and form diverse societies with different characteristics such as group size, hierarchy, aggression, and social tolerance (Bronson, 1979).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation and reflects established knowledge about mouse social behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "06b7ef39-c193-48df-b5a4-c1817a5d40f8",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C55",
+      "claim": "Current methodologies for analysis of social behavior in mice have focused mainly on dyadic interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, despite the complex nature of their social organization, the current methodologies used for analysis of social behavior in mice have focused mainly on dyadic interactions such as in the classical three-chamber social approach test and the partition test (Silverman et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about current research practices supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "cc56837c-a410-49fe-8841-e2167a53c926",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C56",
+      "claim": "The tracking system enables automatic tracking of group behavior of mice in the dark, over long periods of time, and in a semi-natural environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The system we introduce here enables automatic tracking of group behavior of mice in the dark, over long periods of time, and in a semi-natural environment, with high spatiotemporal resolution while maintaining individual identities.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the capabilities of the experimental system developed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "78220497-bf69-4c37-a738-93c44ba9258c",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C57",
+      "claim": "RFID-based systems allow for tracking of a very large number of animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We note that RFID-based systems allow for the tracking of a very large number of animals, whereas our tracking capacity depends on the number of distinguishable dyes and spatial marking patterns on the mice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the capabilities of RFID-based tracking systems.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "4c1ce477-aaf3-4e9b-9347-06b652fecb7e",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C58",
+      "claim": "The strength of the color-based tracking system is in its much higher spatial and temporal resolution compared to RFID systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the strength of our system is in its much higher spatial and temporal resolution, and the ability to track and analyze details of individual behavior of the animals and between them.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a comparative statement about the advantages of the developed system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "18541164-9361-4f03-9bf8-c8d114ac12ca",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C59",
+      "claim": "The pairwise-based model of the group could only explain approximately 60% of the correlation structure in the group.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Intriguingly, the pairwise-based model of the group that assumed no higher-order contribution could only explain approximately 60% of the correlation structure in the group, whereas models that included also third-order dependencies (but not fourth-order ones) captured approximately 90% of the group correlation structure.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding from the maximum entropy modeling analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "753b6c02-b2fb-448b-9dd3-b8c3857188f0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C60",
+      "claim": "Models that included third-order dependencies captured approximately 90% of the group correlation structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Intriguingly, the pairwise-based model of the group that assumed no higher-order contribution could only explain approximately 60% of the correlation structure in the group, whereas models that included also third-order dependencies (but not fourth-order ones) captured approximately 90% of the group correlation structure.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative finding about the accuracy of third-order models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e0875d6c-0ac1-4ac0-92b7-d5a7dea2979b",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C61",
+      "claim": "Three-quarters of the uncertainty about the location of a mouse comes from its own individuality.",
+      "claim_type": "EXPLICIT",
+      "source_text": "That is, the mice still have a significant individual component, even given the other mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the information-theoretic analysis results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "af29b2f8-072d-408b-870f-516c029616c0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C62",
+      "claim": "Most social behaviors such as fights, chases, courtship, and grooming are usually observed in pairs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The need for models that include high-order interactions is surprising, since intuitively one might have expected that it would be possible to construct a mathematically accurate description of the group once all the interactions between pairs of mice were known. After all, most social behaviors, such as fights, chases, courtship, and grooming, are usually observed in pairs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects common observations about social behaviors in animals.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e7aea1bc-0377-4f5c-800c-1c06c8a4ac68",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C63",
+      "claim": "In almost all previous applications of maximum entropy models to biological networks, the contribution of pairwise interactions was very large and dominated the network structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, in almost all these cases the contribution of pairwise interactions was very large and dominated the network structure, especially in small networks\u2014in clear contrast to what we found for the mice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about findings from previous studies using maximum entropy models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "1d5ae7b4-4cb7-4c09-8b3a-437ef436ff44",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C64",
+      "claim": "The finding that pairwise interactions do not dominate in mouse groups is in clear contrast to previous applications of maximum entropy models.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, in almost all these cases the contribution of pairwise interactions was very large and dominated the network structure, especially in small networks\u2014in clear contrast to what we found for the mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a comparative statement highlighting the novelty of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "6af4e28c-31d4-492d-a5ac-4e65ceedd372",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C65",
+      "claim": "The arena consisted of a 70 cm \u00d7 50 cm \u00d7 50 cm cage that included several objects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The arena consisted of a 70 cm \u00d7 50 cm \u00d7 50 cm cage that included several objects: a Z-shaped wall, a water dispenser, two feeders, a small nest and a large nest, an elevated block, and two elevated ramps.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the physical setup of the experimental arena.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "d1527c12-4728-4f00-993b-1e662c397a87",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C66",
+      "claim": "Two UVA fluorescent lamps were placed 3 m above the arena floor to illuminate with 370\u2013380 nm wavelength light.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two UVA fluorescent lamps were placed 3 m above the arena floor to illuminate the surrounding area during the night with 370\u2013380 nm wavelength light.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the lighting setup used in the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e42518eb-b083-4df9-bfb7-5375985827e5",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C67",
+      "claim": "A color sensitive camera was placed 1 m above the arena.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A color sensitive camera was placed 1 m above the arena.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the camera setup for tracking.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "2827d586-0768-47a9-87cd-a7f2ce7761f2",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C68",
+      "claim": "Validation of the tracking algorithm gave 99.6% accuracy compared to human labeling.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Validation of the tracking algorithm was performed by comparing the algorithm's performance to human labeling of 500 randomly chosen frames, which gave 99.6% accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative validation result for the tracking system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "09af212a-c534-49ba-8c01-dca8cef8c053",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C69",
+      "claim": "Adult male ICR mice were used for the standard and complex environment experiment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Adult male ICR mice (Harlan Laboratories, Jerusalem, Israel) were used for the standard and complex environment experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the animal subjects used in the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "a51887cf-fe77-42eb-b8da-160de7315483",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C70",
+      "claim": "At the age of weaning (4 weeks), mice were randomly distributed into 2 types of groups: standard environment and complex environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At the age of weaning (4 weeks), mice were randomly distributed into 2 types of groups: standard environment (SE) mice that were housed in groups of 4 in standard laboratory cages, and complex environment (CE) mice that were housed in groups of 16 male mice in a relatively spacious and complex cage",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design for the environmental manipulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "83aad78a-04d2-4168-b128-36cfdd7ff643",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C71",
+      "claim": "SE mice were housed in groups of 4 in standard laboratory cages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "standard environment (SE) mice that were housed in groups of 4 in standard laboratory cages",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the housing conditions for the standard environment group.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "88997c36-db20-4dd1-aa48-d16be6f128ed",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C72",
+      "claim": "CE mice were housed in groups of 16 male mice in a relatively spacious and complex cage with a variety of objects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "complex environment (CE) mice that were housed in groups of 16 male mice in a relatively spacious and complex cage, with a variety of objects such as shelters, tunnels, running wheels, and mouse nest boxes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the housing conditions for the complex environment group.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "c73d1e05-3ad7-469d-bec9-99e05d502092",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C73",
+      "claim": "The entropy of a distribution measures its randomness or lack of structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the entropy of a distribution measures its randomness of lack of structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a fundamental concept from information theory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "c7caa9a4-22e5-48ab-b9e5-44228e9a4a08",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C74",
+      "claim": "The multi-information measures dependencies among a group of variables.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We used the 'multi-information' of the group (Schneidman et al., 2003), which is a generalized form of the mutual information between two variables that measures dependencies among a group of variables",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This defines a mathematical concept used in the analysis, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "bb3197a3-d884-44ae-bffc-846a2f393d1d",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C75",
+      "claim": "The multi-information can be uniquely broken down to the sum of exact contributions of each order of correlations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "IN can be uniquely broken down to the sum of exact contributions of each order of correlations, when the contribution of order k to IN, is given by I(k)=H[p(k\u22121)]\u2212H[pk], where H[pk] is the entropy of the ME models of order k",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a mathematical property of multi-information supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "c902f9d4-1025-466e-8bf2-76cef0151395",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C76",
+      "claim": "The raw camera acquisition rate was 25 frames/s (40 ms per frame).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The raw camera acquisition rate was 25 frames/s (40 ms per frame).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a technical parameter of the data acquisition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "8f1de4e3-f765-41b8-9d39-723d9a41b741",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C77",
+      "claim": "A lower resolution of 240 ms per frame was used in analyzing the configurations of the mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In analyzing the configurations of the mice we used a lower resolution of 240 ms per frame, as this did not have a major effect on the state distribution, but was more robust to single frame noise.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological choice in the data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "7450a2eb-8b6a-47bd-a567-4d048792a9e9",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C78",
+      "claim": "The nature of the environment and availability of resources determine population density, aggression, dominance, and territoriality in mice.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Since the nature of the environment and availability of resources determine population density, aggression, dominance, and territoriality in mice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established knowledge about factors affecting mouse social behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "bff9ce2a-8e64-4cdd-a6b6-3b37cb41e9b7",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C79",
+      "claim": "Combining detailed behavioral and genetic analysis at the level of individuals with group analysis may enable identification of genetic and neuronal correlates of complex social interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Combining detailed behavioral and genetic analysis at the level of individuals as seen in Freund et al. (2013), in association with the kind of group analysis used, may enable the identification of genetic and neuronal correlates of complex social interactions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential future applications of the approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "a6f562f8-d6f3-447c-a9ac-bb10638d88f2",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C80",
+      "claim": "The approach could enable quantitative characterization of effects of stress, rewards, and learning on group behavior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We suggest that this approach could now enable the quantitative characterization of many different aspects of group behavior that have so far only been studied in much more restricted set-ups, such as the effects of stress, rewards, and learning on the group.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential applications of the methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "cda73970-5c96-4ab4-a72c-4b348188ed52",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C81",
+      "claim": "Mapping social interactions among groups of animals will change our understanding of group behavior in terms of the interplay between genetics, individuality, environment, and social hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We expect that mapping of the social interactions among other and larger groups of animals, and their dynamics, will change our understanding of group behavior in terms of the interplay between genetics, individuality, environment, and social hierarchy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the potential impact of the approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "a43b212d-8ef0-4c6b-84b0-72b8aa0bc270",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C82",
+      "claim": "The analysis would be useful for studying mechanisms underlying social intolerance and group stability, as well as models of autism and schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, our analysis would allow identifying mutants that rely on different kinds of low or high-order interactions compared to wild type littermates; such analysis would be useful for studying mechanisms underlying social intolerance and group stability, as well as models of autism and schizophrenia.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential applications to disease models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "401e8c89-12ba-4666-92cb-6e97b025d625",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C83",
+      "claim": "The approach may be useful in detecting subtle changes in social behavior in mice that may not be detectable in standard social behavior paradigms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because our approach is based on high throughput as well as high spatiotemporal resolution, it may also be useful in detecting subtle changes in social behavior in mice that may not be detectable in standard social behavior paradigms even for standard parameters such as exploration, feeding or locomotor activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the sensitivity of the approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "d9616ae7-3b43-4bf3-81d3-e63129ce476d",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C84",
+      "claim": "The study used a novel system for tracking multiple animals in a rich environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here, we use a novel system for tracking multiple animals in a rich environment to characterize the nature of group behavior and interactions, and show strongly correlated group behavior in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental system developed and used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "cda590f6-4270-49bd-b45f-27de266a6014",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C85",
+      "claim": "The study shows strongly correlated group behavior in mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here, we use a novel system for tracking multiple animals in a rich environment to characterize the nature of group behavior and interactions, and show strongly correlated group behavior in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding from the study about the nature of group behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "f27646b2-2fff-4594-97fd-9c8ea7f86cda",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C86",
+      "claim": "The results provide new experimental and mathematical frameworks for studying group behavior and social interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results provide new experimental and mathematical frameworks for studying group behavior and social interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a summary statement about the contribution of the work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "69f2f9e5-41e8-4665-a6d5-1e8fb4b3faa8",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C87",
+      "claim": "Understanding the nature and impact of interactions underlying group behavior is a central question shared across biology, physics, psychology, and mathematics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Understanding the nature and impact of the interactions that underlie the behavior of groups of organisms is a central question, shared across biology, physics, psychology, and mathematics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects the interdisciplinary importance of the research question.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "363f833b-9d1b-4694-abbf-9c1f05fe62d1",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C88",
+      "claim": "The adequacy of different mathematical models of interactions between animals in describing large group behavior has been of great interest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The adequacy of different mathematical models of the interactions between animals in describing the behavior of large groups has therefore been of great interest",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by multiple citations and reflects the research context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "7ba3a325-3e11-4cba-9f87-ef81445cb00e",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C89",
+      "claim": "A Bayesian model was used to infer the most likely location of a mouse given the observed location of connected colored blobs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To overcome this noise, we used a Bayesian model to infer the most likely location of a mouse given the observed location of connected colored blobs.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological approach used in the tracking algorithm.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "6bfb4392-4d19-473d-b755-f9af5cf32904",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C90",
+      "claim": "The maximum entropy models were fit using a combination of the generalized iterative scaling algorithm and a maximum-likelihood optimization using a variant of the gradient descent algorithm with line search.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The maximum entropy models were fit using a combination of the generalized iterative scaling algorithm (Darroch and Ratcliff, 1972), and a maximum-likelihood optimization using a variant of the gradient descent algorithm with line search (Nesterov, 2005).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational methods used to fit the models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "4aca042c-b4cc-4eda-8bd3-3ded8a7fe543",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C91",
+      "claim": "Similarity between groups was quantified by the Jensen\u2013Shannon divergence between the regularized third-order models of the groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Similarity between groups was quantified by the Jensen\u2013Shannon divergence (DJS) between the regularized third-order models of the groups (Lin, 1991).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the metric used to compare groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "e8f1ace7-368d-47ff-ba17-eb752783e54c",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C92",
+      "claim": "Mice were arbitrarily labeled, so the permutation of mouse identities that gave the smallest value of DJS between two groups was used.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the mice were arbitrarily labeled, we used the permutation of mouse identities that gave the smallest value of DJS between two groups.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological consideration in comparing groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "dabcd538-a486-4f61-aa9b-aceeaf72202c",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C93",
+      "claim": "All experimental protocols were approved by the Institutional Animal Care and Use Committee of The Weizmann Institute of Science.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All experimental protocols were approved by the Institutional Animal Care and Use Committee of The Weizmann Institute of Science.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statement about ethical approval for the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "742725ed-351a-4728-9f18-0a3c5a645256",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C94",
+      "claim": "Mice were color marked using fluorescent semi-permanent hair dyes that glow under black light.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The fur of the mice was stained using a regular brush with fluorescent semi-permanent hair dyes that glow under black light.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the method used for individual identification.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "871be8ca-f729-496c-8747-b9bec2749e9e",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C95",
+      "claim": "Mice were introduced to the arena for tracking 5 days after the fur staining.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice were introduced to the arena for tracking 5 days after the fur staining.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the timing of the experimental protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "bcc2aae9-3c5e-4f61-a0b6-79d9b9e76d94",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C96",
+      "claim": "After a period of 6 weeks in different housing conditions, mice were color marked and introduced to the novel arena for analysis of group social behavior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "After a period of 6 weeks, CE mice were randomly divided into groups of four, color marked, and introduced to the novel arena, as the SE mice, for analysis of group social behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental timeline for the environmental manipulation study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "55d1ce33-e02a-4e02-bb3d-0415aae25234",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C97",
+      "claim": "The study used a discretized representation of spatial configurations based on the ten most visited regions of interest in the arena.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We therefore used a discretized representation of their spatial configurations, based on the ten most visited regions of interest in the arena.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data representation approach used in the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "57bf03a4-e0a9-4a53-898b-9c15b9c0e9cc",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C98",
+      "claim": "The state of the group at time t was defined as a vector representing the location of each mouse.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We defined the 'state' of the group at time t, as a vector",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes how group configurations were mathematically represented.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "76509065-32c5-42f2-91f0-63af3ce4ef66",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C99",
+      "claim": "A regularization penalty term was added to minimize the number of non-zero parameters in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To build a more compact model for the mice configurations and isolate the significant functional correlations between the mice, we constructed a model, p*, for the mice configurations that has the maximal entropy given a set of constraints, but also minimizing the total sum of the non-zero parameters of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological approach to create sparse models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "acad6c07-1791-475b-95e4-0a754b472c83",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "claim_id": "C100",
+      "claim": "The analysis focused on a reduced description of mice configurations (regions of interest), not absolute or relative coordinate space.",
+      "claim_type": "EXPLICIT",
+      "source_text": "First, we reiterate that our analysis has focused on a reduced description of the mice configurations (regions of interest), and not absolute or relative coordinate space.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a clarification about the scope and limitations of the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fab31f43-74f3-42d9-8159-14d06e992e72",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The tracking system is well-documented with clear technical specifications and validated against human labeling (99.6% accuracy on 500 frames). The methodology is reproducible and the system capabilities are demonstrated through successful tracking of 17 groups over extended periods.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "12de8717-b4a9-491b-99fe-bc4aad94e5f0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Individual behavioral patterns are directly observed from tracking data with clear visual evidence (heat maps, histograms). The power-law distribution of dwell times is a robust statistical finding shown consistently across mice, though the biological interpretation remains descriptive.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "79a9ac97-f5d8-468b-be8d-315fc2500d84",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The inadequacy of independent and pairwise models is demonstrated through multiple converging lines of evidence: visual comparison of predicted vs. observed distributions, quantitative information-theoretic measures (pairwise information <5%), and maximum entropy modeling showing pairwise models capture only ~57-60% of correlations. The evidence is consistent and compelling.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "9a5747a8-7bc1-4fe8-8c25-a2b4791059bd",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Third-order models are shown to capture 92.8% \u00b1 2.9% of correlations with third-order interactions contributing ~30% of total correlation structure. The quantitative improvement over pairwise models is substantial and consistent across groups. However, the analysis lacks cross-validation or held-out test sets to assess generalization.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "68588efa-6ee5-465d-83ec-a8dbde19ee37",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The synergistic information structure is well-quantified: knowing three mice locations provides 25% information about the fourth, more than double the sum of pairwise information. This directly supports the necessity of high-order interactions. The 75% individuality measure provides important context about the balance between social and individual factors.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the mathematical interpretation of model parameters as functional interactions is valid, the biological interpretation is speculative. The claim that negative interactions suggest competition (C39) is explicitly marked as speculation. The sparseness observation (C40) is descriptive but its mechanistic interpretation requires additional validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Environmental effects are demonstrated with quantitative differences between SE and CE groups (pairwise contributions 74.6% vs 61.9%, fourth-order 0% vs 6%). However, critical concerns include: (1) sample sizes per condition are not clearly stated but appear small given 17 total groups, (2) no statistical tests with p-values are reported for group comparisons, (3) confounds from housing density (4 vs 16 mice) are not addressed, (4) the developmental manipulation lacks proper controls for social experience vs. environmental complexity.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    },
+    {
+      "id": "0d4c5236-deed-4994-b340-c26358e15943",
+      "content_id": "059b586a-a601-4238-8fd5-138c58993feb",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The temporal dynamics showing progressive socialization in SE but not CE groups is an interesting observation, but the analysis treats time points as independent despite obvious temporal correlations. No statistical tests are provided for the temporal trends, and the interpretation of 'socialization' is somewhat circular given that it's defined by the same correlation measures being analyzed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:14.007962Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "793a0649-6890-4bad-80c4-a297c62528d5",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "cc56837c-a410-49fe-8841-e2167a53c926",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "6af4e28c-31d4-492d-a5ac-4e65ceedd372",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "d1527c12-4728-4f00-993b-1e662c397a87",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "e42518eb-b083-4df9-bfb7-5375985827e5",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "2827d586-0768-47a9-87cd-a7f2ce7761f2",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "d9616ae7-3b43-4bf3-81d3-e63129ce476d",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "742725ed-351a-4728-9f18-0a3c5a645256",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "871be8ca-f729-496c-8747-b9bec2749e9e",
+      "result_id": "fab31f43-74f3-42d9-8159-14d06e992e72"
+    },
+    {
+      "claim_id": "e08ecfa8-01bc-436d-9b8a-1fede12216a8",
+      "result_id": "12de8717-b4a9-491b-99fe-bc4aad94e5f0"
+    },
+    {
+      "claim_id": "35f9c176-372b-4f1b-aa5a-223a113c8e05",
+      "result_id": "12de8717-b4a9-491b-99fe-bc4aad94e5f0"
+    },
+    {
+      "claim_id": "cac0a9b3-8456-4109-a269-f6e6b76cbe08",
+      "result_id": "12de8717-b4a9-491b-99fe-bc4aad94e5f0"
+    },
+    {
+      "claim_id": "a8f3964a-2b70-4375-a297-81d35c40b6cb",
+      "result_id": "12de8717-b4a9-491b-99fe-bc4aad94e5f0"
+    },
+    {
+      "claim_id": "b90d0c1a-202d-4b55-9dc1-3e8fc2c1f6fc",
+      "result_id": "79a9ac97-f5d8-468b-be8d-315fc2500d84"
+    },
+    {
+      "claim_id": "9e99963f-b692-4f29-b0b1-83c21e104d15",
+      "result_id": "79a9ac97-f5d8-468b-be8d-315fc2500d84"
+    },
+    {
+      "claim_id": "7e872fbd-c91f-4bf0-b4d2-658015e3ed3d",
+      "result_id": "79a9ac97-f5d8-468b-be8d-315fc2500d84"
+    },
+    {
+      "claim_id": "e471fc0f-af7f-4d73-b9b1-d1bc99f5a614",
+      "result_id": "79a9ac97-f5d8-468b-be8d-315fc2500d84"
+    },
+    {
+      "claim_id": "9c4780ab-a6c5-4333-b457-0a2fcfedc04d",
+      "result_id": "79a9ac97-f5d8-468b-be8d-315fc2500d84"
+    },
+    {
+      "claim_id": "18541164-9361-4f03-9bf8-c8d114ac12ca",
+      "result_id": "79a9ac97-f5d8-468b-be8d-315fc2500d84"
+    },
+    {
+      "claim_id": "332e2930-d76b-410b-b28d-25c4282bd599",
+      "result_id": "9a5747a8-7bc1-4fe8-8c25-a2b4791059bd"
+    },
+    {
+      "claim_id": "ec4ac87e-f791-427a-8df1-7dbf99af991c",
+      "result_id": "9a5747a8-7bc1-4fe8-8c25-a2b4791059bd"
+    },
+    {
+      "claim_id": "feefdf08-4c76-45ee-8163-7ea03bafa58b",
+      "result_id": "9a5747a8-7bc1-4fe8-8c25-a2b4791059bd"
+    },
+    {
+      "claim_id": "ac5eed7c-e723-4597-88d3-7da6b1ccc2c0",
+      "result_id": "9a5747a8-7bc1-4fe8-8c25-a2b4791059bd"
+    },
+    {
+      "claim_id": "753b6c02-b2fb-448b-9dd3-b8c3857188f0",
+      "result_id": "9a5747a8-7bc1-4fe8-8c25-a2b4791059bd"
+    },
+    {
+      "claim_id": "d6d68396-e530-460c-a9f5-c662f025bd32",
+      "result_id": "68588efa-6ee5-465d-83ec-a8dbde19ee37"
+    },
+    {
+      "claim_id": "d5ba144f-a26a-439a-82c8-1478e5eaef7b",
+      "result_id": "68588efa-6ee5-465d-83ec-a8dbde19ee37"
+    },
+    {
+      "claim_id": "fe884552-7f5d-4828-bf9d-5f25c9797cd4",
+      "result_id": "68588efa-6ee5-465d-83ec-a8dbde19ee37"
+    },
+    {
+      "claim_id": "e0875d6c-0ac1-4ac0-92b7-d5a7dea2979b",
+      "result_id": "68588efa-6ee5-465d-83ec-a8dbde19ee37"
+    },
+    {
+      "claim_id": "4636693c-e426-4a4b-a419-996aad4b4329",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "3910ab83-a622-4ef7-807d-557c034286f3",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "c2aafd82-8cb8-4dc6-a87c-97eeb77a4e54",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "5f178821-689c-47f4-9bdd-a2f3eb2f2292",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "1f037e3b-0d8b-46b9-b6ed-3d25d562419c",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "889f099a-0e56-40ef-83a9-431f5e5cbf0a",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "bf4fe61c-e613-4afb-ac37-ccfd78c9d7ca",
+      "result_id": "070b3745-bdef-4db5-b1b1-e3d9e8d0fcc0"
+    },
+    {
+      "claim_id": "e002e63f-80ab-4ce6-8459-2576b0b6d73f",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "5c04fe1b-3321-49de-ad2a-c4a2b3d4caa0",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "9481ea24-6da5-4681-804c-e47281ce5896",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "75986ecc-7179-4828-956e-35536867d4cd",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "fdaa8b4b-3086-47b6-b1dd-7ae68198b256",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "064f4c6f-3461-406b-86ed-627b18c74e94",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "e5951995-26c8-4de7-b1ce-a0d6070e3c63",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "f8317a0a-1248-4e22-9762-f5d6d1ed8174",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "cd752d03-fc6f-400a-b643-cb654b4a06f5",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "bb5cb041-78dd-4672-846f-d27138f49d2c",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "f9e0cbcb-57dd-4ce1-b95d-e316ec8fc85a",
+      "result_id": "c27fa1b4-a4e3-42b5-8356-8c0e24a5b5bd"
+    },
+    {
+      "claim_id": "d1456a1d-d59b-42f9-ab2d-81929625d0ef",
+      "result_id": "0d4c5236-deed-4994-b340-c26358e15943"
+    },
+    {
+      "claim_id": "97cb56cc-33eb-4e78-8ede-8b1ad9428f37",
+      "result_id": "0d4c5236-deed-4994-b340-c26358e15943"
+    },
+    {
+      "claim_id": "8397a32e-7b70-4310-ad88-410c08af64e7",
+      "result_id": "0d4c5236-deed-4994-b340-c26358e15943"
+    }
+  ],
+  "comparisons": []
+}

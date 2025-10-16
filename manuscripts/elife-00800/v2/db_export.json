@@ -1,0 +1,2377 @@
+{
+  "submission": {
+    "id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:51:55.161602Z",
+    "updated_at": "2025-10-16T22:51:55.161602Z"
+  },
+  "content": [
+    {
+      "id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "content_type": "manuscript",
+      "content_text": "# Fluorescent sensors reporting the activity of ammonium transceptors in live cells\n\n## Authors\n\n- Roberto De Michele<sup>1</sup>\n- Cindy Ast<sup>1</sup>\n- Dominique Loqu\u00e9<sup>4</sup>\n- Cheng-Hsun Ho<sup>1</sup>\n- Susana LA Andrade<sup>5</sup>\n- Viviane Lanquar<sup>1</sup>\n- Guido Grossmann<sup>1</sup>\n- S\u00f6ren Gehne<sup>6</sup>\n- Michael U Kumke<sup>6</sup>\n- Wolf B Frommer<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Biology Carnegie Institution for Science Stanford United States\n2. Institute of Plant Genetics, Italian National Research Council (CNR-IGV) Palermo Italy\n3. NanoPolyPhotonik Fraunhofer Institute for Applied Polymer Research Potsdam-Golm Germany\n4. Feedstocks Division Joint BioEnergy Institute Emeryville United States\n5. Department of Biochemistry Institute for Organic Chemistry and Biochemistry, and BIOSS Center for Biological Signalling Studies, University of Freiburg Freiburg Germany\n6. Department of Physical Chemistry Institute of Chemistry, University of Potsdam Potsdam Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00800.001 Ammonium serves as key nitrogen source and metabolic intermediate, yet excess causes toxicity. Ammonium uptake is mediated by ammonium transporters, whose regulation is poorly understood. While transport can easily be characterized in heterologous systems, measuring transporter activity in vivo remains challenging. Here we developed a simple assay for monitoring activity in vivo by inserting circularly-permutated GFP into conformation-sensitive positions of two plant and one yeast ammonium transceptors (\u2018AmTrac\u2019 and \u2018MepTrac\u2019). Addition of ammonium to yeast cells expressing the sensors triggered concentration-dependent fluorescence intensity (FI) changes that strictly correlated with the activity of the transporter. Fluorescence-based activity sensors present a novel technology for monitoring the interaction of the transporters with their substrates, the activity of transporters and their regulation in vivo, which is particularly valuable in the context of analytes for which no radiotracers exist, as well as for cell-specific and subcellular transport processes that are otherwise difficult to track. DOI: http://dx.doi.org/10.7554/eLife.00800.001\n\n## Introduction\n\nTransport proteins play critical roles in cellular uptake and release as well as subcellular distribution of ions and metabolites. Due to their hydrophobic nature the characterization of transporters is challenging, and activity measurements typically depend on the use of radiotracers and heterologous expression systems. One of the major breakthroughs for characterizing channels has been the development of electrophysiology tools, enabling characterization of electrogenic transport in live cells (Neher and Sakmann, 1992). However, patch clamping has largely been limited to the analysis of processes at the cell membrane, or cells at the surface of sliced tissues. A new level of insight was provided by fluorescent proteins enabling us to observe cellular processes in living cells of intact tissues (Tsien, 2006). Fluorescence Resonance Energy Transfer (FRET) sensors have allowed us to monitor analyte levels and dynamics in live cells with minimal invasive methods (Okumoto et al., 2012). Particular FRET sensors can even be used to monitor biophysical processes such as membrane potential or tension between molecules in live cells, as well as the conversion of substrates of enzyme reactions by proteases and kinases. Yet to date, we have not been able to directly follow the activity of transporters and to monitor their regulation in vivo.\n\nWe rationalized that it may be possible to create transport activity sensors by monitoring structural rearrangements in a transporter with the help of environmentally sensitive genetically encoded fluorophores. Based on the pioneering work of Miyawaki et al. (1997), FRET can be used to probe conformational rearrangements and has widely been exploited to develop genetically encoded sensors for small molecules. An alternative, again developed by Tsien's lab (Baird et al., 1999), is the use of circularly permutated GFP variants as reporters for conformational rearrangements, which have been exploited to create sensors for small molecules such as calcium, zinc and maltose (Baird et al., 1999; Marvin et al., 2011). Circularly-permutated versions of GFP (cpGFP) have successfully been used to monitor structural rearrangements of calmodulin (Baird et al., 1999; Nagai et al., 2001; Nakai et al., 2001; Wang et al., 2008; Akerboom et al., 2009). cpGFP is a protein in which the \u03b2-barrel structure has been rearranged in a way that ligand-induced conformational changes can influence the chromophore environment and consequentially the fluorescent properties of a chimeric sensor. Depending on pH, GFP and its variants have two excitation maxima (\u03bbex \u223c 395 and 475 nm) (Tsien, 1998). Protein-cpGFP fusions, in which structural rearrangements affect the state of the chromophore as well as the hydrogen bonds between the chromophore and the surrounding \u03b2-barrel, can in principle be exploited to develop sensors that monitor transporter activity. Here we tested the hypothesis that ammonium transporters can effectively report transporter activity in live cells when fused to cpGFP.\n\nAmmonium transport is key to nitrogen nutrition of bacteria, fungi and plants. Although mammals are unable to assimilate ammonium into amino acids, ammonium transporters play key roles in renal ammonium secretion and male fertility (Biver et al., 2008). Transporters for ammonium are conserved in bacterial, fungal, plant and animal genomes. Ammonium transport is electrogenic and is mediated by high affinity ammonium transporters of the AMT/MEP/Rhesus protein superfamily (Marini et al., 1994; Ninnemann et al., 1994; Tremblay and Hallenbeck, 2009). The genome of the plant Arabidopsis contains six AMT paralogs, four of which (AMT1;1, 1;2, 1;3, and 1;5) are partially redundant and together essential for ammonium acquisition (Yuan et al., 2007).\n\nIn plants, ammonium acquisition is highly regulated and is subject to feedback inhibition, potentially as a means of preventing accumulation of ammonium to toxic levels (Wang et al., 1993; Kronzucker et al., 2001). Recent results show that ammonium-triggered phosphorylation of a critical threonine in the cytosolic C-terminus of AMT1;1 leads to inhibition of ammonium transport by allosteric regulation in the trimeric transporter complex (Loqu\u00e9 et al., 2007; Lanquar et al., 2009). The close homolog AMT1;3, also functions as an electrogenic high-affinity ammonium transporter involved in nitrogen uptake in Arabidopsis roots (Gazzarrini et al., 1999). AMT1;3 functions in homo- and hetero-trimeric complexes with the coexpressed AMT1;1 and is allosterically regulated (Yuan et al., 2013). AMT1;3 not only functions as a transporter, but in addition controls root architecture by a process similar to the one found for the yeast MEP2 transceptor (dual function transporter and receptor), a protein that mediates ammonium transport and regulates pseudohyphal growth (Boeckstaens et al., 2007; Lima et al., 2010). The term transceptor had been introduced by Thevelein to describe the dual function of the general amino acid permease Gap1p or the phosphate transporter Pho84p in transport and signaling (Kriel et al., 2011).\n\nMost of the progress in the ammonium transport field has been made with the help of yeast and Xenopus laevis oocytes as heterologous expression systems. By contrast, in planta studies mostly rely on the use of either stable isotopes (15N), or radiotracer analogs (14C-methylammonium). Monitoring ammonium-induced depolarization of membrane potential has successfully been deployed in plants (Wang et al., 1994), yet it can not differentiate between transport mediated by individual AMTs and non-selective cation channels. Therefore, it has not been possible to identify the networks that regulate the substrate-triggered feedback inhibition of ammonium uptake in plant roots. Thus there is a need for new tools that enable us to monitor transport activity in intact root tissues.\n\nHere we created an activity sensor by inserting cpGFP into a cytosolic loop of the Arabidopsis ammonium transporter AMT1;3. Thorough characterization demonstrates that the chimera reports processes that occur in the transport cycle, although at present it is not possible to differentiate substrate binding or steps in the transport cycle. We project that this approach is transferable to other proteins, a notion supported by the successful creation of additional sensors for the Arabidopsis paralog AMT1;2 as well as the distantly related yeast ammonium transceptor MEP2.\n\n## Results\n\n## Identification of suitable fluorophore insertion sites\n\nTo engineer a transporter that reports substrate-dependent changes in conformation, we inserted fluorescent proteins (FP) into\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig1-v2.jpg)\n\n**Figure 1.:** (A) Topological representation of AMT1;3 by HMMTOP (Tusnady and Simon, 2001). Eleven TMH are organized in a pseudo-symmetric structure (TMH I-V and TMH VI-X) with an extra terminal TMH-XI that directs the C-terminus to the cytosol. The position of the residues preceding the insertion points of FPs in L5\u20136, 7\u20138, 9\u201310 and in the C-tail are indicated. Residues D202, G460 and T464, important for the activity of the transporter, are also shown. (B) The functionality of the transporters was measured as growth of the yeast \u0394mep1,2,3 mutant transformed with AMT1;3-FP fusions and grown on solid media containing 2 mM NH4Cl or 1 mM arginine (growth control) as the sole nitrogen source for three days. Numbers indicate the position in AMT1;3 preceding the insertion site. Vector: empty vector served as the negative control. (C) Three-dimensional model of one AMT-mcpGFP chimeric protein based on the crystal structures of Af-AMT1 (2B2H) and cpGFP (3evp). One monomer is shown in cartoon and the rest of the trimeric complex is represented as a shaded surface in the background. mcpGFP (green) was inserted in position 233 of L5\u20136 of AMT1;3, connecting TMH-V and -VI (red and blue, respectively).DOI: http://dx.doi.org/10.7554/eLife.00800.003\n\n## Generation of the ammonium sensor AmTrac\n\nIn initial tests, addition of ammonium to yeast cells expressing the AMT1;3-mcpGFP fusion did not lead to detectable changes in fluorescence intensity (FI; data not shown). However, it is known that the cpGFP-based sensors for calcium and maltose are exquisitely sensitive to modifications in the linker sequences connecting to the respective binding proteins (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig2-v2.jpg)\n\n**Figure 2.:** (A) Growth of the yeast \u0394mep1,2,3 mutant transformed with fusion variants on solid media containing 2 mM NH4Cl or 1 mM arginine (growth control) as the sole nitrogen source for 3 days. Composition of linkers connecting AMT1;3 and mcpGFP are indicated. Linkers at the N- and C-termini of mcpGFP are indicated in letter code and separated by a slash. In the cases of variants 1\u20136, no linkers were inserted between the C-terminal sequence of mcpGFP and the second part of AMT1;3. (B) Screen of 24 linker variants for fluorescence intensity before addition of ammonium and fluorescence intensity change after addition of 1 mM NH4Cl (mean \u00b1 SE; n = 3). Variant 16 (in red), carrying LE/FN as linkers, named AmTrac, showed the highest change in fluorescence intensity. (C) Schematic representation of AmTrac. Linkers between AMT1;3 and mcpGFP are indicated in yellow. (D) Protein sequence of AmTrac. Residues in \u2018yellow\u2019 constitute synthetic linker segments. Residues in \u2018green\u2019 correspond to the mcpGFP moiety. Numbers indicate amino acid position in AMT1;3.DOI: http://dx.doi.org/10.7554/eLife.00800.004\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig3-v2.jpg)\n\n**Figure 3.:** (A) Amino acid sequence of the L5\u20136 region of AMT1;3. Residues in \u2018blue\u2019 correspond to TMH 5 (left) and TMH 6 (right). (B) Influence of the insertion position of mcpGFP into L5 on transport activity and fluorescence response. Left panels show the growth assay of the yeast \u0394mep1,2,3 strain transformed with insertion variants on solid media containing 2 mM NH4Cl or 1 mM arginine (growth control) as the sole nitrogen source for 3 days. Numbers indicate the insertion site within AMT1;3 (residue preceding the point of insertion of mcpGFP). Right graph shows the fluorescence response of the variants to addition of the indicated concentrations of NH4Cl. Data were normalized to the water-treated control (0; mean \u00b1 SE; n = 2). (C) Growth and response of AmTrac variants with deletions in L5\u20136. Growth was analyzed as described in Figure 2A. Numbers in the left column indicate the position of the insertion in AMT1;3; two numbers indicate residues preceding and following the mcpGFP insertion. Right column named \u201cResponse\u201d indicates whether the corresponding variant responded to addition of 1 mM NH4Cl with a fluorescence change. The original AmTrac corresponds to insertion after aa 233.DOI: http://dx.doi.org/10.7554/eLife.00800.005\n\n## Kinetics, selectivity and reversibility of AmTrac\n\nInitial experiments showed that the FI response of AmTrac was proportional to the ammonium concentration added to the yeast cells (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig4-v2.jpg)\n\n**Figure 4.:** (A) Currents recorded in single oocytes injected with water, AMT1;3, AmTrac, or AmTrac-LS, and perfused with NH4Cl at the indicated concentrations. (B) Kinetics of NH4+-induced currents of AMT1;3, AmTrac, and AmTrac-LS. The Kms were 55 \u00b1 15 \u03bcM, 51 \u00b1 24 \u03bcM, and 57 \u00b1 19 \u03bcM, respectively. The data were fitted to Michaelis\u2013Menten kinetics. Oocytes were clamped at \u2212120 mV (independent data from three different oocytes recorded from three different frogs). (C) Titration of the fluorescence response of AmTrac in yeast (blue, left y-axis) and of ammonium uptake of AMT1;3 in plants (red, right y-axis; Yuan et al., 2007). Data are normalized to water-treated controls (0) (mean \u00b1 SE; n = 3). (D) Response of a single yeast cell expressing AmTrac to pulses of NH4Cl at the indicated concentrations (blue frames). (E) Substrate specificity. Yeast cells expressing the sensor were treated with the indicated salts at 1 mM concentration. Data are normalized to water-treated control (0) (mean \u00b1 SE; n = 3). Only data for the ammonium treatments were significantly different from control (SNK test: *p<0.01).DOI: http://dx.doi.org/10.7554/eLife.00800.006\n\nThe saturation kinetics observed for the FI response can be interpreted as the dose-dependent conversion of an increasing number of transporters into a new state, for example from inactive to active or unbound to bound. We would assume that this process is reversible, so that AmTrac returns to the inactive or unbound state when ammonium is removed. To test the reversibility of the sensor response directly, we recorded the FI of single cells trapped in a microfluidic device and exposed to ammonium pulses. AmTrac responses were detectable in single cells, were concentration-dependent, and were readily reversible, demonstrating that AmTrac can be used in vivo to quantify ammonium transport activity and to observe kinetics of the chimeric transporter in response to substrate availability (Figure 4D).\n\nThe unique selectivity of AMT1 for ammonium over potassium was retained for FI responses (Figure 4E). Also other cations did not induce a change in FI. NH4NO3 and (NH4)2SO4 elicited the same FI change as NH4Cl, demonstrating that chloride does not affect the FI response. Furthermore, addition of equimolar concentrations of sodium, potassium, calcium, magnesium, manganese or zinc did not trigger a change in FI (Figure 4E). Together these data strongly support the hypothesis that AmTrac measures ammonium concentrations and/or reports conformational state changes of the transporter.\n\n## Development of improved AmTrac variants\n\nThe FI of AmTrac was relatively low, limiting the dynamic range and the signal-to-noise ratio (SNR). To create sensors with enhanced SNR, we randomly substituted residues in the two-amino acid linker directly preceding mcpGFP. We identified AmTrac versions that maintained transport activity and showed high FI and a large ammonium-induced FI response. Interestingly, the majority of the brightest variants carried a Ser residue instead of a Glu in the position immediately preceding the mcpGFP insertion (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig5-v2.jpg)\n\n**Figure 5.:** (A) Screen for improved sensor variants. Fluorescence intensity and fluorescence response of \u223c350 random variants of the C-terminal linker of mcpGFP to addition of 1 mM NH4Cl. The brightest and most responsive variants (in red) were sequenced and composition of the linker (LE in AmTrac) is reported as letter code. Note that most variants carry a Ser residue in the last position of the linker. (B) Fluorescence intensity and fluorescence response after addition of 1 mM NH4Cl, normalized to values of AmTrac (100%) of yeast expressing the best variants identified in (A) (mean \u00b1 SE; n = 3). (C) Steady-state fluorescence spectra of AmTrac-LS recorded at \u03bbexc 485 nm and \u03bbem 514 nm, respectively, with addition of NH4Cl at the indicated concentrations, or water (as control). Fluorescence intensities were normalized to the major peak of the water control (=1). (D) Titration of the fluorescent response of AmTrac (blue line) and AmTrac-IS (red line). Data are normalized to water-treated controls (0; mean \u00b1 SE: n = 3). AmTrac kinetics shown here for comparison are the same as Figure 4C.(E) Single cell response of AmTrac-LS. Individual cells trapped in a microfluidic plate were perfused with 50 mM MES buffer pH 6.0, or a pulse of 50 \u00b5M NH4Cl in buffer (blue box). Data were normalized to the initial value (mean \u00b1 SE; n =3).DOI: http://dx.doi.org/10.7554/eLife.00800.007\n\n## Strict correlation between transport activity and fluorescence output\n\nTo further corroborate the correlation between transport activity and ammonium-induced FI change, mutations (D202N, G460D, T464D) known to inactivate AMT1 transporters were introduced into AmTrac (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig6-v2.jpg)\n\n**Figure 6.:** (A) Confocal z-section of yeast expressing AmTrac or its inactive variants carrying mutations D202N, G460D or T464D. Bar 10 \u00b5m. (B) Growth complementation of the \u0394mep1,2,3 or wt yeast expressing AmTrac or its inactive variants on solid media containing 2 mM NH4Cl or 1 mM arginine (growth control) as sole nitrogen source for 3 days. Endogenous MEPs in wt strain are not affected by expression of mutant variants. (C) Fluorescence response of \u0394mep1,2,3 or (D) wt yeast expressing AmTrac or the transport-inactive variants D202N, G460D or T464D. Data were normalized to water-treated controls (0) (mean \u00b1 SE; n = 3). Only yeast cells expressing AmTrac showed significantly different responses (SNK test: p<0.01). (E) Response of AmTrac to addition of arginine. Fluorescence response of \u0394mep1,2,3 yeast cells expressing AmTrac treated with the indicated concentrations of arginine or 1 mM NH4Cl. Data were normalized to water-treated controls (0) (mean \u00b1 SE; n = 3). Only the ammonium treatment was significantly different from control (SNK test: *p<0.01). Note that arginine addition to yeast cells has been shown to lead to increased cytosolic levels of ammonium (Marini et al., 1994).DOI: http://dx.doi.org/10.7554/eLife.00800.008\n\n## Reconstitution of output by restoration of transport in suppressor mutants\n\nThe allosteric trans-activation mechanism used by AMTs for feedback inhibition at elevated ammonium levels (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig7-v2.jpg)\n\n**Figure 7.:** (A) Growth of the yeast \u0394mep1,2,3 strain transformed with suppressor mutants and grown on solid media containing the indicated concentrations of NH4Cl, (NH4)2SO4 (as anion control) or 1 mM arginine (growth control) as the sole nitrogen source for 3 days. Note that yeast expressing AmTrac-T464D-A141E grew poorly at high concentrations of ammonium, suggesting high capacity transport activity leading to ammonium toxicity. (B) Lateral view and (C) cytoplasmic side view of AfAmt1 according to the crystal structure (Andrade et al., 2005). The corresponding residues in AfAmt1 that suppress the T464D mutation in AmTrac are indicated by spheres. TMH-V is shown as red helix, TMH-VI in blue. The connecting L5\u20136 is labeled. Note that residues corresponding to cis-suppressing mutations reside in the internal pore region. (D) Sequence alignment of AMT1;3 from Arabidopsis (At-Amt1;3) and Af-Amt1 from A. fulgidus. The residues belonging to TMH domains of the two pseudo-symmetric halves of AfAMT1 are shown in red and blue.C-terminal TMH-XI of AfAMT1 is shown in grey, with white font. Predicted TMHs of AMT1;3 are highlighted in grey, with black font. The corresponding residues identified in the suppressor screen of AmTrac-T464D are indicated in both sequences (yellow). (E) Correlation between transport efficiency (growth in 2 mM NH4Cl) and fluorescence change after addition of 1 mM NH4Cl of the suppressor mutants. Data are normalized to values obtained for AmTrac (=100) (mean \u00b1 SD; n = 3). (F) Fluorescence response of suppressors to addition of the indicated concentrations of NH4Cl. Data were normalized to water-treated controls (0) (mean \u00b1 SE; n = 3).DOI: http://dx.doi.org/10.7554/eLife.00800.009\n\n## Engineering of the low affinity sensor AmTrac-100\u00b5\n\nInterestingly, one of the suppressor mutants, AmTrac-T464D-A141E, mediated hypersensitivity to elevated ammonium concentrations (\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig8-v2.jpg)\n\n**Figure 8.:** (A) Kinetics of NH4+-induced currents of AmTrac-100. The Km was 3.4 \u00b1 0.56 mM. The data were fitted to Michaelis\u2013Menten kinetics. Oocytes were clamped at \u2212120 mV (independent data from three different oocytes recorded from three different frogs). (B) Titration of the fluorescent response of AmTrac (blue line) and AmTrac-100\u00b5 (red line). Data are normalized to water-treated controls (0; mean \u00b1 SE: n = 3).AmTrac kinetics shown here for comparison are the same as Figure 4C and Figure 5D.DOI: http://dx.doi.org/10.7554/eLife.00800.011\n\n## Single step construction of additional sensors: AmTrac1;2 and MepTrac\n\nTo test whether the strategy of creating activity state sensors by mcpFP insertion is generalizable, we inserted mcpGFP into the central loop of other ammonium transporters; that is, the paralog AMT1;2 from Arabidopsis and the transceptor MEP2 of\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00800/elife-00800-fig9-v2.jpg)\n\n**Figure 9.:** (A) Growth complementation of \u0394mep1,2,3 yeast expressing MEP2, MepTrac, their H194E mutants or AmTrac1;2 on solid media containing 2 mM NH4Cl or 1 mM arginine (growth control) as sole nitrogen source for 3 days. (B) Fluorescence response of \u0394mep1,2,3 yeast expressing AmTrac1;2, MepTrac or MepTrac-H194E to NH4Cl at the indicated concentrations at pH 4 or 6. AmTrac1;2 was tested at pH 6. Data are normalized to water-treated control (0) (mean \u00b1 SE; n = 3; SNK test: *p<0.01).DOI: http://dx.doi.org/10.7554/eLife.00800.012\n\n## Discussion\n\nGenetically encoded fluorescent biosensors are powerful tools for characterizing in vivo processes involved in cell signaling and physiology. They offer new tools for genetic screens, for example, for identifying regulatory networks, or they can be used for screening chemical libraries to identify new drugs (Bermejo et al., 2013). The existing tools, that is, FRET sensors for small molecules allow us to monitor steady state levels and dynamic changes of analytes such as ions, signaling compounds, metabolites and substrates of proteases (Okumoto et al., 2012). Combined with information on the cellular and subcellular localization of receptors, enzymes and transporters, they can be used to obtain a first picture of the signaling and metabolic networks. However, tools for measuring the activity of transporters in vivo have been limited to electrophysiology, which can not differentiate between transporter isoforms, and is difficult to use for measuring transporter activity in cells in live tissues or even subcellular compartments. Here we developed a prototype for such activity sensors using the important class of ammonium transporters conserved from archaebacteria to higher plants and metazoa, including the human Rhesus factors. We made use of the effect of conformational rearrangements in AMTs/MEPs transceptors on the fluorescence emitted by circularly permutated mcpGFPs that have been inserted into an intracellular loop of the transporters. These fluorescence-based sensors report the activity of the transporter in vivo and can be used to quantify the activity of a specific transporter in vivo. Information on the activity of transporters is relevant for determining the regulation of individual isoforms in live cells, to identify and characterize regulators, to monitor transport in cells otherwise inaccessible to transport measurements, and to characterize subcellular transport processes in living tissues. At the same time these novel sensors may help to record structural rearrangements that occur when transporter bind their ligands or which occur during the transport cycle. We show here that, in contrast to the interpretation of results from crystallization studies (Khademi et al., 2004), AMTs and MEPs both change conformation during transport, and thus most probably do not function as \u2018passive gas channels\u2019. The nature of the conformational changes, which here are monitored in ensembles, will require crystallization of the transporter in different states, as recently achieved for a variety of transporters (Forrest and Rudnick, 2009; Shimamura et al., 2010; Jiang et al., 2012; Krishnamurthy and Gouaux, 2012).\n\n## AmTrac provides an activity proxy\n\nTo create sensors that report substrate binding, a circularly-permutated form of GFP (Tian et al., 2009) was inserted into the center of the cytosolic loop in AMT1;3 (and AMT1;2 and MEP2) at the pseudo-symmetry axis between the two antiparallel repeats of the transporter. The characteristics of the AmTrac fluorescence response, namely (i) the indistinguishable transport and fluorescence response kinetics, (ii) the reversibility, (iii) the tight link between transport activity for the FI response, (iv) the correlated shifts in affinity for ammonium transport and FI response, and (v) the restoration of the FI response by reconstitution of transport activity in suppressor mutants, strongly indicate that AmTrac sensors measure processes that occur during the transport cycle, or are intimately and quantitatively connected to transport activity. Since binding of the substrate to the transporter is part of the transport cycle, our data do not exclude the possibility that the sensors report extracellular binding of ammonium and therefore measure extracellular ammonium levels rather than activity.\n\n## The role of substrate binding and the transport cycle for signaling through transceptors\n\nAMTs have been suggested to function as both transporters and receptors for ammonium (Lima et al., 2010). Other transporters with a dual function as transporters and signaling proteins include UhpT from E. coli (Schw\u00f6ppe et al., 2003), Pho84p and GAP1p from Saccharomyces (Thevelein and Voordeckers, 2009) and Chl1 from Arabidopsis (Ho et al., 2009). The mechanism by which signaling is transmitted is unclear, specifically how substrate binding or conformational rearrangements during the transport cycle are necessary for triggering the receptor activity. Recent work by the Thevelein group has shed some light on the relative role of binding vs transport in this process. Some transporter-like receptors, such as the glucose transporter-like SNF3p and RGT1p from S. cerevisiae, appear to be unable to transport, suggesting that binding is sufficient for triggering a conformational rearrangement that is detected by intracellular signaling proteins (Thevelein and Voordeckers, 2009). The yeast Pho84 phosphate transceptor functions both in phosphate transport and mediates activation of the protein kinase A pathway. The finding that phosphate analogs that do not appear to be transported retain signaling activity is consistent with the hypothesis that a complete transport cycle is not required for signaling. However, further analyses suggested that ligand binding is insufficient for signaling, therefore the authors concluded the receptor activity is triggered by specific conformational rearrangements that occur during a specific phase of the transport cycle (Popova et al., 2010). Mutations in the presumed proton-binding site severely reduced transport but not signaling, demonstrating that transport and signaling activities are separable (Samyn et al., 2012). Combined analysis of the action of amino acid analogs and mutagenesis of the putative binding site of the amino acid transceptor GAP1 on transport and signaling have indicated that, similar as in PHO84, signaling requires a ligand-induced conformational change that corresponds to a step in the transport cycle but does not appear to require a the full cycle (Van Zeebroeck et al., 2009). It is therefore conceivable that the fluorescent change observed in the fluorescent ammonium sensors presented here is due to either (i) ammonium binding, (ii) a specific set of steps in the transport cycle, or (iii) the full transport cycle of the transporter.\n\n## Insights into the transport mechanism of AMTs\n\nCrystal structures of AMTs from Escherichia coli (Khademi et al., 2004; Zheng et al., 2004) and Archaeoglobus fulgidus (Andrade et al., 2005) did not reveal obvious conformational differences when generated in the presence or absence of ammonium; observations that led to the proposition that AMTs are rigid gas channels (Khademi et al., 2004). Electrophysiological studies challenged the hypothesis that AMTs transport the uncharged form ammonia by demonstrating that plant AMTs are electrogenic and show minimal or no ammonia conductivity (Mayer et al., 2006). The transport of the charged form of ammonium is further supported by the finding that mutations in the pore release the transporter from a gating control, leading to massively increased transport capacity and an up to 100-fold increase in the Km (Figure 8A; Loqu\u00e9 et al., 2009).\n\nMoreover, we provided evidence for the existence of open and closed states by demonstrating an allosteric feedback inhibition of transport activity by phosphorylation of residues in the trans-activating cytosolic C-terminus (Loqu\u00e9 et al., 2007; Lanquar et al., 2009). The fluorescence response of AmTrac variants and MepTrac supports the hypothesis that AMT1;3, AMT1;2 and MEP2 undergo conformational changes during transport. Our results are consistent with the hypothesis that TMH-V and -VI of AMT move relative to each other as a result of ammonium binding or during ammonium translocation, thus affecting the conformation of L5\u20136 and thereby gating the inserted mcpGFP.\n\n## Potential to transfer the concept to other transporters, receptors, and enzymes\n\ncpGFP has successfully been deployed to monitor conformational changes in a variety of proteins, for example, calmodulin (Baird et al., 1999; Nagai et al., 2001, 2004; Nakai et al., 2001), metal ion binding domains (Baird et al., 1999; Mizuno et al., 2007), a periplasmic sugar binding protein (Marvin et al., 2011), PKG isoforms for measuring cGMP (Nausch et al., 2008), and a voltage sensing domain of a protein phosphatase (Ci-VSP) (Gautam et al., 2009). While none of the sensors measures activity, they report ensemble changes in conformational states of the respective proteins. Here we demonstrate that insertion of cpGFP can be more widely used to monitor activity states of proteins, specifically ammonium transporters.\n\nInterestingly, the pseudo-symmetry of AMTs with an inverted repeat of a five TMH containing domain is comparable to that found in the LeuT transporter (Krishnamurthy and Gouaux, 2012). LeuT carries a substrate-binding site at the interface of the two repeats and undergoes a transport cycle for which multiple states have been identified (Forrest and Rudnick, 2009; Rudnick, 2011). Similarly, the transport pore of the AMTs is located between the two pseudo-symmetric halves, with TMH-V and -VI (connected by L5\u20136) carrying key residues for ammonium translocation. Our data are consistent with the occurrence of structural rearrangements during transport; crystal structures for different states will be required to determine the conformational state during transport.\n\n## Conclusion\n\nIn summary, we developed an in vivo reporter of activity states for a set of ammonium transporters. The combination of two ammonium transport activity sensors from different organisms will be useful for dissecting endogenous control mechanisms, because heterologous proteins are not expected to be subject to the same regulatory control and can thus serve as references. As a next step, we will deploy AmTrac and MepTrac in both Arabidopsis roots and in yeast to study their regulation in vivo and to identify regulators. The measurement of flux through a transporter by reporting state changes, as shown here, might be applicable to other transporters or enzymes for monitoring in vivo fluxes, for example, in the context of neurotransmission. Such in vivo flux analyses will aid in understanding the mode of action of proteins and may serve as tools for drug discovery.\n\n## Materials and methods\n\n## DNA constructs\n\nAll transporter and sensor constructs were inserted in the yeast expression vector pDRf1-GW, containing the f1 replication origin, GATEWAY cassette, PMA1 promoter fragment, ADH terminator, and the URA3 cassette for selection in yeast (Loqu\u00e9 et al., 2007). The 1494 bp ORF of AMT1;3 from Arabidopsis (At3g24300) was used as base for AmTrac construction.\n\nThe XbaI restriction site (tctaga) was inserted in different positions of AMT1;3 (after amino acids 233, 312, 364 and 448) using Kunkel mutagenesis (Kunkel et al., 1991).\n\nmcpGFP was generated by amplifying the domains of EGFP corresponding to amino acids 150\u2013239 and 1\u2013144 with the primer pairs EGFP-150-for/EGFP-239-rev and EGFP-1-for/EGFP-144-rev, respectively (see Supplementary file 1).\n\nThe two amplified fragments were gel-purified by a commercial kit (Machery-Nagel, D\u00fcren, Germany), digested by AgeI (New England Biolabs, Ipswich, MA) and ligated by T4 DNA ligase (New England Biolabs). The resulting cpGFP, where the domains 150\u2013239 and 1\u2013144 were connected by the linker coding GGTGGS, was cloned into a pGEM-Teasy (Promega, Madison, WI). The additional internal mutations M154K, V164A, S176G, D181Y, T204V, A207K, V190I (positions referring to eGFP sequence), which had been shown to improve stability of cpGFP (Akerboom et al., 2009; Tian et al., 2009), were introduced by Kunkel mutagenesis (Kunkel et al., 1991) to generate mcpGFP. Finally, mcpGFP was amplified with the primers cpGFP-for and cpGFP-rev (Supplementary file 1). Similarly, mTFP and Venus were amplified with primers mTFP-for and mTFP-rev, and Venus-for Venus-rev, respectively (Supplementary file 1). The purified mcpGFP-, mTFP- and Venus-encoding fragments were digested by XbaI (New England Biolabs) and ligated into XbaI digested pDRf1-GW containing AMT1;3 versions that harbor the sequence corresponding to the XbaI restriction site in different cytosolic loops, to generate the fusion constructs AMT1;3-mcpGFP, AMT1;3-TFP and AMT1;3-Venus in positions 233, 312, 364 and 448 (Figure 1B).\n\nTo vary the linker regions between mcpGFP and AMT1;3 in position 233 (Figure 2A), we took advantage of homologous recombination in yeast between two DNA fragments sharing sequence homology. We co-transformed yeast with the pDR-AMT1;3 opened at position 233 by XbaI digestion, and the mcpGFP fragments amplified by PCR with the primer pair cpGFP-hom-for/rev containing the variable sequence encoding the linkers (Supplementary file 1). The amplification products contained mcpGFP flanked by the variable linker sequences and about 30 bp homologous to the region around the insertion point 233 of AMT1;3. The transformed yeast contained the pDR-AMT-mcpGFP vectors resulting from insertion of the \u223c800 bp mcpGFPs with linkers into the vector backbone, as confirmed by DNA sequencing.\n\nSimilarly, we used homologous recombination to generate random variants of the linker preceding mcpGFP (Figure 5A). For this case, mcpGFP was amplified with the primer pairs cGFP-hom-for-deg and cpGFP-hom-rev-FN (Supplementary file 1).\n\nHomologous recombination was also used to insert mcpGFP in different positions along L5\u20136 (Figure 3B) and to generate deletions in the loop (Figure 3C). In this case, the 30-bp-long regions of the primers that overlapped the AMT1;3 sequence flanked the different insertion points (228\u2013236) and contained the appropriate deletions.\n\nPoint mutations for inactivation of AMT1;3 and AmTrac were generated by Kunkel mutagenesis (D202N, G460D, T464D; Figure 6).\n\nMepTrac was generated by overlapping PCR. The 1500 bp S. cerevisiae MEP2 cDNA was amplified in two separate halves (corresponding to amino acids 1\u2013217 and 218\u2013499) with the primers attB1-MEP2-for and MEP2-217-rev, and MEP2-218-for and attB2-MEP2-rev, respectively (see Supplementary file 1). Primers contained the MEP2-specific sequences plus the Gateway attB sites for subsequent BP cloning. A third fragment containing the mcpGFP with the linkers coding for the amino acids LS and FN (preceding and following the mcpGFP, respectively) was generated by amplifying the mcpGFP from the pDR-Amtrac-LS template with the primers cpGFP-LS-MEP2-for and cpGFP-LS-MEP2-rev (Supplementary file 1). The primers contained a region specific to mcpGFP, a sequence coding for the linkers and about 30 bp homologous to the region around the insertion point 217 of MEP2. The three fragments were gel-purified by a commercial kit (Machery-Nagel) and 1 \u00b5l of each fragment was added to a PCR reaction tube (Phusion Taq; Finnzymes Thermo Fisher, Waltham, MA) containing 200 \u00b5M dNTPs and amplified for 10 cycles without addition of any primer. 1 \u00b5l of this reaction was further amplified for additional 30 cycles in a PCR reaction tube (Phusion Taq; Finnzymes) containing 200 \u00b5M dNTPs and the primers attB1-MEP2-for and attB2-MEP2-rev. The amplified fragment was gel-purified by a commercial kit (Machery-Nagel) and cloned into a pDON221 vector by Gateway BP reaction (Invitrogen Life Technology, Paisley, United Kingdom), following manufacturer\u2019s instructions. The resulting pENTRY-MepTrac construct was introduced into TOP10 competent cells (Invitrogen). The yeast vector harboring MepTrac was then created by Gateway LR reaction between pENTRY-MepTrac and pDRf1-GW, following manufacturer\u2019s instructions. Sequence of Meptrac in the resulting pDR-MepTrac was verified by sequencing. MepTrac-H194E was generated by single-point mutagenesis of MepTrac by a commercial kit (QuickChange; Stratagene Agilent, Santa Clara, CA).\n\nAmTrac1;2 was generated by overlapping PCR by the same strategy used for MepTrac. The cassette of mcpGFP with LS/FN linkers was inserted into the A. thaliana AMT1;2 cDNA (1545 bp, At1g64780) after the codon for the amino acid R242, in the middle of predicted loop5\u20136. Primers are listed in Supplementary file 1.\n\nFor functional assays in Xenopus oocytes, the cDNAs of AMT1;3, AmTrac, AmTrac-LS, and AmTrac-100\u00b5 were cloned into the oocyte expression vector pOO2-GW (Loqu\u00e9 et al., 2009).\n\n## Yeast culture\n\nYeast strains used in this study were 31019b [mep1\u0394 mep2\u0394::LEU2 mep3\u0394::KanMX2 ura3], a strain in which all three endogenous MEP ammonium transporter genes had been deleted, and its parental strain 23344c [ura3], considered here as wt (Marini et al., 1997). Yeast was transformed using the lithium acetate method (Gietz et al., 1992) and selected on solid YNB (minimal yeast medium without amino acids and without ammonium; Difco BD, Franklin Lakes, NJ) supplemented with 3% glucose and 1 mM arginine. Single colonies were inoculated in 5 ml liquid YNB supplemented with 3% glucose and 0.1% proline under agitation (230 rpm) at 30\u00b0C until OD600nm=0.8. The liquid cultures were diluted 10\u22121, 10\u22122, 10\u22123, 10\u22124, 10\u22125 and 10\u22126 in water and 5 \u00b5l of each dilution was spotted on solid YNB medium buffered with 50 mM MES/Tris, pH 5.2 and supplemented with 3% glucose and either NH4Cl, (NH4)2SO4 or 1 mM arginine as the sole nitrogen source. After 3 days of incubation at 30\u00b0C, cell growth was documented by flatbed scanning the plate at 300 dpi in grayscale mode. For quantification of yeast growth (Figure 7E), the pixel intensity of each spot (here 10\u22122 dilution) were quantified using ImageJ software, and normalized to AmTrac spot intensity (100%). Quantification of spot intensity of 10\u22121 and 10\u22123 dilutions gave similar results (not shown).\n\n## Fluorimetric analyses\n\nFluorimetric analyses are described in detail at Bio-protocol (Ast et al., 2015). Yeast cultures were washed twice in 50 mM MES buffer, pH 6.0, and resuspended to OD600nm=0.5 in MES buffer supplemented with 5% glycerol to delay cell sedimentation. For MepTrac and MepTrac-H194E measurements, cells were washed twice in purified water and resuspended in 25 mM sodium citrate buffer, pH 4.0 or 6.0, supplemented with 5% glycerol. Fluorescence was measured by a fluorescence plate reader (Safire; Tecan, M\u00e4nnedorf, Germany), in bottom reading mode using a 7.5 nm bandwidth for both excitation and emission (Bermejo et al., 2010, 2011). To measure fluorescence response to substrate addition, 50 \u00b5l of substrate (dissolved in water as 500% stock solution) were added to 200 \u00b5l of cells in a 96-well plate (Greiner, Monroe, NC). Fluorescence was measured as emission at \u03bbem 513 nm using excitation at \u03bbexc 488 nm. Response data are presented as (Fwater \u2212 Ftreatment)/Ftreatment.\n\n## Photophysical characterization\n\nSteady-state emission measurements were performed using a Fluoromax-P fluorescence spectrometer (Horiba Jobin Yvon, Kyoto, Japan) in 3.5-ml silica cuvettes (Hellma Analytics, M\u00fcllheim, Germany). 2 ml liquid yeast cultures were supplemented with 0.5 ml NH4Cl (10 mM, 1 mM, 100 \u00b5M or 10 \u00b5M) or water as control. The samples were allowed to incubate for 20 min. The excitation and emission spectra were recorded at \u03bbem 514 nm and \u03bbexc 485 nm, respectively, with a step size of 1 nm and five repeats were taken for averaging. Untransformed yeast cells served as blank.\n\n## Fluorescence microscopy\n\nConfocal sections of yeast cells expressing the sensors (Figure 6A) were acquired on an inverted confocal laser scanning microscope (SP5; Leica, Wetzlar, Germany). To record fluorescence intensities in single cells over time, yeast cells were trapped as a single cell layer in a microfluidic perfusion system (Y04C plate; Onyx, Cellasic, Hayward, CA) and perfused with either 50 mM MES buffer, pH 6.0, or buffer supplemented with NH4Cl (Bermejo et al., 2010, 2011). Cells were imaged on a spinning disk confocal microscope (Yokogawa CSU-X1, Mitaka, Japan; Leica DMI6000) equipped with a motorized stage (ASI). Fluorescence was excited by a solid state laser at 488 nm; emission was detected using a 525/50 nm filter set (Semrock, Rochester, NY) and an electron multiplying charge coupled device (EMCCD) camera (Evolve; Photometrics, Tucson, AZ). Measurements were taken every 2 min, with 100 ms exposure time using Slidebook 5.0 image acquisition software (Intelligent Imaging Innovations, Denver, CO). To account for lateral shift during imaging, the image stacks were post-registered using the StackReg plugin for ImageJ (Thevenaz et al., 1998). Fluorescence pixel intensity was quantified using Fiji software; single cells were selected and analyzed with the help of the ROI manager tool.\n\n## Functional expression of AMT1;3 and AmTracs in Xenopus oocytes\n\nFor in vitro transcription, pOO2-AMT1;3 and AmTracs were linearized with MluI. Capped cRNA was transcribed in vitro by SP6 RNA polymerase using mMESSAGE mMACHINE kits (Ambion, Austin, TX). Xenopus laevis oocytes were obtained by surgery, manually dissected, and defolliculated with collagenase (Sigma, St. Louis, MO). The oocytes were injected by Roboinjector (Multi Channel Systems, Reutlingen, Germany; (Pehl et al., 2004; Leisgen et al., 2007)) with distilled water (50 nl as control), AMT1;3 cRNA (50 ng in 50 nl), AmTrac cRNA (50 ng in 50 nl), AmTrac-LS cRNA (50 ng in 50 nl), or AmTrac-100\u00b5 cRNA (50 ng in 50 nl). Cells were kept at 16\u00b0C in ND96 medium containing 96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, and 5 mM HEPES, pH 7.4, containing gentamycin (50 \u03bcg/\u03bcl).\n\n## Electrophysiological measurements\n\nMeasurements were made in a solution as previously described (Loqu\u00e9 et al., 2009). Oocytes were voltage-clamped at \u2212120 mV and measured by two-electrode voltage-clamp (TEVC) Roboocyte system (Multi Channel Systems) (Pehl et al., 2004; Leisgen et al., 2007).\n\n## Statistical analyses\n\nAll experiments were performed in triplicate, unless specified otherwise. Reported values represent mean and standard deviation. The effects of treatments on the fluorescence response were compared using analysis of variance (ANOVA): the factors (sample, treatment) were treated as fixed factors. Prior to analyses, homogeneity of the variances was tested by Cochran\u2019s test. Whenever the ANOVA revealed significant differences among treatments, post hoc comparisons were performed using the SNK test. ANOVAs were performed using the GMAV5 software package (University of Sydney, Australia).\n",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00800.014](https://doi.org/10.7554/eLife.00800.014)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFluorescent sensors for activity states of ammonium transceptors in live cells\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, Detlef Weigel, a Reviewing editor, and 2 reviewers.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Richard Aldrich (Reviewing editor), and Christopher Miller and Jonathan Javitch (peer reviewers).\n\nThe Reviewing editor and the two reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript describes the development, refinement, and optimization of a set of GFP-based fluorescent reporters for a transport-active state of an AMT-family ammonium transporter from Arabidopsis. The experiments convincingly show that the fluorescent intensity of these reporters \u2013 circularly permuted GFP constructs fused to AMT1;3 \u2013 changes according to the level of extracellular NH4+ in the 0.1 mM range, and that this signal nicely tracks the NH4+ transport activity as measured directly by voltage-clamp methods in oocytes heterologously expressing the transporter. Thus, the authors argue, we now have a convenient, quantitative reporter for AMT transport activity that may be used in live-cell imaging. Furthermore, they point out, NH4+ transport is generally inaccessible to direct measurement, since there is no radioactive isotope or other standard means of following uptake. Since NH4+ is a key substrate in plant physiology, these reporters represent an important technical advance. Despite the fact that the reviewers are not convinced that the sensors report transport as opposed to binding, they feel that the approach and the ability to report NH4+ concentration represent an important advance. The following changes will be necessary for acceptance:\n\nThe paper must clearly state and explain that the sensors report transport activity or ammonium binding (or both).\n\nThe major concern is the lack of discussion or discrimination of the possibility that the sensor was registering ammonium binding and not ammonium transport per se. Many of the features used to argue that the fluorescence intensity change requires transport do not seem to differentiate ammonium binding and transport \u2013 a concentration dependence and reversibility, for example.\n\nThe work is convincing, satisfying, and carefully done. While we are convinced that these reporters can be used to track extracellular NH4+ concentration seen by AMT transporters in these plant cell membranes, we are not at all convinced that the signal reports transport activity, which the authors repeatedly conflate with substrate binding. On the other hand, they may be correct in equating the two for the following reason. AMT 1;3 is thought to act in a dual-function manner \u2013 as a transporter for NH4+, but also as a signaling protein for extracellular NH4+. It has therefore been dubbed a \u201ctransceptor\u201d, an evocative term familiar to plant aficionados but not to the general reader. The protein, in its \u201creceptor\u201d mode, is therefore thought to undergo a conformational change upon NH4+ binding, leading to signal transduction; this is the conformational change the reporters are presumably reporting. But this need not be equivalent to transmembrane movement of substrate, which necessarily involves a steady-state cycling of the protein through multiple conformations (inward-facing, empty \u2013 inward-facing, substrate bound, outward-facing, substrate bound, inward occluded, etc.). In that case, the reporter would be reporting a kind of average of these multiple states, not of the turnover itself, and certainly would carry no information about the rate of substrate turnover.\n\nThe authors write:\n\n\u201cTogether these data strongly support the hypothesis that AmTrac measures ammonium concentrations and/or reports conformational state changes of the transporter.\u201d\n\nThis is the one place where the authors seem to entertain the possibility of binding (ammonium concentrations on the outside), but the rest of the text assumes transport as the explanation. Perhaps the suppressor screen experiments argue for actual transport, but this would require more information on binding and how this might be differentiated in the mutants. This should be discussed. If the authors have data or can argue clearly for transport, the case should be made. Otherwise this needs to be discussed in the context of binding or transport. This seems particularly important since the change in GFP that is proposed to account for the change in fluorescence intensity seems to be a protonation change and not necessarily a conformational change (although of course a conformational change might be present).\n\nThe authors also make an effort to glean some mechanistic insight, but the inference that the channels are not passive and must change conformation requires the assumption that only a conformational change could underlie the intensity change, when in fact some sort of change upon binding might lead to a change in protonation without much of a conformational change.\n\nThese concerns are not seen as a deficiency of the reporters, which may be quite valuable in studies of ammonium handling in these plants. But the authors have failed to spell out the logic here, beyond using the word \u201ctransceptor\u201d in the Introduction, and so leave the reader confused about what exactly is being reported by these fluorophores.\n",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9e6cde7-46c5-4ccd-a375-378cbaa77033",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C1",
+      "claim": "Ammonium serves as a key nitrogen source and metabolic intermediate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium serves as key nitrogen source and metabolic intermediate, yet excess causes toxicity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established scientific knowledge about ammonium's biological role.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "4f023999-55fc-4ca8-89e5-ea6f5820ab40",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C2",
+      "claim": "Excess ammonium causes toxicity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium serves as key nitrogen source and metabolic intermediate, yet excess causes toxicity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is well-established scientific knowledge about ammonium toxicity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "d9edcb8a-ace1-4da3-9091-8674b9aa829b",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C3",
+      "claim": "Ammonium uptake is mediated by ammonium transporters.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium uptake is mediated by ammonium transporters, whose regulation is poorly understood.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established understanding of ammonium transport mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6b611bb4-d58a-47cc-aaae-ce3e3fb4485a",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C4",
+      "claim": "The regulation of ammonium transporters is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium uptake is mediated by ammonium transporters, whose regulation is poorly understood.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents the state of knowledge in the field at the time of publication.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "86c34ed8-0077-4ee7-92c0-e2bdbd53a6e2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C5",
+      "claim": "Transport can easily be characterized in heterologous systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While transport can easily be characterized in heterologous systems, measuring transporter activity in vivo remains challenging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established methodological capabilities in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "9ddd0b8e-0a66-48a7-aebc-aa7d6280d754",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C6",
+      "claim": "Measuring transporter activity in vivo remains challenging.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While transport can easily be characterized in heterologous systems, measuring transporter activity in vivo remains challenging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents a known limitation in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "ddb279d3-65ac-4466-bfbb-d75db06a2e9b",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C7",
+      "claim": "The authors developed an assay for monitoring ammonium transporter activity in vivo by inserting circularly-permutated GFP into conformation-sensitive positions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we developed a simple assay for monitoring activity in vivo by inserting circularly-permutated GFP into conformation-sensitive positions of two plant and one yeast ammonium transceptors ('AmTrac' and 'MepTrac').",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the primary experimental approach and findings of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "211c8c59-049a-4a19-b546-c536c538094b",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C8",
+      "claim": "Addition of ammonium to yeast cells expressing the sensors triggered concentration-dependent fluorescence intensity changes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Addition of ammonium to yeast cells expressing the sensors triggered concentration-dependent fluorescence intensity (FI) changes that strictly correlated with the activity of the transporter.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation reported in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "42024d1e-89b2-435c-b4b4-83f0bec1aebb",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C9",
+      "claim": "The fluorescence intensity changes strictly correlated with the activity of the transporter.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Addition of ammonium to yeast cells expressing the sensors triggered concentration-dependent fluorescence intensity (FI) changes that strictly correlated with the activity of the transporter.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a key finding based on experimental measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "d7e22946-54af-4277-972d-70d0c86db5d1",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C10",
+      "claim": "Fluorescence-based activity sensors present a novel technology for monitoring the interaction of transporters with their substrates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Fluorescence-based activity sensors present a novel technology for monitoring the interaction of the transporters with their substrates, the activity of transporters and their regulation in vivo",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the significance of the developed technology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a297447b-c45d-4ed1-a2c1-b18a430aeeb1",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C11",
+      "claim": "This technology is particularly valuable for analytes for which no radiotracers exist.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which is particularly valuable in the context of analytes for which no radiotracers exist, as well as for cell-specific and subcellular transport processes that are otherwise difficult to track.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the potential applications of the technology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b55349e7-5d0e-4096-99da-4b72e6217ac6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C12",
+      "claim": "Transport proteins play critical roles in cellular uptake and release as well as subcellular distribution of ions and metabolites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Transport proteins play critical roles in cellular uptake and release as well as subcellular distribution of ions and metabolites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established biological knowledge about transport proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "8c777cc3-eb40-49ec-93e9-c0ee8c3bb9f2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C13",
+      "claim": "The characterization of transporters is challenging due to their hydrophobic nature.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Due to their hydrophobic nature the characterization of transporters is challenging",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects known challenges in studying membrane proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "3397a8dd-f53d-474c-9789-431db161f4d5",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C14",
+      "claim": "Activity measurements of transporters typically depend on the use of radiotracers and heterologous expression systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "activity measurements typically depend on the use of radiotracers and heterologous expression systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes standard methodological approaches in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "fa26184a-9a36-44d9-970c-b311e9a9d11d",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C15",
+      "claim": "The development of electrophysiology tools was a major breakthrough for characterizing channels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One of the major breakthroughs for characterizing channels has been the development of electrophysiology tools, enabling characterization of electrogenic transport in live cells (Neher and Sakmann, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Neher and Sakmann, 1992.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b4ac1085-612d-4c0b-916d-abb404287d0c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C16",
+      "claim": "Electrophysiology tools enable characterization of electrogenic transport in live cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One of the major breakthroughs for characterizing channels has been the development of electrophysiology tools, enabling characterization of electrogenic transport in live cells (Neher and Sakmann, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited reference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "99af0959-86a3-4b25-bebe-9970ac45ff67",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C17",
+      "claim": "Patch clamping has largely been limited to the analysis of processes at the cell membrane or cells at the surface of sliced tissues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, patch clamping has largely been limited to the analysis of processes at the cell membrane, or cells at the surface of sliced tissues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes known limitations of the patch clamp technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b23aaf16-20bf-483c-b3cd-d6874d0f346d",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C18",
+      "claim": "Fluorescent proteins enabled observation of cellular processes in living cells of intact tissues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new level of insight was provided by fluorescent proteins enabling us to observe cellular processes in living cells of intact tissues (Tsien, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Tsien, 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "17a9ec3c-e9e4-4200-98d9-d232a205b3e8",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C19",
+      "claim": "FRET sensors have allowed monitoring of analyte levels and dynamics in live cells with minimal invasive methods.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Fluorescence Resonance Energy Transfer (FRET) sensors have allowed us to monitor analyte levels and dynamics in live cells with minimal invasive methods (Okumoto et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Okumoto et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6d8c472d-9d8c-46a3-9e86-ef3eaf02fa64",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C20",
+      "claim": "Particular FRET sensors can be used to monitor biophysical processes such as membrane potential or tension between molecules in live cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Particular FRET sensors can even be used to monitor biophysical processes such as membrane potential or tension between molecules in live cells, as well as the conversion of substrates of enzyme reactions by proteases and kinases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes established capabilities of FRET sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "468743be-05b9-4c16-93d6-0858d3eed633",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C21",
+      "claim": "Prior to this study, it was not possible to directly follow the activity of transporters and monitor their regulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Yet to date, we have not been able to directly follow the activity of transporters and to monitor their regulation in vivo.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the state of the field before this work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "9971bf44-225e-4a74-b5a9-84882890f2b4",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C22",
+      "claim": "It may be possible to create transport activity sensors by monitoring structural rearrangements in a transporter with environmentally sensitive genetically encoded fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We rationalized that it may be possible to create transport activity sensors by monitoring structural rearrangements in a transporter with the help of environmentally sensitive genetically encoded fluorophores.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This represents the initial hypothesis that motivated the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a0cb6a77-3981-483e-86e5-7769874249d8",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C23",
+      "claim": "FRET can be used to probe conformational rearrangements based on pioneering work by Miyawaki et al. (1997).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on the pioneering work of Miyawaki et al. (1997), FRET can be used to probe conformational rearrangements and has widely been exploited to develop genetically encoded sensors for small molecules.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Miyawaki et al., 1997.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b2b2d603-912c-4387-bd34-3bdde04b9a62",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C24",
+      "claim": "Circularly permutated GFP variants can be used as reporters for conformational rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An alternative, again developed by Tsien's lab (Baird et al., 1999), is the use of circularly permutated GFP variants as reporters for conformational rearrangements",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Baird et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "f670314d-42e9-43df-94b2-ce16df84b4f3",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C25",
+      "claim": "Circularly permutated GFP has been exploited to create sensors for calcium, zinc and maltose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which have been exploited to create sensors for small molecules such as calcium, zinc and maltose (Baird et al., 1999; Marvin et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Baird et al., 1999 and Marvin et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "902644a6-f06e-429a-965b-eaa0bbc27163",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C26",
+      "claim": "Circularly-permutated versions of GFP have successfully been used to monitor structural rearrangements of calmodulin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Circularly-permutated versions of GFP (cpGFP) have successfully been used to monitor structural rearrangements of calmodulin (Baird et al., 1999; Nagai et al., 2001; Nakai et al., 2001; Wang et al., 2008; Akerboom et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple cited references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "5e2a6f91-501d-4c6a-b7bc-1825bb1afdc5",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C27",
+      "claim": "cpGFP is a protein in which the \u03b2-barrel structure has been rearranged so that ligand-induced conformational changes can influence the chromophore environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cpGFP is a protein in which the \u03b2-barrel structure has been rearranged in a way that ligand-induced conformational changes can influence the chromophore environment and consequentially the fluorescent properties of a chimeric sensor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the structural basis of cpGFP function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b9fab861-5050-42da-8ec0-82ae8254971a",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C28",
+      "claim": "GFP and its variants have two excitation maxima at approximately 395 and 475 nm depending on pH.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Depending on pH, GFP and its variants have two excitation maxima (\u03bbex \u223c 395 and 475 nm) (Tsien, 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Tsien, 1998.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "dfabfd8c-00a8-47e3-9e1b-c4412a4a04b6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C29",
+      "claim": "Ammonium transport is key to nitrogen nutrition of bacteria, fungi and plants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium transport is key to nitrogen nutrition of bacteria, fungi and plants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established biological knowledge about ammonium's role.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6dc92568-fae3-4fac-b26a-7ea66fba9003",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C30",
+      "claim": "Mammals are unable to assimilate ammonium into amino acids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although mammals are unable to assimilate ammonium into amino acids, ammonium transporters play key roles in renal ammonium secretion and male fertility (Biver et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Biver et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "804a7ba2-df24-4adb-b619-4ad1072eb345",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C31",
+      "claim": "Ammonium transporters play key roles in renal ammonium secretion and male fertility in mammals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although mammals are unable to assimilate ammonium into amino acids, ammonium transporters play key roles in renal ammonium secretion and male fertility (Biver et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Biver et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "46c75996-0093-4d1e-9f1b-a41300347b7c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C32",
+      "claim": "Transporters for ammonium are conserved in bacterial, fungal, plant and animal genomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Transporters for ammonium are conserved in bacterial, fungal, plant and animal genomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established knowledge about the evolutionary conservation of ammonium transporters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a43d9d7a-410a-4b20-8690-2fa10c5043ac",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C33",
+      "claim": "Ammonium transport is electrogenic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium transport is electrogenic and is mediated by high affinity ammonium transporters of the AMT/MEP/Rhesus protein superfamily",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by the cited references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "abfeed1d-3550-4cee-bcca-849342e7d948",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C34",
+      "claim": "Ammonium transport is mediated by high affinity ammonium transporters of the AMT/MEP/Rhesus protein superfamily.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ammonium transport is electrogenic and is mediated by high affinity ammonium transporters of the AMT/MEP/Rhesus protein superfamily (Marini et al., 1994; Ninnemann et al., 1994; Tremblay and Hallenbeck, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple cited references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "0bea262b-f19e-4b9d-928c-45fae61bcf84",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C35",
+      "claim": "The genome of Arabidopsis contains six AMT paralogs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The genome of the plant Arabidopsis contains six AMT paralogs, four of which (AMT1;1, 1;2, 1;3, and 1;5) are partially redundant and together essential for ammonium acquisition (Yuan et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Yuan et al., 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "e30360b5-3780-4842-b91a-2c29d3ef2123",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C36",
+      "claim": "Four AMT paralogs (AMT1;1, 1;2, 1;3, and 1;5) are partially redundant and together essential for ammonium acquisition in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The genome of the plant Arabidopsis contains six AMT paralogs, four of which (AMT1;1, 1;2, 1;3, and 1;5) are partially redundant and together essential for ammonium acquisition (Yuan et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Yuan et al., 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "505c2233-6286-4543-9746-b7034f37acbf",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C37",
+      "claim": "In plants, ammonium acquisition is highly regulated and is subject to feedback inhibition.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In plants, ammonium acquisition is highly regulated and is subject to feedback inhibition, potentially as a means of preventing accumulation of ammonium to toxic levels (Wang et al., 1993; Kronzucker et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Wang et al., 1993 and Kronzucker et al., 2001.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "052f04cd-b36d-48f1-b1c8-ab4b2c145bd9",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C38",
+      "claim": "Ammonium-triggered phosphorylation of a critical threonine in the cytosolic C-terminus of AMT1;1 leads to inhibition of ammonium transport by allosteric regulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Recent results show that ammonium-triggered phosphorylation of a critical threonine in the cytosolic C-terminus of AMT1;1 leads to inhibition of ammonium transport by allosteric regulation in the trimeric transporter complex (Loqu\u00e9 et al., 2007; Lanquar et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Loqu\u00e9 et al., 2007 and Lanquar et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "ecd5b762-9603-4053-a71c-cc879b114bf3",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C39",
+      "claim": "AMT1;3 functions as an electrogenic high-affinity ammonium transporter involved in nitrogen uptake in Arabidopsis roots.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The close homolog AMT1;3, also functions as an electrogenic high-affinity ammonium transporter involved in nitrogen uptake in Arabidopsis roots (Gazzarrini et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Gazzarrini et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "f1720486-f71e-4166-be2a-425eff640bec",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C40",
+      "claim": "AMT1;3 functions in homo- and hetero-trimeric complexes with AMT1;1 and is allosterically regulated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "AMT1;3 functions in homo- and hetero-trimeric complexes with the coexpressed AMT1;1 and is allosterically regulated (Yuan et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Yuan et al., 2013.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "0cf9b93f-7319-426b-b949-c88a3cee0529",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C41",
+      "claim": "AMT1;3 not only functions as a transporter but also controls root architecture.",
+      "claim_type": "EXPLICIT",
+      "source_text": "AMT1;3 not only functions as a transporter, but in addition controls root architecture by a process similar to the one found for the yeast MEP2 transceptor (dual function transporter and receptor)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited references about MEP2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "d03f3cd7-c5b1-443e-b3f2-d9e425dc08c4",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C42",
+      "claim": "MEP2 is a protein that mediates ammonium transport and regulates pseudohyphal growth.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a protein that mediates ammonium transport and regulates pseudohyphal growth (Boeckstaens et al., 2007; Lima et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Boeckstaens et al., 2007 and Lima et al., 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "95bbb3b0-0ac2-44bb-83d4-884945391af2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C43",
+      "claim": "The term transceptor was introduced by Thevelein to describe the dual function of proteins in transport and signaling.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The term transceptor had been introduced by Thevelein to describe the dual function of the general amino acid permease Gap1p or the phosphate transporter Pho84p in transport and signaling (Kriel et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Kriel et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "23853480-f38d-41b6-bcbc-ab66ca44f28a",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C44",
+      "claim": "Most progress in the ammonium transport field has been made with yeast and Xenopus laevis oocytes as heterologous expression systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Most of the progress in the ammonium transport field has been made with the help of yeast and Xenopus laevis oocytes as heterologous expression systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the methodological approaches commonly used in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "0fdbab97-b071-4636-b693-0b1a9f3636fe",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C45",
+      "claim": "In planta studies mostly rely on the use of stable isotopes (15N) or radiotracer analogs (14C-methylammonium).",
+      "claim_type": "EXPLICIT",
+      "source_text": "By contrast, in planta studies mostly rely on the use of either stable isotopes (15N), or radiotracer analogs (14C-methylammonium).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes standard methodological approaches for plant studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "59888cf2-f223-4168-9154-a72c4a2daa05",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C46",
+      "claim": "Monitoring ammonium-induced depolarization of membrane potential has successfully been deployed in plants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Monitoring ammonium-induced depolarization of membrane potential has successfully been deployed in plants (Wang et al., 1994)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Wang et al., 1994.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "4c52dad9-dbde-4f3b-bbda-a5f813f848f0",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C47",
+      "claim": "Membrane potential measurements cannot differentiate between transport mediated by individual AMTs and non-selective cation channels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "yet it can not differentiate between transport mediated by individual AMTs and non-selective cation channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a known limitation of the membrane potential measurement technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "9c618e28-3440-476f-9272-4cdafff47691",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C48",
+      "claim": "It has not been possible to identify the networks that regulate substrate-triggered feedback inhibition of ammonium uptake in plant roots.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, it has not been possible to identify the networks that regulate the substrate-triggered feedback inhibition of ammonium uptake in plant roots.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a gap in knowledge that existed before this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "5513b3db-567e-49a0-86d1-11f108916eed",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C49",
+      "claim": "The authors created an activity sensor by inserting cpGFP into a cytosolic loop of the Arabidopsis ammonium transporter AMT1;3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we created an activity sensor by inserting cpGFP into a cytosolic loop of the Arabidopsis ammonium transporter AMT1;3.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the primary experimental approach of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6ba264ac-73a8-438f-8da4-b4085e3e6df5",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C50",
+      "claim": "Thorough characterization demonstrates that the chimera reports processes that occur in the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thorough characterization demonstrates that the chimera reports processes that occur in the transport cycle, although at present it is not possible to differentiate substrate binding or steps in the transport cycle.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental characterization performed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "fdfc3ebb-a6db-4e3a-a1e1-1ec74df71ab0",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C51",
+      "claim": "At present it is not possible to differentiate substrate binding or steps in the transport cycle using the sensor.",
+      "claim_type": "EXPLICIT",
+      "source_text": "although at present it is not possible to differentiate substrate binding or steps in the transport cycle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an acknowledgment of a limitation in interpreting the sensor's output.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "956e28df-5422-4fdb-ab3b-e9a47388f420",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C52",
+      "claim": "The approach is transferable to other proteins, supported by successful creation of sensors for AMT1;2 and MEP2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We project that this approach is transferable to other proteins, a notion supported by the successful creation of additional sensors for the Arabidopsis paralog AMT1;2 as well as the distantly related yeast ammonium transceptor MEP2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference supported by experimental data showing successful sensor creation for multiple proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "7dabed72-e17e-460c-ab5c-33e4e4d795c2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C53",
+      "claim": "AMT1;3 has eleven transmembrane helices organized in a pseudo-symmetric structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Eleven TMH are organized in a pseudo-symmetric structure (TMH I-V and TMH VI-X) with an extra terminal TMH-XI that directs the C-terminus to the cytosol.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on topological prediction by HMMTOP as cited in the figure legend.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "de9581ef-a908-432e-9931-17741027ce9d",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C54",
+      "claim": "Fluorescent proteins were inserted into different cytosolic loops of AMT1;3 to engineer a transporter that reports substrate-dependent changes in conformation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To engineer a transporter that reports substrate-dependent changes in conformation, we inserted fluorescent proteins (FP) into",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental strategy used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "d690069b-0466-4cdd-b5a9-9db7e164e12c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C55",
+      "claim": "Initial tests showed that addition of ammonium to yeast cells expressing AMT1;3-mcpGFP fusion did not lead to detectable changes in fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In initial tests, addition of ammonium to yeast cells expressing the AMT1;3-mcpGFP fusion did not lead to detectable changes in fluorescence intensity (FI; data not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a reported experimental observation from initial tests.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "849a7e9e-a041-414c-93d6-0bd1545dec1c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C56",
+      "claim": "cpGFP-based sensors for calcium and maltose are exquisitely sensitive to modifications in the linker sequences.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, it is known that the cpGFP-based sensors for calcium and maltose are exquisitely sensitive to modifications in the linker sequences connecting to the respective binding proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about cpGFP-based sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "312fab58-ffd8-4b21-9e63-8ea74bc4c4e4",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C57",
+      "claim": "Variant 16 carrying LE/FN as linkers, named AmTrac, showed the highest change in fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Variant 16 (in red), carrying LE/FN as linkers, named AmTrac, showed the highest change in fluorescence intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental finding from the linker screening.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "96023885-07d9-463c-a0a7-d1ed542f4f48",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C58",
+      "claim": "The FI response of AmTrac was proportional to the ammonium concentration added to yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Initial experiments showed that the FI response of AmTrac was proportional to the ammonium concentration added to the yeast cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "4f3fa319-2c4b-4627-9dea-169aebb2112c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C59",
+      "claim": "AMT1;3 expressed in Xenopus oocytes showed a Km of 55 \u00b1 15 \u03bcM for ammonium-induced currents.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Kms were 55 \u00b1 15 \u03bcM, 51 \u00b1 24 \u03bcM, and 57 \u00b1 19 \u03bcM, respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct measurement from electrophysiology experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "f70f27ba-4832-4604-bdb9-de256af63c86",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C60",
+      "claim": "AmTrac showed a Km of 51 \u00b1 24 \u03bcM for ammonium-induced currents in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Kms were 55 \u00b1 15 \u03bcM, 51 \u00b1 24 \u03bcM, and 57 \u00b1 19 \u03bcM, respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct measurement from electrophysiology experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "c757f1e6-9bcd-4fe6-a578-2e110fbd20e2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C61",
+      "claim": "AmTrac-LS showed a Km of 57 \u00b1 19 \u03bcM for ammonium-induced currents in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Kms were 55 \u00b1 15 \u03bcM, 51 \u00b1 24 \u03bcM, and 57 \u00b1 19 \u03bcM, respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct measurement from electrophysiology experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "db080900-b6b5-4f34-9e6c-b6a4568b9224",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C62",
+      "claim": "The saturation kinetics observed for the FI response can be interpreted as the dose-dependent conversion of an increasing number of transporters into a new state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The saturation kinetics observed for the FI response can be interpreted as the dose-dependent conversion of an increasing number of transporters into a new state, for example from inactive to active or unbound to bound.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the observed kinetic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "c136fdb2-c11c-4bd3-ada0-fe00d5df96a6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C63",
+      "claim": "AmTrac responses were detectable in single cells, were concentration-dependent, and were readily reversible.",
+      "claim_type": "EXPLICIT",
+      "source_text": "AmTrac responses were detectable in single cells, were concentration-dependent, and were readily reversible",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from single-cell measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b37ae9bb-e83a-4d83-8463-3c2d4a9e4367",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C64",
+      "claim": "AmTrac can be used in vivo to quantify ammonium transport activity and observe kinetics of the chimeric transporter in response to substrate availability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "demonstrating that AmTrac can be used in vivo to quantify ammonium transport activity and to observe kinetics of the chimeric transporter in response to substrate availability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "bec90411-4924-439b-9c0c-6b048050ec70",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C65",
+      "claim": "The unique selectivity of AMT1 for ammonium over potassium was retained for FI responses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The unique selectivity of AMT1 for ammonium over potassium was retained for FI responses (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental finding from selectivity tests.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "8b08a007-6590-415f-963e-e908f6bbe72f",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C66",
+      "claim": "NH4NO3 and (NH4)2SO4 elicited the same FI change as NH4Cl.",
+      "claim_type": "EXPLICIT",
+      "source_text": "NH4NO3 and (NH4)2SO4 elicited the same FI change as NH4Cl, demonstrating that chloride does not affect the FI response.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "86f0e3d5-c051-42b1-a4d6-c5418312d37a",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C67",
+      "claim": "Chloride does not affect the FI response of AmTrac.",
+      "claim_type": "EXPLICIT",
+      "source_text": "NH4NO3 and (NH4)2SO4 elicited the same FI change as NH4Cl, demonstrating that chloride does not affect the FI response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental observation that different ammonium salts give the same response.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "403772cd-7196-477c-9125-c4de8929284f",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C68",
+      "claim": "Addition of equimolar concentrations of sodium, potassium, calcium, magnesium, manganese or zinc did not trigger a change in FI.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, addition of equimolar concentrations of sodium, potassium, calcium, magnesium, manganese or zinc did not trigger a change in FI (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from selectivity tests.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "3014e954-ccd1-4d60-b1e3-1f84ee75e582",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C69",
+      "claim": "The data strongly support the hypothesis that AmTrac measures ammonium concentrations and/or reports conformational state changes of the transporter.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Together these data strongly support the hypothesis that AmTrac measures ammonium concentrations and/or reports conformational state changes of the transporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on multiple experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "bb4efb42-4e04-46d8-b7a8-042f9f6dcd04",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C70",
+      "claim": "The FI of AmTrac was relatively low, limiting the dynamic range and signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The FI of AmTrac was relatively low, limiting the dynamic range and the signal-to-noise ratio (SNR).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation about the initial sensor's performance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "5ad5fa78-c6c0-4ec7-8c9c-39f4449cd5f8",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C71",
+      "claim": "The majority of the brightest variants carried a Ser residue instead of Glu in the position immediately preceding mcpGFP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, the majority of the brightest variants carried a Ser residue instead of a Glu in the position immediately preceding the mcpGFP insertion",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the screening of improved variants.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "eb3a7c0e-1859-4c11-9343-51a4901eb0d6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C72",
+      "claim": "Mutations known to inactivate AMT1 transporters (D202N, G460D, T464D) were introduced into AmTrac to test the correlation between transport activity and ammonium-induced FI change.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To further corroborate the correlation between transport activity and ammonium-induced FI change, mutations (D202N, G460D, T464D) known to inactivate AMT1 transporters were introduced into AmTrac",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes an experimental approach to test the correlation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a46033bf-a17f-4a51-a041-626eacdde944",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C73",
+      "claim": "The allosteric trans-activation mechanism is used by AMTs for feedback inhibition at elevated ammonium levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The allosteric trans-activation mechanism used by AMTs for feedback inhibition at elevated ammonium levels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about AMT regulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "0b8ddd7c-febc-4f25-bf9b-1747aabfd09c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C74",
+      "claim": "AmTrac-T464D-A141E mediated hypersensitivity to elevated ammonium concentrations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, one of the suppressor mutants, AmTrac-T464D-A141E, mediated hypersensitivity to elevated ammonium concentrations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from growth assays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b29a69f9-2e66-4b08-a548-dbef482695cf",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C75",
+      "claim": "AmTrac-100\u00b5 showed a Km of 3.4 \u00b1 0.56 mM for ammonium-induced currents.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Km was 3.4 \u00b1 0.56 mM.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct measurement from electrophysiology experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "d5a5e3f0-60e9-4b7e-92a9-61332af9f286",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C76",
+      "claim": "mcpGFP was inserted into the central loop of AMT1;2 and MEP2 to test whether the strategy is generalizable.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To test whether the strategy of creating activity state sensors by mcpFP insertion is generalizable, we inserted mcpGFP into the central loop of other ammonium transporters; that is, the paralog AMT1;2 from Arabidopsis and the transceptor MEP2 of",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes an experimental approach to test generalizability.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "e05d488d-44d3-44c3-9939-5808d2d44142",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C77",
+      "claim": "Genetically encoded fluorescent biosensors are powerful tools for characterizing in vivo processes involved in cell signaling and physiology.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Genetically encoded fluorescent biosensors are powerful tools for characterizing in vivo processes involved in cell signaling and physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the utility of fluorescent biosensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "46b1624d-a319-4822-afdf-9a44325c6343",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C78",
+      "claim": "Fluorescent biosensors offer new tools for genetic screens and for screening chemical libraries to identify new drugs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "They offer new tools for genetic screens, for example, for identifying regulatory networks, or they can be used for screening chemical libraries to identify new drugs (Bermejo et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Bermejo et al., 2013.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "13d984a3-9366-484a-a10d-6876fad275d6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C79",
+      "claim": "FRET sensors for small molecules allow monitoring of steady state levels and dynamic changes of analytes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The existing tools, that is, FRET sensors for small molecules allow us to monitor steady state levels and dynamic changes of analytes such as ions, signaling compounds, metabolites and substrates of proteases (Okumoto et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Okumoto et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "99800944-8e76-4b8d-adbf-bc1365a1bce9",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C80",
+      "claim": "Tools for measuring the activity of transporters in vivo have been limited to electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, tools for measuring the activity of transporters in vivo have been limited to electrophysiology, which can not differentiate between transporter isoforms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the state of available tools before this work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "67155ed5-1854-4776-8d22-4ebfeaf5b8f8",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C81",
+      "claim": "Electrophysiology cannot differentiate between transporter isoforms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, tools for measuring the activity of transporters in vivo have been limited to electrophysiology, which can not differentiate between transporter isoforms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a known limitation of electrophysiology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "0d229283-a13a-4c1a-b335-aabe15cf2b91",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C82",
+      "claim": "Electrophysiology is difficult to use for measuring transporter activity in cells in live tissues or subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and is difficult to use for measuring transporter activity in cells in live tissues or even subcellular compartments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a known limitation of electrophysiology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "26c4ac87-dc96-475b-af23-87e78bdbbbde",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C83",
+      "claim": "The authors developed a prototype for activity sensors using ammonium transporters conserved from archaebacteria to higher plants and metazoa.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we developed a prototype for such activity sensors using the important class of ammonium transporters conserved from archaebacteria to higher plants and metazoa, including the human Rhesus factors.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the main achievement of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "47502af9-c9a7-4630-a6a6-ebf12a8134be",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C84",
+      "claim": "The fluorescence-based sensors report the activity of the transporter in vivo and can be used to quantify the activity of a specific transporter.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These fluorescence-based sensors report the activity of the transporter in vivo and can be used to quantify the activity of a specific transporter in vivo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental characterization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "e307305a-9f03-4876-b034-927e5b4e6f02",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C85",
+      "claim": "Information on transporter activity is relevant for determining the regulation of individual isoforms in live cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Information on the activity of transporters is relevant for determining the regulation of individual isoforms in live cells, to identify and characterize regulators, to monitor transport in cells otherwise inaccessible to transport measurements",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the potential applications of the technology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "3b55fb8c-3c38-47cb-b97e-2c63c90299d6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C86",
+      "claim": "The novel sensors may help to record structural rearrangements that occur when transporters bind their ligands or during the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At the same time these novel sensors may help to record structural rearrangements that occur when transporter bind their ligands or which occur during the transport cycle.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential applications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "644619f6-0516-4646-bdf4-c98d3461a36c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C87",
+      "claim": "In contrast to interpretation of crystallization studies, AMTs and MEPs both change conformation during transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We show here that, in contrast to the interpretation of results from crystallization studies (Khademi et al., 2004), AMTs and MEPs both change conformation during transport",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental data that contradicts previous interpretations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "d2d8fbd2-5e54-4001-87ea-f9fb16fcfb71",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C88",
+      "claim": "AMTs and MEPs most probably do not function as passive gas channels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and thus most probably do not function as 'passive gas channels'.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference based on the observation of conformational changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6eabade9-7e1a-40d3-bfa5-f0a215d42016",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C89",
+      "claim": "The characteristics of the AmTrac fluorescence response strongly indicate that AmTrac sensors measure processes that occur during the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The characteristics of the AmTrac fluorescence response, namely (i) the indistinguishable transport and fluorescence response kinetics, (ii) the reversibility, (iii) the tight link between transport activity for the FI response, (iv) the correlated shifts in affinity for ammonium transport and FI response, and (v) the restoration of the FI response by reconstitution of transport activity in suppressor mutants, strongly indicate that AmTrac sensors measure processes that occur during the transport cycle",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on multiple lines of experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b4fedd47-f329-4fd6-8478-9283d23d79fa",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C90",
+      "claim": "The data do not exclude the possibility that the sensors report extracellular binding of ammonium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since binding of the substrate to the transporter is part of the transport cycle, our data do not exclude the possibility that the sensors report extracellular binding of ammonium and therefore measure extracellular ammonium levels rather than activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an acknowledgment of an alternative interpretation of the data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "c05664dc-ded7-4136-8edf-5fe24b545252",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C91",
+      "claim": "AMTs have been suggested to function as both transporters and receptors for ammonium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "AMTs have been suggested to function as both transporters and receptors for ammonium (Lima et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Lima et al., 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "bbee7616-1b0b-4aaf-a7ac-9998d6f7c9cb",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C92",
+      "claim": "Other transporters with dual function as transporters and signaling proteins include UhpT from E. coli, Pho84p and GAP1p from Saccharomyces, and Chl1 from Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Other transporters with a dual function as transporters and signaling proteins include UhpT from E. coli (Schw\u00f6ppe et al., 2003), Pho84p and GAP1p from Saccharomyces (Thevelein and Voordeckers, 2009) and Chl1 from Arabidopsis (Ho et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple cited references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "af1482d6-f18c-4dd8-bdbd-bdc758d4eca3",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C93",
+      "claim": "The mechanism by which signaling is transmitted through transceptors is unclear.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The mechanism by which signaling is transmitted is unclear, specifically how substrate binding or conformational rearrangements during the transport cycle are necessary for triggering the receptor activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a gap in understanding in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "dc8b139c-c137-49e0-badf-8c729b6bf85e",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C94",
+      "claim": "Some transporter-like receptors such as SNF3p and RGT1p from S. cerevisiae appear to be unable to transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Some transporter-like receptors, such as the glucose transporter-like SNF3p and RGT1p from S. cerevisiae, appear to be unable to transport, suggesting that binding is sufficient for triggering a conformational rearrangement that is detected by intracellular signaling proteins (Thevelein and Voordeckers, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Thevelein and Voordeckers, 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a5110ff4-68e6-489b-9c06-cf8a0b0e4543",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C95",
+      "claim": "The yeast Pho84 phosphate transceptor functions both in phosphate transport and mediates activation of the protein kinase A pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The yeast Pho84 phosphate transceptor functions both in phosphate transport and mediates activation of the protein kinase A pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about Pho84 function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a235c152-30bb-4755-89c8-8d99e1a4bd40",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C96",
+      "claim": "Phosphate analogs that do not appear to be transported by Pho84 retain signaling activity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The finding that phosphate analogs that do not appear to be transported retain signaling activity is consistent with the hypothesis that a complete transport cycle is not required for signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on findings about Pho84 from the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6081e460-cd85-46bc-892e-9ad51e383607",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C97",
+      "claim": "Mutations in the presumed proton-binding site of Pho84 severely reduced transport but not signaling.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutations in the presumed proton-binding site severely reduced transport but not signaling, demonstrating that transport and signaling activities are separable (Samyn et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Samyn et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "c94774d2-ab73-429d-a024-796640be1dfe",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C98",
+      "claim": "Transport and signaling activities of Pho84 are separable.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutations in the presumed proton-binding site severely reduced transport but not signaling, demonstrating that transport and signaling activities are separable (Samyn et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a conclusion supported by the cited reference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "e4ff0deb-c8ab-476d-9c95-5a19ac7322d1",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C99",
+      "claim": "Analysis of GAP1 indicated that signaling requires a ligand-induced conformational change corresponding to a step in the transport cycle but does not require the full cycle.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Combined analysis of the action of amino acid analogs and mutagenesis of the putative binding site of the amino acid transceptor GAP1 on transport and signaling have indicated that, similar as in PHO84, signaling requires a ligand-induced conformational change that corresponds to a step in the transport cycle but does not appear to require a the full cycle (Van Zeebroeck et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Van Zeebroeck et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "689df81f-336c-4cd6-820a-54a2f24a6c10",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C100",
+      "claim": "It is conceivable that the fluorescent change in the sensors is due to ammonium binding, a specific set of steps in the transport cycle, or the full transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is therefore conceivable that the fluorescent change observed in the fluorescent ammonium sensors presented here is due to either (i) ammonium binding, (ii) a specific set of steps in the transport cycle, or (iii) the full transport cycle of the transporter.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about possible mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "26373981-4b66-44d5-b53a-ee19ed02737f",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C101",
+      "claim": "Crystal structures of AMTs from E. coli and A. fulgidus did not reveal obvious conformational differences when generated in the presence or absence of ammonium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Crystal structures of AMTs from Escherichia coli (Khademi et al., 2004; Zheng et al., 2004) and Archaeoglobus fulgidus (Andrade et al., 2005) did not reveal obvious conformational differences when generated in the presence or absence of ammonium",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to the cited crystallography studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b2bb3779-bcee-48a4-97bf-dbe454ac6a45",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C102",
+      "claim": "The observation that crystal structures showed no conformational differences led to the proposition that AMTs are rigid gas channels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "observations that led to the proposition that AMTs are rigid gas channels (Khademi et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Khademi et al., 2004.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "dbec5b9e-43c9-4b69-b8f9-ef8803945cb6",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C103",
+      "claim": "Electrophysiological studies challenged the hypothesis that AMTs transport the uncharged form ammonia by demonstrating that plant AMTs are electrogenic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Electrophysiological studies challenged the hypothesis that AMTs transport the uncharged form ammonia by demonstrating that plant AMTs are electrogenic and show minimal or no ammonia conductivity (Mayer et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Mayer et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a122ce31-d417-484b-84fb-cf79a716d467",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C104",
+      "claim": "Plant AMTs show minimal or no ammonia conductivity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Electrophysiological studies challenged the hypothesis that AMTs transport the uncharged form ammonia by demonstrating that plant AMTs are electrogenic and show minimal or no ammonia conductivity (Mayer et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Mayer et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "5f239fbf-a3a1-4c63-9f0e-ccfa180c3eb2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C105",
+      "claim": "The transport of the charged form of ammonium is supported by the finding that mutations in the pore release the transporter from gating control.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The transport of the charged form of ammonium is further supported by the finding that mutations in the pore release the transporter from a gating control, leading to massively increased transport capacity and an up to 100-fold increase in the Km",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Loqu\u00e9 et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "2fa4f083-966c-46bf-9309-d3d12a71c7f9",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C106",
+      "claim": "Evidence was provided for the existence of open and closed states of AMTs by demonstrating allosteric feedback inhibition by phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, we provided evidence for the existence of open and closed states by demonstrating an allosteric feedback inhibition of transport activity by phosphorylation of residues in the trans-activating cytosolic C-terminus (Loqu\u00e9 et al., 2007; Lanquar et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Loqu\u00e9 et al., 2007 and Lanquar et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "fa49f30b-f1cb-426e-a6b9-5b0d38371d2c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C107",
+      "claim": "The fluorescence response of AmTrac variants and MepTrac supports the hypothesis that AMT1;3, AMT1;2 and MEP2 undergo conformational changes during transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The fluorescence response of AmTrac variants and MepTrac supports the hypothesis that AMT1;3, AMT1;2 and MEP2 undergo conformational changes during transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental observations with the sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "f1e3e1bb-2242-4ef2-ba29-b3f6ff549efc",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C108",
+      "claim": "The results are consistent with the hypothesis that TMH-V and -VI of AMT move relative to each other as a result of ammonium binding or during ammonium translocation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results are consistent with the hypothesis that TMH-V and -VI of AMT move relative to each other as a result of ammonium binding or during ammonium translocation, thus affecting the conformation of L5\u20136 and thereby gating the inserted mcpGFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "7f562555-a94d-4c43-99a9-984612205b57",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C109",
+      "claim": "cpGFP has successfully been deployed to monitor conformational changes in a variety of proteins including calmodulin, metal ion binding domains, and periplasmic sugar binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cpGFP has successfully been deployed to monitor conformational changes in a variety of proteins, for example, calmodulin (Baird et al., 1999; Nagai et al., 2001, 2004; Nakai et al., 2001), metal ion binding domains (Baird et al., 1999; Mizuno et al., 2007), a periplasmic sugar binding protein (Marvin et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple cited references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "075725c6-6a0a-4e7a-83bc-5dfa480ef32e",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C110",
+      "claim": "None of the existing cpGFP-based sensors measures activity; they report ensemble changes in conformational states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While none of the sensors measures activity, they report ensemble changes in conformational states of the respective proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a limitation of existing cpGFP-based sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b336cff6-d4e4-478d-bbd0-0958034bcdce",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C111",
+      "claim": "The study demonstrates that insertion of cpGFP can be more widely used to monitor activity states of proteins, specifically ammonium transporters.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we demonstrate that insertion of cpGFP can be more widely used to monitor activity states of proteins, specifically ammonium transporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the successful development of the sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "567dc3ea-6b16-4820-a1f4-0599f2692dfa",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C112",
+      "claim": "The pseudo-symmetry of AMTs with an inverted repeat of a five TMH containing domain is comparable to that found in the LeuT transporter.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, the pseudo-symmetry of AMTs with an inverted repeat of a five TMH containing domain is comparable to that found in the LeuT transporter (Krishnamurthy and Gouaux, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by a reference to Krishnamurthy and Gouaux, 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "9433dc90-c783-4947-b6ce-7d1e6c7da4d5",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C113",
+      "claim": "LeuT carries a substrate-binding site at the interface of the two repeats and undergoes a transport cycle for which multiple states have been identified.",
+      "claim_type": "EXPLICIT",
+      "source_text": "LeuT carries a substrate-binding site at the interface of the two repeats and undergoes a transport cycle for which multiple states have been identified (Forrest and Rudnick, 2009; Rudnick, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by references to Forrest and Rudnick, 2009 and Rudnick, 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "e6b62fe4-3866-44f8-aab1-632b0900a62d",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C114",
+      "claim": "The transport pore of AMTs is located between the two pseudo-symmetric halves, with TMH-V and -VI carrying key residues for ammonium translocation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Similarly, the transport pore of the AMTs is located between the two pseudo-symmetric halves, with TMH-V and -VI (connected by L5\u20136) carrying key residues for ammonium translocation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on structural knowledge of AMTs.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "09448edd-235a-4e0d-81f7-99e8c35d91be",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C115",
+      "claim": "The data are consistent with the occurrence of structural rearrangements during transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our data are consistent with the occurrence of structural rearrangements during transport",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion based on the experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "4bdd138d-6257-4889-9b67-6fc1a2a5fd09",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C116",
+      "claim": "Crystal structures for different states will be required to determine the conformational state during transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "crystal structures for different states will be required to determine the conformational state during transport.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a statement about future work needed to fully understand the mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "1b473dd4-a7f3-4ed0-9213-6ad685123bc2",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C117",
+      "claim": "The combination of two ammonium transport activity sensors from different organisms will be useful for dissecting endogenous control mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The combination of two ammonium transport activity sensors from different organisms will be useful for dissecting endogenous control mechanisms, because heterologous proteins are not expected to be subject to the same regulatory control and can thus serve as references.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about potential applications of the sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "1b07931e-9bf8-4e6b-9d59-d1d8e2171b87",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C118",
+      "claim": "Heterologous proteins are not expected to be subject to the same regulatory control and can serve as references.",
+      "claim_type": "EXPLICIT",
+      "source_text": "because heterologous proteins are not expected to be subject to the same regulatory control and can thus serve as references.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on general principles of heterologous expression.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "74bc0134-3d67-4881-af29-b70ba2d568ad",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C119",
+      "claim": "The authors will deploy AmTrac and MepTrac in Arabidopsis roots and yeast to study their regulation in vivo and identify regulators.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As a next step, we will deploy AmTrac and MepTrac in both Arabidopsis roots and in yeast to study their regulation in vivo and to identify regulators.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a statement about planned future work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "2f55b16f-0e0e-4352-97d8-452413b30e8c",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C120",
+      "claim": "The measurement of flux through a transporter by reporting state changes might be applicable to other transporters or enzymes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The measurement of flux through a transporter by reporting state changes, as shown here, might be applicable to other transporters or enzymes for monitoring in vivo fluxes, for example, in the context of neurotransmission.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential broader applications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "27616f96-b713-408c-b9c4-e218e5c1a454",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "claim_id": "C121",
+      "claim": "Such in vivo flux analyses will aid in understanding the mode of action of proteins and may serve as tools for drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such in vivo flux analyses will aid in understanding the mode of action of proteins and may serve as tools for drug discovery.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential applications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "afbfef6d-e58d-4253-af57-ea8c57193289",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The development of AmTrac by inserting cpGFP into AMT1;3 is well-documented with systematic optimization of insertion sites and linker sequences. The iterative design process, including the identification of variant 16 (AmTrac) with LE/FN linkers showing the highest fluorescence response, demonstrates a rigorous experimental approach with clear methodology.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The concentration-dependent fluorescence response is supported by multiple independent measurements including fluorimetry in yeast and electrophysiology in Xenopus oocytes. The similar Km values for AMT1;3 (55\u00b115 \u03bcM), AmTrac (51\u00b124 \u03bcM), and AmTrac-LS (57\u00b119 \u03bcM) demonstrate that sensor insertion does not significantly alter transport kinetics, strongly supporting the correlation between fluorescence and activity.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "09de21ef-c532-47c0-8a65-357756a32f71",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The sensor's reversibility, concentration-dependence, and selectivity are well-characterized through single-cell microfluidic experiments and comprehensive ion selectivity tests. The demonstration that only ammonium (not other cations or different anion salts) triggers fluorescence changes, combined with reversible kinetics, provides strong evidence that AmTrac specifically reports ammonium-related processes.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "7afb76d8-8b9b-47e6-835b-f9802f17ec4b",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The tight correlation between transport activity and fluorescence output is rigorously demonstrated through multiple lines of evidence: (i) indistinguishable kinetics, (ii) reversibility, (iii) loss of fluorescence response in transport-inactive mutants (D202N, G460D, T464D), (iv) correlated affinity shifts, and (v) restoration of response in suppressor mutants. This multi-faceted validation strongly supports the claim that fluorescence reports transport-related processes.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6232b44b-ea80-4247-b9f2-6eb3ec503f37",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The identification of improved variants through systematic linker optimization is well-documented. The observation that Ser residues in the linker position improved brightness is supported by screening data from ~350 variants, demonstrating a systematic approach to sensor improvement with clear experimental evidence.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "9643fdfa-2cba-4ecb-b661-271daef62f65",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The development of AmTrac-100\u03bc with altered kinetics (Km = 3.4\u00b10.56 mM vs ~50 \u03bcM for wild-type) through suppressor mutagenesis is supported by both growth assays showing ammonium hypersensitivity and direct electrophysiological measurements. This demonstrates the ability to engineer sensors with different affinity ranges.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "b4cce31a-990e-4546-b637-a96ce3e17c1d",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The generalizability of the approach is demonstrated by successful creation of functional sensors for AMT1;2 and MEP2 using the same strategy. The fact that sensors could be created for distantly related transporters from different organisms (plant and yeast) in a single step provides strong evidence for transferability of the method.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the sensor clearly reports transport-related processes, the authors appropriately acknowledge that current data cannot distinguish whether the fluorescence change reflects substrate binding, specific steps in the transport cycle, or the complete cycle. The saturation kinetics are consistent with multiple interpretations, and additional structural or kinetic studies would be needed to resolve this mechanistic ambiguity.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The conclusion that AMTs undergo conformational changes during transport is well-supported by the fluorescence responses of multiple sensor variants. This contradicts the 'rigid gas channel' model from crystallography studies and is consistent with electrogenic transport data. However, the authors appropriately note (C116) that crystal structures of different states are needed for complete mechanistic understanding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "8d60ba0e-075e-475c-8342-413d60a6ab6b",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The demonstration that fluorescence-based sensors can monitor transporter activity in vivo is well-supported by the experimental characterization. The technology's value for studying transporters without radiotracers and in specific cellular contexts is a logical inference from the demonstrated capabilities, though full validation in complex tissues remains future work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "4c006d49-6db0-4ee7-8055-84ee0df3d647",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R11",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The demonstration that cpGFP insertion can monitor activity states (not just conformational changes) represents a conceptual advance over previous cpGFP-based sensors (C110). This is supported by the tight correlation between transport activity and fluorescence across multiple experimental validations, distinguishing these sensors from previous conformational reporters.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752",
+      "content_id": "45ce1263-b4ff-4901-bfb4-c407e027a535",
+      "result_id": "R12",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims represent speculative statements about future applications and required follow-up work. While the potential applications are reasonable extrapolations from the demonstrated technology, they remain untested hypotheses. The authors appropriately frame these as future directions rather than established results, but they cannot be evaluated as supported without additional experimental validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "246e0964-472c-448f-bcf6-d14bbdca8f29",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly state the work is 'convincing, satisfying, and carefully done' and that 'experiments convincingly show that the fluorescent intensity of these reporters...changes according to the level of extracellular NH4+'. The technical development of the sensors by inserting cpGFP and observing concentration-dependent fluorescence changes is accepted without challenge.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "1ebede66-bc02-4ccc-ae6e-300101b5130f",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers affirm that 'this signal nicely tracks the NH4+ transport activity as measured directly by voltage-clamp methods in oocytes' and note the Km measurements and selectivity data without raising concerns. The electrophysiological characterization and substrate specificity findings are accepted.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "96a16376-4d02-47fd-8227-e1b4842be25e",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers state 'we are not at all convinced that the signal reports transport activity, which the authors repeatedly conflate with substrate binding' and note 'the major concern is the lack of discussion or discrimination of the possibility that the sensor was registering ammonium binding and not ammonium transport per se'. They require the paper to 'clearly state and explain that the sensors report transport activity or ammonium binding (or both)'.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a9527f78-4acc-4751-a10d-d3fd189a2e03",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers challenge the mechanistic interpretation, stating 'the inference that the channels are not passive and must change conformation requires the assumption that only a conformational change could underlie the intensity change, when in fact some sort of change upon binding might lead to a change in protonation without much of a conformational change'. The claim that AMTs undergo conformational changes during transport is questioned as potentially conflating binding with transport.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "3699b2ce-9047-44a5-86b1-73b7623cdffb",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers appreciate that the authors acknowledge uncertainty, noting 'This is the one place where the authors seem to entertain the possibility of binding (ammonium concentrations on the outside)'. The acknowledgment that data do not exclude binding as an alternative explanation is viewed positively, though reviewers want this discussed more thoroughly throughout.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers affirm 'these reporters represent an important technical advance' and 'the approach and the ability to report NH4+ concentration represent an important advance'. The value of the technology and its generalizability to other transporters is accepted, with reviewers noting the reporters 'may be quite valuable in studies of ammonium handling in these plants'.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "5c79032b-abcb-48ab-86ab-441a536d29cf",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers state 'Perhaps the suppressor screen experiments argue for actual transport, but this would require more information on binding and how this might be differentiated in the mutants'. The mutant data are acknowledged but not considered definitive for distinguishing transport from binding.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "270f826e-e8c7-4e3f-9d3d-4d247438af80",
+      "content_id": "7fa876d3-95f4-47b1-8ffb-aa0efc4e0143",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Background claims about ammonium biology, transporter function, and methodological limitations are not questioned by reviewers. These established knowledge claims provide accepted context for the study.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ddb279d3-65ac-4466-bfbb-d75db06a2e9b",
+      "result_id": "afbfef6d-e58d-4253-af57-ea8c57193289"
+    },
+    {
+      "claim_id": "5513b3db-567e-49a0-86d1-11f108916eed",
+      "result_id": "afbfef6d-e58d-4253-af57-ea8c57193289"
+    },
+    {
+      "claim_id": "de9581ef-a908-432e-9931-17741027ce9d",
+      "result_id": "afbfef6d-e58d-4253-af57-ea8c57193289"
+    },
+    {
+      "claim_id": "d690069b-0466-4cdd-b5a9-9db7e164e12c",
+      "result_id": "afbfef6d-e58d-4253-af57-ea8c57193289"
+    },
+    {
+      "claim_id": "849a7e9e-a041-414c-93d6-0bd1545dec1c",
+      "result_id": "afbfef6d-e58d-4253-af57-ea8c57193289"
+    },
+    {
+      "claim_id": "312fab58-ffd8-4b21-9e63-8ea74bc4c4e4",
+      "result_id": "afbfef6d-e58d-4253-af57-ea8c57193289"
+    },
+    {
+      "claim_id": "211c8c59-049a-4a19-b546-c536c538094b",
+      "result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf"
+    },
+    {
+      "claim_id": "42024d1e-89b2-435c-b4b4-83f0bec1aebb",
+      "result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf"
+    },
+    {
+      "claim_id": "96023885-07d9-463c-a0a7-d1ed542f4f48",
+      "result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf"
+    },
+    {
+      "claim_id": "4f3fa319-2c4b-4627-9dea-169aebb2112c",
+      "result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf"
+    },
+    {
+      "claim_id": "f70f27ba-4832-4604-bdb9-de256af63c86",
+      "result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf"
+    },
+    {
+      "claim_id": "c757f1e6-9bcd-4fe6-a578-2e110fbd20e2",
+      "result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf"
+    },
+    {
+      "claim_id": "c136fdb2-c11c-4bd3-ada0-fe00d5df96a6",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "b37ae9bb-e83a-4d83-8463-3c2d4a9e4367",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "bec90411-4924-439b-9c0c-6b048050ec70",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "8b08a007-6590-415f-963e-e908f6bbe72f",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "86f0e3d5-c051-42b1-a4d6-c5418312d37a",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "403772cd-7196-477c-9125-c4de8929284f",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "3014e954-ccd1-4d60-b1e3-1f84ee75e582",
+      "result_id": "09de21ef-c532-47c0-8a65-357756a32f71"
+    },
+    {
+      "claim_id": "eb3a7c0e-1859-4c11-9343-51a4901eb0d6",
+      "result_id": "7afb76d8-8b9b-47e6-835b-f9802f17ec4b"
+    },
+    {
+      "claim_id": "6eabade9-7e1a-40d3-bfa5-f0a215d42016",
+      "result_id": "7afb76d8-8b9b-47e6-835b-f9802f17ec4b"
+    },
+    {
+      "claim_id": "bb4efb42-4e04-46d8-b7a8-042f9f6dcd04",
+      "result_id": "6232b44b-ea80-4247-b9f2-6eb3ec503f37"
+    },
+    {
+      "claim_id": "5ad5fa78-c6c0-4ec7-8c9c-39f4449cd5f8",
+      "result_id": "6232b44b-ea80-4247-b9f2-6eb3ec503f37"
+    },
+    {
+      "claim_id": "0b8ddd7c-febc-4f25-bf9b-1747aabfd09c",
+      "result_id": "9643fdfa-2cba-4ecb-b661-271daef62f65"
+    },
+    {
+      "claim_id": "b29a69f9-2e66-4b08-a548-dbef482695cf",
+      "result_id": "9643fdfa-2cba-4ecb-b661-271daef62f65"
+    },
+    {
+      "claim_id": "956e28df-5422-4fdb-ab3b-e9a47388f420",
+      "result_id": "b4cce31a-990e-4546-b637-a96ce3e17c1d"
+    },
+    {
+      "claim_id": "d5a5e3f0-60e9-4b7e-92a9-61332af9f286",
+      "result_id": "b4cce31a-990e-4546-b637-a96ce3e17c1d"
+    },
+    {
+      "claim_id": "6ba264ac-73a8-438f-8da4-b4085e3e6df5",
+      "result_id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3"
+    },
+    {
+      "claim_id": "fdfc3ebb-a6db-4e3a-a1e1-1ec74df71ab0",
+      "result_id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3"
+    },
+    {
+      "claim_id": "db080900-b6b5-4f34-9e6c-b6a4568b9224",
+      "result_id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3"
+    },
+    {
+      "claim_id": "b4fedd47-f329-4fd6-8478-9283d23d79fa",
+      "result_id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3"
+    },
+    {
+      "claim_id": "689df81f-336c-4cd6-820a-54a2f24a6c10",
+      "result_id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3"
+    },
+    {
+      "claim_id": "644619f6-0516-4646-bdf4-c98d3461a36c",
+      "result_id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9"
+    },
+    {
+      "claim_id": "d2d8fbd2-5e54-4001-87ea-f9fb16fcfb71",
+      "result_id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9"
+    },
+    {
+      "claim_id": "fa49f30b-f1cb-426e-a6b9-5b0d38371d2c",
+      "result_id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9"
+    },
+    {
+      "claim_id": "f1e3e1bb-2242-4ef2-ba29-b3f6ff549efc",
+      "result_id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9"
+    },
+    {
+      "claim_id": "09448edd-235a-4e0d-81f7-99e8c35d91be",
+      "result_id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9"
+    },
+    {
+      "claim_id": "d7e22946-54af-4277-972d-70d0c86db5d1",
+      "result_id": "8d60ba0e-075e-475c-8342-413d60a6ab6b"
+    },
+    {
+      "claim_id": "a297447b-c45d-4ed1-a2c1-b18a430aeeb1",
+      "result_id": "8d60ba0e-075e-475c-8342-413d60a6ab6b"
+    },
+    {
+      "claim_id": "47502af9-c9a7-4630-a6a6-ebf12a8134be",
+      "result_id": "8d60ba0e-075e-475c-8342-413d60a6ab6b"
+    },
+    {
+      "claim_id": "e307305a-9f03-4876-b034-927e5b4e6f02",
+      "result_id": "8d60ba0e-075e-475c-8342-413d60a6ab6b"
+    },
+    {
+      "claim_id": "b336cff6-d4e4-478d-bbd0-0958034bcdce",
+      "result_id": "4c006d49-6db0-4ee7-8055-84ee0df3d647"
+    },
+    {
+      "claim_id": "3b55fb8c-3c38-47cb-b97e-2c63c90299d6",
+      "result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752"
+    },
+    {
+      "claim_id": "4bdd138d-6257-4889-9b67-6fc1a2a5fd09",
+      "result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752"
+    },
+    {
+      "claim_id": "1b473dd4-a7f3-4ed0-9213-6ad685123bc2",
+      "result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752"
+    },
+    {
+      "claim_id": "74bc0134-3d67-4881-af29-b70ba2d568ad",
+      "result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752"
+    },
+    {
+      "claim_id": "2f55b16f-0e0e-4352-97d8-452413b30e8c",
+      "result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752"
+    },
+    {
+      "claim_id": "27616f96-b713-408c-b9c4-e218e5c1a454",
+      "result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752"
+    },
+    {
+      "claim_id": "ddb279d3-65ac-4466-bfbb-d75db06a2e9b",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "211c8c59-049a-4a19-b546-c536c538094b",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "5513b3db-567e-49a0-86d1-11f108916eed",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "de9581ef-a908-432e-9931-17741027ce9d",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "312fab58-ffd8-4b21-9e63-8ea74bc4c4e4",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "96023885-07d9-463c-a0a7-d1ed542f4f48",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "c136fdb2-c11c-4bd3-ada0-fe00d5df96a6",
+      "result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29"
+    },
+    {
+      "claim_id": "4f3fa319-2c4b-4627-9dea-169aebb2112c",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "f70f27ba-4832-4604-bdb9-de256af63c86",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "c757f1e6-9bcd-4fe6-a578-2e110fbd20e2",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "bec90411-4924-439b-9c0c-6b048050ec70",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "8b08a007-6590-415f-963e-e908f6bbe72f",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "86f0e3d5-c051-42b1-a4d6-c5418312d37a",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "403772cd-7196-477c-9125-c4de8929284f",
+      "result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f"
+    },
+    {
+      "claim_id": "42024d1e-89b2-435c-b4b4-83f0bec1aebb",
+      "result_id": "96a16376-4d02-47fd-8227-e1b4842be25e"
+    },
+    {
+      "claim_id": "6ba264ac-73a8-438f-8da4-b4085e3e6df5",
+      "result_id": "96a16376-4d02-47fd-8227-e1b4842be25e"
+    },
+    {
+      "claim_id": "b37ae9bb-e83a-4d83-8463-3c2d4a9e4367",
+      "result_id": "96a16376-4d02-47fd-8227-e1b4842be25e"
+    },
+    {
+      "claim_id": "3014e954-ccd1-4d60-b1e3-1f84ee75e582",
+      "result_id": "96a16376-4d02-47fd-8227-e1b4842be25e"
+    },
+    {
+      "claim_id": "47502af9-c9a7-4630-a6a6-ebf12a8134be",
+      "result_id": "96a16376-4d02-47fd-8227-e1b4842be25e"
+    },
+    {
+      "claim_id": "6eabade9-7e1a-40d3-bfa5-f0a215d42016",
+      "result_id": "96a16376-4d02-47fd-8227-e1b4842be25e"
+    },
+    {
+      "claim_id": "644619f6-0516-4646-bdf4-c98d3461a36c",
+      "result_id": "a9527f78-4acc-4751-a10d-d3fd189a2e03"
+    },
+    {
+      "claim_id": "d2d8fbd2-5e54-4001-87ea-f9fb16fcfb71",
+      "result_id": "a9527f78-4acc-4751-a10d-d3fd189a2e03"
+    },
+    {
+      "claim_id": "fa49f30b-f1cb-426e-a6b9-5b0d38371d2c",
+      "result_id": "a9527f78-4acc-4751-a10d-d3fd189a2e03"
+    },
+    {
+      "claim_id": "f1e3e1bb-2242-4ef2-ba29-b3f6ff549efc",
+      "result_id": "a9527f78-4acc-4751-a10d-d3fd189a2e03"
+    },
+    {
+      "claim_id": "09448edd-235a-4e0d-81f7-99e8c35d91be",
+      "result_id": "a9527f78-4acc-4751-a10d-d3fd189a2e03"
+    },
+    {
+      "claim_id": "b4fedd47-f329-4fd6-8478-9283d23d79fa",
+      "result_id": "3699b2ce-9047-44a5-86b1-73b7623cdffb"
+    },
+    {
+      "claim_id": "689df81f-336c-4cd6-820a-54a2f24a6c10",
+      "result_id": "3699b2ce-9047-44a5-86b1-73b7623cdffb"
+    },
+    {
+      "claim_id": "d7e22946-54af-4277-972d-70d0c86db5d1",
+      "result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21"
+    },
+    {
+      "claim_id": "a297447b-c45d-4ed1-a2c1-b18a430aeeb1",
+      "result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21"
+    },
+    {
+      "claim_id": "956e28df-5422-4fdb-ab3b-e9a47388f420",
+      "result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21"
+    },
+    {
+      "claim_id": "d5a5e3f0-60e9-4b7e-92a9-61332af9f286",
+      "result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21"
+    },
+    {
+      "claim_id": "26c4ac87-dc96-475b-af23-87e78bdbbbde",
+      "result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21"
+    },
+    {
+      "claim_id": "b336cff6-d4e4-478d-bbd0-0958034bcdce",
+      "result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21"
+    },
+    {
+      "claim_id": "eb3a7c0e-1859-4c11-9343-51a4901eb0d6",
+      "result_id": "5c79032b-abcb-48ab-86ab-441a536d29cf"
+    },
+    {
+      "claim_id": "0b8ddd7c-febc-4f25-bf9b-1747aabfd09c",
+      "result_id": "5c79032b-abcb-48ab-86ab-441a536d29cf"
+    },
+    {
+      "claim_id": "c9e6cde7-46c5-4ccd-a375-378cbaa77033",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "4f023999-55fc-4ca8-89e5-ea6f5820ab40",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "d9edcb8a-ace1-4da3-9091-8674b9aa829b",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "6b611bb4-d58a-47cc-aaae-ce3e3fb4485a",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "9ddd0b8e-0a66-48a7-aebc-aa7d6280d754",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "b55349e7-5d0e-4096-99da-4b72e6217ac6",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "8c777cc3-eb40-49ec-93e9-c0ee8c3bb9f2",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "3397a8dd-f53d-474c-9789-431db161f4d5",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "468743be-05b9-4c16-93d6-0858d3eed633",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "dfabfd8c-00a8-47e3-9e1b-c4412a4a04b6",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "46c75996-0093-4d1e-9f1b-a41300347b7c",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "a43d9d7a-410a-4b20-8690-2fa10c5043ac",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "abfeed1d-3550-4cee-bcca-849342e7d948",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "0bea262b-f19e-4b9d-928c-45fae61bcf84",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "e30360b5-3780-4842-b91a-2c29d3ef2123",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "505c2233-6286-4543-9746-b7034f37acbf",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "052f04cd-b36d-48f1-b1c8-ab4b2c145bd9",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "ecd5b762-9603-4053-a71c-cc879b114bf3",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "f1720486-f71e-4166-be2a-425eff640bec",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "0cf9b93f-7319-426b-b949-c88a3cee0529",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "d03f3cd7-c5b1-443e-b3f2-d9e425dc08c4",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "95bbb3b0-0ac2-44bb-83d4-884945391af2",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "23853480-f38d-41b6-bcbc-ab66ca44f28a",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "0fdbab97-b071-4636-b693-0b1a9f3636fe",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "59888cf2-f223-4168-9154-a72c4a2daa05",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "4c52dad9-dbde-4f3b-bbda-a5f813f848f0",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    },
+    {
+      "claim_id": "9c618e28-3440-476f-9272-4cdafff47691",
+      "result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f78a7d0d-cc4c-45a8-a429-fab96da4deff",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "8a8f28f4-b3e3-4c70-b0b6-a9ca83b713a9",
+      "peer_result_id": "a9527f78-4acc-4751-a10d-d3fd189a2e03",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Perfect claim overlap (C87, C88, C107, C108, C115) regarding conformational changes during transport. LLM finds evidence well-supported that AMTs undergo conformational changes contradicting rigid channel model. Peer reviewers challenge this interpretation, stating it conflates binding with transport and that binding-induced changes without major conformational shifts could explain the data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "46376d25-7638-4884-828b-d689239251aa",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "6ff3ec00-e686-48d0-a37f-8ea0598780e3",
+      "peer_result_id": "3699b2ce-9047-44a5-86b1-73b7623cdffb",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address mechanistic ambiguity (C90, C100) regarding whether fluorescence reports binding vs. transport. LLM rates UNCERTAIN acknowledging data cannot distinguish mechanisms. Peer reviewers SUPPORT the authors' acknowledgment of this uncertainty, though they want it discussed more thoroughly throughout the paper. Both agree the ambiguity exists.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a2f22e43-d1af-4841-a9fc-3f9ca5e723cf",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "7afb76d8-8b9b-47e6-835b-f9802f17ec4b",
+      "peer_result_id": "96a16376-4d02-47fd-8227-e1b4842be25e",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap (C89 shared, plus C72 from LLM). LLM finds the correlation between transport activity and fluorescence well-supported through multiple validation lines including mutant studies. Peer reviewers are uncertain, stating they are 'not at all convinced that the signal reports transport activity' and believe authors conflate transport with substrate binding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "eee7b60a-61ed-4b7d-9fff-9bebefc46cdd",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "afbfef6d-e58d-4253-af57-ea8c57193289",
+      "peer_result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Strong overlap (C7, C49, C54, C57 shared). Both agree the technical development of AmTrac by cpGFP insertion with systematic optimization is well-documented and convincing. Peer reviewers explicitly state work is 'convincing, satisfying, and carefully done'.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "2b19d6ec-7462-49e2-99a2-fa46695f1786",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf",
+      "peer_result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Partial overlap (C59, C60, C61 shared). Both agree on the electrophysiological characterization showing similar Km values and that fluorescence correlates with concentration-dependent responses. Peer reviewers affirm the signal 'nicely tracks the NH4+ transport activity as measured directly by voltage-clamp methods'.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6cbcf886-192b-4f2d-b3de-021e32764b07",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "09de21ef-c532-47c0-8a65-357756a32f71",
+      "peer_result_id": "1ebede66-bc02-4ccc-ae6e-300101b5130f",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Good overlap (C65, C66, C67, C68 shared). Both agree on sensor reversibility, concentration-dependence, and selectivity data. Peer reviewers accept the Km measurements and selectivity findings without raising concerns about these specific technical characterizations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "0b0cf166-e0da-4f40-bfab-40620b7d4e90",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "b4cce31a-990e-4546-b637-a96ce3e17c1d",
+      "peer_result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Partial overlap (C52, C76 shared). Both agree on the generalizability and value of the approach. LLM emphasizes successful sensor creation for AMT1;2 and MEP2. Peer reviewers affirm 'these reporters represent an important technical advance' and may be 'quite valuable' for studying ammonium handling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "70628540-d765-4849-baf4-21f8aa7cc8cf",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "8d60ba0e-075e-475c-8342-413d60a6ab6b",
+      "peer_result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Partial overlap (C10, C11 shared). Both agree the technology represents an important advance for monitoring transporter activity. LLM emphasizes in vivo monitoring capabilities; peer reviewers affirm the 'important technical advance' and potential value for research applications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "f3603a37-9325-4904-b053-e2ae2f137c31",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "7afb76d8-8b9b-47e6-835b-f9802f17ec4b",
+      "peer_result_id": "5c79032b-abcb-48ab-86ab-441a536d29cf",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C72 shared). LLM finds mutant data strongly support that fluorescence reports transport-related processes. Peer reviewers are uncertain, stating 'Perhaps the suppressor screen experiments argue for actual transport, but this would require more information on binding and how this might be differentiated in the mutants'.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "a7dfe2e7-f015-4b9c-b692-60b9d6fd899d",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "9643fdfa-2cba-4ecb-b661-271daef62f65",
+      "peer_result_id": "5c79032b-abcb-48ab-86ab-441a536d29cf",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C74 shared). LLM finds AmTrac-100\u03bc development with altered kinetics well-supported. Peer reviewers express uncertainty about whether mutant data definitively distinguish transport from binding, requiring more information to interpret the findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "cfc0e897-de6d-4bce-bf1f-e683e309dede",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "4c006d49-6db0-4ee7-8055-84ee0df3d647",
+      "peer_result_id": "72fb4f2e-f2bb-4c90-bc2b-b85e59ed6a21",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C111 shared). Both agree the work represents a conceptual advance. LLM emphasizes monitoring activity states vs. just conformational changes. Peer reviewers affirm the technical advance and value of the approach, though they question some mechanistic interpretations elsewhere.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "c4c0100b-8271-40e0-9f82-d538945767c4",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "c1236dff-14d8-4d4d-9aad-b974c60fe7cf",
+      "peer_result_id": "246e0964-472c-448f-bcf6-d14bbdca8f29",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C8, C58 shared). Both agree on concentration-dependent fluorescence response being well-demonstrated. This represents the basic technical observation that reviewers accept, separate from mechanistic interpretation disputes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "000170dc-9d2a-44f2-9b83-e06670d7cfa9",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "6232b44b-ea80-4247-b9f2-6eb3ec503f37",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims C70, C71 about linker optimization and improved variants only evaluated by LLM. No corresponding peer review assessment found. LLM finds systematic screening of ~350 variants well-documented.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "6fed1a13-9d3b-458d-8915-cfc3eccc989e",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": "1f2f244e-ca22-4dd8-a62b-3ac2848c6752",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "partial",
+      "notes": "Claims C86, C116, C117, C119, C120, C121 about future applications and required follow-up only evaluated by LLM. These speculative statements about future directions are appropriately rated UNCERTAIN by LLM as untested hypotheses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    },
+    {
+      "id": "813b0dac-4882-4dac-94ce-f360c5b87eaa",
+      "submission_id": "d3330115-5095-4d7f-a359-75e6a10c4715",
+      "llm_result_id": null,
+      "peer_result_id": "270f826e-e8c7-4e3f-9d3d-4d247438af80",
+      "llm_status": null,
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "notes": "Large set of background claims (C1-C48) about ammonium biology, transporter function, and methodological context only explicitly evaluated by peer reviewers. These established knowledge claims provide accepted context and are not questioned.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:51:55.161602Z"
+    }
+  ]
+}
