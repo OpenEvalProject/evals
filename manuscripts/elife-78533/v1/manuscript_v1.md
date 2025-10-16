@@ -1,0 +1,17 @@
+# Core genes can have higher recombination rates than accessory genes within global microbial populations
+
+## Authors
+
+- Asher Preska Steinberg<sup>1</sup>
+- Mingzhi Lin<sup>1</sup>
+- Edo Kussell<sup>1</sup> ([ORCID: 0000-0003-0590-4036](https://orcid.org/0000-0003-0590-4036)) †
+
+### Affiliations
+
+1. Department of Biology New York University New York United States
+
+† Corresponding author
+
+## Abstract
+
+Recombination is essential to microbial evolution, and is involved in the spread of antibiotic resistance, antigenic variation, and adaptation to the host niche. However, assessing the impact of homologous recombination on accessory genes which are only present in a subset of strains of a given species remains challenging due to their complex phylogenetic relationships. Quantifying homologous recombination for accessory genes (which are important for niche-specific adaptations) in comparison to core genes (which are present in all strains and have essential functions) is critical to understanding how selection acts on variation to shape species diversity and genome structures of bacteria. Here, we apply a computationally efficient, non-phylogenetic approach to measure homologous recombination rates in the core and accessory genome using >100,000 whole genome sequences from Streptococcus pneumoniae and several additional species. By analyzing diverse sets of sequence clusters, we show that core genes often have higher recombination rates than accessory genes, and for some bacterial species the associated effect sizes for these differences are pronounced. In a subset of species, we find that gene frequency and homologous recombination rate are positively correlated. For S. pneumoniae and several additional species, we find that while the recombination rate is higher for the core genome, the mutational divergence is lower, indicating that divergence-based homologous recombination barriers could contribute to differences in recombination rates between the core and accessory genome. Homologous recombination may therefore play a key role in increasing the efficiency of selection in the most conserved parts of the genome.

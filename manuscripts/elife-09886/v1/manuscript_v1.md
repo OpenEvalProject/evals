@@ -1,0 +1,18 @@
+# Protein kinase C coordinates histone H3 phosphorylation and acetylation
+
+## Authors
+
+- Zoulfia Darieva
+- Aaron Webber
+- Stacey Warwood
+- Andrew D Sharrocks †
+
+### Affiliations
+
+1. Faculty of Life Sciences University of Manchester Manchester United Kingdom andrew.d.sharrocks@manchester.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+The re-assembly of chromatin following DNA replication is a critical event in the maintenance of genome integrity. Histone H3 acetylation at K56 and phosphorylation at T45 are two important chromatin modifications that accompany chromatin assembly. Here we have identified the protein kinase Pkc1 as a key regulator that coordinates the deposition of these modifications in S. cerevisiae under conditions of replicative stress. Pkc1 phosphorylates the histone acetyl transferase Rtt109 and promotes its ability to acetylate H3K56. Our data also reveal novel cross-talk between two different histone modifications as Pkc1 also enhances H3T45 phosphorylation and this modification is required for H3K56 acetylation. Our data therefore reveal an important role for Pkc1 in coordinating the deposition of two different histone modifications that are important for chromatin assembly.

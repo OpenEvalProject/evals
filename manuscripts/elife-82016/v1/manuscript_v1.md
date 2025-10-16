@@ -1,0 +1,20 @@
+# Tenotomy-induced muscle atrophy is sex-specific and independent of NFκB
+
+## Authors
+
+- Gretchen A Meyer<sup>1</sup> ([ORCID: 0000-0001-9268-3993](https://orcid.org/0000-0001-9268-3993)) †
+- Stavros Thomopoulos<sup>2</sup>
+- Yousef Abu-Amer<sup>3</sup> ([ORCID: 0000-0002-5890-5086](https://orcid.org/0000-0002-5890-5086))
+- Karen C Shen<sup>1</sup>
+
+### Affiliations
+
+1. Program in Physical Therapy Washington University in St. Louis St. Louis United States
+2. Department of Orthopaedic Surgery Columbia University New York United States
+3. Department of Orthopaedic Surgery Washington University in St. Louis St Louis United States
+
+† Corresponding author
+
+## Abstract
+
+The nuclear factor-κB (NFκB) pathway is a major thoroughfare for skeletal muscle atrophy and is driven by diverse stimuli. Targeted inhibition of NFκB through its canonical mediator IKKβ effectively mitigates loss of muscle mass across many conditions, from denervation to unloading to cancer. In this study, we used gain- and loss-of-function mouse models to examine the role of NFκB in muscle atrophy following rotator cuff tenotomy - a model of chronic rotator cuff tear. IKKβ was knocked down or constitutively activated in muscle-specific inducible transgenic mice to elicit a 2-fold gain or loss of NFκB signaling. Surprisingly, neither knockdown of IKKβ nor overexpression of caIKKβ significantly altered the loss of muscle mass following tenotomy. This finding was consistent across measures of morphological adaptation (fiber cross-sectional area, fiber length, fiber number), tissue pathology (fibrosis and fatty infiltration) and intracellular signaling (ubiquitin-proteasome, autophagy). Intriguingly, late-stage tenotomy-induced atrophy was exacerbated in male mice compared to female mice. This sex specificity was driven by ongoing decreases in fiber cross-sectional area, which paralleled the accumulation of large autophagic vesicles in male, but not female muscle. These findings suggest that tenotomy-induced atrophy is not dependent on NFκB and instead may be regulated by autophagy in a sex-specific manner.

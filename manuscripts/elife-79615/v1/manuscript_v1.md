@@ -1,0 +1,19 @@
+# Lack of ownership of mobile phones could hinder the rollout of mHealth interventions in Africa
+
+## Authors
+
+- Justin T Okano<sup>1</sup>
+- Joan Ponce<sup>1</sup>
+- Matthias Krönke<sup>2</sup> ([ORCID: 0000-0001-8387-9193](https://orcid.org/0000-0001-8387-9193))
+- Sally Blower<sup>1</sup> ([ORCID: 0000-0003-4342-3911](https://orcid.org/0000-0003-4342-3911)) †
+
+### Affiliations
+
+1. Department of Psychiatry and Biobehavioral Sciences University of California, Los Angeles Los Angeles United States
+2. nstitute for Democracy, Citizenship and Public Policy in Africa University of Cape Town Cape Town South Africa
+
+† Corresponding author
+
+## Abstract
+
+Mobile Health interventions, which require ownership of mobile phones, are being investigated throughout Africa. We estimate the percentage of individuals who own mobile phones in 33 African countries, identify a relationship between ownership and proximity to a health clinic (HC), and quantify inequities in ownership. We investigate basic mobile phone (BPs) and smartphones (SPs): SPs can connect to the internet, BPs cannot. We use nationally representative data collected in 2017-2018 from 44,224 individuals in Round 7 of the Afrobarometer surveys. We use Bayesian Multilevel Logistic regression models for our analyses. We find 82% of individuals in the 33 countries own mobile phones: 42% BPs, 40% SPs. Individuals who live close to an HC have higher odds of ownership than those who do not (adjusted odds ratio [aOR]: 1.31, Bayesian 95% Highest Posterior Density [HPD] region: 1.24-1.39). Men, compared with women, have over twice the odds of ownership (aOR: 2.37, 95% HPD region: 1.96-2.84). Urban residents, compared with rural residents, have almost three times the odds (aOR: 2.66, 95% HPD region: 2.22-3.18) and, amongst mobile phone owners, nearly three times the odds of owning an SP (aOR: 2.67, 95% HPD region: 2.33-3.10). Ownership increases with age, peaks in 26-40 year olds, then decreases. Individuals under 30 are more likely to own an SP than a BP, older individuals more likely to own a BP than an SP. Probability of ownership decreases with the Lived Poverty Index; however, some of the poorest individuals own SPs. If the digital devices needed for mHealth interventions are not equally available within the population (which we have found is the current situation), rolling out mHealth interventions in Africa is likely to propagate already existing inequities in access to healthcare.

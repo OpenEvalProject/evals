@@ -1,0 +1,16 @@
+# Optimal plasticity for memory maintenance during ongoing synaptic change
+
+## Authors
+
+- Dhruva Raman<sup>1</sup> ([ORCID: 0000-0002-8992-1353](https://orcid.org/0000-0002-8992-1353)) †
+- Timothy O'Leary<sup>1</sup> ([ORCID: 0000-0002-1029-0158](https://orcid.org/0000-0002-1029-0158)) †
+
+### Affiliations
+
+1. University of Cambridge Cambridge United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Synaptic connections in many brain circuits fluctuate, exhibiting substantial turnover and remodelling over hours to days. Surprisingly, experiments show that most of this flux in connectivity persists in the absence of learning or known plasticity signals. How can neural circuits retain learned information despite a large proportion of ongoing and potentially disruptive synaptic changes? We address this question from first principles by analysing how much compensatory plasticity would be required to optimally counteract ongoing fluctuations, regardless of whether fluctuations are random or systematic. Remarkably, we find that the answer is largely independent of plasticity mechanisms and circuit architectures: compensatory plasticity should be at most equal in magnitude to fluctuations, and often less, in direct agreement with previously unexplained experimental observations. Moreover, our analysis shows that a high proportion of learning-independent synaptic change is consistent with plasticity mechanisms that accurately compute error gradients.

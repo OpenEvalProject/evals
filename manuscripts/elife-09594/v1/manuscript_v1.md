@@ -1,0 +1,23 @@
+# A robust transcriptional program in newts undergoing multiple events of lens regeneration throughout their lifespan
+
+## Authors
+
+- Konstantinos Sousounis
+- Feng Qi
+- Manisha C Yadav
+- José L Millán
+- Fubito Toyama
+- Chikafumi Chiba
+- Yukiko Eguchi
+- Goro Eguchi
+- Panagiotis A Tsonis †
+
+### Affiliations
+
+1. Department of Biology University of Dayton Dayton United States ptsonis1@udayton.edu
+
+† Corresponding author
+
+## Abstract
+
+Newts have the ability to repeatedly regenerate their lens even during ageing. However, it is unclear whether this regeneration reflects an undisturbed genetic activity. To answer this question, we compared the transcriptomes of lenses, irises and tails from aged newts that had undergone 19-times lens regeneration with the equivalent tissues from young newts that had never experienced lens regeneration. Our analysis indicates that repeatedly regenerated lenses showed a robust transcriptional program comparable to young never-regenerated lenses. In contrast, the tail, that was never regenerated, showed gene expression signatures of ageing. Our analysis strongly suggests that, with respect to gene expression, the regenerated lenses have not deviated from a robust transcriptional program even after multiple events of regeneration throughout the life of the newt. In addition, our study provides a new paradigm in biology, and establishes the newt as a key model for the study of regeneration in relation to ageing.

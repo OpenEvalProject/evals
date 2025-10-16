@@ -1,0 +1,22 @@
+# Starvation promotes concerted modulation of appetitive olfactory behavior via parallel neuromodulatory circuits
+
+## Authors
+
+- Kang I Ko
+- Cory M Root
+- Scott A Lindsay
+- Orel A Zaninovich
+- Andrew K Shepherd
+- Steven A Wasserman
+- Susy M Kim
+- Jing W Wang †
+
+### Affiliations
+
+1. Neurobiology Section, Division of Biological Sciences University of California, San Diego San Diego United States jw800@ucsd.edu
+
+† Corresponding author
+
+## Abstract
+
+The internal state of an organism influences its perception of attractive or aversive stimuli and thus promotes adaptive behaviors that increase its likelihood of survival. The mechanisms underlying these perceptual shifts are critical to our understanding of how neural circuits support animal cognition and behavior. Starved flies exhibit enhanced sensitivity to attractive odors and reduced sensitivity to aversive odors. Here, we show that a functional remodeling of the olfactory map is mediated by two parallel neuromodulatory systems that act in opposing directions on olfactory attraction and aversion at the level of the first synapse. Short neuropeptide F (sNPF) sensitizes an antennal lobe glomerulus wired for attraction, while tachykinin (DTK) suppresses activity of a glomerulus wired for aversion. Thus we show parallel neuromodulatory systems functionally reconfigure early olfactory processing to optimize detection of nutrients at the risk of ignoring potentially toxic food resources.

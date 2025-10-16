@@ -1,0 +1,19 @@
+# The Apelin receptor enhances Nodal/TGFβ signaling to ensure proper cardiac development
+
+## Authors
+
+- Ashish R Deshwar
+- Serene C Chng
+- Lena Ho
+- Bruno Reversade
+- Ian C Scott †
+
+### Affiliations
+
+1. Program in Developmental and Stem Cell Biology The Hospital for Sick Children Toronto Canada ian.scott@sickkids.ca
+
+† Corresponding author
+
+## Abstract
+
+The Apelin receptor (Aplnr) is essential for heart development, controlling the early migration of cardiac progenitors. Here we demonstrate that in zebrafish Aplnr modulates Nodal/TGFβ signaling, a key pathway essential for mesendoderm induction and migration. Loss of Aplnr function leads to a reduction in Nodal target gene expression whereas activation of Aplnr by a non-peptide agonist increases the expression of these same targets. Furthermore, loss of Aplnr results in a delay in the expression of the cardiogenic transcription factors mespaa/ab . Elevating Nodal levels in aplnra/b morphant and double mutant embryos is sufficient to rescue cardiac differentiation defects. We demonstrate that loss of Aplnr attenuates the activity of a point source of Nodal ligands Squint and Cyclops in a non-cell autonomous manner. Our results favour a model in which Aplnr is required to fine-tune Nodal output, acting as a specific rheostat for the Nodal/TGFβ pathway during the earliest stages of cardiogenesis.

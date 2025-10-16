@@ -1,0 +1,16 @@
+# Early asymmetric cues triggering the dorsal/ventral gene regulatory network of the sea urchin embryo
+
+## Authors
+
+- Vincenzo Cavalieri †
+- Giovanni Spinelli
+
+### Affiliations
+
+1. Department of Biological, Chemical and Pharmaceutical Scciences and Technologies University of Palermo Palermo Italy
+
+† Corresponding author
+
+## Abstract
+
+Dorsal/ventral (DV) patterning of the sea urchin embryo relies on a ventrally-localized organizer expressing Nodal, a pivotal regulator of the DV gene regulatory network. However, the inceptive mechanisms imposing the symmetry-breaking are incompletely understood. In Paracentrotus lividus , the Hbox12 homeodomain-containing repressor is expressed by prospective dorsal cells, spatially facing and preceding the onset of nodal transcription. We report that Hbox12-misexpression provokes DV abnormalities, attenuating nodal and nodal -dependent transcription. Reciprocally, impairing hbox12 function disrupts DV polarity by allowing ectopic expression of nodal. Clonal loss-of-function, inflicted by blastomere transplantation or gene-transfer assays, highlights that DV polarization requires Hbox12 action in dorsal cells. Remarkably, the localized knock-down of nodal restores DV polarity of embryos lacking hbox12 function. Finally, we show that hbox12 is a dorsal-specific negative modulator of the p38-MAPK activity, which is required for nodal expression. Altogether, our results suggest that Hbox12 function is essential for proper positioning of the DV organizer.

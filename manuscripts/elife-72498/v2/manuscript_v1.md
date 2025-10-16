@@ -1,0 +1,17 @@
+# Empirical single-cell tracking and cell-fate simulation reveal dual roles of p53 in tumor suppression
+
+## Authors
+
+- Ann Rancourt<sup>1</sup>
+- Sachiko Sato<sup>1</sup>
+- Masahiko S Satoh<sup>1</sup> ([ORCID: 0000-0002-0461-2296](https://orcid.org/0000-0002-0461-2296)) †
+
+### Affiliations
+
+1. Centre Hospitalier Universitaire de Québec Quebec Canada
+
+† Corresponding author
+
+## Abstract
+
+The tumor suppressor p53 regulates various stress responses via increasing its cellular levels. The lowest p53 levels occur in unstressed cells; however, the functions of these low levels remain unclear. To investigate the functions, we used empirical single-cell tracking of p53-expressing (Control) cells and cells in which p53 expression was silenced by RNA interference (p53 RNAi). Here we show that p53 RNAi cells underwent more frequent cell death and cell fusion, which further induced multipolar cell division to generate aneuploid progeny. Those results suggest that the low levels of p53 in unstressed cells indeed have a role in suppressing the induction of cell death and the formation of aneuploid cells. We further investigated the impact of p53 silencing by developing an algorithm to simulate the fates of individual cells. Simulation of the fate of aneuploid cells revealed that these cells could propagate to create an aneuploid cell population. In addition, the simulation also revealed that more frequent induction of cell death in p53 RNAi cells under unstressed conditions conferred a disadvantage in terms of population expansion compared with Control cells, resulting in faster expansion of Control cells compared with p53 RNAi cells, leading to Control cells predominating in mixed cell populations. In contrast, the expansion of Control cells, but not p53 RNAi cells, was suppressed when the damage response was induced, allowing p53 RNAi cells to expand their population compared with the Control cells. These results suggest that, although p53 could suppress the formation of aneuploid cells, which could have a role in tumorigenesis, it could also allow the expansion of cells lacking p53 expression when the damage response is induced. p53 may thus play a role in both the suppression and the promotion of malignant cell formation during tumorigenesis.

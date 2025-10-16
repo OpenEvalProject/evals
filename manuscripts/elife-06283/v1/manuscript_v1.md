@@ -1,0 +1,20 @@
+# MAF1 represses CDKN1A through a Pol III-dependent mechanism
+
+## Authors
+
+- Yu-Ling Lee
+- Yuan-Ching Li
+- Chia-Hsin Su
+- Chun-Hui Chiao
+- I-Hsuan Lin
+- Ming-Ta Hsu †
+
+### Affiliations
+
+1. Institute of Biochemistry and Molecular Biology, School of Life Science National Yang-Ming University Taipei Taiwan mth@ym.edu.tw
+
+† Corresponding author
+
+## Abstract
+
+MAF1 represses Pol III-mediated transcription by interfering with TFIIIB and Pol III. Herein, we found that MAF1 knockdown induced CDKN1A transcription and chromatin looping concurrently with Pol III recruitment. Simultaneous knockdown of MAF1 with Pol III or BRF1 (subunit of TFIIIB) diminished the activation and looping effect, which indicates that recruiting Pol III was required for activation of Pol II-mediated transcription and chromatin looping. ChIP analysis after MAF1 knockdown indicated enhanced binding of Pol III and BRF1, as well as of CFP1, p300, and PCAF, which are factors that mediate active histone marks, along with the binding of TBP and POLR2E to the CDKN1A promoter. Simultaneous knockdown with Pol III abolished these regulatory events. Similar results were obtained for GDF15 . Our results reveal a novel mechanism by which MAF1 and Pol III regulate the activity of a protein-coding gene transcribed by Pol II.

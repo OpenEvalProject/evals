@@ -1,0 +1,29 @@
+# Peer review - Round 1
+
+Editors:
+- David D Ginty, Howard Hughes Medical Institute, Harvard Medical School , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.11627.029](https://doi.org/10.7554/eLife.11627.029)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your work entitled "Loss of Meis1 prevents sympathetic neurons target-field innervation and increases susceptibility to sudden cardiac death" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by David Ginty (Reviewing Editor) and K VijayRaghavan (Senior Editor).
+
+The reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+In this manuscript, Bouilloux et al., propose a role for the transcription factor, Meis1, in neurotrophin-dependent development of sympathetic neurons, likely via regulating the vesicular machinery. There are several strengths of this study; (1) the phenotypes in the Meis1 mutant mice, specifically the defects in autonomic physiology and the developmental defects in the sympathetic nervous system are striking and convincingly demonstrated. Specifically, the autonomic physiology defects in sympathetic regulation of cardiac functions are interesting and highlight the consequences of perturbations in peripheral innervation during development on target organ function later in life. (2) As noted by the authors, much of the work on transcriptional regulation of sympathetic nervous system development has been restricted to early stages of neuronal specification and differentiation. Thus, the identification of a transcription factor that influences later aspects of sympathetic neuronal survival and connectivity is a significant aspect of this study. The study does a nice job demonstrating physiological relevance with the heart analysis and the modeling of sudden cardiac death syndrome. Overall this is a rigorous and fairly comprehensive analysis. (3) In general, the physiological and histochemical analyses have been done rigorously and the data are of high quality. The reviewers appreciate the data showing that cell death in Meis1 sympathetic ganglia is prevented by removing Bax, similar to that noted in NGF;Bax double knockout mice. This supports the authors’ conclusions that it is post-mitotic sympathetic neurons that rely on target-derived neurotrophins that are being eliminated in the absence of Meis1, and not neuronal precursors or glial cells.
+
+Essential revisions:
+
+1) There is a serious concern about the mechanistic data and the interpretations. Specifically, whether the developmental phenotypes are due to a failure in retrograde NGF signaling is not clear. Concerns include: i) innervation of some targets (e.g. trachea) is strongly reduced in HtPACRE/Meis1LoxP/LoxPmice but not in NGF-/- mice (Glebova and Ginty, 2004) and, ii) the early cell death at E14.5 (Figure 3D) cannot be explained by reduced NGF/TrkA signaling. Naturally occurring cell death in sympathetic ganglia starts at E16-17 (Coughlin and Collins, 1985). In mice that lack NGF neuron loss can be detected by E17.5 (Crowley at al., 1994; Francis and Collins, 1999), iii) although pCREB may indicate NGF signaling it should be noted that sympathetic neuron development is not dependent on cell-autonomous CREB/pCREB (Parlato et al, 2007). Thus, while a deficit in retrograde NGF signaling may be a contributing factor it is unclear whether it accounts for the phenotype. There is also the technical concern that the immunostaining data for clathrin, Rab5 and synaptotagmin (Figure 6) are not convincing enough to make the claim that "clathrin-coated vesicles are virtually absent from Meis1 inactivated neurons" (Discussion section). Thus, the reviewers agree that your study requires direct analysis of TrkA trafficking (TrkA internalization and axonal transport) and more rigorous imaging of endocytic/synaptic organelles (instead of just Rab5 transport). Also, even if deficits in NGF trafficking are observed, statements in the Abstract and Discussion that disrupted retrograde NGF signaling accounts for the sympathetic neuron survival defects should be softened.
+
+2) The human tissue plasminogen activator (HtPA) Cre-mouse targets all neural crest derivatives including heart outflow tract (Pietri et al, 2003). As the Meis1-knockout has defects in the heart outflow tract (Stankunas et al., 2008) it may be expected that the development of cardiac neural crest derivatives is also affected in the HtPACRE/Meis1LoxP/LoxPmice. The authors argue that heart morphology and function are normal in HtPACRE/Meis1LoxP/LoxPmice (e.g. from Figure 1—figure supplement 2). In the Discussion (first paragraph) the authors refer to Mahmoud et al. (2013), which showed that a conditional Meis1 knockout in cardiomyocytes does not affect heart morphology and physiology. But HtPACRE is acting earlier and on different cell types than aMHCCRE. This is a potential complication and some of the conclusions would be in question if effects on heart development rather than sympathetic neuron development cannot be excluded in HtPACRE/Meis1LoxP/LoxP mice. The reviewers think that a more detailed explanation of the heart defects in the Meis1 mutant mice is warranted, in the Discussion.
+
+3) The authors should provide data on the innervation density in adult hearts, preferably of mice that show the described physiological phenotype to exclude the possibility that the surviving neurons have sprouted between E16.5 and adult stages.

@@ -1,0 +1,17 @@
+# Methylation at the C-2 position of hopanoids increases rigidity in native bacterial membranes
+
+## Authors
+
+- Chia-Hung Wu
+- Maja Bialecka-Fornal
+- Dianne K Newman †
+
+### Affiliations
+
+1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States dkn@caltech.edu
+
+† Corresponding author
+
+## Abstract
+
+Sedimentary rocks host a vast reservoir of organic carbon, such as 2-methylhopane biomarkers, whose evolutionary significance we poorly understand. Our ability to interpret this molecular fossil record is constrained by ignorance of the function of their molecular antecedents. To gain insight into the meaning of 2-methylhopanes, we quantified the dominant (des)methylated hopanoid species in the membranes of the model hopanoid-producing bacterium Rhodopseudomonas palustris TIE-1. Fluorescence polarization studies of small unilamellar vesicles revealed that hopanoid 2-methylation specifically renders native bacterial membranes more rigid at concentrations that are relevant in vivo. That hopanoids differentially modify native membrane rigidity as a function of their methylation state indicates that methylation itself promotes fitness under stress. Moreover, knowing the in vivo (2Me)-hopanoid concentration range in different cell membranes, and appreciating that (2Me)-hopanoids' biophysical effects are tuned by the lipid environment, permits the design of more relevant in vitro experiments to study their physiological functions.

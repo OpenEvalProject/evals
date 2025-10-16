@@ -1,0 +1,19 @@
+# Defocus corrected large area cryo-EM (DeCo-LACE) for label-free detection of molecules across entire cell sections
+
+## Authors
+
+- Johannes Elferich<sup>1</sup> ([ORCID: 0000-0002-9911-706X](https://orcid.org/0000-0002-9911-706X)) †
+- Giulia Schiroli<sup>2</sup>
+- David Scadden<sup>2</sup>
+- Nikolaus Grigorieff<sup>1</sup> ([ORCID: 0000-0002-1506-909X](https://orcid.org/0000-0002-1506-909X)) †
+
+### Affiliations
+
+1. RNA Therapeutics Institute University of Massachusetts, Howard Hughes Medical Institute Worcester United States
+2. Department of Stem Cell and Regenerative Biology Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+A major goal of biological imaging is localization of biomolecules inside a cell. Fluorescence microscopy can localize biomolecules inside whole cells and tissues, but its ability to count biomolecules and accuracy of the spatial coordinates is limited by the wavelength of visible light. Cryo-electron microscopy (cryo-EM) provides highly accurate position and orientation information of biomolecules but is often confined to small fields of view inside a cell, limiting biological context. In this study we use a new data-acquisition scheme called 'Defocus-Corrected Large-Area cryo-EM' (DeCo-LACE) to collect high-resolution images of entire sections (100 - 250 nm thick lamellae) of neutrophil-like mouse cells, representing 1-2% of the total cellular volume. We use 2D template matching (2DTM) to determine localization and orientation of the large ribosomal subunit in these sections. These data provide 'maps' of ribosomes across entire sections of mammalian cells. This high-throughput cryo-EM data collection approach together with 2DTM will advance visual proteomics and provide biological insight that cannot be obtained by other methods.

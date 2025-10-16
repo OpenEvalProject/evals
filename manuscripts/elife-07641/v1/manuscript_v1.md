@@ -1,0 +1,20 @@
+# How scent and nectar influence floral antagonists and mutualists
+
+## Authors
+
+- Danny Kessler
+- Mario Kallenbach
+- Celia Diezel
+- Eva Rothe
+- Mark Murdock
+- Ian T Baldwin †
+
+### Affiliations
+
+1. Department of Molecular Ecology Max-Planck Institute for Chemical Ecology Jena Germany baldwin@ice.mpg.de
+
+† Corresponding author
+
+## Abstract
+
+Many plants attract and reward pollinators with floral scents and nectar, respectively, but these traits can also incur fitness costs as they also attract herbivores. This dilemma, common to most flowering plants, could be solved by not producing nectar and/or scent, thereby cheating pollinators. Both nectar and scent are highly variable in native populations of coyote tobacco, Nicotiana attenuata , with some producing no nectar at all, uncorrelated with the tobacco's main floral attractant, benzylacetone. By silencing benzylacetone biosynthesis and nectar production in all combinations by RNAi, we experimentally uncouple these floral rewards/attractrants and measure their costs/benefits in the plant's native habitat and experimental tents. Both scent and nectar increase outcrossing rates for three, separately-tested, pollinators and both traits increase oviposition by a hawkmoth herbivore, with nectar being more influential than scent. These results underscore that it makes little sense to study floral traits as if they only mediated pollination services.

@@ -1,0 +1,20 @@
+# A circuit mechanism for the propagation of waves of muscle contraction in Drosophila
+
+## Authors
+
+- Akira Fushiki
+- Maarten F Zwart
+- Hiroshi Kohsaka
+- Richard D Fetter
+- Albert Cardona
+- Akinao Nose †
+
+### Affiliations
+
+1. Department of Complexity Science and Engineering, Graduate School of Frontier Sciences University of Tokyo Tokyo Japan nose@k.u-tokyo.ac.jp
+
+† Corresponding author
+
+## Abstract
+
+Animals move by adaptively coordinating the sequential activation of muscles. The circuit mechanisms underlying coordinated locomotion are poorly understood. Here, we report on a novel circuit for propagation of waves of muscle contraction, using the peristaltic locomotion of Drosophila larvae as a model system. We found an intersegmental chain of synaptically connected neurons, alternating excitatory and inhibitory, necessary for wave propagation and active in phase with the wave. The excitatory neurons (A27h) are premotor and necessary only for forward locomotion, and are modulated by stretch receptors and descending inputs. The inhibitory neurons (GDL) are necessary for both forward and backward locomotion, suggestive of different yet coupled central pattern generators, and its inhibition is necessary for wave propagation. The circuit structure and functional imaging indicated that the commands to contract one segment promote the relaxation of the next segment, revealing a mechanism for wave propagation in peristaltic locomotion.

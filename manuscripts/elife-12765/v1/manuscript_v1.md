@@ -1,0 +1,23 @@
+# Mapping replication dynamics in Trypanosoma brucei reveals a link with telomere transcription and antigenic variation
+
+## Authors
+
+- Rebecca Devlin
+- Catarina A Marques
+- Daniel Paape
+- Marko Prorocic
+- Andrea C Zurita-Leal
+- Samantha J Campbell
+- Craig Lapsley
+- Nicholas Dickens
+- Richard McCulloch †
+
+### Affiliations
+
+1. The Wellcome Trust Centre for Molecular Parasitology, Institute of Infection, Immunity and Inflammation University of Glasgow Glasgow United Kingdom Richard.McCulloch@glasgow.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Survival of Trypanosoma brucei depends upon switches in its protective Variant Surface Glycoprotein (VSG) coat by antigenic variation. VSG switching occurs by frequent homologous recombination, which is thought to require locus-specific initiation. Here, we show that a RecQ helicase, RECQ2, acts to repair DNA breaks, including in the telomeric site of VSG expression. Despite this, RECQ2 loss does not impair antigenic variation, but causes increased VSG switching by recombination, arguing against models for VSG switch initiation through direct generation of a DNA double strand break (DSB). Indeed, we show DSBs inefficiently direct recombination in the VSG expression site. By mapping genome replication dynamics, we reveal that the transcribed VSG expression site is the only telomeric site that is early replicating - a differential timing only seen in mammal-infective parasites. Specific association between VSG transcription and replication timing reveals a model for antigenic variation based on replication-derived DNA fragility.

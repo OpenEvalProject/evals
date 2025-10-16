@@ -1,0 +1,17 @@
+# Selective eradication of cancer displaying hyperactive Akt by exploiting the metabolic consequences of Akt activation
+
+## Authors
+
+- Veronique Nogueira<sup>1</sup> †
+- Krushna Chandra Patra<sup>1</sup>
+- Nissim Hay<sup>1</sup> ([ORCID: 0000-0002-6245-3000](https://orcid.org/0000-0002-6245-3000)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Molecular Genetics University of Illinois at Chicago Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+Akt activation in human cancers exerts chemoresistance, but pan-Akt inhibition elicits adverse consequences. We exploited the consequences of Akt-mediated mitochondrial and glucose metabolism to selectively eradicate and evade chemoresistance of prostate cancer displaying hyperactive Akt. PTEN-deficient prostate cancer cells that display hyperactivated Akt have high intracellular reactive oxygen species (ROS) levels, which are due, in part, to Akt-dependent increase of oxidative phosphorylation. High intracellular ROS levels selectively sensitize cells displaying hyperactive Akt to ROS-induced cell death enabling a therapeutic strategy combining a ROS inducer and rapamycin in PTEN-deficient prostate tumors in mouse models. This strategy elicited tumor regression, and markedly increased survival even after the treatment was stopped. By contrast, exposure to antioxidant increased prostate tumor progression. To increase glucose metabolism Akt activation phosphorylates HK2 and induced its expression. Indeed, HK2 deficiency in mouse models of Pten-deficient prostate cancer elicited a marked inhibition of tumor development and extended lifespan.

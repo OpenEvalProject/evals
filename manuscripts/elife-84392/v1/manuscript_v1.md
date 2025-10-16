@@ -1,0 +1,20 @@
+# Divergent functions of two clades of flavodoxin in diatoms mitigate oxidative stress and iron limitation
+
+## Authors
+
+- Shiri Graff van Creveld<sup>1</sup> ([ORCID: 0000-0002-3445-3046](https://orcid.org/0000-0002-3445-3046))
+- Sacha N Coesel<sup>1</sup>
+- Stephen Blaskowski<sup>1</sup>
+- Ryan D Groussman<sup>1</sup>
+- Megan J Schatz<sup>1</sup>
+- E Virginia Armbrust<sup>1</sup> ([ORCID: 0000-0001-7865-5101](https://orcid.org/0000-0001-7865-5101)) †
+
+### Affiliations
+
+1. School of Oceanography University of Washington Seattle United States
+
+† Corresponding author
+
+## Abstract
+
+Phytoplankton rely on diverse mechanisms to adapt to the decreased iron bioavailability and oxidative stress-inducing conditions of today's oxygenated oceans, including replacement of the iron-requiring ferredoxin electron shuttle protein with a less-efficient iron-free flavodoxin under iron limiting conditions. And yet, diatoms transcribe flavodoxins in high-iron regions in contrast to other phytoplankton. Here, we show that the two clades of flavodoxins present within diatoms exhibit a functional divergence, with only clade II flavodoxins displaying the canonical role in acclimation to iron limitation. We created CRISPR/Cas9 knock-outs of the clade I flavodoxin from the model diatom Thalassiosira pseudonana and found these cell lines are hypersensitive to oxidative stress, while maintaining a wild-type response to iron limitation. Within natural diatom communities, clade I flavodoxin transcript abundance is regulated over the diel cycle rather than in response to iron availability, whereas clade II transcript abundances increase either in iron‑limiting regions or under artificially induced iron-limitation. The observed functional specialization of two flavodoxin variants within diatoms reiterates two major stressors associated with contemporary oceans and illustrates diatom strategies to flourish in diverse aquatic ecosystems.

@@ -1,0 +1,16 @@
+# Distinct responses to reduplicated chromosomes require distinct Mad2 responses
+
+## Authors
+
+- Benjamin M Stormo
+- Donald T Fox †
+
+### Affiliations
+
+1. Department of Cell Biology Duke University Medical Center Durham United States don.fox@duke.edu
+
+† Corresponding author
+
+## Abstract
+
+Duplicating chromosomes once each cell cycle produces sister chromatid pairs, which separate accurately at anaphase. In contrast, reduplicating chromosomes without separation frequently produces polytene chromosomes, a barrier to accurate mitosis. Chromosome reduplication occurs in many contexts, including: polytene tissue development, polytene tumors, and following treatment with mitosis-blocking chemotherapeutics. However, mechanisms responding to or resolving polyteny during mitosis are poorly understood. Here, using Drosophila , we uncover two distinct reduplicated chromosome responses. First, when reduplicated polytene chromosomes persist into metaphase, an anaphase delay prevents tissue malformation and apoptosis. Second, reduplicated polytene chromosomes can also separate prior to metaphase through a spindle-independent mechanism termed Separation-Into-Recent-Sisters (SIRS). Both reduplication responses require the spindle assembly checkpoint protein Mad2. While Mad2 delays anaphase separation of metaphase polytene chromosomes, Mad2's control of overall mitotic timing ensures efficient SIRS. Our results pinpoint mechanisms enabling continued proliferation after genome reduplication, a finding with implications for cancer progression and prevention.

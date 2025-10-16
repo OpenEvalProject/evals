@@ -1,0 +1,25 @@
+# The dynamic interplay between ATP/ADP levels and autophagy sustain neuronal migration in vivo
+
+## Authors
+
+- Cedric Bressan<sup>1</sup>
+- Alessandra Pecora<sup>1</sup>
+- Dave Gagnon<sup>2</sup> ([ORCID: 0000-0001-7366-0665](https://orcid.org/0000-0001-7366-0665))
+- Marina Snapyan<sup>1</sup>
+- Simon Labrecque<sup>1</sup>
+- Paul De Koninck<sup>3</sup> ([ORCID: 0000-0002-6436-1062](https://orcid.org/0000-0002-6436-1062))
+- Martin Parent<sup>4</sup>
+- Armen Saghatelyan<sup>2</sup> ([ORCID: 0000-0003-4962-0465](https://orcid.org/0000-0003-4962-0465)) †
+
+### Affiliations
+
+1. CERVO Brain Research Center Université Laval Quebec Canada
+2. Psychiatry and Neuroscience Université Laval Quebec Canada
+3. Biochimie, Microbiologie & Bio-inormatique Université Laval Quebec Canada
+4. Psychiatry and neuroscience Université Laval Quebec City Canada
+
+† Corresponding author
+
+## Abstract
+
+Cell migration is a dynamic process that entails extensive protein synthesis and recycling, structural remodeling, and considerable bioenergetic demand. Autophagy is one of the pathways that maintain cellular homeostasis. Time-lapse imaging of autophagosomes and ATP/ADP levels in migrating cells in the rostral migratory stream of mice revealed that decreases in ATP levels force cells into the stationary phase and induce autophagy. Pharmacological or genetic impairments of autophagy in neuroblasts using either bafilomycin, inducible conditional mice, or CRISPR/Cas9 gene editing decreased cell migration due to the longer duration of the stationary phase. Autophagy is modulated in response to migration-promoting and inhibiting molecular cues and is required for the recycling of focal adhesions. Our results show that autophagy and energy consumption act in concert in migrating cells to dynamically regulate the pace and periodicity of the migratory and stationary phases in order to sustain neuronal migration.

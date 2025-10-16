@@ -1,0 +1,18 @@
+# Anatomical and functional organization of the human substantia nigra and its connections
+
+## Authors
+
+- Yu Zhang<sup>1</sup>
+- Kevin Michel-Herve Larcher<sup>1</sup>
+- Bratislav Misic<sup>1</sup>
+- Alain Dagher<sup>1</sup> ([ORCID: 0000-0002-0945-5779](https://orcid.org/0000-0002-0945-5779)) †
+
+### Affiliations
+
+1. Montreal Neurological Institute, McGill University Montreal Canada
+
+† Corresponding author
+
+## Abstract
+
+We investigated the anatomical and functional organization of the human substantia nigra (SN) using diffusion and functional MRI data from the Human Connectome Project. We identified a tripartite connectivity-based parcellation of SN with a limbic, cognitive, motor arrangement. The medial SN connects with limbic striatal and cortical regions and encodes value (greater response to monetary wins than losses during fMRI), while the ventral SN connects with associative regions of cortex and striatum and encodes salience (equal response to wins and losses). The lateral SN connects with somatomotor regions of striatum and cortex and also encodes salience. Behavioral measures from delay discounting and flanker tasks supported a role for the value-coding medial SN network in decisional impulsivity, while the salience-coding ventral SN network was associated with motor impulsivity. In sum, there is anatomical and functional heterogeneity of human SN, which underpins value versus salience coding, and impulsive choice versus impulsive action.

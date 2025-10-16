@@ -1,0 +1,20 @@
+# The antidepressant sertraline provides a novel host directed therapy module for augmenting TB therapy
+
+## Authors
+
+- Deepthi Shankaran<sup>1</sup>
+- Anjali Singh<sup>1</sup>
+- Stanzin Dawa<sup>1</sup>
+- Prabhakar Arumugam<sup>1</sup>
+- Sheetal Gandotra<sup>1</sup> ([ORCID: 0000-0002-1204-7290](https://orcid.org/0000-0002-1204-7290))
+- Vivek Rao<sup>1</sup> ([ORCID: 0000-0001-8646-6634](https://orcid.org/0000-0001-8646-6634)) †
+
+### Affiliations
+
+1. Cardio Respiratory Disease Unit Institute of Genomics and Integrative Biology New Delhi India
+
+† Corresponding author
+
+## Abstract
+
+A prolonged therapy, primarily responsible for development of drug resistance by Mycobacterium tuberculosis (Mtb), obligates any new TB regimen to not only reduce treatment duration but also escape pathogen resistance mechanisms. With the aim of harnessing the host response in providing support to existing regimens, we used sertraline (SRT) to stunt the pro-pathogenic type I IFN response of macrophages to infection. While SRT alone could only arrest bacterial growth, it effectively escalated the bactericidal activities of Isoniazid (H) and Rifampicin (R) in macrophages. This strengthening of antibiotic potencies by SRT was more evident in conditions of ineffective control by these frontline TB drug, against tolerant strains or dormant Mtb. SRT, could significantly combine with standard TB drugs to enhance early pathogen clearance from tissues of mice infected with either drug sensitive/ tolerant strains of Mtb. Further, we demonstrate an enhanced protection in acute TB infection of the highly susceptible C3HeB/FeJ mice with the combination therapy signifying the use of SRT as a potent adjunct to standard TB therapeutic regimens against bacterial populations of diverse physiology. This study advocates a novel host directed adjunct therapy regimen for TB with a clinically approved anti-depressant to achieve quicker and greater control of infection.

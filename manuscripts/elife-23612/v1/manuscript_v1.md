@@ -1,0 +1,22 @@
+# Silent synapses generate sparse and orthogonal action potential firing in adult-born hippocampal granule cells
+
+## Authors
+
+- Liyi Li<sup>1</sup>
+- Sebastien Sultan<sup>2</sup>
+- Stefanie Heigele<sup>1</sup>
+- Charlotte Schmidt-Salzmann<sup>3</sup>
+- Nicolas Toni<sup>2</sup>
+- Josef Bischofberger<sup>1</sup> ([ORCID: 0000-0002-4006-1663](https://orcid.org/0000-0002-4006-1663)) †
+
+### Affiliations
+
+1. Department of Biomedicine University of Basel Basel Switzerland
+2. Department of Fundamental Neurosciences University of Lausanne Lausanne Switzerland
+3. Klinik für Innere Medizin I University Hospital Freiburg Freiburg Germany
+
+† Corresponding author
+
+## Abstract
+
+In adult neurogenesis young neurons connect to the existing network via formation of thousands of new synapses. At early developmental stages, glutamatergic synapses are sparse, immature and functionally ‘silent’, expressing mainly NMDA receptors. Here we show in 2- to 3-week-old young neurons of adult mice, that brief-burst activity in glutamatergic fibers is sufficient to induce postsynaptic AP firing in the absence of AMPA receptors. The enhanced excitability of the young neurons lead to efficient temporal summation of small NMDA currents, dynamic unblocking of silent synapses and NMDA-receptor-dependent AP firing. Therefore, early synaptic inputs are powerfully converted into reliable spiking output. Furthermore, due to high synaptic gain, small dendritic trees and sparse connectivity, neighboring young neurons are activated by different distinct subsets of afferent fibers with minimal overlap. Taken together, synaptic recruitment of young neurons generates sparse and orthogonal AP firing, which may support sparse coding during hippocampal information processing.

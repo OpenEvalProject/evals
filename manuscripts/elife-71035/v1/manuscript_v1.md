@@ -1,0 +1,23 @@
+# Serum RNAs can predict lung cancer up to 10 years prior to diagnosis
+
+## Authors
+
+- Sinan Uğur Umu<sup>1</sup> ([ORCID: 0000-0001-8081-7819](https://orcid.org/0000-0001-8081-7819)) †
+- Hilde Langseth<sup>1</sup>
+- Verena Zuber<sup>2</sup>
+- Åslaug Helland<sup>3</sup>
+- Robert Lyle<sup>4</sup>
+- Trine B Rounge<sup>1</sup> †
+
+### Affiliations
+
+1. Department of Research Cancer Registry of Norway Oslo Norway
+2. Department of Epidemiology and Biostatistics Imperial College London London United Kingdom
+3. Department of Oncology Oslo University Hospital Oslo Norway
+4. Department of Medical Genetics Oslo University Hospital Oslo Norway
+
+† Corresponding author
+
+## Abstract
+
+Lung cancer (LC) prognosis is closely linked to the stage of disease when diagnosed. We investigated the biomarker potential of serum RNAs for the early detection of LC in smokers at different prediagnostic time intervals and histological subtypes. In total, 1061 samples from 925 individuals were analyzed. RNA sequencing with an average of 18 million reads per sample was performed. We generated machine learning models using normalized serum RNA levels and found that smokers later diagnosed with LC in 10 years can be robustly separated from healthy controls regardless of histology with an average area under the ROC curve (AUC) of 0.76 (95% CI, 0.68-0.83). Furthermore, the strongest models that took both time to diagnosis and histology into account successfully predicted non-small cell LC (NSCLC) between 6 to 8 years, with an AUC of 0.82 (95% CI, 0.76-0.88), and SCLC between 2 to 5 years, with an AUC of 0.89 (95% CI, 0.77-1.0), before diagnosis. The most important separators were microRNAs, miscellaneous RNAs, isomiRs and tRNA-derived fragments. We have shown that LC can be detected years before diagnosis and manifestation of disease symptoms independently of histological subtype. However, the highest AUCs were achieved for specific subtypes and time intervals before diagnosis. The collection of models may therefore also predict the severity of cancer development and its histology. Our study demonstrates that serum RNAs can be promising prediagnostic biomarkers in a LC screening setting, from early detection to risk assessment.

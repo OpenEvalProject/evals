@@ -1,0 +1,20 @@
+# A dynamic mode of mitotic bookmarking by transcription factors
+
+## Authors
+
+- Sheila S Teves<sup>1</sup> ([ORCID: 0000-0002-1220-2414](https://orcid.org/0000-0002-1220-2414))
+- Luye An<sup>1</sup>
+- Anders S Hansen<sup>1</sup>
+- Liangqi Xie<sup>1</sup>
+- Xavier Darzacq<sup>1</sup>
+- Robert Tjian<sup>1</sup> ([ORCID: 0000-0003-0539-8217](https://orcid.org/0000-0003-0539-8217)) †
+
+### Affiliations
+
+1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States
+
+† Corresponding author
+
+## Abstract
+
+During mitosis, transcription is shut off, chromatin condenses, and most transcription factors (TFs) are reported to be excluded from chromosomes. How do daughter cells re-establish the original transcription program? Recent discoveries that a select set of TFs remain bound on mitotic chromosomes suggest a potential mechanism for maintaining transcriptional programs through the cell cycle termed mitotic bookmarking. Here we report instead that many TFs remain associated with chromosomes in mouse embryonic stem cells, and that the exclusion previously described is largely a fixation artifact. In particular, most TFs we tested are significantly enriched on mitotic chromosomes. Studies with Sox2 reveal that this mitotic interaction is more dynamic than in interphase and is facilitated by both DNA binding and nuclear import. Furthermore, this dynamic mode results from lack of transcriptional activation rather than decreased accessibility of underlying DNA sequences in mitosis. The nature of the cross-linking artifact prompts careful re-examination of the role of TFs in mitotic bookmarking.

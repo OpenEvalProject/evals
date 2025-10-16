@@ -1,0 +1,31 @@
+# Author response - Round 1
+
+Authors:
+- Olivier Britz
+- Jingming Zhang
+- Katja S Grossmann
+- Jason Dyck
+- Jun C Kim
+- Susan Dymecki
+- Simon Gosgnach
+- Martyn Goulding
+
+## Response text
+
+DOI: [10.7554/eLife.04718.017](https://doi.org/10.7554/eLife.04718.017)
+
+1) The context of the present work needs to be broadened and deepened. Reviewer 2 has several specific suggestions about spinal cord research that should be considered mainly in the Introduction and Discussion. These are repeated in their entirety and should be addressed; it may be that not all the suggested citations are necessary but many can be incorporated to the benefit of the manuscript and each general point should be considered in the authors' response. […] Reviewer 3 is concerned that the paper overlooks the literature in non-mammalian preparations where many of the suggested mechanisms have been studied (Xenopus, lamprey, zebrafish). There are recent data in Xenopus and zebrafish about the role of V1 interneuron function as well as the functional diversity of specific classes of interneurons (V0 and V2a) and their connectivity in zebrafish.
+
+The Introduction of the manuscript has been substantially rewritten. There is now a much more in depth discussion of inhibitory neuron cell types in the cat and what is known about their activity during locomotion and their potential contribution to flexor-extensor motor behaviors. The papers suggested by Reviewer 2 that describe the role of Ib sensory feedback are cited and discussed, together with an additional study by Shoji et al. that describes Ib inhibition in humans during walking. We have included the additional references on Renshaw cells suggested by reviewer 2 (Noga et al., 1987, Bhumbra et al., 2014), and a further reference to the study by Myers et al. (2005). We decided not to cite Miller and Scott, 1977 as well as Talpalar et al. 2011. The Miller and Scott model has been widely discounted by a number of studies including that of Talpalar et al., and we feel that any discussion of it would not be informative, and instead might be confusing to those outside of the field. We also describe what is known about the cell types that make up the V1 and V2b IN populations. Overall, we feel that this has resulted in a much more thoughtful and scholarly introduction.
+
+2) The paper creates ambiguity about the role of these two classes of INs in motor patterning versus motor rhythm generation. The IN classes seem to affect flexor extensor balance (patterning) but not to disrupt the production of rhythmic motor bursts (rhythm generation) which is controlled by spinal oscillatory timing networks. In this conception CPG embraces both patterning and rhythm generating networks and thus CPG is an ambiguous term when trying to specify the exact role of a particular class of IN. The IN classes appear to affect cycle period somewhat in intact mice but this could be mediated by sensory feedback; the optogenetic experiments on fictive locomotion in Figure 7 could partially disambiguate this effect on period but a definitive answer would require monitoring rhythm generating elements centrally. There is no apparent strong effect on period in the figure, so perhaps the V1 and V2b INs do not have access to the rhythm generator.
+
+In our discussion of the deletions that occur during airstepping (Figure 5), we now make it clear that the deletions that we see are likely to be non-resetting in nature, which is consistent with the V1 and V2b Ins operating at the level of pattern formation rather than rhythm generation. We have a modified the Discussion section to tone down our comments about these deletions, as this was not the major focus of our study.
+
+3) Figures 4 and 5: The authors need to explain the apparent discrepancy between the lack of movements around the ankle joint (Figure 4A, B) and the occurrence of alternation EMG activity between GS and TA (Figure 5A) after V1 and V2b interneuron ablation. The changes in EMG activity are used to explain the effects seen on the movements of the ankle joint, but this activity does not fully account for the executed movements. Is something missing here?
+
+We feel that the EMG activity that we see in Figure 5 does largely account for the limited movement that occurs around the ankle joint. For example in comparing control and V1 IN-ablated mice, what one sees is a marked prolongation of TA activity. Admittedly there are short rhythmic bursts of GS muscle activity, however, these are severely truncated and in some instances are partially co-active with TA muscle activity. We would like to suggest that these short bursts of ankle extensor activity are insufficient for the full opening of the ankle joint. There is some opening, but this is rather limited. Likewise in the V2b IN-ablated animals we see very long bursts of GS extensor activity and a marked reduction in the duration and amplitude of TA activity, which is again consistent with there being very little movement around the ankle joint.
+
+4) Figure 6D, E: The effect of V1 ablation is different between walking and swimming. While the EMG activity is alternating during walking, it becomes synchronous during swimming. This needs some explanations to put it in some functional context. The quantification of the phase relationship between GS and TA in all conditions should be provided.
+
+We discuss in more detail the differences in ankle extensor and flexor EMG activity that occur during walking versus swimming in the V1 IN-ablated mice (see the third paragraph of the subsection “Deficits in flexor-extensor motor coordination persist following V1 and V2b IN ablation”). We believe that these differences are likely to be due to reduced Ib sensory feedback, which is known to promote extension and also strongly influence the transition from stance to swing during walking. In the absence of V1 inhibitory IN-mediated sensory feedback, attenuation of this pathway during swimming might remove the Ib sensory signals that suppress flexor activity during extension, as along with timing signals that are provided by Golgi tendon activity and possibly also cutaneous signals from the plantar surface of the foot. This point is raised again in the Discussion. The phase relationships between GS and TA are now provided in Figure 6–figure supplement 1.

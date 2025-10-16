@@ -1,0 +1,31 @@
+# Neutrophil-mediated fibroblast-tumor cell IL-6/STAT-3 signaling underlies the association between neutrophil-to-lymphocyte ratio dynamics and chemotherapy response in localized pancreatic cancer: a hybrid clinical-preclinical study
+
+## Authors
+
+- Iago de Castro Silva<sup>1</sup>
+- Anna Bianchi<sup>1</sup>
+- Nilesh U Deshpande<sup>1</sup>
+- Prateek Sharma<sup>2</sup>
+- Siddharth Mehra<sup>1</sup>
+- Vanessa Tonin Garrido<sup>1</sup>
+- Shannon Jacqueline Saigh<sup>3</sup>
+- Jonathan England<sup>4</sup>
+- Peter Joel Hosein<sup>5</sup>
+- Deukwoo Kwon<sup>6</sup>
+- Nipun B Merchant<sup>1</sup>
+- Jashodeep Datta<sup>1</sup> ([ORCID: 0000-0003-2869-1571](https://orcid.org/0000-0003-2869-1571)) †
+
+### Affiliations
+
+1. Department of Surgery University of Miami Miami United States
+2. Department of Surgery University of Nebraska Medical Center Omaha United States
+3. Sylvester Comprehensive Cancer Center Miami United States
+4. Department of Pathology University of Miami Miami United States
+5. Department of Medicine University of Miami Miami United States
+6. Department of Public Health Sciences The University of Texas Health Science Center at Houston Houston United States
+
+† Corresponding author
+
+## Abstract
+
+Background: Partial/complete pathologic response following neoadjuvant chemotherapy (NAC) in pancreatic cancer (PDAC) patients undergoing pancreatectomy is associated with improved survival. We sought to determine whether neutrophil-to-lymphocyte ratio (NLR) dynamics predict pathologic response following chemotherapy in PDAC, and if manipulating NLR impacts chemosensitivity in preclinical models and uncovers potential mechanistic underpinnings underlying these effects. Methods: Pathologic response in PDAC patients (n=94) undergoing NAC and pancreatectomy (7/2015-12/2019) was dichotomized as partial/complete or poor/absent. Bootstrap-validated multivariable models assessed associations between pre-chemotherapy NLR (%neutrophils÷%lymphocytes) or NLR dynamics during chemotherapy (ΔNLR=pre-surgery-pre-chemotherapy NLR) and pathologic response, disease-free survival (DFS), and overall survival (OS). To preclinically model effects of NLR attenuation on chemosensitivity, Ptf1a (PKT) mice and C57BL/6 mice orthotopically injected with Cre/+ ; Kras LSL-G12D/+ ;Tgfbr2 flox/flox Kras (KPC) cells were randomized to vehicle, gemcitabine/paclitaxel alone, and NLR-attenuating anti-Ly6G with/without gemcitabine/paclitaxel treatment. LSL-G12D/+ ;Trp53 LSL-R172H/+ ;Pdx1 Cre Results: In 94 PDAC patients undergoing NAC (median:4 months), pre-chemotherapy NLR (P<0.001) and ΔNLR attenuation during NAC (P=0.002) were independently associated with partial/complete pathologic response. An NLR score=pre-chemotherapy NLR+ΔNLR correlated with DFS (P=0.006) and OS (P=0.002). Upon preclinical modeling, combining NLR-attenuating anti-Ly6G treatment with gemcitabine/paclitaxel-compared with gemcitabine/paclitaxel or anti-Ly6G alone-not only significantly reduced tumor burden and metastatic outgrowth, but also augmented tumor-infiltrating CD107a + -degranulating CD8 + T-cells (P<0.01) while dampening inflammatory cancer-associated fibroblast (CAF) polarization (P=0.006) and chemoresistant IL-6/STAT-3 signaling in vivo . Neutrophil-derived IL-1β emerged as a novel mediator of stromal inflammation, inducing inflammatory CAF polarization and CAF-tumor cell IL-6/STAT-3 signaling in e x vivo co-cultures. Conclusions: Therapeutic strategies to mitigate neutrophil-CAF-tumor cell IL-1β/IL-6/STAT-3 signaling during NAC may improve pathologic responses and/or survival in PDAC. Funding: Supported by KL2 career development grant by Miami CTSI under NIH Award UL1TR002736, Stanley Glaser Foundation, American College of Surgeons Franklin Martin Career Development Award, and Association for Academic Surgery Joel J. Roslyn Faculty Award (to J. Datta); NIH R01 CA161976 (to N.B. Merchant); and NCI/NIH Award P30CA240139 (to J. Datta and N.B. Merchant).

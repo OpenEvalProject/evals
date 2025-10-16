@@ -1,0 +1,26 @@
+# Recognition of tumor cells by Dectin-1 orchestrates innate immune cells for anti-tumor responses
+
+## Authors
+
+- Shiho Chiba
+- Hiroaki Ikushima
+- Hiroshi Ueki
+- Hideyuki Yanai
+- Yoshitaka Kimura
+- Sho Hangai
+- Junko Nishio
+- Hideo Negishi
+- Tomohiko Tamura
+- Shinobu Saijo
+- Yoichiro Iwakura
+- Tadatsugu Taniguchi †
+
+### Affiliations
+
+1. Department of Molecular Immunology Institute of Industrial Science, The University of Tokyo Tokyo Japan tada@m.u-tokyo.ac.jp
+
+† Corresponding author
+
+## Abstract
+
+The eradication of tumor cells requires communication to and signaling by cells of the immune system.  Natural killer (NK) cells are essential tumor-killing effector cells of the innate immune system; however, little is known about whether or how other immune cells recognize tumor cells to assist NK cells.  Here, we show that the innate immune receptor Dectin-1 expressed on dendritic cells and macrophages is critical to NK-mediated killing of tumor cells that express N-glycan structures at high levels.  Receptor recognition of these tumor cells causes the activation of the IRF5 transcription factor and downstream gene induction for the full-blown tumoricidal activity of NK cells.  Consistent with this, we show exacerbated in vivo tumor growth in mice genetically deficient in either Dectin-1 or IRF5.  The critical contribution of Dectin-1 in the recognition of and signaling by tumor cells may offer new insight into the anti-tumor immune system with therapeutic implications.

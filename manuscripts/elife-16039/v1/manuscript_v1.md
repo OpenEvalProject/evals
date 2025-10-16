@@ -1,0 +1,17 @@
+# Distinct lateral inhibitory circuits drive parallel processing of sensory information in the mammalian olfactory bulb
+
+## Authors
+
+- Matthew A Geramita
+- Shawn D Burton
+- Nathan N Urban †
+
+### Affiliations
+
+1. Department of Neurobiology University of Pittsburgh Pittsburgh United States nurban@pitt.edu
+
+† Corresponding author
+
+## Abstract
+
+Splitting sensory information into parallel pathways is a common strategy in sensory systems. Yet, how circuits in these parallel pathways are composed to maintain or even enhance the encoding of specific stimulus features is poorly understood. Here, we have investigated the parallel pathways formed by mitral and tufted cells of the olfactory system in mice and characterized the emergence of feature selectivity in these cell types via distinct lateral inhibitory circuits. We find differences in activity-dependent lateral inhibition between mitral and tufted cells that likely reflect newly described differences in the activation of deep and superficial granule cells. Simulations show that these circuit-level differences allow mitral and tufted cells to best discriminate odors in separate concentration ranges, indicating that segregating information about different ranges of stimulus intensity may be an important function of these parallel sensory pathways.

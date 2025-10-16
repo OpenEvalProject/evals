@@ -1,0 +1,22 @@
+# Functional fission of parvalbumin interneuron classes during fast network events
+
+## Authors
+
+- Csaba Varga †
+- Mikko Oijala
+- Jonathan Lish
+- Gergely G Szabo
+- Marianne Bezaire
+- Ivan Marchionni
+- Peyman Golshani
+- Ivan Soltesz
+
+### Affiliations
+
+1. Department of Anatomy and Neurobiology University of California, Irvine Irvine United States
+
+† Corresponding author
+
+## Abstract
+
+Fast spiking, parvalbumin (PV) expressing hippocampal interneurons are classified into basket, axo-axonic (chandelier) and bistratified cells. These cell classes play key roles in regulating local circuit operations and rhythmogenesis by releasing GABA in precise temporal patterns onto distinct domains of principal cells. Here we show that each of the three major PV cell classes further splits into functionally distinct subclasses during fast network events in vivo. During the slower (<10Hz) theta oscillations, each cell class exhibited its own characteristic, relatively uniform firing behavior. However, during faster (>90Hz) oscillations, within-class differences in PV interneuron discharges emerged that segregated along specific features of dendritic structure or somatic location. Functional divergence of PV subclasses during fast but not slow network oscillations effectively doubles the repertoire of spatio-temporal patterns of GABA release available for rapid circuit operations.

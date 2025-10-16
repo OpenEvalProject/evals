@@ -1,0 +1,134 @@
+# eIF2α-mediated translational control regulates the persistence of cocaine-induced LTP in midbrain dopamine neurons
+
+## Authors
+
+- Andon N Placzek<sup>1</sup>
+- Gonzalo Viana Di Prisco<sup>1</sup>
+- Sanjeev Khatiwada<sup>1</sup>
+- Martina Sgritta<sup>1</sup>
+- Wei Huang<sup>1</sup>
+- Krešimir Krnjević<sup>4</sup>
+- Randal J Kaufman<sup>5</sup>
+- John A Dani<sup>6</sup>
+- Peter Walter<sup>7</sup>
+- Mauro Costa-Mattioli<sup>1</sup> †
+
+### Affiliations
+
+1. Department of Neuroscience Baylor College of Medicine Houston United States
+2. Memory and Brain Research Center Baylor College of Medicine Houston United States
+3. Verna and Marrs McLean Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States
+4. Department of Physiology McGill University Montreal Canada
+5. Degenerative Diseases Program SBP Medical Discovery Institute La Jolla United States
+6. Department of Neuroscience Mahoney Institute for Neurosciences, Perelman School of Medicine Philadelphia United States
+7. Department of Biochemistry and Biophysics Howard Hughes Medical Institute, University of California at San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+10.7554/eLife.17517.001 Recreational drug use leads to compulsive substance abuse in some individuals. Studies on animal models of drug addiction indicate that persistent long-term potentiation (LTP) of excitatory synaptic transmission onto ventral tegmental area (VTA) dopamine (DA) neurons is a critical component of sustained drug seeking. However, little is known about the mechanism regulating such long-lasting changes in synaptic strength. Previously, we identified that translational control by eIF2α phosphorylation (p-eIF2α) regulates cocaine-induced LTP in the VTA (Huang et al., 2016). Here we report that in mice with reduced p-eIF2α-mediated translation, cocaine induces persistent LTP in VTA DA neurons. Moreover, selectively inhibiting eIF2α-mediated translational control with a small molecule ISRIB, or knocking down oligophrenin-1 —an mRNA whose translation is controlled by p-eIF2α—in the VTA also prolongs cocaine-induced LTP. This persistent LTP is mediated by the insertion of GluR2-lacking AMPARs. Collectively, our findings suggest that eIF2α-mediated translational control regulates the progression from transient to persistent cocaine-induced LTP. DOI: http://dx.doi.org/10.7554/eLife.17517.001
+
+## Introduction
+
+Drug addiction is a complex behavioral disorder that starts with recreational use and, in some people, progresses to compulsive drug-seeking (Hyman, 2005). The precise molecular and cellular mechanism underlying this transition remains unclear. In addicts, repeated drug use leads to long-lasting changes in neuronal structure and function in key reward areas (Koob and Volkow, 2010), which have emerged as cellular correlates of drug addiction (Chen et al., 2008; Lüscher and Malenka, 2011). Of particular interest are excitatory synaptic afferents to dopaminergic neurons in the ventral tegmental area (VTA). These activity-dependent changes in synaptic strength in the VTA constitute the initial synaptic adaptations observed after drug exposure (Lüscher and Malenka, 2011; Schilstrom et al., 2006). For instance, a single injection of cocaine (or other drugs of abuse) given 24 hr before recording induces an LTP that is manifested as an increase in the ratio of the amplitude of α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptor (AMPAR)- to N-methyl D-aspartate receptor (NMDAR)-mediated excitatory postsynaptic currents (EPSCs) onto DA neurons in the VTA (Ungless et al., 2001). These early changes in synaptic strength are believed to facilitate persistent alterations in response to repeated exposure to drugs of abuse.
+
+LTP induced by an acute injection of cocaine typically lasts up to five days, but it returns to baseline after 10 days (Borgland et al., 2004). This short-lasting LTP is associated with the insertion of AMPARs lacking the GluR2 subunit, as demonstrated by an increased inward rectification of postsynaptic AMPAR currents (Bellone and Lüscher, 2006; Engblom et al., 2008). Interestingly, in contrast to passive cocaine administration, LTP persists for several weeks following self-administration (Chen et al., 2008). Thus, these drug-induced persistent changes in synaptic strength in the VTA may represent the cellular process driving the progression from recreational to compulsive drug use. Furthermore, pharmacological activation of metabotropic glutamate receptors (mGluRs) with dihydroxyphenylglycine (DHPG), a group I mGluR agonist, inhibits cocaine-induced LTP in VTA DA neurons (Bellone and Lüscher, 2006). This inhibition is attributed to the opposing effect of mGluR-mediated long-term depression (mGluR-LTD), which reverses drug-evoked LTP and inward rectification in VTA DA neurons by internalization of AMPARs (Bellone and Lüscher, 2006; Lüscher and Huber, 2010; Lüscher and Malenka, 2011).
+
+Our recent work provided a unifying model that explains how translational control by phosphorylation of the eukaryotic translation initiation factor eIF2 alpha subunit (eIF2α) regulates these two opposing forms of plasticity (cocaine-induced LTP and mGluR-induced LTD) in the VTA (Huang et al., 2016). First, cocaine induces LTP and reduces p-eIF2α levels in the VTA (Huang et al., 2016), whereas DHPG elicits mGluR1/5-induced LTD and increases p-eIF2α (Di Prisco et al., 2014; Trinh et al., 2014). Second, both genetic and pharmacological inhibition of p-eIF2α-mediated translational control facilitates the induction of LTP by blocking mGluR-LTD in VTA DA neurons (Huang et al., 2016). Finally, pharmacologically increasing p-eIF2α levels induces mGluR-LTD and prevents cocaine-induced LTP in VTA DA neurons (Huang et al., 2016).
+
+Given that mGluR-LTD blocks the persistence of cocaine-induced LTP (Mameli et al., 2009), and our previous finding that p-eIF2α–mediated translational control regulates both forms of long-lasting plasticity (Huang et al., 2016), we examined whether the same translational control program regulates the shift from a relatively transient cocaine-induced LTP to a more persistent one in VTA DA neurons.
+
+## Results
+
+## Single or multiple injections of cocaine reduce eIF2α phosphorylation in the VTA
+
+Single or repeated exposure to cocaine in rodents induces LTP that lasts for five days, but decays to baseline after 10 days (
+
+![Figure 1.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of experimental design. (b-c) Both single (10 mg/kg; p<0.001, n = 6 per group, t10 = 4.640) or multiple (five) injections of cocaine (10 mg/kg, p<0.05, n = 3 per group, t4 = 4.329) reduced p-eIF2α levels in the VTA of adult mice.DOI: http://dx.doi.org/10.7554/eLife.17517.002
+
+## Cocaine elicits persistent LTP in mice with reduced eIF2α phosphorylation
+
+We previously showed that the translational program controlled by p-eIF2α regulates the induction of LTP by a single injection of cocaine (Huang et al., 2016). To test whether the same process is involved in the persistence of LTP, we first employed Eif2s1S/A heterozygous mutant mice, in which a single phosphorylation site in eIF2α (encoded by the Eif2s1 gene) at Serine-51 is replaced by alanine. These mice have reduced p-eIF2α levels in the VTA (Huang et al., 2016).
+
+We injected control WT (
+
+![Figure 2.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig2-v2.jpg)
+
+**Figure 2.:** (a–c) Increased AMPAR/NMDAR ratios lasted only five days in cocaine-injected WT mice (10 mg/kg; 5d, p<0.01, n = 11/9/10 saline/5d cocaine/14d cocaine, F2,27 = 7.82), but persisted >14 days in cocaine-injected Eif2s1 mice (5d, p<0.001; 14d, p<0.001, S/An = 9/8/10 saline/5d cocaine/14d cocaine, F2,24 = 13.31). (d–f) Similarly, cocaine (10 mg/kg, i.p.) increased AMPAR/NMDAR ratio in GFP-positive cells (in which eIF2α cannot be phosphorylated), both at five and at 14 days post-injection (5d, p<0.001; 14d, p<0.001 , n = 5/6/6 saline/5d cocaine/14d cocaine, F2,14 = 8.30), compared to control GFP-negative cells (5d, p<0.05, n = 5/8/5 saline/5d cocaine/14d cocaine, F2,15 = 4.78) from Eif2s1ftg mice.A/A;DOI: http://dx.doi.org/10.7554/eLife.17517.003
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Eif2s1 mice, cocaine induced LTP in VTA DA neurons persisted for 40 days.S/AAverage AMPAR/NMDAR ratios are shown for adult wild-type control littermates (gray bars, n = 11/11 saline/40d cocaine) or adult Eif2s1 mutant mice (green bars, S/An = 9/5 saline/40d cocaine). Forty days after i.p. cocaine injections (10 mg/kg), a significant LTP was observed in VTA DA neurons from Eif2s1mice, but not in control littermates (p<0.05, S/A n = 11/5 WT 40d cocaine/Eif2s1 40d cocaine, S/At14 = 2.25, ).DOI: http://dx.doi.org/10.7554/eLife.17517.004
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Schematic of experiments. Left: in Eif2s1;ftg mice, both alleles of endogenous gene are mutated (Ser51Ala), and exogenous ftg transgene is expressed containing WT A/AEif2s1 and a stop signal flanked by two loxP sites that are followed by EGFP. When neurons are infected with AAV virus expressing Cre, the exogenous WT Eif2s1 and the stop signal are cleaved by Cre recombinase, enabling the expression of EGFP. Right: illustration of simultaneous recordings from GFP positive and negative VTA neuronsDOI: http://dx.doi.org/10.7554/eLife.17517.005
+
+## Conditional reduction in eIF2α phosphorylation specifically in the VTA leads to persistent cocaine-induced LTP
+
+To assess the regional and temporal specificity of our findings, we used a new eIF2α transgenic mouse line (Eif2s1A/A;ftg) (Di Prisco et al., 2014) characterized by conditional expression of homozygous Eif2s1 (Ser51Ala) mutants upon cell-type specific recombination mediated by Cre recombinase (Back et al., 2009). Cre-mediated deletion of the exogenous Eif2s1 coding region coordinately induces the expression of green fluorescent protein (GFP) in a small population of VTA neurons, enabling us to manipulate p-eIF2α levels in single cells and record the consequences at the single-cell level (Figure 2—figure supplement 2). In midbrain slices from these mice, we recorded from GFP-positive (GFP+) neurons (in which eIF2α cannot be phosphorylated) and GFP-negative (GFP-) control neurons. As expected, in GFP- (control) VTA DA neurons, cocaine-evoked LTP lasted five days, but returned to baseline by 14 days after withdrawal (Figure 2d and f). However, in GFP+ VTA DA neurons lacking p-eIF2α, LTP was much greater at five days and persisted for at least 14 days (Figure 2e and f), highlighting the cell-autonomous effect of eIF2α phosphorylation on the persistence of LTP. It is noteworthy that AAV5-Cre-GFP could infect non-dopaminergic neurons in the VTA of Eif2s1A/A;ftg mice. However, given the very low titer of virus injected to only sparsely infect DA neurons in the VTA, we expect the effect of inputs from Cre-GFP expressing non-DA neurons to be minimal towards the persistence of LTP in GFP+ VTA DA neurons.
+
+## Reduced p-eIF2α-mediated translational control leads to persistent cocaine-induced inward rectification
+
+Cocaine-induced synaptic potentiation in VTA DA neurons is accompanied by a shift in the subunit composition of postsynaptic AMPARs (
+
+![Figure 3.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig3-v2.jpg)
+
+**Figure 3.:** (a–b) Representative AMPAR EPSCs traces for each group recorded at −70 and +40 mV. I-V plots (c–d) and summaries (e) illustrate that cocaine-induced rectification lasts only five days in control mice (5d, p<0.001, n = 12/10/7 saline/5d cocaine/14d cocaine, F2,26 = 32.02) but persists at least 14 days in Eif2s1 mice (5d, p<0.05; 14d, p<0.05, S/An = 8/8/10 saline/5d cocaine/14d cocaine, F2,23 = 17.21).DOI: http://dx.doi.org/10.7554/eLife.17517.006
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Eif2s1 mice.S/A(a) At 14 days after cocaine injection, Joro Spider Toxin (JST, 500 nM), a polyamine that blocks GluR2-lacking AMPA current, depressed EPSCs (recorded at −70 mV) in VTA neurons from Eif2s1 mice (p<0.001, S/An = 5, t8 = 23.67), but not in neurons from control littermates (p = 0.42, n = 5, t8 = 0.857). (b) At 14 days after cocaine injection, 1-Naphthyl acetyl spermine (NASPM, 50 μM), a synthetic analog of JST that also blocks GluR2-lacking AMPA current, depressed EPSCs (recorded at −70 mV) in VTA neurons from Eif2s1 mice (p<0.01, S/An = 5, t8 = 5.992), but not in neurons from control littermates (p = 0.22, n = 5, t8 = 1.441).DOI: http://dx.doi.org/10.7554/eLife.17517.007
+
+## Selective pharmacological reduction of p-eIF2α-mediated translational control facilitates persistent cocaine-induced LTP and inward rectification
+
+While phosphorylation of eIF2α inhibits general protein synthesis by inhibiting the guanine nucleotide exchange factor (GEF) eIF2B, it also increases the translation of specific mRNAs (
+
+![Figure 4.](https://cdn.elifesciences.org/articles/17517/elife-17517-fig4-v2.jpg)
+
+**Figure 4.:** (a–c) Cocaine-induced increase in AMPAR/NMDAR ratios lasted only five days in control mice (5d, p<0.05, n = 5/5/5 saline/5d cocaine/14d cocaine, F2,12 = 8.38), but persisted at least 14 days in ISRIB-injected mice (5d, p<0.05; 14d, p<0.05, n = 5/5/5 saline/5d cocaine/14d cocaine, F2,12 = 6.40). (d–e) Representative AMPAR EPSCs traces and AMPAR/NMDAR ratios. I-V plots (f–g) and summaries (h) illustrate that cocaine-induced rectification lasts only five days in vehicle-injected mice (5d, p<0.05, n = 4/4/4 saline/5d cocaine/14d cocaine, F2,9 = 7.12), but persists at least 14 days in ISRIB-injected mice (5d, p<0.05; 14d, p<0.05, n = 4/4/4 saline/5d cocaine/14d cocaine, F2,9 = 7.53). (i) Knocking down OPHN1 in the VTA prolonged cocaine-induced LTP to 14 days after cocaine withdrawal (p<0.001, n = 9/8 control-shRNA/Ophn1-shRNA, t15 = 4.986).DOI: http://dx.doi.org/10.7554/eLife.17517.008
+
+Given that p-eIF2α-mediated synthesis of oligophrenin-1 (OPHN1) blocks cocaine-induced LTP (Huang et al., 2016), we next asked whether a reduction in OPHN1 levels in the VTA would also prolong cocaine-induced LTP. To answer this question, we knocked-down OPHN1 selectively in the VTA with a specific shRNA (Ophn1-shRNA) (Nadif Kasri et al., 2011). As expected, in OPHN1-deficient, but not in control VTA DA neurons, cocaine-induced LTP persisted for at least 14 days (Figure 4i). These data support the notion that cocaine-evoked LTP becomes persistent when p-eIF2α-mediated translation of OPHN1 is repressed.
+
+## Discussion
+
+Drug addiction is a disorder involving maladaptive plasticity in key reward areas of the brain (Bowers et al., 2010; Hyman et al., 2006; Kauer and Malenka, 2007; Lüscher and Malenka, 2011). In the VTA, the origin of the mesolimbic dopamine system, single or multiple injections of cocaine evoke synaptic potentiation that persists for about five days. This LTP is generated by the insertion of GluR2-lacking AMPARs into the postsynaptic membrane. Two studies revealed that mGluR-LTD in VTA DA neurons blocks cocaine-evoked LTP in these same cells by replacing GluR2-lacking calcium permeable AMPARs with GluR2-containing receptors (Bellone and Lüscher, 2006; Mameli et al., 2007). Unlike NMDA-induced LTD, mGluR-LTD depends on new protein synthesis (Lüscher and Huber, 2010). We have previously shown that eIF2α-mediated translational control is necessary and sufficient for mGluR-LTD in both the hippocampus and the VTA (Di Prisco et al., 2014; Huang et al., 2016). Translational control by the mammalian target of rapamycin complex 1 (i.e., mTORC1) (Buffington et al., 2014; Costa-Mattioli and Monteggia, 2013) has also been implicated in mGluR-LTD. Treatment with the mTORC1 inhibitor rapamycin blocks mGluR-LTD in the VTA (Mameli et al., 2007). While both translational control mechanisms (mTORC1 and p-eIF2α) could be required for mGluR-LTD, it is possible that rapamycin treatment could affect eIF2α-mediated translational control. During mGluR-LTD, activation of mGluRs by DHPG triggers the synthesis of OPHN1 (Nadif Kasri et al., 2011) in a p-eIF2α-dependent manner (Di Prisco et al., 2014). If rapamycin exerted its effects on mGluR-LTD by blocking OPHN1 translation, which is required to induce mGluR-LTD (Di Prisco et al., 2014; Nadif Kasri et al., 2011), these seemingly contradictory findings would be easily reconciled.
+
+Inhibition of mGluR-LTD by genetic disruption of Homer1C-mGluR1 interaction or by treatment with an antagonist of group I mGluRs [1-aminoindan-1,5-dicarboxylic acid (AIDA)] has been shown to prolong cocaine-induced LTP from five days to seven days (Mameli et al., 2009). By suppressing p-eIF2α-mediated mGluR-LTD, we found that cocaine induces an LTP that lasted up to 40 days and was mediated by the insertion of GluR2-lacking receptors. Thus, like self-administration of cocaine (Chen et al., 2008), passive injections of cocaine in mice with reduced p-eIF2α-mediated translational control elicit a synaptic potentiation that lasts for weeks.
+
+Recreational drug use is clinically separable from escalated drug use and compulsive drug-seeking behavior that characterize addiction. Our findings indicate that p-eIF2α-mediated translation prevents the progression from transient to persistent cocaine-induced LTP in VTA DA neurons, thus regulating synaptic potentiation that is believed to underlie compulsive drug seeking (Chen et al., 2008; Lüscher and Malenka, 2011; Mameli et al., 2009). In future studies, it will be interesting to examine whether this translational control mechanism regulates drug-seeking behaviors. In addition, it will important to assess whether cocaine-induced LTP could prime mice for enhanced behavioral output when challenged with a low dose of cocaine (or other drug of abuse) within the persistence window. Finally, it will be intriguing to study whether blocking p-eIF2α-mediated translation with ISRIB during extinction of cocaine memory is sufficient to prevent reinstatement.
+
+In humans, the vulnerability to compulsive drug abuse has been linked to deficits in cortico-striatal processing (Ersche et al., 2011; Volkow et al., 2009). We have recently found that mesolimbic neuronal reward responses are altered in human smokers carrying a single nucleotide polymorphism in the Eif2s1 gene (which encodes eIF2α) (Placzek et al., 2016). Therefore, it would be interesting to examine whether cortico-striatal processing is also dysfunctional in these individuals. In this regard, we speculate that in other key reward areas, mice with reduced p-eIF2α-mediated translational control should exhibit synaptic adaptations associated with persistent LTP in the VTA (Mameli et al., 2009).
+
+Finally, in cocaine addicts, persistent activity-dependent changes in synaptic strength in the VTA are likely to produce long-lasting changes in synaptic function in downstream structures, such as the nucleus accumbens (NAc) and prefrontal cortex (PFC). Thus, for a treatment for addiction to be effective, ideally, it should not only target the initial synaptic neuroadaptations in the VTA, but also the synaptic function in other related structures. Given that enhancing mGluR signaling in the NAc blocks cocaine relapse and craving (Loweth et al., 2013) and that eIF2α is a key regulator of mGluR-LTD and cocaine-induced LTP, we propose that modulators of p-eIF2α-mediated translational control may be useful in the treatment of cocaine addiction.
+
+## Materials and methods
+
+## Mice
+
+All experiments were conducted using C57Bl/6J male and female mice. Eif2s1S/A and Eif2s1A/A;ftg mice were previously described (Di Prisco et al., 2014). Mice were kept on a 12 hr/12 hr light/dark cycle (lights on at 7:00 am) and had access to food and water ad libitum. Animal care and experimental procedures were approved by the institutional animal care and use committee (IACUC) at Baylor College of Medicine, according to NIH Guidelines.
+
+No statistical methods were used to predetermine sample sizes. All sample sizes meet the criteria for corresponding statistical tests—our sample sizes are similar to those reported in previous publications (Argilli et al., 2008; Bellone and Lüscher, 2006; Koo et al., 2012; Saal et al., 2003; Ungless et al., 2001).
+
+## Drug treatment
+
+Cocaine was dissolved in 0.9% saline and injected at a volume of 5 ml/kg. Cocaine hydrochloride was obtained from Sigma-Aldrich (St. Louis, MO). ISRIB (P. Walter) was dissolved in DMSO and further diluted in PEG-400 (1:1 ratio) as previously described (Sidrauski et al., 2013). For both electrophysiological and behavioral experiments, ISRIB (2.5 mg/kg) or vehicle (DMSO/PEG-400, 2 ml/kg) was injected 90 min before cocaine or saline injection.
+
+## Slice electrophysiology
+
+Electrophysiological recordings were performed as previously described (Huang et al., 2016; Placzek et al., 2016). The investigators were kept blind to genotypes, and each electrophysiology experiment was replicated at least three times. Briefly, mice were anesthetized with a mixture of ketamine (100 mg/kg), xylazine (10 mg/kg), and acepromazine (3 mg/kg). Mice were transcardially perfused with an ice-cold, oxygenated (95% O2/5% CO2) solution containing (in mM) NaCl, 120; NaHCO3, 25; KCl, 3.3; NaH2PO4, 1.2; MgCl2, 4; CaCl2, 1; dextrose, 10; sucrose, 20. Horizontal slices (225–300 μm thick) containing the VTA were cut from the brains of adult (3–5 months old) C57BL/6J mice with a vibrating tissue slicer (VF-100 Compresstome, Precisionary Instruments, San Jose, CA, or Leica VT 1000S, Leica Microsystems, Buffalo Grove, IL). Slices were incubated at 34°C for 40 min, at room temperature for at least 30 min prior to recording, and then transferred to a recording chamber and continuously perfused with oxygenated artificial cerebrospinal fluid (ACSF) at 32°C and a flow rate of 2–3 ml/min. The recording ACSF was identical to the cutting solution except for the concentration of MgCl2 (1 mM) and CaCl2 (2 mM). Recording pipettes were made from thin-walled borosilicate glass (TW150F-4, WPI, Sarasota, FL), which were filled with intracellular solution containing (in mM): 117 CsMeSO3; 0.4 EGTA; 20 HEPES; 2.8 NaCl, 2.5 ATP-Mg 2.0; 0.25 GTP-Na; 5 TEA-Cl, adjusted to pH 7.3 with CsOH and 290 mOsmol/l; tip resistance, 3–5 MΩ. For studies of AMPAR current rectification, spermine (100 μM) was added to the internal solution.
+
+Data were obtained with a MultiClamp 700B amplifier, digitized at 20 kHz with a Digidata 1440A, recorded by Clampex 10 and analyzed with Clampfit 10 software (Molecular Devices), and filtered online at 4 kHz with a low-pass Bessel filter. A 2 mV hyperpolarizing pulse was applied before each EPSC to evaluate the input (Ri)and access resistances (Ra). Data were not included if Ra was either unstable or greater than 25 MΩ, holding current was >200 pA, Ri dropped >20% during the recording, or EPSC baselines changed by >10%. The representative traces illustrated in Figures are averages of 10–15 consecutive recorded sweeps.
+
+After establishing a gigaohm seal (>2 GΩ) and recording stable spontaneous firing in cell-attached, voltage clamp mode (−70 mV holding potential), cell phenotype was determined by measuring the width (>1.0 ms) of the cell-attached action potential (Chieng et al., 2011; Ford et al., 2006). AMPAR/NMDAR ratios were calculated as previously described (Ungless et al., 2001). Briefly, neurons were voltage-clamped at +40 mV until the holding current stabilized (at <200 pA), which usually occurred after a period of 5 to 15 min. A bipolar stimulating electrode placed 50–150 μm rostral to the lateral VTA was used to evoke stable monosynaptic EPSCs at 0.05 Hz. Picrotoxin (100 μM) was added to the recording ACSF to block GABAAR-mediated IPSCs. After recording the dual-component EPSC, bath-application of DL-AP5 (100 μM for 10 min) was used to remove the NMDAR component, which was then obtained by offline subtraction of the remaining AMPAR component from the original dual-component EPSC. The peak amplitudes of the isolated currents were used to calculate the AMPAR/NMDAR ratios. Rectification indices were calculated as the ratio of the chord conductance of evoked EPSCs at a negative holding potential (−70 mV) to the chord conductance obtained from recordings made at a positive holding potential (+40 mV) in the presence of 100 μM DL-AP5, as previously described (Bellone and Lüscher, 2006). Joro spider toxin (JST) was obtained from Sigma-Aldrich (St. Louis, MO), Picrotoxin and DL-AP5 were purchased from Tocris Bioscience, and all other reagents and experimental compounds were obtained from Sigma-Aldrich.
+
+## Virus injection
+
+AAV5-Cre (Titer: 1.0e13GC/ml) was purchased from Vector Biolabs (Cat#7012, Philadelphia, PA); Lentiviral constructs expressing Ophn1 shRNA and scrambled shRNA were generously provided by Dr. Linda van Aelst (Nadif Kasri et al., 2011) and viruses were produced by Gene Vector Core Laboratory (Baylor College of Medicine). Viral injections were performed as previously described (Di Prisco et al., 2014). Briefly, mice were anaesthetized with isoflurane (2–3%) and viruses (1–2 μl/site) were injected bilaterally at the rate of 0.1 μl/min, and an additional 10 min to allow for diffusion of viral particles. Injection coordinates targeting the VTA were as follows (with reference to bregma): −2.50 AP, ± 0.45 ML, −4.50 DV. The incision was sutured after injection and mice were returned to home cages. Mouse body weight and signs of illness were monitored until full recovery from surgery (~1 week). Drug treatment and experiments were all performed at least three weeks after viral injection.
+
+## Statistical analyses
+
+All data are presented as mean ± s.e.m. Statistical analyses were performed using SigmaPlot (Systat Software). Data distribution normality and homogeneity of variance were assessed using the Shapiro-Wilk and Levene tests, respectively. The statistics were based on the two-sided Student’s t test, or one- or two-way ANOVA with Tukey’s HSD (or HSD for unequal sample sizes where appropriate) to correct for multiple post hoc comparisons. Within-groups variation is indicated using standard errors of the mean of each distribution, which are depicted in the graphs as error bars. p<0.05 was considered significant (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).

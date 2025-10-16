@@ -1,0 +1,18 @@
+# Non-canonical H3K79me2-dependent pathways promote the survival of MLL-rearranged leukemia
+
+## Authors
+
+- William F Richter<sup>1</sup>
+- Rohan N Shah<sup>2</sup>
+- Alexander J Ruthenburg<sup>1</sup> ([ORCID: 0000-0003-2709-4564](https://orcid.org/0000-0003-2709-4564)) †
+
+### Affiliations
+
+1. Molecular Genetics and Cell Biology/ Biochemistry and Molecular Biology University of Chicago Chicago United States
+2. Pritzker School of Medicine University of Chicago Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+MLL-rearranged leukemia depends on H3K79 methylation. Depletion of this transcriptionally-activating mark by DOT1L deletion or high concentrations of the inhibitor pinometostat downregulates HOXA9 and MEIS1 , and consequently reduces leukemia survival. Yet some MLL-rearranged leukemias are inexplicably susceptible to low-dose pinometostat, far below concentrations that downregulate this canonical proliferation pathway. In this context, we define alternative proliferation pathways that more directly derive from H3K79me2 loss. By ICeChIP-seq, H3K79me2 is markedly depleted at pinometostat-downregulated and MLL-fusion targets, with paradoxical increases of H3K4me3 and loss of H3K27me3. Although downregulation of polycomb components accounts for some of the proliferation defect, transcriptional downregulation of FLT3 is the major pathway. Loss-of-FLT3-function recapitulates the cytotoxicity and gene expression consequences of low-dose pinometostat, whereas overexpression of constitutively active STAT5A , a target of FLT3-ITD-signalling, largely rescues these defects. This pathway also depends on MLL1, indicating combinations of DOT1L, MLL1 and FLT3 inhibitors should be explored for treating FLT3- mutant leukemia.

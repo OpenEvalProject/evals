@@ -1,0 +1,18 @@
+# Sexual dimorphic regulation of recombination by the synaptonemal complex in C. elegans
+
+## Authors
+
+- Cori K Cahoon<sup>1</sup> ([ORCID: 0000-0002-7888-2838](https://orcid.org/0000-0002-7888-2838))
+- Colette M Richter<sup>1</sup>
+- Amelia E Dayton<sup>1</sup>
+- Diana E Libuda<sup>1</sup> ([ORCID: 0000-0002-4944-1814](https://orcid.org/0000-0002-4944-1814)) †
+
+### Affiliations
+
+1. Department of Biology University of Oregon Eugene United States
+
+† Corresponding author
+
+## Abstract
+
+In sexually reproducing organisms, germ cells faithfully transmit the genome to the next generation by forming haploid gametes, such as eggs and sperm. Although most meiotic proteins are conserved between eggs and sperm, many aspects of meiosis are sexually dimorphic including the regulation of recombination. The synaptonemal complex (SC), a large ladder-like structure that forms between homologous chromosomes, is essential for regulating meiotic chromosome organization and promoting recombination. To assess whether sex-specific differences in the SC underpin sexually dimorphic aspects of meiosis, we examined Caenorhabditis elegans SC central region proteins (known as SYP proteins) in oogenesis and spermatogenesis and uncovered sex-specific roles for the SYPs in regulating meiotic recombination. We find that SC composition, specifically SYP-2, SYP-3, SYP-5 and SYP-6, is regulated by sex-specific mechanisms throughout meiotic prophase I. During pachytene, both oocytes and spermatocytes differentially regulate the stability of SYP-2 and SYP-3 within an assembled SC. Further, we uncover that the relative amount of SYP-2 and SYP-3 within the SC is independently regulated in both a sex-specific and a recombination-dependent manner. Specifically, we find that SYP-2 regulates the early steps of recombination in both sexes, while SYP-3 controls the timing and positioning of crossover recombination events across the genomic landscape in only oocytes. Finally, we find that SYP-2 and SYP-3 dosage can influence the composition of the other SYPs in the SC via sex-specific mechanisms during pachytene. Taken together, we demonstrate dosage-dependent regulation of individual SC components with sex-specific functions in recombination. These sexual dimorphic features of the SC provide insights into how spermatogenesis and oogenesis adapted similar chromosome structures to differentially regulate and execute recombination.

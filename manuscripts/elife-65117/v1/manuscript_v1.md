@@ -1,0 +1,19 @@
+# Extensive age-dependent loss of antibody diversity in naturally short-lived turquoise killifish
+
+## Authors
+
+- William John Bradshaw<sup>1</sup>
+- Michael Poeschla<sup>1</sup>
+- Aleksandra Placzek<sup>1</sup>
+- Samuel Kean<sup>1</sup>
+- Dario Riccardo Valenzano<sup>1</sup> ([ORCID: 0000-0002-8761-8289](https://orcid.org/0000-0002-8761-8289)) †
+
+### Affiliations
+
+1. Evolutionary and Experimental Biology of Ageing Max Planck Institute for Biology of Ageing Cologne Germany
+
+† Corresponding author
+
+## Abstract
+
+Aging individuals exhibit a pervasive decline in adaptive immune function, with important implications for health and lifespan. Previous studies have found a pervasive loss of immune-repertoire diversity in human peripheral blood during aging; however, little is known about repertoire aging in other immune compartments, or in species other than humans. Here, we perform the first study of immune-repertoire aging in an emerging model of vertebrate aging, the African turquoise killifish ( Nothobranchius furzeri ). Despite their extremely short lifespans, these killifish exhibit complex and individualized heavy-chain repertoires, with a generative process capable of producing millions of distinct productive sequences. Whole-body killifish repertoires decline rapidly in within-individual diversity with age, while between-individual variability increases. Large, expanded B-cell clones exhibit far greater diversity loss with age than small clones, suggesting important differences in how age affects different B cell populations. The immune repertoires of isolated intestinal samples exhibit especially dramatic age-related diversity loss, related to an elevated prevalence of expanded clones. Lower intestinal repertoire diversity was also associated with transcriptomic signatures of reduced B-cell activity, supporting a functional role for diversity changes in killifish immunosenescence. Our results highlight important differences in systemic vs. organ-specific aging dynamics in the adaptive immune system.

@@ -1,0 +1,22 @@
+# Prospective identification of functionally distinct stem cells and neurosphere-initiating cells in adult mouse forebrain
+
+## Authors
+
+- John K Mich
+- Robert AJ Signer
+- Daisuke Nakada
+- André Pineda
+- Rebecca J Burgess
+- Tou Yia Vue
+- Jane E Johnson
+- Sean J Morrison †
+
+### Affiliations
+
+1. Department of Pediatrics, Children's Research Institute Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States sean.morrison@utsouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Neurosphere formation is commonly used as a surrogate for neural stem cell (NSC) function but the relationship between neurosphere-initiating cells (NICs) and NSCs remains unclear. We prospectively identified, and isolated by flow cytometry, adult mouse lateral ventricle subventricular zone (SVZ) NICs as GlastmidEGFRhighPlexinB2highCD24-/lowO4/PSA-NCAM-/lowTer119/CD45- (GEPCOT) cells. They were highly mitotic and short-lived in vivo based on fate-mapping with Ascl1CreERT2 and Dlx1CreERT2. In contrast, pre-GEPCOT cells were quiescent, expressed higher Glast, and lower EGFR and PlexinB2. Pre-GEPCOT cells could not form neurospheres but expressed the stem cell markers Slc1a3-CreERT, GFAP-CreERT2, Sox2CreERT2, and Gli1CreERT2 and were long-lived in vivo. While GEPCOT NICs were ablated by temozolomide, pre-GEPCOT cells survived and repopulated the SVZ. Conditional deletion of the Bmi-1 polycomb protein depleted pre-GEPCOT and GEPCOT cells, though pre-GEPCOT cells were more dependent upon Bmi-1 for Cdkn2a (p16Ink4a) repression. Our data distinguish quiescent NSCs from NICs and make it possible to study their properties in vivo.

@@ -1,0 +1,16 @@
+# Neuron-wide RNA transport combines with netrin-mediated local translation to spatially regulate the synaptic proteome
+
+## Authors
+
+- Kelsey C Martin †
+- Sangmok Kim
+
+### Affiliations
+
+1. Department of Biological Chemistry University of California, Los Angeles Los Angeles United States
+
+† Corresponding author
+
+## Abstract
+
+The persistence of experience-dependent changes in brain connectivity requires RNA localization and protein synthesis. Previous studies have demonstrated a role for local translation in altering the structure and function of synapses during synapse formation and experience-dependent synaptic plasticity. Here we ask whether in addition to promoting local translation, local stimulation also triggers directed trafficking of RNAs from nucleus to stimulated synapses. Imaging of RNA localization and translation in cultured Aplysia sensory-motor neurons revealed that RNAs were delivered throughout the arbor of the sensory neuron, but that translation was enriched only at sites of synaptic contact and/or synaptic stimulation. Investigation of the mechanisms that trigger local translation revealed a role for calcium-dependent retrograde netrin-1/DCC receptor signaling. Spatially restricting gene expression by regulating local translation rather than by directing the delivery of mRNAs from nucleus to stimulated synapses maximizes the readiness of the entire neuronal arbor to respond to local cues.

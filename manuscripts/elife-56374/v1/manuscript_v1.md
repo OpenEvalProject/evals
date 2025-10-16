@@ -1,0 +1,18 @@
+# Intrinsic control of neuronal diversity and synaptic specificity in a proprioceptive circuit
+
+## Authors
+
+- Maggie M Shin<sup>1</sup>
+- Catarina Catela<sup>2</sup>
+- Jeremy Dasen<sup>1</sup> ([ORCID: 0000-0002-9434-874X](https://orcid.org/0000-0002-9434-874X)) †
+
+### Affiliations
+
+1. Neuroscience and Physiology NYU School of Medicine New York United States
+2. Department of Neurobiology University of Chicago Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+Relay of muscle-derived sensory information to the CNS is essential for the execution of motor behavior, but how proprioceptive sensory neurons (pSNs) establish functionally appropriate connections is poorly understood. A prevailing model of sensory-motor circuit assembly is that peripheral, target-derived, cues instruct pSN identities and patterns of intraspinal connectivity. To date no known intrinsic determinants of muscle-specific pSN fates have been described in vertebrates. We show that expression of Hox transcription factors defines pSN subtypes, and these profiles are established independently of limb muscle. The Hoxc8 gene is expressed by pSNs and motor neurons (MNs) targeting distal forelimb muscles, and sensory-specific depletion of Hoxc8 in mice disrupts sensory-motor synaptic matching, without affecting pSN survival or muscle targeting. These results indicate that the diversity and central specificity of pSNs and MNs are regulated by a common set of determinants, thus linking early rostrocaudal patterning to the assembly of limb control circuits.

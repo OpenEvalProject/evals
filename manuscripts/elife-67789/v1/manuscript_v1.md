@@ -1,0 +1,19 @@
+# Genetic code expansion enables visualization of Salmonella type three secretion system components and secreted effectors
+
+## Authors
+
+- Moirangthem Kiran Singh<sup>1</sup>
+- Parisa Zangoui<sup>1</sup>
+- Yuki Yamanaka<sup>2</sup>
+- Linda J Kenney<sup>1</sup> ([ORCID: 0000-0002-8658-0717](https://orcid.org/0000-0002-8658-0717)) †
+
+### Affiliations
+
+1. Biochemistry and Molecular Biology University of Texas Medical Branch Galveston United States
+2. School of Life Dentistry Nippon Dental University School of Life Dentistry at Tokyo Tokyo Japan
+
+† Corresponding author
+
+## Abstract
+
+Type three secretion systems enable bacterial pathogens to inject effectors into the cytosol of eukaryotic hosts to reprogram cellular functions. It is technically challenging to label effectors and the secretion machinery without disrupting their structure/function. Herein, we present a new approach for labeling and visualization of previously intractable targets. Using genetic code expansion, we site-specifically labeled SsaP, the substrate specificity switch, and SifA, a here-to-fore unlabeled secreted effector. SsaP was secreted at later infection times; SsaP labeling demonstrated the stochasticity of injectisome and effector expression. SifA was labeled after secretion into host cells via fluorescent unnatural amino acids or non-fluorescent labels and a subsequent click reaction. We demonstrate the superiority of imaging after genetic code expansion compared to small molecule tags. It provides an alternative for labeling proteins that do not tolerate N- or C-terminal tags or fluorophores and thus is widely applicable to other secreted effectors and small proteins.

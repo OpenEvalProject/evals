@@ -1,0 +1,20 @@
+# Examining kinesin processivity within a general gating framework
+
+## Authors
+
+- Johan O L Andreasson
+- Bojan Milic
+- Geng-Yuan Chen
+- Nicholas R Guydosh
+- William O Hancock
+- Steven M Block †
+
+### Affiliations
+
+1. Department of Biology Stanford University Stanford United States sblock@stanford.edu
+
+† Corresponding author
+
+## Abstract
+
+Kinesin-1 is a dimeric motor that transports cargo along microtubules, taking 8.2-nm steps in a hand-over-hand fashion. The ATP hydrolysis cycles of its two heads are maintained out of phase by a series of gating mechanisms, which lead to processive runs averaging ~1 μm. A key structural element for inter-head coordination is the neck linker (NL), which connects the heads to the stalk. To examine the role of the NL in regulating stepping, we investigated NL mutants of various lengths using single-molecule optical trapping and bulk fluorescence approaches in the context of a general framework for gating. Our results show that, although inter-head tension enhances motor velocity, it is crucial neither for inter-head coordination nor for rapid rear-head release. Furthermore, cysteine-light mutants do not produce wild-type motility under load. We conclude that kinesin-1 is primarily front-head gated, and that NL length is tuned to enhance unidirectional processivity and velocity.

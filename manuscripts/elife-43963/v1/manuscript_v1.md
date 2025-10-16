@@ -1,0 +1,17 @@
+# The ion channel ppk301 controls freshwater egg-laying in the mosquito Aedes aegypti
+
+## Authors
+
+- Benjamin J Matthews<sup>1</sup> ([ORCID: 0000-0002-8697-699X](https://orcid.org/0000-0002-8697-699X))
+- Meg A Younger<sup>1</sup> ([ORCID: 0000-0003-4967-7939](https://orcid.org/0000-0003-4967-7939))
+- Leslie B Vosshall<sup>1</sup> ([ORCID: 0000-0002-6060-8099](https://orcid.org/0000-0002-6060-8099)) †
+
+### Affiliations
+
+1. Laboratory of Neurogenetics and Behavior The Rockefeller University New York United States
+
+† Corresponding author
+
+## Abstract
+
+Female Aedes aegypti mosquitoes are deadly vectors of arboviral pathogens and breed in containers of freshwater associated with human habitation. Because high salinity is lethal to offspring, correctly evaluating water purity is a crucial parenting decision. We found that the DEG/ENaC channel ppk301 and sensory neurons expressing ppk301 control egg-laying initiation and choice in Ae. aegypti . Using calcium imaging, we found that ppk301 -expressing cells show ppk301 -dependent responses to water but, unexpectedly, also respond to salt in a ppk301 -independent fashion. This suggests that ppk301 is instructive for egg-laying at low salt concentrations, but that a ppk301- independent pathway is responsible for inhibiting egg-laying at high salt concentrations. Water is a key resource for insect survival and understanding how mosquitoes interact with water to control different behaviors is an opportunity to study the evolution of chemosensory systems.

@@ -1,0 +1,28 @@
+# Identification of the transcription factor ZEB1 as a central component of the adipogenic gene regulatory network
+
+## Authors
+
+- Carine Gubelmann
+- Petra C Schwalie
+- Sunil K Raghav
+- Eva Röder
+- Tenagne Delessa
+- Elke Kiehlmann
+- Sebastian M Waszak
+- Andrea Corsinotti
+- Gilles Udin
+- Wiebke Holcombe
+- Gottfried Rudofsky
+- Didier Trono
+- Christian Wolfrum
+- Bart Deplancke †
+
+### Affiliations
+
+1. Institute of Bioengineering, School of Life Sciences Ecole Polytechnique Fédérale de Lausanne Lausanne Switzerland bart.deplancke@epfl.ch
+
+† Corresponding author
+
+## Abstract
+
+Adipose tissue is a key determinant of whole body metabolism and energy homeostasis. Unraveling the regulatory mechanisms underlying adipogenesis is therefore highly relevant from a biomedical perspective. Our current understanding of fat cell differentiation is centered on the transcriptional cascades driven by the C/EBP protein family and the master regulator PPARγ. To elucidate further components of the adipogenic gene regulatory network, we performed a large-scale transcription factor (TF) screen overexpressing 734 TFs in mouse pre-adipocytes and probed their effect on differentiation. We identified 23 novel pro-adipogenic TFs and characterized the top ranking TF, ZEB1, as being essential for adipogenesis both in vitro and in vivo . Moreover, its expression levels correlate with fat cell differentiation potential in humans. Genomic profiling further revealed that this TF directly targets and controls the expression of most early and late adipogenic regulators, identifying ZEB1 as a central transcriptional component of fat cell differentiation.

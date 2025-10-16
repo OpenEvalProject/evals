@@ -1,0 +1,19 @@
+# Gene regulatory network plasticity predates a switch in function of a conserved transcription regulator
+
+## Authors
+
+- Isabel Nocedal<sup>1</sup> ([ORCID: 0000-0002-4706-1113](https://orcid.org/0000-0002-4706-1113)) †
+- Eugenio Mancera<sup>2</sup>
+- Alexander D Johnson<sup>3</sup> †
+
+### Affiliations
+
+1. Department of Biology Massachusetts Institute of Technology Cambridge United States
+2. Departamento de Ingeniería Genética Cinvestav Unidad Irapuato Irapuaro Mexico
+3. Department of Microbiology and Immunology University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+The rewiring of gene regulatory networks can generate phenotypic novelty. It remains an open question, however, how the large number of connections needed to form a novel network arise over evolutionary time. Here we address this question using the network controlled by the fungal transcription regulator Ndt80. This conserved protein has undergone a dramatic switch in function—from an ancestral role regulating sporulation to a derived role regulating biofilm formation. This switch in function corresponded to a large-scale rewiring of the genes regulated by Ndt80. However, we demonstrate that the Ndt80-target gene connections were undergoing extensive rewiring prior to the switch in Ndt80’s regulatory function. We propose that extensive drift in the Ndt80 regulon allowed for the exploration of alternative network structures without a loss of ancestral function, thereby facilitating the formation of a network with a new function.

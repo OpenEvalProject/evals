@@ -1,0 +1,65 @@
+# Peer review - Round 1
+
+Editors:
+- Utpal Banerjee, University of California, Los Angeles , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.11183.028](https://doi.org/10.7554/eLife.11183.028)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your work entitled "Drosophila HNF4 promotes glucose-stimulated insulin secretion and increased mitochondrial function in adults" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.
+
+Summary
+
+In this manuscript the authors study the role of HNF in Drosophila glucose homeostasis. In humans, mutations in HNF4A cause an early onset form of diabetes. The authors make the insightful observation that mutations in HNF4 result in early adult death just after eclosion. This phenotype is rescued if the adults are fed on 3% sugar diet instead of the regular diet, which contains about 15% sugars in it. Thus, reduced carbohydrate intake increases viability of HNF4 mutants suggesting that it might function in the regulation of sugar homeostasis. Further analysis suggests indeed that HNF4 mutants have increased levels of free glucose and trehalose in adults and have impaired glucose tolerance and reduced levels of ATP (60-70% of the normal). The authors then use MS to determine the levels of different intermediates in glycolysis and mitochondrial metabolism and find that many of the intermediates of glycolysis and the associated pathways that function in the biosynthesis of other metabolites show a significant increase when HNF4 mutants are fed on 15% sugar diet but not when they are reared on 3% sugar diet. Consistent with these observations the authors show that loss of HNF4 causes mitochondrial fragmentation. Based on these observations that authors conclude that HNF4 functions in the metabolic reprogramming from the larval to the adult mode during development consistent with the lethality of HNF4 mutants.
+
+Interestingly, mutant flies survive longer on a low sugar diet. Using global analyses such as metabolomics, RNA-seq and ChIP-seq the authors find that glycolysis and mitochondrial function are altered in mutant flies. Surprisingly, the RNA-seq and ChIP-seq data point to the possibility that HNF acts in the mitochondria to increase mtDNA transcription. The authors then use tissue specific knock-downs to show that glucose homeostasis is most perturbed when HNF is knocked down in the IPCs and fat body. Indeed, knock-down of HNF in the IPCs reduces DILP2 in circulation. The authors then explore the possibility that HNF triggers a developmentally regulated metabolic switch towards GSIS and OXPHOS at the onset of adulthood.
+
+The authors use a range of technologies to establish links between development, metabolic regulation and glucose homeostasis. A number of novel findings are reported. The most notable (but also potentially confusing, see below) is the finding that HNF might regulate mtDNA transcription. If so, this would alter our understanding of how mitochondrial transcription is regulated, and offer insights into how mtDNA transcription might be altered in diseases, such as diabetes. Unfortunately, the experiments that this novel claim is based on are not conclusive.
+
+The following is a list of major concerns that the reviewers have expressed and would like addressed.
+
+Essential revisions:
+
+1) A major, most exciting, finding of the paper is that dHNF4 might directly regulate mtDNA transcription. If so, this will change much about how we think mtDNA transcription is regulated. While the authors provide some evidence for this (for example ChIP-seq data), further experiments should be conducted to solidify this finding. In particular, it would be nice if the authors provide further evidence that dHNF4 is indeed targeted to mitochondria and present within the mitochondrial matrix where mtDNA resides. This could be achieved by subcellular fractionation of tissues or cells to show that dHNF4 first associates with the mitochondrial fraction and then further sub-fractionation to determine where within mitochondria it is. Along the same lines, are there any sequences in dHNF4 specifically required to target it to mitochondria? Does it possess a canonical N-terminal mitochondrial targeting sequence? If so, what are the phenotypic consequences of preventing mitochondrial targeting?
+
+The key evidence that dHNF binds to mtDNA is the ChIP-seq data. It is unclear how to interpret this mtDNA Chiq-seq data for a couple of reasons:
+
+A) The presumably high copy number of mtDNA in the sample (perhaps 1000X in excess of nuclear).
+
+B) The low signal to noise ratio in the nuclear binding sites. Presumably, most ChIP-seq experiments will detect mtDNA as a background signal. This will usually be discarded, because of the excess signal at specific nuclear DNA binding sites. In this study, in which the signal to noise ratio in nuclear genes is quite low, any background signal caused by the mtDNA might seem more important. A nice control would have been to perform the ChIP-seq in the mutant flies. The mtDNA signal should be much reduced in the mutants (assuming the mtDNA copy number is the same in mutant flies).
+
+2) The second piece of evidence supportive of HNF4 being present in the mitochondria is an IF experiment, which uses the same antibody as the ChIP-seq study. Given the novelty of the finding, it would have been useful to see independent validation of mitochondrial localization using an alternative antibody or a genetic construct. In summary, whilst it is plausible that HNF is directly binding to mtDNA and regulating mtDNA transcription, further evidence, using a method that doesn't require the antibody used in this study, would make the claim more compelling. Given the interest in such a finding, further independent evidence of direct mtDNA binding would be necessary.
+
+3) As a related issue, the argument that loss of dHNF4 specifically impairs mitochondrial metabolism needs further clarification. Loss of dHNF4 could also or instead, cause a reduction in mitochondrial number and mass. To what degree can the consequences of dHNF4 depletion be attributed to a reduction of mitochondrial number or mass as opposed to specific TCA cycle and OXPHOS impairment? Does loss of dHNF4 reduce mitochondrial number, mass or mtDNA copy number?
+
+Similarly, the mitochondrial organization is significantly impaired upon loss of HNF4 functions. Do the authors also see an increase in the expression of enzymes such as Drp1 in the RNA-seq? And does the knockdown of DRP1 function result in the rescue of the phenotype? Do ROS levels increase in mutant HNF4 tissue and does scavenging of ROS suppress the phenotype?
+
+Related to this issue, the authors should determine if the integrity of the cells that normally express it is compromised in any way such as an incorrect specification/physiology in the absence of HNF4, and please provide a more complete justification for why they think that the cells show a "mitochondrial fragmentation" phenotype.
+
+For the RNA-seq data, a systematic enrichment analysis (GO term/KEGG pathway) needs to be carried out on all differentially expressed genes in order to support claims regarding specificity of pathways regulated by dHNF4. In the current version of the manuscript, the authors seem to have cherry-picked genes (the expression of which is often only mildly affected, e.g. Figure 3A) to claim that dHNF4 regulates genes involved in processes such as OXPHOS.
+
+Many of the above questions are arising, and are important to address, because the central issue has not been convincingly addressed: How does HNF4 regulate mitochondrial gene expression?
+
+4) One potential caveat with the RNA-seq and ChIP-seq experiments is that they have been carried out in whole flies. dHNF4 is expressed in multiple tissues, and both its functions and targets may be tissue-specific. This is something that will not be captured by whole-fly approaches, and may in fact prevent identification of some targets. For example, the contribution of the IPCs to total fly chromatin or RNA is likely to be negligible.
+
+While it is understandable that whole adult flies are used for technical reasons, presumably, each of the tissues in question will respond differently to the loss of HNF function, with different metabolic consequences, so it is unclear how to relate these global analyses of a heterogeneous tissue extract to pathology in a particular tissue (e.g. the IPCs). For example, the metabolomics data shows that HNF deletion increases glucose-derived metabolites, but the RNA-seq data suggests that glycolytic genes are down-regulated. These data are not incorrect, since the experiments and analysis were done with care and competence, but such analyses are easier to interpret if using a homogeneous extract. The ambiguities introduced by a mixture of tissues with mixed metabolic profiles make it difficult to appreciate the importance of the genomic analyses.
+
+The Reviewing Editor does not feel that this issue can be fully solved in a reasonable period of time. So perhaps some initial experiments that address aspects of this issue, and attending to this issue in the Discussion, as a caveat will suffice.
+
+5) All the mutants characterized in this study involve constitutive dHNF4 loss or downregulation throughout development – either from all tissues or a subset thereof. Consequently, the adult phenotypes described in this manuscript could be adaptive and result from the metabolic alterations caused by dHNF4 loss during larval life (Palanker et al. 2009). The abundance of genes involved in stress and immunity in the RNA-seq dataset is consistent with this idea. The authors should knockdown dHNF4 specifically in the adult (e.g. in tubGal4, tubGal80ts>dHNF4-RNAi flies) and test whether some of the key phenotypes (glucose intolerance, hyperglycemia and GSIS) are still apparent. Related to this, the specificity of the Ilp2-Gal4 used in this study (Kim et al. 2014) has not been investigated/described in larvae. Why did the authors not use the Ilp2-3-Gal4 generated in the Partridge lab, which is confined to late larva/adult IPCS? This would avoid targeting non-IPC dHNF4 expression throughout development.
+
+Also, a related important but minor issue is that often a single RNAi construct is used, the authors are well aware of the possible pitfalls, and they need to be avoided. Additionally, all UAS and Gal4 lines need to be fully defined.
+
+6) The authors argue that dHNF4 is required in the fat body and insulin-producing cells of adults to maintain glucose homeostasis by supporting a developmental switch toward OXPHOS and GSIS at the transition to adulthood. Since all experiments in this paper were performed by removing dHNF4 early in development far before the onset of adulthood, it remains a possibility that the phenotypes observed are a consequence of an earlier requirement for dHNF4 during development. To show that dHNF4 is really required in adulthood we would like the authors to remove dHNF4 at the onset of adulthood in the whole organism, fat body and IPCs to assess whether the flies become diabetic and whether survival is affected. As the muscle is also a major contributor to glucose clearance the requirement of dHNF4 in muscles should be assessed as well.
+
+7) Based on RNAi to knock-down of specific OXPHOS complexes in the IPC and fat body the authors conclude that there are differential requirements for different ETC complexes in glucose homeostasis. This requires functional validation e.g. on the rate of oxygen consumption. The authors demonstrate that Cox5a knock-down does not increase glucose, but CIA30 knock-down does. It is more likely that each complex has differential control of flux in specific tissues or flux through the ETC has differential sensitivity to knock-down of specific complexes, rather than suggesting that there is a greater requirement for CI or CV than CIV per se.
+
+8) The authors' previous study was consistent with dHNF4 as a nutrient sensor, whereas this manuscript suggests it functions as a developmental switch that converts a cell to a fate that supports responsiveness to glucose. Are dHNF4 expression, activity and/or subcellular localization nutritionally regulated in adult flies? The very low number of ChIP-seq could be explained low dHNF4 activity if a 3% sugar diet was used. RNA-seq experiments used 15% sugar. The diets used for every experiment also need to be clearly stated, and the data analyzed accordingly.

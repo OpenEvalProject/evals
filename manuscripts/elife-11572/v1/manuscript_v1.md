@@ -1,0 +1,19 @@
+# Glial and neuronal Semaphorin signaling instruct the development of a functional myotopic map for Drosophila walking
+
+## Authors
+
+- Durafshan Sakeena Syed
+- Swetha BM
+- O Venkateswara Reddy
+- Heinrich Reichert
+- K VijayRaghavan †
+
+### Affiliations
+
+1. National Centre for Biological Sciences Tata Institute of Fundamental Research Bangalore India vijay@ncbs.res.in
+
+† Corresponding author
+
+## Abstract
+
+Motoneurons developmentally acquire appropriate cellular architectures that ensure connections with postsynaptic muscles and presynaptic neurons. In Drosophila , leg motoneurons are organized as a myotopic map, where their dendritic domains represent the muscle field. Here we investigate mechanisms underlying development of aspects of this myotopic map, required for walking. A behavioral screen identified roles for Semaphorins (Sema) and Plexins (Plex) in walking behavior. Deciphering this phenotype, we show that PlexA/Sema1a mediates motoneuron axon branching in ways that differ in the proximal femur and distal tibia, based on motoneuronal birth order. Importantly, we show a novel role for glia in positioning dendrites of specific motoneurons; PlexB/Sema2a is required for dendritic positioning of late-born motoneurons but not early-born motoneurons. These findings indicate that communication within motoneurons and between glia and motoneurons, mediated by the combined action of different Plexin/Semaphorin signaling systems, are required for the formation of a functional myotopic map.

@@ -1,0 +1,29 @@
+# Peer review - Round 1
+
+Editors:
+- Nick J Proudfoot, University of Oxford , United Kingdom
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.03553.025](https://doi.org/10.7554/eLife.03553.025)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Active RNAP pre-initiation sites are highly mutated by cytidine deaminases in yeast, with AID targeting small RNAs genes” for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor) and 2 reviewers, one of whom, Nick Proudfoot, is a member of our Board of Reviewing Editors.
+
+The Reviewing editor and another expert reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+Analysis of the in vivo effect of human deaminases, such as AID and APOBEC3G, in heterologous systems such as E. coli and yeast has been undertaken by different labs and has contributed greatly to understand their mechanisms of action. Despite the limitations that yeast may have as a system to make conclusions about the in vivo action of these deaminases in human cells, it is clear that this type of approach reveals important features of the genome accessibility for these enzymes known to act specifically on ssDNA. In yeast, the pattern of mutations induced by these deaminases has been reported by different laboratories. This manuscript of Taylor and Rada, from the former laboratory of M. Neuberger, extends such studies further. A detailed analysis of clustering of mutations along the genome of diploid yeast reveals that such clusters are preferentially located at promoters of highly expressed RNAPII-driven genes. This is the case for both AID and APOBEC3G-induced mutations, and in the case of AID this is also observed for RNAPIII genes. Taylor and Rada conclude that this is due to the ability of the small RNAs to bring AID to its site of action. To probe this hypothesis they show that AID binds in vitro to yeast tRNA and poly U. This work is interesting and novel by providing new information about the yeast genome accessibility to human deaminases that should help clarify its mechanism of action. It is consistent with the ability of these enzymes to act on ssDNA formed at active pre-initiation complexes.
+
+1) We are not convinced that the authors provide significant evidence that this recruitment is RNA mediated. AID was discovered by the Honjo lab as an RNA modifying enzyme, and the ability of AID to interact in vitro with RNA is not that novel. More importantly, the data presented is insufficient to prove that RNA plays a direct role in recruiting AID to pre-initiation complexes in vivo. The difference between RNAPII and RNAPIII promoters (embedded in the body of the genes) could be due to a different structure of the pre-initiation complex, a difference in the opening and accessibility of the ssDNA formed at such promoters or to different factors that might influence the action of AID in vivo, not necessarily its recruitment. Despite this, it is clear that these proteins act at RNAPII promoters as deduced from the impressive enrichment of MELs at such promoters. Is the average length of the RNA generated in such promoters small? Do long RNA molecules bind AID in vitro?
+
+2) It is important to distinguish loading and recruitment of the deaminases from their sites of action (as seen by their mutational analysis). This study can only deduce sites of action not sites of loading and recruitment. This later point should be addressed by performing ChIP analysis to show that the deaminases are loaded at the promoter by the promoter initiation complex. Also reporter systems could be employed to probe these issues in vivo by turning on or off transcription (using inducible promoters e.g. GAL) This is relevant given the reported role of transcription factors in AID recruitment in human cells that in principle would not correlate with mutational hotspots.
+
+3) Are the authors sure that Canavinine is an Arginine permease transporter inhibitor or just an Arginine analogue that uses the same permease (encoded by the CAN1 gene). This later reason could explain why can1 mutations impede canavarine uptake leading to can resistance? Please comment.
+
+4) Can the authors further explain why mutations within the MELs are much more likely to occur on both alleles of the diploid strain compared to equivalent random fragments? As the information on whether such mutations are coincident between both alleles is not clear, I wonder whether the authors can exclude the possibility that such high levels could be due to gene conversion type of events whether or not mediated by double-strand breaks.
+
+5) It is important that 57% of AID and 46 % of sA3G mutations occur within the promoter region compared to only 21% of EMS mutations. However, considering that the authors found 1227 and 568 MELs in the AID and sA3G treated genomes, but only 1 for MMS, a simple analysis would reveal that the MMS mutations in the promoter region compared to the total frequency of MMS-induced MELs is extremely high. Could the authors clarify or discuss this point better, so that the reader does not get misled by a simple analysis, if that is the case?

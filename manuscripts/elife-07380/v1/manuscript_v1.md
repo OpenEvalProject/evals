@@ -1,0 +1,18 @@
+# Structure of a type IV pilus machinery in the open and closed state
+
+## Authors
+
+- Vicki A M Gold †
+- Ralf Salzer
+- Beate Averhoff
+- Werner Kühlbrandt
+
+### Affiliations
+
+1. Department of Structural Biology Max Planck Institute of Biophysics Frankfurt am Main Germany
+
+† Corresponding author
+
+## Abstract
+
+Proteins of the secretin family form large macromolecular complexes, which assemble in the outer membrane of Gram-negative bacteria. Secretins are major components of type II and III secretion systems and are linked to extrusion of type IV pili (T4P) and to DNA uptake. By electron cryo-tomography of whole T. thermophilus cells, we determined the in situ structure of a T4P molecular machine in the open and the closed state. Comparison reveals a major conformational change whereby the N-terminal domains of the central secretin PilQ shift by ~30 Å, and two periplasmic gates open to make way for pilus extrusion. Furthermore, we determine the structure of the assembled pilus.

@@ -1,0 +1,41 @@
+# Peer review - Round 1
+
+Editors:
+- Valerie Horsley, Yale University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.39640.030](https://doi.org/10.7554/eLife.39640.030)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for sending your article entitled "Shear-induced Damped Oscillations in an Epithelium Depend on Actomyosin Contraction and E-cadherin Cell Adhesion" for peer review at eLife. Your article has been reviewed by Anna Akhmanova as the Senior Editor, a Reviewing Editor and three reviewers.
+
+Summary:
+
+This timely and intriguing manuscript addresses the response of epithelial sheets to shear forces. The authors show that oscillations in cell movements and actin turnover are used to respond to shear forces and return to equilibrium. The authors have conceived innovative and unique technology to explore the phenomenon and use a combination of experiments and theory to analyze the effect of shear on epithelial monolayers. Overall the manuscript is clearly and well written and the experimental data is of good quality and convincing. The reviewers agreed that the manuscript will be broadly of interest to several fields and the data acquired in this study are novel, unique, and are of high quality.
+
+However, the reviewers agreed that are some issues that still need resolved and clarified. These include justification for key experimental parameters, further justification for physical interpretation of the data, key biological controls, and improved statistical analyses.
+
+Essential revisions:
+
+1) The authors base their model, which is at the heart of the study, on the assumption that the viscoelastic properties of the monolayer are not altered by shear (k is constant). Along these lines, in the simulations the oscillations appear more sustained and higher amplitude than in the actual experiments, which could be an indirect indication that the monolayer changes its mechanical response to shear, leading to non-linear dissipation of the oscillations. The authors should quantify the mechanical properties of the monolayer during the response to shear using direct or indirect methods (AFM, traction force etc., depending on what is compatible with their setup) to justify this assumption.
+
+2) The role of E-cadherin is interesting, but the authors statement that the mechanism involves induction of tension on E-cadherin has not been sufficiently explored. The authors could look using IF at the α-18 epitope accessibility and vinculin recruitment as indirect but straight forward readouts of tension, or alternatively use laser ablation to quantify tension over junctions. Is the distribution of E-cadherin changes and does it display anisotropy in respect to the direction of shear?
+
+3) The role of actin remodeling remains vague, and the statement on the role of actin at the end of the abstract appears too strong given that it is based on just the jasplakinolide experiment. Additional experiments should be performed to clarify this and justify the conclusion. Are there changes in the organization of the F-actin cytoskeleton? More x-linking, fiber elongation? What happens to myosin II activity over time and where is the myosin activity localized, is it at junctions. Does myosin activity oscillate?
+
+4) The reviewers had concerns about the large shear forces and how they affect the cells. The authors should analyze whether cell adhesion, shapes or rearrangements are observed in response to shear, the experiments should be repeated at a lower shear strain amplitude to ensure that the data can be interpreted as a purely mechanical phenomena or other explanations of the data should be provided.
+
+Additionally, is cell death/damage induced by the large shears? Evaluation of a live/dead cell stain could alleviate concerns that cell death is occurring. Similarly, the use of non-permeable cell dyes could be used to discern if micro-tears are forming in the cell membranes at the shear plane. Both of these control experiments should be performed to assess the affects of the shear strain on cell health in the MEMS device.
+
+5) The asymmetric cell oscillations (being larger in y than in x, the shear direction) is understandable for the application of shear. However, the explanation for asymmetric oscillations for unsheared cells observed in Figure 1H-K is unclear. In particular, what is the origin of the symmetry breaking cue? Is this due to the different sizes of the x- and y-axes in the MEMS device? If square MEMS devices were used would asymmetric oscillations be observed? The authors claim the oscillations are governed by actin dynamics. Are the actomyosin networks of the cells asymmetrical in terms of their dynamics or distribution even in the absence of shear?
+
+Currently, the observation of the oscillatory motions in both unsheared and shear conditions is interpreted as due to similar mechanisms, but different in amplitude due to differences in the amplitude of the applied shear. However, how the "intrinsic forces" and the applied force have similar directionality is unclear. The similarities of the oscillations in sheared and control conditions could be coincidental due to geometrical constraints of the MEMS device or other issues. In general, further analysis and explanation of the origin of intrinsic oscillations, and their relation to the shear-induced oscillations needs to be added to the manuscript. This could include the experiments suggested in this comment or other experiments deemed more pertinent by the authors.
+
+6) There are a variety of mechanical models and/or physical systems used to explain the various aspects of the epithelia. At various times, the cell layer is considered analogous to a semi-flexible polymer network (work of Janmey), an active gel (work of Prost), and a mechanical circuit. These descriptions are not all compatible. For instance, comparing a cell layer to a semi-flexible polymer network is problematic, as this ignores the active nature of the cells as well as the presence of cell-cell contacts. The comparison to Janmey's work demonstrating the negative normal stresses is particularly problematic because of key microstructural and time scale differences between the systems. The origin of the negative normal stresses in Janmey's work is due to a non-symmetric force extension curve of an individual semi-flexible polymer. If the force-extension curves of cells exhibit a similar asymmetry is not known to this reviewer. Also, the responses observed in Janmey's work occurred within seconds, here the maximal "stresses" in the epithelial occur within hours. This suggests that the observations in this manuscript are due to other mechanisms, likely related to cell migration. If the authors wish to continue using the analogy to Janmey's work, they should demonstrate that cells display the negative normal deformations without active processes to match the conditions in Janmey's work. The easiest way to due to this is through ATP-depletion, but this will likely have substantial biological consequences. The mechanical circuit model, with the inclusion of the inverter, is a novel addition to the field and very interesting. Alternatively, the authors could choose to focus on this model, providing greater explanation of the physical interpretation of the inerter in terms mechanosensitive signaling and remove some the discussion of the polymer physics / active matter.
+
+7) The mechanical circuits have a key time scale of 8 hours. This is a very long time-scale to be associated with actin filament dynamics in living cells, where actin turnover is usually quite high. Jasplak is also known to be a potent anti-proliferation agent. This suggest that cell division could play a key role is dissipate stress in this system. Experiments where cell proliferation is inhibited should be performed to demonstrate or exclude the role of cell division in the dissipation of stresses in the system.

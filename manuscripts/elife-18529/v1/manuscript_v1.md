@@ -1,0 +1,18 @@
+# Structural determinants of adhesion by Protocadherin-19 and implications for its role in epilepsy
+
+## Authors
+
+- Sharon R Cooper<sup>1</sup>
+- James D Jontes<sup>2</sup> ([ORCID: 0000-0002-8954-6127](https://orcid.org/0000-0002-8954-6127)) †
+- Marcos Sotomayor<sup>1</sup> ([ORCID: 0000-0002-3333-1805](https://orcid.org/0000-0002-3333-1805)) †
+
+### Affiliations
+
+1. Department of Chemistry and Biochemistry The Ohio State University Columbus United States
+2. Department of Neuroscience The Ohio State University Columbus United States
+
+† Corresponding author
+
+## Abstract
+
+Non-clustered δ-protocadherins are homophilic cell adhesion molecules essential for the development of the vertebrate nervous system, as several are closely linked to neurodevelopmental disorders. Mutations in protocadherin-19 (PCDH19) result in a female-limited, infant-onset form of epilepsy (PCDH19-FE). Over 100 mutations in PCDH19 have been identified in patients with PCDH19-FE, about half of which are missense mutations in the adhesive extracellular domain. Neither the mechanism of homophilic adhesion by PCDH19, nor the biochemical effects of missense mutations are understood. Here we present a crystallographic structure of the minimal adhesive fragment of the zebrafish Pcdh19 extracellular domain. This structure reveals the adhesive interface for Pcdh19, which is broadly relevant to both non-clustered δ and clustered protocadherin subfamilies. In addition, we show that several PCDH19-FE missense mutations localize to the adhesive interface and abolish Pcdh19 adhesion in in vitro assays, thus revealing the biochemical basis of their pathogenic effects during brain development.

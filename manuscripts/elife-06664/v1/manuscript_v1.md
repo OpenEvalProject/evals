@@ -1,0 +1,16 @@
+# Low cost, high performance processing of single particle cryo-electron microscopy data in the cloud
+
+## Authors
+
+- Michael A Cianfrocco †
+- Andres E Leschziner
+
+### Affiliations
+
+1. Department of Molecular and Cellular Biology Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+The advent of a new generation of electron microscopes and direct electron detectors has realized the potential of single particle cryo-electron microscopy (cryo-EM) as a technique to generate high-resolution structures. Calculating these structures requires high performance computing clusters, a resource that may be limiting to many likely cryo-EM users. To address this limitation and facilitate the spread of cryo-EM, we developed a publicly available 'off-the-shelf' computing environment on Amazon's elastic cloud computing infrastructure. This environment provides users with single particle cryo-EM software packages and the ability to create computing clusters with 16 to 480+ CPUs. We tested our computing environment using a publicly available 80S yeast ribosome dataset and estimate that laboratories could determine high-resolution cryo-EM structures for $50 to $1,500 per structure within a timeframe comparable to local clusters. Our analysis shows that Amazon's cloud computing environment may offer a viable computing environment for cryo-EM.

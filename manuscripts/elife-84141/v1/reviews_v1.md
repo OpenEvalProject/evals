@@ -1,0 +1,77 @@
+# Peer review - Round 1
+
+Editors:
+- Srdjan Ostojic, École Normale Supérieure - PSL France
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.84141.3.sa0](https://doi.org/10.7554/eLife.84141.3.sa0)
+
+This valuable work proposes a framework inspired by chemotaxis for understanding how the brain might implement behaviors related to navigating toward a goal. The evidence supporting the conceptual claim is convincing. The article proposes a hypothesis that would be of interest to the broad systems neuroscience community, although it was noted the relationship to existing similar hypotheses could be clarified.
+
+
+---
+
+# Peer review - Round 1
+
+Reviewers:
+- Anonymous Reviewer
+
+## Review text
+
+DOI: [10.7554/eLife.84141.3.sa1](https://doi.org/10.7554/eLife.84141.3.sa1)
+
+This paper presents a highly compelling and novel hypothesis for how the brain could generate signals to guide navigation toward remembered goals. Under this hypothesis, which the authors call "Endotaxis", the brain co-opts its ancient ability to navigate up odor gradients (chemotaxis) by generating a "virtual odor" that grows stronger the closer the animal is to a goal location. This idea is compelling from an evolutionary perspective and a mechanistic perspective. The paper is well-written and delightful to read.
+
+The authors develop a detailed model of how the brain may perform "Endotaxis", using a variety of interconnected cell types (point, map, and goal cells) to inform the chemotaxis system. They tested the ability of this model to navigate in several state spaces, representing both physical mazes and abstract cognitive tasks. The Endotaxis model performed reasonably well across different environments and different types of goals.
+
+The authors further tested the model using parameter sweeps and discovered a critical level of network gain, beyond which task performance drops. This critical level approximately matched analytical derivations.
+
+Overall, this paper provides a very compelling model for how neural circuits may have evolved the ability to navigate towards remembered goals, using ancient chemotaxis circuits.
+
+This framework will likely be very important for understanding how the hippocampus (and other memory/navigation-related circuits) interfaces with other processes in the brain, giving rise to memory-guided behavior.
+
+
+---
+
+# Peer review - Round 1
+
+Reviewers:
+- Anonymous Reviewer
+
+## Review text
+
+DOI: [10.7554/eLife.84141.3.sa2](https://doi.org/10.7554/eLife.84141.3.sa2)
+
+The manuscript presents a computational model of how an organism might learn a map of the structure of its environment and the location of valuable resources through synaptic plasticity, and how this map could subsequently be used for goal-directed navigation.
+
+The model is composed of 'map cells', which learn the structure of the environment in their recurrent connections, and 'goal-cell' which store the location of valued resources with respect to the map cell population. Each map cell corresponds to a particular location in the environment due to receiving external excitatory input at this location. The synaptic plasticity rule between map cells potentiates synapses when activity above a specified threshold at the pre-synaptic neuron is followed by above-threshold activity at the post-synaptic neuron. The threshold is set such that map neurons are only driven above this plasticity threshold by the external excitatory input, causing synapses to only be potentiated between a pair of map neurons when the organism moves directly between the locations they represent. This causes the weight matrix between the map neurons to learn the adjacency for the graph of locations in the environment, i.e. after learning the synaptic weight matrix matches the environment's adjacency matrix. Recurrent activity in the map neuron population then causes a bump of activity centred on the current location, which drops off exponentially with the diffusion distance on the graph. Each goal cell receives input from the map cells, and also from a 'resource cell' whose activity indicates the presence or absence of a given values resource at the current location. Synaptic plasticity potentiates map-cell to goal-cell synapses in proportion to the activity of the map cells at time-points when the resource cell is active. This causes goal cell activity to increase when the activity of the map cell population is similar to the activity where the resource was obtained. The upshot of all this is that after learning the activity of goal cells decreases exponentially with the diffusion distance from the corresponding goal location. The organism can therefore navigate to a given goal by doing gradient ascent on the activity of the corresponding goal cell. The process of evaluating these gradients and using them to select actions is not modelled explicitly, but the authors point to the similarity of this mechanism to chemotaxis (ascending a gradient of odour concentration to reach the odour source), and the widespread capacity for chemotaxis in the animal kingdom, to argue for its biological plausibility. The ideas are interesting and the presentation of the results in the manuscript is generally clear.
+
+Closely related ideas have been explored in previous work, and there are some aspects of how the work relates to previous literature that it would be useful to clarify. Several lines of work have proposed learning long-range relationships between states in the environment, to enable navigation to rewarding goals by effectively descending distance gradients. The most well-known of these in the neuroscience literature is the Successor Representation (SR) (Dayan 1993), which is defined as the expected discounted future occupancy of each state given the current state. As noted in the discussion, this is closely related to the representation learnt by the map cells in the current model. The key difference is that the successor representation uses state-state transitions under a given policy (a mapping from states to actions), whereas the current model uses the adjacency matrix between states, which depends only on the environment and hence is independent of the policy followed while the representation is learnt (given sufficient exploration). This policy independence is useful, as the SR can fail to generate good routes to goals when these are very different from the policy under which it was learned (see Russek et al. https://doi.org/10.1371/journal.pcbi.1005768). However, there are several prior proposals for policy-independent SR-like mechanisms that it would be useful to discuss. Baram et al. (https://doi.org/10.1101/421461) propose navigating to goals by doing gradient descent on diffusion distances, computed as powers of the adjacency matrix as in the current work. One limitation of using the adjacency matrix is that it does not handle situations where transitions between states are probabilistic, which is not a big issue for navigation in physical space but is for applying the mechanism to cognitive tasks more broadly. There are prior ideas for learning policy-independent representations similar to the SR that do not have this limitation. Kaelbling (Learning to achieve goals, IJCAI, 1993) proposed using an off-policy learning rule similar to Q-learning, to learn shortest path distances between states. Piray and Daw (https://doi.org/10.1038/s41467-021-25123-3) consider a default representation, which is a successor-like representation under a generic default policy, building on the Linear Markov Decision Process (LMDP) framework of Todorov (https://doi.org/10.1073/pnas.0710743106). Also relevant to the current study is the work of Fang et al. (https://doi.org/10.7554/eLife.80680) who, as in the current work, propose using recurrent network dynamics to compute a long-range representation (the SR) from synaptic weights that store local transition information.
+
+One other area where I felt the work could be better integrated with the existing literature was the discussion of mapping the model onto brain circuits. An interesting and attractive aspect of the work is the idea that the relatively high-level operation of goal-directed navigation could be built on top of evolutionarily older mechanisms for ascending odour gradients. Given this framing, I was expecting the discussion of brain circuits to consider interactions between spatial mapping systems and regions involved in olfactory processing. However the discussion of mammalian brains focussed exclusively on the hippocampus without any link to olfaction, which feels like a missed opportunity. I am not an expert on olfaction, but one region that seems particularly interesting in this context is the olfactory tubercle (see Wesson & Wilson https://doi.org/10.1016/j.neubiorev.2010.08.004 for a review). This region is contiguous with the ventral striatum and has similar local circuitry, receives strong input from olfactory regions, but also input from the hippocampal formation, and a strong dopaminergic innervation from VTA. This suggests a mapping of the model to brain circuits in which map cells in the hippocampal formation project to goal cells in the olfactory tubercle, with the dopaminergic input acting as resource cells (note that different dopamine neuron populations appear to respond to different reward types, see e.g. https://doi.org/10.1038/s41586-022-04954-0, https://doi.org/10.1101/2023.05.09.540067). I was also surprised not to see any discussion of internally generated sequential activity in the hippocampus as a possible mechanism for the look-ahead needed to evaluate the goal distance gradient, particularly given the authors suggest that vicarious trial and error (VTE) is a behavioural signature of this gradient sampling, and it is known that during VTE hippocampus plays out internally generated sequences of possible future locations (see Redish https://doi.org/10.1038/nrn.2015.30).
+
+
+---
+
+# Peer review - Round 1
+
+Reviewers:
+- Anonymous Reviewer
+
+## Review text
+
+DOI: [10.7554/eLife.84141.3.sa3](https://doi.org/10.7554/eLife.84141.3.sa3)
+
+This paper describes an algorithm that provides a general mechanism for goal-directed behaviour in a biologically plausible neural form.
+
+The method depends on substantial simplifying assumptions. The simulated animal effectively moves through an environment consisting of discrete locations and can reliably detect when it is in each location. Whenever it moves from one location to an adjacent location, it perfectly learns the connectivity between these two locations (changes the value in an adjacency matrix to 1). This creates a graph of connections that reflects the explored environment. In this graph, the current location gets input activation and this spreads to all connected nodes multiplied by a constant decay (adjusted to the branching number of the graph) so that as the number of connection steps increases the activation decreases. Some locations will be marked as goals through experiencing a resource of a specific identity there and subsequently will be activated by an amount proportional to their distance in the graph from the current location, i.e., their activation will increase if the agent moves a step closer and decrease if it moves a step further away. Hence by making such exploratory movements, the animal can decide which way to move to obtain a specified goal.
+
+Although the algorithm is presented within a conceptual framework of chemotaxis, I.e., making movements to sample a local gradient and move up it, the approach relates closely to previous models of exploration, learning, and navigation that similarly establish (through experience) a graph structure to represent how locations are connected and use some form of activity-propagation from the current node or goal node to identify a (shortest) route between them. Many of these similarly claim to be plausible neural circuits. The current authors argue that the current algorithm has several desirable features with respect to such previous work: for example, the 'readout' of the path does not require explicit 'look-up' and activation of the goal node (although it does require a choice of which goal node is currently connected to behavior); and does not require any separate control or rules for learning vs. navigation phases. By comparison to the successor representation method used in RL, which also appears related, they note that the gain (decay) factor is not equivalent to a temporal discount and that their method learns only state-state transitions, allowing the value of actions to be externalised, I.e., calculated by trying alternative actions to see which increases the activation at the goal node the most. On the other hand, it should be noted that some issues addressed in previous models, such as uncertainty over the current state or probabilistic state(-action) transitions are not addressed in this work.
+
+The algorithm presents some elegant features with respect to previous work such as conceptually separating the 'goal' nodes from the state (location) graph (I.e. 'goals' are not just special target states within the graph) so that a small number of goals can become associated to (potentially) multiple regions of the state graph where they are satisfied, or near to being satisfied. This architecture is suggested, in the discussion, to resemble the insect mushroom body (MB), where it is known that a small number of output neurons (MBONs, putative goal neurons) are activated by plastic connections from Kenyon cells (KCs, putative state neurons). However, it goes substantially beyond any available evidence to claim that KC connectivity could support the acquisition of a graph (in the form of an adjacency matrix) representing the structure of the environment: KCs show sparse distributed activity (not one active node per state); it seems unlikely that any two arbitrary KCs can (rapidly) become connected; and as yet has not been demonstrated that KC connectivity is plastic at all.
+
+The results presented are fairly straightforward given the simplification of the tasks, as described above. They show (1) in practical terms, the spreading signal travels further for a larger decay but becomes erratic as the decay parameter (map neuron gain) approaches its theoretical upper bound and decreases below noise levels beyond a certain distance. Both follow the theory but it is perhaps helpful to see that there is a viable range of values of the gain for which the mechanism works, that is, it is not highly dependent on precise tuning. (2) That different graph structures can be acquired and used to approach goal locations (not surprising). (3) That simultaneous learning and exploitation of the graph only minimally affects the performance over starting with perfect knowledge of the graph. (4) That the parameters interact in expected ways. (5) That the separation of goals from states can be used flexibly e.g. the homing behaviour (a goal state is learned before any of the map is learned) and the patrolling behaviour (a goal cell that monitors all states for how recently they were visited). It is also interesting to link the mechanism of exploration of neighbouring states to observed scanning behaviours in navigating animals. It would have been interesting to explore whether the parameters could be dynamically tuned, based on the overall graph activity.

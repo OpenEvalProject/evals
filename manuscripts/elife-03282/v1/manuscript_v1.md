@@ -1,0 +1,18 @@
+# Mapping the dynamics of force transduction at cell-cell junctions of epithelial clusters
+
+## Authors
+
+- Mei Rosa Ng
+- Achim Besser
+- Joan S Brugge
+- Gaudenz Danuser †
+
+### Affiliations
+
+1. Department of Cell Biology University of Texas Southwestern Medical Center Dallas United States gaudenz.danuser@utsouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Force transduction at cell-cell adhesions regulates tissue development, maintenance and adaptation. We developed computational and experimental approaches to quantify, with both subcellular and multi-cellular resolution, the dynamics of force transmission in cell clusters. Applying this technology to spontaneously-forming adherent epithelial cell clusters, we found that basal force fluctuations were coupled to E-cadherin localization at the level of individual cell-cell junctions.  At the multi-cellular scale, cell-cell force exchange depended on the cell position within a cluster, and was adaptive to reconfigurations due to cell divisions or positional rearrangements. Importantly, force transmission through a cell required coordinated modulation of cell-matrix adhesion and actomyosin contractility in the cell and its neighbors. These data provide insights into mechanisms that could control mechanical stress homeostasis in dynamic epithelial tissues, and highlight our methods as a resource for the study of mechanotransduction in cell-cell adhesions.

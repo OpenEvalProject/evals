@@ -1,0 +1,18 @@
+# Ciliary chemosensitivity is enhanced by cilium geometry and motility
+
+## Authors
+
+- David Hickey<sup>1</sup>
+- Andrej Vilfan<sup>1</sup> ([ORCID: 0000-0001-8985-6072](https://orcid.org/0000-0001-8985-6072)) †
+- Ramin Golestanian<sup>2</sup> ([ORCID: 0000-0002-3149-4002](https://orcid.org/0000-0002-3149-4002)) †
+
+### Affiliations
+
+1. Living Matter Physics Max Planck Institute for Dynamics and Self-Organization Göttingen Germany
+2. Department of Living Matter Physics Max Planck Institute for Dynamics and Self-Organization Goettingen Germany
+
+† Corresponding author
+
+## Abstract
+
+Cilia are hairlike organelles involved in both sensory functions and motility. We discuss the question of whether the location of chemical receptors on cilia provides an advantage in terms of sensitivity and whether motile sensory cilia have a further advantage. Using a simple advection-diffusion model, we compute the capture rates of diffusive molecules on a cilium. Because of its geometry, a non-motile cilium in a quiescent fluid has a capture rate equivalent to a circular absorbing region with ~4x its surface area. When the cilium is exposed to an external shear flow, the equivalent surface area increases to ~6x. Alternatively, if the cilium beats in a non-reciprocal way in an otherwise quiescent fluid, its capture rate increases with the beating frequency to the power of 1/3. Altogether, our results show that the protruding geometry of a cilium could be one of the reasons why so many receptors are located on cilia. They also point to the advantage of combining motility with chemical reception.

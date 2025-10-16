@@ -1,0 +1,17 @@
+# An excitatory amacrine cell detects object motion and provides feature-selective input to ganglion cells in the mouse retina
+
+## Authors
+
+- Tahnbee Kim
+- Florentina Soto
+- Daniel Kerschensteiner †
+
+### Affiliations
+
+1. Department of Ophthalmology and Visual Sciences Washington University School of Medicine Saint Louis United States dkerschensteiner@wustl.edu
+
+† Corresponding author
+
+## Abstract
+
+Retinal circuits detect salient features of the visual world and report them to the brain through spike trains of retinal ganglion cells. The most abundant ganglion cell type in mice, the so called W3 ganglion cell, selectively responds to movements of small objects. Where and how object motion sensitivity arises in the retina is incompletely understood. Here, we use 2 photon guided patch clamp recordings to characterize responses of VGluT3 expressing amacrine cells to a broad set of visual stimuli. We find that VG3 ACs are object motion sensitive and analyze the synaptic mechanisms underlying this computation. Anatomical circuit reconstructions suggest that VGluT3 expressing amacrine cells form glutamatergic synapses with W3 ganglion cells and targeted recordings show that the tuning of W3 ganglion cells' excitatory input matches that of VGluT3 expressing amacrine cells' responses. Synaptic excitation of W3 ganglion cells is diminished and responses to object motion are suppressed in mice lacking VGluT3. Object motion thus is first detected by VGluT3 expressing amacrine cells, which provide feature selective excitatory input to W3 ganglion cells.

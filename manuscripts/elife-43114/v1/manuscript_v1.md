@@ -1,0 +1,18 @@
+# A causal role for the precuneus in network-wide theta and gamma oscillatory activity during complex memory retrieval
+
+## Authors
+
+- Melissa Hebscher<sup>1</sup> ([ORCID: 0000-0002-1863-5464](https://orcid.org/0000-0002-1863-5464)) †
+- Jed A Meltzer<sup>2</sup>
+- Asaf Gilboa<sup>2</sup> †
+
+### Affiliations
+
+1. Department of Medical Social Sciences Northwestern University Feinberg School of Medicine Chicago United States
+2. Rotman Research Institute Toronto Canada
+
+† Corresponding author
+
+## Abstract
+
+Complex memory of personal events is thought to depend on coordinated reinstatement of cortical representations by the medial temporal lobes (MTL). MTL-cortical theta and gamma coupling is believed to mediate such coordination, but which cortical structures are critical for retrieval and how they influence oscillatory coupling is unclear. We used magnetoencephalography (MEG) combined with continuous theta burst stimulation (cTBS) to (i) clarify the roles of theta and gamma oscillations in network-wide communication during naturalistic memory retrieval, and (ii) understand the causal relationship between cortical network nodes and oscillatory communication. Retrieval was associated with MTL-posterior neocortical theta phase coupling and theta-gamma phase-amplitude coupling relative to a rest period. Precuneus cTBS altered MTL-neocortical communication by modulating theta and gamma oscillatory coupling. These findings provide a mechanistic account for MTL-cortical communication and demonstrate that the precuneus is a critical cortical node of oscillatory activity, coordinating cross-regional interactions that drive remembering.

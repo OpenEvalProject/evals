@@ -1,0 +1,20 @@
+# CryoEM structures of open dimers of Gyrase A in complex with DNA illuminate mechanism of strand passage
+
+## Authors
+
+- Katarzyna M Soczek<sup>1</sup>
+- Tim Grant<sup>2</sup>
+- Peter B Rosenthal<sup>3</sup>
+- Alfonso Mondragon<sup>1</sup> ([ORCID: 0000-0002-0423-6323](https://orcid.org/0000-0002-0423-6323)) †
+
+### Affiliations
+
+1. Department of Molecular Biosciences Northwestern University Evanston United States
+2. Division of Physical Biochemistry MRC National Institute for Medical Research London United Kingdom
+3. The Francis Crick Institute London United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Gyrase is a unique type IIA topoisomerase that uses ATP hydrolysis to maintain the negatively supercoiled state of bacterial DNA. In order to perform its function, gyrase undergoes a sequence of conformational changes that consist of concerted gate openings, DNA cleavage, and DNA strand passage events. Structures where the transported DNA molecule (T-segment) is trapped by the A subunit have not been observed. Here we present the cryoEM structures of two oligomeric complexes of open gyrase A dimers and DNA. The protein subunits in these complexes were solved to 4 Å and 5.16 Å resolution. One of the complexes traps a linear DNA molecule, a putative T-segment, which interacts with the open gyrase A dimers in two states, representing steps either prior to or after passage through the DNA-gate. The structures locate the T-segment in important intermediate conformations of the catalytic cycle and provide insights into gyrase-DNA interactions and mechanism.

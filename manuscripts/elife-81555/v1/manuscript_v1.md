@@ -1,0 +1,17 @@
+# Neural underpinning of a respiration-associated resting-state fMRI network
+
+## Authors
+
+- Wenyu Tu<sup>1</sup>
+- Nanyin Zhang<sup>2</sup> ([ORCID: 0000-0002-5824-9058](https://orcid.org/0000-0002-5824-9058)) †
+
+### Affiliations
+
+1. The Huck Institutes of the Life Sciences Pennsylvania State University University Park United States
+2. Department of Biomedical Engineering Pennsylvania State University University Park United States
+
+† Corresponding author
+
+## Abstract
+
+Respiration can induce motion and CO 2 fluctuation during resting-state fMRI (rsfMRI) scans, which will lead to non-neural artifacts in the rsfMRI signal. In the meantime, as a crucial physiologic process, respiration that can directly drive neural activity change in the brain, and may thereby modulate the rsfMRI signal. Nonetheless, this potential neural component in the respiration-fMRI relationship is largely unexplored. To elucidate this issue, here we simultaneously recorded the electrophysiology, rsfMRI and respiration signals in rats. Our data show that respiration is indeed associated with neural activity changes, evidenced by a phase-locking relationship between slow respiration variations and the gamma-band power of the electrophysiologic signal recorded in the anterior cingulate cortex. Intriguingly, slow respiration variations are also linked to a characteristic rsfMRI network, which is mediated by gamma-band neural activity. In addition, this respiration-related brain network disappears when brain-wide neural activity is silenced at an iso-electrical state, while the respiration is maintained, further confirming the necessary role of neural activity in this network. Taken together, this study identifies a respiration-related brain network underpinned by neural activity, which represents a novel component in the respiration-rsfMRI relationship that is distinct from respiration-related rsfMRI artifacts. It opens a new avenue for investigating the interactions between respiration, neural activity and resting-state brain networks in both healthy and diseased conditions.

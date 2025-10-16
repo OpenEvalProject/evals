@@ -1,0 +1,17 @@
+# Risk of punishment influences discrete and coordinated encoding of reward-guided actions by prefrontal cortex and VTA neurons
+
+## Authors
+
+- Junchol Park<sup>1</sup> ([ORCID: 0000-0002-4739-0793](https://orcid.org/0000-0002-4739-0793))
+- Bita Moghaddam<sup>2</sup> ([ORCID: 0000-0002-5205-417X](https://orcid.org/0000-0002-5205-417X)) †
+
+### Affiliations
+
+1. Department of Neuroscience University of Pittsburgh Pittsburgh United States
+2. Department of Behavioral Neuroscience Oregon Health and Science University Portland United States
+
+† Corresponding author
+
+## Abstract
+
+Actions motivated by rewards are often associated with risk of punishment. Little is known about the neural representation of punishment risk during reward-seeking behavior. We modeled this circumstance in rats by designing a task where actions were consistently rewarded but probabilistically punished. Spike activity and local field potentials were recorded during task performance simultaneously from VTA and mPFC, two reciprocally connected regions implicated in reward-seeking and aversive behaviors. At the single unit level, we found that ensembles of putative dopamine and non-dopamine VTA neurons and mPFC neurons encode the relationship between action and punishment. At the network level, we found that coherent theta oscillations synchronize VTA and mPFC in a bottom-up direction, effectively phase-modulating the neuronal spike activity in the two regions during punishment-free actions. This synchrony declined as a function of punishment probability, suggesting that during reward-seeking actions, risk of punishment diminishes VTA-driven neural synchrony between the two regions.

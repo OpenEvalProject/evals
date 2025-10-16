@@ -1,0 +1,22 @@
+# Community diversity is associated with intra-species genetic diversity and gene loss in the human gut microbiome
+
+## Authors
+
+- Naïma Jesse Madi<sup>1</sup>
+- Daisy Chen<sup>2</sup> ([ORCID: 0000-0001-6516-7029](https://orcid.org/0000-0001-6516-7029))
+- Richard Wolff<sup>3</sup>
+- B Jesse Shapiro<sup>4</sup> ([ORCID: 0000-0001-6819-8699](https://orcid.org/0000-0001-6819-8699)) †
+- Nandita R Garud<sup>3</sup> †
+
+### Affiliations
+
+1. Département de Sciences Biologiques University of Montreal Montreal Canada
+2. Computational and Systems Biology University of California, Los Angeles Los Angeles United States
+3. Department of Ecology and Evolutionary Biology University of California, Los Angeles Los Angeles United States
+4. McGill University Montreal Canada
+
+† Corresponding author
+
+## Abstract
+
+The human gut microbiome contains a diversity of microbial species that varies in composition over time and across individuals. These species (and strains within species) can migrate across hosts and evolve by mutation and recombination within hosts. How the ecological process of community assembly interacts with intra-species diversity and evolutionary change is a longstanding question. Two contrasting hypotheses have been proposed based on ecological observations and theory: Diversity Begets Diversity (DBD), in which taxa tend to become more diverse in already diverse communities, and Ecological Controls (EC), in which higher community diversity impedes diversification within taxa. Previously, using 16S rRNA gene amplicon data across a range of environments, we showed a generally positive relationship between taxa diversity and community diversity at higher taxonomic levels, consistent with the predictions of DBD (Madi et al., 2020). However, this positive 'diversity slope' reaches a plateau at high levels of community diversity. Here we show that this general pattern holds at much finer genetic resolution, by analyzing intra-species strain and nucleotide variation in static and temporally sampled shotgun-sequenced fecal metagenomes from cohorts of healthy human hosts. We find that both intra-species polymorphism and strain number are positively correlated with community Shannon diversity. This trend is consistent with DBD, although we cannot exclude abiotic drivers of diversity. Shannon diversity is also predictive of increases in polymorphism over time scales up to ~4-6 months, after which the diversity slope flattens and then becomes negative-consistent with DBD eventually giving way to EC. Also supporting a complex mixture of DBD and EC, the number of strains per focal species is positively associated with Shannon diversity but negatively associated with richness. Finally, we show that higher community diversity predicts gene loss in a focal species at a future time point. This observation is broadly consistent with the Black Queen Hypothesis, which posits that genes with functions provided by the community are less likely to be retained in a focal species' genome. Together, our results show that a mixture of DBD, EC, and Black Queen may operate simultaneously in the human gut microbiome, adding to a growing body of evidence that these eco-evolutionary processes are key drivers of biodiversity and ecosystem function.

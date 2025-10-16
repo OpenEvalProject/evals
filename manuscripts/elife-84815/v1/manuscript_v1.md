@@ -1,0 +1,22 @@
+# The mutational signatures of poor treatment outcomes on the drug-susceptible Mycobacterium tuberculosis genome
+
+## Authors
+
+- Yiwang Chen<sup>1</sup>
+- Qi Jiang<sup>2</sup>
+- Mijiti Peierdun<sup>3</sup>
+- Howard E Takiff<sup>4</sup>
+- Qian Gao<sup>1</sup> ([ORCID: 0000-0002-8489-3672](https://orcid.org/0000-0002-8489-3672)) †
+
+### Affiliations
+
+1. School of Basic Medical Sciences Fudan University Shanghai China
+2. School of Public Health Wuhan University Wuhan China
+3. Department of Epidemiology and Biostatistics Xinjiang Medical University Urumqi China
+4. Instituto Venezolano de Investigaciones Cientificas Caracas Venezuela
+
+† Corresponding author
+
+## Abstract
+
+Drug resistance is a known risk factor for poor tuberculosis (TB) treatment outcomes, but the contribution of other bacterial factors to poor outcomes in drug susceptible TB is less well understood. Here, we generate a population-based dataset of drug-susceptible Mycobacterium tuberculosis (MTB) isolates from China to identify factors associated with poor treatment outcomes. We analyzed whole-genome sequencing (WGS) data of MTB strains from 3196 patients, including 3105 patients with good and 91 patients with poor treatment outcomes, and linked genomes to patient epidemiological data. A genome-wide association study (GWAS) was performed to identify bacterial genomic variants associated with poor outcomes. Risk factors identified by logistic regression analysis were used in clinical models to predict treatment outcomes. GWAS identified fourteen MTB fixed mutations associated with poor treatment outcomes, but only 24.2% (22/91) of strains from patients with poor outcomes carried at least one of these mutations. Isolates from patients with poor outcomes showed a higher ratio of reactive oxygen species (ROS)-associated mutations compared to isolates from patients with good outcomes (26.3% vs 22.9%, t test, P=0.027). Patient age, sex, and duration of diagnostic delay were also independently associated with poor outcomes. Bacterial factors alone had poor power to predict poor outcomes with an AUC of 0.58. The AUC with host factors alone was 0.70, but increased significantly to 0.74 (DeLong's test, P = 0.01) when bacterial factors were also included. In conclusion, although we identified MTB genomic mutations that are significantly associated with poor treatment outcomes in drug-susceptible TB cases, their effects appear to be limited.

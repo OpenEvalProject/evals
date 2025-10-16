@@ -1,0 +1,25 @@
+# Matrix metalloproteinase 14 is required for fibrous tissue expansion
+
+## Authors
+
+- Susan H Taylor
+- Ching-Yan Chloé Yeung
+- Nicholas S Kalson
+- Yinhui Lu
+- Paola Zigrino
+- Tobias Starborg
+- Stacey Warwood
+- David F Holmes
+- Elizabeth G Canty-Laird
+- Cornelia Mauch
+- Karl E Kadler †
+
+### Affiliations
+
+1. Wellcome Trust Centre for Cell-Matrix Research, Faculty of Life Sciences University of Manchester Manchester United Kingdom karl.kadler@manchester.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Type I collagen-containing fibrils are major structural components of the extracellular matrix of vertebrate tissues, especially tendon, but how they are formed is not fully understood. MMP14 is a potent pericellular collagenase that can cleave type I collagen in vitro . Here we show that tendon development is arrested in Scleraxis-Cre::Mmp14 lox/lox mice that are unable to release collagen fibrils from plasma membrane fibripositors. In contrast to its role in collagen turnover in adult tissue, MMP14 promotes embryonic tissue formation by releasing collagen fibrils from the cell surface.  Notably, tendons grow to normal size and collagen fibril release from fibripositors occurs in Col-r/r mice that have a mutated collagen-I that is uncleavable by MMPs. Furthermore, fibronectin (not collagen-I) accumulates in tendons of Mmp14 -null mice. We propose a model for cell-regulated collagen fibril assembly during tendon development in which MMP14 cleaves a molecular bridge tethering collagen fibrils to the plasma membrane of fibripositors.

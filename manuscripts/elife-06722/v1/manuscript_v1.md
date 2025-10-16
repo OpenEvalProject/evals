@@ -1,0 +1,19 @@
+# Quality control of transcription start site selection by Nonsense-Mediated-mRNA Decay
+
+## Authors
+
+- Christophe Malabat
+- Frank Feuerbach
+- Laurence Ma
+- Cosmin Saveanu
+- Alain Jacquier †
+
+### Affiliations
+
+1. Institut Pasteur, UMR3525, Génétique des Interactions Macromoléculaires Centre National de la Recherche Scientifique Paris France alain.jacquier@pasteur.fr
+
+† Corresponding author
+
+## Abstract
+
+Nonsense-mediated mRNA decay (NMD) is a translation-dependent RNA quality-control pathway targeting transcripts such as messenger RNAs harboring premature stop-codons or short upstream open reading frame (uORFs). Our transcription start sites (TSSs) analysis of Saccharomyces cerevisiae cells deficient for RNA degradation pathways revealed that about half of the pervasive transcripts are degraded by NMD, which provides a fail-safe mechanism to remove spurious transcripts that escaped degradation in the nucleus. Moreover, we found that the low specificity of RNA polymerase II TSSs selection generates, for 47% of the expressed genes, NMD-sensitive transcript isoforms carrying uORFs or starting downstream of the ATG START codon. Despite the low abundance of this last category of isoforms, their presence seems to constrain genomic sequences, as suggested by the significant bias against in-frame ATGs specifically found at the beginning of the corresponding genes and reflected by a depletion of methionines in the N-terminus of the encoded proteins.

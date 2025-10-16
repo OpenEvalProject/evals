@@ -1,0 +1,18 @@
+# Particle foraging strategies promote microbial diversity in marine environments
+
+## Authors
+
+- Ali Ebrahimi<sup>1</sup>
+- Akshit Goyal<sup>2</sup>
+- Otto X Cordero<sup>1</sup> ([ORCID: 0000-0002-2695-270X](https://orcid.org/0000-0002-2695-270X)) †
+
+### Affiliations
+
+1. Department of Civil and Environmental Engineering Massachusetts Institute of Technology Cambridge United States
+2. Department of Physics Massachusetts Institute of Technology Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Microbial foraging in patchy environments, where resources are fragmented into particles or pockets embedded in a large matrix, plays a key role in natural environments. In the oceans and freshwater systems, particle-associated bacteria can interact with particle surfaces in different ways: some colonize only during short transients, while others form long-lived, stable colonies. We do not yet understand the ecological mechanisms by which both short-term and long-term colonizers can coexist. Here, we address this problem with a mathematical model that explains how marine populations with different detachment rates from particles can stably coexist. In our model, populations grow only while on particles, but also face the increased risk of mortality by predation and sinking. Key to coexistence is the idea that detachment from particles modulates both net growth and mortality, but in opposite directions, creating a trade-off between them. While slow-detaching populations show the highest growth return (i.e., produce more net offspring), they are more susceptible to suffer higher rates of mortality than fast-detaching populations. Surprisingly, fluctuating environments, manifesting as blooms of particles (favoring growth) and predators (favoring mortality) significantly expand the likelihood that populations with different detachment rates can coexist. Our study shows how the spatial ecology of microbes in the ocean can lead to a predictable diversification of foraging strategies and the coexistence of multiple taxa on a single growth-limiting resource.

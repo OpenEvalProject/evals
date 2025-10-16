@@ -1,0 +1,27 @@
+# p27Kip1 promotes invadopodia turnover and invasion through the regulation of the PAK1/Cortactin pathway
+
+## Authors
+
+- Pauline Jeannot<sup>1</sup>
+- Ada Nowosad<sup>1</sup>
+- Renaud T Perchey<sup>1</sup>
+- Caroline Callot<sup>1</sup>
+- Evangeline Bennana<sup>2</sup>
+- Takanori Katsube<sup>3</sup>
+- Patrick Mayeux<sup>2</sup>
+- François Guillonneau<sup>2</sup>
+- Stéphane Manenti<sup>1</sup>
+- Arnaud Besson<sup>4</sup> ([ORCID: 0000-0002-9599-3943](https://orcid.org/0000-0002-9599-3943)) †
+
+### Affiliations
+
+1. Cancer Research Center of Toulouse INSERM Toulouse France
+2. Institut Cochin INSERM Paris France
+3. Research Center for Radiation Protection National Institute of Radiological Sciences Chiba Japan
+4. CRCT UMR 1037 INSERM-Universite Paul Sabatier French Institute of Health and Medical Research Toulouse cedex 1 France
+
+† Corresponding author
+
+## Abstract
+
+p27 Kip1 (p27) is a cyclin-CDK inhibitor and negative regulator of cell proliferation. p27 also controls other cellular processes including migration and cytoplasmic p27 can act as an oncogene. Furthermore, cytoplasmic p27 promotes invasion and metastasis, in part by promoting epithelial to mesenchymal transition. Herein, we find that p27 promotes cell invasion by binding to and regulating the activity of Cortactin, a critical regulator of invadopodia formation. p27 localizes to invadopodia and limits their number and activity. p27 promotes the interaction of Cortactin with PAK1. In turn, PAK1 promotes invadopodia turnover by phosphorylating Cortactin, and expression of Cortactin mutants for PAK-targeted sites abolishes p27's effect on invadopodia dynamics. Thus, in absence of p27, cells exhibit increased invadopodia stability due to impaired PAK1-Cortactin interaction, but their invasive capacity is reduced compared to wild-type cells. Overall, we find that p27 directly promotes cell invasion by facilitating invadopodia turnover via the Rac1/PAK1/Cortactin pathway.

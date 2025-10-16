@@ -1,0 +1,18 @@
+# Mechanisms and functions of respiration-driven gamma oscillations in the primary olfactory cortex
+
+## Authors
+
+- Joaquin Gonzalez<sup>1</sup> †
+- Pablo Torterolo<sup>1</sup>
+- Adriano BL Tort<sup>2</sup> ([ORCID: 0000-0002-9877-7816](https://orcid.org/0000-0002-9877-7816)) †
+
+### Affiliations
+
+1. Departamento de Fisiología Universidad de la Republica Montevideo Uruguay
+2. Brain Institute Federal University of Rio Grande do Norte Natal Brazil
+
+† Corresponding author
+
+## Abstract
+
+Gamma oscillations are believed to underlie cognitive processes by shaping the formation of transient neuronal partnerships on a millisecond scale. These oscillations are coupled to the phase of breathing cycles in several brain areas, possibly reflecting local computations driven by sensory inputs sampled at each breath. Here, we investigated the mechanisms and functions of gamma oscillations in the piriform (olfactory) cortex of awake mice to understand their dependence on breathing and how they relate to local spiking activity. Mechanistically, we find that respiration drives gamma oscillations in the piriform cortex, which correlate with local feedback inhibition and result from recurrent connections between local excitatory and inhibitory neuronal populations. Moreover, respiration-driven gamma oscillations are triggered by the activation of mitral/tufted cells in the olfactory bulb and are abolished during ketamine/xylazine anesthesia. Functionally, we demonstrate that they locally segregate neuronal assemblies through a winner-take-all computation leading to sparse odor coding during each breathing cycle. Our results shed new light on the mechanisms of gamma oscillations, bridging computation, cognition and physiology.

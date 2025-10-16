@@ -1,0 +1,17 @@
+# Inhibitory peptidergic modulation of C. elegans serotonin neurons is gated by T-type calcium channels
+
+## Authors
+
+- Kara E Zang<sup>1</sup>
+- Elver Ho<sup>1</sup>
+- Niels Ringstad<sup>1</sup> ([ORCID: 0000-0002-8679-2269](https://orcid.org/0000-0002-8679-2269)) †
+
+### Affiliations
+
+1. Skirball Institute for Biomolecular Medicine NYU Langone School of Medicine New York United States
+
+† Corresponding author
+
+## Abstract
+
+Serotonin is an evolutionarily ancient molecule that functions in generating and modulating many behavioral states. Although much is known about how serotonin acts on its cellular targets, how serotonin release is regulated in vivo remains poorly understood. In the nematode C. elegans , serotonin neurons that drive female reproductive behavior are directly modulated by inhibitory neuropeptides. Here, we report the isolation of mutants in which inhibitory neuropeptides fail to properly modulate serotonin neurons and the behavior they mediate. The corresponding mutations affect the T-type calcium channel CCA-1 and symmetrically re-tune its voltage-dependencies of activation and inactivation towards more hyperpolarized potentials. This shift in voltage dependency strongly and specifically bypasses the behavioral and cell physiological effects of peptidergic inhibition on serotonin neurons. Our results indicate that T-type calcium channels are critical regulators of a C. elegans serotonergic circuit and demonstrate a mechanism in which T-type channels functionally gate inhibitory modulation in vivo .

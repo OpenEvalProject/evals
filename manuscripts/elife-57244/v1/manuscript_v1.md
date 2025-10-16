@@ -1,0 +1,15 @@
+# Integrative frontal-parietal dynamics supporting cognitive control
+
+## Authors
+
+- Derek Evan Nee<sup>1</sup> ([ORCID: 0000-0001-7858-6871](https://orcid.org/0000-0001-7858-6871)) †
+
+### Affiliations
+
+1. Department of Psychology Florida State University Tallahassee United States
+
+† Corresponding author
+
+## Abstract
+
+Coordinating among the demands of the external environment and internal plans requires cognitive control supported by a fronto-parietal control network (FPCN). Evidence suggests that multiple control systems span the FPCN whose operations are poorly understood. Previously (Nee and D'Esposito, 2016; 2017), we detailed frontal dynamics that support control processing, but left open their role in broader cortical function. Here, I show that the FPCN consists of an external/present-oriented to internal/future-oriented cortical gradient extending outwardly from sensory-motor cortices. Areas at the ends of this gradient act in a segregative manner, exciting areas at the same level, but suppressing areas at different levels. By contrast, areas in the middle of the gradient excite areas at all levels, promoting integration of control processing. Individual differences in integrative dynamics predict higher-level cognitive ability and amenability to neuromodulation. These data suggest that an intermediary zone within the FPCN underlies integrative processing that supports cognitive control.

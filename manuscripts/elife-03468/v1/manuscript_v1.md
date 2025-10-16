@@ -1,0 +1,18 @@
+# T cell-specific inhibition of multiple apoptotic pathways blocks negative selection and causes autoimmunity
+
+## Authors
+
+- Megan L Burger
+- Kenneth K Leung
+- Margaux J Bennett
+- Astar Winoto †
+
+### Affiliations
+
+1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States winoto@berkeley.edu
+
+† Corresponding author
+
+## Abstract
+
+T cell self-tolerance is thought to involve peripheral tolerance and negative selection, involving apoptosis of autoreactive thymocytes. However, evidence supporting an essential role for negative selection is limited. Loss of Bim, a Bcl-2 BH3-only protein essential for thymocyte apoptosis, rarely results in autoimmunity on the C57BL/6 background.  Mice with T cell-specific over-expression of Bcl-2, that blocks multiple BH3-only proteins, are also largely normal. The nuclear receptor Nur77, also implicated in negative selection, might function redundantly to promote apoptosis by associating with Bcl-2 and exposing its potentially pro-apoptotic BH3 domain. Here, we report that T cell-specific expression of a Bcl2 BH3 mutant transgene results in enhanced rescue of thymocytes from negative selection. Concomitantly, T reg development is increased. However, aged BH3 mutant mice progressively accumulate activated, autoreactive T cells, culminating in development of multi-organ autoimmunity and lethality. These data provide strong evidence that negative selection is crucial for establishing T cell tolerance.

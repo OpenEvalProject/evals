@@ -1,0 +1,19 @@
+# Differential interaction forces govern bacterial sorting in early biofilms
+
+## Authors
+
+- Enno R Oldewurtel
+- Nadzeya Kouzel
+- Lena Dewenter
+- Katja Henseler
+- Berenike Maier †
+
+### Affiliations
+
+1. Department of Physics University of Cologne Cologne Germany berenike.maier@uni-koeln.de
+
+† Corresponding author
+
+## Abstract
+
+Bacterial biofilms can generate micro-heterogeneity in terms of surface structures. However, little is known about the associated changes in the physics of cell-cell interaction and its impact on the architecture of biofilms. Here, we used the type IV pilus of Neisseria gonorrhoeae to test whether variation of surface structures induces cell-sorting. We show that the rupture forces between pili are fine-tuned by post-translational modification. Bacterial sorting was dependent on pilus post-translational modification and pilus density. Active force generation was necessary for defined morphologies of mixed microcolonies. The observed morphotypes were in remarkable agreement with the differential strength of adhesion hypothesis proposing that a tug-of-war among surface structures of different cells governs cell sorting. We conclude that in early biofilms the density and rupture force of bacterial surface structures can trigger cell sorting based on similar physical principles as in developing embryos.

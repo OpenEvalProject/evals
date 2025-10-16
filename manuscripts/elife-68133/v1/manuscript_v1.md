@@ -1,0 +1,16 @@
+# Coding of chromatic spatial contrast by macaque V1 neurons
+
+## Authors
+
+- Abhishek De<sup>1</sup> ([ORCID: 0000-0002-2978-473X](https://orcid.org/0000-0002-2978-473X))
+- Gregory D Horwitz<sup>1</sup> ([ORCID: 0000-0001-5130-5259](https://orcid.org/0000-0001-5130-5259)) †
+
+### Affiliations
+
+1. Department of Physiology and Biophysics University of Washington Seattle United States
+
+† Corresponding author
+
+## Abstract
+
+Color perception relies on comparisons between adjacent lights, but how the brain performs these comparisons is poorly understood. To elucidate the underlying neural mechanisms, we recorded spiking responses of individual V1 neurons in macaque monkeys to pairs of stimuli within the classical receptive field (RF). We estimated the spatial-chromatic RF of each neuron and then presented customized colored edges using a novel closed-loop technique. We found that many double-opponent (DO) cells, which have spatially and chromatically opponent RFs, responded to chromatic contrast as a weighted sum, akin to how other V1 cells responded to luminance contrast. Yet other neurons integrated chromatic signals non-linearly, confirming that linear signal integration is not an obligate property of V1 neurons. The functional similarity of cone-opponent DO cells and cone non-opponent simple cells suggests that these two groups may share a common underlying neural circuitry, promotes the construction of image-computable models for full-color image representation, and sheds new light on V1 complex cells.

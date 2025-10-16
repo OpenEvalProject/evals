@@ -1,0 +1,16 @@
+# Vg1-Nodal heterodimers are the endogenous inducers of mesendoderm
+
+## Authors
+
+- Tessa Grace Montague<sup>1</sup> ([ORCID: 0000-0002-5918-6327](https://orcid.org/0000-0002-5918-6327)) †
+- Alexander F Schier<sup>1</sup> ([ORCID: 0000-0001-7645-5325](https://orcid.org/0000-0001-7645-5325)) †
+
+### Affiliations
+
+1. Department of Molecular and Cellular Biology Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Nodal is considered the key inducer of mesendoderm in vertebrate embryos and embryonic stem cells. Other TGF-beta-related signals, such as Vg1/Dvr1/Gdf3, have also been implicated in this process but their roles have been unclear or controversial. Here we report that zebrafish embryos without maternally provided vg1 fail to form endoderm and head and trunk mesoderm, and closely resemble nodal loss-of-function mutants. Although Nodal is processed and secreted without Vg1, it requires Vg1 for its endogenous activity. Conversely, Vg1 is unprocessed and resides in the endoplasmic reticulum without Nodal, and is only secreted, processed and active in the presence of Nodal. Co-expression of Nodal and Vg1 results in heterodimer formation and mesendoderm induction. Thus, mesendoderm induction relies on the combination of two TGF-beta-related signals: maternal and ubiquitous Vg1, and zygotic and localized Nodal. Modeling reveals that the pool of maternal Vg1 enables rapid signaling at low concentrations of zygotic Nodal.

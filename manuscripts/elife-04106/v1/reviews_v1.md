@@ -1,0 +1,43 @@
+# Peer review - Round 1
+
+Editors:
+- Thomas R Gingeras, Cold Spring Harbor Laboratory , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.04106.036](https://doi.org/10.7554/eLife.04106.036)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Genome-wide Regulatory Dynamics of Translation in the Plasmodium falciparum Asexual Blood Stages” for consideration at eLife. Your article has been favorably evaluated by Richard Losick (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+This manuscript presents genome-wide transcriptional maps and association of the detected steady-state RNAs to ribosomes as a means of studying the possible use of translation as a post-transcriptional control mechanism during 5 stages of development in P. falciparum. The use of such a regulatory strategy would help to explain why there is a continuous flow of transcription from the majority of genes in P. falciparum throughout the development cycle in place of a more regulated and dynamic gene expression strategy. In addition, the authors seek to enhance our understanding of how this regulatory strategy is enacted in this organism. Thus, this is a timely and potentially and important manuscript. However, overall, the manuscript contains several important issues that require attention to help readers better appreciate the messages communicated.
+
+1) Given the critiques of the riboseq approaches (Chew et al, 2013;119 Guttman et al, 2013) it would be important to firmly establish that the RNAs isolated in the ribosome protocol are part of a productive polysome translation complex and instead of individual monosomes. This concern is given support in Figure 1–figure supplement 1 which shows considerable size 80s peaks in the untreated samples for the Late Troph, Schizonts and merozoites stages. In short, the detection of RNA protected by ribosomes in these footprint experiments cannot always be with associated with RNA destined for translation. Wilson & Masel, 2011 have reported that non-productive binding of single ribosomes to mRNA do not undergo productive translation. Thus, RNAseq results obtained from the 80S peak might be compared to RNAseq results obtained from RNAs isolated from the polysome peak. This would act as a control against this problematic possibility.
+
+2) Since the authors do not generate a proteomic dataset for their samples, it is not convincing that the translation efficiency values that they infer from their ribosomal occupancy profiles are direct indicators of protein synthesis. This is especially true given the delay in protein as compared to transcript detection observed during the P. falciparum IDC (Le Roch et al., Genome Biol., 2004 and Foth et al., Mol. Cell. Proteomics, 2011). It is also important to note that select noncoding RNAs show a translational efficiency similar to coding regions, even though they are not translated (Ingolia et al., Cell, 2011, and Guttman et al., Cell, 2013); these noncoding RNAs can be distinguished from coding regions only by their ribosomal release score, which was not calculated in this study. Together, the translation efficiency measured here is not enough to indicate if a protein product is being made. The authors have to provide additional evidence or analyses to conclusively state that there is a lack of “overt” translational control.
+
+3) Another reason for the detection of a transcript in the ribosomal occupancy profile could be due to its presence in other ribonucleoprotein complexes that associate or co-sediment with the 80S monosome fractions. The authors infer the same when they discuss the 3' UTRs of transcripts (Figure 9). Could this be the case for other regions of apparent ribosomal occupancy such as the 5' leader sequence? The authors should discuss this in more detail. A straightforward experiment would be to determine the protein composition of the 80S monosome fractions isolated for ribosome profiling in different stages of the IDC. A related question: Is there a lack of polysomes in merozoite stages? This appears to be the case in Figure 1–figure supplement 1.
+
+4) Another concern is that the authors do not discuss their data in light of the polysome occupancy study published by Bunnik et al., Genome Biology, 2013, and the delayed translation phenomenon that has been observed by Le Roch et al., Genome Biol., 2004, and Foth et al., Mol. Cell. Proteomics, 2011.
+
+5) The antisense RNAs section is not 'up-to-date' with the literature. Three recent studies have detected pervasive transcription of the parasite genome – López-Barragán et al., BMC Genomics, 2011; Siegel et al., BMC Genomics, 2014; Wei et al., PLOS One, 2014 – none of which are referenced and discussed here.
+
+6) The authors establish a threshold read count, in terms of reads per million mapped (rM), for downstream analysis. The threshold chosen here seems reasonable for this data set, but I do think there is an important clarification to be made. There are two separate questions that might be addressed by a read count threshold: a minimum expression level for biologically significant effects and a minimum count for statistically reliable analysis. An rM threshold is reasonable for the former, while a raw read count seems more appropriate for the latter. Doubling sequence coverage would permit statistically reliable detection of lower expression levels.
+
+7) At several points the authors discuss a correlation between mRNA abundance and translation, or between transcription and translation; these seem to be used interchangeably. The authors seem to mean that the amount of protein produced correlates well with the abundance of the mRNA that encodes it – but this phrase could also suggest that more abundant mRNAs are translated more highly. The authors should clarify this point when it's first mentioned.
+
+8) The authors discuss relative translational efficiency (TE). Measures of overall translation and TE in different samples are all scaled by the per-million-mapped factor to correct for differences in sequencing depth, etc. This correction obscures changes in the bulk mRNA content or translational activity between different stages. These effects are discussed in e.g. Lovén et al., Cell 2012. The authors state that “Absolute mean translational efficiencies were the same in all stages” but this conclusion is almost an arithmetic identity after applying per-million-mapped normalization. The polysome profiles presented in Figure 1– figure supplement 1 indicate large changes in overall translational activity at different developmental stages.
+
+9) In discussing RESA2 I was confused by Figure 5–figure supplement 2 until I realized that only the truncated reading frame was shown. It would be great to indicate the full-length reading frame on the graph.
+
+10) In discussing the eIF2alpha kinase IK1, the authors note that the gene is translationally silenced, perhaps reflecting one of the few uORF-mediated translational silencing events in Plasmodium. As eIF2alpha phosphorylation can induce a bypass of such silencing, this seems like a potentially interesting auto regulatory system – in animals, the eIF2alpha phosphatase GADD34 is regulated by uORF silencing in order to provide feedback; here it would seem that positive feedback may act instead.
+
+11) The authors discuss qualitatively the observation that many abundant but poorly translated mRNAs are not detectable by proteomics, in contrast to well-translated messages. It would be valuable to quantify detectability, controlling for mRNA abundance, and test less anecdotally whether detectability, as a proxy for protein abundance, follows translation better than mRNA abundance.
+
+12) It is striking that the 5' UTRs in Plasmodium were longer than the 3' UTRs – this differs from the situation in other eukaryotes, over a wide range of absolute UTR length. The authors should comment on this.

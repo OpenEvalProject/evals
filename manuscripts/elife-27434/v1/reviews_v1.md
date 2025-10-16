@@ -1,0 +1,41 @@
+# Peer review - Round 1
+
+Editors:
+- Suzanne R Pfeffer, Stanford University School of Medicine United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.27434.017](https://doi.org/10.7554/eLife.27434.017)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "A recombinant BBSome core complex and how it interacts with ciliary cargo" for consideration by eLife. Your article has been favorably evaluated by Fiona Watt (Senior Editor) and three reviewers, one of whom, Suzanne Pfeffer, is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Esben Lorentzen (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+This is a high quality manuscript that characterizes the BBsome core complex after expression in Baculovirus infected insect cells, reports a low resolution negative stain EM structure, and explores the broad substrate specificity for cytoplasmic peptides representing G protein coupled receptor cytoplasmic domains that rely on the BBsome for ciliary targeting. Through hierarchical complex subunit expression, the authors show that the BBsome exists as a BBS9 seeded structure with BBS 1, 4, 5, 8, and 18 tightly attached and BBS 2 and 7 less so, and this core bound Arl6 in a GTP-dependent manner. Using 4000, 15mer peptide scanning, they identify key interaction motifs in GPCRs and report their interaction affinities using fluorescence polarization – no change in binding affinity is seen in the presence of Arl6-GTP. Although findings will be of broad interest to those studying ciliary protein targeting, the reviewers felt strongly that some physiological test of the sequences identified (or higher resolution structure) would greatly enhance the significance of the present story. Specific suggestions follow here.
+
+Essential revisions:
+
+The authors need to include a detailed analysis of one putative BBS-binding and cilia-localization motif. The "F/W-K/R" motif is a particularly good one since it is cited in countless reviews and is a source of considerable confusion in the field. In addition to mutagenesis and in vitro Bbsome binding assays, which should be quite straightforward, it is important that they make the relevant mutation in intact receptors and show that there is a defect in ciliary trafficking and not only in folding/stability. The assays here are not too difficult, as they involve transient expression of mutants and tests for surface expression and cilia localization (by IF) and ER exit (by EndoH sensitivity) (see below).
+
+Additionally, we recommend that the authors focus on receptors other than Smo. There is a publicly available PhD thesis by Daniel Nedelcu from Adrian Salic's lab that reports a very thorough mutagenesis of the SMO tail with both cilia-localization and signaling assays. The salient result is ciliary localization of SMO is unaffected by both mutations in the "WR" motif or in the polybasic stretch suggested by the authors as important for Bbsome binding. (Interestingly, the polybasic mutation reduces signaling without affecting ciliary accumulation). Thus, it’s not clear that the interaction assays used by the authors have much relevance for the ciliary trafficking of Smo.
+
+Detailed comments:
+
+1) In the Introduction (fourth paragraph), the authors write that the function of the BBSome is import of ciliary membrane proteins such as SSTR3 and components of the hedgehog pathway. Although this was the consensus in the field some years back, this view may not be correct and appears not to be supported by the more recent literature. There is, however, strong data supporting a role for the BBSome in the ciliary export of membrane proteins. Data from Karl Lechtrech using Chlamydomonas showed that PLD requires the BBSome for ciliary export and accumulates in the cilium in BBS mutants. Several papers from Greg Pazours lab have demonstrated that the BBSome together with IFT25/27 are required for the export of hedgehog components and the latest 2017 paper from the Nachury lab explains why the BBSome was initially falsely believed to be involved in the import rather than export of ciliary GPCRs. Indeed, mutation of the BBSome machinery results in accumulation of SSTR3 followed by shedding in ectosomes rather than failure to import of SSTR3. Along the same lines, the authors do not once mention TULP3, which is likely the true import adaptor for many ciliary GPCRs. Please update the manuscript with references to the work of Saikat Mukhopadhyay on IFT-A/TULP3 and try to give a more balanced account of the role of BBSomes and TULP3 in ciliary trafficking.
+
+2) Figure 1. The presentation of the gel in 1A is not very nice. It is hard to make sense of what is what. Did BBS18 run out in the last 3 lanes? Or is it the band running much higher than BBS18 in lane 5 (in which case you cannot use the same marker for all) ?
+
+3) One caveat of the polarization experiment is that the BBSome complex used is missing two subunits and that the peptides of ciliary cargoes are not in the context of the native proteins, which could make a significant difference for the C-terminal peptides that contain residues from the last trans-membrane helix. Make sure this is explicitly stated in the manuscript.
+
+4) One conclusion from the manuscript is that '(F/W)(K/R)' containing peptides from the C-terminal region of cargo proteins bind BBSomes with relatively high affinity. However, these peptide sequences often contain multiple similar sequences (FK and FR in SSTR3; WR and WCR in Smo). The authors should mutate each of these regions and determine affinities to try to narrow down the minimal CTS. It would of course be optimal to do this experiment in the context of the full length proteins but that would probably be too much to ask.
+
+5) Motifs in SSTR3 that bind to the BBSome in vitro: The third intracellular loop of SSTR3 has been shown to bind to the BBsome previously. It is sufficient to mediate ciliary targeting but its deletion does not abrogate SSTR3 localization in cilia. The authors identify an additional BBSome interacting motif in the receptor tail using their in vitro assays. However, no tests of specificity are shown – are there residues in this motif that when mutated prevent binding to the BBSome and also prevent ciliary localization of SSTR3 in cells?
+
+6) BBSome Motifs in Gpr161 are identified but their physiological relevance for cilia trafficking or signaling is not investigated. Gpr161 is a negative regulator of basal Hedgehog signaling that is localized in the ciliary membrane at baseline. Hh ligands drive the clearance of Gpr161 from cilia, thought to be a key event in signal activation. Thus, ciliary localization, delocalization and Hh signaling can all be easily assayed after making mutations in the peptide motifs identified by the in vitro BBSome binding assays. Do mutations that abrogate binding to the BBSome also impair any of these physiological activities of the receptor?
+
+7) The authors suggest that the (F/W/Y)-(R/K) motif is discussed extensively as a "general motif" important motif for BBSome recognition. However, there is no functional evidence for this assertion. This motif is present in many GPCRs and there is no evidence that it is particularly enriched in ciliary GPCRs. Second, there is little evidence that mutation of this motif leads to a defect in ciliary trafficking (as opposed to a folding defect that leads to ER retention). This scenario is likely to be the case for this motif in Smo, because mutation of this motif in SMO leads to only a minor effect on signaling and ciliary localization (see PMIDs 16459297, 21474452, and the PhD thesis https://dash.harvard.edu/bitstream/handle/1/11181143/Nedelcu_gsas.harvard_0084L_11080.pdf?sequence=1). Indeed, this same "WR" motif is present in Drosophila SMO, which does not localize in cilia!

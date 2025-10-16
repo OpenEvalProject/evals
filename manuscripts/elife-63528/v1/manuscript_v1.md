@@ -1,0 +1,16 @@
+# The interplay between asymmetric and symmetric DNA loop extrusion
+
+## Authors
+
+- Edward J Banigan<sup>1</sup> ([ORCID: 0000-0001-5478-7425](https://orcid.org/0000-0001-5478-7425)) †
+- Leonid A Mirny<sup>1</sup> ([ORCID: 0000-0002-0785-5410](https://orcid.org/0000-0002-0785-5410)) †
+
+### Affiliations
+
+1. Institute for Medical Engineering and Science and Department of Physics Massachusetts Institute of Technology Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Chromosome compaction is essential for reliable transmission of genetic information. Experiments suggest that ~ 1000-fold compaction is driven by condensin complexes that extrude chromatin loops, i.e., progressively collect chromatin fiber from one or both sides of the complex to form a growing loop. Theory indicates that symmetric two-sided loop extrusion can achieve such compaction, but recent single-molecule studies (Golfier et al., 2020) observed diverse dynamics of condensins that perform one-sided, symmetric two-sided, and asymmetric two-sided extrusion. We use simulations and theory to determine how these molecular properties lead to chromosome compaction. High compaction can be achieved if even a small fraction of condensins have two essential properties: a long residence time and the ability to perform two-sided (not necessarily symmetric) extrusion. In mixtures of condensins I and II, coupling two-sided extrusion and stable chromatin binding by condensin II promotes compaction. These results provide missing connections between single-molecule observations and chromosome-scale organization.

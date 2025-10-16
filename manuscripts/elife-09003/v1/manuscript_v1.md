@@ -1,0 +1,27 @@
+# A gene-expression screen identifies a non-toxic sumoylation inhibitor that Mimics SUMO-less human LRH-1 in liver
+
+## Authors
+
+- Miyuki Suzawa
+- Diego A Miranda
+- Karmela A Ramos
+- Kenny K-H Ang
+- Emily J Faivre
+- Christopher G Wilson
+- Laura Caboni
+- Michelle R Arkin
+- Yeong-Sang Kim
+- Robert J Fletterick
+- Aaron Diaz
+- John S Schneekloth
+- Holly A Ingraham †
+
+### Affiliations
+
+1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States holly.ingraham@ucsf.edu
+
+† Corresponding author
+
+## Abstract
+
+SUMO-modification of nuclear proteins has profound effects on gene expression. However, non-toxic chemical tools that modulate sumoylation in cells are lacking. Here, to identify small molecule sumoylation inhibitors we developed a cell-based screen that focused on the well-sumoylated substrate, human Liver Receptor Homolog-1 (hLRH-1, NR5A2). Our primary gene-expression screen assayed two SUMO-sensitive transcripts, APOC3 and MUC1 that are upregulated by SUMO-less hLRH-1 or by siUBC9 knockdown, respectively. A polyphenol, tannic acid (TA) emerged as a potent sumoylation inhibitor in vitro (IC50 = 12.8 µM) and in cells. TA also increased hLRH-1 occupancy on SUMO-sensitive transcripts. Most significantly, when tested in humanized mouse primary hepatocytes, TA inhibits hLRH-1 sumoylation and induces SUMO-sensitive genes, thereby recapitulating the effects of expressing SUMO-less hLRH-1 in mouse liver. Our findings underscore the benefits of phenotypic screening for targeting post-translational modifications, and illustrate the potential utility of TA for probing the cellular consequences of sumoylation.

@@ -1,0 +1,79 @@
+# Peer review - Round 1
+
+Editors:
+- Lila Davachi, New York University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.35164.sa1](https://doi.org/10.7554/eLife.35164.sa1)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Fast-backward replay of sequentially memorized items in humans" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Frank as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Saskia Haegens (Reviewer #3).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+This paper addresses an important question about how multi-item sequences are maintained in the brain. The paper is clear and well written and the analyses and results are novel. However, the paper rests on an assumption about probe tagging and WM maintenance, for which the case is not convincingly made in the paper. Furthermore, the bulk of the data is from group data. In order to be considered further, data from individual trials should be shown and analyzed.
+
+For a revision to be successful, you must address the following three major issues and I am appending a list of other comments below that you can use to improve the paper as well:
+
+1) All reviewers either did not follow the logic of the tagging idea or believed it was based on a number of assumptions that were not clearly demonstrated in the paper. The interpretation of the primary conclusions of this paper rest on the assumption that the TRF method can reliably 'tag' unique activation patterns for distinct stimuli. However, there is concern that a number of steps/assumptions that must be true in order for the author's interpretations of the results to be sound. First, there must be a relationship between the neural representation of the items during encoding and the neural representation of just the color feature of the item during maintenance, and the unique representations of these item/features must be dissociable. Second, there must be a linear relationship between the modulation of the luminance of the disc and the neural representation of the color of the disc. Third, the temporal dynamics of alpha power in the resulting TRF must serve as a unique proxy for the neural representation of each item. In order to draw the conclusions, it seems to me that each of these must be true. Please provide a more thorough explanation of the logic and assumptions behind using the TRF method to tag item reactivations and evidence that these assumptions are reasonable and supported by the data.
+
+2) All reviewers felt strongly trial-by-trial evidence for item maintenance should be presented. For the reported patterns to truly reflect a physiological pattern akin to replay, it would be important to demonstrate that individual electrodes/subjects sequentially represent each of the two different stimuli on individual trials. Otherwise, there is the concern that the results may be the effect of averaging such that the observed patterns were caused by different items, electrodes, or subjects showing activations at different latencies according to list position. I think it is vital that a true replay analysis be performed and the authors need to explain this analysis very clearly. The authors can satisfy this concern by ensuring that they report and document an analysis that is focused on identifying replay at the single trial level.
+
+3) Could the timing differences between the item reactivations be completely explained by the recency effect, or differences in memory strength by encoding position? For example, if we manipulated the sequence such that the item in the first position was always more salient than the item in the second position, would the temporal coding pattern during the maintenance period also flip (item 1 reactivated first, item 2 reactivated second)? A finding like this would suggest that the temporal reactivation differences are less about the encoding of order and more about the strength of encoding, or the 'attentional priority' of the items.
+
+[Editors’ note: this article was subsequently rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]
+
+Thank you for submitting your work entitled "Fast-backward replay of sequentially memorized items in humans" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew Heusser (Reviewer #1); Saskia Haegens (Reviewer #3); Rasa Gulbinaite (Reviewer #4).
+
+Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work cannot be considered further for publication in eLife at this time.
+
+The reviewers all agreed that the revision was very responsive and served to increase confidence in the results as well as clarified the methodological approach. However, there were still significant questions about the validity of the TRF approach especially given that the methods and analyses are so complex. Thus, as you can see, we reached out to another reviewer, an expert in the method. The comments of this reviewer echoed the concerns of the other reviewers and highlight the important need to validate the method with chromatic stimuli as suggested. Furthermore, for the reasons highlighted, this needs to be done on a single subject level. Because this would require new data collection and analyses, it is not clear how these analyses will turn out. However, if you are able to validate the paradigm with chromatic stimuli in the manner suggested by reviewer 4, as well as address all of the other concerns reviewer 4 brings up, we could consider a new submission at that time.
+
+We have appended the reviews below but please note that reviewers 1 and 3 made their comments as an initial response to the revision which was very responsive. However it was upon further consultation with these reviewers that it was clear we needed to consult with an expert on the TRF methods.
+
+Reviewer #1:
+
+The authors did an excellent job at responding to my concerns and I have no additional major concerns.
+
+Reviewer #3:
+
+I believe the authors adequately addressed most of the concerns raised. The only remaining issue is whether these results hold on a single-trial level. While I understand that the TRF (by definition) cannot be computed for single trials, I would have liked to see an intermediate solution: recompute the analysis for binned trials (i.e., smaller subsets). However, I do understand the SNR concerns raised, and it may have to remain for future work. Maybe the authors can at least add a couple sentences to the Discussion to that extent?
+
+Related to this, I did not understand how Figure 3D proves consistency over subjects? Because it is normalized? Maybe I am missing the point, but plotting the single subject results in addition to the grand average would have been more compelling.
+
+Reviewer #4:
+
+I have read the manuscript by Huang et al., the reviewing editor's summary of the reviewers' comments, and the authors' response to these comments. Although the authors extensively revised the manuscript based on the reviewer's comments, I agree with my predecessors that the assumptions that TRF approach allows to track memory activation of distinct stimuli is not sufficiently validated.
+
+To my knowledge, there has not been yet a single paper validating the TRF approach for color stimuli (only achromatic stimuli have been used by several groups so far, e.g. Lalor and VanRullen), thus the authors first need to provide evidence that color stimuli can elicit a reliable TRF. This can be done by presenting a single colored stimulus and comparing the observed TRF with that obtained by shuffling the pairing between luminance sequences and concurrently recorded EEG time series. Crucially, this has to be demonstrated on a single-subject level. The latter is particularly important, because periodicity of TRF for achromatic stimuli has been shown to differ across participants, and the peak frequency of TRF is highly correlated with individual alpha peak frequency (VanRullen and Macdonald, 2012). Thus, group average analyses of TRF time courses (as done here), unless demonstrated that between-subject variability in TRF was not significant, can be driven by the subjects that have higher prominent TRF amplitude.
+
+Based on the example TRFs in Figure 1, TRFs for chromatic stimuli differ substantially from the previously reported TRFs for achromatic stimuli (e.g. VanRullen and Macdonald, 2012), which reverberate up to 1 sec. Moreover, given the previous reports on difference in alpha-band power for different color stimuli (e.g. Yoto et al., 2007; DOI: 10.2114/jpa2.26.373), it is likely that TRF for different color stimuli would also be different. However, it is an empirical question that needs to be addressed prior to using TRFs for chromatic stimuli to tag items held in memory.
+
+It has been previously reported that the phases of two TRFs elicited by achromatic flickering stimuli on the left and right hemifield exhibit phase differences across many channels (Lozano-Doldevilla and VanRullen, DOI: https://doi.org/10.1101/190595). Thus, it is possible that the phase differences reported here are not the property of the items stored in memory, but rather reflects the differences in propagation of different TRFs across cortex. Thus, again it is important to validate the TRF approach for several chromatic stimuli and to demonstrate that the phase differences are not related to the location of the stimuli in the retinotopic space.
+
+Removing grand-average TRF responses from condition-specific TRF responses defeats the purpose of subject- and condition-specific TRF (subsection “Normalization”), and more importantly creates artificial oscillatory pattern (Figure 3D).
+
+The electrode selection procedure is arguably biased to find condition differences. The authors selected the electrodes of interest based on the significant differences in TRFs between the WM and NWM conditions (subsection "Channel-of-interest", as well as authors' response: "According to the suggestion, we first selected channels based on the EEG alpha power, from which we then seek channels showing significant memory effects in TRFs."), and then show that there are indeed differences in TRFs in all subsequent analyses. To be statistically appropriate, channel selection procedure cannot involve data from condition differences, and should only be selected based on condition average or other criteria that are orthogonal to the subsequent analyses.
+
+Overall, despite the interesting topic and clever experimental approach taken by the authors, the manuscript in its current form does not feel up to the empirical and analytic standards one typically associates with eLife.
+
+[Editors’ note: what now follows is the decision letter after the authors submitted for further consideration.]
+
+Thank you for choosing to send your work entitled "Fast-backward replay of sequentially memorized items in humans" for consideration at eLife. Your letter of appeal has been considered by a Senior Editor and a Reviewing Editor, and we are prepared to consider a revised submission with no guarantees of acceptance.
+
+The appeal provided additional useful information that increased the confidence in your reported effects. However, there were still issues brought up by the reviewers that were misunderstood and/or not clearly addressed. These issues (outlined below) must be addressed in full in a revision in order for the paper to be acceptable either with data or added discussion.
+
+1) The additional information you provided about the counterbalancing of color and location was very useful. An additional control that would strengthen your argument would be to directly compare the preferred phase of the TRF for different color/location combinations. The appeal included an additional figure illustrating that there is no effect of location in the alpha power timeseries. If possible with the existing data, it would useful to see the same analysis by color. If there are no reliable differences in the alpha power time course by color, then this cannot be a likely explanation for the phase differences for the different items maintained in memory.
+
+2) Based on the new data, and re-analysis of another dataset, chromatic TRFs seem to be indeed oscillatory and comparable to the previously reported achromatic TRFs at the single-subject level. This is reassuring and adds credibility to the use of white-noise chromatic stimuli for tagging memory items. However, no information was included about the number of trials used in this control study to derive TFRs? Is it comparable to what has been used in the original study? Please add this information into the paper.
+
+3) Also, it is not clear whether the plots provided in the appeal letter come from a single-color stimulus (which color?) or average of 3 colors? Please make this clear in the paper. Thus, this leaves open the original question asked by reviewers – are different color TRFs comparable in amplitude and phase (the property of TRFs that the results of this study hinge on)? Please show the data for each color separately.
+
+4) Several statistical decisions remain unclear and need to be clearly motivated and described. For example, the paper stated "In Experiment 1, the "channel-of-interest" has passed statistical test after multiple-comparison correction across time and channels”. In other words, we used a non-biased approach (statistical test after multiple comparison correction) to determine channels showing memory effects ("channel of interest")." Thus, it appears that a multi-step procedure was used to select the channels of interest? The logic for this is not explained. Please explain the logic carefully and clearly. Although seemingly minor, why did you choose a p value of p =.058 instead of the conventional.05? (In the previous version reviewers also noted that details of a 'bootstrap' or 'permutation' test were also not clearly described). If you choose to submit a revised manuscript, please ensure that all statistics are clearly explained, motivated and reported. Otherwise, we cannot consider the paper suitable for publication.
+
+5) A question was raised about whether the observed sequential replay was due to the normalization procedure. In the appeal, you noted 'First, we could see clear sequential activation pattern in the raw data (Figure 3C)." However, there is a concern that the normalization procedure itself (subtracting the average of the 3 conditions) seems to introduce an artificial oscillatory pattern. Looking at Figure 3C (non-normalized data), non-working memory item is arguably the only one that is oscillatory (most likely noise), and by removing the average of the three-curves one would end up with an oscillatory pattern in Figure 3D – the figure that summarizes the main finding of the paper. Please address this issue more directly by assessing whether there is indeed any evidence for oscillations in the raw data – without the normalization procedure.

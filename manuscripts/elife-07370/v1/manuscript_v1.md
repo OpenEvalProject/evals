@@ -1,0 +1,20 @@
+# Piezo1 links mechanical forces to red blood cell volume
+
+## Authors
+
+- Stuart M Cahalan
+- Viktor Lukacs
+- Sanjeev S Ranade
+- Shu Chien
+- Michael Bandell
+- Ardem Patapoutian †
+
+### Affiliations
+
+1. Department of Molecular and Cellular Neuroscience Howard Hughes Medical Institute, The Scripps Research Institute La Jolla United States ardem@scripps.edu
+
+† Corresponding author
+
+## Abstract
+
+Red blood cells (RBCs) experience significant mechanical forces while recirculating, but the consequences of these forces are not fully understood. Recent work has shown that gain-of-function mutations in mechanically-activated Piezo1 cation channels are associated with the dehydrating RBC disease Xerocytosis, implicating a role of mechanotransduction in RBC volume regulation. However, the mechanisms by which these mutations result in RBC dehydration are unknown. Here we show that RBCs exhibit robust calcium entry in response to mechanical stretch, and that this entry is dependent on Piezo1 expression. Furthermore, RBCs from blood-cell-specific Piezo1 conditional knockout mice are overhydrated and exhibit increased fragility both in vitro and in vivo . Finally, we show that Yoda1, a chemical activator of Piezo1, causes calcium influx and subsequent dehydration of RBCs via downstream activation of the KCa3.1 Gardos channel, directly implicating Piezo1 signaling in RBC volume control. Therefore, mechanically-activated Piezo1 plays an essential role in RBC volume homeostasis.

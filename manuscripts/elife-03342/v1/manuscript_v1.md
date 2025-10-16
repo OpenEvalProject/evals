@@ -1,0 +1,25 @@
+# Quantitative determinants of aerobic glycolysis identify flux through the enzyme GAPDH as a limiting step
+
+## Authors
+
+- Alex A Shestov
+- Xiaojing Liu
+- Zheng Ser
+- Ahmad A Cluntun
+- Yin P Hung
+- Lei Huang
+- Dongsung Kim
+- Anne Le
+- Gary Yellen
+- John G Albeck
+- Jason W Locasale †
+
+### Affiliations
+
+1. Division of Nutritional Sciences Cornell University Ithaca United States locasale@cornell.edu
+
+† Corresponding author
+
+## Abstract
+
+Aerobic glycolysis or the Warburg Effect (WE) is characterized by the increased metabolism of glucose to lactate.  It remains unknown what quantitative changes to the activity of metabolism are necessary and sufficient for this phenotype.  We developed a computational model of glycolysis and an integrated analysis using metabolic control analysis (MCA), metabolomics data, and statistical simulations.  We identified and confirmed a novel mode of regulation specific to aerobic glycolysis where flux through GAPDH, the enzyme separating lower and upper glycolysis, is the rate-limiting step in the pathway and the levels of fructose (1,6) bisphosphate (FBP), are predictive of the rate and control points in glycolysis.  Strikingly, negative flux control was found and confirmed for several steps thought to be rate-limiting in glycolysis.  Together these findings enumerate the biochemical determinants of the WE, and suggest strategies for identifying the contexts in which agents that target glycolysis might be most effective.

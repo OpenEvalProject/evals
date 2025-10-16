@@ -1,0 +1,17 @@
+# Synaptic plasticity and cognitive function are disrupted in the absence of Lrp4
+
+## Authors
+
+- Andrea M Gomez
+- Robert C Froemke
+- Steven J Burden †
+
+### Affiliations
+
+1. Graduate Program in Developmental Genetics, Molecular Neurobiology Program Skirball Institute of Biomolecular Medicine, NYU Medical Center New York United States steve.burden@med.nyu.edu
+
+† Corresponding author
+
+## Abstract
+
+Lrp4, the muscle receptor for neuronal Agrin, is expressed in the hippocampus and areas involved in cognition. The function of Lrp4 in the brain, however, is unknown, as Lrp4 mice fail to form neuromuscular synapses and die at birth. -/- Lrp4 mice, rescued for Lrp4 expression selectively in muscle, survive into adulthood and showed profound deficits in cognitive tasks that assess learning and memory. To learn whether synapses form and function aberrantly, we used electrophysiological and anatomical methods to study hippocampal CA3-CA1 synapses. In the absence of Lrp4, the organization of the hippocampus appeared normal, but the frequency of spontaneous release events and spine density on primary apical dendrites were reduced. CA3 input was unable to adequately depolarize CA1 neurons to induce long-term-potentiation. Our studies demonstrate a role for Lrp4 in hippocampal function and suggest that patients with mutations in -/- Lrp4 or autoantibodies to Lrp4 should be evaluated for neurological deficits.

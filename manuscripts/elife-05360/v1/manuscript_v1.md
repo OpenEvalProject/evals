@@ -1,0 +1,17 @@
+# VTA neurons coordinate with the hippocampal reactivation of spatial experience
+
+## Authors
+
+- Stephen N Gomperts †
+- Fabian Kloosterman
+- Matthew A Wilson
+
+### Affiliations
+
+1. Department of Brain and Cognitive Sciences Massachusetts Institute of Technology Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Spatial learning requires the hippocampus, and the replay of spatial sequences during hippocampal sharp wave-ripple (SPW-R) events of quiet wakefulness and sleep is believed to play a crucial role. To test whether the coordination of VTA reward prediction error signals with these replayed spatial sequences could contribute to this process, we recorded from neuronal ensembles of the hippocampus and VTA as rats performed appetitive spatial tasks and subsequently slept. We found that many reward responsive (RR) VTA neurons coordinated with quiet wakefulness-associated hippocampal SPW-R events that replayed recent experience. In contrast, coordination between RR neurons and SPW-R events in subsequent slow wave sleep was diminished. Together, these results indicate distinct contributions of VTA reinforcement activity associated with hippocampal spatial replay to the processing of wake and SWS-associated spatial memory.

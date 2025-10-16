@@ -1,0 +1,21 @@
+# The basic leucine zipper transcription factor NFIL3 directs the development of a common innate lymphoid cell precursor
+
+## Authors
+
+- Xiaofei Yu
+- Yuhao Wang
+- Mi Deng
+- Yun Li
+- Kelly A Ruhn
+- Cheng Cheng Zhang
+- Lora V Hooper †
+
+### Affiliations
+
+1. Department of Immunology University of Texas Southwestern Medical Center Dallas United States lora.hooper@utsouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Innate lymphoid cells (ILCs) are recently identified lymphocytes that limit infection and promote tissue repair at mucosal surfaces. However, the pathways underlying ILC development remain unclear. Here we show that the transcription factor NFIL3 directs the development of a committed bone marrow precursor that differentiates into all known ILC lineages. NFIL3 was required in the common lymphoid progenitor (CLP), and was essential for the differentiation of αLP, a bone marrow cell population that gives rise to all known ILC lineages. Clonal differentiation studies revealed that CXCR6 + cells within the αLP population differentiate into all ILC lineages but not T- and B-cells. We further show that NFIL3 governs ILC development by directly regulating expression of the transcription factor TOX. These findings establish that NFIL3 directs the differentiation of a committed ILC precursor that gives rise to all ILC lineages and provide insight into the defining role of NFIL3 in ILC development.

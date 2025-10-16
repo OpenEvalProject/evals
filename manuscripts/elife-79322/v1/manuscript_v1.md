@@ -1,0 +1,22 @@
+# Functional interactions among neurons within single columns of macaque V1
+
+## Authors
+
+- Ethan B Trepka<sup>1</sup>
+- Shude Zhu<sup>2</sup> ([ORCID: 0000-0002-8674-9607](https://orcid.org/0000-0002-8674-9607)) †
+- Ruobing Xia<sup>2</sup>
+- Xiaomo Chen<sup>3</sup>
+- Tirin Moore<sup>4</sup> ([ORCID: 0000-0002-3345-2930](https://orcid.org/0000-0002-3345-2930))
+
+### Affiliations
+
+1. Neurosciences Program Stanford University Stanford United States
+2. Department of Neurobiology Howard Hughes Medical Institute, Stanford University Stanford United States
+3. Department of Neurobiology, Physiology, and BehaviorDepartment of Neurobiology University of California, Davis Davis United States
+4. Neurobiology Howard Hughes Medical Institute, Stanford University Stanford United States
+
+† Corresponding author
+
+## Abstract
+
+Recent developments in high-density neurophysiological tools now make it possible to record from hundreds of single neurons within local, highly interconnected neural networks. Among the many advantages of such recordings is that they dramatically increase the quantity of identifiable, functional interactions between neurons thereby providing an unprecedented view of local circuits. Using high-density, Neuropixels recordings from single neocortical columns of primary visual cortex in nonhuman primates, we identified 1000s of functionally interacting neuronal pairs using established crosscorrelation approaches. Our results reveal clear and systematic variations in the synchrony and strength of functional interactions within single cortical columns. Despite neurons residing within the same column, both measures of interactions depended heavily on the vertical distance separating neuronal pairs, as well as on the similarity of stimulus tuning. In addition, we leveraged the statistical power afforded by the large numbers of functionally interacting pairs to categorize interactions between neurons based on their crosscorrelation functions. These analyses identified distinct, putative classes of functional interactions within the full population. These classes of functional interactions were corroborated by their unique distributions across defined laminar compartments and were consistent with known properties of V1 cortical circuitry, such as the lead-lag relationship between simple and complex cells. Our results provide a clear proof-of-principle for the use of high-density neurophysiological recordings to assess circuit-level interactions within local neuronal networks.

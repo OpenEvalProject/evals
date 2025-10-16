@@ -1,0 +1,17 @@
+# A theory of joint attractor dynamics in the hippocampus and the entorhinal cortex accounts for artificial remapping and grid cell field-to-field variability
+
+## Authors
+
+- Haggai Agmon<sup>1</sup>
+- Yoram Burak<sup>2</sup> ([ORCID: 0000-0003-1198-8782](https://orcid.org/0000-0003-1198-8782)) †
+
+### Affiliations
+
+1. Edmond and Lily Safra Center for Brain Sciences Hebrew University of Jerusalem Jerusalem Israel
+2. Racah Institute of Physics, Edmond and Lily Safra Center for Brain Sciences Hebrew University of Jerusalem Jerusalem Israel
+
+† Corresponding author
+
+## Abstract
+
+The representation of position in the mammalian brain is distributed across multiple neural populations. Grid cell modules in the medial entorhinal cortex (MEC) express activity patterns that span a low-dimensional manifold which remains stable across different environments. In contrast, the activity patterns of hippocampal place cells span distinct low-dimensional manifolds in different environments. It is unknown how these multiple representations of position are coordinated. Here we develop a theory of joint attractor dynamics in the hippocampus and the MEC. We show that the system exhibits a coordinated, joint representation of position across multiple environments, consistent with global remapping in place cells and grid cells. In addition, our model accounts for recent experimental observations that lack a mechanistic explanation: variability in the firing rate of single grid cells across firing fields, and artificial remapping of place cells under depolarization, but not under hyperpolarization, of layer II stellate cells of the MEC.

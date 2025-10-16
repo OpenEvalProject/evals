@@ -1,0 +1,19 @@
+# Deamidation disrupts native and transient contacts to weaken the interaction between UBC13 and RING-finger E3 ligases
+
+## Authors
+
+- Priyesh Mohanty<sup>1</sup>
+- Rashmi Agrata<sup>1</sup>
+- Batul Ismail Habibullah<sup>1</sup>
+- Arun Geetha Surendran<sup>1</sup>
+- Ranabir Das<sup>1</sup> ([ORCID: 0000-0001-5114-6817](https://orcid.org/0000-0001-5114-6817)) †
+
+### Affiliations
+
+1. National Center for Biological Sciences, Tata Institute of Fundamental Research Bangalore India
+
+† Corresponding author
+
+## Abstract
+
+The deamidase OspI from enteric bacteria Shigella flexneri deamidates a glutamine residue in the host ubiquitin-conjugating enzyme UBC13 and converts it to glutamate (Q100E). Consequently, its polyubiquitination activity in complex with the RING-finger ubiquitin ligase TRAF6 and the downstream NF-kB inflammatory response is silenced. The precise role of deamidation in silencing the UBC13/TRAF6 complex is unknown. We report that deamidation inhibits the interaction between UBC13 and TRAF6 RING-domain (TRAF6 RING ) by perturbing both the native and transient interactions. Deamidation creates a new intramolecular salt-bridge in UBC13 that competes with a critical intermolecular salt-bridge at the native UBC13/TRAF6 RING interface. Moreover, the salt-bridge competition prevents transient interactions necessary to form a typical UBC13/RING complex. Repulsion between E100 and the negatively charged surface of RING also prevents transient interactions in the UBC13/RING complex. Our findings highlight a mechanism where a post-translational modification perturbs the conformation and stability of transient complexes to inhibit protein-protein association.

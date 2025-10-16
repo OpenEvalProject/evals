@@ -1,0 +1,45 @@
+# Peer review - Round 1
+
+Editors:
+- Matteo Carandini, University College London , United Kingdom
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.05241.011](https://doi.org/10.7554/eLife.05241.011)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Mapping nonlinear receptive field structure in primate retina at single cone resolution” for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom, Matteo Carandini, is a member of our Board of Reviewing Editors.
+
+The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+This useful and interesting paper presents new modeling methods for characterizing retinal ganglion cell receptive fields, and applies it to explain the nonlinear spatial summation in primate OFF midget ganglion cells. The results are surprising, since midget cells (which constitute the vast majority of retinal ganglion cells in primates) were hitherto thought to operate mostly linearly, whereas here they are described as being fundamentally nonlinear. The data are of high quality, the modeling thoughtful and innovative, and the paper clear and well-presented. Some questions, however, need to be addressed.
+
+Description of the model: Even though the paper is written for a general audience, the modeling should be explained more extensively. Currently, one has trouble understanding the cone finding and preprocessing section (Methods). The paper suggests that the cone positions and weights were fit using previously described methods. Then it states that the signals were convolved with the ganglion cell's spike-triggered average (STA). But the STA is derived from a linear model of the response. Why is this appropriate for a step in building the subunit model? A similar concern: the initial maps of the cones are derived from a linear analysis (STA), and so wouldn't these maps potentially miss nonlinear sources of the response?
+
+Relationship to known nonlinearities in midget cells: It is interesting to see such pronounced nonlinearities (subunits) in the receptive fields of a class of retinal ganglion cells (RGCs), the midget cells, which are commonly described as linear (X-like). The paper should do a better job at casting these nonlinearities in the context of the existing knowledge, to point out whether they are consistent with previous findings, or whether they are a surprise. For instance, the paper could describe more extensively the prior literature on linearity/nonlinearity of P cells in the LGN, including several papers by Benardete and Kaplan, by Derrington and Lennie, and at least one by the Movshon laboratory (Levitt et al., 2001, which is cited in the paper). To what extent are those findings consistent with the findings here? (This applies also to differences and similarities between ON and OFF P cells, see next point).
+
+Focus on OFF cells: The paper focuses on OFF midget cells, which apparently had the highest signal-to-noise ratio and stability. But what about ON cells? Are they ignored because they are actually linear? In that case, it would help to start the paper with those, and demonstrate linearity. Then go on to the OFF ones and show the nonlinearity. If instead they have more complex nonlinearities, it would help to at least describe them, ideally with a figure.
+
+Nature of the large subunits: The reported presence of such large photoreceptor subunits (in contrast to preexisting literature) deserves to be given more prominence, to be discussed more extensively, and ideally to be investigated experimentally. A possible explanation for such large subunits could lie in gap-junction among photoreceptors. Ideally one would test this possibility experimentally, e.g. by adding dopamine D1 agonist or antagonist to modulate the gap-junctional link among photoreceptors (or at least test with the model if cones that are associated in one subunit for an OFF RGC tend to be associated as one subunit for an overlapping ON RGC?). Another possible explanation lies in amacrine cells feeding signals from surrounding bipolar cells. These cells are currently not considered in the model, and might result in single subunits pooling from very large photoreceptors sets in the model. Another possibility, which is not possible to rule out given the way the model is explained, is that some sort of constraint (or minimization) is posed on the number subunits (bipolar cells), leading to artifactually large subunits. Finally, if data are available from a region closer to the fovea, it would be very interesting to see whether the model is able to capture the relationship between 1 photoreceptor – 1 bipolar cell – 1 retinal ganglion cell.
+
+Number of subunits: Another result of the model that must be compared with morphological literature (either Wassle et al., 1994 or Kolb and Marshak, 2003) is the number of subunits (bipolar cells). This subject is pivotal to understand how the results resemble primates' anatomy. This issue deserves a Figure similar to Figure 6D and an articulated discussion.
+
+Modeling of nonlinearities: The subunit nonlinearity seems to be modeled as being static, and being the same for all subunits. Any evidence that this is a good assumption? Moreover, can the fits be further improved by imposing a temporal nonlinearity (not just a static one)? For example, direct measurements of glutamate release (imaging of iGluSnFR) in ON layers, revealed that rectification is mild, and that a temporal nonlinearity (transient increases in release) explained nonlinear behavior in postsynaptic ganglion cells (Borghuis et al., 2013). The same might be true in primate midget cells.
+
+In the second paragraph of the subsection “Nonlinear spatial summation in OFF midget RGCs”, the authors should demonstrate the phase dependence of the OFF midget cell responses. This indeed does not follow the rule for Y-like cells and may give insights into the underlying circuitry for generating the nonlinearity. Does the subunit model show similar behavior as the recorded cell? Later in the paragraph, the authors raise the possibility that crossover inhibition may generate differences between midget and parasol cells. This suggestion needs more context/explanation.
+
+Single-neuron approach: The way the data are presented, these RGCs could have been measured one at a time. And instead, they were measured all together. This is a missed opportunity. For instance, if some cones are arranged in a subunit for one RGC, does that increase their chance of being arranged as a subunit in another RGC? Along the same lines, does the model help in predicting correlations between different RGCs?
+
+Relationship with measurements in vivo: The authors take the interesting viewpoint that their measurements in vitro are actually closer to being natural than measurements under anesthesia, which may affect the basal release rate and therefore the strength of nonlinearity at the set point. This is a key issue, and if one wanted to prove it one could perhaps add the same anesthetics to the in vitro retina as used during in vivo recordings. The alternative explanation is that it is the in vitro condition that somehow distorts the nonlinearity. The washout of neuromodulators could be a source of variability in ex vivo preps, too. In the absence of experimental data, this issue needs to be treated in a more balanced way, and both possibilities kept open.
+
+Room for improvement: It would be useful to better describe room for improvement in the model, if possible. For example, the data in the last figure apparently were difficult to capture with the subunit model (low R2 values), although the model fits in this case were not shown. It would be useful to show both subunit and linear model fits in this figure. Also, a surprising omission from the model is inhibitory cells (e.g., amacrine cells) pooling over larger areas. Is there any evidence that data would be better fit by including them in a model?
+
+Minor comments:
+
+The paper states repeatedly that the improvement in predictions made by the model over the LN model is minor. Yet, in responses to gratings it seems major (Figure 5). This might be worth emphasizing.
+
+For instance, when predicting the responses to gratings (Figure 5), it would help to see a plot with spatial frequency in the abscissa, and harmonic responses – both first and second – in the ordinate. And curves predicted by the two models.

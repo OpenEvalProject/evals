@@ -1,0 +1,17 @@
+# Rapid epigenetic adaptation to uncontrolled heterochromatin spreading
+
+## Authors
+
+- Jiyong Wang
+- Bharat D Reddy
+- Songtao Jia †
+
+### Affiliations
+
+1. Department of Biological Sciences Columbia University New York United States jia@biology.columbia.edu
+
+† Corresponding author
+
+## Abstract
+
+Heterochromatin, a highly compact chromatin state characterized by histone H3K9 methylation and HP1 protein binding, silences the underlying DNA and influences the expression of neighboring genes. However, the mechanisms that regulate heterochromatin spreading are not well understood. Here we show that the conserved Mst2 histone acetyltransferase complex in fission yeast regulates histone turnover at heterochromatin regions to control heterochromatin spreading and prevents ectopic heterochromatin assembly. The combined loss of Mst2 and the JmjC domain protein Epe1 results in uncontrolled heterochromatin spreading and massive ectopic heterochromatin, leading to severe growth defects due to the inactivation of essential genes. Interestingly, these cells quickly recover by accumulating heterochromatin at genes essential for heterochromatin assembly, leading to their reduced expression to restrain heterochromatin spreading. Our studies discover redundant pathways that control heterochromatin spreading and prevent ectopic heterochromatin assembly and reveal a fast epigenetic adaptation response to changes in heterochromatin landscape.

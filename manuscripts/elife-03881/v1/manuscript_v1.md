@@ -1,0 +1,18 @@
+# RUNX1, a transcription factor mutated in breast cancer, controls the fate of ER-positive mammary luminal cells
+
+## Authors
+
+- Maaike P A van Bragt
+- Xin Hu
+- Ying Xie
+- Zhe Li †
+
+### Affiliations
+
+1. Division of Genetics Brigham and Women's Hospital Boston United States zli4@rics.bwh.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+RUNX1 encodes a RUNX family transcription factor (TF) and was recently identified as a novel mutated gene in human luminal breast cancers. We found that Runx1 is expressed in all subpopulations of murine mammary epithelial cells (MECs) except the secretory alveolar luminal cells. Conditional knockout of Runx1 in MECs by MMTV-Cre led to a decrease in luminal MECs, largely due to a profound reduction in the estrogen receptor (ER)-positive mature luminal subpopulation, a phenotype that could be rescued by loss of either Trp53 or Rb1 . Mechanistically RUNX1 represses Elf5 , a master regulatory TF gene for alveolar cells, and regulates mature luminal TF/co-factor genes (e.g., Foxa1 and Cited1 ) involved in the ER program. Collectively, our data identified a key regulator of the ER + luminal lineage whose disruption may contribute to development of ER + luminal breast cancer when under the background of either TP53 or RB1 loss.

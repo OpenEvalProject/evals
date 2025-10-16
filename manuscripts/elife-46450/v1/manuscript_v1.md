@@ -1,0 +1,16 @@
+# Cystic fibrosis drug ivacaftor stimulates CFTR channels at picomolar concentrations
+
+## Authors
+
+- László Csanády<sup>1</sup> ([ORCID: 0000-0002-6547-5889](https://orcid.org/0000-0002-6547-5889)) †
+- Beáta Töröcsik<sup>1</sup>
+
+### Affiliations
+
+1. Department of Medical Biochemistry Semmelweis University Budapest Hungary
+
+† Corresponding author
+
+## Abstract
+
+The devastating inherited disease cystic fibrosis (CF) is caused by mutations of the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) anion channel. The recent approval of the CFTR potentiator drug ivacaftor (Vx-770) for the treatment of CF patients has marked the advent of causative CF therapy. Currently, thousands of patients are being treated with the drug, and its molecular mechanism of action is under intensive investigation. Here we determine the solubility profile and true stimulatory potency of Vx-770 towards wild-type (WT) and mutant human CFTR channels in cell-free patches of membrane. We find that its aqueous solubility is ~200-fold lower (~60 nanomolar), whereas the potency of its stimulatory effect is >100-fold higher, than reported, and is unexpectedly fully reversible. Strong, but greatly delayed, channel activation by picomolar Vx-770 identifies multiple sequential slow steps in the activation pathway. These findings provide solid guidelines for the design of in vitro studies using Vx-770.

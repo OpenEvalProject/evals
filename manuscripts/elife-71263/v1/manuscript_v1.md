@@ -1,0 +1,16 @@
+# Nonlinear transient amplification in recurrent neural networks with short-term plasticity
+
+## Authors
+
+- Yue Kris Wu<sup>1</sup>
+- Friedemann Zenke<sup>1</sup> ([ORCID: 0000-0003-1883-644X](https://orcid.org/0000-0003-1883-644X)) †
+
+### Affiliations
+
+1. Friedrich Miescher Institute for Biomedical Research Basel Switzerland
+
+† Corresponding author
+
+## Abstract
+
+To rapidly process information, neural circuits have to amplify specific activity patterns transiently. How the brain performs this nonlinear operation remains elusive. Hebbian assemblies are one possibility whereby strong recurrent excitatory connections boost neuronal activity. However, such Hebbian amplification is often associated with dynamical slowing of network dynamics, non-transient attractor states, and pathological run-away activity. Feedback inhibition can alleviate these effects but typically linearizes responses and reduces amplification gain. Here we study nonlinear transient amplification (NTA), a plausible alternative mechanism that reconciles strong recurrent excitation with rapid amplification while avoiding the above issues. NTA has two distinct temporal phases. Initially, positive feedback excitation selectively amplifies inputs that exceed a critical threshold. Subsequently, short-term plasticity quenches the run-away dynamics into an inhibition-stabilized network state. By characterizing NTA in supralinear network models, we establish that the resulting onset transients are stimulus selective and well-suited for speedy information processing. Further, we find that excitatory-inhibitory co-tuning widens the parameter regime in which NTA is possible in the absence of persistent activity. In summary, NTA provides a parsimonious explanation for how excitatory-inhibitory co-tuning and short-term plasticity collaborate in recurrent networks to achieve transient amplification.

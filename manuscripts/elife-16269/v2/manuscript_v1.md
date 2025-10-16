@@ -1,0 +1,25 @@
+# Primate TRIM5 proteins form hexagonal nets on HIV-1 capsids
+
+## Authors
+
+- Yen-Li Li
+- Viswanathan Chandrasekaran
+- Stephen D Carter
+- Cora L Woodward
+- Devin E Christensen
+- Kelly A Dryden
+- Owen Pornillos
+- Mark Yeager
+- Barbie K Ganser-Pornillos
+- Grant J Jensen
+- Wesley I Sundquist †
+
+### Affiliations
+
+1. Department of Biochemistry University of Utah Salt Lake City United States wes@biochem.utah.edu
+
+† Corresponding author
+
+## Abstract
+
+TRIM5 proteins are restriction factors that block retroviral infections by binding viral capsids and preventing reverse transcription. Capsid recognition is mediated by C-terminal domains on TRIM5α (SPRY) or TRIMCyp (cyclophilin A), which interact weakly with capsids. Efficient capsid recognition also requires the conserved N-terminal tripartite motifs (TRIM), which mediate oligomerization and create avidity effects. To characterize how TRIM5 proteins recognize viral capsids, we developed methods for isolating native recombinant TRIM5 proteins and purifying stable HIV-1 capsids. Biochemical and EM analyses revealed that TRIM5 proteins assembled into hexagonal nets, both alone and on capsid surfaces. These nets comprised open hexameric rings, with the SPRY domains centered on the edges and the B-box and RING domains at the vertices. Thus, the principles of hexagonal TRIM5 assembly and capsid pattern recognition are conserved across primates, allowing TRIM5 assemblies to maintain the conformational plasticity necessary to recognize divergent and pleomorphic retroviral capsids.

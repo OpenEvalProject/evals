@@ -1,0 +1,19 @@
+# Robust and annotation-free analysis of alternative splicing across diverse cell types in mice
+
+## Authors
+
+- Gonzalo Benegas<sup>1</sup>
+- Jonathan Fischer<sup>2</sup>
+- Yun S Song<sup>3</sup> ([ORCID: 0000-0002-0734-9868](https://orcid.org/0000-0002-0734-9868)) †
+
+### Affiliations
+
+1. Graduate Group in Computational Biology University of California, Berkeley Berkeley United States
+2. Department of Biostatistics University of Florida Gainesville United States
+3. Computer Science Division University of California, Berkeley Berkeley United States
+
+† Corresponding author
+
+## Abstract
+
+Although alternative splicing is a fundamental and pervasive aspect of gene expression in higher eukaryotes, it is often omitted from single-cell studies due to quantification challenges inherent to commonly used short-read sequencing technologies. Here, we undertake the analysis of alternative splicing across numerous diverse murine cell types from two large-scale single-cell datasets-the Tabula Muris and BRAIN Initiative Cell Census Network-while accounting for understudied technical artifacts and unannotated events. We find strong and general cell-type-specific alternative splicing, complementary to total gene expression but of similar discriminatory value, and identify a large volume of novel splicing events. We specifically highlight splicing variation across different cell types in primary motor cortex neurons, bone marrow B cells, and various epithelial cells, and we show that the implicated transcripts include many genes which do not display total expression differences. To elucidate the regulation of alternative splicing, we build a custom predictive model based on splicing factor activity, recovering several known interactions while generating new hypotheses, including potential regulatory roles for novel alternative splicing events in critical genes like Khdrbs3 and Rbfox1. We make our results available using public interactive browsers to spur further exploration by the community.

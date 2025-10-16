@@ -1,0 +1,19 @@
+# CD169+ macrophages orchestrate plasmacytoid dendritic cell arrest and retention for optimal priming in the bone marrow of malaria-infected mice
+
+## Authors
+
+- Jamie Moore-Fried<sup>1</sup>
+- Mahinder Paul<sup>1</sup>
+- Zhixin Jing<sup>1</sup>
+- David Fooksman<sup>1</sup> †
+- Gregoire Lauvau<sup>1</sup> ([ORCID: 0000-0002-3050-2664](https://orcid.org/0000-0002-3050-2664)) †
+
+### Affiliations
+
+1. Department of Microbiology and Immunology Albert Einstein College of Medicine Bronx United States
+
+† Corresponding author
+
+## Abstract
+
+Plasmacytoid dendritic cells (pDC) are the most potent producer of type I interferon (IFN), but how pDC are primed in vivo is poorly defined. Using a mouse model of severe malaria, we have previously established that upon priming by CD169 + macrophages (MP), pDC initiate type I IFN-I secretion in the bone marrow (BM) of infected mice via cell-intrinsic TLR7 sensing and cell-extrinsic STING sensing. Herein we show that CD169 + MP and TLR7-sensing are both required for pDC arrest during priming, suggesting CD169 + MP are the source of TLR7 ligands. We establish that TLR7 sensing in pDC and chemotaxis are both required for pDC arrest and functional communication with CD169 + MP in the BM. Lastly, we demonstrate that STING-sensing in CD169 + MP control pDC initiation of type I IFN production while also regulating pDC clustering and retention/egress from the BM. Collectively, these results link pDC acquisition of type I IFN secreting capacity with changes in their motility, homing and interactions with CD169 + MP during infection. Thus, targeting this cellular interaction may help modulate type I IFN to improve outcomes of microbial infections and autoimmune diseases.

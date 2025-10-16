@@ -1,0 +1,22 @@
+# A CD4+ T cell reference map delineates subtype-specific adaptation during acute and chronic viral infections
+
+## Authors
+
+- Massimo Andreatta<sup>1</sup> ([ORCID: 0000-0002-8036-2647](https://orcid.org/0000-0002-8036-2647))
+- Ariel Tjitropranoto<sup>2</sup> ([ORCID: 0000-0001-5525-5236](https://orcid.org/0000-0001-5525-5236))
+- Zachary Sherman<sup>2</sup>
+- Michael C Kelly<sup>3</sup> ([ORCID: 0000-0003-0654-2778](https://orcid.org/0000-0003-0654-2778))
+- Thomas Ciucci<sup>2</sup> ([ORCID: 0000-0002-5828-0207](https://orcid.org/0000-0002-5828-0207)) †
+- Santiago J Carmona<sup>1</sup> ([ORCID: 0000-0002-2495-0671](https://orcid.org/0000-0002-2495-0671)) †
+
+### Affiliations
+
+1. Agora Cancer Research Center University of Lausanne Lausanne Switzerland
+2. Department of Microbiology and Immunology University of Rochester Rochester United States
+3. Frederick National Laboratory for Cancer Research Fregerick United States
+
+† Corresponding author
+
+## Abstract
+
+CD4 + T cells are critical orchestrators of immune responses against a large variety of pathogens, including viruses. The multifaceted roles of CD4 + T cells, including their help to innate cells, CD8 + T and B cells and their support for long-lived immunity rely on a profound functional heterogeneity. While multiple CD4 + T cell subtypes and their key transcriptional regulators have been identified, there is a lack of consistent definition for CD4 + T cell transcriptional states. In addition, the progressive changes affecting CD4 + T cell subtypes during and after immune responses remain poorly defined. Taking advantage of single-cell transcriptomics, efficient computational methods, and robust animal models, we characterize the transcriptional landscape of CD4 + T cells responding to self-resolving and chronic viral infections. We build a comprehensive map of virus-specific CD4 + T cells and their evolution over time, and identify six major distinct cell states that are consistently observed in acute and chronic infections in mice. During the course of acute infections, T cell composition progressively changes from effector to memory states, with subtype-specific gene modules and kinetics. Conversely, T cells in persistent infections fail to transition from effector to memory states, and acquire distinct, chronicity-associated transcriptional programs. By single-cell T cell receptor (TCR) sequencing analysis, we characterize the clonal structure of virus-specific CD4 + T cells across individuals and T cell subtypes. We find that virus-specific CD4 + T cell responses are essentially private across individuals and that most T cells differentiate into both Tfh and Th1 subtypes irrespective of their TCR, in both acute and chronic infections. Finally, we show that our CD4 + T cell map can be used as a reference to accurately interpret cell states in external single-cell datasets across tissues and disease models. Overall, this study describes a previously unappreciated level of adaptation of the transcriptional states of CD4 + T cells responding to viruses and provides a new computational resource for CD4 + T cell analysis, available online at https://spica.unil.ch.

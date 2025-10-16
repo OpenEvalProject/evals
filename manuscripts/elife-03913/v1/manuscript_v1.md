@@ -1,0 +1,19 @@
+# Genetic basis of sRNA quantitative variation analyzed using an experimental population derived from an elite rice hybrid
+
+## Authors
+
+- Jia Wang
+- Wen Yao
+- Dan Zhu
+- Weibo Xie
+- Qifa Zhang †
+
+### Affiliations
+
+1. National Key Laboratory of Crop Genetic Improvement Huazhong Agricultural University Wuhan China qifazh@mail.hzau.edu.cn
+
+† Corresponding author
+
+## Abstract
+
+We performed a genetic analysis of sRNA abundance in flag leaf from an immortalized F 2 (IMF2) population in rice. We identified 53,613,739 unique sRNAs and 165,797 sRNA expression traits (s-traits). A total of 66,649 s-traits mapped 40,049 local -sQTLs and 30,809 distant -sQTLs. By defining 80,362 sRNA clusters, 22,263 sRNA cluster QTLs (scQTLs) were recovered for 20,249 of all the 50,139 sRNA cluster expression traits (sc-traits). The expression levels for most of s-traits from the same genes or the same sRNA clusters were slightly positively correlated. While genetic co-regulation between sRNAs from the same mother genes and between sRNAs and their mother genes was observed for a portion of the sRNAs, most of the sRNAs and their mother genes showed little co-regulation. Some sRNA biogenesis genes were located in distant -sQTL hotspots and showed correspondence with specific length classes of sRNAs suggesting their important roles in the regulation and biogenesis of the sRNAs.

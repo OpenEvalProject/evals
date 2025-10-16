@@ -1,0 +1,39 @@
+# G-protein coupled receptors regulate autophagy by ZBTB16-mediated ubiquitination and proteasomal degradation of Atg14L
+
+## Authors
+
+- Tao Zhang
+- Kangyun Dong
+- Wei Liang
+- Daichao Xu
+- Hongguang Xia
+- Jiefei Geng
+- Ayaz Najafov
+- Min Liu
+- Yanxia Li
+- Xiaoran Han
+- Juan Xiao
+- Zhenzhen Jin
+- Ting Peng
+- Yang Gao
+- Yu Cai
+- Chunting Qi
+- Qing Zhang
+- Anyang Sun
+- Marta Lipinski
+- Hong Zhu
+- Yue Xiong
+- Pier Paolo Pandolfi
+- He Li
+- Qiang Yu
+- Junying Yuan †
+
+### Affiliations
+
+1. Interdisciplinary Research Center on Biology and Chemistry, Shanghai Institute of Organic Chemistry Chinese Academy of Sciences Shanghai China jyuan@hms.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Autophagy is an important intracellular catabolic mechanism involved in the removal of misfolded proteins. Atg14L, the mammalian orthologue of Atg14 in yeast and a critical regulator of autophagy, mediates the production PtdIns3P to initiate the formation of autophagosomes. However, it is not clear how Atg14L is regulated. Here we demonstrate that ubiquitination and degradation of Atg14L is controlled by ZBTB16-Cullin3-Roc1 E3 ubiquitin ligase complex. Furthermore, we show that a wide range of GPCR ligands and agonists regulate the levels of Atg14L through ZBTB16. In addition, we show that the activation of autophagy by pharmacological inhibition of GPCR reduces the accumulation of misfolded proteins and protects against behavior dysfunction in a mouse model of Huntington's disease. Our study demonstrates a common molecular mechanism by which the activation of GPCRs leads to the suppression of autophagy and a pharmacological strategy to activate autophagy in the CNS for the treatment of neurodegenerative diseases.

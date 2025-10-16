@@ -1,0 +1,27 @@
+# ATP hydrolysis by the viral RNA sensor RIG-I prevents unintentional recognition of self-RNA
+
+## Authors
+
+- Charlotte Lässig
+- Sarah Matheisl
+- Konstantin MJ Sparrer
+- Carina C de Oliveira Mann
+- Manuela Moldt
+- Jenish R Patel
+- Marion Goldeck
+- Gunther Hartmann
+- Adolfo García-Sastre
+- Veit Hornung
+- Karl‐Klaus Conzelmann
+- Roland Beckmann
+- Karl-Peter Hopfner †
+
+### Affiliations
+
+1. Gene Center, Department of Biochemistry Ludwig Maximilian University of Munich Munich Germany hopfner@genzentrum.lmu.de
+
+† Corresponding author
+
+## Abstract
+
+The cytosolic antiviral innate immune sensor RIG-I distinguishes 5′ tri- or diphosphate containing viral double-stranded (ds) RNA from self-RNA by an incompletely understood mechanism that involves ATP hydrolysis by RIG-I's RNA translocase domain. Recently discovered mutations in ATPase motifs can lead to the multi-system disorder Singleton-Merten Syndrome (SMS) and increased interferon levels, suggesting misregulated signaling by RIG-I. Here we report that SMS mutations phenocopy a mutation that allows ATP binding but prevents hydrolysis. ATPase deficient RIG-I constitutively signals through endogenous RNA and co-purifies with self-RNA even from virus infected cells. Biochemical studies and cryo-electron microscopy identify a 60S ribosomal expansion segment as a dominant self-RNA that is stably bound by ATPase deficient RIG-I. ATP hydrolysis displaces wild-type RIG-I from this self-RNA but not from 5' triphosphate dsRNA. Our results indicate that ATP-hydrolysis prevents recognition of self-RNA and suggest that SMS mutations lead to unintentional signaling through prolonged RNA binding.

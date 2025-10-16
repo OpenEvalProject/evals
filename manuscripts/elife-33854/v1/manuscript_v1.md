@@ -1,0 +1,18 @@
+# Principal cells of the brainstem's interaural sound level detector are temporal differentiators rather than integrators
+
+## Authors
+
+- Tom P Franken<sup>1</sup> ([ORCID: 0000-0001-7160-5152](https://orcid.org/0000-0001-7160-5152))
+- Philip X Joris<sup>1</sup> ([ORCID: 0000-0002-9759-5375](https://orcid.org/0000-0002-9759-5375)) †
+- Philip H Smith<sup>2</sup>
+
+### Affiliations
+
+1. Laboratory of Auditory Neurophysiology KU Leuven Leuven Belgium
+2. Department of Neuroscience University of Wisconsin-Madison Madison United States
+
+† Corresponding author
+
+## Abstract
+
+The brainstem's lateral superior olive (LSO) is thought to be crucial for localizing high-frequency sounds by coding interaural sound level differences (ILD). Its neurons weigh contralateral inhibition against ipsilateral excitation, making their firing rate a function of the azimuthal position of a sound source. Since the very first in vivo recordings, LSO principal neurons have been reported to give sustained and temporally integrating 'chopper' responses to sustained sounds. Neurons with transient responses were observed but largely ignored and even considered a sign of pathology. Using the Mongolian gerbil as a model system, we have obtained the first in vivo patch clamp recordings from labeled LSO neurons and find that principal LSO neurons, the most numerous projection neurons of this nucleus, only respond at sound onset and show fast membrane features suggesting an importance for timing. These results provide a new framework to interpret previously puzzling features of this circuit.

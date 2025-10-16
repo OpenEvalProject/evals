@@ -1,0 +1,27 @@
+# Salmonella Typhi and Salmonella Paratyphi A elaborate distinct systemic metabolite signatures during enteric fever
+
+## Authors
+
+- Elin Näsström
+- Tran Vu Thieu Nga
+- Sabina Dongol
+- Abhilasha Karkey
+- Phat Voong Vinh
+- Tuyen Ha Thanh
+- Anders Johansson
+- Amit Arjyal
+- Guy Thwaites
+- Christiane Dolecek
+- Buddha Basnyat
+- Stephen Baker †
+- Henrik Antti
+
+### Affiliations
+
+1. Department of Chemistry Umeå University Umeå Sweden
+
+† Corresponding author
+
+## Abstract
+
+The host-pathogen interactions induced by Salmonella Typhi and Paratyphi A during enteric fever are poorly understood. This knowledge gap, and the human restricted nature of these bacteria, limit our understanding of the disease and impede the development of new diagnostic approaches. To investigate metabolite signals associated with enteric fever we performed mass spectrometry (GCxGC/TOFMS) on plasma from patients with Typhi and Paratyphi A infections and controls, identifying 695 individual metabolite peaks. Applying supervised pattern recognition, we found highly significant and reproducible metabolite profiles separating Typhi cases, Paratyphi A cases, and controls, calculating that a combination of six metabolites could define the etiological agent. For the first time we show that reproducible and serovar specific systemic biomarkers can be detected during enteric fever. Our work defines several biologically plausible metabolites that can be used to detect enteric fever, and unlocks the potential of this method in diagnosing other systemic bacterial infections.

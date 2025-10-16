@@ -1,0 +1,28 @@
+# SIRT6 is a DNA double-strand break sensor
+
+## Authors
+
+- Lior Onn<sup>1</sup>
+- Miguel Portillo<sup>1</sup>
+- Stefan Ilic<sup>2</sup>
+- Gal Cleitman<sup>1</sup>
+- Daniel Stein<sup>1</sup>
+- Shai Kaluski<sup>1</sup>
+- Ido Shirat<sup>1</sup>
+- Zeev Slobodnik<sup>1</sup>
+- Monica Einav<sup>1</sup>
+- Fabian Erdel<sup>3</sup> ([ORCID: 0000-0003-2888-7777](https://orcid.org/0000-0003-2888-7777))
+- Barak Akabayov<sup>2</sup> ([ORCID: 0000-0002-3882-2742](https://orcid.org/0000-0002-3882-2742))
+- Debra Toiber<sup>1</sup> ([ORCID: 0000-0002-1465-0130](https://orcid.org/0000-0002-1465-0130)) †
+
+### Affiliations
+
+1. Department of Life Sciences Ben-Gurion University of the Negev Beer Sheva Israel
+2. Department of Chemistry Ben-Gurion University of the Negev Beer Sheva Israel
+3. BioQuant Heidelberg University Heidelberg Germany
+
+† Corresponding author
+
+## Abstract
+
+DNA double strand breaks are the most deleterious type of DNA damage. In this work, we show that SIRT6 directly recognizes DNA damage through a tunnel-like structure, with high affinity for double strand breaks. SIRT6 relocates to sites of damage independently of signalling and known sensors. It activates downstream signalling for double strand break repair by triggering ATM recruitment, H2AX phosphorylation and the recruitment of proteins of Homologous Recombination and Non-Homologous End Joining pathways. Our findings indicate that SIRT6 plays a previously uncharacterized role as a DNA damage sensor, a critical factor in initiating the DNA damage response (DDR). Moreover, other Sirtuins share some DSB binding capacity and DDR activation. SIRT6 activates the DDR before the repair pathway is chosen, and prevents genomic instability. Our findings place SIRT6 as a sensor of DSB, and pave the road to dissecting the contributions of distinct double strand break sensors in downstream signalling.

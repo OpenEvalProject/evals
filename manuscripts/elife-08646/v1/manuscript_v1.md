@@ -1,0 +1,17 @@
+# Imaging and energetics of single SSB-ssDNA molecules reveal intramolecular condensation and insight into RecOR function
+
+## Authors
+
+- Jason C Bell
+- Bian Liu
+- Stephen C Kowalczykowski †
+
+### Affiliations
+
+1. Department of Microbiology and Molecular Genetics University of California, Davis Davis United States sckowalczykowski@ucdavis.edu
+
+† Corresponding author
+
+## Abstract
+
+Escherichia coli single-stranded DNA (ssDNA) binding protein (SSB) is the defining bacterial member of ssDNA binding proteins essential for DNA maintenance. SSB binds ssDNA with a variable footprint of ~30-70 nucleotides, reflecting partial or full wrapping of ssDNA around a tetramer of SSB. We directly imaged single molecules of SSB-coated ssDNA using total internal reflection fluorescence (TIRF) microscopy and observed intramolecular condensation of nucleoprotein complexes exceeding expectations based on simple wrapping transitions. We further examined this unexpected property by single-molecule force spectroscopy using magnetic tweezers. In conditions favoring complete wrapping, SSB engages in long-range reversible intramolecular interactions resulting in condensation of the SSB-ssDNA complex. RecO and RecOR, which interact with SSB, further condensed the complex. Our data support the idea that RecOR--and possibly other SSB interacting proteins--function(s) in part to alter long-range, macroscopic interactions between or throughout nucleoprotein complexes by microscopically altering wrapping and bridging distant sites.

@@ -1,0 +1,20 @@
+# XAB2 dynamics during DNA damage-dependent transcription inhibition
+
+## Authors
+
+- Lise-Marie Donnio<sup>1</sup> ([ORCID: 0000-0002-2414-6034](https://orcid.org/0000-0002-2414-6034)) †
+- Elena Cerutti<sup>1</sup> ([ORCID: 0000-0002-4644-4817](https://orcid.org/0000-0002-4644-4817))
+- Charlene Magnani<sup>1</sup>
+- Damien Neuillet<sup>1</sup>
+- Pierre-Olivier Mari<sup>1</sup>
+- Giuseppina Giglia-Mari<sup>1</sup> ([ORCID: 0000-0003-2001-1965](https://orcid.org/0000-0003-2001-1965)) †
+
+### Affiliations
+
+1. Institut NeuroMyogène (INMG) CNRS UMR 5310, INSERM U1217, Université Claude Bernard Lyon 1 Lyon France
+
+† Corresponding author
+
+## Abstract
+
+Xeroderma Pigmentosum group A-binding protein 2 (XAB2) is a multi-functional protein playing a critical role in distinct cellular processes including transcription, splicing, DNA repair and mRNA export. In this study, we demonstrate that XAB2 is involved specifically and exclusively in Transcription-Coupled Nucleotide Excision Repair (TC-NER) reactions and solely for RNA Polymerase 2 transcribed genes. Surprisingly, contrary to all the other NER proteins studied so far, XAB2 does not accumulate on the local UV-C damage; on the contrary, it becomes more mobile after damage induction. XAB2 mobility is restored when DNA repair reactions are completed. By scrutinizing from which cellular complex/partner/structure XAB2 is released, we have identified that XAB2 is detached after DNA damage induction from DNA:RNA hybrids, commonly known as R-loops, and from the CSA and XPG proteins. This release contributes to the DNA damage recognition step during TC-NER, as in the absence of XAB2, RNAP2 is blocked longer on UV lesions. Moreover, we also demonstrate that XAB2 has a role in retaining RNAP2 on its substrate without any DNA damage.

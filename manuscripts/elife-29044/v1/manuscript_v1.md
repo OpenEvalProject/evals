@@ -1,0 +1,18 @@
+# A common directional tuning mechanism of Drosophila motion-sensing neurons in the ON and in the OFF pathway
+
+## Authors
+
+- Juergen Haag<sup>1</sup> ([ORCID: 0000-0002-6535-0103](https://orcid.org/0000-0002-6535-0103)) †
+- Abhishek Mishra<sup>1</sup> ([ORCID: 0000-0002-1933-1251](https://orcid.org/0000-0002-1933-1251))
+- Alexander Borst<sup>2</sup>
+
+### Affiliations
+
+1. Max-Planck-Institute of Neurobiology Martinsried Germany
+2. Max Planck Institute of Neurobiology Martinsried Germany
+
+† Corresponding author
+
+## Abstract
+
+In the fruit fly optic lobe, T4 and T5 cells represent the first direction-selective neurons, with T4 cells responding selectively to moving brightness increments (ON) and T5 cells to brightness decrements (OFF). Both T4 and T5 cells comprise four subtypes with directional tuning to one of the four cardinal directions. We had previously found that upward-sensitive T4 cells implement both preferred direction enhancement and null direction suppression (Haag et al, 2016). Here, we asked whether this mechanism generalizes to OFF-selective T5 cells and to all four subtypes of both cell classes. We found that all four subtypes of both T4 and T5 cells implement both mechanisms, i.e. preferred direction enhancement and null direction inhibition, on opposing sides of their receptive fields. This gives rise to the high degree of direction selectivity observed in both T4 and T5 cells within each subpopulation.

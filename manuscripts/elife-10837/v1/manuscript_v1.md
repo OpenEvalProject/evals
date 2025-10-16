@@ -1,0 +1,18 @@
+# Active contraction of microtubule networks
+
+## Authors
+
+- Peter J Foster †
+- Sebastian Fürthauer
+- Michael J Shelley
+- Daniel J Needleman
+
+### Affiliations
+
+1. John A. Paulson School of Engineering and Applied Sciences, FAS Center for Systems Biology Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Many cellular processes are driven by cytoskeletal assemblies. It remains unclear how cytoskeletal filaments and motor proteins organize into cellular scale structures and how molecular properties of cytoskeletal components affect the large scale behaviors of these systems. Here we investigate the self-organization of stabilized microtubules in Xenopus oocyte extracts and find that they can form macroscopic networks that spontaneously contract. We propose that these contractions are driven by the clustering of microtubule minus ends by dynein. Based on this idea, we construct an active fluid theory of network contractions which predicts a dependence of the timescale of contraction on initial network geometry, a development of density inhomogeneities during contraction, a constant final network density, and a strong influence of dynein inhibition on the rate of contraction, all in quantitative agreement with experiments. These results demonstrate that the motor-driven clustering of filament ends is a generic mechanism leading to contraction.

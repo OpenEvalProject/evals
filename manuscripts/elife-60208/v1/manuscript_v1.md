@@ -1,0 +1,19 @@
+# The severity of microstrokes depends on local vascular topology and baseline perfusion
+
+## Authors
+
+- Franca Schmid<sup>1</sup> ([ORCID: 0000-0002-0689-9366](https://orcid.org/0000-0002-0689-9366)) †
+- Giulia Conti<sup>2</sup>
+- Patrick Jenny<sup>2</sup>
+- Bruno Weber<sup>1</sup> ([ORCID: 0000-0002-9089-0689](https://orcid.org/0000-0002-9089-0689))
+
+### Affiliations
+
+1. Institute of Pharmacology and Toxicology University of Zurich Zurich Switzerland
+2. Institute of Fluid Dynamics ETH Zurich Zurich Switzerland
+
+† Corresponding author
+
+## Abstract
+
+Cortical microinfarcts are linked to pathologies like cerebral amyloid angiopathy and dementia. Despite their relevance for disease progression, microinfarcts often remain undetected and the smallest scale of blood flow disturbance has not yet been identified. We employed blood flow simulations in realistic microvascular networks from the mouse cortex to quantify the impact of single capillary occlusions. Our simulations reveal that the severity of a microstroke is strongly affected by the local vascular topology and the baseline flow rate in the occluded capillary. The largest changes in perfusion are observed in capillaries with two in- and two outflows. This specific topological configuration only occurs with a frequency of 8%. The majority of capillaries has one in- and one outflow and is likely designed to efficiently supply oxygen and nutrients. Taken together, microstrokes bear potential to induce a cascade of local disturbances in the surrounding tissue, which might accumulate and impair energy supply locally.

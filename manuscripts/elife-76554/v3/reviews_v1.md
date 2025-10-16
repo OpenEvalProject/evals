@@ -1,0 +1,13 @@
+# Peer review - Round 1
+
+Editors:
+- Hossein Ardehali, https://ror.org/000e0be47 Northwestern University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.76554.sa0](https://doi.org/10.7554/eLife.76554.sa0)
+
+This paper aims to understand the mechanisms by which gut microbes synergize with excessive alcohol intake to cause liver injury, and whether drugs that selectively target gut microbial metabolism can improve alcohol-associated liver disease (ALD). The authors used liquid chromatography tandem mass spectrometry to quantify the levels of microbe and host choline co-metabolites in controls and patients with alcohol-associated hepatitis (AH). They also treated mice with bacterial choline trimethylamine (TMA) lyase inhibitors to reduce gut microbe-dependent TMA production, followed by measurement of Indices of liver injury. They showed that gut microbial choline metabolite TMA is increased in AH patients, which correlates with reduced liver expression of the TMA oxygenase Flavin-containing monooxygenase 3 (FMO3). They also show that inhibition of gut microbial CutC/D activity protects from ethanol-induced liver injury in mouse models, which was associated with reorganization of the gut microbiome and host liver transcriptome. The authors conclude that microbial TMA is elevated in patients with AH, and inhibition of TMA production by gut microbes protects against ethanol-induced liver injury.

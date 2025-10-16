@@ -1,0 +1,15 @@
+# How larvae feel the world around them
+
+## Authors
+
+- Jimena Berni<sup>1</sup> ([ORCID: 0000-0002-5068-1372](https://orcid.org/0000-0002-5068-1372)) †
+
+### Affiliations
+
+1. https://ror.org/01qz7fr76 Department of Neuroscience, Brighton and Sussex Medical School, University of Sussex Brighton United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+A complete map of the external sense organs shows how fruit fly larvae detect different aspects of their environment.

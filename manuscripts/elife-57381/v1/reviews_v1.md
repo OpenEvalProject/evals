@@ -1,0 +1,47 @@
+# Peer review - Round 1
+
+Editors:
+- Lotte Pedersen, University of Copenhagen Denmark
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.57381.sa1](https://doi.org/10.7554/eLife.57381.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Thank you for submitting your article "The novel ciliogenesis regulator DYRK2 governs Hedgehog signaling during mouse embryogenesis" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Piali Sengupta as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+As the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is "in revision at eLife". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)
+
+Summary:
+
+Yoshida et al. characterize the phenotype of Dyrk2 mutant mice, and show that loss of this kinase results in reduced Hh signaling both in vivo and in cells derived from the Dyrk2-/- embryos. They also show that Dyrk2-/- embryos and MEFs have ciliary defects- primarily longer cilia with abnormal tips, and defects in the trafficking of Hh components Gli2 and Gli3. Dyrk2 is postulated to localize to transition zone of cilia and regulate transcription of AurA, which the authors propose as the mechanism underlying ciliary length changes.
+
+The data presented are robust and thorough. The authors are recognized leaders in understanding the role of Dyrk2 in cancer pathways and in DNA damage response through phosphorylation of diverse substrates including p53 and c-Jun/Myc. They now highlight a completely novel role of this kinase in embryonic development as a regulator of ciliary morphology and Hh signaling. Dyrk2 has also been postulated to act as scaffold for EDVP complex in proteolysis of substrates such as the centrosome protein CP110 and microtubule severing enzyme, Katanin. The authors now convincingly show a role of Dyrk2 as a positive regulator of Hh pathway by careful knockout studies during mouse embryogenesis in the context of craniofacial and skeletal development and Hh signaling assays in vitro. These results are in stark contrast to a previously published paper using Dyrk2 overexpression that proposed a negative regulatory role of Dyrk2 in Hh pathway through Gli2 and Gli3 degradation and direct phosphorylation of Gli2 at two residues (S385, S1011) (PMID: 18455992). Despite the nicely demonstrated broad role of this kinase in Hh signaling and late embryogenesis, the mechanism proposed for this postulated transition zone-localized protein in causing ciliary dysmorphology through AurA kinase transcription is unclear. Therefore, this work presents interesting findings and is generally well-performed and merits publication, though there are some additional experiments and/or questions to address that could improve the work considerably.
+
+Essential revisions:
+
+1) The authors show low Hh signaling by ISH/qRT PCR of Hh pathway targets in craniofacial region and limbs at e13.5. The later skeletal abnormalities are consistent with Hh signaling defects (although no polydactyly is seen). However, no neural tube patterning defects are seen. Considering that cilia length abnormalities are seen at E10.5 (earlier stages have not been looked at), and Gli2/3/SuFu are accumulated in MEF cilia irrespective of Smo activation, it is surprising that the Hh signaling defects are not observed in earlier stages of development. The neural tube development defects are shown to be unaffected only at the branchial level at E10.5. The authors should at least test total RNA levels of Hh pathway targets in early stage embryos and rule out dorsoventral patterning defects at earlier stages.
+
+2) The phenotypes of the Dyrk2-/- mice as described seem to be fairly limited to bone growth and differentiation (and also neural crest-derived craniofacial structures). This certainly points to a role for Hh signaling, but could indicate that the phenotype is tissue specific. Is Dyrk2 expression tissue restricted? If so this would be very interesting since it would point to Dyrk2 being a tissue-specific regulator of cilia. Few proteins that regulate cilia in a cell type-specific manner have been identified and little is known about how such regulation is achieved. Making this link might increase the impact of the paper, if it is the case.
+
+3) The localization of Dyrk2 in transition zone and/or centrosome should be better documented using transition zone markers and necessary controls for the antibody using ko MEFs.
+
+4) The accumulation of Gli2/3 in resting MEF cilia (but not of Smo) is similar to PKA null MEFs (PMID: 22007132), which in contrast show high Hh signaling. Here, an alternative hypothesis regarding Dyrk2 function such as its role in affecting turnaround in ciliary tips and/or affecting axonemal architecture through its function as a kinase for Gli2 and/or EDVP complex scaffold, respectively might be considered.
+
+5) A more thorough characterization of the ciliary defects in the Dyrk2-/- cells is desirable. Primarily, what happens to cilia frequency in Dyrk2-/- cells? If cilia frequency is not affected in these mutants, this would not detract from the work or the conclusions of the paper, but it is important to know the answer. They should also assess whether cilia frequency in cycling Dyrk2-/- MEFs is different- it seems possible loss of this kinase might increase cilia frequency when few cilia are typically present, especially given that they find that AurkA expression is reduced in the mutant cells. Again, it would just be interesting to know this either way.
+
+6) The potential mechanism by which DYRK2 regulates ciliary length is insufficiently discussed/addressed in this study. First of all, the Introduction needs to provide a more thorough and accurate description of the literature relevant for ciliary length control and disassembly, as well as a clear description of what the differences are between steady state ciliary length control and ciliary disassembly observed e.g. during serum re-addition to starved cultures of mammalian cells. Second, the authors suggest that one potential mechanism by which DYRK2 negatively regulates ciliary length is by controlling expression of key cilia disassembly factors such as AURKA, but it is unclear why a transcriptomics approach was used in the first place. Moreover, the observed changes in the transcriptome could be a consequence rather than a cause of the long cilia phenotype seen in DYRK2 deficient cells. Therefore, a rescue experiment that shows normal ciliary length of DYRK2 mutant cells when AURKA expression is normalized must be provided if the authors want to claim that altered AURKA levels are responsible for the phenotype. DYRK2 is a kinase that the authors show is concentrated near the ciliary base; previous work implicated the EDVP complex in regulation of katanin (PMID: 19287380) and CP110 proteolysis (PMID: 28242748). CP110 is a key regulator of ciliogenesis also implicated in ciliary length control, thus an obvious question to ask is what happens to CP110 (centrosomal) levels in cells lacking DYRK2. This experiment should be fairly easy to do as good antibodies against CP110 are commercially available. Katanin levels could be analysed similarly.
+
+7) Subsection “Dyrk2 deficiency cause suppression of Hedgehog signaling during mouse embryogenesis” and Figure 1: Some quantitative analysis is missing here. How many embryos/animals were examined?
+
+8) Figure 3D: What is the relative expression levels of the wild type and mutant DYRK2 protein in these experiments and are the transfection efficiencies similar for both constructs? This is important to know in order to rule out that the observed difference in rescue effect of the two constructs is not simply due to different cellular expression level. Also, kinase-dead Dyrk2 does restore significant levels of Ptch1 transcript with respect to wild-type. Statistical significance for Gli1 levels is not mentioned with respect to wild-type. Dyrk2 could have kinase-independent functions as a scaffold.
+
+9) Subsection “DYRK2 regulates ciliogenesis” and Figure 5—figure supplement 3: without quantification the data is not very meaningful, so either the data needs to be quantified or alternatively removed.
+
+10) The manuscript contains several grammatical errors and typos that need to be corrected to enhance readability and clarity.

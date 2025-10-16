@@ -1,0 +1,24 @@
+# A structural model of the active ribosome-bound membrane protein insertase YidC
+
+## Authors
+
+- Stephan Wickles
+- Abhishek Singharoy
+- Jessica Andreani
+- Stefan Seemayer
+- Lukas Bischoff
+- Otto Berninghausen
+- Johannes Soeding
+- Klaus Schulten
+- Eli O van der Sluis
+- Roland Beckmann †
+
+### Affiliations
+
+1. Gene Center Munich, Department of Biochemistry Ludwig-Maximilians-Universität München Munich Germany beckmann@lmb.uni-muenchen.de
+
+† Corresponding author
+
+## Abstract
+
+The integration of most membrane proteins into the cytoplasmic membrane of bacteria occurs co-translationally. The universally conserved YidC protein mediates this process either individually as a membrane protein insertase, or in concert with the SecY complex. Here, we present a structural model of YidC based on evolutionary co-variation analysis, lipid-versus-protein-exposure and molecular dynamics simulations. The model suggests a distinctive arrangement of the conserved five transmembrane domains and a helical hairpin between transmembrane segment 2 (TM2) and TM3 on the cytoplasmic membrane surface. The model was used for docking into a cryo-electron microscopy reconstruction of a translating YidC-ribosome complex carrying the YidC substrate FOc. This structure reveals how a single copy of YidC interacts with the ribosome at the ribosomal tunnel exit and identifies a site for membrane protein insertion at the YidC protein-lipid interface. Together, these data suggest a mechanism for the co-translational mode of YidC-mediated membrane protein insertion.

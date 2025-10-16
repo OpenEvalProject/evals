@@ -1,0 +1,17 @@
+# A curative combination cancer therapy achieves high fractional cell killing through low cross-resistance and drug additivity
+
+## Authors
+
+- Adam C Palmer<sup>1</sup> ([ORCID: 0000-0001-5028-7028](https://orcid.org/0000-0001-5028-7028))
+- Christopher Chidley<sup>1</sup> ([ORCID: 0000-0002-8212-3148](https://orcid.org/0000-0002-8212-3148))
+- Peter K Sorger<sup>1</sup> ([ORCID: 0000-0002-3364-1838](https://orcid.org/0000-0002-3364-1838)) †
+
+### Affiliations
+
+1. Laboratory of Systems Pharmacology Harvard Medical School Boston United States
+
+† Corresponding author
+
+## Abstract
+
+Curative cancer therapies are uncommon and nearly always involve multi-drug combinations developed by experimentation in humans; unfortunately, the mechanistic basis for the success of such combinations has rarely been investigated in detail, obscuring lessons learned. Here we use isobologram analysis to score pharmacological interaction, and clone tracing and CRISPR screening to measure cross-resistance among the five drugs comprising R‑CHOP, a combination therapy that frequently cures Diffuse Large B-Cell Lymphomas. We find that drugs in R‑CHOP exhibit very low cross-resistance but not synergistic interaction: together they achieve a greater fractional kill according to the null hypothesis for both the Loewe dose-additivity model and the Bliss effect-independence model. These data provide direct evidence for the 50-year old hypothesis that a curative cancer therapy can be constructed on the basis of independently effective drugs having non-overlapping mechanisms of resistance, without synergistic interaction, which has immediate significance for the design of new drug combinations.

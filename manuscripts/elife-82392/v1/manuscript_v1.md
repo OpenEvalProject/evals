@@ -1,0 +1,15 @@
+# Taxonium, a web-based tool for exploring large phylogenetic trees
+
+## Authors
+
+- Theo Sanderson<sup>1</sup> ([ORCID: 0000-0003-4177-2851](https://orcid.org/0000-0003-4177-2851)) †
+
+### Affiliations
+
+1. The Francis Crick Institute London United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+The COVID-19 pandemic has resulted in a step change in the scale of sequencing data, with more genomes of SARS-CoV-2 having been sequenced than any other organism on earth. These sequences reveal key insights when represented as a phylogenetic tree, which captures the evolutionary history of the virus, and allows the identification of transmission events and the emergence of new variants. However, existing web-based tools for exploring phylogenies do not scale to the size of datasets now available for SARS-CoV-2. We have developed Taxonium, a new tool that uses WebGL to allow the exploration of trees with tens of millions of nodes in the browser for the first time. Taxonium links each node to associated metadata and supports mutation-annotated trees, which are able to capture all known genetic variation in a dataset. It can either be run entirely locally in the browser, from a serverbased backend, or as a desktop application. We describe insights that analysing a tree of five million sequences can provide into SARS-CoV-2 evolution, and provide a tool at cov2tree.org for exploring a public tree of more than five million SARS-CoV-2 sequences. Taxonium can be applied to any tree, and is available at taxonium.org, with source code at github.com/theosanderson/taxonium.

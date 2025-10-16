@@ -1,0 +1,18 @@
+# Transposition-mediated DNA re-replication in maize
+
+## Authors
+
+- Jianbo Zhang
+- Tao Zuo
+- Dafang Wang
+- Thomas Peterson †
+
+### Affiliations
+
+1. Department of Genetics, Development and Cell Biology Iowa State University Ames United States thomasp@iastate.edu
+
+† Corresponding author
+
+## Abstract
+
+Every DNA segment in a eukaryotic genome normally replicates once and only once per cell cycle to maintain genome stability. We show here that this restriction can be bypassed through alternative transposition, a transposition reaction that utilizes the termini of two separate, nearby transposable elements (TEs).  Our results suggest that alternative transposition during S phase can induce re-replication of the TEs and their flanking sequences.  The DNA re-replication can spontaneously abort to generate double-strand breaks, which can be repaired to generate Composite Insertions composed of transposon termini flanking segmental duplications of various lengths.  These results show how alternative transposition coupled with DNA replication and repair can significantly alter genome structure and may have contributed to rapid genome evolution in maize and possibly other eukaryotes.

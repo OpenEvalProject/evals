@@ -1,0 +1,17 @@
+# TRPM channels mediate learned pathogen avoidance following intestinal distention
+
+## Authors
+
+- Adam Filipowicz<sup>1</sup>
+- Jonathan Lalsiamthara<sup>1</sup>
+- Alejandro Aballay<sup>1</sup> ([ORCID: 0000-0002-5975-3352](https://orcid.org/0000-0002-5975-3352)) †
+
+### Affiliations
+
+1. Department of Molecular Microbiology and Immunology Oregon Health and Science University Portland United States
+
+† Corresponding author
+
+## Abstract
+
+Upon exposure to harmful microorganisms, hosts engage in protective molecular and behavioral immune responses, both of which are ultimately regulated by the nervous system. Using the nematode Caenorhabditis elegans , we show that ingestion of E. faecalis leads to a fast pathogen avoidance behavior that results in aversive learning. We have identified multiple sensory mechanisms involved in the regulation of avoidance of E. faecalis. The G-protein coupled receptor NPR-1-dependent oxygen-sensing pathway opposes this avoidance behavior, while an ASE neuron-dependent pathway and an AWB and AWC neuron-dependent pathway are directly required for avoidance. Colonization of the anterior part of the intestine by E. faecalis leads to AWB and AWC mediated olfactory aversive learning. Finally, two transient receptor potential melastatin (TRPM) channels, GON-2 and GTL-2, mediate this newly described rapid pathogen avoidance. These results suggest a mechanism by which TRPM channels may sense the intestinal distension caused by bacterial colonization to elicit pathogen avoidance and aversive learning by detecting changes in host physiology.

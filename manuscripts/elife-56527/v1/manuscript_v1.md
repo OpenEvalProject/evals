@@ -1,0 +1,17 @@
+# The His-Gly motif of acid-sensing ion channels resides in a reentrant 'loop' implicated in gating and ion selectivity
+
+## Authors
+
+- Nate Yoder<sup>1</sup> ([ORCID: 0000-0002-9017-0673](https://orcid.org/0000-0002-9017-0673))
+- Eric Gouaux<sup>2</sup> ([ORCID: 0000-0002-8549-2360](https://orcid.org/0000-0002-8549-2360)) †
+
+### Affiliations
+
+1. Department of Physiology University of California, San Francisco San Francisco United States
+2. Vollum Institute Oregon Health and Science University Portland United States
+
+† Corresponding author
+
+## Abstract
+
+Acid-sensing ion channels (ASICs) are proton-gated members of the epithelial sodium channel/degenerin (ENaC/DEG) superfamily of ion channels and are expressed throughout the central and peripheral nervous systems. The homotrimeric splice variant ASIC1a has been implicated in nociception, fear memory, mood disorders and ischemia. Here we extract full-length chicken ASIC1 (cASIC1) from cell membranes using styrene maleic acid (SMA) copolymer, elucidating structures of ASIC1 channels in both high pH resting and low pH desensitized conformations by single-particle cryo-electron microscopy (cryo-EM). The structures of resting and desensitized channels reveal a reentrant loop at the amino terminus of ASIC1 that includes the highly conserved 'His-Gly' (HG) motif. The reentrant loop lines the lower ion permeation pathway and buttresses the 'Gly-Ala-Ser' (GAS) constriction, thus providing a structural explanation for the role of the His-Gly dipeptide in the structure and function of ASICs.

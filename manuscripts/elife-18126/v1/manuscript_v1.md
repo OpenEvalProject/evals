@@ -1,0 +1,19 @@
+# In vivo genetic dissection of tumor growth and the warburg effect
+
+## Authors
+
+- Cheng-Wei Wang<sup>1</sup>
+- Arunima Purkayastha<sup>1</sup>
+- Kevin T Jones<sup>1</sup>
+- Shivani K Thaker<sup>1</sup>
+- Utpal Banerjee<sup>1</sup> ([ORCID: 0000-0001-6247-0284](https://orcid.org/0000-0001-6247-0284)) †
+
+### Affiliations
+
+1. Department of Molecular, Cell and Developmental Biology University of California, Los Angeles Los Angeles United States
+
+† Corresponding author
+
+## Abstract
+
+A well-characterized metabolic landmark for aggressive cancers is the reprogramming from oxidative phosphorylation to aerobic glycolysis, referred to as the Warburg effect. Models mimicking this process are often incomplete due to genetic complexities of tumors and cell lines containing unmapped collaborating mutations. In order to establish a system where individual components of oncogenic signals and metabolic pathways can be readily elucidated, we induced a glycolytic tumor in the Drosophila wing imaginal disc by activating the oncogene PDGF/VEGF-receptor (Pvr). This causes activation of multiple oncogenic pathways including Ras, PI3K/Akt, Raf/ERK, Src and JNK. Together this network of genes stabilizes Hifα (Sima) that in turn, transcriptionally up-regulates many genes encoding glycolytic enzymes. Collectively, this network of genes also causes inhibition of pyruvate dehydrogenase (PDH) activity resulting in diminished ox-phos levels. The high ROS produced during this process functions as a feedback signal to consolidate this metabolic reprogramming.

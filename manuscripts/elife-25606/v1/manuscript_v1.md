@@ -1,0 +1,17 @@
+# The expression of established cognitive brain states stabilizes with working memory development
+
+## Authors
+
+- David Florentino Montez<sup>1</sup> ([ORCID: 0000-0003-1672-8218](https://orcid.org/0000-0003-1672-8218)) †
+- Finnegan J Calabro<sup>1</sup>
+- Beatriz Luna<sup>1</sup>
+
+### Affiliations
+
+1. Department of Psychiatry University of Pittsburgh Pittsburgh United States
+
+† Corresponding author
+
+## Abstract
+
+We present results from a longitudinal study conducted over 10 years in a sample of 126 8-33 year olds demonstrating that adolescent development of working memory is supported by decreased variability in the amplitude of expression of whole brain states of task-related activity. fMRI analyses reveal that putative gain signals affecting maintenance and retrieval aspects of working memory processing stabilize during adolescence, while those affecting sensorimotor processes do not. We show that trial-to-trial variability in the reaction time and accuracy of eye-movements during a memory guided saccade task are related to fluctuations in the amplitude of expression of task-related brain states, or brain state variability, and also provide evidence that individual developmental trajectories of reaction time variability are related to individual trajectories of brain state variability. These observations demonstrate that underlying the maturation of cognition through adolescence is the stabilization of widespread gain signals affecting already available cognitive processes.

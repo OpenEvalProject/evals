@@ -1,0 +1,24 @@
+# Reversal of β cell de-differentiation by a small molecule inhibitor of the TGFβ pathway
+
+## Authors
+
+- Barak Blum
+- Adam N Roose
+- Ornella Barrandon
+- René Maehr
+- Anthony C Arvanites
+- Lance S Davidow
+- Jeffrey C Davis
+- Quinn P Peterson
+- Lee L Rubin
+- Douglas A Melton †
+
+### Affiliations
+
+1. Department of Stem Cell and Regenerative Biology Harvard Stem Cell Institute, Harvard University Cambridge United States dmelton@harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Dysfunction or death of pancreatic β cells underlies both types of diabetes. This functional decline begins with β cell stress and de-differentiation. Current drugs for T2D lower blood glucose levels, but they do not directly alleviate β cell stress nor prevent, let alone reverse, β cell de-differentiation. We show here that Urocortin 3 (Ucn3), a marker for mature β cells, is down-regulated in the early stages of T2D in mice and when β cells are stressed in vitro . Using an insulin expression-coupled lineage tracer, with Ucn3 as a reporter for the mature β cell state, we screen for factors that reverse β cell de-differentiation. We find that a small molecule inhibitor of TGFβ receptor I (Alk5) protects cells from the loss of key β cell transcription factors and restores a mature β cell identity even after exposure to prolonged and severe diabetes.

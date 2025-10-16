@@ -1,0 +1,22 @@
+# Quantitative system drift compensates for altered maternal inputs to the gap gene network of the Scuttle Fly Megaselia abdita
+
+## Authors
+
+- Karl R Wotton
+- Eva Jiménez-Guri
+- Anton Crombach
+- Hilde Janssens
+- Anna Alcaine-Colet
+- Steffen Lemke
+- Urs Schmidt-ott
+- Johannes Jaeger †
+
+### Affiliations
+
+1. European Molecular Biology Laboratory, CRG Systems Biology Research Unit Centre for Genomic Regulation Barcelona Spain yogi.jaeger@crg.eu
+
+† Corresponding author
+
+## Abstract
+
+The segmentation gene network in insects can produce equivalent phenotypic outputs despite differences in upstream regulatory inputs between species. We investigate the mechanistic basis of this phenomenon through a systems-level analysis of the gap gene network in the scuttle fly Megaselia abdita (Phoridae). It combines quantification of gene expression at high spatio-temporal resolution with systematic knock-downs by RNA interference (RNAi). Initiation and dynamics of gap gene expression differ markedly between M. abdita and Drosophila melanogaster , while the output of the system converges to equivalent patterns at the end of the blastoderm stage. Although the qualitative structure of the gap gene network is conserved, there are differences in the strength of regulatory interactions between species. We term such network rewiring 'quantitative system drift'. It provides a mechanistic explanation for the developmental hourglass model in the dipteran lineage. Quantitative system drift is likely to be a widespread mechanism for developmental evolution.

@@ -1,0 +1,16 @@
+# Maturation of a central brain flight circuit in Drosophila requires Fz2/Ca2+ signaling
+
+## Authors
+
+- Tarjani Agrawal
+- Gaiti Hasan †
+
+### Affiliations
+
+1. National Centre for Biological Sciences Tata Institute of Fundamental Research Bangalore India gaiti@ncbs.res.in
+
+† Corresponding author
+
+## Abstract
+
+The final identity of a differentiated neuron is determined by multiple signaling events, including activity dependent calcium transients. Non-canonical Frizzled2 (Fz2) signaling generates calcium transients that determine neuronal polarity, neuronal migration and synapse assembly in the developing vertebrate brain. Here, we demonstrate a requirement for Fz2/Ca 2+ signaling in determining the final differentiated state of a set of central brain dopaminergic neurons in Drosophila , referred to as the PAM cluster. Knockdown or inhibition of Fz2/Ca 2+ signaling during maturation of the flight circuit in pupae reduces Tyrosine Hydroxylase ( TH ) expression in the PAM neurons and affects maintenance of flight. Thus we demonstrate that Fz2/Ca 2+ transients during development serve as a pre-requisite for normal adult behavior. Our results support a neural mechanism where PAM neuron send projections to the α' and β' lobes of a higher brain centre, the mushroom body, and function in dopaminergic re-inforcement of flight.

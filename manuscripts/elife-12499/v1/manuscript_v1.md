@@ -1,0 +1,19 @@
+# Sleep-active neuron specification and sleep induction require FLP-11 neuropeptides to systemically induce sleep
+
+## Authors
+
+- Michal Turek
+- Judith Besseling
+- Jan-Philipp Spies
+- Sabine König
+- Henrik Bringmann †
+
+### Affiliations
+
+1. Max Planck Institute for Biophysical Chemistry Goettingen Germany henrik.bringmann@mpibpc.mpg.de
+
+† Corresponding author
+
+## Abstract
+
+Sleep is an essential behavioral state. It is induced by conserved sleep-active neurons that express GABA. However, little is known about how sleep neuron function is determined and how sleep neurons change physiology and behavior systemically. Here, we investigated sleep in C. elegans , which is induced by the single sleep-active neuron RIS. We found that the transcription factor LIM-6, which specifies GABAergic function, in parallel determines sleep neuron function through the expression of APTF-1, which specifies the expression of FLP-11 neuropeptides. Surprisingly FLP-11, and not GABA, is the major component that determines the sleep-promoting function of RIS. FLP-11 is constantly expressed in RIS. At sleep onset RIS depolarizes and releases FLP-11 to induce a systemic sleep state.

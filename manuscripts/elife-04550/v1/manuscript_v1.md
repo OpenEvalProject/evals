@@ -1,0 +1,26 @@
+# Evidence for suppression of immunity as a driver for genomic introgressions and host range expansion in races of Albugo candida, a generalist parasite
+
+## Authors
+
+- Mark McMullan
+- Anastasia Gardiner
+- Kate Bailey
+- Eric Kemen
+- Ben J Ward
+- Volkan Cevik
+- Alexandre Robert-Seilaniantz
+- Torsten Schultz-Larsen
+- Alexi Balmuth
+- Eric Holub
+- Cock van Oosterhout
+- Jonathan D G Jones †
+
+### Affiliations
+
+1. The Sainsbury Laboratory Norwich United Kingdom jonathan.jones@sainsbury-laboratory.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+How generalist parasites with wide host ranges can evolve is a central question in parasite evolution. Albugo candida is an obligate biotrophic parasite that consists of many physiological races that each specialize on distinct Brassicaceae host species. By analyzing genome sequence assemblies of five isolates, we show they represent three races that are genetically diverged by ~1%. Despite this divergence, their genomes are mosaic-like, with ~25% being introgressed from other races. Sequential infection experiments show that infection by adapted races enables subsequent infection of hosts by normally non-infecting races. This facilitates introgression and the exchange of effector repertoires, and may enable the evolution of novel races that can undergo clonal population expansion on new hosts. We discuss recent studies on hybridization in other eukaryotes such as yeast, Heliconius butterflies, Darwin's finches, sunflowers and cichlid fishes, and the implications of introgression for pathogen evolution in an agro-ecological environment.

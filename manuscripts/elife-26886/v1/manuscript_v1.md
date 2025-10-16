@@ -1,0 +1,22 @@
+# USP5/Leon deubiquitinase confines postsynaptic growth by maintaining ubiquitin homeostasis through Ubiquilin
+
+## Authors
+
+- Chien-Hsiang Wang<sup>1</sup>
+- Yi-Chun Huang<sup>1</sup>
+- Pei-Yi Chen<sup>1</sup>
+- Ying-Ju Cheng<sup>1</sup>
+- Hsiu-Hua Kao<sup>1</sup>
+- Haiwei Pi<sup>2</sup>
+- Cheng-Ting Chien<sup>1</sup> ([ORCID: 0000-0002-7906-7173](https://orcid.org/0000-0002-7906-7173)) †
+
+### Affiliations
+
+1. Institute of Molecular Biology Academia Sinica Taipei Taiwan, Republic of China
+2. Department of Biomedical Sciences Chang Gung University Taoyuan Taiwan, Republic of China
+
+† Corresponding author
+
+## Abstract
+
+Synapse formation and growth are tightly controlled processes. How synaptic growth is terminated after reaching proper size remains unclear. Here, we show that Leon, the Drosophila USP5 deubiquitinase, controls postsynaptic growth. In leon mutants, postsynaptic specializations of neuromuscular junctions are dramatically expanded, including the subsynaptic reticulum, the postsynaptic density, and the glutamate receptor cluster. Expansion of these postsynaptic features is caused by a disruption of ubiquitin homeostasis with accumulation of free ubiquitin chains and ubiquitinated substrates in the leon mutant. Accumulation of Ubiquilin (Ubqn), the ubiquitin receptor whose human homolog ubiquilin 2 is associated with familial amyotrophic lateral sclerosis, also contributes to defects in postsynaptic growth and ubiquitin homeostasis. Importantly, accumulations of postsynaptic proteins cause different aspects of postsynaptic overgrowth in leon mutants. Thus, the deubiquitinase Leon maintains ubiquitin homeostasis and proper Ubqn levels, preventing postsynaptic proteins from accumulation to confine postsynaptic growth.

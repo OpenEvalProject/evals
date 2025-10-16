@@ -1,0 +1,25 @@
+# v-SNARE transmembrane domains function as catalysts for vesicle fusion
+
+## Authors
+
+- Madhurima Dhara
+- Antonio Yarzagaray
+- Mazen Makke
+- Barbara Schindeldecker
+- Yvonne Schwarz
+- Ahmed Shaaban
+- Satyan Sharma
+- Rainer A Böckmann
+- Manfred Lindau
+- Ralf Mohrmann
+- Dieter Bruns †
+
+### Affiliations
+
+1. Institute for Physiology Saarland University Homburg Germany dieter.bruns@uks.eu
+
+† Corresponding author
+
+## Abstract
+
+Vesicle fusion is mediated by assembly of SNARE proteins between opposing membranes, but it is unknown whether transmembrane domains (TMDs) of SNARE proteins serve mechanistic functions that go beyond passive anchoring of the force-generating SNAREpin to the fusing membranes. Here, we show that conformational flexibility of synaptobrevin-2 TMD is essential for efficient Ca2 + -triggered exocytosis and actively promotes membrane fusion as well as fusion pore expansion. Specifically, introduction of helix-stabilizing leucine residues within the TMD region spanning the vesicle's outer leaflet strongly impairs exocytosis and decelerates fusion pore dilation. In contrast, increasing the number of helix-destabilizing, ß-branched valine or isoleucine residues within the TMD restores normal secretion but accelerates fusion pore expansion beyond the rate found for the wildtype protein. These observations provide evidence that the synaptobrevin-2 TMD catalyzes the fusion process by its structural flexibility, actively setting the pace of fusion pore expansion.

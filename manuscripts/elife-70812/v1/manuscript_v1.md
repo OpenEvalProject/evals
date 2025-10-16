@@ -1,0 +1,23 @@
+# Diverse mating phenotypes impact the spread of wtf meiotic drivers in Schizosaccharomyces pombe
+
+## Authors
+
+- José Fabricio López Hernández<sup>1</sup>
+- Rachel M Helston<sup>1</sup>
+- Jeffrey J Lange<sup>1</sup>
+- R Blake Billmyre<sup>1</sup> ([ORCID: 0000-0003-4866-3711](https://orcid.org/0000-0003-4866-3711))
+- Samantha H Schaffner<sup>2</sup>
+- Michael T Eickbush<sup>1</sup> ([ORCID: 0000-0001-9057-9156](https://orcid.org/0000-0001-9057-9156))
+- Scott McCroskey<sup>1</sup>
+- Sarah E Zanders<sup>1</sup> ([ORCID: 0000-0003-1867-986X](https://orcid.org/0000-0003-1867-986X)) †
+
+### Affiliations
+
+1. Stowers Institute for Medical Research Kansas City United States
+2. Kenyon College Gambier United States
+
+† Corresponding author
+
+## Abstract
+
+Meiotic drivers are genetic elements that break Mendel's law of segregation to be transmitted into more than half of the offspring produced by a heterozygote. The success of a driver relies on outcrossing (mating between individuals from distinct lineages) because drivers gain their advantage in heterozygotes. It is, therefore, curious that Schizosaccharomyces pombe , a species reported to rarely outcross, harbors many meiotic drivers. To address this paradox, we measured mating phenotypes in S. pombe natural isolates. We found that the propensity for cells from distinct clonal lineages to mate varies between natural isolates and can be affected both by cell density and by the available sexual partners. Additionally, we found that the observed levels of preferential mating between cells from the same clonal lineage can slow, but not prevent, the spread of a wtf meiotic driver in the absence of additional fitness costs linked to the driver. These analyses reveal parameters critical to understanding the evolution of S. pombe and help explain the success of meiotic drivers in this species.

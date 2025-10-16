@@ -1,0 +1,16 @@
+# Fast retrieval and autonomous regulation of single spontaneously recycling synaptic vesicles
+
+## Authors
+
+- Jeremy Leitz
+- Ege Kavalali †
+
+### Affiliations
+
+1. Department of Neuroscience University of Texas Southwestern Medical Center Dallas United States ege.kavalali@utsouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Presynaptic terminals release neurotransmitters spontaneously in a manner that can be regulated by Ca 2+ .  However, the mechanisms underlying this regulation are poorly understood because the inherent stochasticity and low probability of spontaneous fusion events has curtailed their visualization at individual release sites. Here, using pH-sensitive optical probes targeted to synaptic vesicles, we visualized single spontaneous fusion events and found that they are retrieved extremely rapidly with faster re-acidification kinetics than their action potential-evoked counterparts. These fusion events were coupled to postsynaptic NMDA receptor-driven Ca 2+ signals, and at elevated Ca 2+ concentrations there was an increase in the number of vesicles that would undergo fusion. Furthermore, spontaneous vesicle fusion propensity in a synapse was Ca 2+ -dependent but regulated autonomously: independent of evoked fusion probability at the same synapse. Taken together, these results expand classical quantal analysis to incorporate endocytic and exocytic phases of single fusion events and uncover autonomous regulation of spontaneous fusion.

@@ -1,0 +1,20 @@
+# A multicellular rosette-mediated collective dendrite extension
+
+## Authors
+
+- Li Fan<sup>1</sup>
+- Ismar Kovacevic<sup>2</sup>
+- Maxwell G Heiman<sup>3</sup> ([ORCID: 0000-0002-2557-6490](https://orcid.org/0000-0002-2557-6490))
+- Zhirong Bao<sup>2</sup> ([ORCID: 0000-0002-2201-2745](https://orcid.org/0000-0002-2201-2745)) †
+
+### Affiliations
+
+1. Developmental Biology Sloan-Kettering Institute New York United States
+2. Developmental Biology Program Sloan-Kettering Institute New York United States
+3. Division of Genetics and Genomics Boston Children's Hospital Boston United States
+
+† Corresponding author
+
+## Abstract
+
+Coordination of neurite morphogenesis with surrounding tissues is crucial to the establishment of neural circuits, but the underlying cellular and molecular mechanisms remain poorly understood. We show that neurons in a C. elegans sensory organ, called the amphid, undergo a collective dendrite extension to form the sensory nerve. The amphid neurons first assemble into a multicellular rosette. The vertex of the rosette, which becomes the dendrite tips, is attached to the anteriorly migrating epidermis and carried to the sensory depression, extruding the dendrites away from the neuronal cell bodies. Multiple adhesion molecules including DYF-7, SAX-7, HMR-1 and DLG-1 function redundantly in rosette-to-epidermis attachment. PAR-6 is localized to the rosette vertex and dendrite tips, and promotes DYF-7 localization and dendrite extension. Our results suggest a collective mechanism of neurite extension that is distinct from the classical pioneer-follower model and highlight the role of mechanical cues from surrounding tissues in shaping neurites.

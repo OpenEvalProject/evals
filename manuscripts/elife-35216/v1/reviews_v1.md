@@ -1,0 +1,29 @@
+# Peer review - Round 1
+
+Editors:
+- Maarten van Lohuizen, The Netherlands Cancer Institute Netherlands
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.35216.037](https://doi.org/10.7554/eLife.35216.037)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Arid1a restrains Kras-dependent changes in acinar cell identity" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Fiona Watt as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+In their manuscript, Livshits et al. investigate the role of the chromatin remodeling protein Arid1a in pancreatic carcinogenesis and acinar cell identity. To study the consequences of Arid1a-deficieny on acinar fate in the presence and absence of oncogenic Kras activation the authors utilize a very elegant ES cell RNAi based mouse model that facilitates inducible and reversible targeting of Arid1a independent on the Cre-mediated activation of oncogenic Kras during embryogenesis. In addition to phenotypic analyses using the described mouse model system the manuscript provides first mechanistic insights into pancreatic carcinogenesis in the context of Arid1a deficiency using RNA-Seq and ATAC-Seq analysis. Together, the authors demonstrate that Arid1a can function as a barrier to Kras-driven pancreatic cancer initiation, albeit the impact of Arid1a-deficiency underlies a significant context-dependency. The manuscript significantly extends our understanding of the involvement of chromatin remodeling processes in general and the function of Arid1A in particular in pancreatic cancer development. All together the manuscript is perfectly written and follows a logical order and the conclusions drawn from the data are largely justified.
+
+1) Please provide more information about the lesions in the mice. The authors state that the ductal lesions found in the Arid1a KD mice can be described as PanIN or IPMN-lesions. In Figure 2D only PanINs have been quantified. How have the lesions been distinguished from IPMNs so that only PanINs were counted? Do the Arid1a KD mice give rise to both, PanINs and IPMN? As BRG1-deficiency in the context of oncogenic Kras activation in the pancreas results to development of IMPN lesions (v. Figura et al., 2014), formation of IPMN might be a likely phenotype in Arid1A kd mice. As the severity of PanINs can be more important than their total numbers, it is important to illustrate the PanIN quantification in Figure 2D for the different PanIN stages separately. Please state how many mice have been observed until an age of app. 1 year (Figure 2—figure supplement 2A)? Was there a significant number of mice to justify the authors´ statement that Arid1a kd animals do not progress to PDAC? Can the authors show that Arid1a is still absent after one year of Dox treatment? How exactly have those lesions been quantified? Counting the lesions per field might lead to misleading numbers, if the Arid1 kd pancreata suffer from pancreatic atrophy. How is the number of ADMs normalized to pancreatic size?
+
+Figure 3J: Arid1a kd and control mice are challenged with caerulein to induce pancreatitis. The authors state that they observe comparable ADM formation and pancreatic inflammation in both genotypes. Could the authors please quantify the inflammatory response (e.g. by using a scoring system considering edema, infiltration of inflammatory cells into the pancreas etc.) to objective the statement of comparable inflammation? In the same line: is the caerulein-induced damage comparable in both models? If blood samples from the mice were available, lipase and amylase serum levels could be assessed. Comparable damage in both models is important to justify the statement of equal regenerative potential in both models.
+
+2) Please provide more information about the transcriptional analysis. The unsupervised hierarchical clustering depicted in Figure 6B shows 3 samples for each Arid1a shRNA. In contrast, the PCA in Figure 6A only shows two dots for A1A.1803. Is the dot hidden behind another one or have the authors excluded one sample? If so, what has been the rationale for excluding the sample? In the same line: in ATAC-Seq, there are four replicates for shRen, but 3 in shArid1A. Why? Has a shArid1A sample been excluded? The transcriptional analysis in cell extracts from KC-Ren and KC-shArid1a cells reveals genes and signatures associated with carcinogenesis and acinar cell fate. Could the authors please validate the distinct expression of some of these genes in their isolated cells and in the tissue of the mice? Have RNA-Seq and ATAC-Seq been performed using cells from identical animals?
+
+3) Please solidify the analysis of transcriptional programs and chromatin accessibility by demonstrating clearer relationships between the two. For example, the text states "gene sets comprising the targets of these transcription factors were enriched among the downregulated genes in GSEA analysis of transcriptional profiles derived from shArid1a animals (Figure 7H)." However, Figure 7H only shows that genes whose chromatin accessibility decreased showed reduced expression. The authors should analyze the data to correlate expression and accessibility at target sites of key acinar transcription factor binding sites, and separately determine the accessibility at genes whose expression changes in shArid1a.

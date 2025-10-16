@@ -1,0 +1,16 @@
+# An abundant quiescent stem cell population in Drosophila Malpighian tubules protects principal cells from kidney stones
+
+## Authors
+
+- Chenhui Wang<sup>1</sup>
+- Allan C Spradling<sup>1</sup> ([ORCID: 0000-0002-5251-1801](https://orcid.org/0000-0002-5251-1801)) †
+
+### Affiliations
+
+1. Department of Embryology Carnegie Institution for Science Baltimore United States
+
+† Corresponding author
+
+## Abstract
+
+Adult Drosophila Malpighian tubules have low rates of cell turnover but are vulnerable to damage caused by stones, like their mammalian counterparts, kidneys. We show that Drosophila renal stem cells (RSCs) in the ureter and lower tubules comprise a unique, unipotent regenerative compartment. RSCs respond only to loss of nearby principal cells (PCs), cells critical for maintaining ionic balance. Large polyploid PCs are outnumbered by RSCs, which replace each lost cell with multiple PCs of lower ploidy. Notably, RSCs do not replenish principal cells or stellate cells in the upper tubules. RSCs generate daughters by asymmetric Notch signaling, yet RSCs remain quiescent (cell cycle-arrested) without damage. Nevertheless, the capacity for RSC-mediated repair extends the lifespan of flies carrying kidney stones. We propose that abundant, RSC-like stem cells exist in other tissues with low rates of turnover where they may have been mistaken for differentiated tissue cells.

@@ -1,0 +1,17 @@
+# The components of an electrical synapse as revealed by expansion microscopy of a single synaptic contact
+
+## Authors
+
+- Sandra P Cárdenas-García<sup>1</sup>
+- Sundas Ijaz<sup>1</sup> ([ORCID: 0009-0005-8199-7598](https://orcid.org/0009-0005-8199-7598))
+- Alberto E Pereda<sup>1</sup> ([ORCID: 0000-0002-8283-8768](https://orcid.org/0000-0002-8283-8768)) †
+
+### Affiliations
+
+1. Dominick P Purpura Department of Neuroscience Albert Einstein College of Medicine Bronx United States
+
+† Corresponding author
+
+## Abstract
+
+Most nervous systems combine both transmitter-mediated and direct cell-cell communication, known as 'chemical' and 'electrical' synapses, respectively. Chemical synapses can be identified by their multiple structural components. Electrical synapses are, on the other hand, generally defined by the presence of a 'gap junction' (a cluster of intercellular channels) between two neuronal processes. However, while gap junctions provide the communicating mechanism, it is unknown whether electrical transmission requires the contribution of additional cellular structures. We investigated this question at identifiable single synaptic contacts on the zebrafish Mauthner cells, at which gap junctions coexist with specializations for neurotransmitter release and where the contact unequivocally defines the anatomical limits of a synapse. Expansion microscopy of these single contacts revealed a detailed map of the incidence and spatial distribution of proteins pertaining to various synaptic structures. Multiple gap junctions of variable size were identified by the presence of their molecular components. Remarkably, most of the synaptic contact's surface was occupied by interleaving gap junctions and components of adherens junctions, suggesting a close functional association between these two structures. In contrast, glutamate receptors were confined to small peripheral portions of the contact, indicating that most of the synaptic area functions as an electrical synapse. Thus, our results revealed the overarching organization of an electrical synapse that operates with not one, but multiple gap junctions, in close association with structural and signaling molecules known to be components of adherens junctions. The relationship between these intercellular structures will aid in establishing the boundaries of electrical synapses found throughout animal connectomes and provide insight into the structural organization and functional diversity of electrical synapses.

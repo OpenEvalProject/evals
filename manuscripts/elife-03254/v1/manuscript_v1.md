@@ -1,0 +1,16 @@
+# A long non-coding RNA is required for targeting centromeric protein A to the human centromere
+
+## Authors
+
+- Delphine Quenet
+- Yamini Dalal †
+
+### Affiliations
+
+1. Laboratory of Receptor Biology & Gene Expression Center for Cancer Research, National Cancer Institute Bethesda United States dalaly@mail.nih.gov
+
+† Corresponding author
+
+## Abstract
+
+The centromere is a specialized chromatin region marked by the histone H3 variant CENP-A. Although active centromeric transcription has been documented for over a decade, the role of centromeric transcription or transcripts has been elusive. Here, we report that centromeric α-satellite transcription is dependent on RNA Polymerase II and occurs at late mitosis into early G1, concurrent with the timing of new CENP-A assembly. Inhibition of RNA Polymerase II-dependent transcription abrogates the recruitment of CENP-A and its chaperone HJURP to native human centromeres. Biochemical characterization of CENP-A associated RNAs reveals a 1.3 kb molecule which originates from centromeres, which physically interacts with the soluble pre-assembly HJURP/CENP-A complex in vivo, and whose down-regulation leads to the loss of CENP-A and HJURP at centromeres. This study describes a novel function for human centromeric long non-coding RNAs in the recruitment of HJURP and CENP-A, implicating RNA-based chaperone targeting in histone variant assembly.

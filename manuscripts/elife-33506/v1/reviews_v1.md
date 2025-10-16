@@ -1,0 +1,99 @@
+# Peer review - Round 1
+
+Editors:
+- Thorsten Nürnberger, University of Tübingen Germany
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.33506.026](https://doi.org/10.7554/eLife.33506.026)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+[Editors’ note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]
+
+Thank you for submitting your work entitled "Epidermal Nod factor receptor NFRe ensures robust symbiotic signalling in Lotus japonicus roots" for consideration by eLife. Your article has been reviewed bythree3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.
+
+Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.
+
+The identification of eNFR as an 'idling state' epidermis-specific Nod factor receptor in Lotus japonicus is an important and novel finding. In particular, eNFR-mediated differential spatio-temporal signaling in partnership with NFR5 bears the potential of re-shaping the field's view on Nod factor perception and signaling. However, as substantial concerns about the ligand specificity of this newly identified receptor and its predominant epidermal localization remain we are unable to recommend publication of your manuscript in its present form.
+
+Reviewer #1:
+
+Simona Radutoiu and Jens Stougaard have shown over the last decades that the LysM receptor kinase gene family has a crucial role in the perception of rhizobial signaling and exopolysaccharides. The gene family is large and rapidly evolving, making the analysis of the function of individual members challenging, further impeded by partial redundancy and limited functional conservation between model legume species. The manuscript by Murakami Eiichi et al., describes another LysM-domain containing receptor-like kinase (NFRe) that is closely related to the Nod factor receptor NFR1. Like previously shown for NFR1, the presently described NFRe binds Nod-factor and plays a role in the symbiotic signalling in Lotus japonicus. The authors confirm the predicted Nod-factor binding of the NFRe ectodomain by bio-layer interferometry with a biotinylated Nod factor and demonstrate that the kinase kinase domain is active with an in vitro kinase assay. Because of the biochemical properties and the sequence conservation with the known RLK NFR1, the authors conclude a close relationship of the two proteins. The expression of NFRe is restricted to epidermal cells and the expression pattern does not change after Nod-factor treatment. They show this with a promoter-GUS assay and promoter-fluorophore reporter fusion in microscopic pictures. The nfre mutant exhibits a much weaker nodulation phenotype (reduced nodule number) compared to the nfr1 or nfr5 mutants, which are completely unable to nodulate. The authors also claim that nfre mutants shows altered calcium spiking after inoculation which they measured using a calcium sensitive FRET reporter. According to the authors the transcriptome determined via RNA sequencing is also altered after inoculation with rhizobia. In addition, they suggest but do not demonstrate, an interaction of NFRe with NFR5. In the discussion, they propose that NFRe plays a role in attuning epidermal cells for rhizobial infection. Overall the work employs a wide variety of experimental techniques.
+
+There are a number of major issues that must be resolved in order to properly support some of their major claims (see below).
+
+Importantly, the authors fail to make clear what aspects of the identification and characterization of NFRe constitute a level of scientific novelty sufficient to justify publication in eLife.
+
+1) The authors claim that nfre mutants show altered calcium spiking. However, in figure 3—figure supplement 3B,C,D it is not apparent how many samples were taken. If I understood correctly from the material and methods, 5 nuclei were measured. This is sample size is too small for a student’s t-test. The nodulation specific pattern of calcium spiking may differ between cells inside and outside the susceptible zone. The selection of the nuclei may therefore be especially relevant and must be comparable between the genotypes analyzed. Also, the potential influence of background mutations must be ruled out. It is perfectly fine if the authors drop this claim in case they cannot provide sufficient statistical support for it.
+
+2) The authors claim that NFRe specifically binds Nod-factors and with a similar Kd as NFR1. This is supported by a bio-layer interferometry binding assay. However, considering that the Radutoiu/Stougaard laboratories in Aarhus have already claimed differential binding competence of individual LysM receptors for at least three different ligands, the specificity of NFRe must be supported with a necessary array of controls available in their laboratories. Here, they only included CO5 as a negative control. Because of the potential binding competence of LysM domains for exopolysaccharide fragments as shown for the putative exopolysaccharide LysM receptor EPR3 (Kawaharada et al., 2015) the inclusion of this ligand appears essential. Ideally, the authors also include as a negative control the EPR3 ectodomain to demonstrate the specificity of their assay and of the NFRe ectodomain.
+
+3) The authors claim that NFRe is a paralog of NFR1 but shows a distinct downstream signalling based on differences in the kinase activation segment. However, they switch between three different promoters and use inconsistent sets of control and swap constructs. In particular the key domain swap called N1_E.1 lacks the NFR1 and NFRe control constructs. This makes it impossible to reach conclusions from the quantitative complementation results. The NFR1 promoter constructs lack the N1_E.1 swap construct, the ubiquitin promoter constructs lack the NFR1 and NFRe controls and the 35S constructs do not contain the N1_E.1 swap. The experimental strategy underlying this construct arrangement is obscure.
+
+4) The authors claim that nfre mutants show reduced nodulation. Mutants were analysed two, five and eight weeks post inoculation and all the mutants are carrying 'significantly' lower nodules only eight weeks post inoculation. However, in the relevant figure 3—figure supplement 1, the statistical test applied (student’s t-test) is inappropriate for the small subset of individual plants investigated.
+
+5) The authors claim that NFRe does not undergo expression changes after inoculation with Nod factor or rhizobia. However, the expression level of NFRe and NFR1 after treatment with Nod-factor or Rhizobia were measured by qRT-PCR shown in figure 2—figure supplement 3. It compares the expression levels to a mock treated plant. The mock treatment is not specified also not in the Material and methods section. The mock treatment is only shown for one of the three timepoints measured, therefore the variation in expression without treatment is not clear.
+
+6) The authors claim that NFRe interacts with NFR5, based on a BiFC assay in N. benthamiana leaves. The limited validity of this assay for membrane bound proteins is well recognized in the community. One reason is the inability to provide negative controls because of the high non-specific interaction frequency resulting from overexpression and the diffusion of membrane proteins in only two dimensions. Consistent with this problem, the authors of this work also fail to provide a proper negative control.
+
+7) The authors claim that NFRe phosphorylates NFR5. However, the kinase assay lacks controls demonstrating that the phosphorylation of NFR5 by NFRe is specific. Because plant receptor kinase kinase domains are highly promiscuous with regards to their phosphorylation substrate in in vitro kinase assays, the results do not allow the conclusion that the kinase interacts with NFR5 in vivo.
+
+8) The authors claim that the presence of NFRe in the epidermal cells keeps them tuned to rhizobia also after downregulation of NFR1 during symbiotic signaling. This is the conclusion of the claims mentioned above for which some need further investigation.
+
+Reviewer #2:
+
+Nod factor signaling is initiated by LysM domain receptor kinases and in Lotus NFR1 and NFR5 play essential roles. As a result of their strong phenotypes, there is general acceptance in the symbiosis field that the nod factor receptors are known (NFR1/NFR5) and therefore the other LysM domain kinases must be involved in other aspects and not in nod factor signaling. As shown here, this is not true and complete nod factor signaling is achieved through different receptor complexes. In this careful and comprehensive study of NFRe, the authors reveal the contribution of a second receptor kinase and show that it is necessary for the complete signaling required to attain wildtype levels of nodulation. NFRe contributes by providing different spatio-temporal signaling and does so through partnership with NFR5. These findings are unexpected but that data are convincing (with one caveat mentioned below) and demonstrate the contribution of NFRe which, in Lotus japonicus, plays a minor role relative to the dominant receptor NFR1. Not only does the study illustrate complexities in nod factor signaling, it is very likely that it will provide the basis for answers to differences observed in nodulation signaling among the legume where currently significant differences in the phenotypes of the receptor mutants are not understood. The NFR1/NFRe duplication occurs in all legumes and different levels of contribution from the two paralogs may explain many of the differences between legumes. These data will cause the symbiosis field to reconsider nod factor signaling.
+
+One of the major claims is a difference in spatial and temporal expression patterns of the two receptors. While the Q-RT-PCR and promoter-GUS data are convincing, I found it difficult to see differences between NFR1 and NFRe promoter-YFP-NLS (Figure 2). Maybe additional panels could be added to illustrate the expression differences in the susceptible zone.
+
+Reviewer #3:
+
+In this paper, the authors report that an epidermal LysM receptor kinase (LYS1/NFRe) perceives Nod factors and contributes to rhizobial symbiosis, probably by keeping the epidermal cells at an "idling" state. Although the involvement of NFRe in the symbiotic signaling is evident from the results with the corresponding mutants but the detailed mechanism by which NFRe contributes to the symbiosis is still largely obscure. Importantly, biochemical characterization of NFRe contains several problems that raise serious questions on the "receptor" function of NFRe.
+
+The authors analyzed the interaction of the heterologously expressed ectodomains of NFRe and NFR1 using bilayer interferometry, where the biotinylated derivatives of a Nod factor and (GlcNAc)5 were immobilized onto the sensor tip. The results are quite strange. Potato lectin, which is known to bind chitin oligosaccharides but nothing to do with symbiosis, showed a very high affinity (Kd, 30 nM) to the Nod factor, while both NFRe and NFR1 showed thousand times lower (!) affinities to the Nod factor. The affinities of NFRe and NFR1 to the Nod factor (Kd, approximately 30 μM) are also far low compared to the biological activity of Nod factors. In general, the instrument used here seems to give a rather high estimate of the affinity, because the affinity of potato lectin to (GlcNAc)5 obtained here (Kd, 5.2 nM) seems to be much higher than the traditional estimate of the affinity of this lectin to chitin oligosaccharides (The lectins, Academic Press). Thus, it is quite questionable whether such a low affinity of NFRe and NFR1 to the Nod factor observed in this work reflects a biologically significant interaction. I am afraid that such a very low affinity simply reflects some non-specific interaction of these proteins with the hydrophobic region of Nod factor, fatty acid moiety.
+
+To avoid such a possibility, the authors should incorporate inhibition type experiments in their binding studies. If the observed binding of NFRe and NFR1 to the Nod factor reflects a biologically significant interaction, it should be inhibited by the biologically active Nod factor but not by inactive Nod factors or chitin oligosaccharides.
+
+There are some problems for the characterization of the expressed proteins too. Although the authors described "Proteins of high purity were obtained after four steps of purification, as confirmed by the homogeneous and sharp peaks observed after size exclusion chromatography" (Subsection “NFRe is a Nod factor receptor with an active intracellular kinase”), the results in Figure 1—figure supplement 2B shows the presence of multiple peaks for NFR1-ECD. If the authors used only the peak indicated as NFR1-ECD, they should describe it in the figure legend. It is better to show the elution profiles of final preparations of NFRe/NFR1-ECD by using the same column. The authors should also explain why these preparations showed multiple bands in SDS-PAGE (Figure 1—figure supplement 2C). It is also questionable why the sizes of the smallest bands for NFR1-ECD and NFRe-ECD are very different, while the expected sizes of these proteins are quite similar. I am afraid that some limited proteolysis happened for NFR1-ECD.
+
+Characterization of the nfre mutants clearly showed that NFRe contributes to symbiotic signaling and nodule formation. However, the results of the overexpression experiments seem to be difficult to understand. In the nfr1 background, slight increase of the copy number of Nfre gene resulted nothing but the overexpression of the same gene induced a limited symbiotic response induced by M. loti, i.e., activation of Nin promotor in the epidermal cell layer. This Nin activation was not associated with the formation of nodules. Is it safe to connect the results only observed with the overexpression experiments to physiological function? Does the result fit to the hypothesis of "idling" function of NFRe?
+
+The Venn diagram shown in Figure 3F indicates the presence of significant differences between nfre-1 and nfre-2. Is it OK?
+
+Would it be better to confirm the results of nfre mutants by complementation?
+
+[Editors’ note: what now follows is the decision letter after the authors submitted for further consideration.]
+
+Thank you for choosing to send your work entitled "Epidermal Nod factor receptor NFRe ensures robust symbiotic signalling in Lotus japonicus roots" for consideration at eLife. Your article and your letter of appeal have been considered by a Senior Editor and the Reviewing Editor of your manuscript, and we regret to inform you that we are upholding our original decision.
+
+Although we acknowledge the technical issue, it is difficult that a method hardly used in the field should explain obvious discrepancies noted by the referees. In this context, it also is somewhat problematic that if the reviewers do not catch it, the majority of readers won't either. Thus, the binding studies should be complemented with additional assays, using a more frequently used reliable standard method, such as SPR or MST. We would be ready to evaluate a resubmission of a manuscript that has been amended accordingly.
+
+[Editors’ note: what now follows is the decision letter after the authors submitted for further consideration.]
+
+Thank you for submitting your article "Epidermal Nod factor receptor NFRe ensures robust symbiotic signalling in Lotus japonicus roots" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Hardtke as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Nod factor signaling is initiated by LysM domain receptor kinases and in Lotus NFR1 and NFR5 play essential roles. Your finding of NFRe, a receptor kinase that it is necessary for the complete signaling required to attain wildtype levels of nodulation, is intriguing and novel. In addition, the finding that NFRe contributes by providing different spatio-temporal signaling and does so through partnership with NFR5, is exciting and will impact future research on how plant rhizobia symbiosis is established.
+
+While all referees appreciate much of the information reported they still request additional experimentation and clarification to be provided. These points are listed below:
+
+1) The highly volatile nature of the spiking frequency makes it very difficult to determine fundamental differences. Thus, more detailed dissection of the patterns is required to support your conclusions. Likewise, strong statements in the text and the abstract should be softened in order to reflect the strength of the phenotype observed in the nfre1-1 mutant.
+
+2) The referees believe that (transient) complementation of the nfre1-1 mutant is required to overcome problems associated with quantitatively differing phenotypes observed in the three nfre1-1 mutant alleles.
+
+3) The use of inhibition type experiments is mandatory in addition to the differential binding experiments. This is important in order to demonstrate specificity of binding, which in addition to ligand affinity is a major criterion for biologically meaningful receptor-ligand interaction. Use of Nod factor, chitin oligosaccharide or exopolysaccharide as competitors in biolayer interferometry are likely to strengthen your claim about the receptor function of NFRe.
+
+You may also wish to show that the biotinylated R7A Nod factor retains the biological activity.
+
+[Editors’ note: what now follows is the decision letter after the authors submitted for further consideration.]
+
+Thank you for submitting your article "Epidermal Nod factor receptor NFRe ensures robust symbiotic signalling in Lotus japonicus roots" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Thorsten Nürnberger as the Reviewing Editor and Christian Hardtke as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+The referees acknowledge to a great extent the changes introduced into your manuscript. They also realize that you have tried hard to tackle the problem of demonstrating nod factor binding specificity to NFRe, which unfortunately was unsuccessful for technical reasons. Nevertheless, the identification of NFRe and genetic evidence for its role in nodulation remains a very valuable finding. We would therefore recommend publication of your study given you re-write those chapters of your manuscript that describe NFRe as a nod factor binding site (receptor). Instead, you may refer to eNFR as a protein involved in nodulation for which receptor function is yet to be shown. You may also briefly refer to technical problems you had with handling this protein in order to demonstrate its receptor function, which may be useful information for our readership. Likewise, you may state what type of experiment would be needed to demonstrate receptor specificity.

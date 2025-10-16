@@ -1,0 +1,28 @@
+# Circadian oscillations in Trichoderma atroviride and the role of core clock components in secondary metabolism, development, and mycoparasitism against the phytopathogen Botrytis cinerea
+
+## Authors
+
+- Marlene Henríquez-Urrutia<sup>1</sup>
+- Rebecca Spanner<sup>1</sup>
+- Consuelo Olivares-Yánez<sup>2</sup>
+- Aldo Seguel-Avello<sup>1</sup>
+- Rodrigo Pérez-Lara<sup>1</sup>
+- Hector Guillén-Alonso<sup>3</sup>
+- Robert Winkler<sup>3</sup>
+- Alfredo Heriberto Herrera-Estrella<sup>4</sup>
+- Paulo Canessa<sup>5</sup> †
+- Luis F Larrondo<sup>1</sup> ([ORCID: 0000-0002-8832-7109](https://orcid.org/0000-0002-8832-7109)) †
+
+### Affiliations
+
+1. Molecular Genetics and Microbiology department Pontificia Universidad Católica de Chile Santiago Chile
+2. Millennium Science Initiative Program Millennium Institute for Integrative Biology Santiago Chile
+3. Department of Biotechnology and Biochemistry Cinvestav Unidad Irapuato Irapuato Mexico
+4. Laboratorio de expresión génica y desarrollo en hongos Unidad de Genómica Avanzada - Langebio Irapuato Mexico
+5. Centro de Biotecnología Vegetal Universidad Andrés Bello Santiago Chile
+
+† Corresponding author
+
+## Abstract
+
+Circadian clocks are important for an individual’s fitness, and recent studies have underlined their role in the outcome of biological interactions. However, the relevance of circadian clocks in fungal-fungal interactions remains largely unexplored. We sought to characterize a functional clock in the biocontrol agent Trichoderma atroviride to assess its importance in the mycoparasitic interaction against the phytopathogen Botrytis cinerea . By utilizing luciferase reporters to monitor the T. atroviride core-clock, we confirmed the existence of circadian oscillations of ~26h that are temperature-compensated and modulated by environmental cues such as light and temperature. Notably, the presence of such rhythms appears to be highly dependent on the nutritional composition of the media. Heterologous expression of the T. atroviride negative clock component ( tafrq ) in a clock null ( Δfrq ) strain of Neurospora crassa restored core clock function in the latter fungus, with the same period observed in T. atroviride , confirming the role of tafrq as a bona fide core-clock component. Confrontation assays between wild-type and clock mutant strains of T. atroviride and B. cinerea , in constant light or darkness, revealed an inhibitory effect of light on T. atroviride's mycoparasitic capabilities. Interestingly, when confrontation assays were performed under light/dark cycles, T. atroviride's overgrowth capacity was enhanced when inoculations were at dawn compared to dusk. Deleting the core-clock negative element FRQ in B. cinerea , but not in T. atroviride , was vital for the daily differential phenotype, suggesting that the B. cinerea clock has a more significant influence on the result of this interaction. Additionally, we observed that T. atroviride clock components modulate development and secondary metabolism in this fungus, affecting the production of several molecules, including volatile compounds, such as 6-pentyl-α-pyrone (6-PP). Notably, we detected the rhythmic production of distinct T. atroviride volatile organic compounds (VOCs), which depended on its circadian clock. Thus, this study provides evidence on how clock components impact diverse aspects of T. atroviride lifestyle and how daily changes modulate fungal interactions and dynamics.

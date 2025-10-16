@@ -1,0 +1,18 @@
+# The GTPase IFT27 is involved in both anterograde andretrograde intraflagellar transport
+
+## Authors
+
+- Diego Huet
+- Thierry Blisnick
+- Sylvie Perrot
+- Philippe Bastin †
+
+### Affiliations
+
+1. Trypanosome Cell Biology Unit Institut Pasteur & CNRS Paris France pbastin@pasteur.fr
+
+† Corresponding author
+
+## Abstract
+
+The construction of cilia and flagella depends on intraflagellar transport (IFT), a bidirectional movement of two protein complexes (IFT-A and IFT-B) driven by specific kinesin and dynein motors. IFT-B and kinesin are associated to anterograde transport whereas IFT-A and dynein participate to retrograde transport. Surprisingly, the small GTPase IFT27, a member of the IFT-B complex, turns out to be essential for retrograde cargo transport in Trypanosoma brucei. We reveal that this is due to failure to import both the IFT-A complex and the IFT dynein into the flagellar compartment. To get further molecular insight about the role of IFT27, GDP- or GTP-locked versions were expressed in presence or absence of endogenous IFT27. The GDP-locked version is unable to enter the flagellum and to interact with other IFT-B proteins and its sole expression prevents flagellum formation.  These findings demonstrate that a GTPase-competent IFT27 is required for association to the IFT complex and that IFT27 plays a role in the cargo loading of the retrograde transport machinery.

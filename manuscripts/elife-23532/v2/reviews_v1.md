@@ -1,0 +1,63 @@
+# Peer review - Round 1
+
+Editors:
+- Ole Kiehn, Karolinska Institutet , Sweden
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.23532.013](https://doi.org/10.7554/eLife.23532.013)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Cortex-dependent recovery of hindlimb locomotion after complete spinal cord injury" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Arko Ghosh (Reviewer #1); Reggie Edgerton (Reviewer #3).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary
+
+The present work investigates the neuronal plasticity following pharmacological and physical therapy leading to weight-supported hind limb stepping after complete spinal cord transection at the thoracic level in rats. The authors show that full weight-supported stepping is followed by plasticity in motor cortex that involves increased motor output to trunk muscles with a possible increased integration of sensory input to these areas from the forelimbs during training. The essential new idea is that improved locomotor function after a complete spinal cord transection can occur with interventions previously shown to result in improved locomotor function, but it is not via any crossing of fibers over the lesion but due to improved control of trunk muscles that act as a mechanical bridge to allow weight-supported stepping in the hind limbs. The study is comprehensive and the central hypothesis is substantiated by electrophysiological, lesion and anatomical findings. The study has the potential to provide important new insight to the functional recovery following intervention therapies after spinal cord injury. There are, however, a number of concerns that should be addressed to improve the presentation, make the conclusions of the paper stronger and clarify several issues.
+
+Title: The title should include the animal used.
+
+Essential revisions
+
+1) A major concern raised by all reviewers is how the results are interpreted and discussed. The paper emphasizes throughout the observation that these animals, with appropriate rehabilitation and serotonergic administration, can recover function including weight supported stepping after complete spinal cord injury. Although this is an important point and bears repeating: it is not new. This result is well established in the literature, by several studies (from Rossignol, Courtine, Edgerton and others) in rats, cats, and mice using a variety of interventions. The point is still important to make as it is not always appreciated, but the paper has to be reworked throughout to avoid repeated overstatements/overselling with regard to these findings and by including appropriate acknowledgement and reference to previous work. On the other hand, the authors should focus in the writing on the real significance of the study: namely that cortical plasticity might mediate functional recovery after SCI via biomechanical coupling across the lesion – which is not well appreciated in the field. Also here the wording should be appropriate not overstate the finding.
+
+2) The authors need to substantiate that they obtain WSS after training. All analysis for WSS is expressed as% of 100 steps that met the criteria of a step cycle on the treadmill and the criteria in the open field. These data therefore provide no direct evidence of absolute levels of weight support generated. All measures are% of the number of steps with the criteria for a step adjusted to the level of a constant criteria for treadmill and over-ground open field as well as for training. No absolute values even for the BBB tests are provided. BBB scores are informative as to the functional level of each animal and the scale is clearly not linear; an increase from 2 to 3 might mean something very different from an increase from 10 to 11. All changes are in% for each rat with adjusted levels of support as the point of reference. The subjective scores should be reported – so as to demonstrate that each group had similar functional levels after spinal cord injury.
+
+3) The biomechanical coupling across the lesion is the core idea put forward in the study. Yet, there is little explanation or mechanistic insights into how this is accomplished. It will be useful to have a description of what animals actually did to recover weight bearing stepping. How different are the trunk-supported steps post-lesion from the steps pre-lesion? How did animals with good recovery control their trunk muscles differently than animals with poor recovery? The authors should be able to extract biomechanical data from video analysis of animals without further experimentation to address these questions. The open field-scores were estimated over the first 100 steps. Did the animals in all of the groups perform the tests as quickly and was this used to adjust for the corresponding statistics. It will also be useful to discuss possible mechanisms for the recovery across the lesion. There have been reports of intersegmental reflexes among trunk muscles that should be cited. Altogether the authors should better separate their work from previous research with a more in-depth consideration of what has been already done regarding trunk supported steps and the proposed mechanisms.
+
+4) Changes in cortical plasticity. More excitable vs. more area? The authors argue the area occupied by the trunk region expands following the lesion and supports the treatment-induced recovery. However, it remains possible that the cortex is more excitable post-lesion – as suggested by some of the previous work performed by some of the co-authors of this very report. To resolve this, the data from the different threshold currents used in the ICMS experiments could be simply shown. Essentially, a heat map showing the current thresholds should settle this.
+
+5) The cortical lesion experiments are incomplete unless the functional specificity of the lesion is clarified. The lesion experiments bear a strong importance to the study so it is important to address if the impact of the lesion is specific to the hind limb. This would be expected from the apparently accurate lesion location; but a control measure used to explore if the forelimb weight support remains unobstructed should be presented to exclude a general impact of cortical lesion (brain swelling etc.). In particular the authors should pay attention to the cortical lesion on normal locomotor behavior in non-spinal-cord-injured animals. This relates to their findings that cortical lesions in control animals have no effect on motor behavior. At the moment this is just mentioned in one sentence and would need some sort of qualification and discussed in relationship to previous findings in rats (e.g. Ölvecky's or Courtin's).
+
+6) The sensory cortical recordings should be better aligned with the rest of the paper to support the central claim by adding trunk sensory simulations or at least discuss their role in the recovery. Secondly, in Figure 5D the 'quarter' division of the grid seems a bit arbitrary. It might be more informative to divide sites according to their motor representation. I.e. is the increased forelimb representation mainly at sites that encode the trunk or is it general across all representations? Finally, was there a phase relationship between the activity of these cells and forelimb movements during normal walking that could be explained by their new receptive field? This latter analysis of neural coding is beyond the scope of this paper, but it would be helpful if the authors could comment on it since it would clearly help in explaining the recovery strategy.
+
+7) While the measurements of the protein levels for a number of molecules linked to plastic changes are interesting they presence or absence cannot be linked to any specific plasticity. This part of the results should be deleted from the study.
+
+8) The Discussion needs to be reworked to take into account the new data analysis and to tone down the strong statements in the first paragraph. It should also include a discussion of other studies that have shown cortical plasticity after spinal cord injury and the effect of cortical lesions in intact animals.
+
+9) The logic of tying this work to a "brain machine interface" seemed off track and should be avoided.
+
+[Editors' note: further revisions were requested prior to acceptance, as described below.]
+
+Thank you for resubmitting your work entitled "Cortex-dependent recovery of unassisted hindlimb locomotion after complete spinal cord injury in adult rats" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and three reviewers.
+
+The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:
+
+This revised study addresses most of the concerns raised by the reviewers. It has clarified issues regarding the biomechanical coupling and unassisted weight support which further helps to highlight the novelty of the study. The major strength of this report is in its focus on the circuits that are above the injury which may biomechanically influence the motor functions originally controlled by the injured cord. Although there is not a clear mechanistic explanation for the link between behavioral recovery, changes in cortical structures and the mechanical coupling the authors have gone a long way in the revision to explain how animals achieve training+treatment induced recovery and discussed the findings appropriately.
+
+There remain some questions that the authors needs to respond to before the paper can be published:
+
+1) There are significant concerns about the final figure showing the Western blots. Comments about this were made by reviewers in the previous round but it did not make it into the decision letter. First, several β actin control blots are reused across figures. I.e. in Figure B, the β actin control for PSD95 is the same as the control for synaptophysin. The authors should clarify that they were all taken from the same sheet. If they're not, then it's not appropriate to use the same β actin blot as a control for both cases. More confusing, however, are the blots in Figure C and D. The β actin controls appear to be the same for GLAST and ephrin A3, except that the final sample is missing in D. As for Figure B, if they were all on the same sheet, then this might be ok. But it appears to be more complicated. In C there are 5 samples for partial and 5 samples for complete; in D there are 4 samples for partial and 5 for complete. This explains why there's one less sample in the β actin control in D. However, this implies that there is a mismatch between columns in C and D, with the 5 complete animals matching up with different columns in the β actin controls (matching with 10-14 in C and with 9-13 in D). One can also see part of a blot clipped at the end of the ephrinA3 row. Please explain 1) whether the reused β actin controls were obtained from the sheet, 2) why there are 4 partial animals in some samples and 5 partials in others, 3) the apparent mismatch between columns in C and D, and 4) the apparently clipped blot in D.
+
+Added by Senior Editor: it would be best if independent controls were used for each run. If they were run on one gel, then redesign the figure to make that clear and only show the control once if it was the same actual run used for multiple samples. fix this in some scientifically unassailable way or we won't be able to proceed to publication. Incorrectly replicated gel panels are one of the most common errors found in published papers, and we are starting to monitor papers for this kind of issue.
+
+2) Please add the results from the bi-square vs. OLS regressions as a supplementary figure, along with your argument as to why the 'OLS' is preferred.
+
+3) There is an opportunity to refer to a paper about intersegmental reflexes:
+
+Reflexes evoked in human erector spinae muscles by tapping during voluntary activity. Tani T1, Yamamoto H, Ichimiya M, Kimura J.

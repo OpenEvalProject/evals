@@ -1,0 +1,19 @@
+# Cholinergic and noradrenergic axonal activity contains a behavioral-state signal that is coordinated across the dorsal cortex
+
+## Authors
+
+- Lindsay Collins<sup>1</sup>
+- John Francis<sup>1</sup>
+- Brett Emanuel<sup>1</sup>
+- David A McCormick<sup>2</sup> ([ORCID: 0000-0002-9803-8335](https://orcid.org/0000-0002-9803-8335)) †
+
+### Affiliations
+
+1. Institute of Neuroscience University of Oregon Eugene United States
+2. Institute of Neuroscience University of Oregon Oregon United States
+
+† Corresponding author
+
+## Abstract
+
+Fluctuations in brain and behavioral state are supported by broadly projecting neuromodulatory systems. In this study, we use mesoscale two-photon calcium imaging to examine spontaneous activity of cholinergic and noradrenergic axons in awake mice in order to determine the interaction between arousal/movement state transitions and neuromodulatory activity across the dorsal cortex at distances separated by up to 4 mm. We confirm that GCaMP6s activity within axonal projections of both basal forebrain cholinergic and locus coeruleus noradrenergic neurons track arousal, indexed as pupil diameter, and changes in behavioral engagement, as reflected by bouts of whisker movement and/or locomotion. The broad coordination in activity between even distant axonal segments indicates that both of these systems can communicate, in part, through a global signal, especially in relation to changes in behavioral state. In addition to this broadly coordinated activity, we also find evidence that a subpopulation of both cholinergic and noradrenergic axons may exhibit heterogeneity in activity that appears to be independent of our measures of behavioral state. By monitoring the activity of cholinergic interneurons in the cortex we found that a subpopulation of these cells also exhibit state-dependent (arousal/movement) activity. These results demonstrate that cholinergic and noradrenergic systems provide a prominent and broadly synchronized signal related to behavioral state, and therefore may contribute to state-dependent cortical activity and excitability.

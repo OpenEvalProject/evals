@@ -1,0 +1,23 @@
+# Temporal transcriptional response of Candida glabrata during macrophage infection reveals a multifaceted transcriptional regulator CgXbp1 important for macrophage response and fluconazole resistance
+
+## Authors
+
+- Maruti Nandan Rai<sup>1</sup>
+- Qing Lan<sup>1</sup>
+- Chirag Parsania<sup>1</sup>
+- Rikky Rai<sup>1</sup>
+- Niranjan Shirgaonkar<sup>1</sup> ([ORCID: 0000-0001-6078-1409](https://orcid.org/0000-0001-6078-1409))
+- Ruiwen Chen<sup>1</sup>
+- Li Shen<sup>1</sup>
+- Kaeling Tan<sup>1</sup>
+- Koon Ho Wong<sup>1</sup> ([ORCID: 0000-0002-9264-5118](https://orcid.org/0000-0002-9264-5118)) †
+
+### Affiliations
+
+1. Faculty of health sciences University of Macau Taipa Macao
+
+† Corresponding author
+
+## Abstract
+
+Candida glabrata can thrive inside macrophages and tolerate high levels of azole antifungals. These innate abilities render infections by this human pathogen a clinical challenge. How C. glabrata reacts inside macrophages and what is the molecular basis of its drug tolerance are not well understood. Here, we mapped genome-wide RNA polymerase II (RNAPII) occupancy in C. glabrata to delineate its transcriptional responses during macrophage infection in high temporal resolution. RNAPII profiles revealed dynamic C. glabrata responses to macrophages with genes of specialized pathways activated chronologically at different times of infection. We identified an uncharacterized transcription factor (CgXbp1) important for the chronological macrophage response, survival in macrophages, and virulence. Genome-wide mapping of CgXbp1 direct targets further revealed its multi-faceted functions, regulating not only virulence-related genes but also genes associated with drug resistance. Finally, we showed that CgXbp1 indeed also affects fluconazole resistance. Overall, this work presents a powerful approach for examining host-pathogen interaction and uncovers a novel transcription factor important for C. glabrata 's survival in macrophages and drug tolerance.

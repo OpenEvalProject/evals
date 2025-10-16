@@ -1,0 +1,18 @@
+# Microtubule rescue at midzone edges promotes overlap stability and prevents spindle collapse during anaphase B
+
+## Authors
+
+- Manuel Lera-Ramirez<sup>1</sup> ([ORCID: 0000-0002-8666-9746](https://orcid.org/0000-0002-8666-9746)) †
+- François J Nédélec<sup>2</sup> †
+- Phong T Tran<sup>1</sup> ([ORCID: 0000-0002-2410-2277](https://orcid.org/0000-0002-2410-2277)) †
+
+### Affiliations
+
+1. CNRS, UMR 144 Institut Curie Paris France
+2. Sainsbury Laboratory Cambridge University Cambridge United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+During anaphase B, molecular motors slide interpolar microtubules to elongate the mitotic spindle, contributing to the separation of chromosomes. However, sliding of antiparallel microtubules reduces their overlap, which may lead to spindle breakage, unless microtubules grow to compensate sliding. How sliding and growth are coordinated is still poorly understood. In this study, we have used the fission yeast S. pombe to measure microtubule dynamics during anaphase B. We report that the coordination of microtubule growth and sliding relies on promoting rescues at the midzone edges. This makes microtubules stable from pole to midzone, while their distal parts including the plus ends alternate between assembly and disassembly. Consequently, the midzone keeps a constant length throughout anaphase, enabling sustained sliding without the need for a precise regulation of microtubule growth speed. Additionally, we found that in S. pombe , which undergoes closed mitosis, microtubule growth speed decreases when the nuclear membrane wraps around the spindle midzone.

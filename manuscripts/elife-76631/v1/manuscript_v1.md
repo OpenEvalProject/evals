@@ -1,0 +1,20 @@
+# Determination of oligomeric states of proteins via dual-color colocalization with single molecule localization microscopy
+
+## Authors
+
+- Hua Leonhard Tan<sup>1</sup> ([ORCID: 0000-0002-3938-3454](https://orcid.org/0000-0002-3938-3454))
+- Stefanie Bungert-Plümke<sup>1</sup> ([ORCID: 0000-0002-4650-3274](https://orcid.org/0000-0002-4650-3274))
+- Daniel Kortzak<sup>1</sup>
+- Christoph Fahlke<sup>1</sup>
+- Gabriel Stölting<sup>2</sup> ([ORCID: 0000-0002-2339-0545](https://orcid.org/0000-0002-2339-0545)) †
+
+### Affiliations
+
+1. Institute of Biological Information Processing, Molecular and Cellular Physiology Forschungszentrum Jülich Jülich Germany
+2. Center of Functional Genomics, Hypertension and Molecular Biology of Endocrine Tumors Berlin Institute of Health at Charité - Universitätsmedizin Berlin Berlin Germany
+
+† Corresponding author
+
+## Abstract
+
+The oligomeric state of plasma membrane proteins is the result of the interactions between individual proteins and an important determinant of their function. Most approaches used to address this question rely on extracting these complexes from their native environment, which may disrupt weaker interactions. Therefore, microscopy techniques have been increasingly used in recent years to determine oligomeric states in situ . Classical light microscopy suffers from insufficient resolution, but super-resolution methods such as single molecule localization microscopy (SMLM) can circumvent this problem. When using SMLM to determine oligomeric states of proteins, subunits are labeled with fluorescent proteins that only emit light following activation or conversion at different wavelengths. Typically, individual molecules are counted based on a binomial distribution analysis of emission events detected within the same diffraction-limited volume. This strategy requires low background noise, a high recall rate for the fluorescent tag and intensive post-imaging data processing. To overcome these limitations, we developed a new method based on SMLM to determine the oligomeric state of plasma membrane proteins. Our dual-color colocalization (DCC) approach allows for accurate in situ counting even with low efficiencies of fluorescent protein detection. In addition, it is robust in the presence of background signals and does not require temporal clustering of localizations from individual proteins within the same diffraction limited volume, which greatly simplifies data acquisition and processing. We used DCC-SMLM to resolve the controversy surrounding the oligomeric state of two SLC26 multifunctional anion exchangers and to determine the oligomeric state of four members of the SLC17 family of organic anion transporters.

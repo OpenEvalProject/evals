@@ -1,0 +1,18 @@
+# Peripheral optogenetic stimulation induces whisker movement and sensory perception in head-fixed mice
+
+## Authors
+
+- Sunmee Park
+- Akhil Bandi
+- Christian R Lee
+- David J Margolis †
+
+### Affiliations
+
+1. Department of Cell Biology and Neuroscience Rutgers University Piscataway United States david.margolis@rutgers.edu
+
+† Corresponding author
+
+## Abstract
+
+We discovered that optical stimulation of the mystacial pad in Emx1-Cre;Ai27D transgenic mice induces whisker movements due to activation of ChR2 expressed in muscles controlling retraction and protraction. Using high-speed videography in anesthetized mice, we characterize the amplitude of whisker protractions evoked by varying the intensity, duration, and frequency of optogenetic stimulation. Recordings from primary somatosensory cortex (S1) in anesthetized mice indicated that optogenetic whisker pad stimulation evokes robust yet longer latency responses than mechanical whisker stimulation. In head-fixed mice trained to report optogenetic whisker pad stimulation, psychometric curves showed similar dependence on stimulus duration as evoked whisker movements and S1 activity. Furthermore, optogenetic stimulation of S1 in expert mice was sufficient to substitute for peripheral stimulation. We conclude that whisker protractions evoked by optogenetic activation of whisker pad muscles results in cortical activity and sensory perception, consistent with the coding of evoked whisker movements by reafferent sensory input.

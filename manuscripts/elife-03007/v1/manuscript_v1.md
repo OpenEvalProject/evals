@@ -1,0 +1,19 @@
+# Active invasion of bacteria into living fungal cells
+
+## Authors
+
+- Nadine Moebius
+- Zerrin Üzüm
+- Jan Dijksterhuis
+- Gerald Lackner
+- Christian Hertweck †
+
+### Affiliations
+
+1. Department of Biomolecular Chemistry Leibniz Institute for Natural Product Research and Infection Biology Jena Germany christian.hertweck@hki-jena.de
+
+† Corresponding author
+
+## Abstract
+
+The rice seedling blight fungus Rhizopus microsporus and its endosymbiont Burkholderia rhizoxinica form an unusual, highly specific alliance to produce the highly potent antimitotic phytotoxin rhizoxin. Yet, it has remained a riddle how bacteria invade into the fungal cells. Genome mining for potential symbiosis factors and functional analyses revealed that a type 2 secretion system (T2SS) of the bacterial endosymbiont is required for the formation of the endosymbiosis. Comparative proteome analyses show that the T2SS releases chitinolytic enzymes (chitinase, chitosanase) and chitin-binding proteins. The genes responsible for chitinolytic proteins and T2SS components are highly expressed during infection. Through targeted gene knock-outs, sporulation assays and microscopic investigations we found that chitinase is essential for bacteria to enter hyphae. Unprecedented snapshots of the traceless bacterial intrusion were obtained using cryo-electron microscopy. Beyond unveiling the pivotal role of chitinolytic enzymes in the active invasion of a fungus by bacteria, these findings grant unprecedented insight into the fungal cell wall penetration and symbiosis formation.

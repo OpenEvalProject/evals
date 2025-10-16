@@ -1,0 +1,49 @@
+# Peer review - Round 1
+
+Editors:
+- Richard Aldrich, The University of Texas at Austin , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.10013.026](https://doi.org/10.7554/eLife.10013.026)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for submitting your work entitled “Knockout of SLO2.2 enhances itch, abolishes KNa current, and increases action potential firing frequency in DRG neurons” for peer review at eLife. Your submission has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers one of whom, Richard Aldrich, is a member of our Board of Reviewing Editors.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission:
+
+This manuscript examines the consequences of global knockouts of slo2.1 and slo2.2 channels on the electrophysiology of small-diameter DRG neurons and on behavioral tests of acute pain and itch. The authors find that knockout of slo2.2 channels but not slo2.1 channels results in somewhat enhanced rapid pain and itch responses, most notably in the scratching induced by chloroquine or histamine injection in the first 5 minutes after injection, when wild-type animals have only small responses. In terms of electrophysiology, the authors do two sets of experiments. In one, they identify a sodium-activated conductance that is induced by dialyzing cells with 70 mM Na and show that this is gone in slo2.2 KO animals. In the second, they study firing properties of the neurons with either physiological (10 mM) or 0 mM internal sodium. Surprisingly, they find that the slo2.2-KO animals have enhanced firing frequencies in either condition, accompanied by a reduction in spike threshold.
+
+The work presented in the paper is done well technically and the results are interesting and novel. Another recent paper (Lu et al., 2015, duly cited) also examined slo2.2 KO mice for both electrophysiology of DRG neurons and for behavioral pain responses (but not itch). Unlike the present manuscript, Lu et al. reported no changes in acute pain responses but only in models of neuropathic pain. There is no real experimental conflict, because in the present manuscript the effects on acute pain were actually quite subtle, and were most clearly illustrated by a change in the dose-response curve for capsaicin injections. In the present manuscript the most dramatic effect in the knockout was a large increase in scratching in the first 5 minutes after injection of chloroquine and histamine, and itching was not tested by Lu et al. Therefore the behavioral effects in this manuscript are novel and interesting.
+
+The electrophysiology in the present manuscript is far more extensive and detailed than in the Lu et al. manuscript, although the basic observation of increased excitability in the slo2.2-KO animals is similar.
+
+As explained in detail below, a number of additional experiments need to be included to rule out alternative interpretations of the results. We feel that these can be reasonably accomplished.
+
+There are several major issues in the present paper concerning the interpretation of the electrophysiology experiments. In the first series of experiments, the authors show that a Na-dependent conductance is produced by cell dialysis with 70 mM and that this conductance is lacking in the slo2.2-KO animals. In this part of the paper, everything suggests that this conductance is completely lacking in WT cells dialyzed with 0 mM Na. But in the second section of electrophysiology, the authors examine changes in firing behavior in the KO animals and find that the changes in excitability are exactly the same when the cells are dialyzed with 0 mM Na as with 10 mM Na. They then interpret the effects in 0 mM Na as suggesting either that the slo2.2 conductance can actually be present even in the absence of internal Na, or that there is somehow enough Na-entry even at subthreshold voltages to activate the channels. The first possibility seems completely at odds with the first series of experiments, where they see no difference between WT and KO animals with 0 mM internal Na. This seeming inconsistency is not discussed. And there is no attempt to actually test the second possibility.
+
+The authors never consider another possibility – that the changes in excitability are not directly due to loss of Na-activated K current but rather reflect changes in other conductances occurring as a result of developmental changes occurring in the KO animals, or other effects involving changes in protein synthesis by loss of slo2.2, for which there is previous evidence. This seems likely. As a whole, the changes in excitability seem far more consistent with a change in other conductances (e.g. an increase or change in voltage-dependence of voltage-activated sodium current, or possibly a reduction in a voltage-dependent potassium current) than a loss of Na-activated K current.
+
+Specific:
+
+1) As noted, there is a fundamental contradiction between the experiments in Figure 6 showing that the conductance identified as slo2.2 current is lacking when cells are dialyzed with 0 mM Na and the interpretation of the experiments in Figures 7 and 8 where it is assumed that this conductance is somehow present even with 0 mM internal Na. This discrepancy needs to be addressed. In Figure 6F, there is no data for the double KO with 0 mM Na internal. If the conductance with this condition is really the same as WT with 0 Na, then the speculation later that there might be Na-independent activity of the slo2.2 conductance cannot be true.
+
+2) Also inconsistent with the possibility of a Na-independent conductance from slo2.2 channels is that the input resistance is not changed between WT and KO animals. (What was the protocol for measuring input resistance? From what voltage? Hyperpolarizxing or depolarizing current steps? How big? All of these are relevant to interpretation.)
+
+3) The changes in excitability seem more consistent with an increase in voltage-dependent sodium current near threshold – possibly a shift in voltage-dependence to more negative voltages – than a change in potassium conductance. In the data in Figure 8H, the initial outward current in the KO seems similar to control, but then the inward current seems to activate at more negative voltages. A shift in the voltage-dependent of sodium current is also the most obvious explanation for the changes in in the phase-plane plot in Figure 8E. The authors need to test whether there is a change in inward sodium current in the knockout animals by recording with K current blocked.
+
+4) A change in non-voltage dependent potassium conductance might shift the frequency-current curves in Figure 6 to the right, but there is no obvious reason it would result in an increased maximal frequency of firing. This also seems more easily explained by a change in sodium current. Obviously, a change in sodium current would also explain why the effect on excitability are the same with 0 internal and 10 mM internal Na.
+
+5) Another possibility is a loss of a voltage-dependent K current. In the IV curves in Figure 6F shown for the dKO animals with 70 mM internal Na, it is striking that there is no evidence of any voltage-dependent component of K current like that seen for the WT neurons with 0 mM internal Na.
+
+6) More generally, the authors interpret all of their results as if they represent direct effects of a loss of slo2.2 rather than possible developmental changes. Such changes seem not only possible but likely based on the fact that slo2.2 mutations in humans seem to have profound developmental effects and with previous evidence that slo2.2 protein can affect synthesis of other proteins. To quote the final summary of the 2013 review by Kaczmarek, “Human mutations in these channels produce profound effects on neuronal function and development, suggesting that perhaps their biological role may extend beyond simply setting the level of neuronal excitability, and that these channels may influence cytoplasmic biochemical pathways that regulate development, plasticity, and intellectual function.” Obviously, such indirect effects could offer a completely different explanation of the changes in excitability – or even the effects on pain and itch behavior. This needs to be acknowledged and considered in the interpretation in this manuscript.
+
+7) Because this is the first description of these knockouts, the authors should provide some rationale for gene targeting of the particular exons that were selected (perhaps in the Methods?). The authors should address what the selected exons encode, if knockout of the exon conceivably causes a dominant negative protein for its paralogue channel (i.e., is slick exon knockout result in a dominant negative for slack?), and why does the western blot of knockout show a complete lack of protein rather than a reduction in protein size (does the knockout cause a frame-shift)?
+
+8) It would be informative if the authors address the significant depolarization in resting membrane potential in the knockout. Does this imply that slack channels are open at rest rather than during the rise to threshold?
+
+9) A discussion regarding the discrepancies in the effect of the knockouts on firing patterns between Lu et al., and this study, would also be valuable.

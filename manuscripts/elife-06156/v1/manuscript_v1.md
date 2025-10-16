@@ -1,0 +1,19 @@
+# Regulation of EGFR signal transduction by analogue-to-digital conversion in endosomes
+
+## Authors
+
+- Roberto Villaseñor
+- Hidenori Nonaka
+- Perla Del Conte-Zerial
+- Yannis Kalaidzidis
+- Marino Zerial †
+
+### Affiliations
+
+1. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany zerial@mpi-cbg.de
+
+† Corresponding author
+
+## Abstract
+
+An outstanding question is how receptor tyrosine kinases (RTKs) determine different cell-fate decisions despite sharing the same signalling cascades. Here, we uncovered an unexpected mechanism of RTK trafficking in this process. By quantitative high-resolution FRET-microscopy we found that phosphorylated epidermal growth factor receptor (p-EGFR) is not randomly distributed but packaged at constant mean amounts in endosomes. Cells respond to higher EGF concentrations by increasing the number of endosomes but keeping the mean p-EGFR content per endosome almost constant. By mathematical modelling we found that this mechanism confers both robustness and regulation to signalling output. Different growth factors caused specific changes in endosome number and size in various cell systems and changing the distribution of p-EGFR between endosomes was sufficient to reprogram cell-fate decision upon EGF stimulation. We propose that the packaging of p-RTKs in endosomes is a general mechanism to ensure the fidelity and specificity of the signalling response.

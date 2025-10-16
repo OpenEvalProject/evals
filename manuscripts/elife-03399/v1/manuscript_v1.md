@@ -1,0 +1,25 @@
+# A molecular mechanism of mitotic centrosome assembly in Drosophila
+
+## Authors
+
+- Paul T Conduit
+- Jennifer H Richens
+- Alan Wainman
+- James Holder
+- Catarina C Vicente
+- Metta B Pratt
+- Carly I Dix
+- Zsofia A Novak
+- Ian M Dobbie
+- Lothar Schermelleh
+- Jordan W Raff †
+
+### Affiliations
+
+1. Sir William Dunn School of Pathology University of Oxford Oxford United Kingdom jordan.raff@path.ox.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Centrosomes comprise a pair of centrioles surrounded by pericentriolar material (PCM). The PCM expands dramatically as cells enter mitosis, but it is unclear how this occurs. Here, we show that the centriole protein Asl initiates the recruitment of DSpd-2 and Cnn to mother centrioles; both proteins then assemble into co-dependent scaffold-like structures that spread outwards from the mother centriole and recruit most, if not all, other PCM components. In the absence of either DSpd-2 or Cnn mitotic PCM assembly is diminished; in the absence of both proteins it appears to be abolished. We show that DSpd-2 helps incorporate Cnn into the PCM and that Cnn then helps maintain DSpd-2 within the PCM, creating a positive feedback loop that promotes robust PCM expansion around the mother centriole during mitosis. These observations suggest a surprisingly simple mechanism of mitotic PCM assembly in flies.

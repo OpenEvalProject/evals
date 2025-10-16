@@ -1,0 +1,24 @@
+# Temporal integration is a robust feature of perceptual decisions
+
+## Authors
+
+- Alexandre Hyafil<sup>1</sup> ([ORCID: 0000-0002-0566-651X](https://orcid.org/0000-0002-0566-651X)) †
+- Jaime de la Rocha<sup>2</sup> ([ORCID: 0000-0002-3314-9384](https://orcid.org/0000-0002-3314-9384))
+- Cristina Pericas<sup>2</sup>
+- Leor N Katz<sup>3</sup> ([ORCID: 0000-0002-2742-6533](https://orcid.org/0000-0002-2742-6533))
+- Alexander C Huk<sup>4</sup>
+- Jonathan W Pillow<sup>5</sup> ([ORCID: 0000-0002-3638-8831](https://orcid.org/0000-0002-3638-8831))
+
+### Affiliations
+
+1. Centre de Recerca Matemàtica Bellaterra Spain
+2. Institut d'Investigacions Biomèdiques August Pi i Sunyer Barcelona Spain
+3. Laboratory of Sensorimotor Research National Eye Institute Bethesda United States
+4. Department of Psychiatry University of California, Los Angeles Los Angeles United States
+5. Department of Psychology Princeton University Princeton United States
+
+† Corresponding author
+
+## Abstract
+
+Making informed decisions in noisy environments requires integrating sensory information over time. However, recent work has suggested that it may be difficult to determine whether an animal's decision-making strategy relies on evidence integration or not. In particular, strategies based on extrema-detection or random snapshots of the evidence stream may be difficult or even impossible to distinguish from classic evidence integration. Moreover, such non-integration strategies might be surprisingly common in experiments that aimed to study decisions based on integration. To determine whether temporal integration is central to perceptual decision making, we developed a new model-based approach for comparing temporal integration against alternative 'non-integration' strategies for tasks in which the sensory signal is composed of discrete stimulus samples. We applied these methods to behavioral data from monkeys, rats, and humans performing a variety of sensory decision-making tasks. In all species and tasks, we found converging evidence in favor of temporal integration. First, in all observers across studies, the integration model better accounted for standard behavioral statistics such as psychometric curves and psychophysical kernels. Second, we found that sensory samples with large evidence do not contribute disproportionately to subject choices, as predicted by an extrema-detection strategy. Finally, we provide a direct confirmation of temporal integration by showing that the sum of both early and late evidence contributed to observer decisions. Overall, our results provide experimental evidence suggesting that temporal integration is an ubiquitous feature in mammalian perceptual decision-making. Our study also highlights the benefits of using experimental paradigms where the temporal stream of sensory evidence is controlled explicitly by the experimenter, and known precisely by the analyst, to characterize the temporal properties of the decision process.

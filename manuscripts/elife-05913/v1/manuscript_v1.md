@@ -1,0 +1,16 @@
+# The self-organization of grid cells in 3D
+
+## Authors
+
+- Federico Stella †
+- Alessandro Treves
+
+### Affiliations
+
+1. Cognitive Neuroscience Scuola Internazionale Superiore di Studi Avanzati Trieste Italy
+
+† Corresponding author
+
+## Abstract
+
+Do we expect periodic grid cells to emerge in bats, or perhaps dolphins, exploring a three-dimensional environment? How long will it take? Our self-organizing model, based on ring-rate adaptation, points at a complex answer. The mathematical analysis leads to asymptotic states resembling FCC and HCP crystal structures, which are calculated to be very close to each other in terms of cost function. The simulation of the full model, however, shows that the approach to such asymptotic states involves several sub-processes over distinct time scales. The smoothing of the initially irregular multiple fields of individual units and their arrangement into hexagonal grids over certain best planes are observed to occur relatively fast, even in large 3D volumes. The correct mutual orientation of the planes, though, and the coordinated arrangement of different units, take a longer time, with the network showing no sign of convergence towards either a pure FCC or HCP ordering.

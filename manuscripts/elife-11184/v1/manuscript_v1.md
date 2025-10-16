@@ -1,0 +1,28 @@
+# Huntingtin's spherical solenoid structure enables polyglutamine tract-dependent modulation of its structure and function
+
+## Authors
+
+- Ravi Vijayvargia
+- Raquel Epand
+- Alexander Leitner
+- Tae-Yang Jung
+- Baehyun Shin
+- Roy Jung
+- Alejandro Lloret
+- Randy Singh Atwal
+- Hyeongseok Lee
+- Jong-Min Lee
+- Ruedi Aebersold
+- Hans Hebert
+- Ji-Joon Song
+- Ihn Sik Seong †
+
+### Affiliations
+
+1. Center for Human Genetic Research Massachusetts General Hospital Boston United States iseong@mgh.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+The polyglutamine expansion in huntingtin protein causes Huntington's disease. Here, we investigated structural and biochemical properties of huntingtin and the effect of the polyglutamine expansion using various biophysical experiments including circular dichroism, single-particle electron microscopy and cross-linking mass spectrometry. Huntingtin is likely composed of five distinct domains and adopts a spherical α-helical solenoid where the amino-terminal and carboxyl-terminal regions fold to contain a circumscribed central cavity. Interestingly we showed that the polyglutamine expansion increases α-helical properties of huntingtin and affects the intramolecular interactions among the domains. Our work delineates the structural characteristics of full-length huntingtin, which are affected by the polyglutamine expansion, and provides an elegant solution to the apparent conundrum of how the extreme amino-terminal polyglutamine tract confers a novel property on huntingtin, causing the disease.

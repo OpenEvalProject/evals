@@ -1,0 +1,26 @@
+# ANGPTL4 mediates shuttling of lipid fuel to brown adipose tissue during sustained cold exposure
+
+## Authors
+
+- Wieneke Dijk
+- Markus Heine
+- Laurent Vergnes
+- Mariëtte R Boon
+- Gert Schaart
+- Matthijs KC Hesselink
+- Karen Reue
+- Wouter D van Marken Lichtenbelt
+- Gunilla Olivecrona
+- Patrick CN Rensen
+- Joerg Heeren
+- Sander Kersten †
+
+### Affiliations
+
+1. Nutrition, Metabolism and Genomics group, Division of Human Nutrition Wageningen University Wageningen Netherlands sander.kersten@wur.nl
+
+† Corresponding author
+
+## Abstract
+
+Brown adipose tissue (BAT) activation via cold exposure is increasingly scrutinized as a potential approach to ameliorate cardio-metabolic risk. Transition to cold temperatures requires changes in the partitioning of energy substrates, re-routing fatty acids to BAT to fuel non-shivering thermogenesis. However, the mechanisms behind the redistribution of energy substrates to BAT remain largely unknown. Angiopoietin-like 4 (ANGPTL4), a protein that inhibits lipoprotein lipase (LPL) activity, is highly expressed in BAT. Here, we demonstrate that ANGPTL4 is part of a shuttling mechanism that directs fatty acids derived from circulating triglyceride-rich lipoproteins to BAT during cold. Specifically, we show that cold markedly down-regulates ANGPTL4 in BAT, likely via activation of AMPK, enhancing LPL activity and uptake of plasma triglyceride-derived fatty acids. In contrast, cold up-regulates ANGPTL4 in WAT, abolishing a cold-induced increase in LPL activity. Together, our data indicate that ANGPTL4 is an important regulator of plasma lipid partitioning during sustained cold.

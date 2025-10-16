@@ -1,0 +1,17 @@
+# Synchronized excitability in a network enables generation of internal neuronal sequences
+
+## Authors
+
+- Wang Yingxue<sup>1</sup>
+- Zachary Roth<sup>1</sup>
+- Eva Pastalkova<sup>1</sup> †
+
+### Affiliations
+
+1. Janelia Farm Research Campus, Howard Hughes Medical Institute Ashburn United States
+
+† Corresponding author
+
+## Abstract
+
+Hippocampal place field sequences are supported by sensory cues and network internal mechanisms. In contrast, sharp-wave (SPW) sequences, theta sequences and episode-field sequences are internally generated. The relationship of these sequences to memory is unclear. SPW sequences have been shown to support learning and have been assumed to also support episodic memory. Conversely, we demonstrate these SPW sequences were present even after episodic memory in trained rats was impaired and after other internal sequences - episode-field and theta sequences - were eliminated. SPW sequences did not support memory despite continuing to 'replay' all task-related sequences - place-field and episode-field sequences. Sequence replay occurred selectively during a synchronous increase of population excitability -- SPWs. Similarly, theta sequences depended on the presence of repeated synchronized waves of excitability - theta oscillations. Thus, we suggest that either intermittent or rhythmic synchronized changes of excitability trigger sequential firing of neurons, which in turn supports learning and/or memory.

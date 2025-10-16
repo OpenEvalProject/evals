@@ -1,0 +1,20 @@
+# Susceptibility rhythm to bacterial endotoxin in myeloid clock-knockout mice
+
+## Authors
+
+- Veronika Lang<sup>1</sup>
+- Sebastian Ferencik<sup>1</sup>
+- Bharath Ananthasubramaniam<sup>2</sup> ([ORCID: 0000-0003-4467-1546](https://orcid.org/0000-0003-4467-1546))
+- Achim Kramer<sup>1</sup>
+- Bert Maier<sup>1</sup> ([ORCID: 0000-0002-5254-008X](https://orcid.org/0000-0002-5254-008X)) †
+
+### Affiliations
+
+1. Laboratory of Chronobiology Charite Universitaetsmedizin Berlin Berlin Germany
+2. Humboldt Universitaet zu Berlin Berlin Germany
+
+† Corresponding author
+
+## Abstract
+
+Local circadian clocks are active in most cells of our body. However, their impact on circadian physiology is still under debate. Mortality by endotoxic (LPS) shock is highly time-of-day dependent and local circadian immune function such as the cytokine burst after LPS challenge has been assumed to be causal for the large differences in survival. Here, we investigate the roles of light and myeloid clocks on mortality by endotoxic shock. Strikingly, mice in constant darkness (DD) show a three-fold increased susceptibility to LPS as compared to mice in light-dark conditions. Mortality by endotoxic shock as a function of circadian time is independent of light-dark cycles as well as myeloid CLOCK or BMAL1 as demonstrated in conditional knockout mice. Unexpectedly, despite the lack of a myeloid clock these mice still show rhythmic patterns of pro- and anti-inflammatory cytokines such as TNF,α MCP-1, IL-18 and IL-10 in peripheral blood as well as time-of-day and site dependent traffc of myeloid cells. We speculate that systemic time-cues are sufficient to orchestrate innate immune response to LPS by driving immune functions such as cell traffcking and cytokine expression.

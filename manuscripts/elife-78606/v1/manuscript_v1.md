@@ -1,0 +1,16 @@
+# Population codes enable learning from few examples by shaping inductive bias
+
+## Authors
+
+- Blake Bordelon<sup>1</sup> ([ORCID: 0000-0003-0455-9445](https://orcid.org/0000-0003-0455-9445))
+- Cengiz Pehlevan<sup>1</sup> ([ORCID: 0000-0001-9767-6063](https://orcid.org/0000-0001-9767-6063)) †
+
+### Affiliations
+
+1. John A Paulson School of Engineering and Applied Sciences Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Learning from a limited number of experiences requires suitable inductive biases. To identify how inductive biases are implemented in and shaped by neural codes, we analyze sample-efficient learning of arbitrary stimulus-response maps from arbitrary neural codes with biologically-plausible readouts. We develop an analytical theory that predicts the generalization error of the readout as a function of the number of observed examples. Our theory illustrates in a mathematically precise way how the structure of population codes shapes inductive bias, and how a match between the code and the task is crucial for sample-efficient learning. It elucidates a bias to explain observed data with simple stimulus-response maps. Using recordings from the mouse primary visual cortex, we demonstrate the existence of an efficiency bias towards low frequency orientation discrimination tasks for grating stimuli and low spatial frequency reconstruction tasks for natural images. We reproduce the discrimination bias in a simple model of primary visual cortex, and further show how invariances in the code to certain stimulus variations alter learning performance. We extend our methods to time-dependent neural codes and predict the sample efficiency of readouts from recurrent networks. We observe that many different codes can support the same inductive bias. By analyzing recordings from the mouse primary visual cortex, we demonstrate that biological codes have lower total activity than other codes with identical bias. Finally, we discuss implications of our theory in the context of recent developments in neuroscience and artificial intelligence. Overall, our study provides a concrete method for elucidating inductive biases of the brain and promotes sample-efficient learning as a general normative coding principle.

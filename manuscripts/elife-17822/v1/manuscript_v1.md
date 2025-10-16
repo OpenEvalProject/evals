@@ -1,0 +1,16 @@
+# Synchronous beta rhythms of frontoparietal networks support only behaviorally relevant representations
+
+## Authors
+
+- Evan G Antzoulatos<sup>1</sup> ([ORCID: 0000-0002-7366-2078](https://orcid.org/0000-0002-7366-2078)) †
+- Earl K Miller<sup>1</sup> †
+
+### Affiliations
+
+1. The Picower Institute for Learning and Memory Massachusetts Institute of Technology Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Categorization has been associated with distributed networks of the primate brain, including the prefrontal (PFC) and posterior parietal cortices (PPC). Although category-selective spiking in PFC and PPC has been established, the frequency-dependent dynamic interactions of frontoparietal networks are largely unexplored. We trained monkeys to perform a delayed-match-to-spatial-category task while recording spikes and local field potentials from the PFC and PPC with multiple electrodes. We found category-selective beta- and delta-band synchrony between and within the areas. However, in addition to the categories, delta synchrony and spiking activity also reflected irrelevant stimulus dimensions. By contrast, beta synchrony only conveyed information about the task-relevant categories. Further, category-selective PFC neurons were synchronized with PPC beta oscillations, while neurons that carried irrelevant information were not. These results suggest that long-range beta-band synchrony could act as a filter that only supports neural representations of the variables relevant to the task at hand.

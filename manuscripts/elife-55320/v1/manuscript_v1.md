@@ -1,0 +1,24 @@
+# A new protocol for single-cell RNA-seq reveals stochastic gene expression during lag phase in budding yeast
+
+## Authors
+
+- Abbas Jariani<sup>1</sup> ([ORCID: 0000-0003-2715-933X](https://orcid.org/0000-0003-2715-933X))
+- Lieselotte Vermeersch<sup>1</sup> ([ORCID: 0000-0001-5789-2220](https://orcid.org/0000-0001-5789-2220))
+- Bram Cerulus<sup>1</sup>
+- Gemma Perez-Samper<sup>1</sup>
+- Karin Voordeckers<sup>1</sup>
+- Thomas Van Brussel<sup>2</sup>
+- Bernard Thienpont<sup>2</sup> ([ORCID: 0000-0002-8772-6845](https://orcid.org/0000-0002-8772-6845))
+- Diether Lambrechts<sup>2</sup>
+- Kevin J Verstrepen<sup>1</sup> ([ORCID: 0000-0002-3077-6219](https://orcid.org/0000-0002-3077-6219)) †
+
+### Affiliations
+
+1. VIB Laboratory for Systems Biology VIB-KU Leuven Center for Microbiology Leuven Belgium
+2. VIB-KU Leuven Laboratory for Translational Genetics VIB-KU Leuven Center for Cancer Biology Leuven Belgium
+
+† Corresponding author
+
+## Abstract
+
+Current methods for single-cell RNA sequencing (scRNA-seq) of yeast cells do not match the throughput and relative simplicity of the state-of-the-art techniques that are available for mammalian cells. In this study, we report how 10x Genomics' droplet-based single-cell RNA sequencing technology can be modified to allow analysis of yeast cells. The protocol, which is based on in-droplet spheroplasting of the cells, yields an order-of-magnitude higher throughput in comparison to existing methods. After extensive validation of the method, we demonstrate its use by studying the dynamics of the response of isogenic yeast populations to a shift in carbon source, revealing the heterogeneity and underlying molecular processes during this shift. The method we describe opens new avenues for studies focusing on yeast cells, as well as other cells with a degradable cell wall.

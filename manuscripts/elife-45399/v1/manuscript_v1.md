@@ -1,0 +1,21 @@
+# One bout of neonatal inflammation impairs adult respiratory motor plasticity in male and female rats
+
+## Authors
+
+- Austin D Hocker<sup>1</sup> ([ORCID: 0000-0002-2941-2581](https://orcid.org/0000-0002-2941-2581))
+- Sarah A Beyeler<sup>1</sup>
+- Alyssa N Gardner<sup>2</sup>
+- Stephen M Johnson<sup>2</sup>
+- Jyoti J Watters<sup>2</sup>
+- Adrianne G Huxtable<sup>1</sup> ([ORCID: 0000-0002-8745-2231](https://orcid.org/0000-0002-8745-2231)) †
+
+### Affiliations
+
+1. Department of Human Physiology University of Oregon Eugene United States
+2. Department of Comparative Biosciences University of Wisconsin Madison United States
+
+† Corresponding author
+
+## Abstract
+
+Neonatal inflammation is common and has lasting consequences for adult health. We investigated the lasting effects of a single bout of neonatal inflammation on adult respiratory control in the form of respiratory motor plasticity induced by acute intermittent hypoxia, which likely compensates and stabilizes breathing during injury or disease and has significant therapeutic potential. Lipopolysaccharide-induced inflammation at postnatal day four induced lasting impairments in two distinct pathways to adult respiratory plasticity in male and female rats. Despite a lack of adult pro-inflammatory gene expression or alterations in glial morphology, one mechanistic pathway to plasticity was restored by acute, adult anti-inflammatory treatment, suggesting ongoing inflammatory signaling after neonatal inflammation. An alternative pathway to plasticity was not restored by anti-inflammatory treatment, but was evoked by exogenous adenosine receptor agonism, suggesting upstream impairment, likely astrocytic-dependent. Thus, the respiratory control network is vulnerable to early-life inflammation, limiting respiratory compensation to adult disease or injury.

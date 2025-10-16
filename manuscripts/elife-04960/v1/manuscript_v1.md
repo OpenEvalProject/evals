@@ -1,0 +1,17 @@
+# The polarity protein Baz forms a platform for the centrosome orientation during asymmetric stem cell division in the Drosophila male germline
+
+## Authors
+
+- Mayu Inaba
+- Zsolt G Venkei
+- Yukiko M Yamashita †
+
+### Affiliations
+
+1. Life Sciences Institute University of Michigan Ann Arbor United States yukikomy@umich.edu
+
+† Corresponding author
+
+## Abstract
+
+Many stem cells divide asymmetrically in order to balance self-renewal with differentiation. The essence of asymmetric cell division (ACD) is the polarization of cells and subsequent division, leading to unequal compartmentalization of cellular/extracellular components that confer distinct cell fates to daughter cells. Because precocious cell division before establishing cell polarity would lead to failure in ACD, these two processes must be tightly coupled; however, the underlying mechanism is poorly understood. In Drosophila male germline stem cells, ACD is prepared by stereotypical centrosome positioning. The centrosome orientation checkpoint (COC) further serves to ensure ACD by preventing mitosis upon centrosome misorientation. Here, we show that Bazooka (Baz) provides a platform for the correct centrosome orientation and that Baz-centrosome association is the key event that is monitored by the COC. Our work provides a foundation for understanding how the correct cell polarity may be recognized by the cell to ensure productive ACD.

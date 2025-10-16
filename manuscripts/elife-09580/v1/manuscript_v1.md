@@ -1,0 +1,21 @@
+# Munc18-1-regulated stage-wise SNARE assembly underlying synaptic exocytosis
+
+## Authors
+
+- Lu Ma
+- Aleksander A Rebane
+- Guangcan Yang
+- Zhiqun Xi
+- Yuhao Kang
+- Ying Gao
+- Yongli Zhang †
+
+### Affiliations
+
+1. Department of Cell Biology Yale University, School of Medicine New Haven United States yongli.zhang@yale.edu
+
+† Corresponding author
+
+## Abstract
+
+Synaptic soluble N -ethylmaleimide-sensitive factor attachment receptor (SNARE) proteins couple their stage-wise folding/assembly to rapid exocytosis of neurotransmitters in a Munc18-1-dependent manner. The functions of the different assembly stages in exocytosis and the role of Munc18-1 in SNARE assembly are not well understood. Using optical tweezers, we observed four distinct stages of assembly in SNARE N-terminal, middle, C-terminal, and linker domains (or NTD, MD, CTD and LD, respectively). We found that SNARE layer mutations differentially affect SNARE assembly. Comparison of their effects on SNARE assembly and on exocytosis reveals that NTD and CTD are responsible for vesicle docking and fusion, respectively, whereas MD regulates SNARE assembly and fusion. Munc18-1 initiates SNARE assembly and structures t-SNARE C-terminus independent of syntaxin N-terminal regulatory domain (NRD) and stabilizes the half-zippered SNARE complex dependent upon the NRD. Our observations demonstrate distinct functions of SNARE domains whose assembly is intimately chaperoned by Munc18-1.

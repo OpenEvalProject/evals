@@ -1,0 +1,26 @@
+# Altered potassium channel distribution and composition in myelinated axons suppresses hyperexcitability following injury
+
+## Authors
+
+- Margarita Calvo †
+- Natalie Richards
+- Annina B Schmid
+- Alejandro Barroso
+- Lan Zhu
+- Dinka Ivulic
+- Ning Zhu
+- Philipp Anwandter
+- Manzoor A Bhat
+- Felipe A Court
+- Stephen B McMahon
+- David LH Bennett
+
+### Affiliations
+
+1. Nuffield department of clinical neuroscience university of oxford Oxford United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Neuropathic pain following peripheral nerve injury is associated with hyperexcitability in damaged myelinated sensory axons, which begins to normalise over time. We investigated the composition and distribution of shaker-type-potassium channels (Kv1 channels) within the nodal complex of myelinated axons following injury. At the neuroma that forms after damage, expression of Kv1.1 and 1.2 (normally localised to the juxtaparanode) was markedly decreased. In contrast Kv1.4 and 1.6, which were hardly detectable in the naïve state, showed increased expression within juxtaparanodes and paranodes following injury, both in rats and humans. Within the dorsal root (a site remote from injury) we noted a redistribution of Kv1-channels towards the paranode. Blockade of Kv1 channels with αDTX after injury reinstated hyperexcitability of A-fibre axons and enhanced mechanosensitivity. Changes in the molecular composition and distribution of axonal Kv1 channels, therefore represents a protective mechanism to suppress the hyperexcitability of myelinated sensory axons that follows nerve injury.

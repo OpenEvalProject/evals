@@ -1,0 +1,20 @@
+# Drosophila gustatory projections are segregated by taste modality and connectivity
+
+## Authors
+
+- Stefanie Engert<sup>1</sup> ([ORCID: 0000-0003-0644-8116](https://orcid.org/0000-0003-0644-8116))
+- Gabriella R Sterne<sup>2</sup> ([ORCID: 0000-0002-7221-648X](https://orcid.org/0000-0002-7221-648X))
+- Davi D Bock<sup>3</sup> ([ORCID: 0000-0002-8218-7926](https://orcid.org/0000-0002-8218-7926))
+- Kristin Scott<sup>1</sup> ([ORCID: 0000-0003-3150-7210](https://orcid.org/0000-0003-3150-7210)) †
+
+### Affiliations
+
+1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States
+2. Department of Molecular and Cell Biology University of California Berkeley Berkeley United States
+3. Department of Neurological Sciences University of Vermont Burlington United States
+
+† Corresponding author
+
+## Abstract
+
+Gustatory sensory neurons detect caloric and harmful compounds in potential food and convey this information to the brain to inform feeding decisions. To examine the signals that gustatory neurons transmit and receive, we reconstructed gustatory axons and their synaptic sites in the adult Drosophila melanogaster brain, utilizing a whole-brain electron microscopy volume. We reconstructed 87 gustatory projections from the proboscis labellum in the right hemisphere and 57 from the left, representing the majority of labellar gustatory axons. Gustatory neurons contain a nearly equal number of interspersed pre-and post-synaptic sites, with extensive synaptic connectivity among gustatory axons. Morphology- and connectivity-based clustering revealed six distinct groups, likely representing neurons recognizing different taste modalities. The vast majority of synaptic connections are between neurons of the same group. This study resolves the anatomy of labellar gustatory projections, reveals that gustatory projections are segregated based on taste modality, and uncovers synaptic connections that may alter the transmission of gustatory signals.

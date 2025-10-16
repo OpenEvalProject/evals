@@ -1,0 +1,23 @@
+# Cell autonomous regulation of hippocampal circuitry via Aph1b-γ-secretase/Neuregulin 1 signalling
+
+## Authors
+
+- Pietro Fazzari
+- An Snellinx
+- Victor Sabonov
+- Tariq Ahmed
+- Lutgarde Serneels
+- Annette Gartner
+- S. Ali M Shariati
+- Detlef Balschun
+- Bart De Strooper †
+
+### Affiliations
+
+1. VIB Center for the Biology of Disease, KU Leuven Leuven Belgium bart.destrooper@cme.vib-kuleuven.be
+
+† Corresponding author
+
+## Abstract
+
+Neuregulin 1 (NRG1) and the γ-secretase subunit APH1B have been previously implicated as genetic risk factors for schizophrenia and schizophrenia relevant deficits have been observed in rodent models with loss of function mutations in either gene. Here we show that the Aph1b-γ-secretase is selectively involved in Nrg1 intracellular signalling. We found that Aph1b-deficient mice display a decrease in excitatory synaptic markers. Electrophysiological recordings show that Aph1b is required for excitatory synaptic transmission and plasticity. Furthermore, gain and loss of function and genetic rescue experiments indicate that Nrg1 intracellular signalling promotes dendritic spine formation downstream of Aph1b-γ-secretase in vitro and in vivo. In conclusion, our study sheds light on the physiological role of Aph1b-γ-secretase in brain and provides a new mechanistic perspective on the relevance of NRG1 processing in schizophrenia.

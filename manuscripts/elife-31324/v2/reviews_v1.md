@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- Andreas Martin, University of California, Berkeley United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.31324.058](https://doi.org/10.7554/eLife.31324.058)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "The AAA ATPase Vps4 binds substrates through a repeating array of dipeptide-binding pockets" for consideration by eLife. Your article has been favorably evaluated by Michael Marletta (Senior Editor) and three reviewers, one of whom, Andreas Martin (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Gabriel C Lander (Reviewer #3).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+In this manuscript, Sundquist, Hill, and colleagues present the 3.2 Å cryo-EM structure of yeast Vps4 bound to an ESCRT-III peptide. It builds on their paper published in eLife earlier this year that provided a 4.3 Å structure of Vps4 bound to nucleotides and a substrate peptide, and proposed a spiral staircase model for the continuous conveyance of substrate through the central pore. In this previous structure, the peptide density showed contacts with multiple subunits via their pore loops, but did not reveal side-chain density or the orientation of the bound peptide.
+
+A Krios data set now improved the resolution to 3.2 Å, which allowed the visualization of peptide side chains as well as pore loop contacts, and the proposal of a more detailed translocation model where every Vps4 subunit interacts with two amino acids through two "binding pockets" formed by the pore-1 and pore-2 loops. The new structure is thus consistent with the mechanisms the authors proposed previously, but does not reveal major new conceptual insights.
+
+The reviewers were a bit surprised to see that there are really not many new data in this submission albeit now having a structure at 1.1 Å higher resolution, and that the authors did not take advantage of this higher resolution to address and answer important outstanding questions.
+
+Even though it is exciting to directly visualize substrate interactions of Vps4, the advance by this manuscript in its current form is rather limited and considered not sufficient for publication in eLife. The higher resolution data should enable the authors to pursue further functional exploration and reveal new conceptual insights that go beyond of what had already been established previously for Vps4 and other AAA motors. The manuscript thus needs major revisions before publication.
+
+Essential revisions:
+
+1) The proposal of a directionality for ESCRT substrate translocation by Vps4 is interesting, but should be further supported by experimental data. Several related AAA motors have been shown to not have a preference for substrate orientation in the central pore, and for the conclusions here it should be considered that the described trapped structure likely represents an energy minimum, where the Vps4 subunits might arrange around the stably bound peptide. It is possible that a peptide bound in the opposite orientation could induce equivalent contacts, and that there is in fact no preference in the direction of translocation. The authors may be able to explore this through biochemical assays or structurally, for instance by using peptides of different lengths or with the inverted amino-acid sequence relative to the current one.
+
+2) The presented translocation model also does not go significantly beyond what had been previously discussed. The authors describe a correlation between nucleotide state and subunit conformation relative to the substrate, but the structural relationship remains unexplored in the manuscript. The impressive resolution of this structure should enable the authors to explain how ATP hydrolysis and release translates to specific rearrangements of the subunits or pore loops. Reviewers were also not fully convinced by the authors' assignment of ADP- vs. ATP- (or ADP·BeFx) bound subunits, especially for the DE interface, and the presented model for ATPase-driven substrate translocation. As the authors know, reliably distinguishing between nucleotide states has been very difficult for other AAA hexamers in recent high-resolution cryo-EM studies, in part due to weaker density for beta and gamma phosphates, but also due to issues when averaging thousands of particles with potentially distinct nucleotide occupancies in some of the ATPase subunits. For the present study, it is indeed quite unexpected that neither the Mg ion nor the P-loop residues show significant changes in their orientation, and that the Arg fingers are just slightly shifted when comparing supposedly ADP·BeFx -bound and ADP-bound subunits. When discussing this surprising similarity of subunit interfaces, the authors bring up the possibility that their nucleotide assignments are wrong. The authors also try to come up with a rationale for how the very small structural differences may lead to preferential binding of ADP vs. ATP (or ADP·BeFx), but ignore in their Discussion that during normal motor function the nucleotide dictates subunit conformation, not the other way around. Several biochemical and structural studies previously suggested major conformational and functional differences between ATP- and ADP-subunits, and that the transition from ATP- to ADP-bound through hydrolysis and phosphate release may drive the power stroke of AAA motors. Interestingly, the authors claim that substantial conformational adjustments are not required to pass through the DE states. But what then is the force-generating step for translocation, if subunits can transition from ATP to ADP-bound without any major conformational changes? ADP release or ATP binding to an empty Vps4 subunit? In a revised manuscript, the authors should assess and discuss which step of the ATPase cycle likely induces conformational changes and drives the conveyer belt for forceful substrate translocation. In that context it should also be discussed how constrains in the topologically closed ring could restrict conformational changes in response to hydrolysis, which may explain the authors' findings that ADP and ADP·BeFx-bound subunits don't show major conformational differences.
+
+3) The reviewers have expressed concerns regarding the atomic model refinement. Only statistics for chains A-E are listed in Table 1, but the deposited models contain all 6 subunits in addition to the substrate. The validation report from the PDB for the full deposition reveals statistics that are much worse than those reported in Table 1, and the selective inclusion of only chain A-E is rather misleading.

@@ -1,0 +1,17 @@
+# Demographic history mediates the effect of stratification on polygenic scores
+
+## Authors
+
+- Arslan A Zaidi<sup>1</sup> ([ORCID: 0000-0002-2155-8367](https://orcid.org/0000-0002-2155-8367)) †
+- Iain Mathieson<sup>2</sup> †
+
+### Affiliations
+
+1. Genetics University of Pennsylvania Philadelphia United States
+2. Department of Genetics University of Pennsylvania Philadelphia United States
+
+† Corresponding author
+
+## Abstract
+
+Population stratification continues to bias the results of genome-wide association studies (GWAS). When these results are used to construct polygenic scores, even subtle biases can cumulatively lead to large errors. To study the effect of residual stratification, we simulated GWAS under realistic models of demographic history. We show that when population structure is recent, it cannot be corrected using principal components of common variants because they are uninformative about recent history. Consequently, polygenic scores are biased in that they recapitulate environmental structure. Principal components calculated from rare variants or identity-by-descent segments can correct this stratification for some types of environmental effects. While family-based studies are immune to stratification, the hybrid approach of ascertaining variants in GWAS but re-estimating effect sizes in siblings reduces but does not eliminate stratification. We show that the effect of population stratification depends not only on allele frequencies and environmental structure but also on demographic history.

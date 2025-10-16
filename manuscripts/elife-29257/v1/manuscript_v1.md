@@ -1,0 +1,16 @@
+# Multiple conserved cell adhesion protein interactions mediate neural wiring of a sensory circuit in C. elegans
+
+## Authors
+
+- Byunghyuk Kim<sup>1</sup> ([ORCID: 0000-0002-7967-7406](https://orcid.org/0000-0002-7967-7406)) †
+- Scott W Emmons<sup>1</sup> †
+
+### Affiliations
+
+1. Department of Genetics Albert Einstein College of Medicine Bronx United States
+
+† Corresponding author
+
+## Abstract
+
+Nervous system function relies on precise synaptic connections. A number of widely-conserved cell adhesion proteins are implicated in cell recognition between synaptic partners, but how these proteins act as a group to specify a complex neural network is poorly understood. Taking advantage of known connectivity in C. elegans , we identified and studied cell adhesion genes expressed in three interacting neurons in the mating circuits of the adult male. Two interacting pairs of cell surface proteins independently promote fasciculation between sensory neuron HOA and its postsynaptic target interneuron AVG: BAM-2/neurexin-related in HOA binds to CASY-1/calsyntenin in AVG; SAX-7/L1CAM in sensory neuron PHC binds to RIG-6/contactin in AVG. A third, basal pathway results in considerable HOA-AVG fasciculation and synapse formation in the absence of the other two. The features of this multiplexed mechanism help to explain how complex connectivity is encoded and robustly established during nervous system development.

@@ -1,0 +1,19 @@
+# The metal transporter ZIP13 supplies iron into the secretory pathway in Drosophila melanogaster
+
+## Authors
+
+- Guiran Xiao
+- Zhihui Wan
+- Qiangwang Fan
+- Xiaona Tang
+- Bing Zhou †
+
+### Affiliations
+
+1. State Key Laboratory of Biomembrane and Membrane Biotechnology, School of Life Sciences Tsinghua University Beijing China zhoubing@mail.tsinghua.edu.cn
+
+† Corresponding author
+
+## Abstract
+
+The intracellular iron transfer process is not well understood and the identity of the iron transporter responsible for iron delivery to the secretory compartments remains elusive. Here we show Drosophila ZIP13 (Slc39a13), a presumed zinc importer, fulfills the iron effluxing role. Interfering with dZIP13 expression causes iron-rescuable iron absorption defect, simultaneous iron increase in the cytosol and decrease in the secretory compartments, failure of ferritin iron loading, and abnormal collagen secretion. dZIP13 expression in E. coli confers upon the host iron-dependent growth and iron resistance. Importantly, time-coursed transport assays using an iron isotope indicated a potent iron exporting activity of dZIP13. The identification of dZIP13 as an iron transporter suggests that the spondylocheiro dysplastic form of Ehlers-Danlos syndrome, in which hZIP13 is defective, is likely due to a failure of iron delivery to the secretory compartments. Our results also broaden our knowledge of the scope of defects from iron dyshomeostasis.

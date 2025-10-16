@@ -1,0 +1,20 @@
+# Bridged filaments of histone-like nucleoid structuring protein pause RNA polymerase and aid termination in bacteria
+
+## Authors
+
+- Matthew V Kotlajich
+- Daniel R Hron
+- Beth A Boudreau
+- Zhiqiang Sun
+- Yuri Lyubchenko
+- Robert Landick †
+
+### Affiliations
+
+1. Department of Biochemistry University of Wisconsin-Madison Madison United States landick@biochem.wisc.edu
+
+† Corresponding author
+
+## Abstract
+
+Bacterial H-NS forms nucleoprotein filaments that spread on DNA and bridge distant DNA sites. H-NS filaments co-localize with sites of Rho-dependent termination in Escherichia coli, but their direct effects on transcriptional pausing and termination are untested. Here we report that bridged H-NS filaments strongly increase pausing by E. coli RNA polymerase at a subset of pause sites with high potential for backtracking. Bridged but not linear H-NS filaments promoted Rho-dependent termination by increasing pause dwell times and the kinetic window for Rho action. By observing single H-NS filaments and elongating RNA polymerase molecules using atomic force microscopy, we established that bridged filaments surround paused complexes. Our results favor a model in which H-NS-constrained changes in DNA supercoiling driven by transcription promote pausing at backtracking-susceptible sites. Our findings provide a mechanistic rationale for H-NS stimulation of Rho-dependent termination in horizontally transferred genes and during pervasive antisense and noncoding transcription in bacteria.

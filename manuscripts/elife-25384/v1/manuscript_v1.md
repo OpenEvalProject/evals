@@ -1,0 +1,17 @@
+# MeCP2 regulates Tet1-catalyzed demethylation, CTCF binding, and learning-dependent alternative splicing of the BDNF gene in Turtle
+
+## Authors
+
+- Zhaoqing Zheng<sup>1</sup>
+- Ganesh Ambigapathy<sup>1</sup> ([ORCID: 0000-0002-4491-8513](https://orcid.org/0000-0002-4491-8513))
+- Joyce Keifer<sup>1</sup> ([ORCID: 0000-0002-5900-0414](https://orcid.org/0000-0002-5900-0414)) †
+
+### Affiliations
+
+1. Neuroscience Group, Basic Biomedical Sciences University of South Dakota Vermillion United States
+
+† Corresponding author
+
+## Abstract
+
+MECP2 mutations underlying Rett syndrome cause widespread misregulation of gene expression. Functions for MeCP2 other than transcriptional are not well understood. In an ex vivo brain preparation from the pond turtle Trachemys scripta elegans , an intraexonic splicing event in the brain-derived neurotrophic factor ( BDNF ) gene generates a truncated mRNA transcript in naïve brain that is suppressed upon classical conditioning. MeCP2 and its partners, splicing factor Y-box binding protein 1 (YB-1) and methylcytosine dioxygenase 1 (Tet1), bind to BDNF chromatin in naïve but dissociate during conditioning; the dissociation correlating with decreased DNA methylation. Surprisingly, conditioning results in new occupancy of BDNF chromatin by DNA insulator protein CCCTC-binding factor (CTCF), which is associated with suppression of splicing in conditioning. Knockdown of MeCP2 shows it is instrumental for splicing and inhibits Tet1 and CTCF binding thereby negatively impacting DNA methylation and conditioning-dependent splicing regulation. Thus, mutations in MECP2 can have secondary effects on DNA methylation and alternative splicing.

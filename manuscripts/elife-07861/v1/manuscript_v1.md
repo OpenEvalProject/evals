@@ -1,0 +1,20 @@
+# Phytotoxin production in Aspergillus terreus is regulated by independent environmental signals
+
+## Authors
+
+- Markus Gressler
+- Florian Meyer
+- Daniel Heine
+- Peter Hortschansky
+- Christian Hertweck
+- Matthias Brock †
+
+### Affiliations
+
+1. Microbial Biochemistry and Physiology, Leibniz Institute for Natural Product Research and Infection Biology Hans Knoell Institute Jena Germany matthias.brock@nottingham.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Secondary metabolites have a great potential as pharmaceuticals, but there are only few examples where regulation of gene cluster expression has been correlated with ecological and physiological relevance for the producer. Here, signals, mediators and biological effects of terrein production were studied in the fungus Aspergillus terreus to elucidate the contribution of terrein to ecological competition. Terrein causes fruit surface lesions and inhibits plant seed germination. Additionally, terrein is moderately antifungal and reduces ferric iron, thereby supporting growth of A. terreus under iron starvation. In accordance, the lack of nitrogen or iron or elevated methionine levels induced terrein production and was dependent on either the nitrogen response regulators AreA and AtfA or the iron response regulator HapX. Independent signal transduction allows complex sensing of the environment and, combined with its broad spectrum of biological activities, terrein provides a prominent example for adapted secondary metabolite production in response to environmental competition.

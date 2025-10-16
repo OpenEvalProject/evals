@@ -1,0 +1,19 @@
+# Annexin A6 mediates calcium-dependent exosome secretion during plasma membrane repair
+
+## Authors
+
+- Justin Krish Williams<sup>1</sup>
+- Jordan Matthew Ngo<sup>1</sup>
+- Isabelle Madeline Lehman<sup>1</sup>
+- Randy Schekman<sup>2</sup> ([ORCID: 0000-0001-8615-6409](https://orcid.org/0000-0001-8615-6409)) †
+
+### Affiliations
+
+1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States
+2. Department of Molecular and Cell Biology Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States
+
+† Corresponding author
+
+## Abstract
+
+Exosomes are an extracellular vesicle (EV) subtype that is secreted upon fusion of multivesicular bodies (MVBs) with the plasma membrane. Exosomes may participate in intercellular communication and have utility as disease biomarkers; however, little is known regarding the physiological stimuli that induce their secretion. Ca 2+ influx promotes exosome secretion, raising the possibility that exosomes are secreted during the Ca 2+ -dependent plasma membrane repair of tissues damaged by mechanical stress in vivo . To determine whether exosomes are secreted upon plasma membrane damage, we developed sensitive assays to measure exosome secretion in intact and permeabilized cells. Our results suggest that exosome secretion is coupled to Ca 2+ -dependent plasma membrane repair. We find that annexin A6 (ANXA6), a well-known plasma membrane repair protein, is recruited to MVBs in the presence of Ca 2+ and required for Ca 2+ -dependent exosome secretion, both in intact and in permeabilized cells. ANXA6 depletion stalls MVBs at the cell periphery, and ANXA6 truncations localize to different membranes, suggesting that ANXA6 may serve to tether MVBs to the plasma membrane. We find that cells secrete exosomes and other EVs upon plasma membrane damage and propose that repair-induced secretion may contribute to the pool of EVs present within biological fluids.

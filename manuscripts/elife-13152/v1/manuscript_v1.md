@@ -1,0 +1,28 @@
+# A bacteriophage endolysin that eliminates intracellular streptococci
+
+## Authors
+
+- Yang Shen
+- Marilia Barros
+- Tarek Vennemann
+- D Travis Gallagher
+- Yizhou Yin
+- Sara B Linden
+- Ryan D Heselpoth
+- Dennis J Spencer
+- David M Donovan
+- John Moult
+- Vincent A Fischetti
+- Frank Heinrich
+- Mathias Lösche
+- Daniel C Nelson †
+
+### Affiliations
+
+1. Institute for Bioscience and Biotechnology Research University of Maryland, College Park Rockville United States nelsond@umd.edu
+
+† Corresponding author
+
+## Abstract
+
+PlyC, a bacteriophage-encoded endolysin, lyses Streptococcus pyogenes ( Spy ) on contact. Here, we demonstrate that PlyC is a potent agent for controlling intracellular Spy that often underlies refractory infections. We show that the PlyC holoenzyme, mediated by its PlyCB subunit, crosses epithelial cell membranes and clears intracellular Spy in a dose-dependent manner. Quantitative studies using model membranes establish that PlyCB interacts strongly with phosphatidylserine (PS) whereas its interaction with other lipids is weak, suggesting specificity for PS as its cellular receptor. Neutron reflection further substantiates that PlyC penetrates bilayers above a PS threshold concentration. Crystallography and docking studies identify key residues that mediate PlyCB-PS interactions, which are validated by site-directed mutagenesis. This is the first report that a native endolysin can translocate epithelial membranes, thus substantiating the potential of PlyC as an antimicrobial for Spy in the extra- and intracellular milieu and as a scaffold for engineering other functionalities.

@@ -1,0 +1,25 @@
+# Innate immune signaling in trophoblast and decidua organoids defines differential antiviral defenses at the maternal-fetal interface
+
+## Authors
+
+- Liheng Yang<sup>1</sup> ([ORCID: 0000-0001-6842-086X](https://orcid.org/0000-0001-6842-086X))
+- Eleanor C Semmes<sup>1</sup>
+- Cristian Ovies<sup>1</sup>
+- Christina Megli<sup>2</sup>
+- Sallie Permar<sup>3</sup>
+- Jennifer B Gilner<sup>4</sup>
+- Carolyn B Coyne<sup>5</sup> ([ORCID: 0000-0002-1884-6309](https://orcid.org/0000-0002-1884-6309)) †
+
+### Affiliations
+
+1. Department of Molecular Genetics and Microbiology Duke University Durham United States
+2. Department of Obstetrics, Gynecology and Reproductive Sciences University of Pittsburgh Pittsburgh United States
+3. Department of Pediatrics Cornell University Ithaca United States
+4. Department of Obstetrics and Gynecology Duke University Durham United States
+5. Department of Molecular Genetics and Microbiology Duke University Durham United States
+
+† Corresponding author
+
+## Abstract
+
+Infections at the maternal-fetal interface can directly harm the fetus and induce complications that adversely impact pregnancy outcomes. Innate immune signaling by both fetal-derived placental trophoblasts and the maternal decidua must provide antimicrobial defenses at this critical interface without compromising its integrity. Here, we developed matched trophoblast and decidua organoids from human placentas to define the relative contributions of these cells to antiviral defenses at the maternal-fetal interface. We demonstrate that trophoblast and decidua organoids basally secrete distinct immunomodulatory factors, including the constitutive release of the antiviral type III interferon IFN-λ2 from trophoblast organoids, and differentially respond to viral infections through the induction of organoid-specific factors. Lastly, we define the differential susceptibility and innate immune signaling of trophoblast and decidua organoids to human cytomegalovirus (HCMV) and develop a co-culture model of trophoblast and decidua organoids which showed that trophoblast-derived factors protect decidual cells from HCMV infection. Our findings establish matched trophoblast and decidua organoids as ex vivo models to study vertically transmitted infections and highlight differences in innate immune signaling by fetal-derived trophoblasts and the maternal decidua.

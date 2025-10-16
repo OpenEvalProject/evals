@@ -1,0 +1,24 @@
+# A plasma membrane-localized polycystin-1/polycystin-2 complex in endothelial cells elicits vasodilation
+
+## Authors
+
+- Charles E MacKay<sup>1</sup> ([ORCID: 0000-0002-2875-0677](https://orcid.org/0000-0002-2875-0677))
+- Miranda Floen<sup>1</sup>
+- M Dennis Leo<sup>1</sup>
+- Raquibul Hasan<sup>1</sup>
+- Tessa A C Garrud<sup>1</sup>
+- Carlos Fernández-Peña<sup>2</sup>
+- Purnima Singh<sup>1</sup>
+- Kafait U Malik<sup>1</sup>
+- Jonathan H Jaggar<sup>1</sup> ([ORCID: 0000-0003-1505-3335](https://orcid.org/0000-0003-1505-3335)) †
+
+### Affiliations
+
+1. Department of Physiology University of Tennessee Health Science Center Memphis United States
+2. University Miguel Hernandez-CSIC Alicante Spain
+
+† Corresponding author
+
+## Abstract
+
+Polycystin-1 (PC-1, PKD1), a receptor-like protein expressed by the Pkd1 gene, is present in a wide variety of cell types, but its cellular location, signaling mechanisms and physiological functions are poorly understood. Here, by studying tamoxifen-inducible, endothelial cell (EC)-specific Pkd1 knockout ( Pkd1 ecKO) mice, we show that flow activates PC-1-mediated, Ca 2+ -dependent cation currents in ECs. EC-specific PC-1 knockout attenuates flow-mediated arterial hyperpolarization and vasodilation. PC-1-dependent vasodilation occurs over the entire functional shear stress range and via the activation of endothelial nitric oxide synthase (eNOS) and intermediate (IK)- and small (SK)-conductance Ca 2+ -activated K + channels. EC-specific PC-1 knockout increases systemic blood pressure without altering kidney anatomy. PC-1 coimmunoprecipitates with polycystin-2 (PC-2, PKD2), a TRP polycystin channel, and clusters of both proteins locate in nanoscale proximity in the EC plasma membrane. Knockout of either PC-1 or PC-2 ( Pkd2 ecKO mice) abolishes surface clusters of both PC-1 and PC-2 in ECs. Single knockout of PC-1 or PC-2 or double knockout of PC-1 and PC-2 ( Pkd1 / Pkd2 ecKO mice) similarly attenuates flow-mediated vasodilation. Flow stimulates non-selective cation currents in ECs that are similarly inhibited by either PC-1 or PC-2 knockout or by interference peptides corresponding to the C-terminus coiled-coil domains present in PC-1 or PC-2. In summary, we show that PC-1 regulates arterial contractility through the formation of an interdependent signaling complex with PC-2 in endothelial cells. Flow stimulates PC-1/PC-2 clusters in the EC plasma membrane, leading to eNOS, IK channel and SK channel activation, vasodilation and a reduction in blood pressure.

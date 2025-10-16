@@ -1,0 +1,19 @@
+# A genuine layer 4 in motor cortex with prototypical synaptic circuit connectivity
+
+## Authors
+
+- Naoki Yamawaki
+- Katharine Borges
+- Benjamin A Suter
+- Kenneth D Harris
+- Gordon M G Shepherd †
+
+### Affiliations
+
+1. Department of Physiology, Feinberg School of Medicine Northwestern University Chicago United States g-shepherd@northwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Motor cortex (M1) is classically considered an agranular area, lacking a distinct layer 4 (L4). Here, we tested the idea that M1, despite lacking a cytoarchitecturally visible L4, nevertheless possesses its equivalent in the form of excitatory neurons with input-output circuits like those of L4 neurons in sensory areas. Consistent with this idea, we found that neurons located in a thin laminar zone at the L3/5A border in the forelimb area of mouse M1 have multiple L4-like synaptic connections: excitatory input from thalamus, largely unidirectional excitatory outputs to L2/3 pyramidal neurons, and relatively weak long-range corticocortical inputs and outputs. M1-L4 neurons were electrophysiologically diverse but morphologically uniform, with pyramidal-type dendritic arbors and locally ramifying axons including branches extending into L2/3. Our findings therefore identify pyramidal neurons in M1 with the expected prototypical circuit properties of excitatory L4 neurons, and question the traditional assumption that motor cortex lacks this layer.

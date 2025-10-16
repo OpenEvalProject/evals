@@ -1,0 +1,64 @@
+# Peer review - Round 1
+
+Editors:
+- Timothy Verstynen, Carnegie Mellon University United States
+
+Reviewers:
+- Timothy Verstynen, Carnegie Mellon University United States
+- Noam Sobel, Weizmann Institute of Science Israel
+
+## Review text
+
+DOI: [10.7554/eLife.49053.048](https://doi.org/10.7554/eLife.49053.048)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Olfactory contributions to sleep-dependent food intake in humans" for consideration by eLife. Your article has been reviewed by three peer reviewers, including, including X as the Reviewing Editor and Reviewer #1 as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Christian Büchel as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Noam Sobel (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+This study examines how a manipulation of sleep duration impacts both food choice and circulating endocannabinoid system (ECS) compounds, as well as how this association is mediated by altered connectivity of neural olfactory regions. Consistent with previous work they found that sleep restriction increases circulating levels of an ECS compound (2-OG) and increases food intake (measured as energy density in food selected from a buffet). Using an MVPA approach, the authors identified regions that were selective in their representations of food vs. non-food smells, with the right piriform cortex exhibiting a group difference in representational distances of food vs. non-food odors. Using this as a seed region, the authors found that individual differences in odor vs. clean air task connectivity between the piriform cortex and insula mediated the individual differences observed in ECS compounds and food choice.
+
+All three reviewers felt that this is potentially a very important study that addresses a very important question, with immediate interest for both scientists and the general public alike. Moreover, it is clearly the product of "high level" rigorous science. More specifically, the authors tackle their question from several directions at once. This is on one side a clear advantage, yet on the other, when you do a lot of different work, there are lots of potential complications that need to be addressed before the manuscript can be accepted.
+
+Essential revisions:
+
+1) Imaging analysis.
+
+Reviewer 1 pointed out that the critical finding that sets this work apart from prior studies is the observation that task-related piriform-insula connectivity differences statistically mediate a relationship between 2-OG and food choice. Yet a lot relies on the veracity of the neuroimaging analysis. Both estimates of task effects (e.g., GLM) and connectivity measures in the BOLD response are highly sensitive to motion and physiological artifacts that can sometimes lead to spurious observations. This brings up several concerns.
+
+First, reviewer 1 is concerned that the food > non-food difference in piriform representations may be due to differences in head motion across groups. It seems possible that sleep manipulations can lead to differences in head motion in the scanner, that in turn would alter the reliability of the representational distance estimates that the SVN decoder picks up on (leading to a potential spurious group difference). The authors should both report whether there were differences in framewise displacement measures across groups and include a displacement measure as a nuisance variable in the estimation of the group differences.
+
+Second, reviewer 1 pointed out that while there is no statistical difference in sniff amplitude (Figure 1—figure supplement 3E), there does appear to be a mean difference such that the sleep restricted group is taking lower amplitude sniffs. Even if this isn't significant at the behavioral level, it might lead to differences in the expression of respiratory artifacts in the BOLD response. In addition, there may be differences in respiration variability, both during the odor presentation and in-between, which is also known to contribute to artifacts in the BOLD signal (see Birn et al., (2008). Therefore, the authors should include models of respiration artifacts, particularly in the connectivity estimates, in order to rule out possible spurious associations due to group differences in respiration. This concern was echoed by reviewer 3, who pointed out that, they were not convinced that there were not, for instance, motoric differences in the sniff that contribute to the effects. Although Figure 1—figure supplement 3E and F show a non-significant differences, when one cuts out C and D and overlay them up against the light, it sure appears that the odors for NDS are equal to the clean air in DS. In other words, it is not clear where the amplitude and latency measures come from, but they don't seem to capture the differences you can see if you overlap the curves in C and D. One other concern in this regard is that if the piriform-insula connectivity measure is for odors (collapsed) v. clean air, then this sniff response comparison should be for odors (collapsed) v. clean air. (One note on food odors v. non-food odors: it's confusing to me that celery seed is considered a non-food odor as this is a not-uncommon ingredient in food dishes.)
+
+Finally, all three reviewers raised concerns about the use of different contrasts used in the analyses. Reviewer 1 points out that the search for group differences in representational distances in the piriform uses the food > non-food contrast, but then the connectivity results between piriform and insula are using the odor > clean air contrast. It is likely that this is because the food > non-food contrast did not produce a significant result. This should still be reported and clarified in the text.
+
+2) Pleasantness confounds.
+
+Both reviewers 1 and 2 had concerns regarding the role of subjective pleasantness preferences had on the task. Reviewer 2 pointed out that a major analysis in this manuscript is the searchlight-based multi-voxel pattern analysis contrasting the response to "food" and "non-food" odors. As clearly indicated in Figure 1—figure supplement 3, "food" odors were much (as in p = 2.5x10-6) more pleasant than "non-food" odors. Thus, why is this to be considered a contrast of "food vs. non-food" and not a contrast of "pleasant vs. less-pleasant". The impact of sleep deprivation on hedonics is also interesting, but not the aim of this manuscript. This potential confound is so blatant, that the reader must be missing something. Thus, what is missing? Why is the sharp difference in pleasantness between the edible and non-edible odorants not a concern? The authors can do one of two things: Either better explain how this relates directly to food vs. non-food odors, or run analyses to address this. For example, either regress out pleasantness differences, or select subsets of data devoid of this potential confound.
+
+Related to this, reviewer 2 pointed out that the selection of non-food odorants was slightly odd. After all, celery seed is not that far from a food. Why didn't the authors just use perfume? It would have addressed their pleasantness difference, and it's clearly not edible. Odorant selection, however, is behind us. Thus, what the authors should at least add is the actual edibility ratings of the odorants. This should be provided in a supplementary table with the associated statistics of the differences in edibility.
+
+3) Validity of inferences.
+
+Reviewers 2 and 3 had concerns about the certainty of the conclusions being made. Reviewer 2 pointed out that the authors conclude that "sleep deprivation induces changes in food intake through the modulation of an olfactory pathway that is related to the endocannabinoid system". This very strong statement implies causation, that it is not 100% certain the authors have in hand. There is a relationship, but the authors to make such a strong causal claim, wouldn't they need to somehow find a way to independently manipulate the olfactory pathway, and show that it is indeed responsible for the effect? Would sleep deprivation fail to impact eating behaviour of individuals with anosmia? This is a major concern, but it is of course trivial to address: The authors should either slightly tone down the claims on causation (the manuscript is strong enough as it is) or make a better substantiated claim on causation.
+
+Reviewer 3 pointed out that the conclusions of the paper emphasize a finding that olfaction contributes to sleep-dependent food intake in humans (see Title). This is an overstatement of the results. First, unlike other papers, the present study did not find a difference in food intake (caloric intake) based on sleep deprivation. The authors did find a difference in food preference (food decisions). Second, the measure of olfaction in the result is not olfaction per se but rather piriform-insula connectivity when sleep deprived v. not sleep deprived. This should be made more clear and up front throughout the manuscript.
+
+4) 2-OG vs. food choice association.
+
+All three reviewers had a concern about the association between 2-OG and food choice. An inspection of Figure 2B suggests that the association between ECS system and food choice may be driven by 5 participants. Reviewers 2 and 3 pointed out that if these outliers are removed, the association appears to become negative. The authors seem to be aware of this since they used a robust regression analysis; however, robust regression approaches simply account for differences in variance of each observation in the overall estimate. Reviewer 1 recommend a non-parametric statistic, such as a bootstrap or permutation test. (Note: This is listed as a Major concern because this is one of the critical observations for the authors' primary conclusions).
+
+5) Compliance.
+
+Reviewer 3 raised concerns about subject compliance. There is a lot of trust in participants. Trust that they did not consume additional food and drinks, trust they did not take caffeine, and trust in both the participant and actigraph that the sleep restriction instructions were complied with. Given the importance of these, it is surprising that participants were not kept in-lab for the sleep deprivation manipulation. The authors should address this.
+
+6) Sniffing vs. inhalation.
+
+Reviewer 2 raised a concern about the nature of the inhalation measure identified as sniffing. This reviewer points out that authors don't directly measure sniffing; they measure respiration with respiratory belts. However, the path from thoracic and abdominal movements to airflow patterns in the nose is complex, and more critically, it is variable. In fact, even in direction; an expanding abdomen can reflect inhalation and it can reflect exhalation. Moreover, belts don't discriminate between nasal and oral inhalation. What if a participant didn't like a particular odorant, and shifted to oral inhalation every time it was presented? How would the authors know this?
+
+Moreover, as the authors know, sniffing is odorant dependent. Thus, the pleasant food odors may have been greeted with slightly more vigorous sniffs, yet the less pleasant non-food odors with slightly less vigorous sniffs. If this difference was very small, it would not be picked up by the belts. Such a small difference, however, may also be very consistent, and thus meaningful. All this is critical, because the authors may attribute an activation pattern to a difference in odor, where in fact it may reflect a difference in sniffing. Alas, these are indeed often very difficult to untangle, but this still needs to be addressed. This is especially true in light of the simplicity of precisely measuring sniffing at the nose. If the olfactometer uses a mask, then a simple pressure tube off the mask accurately converts sniffing. If no mask is used, then a nasal cannula provides an even better measure of sniffing. As sniffing is very easy to measure, it is not clear why the authors did not do so.
+
+As to the current manuscript, the authors should use more careful terminology. In Figure 1—figure supplement 3, the authors should refer to respiratory amplitude, not sniff amplitude. Reviewer 2 points out that this is a problem with the entire field, but should be reasonably addressed here. In future, reviewer 2 suggests the authors precisely measure sniffing in their studies. It's cheap, easy, and informative.

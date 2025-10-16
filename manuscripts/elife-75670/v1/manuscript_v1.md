@@ -1,0 +1,21 @@
+# T cells discriminate between groups C1 and C2 HLA-C
+
+## Authors
+
+- Malcolm JW Sim<sup>1</sup> ([ORCID: 0000-0003-3407-9661](https://orcid.org/0000-0003-3407-9661)) †
+- Zachary Stotz<sup>1</sup>
+- Jinghua Lu<sup>1</sup>
+- Paul Brennan<sup>2</sup>
+- Eric O Long<sup>2</sup> ([ORCID: 0000-0002-7793-3728](https://orcid.org/0000-0002-7793-3728))
+- Peter D Sun<sup>1</sup> †
+
+### Affiliations
+
+1. Structural Immunology Section National Institute of Allergy and Infectious Diseases Rockville United States
+2. Molecular and Cellular Immunology Section National Institute of Allergy and Infectious Diseases Rockville United States
+
+† Corresponding author
+
+## Abstract
+
+Dimorphic amino acids at positions 77 and 80 delineate HLA-C allotypes into two groups, C1 and C2, which associate with disease through interactions with C1 and C2-specific natural killer cell receptors. How the C1/C2 dimorphism affects T cell recognition is unknown. Using HLA-C allotypes that differ only by the C1/C2-defining residues, we found that KRAS-G12D neoantigen-specific T cell receptors (TCR) discriminated between C1 and C2 presenting the same KRAS-G12D peptides. Structural and functional experiments, and immunopeptidomics analysis revealed that Ser77 in C1 and Asn77 in C2 influence amino acid preference near the peptide C-terminus (pW), including the pW-1 position, in which C1 favors small and C2 prefers large residues. This resulted in weaker TCR affinity for KRAS-G12D-bound C2-HLA-C despite conserved TCR contacts. Thus, the C1/C2 dimorphism on its own impacts peptide presentation and HLA-C restricted T cell responses, with implications in disease, including adoptive T cell therapy targeting KRAS-G12D-induced cancers.

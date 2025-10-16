@@ -1,0 +1,21 @@
+# A gene horizontally transferred from bacteria protects arthropods from host plant cyanide poisoning
+
+## Authors
+
+- Nicky Wybouw
+- Wannes Dermauw
+- Luc Tirry
+- Christian Stevens
+- Miodrag Grbić
+- René Feyereisen
+- Thomas Van Leeuwen †
+
+### Affiliations
+
+1. Institute for Biodiversity and Ecosystem Dynamics University of Amsterdam Amsterdam Netherlands thomas.vanleeuwen@ugent.be
+
+† Corresponding author
+
+## Abstract
+
+Cyanogenic glucosides are among the most widespread defense chemicals of plants. Upon plant tissue disruption, these glucosides are hydrolyzed to a reactive hydroxynitrile that releases toxic hydrogen cyanide (HCN). Yet many mite and lepidopteran species can thrive on plants defended by cyanogenic glucosides. The nature of the enzyme known to detoxify HCN to β-cyanoalanine in arthropods has remained enigmatic. Here we identify this enzyme by transcriptome analysis and functional expression. Phylogenetic analysis showed that the gene is a member of the cysteine synthase family horizontally transferred from bacteria to phytophagous mites and Lepidoptera. The recombinant mite enzyme had both β-cyanoalanine synthase and cysteine synthase activity but enzyme kinetics showed that cyanide detoxification activity was strongly favored. Our results therefore suggest that an ancient horizontal transfer of a gene originally involved in sulfur amino acid biosynthesis in bacteria was co-opted by herbivorous arthropods to detoxify plant produced cyanide.

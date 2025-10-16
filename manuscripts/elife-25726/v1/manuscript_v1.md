@@ -1,0 +1,18 @@
+# Lineage tracing of genome-edited alleles reveals high fidelity axolotl limb regeneration
+
+## Authors
+
+- Grant Parker Flowers<sup>1</sup> ([ORCID: 0000-0001-7436-3531](https://orcid.org/0000-0001-7436-3531)) †
+- Lucas D Sanor<sup>1</sup>
+- Craig M Crews<sup>2</sup> ([ORCID: 0000-0002-8456-2005](https://orcid.org/0000-0002-8456-2005)) †
+
+### Affiliations
+
+1. Department of Molecular, Cellular, and Developmental Biology Yale University New Haven United States
+2. Department of Molecular, Cell and Developmental Biology Yale University New Haven United States
+
+† Corresponding author
+
+## Abstract
+
+Salamanders are unparalleled among tetrapods in their ability to regenerate many structures, including entire limbs, and the study of this ability may provide insights into human regenerative therapies. The complex structure of the limb poses challenges to the investigation of the cellular and molecular basis of its regeneration. Using CRISPR/Cas, we genetically labelled unique cell lineages within the developing axolotl embryo and tracked the frequency of each lineage within amputated and fully regenerated limbs . This allowed us, for the first time, to assess the contributions of multiple low frequency cell lineages to the regenerating limb at once. Our comparisons reveal that regenerated limbs are high fidelity replicas of the originals even after repeated amputations.

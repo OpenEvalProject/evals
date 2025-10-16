@@ -1,0 +1,21 @@
+# Early lock-in of structured and specialised information flows during neural development
+
+## Authors
+
+- David P Shorten<sup>1</sup> ([ORCID: 0000-0003-2412-4705](https://orcid.org/0000-0003-2412-4705)) †
+- Viola Priesemann<sup>2</sup> ([ORCID: 0000-0001-8905-5873](https://orcid.org/0000-0001-8905-5873))
+- Michael Wibral<sup>3</sup>
+- Joseph T Lizier<sup>4</sup> ([ORCID: 0000-0002-9910-8972](https://orcid.org/0000-0002-9910-8972))
+
+### Affiliations
+
+1. Faculty of Engineering University of Sydney Sydney Australia
+2. MPRG Priesemann Max Planck Institute for Dynamics and Self-Organization Göttingen Germany
+3. Campus Institute for Dynamics of Biological Networks Georg August University Göttingen Germany
+4. Faculty of Engineering University of Sydney The University of Sydney Australia
+
+† Corresponding author
+
+## Abstract
+
+The brains of many organisms are capable of complicated distributed computation underpinned by a highly advanced information processing capacity. Although substantial progress has been made towards characterising the information flow component of this capacity in mature brains, there is a distinct lack of work characterising its emergence during neural development. This lack of progress has been largely driven by the lack of effective estimators of information processing operations for the spiking data available for developing neural networks. Here, we leverage recent advances in this estimation task in order to quantify the changes in transfer entropy during development. We do so by studying the changes in the intrinsic dynamics of the spontaneous activity of developing dissociated neural cell cultures.  We find that the quantity of information flowing across these networks undergoes a dramatic increase across development. Moreover, the spatial structure of these flows exhibits a tendency to lock in at the point when they arise, after which there is a substantial temporal correlation in the information flows across recording days. We analyse the flow of information during the crucial periods of population bursts. We find that, during these bursts, nodes tend to undertake specialised computational roles as either transmitters, mediators or receivers of information, with these roles tending to align with their average spike ordering - either early, mid or late in the bursts. Further, we find that the specialised computational roles occupied by nodes during bursts are regularly locked-in when the information flows are established. Finally, we briefly compare these results to information flows in a model network developing according to an STDP learning rule from a state of independent firing to synchronous bursting. The phenomena of large increases in information flow, early lock-in of information flow spatial structure and computational roles based on burst position were also observed in this model, hinting at the broader generality of these phenomena.

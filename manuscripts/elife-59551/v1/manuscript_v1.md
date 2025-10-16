@@ -1,0 +1,18 @@
+# Laminar-specific cortico-cortical loops in mouse visual cortex
+
+## Authors
+
+- Hedi Young<sup>1</sup>
+- Beatriz Belbut<sup>1</sup> ([ORCID: 0000-0003-0341-0585](https://orcid.org/0000-0003-0341-0585))
+- Margarida Baeta<sup>1</sup>
+- Leopoldo Petreanu<sup>1</sup> ([ORCID: 0000-0003-1434-4691](https://orcid.org/0000-0003-1434-4691)) †
+
+### Affiliations
+
+1. Champalimaud Research Champalimaud Center for the Unknown Lisbon Portugal
+
+† Corresponding author
+
+## Abstract
+
+Many theories propose recurrent interactions across the cortical hierarchy, but it is unclear if cortical circuits are selectively wired to implement looped computations. Using subcellular channelrhodopsin-2-assisted circuit mapping in mouse visual cortex, we compared feedforward (FF) or feedback (FB) cortico-cortical synaptic input to cells projecting back to the input source (looped neurons) with cells projecting to a different cortical or subcortical area. FF and FB afferents showed similar cell-type selectivity, making stronger connections with looped neurons than with other projection types in layer (L) 5 and L6, but not in L2/3, resulting in selective modulation of activity in looped neurons. In most cases, stronger connections in looped L5 neurons were located on their apical tufts, but not on their perisomatic dendrites. Our results reveal that cortico-cortical connections are selectively wired to form monosynaptic excitatory loops and support a differential role of supragranular and infragranular neurons in hierarchical recurrent computations.

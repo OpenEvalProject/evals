@@ -1,0 +1,26 @@
+# COPI mediates recycling of an exocytic SNARE by recognition of a ubiquitin sorting signal
+
+## Authors
+
+- Peng Xu<sup>1</sup>
+- Hannah M Hankins<sup>1</sup>
+- Chris MacDonald<sup>2</sup>
+- Samuel J Erlinger<sup>1</sup> ([ORCID: 0000-0001-8347-2617](https://orcid.org/0000-0001-8347-2617))
+- Meredith N Frazier<sup>1</sup>
+- Nicholas S Diab<sup>1</sup>
+- Robert C Piper<sup>2</sup>
+- Lauren P Jackson<sup>1</sup> ([ORCID: 0000-0002-3705-6126](https://orcid.org/0000-0002-3705-6126))
+- Jason A MacGurn<sup>3</sup> ([ORCID: 0000-0001-5063-259X](https://orcid.org/0000-0001-5063-259X))
+- Todd R Graham<sup>1</sup> ([ORCID: 0000-0002-3256-2126](https://orcid.org/0000-0002-3256-2126)) †
+
+### Affiliations
+
+1. Department of Biological Sciences Vanderbilt University Nashville United States
+2. Department of Molecular Physiology and Biophysics University of Iowa Iowa City United States
+3. Department of Cell and Developmental Biology Vanderbilt University Nashville United States
+
+† Corresponding author
+
+## Abstract
+
+The COPI coat forms transport vesicles from the Golgi complex and plays a poorly defined role in endocytic trafficking. Here we show that COPI binds K63-linked polyubiquitin and this interaction is crucial for trafficking of a ubiquitinated yeast SNARE (Snc1). Snc1 is a v-SNARE that drives fusion of exocytic vesicles with the plasma membrane, and then recycles through the endocytic pathway to the Golgi for reuse in exocytosis. Removal of ubiquitin from Snc1, or deletion of a β'-COP subunit propeller domain that binds K63-linked polyubiquitin, disrupts Snc1 recycling causing aberrant accumulation in internal compartments. Moreover, replacement of the β'-COP propeller domain with unrelated ubiquitin-binding domains restores Snc1 recycling. These results indicate that ubiquitination, a modification well known to target membrane proteins to the lysosome or vacuole for degradation, can also function as recycling signal to sort a SNARE into COPI vesicles in a non-degradative pathway.

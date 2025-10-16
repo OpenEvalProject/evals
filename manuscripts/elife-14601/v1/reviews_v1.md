@@ -1,0 +1,26 @@
+# Peer review - Round 1
+
+Reviewers:
+- Philip A Cole, Johns Hopkins University , United States
+
+## Review text
+
+DOI: [10.7554/eLife.14601.021](https://doi.org/10.7554/eLife.14601.021)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your work entitled "The anticancer natural product ophiobolin A induces cytotoxicity by covalent modification of phosphatidylethanolamine" for consideration by eLife. Your article has been favorably evaluated by Michael Marletta (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+This study investigates the basis of ophiobolin A (OPA) cytotoxicity using a genetic screening strategy and followed up with a multi-faceted analysis to reach the surprising conclusion that OPA kills cancer cells by covalently modifying phosphatidylethanolamine (PE). The haploid insertion strategy outlined here is a powerful way to screen for small molecule targets by looking for gene inactivating mutants conferring resistance and it was nicely validated with topoisomerase inhibitors. It was also impressive that the three inactivated genes uncovered in promoting OPA resistance were all part of the PE biosynthetic pathway. Based on the literature and the tendency of OPA to undergo pyrrole formation with primary amines, the authors astutely postulated that PE could be interacting directly with OPA, and this was in fact observed. The authors also found that knockdown of the PE biosynthetic enzymes recapitulated the genetic screen findings about OPA resistance and that PE added exogenously could confer OPA resistance, presumably by titrating OPA out. Overall, this is a fascinating study with a very unusual proposed mechanism of action of a cytotoxic drug. However, it is believed that more compelling evidence is needed to support the conclusion that the PE reaction with OPA is the primary mechanism of action for OPA's cell killing.
+
+Requested revisions:
+
+It is somewhat surprising that these modest changes in the levels of PE (16-24%) in the genetic experiments could be so important for the influencing potency of the compound in light of the model for OPA action. In addition, the dose response curve in Figure 1—figure supplement 4a, shows only a very modest effect on OPA IC50, and this also leads to questions about the mechanism of action of OPA. It raises the concern that there still is one or more Lys containing protein targets that are of great importance for OPA pharmacology as the authors state has been suggested before. Loss of function screens may have difficulty in revealing the major target of antiproliferative small molecules such as OPA, because inactivation of the very target is expected to recapitulate the cellular phenotype of OPA and the mutant cells would not be viable.
+
+A significant concern relates to a paper that they cite by Dasari et al. (2015) that notes that the 6-epi isomer of OPA is 40-fold less potent than the natural OPA across a panel of cell lines. Since the pyrrole OPA adduct would be the same regardless of the starting stereoisomer of OPA (as this 6-stereocenter is lost as it becomes sp2), one would then have to argue that the rate of pyrrole formation between PE and the 6-epimer is 40-fold slower than the reaction with the natural compound. While not impossible, this large difference in reactivity seems unlikely as there would not appear to be complex recognition involved in the two small molecules coming together. Nevertheless, the PE reactivity mechanistic model should be readily tested by getting some of the 6-epimer from Dasari et al., or some other supplier. If the chemical reactivity of the 6-epimer with PE is indeed slowed by ca. 40-fold as the above analysis predicts, this would be very reassuring for the authors' model. This model could also be tested by comparing a series of other analogs from Dasari et al. (or other suppliers) and determining the correlation between cell potency and PE reactivity.
+
+If the PE-OPA adduct is indeed responsible for the cytotoxicy of OPA, one might have expected that the addition of exogenous PE could enhance, rather than reduce, the cytotoxicity of OPA. Perhaps the PE-OPA adduct needs to be embedded in the membrane to be toxic. It would be helpful if the authors could perform preparative quantities of the PE-OPA adduct and then add this adduct exogenously to the cell culture medium to explore its potential to be toxic to cell growth.
+
+It is possible that the PE-OPA adduct has unique fluorescence compared with the PE and OPA as isolated molecules. If so, the authors could check to see if OPA addition induces the corresponding fluorescence change that might be detected by cellular imaging. Alternatively, perhaps the authors could check to see if OPA drives leakiness in the cell membrane by allowing normally cell impenetrant colorimetric dyes to accumulate in cells rapidly after OPA administration.

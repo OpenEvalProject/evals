@@ -1,0 +1,17 @@
+# Concentration dependent chromatin states induced by the bicoid morphogen gradient
+
+## Authors
+
+- Colleen E Hannon<sup>1</sup> ([ORCID: 0000-0002-4402-8107](https://orcid.org/0000-0002-4402-8107))
+- Shelby A Blythe<sup>1</sup>
+- Eric F Wieschaus<sup>1</sup> ([ORCID: 0000-0002-0727-3349](https://orcid.org/0000-0002-0727-3349)) †
+
+### Affiliations
+
+1. Department of Molecular Biology Princeton University Princeton United States
+
+† Corresponding author
+
+## Abstract
+
+In Drosophila , graded expression of the maternal transcription factor Bicoid (Bcd) provides positional information to activate target genes at different positions along the anterior-posterior axis. We have measured the genome-wide binding profile of Bcd using ChIP-seq in embryos expressing single, uniform levels of Bcd protein, and grouped Bcd-bound targets into four classes based on occupancy at different concentrations. By measuring the biochemical affinity of target enhancers in these classes in vitro and genome-wide chromatin accessibility by ATAC-seq, we found that the occupancy of target sequences by Bcd is not primarily determined by Bcd binding sites, but by chromatin context. Bcd drives an open chromatin state at a subset of its targets. Our data support a model where Bcd influences chromatin structure to gain access to concentration-sensitive targets at high concentrations, while concentration-insensitive targets are found in more accessible chromatin and are bound at low concentrations. This may be a common property of developmental transcription factors that must gain early access to their target enhancers while the chromatin state of the genome is being remodeled during large-scale transitions in the gene regulatory landscape.

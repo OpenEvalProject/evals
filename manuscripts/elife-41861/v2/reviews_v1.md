@@ -1,0 +1,95 @@
+# Peer review - Round 1
+
+Editors:
+- Christian Büchel, University Medical Center Hamburg-Eppendorf Germany
+
+Reviewers:
+- Christian Büchel, University Medical Center Hamburg-Eppendorf Germany
+
+## Review text
+
+DOI: [10.7554/eLife.41861.014](https://doi.org/10.7554/eLife.41861.014)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for sending your article entitled "Neural dynamics of visual ambiguity resolution by perceptual prior" for peer review at eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor.
+
+The reviewers have indicated that the topic of the paper, namely identifying the temporal dynamics underlying the Mooney recognition effect and controlling for non-content-specific effects such as increased attention, salience or decreased task difficulty is very valuable and novel. However, the reviewers remain cautious about whether the data presented conclusively allows to address these claims.
+
+1) The paper claims that the results are image-specific, but Figure 4D shows condition-specific results. In particular, Figure 4D only shows that recognition decreases between stimulus pattern dissimilarity. But this effect can be driven by many factors, e.g. decreased noise.
+
+2) Figure 4E shows a significantly positive correlation between the representational similarity structure for recognized Mooney images and unambiguous images, but not that this effect is greater for post vs. pre Mooney images. Therefore, this effect cannot be conclusively related to Mooney image disambiguation.
+
+Reviewer #1:
+
+This paper is on perceptual processing with respect to prior knowledge. They use Mooney images, (binary images without recognizable content), which after one has seen the underlying grey scale image, are easily identified. This is a very powerful perceptual effect and allows the investigation of how prior information affects recognition. The paper uses MEG (and fMRI) in combination with a series of clever time resolved decoding approaches to show "time-courses of dissociation".
+
+In addition they used representational similarity analysis (RSA) to show the time-course of similarities between pre and post (same physical stimulus) and post and gray (same percept that is recognition). Not too surprisingly, they show that these time resolved similarities differ, with the stimulus based similarities peaking early and the recognition based similarities peaking later.
+
+Finally, they employ a powerful model based RSA approach where they investigate the commonalities of RSA based on MEG (as before), fMRI and a theoretically predicted RSA (i.e. a model). The model can incorporate recognition (high similarity between post and gray) etc. Importantly, by looking for commonalties across MEG and fMRI, they can, based on pattern similarity, fuse fMRI and MEG. Although clever and informative a similar approach has already been published (visual object recognition) (Cichy et al., 2014).
+
+Although the presented data are very interesting and show what can be done with a clever multivariate methods, including model-based RSA analyses, the promise of the title "Neural dynamics of visual ambiguity resolution by perceptual prior" is not fulfilled by this paper. Potentially, this data could give us some insights on how the integration of prior and incoming visual information works. This is only vaguely addressed, e.g. by data shown in Figure 3C.
+
+In addition, one could argue that the novelty of this paper is only incremental: In a previous paper by Cichy et al., 2014, and a subsequent paper by Hebart describing a similar approach using model based RSA (Hebart et al., 2018) similar results were obtained. They studied object recognition, which is also based on prior information (volunteers know the objects and have seen them before in a different manner), although there is no control condition (i.e. identical visual stimulus, but different percept) as in a Mooney faces experiment.
+
+The current paper should either provide more information about the neural dynamics of visual ambiguity resolution or at least explain how their approach adds novel insights over and above the papers mentioned above.
+
+Reviewer #2:
+
+This study uses fMRI and MEG and an accomplished psychophysical paradigm to investigate how experience-driven image recognition affects neural responses – across time and space. To do so, it uses several multivariate analyses as well as multivariate MEG-fMRI data fusion.
+
+The key findings are that (i) that experience-driven recognition can be decoded from 300ms onwards based on MEG response patterns, (ii) that this information (see i) persists in a stationary manner over time, (iii) that recognition increases MEG pattern distances between Mooney images, (iv) that the representational geometry (MEG-based) of recognized Mooney images correlates significantly with that for the corresponding original gray-scale images and (v) that shared variance between MEG and fMRI RDMs uniquely accounted for by a recognition model is widespread in the brain (in all ROIs) from 500ms onwards.
+
+The methodology is without doubt advanced and the general question that this study is supposed to address is of wide general interest. However, my first main concern is that the authors do not introduce a specific hypothesis nor outline exactly how this research is going bring us closer to understanding how experience guides recognition. As a result, the study, although being informative, comes across as "fishing expedition".
+
+Another major concern is that the authors do not report statistically solid univariate findings, which makes it impossible to relate the findings reported here to previous imaging studies employing a similar paradigm. The authors do present SVM weight-maps. However, these maps are anecdotal at best as they are not statistically evaluated in any way. Reporting univariate fMRI data would also be extremely valuable, as it would for example enable readers to assess how the MEG-fMRI modeling results relate to fMRI response amplitude (and SNR).
+
+Furthermore, the authors make a claim that is not fully supported by their findings: they state that "This analysis showed that image-specific information for post-disambiguation Mooney images rises higher than their pre-disambiguation counterparts starting from ~500 ms" based on finding iii. This is misleading, because greater between-image pattern distances do not directly imply greater stimulus information. This finding could, for example, also be explained by noisier responses for recognized Mooney images.
+
+Another issue is that a crucial test is missing related to finding iv (Figure 4E). This finding implies that recognizing Mooney images causes representational geometry (MEG based) to become more similar to that for the corresponding set of gray-scale images. However, the authors need to demonstrate that this increase in RDM-RDM similarity is significantly greater for the Post RDM as compared to the Pre RDM.
+
+Finally, I don't see why finding ii is of interest (Figure 3D). To me it is unclear what sets this case of (MEG) pattern information persistence apart from previous reports if this phenomenon (e.g. Carlson et al., 2013), and how it functionally relates to experience-driven recognition.
+
+Given these issues, I do not recommend publication of this manuscript in its current state.
+
+Reviewer #3:
+
+Summary:
+
+Flounders and colleagues investigated how the visual and cognitive processing during recognition of images unfolds over time. To pinpoint the effects of the prior, including knowledge of the image content and expectation, they presented participants with two-tone "Mooney" images that are initially difficult to recognize but after disambiguation allow recognition of the stimulus (take the famous picture of the Dalmatian dog as an example). Using MEG decoding, the authors show striking differences between Mooney images before recognition ("pre") vs. after recognition ("post") emerging after ~300 ms. Using representational similarity analysis (RSA) to compare between different experimental phases, they show that, as expected, the similarity of stimulus-related patterns of activity increases rapidly after stimulus onset (comparing pre and post-recognition Mooney images), while recognition-related patterns emerge much later ~800 ms (comparing real images with post-recognition). By relating their results to a separate 7T fMRI dataset with model-based RSA, for several regions of interest (ROIs) the authors reveal time courses of information specific to different model components, related to stimulus-based, recognition-based and attention-based processes. They find that stimulus-based processes exhibit an early and a late peak, recognition-based processes dominate throughout time and region after ~500 ms, and attention-based processes are very specifically located to frontal and parietal ROIs at specific time points. They interpret these results in light of the effects of prior experience on object recognition.
+
+Assessment:
+
+The authors address a timely and interesting question of how prior experience affects visual and cognitive processing in the human brain. The manuscript uses state-of-the-art methodology in MEG decoding, RSA and MEG-fMRI fusion, and all statistical analyses appear to be sound. I specifically liked the combination of MEG and fMRI data for spatiotemporally-resolved analysis, and the related results are fascinating. In addition, I very much liked the addition of a control condition to make sure the results are not merely due to stimulus repetition (post-recognition images have been seen more frequently than pre-recognition stimuli) or simple stimulus-association effects.
+
+At the same time, I believe the authors make some claims not supported by the data. They highlight that part of the novelty of their work has to do with the fact that previous work on this topic did not reveal image-specific results and, indeed, the authors do report image-specific findings in Figure 4E. However, in contrast to the authors' claim, the other effects using RSA are likely not stimulus-specific. For example, the results in Figure 4D are averaged across stimuli, leading to condition-specific effects. To achieve stimulus-specific effects, the authors would have to either identify the similarity for the same stimulus to itself or identify the difference between same stimulus and different stimulus within different periods of the experiment. They could do this by carrying out a split-half analysis and calculating the difference (within – between). This would be equivalent to a stimulus-specific decoding analysis. I think this kind of analysis would be useful to support their results. Alternatively, the authors may want to adjust this description of their results with respect to stimulus-specificity in the Materials and methods, Results, and Discussion.
+
+A similar argument could be made regarding the model-based MEG-fMRI fusion results. The stimulus-specific model focuses on gross differences between Mooney images and greyscale images, rather than individual images. The recognition-specific model assumes that images post-recognition all become different from each other, which would lead to high dissimilarity. However, in line with the authors' interpretation of their prior work (Gonzalez-Garcia et al., 2018), one could also argue that they should become more similar to each other (when treated as the class of objects rather than individual images). In addition, their model interpretation would assume that the image itself should at least become more similar to itself, i.e. according to their interpretation, in my understanding the model would have to contain off-diagonal elements for the same image between grayscale and post-recognition periods.
+
+To strengthen their conclusions, I would suggest the addition of stimulus-specific or at least category-specific (e.g. animate – inanimate) decoding analyses. Further, I would suggest carrying out a category-specific analysis (e.g. animate – inanimate) to confirm the claims that the results are indeed recognition-related.
+
+While, as mentioned above, the addition of a control analysis is great, it only makes up a fraction of the other conditions. Therefore, the absence of decoding or RSA effects may be due to reduced power. What would the equivalent analysis look like for the experimental data if it is similarly reduced in size?
+
+[Editors' note: further revisions were requested prior to acceptance, as described below.]
+
+Thank you for resubmitting your work entitled "Neural dynamics of visual ambiguity resolution by perceptual prior" for further consideration at eLife. Your revised article has been favorably reviewed by three reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor.
+
+The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:
+
+As you will see below there are remaining issues with Figure 4E as outlined in the comment by reviewer #2. The new Figure 5 needs further clarifications for the reader and there is one outstanding issue related to how exemplar i.e. image specific these findings are. Finally the model needs either adjustment or a justification in the Discussion section (see comment by reviewer #3).
+
+Reviewer #2:
+
+I am glad to see that the authors have found an elegant way of addressing my most important issue – the lack of direct support for the claim of recognition driven content-specific effects. I think that this issue is now covered by the results shown in Figure 5.
+
+I still would like to insist on a revision of Figure 4E. The pink line in the figure is referred to as a "recognition-based" time course. This is misleading as the difference between the pink and the green line can be explained by differences in representational geometry due to recognition and due to differences related to presenting a Gray vs. Mooney images. Hence, there is no (significant) evidence for this effect being more pronounced for the Post-Gray than the Pre-Gray comparison. Therefore, the authors should explicitly clarify that the difference shown in this figure cannot be conclusively attributed to recognition. They could also simply omit 4E as the content specific recognition effect is now directly demonstrated in Figure 5. The authors could also consider to conceptually link Figure 4 and 5 by clarifying that Figure 4D leaves open the question if recognition-driven enhanced (and equal-to Gray) representational dissimilarity for Mooney images is driven by activation patterns to Mooney images becoming more similar to their Grayscale counterparts. At present, a compelling motivation for the Figure 5 analysis is missing at the start of the corresponding Results section.
+
+With respect to my introduction-related comment, I still think that the clarity of the paper would be enhanced by including a more specific hypothesis. As noted in the rebuttal, this presently boils down to this sentence: "these observations raise the intriguing possibility that slow, long-distance recurrent neural dynamics involving large-scale brain networks are necessary for prior-experience-guided visual recognition." I find it hard to see how this rather broad and vague hypothesis is a natural motivation for the specific research preformed during this study nor how it is precisely addressed by the findings.
+
+Reviewer #3:
+
+I would like to thank the authors for taking up many of my suggestions. I believe the clarifications in the text and the addition of the novel stimulus-specific analyses greatly strengthened the paper and the conclusions that can be drawn from the results. Nevertheless, I have some remaining reservations.
+
+It is correct that the analyses in Figure 4D were carried out at the image level. Nevertheless, in my understanding it is impossible to tell whether these effects are image-specific. This is a small correction to my original assessment where I said these results were condition-specific, while in fact they simply do not allow distinguishing between condition-specific and image-specific effects. The goal of this analysis is to show differences in the image-specific effects between the three conditions. Using the dissimilarity matrices in 4B and the analyses of the authors in 4C, then indeed the expected dissimilarity matrix for image-specific effects would exhibit low dissimilarity everywhere within a condition. This dissimilarity would then be expected to be different for each condition and change across time. This is the result the authors showed in 4D. However, for condition-specific effects the expected dissimilarity matrix would show low dissimilarity within condition, as well. The only way to tell these apart is by comparing the dissimilarity within image to the dissimilarity between. Since the authors already conducted this analysis, it is just a matter of clarification that the results in 4D cannot distinguish between condition-specific and image-specific results.
+
+Regarding the MEG-fMRI fusion modeling, I agree with the authors that the model is a choice the author has to make, but it has to be both justified and consistent. For the former, perhaps it would make sense to spell out the construction of the models in some more detail. For the latter, if the authors do not want to make adjustments, I would suggest discussing those limitations. The "recognition" model assumes that (1) Mooney images in the Pre-phase are not recognized and are all similarly "unrecognized", (2) all recognized stimuli are different from each other, and (3) all recognized stimuli are as different from each other as they are from unrecognized images. I can follow (1). However, as I mentioned, for (2) according to the authors' interpretation the "diagonals of between-condition squares" should be similar to each other. Without this, the model is inconsistent. The authors argued they cannot predict the exact value expected for those cells. However, since they are using the Spearman correlation, they would just need to choose if the dissimilarity is lower than within Pre (i.e. the blue square), the same, or higher. If the authors cannot decide, they could leave out those cells and remain agnostic. Note that, however, the same issue of comparability arises regarding (3): it seems like an even stronger assumption that in terms of recognition all recognized images are as different from each other as they are from unrecognized images. The authors should either be explicit about this, adjust the model, or remove those cells from the analysis.

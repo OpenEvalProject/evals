@@ -1,0 +1,31 @@
+# Peer review - Round 1
+
+Editors:
+- Joshua I Gold, University of Pennsylvania , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.13388.018](https://doi.org/10.7554/eLife.13388.018)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your work entitled "Mesolimbic confidence signals guide perceptual learning in the absence of external feedback" for consideration by eLife. Your article has been favorably evaluated by Jody Culham (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+This study investigates how individuals learn without external feedback, such as might happen in perceptual tasks with many repeated decisions. Human subjects were trained on a perceptual-discrimination task that required them to first rate their confidence and then identify whether a Gabor patch was oriented clockwise or counter-clockwise. On average, subjects showed sustained improvements in discrimination ability that were specific to the trained orientation. They modeled behavior in terms of a noisy decision variable. In the model, confidence is scaled from the magnitude of the decision variable and perturbed with Gaussian noise. The difference between the certainty in the choice on that trial and the average certainty across all past trials is used to update the relationship between the orientation energy detectors and the decision variable via an associative learning rule. They found confidence-related signals in the mesolimbic system during training. They conclude that confidence acts in a similar way as an external reward in the context of perceptual learning.
+
+In general, the reviewers agreed that the work addresses an interesting and timely topic and presents interesting findings. However, they also had several major concerns:
+
+1) The reviewers had many questions about the nature of the confidence signals. Most studies that measure confidence in a decision use a post-choice design where participants first make a decision and then rate their confidence in that decision. This study employed a different design where participants first report their confidence (presumably in their percept) and then made a decision about the orientation. What was the rationale for using this different procedure? What exactly were the instructions to the subjects in terms of reporting their confidence? Moreover, did RT depend systematically on confidence and/or choice accuracy? How much variability was there in the range of confidence values used by individual subjects? Did the particular range used by a given subject affect the confidence-related BOLD signals? Was there a relationship between the range of confidence values and learning ability (e.g., did apparently more confident subjects learn faster/better)? Did the variability in confidence ratings change over trials? The model would seem to predict that variance in confidence should reduce with learning. It would also be interesting if that variability was associated with a reduction in variability in stratal activation.
+
+2) The reviewers also raised several concerns about the interpretation of the confidence-prediction error (CPE) signals found in the brain that should be clarified. The Discussion states that the results "fit well with the prediction error hypothesis of dopamine," based on responses at two time-points: "(i) an anticipatory signal triggered by an outcome-predicting cue, and (ii) a surprise signal (prediction error) triggered by the actual outcome." However, the results presented here were for what seems like two quite different time points. The first was the encoding of anticipated confidence at the beginning of a trial, but this time point was before any cue was presented that could be used to predict a particular outcome of that trial. The second was the CPE, but this occurred at the time of the stimulus presentation, not the time of "the actual outcome." In this regard, the CPE seems more closely related to either the reward-predicting signal, or perhaps a kind of sensory oddball that would be expected to evoke a different pattern of activation, such as in right inferior prefrontal areas (e.g., Strange et al., 2000). Why were such patterns not measured here? What is the evidence that the stimulus can be thought of as a form of external reward?
+
+3) What were participants told? Were they aware that they were in a procedure where the goal was to find a level of contrast that resulted in a constant level of performance? This learning model seems sensible for this kind of situation. But how would this model work in a method of constant stimuli where each trial would present a different stimulus of different level of contrast and thus different level of mean confidence?
+
+4) How well did the model capture behavior for individual subjects? Did the extent to which the model fit behavior also predict the involvement of striatum?
+
+5) It would be useful to at least discuss possible implications and/or limitations of the study design in terms of interpreting the nature of the confidence signals in the brain. For example, were any measurements taken in the scanner in which the subjects reported only the choice and not the confidence judgment? Such measurements could help characterize the extent to which the confidence-related BOLD signals required the act of reporting the confidence judgment, as opposed to a more inherent, internal representation. Likewise, it might be interesting to consider the effects of manipulating confidence independent of choice accuracy (perhaps via cues that impact confidence rather than choice accuracy such as changing luminance at test see Busey et al., 2000). This should allow one to predict changes in the anticipation and prediction-error signals, independent of choice effects.

@@ -1,0 +1,18 @@
+# Multilayer brain networks can identify the epileptogenic zone and seizure dynamics
+
+## Authors
+
+- Hossein Shahabi<sup>1</sup> ([ORCID: 0000-0003-3600-8007](https://orcid.org/0000-0003-3600-8007)) †
+- Dileep R Nair<sup>2</sup>
+- Richard M Leahy<sup>1</sup>
+
+### Affiliations
+
+1. Signal and Image Processing Institute University of Southern California Los Angeles United States
+2. Epilepsy Center Cleveland Clinic Neurological Institute Cleveland United States
+
+† Corresponding author
+
+## Abstract
+
+Seizure generation, propagation, and termination occur through spatiotemporal brain networks. In this paper, we demonstrate the significance of large-scale brain interactions in high-frequency (80-200 Hz) for identification of the epileptogenic zone (EZ) and seizure evolution. To incorporate the continuity of neural dynamics, here we have modeled brain connectivity constructed from stereoelectroencephalography (SEEG) data during seizures using multilayer networks. After introducing a new measure of brain connectivity for temporal networks, named multilayer eigenvector centrality (mlEVC), we applied a consensus hierarchical clustering on the developed model to identify the epileptogenic zone (EZ) as a cluster of nodes with distinctive brain connectivity in the ictal period. Our algorithm could successfully predict electrodes inside the resected volume as EZ for 88% of participants, who all were seizure-free for at least 12 months after surgery. Our findings illustrated significant and unique desynchronization between EZ and the rest of the brain in early to mid-seizure. We showed that aging and duration of epilepsy intensify this desynchronization, which can be the outcome of abnormal neuroplasticity. Additionally, we illustrated that seizures evolve with various network topologies, confirming the existence of different epileptogenic networks in each patient. Our findings suggest not only the importance of early intervention in epilepsy but the possible factor which correlates with disease severity. Moreover, by analyzing the propagation patterns of different seizures, we asserted the necessity of collecting sufficient data for identifying the epileptogenic networks.

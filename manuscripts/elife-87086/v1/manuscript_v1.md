@@ -1,0 +1,19 @@
+# Systematic analysis of the molecular and biophysical properties of key DNA damage response factors
+
+## Authors
+
+- Joshua R Heyza<sup>1</sup> ([ORCID: 0000-0003-0847-0501](https://orcid.org/0000-0003-0847-0501))
+- Mariia Mikhova<sup>1</sup>
+- Aastha Bahl<sup>1</sup>
+- David Broadbent<sup>1</sup> ([ORCID: 0000-0002-0940-1068](https://orcid.org/0000-0002-0940-1068))
+- Jens C Schmidt<sup>1</sup> ([ORCID: 0000-0001-9061-7853](https://orcid.org/0000-0001-9061-7853)) †
+
+### Affiliations
+
+1. Institute for Quantitative Health Science and Engineering Michigan State University East Lansing United States
+
+† Corresponding author
+
+## Abstract
+
+Repair of DNA double strand breaks (DSBs) is integral to preserving genomic integrity. Therefore, defining the mechanisms underlying DSB repair will enhance our understanding of how defects in these pathways contribute to human disease and could lead to the discovery of new approaches for therapeutic intervention. Here, we established a panel of HaloTagged DNA damage response factors in U2OS cells which enables concentration-dependent protein labeling by fluorescent HaloTag ligands. Genomic insertion of HaloTag at the endogenous loci of these repair factors preserves expression levels and proteins retain proper subcellular localization, foci-forming ability, and functionally support DSB repair. We systematically analyzed total cellular protein abundance, measured recruitment kinetics to laser-induced DNA damage sites, and defined the diffusion dynamics and chromatin binding characteristics by live-cell single-molecule imaging. Our work demonstrates that the Shieldin complex, a critical factor in end-joining, does not exist in a preassembled state and that relative accumulation of these factors at DSBs occurs with different kinetics. Additionally, live-cell single-molecule imaging revealed the constitutive interaction between MDC1 and chromatin mediated by its PST repeat domain. Altogether, our studies demonstrate the utility of single-molecule imaging to provide mechanistic insights into DNA repair, which will serve as a powerful resource for characterizing the biophysical properties of DNA repair factors in living cells.

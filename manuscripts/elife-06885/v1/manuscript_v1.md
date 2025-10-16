@@ -1,0 +1,20 @@
+# Ngn1 inhibits astrogliogenesis through induction of miR-9 during neuronal fate specification
+
+## Authors
+
+- Jing Zhao
+- Quan Lin
+- Kevin J Kim
+- Faranak D Dardashti
+- Jennifer Kim
+- Yi Sun †
+
+### Affiliations
+
+1. Stem Cell Translational Research Center Tongji University School of  Medicine Shanghai China ysun@mednet.ucla.edu
+
+† Corresponding author
+
+## Abstract
+
+It has been postulated that a proneural factor, neurogenin 1 (Ngn1), simultaneously activates the neurogenic program and inhibits the alternative astrogliogenic program when specifying the neuronal fate.  While Ngn1 substantially suppresses the activation of the astrogliogenic Jak-Stat pathway, the underlying molecular mechanism was unknown. Here, by employing in vivo and in vitro approaches, we report that Ngn1 binds to the promoter of a brain-enriched microRNA, miR-9, and activates its expression during neurogenesis. Subsequently, our in vitro study showed that miR-9 directly targets mRNAs of Lifr-beta , Il6st (gp130) , and Jak1 to down-regulate these critical upstream components of the Jak-Stat pathway, achieving inhibition of Stat phosphorylation and consequently, suppression of astrogliogenesis. This study revealed Ngn1 modulated non-coding RNA epigenetic regulation during cell fate specifications.

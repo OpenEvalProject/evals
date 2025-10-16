@@ -1,0 +1,16 @@
+# A unified approach to dissecting biphasic responses in cell signalling
+
+## Authors
+
+- Vaidhiswaran Ramesh<sup>1</sup>
+- J Krishnan<sup>1</sup> ([ORCID: 0000-0001-6196-2033](https://orcid.org/0000-0001-6196-2033)) †
+
+### Affiliations
+
+1. Department of Chemical Engineerng Imperial College London London United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Biphasic responses are encountered at all levels in biological systems. At the cellular level, biphasic dose-responses are widely encountered in cell signalling and post-translational modification systems and represent safeguards against over-activation or overexpression of species. In this paper we provide a unified theoretical synthesis of biphasic responses in cell signalling systems, by assessing signalling systems ranging from basic biochemical building blocks to canonical network structures to well-characterized exemplars on one hand, and examining different types of doses on the other. By using analytical and computational approaches applied to a range of systems across levels (described by broadly employed models) we reveal (i) design principles enabling the presence of biphasic responses, including in almost all instances, an explicit characterization of the parameter space (ii) structural factors which preclude the possibility of biphasic responses (iii) different combinations of the presence or absence of enzyme-biphasic and substrate-biphasic responses, representing safeguards against overactivation and overexpression respectively (iv) the possibility of broadly robust biphasic responses (v) the complete alteration of signalling behaviour in a network due to biphasic interactions between species (biphasic regulation) (vi) the propensity of different co-existing biphasic responses in the Erk signalling network. These results both individually and in totality have a number of important consequences for systems and synthetic biology.

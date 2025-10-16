@@ -1,0 +1,17 @@
+# The ion selectivity filter is not an activation gate in TRPV1-3 channels
+
+## Authors
+
+- Andrés Jara-Oseguera<sup>1</sup> ([ORCID: 0000-0001-5921-9320](https://orcid.org/0000-0001-5921-9320)) †
+- Katherine E Huffer<sup>1</sup>
+- Kenton J Swartz<sup>1</sup> ([ORCID: 0000-0003-3419-0765](https://orcid.org/0000-0003-3419-0765)) †
+
+### Affiliations
+
+1. Molecular Physiology and Biophysics Section National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
+
+† Corresponding author
+
+## Abstract
+
+Activation of TRPV1 channels in sensory neurons results in opening of a cation permeation pathway that triggers the sensation of pain. Opening of TRPV1 has been proposed to involve two gates that appear to prevent ion permeation in the absence of activators: the ion selectivity filter on the external side of the pore and the S6 helices that line the cytosolic half of the pore. Here we measured the access of thiol-reactive ions and compounds across the selectivity filters in rodent TRPV1-3 channels. Although our results are consistent with structural evidence that the selectivity filters in these channels are dynamic, they demonstrate that cations can permeate the ion selectivity filters even when channels are closed. Our results suggest that the selectivity filters in TRPV1-3 channels do not function as activation gates but might contribute to coupling structural rearrangements in the external pore to those in the cytosolic S6 gate.

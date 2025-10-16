@@ -1,0 +1,18 @@
+# Ligand discrimination and gating in cyclic nucleotide-gated ion channels from apo and partial agonist-bound cryo-EM structures
+
+## Authors
+
+- Jan Rheinberger<sup>1</sup> ([ORCID: 0000-0002-9901-2065](https://orcid.org/0000-0002-9901-2065))
+- Xiaolong Gao<sup>1</sup>
+- Philipp AM Schmidpeter<sup>1</sup> ([ORCID: 0000-0003-2871-9706](https://orcid.org/0000-0003-2871-9706))
+- Crina M Nimigean<sup>1</sup> ([ORCID: 0000-0002-6254-4447](https://orcid.org/0000-0002-6254-4447)) †
+
+### Affiliations
+
+1. Department of Anesthesiology Weill Cornell Medical College New York United States
+
+† Corresponding author
+
+## Abstract
+
+Cyclic nucleotide-modulated channels have important roles in visual signal transduction and pacemaking. Binding of cyclic nucleotides (cAMP/cGMP) elicits diverse functional responses in different channels within the family despite their high sequence and structure homology. The molecular mechanisms responsible for ligand discrimination and gating are unknown due to lack of correspondence between structural information and functional states. Using single particle cryo-electron microscopy and single-channel recording, we assigned functional states to high-resolution structures of SthK, a prokaryotic cyclic nucleotide-gated channel. The structures for apo, cAMP-bound, and cGMP-bound SthK in lipid nanodiscs, correspond to no, moderate, and low single-channel activity, respectively, consistent with the observation that all structures are in resting, closed states. The similarity between apo and ligand-bound structures indicates that ligand-binding domains are strongly coupled to pore and SthK gates in an allosteric, concerted fashion. The different orientations of cAMP and cGMP in the 'resting' and 'activated' structures suggest a mechanism for ligand discrimination.

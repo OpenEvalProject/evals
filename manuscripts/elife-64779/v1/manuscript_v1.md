@@ -1,0 +1,17 @@
+# Non-genetic inheritance restraint of cell-to-cell variation
+
+## Authors
+
+- Harsh Vashistha<sup>1</sup>
+- Maryam Kohram<sup>1</sup>
+- Hanna Salman<sup>1</sup> ([ORCID: 0000-0002-5847-524X](https://orcid.org/0000-0002-5847-524X)) †
+
+### Affiliations
+
+1. Physics and Astronomy University of Pittsburgh Pittsburgh United States
+
+† Corresponding author
+
+## Abstract
+
+Heterogeneity in physical and functional characteristics of cells (e.g. size, cycle time, growth rate, protein concentration) proliferates within an isogenic population due to stochasticity in intracellular biochemical processes and in the distribution of resources during divisions. Conversely, it is limited in part by the inheritance of cellular components between consecutive generations. Here we introduce a new experimental method for measuring proliferation of heterogeneity in bacterial cell characteristics, based on measuring how two sister cells become different from each other over time. Our measurements provide the inheritance dynamics of different cellular properties, and the 'inertia' of cells to maintain these properties along time. We find that inheritance dynamics are property-specific, and can exhibit long-term memory (~10 generations) that works to restrain variation among cells. Our results can reveal mechanisms of non-genetic inheritance in bacteria and help understand how cells control their properties and heterogeneity within isogenic cell populations.

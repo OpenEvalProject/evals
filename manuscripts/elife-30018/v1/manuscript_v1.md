@@ -1,0 +1,18 @@
+# Shorter cortical adaptation in dyslexia is broadly distributed in the superior temporal lobe and includes the primary auditory cortex
+
+## Authors
+
+- Sagi Jaffe-Dax<sup>1</sup> ([ORCID: 0000-0002-8759-6980](https://orcid.org/0000-0002-8759-6980)) †
+- Eva Kimel<sup>2</sup>
+- Merav Ahissar<sup>2</sup>
+
+### Affiliations
+
+1. Department of Psychology Princeton University Princeton United States
+2. Edmond And Lily Safra Center for Brain Sciences The Hebrew University of Jerusalem Jerusalem Israel
+
+† Corresponding author
+
+## Abstract
+
+Studies of performance of individuals with dyslexia on perceptual tasks suggest that their implicit inference of sound statistics is impaired. Previously, using two-tone frequency discrimination, we found that the effect of previous trials' frequencies on judgments of individuals with dyslexia decayed faster than the effect on controls' judgments, and that the adaptation (decrease of neural response to repeated stimuli) of their ERP responses to tones was shorter (Jaffe-Dax et al., 2017). Here, we show the cortical distribution of this abnormal dynamics of adaptation using fast acquisition fMRI. We find that faster decay of adaptation in dyslexia is widespread, though the most significant effects are found in the left superior temporal lobe, including the auditory cortex. This broad distribution suggests that the faster decay of implicit memory of individuals with dyslexia is a general characteristic of their cortical dynamics, which affects also sensory cortices.

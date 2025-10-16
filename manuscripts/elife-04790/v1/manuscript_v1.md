@@ -1,0 +1,24 @@
+# Death following traumatic brain injury in Drosophila is associated with intestinal barrier dysfunction
+
+## Authors
+
+- Rebeccah J Katzenberger
+- Stanislava Chtarbanova
+- Stacey A Rimkus
+- Julie A Fischer
+- Gulpreet Kaur
+- Jocelyn M Seppala
+- Laura C Swanson
+- Jocelyn E Zajac
+- Barry Ganetzky
+- David A Wassarman †
+
+### Affiliations
+
+1. Department of Cell and Regenerative Biology, School of Medicine and Public Health University of Wisconsin-Madison Madison United States dawassarman@wisc.edu
+
+† Corresponding author
+
+## Abstract
+
+Traumatic brain injury (TBI) is a major cause of death and disability worldwide. Unfavorable TBI outcomes result from primary mechanical injuries to the brain and ensuing secondary non-mechanical injuries that are not limited to the brain. Our Genome-wide Association study of Drosophila melanogaster revealed that the probability of death following TBI is associated with single nucleotide polymorphisms in genes involved in tissue barrier function and glucose homeostasis. We found that TBI causes intestinal and blood-brain barrier dysfunction and that intestinal barrier dysfunction is highly correlated with the probability of death. Furthermore, we found that ingestion of glucose after a primary injury increases the probability of death through a secondary injury mechanism that exacerbates intestinal barrier dysfunction. Our results indicate that natural variation in the probability of death following TBI is due in part to genetic differences that affect intestinal barrier dysfunction.

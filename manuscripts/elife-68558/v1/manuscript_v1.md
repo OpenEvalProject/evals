@@ -1,0 +1,16 @@
+# Ciliary Hedgehog signaling regulates cell survival to build the facial midline
+
+## Authors
+
+- Shaun Abrams<sup>1</sup> ([ORCID: 0000-0002-1479-9322](https://orcid.org/0000-0002-1479-9322))
+- Jeremy F Reiter<sup>1</sup> ([ORCID: 0000-0002-6512-320X](https://orcid.org/0000-0002-6512-320X)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+Craniofacial defects are among the most common phenotypes caused by ciliopathies, yet the developmental and molecular etiology of these defects is poorly understood. We investigated multiple mouse models of human ciliopathies (including Tctn2, Cc2d2a and Tmem231 mutants ) and discovered that each displays hypotelorism, a narrowing of the midface. As early in development as the end of gastrulation, Tctn2 mutants displayed reduced activation of the Hedgehog (HH) pathway in the prechordal plate, the head organizer. This prechordal plate defect preceded a reduction of HH pathway activation and Shh expression in the adjacent neurectoderm. Concomitant with the reduction of HH pathway activity, Tctn2 mutants exhibited increased cell death in the neurectoderm and facial ectoderm, culminating in a collapse of the facial midline. Enhancing HH signaling by decreasing the gene dosage of a negative regulator of the pathway, Ptch1, decreased cell death and rescued the midface defect in both Tctn2 and Cc2d2a mutants. These results reveal that ciliary HH signaling mediates communication between the prechordal plate and the neurectoderm to provide cellular survival cues essential for development of the facial midline.

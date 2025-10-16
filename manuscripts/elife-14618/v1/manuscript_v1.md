@@ -1,0 +1,18 @@
+# A mitofusin-dependent docking ring complex triggers mitochondrial fusion in vitro
+
+## Authors
+
+- Tobias Brandt
+- Laetitia Cavellini
+- Werner Kühlbrandt
+- Mickaël M Cohen †
+
+### Affiliations
+
+1. Laboratoire de Biologie Moléculaire et Cellulaire des Eucaryotes Sorbonne Universités Paris France cohen@ibpc.fr
+
+† Corresponding author
+
+## Abstract
+
+Fusion of mitochondrial outer membranes is crucial for proper organelle function and involves large GTPases called mitofusins. The discrete steps that allow mitochondria to attach to one another and merge their outer membranes are unknown. By combining an in vitro mitochondrial fusion assay with electron cryo-tomography (cryo-ET), we visualize the junction between attached mitochondria isolated from Saccharomyces cerevisiae and observe complexes that mediate this attachment. We find that cycles of GTP hydrolysis induce progressive formation of a docking ring structure around extended areas of contact. Further GTP hydrolysis triggers local outer membrane fusion at the periphery of the contact region. These findings unravel key features of mitofusin-dependent fusion of outer membranes and constitute an important advance in our understanding of how mitochondria connect and merge.

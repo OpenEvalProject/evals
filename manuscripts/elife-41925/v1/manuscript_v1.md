@@ -1,0 +1,17 @@
+# Thalamocortical synapses in the cat visual system in vivo are weak and unreliable
+
+## Authors
+
+- Madineh Sedigh-Sarvestani<sup>1</sup> †
+- Larry A Palmer<sup>1</sup>
+- Diego Contreras<sup>1</sup> ([ORCID: 0000-0003-0197-9882](https://orcid.org/0000-0003-0197-9882)) †
+
+### Affiliations
+
+1. Department of Neuroscience University of Pennsylvania School of Medicine Philadelphia United States
+
+† Corresponding author
+
+## Abstract
+
+The thalamocortical synapse of the visual system has been central to our understanding of sensory computations in the cortex. Although we have a fair understanding of the functional properties of the pre and post-synaptic populations, little is known about their synaptic properties, particularly in vivo. We used simultaneous recordings in LGN and V1 in cat in vivo to characterize the dynamic properties of thalamocortical synaptic transmission in monosynaptically connected LGN-V1 neurons. We found that thalamocortical synapses in vivo are unreliable, highly variable and exhibit short-term plasticity. Using biologically constrained models, we found that variable and unreliable synapses serve to increase cortical firing by means of increasing membrane fluctuations, similar to high conductance states. Thus, synaptic variability and unreliability, rather than acting as system noise, do serve a computational function. Our characterization of LGN-V1 synaptic properties constrains existing mathematical models, and mechanistic hypotheses, of a fundamental circuit in computational neuroscience.

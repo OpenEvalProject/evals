@@ -1,0 +1,31 @@
+# Peer review - Round 1
+
+Editors:
+- Vishnu Murty, University of Pittsburgh Medical Center , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.17441.011](https://doi.org/10.7554/eLife.17441.011)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Intrinsic monitoring of learning success facilitates memory encoding via the activation of the SN/VTA-Hippocampal loop" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Kathryn Dickerson (Reviewer #2), and the evaluation has been overseen by a Reviewing Editor and Sabine Kastner as the Senior Editor.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+Ripollés and colleagues report on a study investigating interactions between the dopaminergic midbrain, hippocampus, and ventral striatum, a circuit implicated in reward processing, while learning the definitions of novel words in the absence of reward incentives. The authors find engagement of this circuitry during learning during their task which did not involve either reward incentives or feedback cues, Further, memory for word pairs was associated with both self-report measures of pleasantness and physiological arousal. Thus, the others explore a novel domain in which mesolimbic-hippocampal interactions may support episodic memory.
+
+Essential revisions:
+
+1) Generally, the authors need to rework their Introduction and Discussion to more accurately portray their findings within the larger literature. This needs to be expanded upon in 4 different domains. (i) The authors should better integrate their findings with their previous paper (Ripollés, 2014), as this was a reanalysis of the prior dataset (which should be highlighted in the text). Specifically, how do they believe the mechanisms reported in the current manuscript differ from those described in the prior manuscript, as they all show similar patterns? (ii) More attention is warranted describing these results in relationship those reported by Gruber et al. (2014), Duncan, Tompary, & Davachi (2014), and Murty, Dubrow, & Davachi (2015), all of which show engagement of this network during memory encoding in the absence of reward feedback. More attention to the convergence and divergence of these studies and the current study is warranted. (iii) There was concern in framing the paper as 'intrinsic reward'. These claims are made by the absence of feedback as well as engagement of the mesolimbic-hippocampal circuitry. However, there are multiple interpretations of how this circuit could be engaged in the absence of feedback outside of intrinsic reward (i.e., goal-achievement, general positive affect, general memory encoding). I believe it is fine that this may be one factor driving the current results, but these claims need to be qualified. (iv) It is an overstatement to say that 'little is known about the neurobiological mechanisms subserving memory formation when learning is not driven by explicit/external rewards or feedback" as there is a whole field investigating these processes during incidental memory encoding.
+
+2) There were concerns on the selection of ROIS and implementation of ROI-based analyses. The reviewers were enthusiastic about the use of 'neuro-synth' to have an unbiased selection procedure, but why did this deviate from the author's prior work using a functional localizer. Similarly, it was inconsistent when the authors used voxel-wise analysis Similar selection of the regions of interest. I believe their approach of using neuro-synth is an unbiased method to explore the SN/VTA-hippocampus circuit. However, the prior manuscript used a functional ROI. Can the authors justify this decision, versus their prior methods for ROI selection? Similarly, the authors use a voxel-wise analyses within some analyses, and average activity across the entire ROI for others. The reviewers believe this latter approach is more sound, but more importantly need justification for why different methods were using. Further, additional detail on the voxel-wise approach would help clarify these choices.
+
+3) These results provide a sound characterization of how hippocampal-SN/VTA interactions supporting memory encoding in this contexts. However, additional analyses are necessary to help detail the specificity of these findings. Firstly, if the authors choose to only report on ROI based analyses (see below), they should include a control region for both univariate and connectivity analyses, particularly one which may not receive substantial innervation from the SN/VTA (i.e., visual cortex). Alternatively, and preferably, they would include exploratory whole-brain analyses. This is relevant to not only determine the specificity of the findings, but also because theoretical models (including Lisman and Grace) implicate involvement in regions beyond the limited circuit investigated in the current study. This would again be appropriate for both univariate and connectivity analyses. Similarly, additional PPI analyses are warranted detailing the main effect of condition (M+>M-) in addition to difference in memory analyses.
+
+4) Some of the design and analysis considerations need further explanation. (i) Why did the authors choose to do some of their memory tests inside the scanner and others outside the scanner? Were the differences in memory across these two contexts, and if so this needs to be addressed in the discussion. Would it be appropriate to collapse the memory data within the figure? (ii) Was it warranted performing all analyses separately across left and right ROIS as opposed to collapsed bilaterally? If ANOVA did not show effects of laterally, reporting bilateral activations would help streamline the paper. (iii) Justification for the experimental paradigm, as related to the current question of interest, should be emphasized. Why was this paradigm selected versus other paradigms that do not use explicit feedback?

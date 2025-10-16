@@ -1,0 +1,18 @@
+# Mechanochemical coupling and bi-phasic force-velocity dependence in the ultra-fast ring ATPase SpoIIIE
+
+## Authors
+
+- Ninning Liu<sup>1</sup>
+- Gheorghe Chistol<sup>1</sup>
+- Yuanbo Cui<sup>1</sup>
+- Carlos Bustamante<sup>1</sup> ([ORCID: 0000-0002-2970-0073](https://orcid.org/0000-0002-2970-0073)) †
+
+### Affiliations
+
+1. Jason L Choy Laboratory of Single Molecule Biophysics University of California, Berkeley Berkeley United States
+
+† Corresponding author
+
+## Abstract
+
+Multi-subunit ring-shaped ATPases are molecular motors that harness chemical free energy to perform vital mechanical tasks such as polypeptide translocation, DNA unwinding, and chromosome segregation. Previously we reported the intersubunit coordination and stepping behavior of the hexameric ring-shaped ATPase SpoIIIE (Liu et al., 2015). Here we use optical tweezers to characterize the motor's mechanochemistry. Analysis of the motor response to external force at various nucleotide concentrations identifies phosphate release as the likely force-generating step. Analysis of SpoIIIE pausing indicates that pauses are off-pathway events. Characterization of SpoIIIE slipping behavior reveals that individual motor subunits engage DNA upon ATP binding. Furthermore, we find that SpoIIIE's velocity exhibits an intriguing bi-phasic dependence on force. We hypothesize that this behavior is an adaptation of ultra-fast motors tasked with translocating DNA from which they must also remove DNA-bound protein roadblocks. Based on these results, we formulate a comprehensive mechanochemical model for SpoIIIE.

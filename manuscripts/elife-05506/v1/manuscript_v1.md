@@ -1,0 +1,17 @@
+# Distinct mechanisms underlie oral versus aboral regeneration in the cnidarian Hydractinia echinata
+
+## Authors
+
+- Brian Bradshaw
+- Kerry Thompson
+- Uri Frank †
+
+### Affiliations
+
+1. School of Natural Sciences and Regenerative Medicine Institute National University of Ireland Galway Ireland uri.frank@nuigalway.ie
+
+† Corresponding author
+
+## Abstract
+
+Cnidarians possess remarkable powers of regeneration, but the cellular and molecular mechanisms underlying this capability are unclear. Studying the hydrozoan Hydractinia echinata we show that a burst of stem cell proliferation occurs following decapitation, forming a blastema at the oral pole within 24 hours. This process is necessary for head regeneration. Knocking down Piwi1 , Vasa , Pl10 or Ncol1 expressed by blastema cells inhibited regeneration but not blastema formation. EdU pulse-chase experiments and in vivo tracking of individual transgenic Piwi1 + stem cells showed that the cellular source for blastema formation is migration of stem cells from a remote area. Surprisingly, no blastema developed at the aboral pole after stolon removal. Instead, polyps transformed into stolons and then budded polyps. Hence, distinct mechanisms act to regenerate different organs in Hydractinia . This model, where stem cell behavior can be monitored in vivo at single cell resolution, offers new insights for regenerative biology.

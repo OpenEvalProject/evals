@@ -1,0 +1,29 @@
+# Phosphorylation and activation of ubiquitin-specific protease-14 by Akt regulates the ubiquitin-proteasome system
+
+## Authors
+
+- Daichao Xu
+- Bing Shan
+- Byung-Hoon Lee
+- Kezhou Zhu
+- Tao Zhang
+- Huawang Sun
+- Min Liu
+- Linyu Shi
+- Wei Liang
+- Lihui Qian
+- Juan Xiao
+- Lili Wang
+- Lifeng Pan
+- Daniel Finley
+- Junying Yuan †
+
+### Affiliations
+
+1. Department of Cell Biology Harvard Medical School Boston United States jyuan@hms.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Regulation of ubiquitin-proteasome system (UPS), which controls the turnover of short-lived proteins in eukaryotic cells, is critical in maintaining cellular proteostasis. Here we show that USP14, a major deubiquitinating enzyme that regulates the UPS, is a substrate of Akt, a serine/threonine-specific protein kinase critical in mediating intracellular signaling transducer for growth factors. We report that Akt-mediated phosphorylation of USP14 at Ser432, which normally blocks its catalytic site in the inactive conformation, activates its deubiquitinating activity in vitro and in cells. We also demonstrate that phosphorylation of USP14 is critical for Akt to regulate proteasome activity and consequently global protein degradation. Since Akt can be activated by a wide range of growth factors and is under negative control by phosphoinosotide phosphatase PTEN, we suggest that regulation of UPS by Akt-mediated phosphorylation of USP14 may provide a common mechanism for growth factors to control global proteostasis and for promoting tumorigenesis in PTEN-negative cancer cells.

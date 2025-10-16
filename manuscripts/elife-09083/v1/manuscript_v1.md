@@ -1,0 +1,24 @@
+# Distinct mechanisms define murine B cell lineage immunoglobulin heavy chain (IgH) repertoires
+
+## Authors
+
+- Yang Yang †
+- Chunlin Wang
+- Qunying Yang
+- Aaron B Kantor
+- Hiutung Chu
+- Eliver EB Ghosn
+- Guang Qin
+- Sarkis K Mazmanian
+- Jian Han
+- Leonore A Herzenberg
+
+### Affiliations
+
+1. Genetics Department Stanford University Stanford United States
+
+† Corresponding author
+
+## Abstract
+
+Processes that define immunoglobulin repertoires are commonly presumed to be the same for all murine B cells. However, studies here that couple high-dimensional FACS sorting with large-scale quantitative IgH deep-sequencing demonstrate that B-1a IgH repertoire differs dramatically from the follicular and marginal zone B cells repertoires and is defined by distinct mechanisms. We track B-1a cells from their early appearance in neonatal spleen to their long-term residence in adult peritoneum and spleen. We show that de novo B-1a IgH rearrangement mainly occurs during the first few weeks of life, after which their repertoire continues to evolve profoundly, including convergent selection of certain V(D)J rearrangements encoding specific CDR3 peptides in all adults and progressive introduction of hypermutation and class-switching as animals age. This V(D)J selection and AID-mediated diversification operate comparably in germ-free and conventional mice, indicating these unique B-1a repertoire-defining mechanisms are driven by antigens that are not derived from microbiota.

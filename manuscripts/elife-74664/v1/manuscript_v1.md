@@ -1,0 +1,19 @@
+# High spatial resolution analysis using automated indentation mapping differentiates biomechanical properties of normal vs. degenerated articular cartilage in mice
+
+## Authors
+
+- Anand O Masson<sup>1</sup>
+- Bryce Besler<sup>1</sup>
+- W Brent Edwards<sup>1</sup>
+- Roman J Krawetz<sup>2</sup> ([ORCID: 0000-0002-2576-4504](https://orcid.org/0000-0002-2576-4504)) †
+
+### Affiliations
+
+1. Biomedical Engineering Graduate Program University of Calgary Calgary Canada
+2. Department of Cell Biology and Anatomy University of Calgary Calgary Canada
+
+† Corresponding author
+
+## Abstract
+
+Characterizing the biomechanical properties of articular cartilage is crucial to understanding processes of tissue homeostasis vs. degeneration. In mouse models, however, limitations are imposed by their small joint size and thin cartilage surfaces. Here we present a 3D automated surface mapping system and methodology that allows for mechanical characterization of mouse cartilage with high spatial resolution. We performed repeated indentation mappings, followed by cartilage thickness measurement via needle probing, at 31 predefined positions distributed over the medial and lateral femoral condyles of healthy mice. High-resolution 3D x-ray microscopy (XRM) imaging was used to validate tissue thickness measurements. The automated indentation mapping was reproducible, and needle probing yielded cartilage thicknesses comparable to XRM imaging. When comparing healthy vs. degenerated cartilage, topographical variations in biomechanics were identified, with altered thickness and stiffness (instantaneous modulus) across condyles and within anteroposterior sub-regions. This quantitative technique comprehensively characterized cartilage function in mice femoral condyle cartilage. Hence, it has the potential to improve our understanding of tissue structure-function interplay in mouse models of repair and disease.

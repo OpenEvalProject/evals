@@ -1,0 +1,20 @@
+# Aminomethanesulfonic acid illuminates the boundary between full and partial agonists of the pentameric glycine receptor
+
+## Authors
+
+- Josip Ivica<sup>1</sup>
+- Hongtao Zhu<sup>2</sup> ([ORCID: 0000-0003-1522-0500](https://orcid.org/0000-0003-1522-0500))
+- Remigijus Lape<sup>1</sup>
+- Eric Gouaux<sup>2</sup> ([ORCID: 0000-0002-8549-2360](https://orcid.org/0000-0002-8549-2360)) †
+- Lucia G Sivilotti<sup>1</sup> ([ORCID: 0000-0001-7943-604X](https://orcid.org/0000-0001-7943-604X)) †
+
+### Affiliations
+
+1. Department of Neuroscience, Physiology and Pharmacology University College London London United Kingdom
+2. Vollum Institute Oregon Health and Science University Hospital Portland United States
+
+† Corresponding author
+
+## Abstract
+
+To clarify the determinants of agonist efficacy in pentameric ligand-gated ion channels we examined a new compound, aminomethanesulfonic acid (AMS), a molecule intermediate in structure between glycine and taurine. Despite wide availability, to date there are no reports of AMS action on glycine receptors, perhaps because AMS is unstable at physiological pH. Here we show that at pH 5, AMS is an efficacious agonist, eliciting in zebrafish α1 glycine receptors a maximum single channel open probability of 0.85, much greater than that of β-alanine (0.54) or taurine (0.12), and second only to that of glycine itself (0.96). Thermodynamic cycle analysis of the efficacy of these closely related agonists shows supra-additive interaction between changes in the length of the agonist molecule and the size of the anionic moiety. Single particle cryo-EM structures of AMS-bound glycine receptors show that the AMS-bound agonist pocket is as compact as with glycine, and three-dimensional classification demonstrates that the channel populates the open and the desensitized states, like glycine, but not the closed intermediate state associated with the weaker partial agonists, β-alanine and taurine. Because AMS is on the cusp between full and partial agonists, it provides a new tool to help us understand agonist action in the pentameric superfamily of ligand-gated ion channels.

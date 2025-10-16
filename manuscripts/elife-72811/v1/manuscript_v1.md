@@ -1,0 +1,25 @@
+# Efficient differentiation of human primordial germ cells through geometric control reveals a key role for Nodal signaling
+
+## Authors
+
+- Kyoung Jo<sup>1</sup>
+- Seth Teague<sup>2</sup>
+- Bohan Chen<sup>1</sup> ([ORCID: 0000-0002-9781-2982](https://orcid.org/0000-0002-9781-2982))
+- Hina Aftab Khan<sup>1</sup>
+- Emily Freeburne<sup>1</sup> ([ORCID: 0000-0003-0344-577X](https://orcid.org/0000-0003-0344-577X))
+- Hunter Li<sup>1</sup>
+- Bolin Li<sup>1</sup>
+- Ran Ran<sup>1</sup>
+- Jason R Spence<sup>1</sup> ([ORCID: 0000-0001-7869-3992](https://orcid.org/0000-0001-7869-3992))
+- Idse Heemskerk<sup>1</sup> ([ORCID: 0000-0002-8861-7712](https://orcid.org/0000-0002-8861-7712)) †
+
+### Affiliations
+
+1. Department of Cell and Developmental Biology University of Michigan Medical School Ann Arbor United States
+2. Department of Biomedical Engineering University of Michigan Medical School Ann Arbor United States
+
+† Corresponding author
+
+## Abstract
+
+Human primordial germ cells (hPGCs) form around the time of implantation and are the precursors of eggs and sperm. Many aspects of hPGC specification remain poorly understood because of the inaccessibility of the early postimplantation human embryo for study. Here we show that micropatterned human pluripotent stem cells (hPSCs) treated with BMP4 give rise to hPGC-like cells (hPGCLC) and use these as a quantitatively reproducible and simple in vitro model to interrogate this important developmental event. We characterize micropatterned hPSCs up to 96h and show that hPGCLC populations are stable and continue to mature. By perturbing signaling during hPGCLC differentiation, we identify a previously unappreciated role for Nodal signaling and find that the relative timing and duration of BMP and Nodal signaling are critical parameters controlling the number of hPGCLCs. We formulate a mathematical model for a network of cross-repressive fates driven by Nodal and BMP signaling which predicts the measured fate patterns after signaling perturbations. Finally, we show that hPSC colony size dictates the efficiency of hPGCLC specification, which led us to dramatically improve the efficiency of hPGCLC differentiation.

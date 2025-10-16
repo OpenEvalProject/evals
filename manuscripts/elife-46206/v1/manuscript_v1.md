@@ -1,0 +1,19 @@
+# Metabolic and non-metabolic liver zonation is established non-synchronously and requires sinusoidal Wnts
+
+## Authors
+
+- Ruihua Ma<sup>1</sup>
+- Angelica Sofia Martínez-Ramírez<sup>1</sup>
+- Thomas L Borders<sup>1</sup>
+- Fanding Gao<sup>1</sup>
+- Beatriz Sosa-Pineda<sup>1</sup> ([ORCID: 0000-0001-6872-5444](https://orcid.org/0000-0001-6872-5444)) †
+
+### Affiliations
+
+1. Medicine Northwestern University Feinberg School of Medicine Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+The distribution of complementary metabolic functions in hepatocytes along a portocentral axis is called liver zonation. Endothelial secreted Wnt ligands maintain metabolic zonation in the adult murine liver but whether those ligands are necessary to initiate zonation in the immature liver has been only partially explored. Also, numerous non-metabolic proteins display zonated expression in the adult liver but it is not entirely clear if their localization requires endothelial Wnts. Here we used a novel transgenic mouse model to compare the spatial distribution of zonated non-metabolic proteins with that of typical zonated metabolic enzymes during liver maturation and after acute injury induced by carbon tetrachloride (CCl 4 ). We also investigated how preventing Wnt ligand secretion from endothelial cells affects zonation patterns under homeostasis and after acute injury. Our study demonstrates that metabolic and non-metabolic zonation are established non-synchronously during maturation and regeneration and require multiple endothelial Wnt sources.

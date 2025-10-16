@@ -1,0 +1,33 @@
+# PHF13 is a molecular reader and transcriptional co-regulator of H3K4me2/3
+
+## Authors
+
+- Ho-Ryun Chung
+- Chao Xu
+- Alisa Fuchs
+- Andreas Mund
+- Martin Lange
+- Hannah Staege
+- Tobias Schubert
+- Chuanbing Bian
+- Ilona Dunkel
+- Anton Eberharter
+- Catherine Regnard
+- Henrike Klinker
+- David Meierhofer
+- Luca Cozzuto
+- Andreas Winterpacht
+- Luciano DiCroce
+- Jinrong Min
+- Hans Will
+- Sarah Kinkley †
+
+### Affiliations
+
+1. Max Planck Institute for Molecular Genetics Berlin Germany kinkley@molgen.mpg.de
+
+† Corresponding author
+
+## Abstract
+
+PHF13 is a chromatin affiliated protein with a functional role in differentiation, cell division, DNA damage response and higher chromatin order. To gain insight into PHF13's ability to modulate these processes, we elucidate the mechanisms targeting PHF13 to chromatin, its genome wide localization and its molecular chromatin context. Size exclusion chromatography, mass spectrometry, X-ray crystallography and ChIP sequencing demonstrate that PHF13 binds chromatin in a multivalent fashion via direct interactions with H3K4me2/3 and DNA, and indirectly via interactions with PRC2 and RNA PolII. Furthermore, PHF13 depletion disrupted the interactions between PRC2, RNA PolII S5P, H3K4me3 and H3K27me3 and resulted in the up and down regulation of genes functionally enriched in transcriptional regulation, DNA binding, cell cycle, differentiation and chromatin organization. Together our findings argue that PHF13 is an H3K4me2/3 molecular reader and transcriptional co-regulator, affording it the ability to impact different chromatin processes.

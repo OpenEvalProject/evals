@@ -1,0 +1,41 @@
+# Author response - Round 1
+
+Authors:
+- Chandler B Est ([ORCID: 0000-0002-5588-9930](https://orcid.org/0000-0002-5588-9930))
+- Regina M Murphy ([ORCID: 0000-0002-6196-5450](https://orcid.org/0000-0002-6196-5450))
+
+## Response text
+
+DOI: [10.7554/eLife.87863.2.sa4](https://doi.org/10.7554/eLife.87863.2.sa4)
+
+We thank the reviewers for their very thorough and detailed comments as well as the overall positive reception of the work. Additionally, the reviewers provided excellent detailed suggestions for future work.
+
+Specific response to Reviewer 1:
+
+“Indeed, the major disappointment of this work is the clinical relevance that was highlighted in the Introduction but was never really studied in the end. iPSC from patients could be added to the study.”
+
+We completely agree that it would be very exciting to use patient-derived iPSC in the platform that we describe in this manuscript. We recognize that extensive work to characterize and validate BMECS differentiated from patient-derived iPSCs would be required, including validating BBB-like properties, before retinol transport data could be collected and interpreted. This work is beyond the scope of the current manuscript. We hope that in the future the in vitro model we describe in this manuscript will be used for exactly this type of clinically relevant application.
+
+Specific response to Reviewer 2:
+
+“(1) The authors assume that there is a significant fraction of free ROL, 20% for ROH/RBP and 7% for RBP/TTR complexes (summarized in Table 1). This implies that at the physiological concentration of ROH/RBP in the plasma of 2 uM, free ROL represents 0.4 uM. However, the concentration of free ROL is limited by its poor solubility in the aqueous phase, which is around 0.06 uM (Szuts EZ, 1991, Arch Biochem Biophys). Moreover, taking into account the large concentration of other potential nonspecific carriers for lipids, it is safe to assume that there is virtually no free ROH in the plasma. There is also an important physiological reason for the limited amount of free ROL. Its rapid and nonspecific partition into cells (also observed in this study) would work against the highly specific RBP/STRA6-dependent ROH uptake pathway, undermining its physiological function.”
+
+The reviewer raises an important point that we considered carefully during the design of the research. As the reviewer says, Szuts (1991) reported retinol (ROH) solubility of ~0.06 µM (range of 0.03 – 0.11 µM). Szuts defined ROH solubility as ‘the amount of dissolved solute in equilibrium with its solid state…includ[ing] all its dissolved forms (monomers, multimers, and micelles)’. We are using a definition of ‘free’ ROH as ‘ROH not bound to protein’; in our work ‘free’ ROH could include retinol multimers and micelles, which likely do exist under our experimental conditions. (We did not see any evidence of solid ROH.) That said, we calculate that the concentration of free ROH (ROH not bound to protein) is ~0.14 µM when both RBP and TTR are present. In more complex biological mixtures containing other ROH carriers, the concentration of unbound ROH is expected to be lower, in agreement with the reviewer.
+
+One key point is that the free ROH concentration depends on the experimental setup, and must be correctly accounted for. For example, in some of the literature investigating STRA6-mediated uptake and signaling in vitro, purified ROH-RBP is used as the retinol source and samples do not include TTR. In such a case, the unbound ROH concentration in an equilibrated sample is anticipated to be significantly higher than the physiological concentration. Our investigation demonstrates that unbound ROH can accumulate intracellularly; thus, failure to include TTR and/or to account for the action of unbound ROH could lead to errors in mechanistic interpretation of experimental studies on retinol transport into cells or across barriers such as the BBB.
+
+1. “However, a question remains: would the outcome of the experiment be different if the basolateral chamber contained an ROH acceptor (retinol-binding proteins) rather than Hank's balanced salt solution, to which the partition of ROL is limited by its water solubility?”
+
+We agree with the reviewer that it would be very interesting to determine whether retinol permeability changes in the presence of RBP and/or TTR on the basolateral side. This is a logical next step and can readily be performed in the Transwell setup. We chose not to do this for this project because we wanted to compare our setup with other in vitro models (e.g., with porcine BMECs) where no retinol-binding proteins were present basolaterally.
+
+1. “The authors claim that transthyretin (TTR) increases BMECs permeability when compared to ROH/RBP. However, the mechanistic explanation for this phenomenon remains unclear. Do the authors imply the presence of a putative TTR receptor whose signaling could affect the efflux of ROL at the basolateral side of BMECs? TTR is an ubiquitous plasma protein. The concentration of TTR is tightly regulated and maintained between 300 - 330 mg/L. Therefore, it is questionable how TTR can serve as a signaling molecule modulating retinoid homeostasis in the brain.”
+
+We disagree with the reviewer about the TTR concentration. Per Johnson et al (Clin Chem Lab Med 2007, 45:419-426), TTR concentration varies with age, gender, inflammation and nutritional status, with typical concentrations for adults ranging from 150-450 mg/L. We were surprised at our observations that TTR enhanced ROH permeability across BMECs and that LRAT expression increased in the presence of TTR. We do not currently have a mechanistic interpretation and agree with the reviewer that further exploration of these tantalizing observations is warranted.
+
+“Additional technical issues that could affect the experimental outcomes: The formation of the ROH/RBP-TTR complex should be confirmed and purified using gel filtration to separate free TTR and ROH/RBP. Only fractions containing the complex should be used in the experiments. Assuming that the complex is formed with 100% efficiency is overly optimistic.”
+
+We respectfully disagree with the reviewer regarding using gel filtration to isolate TTR/ROH/RBP complexes. Any such isolated complexes will fairly rapidly re-equilibrate so that some protein and some ROH is unbound. It is important to note that we do not assume that the complex is formed with 100% efficiency. In fact, on the contrary, we explicitly take into account the distribution of materials (free TTR, free RBP, free ROH, RBP-ROH, TTR-RBP-ROH) in any sample; values are reported in the manuscript. This issue is also relevant to the first point raised by the reviewer. We routinely validated binding of ROH to RBP by FRET and ROH-RBP to TTR by fluorescence anisotropy.
+
+“Reloading RBP with isotopically labeled ROH requires an additional purification step. Stripping ROL from the ROH/RBP complex with organic solvent (diethyl ether) is appropriate but relatively harsh, causing partial unfolding of a fraction of RBP. Therefore, assuming that 100% of stripped RBP remains functional and can be reloaded with ROH is inaccurate. Reloading apo-RBP with a stoichiometric amount of ROH without an additional purification step (e.g., ion exchanger) leads to an excess of free ROL and/or its nonspecific association with nonfunctional RBP fractions. Measuring absorbance at 330 nm is not sufficient proof of binding since free ROH also absorbs at the same wavelength.”
+
+We produced RBP by refolding of guanidine-denatured RBP in an excess of ROH to ensure near 100% ROH loading. High quality refolded RBP can qualitatively be determined by examination of the A330/280 absorbance ratio, which should be ~1.0. We then extract ROH to completion by diethyl ether to produce pure apo-RBP (ROH-free). We utilized this diethyl-ether stripped apo-RBP stock for all future characterizations, including binding to ROH and TTR. We found our stripped apo-RBP was a suitable replacement for serum sources in every biophysical assay performed. Reloaded ROH-RBP elutes as a single peak on ion exchange chromatography, indicating the vast majority of stripped RBP is available for ROH binding. We provide detailed information about RBP characterization in Est and Murphy, Prot. Exp. Purif. (2020), to which the interested reader is referred.

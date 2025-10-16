@@ -1,0 +1,87 @@
+# Peer review - Round 1
+
+Editors:
+- Howard Eichenbaum, Boston University , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.14188.017](https://doi.org/10.7554/eLife.14188.017)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your work entitled "Place recognition using batlike bio-sonar" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+All the reviewers felt there was considerable merit in the study but at the same time had a diversity of major concerns about the some of the assumptions, analyses, and conclusions. The specific comments are provided in detail below.
+
+Reviewer #1:
+
+This article addresses an interesting hypothesis concerning place recognition in biosonar. The authors suggest that to recognize certain locations echolocating bats might employ place templates based on a specific echo signature rather than the 3 dimensional layout of the echo-acoustic scene. By assessing templates' discriminability and continuity independent of the spectral content of the ensonifying signal the proposed model was able to reliably recognize locations allowing which they claim can be sufficient for a successful navigation and orientation in an echo-acoustic environment. Yet, while this paper is intriguing, it might also be pushing the interpretation a little bit too far and should be considered in the larger scope of knowledge about bats, their navigation abilities and what is known so far regarding the link between their neural circuits and echolocation.
+
+The paper refers to "bat echolocation" but different bats have evolved very different echolocation strategies to navigate in their environments. Previous studies, also using artificial machines, have shown the capacity of bat-like sonar pulses to extract useful information about the environment, the leap towards suggesting that bats maintain a remarkably large library of pulse signatures to navigate in 3D rather than a memory of a 3D layout (perhaps in the hippocampal formation) is not well supported. From an etiological perspective it is unclear what would drive the system to prefer sonar-based place recognition over 3D spatial memory of the environment as that seems much less of an efficient recognition mechanism and one that is much less easily generalizable and amenable to changes in the environment. The authors also argue in the Discussion that "indirect evidence of a cognitive map exist through findings of grid-cells and place-cells in bats" but in fact those finding are contradicting their claim because those studies have shown that place/grid-cells can exist in the complete absence of echolocation, thus arguing echolocation is not, in fact, necessary for the formation of spatial maps in the hippocampal formation. Nonetheless the paper and the proposed hypothesis in intriguing albeit unlikely capturing the true nature of bat 3D navigation.
+
+Specific comments:
+
+In the second paragraph of the subsection “Model based place recognition”: The authors state that during ensonification of an object spectral cues are generated which encode both location of the object but also general object properties. This induces conflicting information concerning position and shape. This is certainly true but what the authors fail to mention is that bats – along with most mammals – have very flexible and most often disproportionally large ears. This allows them to rapidly move their ears independent of their head and therefore still keeps the outgoing ensonification signal directed toward the object of interest. These rapid ear movements introduce dynamic binaural cues relevant for horizontal object localization but more importantly here also relevant for elevation estimation. Efferent feedback signals encode the ears' position, which is integrated in the evaluation of the incoming echoes. This allows for a better localization performance and thereby can reduce possible conflicts of object shape and position.
+
+In the third paragraph of the subsection “Model based place recognition”: I do not quite agree that spectral cues are degraded when echoes from certain points are temporally integrated due to properties of the auditory system. In fact, distinct spectral cues are generated when temporally peaks are integrated, allowing for object recognition through spectral peak or notch detection (shown in many previous studies). Objects are therefore distinguishable through distinct temporal peaks or when not temporally resolvable through their spectral cues and notches. At the neural level, the work by Jim Simmons further supports this statement. Furthermore, integration can occur at later stages of processing beyond the auditory cortex. While a large fraction of neurophysiological studies have focused on the bat A1, there are many subsequent stages of processing that could lead to a coherent perception of the bat's location in 3D, including the hippocampal formation, basal ganglia, frontal cortex, colliculus, etc.
+
+In the second paragraph of the subsection “Ensonification”: Why was the employed pulse only ranged down to 40 kHz? More echo-acoustic information could have been extracted in lower frequency ranges that could still be perceived by echolocating bats (see publications concerning bat audiograms – albeit the authors do not consider the differences of bat echolocation signals across species). Especially the open space locations might be more reliably recognized by employing lower frequencies that have longer travel times with less atmospheric attenuation.
+
+In the last paragraph of the subsection “Template Construction”: It states that the templates were subsampled at a rate of 350 μs, a rate "slightly larger than the integration time of the model of Wiegrebe". Is subsampling an appropriate way to compensate for integration time? As I understand it, within the integration window accumulated information introduces masking because multiple echoes introduced within that time will be "combined" or considered together (integrated). It seems to me that subsampling would be less akin to integration and more akin to a "refractory period" in which only one echo within the window is taken into consideration, after which no echoes are considered until the end of the window. Would averaging the samples within each 350 μs block be a more appropriate approximation of integration time?
+
+In the first paragraph of the subsection “Template properties”: I was missing a discussion on object recognition based on echolocation sequencing. The authors only state that this is not necessary when employing their model based on echo signature rather than 3D layout. But many studies have shown that bats do indeed integrate sequences of echoes and can thereby reliably discriminate and classify objects.
+
+In the second paragraph of the subsection “Template properties”: the proposed model failed to recognize the echo signatures of the Open environment. The authors state that this is due to the missing diagnostic echoes. Many bat species travel in higher open spaces and still are able to reliably orient themselves. What do the authors propose how bats navigate instead in such an echo-acoustic situation?
+
+In the third paragraph of the subsection “Using templates for mapping”: The authors state that an obstacle avoidance mechanism and other guidance behaviors together with the suggested place recognition template model would allow bats following a restricted set of routes to successfully navigate through their environment. But often new obstacles might come in place disrupting the known echo-acoustic scene. Would the model still be able to reliably recognize the template? It would be interesting by how much echo signature recognition would be disrupted by inserting or deleting temporal characteristics of the templates or by phase warping parts of the signal.
+
+Etiology: In the Abstract and Introduction the authors note that long-distance navigation (Tsoar et al., 2011) requires vision while displaced bats can find their way home from within 15 km by sound (Stones and Branick, 1969 and Williams, Williams and Griffin, 1966). However, the studies cited for these two pieces of evidence refer to distinct species of bats that arose from separate lineages. Rousettus aegyptiacus (Tsoar et al., 2011) is a fruit- eating megabat belonging to the same clade as flying foxes and other fruit bats that rely exclusively on vision. It is the only member of its clade to have evolved echolocation in the form of tongue clicks, which are not as sophisticated as the laryngeal echolocation used by microbats, the clade that contains all other echolocating bats including those used in citations [Stones and Branick, 1969] and [Williams, Williams and Griffin, 1966] (Myotis spp. and Phyllostomus hastatus). The diets and environments of the three species are also quite different. Because the animals evolved to address different environmental pressures it is somewhat misleading to omit the species names in the text, as the findings of one study may not generalize to the species used in the others. The paper never states what genus or even family of bat is most closely modeled by the ensonification device, which is important because many bats have different types of echolocation and foraging strategies. Specifically, which species provided the model for the hyperbolic simulated pulse? Are bats that use calls resembling the simulated pulse found in all three areas ensonified in this study? At what height was the ensonification device placed? Was this the approximate height that bats living in the area might be expected to fly?
+
+Additional data files and statistical comments:
+
+The authors offer to make the data available and I think this is wonderful. The analysis overall seems appropriate.
+
+Reviewer #2:
+
+The current paper uses a combination of biophysical measurements and simulations to present a theoretical framework on how bats may navigate by the auditory analysis of self-generated sounds. Specifically, the authors derive echo-acoustic signatures, templates, from the echoes of their ensonifications and test the extent to which these templates carry information in terms of discriminability and smoothness. The authors hypothesise that templates must be discriminable from each other to meaningfully encode a position and/or orientation within a habitat and it must vary monotonously over a certain range of rotation or translation to be considered as 'smooth'.
+
+Overall the scientific approach is very well conceived and executed. The biophysical measurements are clearly motivated and described and the simulation approach is also well justified. The manuscript would benefit, however, from a more precise wording and better justification of some of the simulation assumptions.
+
+Following are specific comments, in order of appearance, not importance.
+
+In the fourth paragraph of the subsection “Model based place recognition”: The definition and implementation of temporal integration is misleading: temporal integration as a peripheral auditory limitation is (i) a feature of the Gammatone filter bank, determined by the duration of the filter impulse responses and (ii) a feature of the low-pass filtering (cutoff frequency not specified in the current paper) applied after compression. The first integration stage is not really a limit of temporal resolution; it only means that shorter events are recoded onto the frequency axis by the filter bank. The second integration is, I guess, already of a similar order as the 350 µs integration interval applied later. The authors should clarify implicit and explicit integration stages in their model.
+
+In point 1 of the third paragraph of the subsection “Template based place recognition”: The authors use the words 'identify', 'discriminate', 'distinguish' and 'recognize' interchangeably. In psychophysics, (e.g. of object perception) these are quite different levels of perception and so the authors should stick to that expression that matches their simulation, namely discrimination. For identification, for example, discrimination and classification are seen as prerequisites; see e.g. the chapters on object perception in toothed whales in the book by Whitlow Au.
+
+In point 2 of the third paragraph of the subsection “Template based place recognition”: rework definition of smoothness. Only later it becomes clear the monotonicity is required.
+
+In the second paragraph of the subsection “Template Construction”: provide values for compression and low-pass filtering.
+
+In the third paragraph of the subsection “Template Construction”: What is the directionality of the emitting system? If you average cochleograms across microphones, this is quite different than averaging the waveforms. The latter would produce strong directionality but what does averaging the cochleograms produce? This is very unphysiological! Shouldn't you have used the 31 mics like a phased array to thereby impose a bat HRTF on the data?
+
+In the second paragraph of the subsection “Template Construction”: the dechirping appears to be functionally similar to channel wise normalized autocorrelation in Wiegrebe (2008). Why do you deviate from that model here?
+
+In the first paragraph of the subsection “Quantifying discriminability”: you cannot equalize acoustic noise of mics with noise in the template because of non-linear processing (half-wave rectification and compression) in between.
+
+Figure 5: considering that you have unknown emission directionality the comparison with real bats appears not meaningful.
+
+Figure 6: panoramic view!
+
+In the third paragraph of the subsection “Template properties”: CF bats temporal resolution in the CF part however would be very bad (about equal to call duration, 50 ms!) so CF part is not usable, right?
+
+Reviewer #3:
+
+In this manuscript, the authors distinguish between two hypotheses of echolocation-based navigation in bats: model-based place recognition, in which echo cues underlie 3D reconstruction of a scene, vs. template-based recognition, in which a scene is represented directly from cochlear input. The manuscript proposes the viability of the template model, based on analyzing templates constructed from a large body of real-world ensonification data. The criteria for template viability were that a place template had to be discriminable from others, and that it was continuous, i.e. more similar to templates of nearby vs. distant locations. Simulated classification results (using Mahalanobis distance as a discrimination metric) were generally consistent with the clutter of the scenes surveyed. In open spaces with few landmarks, performance was low; in more cluttered spaces performance was high. Additionally, discriminable scenes tended to be continuous. Finally, the authors discuss their results in the context of constructing cognitive maps that can guide mesoscale navigation in bats.
+
+I enjoyed reading the paper and think it should be published. The analyses generally seem sound and carefully performed. Very few statistics are used in the paper; in some places a more formal analysis might lend weight to the results and interpretations. If I am reading the methods correctly, 3 replicate measurements were used to estimate noise at each position, which strikes me as a low number from which to estimate a distribution, whereas the Wiegrebe model used 20.
+
+As an experimentalist I would want to know to what extent bats actually behave in the ways predicted by the reported discrimination probabilities and catchment sizes. For example, the Wiegrebe paper that inspired the model did include some comparisons of P. discolor behavior against model predictions. Still, this paper sets the stage nicely for such an evaluation and provides a method for predicting navigation behaviors in a given environment. (I am less convinced that it provides a basis for rejecting object-based navigation mechanisms, which seemed to be an implied aim of the manuscript.)
+
+The authors argue that inherent limitations of biosonar (spectral ambiguity, integration time) make it unlikely that 3D representation of a scene is available to a cruising bat, and that such a representation is therefore unavailable to recognize places. The bases for this argument are plausible, but stop short of ruling out explicit object layout reconstruction as a navigational cue. After all, bats do perform object recognition and localization. Integrating across multiple echo calls, for example, might allow an echolocating bat to ameliorate the spatial blur imposed by the integration time described in the paper. In this vein, the authors might also elaborate on object recognition vs. place recognition "modes" of echolocation. If object-recognition mechanisms are not part of template-based navigation strategy, is there a tradeoff between navigation and object perception performance?

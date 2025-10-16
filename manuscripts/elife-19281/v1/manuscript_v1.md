@@ -1,0 +1,17 @@
+# GUY1 confers complete female lethality and is a strong candidate for a male-determining factor in Anopheles stephensi
+
+## Authors
+
+- Frank Criscione<sup>1</sup>
+- Yumin Qi<sup>1</sup>
+- Zhijian Jake Tu<sup>1</sup> ([ORCID: 0000-0003-4227-3819](https://orcid.org/0000-0003-4227-3819)) †
+
+### Affiliations
+
+1. Department of Biochemistry Virginia Tech Blacksburg United States
+
+† Corresponding author
+
+## Abstract
+
+Despite their importance in sexual differentiation and reproduction, Y chromosome genes are rarely described because they reside in repeat-rich regions that are difficult to study. Here, we show that Guy1 , a unique Y chromosome gene of a major urban malaria mosquito Anopheles stephensi , confers 100% female lethality when placed on the autosomes. We show that the small GUY1 protein (56 amino acids in length) causes female lethality and that males carrying the transgene are reproductively more competitive than their non-transgenic siblings under laboratory conditions. The GUY1 protein is a primary signal from the Y chromosome that affects embryonic development in a sex-specific manner. Our results have demonstrated, for the first time in mosquitoes, the feasibility of stable transgenic manipulation of sex ratios using an endogenous gene from the male-determining chromosome. These results provide insights into the elusive M factor and suggest exciting opportunities to reduce mosquito populations and disease transmission.

@@ -1,0 +1,24 @@
+# Regulation of retinal axon growth by secreted Vax1 homeodomain protein
+
+## Authors
+
+- Namsuk Kim
+- Kwang Wook Min
+- Kyung Hwa Kang
+- Eun Jung Lee
+- Hyoung-Tai Kim
+- Kyunghwan Moon
+- Jiheon Choi
+- Dai Le
+- Sang-Hee Lee
+- Jin Woo Kim †
+
+### Affiliations
+
+1. Department of Biological Sciences Korea Advanced Institute of Science and Technology Daejeon Republic of Korea jinwookim@kaist.ac.kr
+
+† Corresponding author
+
+## Abstract
+
+Retinal ganglion cell (RGC) axons of binocular animals cross the midline at the optic chiasm (OC) to grow toward their synaptic targets in the contralateral brain. Ventral anterior homeobox 1 (Vax1) plays an essential role in the development of the OC by regulating RGC axon growth in a non-cell autonomous manner. Here, we identify an unexpected function of Vax1 that is secreted from ventral hypothalamic cells and diffuses to RGC axons, where it promotes axonal growth independent of its transcription factor activity. We demonstrate that Vax1 binds to extracellular sugar groups of the heparan sulfate proteoglycans (HSPGs) located in RGC axons. Both Vax1 binding to HSPGs and subsequent penetration into the axoplasm, where Vax1 activates local protein synthesis, are required for RGC axonal growth. Together, our findings demonstrate that Vax1 possesses a novel RGC axon growth factor activity that is critical for the development of the mammalian binocular visual system.

@@ -1,0 +1,16 @@
+# Mutational robustness changes during long-term adaptation in laboratory budding yeast populations
+
+## Authors
+
+- Milo S Johnson<sup>1</sup> ([ORCID: 0000-0003-0169-2494](https://orcid.org/0000-0003-0169-2494)) †
+- Michael M Desai<sup>1</sup> ([ORCID: 0000-0002-9581-1150](https://orcid.org/0000-0002-9581-1150)) †
+
+### Affiliations
+
+1. Department of Organismic and Evolutionary Biology Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+As an adapting population traverses the fitness landscape, its local neighborhood (i.e., the collection of fitness effects of single-step mutations) can change shape because of interactions with mutations acquired during evolution. These changes to the distribution of fitness effects can affect both the rate of adaptation and the accumulation of deleterious mutations. However, while numerous models of fitness landscapes have been proposed in the literature, empirical data on how this distribution changes during evolution remains limited. In this study, we directly measure how the fitness landscape neighborhood changes during laboratory adaptation. Using a barcode-based mutagenesis system, we measure the fitness effects of 91 specific gene disruption mutations in genetic backgrounds spanning 8,000-10,000 generations of evolution in two constant environments. We find that the mean of the distribution of fitness effects decreases in one environment, indicating a reduction in mutational robustness, but does not change in the other. We show that these distribution-level patterns result from differences in the relative frequency of certain patterns of epistasis at the level of individual mutations, including fitness-correlated and idiosyncratic epistasis.

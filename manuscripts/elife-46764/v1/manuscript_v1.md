@@ -1,0 +1,16 @@
+# Classical conditioning drives learned reward prediction signals in climbing fibers across the lateral cerebellum
+
+## Authors
+
+- William Heffley<sup>1</sup> ([ORCID: 0000-0001-7733-7398](https://orcid.org/0000-0001-7733-7398))
+- Court Hull<sup>1</sup> ([ORCID: 0000-0002-0360-8367](https://orcid.org/0000-0002-0360-8367)) †
+
+### Affiliations
+
+1. Department of Neurobiology Duke University School of Medicine Durham United States
+
+† Corresponding author
+
+## Abstract
+
+Classical models of cerebellar learning posit that climbing fibers operate according to a supervised learning rule to instruct changes in motor output by signaling the occurrence of movement errors. However, cerebellar output is also associated with non-motor behaviors, and recently with modulating reward association pathways in the VTA. To test how the cerebellum processes reward related signals in the same type of classical conditioning behavior typically studied to evaluate reward processing in the VTA and striatum, we have used calcium imaging to visualize instructional signals carried by climbing fibers across the lateral cerebellum in mice before and after learning. We find distinct climbing fiber responses in three lateral cerebellar regions that can each signal reward prediction. These instructional signals are well suited to guide cerebellar learning based on reward expectation and enable a cerebellar contribution to reward driven behaviors, suggesting a broad role for the lateral cerebellum in reward-based learning.

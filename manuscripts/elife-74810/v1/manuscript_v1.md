@@ -1,0 +1,20 @@
+# Allosteric stabilization of calcium and phosphoinositide dual binding engages several synaptotagmins in fast exocytosis
+
+## Authors
+
+- Janus RL Kobbersmed<sup>1</sup> ([ORCID: 0000-0003-0313-6205](https://orcid.org/0000-0003-0313-6205))
+- Manon MM Berns<sup>2</sup>
+- Susanne Ditlevsen<sup>1</sup> ([ORCID: 0000-0002-1998-2783](https://orcid.org/0000-0002-1998-2783))
+- Jakob Balslev Sørensen<sup>2</sup> ([ORCID: 0000-0001-5465-3769](https://orcid.org/0000-0001-5465-3769))
+- Alexander M Walter<sup>1</sup> ([ORCID: 0000-0001-5646-4750](https://orcid.org/0000-0001-5646-4750)) †
+
+### Affiliations
+
+1. Department of Mathematical Sciences University of Copenhagen Copenhagen Denmark
+2. Department of Neuroscience University of Copenhagen Copenhagen Denmark
+
+† Corresponding author
+
+## Abstract
+
+Synaptic communication relies on the fusion of synaptic vesicles with the plasma membrane, which leads to neurotransmitter release. This exocytosis is triggered by brief and local elevations of intracellular Ca 2+ with remarkably high sensitivity. How this is molecularly achieved is unknown. While synaptotagmins confer the Ca 2+ sensitivity of neurotransmitter exocytosis, biochemical measurements reported Ca 2+ affinities too low to account for synaptic function. However, synaptotagmin's Ca 2+ affinity increases upon binding the plasma membrane phospholipid PI(4,5)P 2 and, vice versa, Ca 2+ -binding increases synaptotagmin's PI(4,5)P 2 affinity, indicating a stabilization of the Ca 2+ /PI(4,5)P 2 dual-bound syt. Here we devise a molecular exocytosis model based on this positive allosteric stabilization and the assumptions that (1.) synaptotagmin Ca 2+ /PI(4,5)P 2 dual binding lowers the energy barrier for vesicle fusion and that (2.) the effect of multiple synaptotagmins on the energy barrier is additive. The model, which relies on biochemically measured Ca 2+ /PI(4,5)P 2 affinities and protein copy numbers, reproduced the steep Ca 2+ dependency of neurotransmitter release. Our results indicate that each synaptotagmin dual binding Ca 2+ /PI(4,5)P 2 lowers the energy barrier for vesicle fusion by ~5 k B T and that allosteric stabilization of this state enables the synchronized engagement of several (typically three) synaptotagmins for fast exocytosis. Furthermore, we show that mutations altering synaptotagmin’s allosteric properties may show dominant-negative effects, even though synaptotagmins act independently on the energy barrier, and that dynamic changes of local PI(4,5)P 2 (e.g. upon vesicle movement) dramatically impact synaptic responses. We conclude that allosterically stabilized Ca 2+ /PI(4,5)P 2 dual binding enables synaptotagmins to exert their coordinated function in neurotransmission.

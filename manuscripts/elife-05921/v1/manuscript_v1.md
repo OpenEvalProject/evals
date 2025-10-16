@@ -1,0 +1,17 @@
+# Cochlear progenitor number is controlled through mesenchymal FGF receptor signaling
+
+## Authors
+
+- Sung-Ho Huh
+- Mark E Warchol
+- David M Ornitz †
+
+### Affiliations
+
+1. Departments of Developmental Biology Washington University School of Medicine St Louis United States dornitz@wustl.edu
+
+† Corresponding author
+
+## Abstract
+
+The sensory and supporting cells of the organ of Corti are derived from a limited number of progenitors. The mechanisms that regulate the number of sensory progenitors are not known. Here, we show that Fibroblast Growth Factors (FGF) 9 and 20, which are expressed in the non-sensory ( Fgf9 ) and sensory ( Fgf20 ) epithelium during otic development, regulate the number of cochlear progenitors. We further demonstrate that Fgf receptor ( Fgfr ) 1 signaling within the developing sensory epithelium is required for the differentiation of outer hair cells and supporting cells, while mesenchymal FGFRs regulate the size of the sensory progenitor population and the overall cochlear length. In addition, ectopic FGFR activation in mesenchyme was sufficient to increase sensory progenitor proliferation and cochlear length. These data define a feedback mechanism, originating from epithelial FGF ligands and mediated through periotic mesenchyme that controls the number of sensory progenitors and the length of the cochlea.

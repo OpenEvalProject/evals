@@ -1,0 +1,16 @@
+# Critical roles for 'housekeeping' nucleases in Type III CRISPR-Cas immunity
+
+## Authors
+
+- Lucy Chou-Zheng<sup>1</sup>
+- Asma Hatoum-Aslan<sup>1</sup> ([ORCID: 0000-0003-2395-8900](https://orcid.org/0000-0003-2395-8900)) †
+
+### Affiliations
+
+1. Microbiology Department University of Illinois Urbana-Champaign Urbana United States
+
+† Corresponding author
+
+## Abstract
+
+CRISPR-Cas systems are a family of adaptive immune systems that use small CRISPR RNAs (crRNAs) and CRISPR-associated (Cas) nucleases to protect prokaryotes from invading plasmids and viruses (i.e. phages). Type III systems launch a multi-layered immune response that relies upon both Cas and non-Cas cellular nucleases, and although the functions of Cas components have been well described, the identities and roles of non-Cas participants remain poorly understood. Previously, we showed that the Type III-A CRISPR-Cas system in Staphylococcus epidermidis employs two degradosome-associated nucleases, PNPase and RNase J2, to promote crRNA maturation and eliminate invading nucleic acids (Chou-Zheng and Hatoum-Aslan, 2019). Here, we identify RNase R as a third 'housekeeping' nuclease critical for immunity. We show that RNase R works in concert with PNPase to complete crRNA maturation, and identify specific interactions with Csm5, a member of the Type III effector complex, which facilitate nuclease recruitment/stimulation. Further, we demonstrate that RNase R and PNPase are required to maintain robust anti-plasmid immunity, particularly when targeted transcripts are sparse. Altogether, our findings expand the known repertoire of accessory nucleases required for Type III immunity and highlight the remarkable capacity of these systems to interface with diverse cellular pathways to ensure successful defense.

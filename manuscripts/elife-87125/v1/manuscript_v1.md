@@ -1,0 +1,19 @@
+# Differential modification of the C-terminal tails of different α-tubulins and their importance for microtubule function in vivo
+
+## Authors
+
+- Mengjing Bao<sup>1</sup>
+- Ruth E Dörig<sup>1</sup>
+- Paula Maria Vazquez-Pianzola<sup>1</sup>
+- Dirk Beuchle<sup>1</sup>
+- Beat Suter<sup>1</sup> ([ORCID: 0000-0002-0510-746X](https://orcid.org/0000-0002-0510-746X)) †
+
+### Affiliations
+
+1. Institute of Cell Biology University of Bern Bern Switzerland
+
+† Corresponding author
+
+## Abstract
+
+Microtubules (MTs) are built from α-/β-tubulin dimers and used as tracks by kinesin and dynein motors to transport a variety of cargos, such as mRNAs, proteins, and organelles, within the cell. Tubulins are subjected to several post-translational modifications (PTMs). Glutamylation is one of them, and it is responsible for adding one or more glutamic acid residues as branched peptide chains to the C-terminal tails of both α- and β-tubulin. However, very little is known about the specific modifications found on the different tubulin isotypes in vivo and the role of these PTMs in MT transport and other cellular processes in vivo . In this study, we found that in Drosophila ovaries, glutamylation of α-tubulin isotypes occurred clearly on the C-terminal ends of αTub84B and αTub84D (αTub84B/D). In contrast, the ovarian α-tubulin, αTub67C, is not glutamylated. The C-terminal ends of αTub84B/D are glutamylated at several glutamyl sidechains in various combinations. Drosophila TTLL5 is required for the mono- and poly-glutamylation of ovarian αTub84B/D and with this for the proper localization of glutamylated microtubules. Similarly, the normal distribution of Kinesin-1 in the germline relies on TTLL5 . Next, two Kinesin-1 dependent processes, the precise localization of Staufen and the fast, bidirectional ooplasmic streaming, depend on TTLL5 , too, suggesting a causative pathway. In the nervous system, a mutation of TTLL5 that inactivates its enzymatic activity decreases the pausing of anterograde axonal transport of mitochondria. Our results demonstrate in vivo roles of TTLL5 in differential glutamylation of α-tubulins and point to the in vivo importance of α-tubulin glutamylation for cellular functions involving microtubule transport.

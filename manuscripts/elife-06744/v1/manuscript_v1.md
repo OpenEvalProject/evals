@@ -1,0 +1,27 @@
+# MutS/MutL crystal structure reveals that the MutS sliding clamp loads MutL onto DNA
+
+## Authors
+
+- Flora S Groothuizen
+- Ines Winkler
+- Michele Cristóvão
+- Alexander Fish
+- Herrie H K Winterwerp
+- Annet Reumer
+- Andreas D Marx
+- Nicolaas Hermans
+- Robert A Nicholls
+- Garib N Murshudov
+- Joyce H G Lebbink
+- Peter Friedhoff
+- Titia K Sixma †
+
+### Affiliations
+
+1. Division of Biochemistry and CGC.nl Netherlands Cancer Institute Amsterdam Netherlands t.sixma@nki.nl
+
+† Corresponding author
+
+## Abstract
+
+To avoid mutations in the genome, DNA replication is generally followed by DNA mismatch repair (MMR). MMR starts when a MutS homolog recognizes a mismatch and undergoes an ATP-dependent transformation to an elusive sliding clamp state. How this transient state promotes MutL homolog recruitment and activation of repair is unclear. Here we present a crystal structure of the MutS/MutL complex using a site-specifically crosslinked complex and examine how large conformational changes lead to activation of MutL. The structure captures MutS in the sliding clamp conformation, where tilting of the MutS subunits across each other pushes DNA into a new channel, and reorientation of the connector domain creates an interface for MutL with both MutS subunits. Our work explains how the sliding clamp promotes loading of MutL onto DNA, to activate downstream effectors. We thus elucidate a crucial mechanism that ensures that MMR is initiated only after detection of a DNA mismatch.

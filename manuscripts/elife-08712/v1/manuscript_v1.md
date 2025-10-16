@@ -1,0 +1,24 @@
+# The GARP complex is required for cellular sphingolipid homeostasis
+
+## Authors
+
+- Florian Fröhlich
+- Constance Petit
+- Nora Kory
+- Romain Christiano
+- Hans-Kristian Hannibal-Bach
+- Morven Graham
+- Xinran Liu
+- Christer S Ejsing
+- Robert V Farese
+- Tobias C Walther †
+
+### Affiliations
+
+1. Department of Genetics and Complex Diseases Harvard T.H. Chan School of Public Health Boston United States twalther@hsph.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Sphingolipids are abundant membrane components and important signaling molecules in eukaryotic cells. Their levels and localization are tightly regulated. However, the mechanisms underlying this regulation remain largely unknown. Here, we identify the Golgi-associated retrograde protein (GARP) complex, which functions in endosome-to-Golgi retrograde vesicular transport, as a critical player in sphingolipid homeostasis. GARP deficiency leads to accumulation of sphingolipid synthesis intermediates, changes in sterol distribution and lysosomal dysfunction. A GARP complex mutation analogous to a VPS53 allele causing progressive cerebello-cerebral atrophy type 2 (PCCA2) in humans exhibits similar, albeit weaker, phenotypes in yeast, providing mechanistic insights into disease pathogenesis. Inhibition of the first step of de novo sphingolipid synthesis is sufficient to mitigate many of the phenotypes of GARP-deficient yeast or mammalian cells. Together, these data show that GARP is essential for cellular sphingolipid homeostasis and suggest a therapeutic strategy for the treatment of PCCA2.

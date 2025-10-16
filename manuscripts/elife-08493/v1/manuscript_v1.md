@@ -1,0 +1,20 @@
+# Nemo-like kinase is a novel regulator of spinal and bulbar muscular atrophy
+
+## Authors
+
+- Tiffany W Todd
+- Hiroshi Kokubu
+- Helen C Miranda
+- Constanza J Cortes
+- Albert R La Spada
+- Janghoo Lim †
+
+### Affiliations
+
+1. Program in Cellular Neuroscience, Neurodegeneration and Repair, Department of Genetics Yale School of Medicine New Haven United States janghoo.lim@yale.edu
+
+† Corresponding author
+
+## Abstract
+
+Spinal and Bulbar Muscular Atrophy (SBMA) is a progressive neuromuscular disease caused by polyglutamine expansion in the Androgen Receptor (AR) protein. Despite extensive research, the exact pathogenic mechanisms underlying SBMA remain elusive. Here we present evidence that Nemo-Like Kinase (NLK) promotes disease pathogenesis across multiple SBMA model systems. Most remarkably, loss of one copy of Nlk rescues SBMA phenotypes in mice, including extending lifespan. We also investigated the molecular mechanisms by which NLK exerts its effects in SBMA. Specifically, we have found that NLK can phosphorylate the mutant polyglutamine-expanded AR, enhance its aggregation, and promote AR-dependent gene transcription by regulating AR-cofactor interactions. Furthermore, NLK modulates the toxicity of a mutant AR fragment via a mechanism that is independent of AR-mediated gene transcription. Our findings uncover a crucial role for NLK in controlling SBMA toxicity and reveal a novel avenue for therapy development in SBMA.

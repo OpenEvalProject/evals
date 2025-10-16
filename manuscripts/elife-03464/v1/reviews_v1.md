@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- Feng Shao, National Institute of Biological Sciences , China
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.03464.015](https://doi.org/10.7554/eLife.03464.015)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “TNFR1-dependent cell death drives inflammation in Sharpin-deficient mice” for consideration at eLife. Your article has been favorably evaluated by Tadatsugu Taniguchi (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The Reviewing Editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments to help you prepare a revised submission.
+
+Sharpincpdm/cpdm mice (hereafter referred to as cpdm mice) develop severe dermatitis, characterized by extensive apoptotic cell death and multi-organ inflammatory pathologies. SHARPIN, an essential regulator of the LUBAC complex, has been implicated in TNF-induced NF-kB activation and protection against TNF-induced cell death. Previously, TNF and IL1 were both implicated in the development of the pathologies observed in cpdm mice. In the current manuscript, the authors wish to address the role of TNF receptors and cell death in the development of the inflammatory phenotypes in cpdm mice. The authors show that TNFR1 but not TNFR2 deficiency suppresses the cpdm phenotype. IL-R1 deficiency significantly delays the appearance of skin lesions, but eventually these mice develop disease. To investigate the role of cell death in the development of cpdm-related pathologies, the authors crossed these mice with caspase-8-, RIPK3-, BID-, and MLKL-deficient mice (and some combinations thereof). Caspase-8+/– prevented the development of skin lesions, but did not rescue spleen and liver inflammation. RIPK3 or MLKL ablation delayed the cpdm dermatitis occurrence, but it could not rescue the skin phenotype. In addition, these mice crosses showed reduced spleen inflammation and did not develop liver inflammation at 12 weeks of age. BID deficiency did not affect the cpdm phenotype. The fact that cpdm/caspase-8+/– mice did not develop dermatitis, but do develop pathology in the other organs affected in cpdm mice, shows the importance of cell death of driving the skin inflammatory phenotype observed in the cpdm mice. Combined RIPK3–/– and Casp8+/– completely protected against skin, liver, and spleen pathology in most mice. Surprisingly, triple SHARPIN-, RIPK3- and caspase-8-deficient mice display perinatal lethality. This is remarkable since it is known that RIPK3 ablation rescues early lethality of caspase-8–/– mice. One major issue with the manuscript is that it lacks the mechanistic exploration. The authors should address the following points before a revised manuscript can be considered.
+
+Major comments:
+
+1) The authors have observed keratinocyte cell death in vivo in Sharpin-deficient cpdm mice. They also show that increased caspase-3/8 cleavage in cultured primary keratinocyte from the cpdm mice. A potential important conclusion here is that Sharpin negatively regulates caspase-8-mediated apoptosis. The authors should expand this part of work to strengthen the mechanism underlying Sharpin-deficiency-induced skin inflammation in cpdm mice. They can quantify the cell death percentage by flow cytometry or ATP release assay. Furthermore, they can also analyze RIPK1/3-containing complexes upon TNF stimulation in the presence and absence of Sharpin. There are some keratinocyte cell lines such as HaCaT that can be used to perform siRNA knockdown.
+
+2) Sharpin is a component of LUBAC complex. The current manuscript fails to address whether TNF-driven cell death in the absence of Sharpin is due to the loss of linear ubiquitin chain synthesis. What is the role of NF-kB signaling in this process? If we knockdown other LUBAC components in keratinocyte, will the cells become more sensitive to TNF-induced cell death? Another possible way to do this is to employ the linear ubiquitin chain DUB Otulin. For example, is there any increased apoptosis sensitivity to TNF stimulation when Otulin is overexpressed in keratinocyte to eliminate the linear ubiquitin chains? If so, is this dependent upon the presence of Sharpin?
+
+3) The authors made an interesting and unexpected observation that Shpnm/mCasp8–/–Ripk3–/– mice die perinatally. This is stimulating and of potential significance. The authors should better define what is going wrong in the triple knockout mice that die perinatally. Is cell death in certain tissues at the basis of this?
+
+4) Throughout the manuscript, the authors only examine 3–5 mice in many of their experiments. This sample size appears to be too small; for example, in Figure 4B and 2D, there are no more than 2 Shpnm/mCasp8+/– mice used to measure epidermal thickness and spleen weight. The authors should increase the number of mice assayed so that the data are more complete and the conclusion is better justified.
+
+5) Figure 2C: There seems to be a significant number of anti-active caspase-3 positive cells in the dermis of cpdm mice at 9 weeks of age that do not seem to be associated with hair follicles. Are these apoptotic dermal fibroblast or another cell type (perhaps immune cells)? Characterizing these cells could be important in relation to the results presented in Figure 5–figure supplement 1.
+
+6) The data presented in Figure 3 and Figure 3–figure supplement 1 point out that the role of Sharpin in TNF-induced NF-kB activation could be different in keratinocytes compared to other cell types. One cannot observe a convincing difference in IkBα phosphorylation or degradation in these cells upon TNF stimulation. It would be interesting to compare the effects of Sharpin deficiency on TNF-induced NF-kB activation in MEFs, keratinocytes, and dermal fibroblasts. It may be that in certain cell types the main effect of Sharpin depletion is at the level of regulating cell death rather than NF-kB activation. This could also be stressed in the Discussion.
+
+7) Figure 5–figure supplement 1: Since TNF can induce, depending on the conditions, RIPK1-dependent apoptosis and necroptosis, and since cell death modes can switch from apoptosis to necrosis, and vice versa, when using apoptosis or necroptosis inhibitors, we cannot conclude which primary cell death mode is operating in cpdm dermal fibroblast without showing analysis of caspase activation in the different conditions used (western blot or DEVD assays).

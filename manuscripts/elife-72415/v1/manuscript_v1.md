@@ -1,0 +1,18 @@
+# Sensing complementary temporal features of odor signals enhances navigation of diverse turbulent plumes
+
+## Authors
+
+- Viraaj Jayaram<sup>1</sup>
+- Nirag Kadakia<sup>2</sup> ([ORCID: 0000-0001-9978-6450](https://orcid.org/0000-0001-9978-6450))
+- Thierry Emonet<sup>2</sup> ([ORCID: 0000-0002-6746-6564](https://orcid.org/0000-0002-6746-6564)) †
+
+### Affiliations
+
+1. Department of Physics Yale University New Haven United States
+2. Department of Molecular, Cellular and Developmental Biology Yale University New Haven United States
+
+† Corresponding author
+
+## Abstract
+
+We and others have shown that during odor plume navigation, walking Drosophila melanogaster bias their motion upwind in response to both the frequency of their encounters with the odor (Demir et al., 2020), and the intermittency of the odor signal, which we define to be the fraction of time the signal is above a detection threshold (Alvarez-Salvado et al., 2018). Here we combine and simplify previous mathematical models that recapitulated these data to investigate the benefits of sensing both of these temporal features, and how these benefits depend on the spatiotemporal statistics of the odor plume. Through agent-based simulations, we find that navigators that only use frequency or intermittency perform well in some environments - achieving maximal performance when gains are near those inferred from experiment - but fail in others. Robust performance across diverse environments requires both temporal modalities. However, we also find a steep tradeoff when using both sensors simultaneously, suggesting a strong benefit to modulating how much each sensor is weighted, rather than using both in a fixed combination across plumes. Finally, we show that the circuitry of the Drosophila olfactory periphery naturally enables simultaneous intermittency and frequency sensing, enhancing robust navigation through a diversity of odor environments. Together, our results suggest that the first stage of olfactory processing selects and encodes temporal features of odor signals critical to real-world navigation tasks.

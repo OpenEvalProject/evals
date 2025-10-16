@@ -1,0 +1,17 @@
+# A MET-PTPRK kinase-phosphatase rheostat controls ZNRF3 and Wnt signalling
+
+## Authors
+
+- Minseong Kim<sup>1</sup> ([ORCID: 0000-0002-3927-4899](https://orcid.org/0000-0002-3927-4899))
+- Carmen Reinhard<sup>1</sup>
+- Christof Niehrs<sup>1</sup> ([ORCID: 0000-0002-9561-9302](https://orcid.org/0000-0002-9561-9302)) †
+
+### Affiliations
+
+1. Division of Molecular Embryology Deutsches Krebsforschungszentrum (DKFZ) Heidelberg Germany
+
+† Corresponding author
+
+## Abstract
+
+Zinc and ring finger 3 (ZNRF3) is a transmembrane E3 ubiquitin ligase that targets Wnt receptors for ubiquitination and lysosomal degradation. Previously we showed that dephosphorylation of an endocytic tyrosine motif (4Y motif) in ZNRF3 by protein tyrosine phosphatase receptor-type kappa (PTPRK) promotes ZNRF3 internalization and Wnt receptor degradation (Chang et al. 2020). However, a responsible protein tyrosine kinase(s) (PTK) phosphorylating the 4Y motif remained elusive. Here we identify the proto-oncogene MET (mesenchymal-epithelial transition factor) as a 4Y kinase. MET binds to ZNRF3 and induces 4Y phosphorylation, stimulated by the MET ligand HGF (hepatocyte growth factor, scatter factor). HGF-MET signalling reduces ZNRF3-dependent Wnt receptor degradation thereby enhancing Wnt/b-catenin signalling. Conversely, depletion or pharmacological inhibition of MET promotes internalization of ZNRF3 and Wnt receptor degradation. We conclude that HGF-MET signalling phosphorylates- and PTPRK dephosphorylates ZNRF3 to regulate ZNRF3 internalization, functioning as a rheostat for Wnt signalling that may offer novel opportunities for therapeutic intervention.

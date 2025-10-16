@@ -1,0 +1,16 @@
+# The dominant-egalitarian transition in species-rich communities
+
+## Authors
+
+- David A Kessler<sup>1</sup> ([ORCID: 0000-0002-5279-1655](https://orcid.org/0000-0002-5279-1655)) †
+- Nadav M Shnerb<sup>1</sup> †
+
+### Affiliations
+
+1. Department of Physics Bar-Ilan University Ramat-Gan Israel
+
+† Corresponding author
+
+## Abstract
+
+Diverse communities of competing species are generally characterized by substantial niche overlap and strongly stochastic dynamics. Abundance fluctuations are proportional to population size, so the dynamics of rare populations is slower. Hence, once a population becomes rare, its abundance gets stuck at low values. Here, we analyze the effect of this phenomenon on community structure. We identify two distinct phases: a dominance phase, in which a tiny number of species constitute most of the community, and an egalitarian phase, where it takes a finite fraction of all species to constitute most of the community. Using empirical data from microbial, planktonic, and macroorganismal systems, we demonstrate the relevance of this transition and show how demographic stochasticity and immigration critically determine phase behavior. Our results suggest that even slight changes in noise strength or immigration rates can lead to abrupt shifts in community diversity.

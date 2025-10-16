@@ -1,0 +1,18 @@
+# Phase-amplitude coupling supports phase coding in human ECoG
+
+## Authors
+
+- Andrew J Watrous †
+- Lorena Deuker
+- Juergen Fell
+- Nikolai Axmacher
+
+### Affiliations
+
+1. German Center for Neurodegenerative Diseases Bonn Germany
+
+† Corresponding author
+
+## Abstract
+
+Prior studies have shown that high-frequency activity (HFA) is modulated by the phase of low-frequency activity. This phenomenon of phase-amplitude coupling (PAC) is often interpreted as reflecting phase coding of neural representations, although evidence for this link is still lacking in humans. Here, we show that PAC indeed supports phase-dependent stimulus representations for categories. Six patients with medication-resistant epilepsy viewed images of faces, tools, houses, and scenes during simultaneous acquisition of intracranial recordings. Analyzing 167 electrodes, we observed PAC at 43% of electrodes. Further inspection of PAC revealed that category specific HFA modulations occurred at different phases and frequencies of the underlying low-frequency rhythm, permitting decoding of categorical information using the phase at which HFA events occurred. These results provide evidence for categorical phase-coded neural representations and are the first to show that PAC coincides with phase-dependent coding in the human brain.

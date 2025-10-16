@@ -1,0 +1,24 @@
+# Translation of dipeptide repeat proteins in C9ORF72 ALS/FTD through unique and redundant AUG initiation codons
+
+## Authors
+
+- Yoshifumi Sonobe<sup>1</sup>
+- Soojin Lee<sup>2</sup>
+- Gopinath Krishnan<sup>2</sup>
+- Yuanzheng Gu<sup>3</sup>
+- Deborah Y Kwon<sup>3</sup>
+- Fen-Biao Gao<sup>2</sup>
+- Raymond P Roos<sup>1</sup> †
+- Paschalis Kratsios<sup>1</sup> ([ORCID: 0000-0002-1363-9271](https://orcid.org/0000-0002-1363-9271)) †
+
+### Affiliations
+
+1. University of Chicago Chicago United States
+2. RNA Therapeutics Institute University of Massachusetts Medical School Worcester United States
+3. Neuromuscular and Movement Disorders Biogen Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+A hexanucleotide repeat expansion in C9ORF72 is the most common genetic cause of amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD). A hallmark of ALS/FTD pathology is the presence of dipeptide repeat (DPR) proteins, produced from both sense GGGGCC (poly-GA, poly-GP, poly-GR) and antisense CCCCGG (poly-PR, poly-PG, poly-PA) transcripts. Translation of sense DPRs, such as poly-GA and poly-GR, depends on non-canonical (non-AUG) initiation codons. Here, we provide evidence for canonical AUG-dependent translation of two antisense DPRs, poly-PR and poly-PG. A single AUG is required for synthesis of poly-PR, one of the most toxic DPRs. Unexpectedly, we found redundancy between three AUG codons necessary for poly-PG translation. Further, the eukaryotic translation initiation factor 2D (EIF2D), which was previously implicated in sense DPR synthesis, is not required for AUG-dependent poly-PR or poly-PG translation, suggesting that distinct translation initiation factors control DPR synthesis from sense and antisense transcripts. Our findings on DPR synthesis from the C9ORF72 locus may be broadly applicable to many other nucleotide-repeat expansion disorders.

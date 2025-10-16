@@ -1,0 +1,19 @@
+# Cytosolic Hsp70 and co-chaperones constitute a novel system for tRNA import into the nucleus
+
+## Authors
+
+- Akira Takano
+- Takuya Kajita
+- Makoto Mochizuki
+- Toshiya Endo
+- Tohru Yoshihisa †
+
+### Affiliations
+
+1. Graduate School of Life Science University of Hyogo Kobe Japan tyoshihi@sci.u-hyogo.ac.jp
+
+† Corresponding author
+
+## Abstract
+
+tRNAs are unique among various RNAs in that they shuttle between the nucleus and the cytoplasm, and their localization is regulated by nutrient conditions. Although nuclear export of tRNAs has been well documented, the import machinery is poorly understood. Here, we identified Ssa2p, a major cytoplasmic Hsp70 in Saccharomyces cerevisiae , as a tRNA-binding protein whose deletion compromises nuclear accumulation of tRNAs upon nutrient starvation. Ssa2p recognizes several structural features of tRNAs through its nucleotide-binding domain, but prefers loosely-folded tRNAs, suggesting that Ssa2p has a chaperone-like activity for RNAs. Ssa2p also binds Nup116, one of the yeast nucleoporins. Sis1p and Ydj1p, cytoplasmic co-chaperones for Ssa proteins, were also found to contribute to the tRNA import. These results unveil a novel function of the Ssa2p system as a tRNA carrier for nuclear import by a novel mode of substrate recognition. Such Ssa2p-mediated tRNA import likely contributes to quality control of cytosolic tRNAs.

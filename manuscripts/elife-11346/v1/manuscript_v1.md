@@ -1,0 +1,19 @@
+# P1 interneurons promote a persistent internal state that enhances inter-male aggression in Drosophila
+
+## Authors
+
+- Eric D Hoopfer
+- Yonil Jung
+- Hidehiko K Inagaki
+- Gerald M Rubin
+- David J Anderson †
+
+### Affiliations
+
+1. Division of Biology and Biological Engineering Howard Hughes Medical Institute, California Institute of Technology Pasadena United States wuwei@caltech.edu
+
+† Corresponding author
+
+## Abstract
+
+How brains are hardwired to produce aggressive behavior, and how aggression circuits are related to those that mediate courtship, is not well understood. A large-scale screen for aggression-promoting neurons in Drosophila identified several independent hits that enhanced both inter-male aggression and courtship. Genetic intersections revealed that P1 interneurons, previously thought to exclusively control male courtship, were responsible for both phenotypes. The aggression phenotype was fly-intrinsic, and required male-specific chemosensory cues on the opponent. Optogenetic experiments indicated that P1 activation promoted aggression vs. wing extension at low vs. high thresholds, respectively. High frequency photostimulation promoted wing extension and aggression in an inverse manner, during light ON and OFF, respectively. P1 activation enhanced aggression by promoting a persistent internal state, which could endure for minutes prior to social contact. Thus P1 neurons promote an internal state that facilitates both aggression and courtship, and can control these social behaviors in a threshold-dependent manner.

@@ -1,0 +1,21 @@
+# Process- and product-related impurities in the ChAdOx1 nCov-19 vaccine
+
+## Authors
+
+- Lea Krutzke<sup>1</sup> ([ORCID: 0000-0002-4092-4131](https://orcid.org/0000-0002-4092-4131))
+- Reinhild Rösler<sup>2</sup>
+- Ellen Allmendinger<sup>1</sup>
+- Tatjana Engler<sup>1</sup>
+- Sebastian Wiese<sup>2</sup>
+- Stefan Kochanek<sup>1</sup> ([ORCID: 0000-0001-7494-1602](https://orcid.org/0000-0001-7494-1602)) †
+
+### Affiliations
+
+1. Department of Gene Therapy University of Ulm Ulm Germany
+2. Core Unit Mass Spectrometry and Proteomics University of Ulm Ulm Germany
+
+† Corresponding author
+
+## Abstract
+
+ChAdOx1 nCov-19 and Ad26.COV2.S are approved vaccines inducing protective immunity against SARS-CoV-2 infection in humans by expressing the Spike protein of SARS-CoV-2. We analyzed protein content and protein composition of ChAdOx1 nCov-19 and Ad26.COV2.S by biochemical methods and by mass-spectrometry. Four out of four tested lots of ChAdOx1 nCoV-19 contained significantly higher than expected levels of host cell proteins (HCPs) and of free viral proteins. The most abundant contaminating HCPs belonged to the heat-shock protein (HSP) and cytoskeletal protein families. The HCP content exceeded the 400 ng specification limit per vaccine dose, as set by the European Medicines Agency (EMA) for this vaccine, by at least 25-fold and the manufacturer's batch-release data in some of the lots by several hundred-fold. In contrast, three tested lots of the Ad26.COV2.S vaccine contained only very low amounts of HCPs. As shown for Ad26.COV2.S production of clinical grade adenovirus vaccines of high purity is feasible at an industrial scale. Correspondingly, purification procedures of the ChAdOx1 nCov-19 vaccine should be modified to remove protein impurities as good as possible. Our data also indicate that standard quality assays, as they are used in the manufacturing of proteins, have to be adapted for vectored vaccines.

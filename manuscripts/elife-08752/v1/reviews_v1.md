@@ -1,0 +1,23 @@
+# Peer review - Round 1
+
+Editors:
+- Douglas L Black, Howard Hughes Medical Institute, University of California, Los Angeles , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.08752.013](https://doi.org/10.7554/eLife.08752.013)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for submitting your work entitled “Layer 2/3 pyramidal cells in the medial prefrontal cortex moderate stress-induced depressive behaviors” for peer review at eLife. Your submission has been favorably evaluated by a Senior Editor, a Reviewing Editor, and two reviewers.
+
+The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+This study from the Heintz lab presents a technically sophisticated analysis of Wfs1 gene function in the superficial cortical layer 2/3 of the medial prefrontal cortex, and demonstrates a role for Wfs1 in regulating stress responses and depression-related behaviors. Previous studies linked Wfs1 with an increased risk for mood disorders including depression, but the cellular and molecular bases through which this gene may drive depression-related behaviors were not clear. To address these questions, the authors first profiled gene expression in layer 2/3 pyramidal cells of the mPFC using a novel bacTRAP mouse line and establish the selective expression of Wfs1 in these neurons. Using novel conditional Wfs1 CKO mice, they demonstrate that loss of Wfs1 in mPFC cortical pyramidal neurons leads to depression related behaviors (immobility in the forced swim test and anhedonia) after acute restraint stress (ARS). The authors show that the CKO mice have normal baseline motor and learning behaviors and hence are selectively impaired in stress responses. The connectivity of mPFC Wfs1-expressing neurons was analyzed using genetically based tracing methods. They provide evidence that the CKO mice exhibit an exaggerated physiological response to ARS, consistent with hyperactivation of the HPA axis (e.g. elevated c-fos+ in hypothalamic neurons and increased serum corticosterone levels). Finally, they show that Wfs1 CKO mice exhibit abnormal levels of two secreted proteins (WNT7A and NTF3) only upon exposure to ARS, suggesting stress-induced ER deficits. Overall, the study provides convincing evidence to demonstrate that Wfs1 and Wfs1-expressing mPFC pyramidal neurons are regulators of stress responses in mice, and lends important support for a link between Wfs1 and depression-related behaviors in model organisms and patients.
+
+This study is among the first to dissect neural circuitry related to depression-related behaviors using genes that are genetically linked to the disease. The reviewers felt that this study is an important addition to the understanding of depression-related neurocircuits, and provides important insights into where Wfs1 deficiency could elicit depression-related behaviors. The newly developed Wfs1 conditional KO mice will also provide an invaluable tool for future studies of other Wfs1-expressing neurons in regulating depression-related behaviors.
+
+With that said, there are several places where the authors overstate what is actually shown. They do not rule out that Wfs1 deficiency in structures other than layer 2/3 also play a role in these behaviors; the amygdala being one particular target. Also, the layer 2/3 Wfs1-expressing cells surely also project within the columns of the mPFC; thus, their effect on stress responsiveness might result from disruption of processing within the mPFC, and hence other outputs from mPFC, including from non-Wfs1 cells. The authors should revise their discussion of their results to make these other possibly more indirect effects of their mutation clear. Similarly, although WFS patients showed increased risk for depression, there is no evidence from GWAS studies to show Wfs1 variants have a significant association with MDD. The authors should modify their Abstract and Discussion to avoid stating that their findings have implications for MDD (e.g. in the Abstract: “ Our data identify superficial layer 2/3 pyramidal cells as critical for moderation of stress in the context of MDD…”).

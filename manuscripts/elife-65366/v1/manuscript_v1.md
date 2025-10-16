@@ -1,0 +1,17 @@
+# Whole genome phylogenies reflect the distributions of recombination rates for many bacterial species
+
+## Authors
+
+- Thomas Sakoparnig<sup>1</sup>
+- Chris Field<sup>1</sup>
+- Erik van Nimwegen<sup>1</sup> ([ORCID: 0000-0001-6338-1312](https://orcid.org/0000-0001-6338-1312)) †
+
+### Affiliations
+
+1. Biozentrum University of Basel Basel Switzerland
+
+† Corresponding author
+
+## Abstract
+
+Although recombination is accepted to be common in bacteria, for many species robust phylogenies with well-resolved branches can be reconstructed from whole genome alignments of strains, and these are generally interpreted to reflect clonal relationships. Using new methods based on the statistics of single-nucleotide polymorphism (SNP) splits, we show that this interpretation is incorrect. For many species, each locus has recombined many times along its line of descent, and instead of many loci supporting a common phylogeny, the phylogeny changes many thousands of times along the genome alignment. Analysis of the patterns of allele sharing among strains shows that bacterial populations cannot be approximated as either clonal or freely recombining, but are structured such that recombination rates between lineages vary over several orders of magnitude, with a unique pattern of rates for each lineage. Thus, rather than reflecting clonal ancestry, whole genome phylogenies reflect distributions of recombination rates.

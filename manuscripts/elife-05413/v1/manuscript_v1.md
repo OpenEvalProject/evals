@@ -1,0 +1,23 @@
+# Structural dynamics of myosin 5 during processive motion revealed by interferometric scattering microscopy
+
+## Authors
+
+- Joanna Andrecka
+- Jaime Ortega Arroyo
+- Yasuharu Takagi
+- Gabrielle de Wit
+- Adam Fineberg
+- Lachlan MacKinnon
+- Gavin Young
+- James R Sellers
+- Philipp Kukura †
+
+### Affiliations
+
+1. Physical and Theoretical Chemistry Laboratory, Department of Chemistry University of Oxford Oxford United Kingdom philipp.kukura@chem.ox.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Myosin 5a is a dual-headed molecular motor that transports cargo along actin filaments. By following the motion of individual heads with interferometric scattering microscopy at nm spatial and ms temporal precision we found that the detached head occupies a loosely fixed position to one side of actin from which it rebinds actin in a controlled and  manner while executing a step. Improving the spatial precision to the sub-nm regime provided evidence for an angstrom-level structural transition in the motor domain associated with the power stroke. Simultaneous tracking of both heads revealed that consecutive steps follow identical paths to the same side of actin in a compass-like spinning motion demonstrating a symmetrical walking pattern. These results visualize many of the critical unknown aspects of the stepping mechanism of myosin 5 including head-head coordination, the origin of lever-arm motion and the spatiotemporal dynamics of the translocating head during individual steps.

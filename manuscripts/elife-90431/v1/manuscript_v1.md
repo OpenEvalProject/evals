@@ -1,0 +1,25 @@
+# Optogenetic activation of visual thalamus generates artificial visual percepts
+
+## Authors
+
+- Jing Wang<sup>1</sup>
+- Hamid Azimi<sup>2</sup>
+- Yilei Zhao<sup>2</sup> ([ORCID: 0000-0002-5146-8493](https://orcid.org/0000-0002-5146-8493))
+- Melanie Kaeser<sup>2</sup>
+- Pilar Vaca Sánchez<sup>2</sup>
+- Abraham Vazquez-Guardado<sup>3</sup> ([ORCID: 0000-0002-0648-5921](https://orcid.org/0000-0002-0648-5921))
+- John A Rogers<sup>3</sup>
+- Michael Harvey<sup>2</sup> ([ORCID: 0000-0002-0477-6100](https://orcid.org/0000-0002-0477-6100))
+- Gregor Rainer<sup>2</sup> ([ORCID: 0000-0002-5805-2220](https://orcid.org/0000-0002-5805-2220)) †
+
+### Affiliations
+
+1. Department of Medicine University of Fribourg Fribourgs Switzerland
+2. Department of Medicine University of Fribourg Fribourg Switzerland
+3. Department of Material Science and Engineering Northwestern University Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+The lateral geniculate nucleus (LGN), a retinotopic relay center where visual inputs from the retina are processed and relayed to the visual cortex, has been proposed as a potential target for artificial vision. At present, it is unknown whether optogenetic LGN stimulation is sufficient to elicit behaviorally relevant percepts, and the properties of LGN neural responses relevant for artificial vision have not been thoroughly characterized. Here, we demonstrate that tree shrews pretrained on a visual detection task can detect optogenetic LGN activation using an AAV2-CamKIIα-ChR2 construct and readily generalize from visual to optogenetic detection. Simultaneous recordings of LGN spiking activity and primary visual cortex (V1) local field potentials (LFP) during optogenetic LGN stimulation show that LGN neurons reliably follow optogenetic stimulation at frequencies up to 60 Hz, and uncovered a striking phase locking between the V1 local field potential (LFP) and the evoked spiking activity in LGN. These phase relationships were maintained over a broad range of LGN stimulation frequencies, up to 80 Hz, with spike field coherence values favoring higher frequencies, indicating the ability to relay temporally precise information to V1 using light activation of the LGN. Finally, V1 LFP responses showed sensitivity values to LGN optogenetic activation that were similar to the animal's behavioral performance. Taken together, our findings confirm the LGN as a potential target for visual prosthetics in a highly visual mammal closely related to primates.

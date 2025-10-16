@@ -1,0 +1,28 @@
+# The Rqc2/Tae2 subunit of the Ribosome-Associated Quality Control (RQC) complex marks ribosome-stalled nascent polypeptide chains for aggregation
+
+## Authors
+
+- Ryo Yonashiro
+- Erich B Tahara
+- Mario H Bengtson
+- Maria Khokhrina
+- Holger Lorenz
+- Kai-Chun Chen
+- Yu Kigoshi-Tansho
+- Jeffrey N Savas
+- John R Yates
+- Steve A Kay
+- Elizabeth A Craig
+- Axel Mogk
+- Bernd Bukau
+- Claudio AP Joazeiro †
+
+### Affiliations
+
+1. Department of Cell and Molecular Biology The Scripps Research Institute La Jolla United States joazeiro@scripps.edu
+
+† Corresponding author
+
+## Abstract
+
+Ribosome stalling during translation can be harmful, and is surveyed by a conserved quality control pathway that targets the associated mRNA and nascent polypeptide chain (NC). In this pathway, the ribosome-associated quality control (RQC) complex promotes the ubiquitylation and degradation of NCs remaining stalled in the 60S subunit. NC stalling is recognized by the Rqc2/Tae2 RQC subunit, which also stabilizes binding of the E3 ligase, Listerin/Ltn1. Additionally, Rqc2 modifies stalled NCs with a carboxy-terminal, Ala- and Thr-containing extension-the 'CAT tail.' However, the function of CAT tails and fate of CAT tail-modified ('CATylated') NCs has remained unknown. Here we show that CATylation mediates NC aggregation. NC CATylation and aggregation could be observed by inactivating Ltn1 or by analyzing NCs with limited ubiquitylation potential, suggesting that inefficient targeting by Ltn1 favors the Rqc2-mediated reaction. These findings uncover a translational stalling-dependent protein aggregation mechanism, and provide evidence that proteins can become marked for aggregation.

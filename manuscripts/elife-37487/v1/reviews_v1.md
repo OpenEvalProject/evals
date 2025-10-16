@@ -1,0 +1,25 @@
+# Peer review - Round 1
+
+Editors:
+- Olivier Jacques Manzoni, Aix Marseille Univ, INSERM, INMED France
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.37487.020](https://doi.org/10.7554/eLife.37487.020)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Somatic nicotinic acetylcholine receptors control the activity of dopamine neurons and reward-related behaviors" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert Wickham (Reviewer #2) and Stephanie J Cragg (Reviewer #3). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary of reviews and post-review discussion
+
+Durand de-Cotelli et al., uses a highly innovative approach to assess the β2*nAChR's responsiveness to nicotine in vivo as well as to assess this receptor's function in nicotine reward. Previous knockout work is limited due to potential compensatory changes by loss of the β2*nAChR, and pharmacological treatment non-selectively targets non DAergic neurons as well as DAergic neurons, making it challenging to assign a direct function to DAergic β2*nAChRs. This approach may be able to get around these two problems by directly activating/inactivate somatic β2*nAChRs in the VTA. In general, the reviewers were appreciative of the study, but they all agreed that the manuscript suffers from key overinterpretations which limited their enthusiasm. In a nutshell, they questioned the claim (repeatedly made throughout the manuscript and in the title) that the manipulation is specific to "somatic" β2*nAChRs". The original reviews are summarized below with the essential points that must be addressed in the revision:
+
+1) It is not clear why the actions described here couldn't involve other non-DA cells and afferents that input to the recorded VTA DA neurons. There is no cell-specific targeting. From the description provided in the manuscript, it seems as if the virus containing the β2E61C construct is transfected in all neurons in the VTA, which should mean pre and post-synaptic neurons should be activated upon light stimulation. Thus, it is unclear how the manipulation only target "somatic", i.e. postsynaptic, β2*nAChRs. Of note, similar lentiviral methods which the authors cite (Maskos et al., 2005) result in expression in at least DA and GABA neurons in VTA. The authors Figure 4—figure supplement 1A also shows strong GFP where there is no TH (e.g. bottom right). Even the β2-/- manipulation is not targeted to DA neurons but is global. The authors strongly intimate postsynaptic "somatic" nAChRs on DA neurons but other sources have simply not been excluded or controlled for. Thus, the authors must provide experimental evidence that their β2E61C is localized to "somatic" compartments. In the CPP experiments notably, direct demonstration of an absence of presynaptic β2*nAChR contribution is necessary (a possible control could be to show that eGFP is not expressed in pedunculopontine and laterodorsal tegmental nuclei).
+
+2) What is the evidence that stereotaxic injection of PGK-β2E61C-Ires-EGFP lentivirus in the VTA does not transduce presynaptic cholinergic afferents or GABAergic neurons of the VTA? The authors argue that the control of DA firing is only on the control of the somatic post synaptic β2*nAChR expressed in DA VTA neurons but it lacks the demonstration that their stereotactic injection of PGK-β2E61C-Ires-EGFP lentivirus in the VTA does not transduce presynaptic cholinergic afferents. It could be easily done by showing that eGFP is not expressed in pedunculopontine and laterodorsal tegmental nuclei.
+
+3) In the Discussion, the authors revisit an old debate to distinguish the role of nAChRs in VTA versus DA terminals in nicotine reinforcement because "Nicotine can also induce DA release through pre-synaptic effects, either directly in the striatum at the level of DA terminals". They are revisiting an old argument to which they have previously contributed and which many have previously addressed. It has previously been discussed that the actions of nicotine at axon terminals appear to involve primarily desensitization (not inducing release) which magnifies the effects of a change in DA neuron firing rate (previous works by Dani, Maskos, Faure, Exley, Cragg). Terminal effects of nAChRs might depend upon changes in DA neuron firing rate. The authors have again revisited the mistakes of the past and concluded that receptors outside of VTA are not important for nicotine reinforcement, which they have not shown here. The writing needs to be more accurate.

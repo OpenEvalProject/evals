@@ -1,0 +1,18 @@
+# cryo-EM structures of the E. coli replicative DNA polymerase reveal dynamic interactions with clamp, exonuclease and τ
+
+## Authors
+
+- Rafael Fernández-Leiro
+- Julian Conrad
+- Sjors HW Scheres
+- Meindert Hugo Lamers †
+
+### Affiliations
+
+1. Structural Studies Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom mlamers@mrc-lmb.cam.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+The replicative DNA polymerase PolIIIα from E. coli is a uniquely fast and processive enzyme. For its activity it relies on the DNA sliding clamp β, the proofreading exonuclease ε and the C-terminal domain of the clamp loader subunit τ. Due to the dynamic nature of the four-protein complex it has long been refractory to structural characterization. Here we present the 8 Å resolution cryo-electron microscopy structures of DNA-bound and DNA-free states of the PolIII-clamp-exonuclease-τc complex. The structures show how the polymerase is tethered to the DNA through multiple contacts with the clamp and exonuclease. A novel contact between the polymerase and clamp is made in the DNA bound state, facilitated by a large movement of the polymerase tail domain and τc. These structures provide crucial insights into the organization of the catalytic core of the replisome and form an important step towards determining the structure of the complete holoenzyme.

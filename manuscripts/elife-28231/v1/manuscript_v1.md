@@ -1,0 +1,18 @@
+# E3 ubiquitin ligase Bre1 couples sister chromatid cohesion establishment to DNA replication in Saccharomyces cerevisiae
+
+## Authors
+
+- Wei Zhang<sup>1</sup>
+- Clarence Hue Lok Yeung<sup>1</sup>
+- Liwen Wu<sup>1</sup>
+- Karen Wing Yee Yuen<sup>1</sup> ([ORCID: 0000-0002-2139-5465](https://orcid.org/0000-0002-2139-5465)) †
+
+### Affiliations
+
+1. School of Biological Sciences The University of Hong Kong Hong Kong Hong Kong
+
+† Corresponding author
+
+## Abstract
+
+Bre1, a conserved E3 ubiquitin ligase in Saccharomyces cerevisiae , together with its interacting partner Lge1, are responsible for histone H2B monoubiquitination, which regulates transcription, DNA replication, DNA damage response and repair, ensuring the structural integrity of the genome. Deletion of BRE1 or LGE1 also results in whole chromosome instability. We discovered a novel role for Bre1, Lge1 and H2Bub1 in chromosome segregation and sister chromatid cohesion. Bre1's function in G1 and S phases contributes to cohesion establishment, but it is not required for cohesion maintenance in G2 phase. Bre1 is dispensable for the loading of cohesin complex to chromatin in G1, but regulates the localization of replication factor Mcm10 and cohesion establishment factors Ctf4, Ctf18 and Eco1 to early replication origins in G1 and S phase, and promotes cohesin subunit Smc3 acetylation for cohesion stabilization. H2Bub1 epigenetically marks the origins, potentially signaling the coupling of DNA replication and cohesion establishment.

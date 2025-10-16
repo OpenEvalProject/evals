@@ -1,0 +1,19 @@
+# Pre-transition effects mediate forces of assembly between transmembrane proteins
+
+## Authors
+
+- Shachi Katira
+- Kranthi K Mandadapu
+- Suriyanarayanan Vaikuntanathan
+- Berend Smit
+- David Chandler †
+
+### Affiliations
+
+1. Department of Chemistry University of California, Berkeley Berkeley United States chandler@berkeley.edu
+
+† Corresponding author
+
+## Abstract
+
+We present a mechanism for a generic, powerful force of assembly and mobility for transmembrane proteins in lipid bilayers. This force is a pre-transition (or pre-melting) effect for the first-order transition between ordered and disordered phases in the membrane. Using large-scale molecular simulation, we show that a protein with hydrophobic thickness equal to that of the disordered phase embedded in an ordered bilayer stabilizes a microscopic order-disorder interface. The stiffness of that interface is finite. When two such proteins approach each other, they assemble because assembly reduces the net interfacial energy.  Analogous to the hydrophobic effect, we refer to this phenomenon as the 'orderphobic effect'. The effect is mediated by proximity to the order-disorder phase transition and the size and hydrophobic mismatch of the protein. The strength and range of forces arising from this effect are significantly larger than those that could arise from membrane elasticity for the membranes considered.

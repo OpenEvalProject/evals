@@ -1,0 +1,19 @@
+# Clathrin modulates vesicle scission, but not invagination shape, in yeast endocytosis
+
+## Authors
+
+- Wanda Kukulski †
+- Andrea Picco
+- Tanja Specht
+- John AG Briggs
+- Marko Kaksonen
+
+### Affiliations
+
+1. Cell Biology and Biophysics Unit European Molecular Biology Laboratory Heidelberg Germany
+
+† Corresponding author
+
+## Abstract
+
+In a previous paper (1), the dynamic architecture of the protein machinery during clathrin-mediated endocytosis was visualized using a new live imaging and particle tracking method. Here, by combining this approach with correlative light and electron microscopy, we address the role of clathrin in this process. During endocytosis, clathrin forms a cage-like coat around the membrane and associated protein components. There is growing evidence that clathrin does not determine the membrane morphology of the invagination but rather modulates the progression of endocytosis. We investigate how the deletion of clathrin heavy chain impairs the dynamics and the morphology of the endocytic membrane in budding yeast. Our results show that clathrin is not required for elongating or shaping the endocytic membrane invagination. Instead, we find that clathrin contributes to the regularity of vesicle scission and thereby to controlling vesicle size.

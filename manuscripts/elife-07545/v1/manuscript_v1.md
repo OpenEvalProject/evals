@@ -1,0 +1,20 @@
+# Quantitative time-resolved analysis reveals intricate, differential regulation of standard- and immuno-proteasomes
+
+## Authors
+
+- Juliane Liepe
+- Hermann-Georg Holzhütter
+- Elena Bellavista
+- Peter M Kloetzel
+- Michael PH Stumpf †
+- Michele Mishto
+
+### Affiliations
+
+1. Institut für Biochemie Charité - Universitätsmedizin Berlin Berlin Germany
+
+† Corresponding author
+
+## Abstract
+
+Proteasomal protein degradation is a key determinant of protein half-life and hence of cellular processes ranging from basic metabolism to a host of immunological processes. Despite its importance the mechanisms regulating proteasome activity are only incompletely understood. Here we use an iterative and tightly integrated experimental and modelling approach to develop, explore and validate mechanistic models of proteasomal peptide-hydrolysis dynamics. The 20S proteasome is a dynamic enzyme and its activity varies over time because of interactions between substrates and products and the proteolytic and regulatory sites; the locations of these sites and the interactions between them are predicted by the model, and experimentally supported. The analysis suggests that the rate-limiting step of hydrolysis is the transport of the substrates into the proteasome. The transport efficiency varies between human standard- and immuno-proteasomes thereby impinging upon total degradation rate and substrate cleavage-site usage.

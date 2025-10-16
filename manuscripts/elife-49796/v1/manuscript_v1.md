@@ -1,0 +1,20 @@
+# Selective clearance of the inner nuclear membrane protein emerin by vesicular transport during ER stress
+
+## Authors
+
+- Abigail Buchwalter<sup>1</sup> ([ORCID: 0000-0001-7181-6961](https://orcid.org/0000-0001-7181-6961)) †
+- Roberta Schulte<sup>2</sup>
+- Hsiao Tsai<sup>2</sup>
+- Juliana Capitanio<sup>2</sup>
+- Martin Hetzer<sup>2</sup> †
+
+### Affiliations
+
+1. Cardiovascular Research Institute University of California, San Francisco San Francisco United States
+2. Molecular and Cell Biology Laboratory The Salk Institute for Biological Studies La Jolla United States
+
+† Corresponding author
+
+## Abstract
+
+The inner nuclear membrane (INM) is a subdomain of the endoplasmic reticulum (ER) that is gated by the nuclear pore complex. It is unknown whether proteins of the INM and ER are degraded through shared or distinct pathways in mammalian cells. We applied dynamic proteomics to profile protein half-lives and report that INM and ER residents turn over at similar rates, indicating that the INM's unique topology is not a barrier to turnover. Using a microscopy approach, we observed that the proteasome can degrade INM proteins in situ . However, we also uncovered evidence for selective, vesicular transport-mediated turnover of a single INM protein, emerin, that is potentiated by ER stress. Emerin is rapidly cleared from the INM by a mechanism that requires emerin's LEM domain to mediate vesicular trafficking to lysosomes. This work demonstrates that the INM can be dynamically remodeled in response to environmental inputs.

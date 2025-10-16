@@ -1,0 +1,27 @@
+# Wiz binds active promoters and CTCF-binding sites and is required for normal behaviour in the mouse
+
+## Authors
+
+- Luke Isbel<sup>1</sup> ([ORCID: 0000-0002-5270-4347](https://orcid.org/0000-0002-5270-4347))
+- Lexie Prokopuk<sup>2</sup>
+- Haoyu Wu<sup>3</sup>
+- Lucia Daxinger<sup>1</sup>
+- Harald Oey<sup>4</sup>
+- Alex Spurling<sup>1</sup> ([ORCID: 0000-0002-4368-6191](https://orcid.org/0000-0002-4368-6191))
+- Adam J Lawther<sup>5</sup>
+- Matthew W Hale<sup>5</sup>
+- Emma Whitelaw<sup>1</sup> ([ORCID: 0000-0002-2320-2903](https://orcid.org/0000-0002-2320-2903)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Genetics La Trobe Institute for Molecular Science Melbourne Australia
+2. Centre for Genetic Diseases Hudson Institute of Medical Research Melbourne Australia
+3. Department of Human Genetics Leiden University Medical Centre Leiden Netherlands
+4. Translational Research Institute University of Queensland Diamantina  Institute Brisbane Australia
+5. Department of Psychology and Counselling La Trobe University Melbourne Australia
+
+† Corresponding author
+
+## Abstract
+
+We previously identified Wiz in a mouse screen for epigenetic modifiers. Due to its known association with G9a/GLP, Wiz is generally considered a transcriptional repressor. Here we provide evidence that it may also function as a transcriptional activator. Wiz levels are high in brain but its function and direct targets are unknown. ChIP-seq was performed in adult cerebellum and Wiz peaks were found at promoters and transcription factor CTCF binding sites. RNA-seq in Wiz mutant mice identified genes differentially regulated in adult cerebellum and embryonic brain. In embryonic brain most decreased in expression and included clustered protocadherin genes. These also decreased in adult cerebellum and showed strong Wiz ChIP-seq enrichment. Because a precise pattern of protocadherin gene expression is required for neuronal development, behavioural tests were carried out on mutant mice, revealing an anxiety-like phenotype. This is the first evidence of a role for Wiz in neural function.

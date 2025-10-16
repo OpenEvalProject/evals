@@ -1,0 +1,23 @@
+# Genetic dissection of Down syndrome-associated congenital heart defects using a new mouse mapping panel
+
+## Authors
+
+- Eva Lana-Elola
+- Sheona Watson-Scales
+- Amy Slender
+- Dorota Gibbins
+- Alexandrine Martineau
+- Charlotte Douglas
+- Timothy Mohun
+- Elizabeth MC Fisher
+- Victor LJ Tybulewicz †
+
+### Affiliations
+
+1. Mill Hill Laboratory The Francis Crick Institute London United Kingdom Victor.T@crick.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Down syndrome (DS), caused by trisomy of human chromosome 21 (Hsa21), is the most common cause of congenital heart defects (CHD), yet the genetic and mechanistic causes of these defects remain unknown. To identify dosage-sensitive genes that cause DS phenotypes, including CHD, we used chromosome engineering to generate a mapping panel of 7 mouse strains with partial trisomies of regions of mouse chromosome 16 orthologous to Hsa21. Using high-resolution episcopic microscopy and three-dimensional modeling we show that these strains accurately model DS CHD. Systematic analysis of the 7 strains identified a minimal critical region sufficient to cause CHD when present in 3 copies, and showed that it contained at least two dosage-sensitive loci. Furthermore, these new strains model a specific subtype of atrio-ventricular septal defects with exclusive ventricular shunting and demonstrate that, contrary to current hypotheses, these CHD are not due to failure in formation of the dorsal mesenchymal protrusion.

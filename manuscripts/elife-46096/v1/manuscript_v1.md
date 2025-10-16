@@ -1,0 +1,16 @@
+# Amidst multiple binding orientations on fork DNA, Saccharolobus MCM helicase proceeds N-first for unwinding
+
+## Authors
+
+- Himasha M Perera<sup>1</sup> ([ORCID: 0000-0003-1533-9640](https://orcid.org/0000-0003-1533-9640))
+- Michael Trakselis<sup>1</sup> ([ORCID: 0000-0001-7054-8475](https://orcid.org/0000-0001-7054-8475)) †
+
+### Affiliations
+
+1. Department of Chemistry and Biochemistry Baylor University Waco United States
+
+† Corresponding author
+
+## Abstract
+
+DNA replication requires that the duplex genomic DNA strands be separated; a function that is implemented by ring-shaped hexameric helicases in all Domains. Helicases are composed of two domains, an N- terminal DNA binding domain (NTD) and a C- terminal motor domain (CTD). Replication is controlled by loading of helicases at origins of replication, activation to preferentially encircle one strand, and then translocation to begin separation of the two strands. Using a combination of site-specific DNA footprinting, single-turnover unwinding assays, and unique fluorescence translocation monitoring, we have been able to quantify the binding distribution and the translocation orientation of Saccharolobus (formally Sulfolobus ) solfataricus MCM on DNA. Our results show that both the DNA substrate and the C-terminal winged-helix (WH) domain influence the orientation but that translocation on DNA proceeds N-first.

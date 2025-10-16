@@ -1,0 +1,18 @@
+# An epigenetic switch ensures transposon repression upon dynamic loss of DNA methylation in embryonic stem cells
+
+## Authors
+
+- Marius Walter
+- Aurélie Teissandier
+- Raquel Pérez-Palacios
+- Déborah Bourc'his †
+
+### Affiliations
+
+1. Department of Genetics and Developmental Biology Institut Curie Paris France deborah.bourchis@curie.fr
+
+† Corresponding author
+
+## Abstract
+
+DNA methylation is extensively remodeled during mammalian gametogenesis and embryogenesis. Most transposons become hypomethylated, raising the question of their regulation in the absence of DNA methylation. To reproduce a rapid and extensive demethylation, we subjected mouse ES cells to chemically defined hypomethylating culture conditions. Surprisingly, we observed two phases of transposon regulation. After an initial burst of de-repression, various transposon families were efficiently re-silenced. This was accompanied by a reconfiguration of the repressive chromatin landscape: while H3K9me3 was stable, H3K9me2 globally disappeared and H3K27me3 accumulated at transposons. Interestingly, we observed that H3K9me3 and H3K27me3 occupy different transposon families or different territories within the same family, defining three functional categories of adaptive chromatin responses to DNA methylation loss. Our work highlights that H3K9me3 and, most importantly, polycomb-mediated H3K27me3 chromatin pathways can secure the control of a large spectrum of transposons in periods of intense DNA methylation change, ensuring longstanding genome stability.

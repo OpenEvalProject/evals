@@ -1,0 +1,19 @@
+# Paternally expressed imprinted genes establish postzygotic hybridization barriers in Arabidopsis thaliana
+
+## Authors
+
+- Philip Wolff
+- Hua Jiang
+- Guifeng Wang
+- Juan Santos-González
+- Claudia Köhler †
+
+### Affiliations
+
+1. Department of Plant Biology, Uppsala BioCenter Swedish University of Agricultural Sciences Uppsala Sweden claudia.kohler@slu.se
+
+† Corresponding author
+
+## Abstract
+
+Genomic imprinting is an epigenetic phenomenon causing parent-of-origin specific differential expression of maternally and paternally inherited alleles. While many imprinted genes have been identified in plants, the functional roles of most of them are unknown. In this study, we systematically examine the functional requirement of paternally expressed imprinted genes ( PEGs ) during seed development in Arabidopsis thaliana . While none of the 15 analyzed peg mutants has qualitative or quantitative abnormalities of seed development, we identify three PEGs that establish postzygotic hybridization barriers in the endosperm, revealing that PEGs have a major role as speciation genes in plants. Our work reveals that a subset of PEGs maintains functional roles in the inbreeding plant Arabidopsis that become evident upon deregulated expression.

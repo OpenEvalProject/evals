@@ -1,0 +1,23 @@
+# Condensation tendency and planar isotropic actin gradient induce radial alignment in confined monolayers
+
+## Authors
+
+- Tianfa Xie<sup>1</sup> ([ORCID: 0000-0003-1332-4373](https://orcid.org/0000-0003-1332-4373))
+- Sarah R St Pierre<sup>1</sup>
+- Nonthakorn Olaranont<sup>2</sup>
+- Lauren E Brown<sup>3</sup>
+- Min Wu<sup>4</sup> †
+- Yubing Sun<sup>1</sup> ([ORCID: 0000-0002-6831-3383](https://orcid.org/0000-0002-6831-3383)) †
+
+### Affiliations
+
+1. Mechanical and Industrial Engineering University of Massachusetts Amherst United States
+2. Mathematical Sciences Worcester Polytechnic Institute Worcester United States
+3. Biomedical Engineering University of Massachusetts Amherst United States
+4. Department of Mathematical Sciences Worcester Polytechnic Institute Worcester United States
+
+† Corresponding author
+
+## Abstract
+
+A monolayer of highly motile cells can establish long-range orientational order, which can be explained by hydrodynamic theory of active gels and fluids. However, it is less clear how cell shape changes and rearrangement are governed when the monolayer is in mechanical equilibrium states when cell motility diminishes. In this work, we report that rat embryonic fibroblasts (REF), when confined in circular mesoscale patterns on rigid substrates, can transition from the spindle shapes to more compact morphologies.  Cells align radially only at the pattern boundary when they are in the mechanical equilibrium. This radial alignment disappears when cell contractility or cell-cell adhesion is reduced.  Unlike monolayers of spindle-like cells such as NIH-3T3 fibroblasts with minimal intercellular interactions or epithelial cells like Madin-Darby canine kidney (MDCK) with strong cortical actin network, confined REF monolayers present an actin gradient with isotropic meshwork, suggesting the existence of a stiffness gradient. In addition, the REF cells tend to condense on soft substrates, a collective cell behavior we refer to as the 'condensation tendency'. This condensation tendency, together with geometrical confinement, induces tensile prestretch (i.e., an isotropic stretch that causes tissue to contract when released) to the confined monolayer. By developing a Voronoi-cell model, we demonstrate that the combined global tissue prestretch and cell stiffness differential between the inner and boundary cells can sufficiently define the cell radial alignment at the pattern boundary.

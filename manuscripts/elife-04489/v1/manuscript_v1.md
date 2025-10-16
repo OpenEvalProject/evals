@@ -1,0 +1,22 @@
+# Non-catalytic motor domains enable processive movement and functional diversification of the kinesin-14 Kar3
+
+## Authors
+
+- Christine Mieck
+- Maxim I Molodtsov
+- Katarzyna Drzewicka
+- Babet van der Vaart
+- Gabriele Litos
+- Gerald Schmauss
+- Alipasha Vaziri
+- Stefan Westermann †
+
+### Affiliations
+
+1. Research Institute of Molecular Pathology Vienna Austria westermann@imp.ac.at
+
+† Corresponding author
+
+## Abstract
+
+Motors proteins of the conserved kinesin-14 family have important roles in mitotic spindle organization and chromosome segregation. Previous studies have indicated that kinesin-14 motors are non-processive enzymes, working in the context of multi-motor ensembles that collectively organize microtubule networks. Here we show that the yeast kinesin-14 Kar3 generates processive movement as a heterodimer with the non-motor proteins Cik1 or Vik1. By analyzing the single-molecule properties of engineered motors we demonstrate that the non-catalytic domain has a key role in the motility mechanism by acting as a 'foothold' that allows Kar3 to bias translocation towards the minus end. This mechanism rivals the speed and run length of conventional motors, can support transport of the Ndc80 complex in vitro and is critical for Kar3 function in vivo. Our findings provide an example for a non-conventional translocation mechanism and can explain how Kar3 substitutes for key functions of Dynein in the yeast nucleus.

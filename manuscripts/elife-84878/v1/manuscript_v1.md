@@ -1,0 +1,16 @@
+# An optimal regulation of fluxes dictates microbial growth in and out of steady-state
+
+## Authors
+
+- Griffin Chure<sup>1</sup> ([ORCID: 0000-0002-2216-2057](https://orcid.org/0000-0002-2216-2057)) †
+- Jonas Cremer<sup>1</sup> ([ORCID: 0000-0003-2328-5152](https://orcid.org/0000-0003-2328-5152)) †
+
+### Affiliations
+
+1. Department of Biology Stanford University Stanford United States
+
+† Corresponding author
+
+## Abstract
+
+Effective coordination of cellular processes is critical to ensure the competitive growth of microbial organisms. Pivotal to this coordination is the appropriate partitioning of cellular resources between protein synthesis via translation and the metabolism needed to sustain it. Here, we extend a low-dimensional allocation model to describe the dynamic regulation of this resource partitioning. At the core of this regulation is the optimal coordination of metabolic and translational fluxes, mechanistically achieved via the perception of charged- and uncharged-tRNA turnover. An extensive comparison with ≈ 60 data sets from Escherichia coli establishes this regulatory mechanism's biological veracity and demonstrates that a remarkably wide range of growth phenomena in and out of steady state can be predicted with quantitative accuracy. This predictive power, achieved with only a few biological parameters, cements the preeminent importance of optimal flux regulation across conditions and establishes low-dimensional allocation models as an ideal physiological framework to interrogate the dynamics of growth, competition, and adaptation in complex and ever-changing environments.

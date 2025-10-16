@@ -1,0 +1,18 @@
+# Long-range DNA end resection supports homologous recombination by checkpoint activation rather than extensive homology generation
+
+## Authors
+
+- Michael T Kimble<sup>1</sup>
+- Matthew J Johnson<sup>1</sup>
+- Mattie R Nester<sup>1</sup>
+- Lorraine S Symington<sup>1</sup> ([ORCID: 0000-0002-1519-4800](https://orcid.org/0000-0002-1519-4800)) †
+
+### Affiliations
+
+1. Department of Microbiology and Immunology Columbia University Medical Center New York United States
+
+† Corresponding author
+
+## Abstract
+
+Homologous recombination (HR), the high-fidelity mechanism for double-strand break (DSB) repair, relies on DNA end resection by nucleolytic degradation of the 5¢-terminated ends. However, the role of long-range resection mediated by Exo1 and/or Sgs1-Dna2 in HR is not fully understood. Here, we show that Exo1 and Sgs1 are dispensable for recombination between closely-linked repeats, but are required for interchromosomal repeat recombination in Saccharomyces cerevisiae . This context-specific requirement for long-range end resection is connected to its role in activating the DNA damage checkpoint. Consistent with this role, checkpoint mutants also show a defect specifically in interchromosomal recombination. Furthermore, artificial activation of the checkpoint partially restores interchromosomal recombination to exo1∆ sgs1∆ cells. However, cell cycle delay is insufficient to rescue the interchromosomal recombination defect of exo1∆ sgs1∆ cells, suggesting an additional role for the checkpoint. Given that the checkpoint is necessary for DNA damage-induced chromosome mobility, we propose that the importance of the checkpoint, and therefore long-range resection, in interchromosomal recombination is due to a need to increase chromosome mobility to facilitate pairing of distant sites. The need for long-range resection is circumvented when the DSB and its repair template are in close proximity.

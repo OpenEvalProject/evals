@@ -1,0 +1,19 @@
+# Distinct stages of synapse elimination are induced by burst firing of CA1 neurons and differentially require MEF2A/D
+
+## Authors
+
+- Chia-Wei Chang<sup>1</sup> ([ORCID: 0000-0002-1011-6870](https://orcid.org/0000-0002-1011-6870))
+- Julia Wilkerson<sup>1</sup>
+- Carly Hale<sup>1</sup>
+- Jay R Gibson<sup>1</sup>
+- Kimberly M Huber<sup>1</sup> ([ORCID: 0000-0002-7479-0661](https://orcid.org/0000-0002-7479-0661)) †
+
+### Affiliations
+
+1. Department of Neuroscience The University of Texas Southwestern Medical Center Dallas United States
+
+† Corresponding author
+
+## Abstract
+
+Experience and activity refine cortical circuits through synapse elimination, but little is known about the activity patterns and downstream molecular mechanisms that mediate this process. We used optogenetics to drive individual mouse CA1 hippocampal neurons to fire in theta frequency bursts to understand how cell autonomous, postsynaptic activity leads to synapse elimination. Brief (1hr) periods of postsynaptic bursting selectively depressed AMPA receptor (R) synaptic transmission, or silenced excitatory synapses, whereas more prolonged (24 hr) firing depressed both AMPAR and NMDAR EPSCs and eliminated spines, indicative of a synapse elimination. Both synapse silencing and elimination required de novo transcription, but only silencing required the activity-dependent transcription factors MEF2A/D. Burst firing induced MEF2A/D-dependent induction of the target gene Arc which contributed to synapse silencing and elimination. This work reveals new and distinct forms of activity-dependent synapse depression and suggests that these processes can occur independently.

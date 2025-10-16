@@ -1,0 +1,17 @@
+# Structures reveal opening of the store-operated calcium channel Orai
+
+## Authors
+
+- Xiaowei Hou<sup>1</sup>
+- Shana R Burstein<sup>1</sup>
+- Stephen Barstow Long<sup>1</sup> ([ORCID: 0000-0002-8144-1398](https://orcid.org/0000-0002-8144-1398)) †
+
+### Affiliations
+
+1. Structural Biology Program Memorial Sloan Kettering Cancer Center New York United States
+
+† Corresponding author
+
+## Abstract
+
+The store-operated calcium (Ca 2+ ) channel Orai governs Ca 2+ influx through the plasma membrane of many non-excitable cells in metazoans. The channel opens in response to the depletion of Ca 2+ stored in the endoplasmic reticulum (ER). Loss- and gain-of-function mutants of Orai cause disease. Our previous work revealed the structure of Orai with a closed pore. Here, using a gain-of-function mutation that constitutively activates the channel, we present an X-ray structure of Drosophila melanogaster Orai in an open conformation. Well-defined electron density maps reveal that the pore is dramatically dilated on its cytosolic side in comparison to the slender closed pore. Cations and anions bind in different regions of the open pore, informing mechanisms for ion permeation and Ca 2+ selectivity. Opening of the pore requires the release of cytosolic latches. Together with additional X-ray structures of an unlatched-but-closed conformation, we propose a sequence for store-operated activation.

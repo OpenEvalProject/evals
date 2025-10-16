@@ -1,0 +1,67 @@
+# Peer review - Round 1
+
+Editors:
+- Michael J Frank, Brown University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.37321.023](https://doi.org/10.7554/eLife.37321.023)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Humans strategically shift decision bias by flexibly adjusting sensory evidence accumulation in visual cortex" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ole Jensen as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David Van Essen as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Eelke Spaak (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+The paper by Kloosterman et al. has been using a visual paradigm and EEG to investigate evidence accumulation in the visual cortex in humans. The data were fitted using a diffusion drift model. Key to the experiment was that the participants' decision criteria were manipulated using different reward contingencies inducing liberal or conservative biases. A liberal bias resulted in a suppression of the pre-stimulus alpha power and a subsequent stimulus induced gamma increase. It is stated that the alpha decrease boosted the gamma increase. These are in principle interesting findings speaking to how decision-making relates to oscillatory brain activity in the context of bias. All reviewers judge the paper of potential interest; however, several serious concerns pertaining to the analysis were raised. In particular the result summary/conclusion in the Abstract and Discussion seems too simplistic in the light of the actual findings (in particular the inverted-U of alpha in relation to gamma as explained below). Furthermore additional work is needed on the analysis. Specifically, the excitability model seems at odds with the interpretation that alpha-power regulates the drift bias as the correlation between alpha-power and gamma is different for conservative vs liberal (which should not be the case if conservative vs liberal modulates excitability through alpha). Please see below for details.
+
+Essential revisions:
+
+1) The authors show that pre-stimulus alpha power depends on the condition and hypothesize that this is involved in regulating the gain – somewhat plausibly supported by showing the correlation of alpha-power with gamma-power in a non-linear fashion (inverted U-shape). The issue is that the predicted difference between conservative and liberal trials in the (nonlinear) correlation between gamma- and alpha is not logically explained if alpha-power is equated to neuronal excitation. If alpha is taken as an index of neural excitation, then this is not the predicted result that emerges from Figure 5A (which shows stimulus effect against membrane excitability). Following this logic, the conservative vs. liberal condition should result in different histograms of high vs. low alpha power states, but these should not change the profile of the dependency of the stimulation effect on excitability (as indexed by alpha).
+
+In this respect, it would be relevant to see whether alpha vs. drift bias shows a similar (nonlinear) correlation. Wouldn't one expect to observe 1) a nonlinear correlation between gamma and decision bias? 2) the correlation to be present both in the liberal and conservative condition?
+
+This central issue needs to be addressed: if the model is correct, one would expect to see the very same correlation between alpha and gamma for conservative and liberal trials, just with the distribution of the liberal trials being shifted toward lower alpha-power and thereby more excitable. The current result in Figure 5C (and their prediction from Figure 5B), if valid, suggests an additional mechanism, for instance a dynamic (differential) top-down signal from areas like SMA or DLPFC into visual cortex that might explain the differential correlation. We suggest to show the results of the contrast liberal vs. conservative across all electrodes (ideally with an average reference) – with a specific question on whether this shows differences in power in more frontal areas. The cluster permutation method applied is usually appropriate for correcting for multiple comparisons across time, frequency and sensors.
+
+2) We would think that the SSVEPs directly reflect excitability. Is there a reason for not performing the analysis for the SSVEPs? Such an analysis might help to clarify the point above.
+
+3) Most studies on evidence accumulation are applying continuous stimuli (e.g. random dot kinematograms) in which information gradually is accumulated. In this study the informative target is shown for 40 ms. I take it lasts longer to accumulate information in order to make a decision? Please clarify.
+
+4) In Figure 5 (and elsewhere) 'excitability' denotes alpha suppression. Why not just label it 'alpha suppression' or alike? While 'excitability' and 'alpha suppression' are related, one cannot equate them.
+
+5) The participants only made yes responses. How can one then distinguish between decision bias versus drift rate? (Only the 'upper arrows' in Figure 2D are present in the data).
+
+6) Figure 5C is essential for making the claim on the relationship between alpha and gamma power. However it is not clear from caption or Materials and methods section how this plot is produced. We take that alpha suppression is sorted in 10 bins per subject. The description of the 'neural gain analysis' (subsection “Α suppression enhances the gain of cortical γ responses”, Figure 5, and associated Materials and methods section) is unclear, which leaves us unable to fully judge its correctness. We understand that the output of a region is considered a (sigmoidal) function of total input, where total input is the sum of stimulus-related and endogenous input. Why is it such that "the isolated effect of sensory input […] can then be expressed as the first-order derivative of the sigmoid"? It seems to us that this derivative would be the effect of any input. This mistake is a symptom of the authors sometimes conflating gain (which we would equate with the slope of the output/input curve) and actual input or output. Relatedly, the authors write "stimulus-related output gain" where they actually mean "output"; i.e. it is (if we understand correctly) precisely the output that is not stimulus-related which is relevant here, namely the endogenous fluctuations. There is confusion between gain, input, and output in some other places in this description as well; also how these terms map onto experimental measures is a bit ambiguous. (Gain = liberal vs. conservative; input = alpha; output = gamma? This is what we understand, but at times it appears as though alpha is equated to gain instead of input.)
+
+7) The 3-way ANOVA reported in the last paragraph of the subsection “Α suppression enhances the gain of cortical γ responses” is, we believe, not the correct way to analyze these data. The dependent variable here is gamma power, with independent variables condition (liberal/conservative) and alpha power bin (10 levels). Thus, a 2-way RM-ANOVA would be appropriate. If the authors believe the 3-way approach is indeed correct, then they should explain why this is so.
+
+8) The approach taken for the "within-subject group regression" is unclear to us (also not explained in Materials and methods). The primary evidence that links gamma activity to DDM drift bias is, it appears, based on regressing drift bias onto gamma power across different alpha bins, where both variables are averaged within bin, across participants (Figure 6). The correct approach here would be to perform this regression per participant, and then test whether the regression coefficients are different from zero at the population level. (Or better yet, show the individual regression lines.)
+
+9) The description of report proportions (Figure 2B) is not clearly defined. Shouldn't these sum to 1 within a condition? Additionally, it would be good to have some feeling of absolute number of responses, including those responses counting as a miss/correct rejection.
+
+[Editors' note: further revisions were requested prior to acceptance, as described below.]
+
+Thank you for resubmitting your work entitled "Humans strategically shift decision bias by flexibly adjusting sensory evidence accumulation in visual cortex" for further consideration at eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Senior/Reviewing Editor.
+
+The two reviewers and I have reviewed your response and the new manuscript. While all agreed that the manuscript has improved and the overall question is interesting, there was some disagreement as to the value of the work given the limitations. As such there remain some essential revisions that will be paramount to address properly in another revision, at which point we may need to solicit input from another reviewer in case there remains disagreement.
+
+The two major strengths of the paper are the following:
+
+1) The fact that you demonstrate fairly clearly that there is an effect of liberal vs. conservative incentive on some form of "response gain" parameter, i.e. a change in the response time distribution that apparently cannot be explained by a change in a constant alone but a gain parameter (by model fits).
+
+2) The fact that this (behaviourally effective) conservative vs. liberal task-set has a pronounced effect on pre-stimulus occipital alpha oscillations and also on stimulus induced gamma-oscillations.
+
+However, the following weaknesses were noted and should be addressed directly. Please note that there is no guarantee of acceptance.
+
+1) The fact that the occipital alpha power is not clearly the decisive element here, but rather seems to be the consequence of a different signal of currently unknown (and still clearly under-investigated) origin that actually mediates the "drift bias". The idea that these dynamics are predominantly taking place within the visual system – as suggested in title and Abstract – is not sufficiently justified by evidence. This mostly amounts to a matter of emphasis – you do acknowledge that this "remains an open question" and that alpha modulation is not the whole story. Having said that, it is clear that the text (title Abstract and elsewhere) can be interpreted as trying to make such a point. So, I would suggest that a further rewrite on this point is in order, perhaps adding some of the details in the response-to-reviewers document to the manuscript (Discussion/supplement) itself.
+
+One of the reviewers noted that you stated in your response that you updated the description of the Rajagovindan and Ding model and now account for the fact that an additional signal is required to explain these results – but the detailed explanation of this is lacking in the central description of this model in the subsection “Pre-stimulus alpha power mediates cortical gamma responses” (the second paragraph is not clear to understand and hides the fact that another external factor is needed here).
+
+2) Given the debate about whether you have identified the critical neural mechanism/correlate of the behavioral effect, it is even more important, for the potential novelty and significance of the results, to demonstrate that your results are specific to drift bias as opposed to starting point. This distinction is theoretically important, but the main conclusion in support of drift bias account is based on model fit metrics (BIC) alone. To be more confident that this difference is meaningful it is important to provide evidence that the drift bias model empirically captures the RT distributions better than the starting point model. In theory the better BIC fit indicates the drift bias does capture RT distributions better, but sometimes models can fit better using BIC (or other such metrics) for nuisance reasons unrelated to the core theoretical distinction. You do show individual subject RT distribution fits in Figure 2—figure supplement 3 for the drift bias model which look quite reasonable, but you do not show the corresponding fits to the starting point model, and the main claim of the paper rests on the ability to distinguish these with your task design/models.
+
+3) Relatedly, you do provide evidence that stimulus activity in gamma is amplified in the liberal condition, which is consistent with a drift bias, and also that this correlates with the extent of drift bias across subjects. What would be nice here is if you showed that this correlation was specific to the drift bias model and that it was statistically more evident than the corresponding correlations with starting point bias (i.e., you could test if the stimulus gamma activity is similarly correlated with estimated starting point bias in the alternative model). This would provide another more specific test of the evidence for the link between EEG and behavior even without identifying the top-down mechanism.

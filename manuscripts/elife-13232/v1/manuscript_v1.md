@@ -1,0 +1,18 @@
+# COPI selectively drives maturation of the early Golgi
+
+## Authors
+
+- Effrosyni Papanikou
+- Kasey J Day
+- Jotham Austin
+- Benjamin S Glick †
+
+### Affiliations
+
+1. Department of Molecular Genetics and Cell Biology The University of Chicago Chicago United States bsglick@uchicago.edu
+
+† Corresponding author
+
+## Abstract
+
+COPI coated vesicles carry material between Golgi compartments, but the role of COPI in the secretory pathway has been ambiguous. Previous studies of thermosensitive yeast COPI mutants yielded the surprising conclusion that COPI was dispensable both for the secretion of certain proteins and for Golgi cisternal maturation. To revisit these issues, we optimized the anchor-away method, which allows peripheral membrane proteins such as COPI to be sequestered rapidly by adding rapamycin. Video fluorescence microscopy revealed that COPI inactivation causes an early Golgi protein to remain in place while late Golgi proteins undergo cycles of arrival and departure. These dynamics generate partially functional hybrid Golgi structures that contain both early and late Golgi proteins, explaining how secretion can persist when COPI has been inactivated. Our findings suggest that cisternal maturation involves a COPI-dependent pathway that recycles early Golgi proteins, followed by multiple COPI-independent pathways that recycle late Golgi proteins.

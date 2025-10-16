@@ -1,0 +1,17 @@
+# Waves of actin and microtubule polymerization drive microtubule-based transport and neurite growth before single axon formation
+
+## Authors
+
+- Amy M Winans
+- Sean R Collins
+- Tobias Meyer †
+
+### Affiliations
+
+1. Department of Chemical and Systems Biology Stanford University Stanford United States tobias1@stanford.edu
+
+† Corresponding author
+
+## Abstract
+
+Many developing neurons transition through a multi-polar state with many competing neurites before assuming a unipolar state with one axon and multiple dendrites. Hallmarks of the multi-polar state are large fluctuations in microtubule-based transport into and outgrowth of different neurites, although what drives these fluctuations remains elusive. We show that actin waves, which stochastically migrate from the cell body towards neurite tips, direct microtubule-based transport during the multi-polar state. Our data argue for a mechanical control system whereby actin waves transiently widen the neurite shaft to allow increased microtubule polymerization to direct Kinesin-based transport and create bursts of neurite extension. Actin waves also require microtubule polymerization, arguing that positive feedback links these two components. We propose that actin waves create large stochastic fluctuations in microtubule-based transport and neurite outgrowth, promoting competition between neurites as they explore the environment until sufficient external cues can direct one to become the axon.

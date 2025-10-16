@@ -1,0 +1,17 @@
+# Optimal evolutionary decision-making to store immune memory
+
+## Authors
+
+- Oskar H Schnaack<sup>1</sup>
+- Armita Nourmohammad<sup>2</sup> ([ORCID: 0000-0002-6245-3553](https://orcid.org/0000-0002-6245-3553)) †
+
+### Affiliations
+
+1. Statistical Physics of Evolving Systems Max Planck Institute for Dynamics and Self-organization Göttingen Germany
+2. Physics University of Washington Seattle United States
+
+† Corresponding author
+
+## Abstract
+
+The adaptive immune system provides a diverse set of molecules that can mount specific responses against a multitude of pathogens. Memory is a key feature of adaptive immunity, which allows organisms to respond more readily upon re-infections. However, differentiation of memory cells is still one of the least understood cell fate decisions. Here, we introduce a mathematical framework to characterize optimal strategies to store memory to maximize the utility of immune response over an organism's lifetime. We show that memory production should be actively regulated to balance between affinity and cross-reactivity of immune receptors for an effective protection against evolving pathogens. Moreover, we predict that specificity of memory should depend on the organism's lifespan, and shorter-lived organisms with fewer pathogenic encounters should store more cross-reactive memory. Our framework provides a baseline to gauge the efficacy of immune memory in light of an organism's coevolutionary history with pathogens.

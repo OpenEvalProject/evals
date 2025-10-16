@@ -1,0 +1,17 @@
+# Phosphatidylinositol 3-kinase and COPII generate LC3 lipidation vesicles from the ER-Golgi intermediate compartment
+
+## Authors
+
+- Liang Ge
+- Min Zhang
+- Randy Schekman †
+
+### Affiliations
+
+1. Department of Molecular and Cell Biology Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States schekman@berkeley.edu
+
+† Corresponding author
+
+## Abstract
+
+Formation of the autophagsome requires significant membrane input from cellular organelles. However, no direct evidence has been developed to link autophagic factors and the mobilization of membranes to generate the phagophore. Previously, we established a cell-free LC3 lipidation reaction to identify the ER-Golgi intermediate compartment (ERGIC) as a membrane source for LC3 lipidation, a key step of autophagosome biogenesis (Ge et al., eLife 2013; 2:e00947). We now report that starvation activation of autophagic phosphotidylinositol-3 kinase (PI3K) induces the generation of small vesicles active in LC3 lipidation. Subcellular fractionation studies identified the ERGIC as the donor membrane in the generation of small lipidation-active vesicles. COPII proteins are recruited to the ERGIC membrane in starved cells, dependent on active PI3K. We conclude that starvation activates the autophagic PI3K, which in turn induces the recruitment of COPII to the ERGIC to bud LC3 lipidation-active vesicles as one potential membrane source of the autophagosome.

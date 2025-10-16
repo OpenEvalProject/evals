@@ -1,0 +1,27 @@
+# Maternal LSD1/KDM1A is an essential regulator of chromatin and transcription landscapes during zygotic genome activation
+
+## Authors
+
+- Katia Ancelin
+- Laurène Syx
+- Maud Borensztein
+- Noémie Ranisavljevic
+- Ivaylo Vassilev
+- Luis Briseño-Roa
+- Tao Liu
+- Eric Metzger
+- Nicolas Servant
+- Emmanuel Barillot
+- Chong-Jian Chen
+- Roland Schüle
+- Edith Heard †
+
+### Affiliations
+
+1. Institut Curie Paris France Edith.Heard@curie.fr
+
+† Corresponding author
+
+## Abstract
+
+Upon fertilization, the highly specialised sperm and oocyte genomes are remodelled to confer totipotency. The mechanisms of the dramatic reprogramming events that occur have remained unknown, and presumed roles of histone modifying enzymes are just starting to be elucidated. Here, we explore the function of the oocyte-inherited pool of a histone H3K4 and K9 demethylase, LSD1/KDM1A during early mouse development. KDM1A deficiency results in developmental arrest by the two-cell stage, accompanied by dramatic and stepwise alterations in H3K9 and H3K4 methylation patterns. At the transcriptional level, the switch of the maternal-to-zygotic transition fails to be induced properly and LINE-1 retrotransposons are not properly silenced. We propose that KDM1A plays critical roles in establishing the correct epigenetic landscape of the zygote upon fertilization, in preserving genome integrity and in initiating new patterns of genome expression that drive early mouse development.

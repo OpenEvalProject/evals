@@ -1,0 +1,16 @@
+# Perception as a closed-loop convergence process
+
+## Authors
+
+- Ehud Ahissar †
+- Eldad Assa
+
+### Affiliations
+
+1. Department of Neurobiology Weizmann Institute of Science Rehovot Israel
+
+† Corresponding author
+
+## Abstract
+
+Perception of external objects involves sensory acquisition via the relevant sensory organs. A widely-accepted assumption is that the sensory organ is the first station in a serial chain of processing circuits leading to an internal circuit in which a percept emerges. This open-loop scheme, in which the interaction between the sensory organ and the environment is not affected by its concurrent downstream neuronal processing, is strongly challenged by behavioral and anatomical data. We present here a hypothesis in which the perception of external objects is a closed-loop dynamical process encompassing loops that integrate the organism and its environment and converging towards organism-environment steady-states. We discuss the consistency of closed-loop perception (CLP) with empirical data and show that it can be synthesized in a robotic setup. Testable predictions are proposed for empirical distinction between open and closed loop schemes of perception.

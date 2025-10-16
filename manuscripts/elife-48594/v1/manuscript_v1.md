@@ -1,0 +1,20 @@
+# Functional divergence of Plexin B structural motifs in distinct steps of Drosophila olfactory circuit assembly
+
+## Authors
+
+- Ricardo Guajardo<sup>1</sup>
+- David J Luginbuhl<sup>1</sup>
+- Shuo Han<sup>2</sup>
+- Liqun Luo<sup>1</sup> ([ORCID: 0000-0001-5467-9264](https://orcid.org/0000-0001-5467-9264)) †
+- Jiefu Li<sup>1</sup> ([ORCID: 0000-0002-0062-4652](https://orcid.org/0000-0002-0062-4652))
+
+### Affiliations
+
+1. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States
+2. Department of Chemistry Stanford University Stanford United States
+
+† Corresponding author
+
+## Abstract
+
+Plexins exhibit multitudinous, evolutionarily conserved functions in neural development. How Plexins employ their diverse structural motifs in vivo to perform distinct roles is unclear. We previously reported that Plexin B (PlexB) controls multiple steps during the assembly of the Drosophila olfactory circuit (Li et al., 2018). Here, we systematically mutagenized structural motifs of PlexB and examined the function of these variants in these multiple steps: axon fasciculation, trajectory choice, and synaptic partner selection. We found that the extracellular Sema domain is essential for all three steps, the catalytic site of the intracellular RapGAP is engaged in none, and the intracellular GTPase-binding motifs are essential for trajectory choice and synaptic partner selection, but are dispensable for fasciculation. Moreover, extracellular PlexB cleavage serves as a regulatory mechanism of PlexB signaling. Thus, the divergent roles of PlexB motifs in distinct steps of neural development contribute to its functional versatility in neural circuit assembly.

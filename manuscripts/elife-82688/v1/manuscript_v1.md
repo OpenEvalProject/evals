@@ -1,0 +1,16 @@
+# Rostral and caudal BLA engage distinct circuits in the prelimbic and infralimbic PFC
+
+## Authors
+
+- Kasra Manoocheri<sup>1</sup>
+- Adam G Carter<sup>1</sup> ([ORCID: 0000-0003-2095-3901](https://orcid.org/0000-0003-2095-3901)) †
+
+### Affiliations
+
+1. Center for Neural Science New York University New York United States
+
+† Corresponding author
+
+## Abstract
+
+Connections from the basolateral amygdala (BLA) to medial prefrontal cortex (PFC) regulate memory and emotion and become disrupted in neuropsychiatric disorders. The diverse roles attributed to interactions between the BLA and PFC may reflect multiple circuits nested within a wider network. To examine these circuits, we first used retrograde and anterograde anatomy to show that the rostral BLA (rBLA) and caudal BLA (cBLA) differentially project to prelimbic (PL) and infralimbic (IL) subregions of the mouse PFC. Using ex vivo whole-cell recordings and optogenetics, we then assessed which neuronal subtypes are targeted, showing that rBLA preferentially drives layer 2 (L2) cortico-amygdalar (CA) neurons in PL, whereas cBLA drives layer 5 (L5) pyramidal tract (PT) neurons in IL. We next combined in vivo silicon probe recordings and optogenetics to confirm that cBLA mainly influences IL L5, whereas rBLA primarily activates PL L2, but also evokes polysynaptic activity in PL L5. Lastly, we used soma-tagged optogenetics to explore the local circuits linking superficial and deep layers of PL, showing how rBLA can engage L2 CA neurons to impact L5 PT neuron activity. Together, our findings delineate how subregions of the BLA target distinct networks within the PFC and differentially influence output from PL and IL.

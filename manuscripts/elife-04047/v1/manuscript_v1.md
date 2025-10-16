@@ -1,0 +1,28 @@
+# Astrocytes refine cortical connectivity at dendritic spines
+
+## Authors
+
+- W Christopher Risher
+- Sagar Patel
+- Il Hwan Kim
+- Akiyoshi Uezu
+- Srishti Bhagat
+- Daniel K Wilton
+- Louis-Jan Pilaz
+- Jonnathan Singh Alvarado
+- Osman Y Calhan
+- Debra L Silver
+- Beth Stevens
+- Nicole Calakos
+- Scott H Soderling
+- Cagla Eroglu †
+
+### Affiliations
+
+1. Department of Cell Biology Duke University Medical Center Durham United States c.eroglu@cellbio.duke.edu
+
+† Corresponding author
+
+## Abstract
+
+During cortical synaptic development, thalamic axons must establish synaptic connections despite the presence of the more abundant intracortical projections. How thalamocortical synapses are formed and maintained in this competitive environment is unknown. Here, we show that astrocyte-secreted protein hevin is required for normal thalamocortical synaptic connectivity in the mouse cortex. Absence of hevin results in a profound, long-lasting reduction in thalamocortical synapses accompanied by a transient increase in intracortical excitatory connections. Three-dimensional reconstructions of cortical neurons from serial section electron microscopy (ssEM) revealed that, during early postnatal development, dendritic spines often receive multiple excitatory inputs. Immuno-EM and confocal analyses revealed that majority of the spines with multiple excitatory contacts (SMECs) receive simultaneous thalamic and cortical inputs. Proportion of SMECs diminishes as the brain develops, but SMECs remain abundant in Hevin-null mice. These findings reveal that, through secretion of hevin, astrocytes control an important developmental synaptic refinement process at dendritic spines.

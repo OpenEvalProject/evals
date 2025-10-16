@@ -1,0 +1,21 @@
+# A genetic link between discriminative fear coding by the lateral amygdala, dopamine, and fear generalization
+
+## Authors
+
+- Graham L Jones
+- Marta E Soden
+- Cerise R Knakal
+- Heather Lee
+- Amanda S Zila
+- Elliott B Merriam
+- Larry S Zweifel †
+
+### Affiliations
+
+1. Department of Psychiatry and Behavioral Sciences and the Department of Pharmacology University of Washington Seattle United States larryz@uw.edu
+
+† Corresponding author
+
+## Abstract
+
+The lateral amygdala (LA) acquires differential coding of predictive and non-predictive fear stimuli that is critical for proper fear memory assignment. The neurotransmitter dopamine is an important modulator of LA activity and facilitates fear memory formation, but whether dopamine neurons aid in the establishment of discriminative fear coding by the LA is unknown. NMDA-type glutamate receptors in dopamine neurons are critical for the prevention of generalized fear following an aversive experience, suggesting a potential link between a cell autonomous function of NMDAR in dopamine neurons and fear coding by the LA. Here, we utilized mice with a selective genetic inactivation functional NMDARs in dopamine neurons (DAT-NR1 KO mice) combined with behavior, in vivo electrophysiology, and ex vivo electrophysiology in LA neurons to demonstrate that plasticity underlying differential fear coding in the LA is regulated by NMDAR signaling in dopamine neurons and alterations in this plasticity is associated non-discriminative cued-fear responses.

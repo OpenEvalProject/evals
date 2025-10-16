@@ -1,0 +1,20 @@
+# Cell elongation is regulated through a central circuit of interacting transcription factors in the Arabidopsis hypocotyl
+
+## Authors
+
+- Eunkyoo Oh
+- Jia-Ying Zhu
+- Ming-Yi Bai
+- Rafael A Arenhart
+- Yu Sun
+- Zhi-Yong Wang †
+
+### Affiliations
+
+1. Department of Plant Biology Carnegie Institution for Science Stanford United States zywang24@stanford.edu
+
+† Corresponding author
+
+## Abstract
+
+As the major mechanism of plant growth and morphogenesis, cell elongation is controlled by many hormonal and environmental signals. How these signals are coordinated at the molecular level to ensure coherent cellular responses remains unclear. Here, we illustrate a molecular circuit that integrates all major growth-regulating signals, including auxin, brassinosteroid, gibberellin, light, and temperature. Analyses of genome-wide targets, genetic and biochemical interactions demonstrate that the auxin-response factor ARF6, the light/temperature-regulated transcription factor PIF4, and the brassinosteroid-signaling transcription factor BZR1, interact with each other and cooperatively regulate large numbers of common target genes, but their DNA-binding activities are blocked by the gibberellin-inactivated repressor RGA.  In addition, a tripartite HLH/bHLH module feedback-regulates PIFs and additional bHLH factors that interact with ARF6, and thereby modulates auxin sensitivity according to developmental and environmental cues. Our results demonstrate a central growth-regulation circuit that integrates hormonal, environmental, and developmental controls of cell elongation in Arabidopsis hypocotyl.

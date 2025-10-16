@@ -1,0 +1,19 @@
+# WhyD tailors surface polymers to prevent premature bacteriolysis and direct cell elongation in Streptococcus pneumoniae
+
+## Authors
+
+- Josué Flores-Kim<sup>1</sup> ([ORCID: 0000-0001-8282-6647](https://orcid.org/0000-0001-8282-6647))
+- Genevieve S Dobihal<sup>1</sup> ([ORCID: 0000-0001-7589-1133](https://orcid.org/0000-0001-7589-1133))
+- Thomas G Bernhardt<sup>2</sup> ([ORCID: 0000-0003-3566-7756](https://orcid.org/0000-0003-3566-7756))
+- David Z Rudner<sup>1</sup> ([ORCID: 0000-0002-0236-7143](https://orcid.org/0000-0002-0236-7143)) †
+
+### Affiliations
+
+1. Department of Microbiology Harvard Medical School Boston United States
+2. Department of Microbiology Howard Hughes Medical Institute, Harvard Medical School Boston United States
+
+† Corresponding author
+
+## Abstract
+
+Penicillin and related antibiotics disrupt cell wall synthesis in bacteria causing the downstream misactivation of cell wall hydrolases called autolysins to induce cell lysis. Despite the clinical importance of this phenomenon, little is known about the factors that control autolysins and how penicillins subvert this regulation to kill cells. In the pathogen Streptococcus pneumoniae ( Sp ), LytA is the major autolysin responsible for penicillin-induced bacteriolysis. We recently discovered that penicillin treatment of Sp causes a dramatic shift in surface polymer biogenesis in which cell wall-anchored teichoic acids (WTAs) increase in abundance at the expense of lipid-linked teichoic acids (LTAs). Because LytA binds to both species of teichoic acids, this change recruits the enzyme to its substrate where it cleaves the cell wall and elicits lysis. In this report, we identify WhyD (SPD_0880) as a new factor that controls the level of WTAs in Sp cells to prevent LytA misactivation during exponential growth and premature lysis. We show that WhyD is a WTA hydrolase that restricts the WTA content of the wall to areas adjacent to active PG synthesis. Our results support a model in which the WTA tailoring activity of WhyD during exponential growth directs PG remodeling activity required for proper cell elongation in addition to preventing autolysis by LytA.

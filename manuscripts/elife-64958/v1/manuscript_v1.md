@@ -1,0 +1,24 @@
+# Cytokine ranking via mutual information algorithm correlates cytokine profiles with presenting disease severity in patients infected with SARS-CoV-2
+
+## Authors
+
+- Kelsey E Huntington<sup>1</sup>
+- Anna D Louie<sup>2</sup>
+- Chun Geun Lee<sup>3</sup>
+- Jack A Elias<sup>3</sup>
+- Eric A Ross<sup>4</sup>
+- Wafik S El-Deiry<sup>5</sup> ([ORCID: 0000-0002-9577-8266](https://orcid.org/0000-0002-9577-8266)) †
+
+### Affiliations
+
+1. Pathobiology Program Brown University Providence United States
+2. Department of Surgery Brown University Providence United States
+3. Department of Molecular Microbiology and Immunology Brown University Providence United States
+4. Biostatistics and Bioinformatics Fox Chase Cancer Center Philadelphia United States
+5. Department of Pathology and Laboratory Medicine Brown University Providence United States
+
+† Corresponding author
+
+## Abstract
+
+Although the range of immune responses to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is variable, cytokine storm is observed in a subset of symptomatic individuals. To further understand the disease pathogenesis and, consequently, to develop an additional tool for clinicians to evaluate patients for presumptive intervention we sought to compare plasma cytokine levels between a range of donor and patient samples grouped by a COVID-19 Severity Score (CSS) based on need for hospitalization and oxygen requirement. Here we utilize a mutual information algorithm that classifies the information gain for CSS prediction provided by cytokine expression levels and clinical variables. Using this methodology, we found that a small number of clinical and cytokine expression variables are predictive of presenting COVID-19 disease severity, raising questions about the mechanism by which COVID-19 creates severe illness. The variables that were the most predictive of CSS included clinical variables such as age and abnormal chest x-ray as well as cytokines such as macrophage colony-stimulating factor (M-CSF), interferon-inducible protein 10 (IP-10) and Interleukin-1 Receptor Antagonist (IL-1RA). Our results suggest that SARS-CoV-2 infection causes a plethora of changes in cytokine profiles and that particularly in severely ill patients, these changes are consistent with the presence of Macrophage Activation Syndrome and could furthermore be used as a biomarker to predict disease severity.

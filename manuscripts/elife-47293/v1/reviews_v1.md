@@ -1,0 +1,53 @@
+# Peer review - Round 1
+
+Editors:
+- Alejandro Sánchez Alvarado, Stowers Institute for Medical Research United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.47293.sa1](https://doi.org/10.7554/eLife.47293.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Acceptance summary:
+
+Planarians are organisms possessing extraordinary regenerative abilities, including the complete, functional regeneration of a brain after decapitation. Given the poor capacity of most mammals to regenerate brain tissues, a better understanding of neural regeneration is necessary. Karge and colleagues report on a tec-1kinase-mediated negative regulation of planarian neurogenesis. The knockdown of tec-1 increased the abundance of several types of neurons in the planarian brain during regeneration and homeostasis. Follow-up experiments suggested that tec-1 functions through facilitating neuronal cell death rather than controlling neuronal differentiation. This work presents an intriguing example of negative regulation of neurogenesis, particularly considering the broad conservation of Tec kinases.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Tec-1 kinase negatively regulates regenerative neurogenesis in planarians" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+In this manuscript, Karge and colleagues report on a tec-1kinase-mediated negative regulation of planarian neurogenesis. Through an RNAi screen that includes a focal set of kinases, authors noticed that knockdown of tec-1 increased the abundance of several types of neurons in the planarian brain during regeneration and homeostasis. Follow-up experiments suggested that tec-1 functions through facilitating neuronal cell death rather than controlling neuronal differentiation, although the exact molecular mechanism remains unknown. This work presents an intriguing example of negative regulation of neurogenesis, particularly considering the broad conservation of Tec kinases.
+
+Essential revisions:
+
+In order to consider this manuscript further, several major issues in terms of the phenotype and interpretation need to be addressed. These are:
+
+1) The expression of tec-1 is unclear. While the cell atlas suggests it is broadly expressed and perhaps concentrated in the neuronal progenitors, where is it expressed during regeneration? Does the expression pattern change throughout the regeneration time course? This information is essential, as it should inform the interpretation of phenotypes in terms of whether tec-1 functions autonomously or non-autonomously. Is tec-1 co-expressed with any of the neuronal or progenitor types looked at in the paper? Or is it co-expressed with macrophage/phagocytic markers? If FISH is challenging in whole-mount, it is worth trying in sections and dissociated cells.
+
+2) Control and tec-1RNAi animals were compared in terms of differences in differentiation 8 days upon amputation. A BrdU pulse was delivered on day 2 to capture to trace the progeny of cells that were in S phase during the pulse (the duration of this pulse is not specified but should be). The result of this experiment is clear – no significant difference in the number of BrdU+ cells in the ppl+ cell population (which was affected in tec-1RNAi much like cto+ cells). While this work supports the conclusion that tec-1RNAi does not affect differentiation of cells in S-phase on day 2, it does not rule out differences in differentiation that may occur prior to or later than this time point. The numbers of progenitors marked by coe, pax6, and pitx were only compared 8 days post amputation, which also does not eliminate the idea that differentiation might be affected by tec-1 at other time points. Is it known that commitment to differentiated fates only begins on day 2 and that differentiation commitment later than day 2 does not contribute to fully differentiated cell types in a significant way? Or that differentiation rates are constant over time as the worms regenerate? Could the original observation that tec-1RNAi animals show larger numbers of cto+ cells later in regeneration be explained by really early (before day 2) differences?
+
+3) Does tec-1 function similarly during regeneration and homeostasis? In Figure 4A, the difference between control and tec-1RNAi increases over time, suggesting more neurons should be removed as regeneration progresses. But the system has to reach a steady state eventually, but there is no data showing this. How and when might the steady state be reached in this case? Is it possible that tec-1RNAi animals just have a delayed peak of neuronal deaths? In this case, the steady states may be similar between control and RNAi. The comparison of neurons between control and RNAi conditions should be performed after the system reaches a steady state.
+
+4) In the tec-1RNAi the numbers of many neuronal cell types go up, in particular in the brain region, but the size of the brain doesn't change. It is clearly visible in the staining that the density of the evaluated neuronal cell types is increased. But how does this work? Is the general cell density in the brain region higher? Are the cells smaller? Or are there compensatory losses of other cell types in the region? Could the detected loss in glial cells be sufficient to compensate?
+
+5) The authors state that there are no changes in polarity or global patterning genes, but Figure 2B shows a clear increase in the number of notum-expressing cells, and Figure 3B clearly shows disorganized photoreceptors. This suggests that there are definitely some – possibly subtle – changes in anterior organization. It would be very interesting to understand whether the change in notum levels could induce this change in responsiveness to apoptotic signals. In addition, there have been some indications that apoptosis is not constant along the A-P axis (e.g. Peiris et al., 2016), and it would be worth taking into consideration whether this might explain some of the observed phenotype.
+
+6) Is there an anterior bias in the detected neuronal cell increase? Most of the neuronal cell types are evaluated in the anterior region. Only the bottom panel in Figure 3A shows a change in a more posterior region. Are the effects mostly detected in the anterior, or are neuronal cell increases in the posterior just as strong?
+
+7) Is it possible that tec-1RNAi causes a prolonged differentiation? There is a caveat in terms of Figure 4C showing tec-1's disinvolvement with rate of neuronal differentiation. The regenerating tail fragments were examined at day 8 post-amputation, at which point Figure 4A suggests has only a slight increase in neuronal abundance and thus is statistically unlikely to be noticeable at this stage within a smaller subset of neuronal types. A different time point may address the possibility of delayed differentiation.
+
+8) The phenotype should be characterized and discussed with greater depth. Do the ratios between different neuronal types change? This can be assayed with double FISH. If the ratios have changed, how should we understand the activity of tec-1 in different neuronal populations? Are there any neuronal types within the CNS or PNS that reduce in numbers or are not affected after RNAi? Neuronal types unaffected by tec-1 may bring important insights and hypotheses. Readers would appreciate the authors' insights to these questions. If all neuronal types increase in numbers within a constant brain size, it might suggest that the neurons must reduce their sizes as they experience a cellular overcrowding effect. Is this effect measurable (e.g., through nucleus-nucleus distance)? Are the changes in number density and cell size consistent? The authors have shown that glial cell number mildly decreases, which is very interesting, but is this change enough to compensate the increase of all neurons? How should we interpret this result – is it explained by the hypothesis of a distinct cell population killing neurons, or might this have any basis in a potential differentiation pathway?
+
+9) The choice of timing for the irradiation experiment needs to be explained as well. This experiment shows that in the absence of new cell production, tec-1RNAi animals continue to expand numbers of cto+ cells, whereas control RNAi animals show a decrease in cto+ cells at day 12 relative to day 10. However, Figure 4B showed a statistically significant different in cto+ cells between control and tec-1 RNAi animals on day 10 (which was also detectable as significant on day 8). If differentiation is not a source of cto+ differences between control and tec-1RNAi animals, one would expect the differences to be the same upon elimination of the contribution of new cells (at least at day 8). What explains the non-significant differences at day 8 and 10 in Figure 5B? Do the results argue that both differentiation and cell survival are affected?
+
+10) The authors report that Tec kinases are known to control inflammation and recovery following traumatic brain injury by regulating macrophages, which does not directly imply that Tec kinase homologs regulate neuronal cell numbers via controlling their survival. Therefore, the next statement (“We suggest that Tec kinases could regulate specific and perhaps conserved functions in adult neurogenesis process in control of neuron abundance”) is not well-supported. There are no data presented that enable the proposal of a putative conserved function for tec-1. The authors' finding that planarian regeneration involves overproduction of neural cells followed by cell death bears overall similarity to the mechanisms of vertebrate development where cell death plays a major role in shaping the nervous system. However, given the lack of demonstrated similarity of function of the ortholog of tec-1 in neural development in vertebrates, the claims of tec-1 being a promising new target for therapeutic interventions are premature.
+
+11) Finally, the finding of increased density of glial cells in tec-1RNAi is interesting, and the authors should discuss if this could be suggestive of tec-1 being involved in a fate choice – could glial cells and cto+ cells be differentiating from a shared progenitor population?

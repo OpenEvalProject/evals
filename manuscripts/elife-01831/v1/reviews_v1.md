@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- Matthew Freeman, University of Oxford , United Kingdom
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.01831.016](https://doi.org/10.7554/eLife.01831.016)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Transgressions of compartment boundaries and cell reprogramming during regeneration in Drosophila” for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The Reviewing editor and the other reviewers discussed their comments before reaching this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+The three reviewers agree that this paper is potentially appropriate for eLife but that it does need substantial work to make it acceptable. The overriding issue that needs addressing is to make more solid and convincing the main conclusion of the paper, that there is a breakdown of compartmental boundaries that allows transgression of anterior and posterior cells. The current conclusions are interesting but somewhat superficial in places and there is a clear consensus that additional rigor is needed before it can be accepted. Specific concerns agreed by the three reviewers follow.
+
+1) Much of the data would be interpreted differently if the b-gal genetic marker is not as precise as claimed. If 100 % of P cells are not βgal marked, then the unlabeled clones in the P compartment might not have crossed from the anterior. To exclude the possibility that the label-negative cells arise not from transgression from the healthy compartment but from a few cells that did not undergo excision of the stop cassette, the authors could mark healthy cells (in this case A cells) with the Lac-Z marker in the following genotype: dpp-LexA LexOp-Flp act>>LacZ hh-Gal4 tub-gal80ts UAS-hid. Slightly more difficult to explain, but not impossible, is the presence of marked clones in the A compartment: perhaps the dying cells induce occasional ectopic Flp expression in neighboring A cells? The controls support their model, but it is very hard to rule out that the Hid genetic manipulation might affect the normally precise control of Flp activity and/or Gal4 expression under Hh control. The twin clone experiment is harder to explain away, and perhaps is the best evidence for a breakdown of the boundary, but this is not given as much prominence as the main Hh driven βgal approach. The one example shown is at a fold, and may therefore be atypical.
+
+2) In Figure 2G, the number of clones is much too high, preventing rigorous size assessment. Is this figure representative of the pictures used to generate the data tabulated in Figure 2H?
+
+3) It appears that transgression can occur either from the disrupted to the healthy compartment (as in Figure 3B) or from the healthy to the disrupted (as in Figure 3A). If both phenomena are observed, what are their relative frequencies and what are the factors that affect directionality?
+
+4) Another issue concerns the location along the boundary where transgressions occur. Transgressions are shown at various places along the boundary. An example of disrupted-to-healthy transgression is shown in the middle of the pouch (Figure 3B). The twin clones are shown in the prospective notum and in a few key experiments, transgressions appear to occur preferentially at an epithelial fold. It also appears that JNK upregulation occurs specifically near folds. Transgression at these various locations seem to differ morphologically and it is not clear that they are equivalent. Therefore, it is necessary to define which types of transgression are analyzed in the different genetic backgrounds (at folds or not; towards the disrupted compartment or away from it).
+
+5) The effect of Pc3/+ on the rate of transgression into the disrupted compartment is impressive. So much so that it needs to be further substantiated (e.g., by labeling the cells of the healthy compartment as suggested above). Moreover, according to the graph (Figure 6C), +/+ discs should look like an intermediate between panels A and B. This is not apparent from Figure 3A and B.
+
+6) In Figure 5, the authors analyze transgression size in a heterozygous background of Pc3/+ or trxE2/+. They claim that the transgression size in the P compartment is altered because of changes in the epigenetic control mechanisms related to reprogramming. However, the hedgehog gene itself is under control of epigenetic regulation (Maurange and Paro, 2002), raising the possibility that the alterations in transgression size might be due to higher or lower activities of hh-GAL4 (and hence expression of hid). This could be tested by monitoring the activity of hh-Gal4 in the different genetic backgrounds using a reporter (e.g., UAS-GFP).
+
+7) Unlike much of the rest of the data, Figures 5D-G, are not very clear. The changes in Psc and H3K4 expression could be shown in a way that makes it easier for the reader to judge the extent of the changes.
+
+8) In Figure 6, the authors test whether en-expressing cells can induce en-lacZ expression in neighboring cells. They show that this is indeed the case for cells in the anterior compartment. In the posterior compartment, where en-lacZ is normally active, however, en-lacZ is apparently repressed in clones of cells expressing Engrailed (panel B'). This raises concerns about the physiological relevance of the expression level of Engrailed in the clones and thus the validity of the conclusion. The authors could lower expression levels by using an expression system independent of the highly active Gal4/UAS system, by reducing the temperature (the Gal4 system is less active at 18C), or by co-expressing Gal80ts. Furthermore, as the authors acknowledge, engrailed normally becomes active in the A compartment at late stages of discs development. They suggest that this is not true for en-lacZ. They conclude therefore that non-autonomous engrailed expression represents a true fate change (A to P). However, the nature of the en-lacZ allele is not specified. This is important because at least one en-lacz line (known as xho25 en-lacZ) is upregulated in the A compartment (Blair 1992). Therefore the conclusion that engrailed is activated in a non-autonomous manner needs further evidence, perhaps with higher quality anti-En staining and a demonstration that Ptc expression is suppressed in these cells.

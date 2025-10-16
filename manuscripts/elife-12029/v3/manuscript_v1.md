@@ -1,0 +1,16 @@
+# A cholinergic feedback circuit to regulate striatal population uncertainty and optimize reinforcement learning
+
+## Authors
+
+- Nicholas T Franklin
+- Michael J Frank †
+
+### Affiliations
+
+1. Department of Cognitive, Linguistic and Psychological Sciences, Brown Institute for Brain Science Brown University Providence United States Michael_Frank@brown.edu
+
+† Corresponding author
+
+## Abstract
+
+Convergent evidence suggests that the basal ganglia support reinforcement learning by adjusting action values according to reward prediction errors. However, adaptive behavior in stochastic environments requires the consideration of uncertainty to dynamically adjust the learning rate. We consider how cholinergic tonically active interneurons (TANs) may endow the striatum with such a mechanism in computational models spanning three Marr's levels of analysis. In the neural model, TANs modulate the excitability of spiny neurons, their population response to reinforcement, and hence the effective learning rate. Long TAN pauses facilitated robustness to spurious outcomes by increasing divergence in synaptic weights between neurons coding for alternative action values,whereas short TAN pauses facilitated stochastic behavior but increased responsiveness to change-points in outcome contingencies.A feedback control system allowed TAN pauses to be dynamically modulated by uncertainty across the spiny neuron population,allowing the system to self-tune and optimize performance across stochastic environments.

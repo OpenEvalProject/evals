@@ -1,0 +1,25 @@
+# Functional Synergy between the Munc13 C-terminal C1 and C2 domains
+
+## Authors
+
+- Xiaoxia Liu
+- Alpay Burak Seven
+- Marcial Camacho
+- Vicotoria Esser
+- Junjie Xu
+- Thorsten Trimbuch
+- Bradley Quade
+- Lijing Su
+- Cong Ma
+- Christian Rosenmund
+- Josep Rizo †
+
+### Affiliations
+
+1. Department of Biophysics University of Texas Southwestern Medical Center Dallas United States Jose.Rizo-Rey@UTSouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Neurotransmitter release requires SNARE complexes to bring membranes together, NSF-SNAPs to recycle the SNAREs, Munc18-1 and Munc13s to orchestrate SNARE complex assembly, and Synaptotagmin-1 to trigger fast Ca 2+ -dependent membrane fusion. However, it is unclear whether Munc13s function upstream and/or downstream of SNARE complex assembly, and how the actions of their multiple domains are integrated. Reconstitution, liposome-clustering and electrophysiological experiments now reveal a functional synergy between the C1, C2B and C2C domains of Munc13-1, indicating that these domains help bridging the vesicle and plasma membranes to facilitate stimulation of SNARE complex assembly by the Munc13-1 MUN domain. Our reconstitution data also suggest that Munc18-1, Munc13-1, NSF, αSNAP and the SNAREs are critical to form a 'primed' state that does not fuse but is ready for fast fusion upon Ca 2+ influx. Overall, our results support a model whereby the multiple domains of Munc13s cooperate to coordinate synaptic vesicle docking, priming and fusion.

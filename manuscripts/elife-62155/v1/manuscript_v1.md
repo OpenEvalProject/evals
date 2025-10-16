@@ -1,0 +1,27 @@
+# Abortive intussusceptive angiogenesis causes multi-cavernous vascular malformations
+
+## Authors
+
+- Wenqing Li<sup>1</sup>
+- Virginia Tran<sup>2</sup>
+- Iftach Shaked<sup>3</sup>
+- Belinda Xue<sup>4</sup>
+- Thomas Moore<sup>5</sup>
+- Rhonda Lightle<sup>5</sup>
+- David Kleinfeld<sup>3</sup> ([ORCID: 0000-0001-9797-4722](https://orcid.org/0000-0001-9797-4722))
+- Issam A Awad<sup>5</sup>
+- Mark H Ginsberg<sup>2</sup> ([ORCID: 0000-0002-5685-5417](https://orcid.org/0000-0002-5685-5417)) †
+
+### Affiliations
+
+1. Medicine University of California, San Diego La Jolla United States
+2. Department of Medicine University of California, San Diego La Jolla United States
+3. Department of Physics University of California, San Diego San Diego United States
+4. Department of Medicine University of California, San Diego San Diego United States
+5. Surgery University of Chicago Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+Mosaic inactivation of CCM2 in humans causes cerebral cavernous malformations (CCMs) containing adjacent dilated blood-filled multi-cavernous lesions. We used CRISPR-Cas9 mutagenesis to induce mosaic inactivation of zebrafish ccm2 resulting in a novel lethal multi-cavernous lesion in the embryonic caudal venous plexus (CVP) caused by obstruction of blood flow by intraluminal pillars. These pillars mimic those that mediate intussusceptive angiogenesis; however, in contrast to the normal process, the pillars failed to fuse to split the pre-existing vessel in two. Abortive intussusceptive angiogenesis stemmed from mosaic inactivation of ccm2 leading to patchy klf2a over-expression and resultant aberrant flow signaling. Surviving adult fish manifested histologically-typical hemorrhagic CCM. Formation of mammalian CCM requires the flow-regulated transcription factor KLF2; fish CCM and the embryonic CVP lesion failed to form in klf2a null fish indicating a common pathogenesis with the mammalian lesion. These studies describe a zebrafish CCM model and establish a mechanism that can explain the formation of characteristic multi-cavernous lesions.

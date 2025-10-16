@@ -1,0 +1,20 @@
+# Nucleosome breathing and remodeling constrain CRISPR‐Cas9 function
+
+## Authors
+
+- R Stefan Isaac
+- Fuguo Jiang
+- Jennifer A Doudna
+- Wendell A Lim
+- Geeta J Narlikar †
+- Ricardo AB Almeida
+
+### Affiliations
+
+1. Department of Cellular and Molecular Pharmacology, Center for Systems and Synthetic Biology University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+The CRISPR-Cas9 bacterial surveillance system has become a versatile tool for genome editing and gene regulation in eukaryotic cells, yet how CRISPR-Cas9 contends with the barriers presented by eukaryotic chromatin is poorly understood. Here we investigate how the smallest unit of chromatin, a nucleosome, constrains the activity of the CRISPR-Cas9 system. We find that nucleosomes assembled on native DNA sequences are permissive to Cas9 action. However, the accessibility of nucleosomal DNA to Cas9 is variable over several orders of magnitude depending on dynamic properties of the DNA sequence and the distance of the PAM site from the nucleosome dyad.  We further find that chromatin remodeling enzymes stimulate Cas9 activity on nucleosomal templates. Our findings imply that the spontaneous breathing of nucleosomal DNA together with the action of chromatin remodelers allows Cas9 to effectively act on chromatin in vivo.

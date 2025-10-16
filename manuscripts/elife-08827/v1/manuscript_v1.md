@@ -1,0 +1,16 @@
+# Deployment of a retinal determination gene network drives directed cell migration in the sea urchin embryo
+
+## Authors
+
+- Megan L Martik
+- David R McClay †
+
+### Affiliations
+
+1. Department of Biology Duke University Durham United States dmcclay@duke.edu
+
+† Corresponding author
+
+## Abstract
+
+Gene regulatory networks (GRNs) provide a systems-level orchestration of an organism's genome encoded anatomy. As biological networks are revealed, they continue to answer many questions including knowledge of how GRNs control morphogenetic movements and how GRNs evolve. The migration of the small micromeres to the coelomic pouches in the sea urchin embryo provides an exceptional model for understanding the genomic regulatory control of morphogenesis. An assay using the robust homing potential of these cells reveals a "coherent feed-forward" transcriptional subcircuit composed of Pax6, Six3, Six1/2, Eya, and Dach1 that is responsible for the directed homing mechanism of these multipotent progenitors. The linkages of that circuit are strikingly similar to a circuit involved in retinal specification in Drosophila suggesting that systems-level tasks can be highly conserved even though the tasks drive unrelated processes in different animals.

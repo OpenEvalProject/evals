@@ -1,0 +1,19 @@
+# Assessing long-distance RNA sequence connectivity via RNA-templated DNA-DNA ligation
+
+## Authors
+
+- Christian K Roy
+- Sara Olson
+- Brenton R Graveley
+- Phillip D Zamore
+- Melissa J Moore †
+
+### Affiliations
+
+1. RNA Therapeutics Institute Howard Hughes Medical Institute, University of Massachusetts Medical School Worcester United States melissa.moore@umassmed.edu
+
+† Corresponding author
+
+## Abstract
+
+Many RNAs, including pre-mRNAs and long non-coding RNAs, can be thousands of nucleotides long and undergo complex post-transcriptional processing. Multiple sites of alternative splicing within a single gene exponentially increases the number of possible spliced isoforms, with most human genes currently estimated to express at least ten. To understand the mechanisms underlying these complex isoform expression patterns methods are needed that faithfully maintain long-range exon connectivity information in individual RNA molecules. Here, we describe SeqZip, a methodology that uses RNA-templated DNA-DNA ligation to retain and compress connectivity between distant sequences within single RNA molecules. Using this assay, we test proposed coordination between distant sites of alternative exon utilization in mouse Fn1 and we characterize the extraordinary exon diversity of Drosophila melanogaster Dscam1 .

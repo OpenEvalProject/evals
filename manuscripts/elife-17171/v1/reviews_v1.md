@@ -1,0 +1,33 @@
+# Peer review - Round 1
+
+Editors:
+- Louis J Ptáček, University of California, San Francisco , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.17171.030](https://doi.org/10.7554/eLife.17171.030)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Loss of ZBTB20 impairs circadian output and leads to unimodal behavioral rhythms" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Louis Ptáček (Reviewing Editor and Reviewer #1), Hitosbi Okamura (Reviewer #2), and Orie Shafer (Reviewer #3).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+In this interesting manuscript Qu and colleagues investigate the effects of the loss of the zinc finger transcription factor ZBT20 on circadian activity rhythms in mice and make a case that this transcription factor acts as an output factor in the central clock. Understanding how the central circadian pacemaker links molecular timekeeping with neuronal outputs is a central question in chronobiology and of intense interest to the field. Using a Nestin-Cre mediated knockdown of ZBT20 throughout the nervous system (ZBT20KO), the authors present compelling evidence that the loss of this transcription factor results in locomotor rhythm abnormalities that are highly reminiscent of the abnormalities seen previously in mice lacking the neuropeptide Prokineticin-2 (Prok2) or it's receptor (Prokr2). The authors provide strong evidence of a link between ZBT20 and Prok2 signaling by showing that Prokr2 levels are dramatically lowered in the SCN ZBT20KO mice and that ZBT20 acts a positive transcriptional regulator of Prokr2 expression in cultured suprachiasmatic nucleus (SCN) cells. The evidence supporting this link is very strong. The evidence that these observations provide specific insights into circadian output pathways in the SCN is less strong (see below).
+
+Essential revisions:
+
+1) A central concern is the fact that the ZBT20KO mice appear to be sick and grossly abnormal with respect to brain development and metabolism. As the authors concede in the manuscript, ZBT20KO mice display myriad abnormalities in addition to the circadian activity phenotypes described. For example, ZBT20KO mice have significantly reduced brain size and weight and a significant proportion of the ZBT20KO die before reaching four months of age. Thus, despite the very nice link the authors have made between ZBT20 and Prokr2, it is difficult to know how much of the circadian defects described are due specifically to the requirement for ZBT20/Prokr2 function in the central clock, and how much was simply due to fact that the ZBT20KO were suffering from myriad neurological and metabolic maladies. This might be circumvented by generating other lines using more-specific drivers but this would require many months of additional work which is deemed outside the scope of the current manuscript.
+
+The one attempt to address the SCN specific function of ZBT20/Prokr2, the over-expression of Prokr2 in the ZBT20KO SCN, was complicated by the fact that the majority of the mice did not survive the viral injection surgery, further evidence that these mice are quite sick. The authors mention attempting ZBT20 knockdowns in cell types that are more specific to circadian timekeeping (VIP and AVP expressing cells), but report that these mice had normal circadian activity rhythms. These negative results could be consistent with an alternative explanation for the central results: the circadian defects displayed by the ZBT20KO mice are simply the result of the widespread neurological and metabolic defects caused by knockdown of ZBT20 in Nestin-expressing neurons throughout the nervous system. The link between ZBTB20 and Prok2 signaling would be interesting in itself but the potential link to a circadian output makes the manuscript more interesting. However, caveats re: the fact that the mice are sick which could contribute to altered activity need to be discussed.
+
+2) It is already reported that ZBTB20 knock out causes a genesis of specific type of cells in the pituitary (Cao et al., Nat Commun 7:11121, 2015), and plays a crucial role for the morphogenesis of hippocampus (Rosenthal et al., Hippocampus 22:2144-56, 2012). Since authors use Nes-CRE, which is expressed neuronal/glial progenitor cells, it is highly possible that ZBTB20 is deleted in developing CNS. Thus the effect of ZBTB20/Nes-CRE on the morphogenesis of the SCN should carefully be checked. One serial Nissl stained sections is shown in a Figure 4—figure supplement 2, yet this does not justify whether morphogenesis is unperturbed. Moreover, immunohistochemical analyses (Figure 4—figure supplements1 and 2) are all suffering from poor experimental quality. For example, the coronal level of GAD-immunohistochemistry should be harmonized in WT and NZ-ZB20KO. The histology data should be convincingly reproduced at more high resolution images. Thus the authors should produce a whole immunohistochemical series of SCN from the entire rostral-caudal axis, by using antisera to AVP and VIP proteins or by other convincing markers.
+
+3) Although Figure 4A shows average transcript levels of key regulators in the SCN, this does not include Rgs16 or Gpr176, both of which are known to work on SCN network as the other genes that the authors tested. The authors are therefore recommended to add Rgs16 and Gpr176 to Figure 4A RT-PCR analysis.
+
+4) The in situ hybridization trials of authors to show the known expressed genes are also encouraged, since this provides a method for examining the affected genes morphologically after the deletion of ZBTB20. Unfortunately, presented quality of in situ analyses (Figure 4B and Figure 4—figure supplements 1 and 2; Figure 5F and Figure 5—figure supplement 1C; Figure 6B and D are all poor experimental quality. The authors are therefore recommended to use conventional in situ hybridization assay with RI or DIG. Since the behavioural data use adult mice, the authors should analyze adult mice for checking whether the SCN is intact.

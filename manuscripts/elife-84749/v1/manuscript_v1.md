@@ -1,0 +1,19 @@
+# Migrating mesoderm cells self-organize into a dynamic meshwork structure during chick gastrulation
+
+## Authors
+
+- Yukiko Nakaya<sup>1</sup>
+- Mitsusuke Tarama<sup>1</sup> ([ORCID: 0000-0002-2708-1774](https://orcid.org/0000-0002-2708-1774))
+- Sohei Tasaki<sup>1</sup>
+- Ayako Isomura-Matoba<sup>1</sup> ([ORCID: 0000-0002-8518-9329](https://orcid.org/0000-0002-8518-9329))
+- Tatsuo Shibata<sup>1</sup> ([ORCID: 0000-0002-9294-9998](https://orcid.org/0000-0002-9294-9998)) †
+
+### Affiliations
+
+1. Laboratory for Physical Biology RIKEN Center for Biosystems Dynamics Research Kobe Japan
+
+† Corresponding author
+
+## Abstract
+
+Migration of cell populations is a fundamental process in morphogenesis and disease. The mechanisms of collective cell migration of epithelial cell populations have been well studied. It remains unclear, however, how the highly motile mesenchymal cells, which migrate extensively throughout the embryo, are connected with each other and coordinated as a collective. During chick gastrulation, cells emerging from the primitive streak and migrating in the 3D space between ectoderm and endoderm (mesoderm region) exhibit a novel form of collective migration. Using live imaging and quantitative analysis, such as topological data analysis (TDA), we found that these cells undergo a novel form of collective migration, in which they form a meshwork structure while moving away from the primitive streak. Overexpressing a mutant form of N-cadherin was associated with reduced speed of tissue progression and directionality of the collective cell movement, whereas the speed of individual cells remains unchanged. To investigate how this meshwork arises, we utilized an agent-based theoretical model, which suggests that cell elongation, cell-cell adhesion, and cell density are the key parameters for the meshwork formation. These data provide novel insights into how a supracellular structure of migrating mesenchymal cells may arise in loosely connected cell populations.

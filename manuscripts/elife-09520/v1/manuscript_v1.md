@@ -1,0 +1,24 @@
+# Mapping residual transmission for malaria elimination
+
+## Authors
+
+- Robert C Reiner †
+- Arnaud Le Manach
+- Simon Kunene
+- Nyasatu Ntshalintshali
+- Michelle S Hsiang
+- T Alex Perkins
+- Bryan Greenhouse
+- Andrew J Tatem
+- Justin M Cohen
+- David L Smith
+
+### Affiliations
+
+1. Fogarty International Center National Institutes of Health Bethesda United States
+
+† Corresponding author
+
+## Abstract
+
+Eliminating malaria from a defined region involves draining the endemic parasite reservoir and minimizing local malaria transmission around imported malaria infections1. In the last phases of malaria elimination, as universal interventions reap diminishing marginal returns, national resources must become increasingly devoted to identifying where residual transmission is occurring. The needs for accurate measures of progress and practical advice about how to allocate scarce resources require new analytical methods to quantify fine-grained heterogeneity in malaria risk. Using routine national surveillance data from Swaziland (a sub-Saharan country on the verge of elimination), we estimated individual reproductive numbers. Fine-grained maps of reproductive numbers and local malaria importation rates were combined to show `malariogenic potential,' a first for malaria elimination. As countries approach elimination, these individual-based measures of transmission risk provide meaningful metrics for planning programmatic responses and prioritizing areas where interventions will contribute most to malaria elimination.

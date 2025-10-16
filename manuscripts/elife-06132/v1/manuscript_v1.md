@@ -1,0 +1,25 @@
+# Inhibition of mutant EGFR in lung cancer cells triggers SOX2-FOXO6 dependent survival pathways
+
+## Authors
+
+- S Michael Rothenberg
+- Kyle Concannon
+- Sarah Cullen
+- Gaylor Boulay
+- Alexa B Turke
+- Anthony C Faber
+- Elizabeth L Lockerman
+- Miguel N Rivera
+- Jeffrey A Engelman
+- Shyamala Maheswaran
+- Daniel A Haber †
+
+### Affiliations
+
+1. Cancer Center Massachusetts General Hospital Charlestown United States dhaber@mgh.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Treatment of EGFR -mutant lung cancer with erlotinib results in dramatic tumor regression but it is invariably followed by drug resistance. In characterizing early transcriptional changes following drug treatment of mutant EGFR-addicted cells, we identified the stem cell transcriptional regulator SOX2 as being rapidly and specifically induced, both in vitro and in vivo. Suppression of SOX2 sensitizes cells to erlotinib-mediated apoptosis, ultimately decreasing the emergence of acquired resistance, whereas its ectopic expression reduces drug-induced cell death. We show that erlotinib relieves EGFR-dependent suppression of FOXO6, leading to its induction of SOX2, which in turn represses the pro-apoptotic BH3-only genes BIM and BMF . Together, these observations point to a physiological feedback mechanism that attenuates oncogene addiction-mediated cell death associated with the withdrawal of growth factor signaling and may therefore contribute to the development of resistance.

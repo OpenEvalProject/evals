@@ -1,0 +1,21 @@
+# Oxyntomodulin regulates resetting of the liver circadian clock by food
+
+## Authors
+
+- Dominic Landgraf
+- Anthony H Tsang
+- Alexei Leliavski
+- Christiane E Koch
+- Johanna L Barclay
+- Daniel J Drucker
+- Henrik Oster †
+
+### Affiliations
+
+1. Circadian Rhythms Group Max Planck Institute for Biophysical Chemistry Göttingen Germany henrik.oster@uksh.de
+
+† Corresponding author
+
+## Abstract
+
+Circadian clocks coordinate 24-hr rhythms of behavior and physiology. In mammals, a master clock residing in the suprachiasmatic nucleus (SCN) is reset by the light-dark cycle, while timed food intake is a potent synchronizer of peripheral clocks such as the liver. Alterations in food intake rhythms can uncouple peripheral clocks from the SCN, resulting in internal desynchrony, which promotes obesity and metabolic disorders. Pancreas-derived hormones such as insulin and glucagon have been implicated in signaling mealtime to peripheral clocks. Here we identify a novel, more direct pathway of food-driven liver clock resetting involving oxyntomodulin (OXM). In mice, food intake stimulates OXM secretion from the gut, which resets liver transcription rhythms via induction of the core clock genes Per1 and 2 . Inhibition of OXM signaling blocks food-mediated resetting of hepatocyte clocks. These data reveal a direct link between gastric filling with food and circadian rhythm phasing in metabolic tissues.

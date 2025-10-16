@@ -1,0 +1,19 @@
+# Sampling alternative conformational states of transporters and receptors with AlphaFold2
+
+## Authors
+
+- Diego del Alamo<sup>1</sup>
+- Davide Sala<sup>2</sup> ([ORCID: 0000-0002-3900-0011](https://orcid.org/0000-0002-3900-0011))
+- Hassane S Mchaourab<sup>1</sup> †
+- Jens Meiler<sup>1</sup> ([ORCID: 0000-0001-8945-193X](https://orcid.org/0000-0001-8945-193X)) †
+
+### Affiliations
+
+1. Department of Molecular Physiology and Biophysics Vanderbilt University Nashville United States
+2. Department of Chemistry Vanderbilt University Nashville United States
+
+† Corresponding author
+
+## Abstract
+
+Equilibrium fluctuations and triggered conformational changes often underlie the functional cycles of membrane proteins. For example, transporters mediate the passage of molecules across cell membranes by alternating between inward-facing (IF) and outward-facing (OF) states, while receptors undergo intracellular structural rearrangements that initiate signaling cascades. Although the conformational plasticity of these proteins has historically posed a challenge for traditional de novo protein structure prediction pipelines, the recent success of AlphaFold2 (AF2) in CASP14 culminated in the modeling of a transporter in multiple conformations to high accuracy. Given that AF2 was designed to predict static structures of proteins, it remains unclear if this result represents an underexplored capability to accurately predict multiple conformations and/or structural heterogeneity. Here, we present an approach to drive AF2 to sample alternative conformations of topologically diverse transporters and G-protein coupled receptors (GPCRs) that are absent from the AF2 training set. Whereas models of most proteins generated using the default AF2 pipeline are conformationally homogeneous and nearly identical to one another, reducing the depth of the input multiple sequence alignments (MSAs) by stochastic subsampling led to the generation of accurate models in multiple conformations. In our benchmark, these conformations spanned the range between two experimental structures of interest, with models at the extremes of these conformational distributions observed to be among the most accurate (average template modeling (TM)-score of 0.94). These results suggest a straightforward approach to identifying native-like alternative states, while also highlighting the need for the next generation of deep learning algorithms to be designed to predict ensembles of biophysically relevant states.

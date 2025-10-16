@@ -1,0 +1,27 @@
+# Neural signatures of auditory hypersensitivity following acoustic trauma
+
+## Authors
+
+- Matthew McGill<sup>1</sup> ([ORCID: 0000-0003-2322-9580](https://orcid.org/0000-0003-2322-9580)) †
+- Ariel E Hight<sup>2</sup>
+- Yurika L Watanabe<sup>2</sup>
+- Aravindakshan Parthasarathy<sup>2</sup>
+- Dongqin Cai<sup>2</sup>
+- Kameron Clayton<sup>2</sup>
+- Kenneth E Hancock<sup>3</sup>
+- Anne Takesian<sup>2</sup>
+- Sharon G Kujawa<sup>4</sup>
+- Daniel B Polley<sup>2</sup> ([ORCID: 0000-0002-5120-2409](https://orcid.org/0000-0002-5120-2409))
+
+### Affiliations
+
+1. Division of Medical Sciences Harvard Medical School Boston United States
+2. Eaton-Peabody Laboratories Massachusetts Eye and Ear Infirmary Boston United States
+3. Eaton Peabody Laboratory Massachusetts Eye and Ear Infirmary Boston United States
+4. Department of  Otolaryngology Harvard Medical School Boston United States
+
+† Corresponding author
+
+## Abstract
+
+Neurons in sensory cortex exhibit a remarkable capacity to maintain stable firing rates despite large fluctuations in afferent activity levels. However, sudden peripheral deafferentation in adulthood can trigger an excessive, non-homeostatic cortical compensatory response that may underlie perceptual disorders including sensory hypersensitivity, phantom limb pain, and tinnitus. Here, we show that mice with noise-induced damage of the high-frequency cochlear base were behaviorally hypersensitive to spared mid-frequency tones and to direct optogenetic stimulation of auditory thalamocortical neurons. Chronic 2-photon calcium imaging from ACtx pyramidal neurons (PyrNs) revealed an initial stage of spatially diffuse hyperactivity, hyper-correlation, and auditory hyperresponsivity that consolidated around deafferented map regions three or more days after acoustic trauma. Deafferented PyrN ensembles also displayed hypersensitive decoding of spared mid-frequency tones that mirrored behavioral hypersensitivity, suggesting that non-homeostatic regulation of cortical sound intensity coding following sensorineural loss may be an underlying source of auditory hypersensitivity. Excess cortical response gain after acoustic trauma was expressed heterogeneously among individual PyrNs, yet 40% of this variability could be accounted for by each cell's baseline response properties prior to acoustic trauma. PyrNs with initially high spontaneous activity and gradual monotonic intensity growth functions were more likely to exhibit non-homeostatic excess gain after acoustic trauma. This suggests that while cortical gain changes are triggered by reduced bottom-up afferent input, their subsequent stabilization is also shaped by their local circuit milieu, where indicators of reduced inhibition can presage pathological hyperactivity following sensorineural hearing loss.

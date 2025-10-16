@@ -1,0 +1,17 @@
+# Quantitative analysis of mammalian GIRK2 channel regulation by G proteins, PIP2 and Na+ in a reconstituted system
+
+## Authors
+
+- Weiwei Wang
+- Matthew R Whorton
+- Roderick MacKinnon †
+
+### Affiliations
+
+1. Laboratory of Molecular Neurobiology and Biophysics The Rockefeller University, Howard Hughes Medical Institute New York United States mackinn@rockefeller.edu
+
+† Corresponding author
+
+## Abstract
+
+GIRK channels control spike frequency in atrial pacemaker cells and inhibitory potentials in neurons. By directly responding to G proteins, PIP 2 and Na + , GIRK is under the control of multiple signaling pathways. In this study, the mammalian GIRK2 channel has been purified and reconstituted in planar lipid membranes and effects of Gα, Gβγ, PIP 2 and Na + analyzed. Gβγ and PIP 2 must be present simultaneously to activate GIRK2. Na + is not essential but modulates the effect of Gβγ and PIP 2 over physiological concentrations. Gα i1 (GTPγS) has no effect, whereas Gα i1 (GDP) closes the channel through removal of Gβγ. In the presence of Gβγ, GIRK2 opens as a function of PIP 2 mole fraction with Hill coefficient 2.5 and an affinity that poises GIRK2 to respond to natural variations of PIP 2 concentration. The dual requirement for Gβγ and PIP 2 can help to explain why GIRK2 is activated by G i/o , but not G q coupled GPCRs.

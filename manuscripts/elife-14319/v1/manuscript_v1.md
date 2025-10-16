@@ -1,0 +1,27 @@
+# Hypoxia-induced metabolic stress in retinal pigment epithelial cells is sufficient to induce photoreceptor degeneration
+
+## Authors
+
+- Toshihide Kurihara
+- Peter D Westenskow
+- Marin L Gantner
+- Yoshihiko Usui
+- Andrew Schultz
+- Stephen Bravo
+- Edith Aguilar
+- Carli Wittgrove
+- Mollie SH Friedlander
+- Liliana P Paris
+- Emily Chew
+- Gary Siuzdak
+- Martin Friedlander †
+
+### Affiliations
+
+1. Department of Cell and Molecular Biology The Scripps Research institute La Jolla United States friedlan@scripps.edu
+
+† Corresponding author
+
+## Abstract
+
+Photoreceptors are the most numerous and metabolically demanding cells in the retina. Their primary nutrient source is the choriocapillaris, and both the choriocapillaris and photoreceptors require trophic and functional support from retinal pigment epithelium (RPE) cells. Defects in RPE, photoreceptors, and the choriocapillaris are characteristic of age-related macular degeneration (AMD), a common vision-threatening disease. RPE dysfunction or death is a primary event in AMD, but the combination(s) of cellular stresses that affect the function and survival of RPE are incompletely understood. Here, using mouse models in which hypoxia can be genetically triggered in RPE, we show that hypoxia-induced metabolic stress alone leads to photoreceptor atrophy. Glucose and lipid metabolism are radically altered in hypoxic RPE cells; these changes impact nutrient availability for the sensory retina and promote progressive photoreceptor degeneration. Understanding the molecular pathways that control these responses may provide important clues about AMD pathogenesis and inform future therapies.

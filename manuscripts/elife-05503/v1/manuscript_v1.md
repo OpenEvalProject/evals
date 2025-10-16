@@ -1,0 +1,17 @@
+# Nuclear genomic signals of the 'microturbellarian' roots of platyhelminth evolutionary innovation
+
+## Authors
+
+- Christopher E Laumer †
+- Andreas Hejnol
+- Gonzalo Giribet
+
+### Affiliations
+
+1. Museum of Comparative Zoology, Department of Organismic and Evolutionary Biology Harvard University Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Flatworms number among the most diverse invertebrate phyla, and represent the most biomedically significant branch of the major bilaterian clade Spiralia, but to date, deep evolutionary relationships within this group have been studied using only a single locus (the rRNA operon), leaving the origins of many key clades unclear. Here, using a survey of genomes and transcriptomes representing all free-living flatworm orders, we provide resolution of platyhelminth interrelationships based on hundreds of nuclear protein-coding genes, exploring phylogenetic signal through concatenation as well as recently developed consensus approaches. These analyses robustly support a modern hypothesis of flatworm phylogeny, one which emphasizes the primacy of the often-overlooked 'microturbellarian' groups in understanding the major evolutionary transitions within Platyhelminthes: perhaps most notably, we propose a novel scenario for the interrelationships between free-living and vertebrate-parasitic flatworms, providing new opportunities to shed light on the origins and biological consequences of parasitism in these iconic invertebrates.

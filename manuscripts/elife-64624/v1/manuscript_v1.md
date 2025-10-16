@@ -1,0 +1,21 @@
+# ARL3 activation requires the co-GEF BART and effector-mediated turnover
+
+## Authors
+
+- Yasmin ElMaghloob<sup>1</sup>
+- Begoña Sot<sup>2</sup>
+- Michael J McIlwraith<sup>1</sup>
+- Esther Garcia<sup>1</sup>
+- Tamas Yelland<sup>1</sup>
+- Shehab Ismail<sup>1</sup> ([ORCID: 0000-0002-4150-1077](https://orcid.org/0000-0002-4150-1077)) †
+
+### Affiliations
+
+1. Structural biology Beatson Institute for Cancer Research Glasgow United Kingdom
+2. Nanobiosystems IMDEA Nanoscience Madrid Spain
+
+† Corresponding author
+
+## Abstract
+
+The ADP-ribosylation factor-like 3 (ARL3) is a ciliopathy G-protein which regulates the ciliary trafficking of several lipid-modified proteins. ARL3 is activated by its guanine exchange factor (GEF) ARL13B via an unresolved mechanism. BART is described as an ARL3 effector which has also been implicated in ciliopathies, although the role of its ARL3 interaction is unknown. Here we show that, at physiological GTP:GDP levels, human ARL3GDP is weakly activated by ARL13B. However, BART interacts with nucleotide-free ARL3 and, in concert with ARL13B, efficiently activates ARL3. In addition, BART binds ARL3GTP and inhibits GTP dissociation, thereby stabilising the active G-protein; the binding of ARL3 effectors then releases BART. Finally, using live cell imaging, we show that BART accesses the primary cilium and colocalises with ARL13B. We propose a model wherein BART functions as a bona fide co-GEF for ARL3 and maintains the active ARL3GTP, until it is recycled by ARL3 effectors.

@@ -1,0 +1,20 @@
+# Epithelial-to-mesenchymal transition proceeds through directional destabilization of multidimensional attractor
+
+## Authors
+
+- Weikang Wang<sup>1</sup> †
+- Dante Poe<sup>1</sup>
+- Yaxuan Yang<sup>1</sup>
+- Thomas Hyatt<sup>2</sup>
+- Jianhua Xing<sup>1</sup> ([ORCID: 0000-0002-3700-8765](https://orcid.org/0000-0002-3700-8765)) †
+
+### Affiliations
+
+1. Department of Computational and Systems Biology University of Pittsburgh Pittsburgh United States
+2. Department of Physics and Astronomy University of Pittsburgh Pittsburgh United States
+
+† Corresponding author
+
+## Abstract
+
+How a cell changes from one stable phenotype to another one is a fundamental problem in developmental and cell biology. Mathematically a stable phenotype corresponds to a stable attractor in a generally multi-dimensional state space, which needs to be destabilized so the cell relaxes to a new attractor. Two basic mechanisms for destabilizing a stable fixed point, pitchfork and saddle-node bifurcations, have been extensively studied theoretically, however direct experimental investigation at the single cell level remains scarce. Here we performed live cell imaging studies and analyses in the framework of dynamical systems theories on epithelial-to-mesenchymal transition (EMT). While some mechanistic details remain controversial, EMT is a cell phenotypic transition (CPT) process central to development and pathology. Through time-lapse imaging we recorded single cell trajectories of human A549/Vim-RFP cells undergoing EMT induced by different concentrations of exogenous TGF-β in a multi-dimensional cell feature space. The trajectories clustered into two distinct groups, indicating that the transition dynamics proceeds through parallel paths. We then reconstructed the reaction coordinates and the corresponding quasi-potentials from the trajectories. The potentials revealed a plausible mechanism for the emergence of the two paths where the original stable epithelial attractor collides with two saddle points sequentially with increased TGF-β concentration, and relaxes to a new one. Functionally the directional saddle-node bifurcation ensures a CPT proceeds towards a specific cell type, as a mechanistic realization of the canalization idea proposed by Waddington.

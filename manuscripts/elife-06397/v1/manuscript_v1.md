@@ -1,0 +1,18 @@
+# Building accurate sequence-to-affinity models from high-throughput in vitro protein-DNA binding data using FeatureREDUCE
+
+## Authors
+
+- Todd R Riley
+- Allan Lazarovici
+- Richard S Mann
+- Harmen J Bussemaker †
+
+### Affiliations
+
+1. Department of Biological Sciences Columbia University New York United States hjb2004@columbia.edu
+
+† Corresponding author
+
+## Abstract
+
+Transcription factors are crucial regulators of gene expression. Accurate quantitative definition of their intrinsic DNA binding preferences is critical to understanding their biological function. High-throughput in vitro technology has recently been used to deeply probe the DNA binding specificity of hundreds of eukaryotic transcription factors, yet algorithms for analyzing such data have not yet fully matured. Here we present a general framework (FeatureREDUCE) for building sequence-to-affinity models based on a biophysically interpretable and extensible model of protein-DNA interaction that can account for dependencies between nucleotides within the binding interface or multiple modes of binding. When training on protein binding microarray (PBM) data, we use robust regression and modeling of technology-specific biases to infer specificity models of unprecedented accuracy and precision. We provide quantitative validation of our results by comparing to gold-standard data when available.

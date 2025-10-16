@@ -1,0 +1,53 @@
+# Peer review - Round 1
+
+Editors:
+- Richard S Lewis, Stanford University School of Medicine United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.33183.030](https://doi.org/10.7554/eLife.33183.030)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "PKD2 is an essential ion channel subunit in the primary cilium of the renal collecting duct epithelium" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Ralph Witzgall (Reviewer #3).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+This paper by Liu et al. is an important contribution to our understanding of the role of PKD2 (polycystin-2) channels in the cilia of renal epithelial cells. Defects in PKD2 cause some cases of autosomal dominant polycystic kidney disease (ADPKD). Although PKD2 has been studied in various cellular contexts, results have been inconsistent, in part because of the technical difficulty of accessing PKD2 in the primary cilium. In this study, Liu et al. apply sophisticated patch-clamp recording and microscopic techniques to report the first recordings and characterization of PKD2 channels in the primary cilia of primary mouse renal cells. Using Cre-mediated inactivation of the Pkd2 gene, they demonstrate ciliary currents dependent on the presence of PKD2. With a combination of single-channel and whole-cilium currents they show that the channels are permeable to K+ and Na+ but only sparingly to Ca2+ in contrast to previous studies. They are blocked by extracellular Ca2+ and sensitized by intracellular Ca2+, which may regulate their function in vivo. The PKD2 channels also appear to be active specifically in cilia but not in the cell body, and trafficking to the cilium does not depend on significant expression of PKD1. A surprising finding is that cilia in cystic cells from PKD2 knockout mice are abnormally long. Successful expression of exogenous PKD2-GFP channels in the cilia of HEK cells is also described, offering a useful platform for future studies of mutant PKD2 channels associated with polycystic kidney disease.
+
+Essential revisions:
+
+All three reviewers were enthusiastic about the paper, but felt that the following issues need to be adequately addressed before it can be accepted. Some of the revisions will require additional experiments that can be done with the approaches described in the paper.
+
+1) A central question is whether any PKD1 remains in the cPKD1 cells. While this is mentioned in the Discussion (subsection “Loss of PKD1 does not alter PKD2 ciliary trafficking or PKD2-mediated ciliary currents”, last paragraph), it is hard to judge without better explanations of the methods and interpretation of the results. In particular, Figure 1—figure supplement 2D needs to be more clearly explained. Does the very weak band at 1650 bp in the +dox/Del lane indicate residual, intact Pkd1? Please explain the significance of having the wt (200 bp) and floxed (400 bp) bands both before and after doxycycline treatment. Is the floxed/wt P2 primer site maintained after treatment with doxycycline? A schematic showing the location of the sequences for LoxP, primers, and exons 2-4 would be helpful.
+
+A western blot (the third shown in Figure 1B) has staining near one edge of the lane at the expected molecular weight for PKD1. Please comment in the figure legend or Results on whether you think this is residual PKD1 or non-specific background labeling. A lane with lysate from an established PKD1 knockout might help to decide this. Having a trace of PKD1 does not impair the bulk of the paper's findings. It does modestly weaken the claims that PKD1 isn't needed as part of the channel or for PKD2 trafficking.
+
+The same question exists concerning the knockout of PKD2 two weeks after doxycycline treatment. In the first ("2 weeks") western blot of Figure 1B, there is a very faint band in the dox-treated lane that is the same size as PKD2. This should be addressed in the results or the figure legend even if it indicates only a tiny amount of PKD2 expression that appears to be gone by two months. Given the genomic data (Figure 1—figure supplement 2D) for Pkd1, the possible residual PKD1 (Figure 1B), and the residual PKD2 at two weeks (Figure 1B), the word "abolished" (subsection “Progressive cyst formation in a new mouse model”, last paragraph) is too strong. PKD2 does appear to be abolished two months after doxycycline – were the recordings with cPkd2 cells all made two months or more after doxycycline treatment?
+
+2) Please explain in the text why whole-cell recording does not measure currents in the cilia (Figure 7, Figure 7—figure supplement 1), and whole-cilia recording does not detect currents from the cell body (Figure 4, Figure 5—figure supplement 1, Figure 7—figure supplement 3). The ability to record currents separately from each of these membrane compartments is key to the conclusions and should be discussed.
+
+3) The ion selectivity of PKD2 channels in this study is similar to but differs from the results obtained by Kleene et al. using the IMCD-3 cell line, especially with regard to Ca2+ (PCa/PNa = 0.025 vs. 0.55). Given the number of reports linking PKD2 to Ca2+ signaling, this is an important point to nail down. While the authors give several possible reasons for the discrepancy, it is not clear why these (triploidy, divalent contaminants, or channel location) would affect apparent ion selectivity. A more likely explanation may be the different recording modes that were used (single channels in Kleene et al., whole-cilia currents in this study).
+
+There seem to be limitations to both methods, which should be discussed. For the whole-cilia measurements, it seems almost certain that channels other than PKD2 are contributing to the currents, which are evident in the cPKD2 cells after doxycycline (Figure 4B). The Erev shift method assumes that background currents are constant throughout the experiment, but some solutions (e.g., isotonic Ca2+) may well affect leak and/or seal. Second, even if background current (e.g. Cl- current) is constant, it adds constant terms (P x concentration) to the GHK voltage equation that prevent use of the simple relation (subsection “Electrophysiology”, first equation) to calculate relative permeability. For the single-channel method used by Kleene et al., the measurement was bionic, but reversal potential was estimated from linear extrapolation of the K+ currents, which probably biases the Erev to more positive values. It may well be that there is no way to definitely resolve the discrepancies here, but a fuller discussion of these limitations would help the reader to understand the margin of error for each type of measurement. The authors could also comment on why single channel recordings in inside-out cilium patches (as in Figure 6A) were not used to measure relative permeabilities.
+
+Finally, the equation used to calculate relative divalent permeability (third equation in the aforementioned subsection) describes a situation with Ca2+ on one side and Na+ on the other, but it is not clear from the text that this was done. Please clarify.
+
+4) The data clearly show that a whole-cilium current is diminished in dox- treated cPKD2 cells. It is less well established that the single channel described in pIMCD cilia depends on PKD2. It has similar voltage dependence and ionic selectivity as the whole-cilium (PKD2-dependent) current, but identification of the single channels as PKD2 would be much stronger if you could show that they are rare or absent in the cilia of dox-treated cPKD2 cells. (This is especially important for the single 4-pS Ca2+ channels seen at very negative potentials, as there is no evidence to show that these are PKD2-dependent.)
+
+5) In HEK cells, a good case is made using immunofluorescence that PKD2-GFP is expressed in the cilia. However, the electrophysiology data do not prove the point. Endogenous PKD2 channels may be present in the cilia, and contributing some or all of the current, and siRNA would reduce that endogenous current as well. It would be useful to show recordings from untransfected HEK cilia if you have them to show that endogenous PKD2 is either absent or at a much lower level, to address this point. Conducting new recordings is not absolutely necessary, but at a minimum a discussion of the issue would be helpful.
+
+6) It is not clear which experiments led to the permeabilities given in the second paragraph of the subsection “PKD2 is primarily a monovalent channel in the cilium”. The PNa/PK of 0.4 matches the value given in the first paragraph of the subsection “Ciliary PKD2 preferentially conducts K+ and Na+ over Ca2+ ions”, but the PCa/PK of 0.025 isn't reported anywhere else. The authors should state that number in the Results and describe how it was determined.
+
+7) The expression in the subsection “Electrophysiology” is incorrect; it should be: [(Icontrol – ICa)/Icontrol] x 100. Also, the Hill equation should have the Imin term in front, not in the numerator: Imin + ((Imax–Imin)/(1+(IC50/X)^k). Also, Minimum and Maximum block rather than Imin, Imax, and replace X with Cae to be consistent with other equations.
+
+8) In Figure 2, cilia became longer after the inactivation of the Pkd2 gene, but in Figure 3D shorter cilia are shown. This is confusing; is this because isolation of primary cells in Figure 3D shortens the cilia? Please explain.
+
+9) The sensitization by intracellular Ca2+ was measured at -100 mV. To better understand how this may affect function in intact cells, it is important to consider the voltage dependence of sensitization. How much will Ca2+ affect channel activity under physiological conditions of 300-1000 nM Ca2+ at -17 mV, the normal resting potential of the cilia?
+
+10) The example of Ca2+ block given in Figure 5—figure supplement 1 shows that the current runs down by the end of the experiment, which would lead to an overestimate of the "block" by the higher Ca2+ solutions and therefore underestimate the K1/2. Was rundown consistently seen, and how much does this affect the K1/2?

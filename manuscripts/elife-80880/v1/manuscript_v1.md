@@ -1,0 +1,16 @@
+# Nested mechanosensory feedback actively damps visually guided head movements in Drosophila
+
+## Authors
+
+- Benjamin Cellini<sup>1</sup> ([ORCID: 0000-0002-0609-7662](https://orcid.org/0000-0002-0609-7662))
+- Jean-Michel Mongeau<sup>1</sup> ([ORCID: 0000-0002-3292-6911](https://orcid.org/0000-0002-3292-6911)) †
+
+### Affiliations
+
+1. Department of Mechanical Engineering Pennsylvania State University University Park United States
+
+† Corresponding author
+
+## Abstract
+
+Executing agile locomotion requires animals to integrate sensory feedback, often from multiple sources. For example, human gaze is mediated by multiple feedback loops that integrate visual and vestibular information. A central challenge in studying biological feedback loops is that they are nested and dynamically coupled. Here, we develop a framework based on control theory for unraveling nested feedback systems and apply it to study gaze stabilization in the fruit fly (Drosophila). By combining experimental and mathematical methods to manipulate control topologies, we uncovered the role of body-generated mechanosensory feedback nested within visual feedback in the control of head movements. We discovered that visual feedback changed the tuning of head movements across visual motion frequencies whereas mechanosensory feedback damped head movements. Head saccades had slower dynamics when the body was free to move, further pointing to the role of damping via mechanosensory feedback. By comparing head responses between self-generated and externally generated body motion, we revealed a nonlinear gating of mechanosensory feedback that is motor-context dependent. Altogether, our findings reveal the role of nested feedback loops in flies and uncover mechanisms that reconcile differences in head kinematics between body-free and body-fixed flies. Our framework is generalizable to biological and robotic systems relying on nested feedback control for guiding locomotion.

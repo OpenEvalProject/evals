@@ -1,0 +1,20 @@
+# Constraint and divergence of global gene expression in the mammalian embryo
+
+## Authors
+
+- Noah Spies
+- Cheryl L Smith
+- Jesse M Rodriguez
+- Julie C Baker
+- Serafim Batzoglou
+- Arend Sidow †
+
+### Affiliations
+
+1. Department of Pathology Stanford University School of Medicine Stanford United States arend@stanford.edu
+
+† Corresponding author
+
+## Abstract
+
+The effects of genetic variation on gene regulation in the developing mammalian embryo remain largely unexplored. To globally quantify these effects, we crossed two divergent mouse strains and asked how genotype of the mother or of the embryo drives gene expression phenotype genomewide. Embryonic expression of 331 genes depends on the genotype of the mother. Embryonic genotype controls allele-specific expression (ASE) of 1594 genes and a highly overlapping set of cis-expression quantitative trait loci (eQTL). A marked paucity of trans-eQTL suggests that the widespread expression differences do not propagate through the embryonic gene regulatory network. The cis-eQTL genes exhibit lower-than-average evolutionary conservation and are depleted for developmental regulators, consistent with purifying selection acting on expression phenotype of pattern formation genes. The widespread effect of maternal and embryonic genotype in conjunction with the purifying selection we uncovered suggests that embryogenesis is an important and understudied reservoir of phenotypic variation.

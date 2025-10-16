@@ -1,0 +1,17 @@
+# Molecular pathway analysis towards understanding tissue vulnerability in spinocerebellar ataxia type 1
+
+## Authors
+
+- Terri M Driessen<sup>1</sup>
+- Paul J Lee<sup>1</sup>
+- Janghoo Lim<sup>1</sup> ([ORCID: 0000-0002-5331-210X](https://orcid.org/0000-0002-5331-210X)) †
+
+### Affiliations
+
+1. Department of Genetics Yale School of Medicine New Haven United States
+
+† Corresponding author
+
+## Abstract
+
+The neurodegenerative disorder spinocerebellar ataxia type 1 (SCA1) affects the cerebellum and inferior olive, though previous research has focused primarily on the cerebellum. As a result, it is unknown what molecular alterations are present in the inferior olive, and whether these changes are found in other affected tissues. This study addresses these questions for the first time using two different SCA1 mouse models. We found that differentially regulated genes in the inferior olive segregated into several biological pathways. Comparison of the inferior olive and cerebellum demonstrates that vulnerable tissues in SCA1 are not uniform in their gene expression changes, and express largely discrete but some commonly enriched biological pathways. Importantly, we also found that brain region-specific differences occur early in disease initiation and progression, and they are shared across the two mouse models of SCA1. This suggests different mechanisms of degeneration at work in the inferior olive and cerebellum.

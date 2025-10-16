@@ -1,0 +1,19 @@
+# Neuronal representation of saccadic error in macaque posterior parietal cortex
+
+## Authors
+
+- Yang Zhou
+- Yining Liu
+- Haidong Lu
+- Si Wu
+- Mingsha Zhang †
+
+### Affiliations
+
+1. State Key Laboratory of Cognitive Neuroscience and Learning Beijing Normal University Beijing China mingsha.zhang@bnu.edu.cn
+
+† Corresponding author
+
+## Abstract
+
+Motor control, motor learning, self-recognition, and spatial perception all critically depend on the comparison of motor intention to the actually executed movement. Despite our knowledge that the brainstem-cerebellum plays an important role in motor error detection and motor learning, the involvement of neocortex remains largely unclear. Here, we report the neuronal computation and representation of saccadic error in macaque posterior parietal cortex (PPC). Neurons with persistent pre- and post-saccadic response (PPS) represent the intended end-position of saccade; neurons with late post-saccadic response (LPS) represent the actual end-position of saccade. Remarkably, after the arrival of the LPS signal, the PPS neurons' activity becomes highly correlated with the discrepancy between intended and actual end-position, and with the probability of making secondary (corrective) saccades. Thus, this neuronal computation might underlie the formation of saccadic error signals in PPC for speeding up saccadic learning and leading the occurrence of secondary saccade.

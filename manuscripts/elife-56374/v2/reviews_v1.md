@@ -1,0 +1,49 @@
+# Peer review - Round 1
+
+Editors:
+- Joseph G Gleeson, Howard Hughes Medical Institute, The Rockefeller University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.56374.sa1](https://doi.org/10.7554/eLife.56374.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Acceptance summary:
+
+The paper presents a new model of extrinsic and intrinsic control of sensory-motor circuit development, and how hox genes regulate synaptic specificity in sensory-motor circuits. We think that eLife readers will be interested in the findings, and we thank the authors for their detailed attention to the reviewer criticisms, most importantly the addition of quantification of the results for the benefit of our readers.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Intrinsic control of neuronal diversity and synaptic specificity in a proprioceptive circuit" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+We would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.
+
+Our expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.
+
+Summary:
+
+The role of Hox genes in sensory-motor circuit assembly is largely unknown. The role for pSN Hox codes in synaptic specificity has been poorly explored because 1) Hox deletion needs to be conditional to prevent MN defects or lethality, and 2) pSNs innervating different muscles are intermingled inside a dorsal root ganglion (DRG), making it difficult to individually study synaptic targeting of each pSN subtype. This is a careful study addressing intrinsic mechanisms of neuronal specificity and the role of Hox transcription factors circuit generation-in this case matching proprioceptive sensory neurons to their targets both in muscle and spinal cord neurons. The authors have overcome these challenges by utilizing a Cre line specific to spinal sensory neurons, and also by introducing a new anterograde labeling technique. This virus-mediated labeling approach is particularly remarkable because this enables selective visualization of entire MNs that a given sensory subtype synapses on, despite their sparse distribution inside a DRG. With this strategy, the authors successfully demonstrated that Hoxc8 is required for caudal pSNs to form specific monosynaptic connections with their appropriate MN targets. This study demonstrates that Hoxc8 in subsets of dorsal root ganglia neurons is not required for survival of the neurons, matching to muscles, or extending to the appropriate region within the spinal cord. But Hoxc8 is required in the sensory neurons for precisely targeting the motor neurons innervating limb flexor muscles, and in its absence, the sensory neuron forms inappropriate synapses on motor neurons for limb extensor muscles. These findings are convincingly shown and carefully reported. Although this is shown for one Hox factor, this may have broader impact as a mechanism for sensory-motor matching. Results from this study suggest that the coordinated regulation of the same Hox gene in pSN and MNs is essential for the specificity of connections in proprioceptive circuits. This paper suggests a novel molecular code that defines muscle- specific proprioceptive sensory neurons subtypes, shows that proprioceptive sensory neurons subtype identities are intrinsically programmed in early development, and that Hox genes are required for proprioceptive sensory neurons central afferents to target the appropriate postsynaptic targets within the spinal cord. In terms of significance the work is appropriate for publication in ELife.
+
+Both reviewers had misgivings about the work. For example, in its current form, reviewers point out many places where there is insufficient data to support the conclusions that are being made. Also, where the data is sufficient to make a conclusion, other interpretations that could be equally valid and are not ruled out.
+
+Essential revisions:
+
+1) While the most challenging experiments in the paper (Figures 4, 6 and 7) are quantified, many of the foundational experiments in the earlier figures are represented by a single image, with no n's and consequently no statistical analysis. In some cases, these are key negative findings, such as in the limb bud extirpation experiment in Figure 2 and Figure 2—figure supplement 1 (see below) or the very important finding that conditional knockout of Hoxc8 in sensory neurons doesn't alter pSN identity (Figure 5E – see below).
+
+2) The important positive result of the altered localization of pSN synapses on motor neurons after conditional KO of Hoxc8 in SNs or MNs in Figure 7—figure supplement 2 is presented anecdotally. In some cases where quantitative data has been obtained, such as in Figure 6, it is not determined whether differences are statistically significant. Although the intrinsic Hox code model for sensorimotor circuit formation is an appealing one and the experiments are perfectly designed to test it, the lack of quantitation of much of the data presented in the paper make it difficult to assess whether the model is supported.
+
+3) The first few figures describe the expression of the Hox family factors in the dorsal root ganglia. This is important for setting up ideas on how they make function. However, as presented, it is not clear which Hox factors were actually assessed (it says Hox4-8-is this all clusters? Were some not looked at?) and what the characteristics are for each? The Materials and methods section doesn't help either because it just states the antibodies for the Hox factors have been described. This information needs to be more precise. We suggest a table summarizing all the Hox factors tested and a description of the characteristics would be valuable (supplement is fine). These should include the points made in the first few figures like is it expressed in DRG and does it overlap with markers of proprioceptive identity, what is the rostral caudal restriction if any, which Hox factors are co-expressed.
+
+4) Limb bud removal experiments: In arguing for an autonomous Hox program in pSNs, this paper contradicts previous reports showing that muscle-derived cues specify pSN identity and connectivity with MNs. The key finding in the current paper supporting an intrinsic mechanism is the chick limb bud extirpation experiments in Figure 2 and Figure 2—figure supplement 1. However, the conclusions need to be better supported. While Figure 2I gives the sense that Hoxc8 expression is unaffected after limb bud removal, Figure 2—figure supplement 1C reveals that only a small fraction of Hoxc8-expressing neurons is in fact pSNs (this is different from mouse). If most of the Hoxc8-expressing sensory neurons are cutaneous, it is expected that they would be unaffected by removal of limb bud muscles. Figure 2—figure supplement 1C is thus the more important finding if it shows that the number of Hoxc8-expressing pSNs is unaffected after limb bud ablation. However, the number of Hoxc8+Runx3+ neurons is small (2-3) in both images. More n's and quantification of Hox+Runx3+ neurons are needed to support the conclusion that pSN Hox expression is unaffected by removal of the limb bud.
+
+5) Figure 1—figure supplement 1A: schematizes Hox expression in DRGs along the rostro-caudal axis but the data only shows where the various Hox genes are expressed, not where they are not expressed, so we have to trust that the schematic accurately represents data that is not shown. All the rostro-caudal levels that are included in the schematic should be shown for all four Hox genes, as these authors did very beautifully in Catela et al., 2016 Figure 1.
+
+6) Figure 5E is an important figure showing that pSN identity is unaffected by conditional KO of Hoxc8. Rather than being presented as a single figure with three or four co-expressing neurons, this experiment should be done in Hoxc8 SN∆ mutants as quantitatively as the wildtype data presented in Figure 4.
+
+7) Based on the finding in Figure 7 showing that Hoxc8 mutant pSNs inappropriately target extensor-innervating motor neurons, the authors conclude that a Hox matching mechanism required for synapse formation between pSNs and their appropriate MN targets has been disrupted. While this is an appealing possibility, other interpretations are equally possible. For instance, Hoxc8 may be important for the segregation of pSN axon subtypes in the sensory nerve, or for their axon guidance within the spinal cord. A prediction of the Hox matching mechanism is that flexor-innervating pSNs will fail to synapse on flexor-innervating MNs in Hoxc8 MN∆ animals and may inappropriately innervate extensor-innervating MNs. A single example of the latter result is shown (Figure 7—figure supplement 2D, E) – more examples of this outcome would strengthen the Hox matching model.

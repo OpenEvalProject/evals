@@ -1,0 +1,18 @@
+# An empirical energy landscape reveals mechanism of proteasome in polypeptide translocation
+
+## Authors
+
+- Rui Fang<sup>1</sup>
+- Jason Hon<sup>1</sup>
+- Mengying Zhou<sup>1</sup>
+- Ying Lu<sup>1</sup> ([ORCID: 0000-0003-3516-7735](https://orcid.org/0000-0003-3516-7735)) †
+
+### Affiliations
+
+1. Department of Systems Biology Harvard Medical School Boston United States
+
+† Corresponding author
+
+## Abstract
+
+The ring-like ATPase complexes in the AAA+ family perform diverse cellular functions that require coordination between the conformational transitions of their individual ATPase subunits 1,2 . How the energy from ATP hydrolysis is captured to perform mechanical work by these coordinated movements is unknown. In this study, we developed a novel approach for delineating the nucleotide-dependent free-energy landscape (FEL) of the proteasome's heterohexameric ATPase complex based on complementary structural and kinetic measurements. We used the FEL to simulate the dynamics of the proteasome and quantitatively evaluated the predicted structural and kinetic properties. The FEL model predictions are consistent with a wide range of experimental observations in this and previous studies and suggested novel mechanistic features of the proteasomal ATPases. We find that the cooperative movements of the ATPase subunits result from the design of the ATPase hexamer entailing a unique free-energy minimum for each nucleotide-binding status. ATP hydrolysis dictates the direction of substrate translocation by triggering an energy-dissipating conformational transition of the ATPase complex.

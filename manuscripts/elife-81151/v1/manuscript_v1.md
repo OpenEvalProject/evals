@@ -1,0 +1,24 @@
+# Procalcitonin for antimicrobial stewardship among cancer patients admitted with COVID-19
+
+## Authors
+
+- Hiba Dagher<sup>1</sup>
+- Anne Marie Chaftari<sup>1</sup> ([ORCID: 0000-0001-8097-8452](https://orcid.org/0000-0001-8097-8452)) †
+- Patricia Mulanovich<sup>1</sup>
+- Ying Jiang<sup>1</sup>
+- Ray Hachem<sup>1</sup>
+- Alexandre E Malek<sup>1</sup>
+- Jovan Borjan<sup>2</sup>
+- George M Viola<sup>1</sup>
+- Issam I Raad<sup>1</sup>
+
+### Affiliations
+
+1. Department of Infectious Diseases, Infection Control and Employee Health The University of Texas MD Anderson Cancer Center Houston United States
+2. Pharmacy Clinical Programs The University of Texas MD Anderson Cancer Center Houston United States
+
+† Corresponding author
+
+## Abstract
+
+Background: Procalcitonin (PCT) has been used to guide antibiotic therapy in bacterial infections. We aimed to determine the role of PCT in decreasing the duration of empiric antibiotic therapy among cancer patients admitted with COVID-19. Methods: This retrospective study included cancer patients admitted to our institution for COVID-19 between March 1, 2020, and June 28, 2021, with a PCT test done within 72 hours after admission. Patients were divided into 2 groups: PCT <0.25 ng/ml and PCT ≥0.25 ng/ml. We assessed pertinent cultures, antibacterial use, and duration of empiric antibacterial therapy. Results: The study included 530 patients (median age, 62 years [range, 13-91]). All the patients had ≥1 culture test within 7 days following admission. Patients with PCT <0.25 ng/ml were less likely to have a positive culture than were those with PCT ≥0.25 ng/ml (6% [20/358] vs 17% [30/172]; p<0.0001). PCT <0.25 ng/ml had a high negative predictive value for bacteremia and 30-day mortality. Patients with PCT <0.25 ng/ml were less likely to receive intravenous (IV) antibiotics for >72 hours than were patients with PCT ≥0.25 ng/ml (45% [162/358] vs 69% [119/172]; p<0.0001).  Among patients with PCT <0.25 ng/ml and negative cultures, 30-day mortality was similar between those who received IV antibiotics for ≥72 hours and those who received IV antibiotics for shorter durations (2% [2/111] vs 3% [5/176], p=0.71). Conclusions: Among cancer patients with COVID-19, PCT level <0.25 ng/ml is associated with lower likelihood of bacterial co-infection and greater likelihood of a shorter antibiotic course. In patients with PCT level <0.25 ng/ml and negative cultures, an antibiotic course of > 72 hours may not be necessary. PCT could be useful in enhancing antimicrobial stewardship in cancer patients with COVID-19. Funding: This research was supported by the National Institutes of Health/National Cancer Institute under award number P30CA016672, which supports MD Anderson Cancer Center's Clinical Trials Office.

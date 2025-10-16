@@ -1,0 +1,19 @@
+# Spatial structure favors microbial coexistence except when slower mediator diffusion weakens interactions
+
+## Authors
+
+- Alexander Lobanov<sup>1</sup>
+- Samantha Dyckman<sup>1</sup>
+- Helen Kurkjian<sup>2</sup>
+- Babak Momeni<sup>1</sup> ([ORCID: 0000-0003-1271-5196](https://orcid.org/0000-0003-1271-5196)) †
+
+### Affiliations
+
+1. Biology Department Boston College Chestnut Hill United States
+2. Department of Aquatic Ecology Swiss Federal Institute of Aquatic Science and Technology Dübendorf Switzerland
+
+† Corresponding author
+
+## Abstract
+
+Microbes often exist in spatially structured environments and many of their interactions are mediated through diffusible metabolites. How does such a context affect microbial coexistence? To address this question, we use a model in which the spatial distributions of species and diffusible interaction mediators are explicitly included. We simulate the enrichment process, examining how microbial species spatially reorganize and how eventually a subset of them coexist. In our model we find that slower motility of cells promotes coexistence by allowing species to co-localize with their facilitators and avoid their inhibitors. We additionally find that a spatially structured environment is more influential when species mostly facilitate each other, rather than when they are mostly competing. More coexistence is observed when species produce many mediators and consume some (not many or few) mediators, and when overall consumption and production rates are balanced. Interestingly, coexistence appears to be disfavored when mediators are diffusing slowly because that leads to weaker interaction strengths. Overall, our results offer new insights into how production, consumption, motility, and diffusion intersect to determine microbial coexistence in a spatially structured environment.

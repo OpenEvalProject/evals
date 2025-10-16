@@ -1,0 +1,45 @@
+# Peer review - Round 1
+
+Editors:
+- Mercedes Pascual, University of Michigan , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.03300.029](https://doi.org/10.7554/eLife.03300.029)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “The inherent mutational tolerance and antigenic evolvability of influenza hemagglutinin” for consideration at eLife. Your article has been favorably evaluated by Ian Baldwin (Senior editor), a Reviewing editor, and 3 reviewers, one of whom, Sarah Cobey, has agreed to reveal her identity.
+
+The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+The reviewers agree that this paper advances knowledge on an important topic in pathogen evolution: the extent to which rapidly adapting viruses like influenza have evolved particularly evolvable phenotypes. They also judge the set of experiments important and of high quality. Finally, they recognize the novelty of combining the experimental results with an evolutionary model. This combination demonstrates that the site-specific amino acid preferences inferred from the experiments describe HA evolution more parsimoniously than traditional codon substitution models.
+
+The reviewers provide however a number of comments whose clarification and further discussion would strengthen the arguments made in the manuscript and its eventual impact. These comments primarily concern the uncertainty and assumptions over the identity of antigenic sites and the relevant RBS residues for control purposes. It was felt that both these assumptions could be made more explicit and examined further in the ways suggested below, together with other major points.
+
+1) The conclusions from this study are dependent on knowing which HA residues are physically located in antigenic sites. The authors use the classic Caton et al. 1982 study to classify which HA residues are located in antigenic sites. This is a reasonable approach because the WSN/1933 virus used in the current study is antigenically similar to the PR8/1934 used in the Caton et al. 1982 study. The Caton et al. experiments defined antigenic sites by selecting viral escape mutants in the presence of saturating amounts of individual monoclonal antibodies. Based on the Caton et al. experimental approach, viruses that possess mutations at HA residues that severely compromise viral fitness are never selected-essentially, Caton et al. defined the antigenic sites by isolating mutant viruses that were capable of growing. With this in mind, it is perhaps not surprising that these same HA residues are tolerant of mutations in the current study.
+
+When the Caton et al. escape mutants are mapped onto the 1RVX structure, there are clusters of mutations that correspond to each antigenic site. Within each cluster, there are a few HA residues that appear to be in the cluster (thus likely in the antibody binding site) but these residues never appeared in the Caton et al. viral mutant escape experiments. It has been assumed that this is the case because either (a) there was a limited number of mutant viruses screened by Caton et al. or (b) that these residues within the antigenic site were detrimental to viral fitness.
+
+The authors should consider making an HA structure analogous to the one shown in Figure 9, with entropy color labeling for all surface residues. This type of analysis will demonstrate if tolerability is limited to those residues identified in selection assays (assays that only identify residues capable of tolerating mutations) or also found in adjacent residues that are likely located in antibody binding sites but were not identified in the original antigenic mapping studies. It might be helpful to show surface on the structure for this type of analyses.
+
+Another partial solution is to examine antigenic sites previously defined by other means (such as epitopes defined by crystal structures).
+
+This is not a critical flaw but should be considered either in the discussion or by completing additional analyses as described above.
+
+2) It is not clear that the residues most essential for function must be the most conserved ones. We know that naturally occurring neutralizing antibodies can target the RBS (Whittle et al., PNAS, 2011). There is also variation in receptor type within hosts and between species.
+
+The main text justifies using conserved RBS as a control because these sites are expected to be strongly conserved, and the RBS is defined to exclude non-conserved RBS-associated sites. One could also argue that high mutational tolerance in the RBS could be adaptive to facilitate escape in nearby epitopes;it would be really interesting if this were the case, with the control being some non-immunogenic area near the stalk. The simplest solution may be to show that the results are unchanged when the non-conserved RBS sites are included, assuming this is the case. If it is not, it would help to know which sites the conserved RBS correspond to on the HA structure. (One would hope they're deep-in-the-pocket).
+
+3) The paper addresses the mutational tolerance and antigenic evolvability of HA. Relative to what? Are these metrics different for other influenza proteins? Other viral glycopropteins? A cursory analysis of the HA site preference data vs. NP site preference (in Bloom 2014, bioRxiv, currently in review in MBE?) would further support this claim.
+
+4) “Big data” mutagenesis scans must sacrifice something in their broad scope; for example, quantitative as opposed to binary fitness measurements, intragenic epistasis (e.g. interactions among substitutions within HA as will occur in this experimental set-up), pool drop out bottlenecks. The authors already address many of these. It would be good to acknowledge them as shortcomings or areas for follow up work, and to discuss the recent publication by Wu et al. of a similar scanning mutagenesis that does report fitness values (Wu et al., High throughput profiling of influenza A virus hemagglutinin gene at the single-nucleotide resolution, Scientific Reports 2013).
+
+Unlike the paper by Wu et al., however, the present manuscript places the mutational data within an evolutionary framework, which is something generally missing in most such studies. This novelty of the current manuscript could be drawn out more. In addition, both this paper and Wu et al. (2014) present a snapshot of the (mostly) single-mutation neighbors from a single point (the sequence of WSN33 HA) in the fitness landscape. Both find that viable paths occur disproportionately at antigenic sites. The fact that these rules, when extrapolated over the phylogeny, greatly improve the fit implies that epistasis is in some ways less pervasive than we think and may not be such a huge obstacle to evolution. Most substitutions appear to be concentrated among a permissive network of sites.
+
+5) The following aspects of the experiments should be clarified/discussed: (a) The possibility of reversion between the plasmid pool and the passaged virus is not accounted for. Granted the wild type control shows that there is low background mutation, but a weakly functional mutant could revert. (b) During transfection, one would expect that there may be viruses produced from cells expressing two different HA genes. How would such chimeric viruses confound the results in a single passage experiment? (c) Similarly to #2, wouldn't there also be viruses in which the HA on the surface has a given amino acid sequence, while the packaged genomic segments code for a different one? Multiple passages would ferret these out. (d) How were HA molecules sheared and why are there biases in sequence fragmentation? (e) Are more exposed HA residues generally more tolerant to mutations? The authors address this by correcting for relative solvent accessibility, but this description is difficult to follow. The importance of relevant solvent accessibility (RSA) is shown in Table 3 and Figure 9, but the RSA result is not stated clearly in the main text. Can the authors simplify or clarify this part?
+
+6) The conclusions would be further strengthened if there was some way to “predict” retrospectively where HA would go next based on the model. It would be interesting to discuss this possibility along the lines of what Luksza and Lassig published in Nature this year (Nature 507:57-61).

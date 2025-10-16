@@ -1,0 +1,18 @@
+# The Sec7 N-terminal regulatory domains facilitate membrane-proximal activation of the Arf1 GTPase
+
+## Authors
+
+- Brian C Richardson
+- Steve L Halaby
+- Margaret A Gustafson
+- J Christopher Fromme †
+
+### Affiliations
+
+1. Department of Molecular Biology and Genetics, Weill Institute for Cell and Molecular Biology Cornell University Ithaca United States jcf14@cornell.edu
+
+† Corresponding author
+
+## Abstract
+
+The Golgi complex is the central sorting compartment of eukaryotic cells. Arf guanine nucleotide exchange factors (Arf-GEFs) regulate virtually all traffic through the Golgi by activating Arf GTPase trafficking pathways. The Golgi Arf-GEFs contain multiple autoregulatory domains, but the precise mechanisms underlying their function remain largely undefined. We report a crystal structure revealing that the N-terminal DCB and HUS regulatory domains of the Arf-GEF Sec7 form a single structural unit. We demonstrate that the established role of the N-terminal region in dimerization is not conserved; instead, a C-terminal autoinhibitory domain is responsible for dimerization of Sec7. We find that the DCB/HUS domain amplifies the ability of Sec7 to activate Arf1 on the membrane surface by facilitating membrane insertion of the Arf1 amphipathic helix. This enhancing function of the Sec7 N-terminal domains is consistent with the high rate of Arf1-dependent trafficking to the plasma membrane necessary for maximal cell growth.

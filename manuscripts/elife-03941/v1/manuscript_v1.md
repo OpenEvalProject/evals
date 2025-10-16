@@ -1,0 +1,24 @@
+# The glucuronyltransferase B4GAT1 is required for initiation of LARGE-mediated α-dystroglycan functional glycosylation
+
+## Authors
+
+- Tobias Willer
+- Kei-ichiro Inamori
+- David Venzke
+- Corinne Harvey
+- Greg Morgensen
+- Yuji Hara
+- Daniel Beltrán Valero de Bernabé
+- Liping Yu
+- Kevin M Wright
+- Kevin P Campbell †
+
+### Affiliations
+
+1. Department of Molecular Physiology and Biophysics Howard Hughes Medical Institute, University of Iowa, Carver College of Medicine Iowa City United States kevin-campbell@uiowa.edu
+
+† Corresponding author
+
+## Abstract
+
+Dystroglycan is a cell membrane receptor that organizes the basement membrane by binding ligands in the extracellular matrix. Proper glycosylation of the α-dystroglycan (α-DG) subunit is essential for these activities, and lack thereof results in neuromuscular disease. Currently, neither the glycan synthesis pathway nor the roles of many known or putative glycosyltransferases that are essential for this process are well understood. Here we show that FKRP, FKTN, TMEM5 and B4GAT1 (formerly known as B3GNT1) localize to the Golgi and contribute to the O-mannosyl post-phosphorylation modification of α-DG. Moreover, we assigned B4GAT1 a function as a xylose β1,4-glucuronyltransferase. Nuclear magnetic resonance studies confirmed that a glucuronic acid β1,4-xylose disaccharide synthesized by B4GAT1 acts as an acceptor primer that can be elongated by LARGE with the ligand-binding heteropolysaccharide. Our findings greatly broaden the understanding of α-DG glycosylation and provide mechanistic insight into why mutations in B4GAT1 disrupt dystroglycan function and cause disease.

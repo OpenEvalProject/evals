@@ -1,0 +1,16 @@
+# Stimulus background influences phase invariant coding by correlated neural activity
+
+## Authors
+
+- Michael G Metzen<sup>1</sup> ([ORCID: 0000-0002-2365-4192](https://orcid.org/0000-0002-2365-4192))
+- Maurice J Chacron<sup>1</sup> ([ORCID: 0000-0002-3032-452X](https://orcid.org/0000-0002-3032-452X)) †
+
+### Affiliations
+
+1. Department of Physiology McGill University Montreal Canada
+
+† Corresponding author
+
+## Abstract
+
+We recently reported that correlations between the activities of peripheral afferents mediate a phase invariant representation of natural communication stimuli that is refined across successive processing stages thereby leading to perception and behavior in the weakly electric fish Apteronotus leptorhynchus (Metzen et al., 2016). Here, we explore how phase invariant coding and perception of natural communication stimuli are affected by changes in the sinusoidal background over which they occur. We found that increasing background frequency led to phase locking, which decreased both detectability and phase invariant coding. Correlated afferent activity was a much better predictor of behavior as assessed from both invariance and detectability than single neuron activity. Thus, our results not only provide further evidence that correlated activity likely determines perception of natural communication signals, but also provide a novel explanation as to why these preferentially occur on top of low frequency as well as low intensity sinusoidal backgrounds.

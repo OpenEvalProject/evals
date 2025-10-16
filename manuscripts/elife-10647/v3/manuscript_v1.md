@@ -1,0 +1,301 @@
+# SOX2 O-GlcNAcylation alters its protein-protein interactions and genomic occupancy to modulate gene expression in pluripotent cells
+
+## Authors
+
+- Samuel A Myers<sup>1</sup>
+- Sailaja Peddada<sup>3</sup>
+- Nilanjana Chatterjee<sup>3</sup>
+- Tara Friedrich<sup>4</sup>
+- Kiichrio Tomoda<sup>4</sup>
+- Gregor Krings<sup>5</sup>
+- Sean Thomas<sup>4</sup>
+- Jason Maynard<sup>1</sup>
+- Michael Broeker<sup>6</sup>
+- Matthew Thomson<sup>6</sup>
+- Katherine Pollard<sup>4</sup>
+- Shinya Yamanaka<sup>4</sup>
+- Alma L Burlingame<sup>1</sup> †
+- Barbara Panning<sup>3</sup> ([ORCID: 0000-0002-8301-1172](https://orcid.org/0000-0002-8301-1172)) †
+
+### Affiliations
+
+1. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States
+2. Chemistry and Chemical Biology Graduate Program University of California, San Francisco San Francisco United States
+3. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States
+4. Gladstone Institute University of California, San Francisco San Francisco United States
+5. Department of Pathology University of California, San Francisco San Francisco United States
+6. Center for Systems and Synthetic Biology University of California, San Francisco San Francisco United States
+7. Institute for Human Genetics, Department of Epidemiology and Biostatistics University of California, San Francisco San Francisco United States
+8. Department of Life Science Frontiers, Center for iPS Cell Research and Application Kyoto University Kyoto Japan
+
+† Corresponding author
+
+## Abstract
+
+10.7554/eLife.10647.001 The transcription factor SOX2 is central in establishing and maintaining pluripotency. The processes that modulate SOX2 activity to promote pluripotency are not well understood. Here, we show SOX2 is O -GlcNAc modified in its transactivation domain during reprogramming and in mouse embryonic stem cells (mESCs). Upon induction of differentiation SOX2 O -GlcNAcylation at serine 248 is decreased. Replacing wild type with an O -GlcNAc-deficient SOX2 (S248A) increases reprogramming efficiency. ESCs with O -GlcNAc-deficient SOX2 exhibit alterations in gene expression. This change correlates with altered protein-protein interactions and genomic occupancy of the O -GlcNAc-deficient SOX2 compared to wild type. In addition, SOX2 O -GlcNAcylation impairs the SOX2-PARP1 interaction, which has been shown to regulate ESC self-renewal. These findings show that SOX2 activity is modulated by O -GlcNAc, and provide a novel regulatory mechanism for this crucial pluripotency transcription factor. DOI: http://dx.doi.org/10.7554/eLife.10647.001
+
+## Introduction
+
+SOX2 (sex determining region Y-box 2) is a transcription factor necessary for embryonic stem cell (ESC) self-renewal (Arnold et al., 2011; Masui et al., 2007). Precise control of SOX2 is critical for ESC maintenance, since increased or decreased expression of SOX2 interferes with self-renewal and pluripotency (Kopp et al., 2008; Masui et al., 2007). Post-translational modifications (PTMs) of SOX2 may play a role in its regulation, as SOX2 is reported to be phosphorylated, methylated, ubiquitinylated, SUMOylated, acetylated, and PARylated (Baltus et al., 2009; Brumbaugh et al., 2012; Fang et al., 2014; Gao et al., 2009; Lai et al., 2012; Swaney et al., 2009; Tahmasebi et al., 2013; Tsuruzoe et al., 2006; Van Hoof et al., 2009; Zhao et al., 2011).
+
+We have previously shown SOX2 is O-linked N-acetlyglucosamine (O-GlcNAc) modified in mouse ESCs (mESCs) (Myers et al., 2011). O-GlcNAcylation is the dynamic and regulatory mono-glycosylation of nucleocytosolic proteins catalyzed by a single O-GlcNAc transferase (OGT) and removed by a single hydrolase (OGA/MGEA5/NCOAT). O-GlcNAc signaling is essential for embryo viability (O'Donnell et al., 2004; Shafi et al., 2000; Yang et al., 2012) and mESC self-renewal (Jang et al., 2012). While OGT is critical for mESC maintenance, the protein- and site-specific functions of O-GlcNAcylation in mESCs have not been fully elucidated.
+
+Here, we show that O-GlcNAcylation of SOX2 at serine 248 (S248) is dynamically regulated in mESCs. Upon differentiation, O-GlcNAc occupancy is reduced and SOX2 is predominantly unmodified at this site. Replacement of wild type SOX2 (SOX2WT) with an O-GlcNAc-deficient mutant SOX2 (SOX2S248A) results in increased reprogramming efficiency. mESCs with SOX2S248A as their sole source of SOX2 have increased expression of genes associated with pluripotency and exhibit a decreased requirement for OCT4. SOX2S248A exhibits altered genomic occupancy and differential association with transcriptional regulatory complexes. O-GlcNAcylation directly inhibits the SOX2 and PARP1 interaction, which plays a regulatory role in mESC pluripotency (Gao et al., 2009; Lai et al., 2012). This study implicates O-GlcNAc modification in coordinating genomic occupancy and protein-protein interactions of SOX2 in ESCs, and provides molecular insight into how this broadly expressed transcription factor is regulated to promote the pluripotency-specific expression program.
+
+## Results
+
+## SOX2 O-GlcNAcylation is regulated by differentiation cues
+
+Previously, we reported in mESCs SOX2 was
+
+![Figure 1.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-v3.jpg)
+
+**Figure 1.:** O-GlcNAc levels change during differentiation.(A) Diagram of SOX2 (bottom, with TAD and high mobility group DNA binding domain [HMG] indicated), the TAD peptide sequence (middle; amino acid numbering from the Uniprot accession number P48432), and the PTM isoforms identified on the TAD peptide (top, grey and white rectangles, g indicates O-GlcNAc and p indicates phosphate). Mass spectra can be seen in Figure 1—figure supplement 1. (B) and (C) Extracted ion chromatographs (XICs) of SOX2 TAD peptide PTM states from (B) undifferentiated KI SOX2 mESCs (2i+L) or (C) differentiated KI SOX2 mESCs (RA 48 hr). Traces for each PTM isoform are colored differently, key provided in the inset in (B).DOI: http://dx.doi.org/10.7554/eLife.10647.003
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** -MS/MS spectra of SOX2 unmodified TAD peptide described in Figure 1A.Proton transfer species are not labeled, ppm, parts per million; b.p., base peak.DOI: http://dx.doi.org/10.7554/eLife.10647.004
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** -MS/MS spectra of SOX2 GlcNAc-S248 TAD peptide described in Figure 1A.Proton transfer species are not labeled, ppm, parts per million; b.p., base peak.DOI: http://dx.doi.org/10.7554/eLife.10647.005
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** -MS/MS spectra of SOX2 GlcNAc-T258 TAD peptide described in Figure 1A.Proton transfer species are not labeled, ppm, parts per million; b.p., base peak.DOI: http://dx.doi.org/10.7554/eLife.10647.006
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** -MS/MS spectra of SOX2 phospho-S253 TAD peptide described in Figure 1A.Proton transfer species are not labeled, ppm, parts per million; b.p., base peak.DOI: http://dx.doi.org/10.7554/eLife.10647.007
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Figure 1A.Proton transfer species are not labeled, ppm, parts per million; b.p., base peak, † indicates co-isolating contamination peak.DOI: http://dx.doi.org/10.7554/eLife.10647.008
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** O-GlcNAcylation of OCT4 at T228 is undetectable in mESCs.OCT4 was FLAG-affinity purified from ZHBTc4 F-Oct4 ESCs (the same cell line employed in [Jang et al., 2012]), which express FLAG-tagged OCT4. Peptides containing T228, the residue reported to be O-GlcNAcylated (Jang et al., 2012), were analyzed by LC-MS/MS. (A) XICs (10 ppm) for predicted m/z of an unmodified tryptic peptide containing T228 (top, black panel) and the proposed O-GlcNAc modified peptide (bottom, red panel). XICs show the signal for the unmodified peptide, but no signal for the O-GlcNAc modified version. (B) XICs (10 ppm) for m/z of predicted O-GlcNAc modified LysC-derived peptides containing T228 is not detectable (two charge states, with and without Met oxidation). (C) Zoom of MS1 scans from Figure supplement 6B where potential signal would exists. No signal with the appropriate charge state was detected for any LysC derived peptide indicating all signal in B is background. (D) Western blot analysis of purified FLAG-tagged OCT4 from ZHBT c4 F-OCT4 mESCs failed to detect O-GlcNAcylation. (E) Western blot analysis of 3xF-SOX2 purified from OSFLAG-WTKM transduced MEFs detects SOX2 O-GlcNAcylation, which can be blocked by the addition of 100 mM free GlcNAc to the primary antibody incubation.DOI: http://dx.doi.org/10.7554/eLife.10647.009
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig1-figsupp7-v3.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Modified mass spectrum from Jang et al. identifying OCT4 T228 as O-GlcNAc modified (Figure 3D; Cell Stem Cell 17 May 2012 [doi: 10.1016/j.stem.2012.03.001]). Problematic issues are 1) discrepancy with well-established fragmentation patterns for O-linked glycopeptides; 2) confusing labeling of peaks (original black arrows, which obscured peak identifications, were changed to green for this figure); 3) incorrect peptide sequence. GluC digestion should yield ICKSETLVQARKRKRTSIE, where the initial Ile is missing from the Jang et al. assignment; 4) only OCT4 peptide sequences were searched increasing false positive rates; and 5) the precursor mass and charge state were not reported making the data uninterpretable. (B) Ion trap CAD mass spectrum of synthetic glycopeptide of the reported amino acid sequence shows the original spectrum in Jang et al. was misinterpreted.DOI: http://dx.doi.org/10.7554/eLife.10647.010
+
+In mESCs SOX2 heterodimerizes with OCT4, which is also reported to be O-GlcNAcylated in this cell type (Jang et al., 2012). Thus, it is possible that OGT targets both these transcription factors when they are complexed together, prompting us to query OCT4 O-GlcNAcylation. However, we were unable to detect OCT4 O-GlcNAcylation in mESCs (Figure 1—figure supplements 6–7).
+
+## O-GlcNAc-deficient SOX2 increases somatic cell reprogramming efficiency
+
+To query whether
+
+![Figure 2.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig2-v3.jpg)
+
+**Figure 2.:** O-GlcNAc-deficient SOX2, SOX2S248A, increases somatic cell reprogramming efficiency.(A) Diagram of SOX2 and the PTMs identified from MEFs transduced with OSFLAG-WTKM, labeled as described in Figure 1A. Spectra can be found at tinyurl.com/iPSC-3xF-SOX2-ETD and tinyurl.com/iPSC-3xF-SOX2-HCD. (B) XICs of 3xF-SOX2WT TAD peptide PTM states from OSFLAG-WTKM-transduced MEFs. (C) XICs of 3xF-SOX2S248A TAD peptide PTM states from OSFLAG-S248AKM-transduced MEFs. Color key the same as in (B). (D) Number of GFP+ colonies from 1000 Nanog-Gfp MEFs transduced with OSWTKM or OSS248AKM and cultured on SNL feeders for 18 or 20 days (n=7 +/- S.E.M.). (E) Chimeric mouse derived from iPSCs obtained from transducing Nanog-Gfp MEFs with OSS248AKM and his black offspring, demonstrating germline transmission. (F) Western blots against FLAG, SOX2, OGT and TUBULIN for the first six days of reprogramming with either OSFLAG-WTKM or OSFLAG-S248AKM. “Endo” refers to the apparent molecular weight at which the endogenous SOX2 would be expected, “3xF” refers the the FLAG tagged version from the viral transduction.DOI: http://dx.doi.org/10.7554/eLife.10647.011
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** FLAG-WTKM or OSFLAG-S248AKM shows similar nucleocytoplasmic distribution.E14 mESCs are used as a staining negative control.DOI: http://dx.doi.org/10.7554/eLife.10647.012
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** S248D also increases somatic cell reprogramming efficiency.Relative increase, compared to OSWTKM, in number of GFP+ colonies from 1000 Nanog-Gfp MEFs that were infected with OSS248AKM or the phosphomimetic OSS248DKM and cultured on SNL feeders for 20 days after infection (n=7 for OSWTKM and OSS248AKM, two for OSS248DKM).DOI: http://dx.doi.org/10.7554/eLife.10647.013
+
+To determine whether the S248A mutation impacted induced pluripotent stem cell (iPSC) colony formation, we used somatic cell reprogramming of Nanog-Gfp reporter MEFs (Takahashi and Yamanaka, 2006). Nanog-Gfp MEFs transduced with OSS248AKM produced significantly more GFP+ iPSC colonies compared to OSWTKM (Figure 2D). iPSCs generated with OSS248AKM exhibited standard colony morphology and contributed to chimeric mice capable of germ line transmission (Figure 2E), indicating these OSS248AKM iPSCs exhibit the features of normal iPSCs. By Western blot and immunostaining of MEFs transduced with OSFLAG-WTKM or OSFLAG-S248AKM showed equal levels of exogenous SOX2 for the first six days ofof reprogramming (Figure 2F and Figure 2—figure supplement 1), indicating comparable expression of WT and S248A triple FLAG tagged SOX2. OGT levels were also similar for the first six days of reprogramming between OSFLAG-WTKM and OSFLAG-S248AKM transduced MEFs (Figure 2F). These results indicate that SOX2S248A is more efficient than wild type SOX2 at inducing pluripotency and suggest O-GlcNAcylation at S248 inhibits SOX2 activity.
+
+The homologous SOX2 residue has been reported to be phosphorylated in human ESCs (Swaney et al., 2009). While our lab and others were unable to detect this phosphorylation in mESCs (Brumbaugh et al., 2012) or during murine reprogramming, the S248A mutation could potentially remove a regulatory phosphorylation site. Therefore, we performed reprogramming experiments using the phospho-mimetic SOX2 mutant, S248D. This mutation also increased reprogramming efficiency (Figure 2—figure supplement 2), suggesting it is the removal of an O-GlcNAcylation site, and not of a phosphorylation site, which mediates the effect on SOX2 activity.
+
+## SOX2S248A can replace wild type SOX2 in mESCs
+
+Since the reprogramming results suggested the S248A mutation increased SOX2 activity, we examined whether this mutant SOX2 supported mESC self-renewal. We generated mESC lines that express either a FLAG-tagged wild-type
+
+![Figure 3.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig3-v3.jpg)
+
+**Figure 3.:** S248A can replace wild type SOX2 in mESCs.(A) Characterization of fSOX2-Tg and fS248A-Tg mESCs. fSOX2-Tg and fS248A-Tg mESCs exhibit AP staining, a marker of pluripotency, similar to parental 2TS22C cells. (B) Western blot analysis of SOX2 and FLAG in 2TS22C, fSOX2-Tg and fS248A-Tg mESCs. TUBULIN (TUB) is used as a loading control. “3xFLAG” and “untagged” refer to expected molecular weights of SOX2 with the 3xFLAG tag or no tag, respectively. (C) Immunofluorescence staining for NANOG, SOX2, FLAG and OCT4 in wild type E14, parental 2TS22C, fSOX2-Tg, and fS248A-Tg mESCs. Antibody staining is green, nuclear stain with DAPI is blue. (D) and (E) XICs of the TAD peptides of SOX2 immunopurified from fSOX2-Tg (D) and fS248A-Tg (E) mESCs. Insets: pie charts showing the mean percentage of each PTM form to total TAD peptide signal (n=3). The doubly phosphorylated TAD peptide is below the limit of quantitation for both cell lines.DOI: http://dx.doi.org/10.7554/eLife.10647.014
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Derivation of 2TS22C mESCs, which are deleted for endogenous copies of Sox2 and express tetracycline-off (tet-off) transgenic Sox2, summarized from (Masui et al., 2007). (B) 2TS22C cells were transfected with the constructs pCAG-3xF-SOX2WT-IRES-puroR (upper) or pCAG-3xF-SOX2S248A-IRES-puroR (lower), in which Sox2 expression is driven by the CAG promoter. After 24 hr, doxycycline was added to cultures to repress the tet-regulated copy of SOX2 expressed by the parental line 2TS22C. 48 hr after transfection, puromycin was added to cultures to select for stable integrants. After two weeks, colonies with ESC-like colony morphology were expanded and characterized for SOX2 expression.DOI: http://dx.doi.org/10.7554/eLife.10647.015
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Figure 1A.Spectra can be found at tinyurl.com/3xF-SOX2-ETD and tinyurl.com/3xF-SOX2-HCD.DOI: http://dx.doi.org/10.7554/eLife.10647.016
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** The WT unmodified (grey), WT O-GlcNAc modified (red) and S248A unmodified peptides (blue) were loaded at known concentrations and the MS1 peak area was plotted.DOI: http://dx.doi.org/10.7554/eLife.10647.017
+
+LC-MS/MS analysis of immunopurified SOX2 from fSOX2-Tg mESCs identified nine PTM forms of the SOX2 TAD peptide (Figure 3—figure supplement 2). LC-MS analysis of the TAD peptide precursor masses from fSOX2-Tg mESCs showed unmodified and singly O-GlcNAcylated were the most abundant forms of the SOX2 TAD peptide (33.2 and 44.1% of total TAD, respectively) (Figure 3D). LC-MS analysis confirmed the loss of S248 O-GlcNAcylation in fS248A-Tg mESCs (Figure 3E). Analysis of synthetic SOX2 TAD peptides showed chromatographic separation of PTM or mutant isoforms, and lack of electrospray ionization suppression, validating our label free quantitation approach (Figure 3—figure supplement 3). In addition, the TAD peptide in fS248A-Tg mESCs showed increased phosphorylation at S253, from 10.9 to 18.7% of total TAD, suggesting cross talk between phosphorylation and O-GlcNAcylation.
+
+## SOX2S248A alters gene expression in mESCs
+
+To determine if the S248A mutation altered global transcript levels we used microarrays to compare the gene expression profiles of fSOX2-Tg and fS248A-Tg mESCs. Significant changes in mRNA levels were observed, with 320 genes up regulated and 344 genes down regulated in fS248A-Tg cells (
+
+![Figure 4.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig4-v3.jpg)
+
+**Figure 4.:** (A) Volcano plot of global changes in gene expression between fSOX2-Tg and fS248A-Tg cells. Red indicates genes with increased or decreased expression (fold change cutoff 1.5 and paired t-test p<0.05) (Supplementary file 1a). (B) RT-qPCR of select genes differentially expressed between fSOX2-Tg and fS248A-Tg cells (* indicates p<0.05, n=3, +/- S.E.M.). (C) fSOX2-Tg or fS248A-Tg cells were depleted of OCT4 using siRNA pools (esiRNAs) and Western blot analysis of OCT4 and TUBULIN were performed. (D) and (E), (D) AP staining and (E) quantitation of fold change in AP staining three days after OCT4 or GFP depletion in fSOX2-Tg and fS248A-Tg cells. Additional example fields of view for relative quantitation can be seen in Figure 4—figure supplement 1. F, RT-qPCR analysis of Oct4 and Nanog mRNA levels in fSOX2-Tg or fS248A-Tg cells depleted of OCT4 compared to the control knockdown of GFP.DOI: http://dx.doi.org/10.7554/eLife.10647.018
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Gfp or Oct4 knockdown.Four fields of view, shown here, were used for relative AP stain quantitation for a representative replicate. Mock knockdown (Gfp) was used as the baseline for AP staining.DOI: http://dx.doi.org/10.7554/eLife.10647.019
+
+The altered gene expression profile of fS248A-Tg cells suggested this mutation may promote self-renewal at the expense of differentiation. Therefore, we examined the effects of OCT4 depletion, which causes mESCs to differentiate (Figure 4C) (Hough et al., 2006). While fSOX2-Tg mESCs exhibited altered cell and colony morphology (Figure 4—figure supplement 1), decreased AP staining (Figure 4D), and decreased expression of Nanog (Figure 4E), fS248A-Tg mESCs were relatively unaffected by OCT4 depletion. These data indicate that fS248A-Tg mESCs can maintain key features of pluripotency when OCT4 levels are reduced, and are consistent with a role for the O-GlcNAc modification inhibiting SOX2 activity.
+
+## SOX2S248A exhibits altered genomic occupancy
+
+To examine whether the altered gene expression associated with the S248A mutation was accompanied by changes in SOX2 genomic occupancy, we performed FLAG chromatin immunoprecipitation followed by next generation sequencing (ChIP-seq) to compare SOX2 genomic distribution in fSOX2-Tg and fS248A-Tg mESCs (
+
+![Figure 5.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig5-v3.jpg)
+
+**Figure 5.:** (A) Representative UCSC genome browser tracks of FLAG ChIP-seq in fSOX2-Tg (blue) and fS248A-Tg (red) cells. Examples of fS248A-Tg specific peaks (Pou5f1, Esrrb) and shared peaks (Abca4, Sox2) are shown for 2 biological replicates (2 technical replicates were performed for each biological replicate, Spearman correlations for technical replicates are 1, for biological replicates 0.45 for fSOX2-Tg and 0.55 for fS248A-Tg). Each track is 15 kb. Green arrows indicate fS248A-Tg specific peaks. For Sox2 track, the region shown is not encompassed in the deletion removing endogenous Sox2. (B) Overlap (purple) in called peaks from anti-FLAG ChIP-seq in fSOX2-Tg (blue) and fS248A-Tg (red) mESCs. (C) De novo SOX2 motif identified in shared ChIP-seq peaks between fSOX2-Tg and fS248A-Tg cells (top) compared to the canonical SOX2 motif [Jaspar M01271] (bottom). (D) OCT4:SOX2 motif identified in peaks shared between fSOX2-Tg and fS248A-Tg cells using de novo motif analysis (top) compared to the canonical OCT4:SOX2 motif [Jaspar MA0142.1] (bottom). (E) Proportion of peaks containing a motif matching the OCT4:SOX2 de novo motif in shared peaks (left) and fS248A-Tg specific peaks (right).DOI: http://dx.doi.org/10.7554/eLife.10647.020
+
+## O-GlcNAc alters SOX2 protein-protein interactions
+
+S248 lies in the TAD of SOX2, a region responsible for interactions with transcriptional regulatory machinery (
+
+![Figure 6.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig6-v3.jpg)
+
+**Figure 6.:** O-GlcNAcylation of SOX2 at S248 alters protein-protein interactions.(A) Interaction diagram of a subset of SOX2 interactors that exhibit differential association with 3xF-SOX2S248A relative to 3xF- SOX2WT. Color of circles indicates with which SOX2 proteoform a protein preferentially interacts. Interaction diagram based on high confidence, experimental interactions identified by STRING. (B), Anti-FLAG IP-WB for SOX2, PARP1, GATAD2B, and SMARCA4 in fSOX2-Tg and fS248A-Tg cells. (C) Heatmap of median enrichment values of NuRD subunits that preferentially associate with 3xF-SOX2WT or 3xF-SOX2S248A as determined by quantitative mass spectrometry (n=3). (D) Western blot analysis of in vitro interaction between SOX2 +/- O-GlcNAcylation and PARP1. Bio-SOX2 and His-OGT were incubated with and without UDP-GlcNAc, Bio-SOX2 purified away from OGT and UDP-GlcNAc using streptavidin beads and incubated with GST-PARP1. Western blots examine proteins associated with streptavidin beads. Comparable amounts of input and pull down were loaded for all blots, except O-GlcNAc, in which more material was loaded in the pull down lanes. WB, Western blot; GST, glutathione S-transferase tag; Bio, biotinylated Bio tag; His, polyhistidine tag. (E) Flow chart outlining scheme for D.DOI: http://dx.doi.org/10.7554/eLife.10647.021
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Western blots compare parental line to haSOX2-Tg ESCs. Below table shows MS analysis identifies GlcNAc-S248 in these cells.DOI: http://dx.doi.org/10.7554/eLife.10647.022
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** O-GlcNAc site mapping by ETD-MS/MS of recombinant Bio-tagged human SOX2 incubated with recombinant human OGT and UDP-GlcNAc.DOI: http://dx.doi.org/10.7554/eLife.10647.023
+
+We next examined whether any co-purifying proteins were enriched in either the fSOX2-Tg or fS248A-Tg co-IPs, by plotting the enrichment ratios between S248A and wild type. 22 of the interacting proteins were enriched at least four-fold in the co-IP with fSOX2-Tg (z-score > 1.5) and 60 were enriched in the fS248A-Tg co-IP (Supplementary file 1b). Co-IP followed by Western blotting corroborated the IP-MS data, showing preferential enrichment of PARP1 and GATAD2B with mutant and wild type SOX2, respectively, while SMARCA4 was associated equally with both forms of SOX2 (Figure 6B).
+
+Examination of the protein complexes enriched by either wild type or S248A SOX2 showed a subset of components behaved discordantly with the rest of the complex subunits. For example, MBD3 and MTA3, both of which can be a part of the NuRD complex, were consistently enriched in fS248A-Tg co-IPs while other NuRD components were enriched with fSOX2-Tg (Figure 6B). To more thoroughly investigate the subunit distribution of a subset of the NuRD complex, we used a targeted proteomic approach based on interacting proteins from an MBD3 co-IP experiment. We performed anti-FLAG affinity purifications in FLAG tagged MBD3 mESCs (Yildirim et al., 2011) followed by LC-MS to generate a representative set of NuRD complex peptides. The top two, best scoring, unique peptides for each NuRD component were used to determine the relative enrichment of these proteins from fSOX2-Tg and fS248A-Tg co-IPs (Supplementary file 1c). Targeted analysis showed the majority of the NuRD complex preferentially associated with SOX2WT, while MBD3 and MTA3 components prefer SOX2S248A (Figure 6C). These results suggest that the S248A mutation can affect the stoichiometry of subunits in complexes that associate with SOX2.
+
+The altered PPIs with SOX2
+
+![Figure 7.](https://cdn.elifesciences.org/articles/10647/elife-10647-fig7-v3.jpg)
+
+**Figure 7.:** O-GlcNAcylation in regulation of SOX2 in mESCs.(A) O-GlcNAc (sugar moiety) affects the affinity of SOX2 (red) for interacting proteins (ovals). Some proteins (blue shapes) exhibit greater affinity for unmodified SOX2, while others exhibit lower affinity (orange shapes). In addition, O-GlcNAcylation affects SOX2 binding to a subset of target DNA sequences. (B) As a result of altered genomic distribution and protein-protein interactions when SOX2 cannot be O-GlcNAcylated (SOX2S248A), pluripotency gene expression is promoted at the expense of differentiation.DOI: http://dx.doi.org/10.7554/eLife.10647.024
+
+## Discussion
+
+Depletion of OGT, the sole enzyme that mediates intracellular O-GlcNAcylation, disrupts mESC self-renewal (O'Donnell et al., 2004; Shafi et al., 2000), prompting us to identify OGT targets to elucidate link between O-GlcNAc and self-renewal. Using an unbiased strategy for enrichment of native O-GlcNAcylated nuclear peptides, we previously identified SOX2 S248 as an OGT substrate (Myers et al., 2011). Here, we find that S248 is O-GlcNAcylated during somatic cell reprogramming and that mutation of this residue to alanine increases reprogramming efficiency. We also find mESCs expressing SOX2S248A exhibit changes in transcription consistent with increased expression of pluripotency promoting genes at the expense of differentiation promoting genes. Together, these analyses from both mESCs and during somatic cell reprogramming reveal the S248A mutation promotes SOX2 activity, which suggests SOX2 O-GlcNAcylation is inhibitory during maintenance and establishment of pluripotency.
+
+Our data indicate that S248 O-GlcNAcylation is regulated by developmental signaling molecules, since removing LIF and adding RA to trigger differentiation resulted in a substantial decrease in this PTM. This decrease in S248 O-GlcNAcylation appears contradictory to the finding that the S248A mutation, which eliminates O-GlcNAcylation, promotes mESC self-renewal. However, the effects of this, or any, PTM are likely to be context specific, and determined by the transcription factors and signaling molecules present in each cell type. GlcNAc-S248 may inhibit SOX2 activity in mESCs, where the decrease in this PTM may alter SOX2 activity upon differentiation, such that SOX2 functions appropriately for the changing cellular context. As this work shows, use of methods that allow analysis of SOX2 PTM-specific PPIs and genomic occupancy may be crucial to understand how combinations of PTMs are used to regulate SOX2 activity in response to developmental cues.
+
+In addition to changes in gene expression, the S248A mutation altered SOX2 genomic distribution. As well as occupying the same sites as SOX2WT, SOX2S248A was found at an additional 1000 sites. The majority of these sites contained a predicted SOX2 binding motif, indicating the mutation allows SOX2S248A to occupy sites that SOX2WT is unable to access in mESCs. This result suggests O-GlcNAcylation can regulate the affinity of SOX2 for its target sites. Since the mutation lies in the TAD, but affects the activity of the high mobility group DNA binding region, the mutation or loss of O-GlcNAcylation could affect secondary protein structure and/or PPIs. Single molecule imaging of SOX2 with a deleted TAD showed altered DNA occupancy and higher site-specific residence time, supporting the idea that TAD mutations affect SOX2 DNA binding (Chen et al., 2014).
+
+Upon OCT4 knockdown, fS248A-Tg mESCs did not exhibit as dramatic a change in colony morphology as fSOX2-Tg mESCs. In addition, the new sites of genomic occupancy seen in fS248A-Tg mESCs did not have nearby predicted OCT4 motifs. Together these results suggest the O-GlcNAc-deficient SOX2 may exhibit an altered reliance on OCT4 for binding and regulation of gene expression. Further studies aimed at querying the effects of the S248A mutation on genome-wide OCT4 distribution should provide insight into whether this SOX2 PTM alters OCT4 association with target sequences, and may address if O-GlcNAc impacts OCT4/SOX2 heterodimerization.
+
+Our proteomic analyses indicated there are substantial differences in SOX2-centered PPIs in fS248A-Tg mESCs. Many of the proteins that exhibited differential interaction between wild type and mutant SOX2 are components of complexes implicated in chromatin regulation. These altered associations may underlie the transcriptional and genomic occupancy changes seen in the mutant mESCs. In addition, components of the PARP-XRCC and the DNA mismatch repair (MMR) complexes were enriched with SOX2S248A, suggesting the possibility that these complexes may function in transcriptional regulation in addition to DNA repair. Consistent with this hypothesis, DNA damage complexes promote mESC self-renewal and iPSC generation (Fong et al., 2011).
+
+Our PARP1 results are consistent with previous reports describing its interaction with SOX2 in mESCs (Gao et al., 2009; Lai et al., 2012). In both these studies, differentiation of mESCs promotes the PARP1-SOX2 interaction. We found PARP1 interaction with SOX2 is disrupted by O-GlcNAc and decreased GlcNAc-S248 in differentiating ESCs, consistent with a model in which the developmentally regulated decrease in S248 O-GlcNAcylation promotes PARP1 interaction. During differentiation, the SOX2-PARP1 interaction inhibits SOX2 binding to enhancers of genes that are necessary for self-renewal (Lai et al., 2012). We find that SOX2S248A exhibits increased association with PARP1 without decreased occupancy of pluripotency genes under self-renewal conditions. This result indicates the SOX2-PARP1 interaction alone does not inhibit SOX2 binding to pluripotency gene targets and suggests additional developmentally regulated alterations in SOX2 PTMs or interaction partners contribute to control of SOX2 occupancy.
+
+The increase in SOX2 S253 phosphorylation in fS248A-Tg mESCs suggests there is potential for crosstalk between O-GlcNAcylation and phosphorylation in the TAD peptide in mESCs. In general, phosphorylation and O-GlcNAcylation both occur in structurally flexible regions of proteins, although there is no correlation or anti-correlation in the linear proximity of one PTM to another (Trinidad et al., 2012). It is unlikely phospho-S253 has a substantial impact on pluripotency gene expression, as S253 phosphorylation is dispensable for mESC self-renewal (Ouyang et al., 2015). However, because the TAD of SOX2 is an unstructured domain (Reményi et al., 2003), and is O-GlcNAcylated and phosphorylated, the molecular basis for the potential crosstalk may be specific to a different cellular context.
+
+O-GlcNAc signaling is essential for pluripotency. However, reliable O-GlcNAc site identification, as well as investigation into this PTM’s function, is in their infancy. This study shows that although global O-GlcNAcylation is necessary for mESC self-renewal, a key pillar of pluripotency can be inhibited by O-GlcNAc modification. This work provides a new mechanism for the regulation of SOX2 through O-GlcNAcylation, and illustrates the role of this PTM in pluripotency and self-renewal is more complex than previously appreciated.
+
+## Materials and methods
+
+## Cell line derivation
+
+2TS22C mESCs (accession number AES0125), the parental cell line for derivation of tagged SOX2 lines (Masui et al., 2007), were obtained through Riken BioResource Center. Identity of this line, which contains a SOX2 transgene under control of a tet-repressible promoter, was authenticated by culturing cells with and without doxycycline and examining SOX2 expression by Western blotting. To create the fSOX2-Tg ESC line, 4 ug of the plasmid CAG-3xF-Sox2 was transfected with Lipofectamine 2000 (Thermo Fisher [Invitrogen], Waltham, MA) into a 6-well plate containing 2TS22C cells. 2TS22C mouse ESCs express SOX2 under control of a tetracycline-repressible system. Twenty-four hours after transfection 1 ug/mL doxycycline was added to silence expression of the TetO Sox2. Forty-eight hours after transfection, 7 ug/mL puromycin was added, to select for the integration and expression of CAG-3xF-Sox2. After about two weeks, colonies exhibiting the typical ESC morphology were expanded and tested via western blot, morphology and alkaline phosphatase staining (Clontech, Mountain View, CA). The same strategy was used to generate the fS248A-Tg and haSOX2-Tg ESC lines.
+
+## Cell culture
+
+Mouse ESC lines were routinely passaged by standard methods in ESC media (KO-DMEM, 10% FBS, 2 mM glutamine, 1X non-essential amino acids, 1x pencillin/streptomycin, 0.1 mM b-mercaptoethanol and recombinant leukemia inhibitory factor). 2TS22C, fSOX2-Tg, fS248A-Tg, and haSOX2-Tg ESCs were cultured in ESC media with 1 ug/mL doxycycline hyclate (Sigma). KI mESCs (Lai et al., 2012) were cultured in N2B27 plus 2i (Thermo Fisher [Life Technologies], Waltham, MA) and LIF or 500 uM retinoic acid (Sigma-Aldrich, St.Louis, MO). Mycoplasma testing was carried out every two months until the cells were found to be negative for several successive tests.
+
+## Plasmids
+
+CAG-3xF-Sox2 was constructed by inserting mouse Sox2 cDNA into pCMV-3xFLAG 7.1 (Sigma-Aldrich) and then subcloning 3xF-Sox2 via InFusion cloning (Clonetech) into CAG-HA-Sox2-IP (Addgene plasmid 13459), replacing the HA tag with the triply FLAG tagged. S248A mutations in CAG-3xF-Sox2 were performed with Quickchange site directed mutagenesis (Agilent Technologies [Stratagene], Santa Clara, CA) (Supp Table S4). pMXs-mouse Sox2 wild type or S248A, along with pMXs-Oct4, Klf4 and c-Myc were used (Okita et al., 2007; Takahashi and Yamanaka, 2006). The pMXs-3xF-Sox2 was created by cloning Sox2 into pCMV-3xFLAG 7.1 (Sigma-Aldrich) and then subcloning 3xF-Sox2 via InFusion cloning (Clonetech) into pMXs.
+
+## Antibodies and alkaline phosphatase
+
+Antibodies were purchased from:
+
+Abcam, United Kingdom: SOX2 ab75179 (immunofluorescence [IF] and in vitro assay WB, TUBULIN GTU-88 ab11316 (Western blot [WB]), HA ab13834 (WB, IP), OCT4 ab19857 (IF)
+
+Reprocell USA INC, Boston, MA: NANOG, RCAB002P-F (IF)
+
+SIGMA-Aldrich: OGT DM-17 (WB), FLAG A8592 (WB), FLAG F1804 (IF and ChIP)
+
+Santa Cruz Biotechnology Inc, Santa Cruz, CA: OGT SC32921 (in vitro assay WB), OCT4 SC8628x(WB)
+
+Bethyl Laboratories, Inc, Montgomery, TX: SMARCA4 A300-813A (WB), PARP1 A301-375A (WB), GATAD2B 301-281A (WB)
+
+Pierce/ThermoFisher: O-GlcNAc MA1072 (WB)
+
+ActiveMotif, Carlsbad, CA: PARP1 39,559 (in vitro assay WB)
+
+Bio-Rad Laboratories, Inc, Hercules, CA: goat anti-rabbit HRP conjugate 172–1019 and goat anti-mouse HRP conjugate 172–1011 (WB)
+
+Jackson Laboratory, Bar Harbor, ME: Alexa Fluor 488-donkey anti-rabbit IgG 711-545-152 (IF)
+
+Alkaline phosphatase activity staining was performed according to manufacturer's instructions (Stemgent, Cambridge, MA, 00–0055).
+
+## SOX2 purification for PTM characterization
+
+KI mESCs, fSOX2-Tg or fS248A-Tg cells were expanded to one to three 15 cm2 dishes depending on the experiment. Cells were harvested by trypsinization, washed once with cold PBS and frozen in liquid nitrogen. Whole cell pellets were lysed in RIPA buffer without SDS, containing 500 nM Thiamet G (Caymen Chemicals, Ann Arbor, MI), 1X HALT protease and phosphatase inhibitors (Thermo Fisher[Pierce]), 2 mM TCEP (Sigma) and 20 mM N-ethylmaleimide (Sigma-Aldrich) and sonicated (with a probe sonicator on methanol ice for three rounds of pulses, 3 s on, 2 off, 10 s total, at 35%). Anti-FLAG-based purifications were performed with anti-FLAG M2 Dynabeads (Sigma-Aldrich, M8823). Whole cell lysates were incubated with M2 beads at room temperature for 75 min, washed once with lysis buffer and three times with 25 mM ammonium bicarbonate (ABC) with 150 mM NaCl. Proteins were eluted with 100 mM glycine pH 4 for five minutes. Western blot and SDS-PAGE analysis was used to assess purification efficiency. For HA-SOX2 purification, anti-HA antibodies were coupled to aldehyde-coated magnetic beads (BioClone, San Diego, CA) via reductive amination in 20 mM bicine pH 7.8 and purified as above. Two 10 cm2 dishes of CD1 MEFs infected with OSFLAG-WTKM or OSFLAG-S248AKM for six days were analyzed the same way.
+
+## Mass spectrometric analysis of SOX2 PTMs
+
+Silver or Coomassie stained SDS-PAGE gel bands were excised and digested in-gel with sequence grade trypsin (Roche, Switzerland). After 5% formic acid/50% acetonitrile extraction, peptides were dried by vacuum centrifugation, gel particulates were removed via C18 Zip Tips (MERCK Millipore, Billercia, MA), dried, resuspended in 0.1% formic acid and analyzed by LC-MS/MS. Chromatography was performed on a Nanoacquity HPLC (Waters, Milford, MA) at 400 nl/min with a BEH130 C18 2.1x150 mm column (Waters). A 90- or 120-minute gradient from 98% solvent A (0.1% formic acid) to 22% solvent B (0.1% formic acid in acetonitrile) was used. Peptides were analyzed by an LTQ-Orbitrap Velos mass spectrometer (Thermo Scientific, Waltham, MA). After the survey scan of m/z 400–1,600 was measured in the Orbitrap at 30,000 resolution, the top three multiply charged ions were selected for both HCD and ETD. Automatic gain control for MS/MS was set to 2000. Normalized collision energy for HCD was set at 35 while the ETD activation time was charge state dependent, based on 100 ms for doubly charge precursors. Supplemental activation was implemented for ETD reactions. Dynamic exclusion of precursor selection was set for 25 s.
+
+WT GlcNAc-S248, WT unmodified and the S248A SOX2 TAD were synthesized by New England Peptide and analyzed as described above.
+
+## Data analysis
+
+Fragment mass spectra were converted into peaklists using the in-house software PAVA. HCD and ETD data were searched separately using ProteinProspector version 5.10.0 against the UniProt database with a concatenated database. Only mouse and human genomes were used for the database searching. Precursor tolerance was set to 10 ppm, whereas fragment mass error tolerance was set to 0.6 Da for ETD and 20 ppm for HCD. N-terminal acetylation, methionine oxidation, loss of N-terminal methionine and glutamate conversion to pyroglutamate were allowed as variable modifications. For ETD data, HexNAc modifications to serine and threonine residues and phosphorylation to serine/threonine/tyrosine was allowed as variable mass modifications. For HCD, phosphorylation was searched the same way though HexNAc was considered as a neutral loss. Methylation (mono, di- and tri-) of K and R, monomethylation of D, E and H (artifact from MeOH fixing PAGE gels), acetylation of K and R, and ADP-ribosylation to C, E, K, N, S, and R were searched separately. SLIP scoring was used to distinguish possible positional isomers of HexNAc and/or phosphopeptides (Baker et al., 2011). Relative abundances of each modified or unmodified peptide were calculated using the ICIS area calculated from XICs in Xcalibur (Thermo Scientific) at a 10 ppm mass tolerance.
+
+## Analysis of 3xF-SOX2 interactors
+
+Six to ten 10 cm2 plates worth of haSOX2-Tg, fSOX2-Tg or fS248A-Tg cells were harvested for nuclear extract preparations in biological duplicate. Nuclear extracts were as previously described with minor modifications (Dignam et al., 1983). Buffers A, C and D were supplemented with 2 µM Thiamet G, 2 µM PUGNAc (Tocris Bioscience, United Kingdom) and 1X HALT protease and phosphatase inhibitors and instead of dialysis of extracts, two volumes of buffer D were used to dilute salt concentration. Seven µL of M2 beads per 10 cm2 plate were used per co-IP and samples were nutated at 4oC for two hours. Beads were washed once with Buffer D plus inhibitors, then twice with 50 mM ABC with 150 mM NaCl. Each wash was only as long as it took to transfer the beads to a new, cold tube and place on the magnetic rack. Beads were then resuspended in 50 µL 100 mM ABC with 500 ng trypsin and shaken at 37oC for one hour. Supernatant was transferred to a new tube, the beads were washed once with 50 µL ABC and combined to digest overnight. Digestions were desalted with one or two Zip Tips, depending on size of experiment, and dried via vacuum centrifugation. IP-WB experiments were performed similarly except proteins were eluted with 2X SDS-PAGE loading buffer without reducing agent.
+
+Chromatography was performed on a Nanoacquity HPLC (Waters) at 400 nl/min with an EASY-spray 15 cm x 75 µm ID, PepMap C18, 3 µm column (Thermo Scientific). A 90-minute gradient from 98% solvent A (0.1% formic acid) to 22% solvent B (0.1% formic acid in acetonitrile) was used. Peptides were analyzed on a Q-Exactive Plus mass spectrometer (Thermo Scientific). After the survey scan of m/z 400–1,600 was measured in the Orbitrap at 70,000 resolution, the top ten multiply charged ions were selected for HCD and measured at 17,500 resolution. Normalized collision energy for HCD was set at 35, Dynamic exclusion of precursor selection was set for 25 s.
+
+The label-free quantiation (LFQ) feature of MaxQuant (1.5.1.0) was used to quantify protein signals for proteins identified in the co-IP experiments. For SOX2, only non-TAD peptides were used for protein level quantitation. Proteins were determined to be SOX2 interactors by taking the average ratio of the LFQ intensity of the protein of interest (POI) from the FLAG-tagged mESC lines over the HA-tagged mEScs. This average ratio was log2-transformed, and was normalized by the global median. If the POI was two standard deviations from the mean it was considered specific to SOX2. Most proteins discussed were manually verified using Skyline.
+
+To determine POIs that differentially interact with wild type or S248A SOX2, we took the ratio of the log2-transformed ratio of FLAG/HA for S248A over the wild type. After normalization by the global median, POIs were considered to be differential interactors if they had a z-score of greater than 1.5. All of these peptides were manually verified using Skyline.
+
+For targeted analyses, FLAG-tagged MBD3 mESCs, a generous gift from the Fazzio laboratory (Yildirim et al., 2011) were analyzed as described above. From these analyses the top two most intense, non-homologous peptides identified from NuRD subunits were used to monitor their co-purification with SOX2 isoforms in fSOX2-Tg and fS248A-Tg cells in three separate, biological replicates. XICs were extracted manually using Xcalibur software. Relative enrichment of proteins co-purified with either SOX2 form was determined as described above. Peptides used for this analysis are listed in Supplementary Table 1b.
+
+Samples for co-IP Western blot corroboration of LC-MS data were performed as described above in biological duplicate. Antibodies used are described above.
+
+## Reprogramming experiments
+
+MEFs were derived from wild type CD1 mice or the Nanog-Gfp-IRES-Puror mice (Okita et al., 2007) and cultured in MEF media (KO-DMEM, 10% FBS, 2 mM glutamine, 1X non-essential amino acids, 1X pencillin/streptomycin, and 0.1 mM β-mercaptoethanol). pMXs vectors containing Oct4, c-Myc, Klf4, eGfp, dsRed, or wild type or S248A Sox2, with or without FLAG, were transfected with Fugene 6 (Promega, Madison, WI, E2691) into PlatE cells. Twenty-four hours after transfection, the media was changed. The next day, the retroviral supernatant was collected from transfected PlatE cells, filtered through 0.4 um filters and combined with each other at equal ratios. Polybrene (Merck Millipore, TR-1003-G) was added to a final concentration of 4 ug/ml. The virus-containing media was added to Nanog-Gfp or wild type MEFs that were passaged less than five times. Media was replaced the next day and every other until six days after transduction. At day six, MEFs were trypsinized and either prepared for experiments or 1000 cells were plated onto γ-irradiated SNL feeders. These 1000 MEFs were cultured in ESC media until GFP+ colonies were counted at day 20 (Nanog-Gfp MEFs).
+
+Microinjection of iPSCs to generate chimera mice was conducted at Cornell University Stem Cell and transgenic core facility. iPSCs were grown on mouse embryonic fibroblasts (produced at the Cornell stem cell core) and mitotically inactivated by irradiation (3000 Rads). To produce donor embryos, wild type albino mice of the strain http://jaxmice.jax.org/strain/000058.html were mated, embryos were flushed from the uterus at day 3.5, and the iPSCs were injected into the blastocyst of each embryo (15–30 cells per embryo). Injected embryos were then transferred to 2.5-day pseudo pregnant recipient animals and pup chimaerism was determined by coat color. Chimeras were mated to age-matched wild type animals of the same albino strain used for embryo donors. iPSC contribution to the germline was determined by coat color of the resultant pups.
+
+## Microarray analysis
+
+Total RNA was extracted with Trizol (Thermo Fisher [Invitrogen]) according to manufacturer’s instructions. Arraystar Inc, Rockville, MD(http://www.arraystar.com) prepped and hybridized the samples, and performed the data analysis.
+
+For RT-qPCR, 1 µg total RNA was reverse transcribed to cDNA with iScript (Bio-Rad Laboratories), diluted 1:20 or 1:50, depending on the abundance of the transcript, and 4 µL was used. Quantitative PCR was performed on a CFX Connect Real-time PCR detection system (Bio-Rad laboratories) with SensiFast SYBR Lo-ROX PCR master mix (Bioline, Taunton, MA, BIO-94020). Fold enrichment was determined by 2-(ΔCq) method (ΔCq= Cq(gene)-Cq(GusB)). Primers are listed in Supplementary file 1d.
+
+## Recombinant SOX2-OGT reaction and GST-PARP1 pulldown
+
+The recombinant poly-His tagged human OGT (His-OGT) expression plasmid was a generous gift from Suzanne Walker. His-OGT was expressed as previously described (Gross et al., 2005). His-OGT was purified by Ni-NTA agarose resin (Qiagen, Germany), eluted and buffer exchanged into 50 mM Tris-HCl, pH 7.8, 300 mM NaCl. To generate a biotinylated SOX2 (Bio-SOX2), the human SOX2 cDNA was cloned into the expression vector, pGV358avi, as a fusion construct linked to an N-terminal Avi-tag and a C-terminal intein-chitin binding domain (Redding et al., 2015). Bio-SOX2 was produced in E.coli BL21(DE3) in media supplemented with 200 nM biotin. The protein was purified from a clarified lysate by passage over a chitin column (New England Biolabs (NEB), Ipswich,MA) and incubated overnight in buffer containing 20 mM Tris-HCl, pH 8.5, 500 mM NaCl, 1 mM EDTA, 10% glycerol and 50 mM DTT. Bio-SOX2 was then eluted from the chitin column and dialyzed into storage buffer (20 mM Tris-HCl,pH 8.5, 500 mM NaCl, 1 mM EDTA, 10% glycerol and 1 mM DTT) for long term storage at -80oC.
+
+Equimolar ratios of Bio-SOX2 and His-OGT were incubated in an O-GlcNAc assay buffer (50 mM Tris pH 7.4, 12.5 mM MgCl2, 2% glycerol, 0.2 mM PMSF, 1 mM DTT) for one hour at 37oC with or without the sugar donor, UDP-GlcNAc (100 µM). After one hour, 50 µl of streptavidin magnetic beads (Thermo Fisher, 11205D) were resuspended in PBS/BSA(0.1%) buffer were added and the reactions were incubated for 45 min at 4oC. Bio-SOX2 bound beads were washed twice with PBS/BSA, once with low salt buffer (PBS/BSA+150 mM NaCl) and once with high salt buffer (PBS/BSA+300 mM NaCl) to eliminate His-OGT and unincorporated UDP-GlcNAc. Finally, the beads were resuspended in 50 µl of PBS/BSA buffer and incubated at 4oC for 1 hr with recombinant GST-PARP1 protein (0.14 µM) (Sigma-Aldrich, SRP0192). The beads were washed three times in PBS/BSA buffer and eluted in 1X SDS-PAGE loading buffer. Pull down and input samples were resolved on a 10% SDS-PAGE gel and Western blotted for SOX2, (Abcam, ab75179), OGT (SantaCruz Biotechnology Inc,SC 32921) O-GlcNAc (Thermo Fisher [Pierce, MA1072) and PARP1 (Active Motif, AM 39559).
+
+## Knockdown
+
+siRNA pools (esiRNAs) were created by in vitro cleavage of double-stranded RNA (Fazzio et al., 2008). In vitro transcription templates for double stranded RNAs were generated using the primers acquired from the Riddle database (Kittler et al., 2007). Transfections were performed using Lipofectamine RNAiMax according to manufacturer's instructions.
+
+## ChIP sample preparation
+
+The cells from ∼80% confluent 10 cm2 dishes were crosslinked with 1% formaldehyde for 10 min at room temperature. After quenching with 125 mM glycine for 5 min, the cells were washed twice with ice cold PBS. Cell pellets were resuspended in 1ml lysis buffer 1 (50 mM HEPES-KOH, pH 7.6,140 mM NaCl,1 mM EDTA, 10% (v/v) Glycerol, 0.5% NP-40,0.25% Triton X-100, complete protease inhibitor cocktail (PIC) (Roche,11697498001) for 10 min at 4oC, followed by centrifugation at 1,350 x g for 5 min at 4oC. Discard the supernatant and resuspend the pellet in 1 ml of lysis buffer 2 (10 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, PIC) for 10 min in at 4oC, followed by centrifugation at 1,350 x g for 5 min at 4 oC. Finally resuspend the cell pellet in 700 µl of lysis buffer 3 (10 mM Tris-HCl pH 8.0, 100 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% sodium deoxycholate, 0.5% N-Lauroylsarcosine, 1X PIC) and sonicate to desired length using Bioruptor (UCD-200; Diagenode, Denville, NJ) for 30 min [10 min x 3 times (each cycle consists of 30 s on, 30 s off) at high settings]. Clarify the lysates by centrifugation at 10,000 rpm in a microcentrifuge for 10 min at 4oC. Transfer the sonicated chromatin to a new tube and store at -80oC or use it immediately for chromatin immunoprecipitation (ChIP). We used two sets of chromatin (long and short) for ChIP and library preparation. Long ChIP samples were generated using sonicated chromatin consisting of DNA fragments ranging from sizes 1 kb–500 bp. Short ChIP samples were generated using sonicated chromatin consisting of DNA fragments ranging from sizes 500–200 bp.
+
+First, FLAG-coupled protein G beads were generated by incubating 10 ug of FLAG antibody (Sigma-Aldrich, F1804) with 50 μl of prewashed protein G magnetic beads (NEB S1430S) in PBS/BSA (5 mg/ml) buffer at 4oC, overnight. Chromatin Immunoprecipitation is performed by incubating these FLAG-coupled protein G beads with the sonicated chromatin in ChIP buffer (20 mM Tris-HCl pH 8.0, 150 mM NaCl, 2 mM EDTA, 1% Triton X-100) at 4oC, overnight. 10% of the total chromatin used for the ChIP is set aside as input sample and stored at -20°C until further use. The magnetic beads were washed twice with ChIP buffer, once with ChIP buffer containing 500 mM NaCl, four times with RIPA buffer (10 mM Tris-HCl pH 8.0, 0.25 M LiCl, 1 mM EDTA, 0.5% NP-40, 0.5% sodium deoxycholate), and once with TE buffer (10 mM Tris-HCl,pH 8.0, 1 mM EDTA). Finally elute DNA from the beads by adding 100 µl of elution buffer (20 mM Tris-HCl pH 8.0, 100 mM NaCl, 20 mM EDTA, 1% SDS) twice and incubating for 15 min at 65°C. The eluted DNA and the input samples were then reverse crosslinked at 65oC for overnight, followed by RNase A(0.2 mg/ml) digestion at 37oC for 2 h and Proteinase K (0.2 mg/ml) (NEB, P8102S) digestion at 55oC for 1 hr. The ChIP and input DNA were recovered by phenol-chloroform extraction and ethanol precipitation.
+
+## ChIP-seq Library preparation
+
+ChIP samples were end-repaired, A-tailed and adaptor ligated using barcode adaptors. Briefly, DNA was end-repaired using a combination of T4 DNA polymerase, E. coli DNA Pol I large fragment (Klenow polymerase) and T4 polynucleotide kinase. The blunt, phosphorylated ends were treated with Klenow fragment (exo minus) and dATP to yield a protruding 3- 'A' base for ligation of barcoded adapters which have a single 'T' base overhang at the 3’ end. DNA purification on Qiagen mini elute columns was performed following each enzyme reactions. The adaptor ligated material was then PCR amplified with Phusion polymerase using 16 cycles of PCR before size selection of 200–350 bp fragments on a 2% agarose gel. The ChIP-seq library samples were purified using Qiagen gel extraction kit, and its concentration was determined on Agilent Bioanalyzer using High Sensitivity DNA chip (Agilent Technologies, Santa Clara, CA). Libraries with different barcodes were multiplexed together at equimolar concentrations and single-end sequencing (50 bp) was performed at Center for Advanced Technology, genomics core facility, UCSF. Each lane of the HiSeq 2000 (Illumina, San Diego, CA) had five libraries (four ChIP DNA and one input DNA) multiplexed with barcodes added to the 5' end of the sequence.
+
+## ChIP-seq data analysis
+
+Reads were identified and then mapped to the mm9 assembly of the mouse genome using the Bowtie aligner (Langmead and Salzberg, 2012). Normalized and background-corrected measures of ChIP signal were created by randomly choosing 10 million unique tags from each dataset, calculating the tag density within 75 bp of each 20 bp bin of the mm9 assembly mouse genome, and then subtracting the matched 10-million-tag-normalized input tag density from each dataset. UCSC genome browser was used to visualize the ChIPseq peaks.
+
+All ChIP-seq peaks present in both the long and short biological replicates were used for motif analysis. Motifs were identified by running MEME (Bailey and Elkan, 1994) on fS248A-Tg mESC peaks (-dna -mod zoops -nmotifs 3 -minw 6 -maxw 30 -time 6058 -revcomp -maxsize 1000000). De novo motifs were matched to known motifs using Tomtom (Gupta et al., 2007).
+
+The ChIP-seq and microarray data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus and are accessible through GEO Series accession number GSE69594 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE 69594).
+
+## Relative quantitation of AP staining
+
+Cells were stained for AP activity as previously described above. NIS-Elements Basic Research software automatically acquired the darkness of the staining. Four fields of view for each experiment was taken and averaged to plot the change in darkness between gene of interest knockdown and Gfp.

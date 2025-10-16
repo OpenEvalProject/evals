@@ -1,0 +1,17 @@
+# Snf1/AMPK promotes the formation of Kog1/Raptor-bodies to increase the activation threshold of TORC1 in budding yeast
+
+## Authors
+
+- James E Hughes Hallett
+- Xiangxia Luo
+- Andrew P Capaldi †
+
+### Affiliations
+
+1. Department of Molecular and Cellular Biology University of Arizona Tucson United States capaldi@email.arizona.edu
+
+† Corresponding author
+
+## Abstract
+
+The target of rapamycin complex I (TORC1) regulates cell growth and metabolism in eukaryotes. Previous studies have shown that nitrogen and amino acid signals activate TORC1 via the small GTPases, Gtr1/2. However, little is known about the way that other nutrient signals are transmitted to TORC1. Here we report that glucose starvation triggers disassembly of TORC1, and movement of the key TORC1 component Kog1/Raptor to a single body near the edge of the vacuole. These events are driven by Snf1/AMPK-dependent phosphorylation of Kog1 at Ser 491/494 and two nearby prion-like motifs. Kog1-bodies then serve to increase the threshold for TORC1 activation in cells that have been starved for a significant period of time. Together, our data show that Kog1-bodies create hysteresis (memory) in the TORC1 pathway and help ensure that cells remain committed to a quiescent state under suboptimal conditions. We suggest that other protein bodies formed in starvation conditions have a similar function.

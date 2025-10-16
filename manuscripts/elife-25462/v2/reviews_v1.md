@@ -1,0 +1,87 @@
+# Peer review - Round 1
+
+Editors:
+- Indira M Raman, Northwestern University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.25462.022](https://doi.org/10.7554/eLife.25462.022)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+[Editors’ note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]
+
+Thank you for submitting your work entitled "Synaptic Plasticity through activation of AMPA-receptor subunit GluA3" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.
+
+Summary:
+
+The reviewers and editors all recognized the interesting core result regarding the increase in open probability of hippocampal AMPA receptors upon exposure to PKA. They also noted, however, a number of technical questions, internal inconsistencies, relatively small sample sizes with respect to the variance, and possible alternative interpretations. Because it would take substantial additional experiments to address these points and resolve all the associated questions, we cannot consider this work further. (Although some points in the reviews brought up new types of experiments and the relation of this study to previous work, these issues were not the basis for our decision.) The full reviews are included below.
+
+Reviewer #1:
+
+The manuscript by Renner et al. tests whether increasing cAMP levels in pyramidal neurons reveals a role of GluA3 in synaptic transmission. Understanding the mechanisms by which second messengers like cAMP regulate the properties of AMPA receptors and fast synaptic transmission is critical. The authors by using a series of electrophysiological and imaging experiments argue that under basal conditions GluA3 channels have very little contribution in synaptic transmission due to their low conductance and probability opening. However, when cAMP levels are elevated GluA3 shifts to a high-conductance state allowing them to contribute to point-to-point transmission in hippocampus. Importantly, this shift in the GluA3 mode is not due to PKA or EPAC, two well-established effectors of cAMP, but rather through Ras activation.
+
+Although the authors' findings provide a new insight in regards to the regulation of AMPA receptors in hippocampus, there are concerns with this work.
+
+1) Throughout, the authors use FSK or direct application of high levels of cAMP to test whether cAMP can increase the activity of AMPA receptors and in this work GluA3. It would have been important to also test whether the same effect occurs when cAMP is elevated through β-adrenergic receptors, a more physiologically relevant means to increase cAMP levels in hippocampus. In general it's unclear whether the effects are a result of a very large cAMP stimulus.
+
+2) They then argue that cAMP exerts its effects through Ras. Considering that, they also show that cAMP can induce its effects in outside-out patches, – is Ras associated with GluA3? How do the authors know whether Ras directly activates GluA3 channels rather than regulate the relationship between TARPs or cornichons and GluA3; auxiliary AMPA receptor subunits known to control the biophysical properties of AMPA receptors? These questions should have been addressed in order to provide a mechanistic insight on how cAMP-Ras control AMPA receptors. Importantly, it would have been important to test the proposed cAMP and Ras mechanism in an expression system that does not natively express AMPA receptors, like HEK293 cells.
+
+3) The authors argue that application of FSK in slices increased the AMPA and NMDA ratio presumably due to potentiation of postsynaptic GluA3 receptors, as GluA3 null neurons do not show this increase in the AMPA/NMDA ratio. They argue against any presynaptic effects of FSK, as PPR did not change in the presence of FSK (Figure 3). However, they then show that FSK increases mEPSC frequency in the GluA3 null neurons, although not to the same extent as in control neurons. This would then suggest that FSK has presynaptic effects, which are not controlled in this work. Additionally, previous work has also shown that cAMP changes NMDA receptor activity (Raman et al. 1996; Westphal et al. 1999), as such the AMPA/NMDA ratio is difficult to quantitatively interpret in the presence and absence of FSK/cAMP.
+
+Reviewer #2:
+
+In this manuscript Renner et al. reported that cAMP/FSK enhances GluA3-containing AMPAR-mediated currents in hippocampal neurons, similar to their finding in cerebellar Purkinje cells published earlier this year in Neuron (Gutierrez-Castellanos et al., 2017). Using outside-out patches and single channel recording of somatic membrane of CA1 neurons derived from WT, GluA1 or GluA3 KOs, they concluded that this enhancement is due to an increase in open probability of GluA3-containing AMPARs. Similar enhancements were observed at the synaptic level when analyzing AMPAR-mediated mEPSCs. The authors further explored signaling pathways underlying cAMP/FSK enhanced synaptic currents pharmacologically using inhibitors. This manuscript identifies a novel regulation of GluA3-containing AMPARs. However, due to the complexity of the effects of cAMP and some internal discrepancies in the data it is difficult to come to the simple conclusions presented by the authors. Specific comments are listed as the following:
+
+1) Assuming AMPARs in hippocampus are predominately in forms of GluA1/2 and GluA2/3, the authors compared cAMP/FSK-induced currents in WT (which contains both GluA1/2 and GluA2/3), GluA1 KO (which contains GluA2/3 only) and GluA3 KO (which contains GluA1/2 only). Since the GluA3 KO cells did not respond to cAMP/FSK like the WT and GluA1 KO did, the authors concluded that cAMP/FSK selectively potentiate currents from GluA"2/3" type of AMPARs. The Effect of cAMP could actually be on GluA2 when combined with GluA3. The title of this manuscript "Synaptic Plasticity through activation of AMPA-receptor subunit GluA3" is therefore somewhat misleading, as they did not show a direct effect of cAMP/FSK on GluA3 subunit nor provide its role in synaptic plasticity. Further evidence is required to make GluA3-specific claims and its effects on synaptic plasticity.
+
+2) The trafficking experiments done by live imaging of SEP-GluA3 delivered by sindbis virus (Figure 1E), as well as transfected SEP-GluA1 or SEP-GluA3 in CA1 neurons (Figure 4) are not convincing as these subunits when overexpressed alone tend to form homomers (GluA1/1 or GluA3/3) and may not reflect trafficking events of endogenous AMPARs (Sin et al., 2001). GluA3/3 in particular were reported to be absent in synapses even though it can be observed in spines. Alternative methodology examining endogenous AMPAR subunits such as isolation of PSD fraction of AMPARs or immunostaining of synaptic AMPARs would be a better approach.
+
+3) AMPA/NMDA ratio results are confusing. In Figure 3—figure supplement 1, the major effect of FSK in WT cells appears to decrease NMDAR current, but leave AMPAR current unchanged. If so, what is the explanation? Is loss of the FSK effect on A/N ratio in GluA3 KO NMDAR-related?
+
+4) The rescue experiment, in which GFP-GluA3 is reintroduced into GluA3 KO to evaluate GluA3-specific manipulation in synaptic transmission, is not convincing. While the FSK-induced frequency increase in WT cells is ~4 fold (1 to 4 Hz), the magnitude in GluA3 KO is ~2 fold (1 to 2Hz, Figure 1C) similar to the magnitude obtained from the rescue condition (~ 2 fold, 0.75 to 1.5 Hz, Figure 1E, GFP-GluA3 infected). The author should plot Figure 3C and E using the same scale for the ease of comparison of the frequency graphs. Similarly, the absence of FSK-induced potentiation in amplitude in GluA3 KO cells (Figure 1C, GluA3 KO) was not rescued in GFP-GluA3 infected GluA3 KO neurons (Figure 1E, GFP-GluA3 infected).
+
+5) FSK is well known to potentiate GluA1-containing AMPARs and FSK induced mEPSC frequency can be observed in WT, GluA3 KO and GluA1 KO neurons (Figure 3C and D), the pharmacology and antibody effects on mEPSC frequency done in WT cells (all experiments in Figure 6) are difficult to interpret. Further experiments using KO neurons are required to make a clear claim.
+
+6) In Figure 6C, the basal (FSK-/PKI+) mEPSC frequency in RAS-IgG neurons seems to be higher than the Ctrl-IgG. However, the basal (FSK-/PKI-) mEPSC frequency seems comparable between Ctrl-IgG and RAS-IgG neurons. If RAS-IgG neurons with PKI treatment do show a higher frequency than the Ctrl-IgG neurons, this would be an occlusion effect of PKI but not a blocking effect of RAS-IgG.
+
+Reviewer #3:
+
+Renner et al. propose a novel mechanism of cAMP-mediated AMPA receptor current potentiation. By using AMPA receptor knockout mice, they dissect the contribution of the two AMPA subunits GluA1 and GluA3 to this effect. With recordings of extrasynaptic currents they show that cAMP alters conductance states of Glu3 but not of GluA1 channels. Recordings of synaptic currents and FRAP experiments suggest that this increase in GluA3 conductance rather than increased insertion of AMPA receptors into synapses is responsible for the cAMP-mediated synaptic potentiation. Finally, they describe that RAS activity is required for the cAMP-mediated synaptic potentiation.
+
+The study is interesting as it identifies how "dormant" GluA3 channels are activated by cAMP. This finding, however, is not novel. The authors published this year another study on a very similar mechanism in Purkinje cells of the cerebellum (Gutierrez-Castellanos et al., Neuron 2017). There are some differences in the findings of the two studies (e.g. Epac vs. Ras dependency), but the main novelty of the current study is that cAMP influences GluA3 also in the hippocampus. Similar to the previous study, the authors provide high quality results of several experiments that very convincingly show the influence of cAMP on extrasynaptic GluA3 channels. However, results of extrasynaptic recordings are less convincing (see below). Finally, it would be important to show if and how much a cAMP-mediated increase in GluA3 currents contributes to a more physiological form of synaptic plasticity. In conclusion, the study is still preliminary in its present form and needs additional experiments for publication in eLife.
+
+1) Variability of mEPSC frequencies across experiments is very high. This precludes comparing results from the different experiments and drawing conclusions about the contribution of GluA1 or GluA3 from those comparisons. For example, mEPSC frequency in wildtype neurons without treatment differ by 0.7 Hz (Figure 5E: 0.7; Figure 3F: 1.4 Hz). In addition, the FSK-mediated increase is very different in wildtype neurons (+3.2 Hz in Figure 3C and 1.2 Hz in Figure 5F). In fact, the FSK-mediated increase shown in Figure 5F is similar to the increase in GluA3 knockout mice shown in Figure 3C (+ 1 Hz). Results shown in Figure 3D and Figure 5D strongly suggest that GluA3 channels play a role for the increase in synaptic strength in wildtype neurons. However, the contribution is most likely small (Figure 3D +0.6 Hz, Figure 5D +0.3 Hz). Again, the high variability of mEPSC frequency in the different experiments makes a direct comparison very difficult. Thus, my major concern is that experiments shown in Figure 3, 5 and 6 do not allow drawing conclusions about the relevance of cAMP-mediated increase in GluA3 function for synaptic plasticity in CA1 neurons. That is for example in contrast to the study of Gutierrez-Castellanos et al. (Neuron 2017) that convincingly showed that GluA3 channels and the novel GluA3 plasticity play a role for synaptic function of Purkinje cells (mEPSC frequency, amplitude, LTP) and mouse behaviour (VOR).
+
+2) What was the rational to use acute brain slices from 3-5 weeks old mice in some experiments and organotypic slices of newborn mice in others? The mechanisms of FSK potentiation of synaptic currents might very well differ in the two preparations.
+
+3) The conclusion that Ras plays a role in GluA3-plasticity and competes with PKA-mediated GluA1-plasticity is not convincing. Except for the small increase in mEPSC amplitude, Ras-IgG have no influence on mEPSCs. In addition, experiments in Figure 6C are again very difficult to interpret since variability is high. Thus, is the lack of an effect of FSK explained because RAS-IgG increases mEPSC frequency in the -FSK control condition? mEPSC frequency in the presence of FSK is very similar irrespective of presence or absence of PKI or RAS-IgG (Figure 6 B and C). In addition, what was the rational to compare Fold-changes in frequency in Figure 6 B-C instead of mEPCS frequency as in all other experiments? Finally, the number of neurons analyzed should be increased. In fact, I am surprised that the small difference in Fold-change in 6C reaches significance with an N of 5 and I am pretty sure that there would be no significant difference in the FSK-mediated increase in mEPSC frequency between IgG and RAS-IgG.
+
+[Editors’ note: what now follows is the decision letter after the authors submitted for further consideration.]
+
+Thank you for resubmitting your work entitled "Synaptic Plasticity through activation of GluA3-containing AMPA-receptors" for further consideration at eLife. Your revised article has been favorably evaluated by Gary Westbrook (Senior Editor), a Reviewing Editor, and two reviewers.
+
+The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:
+
+Remaining revisions:
+
+Both reviewers acknowledged the value of the additional experiments but both brought up areas in which the interpretation of experiments should be constrained or clarified. Specifically,
+
+1) The experiments directly activating β-adrenergic receptors are interesting but the experiments were done under extreme (with IBMX) or nonspecific (with i.p.) conditions. The reviewers recognize that these are useful as proof of principle, but we suggest that the limitations of the experiment be made clear, particularly in discussions of the literature (e.g. extent to which these results can reconcile other studies).
+
+2) Also, the analysis of mEPSCs raised questions regarding the specificity/magnitude of the GluA3 contribution to the effect of blocking RAS/PKA. Please interpret/explain the data in context of the difference in baseline rates between wild-type and KO, and curtail and/or clarify the conclusions accordingly.
+
+The full comments of the reviewers are given below to place the comments in context. We expect that these points can be addressed with textual/figure revisions.
+
+Reviewer #1:
+
+This is a revised manuscript by Renner et al. showing that high concentrations of cAMP facilitates AMPA receptors through GluA3 subunits. The authors have performed several new experiments that clarify and support their previous conclusions. However, one of my previous concerns was the use of very high concentrations of cAMP or the use of FSK. To address this they tested whether activation of β-adrenergic receptors – a more physiologically relevant experiment – can also lead to GluA3 mediated plasticity. They indeed demonstrate that application of ISO evokes GluA3 potentiation, however only when PDEs are blocked. This suggests that the proposed GluA3 plasticity might take place under non-physiological conditions. They also show that i.p. injection of EPI in mice could lead to GluA3 AMPA receptor potentiation. This experiment is very difficult to interpret, as global activation of b-adrenergic receptors will initiate multiple downstream signaling pathways. Due to these reasons my enthusiasm for this work is still dampened.
+
+Reviewer #3:
+
+Renner and colleagues added a substantial number of new experiments that clarified some concerns. In particular the experiments shown in Figure 7 increased the novelty of the study and provided evidence that physiological stimuli can induce cAMP-mediated activation of GluA3-containing AMPA-receptors. In conclusion, the comprehensive study of Renner et al. is largely convincing and suitable for publication in eLife.
+
+I am still not convinced by the mEPSC data as the high variability of mEPSC frequency within one genotype precludes drawing conclusions about the contribution of GluA3 during cAMP mediated changes in synaptic function. A calculation of fold-change in frequency is not really helpful for an estimation of the contribution of GluA3. Absolute changes in frequency have to be compared for such an estimation. The very small increase in mEPSC frequency in GluA1 KO mice (approx. 0.1 Hz in figure 6) compared to the much bigger increase in wt mice (approx. 0.5 Hz also in Figure 6) suggests that the contribution of GluA2/3 heteromers is rather small. Please discuss.

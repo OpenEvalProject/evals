@@ -1,0 +1,24 @@
+# Highly redundant neuropeptide volume co-transmission underlying episodic activation of the GnRH neuron dendron
+
+## Authors
+
+- Xinhuai Liu<sup>1</sup>
+- Shel-Hwa Yeo<sup>2</sup>
+- H James McQuillan<sup>1</sup>
+- Michel K Herde<sup>1</sup> ([ORCID: 0000-0002-2324-2083](https://orcid.org/0000-0002-2324-2083))
+- Sabine Hessler<sup>1</sup> ([ORCID: 0000-0002-4177-4825](https://orcid.org/0000-0002-4177-4825))
+- Isaiah Cheong<sup>3</sup>
+- Robert Porteous<sup>1</sup>
+- Allan Edward Herbison<sup>2</sup> ([ORCID: 0000-0002-9615-3022](https://orcid.org/0000-0002-9615-3022)) †
+
+### Affiliations
+
+1. Physiology University of Otago Dunedin New Zealand
+2. Physiology, Development & Neuroscience University of Cambridge Cambridge United Kingdom
+3. Centre for Neuroendocrinology, Department of Physiology University of Otago Dunedin New Zealand
+
+† Corresponding author
+
+## Abstract
+
+The necessity and functional significance of neurotransmitter co-transmission remains unclear. The glutamatergic 'KNDy' neurons co-express kisspeptin, neurokinin B (NKB) and dynorphin and exhibit a highly stereotyped synchronized behavior that reads out to the gonadotropin-releasing hormone (GnRH) neuron dendrons to drive episodic hormone secretion. Using expansion microscopy, we show that KNDy neurons make abundant close, non-synaptic appositions with the GnRH neuron dendron. Electrophysiology and confocal GCaMP6 imaging demonstrated that, despite all three neuropeptides being released from KNDy terminals, only kisspeptin was able to activate the GnRH neuron dendron. Mice with a selective deletion of kisspeptin from KNDy neurons failed to exhibit pulsatile hormone secretion but maintained synchronized episodic KNDy neuron behavior thought to depend on recurrent NKB and dynorphin transmission. This indicates that KNDy neurons drive episodic hormone secretion through highly redundant neuropeptide co-transmission orchestrated by differential postsynaptic neuropeptide receptor expression at the GnRH neuron dendron and KNDy neuron.

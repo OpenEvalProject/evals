@@ -1,0 +1,18 @@
+# Kinetochore protein depletion underlies cytokinesis failure and somatic polyploidization in the moss Physcomitrella patens
+
+## Authors
+
+- Elena Kozgunova<sup>1</sup> †
+- Momoko Nishina<sup>2</sup>
+- Gohta Goshima<sup>2</sup> ([ORCID: 0000-0001-7524-8770](https://orcid.org/0000-0001-7524-8770)) †
+
+### Affiliations
+
+1. International Collaborative Programme in Science, Graduate School of Science Nagoya University Nagoya Japan
+2. Division of Biological Science, Graduate School of Science Nagoya University Nagoya Japan
+
+† Corresponding author
+
+## Abstract
+
+Lagging chromosome is a hallmark of aneuploidy arising from errors in the kinetochore-spindle attachment in animal cells. However, kinetochore components and cellular phenotypes associated with kinetochore dysfunction are much less explored in plants. Here, we carried out a comprehensive characterization of conserved kinetochore components in the moss Physcomitrella patens and uncovered a distinct scenario in plant cells regarding both the localization and cellular impact of the kinetochore proteins. Most surprisingly, knock-down of several kinetochore proteins led to polyploidy, not aneuploidy, through cytokinesis failure in >90% of the cells that exhibited lagging chromosomes for several minutes or longer. The resultant cells, containing two or more nuclei, proceeded to the next cell cycle and eventually developed into polyploid plants. As lagging chromosomes have been observed in various plant species in the wild, our observation raised a possibility that they could be one of the natural pathways to polyploidy in plants.

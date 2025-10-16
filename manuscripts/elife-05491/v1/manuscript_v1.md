@@ -1,0 +1,21 @@
+# The Ret receptor regulates sensory neuron dendrite growth and integrin mediated adhesion
+
+## Authors
+
+- Peter Soba †
+- Chun Han
+- Yi Zheng
+- Daniel Perea
+- Irene Miguel-Aliaga
+- Lily Yeh Jan
+- Yuh Nung Jan
+
+### Affiliations
+
+1. Department of Physiology Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+Neurons develop highly stereotyped receptive fields by coordinated growth of their dendrites. Although cell surface cues play a major role in this process, few dendrite specific signals have been identified to date. We conducted an in vivo RNAi screen in Drosophila class IV dendritic arborization (C4da) neurons and identified the conserved Ret receptor, known to play a role in axon guidance, as an important regulator of dendrite development. The loss of Ret results in severe dendrite defects due to loss of extracellular matrix adhesion, thus impairing growth within a 2D plane. We provide evidence that Ret interacts with integrins to regulate dendrite adhesion via rac1 . In addition, Ret is required for dendrite stability and normal F-actin distribution suggesting it has an essential role in dendrite maintenance. We propose novel functions for Ret as a regulator in dendrite patterning and adhesion distinct from its role in axon guidance.

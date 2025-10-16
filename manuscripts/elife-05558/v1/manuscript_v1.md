@@ -1,0 +1,19 @@
+# A cortical disinhibitory circuit for enhancing adult plasticity
+
+## Authors
+
+- Yu Fu
+- Megumi Kaneko
+- Yunshuo Tang
+- Arturo Alvarez-Buylla
+- Michael P Stryker †
+
+### Affiliations
+
+1. Center for Integrative Neuroscience, Department of Physiology University of California, San Francisco San Francisco United States stryker@phy.ucsf.edu
+
+† Corresponding author
+
+## Abstract
+
+The adult brain continues to learn and can recover from injury, but the elements and operation of the neural circuits responsible for this plasticity are not known. In previous work we have: shown that locomotion dramatically enhances neural activity in the visual cortex (V1) of the mouse (Neill and Stryker, 2010); identified the cortical circuit responsible for this enhancement (Fu et al., 2014); and shown that locomotion also dramatically enhances adult plasticity (Kaneko and Stryker, 2014). The circuit responsible that is responsible for enhancing neural activity in the visual cortex contains both vasoactive intestinal peptide (VIP) and somatostatin (SST) neurons (Fu et al., 2014). Here we ask whether this VIP-SST circuit enhances plasticity directly, independent of locomotion and aerobic activity. Optogenetic activation or genetic blockade of this circuit reveal that it is both necessary and sufficient for rapidly increasing V1 cortical responses following manipulation of visual experience in adult mice. These findings reveal a disinhibitory circuit that regulates adult cortical plasticity.

@@ -1,0 +1,1431 @@
+# Author response - Round 1
+
+Authors:
+- Maria LC Iurilli ([ORCID: 0000-0003-0409-1635](https://orcid.org/0000-0003-0409-1635))
+- Maria LC Iurilli ([ORCID: 0000-0003-0409-1635](https://orcid.org/0000-0003-0409-1635))
+- Bin Zhou ([ORCID: 0000-0002-1741-8628](https://orcid.org/0000-0002-1741-8628))
+- James E Bennett
+- Rodrigo M Carrillo-Larco
+- Marisa K Sophiea
+- Andrea Rodriguez-Martinez
+- Honor Bixby
+- Bethlehem D Solomon
+- Cristina Taddei
+- Goodarz Danaei
+- Mariachiara Di Cesare
+- Gretchen A Stevens
+- Leanne M Riley
+- Stefan Savin
+- Melanie J Cowan
+- Pascal Bovet
+- Albertino Damasceno
+- Adela Chirita-Emandi
+- Alison J Hayes
+- Nayu Ikeda
+- Rod T Jackson
+- Young-Ho Khang
+- Avula Laxmaiah
+- Jing Liu
+- J Jaime Miranda
+- Olfa Saidi
+- Sylvain Sebert
+- Maroje Sorić
+- Gregor Starc
+- Edward W Gregg
+- Leandra Abarca-Gómez
+- Ziad A Abdeen
+- Shynar Abdrakhmanova
+- Suhaila Abdul Ghaffar
+- Hanan F Abdul Rahim
+- Niveen M Abu-Rmeileh
+- Jamila Abubakar Garba
+- Benjamin Acosta-Cazares
+- Robert J Adams
+- Wichai Aekplakorn
+- Kaosar Afsana
+- Shoaib Afzal
+- Imelda A Agdeppa
+- Javad Aghazadeh-Attari
+- Carlos A Aguilar-Salinas
+- Charles Agyemang
+- Mohamad Hasnan Ahmad
+- Noor Ani Ahmad
+- Ali Ahmadi
+- Naser Ahmadi
+- Soheir H Ahmed
+- Wolfgang Ahrens
+- Gulmira Aitmurzaeva
+- Kamel Ajlouni
+- Hazzaa M Al-Hazzaa
+- Badreya Al-Lahou
+- Rajaa Al-Raddadi
+- Monira Alarouj
+- Fadia AlBuhairan
+- Shahla AlDhukair
+- Mohamed M Ali
+- Abdullah Alkandari
+- Ala'a Alkerwi
+- Kristine Allin
+- Mar Alvarez-Pedrerol
+- Eman Aly
+- Deepak N Amarapurkar
+- Parisa Amiri
+- Norbert Amougou
+- Philippe Amouyel
+- Lars Bo Andersen
+- Sigmund A Anderssen
+- Lars Ängquist
+- Ranjit Mohan Anjana
+- Alireza Ansari-Moghaddam
+- Hajer Aounallah-Skhiri
+- Joana Araújo
+- Inger Ariansen
+- Tahir Aris
+- Raphael E Arku
+- Nimmathota Arlappa
+- Krishna K Aryal
+- Thor Aspelund
+- Felix K Assah
+- Maria Cecília F Assunção
+- May Soe Aung
+- Juha Auvinen
+- Mária Avdicová
+- Shina Avi
+- Ana Azevedo
+- Mohsen Azimi-Nezhad
+- Fereidoun Azizi
+- Mehrdad Azmin
+- Bontha V Babu
+- Maja Bæksgaard Jørgensen
+- Azli Baharudin
+- Suhad Bahijri
+- Jennifer L Baker
+- Nagalla Balakrishna
+- Mohamed Bamoshmoosh
+- Maciej Banach
+- Piotr Bandosz
+- José R Banegas
+- Joanna Baran
+- Carlo M Barbagallo
+- Alberto Barceló
+- Amina Barkat
+- Aluisio JD Barros
+- Mauro Virgílio Gomes Barros
+- Abdul Basit
+- Joao Luiz D Bastos
+- Iqbal Bata
+- Anwar M Batieha
+- Rosangela L Batista
+- Zhamilya Battakova
+- Assembekov Batyrbek
+- Louise A Baur
+- Robert Beaglehole
+- Silvia Bel-Serrat
+- Antonisamy Belavendra
+- Habiba Ben Romdhane
+- Judith Benedics
+- Mikhail Benet
+- Ingunn Holden Bergh
+- Salim Berkinbayev
+- Antonio Bernabe-Ortiz
+- Gailute Bernotiene
+- Heloísa Bettiol
+- Jorge Bezerra
+- Aroor Bhagyalaxmi
+- Sumit Bharadwaj
+- Santosh K Bhargava
+- Zulfiqar A Bhutta
+- Hongsheng Bi
+- Yufang Bi
+- Daniel Bia
+- Elysée Claude Bika Lele
+- Mukharram M Bikbov
+- Bihungum Bista
+- Dusko J Bjelica
+- Peter Bjerregaard
+- Espen Bjertness
+- Marius B Bjertness
+- Cecilia Björkelund
+- Katia V Bloch
+- Anneke Blokstra
+- Simona Bo
+- Martin Bobak
+- Lynne M Boddy
+- Bernhard O Boehm
+- Heiner Boeing
+- Jose G Boggia
+- Elena Bogova
+- Carlos P Boissonnet
+- Stig E Bojesen
+- Marialaura Bonaccio
+- Vanina Bongard
+- Alice Bonilla-Vargas
+- Matthias Bopp
+- Herman Borghs
+- Lien Braeckevelt
+- Lutgart Braeckman
+- Marjolijn CE Bragt
+- Imperia Brajkovich
+- Francesco Branca
+- Juergen Breckenkamp
+- João Breda
+- Hermann Brenner
+- Lizzy M Brewster
+- Garry R Brian
+- Lacramioara Brinduse
+- Sinead Brophy
+- Graziella Bruno
+- H Bas Bueno-de-Mesquita
+- Anna Bugge
+- Marta Buoncristiano
+- Genc Burazeri
+- Con Burns
+- Antonio Cabrera de León
+- Joseph Cacciottolo
+- Hui Cai
+- Tilema Cama
+- Christine Cameron
+- José Camolas
+- Günay Can
+- Ana Paula C Cândido
+- Felicia Cañete
+- Mario V Capanzana
+- Nadežda Capková
+- Eduardo Capuano
+- Vincenzo Capuano
+- Marloes Cardol
+- Viviane C Cardoso
+- Axel C Carlsson
+- Esteban Carmuega
+- Joana Carvalho
+- José A Casajús
+- Felipe F Casanueva
+- Ertugrul Celikcan
+- Laura Censi
+- Marvin Cervantes-Loaiza
+- Juraci A Cesar
+- Snehalatha Chamukuttan
+- Angelique W Chan
+- Queenie Chan
+- Himanshu K Chaturvedi
+- Nish Chaturvedi
+- Norsyamlina Che Abdul Rahim
+- Miao Li Chee
+- Chien-Jen Chen
+- Fangfang Chen
+- Huashuai Chen
+- Shuohua Chen
+- Zhengming Chen
+- Ching-Yu Cheng
+- Bahman Cheraghian
+- Angela Chetrit
+- Ekaterina Chikova-Iscener
+- Arnaud Chiolero
+- Shu-Ti Chiou
+- María-Dolores Chirlaque
+- Belong Cho
+- Kaare Christensen
+- Diego G Christofaro
+- Jerzy Chudek
+- Renata Cifkova
+- Michelle Cilia
+- Eliza Cinteza
+- Frank Claessens
+- Janine Clarke
+- Els Clays
+- Emmanuel Cohen
+- Hans Concin
+- Susana C Confortin
+- Cyrus Cooper
+- Tara C Coppinger
+- Eva Corpeleijn
+- Simona Costanzo
+- Dominique Cottel
+- Chris Cowell
+- Cora L Craig
+- Amelia C Crampin
+- Ana B Crujeiras
+- Semánová Csilla
+- Alexandra M Cucu
+- Liufu Cui
+- Felipe V Cureau
+- Ewelina Czenczek-Lewandowska
+- Graziella D'Arrigo
+- Eleonora d'Orsi
+- Liliana Dacica
+- María Ángeles Dal Re Saavedra
+- Jean Dallongeville
+- Camilla T Damsgaard
+- Rachel Dankner
+- Thomas M Dantoft
+- Parasmani Dasgupta
+- Saeed Dastgiri
+- Luc Dauchet
+- Kairat Davletov
+- Guy De Backer
+- Dirk De Bacquer
+- Giovanni de Gaetano
+- Stefaan De Henauw
+- Paula Duarte de Oliveira
+- David De Ridder
+- Karin De Ridder
+- Susanne R de Rooij
+- Delphine De Smedt
+- Mohan Deepa
+- Alexander D Deev
+- Vincent Jr DeGennaro
+- Abbas Dehghan
+- Hélène Delisle
+- Francis Delpeuch
+- Stefaan Demarest
+- Elaine Dennison
+- Katarzyna Dereń
+- Valérie Deschamps
+- Meghnath Dhimal
+- Augusto F Di Castelnuovo
+- Juvenal Soares Dias-da-Costa
+- María Elena Díaz-Sánchez
+- Alejandro Diaz
+- Zivka Dika
+- Shirin Djalalinia
+- Visnja Djordjic
+- Ha TP Do
+- Annette J Dobson
+- Maria Benedetta Donati
+- Chiara Donfrancesco
+- Silvana P Donoso
+- Angela Döring
+- Maria Dorobantu
+- Ahmad Reza Dorosty
+- Kouamelan Doua
+- Nico Dragano
+- Wojciech Drygas
+- Jia Li Duan
+- Charmaine A Duante
+- Priscilla Duboz
+- Rosemary B Duda
+- Vesselka Duleva
+- Virginija Dulskiene
+- Samuel C Dumith
+- Anar Dushpanova
+- Vilnis Dzerve
+- Elzbieta Dziankowska-Zaborszczyk
+- Ricky Eddie
+- Ebrahim Eftekhar
+- Eruke E Egbagbe
+- Robert Eggertsen
+- Sareh Eghtesad
+- Gabriele Eiben
+- Ulf Ekelund
+- Mohammad El-Khateeb
+- Jalila El Ati
+- Denise Eldemire-Shearer
+- Marie Eliasen
+- Paul Elliott
+- Reina Engle-Stone
+- Macia Enguerran
+- Rajiv T Erasmus
+- Raimund Erbel
+- Cihangir Erem
+- Louise Eriksen
+- Johan G Eriksson
+- Jorge Escobedo-de la Peña
+- Saeid Eslami
+- Ali Esmaeili
+- Alun Evans
+- David Faeh
+- Albina A Fakhretdinova
+- Caroline H Fall
+- Elnaz Faramarzi
+- Mojtaba Farjam
+- Victoria Farrugia Sant'Angelo
+- Farshad Farzadfar
+- Mohammad Reza Fattahi
+- Asher Fawwad
+- Francisco J Felix-Redondo
+- Trevor S Ferguson
+- Romulo A Fernandes
+- Daniel Fernández-Bergés
+- Daniel Ferrante
+- Thomas Ferrao
+- Marika Ferrari
+- Marco M Ferrario
+- Catterina Ferreccio
+- Eldridge Ferrer
+- Jean Ferrieres
+- Thamara Hubler Figueiró
+- Anna Fijalkowska
+- Günther Fink
+- Krista Fischer
+- Leng Huat Foo
+- Maria Forsner
+- Heba M Fouad
+- Damian K Francis
+- Maria do Carmo Franco
+- Ruth Frikke-Schmidt
+- Guillermo Frontera
+- Flavio D Fuchs
+- Sandra C Fuchs
+- Isti I Fujiati
+- Yuki Fujita
+- Matsuda Fumihiko
+- Takuro Furusawa
+- Zbigniew Gaciong
+- Mihai Gafencu
+- Andrzej Galbarczyk
+- Henrike Galenkamp
+- Daniela Galeone
+- Myriam Galfo
+- Fabio Galvano
+- Jingli Gao
+- Manoli Garcia-de-la-Hera
+- Marta García-Solano
+- Dickman Gareta
+- Sarah P Garnett
+- Jean-Michel Gaspoz
+- Magda Gasull
+- Adroaldo Cesar Araujo Gaya
+- Anelise Reis Gaya
+- Andrea Gazzinelli
+- Ulrike Gehring
+- Harald Geiger
+- Johanna M Geleijnse
+- Ali Ghanbari
+- Erfan Ghasemi
+- Oana-Florentina Gheorghe-Fronea
+- Simona Giampaoli
+- Francesco Gianfagna
+- Tiffany K Gill
+- Jonathan Giovannelli
+- Glen Gironella
+- Aleksander Giwercman
+- Konstantinos Gkiouras
+- Justyna Godos
+- Sibel Gogen
+- Marcel Goldberg
+- Rebecca A Goldsmith
+- David Goltzman
+- Santiago F Gómez
+- Aleksandra Gomula
+- Bruna Goncalves Cordeiro da Silva
+- Helen Gonçalves
+- David A Gonzalez-Chica
+- Marcela Gonzalez-Gross
+- Margot González-Leon
+- Juan P González-Rivas
+- Clicerio González-Villalpando
+- María-Elena González-Villalpando
+- Angel R Gonzalez
+- Frederic Gottrand
+- Antonio Pedro Graça
+- Sidsel Graff-Iversen
+- Dušan Grafnetter
+- Aneta Grajda
+- Maria G Grammatikopoulou
+- Ronald D Gregor
+- Tomasz Grodzicki
+- Else Karin Grøholt
+- Anders Grøntved
+- Giuseppe Grosso
+- Gabriella Gruden
+- Dongfeng Gu
+- Emanuela Gualdi-Russo
+- Pilar Guallar-Castillón
+- Andrea Gualtieri
+- Elias F Gudmundsson
+- Vilmundur Gudnason
+- Ramiro Guerrero
+- Idris Guessous
+- Andre L Guimaraes
+- Martin C Gulliford
+- Johanna Gunnlaugsdottir
+- Marc J Gunter
+- Xiu-Hua Guo
+- Yin Guo
+- Prakash C Gupta
+- Rajeev Gupta
+- Oye Gureje
+- Beata Gurzkowska
+- Enrique Gutiérrez-González
+- Laura Gutierrez
+- Felix Gutzwiller
+- Seongjun Ha
+- Farzad Hadaegh
+- Charalambos A Hadjigeorgiou
+- Rosa Haghshenas
+- Hamid Hakimi
+- Jytte Halkjær
+- Ian R Hambleton
+- Behrooz Hamzeh
+- Dominique Hange
+- Abu AM Hanif
+- Sari Hantunen
+- Jie Hao
+- Rachakulla Hari Kumar
+- Seyed Mohammad Hashemi-Shahri
+- Maria Hassapidou
+- Jun Hata
+- Teresa Haugsgjerd
+- Jiang He
+- Yuan He
+- Yuna He
+- Regina Heidinger-Felso
+- Mirjam Heinen
+- Tatjana Hejgaard
+- Marleen Elisabeth Hendriks
+- Rafael dos Santos Henrique
+- Ana Henriques
+- Leticia Hernandez Cadena
+- Sauli Herrala
+- Victor M Herrera
+- Isabelle Herter-Aeberli
+- Ramin Heshmat
+- Allan G Hill
+- Sai Yin Ho
+- Suzanne C Ho
+- Michael Hobbs
+- Michelle Holdsworth
+- Reza Homayounfar
+- Clara Homs
+- Wilma M Hopman
+- Andrea RVR Horimoto
+- Claudia M Hormiga
+- Bernardo L Horta
+- Leila Houti
+- Christina Howitt
+- Thein Thein Htay
+- Aung Soe Htet
+- Maung Maung Than Htike
+- Yonghua Hu
+- José María Huerta
+- Ilpo Tapani Huhtaniemi
+- Laetitia Huiart
+- Constanta Huidumac Petrescu
+- Martijn Huisman
+- Abdullatif Husseini
+- Chinh Nguyen Huu
+- Inge Huybrechts
+- Nahla Hwalla
+- Jolanda Hyska
+- Licia Iacoviello
+- Jesús M Ibarluzea
+- Mohsen M Ibrahim
+- Norazizah Ibrahim Wong
+- M Arfan Ikram
+- Violeta Iotova
+- Vilma E Irazola
+- Takafumi Ishida
+- Muhammad Islam
+- Sheikh Mohammed Shariful Islam
+- Masanori Iwasaki
+- Jeremy M Jacobs
+- Hashem Y Jaddou
+- Tazeen Jafar
+- Kenneth James
+- Kazi M Jamil
+- Konrad Jamrozik
+- Imre Janszky
+- Edward Janus
+- Juel Jarani
+- Marjo-Riitta Jarvelin
+- Grazyna Jasienska
+- Ana Jelakovic
+- Bojan Jelakovic
+- Garry Jennings
+- Anjani Kumar Jha
+- Chao Qiang Jiang
+- Ramon O Jimenez
+- Karl-Heinz Jöckel
+- Michel Joffres
+- Mattias Johansson
+- Jari J Jokelainen
+- Jost B Jonas
+- Jitendra Jonnagaddala
+- Torben Jørgensen
+- Pradeep Joshi
+- Farahnaz Joukar
+- Dragana P Jovic
+- Jacek J Jóźwiak
+- Anne Juolevi
+- Gregor Jurak
+- Iulia Jurca Simina
+- Vesna Juresa
+- Rudolf Kaaks
+- Felix O Kaducu
+- Anthony Kafatos
+- Eero O Kajantie
+- Zhanna Kalmatayeva
+- Ofra Kalter-Leibovici
+- Yves Kameli
+- Freja B Kampmann
+- Kodanda R Kanala
+- Srinivasan Kannan
+- Efthymios Kapantais
+- Argyro Karakosta
+- Line L Kårhus
+- Khem B Karki
+- Marzieh Katibeh
+- Joanne Katz
+- Peter T Katzmarzyk
+- Jussi Kauhanen
+- Prabhdeep Kaur
+- Maryam Kavousi
+- Gyulli M Kazakbaeva
+- Ulrich Keil
+- Lital Keinan Boker
+- Sirkka Keinänen-Kiukaanniemi
+- Roya Kelishadi
+- Cecily Kelleher
+- Han CG Kemper
+- Andre P Kengne
+- Maryam Keramati
+- Alina Kerimkulova
+- Mathilde Kersting
+- Timothy Key
+- Yousef Saleh Khader
+- Davood Khalili
+- Kay-Tee Khaw
+- Bahareh Kheiri
+- Motahareh Kheradmand
+- Alireza Khosravi
+- Ilse MSL Khouw
+- Ursula Kiechl-Kohlendorfer
+- Stefan Kiechl
+- Japhet Killewo
+- Dong Wook Kim
+- Hyeon Chang Kim
+- Jeongseon Kim
+- Jenny M Kindblom
+- Heidi Klakk
+- Magdalena Klimek
+- Jeannette Klimont
+- Jurate Klumbiene
+- Michael Knoflach
+- Bhawesh Koirala
+- Elin Kolle
+- Patrick Kolsteren
+- Jürgen König
+- Raija Korpelainen
+- Paul Korrovits
+- Magdalena Korzycka
+- Jelena Kos
+- Seppo Koskinen
+- Katsuyasu Kouda
+- Viktoria A Kovacs
+- Sudhir Kowlessur
+- Slawomir Koziel
+- Jana Kratenova
+- Wolfgang Kratzer
+- Susi Kriemler
+- Peter Lund Kristensen
+- Steiner Krokstad
+- Daan Kromhout
+- Herculina S Kruger
+- Ruzena Kubinova
+- Renata Kuciene
+- Urho M Kujala
+- Enisa Kujundzic
+- Zbigniew Kulaga
+- R Krishna Kumar
+- Marie Kunešová
+- Pawel Kurjata
+- Yadlapalli S Kusuma
+- Kari Kuulasmaa
+- Catherine Kyobutungi
+- Quang Ngoc La
+- Fatima Zahra Laamiri
+- Tiina Laatikainen
+- Carl Lachat
+- Youcef Laid
+- Tai Hing Lam
+- Christina-Paulina Lambrinou
+- Edwige Landais
+- Vera Lanska
+- Georg Lappas
+- Bagher Larijani
+- Tint Swe Latt
+- Laura Lauria
+- Maria Lazo-Porras
+- Gwenaëlle Le Coroller
+- Khanh Le Nguyen Bao
+- Agnès Le Port
+- Tuyen D Le
+- Jeannette Lee
+- Jeonghee Lee
+- Paul H Lee
+- Nils Lehmann
+- Terho Lehtimäki
+- Daniel Lemogoum
+- Naomi S Levitt
+- Yanping Li
+- Merike Liivak
+- Christa L Lilly
+- Wei-Yen Lim
+- M Fernanda Lima-Costa
+- Hsien-Ho Lin
+- Xu Lin
+- Yi-Ting Lin
+- Lars Lind
+- Allan Linneberg
+- Lauren Lissner
+- Mieczyslaw Litwin
+- Lijuan Liu
+- Wei-Cheng Lo
+- Helle-Mai Loit
+- Khuong Quynh Long
+- Luis Lopes
+- Oscar Lopes
+- Esther Lopez-Garcia
+- Tania Lopez
+- Paulo A Lotufo
+- José Eugenio Lozano
+- Janice L Lukrafka
+- Dalia Luksiene
+- Annamari Lundqvist
+- Robert Lundqvist
+- Nuno Lunet
+- Charles Lunogelo
+- Michala Lustigová
+- Edyta Łuszczki
+- Guansheng Ma
+- Jun Ma
+- Xu Ma
+- George LL Machado-Coelho
+- Aristides M Machado-Rodrigues
+- Luisa M Macieira
+- Ahmed A Madar
+- Stefania Maggi
+- Dianna J Magliano
+- Sara Magnacca
+- Emmanuella Magriplis
+- Gowri Mahasampath
+- Bernard Maire
+- Marjeta Majer
+- Marcia Makdisse
+- Päivi Mäki
+- Fatemeh Malekzadeh
+- Reza Malekzadeh
+- Rahul Malhotra
+- Kodavanti Mallikharjuna Rao
+- Sofia K Malyutina
+- Lynell V Maniego
+- Yannis Manios
+- Jim I Mann
+- Fariborz Mansour-Ghanaei
+- Enzo Manzato
+- Paula Margozzini
+- Anastasia Markaki
+- Oonagh Markey
+- Eliza Markidou Ioannidou
+- Pedro Marques-Vidal
+- Larissa Pruner Marques
+- Jaume Marrugat
+- Yves Martin-Prevel
+- Rosemarie Martin
+- Reynaldo Martorell
+- Eva Martos
+- Katharina Maruszczak
+- Stefano Marventano
+- Luis P Mascarenhas
+- Shariq R Masoodi
+- Ellisiv B Mathiesen
+- Prashant Mathur
+- Alicia Matijasevich
+- Tandi E Matsha
+- Christina Mavrogianni
+- Artur Mazur
+- Jean Claude N Mbanya
+- Shelly R McFarlane
+- Stephen T McGarvey
+- Martin McKee
+- Stela McLachlan
+- Rachael M McLean
+- Scott B McLean
+- Breige A McNulty
+- Sounnia Mediene Benchekor
+- Jurate Medzioniene
+- Parinaz Mehdipour
+- Kirsten Mehlig
+- Amir Houshang Mehrparvar
+- Aline Meirhaeghe
+- Jørgen Meisfjord
+- Christa Meisinger
+- Ana Maria B Menezes
+- Geetha R Menon
+- Gert BM Mensink
+- Maria Teresa Menzano
+- Alibek Mereke
+- Indrapal I Meshram
+- Andres Metspalu
+- Haakon E Meyer
+- Jie Mi
+- Kim F Michaelsen
+- Nathalie Michels
+- Kairit Mikkel
+- Karolina Milkowska
+- Jody C Miller
+- Cláudia S Minderico
+- GK Mini
+- Juan Francisco Miquel
+- Mohammad Reza Mirjalili
+- Daphne Mirkopoulou
+- Erkin Mirrakhimov
+- Marjeta Mišigoj-Durakovic
+- Antonio Mistretta
+- Veronica Mocanu
+- Pietro A Modesti
+- Sahar Saeedi Moghaddam
+- Bahram Mohajer
+- Mostafa K Mohamed
+- Shukri F Mohamed
+- Kazem Mohammad
+- Zahra Mohammadi
+- Noushin Mohammadifard
+- Reza Mohammadpourhodki
+- Viswanathan Mohan
+- Salim Mohanna
+- Muhammad Fadhli Mohd Yusoff
+- Iraj Mohebbi
+- Farnam Mohebi
+- Marie Moitry
+- Drude Molbo
+- Line T Møllehave
+- Niels C Møller
+- Dénes Molnár
+- Amirabbas Momenan
+- Charles K Mondo
+- Michele Monroy-Valle
+- Eric Monterrubio-Flores
+- Kotsedi Daniel K Monyeki
+- Jin Soo Moon
+- Mahmood Moosazadeh
+- Leila B Moreira
+- Alain Morejon
+- Luis A Moreno
+- Karen Morgan
+- Suzanne N Morin
+- Erik Lykke Mortensen
+- George Moschonis
+- Malgorzata Mossakowska
+- Aya Mostafa
+- Anabela Mota-Pinto
+- Jorge Mota
+- Mohammad Esmaeel Motlagh
+- Jorge Motta
+- Marcos André Moura-dos-Santos
+- Malay K Mridha
+- Kelias P Msyamboza
+- Thet Thet Mu
+- Magdalena Muc
+- Boban Mugoša
+- Maria L Muiesan
+- Parvina Mukhtorova
+- Martina Müller-Nurasyid
+- Neil Murphy
+- Jaakko Mursu
+- Elaine M Murtagh
+- Kamarul Imran Musa
+- Sanja Music Milanovic
+- Vera Musil
+- Norlaila Mustafa
+- Iraj Nabipour
+- Shohreh Naderimagham
+- Gabriele Nagel
+- Balkish M Naidu
+- Farid Najafi
+- Harunobu Nakamura
+- Jana Námešná
+- Ei Ei K Nang
+- Vinay B Nangia
+- Martin Nankap
+- Sameer Narake
+- Paola Nardone
+- Matthias Nauck
+- William A Neal
+- Azim Nejatizadeh
+- Chandini Nekkantti
+- Keiu Nelis
+- Liis Nelis
+- Ilona Nenko
+- Martin Neovius
+- Flavio Nervi
+- Chung T Nguyen
+- Nguyen D Nguyen
+- Quang Ngoc Nguyen
+- Ramfis E Nieto-Martínez
+- Yury P Nikitin
+- Guang Ning
+- Toshiharu Ninomiya
+- Sania Nishtar
+- Marianna Noale
+- Oscar A Noboa
+- Helena Nogueira
+- Teresa Norat
+- Maria Nordendahl
+- Børge G Nordestgaard
+- Davide Noto
+- Natalia Nowak-Szczepanska
+- Mohannad Al Nsour
+- Irfan Nuhoglu
+- Eha Nurk
+- Terence W O'Neill
+- Dermot O'Reilly
+- Galina Obreja
+- Caleb Ochimana
+- Angélica M Ochoa-Avilés
+- Eiji Oda
+- Kyungwon Oh
+- Kumiko Ohara
+- Claes Ohlsson
+- Ryutaro Ohtsuka
+- Örn Olafsson
+- Maria Teresa A Olinto
+- Isabel O Oliveira
+- Mohd Azahadi Omar
+- Altan Onat
+- Sok King Ong
+- Lariane M Ono
+- Pedro Ordunez
+- Rui Ornelas
+- Ana P Ortiz
+- Pedro J Ortiz
+- Merete Osler
+- Clive Osmond
+- Sergej M Ostojic
+- Afshin Ostovar
+- Johanna A Otero
+- Kim Overvad
+- Ellis Owusu-Dabo
+- Fred Michel Paccaud
+- Cristina Padez
+- Ioannis Pagkalos
+- Elena Pahomova
+- Karina Mary de Paiva
+- Andrzej Pajak
+- Domenico Palli
+- Alberto Palloni
+- Luigi Palmieri
+- Wen-Harn Pan
+- Songhomitra Panda-Jonas
+- Arvind Pandey
+- Francesco Panza
+- Dimitrios Papandreou
+- Soon-Woo Park
+- Suyeon Park
+- Winsome R Parnell
+- Mahboubeh Parsaeian
+- Ionela M Pascanu
+- Patrick Pasquet
+- Nikhil D Patel
+- Ivan Pecin
+- Mangesh S Pednekar
+- Nasheeta Peer
+- Gao Pei
+- Sergio Viana Peixoto
+- Markku Peltonen
+- Alexandre C Pereira
+- Marco A Peres
+- Napoleón Pérez-Farinós
+- Cynthia M Pérez
+- Valentina Peterkova
+- Annette Peters
+- Astrid Petersmann
+- Janina Petkeviciene
+- Ausra Petrauskiene
+- Emanuela Pettenuzzo
+- Niloofar Peykari
+- Son Thai Pham
+- Rafael N Pichardo
+- Daniela Pierannunzio
+- Iris Pigeot
+- Hynek Pikhart
+- Aida Pilav
+- Lorenza Pilotto
+- Francesco Pistelli
+- Freda Pitakaka
+- Aleksandra Piwonska
+- Andreia N Pizarro
+- Pedro Plans-Rubió
+- Bee Koon Poh
+- Hermann Pohlabeln
+- Raluca M Pop
+- Stevo R Popovic
+- Miquel Porta
+- Georg Posch
+- Anil Poudyal
+- Dimitrios Poulimeneas
+- Hamed Pouraram
+- Farhad Pourfarzi
+- Akram Pourshams
+- Hossein Poustchi
+- Rajendra Pradeepa
+- Alison J Price
+- Jacqueline F Price
+- Rui Providencia
+- Jardena J Puder
+- Iveta Pudule
+- Soile E Puhakka
+- Maria Puiu
+- Margus Punab
+- Radwan F Qasrawi
+- Mostafa Qorbani
+- Tran Quoc Bao
+- Ivana Radic
+- Ricardas Radisauskas
+- Salar Rahimikazerooni
+- Mahfuzar Rahman
+- Mahmudur Rahman
+- Olli Raitakari
+- Manu Raj
+- Ellina Rakhimova
+- Sherali Rakhmatulloev
+- Ivo Rakovac
+- Sudha Ramachandra Rao
+- Ambady Ramachandran
+- Jacqueline Ramke
+- Elisabete Ramos
+- Rafel Ramos
+- Lekhraj Rampal
+- Sanjay Rampal
+- Vayia Rarra
+- Ramon A Rascon-Pacheco
+- Mette Rasmussen
+- Cassiano Ricardo Rech
+- Josep Redon
+- Paul Ferdinand M Reganit
+- Valéria Regecová
+- Luis Revilla
+- Abbas Rezaianzadeh
+- Lourdes Ribas-Barba
+- Robespierre Ribeiro
+- Elio Riboli
+- Adrian Richter
+- Fernando Rigo
+- Natascia Rinaldo
+- Tobias F Rinke de Wit
+- Ana Rito
+- Raphael M Ritti-Dias
+- Juan A Rivera
+- Cynthia Robitaille
+- Romana Roccaldo
+- Daniela Rodrigues
+- Fernando Rodríguez-Artalejo
+- María del Cristo Rodriguez-Perez
+- Laura A Rodríguez-Villamizar
+- Ulla Roggenbuck
+- Rosalba Rojas-Martinez
+- Nipa Rojroongwasinkul
+- Dora Romaguera
+- Elisabetta L Romeo
+- Rafaela V Rosario
+- Annika Rosengren
+- Ian Rouse
+- Joel GR Roy
+- Adolfo Rubinstein
+- Frank J Rühli
+- Jean-Bernard Ruidavets
+- Blanca Sandra Ruiz-Betancourt
+- Maria Ruiz-Castell
+- Emma Ruiz Moreno
+- Iuliia A Rusakova
+- Kenisha Russell Jonsson
+- Paola Russo
+- Petra Rust
+- Marcin Rutkowski
+- Charumathi Sabanayagam
+- Elena Sacchini
+- Harshpal S Sachdev
+- Alireza Sadjadi
+- Ali Reza Safarpour
+- Saeid Safiri
+- Nader Saki
+- Benoit Salanave
+- Eduardo Salazar Martinez
+- Diego Salmerón
+- Veikko Salomaa
+- Jukka T Salonen
+- Massimo Salvetti
+- Margarita Samoutian
+- Jose Sánchez-Abanto
+-  Sandjaja
+- Susana Sans
+- Loreto Santa Marina
+- Diana A Santos
+- Ina S Santos
+- Lèlita C Santos
+- Maria Paula Santos
+- Osvaldo Santos
+- Rute Santos
+- Sara Santos Sanz
+- Jouko L Saramies
+- Luis B Sardinha
+- Nizal Sarrafzadegan
+- Thirunavukkarasu Sathish
+- Kai-Uwe Saum
+- Savvas Savva
+- Mathilde Savy
+- Norie Sawada
+- Mariana Sbaraini
+- Marcia Scazufca
+- Beatriz D Schaan
+- Angelika Schaffrath Rosario
+- Herman Schargrodsky
+- Anja Schienkiewitz
+- Sabine Schipf
+- Carsten O Schmidt
+- Ida Maria Schmidt
+- Peter Schnohr
+- Ben Schöttker
+- Sara Schramm
+- Stine Schramm
+- Helmut Schröder
+- Constance Schultsz
+- Aletta E Schutte
+- Aye Aye Sein
+- Rusidah Selamat
+- Vedrana Sember
+- Abhijit Sen
+- Idowu O Senbanjo
+- Sadaf G Sepanlou
+- Victor Sequera
+- Luis Serra-Majem
+- Jennifer Servais
+- Ludmila Ševcíková
+- Svetlana A Shalnova
+- Teresa Shamah-Levy
+- Morteza Shamshirgaran
+- Coimbatore Subramaniam Shanthirani
+- Maryam Sharafkhah
+- Sanjib K Sharma
+- Jonathan E Shaw
+- Amaneh Shayanrad
+- Ali Akbar Shayesteh
+- Lela Shengelia
+- Zumin Shi
+- Kenji Shibuya
+- Hana Shimizu-Furusawa
+- Dong Wook Shin
+- Majid Shirani
+- Rahman Shiri
+- Namuna Shrestha
+- Khairil Si-Ramlee
+- Alfonso Siani
+- Rosalynn Siantar
+- Abla M Sibai
+- Antonio M Silva
+- Diego Augusto Santos Silva
+- Mary Simon
+- Judith Simons
+- Leon A Simons
+- Agneta Sjöberg
+- Michael Sjöström
+- Gry Skodje
+- Jolanta Slowikowska-Hilczer
+- Przemyslaw Slusarczyk
+- Liam Smeeth
+- Hung-Kwan So
+- Fernanda Cunha Soares
+- Grzegorz Sobek
+- Eugène Sobngwi
+- Morten Sodemann
+- Stefan Söderberg
+- Moesijanti YE Soekatri
+- Agustinus Soemantri
+- Reecha Sofat
+- Vincenzo Solfrizzi
+- Mohammad Hossein Somi
+- Emily Sonestedt
+- Yi Song
+- Thorkild IA Sørensen
+- Elin P Sørgjerd
+- Charles Sossa Jérome
+- Victoria E Soto-Rojas
+- Aïcha Soumaré
+- Slavica Sovic
+- Bente Sparboe-Nilsen
+- Karen Sparrenberger
+- Angela Spinelli
+- Igor Spiroski
+- Jan A Staessen
+- Hanspeter Stamm
+- Maria G Stathopoulou
+- Kaspar Staub
+- Bill Stavreski
+- Jostein Steene-Johannessen
+- Peter Stehle
+- Aryeh D Stein
+- George S Stergiou
+- Jochanan Stessman
+- Ranko Stevanovic
+- Jutta Stieber
+- Doris Stöckl
+- Tanja Stocks
+- Jakub Stokwiszewski
+- Ekaterina Stoyanova
+- Gareth Stratton
+- Karien Stronks
+- Maria Wany Strufaldi
+- Lela Sturua
+- Ramón Suárez-Medina
+- Machi Suka
+- Chien-An Sun
+- Johan Sundström
+- Yn-Tz Sung
+- Jordi Sunyer
+- Paibul Suriyawongpaisal
+- Boyd A Swinburn
+- Rody G Sy
+- Holly E Syddall
+- René Charles Sylva
+- Moyses Szklo
+- Lucjan Szponar
+- E Shyong Tai
+- Mari-Liis Tammesoo
+- Abdonas Tamosiunas
+- Eng Joo Tan
+- Xun Tang
+- Maya Tanrygulyyeva
+- Frank Tanser
+- Yong Tao
+- Mohammed Rasoul Tarawneh
+- Jakob Tarp
+- Carolina B Tarqui-Mamani
+- Radka Taxová Braunerová
+- Anne Taylor
+- Julie Taylor
+- Félicité Tchibindat
+- William R Tebar
+- Grethe S Tell
+- Tania Tello
+- Yih Chung Tham
+- KR Thankappan
+- Holger Theobald
+- Xenophon Theodoridis
+- Lutgarde Thijs
+- Nihal Thomas
+- Betina H Thuesen
+- Lubica Tichá
+- Erik J Timmermans
+- Anne Tjonneland
+- Hanna K Tolonen
+- Janne S Tolstrup
+- Murat Topbas
+- Roman Topór-Madry
+- Liv Elin Torheim
+- María José Tormo
+- Michael J Tornaritis
+- Maties Torrent
+- Laura Torres-Collado
+- Stefania Toselli
+- Giota Touloumi
+- Pierre Traissac
+- Thi Tuyet-Hanh Tran
+- Dimitrios Trichopoulos
+- Antonia Trichopoulou
+- Oanh TH Trinh
+- Atul Trivedi
+- Lechaba Tshepo
+- Maria Tsigga
+- Shoichiro Tsugane
+- Azaliia M Tuliakova
+- Marshall K Tulloch-Reid
+- Fikru Tullu
+- Tomi-Pekka Tuomainen
+- Jaakko Tuomilehto
+- Maria L Turley
+- Gilad Twig
+- Per Tynelius
+- Themistoklis Tzotzas
+- Christophe Tzourio
+- Peter Ueda
+- Eunice Ugel
+- Flora AM Ukoli
+- Hanno Ulmer
+- Belgin Unal
+- Zhamyila Usupova
+- Hannu MT Uusitalo
+- Nalan Uysal
+- Justina Vaitkeviciute
+- Gonzalo Valdivia
+- Susana Vale
+- Damaskini Valvi
+- Rob M van Dam
+- Johan Van der Heyden
+- Yvonne T van der Schouw
+- Koen Van Herck
+- Hoang Van Minh
+- Natasja M Van Schoor
+- Irene GM van Valkengoed
+- Dirk Vanderschueren
+- Diego Vanuzzo
+- Anette Varbo
+- Gregorio Varela-Moreiras
+- Patricia Varona-Pérez
+- Senthil K Vasan
+- Tomas Vega
+- Toomas Veidebaum
+- Gustavo Velasquez-Melendez
+- Biruta Velika
+- Giovanni Veronesi
+- WM Monique Verschuren
+- Cesar G Victora
+- Giovanni Viegi
+- Lucie Viet
+- Salvador Villalpando
+- Paolo Vineis
+- Jesus Vioque
+- Jyrki K Virtanen
+- Marjolein Visser
+- Sophie Visvikis-Siest
+- Bharathi Viswanathan
+- Mihaela Vladulescu
+- Tiina Vlasoff
+- Dorja Vocanec
+- Peter Vollenweider
+- Henry Völzke
+- Ari Voutilainen
+- Sari Voutilainen
+- Martine Vrijheid
+- Tanja GM Vrijkotte
+- Alisha N Wade
+- Aline Wagner
+- Thomas Waldhör
+- Janette Walton
+- Elvis OA Wambiya
+- Wan Mohamad Wan Bebakar
+- Wan Nazaimoon Wan Mohamud
+- Rildo de Souza Wanderley Júnior
+- Ming-Dong Wang
+- Ningli Wang
+- Qian Wang
+- Xiangjun Wang
+- Ya Xing Wang
+- Ying-Wei Wang
+- S Goya Wannamethee
+- Nicholas Wareham
+- Adelheid Weber
+- Niels Wedderkopp
+- Deepa Weerasekera
+- Daniel Weghuber
+- Wenbin Wei
+- Aneta Weres
+- Bo Werner
+- Peter H Whincup
+- Kurt Widhalm
+- Indah S Widyahening
+- Andrzej Wiecek
+- Rainford J Wilks
+- Johann Willeit
+- Peter Willeit
+- Julianne Williams
+- Tom Wilsgaard
+- Bogdan Wojtyniak
+- Roy A Wong-McClure
+- Andrew Wong
+- Jyh Eiin Wong
+- Tien Yin Wong
+- Jean Woo
+- Mark Woodward
+- Frederick C Wu
+- Jianfeng Wu
+- Li Juan Wu
+- Shouling Wu
+- Haiquan Xu
+- Liang Xu
+- Nor Azwany Yaacob
+- Uruwan Yamborisut
+- Weili Yan
+- Ling Yang
+- Xiaoguang Yang
+- Yang Yang
+- Nazan Yardim
+- Mehdi Yaseri
+- Tabara Yasuharu
+- Xingwang Ye
+- Panayiotis K Yiallouros
+- Moein Yoosefi
+- Akihiro Yoshihara
+- Qi Sheng You
+- San-Lin You
+- Novie O Younger-Coleman
+- Safiah Md Yusof
+- Ahmad Faudzi Yusoff
+- Luciana Zaccagni
+- Vassilis Zafiropulos
+- Ahmad A Zainuddin
+- Seyed Rasoul Zakavi
+- Farhad Zamani
+- Sabina Zambon
+- Antonis Zampelas
+- Hana Zamrazilová
+- Maria Elisa Zapata
+- Abdul Hamid Zargar
+- Ko Ko Zaw
+- Tomasz Zdrojewski
+- Kristyna Zejglicova
+- Tajana Zeljkovic Vrkic
+- Yi Zeng
+- Luxia Zhang
+- Zhen-Yu Zhang
+- Dong Zhao
+- Ming-Hui Zhao
+- Wenhua Zhao
+- Shiqi Zhen
+- Wei Zheng
+- Yingfeng Zheng
+- Bekbolat Zholdin
+- Maigeng Zhou
+- Dan Zhu
+- Marie Zins
+- Emanuel Zitt
+- Yanina Zocalo
+- Julio Zuñiga Cisneros
+- Monika Zuziak
+- Majid Ezzati ([ORCID: 0000-0002-2109-8081](https://orcid.org/0000-0002-2109-8081))
+- Sarah Filippi
+
+## Response text
+
+DOI: [10.7554/eLife.60060.sa2](https://doi.org/10.7554/eLife.60060.sa2)
+
+Essential revisions:
+
+The authors have collated measured data from 9 global regions to examine changes in mean BMI and prevalence of underweight, overweight, and severe overweight categories among adults between 1985 and 2016. The key questions are how much change in mean BMI explains changing category prevalences over the period, and how these effects vary by region. The analysis is potentially informative and interesting, but concerns were raised that the best approach to answering the question is not used, primarily due to reliance upon means and categorical outcomes to assess distribution shape changes. It is not apparent how the data and interpretation would substantially change understanding or practice.
+
+As the reviewers and Editors correctly point out, it is possible to describe distributional change through other approaches – for example reporting changes in its second and third moments (standard deviation and skewness) or in different quantiles of distribution. However, these approaches generate results that are internal to the distribution for each study. As a result, the results are neither comparable across regions, nor map to clinical and epidemiological measures such as underweight and obesity. As we state in the paper’s Introduction, our aim was to understand how much change in underweight and obesity, which are commonly used to make clinical and public health decisions, are driven by change in population mean vs. change in the shape of the distribution. As we state in the Introduction, understanding the relative contributions of these mechanisms has public health implications. Specifically, our finding that change in mean BMI contributed to the majority of change in the prevalence of underweight, obesity and severe obesity argues for population-wide approaches as opposed to clinical management of high-risk individuals (subsection “Study design”).
+
+One main comment is that the conclusion (i.e, the heterogeneity of the association between mean and distribution) is not quite clearly communicated, and secondly what does this mean? The authors should expand substantially on detailing the nature of this heterogeneity and its implications at the country-specific level perhaps by reviewing the epidemiologic evolution of the BMI. Without that the paper does not add much to the "overall" knowledge on this subject which has been explored before as a critical observation that was missed. While the authors cite those papers, besides taking that to scale with more data there is not much that is novel in terms of the idea per se. Another issue is the "heterogeneity" in the data source itself that introduces considerable measurement noise which, in turn, can influence the variance or change in the parameter with respect to the distribution.
+
+As the comment correctly states, previous studies have used a small number of surveys in one or a few countries and reported, graphically or with summary statistics, how the distribution may have shifted or changed. Using a small number of data sources gives an impression of precision in measured change compared to using a larger number of data sources. This is not the same as less “measurement noise” but rather overlooking the fact that each single study is only a sample of the world. By pooling a large number of data sources, we get much closer to more valid estimates of how much distributional shift and change have contributed to changing prevalence.
+
+Our paper is novel and important because of both the unprecedented scale of data, and because it is (to our knowledge) the first ever to report and compare the contributions of distributional shift vs. change to changes in underweight and obesity prevalence for all regions of the world. The specific size of these contributions, and their variations across regions, is a major new result.
+
+In addition to these contributions, as raised by this comment, our analysis allowed for the relationship between underweight/obesity prevalence and mean BMI to vary across regions by including interactions between region and mean BMI (subsection “Statistical methods”). These results are in Supplementary files 1 and 2 of the revised paper but had not been explicitly stated in the paper. We have added a new section on the association between prevalence and mean, and its inter-region variability (subsection “Associations of underweight, obesity and severe obesity prevalence with mean BMI”).
+
+1) Given access to the individual-level data, why were distribution characteristics not examined in the continuous data, e.g. using percentiles? Using classification data adds another source of error (misclassification) that depends on choice of cut-points (recognizing that consistent criteria were used across studies). If the authors did not have access to individual ht/wt data, but only mean BMI and prevalences of weight categories from each of the data sources, this should be clarified.
+
+As stated above, we could have used continuous data to report changes in its second and third moments or in different quantiles of distribution. However, these approaches generate results that are internal to the distribution for each region. While these alternatives are statistically as valid as our approach, they are neither comparable across regions, nor do they map to clinical and epidemiological measures such as underweight and obesity. In contrast, underweight and obesity are measures that are used for clinical and public health purposes, and reported in virtually every policy report. If of interest, we would be happy to also report some information on changes in measures such as standard deviation (Author response image 1) and skewness (Author response image 2) emphasising with the above caveat that these are not directly related to underweight and obesity.
+
+Each point shows one age-sex group in one study. The size of each point is proportional to its sample size. Colour for each point indicates the region it is from.
+
+Each point shows one age-sex group in one study. The size of each point is proportional to its sample size. Colour for each point indicates the region it is from.
+
+2) Discussion – related to the above, is it unclear why visual examination of distribution changes was not possible. With 2 sexes, 2 age groups, and 9 regions, the numbers do not seem excessive to examine distributions.
+
+Studies that visually inspect distributions often use 2 or 3 data sources. However, our usage of over 2,800 makes it impossible to make visual comparisons as seen in Author response image 3 for one age group.
+
+Each curve is a single study and the colour indicates its year from 1985 to 2019.
+
+3) The authors discuss how changes in prevalence are accounted for by changes in mean BMI, but because the mean is disproportionately affected by extreme values, could causality not go in the other direction with the mean being affected by changes in the tails?
+
+Author response image 4 shows a comparison of mean and median in those studies for which we had data on median (~70% of all the studies used for the analysis). As seen in the figure, they are highly correlated (correlation coefficient ≥ 0.98 for all age groups and genders) indicating that while this issue is theoretically possible, in practice it does not affect our analysis.
+
+Each point represents a sex-age group in a study conducted between 1985 and 2019.
+
+4) Discussion, first sentence of the last paragraph – this sentence seems to state a tautology. The remainder of the paragraph, while perhaps noteworthy and true, does not seem to be data-based from this analysis. Perhaps a clearer link to the data is needed.
+
+We have reworded to more directly relate to our results as appropriately suggested (Discussion).
+
+5) Subsection “Statistical methods”, last paragraph – again, related to issues of what data were available, this paragraph states mean BMI were derived from a previous publication and not calculated from the pooled data.
+
+This is a good point which we have clarified at the beginning of the subsection ”Data sources”. In brief, we used original data – directly in the first step of the analysis and after fitting a Bayesian model in the second step.

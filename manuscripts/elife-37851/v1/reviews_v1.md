@@ -1,0 +1,55 @@
+# Peer review - Round 1
+
+Editors:
+- Harinder Singh, University of Cincinnati United States
+
+Reviewers:
+- Martin Howard, John Innes Centre United Kingdom
+
+## Review text
+
+DOI: [10.7554/eLife.37851.037](https://doi.org/10.7554/eLife.37851.037)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article “A stochastic epigenetic switch controls the dynamics of T-cell lineage commitment”. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. We find your work to be of strong interest for publication in eLife after suitable revision. Key issues that should be addressed in your revised text are found in the critiques below. In particular, the mathematical modeling and your interpretation of the in vivo and in vitro results (see comments below) require a more thorough as well as nuanced elaboration with suitable discussion of the limitations. Importantly, no additional experimental work is being requested by us.
+
+Reviewer 1:
+
+This manuscript aims at addressing the interplay between genetic and epigenetic regulation in thymocyte development. More specifically, the dynamics of expression of Bcl11b (a key transcription factor for T cell differentiation). The study relies on a two-color scheme whereby two BAC are engineered to express Bcl11b with distinguishable fluorescent reporter (with or without editing of enhancer regions). These constructs enable the authors to readily separate trans-effect (e.g. driven by the expression of transcription factors) from cis-effect (e.g. driven by chromatin changes and epigenetic regulation at the level of each individual chromosome). This experimental tour-de-force is novel and provides very striking quantitative results about the dynamics and heterogeneity of gene transcription in primary cells.
+
+However, there are three experimental features that the authors fail to account for in their modeling effort. First, the time dynamics of the bi-allelic expression of Bcl11b seems to plateau around 20hr, while the mono-allelic graphs are still rising (Figure 4A). Second, the heterogeneity in bi-allelic gene expression appears to differ between stage DN2B and stage DN3 (going from very heterogeneous to very correlated). Third, there is a long time delay in bi-allelic expression, with a sharp increase around 20hr. All observations do not jive well with the "simple / stationary" biochemical models proposed in this study.
+
+Overall, the model fitting in the paper is a bit underwhelming: none of the proposed models clearly recapitulates the qualitative dynamics of bi-allelic expression in Figure 4A. The authors do convincingly rule out a cis-only model (the independence of each allele would not allow for high frequency of bi-allelic expression); yet, both sequential trans-cis and parallel trans-cis do not capture the plateau in bi-allelic expression (a fit of the second moment is not attempted: it could have emphasize the discrepancy between model and experimental data).
+
+There exist better statistical tests that the authors should apply to improve on model assessment. The authors do not describe sufficiently how they compute the p significance of their model.
+
+A proper handling of the Chi-square test would require the accounting of experimental errors in order to assess whether the fitted models is within statistical bounds. Moreover, a Box-Jenkins test would demonstrate that the stationary trans-cis models fail to capture the richer aspect of the experimental measurements (current models yield strongly time-correlated residuals). Both statistical tests would most likely reject the present model and give license to the authors to explore more complex models of gene regulation of these Bcl11b construct.
+
+One overlooked aspect and complication for the system under study is that the expression of Bcl11b over long timescales (>10 hr) must drive the thymocytes to differentiate and to alter their genetic/epigenetic regulation. In the context of explaining the transition towards bi-allelic expression, this differentiation may imply a slowing down of the second step. In other words, one could have one rate kC to transition to mono-allelic expression, and a smaller rate k'C to transition from mono- to bi-allelic expression. This might tackle the plateau but still would not explain the time delay for bi-allelic expression. Again, I would encourage the authors to explore more complex models using better statistical tests: this would enable them to, at least, propose better accounting of their experimental data. Depending on what model improves on data fitting, further experimental validation may or may not be warranted (it might be beyond the scope of the present work).
+
+Overall, this is a very interesting study presenting new quantitative observations about the dynamics of Bcl11b expression in developing thymocytes. I would encourage the authors to improve their modeling to deliver a better understanding of the competition between cis- and trans-effect for gene regulation at the chromosome level.
+
+Reviewer 2:
+
+In this study the authors engineered a dual-color reporter mouse, where the two Bcl11b copies were tagged with distinct fluorescent proteins followed by live cell imaging in order to examine Bcl11b dynamics in T cell progenitor cells. The authors use multiple approaches, including perturbation experiments to identify the contributions of cis- and trans-acting inputs that modulate Bcl11b expression. The analyses show that intrinsically stochastic events that occur at single Bcl11b alleles dictate the timing and outcome of T lineage cell fate decisions.
+
+This is an elegant study revealing how a distal regulatory genomic region controls the rate of epigenetic regulation, plausibly involving E-proteins and non-coding transcription, whereas in a separate mode of regulation through a distinct pathway (Notch signaling), Bcl11b enhancer activity is induced.
+
+The findings are very interesting. The data indicate a very long activation time constant associated with all-or-none irreversible activities. I think this reflects the repositioning of the Bcl11b locus from the lamina to the nuclear interior. The authors kind of discuss this possibility but it could be described more precisely. Along the same line the authors note "As Bcl11b turn on, its promoter establishes new contacts with the distal enhancer, resulting in de novo formation of an altered topological domain…". I think it is the other way around.
+
+First there is a change in conformation soon followed by activation of Bcl11b expression once the locus has repositioned. Of course I might be mistaken about this but the authors may want to discuss these possibilities in greater detail.
+
+Reviewer 3:
+
+In this manuscript, the authors investigate the epigenetic switch controlling activation of Bcl11b, a key gene in T-cell fate commitment. In particular, they develop a two-colour labelling approach which allows them to distinguish between cis and trans regulation. In combination with mathematical modelling, they conclude that Bcl11b activation dynamics contains parallel cis and trans activating steps, with the cis steps controlled by a distal enhancer, while the trans steps are Notch-dependent. Overall, I found this to be an elegant and very insightful manuscript that makes substantial progress on the central, but little studied, question of cis versus trans regulatory control in cell fate decision making. The mathematical modelling is also very effectively integrated into the story to allow decisive conclusions to be made on the arrangement of the cis and trans regulatory logic. I am therefore very much in favour of publication in eLife subject to some amendments.
+
+• To my knowledge, the only other system to have been sufficiently studied to say anything in detail about the cis/trans logic is the FLC silencing system in Arabidopsis. I think it would be insightful to compare and contrast the two systems in more detail. FLC incorporates a cold-induced upstream trans upregulation, followed by two sequential cis steps (nucleation and spreading), where again the first cis step is very slow and stochastic. This Polycomb silencing system is in contrast to the parallel cis/trans activating switch at Bcl11b. Clearly there will be variety in the choice of cis/trans control and probably these two arrangements are just scratching the surface of the possible switching set-ups. But can the authors nevertheless comment more on the advantages of the particular trans/cis circuitry that appears to be implemented at Bcl11b? With regard to FLC, I would also cite Yang et al., 2017, as that is the only other paper to my knowledge to implement two colour labelling with the goal of distinguishing cis/trans regulation.
+
+• In the section where modelling is used to probe the function of Notch, I found the intuition for why perturbing the cis/trans steps changed the ratio of mono- versus bi-allelic expressing cells to be unclear. Could this be made clearer?
+
+Reviewing Editor:
+
+How well does the in vitro culture system that images individual DN2 cells as they divide and differentiate in the OP-9 system capture the developmental and gene dynamics of these cells in their thymic niche?
+
+In Figure 1 using their dual Bcl11b reporter system the authors show that DN2A progenitors in the mouse thymus are heterogeneous, approx. 30% manifest mono-allelic whereas approx. 40% evidence bi-allelic expression. DN2B cells, in contrast manifest predominantly bi-allelic expression (98%). There are two distinct interpretations of these initial observations. (i) DN2A cells undergo stochastic mono-allelic activation of Bcl11b and then go on to activate the second allele. (ii) the DN2A compartment is heterogeneous in its induction of Bcl11b with 40% of the cells simultaneously inducing both alleles and 30% of the cells exhibiting mono-allelic expression. The former cells are at a developmental advantage and outcompete the others in the DN2b compartment. If the latter interpretation is correct then it would suggest that in vivo the simultaneous bi-allelic activation path is favored. Furthermore the in vitro system being used to analyze the developmental activation of Bcl11b alleles favors the less efficient developmental path that DN2a cells can undertake. Another observation that seems to support this interpretation is that in vivo DN2a cells are suggested to convert into DN2b in three days and this is associated with consolidation of bi-allelic expression of Bcl11b. Figure 2D shows that even after 95 hr in culture approx. 60% of the DN2a cells have either failed to induce Bcl11b or manifest mono-allelic expression. Thus, it is possible that the in vitro system is biased toward the less efficient or minor developmental trajectory that the cells undertake in the thymus.

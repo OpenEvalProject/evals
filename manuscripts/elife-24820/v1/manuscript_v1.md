@@ -1,0 +1,21 @@
+# A synthetic planar cell polarity system reveals localized feedback on Fat4-Ds1 complexes
+
+## Authors
+
+- Olga Loza<sup>1</sup>
+- Idse Heemskerk<sup>2</sup>
+- Nadav Gordon-Bar<sup>1</sup>
+- Liat Amir-Zilberstein<sup>1</sup>
+- Yunmin Jung<sup>1</sup>
+- David Sprinzak<sup>1</sup> ([ORCID: 0000-0001-6776-6957](https://orcid.org/0000-0001-6776-6957)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Molecular Biology Tel Aviv University Tel Aviv Israel
+2. Department of Biosciences Rice University Houston United States
+
+† Corresponding author
+
+## Abstract
+
+The atypical cadherins Fat and Dachsous (Ds) have been found to underlie planar cell polarity (PCP) in many tissues. Theoretical models suggest that polarity can arise from localized feedbacks on Fat-Ds complexes at the cell boundary. However, there is currently no direct evidence for the existence or mechanism of such feedbacks. To directly test the localized feedback model, we developed a synthetic biology platform based on mammalian cells expressing the human Fat4 and Ds1. We show that Fat4-Ds1 complexes accumulate on cell boundaries in a threshold-like manner and exhibit dramatically slower dynamics than unbound Fat4 and Ds1. This suggests a localized feedback mechanism based on enhanced stability of Fat4-Ds1 complexes. We also show that co-expression of Fat4 and Ds1 in the same cells is sufficient to induce polarization of Fat4-Ds1 complexes. Together, these results provide direct evidence that localized feedbacks on Fat4-Ds1 complexes can give rise to PCP.

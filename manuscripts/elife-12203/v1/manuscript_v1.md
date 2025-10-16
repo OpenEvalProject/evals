@@ -1,0 +1,25 @@
+# Rho-associated kinase (ROCK) function is essential for cell cycle progression, senescence and tumorigenesis
+
+## Authors
+
+- Sandra Kümper †
+- Faraz K Mardakheh
+- Afshan McCarthy
+- Maggie Yeo
+- Gordon W Stamp
+- Angela Paul
+- Jonathan Worboys
+- Amine Sadok
+- Claus Jørgensen
+- Sabrina Guichard
+- Christopher J Marshall
+
+### Affiliations
+
+1. Division of Cancer Biology Institute of Cancer Research London United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Rho-associated kinases 1 and 2 (ROCK1/2) are Rho-GTPase effectors that control key aspects of the actin cytoskeleton, but their role in proliferation and cancer initiation or progression is not known. Here we provide evidence that ROCK1 and ROCK2 act redundantly to maintain actomyosin contractility and cell proliferation and that their loss leads to cell-cycle arrest and cellular senescence. This phenotype arises from down-regulation of the essential cell-cycle proteins CyclinA, CKS1 and CDK1. Accordingly, while loss of either Rock1 or Rock2 had no negative impact on tumorigenesis in mouse models of non-small cell lung cancer and melanoma, loss of both blocked tumor formation, as no tumors arise in which both Rock1 and Rock2 have been genetically deleted. Our results reveal an indispensable role for ROCK, yet redundant role for isoforms 1 and 2, in cell cycle progression and tumorigenesis, possibly through the maintenance of cellular contractility.

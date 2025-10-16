@@ -1,0 +1,19 @@
+# Axial contraction and short-range compaction of chromatin synergistically promote mitotic chromosome condensation
+
+## Authors
+
+- Tom Kruitwagen
+- Annina Denoth-Lippuner
+- Bryan J Wilkins
+- Heinz Neumann
+- Yves Barral †
+
+### Affiliations
+
+1. Institute of Biochemistry, Department of Biology Eidgenössische Technische Hochschule Zürich Zürich Switzerland yves.barral@bc.biol.ethz.ch
+
+† Corresponding author
+
+## Abstract
+
+The mitotic segregation of chromosomes requires their extensive folding into units of manageable size. Here, we report on how phosphorylation at serine 10 of histone H3 contributes to this process. We developed a fluorescence-based assay to study local compaction of chromatin in living yeast cells and show that chromosome condensation entails two temporally and mechanistically independent processes. Initially, nucleosome-nucleosome interactions triggered by phosphorylation of S10 on H3 and deacetylation of K16 on histone H4 promote short-range compaction of chromatin during early mitosis. Subsequently, condensin mediates the axial contraction of chromosome arms, peaking in late anaphase. Whereas defects in chromatin compaction did not impair axial contraction and condensin inactivation did not affect short-range chromatin compaction, inactivation of both pathways caused synergistic defects in chromosome segregation and cell viability. Interestingly, both pathways rely on the deacetylase Hst2, suggesting that Hst2 coordinates chromatin compaction and axial contraction to shape mitotic chromosomes.

@@ -1,0 +1,18 @@
+# Gap junctions deliver malonyl-CoA from soma to germline to support embryogenesis in Caenorhabditis elegans
+
+## Authors
+
+- Todd A Starich<sup>1</sup>
+- Xiaofei Bai<sup>2</sup> ([ORCID: 0000-0001-8179-8162](https://orcid.org/0000-0001-8179-8162))
+- David Greenstein<sup>1</sup> ([ORCID: 0000-0001-8189-2087](https://orcid.org/0000-0001-8189-2087)) †
+
+### Affiliations
+
+1. Genetics, Cell Biology, and Development University of Minnesota Minneapolis United States
+2. National Institute of Diabetes and Digestive and Kidney Diseases, National Institutes of Health Bethesda United States
+
+† Corresponding author
+
+## Abstract
+
+Gap junctions are ubiquitous in metazoans and play critical roles in important biological processes, including electrical conduction and development. Yet, only a few defined molecules passing through gap junction channels have been linked to specific functions. We isolated gap junction channel mutants that reduce coupling between the soma and germ cells in the C. elegans gonad. We provide evidence that malonyl-CoA, the rate-limiting substrate for fatty acid synthesis (FAS), is produced in the soma and delivered through gap junctions to the germline; there it is used in fatty acid synthesis to critically support embryonic development. Separation of malonyl-CoA production from its site of utilization facilitates somatic control of germline development. Additionally, we demonstrate that loss of malonyl-CoA production in the intestine negatively impacts germline development independently of FAS. Our results suggest that metabolic outsourcing of malonyl-CoA may be a strategy by which the soma communicates nutritional status to the germline.

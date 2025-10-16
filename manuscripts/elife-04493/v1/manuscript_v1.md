@@ -1,0 +1,18 @@
+# Neuron hemilineages provide the functional ground plan for the Drosophila ventral nervous system
+
+## Authors
+
+- Robin M Harris
+- Barret D Pfeiffer
+- Gerald M Rubin
+- James W Truman †
+
+### Affiliations
+
+1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States trumanj@janelia.hhmi.org
+
+† Corresponding author
+
+## Abstract
+
+Drosophila central neurons arise from neuroblasts that generate neurons in a pair-wise fashion, with the two daughters providing the basis for distinct A and B hemilineage groups. Thirty three postembryonically-born hemilineages contribute over 90% of the neurons in each thoracic hemisegment. We devised genetic approaches to define the anatomy of most of these hemilineages and to assessed their functional roles using the heat-sensitive channel dTRPA1. The simplest hemilineages contained local interneurons and their activation caused tonic or phasic leg movements lacking interlimb coordination. The next level was hemilineages of similar projection cells that drove intersegmentally coordinated behaviors such as walking. The highest level involved hemilineages whose activation elicited complex behaviors such as takeoff. These activation phenotypes indicate that the hemilineages vary in their behavioral roles with some contributing to local networks for sensorimotor processing and others having higher order functions of coordinating these local networks into complex behavior.

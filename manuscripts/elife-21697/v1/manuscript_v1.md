@@ -1,0 +1,21 @@
+# Loss of Dnmt3a and Dnmt3b does not affect epidermal homeostasis but promotes squamous transformation through PPAR-γ
+
+## Authors
+
+- Lorenzo Rinaldi<sup>1</sup>
+- Alexandra Avgustinova<sup>1</sup>
+- Mercé Martin<sup>1</sup>
+- Debayan Datta<sup>1</sup>
+- Guiomar Solanas<sup>1</sup>
+- Neus Prats<sup>1</sup>
+- Salvador Aznar Benitah<sup>1</sup> ([ORCID: 0000-0002-9059-5049](https://orcid.org/0000-0002-9059-5049)) †
+
+### Affiliations
+
+1. Institute for Research in Biomedicine The Barcelona Institute of Science and Technology Barcelona Spain
+
+† Corresponding author
+
+## Abstract
+
+The DNA methyltransferase Dnmt3a suppresses tumorigenesis in models of leukemia and lung cancer. Conversely, deregulation of Dnmt3b is thought to generally promote tumorigenesis. However, the role of Dnmt3a and Dnmt3b in many types of cancer remains undefined. Here we show that Dnmt3a and Dnmt3b are dispensable for homeostasis of the murine epidermis. However, loss of Dnmt3a-but not Dnmt3b-increases the number of carcinogen-induced squamous tumors, without affecting tumor progression. Only upon combined deletion of Dnmt3a and Dnmt3b, squamous carcinomas become more aggressive and metastatic. Mechanistically, Dnmt3a promotes the expression of epidermal differentiation genes by interacting with their enhancers, and inhibits the expression of lipid metabolism genes, including PPAR-γ, by directly methylating their promoters. Importantly, inhibition of PPAR-γ partially prevents the increase in tumorigenesis upon deletion of Dnmt3a. Altogether, we demonstrate that Dnmt3a and Dnmt3b protect the epidermis from tumorigenesis, and that squamous carcinomas are sensitive to inhibition of PPAR-γ.

@@ -1,0 +1,17 @@
+# Continuous lateral oscillations as a core mechanism for taxis in Drosophila larvae
+
+## Authors
+
+- Antoine Wystrach<sup>1</sup>
+- Konstantinos Lagogiannis<sup>1</sup> ([ORCID: 0000-0001-9349-801X](https://orcid.org/0000-0001-9349-801X)) †
+- Barbara Webb<sup>1</sup>
+
+### Affiliations
+
+1. School of Informatics University of Edinburgh Edinburgh United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Taxis behaviour in Drosophila larva is thought to consist of distinct control mechanisms triggering specific actions. Here we support a simpler hypothesis: that taxis results from direct sensory modulation of continuous lateral oscillations of the anterior body, sparing the need for 'action selection'. Our analysis of larvae motion reveals a rhythmic, continuous lateral oscillation of the anterior body, encompassing all head-sweeps, small or large, without breaking the oscillatory rhythm. Further, we show that an agent-model that embeds this hypothesis reproduces a surprising number of taxis signatures observed in larvae. Also, by coupling the sensory input to a neural oscillator in continuous time, we show that the mechanism is robust and biologically plausible. The mechanism provides a simple architecture for combining information across modalities, and explaining how learnt associations modulate taxis. We discuss the results in the light of larval neural circuitry and make testable predictions.

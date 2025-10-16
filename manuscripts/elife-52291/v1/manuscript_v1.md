@@ -1,0 +1,19 @@
+# Misfolded proteins bind and activate death receptor 5 to induce apoptosis during unresolved endoplasmic reticulum stress
+
+## Authors
+
+- Mable Lam<sup>1</sup> ([ORCID: 0000-0001-7016-2257](https://orcid.org/0000-0001-7016-2257))
+- Scot A Marsters<sup>2</sup>
+- Avi Ashkenazi<sup>2</sup> ([ORCID: 0000-0002-6890-4589](https://orcid.org/0000-0002-6890-4589)) †
+- Peter Walter<sup>1</sup> ([ORCID: 0000-0002-6849-708X](https://orcid.org/0000-0002-6849-708X)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Biophysics Howard Hughes Medical Institute , University of California, San Francisco San Francisco United States
+2. Cancer Immunology Genentech, Inc South San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+Disruption of protein folding in the endoplasmic reticulum (ER) activates the unfolded protein response (UPR)—a signaling network that ultimately determines cell fate. Initially, UPR signaling aims at cytoprotection and restoration of ER homeostasis; that failing, it drives apoptotic cell death. ER stress initiates apoptosis through intracellular activation of death receptor 5 (DR5) independent of its canonical extracellular ligand TRAIL; however, the mechanism underlying DR5 activation is unknown. In cultured human cells, we find that misfolded proteins can directly engage with DR5 in the ER-Golgi intermediate compartment, where DR5 assembles pro-apoptotic caspase 8-activating complexes. Moreover, peptides used as a proxy for exposed misfolded protein chains selectively bind to the purified DR5 ectodomain and induce its oligomerization. These findings indicate that misfolded proteins can act as ligands to activate DR5 intracellularly and promote apoptosis. We propose a model in which cells use DR5 as a terminal protein-folding checkpoint before committing to a terminal apoptotic fate.

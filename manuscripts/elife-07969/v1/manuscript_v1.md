@@ -1,0 +1,20 @@
+# Mapping influenza transmission in the ferret model to transmission in humans
+
+## Authors
+
+- Michael G Buhnerkempe †
+- Katelyn Gostic
+- Miran Park
+- Prianna Ahsan
+- Jessica A Belser
+- James O Lloyd-Smith
+
+### Affiliations
+
+1. Department of Ecology and Evolutionary Biology University of California, Los Angeles Los Angeles United States
+
+† Corresponding author
+
+## Abstract
+
+The controversy surrounding 'gain-of-function' experiments on high-consequence avian influenza viruses has highlighted the role of ferret transmission experiments in studying the transmission potential of novel influenza strains. However, the mapping between influenza transmission in ferrets and in humans is unsubstantiated. We address this gap by compiling and analyzing 240 estimates of influenza transmission in ferrets and humans. We demonstrate that estimates of ferret secondary attack rate (SAR) explain 66% of the variation in human SAR estimates at the subtype level. Further analysis shows that ferret transmission experiments have potential to identify influenza viruses of concern for epidemic spread in humans, though small sample sizes and biological uncertainties prevent definitive classification of human transmissibility. Thus, ferret transmission experiments provide valid predictions of pandemic potential of novel influenza strains, though results should continue to be corroborated by targeted virological and epidemiological research.

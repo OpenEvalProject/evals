@@ -1,0 +1,16 @@
+# The p38 MAP kinase pathway modulates the hypoxia response and glutamate receptor trafficking in aging neurons
+
+## Authors
+
+- Eun Chan Park
+- Christopher Rongo †
+
+### Affiliations
+
+1. The Waksman Institute, Department of Genetics Rutgers The State University of New Jersey New Jersey United States rongo@waksman.rutgers.edu
+
+† Corresponding author
+
+## Abstract
+
+Neurons are sensitive to low oxygen (hypoxia) and employ a conserved pathway to combat its effects. Here, we show that p38 MAP Kinase (MAPK) modulates this hypoxia response pathway in C. elegans . Mutants lacking p38 MAPK components pmk-1 or sek-1 resemble mutants lacking the hypoxia response component and prolyl hydroxylase egl-9 , with impaired subcellular localization of Mint orthologue LIN-10, internalization of glutamate receptor GLR-1, and depression of GLR-1-mediated behaviors. Loss of p38 MAPK impairs EGL-9 protein localization in neurons and activates the hypoxia-inducible transcription factor HIF-1, suggesting that p38 MAPK inhibits the hypoxia response pathway through EGL-9. As animals age, p38 MAPK levels decrease, resulting in GLR-1 internalization; this age-dependent downregulation can be prevented through either p38 MAPK overexpression or removal of CDK-5, an antagonizing kinase. Our findings demonstrate that p38 MAPK inhibits the hypoxia response pathway and determines how aging neurons respond to hypoxia through a novel mechanism.

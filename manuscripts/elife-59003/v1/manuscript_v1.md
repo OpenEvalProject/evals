@@ -1,0 +1,21 @@
+# Extensive and spatially variable within-cell-type heterogeneity across the basolateral amygdala
+
+## Authors
+
+- Timothy P O'Leary<sup>1</sup>
+- Kaitlin E Sullivan<sup>1</sup>
+- Lihua Wang<sup>2</sup>
+- Jody Clements<sup>2</sup>
+- Andrew L Lemire<sup>2</sup>
+- Mark S Cembrowski<sup>1</sup> ([ORCID: 0000-0001-8275-7362](https://orcid.org/0000-0001-8275-7362)) †
+
+### Affiliations
+
+1. Cellular and Physiological Sciences University of British Columbia Vancouver Canada
+2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
+
+† Corresponding author
+
+## Abstract
+
+The basolateral amygdala complex (BLA), extensively connected with both local amygdalar nuclei as well as long-range circuits, is involved in a diverse array of functional roles. Understanding the mechanisms of such functional diversity will be greatly informed by understanding the cell-type-specific landscape of the BLA. Here, beginning with single-cell RNA sequencing, we identified both discrete and graded continuous gene-expression differences within the mouse BLA. Via in situ hybridization, we next mapped this discrete transcriptomic heterogeneity onto a sharp spatial border between the basal and lateral amygdala nuclei, and identified continuous spatial gene-expression gradients within each of these regions. These discrete and continuous spatial transformations of transcriptomic cell-type identity were recapitulated by local morphology as well as long-range connectivity. Thus, BLA excitatory neurons are a highly heterogenous collection of neurons that spatially covary in molecular, cellular, and circuit properties. This heterogeneity likely drives pronounced spatial variation in BLA computation and function.

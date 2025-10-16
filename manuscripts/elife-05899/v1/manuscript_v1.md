@@ -1,0 +1,16 @@
+# Non-allelic gene conversion enables rapid evolutionary change at multiple regulatory sites encoded by transposable elements
+
+## Authors
+
+- Christopher E Ellison
+- Doris Bachtrog †
+
+### Affiliations
+
+1. Department of Integrative Biology University of California, Berkeley Berkeley United States dbachtrog@berkeley.edu
+
+† Corresponding author
+
+## Abstract
+
+Transposable elements (TEs) allow rewiring of regulatory networks, and the recent amplification of the ISX-element dispersed 77 functional but suboptimal binding-sites for the dosage-compensation-complex to a newly-formed X-chromosome in Drosophila. Here we identify two linked refining-mutations within ISX that interact epistatically to increase binding affinity to the dosage-compensation-complex. Selection has increased the frequency of this derived haplotype in the population, which is fixed at 30% of ISX-insertions and polymorphic among another 41%. Sharing of this haplotype indicates that high levels of gene-conversion among ISX-elements allow them to 'crowd-source' refining-mutations, and a refining-mutation that occurs at any single ISX-element can spread in two dimensions: horizontally across insertion sites by non-allelic gene-conversion, and vertically through the population by natural selection. These describes a novel route how fully functional regulatory elements can arise rapidly from TEs and implicate non-allelic gene-conversion as having an important role in accelerating the evolutionary fine-tuning of regulatory networks.

@@ -1,0 +1,18 @@
+# Drosophila Hedgehog can act as a morphogen in the absence of regulated Ci processing
+
+## Authors
+
+- Jamie C Little<sup>1</sup>
+- Elisa Garcia-Garcia<sup>1</sup>
+- Amanda Sul<sup>1</sup>
+- Daniel Kalderon<sup>1</sup> ([ORCID: 0000-0002-2149-0673](https://orcid.org/0000-0002-2149-0673)) †
+
+### Affiliations
+
+1. Biological Sciences Columbia University New York United States
+
+† Corresponding author
+
+## Abstract
+
+Extracellular Hedgehog (Hh) proteins induce transcriptional changes in target cells by inhibiting the proteolytic processing of full-length Drosophila Ci or mammalian Gli proteins to nuclear transcriptional repressors and by activating the full-length Ci or Gli proteins. We used Ci variants expressed at physiological levels to investigate the contributions of these mechanisms to dose-dependent Hh signaling in Drosophila wing imaginal discs. Ci variants that cannot be processed supported a normal pattern of graded target gene activation and the development of adults with normal wing morphology, when supplemented by constitutive Ci repressor, showing that Hh can signal normally in the absence of regulated processing. The processing-resistant Ci variants were also significantly activated in the absence of Hh by elimination of Cos2, likely acting through binding the CORD domain of Ci, or PKA, revealing separate inhibitory roles of these two components in addition to their well-established roles in promoting Ci processing.

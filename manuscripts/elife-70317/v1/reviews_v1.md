@@ -1,0 +1,31 @@
+# Peer review - Round 1
+
+Editors:
+- Gordon J Berman, Emory University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.70317.sa1](https://doi.org/10.7554/eLife.70317.sa1)
+
+Our editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.
+
+Acceptance summary:
+
+Over the past two decades, the Drosophila larva has proven to be an advantageous system to study the neural basis of memory and its effects on orientation behavior. While larvae clearly learn, this behavior has been mostly characterized through en masse assays. To this date, it has been extremely difficult – if not impossible – to characterize learning at the level of single larvae. Here the authors present a tour-de-force assay, controlling the frequency and the exact timing of the presentation of the conditioned and unconditioned signals. With their new assay, they demonstrate the switch-like nature of learning in individual larvae, an important finding. Their work revisits multiple aspects of the theory of associative learning in the Drosophila larva, including the role of repeated training, the emergence of memory extinction, and the overnight consolidation of memory. This manuscript will have a major impact on the field of memory and learning in Drosophila and in the field more broadly.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Switch-like and persistent memory formation in individual Drosophila larvae" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed their reviews with one another, and they were generally enthusiastic about the work's technical achievements and its connections to our understanding and memory. There were several areas where the work could improve, however, and the Reviewing Editor has drafted the following revisions to help you prepare a revised submission.
+
+Essential revisions:
+
+1. The choice of CO2 as a CS is both a curse and a blessing. The experimentalists must overcome innate avoidance of the signal, instead of the value of the signal being neutral to a naive animal. The authors speculate that the conditioning here is through inhibition of avoidance, and the picture they try to build (and it would be useful to have this as a simple mathematical model, rather than just a picture) is that an unconditioned optogenetic stimulus decreases avoidance of the conditioned stimulus. This is not the standard Pavlovian scheme, where, traditionally, positive reinforcement increases preferences (+/++) and negative reinforcement increases avoidance (-/+-) or decreases preference (-/-+). Instead, it's an unusual structure where positive reinforcement decreases avoidance (+/--). This is uncommon -- and results in precisely the same behavior limitations that the authors noted: the most one can do is to decrease avoidance to zero, and then the subsequent presentation of CS/US pairs does not lead to the emergence of the preference. The reviewers thought that the manuscript would become stronger if the authors tried to speculate what aspects of the animal's ecology would make this uncommon functional organization favored.
+
+2. Potentially, a bigger issue is that the training in these experiments lasts for a very short time (from 30 s to 15 min or so), while the readout of the behavioral preference takes an hour, during which many unrewarded presentations of CS happen. In the paper, the authors themselves show that unrewarded CS presentations lead to a reduction in the behavioral response (Figure 3), to the point that overnight memory consolidation is not observed (Figure 4). Thus this long scale of the assay compared to the time scale of dynamics of the learning and extinction themselves makes interpretation of the findings very hard, at least for me. For example, is the 50% maximum choice of CO2 due to the animal not being able to establish the preference to it (and only being able to suppress the avoidance), or is it because the animal establishes a strong preference, which then gets partially washed away during the one hour of testing? There are a few ways that this and similar concerns can be addressed. First, a different assay can be established, where the preference is measured as quickly as it gets established and extinguished. Given eLife's general prohibition on asking for additional experiments, however, one could instead explore if the preference of animals does not change during the course of the testing phase. This could be done by analyzing the preference over fifteen-minute segments and checking for drift (one could even combine animals to do so). Third, one can try to establish a mathematical model of conditioning and extinction, which would account for unrewarded CS presentations, and then see whether all of the data can be explained within this model. Or maybe one can do something totally different -- but I believe that some analysis of the effects of the assay on the conditioning state must be performed.
+
+3. The authors talk about the quantized response as compared to gradual learning. This makes it seem that there are only two states that the animals can be in. But this is, in fact, unclear from the data. It's clear that there are two modes: indifferent to CO2 and avoiding it, but the modes are wide. Is there an additional signal there? Where is the width of the modes coming from? Is it simply the counting statistics of making, on average, pN out of N choices? Or are the data hiding something more interesting? This could be addressed by being a bit more careful with statistical analysis, and not treating the data as being fit by two Gaussians with arbitrary widths, but as a mixture of two Bernoulli distributions -- would such a model work? If not, then why?

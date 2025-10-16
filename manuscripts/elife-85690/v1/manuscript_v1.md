@@ -1,0 +1,17 @@
+# A pH-sensitive switch activates virulence in Salmonella
+
+## Authors
+
+- Dasvit Shetty<sup>1</sup> ([ORCID: 0000-0001-8778-3615](https://orcid.org/0000-0001-8778-3615))
+- Linda J Kenney<sup>2</sup> ([ORCID: 0000-0002-8658-0717](https://orcid.org/0000-0002-8658-0717)) †
+
+### Affiliations
+
+1. Mechanobiology Institute National University of Singapore Singapore Singapore
+2. 2Department of Biochemistry and Molecular Biology The University of Texas Medical Branch at Galveston Galveston United States
+
+† Corresponding author
+
+## Abstract
+
+The transcriptional regulator SsrB acts as a switch between virulent and biofilm lifestyles of non-typhoidal Salmonella enterica serovar Typhimurium. During infection, phosphorylated SsrB activates genes on Salmonella Pathogenicity Island-2 (SPI-2) essential for survival and replication within the macrophage. Low pH inside the vacuole is a key inducer of expression and SsrB activation. Previous studies demonstrated an increase in SsrB protein levels and DNA-binding affinity at low pH; the molecular basis was unknown (Liew et al., 2019). This study elucidates its underlying mechanism and in vivo significance. Employing single-molecule and transcriptional assays, we report that the SsrB DNA binding domain alone (SsrBc) is insufficient to induce acid pH-sensitivity. Instead, His12, a conserved residue in the receiver domain, confers pH sensitivity to SsrB allosterically. Acid-dependent DNA binding was highly cooperative, suggesting a new configuration of SsrB oligomers at SPI-2-dependent promoters. His12 also plays a role in SsrB phosphorylation; substituting His12 reduced phosphorylation at neutral pH and abolished pH-dependent differences. Failure to flip the switch in SsrB renders Salmonella avirulent and represents a potential means of controlling virulence.

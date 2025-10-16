@@ -1,0 +1,17 @@
+# Optical electrophysiology for probing function and pharmacology of voltage-gated ion channels
+
+## Authors
+
+- Hongkang Zhang
+- Elaine Reichert
+- Adam E Cohen †
+
+### Affiliations
+
+1. Departments of Chemistry and Chemical Biology and Physics Harvard University Cambridge United States cohen@chemistry.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Voltage-gated ion channels mediate electrical dynamics in excitable tissues and are an important class of drug targets. Channels can gate in sub-millisecond timescales, show complex manifolds of conformational states, and often show state-dependent pharmacology. Mechanistic studies of ion channels typically involve sophisticated voltage-clamp protocols applied through manual or automated electrophysiology. Here, we develop all-optical electrophysiology techniques to study activity-dependent modulation of ion channels, in a format compatible with high-throughput screening. Using optical electrophysiology, we recapitulate many voltage-clamp protocols and apply to Nav1.7, a channel implicated in pain. Optical measurements reveal that a sustained depolarization strongly potentiates the inhibitory effect of PF-04856264, a Nav1.7-specific blocker. In a pilot screen, we stratify a library of 320 FDA-approved compounds by binding mechanism and kinetics, and find close concordance with patch clamp measurements. Optical electrophysiology provides a favorable tradeoff between throughput and information content for studies of NaV channels, and possibly other voltage-gated channels.

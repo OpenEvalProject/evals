@@ -1,0 +1,19 @@
+# Geometric control of Myosin-II orientation during axis elongation
+
+## Authors
+
+- Matthew F Lefebvre<sup>1</sup>
+- Nikolas H Claussen<sup>1</sup>
+- Noah P Mitchell<sup>1</sup>
+- Hannah J Gustafson<sup>1</sup>
+- Sebastian J Streichan<sup>1</sup> ([ORCID: 0000-0002-6105-9087](https://orcid.org/0000-0002-6105-9087)) †
+
+### Affiliations
+
+1. Department of Physics University of California, Santa Barbara Santa Barbara United States
+
+† Corresponding author
+
+## Abstract
+
+The actomyosin cytoskeleton is a crucial driver of morphogenesis. Yet how the behavior of largescale cytoskeletal patterns in deforming tissues emerges from the interplay of geometry, genetics, and mechanics remains incompletely understood. Convergent extension in D. melanogaster embryos provides the opportunity to establish a quantitative understanding of the dynamics of anisotropic non-muscle myosin II. Cell-scale analysis of protein localization in fixed embryos suggests that gene expression patterns govern myosin anisotropy via complex rules. However, technical limitations have impeded quantitative and dynamic studies of this process at the whole embryo level, leaving the role of geometry open. Here we combine in toto live imaging with quantitative analysis of molecular dynamics to characterize the distribution of myosin anisotropy and the corresponding genetic patterning. We found pair rule gene expression continuously deformed, flowing with the tissue frame. In contrast, myosin anisotropy orientation remained approximately static, and was only weakly deflected from the stationary dorsal-ventral axis of the embryo. We propose that myosin is recruited by a geometrically defined static source, potentially related to the embryoscale epithelial tension, and account for transient deflections by cytoskeletal turnover and junction reorientation by flow. With only one parameter, this model quantitatively accounts for the time course of myosin anisotropy orientation in wild-type, twist, and even-skipped embryos as well as embryos with perturbed egg geometry. Geometric patterning of the cytoskeleton suggests a simple physical strategy to ensure a robust flow and formation of shape.

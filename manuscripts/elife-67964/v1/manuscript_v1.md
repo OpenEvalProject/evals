@@ -1,0 +1,16 @@
+# Comparison of transcriptional initiation by RNA polymerase II across eukaryotic species
+
+## Authors
+
+- Natalia Petrenko<sup>1</sup>
+- Kevin Struhl<sup>1</sup> ([ORCID: 0000-0002-4181-7856](https://orcid.org/0000-0002-4181-7856)) †
+
+### Affiliations
+
+1. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States
+
+† Corresponding author
+
+## Abstract
+
+The preinitation complex (PIC) for transcriptional initiation by RNA polymerase (Pol) II is composed of general transcription factors that are highly conserved. However, analysis of ChIP-seq datasets reveals kinetic and compositional differences in the transcriptional initiation process among eukaryotic species. In yeast, Mediator associates strongly with activator proteins bound to enhancers, but it transiently associates with promoters in a form that lacks the kinase module. In contrast, in human, mouse, and fly cells, Mediator with its kinase module stably associates with promoters, but not with activator-binding sites. This suggests that yeast and metazoans differ in the nature of the dynamic bridge of Mediator between activators and Pol II and the composition of a stable inactive PIC-like entity. As in yeast, occupancies of TBP and associated factors (Tafs) at mammalian promoters are not strictly correlated. This suggests that within PICs, TFIID is not a monolithic entity, and multiple forms of TBP affect initiation at different classes of genes. TFIID in flies, but not yeast and mammals, interacts strongly at regions downstream of the initiation site, consistent with the importance of downstream promoter elements in that species. Lastly, Taf7 and the mammalian-specific Med26 subunit of Mediator also interact near the Pol II pause region downstream of the PIC, but only in subsets of genes and often not together. Species-specific differences in PIC structure and function are likely to affect how activators and repressors affect transcriptional activity.

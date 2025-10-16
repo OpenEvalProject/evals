@@ -1,0 +1,20 @@
+# Association of lipid-lowering drugs with COVID-19 outcomes from a                    Mendelian randomization study
+
+## Authors
+
+- Wuqing Huang<sup>1</sup> ([ORCID: 0000-0002-7616-8622](https://orcid.org/0000-0002-7616-8622))
+- Jun Xiao<sup>2</sup> ([ORCID: 0000-0002-5046-5493](https://orcid.org/0000-0002-5046-5493))
+- Jianguang Ji<sup>3</sup> †
+- Liangwan Chen<sup>2</sup> ([ORCID: 0000-0002-4211-3842](https://orcid.org/0000-0002-4211-3842)) †
+
+### Affiliations
+
+1. Department of Epidemiology and                        Health Statistics Fujian Medical                        University Fuzhou China
+2. Department of Cardiovascular                        Surgery Fujian Medical University Union                        Hospital Fuzhou China
+3. Center for Primary Health Care                        Research, Department of Clinical Sciences Lund                        University Malmö Sweden
+
+† Corresponding author
+
+## Abstract
+
+Background: Lipid metabolism plays an important role                    in viral infections. We aimed to assess the causal effect of lipid-lowering                    drugs (HMGCR inhibitiors, PCSK9 inhibitiors and NPC1L1 inhibitior) on COVID-19                    outcomes using 2-sample Mendelian Randomization (MR) study. Methods: We used two kinds of genetic instruments                    to proxy the exposure of lipid-lowering drugs, including eQTLs of drugs target                    genes, and genetic variants within or nearby drugs target genes associated with                    LDL cholesterol from GWAS. Summary-data-based MR (SMR) and inverse-variance                    weighted MR (IVW-MR) were used to calculate the effect estimates. Results: SMR analysis found that a higher                    expression of HMGCR was associated with a higher risk of COVID-19                    hospitalization (OR=1.38, 95%CI=1.06-1.81). Similarly, IVW-MR analysis observed                    a positive association between HMGCR-mediated LDL cholesterol and COVID-19                    hospitalization (OR=1.32, 95%CI=1.00-1.74). No consistent evidence from both                    analyses was found for other associations. Conclusions: This 2-sample MR study suggested a                    potential causal relationship between HMGCR inhibition and the reduced risk of                    COVID-19 hospitalization. Funding: Fujian Province                    Major Science and Technology Program.

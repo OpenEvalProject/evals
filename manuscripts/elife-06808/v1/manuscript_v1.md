@@ -1,0 +1,20 @@
+# Three ancient hormonal cues co-ordinate shoot branching in a moss
+
+## Authors
+
+- Yoan Coudert
+- Wojtek Palubicki
+- Karin Ljung
+- Ondrej Novak
+- Ottoline Leyser
+- C Jill Harrison †
+
+### Affiliations
+
+1. Department of Plant Sciences University of Cambridge Cambridge United Kingdom cjh97@cam.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+Shoot branching is a primary contributor to plant architecture, evolving independently in flowering plant sporophytes and moss gametophytes. Mechanistic understanding of branching is largely limited to flowering plants such as Arabidopsis , which have a recent evolutionary origin. We show that in gametophytic shoots of Physcomitrella , lateral branches arise by re-specification of epidermal cells into branch initials. A simple model co-ordinating the activity of leafy shoot tips can account for branching patterns, and three known and ancient hormonal regulators of sporophytic branching interact to generate the branching pattern- auxin, cytokinin and strigolactone. The mode of auxin transport required in branch patterning is a key divergence point from known sporophytic pathways. Although PIN-mediated basipetal auxin transport regulates branching patterns in flowering plants, this is not so in Physcomitrella , where bi-directional transport is required to generate realistic branching patterns. Experiments with callose synthesis inhibitors suggest plasmodesmal connectivity as a potential mechanism for transport.

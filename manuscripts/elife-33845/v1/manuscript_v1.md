@@ -1,0 +1,16 @@
+# FGF mediated MAPK and PI3K/Akt Signals make distinct contributions to pluripotency and the establishment of Neural Crest
+
+## Authors
+
+- Lauren Geary<sup>1</sup>
+- Carole LaBonne<sup>1</sup> ([ORCID: 0000-0001-6001-7179](https://orcid.org/0000-0001-6001-7179)) †
+
+### Affiliations
+
+1. Department of Molecular Biosciences Northwestern University Evanston United States
+
+† Corresponding author
+
+## Abstract
+
+Early vertebrate embryos possess cells with the potential to generate all embryonic cell types. While this pluripotency is progressively lost as cells become lineage restricted, Neural Crest cells retain broad developmental potential. Here, we provide novel insights into signals essential for both pluripotency and neural crest formation in Xenopus . We show that FGF signaling controls a subset of genes expressed by pluripotent blastula cells, and find a striking switch in the signaling cascades activated by FGF signaling as cells lose pluripotency and commence lineage restriction. Pluripotent cells display and require Map Kinase signaling, whereas PI3 Kinase/Akt signals increase as developmental potential is restricted, and are required for transit to certain lineage restricted states. Importantly, retaining a high Map Kinase/low Akt signaling profile is essential for establishing Neural Crest stem cells. These findings shed important light on the signal-mediated control of pluripotency and the molecular mechanisms governing genesis of Neural Crest.

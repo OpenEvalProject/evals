@@ -1,0 +1,16 @@
+# Nonlinear circuits for naturalistic visual motion estimation
+
+## Authors
+
+- James E Fitzgerald
+- Damon A Clark †
+
+### Affiliations
+
+1. MCDB Yale University New Haven United States damon.clark@yale.edu
+
+† Corresponding author
+
+## Abstract
+
+Many animals use visual signals to estimate motion. Canonical models suppose that animals estimate motion by cross-correlating pairs of spatiotemporally separated visual signals, but recent experiments indicate that humans and flies perceive motion from higher-order correlations that signify motion in natural environments. Here we show how biologically plausible processing motifs in neural circuits could be tuned to extract this information. We emphasize how known aspects of Drosophila's visual circuitry could embody this tuning and predict fly behavior. We find that segregating motion signals into ON/OFF channels can enhance estimation accuracy by accounting for natural light/dark asymmetries. Furthermore, a diversity of inputs to motion detecting neurons can provide access to more complex higher-order correlations. Collectively, these results illustrate how non-canonical computations improve motion estimation with naturalistic inputs. This argues that the complexity of the fly's motion computations, implemented in its elaborate circuits, represents a valuable feature of its visual motion estimator.

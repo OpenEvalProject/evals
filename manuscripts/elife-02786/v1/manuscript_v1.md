@@ -1,0 +1,19 @@
+# G-protein-coupled receptor signaling and polarized actin dynamics drive cell-in-cell invasion
+
+## Authors
+
+- Vladimir Purvanov
+- Manuel Holst
+- Jameel Khan
+- Christian Baarlink
+- Robert Grosse †
+
+### Affiliations
+
+1. Institute of Pharmacology University of Marburg Marburg Germany Robert.grosse@staff.uni-marburg.de
+
+† Corresponding author
+
+## Abstract
+
+Homotypic or entotic cell-in-cell invasion is an integrin-independent process observed in carcinoma cells exposed during conditions of low adhesion such as in exudates of malignant disease.  Although active cell-in-cell invasion depends on RhoA and actin the precise mechanism as well as the underlying actin structures and assembly factors driving the process are unknown. Furthermore, whether specific cell surface receptors trigger entotic invasion in a signal-dependent fashion has not been investigated. Here we identify the G-protein-coupled LPA receptor 2 (LPAR2) as a signal transducer specifically required for the actively invading cell during entosis. We find that G12/13 and PDZ-RhoGEF are required for entotic invasion, which is driven by blebbing and a uropod-like actin structure at the rear of the invading cell. Finally, we provide evidence for an involvement of the RhoA-regulated formin Dia1 for entosis downstream of LPAR2. Thus, we delineate a signaling process that regulates actin dynamics during cell-in-cell invasion.

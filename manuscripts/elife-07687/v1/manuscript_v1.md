@@ -1,0 +1,19 @@
+# Distinct transcriptional responses elicited by unfolded nuclear or cytoplasmic protein in mammalian cells
+
+## Authors
+
+- Yusuke Miyazaki
+- Ling-chun Chen
+- Bernard W Chu
+- Tomek Swigut
+- Thomas J Wandless †
+
+### Affiliations
+
+1. Department of Chemical and Systems Biology Stanford University Stanford United States wandless@stanford.edu
+
+† Corresponding author
+
+## Abstract
+
+Eukaryotic cells possess a variety of signaling pathways that prevent accumulation of unfolded and misfolded proteins. Chief among these is the heat shock response (HSR), which is assumed to respond to unfolded proteins in the cytosol and nucleus alike. Here we probe this axiom further using engineered proteins called 'destabilizing domains', whose folding state we control with a small molecule. The sudden appearance of unfolded protein in mammalian cells elicits a robust transcriptional response, which is distinct from the HSR and other known pathways that respond to unfolded proteins. The cellular response to unfolded protein is strikingly different in the nucleus and the cytosol, although unfolded protein in either compartment engages the p53 network. This response provides cross-protection during subsequent proteotoxic stress, suggesting that it is a central component of protein quality control networks and, like the HSR, is likely to influence the initiation and progression of human pathologies.

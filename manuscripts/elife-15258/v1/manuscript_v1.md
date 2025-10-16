@@ -1,0 +1,22 @@
+# The E3 ligase Ubr3 regulates Usher syndrome and MYH9 disorder proteins in the auditory organs of Drosophila and mammals
+
+## Authors
+
+- Tongchao Li
+- Nikolaos Giagtzoglou
+- Dan Eberl
+- Sonal Nagarkar-Jaiswal
+- Tiantian Cai
+- Dorothea Godt
+- Andrew K Groves
+- Hugo J Bellen †
+
+### Affiliations
+
+1. Program in Developmental Biology Baylor College of Medicine Houston United States hbellen@bcm.edu
+
+† Corresponding author
+
+## Abstract
+
+Myosins play essential roles in the development and function of auditory organs and multiple myosin genes are associated with hereditary forms of deafness. Using a forward genetic screen in Drosophila , we identified an E3 ligase, Ubr3, as an essential gene for auditory organ development. Ubr3 negatively regulates the mono-ubiquitination of non-muscle Myosin II, a protein associated with hearing loss in humans. The mono-ubiquitination of Myosin II promotes its physical interaction with Myosin VIIa, a protein responsible for Usher syndrome type IB. We show that ubr3 mutants phenocopy pathogenic variants of Myosin II and that Ubr3 interacts genetically and physically with three Usher syndrome proteins. The interactions between Myosin VIIa and Myosin IIa are conserved in the mammalian cochlea and in human retinal pigment epithelium cells. Our work reveals a novel mechanism that regulates protein complexes affected in two forms of syndromic deafness and suggests a molecular function for Myosin IIa in auditory organs.

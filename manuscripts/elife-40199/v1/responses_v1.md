@@ -1,0 +1,33 @@
+# Author response - Round 1
+
+Authors:
+- Blake R Wilde ([ORCID: 0000-0002-8372-3954](https://orcid.org/0000-0002-8372-3954))
+- Zhizhou Ye
+- Tian-Yeh Lim
+- Donald E Ayer ([ORCID: 0000-0002-5595-3269](https://orcid.org/0000-0002-5595-3269))
+
+## Response text
+
+DOI: [10.7554/eLife.40199.025](https://doi.org/10.7554/eLife.40199.025)
+
+Essential revisions:
+
+Three areas need to be addressed in a revised manuscript:
+
+1) Address whether the effects observed could be due to inhibition of mTOR (i.e. determine the state of mTOR kinase activity and 4E-BP1 and/or S6K substrate phosphorylation under the experimental conditions used for the other studies presented in this paper, and assess whether the same effects on MondoA would be seen with an mTOR inhibitor).
+
+We have directly tested whether treatment with DMEMAcidic (~ pH 6.7) is sufficient to suppress mTORC1 activity and increase ATP levels leading to a stimulation of MondoA transcriptional activity. We show that DMEMAcidic does not substantially reduce mTORC1 activity as measured by phosphorylation of S6, even in cells treated for 8 hours in the low pH medium (Figure 3—figure supplement 1). Note that all of our experiments were performed for 4 hours or less. The paper from Walton et al. used lower pH (6.3) than we did and for longer times (8 hour treatments), perhaps accounting for the difference in experimental outcome. Further the paper from Zheng et al. does show an increase in ATP levels following almost complete mTORC1 inhibition with rapamycin. They attributed this increase in ATP to a blockade in translation, rather than an increase in mitochondrial ATP synthesis. This finding is entirely inconsistent with our data showing that MondoA transcriptional activity is strongly dependent on mitochondrial ATP synthesis. Together these data suggest the DMEMAcidic does not increase MondoA transcriptional activity by inhibition of mTORC1 and its secondary effect on cytoplasmic ATP pools.
+
+2) Address the issue of siRNAs, were multiple ones used for a given protein, and/or would siRNA to TXNIP give the same result as knockdown of MondoA.
+
+It is striking that TXNIP and its paralog ARRDC4 are the only two genes that show strong dependence on MondoA under both baseline and induced conditions (Figure 6). To begin to address the mechanism that underlies this phenomenon, we performed a MondoA ChIP-seq experiment from cells grown in DMEM or DMEMAcidic. We note that this will be the first ChIP-seq analysis for MondoA published in any cell system, which given the role of MondoA in glucose-dependent transcription is significant on its own. Our ChIP seq revealed that TXNIP and ARRDC4 are the two most highly occupied MondoA targets and not just by a little. Depending on the targets examined and the assay employed, MondoA occupies the TXNIP and ARRDC4 promoters between ~30 and ~200 fold more strongly than other targets. We provide a completely new Figure 7 with this data. This elevated binding likely explains why TXNIP and ARRDC4 expression is so highly dependent on MondoA. We note that for the next ~100 MondoA targets that rank after TXNIP and ARRDC4, only 4 are regulated more than 1.5 fold in MondoA knockout cells. Compared to ChIP studies examining occupancy of other transcription factors, MondoA binding to these sites is “strong”. We conclude that MondoA binding to this group of targets is either non-productive in terms of transcriptional activation or that these genes are only weakly dependent on MondoA. Our analysis suggests that high “affinity” MondoA binding to TXNIP and ARRDC4 is not related to a larger number of E-boxes in their promoters or whether their promoters lie in open chromatin regions. Thus, the phenomenon is clear but given the open ended nature of the experiments required to reveal the underlying mechanism(s), we believe determining the molecular basis responsible for increased MondoA binding to TXNIP and ARRDC4 is beyond the scope of this manuscript.
+
+3) Provide a clearer discussion or more details of the transcriptional mechanism involved in targeting MondoA to the nucleus and to target genes, in particular address how MondoA targets are chosen and why it is considered that only a few genes are directly regulated. With these changes, the paper would clearly make an exciting and important contribution to the field.
+
+The reviewers were concerned about the specificity of our knockdown experiments. We have clarified several points in the manuscript to address this concern. First, for our experiments examining MondoA function, we have used genetic or CRISPR MondoA knockout cells and used complementation in some cases to further implicate MondoA function. For the targets we knocked down using siRNA approaches, we used pools of 4 siRNAs against each target (ANT2, HK2 and ATP5I) and compared their activity to a si-Scrambled control. We also validated knockdown using either western blotting or RT-qPCR.
+
+For HK2 and ATP5I, we used a number of orthogonal approaches to extend and confirm our findings. The involvement of ATP synthase (ATP5I knockdown) was implicated pharmacologically with oligomycin (Figure 2B). The experiments using 143Brho:ATP6/ATP8 cells implicate ATP synthase genetically (Figure 2G). The experiments with metformin and FCCP, implicate the contribution of a functional ETC to MondoA transcriptional activity (Figure 2A and B). In data we elected not to present, we used 143Brho cells complemented with mitochondria with mutations in cytochrome B (complex 3) to demonstrate the ETC requirement for lies downstream of complex 3, and therefore upstream of ATP synthase.
+
+We also used multiple approaches to implicate the involvement of mitochondria-bound HK2. The requirement of a VDAC-HK2 interaction was tested with a mutant VDAC that can’t interact with HK2 (Figure 5A) and this data was confirmed with the bimolecular fluorescence complementation experiment (Figure 5B and C). The HK2 knockdown experiment is consistent with our previous experiments (Stoltzman, 2008), and was validated by showing that overexpression of wildtype HK2, but not kinase dead HK2 stimulated DMEMAcidic induction of TXNIP. In data we elected not to show methyl-jasmonate, which is reported to remove HK2 from the surface of mitochondria blocked TXNIP expression following DMEMAcidic treatment.
+
+We have not validated the contribution of ANT2 by other approaches, but as above we used a pool of 4 different siRNAs for its knockdown and used immunoblotting to validate its knockdown. Further, the role on ANT is transporting mtATP from the matrix via VDAC to HK2 is consistent with the literature.

@@ -1,0 +1,20 @@
+# The Drosophila F-box protein Fbxl7 binds to the protocadherin Fat and regulates Dachs localization and Hippo signaling
+
+## Authors
+
+- Justin A Bosch
+- Taryn M Sumabat
+- Yassi Hafezi
+- Brett J M Pellock
+- Kevin D Gandhi
+- Iswar Hariharan †
+
+### Affiliations
+
+1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States ikh@berkeley.edu
+
+† Corresponding author
+
+## Abstract
+
+The Drosophila protocadherin, Fat (Ft) regulates growth, planar cell polarity (PCP) and proximodistal patterning. A key downstream component of Ft signaling is the atypical myosin Dachs (D).  Multiple regions of the intracellular domain of Ft have been implicated in regulating growth and PCP but how Ft regulates D is not known. Mutations in Fbxl7 , which encodes an F-box protein, result in tissue overgrowth and abnormalities in proximodistal patterning that phenocopy deleting a specific portion of the intracellular domain (ICD) of Ft that regulates both growth and PCP. Fbxl7 binds to this same portion of the Ft ICD, co-localizes with Ft to the proximal edge of cells and regulates the levels and asymmetry of D at the apical membrane. Fbxl7 can also regulate the trafficking of proteins between the apical membrane and intracellular vesicles. Thus Fbxl7 functions in a subset of pathways downstream of Ft and links Ft to D localization.

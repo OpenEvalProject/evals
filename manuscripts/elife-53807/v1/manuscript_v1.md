@@ -1,0 +1,18 @@
+# Microneedle manipulation of the mammalian spindle reveals specialized, short-lived reinforcement near chromosomes
+
+## Authors
+
+- Pooja Suresh<sup>1</sup>
+- Alexandra F Long<sup>2</sup>
+- Sophie Dumont<sup>2</sup> ([ORCID: 0000-0002-8283-1523](https://orcid.org/0000-0002-8283-1523)) †
+
+### Affiliations
+
+1. Biophysics Graduate Program University of California, San Francisco San Francisco United States
+2. Department of Cell and Tissue Biology University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+The spindle generates force to segregate chromosomes at cell division. In mammalian cells, kinetochore-fibers connect chromosomes to the spindle. The dynamic spindle anchors kinetochore-fibers in space and time to move chromosomes. Yet, how it does so remains poorly understood as we lack tools to directly challenge this anchorage. Here, we adapt microneedle manipulation to exert local forces on the spindle with spatiotemporal control. Pulling on kinetochore-fibers reveals the preservation of local architecture in the spindle-center over seconds. Sister, but not neighbor, kinetochore-fibers remain tightly coupled, restricting chromosome stretching. Further, pulled kinetochore-fibers pivot around poles but not chromosomes, retaining their orientation within 3 μm of chromosomes. This local reinforcement has a 20 s lifetime, and requires the microtubule crosslinker PRC1. Together, these observations indicate short-lived, specialized reinforcement in the spindle center. This could help protect chromosome attachments from transient forces while allowing spindle remodeling, and chromosome movements, over longer timescales.

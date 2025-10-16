@@ -1,0 +1,21 @@
+# Thalamic reticular nucleus induces fast and local modulation of arousal state
+
+## Authors
+
+- Laura D Lewis
+- Jakob Voigts
+- Francisco J Flores
+- Lukas I Schmitt
+- Matthew A Wilson
+- Michael M Halassa
+- Emery N Brown †
+
+### Affiliations
+
+1. Department of Brain and Cognitive Sciences Massachusetts Institute of Technology Cambridge United States enb@neurostat.mit.edu
+
+† Corresponding author
+
+## Abstract
+
+During low arousal states such as drowsiness and sleep, cortical neurons exhibit rhythmic slow wave activity associated with periods of neuronal silence. Slow waves are locally regulated, and local slow wave dynamics are important for memory, cognition, and behaviour. While several brainstem structures for controlling global sleep states have now been well characterized, a mechanism underlying fast and local modulation of cortical slow waves has not been identified. Here, using optogenetics and whole cortex electrophysiology, we show that local tonic activation of thalamic reticular nucleus (TRN) rapidly induces slow wave activity in a spatially restricted region of cortex. These slow waves resemble those seen in sleep, as cortical units undergo periods of silence phase-locked to the slow wave. Furthermore, animals exhibit behavioural changes consistent with a decrease in arousal state during TRN stimulation. We conclude that TRN can induce rapid modulation of local cortical state.

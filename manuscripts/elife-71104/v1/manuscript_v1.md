@@ -1,0 +1,22 @@
+# Sequence features of retrotransposons allow for epigenetic variability
+
+## Authors
+
+- Kevin R Costello<sup>1</sup>
+- Amy Leung<sup>1</sup>
+- Candi Trac<sup>1</sup>
+- Michael Lee<sup>1</sup>
+- Mudaser Basam<sup>1</sup>
+- J Andrew Popsilik<sup>2</sup>
+- Dustin E Schones<sup>1</sup> ([ORCID: 0000-0001-7692-8583](https://orcid.org/0000-0001-7692-8583)) †
+
+### Affiliations
+
+1. Beckman Research Institute Duarte United States
+2. Van Andel Research Institute Grand Rapids United States
+
+† Corresponding author
+
+## Abstract
+
+Transposable elements (TEs) are mobile genetic elements that make up a large fraction of mammalian genomes. While select TEs have been co-opted in host genomes to have function, the majority of these elements are epigenetically silenced by DNA methylation in somatic cells. However, some TEs in mice, including the Intracisternal A-particle (IAP) subfamily of retrotransposons, have been shown to display interindividual variation in DNA methylation. Recent work has revealed that IAP sequence differences and strain-specific KRAB zinc finger proteins (KZFPs) may influence the methylation state of these IAPs. However, the mechanisms underlying the establishment and maintenance of interindividual variability in DNA methylation still remain unclear. Here we report that sequence content and genomic context influence the likelihood that IAPs become variably methylated. IAPs that differ from consensus IAP sequences have altered KZFP recruitment that can lead to decreased KAP1 recruitment when in proximity of constitutively expressed genes. These variably methylated loci have a high CpG density, similar to CpG islands, and can be bound by ZF-CxxC proteins, providing a potential mechanism to maintain this permissive chromatin environment and protect from DNA methylation. These observations indicate that variably methylated IAPs escape silencing through both attenuation of KZFP binding and recognition by ZF-CxxC proteins to maintain a hypomethylated state.

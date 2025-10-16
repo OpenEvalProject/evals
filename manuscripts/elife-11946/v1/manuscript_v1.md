@@ -1,0 +1,18 @@
+# Neural evidence accumulation persists after choice to inform metacognitive judgments
+
+## Authors
+
+- Peter R Murphy †
+- Ian H Robertson
+- Siobhán Harty
+- Redmond G O'Connell
+
+### Affiliations
+
+1. Trinity College Institute of Neuroscience, School of Psychology Trinity College Dublin Dublin Ireland
+
+† Corresponding author
+
+## Abstract
+
+The ability to revise one's certainty or confidence in a preceding choice is a critical feature of adaptive decision-making but the neural mechanisms underpinning this metacognitive process have yet to be characterized. In the present study, we demonstrate that the same build-to-threshold decision variable signal that triggers an initial choice continues to evolve after commitment, and determines the timing and accuracy of self-initiated error detection reports by selectively representing accumulated evidence that the preceding choice was incorrect. We also show that a peri-choice signal generated in medial frontal cortex provides a source of input to this post-decision accumulation process, indicating that metacognitive judgments are not solely based on the accumulation of feedforward sensory evidence. These findings impart novel insights into the generative mechanisms of metacognition.

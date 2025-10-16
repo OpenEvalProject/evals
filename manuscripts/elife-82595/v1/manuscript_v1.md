@@ -1,0 +1,23 @@
+# Host-microbiome metabolism of a plant toxin in bees
+
+## Authors
+
+- Erick VS Motta<sup>1</sup> ([ORCID: 0000-0001-9360-4353](https://orcid.org/0000-0001-9360-4353)) †
+- Alejandra Gage<sup>1</sup>
+- Thomas E Smith<sup>1</sup>
+- Kristin J Blake<sup>2</sup>
+- Waldan K Kwong<sup>3</sup>
+- Ian M Riddington<sup>1</sup>
+- Nancy Moran<sup>1</sup> ([ORCID: 0000-0003-2983-9769](https://orcid.org/0000-0003-2983-9769)) †
+
+### Affiliations
+
+1. Department of Integrative Biology The University of Texas at Austin Austin United States
+2. Department of Chemistry The University of Texas at Austin Austin United States
+3. Instituto Gulbenkian de Ciência Oeiras Portugal
+
+† Corresponding author
+
+## Abstract
+
+While foraging for nectar and pollen, bees are exposed to a myriad of xenobiotics, including plant metabolites, which may exert a wide range of effects on their health. Although the bee genome encodes enzymes that help in the metabolism of xenobiotics, it has lower detoxification gene diversity than the genomes of other insects. Therefore, bees may rely on other components that shape their physiology, such as the microbiota, to degrade potentially toxic molecules. In this study, we show that amygdalin, a cyanogenic glycoside found in honey bee-pollinated almond trees, can be metabolized by both bees and members of the gut microbiota. In microbiota-deprived bees, amygdalin is degraded into prunasin, leading to prunasin accumulation in the midgut and hindgut. In microbiota-colonized bees, on the other hand, amygdalin is degraded even further, and prunasin does not accumulate in the gut, suggesting that the microbiota contribute to the full degradation of amygdalin into hydrogen cyanide. In vitro experiments demonstrated that amygdalin degradation by bee gut bacteria is strain-specific and not characteristic of a particular genus or species. We found strains of Bifidobacterium , Bombilactobacillus and Gilliamella that can degrade amygdalin. The degradation mechanism appears to vary since only some strains produce prunasin as an intermediate. Finally, we investigated the basis of degradation in Bifidobacterium wkB204, a strain that fully degrades amygdalin. We found overexpression and secretion of several carbohydrate-degrading enzymes, including one in glycoside hydrolase family 3 (GH3). We expressed this GH3 in Escherichia coli and detected prunasin as a byproduct when cell lysates were cultured with amygdalin, supporting its contribution to amygdalin degradation. These findings demonstrate that both host and microbiota can act together to metabolize dietary plant metabolites.

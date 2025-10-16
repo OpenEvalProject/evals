@@ -1,0 +1,19 @@
+# Fip1 is a multivalent interaction scaffold for processing factors in human mRNA 3' end biogenesis
+
+## Authors
+
+- Lena Maria Muckenfuss<sup>1</sup>
+- Anabel Carmen Migenda Herranz<sup>1</sup>
+- Franziska M Boneberg<sup>1</sup>
+- Marcello Clerici<sup>1</sup>
+- Martin Jinek<sup>1</sup> ([ORCID: 0000-0002-7601-210X](https://orcid.org/0000-0002-7601-210X)) †
+
+### Affiliations
+
+1. Department of Biochemistry University of Zurich Zurich Switzerland
+
+† Corresponding author
+
+## Abstract
+
+3' end formation of most eukaryotic mRNAs is dependent on the assembly of a ~1.5 megadalton multiprotein complex, that catalyzes the coupled reaction of pre-mRNA cleavage and polyadenylation. In mammals, the cleavage and polyadenylation specificity factor (CPSF) constitutes the core of the 3' end processing machinery onto which the remaining factors, including cleavage stimulation factor (CstF) and poly(A) polymerase (PAP), assemble. These interactions are mediated by Fip1, a CPSF subunit characterized by high degree of intrinsic disorder. Here, we report two crystal structures revealing the interactions of human Fip1 (hFip1) with CPSF30 and CstF77. We demonstrate that CPSF contains two copies of hFip1, each binding to the zinc finger (ZF) domains 4 and 5 of CPSF30. Using polyadenylation assays we show that the two hFip1 copies are functionally redundant in recruiting one copy of PAP, thereby increasing the processivity of RNA polyadenylation. We further show that the interaction between hFip1 and CstF77 is mediated via a short motif in the N-terminal 'acidic' region of hFip1. In turn, CstF77 competitively inhibits CPSF-dependent PAP recruitment and 3' polyadenylation. Taken together, these results provide a structural basis for the multivalent scaffolding and regulatory functions of hFip1 in 3' end processing.

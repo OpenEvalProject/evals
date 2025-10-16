@@ -1,0 +1,25 @@
+# A structural mechanism for bacterial autotransporter glycosylation by a dodecameric heptosyltransferase family
+
+## Authors
+
+- Qing Yao
+- Qiuhe Lu
+- Xiaobo Wan
+- Feng Song
+- Yue Xu
+- Mo Hu
+- Alla Zamyatina
+- Xiaoyun Liu
+- Niu Huang
+- Ping Zhu
+- Feng Shao †
+
+### Affiliations
+
+1. Dr. Feng Shao's Lab National Institute of Biological Sciences Beijing China shaofeng@nibs.ac.cn
+
+† Corresponding author
+
+## Abstract
+
+A large group of bacterial virulence autotransporters including AIDA-I from diffusely adhering E. coli (DAEC) and TibA from enterotoxigenic E. coli (ETEC) require hyper-glycosylation for functioning.  Here we demonstrate that TibC from ETEC harbors a heptosyltransferase activity on TibA and AIDA-I, defining a large family of bacterial autotransporter heptosyltransferases (BAHTs). Crystal structure of TibC reveals a characteristic ring-shape dodecamer. The protomer features an N-terminal β-barrel, a catalytic domain, a β-hairpin thumb and a unique iron-finger motif. The iron-finger motif contributes to back-to-back dimerization; six dimers form the ring through β-hairpin thumb-mediated hand-in-hand contact. Structure of ADP-D, D-heptose-bound TibC reveals a sugar transfer mechanism and also the ligand stereoselectivity determinant. Cryo-EM analyses uncover a TibC-TibA dodecamer/hexamer assembly with two enzyme molecules binding to one TibA substrate. The complex structure also highlights a high efficient hyperglycosylation of six autotransporter substrates simultaneously by the dodecamer enzyme complex.

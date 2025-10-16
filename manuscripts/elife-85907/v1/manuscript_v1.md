@@ -1,0 +1,24 @@
+# Diversity and evolution of cerebellar folding in mammals
+
+## Authors
+
+- Katja Heuer<sup>1</sup> ([ORCID: 0000-0002-7237-0196](https://orcid.org/0000-0002-7237-0196)) †
+- Nicolas Traut<sup>2</sup>
+- Alexandra Allison de Sousa<sup>3</sup>
+- Sofie Louise Valk<sup>4</sup> ([ORCID: 0000-0003-2998-6849](https://orcid.org/0000-0003-2998-6849))
+- Julien Clavel<sup>5</sup>
+- Roberto Toro<sup>2</sup> ([ORCID: 0000-0002-6671-858X](https://orcid.org/0000-0002-6671-858X)) †
+
+### Affiliations
+
+1. Institut Pasteur France Falkland Islands (Malvinas)
+2. Institut Pasteur Paris France
+3. Bath Spa University Bath United Kingdom
+4. Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+5. Université Claude Bernard Lyon 1, CNRS, ENTPE, UMR 5023 Villeurbanne France
+
+† Corresponding author
+
+## Abstract
+
+The process of brain folding is thought to play an important role in the development and organisation of the cerebrum and the cerebellum. The study of cerebellar folding is challenging due to the small size and abundance of its folia. In consequence, little is known about its anatomical diversity and evolution. We constituted an open collection of histological data from 56 mammalian species and manually segmented the cerebrum and the cerebellum. We developed methods to measure the geometry of cerebellar folia and to estimate the thickness of the molecular layer. We used phylogenetic comparative methods to study the diversity and evolution of cerebellar folding and its relationship with the anatomy of the cerebrum. Our results show that the evolution of cerebellar and cerebral anatomy follows a stabilising selection process. We observed 2 groups of phenotypes changing concertedly through evolution: a group of 'diverse' phenotypes - varying over several orders of magnitude together with body size, and a group of 'stable' phenotypes varying over less than 1 order of magnitude across species. Our analyses confirmed the strong correlation between cerebral and cerebellar volumes across species, and showed in addition that large cerebella are disproportionately more folded than smaller ones. Compared with the extreme variations in cerebellar surface area, folial anatomy and molecular layer thickness varied only slightly, showing a much smaller increase in the larger cerebella. We discuss how these findings could provide new insights into the diversity and evolution of cerebellar folding, the mechanisms of cerebellar and cerebral folding, and their potential influence on the organisation of the brain across species.

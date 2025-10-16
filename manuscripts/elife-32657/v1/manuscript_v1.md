@@ -1,0 +1,17 @@
+# Interactions between stimulus and response types are more strongly represented in the entorhinal cortex than in its upstream regions in rats
+
+## Authors
+
+- Eun-Hye Park<sup>1</sup>
+- Jae-Rong Ahn<sup>1</sup>
+- Inah Lee<sup>1</sup> ([ORCID: 0000-0003-3760-4257](https://orcid.org/0000-0003-3760-4257)) †
+
+### Affiliations
+
+1. Department of Brain and Cognitive Sciences Seoul National University Seoul Republic of Korea
+
+† Corresponding author
+
+## Abstract
+
+Previously we reported results which suggested that response types are critical in dissociating the lateral entorhinal cortex (LEC) from the medial entorhinal cortex (MEC) in a scene memory task (Yoo and Lee, 2017). Here, we investigated whether the perirhinal cortex (PER) and postrhinal cortex (POR), the upstream regions of the LEC and MEC, respectively, could be dissociated similarly. We conducted four tasks by combining different stimulus and response types. Our results suggest that the PER is important whenever object recognition is required and, together with prior findings, imply that PER-LEC networks are essential in goal-directed interactions with objects. The POR appears critical for recognizing visual scenes and may play key roles in scene-based navigation together with the MEC. The relative lack of functional dissociation between stimulus and response types at the PER-POR level suggests that actions conditioned on the recognition of external stimuli may be uniquely represented from the EC.

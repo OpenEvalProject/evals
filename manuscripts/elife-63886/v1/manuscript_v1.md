@@ -1,0 +1,21 @@
+# A KDM5-Prospero transcriptional axis functions during early neurodevelopment to regulate mushroom body formation
+
+## Authors
+
+- Hayden AM Hatch<sup>1</sup>
+- Helen M Belalcazar<sup>2</sup>
+- Owen J Marshall<sup>3</sup>
+- Julie Secombe<sup>4</sup> ([ORCID: 0000-0002-5826-7547](https://orcid.org/0000-0002-5826-7547)) †
+
+### Affiliations
+
+1. Neuroscience Albert Einstein College of Medicine New York United States
+2. Genetics Albert Einstein College of Medicine New York United States
+3. Menzies Institute for Medical Research University of Tasmania Hobart Australia
+4. Genetics and Neuroscience Albert Einstein College of Medicine New York United States
+
+† Corresponding author
+
+## Abstract
+
+Mutations in the lysine demethylase 5 (KDM5) family of transcriptional regulators are associated with intellectual disability, yet little is known regarding their spatiotemporal requirements or neurodevelopmental contributions. Utilizing the mushroom body (MB), a major learning and memory center within the Drosophila brain, we demonstrate that KDM5 is required within ganglion mother cells and immature neurons for proper axogenesis. Moreover, the mechanism by which KDM5 functions in this context is independent of its canonical histone demethylase activity. Using in vivo transcriptional and binding analyses, we identify a network of genes directly regulated by KDM5 that are critical modulators of neurodevelopment. We find that KDM5 directly regulates the expression of prospero , a transcription factor that we demonstrate is essential for MB morphogenesis. Prospero functions downstream of KDM5 and binds to approximately half of KDM5-regulated genes. Together, our data provide evidence for a KDM5-Prospero transcriptional axis that is essential for proper MB development.

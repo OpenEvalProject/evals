@@ -1,0 +1,19 @@
+# An oxygen-insensitive Hif-3α isoform inhibits Wnt signaling by destabilizing the nuclear β-catenin complex
+
+## Authors
+
+- Peng Zhang
+- Yan Bai
+- Ling Lu
+- Yun Li
+- Cunming Duan †
+
+### Affiliations
+
+1. Department of Molecular, Cellular, and Developmental Biology University of Michigan Ann Arbor United States cduan@umich.edu
+
+† Corresponding author
+
+## Abstract
+
+Hypoxia-inducible factors (HIFs), while best known for their roles in the hypoxic response, have oxygen-independent roles in early development with poorly defined mechanisms. Here we report a novel Hif-3α variant, Hif-3α2, in zebrafish. Hif-3α2 lacks the bHLH, PAS, PAC, and ODD domains and is expressed in embryonic and adult tissues independently of oxygen availability. Hif-3α2 is a nuclear protein with significant hypoxia response element (HRE)-dependent transcriptional activity. Hif-3α2 overexpression not only decreases embryonic growth and developmental timing but also causes left-right asymmetry defects. Genetic deletion of Hif-3α2 by CRISPR/Cas9 genome editing increases, while Hif-3α2 overexpression decreases, Wnt/β-catenin signaling. This action is independent of its HRE-dependent transcriptional activity. Mechanistically, Hif-3α2 binds to β-catenin and destabilizes the nuclear β-catenin complex. This mechanism is distinct from GSK3β-mediated β-catenin degradation and is conserved in humans. These findings provide new insights into the oxygen-independent actions of HIFs and uncover a novel mechanism regulating Wnt/β-catenin signaling.

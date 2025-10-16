@@ -1,0 +1,16 @@
+# The Role of Rif1 in telomere length regulation is separable from its role in origin firing
+
+## Authors
+
+- Calla B Shubin<sup>1</sup> ([ORCID: 0000-0002-4618-2722](https://orcid.org/0000-0002-4618-2722))
+- Carol W Greider<sup>1</sup> ([ORCID: 0000-0002-5494-8126](https://orcid.org/0000-0002-5494-8126)) †
+
+### Affiliations
+
+1. Molecular Biology and Genetics Johns Hopkins University School of Medicine Baltimore United States
+
+† Corresponding author
+
+## Abstract
+
+To examine the established link between DNA replication and telomere length, we tested whether firing of telomeric origins would cause telomere lengthening. We found that RIF1 mutants that block Protein Phosphatase 1 (PP1) binding activated telomeric origins but did not elongate telomeres. In a second approach, we found overexpression of ∆N-Dbf4 and Cdc7 increased DDK activity and activated telomeric origins, yet telomere length was unchanged. We tested a third mechanism to activate origins using the sld3-A mcm5-bob1 mutant that de-regulates the pre-replication complex, and again saw no change in telomere length. Finally, we tested whether mutations in RIF1 that cause telomere elongation would affect origin firing. We found that neither rif1-∆1322 nor rif1 affected firing of telomeric origins. We conclude that telomeric origin firing does not cause telomere elongation, and the role of Rif1 in regulating origin firing is separable from its role in regulating telomere length. HOOK

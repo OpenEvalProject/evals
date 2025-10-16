@@ -1,0 +1,16 @@
+# Short-chain fatty acids activate acetyltransferase p300
+
+## Authors
+
+- Sydney P Thomas<sup>1</sup>
+- John M Denu<sup>1</sup> ([ORCID: 0000-0001-9415-0365](https://orcid.org/0000-0001-9415-0365)) †
+
+### Affiliations
+
+1. University of Wisconsin - Madison Madison United States
+
+† Corresponding author
+
+## Abstract
+
+Short-chain fatty acids (SCFAs) acetate, propionate, and butyrate are produced in large quantities by the gut microbiome and contribute to a wide array of physiological processes. While the underlying mechanisms are largely unknown, many effects of SCFAs have been traced to changes in the cell’s epigenetic state. Here, we systematically investigate how SCFAs alter the epigenome. Using quantitative proteomics of histone modification states, we identified rapid and sustained increases in histone acetylation after addition of butyrate or propionate, but not acetate. While decades of prior observations would have suggested that hyperacetylation induced by SCFAs are attributed to inhibition of histone deacetylases (HDACs), we found that propionate and butyrate instead activate the acetyltransferase p300. Propionate and butyrate are rapidly converted to the corresponding acyl-CoAs which are then used by p300 to catalyze auto-acylation of the autoinhibitory loop, activating the enzyme for histone/protein acetylation. This data challenges the long-held belief that SCFAs mainly regulate chromatin by inhibiting HDACs, and instead reveals a previously unknown mechanism of HAT activation that can explain how an influx of low levels of SCFAs alters global chromatin states.

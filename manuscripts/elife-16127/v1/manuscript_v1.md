@@ -1,0 +1,20 @@
+# A Bayesian model of context-sensitive value attribution
+
+## Authors
+
+- Francesco Rigoli †
+- Karl J Friston
+- Cristina Martinelli
+- Mirjana Selaković
+- Sukhwinder S Shergill
+- Raymond J Dolan
+
+### Affiliations
+
+1. The Wellcome Trust Centre for Neuroimaging University College London London United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Substantial evidence indicates that incentive value depends on an anticipation of rewards within a given context. However, the computations underlying this context sensitivity remain unknown. To address this question we introduce a normative (Bayesian) account of how rewards map to incentive values. This assumes that the brain inverts a model of how rewards are generated. Key features of our account include (i) an influence of prior beliefs about the context in which rewards are delivered (weighted by their reliability in a Bayes-optimal fashion), (ii) the notion that incentive values correspond to precision-weighted prediction errors, (iii) and contextual information unfolding at different hierarchical levels. This formulation implies that incentive value is intrinsically context-dependent. We provide empirical support for this model by showing that incentive value is influenced by context variability and by hierarchically nested contexts. The perspective we introduce generates new empirical predictions that might help explaining psychopathologies, such as addiction.

@@ -1,0 +1,21 @@
+# A single full-length VAR2CSA ectodomain variant purifies broadly neutralizing antibodies against placental malaria isolates
+
+## Authors
+
+- Justin YA Doritchamou<sup>1</sup>
+- Jonathan P Renn<sup>1</sup>
+- Bethany Jenkins<sup>1</sup>
+- Michal Fried<sup>2</sup>
+- Patrick E Duffy<sup>3</sup> ([ORCID: 0000-0002-4483-5005](https://orcid.org/0000-0002-4483-5005)) †
+
+### Affiliations
+
+1. Laboratory of Malaria Immunology and Vaccinology, National Institute of Allergy and Infectious Diseases National Institute of Allergy and Infectious Diseases Bethesda United States
+2. Laboratory of Malaria Immunology and Vaccinology National Institute of Allergy and Infectious Diseases Rockville United States
+3. Laboratory of Malaria Immunology and Vaccinology National Institute of Allergy and Infectious Diseases Bethesda United States
+
+† Corresponding author
+
+## Abstract
+
+Placental malaria (PM) is a deadly syndrome most frequent and severe in first pregnancies. PM results from accumulation of Plasmodium falciparum -infected erythrocytes (IE) that express the surface antigen VAR2CSA and bind to chondroitin sulfate A (CSA) in the placenta. Women become PM-resistant over successive pregnancies as they develop anti-adhesion and anti-VAR2CSA antibodies, supporting VAR2CSA as the leading PM-vaccine candidate. However, the first VAR2CSA subunit vaccines failed to induce broadly neutralizing antibody and it is known that naturally acquired antibodies target both variant-specific and conserved epitopes. It is crucial to determine whether effective vaccines will require incorporation of many or only a single VAR2CSA variants. Here, IgG from multigravidae was sequentially purified on five full-length VAR2CSA ectodomain variants, thereby depleting IgG reactivity to each. The five VAR2CSA variants purified ~0.7% of total IgG and yielded both strain-transcending and strain-specific reactivity to VAR2CSA and IE-surface antigen. In two independent antibody purification/depletion experiments with permutated order of VAR2CSA variants, IgG purified on the first VAR2CSA antigen displayed broad cross-reactivity to both recombinant and native VAR2CSA variants, and inhibited binding of all isolates to CSA. IgG remaining after depletion on all variants showed significantly reduced binding-inhibition activity compared to initial total IgG. These findings demonstrate that a single VAR2CSA ectodomain variant displays conserved epitopes that are targeted by neutralizing (or binding-inhibitory) antibodies shared by multiple parasite strains, including maternal isolates. This suggests that a broadly effective PM-vaccine can be achieved with a limited number of VAR2CSA variants.

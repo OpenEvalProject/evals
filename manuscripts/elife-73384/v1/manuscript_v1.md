@@ -1,0 +1,19 @@
+# Conformational decoupling in acid-sensing ion channels uncovers mechanism and stoichiometry of PcTx1-mediated inhibition
+
+## Authors
+
+- Stephanie A Heusser<sup>1</sup> ([ORCID: 0000-0003-3224-4547](https://orcid.org/0000-0003-3224-4547))
+- Christian B Borg<sup>2</sup>
+- Janne M Colding<sup>2</sup>
+- Stephan A Pless<sup>2</sup> ([ORCID: 0000-0001-6654-114X](https://orcid.org/0000-0001-6654-114X)) †
+
+### Affiliations
+
+1. Department of Drug Design and Pharmacology University of Copenhagen Copehagen Denmark
+2. Department of Drug Design and Pharmacology University of Copenhagen Copenhagen Denmark
+
+† Corresponding author
+
+## Abstract
+
+Acid-sensing ion channels (ASICs) are trimeric proton-gated cation channels involved in fast synaptic transmission. Pharmacological inhibition of ASIC1a reduces neurotoxicity and stroke infarct volumes, with the cysteine knot toxin Psalmotoxin-1 (PcTx1) being one of the most potent and selective inhibitors. PcTx1 binds at the subunit interface in the extracellular domain (ECD), but the mechanism and conformational consequences of the interaction, as well as the number of toxin molecules required for inhibition remain unknown. Here we use voltage-clamp fluorometry and subunit concatenation to decipher the mechanism and stoichiometry of PcTx1 inhibition of ASIC1a. Besides the known inhibitory binding mode, we propose PcTx1 to have at least two additional binding modes that are decoupled from the pore. One of these modes induces a long-lived ECD conformation that reduces the activity of an endogenous neuropeptide. This long-lived conformational state is proton-dependent and can be destabilized by a mutation that decreases PcTx1 sensitivity. Lastly, the use of concatemeric channel constructs reveal that disruption of a single PcTx1 binding site is sufficient to destabilize the toxin-induced conformation, while functional inhibition is not impaired until two or more binding sites are mutated. Together, our work provides insight into the mechanism of PcTx1 inhibition of ASICs and uncovers a prolonged conformational change with possible pharmacological implications.

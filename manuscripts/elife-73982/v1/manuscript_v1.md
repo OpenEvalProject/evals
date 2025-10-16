@@ -1,0 +1,22 @@
+# Cell-surface tethered promiscuous biotinylators enable comparative small-scale surface proteomic analysis of human extracellular vesicles and cells
+
+## Authors
+
+- Lisa L Kirkemo<sup>1</sup> ([ORCID: 0000-0003-1686-6987](https://orcid.org/0000-0003-1686-6987))
+- Susanna K Elledge<sup>1</sup>
+- Jiuling Yang<sup>2</sup>
+- James R Byrnes<sup>1</sup> ([ORCID: 0000-0003-0297-1209](https://orcid.org/0000-0003-0297-1209))
+- Jeff E Glasgow<sup>1</sup>
+- Robert Blelloch<sup>2</sup> ([ORCID: 0000-0002-1975-0798](https://orcid.org/0000-0002-1975-0798))
+- James A Wells<sup>1</sup> ([ORCID: 0000-0001-8267-5519](https://orcid.org/0000-0001-8267-5519)) †
+
+### Affiliations
+
+1. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States
+2. Department of Urology University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+Characterization of cell surface proteome differences between cancer and healthy cells is a valuable approach for the identification of novel diagnostic and therapeutic targets. However, selective sampling of surface proteins for proteomics requires large samples (>10e6 cells) and long labeling times. These limitations preclude analysis of material-limited biological samples or the capture of rapid surface proteomic changes. Here, we present two labeling approaches to tether exogenous peroxidases (APEX2 and HRP) directly to cells, enabling rapid, small-scale cell surface biotinylation without the need to engineer cells. We used a novel lipidated DNA-tethered APEX2 (DNA-APEX2), which upon addition to cells promoted cell agnostic membrane-proximal labeling. Alternatively, we employed horseradish peroxidase (HRP) fused to the glycan binding domain of wheat germ agglutinin (WGA-HRP). This approach yielded a rapid and commercially inexpensive means to directly label cells containing common N-Acetylglucosamine (GlcNAc) and sialic acid glycans on their surface. The facile WGA-HRP method permitted high surface coverage of cellular samples and enabled the first comparative surface proteome characterization of cells and cell-derived small extracellular vesicles (EV), leading to the robust quantification of 953 cell and EV surface annotated proteins. We identified a newly-recognized subset of EV-enriched markers, as well as proteins that are uniquely upregulated on Myc oncogene-transformed prostate cancer EVs. These two cell-tethered enzyme surface biotinylation approaches are highly advantageous for rapidly and directly labeling surface proteins across a range of material-limited sample types.

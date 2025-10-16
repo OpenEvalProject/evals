@@ -1,0 +1,16 @@
+# Increase of cell surface vimentin is associated with vimentin network disruption and subsequent stress-induced premature senescence in human chondrocytes
+
+## Authors
+
+- Jana Riegger<sup>1</sup> ([ORCID: 0000-0003-0048-5047](https://orcid.org/0000-0003-0048-5047)) †
+- Rolf E Brenner<sup>1</sup>
+
+### Affiliations
+
+1. Department of Orthopedics University of Ulm Ulm Germany
+
+† Corresponding author
+
+## Abstract
+
+Accumulation of dysfunctional chondrocytes has detrimental consequences on the cartilage homeostasis and is thus thought to play a crucial role during the pathogenesis of osteoarthritis (OA). However, the underlying mechanisms of phenotypical alteration in chondrocytes are incompletely understood. Here, we provide evidence that disruption of the intracellular vimentin network and consequent phenotypical alteration in human chondrocytes results in an externalization of the intermediate filament. The presence of so-called cell surface vimentin (CSV) on chondrocytes was associated with the severity of tissue degeneration in clinical OA samples and was enhanced after mechanical injury of cartilage tissue. By means of a doxorubicine-based in vitro model of stress-induced premature senescence (SIPS), we could confirm the connection between cellular senescence and amount of CSV. Although siRNA-mediated silencing of CDKN2A clearly reduced the senescent phenotype as well as CSV levels of human chondrocytes, cellular senescence could not be completely reversed. Interestingly, knockdown of vimentin resulted in a SIPS-like phenotype and consequently increased CSV. Therefore, we concluded that the integrity of the intracellular vimentin network is crucial to maintain cellular function in chondrocytes. This assumption could be confirmed by chemically-induced collapse of the vimentin network, which resulted in cellular stress and enhanced CSV expression. Regarding its biological function, CSV was found to be associated with enhanced chondrocyte adhesion and plasticity. While osteogenic capacities seemed to be enhanced in chondrocytes expressing high levels of CSV, the chondrogenic potential was clearly compromised. Overall, our study reinforces the importance of the vimentin network in maintenance of the chondrogenic phenotype and introduces CSV as a novel membrane-bound marker of dysfunctional chondrocytes.

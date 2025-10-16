@@ -1,0 +1,25 @@
+# Structure of PINK1 and mechanisms of Parkinson's disease associated mutations
+
+## Authors
+
+- Atul Kumar<sup>1</sup>
+- Jevgenia Tamjar<sup>2</sup>
+- Andrew D Waddell<sup>2</sup>
+- Helen I Woodroof<sup>2</sup>
+- Olawale G Raimi<sup>1</sup>
+- Andrew M Shaw<sup>2</sup>
+- Mark Peggie<sup>3</sup>
+- Miratul MK Muqit<sup>2</sup> †
+- Daan MF van Aalten<sup>1</sup> ([ORCID: 0000-0002-1499-6908](https://orcid.org/0000-0002-1499-6908)) †
+
+### Affiliations
+
+1. Division of Gene Regulation and Expression University of Dundee Dundee United Kingdom
+2. MRC Protein Phosphorylation and Ubiquitylation Unit University of Dundee Dundee United Kingdom
+3. Division of Signal Transduction Therapy University of Dundee Dundee United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Mutations in the human kinase PINK1 (hPINK1) are associated with autosomal recessive early-onset Parkinson's disease (PD). hPINK1 activates Parkin E3 ligase activity, involving phosphorylation of ubiquitin and the Parkin ubiquitin-like (Ubl) domain via as yet poorly understood mechanisms. hPINK1 is unusual amongst kinases due to the presence of three loop insertions of unknown function. We report the structure of Tribolium castaneum PINK1 ( Tc PINK1), revealing several unique extensions to the canonical protein kinase fold. The third insertion, together with autophosphorylation at residue Ser205, contributes to formation of a bowl-shaped binding site for ubiquitin. We also define a novel structural element within the second insertion that is held together by a distal loop that is critical for Tc PINK1 activity. The structure of Tc PINK1 explains how PD-linked mutations that lie within the kinase domain result in hPINK1 loss-of-function and provides a platform for the exploration of small molecule modulators of hPINK1.

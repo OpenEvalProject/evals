@@ -1,0 +1,18 @@
+# Cellular diversity in the Drosophila midbrain revealed by single-cell transcriptomics
+
+## Authors
+
+- Vincent Croset<sup>1</sup>
+- Christoph Daniel Treiber<sup>1</sup> ([ORCID: 0000-0002-6994-091X](https://orcid.org/0000-0002-6994-091X)) †
+- Scott Waddell<sup>2</sup> ([ORCID: 0000-0003-4503-6229](https://orcid.org/0000-0003-4503-6229)) †
+
+### Affiliations
+
+1. Center for Neural Circuits and Behaviour University of Oxford Oxford United Kingdom
+2. Centre for Neural Circuits and Behaviour University of Oxford Oxford United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+To understand the brain, molecular details need to be overlaid onto neural wiring diagrams so that synaptic mode, neuromodulation and critical signaling operations can be considered. Single-cell transcriptomics provide a unique opportunity to collect this information. Here we present an initial analysis of thousands of individual cells from Drosophila midbrain, that were acquired using Drop-Seq. A number of approaches permitted the assignment of transcriptional profiles to several major brain regions and cell-types. Expression of biosynthetic enzymes and reuptake mechanisms allows all the neurons to be typed according to the neurotransmitter or neuromodulator that they produce and presumably release. Some neuropeptides are preferentially co-expressed in neurons using a particular fast-acting transmitter, or monoamine. Neuromodulatory and neurotransmitter receptor subunit expression illustrates the potential of these molecules in generating complexity in neural circuit function. This cell atlas dataset provides an important resource to link molecular operations to brain regions and complex neural processes.

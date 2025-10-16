@@ -1,0 +1,17 @@
+# Corelease of acetylcholine and GABA from cholinergic forebrain neurons
+
+## Authors
+
+- Arpiar Saunders
+- Adam J Granger
+- Bernardo L Sabatini †
+
+### Affiliations
+
+1. Department of Neurobiology Howard Hughes Medical Institute, Harvard Medical School Boston United States bernardo_sabatini@hms.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Neurotransmitter corelease is emerging as a common theme of central neuromodulatory systems. Though corelease of glutamate or GABA with acetylcholine has been reported within the cholinergic system, the full extent is unknown. To explore synaptic signaling of cholinergic forebrain neurons, we activated choline acetyltransferase expressing neurons using channelrhodopsin while recording post-synaptic currents (PSCs) in layer 1 interneurons. Surprisingly, we observed PSCs mediated by GABA A receptors in addition to nicotinic acetylcholine receptors. Based on PSC latency and pharmacological sensitivity, our results suggest monosynaptic release of both GABA and ACh. Anatomical analysis showed that forebrain cholinergic neurons express the GABA synthetic enzyme Gad2 and the vesicular GABA transporter ( Slc32a1 ). We confirmed the direct release of GABA by knocking out Slc32a1 from cholinergic neurons. Our results identify GABA as an overlooked fast neurotransmitter utilized throughout the forebrain cholinergic system. GABA/ACh corelease may have major implications for modulation of cortical function by cholinergic neurons.

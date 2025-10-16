@@ -1,0 +1,16 @@
+# Endogenous p53 expression in human and mouse is not regulated by its 3′UTR
+
+## Authors
+
+- Sibylle Mitschka<sup>1</sup>
+- Christine Mayr<sup>1</sup> ([ORCID: 0000-0002-7084-7608](https://orcid.org/0000-0002-7084-7608)) †
+
+### Affiliations
+
+1. Cancer Biology and Genetics Memorial Sloan Kettering Cancer Center New York United States
+
+† Corresponding author
+
+## Abstract
+
+The TP53 gene encodes the tumor suppressor p53 which is functionally inactivated in many human cancers. Numerous studies suggested that 3′UTR-mediated p53 expression regulation plays a role in tumorigenesis and could be exploited for therapeutic purposes. However, these studies did not investigate post-transcriptional regulation of the native TP53 gene. Here, we used CRISPR/Cas9 to delete the human and mouse TP53/Trp53 3′UTRs while preserving endogenous mRNA processing. This revealed that the endogenous 3′UTR is not involved in regulating p53 mRNA or protein expression neither in steady state nor after genotoxic stress. Using reporter assays, we confirmed the previously observed repressive effects of the isolated 3′UTR. However, addition of the TP53 coding region to the reporter had a dominant negative impact on expression as its repressive effect was stronger and abrogated the contribution of the 3′UTR. Our data highlight the importance of genetic models in the validation of post-transcriptional gene regulatory effects.

@@ -1,0 +1,20 @@
+# Tenectin recruits integrin to stabilize bouton architecture and regulate vesicle release at the Drosophila neuromuscular junction
+
+## Authors
+
+- Qi Wang<sup>1</sup>
+- Tae Hee Han<sup>1</sup>
+- Peter Nguyen<sup>1</sup>
+- Michal Jarnik<sup>2</sup>
+- Mihaela Serpe<sup>1</sup> ([ORCID: 0000-0002-9205-8589](https://orcid.org/0000-0002-9205-8589)) †
+
+### Affiliations
+
+1. Section on Cellular Communication, National Institute of Child Health and Human Development National Institutes of Health Bethesda United States
+2. Cell Biology and Neurobiology Branch, National Institute of Child Health and Human Development National Institutes of Health Bethesda United States
+
+† Corresponding author
+
+## Abstract
+
+Assembly, maintenance and function of synaptic junctions depend on extracellular matrix (ECM) proteins and their receptors. Here we report that Tenectin (Tnc), a Mucin-type protein with RGD motifs, is an ECM component required for the structural and functional integrity of synaptic specializations at the neuromuscular junction (NMJ) in Drosophila. Using genetics, biochemistry, electrophysiology, histology and electron microscopy, we show that Tnc is secreted from motor neurons and striated muscles and accumulates in the synaptic cleft. Tnc selectively recruits αPS2/βPS integrin at synaptic terminals, but only the cis Tnc/integrin complexes appear to be biologically active. These complexes have distinct pre- and postsynaptic functions, mediated at least in part through the local engagement of the spectrin-based membrane skeleton: the presynaptic complexes control neurotransmitter release, while postsynaptic complexes ensure the size and architectural integrity of synaptic boutons. Our study reveals an unprecedented role for integrin in the synaptic recruitment of spectrin-based membrane skeleton.

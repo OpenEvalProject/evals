@@ -1,0 +1,43 @@
+# Peer review - Round 1
+
+Editors:
+- Ashish Lal, National Institutes of Health United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.53367.sa1](https://doi.org/10.7554/eLife.53367.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Acceptance summary:
+
+In this work, the authors generate a model for cisplatin-mediated chemotherapy that more accurately reflects the in vivo pharmacokinetics of this therapeutic. Using this model they identify p70S6K signaling as a key determinant of sensitivity to cisplatin in lung cancer, thus validating the potential to use in vitro models in order to predict and understand therapy resistance.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Analysis of pulsed cisplatin signalling dynamics identifies effectors of resistance in lung adenocarcinoma" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Maureen Murphy as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+In this study, the authors utilized an in vitro model that mimics more physiologically relevant conditions of platinum-based chemotherapy. They achieved this by treating a panel of NSCLC cell lines with a 2 hours pulse of platinum-based chemotherapy and analyzing the effects at 72 hours after the pulse. This is to avoid off-target effects after a prolonged 72 hr period of continuous cisplatin treatment that can create and impair the correct analysis of the mechanisms of sensitivity and resistance to therapy. The authors originally apply a multidimensional analysis of signaling networks generating correlative evidence that can be functionally investigated. Based on these original approaches, the authors find a role of p70S6K in mediating resistance of NSCLC cell to platinum-based chemotherapy, while not confirming some other mechanisms previously identified in cells subjected to a continuous platinum treatment. Moreover, the authors find that in NSCLC patients, the expression of p70S6K correlates with a worse prognosis and worse response to chemotherapy, independently of the mutational status of the TP53 gene. Using in vitro and mouse xenograft experiments, the authors show that the combination of chemotherapy with inhibitors of p70S6K or si-p70S6K increases sensitivity to platinum. The work is original, well performed and logically structured. However, the reviewers feel that the mechanistic insight is confounded by the reliance on a relatively non-specific small molecule. Improvement of the mechanistic insights through more specific perturbations would improve the rigor and impact of this manuscript. Additionally, the reviewers request that more attention to the flow of the manuscript be paid, and that the authors explain the data presented in a more streamlined and easy to follow manner.
+
+Essential revisions:
+
+1) As pointed out by the authors, dactolisib inhibits the activity of many targets other than P70S6K, including "a number of other PI3K/mTOR substrates." That is quite a list of potential off-target mechanisms. The single experiment in vitro looking at knockdown of P70S6K is encouraging, but it is disappointing that the authors did not validate many of the other effects using this potentially more specific perturbation, instead relying on dactolisib. Further validation with a more specific inhibitor and/or knockdown of P70S6K with a minimum of two short hairpins or siRNAs is recommended to support their many other conclusions, including the cell cycle analysis and also preferably the mouse xenograft experiments.
+
+2) The experiments in Figure 1 comparing the 2 hr vs. 72 hr cisplatin treatment is a bit overstated. It is not surprising that the effects of the two different treatments would be distinct in terms of DNA damage, cell signaling activities, or cell fate. Focusing on the effects of the 2 hr treatment is commendable as being more physiologically relevant and is worthwhile including as a main figure; the 72 hr comparison is better as a supplementary figure.
+
+3) Going all the way to PC3 and PC4 to identify an effect is a little unusual, as those principal components should indicate rather modest contributions. This is particularly concerning given that subsequent validations for the most part rely on a more broad-spectrum inhibitor, which could affect many signaling molecules with higher contributions to PC1 and PC2. Are there significant components of PC1 and PC2 that are affected by dactolisib?
+
+4) The flow of the manuscript is uneven, and the manuscript needs a significant amount of attention: For several figures, the number of figures mentioned in the text does not match the described figures, and the presentation of data is confusing. For example, there is no Figure 1G that the authors keep referring to in the text. Explain better Figure 1E. What is IF ratio? Explain better plots in Figure 2 and Figure 3: what does it mean "component 1, component 2 etc?" in what do these components represent? Also, it is a bit confusing why the response to cisplatin in NSCLC cell lines is independent on the TP53 status, while the response to p70S6K inhibitors is dependent on it. Can the authors explain this point better? Additional experimental work is required to support such evidence.
+
+Figure 1B and D: It may be better to use a proliferation assay (MTT or EdU) instead of the number of cells. Also, for Figure 4E and F, add statistics. In the subsection “Response to dactolisib is dependent upon TP53 status”, the link between p21, γ-H2AX and casp3 is not clear. In the third paragraph of the Introduction, the description of previous findings of Fey et al., 2015, is not clear. Clarify the relative sentence. Explain better the choice of molecules belonging to pathways previously implicated in the response to continuous cisplatin exposure, listing them in a table. Explain the function of MCL-1 in this context. Along the same lines, explain better the multi-dimensional analysis. It is difficult to interpret.
+
+In the subsection “Continuous versus pulsed cisplatin treatment”, the authors show that many signaling pathways activated upon continuous exposure of cells with platinum, are not activated after the 2 hours pulse at the 72h time point. The authors consequently define the previous observations of other researcher as "artifacts". The authors need to replace the term 'artifact' with something more professional, such as "previous data that should be reconsidered in the light of these new findings". As another example, the reference to Figure 1C at the end of the subsection “Response to cisplatin is not associated with either TP53 status or drug-efflux”, should be reference to Figure 1E? The axis labels in Figures 2A and D are in odd positions. The axes in Figures 2B and D are unlabeled. Caption for Figure 2D should read, "Visualization of component 3 against component 4…" In the subsection “Validation of model-based observations”, the live cell assay for measuring caspase activity should be better explained in the main text and the caption for Figure 3A. The explanation in the legend for Figure 2—figure supplement 1B is sufficient, it's just confusing because that comes later in the manuscript than the description of the experiment in Figure 3A. The statement "in the absence of p53, we observed that this can be mediated by the related transcription factor p63" is too strongly worded and not fully supported by the findings. A correlation has been shown, not causation. This statement needs to be reworded more cautiously.
+
+5) In Figure 5, the authors show that the p53 null NCI-H358 cells had greater G2 arrest compared to the p53 WT A549 cells following cisplatin pulsing, which they attribute to varying p53 status. To show that this trend is not due to some other factor that differs between these cell lines, the authors should test this after a p53 KO or p53 knockdown with siRNAs or shRNAs in A549 or p53 overexpression in NCI-H358 cells to see if the effect of p53 status is consistent within the same cell line. Also, Figure 7 needs to be toned down especially for the p53 null cells where the authors propose p63 as an effector of cisplatin. For the P70S6K knockdown in Figure 3G, what is the effect on cisplatin sensitive cell lines? This is an important control.

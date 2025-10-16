@@ -1,0 +1,34 @@
+# Mucosal effects of tenofovir 1% gel
+
+## Authors
+
+- Florian Hladik †
+- Adam Burgener
+- Lamar Ballweber
+- Raphael Gottardo
+- Lucia Vojtech
+- Slim Fourati
+- James Y Dai
+- Mark J Cameron
+- Johanna Strobl
+- Sean M Hughes
+- Craig Hoesley
+- Philip Andrew
+- Sherri Johnson
+- Jeanna Piper
+- David R Friend
+- T Blake Ball
+- Ross D Cranston
+- Kenneth H Mayer
+- M Juliana McElrath
+- Ian McGowan
+
+### Affiliations
+
+1. Univeristy of Pittsburgh School of Medicine Pittsburgh United States
+
+† Corresponding author
+
+## Abstract
+
+Tenofovir gel is being evaluated for vaginal and rectal pre-exposure prophylaxis against HIV transmission.  Because this is a new prevention strategy, we broadly assessed its effects on the mucosa.  In MTN-007, a phase-1, randomized, double-blinded rectal microbicide trial, we used systems genomics/proteomics to determine the effect of tenofovir 1% gel, nonoxynol-9 2% gel, placebo gel or no treatment on rectal biopsies (15 subjects/arm).  We also treated primary vaginal epithelial cells from four healthy women with tenofovir in vitro.  After seven days of administration, tenofovir 1% gel had broad-ranging effects on the rectal mucosa, which were more pronounced than, but different from, those of the detergent nonoxynol-9.  Tenofovir suppressed anti-inflammatory mediators, increased T cell densities, caused mitochondrial dysfunction, altered regulatory pathways of cell differentiation and survival, and stimulated epithelial cell proliferation.  The breadth of mucosal changes induced by tenofovir indicates that its safety over longer-term topical use should be carefully monitored.

@@ -1,0 +1,19 @@
+# LAST, a c-Myc-inducible long noncoding RNA, cooperates with CNBP to promote CCND1 mRNA stability in human cells
+
+## Authors
+
+- Limian Cao<sup>1</sup>
+- Pengfei Zhang<sup>1</sup>
+- Jinming Li<sup>2</sup>
+- Mian Wu<sup>1</sup> ([ORCID: 0000-0002-2714-0500](https://orcid.org/0000-0002-2714-0500)) †
+
+### Affiliations
+
+1. School of Life Sciences University of Science and Technology of China Hefei China
+2. Translational Research Institute Henan Provincial People's Hospital Zhengzhou China
+
+† Corresponding author
+
+## Abstract
+
+Cyclin D1 is a critical regulator of cell cycle progression and works at the G1 to S-phase transition. Here, we report the isolation and characterization of the novel c-Myc-regulated lncRNA LAST (LncRNA-Assisted Stabilization of Transcripts), which acts as a CCND1 mRNA stabilizer. Mechanistically, LAST was shown to cooperate with CNBP to bind to the 5′UTR of CCND1 mRNA to protect against possible nuclease targeting. In addition, data from CNBP RIP-seq and LAST RNA-seq showed that CCND1 mRNA might not be the only target of LAST and CNBP; three additional mRNAs were shown to be post-transcriptional targets of LAST and CNBP. In a xenograft model, depletion of LAST diminished and ectopic expression of LAST induced tumor formation, which are suggestive of its oncogenic function. We thus report a previously unknown lncRNA involved in the fine-tuned regulation of CCND1 mRNA stability, without which CCND1 exhibits, at most, partial expression.

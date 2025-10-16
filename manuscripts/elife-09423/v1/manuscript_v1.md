@@ -1,0 +1,18 @@
+# Corticostriatal dynamics encode the refinement of specific behavioral variability during skill learning
+
+## Authors
+
+- Fernando J Santos
+- Rodrigo F Oliveira
+- Xin Jin
+- Rui M Costa †
+
+### Affiliations
+
+1. Champalimaud Neuroscience Programme Fundação Champalimaud Lisbon Portugal rui.costa@neuro.fchampalimaud.org
+
+† Corresponding author
+
+## Abstract
+
+Learning to perform a complex motor task requires the optimization of specific behavioral features to cope with task constraints. We show that when mice learn a novel motor paradigm they differentially refine specific behavioral features. Animals trained to perform progressively faster sequences of lever presses to obtain reinforcement reduced variability in sequence frequency, but increased variability in an orthogonal feature (sequence duration). Trial-to-trial variability of the activity of motor cortex and striatal projection neurons was higher early in training and subsequently decreased with learning, without changes in average firing rate. As training progressed, variability in corticostriatal activity became progressively more correlated with behavioral variability, but specifically with variability in frequency. Corticostriatal plasticity was required for the reduction in frequency variability, but not for variability in sequence duration. These data suggest that during motor learning corticostriatal dynamics encode the refinement of specific behavioral features that change the probability of obtaining outcomes.

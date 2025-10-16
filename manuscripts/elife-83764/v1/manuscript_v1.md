@@ -1,0 +1,19 @@
+# Pan-Canadian survey on the impact of the COVID-19 pandemic on cervical cancer screening and management: cross-sectional survey of healthcare professionals
+
+## Authors
+
+- Mariam El-Zein<sup>1</sup> ([ORCID: 0000-0002-5190-0370](https://orcid.org/0000-0002-5190-0370)) †
+- Rami Ali<sup>1</sup>
+- Eliya Farah<sup>1</sup>
+- Sarah Botting-Provost<sup>1</sup>
+- Eduardo L Franco<sup>1</sup> ([ORCID: 0000-0002-4409-8084](https://orcid.org/0000-0002-4409-8084))
+
+### Affiliations
+
+1. Division of Cancer Epidemiology McGill University Montreal Canada
+
+† Corresponding author
+
+## Abstract
+
+Background: The COVID-19 pandemic has caused disruptions to cancer care by delaying diagnoses and treatment, presenting challenges and uncertainties for both patients and physicians. We conducted a nationwide online survey to investigate the effects of the pandemic and capture modifications, prompted by pandemic-related control measures, on cervical cancer screening-related activities from mid-March to mid-August 2020, across Canada. Methods: The survey consisted of 61 questions related to the continuum of care in cervical cancer screening and treatment: appointment scheduling, tests, colposcopy, follow-up, treatment of pre-cancerous lesions/cancer, and telemedicine. We piloted the survey with 21 Canadian experts in cervical cancer prevention and care. We partnered with the Society of Canadian Colposcopists, Society of Gynecologic Oncology of Canada, Canadian Association of Pathologists, and Society of Obstetricians and Gynecologists of Canada, which distributed the survey to their members via email. We reached out to family physicians and nurse practitioners via MDBriefCase. The survey was also posted on McGill Channels (Department of Family Medicine News and Events) and social media platforms. The data were analyzed descriptively. Results: Unique responses were collected from 510 participants (16 November 2020 - 28 February 2021), representing 418 fully- and 92 partially- completed surveys. Responses were from Ontario (41.0%), British Columbia (21.0%), and Alberta (12.8%), and mostly comprised family physicians/general practitioners (43.7%), and gynecologist/obstetrician professionals (21.6%). Cancelled screening appointments were mainly reported by family physicians/general practitioners (28.3%), followed by gynecologist/obstetrician professionals (19.8%), and primarily occurred in private clinics (30.5%). Decreases in the number of screening Pap tests and colposcopy procedures were consistently observed across Canadian provinces. About 90% reported that their practice/institution adopted telemedicine to communicate with patients. Conclusions: The area most severely impacted by the pandemic was appointment scheduling, with an important level of cancellations reported. Survey results may inform resumptions of various fronts in cervical cancer screening and management. Funding: The present work was supported by the Canadian Institutes of Health Research (operating grant COVID-19 May 2020 Rapid Research Funding Opportunity VR5-172666 Rapid Research competition and foundation grant 143347 to Eduardo L. Franco). Eliya Farah and Rami Ali each received a MSc. stipend from the Department of Oncology, McGill University.

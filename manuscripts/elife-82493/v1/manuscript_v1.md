@@ -1,0 +1,23 @@
+# Quantifying how post-transcriptional noise and gene copy number variation bias transcriptional parameter inference from mRNA distributions
+
+## Authors
+
+- Xiaoming Fu<sup>1</sup> ([ORCID: 0000-0003-4073-9822](https://orcid.org/0000-0003-4073-9822))
+- Heta P Patel<sup>2</sup> ([ORCID: 0000-0002-1618-951X](https://orcid.org/0000-0002-1618-951X))
+- Stefano Coppola<sup>2</sup>
+- Libin Xu<sup>1</sup>
+- Zhixing Cao<sup>1</sup> ([ORCID: 0000-0003-2600-5806](https://orcid.org/0000-0003-2600-5806)) †
+- Tineke L Lenstra<sup>2</sup> ([ORCID: 0000-0002-4440-9962](https://orcid.org/0000-0002-4440-9962)) †
+- Ramon Grima<sup>3</sup> ([ORCID: 0000-0002-1266-8169](https://orcid.org/0000-0002-1266-8169)) †
+
+### Affiliations
+
+1. Key Laboratory of Smart Manufacturing in Energy Chemical Process East China University of Science and Technology Nanjing China
+2. Division of Gene Regulation Oncode Institute Amsterdam Netherlands
+3. School of Biological Sciences University of Edinburgh Edinburgh United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Transcriptional rates are often estimated by fitting the distribution of mature mRNA numbers measured using smFISH (single molecule fluorescence in situ hybridization) with the distribution predicted by the telegraph model of gene expression, which defines two promoter states of activity and inactivity. However, fluctuations in mature mRNA numbers are strongly affected by processes downstream of transcription. In addition, the telegraph model assumes one gene copy, but in experiments cells may have two gene copies as cells replicate their genome during the cell cycle. Whilst it is often presumed that post-transcriptional noise and gene copy number variation affect transcriptional parameter estimation, the size of the error introduced remains unclear. To address this issue, here we measure both mature and nascent mRNA distributions of GAL10 in yeast cells using smFISH and classify each cell according to its cell cycle phase. We infer transcriptional parameters from mature and nascent mRNA distributions, with and without accounting for cell cycle phase and compare the results to live-cell transcription measurements of the same gene. We find that: (i) correcting for cell cycle dynamics decreases the promoter switching rates and the initiation rate, and increases the fraction of time spent in the active state, as well as the burst size; (ii) additional correction for post-transcriptional noise leads to further increases in the burst size and to a large reduction in the errors in parameter estimation. Furthermore, we outline how to correctly adjust for measurement noise in smFISH due to uncertainty in transcription site localisation when introns cannot be labelled. Simulations with parameters estimated from nascent smFISH data, which is corrected for cell cycle phases and measurement noise, leads to autocorrelation functions that agree with those obtained from live-cell imaging.

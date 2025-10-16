@@ -1,0 +1,26 @@
+# Modular, cascade-like transcriptional program of regeneration in Stentor
+
+## Authors
+
+- Pranidhi Sood<sup>1</sup>
+- Athena Lin<sup>2</sup>
+- Connie Yan<sup>1</sup> ([ORCID: 0000-0002-9961-0671](https://orcid.org/0000-0002-9961-0671))
+- Rebecca McGillivary<sup>1</sup>
+- Ulises Diaz<sup>1</sup>
+- Tatyana Makushok<sup>1</sup>
+- Ambika Nadkarni<sup>3</sup>
+- Sindy KY Tang<sup>4</sup>
+- Wallace F Marshall<sup>1</sup> ([ORCID: 0000-0002-8467-5763](https://orcid.org/0000-0002-8467-5763)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States
+2. Department of Biochemistry and BioPhysics University of California, San Francisco San Francisco United States
+3. Department of Mechanical Engineering Stanford University palo alto United States
+4. Department of Mechanical Engineering Stanford University Palo Alto United States
+
+† Corresponding author
+
+## Abstract
+
+The giant ciliate Stentor coeruleus is a classical model system for studying regeneration and morphogenesis at the level of a single cell. The anterior of the cell is marked by an array of cilia, known as the oral apparatus, which can be induced to shed and regenerate in a series of reproducible morphological steps, previously shown to require transcription. If a cell is cut in half, each half will regenerate an intact cell, including a new oral apparatus in the posterior half. We used RNAseq to assay the dynamic changes in Stentor 's transcriptome during regeneration, after both oral apparatus shedding and bisection, allowing us to identify distinct temporal waves of gene expression including kinases, RNA binding proteins, centriole biogenesis factors, and orthologs of human ciliopathy genes implicated in Meckel and Joubert syndromes. By comparing transcriptional profiles of different regeneration events in the same species, we were able to identify distinct modules of gene expression corresponding to oral apparatus regeneration, posterior holdfast regeneration, and recovery after wounding. By measuring gene expression in cells in which translation is blocked, we show that the sequential waves of gene expression involve a cascade mechanism in which later waves of expression are triggered by translation products of early-expressed genes. Among the early-expressed genes, we identified an E2F transcription factor and the conserved RNA binding protein Pumilio as potential regulators of regeneration based on the expression pattern of their predicted target genes. RNAi mediated knockdown experiments indicate that Pumilio is required for regenerating oral structures of the correct size. We show that E2F is involved in the completion of regeneration but is dispensable for earlier steps. This work allows us to classify regeneration genes into groups based on their potential role for regeneration in distinct cell regeneration paradigms, and provides insight into how a single cell can coordinate complex morphogenetic pathways to regenerate missing structures.

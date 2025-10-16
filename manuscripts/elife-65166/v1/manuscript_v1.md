@@ -1,0 +1,16 @@
+# SABRE populates ER domains essential for cell plate maturation and cell expansion influencing cell and tissue patterning
+
+## Authors
+
+- Xiaohang Cheng<sup>1</sup>
+- Magdalena Bezanilla<sup>1</sup> ([ORCID: 0000-0001-6124-9916](https://orcid.org/0000-0001-6124-9916)) †
+
+### Affiliations
+
+1. Department of Biological Sciences Dartmouth College Hanover United States
+
+† Corresponding author
+
+## Abstract
+
+SABRE, which is found throughout eukaryotes and was originally identified in plants, mediates cell expansion, division plane orientation and planar polarity in plants. How and where SABRE mediates these processes remain open questions. We deleted SABRE in Physcomitrium patens , an excellent model for cell biology. SABRE null mutants were stunted, similar to phenotypes in seed plants. Additionally, polarized growing cells were delayed in cytokinesis, sometimes resulting in catastrophic failures. A functional SABRE fluorescent fusion protein localized to dynamic puncta on regions of the ER during interphase and at the cell plate during cell division. Without SABRE , cells accumulated ER aggregates and the ER abnormally buckled along the developing cell plate. Notably, callose deposition was delayed in Δsabre , and in cells that failed to divide, abnormal callose accumulations formed at the cell plate. Our findings revealed a surprising and fundamental role for the ER in cell plate maturation.

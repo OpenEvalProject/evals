@@ -1,0 +1,17 @@
+# Cis-interactions between Notch and its ligands block ligand-independent Notch activity
+
+## Authors
+
+- William Hunt Palmer
+- Dongyu Jia
+- Wu-Min Deng †
+
+### Affiliations
+
+1. Department of Biological Science Florida State University Tallahassee United States wumin@bio.fsu.edu
+
+† Corresponding author
+
+## Abstract
+
+The Notch pathway is integrated into numerous developmental processes and therefore is fine-tuned on many levels, including receptor production, endocytosis, and degradation. Notch is further characterized by a two-fold relationship with its Delta-Serrate (DSL) ligands, as ligands from opposing cells ( trans -ligands) activate Notch, whereas ligands expressed in the same cell ( cis -ligands) inhibit signaling. We show that cells without both cis and trans ligands are able to mediate Notch-dependent developmental events during Drosophila oogenesis, indicating ligand-independent Notch activity occurs when the receptor is free of cis and trans ligands. Furthermore, cis -ligands can reduce Notch activity in endogenous and genetically-induced situations of elevated trans -ligand-independent Notch signaling. We conclude that cis-expressed ligands exert their repressive effect on Notch signaling in cases of trans -ligand independent activation, and propose a new function of cis -inhibition which buffers cells against accidental Notch activity.

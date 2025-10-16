@@ -1,0 +1,20 @@
+# De novo centriole formation in human cells is error-prone and does not require SAS-6 self-assembly
+
+## Authors
+
+- Won-Jing Wang
+- Devrim Acehan
+- Chien-Han Kao
+- Wann-Neng Jane
+- Kunihiro Uryu
+- Meng-Fu (Bryan) Tsou †
+
+### Affiliations
+
+1. Cell Biology Program Memorial Sloan-Kettering Cancer Center New York United States tsoum@mskcc.org
+
+† Corresponding author
+
+## Abstract
+
+Vertebrate centrioles normally propagate through duplication, but in the absence of preexisting centrioles, de novo synthesis can occur. Consistently, centriole formation is thought to strictly rely on self-assembly, involving self-oligomerization of the centriolar protein SAS-6. Here, through reconstitution of de novo synthesis in human cells, we surprisingly found that normal looking centrioles capable of duplication and ciliation can arise in the absence of SAS-6 self-oligomerization. Moreover, whereas canonically duplicated centrioles always form correctly, de novo centrioles are prone to structural errors, even in the presence of SAS-6 self-oligomerization. These results indicate that centriole biogenesis does not strictly depend on SAS-6 self-assembly, and may require preexisting centrioles to ensure structural accuracy, fundamentally deviating from the current paradigm.

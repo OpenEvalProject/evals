@@ -1,0 +1,23 @@
+# The unfolded protein response is required for dendrite morphogenesis
+
+## Authors
+
+- Xing Wei
+- Audrey S Howell
+- Xintong Dong
+- Caitlin A Taylor
+- Roshni C Cooper
+- Jianqi Zhang
+- Wei Zou
+- David R Sherwood
+- Kang Shen †
+
+### Affiliations
+
+1. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States kangshen@stanford.edu
+
+† Corresponding author
+
+## Abstract
+
+Precise patterning of dendritic fields is essential for the formation and function of neuronal circuits. During development, dendrites acquire their morphology by exuberant branching. How neurons cope with the increased load of protein production required for this rapid growth is poorly understood. Here we show that the physiological unfolded protein response (UPR) is induced in the highly branched Caenorhabditis elegans sensory neuron PVD during dendrite morphogenesis. Perturbation of the IRE1 arm of the UPR pathway causes loss of dendritic branches, a phenotype that can be rescued by overexpression of the ER chaperone HSP-4 (a homologue of mammalian BiP/ grp78). Surprisingly, a single transmembrane leucine-rich repeat (LRR) protein, DMA-1, plays a major role in the induction of the UPR and the dendritic phenotype in the UPR mutants. These findings reveal a significant role for the physiological UPR in the maintenance of ER homeostasis during morphogenesis of large dendritic arbors.

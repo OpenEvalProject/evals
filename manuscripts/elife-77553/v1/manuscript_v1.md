@@ -1,0 +1,18 @@
+# Residual force enhancement is affected more by quadriceps muscle length than stretch amplitude
+
+## Authors
+
+- Patrick Bakenecker<sup>1</sup> ([ORCID: 0000-0002-3938-2806](https://orcid.org/0000-0002-3938-2806)) †
+- Tobias Weingarten<sup>1</sup>
+- Daniel Hahn<sup>1</sup> ([ORCID: 0000-0002-9401-5478](https://orcid.org/0000-0002-9401-5478)) †
+- Brent James Raiteri<sup>1</sup> ([ORCID: 0000-0002-2078-9075](https://orcid.org/0000-0002-2078-9075)) †
+
+### Affiliations
+
+1. Human Movement Science Ruhr University Bochum Bochum Germany
+
+† Corresponding author
+
+## Abstract
+
+Little is known about how muscle length affects residual force enhancement (rFE) in humans. We therefore investigated rFE at short, long, and very long muscle lengths within the human quadriceps and patellar tendon (PT) using conventional dynamometry with motion capture (rFE TQ ) and a new, non-invasive shear-wave tensiometry technique (rFE WS ). Eleven healthy male participants performed submaximal (50% max.) EMG-matched fixed-end reference and stretch-hold contractions across these muscle lengths while muscle fascicle length changes of the vastus lateralis (VL) were captured using B-mode ultrasound. We found significant rFE TQ at long (7±5%) and very long (12±8%), but not short (2±5%) muscle lengths, whereas rFE WS was only significant at the very long (38±27%), but not short (8±12%) or long (6±10%) muscle lengths. We also found significant relationships between VL fascicle length and rFE TQ ( r =0.63, p =.001) and rFE WS ( r =0.52, p =.017), but relationships were not significant between VL fascicle stretch amplitude and rFE TQ ( r =0.33, p =.126) or rFE WS ( r =0.29, p =.201). PT shear-wave speed-angle relationships did not agree with estimated PT force-angle relationships, which indicates that estimating PT loads from shear-wave tensiometry might be inaccurate. We conclude that increasing muscle length rather than stretch amplitude contributes more to rFE during submaximal voluntary contractions of the human quadriceps.

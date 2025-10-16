@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- William Catterall, University of Washington , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.13073.041](https://doi.org/10.7554/eLife.13073.041)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your work entitled "Deficit in inhibitory neuron activity and amelioration by Cannabidiol in a human cellular model of Dravet Syndrome" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by William A. Catterall as the Reviewing Editor and Gary Westbrook as the Senior Editor. One of the two reviewers involved in the review of your submission has agreed to reveal their identity: Reviewer, Scott Baraban.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Dravet Syndrome is an intractable genetic epilepsy syndrome with substantial premature death and severe co-morbidities, which are caused by mutations in the SCN1A gene encoding Nav1.1 voltage-gated brain sodium channel. Induced pluripotent stem cell methods are used here to determine the functional impact of a Dravet Syndrome mutation. Previous published work on iPSC-derived neurons has given inconsistent results. The highlights of this work are: 1. well-developed and well-defined iPSC-derived neurons; 2. evidence that a Dravet Syndrome mutation impairs the sodium currents and excitability of inhibitory neurons; 3. evidence that excitatory pyramidal cells are unaffected; and 4. evidence that the nonpsychotropic marijuana component cannabidiol inhibits excitability of excitatory neurons and increases excitability of inhibitory neurons.
+
+Summary and essential revisions:
+
+The recommendation of the reviewers and guest editor is for major revisions and resubmission.
+
+1) The work on cannabidiol is considered to be premature and tangential to the main thrust of this manuscript, and therefore we recommend that it be developed as a separate manuscript for submission elsewhere.
+
+2) The reviewers and guest editor are also concerned that, as now written, the manuscript seems relevant to only a single Dravet Syndrome mutation out of nearly one thousand. However, the significance of the work could be substantially enhanced by demonstrating that this mutation is a complete, or nearly complete, loss-of-function mutation, because the majority of Dravet Syndrome mutations are thought to be complete loss-of-function. This study could therefore serve as a model for this large set of disease mutations. This question could be addressed by introducing a single-residue mutation to block tetrodotoxin inhibition, expressing the mutant and an appropriate control in your iPSC-derived neurons, blocking endogenous sodium channels with tetrodotoxin, and determining the functionality of the toxin-resistant Dravet Syndrome mutant. Several groups have used this approach successfully in other contexts.
+
+3) An additional point of interest is to determine whether this mutant is expressed as a protein at all, in order to assess whether dominant negative effects of the mutant on wild-type sodium channels are possible through association with a limiting supply of auxiliary subunits or through other means.
+
+4) Interpretation of these interesting findings, in the context of an intact network, requires a more complete understanding of the precise interneuron identity. Although this may seem a bit trivial at first glance, it is critical to how the two major findings presented here are interpreted. We have learned much about interneuron diversity and interneuron origins since the initial 2006 Catterall et al. identification of a defect in firing associated with a GABA-expressing bipolar neuron from Nav1.1 mutant mice. Rubenstein, Fishell, Marin and many others have carefully classified GABA-expressing neurons into a wide variety of sub-populations with distinct embryonic origins. From this literature, and looking at the data presented here – putative interneurons with a telencephalic identity express GABA or GAD (30-50%), and of these 50% express calretinin with a very small percentage expressing SST and none expressing PV. This would suggest that the iPS protocol used enriches for GABA-expressing CR+ interneurons and would be more in line with a Caudal (not Medial) Ganglionic Eminence origin designation; current-clamp firing properties shown in Figures 3G and 5E are also consistent with a CR+ Regular-Spiking Non-Pyramidal cell designation. Interneurons derived from the MGE are primarily parvalbumin+ (~65%) and somatostatin+ (~35%) sub-types and it is rare to have CR+ interneurons derived from an MGE lineage (Anderson et al. Cereb. Cortex 2002; Xu et al. J. Neurosci. 2004; Butt et al. Neuron 2005; Fishell et al. Novartis Found. Symp. 2007; Gelman et al. Jaspers 2012). It would be helpful to know if the interneurons shown here also express 5HT3a receptors (see below), VIP or CoupTFII, as this would further help in distinguishing interneuron sub-populations.
+
+5) If the telencephalic interneurons shown here are primarily CGE-derived CR+ interneurons, an interneuron cell population that can target other interneurons (Freund and Buzsaki, Hippocampus 1996; Gonchar and Burkhalter, Cereb. Cortex 1999; Chamberland et al. Front. Cell Neurosci. 2010; Urban et al. Acta Biol. Hung. 2002), then the interpretation that DS-derived interneurons have reduced sodium current and reduced firing would functionally result in a loss of inhibitory tone onto inhibitory neurons or an overall disinhibition placed in the context of a compete network environment. This would not be a reasonable explanation for epilepsy in DS, as it would be associated with increased network excitability and likely an increased propensity toward seizures. Nor would this be entirely consistent with mouse data from Catterall and other groups who have demonstrated that Cre-mediated inactivation of Nav1.1 in SST+ or PV+ interneuron sub-populations (which primarily target excitatory neurons) can result in epileptic phenotypes.
+
+6) Firing properties depicted are not entirely consistent with those expected for mature interneurons or principal cells. First, the representative traces in Figure 5 do not match very well with the quantitative input-output plots. The excitatory neuron appears to exhibit spike frequency accommodation, as expected in the plot but not the sample traces. Whereas the control interneuron, which would not be expected to show SFA does appear to accommodate. Second, the spike firing rates shown for interneurons and excitatory neurons appear equivalent. But mature interneurons should have much higher firing frequencies.

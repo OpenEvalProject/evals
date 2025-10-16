@@ -1,0 +1,18 @@
+# Structural determinants of nuclear export signal orientation in binding CRM1
+
+## Authors
+
+- Ho Yee Joyce Fung
+- Szu-chin Fu
+- Chad A Brautigam
+- Yuh Min Chook †
+
+### Affiliations
+
+1. Department of Pharmacology University of Texas Southwestern Medical Center Dallas United States yuhmin.chook@utsouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+The Chromosome Region of Maintenance 1 (CRM1) protein mediates nuclear export of hundreds of proteins through recognition of their nuclear export signals (NESs), which are highly variable in sequence and structure. The plasticity of the CRM1-NES interaction is not well understood, as there are many NES sequences that seem incompatible with structures of the NES-bound CRM1 groove. Crystal structures of CRM1 bound to two  different NESs with unusual sequences showed the NES peptides binding the CRM1 groove in the opposite orientation (minus) to that of previously studied NESs (plus). Comparison of minus and plus NESs identified structural and sequence determinants for NES orientation. The binding of NESs to CRM1 in both orientations results in a large expansion in NES consensus patterns and therefore a corresponding expansion of potential NESs in the proteome.

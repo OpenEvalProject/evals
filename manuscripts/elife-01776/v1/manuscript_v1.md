@@ -1,0 +1,16 @@
+# p50-Associated COX2 Extragenic RNA (PACER) activates COX-2 gene expression by occluding repressive NF-κB complexes
+
+## Authors
+
+- Michal Krawczyk
+- Beverly M Emerson †
+
+### Affiliations
+
+1. Regulatory Biology Laboratory Salk Institute for Biological Studies La Jolla United States emerson@salk.edu
+
+† Corresponding author
+
+## Abstract
+
+Deregulated expression of COX-2 has been causally linked to development, progression and outcome of several types of human cancer. We describe a novel fundamental level of transcriptional control of COX-2 expression. Using primary human mammary epithelial cells and monocyte/macrophage cell lines we show that the chromatin boundary/insulator factor CTCF establishes an open chromatin domain and induces expression of a long non-coding RNA within the upstream promoter region of COX-2. Upon induction of COX-2 expression, the lncRNA associates with p50, a repressive subunit of NF-κB, and occludes it from the COX-2 promoter, potentially facilitating interaction with activation-competent NF-κB p65/p50 dimers. This enables recruitment of the p300 histone acetyltransferase, domain-wide increase in histone acetylation and assembly of RNA Polymerase II initiation complexes. Our findings reveal an unexpected mechanism of gene control by lncRNA-mediated repressor occlusion and identify the COX-2-lncRNA, PACER, as a new potential target for COX-2-modulation in inflammation and cancer.

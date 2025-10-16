@@ -1,0 +1,19 @@
+# Selective sorting and destruction of mitochondrial membrane proteins in aged yeast
+
+## Authors
+
+- Adam L Hughes †
+- Casey E Hughes
+- Kiersten A Henderson
+- Nina Yazvenko
+- Daniel E Gottschling †
+
+### Affiliations
+
+1. Division of Basic Sciences Fred Hutchinson Cancer Research Center Seattle United States dang@calicolabs.com
+
+† Corresponding author
+
+## Abstract
+
+Mitochondrial dysfunction is a hallmark of aging, and underlies the development of many diseases. Cells maintain mitochondrial homeostasis through a number of pathways that remodel the mitochondrial proteome or alter mitochondrial content during times of stress or metabolic adaptation. Here, using yeast as a model system, we identify a new mitochondrial degradation system that remodels the mitochondrial proteome of aged cells. Unlike many common mitochondrial degradation pathways, this system selectively removes a subset of membrane proteins from the mitochondrial inner and outer membranes, while leaving the remainder of the organelle intact. Selective removal of preexisting proteins is achieved by sorting into a mitochondrial-derived compartment, or MDC, followed by release through mitochondrial fission and elimination by autophagy. Formation of MDCs requires the import receptors Tom70/71, and failure to form these structures exacerbates preexisting mitochondrial dysfunction, suggesting that the MDC pathway provides protection to mitochondria in times of stress.

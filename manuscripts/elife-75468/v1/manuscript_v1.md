@@ -1,0 +1,21 @@
+# The organic cation Transporter 2 regulates dopamine D1 receptor signaling at the Golgi apparatus
+
+## Authors
+
+- Natasha M Puri<sup>1</sup>
+- Giovanna R Romano<sup>2</sup>
+- Ting-Yu Lin<sup>3</sup>
+- Quynh N Mai<sup>3</sup> ([ORCID: 0000-0002-6199-2096](https://orcid.org/0000-0002-6199-2096))
+- Roshanak Irannejad<sup>3</sup> ([ORCID: 0000-0001-8702-2285](https://orcid.org/0000-0001-8702-2285)) †
+
+### Affiliations
+
+1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States
+2. Biochemistry Department Weill Cornell Medicine New York United States
+3. Cardiovascular Research Institute University of California, San Francisco San Francisco United States
+
+† Corresponding author
+
+## Abstract
+
+Dopamine is a key catecholamine in the brain and the kidney, where it is involved in a number of physiological functions such as locomotion, cognition, emotion, endocrine regulation and renal function. As a membrane impermeant hormone and neurotransmitter, dopamine is thought to signal by binding and activating dopamine receptors, members of the G protein couple receptor (GPCR) family, only on the plasma membrane. Here, using novel nanobody-based biosensors, we demonstrate for the first time that the dopamine D1 receptor (D1DR), the primary mediator of dopaminergic signaling in the brain and kidney, not only functions on the plasma membrane but becomes activated at the Golgi apparatus in the presence of its ligand. We present evidence that activation of the Golgi pool of D1DR is dependent on Organic Cation Transporter 2 (OCT2), a dopamine transporter, providing an explanation for how the membrane impermeant dopamine accesses subcellular pools of D1DR. We further demonstrate that dopamine activates Golgi-D1DR in murine striatal medium spiny neurons (MSN) and this activity depends on OCT2 function.  We also introduce a new approach to selectively interrogate compartmentalized D1DR signaling by inhibiting Gas coupling, using a nanobody-based chemical recruitment system.  Using this strategy, we show that Golgi-localized D1DRs regulate cAMP production and mediate local protein kinase A activation. Together, our data suggest that spatially compartmentalized signaling hubs are previously unappreciated regulatory aspects of D1DR signaling. Our data provide further evidence for the role of transporters in regulating subcellular GPCR activity.

@@ -1,0 +1,22 @@
+# Loss of the multifunctional RNA-binding protein RBM47 as a source of selectable metastatic traits in breast cancer
+
+## Authors
+
+- Sakari Vanharanta
+- Christina B Marney
+- Weiping Shu
+- Manuel Valiente
+- Yilong Zou
+- Aldo Mele
+- Robert B Darnell
+- Joan Massagué †
+
+### Affiliations
+
+1. Cancer Biology and Genetics Program Memorial Sloan-Kettering Cancer Center New York United States j-massague@ski.mskcc.org
+
+† Corresponding author
+
+## Abstract
+
+The mechanisms through which cancer cells lock in altered transcriptional programs in support of metastasis remain largely unknown. Through integrative analysis of clinical breast cancer gene expression datasets, cell line models of breast cancer progression, and mutation data from cancer genome resequencing studies, we identified RNA binding motif protein 47 (RBM47) as a suppressor of breast cancer progression and metastasis. RBM47 inhibited breast cancer re-initiation and growth in experimental models. Transcriptome-wide HITS-CLIP analysis revealed widespread RBM47 binding to mRNAs, most prominently in introns and 3'UTRs. RBM47 altered splicing and abundance of a subset of its target mRNAs. Some of the mRNAs stabilized by RBM47, as exemplified by dickkopf WNT signaling pathway inhibitor 1, inhibit tumor progression downstream of RBM47. Our work identifies RBM47 as an RNA-binding protein that can suppress breast cancer progression and demonstrates how the inactivation of a broadly targeted RNA chaperone enables selection of a pro-metastatic state.

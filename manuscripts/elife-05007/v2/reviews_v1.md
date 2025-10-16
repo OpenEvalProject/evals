@@ -1,0 +1,27 @@
+# Peer review - Round 1
+
+Editors:
+- Daniel E Gottschling, Fred Hutchison Cancer Research Center , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.05007.028](https://doi.org/10.7554/eLife.05007.028)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Heritable capture of heterochromatin dynamics in Saccharomyces cerevisiae” for consideration at eLife. Your article has been favorably evaluated by Richard Losick (Senior editor), Dan Gottschling (guest Reviewing editor), and 2 reviewers.
+
+The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+This manuscript presents extremely interesting results concerning the regulation of transcription of the silent mating type cassettes in S. cerevisiae. By using the Cre–regulated RFP–GFP reporter described in the paper, the authors can stably capture exceedingly rare expression from within a silent mating type cassette. Using this tool, they investigate the frequency of expression of these cassettes in both wild–type cells and in a set of mutants. One highlight of the manuscript is that the system seems to work and work well. It shows that there is a very low level of expression in wild–type that was not previously detectable. A second highlight is that the experiments reveal that Sir1 is required for more than establishment of silencing, as the data reveal that it is also likely required for maintenance. Other results provide evidence that the histone deacetylase Hst3 is required for silencing and that the absolute levels of heterochromatin components—histones and Sir proteins—are also important. Overall, the development of the reporter system as well as the specific results will be of interest to a large number of scientists.
+
+The referees agreed that the data are interesting and overall of good technical quality. However, there was also a consensus that the promise of quantitative measurement was not carried forward in the mutant analysis, and that this should be done before acceptance of the manuscript. This and a few other concerns to be addressed are presented below:
+
+1) Many of the mutant phenotypes in the manuscript are not described in a very quantitative fashion, as they are described and shown only as increased levels of green sectoring. This is true for effects of Sir protein levels, H3/H4 levels, Hst3 effects, H3K56Q mutants, and more. But one of the important points of this manuscript is the quantitative nature of the assay. The reviewers see this initial work as the chance to set the standard in the field for all other follow up studies using this assay. Thus before endorsing this work for acceptance, all the mutant analyses should be carried out via a half sector analysis to provide a quantitative measurement for comparison (rather than the semi–quantitative analysis of relative sectoring that was presented). This will help alleviate uninterpretable comparisons that occur between labs or even between mutants.
+
+2) It is clear that the expression of GFP is dependent upon Cre expression. However, the level of Cre expression and the efficiency at which it mediates recombination at the lox sites is not clear. That is, the FISH experiments tell us that very few wt cells have a Cre signal above background (2–4 spots versus 1 spot). However they do not tell us whether 2–4 spots of Cre are sufficient for recombination. At best this can only be inferred from comparing the frequency of FISH signals to half–sectors. Please acknowledge/define these limitations of your interpretation in the text.
+
+3) There are a few concerns/comments about the Hst3/H3K56 experiments. First, in Figure 10, the authors conclude that an increased level of sectoring is caused by reduced levels of H3/H4 based on comparing wild–type strains to those with only one copy of H3/H4 on a plasmid. A change in H3/H4 level seems like the likeliest explanation, but other explanations seem possible in the absence of careful measurements of histone levels. Second, the analysis of the amino acid changes at H3K56 (Figure 9) appears to have been done in strains with this same configuration of H3/H4 genes; that is, with a perturbation of sectoring levels already in place. It's hard to know if the altered histone gene configuration might affect the degree of the change caused by the H3K56 changes. It is suggested these two sections be combined to present the results and possible caveats more clearly. Ideally, what is currently Figures 8–10 would be part of the same figure. Finally, there's evidence that an Hst4 deletion causes little phenotype except when combined with an Hst3 deletion, in which case it enhances the Hst3 phenotype. Did the authors test an Hst3 Hst4 double mutant for sectoring levels? If they did not, it would still be helpful to acknowledge the possibility that the double mutant might show an even stronger phenotype.

@@ -1,0 +1,18 @@
+# A neural command circuit for grooming movement control
+
+## Authors
+
+- Stefanie Hampel
+- Romain Franconville
+- Julie H Simpson
+- Andrew M Seeds †
+
+### Affiliations
+
+1. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States seeds.andrew@gmail.com
+
+† Corresponding author
+
+## Abstract
+
+Animals perform many stereotyped movements, but how nervous systems are organized for controlling specific movements remains unclear. Here we use anatomical, optogenetic, behavioral, and physiological techniques to identify a circuit in Drosophila melanogaster that can elicit stereotyped leg movements that groom the antennae. Mechanosensory chordotonal neurons detect displacements of the antennae and excite three different classes of functionally connected interneurons, which include two classes of brain interneurons and different parallel descending neurons. This multilayered circuit is organized such that neurons within each layer are sufficient to specifically elicit antennal grooming. However, we find differences in the durations of antennal grooming elicited by neurons in the different layers, suggesting that the circuit is organized to both command antennal grooming and control its duration. As similar features underlie stimulus-induced movements in other animals, we infer the possibility of a common circuit organization for movement control that can be dissected in Drosophila .

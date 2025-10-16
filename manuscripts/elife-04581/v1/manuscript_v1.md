@@ -1,0 +1,21 @@
+# Developmental mechanism of the periodic membrane skeleton in axons
+
+## Authors
+
+- Guisheng Zhong
+- Jiang He
+- Ruobo Zhou
+- Damaris Lorenzo
+- Hazen P Babcock
+- Vann Bennett
+- Xiaowei Zhuang †
+
+### Affiliations
+
+1. Department of Chemistry and Chemical Biology Howard Hughes Medical Institute, Harvard University Cambridge United States zhuang@chemistry.harvard.edu
+
+† Corresponding author
+
+## Abstract
+
+Actin, spectrin and associated molecules form a periodic sub-membrane lattice structure in axons. How this membrane skeleton is developed and why it preferentially forms in axons are unknown. Here, we studied the developmental mechanism of this lattice structure. We found that this structure emerged early during axon development and propagated from proximal regions to distal ends of axons. Components of the axon initial segment were recruited to the lattice late during development. Formation of the lattice was regulated by the local concentration of βII spectrin, which is higher in axons than in dendrites. Increasing the dendritic concentration of βII spectrin by over-expression or by knocking out ankyrin B induced the formation of the periodic structure in dendrites, demonstrating that the spectrin concentration is a key determinant in the preferential development of this structure in axons and that ankyrin B is critical for the polarized distribution of βII spectrin in neurites.

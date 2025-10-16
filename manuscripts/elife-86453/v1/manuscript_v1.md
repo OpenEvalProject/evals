@@ -1,0 +1,19 @@
+# Resting-state fMRI signals contain spectral signatures of local hemodynamic response timing
+
+## Authors
+
+- Sydney M Bailes<sup>1</sup> ([ORCID: 0000-0003-1712-9233](https://orcid.org/0000-0003-1712-9233))
+- Daniel EP Gomez<sup>1</sup>
+- Beverly Setzer<sup>1</sup>
+- Laura D Lewis<sup>2</sup> ([ORCID: 0000-0002-4003-0277](https://orcid.org/0000-0002-4003-0277)) †
+
+### Affiliations
+
+1. Department of Biomedical Engineering Boston University Boston United States
+2. Institute for Medical Engineering and Science Massachusetts Institute of Technology Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Functional magnetic resonance imaging (fMRI) has proven to be a powerful tool for noninvasively measuring human brain activity; yet, thus far, fMRI has been relatively limited in its temporal resolution. A key challenge is understanding the relationship between neural activity and the blood-oxygenation-level-dependent (BOLD) signal obtained from fMRI, generally modeled by the hemodynamic response function (HRF). The timing of the HRF varies across the brain and individuals, confounding our ability to make inferences about the timing of the underlying neural processes. Here we show that resting-state fMRI signals contain information about HRF temporal dynamics that can be leveraged to understand and characterize variations in HRF timing across both cortical and subcortical regions. We found that the frequency spectrum of resting-state fMRI signals significantly differs between voxels with fast versus slow HRFs in human visual cortex. These spectral differences extended to subcortex as well, revealing significantly faster hemodynamic timing in the lateral geniculate nucleus of the thalamus. Ultimately, our results demonstrate that the temporal properties of the HRF impact the spectral content of resting-state fMRI signals and enable voxel-wise characterization of relative hemodynamic response timing. Furthermore, our results show that caution should be used in studies of resting-state fMRI spectral properties, because differences in fMRI frequency content can arise from purely vascular origins. This finding provides new insight into the temporal properties of fMRI signals across voxels, which is crucial for accurate fMRI analyses, and enhances the ability of fast fMRI to identify and track fast neural dynamics.

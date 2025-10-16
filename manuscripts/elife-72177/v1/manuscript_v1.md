@@ -1,0 +1,17 @@
+# Estimating dispersal rates and locating genetic ancestors with genome-wide genealogies
+
+## Authors
+
+- Matthew Osmond<sup>1</sup> ([ORCID: 0000-0001-6170-8182](https://orcid.org/0000-0001-6170-8182)) †
+- Graham Coop<sup>2</sup> ([ORCID: 0000-0001-8431-0302](https://orcid.org/0000-0001-8431-0302)) †
+
+### Affiliations
+
+1. Department of Ecology and Evolutionary Biology University of Toronto Toronto Canada
+2. Center for Population Biology University of California, Davis Davis United States
+
+† Corresponding author
+
+## Abstract
+
+Spatial patterns in genetic diversity are shaped by individuals dispersing from their parents and larger-scale population movements. It has long been appreciated that these patterns of movement shape the underlying genealogies along the genome leading to geographic patterns of isolation by distance in contemporary population genetic data. However, extracting the enormous amount of information contained in genealogies along recombining sequences has, until recently, not been computationally feasible. Here we capitalize on important recent advances in genome-wide gene-genealogy reconstruction and develop methods to use thousands of trees to estimate per-generation dispersal rates and to locate the genetic ancestors of a sample back through time. We take a likelihood approach in continuous space using a simple approximate model (branching Brownian motion) as our prior distribution of spatial genealogies. After testing our method with simulations we apply it to Arabidopsis thaliana. We estimate a dispersal rate of roughly 60km2 per generation, slightly higher across latitude than across longitude, potentially reflecting a northward post-glacial expansion. Locating ancestors allows us to visualize major geographic movements, alternative geographic histories, and admixture. Our method highlights the huge amount of information about past dispersal events and population movements contained in genome-wide genealogies.

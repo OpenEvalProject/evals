@@ -1,0 +1,22 @@
+# The NFκB-inducing kinase is essential for the developmental programming of skin-resident and IL-17-producing γδ T cells
+
+## Authors
+
+- Florian Mair
+- Stefanie Joller
+- Romy Hoeppli
+- Lucas Onder
+- Matthias Hahn
+- Burkhard Ludewig
+- Ari Waisman
+- Burkhard Becher †
+
+### Affiliations
+
+1. Institute of Experimental Immunology University of Zurich Zurich Switzerland becher@immunology.uzh.ch
+
+† Corresponding author
+
+## Abstract
+
+γδ T cells contribute to first line immune defense, particularly through their ability for rapid production of proinflammatory cytokines. The cytokine profile of γδ T cells is hard-wired already during thymic development. Yet, the molecular pathways underlying this phenomenon are incompletely understood. Here we show that signaling via the NFκB inducing kinase (NIK) is essential for the formation of a fully functional γδ T cell compartment. In the absence of NIK, development of Vγ5+ dendritic epidermal T cells (DETCs) was halted in the embryonic thymus, and impaired NIK function caused a selective loss of IL-17 expression by γδ T cells. Using a novel conditional mutant of NIK, we could show in vivo that NIK signaling in thymic epithelial cells is essential for the thymic hardwiring of γδ T cell cytokine production.

@@ -1,0 +1,21 @@
+# Contrast-polarity specific mapping improves efficiency of neuronal computation for collision detection
+
+## Authors
+
+- Richard Burkett Dewell<sup>1</sup> ([ORCID: 0000-0003-2430-8184](https://orcid.org/0000-0003-2430-8184)) †
+- Ying Zhu<sup>2</sup>
+- Margaret Eisenbrandt<sup>1</sup> ([ORCID: 0000-0002-0190-1922](https://orcid.org/0000-0002-0190-1922))
+- Richard Morse<sup>3</sup>
+- Fabrizio Gabbiani<sup>1</sup> ([ORCID: 0000-0003-4966-3027](https://orcid.org/0000-0003-4966-3027))
+
+### Affiliations
+
+1. Department of Neuroscience Baylor College of Medicine Houston United States
+2. Houston Methodist Research Institute Houston United States
+3. Rice University Houston United States
+
+† Corresponding author
+
+## Abstract
+
+Neurons receive information through their synaptic inputs, but the functional significance of how those inputs are mapped on to a cell's dendrites remains unclear. We studied this question in a grasshopper visual neuron that tracks approaching objects and triggers escape behavior before an impending collision. In response to black approaching objects, the neuron receives OFF excitatory inputs that form a retinotopic map of the visual field onto compartmentalized, distal dendrites. Subsequent processing of these OFF inputs by active membrane conductances allows the neuron to discriminate the spatial coherence of such stimuli. In contrast, we show that ON excitatory synaptic inputs activated by white approaching objects map in a random manner onto a more proximal dendritic field of the same neuron. The lack of retinotopic synaptic arrangement results in the neuron’s inability to discriminate the coherence of white approaching stimuli. Yet, the neuron retains the ability to discriminate stimulus coherence for checkered stimuli of mixed ON/OFF polarity. The coarser mapping and processing of ON stimuli thus has a minimal impact, while reducing the total energetic cost of the circuit. Further, we show that these differences in ON/OFF neuronal processing are behaviorally relevant, being tightly correlated with the animal’s escape behavior to light and dark stimuli of variable coherence. Our results show that the synaptic mapping of excitatory inputs affects the fine stimulus discrimination ability of single neurons and document the resulting functional impact on behavior.

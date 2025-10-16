@@ -1,0 +1,39 @@
+# Peer review - Round 1
+
+Editors:
+- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.27706.035](https://doi.org/10.7554/eLife.27706.035)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Global transcriptional analysis identifies a novel role for SOX4 in tumor-induced angiogenesis" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Michael Green as the Reviewing Editor and Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+Vervoort et al. report on the identification of a SOX4 breast cancer transcriptional gene set associated with angiogenesis. Using a conditional system where SOX4 is induced and immunoprecipitated, the authors identify potential transcriptional targets of SOX4 identified in a human mammary epithelial line and two breast cancer lines. Gene Set Enrichment Analysis reveals Gene Ontology categories such as migration, extracellular matrix, and angiogenesis. The authors focus on one target gene – endothelin-1 – and provide data consistent with direct transcriptional targeting by SOX4. Consistent with an angiogenic role for SOX4, conditioned media from SOX4-over-expressing mammary epithelial cells exhibit modestly enhanced angiogenic activity, which is partially dependent on endothelial 1. Implantation of the SOX4-over-expressing mammary epithelial line and SOX4-depleted MDA-MB-231 breast cancer line in zebrafish reveal a pro-angiogenic role for SOX4 in this system. SOX4 depletion is also found to reduce tumor angiogenesis and orthotopic metastasis in an MDA-MB-231 xenograft model. Finally, human tumor tissue-microarray analyses reveal a positive association between SOX4 protein levels and metastatic relapse and tumor blood vessel density. These observations are consistent with angiogenesis promotion constituting one phenotype downstream of SOX4 and reveal endothelin-1 to represent a potential direct target and downstream mediator of SOX4's role in angiogenesis and metastasis.
+
+Essential revisions:
+
+1) In multiple experiments, the authors employ a single RNAi or shRNA to draw conclusions. One cannot exclude such observations representing off-target effects. Ideally, all experiments should be done with an independent RNAi. However, I'm willing to accept the use of a second independent RNAi in a single study that I deem most germane to the conclusion of the paper: Figure 6. The authors should generate a second SOX4 hairpin expressing breast cancer line and conduct a primary tumor growth and metastasis assay. In these same cells, when the authors validate the knockdown, they should validate reduction in expression of endothelin-1. In Figure 6A-B, the impact of SOX4 depletion on endothelin-1 is not that robust. A second hairpin with potentially better knockdown may reveal a greater effect. Moreover, Figure 6A-B appears to represent technical replicates. Biological replicates are essential. Moreover, the authors should generate pre-mRNA primers to ensure that the effects of SOX4 depletion also impact pre-mRNA transcript levels rather than solely SOX4 mRNA levels.
+
+2) The endothelin-1 mutant reporter and its wildtype variant should be transfected into a breast cancer line (such as the cells generated above in (1)-along with its 2 SOX4 depleted lines) to demonstrate that endogenous SOX4 depletion leads to reduced endothelin-1 transcriptional reporter expression. This is essential, since the over-expression studies are non-physiological.
+
+3) Citing of literature on prior papers on SOX4 and transcriptional targets regulating invasion.
+
+4) When SOX4 was originally implicated in loss-of-function studies as a promoter of breast cancer metastasis, its associated phenotype implicated was invasiveness. Many subsequent papers have shown SOX4 to promote invasion in a number of systems. The authors should be commended for identifying an additional phenotype downstream of SOX4, but the Introduction does not discuss invasion as a key aspect of SOX4's biology in cancer. They mention EMT being associated, but in past work, enhanced invasiveness rather than EMT has been repeatedly implicated. This past work is consistent with the authors' identification of migration, ECM, and lack of observations of genes such as SNAI1, SNAI2, or TWIST1 being modulated. The authors should cite the many prior papers by multiple groups on SOX4 describing its roles in invasiveness, including studies that identify transcriptional targets of SOX4 as pro-invasive genes and promoters of metastasis, including studies in breast cancer.
+
+5) One major issue is whether the pro-angiogenic function of SOX4 is a conserved function of SOX4 in biology. Figure 1 shows that SOX4 mainly binds to regions of open chromatin, and then Figure 1—figure supplement 1H-I show that there is very little overlap between ChIP-seq data from HMLE, MB-231 and HCC1954. Therefore, the authors concluded that SOX4-target genes are very context dependent. Most of data on the connection of SOX4 with EDN1 and angiogenesis is based on overexpressing SOX4. Only endogenous SOX4 knockdown was performed in MB-231 cells with a single shRNA and showed very limited data (no SOX4 or EDN1 protein expression by western). A large panel of cancer cell lines should be examined to determine whether there is a correlation between SOX4 and EDN1. Figure 3— figure supplement 2C attempts to show that there is a correlation between SOX4 and EDN-1 in TCGA data. However, R=0.139 suggests that 80% samples show no correlation, further weakening the argument that SOX4 and EDN-1 is correlated at the RNA level. Therefore, data presented in the paper are not sufficient to conclude whether the link between SOX4 and EDN1 pays a major role in angiogenesis.
+
+6) Another major issue is whether the observed phenotypes of SOX4 in cancer is due to defects in angiogenesis. Figure 6 is the only data to look at the effects of knocking down endogenous SOX4 on tumor formation and metastasis. Given the major role of angiogenesis in promoting primary tumor formation, it is surprising that SOX4 knockdown has no effect on primary tumor growth despite increases in vessel area and vessel count. As the authors discussed in the Introduction, previous studies show that SOX4 induces EMT in various tumor cells. Therefore, the observed decrease in lung metastasis could be due to an EMT defect. Similarly, the correlation between SOX4 upregulation and poor prognosis in human breast cancer in Figure 7 could also be due to an EMT defect, instead of angiogenesis.
+
+7) Figure 4A-4E show very mild effects of SCM from SOX4-overexpressing cells. In Figure 4D, since siEDN alone without SCM already affected cell migration, it is unclear whether siEDN with SCM indeed regulates the effect of SOX4 or independent of SOX4.
+
+8) The authors convincingly show that Sox4 induces an angiogenic phenotype on endothelial cells, and that it is primarily mediated by endothelin-1. However, in the in vivo studies, the link between this angiogenic phenotype and metastatic dissemination is merely correlative. Sox4 knock down in MDA-MB-231 cells has been already shown to reduce metastatic dissemination through a cell migration and invasion defect. Is restoration of ET-1 in the context of Sox-4 knockdown sufficient to restore metastatic ability, as the authors suggest?

@@ -1,0 +1,30 @@
+# The functional O-mannose glycan on α-dystroglycan contains a phospho-ribitol primed for matriglycan addition
+
+## Authors
+
+- Jeremy L Praissman
+- Tobias Willer
+- M Osman Sheikh
+- Ants Toi
+- David Chitayat
+- Yung-Yao Lin
+- Hane Lee
+- Stephanie H Stalnaker
+- Shuo Wang
+- Pradeep Kumar Prabhakar
+- Stanley F Nelson
+- Derek L Stemple
+- Steven A Moore
+- Kelley W Moremen
+- Kevin P Campbell
+- Lance Wells †
+
+### Affiliations
+
+1. Complex Carbohydrate Research Center University of Georgia Athens United States lwells@ccrc.uga.edu
+
+† Corresponding author
+
+## Abstract
+
+Multiple glycosyltransferases are essential for the proper modification of alpha-dystroglycan, as mutations in the encoding genes cause congenital/limb-girdle muscular dystrophies. Here we elucidate further the structure of an O-mannose-initiated glycan on alpha-dystroglycan that is required to generate its extracellular matrix-binding polysaccharide. This functional glycan contains a novel ribitol structure that links a phosphotrisaccharide to xylose. ISPD is a CDP-ribitol (ribose) pyrophosphorylase that generates the reduced sugar nucleotide for the insertion of ribitol in a phosphodiester linkage to the glycoprotein. TMEM5 is a UDP-xylosyl transferase that elaborates the structure. We demonstrate in a zebrafish model as well as in a human patient that defects in TMEM5 result in muscular dystrophy in combination with abnormal brain development. Thus, we propose a novel structure - a ribitol in a phosphodiester linkage - for the moiety on which TMEM5, B4GAT1, and LARGE act to generate the functional receptor for ECM proteins having LG domains.

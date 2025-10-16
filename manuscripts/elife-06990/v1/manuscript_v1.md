@@ -1,0 +1,23 @@
+# Differential cell autonomous responses determine the outcome of coxsackievirus infections in murine pancreatic α and β cells
+
+## Authors
+
+- Laura Marroqui Esclapez
+- Miguel Lopes
+- Reinaldo S dos Santos
+- Fabio A Grieco
+- Merja Roivainen
+- Sarah J Richardson
+- Noel G Morgan
+- Anne Op de beeck
+- Decio L Eizirik †
+
+### Affiliations
+
+1. ULB Center for Diabetes Research, Medical Faculty Universite Libre de Bruxelles Brussels Belgium deizirik@ulb.ac.be
+
+† Corresponding author
+
+## Abstract
+
+Type 1 diabetes (T1D) is an autoimmune disease caused by loss of pancreatic β cells via apoptosis while neighbouring α cells are preserved. Viral infections by Coxsackieviruses (CVB) may contribute to trigger autoimmunity in T1D. Cellular permissiveness to viral infection is modulated by innate antiviral responses, which vary among different cell types. We presently describe that global gene expression is similar in cytokine-treated and virus-infected human islet cells, with up-regulation of gene networks involved in cell autonomous immune responses. Comparison between the responses of rat pancreatic α and β cells to infection by CVB5 and 4 indicate that α cells trigger a more efficient antiviral response than β cells, including higher basal and induced expression of STAT1-regulated genes, and are thus better able to clear viral infections than β cells. These differences may explain why pancreatic β cells, but not α cells, are targeted by an autoimmune response during T1D.

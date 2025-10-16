@@ -1,0 +1,17 @@
+# Distinct representations of body and head motion are dynamically encoded by Purkinje cell populations in the macaque cerebellum
+
+## Authors
+
+- Omid A Zobeiri<sup>1</sup>
+- Kathleen E Cullen<sup>2</sup> ([ORCID: 0000-0002-9348-0933](https://orcid.org/0000-0002-9348-0933)) †
+
+### Affiliations
+
+1. Department of Biomedical Engineering McGill University Montreal Canada
+2. Department of Biomedical Engineering Johns Hopkins University Baltimore United States
+
+† Corresponding author
+
+## Abstract
+
+The ability to accurately control our posture and perceive spatial orientation during self-motion requires knowledge of the motion of both the head and body. However, whereas the vestibular sensors and nuclei directly encode head motion, no sensors directly encode body motion. Instead, the integration of vestibular and neck proprioceptive inputs is necessary to transform vestibular information into the body-centric reference frame required for postural control. The anterior vermis of the cerebellum is thought to play a key role in this transformation, yet how its Purkinje cells integrate these inputs or what information they dynamically encode during self-motion remains unknown. Here we recorded the activity of individual anterior vermis Purkinje cells in alert monkeys during passively applied whole-body, body-under-head, and head-on-body rotations. Most neurons dynamically encoded an intermediate representation of self-motion between head and body motion. Notably, these neurons responded to both vestibular and neck proprioceptive stimulation and showed considerable heterogeneity in their response dynamics. Furthermore, their vestibular responses demonstrated tuning in response to changes in head-on-body position. In contrast, a small remaining percentage of neurons sensitive only to vestibular stimulation unambiguously encoded head-in-space motion across conditions. Using a simple population model, we establish that combining responses from ~40-50 Purkinje cells can explain the responses of their target neurons in deep cerebellar nuclei across all self-motion conditions. We propose that the observed heterogeneity in Purkinje cells underlies the cerebellum's capacity to compute the dynamic representation of body motion required to ensure accurate postural control and perceptual stability in our daily lives.

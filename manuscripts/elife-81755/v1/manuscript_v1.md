@@ -1,0 +1,16 @@
+# A specific role for Importin-5 and NASP in the import and nuclear hand-off of monomeric H3
+
+## Authors
+
+- Alonso Javier Pardal<sup>1</sup>
+- Andrew James Bowman<sup>1</sup> ([ORCID: 0000-0002-5507-669X](https://orcid.org/0000-0002-5507-669X)) †
+
+### Affiliations
+
+1. Division of Biomedical Sciences University of Warwick Coventry United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+Core histones package chromosomal DNA and regulate genomic transactions, with their nuclear import and deposition involving importin- proteins and a dedicated repertoire of histone chaperones. Previously, a histone H3-H4 dimer has been isolated bound to Importin-4 (Imp4) and the chaperone ASF1, suggesting H3 and H4 fold together in the cytoplasm before nuclear import. However, other studies have shown the existence of monomeric H3 in the nucleus, indicating a post import folding pathway. Here we report that the predominant importin associated with cytoplasmic H3 is Importin-5 (Imp5), which hands off its monomeric cargo to nuclear sNASP. Imp5, in contrast to Imp4, binds to both H3 and H4 containing constitutively monomeric mutations and binds to newly synthesised, monomeric H3 tethered in the cytoplasm. Constitutively monomeric H3 retains its interaction with NASP, whereas monomeric H4 retains interactions specifically with HAT1 and RBBP7. High-resolution separation of NASP interactors shows the 's' isoform but not the 't' isoform associates with monomeric H3, whilst both isoforms associate with H3-H4 dimers in at least three discrete multi-chaperoning complexes. In vitro binding experiments show mutual exclusivity between sNASP and Imp5 in binding H3, suggesting direct competition for interaction sites, with the GTP-bound form of Ran required for histone transfer. Finally, using pulse-chase analysis, we show that cytoplasm tethered histones do not interact with endogenous NASP until they reach the nucleus, whereupon they bind rapidly. We propose an Imp5-specific import pathway for monomeric H3 that hands off to sNASP in the nucleus, with a parallel H4 pathway involving Imp5 and the HAT1-RBBP7 complex, followed by nuclear folding and hand-off to deposition factors.

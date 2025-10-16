@@ -1,0 +1,23 @@
+# Synchronization of endothelial Dll4-Notch dynamics switch blood vessels from branching to expansion
+
+## Authors
+
+- Benedetta Ubezio
+- Raquel Agudo Blanco
+- Ilse Geudens
+- Fabio Stanchi
+- Thomas Mathivet
+- Martin L Jones
+- Anan Ragab
+- Katie Bentley
+- Holger Gerhardt †
+
+### Affiliations
+
+1. Vascular Biology Laboratory London Research Institute London United Kingdom holger.gerhardt@mdc-berlin.de
+
+† Corresponding author
+
+## Abstract
+
+Formation of a regularly branched blood vessel network is crucial in development and physiology. Here we show that the expression of the Notch ligand Dll4 fluctuates in individual endothelial cells within sprouting vessels in the mouse retina in vivo and in correlation with dynamic cell movement in mouse embryonic stem cell-derived sprouting assays. We also find that sprout elongation and branching associates with a highly differential phase pattern of Dll4 between endothelial cells. Stimulation with pathologically high levels of Vegf, or overexpression of Dll4, leads to Notch dependent synchronization of Dll4 fluctuations within clusters, both in vitro and in vivo . Our results demonstrate that the Vegf-Dll4/Notch feedback system normally operates to generate heterogeneity between endothelial cells driving branching, whilst synchronization drives vessel expansion. We propose that this sensitive phase transition in the behaviour of the Vegf-Dll4/Notch feedback loop underlies the morphogen function of Vegfa in vascular patterning.

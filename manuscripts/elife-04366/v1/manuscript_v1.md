@@ -1,0 +1,17 @@
+# Phosphatidic acid modulation of Kv channel voltage sensor function
+
+## Authors
+
+- Richard K Hite
+- Joel A Butterwick
+- Roderick MacKinnon †
+
+### Affiliations
+
+1. Laboratory of Molecular Neurobiology and Biophysics Howard Hughes Medical Institute, Rockefeller University New York United States mackinn@rockefeller.edu
+
+† Corresponding author
+
+## Abstract
+
+Membrane phospholipids can function as potent regulators of ion channel function. This study uncovers and investigates the effect of phosphatidic acid on Kv channel gating. Using the method of reconstitution into planar lipid bilayers, in which protein and lipid components are defined and controlled, we characterize two effects of phosphatidic acid. The first is a non-specific electrostatic influence on activation mediated by electric charge density on the extracellular and intracellular membrane surfaces. The second is specific to the presence of a primary phosphate group, acts only through the intracellular membrane leaflet and depends on the presence of a particular arginine residue in the voltage sensor. Intracellular phosphatidic acid accounts for a nearly 50 mV shift in the midpoint of the activation curve in a direction consistent with stabilization of the voltage sensor's closed conformation. These findings support a novel mechanism of voltage sensor regulation by the signaling lipid phosphatidic acid.

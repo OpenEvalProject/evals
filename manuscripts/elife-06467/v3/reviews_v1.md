@@ -1,0 +1,53 @@
+# Peer review - Round 1
+
+Editors:
+- Michel Nussenzweig, Rockefeller University , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.06467.024](https://doi.org/10.7554/eLife.06467.024)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Capture of HIV gp120 by SIGN-R1 positive lymph node macrophages provides a platform for gp120 specific B cell activation” for consideration at eLife. Your article has been favorably evaluated by Tadatsugu Taniguchi (Senior Editor), a Reviewing Editor, and two reviewers.
+
+The Reviewing Editor and the reviewers discussed their comments before reaching this decision, and the Reviewing Editor has assembled the following comments to help you prepare a revised submission.
+
+To understand how antibody responses are mounted against HIV gp120 it is important to define how the antigen is captured and displayed for B cell recognition. The current manuscript by Kehrl and coworkers addresses this issue using the mouse as a model. They find gp120 is preferentially captured by cells in interfollicular regions of draining LNs, including SIGN-R1+ macrophages. This is a distinct pattern of capture from that reported for immune complexes, antigen-coated beads and VSV, which were all found in previous studies to be preferentially bound and displayed by CD169+ subcapsular sinus macrophages (SSMs). The gp120 binding pattern is most similar to that previously reported for inactivated influenza virus (Gonzalez et al., 2010) and although the authors suggest there is little similarity to that pattern, the central conclusion of the influenza study, like the present one, was that SIGN-R1+LN macrophages were involved in antigen capture and presentation to B cells. The focus on interfollicular regions in the present work is considered a positive feature of the study, though it should be noted that the distinction between interfollicular and medullary regions is not always straightforward as B cells follicles can be proximal to the medulla.
+
+In a series of well performed experiments, this study describes the time course of labeled gp120 appearance on interfollicular cells, and shows this distribution differs from that of a small soluble antigen (HEL) that accesses LN conduits. Cognate B cells are shown to encounter and capture gp120 from interfollicular cells, to transmit Ca2+ signals during this process, and to transiently modulate their migration during interactions leading to antigen capture. They also find that a form of gp120 with higher sialylation gains deeper access to interfollicular regions and this is correlated with a more robust antibody response.
+
+Overall, this study provides important new information about the distinct ways in which a highly glycosylated antigen is handled in the LN during a primary immune response, describing properties of the cell types involved and demonstrating that cognate B cells can capture antigen from these cells. Perhaps the one significant concern I have is whether the antigen-capture and display logic observed for gp120 in the mouse applies in humans. Since HIV1 is not a natural pathogen of mice, to understand how directly translatable these findings are for gp120 antigen handling in humans it would seem reasonable to ask if any aspect of the antigen handling can be recapitulated with human or primate tissue. In particular, the fluorescent gp120 overlay experiment of the type used in Figure 2 could be attempted with human or primate LN sections.
+
+Other comments:
+
+1) Published work has highlighted the difficulty of isolating LN macrophages in pure form (e.g. Gray et al., 2012 PLoS One 7, e38258). To establish that the cells analyzed in Figure 1C, E and F are macrophages and to validate the statement that the gp120 binding cells are SIGN-R1+/CD169mid/CD11bmid/CD4+/ CD11c-/F4/80low sinus and interfollicular macrophages (subsection “Locally injected gp120 is captured in the LN by SIGN-R1+ subcapsular macrophages and SIGN-R1+ IFC macrophages”), microscopy analysis of isolated cells should be provided. The IFNγ data in Figure 1F are not especially convincing as the shift is small and it is not stated how many experiments are represented by these data. The conclusion might be stronger if it were backed up by a second measurement such as using the IFNγ-eYFP reporter mice available live from Jax.
+
+2) The data showing the SIGN-R1 dependence of gp120 binding (Figure 1E) are not especially convincing. It is not clear how many experiments are represented by the data shown or what is the fold difference in binding. This result might be stronger if the effect of SIGN-R1 blocking in LN sections on the ability of gp120 to bind were shown. Alternatively, data could be provided for cells from SIGN-R1 KO mice. If the binding of gp120 really were selectively dependent on SIGN-R1 then the authors would be in a position to perform a mechanistic test of whether antigen capture by SIGN-R1+ cells is important for induction of anti-gp120 antibody responses by immunizing SIGNR1 deficient or blocked mice.
+
+3) The authors show, using gp120, that it is deposited on SIGN-R1 positive macrophages. They then used two unglycosylated proteins, HEL and PE, which were not deposited on the cells, and on the basis of this, they have concluded that glycosylation on gp120 causes the retention. This needs to be proved more convincingly, for example by treating gp120 with glycosylases to remove glycosylation from GP120 itself and showing that the treated protein is no longer retained. Similarly, can a SIGN-R1 blocking antibody inhibit antigen retention? As its stands this is only shown in vitro which could lead to artifacts.
+
+Another possibility would be to use gp120 produced in cells treated with glycosylase inhibitors such as Kifenensen.
+
+4) To quantify B cell response to gp120 in the presence of inhibitory SIGN-R1 antibody. Is the deposition on these macrophages the only way B cells do see gp120?
+
+5) It is well established that SIGN-R1 is expressed on medullary macrophages and dendritic cells but not in interfollicular regions. A key finding of this work is that SIGN-R1+ macrophages also appear to be present in interfollicular regions. It would be important to have a more definitive examination of this. Whole lymph node imaging providing a comparison between medullary SIGN-R1 staining and the described SIGN-R1 staining in interfollicular regions would significantly add to this work. Such an analysis would also benefit from the addition of a CD11c marker. As recently demonstrated by Ron Germain's group, dendritic cells in interfollicular regions (LS DCs) are able to capture antigen; it would therefore be important to demonstrate that SIGN-R1 interfollicular macrophages are actually capturing the gp120 and exclude the possibility that this is coming from DCs.
+
+6) The authors show at the beginning of the manuscript that gp120 co-localizes with SIGN-R1. From then onwards, they mostly rely on only the localization of gp120 and not SIGN-R1 as well, which may lead to confusion. It is important to have this control in all the figures.
+
+7) Is this the case for whole of HIV? It would be great if the authors were to consider the injection of inactivated HIV. However, something that the authors will have to deal with is to discuss their findings in the context of the wider literature. It is important to recognize that several groups, such as the one of Uli Von Adrian, have been making seminal contributions on virus retention in the follicles. Similarly, the behavior of the B cells looks similar to the one described during antigen extraction from FDCs or in vitro, which has been reported by both the Cyster group and by the Neuberger group, the latter having actually introduced the term.
+
+Should you be unable to use HIV for these experiments you can use a more native trimer preparation such as the ones that have been crystalized by Ian Wilson and Peter Kwong consisting of BG505 native trimers.
+
+[Editors' note: further revisions were requested prior to acceptance, as described below.]
+
+Thank you for resubmitting your work entitled “The HIV-1 envelope protein gp120 is captured and displayed for B cell recognition by SIGN-R1+ lymph node macrophages” for further consideration at eLife. Your revised article has been favorably evaluated by Tadatsugu Taniguchi (Senior Editor), a Reviewing Editor, and two reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:
+
+1) Data are added to show SIGN-R1+ staining of isolated LN macrophages by fluorescence microscopy of sorted cells (Figure 1–figure supplement 1). However, in the example shown it appears that 1 cell out of ∼4 is SIGNR1+. It needs to be indicated what frequency of the sorted cells have a macrophage appearance and SIGNR1+ surface staining.
+
+2) Related to 1, the amount of IFNγ-YFP expression by the ‘macrophages’ is surprising given the limited evidence in the literature for IFNγ expression by macrophages. Without knowing how well excluded T cells, NK cells and ILCs are from the macrophage gate (e.g. by frequency determination for several experiments in 1 above), it is difficult to feel confident about the IFNγ data.
+
+3) Given that the binding to SIGN-R1+ cells strongly depends on glycosylation, how well matched is the glycosylation of gp120 produced in CHO-S cells or 293F cells to the form produced in vivo by infected T cells and macrophages? The cellular tropism of highly glycosylated proteins may reflect more the cell types in which they are expressed than unique properties of the antigen. In this regard, it is notable that the “two other antigens” mentioned in the Abstract as not being captured by SIGN-R1+ macrophages are also not made in CHO-S or 293F cells and neither one is a glycoprotein. Some text should be added to the Discussion to address this issue (perhaps commenting that the antigen studied may be most relevant to vaccine type antigens) and to highlight the need for future studies with gp120 or HIV virions produced from endogenously infected cell types.

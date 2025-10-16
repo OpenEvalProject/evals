@@ -1,0 +1,23 @@
+# Common intermediates and kinetics, but different energetics, in the assembly of SNARE proteins
+
+## Authors
+
+- Sylvain Zorman
+- Aleksander A Rebane
+- Lu Ma
+- Guangcan Yang
+- Matthew A Molski
+- Jeff Coleman
+- Frederic Pincet
+- James E Rothman
+- Yongli Zhang †
+
+### Affiliations
+
+1. Department of Cell Biology Yale University School of Medicine New Haven United States yongli.zhang@yale.edu
+
+† Corresponding author
+
+## Abstract
+
+S oluble N -ethylmaleimide-sensitive factor a ttachment protein re ceptors (SNAREs) are evolutionarily conserved machines that couple their folding/assembly to membrane fusion. However, it is unclear how these processes are regulated and function. To determine these mechanisms, we characterized the folding energy and kinetics of four representative SNARE complexes at a single-molecule level using high-resolution optical tweezers. We found that all SNARE complexes assemble by the same step-wise zippering mechanism: slow N-terminal domain (NTD) association, a pause in a force-dependent half-zippered intermediate and fast C-terminal domain (CTD) zippering. The energy release from CTD zippering differs for yeast (13 k B T) and neuronal SNARE complexes (27 k B T), and is concentrated at the C-terminal part of CTD zippering. Thus, SNARE complexes share a conserved zippering pathway and polarized energy release to efficiently drive membrane fusion, but generate different amounts of zippering energy to regulate fusion kinetics.

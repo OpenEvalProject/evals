@@ -1,0 +1,22 @@
+# Impact of the COVID-19 pandemic on breast cancer screening indicators in a Spanish population-based program: a cohort study
+
+## Authors
+
+- Guillermo Bosch<sup>1</sup>
+- Margarita Posso<sup>1</sup> ([ORCID: 0000-0002-5053-257X](https://orcid.org/0000-0002-5053-257X)) †
+- Javier Louro<sup>1</sup>
+- Marta Roman<sup>1</sup>
+- Miquel Porta<sup>2</sup>
+- Xavier Castells<sup>1</sup>
+- Francesc Macià<sup>1</sup>
+
+### Affiliations
+
+1. Department of Epidemiology and Evaluation Institut Hospital del Mar d'Investigacions Mèdiques Barcelona Spain
+2. Autonomous University of Barcelona Barcelona Spain
+
+† Corresponding author
+
+## Abstract
+
+Background: To assess the effect of the COVID-19 pandemic on performance indicators in the population-based breast cancer screening program of Parc de Salut Mar (PSMAR), Barcelona, Spain. Methods: We conducted a before-and-after, study to evaluate participation, recall, false-positives, the cancer detection rate, and cancer characteristics in our screening population from March 2020 to March 2021 compared with the four previous rounds (2012-2019). Using multi-level logistic regression models, we estimated the adjusted odds ratios (aOR) of each of the performance indicators for the COVID-19 period, controlling by type of screening (prevalent or incident), socioeconomic index, family history of breast cancer, and menopausal status. We analyzed 144,779 invitations from 47,571 women. Results: During the COVID-19 period, the odds of participation were lower in first-time invitees (aOR=0.90[95%CI=0.84-0.96]) and in those who had previously participated regularly and irregularly (aOR=0.63 [95%CI=0.59-0.67] and aOR=0.95 [95%CI=0.86-1.05], respectively). Participation showed a modest increase in women not attending any of the previous rounds (aOR=1.10 [95%CI=1.01-1.20]). The recall rate decreased in both prevalent and incident screening (aOR=0.74 [95%CI 0.56-0.99] and aOR=0.80 [95%CI 0.68-0.95], respectively). False positives also decreased in both groups (prevalent aOR=0.92 [95%CI 0.66-1.28] and incident aOR=0.72 [95%CI 0.59-0.88]. No significant differences were observed in compliance with recall (OR= 1.26, 95%CI 0.76-2.23), cancer detection rate (aOR=0.91 [95%CI=0.69-1.18]) or cancer stages. Conclusions: The COVID-19 pandemic negatively affected screening attendance, especially in previous participants and newcomers. We found a reduction in recall and false-positives and no marked differences in cancer detection, indicating the robustness of the program. There is a need for further evaluations of interval cancers and potential diagnostic delays. Funding: This study has received funding by grantsPI19/00007 and PI21/00058, funded by Instituto de Salud Carlos III (ISCIII) and co-funded by the European Union and Grant RD21/0016/0020 funded by Instituto de Salud Carlos III and by the European Union NextGenerationEU, Mecanismo para la Recuperación y la Resiliencia (MRR).

@@ -1,0 +1,22 @@
+# The Hippo effector Yorkie activates transcription by interacting with a histone methyltransferase complex through Ncoa6
+
+## Authors
+
+- Yun Qing
+- Feng Yin
+- Wei Wang
+- Yonggang Zheng
+- Pengfei Guo
+- Frederick Schozer
+- Hua Deng
+- Duojia Pan †
+
+### Affiliations
+
+1. Department of Molecular Biology and Genetics Howard Hughes Medical Institute, Johns Hopkins University School of Medicine Baltimore United States djpan@jhmi.edu
+
+† Corresponding author
+
+## Abstract
+
+The Hippo signaling pathway regulates tissue growth in Drosophila through the transcriptional coactivator Yorkie (Yki). How Yki activates target gene transcription is poorly understood. Here we identify Nuclear receptor coactivator 6 (Ncoa6), a subunit of the Trithorax-related (Trr) histone H3 lysine 4 (H3K4) methyltransferase complex, as a Yki-binding protein. Like Yki, Ncoa6 and Trr are functionally required for Hippo-mediated growth control and target gene expression. Strikingly, artificial tethering of Ncoa6 to Sd is sufficient to promote tissue growth and Yki target expression even in the absence of Yki, underscoring the importance of Yki-mediated recruitment of Ncoa6 in transcriptional activation. Consistent with the established role for the Trr complex in histone methylation, we show that Yki, Ncoa6 and Trr are required for normal H3K4 methylation at Hippo target genes. These findings shed light on Yki-mediated transcriptional regulation and uncover a potential link between chromatin modification and tissue growth.

@@ -1,0 +1,43 @@
+# Peer review - Round 1
+
+Editors:
+- Jonathan Flint, University of California, Los Angeles , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.28297.014](https://doi.org/10.7554/eLife.28297.014)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Resolving the prevalence of somatic transposition in Drosophila" for consideration by eLife. Your article has been favorably evaluated by Detlef Weigel (Senior Editor) and four reviewers, one of whom, Jonathan Flint (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Josh Dubnau (Reviewer #2); Haig Kazazian (Reviewer #3); Christopher A Walsh (Reviewer #4).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+Following their report that de novo transposon insertions occurs in αβ neurons and that transposon expression is more abundant in αβ neurons than in neighboring mushroom body neurons, Treiber and Waddell here explain that artefacts are responsible for most, if not all, of apparent novo transposon insertions. The authors provide a detailed description of how they discovered the artefact, provide simulations and experimental support for their interpretation, and conclude that the occurrence of chimeras in DNA prepared for next generation sequencing makes the detection of de novo insertions intractable with the current technology. The realization that reports of transposon insertion rates in various studies might be inflated is an important point for the field. The model that transposon mobilization is important in learning and memory and/or aging in flies is widespread, and this paper would provide an important cautionary challenge to those findings.
+
+Essential revisions:
+
+1) The authors need to be more circumspect in the conclusions and re-write the paper to make the case for how their results place important constraints on the possible impacts on biology. There are two issues that need addressing:
+
+a) Their findings suggest that developmental events are at best rare in bulk tissue. In that case, the most likely way they can impact biology is if there are subsets of cells with high rates. They rule out the possibility that a large fraction of the DNA content in the brain contains de novo inserts of retrotransposons that occurred during development. But they cannot rule out the possibilities that many cells have a low rate or that few cells have a high rate. This is just the limitation that comes from bulk sequencing of many cells. The authors can make an important statement even if they scale back their conclusions so that they are better justified. And this may of course impact similar studies using MDA from rodent and human brain. Again, it does not rule out that there are some cells with high rates or many cells with low rates. But it places important constraints on the biology, and raises a critical technical issue that the field needs to consider
+
+b) For the case of retrotransposition during aging and neurodegeneration, the logic is somewhat different because the sickest cells – the ones with the highest rates of transposition, are the ones that would presumably die and be quickly cleared from the brain. Again, the authors rule out the possibility that a large fraction of cells in a few young and a few older animals have accumulated many de novo inserts each. But the data do not rule out the possibilities that many cells have few inserts or that a few cells have many inserts. The authors need to discuss how their findings constrain the possible models rather than concluding that transposition doesn't occur with age because the rate of transposition is below detection from bulk tissue given how many chimera artifacts are in MDA based libraries
+
+2) More information on the performance of their approach to detect insertions is needed.
+
+a) To reassure readers that they can detect true signal, the authors should take examples of known transposition and show they can detect the events. For instance, they could use data from the Khurana et al. (2011) paper. In addition there are two Arabidopsis data sets where bona fide de novo mobilization was detected https://www.ncbi.nlm.nih.gov/pubmed/19734882 https://www.ncbi.nlm.nih.gov/pubmed/19734880
+
+b) They need to supply quality control metrics to measure the number of chimeras in the sequencing data. For this they could use their analyses of the IGE simulations. They should be able to find a relationship between IGE frequency and the false positive rate (furthermore, they might be able to use an IGE mobilization frequency to optimize their calling methods and parameters to account for potentially different false positive rates caused by the different numbers of chimeras in different libraries).
+
+c) They should examine the number of candidate insertions as a function of signal/confidence (e.g., the number of reads supporting an insertion). Given the limited sequencing depth and high candidate insertion counts, it seems that the authors have used a single read support as a cutoff for predicting insertions (see point X – need to provide a more detailed Methods section). The number of insertions would likely dramatically decrease when more supporting reads are required for prediction. For example, Figure 1 in Baillie et al. (Nature, 2011) shows that the number of insertions decreased by two orders of magnitude when two reads were required instead of one, and that with more than two reads, the number of insertions remained relatively stable. The authors should use two, or ideally more reads, and if they do not find enough insertions (at least ~50 insertions), they should increase sequencing depth. They should then validate a subset of candidates with 3' junction PCR and full-length PCR and estimate false positive rates. This would require a careful examination of the validated transposon and junction sequences to rule out chimeras as much as possible. The authors should also correlate insertion counts adjusted for false positive rates with age. The authors need to clearly acknowledge the limitations of their experimental design because bulk sequencing with limited sequencing depth limits the ability to detect low-level mosaic insertions.
+
+3) To improve clarity of their argument, they should present evidence of artifacts earlier in the paper. Several papers have already shown chimeras occurring during preparation of sequencing libraries or genome amplification causing false-positive transposon predictions. The authors only cite Faulkner's papers (Baillie et al., Nature, 2011, Upton et al., Cell, 2015) and Evrony et al. (eLife, 2016) to support the proposition that "rates of somatic transposition in mammals are hotly debated," but they fail to acknowledge that the debate centered around the formation and (mis)interpretation of chimeras, which was what caused the different claimed rates of somatic transposition in the three cited papers. They then introduce chimeras as though they were the first to raise the issue of chimeras. They need to revise the Introduction to be more precise regarding relevant previous literature.
+
+It is important to be aware of chimeras appearing as somatic transposon insertions in next-generation sequencing, which this work highlights in its analysis of "immobile genetic elements." The presence of such chimeras has been presented in prior studies (e.g., Evrony et al. Cell, 2012; Neuron, 2015; eLife 2016; Erwin et al., Nature Neuroscience 2016). Other than confirming the presence of chimeras, this work does not provide further understanding about how to properly deal with the chimeras to better identify true somatic transposon insertions.
+
+4) They should try alternative TE detection methods for more accurate insertion breakpoints with junction sequences and mechanistic signatures such as target site duplication and polyA tails. Although chimeras cannot be completely ruled out without full-length validation, as demonstrated by Evrony et al. (eLife, 2016), they can still improve the quality of their insertion predictions. To accomplish this, they would need to adapt existing methods to work for fly data.

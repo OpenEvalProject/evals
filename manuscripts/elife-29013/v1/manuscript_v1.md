@@ -1,0 +1,17 @@
+# Asymmetry of movements in CFTR's two ATP sites during pore opening serves their distinct functions
+
+## Authors
+
+- Ben Sorum<sup>1</sup> ([ORCID: 0000-0001-6742-1094](https://orcid.org/0000-0001-6742-1094))
+- Beáta Töröcsik<sup>1</sup>
+- László Csanády<sup>1</sup> ([ORCID: 0000-0002-6547-5889](https://orcid.org/0000-0002-6547-5889)) †
+
+### Affiliations
+
+1. Department of Medical Biochemistry Semmelweis University Budapest Hungary
+
+† Corresponding author
+
+## Abstract
+
+CFTR, the chloride channel mutated in cystic fibrosis (CF) patients, is opened by ATP binding to two cytosolic nucleotide binding domains (NBDs), but pore-domain mutations may also impair gating. ATP-bound NBDs dimerize occluding two nucleotides at interfacial binding sites; one site hydrolyzes ATP, the other is inactive. The pore opens upon tightening, and closes upon disengagement, of the catalytic site following ATP hydrolysis. Extent, timing, and role of non-catalytic-site movements are unknown. Here we exploit equilibrium gating of a hydrolysis-deficient mutant and apply F value analysis to compare timing of opening-associated movements at multiple locations, from the cytoplasmic ATP sites to the extracellular surface. Marked asynchrony of motion in the two ATP sites reveals their distinct roles in channel gating. The results clarify the molecular mechanisms of functional cross-talk between canonical and degenerate ATP sites in asymmetric ABC proteins, and of the gating defects caused by two common CF mutations.

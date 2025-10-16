@@ -1,0 +1,16 @@
+# Fast and flexible sequence induction in spiking neural networks via rapid excitability changes
+
+## Authors
+
+- Rich Pang<sup>1</sup> ([ORCID: 0000-0002-2644-6110](https://orcid.org/0000-0002-2644-6110)) †
+- Adrienne L Fairhall<sup>1</sup>
+
+### Affiliations
+
+1. Physiology and Biophysics Department University of Washington Seattle United States
+
+† Corresponding author
+
+## Abstract
+
+Cognitive flexibility likely depends on modulation of the dynamics underlying how biological neural networks process information. While dynamics can be reshaped by gradually modifying connectivity, less is known about mechanisms operating on faster timescales. A compelling entrypoint to this problem is the observation that exploratory behaviors can rapidly cause selective hippocampal sequences to 'replay' during rest. Using a spiking network model, we asked whether simplified replay could arise from three biological components: fixed recurrent connectivity; stochastic 'gating' inputs; and rapid gating input scaling via long-term potentiation of intrinsic excitability (LTP-IE). Indeed, these enabled both forward and reverse replay of recent sensorimotor-evoked sequences, despite unchanged recurrent weights. LTP-IE 'tags' specific neurons with increased spiking probability under gating input, and ordering is reconstructed from recurrent connectivity. We further show how LTP-IE can implement temporary stimulus-response mappings. This elucidates a novel combination of mechanisms that might play a role in rapid cognitive flexibility.

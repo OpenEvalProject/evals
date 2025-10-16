@@ -1,0 +1,43 @@
+# Peer review - Round 1
+
+Editors:
+- Michael J Frank, Brown University , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.20317.014](https://doi.org/10.7554/eLife.20317.014)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Frames and biases in the human brain: the impact of prior preferences on decision making" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Reviewing Editor Michael Frank and Timothy Behrens as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Laurence Hunt (Reviewer #1); Sebastian Gluth (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+This manuscript examines the effects of framing choices in terms of a preferred ('default') category of items vs. a less preferred ('alternative') category of items upon choice behaviour (characterised using a drift diffusion model), eye gaze and BOLD fMRI data (with a particular focus on responses in ventromedial prefrontal cortex).
+
+They first show that subjects show a bias towards selecting items from the default category (over and above their preferences expressed before the experiment), both in terms of choices and reaction times. They explain this as a change in starting point of the drift diffusion model. They then use eye-tracking to show that this bias is not explained directly as a consequence of the subjects attending more towards the default item, but instead as a combination of attentional effects on drift rate and a shift in the starting point. Perhaps most strikingly, they show that the default value is present in vmPFC baseline activity, prior to the trial beginning. The key idea is to test whether activity which is often found to reflect chosen minus unchosen value is better thought of as reflecting the value of the default option. They find evidence that this is the case in VMPFC, but not dACC. Overall, this paper addresses a very timely research question, the representation of (choice-related) valuation signals in vmPFC.
+
+Essential revisions:
+
+Both reviewers and the Reviewing Editor were enthusiastic about the contribution, noting that it is a timely approach using a wide array of approaches to address a controversial question, but also noted some essential revisions. These points are amalgamated below.
+
+1) Where does the default bias come from? One possibility is that rather than coming from the decision framing, it comes from a history of choices in favour of that category (of which there will presumably be more towards the default). For instance, if the authors included (chose default(t-1), chose default(t-2), chose default(t-3) etc.) in the logistic regression model, do they see any significant prediction of subjects' choices of the default option on trial t, which decays over trials? Does this reduce the default bias in the constant term?
+
+2) This is also a concern when considering the baseline effect of DV(CAT) in Figure 4A. Is the data at this timepoint being influenced at all by the value of the chosen item, or the value of the default item, on the preceding trial?
+
+3) In Results, the authors conclude from their analyses that "fixation duration […] was not influenced by prior preferences". However, I am not fully convinced by their analysis. They report that people look longer at the default option if it is chosen (with a difference of 81 ms), but they look longer at the other option if this is chosen (with a difference of only 41ms). I think the critical question is whether this 81 vs. 41 ms difference is significant or not. In other words, one could set up an ANOVA with factors "Default vs. Non-Default" and "Chosen vs. Unchosen". Apparently, the "Chosen vs. Unchosen" main effect in such an ANOVA would be significant. Now the question is whether the "Default vs. Non-Default" main effect would also be significant or not. Regarding the same topic: It is mentioned that the graphs in Figure 3C are not significantly different from each other. I was wondering what statistical test the authors used here.
+
+4) Related to point #2, the authors are trying to rule out the Krajbich/Rangel aDDM ideas applying here, in that the default biases cannot be explained just by greater value accumulation for the attended option. My concern is that a simpler model could potentially explain much of the gaze data, whereby there could be a direct effect of gaze on choice – where more looking is predictive of higher probability of choice (regardless of direction of causality) – here, gaze time is additive to the value effects on drift rate, rather than multiplicative as in aDDM. (See Cavanagh et al., 2014 JEP-G for an example of where this additive model provided a better fit than the aDDM; Krajbich/Rangel never tested this simpler model). My worry here is that if subjects attend more to the default option than the non-default option, that this could directly drive drift toward the default. That wouldn't show up as well when fitting the aDDM because it assumes that attention modulates the value, but behavioral data show that there is a bias in choice independent of value, so the authors still need the added starting point bias independent of gaze. But if the subjects just look at the default more, and looking directly predicts choice independent of value, then they might find that the default bias is entirely accounted for by more looking… It would be better if the authors added this direct effect as another model in their model comparison (and perhaps a model with this direct effect plus starting point bias). Still, even if this is the case, I'm not sure it diminishes the contribution in terms of what it tells us about vmPFC or default biases (especially since it would be the default preference that would drive the bias in looking, not the other way around).
+
+5) The authors are keen to show that the RT biases arise directly as a consequence of the choice bias. They provide some evidence of this in Figure 2C. It would be nice to explore this further. One further way of addressing this would be to ask whether the RT bias goes to 0 at the true point of subjective equivalence between the two options (i.e. where P(default) = 0.5, rather than where |VIT(def) – VIT(alt)| =0). Another way of showing it would be to plot Figure 2B without absoluting the X-axis (i.e. plot positive and negative values for VIT(def)-VIT(alt), as in Figure 2A).
+
+6) A concern when examining the effects in Figure 3C is that any propensity to initially saccade towards the default option might be masked. This could produce a 'starting point' like effect in the aDDM, if one assumes attentional deployment is not random (unlike in the aDDM original formulation). An easy way to show that there was no bias in initial saccade direction would be to show the same plot time-locked to stimulus onset, rather than response.
+
+7) Unsurprisingly, the authors cite Boorman et al., J Neurosci 2013 quite extensively, as this also addressed the question of default vs. alternative coding (but didn't have the nice and extensive behavioural modelling of the present paper). However, the conclusion from Figure 4 seems quite different from that paper. In this paper, dorsal anterior cingulate cortex cares about the chosen vs. unchosen value frame (Figure 4—figure supplement 1B bottom), whilst VMPFC cares about the default vs. alternative frame (Figure 4B). This seemed to me like the opposite conclusion from Boorman's paper (cf. his Figure 4)…? It would be good for the authors to mention/discuss this.
+
+8) Both reviewers agreed that there was no any information or value that is added to this paper by the decoding analysis. When we already know (from the "standard" analyses) that the vmPFC encodes the value of the default option, it is trivial (almost circular) that we can then also decode preferences from it (it's basically just a question of data quality). Unless the authors can come up with a very convincing argument why this analysis is necessary, they should take it out. Simply doing such an analysis because "we can", and because it is a "fancy" method, is not enough motivation.

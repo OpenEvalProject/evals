@@ -1,0 +1,18 @@
+# Astrocyte morphology is confined by cortical functional boundaries in mammals ranging from mice to human
+
+## Authors
+
+- Raya Eilam
+- Rina Aharoni
+- Ruth Arnon
+- Rafael Malach †
+
+### Affiliations
+
+1. Department of neurobiology The Weizmann Institute of Science Rehovot Israel rafi.malach@gmail.com
+
+† Corresponding author
+
+## Abstract
+
+Cortical blood flow can be modulated by local activity across a range of species; from barrel-specific blood flow in the rodent somatosensory cortex to the human cortex, where BOLD-fMRI reveals numerous functional borders. However, it appears that the distribution of blood capillaries largely ignores these functional boundaries. Here we report that, by contrast, astrocytes, a major player in blood-flow control, show a striking morphological sensitivity to functional borders. Specifically, we show that astrocyte processes are structurally confined by barrel boundaries in the mouse, by the border of primary auditory cortex in the rat and by layers IIIa/b and Cytochrome Oxidase (CO)-blobs boundaries in the human primary visual cortex. Thus, astrocytes which are critical elements in neuro-hemodynamic coupling show a significant anatomical segregation along functional boundaries across different mammalian species. These results may open a new anatomical marker for delineating functional borders across species, including post-mortem human brains.

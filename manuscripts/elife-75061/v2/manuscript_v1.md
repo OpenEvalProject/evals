@@ -1,0 +1,17 @@
+# Meta-Research: The need for more research into reproductive health and disease
+
+## Authors
+
+- Natalie Diana Mercuri<sup>1</sup> ([ORCID: 0000-0002-2276-5835](https://orcid.org/0000-0002-2276-5835))
+- Brian J Cox<sup>2</sup> ([ORCID: 0000-0001-7146-6041](https://orcid.org/0000-0001-7146-6041)) †
+
+### Affiliations
+
+1. Department of Physiology University of Toronto Toronto Canada
+2. 1Department of Physiology University of Toronto Toronto Canada
+
+† Corresponding author
+
+## Abstract
+
+Reproductive diseases have a significant impact on human health, especially on women’s health: endometriosis affects 10% of all reproductive-aged women but is often undiagnosed for many years, and preeclampsia claims over 70,000 maternal and 500,000 neonatal lives every year. Infertility rates are also rising. However, relatively few new treatments or diagnostics for reproductive diseases have emerged in recent decades. Here, based on analyses of PubMed, we report that the number of research articles published on non-reproductive organs is 4.5 times higher than the number published on reproductive organs. Moreover, for the two most-researched reproductive organs (breast and prostate), the focus is on non-reproductive diseases such as cancer. Further, analyses of grant databases maintained by the Canadian Institutes of Health Research and the National Institutes of Health in the United States show that the number of grants for research on non-reproductive organs is 6-7 times higher than the number for reproductive organs. Our results suggest that there are too few researchers working in the field of reproductive health and disease, and that funders, educators and the research community must take action to combat this longstanding disregard for reproductive science.

@@ -1,0 +1,21 @@
+# Autophagosomes fuse to phagosomes and facilitate the degradation of apoptotic cells in Caenorhabditis elegans
+
+## Authors
+
+- Omar Peña-Ramos<sup>1</sup> ([ORCID: 0000-0003-1231-2602](https://orcid.org/0000-0003-1231-2602)) †
+- Lucia Chiao<sup>1</sup>
+- Xianghua Liu<sup>1</sup>
+- Xiaomeng Yu<sup>1</sup>
+- Tianyou Yao<sup>1</sup>
+- Henry He<sup>1</sup>
+- Zheng Zhou<sup>1</sup> ([ORCID: 0000-0003-2585-0418](https://orcid.org/0000-0003-2585-0418)) †
+
+### Affiliations
+
+1. Verna and Marrs McLean Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States
+
+† Corresponding author
+
+## Abstract
+
+Autophagosomes are double-membrane intracellular vesicles that degrade protein aggregates, intracellular organelles, and other cellular components. During the development of the nematode Caenorhabditis elegans , many somatic and germ cells undergo apoptosis. These cells are engulfed and degraded by their neighboring cells. We discovered a novel role of autophagosomes in facilitating the degradation of apoptotic cells using a real-time imaging technique. Specifically, the double-membrane autophagosomes in engulfing cells are recruited to the surfaces of phagosomes containing apoptotic cells and subsequently fuse to phagosomes, allowing the inner vesicle to enter the phagosomal lumen. Mutants defective in the production of autophagosomes display significant defects in the degradation of apoptotic cells, demonstrating the importance of autophagosomes to this process. The signaling pathway led by the phagocytic receptor CED-1, the adaptor protein CED-6, and the large GTPase dynamin (DYN-1) promotes the recruitment of autophagosomes to phagosomes. Moreover, the subsequent fusion of autophagosomes with phagosomes requires the functions of the small GTPase RAB-7 and the HOPS complex components. Further observations suggest that autophagosomes provide apoptotic cell-degradation activities in addition to and in parallel of lysosomes. Our findings reveal that, unlike the single-membrane, L C3- a ssociated p hagocytosis (LAP) vesicles reported for mammalian phagocytes, the canonical double-membrane autophagosomes facilitate the clearance of C. elegans apoptotic cells. These findings add autophagosomes to the collection of intracellular organelles that contribute to phagosome maturation, identify novel crosstalk between the autophagy and phagosome maturation pathways, and discover the upstream signaling molecules that initiate this crosstalk.

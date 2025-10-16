@@ -1,0 +1,19 @@
+# A precisely adjustable, variation-suppressed eukaryotic transcriptional controller to enable genetic discovery
+
+## Authors
+
+- Asli Azizoglu<sup>1</sup> †
+- Roger Brent<sup>2</sup> ([ORCID: 0000-0001-8398-3273](https://orcid.org/0000-0001-8398-3273)) †
+- Fabian Rudolf<sup>3</sup> †
+
+### Affiliations
+
+1. BSSE ETH Zurich Basel Switzerland
+2. Basic Sciences Fred Hutchinson Cancer Research Center Seattle United States
+3. D-BSSE ETH Zurich Basel Switzerland
+
+† Corresponding author
+
+## Abstract
+
+Conditional expression of genes and observation of phenotype remain central to biological discovery. Current methods enable either on/off or imprecisely controlled graded gene expression. We developed a 'well-tempered' controller, WTC846, for precisely adjustable, graded, growth condition independent expression of genes in Saccharomyces cerevisiae. Controlled genes are expressed from a strong semisynthetic promoter repressed by the prokaryotic TetR, which also represses its own synthesis; with basal expression abolished by a second, 'zeroing' repressor. The autorepression loop lowers cell-to-cell variation while enabling precise adjustment of protein expression by a chemical inducer. WTC846 allelic strains in which the controller replaced the native promoters recapitulated known null phenotypes (CDC42, TPI1), exhibited novel overexpression phenotypes (IPL1), showed protein dosage-dependent growth rates and morphological phenotypes (CDC28, TOR2, PMA1 and the hitherto uncharacterized PBR1), and enabled cell cycle synchronization (CDC20). WTC846 defines an 'expression clamp' allowing protein dosage to be adjusted by the experimenter across the range of cellular protein abundances, with limited variation around the setpoint.

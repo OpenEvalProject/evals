@@ -1,0 +1,18 @@
+# Slo2 potassium channel function depends on RNA editing-regulated expression of a SCYL1 protein
+
+## Authors
+
+- Long-Gang Niu<sup>1</sup>
+- Ping Liu<sup>1</sup>
+- Zhao-Wen Wang<sup>1</sup>
+- Bojun Chen<sup>1</sup> ([ORCID: 0000-0002-1141-9101](https://orcid.org/0000-0002-1141-9101)) †
+
+### Affiliations
+
+1. Department of Neuroscience University of Connecticut Health Center Farmington United States
+
+† Corresponding author
+
+## Abstract
+
+Slo2 potassium channels play important roles in neuronal function, and their mutations in humans may cause epilepsies and cognitive defects. However, it is largely unknown how Slo2 is regulated by other proteins. Here we show that the function of C. elegans Slo2 (SLO-2) depends on adr-1 , a gene important to RNA editing. ADR-1 promotes SLO-2 function not by editing the transcripts of slo-2 but those of scyl-1 , which encodes an orthologue of mammalian SCYL1. Transcripts of scyl-1 are greatly decreased in adr-1 mutants due to deficient RNA editing at a single adenosine in their 3'-UTR. SCYL-1 physically interacts with SLO-2 in neurons. Single-channel open probability ( P ) of neuronal SLO-2 is ~50% lower in o scyl-1 knockout mutant than wild type. Moreover, human Slo2.2/Slack P is doubled by SCYL1 in a heterologous expression system. These results suggest that SCYL-1/SCYL1 is an evolutionarily conserved regulator of Slo2 channels. o

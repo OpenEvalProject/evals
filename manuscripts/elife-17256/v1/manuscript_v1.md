@@ -1,0 +1,16 @@
+# Attention operates uniformly throughout the classical receptive field and the surround
+
+## Authors
+
+- Bram-Ernst Verhoef<sup>1</sup> ([ORCID: 0000-0003-3535-9008](https://orcid.org/0000-0003-3535-9008)) †
+- John HR Maunsell<sup>1</sup> ([ORCID: 0000-0003-0018-4439](https://orcid.org/0000-0003-0018-4439))
+
+### Affiliations
+
+1. Department of Neurobiology The University of Chicago Chicago United States
+
+† Corresponding author
+
+## Abstract
+
+Shifting attention between visual stimuli at different locations modulates neuronal responses in heterogeneous ways, depending on where those stimuli lie within the receptive fields of neurons. Yet how attention interacts with the receptive-field structure of cortical neurons remains unclear. We measured neuronal responses in area V4 while monkeys shifted their attention between stimuli placed in different locations within and around neuronal receptive fields. We found that attention interacts uniformly with the spatially-varying excitation and suppression associated with the receptive field. This interaction explained the large variability in attention modulation across neurons, and a non-additive relationship between stimulus selectivity, stimulus-induced suppression and attention modulation that has not been previously described. A spatially-tuned normalization model precisely accounted for all observed attention modulations and for the spatial summation properties of neurons. These results provide a unified account of spatial summation and attention-related modulation across both the classical receptive field and the surround.

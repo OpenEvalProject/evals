@@ -1,0 +1,24 @@
+# Amotl2a interacts with the Hippo effector Yap1 and the Wnt/β-catenin effector Lef1 to control tissue size in zebrafish
+
+## Authors
+
+- Sobhika Agarwala
+- Sandra Duquesne
+- Kun Liu
+- Anton Boehm
+- Lin Grimm
+- Sandra Link
+- Sabine König
+- Stefan Eimer
+- Olaf Ronneberger
+- Virginie Lecaudey †
+
+### Affiliations
+
+1. BIOSS Centre for Biological Signalling Studies Albert Ludwigs University of Freiburg Freiburg im Breisgau Germany Lecaudey@bio.uni-frankfurt.de
+
+† Corresponding author
+
+## Abstract
+
+During development, proliferation must be tightly controlled for organs to reach their appropriate size. While the Hippo signaling pathway plays a major role in organ growth control, how it senses and responds to increased cell density is still unclear. Here we use the zebrafish lateral line primordium (LLP), a group of migrating epithelial cells that form sensory organs, to understand how tissue growth is controlled during organ formation. Loss of the cell junction-associated Motin protein Amotl2a leads to overproliferation and bigger LLP, affecting the final pattern of sensory organs. Amotl2a function in the LLP is mediated together by the Hippo pathway effector Yap1 and the Wnt/β-catenin effector Lef1. Our results implicate for the first time the Hippo pathway in size regulation in the LL system. We further provide evidence that the Hippo/Motin interaction is essential to limit tissue size during development.

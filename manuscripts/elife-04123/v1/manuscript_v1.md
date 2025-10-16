@@ -1,0 +1,16 @@
+# Phase transitions of multivalent proteins can promote clustering of membrane receptors
+
+## Authors
+
+- Sudeep Banjade
+- Michael K Rosen †
+
+### Affiliations
+
+1. Department of Biophysics Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States michael.rosen@utsouthwestern.edu
+
+† Corresponding author
+
+## Abstract
+
+Clustering of proteins into micrometer-sized structures at membranes is observed in many signaling pathways.  Most models of clustering are specific to particular systems, and relationships between physical properties of the clusters and their molecular components are not well understood.  We report biochemical reconstitution on supported lipid bilayers of protein clusters containing the adhesion receptor Nephrin, and its cytoplasmic partners, Nck and N-WASP.  With Nephrin attached to the bilayer, multivalent interactions enable these proteins to polymerize on the membrane surface and undergo two-dimensional phase separation, producing micrometer-sized clusters.  Dynamics and thermodynamics of the clusters are modulated by the valencies and affinities of the interacting species.  In the presence of the Arp2/3 complex, the clusters assemble actin filaments, suggesting that clustering of regulatory factors could promote local actin assembly at membranes. Interactions between multivalent proteins could be a general mechanism for cytoplasmic adaptor proteins to organize membrane receptors into micrometer-scale signaling zones.

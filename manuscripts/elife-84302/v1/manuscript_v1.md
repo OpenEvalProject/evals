@@ -1,0 +1,20 @@
+# Structures of human dynein in complex with the lissencephaly 1 protein, LIS1
+
+## Authors
+
+- Janice M Reimer<sup>1</sup>
+- Morgan E DeSantis<sup>2</sup> ([ORCID: 0000-0002-4096-8548](https://orcid.org/0000-0002-4096-8548))
+- Samara L Reck-Peterson<sup>1</sup> ([ORCID: 0000-0002-1553-465X](https://orcid.org/0000-0002-1553-465X)) †
+- Andres E Leschziner<sup>3</sup> ([ORCID: 0000-0002-7732-7023](https://orcid.org/0000-0002-7732-7023)) †
+
+### Affiliations
+
+1. Department of Cellular and Molecular Medicine University of California, San Diego San Diego United States
+2. Department of Molecular, Cellular and Developmental Biology University of Michigan-Ann Arbor Ann Arbor United States
+3. Department of Cellular and Molecular Medicine University of California, San Diego La Jolla United States
+
+† Corresponding author
+
+## Abstract
+
+The lissencephaly 1 protein, LIS1, is mutated in type-1 lissencephaly and is a key regulator of cytoplasmic dynein-1. At a molecular level, current models propose that LIS1 activates dynein by relieving its autoinhibited form. Previously we reported a 3.1Å structure of yeast dynein bound to Pac1, the yeast homologue of LIS1, which revealed the details of their interactions (Gillies et al., 2022). Based on this structure, we made mutations that disrupted these interactions and showed that they were required for dynein’s function in vivo in yeast. We also used our yeast dynein-Pac1 structure to design mutations in human dynein to probe the role of LIS1 in promoting the assembly of active dynein complexes. These mutations had relatively mild effects on dynein activation, suggesting that there may be differences in how dynein and Pac1/LIS1 interact between yeast and humans. Here, we report cryo-EM structures of human dynein-LIS1 complexes. Our new structures reveal the differences between the yeast and human systems, provide a blueprint to disrupt the human dynein-LIS1 interaction more accurately, and map type-1 lissencephaly disease mutations, as well as mutations in dynein linked to malformations of cortical development/ intellectual disability, in the context of the dynein-LIS1 complex.

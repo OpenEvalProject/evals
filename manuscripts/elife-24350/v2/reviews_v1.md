@@ -1,0 +1,41 @@
+# Peer review - Round 1
+
+Editors:
+- Mohan K Balasubramanian, University of Warwick , United Kingdom
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.24350.017](https://doi.org/10.7554/eLife.24350.017)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Control of Lipid Domain Organization by a Biomimetic Contractile Actomyosin Cortex" for consideration by eLife. Your article has been reviewed by two peer reviewers, Aurelien Roux (Reviewer #1) and Matthieu Piel (Reviewer #2), and the evaluation has been overseen by Mohan Balasubramanian as the Reviewing Editor and Randy Schekman as the Senior Editor.
+
+As you will see, the expert referees have discussed the reviews with one another and the Reviewing Editor has drafted a series of comments that we request you respond to before we reach a binding decision. The Editor and reviewers request that you address the issue of novelty and the additional experiments they deem essential to elevate this work to the level of an Advance. Please indicate exactly how you propose to proceed and provide an estimate of the time it will take to complete this work. The Editor and the reviewers will then confer and make a recommendation.
+
+The referees appreciated your study on the control of lipid domain organization by the actomyosin cortex. In particular, the referees found that the conclusion that an actomyosin network bound to specific lipids can reorganize lipid domains not bound to such an actomyosin network interesting. They also appreciated the physical model presented in the manuscript. However, it was felt that there were three major issues with the results and the model proposed in this manuscript, which required significant revisions (experiments, rewriting, proper citation of the literature).
+
+Please find below consolidated comments from the referees, following discussion.
+
+Essential revisions:
+
+1) Many of the results have been already published by other groups. I am not against publication of results similar or identical to the ones already published (by other groups of course) as I think documented reproducibility is essential, and usually rare in our publication system. But there must be at least either some new, unreported facts, or a different analysis proposing a different mechanism. The selectivity of the phase, and the nucleation of lipids domains by actin filaments have already been reported, with very similar in vitro conditions by Honigmann et al. eLife 2014. The remodeling of lipid domains by active actomyosin network, in particular domain splitting and size selection, have been reported by Koster et al. PNAS 2016. In this manuscript, the monolayer experiments and the model proposed in the Discussion could be the new parts when compared to previous publications, but I am not (yet) convinced that the monolayer system can be easily compared to the supported bilayer (see point 3), nor that the model is supported by experimental data (see point 2). I am thus balanced on this point, as I think that a further effort form the author's on showing their point could revert my opinion.
+
+2) Line tension and the model. I am a bit confused by the proposal of the author. If I understood well, the authors propose that the higher the line tension is, the more energy (pulling force) is necessary to induce the phase transition, which explains why the contour length is changing more for higher temperatures (lower line tension). However, I don't see which experiments or analysis in this manuscript allow to discriminate the author's hypothesis from the one of Koster et al. PNAS 2016 in which the active forces of the actomyosin allow domain splitting and domain fusion.
+
+In fact, the authors report here size selection of domains, which was also reported by Koster et al., which proposed that small domains would preferentially fuse, and large domains would be preferentially broken, leading to a quite narrow range of sizes. Moreover, this manuscript also reports domain splitting and fusion, consistently with Koster et al. hypothesis. Finally, in Koster et al. study, increased line tension leads to lower remodeling, as it counteracts both domain splitting and domain fusion, which could explain the lower contour length increase when line tension is higher, as observed by the authors. But I don't really understand how size selection would work with the author's model that active pulling triggers a phase transition of lipids.
+
+In short, all observations made by Koster et al. are consistent with pure remodeling of the domains, without phase transition, and all the observations are reproduced by the authors. However, I cannot see an experimental result that can discriminate between the two hypotheses, and/or prove their model right.
+
+In Koster et al., a very convincing point is that the total area of the two phases do not change upon actomyosin addition, supporting the hypothesis of Koster et al. that actomyosin only remodel the lipid domains, and does not change the proportion of each lipid phase. This analysis lacks here, and would indeed be essential for proving the point of the authors: if actomyosin was inducing a lipid phase transition, one would expect the total area of the 2 phases (or the surface ratio of the two phases, Lo and Ld) to change upon actomyosin addition. I guess this analysis should be quite straight forward to do in the authors' experimental and should be conducted.
+
+3) The monolayer assay. First, as said by the authors in the text, but not detailed (only the Materials and methods) the conditions used here are fairly different. Instead of a mix DOPC, DPPC and chol as in the bilayer assay, they used C16 shingomyelin, DOPC and chol in very different proportions than DOPC/DPPC/chol. As the chemical interactions between cholesterol and sphingomyelin that participate in phase segregation are very different from the simple, entropy driven, mechanism of DOPC/DPPC separation, I wonder how the two systems can be compared. In fact, the authors see that their lipid-actin linker (DSPE and neutravidin) do not segregate the same than in the supported bilayer assay, supporting my opinion that these two systems cannot be compared easily.
+
+I think it would be essential to perform either the supported bilayer assay with DOPC/Shingo/Chol or the monolayer assay with DOPC/DPPC/Chol. Also in this assay, it would be very interesting to test the authors' model by following the lateral pressure within the monolayer (which can be easily done in these Langmuir films), as the phase transition proposed by the authors should lead to increased pressure. Of course, appropriate controls would also be needed (in particular actin on non-phase separated membranes, as binding of actin to membrane is also expected to act on lipid pressure).
+
+However, measuring the lateral pressure may not reach a clear conclusion on whether actomyosin leads to a phase transition or just lipid domain remodeling. In monolayers at the water/air interface, it is not clear how densely packed the lipids are. Usually in those monolayer assays, it is very difficult to reach the same tight packing than in a bilayer, and a change of total area of each phase can be the result of a phase transition, or compaction/extension of the lipids within a phase without phase transition. Even if evolution of pressure with phase transition is easily understood for system with one lipid, with such complex system the interpretation may reveal itself difficult. And because the total area covered by each phase depends on the lipid packing, the total area analysis proposed above for the supported bilayer may give non-reliable results for the monolayer.
+
+Thus, the monolayer assay, which is probably the newest assay in this manuscript, seems to me having intrinsic flaws for testing the authors' model. The model itself, even if very original and interesting, lacks experimental support at this point, and all other findings reported in this manuscript are consistent with previously published results and models.

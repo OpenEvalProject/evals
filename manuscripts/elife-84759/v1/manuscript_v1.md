@@ -1,0 +1,20 @@
+# Thermal phenotypic plasticity of pre- and post-copulatory male harm buffers sexual conflict in wild Drosophila melanogaster
+
+## Authors
+
+- Claudia Londoño-Nieto<sup>1</sup> ([ORCID: 0000-0002-7408-7327](https://orcid.org/0000-0002-7408-7327)) †
+- Roberto García-Roa<sup>1</sup>
+- Clara Garcia-Co<sup>1</sup> ([ORCID: 0000-0002-4126-5940](https://orcid.org/0000-0002-4126-5940))
+- Paula González<sup>1</sup>
+- Pau Carazo<sup>2</sup> ([ORCID: 0000-0002-1525-6522](https://orcid.org/0000-0002-1525-6522))
+
+### Affiliations
+
+1. Cavanilles Institute of Biodiversity and Evolutionary Biology University of Valencia Valencia Spain
+2. Cavanilles Institute of Biodiversity and Evolutionary Biology University of Valencia Paterna Spain
+
+† Corresponding author
+
+## Abstract
+
+Strong sexual selection frequently leads to sexual conflict and ensuing male harm, whereby males increase their reproductive success at the expense of harming females. Male harm is a widespread evolutionary phenomenon with a strong bearing on population viability. Thus, understanding how it unfolds in the wild is a current priority. Here, we sampled a wild Drosophila melanogaster population and studied male harm across the normal range of temperatures under which it reproduces optimally in nature by comparing female lifetime reproductive success and underlying male harm mechanisms under monogamy (i.e., low male competition/harm) vs. polyandry (i.e., high male competition/harm). While females had equal lifetime reproductive success across temperatures under monogamy, polyandry resulted in a maximum decrease of female fitness at 24°C (35%), reducing its impact at both 20°C (22%), and 28°C (10%). Furthermore, female fitness components and pre- (i.e., harassment) and post-copulatory (i.e., ejaculate toxicity) mechanisms of male harm were asymmetrically affected by temperature. At 20ºC, male harassment of females was reduced, and polyandry accelerated female actuarial ageing. In contrast, the effect of mating on female receptivity (a component of ejaculate toxicity) was affected at 28ºC, where the mating costs for females decreased and polyandry mostly resulted in accelerated reproductive ageing. We thus show that, across a natural thermal range, sexual conflict processes and their effects on female fitness components are plastic and complex. As a result, the net effect of male harm on overall population viability is likely to be lower than previously surmised. We discuss how such plasticity may affect selection, adaptation and, ultimately, evolutionary rescue under a warming climate.

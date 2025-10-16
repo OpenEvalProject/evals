@@ -1,0 +1,20 @@
+# Planar cell polarity-mediated induction of neural stem cell expansion during axolotl spinal cord regeneration
+
+## Authors
+
+- Aida Rodrigo Albors
+- Akira Tazaki
+- Fabian Rost
+- Sergej Nowoshilow
+- Osvaldo Chara
+- Elly M Tanaka †
+
+### Affiliations
+
+1. Deutsche Forschungsgemeinschaft - Center for Regenerative Therapies Dresden Dresden Germany elly.tanaka@crt-dresden.de
+
+† Corresponding author
+
+## Abstract
+
+Axolotls are uniquely able to mobilize neural stem cells to regenerate all missing regions of the spinal cord. How a neural stem cell under homeostasis converts after injury to a highly regenerative cell remains unknown. Here we show that during regeneration, axolotl neural stem cells repress neurogenic genes and reactivate a transcriptional program similar to embryonic neuroepithelial cells. This dedifferentiation includes the acquisition of rapid cell cycles, the switch from neurogenic to proliferative divisions, and the re-expression of planar cell polarity (PCP) pathway components. We show that PCP induction is essential to reorient mitotic spindles along the anterior-posterior axis of elongation, and orthogonal to the cell apical-basal axis. Disruption of this property results in premature neurogenesis and halts regeneration. Our findings reveal a key role for PCP in coordinating the morphogenesis of spinal cord outgrowth with the switch from a homeostatic to a regenerative stem cell that restores missing tissue.

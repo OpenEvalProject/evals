@@ -1,0 +1,16 @@
+# Amygdala neural activity reflects spatial attention towards stimuli promising reward or threatening punishment
+
+## Authors
+
+- Christopher J Peck
+- C Daniel Salzman †
+
+### Affiliations
+
+1. Department of Neuroscience Columbia University New York United States cds2005@columbia.edu
+
+† Corresponding author
+
+## Abstract
+
+Humans and other animals routinely identify and attend to sensory stimuli so as to rapidly acquire rewards or avoid aversive experiences. Emotional arousal, a process mediated by the amygdala, can enhance attention to stimuli in a non-spatial manner. However, amygdala neural activity was recently shown to encode spatial information about reward-predictive stimuli, and to correlate with spatial attention allocation. If representing the motivational significance of sensory stimuli within a spatial framework reflects a general principle of amygdala function, then spatially selective neural responses should also be elicited by sensory stimuli threatening aversive events. Recordings from amygdala neurons were therefore obtained while monkeys directed spatial attention towards stimuli promising reward or threatening punishment. Neural responses encoded spatial information similarly for stimuli associated with both valences of reinforcement, and responses reflected spatial attention allocation. The amygdala therefore may act to enhance spatial attention to sensory stimuli associated with rewarding or aversive experiences.

@@ -1,0 +1,22 @@
+# Graded titin cleavage progressively reduces tension and uncovers the source of A-band stability in contracting muscle
+
+## Authors
+
+- Yong Li<sup>1</sup> ([ORCID: 0000-0001-8184-5977](https://orcid.org/0000-0001-8184-5977))
+- Anthony L Hessel<sup>1</sup>
+- Andreas Unger<sup>1</sup>
+- David Ing<sup>1</sup>
+- Jannik Recker<sup>1</sup>
+- Franziska Koser<sup>1</sup>
+- Johanna K Freundt<sup>1</sup>
+- Wolfgang A Linke<sup>1</sup> ([ORCID: 0000-0003-0801-3773](https://orcid.org/0000-0003-0801-3773)) †
+
+### Affiliations
+
+1. Institute of Physiology II University of Muenster Muenster Germany
+
+† Corresponding author
+
+## Abstract
+
+The giant muscle protein titin is a major contributor to passive force; however, its role in active force generation is unresolved. Here, we use a novel titin-cleavage (TC) mouse model that allows specific and rapid cutting of elastic titin to quantify how titin-based forces define myocyte ultrastructure and mechanics. We show that under mechanical strain, as titin cleavage doubles from heterozygous to homozygous TC muscles, Z-disks become increasingly out of register while passive and active forces are reduced. Interactions of elastic titin with sarcomeric actin filaments are revealed. Strikingly, when titin-cleaved muscles contract, myosin-containing A-bands become split and adjacent myosin filaments move in opposite directions while also shedding myosins. This establishes intact titin filaments as critical force-transmission networks, buffering the forces observed by myosin filaments during contraction. To perform this function, elastic titin must change stiffness or extensible length, unveiling its fundamental role as an activation-dependent spring in contracting muscle.

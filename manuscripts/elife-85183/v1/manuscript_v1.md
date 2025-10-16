@@ -1,0 +1,18 @@
+# Phage tRNAs evade tRNA-targeting host defenses through anticodon loop mutations
+
+## Authors
+
+- Daan F van den Berg<sup>1</sup>
+- Baltus A van der Steen<sup>1</sup>
+- Ana Rita Costa<sup>1</sup>
+- Stan JJ Brouns<sup>1</sup> ([ORCID: 0000-0002-9573-1724](https://orcid.org/0000-0002-9573-1724)) †
+
+### Affiliations
+
+1. Department of Bionanoscience Delft University of Technology Delft Netherlands
+
+† Corresponding author
+
+## Abstract
+
+tRNAs in bacteriophage genomes are widespread across bacterial host genera, but their exact function has remained unclear for more than 50 years. Several hypotheses have been proposed, and the most widely accepted one is codon compensation, which suggests that phages encode tRNAs that supplement codons that are less frequently used by the host. Here, we combine several observations and propose a new hypothesis that phage-encoded tRNAs counteract the tRNA-depleting strategies of the host using enzymes such as VapC, PrrC, Colicin D, and Colicin E5 to defend from viral infection. Based on mutational patterns of anticodon loops of tRNAs encoded by phages, we predict that these tRNAs are insensitive to host tRNAses. For phage-encoded tRNAs targeted in the anticodon itself, we observe that phages typically avoid encoding these tRNAs. Further supporting the hypothesis that phage tRNAs are selected to be insensitive to host anticodon nucleases. Altogether our results support the hypothesis that phage-encoded tRNAs have evolved to be insensitive to host anticodon nucleases.

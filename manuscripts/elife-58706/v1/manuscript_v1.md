@@ -1,0 +1,16 @@
+# Membrane voltage dysregulation driven by metabolic dysfunction underlies bactericidal activity of aminoglycosides
+
+## Authors
+
+- Giancarlo Noe Bruni<sup>1</sup> ([ORCID: 0000-0003-2850-4633](https://orcid.org/0000-0003-2850-4633))
+- Joel Kralj<sup>1</sup> ([ORCID: 0000-0001-9370-2324](https://orcid.org/0000-0001-9370-2324)) †
+
+### Affiliations
+
+1. BioFrontiers/MCDB University of Colorado - Boulder Boulder United States
+
+† Corresponding author
+
+## Abstract
+
+Aminoglycosides are broad-spectrum antibiotics whose mechanism of action is under debate. It is widely accepted that membrane voltage potentiates aminoglycoside activity, which is ascribed to voltage-dependent drug uptake. In this paper, we measured the response of Escherichia coli treated with aminoglycosides and discovered that the bactericidal action arises not from the downstream effects of voltage dependent drug uptake, but rather directly from dysregulated membrane potential. In the absence of voltage, aminoglycosides are taken into cells and exert bacteriostatic effects by inhibiting translation. However, cell killing was immediate upon re-polarization. The hyperpolarization arose from altered ATP flux, which induced a reversal of the F1Fo-ATPase to hydrolyze ATP and generated the deleterious voltage. Heterologous expression of an ATPase inhibitor completely eliminated bactericidal activity, while loss of the F-ATPase reduced the electrophysiological response to aminoglycosides. Our data support a model of voltage induced death, and separates aminoglycoside bacteriostasis and bactericide in E. coli.

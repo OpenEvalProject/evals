@@ -1,0 +1,25 @@
+# Large-scale filament formation inhibits the activity of CTP synthetase
+
+## Authors
+
+- Rachael Barry
+- Anne-Florence Bitbol
+- Alexander Lorestani
+- Emeric J Charles
+- Chris H Habrian
+- Jesse M Hansen
+- Hsin-Jung Li
+- Enoch P Baldwin
+- Ned S Wingreen
+- Justin M Kollman
+- Zemer Gitai †
+
+### Affiliations
+
+1. Department of Molecular Biology Princeton University Princeton United States zgitai@princeton.edu
+
+† Corresponding author
+
+## Abstract
+
+CTP Synthetase (CtpS) is a universally conserved and essential metabolic enzyme. While many enzymes form small oligomers, CtpS forms large-scale filamentous structures of unknown function in prokaryotes and eukaryotes. By simultaneously monitoring CtpS polymerization and enzymatic activity we show that polymerization inhibits activity and CtpS's product, CTP, induces assembly. To understand how assembly inhibits activity, we used electron microscopy to define the structure of CtpS polymers. This structure suggests that polymerization sterically hinders a conformational change necessary for CtpS activity. Structure-guided mutagenesis and mathematical modeling further indicate that coupling activity to polymerization promotes cooperative catalytic regulation. This previously-uncharacterized regulatory mechanism is important for cellular function since a mutant that disrupts CtpS polymerization disrupts E. coli growth and metabolic regulation without reducing CTP levels. We propose that regulation by large-scale polymerization enables ultrasensitive control of enzymatic activity while storing an enzyme subpopulation in a conformationally restricted form that is readily activatable.

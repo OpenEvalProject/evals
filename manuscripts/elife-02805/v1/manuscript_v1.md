@@ -1,0 +1,22 @@
+# Coordinated control of senescence by lncRNA and a novel T-box3 co-repressor complex
+
+## Authors
+
+- Pavan Kumar P.
+- Uchenna Emechebe
+- Richard Smith
+- Sarah Franklin
+- Barry Moore
+- Mark Yandell
+- Stephen L Lessnick
+- Anne M Moon †
+
+### Affiliations
+
+1. Weis Center for Research, Geisinger Clinic Danville United States ammoon@geisinger.edu
+
+† Corresponding author
+
+## Abstract
+
+Cellular senescence is a crucial tumor suppressor mechanism. We discovered a CAPERα/TBX3 repressor complex required to prevent senescence in primary cells and mouse embryos. Critical, previously unknown roles for CAPERα in controlling cell proliferation are manifest in an obligatory interaction with TBX3 to regulate chromatin structure and repress transcription of CDKN2A-p16INK and the RB pathway. The IncRNA UCA1 is a direct target of CAPERα/TBX3 repression whose overexpression is sufficient to induce senescence. In proliferating cells, we found that hnRNPA1 binds and destabilizes CDKN2A-p16INK mRNA whereas during senescence, UCA1 sequesters hnRNPA1 and thus stabilizes CDKN2A-p16INK. Thus CAPERα/TBX3 and UCA1 constitute a coordinated, reinforcing mechanism to regulate both CDKN2A-p16INK transcription and mRNA stability.   Dissociation of the CAPERα/TBX3 co-repressor during oncogenic stress activates UCA1, revealing a novel mechanism for oncogene-induced senescence. Our elucidation of CAPERα and UCA1 functions in vivo provides new insights into senescence induction, and the oncogenic and developmental properties of TBX3.

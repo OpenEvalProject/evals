@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- Ronald N Germain, National Institute of Allergy and Infectious Diseases , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.04953.033](https://doi.org/10.7554/eLife.04953.033)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “WASP dependent actin foci facilitate phospholipase C-γ activation in primary T lymphocytes” for consideration at eLife. Your article has been favorably evaluated by Tadatsugu Taniguchi (Senior editor), a Reviewing editor, and two reviewers.
+
+The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+The referees found your paper of substantial interest to the readers of eLife and feel that with suitable revision, it would be an excellent contribution. The major issues raised by the reviewers that need to be dealt with in your revision are detailed below, along with a few minor comments. A revised paper addressing in a substantive manner the major issues raised will be examined by the reviewing editor and the referees and final decision made at that time.
+
+S. Kumari et al. employ a combination of cutting-edge microscopy techniques to investigate the role of Wiscott Aldrich Syndrome protein (WASP) in T cell activation. The authors have developed a novel assay that reveals actin foci that form after activation of the T cell receptor. These have not been noticed before, since this newly polymerized actin represents just a subset of the total actin filament pool. The discovery of distinct types of actin filaments in the T cell is interesting in its own right. These actin foci are associated with TCR microclusters and require WASP and HS-1 for their formation. Interestingly, disruption of the formation of these foci by WASP depletion or Arp2/3 inhibition with CK666 results in the inhibition of PLCg activation and calcium mobilization; however, proximal signaling is not affected. These results provide new insight into the role of actin networks in signaling and also provide a potential explanation of the immunodeficiency defected associated with mutations or knockdown of WASP. This is a very comprehensive and well-conducted study (perhaps a bit dense read in places).
+
+Major issues:
+
+1) The authors used a variety of methods of stimulating T cells (pMHC and other times with two different antibodies (Okt3 or 2C11), and also switched between mouse and human T cells. Mouse and human T cells were even employed in the same figure (e.g., Figure 4). The explanation for this is not clear in the paper and would be good if it was explained to the reader. Also, in several parts of the paper, the authors are not internally consistent in how they conduct their experiments, without explanation for the change in method. For example, CD3 antibody was used to activate the T cells when studying the role of WASP in forming actin foci, but pMHC was used for investigating the role of NWASP and WAVE2. Why the two different types of stimuli in different experiments? Unless the authors have a strong experimental or theoretical basis for the switch, these experiments need to be made congruent.
+
+2) The expression of WASP mutants was used to dissect the role of WASP (e.g. Y291F and deltaC). However, the results are somewhat complicated to interpret. Ideally, it would have been best to express these in WASP-/- T cells, which they employed in panel a-c of the same figure (Figure 4A–C). This would rule out potential complications with having endogenous WASP also present (particularly important for the lack of an effect of Y291F expression). Also I do not understand how Y291F serves as a control. This phosphorylation should enhance WASP activation and increase affinity for Arp2/3. Thus, a mutant would be impaired in these activities but still would retain a scaffolding function. Thus, isn't it still possible that WASP activates PLCg by acting as a scaffold? Again, please make the experiments internally consistent (e.g., use WASP-/- cells throughout as recipient cells) and explain the choice of Y291F as a control.
+
+3) In Figure 3, the authors determined whether TCR signaling is required for formation of the actin foci. They have compared “ICAM alone” and “ICAM + MHCp” conditions. It would be useful to include the “MHCp alone” condition as well to determine if integrin signaling is also involved.
+
+4) The Arp2/3 inhibitor CK666 abolished 67% actin foci and 42% of lamellipodia and lamellar actin. While the foci are marginally more reduced, it is difficult to attribute the defects in calcium flux and NFAT translocation (Figure 6G, H) to foci reduction rather than lamellipodia and lamellar actin reduction. It might be better to test these downstream signaling defects in WASP deficient cells because depleting WASP appears to be more selective for reducing foci and does not affect lamellar actin structures as much. Further, at least some of the results obtained using CK666 should be confirmed with a more selective approach based on Arp2/3 silencing.
+
+5) The results showing the role of WASP on foci formation are obtained using fixed and permeabilized cells at a defined time point (2 minutes after beginning of culture). This makes it difficult to estimate the time of formation of these structures. It would be important to investigate the time kinetics of foci formation and of their migration towards cSMAC using time-lapse video microscopy to define whether the kinetics are altered (delayed) upon WASP/Arp2/3 silencing. It would also be interesting to monitor the kinetics of foci formation and of their lifetime in different areas of the synapse (independently of WASP silencing) in parallel with [Ca2+] i increases. This approach would allow to establish whether foci formation precedes or not the [Ca2+] i increase.
+
+6) The authors propose that WASP pathway regulates actin foci formation, which in turn is instrumental for synaptic activation of PLCγ1. However, they do not show a mechanistic link between foci formation and PLCγ1. An alternative explanation of the data might be that the WASP pathway might control PLCγ1 activation. In turn PLCγ1 signaling might promote actin dynamics as suggested by a recent report (A. Brodovitch et al., J Immunol, 2013; 191:2064-2071). To address this point, the authors should investigate the impact of PLCγ1 silencing (or of its pharmacological inhibition) on F-actin foci formation and the time kinetics of foci formation and of [Ca2+]i (see above).

@@ -1,0 +1,21 @@
+# The kinase LYK5 is a major chitin receptor in Arabidopsis and forms a chitin-induced complex with related kinase CERK1
+
+## Authors
+
+- Yangrong Cao
+- Yan Liang
+- Kiwamu Tanaka
+- Cuong T Nguyen
+- Robert P Jedrzejczak
+- Andrzej Joachimiak
+- Gary Stacey †
+
+### Affiliations
+
+1. Division of Plant Sciences University of Missouri Columbia United States Staceyg@missouri.edu
+
+† Corresponding author
+
+## Abstract
+
+Chitin is a fungal microbe-associated molecular pattern (MAMP) that is recognized in Arabidopsis by a lysin motif receptor kinase (LYK), AtCERK1. Previous research suggested that AtCERK1 is the major chitin receptor in plants and mediates chitin-induced signaling through homodimerization and phosphorylation. However, the reported chitin binding affinity of AtCERK1 is quite low, suggesting another receptor with high chitin binding affinity might be present. Here, we propose that AtLYK5 is the primary chitin receptor in Arabidopsis . Mutations in AtLYK5 resulted in a significant reduction in the plant chitin response. However, AtLYK5 shares overlapping function with AtLYK4 and, therefore, only AtLYK4/AtLYK5-2 double mutants show a complete loss of chitin response. AtLYK5 interacts with AtCERK1 in a chitin-dependent manner. Chitin binding to AtLYK5 is indispensable for chitin-induced AtCERK1 phosphorylation. AtLYK5 binds chitin at a higher affinity than AtCERK1. The data suggest that AtLYK5 is the primary receptor for chitin to induce plant immunity.

@@ -1,0 +1,23 @@
+# Quantitative microscopy of functional HIV post-entry complexes reveals association of replication with the viral capsid
+
+## Authors
+
+- Ke Peng
+- Walter Muranyi
+- Bärbel Glass
+- Vibor Laketa
+- Stephen R Yant
+- Luong Tsai
+- Tomas Cihlar
+- Barbara Müller
+- Hans-Georg Kräusslich †
+
+### Affiliations
+
+1. Department of Infectious Diseases, Virology Heidelberg University Heidelberg Germany hans-georg.kraeusslich@med.uni-heidelberg.de
+
+† Corresponding author
+
+## Abstract
+
+The steps from HIV-1 cytoplasmic entry until integration of the reverse transcribed genome are currently enigmatic. They occur in ill-defined reverse-transcription- and pre-integration-complexes (RTC, PIC) with various host and viral proteins implicated. Here, we report quantitative detection of functional RTC/PIC by labeling nascent DNA combined with detection of viral integrase. We show that the viral capsid (CA) protein remains associated with cytoplasmic RTC/PIC, but is lost on nuclear PIC in a HeLa-derived cell line. In contrast, nuclear PIC were almost always CA-positive in primary human macrophages, indicating nuclear import of capsids or capsid-like structures. We further show that the CA-targeted inhibitor PF74 exhibits a bimodal mechanism, blocking RTC/PIC association with the host factor CPSF6 and nuclear entry at low, and abrogating reverse transcription at high concentrations. The newly developed system is ideally suited for studying retroviral post-entry events and the roles of host factors including DNA sensors and signaling molecules.

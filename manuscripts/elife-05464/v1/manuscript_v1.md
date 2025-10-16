@@ -1,0 +1,21 @@
+# A map of directional genetic interactions in a metazoan cell
+
+## Authors
+
+- Bernd Fischer
+- Thomas Sandmann
+- Thomas Horn
+- Maximilian Billmann
+- Varun Chaudhary
+- Wolfgang Huber
+- Michael Boutros †
+
+### Affiliations
+
+1. Division of Signalling and Functional Genomics German Cancer Research Center Heidelberg Germany m.boutros@dkfz.de
+
+† Corresponding author
+
+## Abstract
+
+Gene-gene interactions shape complex phenotypes and modify the effects of mutations during development and disease. The effects of statistical gene-gene interactions on phenotypes have been used to assign genes to functional modules. However, directional, epistatic interactions, which reflect regulatory relationships between genes, have been challenging to map at large-scale. Here, we used combinatorial RNA interference and automated single-cell phenotyping to generate a large genetic interaction map for 21 phenotypic features of Drosophila cells. We devised a method that combines genetic interactions on multiple phenotypes to reveal directional relationships. This network reconstructed the sequence of protein activities in mitosis. Moreover, it revealed that the Ras pathway interacts with the SWI/SNF chromatin-remodelling complex, an interaction that we show is conserved in human cancer cells. Our study presents a powerful approach for reconstructing directional regulatory networks and provides a resource for the interpretation of functional consequences of genetic alterations.

@@ -1,0 +1,24 @@
+# The YTHDF proteins ECT2 and ECT3 bind largely overlapping target sets and influence target mRNA abundance, not alternative polyadenylation
+
+## Authors
+
+- Laura Arribas-Hernández<sup>1</sup> †
+- Sarah Rennie<sup>1</sup>
+- Michael Schon<sup>2</sup>
+- Carlotta Porcelli<sup>3</sup> ([ORCID: 0000-0003-4675-4898](https://orcid.org/0000-0003-4675-4898))
+- Balaji Enugutti<sup>2</sup> ([ORCID: 0000-0002-0816-024X](https://orcid.org/0000-0002-0816-024X))
+- Robin Andersson<sup>1</sup> ([ORCID: 0000-0003-1516-879X](https://orcid.org/0000-0003-1516-879X))
+- Michael D Nodine<sup>2</sup> ([ORCID: 0000-0002-6204-8857](https://orcid.org/0000-0002-6204-8857))
+- Peter Brodersen<sup>1</sup> ([ORCID: 0000-0003-1083-1150](https://orcid.org/0000-0003-1083-1150)) †
+
+### Affiliations
+
+1. University of Copenhagen Copenhagen N Denmark
+2. Gregor Mendel Institute Vienna Austria
+3. Biology University of Copenhagen Copenhagen Denmark
+
+† Corresponding author
+
+## Abstract
+
+Gene regulation via N6 -methyladenosine (m 6 A) in mRNA involves RNA-binding proteins that recognize m 6 A via a YT521-B homology (YTH) domain. The plant YTH domain proteins ECT2 and ECT3 act genetically redundantly in stimulating cell proliferation during organogenesis, but several fundamental questions regarding their mode of action remain unclear. Here, we use HyperTRIBE (targets of RNA-binding proteins identified by editing) to show that most ECT2 and ECT3 targets overlap, with only few examples of preferential targeting by either of the two proteins. HyperTRIBE in different mutant backgrounds also provides direct views of redundant and specific target interactions of the two proteins. We also show that contrary to conclusions of previous reports, ECT2 does not accumulate in the nucleus. Accordingly, inactivation of ECT2 , ECT3 and their surrogate ECT4 does not change patterns of polyadenylation site choice in ECT2/3 target mRNAs, but does lead to lower steady state accumulation of target mRNAs. In addition, mRNA and microRNA expression profiles show indications of stress response activation in ect2/ect3/ect4 mutants, likely via indirect effects. Thus, previous suggestions of control of alternative polyadenylation by ECT2 are not supported by evidence, and ECT2 and ECT3 act largely redundantly to regulate target mRNA, including its abundance, in the cytoplasm.

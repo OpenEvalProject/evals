@@ -1,0 +1,82 @@
+# Peer review - Round 1
+
+Editors:
+- Ronald L Calabrese, Emory University United States
+
+Reviewers:
+- Muriel Thoby-Brisson, CNRS Université de Bordeaux France
+- Jeffrey C Smith, National Institute of Neurological Disorders and Stroke United States
+
+## Review text
+
+DOI: [10.7554/eLife.51350.sa1](https://doi.org/10.7554/eLife.51350.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Acceptance summary:
+
+This is a technically impressive study that effectively combines optogenetic, electrophysiological, and pharmacological techniques to analyze cell type specific neuromodulatory actions of substance P (SP) on excitatory and inhibitory neurons in the inspiratory rhythm generator within the mouse preBötzinger complex in vitro. Important novel results are presented suggesting that the demonstrated effects of SP in augmenting inspiratory frequency and rhythm stability are a consequence of its selective effects on the pre-inspiratory recurrent excitation or "percolation" phase of the inspiratory rhythmic cycle where SP is shown to augment the spiking activity and recruit of excitatory pre-I spiking neurons. The important conceptual advance is that neuromodulation of inspiratory cycle dynamics at least in vitro may be understood by considering the respiratory cycle to consist of three distinct phases (inspiratory burst, refractory, and percolation phases) that can be differentially regulated by physiologically important neuromodulators, with predictable phase-dependent effects on rhythm dynamics. The results presented from this study with SP effectively support and emphasize this concept.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Insights into the dynamic control of breathing revealed through cell-type-specific responses to substance P" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ronald Calabrese as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Muriel Thoby-Brisson (Reviewer #1); Jeffrey C Smith (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Essential revisions:
+
+All the major concerns of the expert reviewers should be addressed in revision. To help guide this process we offer a few consensus comments.
+
+1) There was general concern that the authors cannot really make definitive statements about how SP influences excitatory/inhibitory balance without voltage clamp experiments that directly assess excitatory and inhibitory synaptic input. In the absence of such experiments, it would be satisfactory if the authors present this concept as an inference/speculation with adequate discussion in the manuscript, including further clear discussion about why they think analyses of modulation of more rostral excitatory and inhibitory neuron activity is critical in terms of understanding circuit interactions relevant to the problem, and also indicate the need to perform more comprehensive analyses of synaptic interactions based on direct measurements of synaptic currents/potentials to resolve this issue. Some measurements in the transverse slice would also help clarify if the more complex distributed circuit interactions that the authors seem to be invoking are important. According to the authors' model, the preBötC should be "over-excited" with substance P and measurements of this should include a change burst rate and amplitude. These changes should be then compared to the same dose of SP in the horizontal preparation. The model predicts that SP will have different magnitude of effects in these two networks.
+
+2) There is general concern that the current clamp data needs clear supporting data. (i) Reviewer #2's requirements to provide much more detail about the recordings is essential. (ii) The authors must demonstrate that the data in whole cell recording mode is reproduced by a reasonable number of cell-attached recordings. (iii) The authors also must be clear about how they are defining burst onset. Is it based on the first action potential?
+
+3) The was concern about the issue of "jitter" of burst onset and how the authors measure jitter and about their interpretation of it as a potential mechanism to prevent hypersynchronization. The authors show data that indicating that SP doesn't change the burst duration or spiking frequency for individual cells, but instead increases the "jitter" of burst onset. The authors claim that this is a mechanism to prevent hypersynchronization (subsection “SP increases stochasticity among excitatory preBӧtC neurons during inspiratory bursts”), which is only one potential model and interpretation. If this is included, it must be clearly stated as a model and be limited to the Discussion in the paper. Furthermore, if the burst onset is more variable, then we should expect to see overall changes in burst duration, yet no data on burst characteristics is documented. This should be described and reported.
+
+Reviewer #1:
+
+The very elegant work proposed by Baertsch and Ramirez aims to decipher the cellular mechanisms by which Substance P (SP, a well-known modulator of the respiratory network activity) dynamically controls respiratory rhythmogenesis through cell-type specific effects. They found that SP modulates breathing frequency and stability through an action during a very specific phase of the respiratory cycle: the percolation phase (recurrent excitation phase), but not by changing the inspiratory phase nor the refractory period. In addition, they provide evidences for a cell-specific action as this modulatory mechanism involves preferentially excitatory respiratory neurons capable of exhibiting pre-inspiratory spiking under SP influence without any significant contribution of inhibitory or pre-inspiratory neurons. Thus, they conclude that phase-specific and cell-type specific action of SP is a key mechanism to dynamically control the dynamic of the respiratory network.
+
+Overall the paper is well written, easy to follow and data are nicely illustrated and convincing. I just have a few comments:
+
+1) As stated in the Discussion it is considered that rhythmogenic mechanisms within the respiratory network, supported by the group-pacemaker hypothesis, involve interactions between synaptic and specific membrane properties (such as pacemaker properties) among respiratory neurons. Recording respiratory pacemaker neurons remain challenging due to their poor representativeness. But I was wondering whether the authors had the opportunity to perform their experiments in such a type of respiratory neurons. This could be particularly interesting as, to my knowledge, pacemaker neurons rarely exhibit pre-inspiratory discharge. I would be curious to know whether SP would change this pattern in pacemaker neurons and consequently whether modulation of this specific cell-type could also account for the overall modulatory effect of SP.
+
+2) Do the authors have any indications on the cellular mechanisms underlying the change in discharge pattern of the excitatory neurons in the presence of SP? Is it an increase in recurrent synaptic inputs, changes in membrane properties associated to specific conductances, or both? In other words, do the authors possess data in voltage-clamp mode to reveal possible modulation of either of these features?
+
+Reviewer #2:
+
+This is a technically impressive study that effectively combines optogenetic, electrophysiological, and pharmacological techniques to analyze cell type specific neuromodulatory actions of substance P (SP) on excitatory and inhibitory neurons in the inspiratory rhythm generator within the mouse preBötzinger complex in vitro. Important novel results are presented suggesting that the demonstrated effects of SP in augmenting inspiratory frequency and rhythm stability are a consequence of its selective effects on the pre-inspiratory recurrent excitation or "percolation" phase of the inspiratory rhythmic cycle where SP is shown to augment the spiking activity and recruit of excitatory pre-I spiking neurons. The important conceptual advance is that neuromodulation of inspiratory cycle dynamics at least in vitro may be understood by considering the respiratory cycle to consist of three distinct phases (inspiratory burst, refractory, and percolation phases) that can be differentially regulated by physiologically important neuromodulators, with predictable phase-dependent effects on rhythm dynamics. The results presented from this study with SP effectively support and emphasize this concept.
+
+1) The authors suggest that the inspiratory phase is regulated by the balance of inhibition, excitation, and intrinsic bursting properties of active neurons, and that in the present experiments with SP, the balance of excitation-inhibition is maintained. While the former is certainly the case in general, excitatory and inhibitory inputs to any neuron in the present experiments have not been directly measured (e.g., by voltage clamp measurements) to know for sure about this balance. Similarly, the authors state, but have not directly shown, that SP shifts the balance of excitation and inhibition among rostral inspiratory neurons, which implies that they have performed some analyses of synaptic interactions among neurons in the network, including in preBötC circuits. This needs to be qualified further in the text. I agree that it is important that the data presented show that SP does not change spiking frequency of excitatory inspiratory neurons during the burst phase as well as activity of inhibitory neurons (and by inference probably local inhibitory interactions) during this phase. Perhaps the modulation of leak conductances by SP (noted in the Introduction) can cause depolarizing shifts in neuronal membrane potentials to promote pre-I spiking without altering overall spiking profiles during the inspiratory burst phase.
+
+2) The baseline membrane potentials of neurons before (and therefore) after SP are not indicated in any of the figures (Figure 2, 3, 4, 5) with whole-cell recordings and provided in the text. This information is important and should be provided to understand why the subpopulation of pre-I excitatory neurons is active during the inter-burst interval (presumably they have more depolarized baseline potentials?), the amount of depolarization if any with SP, and why specific neuron types are recruited or not to spike during the IBI interval. It has been postulated for many years that neurons with more depolarized basal membrane potentials exhibit pre-I spiking activity that is important for rhythmogenesis by providing synaptic excitation during the pre-I spiking phase (e.g., Butera et al., 1999).
+
+Reviewer #3:
+
+The authors confirm that SP decreases the interval between respiratory bursts and show this shortening is due to shrinking of a later portion of the interval that they dub the "percolation" phase. This point is cleanly and clearly demonstrated in Figure 1, but this contribution alone does not substantially deepen our understanding of respiratory rhythm generation and modulation. Remaining experiments are purely descriptive, flawed with technical issues, and do not provide the proposed mechanistic understanding. Given Yeh et al., 2017, defined the molecular mechanism for SP modulation of breathing, this work does not provide any advancement necessitating publication to a general audience as is.
+
+1) One primary focus of the paper is to record from previously defined populations of pre-inspiratory and inspiratory excitatory neurons and inspiratory inhibitory neurons to determine if SP has cell-type specific effects. However, a major technical flaw throughout the manuscript is the use of current clamp recordings instead of cell attached recordings. Although the authors claim to have done both in the Materials and methods, no cell-attached recordings are shown. In current clamp, the experimenter has complete control of the cells resting membrane potential and can therefore easily make any cell look pre-inspiratory or inspiratory. With this flaw in mind, the authors cannot then claim to have identified cell-type specific modulation by substance P.
+
+2) In Figure 2E/F and Figure 6 the authors focus attention to the effect of substance P on the onset of neural bursting activity versus preBötC population bursting. They claim that SP increases variability in this timing for pre-inspiratory neurons and that this is key to ensure the preBötC burst size does not increase. As shown in Figure 2E, the onset of the burst appears arbitrarily defined and as shown, would be nearly impossible to definitively decide for a pre-inspiratory neuron. Furthermore, this point is influenced by what membrane potential the experimenter is holding the neuron at in current clamp.
+
+3) Many years of papers have shown that SP increases the preBötC rhythm in a coronal slice preparation. This result shows that brainstem regions rostral to the preBötC are not required for SP modulation of preBötC activity. However, in Figures 7/8 the authors record from neurons rostral to the preBötC and observe changes in activity after SP. They claim these changes cause a shift to increased inhibitory neuron activity that helps to maintain preBötC excitation. This is never directly measured and there are too many logical leaps here, such as:
+
+i) Do these rostral neurons project to the preBötC?
+
+ii) Are there decreased excitatory inputs into the preBötC?
+
+iii) Does bursting in the preBötC become "over-excited" in a coronal slice?
+
+iv) If SP acts through NALCN to depolarize cells, how is it decreasing excitatory neural activity? Given the lack of understanding, these figures add confusion.
+
+[Editors' note: further revisions were requested prior to acceptance, as described below.]
+
+Thank you for submitting your article "Insights into the dynamic control of breathing revealed through cell-type-specific responses to substance P" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ronald Calabrese as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Muriel Thoby-Brisson (Reviewer #1); Jeffrey C Smith (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+The authors have done an admirable job responding to the previous review. One reviewer asks for further clarifications, which should be seriously considered. When the authors re-submit no external further review will be necessary.
+
+Essential revisions:
+
+The revised manuscript has nicely incorporated the feedback from the three essential revisions. The inclusion of the membrane potential in the featured recordings as well as the number of cell-attached recordings performed addresses essential revision comment #2. Although the N is low for the number of cell-attached recordings, this data is important to confirm that a subset of excitatory-inspiratory neurons display pre-I activity only after SP application. Additionally, as the authors point out, the described membrane potentials suggest that the recruited neurons are likely those with higher resting membrane potentials before SP application. With this in mind, the authors should consider providing the membrane potential before and after SP for all of the recorded neurons of the various neural types. While the depolarization and recruitment of cells into pre-I firing is interesting, it will be essential in the future to determine if the recruitment is required for the SP induced shortening of the percolation phase. Alternative models still remain, like the increased activity of pre-I neurons alone drives the shortening of the percolation phase. The additional description of the methods will enhance reproducibility by others and the modified discussion nicely handles how the various observations made in the manuscript may result in the observed selective effect of SP to shorten the percolation phase and addresses essential revision comments #1 and #3.

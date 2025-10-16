@@ -1,0 +1,16 @@
+# Inhibitor of ppGalNAc-T3-mediated O-glycosylation blocks cancer cell invasiveness and lowers FGF23 levels
+
+## Authors
+
+- Lina Song<sup>1</sup>
+- Adam Linstedt<sup>1</sup> ([ORCID: 0000-0003-0754-1638](https://orcid.org/0000-0003-0754-1638)) †
+
+### Affiliations
+
+1. Department of Biological Sciences Carnegie Mellon University Pittsburgh United States
+
+† Corresponding author
+
+## Abstract
+
+Small molecule inhibitors of site-specific O-glycosylation by the polypeptide N-acetylgalactosaminyltransferase (ppGalNAc-T) family are currently unavailable but hold promise as therapeutics, especially if selective against individual ppGalNAc-T isozymes. To identify a compound targeting the ppGalNAc-T3 isozyme, we screened libraries to find compounds that act on a cell-based fluorescence sensor of ppGalNAc-T3 but not on a sensor of ppGalNAc-T2. This identified a hit that subsequent in vitro analysis showed directly binds and inhibits purified ppGalNAc-T3 with no detectable activity against either ppGalNAc-T2 or ppGalNAc-T6. Remarkably, the inhibitor was active in two medically relevant contexts. In cell culture, it opposed increased cancer cell invasiveness driven by upregulated ppGalNAc-T3 suggesting the inhibitor might be anti-metastatic. In cells and mice, it blocked ppGalNAc-T3-mediated glycan-masking of FGF23 thereby increasing its cleavage, a possible treatment of chronic kidney disease. These findings establish a pharmacological approach for the ppGalNAc-transferase family and suggest that targeting specific ppGalNAc-transferases will yield new therapeutics.

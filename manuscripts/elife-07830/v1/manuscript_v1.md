@@ -1,0 +1,19 @@
+# Neuropilin-2/Semaphorin-3F-mediated repulsion promotes inner hair cell innervation by spiral ganglion neurons
+
+## Authors
+
+- Thomas M Coate †
+- Nathalie A Spita
+- Kaidi D Zhang
+- Kevin T Isgrig
+- Matthew W Kelley
+
+### Affiliations
+
+1. Laboratory of Cochlear Development National Institute on Deafness and Other Communication Disorders Bethesda United States
+
+† Corresponding author
+
+## Abstract
+
+Auditory function is dependent on the formation of specific innervation patterns between mechanosensory hair cells and afferent spiral ganglion neurons (SGNs). In particular, type I SGNs must precisely connect with inner hair cells (IHCs) while avoiding connections with nearby outer hair cells (OHCs). The factors that mediate these patterning events are largely unknown. Using sparse-labeling and time-lapse imaging we visualized for the first time the behaviors of developing SGNs including active retraction of processes from OHCs, suggesting that some type I SGNs contact OHCs before forming synapses with IHCs. In addition, we demonstrate that expression of Semaphorin-3F in the OHC region inhibits type I SGN process extension by activating Neuropilin-2 receptors expressed on SGNs. These results suggest a model in which cochlear innervation patterns by type I SGNs are determined, at least in part, through a Semaphorin-3F-mediated inhibitory signal that impedes processes from extending beyond the IHC region.

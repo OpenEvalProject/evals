@@ -1,0 +1,20 @@
+# Axon injury triggers EFA-6 mediated destabilization of axonal microtubules via TACC and doublecortin like kinase
+
+## Authors
+
+- Lizhen Chen
+- Marian Chuang
+- Thijs Koorman
+- Mike Boxem
+- Yishi Jin
+- Andrew D Chisholm †
+
+### Affiliations
+
+1. Division of Biological Sciences University of California, San Diego La Jolla United States chisholm@ucsd.edu
+
+† Corresponding author
+
+## Abstract
+
+Axon injury triggers a series of changes in the axonal cytoskeleton that are prerequisites for effective axon regeneration. In C. elegans the signaling protein EFA-6 is a potent intrinsic inhibitor of axon regrowth. Here we show that axon injury triggers rapid EFA-6-dependent inhibition of axonal microtubule (MT) dynamics, concomitant with relocalization of EFA-6. EFA-6 relocalization and axon regrowth inhibition require a conserved 18-aa motif in its otherwise intrinsically disordered N-terminal domain. The EFA-6 N-terminus binds the MT-associated proteins TAC-1/Transforming-Acidic-Coiled-Coil, and ZYG-8/Doublecortin-Like-Kinase, both of which are required for regenerative growth cone formation, and which act downstream of EFA-6. After injury TAC-1 and EFA-6 transiently relocalize to sites marked by the MT minus end binding protein PTRN-1/Patronin. We propose that EFA-6 acts as a bifunctional injury-responsive regulator of axonal MT dynamics, acting at the cell cortex in the steady state and at MT minus ends after injury.

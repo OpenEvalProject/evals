@@ -1,0 +1,21 @@
+# Bias in the reporting of sex and age in biomedical research on mouse models
+
+## Authors
+
+- Oscar Flórez-Vargas
+- Andy Brass †
+- George Karystianis
+- Michael Bramhall
+- Robert Stevens
+- Sheena Cruickshank
+- Goran Nenadic
+
+### Affiliations
+
+1. Text Mining Group, School of Computer Science The University of Manchester Manchester United Kingdom
+
+† Corresponding author
+
+## Abstract
+
+In animal-based biomedical research, both the sex and the age of the animals studied affect disease phenotypes by modifying their susceptibility, presentation and response to treatment. The accurate reporting of experimental methods and materials, including the sex and age of animals, is essential so that other researchers can build on the results of such studies. Here we use text mining to study 15,311 research papers in which mice were the focus of the study. We find that the percentage of papers reporting the sex and age of mice has increased over the past two decades: however, only about 50% of the papers published in 2014 reported these two variables. We also compared the quality of reporting in six preclinical research areas and found evidence for different levels of sex-bias in these areas: the strongest male-bias was observed in cardiovascular disease models and the strongest female-bias was found in infectious disease models. These results demonstrate the ability of text mining to contribute to the ongoing debate about the reproducibility of research, and confirm the need to continue efforts to improve the reporting of experimental methods and materials.

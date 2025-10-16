@@ -1,0 +1,41 @@
+# Peer review - Round 1
+
+Editors:
+- Anna Akhmanova, Utrecht University Netherlands
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.35800.029](https://doi.org/10.7554/eLife.35800.029)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Galene: Removing physiological motion from intravital and clinical functional imaging data" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Anna Akhmanova as the Senior/Reviewing Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+Motion artefacts represent recurrent challenges to sample subcellular-resolved image sequences by longitudinal intravital microscopy. Warren and coworkers present a motion correction algorithm which, quantitatively and over time, corrects for motion artefacts of fluorescence intensity features to improve the sampling of fluorescence lifetime analyses. By monitoring fluorescence intensity and established Rac and Src sensors in intestinal cypts, metastatic colorectal cancer cells during hepatic colonization and other models, they show remarkable gain in image quality over time, allowing to reconstruct cell and tissue topology with fine detail. This procedure was benchmarked against existing drift correction tools contained in popular broadly used software packages, including ImageJ (StagReg), Phyton (SIMA) and Imaris, with superior results obtained by their approach. The results for reasonably large scan fields for the chosen application are overall convincing, quantitatively benchmarked by autocorrelation and allow to extract a broad parameter space not readily available using alternative strategies, such as sampling smaller fields of interest, and detect even small changes of fluorescence lifetime.
+
+Whereas the workflow is strong and the range of applications illustrates well the applicability of the drift correction across different organ types, sensors and quantities / types of drift, there are a number of concerns about the analysis and presentation that need to be addressed before the paper can be published.
+
+Essential revisions:
+
+1) The authors justify the requirement of image drift correction for acquiring more precise FLIM based data, and they measure this as the lifetime of fluorophores across what seems to be the entire imaging field. Since the lifetime is acquired by single photon counting, voxel per voxel with microsecond dwell-time, image drifts within the range corrected here should not be expected to alter this parameter significantly. Data supporting the need for image correction to obtain better FLIM measurements, compared to native images and images corrected using other drift corrections, are not provided. The authors should analyze whether the lifetime of the Rac or Src sensor differs between corrected and uncorrected images. Possibly, analyzing the lifetime in image subregions after defining ROIs at cellular and subcellular level will emerge as a selling point for their image correction, to e.g. extract differential responses in tissue niches, but so far no data are included to substantiate this idea.
+
+2) In addition to single exponential decay analysis used here, the phasor approach is a well-established routine to extract lifetime information from multi-spectral datasets. As a particular strength, phasor analysis allows one to separate photon subsets within the same voxel. In addition, by back-gating, the phasor strategy can identify tissue subregions with defined lifetime properties, and this requires high image stability for identifying time-dependent processes. Thus, including data on superior performance of topographic analysis to improve phasor analysis will likely increase interest in applying this method of image correction. Furthermore, the authors are advised to test more complex double exponential fitting, because the single exponentials do not reflect the likely situation of different proportions of biosensors that do or do not exhibit FRET.
+
+3) There is no detailed analysis of the effects of the pixel dwell time and frame size on the ability of Galene to work. Some mention of this can be found in the subsection “Algorithm 2. Simulation of TTTR data”, but no rigorous analysis is presented: for example: a smoothing kernel is used, but it is not clear how sensitive the overall method is to this. This would be essential for a technical paper that could then be followed by others in the field, especially as there is even some advice on these matters on the http://galene.readthedocs.io website and in the user manual. For example, it be would important to see analysis using real data (not simulated) of how the ability of Galene to function drops off as the scan rate gets slower. Similarly, real examples should be shown where the scan axis is varied to align with the breathing motion or not on the same sample.
+
+4) There is ambiguity about the level of advance on the methodology of Lucas-Kanade. It appears that the basis of the algorithms is the same, but that the code is greatly improved and able to run using GPU systems, which makes it much quicker. There is also the highly significant advance that the code can handle the time tagged time resolved TCSPC data. The Galene website shows some of the same data as in the manuscript as a screen shot, but worryingly the 'before' image seems transposed between the website and Figure 4 of the manuscript. This is probably a simple cut and paste error, but should be corrected. A more technical presentation might help to clarify the novelty.
+
+5) Writing and presentation: The paper is written half as a technical paper and half as a primary research paper with various intriguing highlights of data, such as modulation of Src or Rac activity in vivo. Unfortunately, the technical part lacks the detail that will be key for other users to benefit from Galene and the research part lacks any consistent narrative. We strongly recommend re-focusing on a more technical paper with only one example of data from each type of imaging device.
+
+Furthermore, the results are presented model by model, however the actual content per image is partly redundant, given that the overall suitability for image stabilization is clear by Figure 4. As consequence, the text is quite long and meandering, moving from model to model. Because these imaging windows have been described elsewhere, the authors might want to consider focusing on conceptual advances, e.g. moving from whole-field analysis to subregion analysis, from single-exponential decay analysis to multispectral analysis (phasor gating), and thereby progress from dataset to dataset. The findings on improving intensity data could be strongly condensed. Consequently, several largely iterative datasets currently presented as main figures might be well-suited for supplementary documentation, including most of Figure 3, Figure 5 and 8 (both lack FLIM data; intensity-based corrections are also shown in Figure 2, 4, 6, 9).
+
+6) The reported effects of scopolamine are interesting and potentially very important. However, to make strong conclusions, the authors must corroborate them using an orthogonal biochemical method, or the conclusions need to be softened.
+
+7) It is completely unclear what has been done to derive the diffusion metrics in the Figure 9. Clearly the authors are not measuring diffusion in the normal way, which is usually measured as area/time. This is a further example of the inadequate presentation. Also, E-cadherin diffusion would be in the plane of the membrane, which is perpendicular to the image shown. Transport in and out of the membrane compartment will not be a diffusive process for an integral membrane protein. The authors are advised to remove this part.

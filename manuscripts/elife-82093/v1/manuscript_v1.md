@@ -1,0 +1,16 @@
+# Presynaptic contact and activity opposingly regulate postsynaptic dendrite outgrowth
+
+## Authors
+
+- Emily L Heckman<sup>1</sup> ([ORCID: 0000-0002-0012-3364](https://orcid.org/0000-0002-0012-3364))
+- Chris Q Doe<sup>1</sup> ([ORCID: 0000-0001-5980-8029](https://orcid.org/0000-0001-5980-8029)) †
+
+### Affiliations
+
+1. Institute of Neuroscience Howard Hughes Medical Institute, University of Oregon Eugene United States
+
+† Corresponding author
+
+## Abstract
+
+The organization of neural circuits determines nervous system function. Variability can arise during neural circuit development (e.g. neurite morphology, axon/dendrite position). To ensure robust nervous system function, mechanisms must exist to accommodate variation in neurite positioning during circuit formation. Previously we developed a model system in the Drosophila ventral nerve cord to conditionally induce positional variability of a proprioceptive sensory axon terminal, and used this model to show that when we altered the presynaptic position of the sensory neuron, its major postsynaptic interneuron partner modified its dendritic arbor to match the presynaptic contact, resulting in functional synaptic input (Sales et al., 2019). Here we investigate the cellular mechanisms by which the interneuron dendrites detect and match variation in presynaptic partner location and input strength. We manipulate the presynaptic sensory neuron by (a) ablation; (b) silencing or activation; or (c) altering its location in the neuropil. From these experiments we conclude that there are two opposing mechanisms used to establish functional connectivity in the face of presynaptic variability: presynaptic contact stimulates dendrite outgrowth locally, whereas presynaptic activity inhibits postsynaptic dendrite outgrowth globally. These mechanisms are only active during an early larval critical period for structural plasticity. Collectively, our data provide new insights into dendrite development, identifying mechanisms that allow dendrites to flexibly respond to developmental variability in presynaptic location and input strength.

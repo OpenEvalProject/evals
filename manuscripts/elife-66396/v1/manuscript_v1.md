@@ -1,0 +1,16 @@
+# Distinct forms of synaptic plasticity during ascending vs descending control of medial olivocochlear efferent neurons
+
+## Authors
+
+- Gabriel E Romero<sup>1</sup>
+- Laurence O Trussell<sup>1</sup> ([ORCID: 0000-0003-1171-2356](https://orcid.org/0000-0003-1171-2356)) †
+
+### Affiliations
+
+1. Oregon Health and Science University Portland United States
+
+† Corresponding author
+
+## Abstract
+
+Activity in each brain region is shaped by the convergence of ascending and descending axonal pathways, and the balance and characteristics of these determine neural output. The medial olivocochlear (MOC) efferent system is part of a reflex arc that critically controls auditory sensitivity. Multiple central pathways contact MOC neurons, raising the question of how a reflex arc could be engaged by diverse inputs. We examined functional properties of synapses onto brainstem MOC neurons from ascending (ventral cochlear nucleus, VCN), and descending (inferior colliculus, IC) sources in mice using an optogenetic approach. We found that these pathways exhibited opposing forms of short-term plasticity, with VCN input showing depression and IC input showing marked facilitation. By using a conductance clamp approach, we found that combinations of facilitating and depressing inputs enabled firing of MOC neurons over a surprisingly wide dynamic range, suggesting an essential role for descending signaling to a brainstem nucleus.

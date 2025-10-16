@@ -1,0 +1,16 @@
+# A selective role for ventromedial subthalamic nucleus in inhibitory control
+
+## Authors
+
+- Robert S Turner<sup>1</sup> ([ORCID: 0000-0002-6074-4365](https://orcid.org/0000-0002-6074-4365)) †
+- Benjamin Pasquereau<sup>1</sup>
+
+### Affiliations
+
+1. Department of Neurobiology University of Pittsburgh Pittsburgh United States
+
+† Corresponding author
+
+## Abstract
+
+The subthalamic nucleus (STN) is hypothesized to play a central role in the rapid stopping of movement in reaction to a stop signal. Single-unit recording evidence for such a role is sparse, however, and it remains uncertain how that role relates to the disparate functions described for anatomic subdivisions of the STN. Here we address that gap in knowledge using non-human primates and a task that distinguishes reactive and proactive action inhibition, switching and skeletomotor functions. We found that specific subsets of STN neurons have activity consistent with causal roles in reactive action stopping or switching. Importantly, these neurons were strictly segregated to a ventromedial region of STN. Neurons in other subdivisions encoded task dimensions such as movement per se and proactive control. We propose that the involvement of STN in reactive control is restricted to its ventromedial portion, further implicating this STN subdivision in impulse control disorders.

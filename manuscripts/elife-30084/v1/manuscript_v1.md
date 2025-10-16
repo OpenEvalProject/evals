@@ -1,0 +1,17 @@
+# Ribosome surface properties may impose limits on the nature of the cytoplasmic proteome
+
+## Authors
+
+- Paul E Schavemaker<sup>1</sup>
+- Wojciech M Śmigiel<sup>1</sup>
+- Bert Poolman<sup>1</sup> ([ORCID: 0000-0002-1455-531X](https://orcid.org/0000-0002-1455-531X)) †
+
+### Affiliations
+
+1. Department of Biochemistry University of Groningen Groningen Netherlands
+
+† Corresponding author
+
+## Abstract
+
+Much of the molecular motion in the cytoplasm is diffusive, which possibly limits the tempo of processes. We studied the dependence of protein mobility on protein surface properties and ionic strength. We used surface-modified fluorescent proteins (FPs) and determined their translational diffusion coefficients ( D ) in the cytoplasm of Escherichia coli , Lactococcus lactis and Haloferax volcanii . We find that in E. coli D depends on the net charge and its distribution over the protein, with positive proteins diffusing up to 100-fold slower than negative ones. This effect is weaker in L. lactis and Hfx. volcanii due to electrostatic screening. The decrease in mobility is probably caused by interaction of positive FPs with ribosomes as shown in in vivo diffusion measurements and confirmed in vitro with purified ribosomes. Ribosome surface properties may thus limit the composition of the cytoplasmic proteome. This finding lays bare a paradox in the functioning of prokaryotic (endo)symbionts.

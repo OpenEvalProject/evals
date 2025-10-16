@@ -1,0 +1,31 @@
+# miR-142 orchestrates a network of actin cytoskeleton regulators during megakaryopoiesis
+
+## Authors
+
+- Elik Chapnik
+- Natalia Rivkin
+- Alexander Mildner
+- Gilad Beck
+- Ronit Pasvolsky
+- Eyal Metzl-Raz
+- Yehudit Birger
+- Gail Amir
+- Itay Tirosh
+- Ziv Porat
+- Liron L Israel
+- Emmanuel Lellouche
+- Shulamit Michaeli
+- Jean-paul M Lellouche
+- Shai Izraeli
+- Steffen Jung
+- Eran Hornstein †
+
+### Affiliations
+
+1. Department of Molecular Genetics Weizmann Institute of Science Rehovot Israel eran.hornstein@weizmann.ac.il
+
+† Corresponding author
+
+## Abstract
+
+Genome-encoded microRNAs (miRNAs) provide a posttranscriptional regulatory layer that controls the differentiation and function of various cellular systems, including hematopoietic cells. miR-142 is one of the most prevalently expressed miRNAs within the hematopoietic lineage. To address the in vivo functions of miR-142 we utilized a novel reporter and loss-of-function mouse allele that we have recently generated. Here, we show that miR-142 is broadly expressed in the adult hematopoietic system. Our data further reveal that miR-142 is critical for megakaryopoiesis. Thus, genetic miR-142 ablation caused impaired megakaryocyte maturation, inhibition of polyploidization, abnormal proplatelet formation, and thrombocytopenia. Finally, we characterize a network of miR-142-3p targets which collectively controls actin filament homeostasis, thereby ensuring proper execution of actin-dependent proplatelet formation. Our study reveals a pivotal role for miR-142 activity in megakaryocyte maturation and function, and demonstrates a critical contribution of a single miRNA in orchestrating cytoskeletal dynamics and normal haemostasis.

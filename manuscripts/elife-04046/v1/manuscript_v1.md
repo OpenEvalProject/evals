@@ -1,0 +1,18 @@
+# Early intrinsic hyperexcitability does not contribute to motoneuron degeneration in amyotrophic lateral sclerosis.
+
+## Authors
+
+- Felix Leroy †
+- Boris Lamotte d'Incamps
+- Rebecca D Imhoff-Manuel
+- Daniel Zytnicki
+
+### Affiliations
+
+1. Laboratory of Neurophysics and Physiology, UMR 8119 Paris Descartes University Paris France
+
+† Corresponding author
+
+## Abstract
+
+In amyotrophic lateral sclerosis (ALS) the large motoneurons that innervate the fast-contracting muscle fibers (F-type motoneurons) are vulnerable and degenerate in adulthood. In contrast, the small motoneurons that innervate the slow-contracting fibers (S-type motoneurons) are resistant and do not degenerate. Intrinsic hyperexcitability of F-type motoneurons during early postnatal development has long been hypothesized to contribute to neural degeneration in the adult. Here, we performed a critical test of this hypothesis by recording from identified F- and S-type motoneurons in the superoxide dismutase-1 mutant G93A (mSOD1), a mouse model of ALS at a neonatal age when early pathophysiological changes are observed. Contrary to the standard hypothesis, excitability of F-type motoneurons was unchanged in the mutant mice. Surprisingly, the S-type motoneurons of mSDO1 mice did display intrinsic hyperexcitability (lower rheobase, hyperpolarized spiking threshold). As S-type motoneurons are resistant in ALS, we conclude that early intrinsic hyperexcitability does not contribute to motoneuron degeneration.

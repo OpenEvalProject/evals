@@ -1,0 +1,22 @@
+# Assembly principles of a unique cage formed by hexameric and decameric E. coli proteins
+
+## Authors
+
+- Hélène Malet
+- Kaiyin Liu
+- Majida El Bakkourri
+- Sze Wah Samuel Chan
+- Gregory Effantin
+- Maria Bacia
+- Walid A Houry
+- Irina Gutsche †
+
+### Affiliations
+
+1. Unit for Virus Host-Cell Interactions CNRS, Université Grenoble Alpes Grenoble France gutsche@embl.fr
+
+† Corresponding author
+
+## Abstract
+
+A 3.3 MDa macromolecular cage between two E. coli proteins with seemingly incompatible symmetries - the hexameric AAA+ ATPase RavA and the decameric inducible lysine decarboxylase LdcI - is reconstructed by cryo-electron microscopy to 11 Å resolution. Combined with a 7.5 Å resolution reconstruction of the minimal complex between LdcI and the LdcI-binding domain of RavA, and the previously solved crystal structures of the individual components, this work enables to build a reliable pseudoatomic model of this unusual architecture and to identify conformational rearrangements and specific elements essential for complex formation. The design of the cage created via lateral interactions between five RavA rings is unique for the diverse AAA+ ATPase superfamily.

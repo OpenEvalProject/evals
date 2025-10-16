@@ -1,0 +1,23 @@
+# Virus infection is controlled by hematopoietic and stromal cell sensing of murine cytomegalovirus through STING
+
+## Authors
+
+- Sytse J Piersma<sup>1</sup> ([ORCID: 0000-0002-5379-3556](https://orcid.org/0000-0002-5379-3556)) †
+- Jennifer Poursine-Laurent<sup>1</sup>
+- Liping Yang<sup>1</sup>
+- Glen Barber<sup>2</sup>
+- Bijal A Parikh<sup>3</sup>
+- Wayne M Yokoyama<sup>4</sup> ([ORCID: 0000-0002-0566-7264](https://orcid.org/0000-0002-0566-7264))
+
+### Affiliations
+
+1. Division of Rheumatology, Department of Medicine Washington University School of Medicine St Louis United States
+2. University of Miami Miller School of Medicine Miami United States
+3. Department of Pathology and Immunology Washington University School of Medicine St Louis United States
+4. Department of Medicine Washington University School of Medicine St Louis United States
+
+† Corresponding author
+
+## Abstract
+
+Recognition of DNA viruses, such as cytomegaloviruses (CMVs), through pattern-recognition receptor (PRR) pathways involving MyD88 or STING constitute a first-line defense against infections mainly through production of type I interferon (IFN-I). However, the role of these pathways in different tissues is incompletely understood, an issue particularly relevant to the CMVs which have broad tissue tropisms. Herein, we contrasted anti-viral effects of MyD88 versus STING in distinct cell types that are infected with murine CMV (MCMV). Bone marrow chimeras revealed STING-mediated MCMV control in hematological cells, similar to MyD88. However, unlike MyD88, STING also contributed to viral control in non-hematological, stromal cells. Infected splenic stromal cells produced IFN-I in a cGAS-STING-dependent and MyD88-independent manner, while we confirmed plasmacytoid dendritic cell IFN-I had inverse requirements. MCMV-induced natural killer cytotoxicity was dependent on MyD88 and STING. Thus, MyD88 and STING contribute to MCMV control in distinct cell types that initiate downstream immune responses.

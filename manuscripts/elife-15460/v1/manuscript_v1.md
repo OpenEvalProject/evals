@@ -1,0 +1,21 @@
+# Phosphorylation acts positively and negatively to regulate MRTF-A subcellular localisation and activity
+
+## Authors
+
+- Richard Panayiotou
+- Francesc Miralles
+- Rafal Pawlowski
+- Jessica Diring
+- Helen R Flynn
+- Mark Skehel
+- Richard Treisman †
+
+### Affiliations
+
+1. Signalling and Transcription Group Francis Crick Institute London United Kingdom Richard.Treisman@Crick.ac.uk
+
+† Corresponding author
+
+## Abstract
+
+The myocardin-related transcription factors (MRTF-A and MRTF-B) regulate cytoskeletal genes through their partner transcription factor SRF. The MRTFs bind G-actin, and signal-regulated changes in cellular G-actin concentration control their nuclear accumulation. The MRTFs also undergo Rho- and ERK-dependent phosphorylation, but the function of MRTF phosphorylation, and the elements and signals involved in MRTF-A nuclear export are largely unexplored. We show that Rho-dependent MRTF-A phosphorylation reflects relief from an inhibitory function of nuclear actin. We map multiple sites of serum-induced phosphorylation, most of which are S/T-P motifs, and show that S/T-P phosphorylation is required for transcriptional activation. ERK-mediated S98 phosphorylation inhibits assembly of G-actin complexes on the MRTF-A regulatory RPEL domain, promoting nuclear import. In contrast, S33 phosphorylation potentiates the activity of an autonomous Crm1-dependent N-terminal NES, which cooperates with five other NES elements to exclude MRTF-A from the nucleus. Phosphorylation thus plays positive and negative roles in regulation of MRTF-A.

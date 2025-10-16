@@ -1,0 +1,20 @@
+# MicroRNA-mediated repression of nonsense mRNAs
+
+## Authors
+
+- Ya Zhao
+- Jimin Lin
+- Beiying Xu
+- Sida Hu
+- Xue Zhang
+- Ligang Wu †
+
+### Affiliations
+
+1. Shanghai Key Laboratory of Molecular Andrology, Institute of Biochemistry and Cell Biology Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences Shanghai China lgwu@sibcb.ac.cn
+
+† Corresponding author
+
+## Abstract
+
+Numerous studies have established important roles for microRNAs (miRNAs) in regulating gene expression. Here, we report that miRNAs also serve as a surveillance system to repress the expression of nonsense mRNAs that may produce harmful truncated proteins. Upon recognition of the premature termination codon by the translating ribosome, the downstream portion of the coding region of an mRNA is redefined as part of the 3' untranslated region; as a result, the miRNA-responsive elements embedded in this region can be detected by miRNAs, triggering accelerated mRNA deadenylation and translational inhibition. We demonstrate that naturally occurring cancer-causing APC (adenomatous polyposis coli) nonsense mutants which escape nonsense-mediated mRNA decay (NMD) are repressed by miRNA-mediated surveillance. In addition, we show that miRNA-mediated surveillance and exon-exon junction complex-mediated NMD are not mutually exclusive and act additively to enhance the repressive activity. Therefore, we have uncovered a new role for miRNAs in repressing nonsense mutant mRNAs.

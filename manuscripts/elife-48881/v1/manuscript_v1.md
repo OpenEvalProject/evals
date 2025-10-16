@@ -1,0 +1,17 @@
+# mPFC spindle cycles organize sparse thalamic activation and recently active CA1 cells during non-REM sleep
+
+## Authors
+
+- Carmen Varela<sup>1</sup> ([ORCID: 0000-0003-0398-2567](https://orcid.org/0000-0003-0398-2567)) †
+- Matthew A Wilson<sup>2</sup> †
+
+### Affiliations
+
+1. Psychology Florida Atlantic University Jupiter United States
+2. Department of Brain and Cognitive Sciences Massachusetts Institute of Technology Cambridge United States
+
+† Corresponding author
+
+## Abstract
+
+Sleep oscillations in the neocortex and hippocampus are critical for the integration of new memories into stable generalized representations in neocortex. However, the role of the thalamus in this process is poorly understood. To determine the thalamic contribution to non-REM oscillations (sharp-wave ripples, SWRs; slow/delta; spindles), we recorded units and local field potentials (LFPs) simultaneously in the limbic thalamus, mPFC, and CA1 in rats. We report that the cycles of neocortical spindles provide a key temporal window that coordinates CA1 SWRs with sparse but consistent activation of thalamic units. Thalamic units were phase-locked to delta and spindles in mPFC, and fired at consistent lags with other thalamic units within spindles, while CA1 units that were active during spatial exploration were engaged in SWR-coupled spindles after behavior. The sparse thalamic firing could promote an incremental integration of recently acquired memory traces into neocortical schemas through the interleaved activation of thalamocortical cells.

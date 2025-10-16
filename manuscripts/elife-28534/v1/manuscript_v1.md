@@ -1,0 +1,17 @@
+# Maternal Gdf3 is an obligatory cofactor in nodal signaling for embryonic axis formation in zebrafish
+
+## Authors
+
+- Brent W Bisgrove<sup>1</sup>
+- Yi-Chu Su<sup>1</sup>
+- H Joseph Yost<sup>1</sup> ([ORCID: 0000-0003-2961-5669](https://orcid.org/0000-0003-2961-5669)) †
+
+### Affiliations
+
+1. Molecular Medicine Program University of Utah Salt Lake City United States
+
+† Corresponding author
+
+## Abstract
+
+Zebrafish Gdf3 (Dvr1) is a member of the TGFb superfamily of cell signaling ligands that includes Xenopus Vg1 and mammalian Gdf1/3. Surprisingly, engineered homozygous mutants in zebrafish have no apparent phenotype. Elimination of Gdf3 in oocytes of maternal-zygotic mutants results in embryonic lethality that can be fully rescued with gdf3 RNA, demonstrating that Gdf3 is required only early in development, beyond which mutants are viable and fertile. Gdf3 mutants are refractory to Nodal ligands and Nodal repressor Lefty1. Signaling driven by TGFb ligand Activin and constitutively active receptors Alk4 and Alk2 remain intact in gdf3 mutants, indicating that Gdf3 functions at the same pathway step as Nodal.  Targeting gdf3 and ndr2 RNA to specific lineages indicates that exogenous gdf3 is able to fully rescue mutants only when co-expressed with endogenous Nodal. Together, these findings demonstrate that Gdf3 is an essential cofactor of Nodal signaling during establishment of the embryonic axis.

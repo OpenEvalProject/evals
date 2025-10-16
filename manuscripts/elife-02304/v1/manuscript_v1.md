@@ -1,0 +1,19 @@
+# An atomic-resolution view of neofunctionalization in the evolution of apicomplexan lactate dehydrogenases
+
+## Authors
+
+- Jeffrey I Boucher
+- Joseph R Jacobowitz
+- Brian C Beckett
+- Scott Classen
+- Douglas L Theobald †
+
+### Affiliations
+
+1. Department of Biochemistry Brandeis University Waltham United States dtheobald@brandeis.edu
+
+† Corresponding author
+
+## Abstract
+
+Malate and lactate dehydrogenases (MDH and LDH) are homologous, core metabolic enzymes that share a fold and catalytic mechanism yet possess strict specificity for their substrates.  In the Apicomplexa, convergent evolution of an unusual LDH from MDH resulted in a difference in substrate preference exceeding 12 orders of magnitude.  The molecular and evolutionary mechanisms responsible for this extraordinary functional shift are currently unknown.  Using ancestral sequence reconstruction, we find that the evolution of pyruvate specificity in apicomplexan LDHs arose through a classic neofunctionalization mechanism characterized by long-range epistasis, a promiscuous intermediate, and relatively few gain-of-function mutations of large effect.  Residues far from the active site determine specificity, as shown by the crystal structures of three ancestral proteins that bracket the key gene duplication event.  This work provides an unprecedented atomic-resolution view of evolutionary trajectories resulting in the de novo creation of a nascent enzymatic function.

@@ -1,0 +1,16 @@
+# Dopamine receptors reveal an essential role of IFT-B, KIF17, and Rab23 in delivering specific receptors to primary cilia
+
+## Authors
+
+- Alison Leaf
+- Mark Von Zastrow †
+
+### Affiliations
+
+1. Program in Cell Biology University of California, San Francisco San Francisco United States Mark.VonZastrow@ucsf.edu
+
+† Corresponding author
+
+## Abstract
+
+Appropriate physiological signaling by primary cilia depends on the specific targeting of particular receptors to the ciliary membrane, but how this occurs remains poorly understood. Here we show that D1-type dopaminergic receptors are delivered to cilia from the extra-ciliary plasma membrane by a mechanism requiring the receptor cytoplasmic tail, the intraflagellar transport complex-B (IFT-B), and ciliary kinesin KIF17. This targeting mechanism critically depends on Rab23, a small GTP-binding protein that has important effects on physiological signaling from cilia but was not known previously to be essential for ciliary delivery of any cargo. Depleting Rab23 prevents dopamine receptors from accessing the ciliary membrane. Conversely, fusion of Rab23 to a non-ciliary receptor is sufficient to drive robust, nucleotide-dependent mis-localization to the ciliary membrane. Dopamine receptors thus reveal a previously unrecognized mechanism of ciliary receptor targeting and functional role of Rab23 in promoting this process.

@@ -1,0 +1,20 @@
+# Mendelian randomization suggests a bidirectional, causal relationship between physical inactivity and adiposity
+
+## Authors
+
+- Germán Darío Carrasquilla<sup>1</sup> ([ORCID: 0000-0002-7147-9421](https://orcid.org/0000-0002-7147-9421)) †
+- Mario García-Ureña<sup>1</sup>
+- Tove Fall<sup>2</sup>
+- Thorkild IA Sørensen<sup>1</sup> ([ORCID: 0000-0003-4821-430X](https://orcid.org/0000-0003-4821-430X))
+- Tuomas Kilpeläinen<sup>1</sup>
+
+### Affiliations
+
+1. University of Copenhagen Copenhagen Denmark
+2. Department of Medical Sciences Uppsala University Uppsala Sweden
+
+† Corresponding author
+
+## Abstract
+
+Physical inactivity and increased sedentary time are associated with excess weight gain in observational studies. However, some longitudinal studies indicate reverse causality where weight gain leads to physical inactivity and increased sedentary time. As observational studies suffer from reverse causality, it is challenging to assess the true causal directions. Here, we assess the bidirectional causality between physical inactivity, sedentary time and adiposity by bidirectional Mendelian randomization analysis. We assessed genetic liability using results from genome-wide association studies for accelerometer-based physical activity and sedentary time in 91,105 individuals and for body mass index (BMI) in 806,834 individuals. We implemented Mendelian randomization using CAUSE method that accounts for pleiotropy and sample overlap using full genome-wide data. We also applied inverse variance-weighted, MR-Egger, weighted median, and weighted mode methods using genome-wide significant variants only. We found evidence of bidirectional causality between sedentary time and BMI: longer sedentary time was causal for higher BMI [beta (95%CI) from CAUSE method: 0.11 (0.02, 0.2), P=0.02], and higher BMI was causal for longer sedentary time (0.13 (0.08, 0.17), P=6.3.x10 -4 ). Our analyses suggest that higher moderate and vigorous physical activity are causal for lower BMI (moderate: -0.18 (-0.3,-0.05), P=0.006; vigorous: -0.16 (-0.24,-0.08), P=3.8x10 -4 ), but indicate that the association between higher BMI and lower levels of physical activity is due to horizontal pleiotropy. The bidirectional, causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management, but also that targeting adiposity may lead to additional health benefits by reducing sedentary time.

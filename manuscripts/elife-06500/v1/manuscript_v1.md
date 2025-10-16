@@ -1,0 +1,26 @@
+# The critical role of membralin in postnatal motor neuron survival and disease
+
+## Authors
+
+- Bo Yang
+- Mingliang Qu
+- Rengang Wang
+- Jon E Chatterton
+- Xiao-Bo Liu
+- Bing Zhu
+- Sonoko Narisawa
+- Jose Luis Millan
+- Nobuki Nakanishi
+- Kathryn Swoboda
+- Stuart A Lipton
+- Dongxian Zhang †
+
+### Affiliations
+
+1. Neuroscience and Aging Research Center Sanford-Burnham Medical Research Institute La Jolla United States dzhang@sbmri.org
+
+† Corresponding author
+
+## Abstract
+
+Hitherto, membralin has been a protein of unknown function. Here, we show that membralin mutant mice manifest a severe and early-onset motor neuron disease in an autosomal recessive manner, dying by postnatal day 5-6. Selective death of lower motor neurons, including those innervating the limbs, intercostal muscles, and diaphragm, are predominantly responsible for this fatal phenotype. Neural expression of a membralin transgene completely rescues membralin mutant mice. Mechanistically, we show that membralin interacts with Erlin2, an endoplasmic reticulum (ER) membrane protein that is located in lipid rafts and known to be important in ER-associated protein degradation (ERAD). Accordingly, the degradation rate of ERAD substrates is attenuated in cells lacking membralin. Membralin mutations or deficiency in mouse models induce ER stress, rendering neurons more vulnerable to cell death. Our study reveals a critical role of membralin in motor neuron survival and suggests a novel mechanism for early-onset motor neuron disease.

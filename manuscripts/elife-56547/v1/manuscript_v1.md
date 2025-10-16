@@ -1,0 +1,24 @@
+# Growth cone-localized microtubule organizing center establishes microtubule orientation in dendrites
+
+## Authors
+
+- Xing Liang<sup>1</sup>
+- Marcela Kokes<sup>1</sup>
+- Richard D Fetter<sup>2</sup> ([ORCID: 0000-0002-1558-100X](https://orcid.org/0000-0002-1558-100X))
+- Maria Danielle Sallee<sup>1</sup>
+- Adrian W Moore<sup>3</sup>
+- Jessica L Feldman<sup>1</sup> †
+- Kang Shen<sup>4</sup> ([ORCID: 0000-0003-4059-8249](https://orcid.org/0000-0003-4059-8249)) †
+
+### Affiliations
+
+1. Biology Stanford University Stanford United States
+2. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States
+3. Riken Brain Science Institute Wako Japan
+4. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States
+
+† Corresponding author
+
+## Abstract
+
+A polarized arrangement of neuronal microtubule arrays is the foundation of membrane trafficking and subcellular compartmentalization. Conserved among both invertebrates and vertebrates, axons contain exclusively 'plus-end-out' microtubules while dendrites contain a high percentage of 'minus-end-out' microtubules, the origins of which have been a mystery. Here we show that in Caenorhabditis elegans the dendritic growth cone contains a non-centrosomal microtubule organizing center, which generates minus-end-out microtubules along outgrowing dendrites and plus-end-out microtubules in the growth cone. RAB-11-positive endosomes accumulate in this region and co-migrate with the microtubule nucleation complex γ-TuRC. The MTOC tracks the extending growth cone by kinesin-1/UNC-116-mediated endosome movements on distal plus-end-out microtubules and dynein clusters this advancing MTOC. Critically, perturbation of the function or localization of the MTOC causes reversed microtubule polarity in dendrites. These findings unveil the endosome-localized dendritic MTOC as a critical organelle for establishing axon-dendrite polarity.

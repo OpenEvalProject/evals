@@ -1,0 +1,27 @@
+# Stage-specific control of oligodendrocyte survival and morphogenesis by TDP-43
+
+## Authors
+
+- Dongeun Heo<sup>1</sup> ([ORCID: 0000-0002-4913-2253](https://orcid.org/0000-0002-4913-2253))
+- Jonathan Ling<sup>2</sup> ([ORCID: 0000-0003-1927-9729](https://orcid.org/0000-0003-1927-9729))
+- Gian C Molina-Castro<sup>1</sup> ([ORCID: 0000-0002-0700-4042](https://orcid.org/0000-0002-0700-4042))
+- Abraham J Langseth<sup>1</sup>
+- Ari Waisman<sup>3</sup>
+- Klaus-Armin Nave<sup>4</sup> ([ORCID: 0000-0001-8724-9666](https://orcid.org/0000-0001-8724-9666))
+- Wiebke Möbius<sup>4</sup> ([ORCID: 0000-0002-2902-7165](https://orcid.org/0000-0002-2902-7165))
+- Phil C Wong<sup>5</sup>
+- Dwight E Bergles<sup>1</sup> ([ORCID: 0000-0002-7133-7378](https://orcid.org/0000-0002-7133-7378)) †
+
+### Affiliations
+
+1. The Solomon H Snyder Department of Neuroscience Johns Hopkins University School of Medicine Baltimore United States
+2. The Solomon H Snyder Department of Neuroscience Johns Hopkins School of Medicine Baltimore United States
+3. Institute for Molecular Medicine Johannes Gutenberg University Mainz Germany
+4. Department of Neurogenetics Max Planck Institute of Experimental Medicine Göttingen Germany
+5. Department of Pathology Johns Hopkins University School of Medicine Baltimore United States
+
+† Corresponding author
+
+## Abstract
+
+Generation of oligodendrocytes in the adult brain enables both adaptive changes in neural circuits and regeneration of myelin sheaths destroyed by injury, disease, and normal aging. This transformation of oligodendrocyte precursor cells (OPCs) into myelinating oligodendrocytes requires processing of distinct mRNAs at different stages of cell maturation. Although mislocalization and aggregation of the RNA binding protein, TDP-43, occur in both neurons and glia in neurodegenerative diseases, the consequences of TDP-43 loss within different stages of the oligodendrocyte lineage are not well understood. By performing stage-specific genetic inactivation of Tardbp in vivo , we show that oligodendrocyte lineage cells are differentially sensitive to loss of TDP-43. While OPCs depend on TDP-43 for survival, with conditional deletion resulting in cascading cell loss followed by rapid regeneration to restore their density, oligodendrocytes become less sensitive to TDP-43 depletion as they mature. Deletion of TDP-43 early in the maturation process led to eventual oligodendrocyte degeneration, seizures and premature lethality, while oligodendrocytes that experienced late deletion survived and mice exhibited a normal lifespan. At both stages, TDP-43 deficient oligodendrocytes formed fewer and thinner myelin sheaths and extended new processes that inappropriately wrapped neuronal somata and blood vessels. Transcriptional analysis revealed that in the absence of TDP-43, key proteins involved in oligodendrocyte maturation and myelination were misspliced, leading to aberrant incorporation of cryptic exons. Inducible deletion of TDP-43 from oligodendrocytes in the adult CNS induced the same progressive morphological changes and mice acquired profound hindlimb weakness, suggesting that loss of TDP-43 function in oligodendrocytes may contribute to neuronal dysfunction in neurodegenerative disease.

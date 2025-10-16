@@ -1,0 +1,22 @@
+# Closed-loop optogenetic activation of peripheral or central neurons modulates feeding in freely moving Drosophila
+
+## Authors
+
+- Pierre-Yves Musso<sup>1</sup>
+- Pierre Junca<sup>1</sup>
+- Meghan Jelen<sup>1</sup>
+- Damian Feldman-Kiss<sup>1</sup>
+- Han Zhang<sup>2</sup>
+- Rachel CW Chan<sup>2</sup> ([ORCID: 0000-0003-1009-6379](https://orcid.org/0000-0003-1009-6379))
+- Michael D Gordon<sup>1</sup> ([ORCID: 0000-0002-5440-986X](https://orcid.org/0000-0002-5440-986X)) †
+
+### Affiliations
+
+1. Department of Zoology, Life Sciences Institute University of British Columbia Vancouver Canada
+2. Engineering Physics Program University of British Columbia Vancouver Canada
+
+† Corresponding author
+
+## Abstract
+
+Manipulating feeding circuits in freely moving animals is challenging, in part because the timing of sensory inputs is affected by the animal's behavior. To address this challenge in Drosophila, we developed the Sip-Triggered Optogenetic Behavior Enclosure ('STROBE'). The STROBE is a closed-looped system for real-time optogenetic activation of feeding flies, designed to evoke neural excitation coincident with food contact. We previously demonstrated the STROBE's utility in probing the valence of fly sensory neurons (Jaeger et al., 2018). Here we provide a thorough characterization of the STROBE system, demonstrate that STROBE-driven behavior is modified by hunger and the presence of taste ligands, and find that mushroom body dopaminergic input neurons and their respective post-synaptic partners drive opposing feeding behaviors following activation. Together, these results establish the STROBE as a new tool for dissecting fly feeding circuits and suggest a role for mushroom body circuits in processing naïve taste responses.
