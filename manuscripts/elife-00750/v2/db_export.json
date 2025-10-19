@@ -1,0 +1,2333 @@
+{
+  "submission": {
+    "id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:43:12.722646Z",
+    "updated_at": "2025-10-16T22:43:12.722646Z"
+  },
+  "content": [
+    {
+      "id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "content_type": "manuscript",
+      "content_text": "# Direct observation of frequency modulated transcription in single cells using light activation\n\n## Authors\n\n- Daniel R Larson<sup>1</sup> †\n- Christoph Fritzsch<sup>2</sup>\n- Liang Sun<sup>3</sup>\n- Xiuhau Meng<sup>5</sup>\n- David S Lawrence<sup>3</sup>\n- Robert H Singer<sup>5</sup>\n\n### Affiliations\n\n1. Laboratory of Receptor Biology and Gene Expression Center for Cancer Research, National Cancer Institute, National Institutes of Health Bethesda United States\n2. Institute of Molecular Biology Johannes Gutenberg University of Mainz Mainz Germany\n3. Department of Chemistry, Division of Chemical Biology and Medicinal Chemistry University of North Carolina Chapel Hill United States\n4. Department of Pharmacology University of North Carolina Chapel Hill United States\n5. Department of Anatomy and Structural Biology Albert Einstein College of Medicine New York United States\n6. Gruss-Lipper Biophotonics Center Albert Einstein College of Medicine New York United States\n\n† Corresponding author\n\n## Abstract\n\n10.7554/eLife.00750.001 Single-cell analysis has revealed that transcription is dynamic and stochastic, but tools are lacking that can determine the mechanism operating at a single gene. Here we utilize single-molecule observations of RNA in fixed and living cells to develop a single-cell model of steroid-receptor mediated gene activation. We determine that steroids drive mRNA synthesis by frequency modulation of transcription. This digital behavior in single cells gives rise to the well-known analog dose response across the population. To test this model, we developed a light-activation technology to turn on a single steroid-responsive gene and follow dynamic synthesis of RNA from the activated locus. DOI: http://dx.doi.org/10.7554/eLife.00750.001\n\n## Introduction\n\nSteroid receptors coordinate a diverse range of responses in higher eukaryotes and are involved in a wide range of human diseases (Gronemeyer et al., 2004). Steroid receptor response elements are present throughout the human genome and modulate chromatin remodeling and transcription in both a local and long-range fashion (John et al., 2011). As such, steroid receptor-mediated transcription is a paradigm of genetic control in the metazoan nucleus. Moreover, the ligand-dependent nature of these transcription factors makes them appealing targets for therapeutic intervention, necessitating a quantitative understanding of how receptors control output from target genes.\n\nThe classic sigmoidal dose response of steroid-regulated gene products belies the complexity of a system which relies on an intricate, multi-step sequence of events to initiate transcription from a target gene (McKenna et al., 2009). Depending on the particular steroid receptor, a partial list of events required to activate the target gene includes ligand-binding, receptor dimerization, nuclear translocation, eviction of co-repressors (i.e., histone deacetylases), recruitment of chromatin modifying enzymes (histone acetyltransferases, ATP-dependent remodeling enzymes, methyltransferases), and eventually recruitment of the basal transcription machinery. Despite this complexity, the dose-response is deceptively simple: it often takes the form of a simple Hill function with a coefficient of unity, which has traditionally been interpreted to imply that ligand-binding is the only rate-limiting step in the activation pathway (Ong et al., 2010). This description models the dose response as a continuum where each cell transcribes RNA at rates proportional to the dosage level.\n\nHowever, single-cell studies of gene expression demonstrate that this description is incorrect. First, gene expression is not uniform over a population for a given dose, but shows variation from cell to cell, an observation which was first made for a steroid-responsive MMTV reporter gene (Ko et al., 1990). The authors demonstrated that the observed analog dose response was in fact a digital dose response (on or off) when viewed in single cells. Likewise, previous studies initially demonstrated that enhancers increase the probability of activation of a cell but not the strength of activation in the cell (Moreau et al., 1981; Weintraub, 1988; Moon and Ley, 1991; Walters et al., 1995). Second, expression is only a snapshot of temporally evolving gene activity (Ross et al., 1994; White et al., 1995; Harper et al., 2011; Suter et al., 2011). Thus, a cell is counted as activated or not activated dependent on the moment it is observed. Thus far, all single-cell measurements on metazoans suggest that genes are transcribed in ‘bursts’ of transcription, meaning that short periods of RNA synthesis are interspersed by long periods of inactivity. The causes of transcriptional bursting are unknown. Third, since molecules involved in regulating transcription are usually present at low copy number, this leads to stochastic fluctuations (‘noise’) and hence gene expression variation across the population (Larson et al., 2009). Finally, dynamic interactions between upstream regulators and chromatin add another level of complexity to the molecular events occurring during transcriptional activation (McNally et al., 2000; Darzacq et al., 2009; Ong et al., 2010). Under such conditions, the observed dose response does not result solely from ligand-binding but rather the composite result derived from many coupled reactions. In summary, population models of gene activation are too coarse to explain activation in single cells. Moreover, tools do not exist whereby the activity of single genes in single cells can be directly manipulated and measured.\n\nIn this work, we describe an approach for activating a steroid-receptor in order to achieve high temporal and spatial precision and to measure the activity of a responsive gene in the same cell over time. In contrast to the ensemble approach derived from observations of cell populations, we have developed a single-molecule kinetic approach for interrogation of a single gene. This approach is based on photoactivation of a steroid receptor ligand followed by observation of pre-mRNA synthesis at an active locus. The system consists of an exogenous reporter gene under control of the ecdysone receptor which is activated by the agonist ponasterone A (No et al., 1996). The real-time behavior of the gene is visualized using a bacteriophage capsid protein which binds MS2 RNA stem loops with high affinity to label nascent pre-mRNA in living cells (Bertrand et al., 1998). We demonstrate experimentally how the ensemble steroid dose response arises from the stochastic behavior of individual genes. These results suggest that the response element controls the frequency of gene activity but affects neither the duration of the active period nor the actual rate of transcripts produced during an active period. By using a caged ligand that could be uncaged by a light pulse (Lee et al., 2009; Lin et al., 2002) we measured the impulse-response of the gene and determined that a single pulse of active ligand resulted in a corresponding burst of polymerase activity several hours later. Further, this photoactivatable ligand has the property of being an antagonist in the caged state and an agonist in the uncaged state, enabling a precise window for kinetic perturbation in single cells. Thus, we were able to propose and validate a stochastic model of steroid-receptor activity for a reporter gene which provides a new framework for studying this ubiquitous mechanism of eukaryotic gene regulation.\n\n## Results\n\nWe sought to design a reporter system that would enable visualization of multiple steps in gene expression: 1) the nascent pre-mRNA as it is synthesized by RNA polymerase II at an activated locus, 2) the completed mRNA in the cytoplasm and 3) the protein product produced from the mRNA. Furthermore, we desired a gene that would be unresponsive to endogenous steroid receptor (SR) ligands but also recapitulate the basic mechanism of SR transcriptional regulation. For these reasons, we chose to reconstitute ecdysone receptor-mediated transcription in human U2-OS cells (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig1-v1.jpg)\n\n**Figure 1.:** (A) The reporter gene consists of a SR response element multimerized 85 ×, upstream of the transcription start site. The gene is a bi-cistronic construct introduced via lentivirus infection. The first ORF codes for CFP-SKL which results in CFP-labeled peroxisomes, and the second ORF codes for DsRED which is non-specifically expressed in the cytosol. In the 3′ UTR of the CFP-SKL cistron, there is a 24 × MS2 stem-loop encoding region. mRNA is drawn to scale. Sequence elements: Sp1 = specificity protein one binding site; mHSP = minimal heat shock promoter; LTR = long terminal repeat; WPRE = woodchuck hepatitis virus posttranscriptional regulatory element. (B and C) Visualization of mRNA and protein in living cells. The MS2 RNA stem loops bind MS2 coat protein which is constitutively expressed, localized to the nucleus with a nuclear localization signal, and labeled with YFP (green). After 24 hr of activation, the peroxisomes appear as punctuate spots (blue) and the DsRED as a diffuse background (red). Individual mRNA in the cytosol appears as diffraction-limited puncta (inset), and the site of active transcription appears a bright fluorescent spot in the nucleus (white arrow). (D and E) Visualization of mRNA in fixed cells with FISH. 20-mer DNA oligos with two Cy 3 fluorophores are targeted to the inter-stem loop region of the MS2 cassette. Individual mRNA appears as diffraction limited spots (green, inset), and nascent mRNA appears as bright spots in the nucleus (white arrows, nucleus designated in blue by DAPI staining). Scale bar = 4 μm. (F) Visualization of the central dogma. The combined approach allows us to image each step of gene expression: from nascent mRNA at the transcription site, to cytosolic mRNA, to protein.DOI: http://dx.doi.org/10.7554/eLife.00750.003\n\nAlternatively, these cells when fixed can also be used for fluorescence in situ hybridization (FISH). In this case, we hybridize a fluorescently labeled 20-mer oligodeoxynucleotide to the region between each MS2 RNA stem loop (Figure 1D) (Femino et al., 1998; Zenklusen et al., 2008). FISH is a complementary approach to the live-cell MS2 system and likewise enables direct observation of both nascent RNA at an active transcription site (Figure 1E, white arrow) and total cellular reporter mRNA (Figure 1E, inset). The benefit of FISH is that it allows very high signal to noise observation of mRNA in fixed cells, while the advantage of the MS2 system is that one can directly observe dynamics in living cells. Both approaches utilize the polymeric nature of mRNA to label single molecules with large numbers (>40) of fluorophores, and both approaches enable quantification of the earliest steps in gene expression on single molecules, single genes and in single cells (Figure 1F) (Larson et al., 2009).\n\n## Direct measurement of transcriptional bursting on single genes in human cells\n\nFirst, we directly observed RNA synthesis at an active locus in a clonal cell line using single-molecule live-cell microscopy. Consistent with previous studies which directly observe transcriptional activity of single genes in eukaryotes we observed transcriptional bursting (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig2-v1.jpg)\n\n**Figure 2.:** (A–D) Time-lapse images of active transcription in two separate nuclei. TS are visualized as punctate fluorescent spots where MS2-YFP has coalesced onto multiple MS2-binding sites in nascent pre-mRNA. Scale bar = 4 μm. (E and F) Quantification of TS intensity for the upper cell/TS (red) and lower cell/TS (green), respectively. The left axis is the integrated intensity of the TS; the right axis is the normalized intensity which is used to fit the intensity trace to a hidden Markov model (black lines) (Lee, 2009). Examples of on and off states are designated by the arrows on panel E. (G and H) Histogram of on and off times, respectively. The red lines are exponential fits to the experimental distribution with decay time of 36 ± 6 min and 35 ± 4 min in panels G and H, respectively (N = 40 cells). [PA] = 50 μM, panels A–H. (I) Average on (black) and off (gray) duration for four different [PA] obtained from fitting experimental data to an exponential distribution (Figure 2—figure supplement 2). The red dashed line indicates the duration of the experiment, which sets the upper limit for off-time values. (J) Average TS intensity for four different [PA] (N = 40 cells for each [PA]). Error bars are the SEM.DOI: http://dx.doi.org/10.7554/eLife.00750.004\n\n![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig2-figsupp1-v1.jpg)\n\n**Figure 2—figure supplement 1.:** Cells are induced at t = 0 with 50 μM Ponasterone A at 37°C. z-stacks are acquired every hour, and the number of cells with a transcription site is recorded.DOI: http://dx.doi.org/10.7554/eLife.00750.005\n\n![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig2-figsupp2-v1.jpg)\n\n**Figure 2—figure supplement 2.:** (A and B) Quantification of TS intensity for a cell treated with 12.5 μM and 3.125 μM PA, respectively. The left axis is the integrated intensity of the TS; the right axis is the normalized intensity which is used to fit the intensity trace to a hidden Markov model (black lines). (C and D) Histogram of on- and off-times for 12.5 μM PA, respectively. (E and F) Histogram of on- and off-times for 3.125 μM PA, respectively. The red lines are exponential fits to the experimental distribution.DOI: http://dx.doi.org/10.7554/eLife.00750.006\n\n![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig2-figsupp3-v1.jpg)\n\n**Figure 2—figure supplement 3.:** Average on (black) and off (gray) duration for three different [PA] obtained from fitting experimental data to an exponential distribution. Error bars are the SEM.DOI: http://dx.doi.org/10.7554/eLife.00750.007\n\nWe then repeated this experiment on the same plasmid that was transiently transfected instead of genomically integrated by lentivirus (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig3-v1.jpg)\n\n**Figure 3.:** Time-lapse images of transiently transfected cells induced with 50 μM PA at t = 0 min. Each cell contains multiple copies of the reporter plasmid, visible as diffraction limited spots (Video 6). Scale bar = 4 μm.DOI: http://dx.doi.org/10.7554/eLife.00750.013\n\n## Abundance and variation of cellular mRNA indicates that nuclear receptors are frequency modulators\n\nUsing the lentivirus approach results in quasi-random insertion of the transgene throughout the genome. Since the kinetics of transcription depend strongly on transgene insertion (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dose response of the reporter gene. Total cellular reporter mRNA is plotted as a function of [PA] for three different clones isolated from a population of lentiviral-infected cells (clone 1, red; clone 2, green; clone 3, blue). Each data point is the average value of mRNA/cell determined by automated image segmentation and spot counting (N = 60 cells, error bars are SEM). The fits are three-parameter Hill functions: A = 960 ± 60 mRNA/cell, 430 ± 50 mRNA/cell, 180 ± 10 mRNA/cell; maxh = 1.2 ± 0.2, 1.3 ± 0.3, 1.2 ± 0.2; EC50 = 8.0 ± 1.4 μM, 10 ± 3.2 μM, 9.1 ±1.5 μM, blue, green, red curves respectively. (B) Dose response of mRNA and protein as function of PA concentration for clone 1. The left axis (red circles) is the number of mRNA counted per cell in the microscope as in panel A. The error bars are the SEM for N = 60 cells for each concentration. The right axis is the normalized protein level, determined from the quantification of the Western blot shown above. α-Tubulin is used as the loading control. The data are fit with a two-parameter Hill function with h = 1.0 (black line): A = 190 ± 10 mRNA; ECmax50 = 9.6 ± 2.0 μM. (C) Stochastic model of gene induction and the resulting polymerase density. In the random telegraph model (upper panel), the gene exists in an inactive state which is non-permissive to transcription or an active state from which transcripts are produced (on-state indicated by red line). The rate of transition to the active state is a; the rate of transition to the inactive state is b; the rate of initiation from the active state is c. Individual initiation events are indicated by vertical green lines. Lower panel: the RNA polymerase II loading that would result from the telegraph process shown in the upper panel. Each initiation event results in the loading of a polymerase, and that polymerase will have a dwell time determined by the time necessary to synthesize the nascent transcript. Note that even when the gene is in the active state, it is possible that no polymerases are present (comparing black occupancy trace with red gene activity trace). (D–F) Fluorescence in situ hybridization at 3.125, 12.5, and 50 μM induction with PA. Gray = Cy3 oligos; blue = DAPI. Scale bar = 4 μm. (G–L) The steady-state distribution of mRNA/cell for 1.56 μM, 3.125 μM, 6.25 μM, 12.5 μM, 25.0 μM, and 50 μM, respectively. The bin size of the histogram is 100 mRNA. The theory is the full-solution to the Master Equation for the scenario shown in panel C (‘Materials and methods’). The on rate a determined from the fit varies with the dose, but the parameters b/d and cd are kept constant at 1.5 and 340, respectively.DOI: http://dx.doi.org/10.7554/eLife.00750.016\n\nWe next sought to build and test a quantitative kinetic model capable of elucidating how the classical analog dose response in a population (Figure 4A,B) relates to the time-dependent digital behavior observed directly in single cells (Figure 2). We used the ‘Random Telegraph model’, which is a paradigm for stochastic transcription and quantitatively describes the distribution of RNA/cell in a variety of organisms (Peccoud and Ycart, 1995; Larson et al., 2009). The key feature of this model is the hypothesis that the gene toggles between an active state where transcripts can be synthesized and an inactive state where no transcripts are produced. It is important to note that the gene can be ‘active’ even when no nascent RNA is detected, owing partly to the stochastic initiation events within an active state (Figure 4C) and partly to the placement of the MS2 cassette in the middle of the gene (Figure 1A). The biochemical determinant(s) of this active state is unknown and is likely to vary between genes. Consequently, it is not possible at present to do a direct measurement of the active state. However, the distribution of total cellular reporter mRNA reflects the dynamics of this active-inactive switching, so we measured the steady state distribution of total cellular reporter mRNA over a population using single-molecule FISH in fixed cells.\n\nFor each cell line, the variation of total cellular mRNA within a population is indicative of infrequent bursts of transcriptional activity (Golding et al., 2005; Chubb et al., 2006; Raj et al., 2006; Voss et al., 2006; Zenklusen et al., 2008) (Figure 4D–F). At low PA induction levels (3.12 μM, Figure 4D), there is a large heterogeneity of cellular mRNA in the population: some cells contain dozens of mRNAs and others have none. Transcription sites are infrequent. At medium induction levels (12.5 μM, Figure 4E), most cells contain mRNA, and many are actively transcribing. At high levels of induction (50 μM, Figure 4F), cells contain a high abundance of mRNA in the cytosol, and most cells show an active transcription site in the nucleus. At each concentration of the steroid, we fit the full distribution of mRNA/cell to the steady-state solution for the random telegraph model (Figure 4G–L, N = 60 cells at each dose). The steady state distribution function used for fitting is a function of three unitless kinetic parameters (a/d, b/d, c/d) corresponding to the rate of activation (a), the rate of inactivation (b), and the rate of firing once the gene is active (c), each normalized by the RNA decay rate, d (Figure 4C). These parameters correspond to the frequency of bursts, the duration of bursts, and the initiation rate from a burst, respectively. At steady state, the mean level of RNA 〈N〉 is:(2)〈N〉=cd(aa+b)where a/(a+b) corresponds to the fraction of time the gene spends in the active state.\n\nThere is a functional similarity between the stochastic random telegraph equation (Equation 2) and the deterministic Hill equation (Equation 1): Amax corresponds to c/d, EC50 corresponds to b, and [PA] corresponds to a. This correspondence indicates that non-cooperative behavior for the hormone response (h = 1, Equation 1) is mathematically equivalent to frequency modulation. In other words, the rate of switching to the active state (a) is the only variable which changes with ligand concentration. In Figure 4G–L we show the distribution of mRNA/cell compared to the theoretical fit arising from the telegraph model as a function of dose. Indeed, these data are consistent with a model where the only variable which varies with dose is the rate of activation (a), while the other parameters (b,c) are globally fit for the entire dose response for a particular cell line (b/d = 1.5, c/d =340). When the same analysis is carried out on cell lines with different insertion sites (i.e., Figure 4A), the dose-dependent activation rate (a) and the dose-independent inactivation rate (b) remain invariant, but the initiation rate (c) changes with the cell line. Thus, the absolute number of polymerases loaded during an active period does not depend on steroid level but rather some extrinsic factor such as local chromatin environment or abundance of some component of the core transcriptional machinery. This is evident when comparing the episomal genes, which do not show frequency modulation. In summary, both fixed-cell and live-cell single-molecule measurements are consistent with a model where the steroid is a robust frequency modulator.\n\n## Triggering a single activation event in living cells with UV photolysis\n\nWe emphasize that the frequency change observed here is in response to changes in the time-invariant level of steroid. Conversely, there is a growing body of evidence that the dynamics of the upstream activator itself may in fact carry biological information and modulate downstream expression levels (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig5-v1.jpg)\n\n**Figure 5.:** (A) Molecular structures of the two forms of caged PA: DMNB-PonA and CNB-PonA. (B) Dose dependent competition between caged PA and unmodified PA. The competition experiment consists of an overnight incubation in various doses of caged PA (CNB PonA = red triangle; DMNB-PonA = gray triangle), followed by incubation with un-modified PA. The expression is quantified by Western blot. The induced CFP-SKL marker is the lower green band (24 kD), the constitutively expressed MS2-YFP is the upper green band (45 kD), and the α-tubulin is the red band (50 kD). (C) Quantification of caged PA inhibition (gray = DMNB-PonA; red = CNB-PonA).DOI: http://dx.doi.org/10.7554/eLife.00750.017\n\n![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig5-figsupp1-v1.jpg)\n\n**Figure 5—figure supplement 1.:** (A) Dose-response of CFK-SKL production as measured by western blot for PA (black circles and line) and the DMNB-PA (red-circles and line). The solid lines are fit to a first-order Hill response function. (B) The caged-PA can be activated with UV light. Caged PA was irradiated in a cuvette with 300,000 pulses at 75 μJ/pulse using the same laser as used for in vivo uncaging. The photolyzed sample was then added the culture dish for 1 hr and then removed. The cells were washed 2 × in fresh media and allowed to incubate overnight. CFP-SKL production was assayed by Western blot.DOI: http://dx.doi.org/10.7554/eLife.00750.018\n\n![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig5-figsupp2-v1.jpg)\n\n**Figure 5—figure supplement 2.:** Cells are incubated with 5 μM PA overnight, resulting in the appearance of transcription sites. At t = 0 hr, time-resolved measurements of transcription site intensity begin. At t = 2 hr, caged PA is added at 50 μM, and transcription site intensity is monitored subsequently for 9 hr.DOI: http://dx.doi.org/10.7554/eLife.00750.019\n\nWe observed empirically that we were unable to activate single genes in the presence of the caged reagent and hypothesized that the caged PA possessed antagonist properties. We therefore examined the dose-dependent induction properties of the reporter gene in the presence and absence of the caged reagent by performing an in vivo competition experiment. First, we confirmed that both forms of the caged PA were inactive by measuring a dose response of the caged ligands (Figure 5—figure supplement 1). Second, the cells were incubated with two different forms of the caged PA (DMNB-PonA and CNB-PonA) (Figure 5A). After overnight incubation, the cells were exposed to 25 μM of the active, unmodified PA for 30 min. The cells were then washed and returned to the incubator for 8 hr to allow the buildup of protein (Figure 5B). At 100 μM of DMNB-PA, we observed a fivefold reduction in protein levels, indicating that the caged ligand blocks the activity of the active, uncaged form in vivo (Figure 5C, gray, Figure 5—figure supplement 2). When the DMNB-PonA and uncaged PA are present in equimolar amounts, the competition is alleviated, and the protein output from the reporter gene is close to the levels observed in the absence of the caged ligand. Thus, we show that this ligand has the unique property of being an agonist in the uncaged state and an antagonist in the caged state.\n\nThe benefit of a reagent that can be switched from repressive to activating is that the effect of small amounts of the agonist are suppressed by the presence of the antagonist. Such a feature is especially important for a reagent that is membrane-permeable and might diffuse to neighboring cells in the tissue. Thus, the caged compound has built-in protection against ‘leakiness’ and is capable of acting in a highly localized spatial manner when uncaged. The method of activation, therefore, has to be all or none: the balance between agonist/antagonist must be shifted past a threshold in order for gene activation to occur. A typical experimental design is schematized in\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00750/elife-00750-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic uncaging experiment in tissue culture. The target cell is photolyzed with a laser that has the physical dimensions of a single nucleus (dotted circle). The transcription site in that cell becomes active, but transcription sites in neighboring cells are still repressed due to the antagonistic effects of caged PA. Thus, even though PA will diffuse through the membrane (indicated by hazy blue circle), the neighboring cells will not activate. (B–E) Time-lapse images of expression for an uncaged cell (ligand = DMNB-PonA). The uncaging spot is designated by a dotted blue circle. The transcription site in the activated cell is evident at 165 min and persists for 60 min. By 465 min, the peroxisomes are visible. Each frame is a z-stack of 30 images taken at 0.5 μM increments. Frame interval = 15 min. Images are maximum projected z-stacks. To maintain viability, only the YFP channel is imaged during acquisition, with CFP imaging utilized as an endpoint assay. Scale bar = 4 μm.DOI: http://dx.doi.org/10.7554/eLife.00750.020\n\nThe time evolution of a typical activated cell is shown in Figure 6 (Video 8). The cell is uncaged at t = 0 (Figure 6B); the transcription site is visible at 2.5 hr (Figure 6C) and persists in the on state for 1.5 hr afterwards (Figure 6D), consistent with the duration of the on-state measured previously (Figure 2G). At 15 hr, the CFP peroxisomes are observed to assay whether the cell has activated (Figure 6E). In this example, only the central cell was photolyzed, and is the only cell that displays expression of the CFP protein construct. By contrast, the two non-photolyzed neighboring cells show no evidence of CFP expression. The photolysis protocol above results in: 1) an average 106 +/− 36 min between uncaging and the appearance of a transcription site which then persisted for 35 +/− 12 min, 2) 40% success rate for protein expression, and 3) a single on-state in 70% of those cells which activated, with the remainder showing either no detectable on-period (13%) or multiple periods (17%) (N = 30). Moreover, we also observe cell division after uncaging, which is a measure of viability after UV photolysis (Video 9). In sum, the photoactivation data suggest that a single pulse of ligand results in a single active period of transcription.10.7554/eLife.00750.021Video 8.Time-lapse sequence of reporter gene uncaging.The nascent transcription site is visualized as the coalescence of MS2-YFP coat protein on newly synthesized pre-mRNA. Cells were incubated in 100 μM DMNB-PA overnight. The media were then removed, the cells rinsed 3 × with fresh media without DMNB-PA, and then irradiated with 40 pulses at 100 Hz. Each frame is the maximum projection of 28 z-steps acquired at 0.5 μm intervals. Exposure time = 200 ms. Frame interval: 15 min. Total duration: 8 hr. T = 37°C.DOI: http://dx.doi.org/10.7554/eLife.00750.02110.7554/eLife.00750.022Video 9.Time-lapse sequence of reporter gene uncaging.The nascent transcription site is visualized as the coalescence of MS2-YFP coat protein on newly synthesized pre-mRNA. Cells were incubated in 100 μM DMNB-PA overnight. The media were then removed, the cells rinsed 3 × with fresh media without DMNB-PA, and then irradiated with 40 pulses at 100 Hz. In this instance, the uncaged cell proceeded through mitosis, and only one of the daughter cells shows activation. Each frame is the maximum projection of 28 z-steps acquired at 0.5 μm intervals. Exposure time = 200 ms. Frame interval: 30 min. Total duration: 15 hr. T = 37°.DOI: http://dx.doi.org/10.7554/eLife.00750.022\n\n## Discussion\n\nThe work presented here addresses the specific question as to how transcription factor availability translates into transcriptional activity. By a variety of approaches, we show that the frequency of initiation is the variable that determines RNA levels, but only when the gene is integrated into the chromatin. By measuring the synthesis of pre-mRNA directly, we connected the dynamics of the gene with the availability of an upstream transcription factor, the ligand-bound steroid receptor. We demonstrated how steroid receptors, which are present in all metazoans, can control transcription through frequency modulation. This digital frequency modulation of transcription in single cells manifests as an analog dose response in cellular mRNA and protein in a population. Importantly, the ability to activate the transcription factor (steroid receptor) using light provided a precise temporal start to measure the time needed for the gene to respond, an unexpectedly long time (2 hr). Hence our observations clarify the mechanics behind these observations and extend the understanding to the intrinsic cycling on and off for a gene. One dose of a transcription factor yields one cycle of transcription.\n\nThe precise timing of the transcriptional response places constraints on the regulation of the gene: one can infer regulatory principles based on the observed synthesis of pre-mRNA (Pedraza and Paulsson, 2008). A stochastic model of kinetic rates allowed us to break down the steroid transcriptional response into distinct processes, which could be measured independently in the microscope. Although a number of studies have inferred transcriptional bursting by measuring events which are downstream of transcription, such as cellular RNA or protein production, (Blake et al., 2003; Raser and O’Shea, 2004; Becskei et al., 2005; Bar-Even et al., 2006; Newman et al., 2006; Raj et al., 2006; Zenklusen et al., 2008; Singh et al., 2010; Batenchuk et al., 2011; Skupsky et al., 2010; So et al., 2011; Suter et al., 2011), we are able to unambiguously resolve the properties of individual bursts and relate these measured kinetic steps to steroid abundance. For this ecdysteroid-responsive reporter gene in mammalian cells, the time between on-states decreased at higher doses of PA. The duration of the active state and the transcription rate from the active state were invariant. However, the ‘on’ times and ‘off’ times were both exponentially distributed (Figure 2G,H), which suggested that both processes were determined by a single rate-limiting step. The simplest biochemical model to explain this result is that the state of the gene is determined entirely by the on rate and off rate of the active ligand-receptor complex from the response element. The corollary to this model is that the actual transcription rate (c) from the active state is determined by factors other than the response element. For example the ability of trans-acting factors to access cis-acting sequences in the core promoter may determine the firing rate from the active state. In agreement with this supposition, the dynamic frequency modulation by the steroid was invariant with the insertion site, but the transcription rate varied over fivefold with insertion site. In this way, genetic regulation can be conceptualized as the superposition of individual parts, with distal enhancers and response elements controlling frequency of activation and proximal promoters determining the firing rate. Future experiments will be able to directly test this hypothesis using further development of the single-molecule approaches described here.\n\nThis simple model must address the fact that the exchange rate of SRs on chromatin has been observed to be extremely dynamic. Fluorescence photobleaching recovery measurements on tandem gene arrays in single cells record dwell times on the order of seconds to minutes (Darzacq et al., 2009), while the duration of the active transcriptional state in this study is on the order of an hour. One possibility is that SR binding is actually much longer, and FRAP data on arrays is dominated by non-specific interactions and is not capable of detecting the small percentage of receptors which might be stably bound. Another possibility is that SR binding is in fact short-lived but initiates a cascade of events involved in activation of the gene (Herschlag and Johnson, 1993; Hager et al., 2006; Metivier et al., 2006). In support of this latter view, we observe that there was a delay between photoactivation of the ligand and the appearance of the first transcription sites (Figure 6). This delay was comparable in size to the average duration of the off period. In contrast, a non-chromatinized or weakly chromatinized template showed extremely rapid induction (<20 min). It is plausible that chromatin remodeling is inefficient at this reporter gene, possibly because the promoter lacks cis-acting elements which might aid in a more rapid chromatin remodeling response. Taken together, these results support the notion that opening of chromatin interposes a delay between the docking of active ligand-receptor complex on the response element and the eventual synthesis of pre-mRNA (Janicki et al., 2004).\n\nThe synergy between DNA binding factors and chromatin modifying proteins is essential for control of gene expression (Segal and Widom, 2009), and the role of chromatin in a bimodal model of gene regulation has been proposed previously (Archer et al., 1992; Di Croce et al., 1999). Moreover, recent evidence points strongly toward chromatin as directly controlling the duration of the on and off states. Histone methylation has been implicated in the transmission of transcriptional frequency between mother and daughter cells (Muramoto et al., 2010). Manipulation of histone acetylation changes transcriptional cycle timing (Harper et al., 2011; Suter et al., 2011). Histone deacetylases and nucleosome-remodeling complexes are cyclically recruited during transcriptional activation of an estrogen-responsive gene (Métivier et al., 2003). Importantly, FRAP studies on histones and genome-wide pulse-chase measurements on histones suggest a timescale of turnover (∼hour) that is more consistent with the time scales of transcriptional activity observed in this study (Kimura and Cook, 2001; Dion et al., 2007; Deal et al., 2010). The bimodal ‘telegraph’ model is likely a simplification of the number of biological steps involved in gene activation, but the quantitative agreement between this model and our data suggests that at steady state, the requirements for re-activating a gene that has cycled off may depend on only a few rate-limiting steps.\n\nIn summary, we have described a comprehensive approach for unraveling the dynamic behavior of genetic control in single cells. By using a combination of nascent RNA visualization, single molecule microscopy, computational modeling, and light activation, we were able to construct a quantitative model of steroid-receptor mediated activation in which SRs control the frequency of the transition to an active transcriptional state in a dose-dependent manner. This model is based on a stochastic, kinetic description that reflects the molecular events occurring in single-cells.\n\n## Materials and methods\n\n## Construction of ponasterone responsive cell lines\n\nThe chimeric ecdysone receptor (pERV3, Stratagene, Agilent, Santa Clara, CA) was introduced into U2-OS cells by nucleofection (Amaxa, Lonza, Allendale, NJ), and stable insertions were selected by screening for G418 resistance followed by isolation of single colonies. Response to ecdysteroids was assayed using a luciferase reporter (pEGSH, Stratagene) transiently transfected into resulting cell lines. The most responsive clone was then used for all subsequent cell line derivation.\n\nThe reporter gene (Figure 1A) was cloned into the pHAGE lentiviral vector backbone described elsewhere (Mostoslavsky et al., 2006). Viral particles were produced from 293-T packaging cells in two 15 cm plates. The supernatant was harvested for three consecutive days. The collected supernatant was spun at max speed in a clinical centrifuge to pellet large debris and then filtered through a 0.45 μm filter before transfer to a sterile ultracentrifuge tube SW28. Viral particles were pelleted by spinning at 100,000 × g for 1.5 hr at 4°C. The entire collected supernatant was used to infect one dish of 5000 cells, resulting in infection efficiencies of ∼90%.\n\nThe MS2 coat protein was also cloned into the same pHAGE backbone. The coat protein is driven off the human ubiquitin C promoter, contains a nuclear localization sequence and was described previously (Fusco et al., 2003). Lentivirus collection and infection were carried out according to the above protocol.\n\nUnless otherwise stated, U2-OS cells were cultured in low-glucose DMEM (Gibco, Life Technologies, Grand Island, NY) supplemented with 10% FBS and 1% penicillin/streptomycin.\n\n## Single-molecule RNA fluorescence in situ hybridization\n\nReporter RNA was visualized by hybridization of a 20-mer ssDNA oligo labeled with Cy3 at both ends to the MS2 repeats. Therefore, each 20-mer contains two dye molecules. The protocol for RNA FISH has been described elsewhere (Femino et al., 1998) and is used here with slight modification. Briefly, the coverslips with adherent U2-OS cells are washed three times with Hanks balanced salt solution and once with PBS followed by fixation with 4% paraformaldehyde for 10 min at room temperature. The cells were washed twice with PBS for 5 min each and permeabilized with 0.5% Triton X-100 in PBS for 10 min. The cells were washed with PBS and incubated twice in 10% formamide in 2 × SSC for 5 min before the hybridization is started.\n\nHybridization was carried out for 4 hr at 37°C in 10% formamide and 2 × SSC in the presence of competitor DNA and BSA. The probe concentration was 0.1–1 μM. After hybridization, the cells were washed twice in 10% formamide in 2 × SSC for 20 min at 37° and two times 1 hr in PBS at room temperature. The nucleus was stained for 10 s with 1 ml of 0.5 μg/ml DAPI followed by 2 × wash in PBS for 5 min. Coverslips were mounted using ProLong Gold antifade reagent (Invitrogen, Life Technologies, Grand Island, NY) and imaged 24 hr later.\n\n## FISH image acquisition and analysis\n\nWide-field fluorescence images were obtained on a BX61 epi-fluorescence microscope (Olympus, Center Valley, PA) using a PlanApo 60 ×, 1.4 NA oil-immersion objective. The microscope is equipped with an X-Cite 120 PC light source (EXFO, Mississauga, Canada) for illumination, Uniblitz shutters (Vincent Associates, Rochester, NY), filter sets 31000 (DAPI), 41007a (Cy3) and 41008 (Cy5) (Chroma Technologies, Brattleboro, VT) and a MS-2000 Microscope Stage Controller (Applied Scientific Instrumentation, Eugene, OR). Digital images were acquired with a CoolSNAP HQ camera (Photometrix, Tucson, AZ) controlled by Metamorph 7.6.3 software as a 3D stack of 18 images at 0.3 μm steps with a 1 × 1 binning. Exposure times were 500 ms for Cy3 and Cy5 and 30 ms for DAPI. The fields for imaging are selected in the DAPI channel to minimize bias.\n\nAll image analysis was performed using custom-written software in IDL on maximum intensity projections of three-dimensional image stacks. Spot detection using a Gaussian mask (Thompson et al., 2002) was carried out using the Localize software package described previously (Trcek et al., 2012). Nucleus segmentation was achieved by applying an intensity threshold to the maximum intensity projection of the grayscale image. The threshold was adjusted manually to ensure accurate masking. The algorithm detected and removed nuclei that are either too small or not fully contained within the image in order to generate a binary mask. Cells were segmented using intensity thresholding in combination with the watershed operator.\n\n## Western blot\n\nWe used the following primary antibodies: β-tubulin (Rockland, Gilbertsville, PA) and GFP (Roche, Branchburg, NJ), and secondary antibodies: donkey anti-rabbit conjugated to IRDye 800 (Rockland) and donkey anti-mouse conjugated to Alexa Fluor 680 (Invitrogen A21102). We washed cells in ice-cold PBS and lysed them at room temperature for 2 min in 1 ml lysis buffer per 10-cm dish (50 mM Tris-HCl (pH 8.0), 50 mM NaCl, 1% NP40, 5 mM DTT, 1 mM PMSF and half a mini tablet protease inhibitor). We spun the lysate 15 min at 14,000 × g at 4°C and loaded the supernatant on a Nupage 4–12% bis-tris gel using MOPS running buffer (Invitrogen). After transfer on a nitrocellulose membrane in Nupage transfer buffer (25 V for 1.5 hr), we blocked nonspecific interactions by incubating the blot overnight at 4°C in PBS supplemented with 5% nonfat dry milk and 1% BSA. After that, we rinsed the membrane and incubated it for 1 hr with the primary antibodies in PBS supplemented with 1% BSA (dilutions: 1:2500 mouse anti–Actb; 1:5,000 mouse anti–β-tubulin). We then washed the blot five times 10 min in PBS with 0.3% Tween-20 before incubation for 30 min with the secondary antibody (1:10,000 in PBS with 1% BSA). We then washed the membrane five times in PBS with 0.3% Tween-20, before exposure on an Odyssey infrared imaging system (two-color detection). Band intensities were quantified using custom software in IDL.\n\n## Ecdysteroid preparation and analysis\n\nEcdysone and Ponasterone A were purchased from AG Scientific (San Diego, CA). The purity of ponasterone A was determined to be ∼75% by analytical HPLC. All other reagents and solvents were purchased from Sigma-Aldrich (St. Louis, MO). Silica gel 60 (40 mm, Fischer) was employed for column chromatography. DMNB-Ecdysone and 2-bromo-2-(2-nitrophenyl)acetic acid were synthesized by reported method (Chang et al., 1995; Lin et al., 2002). 1D and 2D NMR spectra were recorded on a Bruker DRX-500. High-resolution mass spectra were obtained at the Mass Spectrometry Facility, the University of North Carolina at Chapel Hill, Chapel Hill, NC.\n\n## Preparation of DMNB-ponasterone A\n\nA suspension of Ponasterone A (10 mg, 21 μmol) and dibutyltin oxide (6.7 mg, 27 μmol) in anhydrous methanol (3 ml) was heated to reflux for 3 hr under argon. After the solvent was removed under reduced pressure, the residue was subsequently azeotroped with anhydrous benzene (3 × 2 ml). The resulting stannylene acetal was further dried in vacuo for 2 hr before addition of 3 Å molecular sieves (50 mg), CsF (13 mg, 83 μmol), 1-bromomethyl-4,5-dimethoxy-2-nitrobenzene (11 mg, 38 μmol), and anhydrous DMF (1 ml). After the reaction mixture was stirred at room temperature overnight, the solvent was evaporated under reduced pressure. The resulting residue was purified by silica gel column chromatography (chloroform/methanol: 20:1) to afford caged-product as an off-white solid. DMNB-ponasterone A needs further purification by HPLC due to the impurity in the purchased ponasterone A (8 mg, 57%) (retention time 46.9 min on a Prevail C18 5 μ column 250 mm × 22 mm monitored at 242 nm; a 30 min linear gradient from 95% A [water] to 50% B [acetonitrile], followed by 50% B for 5 min with the flow rate of 8 ml/min). The purity of the product was determined to be >99% by analytical HPLC (retention time 43.4 min on an Apollo C18 5 μ column 250 mm × 4.6 mm, monitored at 242 nm; a 15 min linear gradient from 95% A [water] to 50% B [acetonitrile], followed by 50% B for 5 min and a 15 min linear gradient from 50% A [water] to 95% B [acetonitrile] with the flow rate of 1 ml/min). 1HNMR (500 MHz, CD3OD): δ 0.91 (s, 3H), 0.94 (s, 3H), 0.95 (s, 3H), 1.01 (s, 3H), 1.20 (s, 3H), 1.2 (m, 2H), 1.5 −2.1 (m, 15H), 2.44 (m, 2H), 3.08 (m, 1H), 3.11 (m, 1H), 3.70 (d, J = 11.5 Hz, 1H), 3.93 (s, 3H), 3.99 (s, 3H), 4.29 (s, 1H), 4.92 (d, J = 15.0 Hz, 1 H), 5.04 (d, J = 15.0 Hz, 1H), 5.64 (s, 1H), 7.45 (s, 1H), 7.72 (s, 1H). 13CNMR (125 MHz, CD3OD): δ 16.6, 19.6, 20.1, 21.4, 22.0, 22.9, 27.8, 29.0, 30.3, 31.1, 31.3, 33.2, 33.7, 36.3, 37.9, 47.2, 48.2, 49.0, 50.6, 55.4, 55.5, 64.2, 66.9, 76.2, 76.4, 76.6, 83.8, 107.7, 110.5, 120.8, 130.1, 139.7, 147.9, 153.6, 166.5, 204.8. HRMS (ESI+) calculated for C36H53NO10Cs+: 792.2724 Found: 792.2716 (−1.0 ppm).\n\n## Preparation of CNB-ponasterone A/ecdysone\n\nCsF (13 mg, 83 μmol) was added to a solution of the stannylene acetal of ponasterone A/Ecdysone (21 μmol), 3 Å molecular sieves (50 mg), 2-bromo-2-(2-nitrophenyl)acetic acid (11 mg, 38 μmol) in anhydrous DMF (1 ml). After the reaction mixture was stirred at room temperature overnight, the solvent was filtered to remove 3 Å molecular sieves and evaporated under reduced pressure. The resulting residue was dissolved in DMSO and purified by HPLC.\n\n## CNB-ponasterone A\n\nWhite solid (7 mg, 52%) (retention time 15.1 min on a Prevail C18 5 μ column 250 mm × 4.6 mm, monitored at 242 nm a 40 min linear gradient from 30% A [water] to 95% B [acetonitrile], with the flow rate of 8 ml/min). 1HNMR (500 MHz, CD3OD): δ 0.91 (s, 3H), 0.94 (s, 3H), 0.95 (s, 3H), 1.01 (s, 3H), 1.20 (s, 3H), 1.2 (m, 2H), 1.5 −2.1 (m, 15H), 2.44 (m, 2H), 3.08 (m, 1H), 3.11 (m, 1H), 3.60 (d, J = 11.5 Hz, 1H), 4.15 (s, 1H), 4.92 (m, 1H), 5.72 (s, 1 H), 7.46 (t, J = 9.5 Hz, 1H), 7.62 (t, J = 9.5 Hz, 1H), 7.75 (d, J = 9.5 Hz, 1H), 7.93 (d, J = 10.0 Hz, 1H). HRMS (ESI+) calculated for C34H49NO8Na+ (M–CO2): 622.3356 Found: 622.3355 (−1.0 ppm).\n\n## CNB-ecdysone\n\nWhite solid (9 mg, 65%) (retention time 34.5 min on a Prevail C18 5 μ column 250 mm × 22 mm monitored at 242 nm; a 30 min linear gradient from 95% A [water] to 50% B [acetonitrile], followed by 50% B for 5 min and a 15 min linear gradient from 50% A [water] to 95% B [acetonitrile] with the flow rate of 8 ml/min). 1HNMR (500 MHz, CD3OD): δ 0.80 (s, 3H), 0.89 (s, 3H), 1.14 (s, 3H), 1.21 (s, 6H), 1.22–1.98 (m, 17H), 2.39 (m, 2H), 3.11 (m, 1H), 3.60 (d, J = 11.5 Hz, 1H), 4.15 (s, 1H), 4.92 (m, 1H), 5.72 (s, 1 H), 7.46 (t, J = 9.5 Hz, 1H), 7.61 (t, J = 9.5 Hz, 1H), 7.74 (d, J = 9.5 Hz, 1H), 7.92 (d, J = 10.5 Hz, 1H). HRMS (ESI+) calculated for C34H49NO9Cs+ (M–CO2): 748.2461 Found: 748.2496 (+4.6 ppm).\n\n## Fitting to the random telegraph model\n\nThe number of mRNA/cell was binned into histograms and fit with the analytical solution to the random telegraph model (Raj et al., 2006) using Mathematica (Wolfram Research, Champaign, IL). The probability was summed over the bin size to generate the proper normalization. Unless otherwise indicated, there are three fitting parameters: a/d, b/d, c/d, corresponding to the normalized gene activation rate, gene inactivation rate, and initiation rate, respectively.\n\n## Live-cell microscopy\n\nLive-cell fluorescence images were obtained on a BX61 epi-fluorescence microscope (Olympus) modified for simultaneous UV photolysis. The system consists of an X-Cite 120 PC light source (EXFO, Mississauga, Canada) for imaging, an Explorer 339 nm pulsed laser for photolysis (Newport, Santa Clara, CA), and ASI shutters and automated stage (Applied Scientific Instrumentation). The laser is capable of operating from single-shot to 1 kHz at 120 μJ/pulse. All data was acquired at 37°C using a Delta T stage incubator and objective heater (Bioptechs, Butler, PA). The UV and visible excitation were focused through a U-Apo 40 × 1.35 NA oil lens, and the emission was collected through the same objective. Excitation, emission, and dichroic optics were custom designed for simultaneous UV and visible excitation (Chroma). The microscope was controlled by IPLab (BioVision, Exton, PA), and images were acquired on an Orca R2 CCD (Hamamatsu, Hamamatsu, Japan).\n\nTime-lapse images of active transcription were analyzed using previously described methods (Larson et al., 2011). First, nuclei are segmented and individual cell videos are separated out from the raw data. The intermediate which results is a time-lapse image stack where the fluorescent nucleus is always centered in the frame (Video 5). Next, the diffraction-limited spots are fit using a Gaussian mask algorithm (Thompson et al., 2002) to generate a list of positions. The complete time-dependent trajectories were then constructed using a tracking algorithm (Crocker and Grier, 1996). We used a Hidden Markov Model fitting algorithm taken directly from Lee et al. to analyze the resulting intensity traces and extract the duration of active and inactive states (Lee, 2009).\n",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James T Kadonaga, University of California, San Diego , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00750.023](https://doi.org/10.7554/eLife.00750.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work, “Light-Activated Receptor-Mediated Transcription in Single Cells”, for consideration at eLife. The Editor-in-Chief, a Senior Editor, a member of the Board of Reviewing Editors, and two expert reviewers have assessed your work.\n\nWe have some interest in the publication of this work, but there are several key issues that need to be addressed before we can proceed further. We therefore ask whether you would be willing to respond to the specific points below.\n\n1) The reviewers appreciated the novelty of the use of a next-generation system for the analysis of steroid receptor-mediated activation at the single cell/single reporter/single molecule level. It was also felt, however, that in spite of the technical novelty the main conclusions of this work mostly confirmed previous observations indicating that the on-off states are digital in nature. We therefore ask if the authors could clarify the novelty of their findings in the context of prior knowledge.\n\n2) There is missing information that is needed to understand the results. Several examples are as follows:\n\na. Figures 2I and 2J. It is necessary to show the data with 0 micromolar PA. This is the baseline control.\n\nb. Figure 4. The authors conclude that local chromosomal environment affects initiation rates by comparing different clonal cell lines that accrue different amounts of total labeled construct mRNA. Were analyses, such as those in Figure 2E–J, carried out for each clonal cell line to confirm for each the dose-dependent off-time and dose-independent on-time? (It is not apparent if Figure 2 shows data from one clonal cell line or the averages of all three clonal lines.)\n\nc. The cells in Figures 3 and 6 look sick. In particular, the nuclear blebbing and irregularly shaped nuclei are indicative of apoptosis. This needs to be examined carefully as it could alter the interpretation of the data.\n\nd. Exposing cells, and in particular nuclei, to 349nm light can result in DNA damage. Labeling with γ-H2A.X must be done +/- uncaging to be sure that the observed results are not influenced by DNA damage.\n\ne. Figure 6. It appears that the authors presume that the PA that is released upon UV treatment exists only transiently because it becomes blocked by an excess of caged PA. Is this what the authors mean to suggest? If so, can they prove this point?\n\nf. Can the authors confirm that there is only one transcription site per cell? Is this single transcription site stably maintained through multiple generations?\n\n3) There is also an issue with the Random Telegraph model in Figure 4. In Figure 4C, is the x-axis equal to time? If so, wouldn't (a) and (b) be times rather than rates? Also, would the fraction of time in the active state be equal to (b)/(b)+(a)? Please clarify the formulas as well as the use of the terms “rate” vs “time” in this section.\n\n4) It is unclear why the first transcription sites are only visible several hours after induction. Opening of chromatin of a single copy gene should not impose such a large delay between docking of the active ligand-receptor complex and subsequent RNA synthesis. Is this a result of the complexity of the reporter system? How well does this reflect the induction of endogenous steroid regulated genes? This can be easily tested by in situ hybridization.\n\n5) Figure 6. The authors assert “a single on-period in 70% of the cells which activated.” Were there multiple on-periods in the other 30% of activated cells? Authors should show statistical analyses of the probabilities of single or multiple cycles occurring from a single transient hormone dose. Additionally the average, maximum, and minimum on-periods should be calculated and presented for this experiment and compared to steady state hormone dosing assays.\n",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1b171301-5a3a-4ba3-87cc-88d848ba24f4",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C1",
+      "claim": "Transcription is dynamic and stochastic in single cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single-cell analysis has revealed that transcription is dynamic and stochastic",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement draws from established scientific consensus in the field of single-cell transcription analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d99a090d-df5a-4a8e-922f-6533ae2732dd",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C2",
+      "claim": "Steroids drive mRNA synthesis by frequency modulation of transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We determine that steroids drive mRNA synthesis by frequency modulation of transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a primary finding determined from experimental observations and analysis presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "11fd31c9-3e37-4cbb-99fb-f30900003f14",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C3",
+      "claim": "Digital behavior in single cells gives rise to analog dose response across the population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This digital behavior in single cells gives rise to the well-known analog dose response across the population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is derived from the experimental data showing single-cell behavior and population-level measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e095b24e-4f18-4e37-b80d-43fe2593905b",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C4",
+      "claim": "Steroid receptors coordinate a diverse range of responses in higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Steroid receptors coordinate a diverse range of responses in higher eukaryotes and are involved in a wide range of human diseases",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement is supported by citation to Gronemeyer et al., 2004 and represents established knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "ca5206a4-1fa0-448d-adb4-74032e9dc419",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C5",
+      "claim": "Steroid receptors are involved in a wide range of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Steroid receptors coordinate a diverse range of responses in higher eukaryotes and are involved in a wide range of human diseases",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Gronemeyer et al., 2004 and represents established medical knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "5ebe0178-4da4-4537-97be-a1b57e88d249",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C6",
+      "claim": "Steroid receptor response elements are present throughout the human genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Steroid receptor response elements are present throughout the human genome and modulate chromatin remodeling and transcription in both a local and long-range fashion",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement is supported by citation to John et al., 2011 and represents established genomic knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "ed337c05-08a2-405f-a9a3-4d1aa06e2271",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C7",
+      "claim": "Steroid receptor response elements modulate chromatin remodeling and transcription in both a local and long-range fashion.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Steroid receptor response elements are present throughout the human genome and modulate chromatin remodeling and transcription in both a local and long-range fashion",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to John et al., 2011 and represents established understanding of steroid receptor function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "eb2ac751-b5d3-45b4-922c-5ec92288d30b",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C8",
+      "claim": "The classic sigmoidal dose response of steroid-regulated gene products belies the complexity of the multi-step activation system.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The classic sigmoidal dose response of steroid-regulated gene products belies the complexity of a system which relies on an intricate, multi-step sequence of events to initiate transcription from a target gene",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This represents established knowledge about the apparent simplicity versus actual complexity of steroid receptor systems.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "12360313-8243-48dc-bf9c-cc6da86f59cf",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C9",
+      "claim": "Steroid receptor-mediated gene activation requires ligand-binding, receptor dimerization, nuclear translocation, eviction of co-repressors, recruitment of chromatin modifying enzymes, and recruitment of basal transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Depending on the particular steroid receptor, a partial list of events required to activate the target gene includes ligand-binding, receptor dimerization, nuclear translocation, eviction of co-repressors (i.e., histone deacetylases), recruitment of chromatin modifying enzymes (histone acetyltransferases, ATP-dependent remodeling enzymes, methyltransferases), and eventually recruitment of the basal transcription machinery.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to McKenna et al., 2009 and represents established mechanistic knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "a9bf62fc-e22f-43b8-acf4-305d3985f24f",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C10",
+      "claim": "The steroid dose-response often takes the form of a simple Hill function with a coefficient of unity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Despite this complexity, the dose-response is deceptively simple: it often takes the form of a simple Hill function with a coefficient of unity",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Ong et al., 2010 and represents established observation in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "071d8980-f51a-43dd-9db4-9abff66af0f4",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C11",
+      "claim": "A Hill coefficient of unity has traditionally been interpreted to imply that ligand-binding is the only rate-limiting step in the activation pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it often takes the form of a simple Hill function with a coefficient of unity, which has traditionally been interpreted to imply that ligand-binding is the only rate-limiting step in the activation pathway",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Ong et al., 2010 and represents traditional interpretation in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "55622556-ac07-4cf0-b67f-5a86e7fb67f9",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C12",
+      "claim": "The traditional continuum model where each cell transcribes RNA at rates proportional to dosage level is incorrect.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This description models the dose response as a continuum where each cell transcribes RNA at rates proportional to the dosage level. However, single-cell studies of gene expression demonstrate that this description is incorrect.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is drawn from established single-cell studies and represents a paradigm shift in understanding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "86ac2a3f-6630-4ef7-acfc-ca2752144a22",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C13",
+      "claim": "Gene expression is not uniform over a population for a given dose, but shows variation from cell to cell.",
+      "claim_type": "EXPLICIT",
+      "source_text": "First, gene expression is not uniform over a population for a given dose, but shows variation from cell to cell",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Ko et al., 1990 and represents established observation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "8237cdb2-a4ff-48d8-aed2-7ff8ff009690",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C14",
+      "claim": "The analog dose response for a steroid-responsive MMTV reporter gene was in fact a digital dose response (on or off) when viewed in single cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The authors demonstrated that the observed analog dose response was in fact a digital dose response (on or off) when viewed in single cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a finding from Ko et al., 1990 cited in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "38788f4b-cfb4-4194-b852-ff65635e59ce",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C15",
+      "claim": "Enhancers increase the probability of activation of a cell but not the strength of activation in the cell.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Likewise, previous studies initially demonstrated that enhancers increase the probability of activation of a cell but not the strength of activation in the cell",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations (Moreau et al., 1981; Weintraub, 1988; Moon and Ley, 1991; Walters et al., 1995).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "519eb658-9371-4d17-b0fd-f06cb9ad1857",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C16",
+      "claim": "Expression is only a snapshot of temporally evolving gene activity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Second, expression is only a snapshot of temporally evolving gene activity",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by multiple citations and represents established understanding of gene expression dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "5089ba21-c9e7-48f5-9680-d59434da084a",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C17",
+      "claim": "All single-cell measurements on metazoans suggest that genes are transcribed in 'bursts' of transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus far, all single-cell measurements on metazoans suggest that genes are transcribed in 'bursts' of transcription, meaning that short periods of RNA synthesis are interspersed by long periods of inactivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents a consensus observation from the field of single-cell gene expression studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "66db0ab3-eea4-4a99-82a5-c47010551ef5",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C18",
+      "claim": "The causes of transcriptional bursting are unknown.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The causes of transcriptional bursting are unknown.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects the current state of knowledge in the field at the time of publication.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "b9eeacf0-3076-4061-a402-589d3c60d01d",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C19",
+      "claim": "Molecules involved in regulating transcription are usually present at low copy number, leading to stochastic fluctuations ('noise') and gene expression variation across the population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Third, since molecules involved in regulating transcription are usually present at low copy number, this leads to stochastic fluctuations ('noise') and hence gene expression variation across the population",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Larson et al., 2009 and represents established understanding of stochastic gene expression.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "bf8a0a38-d9bf-4035-a26c-9fbc71b22176",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C20",
+      "claim": "Dynamic interactions between upstream regulators and chromatin add another level of complexity to transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, dynamic interactions between upstream regulators and chromatin add another level of complexity to the molecular events occurring during transcriptional activation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citations (McNally et al., 2000; Darzacq et al., 2009; Ong et al., 2010) and represents established knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "63a16a33-d03f-477f-8d02-a51cc1ea67ab",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C21",
+      "claim": "The observed dose response does not result solely from ligand-binding but rather the composite result derived from many coupled reactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Under such conditions, the observed dose response does not result solely from ligand-binding but rather the composite result derived from many coupled reactions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference drawn from the complexity of the system and established knowledge about coupled biochemical reactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "6d314ac6-bf46-43b3-92a7-c39a798dc14a",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C22",
+      "claim": "Population models of gene activation are too coarse to explain activation in single cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In summary, population models of gene activation are too coarse to explain activation in single cells.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This conclusion is drawn from the accumulated evidence about single-cell heterogeneity and dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "3467cdd7-68cf-439f-989f-fcc12d4486a6",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C23",
+      "claim": "Tools do not exist whereby the activity of single genes in single cells can be directly manipulated and measured.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, tools do not exist whereby the activity of single genes in single cells can be directly manipulated and measured.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects the state of available technology at the time of the study, motivating the development of new tools.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d401e80f-5a3c-4230-aaba-9755e7bfcfb4",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C24",
+      "claim": "The authors developed a photoactivation approach for activating a steroid-receptor to achieve high temporal and spatial precision.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this work, we describe an approach for activating a steroid-receptor in order to achieve high temporal and spatial precision and to measure the activity of a responsive gene in the same cell over time.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental approach developed and implemented in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "0aa47c1b-33b0-4376-ac95-e39c21bf5938",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C25",
+      "claim": "The system consists of an exogenous reporter gene under control of the ecdysone receptor which is activated by the agonist ponasterone A.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The system consists of an exogenous reporter gene under control of the ecdysone receptor which is activated by the agonist ponasterone A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the experimental system used, with citation to No et al., 1996 for the ecdysone receptor system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "06d52eff-8e85-4589-93e6-24ff23a33f46",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C26",
+      "claim": "The real-time behavior of the gene is visualized using a bacteriophage capsid protein which binds MS2 RNA stem loops with high affinity to label nascent pre-mRNA in living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The real-time behavior of the gene is visualized using a bacteriophage capsid protein which binds MS2 RNA stem loops with high affinity to label nascent pre-mRNA in living cells",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the MS2 visualization system used, with citation to Bertrand et al., 1998.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "8c72a76d-b4e0-4da6-b70e-cf82a9e9cae1",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C27",
+      "claim": "The response element controls the frequency of gene activity but affects neither the duration of the active period nor the actual rate of transcripts produced during an active period.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results suggest that the response element controls the frequency of gene activity but affects neither the duration of the active period nor the actual rate of transcripts produced during an active period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a key conclusion drawn from the experimental results presented in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "4d7861d9-fd33-46a7-9ac1-a8608476d159",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C28",
+      "claim": "A single pulse of active ligand resulted in a corresponding burst of polymerase activity several hours later.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By using a caged ligand that could be uncaged by a light pulse (Lee et al., 2009; Lin et al., 2002) we measured the impulse-response of the gene and determined that a single pulse of active ligand resulted in a corresponding burst of polymerase activity several hours later.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from the photoactivation experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "45157d7b-0eb5-49a2-9d54-cff56799f839",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C29",
+      "claim": "The photoactivatable ligand has the property of being an antagonist in the caged state and an agonist in the uncaged state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Further, this photoactivatable ligand has the property of being an antagonist in the caged state and an agonist in the uncaged state, enabling a precise window for kinetic perturbation in single cells.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental finding about the properties of the caged ligand developed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "274c620e-3d23-4bc4-b1e0-7b069bd9080c",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C30",
+      "claim": "The reporter gene is a bi-cistronic construct introduced via lentivirus infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The gene is a bi-cistronic construct introduced via lentivirus infection.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design of the reporter construct.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "804779bc-332f-414a-aa0a-ed057e0517c5",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C31",
+      "claim": "The first ORF codes for CFP-SKL which results in CFP-labeled peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first ORF codes for CFP-SKL which results in CFP-labeled peroxisomes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the design and function of the first open reading frame in the reporter construct.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "cc1a6ddd-e378-4816-adf0-97d7e0ba1732",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C32",
+      "claim": "The second ORF codes for DsRED which is non-specifically expressed in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the second ORF codes for DsRED which is non-specifically expressed in the cytosol",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the design and function of the second open reading frame in the reporter construct.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "14b7e254-f5fc-4ceb-8737-ab28aa2f0aea",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C33",
+      "claim": "In the 3′ UTR of the CFP-SKL cistron, there is a 24 × MS2 stem-loop encoding region.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the 3′ UTR of the CFP-SKL cistron, there is a 24 × MS2 stem-loop encoding region.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a specific design feature of the reporter construct for RNA visualization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "bc27335f-879a-4ab6-8b4e-6ec37e969cf4",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C34",
+      "claim": "Individual mRNA in the cytosol appears as diffraction-limited puncta.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Individual mRNA in the cytosol appears as diffraction-limited puncta",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the microscopy experiments describing how single mRNA molecules appear.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "630917ef-84de-466e-983f-c9a77aea704b",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C35",
+      "claim": "The site of active transcription appears as a bright fluorescent spot in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the site of active transcription appears a bright fluorescent spot in the nucleus",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the microscopy experiments describing how active transcription sites appear.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "a6c1c03d-b649-499c-93ea-9bcb53384327",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C36",
+      "claim": "FISH allows very high signal to noise observation of mRNA in fixed cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The benefit of FISH is that it allows very high signal to noise observation of mRNA in fixed cells",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes an advantage of the FISH technique based on experimental observations and established methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "48be796e-9f80-4ff8-a3cc-87327e1a3cda",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C37",
+      "claim": "The advantage of the MS2 system is that one can directly observe dynamics in living cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "while the advantage of the MS2 system is that one can directly observe dynamics in living cells",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes an advantage of the MS2 system based on its capabilities demonstrated in this and previous studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "ff8cc104-d001-48b1-af9b-f66a764ad85d",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C38",
+      "claim": "Both FISH and MS2 approaches utilize the polymeric nature of mRNA to label single molecules with large numbers (>40) of fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both approaches utilize the polymeric nature of mRNA to label single molecules with large numbers (>40) of fluorophores",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the common principle underlying both visualization methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "94a22205-f619-4e54-8fa9-f0410cedfb63",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C39",
+      "claim": "Transcriptional bursting was observed at an active locus in a clonal cell line using single-molecule live-cell microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "First, we directly observed RNA synthesis at an active locus in a clonal cell line using single-molecule live-cell microscopy. Consistent with previous studies which directly observe transcriptional activity of single genes in eukaryotes we observed transcriptional bursting",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from live-cell imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "256880c1-2281-4ba7-9402-3457e763b9b6",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C40",
+      "claim": "The average on duration is 36 ± 6 min at 50 μM PA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The red lines are exponential fits to the experimental distribution with decay time of 36 ± 6 min and 35 ± 4 min in panels G and H, respectively (N = 40 cells). [PA] = 50 μM",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from the experimental data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e8298c25-d062-4a62-b1f9-3cc1d547b4b9",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C41",
+      "claim": "The average off duration is 35 ± 4 min at 50 μM PA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The red lines are exponential fits to the experimental distribution with decay time of 36 ± 6 min and 35 ± 4 min in panels G and H, respectively (N = 40 cells). [PA] = 50 μM",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from the experimental data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "6803593d-cb84-4d49-81ce-b674a52b1735",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C42",
+      "claim": "The kinetics of transcription depend strongly on transgene insertion site.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the kinetics of transcription depend strongly on transgene insertion",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an observation from the experiments and represents established knowledge about position effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "a5877bbe-f6b2-415d-8ea1-ccd55aa4c35c",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C43",
+      "claim": "Three different clones isolated from a population of lentiviral-infected cells showed different maximum mRNA levels but similar EC50 and Hill coefficients.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Total cellular reporter mRNA is plotted as a function of [PA] for three different clones isolated from a population of lentiviral-infected cells (clone 1, red; clone 2, green; clone 3, blue)... The fits are three-parameter Hill functions: A = 960 ± 60 mRNA/cell, 430 ± 50 mRNA/cell, 180 ± 10 mRNA/cell; maxh = 1.2 ± 0.2, 1.3 ± 0.3, 1.2 ± 0.2; EC50 = 8.0 ± 1.4 μM, 10 ± 3.2 μM, 9.1 ±1.5 μM, blue, green, red curves respectively.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the quantitative fitting parameters showing variation in A but consistency in h and EC50.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "f42847b7-30c8-486d-9130-48f6d6bcecb7",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C44",
+      "claim": "The Hill coefficient for the dose response is approximately 1.0-1.3 for all three clones.",
+      "claim_type": "EXPLICIT",
+      "source_text": "maxh = 1.2 ± 0.2, 1.3 ± 0.3, 1.2 ± 0.2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are quantitative measurements from fitting the dose-response curves.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "58856e33-824f-4e60-96d3-95a57152b816",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C45",
+      "claim": "The EC50 for ponasterone A is approximately 8-10 μM for all three clones.",
+      "claim_type": "EXPLICIT",
+      "source_text": "EC50 = 8.0 ± 1.4 μM, 10 ± 3.2 μM, 9.1 ±1.5 μM",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are quantitative measurements from fitting the dose-response curves.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "0de1781f-5178-407f-adce-7a1237e206a0",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C46",
+      "claim": "In the random telegraph model, the gene exists in an inactive state which is non-permissive to transcription or an active state from which transcripts are produced.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the random telegraph model (upper panel), the gene exists in an inactive state which is non-permissive to transcription or an active state from which transcripts are produced",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the theoretical framework of the random telegraph model used for analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "516a9933-d5ab-4956-8e1b-9d7d5b7d4fe6",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C47",
+      "claim": "The Random Telegraph model is a paradigm for stochastic transcription and quantitatively describes the distribution of RNA/cell in a variety of organisms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We used the 'Random Telegraph model', which is a paradigm for stochastic transcription and quantitatively describes the distribution of RNA/cell in a variety of organisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Peccoud and Ycart, 1995 and Larson et al., 2009, representing established theoretical framework.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e21804e5-ebe0-4ca4-8a3a-95df36a6a99c",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C48",
+      "claim": "The gene can be 'active' even when no nascent RNA is detected, owing partly to the stochastic initiation events within an active state and partly to the placement of the MS2 cassette in the middle of the gene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is important to note that the gene can be 'active' even when no nascent RNA is detected, owing partly to the stochastic initiation events within an active state (Figure 4C) and partly to the placement of the MS2 cassette in the middle of the gene",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This is an inference based on the stochastic nature of transcription and the experimental design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "00a1ac86-eafb-4052-ae27-7a1e5b5575a7",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C49",
+      "claim": "The biochemical determinant(s) of the active transcriptional state is unknown and is likely to vary between genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The biochemical determinant(s) of this active state is unknown and is likely to vary between genes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This acknowledges the current limitation in understanding and speculates about gene-to-gene variation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e1861936-4e1a-4417-8607-5b965cc04f8b",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C50",
+      "claim": "It is not possible at present to do a direct measurement of the active state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consequently, it is not possible at present to do a direct measurement of the active state.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects the current technical limitations in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "66251153-742e-4917-a96b-d253cd9ac4b0",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C51",
+      "claim": "The distribution of total cellular reporter mRNA reflects the dynamics of active-inactive switching.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the distribution of total cellular reporter mRNA reflects the dynamics of this active-inactive switching",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference based on the theoretical relationship between transcriptional dynamics and mRNA distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "78c6549a-8b18-4cf6-a2f4-04d0e04cd298",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C52",
+      "claim": "At low PA induction levels (3.12 μM), there is a large heterogeneity of cellular mRNA in the population with some cells containing dozens of mRNAs and others having none.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At low PA induction levels (3.12 μM, Figure 4D), there is a large heterogeneity of cellular mRNA in the population: some cells contain dozens of mRNAs and others have none.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the FISH experiments at low induction levels.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e6d16407-49f5-45eb-ab25-4317b638b0fc",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C53",
+      "claim": "Transcription sites are infrequent at low PA induction levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At low PA induction levels (3.12 μM, Figure 4D), there is a large heterogeneity of cellular mRNA in the population: some cells contain dozens of mRNAs and others have none. Transcription sites are infrequent.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the FISH experiments at low induction levels.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "11e1cab4-e0f2-4e81-a52c-98bc63140afd",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C54",
+      "claim": "At medium induction levels (12.5 μM), most cells contain mRNA, and many are actively transcribing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At medium induction levels (12.5 μM, Figure 4E), most cells contain mRNA, and many are actively transcribing.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the FISH experiments at medium induction levels.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "09c18cae-c948-47b0-bbe3-93b227af8826",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C55",
+      "claim": "At high levels of induction (50 μM), cells contain a high abundance of mRNA in the cytosol, and most cells show an active transcription site in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At high levels of induction (50 μM, Figure 4F), cells contain a high abundance of mRNA in the cytosol, and most cells show an active transcription site in the nucleus.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the FISH experiments at high induction levels.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "ca7e690c-15b1-46ba-b220-ace3a7dc2024",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C56",
+      "claim": "The data are consistent with a model where the only variable which varies with dose is the rate of activation (a), while the other parameters (b,c) are globally fit for the entire dose response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, these data are consistent with a model where the only variable which varies with dose is the rate of activation (a), while the other parameters (b,c) are globally fit for the entire dose response for a particular cell line (b/d = 1.5, c/d =340).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is drawn from fitting the experimental data to the random telegraph model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "09724588-9e1c-451e-8953-eb178dc246d7",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C57",
+      "claim": "When the same analysis is carried out on cell lines with different insertion sites, the dose-dependent activation rate (a) and the dose-independent inactivation rate (b) remain invariant, but the initiation rate (c) changes with the cell line.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When the same analysis is carried out on cell lines with different insertion sites (i.e., Figure 4A), the dose-dependent activation rate (a) and the dose-independent inactivation rate (b) remain invariant, but the initiation rate (c) changes with the cell line.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from comparing the model fits across different cell lines.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "f40685f8-9e3d-4c07-858d-12f7be674633",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C58",
+      "claim": "The absolute number of polymerases loaded during an active period does not depend on steroid level but rather some extrinsic factor such as local chromatin environment or abundance of some component of the core transcriptional machinery.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the absolute number of polymerases loaded during an active period does not depend on steroid level but rather some extrinsic factor such as local chromatin environment or abundance of some component of the core transcriptional machinery.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This conclusion is drawn from the data showing invariant initiation rates with dose, with speculation about the underlying mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "13de635d-dace-402e-bc18-bb6a31325bce",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C59",
+      "claim": "Episomal genes do not show frequency modulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is evident when comparing the episomal genes, which do not show frequency modulation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from experiments with transiently transfected plasmids.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "ac2de354-f846-419f-b0a5-772ccc26f644",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C60",
+      "claim": "Both fixed-cell and live-cell single-molecule measurements are consistent with a model where the steroid is a robust frequency modulator.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In summary, both fixed-cell and live-cell single-molecule measurements are consistent with a model where the steroid is a robust frequency modulator.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a summary conclusion drawn from multiple experimental approaches presented in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e8d8ce1d-7b68-4027-b745-6b2e83545b18",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C61",
+      "claim": "There is a growing body of evidence that the dynamics of the upstream activator itself may in fact carry biological information and modulate downstream expression levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Conversely, there is a growing body of evidence that the dynamics of the upstream activator itself may in fact carry biological information and modulate downstream expression levels",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citations and represents an emerging understanding in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "8599e1b0-f804-4a9b-8dac-a0b41d7b5a1f",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C62",
+      "claim": "At 100 μM of DMNB-PA, there was a fivefold reduction in protein levels, indicating that the caged ligand blocks the activity of the active, uncaged form in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At 100 μM of DMNB-PA, we observed a fivefold reduction in protein levels, indicating that the caged ligand blocks the activity of the active, uncaged form in vivo",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative observation from the competition experiment.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "83e45c9b-24a0-4dbb-939b-3e293829d228",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C63",
+      "claim": "When the DMNB-PonA and uncaged PA are present in equimolar amounts, the competition is alleviated, and the protein output from the reporter gene is close to the levels observed in the absence of the caged ligand.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When the DMNB-PonA and uncaged PA are present in equimolar amounts, the competition is alleviated, and the protein output from the reporter gene is close to the levels observed in the absence of the caged ligand.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the competition experiment showing dose-dependent antagonism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "3c165eff-e01d-4106-beb8-a96d672cdb2a",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C64",
+      "claim": "The caged compound has built-in protection against 'leakiness' and is capable of acting in a highly localized spatial manner when uncaged.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the caged compound has built-in protection against 'leakiness' and is capable of acting in a highly localized spatial manner when uncaged.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the antagonist properties of the caged compound.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "cff3c189-3326-465f-90cc-c917fa05b202",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C65",
+      "claim": "The balance between agonist/antagonist must be shifted past a threshold in order for gene activation to occur.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the caged compound has built-in protection against 'leakiness' and is capable of acting in a highly localized spatial manner when uncaged. The method of activation, therefore, has to be all or none: the balance between agonist/antagonist must be shifted past a threshold in order for gene activation to occur.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the mechanism based on the antagonist/agonist properties.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "c91b1c9c-f601-45e7-a219-13fb3dce805e",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C66",
+      "claim": "Only the central photolyzed cell displayed expression of the CFP protein construct, while the two non-photolyzed neighboring cells showed no evidence of CFP expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this example, only the central cell was photolyzed, and is the only cell that displays expression of the CFP protein construct. By contrast, the two non-photolyzed neighboring cells show no evidence of CFP expression.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the photoactivation experiment demonstrating spatial specificity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "a7534975-d00a-4349-948a-003cbcd0b962",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C67",
+      "claim": "The photolysis protocol resulted in an average 106 +/− 36 min between uncaging and the appearance of a transcription site which then persisted for 35 +/− 12 min.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The photolysis protocol above results in: 1) an average 106 +/− 36 min between uncaging and the appearance of a transcription site which then persisted for 35 +/− 12 min",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from the photoactivation experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "80273c24-1a5b-479a-9d29-28c7f6adedff",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C68",
+      "claim": "The photolysis protocol resulted in a 40% success rate for protein expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "2) 40% success rate for protein expression",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement of the efficiency of the photoactivation protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "9f958ee3-fec0-450d-b597-c7d3080d85af",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C69",
+      "claim": "70% of cells that activated showed a single on-state, with the remainder showing either no detectable on-period (13%) or multiple periods (17%).",
+      "claim_type": "EXPLICIT",
+      "source_text": "3) a single on-state in 70% of those cells which activated, with the remainder showing either no detectable on-period (13%) or multiple periods (17%) (N = 30)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative analysis of the transcriptional response patterns after photoactivation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "f1f85941-4ae7-46cb-ada7-c7249703ccec",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C70",
+      "claim": "The photoactivation data suggest that a single pulse of ligand results in a single active period of transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In sum, the photoactivation data suggest that a single pulse of ligand results in a single active period of transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the photoactivation experiments showing predominantly single bursts.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e6382057-3630-425c-9035-8646cec2058b",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C71",
+      "claim": "Cell division was observed after uncaging, which is a measure of viability after UV photolysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, we also observe cell division after uncaging, which is a measure of viability after UV photolysis",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation demonstrating that the photoactivation procedure does not kill the cells.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d1235b4f-a6e1-49d5-86fb-e37b6e0f4889",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C72",
+      "claim": "Steroid receptors control transcription through frequency modulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We demonstrated how steroid receptors, which are present in all metazoans, can control transcription through frequency modulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a primary conclusion of the study based on the experimental data and modeling.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "216d2f96-e600-4ea7-b476-62621fd5130d",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C73",
+      "claim": "Digital frequency modulation of transcription in single cells manifests as an analog dose response in cellular mRNA and protein in a population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This digital frequency modulation of transcription in single cells manifests as an analog dose response in cellular mRNA and protein in a population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a key finding connecting single-cell and population-level observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "38b2e767-2ae7-4f1b-929b-7fb2bdf16343",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C74",
+      "claim": "The time needed for the gene to respond to steroid receptor activation is unexpectedly long (2 hr).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, the ability to activate the transcription factor (steroid receptor) using light provided a precise temporal start to measure the time needed for the gene to respond, an unexpectedly long time (2 hr).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from the photoactivation experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "7da8e862-1004-4841-9095-084bcefcdea4",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C75",
+      "claim": "One dose of a transcription factor yields one cycle of transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One dose of a transcription factor yields one cycle of transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the photoactivation experiments showing single bursts in response to single pulses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e6a9e3ac-6d64-4c01-9cf6-e53341078c5d",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C76",
+      "claim": "A stochastic model of kinetic rates allowed the breakdown of the steroid transcriptional response into distinct processes, which could be measured independently in the microscope.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A stochastic model of kinetic rates allowed us to break down the steroid transcriptional response into distinct processes, which could be measured independently in the microscope.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This describes the analytical approach and its capability to separate different kinetic processes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "42c1f5e4-265a-4780-96d3-f7ca2f5bc66c",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C77",
+      "claim": "For this ecdysteroid-responsive reporter gene in mammalian cells, the time between on-states decreased at higher doses of PA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For this ecdysteroid-responsive reporter gene in mammalian cells, the time between on-states decreased at higher doses of PA.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the dose-dependent live-cell imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "7cad292e-1eae-4710-96b8-32027c45594c",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C78",
+      "claim": "The duration of the active state and the transcription rate from the active state were invariant with steroid dose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The duration of the active state and the transcription rate from the active state were invariant.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a key finding from the analysis of transcriptional bursting at different doses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e0fbac24-f03a-45d8-b6a0-d11215e0e795",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C79",
+      "claim": "The 'on' times and 'off' times were both exponentially distributed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the 'on' times and 'off' times were both exponentially distributed (Figure 2G,H)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical finding from the analysis of burst durations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d22aade9-973b-475a-8eae-9c54ab923aeb",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C80",
+      "claim": "Exponentially distributed on and off times suggest that both processes were determined by a single rate-limiting step.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the 'on' times and 'off' times were both exponentially distributed (Figure 2G,H), which suggested that both processes were determined by a single rate-limiting step.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference based on the statistical properties and kinetic theory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "91f6f02c-7970-4116-907b-ec75ba0ef2ff",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C81",
+      "claim": "The simplest biochemical model to explain the exponential distributions is that the state of the gene is determined entirely by the on rate and off rate of the active ligand-receptor complex from the response element.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The simplest biochemical model to explain this result is that the state of the gene is determined entirely by the on rate and off rate of the active ligand-receptor complex from the response element.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a mechanistic interpretation of the kinetic data based on simplicity principles.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "df515ccf-4859-438e-8e57-0573a33cbc3a",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C82",
+      "claim": "The actual transcription rate (c) from the active state is determined by factors other than the response element.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The corollary to this model is that the actual transcription rate (c) from the active state is determined by factors other than the response element.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference from the observation that initiation rate varies with insertion site but not with dose.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d2d16f16-4576-4966-b869-aa70df96a455",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C83",
+      "claim": "The ability of trans-acting factors to access cis-acting sequences in the core promoter may determine the firing rate from the active state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example the ability of trans-acting factors to access cis-acting sequences in the core promoter may determine the firing rate from the active state.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about the mechanism determining firing rate.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "16912a2b-3153-43d8-8385-5fb7878a4f44",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C84",
+      "claim": "The dynamic frequency modulation by the steroid was invariant with the insertion site, but the transcription rate varied over fivefold with insertion site.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement with this supposition, the dynamic frequency modulation by the steroid was invariant with the insertion site, but the transcription rate varied over fivefold with insertion site.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative observation from comparing different clonal cell lines.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "f2e5d538-b7b0-4192-a40b-f9c0014caa81",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C85",
+      "claim": "Genetic regulation can be conceptualized as the superposition of individual parts, with distal enhancers and response elements controlling frequency of activation and proximal promoters determining the firing rate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this way, genetic regulation can be conceptualized as the superposition of individual parts, with distal enhancers and response elements controlling frequency of activation and proximal promoters determining the firing rate.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a conceptual model proposed based on the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d88dcc30-29e0-4e11-a8b9-c67de7280c86",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C86",
+      "claim": "Fluorescence photobleaching recovery measurements on tandem gene arrays in single cells record dwell times on the order of seconds to minutes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Fluorescence photobleaching recovery measurements on tandem gene arrays in single cells record dwell times on the order of seconds to minutes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Darzacq et al., 2009 and represents established observations from FRAP studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "9f5f60ce-3ba4-413b-9eaa-030ad9c8aba9",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C87",
+      "claim": "The duration of the active transcriptional state in this study is on the order of an hour.",
+      "claim_type": "EXPLICIT",
+      "source_text": "while the duration of the active transcriptional state in this study is on the order of an hour",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from the live-cell imaging experiments in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "bb09a57b-0fa4-499a-a364-eebb281d884e",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C88",
+      "claim": "One possibility is that SR binding is actually much longer, and FRAP data on arrays is dominated by non-specific interactions and is not capable of detecting the small percentage of receptors which might be stably bound.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One possibility is that SR binding is actually much longer, and FRAP data on arrays is dominated by non-specific interactions and is not capable of detecting the small percentage of receptors which might be stably bound.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis to reconcile the discrepancy between FRAP and transcriptional burst timescales.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "23ed3883-c0ab-4ebb-bb9c-2a778ec6bd27",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C89",
+      "claim": "Another possibility is that SR binding is in fact short-lived but initiates a cascade of events involved in activation of the gene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another possibility is that SR binding is in fact short-lived but initiates a cascade of events involved in activation of the gene",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis supported by citations to Herschlag and Johnson, 1993; Hager et al., 2006; Metivier et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "9a271fe5-a6fe-42f4-af54-42d59aa97428",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C90",
+      "claim": "There was a delay between photoactivation of the ligand and the appearance of the first transcription sites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In support of this latter view, we observe that there was a delay between photoactivation of the ligand and the appearance of the first transcription sites",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the photoactivation experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "42cd60c6-0190-4d15-ada7-9f92859d2f93",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C91",
+      "claim": "The delay between photoactivation and transcription site appearance was comparable in size to the average duration of the off period.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This delay was comparable in size to the average duration of the off period.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative comparison between two measured timescales.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "69c15d7b-41b1-49f7-9cb6-642cda2ca599",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C92",
+      "claim": "A non-chromatinized or weakly chromatinized template showed extremely rapid induction (<20 min).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, a non-chromatinized or weakly chromatinized template showed extremely rapid induction (<20 min).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from experiments with episomal plasmids.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "345b8d9c-1007-4f7e-acd3-dd5a6378f0ed",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C93",
+      "claim": "It is plausible that chromatin remodeling is inefficient at this reporter gene, possibly because the promoter lacks cis-acting elements which might aid in a more rapid chromatin remodeling response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is plausible that chromatin remodeling is inefficient at this reporter gene, possibly because the promoter lacks cis-acting elements which might aid in a more rapid chromatin remodeling response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation for the observed delay in transcriptional response.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "67539257-7f6e-405b-a32f-4b88e584b6a9",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C94",
+      "claim": "These results support the notion that opening of chromatin interposes a delay between the docking of active ligand-receptor complex on the response element and the eventual synthesis of pre-mRNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, these results support the notion that opening of chromatin interposes a delay between the docking of active ligand-receptor complex on the response element and the eventual synthesis of pre-mRNA",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This conclusion is drawn from the experimental observations and supported by citation to Janicki et al., 2004.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "9b9293cb-b46f-487e-9d12-f66411153e35",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C95",
+      "claim": "The synergy between DNA binding factors and chromatin modifying proteins is essential for control of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The synergy between DNA binding factors and chromatin modifying proteins is essential for control of gene expression",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citation to Segal and Widom, 2009 and represents established knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "58613d26-fabd-41c9-907d-83a593a05972",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C96",
+      "claim": "The role of chromatin in a bimodal model of gene regulation has been proposed previously.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the role of chromatin in a bimodal model of gene regulation has been proposed previously",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Archer et al., 1992 and Di Croce et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "823c5d7e-9fab-45f0-a74a-ee112d633841",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C97",
+      "claim": "Recent evidence points strongly toward chromatin as directly controlling the duration of the on and off states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, recent evidence points strongly toward chromatin as directly controlling the duration of the on and off states.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by multiple citations and represents emerging understanding in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "4f8bbe74-c210-47ce-8cb3-c2f124913c52",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C98",
+      "claim": "Histone methylation has been implicated in the transmission of transcriptional frequency between mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Histone methylation has been implicated in the transmission of transcriptional frequency between mother and daughter cells",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation to Muramoto et al., 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d99c0da3-b8c6-4317-a788-b0dfed2ead46",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C99",
+      "claim": "Manipulation of histone acetylation changes transcriptional cycle timing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Manipulation of histone acetylation changes transcriptional cycle timing",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Harper et al., 2011 and Suter et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "a9abf319-c123-4e60-b6d9-99b1be913cff",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C100",
+      "claim": "Histone deacetylases and nucleosome-remodeling complexes are cyclically recruited during transcriptional activation of an estrogen-responsive gene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Histone deacetylases and nucleosome-remodeling complexes are cyclically recruited during transcriptional activation of an estrogen-responsive gene",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation to Métivier et al., 2003.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "82f88727-390c-4c33-8219-1f2db892c1ee",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C101",
+      "claim": "FRAP studies on histones and genome-wide pulse-chase measurements on histones suggest a timescale of turnover (∼hour) that is more consistent with the time scales of transcriptional activity observed in this study.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, FRAP studies on histones and genome-wide pulse-chase measurements on histones suggest a timescale of turnover (∼hour) that is more consistent with the time scales of transcriptional activity observed in this study",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Kimura and Cook, 2001; Dion et al., 2007; Deal et al., 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "9514bfec-9b78-42e5-8028-5513c1d3a853",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C102",
+      "claim": "The bimodal 'telegraph' model is likely a simplification of the number of biological steps involved in gene activation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The bimodal 'telegraph' model is likely a simplification of the number of biological steps involved in gene activation",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This acknowledges the limitations of the model while recognizing its utility.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "09d6d503-6ea3-47eb-ae65-5ef797af632f",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C103",
+      "claim": "The quantitative agreement between the telegraph model and the data suggests that at steady state, the requirements for re-activating a gene that has cycled off may depend on only a few rate-limiting steps.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but the quantitative agreement between this model and our data suggests that at steady state, the requirements for re-activating a gene that has cycled off may depend on only a few rate-limiting steps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the successful fitting of the simple model to the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "2a43f74a-f534-4134-b59a-73c26c89010d",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C104",
+      "claim": "The chimeric ecdysone receptor was introduced into U2-OS cells by nucleofection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The chimeric ecdysone receptor (pERV3, Stratagene, Agilent, Santa Clara, CA) was introduced into U2-OS cells by nucleofection",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental method used to create the cell lines.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "0f3e8dd9-fdf0-4242-81ec-d844fe859f8a",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C105",
+      "claim": "Stable insertions were selected by screening for G418 resistance followed by isolation of single colonies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "stable insertions were selected by screening for G418 resistance followed by isolation of single colonies",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the selection method used in the experimental procedure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "b91ae5ef-51fa-4d41-8ce2-7e1b0e604ec7",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C106",
+      "claim": "The reporter gene was cloned into the pHAGE lentiviral vector backbone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The reporter gene (Figure 1A) was cloned into the pHAGE lentiviral vector backbone described elsewhere",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the cloning strategy with citation to Mostoslavsky et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "11da1a94-0dbf-4818-af8d-f3455c4ba617",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C107",
+      "claim": "Lentivirus infection resulted in infection efficiencies of ∼90%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The entire collected supernatant was used to infect one dish of 5000 cells, resulting in infection efficiencies of ∼90%.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement of the infection efficiency achieved.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "2469b313-af61-4646-81d0-fb25a45e38fa",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C108",
+      "claim": "The MS2 coat protein is driven off the human ubiquitin C promoter, contains a nuclear localization sequence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The coat protein is driven off the human ubiquitin C promoter, contains a nuclear localization sequence",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the design of the MS2 coat protein construct with citation to Fusco et al., 2003.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e7be3247-5a5c-4740-95fe-06d5692b91f8",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C109",
+      "claim": "Reporter RNA was visualized by hybridization of a 20-mer ssDNA oligo labeled with Cy3 at both ends to the MS2 repeats.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Reporter RNA was visualized by hybridization of a 20-mer ssDNA oligo labeled with Cy3 at both ends to the MS2 repeats.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the FISH probe design used in the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "518bd22c-078f-4ab1-8716-90558cbe1781",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C110",
+      "claim": "Each 20-mer FISH probe contains two dye molecules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, each 20-mer contains two dye molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a specific feature of the FISH probe design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "040c0f6d-e486-4ff2-a83f-32a09b62e4ed",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C111",
+      "claim": "The purity of ponasterone A was determined to be ∼75% by analytical HPLC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The purity of ponasterone A was determined to be ∼75% by analytical HPLC.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quality control measurement of the reagent used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "2a02f69d-2602-4902-bb29-927f3b74e3d1",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "claim_id": "C112",
+      "claim": "The purity of DMNB-ponasterone A was determined to be >99% by analytical HPLC.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The purity of the product was determined to be >99% by analytical HPLC",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quality control measurement of the synthesized caged compound.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The dual-modality reporter system combining MS2 live-cell imaging and FISH is well-designed and thoroughly documented. The system successfully visualizes nascent transcription, cytoplasmic mRNA, and protein products with appropriate controls. The lentiviral integration approach and clonal selection provide stable cell lines for quantitative analysis.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "377b3d41-945f-4aeb-9e8e-0a593ad89806",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Direct observation of transcriptional bursting is convincingly demonstrated with quantified on/off durations (~36 min each at 50 μM PA). The exponential distribution of burst times supports single rate-limiting steps. Hidden Markov Model analysis provides rigorous statistical framework, though sample size (N=40) is modest for some dose conditions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Frequency modulation is strongly supported by converging evidence: dose-dependent changes in burst frequency with invariant duration/rate, consistent random telegraph model fits across clones, and insertion site-dependent initiation rates. The data convincingly demonstrate that steroid concentration controls activation frequency (parameter a) while burst duration (b) and transcription rate (c) remain dose-independent.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "FISH data across dose ranges clearly show heterogeneous single-cell mRNA distributions that aggregate to smooth Hill functions with h~1.0-1.3 and consistent EC50 values (8-10 μM). The progression from sparse, heterogeneous expression at low doses to uniform high expression demonstrates how digital single-cell behavior produces analog population responses.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "71069db1-811c-4b45-bc96-e218b3c39016",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The caged PA is well-characterized with >99% purity and demonstrates clear antagonist properties (5-fold reduction at 100 μM) that are alleviated at equimolar agonist:antagonist ratios. The dual agonist/antagonist property provides spatial control and protection against leakiness. Chemical synthesis and characterization are thoroughly documented.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "258e0c78-20f8-4b79-a413-d089faa9ebe4",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Photoactivation experiments show spatial specificity and ~2 hour delay to transcription, with 70% of activated cells showing single bursts. However, only 40% overall success rate and N=30 cells limit statistical power. The claim that 'one dose yields one cycle' is supported by the majority of cells, but 30% show either no detectable burst or multiple bursts, suggesting additional complexity or experimental variability that is not fully explained.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "bf057315-5993-4308-82bd-fbb6067b1004",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Comparison across clonal cell lines shows that insertion site affects maximum transcription rate (varying >5-fold) but not frequency modulation parameters, supporting the conclusion that chromatin context determines initiation rate (c) independently of steroid-controlled frequency (a, b). The rapid induction of episomal genes (<20 min) vs. integrated genes (~2 hr) provides strong evidence for chromatin remodeling as a rate-limiting step.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The random telegraph model successfully fits mRNA distributions across multiple doses with globally consistent parameters (b/d=1.5, c/d=340) while only varying activation rate (a) with dose. The model's simplification to two states is acknowledged, and the quantitative agreement suggests that steady-state gene reactivation depends on few rate-limiting steps, though the model may not fully capture transient dynamics during photoactivation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d86af56d-6bf2-4465-98a4-fa9963b29aee",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The discrepancy between FRAP-measured SR dwell times (seconds-minutes) and transcriptional burst durations (hour) is noted but not resolved. Two speculative hypotheses are proposed: (1) FRAP measures non-specific binding, or (2) short SR binding initiates longer chromatin remodeling cascades. The ~2 hour delay in photoactivation supports chromatin involvement, but direct mechanistic evidence is lacking. This remains an important unresolved question requiring additional experiments.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "231d46f7-5988-47c2-974e-5b991c1da4a7",
+      "content_id": "57f6b93b-bf9a-4cf3-8720-b0cb11a25512",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The role of chromatin in controlling transcriptional burst timing is well-supported by citations to prior work showing histone modification effects on burst frequency and duration. The timescale of histone turnover (~hour) from FRAP and pulse-chase studies is consistent with observed burst durations. While the current study does not directly manipulate chromatin, the cited evidence and observed chromatin-dependent delays provide strong support for chromatin's regulatory role.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "d4faad71-8a43-482e-a47d-757c5f1a8b16",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers acknowledged the technical novelty but questioned the conceptual novelty, stating 'in spite of the technical novelty the main conclusions of this work mostly confirmed previous observations indicating that the on-off states are digital in nature.' They requested clarification of 'the novelty of their findings in the context of prior knowledge,' suggesting uncertainty about whether the frequency modulation finding represents a significant advance beyond prior work showing digital on-off behavior.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "5290f657-4df7-4f49-bb7c-b0a43aa28f93",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers requested critical missing baseline data, stating 'It is necessary to show the data with 0 micromolar PA. This is the baseline control' for Figures 2I and 2J. They also asked whether 'analyses, such as those in Figure 2E–J, were carried out for each clonal cell line to confirm for each the dose-dependent off-time and dose-independent on-time,' indicating uncertainty about whether the dose-independence of on-times was confirmed across all cell lines.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "3dbc987f-991f-4459-88d5-fb5de54565ec",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers questioned the interpretation of clonal variation data, asking 'Were analyses, such as those in Figure 2E–J, carried out for each clonal cell line to confirm for each the dose-dependent off-time and dose-independent on-time?' and noting 'It is not apparent if Figure 2 shows data from one clonal cell line or the averages of all three clonal lines.' This indicates uncertainty about whether the claimed invariance of activation/inactivation rates across clones was properly validated.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "3199a3df-2e1a-40b5-b047-294bb32393c6",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers identified confusion in the Random Telegraph model presentation, asking 'In Figure 4C, is the x-axis equal to time? If so, wouldn't (a) and (b) be times rather than rates? Also, would the fraction of time in the active state be equal to (b)/(b)+(a)?' They requested clarification of 'the formulas as well as the use of the terms \"rate\" vs \"time\" in this section,' indicating uncertainty about the model's mathematical formulation and interpretation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers expressed concern about the long delay before transcription, stating 'It is unclear why the first transcription sites are only visible several hours after induction. Opening of chromatin of a single copy gene should not impose such a large delay between docking of the active ligand-receptor complex and subsequent RNA synthesis.' They questioned whether this reflects 'the complexity of the reporter system' and asked 'How well does this reflect the induction of endogenous steroid regulated genes? This can be easily tested by in situ hybridization,' indicating uncertainty about the biological relevance of the observed delay.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "fd8b7ce8-fd0d-484e-9ace-6c0a18a0e44e",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers questioned the mechanism of caged ligand function, asking 'It appears that the authors presume that the PA that is released upon UV treatment exists only transiently because it becomes blocked by an excess of caged PA. Is this what the authors mean to suggest? If so, can they prove this point?' This indicates uncertainty about whether the antagonist properties of the caged compound adequately explain the transient activation observed.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "28139fb2-07e0-4e54-8ca7-b7a006faa55c",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers requested additional statistical analysis of the photoactivation data, asking 'Were there multiple on-periods in the other 30% of activated cells? Authors should show statistical analyses of the probabilities of single or multiple cycles occurring from a single transient hormone dose. Additionally the average, maximum, and minimum on-periods should be calculated and presented for this experiment and compared to steady state hormone dosing assays.' This indicates the evidence for 'one dose yields one cycle' was considered incomplete.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "94d975c0-8710-4ff1-8c55-ee8822b5851d",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raised concerns about cell health and experimental artifacts, noting 'The cells in Figures 3 and 6 look sick. In particular, the nuclear blebbing and irregularly shaped nuclei are indicative of apoptosis. This needs to be examined carefully as it could alter the interpretation of the data.' They also required DNA damage controls: 'Exposing cells, and in particular nuclei, to 349nm light can result in DNA damage. Labeling with γ-H2A.X must be done +/- uncaging to be sure that the observed results are not influenced by DNA damage.' These concerns cast uncertainty on whether the observed transcriptional dynamics reflect normal cellular processes.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "afcc1a86-048a-48ce-b5a4-7cf435aeb8d4",
+      "content_id": "cdc54214-0ead-453a-89f7-1d255a847561",
+      "result_id": "R9",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers asked for confirmation of single transcription sites, requesting 'Can the authors confirm that there is only one transcription site per cell? Is this single transcription site stably maintained through multiple generations?' This indicates uncertainty about whether the observed fluorescent spots truly represent single-copy gene transcription sites as claimed.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d401e80f-5a3c-4230-aaba-9755e7bfcfb4",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "0aa47c1b-33b0-4376-ac95-e39c21bf5938",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "06d52eff-8e85-4589-93e6-24ff23a33f46",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "274c620e-3d23-4bc4-b1e0-7b069bd9080c",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "804779bc-332f-414a-aa0a-ed057e0517c5",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "cc1a6ddd-e378-4816-adf0-97d7e0ba1732",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "14b7e254-f5fc-4ceb-8737-ab28aa2f0aea",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "bc27335f-879a-4ab6-8b4e-6ec37e969cf4",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "630917ef-84de-466e-983f-c9a77aea704b",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "a6c1c03d-b649-499c-93ea-9bcb53384327",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "48be796e-9f80-4ff8-a3cc-87327e1a3cda",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "ff8cc104-d001-48b1-af9b-f66a764ad85d",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "2a43f74a-f534-4134-b59a-73c26c89010d",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "0f3e8dd9-fdf0-4242-81ec-d844fe859f8a",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "b91ae5ef-51fa-4d41-8ce2-7e1b0e604ec7",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "11da1a94-0dbf-4818-af8d-f3455c4ba617",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "2469b313-af61-4646-81d0-fb25a45e38fa",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "e7be3247-5a5c-4740-95fe-06d5692b91f8",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "518bd22c-078f-4ab1-8716-90558cbe1781",
+      "result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8"
+    },
+    {
+      "claim_id": "94a22205-f619-4e54-8fa9-f0410cedfb63",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "256880c1-2281-4ba7-9402-3457e763b9b6",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "e8298c25-d062-4a62-b1f9-3cc1d547b4b9",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "42c1f5e4-265a-4780-96d3-f7ca2f5bc66c",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "7cad292e-1eae-4710-96b8-32027c45594c",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "e0fbac24-f03a-45d8-b6a0-d11215e0e795",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "d22aade9-973b-475a-8eae-9c54ab923aeb",
+      "result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806"
+    },
+    {
+      "claim_id": "d99a090d-df5a-4a8e-922f-6533ae2732dd",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "8c72a76d-b4e0-4da6-b70e-cf82a9e9cae1",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "ca7e690c-15b1-46ba-b220-ace3a7dc2024",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "09724588-9e1c-451e-8953-eb178dc246d7",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "f40685f8-9e3d-4c07-858d-12f7be674633",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "ac2de354-f846-419f-b0a5-772ccc26f644",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "d1235b4f-a6e1-49d5-86fb-e37b6e0f4889",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "42c1f5e4-265a-4780-96d3-f7ca2f5bc66c",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "7cad292e-1eae-4710-96b8-32027c45594c",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "16912a2b-3153-43d8-8385-5fb7878a4f44",
+      "result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e"
+    },
+    {
+      "claim_id": "11fd31c9-3e37-4cbb-99fb-f30900003f14",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "a5877bbe-f6b2-415d-8ea1-ccd55aa4c35c",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "f42847b7-30c8-486d-9130-48f6d6bcecb7",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "58856e33-824f-4e60-96d3-95a57152b816",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "78c6549a-8b18-4cf6-a2f4-04d0e04cd298",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "e6d16407-49f5-45eb-ab25-4317b638b0fc",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "11e1cab4-e0f2-4e81-a52c-98bc63140afd",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "09c18cae-c948-47b0-bbe3-93b227af8826",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "216d2f96-e600-4ea7-b476-62621fd5130d",
+      "result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6"
+    },
+    {
+      "claim_id": "45157d7b-0eb5-49a2-9d54-cff56799f839",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "8599e1b0-f804-4a9b-8dac-a0b41d7b5a1f",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "83e45c9b-24a0-4dbb-939b-3e293829d228",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "3c165eff-e01d-4106-beb8-a96d672cdb2a",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "cff3c189-3326-465f-90cc-c917fa05b202",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "040c0f6d-e486-4ff2-a83f-32a09b62e4ed",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "2a02f69d-2602-4902-bb29-927f3b74e3d1",
+      "result_id": "71069db1-811c-4b45-bc96-e218b3c39016"
+    },
+    {
+      "claim_id": "4d7861d9-fd33-46a7-9ac1-a8608476d159",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "c91b1c9c-f601-45e7-a219-13fb3dce805e",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "a7534975-d00a-4349-948a-003cbcd0b962",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "80273c24-1a5b-479a-9d29-28c7f6adedff",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "9f958ee3-fec0-450d-b597-c7d3080d85af",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "f1f85941-4ae7-46cb-ada7-c7249703ccec",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "e6382057-3630-425c-9035-8646cec2058b",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "38b2e767-2ae7-4f1b-929b-7fb2bdf16343",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "7da8e862-1004-4841-9095-084bcefcdea4",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "9a271fe5-a6fe-42f4-af54-42d59aa97428",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "42cd60c6-0190-4d15-ada7-9f92859d2f93",
+      "result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4"
+    },
+    {
+      "claim_id": "6803593d-cb84-4d49-81ce-b674a52b1735",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "09724588-9e1c-451e-8953-eb178dc246d7",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "f40685f8-9e3d-4c07-858d-12f7be674633",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "13de635d-dace-402e-bc18-bb6a31325bce",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "df515ccf-4859-438e-8e57-0573a33cbc3a",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "16912a2b-3153-43d8-8385-5fb7878a4f44",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "69c15d7b-41b1-49f7-9cb6-642cda2ca599",
+      "result_id": "bf057315-5993-4308-82bd-fbb6067b1004"
+    },
+    {
+      "claim_id": "0de1781f-5178-407f-adce-7a1237e206a0",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "516a9933-d5ab-4956-8e1b-9d7d5b7d4fe6",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "e21804e5-ebe0-4ca4-8a3a-95df36a6a99c",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "66251153-742e-4917-a96b-d253cd9ac4b0",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "ca7e690c-15b1-46ba-b220-ace3a7dc2024",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "e6a9e3ac-6d64-4c01-9cf6-e53341078c5d",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "9514bfec-9b78-42e5-8028-5513c1d3a853",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "09d6d503-6ea3-47eb-ae65-5ef797af632f",
+      "result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3"
+    },
+    {
+      "claim_id": "d88dcc30-29e0-4e11-a8b9-c67de7280c86",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "9f5f60ce-3ba4-413b-9eaa-030ad9c8aba9",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "bb09a57b-0fa4-499a-a364-eebb281d884e",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "23ed3883-c0ab-4ebb-bb9c-2a778ec6bd27",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "9a271fe5-a6fe-42f4-af54-42d59aa97428",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "42cd60c6-0190-4d15-ada7-9f92859d2f93",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "345b8d9c-1007-4f7e-acd3-dd5a6378f0ed",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "67539257-7f6e-405b-a32f-4b88e584b6a9",
+      "result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee"
+    },
+    {
+      "claim_id": "9b9293cb-b46f-487e-9d12-f66411153e35",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "58613d26-fabd-41c9-907d-83a593a05972",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "823c5d7e-9fab-45f0-a74a-ee112d633841",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "4f8bbe74-c210-47ce-8cb3-c2f124913c52",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "d99c0da3-b8c6-4317-a788-b0dfed2ead46",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "a9abf319-c123-4e60-b6d9-99b1be913cff",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "82f88727-390c-4c33-8219-1f2db892c1ee",
+      "result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7"
+    },
+    {
+      "claim_id": "d99a090d-df5a-4a8e-922f-6533ae2732dd",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "11fd31c9-3e37-4cbb-99fb-f30900003f14",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "8237cdb2-a4ff-48d8-aed2-7ff8ff009690",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "8c72a76d-b4e0-4da6-b70e-cf82a9e9cae1",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "ac2de354-f846-419f-b0a5-772ccc26f644",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "d1235b4f-a6e1-49d5-86fb-e37b6e0f4889",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "216d2f96-e600-4ea7-b476-62621fd5130d",
+      "result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16"
+    },
+    {
+      "claim_id": "256880c1-2281-4ba7-9402-3457e763b9b6",
+      "result_id": "5290f657-4df7-4f49-bb7c-b0a43aa28f93"
+    },
+    {
+      "claim_id": "e8298c25-d062-4a62-b1f9-3cc1d547b4b9",
+      "result_id": "5290f657-4df7-4f49-bb7c-b0a43aa28f93"
+    },
+    {
+      "claim_id": "42c1f5e4-265a-4780-96d3-f7ca2f5bc66c",
+      "result_id": "5290f657-4df7-4f49-bb7c-b0a43aa28f93"
+    },
+    {
+      "claim_id": "7cad292e-1eae-4710-96b8-32027c45594c",
+      "result_id": "5290f657-4df7-4f49-bb7c-b0a43aa28f93"
+    },
+    {
+      "claim_id": "a5877bbe-f6b2-415d-8ea1-ccd55aa4c35c",
+      "result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec"
+    },
+    {
+      "claim_id": "09724588-9e1c-451e-8953-eb178dc246d7",
+      "result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec"
+    },
+    {
+      "claim_id": "f40685f8-9e3d-4c07-858d-12f7be674633",
+      "result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec"
+    },
+    {
+      "claim_id": "df515ccf-4859-438e-8e57-0573a33cbc3a",
+      "result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec"
+    },
+    {
+      "claim_id": "16912a2b-3153-43d8-8385-5fb7878a4f44",
+      "result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec"
+    },
+    {
+      "claim_id": "0de1781f-5178-407f-adce-7a1237e206a0",
+      "result_id": "3199a3df-2e1a-40b5-b047-294bb32393c6"
+    },
+    {
+      "claim_id": "516a9933-d5ab-4956-8e1b-9d7d5b7d4fe6",
+      "result_id": "3199a3df-2e1a-40b5-b047-294bb32393c6"
+    },
+    {
+      "claim_id": "ca7e690c-15b1-46ba-b220-ace3a7dc2024",
+      "result_id": "3199a3df-2e1a-40b5-b047-294bb32393c6"
+    },
+    {
+      "claim_id": "4d7861d9-fd33-46a7-9ac1-a8608476d159",
+      "result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7"
+    },
+    {
+      "claim_id": "a7534975-d00a-4349-948a-003cbcd0b962",
+      "result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7"
+    },
+    {
+      "claim_id": "38b2e767-2ae7-4f1b-929b-7fb2bdf16343",
+      "result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7"
+    },
+    {
+      "claim_id": "9a271fe5-a6fe-42f4-af54-42d59aa97428",
+      "result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7"
+    },
+    {
+      "claim_id": "42cd60c6-0190-4d15-ada7-9f92859d2f93",
+      "result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7"
+    },
+    {
+      "claim_id": "67539257-7f6e-405b-a32f-4b88e584b6a9",
+      "result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7"
+    },
+    {
+      "claim_id": "8599e1b0-f804-4a9b-8dac-a0b41d7b5a1f",
+      "result_id": "fd8b7ce8-fd0d-484e-9ace-6c0a18a0e44e"
+    },
+    {
+      "claim_id": "83e45c9b-24a0-4dbb-939b-3e293829d228",
+      "result_id": "fd8b7ce8-fd0d-484e-9ace-6c0a18a0e44e"
+    },
+    {
+      "claim_id": "3c165eff-e01d-4106-beb8-a96d672cdb2a",
+      "result_id": "fd8b7ce8-fd0d-484e-9ace-6c0a18a0e44e"
+    },
+    {
+      "claim_id": "cff3c189-3326-465f-90cc-c917fa05b202",
+      "result_id": "fd8b7ce8-fd0d-484e-9ace-6c0a18a0e44e"
+    },
+    {
+      "claim_id": "9f958ee3-fec0-450d-b597-c7d3080d85af",
+      "result_id": "28139fb2-07e0-4e54-8ca7-b7a006faa55c"
+    },
+    {
+      "claim_id": "f1f85941-4ae7-46cb-ada7-c7249703ccec",
+      "result_id": "28139fb2-07e0-4e54-8ca7-b7a006faa55c"
+    },
+    {
+      "claim_id": "7da8e862-1004-4841-9095-084bcefcdea4",
+      "result_id": "28139fb2-07e0-4e54-8ca7-b7a006faa55c"
+    },
+    {
+      "claim_id": "94a22205-f619-4e54-8fa9-f0410cedfb63",
+      "result_id": "94d975c0-8710-4ff1-8c55-ee8822b5851d"
+    },
+    {
+      "claim_id": "c91b1c9c-f601-45e7-a219-13fb3dce805e",
+      "result_id": "94d975c0-8710-4ff1-8c55-ee8822b5851d"
+    },
+    {
+      "claim_id": "e6382057-3630-425c-9035-8646cec2058b",
+      "result_id": "94d975c0-8710-4ff1-8c55-ee8822b5851d"
+    },
+    {
+      "claim_id": "630917ef-84de-466e-983f-c9a77aea704b",
+      "result_id": "afcc1a86-048a-48ce-b5a4-7cf435aeb8d4"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "46def91b-1872-4a34-b5fd-512c135b308e",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "377b3d41-945f-4aeb-9e8e-0a593ad89806",
+      "peer_result_id": "5290f657-4df7-4f49-bb7c-b0a43aa28f93",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both evaluate transcriptional bursting observations (C40, C41, C77, C78). LLM finds evidence convincing with quantified on/off durations and HMM analysis. Peer reviewers question missing baseline controls (0 μM PA) and whether dose-independence was confirmed across all clonal lines, indicating insufficient validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "e9e5f942-ede1-49b2-966c-5d7373eb8984",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "71069db1-811c-4b45-bc96-e218b3c39016",
+      "peer_result_id": "fd8b7ce8-fd0d-484e-9ace-6c0a18a0e44e",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both assess caged PA characterization (C62-C65). LLM finds chemical synthesis, purity, and antagonist properties well-documented. Peer reviewers question the mechanistic explanation, asking whether transient activation is truly due to excess caged PA blocking released PA, requesting proof of this presumed mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "0500d24d-f082-4bae-9c7b-5144602260cc",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "bf057315-5993-4308-82bd-fbb6067b1004",
+      "peer_result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both evaluate clonal variation and chromatin context effects (C57, C58, C82, C84). LLM finds evidence that insertion site affects transcription rate but not frequency modulation convincing. Peer reviewers question whether dose-dependent/independent parameters were validated for each clone individually, noting unclear data presentation in Figure 2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "30a3d2ce-2573-4f40-98b1-00deb697b391",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4",
+      "peer_result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both express uncertainty about photoactivation results and the ~2 hour delay (C28, C67, C74, C90, C91). LLM notes 40% success rate and unexplained variability. Peer reviewers question why chromatin opening imposes such large delay and whether this reflects reporter complexity rather than endogenous gene behavior, requesting validation with in situ hybridization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "6a0fd02e-72af-439f-859a-941f2c522cee",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "fe6ee1bc-b720-468d-ab47-3fd2a10086f3",
+      "peer_result_id": "3199a3df-2e1a-40b5-b047-294bb32393c6",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both evaluate Random Telegraph model (C46, C47, C56). LLM finds model successfully fits data with consistent parameters. Peer reviewers identify confusion in mathematical formulation, questioning whether x-axis is time, whether a and b are rates vs times, and requesting clarification of formulas and terminology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "850bc85b-af45-4cbc-b9ad-ba7fce0334f3",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e",
+      "peer_result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address frequency modulation as core finding (C2, C27, C60, C72). LLM finds converging evidence strongly supports dose-dependent frequency with invariant duration. Peer reviewers acknowledge technical novelty but question conceptual novelty, stating findings 'mostly confirmed previous observations' about digital on-off states, requesting clarification of novelty beyond prior work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "356381db-b3e0-46c2-883f-4623c15b8380",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4",
+      "peer_result_id": "28139fb2-07e0-4e54-8ca7-b7a006faa55c",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both express uncertainty about 'one dose yields one cycle' claim (C69, C70, C75). LLM notes 70% show single bursts but 30% show no burst or multiple bursts. Peer reviewers request statistical analysis of probabilities for single vs multiple cycles and comparison of on-periods to steady-state dosing, indicating incomplete evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "12524cf0-f6c1-44a1-ac79-30a1ab037cc9",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "d86af56d-6bf2-4465-98a4-fa9963b29aee",
+      "peer_result_id": "2c2d7c1d-fd7d-4517-b450-2c9d3ed8dee7",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both note unresolved mechanistic questions about timing (C90, C91, C94). LLM identifies discrepancy between FRAP-measured SR dwell times and burst durations, noting speculative hypotheses lack direct evidence. Peer reviewers question the biological basis of the long delay and whether it reflects reporter complexity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "7e79e273-e23b-4dd6-96ef-a8a571021b58",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "206386eb-34ca-4db9-8dd6-9d96555aaa8e",
+      "peer_result_id": "3dbc987f-991f-4459-88d5-fb5de54565ec",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap on clonal variation (C57, C58, C84). LLM finds evidence for insertion site-dependent effects convincing. Peer reviewers question whether analyses were performed per clone and note unclear data presentation, indicating uncertainty about proper validation across cell lines.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "38602f03-a544-4dd0-bbd3-2ca88f3dabc6",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "258e0c78-20f8-4b79-a413-d089faa9ebe4",
+      "peer_result_id": "94d975c0-8710-4ff1-8c55-ee8822b5851d",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both express concerns about photoactivation experiments (C66, C71). LLM notes modest sample size and unexplained variability. Peer reviewers raise concerns about cell health (nuclear blebbing, apoptosis indicators) and potential DNA damage from UV exposure, requesting γ-H2A.X labeling controls to rule out artifacts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "231e5324-557e-4e76-99a5-71a5bec97d91",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6",
+      "peer_result_id": "d4faad71-8a43-482e-a47d-757c5f1a8b16",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap on population-level dose response (C3, C73). LLM finds FISH data showing heterogeneous single-cell distributions aggregating to smooth Hill functions convincing. Peer reviewers question conceptual novelty of digital-to-analog findings relative to prior work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "4e805cab-9222-4e3e-b5a9-a8f7a2c5bd02",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8",
+      "peer_result_id": "afcc1a86-048a-48ce-b5a4-7cf435aeb8d4",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap on reporter system (C35). LLM finds dual-modality system well-designed and thoroughly documented. Peer reviewers question whether single transcription site per cell is confirmed and whether it's stably maintained through generations, indicating uncertainty about single-copy validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "f2a2094e-a972-40f8-a933-98f5f6015b26",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "918dafd4-76e7-4430-8aeb-4fa4a2172ea6",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "LLM evaluates FISH dose-response data (C43-C45, C52-C55) showing heterogeneous single-cell distributions. No corresponding peer review evaluation found for these specific claims about mRNA distribution heterogeneity and Hill function parameters.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "bb520216-7e0e-4ffe-ac79-713bd9ccbfe7",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "231d46f7-5988-47c2-974e-5b991c1da4a7",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "LLM evaluates chromatin's role in burst timing (C95-C101) based on cited literature and histone turnover timescales. No corresponding peer review evaluation found for these claims about chromatin regulation mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    },
+    {
+      "id": "bd08cd25-2cb4-4129-a2f1-16f0db1ef21c",
+      "submission_id": "25d82d7a-4173-4060-8b75-089226b24d6c",
+      "llm_result_id": "fbcfbb18-160e-4788-abd5-bd430c0ff6f8",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "LLM evaluates comprehensive reporter system design (C24-C38, C104-C110) including MS2/FISH integration, lentiviral approach, and clonal selection. Peer reviewers address only single aspects (C35) rather than comprehensive system validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:43:12.722646Z"
+    }
+  ]
+}

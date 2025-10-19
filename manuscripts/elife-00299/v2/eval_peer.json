@@ -2,107 +2,109 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C16",
-      "C20",
-      "C73",
-      "C74"
+      "C15",
+      "C19",
+      "C69",
+      "C70"
     ],
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "PEER_REVIEW",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers raised a critical concern about the study design where 'eQTL discovery was performed in a cohort comprised of males only and the replication was performed in a cohort comprised of females only,' questioning the purpose and noting that 'discovery and replication are confounded by sex.' This design choice was not adequately justified, creating uncertainty about whether observed differences reflect true biological effects or sex-specific confounding."
+    "status_reasoning": "Reviewers raised a critical concern that 'discovery and replication are confounded by sex' since the discovery cohort was male-only and validation cohort was female-only. They questioned 'What was the purpose of this design?' indicating uncertainty about whether the validation truly replicates findings or introduces sex-specific confounding that undermines the study's conclusions."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C79",
-      "C80",
-      "C81"
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
     ],
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "PEER_REVIEW",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers noted that 'the study design used two different array versions: Illumina HT-12v3 and HT-12v4' and requested that 'the authors should describe how they combined data from these arrays, particularly for transcripts where the probe sequence differs between versions.' The lack of detailed explanation about handling technical differences between platforms raises uncertainty about data quality and comparability."
+    "status_reasoning": "Reviewers expressed substantial doubt about the delta R\u00b2 methodology, stating 'only 146 of the 541 cases were validated' and questioning 'why the difference in r2 is necessarily interpreted as a significant change when only 30% of the cases are validated.' They suggested alternative approaches and noted that 'a difference of r2 between time points can have multiple causes,' indicating the evidence for temporal genetic effects is insufficient."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C25",
-      "C27",
-      "C28",
-      "C29",
-      "C30",
-      "C99",
-      "C100"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers expressed substantial concerns about the delta R\u00b2 methodology, noting that 'only 146 of the 541 cases were validated' and questioning 'why the difference in r2 is necessarily interpreted as a significant change when only 30% of the cases are validated.' They suggested alternative approaches using 'the delta of transcription(time point x)\u2212transcription(baseline) as a trait' and noted that 'a difference of r2 between time points can have multiple causes.' The low validation rate and methodological concerns create significant uncertainty about these dynamic eQTL findings."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C96",
-      "C97"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers questioned the statistical modeling approach, suggesting that 'an interaction term in the models would actually be more efficient in detecting genetic effects modified by the time point after vaccination' and asking 'why was this not used (instead a simple comparison among time points was made)?' Additionally, they challenged the assumption that 'the person effect within their model would account for differences in cell populations among individuals,' noting that 'immune cell relative proportions can change rapidly' with 'no data or references provided to support this claim.' These methodological concerns create uncertainty about the validity of the modeling approach."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
       "C41",
-      "C42"
+      "C42",
+      "C43",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
     ],
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "PEER_REVIEW",
     "status": "UNSUPPORTED",
-    "status_reasoning": "Reviewers explicitly challenged the causal interpretation, stating that 'the fact that there is enrichment in the QQ plots on Figure 6A does not provide evidence about causality of SNPs to vaccine response but simply of correlation among the two effects' and that 'more complex models need to be implemented to show causality.' In the second round, they reiterated that 'the modelling as previously discussed in point 3 is somewhat weak and causality is not as well demonstrated, as the authors want to claim,' noting that 'the fact that the association with the residuals is lower than with the original values is not direct but indirect evidence that there are casual relationships.' The reviewers clearly reject the causal claims based on the QQ plot evidence."
+    "status_reasoning": "Reviewers explicitly challenged the causality claims, stating 'enrichment in the QQ plots on Figure 6A does not provide evidence about causality of SNPs to vaccine response but simply of correlation among the two effects.' In follow-up, they noted 'causality is not as well demonstrated, as the authors want to claim' and that 'the association with the residuals is lower than with the original values is not direct but indirect evidence.' They requested 'direct causal models' instead of the indirect approach used."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers raised concerns about combining data from two different array versions (HT-12v3 and HT-12v4), requesting that authors 'describe how they combined data from these arrays, particularly for transcripts where the probe sequence differs between versions.' This indicates uncertainty about whether technical differences between platforms were adequately addressed."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers stated 'The expression data processing should be described in more detail to make it clear how normalization, and so on, was performed given the different time points, array versions, and discovery/replication cohorts.' This indicates the processing methodology was insufficiently described for reviewers to assess its adequacy."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C105",
-      "C106"
+      "C100",
+      "C101"
     ],
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "PEER_REVIEW",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers expressed concerns about the causal modeling approach, noting it provides only 'indirect evidence that there are casual relationships' and questioning how 'the \"random\" SNPs were chosen,' emphasizing that 'establishing a relevant null is important here.' They suggested that 'direct causal models would help in establishing the relationships rather than the indirect approach the authors use.' While not rejecting the models outright, reviewers indicate the evidence for causality is weak and the methodology needs strengthening."
+    "status_reasoning": "Reviewers challenged the modeling assumption that 'the person effect within their model would account for differences in cell populations among individuals,' noting 'No data or references are provided to support this claim. Immune cell relative proportions can change rapidly.' They also suggested 'an interaction term in the models would actually be more efficient in detecting genetic effects modified by the time point after vaccination,' questioning why this approach was not used."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C21",
-      "C22",
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C39",
-      "C48"
+      "C40"
     ],
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "PEER_REVIEW",
     "status": "UNCERTAIN",
-    "status_reasoning": "While reviewers did not directly challenge the identification of these genes or their pathway enrichments, the multiple methodological concerns raised (delta R\u00b2 validation issues, causal inference limitations, sex confounding, modeling approach) create uncertainty about the robustness and interpretation of these findings. The reviewers' statement that the 'design is innovative and promises interesting discoveries' suggests potential value, but the unresolved methodological issues prevent full support of these conclusions."
+    "status_reasoning": "Reviewers questioned the statistical threshold for trans-eQTL analysis, noting 'for a GWAS of common variation, this may be appropriate for a single trait, but the authors should account for testing nearly 10K transcripts.' This indicates concern that the significance threshold may not adequately control for multiple testing, creating uncertainty about which associations are truly significant."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C64",
-      "C67"
+      "C20",
+      "C21",
+      "C38",
+      "C39",
+      "C45"
     ],
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "The authors' acknowledgment that 'the sample size in this study was not sufficient to establish whether or not there is a causal relationship' aligns with reviewers' concerns about causal inference. Reviewers reinforced this limitation by noting that causality is 'not as well demonstrated, as the authors want to claim' and that only 'indirect evidence' exists. The authors' own stated limitation is consistent with the reviewers' assessment."
+    "status": "UNCERTAIN",
+    "status_reasoning": "The main integrative findings about 20 genes and their role in vaccine response are indirectly questioned through reviewers' concerns about methodology (sex confounding, causality claims, delta R\u00b2 validation). While reviewers acknowledged 'the design is innovative and promises interesting discoveries,' the multiple methodological concerns create uncertainty about whether these specific gene identifications are robust and whether the mechanistic conclusions about membrane trafficking and antigen processing are fully supported."
   }
 ]

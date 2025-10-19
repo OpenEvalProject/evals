@@ -1,0 +1,2105 @@
+{
+  "submission": {
+    "id": "99eede25-0754-490e-a284-a775d1ff0b38",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:46:27.056721Z",
+    "updated_at": "2025-10-16T22:46:27.056721Z"
+  },
+  "content": [
+    {
+      "id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "content_type": "manuscript",
+      "content_text": "# Cytoplasmic genetic variation and extensive cytonuclear interactions influence natural variation in the metabolome\n\n## Authors\n\n- Bindu Joseph<sup>1</sup>\n- Jason A Corwin<sup>1</sup>\n- Baohua Li<sup>1</sup>\n- Suzi Atwell<sup>1</sup>\n- Daniel J Kliebenstein<sup>1</sup> †\n\n### Affiliations\n\n1. Department of Plant Sciences University of California, Davis Davis United States\n2. DynaMo Center of Excellence University of Copenhagen Frederiksberg Denmark\n\n† Corresponding author\n\n## Abstract\n\n10.7554/eLife.00776.001 Understanding genome to phenotype linkages has been greatly enabled by genomic sequencing. However, most genome analysis is typically confined to the nuclear genome. We conducted a metabolomic QTL analysis on a reciprocal RIL population structured to examine how variation in the organelle genomes affects phenotypic variation. This showed that the cytoplasmic variation had effects similar to, if not larger than, the largest individual nuclear locus. Inclusion of cytoplasmic variation into the genetic model greatly increased the explained phenotypic variation. Cytoplasmic genetic variation was a central hub in the epistatic network controlling the plant metabolome. This epistatic influence manifested such that the cytoplasmic background could alter or hide pairwise epistasis between nuclear loci. Thus, cytoplasmic genetic variation plays a central role in controlling natural variation in metabolomic networks. This suggests that cytoplasmic genomes must be included in any future analysis of natural variation. DOI: http://dx.doi.org/10.7554/eLife.00776.001\n\n## Introduction\n\nA central goal of modern biology is to understand how the integration of gene functions across a genome lead to the individual’s specific phenotype. A key facet to this effort is to develop models that would allow directly inferring a species phenotypic variation from its genetic variation. This goal of mathematically linking genetic to phenotypic variation is central to all studies of quantitative genetics ranging from human genetics to plant breeding to ecology and has led to massive genome resequencing projects focused on developing the genomic databases to allow these studies (Liti et al., 2009; Altshuler et al., 2010; Cao et al., 2011). However, in most quantitative genomics studies, genome analysis is largely confined to the nuclear genome with much less attention paid to the organellar genome. This is in contrast to the central role that the organellar genome plays in controlling organismal metabolism and function and the developing body of literature suggesting that organellar genomic variation can modulate the effects of nuclear genomic variation.\n\nGenomic variation in human organelles has been linked to several severe diseases (Wallace et al., 1988; Taylor and Turnbull, 2005; Schon et al., 2012). However, these organellar variants are typically rare with large phenotypic consequences such that they can be followed using simple maternal inheritance studies without consideration for quantitative variation in the nuclear genome (Schon et al., 2012). More recently, quantitative studies on human diseases suggest that genetic variation in organellar genomes modify the quantitative effect of nuclear loci and disease phenotypes (Battersby and Shoubridge, 2001; McRae et al., 2008; Schon and Przedborski, 2011). Additionally, the use of structured populations in mice, yeast, and birds have shown that cytoplasmic genome variation can influence high order phenotypes including fitness, cognition, and biomass (Roubertoux et al., 2003; Zeyl et al., 2005; Park et al., 2006; Dimitrov et al., 2009). Within ecological studies, mitochondrial variation has also been shown to alter fitness and create hybrid isolation in a variety of invertebrate species (Willett and Burton, 2004; Wade and Goodnight, 2006; Dowling et al., 2007, 2010; Wolf, 2009; Willett, 2012). However, these studies didn’t directly interrogate the interaction of the nuclear and cytoplasmic genomes for quantitative traits or test the breadth of phenotypes affected.\n\nIn plants, genetic variation in mitochondria is also linked with large qualitative phenotypes, such as cytoplasmic male sterility (Hanson, 1991; Schnable and Wise, 1998). Plant breeding has a long history of using diallele crosses to test for the presence of maternal effects (cytoplasmic genetic variation) on a phenotype and this was recently extended to a small reciprocal F2 family structure to show that the cytoplasmic effects could have significant impacts on plant height in maize (Tang et al., 2013). In rice, agronomic traits have also been shown to be influenced by interactions between cytoplasmic and nuclear genomes but the specific loci were not identified (Tao et al., 2004). However, these reciprocal F2 populations typically have generated the impression that cytoplasmic effects on phenotypic variation are quite small in plants possibly because of an inability to account for interactions between the nuclear and cytoplasmic genomes (Singh, 1965; Crane and Nyquist, 1967; Eenink and Garretsen, 1980; Miura et al., 1997; Primomo et al., 2002). In contrast to the previous estimates of small effects, genomic sequencing within Arabidopsis has shown the presence of considerable genetic polymorphism in both the plastidic and mitochondrial genomes suggesting the potential for broad phenotypic consequences (Moison et al., 2010).\n\nThe above studies have shown that cytoplasmic genome variation can influence phenotypic variation. Additionally, genes underlying qualitative interactions between the nucleus and cytoplasm leading to cytoplasmic male sterility and interspecific isolation have been identified. There are, however, numerous open questions remaining about how cytoplasmic variation influences quantitative phenotypic variation. What is the level of phenotypic variation influenced by genetic variation in the cytoplasm in comparison to individual nuclear loci? How much epistatic interaction is there between genetic variation in nuclear loci and the cytoplasmic genomes? What is the breadth of phenotypes that might be influenced by cytoplasmic variation?\n\nTo begin answering these questions, we utilized metabolomics to investigate how genetic variation in the cytoplasmic and nuclear genomes interacts to control metabolome variation in the reciprocal Arabidopsis Kas × Tsu recombinant inbred line (RIL) population (McKay et al., 2008; Juenger et al., 2010). We focused on metabolomics because it is cost effective for large sample numbers and because plant organelles, mitochondria and plastids, are central to the function of plant primary metabolism, as well as many specialized metabolites in both energy generation and biosynthesis (Fiehn et al., 2000; Roessner et al., 2001; Fiehn, 2002). Within Arabidopsis, there are nearly 13,000 genes in the nuclear genome predicted to be involved in metabolic processes of which ∼3000 may be targeted to the mitochondria and the plastid (Arabidopsis genome initiative, 2000). This included complete biosynthetic pathways for numerous amino acids and key energy production processes like respiration and photosynthesis. Aiding these processes are 88 total predicted genes in the plastidic genome and 121 in the mitochondrial genome; most of which function to facilitate the metabolic processes that occur in organelles using both nuclear and cytoplasmic-encoded proteins. Thus, variation in the organellar genomes could directly influence the function of any of nuclear gene functioning within the organelle (Etterson et al., 2007; Tang et al., 2007; Wolf, 2009). This suggests that metabolism is an ideal phenotype to use for testing how cytoplasmic variation can influence phenotypic variation.\n\nWe measured the metabolome within the Kas × Tsu RIL population to test how cytoplasmic variation can affect quantitative variation within the metabolome. This population was generated from a reciprocal cross and approximately half of the resulting lines carry Kas organelles while the other half carry Tsu organelles allowing for explicit analysis of the influence of cytoplasmic genetic variation (McKay et al., 2008; Juenger et al., 2010). Analysis of the Kas × Tsu RIL population metabolome showed that genetic variation in the organelles influenced the accumulation of over 80% of the detectable metabolites. In contrast to previous observations suggesting that the cytoplasm has only small effects, phenotypic changes associated with cytoplasmic variation were as large and often larger than that found for individual nuclear loci (Singh, 1965; Crane and Nyquist, 1967; Eenink and Garretsen, 1980; Miura et al., 1997; Primomo et al., 2002). In addition, the cytoplasm was found to be a central hub in the epistatic network controlling natural variation in plant metabolism. This centrality led to the cytoplasmic background displaying the unexpected ability to hide or alter epistatic interactions between nuclear loci. Thus, genetic variation in the cytoplasmic organelles has widespread and large quantitative effects on natural phenotypic variation and can influence the link between nuclear loci.\n\n## Results\n\n## Comparative metabolome genetics across populations\n\nTo partition phenotypic variance between the effects of the nuclear and cytoplasmic genomes upon the A. thaliana metabolome, we identified and measured metabolite levels, using non-targeted GC-TOF-MS, in leaf tissues of 316 lines of the Kas × Tsu A. thaliana RIL population harvested with fourfold replication across two separate experiments. Within the 316 lines for this population, 136 have the Kas cytoplasm and 180 have the Tsu cytoplasm. A total of 2435 metabolites were identified in over 25% of the RILs with 215 of these being known compounds and 2220 being unidentified compounds. Of these 2435 metabolites, 559 were identified in both experiments (161 known and 398 unknown) while the rest were specific to one of the two experiments.\n\nClassical breeding studies utilize reciprocal crosses with linear modeling to partition heritability between the nuclear and cytoplasmic genomes (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig1-v1.jpg)\n\n**Figure 1.:** We compared the estimated metabolite heritability’s due to nuclear (solid line) and organelle (dashed line) variation across the lines of the Kas × Tsu (black) RIL populations. Shown are frequency plots of heritability and for each class, the bin size is 5% for the frequency plots.DOI: http://dx.doi.org/10.7554/eLife.00776.00310.7554/eLife.00776.004Figure 1—source data 1.Results of the ANOVA model (Model I) for metabolic variance in the experiment are shown by metabolite.DOI: http://dx.doi.org/10.7554/eLife.00776.00410.7554/eLife.00776.005Figure 1—source data 2.All metabolic mean accumulation is shown by line and subpopulation.DOI: http://dx.doi.org/10.7554/eLife.00776.005\n\n## Single locus analysis of nuclear variation and the plant metabolome\n\nWe next moved beyond the classical line heritability approach and directly test if cytoplasmic variation may have similar effects to individual nuclear loci. We mapped QTLs in the Kas × Tsu RILs controlling the mean accumulation of all 2435 measured metabolites (215 known and 2220 unidentified compounds) using 1069 markers with a median spacing of 0.35 cM (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig2-v1.jpg)\n\n**Figure 2.:** (A) The number of metabolites for which a QTL was detected within a 5 cM sliding window is plotted against the genetic location of the metabolite QTLs in cM. The permuted threshold (p=0.05) for detection of a significant metabolite hotspot is 54 QTLs. The graph is scaled to match part (B). Hotspots are labeled above the respective locus with the chromosome and cM. (B) Heat map showing the location and effect of significant QTLs detected for average metabolite accumulation across the five chromosomes. Red indicates a positive effect of the Kas allele, while green indicates a positive effect of the Tsu allele. Vertical white lines separate the chromosomes (I to V from left to right). Clustering on the left is based on the absolute Pearson correlation of QTL effects across all significant loci for each metabolite. Only metabolites with two or more QTLs were plotted.DOI: http://dx.doi.org/10.7554/eLife.00776.00610.7554/eLife.00776.007Figure 2—source data 1.The location and effect of all metabolic QTLs identified from the CIM model are presented.DOI: http://dx.doi.org/10.7554/eLife.00776.007\n\nTo compare nuclear and cytoplasmic genetic variation effects upon metabolism, we utilized these metabolomic QTL hotspots to develop an additive model. This model uses the genetic marker at the center of each metabolomic QTL hotspot as separate terms and also incorporates the cytoplasmic variation as an additional term equivalent to each nuclear locus. We used this additive model to directly test all QTL hotspot-metabolite linkages and obtain the mean effect of variation at each hotspot on the metabolome (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-v1.jpg)\n\n**Figure 3.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at nuclear loci. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the cytoplasmic genome and gray boxes are metabolites that were not detected. The two loci shown are those that had the most metabolites affected within the metabolic map. All other nuclear loci are plotted in Figure 3—figure supplements 1–12. (A) Estimated allele effects of the M.V.59 hotspot. (B) Estimated allele effects of the M.I.83 hotspot.DOI: http://dx.doi.org/10.7554/eLife.00776.00810.7554/eLife.00776.009Figure 3—source data 1.p values for main effect model of metabolic QTL variance using hotspot markersDOI: http://dx.doi.org/10.7554/eLife.00776.009\n\n![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp1-v1.jpg)\n\n**Figure 3—figure supplement 1.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.010\n\n![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp2-v1.jpg)\n\n**Figure 3—figure supplement 2.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.011\n\n![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp3-v1.jpg)\n\n**Figure 3—figure supplement 3.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.012\n\n![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp4-v1.jpg)\n\n**Figure 3—figure supplement 4.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.013\n\n![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp5-v1.jpg)\n\n**Figure 3—figure supplement 5.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.014\n\n![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp6-v1.jpg)\n\n**Figure 3—figure supplement 6.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.015\n\n![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp7-v1.jpg)\n\n**Figure 3—figure supplement 7.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.016\n\n![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp8-v1.jpg)\n\n**Figure 3—figure supplement 8.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.017\n\n![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp9-v1.jpg)\n\n**Figure 3—figure supplement 9.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.018\n\n![Figure 3—figure supplement 10.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp10-v1.jpg)\n\n**Figure 3—figure supplement 10.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.019\n\n![Figure 3—figure supplement 11.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp11-v1.jpg)\n\n**Figure 3—figure supplement 11.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.020\n\n![Figure 3—figure supplement 12.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig3-figsupp12-v1.jpg)\n\n**Figure 3—figure supplement 12.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation at each nuclear hotspot locus. A red box shows increased metabolite accumulation when the line contains the Kas allele at the nuclear locus while green shows increased metabolite accumulation when the line contains the Tsu allele at the nuclear locus. White boxes are metabolites that were detected but not significantly influenced by the locus and gray boxes are metabolites that were not detected. The specific hotspot metabolomic QTL locus is listed at the top of the page using the nomenclature shown in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.00776.021\n\n## The comparative effects of cytoplasmic genome variation to nuclear variation\n\nWe next proceeded to use the additive model to directly compare the role of cytoplasmic genome variation to that of individual nuclear loci in controlling metabolome variation (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-v1.jpg)\n\n**Figure 4.:** The distribution of percent allele effects are shown for all metabolite/loci combinations with positive being the Tsu allele increases the metabolite concentration in comparison to the Kas allele. Solid black line shows the allele effects for all nuclear genomic loci while the dashed line shows cytoplasmic genetic variation allele effects.DOI: http://dx.doi.org/10.7554/eLife.00776.022\n\n![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp1-v1.jpg)\n\n**Figure 4—figure supplement 1.:** Using pairwise epistasis model run for separately for all metabolites, we identified all significant main effect markers and, epistatic interaction terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction based on metabolites that are significant for that marker/interaction. The two plots titled ‘main’ and ‘main trim’ that show the heritability solely attributable to the individual main effect nuclear and cytoplasmic loci. ‘main’ shows the full plot while ‘main_trim’ shows the distribution trimmed to improve the resolution on the nuclear markers. The plot entitled ‘cytonuclear’ shows the distribution of the heritability attributed to all significant interactions between the cytoplasmic genome and the listed nuclear locus. For instance, the plot of M.I.83 in this graph shows the distribution of heritability across all metabolites significant for the cytoplasm × M.I.83 cytonuclear interaction.DOI: http://dx.doi.org/10.7554/eLife.00776.023\n\n![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp2-v1.jpg)\n\n**Figure 4—figure supplement 2.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.024\n\n![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp3-v1.jpg)\n\n**Figure 4—figure supplement 3.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.025\n\n![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp4-v1.jpg)\n\n**Figure 4—figure supplement 4.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.026\n\n![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp5-v1.jpg)\n\n**Figure 4—figure supplement 5.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.027\n\n![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp6-v1.jpg)\n\n**Figure 4—figure supplement 6.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.028\n\n![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp7-v1.jpg)\n\n**Figure 4—figure supplement 7.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.029\n\n![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig4-figsupp8-v1.jpg)\n\n**Figure 4—figure supplement 8.:** Using the pairwise epistasis model analysis separately for all metabolites, we identified all significant main effect markers, individual genetic loci, and interactions, epistatic terms. For each metabolite, we identified each significant term and estimated the genetic variance controlled by this term by taking the ratio of the Type III sums of squares (SS) to the total sums of squares (total model SS + Residual SS) for that term from Model III. In this figure, we present the distribution of the per marker and per interaction heritability for each marker/interaction for the metabolites that are significant for that marker/interaction. These plots are titled with specific nuclear locus show the distribution of heritability controlled by interactions between the titled marker and all the other loci in the model. Again this is only for interaction terms that were significant in the individual metabolite models.DOI: http://dx.doi.org/10.7554/eLife.00776.030\n\nUsing the additive model, we generated per locus estimates of heritability that showed the cytoplasmic genome explained twice the variance as any individual nuclear locus on average (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig5-v1.jpg)\n\n**Figure 5.:** A map of central metabolism was created in cytoscape and this was used to plot the estimated allele effect of genetic variation in the cytoplasmic genomes using the reciprocal sub-populations. Colors are as given in Figure 3.DOI: http://dx.doi.org/10.7554/eLife.00776.03110.7554/eLife.00776.032Figure 5—source data 1.AGI represents the code for each gene with position being from the +1 of transcription for that gene. The specific base at each site in Col-0, Kas and Tsu are shown.DOI: http://dx.doi.org/10.7554/eLife.00776.032\n\n## Cytoplasmic polymorphisms\n\nTo identify potential causal polymorphisms between the Kas and Tsu organelles, we obtained short-read sequencing data and identified SNPs in the organellar genomes. This analysis showed that there were polymorphisms spread out across a large number of genes including regulatory genes, such as rpoC2 in the plastid, several unknown genes, and key energy genes, such as Rubisco large subunit. The most striking changes were the large number of polymorphisms within the NADH deyhdrogenases in both the mitochondria and the plastid (Figure 5—source data 1). Specifically in the mitochondria, 32 of the 96 polymorphisms were within the NADH dehydrogenase 7 and a further 13 polymorphisms in four other NADH dehydrogenase complex genes. This is vastly more polymorphisms than would be expected by random chance suggesting a change in NADH and related metabolism between the Kas and Tsu organelles (hyper-geometric test, p<0.001). This agrees with the widespread metabolic consequences of the cytoplasmic genetic variation on processes that require NADH like glutamine synthesis, lipid metabolism, and any other process that utilizes NADH requiring cytochromes P450. However, within this population the mitochondrial and plastidic genomes are perfectly co-inherited making it impossible to resolve the individual effects of the mitochondrial and plastidic genomes (Joseph et al., 2013). Additionally, it isn’t possible to ascribe metabolites to specific subcellular compartments using a whole tissue extract as most metabolites, even those synthesized in specific compartments, often accumulate in most compartments within a plant cell (Krueger et al., 2011). Thus, genetic variation in the cytoplasm can have significant effects on modulating global plant metabolism requiring further work to identify the specific mechanistic causes.\n\n## Cytonuclear epistasis shapes the plant metabolome\n\nPrevious work on natural variation in the plant metabolome had shown extensive two-way and three-way epistasis between nuclear loci but could not test for the presence of epistatic interactions between nuclear and cytoplasmic loci (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig6-v1.jpg)\n\n**Figure 6.:** All epistatic interactions between the cytoplasmic genomic variation and nuclear loci (as labeled in Figure 2) are plotted as lines connecting the main effect loci as nodes. The size of the main effect nodes represents the fraction of total metabolites affected by the given locus. The color of the lines show the fraction of metabolites linked with this interaction, light blue 10–15% of metabolites, dark blue 15–20% of metabolites.DOI: http://dx.doi.org/10.7554/eLife.00776.03310.7554/eLife.00776.034Figure 6—source data 1.p values for main effect and interaction terms using hotspot markers.DOI: http://dx.doi.org/10.7554/eLife.00776.03410.7554/eLife.00776.035Figure 6—source data 2.The type III sums of squares from the model run in Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.00776.035\n\nImportantly, the cytoplasmic locus was one of the two nodes with the highest number of significant pairwise epistatic interactions connecting to 6 of the 14 nuclear loci. This level of interaction is higher than the average of the network degree distribution (3.5 ± 0.46 SE) (Figure 6). The M.I.83 nuclear locus had the highest level of interactions involving 7 of the other 13 nuclear loci but did not interact directly with the cytoplasmic variation (Figure 6). Thus, there is strong pairwise epistasis between the cytoplasmic and nuclear genetic loci. Further, the percent of genetic variation controlled by interactions of two nuclear loci was of similar scale to that involving a cytonuclear interaction (Figure 4—figure supplements 1–8).\n\n## Cytoplasmic genetic variation has larger phenotypic effects on metabolite epistasis than the nuclear partner\n\nThe large number of significant epistatic interactions between nuclear and cytoplasmic genetic variation forms a cohesive network but the network approach does not let us visualize or directly quantify the effects of each locus in an epistatic pair. Thus, we wanted to develop a better approach to visualize and compare epistatic effects (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig7-v1.jpg)\n\n**Figure 7.:** The center of mass calculations were used to estimate the phenotypic center for each metabolite that was significantly affected by the given combination of loci. The hexbin plots show the distribution of phenotypic centers for all significant metabolites. The number of metabolites per hexbin are shown in the legend to the right of each graph. All other significant epistatic pair combinations are plotted in Figure 7—figure supplement 2. (A) Metabolites that are additive for both the cytoplasmic loci and M.IV.23. (B) Metabolites that are epistatically affected by an interaction between M.IV.23 and the cytoplasmic genotypes. (C) Metabolites that are epistatically affected by an interaction between M.I.83 and the cytoplasmic genotypes. (D) Metabolites that are epistatically affected by an interaction between M.I.83 and M.IV.23 genotypes.DOI: http://dx.doi.org/10.7554/eLife.00776.036\n\n![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig7-figsupp1-v1.jpg)\n\n**Figure 7—figure supplement 1.:** This is a representative plot showing where the specific modeled metabolites, as presented in the table, are position on the center of phenotype plot. Letters label each modeled metabolite on the plot. The allele at each locus is positioned as the Kas allele at 1 and Tsu allele at −1.DOI: http://dx.doi.org/10.7554/eLife.00776.037\n\n![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig7-figsupp2-v1.jpg)\n\n**Figure 7—figure supplement 2.:** Only interactions significantly affecting 10% or more of the metabolites are shown. Each interaction is listed at the top of the page and the number of metabolite per hexbin is shown in the legend to the right of each graph. Center of mass calculations were used to estimate the phenotypic center for each metabolite that was significantly affected by the given epistasis interaction. The hexbin plots show the distribution of phenotypic centers for all significant metabolites.DOI: http://dx.doi.org/10.7554/eLife.00776.038\n\nTo compare the role of each locus in a pairwise epistatic interaction, we plotted the phenotypic center for only the metabolites that showed significant epistasis for each pairwise interaction in our pairwise marker model analysis (Figure 7 and Figure 7—figure supplement 2). For all cytonuclear epistatic interactions, the axis representing cytoplasmic genetic variation showed a wider phenotypic range than the axis representing variation in the nuclear locus (Figure 7B,C and Figure 7—figure supplement 2). Additionally, the range of phenotypic effects in epistasis between two nuclear loci was typically smaller than that between nuclear and cytoplasmic genome (Figure 7—figure supplement 2). Thus, variation within the cytoplasmic locus has a larger epistatic effect upon metabolomic variation than genetic variation in the nuclear locus further suggesting that genetic variation in the cytoplasm has larger than recognized phenotypic consequences.\n\n## Quantifying the model improvement by including cytoplasmic variation\n\nThe above analysis showed that the cytoplasmic genetic variation plays an important role in mediating variation within the plant metabolome. To quantify how much the inclusion of the cytoplasm improved the genetic models in describing metabolomic variation, we analyzed our additive and pairwise epistasis model models with and without the cytoplasmic terms. For each metabolite for each model, we estimated the percent of variance explained by the significant terms in the model (\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig8-v1.jpg)\n\n**Figure 8.:** The cytoplasmic term was added or dropped from the different statistical models to compare the total variance explained by each model for each metabolite. Dotted lines show estimated variance using solely the main effect loci without interactions (additive model), solid lines show the distribution of estimated variance across the metabolites using the pairwise epistasis model while the dashed lines are the results for the three-way epistasis model including the most prevalent three-way interactions as indicated by the epistatic network. The gray lines show the models with only the nuclear loci while the black lines show the model with the nuclear and cytoplasmic loci. For the frequency plot, bin size is 0.025 r2.DOI: http://dx.doi.org/10.7554/eLife.00776.039\n\n## Cytonuclear epistasis alters nuclear epistatic relationships\n\nThe epistatic network diagram showed that there were several instances of triangles where two nuclear loci showing pairwise epistasis also interacted with the cytoplasmic variation (Figure 6). This connectivity between the cytoplasmic genetic variation and nuclear QTL epistatic pairs led us to question if genetic variation in the cytoplasmic genomes could alter epistatic interactions between nuclear loci. To test if cytoplasmic genetic variation could alter nuclear epistasis, we identified all pairs of nuclear loci that interacted with each other and the cytoplasmic genome (Figure 6). These 10 three-way interactions were then included in the pairwise epistatic model to generate a three-way interaction model (Figure 6—source data 1,2). We found that including these 10 new three-way interactions significantly increased the total variance explained by the model for the distribution of metabolites while only using less than 42% of the available degrees of freedom (Figure 8, t-test p<0.001).\n\nTo examine how cytoplasmic genetic variation influences nuclear epistasis we visualized all significant three-way interactions using the phenotypic center approach, (\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-v1.jpg)\n\n**Figure 9.:** The analysis of the M.IV.23 × M.I.83 × cytoplasmic three-way epistatic interaction is shown for all significantly affected metabolites. All other metabolite distributions for three-way epistatic combinations are plotted in Figure 9—figure supplements 1–3. (A) The center of mass calculations were used to estimate the phenotypic center for each metabolite that shows a significant three-way epistasis with the M.IV.23, M.I.83 and cytoplasmic genetic variation. All significant metabolites are plotted as unique points. The specific metabolites boxed and labeled show the location of the metabolites shown in parts, B, C and D respectively. For each locus, the Kas allele is plotted at 1 while Tsu is −1. (B) Effect of the M.IV.23 × M.I.83 × cytoplasmic epistasis upon the accumulation of unknown 227710. Average and standard error are shown. (C) Effect of the M.IV.23 × M.I.83 × cytoplasmic epistasis upon the accumulation of pyruvate. Average and standard error are shown. (D) Effect of the M.IV.23 × M.I.83 × cytoplasmic epistasis upon the accumulation of salicylic acid. Average and standard error are shown.DOI: http://dx.doi.org/10.7554/eLife.00776.040\n\n![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp1-v1.jpg)\n\n**Figure 9—figure supplement 1.:** The page shows the distribution of phenotypic centers of metabolites significantly affected by three way epistatic interactions. Of the 10 three-way interactions involving cytoplasmic loci that were tested, only the interactions showing significant epistasis for 10% or more metabolites are shown. All significant metabolites are plotted as unique points. For each locus, the Kas allele is plotted at 1 while Tsu is −1.DOI: http://dx.doi.org/10.7554/eLife.00776.041\n\n![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp2-v1.jpg)\n\n**Figure 9—figure supplement 2.:** The page shows the distribution of phenotypic centers of metabolites significantly affected by three-way epistatic interactions. Of the 10 three-way interactions involving cytoplasmic loci that were tested, only the interactions showing significant epistasis for 10% or more metabolites are shown. All significant metabolites are plotted as unique points. For each locus, the Kas allele is plotted at 1 while Tsu is −1.DOI: http://dx.doi.org/10.7554/eLife.00776.042\n\n![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp3-v1.jpg)\n\n**Figure 9—figure supplement 3.:** For all metabolites that were epistatically affected by M.I.83 × M.IV.23 × cytoplasmic three-way interaction, hexbin plot showing change in the distribution of phenotypic centers corresponding interaction of nuclear loci M.I.83 × M.IV.23 as compared to the distribution shown in Figure 7D. The number of metabolite per hexbin is shown in the legend to the right of the graph. Center of mass calculations were used to estimate the phenotypic center for each metabolite that was significantly affected by the given interaction. The hexbin plots show the distribution of phenotypic centers for all significant metabolites.DOI: http://dx.doi.org/10.7554/eLife.00776.043\n\n![Figure 9—figure supplement 4.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp4-v1.jpg)\n\n**Figure 9—figure supplement 4.:** For all metabolites that were epistatically affected by M.I.83 × M.IV.23 × cytoplasmic three-way interaction, hexbin plot showing change in the distribution of phenotypic centers corresponding interaction of nuclear loci M.I.83 × M.IV.23 as compared to the distribution shown in Figure 7D. The number of metabolite per hexbin is shown in the legend to the right of the graph. Center of mass calculations were used to estimate the phenotypic center for each metabolite that was significantly affected by the given interaction. The hexbin plots show the distribution of phenotypic centers for all significant metabolites.DOI: http://dx.doi.org/10.7554/eLife.00776.044\n\n![Figure 9—figure supplement 5.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp5-v1.jpg)\n\n**Figure 9—figure supplement 5.:** For metabolites epistatically affected by M.I.83 × M.IV.23 × cytoplasmic three-way interaction, we plotted the center of phenotypes corresponding to interaction of nuclear loci M.I.83 × M.IV.23 as estimated using the three-way epistasis and pairwise epistasis models. For each metabolite, open diamonds indicate the center of phenotype estimated using the pairwise epistasis model while closed diamonds indicate the estimated location using the three-way epistasis model. For each metabolite the pairwise and three-way center of phenotypes are connected by a line to indicate the change in location.DOI: http://dx.doi.org/10.7554/eLife.00776.045\n\n![Figure 9—figure supplement 6.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp6-v1.jpg)\n\n**Figure 9—figure supplement 6.:** For metabolites epistatically affected by M.I.83 × M.IV.23 × cytoplasmic three-way interaction, we plotted the center of phenotypes corresponding to interaction of nuclear loci M.I.83 × M.IV.23 as estimated using the three-way epistasis and pairwise epistasis models. For each metabolite, open diamonds indicate the center of phenotype estimated using the pairwise model while closed diamonds indicate the estimated location using the three-way model. For each metabolite the pairwise and three-way center of phenotypes are connected by a line to indicate the change in location. Only those metabolites whose centers of phenotypes are located farther than 0.1 from the origin are provided to increase visual resolution.DOI: http://dx.doi.org/10.7554/eLife.00776.046\n\n![Figure 9—figure supplement 7.](https://cdn.elifesciences.org/articles/00776/elife-00776-fig9-figsupp7-v1.jpg)\n\n**Figure 9—figure supplement 7.:** For metabolites epistatically affected by M.I.83 × M.IV.23 × cytoplasmic three-way interaction, we measured the change in distance from the (1,1) point to test if the inclusion of the cytoplasmic genotype has a uniform shift upon the phenotype of the affected metabolites. The histogram with the gray dashed border shows the frequency distribution of metabolites that decreased the distance from the point (1,1) when comparing the three-way to pairwise position. The histogram with black solid border shows the frequency distribution of metabolites that increased the distance. The respective mean and median for each class are shown in the respective lines.DOI: http://dx.doi.org/10.7554/eLife.00776.047\n\n## Discussion\n\n## Cytoplasmic genetic variation has a significant contribution to metabolic variation\n\nEven though maternal contribution to complex phenotypes has long been suspected, most previous genomic surveys of natural variation using transcriptomics or metabolomics have either not had the capacity to directly assess the influence of cytoplasmic genetic variation or just ignore it completely. Thus, we used the reciprocal Kas × Tsu Arabidopsis RIL population to directly quantify the role of cytoplasmic genetic variation in quantitative variation of metabolomics traits. Our analysis showed that the cytoplasmic genome variation affected the phenotypic variation for over 80% of metabolites. The affected metabolites included key parts of central metabolism and some of the most specialized metabolites (Figures 1, 5 and 6). Interestingly, the combined variance of the nuclear genome was larger than the variance due to cytoplasmic genome (Figure 1). In contrast, cytoplasmic genetic variation affected more metabolites than any of the individual nuclear loci typically with larger effects (Figures 3–5 and Figure 4—figure supplements 1–5). This is true even though the average nuclear locus spanned approximately the same number of genes as the organellar genomes combined.\n\nWe also identified a high level of significant epistatic interaction between cytoplasmic genetic variation and nuclear genetic variation, as cytonuclear epistasis (Etterson et al., 2007; Tang et al., 2007; Wolf, 2009). This cytonuclear epistasis explained as much, if not more, metabolic variation than the combined additive effects of the nuclear loci. In addition, the cytoplasmic genome controlled larger phenotypic changes than the nuclear locus within a cytonuclear interaction (Figure 7). This interaction between the cytoplasmic and nuclear loci was further extended to three-way interactions and showed that the cytoplasmic background could hide or alter the interaction between two nuclear loci (Figure 9). Thus, the cytoplasmic genetic background plays a key role in determining how natural variation within nuclear loci will function.\n\n## What is the mechanistic basis of cytoplasmic genetic variation?\n\nThe effect of the cytoplasmic genetic variation was spread out across nearly all of primary metabolism making it impossible to ascribe a causal link with solely plastidic or mitochondrial genes (Figure 5). Similarly analysis of genomic variation in the two organelles found a large number of SNPs that could be affecting numerous genes within the organelles with an observed bias towards genes involved in the NADH dehydrogenase complex (Figure 5—source data 1). Thus, organellar genomes could be playing a role in the cytoplasmic genetic influence on metabolite variation, but given their coinheritance, it is not possible to resolve the direct causal polymorphisms. Separating the two genomes to resolve their relative roles would require identifying rare individuals where the two organelles show bi-parental inheritance instead of the uni-parental/maternal mode of inheritance typical for Arabidopsis (Azhagiri and Maliga, 2007).\n\nThe plant cytoplasmic genomes contain only about 1% of the number of genes as found within the nuclear genome (Arabidopsis genome initiative, 2000). Yet genetic variation in this small fraction of genes has a large consequence upon the plants metabolic variation (Figure 5). This could be from genetic polymorphisms in organellar genes that are central to plant metabolism, such as those central to photosynthesis or NADH synthesis (Figure 5—source data 1). Alternatively, the polymorphisms could be within the organellar genes that are required to facilitate the function of the several thousand nuclear genes whose protein products are transported into the organelles and function there (Ajjawi et al., 2010). Finally, it is possible that the polymorphisms in the organelle impact retrograde signaling pathways, thus altering the function of the nuclear regulatory mechanisms (Vinti et al., 2000; Larkin et al., 2003; Estavillo et al., 2011; Xiao et al., 2012). Identifying the specific causal polymorphisms within the cytoplasmic genomes will require direct whole genome sequencing of the organellar genomes from all available genotypes to query the extent of natural variation in the organellar genome (Cao et al., 2011). An alternative may be to identify the causal genes underlying the nuclear loci involved in three-way interactions with the cytoplasm to triangulate the identity of the cytoplasmic gene.\n\n## Conclusion\n\nIn this work, we report a first genomic survey of how genetic variation within cytoplasmic genomes influences metabolomic variation. Cytoplasmic genetic variation alters metabolite variation with effects that are equivalent to, if not greater than, individual nuclear loci. More importantly, the cytoplasmic background significantly influences the ability to detect epistasis between nuclear loci. Thus cytoplasmic genomes should be included in any future analysis of natural variation, either by being included as a genotype in GWA studies or by designing future populations as reciprocal populations to allow for direct analysis of the cytoplasmic genomic variation in controlling the phenotype. This inclusion will allow direct assessment of how cytoplasmic genomic variation influences other phenotypic classes, such as transcriptomics or broader physiological phenotypes. Natural genetic variation in the organellar genomes while frequently ignored will have to be kept at the front of future experimental approaches designed to understand the evolution and genetic architecture of organismal phenotypes.\n\n## Materials and methods\n\n## Growth of the Kas × Tsu RIL population\n\nSeeds of the 341 lines of the Kas × Tsu recombinant inbred population were obtained from the Arabidopsis Biological Resource Center (ABRC, Columbus OH, USA) (Juenger et al., 2006, 2010; McKay et al., 2008). We grew a total of four to five plants per line, split into two randomized complete blocks per experiment with two independent experiments separated by approximately 3 months. This provides four independent replicates per genotype. We grew plants in large planting trays with 156 individual wells (b × w × h: 30 × 25 × 100 mm), filled with standard potting soil (Sunshine Mix #1, Sun Gro Horticulture, Bellevue WA). Prior to sowing, we imbibed seeds in distilled water and cold stratified them at 4°C for 4 days. We placed approximately 3–5 seeds of a single genotype in the center of a well and covered the trays with a transparent plastic hood to retain humidity during germination. Plants from both reciprocal subpopulations where intermixed in the block design to allow direct statistical testing of cytoplasmic effects. After 1 week, we removed the transparent hoods and surplus plants to leave one seedling per well. We watered plants twice a week with nutrient-enriched water (0.5% N-P-K fertilizer in a 2-1-2 ratio, Grow More 4-18-38, Grow More Inc., Gardena CA) and kept them in a climate-controlled chamber at 22°C and a day/night cycle of 10 hr/14 hr. These plants and experiment were the same as previously described (Joseph et al., 2013).\n\n## Metabolomics analysis\n\n31 days after sowing, we harvested plants for metabolomics analysis. One leaf from the first fully mature adult leaf pair of each plant was removed and ground in extraction solution as previously described (Rowe et al., 2008; Chan et al., 2010). Metabolite identity was determined by comparing retention time and mass to the 2007 UC Davis Genome Center Metabolomics Facility metabolites database (http://fiehnlab.ucdavis.edu/Metabolite-Library-2007; Fiehn et al., 2005). Mixed samples were run approximately every 20 samples to optimize the peak identification and quantification algorithms and to control for variation in the detection as previously described (Fiehn et al., 2008; Fernie et al., 2011). The ion count values were used as a surrogate for metabolite abundance. Metabolite abundance was median normalized prior to analysis to account for any technical variation between samples. A separate leaf was extracted for glucosinolates and analyzed by HPLC according to previously described methods with the results reported elsewhere (Kliebenstein et al., 2001a, b). From the analysis of glucosinolates, a set of 10 lines with aberrant or genetically impossible glucosinolate profiles based on the known parentage were removed from the analysis, leaving a total 316 lines.\n\n## Estimation of heritability\n\nAll RIL lines were represented in every block in both experiments creating a perfectly balanced randomized complete block design. All phenotypic data was used to calculate estimates of broad-sense heritability (H) for each phenotype as H = σ2g/σ2p , where σ2g was estimated for both the RIL genotypes and cytoplasmic genotypes and σ2p was the total phenotypic variance for a trait (Liu, 1998). The ANOVA model (Line heritability Model) for each metabolite phenotype in each line (ygmeb) was: ygceb= μ+Cc+Gg(Cc)+Ee+Bb(Ee)+Cc× Ee+ εgceb, where c = the Kas or Tsu cytoplasm; g = the 1…316 for the 316 RILs, e = experiment 1 or 2 and b = block 1…8 nested within experiment. This allowed cytoplasmic effects to be directly tested in the C term and each RIL genotype (G) nested within the appropriate cytoplasmic class, either Kas or Tsu. Experiment and block nested within experiment were treated as random terms within the model to better parse the variation. All resulting variance estimates, p values and heritability terms are presented (Figure 1—source data 1). σ2g for RIL was pulled from the Gg(Cc) term while σ2g for cytoplasmic variation was pulled directly from the CcMm term. We used mean values for the RILs for further analysis as we had a randomized complete block design with no missing lines. Additionally, means and LSmeans were correlated with an average r2 of 0.96 for the 159 known metabolites present in both experiments.\n\n## QTL analysis\n\nWe the previously reported genetic map for these lines of the Kas × Tsu RIL population (McKay et al., 2008; Joseph et al., 2013). To detect metabolite QTLs, we used the average phenotype per RIL across all experiments (Figure 1—source data 2) (Basten et al., 1999; Zeng et al., 1999; Wang et al., 2006). For QTL detection, composite interval mapping (CIM) was implemented using cim function in R/qtl package with a 10 cM window. Forward regression was used to identify three cofactors per trait. The declaration of statistically significant QTLs was based on permutation-derived empirical thresholds using 1000 permutations for each mapped trait. QTLs with a LOD score above 2 were considered significant for further analysis (Churchill and Doerge, 1994; Doerge and Churchill, 1996). Composite interval mapping to assign significance based on the underlying trait distribution is robust at handling normal or near normal trait distributions (Rebai, 1997), as found for most of our phenotypes. The define.peak function implemented in R/eqtl package was used to identify the peak location and one-LOD interval of each significant QTL for each trait (Wang et al., 2006). The effectscan function in R/qtl package was used to estimate the QTL additive effect (R Development Core Team, 2012). Allelic effects for each significant QTL are presented as percent effect, by estimating [x¯Tsu−x¯Kas]/x¯RIL for each significant main effect marker.\n\nQTL clusters were identified using a QTL summation approach where the position of each QTL for each trait was plotted on the chromosome by placing a 1 at the peak of the QTL. This was then used to sum the number of traits that had a detected QTL at a given position using a 5 cM sliding window across the genome (Kliebenstein et al., 2006). The QTL clusters identified defined genetic positions that were named respective to their phenotypic class and genetic positions with a prefix indicating the phenotype followed by the chromosome number and the cM position. For example, M.I.83 indicates a metabolomics QTL hotspot on chromosome I at 83 cM. The QTLs detected at the previously characterized and cloned glucosinolate AOP locus lies underneath the M.IV.17 metabolomics hotspot (Magrath et al., 1994; Kliebenstein et al., 2001c, a; Kroymann et al., 2003).\n\n## Additive ANOVA model\n\nTo directly test the additive effect of each identified QTL cluster we used an ANOVA model containing the markers most closely associated with each of the significant QTL clusters as individual main effect terms. For each metabolite the average accumulation in lines of genotype g at marker m was shown as ygm. The model (Additive Model) for each metabolite in each line (ygm) was: ygm= μ+ ∑g=12∑m=1mMgm+ εgm, where g = Kas(1) or Tsu(2); m = 1, …,14. The main effect of the markers was denoted as M involving 15 markers (m). The cytoplasmic genome was included as an additional marker to test for cytoplasmic genome effects. We tested all metabolites with the appropriate model using lm function implemented in the R/car package, which returned all p values, Type III sums-of-squares for the complete model and each main effect. QTL main-effect estimates (in terms of allelic substitution values) were estimated for each marker (Fox and Weisberg, 2011; R Development Core Team, 2012). There is no significant single marker or pairwise segregation distortion in this population indicating that the model is balanced for all markers (McKay et al., 2008).\n\n## QTL epistasis analysis\n\nTo test directly for epistatic interactions between the detected QTLs, we conducted an ANOVA using the pairwise epistasis model. We used this pairwise epistasis model per metabolite because we had previous evidence that RIL populations have a significant false negative QTL detection issue and wanted to be inclusive of all possible significant loci (Chan et al., 2011). Within the model, we tested all possible pairwise interactions between the markers. For each phenotype, the average value in the RILs of genotype g at marker m was shown as ygm. The model (Pairwise epistasis model) for each metabolite in each line (ygm) was: ygm= μ+ ∑g=12∑m=1mMgm+ ∑g=12∑m=1m∑n=m+1mMgmMgm+ εgmn  where g = Kas(1) or Tsu(2); m = 1, …,14 and n was the identity of the second marker for an interaction. The main effect of the markers was denoted as M having a model involving 15 markers. The cytoplasmic genome was included as an additional single-locus marker to test for interactions between the cytoplasmic and nuclear genomes. p values, Type III sums-of-squares for the complete model and each individual term and QTL pairwise-effect estimates in terms of allelic substitution values were obtained as described for additive model ANOVA (Fox and Weisberg, 2011; R Development Core Team, 2012). Significance values were corrected for multiple testing within a model using FDR (<0.05). The main effect and epistatic interactions of the loci were visualized using cytoscape.v2.8.3 with interactions significant for less than 10% of the phenotypes were excluded from the network analysis (Rowe et al., 2008; Smoot et al., 2011). The 10% threshold was chosen as an additional multiple testing correction to provide a more conservative image of the network. There are no pairwise locus segregation distortions within this population showing that the genotypes in this analysis are balanced (McKay et al., 2008). The same style of model was run to test for specific three-way interactions by including specific three-way terms as indicated (three-way epistasis model).\n\n## Plotting the epistatic center of phenotype\n\nTo plot the epistatic effect of QTLs upon a set of metabolites, we utilized the center of mass calculations. To do this we transitioned the physical distance metric in center of mass to a genetic distance metric for mapping the center of phenotype. In this, we classify one locus of each interaction as being on the x-axis and the other locus being positioned on the y-axis. On each axis, the allelic value of each specific genetic locus is plotted in relation to the heterozygote. For instance, in a two QTL situation the x-axis would be the alleles of QTL1 with the Kas having an allelic value of 1 and the Tsu having an allelic value of −1 while the other axis would be the same for QTL2 there by positioning each of the four homozygous genotypic class in one of the four quadrants. For each metabolite, the center of phenotype was calculated using center of mass calculations as xgeno=∑i=1Npixi∑i=1Npi and ygeno=∑i=1Npiyi∑i=1Npi where p is the average un-scaled phenotypic value for each of the four homozygous genotypic class and x is the x-coordinate of the corresponding genotypic class and y is the y-coordinate of corresponding genotypic class. The center of phenotype (xgeno,ygeno) of all the metabolites significant for an interaction were plotted to visualize the distribution centers of phenotype for each pairwise interaction.\n\n## Sequence diversity between Kas and Tsu Organelles\n\nKas-1 and Tsu-1 reads were obtained from NCBI (www.ncbi.nlm.nih.gov/, accessions SRX246466 and SRX246442 respectively) and aligned using Bowtie2 (Langmead et al., 2009; Langmead and Salzberg, 2012) to the Col-0 mitochondrial and chloroplast references obtained from TAIR (www.arabidopsis.org/) (Rhee et al., 2003). Aligned sequence reads were subsequently processed using SAMtools (Li et al., 2009), Picard (http://picard.sourceforge.net) and the Genome Analysis Toolkit (GATK) (McKenna et al., 2010). SNP discovery between Kas-1 and Tsu-1 was carried out using the UnifiedGenotyper package of GATK (Figure 5—source data 1).\n",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00776.048](https://doi.org/10.7554/eLife.00776.048)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled “Cytosolic genetic variation and extensive cytonuclear interactions control natural variation in the metabolome” for consideration at eLife. Your article has been favorably peer reviewed by Deputy editor Detlef Weigel and another reviewer.\n\nThe two reviewers discussed their comments before we reached this decision, and they have assembled the following comments to help you prepare a revised submission.\n\nThe main point of this paper, that cytoplasmic factors are likely to play an important role in phenotypic variation and should not be ignored, is important, and well substantiated in this paper. To support their claim with many phenotypes, the authors measured hundreds of metabolites in two A. thaliana recombinant inbred line populations, both from the same two accessions, but with one set having inherited the cytoplasm from one accession, and the other from the other accession. The authors convincingly show that inherited differences in the cytoplasm – almost certainly mutations in the mitochondrial and chloroplast genomes – have measurable and non-negligible effects on metabolites, and that there is substantial epistatic interaction between organellar and nuclear genomes.\n\nThat said, several claims seem overstated. Starting with the title, “control” is clearly too strong. First, the authors should spell out what fraction of the genetic variation is attributable to cytoplasmic variants, what fraction is due to C×G interactions, and how does this compare to straight G effects? Second, how representative the findings of the paper are of other phenotypes remains unknown, and the authors should be more circumspect when extending their claims to phenotypes that might have no or only a very indirect connection to metabolites. Furthermore, both reviewers found the paper hard to follow – the presentation needs to be greatly simplified, so that the important points come across better.\n\nSpecific criticisms:\n\n1) The authors’ explanation for the average heritability due to the organellar genome being much lower than the one coming from the nuclear genomes seems reasonable. However, both reviewers had a hard time trying to understand why there are apparently no metabolites that show cytoplasmic heritability greater than 0.15. Two different models were used to estimate nuclear and cytoplasmic heritability, but why? Along these lines, how do cytoplasmic and nuclear heritability compare for the metabolites significant for both? And on a related note, please explain why significant effects of the nuclear genome were estimated by partitioning the variance across 316 RIL genomes. These are not independent: surely you want the estimates produced by linkage mapping? Finally, that the complete cytoplasmic genome has a larger effect than individual nuclear loci (Figure 6) does not seem surprising, given that the mtDNA and cpDNA represent contain dozens of genes.\n\n2) A substantial criticism is that the authors do not tell us anything about sequence differences in the organellar genomes of the RIL parents. The short read data are available, so it would not be too much of a burden to determine how many coding variants there are, and how the distribution of coding variants compares between biosynthetic genes in the organellar and nuclear genomes. We note that the Discussion states that differences have been found in the organellar genomes.\n\n3) You discuss whether RILs have less phenotypic variation because they have less genetic variation. You write “A common concern of RIL populations is that they only sample two alleles per locus and thus might be limited in their genetic variation relative to species-wide diversity (Kim et al., 2007; Nordborg and Weigel, 2008).” This may or may not be common concern, but it is not the chief one, in our opinion, and it is also not the point made in the papers cited. As far as one can tell, Kim et al. (2007) does not discuss this issue at all, and Nordborg and Weigel (2008) make a completely different point, namely that RILs have greater power to detect rare alleles of large effect that “may not be important from an evolutionary perspective”. This is central to your paper because of the very real possibility that the observed QTL hotspots (which mostly differ from another RIL population) are due to rare alleles of large effect, which may well be deleterious. This does not invalidate the results, but changes their interpretation, in particular with respect to their evolutionary significance.\n\n4) There is little consideration of existing knowledge of the contribution of organellar biosynthesis steps to metabolic pathways. An important question is whether metabolites that are known to be made in organelles are more likely to be affected by variation in the organellar genomes than those that are not.\n\nFinally, the authors make the important point that the organellar genotypes would add greatly to GWA studies. We agree. Since the authors have metabolome data for 96 accessions (Chan et al., 2010), one wonders how much effort it would be to download existing read data, identify polymorphisms in the mitochondrial and chloroplast genomes, and include them in the GWA analysis. (A major unknown is what the distribution of shared polymorphisms in the organellar genomes is, since GWA studies rely on linkage having been broken up by recombination.) Such an analysis would greatly elevate the study and the authors are strongly encouraged to consider this very seriously.\n\nOverall, the clarity of the manuscript should be improved considerably. The text is replete with jargon and technical terms that are not properly introduced. That the models used are not always clearly stated also contributes to the paper being hard to read. The main model(s) need to be in the main text, so it is clear where the results come from.\n",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3fa02a6c-77de-4cb5-917e-882d7b52a4cd",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C1",
+      "claim": "Most genome analysis is typically confined to the nuclear genome with less attention paid to the organellar genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, in most quantitative genomics studies, genome analysis is largely confined to the nuclear genome with much less attention paid to the organellar genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a general statement about the state of the field based on established scientific practice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "fc09cf53-bf1b-4c95-bc79-7f8d93945900",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C2",
+      "claim": "The organellar genome plays a central role in controlling organismal metabolism and function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is in contrast to the central role that the organellar genome plays in controlling organismal metabolism and function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established scientific understanding of organellar function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "e8edccf2-ace7-4aec-bf43-bd1fc09b2f4d",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C3",
+      "claim": "Genomic variation in human organelles has been linked to several severe diseases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Genomic variation in human organelles has been linked to several severe diseases (Wallace et al., 1988; Taylor and Turnbull, 2005; Schon et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by references to prior scholarly work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "85adf692-e83e-4a73-97b1-c11fad6fb8fb",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C4",
+      "claim": "Genetic variation in organellar genomes modifies the quantitative effect of nuclear loci and disease phenotypes in humans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "More recently, quantitative studies on human diseases suggest that genetic variation in organellar genomes modify the quantitative effect of nuclear loci and disease phenotypes",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by references to prior research studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "93d4fa24-7b32-4324-b1e9-eaf209655ae0",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C5",
+      "claim": "Cytoplasmic genome variation can influence high order phenotypes including fitness, cognition, and biomass in mice, yeast, and birds.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, the use of structured populations in mice, yeast, and birds have shown that cytoplasmic genome variation can influence high order phenotypes including fitness, cognition, and biomass",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by references to prior studies in multiple organisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "7a8ded54-8ffe-4173-b724-f18f6a65d947",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C6",
+      "claim": "Mitochondrial variation has been shown to alter fitness and create hybrid isolation in a variety of invertebrate species.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Within ecological studies, mitochondrial variation has also been shown to alter fitness and create hybrid isolation in a variety of invertebrate species",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by multiple references to ecological studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "d3c9edf2-e678-4757-832f-85ad967911a2",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C7",
+      "claim": "Genetic variation in mitochondria is linked with large qualitative phenotypes in plants, such as cytoplasmic male sterility.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In plants, genetic variation in mitochondria is also linked with large qualitative phenotypes, such as cytoplasmic male sterility",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by references to plant breeding literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "bf2edfb3-34bd-4a8b-ae4c-6b195572146b",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C8",
+      "claim": "Plant breeding has a long history of using diallele crosses to test for the presence of maternal effects on a phenotype.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Plant breeding has a long history of using diallele crosses to test for the presence of maternal effects (cytoplasmic genetic variation) on a phenotype",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established practice in plant breeding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "88e14a2f-b861-48af-b770-c7a48d90e8a1",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C9",
+      "claim": "Cytoplasmic effects could have significant impacts on plant height in maize.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this was recently extended to a small reciprocal F2 family structure to show that the cytoplasmic effects could have significant impacts on plant height in maize",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to a recent study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "f174f36b-64c6-4d13-b296-86a3c3de086f",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C10",
+      "claim": "Agronomic traits in rice have been shown to be influenced by interactions between cytoplasmic and nuclear genomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In rice, agronomic traits have also been shown to be influenced by interactions between cytoplasmic and nuclear genomes but the specific loci were not identified",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to rice studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "fd2336b5-d306-4c9f-b509-5894b8858d1a",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C11",
+      "claim": "Reciprocal F2 populations typically have generated the impression that cytoplasmic effects on phenotypic variation are quite small in plants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, these reciprocal F2 populations typically have generated the impression that cytoplasmic effects on phenotypic variation are quite small in plants possibly because of an inability to account for interactions between the nuclear and cytoplasmic genomes",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is supported by references and includes an inference about the reason for the impression.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9f617dc6-322c-4d1c-8c42-1ca12a53e374",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C12",
+      "claim": "Genomic sequencing within Arabidopsis has shown the presence of considerable genetic polymorphism in both the plastidic and mitochondrial genomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast to the previous estimates of small effects, genomic sequencing within Arabidopsis has shown the presence of considerable genetic polymorphism in both the plastidic and mitochondrial genomes suggesting the potential for broad phenotypic consequences",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to genomic sequencing studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "47ba15ce-fa59-4c62-a3f7-eb76ac88f8ce",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C13",
+      "claim": "Plant organelles (mitochondria and plastids) are central to the function of plant primary metabolism and many specialized metabolites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We focused on metabolomics because it is cost effective for large sample numbers and because plant organelles, mitochondria and plastids, are central to the function of plant primary metabolism, as well as many specialized metabolites in both energy generation and biosynthesis",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This reflects established knowledge about organellar function, supported by references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "64ef6eed-01dc-46d3-b9d4-66fa72f12c6e",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C14",
+      "claim": "Within Arabidopsis, there are nearly 13,000 genes in the nuclear genome predicted to be involved in metabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Within Arabidopsis, there are nearly 13,000 genes in the nuclear genome predicted to be involved in metabolic processes of which ∼3000 may be targeted to the mitochondria and the plastid",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to the Arabidopsis genome initiative.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "47c6341c-6f21-4e90-932c-2a3d3937b318",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C15",
+      "claim": "Approximately 3000 genes in the Arabidopsis nuclear genome may be targeted to the mitochondria and the plastid.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Within Arabidopsis, there are nearly 13,000 genes in the nuclear genome predicted to be involved in metabolic processes of which ∼3000 may be targeted to the mitochondria and the plastid",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to the Arabidopsis genome initiative.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0ef86789-71dc-4fcf-afcc-9e48fcaeaa78",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C16",
+      "claim": "There are 88 total predicted genes in the Arabidopsis plastidic genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Aiding these processes are 88 total predicted genes in the plastidic genome and 121 in the mitochondrial genome",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to the Arabidopsis genome initiative.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "6288ed88-9f6e-4d15-bf67-5c84d1034570",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C17",
+      "claim": "There are 121 predicted genes in the Arabidopsis mitochondrial genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Aiding these processes are 88 total predicted genes in the plastidic genome and 121 in the mitochondrial genome",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to the Arabidopsis genome initiative.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0a3b300f-7f76-43f8-a63a-e4784904e718",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C18",
+      "claim": "The Kas × Tsu RIL population was generated from a reciprocal cross with approximately half of the resulting lines carrying Kas organelles and the other half carrying Tsu organelles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This population was generated from a reciprocal cross and approximately half of the resulting lines carry Kas organelles while the other half carry Tsu organelles allowing for explicit analysis of the influence of cytoplasmic genetic variation",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by references to prior publications describing the population.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "1322ad39-9db0-4157-b798-1e05a9804cf6",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C19",
+      "claim": "Genetic variation in the organelles influenced the accumulation of over 80% of the detectable metabolites in the Kas × Tsu RIL population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Analysis of the Kas × Tsu RIL population metabolome showed that genetic variation in the organelles influenced the accumulation of over 80% of the detectable metabolites.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from the metabolomics analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "6ae0c64f-cd5e-4564-aeb1-681339e0f28d",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C20",
+      "claim": "Phenotypic changes associated with cytoplasmic variation were as large and often larger than that found for individual nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast to previous observations suggesting that the cytoplasm has only small effects, phenotypic changes associated with cytoplasmic variation were as large and often larger than that found for individual nuclear loci",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data comparing cytoplasmic and nuclear effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b5fde257-e596-4236-ac37-dd28784e6bf2",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C21",
+      "claim": "The cytoplasm was found to be a central hub in the epistatic network controlling natural variation in plant metabolism.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, the cytoplasm was found to be a central hub in the epistatic network controlling natural variation in plant metabolism.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from epistatic network analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b99e6967-7995-4478-81a4-6cbfdafdcb92",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C22",
+      "claim": "The cytoplasmic background displays the ability to hide or alter epistatic interactions between nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This centrality led to the cytoplasmic background displaying the unexpected ability to hide or alter epistatic interactions between nuclear loci.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from three-way epistasis analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "cc6d2d4d-cc26-4f7c-9d80-7c3dcab6b8e6",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C23",
+      "claim": "A total of 2435 metabolites were identified in over 25% of the RILs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A total of 2435 metabolites were identified in over 25% of the RILs with 215 of these being known compounds and 2220 being unidentified compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from metabolomics analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b21a1c19-2be1-4c3f-b434-fb660e78c082",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C24",
+      "claim": "Of the 2435 metabolites identified, 215 were known compounds and 2220 were unidentified compounds.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A total of 2435 metabolites were identified in over 25% of the RILs with 215 of these being known compounds and 2220 being unidentified compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from metabolomics analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "af780477-59b7-47a6-87b0-52124432baee",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C25",
+      "claim": "Of the 2435 metabolites, 559 were identified in both experiments (161 known and 398 unknown).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Of these 2435 metabolites, 559 were identified in both experiments (161 known and 398 unknown) while the rest were specific to one of the two experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from metabolomics analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "4a3691f6-4603-41a9-898b-75d542c73a3e",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C26",
+      "claim": "Within the 316 lines of the Kas × Tsu population, 136 have the Kas cytoplasm and 180 have the Tsu cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Within the 316 lines for this population, 136 have the Kas cytoplasm and 180 have the Tsu cytoplasm.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the composition of the experimental population.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b104fa6b-19da-42c9-9fe4-266c43e7bef4",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C27",
+      "claim": "The cytoplasmic genome explained twice the variance as any individual nuclear locus on average.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using the additive model, we generated per locus estimates of heritability that showed the cytoplasmic genome explained twice the variance as any individual nuclear locus on average",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by statistical analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "2e2c989e-f3fb-43b5-90f2-77eaead6bbfc",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C28",
+      "claim": "There were polymorphisms spread out across a large number of genes in the organellar genomes including regulatory genes, several unknown genes, and key energy genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This analysis showed that there were polymorphisms spread out across a large number of genes including regulatory genes, such as rpoC2 in the plastid, several unknown genes, and key energy genes, such as Rubisco large subunit.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by sequencing data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "021dedfe-64e7-48ff-b33f-8ca684b03f36",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C29",
+      "claim": "In the mitochondria, 32 of the 96 polymorphisms were within the NADH dehydrogenase 7 and a further 13 polymorphisms in four other NADH dehydrogenase complex genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically in the mitochondria, 32 of the 96 polymorphisms were within the NADH dehydrogenase 7 and a further 13 polymorphisms in four other NADH dehydrogenase complex genes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by sequencing data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "6dbed976-fee8-4928-a968-8e0bfd839b50",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C30",
+      "claim": "The number of polymorphisms in NADH dehydrogenase genes is vastly more than would be expected by random chance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is vastly more polymorphisms than would be expected by random chance suggesting a change in NADH and related metabolism between the Kas and Tsu organelles (hyper-geometric test, p<0.001).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is supported by statistical testing of the sequencing data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9514c2fe-6fcf-4102-ad02-0de7e1bcf13a",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C31",
+      "claim": "Within the Kas × Tsu population, the mitochondrial and plastidic genomes are perfectly co-inherited making it impossible to resolve the individual effects of the mitochondrial and plastidic genomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, within this population the mitochondrial and plastidic genomes are perfectly co-inherited making it impossible to resolve the individual effects of the mitochondrial and plastidic genomes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects the biological constraint of the experimental population.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b6c5d876-8f34-45b9-8a13-2e3bd66629da",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C32",
+      "claim": "It isn't possible to ascribe metabolites to specific subcellular compartments using a whole tissue extract as most metabolites often accumulate in most compartments within a plant cell.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, it isn't possible to ascribe metabolites to specific subcellular compartments using a whole tissue extract as most metabolites, even those synthesized in specific compartments, often accumulate in most compartments within a plant cell",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This reflects established knowledge about metabolite distribution, supported by a reference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "34bb3f5c-398f-4cba-971f-1f43edb2d2e8",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C33",
+      "claim": "The cytoplasmic locus was one of the two nodes with the highest number of significant pairwise epistatic interactions connecting to 6 of the 14 nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, the cytoplasmic locus was one of the two nodes with the highest number of significant pairwise epistatic interactions connecting to 6 of the 14 nuclear loci.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by epistatic network analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "18cbea0d-1cf7-4108-8cc3-2b65ca2c461e",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C34",
+      "claim": "The level of interaction of the cytoplasmic locus is higher than the average of the network degree distribution (3.5 ± 0.46 SE).",
+      "claim_type": "EXPLICIT",
+      "source_text": "This level of interaction is higher than the average of the network degree distribution (3.5 ± 0.46 SE)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by statistical analysis of the epistatic network.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "aa22b546-f74a-4840-a7ee-7a20c697eb4a",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C35",
+      "claim": "The M.I.83 nuclear locus had the highest level of interactions involving 7 of the other 13 nuclear loci but did not interact directly with the cytoplasmic variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The M.I.83 nuclear locus had the highest level of interactions involving 7 of the other 13 nuclear loci but did not interact directly with the cytoplasmic variation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by epistatic network analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "031ef96c-d5ac-4109-8672-a55eff06c037",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C36",
+      "claim": "For all cytonuclear epistatic interactions, the axis representing cytoplasmic genetic variation showed a wider phenotypic range than the axis representing variation in the nuclear locus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For all cytonuclear epistatic interactions, the axis representing cytoplasmic genetic variation showed a wider phenotypic range than the axis representing variation in the nuclear locus",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by center of phenotype analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "f5d523e3-cdbb-45c5-adea-a53fec1e8bd6",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C37",
+      "claim": "The range of phenotypic effects in epistasis between two nuclear loci was typically smaller than that between nuclear and cytoplasmic genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, the range of phenotypic effects in epistasis between two nuclear loci was typically smaller than that between nuclear and cytoplasmic genome",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by center of phenotype analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "69aa2f02-cb3d-4290-827c-3ea50ee25436",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C38",
+      "claim": "Including the 10 three-way interactions significantly increased the total variance explained by the model for the distribution of metabolites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We found that including these 10 new three-way interactions significantly increased the total variance explained by the model for the distribution of metabolites while only using less than 42% of the available degrees of freedom (Figure 8, t-test p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by statistical analysis of the three-way epistasis model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "e8088930-e25b-4b6c-9cc1-21cbaccd6e94",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C39",
+      "claim": "The combined variance of the nuclear genome was larger than the variance due to cytoplasmic genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, the combined variance of the nuclear genome was larger than the variance due to cytoplasmic genome",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by heritability analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "a782b277-f46a-4732-920a-db46ab987a9f",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C40",
+      "claim": "Cytoplasmic genetic variation affected more metabolites than any of the individual nuclear loci typically with larger effects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, cytoplasmic genetic variation affected more metabolites than any of the individual nuclear loci typically with larger effects",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by comparative analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "cbfcf41e-467e-4819-830d-2ef364667a27",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C41",
+      "claim": "The average nuclear locus spanned approximately the same number of genes as the organellar genomes combined.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is true even though the average nuclear locus spanned approximately the same number of genes as the organellar genomes combined.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the genetic map and genome structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0b6dc07e-8814-4c16-b663-e1dd4e0916e9",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C42",
+      "claim": "Cytonuclear epistasis explained as much, if not more, metabolic variation than the combined additive effects of the nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This cytonuclear epistasis explained as much, if not more, metabolic variation than the combined additive effects of the nuclear loci.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by variance component analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9fb19bf1-3e15-4691-9b1b-363970fb32f7",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C43",
+      "claim": "The cytoplasmic genome controlled larger phenotypic changes than the nuclear locus within a cytonuclear interaction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, the cytoplasmic genome controlled larger phenotypic changes than the nuclear locus within a cytonuclear interaction",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by center of phenotype analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "28f26038-ac60-4b43-a910-81e35b8bc179",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C44",
+      "claim": "The cytoplasmic background plays a key role in determining how natural variation within nuclear loci will function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, the cytoplasmic genetic background plays a key role in determining how natural variation within nuclear loci will function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the three-way epistasis analysis showing cytoplasmic effects on nuclear interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "3cabe95f-9195-4e2b-bbe1-5afbaeee1be0",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C45",
+      "claim": "The effect of the cytoplasmic genetic variation was spread out across nearly all of primary metabolism.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The effect of the cytoplasmic genetic variation was spread out across nearly all of primary metabolism making it impossible to ascribe a causal link with solely plastidic or mitochondrial genes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by metabolic pathway analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "35db3231-3ab9-45ac-8df5-593ff9bb451d",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C46",
+      "claim": "Separating the mitochondrial and plastidic genomes to resolve their relative roles would require identifying rare individuals where the two organelles show bi-parental inheritance instead of the uni-parental/maternal mode of inheritance typical for Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Separating the two genomes to resolve their relative roles would require identifying rare individuals where the two organelles show bi-parental inheritance instead of the uni-parental/maternal mode of inheritance typical for Arabidopsis",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This reflects knowledge about Arabidopsis inheritance patterns, supported by a reference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "30797d14-69a6-4b75-89e5-e93908b79017",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C47",
+      "claim": "The plant cytoplasmic genomes contain only about 1% of the number of genes as found within the nuclear genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The plant cytoplasmic genomes contain only about 1% of the number of genes as found within the nuclear genome",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to the Arabidopsis genome initiative.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "cf59f8fa-629e-432c-94c1-69c85af9a6a3",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C48",
+      "claim": "Genetic variation in this small fraction of genes has a large consequence upon the plants metabolic variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Yet genetic variation in this small fraction of genes has a large consequence upon the plants metabolic variation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the experimental results showing large cytoplasmic effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "2a19fdab-5acf-498d-8b97-3ab38701922c",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C49",
+      "claim": "Cytoplasmic genetic variation alters metabolite variation with effects that are equivalent to, if not greater than, individual nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cytoplasmic genetic variation alters metabolite variation with effects that are equivalent to, if not greater than, individual nuclear loci.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by comparative analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "ae65abc3-130c-4052-b8f0-c15fe897953f",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C50",
+      "claim": "The cytoplasmic background significantly influences the ability to detect epistasis between nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "More importantly, the cytoplasmic background significantly influences the ability to detect epistasis between nuclear loci.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by three-way epistasis analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "2c4b92b8-5bad-4a6c-a61a-b241046b3d44",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C51",
+      "claim": "Cytoplasmic genomes should be included in any future analysis of natural variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus cytoplasmic genomes should be included in any future analysis of natural variation, either by being included as a genotype in GWA studies or by designing future populations as reciprocal populations to allow for direct analysis of the cytoplasmic genomic variation in controlling the phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a recommendation inferred from the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0b153865-05d9-4a06-b60c-8e07aeb6e758",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C52",
+      "claim": "Natural genetic variation in the organellar genomes while frequently ignored will have to be kept at the front of future experimental approaches designed to understand the evolution and genetic architecture of organismal phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Natural genetic variation in the organellar genomes while frequently ignored will have to be kept at the front of future experimental approaches designed to understand the evolution and genetic architecture of organismal phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion inferred from the experimental findings about the importance of cytoplasmic variation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b4c51d82-7b8e-49b5-bb72-9f49245bd58a",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C53",
+      "claim": "Seeds of the 341 lines of the Kas × Tsu recombinant inbred population were obtained from the Arabidopsis Biological Resource Center.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Seeds of the 341 lines of the Kas × Tsu recombinant inbred population were obtained from the Arabidopsis Biological Resource Center (ABRC, Columbus OH, USA)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the source of experimental materials.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "246c3eca-b2f9-41b9-8647-dfdac962e873",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C54",
+      "claim": "A total of four to five plants per line were grown, split into two randomized complete blocks per experiment with two independent experiments separated by approximately 3 months.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We grew a total of four to five plants per line, split into two randomized complete blocks per experiment with two independent experiments separated by approximately 3 months.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "eb04fe3c-e1f9-4c37-b22c-ecf1f432268b",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C55",
+      "claim": "Plants were kept in a climate-controlled chamber at 22°C and a day/night cycle of 10 hr/14 hr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "kept them in a climate-controlled chamber at 22°C and a day/night cycle of 10 hr/14 hr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental growth conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "049a768c-46a8-478f-a38e-e3e6d10b45bb",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C56",
+      "claim": "31 days after sowing, plants were harvested for metabolomics analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "31 days after sowing, we harvested plants for metabolomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental protocol.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "e5611392-c3b8-463d-aa4a-ca12b9e1f9e7",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C57",
+      "claim": "Metabolite identity was determined by comparing retention time and mass to the 2007 UC Davis Genome Center Metabolomics Facility metabolites database.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Metabolite identity was determined by comparing retention time and mass to the 2007 UC Davis Genome Center Metabolomics Facility metabolites database",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the analytical method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "8cda0138-2d55-477d-8f44-7223a10342ab",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C58",
+      "claim": "A set of 10 lines with aberrant or genetically impossible glucosinolate profiles based on the known parentage were removed from the analysis, leaving a total 316 lines.",
+      "claim_type": "EXPLICIT",
+      "source_text": "From the analysis of glucosinolates, a set of 10 lines with aberrant or genetically impossible glucosinolate profiles based on the known parentage were removed from the analysis, leaving a total 316 lines.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes data quality control procedures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "c3cfc9c6-1628-458d-a205-c97f8868578a",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C59",
+      "claim": "All RIL lines were represented in every block in both experiments creating a perfectly balanced randomized complete block design.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All RIL lines were represented in every block in both experiments creating a perfectly balanced randomized complete block design.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "8eceb195-bd6d-4801-98fd-a2d386c39a44",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C60",
+      "claim": "The previously reported genetic map for the Kas × Tsu RIL population was used for QTL analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We the previously reported genetic map for these lines of the Kas × Tsu RIL population",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This references prior work that provided the genetic map.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "d6cdce78-708b-4288-9d34-318864548294",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C61",
+      "claim": "Composite interval mapping was implemented using cim function in R/qtl package with a 10 cM window.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For QTL detection, composite interval mapping (CIM) was implemented using cim function in R/qtl package with a 10 cM window.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the analytical method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "32167224-e472-42de-81d5-a0271ef4eab6",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C62",
+      "claim": "QTLs with a LOD score above 2 were considered significant for further analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "QTLs with a LOD score above 2 were considered significant for further analysis",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the statistical threshold used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "e6828c70-e74e-472b-847f-74103d36024d",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C63",
+      "claim": "There is no significant single marker or pairwise segregation distortion in the Kas × Tsu population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There is no significant single marker or pairwise segregation distortion in this population indicating that the model is balanced for all markers",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to prior characterization of the population.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "be227ae1-9623-494f-b0eb-547ad53efe64",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C64",
+      "claim": "RIL populations have a significant false negative QTL detection issue.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We used this pairwise epistasis model per metabolite because we had previous evidence that RIL populations have a significant false negative QTL detection issue",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "6868e45b-881b-427d-9786-23c064c5a5b0",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C65",
+      "claim": "Significance values were corrected for multiple testing within a model using FDR (<0.05).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Significance values were corrected for multiple testing within a model using FDR (<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the statistical correction method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "ecbe5dec-b126-4443-8393-527d2529b2df",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C66",
+      "claim": "The 10% threshold was chosen as an additional multiple testing correction to provide a more conservative image of the network.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The 10% threshold was chosen as an additional multiple testing correction to provide a more conservative image of the network.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the rationale for the analytical threshold.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "26bd0fae-e995-40c9-9411-d1a23410cab3",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C67",
+      "claim": "There are no pairwise locus segregation distortions within the Kas × Tsu population showing that the genotypes in this analysis are balanced.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There are no pairwise locus segregation distortions within this population showing that the genotypes in this analysis are balanced",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a reference to prior characterization of the population.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "d907fb52-a283-4f36-8851-d39dbf16f474",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C68",
+      "claim": "Kas-1 and Tsu-1 reads were obtained from NCBI and aligned using Bowtie2 to the Col-0 mitochondrial and chloroplast references.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Kas-1 and Tsu-1 reads were obtained from NCBI (www.ncbi.nlm.nih.gov/, accessions SRX246466 and SRX246442 respectively) and aligned using Bowtie2 to the Col-0 mitochondrial and chloroplast references obtained from TAIR",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the sequencing data analysis method.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "d326b8c6-6bd2-4b46-a1e6-b3ce5573bf79",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C69",
+      "claim": "SNP discovery between Kas-1 and Tsu-1 was carried out using the UnifiedGenotyper package of GATK.",
+      "claim_type": "EXPLICIT",
+      "source_text": "SNP discovery between Kas-1 and Tsu-1 was carried out using the UnifiedGenotyper package of GATK",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the analytical method used for SNP discovery.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "49c5cc9b-eda7-4a04-84db-2d690448f045",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C70",
+      "claim": "The affected metabolites included key parts of central metabolism and some of the most specialized metabolites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The affected metabolites included key parts of central metabolism and some of the most specialized metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by metabolic pathway analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "71a4a9ec-5a58-465f-bdbc-ab15eb02912b",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C71",
+      "claim": "Variation in the organellar genomes could directly influence the function of any nuclear gene functioning within the organelle.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, variation in the organellar genomes could directly influence the function of any of nuclear gene functioning within the organelle",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the biological relationship between organellar and nuclear genes, supported by references.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "dff629c0-2f3f-4cd1-a0b2-bbb314a75184",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C72",
+      "claim": "Metabolism is an ideal phenotype to use for testing how cytoplasmic variation can influence phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This suggests that metabolism is an ideal phenotype to use for testing how cytoplasmic variation can influence phenotypic variation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the biological role of organelles in metabolism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9bcee1a1-61fd-4dea-b2b2-b0ad93e32bbd",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C73",
+      "claim": "The polymorphisms could be from genetic polymorphisms in organellar genes that are central to plant metabolism, such as those central to photosynthesis or NADH synthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This could be from genetic polymorphisms in organellar genes that are central to plant metabolism, such as those central to photosynthesis or NADH synthesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation for the observed effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "70dff781-d7d1-41e1-aaa4-44eaa5dd7d6e",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C74",
+      "claim": "The polymorphisms could be within the organellar genes that are required to facilitate the function of the several thousand nuclear genes whose protein products are transported into the organelles and function there.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Alternatively, the polymorphisms could be within the organellar genes that are required to facilitate the function of the several thousand nuclear genes whose protein products are transported into the organelles and function there",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative explanation supported by a reference to prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "db2dd23f-56d2-438f-968d-a2e22bff6502",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C75",
+      "claim": "It is possible that the polymorphisms in the organelle impact retrograde signaling pathways, thus altering the function of the nuclear regulatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, it is possible that the polymorphisms in the organelle impact retrograde signaling pathways, thus altering the function of the nuclear regulatory mechanisms",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative explanation supported by references to prior work on retrograde signaling.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "645515dc-ea91-4fce-adfb-152db3cf78ba",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C76",
+      "claim": "Identifying the specific causal polymorphisms within the cytoplasmic genomes will require direct whole genome sequencing of the organellar genomes from all available genotypes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Identifying the specific causal polymorphisms within the cytoplasmic genomes will require direct whole genome sequencing of the organellar genomes from all available genotypes to query the extent of natural variation in the organellar genome",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a methodological recommendation inferred from the limitations of the current study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "14a8563a-9d24-4893-b636-f489bdfe0fed",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C77",
+      "claim": "An alternative approach may be to identify the causal genes underlying the nuclear loci involved in three-way interactions with the cytoplasm to triangulate the identity of the cytoplasmic gene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An alternative may be to identify the causal genes underlying the nuclear loci involved in three-way interactions with the cytoplasm to triangulate the identity of the cytoplasmic gene.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative methodological suggestion for future work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "24e4f06f-65c8-4cd2-a423-458e58a2b07d",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C78",
+      "claim": "This inclusion will allow direct assessment of how cytoplasmic genomic variation influences other phenotypic classes, such as transcriptomics or broader physiological phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This inclusion will allow direct assessment of how cytoplasmic genomic variation influences other phenotypic classes, such as transcriptomics or broader physiological phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about future research based on the current findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "bb85007d-7d10-4900-b14d-f9748cab9df7",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C79",
+      "claim": "Most of the organellar genes function to facilitate the metabolic processes that occur in organelles using both nuclear and cytoplasmic-encoded proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "most of which function to facilitate the metabolic processes that occur in organelles using both nuclear and cytoplasmic-encoded proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established knowledge about organellar gene function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9afcdb40-4e86-4747-9be0-dce9102f888f",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C80",
+      "claim": "The cytoplasmic variation had effects similar to, if not larger than, the largest individual nuclear locus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This showed that the cytoplasmic variation had effects similar to, if not larger than, the largest individual nuclear locus.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from the metabolomic QTL analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "4b84bc56-3f10-41c7-bd69-976f36d3376c",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C81",
+      "claim": "Inclusion of cytoplasmic variation into the genetic model greatly increased the explained phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Inclusion of cytoplasmic variation into the genetic model greatly increased the explained phenotypic variation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by model comparison analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "53893035-9197-4c43-8a2f-b23df5a66d3d",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C82",
+      "claim": "Cytoplasmic genetic variation was a central hub in the epistatic network controlling the plant metabolome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cytoplasmic genetic variation was a central hub in the epistatic network controlling the plant metabolome.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by epistatic network analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9468d301-ffeb-4ba9-9805-e53a5bfa07a4",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C83",
+      "claim": "The cytoplasmic background could alter or hide pairwise epistasis between nuclear loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This epistatic influence manifested such that the cytoplasmic background could alter or hide pairwise epistasis between nuclear loci.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by three-way epistasis analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "6b9601a0-384e-44ab-b175-1d85bf73e9e9",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C84",
+      "claim": "Cytoplasmic genetic variation plays a central role in controlling natural variation in metabolomic networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, cytoplasmic genetic variation plays a central role in controlling natural variation in metabolomic networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion inferred from the comprehensive experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "7573bf39-4b91-46aa-bfea-c06884be7f9f",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "claim_id": "C85",
+      "claim": "Cytoplasmic genomes must be included in any future analysis of natural variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This suggests that cytoplasmic genomes must be included in any future analysis of natural variation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a recommendation inferred from the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The experimental design using a reciprocal RIL population with balanced replication and appropriate metabolomics methods is sound. The finding that cytoplasmic variation affects >80% of metabolites with effect sizes comparable to or larger than individual nuclear loci is well-supported by the data from 316 lines with proper controls and quality filtering.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The comparative analysis using additive models with appropriate statistical methods demonstrates that cytoplasmic variation explains twice the variance of individual nuclear loci on average, while affecting more metabolites with larger effects. The finding that combined nuclear variance exceeds cytoplasmic variance is also clearly supported, providing a nuanced view of relative contributions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "f445a4be-9f6a-4df6-8b09-17d43cbec201",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The QTL mapping methodology is appropriate with composite interval mapping, permutation-based thresholds, and proper multiple testing corrections. The use of a previously validated genetic map and confirmation of no segregation distortion supports the validity of the QTL detection approach.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "07279cab-fc11-44c2-844e-befa53a792e6",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The epistatic network analysis demonstrates that cytoplasmic variation is a central hub with 6 connections to nuclear loci, exceeding the network average. This is supported by appropriate statistical modeling and network analysis methods, with proper significance thresholds applied.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9817770e-7e8e-4371-957b-56608d8d8294",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The center of phenotype analysis provides a novel visualization approach showing that cytoplasmic variation has larger phenotypic effects than nuclear loci in cytonuclear epistatic interactions. The methodology is clearly described and the findings are consistent across multiple interaction pairs.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "63a951bf-06b3-4006-9a6f-922978a76331",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The three-way epistasis analysis demonstrates that cytoplasmic background can alter or hide nuclear-nuclear epistasis, with statistical significance (p<0.001) and substantial improvement in variance explained. The finding is supported by appropriate model comparisons and uses less than 42% of available degrees of freedom, avoiding overfitting concerns.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "76f1b724-da98-4d31-a355-f71b8f8e29d1",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The sequencing analysis identifying polymorphisms in organellar genomes is methodologically sound using standard bioinformatics tools. The enrichment of polymorphisms in NADH dehydrogenase genes is statistically significant (hypergeometric test, p<0.001), suggesting functional relevance.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "1f308c86-dcfc-456f-be1f-460cbd47c86c",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The authors appropriately acknowledge key limitations: co-inheritance of mitochondrial and plastid genomes prevents separation of their individual effects, and whole-tissue extracts cannot resolve subcellular compartmentalization. These are inherent biological constraints of the experimental system, not methodological flaws.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "9837a9e8-5f87-4826-923b-af588fb43971",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These are speculative mechanistic explanations for the observed cytoplasmic effects. While plausible and supported by citations to relevant literature, the current data cannot distinguish between direct metabolic effects, facilitation of nuclear gene function, or retrograde signaling. Additional experiments would be needed to test these hypotheses.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "cc806ed1-9461-4b22-9f8c-483e43672ada",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These are appropriate recommendations for future work to identify causal polymorphisms. The suggestions are logical extensions of the current findings and acknowledge the limitations that prevent causal identification in the present study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "450251d0-9fab-4e12-a16a-30813e4edab5",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R11",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The finding that cytonuclear epistasis explains as much or more variance than additive nuclear effects is supported by variance component analysis. The observation that effects span central and specialized metabolism is supported by metabolic pathway mapping of the affected metabolites.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "8c198827-58f1-4050-8cda-a2c99278ce75",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R12",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The overarching conclusion that cytoplasmic genetic variation plays a central role in metabolomic variation is well-supported by the comprehensive experimental evidence. The recommendation to include cytoplasmic genomes in future studies is a logical inference from the demonstrated large effects and extensive epistasis.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "514456e7-ee50-4cda-9be8-4254e3a232cb",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R13",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These forward-looking recommendations are appropriate inferences from the findings. The suggestion to include cytoplasmic variation in GWA studies or use reciprocal populations is a logical methodological recommendation based on the demonstrated importance of cytoplasmic effects.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "92d4b76f-e93d-4068-982d-488041b635bc",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R14",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The literature review establishing context for cytoplasmic effects is well-supported by appropriate citations. The claims accurately represent prior work in humans, model organisms, and plants, providing proper scientific context for the current study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0da15344-b291-48e7-a7d7-b4f995e3f21c",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R15",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The background information about Arabidopsis genome organization and organellar gene content is accurately cited from the Arabidopsis Genome Initiative. The numbers of genes involved in metabolism and targeted to organelles provide appropriate context for understanding why metabolism is a suitable phenotype for this study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "2f1b15e0-4cb7-486b-a239-0efde005ea33",
+      "content_id": "43afabd8-1ca7-494e-b96c-223a8ea34730",
+      "result_id": "R16",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The inference that a small number of organellar genes can have large metabolic effects is supported by the experimental data and is consistent with the biological role of organelles in metabolism. The reasoning that metabolism is an ideal phenotype for testing cytoplasmic effects is logically sound given organellar involvement in metabolic processes.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly state 'The authors convincingly show that inherited differences in the cytoplasm...have measurable and non-negligible effects on metabolites, and that there is substantial epistatic interaction between organellar and nuclear genomes.' The main finding that cytoplasmic factors play an important role is described as 'important, and well substantiated in this paper.' While presentation and some interpretations are criticized, the core empirical findings about cytoplasmic effects on metabolites are affirmed.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "83e5a56f-50cc-4f28-88b9-812313f0079b",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express confusion about the heritability analysis, stating 'both reviewers had a hard time trying to understand why there are apparently no metabolites that show cytoplasmic heritability greater than 0.15' and questioning why 'Two different models were used to estimate nuclear and cytoplasmic heritability.' They request clarification on 'how do cytoplasmic and nuclear heritability compare for the metabolites significant for both?' and question the methodology for estimating nuclear genome effects. The reviewers also note that comparing the complete cytoplasmic genome to individual nuclear loci 'does not seem surprising, given that the mtDNA and cpDNA represent contain dozens of genes,' suggesting the comparison may be misleading.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "a72aa5c3-5ae5-49c4-9910-2de4a662c001",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers state 'A substantial criticism is that the authors do not tell us anything about sequence differences in the organellar genomes of the RIL parents' despite noting that 'the Discussion states that differences have been found in the organellar genomes.' They request that authors 'determine how many coding variants there are, and how the distribution of coding variants compares between biosynthetic genes in the organellar and nuclear genomes.' While the claims about polymorphisms are based on data, reviewers indicate the analysis is incomplete and needs more context.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "84e27729-b6c1-4240-a185-1d593c088300",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims about epistatic network structure and cytonuclear interactions are part of the core finding that reviewers describe as 'convincingly show[ing]...substantial epistatic interaction between organellar and nuclear genomes.' No specific methodological concerns are raised about the epistasis analysis itself, and the finding is characterized as well-substantiated.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "70a7dd5b-1530-4c35-85b4-cab6d4ba61ef",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The three-way epistasis findings showing that cytoplasmic background can alter or hide nuclear epistasis are part of the 'substantial epistatic interaction' that reviewers affirm as convincingly demonstrated. No specific concerns are raised about these higher-order interaction claims.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "b71bcf49-3653-4027-a2dc-7f0951bd2fae",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express concern about generalizability, stating 'how representative the findings of the paper are of other phenotypes remains unknown, and the authors should be more circumspect when extending their claims to phenotypes that might have no or only a very indirect connection to metabolites.' They also raise concerns about evolutionary significance, noting 'the very real possibility that the observed QTL hotspots...are due to rare alleles of large effect, which may well be deleterious. This does not invalidate the results, but changes their interpretation, in particular with respect to their evolutionary significance.' The recommendation to include cytoplasmic genomes in future studies is supported in principle ('We agree'), but the broad claims need qualification.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0235d85d-0b51-413f-8cc2-2e10bee9a789",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers criticize that 'There is little consideration of existing knowledge of the contribution of organellar biosynthesis steps to metabolic pathways' and ask 'whether metabolites that are known to be made in organelles are more likely to be affected by variation in the organellar genomes than those that are not.' This suggests the claim that effects are 'spread out across nearly all of primary metabolism' needs more careful analysis in relation to known organellar functions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "12a972df-d539-41e6-b890-2d162151b7f6",
+      "content_id": "e55a721e-3900-49d1-ab0d-ec673ac137b3",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These background claims about the field's focus on nuclear genomes and previous impressions of small cytoplasmic effects are implicitly supported by reviewers' agreement that 'cytoplasmic factors are likely to play an important role in phenotypic variation and should not be ignored' and their characterization of this point as 'important.' No concerns are raised about these contextual claims.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0a3b300f-7f76-43f8-a63a-e4784904e718",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "1322ad39-9db0-4157-b798-1e05a9804cf6",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "6ae0c64f-cd5e-4564-aeb1-681339e0f28d",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "cc6d2d4d-cc26-4f7c-9d80-7c3dcab6b8e6",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "b21a1c19-2be1-4c3f-b434-fb660e78c082",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "af780477-59b7-47a6-87b0-52124432baee",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "4a3691f6-4603-41a9-898b-75d542c73a3e",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "b4c51d82-7b8e-49b5-bb72-9f49245bd58a",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "246c3eca-b2f9-41b9-8647-dfdac962e873",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "eb04fe3c-e1f9-4c37-b22c-ecf1f432268b",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "049a768c-46a8-478f-a38e-e3e6d10b45bb",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "e5611392-c3b8-463d-aa4a-ca12b9e1f9e7",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "8cda0138-2d55-477d-8f44-7223a10342ab",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "c3cfc9c6-1628-458d-a205-c97f8868578a",
+      "result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0"
+    },
+    {
+      "claim_id": "b104fa6b-19da-42c9-9fe4-266c43e7bef4",
+      "result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2"
+    },
+    {
+      "claim_id": "e8088930-e25b-4b6c-9cc1-21cbaccd6e94",
+      "result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2"
+    },
+    {
+      "claim_id": "a782b277-f46a-4732-920a-db46ab987a9f",
+      "result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2"
+    },
+    {
+      "claim_id": "cbfcf41e-467e-4819-830d-2ef364667a27",
+      "result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2"
+    },
+    {
+      "claim_id": "9afcdb40-4e86-4747-9be0-dce9102f888f",
+      "result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2"
+    },
+    {
+      "claim_id": "4b84bc56-3f10-41c7-bd69-976f36d3376c",
+      "result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2"
+    },
+    {
+      "claim_id": "8eceb195-bd6d-4801-98fd-a2d386c39a44",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "d6cdce78-708b-4288-9d34-318864548294",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "32167224-e472-42de-81d5-a0271ef4eab6",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "e6828c70-e74e-472b-847f-74103d36024d",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "be227ae1-9623-494f-b0eb-547ad53efe64",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "6868e45b-881b-427d-9786-23c064c5a5b0",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "ecbe5dec-b126-4443-8393-527d2529b2df",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "26bd0fae-e995-40c9-9411-d1a23410cab3",
+      "result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201"
+    },
+    {
+      "claim_id": "b5fde257-e596-4236-ac37-dd28784e6bf2",
+      "result_id": "07279cab-fc11-44c2-844e-befa53a792e6"
+    },
+    {
+      "claim_id": "34bb3f5c-398f-4cba-971f-1f43edb2d2e8",
+      "result_id": "07279cab-fc11-44c2-844e-befa53a792e6"
+    },
+    {
+      "claim_id": "18cbea0d-1cf7-4108-8cc3-2b65ca2c461e",
+      "result_id": "07279cab-fc11-44c2-844e-befa53a792e6"
+    },
+    {
+      "claim_id": "aa22b546-f74a-4840-a7ee-7a20c697eb4a",
+      "result_id": "07279cab-fc11-44c2-844e-befa53a792e6"
+    },
+    {
+      "claim_id": "53893035-9197-4c43-8a2f-b23df5a66d3d",
+      "result_id": "07279cab-fc11-44c2-844e-befa53a792e6"
+    },
+    {
+      "claim_id": "031ef96c-d5ac-4109-8672-a55eff06c037",
+      "result_id": "9817770e-7e8e-4371-957b-56608d8d8294"
+    },
+    {
+      "claim_id": "f5d523e3-cdbb-45c5-adea-a53fec1e8bd6",
+      "result_id": "9817770e-7e8e-4371-957b-56608d8d8294"
+    },
+    {
+      "claim_id": "9fb19bf1-3e15-4691-9b1b-363970fb32f7",
+      "result_id": "9817770e-7e8e-4371-957b-56608d8d8294"
+    },
+    {
+      "claim_id": "b99e6967-7995-4478-81a4-6cbfdafdcb92",
+      "result_id": "63a951bf-06b3-4006-9a6f-922978a76331"
+    },
+    {
+      "claim_id": "69aa2f02-cb3d-4290-827c-3ea50ee25436",
+      "result_id": "63a951bf-06b3-4006-9a6f-922978a76331"
+    },
+    {
+      "claim_id": "28f26038-ac60-4b43-a910-81e35b8bc179",
+      "result_id": "63a951bf-06b3-4006-9a6f-922978a76331"
+    },
+    {
+      "claim_id": "ae65abc3-130c-4052-b8f0-c15fe897953f",
+      "result_id": "63a951bf-06b3-4006-9a6f-922978a76331"
+    },
+    {
+      "claim_id": "9468d301-ffeb-4ba9-9805-e53a5bfa07a4",
+      "result_id": "63a951bf-06b3-4006-9a6f-922978a76331"
+    },
+    {
+      "claim_id": "2e2c989e-f3fb-43b5-90f2-77eaead6bbfc",
+      "result_id": "76f1b724-da98-4d31-a355-f71b8f8e29d1"
+    },
+    {
+      "claim_id": "021dedfe-64e7-48ff-b33f-8ca684b03f36",
+      "result_id": "76f1b724-da98-4d31-a355-f71b8f8e29d1"
+    },
+    {
+      "claim_id": "6dbed976-fee8-4928-a968-8e0bfd839b50",
+      "result_id": "76f1b724-da98-4d31-a355-f71b8f8e29d1"
+    },
+    {
+      "claim_id": "d907fb52-a283-4f36-8851-d39dbf16f474",
+      "result_id": "76f1b724-da98-4d31-a355-f71b8f8e29d1"
+    },
+    {
+      "claim_id": "d326b8c6-6bd2-4b46-a1e6-b3ce5573bf79",
+      "result_id": "76f1b724-da98-4d31-a355-f71b8f8e29d1"
+    },
+    {
+      "claim_id": "9514c2fe-6fcf-4102-ad02-0de7e1bcf13a",
+      "result_id": "1f308c86-dcfc-456f-be1f-460cbd47c86c"
+    },
+    {
+      "claim_id": "b6c5d876-8f34-45b9-8a13-2e3bd66629da",
+      "result_id": "1f308c86-dcfc-456f-be1f-460cbd47c86c"
+    },
+    {
+      "claim_id": "3cabe95f-9195-4e2b-bbe1-5afbaeee1be0",
+      "result_id": "1f308c86-dcfc-456f-be1f-460cbd47c86c"
+    },
+    {
+      "claim_id": "35db3231-3ab9-45ac-8df5-593ff9bb451d",
+      "result_id": "1f308c86-dcfc-456f-be1f-460cbd47c86c"
+    },
+    {
+      "claim_id": "9bcee1a1-61fd-4dea-b2b2-b0ad93e32bbd",
+      "result_id": "9837a9e8-5f87-4826-923b-af588fb43971"
+    },
+    {
+      "claim_id": "70dff781-d7d1-41e1-aaa4-44eaa5dd7d6e",
+      "result_id": "9837a9e8-5f87-4826-923b-af588fb43971"
+    },
+    {
+      "claim_id": "db2dd23f-56d2-438f-968d-a2e22bff6502",
+      "result_id": "9837a9e8-5f87-4826-923b-af588fb43971"
+    },
+    {
+      "claim_id": "645515dc-ea91-4fce-adfb-152db3cf78ba",
+      "result_id": "cc806ed1-9461-4b22-9f8c-483e43672ada"
+    },
+    {
+      "claim_id": "14a8563a-9d24-4893-b636-f489bdfe0fed",
+      "result_id": "cc806ed1-9461-4b22-9f8c-483e43672ada"
+    },
+    {
+      "claim_id": "0b6dc07e-8814-4c16-b663-e1dd4e0916e9",
+      "result_id": "450251d0-9fab-4e12-a16a-30813e4edab5"
+    },
+    {
+      "claim_id": "49c5cc9b-eda7-4a04-84db-2d690448f045",
+      "result_id": "450251d0-9fab-4e12-a16a-30813e4edab5"
+    },
+    {
+      "claim_id": "2a19fdab-5acf-498d-8b97-3ab38701922c",
+      "result_id": "8c198827-58f1-4050-8cda-a2c99278ce75"
+    },
+    {
+      "claim_id": "6b9601a0-384e-44ab-b175-1d85bf73e9e9",
+      "result_id": "8c198827-58f1-4050-8cda-a2c99278ce75"
+    },
+    {
+      "claim_id": "7573bf39-4b91-46aa-bfea-c06884be7f9f",
+      "result_id": "8c198827-58f1-4050-8cda-a2c99278ce75"
+    },
+    {
+      "claim_id": "2c4b92b8-5bad-4a6c-a61a-b241046b3d44",
+      "result_id": "514456e7-ee50-4cda-9be8-4254e3a232cb"
+    },
+    {
+      "claim_id": "0b153865-05d9-4a06-b60c-8e07aeb6e758",
+      "result_id": "514456e7-ee50-4cda-9be8-4254e3a232cb"
+    },
+    {
+      "claim_id": "24e4f06f-65c8-4cd2-a423-458e58a2b07d",
+      "result_id": "514456e7-ee50-4cda-9be8-4254e3a232cb"
+    },
+    {
+      "claim_id": "3fa02a6c-77de-4cb5-917e-882d7b52a4cd",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "fc09cf53-bf1b-4c95-bc79-7f8d93945900",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "e8edccf2-ace7-4aec-bf43-bd1fc09b2f4d",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "85adf692-e83e-4a73-97b1-c11fad6fb8fb",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "93d4fa24-7b32-4324-b1e9-eaf209655ae0",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "7a8ded54-8ffe-4173-b724-f18f6a65d947",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "d3c9edf2-e678-4757-832f-85ad967911a2",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "bf2edfb3-34bd-4a8b-ae4c-6b195572146b",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "88e14a2f-b861-48af-b770-c7a48d90e8a1",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "f174f36b-64c6-4d13-b296-86a3c3de086f",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "fd2336b5-d306-4c9f-b509-5894b8858d1a",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "9f617dc6-322c-4d1c-8c42-1ca12a53e374",
+      "result_id": "92d4b76f-e93d-4068-982d-488041b635bc"
+    },
+    {
+      "claim_id": "47ba15ce-fa59-4c62-a3f7-eb76ac88f8ce",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "64ef6eed-01dc-46d3-b9d4-66fa72f12c6e",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "47c6341c-6f21-4e90-932c-2a3d3937b318",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "0ef86789-71dc-4fcf-afcc-9e48fcaeaa78",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "6288ed88-9f6e-4d15-bf67-5c84d1034570",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "30797d14-69a6-4b75-89e5-e93908b79017",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "bb85007d-7d10-4900-b14d-f9748cab9df7",
+      "result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c"
+    },
+    {
+      "claim_id": "cf59f8fa-629e-432c-94c1-69c85af9a6a3",
+      "result_id": "2f1b15e0-4cb7-486b-a239-0efde005ea33"
+    },
+    {
+      "claim_id": "71a4a9ec-5a58-465f-bdbc-ab15eb02912b",
+      "result_id": "2f1b15e0-4cb7-486b-a239-0efde005ea33"
+    },
+    {
+      "claim_id": "dff629c0-2f3f-4cd1-a0b2-bbb314a75184",
+      "result_id": "2f1b15e0-4cb7-486b-a239-0efde005ea33"
+    },
+    {
+      "claim_id": "1322ad39-9db0-4157-b798-1e05a9804cf6",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "6ae0c64f-cd5e-4564-aeb1-681339e0f28d",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "b5fde257-e596-4236-ac37-dd28784e6bf2",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "b99e6967-7995-4478-81a4-6cbfdafdcb92",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "a782b277-f46a-4732-920a-db46ab987a9f",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "cf59f8fa-629e-432c-94c1-69c85af9a6a3",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "2a19fdab-5acf-498d-8b97-3ab38701922c",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "9afcdb40-4e86-4747-9be0-dce9102f888f",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "53893035-9197-4c43-8a2f-b23df5a66d3d",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "6b9601a0-384e-44ab-b175-1d85bf73e9e9",
+      "result_id": "13b2325e-453c-4b85-ac45-a571a6051318"
+    },
+    {
+      "claim_id": "b104fa6b-19da-42c9-9fe4-266c43e7bef4",
+      "result_id": "83e5a56f-50cc-4f28-88b9-812313f0079b"
+    },
+    {
+      "claim_id": "e8088930-e25b-4b6c-9cc1-21cbaccd6e94",
+      "result_id": "83e5a56f-50cc-4f28-88b9-812313f0079b"
+    },
+    {
+      "claim_id": "cbfcf41e-467e-4819-830d-2ef364667a27",
+      "result_id": "83e5a56f-50cc-4f28-88b9-812313f0079b"
+    },
+    {
+      "claim_id": "2e2c989e-f3fb-43b5-90f2-77eaead6bbfc",
+      "result_id": "a72aa5c3-5ae5-49c4-9910-2de4a662c001"
+    },
+    {
+      "claim_id": "021dedfe-64e7-48ff-b33f-8ca684b03f36",
+      "result_id": "a72aa5c3-5ae5-49c4-9910-2de4a662c001"
+    },
+    {
+      "claim_id": "6dbed976-fee8-4928-a968-8e0bfd839b50",
+      "result_id": "a72aa5c3-5ae5-49c4-9910-2de4a662c001"
+    },
+    {
+      "claim_id": "34bb3f5c-398f-4cba-971f-1f43edb2d2e8",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "18cbea0d-1cf7-4108-8cc3-2b65ca2c461e",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "aa22b546-f74a-4840-a7ee-7a20c697eb4a",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "031ef96c-d5ac-4109-8672-a55eff06c037",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "f5d523e3-cdbb-45c5-adea-a53fec1e8bd6",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "0b6dc07e-8814-4c16-b663-e1dd4e0916e9",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "9fb19bf1-3e15-4691-9b1b-363970fb32f7",
+      "result_id": "84e27729-b6c1-4240-a185-1d593c088300"
+    },
+    {
+      "claim_id": "69aa2f02-cb3d-4290-827c-3ea50ee25436",
+      "result_id": "70a7dd5b-1530-4c35-85b4-cab6d4ba61ef"
+    },
+    {
+      "claim_id": "28f26038-ac60-4b43-a910-81e35b8bc179",
+      "result_id": "70a7dd5b-1530-4c35-85b4-cab6d4ba61ef"
+    },
+    {
+      "claim_id": "ae65abc3-130c-4052-b8f0-c15fe897953f",
+      "result_id": "70a7dd5b-1530-4c35-85b4-cab6d4ba61ef"
+    },
+    {
+      "claim_id": "9468d301-ffeb-4ba9-9805-e53a5bfa07a4",
+      "result_id": "70a7dd5b-1530-4c35-85b4-cab6d4ba61ef"
+    },
+    {
+      "claim_id": "2c4b92b8-5bad-4a6c-a61a-b241046b3d44",
+      "result_id": "b71bcf49-3653-4027-a2dc-7f0951bd2fae"
+    },
+    {
+      "claim_id": "0b153865-05d9-4a06-b60c-8e07aeb6e758",
+      "result_id": "b71bcf49-3653-4027-a2dc-7f0951bd2fae"
+    },
+    {
+      "claim_id": "7573bf39-4b91-46aa-bfea-c06884be7f9f",
+      "result_id": "b71bcf49-3653-4027-a2dc-7f0951bd2fae"
+    },
+    {
+      "claim_id": "3cabe95f-9195-4e2b-bbe1-5afbaeee1be0",
+      "result_id": "0235d85d-0b51-413f-8cc2-2e10bee9a789"
+    },
+    {
+      "claim_id": "49c5cc9b-eda7-4a04-84db-2d690448f045",
+      "result_id": "0235d85d-0b51-413f-8cc2-2e10bee9a789"
+    },
+    {
+      "claim_id": "3fa02a6c-77de-4cb5-917e-882d7b52a4cd",
+      "result_id": "12a972df-d539-41e6-b890-2d162151b7f6"
+    },
+    {
+      "claim_id": "fc09cf53-bf1b-4c95-bc79-7f8d93945900",
+      "result_id": "12a972df-d539-41e6-b890-2d162151b7f6"
+    },
+    {
+      "claim_id": "fd2336b5-d306-4c9f-b509-5894b8858d1a",
+      "result_id": "12a972df-d539-41e6-b890-2d162151b7f6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "7cd1cb99-cca1-4186-8150-eed9b5be9f28",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "63a951bf-06b3-4006-9a6f-922978a76331",
+      "peer_result_id": "70a7dd5b-1530-4c35-85b4-cab6d4ba61ef",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both agree that three-way epistasis findings showing cytoplasmic background can alter nuclear epistasis are well-supported. High overlap (80%) with shared claims C38, C44, C50, C83. LLM includes C22 which is not in peer review grouping.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "bd802dc6-b600-43ed-b531-4f690f6b05bf",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "76f1b724-da98-4d31-a355-f71b8f8e29d1",
+      "peer_result_id": "a72aa5c3-5ae5-49c4-9910-2de4a662c001",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address organellar genome sequencing (C28, C29, C30). LLM finds methodology sound and enrichment significant. Peer reviewers find analysis incomplete, requesting more detail on coding variants and comparison between organellar and nuclear genomes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "dc7cfb8f-b0d0-4349-a68a-410172db1c7a",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2",
+      "peer_result_id": "83e5a56f-50cc-4f28-88b9-812313f0079b",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address comparative variance analysis (C27, C39, C41). LLM finds statistical methods appropriate and conclusions well-supported. Peer reviewers express confusion about heritability analysis methodology and question the fairness of comparing complete cytoplasmic genome to individual nuclear loci.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "70e5f894-733e-451a-887b-0fa2f5b870bd",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "514456e7-ee50-4cda-9be8-4254e3a232cb",
+      "peer_result_id": "b71bcf49-3653-4027-a2dc-7f0951bd2fae",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address recommendations for future studies (C51, C52). LLM finds recommendations logical. Peer reviewers agree in principle but express concerns about generalizability to other phenotypes and evolutionary significance, requesting more circumspect claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "8cb90797-b47d-4a4a-b8c1-0a21e3a44a8d",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "9817770e-7e8e-4371-957b-56608d8d8294",
+      "peer_result_id": "84e27729-b6c1-4240-a185-1d593c088300",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address center of phenotype analysis and cytonuclear epistasis (C36, C37, C43). Agreement that epistatic interactions are convincingly demonstrated. LLM emphasizes novel visualization; peer review focuses on substantiation of epistatic interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "a85d28b3-e153-422b-bd76-219c5126c1f9",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "07279cab-fc11-44c2-844e-befa53a792e6",
+      "peer_result_id": "84e27729-b6c1-4240-a185-1d593c088300",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address epistatic network analysis (C33, C34, C35). Agreement that cytoplasmic variation as central hub with extensive epistatic interactions is well-supported. Peer review includes additional claims C36, C37, C42, C43 in their grouping.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "a1cc7a8e-5521-414f-ba5e-c5e24cc622be",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "450251d0-9fab-4e12-a16a-30813e4edab5",
+      "peer_result_id": "0235d85d-0b51-413f-8cc2-2e10bee9a789",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C70 only). LLM supports claim that effects span central and specialized metabolism. Peer reviewers criticize lack of consideration of existing knowledge about organellar biosynthesis and request analysis of whether organelle-made metabolites are more affected.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "5d8079fc-054b-4682-b1d8-98b2c44e76e7",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "92d4b76f-e93d-4068-982d-488041b635bc",
+      "peer_result_id": "12a972df-d539-41e6-b890-2d162151b7f6",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address background literature context (C1, C2, C11). Agreement that contextual claims about field's focus on nuclear genomes and previous impressions of small cytoplasmic effects are appropriate. LLM covers broader literature review (C1-C12); peer review focuses on subset.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "a093601b-aeaa-40d2-8d1b-222c7dd2d733",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "1f308c86-dcfc-456f-be1f-460cbd47c86c",
+      "peer_result_id": "0235d85d-0b51-413f-8cc2-2e10bee9a789",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Limited overlap (C45 only). LLM addresses study limitations acknowledgment. Peer review addresses metabolic pathway analysis concerns. Different focus areas with minimal claim overlap.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "5a61416b-6b1d-47c0-89f5-9589d5a5e416",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "8c198827-58f1-4050-8cda-a2c99278ce75",
+      "peer_result_id": "b71bcf49-3653-4027-a2dc-7f0951bd2fae",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C85 only). LLM supports overarching conclusions about cytoplasmic role. Peer reviewers express concerns about generalizability and evolutionary significance, requesting more circumspect claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "0321c755-3ace-4126-a675-9783ce553a4a",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "8c198827-58f1-4050-8cda-a2c99278ce75",
+      "peer_result_id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address main conclusions (C49, C84). Agreement that cytoplasmic genetic variation plays central role in metabolomic variation. Peer review explicitly states findings are 'important, and well substantiated.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "67db7ebb-e442-4d93-a8b7-26949d9d903a",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "07279cab-fc11-44c2-844e-befa53a792e6",
+      "peer_result_id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address epistatic network findings (C21, C82). Agreement that cytoplasmic variation as network hub is convincingly demonstrated as part of substantial epistatic interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "743176a4-e53f-400b-8b6a-0ee310066082",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "55301a3c-8d6a-4ebf-8fd5-994d6aaea0f2",
+      "peer_result_id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address comparative effects (C40, C80). Agreement on core finding that cytoplasmic factors have measurable effects. Peer review R1 focuses on overall substantiation; LLM R2 addresses specific variance comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "35ba7082-5bad-4a58-958a-ccf7b11f43eb",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "450251d0-9fab-4e12-a16a-30813e4edab5",
+      "peer_result_id": "84e27729-b6c1-4240-a185-1d593c088300",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C42 only). Both support claims about cytonuclear epistasis explaining substantial variance. Agreement on epistatic interaction findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "d8017177-370b-44a0-80eb-ad0a0279b059",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "c814cda8-96e0-4fca-b4b5-02b77da0dca0",
+      "peer_result_id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both address experimental design and main findings (C19, C20). Agreement that core empirical findings about cytoplasmic effects on metabolites are well-substantiated. LLM R1 covers broader claim set (14 claims); peer R1 focuses on main conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "603579cc-4ae6-4fb2-8d60-08dade4f3fd1",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "2f1b15e0-4cb7-486b-a239-0efde005ea33",
+      "peer_result_id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C48 only). Both support inference that small number of organellar genes can have large metabolic effects, consistent with core finding that cytoplasmic factors play important role.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "1ab7a29e-13ba-4c17-80a9-f90b76f9aaf5",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "63a951bf-06b3-4006-9a6f-922978a76331",
+      "peer_result_id": "13b2325e-453c-4b85-ac45-a571a6051318",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C22 only). Both support three-way epistasis findings as part of substantial epistatic interactions that are convincingly demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "d17ee8bf-044b-4067-8031-49eb940bcec0",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "f445a4be-9f6a-4df6-8b09-17d43cbec201",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "QTL mapping methodology claims (C60-C67) only addressed by LLM. No corresponding peer review evaluation of these specific methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "4e267fa5-df35-456c-8681-d179ce843b8e",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "9837a9e8-5f87-4826-923b-af588fb43971",
+      "peer_result_id": null,
+      "llm_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Mechanistic speculation claims (C73, C74, C75) only addressed by LLM, which appropriately marks them as uncertain pending additional experiments. No corresponding peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "1d324868-2ec4-4d6c-a88a-9217ce01b2e4",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "cc806ed1-9461-4b22-9f8c-483e43672ada",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Future work recommendations for causal polymorphism identification (C76, C77) only addressed by LLM. No corresponding peer review evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    },
+    {
+      "id": "f11c26a1-19e1-4ebc-a3df-9ff613c6e818",
+      "submission_id": "99eede25-0754-490e-a284-a775d1ff0b38",
+      "llm_result_id": "0da15344-b291-48e7-a7d7-b4f995e3f21c",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Arabidopsis genome background information (C13-C17, C47, C79) only addressed by LLM. No corresponding peer review evaluation of these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:46:27.056721Z"
+    }
+  ]
+}

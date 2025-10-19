@@ -1,0 +1,2425 @@
+{
+  "submission": {
+    "id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:31:06.453434Z",
+    "updated_at": "2025-10-16T22:31:06.453434Z"
+  },
+  "content": [
+    {
+      "id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "content_type": "manuscript",
+      "content_text": "# Single molecule imaging reveals a major role for diffusion in the exploration of ciliary space by signaling receptors\n\n## Authors\n\n- Fan Ye<sup>1</sup>\n- David K Breslow<sup>1</sup>\n- Elena F Koslover<sup>3</sup>\n- Andrew J Spakowitz<sup>3</sup>\n- W James Nelson<sup>1</sup> †\n- Maxence V Nachury<sup>1</sup> †\n\n### Affiliations\n\n1. Department of Molecular and Cellular Physiology Stanford University School of Medicine Stanford United States\n2. Department of Biology Stanford University Stanford United States\n3. Department of Chemical Engineering Stanford University Stanford United States\n\n† Corresponding author\n\n## Abstract\n\n10.7554/eLife.00654.001 The dynamic organization of signaling cascades inside primary cilia is key to signal propagation. Yet little is known about the dynamics of ciliary membrane proteins besides a possible role for motor-driven Intraflagellar Transport (IFT). To characterize these dynamics, we imaged single molecules of Somatostatin Receptor 3 (SSTR3, a GPCR) and Smoothened (Smo, a Hedgehog signal transducer) in the ciliary membrane. While IFT trains moved processively from one end of the cilium to the other, single SSTR3 and Smo underwent mostly diffusive behavior interspersed with short periods of directional movements. Statistical subtraction of instant velocities revealed that SSTR3 and Smo spent less than a third of their time undergoing active transport. Finally, SSTR3 and IFT movements could be uncoupled by perturbing either membrane protein diffusion or active transport. Thus ciliary membrane proteins move predominantly by diffusion, and attachment to IFT trains is transient and stochastic rather than processive or spatially determined. DOI: http://dx.doi.org/10.7554/eLife.00654.001\n\n## Introduction\n\nMembrane proteins explore cellular space by diffusion or motor-driven transport on the cytoskeleton, but the relative contributions of these processes in specific cellular contexts have not been directly assessed. A prototypical system to study how proteins explore cellular space is the primary cilium, a surface-exposed compartment consisting of a microtubule-based axoneme ensheathed within a plasma membrane protrusion (Satir and Christensen, 2007). The primary cilium is an important signaling compartment (Goetz and Anderson, 2010): entire signaling cascades, from the most upstream membrane-embedded receptors to the ultimate effectors, are dynamically concentrated within the ciliary space (Corbit et al., 2005; Haycraft et al., 2005; Rohatgi et al., 2007), and cilium dysfunction abolishes specific pathways such as Hedgehog signaling (Huangfu et al., 2003).\n\nThe assembly of cilia, and structurally related flagella, relies on intraflagellar transport (IFT), a process in which moving IFT trains bring cargo, such as tubulin and axonemal precursors, to the tip of the axoneme by kinesin II motor-powered transport along axonemal microtubules (Cole, 2008). In reverse, polypeptides move by dynein 1b-powered IFT from the tip to the base of cilia. The requirement of the IFT machinery for ciliary assembly, and the bidirectional movements of IFT trains in mature cilia have been substantiated in every model system tested (Pedersen and Rosenbaum, 2008) and it is generally accepted that soluble and membrane-embedded cargo explore the ciliary space by loading onto IFT trains at one end of the primary cilium and unloading at the other end (Qin et al., 2004; Pedersen et al., 2006). Yet, there is limited direct experimental evidence to support this model of IFT-mediated transport of ciliary membrane proteins.\n\nPioneering studies using the flagellated green alga Chlamydomonas reinhardtii showed that externally applied beads, which artificially cluster mating receptors, are transported along the flagellar axoneme (Bloodgood et al., 1979; Bloodgood and Salomonsky, 1989), but a role for IFT has not been tested in this context. While bulk imaging of some GFP-tagged ciliary membrane proteins (e.g., PKD2-GFP, OSM9-GFP) discerned a few fluorescence foci moving processively in cilia (Ou et al., 2005; Huang et al., 2007), ciliary membrane proteins are generally distributed homogeneously inside cilia and information on their dynamics is therefore lacking. Furthermore, while IFT trains have been visualized as large polymeric assemblages by electron microscopy (Pigino et al., 2009) and as clusters of fluorescence by light microscopy (Pedersen and Rosenbaum, 2008), the IFT entities that ferry cargoes remain elusive.\n\nThe goal of our work was to directly measure the contributions of IFT and diffusion to the movement of individual ciliary membrane proteins. We developed an experimental system to image single membrane receptors together with IFT trains in the primary cilium of live cells. By selectively disrupting membrane protein diffusion or motor-driven active transport, we show that cargo and IFT movements can be uncoupled from each other and that diffusion is sufficient for membrane proteins to explore the ciliary surface.\n\n## Results\n\n## Membrane proteins move in a saltatory manner in cilia\n\nTo overcome the limitations of ensemble measurements of cargo proteins in primary cilia, we quantified the ciliary movements of individually labelled membrane proteins. We selected two ciliary membrane proteins: the G protein-coupled receptor (GPCR), Somatostatin receptor 3 (SSTR3) (Händel et al., 1999), and the Hedgehog signaling intermediate Smoothened (Smo), a non-GPCR 7-pass membrane protein (Corbit et al., 2005). To facilitate cilia visualization, SSTR3 and Smo were tagged at the intracellular C-terminus with a fluorescent protein (SSTR3-GFP and Smo-YFP). In order to detect single molecules we also fused a biotinylation acceptor peptide (AP) to the extracellular N-terminus of SSTR3 or Smo, and co-expressed the biotin ligase BirA in the ER of the stable cell lines (Howarth and Ting, 2008). Proteins were expressed stably and at low levels in IMCD3-Flp-In cells.\n\nSingly biotinylated SSTR3 and Smo molecules were labelled on the cell surface by extracellular addition of a low concentration (50 pM) of monovalent streptavidin (mSA;\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of single molecule labeling strategy. SSTR3 or Smo were fused at the extracellular N-terminus to an acceptor peptide (AP) for the biotin ligase BirA. Biotinylated AP-SSTR3 and AP-Smo molecules were sparsely revealed by Alexa647-conjugated monovalent streptavidin (mSA-Alexa647) added at low concentrations (50 pM) to the extracellular medium. (B) IMCD3 cells stably expressing AP-SSTR3-GFP (SSTR3, pseudo-colored red, left panel) or AP-Smo-YFP (SMO, pseudo-colored red, right panel) were transfected with Pericentrin-RFP (PCNT, pseudo-colored blue) to mark the ciliary base and BirA to biotinylate AP-SSTR3-GFP. Biotinylated SSTR3 or Smo were detected with mSA-Alexa647 (mSA, pseudo-colored green). The kymograph represents the movement of a single mSA-Alexa647 labeled AP-SSTR3-GFP or AP-Smo-YFP in live cells. The tip (T) and the base (B) of the cilium are indicated. Scale bars, 2 μm (y), 4 s (x). (C) Kymographs of simultaneous live cell imaging of TagRFP.T-IFT88 (RFP-IFT88, IFT train) and single molecule SSTR3 (SSTR3:mSA-A647) movement in untreated cells. The mobility of ciliary SSTR3 was assessed by half-cilium FRAP (montage of heat-maps, bottom). Scale bars, 2 μm (y), 5 s (x). (D) Comparison of IFT88 foci track with single SSTR3 directional tracks in untreated cells. The processive movement of mSA labeled SSTR3 (SSTR3:mSA-A647, red dashed line) and IFT88 foci tracks (RFP-IFT88, green dashed line) are indicated. Little overlap is observed between IFT88 foci tracks and single SSTR3 tracks in untreated cells.DOI: http://dx.doi.org/10.7554/eLife.00654.003\n\n![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig1-figsupp1-v1.jpg)\n\n**Figure 1—figure supplement 1.:** Additional kymographs representing the movement of single mSA-Alexa647 labeled AP-SSTR3-GFP (A) and AP-Smo-YFP (B). The tip (T) and the base (B) of the cilium are indicated. Scale bars, 2 μm (y), 4 s (x).DOI: http://dx.doi.org/10.7554/eLife.00654.004\n\n![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig1-figsupp2-v1.jpg)\n\n**Figure 1—figure supplement 2.:** Additional kymographs of simultaneous live cell imaging of TagRFP.T-IFT88 (RFP-IFT88, IFT complex) and single molecule SSTR3 (SSTR3:mSA-A647). The processive movement of mSA labeled SSTR3 (red dashed line) and IFT88 foci tracks (greed dashed line) are indicated. Scale bars, 2 μm (y), 4 s (x).DOI: http://dx.doi.org/10.7554/eLife.00654.005\n\n![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig1-figsupp3-v1.jpg)\n\n**Figure 1—figure supplement 3.:** (A) Representative example of a half-cilium FRAP. (B) Kinetics of fluorescence recovery of photobleached region (red curve), unbleached region (green curve), and the total cilium (blue curve). (C) Averaged fitted curves of SSTR3-GFP half-cilium FRAP.DOI: http://dx.doi.org/10.7554/eLife.00654.006\n\nTo our surprise, single molecules of SSTR3 or Smo moved in a saltatory manner that comprised mostly diffusive behavior interspersed with short periods of directional movements (Figure 1B, Figure 1—figure supplement 1; Video 1, and Video 2). By using bright foci of RFP-tagged IFT88 as markers of motor-driven IFT trains, we found that the saltatory movement of SSTR3 was clearly different from the smooth, processive movement of IFT trains in the same cilia (Figure 1C). Furthermore, not only were the movements of IFT trains and single SSTR3 molecules different, their tracks rarely overlapped even when single SSTR3 molecules displayed short directional movements (Figure 1D, and Figure 1—figure supplement 2). These observations indicate that SSTR3 and Smo moved primarily by diffusion in the ciliary membrane, and that very small IFT trains might actively move single SSTR3 molecules; these IFT nanotrains are below the sensitivity limit of our imaging.10.7554/eLife.00654.007Video 1.Live cell imaging of a single ciliary SSTR3 molecule.IMCD3 cells stably expressing AP-SSTR3-GFP (pseudo-colored red) were transfected with BirA-ER to biotinylate AP-SSTR3-GFP. Biotinylated SSTR3 was detected with mSA-Alexa647 (mSA, pseudo-colored green). The tip (T) and the base (B) of the cilium are indicated. Scale bar, 2 μm.DOI: http://dx.doi.org/10.7554/eLife.00654.00710.7554/eLife.00654.008Video 2.Live cell imaging of a single ciliary Smo molecule.IMCD3 cells stably expressing AP-Smo-YFP (Smo, pseudo-colored red) were transfected with BirA-ER to biotinylate AP-Smo-YFP. Biotinylated Smo was detected with mSA-Alexa647 (mSA, pseudo-colored green). The tip (T) and the base (B) of the cilium are indicated. Scale bar, 2 μm.DOI: http://dx.doi.org/10.7554/eLife.00654.008\n\n## Saltatory dynamics is compatible with rapid exploration of the ciliary space\n\nTo determine how rapidly single SSTR3 and Smo molecules explore the entire ciliary space, in spite of their saltatory movements, we assessed their mobility by fluorescence recovery after photobleaching (FRAP). We had previously uncovered a diffusion barrier at the ciliary base by showing that photobleaching Smo-YFP or SSTR3-GFP in the entire cilium led to no detectable recovery from its plasma membrane pool (Hu et al., 2010). However, photobleaching Smo-YFP (Hu et al., 2010) or SSTR3-GFP (Figure 1C, Figure 1—figure supplement 3, and Video 3) in the distal half of the cilium led to fluorescence recovery in less than 60 s at the expense of signal diffusing from the proximal, unbleached half (Hu et al., 2010). While this experiment did not distinguish between diffusion and active transport, it showed that the saltatory movements of SSTR3 and Smo are compatible with rapid exploration of the entire ciliary space.10.7554/eLife.00654.009Video 3.Representative examples of half-cilium FRAP in different conditions.The distal half of the cilia were photobleached and the recovery rate of the SSTR3-GFP fluorescent signal in the bleached region was recorded at 1 s interval. Scale bar, 2 μm.DOI: http://dx.doi.org/10.7554/eLife.00654.009\n\nHalf-cilium FRAP allowed us to calculate an apparent diffusion coefficient of 0.25 μm\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig2-v1.jpg)\n\n**Figure 2.:** (A) Saturated labeling of biotinylated AP-SSTR3-GFP (SSTR3-GFP) with 20 nM of mSA-Alexa647 (mSA) for 1 hr. Scale bar, 2 μm. (B) Time series montage represents the mobility of ciliary AP-SSTR3-GFP saturatedly labeled with mSA-Alexa647 after photobleaching. Scale bar, 2 μm. (C) The diffusion coefficients quantified from control cells vs cells with saturated staining of mSA-Alexa647 (mSA). More than 10 cilia were analyzed for each condition. Error bars, SD. p>0.05. (D) Live cell imaging of HEK293T cells expressing AP-SSTR3-GFP. Cells were treated with 10 μM Octreotide or Somatostatin immediately before imaging.DOI: http://dx.doi.org/10.7554/eLife.00654.010\n\n## Relative contributions of active transport and diffusion to protein movements inside cilia\n\nTo determine the proportion of time that SSTR3 and Smo spend undergoing active transport we used a statistical analysis of instant velocities, which overcomes the intrinsic bias in manually selecting processive segments from the single molecules kymographs. The combination of motor-driven velocities and diffusive velocities found in live cells was deconvolved by effectively removing motor-driven transport, thus isolating diffusive events. Since the IFT motors kinesin II and dynein 1b require ATP to power active transport, we depleted ATP using two independent approaches. First, we added antimycin and deoxyglucose to cells to interrupt mitochondrial respiration and anaerobic glycolysis. This treatment reduced cellular ATP levels by 90% (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig3-v1.jpg)\n\n**Figure 3.:** (A) Kymographs of GFP-IFT88 foci movements after Antimycin A and 2-deoxyglucose (2DG) treatment. Scale bar, 2 μm. (B) Kymographs of simultaneous live cell imaging of tagRFP.T-IFT88 (IFT88) and single molecule SSTR3 (SSTR3) movement before and after 40 min of Antimycin A and 2DG treatment. Scale bar, 2 μm. (C) ATP levels quantified by luciferin-luciferase bioluminescence assay normalized to the levels in control-treated cells. To deplete intracellular ATP, IMCD3 cells were treated with 20 μM Antimycin + 10 mM 2DG for 40 min. Each treatment was measured in triplicate. (D) Instant velocity distributions of single SSTR3 movements in untreated vs ATP-depleted cells. Statistical analyses show a significant difference between velocity distributions of untreated and ATP-depleted cells for both the anterograde velocities (p=0.03) and retrograde velocities (p=0.03). The live cell data (blue) was fitted to a mixed model combining the ATP-depleted data (green) and an additional Gaussian distribution (red), with the latter found to contribute a fraction of 26.6 +/− 5.9% (anterograde) and 12.8 +/− 3.1% (retrograde). n>1200.DOI: http://dx.doi.org/10.7554/eLife.00654.011\n\n![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig3-figsupp1-v1.jpg)\n\n**Figure 3—figure supplement 1.:** Additional kymographs representing the movement of single mSA-Alexa647 labeled AP-SSTR3-GFP in cells treated with Antimycin A and deoxyglucose. The tip (T) and the base (B) of the cilium are indicated. Scale bars, 2 μm (y), 4 s (x).DOI: http://dx.doi.org/10.7554/eLife.00654.012\n\nTo reveal the fraction of SSTR3 molecules undergoing active transport, we conducted a differential analysis of single SSTR3 molecule movements in cilia of control vs antimycin/deoxyglucose-treated cells. Since kinesin II and dynein 1b each move at characteristic velocities (Scholey, 2008), motor-driven movements of single SSTR3 molecules should be enriched in the distribution of instant velocities along the cilium in control cells vs antimycin/deoxyglucose-treated cells (Figure 3D). Differences between distributions were analyzed by performing an effective histogram subtraction (‘Materials and methods’). Anterograde and retrograde velocities were binned separately to create histograms with an optimum bin size that generated an unbiased estimate of the distributions (Scott, 1979). Using nonlinear least-squares regression, the live cell velocity histogram was fitted to a mixed distribution consisting of fraction f of a Gaussian with unknown mean and variance and fraction (1−f) of the antimycin/deoxyglucose-treated cell distribution. This, and two other (‘Materials and methods’), unbiased statistical tests were highly significant for both anterograde and retrograde SSTR3 velocities, and indicated that 27% of anterograde and 13% of retrograde movements of SSTR3 involved active transport (Figure 3D).\n\nSecond, we used the cholesterol-selective detergent digitonin. which selectively permeabilizes the plasma membrane but leaves the ciliary membrane intact (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig4-v1.jpg)\n\n**Figure 4.:** (A) Kymographs of simultaneous live cell imaging of TagRFP.T-IFT88 (RFP-IFT88, IFT trains) and single molecule SSTR3 (SSTR3:mSA-A647) movements in digitonin semi-permeabilized cells. The immobilization of ciliary SSTR3 was confirmed by half-cilium FRAP (montage of heat-maps, bottom). Scale bars, 2 μm (y), 5 s (x). (B) Instant velocity distribution of single SSTR3 movements along cilia in untreated and digitonin semi-permeabilized cells. The live cell data (blue) was fitted to a mixed model combining the permeabilized data (green) and an additional Gaussian distribution (red), with the latter found to contribute a fraction of 21.8 +/− 12.6% (anterograde) and 24.3 +/− 5.5% (retrograde). n>1200. (C) Instant velocity distribution of single Smo movements along cilia in untreated and digitonin semi-permeabilized cells. The live cell data (blue) was fitted to a mixed model combining the permeabilized data (green) and an additional Gaussian distribution (red), with the latter found to contribute a fraction of 32.1 +/− 5.9% (anterograde) and 34.1 +/− 1.9% (retrograde). n>1200. (D) Velocity distribution of GFP-IFT88 foci movements measured from kymographs. The mean velocities are shown in the plot. n>290. (E) ATP levels quantified by luciferin-luciferase bioluminescence assay normalized to the levels in control-treated cells. To deplete intracellular ATP, IMCD3 cells were permeabilized with 60 μg/ml digitonin for 7 min. Each treatment was measured in triplicate.DOI: http://dx.doi.org/10.7554/eLife.00654.013\n\n![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig4-figsupp1-v1.jpg)\n\n**Figure 4—figure supplement 1.:** ATP levels quantified by luciferin-luciferase bioluminescence assay normalized to the levels in control-treated cells (ATP level [%]). To deplete intracellular ATP, IMCD3 cells were permeabilized with 30 μg/ml (Dig.1×) or 60 μg/ml (Dig. 2×) digitonin for 7 min. The efficiency of digitonin permeabilization was tested by Mab414 antibody staining. The percentages of unlabeled cells (Intact cell [%]) was similar to the corresponding ATP levels indicating that when a cell is permeabilized with digitonin, it looses all its ATP content.DOI: http://dx.doi.org/10.7554/eLife.00654.014\n\n![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig4-figsupp2-v1.jpg)\n\n**Figure 4—figure supplement 2.:** Additional kymographs representing the movement of single mSA-Alexa647 labeled AP-SSTR3-GFP (A) and AP-Smo-YFP (B) in cells permeabilized with digitonin. The tip (T) and the base (B) of the cilium are indicated. Scale bars, 2 μm (y), 4 s (x).DOI: http://dx.doi.org/10.7554/eLife.00654.015\n\n![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig4-figsupp3-v1.jpg)\n\n**Figure 4—figure supplement 3.:** (A) Averaged fitted curves of SSTR3-GFP half-cilium FRAP in different conditions. (B) The diffusion coefficients quantified from the FRAP recovery curves in (A). More than 10 cilia were analyzed for each condition. Error bars, SEM. p>0.05.DOI: http://dx.doi.org/10.7554/eLife.00654.016\n\nWhile the proportions of active anterograde transport events uncovered by digitonin permeabilization and antimycin/deoxygluocose treatments are very similar, the proportions of active retrograde movements identified by the two treatments were different. A possible interpretation is that dynein 1b retains some ability to operate under load at low ATP levels while kinesin II is fully inactive when ATP levels are reduced 10-fold. Interestingly, FRAP analysis showed that the mobility of SSTR3-GFP was similar in untreated and digitonin-treated cells (Figure 4A, Figure 4—figure supplement 3, and Video 3). This result strongly suggests that the combination of passive diffusion and active transport (by nanotrains, see above) are effective at enabling membrane proteins to explore the ciliary space.\n\nTo assess whether the proportion of time spent by SSTR3 in active transport vs passive diffusion was similar for other proteins, we applied our permeabilization strategy to AP-Smo-YFP expressing cells (Figure 4—figure supplement 2B). Again, the three statistical tests all showed a significant difference in the distribution of instant velocities between untreated and digitonin-treated cells and the Gaussians representing active transport amounted to 34% (anterograde) and 32% (retrograde) of the entire distributions (Figure 4C). While the proportions of time undergoing active transport are slightly greater for Smo than for SSTR3, they indicate that Smo also spends the majority of its time diffusing in the ciliary membrane rather than undergoing directed IFT.\n\n## Ciliobrevin inhibits IFT foci movements without perturbing active transport of SSTR3\n\nAn alternative strategy to inhibit active transport is to use ciliobrevin (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig5-v1.jpg)\n\n**Figure 5.:** (A) Kymographs of simultaneous live cell imaging of TagRFP.T-IFT88 (RFP-IFT88, IFT complex) and single molecule SSTR3 (SSTR3:mSA-A647) movements in ciliobrevin treated cells (>30 min). The mobility of ciliary SSTR3 was confirmed by half-cilium FRAP (montage of heat-maps, bottom). Scale bars, 2 μm (y), 5 s (x). (B) Early time course of GFP-IFT88 foci movements after ciliobrevin D treatment. The velocity of retrograde tracks (blue dashed line) progressively decreased after 3.5 min, while anterograde foci (red dashed line) movements were unaffected until 5 min and then progressively reduced. (C) Instant velocity distributions of single SSTR3 movements in untreated vs ciliobrevin-treated cells. Statistical analyses show no significant difference (p>0.9) between the distributions of velocities of untreated and ciliobrevin-treated cells. n>1200.DOI: http://dx.doi.org/10.7554/eLife.00654.017\n\n![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig5-figsupp1-v1.jpg)\n\n**Figure 5—figure supplement 1.:** Additional kymographs representing the movement of single mSA-Alexa647 labeled AP-SSTR3-GFP in cells treated with ciliobrevin. The tip (T) and the base (B) of the cilium are indicated. Scale bars, 2 μm (y), 4 s (x).DOI: http://dx.doi.org/10.7554/eLife.00654.018\n\n![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig5-figsupp2-v1.jpg)\n\n**Figure 5—figure supplement 2.:** (A) Averaged fitted curves of SSTR3-GFP half-cilium FRAP in different conditions. (B) The diffusion coefficients quantified from the FRAP recovery curves in (A). More than 10 cilia were analyzed for each condition. Error bars, SEM. p>0.05.DOI: http://dx.doi.org/10.7554/eLife.00654.019\n\nGiven prior models of IFT-mediated protein transport (Ou et al., 2005; Huang et al., 2007), it is surprising that ciliobrevin inhibited motor-driven movements of fluorescent IFT88 foci, but not those of single SSTR3 molecules. This raises questions about the relationship between IFT and active transport of SSTR3, especially since directional tracks of single SSTR3 molecules rarely overlapped with movements of large IFT88 foci in control cells (Figure 1D, and Figure 1—figure supplement 2). As noted above, it is possible that the majority of directional SSTR3 movements are mediated by IFT nanotrains that are smaller than the IFT88 foci that we can resolve, and which might be less sensitive to dynein inhibition. Although ciliobrevin has been shown to inhibit dynein in gliding assays (Firestone et al., 2012), it is also possible that it is less potent against dynein under specific loads such as those corresponding to very small IFT nanotrains. Another possibility is that directional SSTR3 movements occurred on other motors (Hao et al., 2011) that are not inhibited by ciliobrevin.\n\n## Immobilizing ciliary membrane proteins does not immobilize IFT trains\n\nHaving found that IFT inhibition by three independent methods failed to affect SSTR3 movements, we hypothesized that the coupling between single SSTR3 molecules and IFT trains is weak and transient. This predicts that the movement of IFT trains is a constitutive process largely independent of binding to cargo such as SSTR3. Since surface-exposed membrane proteins like SSTR3 are glycosylated, multivalent lectins such as wheat germ agglutinin (WGA) will cross-link and immobilize them in the ciliary membrane (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig6-v1.jpg)\n\n**Figure 6.:** (A) Kymographs of simultaneous live cell imaging of mCherry-IFT88 (IFT complex) and single molecule SSTR3 (SSTR3:mSA-A647) movements in WGA treated cells (>7 min). The immobilization of ciliary SSTR3 was confirmed by half-cilium FRAP (montage of heat-maps, bottom). Scale bars, 2 μm (y), 5 s (x). (B) Representative kymographs of GFP-IFT88 fluorescent foci movements before WGA treatment (left, w/o WGA) and after 10 min of WGA treatment (right, WGA 10 min). The anterograde (red dashed lines) and the retrograde (blue dashed lines) movements are indicated in the bottom panels. Scale bars, 2 μm. (C and D) Bar charts representing the frequency (C) and velocity (D) of GFP-IFT88 fluorescent foci movements before and after 10 min of WGA treatment in IMCD3 cells. While the differences between WGA-treated and control cells are relatively small, with the exception of the frequency of anterograde trains they are statistically significant; N.S.: p>0.05; **p<0.05. (E) Schematics of ciliary membrane protein dynamics. Single molecule imaging reveals that the majority of ciliary SSTR3 (green) undergo free diffusion, which allows them to explore the ciliary surface efficiently. Only a small portion of ciliary SSTR3 (red) movement is related to IFT. The interaction between SSTR3 and IFT appears to be transient and dynamic.DOI: http://dx.doi.org/10.7554/eLife.00654.020\n\n![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig6-figsupp1-v1.jpg)\n\n**Figure 6—figure supplement 1.:** Additional kymographs representing the movement of single mSA-Alexa647 labeled AP-SSTR3-GFP in cells treated with WGA. The tip (T) and the base (B) of the cilium are indicated. Scale bars, 2 μm (y), 4 s (x).DOI: http://dx.doi.org/10.7554/eLife.00654.021\n\n![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/00654/elife-00654-fig6-figsupp2-v1.jpg)\n\n**Figure 6—figure supplement 2.:** Averaged fitted curves of SSTR3-GFP half-cilium FRAP in different conditions.DOI: http://dx.doi.org/10.7554/eLife.00654.022\n\n## Discussion\n\nBy following the movements of single membrane proteins in the primary cilium, we find that previous models of cargo loading onto IFT trains are no longer tenable. While every evidence point to IFT trains assembling at one end of the cilium and then being transported by an IFT motor all the way to the other extremity of the cilium, keeping their state of assembly intact along the way, we find instead that cargo are highly labile components of IFT trains. Our finding that immobilization of membrane proteins (cargoes) only minimally affected IFT train formation and movement suggests that IFT trains assemble spontaneously rather than ‘on demand’ by binding cargo; this is similar in principle to the cargo-independent assembly of clathrin-coated pits (Cocucci et al., 2012). In our model (Figure 6E), IFT trains assemble spontaneously at a given frequency at the base and tip of cilia, forming conveyor belts along the length of the cilium onto which membrane cargo can hop on and off. While this model would at first glance appear to contradict prior findings of PKD2-GFP and OSM9-GFP foci moving processively along cilia (Ou et al., 2005; Huang et al., 2007), it is likely that this is due to differences between ensemble and single molecule imaging. For example, it is possible that each IFT train carries a constant number of cargo molecules but individual cargo molecules continually hop on and off; ensemble imagining would not detect these individual events which we could detect here at the single molecule level. Thus membrane protein transport in cilia may be reminiscent of the slow axonal transport pathway in which most proteins synthesized in the neuronal body move at an apparent slow rate along the axon because they infrequently hop onto motors (Scott et al., 2011).\n\nAnother interpretation of our data is that proteins undergo advective movements created by the constant movements of large IFT trains up or down the cilium. The influence of fluid motion to particle movements can be measured by the Péclet number Pe = UR/D where U is the speed of fluid motion, R is the radius of the structure and D the diffusion coefficient. If Pe < 1, diffusion outpaces the speeds of fluid motion and the contribution of fluid motion to particle transport are minimal (Goldstein et al., 2008). In the case of the cilium, U is of the order of IFT motor speeds (10−4 cm/s), R is ∼10−5 cm and D is 2 × 10−9 cm2/s for SSTR3 and 10 × 10−9 cm2/s for a typical protein such as tubulin. The calculated values of Pe are thus 0.5 for SSTR3 and 0.1 for tubulin, thereby suggesting that passive advection plays a very minor role in the movement of typical proteins inside cilia. Moreover, the passive advection model is incompatible with our finding that IFT foci movements can be interrupted without affecting active transport of SSTR3 (Figure 5). This experiment suggests that unresolvable IFT nanotrains transport SSTR3 when cells are exposed to ciliobrevin, and that large IFT trains visualized as readily detectable foci of fluorescence may be devoid of cargo and represent recycling IFT complexes. The hypothesis that IFT nanotrains, possibly reduced to single IFT complexes bridging a cargo to a motor, represent the transporting entities is in line with nearly all other example of motor-cargo adaptors (Hirokawa et al., 2009). An alternative hypothesis is that ciliobrevin creates an artificial situation in cilia that forces cargo to utilize IFT nanotrains that are not normally found in cilia. A resolution of these possibilities will require advanced imaging approaches that are capable of detecting single molecules of IFT complexes.\n\nIn summary, our studies indicate that ciliary membrane proteins such as SSTR3 and Smo explore the ciliary space by passive diffusion rather than only by motor-driven, directional transport. Indeed, the diffusion coefficient of SSTR3 (D= 0.25 μm2/s; Figure 5—figure supplement 2B) indicates that a single SSTR3 molecule could diffuse along the length of a 4 μm cilium in less than 40 s, while IFT-mediated transport would complete the same trip in 8 s. Interestingly, the dimensions of a cilium are similar to those of a bacterium in which proteins rapidly explore the cellular space by diffusion in the absence of cytoskeletal motors (Elowitz et al., 1999). The importance of diffusion in exploration of the ciliary space does not rule out other roles for IFT in ciliogenesis, or the possible formation of IFT scaffolds for signaling cascades (Pan and Snell, 2002; Wang et al., 2006). Further studies of other single molecule dynamics under signaling conditions, using techniques introduced here, will be needed to address these possibilities.\n\n## Materials and methods\n\n## Constructs\n\nMouse SSTR3-GFP (Berbari et al., 2008) (a gift from Dr Kirk Mykytyn, Ohio State University) was fused at its N-terminal extracellular domain to a 13 amino acid acceptor peptide (AP) for the biotin ligase BirA to create AP-SSTR3-GFP. AP-Smoothened-YFP was provided by Carolyn Ott and and Jennifer Lippincott-Schwartz (NIH). AP-SSTR3-GFP or AP-Smoothened-YFP was inserted into pEF5B/FRT-DEST to establish stable expression in FlpIn cells. pDisplay-BirA-ER (Howarth and Ting, 2008) and the streptavidin constructs, pET21a-Streptavidin-Alive and pET21a-Streptavidin-Dead (Howarth et al., 2006) were provided by Dr Alice Ting (MIT) through Addgene. RFP-pericentrin PACT domain (Gillingham and Munro, 2000) was a gift from Dr Sean Munro (MRC Laboratory of Molecular Biology, Cambridge).\n\n## Cell culture, transfection and treatments\n\nMouse inner medullary collecting duct (mIMCD3) cells were maintained in Dulbecco’s modified Eagle medium/F12 (DMEM/F12; Gibco, Grand Island, NY) supplemented with 10% fetal bovine serum (FBS) and 2 mM L-Glutamine at 37°C in 5% CO2. To induce ciliogenesis, cells were cultured in DMEM/F12 supplemented with 0.2% FBS for 24 hr. Lipofectamine 2000 (Invitrogen) was used to transfect plasmids into IMCD3 cells according to the manufacturer’s protocol. To block IFT, cells were either treated with 50 μM ciliobrevin D (a gift from Dr James Chen, Stanford University) for 30 min, or semi-permeabilized with highly purified digitonin purchased from EMD Millipore (Billerica, MA) (#300410). Serum-starved IMCD3 cells on coverslips were first placed on an ice-chilled metal block and washed twice with cold Digitonin Assay Buffer (20 mM Hepes, pH 7.4, 115 mM KOAc, 1 mM MgCl2, 1 mM EGTA). For cell permeabilization, coverslips were incubated for 7 min in cold Digitonin Assay Buffer supplemented with 30 μg/ml digitonin and protease inhibitors (10 μg/ml each of leupeptin, pepstatin A, bestatin, aprotinin, AEBSF, and E-64). After permeabilization, coverslips were washed twice with Digitonin Assay Buffer and processed for subsequent imaging assays. For WGA treatment, cells were incubated with 75 μg/ml WGA for 7 min immediately prior to imaging. To test the signaling response of AP-SSTR3-GFP, HEK293T cells were transfected with AP-SSTR3-GFP and maintained in DMEM supplemented with 10% FBS for 24 hr and them treated with 10 μM Octreotide or Somatostatin (SST) immediately before live cell imaging.\n\n## ATP depletion and ATP level measurement\n\nThe level of intracellular ATP was determined by luciferin-luciferase bioluminescence assay following instructions from ATP determination kit (A22066; Molecular Probes) with homemade buffers. IMCD3 cells stably expressing AP-SSTR3-GFP were seeded on 35-mm dishes. To deplete intracellular ATP, cells were either incubated in PBS with 20 μM Antimycin A and 10 mM 2-deoxyglucose (2DG) for 40 min or permeabilized with two different concentration of digitonin (30 μg/ml and 60 μg/ml). After treatments, cells were washed twice with PBS (for Antimycin-2DG treatment) or Digitonin Assay Buffer (for digitonin treatment) and placed in ice-cold ATP buffer (20 mM Tris, PH7.5, 0.5% Nonidet P-40, 25 mM NaCl, and 2.5 mM EDTA) for 5 min. Cell lysates were then collected and centrifuged at 13,000×g for 15 min at 4°C and protein concentration was measured using Bradford Protein Assay reagent (Bio-Rad, Hercules, CA). For each reaction, 0.5 μg protein was used to measure the ATP level.\n\n## Stable cell lines\n\nAn IMCD3 cell line stably expressing AP-SSTR3-GFP or AP-Smo-YFP was generated using the FlpIn system (Life Technologies, Grand Island, NY) as described previously (Jin et al., 2010). An IMCD3 host cell line containing a single flippase (Flp) recombination target (FRT) site was transfected with pEF5B/FRT-AP-SSTR3-GFP and the Flp recombinase expression plasmid, pOG44. 48 hr after transfection, cells were selected in DMEM/F12 supplemented with 5 μg/ml blasticidin. Single cell clones were isolated and the expression level of AP-SSTR3-GFP or AP-Smo-YFP in cilia was assessed by fluorescence microscopy. We note that AP-Smo-YFP is constitutively localized to cilia in our cell line because it is expressed at a slightly higher level than the endogenous protein.\n\n## Single molecule labeling of ciliary SSTR3 and Smo\n\nMonovalent streptavidin was purified and conjugated to Alexa647 as described previously (Howarth et al., 2006). To singly biotinylate SSTR3 or Smo, IMCD3 cells stably expressing AP-SSTR3-GFP or AP-Smo-YFP were transfected with pDisplay/BirA-ER (BirA-ER is a biotin ligase targeted to the ER lumen) and RFP-Pericentrin PACT domain (a marker of the ciliary base), and maintained in DMEM/F12 supplemented with 0.2% FBS and 10 μM biotin (#BIO200; Avidity) for 24 hr. Excess biotin was removed from cells by washing with PBS. Alternatively, cell surface SSTR3 or Smo can be biotinylated by incubation with 0.3 μM recombinant BirA ligase, 10 μM biotin and 1 mM ATP as described previously (Howarth and Ting, 2008). Cells were then incubated with 50 pM mSA-Alexa647 in phenol red-free DMEM/F12 supplemented with 0.2% FBS and 25 mM HEPES (imaging medium) on a shaker at 20 rpm at room temperature for 1 hr. Next, excess mSA-Alexa647 was removed by washing cells with PBS, and cells were then incubated in imaging medium.\n\n## Live cell imaging and FRAP\n\nCells were seeded on 25 mm diameter cover-glass (Electron Microscopy Sciences, Hatfield, PA) 24 hr before transfection. After transfection, cells were serum-starved for 24 hr, and then the medium was replaced with imaging medium and cells were observed with a DeltaVision system (Applied Precision, Issaquah, WA). The DeltaVision system was equipped with a PlanApo 60×/1.40 objective lens (Olympus, Central Valley, PA), a CoolSNAP HQ2 camera (Photometrics, Tucson, AZ) and an EMCCD camera. To image mSA-Alexa647 labeled SSTR3-GFP, excitation light from the solid state illumination module (InsightSSI) was reduced to 10% intensity with a neutral density filter and the Cy5 channel was exposed for 0.4 s. Half-cilium FRAP was performed as described previously (Hu et al., 2010). The GFP fluorescent signal from part of the primary cilium was photobleached with the 488 nm laser from Quantifiable Laser Module (QLM), DeltaVision. The recovery rate of the GFP fluorescent signal in the bleached region was recorded at 1 s interval.\n\n## Data analysis\n\nThe mSA-Alexa647 labeled single molecule SSTR3 and Smo were tracked using the SpotTracker plugin in ImageJ (Sage et al., 2005). The ciliary base (labeled by Pericentrin-RFP) was used as a reference point to distinguish between anterograde (particle moving away from the base) and retrograde movement (particle moving toward the base).\n\n## Distribution of instantaneous velocities\n\nFor each protein trajectory within a single cilium, principal component analysis was performed on the set of observed positions as well as the position of the cilium base. The largest principal component was used to define the axis of the cilium. Those trajectories that were essentially stationary, that is, with a variance <0.1 μm2 along the cilium axis, were designated as outliers and were not included in the analysis (a total of 4 trajectories from permeabilized samples).\n\nInstantaneous velocities were identified as differences between consecutive positions, divided by the time-step of 0.46 s. Each velocity vector was then divided into components lying along and perpendicular to the cilium axis. The distribution of velocities was compared between untreated cells and either digitonin semi-permeabilized cells or ciliobrevin D-treated cells. A two-sample Kolmogorov-Smirnov statistical test was used to determine whether there was a significant difference between these distributions. This test is non-parametric, makes no assumptions about the shape of the underlying distributions, and does not require binning of the data. For velocity components perpendicular to the cilia, no significant difference was found (p>0.9) between either untreated cells and digitonin semi-permeabilized cells, or untreated cells and ciliobrevin D treated cells, as expected. For velocity components along the cilia axis, there was no significant difference between untreated cells and ciliobrevin D treated cells (p>0.05). Meanwhile, there was a significant difference between velocity distributions in untreated and digitonin semi-permeabilized cells for both the anterograde velocities (p=0.0004) and retrograde velocities (p=0.003) along the cilia axis.\n\nThese differences between distributions were further analyzed by performing an effective histogram subtraction. The anterograde and retrograde velocities were separately binned to create histograms with an optimum bin size designed to generate an unbiased estimate of the distributions (Scott, 1979). Using nonlinear least-squares, the live cell velocity histogram was fitted to a mixed distribution consisting of fraction f of a Gaussian with unknown mean and variance and fraction (1−f) of the permeabilized cell distribution. For anterograde velocities, the fitted fraction in the additional Gaussian was f = 0.22 ± 0.13. The fitted Gaussian had a mean at 0.41 ± 0.14 μm/s and a standard deviation 0.26 ± 0.12 μm/s. An F-test was used to establish that the fitted mixed distribution fitted the live cell anterograde velocity data significantly better compared to the permeabilized cell distribution alone (p=10−5, justifying the three additional degrees of freedom). For retrograde velocities, we fitted a fraction f = 0.24 ± 0.06 in the additional Gaussian, which had a mean at 0.30 ± 0.10 μm/s and a standard deviation 0.28 ± 0.06 μm/s. The F-test statistic established that the mixed distribution yielded a significant improvement in fitting the retrograde velocity data (p=10−5).\n\n## FRAP data analysis\n\nThe measured fractional fluorescence intensity in a narrow segment of the cilium as a function of time after photobleaching was fitted to a model of one-dimensional diffusion in a bounded region. The cumulative density of bleached molecules between positions 0 and x at time t is given by,H(x,t)=xaL+∑n=0∞[2Lπ2n2sin(nπaL)sin(nπxL)exp(−π2Dn2tL2)],where the region from 0 to a is bleached, L is the length of the cilium, and D is the diffusion coefficient.\n\nIf fb is the fraction of molecules bleached within the bleached region, and fm is the fraction of molecules that are mobile, then the fractional intensity measured between positions a1 and a2 at time t after photobleached is given byf =1−(1−fm)fb−fbfm1−fba/L[H(a2,t)−H(a1,t)]a2−a1\n\nThis functional form is used in a least-squares fit for the diffusion coefficient D.\n\nThe fraction bleached is estimated asfb=1−f(0)/I0,where f(0) is the measured fractional intensity in the bleached region at time 0, and I0 is the intensity in the unbleached region at time 0.\n\nThe fraction mobile is estimated asfm=fmax(1−fba/L)−(1−fb)fb(1−a/L),where fmax is the maximal fractional intensity at long times.\n",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vivek Malhotra, Center for Genomic Regulation , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00654.024](https://doi.org/10.7554/eLife.00654.024)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors’ note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for choosing to send your work entitled “Single Molecule Imaging Reveals a Major Role for Diffusion in the Exploration of Ciliary Space by Signaling Receptors” for consideration at eLife. Your article has now been peer reviewed and we regret to inform you that your work will not be considered further for publication. Your submission has been evaluated by 3 reviewers, one of whom, Vivek Malhotra, is a member of our Board of Reviewing Editors, and the decision has been discussed further with one of eLife’s Senior editors.\n\nBased on extensive discussions between the reviewers before we reached this decision, unfortunately the consensus is that we cannot accept your manuscript for publication by eLife. In a previous publication you have already reported the diffusion of proteins in the ciliary membrane (Science 2010). While we agree that in your current paper you have sought to search for the mechanism, the data provided is not convincing. For example, the use of digitonin to test the significance of ATP in the migration of SSTR3 is less than satisfactory. It is not clear if this treatment is sufficient to deplete the ciliary (cellular) ATP levels.\n\nAn even bigger concern is the use of ciliobrevin as a reagent to test the potential involvement of Dynein. Is the function of Dynein completely inhibited under your experimental conditions? Your findings that this compound might also be inhibiting Kinesin cast a doubt on the efficacy of ciliobrevin. The other major concern is whether the tagged SSTR3 is correctly targeted and functional? Addressing the functional significance of the tagged SSTR3 is an important issue, albeit technically difficult. However, given the other concerns, the consensus is that your manuscript is currently not suitable for further consideration at eLife.\n\nWe are therefore, with regret, returning your manuscript to you with the hope that you will find our comments helpful in revising the manuscript for submission elsewhere. The original reviews, on which the discussions between the reviewers were based, are below for reference.\n\nReviewer #1:\n\nThis is an interesting and surprising finding and should be published. I would, however, like to raise the following concerns.\n\nDoes digitonin permeabilization really affect intracellular ATP levels? It would be better to use the more standard/reliable approach of treating cells with sodium azide and deoxglucose.\n\nThe data on the use of ciliobrevin to inhibit dynein is alright but is there a more specific procedure to address the involvement of dynein?\n\nMinor comment:\n\nIn the first few lines of the Results and Discussion the authors refer to SST3 as a GPRC. It should be GPCR instead.\n\nReviewer #2:\n\nI was not very excited by the work. The insight provided is not great. The authors suggest that diffusion is enough to account for the spread of the receptor. However, receptors are likely concentrated in the Cilia, and diffusion alone cannot account for that. Also, any clustering of components changes the diffusion properties. Further, there are no functional studies. Just because the receptor they looked at can spread out and looks more or less 'o.k.' as far as distribution does not mean that overall function does not depend on active transport. Further, are the transient interactions with motors that they suggest relevant/important for function?\n\nCritical controls are missing. The authors imaged singly biotinylated Somatostatin Receptor 3 (SSTR3, a ciliary GPCR) labelled with fluorescent monovalent streptavidin. We don’t know what the labeling does to the function/transport of the receptor. If the receptor usually forms a complex, but said complex is altered due to the labeling, the ability of the receptor to diffuse would be significantly altered-size and variety of interactions can influence efficacy of diffusion a lot. So, just because a small uncomplexed receptor can diffuse does not mean that a larger one can/will. At the very least, things will depend on size of things. This is ignored.\n\nOverall, this manuscript seems to me to provide an intriguing hint that diffusion may play an interesting role in the process, but it falls far short of providing a definitive understanding of the process, and as such, seems inappropriate to me for eLife.\n\nReviewer #3:\n\nNachury and colleagues address the relative importance of active transport and diffusion in the localization of ciliary membrane proteins. In theory diffusion should account for the exploration of the entire ciliary membrane surface by membrane proteins. A series of experiments using FRAP to measure behaviour of SSTR3 (a membrane protein) are most consistent with diffusion. Furthermore, conditions that reduce active transport such as ATP depletion or inhibition of dynein using ciliobrevin have little effect on the behavior of SSTR3. This would not exclude a role of active transport in restricting membrane proteins to subdomains of the membrane, although this would not appear to be relevant for SSTR3.\n\nThis is a technically well-executed study with clear logic behind all the major experiments. It is of importance for understanding cilium function, and therefore suited to publication in eLife.\n\nThe limitations are that:\n\n1) a single membrane protein is used for the experiments.\n\n2) motor protein inhibition is achieved by a drug ciliobrevin rather than specific targeting of motor complex subunits.\n\nIdeally some data on a second membrane protein would be useful. Addressing point 2 is a little more complex since targeting motor proteins may compromise cilium formation.\n\n[Editors’ note: guidance for resubmission follows.]\n\nThank you for choosing to send your work entitled “Single Molecule Imaging Reveals a Major Role for Diffusion in the Exploration of Ciliary Space by Signaling Receptors” for consideration at eLife. We have discussed your letter of appeal regarding your full submission and we are prepared to consider a revised submission, with no guarantees of acceptance.\n\nIt is important that you include the following data:\n\n1) Experiments strengthening the depletion of ATP.\n\n2) On the migration of smoothened by single molecule analysis.\n\n3) The functionality of tagged SSTR3-GFP studied in your experiments.\n\n4) Discuss your previous paper with reference to the new findings.\n",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "18c9c2c0-f7ad-4db5-bc11-c37452fe3d11",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C1",
+      "claim": "Primary cilia are surface-exposed compartments consisting of a microtubule-based axoneme ensheathed within a plasma membrane protrusion.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A prototypical system to study how proteins explore cellular space is the primary cilium, a surface-exposed compartment consisting of a microtubule-based axoneme ensheathed within a plasma membrane protrusion",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established structural knowledge about primary cilia, supported by the citation to Satir and Christensen, 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "73c7b397-9207-43de-89c7-2d75da0dcfa9",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C2",
+      "claim": "The primary cilium is an important signaling compartment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The primary cilium is an important signaling compartment",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by citation to Goetz and Anderson, 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "6ad4e32c-078c-4ecd-91e9-0aad87afc30f",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C3",
+      "claim": "Entire signaling cascades, from upstream membrane-embedded receptors to ultimate effectors, are dynamically concentrated within the ciliary space.",
+      "claim_type": "EXPLICIT",
+      "source_text": "entire signaling cascades, from the most upstream membrane-embedded receptors to the ultimate effectors, are dynamically concentrated within the ciliary space",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by multiple citations: Corbit et al., 2005; Haycraft et al., 2005; Rohatgi et al., 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "eaad92ff-a6be-4e12-a544-62a8fd247ab6",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C4",
+      "claim": "Cilium dysfunction abolishes specific pathways such as Hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cilium dysfunction abolishes specific pathways such as Hedgehog signaling",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation to Huangfu et al., 2003.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a6acbddf-bdb3-4121-a9e2-ea4537b66313",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C5",
+      "claim": "The assembly of cilia and structurally related flagella relies on intraflagellar transport (IFT).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The assembly of cilia, and structurally related flagella, relies on intraflagellar transport (IFT)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about ciliary assembly, supported by citation to Cole, 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "3fe9399c-56e0-4cb5-ae59-adbaec477552",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C6",
+      "claim": "IFT trains bring cargo such as tubulin and axonemal precursors to the tip of the axoneme by kinesin II motor-powered transport along axonemal microtubules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "moving IFT trains bring cargo, such as tubulin and axonemal precursors, to the tip of the axoneme by kinesin II motor-powered transport along axonemal microtubules",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "Established mechanism of IFT, supported by citation to Cole, 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "e4335612-6f16-468a-8d22-f3ade8a892b2",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C7",
+      "claim": "Polypeptides move by dynein 1b-powered IFT from the tip to the base of cilia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In reverse, polypeptides move by dynein 1b-powered IFT from the tip to the base of cilia.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "Established mechanism of retrograde IFT transport.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "82be8513-37df-4fbb-86b0-3a6738d03663",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C8",
+      "claim": "The requirement of the IFT machinery for ciliary assembly and the bidirectional movements of IFT trains in mature cilia have been substantiated in every model system tested.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The requirement of the IFT machinery for ciliary assembly, and the bidirectional movements of IFT trains in mature cilia have been substantiated in every model system tested",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "Supported by citation to Pedersen and Rosenbaum, 2008, indicating broad experimental validation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "0f5d4cf5-40b8-490c-a5ef-210f81f12b83",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C9",
+      "claim": "It is generally accepted that soluble and membrane-embedded cargo explore the ciliary space by loading onto IFT trains at one end of the primary cilium and unloading at the other end.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is generally accepted that soluble and membrane-embedded cargo explore the ciliary space by loading onto IFT trains at one end of the primary cilium and unloading at the other end",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This represents the prevailing model in the field, supported by citations to Qin et al., 2004; Pedersen et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "4595c486-3a92-4d38-a58f-78ce042fdd1c",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C10",
+      "claim": "There is limited direct experimental evidence to support the model of IFT-mediated transport of ciliary membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Yet, there is limited direct experimental evidence to support this model of IFT-mediated transport of ciliary membrane proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an assessment of the state of the field based on review of existing literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "46ddd22c-8672-41f6-877a-c2ebc23d10a6",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C11",
+      "claim": "Externally applied beads that artificially cluster mating receptors are transported along the flagellar axoneme in Chlamydomonas reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pioneering studies using the flagellated green alga Chlamydomonas reinhardtii showed that externally applied beads, which artificially cluster mating receptors, are transported along the flagellar axoneme",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations to Bloodgood et al., 1979; Bloodgood and Salomonsky, 1989.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "96d6fe7e-ae47-4ebf-8bf2-e84699453ad5",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C12",
+      "claim": "A role for IFT has not been tested in the context of bead transport along flagellar axonemes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but a role for IFT has not been tested in this context",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an assessment of what has not been done in prior studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "3a737e57-6687-4582-9229-1a7b70b1c3c5",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C13",
+      "claim": "Bulk imaging of some GFP-tagged ciliary membrane proteins (e.g., PKD2-GFP, OSM9-GFP) discerned a few fluorescence foci moving processively in cilia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While bulk imaging of some GFP-tagged ciliary membrane proteins (e.g., PKD2-GFP, OSM9-GFP) discerned a few fluorescence foci moving processively in cilia",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citations to Ou et al., 2005; Huang et al., 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "8014029e-6424-43b8-a421-dedb9e3f4528",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C14",
+      "claim": "Ciliary membrane proteins are generally distributed homogeneously inside cilia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ciliary membrane proteins are generally distributed homogeneously inside cilia",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an observation about the typical distribution pattern of ciliary membrane proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "dbe8dadd-d057-4f40-a607-424de6d98e72",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C15",
+      "claim": "Information on the dynamics of ciliary membrane proteins is lacking.",
+      "claim_type": "EXPLICIT",
+      "source_text": "information on their dynamics is therefore lacking",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an assessment of the gap in knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b813c338-8a68-4451-b1f5-dbe6fd75b337",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C16",
+      "claim": "IFT trains have been visualized as large polymeric assemblages by electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "IFT trains have been visualized as large polymeric assemblages by electron microscopy",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation to Pigino et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "27f20a44-2ef1-49c8-bca5-f2d9fa7da776",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C17",
+      "claim": "IFT trains have been visualized as clusters of fluorescence by light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and as clusters of fluorescence by light microscopy",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "Supported by citation to Pedersen and Rosenbaum, 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "8b913965-beb3-464d-8f23-7f3331652a5b",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C18",
+      "claim": "The IFT entities that ferry cargoes remain elusive.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the IFT entities that ferry cargoes remain elusive",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an assessment of what is not yet understood about IFT cargo transport.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "0a4e6ae4-e120-4187-8548-2c06637ecc55",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C19",
+      "claim": "Single molecules of SSTR3 moved in a saltatory manner that comprised mostly diffusive behavior interspersed with short periods of directional movements.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To our surprise, single molecules of SSTR3 or Smo moved in a saltatory manner that comprised mostly diffusive behavior interspersed with short periods of directional movements",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from single molecule imaging experiments shown in Figure 1B and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a2a7fbf9-7d44-4855-824b-42b81005193d",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C20",
+      "claim": "Single molecules of Smo moved in a saltatory manner that comprised mostly diffusive behavior interspersed with short periods of directional movements.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To our surprise, single molecules of SSTR3 or Smo moved in a saltatory manner that comprised mostly diffusive behavior interspersed with short periods of directional movements",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from single molecule imaging experiments shown in Figure 1B and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "269bcdd9-27ec-4843-bf1d-ff5c19c38dbd",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C21",
+      "claim": "The saltatory movement of SSTR3 was clearly different from the smooth, processive movement of IFT trains in the same cilia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we found that the saltatory movement of SSTR3 was clearly different from the smooth, processive movement of IFT trains in the same cilia",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct comparison from simultaneous imaging experiments shown in Figure 1C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d9413e16-f3f1-4c4a-a14c-ae9d3151f8ca",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C22",
+      "claim": "The tracks of IFT trains and single SSTR3 molecules rarely overlapped even when single SSTR3 molecules displayed short directional movements.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, not only were the movements of IFT trains and single SSTR3 molecules different, their tracks rarely overlapped even when single SSTR3 molecules displayed short directional movements",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from tracking analysis shown in Figure 1D and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "22dd158a-a5dc-4c96-a83d-e0fca6c16879",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C23",
+      "claim": "SSTR3 and Smo moved primarily by diffusion in the ciliary membrane.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These observations indicate that SSTR3 and Smo moved primarily by diffusion in the ciliary membrane",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the saltatory movement patterns observed in single molecule imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "6cf552d1-1763-4855-b4c1-8d07dc1e324b",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C24",
+      "claim": "Very small IFT trains (IFT nanotrains) might actively move single SSTR3 molecules, and these IFT nanotrains are below the sensitivity limit of the imaging.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and that very small IFT trains might actively move single SSTR3 molecules; these IFT nanotrains are below the sensitivity limit of our imaging",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative interpretation to explain the short directional movements observed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "07456505-cab6-4f39-8e6e-f934e82d8681",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C25",
+      "claim": "Photobleaching Smo-YFP or SSTR3-GFP in the entire cilium led to no detectable recovery from its plasma membrane pool.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We had previously uncovered a diffusion barrier at the ciliary base by showing that photobleaching Smo-YFP or SSTR3-GFP in the entire cilium led to no detectable recovery from its plasma membrane pool",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is experimental data from prior work, cited as Hu et al., 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a5f05674-fa6c-4b60-b899-0decb9672cbf",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C26",
+      "claim": "Photobleaching Smo-YFP or SSTR3-GFP in the distal half of the cilium led to fluorescence recovery in less than 60 s at the expense of signal diffusing from the proximal, unbleached half.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, photobleaching Smo-YFP (Hu et al., 2010) or SSTR3-GFP (Figure 1C, Figure 1—figure supplement 3, and Video 3) in the distal half of the cilium led to fluorescence recovery in less than 60 s at the expense of signal diffusing from the proximal, unbleached half",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from half-cilium FRAP experiments shown in Figure 1C and supplementary materials.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "571fb378-5fb3-4bf1-886d-94a6191a8357",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C27",
+      "claim": "The saltatory movements of SSTR3 and Smo are compatible with rapid exploration of the entire ciliary space.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While this experiment did not distinguish between diffusion and active transport, it showed that the saltatory movements of SSTR3 and Smo are compatible with rapid exploration of the entire ciliary space.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the FRAP recovery kinetics data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "5de74858-f6b6-4ca5-9d4f-e79988177357",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C28",
+      "claim": "Half-cilium FRAP allowed calculation of an apparent diffusion coefficient of 0.25 μm²/s for SSTR3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Half-cilium FRAP allowed us to calculate an apparent diffusion coefficient of 0.25 μm",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement derived from FRAP experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "13bf45a3-97d5-4f85-8a4c-2d847a9f6fe4",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C29",
+      "claim": "Saturated labeling of SSTR3 with mSA-Alexa647 did not significantly affect the diffusion coefficient compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The diffusion coefficients quantified from control cells vs cells with saturated staining of mSA-Alexa647 (mSA). More than 10 cilia were analyzed for each condition. Error bars, SD. p>0.05.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from Figure 2C showing no significant difference in diffusion coefficients.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "89714c53-170c-48b5-9fa5-c14580e22e0d",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C30",
+      "claim": "Treatment with antimycin and deoxyglucose reduced cellular ATP levels by 90%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This treatment reduced cellular ATP levels by 90%",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from ATP assays shown in Figure 3C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "297e813c-57ab-4633-a1dc-1232cb58a1aa",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C31",
+      "claim": "Treatment with antimycin and deoxyglucose abolished processive movements of IFT88 foci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This treatment reduced cellular ATP levels by 90% (Figure 3C) and abolished processive movements of IFT88 foci",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging shown in Figure 3A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d4383b93-93cf-47f9-8c90-e4c335db30db",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C32",
+      "claim": "Treatment with antimycin and deoxyglucose did not abolish saltatory movements of single SSTR3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but did not abolish saltatory movements of single SSTR3 molecules",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging shown in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ca97fbd2-c95b-4774-8492-5694a289fa84",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C33",
+      "claim": "Statistical analyses show a significant difference between velocity distributions of untreated and ATP-depleted cells for both anterograde velocities (p=0.03) and retrograde velocities (p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Statistical analyses show a significant difference between velocity distributions of untreated and ATP-depleted cells for both the anterograde velocities (p=0.03) and retrograde velocities (p=0.03).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result from velocity distribution data shown in Figure 3D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "4090a5bb-4bd6-4e8b-a4ce-4427c7c04da8",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C34",
+      "claim": "The active transport component contributed 26.6 ± 5.9% to anterograde movements and 12.8 ± 3.1% to retrograde movements of SSTR3 in ATP depletion experiments.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with the latter found to contribute a fraction of 26.6 +/− 5.9% (anterograde) and 12.8 +/− 3.1% (retrograde)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from statistical modeling of velocity distributions shown in Figure 3D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "1e00cee4-b016-45d8-824c-50314197af3e",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C35",
+      "claim": "Digitonin selectively permeabilizes the plasma membrane but leaves the ciliary membrane intact.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Second, we used the cholesterol-selective detergent digitonin. which selectively permeabilizes the plasma membrane but leaves the ciliary membrane intact",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about digitonin's properties, supported by citation to Bloodgood, 1992.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "7a6ca5ce-fef6-43ac-8f42-61302ddfe3d9",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C36",
+      "claim": "Digitonin permeabilization depletes cellular ATP while preserving the ciliary membrane.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Digitonin permeabilization depletes cellular ATP (Figure 4E, Figure 4—figure supplement 1) while preserving the ciliary membrane",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from ATP assays shown in Figure 4E and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "eb3d3c09-e10a-4401-8207-2e3af561397c",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C37",
+      "claim": "Digitonin permeabilization abolished processive movements of IFT88 foci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and abolished processive movements of IFT88 foci",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "230c2232-60ab-4b96-a1da-6a866afc7ed6",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C38",
+      "claim": "Digitonin permeabilization did not abolish saltatory movements of single SSTR3 or Smo molecules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but did not abolish saltatory movements of single SSTR3 or Smo molecules",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging shown in Figure 4A and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a7f62b68-38ed-4d32-9650-422c8de6cefe",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C39",
+      "claim": "The active transport component contributed 21.8 ± 12.6% to anterograde movements and 24.3 ± 5.5% to retrograde movements of SSTR3 in digitonin permeabilization experiments.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with the latter found to contribute a fraction of 21.8 +/− 12.6% (anterograde) and 24.3 +/− 5.5% (retrograde)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from statistical modeling of velocity distributions shown in Figure 4B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b4b4a8de-6fd8-4999-a1c8-0c6d2f0afb70",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C40",
+      "claim": "The active transport component contributed 32.1 ± 5.9% to anterograde movements and 34.1 ± 1.9% to retrograde movements of Smo in digitonin permeabilization experiments.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with the latter found to contribute a fraction of 32.1 +/− 5.9% (anterograde) and 34.1 +/− 1.9% (retrograde)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from statistical modeling of velocity distributions shown in Figure 4C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "052f8959-df93-4c0d-98e4-fc0595bd2bdb",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C41",
+      "claim": "The mobility of SSTR3-GFP was similar in untreated and digitonin-treated cells as measured by FRAP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, FRAP analysis showed that the mobility of SSTR3-GFP was similar in untreated and digitonin-treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from FRAP experiments shown in Figure 4A and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "9bc70bfb-7fc1-455d-a528-f8d14975a1be",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C42",
+      "claim": "The combination of passive diffusion and active transport (by nanotrains) are effective at enabling membrane proteins to explore the ciliary space.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This result strongly suggests that the combination of passive diffusion and active transport (by nanotrains, see above) are effective at enabling membrane proteins to explore the ciliary space.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the FRAP data showing similar mobility in different conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "83a3ba7b-75c1-4787-a9c3-67c21b3aca47",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C43",
+      "claim": "Ciliobrevin is a specific inhibitor of cytoplasmic dynein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An alternative strategy to inhibit active transport is to use ciliobrevin (Firestone et al., 2012), a specific inhibitor of cytoplasmic dynein",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about ciliobrevin, supported by citation to Firestone et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "4c42089b-fc9a-41c0-9393-99772abf2b8f",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C44",
+      "claim": "Ciliobrevin treatment abolished retrograde movements of IFT88 foci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As expected, ciliobrevin treatment abolished retrograde movements of IFT88 foci",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "44dcfb30-aad9-48ce-a392-5a3625a24988",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C45",
+      "claim": "Ciliobrevin treatment eventually also abolished anterograde movements of IFT88 foci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and eventually also abolished anterograde movements",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "25c021cd-5012-4180-8460-f85dcfa9645f",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C46",
+      "claim": "Ciliobrevin treatment did not affect the saltatory movements of single SSTR3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Surprisingly, ciliobrevin treatment did not affect the saltatory movements of single SSTR3 molecules",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from live cell imaging shown in Figure 5A and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "49f7a313-a269-4c85-a691-6893037d6075",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C47",
+      "claim": "Statistical analyses show no significant difference (p>0.9) between the distributions of velocities of untreated and ciliobrevin-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Statistical analyses show no significant difference (p>0.9) between the distributions of velocities of untreated and ciliobrevin-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result from velocity distribution data shown in Figure 5C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ed5265e1-c774-4cda-aec5-b22ce2175c71",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C48",
+      "claim": "The mobility of SSTR3-GFP was similar in untreated and ciliobrevin-treated cells as measured by FRAP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "FRAP analysis showed that the mobility of SSTR3-GFP was similar in untreated and ciliobrevin-treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from FRAP experiments shown in Figure 5A and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d5912036-31a5-492c-afcc-67676e60805b",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C49",
+      "claim": "Ciliobrevin inhibited motor-driven movements of fluorescent IFT88 foci, but not those of single SSTR3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Given prior models of IFT-mediated protein transport (Ou et al., 2005; Huang et al., 2007), it is surprising that ciliobrevin inhibited motor-driven movements of fluorescent IFT88 foci, but not those of single SSTR3 molecules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a summary of the experimental observations from ciliobrevin treatment experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "6b4a7b2e-eb9a-4a7a-bc39-bca107a103e6",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C50",
+      "claim": "The majority of directional SSTR3 movements may be mediated by IFT nanotrains that are smaller than the IFT88 foci that can be resolved.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is possible that the majority of directional SSTR3 movements are mediated by IFT nanotrains that are smaller than the IFT88 foci that we can resolve, and which might be less sensitive to dynein inhibition",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative interpretation to explain the ciliobrevin results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "e1df9f89-39fb-45e8-ade2-04f8624329fb",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C51",
+      "claim": "IFT nanotrains might be less sensitive to dynein inhibition than large IFT trains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and which might be less sensitive to dynein inhibition",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation for why ciliobrevin affects large IFT foci but not SSTR3 movements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "c062da87-7b89-49a4-b280-e3f2cc997bc5",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C52",
+      "claim": "Ciliobrevin may be less potent against dynein under specific loads such as those corresponding to very small IFT nanotrains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although ciliobrevin has been shown to inhibit dynein in gliding assays (Firestone et al., 2012), it is also possible that it is less potent against dynein under specific loads such as those corresponding to very small IFT nanotrains.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation for the differential effects of ciliobrevin.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "f34f4273-26f4-4168-a134-fca536550b2c",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C53",
+      "claim": "Directional SSTR3 movements may occur on other motors that are not inhibited by ciliobrevin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another possibility is that directional SSTR3 movements occurred on other motors (Hao et al., 2011) that are not inhibited by ciliobrevin.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative alternative explanation, with reference to other motors cited in Hao et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "f058979f-ed5a-4f4e-8aea-4f1e481aa8af",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C54",
+      "claim": "The coupling between single SSTR3 molecules and IFT trains is weak and transient.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Having found that IFT inhibition by three independent methods failed to affect SSTR3 movements, we hypothesized that the coupling between single SSTR3 molecules and IFT trains is weak and transient.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a hypothesis inferred from the experimental results showing uncoupling of SSTR3 and IFT movements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "9bf24f56-5aab-46a2-b3f0-75c3cb02913e",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C55",
+      "claim": "The movement of IFT trains is a constitutive process largely independent of binding to cargo such as SSTR3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This predicts that the movement of IFT trains is a constitutive process largely independent of binding to cargo such as SSTR3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction based on the hypothesis of weak coupling between cargo and IFT trains.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "887d0a44-4932-4c99-863e-457fb6cfc6db",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C56",
+      "claim": "Wheat germ agglutinin (WGA) cross-links and immobilizes glycosylated membrane proteins in the ciliary membrane.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since surface-exposed membrane proteins like SSTR3 are glycosylated, multivalent lectins such as wheat germ agglutinin (WGA) will cross-link and immobilize them in the ciliary membrane",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about WGA's properties, supported by citation to Bloodgood, 1992.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "5b70bbcd-3625-4b90-8dde-7ee82503a2f7",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C57",
+      "claim": "WGA treatment immobilized single SSTR3 molecules as confirmed by FRAP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "WGA treatment immobilized single SSTR3 molecules (Figure 6A, Figure 6—figure supplement 1, and Figure 6—figure supplement 2) as confirmed by FRAP",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from FRAP experiments shown in Figure 6A and supplementary figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "3d7473eb-d888-41b7-b285-212398ffb7af",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C58",
+      "claim": "WGA treatment did not significantly affect the frequency or velocity of IFT88 foci movements.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but did not significantly affect the frequency or velocity of IFT88 foci movements",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental data from tracking analysis shown in Figure 6B-D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ca96b205-12b5-4748-b8dd-530a17619e25",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C59",
+      "claim": "Immobilization of membrane proteins (cargoes) only minimally affected IFT train formation and movement.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our finding that immobilization of membrane proteins (cargoes) only minimally affected IFT train formation and movement suggests that IFT trains assemble spontaneously rather than 'on demand' by binding cargo",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the WGA treatment experiments showing IFT continues despite cargo immobilization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "cfb07f56-03e6-4afb-96ba-8dfbe4446ebc",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C60",
+      "claim": "IFT trains assemble spontaneously rather than 'on demand' by binding cargo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggests that IFT trains assemble spontaneously rather than 'on demand' by binding cargo",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion inferred from the WGA treatment experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "8a4ce062-c4b5-4b28-b413-ea691af936dd",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C61",
+      "claim": "IFT train assembly is similar in principle to the cargo-independent assembly of clathrin-coated pits.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this is similar in principle to the cargo-independent assembly of clathrin-coated pits",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an analogy drawn to another cellular process, supported by citation to Cocucci et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "91e75fe7-1593-4dfc-9316-223a379448f1",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C62",
+      "claim": "IFT trains assemble spontaneously at a given frequency at the base and tip of cilia, forming conveyor belts along the length of the cilium onto which membrane cargo can hop on and off.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our model (Figure 6E), IFT trains assemble spontaneously at a given frequency at the base and tip of cilia, forming conveyor belts along the length of the cilium onto which membrane cargo can hop on and off.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a model proposed based on the collective experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b1024a51-67dd-4720-919a-5666595f6082",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C63",
+      "claim": "Each IFT train may carry a constant number of cargo molecules but individual cargo molecules continually hop on and off.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, it is possible that each IFT train carries a constant number of cargo molecules but individual cargo molecules continually hop on and off",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation to reconcile single molecule observations with prior ensemble imaging studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "17eab60d-442f-4386-aa83-70a30a091528",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C64",
+      "claim": "Ensemble imaging would not detect individual cargo hopping on and off events that can be detected at the single molecule level.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ensemble imagining would not detect these individual events which we could detect here at the single molecule level",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the limitations of ensemble imaging compared to single molecule imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "345e80d3-27b8-4ef7-80ad-e510a9891183",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C65",
+      "claim": "Membrane protein transport in cilia may be reminiscent of the slow axonal transport pathway in which proteins infrequently hop onto motors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus membrane protein transport in cilia may be reminiscent of the slow axonal transport pathway in which most proteins synthesized in the neuronal body move at an apparent slow rate along the axon because they infrequently hop onto motors",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an analogy drawn to another transport system, supported by citation to Scott et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d75fea2e-4126-4f1b-92ac-e6db831ded91",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C66",
+      "claim": "The Péclet number for SSTR3 in cilia is approximately 0.5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The calculated values of Pe are thus 0.5 for SSTR3",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a calculated value based on measured parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "2531d124-1e87-4bf9-964a-53f088463350",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C67",
+      "claim": "The Péclet number for a typical protein such as tubulin in cilia is approximately 0.1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and 0.1 for tubulin",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a calculated value based on estimated parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "1f5cedb3-1279-4f8e-9678-987d26698375",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C68",
+      "claim": "Passive advection plays a very minor role in the movement of typical proteins inside cilia.",
+      "claim_type": "EXPLICIT",
+      "source_text": "thereby suggesting that passive advection plays a very minor role in the movement of typical proteins inside cilia",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the calculated Péclet numbers being less than 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ece10ea2-423a-493b-a2aa-747c3da6c6c1",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C69",
+      "claim": "The passive advection model is incompatible with the finding that IFT foci movements can be interrupted without affecting active transport of SSTR3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, the passive advection model is incompatible with our finding that IFT foci movements can be interrupted without affecting active transport of SSTR3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the ciliobrevin treatment experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "75389647-6b65-46aa-b0e5-065f65c58388",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C70",
+      "claim": "Unresolvable IFT nanotrains may transport SSTR3 when cells are exposed to ciliobrevin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This experiment suggests that unresolvable IFT nanotrains transport SSTR3 when cells are exposed to ciliobrevin",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the ciliobrevin results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "5650d3c5-d6be-4d9d-ad94-6f780d5e90ea",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C71",
+      "claim": "Large IFT trains visualized as readily detectable foci of fluorescence may be devoid of cargo and represent recycling IFT complexes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and that large IFT trains visualized as readily detectable foci of fluorescence may be devoid of cargo and represent recycling IFT complexes",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the relationship between IFT foci and cargo transport.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "2c9923c0-faf9-4087-8fa7-a4883604d8e8",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C72",
+      "claim": "IFT nanotrains, possibly reduced to single IFT complexes bridging a cargo to a motor, may represent the transporting entities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The hypothesis that IFT nanotrains, possibly reduced to single IFT complexes bridging a cargo to a motor, represent the transporting entities is in line with nearly all other example of motor-cargo adaptors",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis supported by analogy to other motor-cargo systems, cited as Hirokawa et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a7923595-22d4-4751-ab33-2bbdb02bb5bb",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C73",
+      "claim": "Ciliary membrane proteins such as SSTR3 and Smo explore the ciliary space by passive diffusion rather than only by motor-driven, directional transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In summary, our studies indicate that ciliary membrane proteins such as SSTR3 and Smo explore the ciliary space by passive diffusion rather than only by motor-driven, directional transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main conclusion drawn from all the experimental data presented.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "87366e89-58c4-4170-87ac-5fdb35cc334d",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C74",
+      "claim": "A single SSTR3 molecule could diffuse along the length of a 4 μm cilium in less than 40 s based on its diffusion coefficient of 0.25 μm²/s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, the diffusion coefficient of SSTR3 (D= 0.25 μm2/s; Figure 5—figure supplement 2B) indicates that a single SSTR3 molecule could diffuse along the length of a 4 μm cilium in less than 40 s",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the measured diffusion coefficient.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d428cbe0-faba-429a-9e37-40498ff5640d",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C75",
+      "claim": "IFT-mediated transport would complete a trip along a 4 μm cilium in 8 s.",
+      "claim_type": "EXPLICIT",
+      "source_text": "while IFT-mediated transport would complete the same trip in 8 s",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated based on known IFT motor velocities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d1b66642-886e-4a0b-8dce-7be3d79ffa5a",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C76",
+      "claim": "The dimensions of a cilium are similar to those of a bacterium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, the dimensions of a cilium are similar to those of a bacterium",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a comparative observation about cellular dimensions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ca74e08c-5225-48db-b5a1-7d0fe3fe41c7",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C77",
+      "claim": "Proteins rapidly explore the cellular space by diffusion in the absence of cytoskeletal motors in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in which proteins rapidly explore the cellular space by diffusion in the absence of cytoskeletal motors",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about bacterial protein dynamics, supported by citation to Elowitz et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "5180db0d-1d53-4acc-a25d-9a338b869856",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C78",
+      "claim": "The importance of diffusion in exploration of the ciliary space does not rule out other roles for IFT in ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The importance of diffusion in exploration of the ciliary space does not rule out other roles for IFT in ciliogenesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a clarification about the scope of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "53028c8f-34fc-465c-8270-57eeacede0cc",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C79",
+      "claim": "IFT may form scaffolds for signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source_text": "or the possible formation of IFT scaffolds for signaling cascades",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative possibility supported by citations to Pan and Snell, 2002; Wang et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b1e3c5a7-13f7-445a-8178-4c6642a4c0b3",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C80",
+      "claim": "SSTR3 is a G protein-coupled receptor (GPCR).",
+      "claim_type": "EXPLICIT",
+      "source_text": "the G protein-coupled receptor (GPCR), Somatostatin receptor 3 (SSTR3)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about SSTR3, supported by citation to Händel et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "41aec5f3-b150-4004-a421-efae25cbedf0",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C81",
+      "claim": "Smoothened (Smo) is a non-GPCR 7-pass membrane protein and a Hedgehog signaling intermediate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the Hedgehog signaling intermediate Smoothened (Smo), a non-GPCR 7-pass membrane protein",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about Smo, supported by citation to Corbit et al., 2005.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "82201a2c-b928-485f-bab3-a9ad28503c0f",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C82",
+      "claim": "SSTR3 and Smo spent less than a third of their time undergoing active transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Statistical subtraction of instant velocities revealed that SSTR3 and Smo spent less than a third of their time undergoing active transport.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative conclusion from statistical analysis of velocity distributions in the Abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b6b08440-cf36-4f96-aa9b-6b00c3eaf7d8",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C83",
+      "claim": "SSTR3 and IFT movements could be uncoupled by perturbing either membrane protein diffusion or active transport.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, SSTR3 and IFT movements could be uncoupled by perturbing either membrane protein diffusion or active transport.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary of experimental findings from perturbation experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "71b057eb-b96a-485b-9e90-3f5350998069",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C84",
+      "claim": "Attachment of ciliary membrane proteins to IFT trains is transient and stochastic rather than processive or spatially determined.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus ciliary membrane proteins move predominantly by diffusion, and attachment to IFT trains is transient and stochastic rather than processive or spatially determined.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main conclusion from all experimental data, stated in the Abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "c67c2641-fec8-47cf-b3a0-9bf389ee3cfe",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C85",
+      "claim": "Ciliary membrane proteins move predominantly by diffusion.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus ciliary membrane proteins move predominantly by diffusion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main conclusion from all experimental data, stated in the Abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "bf1e0948-9ee4-4b7b-8106-52cd6f8bc852",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C86",
+      "claim": "Previous models of cargo loading onto IFT trains are no longer tenable.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By following the movements of single membrane proteins in the primary cilium, we find that previous models of cargo loading onto IFT trains are no longer tenable.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the collective experimental findings that contradict prior models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "c3f75b4d-df83-4fb1-b98f-c8c61d7cf8f2",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C87",
+      "claim": "Cargo are highly labile components of IFT trains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we find instead that cargo are highly labile components of IFT trains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the experimental observations of transient coupling between cargo and IFT.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "f6079f9f-9812-474c-b00a-65b20a57660f",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C88",
+      "claim": "Ciliobrevin has been shown to inhibit dynein in gliding assays.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although ciliobrevin has been shown to inhibit dynein in gliding assays (Firestone et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from prior work, cited as Firestone et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "04a8aee9-9841-4d62-b050-48b097599d50",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C89",
+      "claim": "The differences between WGA-treated and control cells in IFT frequency and velocity are relatively small but statistically significant with the exception of the frequency of anterograde trains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While the differences between WGA-treated and control cells are relatively small, with the exception of the frequency of anterograde trains they are statistically significant",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result from the WGA treatment experiments shown in Figure 6C-D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b3dbbd8d-96d5-4086-ae4b-d2a50e4eff20",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C90",
+      "claim": "AP-Smo-YFP is constitutively localized to cilia in the cell line because it is expressed at a slightly higher level than the endogenous protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We note that AP-Smo-YFP is constitutively localized to cilia in our cell line because it is expressed at a slightly higher level than the endogenous protein.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an explanation for the observed localization pattern of the tagged protein.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "290e0e8f-8aef-4d99-9623-92f46a90ca90",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C91",
+      "claim": "Monovalent streptavidin was purified and conjugated to Alexa647 as described previously.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Monovalent streptavidin was purified and conjugated to Alexa647 as described previously (Howarth et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes a method from prior work, cited as Howarth et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "5abed5a8-a12c-482e-8cbc-19ce44058897",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C92",
+      "claim": "Cell surface SSTR3 or Smo can be biotinylated by incubation with recombinant BirA ligase, biotin and ATP.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Alternatively, cell surface SSTR3 or Smo can be biotinylated by incubation with 0.3 μM recombinant BirA ligase, 10 μM biotin and 1 mM ATP as described previously (Howarth and Ting, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes an alternative method from prior work, cited as Howarth and Ting, 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a80a5b0d-42f4-4c2c-9872-96535f8c593a",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C93",
+      "claim": "A two-sample Kolmogorov-Smirnov statistical test was used to determine whether there was a significant difference between velocity distributions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A two-sample Kolmogorov-Smirnov statistical test was used to determine whether there was a significant difference between these distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the statistical method used for data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "132deccd-9b03-4733-a647-2d8afc3d7420",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C94",
+      "claim": "The Kolmogorov-Smirnov test is non-parametric, makes no assumptions about the shape of the underlying distributions, and does not require binning of the data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This test is non-parametric, makes no assumptions about the shape of the underlying distributions, and does not require binning of the data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the properties of the statistical test used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "d916f9c7-aa15-4c0d-ac69-12962f5178d8",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C95",
+      "claim": "There was no significant difference in velocity components perpendicular to the cilia between untreated cells and digitonin semi-permeabilized cells (p>0.9).",
+      "claim_type": "EXPLICIT",
+      "source_text": "For velocity components perpendicular to the cilia, no significant difference was found (p>0.9) between either untreated cells and digitonin semi-permeabilized cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result from velocity distribution data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "31ad1526-39b1-4343-86d0-2b010b2ad005",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C96",
+      "claim": "There was no significant difference in velocity components perpendicular to the cilia between untreated cells and ciliobrevin D treated cells (p>0.9).",
+      "claim_type": "EXPLICIT",
+      "source_text": "For velocity components perpendicular to the cilia, no significant difference was found (p>0.9) between either untreated cells and digitonin semi-permeabilized cells, or untreated cells and ciliobrevin D treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result from velocity distribution data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "491a1f62-6fb1-4a7c-b361-c2d3332ce441",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C97",
+      "claim": "There was a significant difference between velocity distributions in untreated and digitonin semi-permeabilized cells for both anterograde velocities (p=0.0004) and retrograde velocities (p=0.003) along the cilia axis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Meanwhile, there was a significant difference between velocity distributions in untreated and digitonin semi-permeabilized cells for both the anterograde velocities (p=0.0004) and retrograde velocities (p=0.003) along the cilia axis.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result from velocity distribution data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "dc86f386-575b-4f28-88a5-6c9a827b5097",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C98",
+      "claim": "An F-test was used to establish that the fitted mixed distribution fitted the live cell anterograde velocity data significantly better compared to the permeabilized cell distribution alone (p=10⁻⁵).",
+      "claim_type": "EXPLICIT",
+      "source_text": "An F-test was used to establish that the fitted mixed distribution fitted the live cell anterograde velocity data significantly better compared to the permeabilized cell distribution alone (p=10−5, justifying the three additional degrees of freedom).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result validating the model fitting.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "09ee3cb6-cfcc-45f4-9dab-b6ad39499d9e",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C99",
+      "claim": "The F-test statistic established that the mixed distribution yielded a significant improvement in fitting the retrograde velocity data (p=10⁻⁵).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The F-test statistic established that the mixed distribution yielded a significant improvement in fitting the retrograde velocity data (p=10−5).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical analysis result validating the model fitting.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "c63d8bcf-752e-4277-b07a-f4166f511f86",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "claim_id": "C100",
+      "claim": "The measured fractional fluorescence intensity in a narrow segment of the cilium as a function of time after photobleaching was fitted to a model of one-dimensional diffusion in a bounded region.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The measured fractional fluorescence intensity in a narrow segment of the cilium as a function of time after photobleaching was fitted to a model of one-dimensional diffusion in a bounded region.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the mathematical model used to analyze FRAP data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Single molecule imaging directly demonstrates that SSTR3 and Smo exhibit saltatory movement patterns distinct from processive IFT trains, with tracks rarely overlapping. The data from multiple independent experiments (Figures 1B-D, supplementary figures, Videos 1-2) provide strong visual and quantitative evidence that these membrane proteins move primarily by diffusion with intermittent directional movements.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "f25cb70c-2daa-4974-a671-46a633d0743a",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Half-cilium FRAP experiments demonstrate rapid fluorescence recovery (<60s) within cilia, yielding a quantitative diffusion coefficient of 0.25 μm²/s for SSTR3. Control experiments show that saturated labeling does not affect diffusion (p>0.05), validating the measurement approach. The existence of a diffusion barrier at the ciliary base is confirmed by whole-cilium FRAP showing no recovery from plasma membrane.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "9087c0f5-fb5c-46fe-8259-e28629599539",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "ATP depletion via antimycin/deoxyglucose (90% reduction confirmed by biochemical assay) abolished IFT88 foci movements but not SSTR3 saltatory movements. Statistical analysis of velocity distributions shows significant differences (p=0.03) and quantifies active transport contribution at 26.6±5.9% (anterograde) and 12.8±3.1% (retrograde). The experimental design appropriately isolates motor-driven from diffusive movements.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "f2967af8-93a2-4c4c-b944-edf1e821c5da",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Digitonin permeabilization provides independent validation of ATP depletion results, depleting cellular ATP while preserving ciliary membrane integrity. Results are consistent across SSTR3 (21.8±12.6% and 24.3±5.5% active transport) and Smo (32.1±5.9% and 34.1±1.9%), with FRAP showing similar mobility in treated and untreated cells. The convergence of two independent ATP depletion methods strengthens the conclusion that membrane proteins spend the majority of time diffusing.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "8dd1d285-24ce-42be-a86a-20791173b35d",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Ciliobrevin treatment abolished both retrograde and anterograde IFT88 foci movements as expected for a dynein inhibitor, yet SSTR3 movements were unaffected (p>0.9 for velocity distributions). FRAP confirms maintained mobility. This uncoupling of IFT foci and cargo movements provides strong evidence that large IFT trains visualized as fluorescent foci are not the primary transporters of SSTR3.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "027a59d2-2b3f-491f-8664-9ad696d8eb64",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "WGA treatment immobilized SSTR3 (confirmed by FRAP) but had minimal effects on IFT88 foci frequency and velocity (small but statistically significant changes except for anterograde frequency). This demonstrates that IFT train assembly and movement occur independently of cargo binding, supporting a model of spontaneous, constitutive IFT assembly rather than cargo-dependent assembly.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "01340879-c984-4b42-a00d-3762c9fce947",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The collective evidence from multiple perturbation experiments (ATP depletion, digitonin, ciliobrevin, WGA) consistently demonstrates that SSTR3 and Smo spend less than one-third of their time undergoing active transport. The ability to uncouple cargo and IFT movements by perturbing either diffusion or active transport, combined with quantitative velocity analysis, strongly supports the conclusion that ciliary membrane proteins move predominantly by diffusion with transient, stochastic attachment to IFT trains.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ed33115f-6efa-4f7f-84ee-959c6429f6a5",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Péclet number calculations (0.5 for SSTR3, 0.1 for tubulin) demonstrate that Pe<1, indicating diffusion dominates over advection. This quantitative analysis, combined with the ciliobrevin experiment showing IFT foci can be stopped without affecting SSTR3 active transport, definitively rules out passive advection as a significant mechanism for protein movement in cilia.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "e9d7f05b-97dc-45a4-9c34-86fea8b3aab0",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The measured diffusion coefficient (0.25 μm²/s) allows calculation that SSTR3 can diffuse the length of a 4 μm cilium in <40s, compared to 8s for IFT-mediated transport. This demonstrates that diffusion is sufficiently rapid for ciliary exploration. The analogy to bacteria, where similar-sized compartments rely on diffusion, provides appropriate biological context for the finding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims are explicitly speculative interpretations to explain why ciliobrevin affects large IFT foci but not SSTR3 movements. While the hypotheses about IFT nanotrains, differential dynein sensitivity, or alternative motors are plausible, they lack direct experimental evidence. The authors appropriately present these as possibilities requiring future investigation with advanced imaging approaches.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "e1fd4d98-448e-474c-b1e2-856770ecd968",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R11",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The proposed model of weak, transient coupling between cargo and IFT trains, with spontaneous IFT assembly forming 'conveyor belts' for stochastic cargo loading/unloading, is well-supported by the collective experimental evidence. The model reconciles single molecule observations with prior ensemble imaging studies and is consistent with analogous transport systems (slow axonal transport). However, the specific molecular details remain to be determined.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "492d4a33-5086-4305-a06e-d321b3187307",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R12",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The conclusion that previous models of processive cargo loading onto IFT trains are untenable is strongly supported by the experimental data showing: (1) cargo and IFT tracks rarely overlap, (2) cargo movements persist when IFT is inhibited, (3) IFT continues when cargo is immobilized, and (4) quantitative analysis shows cargo spend >2/3 of time diffusing. The characterization of cargo as 'highly labile components' is justified by the transient coupling observed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R13",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims establish the background knowledge and identify gaps in the field. They are appropriately supported by citations to established literature. The assessment that direct experimental evidence for IFT-mediated membrane protein transport is limited (C10, C15, C18) accurately characterizes the state of knowledge and provides clear motivation for the current study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "1a7ddf24-84c1-4ba6-80b4-51597c9a63e9",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R14",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The analogy between spontaneous IFT assembly and cargo-independent clathrin-coated pit assembly is appropriate and supported by citation. Both systems show constitutive assembly of transport machinery independent of cargo binding, making this a valid conceptual comparison that helps contextualize the findings.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "b9cb3222-d86e-499c-8419-3ff8362f2d04",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R15",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The authors appropriately acknowledge that demonstrating diffusion as the primary mode of ciliary exploration does not exclude other IFT functions in ciliogenesis or as scaffolds for signaling. This measured conclusion appropriately scopes the findings and identifies areas requiring future investigation, showing scientific rigor in not over-interpreting the results.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a5a2f124-9787-45f4-86fe-78f30a44a153",
+      "content_id": "5c878c3f-1a42-4b80-8c2d-c4831c4c3f15",
+      "result_id": "R16",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The methodological claims are well-supported by appropriate citations and detailed descriptions. The statistical approaches (Kolmogorov-Smirnov test, F-test, mixed distribution modeling) are appropriate for the data type and properly applied. The FRAP analysis using one-dimensional diffusion models is mathematically sound. Control experiments and validation steps (e.g., C90 explaining Smo localization) demonstrate experimental rigor.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "24a7b575-68be-4a99-bdf6-455c0586b40e",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers expressed significant concerns about ATP depletion experiments. The editorial decision states 'the use of digitonin to test the significance of ATP in the migration of SSTR3 is less than satisfactory. It is not clear if this treatment is sufficient to deplete the ciliary (cellular) ATP levels.' Reviewer #1 specifically questioned 'Does digitonin permeabilization really affect intracellular ATP levels?' and recommended using 'sodium azide and deoxyglucose' instead. The editors required 'experiments strengthening the depletion of ATP' for resubmission, indicating the evidence was insufficient.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raised major concerns about ciliobrevin experiments. The editorial decision states 'An even bigger concern is the use of ciliobrevin as a reagent to test the potential involvement of Dynein. Is the function of Dynein completely inhibited under your experimental conditions? Your findings that this compound might also be inhibiting Kinesin cast a doubt on the efficacy of ciliobrevin.' Reviewer #1 asked 'is there a more specific procedure to address the involvement of dynein?' and Reviewer #3 noted the limitation that 'motor protein inhibition is achieved by a drug ciliobrevin rather than specific targeting of motor complex subunits.' These comments indicate uncertainty about the interpretation of ciliobrevin results.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers expressed concerns about the functionality and interpretation of tagged receptors. The editorial decision explicitly states 'The other major concern is whether the tagged SSTR3 is correctly targeted and functional? Addressing the functional significance of the tagged SSTR3 is an important issue.' Reviewer #2 emphasized 'We don't know what the labeling does to the function/transport of the receptor. If the receptor usually forms a complex, but said complex is altered due to the labeling, the ability of the receptor to diffuse would be significantly altered.' The editors required data on 'the functionality of tagged SSTR3-GFP' for resubmission, indicating these claims about SSTR3 movement patterns are uncertain without functional validation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "991de45a-8252-4fc2-b280-3aff919c8bd8",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer #3 explicitly stated 'This is a technically well-executed study with clear logic behind all the major experiments' and found the work 'suited to publication in eLife.' The WGA experiments showing uncoupling of cargo and IFT movements were not specifically criticized by any reviewer, and Reviewer #3's positive assessment of the technical execution and logic suggests acceptance of these experimental findings.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "7b09423f-3833-4ef4-9214-1580da49f7dd",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The main conclusions about diffusion-dominated transport were challenged by multiple reviewers. Reviewer #2 stated 'the authors suggest that diffusion is enough to account for the spread of the receptor. However, receptors are likely concentrated in the Cilia, and diffusion alone cannot account for that' and concluded 'this manuscript seems to me to provide an intriguing hint that diffusion may play an interesting role in the process, but it falls far short of providing a definitive understanding.' The editorial decision noted the data 'is not convincing' for establishing the mechanism. These comments indicate the overarching conclusions remain uncertain despite some supporting data.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "5d6cfb48-c403-48d9-8c9d-e754ccbc78f4",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer #2 raised concerns about labeling effects, stating 'We don't know what the labeling does to the function/transport of the receptor' and 'size and variety of interactions can influence efficacy of diffusion a lot.' While C29 shows no significant difference in diffusion coefficient with saturated labeling, the broader concern about whether labeling alters receptor behavior and function makes this control insufficient to address reviewer concerns about the validity of the approach.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "6b66160a-5b44-4a38-bb3d-eed02970893d",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These background and literature review claims about ciliary structure, IFT mechanisms, and prior work were not challenged by any reviewer. Reviewer #3 noted the study has 'clear logic behind all the major experiments' and is 'of importance for understanding cilium function,' implicitly accepting the background framework. No reviewer questioned the characterization of existing knowledge or the motivation for the study.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "571a262c-03d4-499e-a7c4-d1b2ed7383c9",
+      "content_id": "be1adace-6361-4858-a811-cf5ae91bc468",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The identity and basic characterization of SSTR3 and Smoothened as ciliary membrane proteins were not questioned by any reviewer. Reviewer #3 noted that 'a single membrane protein is used for the experiments' as a limitation and the editors requested 'the migration of smoothened by single molecule analysis' for resubmission, but these comments address the scope of experiments rather than challenging the basic characterization of these proteins.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0a4e6ae4-e120-4187-8548-2c06637ecc55",
+      "result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97"
+    },
+    {
+      "claim_id": "a2a7fbf9-7d44-4855-824b-42b81005193d",
+      "result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97"
+    },
+    {
+      "claim_id": "269bcdd9-27ec-4843-bf1d-ff5c19c38dbd",
+      "result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97"
+    },
+    {
+      "claim_id": "d9413e16-f3f1-4c4a-a14c-ae9d3151f8ca",
+      "result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97"
+    },
+    {
+      "claim_id": "22dd158a-a5dc-4c96-a83d-e0fca6c16879",
+      "result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97"
+    },
+    {
+      "claim_id": "6cf552d1-1763-4855-b4c1-8d07dc1e324b",
+      "result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97"
+    },
+    {
+      "claim_id": "07456505-cab6-4f39-8e6e-f934e82d8681",
+      "result_id": "f25cb70c-2daa-4974-a671-46a633d0743a"
+    },
+    {
+      "claim_id": "a5f05674-fa6c-4b60-b899-0decb9672cbf",
+      "result_id": "f25cb70c-2daa-4974-a671-46a633d0743a"
+    },
+    {
+      "claim_id": "571fb378-5fb3-4bf1-886d-94a6191a8357",
+      "result_id": "f25cb70c-2daa-4974-a671-46a633d0743a"
+    },
+    {
+      "claim_id": "5de74858-f6b6-4ca5-9d4f-e79988177357",
+      "result_id": "f25cb70c-2daa-4974-a671-46a633d0743a"
+    },
+    {
+      "claim_id": "13bf45a3-97d5-4f85-8a4c-2d847a9f6fe4",
+      "result_id": "f25cb70c-2daa-4974-a671-46a633d0743a"
+    },
+    {
+      "claim_id": "89714c53-170c-48b5-9fa5-c14580e22e0d",
+      "result_id": "9087c0f5-fb5c-46fe-8259-e28629599539"
+    },
+    {
+      "claim_id": "297e813c-57ab-4633-a1dc-1232cb58a1aa",
+      "result_id": "9087c0f5-fb5c-46fe-8259-e28629599539"
+    },
+    {
+      "claim_id": "d4383b93-93cf-47f9-8c90-e4c335db30db",
+      "result_id": "9087c0f5-fb5c-46fe-8259-e28629599539"
+    },
+    {
+      "claim_id": "ca97fbd2-c95b-4774-8492-5694a289fa84",
+      "result_id": "9087c0f5-fb5c-46fe-8259-e28629599539"
+    },
+    {
+      "claim_id": "4090a5bb-4bd6-4e8b-a4ce-4427c7c04da8",
+      "result_id": "9087c0f5-fb5c-46fe-8259-e28629599539"
+    },
+    {
+      "claim_id": "1e00cee4-b016-45d8-824c-50314197af3e",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "7a6ca5ce-fef6-43ac-8f42-61302ddfe3d9",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "eb3d3c09-e10a-4401-8207-2e3af561397c",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "230c2232-60ab-4b96-a1da-6a866afc7ed6",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "a7f62b68-38ed-4d32-9650-422c8de6cefe",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "b4b4a8de-6fd8-4999-a1c8-0c6d2f0afb70",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "052f8959-df93-4c0d-98e4-fc0595bd2bdb",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "9bc70bfb-7fc1-455d-a528-f8d14975a1be",
+      "result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da"
+    },
+    {
+      "claim_id": "83a3ba7b-75c1-4787-a9c3-67c21b3aca47",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "4c42089b-fc9a-41c0-9393-99772abf2b8f",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "44dcfb30-aad9-48ce-a392-5a3625a24988",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "25c021cd-5012-4180-8460-f85dcfa9645f",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "49f7a313-a269-4c85-a691-6893037d6075",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "ed5265e1-c774-4cda-aec5-b22ce2175c71",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "d5912036-31a5-492c-afcc-67676e60805b",
+      "result_id": "8dd1d285-24ce-42be-a86a-20791173b35d"
+    },
+    {
+      "claim_id": "887d0a44-4932-4c99-863e-457fb6cfc6db",
+      "result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64"
+    },
+    {
+      "claim_id": "5b70bbcd-3625-4b90-8dde-7ee82503a2f7",
+      "result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64"
+    },
+    {
+      "claim_id": "3d7473eb-d888-41b7-b285-212398ffb7af",
+      "result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64"
+    },
+    {
+      "claim_id": "ca96b205-12b5-4748-b8dd-530a17619e25",
+      "result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64"
+    },
+    {
+      "claim_id": "cfb07f56-03e6-4afb-96ba-8dfbe4446ebc",
+      "result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64"
+    },
+    {
+      "claim_id": "04a8aee9-9841-4d62-b050-48b097599d50",
+      "result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64"
+    },
+    {
+      "claim_id": "82201a2c-b928-485f-bab3-a9ad28503c0f",
+      "result_id": "01340879-c984-4b42-a00d-3762c9fce947"
+    },
+    {
+      "claim_id": "b6b08440-cf36-4f96-aa9b-6b00c3eaf7d8",
+      "result_id": "01340879-c984-4b42-a00d-3762c9fce947"
+    },
+    {
+      "claim_id": "71b057eb-b96a-485b-9e90-3f5350998069",
+      "result_id": "01340879-c984-4b42-a00d-3762c9fce947"
+    },
+    {
+      "claim_id": "c67c2641-fec8-47cf-b3a0-9bf389ee3cfe",
+      "result_id": "01340879-c984-4b42-a00d-3762c9fce947"
+    },
+    {
+      "claim_id": "a7923595-22d4-4751-ab33-2bbdb02bb5bb",
+      "result_id": "01340879-c984-4b42-a00d-3762c9fce947"
+    },
+    {
+      "claim_id": "d75fea2e-4126-4f1b-92ac-e6db831ded91",
+      "result_id": "ed33115f-6efa-4f7f-84ee-959c6429f6a5"
+    },
+    {
+      "claim_id": "2531d124-1e87-4bf9-964a-53f088463350",
+      "result_id": "ed33115f-6efa-4f7f-84ee-959c6429f6a5"
+    },
+    {
+      "claim_id": "1f5cedb3-1279-4f8e-9678-987d26698375",
+      "result_id": "ed33115f-6efa-4f7f-84ee-959c6429f6a5"
+    },
+    {
+      "claim_id": "ece10ea2-423a-493b-a2aa-747c3da6c6c1",
+      "result_id": "ed33115f-6efa-4f7f-84ee-959c6429f6a5"
+    },
+    {
+      "claim_id": "87366e89-58c4-4170-87ac-5fdb35cc334d",
+      "result_id": "e9d7f05b-97dc-45a4-9c34-86fea8b3aab0"
+    },
+    {
+      "claim_id": "d428cbe0-faba-429a-9e37-40498ff5640d",
+      "result_id": "e9d7f05b-97dc-45a4-9c34-86fea8b3aab0"
+    },
+    {
+      "claim_id": "d1b66642-886e-4a0b-8dce-7be3d79ffa5a",
+      "result_id": "e9d7f05b-97dc-45a4-9c34-86fea8b3aab0"
+    },
+    {
+      "claim_id": "ca74e08c-5225-48db-b5a1-7d0fe3fe41c7",
+      "result_id": "e9d7f05b-97dc-45a4-9c34-86fea8b3aab0"
+    },
+    {
+      "claim_id": "6b4a7b2e-eb9a-4a7a-bc39-bca107a103e6",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "e1df9f89-39fb-45e8-ade2-04f8624329fb",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "c062da87-7b89-49a4-b280-e3f2cc997bc5",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "f34f4273-26f4-4168-a134-fca536550b2c",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "75389647-6b65-46aa-b0e5-065f65c58388",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "5650d3c5-d6be-4d9d-ad94-6f780d5e90ea",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "2c9923c0-faf9-4087-8fa7-a4883604d8e8",
+      "result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8"
+    },
+    {
+      "claim_id": "f058979f-ed5a-4f4e-8aea-4f1e481aa8af",
+      "result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968"
+    },
+    {
+      "claim_id": "9bf24f56-5aab-46a2-b3f0-75c3cb02913e",
+      "result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968"
+    },
+    {
+      "claim_id": "91e75fe7-1593-4dfc-9316-223a379448f1",
+      "result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968"
+    },
+    {
+      "claim_id": "b1024a51-67dd-4720-919a-5666595f6082",
+      "result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968"
+    },
+    {
+      "claim_id": "17eab60d-442f-4386-aa83-70a30a091528",
+      "result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968"
+    },
+    {
+      "claim_id": "345e80d3-27b8-4ef7-80ad-e510a9891183",
+      "result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968"
+    },
+    {
+      "claim_id": "bf1e0948-9ee4-4b7b-8106-52cd6f8bc852",
+      "result_id": "492d4a33-5086-4305-a06e-d321b3187307"
+    },
+    {
+      "claim_id": "c3f75b4d-df83-4fb1-b98f-c8c61d7cf8f2",
+      "result_id": "492d4a33-5086-4305-a06e-d321b3187307"
+    },
+    {
+      "claim_id": "18c9c2c0-f7ad-4db5-bc11-c37452fe3d11",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "73c7b397-9207-43de-89c7-2d75da0dcfa9",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "6ad4e32c-078c-4ecd-91e9-0aad87afc30f",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "eaad92ff-a6be-4e12-a544-62a8fd247ab6",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "a6acbddf-bdb3-4121-a9e2-ea4537b66313",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "3fe9399c-56e0-4cb5-ae59-adbaec477552",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "e4335612-6f16-468a-8d22-f3ade8a892b2",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "82be8513-37df-4fbb-86b0-3a6738d03663",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "0f5d4cf5-40b8-490c-a5ef-210f81f12b83",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "4595c486-3a92-4d38-a58f-78ce042fdd1c",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "46ddd22c-8672-41f6-877a-c2ebc23d10a6",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "96d6fe7e-ae47-4ebf-8bf2-e84699453ad5",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "3a737e57-6687-4582-9229-1a7b70b1c3c5",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "8014029e-6424-43b8-a421-dedb9e3f4528",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "dbe8dadd-d057-4f40-a607-424de6d98e72",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "b813c338-8a68-4451-b1f5-dbe6fd75b337",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "27f20a44-2ef1-49c8-bca5-f2d9fa7da776",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "8b913965-beb3-464d-8f23-7f3331652a5b",
+      "result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96"
+    },
+    {
+      "claim_id": "8a4ce062-c4b5-4b28-b413-ea691af936dd",
+      "result_id": "1a7ddf24-84c1-4ba6-80b4-51597c9a63e9"
+    },
+    {
+      "claim_id": "5180db0d-1d53-4acc-a25d-9a338b869856",
+      "result_id": "b9cb3222-d86e-499c-8419-3ff8362f2d04"
+    },
+    {
+      "claim_id": "53028c8f-34fc-465c-8270-57eeacede0cc",
+      "result_id": "b9cb3222-d86e-499c-8419-3ff8362f2d04"
+    },
+    {
+      "claim_id": "b1e3c5a7-13f7-445a-8178-4c6642a4c0b3",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "41aec5f3-b150-4004-a421-efae25cbedf0",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "b3dbbd8d-96d5-4086-ae4b-d2a50e4eff20",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "290e0e8f-8aef-4d99-9623-92f46a90ca90",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "5abed5a8-a12c-482e-8cbc-19ce44058897",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "a80a5b0d-42f4-4c2c-9872-96535f8c593a",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "132deccd-9b03-4733-a647-2d8afc3d7420",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "d916f9c7-aa15-4c0d-ac69-12962f5178d8",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "31ad1526-39b1-4343-86d0-2b010b2ad005",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "491a1f62-6fb1-4a7c-b361-c2d3332ce441",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "dc86f386-575b-4f28-88a5-6c9a827b5097",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "09ee3cb6-cfcc-45f4-9dab-b6ad39499d9e",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "c63d8bcf-752e-4277-b07a-f4166f511f86",
+      "result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153"
+    },
+    {
+      "claim_id": "89714c53-170c-48b5-9fa5-c14580e22e0d",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "297e813c-57ab-4633-a1dc-1232cb58a1aa",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "d4383b93-93cf-47f9-8c90-e4c335db30db",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "ca97fbd2-c95b-4774-8492-5694a289fa84",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "4090a5bb-4bd6-4e8b-a4ce-4427c7c04da8",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "7a6ca5ce-fef6-43ac-8f42-61302ddfe3d9",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "eb3d3c09-e10a-4401-8207-2e3af561397c",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "230c2232-60ab-4b96-a1da-6a866afc7ed6",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "a7f62b68-38ed-4d32-9650-422c8de6cefe",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "b4b4a8de-6fd8-4999-a1c8-0c6d2f0afb70",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "052f8959-df93-4c0d-98e4-fc0595bd2bdb",
+      "result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e"
+    },
+    {
+      "claim_id": "83a3ba7b-75c1-4787-a9c3-67c21b3aca47",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "4c42089b-fc9a-41c0-9393-99772abf2b8f",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "44dcfb30-aad9-48ce-a392-5a3625a24988",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "25c021cd-5012-4180-8460-f85dcfa9645f",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "49f7a313-a269-4c85-a691-6893037d6075",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "ed5265e1-c774-4cda-aec5-b22ce2175c71",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "d5912036-31a5-492c-afcc-67676e60805b",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "6b4a7b2e-eb9a-4a7a-bc39-bca107a103e6",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "e1df9f89-39fb-45e8-ade2-04f8624329fb",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "c062da87-7b89-49a4-b280-e3f2cc997bc5",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "f34f4273-26f4-4168-a134-fca536550b2c",
+      "result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae"
+    },
+    {
+      "claim_id": "0a4e6ae4-e120-4187-8548-2c06637ecc55",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "a2a7fbf9-7d44-4855-824b-42b81005193d",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "269bcdd9-27ec-4843-bf1d-ff5c19c38dbd",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "d9413e16-f3f1-4c4a-a14c-ae9d3151f8ca",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "22dd158a-a5dc-4c96-a83d-e0fca6c16879",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "a5f05674-fa6c-4b60-b899-0decb9672cbf",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "571fb378-5fb3-4bf1-886d-94a6191a8357",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "5de74858-f6b6-4ca5-9d4f-e79988177357",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "82201a2c-b928-485f-bab3-a9ad28503c0f",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "c67c2641-fec8-47cf-b3a0-9bf389ee3cfe",
+      "result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2"
+    },
+    {
+      "claim_id": "5b70bbcd-3625-4b90-8dde-7ee82503a2f7",
+      "result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8"
+    },
+    {
+      "claim_id": "3d7473eb-d888-41b7-b285-212398ffb7af",
+      "result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8"
+    },
+    {
+      "claim_id": "ca96b205-12b5-4748-b8dd-530a17619e25",
+      "result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8"
+    },
+    {
+      "claim_id": "cfb07f56-03e6-4afb-96ba-8dfbe4446ebc",
+      "result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8"
+    },
+    {
+      "claim_id": "91e75fe7-1593-4dfc-9316-223a379448f1",
+      "result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8"
+    },
+    {
+      "claim_id": "c3f75b4d-df83-4fb1-b98f-c8c61d7cf8f2",
+      "result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8"
+    },
+    {
+      "claim_id": "a7923595-22d4-4751-ab33-2bbdb02bb5bb",
+      "result_id": "7b09423f-3833-4ef4-9214-1580da49f7dd"
+    },
+    {
+      "claim_id": "71b057eb-b96a-485b-9e90-3f5350998069",
+      "result_id": "7b09423f-3833-4ef4-9214-1580da49f7dd"
+    },
+    {
+      "claim_id": "bf1e0948-9ee4-4b7b-8106-52cd6f8bc852",
+      "result_id": "7b09423f-3833-4ef4-9214-1580da49f7dd"
+    },
+    {
+      "claim_id": "13bf45a3-97d5-4f85-8a4c-2d847a9f6fe4",
+      "result_id": "5d6cfb48-c403-48d9-8c9d-e754ccbc78f4"
+    },
+    {
+      "claim_id": "18c9c2c0-f7ad-4db5-bc11-c37452fe3d11",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "73c7b397-9207-43de-89c7-2d75da0dcfa9",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "6ad4e32c-078c-4ecd-91e9-0aad87afc30f",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "eaad92ff-a6be-4e12-a544-62a8fd247ab6",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "a6acbddf-bdb3-4121-a9e2-ea4537b66313",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "3fe9399c-56e0-4cb5-ae59-adbaec477552",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "e4335612-6f16-468a-8d22-f3ade8a892b2",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "82be8513-37df-4fbb-86b0-3a6738d03663",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "0f5d4cf5-40b8-490c-a5ef-210f81f12b83",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "4595c486-3a92-4d38-a58f-78ce042fdd1c",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "46ddd22c-8672-41f6-877a-c2ebc23d10a6",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "96d6fe7e-ae47-4ebf-8bf2-e84699453ad5",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "3a737e57-6687-4582-9229-1a7b70b1c3c5",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "8014029e-6424-43b8-a421-dedb9e3f4528",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "dbe8dadd-d057-4f40-a607-424de6d98e72",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "b813c338-8a68-4451-b1f5-dbe6fd75b337",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "27f20a44-2ef1-49c8-bca5-f2d9fa7da776",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "8b913965-beb3-464d-8f23-7f3331652a5b",
+      "result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d"
+    },
+    {
+      "claim_id": "b1e3c5a7-13f7-445a-8178-4c6642a4c0b3",
+      "result_id": "571a262c-03d4-499e-a7c4-d1b2ed7383c9"
+    },
+    {
+      "claim_id": "41aec5f3-b150-4004-a421-efae25cbedf0",
+      "result_id": "571a262c-03d4-499e-a7c4-d1b2ed7383c9"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f6deb655-790f-4e35-ad62-780025b44a71",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "ddf94d9b-b5ca-4229-86b6-e5f06f5e5a96",
+      "peer_result_id": "6b66160a-5b44-4a38-bb3d-eed02970893d",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Perfect match on all 18 background claims (C1-C18). Both agree these literature review and motivation claims are well-supported. No reviewer challenged the characterization of existing knowledge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "a4f40bad-8ba6-4fa6-b45d-c3e80a0f1651",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "9087c0f5-fb5c-46fe-8259-e28629599539",
+      "peer_result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address ATP depletion experiments (C30-C34). LLM found evidence sufficient with 90% ATP reduction and statistical validation. Peer reviewers questioned whether digitonin adequately depletes ciliary ATP and requested additional experiments with sodium azide/deoxyglucose.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "96331184-11a9-41f5-956f-f7dc1bd4bce5",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "f2967af8-93a2-4c4c-b944-edf1e821c5da",
+      "peer_result_id": "24a7b575-68be-4a99-bdf6-455c0586b40e",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap on digitonin experiments (C36-C41). LLM found convergence of two ATP depletion methods strengthens conclusions. Peer reviewers expressed uncertainty about digitonin's efficacy in depleting ciliary ATP levels, requiring strengthened evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "03518e90-7545-43a4-86bf-114d9eb3a968",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "8dd1d285-24ce-42be-a86a-20791173b35d",
+      "peer_result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Strong overlap on ciliobrevin experiments (C43-C49). LLM found uncoupling of IFT and cargo movements provides strong evidence. Peer reviewers raised major concerns about ciliobrevin specificity, questioning whether dynein is completely inhibited and noting the drug may also inhibit kinesin.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "6d96d9e8-eae6-4273-be4d-bb171e762372",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "b83c15ef-7641-4a67-a4db-e6b3babdb8a8",
+      "peer_result_id": "1d78d1a0-6ca9-4249-84b8-44464fdd98ae",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Both address speculative interpretations of ciliobrevin results (C50-C53). LLM appropriately labels hypotheses about IFT nanotrains and alternative motors as UNCERTAIN lacking direct evidence. Peer reviewers similarly questioned the interpretation and requested more specific targeting approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "922980a9-d636-4d40-a87d-49d98bb1a54c",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "8abf1ad5-934d-4a76-b48c-c04e4d151d97",
+      "peer_result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Overlap on single molecule imaging of SSTR3 movement patterns (C19-C23). LLM found visual and quantitative evidence strongly supports saltatory movement claims. Peer reviewers questioned whether tagged SSTR3 is correctly targeted and functional, requiring validation that labeling doesn't alter receptor behavior.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "4b8e64f8-ffad-46ce-9c7c-7376ab9534f1",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "f25cb70c-2daa-4974-a671-46a633d0743a",
+      "peer_result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap on FRAP experiments (C26-C28). LLM found diffusion coefficient measurements well-validated. Peer reviewers questioned functionality of tagged receptors and whether labeling alters diffusion, making FRAP interpretations uncertain without functional validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "717bdf73-56bd-4f6a-a5d1-a8169cf4f33c",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "f25cb70c-2daa-4974-a671-46a633d0743a",
+      "peer_result_id": "5d6cfb48-c403-48d9-8c9d-e754ccbc78f4",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Both address labeling control (C29). LLM found no significant difference in diffusion with saturated labeling validates the approach. Peer reviewers found this control insufficient, noting broader concerns about how labeling affects receptor function, complex formation, and transport.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "164a570a-fb13-4d70-b984-ddc8ed5ea44f",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "027a59d2-2b3f-491f-8664-9ad696d8eb64",
+      "peer_result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Overlap on WGA experiments (C57-C60). Both agree these experiments showing uncoupling of cargo and IFT movements are technically sound. Reviewer #3 praised technical execution and logic; no specific criticisms of WGA findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "07cf5a99-3e80-406b-9a2c-8dee1f8fe149",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "e1fd4d98-448e-474c-b1e2-856770ecd968",
+      "peer_result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C62) but both support the transient coupling model. LLM found collective evidence supports weak, stochastic cargo-IFT interactions. Peer reviewer #3 found the study technically well-executed with clear logic, implicitly accepting the model framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "8eef11e5-29e4-4ef9-9f21-5eb4bd45ba43",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "01340879-c984-4b42-a00d-3762c9fce947",
+      "peer_result_id": "7b09423f-3833-4ef4-9214-1580da49f7dd",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Overlap on main conclusions about diffusion-dominated transport (C73, C84). LLM found collective evidence from multiple perturbations strongly supports <1/3 time in active transport. Peer reviewer #2 stated diffusion alone cannot account for receptor concentration in cilia and conclusions fall short of definitive understanding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "00f2c672-ebe1-4239-8b3c-0f3c9ddaa4ec",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "01340879-c984-4b42-a00d-3762c9fce947",
+      "peer_result_id": "78f24ab0-7bd0-4dbd-8366-09bdda8640a2",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C82, C85) on conclusions about SSTR3 movement. LLM found evidence supports predominantly diffusive movement. Peer reviewers' concerns about tagged receptor functionality make conclusions about SSTR3 behavior uncertain without validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "027556e9-df37-4473-a5f6-9c7e0e30a665",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "492d4a33-5086-4305-a06e-d321b3187307",
+      "peer_result_id": "7b09423f-3833-4ef4-9214-1580da49f7dd",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (C86) on rejecting processive cargo loading models. LLM found data strongly supports cargo as labile components. Peer reviewers found the overall mechanism not convincingly established, making conclusions about rejecting previous models uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "caf1f49d-e4b1-4876-9d13-c02eb886269c",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "492d4a33-5086-4305-a06e-d321b3187307",
+      "peer_result_id": "991de45a-8252-4fc2-b280-3aff919c8bd8",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (C87) but both support that IFT and cargo can be uncoupled. LLM found cargo as labile components well-supported. Peer reviewer #3's positive assessment of technical execution suggests acceptance of uncoupling evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "c89b5825-6964-4b95-84b7-421a653e1f08",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "a5a2f124-9787-45f4-86fe-78f30a44a153",
+      "peer_result_id": "571a262c-03d4-499e-a7c4-d1b2ed7383c9",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Both agree on basic methodological claims (C80-C81) about SSTR3 and Smoothened identity. No reviewer questioned the basic characterization of these proteins as ciliary membrane proteins, though scope expansion was requested.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "928530f2-129b-4299-9726-924603e76912",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "ed33115f-6efa-4f7f-84ee-959c6429f6a5",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Claims about Péclet number calculations (C66-C69) demonstrating diffusion dominates over advection. No corresponding peer review evaluation found; these quantitative analyses were not specifically addressed in reviews.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "fb6e21c6-c7e8-449f-813e-614191b61c2d",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "e9d7f05b-97dc-45a4-9c34-86fea8b3aab0",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Claims about diffusion timescales (C74-C77) showing SSTR3 can diffuse cilium length in <40s. No corresponding peer review evaluation; these calculations were not specifically challenged or discussed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "67c4d7f6-ff0f-4192-973f-197d2a6720e1",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "1a7ddf24-84c1-4ba6-80b4-51597c9a63e9",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Analogy to clathrin-coated pit assembly (C61). No corresponding peer review evaluation; this conceptual comparison was not addressed in reviews.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    },
+    {
+      "id": "58f2856f-bd92-4bc9-a1f9-df6e0064af3e",
+      "submission_id": "5f75ffb2-56bb-4493-a9b2-8ff4bd010194",
+      "llm_result_id": "b9cb3222-d86e-499c-8419-3ff8362f2d04",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Acknowledgment of limitations regarding other IFT functions (C78-C79). No corresponding peer review evaluation; reviewers did not specifically address these scoping statements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:31:06.453434Z"
+    }
+  ]
+}

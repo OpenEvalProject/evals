@@ -8,9 +8,9 @@ Reviewers:
 
 ## Review text
 
-DOI: [10.7554/eLife.00299.024](https://doi.org/10.7554/eLife.00299.024)
+DOI: [10.7554/eLife.00299.014](https://doi.org/10.7554/eLife.00299.014)
 
-In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
 
 Thank you for choosing to send your work entitled “Integrative genomic analysis of the human immune response to influenza vaccination” for consideration at eLife. Your article has been evaluated by a Senior editor and 2 reviewers, one of whom, Manolis Dermitzakis, is a member of our Board of Reviewing Editors.
 

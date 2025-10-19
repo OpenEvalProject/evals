@@ -46,7 +46,7 @@ We immunized an ethnically homogeneous group of 119 healthy adult male volunteer
 
 We performed mixed model regression analysis with SNPs located in 1-Mb intervals around each expression reporter sequence. We began by identifying SNP-transcript pairs with both significant evidence of a
 
-![Figure 1.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig1-v2.jpg)
+![Figure 1.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig1-v1.jpg)
 
 **Figure 1.:** Manhattan plots of the genotype-expression—log10 p-values across the genome for the discovery (inner circle) and validation (outer circle) cohorts. Each dot represents a SNP-transcript pair. Red dots indicate SNP-transcript pairs for which there is evidence of significant genotype-expression association (genotype p<5 × 10−8) and evidence of a transcriptional response to the vaccine (day effect p<0.05). The 78 genes that showed both properties in the two cohorts are shown in the outer margin.DOI: http://dx.doi.org/10.7554/eLife.00299.003
 
@@ -54,7 +54,7 @@ We performed mixed model regression analysis with SNPs located in 1-Mb intervals
 
 We hypothesized that, at some loci, the magnitude of the genetic effect could be different before and at different time points after vaccination. This type of effect, which would not be observed in a cross-sectional study design, could be directly examined with our serial expression data. We analyzed the additive effect of genotype on expression at each day in the study. Using a
 
-![Figure 2.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig2-v2.jpg)
+![Figure 2.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig2-v1.jpg)
 
 **Figure 2.:** (A) A specific example of this phenomenon: local Manhattan plots for the gene NECAB2 before and on day 3 after vaccination in each of the two cohorts, showing an increase in the magnitude of the genotype effect (R2g) after the experimental perturbation. (B) An increase in R2g after the experimental perturbation is a general feature of the SNP-transcript pairs that show a strong cis-eQTLs and a transcriptional response to vaccination (left). The within-genotype variance is unchanged (MSE, center), while the strength of the genotype effect on expression (slope of the additive association; β, right) increases, suggesting that the latter is the main driver for the observed increase in the genetic effect after vaccination.DOI: http://dx.doi.org/10.7554/eLife.00299.004
 
@@ -64,7 +64,7 @@ Theoretically, the observed temporal changes in the estimated genotype effect af
 
 Of the 78 genes that had the strongest validated evidence of a genotype effect and a transcriptional response to the vaccine, 14 were also in the list of 34 genes with the strongest evidence of an increase in the magnitude of the genetic effect after vaccination. Content analysis on the union of the two sets (98 genes) showed significant enrichment for genes involved in antigen processing and presentation, cytotoxic T-lymphocyte-mediated apoptosis of target cells, dendritic cell maturation and function, and membrane trafficking (
 
-![Figure 3.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig3-v2.jpg)
+![Figure 3.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig3-v1.jpg)
 
 **Figure 3.:** Barplots show categories with significant overrepresentation in the list of 98 genes with a strong cis-eQTL and a response to vaccination expressed as either a transcriptional response or a change in the genetic effect in both cohorts. The negative log(p-value) is plotted on the x-axis.DOI: http://dx.doi.org/10.7554/eLife.00299.005
 
@@ -72,17 +72,17 @@ Of the 78 genes that had the strongest validated evidence of a genotype effect a
 
 We and others have shown that for some transcripts there is significant correlation between the magnitude of the transcriptional and antibody responses to the vaccine stimulus (
 
-![Figure 4.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig4-v2.jpg)
+![Figure 4.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig4-v1.jpg)
 
 **Figure 4.:** (A) Examples of positive (DYNLT1) and negative (ANKRD33) correlation between gene expression on day 1 and the magnitude of the antibody response to the vaccine. Data points and regression lines in the scatterplots display the results for the discovery (blue) and validation (magenta) cohorts. (B) A total of 301 genes showed evidence of significant correlation between gene expression and the antibody response to the vaccine in both cohorts. Of these, 281 showed evidence of positive correlation and 83 of negative correlation. Each individual is represented by a column in the heatmaps. The top heatmaps display the magnitude of the antibody response (titer response index). The bottom heatmaps display the deviations around the expression mean for each gene. Individual gene identifiers and correlation coefficients are presented in the Interactive Results Tool.DOI: http://dx.doi.org/10.7554/eLife.00299.006
 
-![Figure 5.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig5-v2.jpg)
+![Figure 5.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig5-v1.jpg)
 
 **Figure 5.:** 20 genes show evidence of a transcriptional response to vaccination, significant genotype effects on gene expression, and correlation between the transcriptional and antibody responses. Remarkably, seven of these are involved in intracellular antigen transport, antigen processing, and antigen presentation.DOI: http://dx.doi.org/10.7554/eLife.00299.007
 
 We determined genetic associations to the antibody response using 137 eQTL SNPs from these 20 loci. The quantile-quantile plot from the association tests performed on these SNPs shows marked deviation from the empirical null distribution for QTL associations (
 
-![Figure 6.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig6-v2.jpg)
+![Figure 6.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig6-v1.jpg)
 
 **Figure 6.:** 137 SNP-transcript pairs with evidence of a strong cis-eQTL, a dynamic response to the vaccine (a change in transcript abundance or in the magnitude of the genetic effect), and correlation between the transcriptional and antibody responses were selected (result SNPs, in red). The empirical quantile-quantile plot of the result SNPs shows significant deviation from the empirical distribution of the entire data set (background SNPs, in blue).DOI: http://dx.doi.org/10.7554/eLife.00299.008
 
@@ -90,7 +90,7 @@ We determined genetic associations to the antibody response using 137 eQTL SNPs 
 
 We explored three types of associations in our work: genotype to gene expression (eQTL), gene expression to antibody titer, and genotype to antibody titer (QTL). We now considered alternative models for the relationships between these distinct types of association (
 
-![Figure 7.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig7-v2.jpg)
+![Figure 7.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig7-v1.jpg)
 
 **Figure 7.:** (A) Three models were evaluated, each showing a candidate hypothesis for the three-way association between genotype (G), expression (E) and trait (T). In the independent model, expression and trait each associate with genotype but are not themselves directly related. In the causal model, expression mediates the association between genotype and trait. In the reactive model, genotype and expression relate through the trait, so that gene expression changes are a downstream response to the trait. (B) p-values for independent-versus-reactive and independent-versus-causal hypothesis tests. Each point shows the result for one SNP-transcript pair. Points to the right of the solid vertical line are significant (p<0.05) for the reactive hypothesis and points above the solid horizontal line are significant for the causal hypothesis. The dashed line shows a p=0.1 threshold. (C) Power for rejection of the independent hypothesis. Non-independent data were simulated with effect sizes and variances similar to those in the enrichment set (the set of SNP-transcript pairs that were found to be significant in our study). The curve shows the proportion of cases in which the simulated data rejected the independent (null) hypothesis. The dotted line indicates the combined sample size in our study.DOI: http://dx.doi.org/10.7554/eLife.00299.009
 
@@ -110,7 +110,7 @@ Several limitations of the study are worth noting. First, we studied two samples
 
 A visual representation of the study design, the resulting data sets, and the integrative analysis scheme, is presented in
 
-![Figure 8.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig8-v2.jpg)
+![Figure 8.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig8-v1.jpg)
 
 **Figure 8.:** (A) Individuals were immunized on day 0 and peripheral blood RNA samples were obtained on days 0, 1, 3, and 14. Antibody titers were measured on pre-immune sera and on days 14 and 28. Genotyping was carried out on a peripheral blood genomic DNA sample obtained on day 1. Identical sample collection schemes were used, 1 year apart, for the discovery (males) and validation (females) cohorts. (B) Sample sizes and data generation platforms. (C) Integrative analysis involved identification of loci that exhibit a transcriptional response to vaccination, evidence of genetic regulation of expression (constitutive eQTL), evidence of correlation between gene expression and the antibody response, and evidence of correlation between genotype and the antibody response (QTL). Because transcript abundance was measured serially, we were able to evaluate changes in the magnitude of the genetic effect on expression at different time points following vaccination. In addition, the study design permitted QTL analysis conditional on gene expression, which led to the identification of loci whose genetic effects on the antibody response are causally linked through the eQTL.DOI: http://dx.doi.org/10.7554/eLife.00299.010
 
@@ -158,19 +158,19 @@ The analysis of correlation between gene expression and antibody titer in the di
 
 Array quality was initially assessed using GenomeStudio software (Illumina, Inc.). Default algorithms were used to normalize, generate SNP clusters, and make genotype calls. SNPs with minor allele frequency (MAF) <0.05 and Hardy-Weinberg Equilibrium (HWE) χ
 
-![Figure 9.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig9-v2.jpg)
+![Figure 9.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig9-v1.jpg)
 
 **Figure 9.:** Pairwise identity-by-descent metrics were estimated based on genotype data from our two study samples and six HapMap populations. Multidimensional scaling analysis was performed on the resulting pairwise distances. Components 1–3 of this analysis are plotted for the male (top) and female (bottom) cohorts, and the comparison populations. As expected, the study samples cluster with the HapMap CEU population. 12 outliers were identified in each cohort and were removed prior to analysis.DOI: http://dx.doi.org/10.7554/eLife.00299.011
 
 ## Integrative genomic analysis
 
-Analyses were carried out separately for each cohort and in the combined data set. Because we have repeated gene expression measurements on the same individuals over a series of time points, we performed a random effects linear model analysis. For each SNP-transcript pair, we fit a model with terms for day, additive effects for genotype and day–genotype interactions, and a random effect for each person:Where
+Analyses were carried out separately for each cohort and in the combined data set. Because we have repeated gene expression measurements on the same individuals over a series of time points, we performed a random effects linear model analysis. For each SNP-transcript pair, we fit a model with terms for day, additive effects for genotype and day–genotype interactions, and a random effect for each person:
 
-![Figure 10.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig10-v2.jpg)
+![Figure 10.](https://cdn.elifesciences.org/articles/00299/elife-00299-fig10-v1.jpg)
 
 **Figure 10.:** The figure displays hypothetical results for a single SNP-transcript pair. For any such pair, one may observe changes in transcript abundance at different time points after the experimental perturbation (lower box plots). In addition, gene expression at each time point may be different for different genotypes when there is evidence of an eQTL (upper box plots). Finally, the slope of the expression-genotype association (β), as well as the proportion of the variance in expression explained by genotype (R2g), may vary across time points.DOI: http://dx.doi.org/10.7554/eLife.00299.012
 
-In addition to the random effects linear model, we analyzed each expression trait with respect to genotype at each time point usingwhere Yj denotes the matrix of expression traits of individuals j at a given time point (days 0, 1, 3, 14) and Gi,k is a matrix of genotypes for individuals j at SNP locus k such that each element is assigned 0, 1 or 2 according to the number of minor alleles at the kth locus of the jth individual. This allowed estimates of the proportion of expression variance explained by individual genotypes from the model’s coefficient of determination (R2g). This model permitted a more detailed examination of the changes in the strength of the genotypic association with expression at each time point. To detect SNP-transcript pairs where the magnitude of the genotype effect varied after immunization, we took the difference in R2g measures (ΔR2g) from pairwise linear models fitted after (days 1, 3 and 14) and before vaccination (day 0). We then took the top 1% ΔR2g values between day 0 and a later time point. This cis-acting eQTL subset represents the loci that show significant changes in the genetic effect as a result of the vaccine.Yj=βGi,k+e
+In addition to the random effects linear model, we analyzed each expression trait with respect to genotype at each time point usingYj=βGi,k+ewhere Yj denotes the matrix of expression traits of individuals j at a given time point (days 0, 1, 3, 14) and Gi,k is a matrix of genotypes for individuals j at SNP locus k such that each element is assigned 0, 1 or 2 according to the number of minor alleles at the kth locus of the jth individual. This allowed estimates of the proportion of expression variance explained by individual genotypes from the model’s coefficient of determination (R2g). This model permitted a more detailed examination of the changes in the strength of the genotypic association with expression at each time point. To detect SNP-transcript pairs where the magnitude of the genotype effect varied after immunization, we took the difference in R2g measures (ΔR2g) from pairwise linear models fitted after (days 1, 3 and 14) and before vaccination (day 0). We then took the top 1% ΔR2g values between day 0 and a later time point. This cis-acting eQTL subset represents the loci that show significant changes in the genetic effect as a result of the vaccine.
 
 ## Correlation of transcripts with the humoral immune response
 
@@ -182,7 +182,7 @@ Enriched biological and functional pathways were analyzed using DAVID Bioinforma
 
 ## Causal and reactive model analyses
 
-To evaluate the relationship between the associations identified in our study, we extended a recently published analysis framework for causal modeling in eQTL data (Millstein et al., 2009). The relationship is modeled aswhere T is trait, E is gene expression, and G is genotype at a locus. In our experiment, the term E includes a separate value for each day. The term G has a separate effect on the trait under the independent null model, while under the causal alternative, where it acts through gene expression, its influence is entirely transmitted through E. The statistic used to assess the influence of G is the partial F reported by the ‘aov’ function in R (version 2.15.1). The analyses utilize an equivalence test approach, where the null hypothesis is that the second independent variable has an effect on the response conditional on the first variable, while the alternative is complete co-linearity in the associations. The null distribution of the F statistic–which under parametric assumptions would have a non-central F distribution—is derived using a permutation test procedure, as follows: The relationship between E and T is decoupled by regressing E on G, permuting the resulting residuals, then adding the permuted residuals to the predicted values to arrive at E*, which is independent of T but maintains the marginal variance and G-correlation of E. This procedure enforces the assumption of the independent model, while leaving other properties unchanged. The partial F statistic for G inrepresents a sample from the distribution under the independent null hypothesis. This process, repeated 1000 times, provided a null distribution. The p-value for the observed F is the proportion of the null distribution that is below the observed value.T∼E+GT∼E*+G
+To evaluate the relationship between the associations identified in our study, we extended a recently published analysis framework for causal modeling in eQTL data (Millstein et al., 2009). The relationship is modeled asT∼E+Gwhere T is trait, E is gene expression, and G is genotype at a locus. In our experiment, the term E includes a separate value for each day. The term G has a separate effect on the trait under the independent null model, while under the causal alternative, where it acts through gene expression, its influence is entirely transmitted through E. The statistic used to assess the influence of G is the partial F reported by the ‘aov’ function in R (version 2.15.1). The analyses utilize an equivalence test approach, where the null hypothesis is that the second independent variable has an effect on the response conditional on the first variable, while the alternative is complete co-linearity in the associations. The null distribution of the F statistic–which under parametric assumptions would have a non-central F distribution—is derived using a permutation test procedure, as follows: The relationship between E and T is decoupled by regressing E on G, permuting the resulting residuals, then adding the permuted residuals to the predicted values to arrive at E*, which is independent of T but maintains the marginal variance and G-correlation of E. This procedure enforces the assumption of the independent model, while leaving other properties unchanged. The partial F statistic for G inT∼E*+Grepresents a sample from the distribution under the independent null hypothesis. This process, repeated 1000 times, provided a null distribution. The p-value for the observed F is the proportion of the null distribution that is below the observed value.
 
 The reactive model is evaluated using the same approach, but with the expression and trait terms swapped, that isE∼T+G
 

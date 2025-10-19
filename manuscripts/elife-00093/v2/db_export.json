@@ -1,0 +1,2565 @@
+{
+  "submission": {
+    "id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T21:00:13.402767Z",
+    "updated_at": "2025-10-16T21:00:13.402767Z"
+  },
+  "content": [
+    {
+      "id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "content_type": "manuscript",
+      "content_text": "# Population structuring of multi-copy, antigen-encoding genes in Plasmodium falciparum\n\n## Authors\n\n- Yael Artzy-Randrup<sup>1</sup> †\n- Mary M Rorick<sup>1</sup>\n- Karen Day<sup>2</sup>\n- Donald Chen<sup>3</sup>\n- Andrew P Dobson<sup>4</sup>\n- Mercedes Pascual<sup>1</sup>\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology Howard Hughes Medical Institute and the University of Michigan Ann Arbor United States\n2. Department of Microbiology, Division of Medical Parasitology New York University School of Medicine New York United States\n3. Department of Microbiology, Division of Medical Parasitology and Department of Medicine, Division of Infectious Disease New York University School of Medicine New York United States\n4. Department of Ecology and Evolutionary Biology Princeton University Princeton United States\n5. Santa Fe Institute Santa Fe United States\n\n† Corresponding author\n\n## Abstract\n\n10.7554/eLife.00093.001 The coexistence of multiple independently circulating strains in pathogen populations that undergo sexual recombination is a central question of epidemiology with profound implications for control. An agent-based model is developed that extends earlier ‘strain theory’ by addressing the var gene family of Plasmodium falciparum . The model explicitly considers the extensive diversity of multi-copy genes that undergo antigenic variation via sequential, mutually exclusive expression. It tracks the dynamics of all unique var repertoires in a population of hosts, and shows that even under high levels of sexual recombination, strain competition mediated through cross-immunity structures the parasite population into a subset of coexisting dominant repertoires of var genes whose degree of antigenic overlap depends on transmission intensity. Empirical comparison of patterns of genetic variation at antigenic and neutral sites supports this role for immune selection in structuring parasite diversity. DOI: http://dx.doi.org/10.7554/eLife.00093.001\n\n## Introduction\n\nMany pathogen populations seem to be composed of several independent strains; this has important implications for disease surveillance and control, as well as for the identification of vaccine targets. In particular, the population genetic interactions between pathogen strains can have significant epidemiological consequences, influencing transmissibility, clinical immunity, and the duration and severity of infection. An extensive variety of microparasites have been studied in this context: protozoa, such as Plasmodium falciparum, Leishmania, and Trypanosoma brucei; viruses, such as Influenza, HIV and Dengue; and bacteria, such as E. coli, Bordetella spp. and Neisseria meningitides (Tibayrenc et al., 1990; Gupta et al., 1994; Tibayrenc and Ayala, 2002).\n\nThe conceptual challenges and significant human health implications associated with the pathogen population structure have led to the establishment of several theories for why we observe this structure in nature (Selander et al., 1987; Tibayrenc et al., 1990; Smith et al., 1993; Gupta and Day, 1994a, 1994b; Gupta et al., 1996; Tibayrenc, 1994). In particular, while it would seem that sufficient out-crossing should always lead to random associations between alleles (Tibayrenc et al., 1990; Tibayrenc and Ayala, 2002) and preclude the persistence of ‘independently transmitted strains’ (Tibayrenc, 1994), mathematical models of competition between pathogen strains have demonstrated that immune selection can lead to the maintenance of discrete, non-overlapping, antigenic repertoires—even when antigenic variability is driven by several unlinked genes that undergo recombination (Gupta et al., 1996; Gupta and Anderson, 1999). An inherent challenge in testing ‘strain theory’ is to determine whether observed empirical patterns in pathogen population structure result from immune selection, or alternatively, from simple demographic processes (i.e., uneven relatedness among individuals in the pathogen population that can result from random genetic drift, particularly within the complex context of transmission dynamics) (Buckee et al., 2008, 2011).\n\nP. falciparum is responsible for the deadliest type of malaria in humans. The complexities of its population genetics, in terms of the variable and often enormous levels of sequence variation observed at antigenic sites within local populations, are intimately tied to both its pathology and its ability to escape immune detection. While this genetic complexity provides significant challenges to malaria research and control, it also provides an opportunity to extend existing strain theory in a way that can be tested empirically. Specifically, an important extension of earlier strain theory is to consider the effects of immune selection in populations of pathogens whose antigen-encoding loci are: (a) multi-copy and recombining (i.e., located on different chromosomes of a haploid genome), and (b) undergoing antigenic variation via sequential, mutually exclusive expression within an infected host. It is not clear whether a stable strain structure would emerge under the sequential expression of multi-copy genes. Consideration of this type of system provides a more complete framework for understanding antigenic structure and its epidemiological consequences in a broader variety of pathogens; it also offers the opportunity to distinguish the effects of immune selection from those of neutral demographic forces, providing testable predictions for these two alternative mechanisms.\n\nWe describe an agent-based model that extends strain theory to address the effect of immune selection acting on multi-copy antigen genes; we use the var gene family of P. falciparum as the basis for this model. The var genes encode P. falciparum erythrocyte membrane protein 1 (PfEMP1)—the major surface antigen of the parasite's blood stages that binds to host endothelial cell receptors to allow the parasite to sequester within various host tissues (Miller et al., 2002; Scherf et al., 2008). Var genes are composed of multiple Duffy-binding-like (DBL) and cysteine-interdomain-rich (CIDR) domains that encode binding functions for specific endothelial receptors. DBLα, is the only domain found in nearly all var genes (Miller et al., 2002), and hence is the most informative molecular marker of var gene diversity. Each parasite genome has up to 60 var genes, and differential sequential expression of these genes allows the parasite to evade the host immune response and establish a chronic infection. This clonal antigenic variation sensu stricto (Miller et al., 2002; Scherf et al., 2008) extends the duration of infection to facilitate transmission to the mosquito. Not only do var genes influence transmission, but specific var genes are associated with severe malarial disease and specific PfEMP1 binding phenotypes (Deitsch et al., 2009; Chan et al., 2012; Claessens et al., 2012; Lavstsen et al., 2012; Warimwe et al., 2012).\n\nPopulation studies have shown that individual P. falciparum genomes have distinct repertoires of var genes (Barry et al., 2007; Scherf et al., 2008; Chen et al., 2011) that extensively recombine (Freitas-Junior et al., 2000; Taylor et al., 2000) during sexual recombination in the mosquito (Paul et al., 1995). The immense sequence diversity observed among var genes and var repertoires has been attributed to high rates of meiotic (and possibly also mitotic) recombination. These high rates of recombination presumably allow for very low linkage disequilibrium among var loci. Our modeling framework considers the dynamics shaping the enormous potential diversity of genomic repertoires of var genes by tracking all possible var repertoires, given a diverse pool of genetic variants. We explore whether structured parasite populations resulting from the selection pressures exerted by competition among distinct var repertoires for hosts, mediated by cross-immunity, can emerge.\n\n## Results\n\nWe model the dynamics of multiple parasite genomes that simultaneously circulate in a large host population, continuously tracking the formation of new genomes through recombination, mutation and immigration events (Paul et al., 1995; Bruce et al., 2000a, 2000b). Reliable numerical results require the simulation of explicit transmission events, as well as complete knowledge of the exposure history of each individual host with respect to past and present infections by different parasite genomes. Thus, an agent-based model is formulated that follows each host from birth to death, while recording their exposure history and the specific immunity each gradually gains as a result of infections (for a detailed description of the model see the ‘Materials and methods’ section).\n\nThe simulated host population is continuously exposed to an immense diversity of distinct\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig1-v1.jpg)\n\n**Figure 1.:** Characteristic time series demonstrating the emergence and maintenance of population structure under three levels of recombination probabilities, 0.001 (a), 0.01 (b) and 0.1 (c), while keeping all other parameters equal. Top: stacked histograms of the number of genome transmission events per year of the different circulating repertoires, each represented by a different color. All var repertoires sampled less than 50 times are pooled and plotted in grey. Bottom: The corresponding number of transmission events of each var gene per year (each gene plotted in a different color). As recombination increases, population turnover is more rapid, still showing well-defined population structure. Although dominant genome identities may change in time, the level of transmission per gene is relatively constant and hardly influenced by turnovers on the strain population level. The relative fraction of short-lived genomes increases with recombination (grey area), and although the total number of transmission events per year is not influenced by recombination rate, cases of transmission of de-novo genomes is higher for higher levels of recombination. Parameters: b = 18, G = 30, g = 6, α = 15, H = 10,000, ω = 0.0005, τ = 1.DOI: http://dx.doi.org/10.7554/eLife.00093.003\n\nWe find that the parasite population structure exhibits punctuated turnover: brief episodes of restructuring result in a new set of dominant var repertoires. Despite the changing identities of the dominant var repertoires, the overall diversity of repertoires present and the individual gene frequencies remain remarkably constant (Figure 1, lower panels). These transient phenomena punctuate periods of stasis with stable population structure. In essence, although there are an effectively infinite number of niches in host immunity space, var repertoires appear to exploit this space by partitioning it into a number of discrete and partially overlapping niches. In addition, these repertoires appear to quickly adapt and achieve some optimum after perturbations arising from the stochastic nature of the underlying demographic and transmission processes. The episodes of restructuring become more frequent as recombination rates increase, but the diversity of dominant var repertoires remains low throughout these semi-stable states. Indeed, the maintenance of structure is found to be robust even under very high levels of recombination (Figure 1). The emergence of pathogen population structure is robust to alternative formulations of our multi-locus model that do not consider sequential expression, or formulations that consider randomly ordered sequential expression. In addition, episodes of restructuring can also be observed when expression is not sequential.\n\nThe level of diversity remains orders of magnitude lower than that potentially allowed by the\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig2-v1.jpg)\n\n**Figure 2.:** Different degrees of distinct var repertoire overlap with transmission intensity. The number of genome transmission events per year for the different circulating repertoires are represented by different colors as stacked histograms similar to those of Figure 1. Emerging populations are typically characterized for low transmission intensities (A), by a low number of dominating genomes with a low level of antigenic overlap (R* = 9.2, F* = 1.2, see ‘Materials and methods’); and for high transmission intensities (B), by higher diversity and higher antigenic similarity (R* = 17.5, F* = 2.1). The fraction of long-lived genomes dominating transmission events is labeled by A in both figures, and the fraction of short-lived genomes, by B (these are grouped into one single number and plotted in gray). Parameters: b = 8.5 and b = 9.5, G = 50, g = 6, α = 15, H = 20,000, ω = 0.0005, ρ=0.01, τ = 1, κ = 1 year.DOI: http://dx.doi.org/10.7554/eLife.00093.004\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig3-v1.jpg)\n\n**Figure 3.:** Top four panels: the metrics characterizing population structure for three host population sizes as a function of transmission intensity (see ‘Materials and methods’). Green, blue and purple represent H = 5,000, H = 10,000, and H = 25,000, respectively. (A) A measure of diversity capturing the number of dominating genomes (R*, in the y-axis) as a function of b, (B), a measure of average antigenic similarity between genomes (F*, in the y-axis) as a function of b, (C) the average number of novel repertoires generated and successfully transmitted each year, and (D) the total number of successful transmission events each year. As transmission intensity increases, the number of dominating genomes increases, and in accordance, the degree of antigenic similarity increases as well—however the number of distinct repertoires that are maintained in the system at epidemiologically relevant frequencies remains extremely low relative to the total number of distinct repertoires that can be crated through recombination. Note the differences in magnitude; while the number of de novo repertoires entering the system is 10-fold higher then the observed diversity, the number of successful transmission events that these dominating repertoires are involved in is on the order of 106. For extremely low biting rates, in a narrow window of parameter values, diversity decreases abruptly (A). This reflects a different dynamic regime in which dominant strains replace each other in a fluctuating manner and population structure does not apply. Parameters: G = 50, g = 6, α = 15, ω = 0.0005, ρ=0.05, τ = 1, κ = 1 year. Bottom four panels: characteristic time series demonstrating structured parasite populations for larger gene pools (G) and longer sequence lengths (g): (A) b = 18, G = 100, g = 6, α = 15, N = 20,000, ω = 0.0005, ρ=0.001, τ = 1. (B) b = 18, G = 200, g = 6, α = 15, H = 20,000, ω = 0.0005, ρ=0.001, τ = 1. (C) b = 18, G = 300, g = 20, α = 15, H = 20,000, ω = 0.0005, ρ=0.001, τ = 1. (D) b = 12, G = 120, g = 6, α = 15, H = 10,000, ω = 0.0005, ρ=0.005, τ = 1, κ = 1 year.DOI: http://dx.doi.org/10.7554/eLife.00093.005\n\nThe model suggests that areas that experience different transmission intensities will exhibit ‘characteristic’ epidemiological signatures (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig4-v1.jpg)\n\n**Figure 4.:** Age profiles of immunity and infection: (A) In color are the number of hosts immune to a single arbitrary antigen in different age classes superimposed over a histogram representing the entire age distribution of hosts (in gray). The level of immunity in each class is shown for four different transmission intensities (b = 2, 4, 8 and 30, where b is the average number of biting events per host per year). (B) The average level of immunity to the general antigenic pool as a function of age. It can be seen in (A) and (B), that at higher levels of transmission intensity, exposure to the diversity of antigenic types typically shifts towards the younger age classes, and hosts gain high levels of immunity to a majority of the variants earlier on in life. (C) A measure of parasite rate demonstrated by the fraction of infected hosts in different age groups (see also Gupta and Day, 1994b) for 2 transmission intensities (b = 2 and 8). (D) A measure of superinfection demonstrated by the average number of antigens an infected host is naïve in each age class. Under high-transmission regimes, we characteristically observe high levels of superinfection (i.e., relatively long durations of infection) and high parasite rates in the very young age classes, after which immunity is rapidly gained to most of the antigenic variants circulating in the population. In contrast, host populations in regimes of very low transmission, characteristically exhibit similar levels of parasite rates in all age groups, and immunity is gradually gained throughout life, with infection spanning all age classes. Parameters: G = 40, g = 6, α = 15, H = 20,000, ω = 0.0005, ρ=0.01, τ = 1, κ = 1 year. Transmission events were sampled at a frequency of 1:100, and the host population was sampled every 10 years at a ratio of 1:100.DOI: http://dx.doi.org/10.7554/eLife.00093.006\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig5-v1.jpg)\n\n**Figure 5.:** Strain specific immunity and transcending immunity. (A) Diagram demonstrating the partition of 40 genes from the general pool (represented by circles) between 8 dominating strains (each marked with a unique color, and composed of a subset of 6 genes). Five of these strains are antigenically unique as they have no overlap with any of the other strains, two of these strains share all of their genes with other strains (red and light blue), and one of the strains has a partially unique antigenic profile sharing 66% of its genes with other strains (purple). (B) The number of hosts immune to strains 1 and 2 (orange and red, respectively) for each age class superimposed over the host age distribution (grey). Immunity to strain 1 is strain specific and only gained through exposure to this particular strain due to the uniqueness of its antigenic profile. By contrast, immunity to strain 2 is strain ‘transcending’ and acquired also by exposure to other strains with which it shares genes. It follows that hosts are exposed to strain 1 at a higher level and at younger ages, than those for strain 2. Parameters: b = 3, G = 40, g = 6, α = 15, H = 20,000, ω = 0.0005, ρ=0.01, τ = 1, κ = 1 year.DOI: http://dx.doi.org/10.7554/eLife.00093.007\n\nTwo recent large-scale studies aimed at assessing the extent of local reservoirs of\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig6-v1.jpg)\n\n**Figure 6.:** Nonrandom organization of var DBLα types between 30 sampled parasite isolates from Amele, Papua New Guinea as published in (Chen et al., 2011). (A) Presence–absence matrix showing the distribution of var types in isolates: Each row corresponds to an individual parasite isolate and each column to a distinct var type. The color bar indicates the number of distinct isolates each var type was identified in. (B) The frequency distribution of the number of isolates in which each var type was identified, obtained by assuming a total var richness of ∼369, as estimated in (Chen et al., 2011). The observed distribution for the data (red) and the expected distribution when assuming all var types circulate at equal frequencies (blue) were found to be significantly different (pv<0.0001 using a K–S two sample test). Note the enrichment for both very rare and very common var types in the data. (C) Observed and expected co-occurrence of var DBLα types. In each matrix cell (i,j) is the number of times var types i and j were found in the same isolate. The co-occurrence of var types found in multiple isolates is significantly higher than for the null expectation under the assumption of linkage equilibrium among all var types (pv<0.01) (Artzy-Randrup and Stone, 2005) (the expected co-occurrence matrix conserves both the observed number of var types in each isolate and the observed frequency distribution of different var types (Chen et al., 2011)). (D) A network of allele pairs with both high D and r. The D values are among the highest pair-wise comparisons in the dataset (using a cutoff of D > 0.0748), and the r values range from 1 to 0.58, and are reflected by the weight of the edges. Based on sequence features (Bull et al., 2007), and the fact that genomic organization of var sequence groups appear to be conserved across globally distributed isolates (Kyes et al., 2007), it is very unlikely that var type 22 (being UpsA-like) is physically linked to the other alleles in the network (since they are all UpsB/UpsC-like). (E) The relatedness of the var DBLα repertoires of an isolate pair as a function of the relatedness of their microsatellite repertoires. Relatedness is defined as the number of var types shared between the two isolates, divided by the average number of var types identified per isolate for that pair of isolates.DOI: http://dx.doi.org/10.7554/eLife.00093.008\n\nThese patterns in observed var repertoires may alternatively result from neutral demographic processes: that is, individual mosquitoes bite discrete hosts, and thus, inevitably sample the host population unevenly. This limits ‘random mating’ and thus recombination between parasite genomes. Hence, even under neutral forces, it is possible for parasites to differ in their relatedness to one another. Under this alternative assumption we expect these neutral demographic processes to shape the diversity at all loci to the same extent (after controlling for differences in physical linkage and recombination rate between loci). Evidence of more extensive ‘strain structure’ at antigenic, immune-selected sites compared to neutral sites suffices as proof that selective forces are at work, and of these, immune selection is the most parsimonious explanation.\n\nWe compare patterns of variation at immune-selected sites to neutral sites in a variety of ways (see ‘Materials and methods’), and we propose this as an effective empirical test of strain theory. Our test is conceptually similar to empirical analyses of strain theory undertaken in the past (Buckee et al., 2010), but in this system, there is the opportunity for a more powerful test since the multi-copy nature of var genes allows us to examine patterns of variation at many independent (i.e., physically unlinked) genetic sites. Currently, the dataset with the most extensive sampling of diversity at both var and microsatellite loci within a local population consists of a set of 30 single infection isolates from a local population in Papua New Guinea for which we have sequences for a portion of the var DBLα domain and the alleles for 12 microsatellite loci (Barry et al., 2007; Chen et al., 2011).\n\nBecause we expect alleles at the same locus to anti-correlate, and because it is unknown which DBLα alleles share a common locus, we only analyze positive correlations. We measure the positive linkage disequilibrium coefficients (D) for the presence/absence states for all unique pairs of microsatellite or var DBLα alleles. High D values indicate a correlation between alleles within isolates, and they are maximized at intermediate allele frequency (see and ‘Materials and methods’). For the var DBLα dataset there are 1288 distinct pairs of alleles with positive D values that exceed a two-tailed significance threshold of 0.05 (Hedrick et al., 1978). Given the number of tests performed, under the null hypothesis of no significant correlations between alleles, we would expect only 310 pairs to exceed this threshold. For the microsatellite dataset there are 146 distinct pairs of alleles with positive D values that exceed the significance threshold and under the null hypothesis we would expect only 49. Therefore, both datasets show an enrichment of positive correlations among allele pairs, and thus, significant linkage disequilibrium. The D values of the var DBLα dataset are higher than those of the microsatellite dataset (pv<<0.0001 by Mann–Whitney test), and we argue that this cannot easily be explained by allele frequency differences or differences in the extent of physical linkage among sites (see ‘Materials and methods’).\n\nAnother important observation is that, at least at this level of resolution, var DBLα repertoire relatedness is not a function of microsatellite repertoire relatedness. Figure 6E shows the relatedness of the var DBLα repertoires of an isolate pair as a function of the relatedness of their microsatellite repertoires. The absence of any correlation suggests the possibility that var DBLα variation is shaped by other forces than the neutral demographic forces shaping microsatellite variation.\n\nWe also consider only the most informative var types in isolation by identifying highly correlated sets of var types. We then tested the relatedness of microsatellite alleles among the isolates containing these networks of correlated var types. The networks of correlated var types were constructed from pairs of var types exhibiting both high linkage disequilibrium and correlation coefficients (i.e., D and r). Figure 6D represents one of the largest of such fully connected networks (with D > 0.0748 used as the cutoff), however this complete network is only observed in two isolates in the dataset. The microsatellite repertoires of these two isolates are less related than average for the whole dataset, so at least in this case, high microsatellite relatedness does not explain the existence of these highly correlated var types. Additionally, smaller subsets of correlated var types are often found in isolates with very dissimilar microsatellite alleles. These results suggest that the existence of highly correlated var types is not always explained by high levels of underlying genome relatedness. Moreover, when we use the same cutoff D value to look for fully connected networks of correlated microsatellite alleles, the largest of such networks comprises only four alleles as opposed to six (six pairwise connections as compared to 15).\n\nAlthough the sample size of this dataset is too small to identify anything but very strong correlations between intermediate frequency var types (Brown, 1975), these analyses support a possible role for immune selective forces in structuring the variation at an important class of antigen-encoding loci in P. falciparum. More extensive datasets will be needed for definitive conclusions, but these are now within reach as next generation sequencing methods make it feasible to consider sampling whole communities of parasite genomes to assess var population structure.\n\n## Discussion\n\nIn accordance with predictions from the original ‘strain theory’, our model constrains total repertoire diversity to levels that are orders of magnitude lower than is potentially possible given the diversity of the gene pool. This reduction in diversity occurs because coexisting parasites are structured into a few variants with largely discordant repertoires. In a departure from previous strain theory, our model predicts that the different dominant repertoires can exhibit partial overlap; the extent of the overlap increases with transmission intensity and this, in turn, influences observed epidemiological patterns (particularly age-serology profiles).\n\nThe specific immune profile of each individual host effectively structures the population into distinct sets of ‘patches’ or ‘resources’ that define an immune environment, ultimately causing immune selection to act on the parasite population. These distinct sets of patches are formed and conserved even when immunity to the var alleles is shorter-lived. Observations of individuals becoming susceptible to severe infection at later stages of their life (see for example (Dhingra et al., 2010)), may be in part a consequence of short-lived immunity. Under this assumption, hosts in our model regain protection by exposure to one of the dominant strains circulating in the host population at high frequencies, and do so at a sufficiently high rate to preserve strain population structure except at extremely low transmission intensity. In the event that a host is infected by one of the low frequency genomes that are continuously being introduced (and equally quickly vanishing), it is highly unlikely that this successful transmission event is sufficient for invasion or even replacement of the currently dominating strain community.\n\nDiscordant repertoires that exhibit partial immunological/antigenic overlap blur the distinction between the acquisition of strictly strain-specific immunity and the acquisition of strictly strain-transcending immunity (Gupta and Day, 1994a, 1994b) (see caption of Figure 5). This underscores the role of strain diversity structure, rather than diversity per se, in determining observed epidemiological patterns and their response to intervention. By reducing antigenic overlap between strains, vector control efforts will result in infection at an older age and a more gradual acquisition of protection to infection, even in the absence of changes in var gene diversity. The model in its current form does not differentiate infection from clinical disease, thus we cannot explicitly address the impact of control on the severity of symptoms. However, if the number of var genes that a host has previously encountered relates to the degree of protection against clinical disease, we would expect more severe symptoms to occur at younger ages under high transmission settings, and in contrast, more homogeneous malaria incidents are likely to occur over a broader range of age-classes when transmission is lowered (Figure 4D). Investigation of these patterns awaits the formulation of models that include functional, non-antigenic, differences between strains, as well as more empirical understanding of the role played by var genes associated with more severe disease. Future work should thus extend our model to consider functional, non-antigen-encoding differences between var genes (Bull et al., 1999; Miller et al., 2002; Scherf et al., 2008; Buckee et al., 2009; Claessens et al., 2012; Severins et al., 2012 for an example of a recent model applied to questions on the evolution of virulence). Ultimately, ways to represent the effects of pathogen diversity implicitly within a standard epidemiological framework, that might also be more easily parameterized, should also be investigated.\n\nThe goal of malaria eradication is to reduce the reservoir of malaria infection in humans to zero. Chen et al. (2011) have pointed to the importance of var genes in malaria surveillance, due to their influence on both the duration of infection and the degree of superinfection, and they demonstrated the existence of an immense diversity of var genes and limited var repertoire overlap in Africa, even in sites with low malaria prevalence. Consequently, they have proposed that var typing be used to complement prevalence measures for molecular surveillance of malaria control and elimination efforts. Our models support this proposal as they show that decreasing transmission provokes nonlinear changes in the dominant var configurations. Importantly, our results demonstrate that there is not a simple relationship between var diversity and repertoire diversity. Indeed, the ‘var strain’ model suggests that vector control strategies that reduce transmission will not always drastically reduce var gene diversity, because a reservoir of parasite genomes with diverse (highly non-overlapping) var repertoires will remain. This insight from the model provides a plausible explanation for why it is so difficult to eliminate malaria: non-overlapping var diversity will create significant inherent difficulties in reducing the potential of the malaria parasite to reinfect the same hosts. It also suggests that var surveillance might provide a good molecular means of evaluating control. If the end game is to be achieved in malaria control, then the mechanisms creating and maintaining antigenic diversity warrant further investigation in both modeling and empirical studies.\n\nIn conclusion, the results of our model on the dynamics of population structure in P. falciparum as defined by the var multi-gene family, have broad implications for the possible emergence of similar structure in many important human and animal pathogens that have major surface antigens encoded by multigene families, including bacterial, protozoan and fungal pathogens (Deitsch et al., 2009).\n\n## Materials and methods\n\n## Epidemiological model\n\nEach parasite is composed of a set of exactly g var genes, and the genomes are distinguishable from each other by their unique var combination. The overall diversity of var genes circulating in the host population is assumed to originate from a general predefined pool of G variants (Barry et al., 2007; Chen et al., 2011; Recker et al., 2011). Hence, the total number of distinct var repertoires is G!/(G-g)!. In the beginning of a simulation we generate five random repertoires by sampling variants from this pool, and we infect 10 random hosts with each of these repertoires. The size of the overall host population is H. Throughout the simulation, variants from this pool are sampled, either by the mutation of one var gene to another, at probability ψ, or through an immigration event, where at rate ζ a random host in the population is infected by a var repertoire randomly sampled from this pool. While mitotic recombination within var genes may play an important role in generating additional var diversity, we do not explicitly include this process here, because for the purposes of this model, and given the high levels of diversity already present in the pool, it would play a role essentially equivalent to mutation or immigration. All our results are robust to variation in these two parameters.\n\nDuring the course of an infection, a parasite expresses all of its var genes, and these are responsible for encoding PfEMP1 variant surface antigens (VSAs) (Gupta et al., 1994; Miller et al., 2002; Scherf et al., 2008; Tibayrenc and Ayala, 2002). After the host is exposed to each of these VSAs, it gains life-long immunity that is specific to each of the antigens (Bull et al., 1998; Recker et al., 2011). We assume that the total duration of infection in a susceptible host lasts a fixed time (κyrs.), and that in partially immune hosts, the actual duration decreases proportionally to the number of var genes that have been expressed in earlier infections (Bruce et al., 2000a, 2000b; Giha et al., 2000). It is recognized that the gain of immunity during the course of an infection is gradual (Ewers, 1972; Miller et al., 1994), and we capture this feature by considering that the var genes composing an infecting parasite are mutually and exclusively expressed in a fixed sequential order. Hence, at each stage of an infection, the host has already acquired specific immunity to all the VSA's encoded by var genes expressed up to that point in time. As a result, immunity to each infecting parasite is gained gradually. The infection history of each host is tracked in time and determines its immune status (Bull et al., 1999; Bruce et al., 2000a, 2000b; Giha et al., 2000; Buckee et al., 2009; Doolan et al., 2009). This effectively structures the population of hosts into distinct sets of individual ‘patches’ or ‘resources’ that define an immune environment, which ultimately causes immune selection to act on the parasite population.\n\nThe specific rules of infection constitute a static within-host sub-model and an implicit representation of within-host dynamics, which allowed us to implement the population transmission model without explicitly representing the mechanisms that give rise to the sequential expression of different VSAs within the host. As addressed in the main text, these mechanisms remain poorly understood, although multiple within-host models for sequential waves of parasitaemia have been developed (Frank, 1999; Recker et al., 2004; Frank and Barbour, 2006).\n\nAn infected host can harbor multiple simultaneously co-infecting parasite genomes, and each has the potential of being transmitted to another host through a mosquito biting event. When such an event takes place, each of the infecting parasites has a probability,\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00093/elife-00093-fig7-v1.jpg)\n\n**Figure 7.:** Diagrams showing processes that take place during the course of a simulation: (A) in a biting event, there is likeliness that multiple parasite genomes will be transmitted simultaneously. In these events, at probability ρ, the genomes recombine to create new parasite genome variants, which then infect the receiving host. (B) A sketch of the rules governing the dynamics of infection and co-infection. By sequentially expressing different var genes during the course of an infection, host immunity is gradually gained to the PfEMP1 variants (VSA's) associated with the infecting parasite genome. When the host is exposed to an additional genome, this parasite begins expressing its var genes sequentially, as it would, had it been infecting the host on its own. Transmissibility of each of the infecting parasites during such periods of co-infection decreases according to the multiplicity of infection at the time.DOI: http://dx.doi.org/10.7554/eLife.00093.009\n\nBecause the model is stochastic and formulated in continuous time, the implementation of the numerical simulations relies on the well-known Gillespie algorithm (Gillespie, 1977) for three of the processes; biting (responsible for transmission), host death, and immigration of new parasite genomes, whose respective rates are b, α, and ζ. The algorithm considers that these processes are Poisson and determines, based on these rates, the timing of each of these events. We further consider that the population size is constant in time, such that in the case of a death, a new susceptible host is born, replacing the previous host that died. We assume that this new host has no history of exposure, nor any acquired immunity. At a ‘biting event’, a vector bites two randomly chosen hosts sequentially, if the first host is actively infected by one or several parasite genomes at that time, there is a probability for each of these to be transmitted to the second host. As noted earlier, this probability depends on transmission probability, τ, and on the number of co-infecting parasite genomes. A parasite genome that is transmitted from one host to another, has a probability ψ of mutating, such that one of its randomly chosen var genes is replaced by a randomly chosen variant from the pool. This new genome is then the one transmitted to the second host. When two or more parasite genomes are successfully transmitted from the first host to a mosquito, there is a given probability, ρ, that recombination occurs, resulting in a new var repertoire that is then transmitted from the mosquito to the second host. In this case, the novel combination is formed by randomly sampling a subset of var genes from each of the parent repertoires. Hence, when ρ>0, this effectively leads to a continuous reshuffling of var repertoires circulating in the host population. Given the extensive number of possible var combinations, these recombination events often introduce de novo parasite genomes not yet present in the infected host population. Epidemiologically, after the introduction of a de novo genome, this parasite may successfully be transmitted multiple times, possibly leading to an epidemic, and persisting in the host population for extended periods of time. Alternatively, however, it may be unsuccessful in its transmission, persisting only for a short duration of time before stochastically going extinct.\n\nIn our numerical experiments, we consider different levels of transmission intensity by specifically varying the biting rate. Thus, throughout the paper, variation in transmission intensity refers to variation in this parameter (and therefore, in the so-called entomological inoculation rate, or EIR).\n\n## A measure of diversity\n\nR* is calculated using Simpson's Diversity index, R*=1/∑i=1Spi2, where S is the number of unique genomes responsible for transmission events in a window of time, and pi is their relative proportion. The benefit of using Simpson's index over alternative diversity indices is that it has low sensitivity to species at low abundance (in this case genomes), and gives most weight to the most abundant ones. This is appropriate in our case as we are aiming to identify the number of dominating unique genomes, and are not interested in the general richness (S), which in our case can be immense.\n\n## A measure of antigenic overlap\n\nThe calculation of F* is also based on Simpson's Diversity index, with a focus on the distribution of genes between transmission events, such that: F*=∑j=1G(1/∑i=1Spi2)/G. As before, S is the number of unique genomes responsible for transmission events in a window of time, and for each gene i from the gene pool, pi is its relative frequency in each of the transmitted genomes. Hence, a gene that is not shared between dominating genomes will be represented at high frequency at a single genome (and the diversity will be close to 1). In contrast, the frequency of a gene that is shared by two dominating genomes will be split between both those two (and the diversity will be close to 2). We then average the degree of overlap between all genes.\n\n## Molecular marker of var diversity\n\nBecause DBLα is the only domain found in nearly all PfEMP1 variants (Miller et al., 2002), the sequence encoding the central portion of this domain provides the most informative molecular marker of var gene diversity (Freitas-Junior et al., 2000; Taylor et al., 2000; Barry et al., 2007; Chen et al., 2011). Two DBLα tags are considered to represent two distinct var ‘types’ if their nucleotide sequence identity is less than 96%.\n\n## Microsatellites as neutral markers\n\nMicrosatellites offer an ideal and practical means to construct a null hypothesis reflecting the demographic forces shaping diversity because these sites are predominantly neutral, and their diversity can be explained by a mechanism unrelated to immune selection (i.e., slippage). In contrast, single nucleotide polymorphisms or single feature polymorphisms, because they are predominantly found in multi-copy antigenic genes in P. falciparum (Jiang et al., 2008), do not offer a good basis for a null hypothesis.\n\n## Relatedness\n\nRelatedness is defined as the number of var types shared between two isolates, divided by the average number of var types identified per isolate for that pair of isolates.\n\n## Linkage disequilibrium coefficient D\n\nD is maximized when allele frequencies are 0.5, so D also indicates the amount of information upon which the coefficient is based (e.g., if two alleles appear only once and in the same isolate, their D will be low despite the fact that they are in perfect correlation with one another). The higher D values for var DBLα alleles versus microsatellite alleles cannot be attributed to differences in allele frequencies since the var DBLα alleles have lower frequencies than the microsatellite alleles, and thus, D values biased to lower magnitudes. While the higher D values from the var DBLα dataset could be due to the influence of the close physical linkage of a small subset of pairs of var loci (Deitsch and Hviid, 2004), it seems somewhat unlikely because the great majority of var loci are located very far from other var loci in the 3D7 genome (Deitsch and Hviid, 2004), and var loci have been shown to coincide with recombination hotspots (Mu et al., 2010; Jiang et al., 2011) in a genome that is already characterized by remarkably high underlying rates of recombination (Conway et al., 1999; Volkman et al., 2006).\n",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carl T Bergstrom, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00093.010](https://doi.org/10.7554/eLife.00093.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled “Population structuring of multi-copy, antigen-encoding genes in Plasmodium falciparum” for consideration at eLife. Your article has been evaluated by a Senior Editor and 3 reviewers, one of whom is a member of eLife's Board of Reviewing Editors.\n\nThe Reviewing Editor, Carl Bergstrom, and the other reviewers discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments based on the reviewers' reports.\n\nStrain theory reveals how immune selection interacts with patterns of transmission to determine the population-genetic structure of pathogen populations. This paper extends strain theory to treat the malaria parasite, by demonstrating the effects on immune selection upon a multi-gene system with sequential expression, as characteristic of the var gene family, which is central to the within-host antigenic variation of Plasmodium falciparum. On the theoretical side, the authors have answered the question of whether immune selection can cause the parasite population to self-organise into a finite number of strains with non-overlapping var repertoires even when the genes are expressed sequentially. They have further shown that the degree of structuring depends on transmission intensity: partially overlapping repertoires can arise when transmission levels are high. On the empirical side, the paper presents an analysis of microsatellite and var DBLα sequence data, revealing that linkage disequilibrium among the latter cannot be attributed to demographic forces alone. The following comments should be addressed before acceptance:\n\n1) The Introduction could be expanded to provide more thorough background for non-specialist readers. Please provide a more detailed paragraph on the biology of the var genes, including their domain structure (as it will help the reader understand the data section more easily), before explaining what the model does. We would recommend expanding and clarifying the background sentences “Individual Plasmodium genomes…among var loci”, before describing the model and its findings.\n\n2) The authors observe episodes of restructuring leading to punctuated turnover. It is clear from the exposition that this is a dynamically different process to the cyclical strain structure exhibited by the deterministic model under intermediate levels of immune selection. If possible without extensive further analysis, are the authors able to comment on the following? To what degree does the sequential expression itself contribute to this phenomenon? In other words, is this behavior likely to be observed in a stochastic multi-locus model without sequential expression? Or is the instability inextricably linked to sequential expression?\n\n3) It is not obvious that “This important insight provides a plausible explanation for why it is so difficult to eliminate malaria”. However, the predicted failure of transmission control strategies to reduce var diversity may have important ramifications for the reduction of disease, given that PfEMP1 is now firmly established as the principal target of clinical immunity. Would the authors feel comfortable speculating on the differential effects of reducing transmission on disease and infection?\n\n4) Please provide some explanation on how well the model works under the assumption that immunity is not life long given recent evidence that malaria may well kill adults as well as children (Dhingra et al, Lancet 2010). This needs to be addressed only in the Discussion.\n\n5) Parts of the Materials and methods are difficult to follow and parameters such as nh are not always clearly defined. Please make an effort to clarify. Two-letter parameter names, e.g., gp, sl, nh, can look like products. Please consider changing these. Why is the total number of distinct var repertoires given by gp!/sl! instead of gp!/((gp-sl)! sl!)?\n",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "204112d8-1437-4ecf-9f10-dac60ed36977",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C1",
+      "claim": "The coexistence of multiple independently circulating strains in pathogen populations that undergo sexual recombination is a central question of epidemiology with profound implications for control.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The coexistence of multiple independently circulating strains in pathogen populations that undergo sexual recombination is a central question of epidemiology with profound implications for control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established understanding in epidemiology about the importance of strain coexistence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "89848037-66df-48bb-94c2-f3ec76fcc10c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C2",
+      "claim": "An agent-based model extends earlier 'strain theory' by addressing the var gene family of Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An agent-based model is developed that extends earlier 'strain theory' by addressing the var gene family of Plasmodium falciparum.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The authors describe their own modeling work presented in this manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "37347d89-f4ae-4900-8ddf-0db62ddc8be0",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C3",
+      "claim": "The model explicitly considers the extensive diversity of multi-copy genes that undergo antigenic variation via sequential, mutually exclusive expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The model explicitly considers the extensive diversity of multi-copy genes that undergo antigenic variation via sequential, mutually exclusive expression.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a specific feature of the model developed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "c58b6fec-cc2a-499b-80f7-2ada9fa2b999",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C4",
+      "claim": "Even under high levels of sexual recombination, strain competition mediated through cross-immunity structures the parasite population into a subset of coexisting dominant repertoires of var genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "shows that even under high levels of sexual recombination, strain competition mediated through cross-immunity structures the parasite population into a subset of coexisting dominant repertoires of var genes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a key finding from the model simulations presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "70bd5a85-0093-4d9d-be0c-862b7b254700",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C5",
+      "claim": "The degree of antigenic overlap between dominant var gene repertoires depends on transmission intensity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "strain competition mediated through cross-immunity structures the parasite population into a subset of coexisting dominant repertoires of var genes whose degree of antigenic overlap depends on transmission intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations showing the relationship between transmission intensity and antigenic overlap.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "ce529767-3f21-42a8-9f61-ecc5295dec0d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C6",
+      "claim": "Empirical comparison of patterns of genetic variation at antigenic and neutral sites supports the role for immune selection in structuring parasite diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Empirical comparison of patterns of genetic variation at antigenic and neutral sites supports this role for immune selection in structuring parasite diversity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This refers to empirical analyses of genetic data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3208bdfc-d53c-4b87-952f-6b8f5912ccc9",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C7",
+      "claim": "Many pathogen populations are composed of several independent strains with important implications for disease surveillance and control.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Many pathogen populations seem to be composed of several independent strains; this has important implications for disease surveillance and control, as well as for the identification of vaccine targets.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established knowledge in the field of infectious disease epidemiology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "edb3319e-d587-460e-897a-04c93f37938e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C8",
+      "claim": "Population genetic interactions between pathogen strains can influence transmissibility, clinical immunity, and the duration and severity of infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In particular, the population genetic interactions between pathogen strains can have significant epidemiological consequences, influencing transmissibility, clinical immunity, and the duration and severity of infection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established understanding of how strain interactions affect disease dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "86cd812f-8f3f-4c83-9c84-e98c4cca7aeb",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C9",
+      "claim": "An extensive variety of microparasites have been studied in the context of strain structure, including protozoa, viruses, and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An extensive variety of microparasites have been studied in this context: protozoa, such as Plasmodium falciparum, Leishmania, and Trypanosoma brucei; viruses, such as Influenza, HIV and Dengue; and bacteria, such as E. coli, Bordetella spp. and Neisseria meningitides",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citations provided (Tibayrenc et al., 1990; Gupta et al., 1994; Tibayrenc and Ayala, 2002).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "30716bf1-6f0b-4e7e-a593-eae7952f686f",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C10",
+      "claim": "Mathematical models of competition between pathogen strains have demonstrated that immune selection can lead to the maintenance of discrete, non-overlapping, antigenic repertoires even when antigenic variability is driven by several unlinked genes that undergo recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "mathematical models of competition between pathogen strains have demonstrated that immune selection can lead to the maintenance of discrete, non-overlapping, antigenic repertoires—even when antigenic variability is driven by several unlinked genes that undergo recombination",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to previous modeling work (Gupta et al., 1996; Gupta and Anderson, 1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "6ca5012c-d20c-4155-bfda-0ab1c838466d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C11",
+      "claim": "An inherent challenge in testing 'strain theory' is to determine whether observed empirical patterns in pathogen population structure result from immune selection or from simple demographic processes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An inherent challenge in testing 'strain theory' is to determine whether observed empirical patterns in pathogen population structure result from immune selection, or alternatively, from simple demographic processes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects a known challenge in the field, supported by citations (Buckee et al., 2008, 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "51fa09ff-0e69-4ad7-966e-97e46eb9b468",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C12",
+      "claim": "Plasmodium falciparum is responsible for the deadliest type of malaria in humans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "P. falciparum is responsible for the deadliest type of malaria in humans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is well-established medical knowledge about malaria.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "f42fabea-1f80-4a84-9820-2d8b40402d7e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C13",
+      "claim": "The complexities of P. falciparum population genetics are intimately tied to both its pathology and its ability to escape immune detection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The complexities of its population genetics, in terms of the variable and often enormous levels of sequence variation observed at antigenic sites within local populations, are intimately tied to both its pathology and its ability to escape immune detection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established understanding of P. falciparum biology and pathogenesis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "bcb89572-ee29-4941-82f6-e75b63ad5294",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C14",
+      "claim": "An important extension of earlier strain theory is to consider the effects of immune selection in populations of pathogens whose antigen-encoding loci are multi-copy and recombining, and undergo antigenic variation via sequential, mutually exclusive expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, an important extension of earlier strain theory is to consider the effects of immune selection in populations of pathogens whose antigen-encoding loci are: (a) multi-copy and recombining (i.e., located on different chromosomes of a haploid genome), and (b) undergoing antigenic variation via sequential, mutually exclusive expression within an infected host.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is the authors' reasoning for why their model represents an important theoretical advance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1e631595-fc96-4ade-80c5-25c26270a889",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C15",
+      "claim": "It is not clear whether a stable strain structure would emerge under the sequential expression of multi-copy genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is not clear whether a stable strain structure would emerge under the sequential expression of multi-copy genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This identifies a gap in existing theoretical understanding that the study addresses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b4ea8871-09e9-452d-a935-6710e3e84d4c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C16",
+      "claim": "The var genes encode P. falciparum erythrocyte membrane protein 1 (PfEMP1), the major surface antigen of the parasite's blood stages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The var genes encode P. falciparum erythrocyte membrane protein 1 (PfEMP1)—the major surface antigen of the parasite's blood stages",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about var genes, supported by citations (Miller et al., 2002; Scherf et al., 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "86d28342-54fc-4b22-8199-1a7c3ef200c7",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C17",
+      "claim": "PfEMP1 binds to host endothelial cell receptors to allow the parasite to sequester within various host tissues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the major surface antigen of the parasite's blood stages that binds to host endothelial cell receptors to allow the parasite to sequester within various host tissues",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the biological function of PfEMP1, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "bc513d14-e746-4313-a163-05239e9a1ea5",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C18",
+      "claim": "Var genes are composed of multiple Duffy-binding-like (DBL) and cysteine-interdomain-rich (CIDR) domains that encode binding functions for specific endothelial receptors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Var genes are composed of multiple Duffy-binding-like (DBL) and cysteine-interdomain-rich (CIDR) domains that encode binding functions for specific endothelial receptors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the structure and function of var genes, supported by citation (Miller et al., 2002).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "2d03e326-20ab-461a-880e-4698479bf35e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C19",
+      "claim": "DBLα is the only domain found in nearly all var genes and is the most informative molecular marker of var gene diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DBLα, is the only domain found in nearly all var genes (Miller et al., 2002), and hence is the most informative molecular marker of var gene diversity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about var gene structure, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "218fb710-a319-4d49-b4b4-ad5d5bc73e93",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C20",
+      "claim": "Each parasite genome has up to 60 var genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Each parasite genome has up to 60 var genes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about P. falciparum genome organization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "97ec1929-db7c-4716-8ae3-b0d487db142a",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C21",
+      "claim": "Differential sequential expression of var genes allows the parasite to evade the host immune response and establish a chronic infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "differential sequential expression of these genes allows the parasite to evade the host immune response and establish a chronic infection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the biological mechanism of antigenic variation in P. falciparum.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1b80b3a8-668f-4474-8045-000b37e08f26",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C22",
+      "claim": "Clonal antigenic variation extends the duration of infection to facilitate transmission to the mosquito.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This clonal antigenic variation sensu stricto (Miller et al., 2002; Scherf et al., 2008) extends the duration of infection to facilitate transmission to the mosquito.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the evolutionary function of antigenic variation, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "cc457d9f-344d-447d-a9e4-1a8735afffb3",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C23",
+      "claim": "Specific var genes are associated with severe malarial disease and specific PfEMP1 binding phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Not only do var genes influence transmission, but specific var genes are associated with severe malarial disease and specific PfEMP1 binding phenotypes",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations (Deitsch et al., 2009; Chan et al., 2012; Claessens et al., 2012; Lavstsen et al., 2012; Warimwe et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1a669682-c72f-4027-92dc-5865494fe5b5",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C24",
+      "claim": "Individual P. falciparum genomes have distinct repertoires of var genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Population studies have shown that individual P. falciparum genomes have distinct repertoires of var genes",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to population studies (Barry et al., 2007; Scherf et al., 2008; Chen et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "72d147d5-2743-46ed-a464-4228848a99ed",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C25",
+      "claim": "Var genes extensively recombine during sexual recombination in the mosquito.",
+      "claim_type": "EXPLICIT",
+      "source_text": "that extensively recombine (Freitas-Junior et al., 2000; Taylor et al., 2000) during sexual recombination in the mosquito (Paul et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to studies demonstrating recombination.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7c5258d1-b574-4c06-9177-e89720bd0dd1",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C26",
+      "claim": "The immense sequence diversity observed among var genes and var repertoires has been attributed to high rates of meiotic and possibly mitotic recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The immense sequence diversity observed among var genes and var repertoires has been attributed to high rates of meiotic (and possibly also mitotic) recombination.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This reflects the prevailing explanation for var gene diversity in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "c68bf291-176d-42f6-8338-059584bd4f74",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C27",
+      "claim": "High rates of recombination presumably allow for very low linkage disequilibrium among var loci.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These high rates of recombination presumably allow for very low linkage disequilibrium among var loci.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference from the high recombination rates, indicated by the word 'presumably'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3a5cd705-a111-4307-a664-5e0692cea876",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C28",
+      "claim": "The modeling framework tracks all possible var repertoires, given a diverse pool of genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our modeling framework considers the dynamics shaping the enormous potential diversity of genomic repertoires of var genes by tracking all possible var repertoires, given a diverse pool of genetic variants.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a feature of the model developed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "4a8e2b59-e7ff-4cb4-b789-60c2e6f3e6fc",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C29",
+      "claim": "The model explores whether structured parasite populations resulting from selection pressures exerted by competition among distinct var repertoires for hosts, mediated by cross-immunity, can emerge.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We explore whether structured parasite populations resulting from the selection pressures exerted by competition among distinct var repertoires for hosts, mediated by cross-immunity, can emerge.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the research question addressed by the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "5464cb52-8a57-492e-9b3c-76eb257ca642",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C30",
+      "claim": "The agent-based model follows each host from birth to death, recording their exposure history and the specific immunity each gradually gains as a result of infections.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, an agent-based model is formulated that follows each host from birth to death, while recording their exposure history and the specific immunity each gradually gains as a result of infections",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the methodology of the model developed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "ecd8cffc-234d-4d44-971c-9697d8276e33",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C31",
+      "claim": "The parasite population structure exhibits punctuated turnover with brief episodes of restructuring resulting in a new set of dominant var repertoires.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We find that the parasite population structure exhibits punctuated turnover: brief episodes of restructuring result in a new set of dominant var repertoires.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "5c766747-a592-456e-a8f2-696799a25391",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C32",
+      "claim": "Despite the changing identities of the dominant var repertoires, the overall diversity of repertoires present and the individual gene frequencies remain remarkably constant.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Despite the changing identities of the dominant var repertoires, the overall diversity of repertoires present and the individual gene frequencies remain remarkably constant (Figure 1, lower panels).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e747f52c-7183-4fff-9896-38c9e3c92f97",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C33",
+      "claim": "Var repertoires partition immunity space into a number of discrete and partially overlapping niches.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In essence, although there are an effectively infinite number of niches in host immunity space, var repertoires appear to exploit this space by partitioning it into a number of discrete and partially overlapping niches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the model results describing how repertoires structure immunity space.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "f2f8184e-7e04-4ce4-895a-6c0889d0f3e6",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C34",
+      "claim": "The episodes of restructuring become more frequent as recombination rates increase, but the diversity of dominant var repertoires remains low throughout these semi-stable states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The episodes of restructuring become more frequent as recombination rates increase, but the diversity of dominant var repertoires remains low throughout these semi-stable states.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations examining different recombination rates.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e9fdc6f6-7a03-4092-acf1-0946f39f0c1b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C35",
+      "claim": "The maintenance of structure is robust even under very high levels of recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, the maintenance of structure is found to be robust even under very high levels of recombination (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a key finding from the model simulations, supported by Figure 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "a97856fb-74fd-4524-b319-3f5bb2c346b3",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C36",
+      "claim": "The emergence of pathogen population structure is robust to alternative formulations of the multi-locus model that do not consider sequential expression, or that consider randomly ordered sequential expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The emergence of pathogen population structure is robust to alternative formulations of our multi-locus model that do not consider sequential expression, or formulations that consider randomly ordered sequential expression.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes robustness tests performed on the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7f0702cb-4534-40a6-9934-94cf41227c6d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C37",
+      "claim": "The level of diversity remains orders of magnitude lower than that potentially allowed by the gene pool.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The level of diversity remains orders of magnitude lower than that potentially allowed by the gene pool.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations about the constraint on diversity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3d6edea8-1724-4926-afd0-31f0d205332b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C38",
+      "claim": "For low transmission intensities, emerging populations are characterized by a low number of dominating genomes with a low level of antigenic overlap.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Emerging populations are typically characterized for low transmission intensities (A), by a low number of dominating genomes with a low level of antigenic overlap (R* = 9.2, F* = 1.2, see 'Materials and methods')",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "56a063d8-4a72-46bb-8f47-40a1ebe6111c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C39",
+      "claim": "For high transmission intensities, emerging populations are characterized by higher diversity and higher antigenic similarity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and for high transmission intensities (B), by higher diversity and higher antigenic similarity (R* = 17.5, F* = 2.1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "c8a3ffb1-e7a6-4ada-a6ec-0b02b8c2aca2",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C40",
+      "claim": "As transmission intensity increases, the number of dominating genomes increases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As transmission intensity increases, the number of dominating genomes increases",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "98b32239-50ca-4eef-a3b3-3d598bd489e7",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C41",
+      "claim": "As transmission intensity increases, the degree of antigenic similarity increases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and in accordance, the degree of antigenic similarity increases as well",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "50bfdf41-5f6e-41c3-be36-f6dfc394ba10",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C42",
+      "claim": "The number of distinct repertoires maintained in the system at epidemiologically relevant frequencies remains extremely low relative to the total number of distinct repertoires that can be created through recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "however the number of distinct repertoires that are maintained in the system at epidemiologically relevant frequencies remains extremely low relative to the total number of distinct repertoires that can be crated through recombination.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations about the constraint on diversity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "dc578cad-357a-4ae5-aa4b-29c21a2541e7",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C43",
+      "claim": "For extremely low biting rates, in a narrow window of parameter values, diversity decreases abruptly, reflecting a different dynamic regime in which dominant strains replace each other in a fluctuating manner and population structure does not apply.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For extremely low biting rates, in a narrow window of parameter values, diversity decreases abruptly (A). This reflects a different dynamic regime in which dominant strains replace each other in a fluctuating manner and population structure does not apply.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a finding from the model simulations with an interpretation of the underlying dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "4ed29b6c-0f8e-47d2-afbc-a7a3e5de6d87",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C44",
+      "claim": "Areas that experience different transmission intensities will exhibit 'characteristic' epidemiological signatures.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The model suggests that areas that experience different transmission intensities will exhibit 'characteristic' epidemiological signatures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction from the model simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b29e682d-bd31-4a56-815e-ac25749f105b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C45",
+      "claim": "Under high-transmission regimes, exposure to the diversity of antigenic types typically shifts towards the younger age classes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It can be seen in (A) and (B), that at higher levels of transmission intensity, exposure to the diversity of antigenic types typically shifts towards the younger age classes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "539e024a-7f80-46f4-b36f-350b3040a02d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C46",
+      "claim": "Under high-transmission regimes, hosts gain high levels of immunity to a majority of the variants earlier on in life.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and hosts gain high levels of immunity to a majority of the variants earlier on in life.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "faf4bf12-dd91-4710-ab24-aea71d79eac2",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C47",
+      "claim": "Under high-transmission regimes, high levels of superinfection and high parasite rates are characteristically observed in the very young age classes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Under high-transmission regimes, we characteristically observe high levels of superinfection (i.e., relatively long durations of infection) and high parasite rates in the very young age classes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3f08ca36-17ae-4518-bb66-5ba8cac4e33a",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C48",
+      "claim": "Under very low transmission regimes, host populations characteristically exhibit similar levels of parasite rates in all age groups.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, host populations in regimes of very low transmission, characteristically exhibit similar levels of parasite rates in all age groups",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b69f585a-cc4d-41a0-ae86-c6b26298cd48",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C49",
+      "claim": "Under very low transmission regimes, immunity is gradually gained throughout life, with infection spanning all age classes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and immunity is gradually gained throughout life, with infection spanning all age classes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations, supported by Figure 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "ff880e5c-b95a-4d26-afdf-70f21e7bb3f2",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C50",
+      "claim": "Two recent large-scale studies assessed the extent of local reservoirs of var diversity in Papua New Guinea and Kenya.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two recent large-scale studies aimed at assessing the extent of local reservoirs of var diversity in Papua New Guinea (Barry et al., 2007; Chen et al., 2011) and Kenya (Bull et al., 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to published studies, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "98ec6c75-52d3-4980-8b33-0aee613d3395",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C51",
+      "claim": "The observed frequency distribution of var types in Papua New Guinea is significantly different from the expected distribution when assuming all var types circulate at equal frequencies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observed distribution for the data (red) and the expected distribution when assuming all var types circulate at equal frequencies (blue) were found to be significantly different (pv<0.0001 using a K–S two sample test).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical finding from the empirical data analysis presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "732cf418-90c4-4801-bd62-59240eb77157",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C52",
+      "claim": "There is enrichment for both very rare and very common var types in the Papua New Guinea data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Note the enrichment for both very rare and very common var types in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from the empirical data analysis, supported by Figure 6.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "79de8396-0ace-4699-acc6-27f5fbb599ca",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C53",
+      "claim": "The co-occurrence of var types found in multiple isolates is significantly higher than the null expectation under the assumption of linkage equilibrium among all var types.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The co-occurrence of var types found in multiple isolates is significantly higher than for the null expectation under the assumption of linkage equilibrium among all var types (pv<0.01)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical finding from the empirical data analysis presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7eebc5e8-a0ed-4541-a554-1c8243714239",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C54",
+      "claim": "It is very unlikely that var type 22 is physically linked to the other alleles in the network based on sequence features and genomic organization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on sequence features (Bull et al., 2007), and the fact that genomic organization of var sequence groups appear to be conserved across globally distributed isolates (Kyes et al., 2007), it is very unlikely that var type 22 (being UpsA-like) is physically linked to the other alleles in the network (since they are all UpsB/UpsC-like).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference based on known sequence features and genomic organization, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e8da13ad-c067-464a-915f-9939fedd0246",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C55",
+      "claim": "Var DBLα repertoire relatedness is not a function of microsatellite repertoire relatedness.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another important observation is that, at least at this level of resolution, var DBLα repertoire relatedness is not a function of microsatellite repertoire relatedness.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the empirical data analysis, supported by Figure 6E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "eb733c34-108e-4a91-b874-d5864083cf64",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C56",
+      "claim": "The absence of correlation between var DBLα and microsatellite repertoire relatedness suggests the possibility that var DBLα variation is shaped by other forces than the neutral demographic forces shaping microsatellite variation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The absence of any correlation suggests the possibility that var DBLα variation is shaped by other forces than the neutral demographic forces shaping microsatellite variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the empirical data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "682f4f02-a8b3-441a-8226-4d866bbdfe03",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C57",
+      "claim": "The D values of the var DBLα dataset are higher than those of the microsatellite dataset.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The D values of the var DBLα dataset are higher than those of the microsatellite dataset (pv<<0.0001 by Mann–Whitney test)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statistical finding from the empirical data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "2862e69b-db91-427c-a250-bef4aefb106a",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C58",
+      "claim": "The higher D values for var DBLα versus microsatellite alleles cannot easily be explained by allele frequency differences or differences in the extent of physical linkage among sites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and we argue that this cannot easily be explained by allele frequency differences or differences in the extent of physical linkage among sites (see 'Materials and methods').",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an argument made by the authors based on their data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "0b0503ae-200e-4b01-9fa9-059ebfcd297e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C59",
+      "claim": "Both var DBLα and microsatellite datasets show an enrichment of positive correlations among allele pairs, indicating significant linkage disequilibrium.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, both datasets show an enrichment of positive correlations among allele pairs, and thus, significant linkage disequilibrium.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the statistical analysis of the empirical data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b9002c22-a41d-4ede-8df0-80ac63054acc",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C60",
+      "claim": "The microsatellite repertoires of two isolates containing a highly correlated network of var types are less related than average for the whole dataset.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The microsatellite repertoires of these two isolates are less related than average for the whole dataset, so at least in this case, high microsatellite relatedness does not explain the existence of these highly correlated var types.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the empirical data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "680da1cd-c172-44d9-844e-417088f596db",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C61",
+      "claim": "Smaller subsets of correlated var types are often found in isolates with very dissimilar microsatellite alleles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, smaller subsets of correlated var types are often found in isolates with very dissimilar microsatellite alleles.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the empirical data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "fe57b1fc-a228-4e6d-84dd-3b05eb03f98c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C62",
+      "claim": "The existence of highly correlated var types is not always explained by high levels of underlying genome relatedness.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results suggest that the existence of highly correlated var types is not always explained by high levels of underlying genome relatedness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference drawn from the empirical data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "5633ec00-64bf-4f04-b622-ab469501abb9",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C63",
+      "claim": "The analyses support a possible role for immune selective forces in structuring the variation at an important class of antigen-encoding loci in P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although the sample size of this dataset is too small to identify anything but very strong correlations between intermediate frequency var types (Brown, 1975), these analyses support a possible role for immune selective forces in structuring the variation at an important class of antigen-encoding loci in P. falciparum.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the authors' interpretation of their empirical data analyses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "9ea30027-edd5-45a2-a049-999b652fddb8",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C64",
+      "claim": "More extensive datasets will be needed for definitive conclusions about immune selection structuring var diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "More extensive datasets will be needed for definitive conclusions, but these are now within reach as next generation sequencing methods make it feasible to consider sampling whole communities of parasite genomes to assess var population structure.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a statement about future research needs and possibilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "348fe78e-862e-488d-9349-b2e7c4b73c4a",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C65",
+      "claim": "The model constrains total repertoire diversity to levels that are orders of magnitude lower than is potentially possible given the diversity of the gene pool.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In accordance with predictions from the original 'strain theory', our model constrains total repertoire diversity to levels that are orders of magnitude lower than is potentially possible given the diversity of the gene pool.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "534bb070-8c8c-4fe9-aaca-72596ff66d9d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C66",
+      "claim": "This reduction in diversity occurs because coexisting parasites are structured into a few variants with largely discordant repertoires.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This reduction in diversity occurs because coexisting parasites are structured into a few variants with largely discordant repertoires.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an explanation of the mechanism behind the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "6636796f-d818-422c-85b5-ca91aa581bee",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C67",
+      "claim": "The model predicts that different dominant repertoires can exhibit partial overlap, and the extent of the overlap increases with transmission intensity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In a departure from previous strain theory, our model predicts that the different dominant repertoires can exhibit partial overlap; the extent of the overlap increases with transmission intensity",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a prediction from the model simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7f0957a5-9033-4f3d-902f-6bdb78830b6c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C68",
+      "claim": "The extent of antigenic overlap influences observed epidemiological patterns, particularly age-serology profiles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and this, in turn, influences observed epidemiological patterns (particularly age-serology profiles).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the epidemiological implications of the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "fefc8445-2331-4dfa-9d02-cec61c000420",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C69",
+      "claim": "The specific immune profile of each individual host effectively structures the population into distinct sets of 'patches' or 'resources' that define an immune environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The specific immune profile of each individual host effectively structures the population into distinct sets of 'patches' or 'resources' that define an immune environment, ultimately causing immune selection to act on the parasite population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the mechanism underlying the model dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "21df52c1-3908-4050-8a42-b7b0b4b024fd",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C70",
+      "claim": "Distinct sets of patches are formed and conserved even when immunity to the var alleles is shorter-lived.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These distinct sets of patches are formed and conserved even when immunity to the var alleles is shorter-lived.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from model simulations with shorter-lived immunity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "6eaafbdf-5898-4dea-8ae2-1a1299a3b799",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C71",
+      "claim": "Observations of individuals becoming susceptible to severe infection at later stages of their life may be in part a consequence of short-lived immunity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Observations of individuals becoming susceptible to severe infection at later stages of their life (see for example (Dhingra et al., 2010)), may be in part a consequence of short-lived immunity.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative explanation for observed patterns, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "76838d3d-980e-4780-adcb-c7ba032f03bb",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C72",
+      "claim": "Discordant repertoires that exhibit partial immunological/antigenic overlap blur the distinction between the acquisition of strictly strain-specific immunity and the acquisition of strictly strain-transcending immunity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Discordant repertoires that exhibit partial immunological/antigenic overlap blur the distinction between the acquisition of strictly strain-specific immunity and the acquisition of strictly strain-transcending immunity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the model findings and their implications.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e1c1792a-7a39-4c00-9c7a-69f80ea3462b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C73",
+      "claim": "Strain diversity structure, rather than diversity per se, plays a role in determining observed epidemiological patterns and their response to intervention.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This underscores the role of strain diversity structure, rather than diversity per se, in determining observed epidemiological patterns and their response to intervention.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the implications of the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "249dd096-4099-4f0b-93c8-b2709a12f057",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C74",
+      "claim": "By reducing antigenic overlap between strains, vector control efforts will result in infection at an older age and a more gradual acquisition of protection to infection, even in the absence of changes in var gene diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By reducing antigenic overlap between strains, vector control efforts will result in infection at an older age and a more gradual acquisition of protection to infection, even in the absence of changes in var gene diversity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction from the model about the effects of intervention.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "975d7bad-ab68-44fa-839a-5aa0fce55ed4",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C75",
+      "claim": "If the number of var genes that a host has previously encountered relates to the degree of protection against clinical disease, more severe symptoms would be expected to occur at younger ages under high transmission settings.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, if the number of var genes that a host has previously encountered relates to the degree of protection against clinical disease, we would expect more severe symptoms to occur at younger ages under high transmission settings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative prediction based on a conditional assumption.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "de963645-61eb-473f-b772-9ac05d84039b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C76",
+      "claim": "More homogeneous malaria incidents are likely to occur over a broader range of age-classes when transmission is lowered.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and in contrast, more homogeneous malaria incidents are likely to occur over a broader range of age-classes when transmission is lowered",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative prediction about the effects of reduced transmission.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "26c7a5c6-e7be-42d1-a3d1-e1c8380ee555",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C77",
+      "claim": "The model in its current form does not differentiate infection from clinical disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The model in its current form does not differentiate infection from clinical disease, thus we cannot explicitly address the impact of control on the severity of symptoms.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a statement about a limitation of the current model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "c6146c37-3fd1-47f0-a8af-c5e2063ce9af",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C78",
+      "claim": "Future work should extend the model to consider functional, non-antigen-encoding differences between var genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Future work should thus extend our model to consider functional, non-antigen-encoding differences between var genes",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a recommendation for future research directions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "4e451a49-f7b0-44f0-97f0-0aa4a7044933",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C79",
+      "claim": "Chen et al. (2011) pointed to the importance of var genes in malaria surveillance due to their influence on both the duration of infection and the degree of superinfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Chen et al. (2011) have pointed to the importance of var genes in malaria surveillance, due to their influence on both the duration of infection and the degree of superinfection",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from a cited study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7912ffe9-c083-4a09-8bde-1bb46b46b33d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C80",
+      "claim": "Chen et al. (2011) demonstrated the existence of an immense diversity of var genes and limited var repertoire overlap in Africa, even in sites with low malaria prevalence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and they demonstrated the existence of an immense diversity of var genes and limited var repertoire overlap in Africa, even in sites with low malaria prevalence.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from a cited study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "a7931839-60c4-4b9f-bacb-086c5a81699b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C81",
+      "claim": "Chen et al. (2011) proposed that var typing be used to complement prevalence measures for molecular surveillance of malaria control and elimination efforts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consequently, they have proposed that var typing be used to complement prevalence measures for molecular surveillance of malaria control and elimination efforts.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to a proposal from a cited study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1b0cb9f2-5f1b-49d1-a6ce-10a27b5ebb82",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C82",
+      "claim": "The models support the proposal that var typing be used for molecular surveillance of malaria control.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our models support this proposal as they show that decreasing transmission provokes nonlinear changes in the dominant var configurations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the practical implications of the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "2e0603d7-22a9-4bc5-8fbf-e31b08fb093b",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C83",
+      "claim": "Decreasing transmission provokes nonlinear changes in the dominant var configurations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our models support this proposal as they show that decreasing transmission provokes nonlinear changes in the dominant var configurations.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7dfd21a0-c55c-4355-b2b1-6996de718092",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C84",
+      "claim": "There is not a simple relationship between var diversity and repertoire diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, our results demonstrate that there is not a simple relationship between var diversity and repertoire diversity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the model simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e1b6f35b-8ca6-4931-b116-a435e3cb2b38",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C85",
+      "claim": "The 'var strain' model suggests that vector control strategies that reduce transmission will not always drastically reduce var gene diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, the 'var strain' model suggests that vector control strategies that reduce transmission will not always drastically reduce var gene diversity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction from the model about the effects of intervention.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "375e36a7-073b-4dcd-ba9b-df43fb44d70c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C86",
+      "claim": "A reservoir of parasite genomes with diverse (highly non-overlapping) var repertoires will remain after vector control reduces transmission.",
+      "claim_type": "EXPLICIT",
+      "source_text": "because a reservoir of parasite genomes with diverse (highly non-overlapping) var repertoires will remain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction from the model about the effects of intervention.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3b3d9472-e7b7-4157-abcb-80a34f79d2f6",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C87",
+      "claim": "This insight from the model provides a plausible explanation for why it is so difficult to eliminate malaria.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This insight from the model provides a plausible explanation for why it is so difficult to eliminate malaria",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the practical implications of the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "5c9643ec-5088-40cf-a930-4843e01dad9d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C88",
+      "claim": "Non-overlapping var diversity will create significant inherent difficulties in reducing the potential of the malaria parasite to reinfect the same hosts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "non-overlapping var diversity will create significant inherent difficulties in reducing the potential of the malaria parasite to reinfect the same hosts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the biological implications of the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "cf816dd5-d2f6-4b1d-b2e3-4ba8a564341e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C89",
+      "claim": "Var surveillance might provide a good molecular means of evaluating control.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It also suggests that var surveillance might provide a good molecular means of evaluating control.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative recommendation based on the model findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "701c6e67-c1f3-43f5-990a-825948be4bd7",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C90",
+      "claim": "If the end game is to be achieved in malaria control, then the mechanisms creating and maintaining antigenic diversity warrant further investigation in both modeling and empirical studies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If the end game is to be achieved in malaria control, then the mechanisms creating and maintaining antigenic diversity warrant further investigation in both modeling and empirical studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a recommendation for future research based on the study's findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "156cc73a-d0e5-476f-bded-e8735141247e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C91",
+      "claim": "The results of the model on the dynamics of population structure in P. falciparum have broad implications for the possible emergence of similar structure in many important human and animal pathogens that have major surface antigens encoded by multigene families.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In conclusion, the results of our model on the dynamics of population structure in P. falciparum as defined by the var multi-gene family, have broad implications for the possible emergence of similar structure in many important human and animal pathogens that have major surface antigens encoded by multigene families, including bacterial, protozoan and fungal pathogens",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the broader implications of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "834580d3-7cfe-43f2-9168-08d0b3e3dd9e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C92",
+      "claim": "Each parasite is composed of a set of exactly g var genes in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Each parasite is composed of a set of exactly g var genes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a parameter of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "6dd1441a-ebb1-4045-8a56-91c1dc5fb341",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C93",
+      "claim": "The genomes are distinguishable from each other by their unique var combination in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the genomes are distinguishable from each other by their unique var combination.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes how genomes are defined in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "f24066d1-55c7-4374-993d-6426499c68d6",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C94",
+      "claim": "The overall diversity of var genes circulating in the host population is assumed to originate from a general predefined pool of G variants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The overall diversity of var genes circulating in the host population is assumed to originate from a general predefined pool of G variants",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes an assumption of the model, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "f6c52286-c7ea-4afa-b4fe-ae613054257d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C95",
+      "claim": "The total number of distinct var repertoires is G!/(G-g)!.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence, the total number of distinct var repertoires is G!/(G-g)!.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a mathematical consequence of the model structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "f57acbfb-d478-4b3b-addd-2caef0b63249",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C96",
+      "claim": "During the course of an infection, a parasite expresses all of its var genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "During the course of an infection, a parasite expresses all of its var genes",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an assumption of the model based on biological knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1ba81fee-7fe2-4515-8655-58525efedc43",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C97",
+      "claim": "After the host is exposed to each VSA, it gains life-long immunity that is specific to each of the antigens.",
+      "claim_type": "EXPLICIT",
+      "source_text": "After the host is exposed to each of these VSAs, it gains life-long immunity that is specific to each of the antigens",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is an assumption of the model, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "42c0fe59-7806-46a0-84f6-1d2b63a4eae7",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C98",
+      "claim": "The total duration of infection in a susceptible host lasts a fixed time (κyrs.) in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We assume that the total duration of infection in a susceptible host lasts a fixed time (κyrs.)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a parameter of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1fafae3d-add3-4749-907d-5ccaa20e0a83",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C99",
+      "claim": "In partially immune hosts, the actual duration of infection decreases proportionally to the number of var genes that have been expressed in earlier infections.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and that in partially immune hosts, the actual duration decreases proportionally to the number of var genes that have been expressed in earlier infections",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is an assumption of the model, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "1cc6c6d7-55f3-4b39-8be9-ecec3fa46797",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C100",
+      "claim": "The var genes composing an infecting parasite are mutually and exclusively expressed in a fixed sequential order in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we capture this feature by considering that the var genes composing an infecting parasite are mutually and exclusively expressed in a fixed sequential order.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a key feature of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "2614dde0-7e02-482d-916e-00aa1996fc65",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C101",
+      "claim": "At each stage of an infection, the host has already acquired specific immunity to all the VSA's encoded by var genes expressed up to that point in time.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence, at each stage of an infection, the host has already acquired specific immunity to all the VSA's encoded by var genes expressed up to that point in time.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes how immunity develops in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "be65568a-f5b6-43cb-b968-564f1c926fe1",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C102",
+      "claim": "The infection history of each host is tracked in time and determines its immune status in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The infection history of each host is tracked in time and determines its immune status",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a feature of the model implementation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "75bc82fb-e66c-426f-af0a-4d50964d3107",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C103",
+      "claim": "An infected host can harbor multiple simultaneously co-infecting parasite genomes in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An infected host can harbor multiple simultaneously co-infecting parasite genomes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a feature of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "93f81b65-f17f-4430-89c8-a6472a9c34bb",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C104",
+      "claim": "Each co-infecting parasite has the potential of being transmitted to another host through a mosquito biting event.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and each has the potential of being transmitted to another host through a mosquito biting event.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes transmission dynamics in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "d6d4a419-8115-42bb-9415-db8e29823b78",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C105",
+      "claim": "The implementation of the numerical simulations relies on the Gillespie algorithm for three processes: biting, host death, and immigration of new parasite genomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because the model is stochastic and formulated in continuous time, the implementation of the numerical simulations relies on the well-known Gillespie algorithm (Gillespie, 1977) for three of the processes; biting (responsible for transmission), host death, and immigration of new parasite genomes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational implementation of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e01aaba5-cb75-4317-83fe-c64103e0cb61",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C106",
+      "claim": "The population size is constant in time in the model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We further consider that the population size is constant in time",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes an assumption of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "e8fe4754-7a4b-4df5-a571-4a63a19e1d70",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C107",
+      "claim": "In the case of a death, a new susceptible host is born, replacing the previous host that died.",
+      "claim_type": "EXPLICIT",
+      "source_text": "such that in the case of a death, a new susceptible host is born, replacing the previous host that died.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the demographic dynamics in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "a11e253b-1264-4b5a-9b08-9cffc37a6ff1",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C108",
+      "claim": "A new host has no history of exposure, nor any acquired immunity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We assume that this new host has no history of exposure, nor any acquired immunity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes an assumption about newborn hosts in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "9c2464a1-b8a3-482a-b5c9-9e689275b363",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C109",
+      "claim": "When two or more parasite genomes are successfully transmitted from the first host to a mosquito, there is a given probability, ρ, that recombination occurs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When two or more parasite genomes are successfully transmitted from the first host to a mosquito, there is a given probability, ρ, that recombination occurs",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the recombination mechanism in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "5c44c94a-fe2a-4de2-8bdf-5018268f1d9f",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C110",
+      "claim": "Recombination results in a new var repertoire that is then transmitted from the mosquito to the second host.",
+      "claim_type": "EXPLICIT",
+      "source_text": "resulting in a new var repertoire that is then transmitted from the mosquito to the second host.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the outcome of recombination in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "8e838aa6-263b-4c9e-837a-5cd691692c8d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C111",
+      "claim": "The novel combination is formed by randomly sampling a subset of var genes from each of the parent repertoires.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this case, the novel combination is formed by randomly sampling a subset of var genes from each of the parent repertoires.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes how recombinant genomes are generated in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "da93f25f-4bfe-43ab-b2e0-9de34165f4f0",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C112",
+      "claim": "When ρ>0, this effectively leads to a continuous reshuffling of var repertoires circulating in the host population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence, when ρ>0, this effectively leads to a continuous reshuffling of var repertoires circulating in the host population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the consequences of the recombination mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "af4e7226-e9fa-431f-bee3-72406e8e6ef3",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C113",
+      "claim": "Recombination events often introduce de novo parasite genomes not yet present in the infected host population.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Given the extensive number of possible var combinations, these recombination events often introduce de novo parasite genomes not yet present in the infected host population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the consequences of recombination given the model structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "2ce9a226-23de-4c3e-8a37-124b32d15406",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C114",
+      "claim": "Different levels of transmission intensity are considered by specifically varying the biting rate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our numerical experiments, we consider different levels of transmission intensity by specifically varying the biting rate.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes how transmission intensity is modeled.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "bd735072-9b9b-439b-a2e6-50d9cf667720",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C115",
+      "claim": "Variation in transmission intensity refers to variation in the biting rate parameter (and therefore, in the entomological inoculation rate, or EIR).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, throughout the paper, variation in transmission intensity refers to variation in this parameter (and therefore, in the so-called entomological inoculation rate, or EIR).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This clarifies the definition of transmission intensity used in the paper.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "df6d806e-e092-41a2-ac11-c318996a75e4",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C116",
+      "claim": "R* is calculated using Simpson's Diversity index.",
+      "claim_type": "EXPLICIT",
+      "source_text": "R* is calculated using Simpson's Diversity index, R*=1/∑i=1Spi2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the metric used to measure diversity in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "406077bb-30a7-4b89-b385-9802c8b2d821",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C117",
+      "claim": "Simpson's index has low sensitivity to species at low abundance and gives most weight to the most abundant ones.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The benefit of using Simpson's index over alternative diversity indices is that it has low sensitivity to species at low abundance (in this case genomes), and gives most weight to the most abundant ones.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the properties of Simpson's diversity index.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "60168756-2725-4ecd-828d-a907fea7947e",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C118",
+      "claim": "DBLα is the only domain found in nearly all PfEMP1 variants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because DBLα is the only domain found in nearly all PfEMP1 variants (Miller et al., 2002)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about var gene structure, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "34545391-2234-4c57-958a-d2f4299402c3",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C119",
+      "claim": "The sequence encoding the central portion of the DBLα domain provides the most informative molecular marker of var gene diversity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the sequence encoding the central portion of this domain provides the most informative molecular marker of var gene diversity",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to studies using this marker.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "eb9eb79a-ffb9-4782-b898-30147c35bffe",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C120",
+      "claim": "Two DBLα tags are considered to represent two distinct var 'types' if their nucleotide sequence identity is less than 96%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two DBLα tags are considered to represent two distinct var 'types' if their nucleotide sequence identity is less than 96%.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the criterion used to define distinct var types in the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "fbdf56b0-6e81-4bf6-b0c5-ef1e75039d3d",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C121",
+      "claim": "Microsatellites offer an ideal and practical means to construct a null hypothesis reflecting the demographic forces shaping diversity because these sites are predominantly neutral.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Microsatellites offer an ideal and practical means to construct a null hypothesis reflecting the demographic forces shaping diversity because these sites are predominantly neutral, and their diversity can be explained by a mechanism unrelated to immune selection (i.e., slippage).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established understanding of microsatellite markers in population genetics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "d6bc2023-c53c-4256-839a-f158ecde7c95",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C122",
+      "claim": "Single nucleotide polymorphisms or single feature polymorphisms do not offer a good basis for a null hypothesis because they are predominantly found in multi-copy antigenic genes in P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, single nucleotide polymorphisms or single feature polymorphisms, because they are predominantly found in multi-copy antigenic genes in P. falciparum (Jiang et al., 2008), do not offer a good basis for a null hypothesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an argument based on the genomic distribution of these markers, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "a472e9f3-fab6-40bf-8664-f73fffaac1e5",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C123",
+      "claim": "D is maximized when allele frequencies are 0.5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "D is maximized when allele frequencies are 0.5",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a known property of the linkage disequilibrium coefficient D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "25b5031a-521d-4a31-be9a-5724733a47c8",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C124",
+      "claim": "D indicates the amount of information upon which the coefficient is based.",
+      "claim_type": "EXPLICIT",
+      "source_text": "so D also indicates the amount of information upon which the coefficient is based",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a known property of the linkage disequilibrium coefficient D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "c17f2cc0-1564-444f-b666-2467b357e408",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C125",
+      "claim": "The higher D values for var DBLα alleles versus microsatellite alleles cannot be attributed to differences in allele frequencies since the var DBLα alleles have lower frequencies than the microsatellite alleles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The higher D values for var DBLα alleles versus microsatellite alleles cannot be attributed to differences in allele frequencies since the var DBLα alleles have lower frequencies than the microsatellite alleles, and thus, D values biased to lower magnitudes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an argument based on the properties of D and the observed allele frequencies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "42d28fed-ceb2-4f1a-9f51-749318b0006c",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C126",
+      "claim": "The higher D values from the var DBLα dataset could be due to the influence of the close physical linkage of a small subset of pairs of var loci, but it seems somewhat unlikely.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While the higher D values from the var DBLα dataset could be due to the influence of the close physical linkage of a small subset of pairs of var loci (Deitsch and Hviid, 2004), it seems somewhat unlikely",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an argument evaluating an alternative explanation, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "8ba7a5f0-413a-42f0-8287-606ef5c476e4",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C127",
+      "claim": "The great majority of var loci are located very far from other var loci in the 3D7 genome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "because the great majority of var loci are located very far from other var loci in the 3D7 genome (Deitsch and Hviid, 2004)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about var gene genomic organization, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "7554ae90-23db-469b-b5bc-edae550dffd7",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C128",
+      "claim": "Var loci have been shown to coincide with recombination hotspots.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and var loci have been shown to coincide with recombination hotspots (Mu et al., 2010; Jiang et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to studies demonstrating this pattern.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b6e61061-57df-4f07-82ca-232c20571f07",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "claim_id": "C129",
+      "claim": "The P. falciparum genome is characterized by remarkably high underlying rates of recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in a genome that is already characterized by remarkably high underlying rates of recombination (Conway et al., 1999; Volkman et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about P. falciparum genetics, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b2601339-1bec-4dd5-ae51-0ac601c17b02",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The agent-based model is thoroughly described with explicit parameters, biological assumptions, and computational implementation details. The model appropriately extends strain theory to address multi-copy genes with sequential expression, and the methodology is internally consistent and well-justified.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "5e79e0db-37ad-4a18-8165-300132e829a4",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Model simulations demonstrate robust emergence of structured parasite populations with constrained diversity even under high recombination rates. Multiple figures (Figure 1) support these findings across parameter ranges, and robustness tests confirm the results hold under alternative model formulations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The model clearly demonstrates that transmission intensity affects both the number of dominant repertoires and their antigenic overlap, with quantitative metrics (R*, F*) provided. Figures 2 and 3 support these relationships across parameter ranges, showing systematic patterns that are logical consequences of the model structure.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "d9635781-315b-4faa-a0d9-b579f83012bb",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Model predictions about age-structured immunity and infection patterns are well-supported by Figure 4 and follow logically from the model's immune dynamics. The finding that immune profiles structure host populations into distinct patches is a direct consequence of tracking individual exposure histories.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "2acb6200-3c96-444e-972c-e98a9b57dc50",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The empirical analysis shows higher linkage disequilibrium for var genes versus microsatellites and lack of correlation between var and microsatellite repertoire relatedness, which is suggestive of immune selection. However, the authors acknowledge the sample size is too small for definitive conclusions (C63, C64), alternative explanations involving physical linkage cannot be definitively ruled out (C126), and the statistical power to detect intermediate-frequency correlations is limited.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd",
+      "content_id": "b6f8a8af-9c56-486f-94ae-07a9a6ab39a2",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Predictions about malaria control and elimination are speculative extrapolations from model results rather than direct findings. The model does not explicitly simulate intervention scenarios, and the claim that non-overlapping diversity explains elimination difficulty (C87) relies on untested assumptions about reinfection dynamics. The model also does not differentiate infection from clinical disease (C77), limiting predictions about disease outcomes.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly affirm the core modeling approach, stating 'the authors have answered the question of whether immune selection can cause the parasite population to self-organise into a finite number of strains with non-overlapping var repertoires even when the genes are expressed sequentially.' The agent-based model extending strain theory to var genes is accepted without methodological critique.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3656dd0b-e3d9-4208-8e37-f124904afb32",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers accept that immune selection structures the parasite population into dominant repertoires with constrained diversity, noting the model shows 'the parasite population to self-organise into a finite number of strains.' The finding of punctuated turnover is acknowledged as 'a dynamically different process' without challenging its validity, though reviewers request clarification about the mechanism (Comment 2).",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "f238c998-0962-4fa0-9a47-ab7798b4c297",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly affirm this finding, stating 'They have further shown that the degree of structuring depends on transmission intensity: partially overlapping repertoires can arise when transmission levels are high.' This represents a key theoretical advance that reviewers accept without challenge.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b64a058e-01ed-4fdd-959e-04fc165e15cc",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The model predictions about epidemiological signatures at different transmission intensities are implicitly accepted. Reviewers do not question these findings but instead request speculation about their implications for disease vs. infection (Comment 3), indicating acceptance of the underlying results.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "783d031c-9967-41ad-9ccb-fd55567444f7",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly accept the empirical findings, stating the paper 'presents an analysis of microsatellite and var DBLα sequence data, revealing that linkage disequilibrium among the latter cannot be attributed to demographic forces alone.' This affirms the key empirical support for immune selection structuring var diversity.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "3c7e707d-2c5a-4bfd-ba93-44c3ed81be45",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers accept the observation of punctuated turnover, they express uncertainty about its mechanism, asking 'To what degree does the sequential expression itself contribute to this phenomenon?' and whether 'this behavior likely to be observed in a stochastic multi-locus model without sequential expression' (Comment 2). This indicates the finding is accepted but its interpretation requires clarification.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "82a24020-af34-4c98-ac81-c8f208d32d32",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers challenge the interpretation that model insights explain difficulty of malaria elimination, stating 'It is not obvious that \"This important insight provides a plausible explanation for why it is so difficult to eliminate malaria\"' (Comment 3). They request speculation on differential effects on disease vs. infection, indicating the practical implications are not yet convincingly established.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "9f6e6c4a-77d3-4013-8b4c-de4df02c26a8",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R8",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request discussion of how the model performs under non-lifelong immunity assumptions, citing 'recent evidence that malaria may well kill adults as well as children (Dhingra et al, Lancet 2010)' (Comment 4). While the model with lifelong immunity is not rejected, reviewers indicate uncertainty about its robustness to this assumption.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "77a26e83-c242-450b-8952-4c1f72296c09",
+      "content_id": "b8cf6934-395b-465e-b133-0d2f306fc917",
+      "result_id": "R9",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers note 'Parts of the Materials and methods are difficult to follow and parameters such as nh are not always clearly defined' and question notation choices and mathematical formulations (Comment 5). While not rejecting the model structure, reviewers indicate the methods require clarification for proper evaluation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89848037-66df-48bb-94c2-f3ec76fcc10c",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "37347d89-f4ae-4900-8ddf-0db62ddc8be0",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "bcb89572-ee29-4941-82f6-e75b63ad5294",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "3a5cd705-a111-4307-a664-5e0692cea876",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "4a8e2b59-e7ff-4cb4-b789-60c2e6f3e6fc",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "5464cb52-8a57-492e-9b3c-76eb257ca642",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "834580d3-7cfe-43f2-9168-08d0b3e3dd9e",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "6dd1441a-ebb1-4045-8a56-91c1dc5fb341",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "f24066d1-55c7-4374-993d-6426499c68d6",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "f6c52286-c7ea-4afa-b4fe-ae613054257d",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "f57acbfb-d478-4b3b-addd-2caef0b63249",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "1ba81fee-7fe2-4515-8655-58525efedc43",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "42c0fe59-7806-46a0-84f6-1d2b63a4eae7",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "1fafae3d-add3-4749-907d-5ccaa20e0a83",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "1cc6c6d7-55f3-4b39-8be9-ecec3fa46797",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "2614dde0-7e02-482d-916e-00aa1996fc65",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "be65568a-f5b6-43cb-b968-564f1c926fe1",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "75bc82fb-e66c-426f-af0a-4d50964d3107",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "93f81b65-f17f-4430-89c8-a6472a9c34bb",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "d6d4a419-8115-42bb-9415-db8e29823b78",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "e01aaba5-cb75-4317-83fe-c64103e0cb61",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "e8fe4754-7a4b-4df5-a571-4a63a19e1d70",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "a11e253b-1264-4b5a-9b08-9cffc37a6ff1",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "9c2464a1-b8a3-482a-b5c9-9e689275b363",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "5c44c94a-fe2a-4de2-8bdf-5018268f1d9f",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "8e838aa6-263b-4c9e-837a-5cd691692c8d",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "da93f25f-4bfe-43ab-b2e0-9de34165f4f0",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "af4e7226-e9fa-431f-bee3-72406e8e6ef3",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "2ce9a226-23de-4c3e-8a37-124b32d15406",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "bd735072-9b9b-439b-a2e6-50d9cf667720",
+      "result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02"
+    },
+    {
+      "claim_id": "c58b6fec-cc2a-499b-80f7-2ada9fa2b999",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "ecd8cffc-234d-4d44-971c-9697d8276e33",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "5c766747-a592-456e-a8f2-696799a25391",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "e747f52c-7183-4fff-9896-38c9e3c92f97",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "f2f8184e-7e04-4ce4-895a-6c0889d0f3e6",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "e9fdc6f6-7a03-4092-acf1-0946f39f0c1b",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "a97856fb-74fd-4524-b319-3f5bb2c346b3",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "7f0702cb-4534-40a6-9934-94cf41227c6d",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "50bfdf41-5f6e-41c3-be36-f6dfc394ba10",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "348fe78e-862e-488d-9349-b2e7c4b73c4a",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "534bb070-8c8c-4fe9-aaca-72596ff66d9d",
+      "result_id": "5e79e0db-37ad-4a18-8165-300132e829a4"
+    },
+    {
+      "claim_id": "70bd5a85-0093-4d9d-be0c-862b7b254700",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "3d6edea8-1724-4926-afd0-31f0d205332b",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "56a063d8-4a72-46bb-8f47-40a1ebe6111c",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "c8a3ffb1-e7a6-4ada-a6ec-0b02b8c2aca2",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "98b32239-50ca-4eef-a3b3-3d598bd489e7",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "dc578cad-357a-4ae5-aa4b-29c21a2541e7",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "4ed29b6c-0f8e-47d2-afbc-a7a3e5de6d87",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "6636796f-d818-422c-85b5-ca91aa581bee",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "7f0957a5-9033-4f3d-902f-6bdb78830b6c",
+      "result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3"
+    },
+    {
+      "claim_id": "b29e682d-bd31-4a56-815e-ac25749f105b",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "539e024a-7f80-46f4-b36f-350b3040a02d",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "faf4bf12-dd91-4710-ab24-aea71d79eac2",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "3f08ca36-17ae-4518-bb66-5ba8cac4e33a",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "b69f585a-cc4d-41a0-ae86-c6b26298cd48",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "fefc8445-2331-4dfa-9d02-cec61c000420",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "21df52c1-3908-4050-8a42-b7b0b4b024fd",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "76838d3d-980e-4780-adcb-c7ba032f03bb",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "e1c1792a-7a39-4c00-9c7a-69f80ea3462b",
+      "result_id": "d9635781-315b-4faa-a0d9-b579f83012bb"
+    },
+    {
+      "claim_id": "ce529767-3f21-42a8-9f61-ecc5295dec0d",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "98ec6c75-52d3-4980-8b33-0aee613d3395",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "732cf418-90c4-4801-bd62-59240eb77157",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "79de8396-0ace-4699-acc6-27f5fbb599ca",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "7eebc5e8-a0ed-4541-a554-1c8243714239",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "e8da13ad-c067-464a-915f-9939fedd0246",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "eb733c34-108e-4a91-b874-d5864083cf64",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "682f4f02-a8b3-441a-8226-4d866bbdfe03",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "2862e69b-db91-427c-a250-bef4aefb106a",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "0b0503ae-200e-4b01-9fa9-059ebfcd297e",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "b9002c22-a41d-4ede-8df0-80ac63054acc",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "680da1cd-c172-44d9-844e-417088f596db",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "fe57b1fc-a228-4e6d-84dd-3b05eb03f98c",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "5633ec00-64bf-4f04-b622-ab469501abb9",
+      "result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50"
+    },
+    {
+      "claim_id": "249dd096-4099-4f0b-93c8-b2709a12f057",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "975d7bad-ab68-44fa-839a-5aa0fce55ed4",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "de963645-61eb-473f-b772-9ac05d84039b",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "1b0cb9f2-5f1b-49d1-a6ce-10a27b5ebb82",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "2e0603d7-22a9-4bc5-8fbf-e31b08fb093b",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "7dfd21a0-c55c-4355-b2b1-6996de718092",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "e1b6f35b-8ca6-4931-b116-a435e3cb2b38",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "375e36a7-073b-4dcd-ba9b-df43fb44d70c",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "3b3d9472-e7b7-4157-abcb-80a34f79d2f6",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "5c9643ec-5088-40cf-a930-4843e01dad9d",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "cf816dd5-d2f6-4b1d-b2e3-4ba8a564341e",
+      "result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd"
+    },
+    {
+      "claim_id": "89848037-66df-48bb-94c2-f3ec76fcc10c",
+      "result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6"
+    },
+    {
+      "claim_id": "37347d89-f4ae-4900-8ddf-0db62ddc8be0",
+      "result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6"
+    },
+    {
+      "claim_id": "c58b6fec-cc2a-499b-80f7-2ada9fa2b999",
+      "result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6"
+    },
+    {
+      "claim_id": "3a5cd705-a111-4307-a664-5e0692cea876",
+      "result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6"
+    },
+    {
+      "claim_id": "4a8e2b59-e7ff-4cb4-b789-60c2e6f3e6fc",
+      "result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6"
+    },
+    {
+      "claim_id": "5464cb52-8a57-492e-9b3c-76eb257ca642",
+      "result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6"
+    },
+    {
+      "claim_id": "c58b6fec-cc2a-499b-80f7-2ada9fa2b999",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "ecd8cffc-234d-4d44-971c-9697d8276e33",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "5c766747-a592-456e-a8f2-696799a25391",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "e747f52c-7183-4fff-9896-38c9e3c92f97",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "f2f8184e-7e04-4ce4-895a-6c0889d0f3e6",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "e9fdc6f6-7a03-4092-acf1-0946f39f0c1b",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "a97856fb-74fd-4524-b319-3f5bb2c346b3",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "7f0702cb-4534-40a6-9934-94cf41227c6d",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "348fe78e-862e-488d-9349-b2e7c4b73c4a",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "534bb070-8c8c-4fe9-aaca-72596ff66d9d",
+      "result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32"
+    },
+    {
+      "claim_id": "70bd5a85-0093-4d9d-be0c-862b7b254700",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "3d6edea8-1724-4926-afd0-31f0d205332b",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "56a063d8-4a72-46bb-8f47-40a1ebe6111c",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "c8a3ffb1-e7a6-4ada-a6ec-0b02b8c2aca2",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "98b32239-50ca-4eef-a3b3-3d598bd489e7",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "50bfdf41-5f6e-41c3-be36-f6dfc394ba10",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "6636796f-d818-422c-85b5-ca91aa581bee",
+      "result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297"
+    },
+    {
+      "claim_id": "4ed29b6c-0f8e-47d2-afbc-a7a3e5de6d87",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "b29e682d-bd31-4a56-815e-ac25749f105b",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "539e024a-7f80-46f4-b36f-350b3040a02d",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "faf4bf12-dd91-4710-ab24-aea71d79eac2",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "3f08ca36-17ae-4518-bb66-5ba8cac4e33a",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "b69f585a-cc4d-41a0-ae86-c6b26298cd48",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "7f0957a5-9033-4f3d-902f-6bdb78830b6c",
+      "result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc"
+    },
+    {
+      "claim_id": "ce529767-3f21-42a8-9f61-ecc5295dec0d",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "98ec6c75-52d3-4980-8b33-0aee613d3395",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "732cf418-90c4-4801-bd62-59240eb77157",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "79de8396-0ace-4699-acc6-27f5fbb599ca",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "e8da13ad-c067-464a-915f-9939fedd0246",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "eb733c34-108e-4a91-b874-d5864083cf64",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "682f4f02-a8b3-441a-8226-4d866bbdfe03",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "2862e69b-db91-427c-a250-bef4aefb106a",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "0b0503ae-200e-4b01-9fa9-059ebfcd297e",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "fe57b1fc-a228-4e6d-84dd-3b05eb03f98c",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "5633ec00-64bf-4f04-b622-ab469501abb9",
+      "result_id": "783d031c-9967-41ad-9ccb-fd55567444f7"
+    },
+    {
+      "claim_id": "ecd8cffc-234d-4d44-971c-9697d8276e33",
+      "result_id": "3c7e707d-2c5a-4bfd-ba93-44c3ed81be45"
+    },
+    {
+      "claim_id": "e1b6f35b-8ca6-4931-b116-a435e3cb2b38",
+      "result_id": "82a24020-af34-4c98-ac81-c8f208d32d32"
+    },
+    {
+      "claim_id": "375e36a7-073b-4dcd-ba9b-df43fb44d70c",
+      "result_id": "82a24020-af34-4c98-ac81-c8f208d32d32"
+    },
+    {
+      "claim_id": "3b3d9472-e7b7-4157-abcb-80a34f79d2f6",
+      "result_id": "82a24020-af34-4c98-ac81-c8f208d32d32"
+    },
+    {
+      "claim_id": "5c9643ec-5088-40cf-a930-4843e01dad9d",
+      "result_id": "82a24020-af34-4c98-ac81-c8f208d32d32"
+    },
+    {
+      "claim_id": "1ba81fee-7fe2-4515-8655-58525efedc43",
+      "result_id": "9f6e6c4a-77d3-4013-8b4c-de4df02c26a8"
+    },
+    {
+      "claim_id": "21df52c1-3908-4050-8a42-b7b0b4b024fd",
+      "result_id": "9f6e6c4a-77d3-4013-8b4c-de4df02c26a8"
+    },
+    {
+      "claim_id": "834580d3-7cfe-43f2-9168-08d0b3e3dd9e",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "6dd1441a-ebb1-4045-8a56-91c1dc5fb341",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "f24066d1-55c7-4374-993d-6426499c68d6",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "f6c52286-c7ea-4afa-b4fe-ae613054257d",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "f57acbfb-d478-4b3b-addd-2caef0b63249",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "1ba81fee-7fe2-4515-8655-58525efedc43",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "42c0fe59-7806-46a0-84f6-1d2b63a4eae7",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "1fafae3d-add3-4749-907d-5ccaa20e0a83",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "1cc6c6d7-55f3-4b39-8be9-ecec3fa46797",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "2614dde0-7e02-482d-916e-00aa1996fc65",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "be65568a-f5b6-43cb-b968-564f1c926fe1",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "75bc82fb-e66c-426f-af0a-4d50964d3107",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "93f81b65-f17f-4430-89c8-a6472a9c34bb",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "d6d4a419-8115-42bb-9415-db8e29823b78",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "e01aaba5-cb75-4317-83fe-c64103e0cb61",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "e8fe4754-7a4b-4df5-a571-4a63a19e1d70",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "a11e253b-1264-4b5a-9b08-9cffc37a6ff1",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "9c2464a1-b8a3-482a-b5c9-9e689275b363",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "5c44c94a-fe2a-4de2-8bdf-5018268f1d9f",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "8e838aa6-263b-4c9e-837a-5cd691692c8d",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "da93f25f-4bfe-43ab-b2e0-9de34165f4f0",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    },
+    {
+      "claim_id": "af4e7226-e9fa-431f-bee3-72406e8e6ef3",
+      "result_id": "77a26e83-c242-450b-8952-4c1f72296c09"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c20d4b1f-0648-43ba-8212-5b7966b1ffe8",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "5e79e0db-37ad-4a18-8165-300132e829a4",
+      "peer_result_id": "3656dd0b-e3d9-4208-8e37-f124904afb32",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Strong agreement (90.9% claim overlap) on model's demonstration of structured parasite populations with constrained diversity. Both accept emergence of dominant repertoires and robustness under recombination.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "8c85b6b0-3350-4c2a-ba63-d4850001a3a6",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "2acb6200-3c96-444e-972c-e98a9b57dc50",
+      "peer_result_id": "783d031c-9967-41ad-9ccb-fd55567444f7",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "disagree",
+      "notes": "High claim overlap (78.6%) but different confidence levels. LLM cites small sample size and alternative explanations as limiting definitive conclusions. Peer reviewers explicitly accept that linkage disequilibrium findings support immune selection structuring var diversity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "174e3e5a-96c0-4e28-b13d-8fc72da69d3f",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02",
+      "peer_result_id": "77a26e83-c242-450b-8952-4c1f72296c09",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "73.3% claim overlap on model methodology and parameters. LLM finds model thoroughly described and well-justified. Peer reviewers find methods difficult to follow with unclear parameter definitions, requiring clarification for proper evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b52c6a86-af48-4fe4-9b0c-6141bd04d2f8",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3",
+      "peer_result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Good agreement (60% claim overlap) on transmission intensity effects. Both accept that transmission intensity affects number of dominant repertoires and their antigenic overlap, representing a key theoretical advance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "d1aa388a-78ce-4e69-b246-a0ceb7a03691",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "d9635781-315b-4faa-a0d9-b579f83012bb",
+      "peer_result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Agreement (45.5% claim overlap) on age-structured immunity and epidemiological signatures. Peer reviewers implicitly accept findings by requesting speculation about implications rather than challenging validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b1d17d68-64df-49d3-8064-1827cfcda7da",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "0d1dbe5d-747f-408b-bc0b-0f2acfdb90cd",
+      "peer_result_id": "82a24020-af34-4c98-ac81-c8f208d32d32",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "notes": "Agreement (36.4% claim overlap) that malaria control/elimination predictions are uncertain. Both recognize these as speculative extrapolations. Peer reviewers challenge whether insights convincingly explain elimination difficulty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "b5a56de3-90c7-4dc6-b0b0-bd15946e94e1",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02",
+      "peer_result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Limited claim overlap (16.1%) but both address core modeling approach. LLM evaluates broader set of model details (30 claims) while peer review focuses on fundamental question of immune selection causing strain organization (6 claims). Both supportive within their scope.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "4440e767-f19e-4dd4-afbf-cd6c6bca8552",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "5e79e0db-37ad-4a18-8165-300132e829a4",
+      "peer_result_id": "3c7e707d-2c5a-4bfd-ba93-44c3ed81be45",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (9.1%, only C31 on punctuated turnover). LLM accepts finding as robust. Peer reviewers accept observation but express uncertainty about mechanism, requesting clarification on role of sequential expression.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "a92a8e09-7e90-4d73-9027-bb0d4e8794f0",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "0de909c3-00d0-4cc5-806d-4339d55ef0f3",
+      "peer_result_id": "b64a058e-01ed-4fdd-959e-04fc165e15cc",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Small overlap (14.3%, C44 and C68 on immune dynamics). Both supportive but address different aspects: LLM focuses on transmission intensity effects, peer review on epidemiological signatures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "0def32fa-2182-4bc1-9368-b4cc7ba373cb",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "d9635781-315b-4faa-a0d9-b579f83012bb",
+      "peer_result_id": "9f6e6c4a-77d3-4013-8b4c-de4df02c26a8",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (10%, only C70). LLM supports age-structured immunity findings. Peer reviewers express uncertainty about model robustness under non-lifelong immunity assumptions, citing evidence of adult mortality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "d7b2f33c-1412-41b0-99fd-1334acbee4c5",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "5e79e0db-37ad-4a18-8165-300132e829a4",
+      "peer_result_id": "76b1c2bd-0c6f-4754-b8a7-83a8591e48b6",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (6.2%, only C4). Both supportive but address different scopes: LLM on population structure emergence, peer review on core modeling question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "a141970c-4200-4566-b6d1-574da20999bc",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "5e79e0db-37ad-4a18-8165-300132e829a4",
+      "peer_result_id": "f238c998-0962-4fa0-9a47-ab7798b4c297",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (5.9%, only C42 on recombination). Both supportive but focus on different aspects: LLM on robustness under recombination, peer review on transmission intensity effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    },
+    {
+      "id": "051d4562-c7b1-4dc2-a4f9-dbbf6a189d56",
+      "submission_id": "2f467b1c-504c-4f4d-abe3-1567ef8b1f73",
+      "llm_result_id": "b2601339-1bec-4dd5-ae51-0ac601c17b02",
+      "peer_result_id": "9f6e6c4a-77d3-4013-8b4c-de4df02c26a8",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap (3.2%, only C97 on immunity assumptions). LLM supports model with lifelong immunity. Peer reviewers question robustness to alternative immunity assumptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T21:00:13.402767Z"
+    }
+  ]
+}

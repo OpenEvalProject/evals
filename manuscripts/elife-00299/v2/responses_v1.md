@@ -18,7 +18,7 @@ Authors:
 
 ## Response text
 
-DOI: [10.7554/eLife.00299.025](https://doi.org/10.7554/eLife.00299.025)
+DOI: [10.7554/eLife.00299.015](https://doi.org/10.7554/eLife.00299.015)
 
 1) The eQTL discovery was performed in a cohort comprised of males only and the replication was performed in a cohort comprised of females only. What was the purpose of this design? The authors do not address the issue that discovery and replication are confounded by sex.
 

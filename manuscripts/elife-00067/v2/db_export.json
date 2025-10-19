@@ -1,0 +1,2421 @@
+{
+  "submission": {
+    "id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T20:29:57.156443Z",
+    "updated_at": "2025-10-16T20:29:57.156443Z"
+  },
+  "content": [
+    {
+      "id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "content_type": "manuscript",
+      "content_text": "# RecA filament sliding on DNA facilitates homology search\n\n## Authors\n\n- Kaushik Ragunathan<sup>1</sup>\n- Cheng Liu<sup>4</sup>\n- Taekjip Ha<sup>1</sup> †\n\n### Affiliations\n\n1. Center for Biophysics and Computational Biology University of Illinois at Urbana-Champaign Urbana United States\n2. Center for the Physics of Living Cells University of Illinois at Urbana-Champaign Urbana United States\n3. Institute for Genomic Biology University of Illinois at Urbana-Champaign Urbana United States\n4. Department of Physics University of Illinois at Urbana-Champaign Urbana United States\n5. Howard Hughes Medical Institute University of Illinois at Urbana-Champaign Urbana United States\n\n† Corresponding author\n\n## Abstract\n\n10.7554/eLife.00067.001 During homologous recombination, RecA forms a helical filament on a single stranded (ss) DNA that searches for a homologous double stranded (ds) DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex. Using single molecule fluorescence imaging tools with high spatiotemporal resolution we characterized the encounter complex between the RecA filament and dsDNA. We present evidence in support of the ‘sliding model’ wherein a RecA filament diffuses along a dsDNA track. We further show that homology can be detected during sliding. Sliding occurs with a diffusion coefficient of approximately 8000 bp 2 /s allowing the filament to sample several hundred base pairs before dissociation. Modeling suggests that sliding can accelerate homology search by as much as 200 fold. Homology recognition can occur for as few as 6 nt of complementary basepairs with the recognition efficiency increasing for higher complementarity. Our data represents the first example of a DNA bound multi-protein complex which can slide along another DNA to facilitate target search. DOI: http://dx.doi.org/10.7554/eLife.00067.001\n\n## Introduction\n\nThe ubiquitous presence of DNA damaging agents poses a constant threat to genome integrity and protein machineries are required to repair DNA damage. Homologous recombination is one of the pathways involved in double strand break repair (Cox et al., 2000). An important step in homologous recombination is the reciprocal exchange of basepairs between complementary DNA molecules during a reaction called strand exchange, which is catalyzed by RecA in E. coli. Homologs of RecA, Rad51 and Dmc1 in eukaryotes and RadA in archaea, carry out similar functions during DNA repair underscoring the central role of proteins catalyzing strand exchange across all forms of life (Bianco et al., 1998).\n\nThe strand exchange reaction involves three steps: (1) pre-synapsis, (2) synapsis, and (3) heteroduplex extension via branch migration. Pre-synapsis involves the assembly of RecA monomers on single stranded (ss) DNA in the presence of ATP with a stoichiometry of 3 nt per monomer (Di Capua et al., 1982; Dombroski et al., 1983). RecA forms a filament which stretches the ssDNA to a length of 1.5 times the length of B-form DNA (Stasiak et al., 1981; Dunn et al., 1982; Stasiak and Egelman, 1986). During synapsis, the RecA filament finds a homologous double stranded (ds) DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex product. Subsequently, branch migration mediates the extension of the heteroduplex product (Cox and Lehman, 1981).\n\nHomology search is the first step in synapsis and is arguably the most mysterious aspect of the strand exchange reaction (Barzel and Kupiec, 2008). A RecA filament has to rapidly and accurately find a homologous sequence in the presence of a vast excess of non-homologous dsDNA. The multivalent nature of the RecA filament enables it to sustain contact with a long dsDNA while allowing for frequent dissociation events that permits rapid sampling of different segments of the DNA, thus facilitating homology search (Forget and Kowalczykowski, 2012). Experiments involving the mechanical manipulation of the incoming dsDNA upon binding to the RecA filament identified structural intermediates which facilitate homology recognition and provided insight into mechanisms by which RecA can discriminate between homologous and non-homologous DNA sequences (Danilowicz et al., 2012; De Vlaminck et al., 2012; Peacock-Villada et al., 2012). However, random 3D collision between a RecA filament and the dsDNA even when aided by intersegmental transfer is unlikely to result in precise alignment of matching sequences. For this reason, RecA filament sliding on dsDNA, even over a short distance range of ten to hundreds of bp would significantly accelerate the search for homology. Although many proteins are now known to diffuse along the DNA via 1D sliding (Blainey et al., 2006; Wang et al., 2006; Gorman et al., 2007; Bonnet et al., 2008; Liu et al., 2008; Roy et al., 2009; Zhou et al., 2011) RecA filament diffusion on DNA has not been observed before and in fact an early study ruled out a role for long range (approximately several kb) 1D sliding during homology search (Adzuma, 1998). Here, we utilized the high spatio-temporal resolution of single molecule FRET (Ha et al., 1996) to examine the possibility of RecA filament sliding during homology search.\n\nUsing two and three color FRET measurements, we show that RecA filament slides along dsDNA, primarily mediated by electrostatic interactions. Furthermore, by using sequences with short stretches of homology, we could monitor repeated events of homology recognition and disengagement in real time without full dissociation of RecA filament from dsDNA. RecA-mediated homology search is the first example of a DNA bound multi protein complex which can slide on another DNA during target search process. It may also serve as a canonical example for other proteins (e.g., telomerase and Argonaute) which are bound to nucleic acid sequences that act as ‘guide’ strands conferring target site specificity.\n\n## Results\n\n## Dynamic interactions between RecA filament and non-homologous dsDNA\n\nFor short (<80 bp) homologous dsDNA substrates, homology search is completed rapidly (within 30 ms) once the dsDNA encounters a RecA filament (Ragunathan et al., 2011). Therefore, we used a non-homologous dsDNA to avoid stable product formation and monitor RecA filament in the act of homology search.\n\nWe immobilized a partial dsDNA with a 5′ 39 nt ssDNA tail on a passivated quartz surface via biotin–neutravidin interaction (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic of the single molecule FRET based assay to detect interactions between RecA filament and non-homologous dsDNA. After RecA filament formation on ssDNA (Lfilament = 39 nt) labeled with an acceptor (red), a non-homologous dsDNA (LdsDNA = 39 bp) labeled with a donor was added. DNA docking results in appearance of donor (green) signal with FRET reporting on the changes in distance. (B) Single molecule time traces showing donor (green) and acceptor (red) intensities exhibits rapid FRET fluctuations with multiple binding and dissociation events within a single time trace (top panel). Corresponding FRET time traces (blue) are shown in the bottom panel (C) Histogram of the duration of the bound state for non-homologous dsDNA () and a single exponential decay fit. (Δtnon-homologousdsDNAD) Same as in (B), except that the Mg+2 concentration in solution was 1 mM. (E) Same as in (C), with 1 mM Mg+2 in solution. (F) Plot of Na+ concentration vs dwell time of dsDNA interaction with a RecA filament. Mg+2 concentrations in all cases was maintained at 1 mM. Error bars are standard errors of the mean obtained from single exponential decay fitting of dwell times. Linear fitting was used as a guide.DOI: http://dx.doi.org/10.7554/eLife.00067.003\n\n![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig1-figsupp1-v1.jpg)\n\n**Figure 1—figure supplement 1.:** (A) A ssDNA (Lfilament = 39 nt) with an acceptor fluorophore (Cy5) at the junction was immobilized. After RecA filament formation in the presence of ATP as a co-factor, non-homologous dsDNA with a donor fluorophore (Cy3) was added along with free RecA protein (1 μM) and ATP (1 mM) to prevent filament dissociation. The Mg+2 concentration in solution was maintained at 10 mM. (B) Single molecule time trace showing donor (green) and acceptor (red) intensities (top panel) and the corresponding FRET values (bottom panel). (C) Histogram of the dwell time of DNA docking to the RecA filament and a single exponential decay fit.DOI: http://dx.doi.org/10.7554/eLife.00067.004\n\n![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig1-figsupp2-v1.jpg)\n\n**Figure 1—figure supplement 2.:** Lfilament (nt) and dsDNA length, LdsDNA (bp).(A) Off-time of non-homologous dsDNA binding vs ssDNA length. RecA filament formation was initiated on ssDNA of different lengths followed by addition of non-homologous dsDNA (LdsDNA = 39 bp). Error bars are standard errors obtained from single exponential decay fitting. (B) Off time of non-homologous dsDNA vs dsDNA length. RecA filament formation was initiated on ssDNA (Lfilament = 39 nt) followed by addition of non-homologous dsDNA (LdsDNA = 31, 39, 45 and 60 bp). Error bars are standard errors obtained from single exponential decay fitting. Dwell time for LdsDNA = 60 bp represents the mean lifetime of all binding events. Exponential fit was used as a guide.DOI: http://dx.doi.org/10.7554/eLife.00067.005\n\n![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig1-figsupp3-v1.jpg)\n\n**Figure 1—figure supplement 3.:** (A) A ssDNA (Lfilament = 39 nt) with an acceptor fluorophore (Cy5) at the junction was immobilized. After filament formation using a C terminal deletion mutant of RecA in the presence of ATPγS as a co-factor, non-homologous dsDNA with a donor fluorophore (Cy3) was added. (B) Histogram of the dwell time of DNA docking to the RecA filament and a single exponential decay fit.DOI: http://dx.doi.org/10.7554/eLife.00067.006\n\nDocking of non-homologous dsDNA to the RecA filament is detected as an abrupt appearance of fluorescence signal from the background level. After docking, we observed large and rapid fluctuations in FRET detected as anti-correlated changes of donor and acceptor intensities. The FRET fluctuations are indicative of extensive distance changes between the donor on the dsDNA and the acceptor on the RecA/ssDNA filament. Single molecule time traces show multiple dsDNA binding and dissociation events to the same filament because the observed interactions are transient without forming a stable product (Figure 1B). The lifetime of the binding events is exponentially distributed with an average lifetime of 3.5 s (Figure 1C). Filaments formed with ATP displayed similar FRET fluctuations upon docking of non-homologous dsDNA and exhibit comparable dissociation times (Figure 1—figure supplement 1A–C). Hence, the fluctuations observed here do not require ATP hydrolysis. Using different lengths for the ssDNA tail (Lfilament = 50 or 99 nt) did not significantly change the lifetime of the encounter complex (Figure 1—figure supplement 2A). In contrast, increasing dsDNA length increased the lifetime presumably due to a larger number of contacts between the dsDNA and the RecA filament (Figure 1—figure supplement 2B).\n\nWe determined the lifetime of the transient encounter complex as a function of magnesium or sodium concentrations. Rapid FRET fluctuations persisted under all the solution conditions tested while the lifetime of the complex decreased with increasing magnesium or sodium concentrations suggesting that the interaction is electrostatic in nature and can be weakened by increased screening (Figure 1D–F). Indeed, eliminating negative charge from the RecA C-terminus (Lusetti et al., 2003) by deletion of acidic residues resulted in an increased lifetime of dsDNA bound to the RecA filament (Figure 1—figure supplement 3).\n\n## FRET fluctuations are due to sliding of RecA filament\n\nWe considered two possible explanations for the large FRET fluctuations observed upon docking of dsDNA to the RecA filament. The first involves limited unwinding of the dsDNA (Bianchi et al., 1985) by the RecA filament resulting in separation of the duplex ends. Repeated melting and annealing transitions at the labeled end of the dsDNA could in principle result in FRET fluctuations. We tested this possibility using a dsDNA (LdsDNA = 39 bp) labeled at one duplex end (donor and acceptor fluorophores on the two opposing strands) so that local melting would cause a FRET decrease and vice versa. When the dsDNA docks to an unlabeled RecA filament immobilized on the surface, we observed stable high FRET (Figure 2—figure supplement 1) suggesting that separation of the duplex ends is not the source of FRET fluctuations described in Figure 1.\n\nThe second explanation involves 1D sliding (or diffusion) of the RecA filament along dsDNA. In order to test the sliding model, we examined whether changes in the length of the RecA filament would affect the time scale of FRET fluctuations since such a change would modulate the encounter frequency between the donor and the acceptor fluorophores. In contrast, conformational changes either within the dsDNA or the protein would presumably exhibit the same time scale of FRET fluctuations independent of RecA filament length.\n\nShorter RecA filaments (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig2-v1.jpg)\n\n**Figure 2.:** (A) Single molecule traces showing donor (green) and acceptor (red) intensities (top panel) upon docking of non-homologous dsDNA (LdsDNA = 39 bp) to a RecA filament assembled on a ssDNA overhang, Lfilament = 21 nt. Corresponding FRET time traces (blue) are shown in the bottom panel. (B) Same as (A), except that the RecA filament is assembled on a ssDNA, Lfilament = 99 nt. (C) Average cross correlation time, vs Lfilament. Error bars are standard errors of the mean determined from three independent datasets. (D) FRET efficiency (E) histograms of single molecule traces for individual docking events of non-homologous dsDNA to RecA filaments assembled on ssDNA, Lfilament = 21 nt, 39 nt and 99 nt.DOI: http://dx.doi.org/10.7554/eLife.00067.007\n\n![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig2-figsupp1-v1.jpg)\n\n**Figure 2—figure supplement 1.:** (A) A ssDNA (Lfilament = 39 nt) with an no fluorophore was immobilized. After RecA filament formation in the presence of ATPγS as a co-factor, non-homologous dsDNA labeled with both a donor (Cy3) and acceptor (Cy5) fluorophores was added. The labeling scheme was such that the appearance of high FRET indicates the intact nature of the dsDNA. (B) (a) and (b) Single molecule time trace showing donor (green) and acceptor (red) intensities (top panel) and the corresponding FRET values (bottom panel). Arrows represent the time at which non-homologous dsDNA docking occurs. FRET remains high (approximately 0.9) until photobleaching of the acceptor.DOI: http://dx.doi.org/10.7554/eLife.00067.008\n\n![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig2-figsupp2-v1.jpg)\n\n**Figure 2—figure supplement 2.:** (A) Cross correlation curves and corresponding single exponential fits for the data as a function of R ecA filament length of the non-homologous dsDNA interaction with RecA filament changes as a function of filament length. (B) Monte Carlo simulations of RecA filament sliding were carried out as described in the ‘Materials and methods’ (□ experimental data same as Figure 2C), simulation with diffusion coefficient 0.9 × 10−3 μm2/s (○), simulation with diffusion coefficient 9 × 10−3 μm2/s (Δ) and simulation with diffusion coefficient 0.09 × 10−3 μm2/s (◊).DOI: http://dx.doi.org/10.7554/eLife.00067.009\n\n![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig2-figsupp3-v1.jpg)\n\n**Figure 2—figure supplement 3.:** (A) Cross correlation time vs changes in sodium and magnesium concentrations. (B) Cross correlation time vs change in co-factor. The concentration of ATP and ATPγS in solution is 1 mM. Free RecA (1 μM) was maintained in solution for experiments involving the use of ATP.DOI: http://dx.doi.org/10.7554/eLife.00067.010\n\n## Three color experiments support the sliding model\n\nTo further test the 1D sliding model, we designed a three-color FRET assay. Here, the immobilized RecA filament is labeled with two different acceptor fluorophores, Cy5 at the ssDNA/dsDNA junction and Cy7 in the middle of the ssDNA embedded within the RecA filament (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig3-v1.jpg)\n\n**Figure 3.:** (A) A schematic of the single molecule three color FRET assay to measure RecA filament sliding. ssDNA (Lfilament = 99 nt) labeled with two acceptor fluorophores (Cy5-red and Cy7-black) with a separation of 33 nt between the fluorophores, was immobilized on the surface. Upon docking of non-homologous donor (Cy3) labeled dsDNA to the pre-formed RecA filament formation, sliding predicts anticorrelated emissions between the two acceptors. (B) Single molecule time traces of Cy3 (green), Cy5 (red) and Cy7 (black) intensities (top panel). Corresponding FRET time traces of FRET between Cy3 and Cy5 (ECy3-Cy5-blue) and FRET between Cy3 and Cy7 (ECy3-Cy7-grey). (C) Normalized cross correlation plot of ECy3-Cy5 and ECy3-Cy7 averaged over 30 molecules and a single exponential fit of the data is overlaid (black). (D). Scatter plot of ECy3-Cy5 and ECy3-Cy7 for 30 molecules showing unique high FRET regions along both axes.DOI: http://dx.doi.org/10.7554/eLife.00067.011\n\n## Homology detection during sliding\n\nCan the sliding of RecA filament along dsDNA be a physiologically relevant activity, that is, can the RecA filament recognize a homologous sequence during sliding? To answer this question, we embedded two repeats of an identical sequence at positions HS1 and HS2 within an otherwise non-homologous ssDNA (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig4-v1.jpg)\n\n**Figure 4.:** (A) A schematic of the single molecule FRET based assay to detect homology recognition between RecA filament and dsDNA. After RecA filament formation on ssDNA (Lfilament = 50 nt) labeled with an acceptor (red), a dsDNA (LdsDNA = 39 bp) labeled with a donor was added. Recognition of homology site 1 (HS1) or homology site 2 (HS2) results in the appearance distinct FRET states whose values depend on their relative distances from the acceptor. Docking at a location along the RecA filament outside a FRET sensitive regime results in low FRET (NH). (B) Single molecule time traces showing FRET for an immobilized ssDNA with two identical 5 nt homology sequences at HS1 and HS2 in a poly T sequence background. (C) Same as previous, with two identical 6 nt homology sequences at HS1 and HS2 in a poly T sequence background exhibits transitions between distinct FRET states. Idealized time trajectory obtained from HMM analysis is overlaid (black). (D) Same as previous, with two identical 7 nt homology sequences at HS1 and HS2 in a poly T sequence background. Idealized time trajectory obtained from HMM analysis is overlaid (black). (E) Normalized histograms of single molecule time traces exhibiting FRET for an immobilized ssDNA with two identical 5 nt homology sequences (HS1 and HS2). (F) Same as previous, with two identical 6 nt homology sequences (HS1 and HS2). (G) Same as previous, with two identical 7 nt homology sequences (HS1 and HS2). (H) Same as previous, with a single 6 nt homology site (HS2) at a position distal to the acceptor resulting in the appearance of a distinct mid FRET state. (I) Same as previous, with a single 6 nt homology site (HS1) in close proximity to the acceptor resulting in the appearance of a distinct high FRET state. (J) Transition density plot (TDP) of all FRET transitions for immobilized ssDNA with two 6 nt repeat sequences (HS1 and HS2) from 236 molecules exhibiting 13,020 transitions. (K) Transition density plot (TDP) of all FRET transitions for immobilized ssDNA with two 7 nt repeat sequences (HS1 and HS2) from 191 molecules exhibiting 3,819 transitions. (L) Forward and reverse transition rates between HS1, HS2 and NH states for Lh = 6 nt and 7 nt. Error bars denote standard errors of the mean for three measurements.DOI: http://dx.doi.org/10.7554/eLife.00067.012\n\n![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig4-figsupp1-v1.jpg)\n\n**Figure 4—figure supplement 1.:** Lfilament = 50 nt) coated by RecA.(A) A poly T ssDNA (Lfilament = 50 nt) with an acceptor fluorophore (Cy5) at the junction was immobilized. After RecA filament formation in the presence of ATPγS as a co-factor, non-homologous dsDNA with a donor fluorophore (Cy3) was added. Single molecule time trace showing donor (green) and acceptor (red) intensities (top panel) and the corresponding FRET values (bottom panel). (B) Histogram of the all single molecule time traces exhibiting FRET displays a broad distribution.DOI: http://dx.doi.org/10.7554/eLife.00067.013\n\n![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig4-figsupp2-v1.jpg)\n\n**Figure 4—figure supplement 2.:** HS1 and HS2) in a poly T sequence background.(A) Single molecule FRET time trace obtained following dsDNA docking to a RecA filament formed on a DNA strand containing two identical homology sites HS1 and HS2 with 8 nt homology at each site. Transitions between homology sites is rare due to stable binding of the target dsDNA to each homology site. (B) Histogram of single molecule time traces exhibiting FRET shows presence of distinct peaks which correspond to homology recognition and basepairing at HS1 and HS2.DOI: http://dx.doi.org/10.7554/eLife.00067.014\n\n![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig4-figsupp3-v1.jpg)\n\n**Figure 4—figure supplement 3.:** Rate enhancement due to sliding vs probability of binding (pbind) to a target site for different values of the sliding distance (s). The rate enhancement of target search due to sliding is given by the ratio of the rate of association of RecA filament with the target site in the presence of sliding to the rate of association with the target site in the absence of sliding (D = 0). In this hypothetical model, RecA filaments can bind non-specifically to DNA but do not slide.pkaslidekaD=0=1+2s1+2s(1−pbind)/(1+2s2pbind)bind is the probability of binding with the target site in each nonspecific encounter and is dependent on the microscopic rate constant associated with the recognition of a target site.  and Kaslide are the association rates with and without sliding respectively.KaD=0DOI: http://dx.doi.org/10.7554/eLife.00067.015\n\n![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/00067/elife-00067-fig4-figsupp4-v1.jpg)\n\n**Figure 4—figure supplement 4.:** To test if the dsDNA may flip its orientation relative to the RecA filament during homology search, we moved the donor fluorophore to the end opposite to the labeling position used for the experiments shown in Figure 4. Single molecule FRET time traces were obtained following dsDNA docking to a RecA filament formed on a DNA strand containing two identical homology sites with 8 nt homology at each site. (A) Orange highlight denotes the DNA segment which is complementary to HS1 and HS2. Homology recognition positions the unlabeled end of the dsDNA in close proximity to the acceptor dye resulting in stable low FRET. Time trace of fluorescence intensities (top panel) and corresponding FRET values (bottom panel) are shown. A pulse of red illumination (three frames, time resolution = 30 ms) with no green illumination was applied in order to verify the presence of a fluorescently active acceptor. Pulses of red illumination are indicated as red shaded portions in the single molecule time trace. (B) Binding in the opposite orientation results in lack of homology recognition leading to rapid FRET fluctuations which are not interrupted by stable low FRET states. If flipping was possible, homology recognition at the unlabeled end would result in the low FRET states interspersed with rapid FRET fluctuations. (C) Histogram of all single molecule time traces exhibiting FRET displays a broad distribution. (D) A poly T ssDNA (Lfilament = 50 nt) with an acceptor fluorophore (Cy5) at the junction was immobilized. Non-homologous dsDNA was labeled at the 5′end of the opposite strand. Single molecule FRET time exhibits rapid FRET fluctuations due to lack of homology recognition. (E) Histogram of single molecule time traces exhibiting FRET displays a broad distribution. The similarity in the time traces and FRET histograms shown in (B and C) and (D and E) suggest that the rapid FRET fluctuations with a broad distribution observed are due to dsDNA sliding on RecA filament without being perturbed by homology recognition events. Given that flipping does not occur, we conclude that a dsDNA that binds to a RecA filament in the wrong orientation cannot establish the correct orientation without full dissociation and rebinding.DOI: http://dx.doi.org/10.7554/eLife.00067.016\n\nWe confirmed that dsDNA docking to a RecA filament formed on a ssDNA homopolymer sequence (poly-T sequence, Lfilament = 50 nt) preserves the large and rapid FRET fluctuations (Figure 4—figure supplement 1 and Figure 2B). We then introduced two identical sequences of length, Lh = 5 nt, at HS1 and HS2 positions which are complementary to a 5 bp sequence within the target dsDNA (LdsDNA = 39 bp). Binding of the dsDNA to the RecA filament formed on the ssDNA with the two 5 nt repeats displayed rapid FRET fluctuations across a broad range of FRET values (Figure 4B,E) similar to that observed using a poly-T DNA sequence (Figure 4—figure supplement 1). In contrast, when we increased the length of homology at HS1 and HS2 by a single nucleotide to Lh = 6 nt, single molecule time traces displayed transitions between discrete FRET states (Figure 4C). The same trend was observed upon further increasing the homology length to Lh = 7 nt (Figure 4D). The resulting FRET histograms for 6 and 7 nt homology lengths showed distinct FRET peaks (Figure 4F,G).\n\nIn order to confirm that the observed FRET peaks arise from base pairing and recognition at specific homology sites, we analyzed different ssDNA sequences containing only one of the two 6 nt homology sites (HS1 or HS2) and obtained a distinct FRET peak at either approximately 0.9 or 0.5, respectively (Figure 4H,I). Thus, we assigned the highest FRET state (approximately 0.9) to homology recognition and base pairing at HS1 and the mid FRET state (approximately 0.5) to homology recognition and base pairing at HS2. The lowest FRET state, E ∼ 0.1, is likely to correspond to dsDNA sliding outside the boundary of HS1 and HS2 in a FRET insensitive regime. Given that this location lacks stable base pairing interactions, we referred to the low FRET state as the non-homologous state (NH). Although the gap between HS1 and HS2 is 5 nt, it is noteworthy that the total distance traversed by dsDNA to exhibit complete basepairing is (Lh + 5) nt. Thus, for the smallest Lh of 6 nt, this translates to a distance of approximately 50 Ǻ (11 nt × 3.4 Ǻ × 1.5). Given the rapid movements of the dsDNA between adjacent homology sites and the fact that both the dsDNA and RecA filament are stiff at the length scales of our experiments, we cannot think of mechanisms other than sliding to explain the observed transitions. We used a statistical approach based on Hidden Markov Model (HMM) analysis to make unbiased assignments of the various FRET states present within each single molecule time trace. The FRET transitions obtained from HMM analysis were then plotted in the form of a transition density plot (TDP) which is a 2D histogram reflecting the frequency of transitions between the various FRET states. For Lh = 6 nt, the TDP obtained from 236 molecules exhibiting 13,020 transitions displays three distinct FRET states, E ∼ 0.1, 0.5 and 0.9 (Figure 4J). Furthermore, the HMM/TDP analysis gave the transition rates and the number of transitions between the different FRET states. The rate of departing HS1 or HS2 was threefold lower than that of leaving NH, showing that even 6 bp homology can significantly stabilize joint molecule formation (Figure 4L). Similarly, we fitted the data for Lh = 7 nt using HMM analysis (191 molecules, 3819 transitions) and extracted the transition rates and number of transitions from the resulting TDP (Figure 4K). As expected, we observed a slower rate of leaving HS1 and HS2 for Lh = 7 nt compared to Lh = 6 nt (Figure 4L). Also, the dissociation rate of dsDNA bound to HS1 was higher than that of dsDNA bound to HS2 possibly because HS1 is located at the filament end where the terminal RecA monomer at the ssDNA–dsDNA junction binds with altered kinetics (Joo et al., 2006) as opposed to HS2 which is embedded within the RecA filament and benefits from complementary basepairing with the homology site and stabilizing interactions with neighboring RecA monomers.\n\nInterestingly, transitions did not occur solely between neighboring sites (NH<->HS2 and HS1<->HS2 type transitions) but also involved transitions of the type NH->HS1 indicating that the RecA filament might overlook a region of homology during the sliding process. Homology recognition and base pairing of dsDNA at either HS1 or HS2 during sliding is a stochastic process. For a dsDNA initially bound to a non-homologous site (NH), the efficiency with which the first homology site the dsDNA encounters, HS2, is recognized before the more distant homology site, HS1, is recognized is given by,ErecognitionNH->HS2=NNH->HS2(NNH->HS2+NNH->HS1),where NNH->HS1 and NNH->HS2 denote the number of transitions from NH->HS1 and NH->HS2 respectively. For 6 nt homology (Lh = 6 nt) the efficiency of homology site recognition, ErecognitionNH->HS2 is approximately 55%. This efficiency increased for 7 nt homology (ErecognitionNH->HS2 for Lh = 7 nt is approximately 77%). Cumulatively, our data suggest that the efficiency of homology recognition by the RecA filament increases with the number of homologous nucleotides available for basepairing. We could not perform a similar analysis for Lh = 8 nt since dsDNA bound to HS1 and HS2 positions in this case exhibited stable FRET states and transitions between them were rare (Figure 4—figure supplement 2).\n\n## Discussion\n\nOur study establishes RecA filament sliding as a possible mechanism to assist homology search during strand exchange reaction. Until now, there has been no example of a multi-protein complex bound to DNA such as the RecA filament which is capable of sliding along a second DNA strand to locate a matching sequence of bases. We estimated the diffusion constant, Dslide, for RecA filament sliding to be approximately 0.9 × 10−3 μm2/s or 7700 bp2/s. Because the lifetime of heterologous synapses ranges from 0.5 to 10 s (Figure 1—figure supplement 2B) (Mani et al., 2009; Forget and Kowalczykowski, 2012), we estimate that dsDNA would diffuse over a length of 60–300 bp during each encounter with a RecA filament prior to its dissociation.\n\nUsing the estimated diffusion coefficient and sliding distance, we calculated the effective rate enhancement of target search due to sliding which is given by the ratio of the rate of association of RecA filament with the target site in the presence of sliding to the rate of association with the target site in the absence of sliding (D = 0) (Hammar et al., 2012). In this hypothetical model, RecA filaments can bind non-specifically to DNA but do not slide (Figure 4—figure supplement 3). Though, we do not know the exact microscopic rate constants which determine the binding probability of the RecA filament to the target site (pbind), we can estimate that even for a recognition probability as low as approximately 1%, sliding leads to a rate enhancement in homology search by approximately 200-fold. If no sliding is allowed and homology must be recognized via fortuitous 3D contact that aligns the dsDNA and filament in perfect registry, homology recognition would be about two orders of magnitude slower. Therefore, 1D sliding combined with intersegmental transfer proposed by Forget and Kowalcyzkowski (2012) can dramatically accelerate homology search.\n\nWe cannot rule out the possibility that changes in angle between the dsDNA and the RecA filament (off-axis motions) might affect the observed FRET changes. Incorporating such effects of off-axis motions into the model would increase the time scale of linear sliding but the effect will be small because control experiments such as the DNA length dependence (Figure 2C) showed that on-axis motion is the dominant source of FRET fluctuations. Although our experimental scheme cannot probe for small and dynamic off-axis motions between the RecA filament and dsDNA, we can at least rule out the extreme possibility of ‘dsDNA flipping’ in which case the dsDNA may undergo a 180° change in orientation while remaining bound to the RecA filament (Figure 4—figure supplement 4). Therefore, a dsDNA that binds to a RecA filament in the wrong orientation cannot establish the correct orientation required for homology recognition and basepairing without full dissociation and rebinding.\n\nWe also demonstrated that homology recognition and base pairing processes can occur during sliding. Our results showed that as few as 6 nt of complementary base pairs are sufficient to act as the unit of homology recognition for RecA mediated homology search. It is noteworthy that recognition of a homology site is a stochastic process and the efficiency of homology recognition by the RecA filament depends on the length of homology which is encountered at a particular site. Furthermore, we show that adding even a single nucleotide to the minimum recognition unit of 6 nt improves recognition efficiency by approximately 1.5-fold.\n\nProteins mediate target search reactions by a combination of 1D sliding and 3D diffusion based processes (Gorman and Greene, 2008). While intersegmental transfer serves to bring non-contiguous segments of dsDNA close to each other, 1D sliding during homology search could help RecA reorganize the initial synaptic complex in cis without the need for a RecA filament to fully dissociate and rebind to a nearby homology site located within a short distance (up to few hundred base pairs). Given the ability of the RecA filament to slide between nearby homology sites (Figure 4), sliding could serve as a mechanism to rapidly scan neighboring sequences for the existence of an optimal seed sequence from which base pair propagation and heteroduplex extension reactions can proceed. An earlier report demonstrated sliding of Rad51 oligomers (not a Rad51 filament bound to ssDNA) without any clear functional role attributed to the observed sliding activity (Graneli et al., 2006). Because of significant structural and functional similarities between RecA and Rad51 (Conway et al., 2004), it is likely that sliding might also play a role in homology search mediated by Rad51.\n\n## Materials and methods\n\n## DNA preparation\n\nDNA oligos used in our measurements were purchased from Integrated DNA Technologies (IDT, Coralville, IA). The oligos were suspended in T50 buffer (10 mM Tris-Cl, 50 mM NaCl, pH 8.0). The DNA sequences used in our measurements are specified in Supplementary file 1. Double strand DNA was prepared by mixing complementary DNA molecules and heating to 90°C followed by slow cooling to room temperature over a period of 2 hr. dsDNA was purified from free ssDNA using a 12% native PAGE gel to ensure the absence of free ssDNA in our dsDNA preparations. The partial duplex DNA molecules for immobilization were prepared by annealing with the biotin_DNA sequence. All DNA molecules were labeled at the terminal ends (5′ or 3′) with Cy3 or Cy5 (labeling performed by IDT) as specified in the experimental scheme. For internally labeled DNA oligos, Cy3 N-hydroxysuccinimido (NHS) ester and Cy5 NHS ester (GE Healthcare) were internally labeled to a dT of ssDNA modified via a C6 amino linker (IDT, Coralville, IA).\n\n## Single molecule RecA filament and DNA binding assay\n\nThe quartz (Finkenbeiner, Waltham, MA) surface is passivated with Polyethylene glycol (m-PEG-5000; Laysan Bio Inc.) and 1–2% biotinylated PEG (biotin-PEG-5000; Laysan Bio Inc., Arab, AL). The coating of the quartz imaging surface with PEG (Roy et al., 2008) eliminated effects due to non-specific binding of proteins. Acceptor labeled reference ssDNA molecules were immobilized on the passivated surface by means of a biotin–neutravidin interaction. After washing away excess of acceptor molecules, the reference ssDNA was incubated with 1 μM RecA (Epicenter biotechnologies, Madison, WI) and 1 mM ATPγS (EMD Calbiochem, Billerica, MA) in an incubation buffer containing 25 mM Tris Acetate pH 7.5, 100 mM Sodium Acetate and 1 mM Magnesium Acetate. In some cases, 1 mM ATP was used instead of ATPγS. RecA ΔC17 protein was a generous gift from Dr. M. M. Cox (University of Wisconsin). After incubation for 15 min to ensure complete filament formation on ssDNA (Lfilament) molecules, the buffer in the chamber was exchanged with a solution of non-homologous dsDNA (1 nM) and 1 mM ATPγS in a strand exchange buffer (25 mM Tris Acetate pH 7.5, 100 mM Sodium Acetate, 10 mM or 1 mM Magnesium Acetate) supplemented with an oxygen scavenging system (1 mg/mL glucose oxidase, 0.8% glucose, 0.04 mg/mL catalase and 3 mM Trolox). Imaging was initiated as soon as the buffer exchange was complete. All measurements were carried out at room temperature (23 ± 1°C).\n\n## Single molecule data acquisition\n\nExcitation of the donor, Cy3, was carried out using a Nd:YAG laser (532 nm, 75 mW; Crystalaser, Reno, NV) by means of prism type total internal reflection microscopy (Roy et al., 2008). After filtering the scattered excitation light using a 550 nm long pass filter, fluorescence emission from the donor and the acceptor was refocused onto an EMCCD camera (Andor, UK). The Cy3 and Cy5 emissions were split into two channels using a 630 nm dichroic mirror. In the case of three color measurements involving Cy3, Cy5 and Cy7, an additional dichroic mirror (730 nm) was used to split the emission across three emission channels. The time resolution for all single molecule strand exchange experiments was 30 ms unless otherwise specified. The data acquisition was carried out using home built software written in Visual C++. The movies obtained with the CCD were analyzed first using IDL and the intensities of the fluorophores and the time traces was visualized using customized MATLAB programs (Joo and Ha, 2008; Roy et al., 2008).\n\n## Single molecule data analysis\n\nThe dwell time analysis was carried out by a home-written MATLAB program. The background intensity in the donor and acceptor channel was subtracted followed by leakage subtraction of the donor signal to the acceptor channel. Details regarding the acquisition and analysis are based on previously published methods. After visually inspecting the acquired data, we manually selected the relevant time periods for analysis and used Origin 8.0 to plot the data. Cross-correlation analysis was performed as previously described (Kim et al., 2002) by calculating cross-correlation functions for donor and acceptor time traces for a given molecule. Fitting the averaged cross-correlation functions to a single exponential function allows to estimate the average cross correlation time for each measurement. Three color data analysis was performed as previously described (Hohng et al., 2004; Roy et al., 2009). Following leakage correction for Cy3, Cy5 and Cy7 intensities, we additionally corrected Cy7 intensity by utilizing a gamma factor (to correct for differences in optics and detection efficiency).γ=ΔICy5ΔICy7ΔICy5 and ΔICy7 represent the ratio of the change in intensity in Cy5 and Cy7 channels which is calculated by following the change in intensity in the two channels following Cy7 photobleaching. ECy3->Cy5, the FRET efficiency corresponding to Cy3–Cy5 interaction and ECy3->Cy7 corresponding to the Cy3-Cy7 interaction was calculated asED-A,i=IA,iΣIA,i+ID,where ID and IA are the donor and acceptor intensities respectively. The suffix, i, denotes the two acceptors Cy5 and Cy7 utilized in this measurement. We carefully designed the three color measurement to ensure that the two acceptors Cy5 and Cy7 spaced far apart from each other. such that ECy5->Cy7 ∼ 0 and the presence of a stable RecA filament (by using ATPγS) results in the spacing between Cy5 and Cy7 remaining unchanged during the course of the measurement. Software for acquiring and analyzing single molecule FRET data is freely available for download from https://physics.illinois.edu/cplc/software.\n\n## Monte Carlo simulation for calibration\n\nMonte Carlo (MC) simulation of the free diffusion along dsDNA was written in MATLAB. Since the persistence length of RecA-ssDNA was reported to be approximately 784 nm (approximately 2300 bp) (Hegner et al., 1999), the RecA-DNA filaments in our experiments can be simply treated as a rod in one dimension. Equal probabilities of moving forward or backward were generated by the program. The step size of the MC simulation was set to be small enough (0.1 or 0.01 bp, in our case) to mimic continuous sliding of the RecA filament along dsDNA. The distance between the donor and acceptor fluorophores and their corresponding FRET value was calculated after each step. Since RecA binding to ssDNA results in an average rise between successive nucleotides of d = 5.1 Å/bp, L could be expressed byL=r2+(d×|x−xo|)2,where x and xo respectively represent the position of non-homologous dsDNA and the static acceptor along the dsDNA. Total intensity of each data bin, 30 ms, is set to be 500 a.u., matching our typical data intensity in TIRF experiments. Gaussian white noise with a peak intensity of 40 a.u. is applied. Finally, same cross correlation (CC) analysis as described before was applied to the MC simulated traces for calibration purpose (τ, dwell time of CC analysis; D, diffusion coefficient).\n",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xiaowei Zhuang, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00067.018](https://doi.org/10.7554/eLife.00067.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled “RecA filament sliding on DNA facilitates Homology search” for consideration at eLife. Your article has been evaluated by a Senior Editor and two reviewers, one of whom is a member of eLife's Board of Reviewing Editors. We are pleased to invite you to submit a revised manuscript, which addresses the comments from the reviewers.\n\nBoth reviewers find your work of significant interest and high quality. The results represent a significant advance of the current understanding of homology search during recombination and are suitable for publication in eLife. The following two major comments need to be addressed during revision:\n\n1) All data interpretation and analysis are based on the notion that the RecA-ssDNA filament and the duplex DNA act as two stiff, coaxial rods, and that all relative motion involves linear displacement (sliding) of these two rods relative to one another. This interpretation ignores the possibility of off-axis motion (swinging or other fluctuations), which may be relevant to homology search. While the reviewers find the evidence for sliding, especially data shown in Figures 2 and 3, strong, they think that potential contributions from the off-axis motion, and how they may affect data interpretations and simulations, should be discussed. The authors should discuss this effect in the revised manuscript and, if necessary, provide additional data or analysis to support their arguments. The assay shown in Figure 4 may help assess off-axis motion. In this assay, one expects ∼50% of the binding events to occur in the correct orientation that permits recognition of HS1/HS2, and the remaining 50% to occur with the duplex DNA in the incorrect orientation, which may not lead to recognition of HS1/HS2. A statistical analysis of the fractions may provide clues for whether reorientation or off-axis motion between the duplex DNA and RecA-ssDNA filament occurs. The authors may also find a modification of the Figure 4 assay helpful, namely change the sequence of the HS2 site, such that it would be complementary to a sequence on the opposing strand of the incoming duplex, and then test whether recognition still occurs for both HS1 and HS2 sites or only one of them in a single binding event.\n\n2. The authors suggest that the transitions between the HS1 and HS2 sites observed in Figure 4 are due to sliding. Indeed, the scenario that the unwound ssDNA first detach from the HS1 site, re-anneal with the complementary strand, slide along the RecA filament and then bind to the HS2 site is a highly likely one. However, give the relatively short distance between the HS1 and HS2 sites (5 nucleotides in between), is it possible that the ssDNA segment can transition between the two homology sites through a different mechanism? The authors should discuss whether the 5-nucleotide distance is sufficiently long to conclude that transitions between the two sites are due to sliding, and if necessary, provide additional evidence.\n",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2de4e992-c148-410a-a9d5-b9abcd7f1d5f",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C1",
+      "claim": "RecA forms a helical filament on single stranded DNA during homologous recombination",
+      "claim_type": "EXPLICIT",
+      "source_text": "During homologous recombination, RecA forms a helical filament on a single stranded (ss) DNA that searches for a homologous double stranded (ds) DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established scientific knowledge about RecA function in homologous recombination.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d89f759e-d7bd-4bb8-8771-a134720b43bd",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C2",
+      "claim": "RecA filament searches for homologous double stranded DNA",
+      "claim_type": "EXPLICIT",
+      "source_text": "During homologous recombination, RecA forms a helical filament on a single stranded (ss) DNA that searches for a homologous double stranded (ds) DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established function of RecA filaments in homology search.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "6c77005a-daf7-44dd-91e3-1f9a7e409b34",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C3",
+      "claim": "RecA catalyzes the exchange of complementary base pairs to form a new heteroduplex",
+      "claim_type": "EXPLICIT",
+      "source_text": "During homologous recombination, RecA forms a helical filament on a single stranded (ss) DNA that searches for a homologous double stranded (ds) DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about RecA's catalytic activity in strand exchange.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "319dff1f-d77c-4b1c-897a-0e5271ad6722",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C4",
+      "claim": "RecA filament diffuses along dsDNA track during homology search",
+      "claim_type": "EXPLICIT",
+      "source_text": "We present evidence in support of the 'sliding model' wherein a RecA filament diffuses along a dsDNA track.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c730d8e9-c2a3-4654-b743-0786e99c562c",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C5",
+      "claim": "Homology can be detected during RecA filament sliding",
+      "claim_type": "EXPLICIT",
+      "source_text": "We further show that homology can be detected during sliding.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary experimental finding demonstrated through the experiments described in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "770f9e1e-6f43-40fe-9bbc-279efd9fb50b",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C6",
+      "claim": "RecA filament sliding occurs with a diffusion coefficient of approximately 8000 bp²/s",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sliding occurs with a diffusion coefficient of approximately 8000 bp 2 /s allowing the filament to sample several hundred base pairs before dissociation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement derived from experimental data analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "97938147-7100-430e-93b3-824b703e46b8",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C7",
+      "claim": "RecA filament can sample several hundred base pairs before dissociation",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sliding occurs with a diffusion coefficient of approximately 8000 bp 2 /s allowing the filament to sample several hundred base pairs before dissociation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the measured diffusion coefficient and observed dissociation times.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "3c132e3b-a5e1-45f2-aa3d-591d3355a6d5",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C8",
+      "claim": "Sliding can accelerate homology search by as much as 200 fold",
+      "claim_type": "EXPLICIT",
+      "source_text": "Modeling suggests that sliding can accelerate homology search by as much as 200 fold.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is derived from computational modeling based on experimental parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "062d3930-94db-4840-8094-d32d9fc0253a",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C9",
+      "claim": "Homology recognition can occur for as few as 6 nt of complementary basepairs",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homology recognition can occur for as few as 6 nt of complementary basepairs with the recognition efficiency increasing for higher complementarity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly demonstrated through experiments with different homology lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "95cb6596-5dd1-48ab-8598-e59b701115bf",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C10",
+      "claim": "Recognition efficiency increases for higher complementarity",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homology recognition can occur for as few as 6 nt of complementary basepairs with the recognition efficiency increasing for higher complementarity.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed experimentally by comparing recognition efficiencies at different homology lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "ebd11504-4d0d-4587-aa83-f0c42cea8304",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C11",
+      "claim": "RecA-mediated homology search is the first example of a DNA bound multi protein complex which can slide on another DNA during target search",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our data represents the first example of a DNA bound multi-protein complex which can slide along another DNA to facilitate target search.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is based on the experimental data presented and comparison with existing literature on protein-DNA interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "184015d6-f84f-47aa-bdee-0fb5bd961492",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C12",
+      "claim": "Homologous recombination is one of the pathways involved in double strand break repair",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homologous recombination is one of the pathways involved in double strand break repair",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Cox et al., 2000.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "b3bb33ec-4e8e-4a3f-88a4-d77e370e566d",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C13",
+      "claim": "RecA catalyzes strand exchange in E. coli",
+      "claim_type": "EXPLICIT",
+      "source_text": "An important step in homologous recombination is the reciprocal exchange of basepairs between complementary DNA molecules during a reaction called strand exchange, which is catalyzed by RecA in E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established scientific knowledge about RecA function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "9029727a-50e6-424a-ba8f-502113deb147",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C14",
+      "claim": "Rad51 and Dmc1 in eukaryotes are homologs of RecA",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homologs of RecA, Rad51 and Dmc1 in eukaryotes and RadA in archaea, carry out similar functions during DNA repair",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Bianco et al., 1998.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "39ff6039-1f06-4446-8272-0f4d4609b7ae",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C15",
+      "claim": "RadA in archaea is a homolog of RecA",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homologs of RecA, Rad51 and Dmc1 in eukaryotes and RadA in archaea, carry out similar functions during DNA repair",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Bianco et al., 1998.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "b0f2460f-0be3-4259-a7f7-eb3fe9c7aa53",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C16",
+      "claim": "The strand exchange reaction involves three steps: pre-synapsis, synapsis, and heteroduplex extension via branch migration",
+      "claim_type": "EXPLICIT",
+      "source_text": "The strand exchange reaction involves three steps: (1) pre-synapsis, (2) synapsis, and (3) heteroduplex extension via branch migration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the stages of strand exchange.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "03978ae5-7ba6-4dd6-b3fb-3da52531553c",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C17",
+      "claim": "Pre-synapsis involves the assembly of RecA monomers on single stranded DNA in the presence of ATP with a stoichiometry of 3 nt per monomer",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pre-synapsis involves the assembly of RecA monomers on single stranded (ss) DNA in the presence of ATP with a stoichiometry of 3 nt per monomer",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Di Capua et al., 1982 and Dombroski et al., 1983.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "f08b627a-8c22-46dc-93ae-ecac389ddde7",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C18",
+      "claim": "RecA forms a filament which stretches the ssDNA to a length of 1.5 times the length of B-form DNA",
+      "claim_type": "EXPLICIT",
+      "source_text": "RecA forms a filament which stretches the ssDNA to a length of 1.5 times the length of B-form DNA",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from multiple sources (Stasiak et al., 1981; Dunn et al., 1982; Stasiak and Egelman, 1986).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "68c261d7-9c4a-4370-9d1a-8e3a3cb09ede",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C19",
+      "claim": "During synapsis, the RecA filament finds a homologous double stranded DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex product",
+      "claim_type": "EXPLICIT",
+      "source_text": "During synapsis, the RecA filament finds a homologous double stranded (ds) DNA and catalyzes the exchange of complementary base pairs to form a new heteroduplex product.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established synapsis phase of strand exchange.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "4f0d635b-65de-4983-9942-87e75cd9a34b",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C20",
+      "claim": "Branch migration mediates the extension of the heteroduplex product",
+      "claim_type": "EXPLICIT",
+      "source_text": "Subsequently, branch migration mediates the extension of the heteroduplex product",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Cox and Lehman, 1981.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "4e9c811a-6ea0-4ce3-9ab9-b3ee7f641d91",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C21",
+      "claim": "Homology search is the first step in synapsis",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homology search is the first step in synapsis and is arguably the most mysterious aspect of the strand exchange reaction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the sequence of events in strand exchange.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "fbe5b8d9-f320-4c94-8f08-3a3cf38b4bd7",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C22",
+      "claim": "A RecA filament has to rapidly and accurately find a homologous sequence in the presence of a vast excess of non-homologous dsDNA",
+      "claim_type": "EXPLICIT",
+      "source_text": "A RecA filament has to rapidly and accurately find a homologous sequence in the presence of a vast excess of non-homologous dsDNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the biological challenge faced during homology search.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "752fa359-6c22-43af-976b-b48f8d806b79",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C23",
+      "claim": "The multivalent nature of the RecA filament enables it to sustain contact with a long dsDNA while allowing for frequent dissociation events",
+      "claim_type": "EXPLICIT",
+      "source_text": "The multivalent nature of the RecA filament enables it to sustain contact with a long dsDNA while allowing for frequent dissociation events that permits rapid sampling of different segments of the DNA, thus facilitating homology search",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Forget and Kowalczykowski, 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "635bf10f-81f2-4f78-91b5-a840231efe31",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C24",
+      "claim": "Random 3D collision between a RecA filament and the dsDNA even when aided by intersegmental transfer is unlikely to result in precise alignment of matching sequences",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, random 3D collision between a RecA filament and the dsDNA even when aided by intersegmental transfer is unlikely to result in precise alignment of matching sequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference about the limitations of 3D collision-based search mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "1a296da8-a9e1-4f12-8ffa-74980da2ee91",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C25",
+      "claim": "RecA filament sliding on dsDNA over a short distance range of ten to hundreds of bp would significantly accelerate the search for homology",
+      "claim_type": "EXPLICIT",
+      "source_text": "For this reason, RecA filament sliding on dsDNA, even over a short distance range of ten to hundreds of bp would significantly accelerate the search for homology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference about the potential benefit of sliding for homology search.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "377319b7-de86-4efd-a53f-b2968e5b3a84",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C26",
+      "claim": "Many proteins are now known to diffuse along the DNA via 1D sliding",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although many proteins are now known to diffuse along the DNA via 1D sliding",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from multiple sources (Blainey et al., 2006; Wang et al., 2006; Gorman et al., 2007; Bonnet et al., 2008; Liu et al., 2008; Roy et al., 2009; Zhou et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "862b4ca6-c59f-452e-a67b-08a2e98008d9",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C27",
+      "claim": "RecA filament diffusion on DNA has not been observed before",
+      "claim_type": "EXPLICIT",
+      "source_text": "RecA filament diffusion on DNA has not been observed before",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the state of knowledge prior to this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "52cfa90c-a80c-4be1-8cc5-cce3f55408fd",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C28",
+      "claim": "An early study ruled out a role for long range (approximately several kb) 1D sliding during homology search",
+      "claim_type": "EXPLICIT",
+      "source_text": "in fact an early study ruled out a role for long range (approximately several kb) 1D sliding during homology search",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Adzuma, 1998.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "de83c43b-62d8-477d-9763-cf3dd9ed6e65",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C29",
+      "claim": "For short (<80 bp) homologous dsDNA substrates, homology search is completed rapidly (within 30 ms) once the dsDNA encounters a RecA filament",
+      "claim_type": "EXPLICIT",
+      "source_text": "For short (<80 bp) homologous dsDNA substrates, homology search is completed rapidly (within 30 ms) once the dsDNA encounters a RecA filament",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Ragunathan et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "a8aae92b-950c-4315-8d6d-15c5d610c64f",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C30",
+      "claim": "Non-homologous dsDNA was used to avoid stable product formation and monitor RecA filament in the act of homology search",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, we used a non-homologous dsDNA to avoid stable product formation and monitor RecA filament in the act of homology search.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This describes the experimental design rationale.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "3651bb5e-165a-4c87-a74b-980eacb0f90c",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C31",
+      "claim": "DNA docking results in appearance of donor signal with FRET reporting on the changes in distance",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA docking results in appearance of donor (green) signal with FRET reporting on the changes in distance.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental observation from single molecule FRET measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "f658ed74-a847-4828-b167-ae2ea529c4ad",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C32",
+      "claim": "Single molecule time traces show rapid FRET fluctuations with multiple binding and dissociation events",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single molecule time traces showing donor (green) and acceptor (red) intensities exhibits rapid FRET fluctuations with multiple binding and dissociation events within a single time trace",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "7e969311-7c3e-4e7c-8aa2-2e09d5f98e81",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C33",
+      "claim": "The lifetime of the binding events is exponentially distributed with an average lifetime of 3.5 s",
+      "claim_type": "EXPLICIT",
+      "source_text": "The lifetime of the binding events is exponentially distributed with an average lifetime of 3.5 s",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from analysis of experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d0f8f61d-8636-4b85-9cfd-08d694be20f0",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C34",
+      "claim": "Filaments formed with ATP displayed similar FRET fluctuations upon docking of non-homologous dsDNA and exhibit comparable dissociation times",
+      "claim_type": "EXPLICIT",
+      "source_text": "Filaments formed with ATP displayed similar FRET fluctuations upon docking of non-homologous dsDNA and exhibit comparable dissociation times",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation comparing ATP and ATPγS conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "25317623-d886-4a7c-abeb-3bc6384a50c2",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C35",
+      "claim": "The fluctuations observed do not require ATP hydrolysis",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence, the fluctuations observed here do not require ATP hydrolysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that similar fluctuations occur with non-hydrolyzable ATPγS.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d9ad454a-24a0-47ec-85f8-4291f6b01ade",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C36",
+      "claim": "Using different lengths for the ssDNA tail (Lfilament = 50 or 99 nt) did not significantly change the lifetime of the encounter complex",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using different lengths for the ssDNA tail (Lfilament = 50 or 99 nt) did not significantly change the lifetime of the encounter complex",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation from varying ssDNA length.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "1ebd04f6-58bd-4f6c-949a-9614ee49b8e2",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C37",
+      "claim": "Increasing dsDNA length increased the lifetime presumably due to a larger number of contacts between the dsDNA and the RecA filament",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, increasing dsDNA length increased the lifetime presumably due to a larger number of contacts between the dsDNA and the RecA filament",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The observation is from data, and the explanation is inferred from the increased contact area.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "db6557bf-a10c-4303-b181-211da3158dcb",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C38",
+      "claim": "Rapid FRET fluctuations persisted under all the solution conditions tested",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rapid FRET fluctuations persisted under all the solution conditions tested",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation across different conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "aa219c3c-8791-4359-b541-e1a063065715",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C39",
+      "claim": "The lifetime of the complex decreased with increasing magnesium or sodium concentrations",
+      "claim_type": "EXPLICIT",
+      "source_text": "the lifetime of the complex decreased with increasing magnesium or sodium concentrations suggesting that the interaction is electrostatic in nature and can be weakened by increased screening",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from experiments varying salt concentrations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "22f94c26-17fa-458d-a198-33d48c708490",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C40",
+      "claim": "The interaction between RecA filament and dsDNA is electrostatic in nature and can be weakened by increased screening",
+      "claim_type": "EXPLICIT",
+      "source_text": "the lifetime of the complex decreased with increasing magnesium or sodium concentrations suggesting that the interaction is electrostatic in nature and can be weakened by increased screening",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the salt concentration dependence of the interaction lifetime.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "2e2c6ac1-2d8f-49df-b916-3818c32ba825",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C41",
+      "claim": "Eliminating negative charge from the RecA C-terminus by deletion of acidic residues resulted in an increased lifetime of dsDNA bound to the RecA filament",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, eliminating negative charge from the RecA C-terminus (Lusetti et al., 2003) by deletion of acidic residues resulted in an increased lifetime of dsDNA bound to the RecA filament",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation using a RecA mutant.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "127aa825-d67f-474f-8491-f87cd33284bc",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C42",
+      "claim": "Limited unwinding of the dsDNA by the RecA filament could result in separation of the duplex ends",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first involves limited unwinding of the dsDNA (Bianchi et al., 1985) by the RecA filament resulting in separation of the duplex ends.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a hypothesis considered based on prior knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "90a1588f-b6f5-4764-89d9-7f47b30e31d8",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C43",
+      "claim": "Repeated melting and annealing transitions at the labeled end of the dsDNA could in principle result in FRET fluctuations",
+      "claim_type": "EXPLICIT",
+      "source_text": "Repeated melting and annealing transitions at the labeled end of the dsDNA could in principle result in FRET fluctuations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a hypothetical mechanism considered to explain the observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "e729bdda-00d0-42ea-9c3e-86170147a91f",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C44",
+      "claim": "When the dsDNA docks to an unlabeled RecA filament, stable high FRET was observed suggesting that separation of the duplex ends is not the source of FRET fluctuations",
+      "claim_type": "EXPLICIT",
+      "source_text": "When the dsDNA docks to an unlabeled RecA filament immobilized on the surface, we observed stable high FRET (Figure 2—figure supplement 1) suggesting that separation of the duplex ends is not the source of FRET fluctuations described in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an experimental observation that rules out the melting hypothesis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "43dad51d-4df9-4c0d-8683-9b9701cddd55",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C45",
+      "claim": "Changes in the length of the RecA filament would affect the time scale of FRET fluctuations if sliding occurs",
+      "claim_type": "EXPLICIT",
+      "source_text": "In order to test the sliding model, we examined whether changes in the length of the RecA filament would affect the time scale of FRET fluctuations since such a change would modulate the encounter frequency between the donor and the acceptor fluorophores.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is the logical basis for the experimental design to test the sliding model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "483a2a88-be35-4918-8fb7-4a8774a562e1",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C46",
+      "claim": "Conformational changes either within the dsDNA or the protein would exhibit the same time scale of FRET fluctuations independent of RecA filament length",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, conformational changes either within the dsDNA or the protein would presumably exhibit the same time scale of FRET fluctuations independent of RecA filament length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical prediction used to distinguish between sliding and conformational change mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "a23795b9-27ff-40dc-9b8a-7bcf58436eea",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C47",
+      "claim": "Shorter RecA filaments exhibited faster FRET fluctuations",
+      "claim_type": "EXPLICIT",
+      "source_text": "Shorter RecA filaments (Lfilament = 21 nt) exhibited faster FRET fluctuations (Figure 2A) compared to longer filaments (Lfilament = 99 nt) (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from experiments with different filament lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "4b3ed267-e25f-48bc-9e2f-49e663bf6ad4",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C48",
+      "claim": "The average cross correlation time increased linearly with RecA filament length",
+      "claim_type": "EXPLICIT",
+      "source_text": "The average cross correlation time, <τ>, increased linearly with RecA filament length (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from cross-correlation analysis of experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c7effa9f-c16a-4d93-a55d-7254394da804",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C49",
+      "claim": "The linear dependence of cross correlation time on filament length is consistent with 1D diffusion of the RecA filament along dsDNA",
+      "claim_type": "EXPLICIT",
+      "source_text": "The linear dependence of <τ> on Lfilament is consistent with 1D diffusion of the RecA filament along dsDNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observed linear relationship and theoretical expectations for 1D diffusion.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "e20f0dec-a86e-4b75-8442-131a6772eceb",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C50",
+      "claim": "The diffusion coefficient for RecA filament sliding is approximately 0.9 × 10⁻³ μm²/s",
+      "claim_type": "EXPLICIT",
+      "source_text": "We estimated the diffusion constant, Dslide, for RecA filament sliding to be approximately 0.9 × 10−3 μm2/s or 7700 bp2/s.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from experimental measurements and Monte Carlo simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "f8e098a4-e2d8-42c8-8c52-a6f8adf607ad",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C51",
+      "claim": "Monte Carlo simulations with a diffusion coefficient of 0.9 × 10⁻³ μm²/s reproduced the experimental data",
+      "claim_type": "EXPLICIT",
+      "source_text": "Monte Carlo simulations with a diffusion coefficient of 0.9 × 10−3 μm2/s reproduced the experimental data (Figure 2—figure supplement 2B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through computational modeling that matches experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "167a3392-71d6-41c9-973a-76423eb69e01",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C52",
+      "claim": "The cross correlation time was independent of changes in sodium and magnesium concentrations",
+      "claim_type": "EXPLICIT",
+      "source_text": "The cross correlation time was independent of changes in sodium and magnesium concentrations (Figure 2—figure supplement 3A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation across different salt conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d29d86b1-45ba-4d79-bf08-b2b11f3f0885",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C53",
+      "claim": "The cross correlation time was independent of the co-factor used (ATP or ATPγS)",
+      "claim_type": "EXPLICIT",
+      "source_text": "The cross correlation time was independent of the co-factor used (ATP or ATPγS) (Figure 2—figure supplement 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation comparing different nucleotide cofactors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c34acca9-2f03-40c8-9055-b4fc2e41024f",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C54",
+      "claim": "The FRET efficiency histograms for different filament lengths showed a broad distribution",
+      "claim_type": "EXPLICIT",
+      "source_text": "The FRET efficiency (E) histograms of single molecule traces for individual docking events of non-homologous dsDNA to RecA filaments assembled on ssDNA, Lfilament = 21 nt, 39 nt and 99 nt.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is shown in the experimental data (Figure 2D).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "f1ec8300-340e-452c-b681-d30cdb59445e",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C55",
+      "claim": "In the three-color FRET assay, the immobilized RecA filament is labeled with two different acceptor fluorophores, Cy5 and Cy7",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here, the immobilized RecA filament is labeled with two different acceptor fluorophores, Cy5 at the ssDNA/dsDNA junction and Cy7 in the middle of the ssDNA embedded within the RecA filament",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design for the three-color FRET assay.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "35421bfb-1efc-4c5a-8ee9-6a4cbd47fcc2",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C56",
+      "claim": "If the RecA filament slides along dsDNA, the donor on the dsDNA will alternately approach and move away from the two acceptors resulting in anti-correlated changes in the two acceptor intensities",
+      "claim_type": "EXPLICIT",
+      "source_text": "If the RecA filament slides along dsDNA, the donor on the dsDNA will alternately approach and move away from the two acceptors resulting in anti-correlated changes in the two acceptor intensities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical prediction of what would be observed if sliding occurs.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d1db9bbb-b6df-4f2d-9fbe-3ce4189b8f01",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C57",
+      "claim": "Anti-correlated changes in Cy5 and Cy7 intensities were observed in the three-color FRET experiments",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, we observed anti-correlated changes in Cy5 and Cy7 intensities (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the three-color FRET experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "4584bbdf-2131-4020-a765-a95ea10a1516",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C58",
+      "claim": "The cross correlation between ECy3-Cy5 and ECy3-Cy7 was negative",
+      "claim_type": "EXPLICIT",
+      "source_text": "The cross correlation between ECy3-Cy5 and ECy3-Cy7 was negative (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from cross-correlation analysis of the three-color data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "cb28d44d-1e9c-4999-a16e-c846d8d9e451",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C59",
+      "claim": "The scatter plot of ECy3-Cy5 and ECy3-Cy7 showed unique high FRET regions along both axes",
+      "claim_type": "EXPLICIT",
+      "source_text": "Scatter plot of ECy3-Cy5 and ECy3-Cy7 for 30 molecules showing unique high FRET regions along both axes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is shown in the experimental data (Figure 3D).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "81b8b98a-6461-4afe-a64b-341bb593108e",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C60",
+      "claim": "The three-color FRET experiments provide strong support for the sliding model",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, the three-color FRET experiments provide strong support for the sliding model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is concluded from the anti-correlated FRET changes observed in the three-color experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "002a6375-ac7a-445a-9c0b-4ae0a6a38fdc",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C61",
+      "claim": "Two repeats of an identical sequence were embedded at positions HS1 and HS2 within an otherwise non-homologous ssDNA to test homology detection during sliding",
+      "claim_type": "EXPLICIT",
+      "source_text": "To answer this question, we embedded two repeats of an identical sequence at positions HS1 and HS2 within an otherwise non-homologous ssDNA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental design to test homology recognition during sliding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "363ee238-70d2-422d-8dc6-e71ba6275b28",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C62",
+      "claim": "For 5 nt homology sequences, binding of the dsDNA to the RecA filament displayed rapid FRET fluctuations across a broad range of FRET values",
+      "claim_type": "EXPLICIT",
+      "source_text": "Binding of the dsDNA to the RecA filament formed on the ssDNA with the two 5 nt repeats displayed rapid FRET fluctuations across a broad range of FRET values (Figure 4B,E)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from experiments with 5 nt homology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "9f2252b1-489b-476e-9edc-6e13382c23a6",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C63",
+      "claim": "When the length of homology was increased to 6 nt, single molecule time traces displayed transitions between discrete FRET states",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, when we increased the length of homology at HS1 and HS2 by a single nucleotide to Lh = 6 nt, single molecule time traces displayed transitions between discrete FRET states (Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from experiments with 6 nt homology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "399f3259-2db6-48b4-89ef-bcc03ec2f10e",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C64",
+      "claim": "The same trend of discrete FRET states was observed upon further increasing the homology length to 7 nt",
+      "claim_type": "EXPLICIT",
+      "source_text": "The same trend was observed upon further increasing the homology length to Lh = 7 nt (Figure 4D).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from experiments with 7 nt homology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "66e90034-bb34-4651-b7d4-673a8c1eadb3",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C65",
+      "claim": "The FRET histograms for 6 and 7 nt homology lengths showed distinct FRET peaks",
+      "claim_type": "EXPLICIT",
+      "source_text": "The resulting FRET histograms for 6 and 7 nt homology lengths showed distinct FRET peaks (Figure 4F,G).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is shown in the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d23f3257-fc63-4b98-aeec-4731cb7834ea",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C66",
+      "claim": "The highest FRET state (approximately 0.9) corresponds to homology recognition and base pairing at HS1",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, we assigned the highest FRET state (approximately 0.9) to homology recognition and base pairing at HS1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This assignment is based on experiments with single homology sites.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "fa538d23-5274-41bc-8195-1829bc67c494",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C67",
+      "claim": "The mid FRET state (approximately 0.5) corresponds to homology recognition and base pairing at HS2",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the mid FRET state (approximately 0.5) to homology recognition and base pairing at HS2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This assignment is based on experiments with single homology sites.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c1a8462c-5204-4ab3-ad08-d3efa577e972",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C68",
+      "claim": "The lowest FRET state (E ∼ 0.1) corresponds to dsDNA sliding outside the boundary of HS1 and HS2 in a FRET insensitive regime",
+      "claim_type": "EXPLICIT",
+      "source_text": "The lowest FRET state, E ∼ 0.1, is likely to correspond to dsDNA sliding outside the boundary of HS1 and HS2 in a FRET insensitive regime.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the FRET value and the experimental design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "01d3eb89-8d12-4cef-ab1b-fc0ca30791ec",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C69",
+      "claim": "The total distance traversed by dsDNA to exhibit complete basepairing is (Lh + 5) nt",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although the gap between HS1 and HS2 is 5 nt, it is noteworthy that the total distance traversed by dsDNA to exhibit complete basepairing is (Lh + 5) nt.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the experimental design and geometry.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "1d633613-5503-4827-ba85-b1e9d0702d20",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C70",
+      "claim": "For the smallest Lh of 6 nt, the distance traversed translates to approximately 50 Ǻ",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, for the smallest Lh of 6 nt, this translates to a distance of approximately 50 Ǻ (11 nt × 3.4 Ǻ × 1.5).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the number of nucleotides and the stretched DNA geometry.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "4758363c-9f41-4dab-8a14-2836453d34c1",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C71",
+      "claim": "Hidden Markov Model (HMM) analysis was used to make unbiased assignments of the various FRET states",
+      "claim_type": "EXPLICIT",
+      "source_text": "We used a statistical approach based on Hidden Markov Model (HMM) analysis to make unbiased assignments of the various FRET states present within each single molecule time trace.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data analysis method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "3b2b3ae3-c5e6-4f86-83b5-641b003276fb",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C72",
+      "claim": "For Lh = 6 nt, the TDP obtained from 236 molecules exhibiting 13,020 transitions displays three distinct FRET states, E ∼ 0.1, 0.5 and 0.9",
+      "claim_type": "EXPLICIT",
+      "source_text": "For Lh = 6 nt, the TDP obtained from 236 molecules exhibiting 13,020 transitions displays three distinct FRET states, E ∼ 0.1, 0.5 and 0.9 (Figure 4J).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from HMM/TDP analysis of experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "686938cf-e73e-432b-b757-f9d141c08b10",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C73",
+      "claim": "The rate of departing HS1 or HS2 was threefold lower than that of leaving NH",
+      "claim_type": "EXPLICIT",
+      "source_text": "The rate of departing HS1 or HS2 was threefold lower than that of leaving NH, showing that even 6 bp homology can significantly stabilize joint molecule formation (Figure 4L).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from kinetic analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d2b74e3f-433a-4d4e-b73a-df75ebc51940",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C74",
+      "claim": "Even 6 bp homology can significantly stabilize joint molecule formation",
+      "claim_type": "EXPLICIT",
+      "source_text": "The rate of departing HS1 or HS2 was threefold lower than that of leaving NH, showing that even 6 bp homology can significantly stabilize joint molecule formation (Figure 4L).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observed difference in dissociation rates.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "17870499-8505-44f4-b83e-3cf31efced68",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C75",
+      "claim": "A slower rate of leaving HS1 and HS2 was observed for Lh = 7 nt compared to Lh = 6 nt",
+      "claim_type": "EXPLICIT",
+      "source_text": "As expected, we observed a slower rate of leaving HS1 and HS2 for Lh = 7 nt compared to Lh = 6 nt (Figure 4L).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from kinetic analysis comparing different homology lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "801198f1-1c3b-4981-9e53-96acfa7ba4e1",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C76",
+      "claim": "The dissociation rate of dsDNA bound to HS1 was higher than that of dsDNA bound to HS2",
+      "claim_type": "EXPLICIT",
+      "source_text": "Also, the dissociation rate of dsDNA bound to HS1 was higher than that of dsDNA bound to HS2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative result from kinetic analysis of the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "67594f3d-95c5-416d-8a21-72d702aac558",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C77",
+      "claim": "HS1 is located at the filament end where the terminal RecA monomer at the ssDNA–dsDNA junction binds with altered kinetics",
+      "claim_type": "EXPLICIT",
+      "source_text": "possibly because HS1 is located at the filament end where the terminal RecA monomer at the ssDNA–dsDNA junction binds with altered kinetics (Joo et al., 2006)",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the position of HS1 and cited knowledge about terminal RecA monomers.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "e952fc84-0986-4f9c-91d4-7ecf74d546df",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C78",
+      "claim": "HS2 is embedded within the RecA filament and benefits from complementary basepairing with the homology site and stabilizing interactions with neighboring RecA monomers",
+      "claim_type": "EXPLICIT",
+      "source_text": "as opposed to HS2 which is embedded within the RecA filament and benefits from complementary basepairing with the homology site and stabilizing interactions with neighboring RecA monomers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the position of HS2 within the filament structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "61b70e29-8baa-4fc4-a4d4-2c36119ca915",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C79",
+      "claim": "Transitions occurred not only between neighboring sites but also involved transitions of the type NH->HS1",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, transitions did not occur solely between neighboring sites (NH<->HS2 and HS1<->HS2 type transitions) but also involved transitions of the type NH->HS1",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed from the transition density plot analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "46a4bd76-f955-4929-a4a3-f6ab139cc8c9",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C80",
+      "claim": "The RecA filament might overlook a region of homology during the sliding process",
+      "claim_type": "EXPLICIT",
+      "source_text": "indicating that the RecA filament might overlook a region of homology during the sliding process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation of NH->HS1 transitions that skip HS2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "2a272c37-586b-4643-8595-a03cb4879996",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C81",
+      "claim": "Homology recognition and base pairing of dsDNA at either HS1 or HS2 during sliding is a stochastic process",
+      "claim_type": "EXPLICIT",
+      "source_text": "Homology recognition and base pairing of dsDNA at either HS1 or HS2 during sliding is a stochastic process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the probabilistic nature of the observed transitions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "402878a3-065d-4c73-9529-a189a6f9cddc",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C82",
+      "claim": "For 6 nt homology, the efficiency of homology site recognition is approximately 55%",
+      "claim_type": "EXPLICIT",
+      "source_text": "For 6 nt homology (Lh = 6 nt) the efficiency of homology site recognition, ErecognitionNH->HS2 is approximately 55%.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from the number of transitions observed in the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "a04561c6-94ff-4a30-b76f-c656c1bb59ce",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C83",
+      "claim": "For 7 nt homology, the efficiency of homology site recognition is approximately 77%",
+      "claim_type": "EXPLICIT",
+      "source_text": "This efficiency increased for 7 nt homology (ErecognitionNH->HS2 for Lh = 7 nt is approximately 77%).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from the number of transitions observed in the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "a2618b72-6172-467f-b1f6-bcc1c12dc967",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C84",
+      "claim": "The efficiency of homology recognition by the RecA filament increases with the number of homologous nucleotides available for basepairing",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cumulatively, our data suggest that the efficiency of homology recognition by the RecA filament increases with the number of homologous nucleotides available for basepairing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is concluded from the comparison of recognition efficiencies at different homology lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d232a9bb-8ef7-4ab6-906a-575e1103ebd8",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C85",
+      "claim": "For Lh = 8 nt, dsDNA bound to HS1 and HS2 positions exhibited stable FRET states and transitions between them were rare",
+      "claim_type": "EXPLICIT",
+      "source_text": "We could not perform a similar analysis for Lh = 8 nt since dsDNA bound to HS1 and HS2 positions in this case exhibited stable FRET states and transitions between them were rare",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from experiments with 8 nt homology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "cb476685-cbc4-4cac-ac9b-28aab749b01b",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C86",
+      "claim": "RecA filament sliding is a possible mechanism to assist homology search during strand exchange reaction",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our study establishes RecA filament sliding as a possible mechanism to assist homology search during strand exchange reaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main conclusion drawn from all the experimental evidence presented.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "ae3dd722-4b69-4342-b4ea-77514ad78cd3",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C87",
+      "claim": "There has been no previous example of a multi-protein complex bound to DNA which is capable of sliding along a second DNA strand to locate a matching sequence of bases",
+      "claim_type": "EXPLICIT",
+      "source_text": "Until now, there has been no example of a multi-protein complex bound to DNA such as the RecA filament which is capable of sliding along a second DNA strand to locate a matching sequence of bases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the novelty of the finding based on existing literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "ea42d457-3329-4f72-a7b0-aaf440cd1415",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C88",
+      "claim": "The lifetime of heterologous synapses ranges from 0.5 to 10 s",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because the lifetime of heterologous synapses ranges from 0.5 to 10 s (Figure 1—figure supplement 2B) (Mani et al., 2009; Forget and Kowalczykowski, 2012)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on experimental data and cited literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "20b12d7a-c872-426a-9752-765aa1a785dc",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C89",
+      "claim": "dsDNA would diffuse over a length of 60–300 bp during each encounter with a RecA filament prior to its dissociation",
+      "claim_type": "EXPLICIT",
+      "source_text": "we estimate that dsDNA would diffuse over a length of 60–300 bp during each encounter with a RecA filament prior to its dissociation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the diffusion coefficient and the lifetime of the complex.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "2b98a3b8-a088-4e8a-aa8b-b3d03ad1fcc3",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C90",
+      "claim": "Even for a recognition probability as low as approximately 1%, sliding leads to a rate enhancement in homology search by approximately 200-fold",
+      "claim_type": "EXPLICIT",
+      "source_text": "Though, we do not know the exact microscopic rate constants which determine the binding probability of the RecA filament to the target site (pbind), we can estimate that even for a recognition probability as low as approximately 1%, sliding leads to a rate enhancement in homology search by approximately 200-fold.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from a theoretical model using the measured diffusion coefficient.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "a50b1827-a8a1-427a-a6f0-3f211999a47a",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C91",
+      "claim": "If no sliding is allowed and homology must be recognized via fortuitous 3D contact, homology recognition would be about two orders of magnitude slower",
+      "claim_type": "EXPLICIT",
+      "source_text": "If no sliding is allowed and homology must be recognized via fortuitous 3D contact that aligns the dsDNA and filament in perfect registry, homology recognition would be about two orders of magnitude slower.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the calculated rate enhancement due to sliding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "8b3114c0-9740-48db-adf0-09d7f17d189d",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C92",
+      "claim": "1D sliding combined with intersegmental transfer can dramatically accelerate homology search",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, 1D sliding combined with intersegmental transfer proposed by Forget and Kowalcyzkowski (2012) can dramatically accelerate homology search.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the rate enhancement calculations and integration with prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "2e9e4a2a-b35e-4310-b947-c31b962e620a",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C93",
+      "claim": "Changes in angle between the dsDNA and the RecA filament (off-axis motions) might affect the observed FRET changes",
+      "claim_type": "EXPLICIT",
+      "source_text": "We cannot rule out the possibility that changes in angle between the dsDNA and the RecA filament (off-axis motions) might affect the observed FRET changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is acknowledged as a possibility that cannot be completely ruled out.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "0233c656-35f6-4f0f-8004-38484a1c8242",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C94",
+      "claim": "On-axis motion is the dominant source of FRET fluctuations",
+      "claim_type": "EXPLICIT",
+      "source_text": "Incorporating such effects of off-axis motions into the model would increase the time scale of linear sliding but the effect will be small because control experiments such as the DNA length dependence (Figure 2C) showed that on-axis motion is the dominant source of FRET fluctuations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the DNA length dependence experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "bd5d7173-b624-42d7-878d-b570a38818db",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C95",
+      "claim": "dsDNA flipping (180° change in orientation while remaining bound to the RecA filament) can be ruled out",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although our experimental scheme cannot probe for small and dynamic off-axis motions between the RecA filament and dsDNA, we can at least rule out the extreme possibility of 'dsDNA flipping' in which case the dsDNA may undergo a 180° change in orientation while remaining bound to the RecA filament",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated through control experiments shown in Figure 4—figure supplement 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "b6dad442-de4b-46ea-b7d7-9b9c4512cd3f",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C96",
+      "claim": "A dsDNA that binds to a RecA filament in the wrong orientation cannot establish the correct orientation required for homology recognition without full dissociation and rebinding",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, a dsDNA that binds to a RecA filament in the wrong orientation cannot establish the correct orientation required for homology recognition and basepairing without full dissociation and rebinding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is concluded from the experiments ruling out dsDNA flipping.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "19cc1786-7786-4e16-b091-e752f2b11383",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C97",
+      "claim": "As few as 6 nt of complementary base pairs are sufficient to act as the unit of homology recognition for RecA mediated homology search",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results showed that as few as 6 nt of complementary base pairs are sufficient to act as the unit of homology recognition for RecA mediated homology search.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated through experiments with different homology lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "a8beabb0-60e9-4875-bab6-d568630502eb",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C98",
+      "claim": "Recognition of a homology site is a stochastic process",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is noteworthy that recognition of a homology site is a stochastic process",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the probabilistic nature of the observed transitions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "cbc1d322-dd0a-4779-9d9e-a033ae581f0c",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C99",
+      "claim": "The efficiency of homology recognition by the RecA filament depends on the length of homology which is encountered at a particular site",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the efficiency of homology recognition by the RecA filament depends on the length of homology which is encountered at a particular site.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated through experiments comparing different homology lengths.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "1af3bb9f-e75c-426d-996d-e62d627310d6",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C100",
+      "claim": "Adding even a single nucleotide to the minimum recognition unit of 6 nt improves recognition efficiency by approximately 1.5-fold",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, we show that adding even a single nucleotide to the minimum recognition unit of 6 nt improves recognition efficiency by approximately 1.5-fold.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from the recognition efficiencies measured for 6 nt and 7 nt homology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "fa3f8d09-2a63-4a05-afdc-868947f5df8d",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C101",
+      "claim": "Proteins mediate target search reactions by a combination of 1D sliding and 3D diffusion based processes",
+      "claim_type": "EXPLICIT",
+      "source_text": "Proteins mediate target search reactions by a combination of 1D sliding and 3D diffusion based processes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Gorman and Greene, 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c60b27a0-3fb4-41a6-8b89-48e1af72e4fb",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C102",
+      "claim": "Intersegmental transfer serves to bring non-contiguous segments of dsDNA close to each other",
+      "claim_type": "EXPLICIT",
+      "source_text": "While intersegmental transfer serves to bring non-contiguous segments of dsDNA close to each other",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about intersegmental transfer.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "25a63db1-3b76-4d8a-a869-139c4d306304",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C103",
+      "claim": "1D sliding during homology search could help RecA reorganize the initial synaptic complex in cis without the need for full dissociation and rebinding",
+      "claim_type": "EXPLICIT",
+      "source_text": "1D sliding during homology search could help RecA reorganize the initial synaptic complex in cis without the need for a RecA filament to fully dissociate and rebind to a nearby homology site located within a short distance (up to few hundred base pairs).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a functional implication inferred from the observed sliding behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "f9b89678-39f1-43b9-808a-3d0b32ac1f40",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C104",
+      "claim": "Sliding could serve as a mechanism to rapidly scan neighboring sequences for the existence of an optimal seed sequence",
+      "claim_type": "EXPLICIT",
+      "source_text": "Given the ability of the RecA filament to slide between nearby homology sites (Figure 4), sliding could serve as a mechanism to rapidly scan neighboring sequences for the existence of an optimal seed sequence from which base pair propagation and heteroduplex extension reactions can proceed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a functional implication inferred from the observed sliding and homology recognition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "ffbe1d66-124c-47b8-b164-91e40a27fc49",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C105",
+      "claim": "An earlier report demonstrated sliding of Rad51 oligomers without any clear functional role attributed to the observed sliding activity",
+      "claim_type": "EXPLICIT",
+      "source_text": "An earlier report demonstrated sliding of Rad51 oligomers (not a Rad51 filament bound to ssDNA) without any clear functional role attributed to the observed sliding activity",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Graneli et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "94994337-d7b5-4dcd-9b2b-51606c3fbfae",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C106",
+      "claim": "There are significant structural and functional similarities between RecA and Rad51",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because of significant structural and functional similarities between RecA and Rad51 (Conway et al., 2004)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from Conway et al., 2004.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "28537cf4-d19d-420b-b9f6-b7be1d74af43",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C107",
+      "claim": "It is likely that sliding might also play a role in homology search mediated by Rad51",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is likely that sliding might also play a role in homology search mediated by Rad51.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative extrapolation based on the similarities between RecA and Rad51.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "8a16a430-b598-42d0-a732-b209e29aff76",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C108",
+      "claim": "The quartz surface was passivated with Polyethylene glycol to eliminate effects due to non-specific binding of proteins",
+      "claim_type": "EXPLICIT",
+      "source_text": "The coating of the quartz imaging surface with PEG (Roy et al., 2008) eliminated effects due to non-specific binding of proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a methodological approach used in the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "fb3b1a73-51d0-4729-943d-f13940d2a951",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C109",
+      "claim": "RecA forms filaments on ssDNA in the presence of ATPγS",
+      "claim_type": "EXPLICIT",
+      "source_text": "After washing away excess of acceptor molecules, the reference ssDNA was incubated with 1 μM RecA (Epicenter biotechnologies, Madison, WI) and 1 mM ATPγS",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental conditions used for filament formation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "05fa03d5-f747-4004-8070-bf979c80850b",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C110",
+      "claim": "The time resolution for all single molecule strand exchange experiments was 30 ms unless otherwise specified",
+      "claim_type": "EXPLICIT",
+      "source_text": "The time resolution for all single molecule strand exchange experiments was 30 ms unless otherwise specified.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the temporal resolution of the measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "09721cb9-b619-4be5-bd3e-59a12f0e152a",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C111",
+      "claim": "Cross-correlation analysis was performed by calculating cross-correlation functions for donor and acceptor time traces",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cross-correlation analysis was performed as previously described (Kim et al., 2002) by calculating cross-correlation functions for donor and acceptor time traces for a given molecule.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data analysis method used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "3b5ecb61-e51a-4eb0-8e6c-48224fcdfb89",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C112",
+      "claim": "The persistence length of RecA-ssDNA was reported to be approximately 784 nm (approximately 2300 bp)",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since the persistence length of RecA-ssDNA was reported to be approximately 784 nm (approximately 2300 bp) (Hegner et al., 1999)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Hegner et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "e1275780-cc3f-4a9c-aaec-1a1b93e9b752",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C113",
+      "claim": "The RecA-DNA filaments in the experiments can be treated as a rod in one dimension",
+      "claim_type": "EXPLICIT",
+      "source_text": "the RecA-DNA filaments in our experiments can be simply treated as a rod in one dimension.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a simplifying assumption justified by the persistence length being much larger than the filament lengths used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c212f1e1-4074-4f9b-a4c1-af77dd493c0d",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C114",
+      "claim": "RecA binding to ssDNA results in an average rise between successive nucleotides of 5.1 Å/bp",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since RecA binding to ssDNA results in an average rise between successive nucleotides of d = 5.1 Å/bp",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the structure of RecA filaments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "dec96ca9-9a12-4c02-a401-cbed2b664f55",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C115",
+      "claim": "Docking of non-homologous dsDNA to the RecA filament is detected as an abrupt appearance of fluorescence signal from the background level",
+      "claim_type": "EXPLICIT",
+      "source_text": "Docking of non-homologous dsDNA to the RecA filament is detected as an abrupt appearance of fluorescence signal from the background level.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental observation of DNA binding events.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "6c78adf0-d7b3-43dc-ae28-3dbe1493ae2e",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C116",
+      "claim": "After docking, large and rapid fluctuations in FRET were observed detected as anti-correlated changes of donor and acceptor intensities",
+      "claim_type": "EXPLICIT",
+      "source_text": "After docking, we observed large and rapid fluctuations in FRET detected as anti-correlated changes of donor and acceptor intensities.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the single molecule FRET experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "44b3742b-3f55-420a-9d05-6cc435b28830",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C117",
+      "claim": "The FRET fluctuations are indicative of extensive distance changes between the donor on the dsDNA and the acceptor on the RecA/ssDNA filament",
+      "claim_type": "EXPLICIT",
+      "source_text": "The FRET fluctuations are indicative of extensive distance changes between the donor on the dsDNA and the acceptor on the RecA/ssDNA filament.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the principle of FRET being distance-dependent.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "2d8c6043-7567-4641-bf56-e88c6bb5f949",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C118",
+      "claim": "Single molecule time traces show multiple dsDNA binding and dissociation events to the same filament because the observed interactions are transient",
+      "claim_type": "EXPLICIT",
+      "source_text": "Single molecule time traces show multiple dsDNA binding and dissociation events to the same filament because the observed interactions are transient without forming a stable product",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "22210235-870f-45ed-8214-c55320962967",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "claim_id": "C119",
+      "claim": "RecA filament may serve as a canonical example for other proteins bound to nucleic acid sequences that act as 'guide' strands conferring target site specificity",
+      "claim_type": "EXPLICIT",
+      "source_text": "It may also serve as a canonical example for other proteins (e.g., telomerase and Argonaute) which are bound to nucleic acid sequences that act as 'guide' strands conferring target site specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative suggestion about the broader implications of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7450f023-887e-402b-92d0-577369238131",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The observation of dynamic interactions between RecA filament and non-homologous dsDNA is well-supported by multiple lines of evidence including FRET fluctuations, exponentially distributed binding lifetimes, salt concentration dependence, and C-terminal deletion mutant experiments. The electrostatic nature of the interaction is convincingly demonstrated through systematic variation of ionic conditions and mutant analysis.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "3426fcd3-4645-42ad-a81e-919a57e74e01",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The control experiment ruling out DNA melting as the source of FRET fluctuations is well-designed and conclusive. By labeling both strands of the dsDNA and observing stable high FRET upon binding to unlabeled RecA filament, the authors effectively eliminate this alternative explanation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "050add28-53b7-49b3-9b8b-f22573ca2d67",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The sliding model is strongly supported by the linear dependence of cross-correlation time on filament length, which is the key discriminating prediction. Monte Carlo simulations reproduce the experimental data with a diffusion coefficient of ~8000 bp²/s. The independence of cross-correlation time from salt concentration and cofactor type further validates that the timescale reflects sliding dynamics rather than binding kinetics.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The three-color FRET experiments provide independent and compelling evidence for sliding. The anti-correlated changes in Cy5 and Cy7 intensities, negative cross-correlation, and scatter plot showing unique high FRET regions along both axes are all consistent with the sliding model and difficult to explain by alternative mechanisms.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The demonstration that homology can be detected during sliding is convincing. The transition from broad FRET distributions (5 nt) to discrete FRET states (6-7 nt) provides clear evidence of homology recognition. The assignment of FRET states to specific homology sites is validated by single-site control experiments, establishing 6 nt as the minimum recognition unit.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The quantitative analysis of homology recognition efficiency using HMM/TDP analysis is rigorous and well-executed. The finding that recognition efficiency increases with homology length (55% for 6 nt, 77% for 7 nt) and that the RecA filament can overlook homology sites during sliding provides important mechanistic insights. The stochastic nature of recognition is appropriately characterized.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "0f59de45-00f4-428e-9847-deb014c94e67",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The estimated diffusion coefficient (~8000 bp²/s) and sliding distance (60-300 bp) are derived from well-characterized experimental parameters including cross-correlation analysis and measured binding lifetimes. These estimates are internally consistent and supported by Monte Carlo simulations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d5213319-6f4c-48e3-bf27-c1d50526ad36",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the modeling suggests ~200-fold rate enhancement from sliding, this estimate depends critically on the unknown binding probability (pbind) to the target site. The authors acknowledge they do not know the exact microscopic rate constants. The calculation is reasonable but requires experimental validation of the assumed parameters to be fully supported.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "9f9b6e5f-f2fb-4ff2-8ae1-3b01f83be6f8",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R9",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The control experiments ruling out dsDNA flipping are well-designed. By labeling the opposite end of the dsDNA and showing that homology recognition only occurs when the correct end is labeled, the authors convincingly demonstrate that orientation cannot change without full dissociation and rebinding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "442b9be2-a16e-4a77-b626-a31eb32c47a7",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R10",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The authors appropriately acknowledge that off-axis motions cannot be completely ruled out but provide evidence that on-axis motion dominates. The DNA length dependence experiment is the key control showing that the observed timescales primarily reflect linear sliding rather than conformational fluctuations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "077a83ae-0e32-47fc-9f85-3d2233319576",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R11",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The claim that this is the first example of a DNA-bound multi-protein complex sliding on another DNA is supported by the experimental evidence presented and the absence of prior reports in the literature. The novelty claim is appropriately contextualized with respect to prior work on single protein sliding and Rad51 oligomer sliding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "adc145cd-981f-4cc9-a7d2-3971bcd8d83c",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R12",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The functional implications of sliding for reorganizing synaptic complexes and scanning for optimal seed sequences are reasonable inferences from the demonstrated sliding and homology recognition capabilities. These interpretations are appropriately presented as implications rather than directly demonstrated facts.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "5631b41e-95b7-4f7b-81eb-fa6bb58fb74d",
+      "content_id": "2729e133-c597-45fe-ab7b-b4373fa40900",
+      "result_id": "R13",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The speculative extensions to Rad51 and other guide-strand proteins are appropriately qualified as likely or possible rather than definitive. These are reasonable hypotheses based on structural and functional similarities, presented as suggestions for future investigation rather than established facts.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly state they 'find the evidence for sliding, especially data shown in Figures 2 and 3, strong.' The claims about RecA filament sliding, diffusion coefficient measurements, and the linear dependence of cross-correlation time on filament length (Figures 2 data) are affirmed as convincing evidence for the sliding model. However, reviewers request discussion of potential off-axis motion contributions to interpretation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "ae297225-ba30-42da-afe4-2b4d5bc728c5",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly state they 'find the evidence for sliding, especially data shown in Figures 2 and 3, strong.' The three-color FRET experiments showing anti-correlated changes in acceptor intensities (Figure 3 data) are accepted as strong support for the sliding model without any expressed concerns about these specific findings.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "6052fb12-e9f7-4c8e-a9ad-f8cdac38e317",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raise concern that 'all data interpretation and analysis are based on the notion that the RecA-ssDNA filament and the duplex DNA act as two stiff, coaxial rods' and that 'this interpretation ignores the possibility of off-axis motion (swinging or other fluctuations).' While the manuscript acknowledges off-axis motion cannot be ruled out (C93) and argues on-axis motion is dominant (C94), reviewers request additional discussion and potentially more data to address how off-axis motion may affect interpretations.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d8270a3d-81c7-45ab-8337-f4afefd346c2",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers question whether the transitions between HS1 and HS2 sites are definitively due to sliding, noting 'the relatively short distance between the HS1 and HS2 sites (5 nucleotides in between)' and asking 'is it possible that the ssDNA segment can transition between the two homology sites through a different mechanism?' They request discussion of whether 5 nucleotides is sufficient to conclude sliding occurs, and potentially additional evidence. This indicates uncertainty about the mechanism underlying the observed transitions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "891e6960-d433-460c-8c20-e6bb074fc61a",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers suggest using the Figure 4 assay to assess whether DNA reorientation or off-axis motion occurs, noting that '∼50% of the binding events [should] occur in the correct orientation that permits recognition of HS1/HS2, and the remaining 50% to occur with the duplex DNA in the incorrect orientation.' The manuscript claims dsDNA flipping can be ruled out (C95), but reviewers' request for statistical analysis of orientation fractions suggests they want more evidence to confirm this conclusion.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "746a8eb7-f27c-459a-8377-b7ce2047e3b6",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers state 'the results represent a significant advance of the current understanding of homology search during recombination' and find the work 'of significant interest and high quality.' The modeling claims about rate enhancement and acceleration of homology search are not questioned or challenged, indicating implicit acceptance of these computational predictions based on the experimental sliding data.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0",
+      "content_id": "18f960dc-50dc-40ff-90ec-6e93439cea8b",
+      "result_id": "R7",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The experimental design with two homology sites and the kinetic analysis of transitions are not challenged by reviewers. Their concern is specifically about the mechanistic interpretation (whether transitions are due to sliding), not about the data quality, experimental observations, or kinetic measurements themselves. The data showing discrete FRET states, transition rates, and stabilization effects are implicitly accepted.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "319dff1f-d77c-4b1c-897a-0e5271ad6722",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "3651bb5e-165a-4c87-a74b-980eacb0f90c",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "f658ed74-a847-4828-b167-ae2ea529c4ad",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "7e969311-7c3e-4e7c-8aa2-2e09d5f98e81",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "d0f8f61d-8636-4b85-9cfd-08d694be20f0",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "25317623-d886-4a7c-abeb-3bc6384a50c2",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "db6557bf-a10c-4303-b181-211da3158dcb",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "aa219c3c-8791-4359-b541-e1a063065715",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "22f94c26-17fa-458d-a198-33d48c708490",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "2e2c6ac1-2d8f-49df-b916-3818c32ba825",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "dec96ca9-9a12-4c02-a401-cbed2b664f55",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "6c78adf0-d7b3-43dc-ae28-3dbe1493ae2e",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "44b3742b-3f55-420a-9d05-6cc435b28830",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "2d8c6043-7567-4641-bf56-e88c6bb5f949",
+      "result_id": "7450f023-887e-402b-92d0-577369238131"
+    },
+    {
+      "claim_id": "127aa825-d67f-474f-8491-f87cd33284bc",
+      "result_id": "3426fcd3-4645-42ad-a81e-919a57e74e01"
+    },
+    {
+      "claim_id": "90a1588f-b6f5-4764-89d9-7f47b30e31d8",
+      "result_id": "3426fcd3-4645-42ad-a81e-919a57e74e01"
+    },
+    {
+      "claim_id": "e729bdda-00d0-42ea-9c3e-86170147a91f",
+      "result_id": "3426fcd3-4645-42ad-a81e-919a57e74e01"
+    },
+    {
+      "claim_id": "43dad51d-4df9-4c0d-8683-9b9701cddd55",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "483a2a88-be35-4918-8fb7-4a8774a562e1",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "a23795b9-27ff-40dc-9b8a-7bcf58436eea",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "4b3ed267-e25f-48bc-9e2f-49e663bf6ad4",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "c7effa9f-c16a-4d93-a55d-7254394da804",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "e20f0dec-a86e-4b75-8442-131a6772eceb",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "f8e098a4-e2d8-42c8-8c52-a6f8adf607ad",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "167a3392-71d6-41c9-973a-76423eb69e01",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "d29d86b1-45ba-4d79-bf08-b2b11f3f0885",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "c34acca9-2f03-40c8-9055-b4fc2e41024f",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "0233c656-35f6-4f0f-8004-38484a1c8242",
+      "result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67"
+    },
+    {
+      "claim_id": "f1ec8300-340e-452c-b681-d30cdb59445e",
+      "result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4"
+    },
+    {
+      "claim_id": "35421bfb-1efc-4c5a-8ee9-6a4cbd47fcc2",
+      "result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4"
+    },
+    {
+      "claim_id": "d1db9bbb-b6df-4f2d-9fbe-3ce4189b8f01",
+      "result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4"
+    },
+    {
+      "claim_id": "4584bbdf-2131-4020-a765-a95ea10a1516",
+      "result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4"
+    },
+    {
+      "claim_id": "cb28d44d-1e9c-4999-a16e-c846d8d9e451",
+      "result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4"
+    },
+    {
+      "claim_id": "81b8b98a-6461-4afe-a64b-341bb593108e",
+      "result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4"
+    },
+    {
+      "claim_id": "c730d8e9-c2a3-4654-b743-0786e99c562c",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "062d3930-94db-4840-8094-d32d9fc0253a",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "002a6375-ac7a-445a-9c0b-4ae0a6a38fdc",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "363ee238-70d2-422d-8dc6-e71ba6275b28",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "9f2252b1-489b-476e-9edc-6e13382c23a6",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "399f3259-2db6-48b4-89ef-bcc03ec2f10e",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "66e90034-bb34-4651-b7d4-673a8c1eadb3",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "d23f3257-fc63-4b98-aeec-4731cb7834ea",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "fa538d23-5274-41bc-8195-1829bc67c494",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "c1a8462c-5204-4ab3-ad08-d3efa577e972",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "19cc1786-7786-4e16-b091-e752f2b11383",
+      "result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e"
+    },
+    {
+      "claim_id": "95cb6596-5dd1-48ab-8598-e59b701115bf",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "4758363c-9f41-4dab-8a14-2836453d34c1",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "3b2b3ae3-c5e6-4f86-83b5-641b003276fb",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "686938cf-e73e-432b-b757-f9d141c08b10",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "d2b74e3f-433a-4d4e-b73a-df75ebc51940",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "17870499-8505-44f4-b83e-3cf31efced68",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "801198f1-1c3b-4981-9e53-96acfa7ba4e1",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "61b70e29-8baa-4fc4-a4d4-2c36119ca915",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "46a4bd76-f955-4929-a4a3-f6ab139cc8c9",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "2a272c37-586b-4643-8595-a03cb4879996",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "402878a3-065d-4c73-9529-a189a6f9cddc",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "a04561c6-94ff-4a30-b76f-c656c1bb59ce",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "a2618b72-6172-467f-b1f6-bcc1c12dc967",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "cbc1d322-dd0a-4779-9d9e-a033ae581f0c",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "1af3bb9f-e75c-426d-996d-e62d627310d6",
+      "result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c"
+    },
+    {
+      "claim_id": "770f9e1e-6f43-40fe-9bbc-279efd9fb50b",
+      "result_id": "0f59de45-00f4-428e-9847-deb014c94e67"
+    },
+    {
+      "claim_id": "97938147-7100-430e-93b3-824b703e46b8",
+      "result_id": "0f59de45-00f4-428e-9847-deb014c94e67"
+    },
+    {
+      "claim_id": "ea42d457-3329-4f72-a7b0-aaf440cd1415",
+      "result_id": "0f59de45-00f4-428e-9847-deb014c94e67"
+    },
+    {
+      "claim_id": "20b12d7a-c872-426a-9752-765aa1a785dc",
+      "result_id": "0f59de45-00f4-428e-9847-deb014c94e67"
+    },
+    {
+      "claim_id": "3c132e3b-a5e1-45f2-aa3d-591d3355a6d5",
+      "result_id": "d5213319-6f4c-48e3-bf27-c1d50526ad36"
+    },
+    {
+      "claim_id": "2b98a3b8-a088-4e8a-aa8b-b3d03ad1fcc3",
+      "result_id": "d5213319-6f4c-48e3-bf27-c1d50526ad36"
+    },
+    {
+      "claim_id": "a50b1827-a8a1-427a-a6f0-3f211999a47a",
+      "result_id": "d5213319-6f4c-48e3-bf27-c1d50526ad36"
+    },
+    {
+      "claim_id": "8b3114c0-9740-48db-adf0-09d7f17d189d",
+      "result_id": "d5213319-6f4c-48e3-bf27-c1d50526ad36"
+    },
+    {
+      "claim_id": "bd5d7173-b624-42d7-878d-b570a38818db",
+      "result_id": "9f9b6e5f-f2fb-4ff2-8ae1-3b01f83be6f8"
+    },
+    {
+      "claim_id": "b6dad442-de4b-46ea-b7d7-9b9c4512cd3f",
+      "result_id": "9f9b6e5f-f2fb-4ff2-8ae1-3b01f83be6f8"
+    },
+    {
+      "claim_id": "2e9e4a2a-b35e-4310-b947-c31b962e620a",
+      "result_id": "442b9be2-a16e-4a77-b626-a31eb32c47a7"
+    },
+    {
+      "claim_id": "0233c656-35f6-4f0f-8004-38484a1c8242",
+      "result_id": "442b9be2-a16e-4a77-b626-a31eb32c47a7"
+    },
+    {
+      "claim_id": "ebd11504-4d0d-4587-aa83-f0c42cea8304",
+      "result_id": "077a83ae-0e32-47fc-9f85-3d2233319576"
+    },
+    {
+      "claim_id": "862b4ca6-c59f-452e-a67b-08a2e98008d9",
+      "result_id": "077a83ae-0e32-47fc-9f85-3d2233319576"
+    },
+    {
+      "claim_id": "cb476685-cbc4-4cac-ac9b-28aab749b01b",
+      "result_id": "077a83ae-0e32-47fc-9f85-3d2233319576"
+    },
+    {
+      "claim_id": "ae3dd722-4b69-4342-b4ea-77514ad78cd3",
+      "result_id": "077a83ae-0e32-47fc-9f85-3d2233319576"
+    },
+    {
+      "claim_id": "25a63db1-3b76-4d8a-a869-139c4d306304",
+      "result_id": "adc145cd-981f-4cc9-a7d2-3971bcd8d83c"
+    },
+    {
+      "claim_id": "f9b89678-39f1-43b9-808a-3d0b32ac1f40",
+      "result_id": "adc145cd-981f-4cc9-a7d2-3971bcd8d83c"
+    },
+    {
+      "claim_id": "28537cf4-d19d-420b-b9f6-b7be1d74af43",
+      "result_id": "5631b41e-95b7-4f7b-81eb-fa6bb58fb74d"
+    },
+    {
+      "claim_id": "22210235-870f-45ed-8214-c55320962967",
+      "result_id": "5631b41e-95b7-4f7b-81eb-fa6bb58fb74d"
+    },
+    {
+      "claim_id": "319dff1f-d77c-4b1c-897a-0e5271ad6722",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "770f9e1e-6f43-40fe-9bbc-279efd9fb50b",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "97938147-7100-430e-93b3-824b703e46b8",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "a23795b9-27ff-40dc-9b8a-7bcf58436eea",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "4b3ed267-e25f-48bc-9e2f-49e663bf6ad4",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "c7effa9f-c16a-4d93-a55d-7254394da804",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "e20f0dec-a86e-4b75-8442-131a6772eceb",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "f8e098a4-e2d8-42c8-8c52-a6f8adf607ad",
+      "result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292"
+    },
+    {
+      "claim_id": "f1ec8300-340e-452c-b681-d30cdb59445e",
+      "result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5"
+    },
+    {
+      "claim_id": "35421bfb-1efc-4c5a-8ee9-6a4cbd47fcc2",
+      "result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5"
+    },
+    {
+      "claim_id": "d1db9bbb-b6df-4f2d-9fbe-3ce4189b8f01",
+      "result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5"
+    },
+    {
+      "claim_id": "4584bbdf-2131-4020-a765-a95ea10a1516",
+      "result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5"
+    },
+    {
+      "claim_id": "cb28d44d-1e9c-4999-a16e-c846d8d9e451",
+      "result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5"
+    },
+    {
+      "claim_id": "81b8b98a-6461-4afe-a64b-341bb593108e",
+      "result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5"
+    },
+    {
+      "claim_id": "2e9e4a2a-b35e-4310-b947-c31b962e620a",
+      "result_id": "6052fb12-e9f7-4c8e-a9ad-f8cdac38e317"
+    },
+    {
+      "claim_id": "0233c656-35f6-4f0f-8004-38484a1c8242",
+      "result_id": "6052fb12-e9f7-4c8e-a9ad-f8cdac38e317"
+    },
+    {
+      "claim_id": "e1275780-cc3f-4a9c-aaec-1a1b93e9b752",
+      "result_id": "6052fb12-e9f7-4c8e-a9ad-f8cdac38e317"
+    },
+    {
+      "claim_id": "c730d8e9-c2a3-4654-b743-0786e99c562c",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "062d3930-94db-4840-8094-d32d9fc0253a",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "95cb6596-5dd1-48ab-8598-e59b701115bf",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "9f2252b1-489b-476e-9edc-6e13382c23a6",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "399f3259-2db6-48b4-89ef-bcc03ec2f10e",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "66e90034-bb34-4651-b7d4-673a8c1eadb3",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "d23f3257-fc63-4b98-aeec-4731cb7834ea",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "fa538d23-5274-41bc-8195-1829bc67c494",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "c1a8462c-5204-4ab3-ad08-d3efa577e972",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "61b70e29-8baa-4fc4-a4d4-2c36119ca915",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "46a4bd76-f955-4929-a4a3-f6ab139cc8c9",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "2a272c37-586b-4643-8595-a03cb4879996",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "402878a3-065d-4c73-9529-a189a6f9cddc",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "a04561c6-94ff-4a30-b76f-c656c1bb59ce",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "a2618b72-6172-467f-b1f6-bcc1c12dc967",
+      "result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2"
+    },
+    {
+      "claim_id": "bd5d7173-b624-42d7-878d-b570a38818db",
+      "result_id": "891e6960-d433-460c-8c20-e6bb074fc61a"
+    },
+    {
+      "claim_id": "b6dad442-de4b-46ea-b7d7-9b9c4512cd3f",
+      "result_id": "891e6960-d433-460c-8c20-e6bb074fc61a"
+    },
+    {
+      "claim_id": "3c132e3b-a5e1-45f2-aa3d-591d3355a6d5",
+      "result_id": "746a8eb7-f27c-459a-8377-b7ce2047e3b6"
+    },
+    {
+      "claim_id": "2b98a3b8-a088-4e8a-aa8b-b3d03ad1fcc3",
+      "result_id": "746a8eb7-f27c-459a-8377-b7ce2047e3b6"
+    },
+    {
+      "claim_id": "a50b1827-a8a1-427a-a6f0-3f211999a47a",
+      "result_id": "746a8eb7-f27c-459a-8377-b7ce2047e3b6"
+    },
+    {
+      "claim_id": "8b3114c0-9740-48db-adf0-09d7f17d189d",
+      "result_id": "746a8eb7-f27c-459a-8377-b7ce2047e3b6"
+    },
+    {
+      "claim_id": "002a6375-ac7a-445a-9c0b-4ae0a6a38fdc",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "363ee238-70d2-422d-8dc6-e71ba6275b28",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "01d3eb89-8d12-4cef-ab1b-fc0ca30791ec",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "1d633613-5503-4827-ba85-b1e9d0702d20",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "4758363c-9f41-4dab-8a14-2836453d34c1",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "3b2b3ae3-c5e6-4f86-83b5-641b003276fb",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "686938cf-e73e-432b-b757-f9d141c08b10",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "d2b74e3f-433a-4d4e-b73a-df75ebc51940",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "17870499-8505-44f4-b83e-3cf31efced68",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "801198f1-1c3b-4981-9e53-96acfa7ba4e1",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "67594f3d-95c5-416d-8a21-72d702aac558",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    },
+    {
+      "claim_id": "e952fc84-0986-4f9c-91d4-7ecf74d546df",
+      "result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "982c4d3f-ea9d-4e40-8f93-5703fbb4ad31",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "fd8a8d82-d719-4a97-858b-792e3bf99ab4",
+      "peer_result_id": "ae297225-ba30-42da-afe4-2b4d5bc728c5",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Perfect match on three-color FRET experiments (C55-C60). Both evaluators find the evidence for sliding from anti-correlated acceptor intensities strong and convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "6e87b236-fa00-4e17-ace4-397adcb5867d",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "d5213319-6f4c-48e3-bf27-c1d50526ad36",
+      "peer_result_id": "746a8eb7-f27c-459a-8377-b7ce2047e3b6",
+      "llm_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "disagree",
+      "notes": "Complete match on rate enhancement claims (C8, C90-C92). LLM expresses uncertainty due to unknown binding probability parameters, while peer reviewers implicitly accept the modeling predictions as part of the significant advance, not questioning these computational claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "9fe4aeaf-1937-4c8e-bfb1-fdbe53224ec7",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "9f9b6e5f-f2fb-4ff2-8ae1-3b01f83be6f8",
+      "peer_result_id": "891e6960-d433-460c-8c20-e6bb074fc61a",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Perfect match on dsDNA flipping controls (C95-C96). LLM finds the control experiments conclusive, while peer reviewers request additional statistical analysis of orientation fractions to confirm the conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "7d2b7a09-cce6-409a-8b8d-3044b507fd5b",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "442b9be2-a16e-4a77-b626-a31eb32c47a7",
+      "peer_result_id": "6052fb12-e9f7-4c8e-a9ad-f8cdac38e317",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "High overlap on off-axis motion claims (C93-C94). LLM accepts that on-axis motion dominates based on DNA length dependence, while peer reviewers request additional discussion and potentially more data on how off-axis motion affects interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "823d4119-ee12-4248-99c5-7943560893e9",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "c9d1acc5-bc02-43c1-82b5-4acdfcd2c54e",
+      "peer_result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Substantial overlap on homology detection during sliding (C5, C9, C63-C68 shared). LLM finds the evidence for homology recognition convincing, while peer reviewers question whether transitions between HS1 and HS2 are definitively due to sliding given the short 5-nucleotide spacing, requesting discussion of alternative mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "165c7cd0-d4f0-4f98-914f-d6d136a0f3ac",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "050add28-53b7-49b3-9b8b-f22573ca2d67",
+      "peer_result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Partial overlap on sliding model evidence (C47-C51 shared). Both evaluators find the evidence for sliding strong, particularly the linear dependence of cross-correlation time on filament length. Peer reviewers note this as especially convincing in Figures 2 and 3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d0f39aa6-bcb4-4611-9431-eec0689d29db",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c",
+      "peer_result_id": "d8270a3d-81c7-45ab-8337-f4afefd346c2",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Moderate overlap on homology recognition efficiency (C10, C79-C84 shared). LLM finds the HMM/TDP quantitative analysis rigorous. Peer reviewers accept the data quality but question the mechanistic interpretation of transitions, creating uncertainty about the underlying mechanism rather than the measurements themselves.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "93ccc258-966c-41be-9e07-4d728a965262",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "0ff5dd76-1ebc-4e99-8ac4-9aea419deb2c",
+      "peer_result_id": "41c52c2d-26b3-4aa9-a9c6-84d5849b1ab0",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Partial overlap on kinetic analysis claims (C71-C76 shared). Both evaluators accept the experimental design, discrete FRET states, and kinetic measurements. Peer reviewers' concerns are about mechanistic interpretation (addressed in R4), not the data quality itself.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "d8651af5-74f0-42bd-8eb1-fc78cc1f4b37",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "0f59de45-00f4-428e-9847-deb014c94e67",
+      "peer_result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap on diffusion coefficient estimates (C6-C7 shared). Both evaluators accept these quantitative estimates as supported by the experimental data, though peer reviewers request discussion of off-axis motion contributions to interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "af62e247-8f2e-49ee-9bd1-eb9e01e4756d",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "7450f023-887e-402b-92d0-577369238131",
+      "peer_result_id": "7dec7d0d-ab1c-46db-8104-f4fac3cab292",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Minimal overlap (only C4 shared) on dynamic interactions. Both find evidence supported, but LLM result covers broader claim set (C4, C31-C41, C115-C118) about electrostatic interactions and FRET fluctuations, while peer result focuses on sliding evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "46d89641-a99d-49b0-b945-ad1262622904",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "3426fcd3-4645-42ad-a81e-919a57e74e01",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "DNA melting control experiments (C42-C44) only evaluated by LLM. No corresponding peer review assessment found. LLM finds the control conclusive.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "48822c03-72f8-48dd-a017-18dbb31a08bf",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "077a83ae-0e32-47fc-9f85-3d2233319576",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Novelty claims (C11, C27, C86-C87) only explicitly evaluated by LLM. Peer reviewers implicitly acknowledge significance but don't specifically assess the 'first example' claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "3438981f-7779-4da2-a60e-d5205f1a7b98",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "adc145cd-981f-4cc9-a7d2-3971bcd8d83c",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Functional implications for synaptic reorganization (C103-C104) only evaluated by LLM. No corresponding peer review assessment of these specific functional interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    },
+    {
+      "id": "5d79ffd0-62ac-45e6-ad81-5184293b98b6",
+      "submission_id": "6fa0f70a-a04d-4ca4-a5fd-7946ace780ff",
+      "llm_result_id": "5631b41e-95b7-4f7b-81eb-fa6bb58fb74d",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "Speculative extensions to Rad51 and other proteins (C107, C119) only evaluated by LLM. Peer reviewers don't specifically assess these forward-looking hypotheses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T20:29:57.156443Z"
+    }
+  ]
+}

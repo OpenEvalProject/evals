@@ -1,0 +1,133 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers request a comprehensive multi-dimensional sensitivity analysis, stating the current approach of 'progressively modifying one at a time' is insufficient and that 'a multi-dimensional parameter space exploration is more suited to understand the relationships between input and model's output.' While the manuscript includes sensitivity analyses (claims about CD8+ T-cell density, viral replication rates, etc.), reviewers indicate these need to be expanded to fully validate the model's predictions about infection dynamics."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C84"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers explicitly ask 'What does the model suggest are likely drivers of variability between patients?' This directly questions claims about patient-level heterogeneity and long-term dynamics. The reviewers seek clarification on whether the model adequately explains inter-patient variability versus intra-patient variability over time, indicating uncertainty about these conclusions."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C74",
+      "C75"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers ask 'How sensitive is the model to seeding frequency or location?' This directly challenges claims about neuronal HSV release patterns and spatial distribution requirements. The reviewers want additional analysis to determine whether the model's conclusions about constant viral release and random spatial distribution are robust or sensitive to these assumptions."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C51",
+      "C64",
+      "C70"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers ask 'What is the impact of the starting distribution of immune cells on the dynamics or success of lesions?' This questions claims about CD8+ T-cell density determining episode outcomes. While the manuscript presents these findings, reviewers seek more thorough exploration of how initial immune conditions affect model predictions, suggesting the current analysis may be incomplete."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C44",
+      "C78",
+      "C107"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers ask 'What is the main driver of the size of the lesions?' This directly questions claims about lesion size determinants and the relationship between infected cell numbers and ulcer dimensions. The reviewers want clarification on which model parameters most strongly influence lesion size, indicating the current presentation may not adequately address this question."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C88"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers request 'Please discuss the likely implications of the work for transmission and how it is related to the presence or absence of lesions.' This questions claims about asymptomatic transmission and the relationship between viral load thresholds and transmission risk. The reviewers indicate the manuscript needs more explicit discussion of how the findings relate to transmission dynamics."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C60",
+      "C61",
+      "C66"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "SUPPORTED",
+    "status_reasoning": "The core findings about rapid viral expansion (<12 hours to thousands of cells) and rapid immune clearance (<24 hours) are not challenged by reviewers. They acknowledge 'the parametrization is robust and identifiability does not seem to be a major issue,' implicitly accepting the model's fundamental kinetic predictions. The reviewers' concerns focus on extending the analysis rather than questioning these basic results."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "SUPPORTED",
+    "status_reasoning": "The empirical observations from high-frequency sampling, spatial sampling, and immunofluorescent staining are not questioned by reviewers. These data-driven claims about viral dynamics, spatial distribution, and immune cell localization form the foundation for the modeling work and are implicitly accepted as the reviewers focus their critique on model analysis rather than data quality."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "PEER_REVIEW",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims about model validation and fit to empirical data are not challenged. Reviewers state 'the parametrization is robust and identifiability does not seem to be a major issue,' indicating acceptance that the model adequately reproduces observed shedding patterns. Their concerns are about extending the analysis, not about the basic model-data agreement."
+  }
+]

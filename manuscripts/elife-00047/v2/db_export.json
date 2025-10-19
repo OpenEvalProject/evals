@@ -1,0 +1,2349 @@
+{
+  "submission": {
+    "id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-16T22:09:37.764347Z",
+    "updated_at": "2025-10-16T22:09:37.764347Z"
+  },
+  "content": [
+    {
+      "id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "content_type": "manuscript",
+      "content_text": "# DNA-PK is a DNA sensor for IRF-3-dependent innate immunity\n\n## Authors\n\n- Brian J Ferguson<sup>1</sup>\n- Daniel S Mansur<sup>1</sup>\n- Nicholas E Peters<sup>1</sup>\n- Hongwei Ren<sup>1</sup>\n- Geoffrey L Smith<sup>1</sup> †\n\n### Affiliations\n\n1. Department of Virology Imperial College London London United Kingdom\n2. Department of Pathology University of Cambridge Cambridge United Kingdom\n\n† Corresponding author\n\n## Abstract\n\n10.7554/eLife.00047.001 Innate immunity is the first immunological defence against pathogens. During virus infection detection of nucleic acids is crucial for the inflammatory response. Here we identify DNA-dependent protein kinase (DNA-PK) as a DNA sensor that activates innate immunity. We show that DNA-PK acts as a pattern recognition receptor, binding cytoplasmic DNA and triggering the transcription of type I interferon (IFN), cytokine and chemokine genes in a manner dependent on IFN regulatory factor 3 (IRF-3), TANK-binding kinase 1 (TBK1) and stimulator of interferon genes (STING). Both cells and mice lacking DNA-PKcs show attenuated cytokine responses to both DNA and DNA viruses but not to RNA or RNA virus infection. DNA-PK has well-established functions in the DNA repair and V(D)J recombination, hence loss of DNA-PK leads to severe combined immunodeficiency (SCID). However, we now define a novel anti-microbial function for DNA-PK, a finding with implications for host defence, vaccine development and autoimmunity. DOI: http://dx.doi.org/10.7554/eLife.00047.001\n\n## Introduction\n\nThe innate immune response is mediated by the production of cytokines, including type I interferons (IFNs), and chemokines following the detection of pathogen-specific molecules by host cells (Akira et al., 2006; Medzhitov, 2007). Detection of nucleic acids is crucial in triggering the innate immune to pathogens, particularly in response to viruses (Pichlmair and Reis e Sousa, 2007). Various double and single stranded RNA substrates are recognised directly by the DExD/H box RNA helicases retinoic acid-inducible gene I (RIG-I) and melanoma differentiation-associated gene-5 (MDA-5) in the cytoplasm and by the endosomal toll-like receptors (TLRs) (Pichlmair and Reis e Sousa, 2007). The engagement of such RNA receptors leads to the rapid transcription of genes encoding anti-viral proteins via the activation of transcription factors belonging to the interferon regulatory factor (IRF) and nuclear factor-kappa B (NF-κB) families. It has been recognised for some time that intracellular DNA can activate a similar IRF-3-dependent innate immune response (Stetson and Medzhitov, 2006) and it is known that this signalling pathway depends on both the IRF-3-activating kinase, TANK-binding kinase 1 (TBK1) (Ishii et al., 2006, 2008) and the adaptor protein stimulator of IFN genes (STING—also known as MITA, ERIS and TMEM173) (Ishikawa et al., 2009). Only more recently, however, have some candidate receptors for these pathways been identified. DNA-dependent activator of IFN-regulatory factors (DAI) (Takaoka et al., 2007), RNA polymerase III (RNA-Pol III) (Ablasser et al., 2009; Chiu et al., 2009), IFN inducible gene 16 (Unterholzner et al., 2010) and DDX41 (Zhang et al., 2011b) have been described as cytoplasmic DNA sensors that activate IRF-3. Nonetheless, the in vivo relevance of these sensors remains unknown and the normal immune response to DNA stimulation of Dai−/− and Ips1−/− cells (Ishii et al., 2008; Wang et al., 2008) and sensing of plasmodium DNA independent of these receptors (Sharma et al., 2011) indicates other IRF-3-activating cytoplasmic DNA sensors exist. In addition, although TBK1 and STING are essential for activation of IRF-3 following DNA stimulation, the molecular details of this signalling pathway are poorly understood (Paludan et al., 2011; Barber, 2011).\n\nThe presence of unidentified DNA sensors in fibroblasts is especially pertinent to virus infection since these cells are often a primary target of virus infection in vivo. These cells should have sentinel innate immune receptors in place to detect the presence of foreign nucleic acid and respond by producing IFN, cytokines and chemokines to initiate the anti-viral state in the surrounding tissue as well as to attract immune cells to the site of infection. In this study we identify DNA-dependent protein kinase (DNA-PK) as a novel DNA sensor in fibroblasts where it is present at high levels enabling it to respond to incoming infection without the need for prior stimulation. DNA-PK is a heterotrimeric protein complex consisting of three proteins, Ku70, Ku80 (also known as Ku86) and the catalytic subunit DNA-PKcs (encoded by the xrcc6, xrcc5 and prkcd genes respectively). Ku70 and Ku80 themselves form a heterodimer and the absence of one subunit de-stabilises the expression of the other (Nussenzweig et al., 1996; Gu et al., 1997). Both the Ku heterodimer (Walker et al., 2001) and DNA-PKcs (Hammarsten and Chu, 1998) can bind directly to DNA but, in the absence of Ku the affinity of DNA-PKcs for DNA is greatly reduced (Yaneva et al., 1997). DNA-PK has a well described role in the nucleus where it is necessary for non-homologous end joining (NHEJ) and so has a key role in repairing double-strand DNA breaks (Lieber et al., 2003). DNA-PK has also been detected in the cytoplasm by immunofluorescence and cell fractionation (Huston et al., 2008; Balazs et al., 2012), although prior to this study no function has been assigned to DNA-PK in this localisation. Here we found that, in the cytoplasm, DNA-PK signals via IRF-3 to activate an anti-microbial innate immune response to DNA mediated by the production of IFN, cytokines and chemokines. We show that DNA-PK co-localises with sites of viral DNA replication during VACV infection and the innate immune response to DNA and to infection with vaccinia virus (VACV) and herpes simplex virus (HSV-1) was impaired in both cells and mice which lack components of DNA-PK.\n\n## Results\n\n## DNA-PK binds DNA in the cytoplasm\n\nTo identify novel cytoplasmic DNA sensors, we transfected biotinylated dsDNA composed of a concatenated 45-bp oligonucleotide (called immunostimulatory DNA, ISD, (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig1-v1.jpg)\n\n**Figure 1.:** (A) Biotinylated DNA or biotinylated pam-3-cys were transfected into HEK 293T cells and 30 min later DNA was affinity purified from the cytoplasmic fraction before analysis of DNA/protein complexes by SDS-PAGE. The three major protein bands visible by coomassie blue staining were excised from the gel and identified as Ku70, Ku80 and DNA-PKcs by mass spectrometry. (B) Cells were untreated or transfected with DNA and 2 hr later proteins were extracted from the nucleus and cytoplasm. 50 μg of protein from each fraction (representing 10% of total cytoplasmic protein by volume and 5% of the total nuclear protein) was analysed by immunoblotting for DNA-PKcs, Ku70 and Ku80. β-tubulin and histone-H3 were used as controls to indicate successful fractionation. (C) Ku80 is required for efficient binding to DNA. MEFs of indicated genotypes were transfected with DNA biotinylated at the 3′ end or biotinylated pam-3-cys (Pam) and lysed 1 hr later. Following affinity purification (AP) of biotinylated ligands with streptavidin agarose, proteins were analysed by SDS-PAGE and immunoblotting for DNA-PKcs and Ku80. WCL; whole cell lysate.DOI: http://dx.doi.org/10.7554/eLife.00047.003\n\n## DNA-PK activates the innate immune response to DNA in fibroblasts\n\nIn fibroblasts, the transcription of genes encoding chemokines and cytokines was induced in response to DNA in a length and dose-dependent manner, was sensitive to DNase treatment and required DNA to be transfected into the cell (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig2-v1.jpg)\n\n**Figure 2.:** (A) ISD DNA of different lengths was transfected into MEFs and the transcription of Cxcl10 was assayed by qPCR 6 hr later. (B) Double stranded oligonucleotides (bio-ISD), concatenated ISD DNA (bio-concatamers), genomic vaccinia virus DNA (bio-VACV), genomic E. coli DNA (bio-E. coli), poly (dA:dT) or the RNA analogue poly (I:C) were biotinylated and transfected into HEK293 cells. Following affinity purification of proteins from cytoplasmic extracts using streptavidin agarose, the bound proteins were analysed by SDS-PAGE and immunoblotting. AP; affinity purification. (C) Primary MEFs of the indicated genotype were transfected with 10 μg/ml of the same (non-biotinylated) nucleic acids as in (A) followed by qRT-PCR analysis measuring induction of Cxcl10 mRNA 6 hr later. (D) Wild type and Prkdc transformed MEFs were transfected with DNA (10 μg/ml, left panel) or stimulated with LPS (100 ng/ml, right panel) and the level of transcription of −/−cxcl10 was measured at the indicated times post stimulation. (E) Levels of Cxcl10 and Ifnβ were measured by ELISA from the supernatants of primary wild type and Prkdc MEFs at passage 1, 24 hr after transfection with DNA or poly (I:C). (−/−F),(G) Primary wild type and Prkdc MEFs at passage 1 were transfected with DNA or poly (I:C) and the level of induction of (−/−F) Ifnb and Il-6 and (G) ccl4 and ccl5 mRNA was measured by qRT-PCR 6 hr later. (H) MEFs expressing Ku80 or lacking Ku80 were transfected with DNA and the transcription of Cxcl10 or Il6 was measured by qPCR 6 hr later. (I) Primary murine skin fibroblasts (MSF) from wild type adult mice or those lacking both Ku genes were transfected with DNA or poly (I:C) and the level of Ifnb induction was measured 6 hr later by qRT-PCR. (J) Xrcc5/+/+Trp53 and −/−Xrcc5/−/−Trp53 MEFs were transfected with an expression plasmid encoding Ku80 or an empty vector (EV) control and −/−Cxcl10 production was measured 24 hr later by ELISA. *** p<0.001, ** p<0.01, * p<0.05, n ≥ 3, error bars ± SEM, ns; non-stimulated.DOI: http://dx.doi.org/10.7554/eLife.00047.004\n\nStrikingly, in MEFs lacking DNA-PKcs (Prkdc−/−) there was a significant impairment in Cxcl10 transcription in response to double stranded concatenated ISD DNA (Stetson and Medzhitov, 2006) (from now on referred to as DNA), viral and bacterial DNA and poly(dA:dT) (Figure 2C, white bars). In contrast, the response to the dsRNA analogue, poly(I:C), was similar in the presence or absence of DNA-PKcs indicating the signalling defect is specific to DNA (Figure 2C). Time-course experiments indicated that the defect in DNA stimulation of Prkdc−/− cells was consistent at all times tested (Figure 2D) and that these cells are not simply responding to DNA with different kinetics. The data presented in Figure 2C,D were carried out with MEFs derived from separate strains of Prkdc−/− mice, indicating that this phenotype was not confined to a single MEF line. As a control we also tested the response to LPS (Figure 2D, right panel) and found the Prkdc−/− cells responded like the wild type cells, with typically rapid kinetics, to this stimulus. In addition, the secretion of Cxcl10 and Ifnβ as well as the transcription of ifnb, il6, and the chemokines Ccl4 and Ccl5, was also consistently impaired in multiple preparations of passage 1 Prkdc−/− MEFs in response to DNA but not RNA (Figure 2E–G). It is notable that, in MEFs, the transcription of other type 1 IFNs, type III IFNs and anti-inflammatory cytokines such as Il4 and Il10 was not observed in response to DNA stimulation (data not shown). Defects in the production of cytokines in response to DNA were found in transformed MEFs lacking Ku80 (Xrcc5−/−) (Figure 2H) or Ku70 (Xrcc6−/−) (not shown) and the transcription of Ifnb in response to DNA was also impaired in primary adult murine skin fibroblasts lacking both Ku genes (Figure 2I) indicating that this phenotype requires both Ku and DNA-PKcs and is not restricted to embryonic cells. Finally, the re-expression of Ku80 in Xrcc5−/− cells restored their DNA-dependent production of Cxcl10 to wild-type levels (Figure 2J). Collectively, these data indicate that DNA-PK acts as a DNA sensor by binding foreign DNA in the cytoplasm and activating a host innate immune response.\n\n## DNA-PK activates IRF-3 dependent innate immune responses\n\nWe delimitated the signalling pathway downstream of DNA-PK by using various MEFs lacking specific signalling components. In\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig3-v1.jpg)\n\n**Figure 3.:** (A) Primary wild type or Irf3 MEFs were transfected with DNA and the level of induction of −/−Ifnb, Il6, Cxcl10 and Isg54 mRNAs were measured by qRT-PCR 6 hr later. (B) Immortalised wild type or Tbk1 MEFs were transfected with DNA or poly(I:C) and the level of induction of −/−Il-6 and Cxcl10 was measured by qRT-PCR 6 hr later. (B) *** p<0.001, ** p<0.01, n = 3, error bars ± SEM, ns; non-stimulated.DOI: http://dx.doi.org/10.7554/eLife.00047.005\n\nTo establish whether DNA-PK acts upstream of IRF-3 activation, we monitored IRF-3 translocation in response to DNA and RNA stimulation. In\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig4-v1.jpg)\n\n**Figure 4.:** (A) The localisation of endogenous IRF-3 was analysed by immunofluorescence 1 hr after transfection of primary wild type or Prkdc MEFs with DNA or poly (I:C) (left panels) and quantified by scoring cells with nuclear staining (right panels, n = 3, counts of at least 50 nuclei per slide in randomised fields of view). (−/−B) As (A) but with Xrcc5/+/+Trp53 and −/−Xrcc5/−/−Trp53 MEFs. (−/−C) Analysis of p65 translocation in wild type and Prkdc MEFs carried out as in (−/−A). (D) Primary wild type or Prkdc−/− MEFs were transfected with DNA or poly (I:C) and the level of induction of Isg54 and Nfkbia were measured by qRT-PCR 6 hr later. ** p<0.01, * p<0.05, n = 3, error bars ± SEM. ns; non-stimulated. Scale bar; 10 μm.DOI: http://dx.doi.org/10.7554/eLife.00047.006\n\n## DNA-PK activates IRF-3 signalling independent of kinase activity\n\nPreviously, DNA-PK was shown to interact directly with IRF-3 (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig5-v1.jpg)\n\n**Figure 5.:** Primary fibroblasts from Balb/c or Prkdc mice were transfected with DNA or poly(I:C) or infected with MVA or NDV and the level of induction of (SCIDA) Ifnb, (B) Cxcl10, or (C) Il-6 was measured 6 hr later by qRT-PCR. (D) Fibroblasts were incubated with the indicated dose of DNA-PKcs kinase inhibitor, Nu7026, or carrier control and then stimulated with 10 μg/ml DNA. Cxcl10 was measured by ELISA in the supernatants 24 hr following stimulation. n = 3, error bars ± SEM. (E). Hek293 Trex cells were stably transfected with FLAG-tagged STING under the control of a doxycycline-inducible promoter. STING expression was induced by addition of doxycycline (Dox, 2 μg/ml) for 24 hr and cells were stimulated by transfection with 5 μg/ml DNA for 6 hr. Protein lysates were then immunoblotted with the indicated antibodies. (F) STING-293Trex cells were induced to express STING by addition of doxycycline (Dox, 2 μg/ml) for 24 hr and stimulated with 5 μg/ml DNA for the indicated times. STING was then immunoprecipitated and whole cell lystes (WCL) or precipitated proteins (IP) were immunoblotted using the indicated antibodies.DOI: http://dx.doi.org/10.7554/eLife.00047.007\n\nThe finding that the kinase activity of DNA-PKcs was not necessary for DNA sensing prompted an investigation of other interactions with signalling components. To do this we developed an inducible system to study the DNA sensing signalling pathway. HEK293 cells do not activate IRF3 in response to DNA stimulation due to a defect in STING, but by introducing an inducible version of STING into these cells, and then inducing STING expression with doxycycline, the cells activate IRF-3 as shown by its phosphorylation (Figure 5E) and produce cytokines (not shown) in response to double stranded ISD DNA concatamers. Using this system, immunoprecipitation showed that prior to DNA stimulation, STING exists in a complex with Ku70 but this interaction is abrogated following transfection of DNA (Figure 5F). These data suggest that DNA-PK interacts with the STING-dependent signalling pathway and this changes upon DNA activation.\n\n## DNA-PK contributes to the innate immune response to VACV in MEFs\n\nWe tested the relevance of this novel DNA-PK-dependent DNA sensing mechanism to virus infection using VACV strain modified virus Ankara (MVA). MVA activates innate immunity via TLR-dependent and independent pathways (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig6-v1.jpg)\n\n**Figure 6.:** HeLa cells were untreated or infected with MVA (m.o.i. = 5) for 6 hr. Cells were then fixed and stained with antibodies against (A) Ku80 or DNA-PKcs, and (B) TBK1 or IRF-3. Cytoplasmic viral factories formed after MVA infection are visualised with DAPI (blue). Sites of co-localisation of DNA-PKcs or Ku80 with viral factories are indicated by white arrows. Scale bars; 10 μm. ni; non-infected.DOI: http://dx.doi.org/10.7554/eLife.00047.008\n\nIn fibroblasts, MVA induces an IRF-3-dependent response (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig7-v1.jpg)\n\n**Figure 7.:** (A) Ifnb and Cxcl10 transcription was measured 6 hr following MVA infection of primary WT and Irf3−/− fibroblasts at an m.o.i. of 5. (B) Wild type and Prkdc−/− MEFs were infected with MVA or NDV and the level of induction of Cxcl10 and Il-6 were measured 6 hr later by qRT-PCR. (C) As (A) but with immortalised Xrcc5/+/+Trp53 and −/−Xrcc5/−/−Trp53 MEFs. (−/−D) The induction of Isg54 and Nfkbia mRNA was measured by qRT-PCR 6 hr after MVA or NDV infection of wild type and Prkdc cells. (−/−E) Expression of VACV proteins, analysed by immunoblotting with a rabbit polyclonal anti-VACV serum, at the indicated times following infection of primary Prkdc and +/+Prkdc MEFs with MVA (m.o.i. = 5). *** p<0.001, ** p<0.01, * p<0.05, n = 3, error bars ± SEM, ni; non-infected.−/−DOI: http://dx.doi.org/10.7554/eLife.00047.009\n\n## DNA-PK activates the innate immune response to DNA in vivo\n\nTo confirm that DNA-PK-dependent DNA sensing contributes to the innate immune response in vivo, we transfected nucleic acids directly into the ear pinnae of mice and assayed the induction of innate immune transcriptional responses by qPCR analysis of extracted RNA 12 hr later. DNA transfection induced both\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00047/elife-00047-fig8-v1.jpg)\n\n**Figure 8.:** (A) Groups of five Prkdc and +/+Prkdc mice were injected intradermally into the ear pinna with cationic lipids complexed with 1 μg DNA or poly(I:C). RNA was extracted from the tissue 12 hr later and −/−Ifnb and Il6 transcription was measured by qPCR. (B) Groups of five Prkdc and +/+Prkdc mice were infected intradermally with 10−/−6 pfu of MVA or influenza virus strain A/PR/8/34 (PR8) and 12 hr later Ifnb and Il6 transcription was measured by qPCR from RNA extracted from the local site of infection. (C) As (B) but with HSV-1 strain S17. Note that levels of ifnb could not be measured above background in this experiment. *p<0.1, ** p<0.01, n = 5, error bars ± SEM, ni; non-infected.DOI: http://dx.doi.org/10.7554/eLife.00047.010\n\n## Discussion\n\nThe identification of DNA-PK as a DNA sensor advances understanding of the innate immune response to infection and expands the current repertoire of DNA sensing mechanisms. In this study we show that the three proteins which constitute the DNA-PK complex; Ku70, Ku80 and DNA-PKcs, bind in significant amounts to DNA transfected into the cytoplasm of resting cells leading to an IRF-3-dependent innate immune response. Consistent with this, we found DNA-PK and TBK1 localised to sites of DNA replication during virus infection. Previous studies have ruled out a role for DNA-PK in the production of Ifnb in response to DNA in monocytic cells (Stetson and Medzhitov, 2006) and HEK293 cells (Zhang et al., 2011a). However, although DNA-PK components are expressed at high levels in a wide range of tissues and cell types, they are absent in primary macrophages ((Moll et al., 1999) and data not shown), and we now show that in fibroblasts and in mice the innate immune response to DNA and DNA viruses is dependent on DNA-PKcs. The in vivo deficiency in DNA sensing in the absence of DNA-PKcs is observed despite the presumed presence of other DNA sensors. The observation that this defect is not extended to RNA, LPS or to RNA viruses shows that DNA-PK loss does not confer a general defect on intracellular innate immune signalling, and the same is true in cultured Prkdc−/− MEFs which respond normally to RNA. It was noticed that the defect in the innate immune response to DNA was greater in cells lacking DNA-PKcs than in cells lacking Ku, even though Ku can still bind DNA in the absence of DNA-PKcs. This suggests that signalling can progress with DNA-PKcs interacting with DNA in the absence of Ku but that Ku enhances the signalling process by increasing the affinity of the protein complex for DNA. The phenotypic defect in DNA sensing was consistent in cells from four separate genotypes, ruling out the possibility that it was caused by a second site mutation. Consistent with this reintroduction of Ku80 into Xrcc5−/− cells restored DNA sensing (Figure 2J).\n\nThe well-studied PrkdcSCID mutation kills the kinase activity of DNA-PKcs via the introduction of a premature stop codon that results in expression of a truncated protein (Blunt et al., 1996). Although kinase activity is essential for DNA-PKcs to function in DNA repair, and therefore V(D)J recombination, this mutation did not affect the ability of DNA-PK to function as an innate immune DNA sensor. The functional significance of the interaction of DNA-PK with IRF-3 and its subsequent N-terminal phosphorylation reported by Karpova et al. (2002) remains unknown. However, we show here that Ku interacts with STING in resting cells and that this interaction is abrogated upon DNA stimulation (Figure 5F). In the future, further work is necessary to understand how TBK-1 and STING contribute to the full activation of IRF-3 following binding of DNA to DNA-PK to allow IRF-3 translocation to occur.\n\nDNA can act as a powerful immunostimulatory agent in many contexts. DNA vaccination relies on DNA sensing to invoke a powerful innate immune response that, in turn, assists the adaptive response (Ishii et al., 2008). Understanding how to optimise such vaccines, therefore, relies on understanding the mechanisms of detection of DNA by the immune system. Furthermore, one of the most common vaccine adjuvants, alum, acts by stimulating the release of DNA from neutrophils (Zhang et al., 2011b). Neutrophil extracellular traps (NETs) consist of webs of DNA with globular proteins, are released by a specific form of cell death (Fuchs et al., 2007) and function as antimicrobial traps, thereby contributing to the innate immune response (Brinkmann et al., 2004).\n\nOutside the context of infection, DNA can act as a damage-associated molecular pattern (DAMP), accelerating inflammatory responses following its release from dying or damaged cells directly contributing to the pathogenesis of various diseases such as atherosclerosis (Oka et al., 2012) and deep vein thrombosis (Brill et al., 2012). The ability of DNA to act as a DAMP may also link nucleic acid sensing to several autoimmune disorders. In general, autoimmune conditions are characterised by immune responses against host molecules and tissues and are frequently associated with inflammation. Although the causative factors of many such conditions are incompletely understood, it is clear that deregulation of immune signalling may lead to autoinflammation and autoimmunity in some instances (Rioux and Abbas, 2005). Indeed, the accumulation of DNA and its subsequent detection by DNA sensing pathways can result in the initiation of autoimmune diseases. Mice which lack either of two enzymes responsible for degradation of DNA, 3′ repair exonuclease 1 (Trex1) and DNaseII, develop spontaneous autoimmune disorders associated with the initiation of IRF-3-dependent cytosolic DNA sensing (Kawane et al., 2006; Stetson et al., 2008; Okabe et al., 2008). The absence of DNaseII results in chronic polyarthritis which is thought to be a result of the inflammation caused by a lack of clearance of DNA from macrophages (Kawane et al., 2006; Okabe et al., 2008). Trex1 deficiency or mutation, on the other hand, is associated with systemic lupus erythematosus (SLE), chilblain lupus and the human disease Aicardi-Goutières syndrome (AGS) (Lee-Kirsch et al., 2007a, 2007b; Stetson et al., 2008) and in this case inflammation is initiated from non-haematopoietic cells via a STING-dependent pathway (Gall et al., 2012). Interestingly, defects in the clearance of NETs have also been suggested to contribute to the initiation of SLE (Hakkim et al., 2010). Furthermore, the up-regulation of the inflammasome-activating DNA sensor absent in melanoma 2 (AIM2) in a mouse model of lupus and in patients with SLE-associated nephritis (Roberts et al., 2009; Kimkong et al., 2009) and the presence of anti-DNA-PK and anti-RNA-Pol III antibodies in patients with SLE and systemic sclerosis (Cavazzana et al., 2008, 2009) makes the link between DNA sensing and autoimmune disorders worthy of further investigation.\n\nThe identification of several candidate DNA sensors in multiple cells types in recent years (Hornung and Latz, 2010) suggests the evolution of redundancy in this system. This redundancy is not surprising given the tendency of pathogens to evolve escape-mechanisms for evading host immune mediators (Versteeg and García-Sastre, 2010; Bardoel and Strijp, 2011) in turn inducing the host to evolve further pathogen recognition mechanisms. In the context of DNA sensing this is exemplified by the relatively recent evolution of the PYHIN domain proteins, such AIM2 and IFI16 (Schattgen and Fitzgerald, 2011), which are a mammalian addition to the ancient innate immune system. Furthermore, a function of DAI was recently uncovered by identifying murine cytomegalovirus protein, vIRA, which interacts with DAI and inhibits its ability to initiate DNA-induced necroptosis (Upton et al., 2012). The biological function for DAI may therefore be in the initiation of a cell death pathway, rather than an IRF-3 dependent inflammatory response. This indicates there are at least three outcomes to cytosolic DNA sensing, the induction of cytokine expression via IRF-3 and NF-kB activation, the secretion of IL-1β via the AIM 2 inflammasome and the induction of necroptosis by DAI. What is not clear though, is how these different responses contribute to the overall immune response to infection by DNA pathogens and to what extent they are cell and tissue-type dependent. Further work is necessary to uncover the relative contributions of these different DNA sensing mechanisms in specific cell types and to different DNA structures as well as to understand how these sensors co-ordinate with STING and other adaptor proteins to activate TBK1 and IRF-3 (Paludan et al., 2011; Barber, 2011).\n\nOverall these findings provide a novel function for DNA-PK in the innate immune response, beyond its roles in DNA repair and V(D)J recombination, and increase our understanding of the innate immune response to cytoplasmic DNA.\n\n## Materials and methods\n\n## Mice\n\nPrkdc+/− mice on a 129 background were a kind gift from Dr Fred Alt (Gao et al., 1998) and PrkdcSCID and Balb/c mice were from Harlan laboratories. Animals were maintained as required under UK Home Office regulations. Groups of 5 age and sex matched mice were injected intradermally with 1 µg DNA or poly(I:C) (Invivogen, San Diego, CA) pre-incubated with 2 μl Lipofectamine2000 in Optimem (Life Technologies, Grand Island, NY) or injected intradermally with 106 plaque forming units (pfu) of MVA, HSV-1 or influenza virus A/PR/8/34 in PBS. Primary mouse embryonic fibroblasts (MEFs) were isolated from E13.5 embryos derived from time-mated pregnant mice using standard protocols.\n\n## Cell culture and transfection\n\nHEK293T and HEK293 Trex cells (Life Technologies, Grand Island, NY) were maintained in DMEM containing 10% FBS with the addition of blasticidin (5 μg/ml) and zeocin (100 μg/ml) for the selection and maintenance of the inducible STING-expressing cell line (STING-293Trex). MEFs and murine skin fibroblasts (MSFs) from various genetic backgrounds were maintained in DMEM containing 15% FBS, 100 U/ml penicillin and 100 μg/ml streptomycin. Primary Prkdc+/+ and Prkdc−/− MEFs were prepared in house on multiple occasions or supplied as a kind gift by Dr Brian Hemmings and were used only at passage 1. Transformed Prkdc−/− MEFs (used solely for experiments leading to the data presented in Figure 2D) were a kind gift from Professor Penelope Jeggo. HeLa cells were maintained in RPM.I containing 10% FBS and 2 mM L-glutamine. Transfections were carried out with Fugene6 (Roche, Penzburg, Germany).\n\n## DNA concatenation\n\nDouble stranded oligonucleotide DNA, ISD (sense sequence, TACAGATCTACTAGTGATCTATGACTGATCTGTACATGATCTACA) was phosphorylated at the 5′ end by incubation with T4 polynucleotide kinase (New England Biolabs, Ipswich, MA) for 30 min at 37°C and then ligated with T4 DNA ligase (Promega, Madison, WI) for 16 hr at 15°C. Concatenation was confirmed by agarose gel electrophoresis. This DNA was used at 10 μg/ml for transfection unless stated otherwise.\n\n## Biotinylation\n\n3′ biotinylated oligonucleotides were purchased from IDT DNA Technologies. Other nucleic acids were biotinylated using the Photoprobe biotinylation kit (Vector Labs, Burlingame, CA) following the manufacturer's instructions.\n\n## DNA pull down assay\n\nConcatenated oligonucleotide DNA (sequence as above) that was biotinylated at the 3′ end was transfected into cells using PEI (Sigma-Aldrich, St Louis, MI). After 30 min, cells were lysed in buffer containing 10 mM Tris–Cl, pH 8, 0.1% NP40, 10 mM MgCl2 and the cytoplasmic fraction was isolated by centrifugation at 1500g for 3 min. Streptavidin agarose (Thermo Scientific, Rockford, IL), 30 μl, was incubated with the lysate for 1 hr at 4°C and then washed three times in PBS. Purified proteins were analysed by SDS-PAGE and immunoblotting or stained by coomassie-blue and identified by liquid chromatography and tandem mass spectrometry (LC-MS/MS) at the Centre for Systems Biology at Imperial College London.\n\n## Virus infection\n\nVACV strain MVA was purified from cytoplasmic extracts of infected BHK-21 cells by sedimentation through a cushion of 36% (wt/vol) sucrose and was titrated by plaque assay on chicken embryo fibroblasts. NDV and influenza virus strain A/PR/8/34 were kind gifts from Prof Wendy Barclay. HSV-1 strain S17, a gift from Dr Colin Crump, was grown in Vero cells and purified on ficoll gradients. These viruses were used for infections for the indicated times and at indicated doses.\n\n## Immunodetection and immunoprecipitation\n\nFor immunoblotting, cell lysates were separated by polyacrylamide gel electrophoresis and transferred onto Immobilon P membranes (GE Healthcare, Little Chalfont, UK). The membranes were blocked in 5% non-fat milk in TBS containing 0.1% Tween 20 for 1 hr at room temperature. Membranes were probed with antibodies against Ku70 (Abcam, Cambridge, UK), Ku80 (Santa Cruz Biotech, Santa Cruz, CA), DNA-PKcs (Millipore, Billerica, MA), tubulin (Millipore, Billerica, MA), histone H3 (Millipore, Billerica, MA), hIRF-3 (Santa Cruz Biotech, Santa Cruz, CA), p-IRF-3 (serine 396, Abcam, Cambridge, UK), HMGB1 (Abcam, Cambridge, UK), FLAG (Sigma-Aldrich, St Louis, MI) or VACV strain Western Reserve (Law et al., 2006) and bound immunoglobulin was detected with horse-radish peroxidase-linked secondary antibodies (Agilent, Santa Clara, CA). Ku80, IRF-3 (Life Technologies, Grand Island, NY) or control antibodies were used for immunoprecipitation from HeLa cell lysates expressing IRF-3. FLAG-agarose matrix (Sigma-Aldrich, St Louis, MI) was used for immunoprecipitation of STING from STING-293Trex cells. For immunofluorescence, cells were seeded onto 15 mm glass coverslips, infected with MVA at 5 pfu per cell for 6 hr or transfected and fixed with 4% paraformaldehyde. Cells were permeabilised with PBS containing 0.2% Triton-X100 and blocked with 5% non-fat milk in PBS containing 0.1% Tween 20 for 1 hr at 20°C. Incubation with primary antibodies against Ku70 (Abcam, Cambridge, UK), DNA-PKcs (Millipore, Billerica, MA), mIRF-3 (Life Technologies, Grand Island, NY) hIRF-3, p65 (both Santa Cruz Biotech, Santa Cruz, CA) or TBK1 (Cell Signalling, Danvers, MA) diluted in PBS with 1% milk, for 1 hr at 20°C was followed by detection with alexa-fluor-conjugated secondary antibodies (Life Technologies, Grand Island, NY). Cells were counterstained with DAPI and mounted with Mowiol. Images were obtained with a Zeiss Pascal 510 confocal microscope and processed with Zeiss LSM software (Zeiss, Oberkochen, Germany). For quantification of translocation or IRF-3 or NF-κB into the nucleus 50 cells were counted in random fields of view, in biological triplicates, for each condition and scored for the presence of nuclear staining.\n\n## Enzyme-linked immunosorbent assay (ELISA)\n\nLevels of Cxcl10 and Ifnβ in cell supernatants were measured using ELISA kits (R&D systems, Minneapolis, MN or PBL, Piscataway, NJ, respectively) according to the manufacturer's instructions.\n\n## Transcriptional analysis\n\nTotal cellular RNA was extracted using an RNeasy kit (Qiagen, Hilden, Germany). cDNA synthesis was carried out with Superscript III Reverse Transcriptase (Life Technologies, Grand Island, NY) using 500 ng of template RNA. qPCR was performed on a 7900HT series thermocycler (Life Technologies, Grand Island, NY) with Fast SYBR Green Master Mix (Life Technologies, Grand Island, NY). HPRT was used as the reference gene in all assays. Data were analysed with RQ manager 1.2 software (Life Technologies, Grand Island, NY) and presented as a fold increase relative to time zero. Primers for qPCR were as follows:Cxcl10 For 5′ ACTGCATCCATATCGATGAC 3′,Cxcl10 Rev 5′ TTCATCGTGGCAATGATCTC 3′,Ifnβ For 5′ CATCAACTATAAGCAGCTCCA 3′,Ifnβ Rev 5′ TTCAAGTGGAGAGCAGTTGAG 3′Ccl5 For 5′ ACGTCAAGGAGTATTTCTACAC 3′,Ccl5 Rev 5′ GATGTATTCTTGAACCCACT 3′,Il-6 For 5′ GTAGCTATGGTACTCCAGAAGAC 3′,Il-6 Rev 5′ GTAGCTATGGTACTCCAGAAGAC 3′,Cxcl2 For 5′ GAGCTTGAGTGTGACGCCCCC 3′,Cxcl2 Rev 5′ GTTAGCCTTGCCTTTGTTCAG 3′,Ccl3 For 5′ ACTGCCTGCTGCTTCTCCTA 3′,Ccl3 Rev 5′ TTGGAGTCAGCGCAGATCTG 3′,Ccl4 For 5′ GCCCTCTCTCTCCTCTTGCT 3′,Ccl4 Rev 5′ CTGGTCTCATAGTAATCCATC 3′,Ccl2 For 5′ CTTCTGGGCCTGCTGTTCA 3′,Ccl2 Rev 5′ CCAGCCTACTCATTGGGATCA3′,Ifnγ For 5′ TCAAGTGGCATAGATGTGGAAGAA3′Ifnγ Rev 5′ TGGCTCTGCAGGATTTTCATG 3′,Il-4 For 5′ CATGCACGGAGATGGATG 3′,Il-4 Rev 5′ ACCTTGGAAGCCCTACAGAC 3′,Il-10 For 5′ TCCTTAATGCAGGACTTTAAGGGTTACTTG 3′,Il-10 Rev 5′ GACACCTTGGTCTTGGAGCTTATTAAAATC 3′,HPRT For 5′ GTTGGATACAGGCCAGACTTTGTTG 3′,HPRT Rev 5′ GATTCAACTTGCGCTCATCTTAGGC 3′,Nfkbia For 5′ CTGCAGGCCACCAACTACAA3′,Nfkbia Rev 5′ CAGCACCCAAAGTCACCAAGT 3′Isg54 For 5′ ATGAAGACGGTGCTGAATACTAGTGA 3′Isg54 Rev 5′ TGGTGAGGGCTTTCTTTTTCC 3′\n\n## Statistical analysis\n\nStatistical analysis was carried out using student's t-test with Welch's correction where necessary.\n",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ruslan Medzhitov, Yale University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00047.011](https://doi.org/10.7554/eLife.00047.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \"DNA-PK is a DNA sensor for IRF-3-dependent innate immunity\" for consideration at eLife. Your article has been evaluated by a Senior Editor and 2 reviewers, 1 of whom is on the board of reviewing editors.\n\nThe Reviewing Editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing Editor has assembled the following comments based on the reviewers' reports. While the reviewers found your work to be potentially interesting, there are some significant technical concerns. Specifically, more than one MEF line needs to be used to avoid MEF specific artifacts, and complementation experiments need to be performed to rule out contribution of cell transformation status and other possible effects specific to the MEF lines used. In addition, the mechanism of kinase activity independent effect of DNA-PK needs to be clarified – if it does function as a scaffolding protein, there should be some evidence provided to substantiate this hypothesis. The full comments follow:\n\n1) Studies that are based on MEFs can sometimes be misleading due to MEF heterogeneity. Different preps of MEFs are not identical in their gene expression and behavior, and therefore it is critically important A) to test more than one preparation of MEFs to confirm all the key results and B) to perform complementation experiments by re-introducing the gene of interest, in this case DNA-PK, Ku70 and Ku80. It may be technically difficult to transfect DNA-PK because if its size, but Ku70 and Ku80 can be transfected to test recovery of the response to DNA and the virus. These experiments are particularly important because some of the innate immune responses to DNA are not present in transformed cells. Since transformed MEFs were used in this study, and the degree of transformation may be greater in the knockouts, it is important to perform careful complementation studies.\n\n2) It is also surprising that the catalytic activity of DNA-PK is not required for the anti-viral response. The authors suggest that DNA-PK may function as a scaffold for signaling complex assembly. However, no evidence is provided here.\n\n3) Finally, DNA-PK deficiency appears to affect some but not all DNA induced genes. Full gene expression analysis using microarray comparing WT and DNA-PK deficient cells would be very informative. In addition, comparison of gene expression in unstimulated WT and DNA-PK deficient MEFs (which would be part of a control for a microarray study) would help to address the issue of MEF heterogeneity and transformative state.\n",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "56059ecf-7b08-45cb-8f5d-a70b12aa69c4",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C1",
+      "claim": "DNA-dependent protein kinase (DNA-PK) acts as a pattern recognition receptor that binds cytoplasmic DNA and triggers transcription of type I interferon, cytokine and chemokine genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We show that DNA-PK acts as a pattern recognition receptor, binding cytoplasmic DNA and triggering the transcription of type I interferon (IFN), cytokine and chemokine genes in a manner dependent on IFN regulatory factor 3 (IRF-3), TANK-binding kinase 1 (TBK1) and stimulator of interferon genes (STING).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data presented in the manuscript showing DNA-PK binding to DNA and triggering immune responses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "59e56a5a-413c-4e16-bf0b-742e010a2681",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C2",
+      "claim": "DNA-PK-mediated innate immune signaling is dependent on IRF-3, TBK1, and STING.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We show that DNA-PK acts as a pattern recognition receptor, binding cytoplasmic DNA and triggering the transcription of type I interferon (IFN), cytokine and chemokine genes in a manner dependent on IFN regulatory factor 3 (IRF-3), TANK-binding kinase 1 (TBK1) and stimulator of interferon genes (STING).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The manuscript presents experimental data using cells lacking these components to demonstrate their requirement for DNA-PK signaling.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "9f18814d-0b04-4470-b9d5-671454f4aad3",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C3",
+      "claim": "Cells lacking DNA-PKcs show attenuated cytokine responses to both DNA and DNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both cells and mice lacking DNA-PKcs show attenuated cytokine responses to both DNA and DNA viruses but not to RNA or RNA virus infection.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental measurements of cytokine responses in DNA-PKcs-deficient cells and mice presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "eb79ec60-725b-488d-8144-4357e98b6ab8",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C4",
+      "claim": "Cells and mice lacking DNA-PKcs show normal cytokine responses to RNA and RNA virus infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both cells and mice lacking DNA-PKcs show attenuated cytokine responses to both DNA and DNA viruses but not to RNA or RNA virus infection.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The manuscript presents experimental data showing that RNA-induced responses are intact in DNA-PKcs-deficient systems.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "cd5e08f2-d432-4b9c-aff0-eb12b0e0b664",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C5",
+      "claim": "DNA-PK has well-established functions in DNA repair and V(D)J recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA-PK has well-established functions in the DNA repair and V(D)J recombination, hence loss of DNA-PK leads to severe combined immunodeficiency (SCID).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This refers to established scientific knowledge about DNA-PK's role in DNA repair and V(D)J recombination, supported by prior literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ce9e800c-ec7b-43c1-ad96-9b099a19e0c7",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C6",
+      "claim": "Loss of DNA-PK leads to severe combined immunodeficiency (SCID).",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA-PK has well-established functions in the DNA repair and V(D)J recombination, hence loss of DNA-PK leads to severe combined immunodeficiency (SCID).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established scientific knowledge about the consequence of DNA-PK deficiency.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "572dd16d-41a6-47e8-a2e8-ada010c727b2",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C7",
+      "claim": "The innate immune response is mediated by production of cytokines, including type I interferons, and chemokines following detection of pathogen-specific molecules by host cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The innate immune response is mediated by the production of cytokines, including type I interferons (IFNs), and chemokines following the detection of pathogen-specific molecules by host cells",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established immunological knowledge, supported by the citations provided (Akira et al., 2006; Medzhitov, 2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "2bdf5d87-8df8-490c-80a2-baf097626b3f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C8",
+      "claim": "Detection of nucleic acids is crucial in triggering innate immunity to pathogens, particularly in response to viruses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Detection of nucleic acids is crucial in triggering the innate immune to pathogens, particularly in response to viruses",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in immunology, supported by the citation (Pichlmair and Reis e Sousa, 2007).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "3f8289cd-308f-444d-a5ee-2ee78d833609",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C9",
+      "claim": "Double and single stranded RNA substrates are recognized directly by RIG-I and MDA-5 in the cytoplasm and by endosomal toll-like receptors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Various double and single stranded RNA substrates are recognised directly by the DExD/H box RNA helicases retinoic acid-inducible gene I (RIG-I) and melanoma differentiation-associated gene-5 (MDA-5) in the cytoplasm and by the endosomal toll-like receptors (TLRs)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about RNA recognition pathways, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "dd659efd-f696-4a52-b139-b54ef683b57f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C10",
+      "claim": "Intracellular DNA can activate an IRF-3-dependent innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It has been recognised for some time that intracellular DNA can activate a similar IRF-3-dependent innate immune response",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This refers to established knowledge, supported by citation (Stetson and Medzhitov, 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "103b0d08-e083-493b-8012-f35599134b4c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C11",
+      "claim": "DNA-induced innate immune signaling depends on TBK1 and STING.",
+      "claim_type": "EXPLICIT",
+      "source_text": "it is known that this signalling pathway depends on both the IRF-3-activating kinase, TANK-binding kinase 1 (TBK1) (Ishii et al., 2006, 2008) and the adaptor protein stimulator of IFN genes (STING—also known as MITA, ERIS and TMEM173)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by multiple citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "1b9509dd-0ee0-4d5f-81d8-2189c77c4009",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C12",
+      "claim": "DAI, RNA polymerase III, IFI16, and DDX41 have been described as cytoplasmic DNA sensors that activate IRF-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA-dependent activator of IFN-regulatory factors (DAI) (Takaoka et al., 2007), RNA polymerase III (RNA-Pol III) (Ablasser et al., 2009; Chiu et al., 2009), IFN inducible gene 16 (Unterholzner et al., 2010) and DDX41 (Zhang et al., 2011b) have been described as cytoplasmic DNA sensors that activate IRF-3.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This summarizes prior research findings, supported by multiple citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "5723584c-f34f-4737-841d-4c0f9c15d771",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C13",
+      "claim": "The in vivo relevance of DAI, RNA-Pol III, IFI16, and DDX41 as DNA sensors remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nonetheless, the in vivo relevance of these sensors remains unknown",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an inference drawn from the lack of in vivo data for these sensors in the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "219c90fc-f8e1-494a-bfb6-9bab68011f19",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C14",
+      "claim": "Dai−/− and Ips1−/− cells show normal immune response to DNA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the normal immune response to DNA stimulation of Dai−/− and Ips1−/− cells (Ishii et al., 2008; Wang et al., 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies showing normal responses in these knockout cells.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "0f705bd9-381c-4d87-adfa-1b6cf52c0f11",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C15",
+      "claim": "Sensing of plasmodium DNA occurs independent of DAI and IPS1 receptors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "sensing of plasmodium DNA independent of these receptors (Sharma et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on plasmodium DNA sensing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "edb4a446-4f7e-4c79-8a98-a1535df00094",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C16",
+      "claim": "Other IRF-3-activating cytoplasmic DNA sensors exist beyond DAI, RNA-Pol III, IFI16, and DDX41.",
+      "claim_type": "EXPLICIT",
+      "source_text": "indicates other IRF-3-activating cytoplasmic DNA sensors exist",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the observation that DNA sensing occurs in cells lacking known sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "847513a6-66f1-439a-95cf-33662e1592c2",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C17",
+      "claim": "DNA-PK is a heterotrimeric protein complex consisting of Ku70, Ku80, and DNA-PKcs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA-PK is a heterotrimeric protein complex consisting of three proteins, Ku70, Ku80 (also known as Ku86) and the catalytic subunit DNA-PKcs (encoded by the xrcc6, xrcc5 and prkcd genes respectively).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established structural knowledge about DNA-PK composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "373aeb37-c25a-428a-8891-bf99fe1b8e81",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C18",
+      "claim": "Ku70 and Ku80 form a heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ku70 and Ku80 themselves form a heterodimer",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established structural knowledge about the Ku complex.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "789dea0b-9fd5-41ef-9fcc-b38816cec5c7",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C19",
+      "claim": "The absence of one Ku subunit destabilizes the expression of the other.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the absence of one subunit de-stabilises the expression of the other (Nussenzweig et al., 1996; Gu et al., 1997)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "8aea2f03-a97b-4295-a32e-33f0ebf74d35",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C20",
+      "claim": "Both the Ku heterodimer and DNA-PKcs can bind directly to DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both the Ku heterodimer (Walker et al., 2001) and DNA-PKcs (Hammarsten and Chu, 1998) can bind directly to DNA",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about DNA-PK binding properties, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "6c8f03bc-2299-41a8-84f6-b5888cf6d7fa",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C21",
+      "claim": "In the absence of Ku, the affinity of DNA-PKcs for DNA is greatly reduced.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in the absence of Ku the affinity of DNA-PKcs for DNA is greatly reduced (Yaneva et al., 1997)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by the cited study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "67b31647-f7f4-4e2d-afe1-64208338497d",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C22",
+      "claim": "DNA-PK is necessary for non-homologous end joining (NHEJ) and has a key role in repairing double-strand DNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA-PK has a well described role in the nucleus where it is necessary for non-homologous end joining (NHEJ) and so has a key role in repairing double-strand DNA breaks (Lieber et al., 2003)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about DNA-PK's nuclear function, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "55a7f86b-9f36-493b-95cc-937e5ba6becb",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C23",
+      "claim": "DNA-PK has been detected in the cytoplasm by immunofluorescence and cell fractionation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA-PK has also been detected in the cytoplasm by immunofluorescence and cell fractionation (Huston et al., 2008; Balazs et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies that detected cytoplasmic DNA-PK.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "837ef677-9359-4342-94ca-8e8425b8cdfa",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C24",
+      "claim": "Prior to this study, no function has been assigned to DNA-PK in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "although prior to this study no function has been assigned to DNA-PK in this localisation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the absence of prior literature describing cytoplasmic DNA-PK function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "283dd866-823d-4bf9-b9e8-ac61880e230d",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C25",
+      "claim": "In the cytoplasm, DNA-PK signals via IRF-3 to activate an anti-microbial innate immune response to DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we found that, in the cytoplasm, DNA-PK signals via IRF-3 to activate an anti-microbial innate immune response to DNA mediated by the production of IFN, cytokines and chemokines.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data presented in the manuscript showing IRF-3-dependent signaling.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "19b6d4f2-cc71-4207-b31c-80f048840b34",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C26",
+      "claim": "DNA-PK co-localizes with sites of viral DNA replication during VACV infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We show that DNA-PK co-localises with sites of viral DNA replication during VACV infection",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence data presented in Figure 6.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "08676070-1286-4540-8de9-2f37e38b2ab3",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C27",
+      "claim": "The innate immune response to DNA and to infection with vaccinia virus and HSV-1 was impaired in cells and mice lacking components of DNA-PK.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the innate immune response to DNA and to infection with vaccinia virus (VACV) and herpes simplex virus (HSV-1) was impaired in both cells and mice which lack components of DNA-PK",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data from knockout cells and mice presented throughout the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d05dfb97-ec33-4ee3-b04a-debf38eba960",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C28",
+      "claim": "Biotinylated dsDNA composed of concatenated 45-bp oligonucleotide (ISD) was transfected into HEK 293T cells to identify cytoplasmic DNA sensors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To identify novel cytoplasmic DNA sensors, we transfected biotinylated dsDNA composed of a concatenated 45-bp oligonucleotide (called immunostimulatory DNA, ISD",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental approach used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "05fea332-2e9b-4a7c-a8ea-f7673b897f65",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C29",
+      "claim": "Three major protein bands from DNA pull-down experiments were identified as Ku70, Ku80, and DNA-PKcs by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The three major protein bands visible by coomassie blue staining were excised from the gel and identified as Ku70, Ku80 and DNA-PKcs by mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by mass spectrometry data from the pull-down experiment shown in Figure 1A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "1e8d26c5-f0ad-479f-b249-ebbd5996e9ef",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C30",
+      "claim": "DNA-PKcs, Ku70, and Ku80 are present in both nuclear and cytoplasmic fractions of cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cells were untreated or transfected with DNA and 2 hr later proteins were extracted from the nucleus and cytoplasm. 50 μg of protein from each fraction (representing 10% of total cytoplasmic protein by volume and 5% of the total nuclear protein) was analysed by immunoblotting for DNA-PKcs, Ku70 and Ku80.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by cell fractionation and immunoblotting data shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "782f3d39-a68e-4a84-ac2f-1ffa0b76e1be",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C31",
+      "claim": "Ku80 is required for efficient binding of DNA-PKcs to DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ku80 is required for efficient binding to DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by pull-down experiments in Ku80-deficient cells shown in Figure 1C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d224e770-6871-423d-96d4-ad5a5796509e",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C32",
+      "claim": "In fibroblasts, transcription of genes encoding chemokines and cytokines was induced in response to DNA in a length and dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In fibroblasts, the transcription of genes encoding chemokines and cytokines was induced in response to DNA in a length and dose-dependent manner",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "23ca3c59-257d-43b7-bd03-250ce7b6d55b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C33",
+      "claim": "DNA-induced cytokine transcription in fibroblasts was sensitive to DNase treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the transcription of genes encoding chemokines and cytokines was induced in response to DNA in a length and dose-dependent manner, was sensitive to DNase treatment",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data showing DNase sensitivity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "314a77df-521b-415f-bc04-e6d293eb8442",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C34",
+      "claim": "DNA-induced cytokine transcription in fibroblasts required DNA to be transfected into the cell.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the transcription of genes encoding chemokines and cytokines was induced in response to DNA in a length and dose-dependent manner, was sensitive to DNase treatment and required DNA to be transfected into the cell",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data comparing transfected versus non-transfected DNA.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "96d1e543-ee3d-420d-8c5d-ce4e2c109545",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C35",
+      "claim": "DNA-PK binds to double stranded oligonucleotides, concatenated ISD DNA, genomic vaccinia virus DNA, genomic E. coli DNA, and poly(dA:dT).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Double stranded oligonucleotides (bio-ISD), concatenated ISD DNA (bio-concatamers), genomic vaccinia virus DNA (bio-VACV), genomic E. coli DNA (bio-E. coli), poly (dA:dT) or the RNA analogue poly (I:C) were biotinylated and transfected into HEK293 cells. Following affinity purification of proteins from cytoplasmic extracts using streptavidin agarose, the bound proteins were analysed by SDS-PAGE and immunoblotting.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by pull-down and immunoblotting data shown in Figure 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d6dee918-ee30-47cb-ad00-f2cd0b116fda",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C36",
+      "claim": "DNA-PK does not bind to the RNA analogue poly(I:C).",
+      "claim_type": "IMPLICIT",
+      "source_text": "Double stranded oligonucleotides (bio-ISD), concatenated ISD DNA (bio-concatamers), genomic vaccinia virus DNA (bio-VACV), genomic E. coli DNA (bio-E. coli), poly (dA:dT) or the RNA analogue poly (I:C) were biotinylated and transfected into HEK293 cells. Following affinity purification of proteins from cytoplasmic extracts using streptavidin agarose, the bound proteins were analysed by SDS-PAGE and immunoblotting.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is inferred from Figure 2B showing no DNA-PK binding to poly(I:C) in pull-down experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "8380fa15-5ed2-4aab-a729-6e41d24e2ede",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C37",
+      "claim": "Prkdc−/− MEFs show significantly impaired Cxcl10 transcription in response to double stranded concatenated ISD DNA, viral and bacterial DNA, and poly(dA:dT).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Strikingly, in MEFs lacking DNA-PKcs (Prkdc−/−) there was a significant impairment in Cxcl10 transcription in response to double stranded concatenated ISD DNA (Stetson and Medzhitov, 2006) (from now on referred to as DNA), viral and bacterial DNA and poly(dA:dT)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "48cf4fbd-0287-4054-bb53-64607a3640bb",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C38",
+      "claim": "The response to poly(I:C) was similar in Prkdc−/− and wild-type MEFs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, the response to the dsRNA analogue, poly(I:C), was similar in the presence or absence of DNA-PKcs indicating the signalling defect is specific to DNA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ad82fede-7667-4b79-92f9-6c02d4ec6f10",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C39",
+      "claim": "The defect in DNA stimulation of Prkdc−/− cells was consistent at all times tested.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Time-course experiments indicated that the defect in DNA stimulation of Prkdc−/− cells was consistent at all times tested",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by time-course qPCR data shown in Figure 2D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "b1ab0420-1a9b-4dbf-90aa-118841d4852c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C40",
+      "claim": "Prkdc−/− cells respond normally to LPS stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As a control we also tested the response to LPS (Figure 2D, right panel) and found the Prkdc−/− cells responded like the wild type cells, with typically rapid kinetics, to this stimulus.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 2D showing normal LPS responses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "624ba31d-441f-47df-a829-8270d6443313",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C41",
+      "claim": "Secretion of Cxcl10 and Ifnβ was impaired in passage 1 Prkdc−/− MEFs in response to DNA but not RNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, the secretion of Cxcl10 and Ifnβ as well as the transcription of ifnb, il6, and the chemokines Ccl4 and Ccl5, was also consistently impaired in multiple preparations of passage 1 Prkdc−/− MEFs in response to DNA but not RNA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ELISA data shown in Figure 2E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "59baf225-2a59-4d83-b6b8-795af3033dcd",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C42",
+      "claim": "Transcription of ifnb, il6, Ccl4, and Ccl5 was impaired in passage 1 Prkdc−/− MEFs in response to DNA but not RNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, the secretion of Cxcl10 and Ifnβ as well as the transcription of ifnb, il6, and the chemokines Ccl4 and Ccl5, was also consistently impaired in multiple preparations of passage 1 Prkdc−/− MEFs in response to DNA but not RNA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figures 2F and 2G.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "caa7542a-5d98-40c7-9ef0-ca4542c95584",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C43",
+      "claim": "In MEFs, transcription of other type 1 IFNs, type III IFNs, and anti-inflammatory cytokines such as Il4 and Il10 was not observed in response to DNA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is notable that, in MEFs, the transcription of other type 1 IFNs, type III IFNs and anti-inflammatory cytokines such as Il4 and Il10 was not observed in response to DNA stimulation (data not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is stated as an observation from experimental data, though the data are not shown.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "b8a53fc9-f992-46d2-acf3-2e999d777824",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C44",
+      "claim": "Defects in cytokine production in response to DNA were found in transformed MEFs lacking Ku80 (Xrcc5−/−).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Defects in the production of cytokines in response to DNA were found in transformed MEFs lacking Ku80 (Xrcc5−/−)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 2H.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "c65c1c07-cd3e-4a1a-86e1-e7fb7a2e829b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C45",
+      "claim": "Defects in cytokine production in response to DNA were found in transformed MEFs lacking Ku70 (Xrcc6−/−).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Defects in the production of cytokines in response to DNA were found in transformed MEFs lacking Ku80 (Xrcc5−/−) (Figure 2H) or Ku70 (Xrcc6−/−) (not shown)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is stated as experimental observation, though data are not shown.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "97487f0d-4bd0-48ee-9489-b822fbb07210",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C46",
+      "claim": "Transcription of Ifnb in response to DNA was impaired in primary adult murine skin fibroblasts lacking both Ku genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the transcription of Ifnb in response to DNA was also impaired in primary adult murine skin fibroblasts lacking both Ku genes",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 2I.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ada4416f-bf83-453c-89f0-1d8f644ea93c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C47",
+      "claim": "Re-expression of Ku80 in Xrcc5−/− cells restored their DNA-dependent production of Cxcl10 to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, the re-expression of Ku80 in Xrcc5−/− cells restored their DNA-dependent production of Cxcl10 to wild-type levels",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ELISA data shown in Figure 2J demonstrating rescue of the phenotype.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a9f503cf-c483-4778-b005-a9d15527088c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C48",
+      "claim": "DNA-PK acts as a DNA sensor by binding foreign DNA in the cytoplasm and activating a host innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Collectively, these data indicate that DNA-PK acts as a DNA sensor by binding foreign DNA in the cytoplasm and activating a host innate immune response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the collective experimental data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ec46a09f-838d-4083-9de5-c630d0d5347d",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C49",
+      "claim": "Irf3−/− MEFs show impaired induction of Ifnb, Il6, Cxcl10, and Isg54 mRNAs in response to DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary wild type or Irf3−/− MEFs were transfected with DNA and the level of induction of Ifnb, Il6, Cxcl10 and Isg54 mRNAs were measured by qRT-PCR 6 hr later.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 3A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "97fbac95-2255-445b-a28d-eda12089cf4c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C50",
+      "claim": "Tbk1−/− MEFs show impaired induction of Il-6 and Cxcl10 in response to DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Immortalised wild type or Tbk1−/− MEFs were transfected with DNA or poly(I:C) and the level of induction of Il-6 and Cxcl10 was measured by qRT-PCR 6 hr later.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "698699db-4233-4216-885f-d784c8a43161",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C51",
+      "claim": "DNA-PK acts upstream of IRF-3 activation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To establish whether DNA-PK acts upstream of IRF-3 activation, we monitored IRF-3 translocation in response to DNA and RNA stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from IRF-3 translocation experiments and supported by data in Figure 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "b1b8ec52-bbf4-4c87-9fc6-d814d440a353",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C52",
+      "claim": "IRF-3 translocates to the nucleus in wild-type MEFs 1 hour after DNA or poly(I:C) transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The localisation of endogenous IRF-3 was analysed by immunofluorescence 1 hr after transfection of primary wild type or Prkdc−/− MEFs with DNA or poly (I:C)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence data shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "fa382dce-bcdf-49bb-ac73-c0750973868f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C53",
+      "claim": "IRF-3 translocation to the nucleus is impaired in Prkdc−/− MEFs after DNA transfection but not after poly(I:C) transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The localisation of endogenous IRF-3 was analysed by immunofluorescence 1 hr after transfection of primary wild type or Prkdc−/− MEFs with DNA or poly (I:C)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence quantification shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a2a1f5d5-3dfd-4dbf-b721-383af53d0cd4",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C54",
+      "claim": "IRF-3 translocation to the nucleus is impaired in Xrcc5−/−Trp53−/− MEFs after DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As (A) but with Xrcc5+/+Trp53−/− and Xrcc5−/−Trp53−/− MEFs.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence data shown in Figure 4B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "f378ac67-e69f-422e-aad9-d516ddc93e5e",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C55",
+      "claim": "p65 translocation to the nucleus occurs normally in Prkdc−/− MEFs after DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Analysis of p65 translocation in wild type and Prkdc−/− MEFs carried out as in (A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence data shown in Figure 4C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "1428a8f2-6b2f-4b8f-b0b7-e33ff1bf1d58",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C56",
+      "claim": "Isg54 induction is impaired in Prkdc−/− MEFs after DNA transfection but not after poly(I:C) transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary wild type or Prkdc−/− MEFs were transfected with DNA or poly (I:C) and the level of induction of Isg54 and Nfkbia were measured by qRT-PCR 6 hr later.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 4D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "b2f29539-7058-410b-abef-a7e193c4135f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C57",
+      "claim": "Nfkbia induction occurs normally in Prkdc−/− MEFs after DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary wild type or Prkdc−/− MEFs were transfected with DNA or poly (I:C) and the level of induction of Isg54 and Nfkbia were measured by qRT-PCR 6 hr later.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 4D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "55a513d4-b620-4217-a42d-09cbbdbae9a6",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C58",
+      "claim": "DNA-PK was previously shown to interact directly with IRF-3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Previously, DNA-PK was shown to interact directly with IRF-3",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to prior published work showing this interaction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "91922b8d-220d-4031-8063-5debc21b8531",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C59",
+      "claim": "Primary fibroblasts from PrkdcSCID mice show impaired induction of Ifnb, Cxcl10, and Il-6 in response to DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary fibroblasts from Balb/c or PrkdcSCID mice were transfected with DNA or poly(I:C) or infected with MVA or NDV and the level of induction of (A) Ifnb, (B) Cxcl10, or (C) Il-6 was measured 6 hr later by qRT-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figures 5A-C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "7488359a-565d-42e9-aeb1-13aa81508335",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C60",
+      "claim": "Primary fibroblasts from PrkdcSCID mice show normal induction of Ifnb, Cxcl10, and Il-6 in response to poly(I:C) transfection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary fibroblasts from Balb/c or PrkdcSCID mice were transfected with DNA or poly(I:C) or infected with MVA or NDV and the level of induction of (A) Ifnb, (B) Cxcl10, or (C) Il-6 was measured 6 hr later by qRT-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figures 5A-C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "7baaaa91-bc54-4296-b7f3-9033f010882f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C61",
+      "claim": "Primary fibroblasts from PrkdcSCID mice show impaired induction of Ifnb, Cxcl10, and Il-6 in response to MVA infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary fibroblasts from Balb/c or PrkdcSCID mice were transfected with DNA or poly(I:C) or infected with MVA or NDV and the level of induction of (A) Ifnb, (B) Cxcl10, or (C) Il-6 was measured 6 hr later by qRT-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figures 5A-C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "3a33d24e-8838-499d-b797-966c8d9e891b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C62",
+      "claim": "Primary fibroblasts from PrkdcSCID mice show normal induction of Ifnb, Cxcl10, and Il-6 in response to NDV infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Primary fibroblasts from Balb/c or PrkdcSCID mice were transfected with DNA or poly(I:C) or infected with MVA or NDV and the level of induction of (A) Ifnb, (B) Cxcl10, or (C) Il-6 was measured 6 hr later by qRT-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figures 5A-C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "c1f9c90a-cc7b-4d1a-a677-ac2f72ed4946",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C63",
+      "claim": "The kinase activity of DNA-PKcs is not necessary for DNA sensing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The finding that the kinase activity of DNA-PKcs was not necessary for DNA sensing prompted an investigation of other interactions with signalling components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that PrkdcSCID cells (lacking kinase activity) still show some DNA sensing capability, supported by data in Figure 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "0c880287-5159-43d1-81bc-100cbdff4d91",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C64",
+      "claim": "DNA-PKcs kinase inhibitor Nu7026 does not impair Cxcl10 production in response to DNA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Fibroblasts were incubated with the indicated dose of DNA-PKcs kinase inhibitor, Nu7026, or carrier control and then stimulated with 10 μg/ml DNA. Cxcl10 was measured by ELISA in the supernatants 24 hr following stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ELISA data shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "da382759-f34a-462f-8b15-9191f460c08d",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C65",
+      "claim": "HEK293 cells do not activate IRF3 in response to DNA stimulation due to a defect in STING.",
+      "claim_type": "EXPLICIT",
+      "source_text": "HEK293 cells do not activate IRF3 in response to DNA stimulation due to a defect in STING",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about HEK293 cells' deficiency in DNA sensing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "7eed7870-b22b-4815-a50b-1e9c8c759ddd",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C66",
+      "claim": "Introduction of inducible STING into HEK293 cells enables them to activate IRF-3 in response to DNA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but by introducing an inducible version of STING into these cells, and then inducing STING expression with doxycycline, the cells activate IRF-3 as shown by its phosphorylation (Figure 5E) and produce cytokines (not shown) in response to double stranded ISD DNA concatamers.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunoblotting data shown in Figure 5E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "3a59f965-87d4-489a-83bf-1886775e6d88",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C67",
+      "claim": "Prior to DNA stimulation, STING exists in a complex with Ku70.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using this system, immunoprecipitation showed that prior to DNA stimulation, STING exists in a complex with Ku70",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunoprecipitation data shown in Figure 5F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "e3fb56a0-6788-45b3-894c-4f1d9ee22acd",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C68",
+      "claim": "The interaction between STING and Ku70 is abrogated following transfection of DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "immunoprecipitation showed that prior to DNA stimulation, STING exists in a complex with Ku70 but this interaction is abrogated following transfection of DNA",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunoprecipitation data shown in Figure 5F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "def23d27-975e-405c-ad11-2a3ed6751293",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C69",
+      "claim": "DNA-PK interacts with the STING-dependent signaling pathway and this changes upon DNA activation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These data suggest that DNA-PK interacts with the STING-dependent signalling pathway and this changes upon DNA activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the immunoprecipitation data showing changing interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "867bbb35-8c88-4b92-8c7d-52995736c18e",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C70",
+      "claim": "MVA activates innate immunity via TLR-dependent and independent pathways.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We tested the relevance of this novel DNA-PK-dependent DNA sensing mechanism to virus infection using VACV strain modified virus Ankara (MVA). MVA activates innate immunity via TLR-dependent and independent pathways",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited prior work on MVA's activation of innate immunity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "429b3201-4991-4526-ab33-6c8c04232bdf",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C71",
+      "claim": "Ku80 and DNA-PKcs co-localize with cytoplasmic viral factories in MVA-infected HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "HeLa cells were untreated or infected with MVA (m.o.i. = 5) for 6 hr. Cells were then fixed and stained with antibodies against (A) Ku80 or DNA-PKcs, and (B) TBK1 or IRF-3. Cytoplasmic viral factories formed after MVA infection are visualised with DAPI (blue). Sites of co-localisation of DNA-PKcs or Ku80 with viral factories are indicated by white arrows.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence data shown in Figure 6A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "bae9a820-8b8b-4f1f-8665-40219941d064",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C72",
+      "claim": "TBK1 and IRF-3 co-localize with cytoplasmic viral factories in MVA-infected HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "HeLa cells were untreated or infected with MVA (m.o.i. = 5) for 6 hr. Cells were then fixed and stained with antibodies against (A) Ku80 or DNA-PKcs, and (B) TBK1 or IRF-3. Cytoplasmic viral factories formed after MVA infection are visualised with DAPI (blue).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunofluorescence data shown in Figure 6B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "32def141-053d-482d-acd4-edbb422052c6",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C73",
+      "claim": "MVA induces an IRF-3-dependent response in fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In fibroblasts, MVA induces an IRF-3-dependent response",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data in Irf3−/− cells shown in Figure 7A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "0f85147f-97ea-4430-8e86-7b99171ccd05",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C74",
+      "claim": "Ifnb and Cxcl10 transcription is impaired in Irf3−/− fibroblasts following MVA infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ifnb and Cxcl10 transcription was measured 6 hr following MVA infection of primary WT and Irf3−/− fibroblasts at an m.o.i. of 5.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 7A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "fd63deef-3fd0-492a-87df-266b779042af",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C75",
+      "claim": "Cxcl10 and Il-6 induction is impaired in Prkdc−/− MEFs following MVA infection but not NDV infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Wild type and Prkdc−/− MEFs were infected with MVA or NDV and the level of induction of Cxcl10 and Il-6 were measured 6 hr later by qRT-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 7B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "62f31d66-01aa-4ea9-be3f-193462966056",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C76",
+      "claim": "Cxcl10 and Il-6 induction is impaired in Xrcc5−/−Trp53−/− MEFs following MVA infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As (A) but with immortalised Xrcc5+/+Trp53−/− and Xrcc5−/−Trp53−/− MEFs.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 7C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "e63710aa-af80-4eba-818f-daea2ca84c23",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C77",
+      "claim": "Isg54 induction is impaired in Prkdc−/− cells following MVA infection but not NDV infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The induction of Isg54 and Nfkbia mRNA was measured by qRT-PCR 6 hr after MVA or NDV infection of wild type and Prkdc−/− cells.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 7D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d371a16c-77fc-4a80-88ff-6c6149f590d1",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C78",
+      "claim": "Nfkbia induction occurs normally in Prkdc−/− cells following MVA infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The induction of Isg54 and Nfkbia mRNA was measured by qRT-PCR 6 hr after MVA or NDV infection of wild type and Prkdc−/− cells.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qPCR data shown in Figure 7D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "8cf8c7e5-6ab7-48b8-9a9d-aaf362cb23c0",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C79",
+      "claim": "VACV protein expression is similar in Prkdc+/+ and Prkdc−/− MEFs following MVA infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Expression of VACV proteins, analysed by immunoblotting with a rabbit polyclonal anti-VACV serum, at the indicated times following infection of primary Prkdc+/+ and Prkdc−/− MEFs with MVA (m.o.i. = 5).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by immunoblotting data shown in Figure 7E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d7a90d32-29b7-4948-99c5-23661096a0b6",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C80",
+      "claim": "DNA transfection induces Ifnb and Il6 transcription in mouse ear pinnae.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To confirm that DNA-PK-dependent DNA sensing contributes to the innate immune response in vivo, we transfected nucleic acids directly into the ear pinnae of mice and assayed the induction of innate immune transcriptional responses by qPCR analysis of extracted RNA 12 hr later. DNA transfection induced both",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by in vivo qPCR data shown in Figure 8A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "c5ea253e-30f1-45fa-9b66-7888f9d3922f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C81",
+      "claim": "Ifnb and Il6 transcription in response to DNA transfection is impaired in Prkdc−/− mice compared to Prkdc+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Groups of five Prkdc+/+ and Prkdc−/− mice were injected intradermally into the ear pinna with cationic lipids complexed with 1 μg DNA or poly(I:C). RNA was extracted from the tissue 12 hr later and Ifnb and Il6 transcription was measured by qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by in vivo qPCR data shown in Figure 8A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "dff3da49-8008-454e-be8e-62f8dcb87dfc",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C82",
+      "claim": "Ifnb and Il6 transcription in response to MVA infection is impaired in Prkdc−/− mice compared to Prkdc+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Groups of five Prkdc+/+ and Prkdc−/− mice were infected intradermally with 106 pfu of MVA or influenza virus strain A/PR/8/34 (PR8) and 12 hr later Ifnb and Il6 transcription was measured by qPCR from RNA extracted from the local site of infection.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by in vivo qPCR data shown in Figure 8B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "decadaba-39cc-491b-bc87-1a1ae9c36024",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C83",
+      "claim": "Ifnb and Il6 transcription in response to influenza virus infection is normal in Prkdc−/− mice compared to Prkdc+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Groups of five Prkdc+/+ and Prkdc−/− mice were infected intradermally with 106 pfu of MVA or influenza virus strain A/PR/8/34 (PR8) and 12 hr later Ifnb and Il6 transcription was measured by qPCR from RNA extracted from the local site of infection.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by in vivo qPCR data shown in Figure 8B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "94497272-1a16-44bc-b778-4b5d9def636b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C84",
+      "claim": "Il6 transcription in response to HSV-1 infection is impaired in Prkdc−/− mice compared to Prkdc+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As (B) but with HSV-1 strain S17. Note that levels of ifnb could not be measured above background in this experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by in vivo qPCR data shown in Figure 8C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a3a97ff6-75f2-46ee-8900-e33df2fc5709",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C85",
+      "claim": "The identification of DNA-PK as a DNA sensor advances understanding of the innate immune response to infection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The identification of DNA-PK as a DNA sensor advances understanding of the innate immune response to infection and expands the current repertoire of DNA sensing mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the overall findings of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ca8f9bf6-7e9b-427b-9f7f-104d8e4e4f95",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C86",
+      "claim": "Previous studies have ruled out a role for DNA-PK in the production of Ifnb in response to DNA in monocytic cells and HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Previous studies have ruled out a role for DNA-PK in the production of Ifnb in response to DNA in monocytic cells (Stetson and Medzhitov, 2006) and HEK293 cells (Zhang et al., 2011a).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to prior published studies that did not find a role for DNA-PK in these cell types.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "0c4de204-eb8a-42fa-b66e-c19f5cb9a78f",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C87",
+      "claim": "DNA-PK components are expressed at high levels in a wide range of tissues and cell types.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, although DNA-PK components are expressed at high levels in a wide range of tissues and cell types",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is general knowledge about DNA-PK expression patterns.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "cc6eb8fb-c9b8-4366-aff8-354938115a5c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C88",
+      "claim": "DNA-PK components are absent in primary macrophages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "they are absent in primary macrophages ((Moll et al., 1999) and data not shown)",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by a cited study and the authors' own observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "57d71561-6b22-4769-9683-4b3041839acb",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C89",
+      "claim": "In fibroblasts and in mice, the innate immune response to DNA and DNA viruses is dependent on DNA-PKcs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and we now show that in fibroblasts and in mice the innate immune response to DNA and DNA viruses is dependent on DNA-PKcs.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the experimental data presented throughout the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "199a743d-a682-45a9-b971-e8ce31ef4a39",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C90",
+      "claim": "The in vivo deficiency in DNA sensing in the absence of DNA-PKcs is observed despite the presumed presence of other DNA sensors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The in vivo deficiency in DNA sensing in the absence of DNA-PKcs is observed despite the presumed presence of other DNA sensors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation of defects in DNA-PKcs-deficient mice despite known existence of other DNA sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "edc96c2e-48a4-4e96-bd85-75f9c6081b4a",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C91",
+      "claim": "DNA-PK loss does not confer a general defect on intracellular innate immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observation that this defect is not extended to RNA, LPS or to RNA viruses shows that DNA-PK loss does not confer a general defect on intracellular innate immune signalling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the specificity of the defect to DNA stimuli only.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "1d1a43b1-0763-4f8d-b51f-950de89ea8d9",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C92",
+      "claim": "The defect in the innate immune response to DNA was greater in cells lacking DNA-PKcs than in cells lacking Ku.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It was noticed that the defect in the innate immune response to DNA was greater in cells lacking DNA-PKcs than in cells lacking Ku",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an observation from comparing experimental data from different knockout cell lines.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ff834fdd-d8c8-4fe9-811e-652e5d5a1ec8",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C93",
+      "claim": "Ku can still bind DNA in the absence of DNA-PKcs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "even though Ku can still bind DNA in the absence of DNA-PKcs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about Ku's DNA-binding properties.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "abf9ff6b-bad4-43a5-8e41-b950950511d3",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C94",
+      "claim": "Signaling can progress with DNA-PKcs interacting with DNA in the absence of Ku, but Ku enhances the signaling process by increasing the affinity of the protein complex for DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This suggests that signalling can progress with DNA-PKcs interacting with DNA in the absence of Ku but that Ku enhances the signalling process by increasing the affinity of the protein complex for DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from comparing the phenotypes of DNA-PKcs-deficient versus Ku-deficient cells.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "5417b092-02e6-44d6-8407-8b862a4eb8ef",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C95",
+      "claim": "The PrkdcSCID mutation kills the kinase activity of DNA-PKcs via introduction of a premature stop codon that results in expression of a truncated protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The well-studied PrkdcSCID mutation kills the kinase activity of DNA-PKcs via the introduction of a premature stop codon that results in expression of a truncated protein (Blunt et al., 1996).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about the PrkdcSCID mutation, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "bd5bd278-4210-4737-8de1-ef4c04b05b8a",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C96",
+      "claim": "Kinase activity is essential for DNA-PKcs to function in DNA repair and V(D)J recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although kinase activity is essential for DNA-PKcs to function in DNA repair, and therefore V(D)J recombination",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about DNA-PKcs function in DNA repair.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "06216c0d-7f2a-4a0a-a1dd-58e5a2b14b96",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C97",
+      "claim": "The PrkdcSCID mutation did not affect the ability of DNA-PK to function as an innate immune DNA sensor.",
+      "claim_type": "EXPLICIT",
+      "source_text": "this mutation did not affect the ability of DNA-PK to function as an innate immune DNA sensor",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data showing that PrkdcSCID cells retain some DNA sensing capability.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d3f36ece-829b-486c-8779-72513faa481b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C98",
+      "claim": "DNA vaccination relies on DNA sensing to invoke a powerful innate immune response that assists the adaptive response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "DNA vaccination relies on DNA sensing to invoke a powerful innate immune response that, in turn, assists the adaptive response (Ishii et al., 2008).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about DNA vaccination mechanisms, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "837aced9-a453-4350-a6c5-f69e7a78e0da",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C99",
+      "claim": "Alum acts by stimulating the release of DNA from neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, one of the most common vaccine adjuvants, alum, acts by stimulating the release of DNA from neutrophils (Zhang et al., 2011b).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on alum's mechanism of action.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ae434da1-2b9f-4b87-8328-027f6c842f89",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C100",
+      "claim": "Neutrophil extracellular traps (NETs) consist of webs of DNA with globular proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Neutrophil extracellular traps (NETs) consist of webs of DNA with globular proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about NET composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a8b08aac-6235-4123-94db-32a62d4b6231",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C101",
+      "claim": "NETs are released by a specific form of cell death.",
+      "claim_type": "EXPLICIT",
+      "source_text": "are released by a specific form of cell death (Fuchs et al., 2007)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about NET release, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "c9c81255-0256-4d22-9baf-9d1dbfddd13b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C102",
+      "claim": "NETs function as antimicrobial traps, thereby contributing to the innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and function as antimicrobial traps, thereby contributing to the innate immune response (Brinkmann et al., 2004)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about NET function, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "98910dff-a7f7-4af4-b506-b591b15243df",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C103",
+      "claim": "DNA can act as a damage-associated molecular pattern (DAMP), accelerating inflammatory responses following its release from dying or damaged cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Outside the context of infection, DNA can act as a damage-associated molecular pattern (DAMP), accelerating inflammatory responses following its release from dying or damaged cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about DNA as a DAMP.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "940db605-846d-4922-b931-04fa6a29f31e",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C104",
+      "claim": "DNA as a DAMP directly contributes to the pathogenesis of atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "directly contributing to the pathogenesis of various diseases such as atherosclerosis (Oka et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on DNA's role in atherosclerosis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "82552399-9679-4ae4-ad63-21fc17f2e37b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C105",
+      "claim": "DNA as a DAMP directly contributes to the pathogenesis of deep vein thrombosis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and deep vein thrombosis (Brill et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on DNA's role in deep vein thrombosis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "027bf118-5dfe-4800-9f9b-e3bcc4b87fb2",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C106",
+      "claim": "The ability of DNA to act as a DAMP may link nucleic acid sensing to several autoimmune disorders.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The ability of DNA to act as a DAMP may also link nucleic acid sensing to several autoimmune disorders.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative connection between DNA sensing and autoimmune disorders.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "350957c5-4b7e-4f16-ae31-51b411c635ba",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C107",
+      "claim": "Autoimmune conditions are characterized by immune responses against host molecules and tissues and are frequently associated with inflammation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In general, autoimmune conditions are characterised by immune responses against host molecules and tissues and are frequently associated with inflammation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is general knowledge about autoimmune conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "792c8f2f-9dcc-47e6-a183-caea5768f2f8",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C108",
+      "claim": "Deregulation of immune signaling may lead to autoinflammation and autoimmunity in some instances.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although the causative factors of many such conditions are incompletely understood, it is clear that deregulation of immune signalling may lead to autoinflammation and autoimmunity in some instances (Rioux and Abbas, 2005).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about immune dysregulation, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "b076603e-ca60-48cb-8b3f-04833027b80b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C109",
+      "claim": "The accumulation of DNA and its subsequent detection by DNA sensing pathways can result in the initiation of autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, the accumulation of DNA and its subsequent detection by DNA sensing pathways can result in the initiation of autoimmune diseases.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by the examples that follow in the text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a9767f5f-075d-4a61-9ea2-c8dd9f7bf4c8",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C110",
+      "claim": "Mice lacking Trex1 or DNaseII develop spontaneous autoimmune disorders associated with the initiation of IRF-3-dependent cytosolic DNA sensing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mice which lack either of two enzymes responsible for degradation of DNA, 3′ repair exonuclease 1 (Trex1) and DNaseII, develop spontaneous autoimmune disorders associated with the initiation of IRF-3-dependent cytosolic DNA sensing (Kawane et al., 2006; Stetson et al., 2008; Okabe et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies on Trex1 and DNaseII knockout mice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "91c69958-6e82-4acc-bc9e-69c799150cb1",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C111",
+      "claim": "The absence of DNaseII results in chronic polyarthritis thought to be a result of inflammation caused by lack of clearance of DNA from macrophages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The absence of DNaseII results in chronic polyarthritis which is thought to be a result of the inflammation caused by a lack of clearance of DNA from macrophages (Kawane et al., 2006; Okabe et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies on DNaseII-deficient mice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ef63bbc9-96b1-47fe-b253-8c2f2f4d0f1c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C112",
+      "claim": "Trex1 deficiency or mutation is associated with systemic lupus erythematosus, chilblain lupus, and Aicardi-Goutières syndrome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Trex1 deficiency or mutation, on the other hand, is associated with systemic lupus erythematosus (SLE), chilblain lupus and the human disease Aicardi-Goutières syndrome (AGS) (Lee-Kirsch et al., 2007a, 2007b; Stetson et al., 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies on Trex1 deficiency.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "16c89a4d-71f3-4238-9b15-a5d38b077a22",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C113",
+      "claim": "In Trex1 deficiency, inflammation is initiated from non-haematopoietic cells via a STING-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and in this case inflammation is initiated from non-haematopoietic cells via a STING-dependent pathway (Gall et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on Trex1 deficiency mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "4093afe0-13f1-4d1c-9e23-86dfa3db64b4",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C114",
+      "claim": "Defects in the clearance of NETs have been suggested to contribute to the initiation of SLE.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, defects in the clearance of NETs have also been suggested to contribute to the initiation of SLE (Hakkim et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on NET clearance in SLE.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a509f5d2-3288-4d05-b2e9-e38004d58619",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C115",
+      "claim": "AIM2 is up-regulated in a mouse model of lupus and in patients with SLE-associated nephritis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, the up-regulation of the inflammasome-activating DNA sensor absent in melanoma 2 (AIM2) in a mouse model of lupus and in patients with SLE-associated nephritis (Roberts et al., 2009; Kimkong et al., 2009)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies on AIM2 in lupus.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "15cbcc4c-ffe7-4866-9a25-bbcd7ee2a174",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C116",
+      "claim": "Anti-DNA-PK and anti-RNA-Pol III antibodies are present in patients with SLE and systemic sclerosis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and the presence of anti-DNA-PK and anti-RNA-Pol III antibodies in patients with SLE and systemic sclerosis (Cavazzana et al., 2008, 2009)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies on autoantibodies in autoimmune diseases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "c5a7ed97-958e-4766-b727-82f02f8da8c1",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C117",
+      "claim": "The identification of several candidate DNA sensors in multiple cell types in recent years suggests the evolution of redundancy in this system.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The identification of several candidate DNA sensors in multiple cells types in recent years (Hornung and Latz, 2010) suggests the evolution of redundancy in this system.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is an inference drawn from the existence of multiple DNA sensors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "e66d3c42-d6f5-450e-8570-47a7afb32466",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C118",
+      "claim": "Redundancy in DNA sensing is not surprising given the tendency of pathogens to evolve escape-mechanisms for evading host immune mediators.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This redundancy is not surprising given the tendency of pathogens to evolve escape-mechanisms for evading host immune mediators (Versteeg and García-Sastre, 2010; Bardoel and Strijp, 2011)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about pathogen-host coevolution, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ffee36a1-51b9-445d-914d-952f9510946c",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C119",
+      "claim": "PYHIN domain proteins, such as AIM2 and IFI16, are a mammalian addition to the ancient innate immune system.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the context of DNA sensing this is exemplified by the relatively recent evolution of the PYHIN domain proteins, such AIM2 and IFI16 (Schattgen and Fitzgerald, 2011), which are a mammalian addition to the ancient innate immune system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about PYHIN protein evolution, supported by citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "cc9aa03e-acaf-44e3-9971-6ebea9d27839",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C120",
+      "claim": "Murine cytomegalovirus protein vIRA interacts with DAI and inhibits its ability to initiate DNA-induced necroptosis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, a function of DAI was recently uncovered by identifying murine cytomegalovirus protein, vIRA, which interacts with DAI and inhibits its ability to initiate DNA-induced necroptosis (Upton et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by the cited study on vIRA and DAI.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "47d86536-ae6e-4c56-befa-100fbcfca8ad",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C121",
+      "claim": "The biological function for DAI may be in the initiation of a cell death pathway, rather than an IRF-3 dependent inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The biological function for DAI may therefore be in the initiation of a cell death pathway, rather than an IRF-3 dependent inflammatory response.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the finding that DAI initiates necroptosis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "996aa4ef-d052-491f-ade1-3820bd1b3d12",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C122",
+      "claim": "There are at least three outcomes to cytosolic DNA sensing: induction of cytokine expression via IRF-3 and NF-kB activation, secretion of IL-1β via the AIM2 inflammasome, and induction of necroptosis by DAI.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This indicates there are at least three outcomes to cytosolic DNA sensing, the induction of cytokine expression via IRF-3 and NF-kB activation, the secretion of IL-1β via the AIM 2 inflammasome and the induction of necroptosis by DAI.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a synthesis of known DNA sensing outcomes based on the literature discussed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "f1e01910-fce9-40c5-acd1-66753601c0b8",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C123",
+      "claim": "It is not clear how different DNA sensing responses contribute to the overall immune response to infection by DNA pathogens and to what extent they are cell and tissue-type dependent.",
+      "claim_type": "EXPLICIT",
+      "source_text": "What is not clear though, is how these different responses contribute to the overall immune response to infection by DNA pathogens and to what extent they are cell and tissue-type dependent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This acknowledges gaps in current understanding of DNA sensing mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "2332f9ad-714d-4518-a7e5-e2d17fe88c87",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C124",
+      "claim": "These findings provide a novel function for DNA-PK in the innate immune response, beyond its roles in DNA repair and V(D)J recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Overall these findings provide a novel function for DNA-PK in the innate immune response, beyond its roles in DNA repair and V(D)J recombination",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion drawn from the collective findings of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "612e2427-4cc0-4f40-b600-6b61988b1c3d",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "claim_id": "C125",
+      "claim": "These findings increase our understanding of the innate immune response to cytoplasmic DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and increase our understanding of the innate immune response to cytoplasmic DNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion about the impact of the study's findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R1",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The pull-down experiments with mass spectrometry identification, cell fractionation demonstrating cytoplasmic localization, and binding specificity to DNA but not RNA provide strong direct biochemical evidence. The requirement for Ku80 for efficient DNA-PKcs binding is well-demonstrated through knockout experiments.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R2",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Multiple independent knockout cell lines (DNA-PKcs, Ku80, Ku70) show consistent defects in cytokine and chemokine responses to DNA stimulation across multiple readouts (transcription, protein secretion). RNA responses remain intact, demonstrating specificity. Rescue experiments restore function, and the phenotype is consistent across primary and transformed cells from multiple genetic backgrounds.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "80ae73bc-a476-451b-ad3c-998f2aef5894",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R3",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Knockout studies demonstrate dependence on IRF-3 and TBK1 for DNA-induced responses. IRF-3 translocation is specifically impaired in DNA-PK-deficient cells after DNA but not RNA stimulation, while NF-κB signaling remains intact. The STING-Ku70 interaction data and its disruption upon DNA stimulation support pathway involvement, though complete mechanistic details remain to be elucidated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "bc69bb89-adf0-45cc-8915-5ad81fa03596",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R4",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "PrkdcSCID cells lacking kinase activity retain substantial DNA sensing capability for both transfected DNA and DNA virus infection, and pharmacological kinase inhibition does not block responses. This demonstrates that DNA-PK functions in DNA sensing through a kinase-independent mechanism, likely as a scaffolding protein, distinct from its kinase-dependent role in DNA repair.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R5",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "DNA-PK and signaling components colocalize with viral replication sites during infection. Knockout cells show impaired IRF-3-dependent cytokine responses to DNA viruses (MVA, HSV-1) but not RNA viruses (NDV), while NF-κB responses and viral replication remain intact. This demonstrates DNA-PK specifically senses DNA virus infection without affecting viral permissiveness.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "d17ca444-1686-4600-98cd-5109de7fffdf",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R6",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "In vivo experiments in DNA-PKcs-deficient mice show impaired cytokine responses to DNA transfection and DNA virus infection (MVA, HSV-1) but normal responses to RNA virus (influenza). The sample size is modest (n=5 per group) but the effects are statistically significant and consistent with the in vitro findings, demonstrating physiological relevance.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R7",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The cell-type specificity is well-established: prior studies ruled out DNA-PK in monocytes and HEK293 cells, while current work demonstrates function in fibroblasts and in vivo. DNA-PK is absent in macrophages but highly expressed in fibroblasts. The defect is specific to DNA stimuli without affecting RNA, LPS, or RNA virus responses, demonstrating this is not a general immune defect.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "ce0bb5ec-9e78-432e-bd1e-debad7ed0275",
+      "content_id": "bb5caea1-75ee-47a7-b2ea-668108649e08",
+      "result_id": "R8",
+      "result_type": "llm",
+      "reviewer_id": "LLM",
+      "reviewer_name": "LLM",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The collective experimental evidence from biochemical binding studies, genetic knockouts, rescue experiments, virus infection studies, and in vivo validation establishes a novel cytoplasmic function for DNA-PK in innate immunity. This is distinct from its established nuclear roles in DNA repair and V(D)J recombination, expanding understanding of DNA-PK biology and cytoplasmic DNA sensing mechanisms.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "0b3c016c-4854-4b82-8645-ff3e33f618bc",
+      "content_id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "result_id": "R1",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express concern that MEF-based results may be misleading due to 'MEF heterogeneity' and note that 'different preps of MEFs are not identical in their gene expression and behavior.' They require testing 'more than one preparation of MEFs' and 'complementation experiments by re-introducing the gene of interest' to rule out artifacts from transformation status. While complementation with Ku80 was performed (C47), reviewers indicate this is insufficient without broader validation across multiple MEF lines and complementation of DNA-PKcs itself.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "8e3d0439-9195-4013-8144-b38c71df69a7",
+      "content_id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "result_id": "R2",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Reviewers explicitly challenge the kinase-independent mechanism, stating 'It is also surprising that the catalytic activity of DNA-PK is not required for the anti-viral response.' They note that while 'the authors suggest that DNA-PK may function as a scaffold for signaling complex assembly,' they emphasize 'no evidence is provided here' to substantiate this hypothesis. The reviewers directly question the interpretation of the PrkdcSCID and inhibitor data without supporting mechanistic evidence.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "074a90e3-a6a9-498a-9a7e-62137b55baca",
+      "content_id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "result_id": "R3",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers note that 'DNA-PK deficiency appears to affect some but not all DNA induced genes' and request 'full gene expression analysis using microarray' to comprehensively characterize this selectivity. They indicate that comparing gene expression in unstimulated versus stimulated cells 'would help to address the issue of MEF heterogeneity and transformative state.' The selective effects on IRF-3-dependent genes (Isg54) but not NF-κB genes (Nfkbia) require more comprehensive validation to rule out cell-line specific artifacts.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "a51c3177-d7cc-4541-96d1-16f1806c24d5",
+      "content_id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "result_id": "R4",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims about IRF-3 and TBK1 dependence are based on knockout MEF experiments, which reviewers indicate may be compromised by MEF heterogeneity and transformation artifacts. Reviewers require 'more than one preparation of MEFs to confirm all the key results' and complementation experiments, suggesting uncertainty about whether these pathway dependencies reflect genuine DNA-PK function or MEF-specific effects.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc",
+      "content_id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "result_id": "R5",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These viral infection results using PrkdcSCID and knockout MEFs are subject to the same concerns about MEF heterogeneity and transformation status raised by reviewers. The requirement for 'complementation experiments' to 'test recovery of the response to DNA and the virus' and to 'rule out contribution of cell transformation status' applies directly to these viral infection claims, indicating reviewer uncertainty about their validity without additional controls.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37",
+      "content_id": "f1a0a195-c68c-401f-beb9-819a9d7696f2",
+      "result_id": "R6",
+      "result_type": "peer",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "PEER_REVIEW",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The in vivo mouse experiments are not subject to the MEF heterogeneity concerns raised by reviewers. These claims demonstrate DNA-PK dependence in intact animals rather than cultured cell lines, providing validation independent of the MEF-based studies. Reviewers did not raise concerns about the in vivo data, implicitly accepting these findings as more robust evidence for DNA-PK's role in DNA sensing.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d05dfb97-ec33-4ee3-b04a-debf38eba960",
+      "result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b"
+    },
+    {
+      "claim_id": "05fea332-2e9b-4a7c-a8ea-f7673b897f65",
+      "result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b"
+    },
+    {
+      "claim_id": "1e8d26c5-f0ad-479f-b249-ebbd5996e9ef",
+      "result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b"
+    },
+    {
+      "claim_id": "782f3d39-a68e-4a84-ac2f-1ffa0b76e1be",
+      "result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b"
+    },
+    {
+      "claim_id": "96d1e543-ee3d-420d-8c5d-ce4e2c109545",
+      "result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b"
+    },
+    {
+      "claim_id": "d6dee918-ee30-47cb-ad00-f2cd0b116fda",
+      "result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b"
+    },
+    {
+      "claim_id": "56059ecf-7b08-45cb-8f5d-a70b12aa69c4",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "9f18814d-0b04-4470-b9d5-671454f4aad3",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "eb79ec60-725b-488d-8144-4357e98b6ab8",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "d224e770-6871-423d-96d4-ad5a5796509e",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "23ca3c59-257d-43b7-bd03-250ce7b6d55b",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "314a77df-521b-415f-bc04-e6d293eb8442",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "8380fa15-5ed2-4aab-a729-6e41d24e2ede",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "48cf4fbd-0287-4054-bb53-64607a3640bb",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "ad82fede-7667-4b79-92f9-6c02d4ec6f10",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "b1ab0420-1a9b-4dbf-90aa-118841d4852c",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "624ba31d-441f-47df-a829-8270d6443313",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "59baf225-2a59-4d83-b6b8-795af3033dcd",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "b8a53fc9-f992-46d2-acf3-2e999d777824",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "c65c1c07-cd3e-4a1a-86e1-e7fb7a2e829b",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "97487f0d-4bd0-48ee-9489-b822fbb07210",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "ada4416f-bf83-453c-89f0-1d8f644ea93c",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "a9f503cf-c483-4778-b005-a9d15527088c",
+      "result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff"
+    },
+    {
+      "claim_id": "59e56a5a-413c-4e16-bf0b-742e010a2681",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "103b0d08-e083-493b-8012-f35599134b4c",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "ec46a09f-838d-4083-9de5-c630d0d5347d",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "97fbac95-2255-445b-a28d-eda12089cf4c",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "698699db-4233-4216-885f-d784c8a43161",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "b1b8ec52-bbf4-4c87-9fc6-d814d440a353",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "fa382dce-bcdf-49bb-ac73-c0750973868f",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "a2a1f5d5-3dfd-4dbf-b721-383af53d0cd4",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "f378ac67-e69f-422e-aad9-d516ddc93e5e",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "1428a8f2-6b2f-4b8f-b0b7-e33ff1bf1d58",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "b2f29539-7058-410b-abef-a7e193c4135f",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "3a59f965-87d4-489a-83bf-1886775e6d88",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "e3fb56a0-6788-45b3-894c-4f1d9ee22acd",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "def23d27-975e-405c-ad11-2a3ed6751293",
+      "result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894"
+    },
+    {
+      "claim_id": "91922b8d-220d-4031-8063-5debc21b8531",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "7488359a-565d-42e9-aeb1-13aa81508335",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "7baaaa91-bc54-4296-b7f3-9033f010882f",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "3a33d24e-8838-499d-b797-966c8d9e891b",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "c1f9c90a-cc7b-4d1a-a677-ac2f72ed4946",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "0c880287-5159-43d1-81bc-100cbdff4d91",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "5417b092-02e6-44d6-8407-8b862a4eb8ef",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "bd5bd278-4210-4737-8de1-ef4c04b05b8a",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "06216c0d-7f2a-4a0a-a1dd-58e5a2b14b96",
+      "result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596"
+    },
+    {
+      "claim_id": "19b6d4f2-cc71-4207-b31c-80f048840b34",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "08676070-1286-4540-8de9-2f37e38b2ab3",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "867bbb35-8c88-4b92-8c7d-52995736c18e",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "429b3201-4991-4526-ab33-6c8c04232bdf",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "bae9a820-8b8b-4f1f-8665-40219941d064",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "32def141-053d-482d-acd4-edbb422052c6",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "0f85147f-97ea-4430-8e86-7b99171ccd05",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "fd63deef-3fd0-492a-87df-266b779042af",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "62f31d66-01aa-4ea9-be3f-193462966056",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "e63710aa-af80-4eba-818f-daea2ca84c23",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "d371a16c-77fc-4a80-88ff-6c6149f590d1",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "8cf8c7e5-6ab7-48b8-9a9d-aaf362cb23c0",
+      "result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a"
+    },
+    {
+      "claim_id": "d7a90d32-29b7-4948-99c5-23661096a0b6",
+      "result_id": "d17ca444-1686-4600-98cd-5109de7fffdf"
+    },
+    {
+      "claim_id": "c5ea253e-30f1-45fa-9b66-7888f9d3922f",
+      "result_id": "d17ca444-1686-4600-98cd-5109de7fffdf"
+    },
+    {
+      "claim_id": "dff3da49-8008-454e-be8e-62f8dcb87dfc",
+      "result_id": "d17ca444-1686-4600-98cd-5109de7fffdf"
+    },
+    {
+      "claim_id": "decadaba-39cc-491b-bc87-1a1ae9c36024",
+      "result_id": "d17ca444-1686-4600-98cd-5109de7fffdf"
+    },
+    {
+      "claim_id": "94497272-1a16-44bc-b778-4b5d9def636b",
+      "result_id": "d17ca444-1686-4600-98cd-5109de7fffdf"
+    },
+    {
+      "claim_id": "ca8f9bf6-7e9b-427b-9f7f-104d8e4e4f95",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "0c4de204-eb8a-42fa-b66e-c19f5cb9a78f",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "cc6eb8fb-c9b8-4366-aff8-354938115a5c",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "57d71561-6b22-4769-9683-4b3041839acb",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "199a743d-a682-45a9-b971-e8ce31ef4a39",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "edc96c2e-48a4-4e96-bd85-75f9c6081b4a",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "1d1a43b1-0763-4f8d-b51f-950de89ea8d9",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "ff834fdd-d8c8-4fe9-811e-652e5d5a1ec8",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "abf9ff6b-bad4-43a5-8e41-b950950511d3",
+      "result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5"
+    },
+    {
+      "claim_id": "283dd866-823d-4bf9-b9e8-ac61880e230d",
+      "result_id": "ce0bb5ec-9e78-432e-bd1e-debad7ed0275"
+    },
+    {
+      "claim_id": "2332f9ad-714d-4518-a7e5-e2d17fe88c87",
+      "result_id": "ce0bb5ec-9e78-432e-bd1e-debad7ed0275"
+    },
+    {
+      "claim_id": "612e2427-4cc0-4f40-b600-6b61988b1c3d",
+      "result_id": "ce0bb5ec-9e78-432e-bd1e-debad7ed0275"
+    },
+    {
+      "claim_id": "56059ecf-7b08-45cb-8f5d-a70b12aa69c4",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "59e56a5a-413c-4e16-bf0b-742e010a2681",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "9f18814d-0b04-4470-b9d5-671454f4aad3",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "08676070-1286-4540-8de9-2f37e38b2ab3",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "8380fa15-5ed2-4aab-a729-6e41d24e2ede",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "48cf4fbd-0287-4054-bb53-64607a3640bb",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "ad82fede-7667-4b79-92f9-6c02d4ec6f10",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "b1ab0420-1a9b-4dbf-90aa-118841d4852c",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "624ba31d-441f-47df-a829-8270d6443313",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "59baf225-2a59-4d83-b6b8-795af3033dcd",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "b8a53fc9-f992-46d2-acf3-2e999d777824",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "c65c1c07-cd3e-4a1a-86e1-e7fb7a2e829b",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "97487f0d-4bd0-48ee-9489-b822fbb07210",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "ada4416f-bf83-453c-89f0-1d8f644ea93c",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "a9f503cf-c483-4778-b005-a9d15527088c",
+      "result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc"
+    },
+    {
+      "claim_id": "c1f9c90a-cc7b-4d1a-a677-ac2f72ed4946",
+      "result_id": "8e3d0439-9195-4013-8144-b38c71df69a7"
+    },
+    {
+      "claim_id": "0c880287-5159-43d1-81bc-100cbdff4d91",
+      "result_id": "8e3d0439-9195-4013-8144-b38c71df69a7"
+    },
+    {
+      "claim_id": "06216c0d-7f2a-4a0a-a1dd-58e5a2b14b96",
+      "result_id": "8e3d0439-9195-4013-8144-b38c71df69a7"
+    },
+    {
+      "claim_id": "caa7542a-5d98-40c7-9ef0-ca4542c95584",
+      "result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca"
+    },
+    {
+      "claim_id": "1428a8f2-6b2f-4b8f-b0b7-e33ff1bf1d58",
+      "result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca"
+    },
+    {
+      "claim_id": "b2f29539-7058-410b-abef-a7e193c4135f",
+      "result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca"
+    },
+    {
+      "claim_id": "e63710aa-af80-4eba-818f-daea2ca84c23",
+      "result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca"
+    },
+    {
+      "claim_id": "d371a16c-77fc-4a80-88ff-6c6149f590d1",
+      "result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca"
+    },
+    {
+      "claim_id": "ec46a09f-838d-4083-9de5-c630d0d5347d",
+      "result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5"
+    },
+    {
+      "claim_id": "97fbac95-2255-445b-a28d-eda12089cf4c",
+      "result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5"
+    },
+    {
+      "claim_id": "698699db-4233-4216-885f-d784c8a43161",
+      "result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5"
+    },
+    {
+      "claim_id": "b1b8ec52-bbf4-4c87-9fc6-d814d440a353",
+      "result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5"
+    },
+    {
+      "claim_id": "fa382dce-bcdf-49bb-ac73-c0750973868f",
+      "result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5"
+    },
+    {
+      "claim_id": "a2a1f5d5-3dfd-4dbf-b721-383af53d0cd4",
+      "result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5"
+    },
+    {
+      "claim_id": "91922b8d-220d-4031-8063-5debc21b8531",
+      "result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc"
+    },
+    {
+      "claim_id": "7488359a-565d-42e9-aeb1-13aa81508335",
+      "result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc"
+    },
+    {
+      "claim_id": "7baaaa91-bc54-4296-b7f3-9033f010882f",
+      "result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc"
+    },
+    {
+      "claim_id": "3a33d24e-8838-499d-b797-966c8d9e891b",
+      "result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc"
+    },
+    {
+      "claim_id": "fd63deef-3fd0-492a-87df-266b779042af",
+      "result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc"
+    },
+    {
+      "claim_id": "62f31d66-01aa-4ea9-be3f-193462966056",
+      "result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc"
+    },
+    {
+      "claim_id": "d7a90d32-29b7-4948-99c5-23661096a0b6",
+      "result_id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37"
+    },
+    {
+      "claim_id": "c5ea253e-30f1-45fa-9b66-7888f9d3922f",
+      "result_id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37"
+    },
+    {
+      "claim_id": "dff3da49-8008-454e-be8e-62f8dcb87dfc",
+      "result_id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37"
+    },
+    {
+      "claim_id": "decadaba-39cc-491b-bc87-1a1ae9c36024",
+      "result_id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37"
+    },
+    {
+      "claim_id": "94497272-1a16-44bc-b778-4b5d9def636b",
+      "result_id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "afe6afeb-b976-4863-88c3-0950a466e003",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "d17ca444-1686-4600-98cd-5109de7fffdf",
+      "peer_result_id": "20d1dae3-12d7-42c0-9f99-a8dc14f2eb37",
+      "llm_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "notes": "Perfect overlap on in vivo mouse experiments (C80-C84). Both agree these findings are well-supported. Peer reviewers did not raise concerns about in vivo data, accepting it as robust validation independent of MEF-based studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "4fed1cf4-0a97-4d63-bb88-5b2e37e13d0c",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "68404bd5-4a05-4f8a-b9f0-0df60782a5ff",
+      "peer_result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "High overlap (68.4%) on knockout cell line cytokine response claims (C1, C3, C37-C48). LLM finds evidence sufficient with rescue experiments. Peer reviewers express uncertainty due to MEF heterogeneity concerns, requiring testing of multiple MEF preparations and broader complementation beyond just Ku80.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "44f943de-4e76-454b-87bf-112a7d06e977",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596",
+      "peer_result_id": "8e3d0439-9195-4013-8144-b38c71df69a7",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNSUPPORTED",
+      "agreement_status": "disagree",
+      "notes": "Overlap on kinase-independent mechanism claims (C63, C64, C97). LLM accepts PrkdcSCID and inhibitor data as demonstrating kinase-independent scaffolding function. Peer reviewers explicitly challenge this, stating 'no evidence is provided' for the scaffold hypothesis and questioning the interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "684a3971-a4ed-44b4-9fc9-6df2618fd48f",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894",
+      "peer_result_id": "a51c3177-d7cc-4541-96d1-16f1806c24d5",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Overlap on IRF-3 and TBK1 pathway dependence (C49-C54). LLM finds knockout studies demonstrate clear pathway involvement. Peer reviewers express uncertainty, indicating these MEF-based results may be compromised by heterogeneity and transformation artifacts, requiring multiple preparations and complementation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "02140b9d-a517-4fad-9ea3-7519dd7b5dff",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "bc69bb89-adf0-45cc-8915-5ad81fa03596",
+      "peer_result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Partial overlap on PrkdcSCID viral infection claims (C59-C62). LLM finds evidence supports kinase-independent sensing. Peer reviewers uncertain due to MEF heterogeneity concerns, requiring complementation to rule out transformation status artifacts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "cf4af62f-52d6-4f26-98bc-f1c5a57838c5",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a",
+      "peer_result_id": "2b3212b4-164c-4214-b8e3-c32f3352d4fc",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap on DNA virus sensing claims (C75, C76). LLM supports colocalization and IRF-3-dependent responses. Peer reviewers uncertain due to MEF-based experimental concerns requiring complementation and validation across multiple cell preparations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "75afee8f-2dcd-4cbf-8029-52d139a8afbb",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "6c8dc26b-7cc1-4fa5-9acf-a4473ab0fd9a",
+      "peer_result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap on selective gene effects (C77, C78). LLM accepts selective IRF-3 pathway effects. Peer reviewers note DNA-PK affects some but not all DNA-induced genes, requesting full microarray analysis to comprehensively characterize selectivity and rule out MEF artifacts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "5d382fd5-d508-466a-aec5-d0e08d1e7162",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "80ae73bc-a476-451b-ad3c-998f2aef5894",
+      "peer_result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca",
+      "llm_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disagree",
+      "notes": "Minimal overlap on STING-Ku70 interaction and selective gene effects (C56, C57). LLM finds pathway involvement supported. Peer reviewers uncertain about selective effects, requiring microarray analysis to validate that selectivity is not a MEF-specific artifact.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "e657ba93-3007-4f47-8502-903b0de5bcb2",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "9c5181a0-f240-4af0-848d-ab938bd5bc6b",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "LLM evaluates biochemical binding and localization claims (C28-C31, C35-C36) as supported. No corresponding peer review result addresses these specific biochemical characterization claims directly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "f2445802-3963-4721-a5a6-d67cdd34c24f",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "f54f3e45-94a0-4242-9069-3e0bfeecebe5",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "LLM evaluates cell-type specificity claims (C86-C94) as supported. No corresponding peer review result directly addresses these claims about differential expression and function across cell types.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "8f23cd77-2d2f-4251-b25f-ff97bab98f05",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": "ce0bb5ec-9e78-432e-bd1e-debad7ed0275",
+      "peer_result_id": null,
+      "llm_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "notes": "LLM evaluates overall novel cytoplasmic function claims (C25, C124, C125) as supported. No corresponding peer review result addresses these high-level synthesis claims directly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "c47f892a-d7d0-4469-b6fa-9b83e6a6205a",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": null,
+      "peer_result_id": "0b3c016c-4854-4b82-8645-ff3e33f618bc",
+      "llm_status": null,
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disjoint",
+      "notes": "Peer review addresses claims C2, C4, C27, C32-C34 not fully covered by any single LLM result. These relate to MEF heterogeneity concerns across multiple experimental contexts that peer reviewers group together.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    },
+    {
+      "id": "936e09cf-b253-4878-ad64-e5df4ec7a029",
+      "submission_id": "900ff14d-7dbd-4848-aebd-771d3f42786d",
+      "llm_result_id": null,
+      "peer_result_id": "074a90e3-a6a9-498a-9a7e-62137b55baca",
+      "llm_status": null,
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "disjoint",
+      "notes": "Peer review addresses selective gene expression claims C43 not covered by LLM results. Reviewers specifically request microarray analysis to comprehensively characterize which genes are affected.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-16T22:09:37.764347Z"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- Jody C Culham, University of Western Ontario , Canada
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.00801.013](https://doi.org/10.7554/eLife.00801.013)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Skill learning strengthens cortical representations of motor sequences” for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.
+
+The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+All three reviewers were impressed with the paper, with one describing it as “an elegant […] paper examining how the neural representations of motor sequences change with motor learning”. In particular, the reviewers “applaud the authors for the application of several sophisticated and newly developed analysis techniques to examine the neural basis of sequence skill learning” and conclude that: “This finding is novel and of considerable conceptual relevance, and will inspire future neuroimaging research on motor learning.” While the reviewers were enthusiastic about the manuscript’s potential for publication in eLife, they also raised some major concerns that need to be addressed.
+
+1) The authors acquired fMRI data for the learned and non-learned sequences in separate runs, and only apply classification within a fMRI run to test whether one learned sequence could be classified better against other learned sequences or whether one non-learned sequence could be classified better against other non-learned sequences (within-class classification). The authors need to comment on whether their data would also allow classification of learned sequences against non-learned sequences (comparison between classes of sequences as defined by the learning history) and to classify a learned sequence against other non-learned sequences. If such comparisons are not possible using the present dataset, please speculate on what one might expect.
+
+2) The authors could do a better job of weaving some key methodological details throughout their Results section. The authors begin discussing their behavioural results (Figure 2) and basic fMRI findings (in Figure 3) before a reader is made aware of the exact task that was employed. Figure 1 requires more details for a reader to fully understand the details of the task and appreciate the results. The authors should re-write parts of the beginning of the Results section to better explain to the reader the key components of the task.
+
+3) A related problem is that fMRI activity was averaged over the cueing and execution phase. Would the same classification results emerge if classification were applied to the instruction phase and execution phase separately? It would be interesting to present classification results based on the cueing or execution phase separately.
+
+4) Figure 3 should include direct statistical comparisons between trained and untrained data in addition to the indirect comparisons provided in the overlap maps. Indirect comparisons are hard to interpret because “a difference in significance doesn’t necessarily indicate a significant difference”. The manuscript text describes the fact that trained sequences evoke less activity than untrained ones but the direct contrast, so it would be nice to see this in this figure (3A) and with p values (not just %SC values).
+
+5) The authors also find considerable general training effects when subjects performed non-trained finger sequences. In addition, classification accuracy increased for non-trained movements when using an increasing number of classifiers (Figure 2c, Figure 5). The authors need to stress this important finding in the paper. Please provide an example for the force traces of a non-trained sequence in Figure 2 (as you did for a trained sequence in Figure 2A and B) and mention this finding in the Abstract. The authors should also present maps showing how well learned and non-learned sequences were presented in the cortex at baseline and after training. This should be possible with their surface-based searchlight procedure (four maps) to visualize the general and sequence-specific effects of learning on the representations.
+
+6) The sequence was cued by presenting a series of numbers. The pre-SMA has been shown to be critically involved in word repetition. This might have been a strategy to rehearse the sequence, especially for non-learned sequences and, thus, might have contributed to differences in the multivariate pattern associated with learned and non-learned sequences. This issue needs to be at least discussed in the revised paper.
+
+7) An important result that should also be mentioned in the Abstract is that when decomposing the activity, 99% of the voxel-by-voxel variance was explained by a pattern component that is common to all trained sequences, with less than 1% being attributable to the sequence-specific component (Figure 6). This means that the sequence-specific pattern expression was much weaker than the patterns shared across sequences. This should be emphasized more in the Abstract and Discussion. This common component seems to increase with learning. Does the individual increase in explained voxel-by-voxel variance predict/correlate with the individual behavioral improvement of non-learned sequences.
+
+8) The authors present some exciting and, in some cases, unexpected observations. For instance, while it is clear that sequence-specific decoding should emerge in well-documented areas like SMA or M1, the authors also report robust decoding in very posterior regions of the IPS as well as OPJ. This seems like a very important and novel finding as sequences have not been typically explored there (at least in the monkey neurophysiological literature). Yet, we could not find any discussion of these results in the paper. In addition, areas like PMd and even S1 show a set of interesting effects and these findings are not mentioned in the Discussion section. We believe that interesting questions can be asked of these regions. For instance, what type of “learning” do the authors think is taking place in S1 versus areas like OPJ? Given that no strict word limits are imposed by eLife, we would recommend that the authors seriously expand the scope of their Discussion to address many of these more novel findings.

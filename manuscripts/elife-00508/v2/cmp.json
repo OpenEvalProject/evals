@@ -1,0 +1,134 @@
+[
+  {
+    "llm_result_id": "R3",
+    "peer_result_id": "R3",
+    "llm_status": "SUPPORTED",
+    "peer_status": "UNCERTAIN",
+    "agreement_status": "partial",
+    "notes": "High overlap (92.3% Jaccard) on GABAA receptor mechanism claims. LLM finds pharmacological and genetic evidence (bicuculline, picrotoxin, β2 knockdown) sufficient despite incomplete blocking. Peer reviewers acknowledge the evidence but explicitly request additional non-pharmacological validation, indicating they view current evidence as incomplete. This represents a threshold difference in what constitutes sufficient proof.",
+    "n_llm": 13,
+    "n_peer": 12,
+    "n_itx": 12
+  },
+  {
+    "llm_result_id": "R5",
+    "peer_result_id": "R7",
+    "llm_status": "UNCERTAIN",
+    "peer_status": "SUPPORTED",
+    "agreement_status": "partial",
+    "notes": "High overlap (88.2% Jaccard) on electrophysiology and heterogeneity claims. LLM rates UNCERTAIN because minority response (14.9-15.9%) doesn't clearly explain population-level phenotype. Peer reviewers implicitly accept these technical findings without questioning the interpretation gap, rating SUPPORTED. This reflects different standards for mechanistic completeness vs. data quality acceptance.",
+    "n_llm": 17,
+    "n_peer": 15,
+    "n_itx": 15
+  },
+  {
+    "llm_result_id": "R6",
+    "peer_result_id": "R8",
+    "llm_status": "SUPPORTED",
+    "peer_status": "SUPPORTED",
+    "agreement_status": "agree",
+    "notes": "Strong overlap (64.3% Jaccard) on cell cycle exit and differentiation mechanism. Both agree the convergent evidence (BrdU, transcription factors, clonal analysis, no increased death) robustly supports the proposed mechanism. LLM includes additional claims (C8, C27, C103) not explicitly addressed by peer review.",
+    "n_llm": 14,
+    "n_peer": 9,
+    "n_itx": 9
+  },
+  {
+    "llm_result_id": "R2",
+    "peer_result_id": "R2",
+    "llm_status": "SUPPORTED",
+    "peer_status": "UNCERTAIN",
+    "agreement_status": "partial",
+    "notes": "Moderate overlap (53.3% Jaccard) on multi-lineage differentiation claims. LLM finds cross-species, cross-lineage consistency compelling. Peer reviewers question whether effects reflect true differentiation induction vs. terminal differentiation of pre-committed progenitors, requesting clonal analysis. This represents interpretive disagreement about what the data mechanistically demonstrates.",
+    "n_llm": 15,
+    "n_peer": 8,
+    "n_itx": 8
+  },
+  {
+    "llm_result_id": "R1",
+    "peer_result_id": "R4",
+    "llm_status": "SUPPORTED",
+    "peer_status": "UNSUPPORTED",
+    "agreement_status": "disagree",
+    "notes": "Moderate overlap (46.7% Jaccard) on screening platform validation. LLM rates platform SUPPORTED based on technical metrics (CV, hit rate, controls). Peer reviewers rate UNSUPPORTED, explicitly critiquing that hits lacked subtype selectivity, making the screen unsuccessful for its stated goal of finding subtype-selective compounds. This is a fundamental disagreement about whether technical success equals scientific success.",
+    "n_llm": 11,
+    "n_peer": 11,
+    "n_itx": 7
+  },
+  {
+    "llm_result_id": "R1",
+    "peer_result_id": "R6",
+    "llm_status": "SUPPORTED",
+    "peer_status": "SUPPORTED",
+    "agreement_status": "agree",
+    "notes": "Lower overlap (30.8% Jaccard) but both agree on basic screening platform establishment. Peer R6 focuses on technical execution and compound identification (C4, C10, C21, C23, C31, C113), which LLM R1 also covers. Both find the platform itself technically sound, though peer R4 separately critiques its scientific outcomes.",
+    "n_llm": 11,
+    "n_peer": 6,
+    "n_itx": 4
+  },
+  {
+    "llm_result_id": "R2",
+    "peer_result_id": "R9",
+    "llm_status": "SUPPORTED",
+    "peer_status": "SUPPORTED",
+    "agreement_status": "agree",
+    "notes": "Limited overlap (18.8% Jaccard) on zebrafish in vivo validation (C110, C111, C112). Both agree this data supports selamectin's pro-neurogenic activity in a living organism. LLM R2 includes these claims within broader multi-lineage analysis; peer R9 treats in vivo data as separate supported finding.",
+    "n_llm": 15,
+    "n_peer": 4,
+    "n_itx": 3
+  },
+  {
+    "llm_result_id": "R2",
+    "peer_result_id": "R1",
+    "llm_status": "SUPPORTED",
+    "peer_status": "UNCERTAIN",
+    "agreement_status": "partial",
+    "notes": "Minimal overlap (11.8% Jaccard) on human PSC testing (C108, C109). LLM finds hESC/hiPSC data sufficient as part of cross-species validation. Peer reviewers explicitly request further human PSC testing, indicating presented evidence is insufficient for translational claims. Different standards for what constitutes adequate human cell validation.",
+    "n_llm": 15,
+    "n_peer": 4,
+    "n_itx": 2
+  },
+  {
+    "llm_result_id": "R6",
+    "peer_result_id": "R5",
+    "llm_status": "SUPPORTED",
+    "peer_status": "UNCERTAIN",
+    "agreement_status": "partial",
+    "notes": "Minimal overlap (13.3% Jaccard) on cell death data (C100, C101). LLM finds TUNEL data sufficient to rule out selective toxicity. Peer reviewers raise methodological concern that ratio-based assay could be confounded by differential viability despite TUNEL results. This reflects different confidence in the sufficiency of the cell death controls.",
+    "n_llm": 14,
+    "n_peer": 3,
+    "n_itx": 2
+  },
+  {
+    "llm_result_id": "R2",
+    "peer_result_id": "R6",
+    "llm_status": "SUPPORTED",
+    "peer_status": "SUPPORTED",
+    "agreement_status": "agree",
+    "notes": "Minimal overlap (10.5% Jaccard) on compound identification (C4, C23). Both agree the screen successfully identified active compounds. This represents agreement on the basic positive outcome of the screening effort, separate from questions about selectivity.",
+    "n_llm": 15,
+    "n_peer": 6,
+    "n_itx": 2
+  },
+  {
+    "llm_result_id": "R4",
+    "peer_result_id": null,
+    "llm_status": "SUPPORTED",
+    "peer_status": null,
+    "agreement_status": "disjoint",
+    "notes": "LLM R4 addresses dose-response and temporal specificity (C45-C52) showing selamectin acts on Days 7-10 neural progenitors. No corresponding peer review result directly addresses these specific claims, though temporal specificity is implicit in the experimental design accepted by reviewers.",
+    "n_llm": 8,
+    "n_peer": null,
+    "n_itx": 0
+  },
+  {
+    "llm_result_id": "R7",
+    "peer_result_id": null,
+    "llm_status": "UNCERTAIN",
+    "peer_status": null,
+    "agreement_status": "disjoint",
+    "notes": "LLM R7 addresses the complete mechanistic model (C133-C138: GABAA→depolarization→Ca2+→transcription→differentiation). No peer review result directly evaluates this integrated model. LLM notes the model is inferential without direct measurement of intermediate steps. Peer reviewers do not comment on the mechanistic cascade as a whole.",
+    "n_llm": 5,
+    "n_peer": null,
+    "n_itx": 0
+  }
+]
