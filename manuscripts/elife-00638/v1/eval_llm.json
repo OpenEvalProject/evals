@@ -1,0 +1,124 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C23",
+      "C28"
+    ],
+    "result": "The ordinary least squares method, introduced by Legendre and Gauss over 200 years ago, is ubiquitous in analyzing two-dimensional scatter plots but requires assuming one variable depends on another. However, in many cases, particularly in biological systems, relationships between variables are more complex and such assumptions may not be valid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C3, C4, C23, and C28 accurately describe established statistical knowledge about ordinary least squares regression and its requirements. Claim C2 appropriately notes the limitation that variable relationships can be complex, which is well-recognized in statistical practice. These are standard, well-established facts about regression analysis."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "When data points do not fall on a straight line, the three regression methods (vertical residuals, horizontal residuals, and perpendicular residuals) produce different best-fitting lines with shallow, steep, and intermediate slopes, respectively, and these lines will not coincide except when R\u00b2 = 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C8, C9, and C10 describe mathematically correct properties of regression lines, supported by visual demonstration in Figure 1. These are well-established mathematical consequences of the different minimization criteria used in each regression method."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C32"
+    ],
+    "result": "The Deming (orthogonal) regression method, described by W. Edward Deming in the 1940s, is symmetric with respect to both variables and makes no assumptions about dependence or independence, similar to the correlation coefficient R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6 and C7 are supported by appropriate citations (Deming, 1943; Cornbleet and Gochman, 1979; Linnet, 1993, 1998; Glaister, 2001). Claim C32 correctly describes a property of the correlation coefficient (supported by Bulmer, 1965). These are accurate descriptions of established statistical methods."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The relationship between R\u00b2 and the slopes of the two ordinary least squares regression lines is mathematically defined: R\u00b2 equals the ratio of the two slopes, and as R\u00b2 decreases from 1 to 0, the slopes diverge from equality to 0 and infinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Claim C11 contains a mathematical error. R\u00b2 is NOT equal to the slope of y-on-x divided by the slope of x-on-y. Rather, R\u00b2 equals the product of these two slopes (or equivalently, the square of either slope times the other). This fundamental error undermines claims C12-C14, which depend on this incorrect relationship, even though the qualitative behavior described (divergence with decreasing R\u00b2) is correct."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Analysis of Ressler et al. data shows that individual regression lines (y on x or x on y) do not fully capture data trends, but plotting all three lines provides a fuller picture, with the orthogonal regression appearing to more accurately describe the trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C15, C19, and C22 rely on subjective visual inspection without quantitative metrics to support assertions about which line 'more accurately' describes trends or that individual lines 'do not fully capture' trends. No statistical tests, residual analyses, or objective criteria are provided to validate these visual assessments. The claim that orthogonal regression is 'more accurate' is particularly problematic without defining accuracy criteria."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The causal relationships between PACAP secretion and PTSD symptoms are complex and bidirectional: PACAP may alter PTSD severity, PTSD-associated stress may alter PACAP secretion, or both may be independently affected by neural circuitry changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C16-C18 appropriately present multiple possible causal relationships as speculative alternatives, using appropriate hedging language ('it is possible that'). The authors correctly acknowledge the complexity and uncertainty of causal relationships in this biological system, which is the central point of their argument for using multiple regression approaches."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In biological systems, causal relationships between variables are often complex due to feedback regulation at multiple levels, making the assignment of dependence versus independence somewhat arbitrary even when mechanistic causal chains appear established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C24-C26 accurately reflect well-established understanding of biological systems, where feedback loops, bidirectional interactions, and multi-level regulation are common. This is general knowledge in biology and appropriately motivates the need for analytical approaches that do not assume simple unidirectional dependence."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C29"
+    ],
+    "result": "The authors recommend that scatter plots should be presented with three best-fitting lines (horizontal, vertical, and perpendicular residuals) unless analysis specifically requires a single regression, and predict this approach will be useful across biomedical sciences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C27 is a methodological recommendation based on the authors' reasoning, but lacks empirical validation of its utility or comparative studies showing improved interpretation. Claim C29 is speculative about future utility without evidence. While the recommendation is logically motivated by the preceding arguments, no data demonstrate that this approach actually improves scientific inference or reduces errors in practice."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Deming regression is not available in Microsoft Excel but can be calculated using various free and commercial software tools including Excel add-ins, R, Analyse-it, and MedCalc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C30 and C31 provide factual information about software capabilities that can be readily verified. The statement about Excel's native capabilities and the availability of alternative tools is accurate and provides practical guidance for implementing the recommended approach."
+  }
+]

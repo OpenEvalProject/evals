@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C39",
+      "C40"
+    ],
+    "result": "Bacterial autoregulation mechanisms for DNA transposons are incompatible with eukaryotic cell biology due to the physical separation of transcription and translation in eukaryotes. Transposons using the bacterial synapsis-by-protein-dimerization (S-PD) mechanism would experience exponential amplification in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1-C2 establish the incompatibility of bacterial mechanisms with eukaryotic biology based on established knowledge of transcription-translation coupling differences. Claims C39-C40 logically extend this to predict exponential amplification in eukaryotes, which is consistent with the biological constraints described. The reasoning is sound and well-supported by established cell biology principles."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Autoregulation of Hsmar1 operates during transpososome assembly through an assembly-site occlusion (ASO) mechanism, where transposase dimers compete for binding sites at transposon ends. Pre-assembly of the paired-end complex protects from overproduction inhibition (OPI), demonstrating that regulation occurs before productive synapsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3-C4 and C43-C44 describe the ASO mechanism, supported by computational modeling and experimental data. Claims C50, C52-C53 provide direct experimental validation through staged reactions (Figure 2B) showing that pre-assembled complexes are protected from OPI. The convergence of computational predictions and experimental validation strongly supports this result."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C45",
+      "C46",
+      "C74",
+      "C96",
+      "C97"
+    ],
+    "result": "Transposon amplification initially accelerates but then achieves a constant steady-state rate. The S-NEC mechanism has advantages over S-PD at early time points but is dampened by ASO as invasion progresses. At steady state, increased transpositional activity from new copies is balanced by increased competition for binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C34, C45-C46 demonstrate the biphasic dynamics through computational simulations (Figures 1J, 1K). Claims C74, C96-C97 describe the steady-state behavior where competition balances amplification (Figures 3E, 3F). The computational models are internally consistent and validated by experimental data, supporting this dynamic behavior."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C123",
+      "C124"
+    ],
+    "result": "The rate of transposition is proportional to genome size because non-specific DNA binding sites scale with genome size and relieve OPI by absorbing free transposase. This makes the relative genetic burden independent of host genome size in the ASO model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6, C84 establish the proportional relationship through computational modeling (Figure 6C). Claims C85-C86 and C123-C124 provide the mechanistic explanation through non-specific binding. The model predictions are logically consistent with the ASO mechanism and provide testable predictions about genome size effects."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "The rate of transposition is inversely proportional to transposase expression, following an inverse-exponential relationship. Experimental validation in HeLa cells shows the inhibitory response follows the power law y = ax\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C7, C75-C76 establish the inverse relationship through computational modeling (Figures 5A, 5C). Claim C79 provides direct experimental validation in HeLa cells (Figure 5D) with curve fitting to the predicted power law. The agreement between computational predictions and experimental data strongly supports this result."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C120"
+    ],
+    "result": "The rate of transposition is inversely proportional to transposase affinity for transposon ends. The RA104 mutant with reduced affinity shows resistance to OPI in vitro and altered dose-response in vivo, validating model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C8, C67 establish the inverse relationship through modeling (Figure 4A, 4B). Claims C68-C73 provide experimental validation with the RA104 mutant showing reduced SEC2 formation (Figure 4C), faster substrate consumption at standard concentrations (Figure 4D), and resistance to OPI (Figures 4D, 4E). Claim C120 integrates these findings. The experimental data strongly validates the computational predictions."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C29",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Distantly related eukaryotic transposons Sleeping Beauty and piggyBac show dose-response curves consistent with the ASO mechanism, suggesting the mechanism may be widely applicable across eukaryotic DNA transposons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C11, C29 state the broad applicability. Claims C80-C82 provide experimental validation showing that SB and piggyBac, which are distantly related to Hsmar1, both follow the predicted power law relationship (Figures 5E, 5F). The phylogenetic distance between these elements and the consistency of their behavior with ASO predictions supports broad applicability."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C48",
+      "C49",
+      "C122"
+    ],
+    "result": "The key prediction of the ASO model is that doubling transposon copy number (equivalent to doubling transposase concentration) halves the rate of transposition. This homeostatic mechanism depends on the ratio of transposase to transposon ends, not absolute concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C28, C48 establish the key prediction from the model. Claim C49 provides experimental validation showing efficiency depends on the ratio of transposase to DNA (Figure 2A). Claim C122 describes the homeostatic property. The experimental validation of the ratio-dependence supports the model's central prediction."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Hsmar1 transposase behaves as a dimer in solution and forms SEC2 (single-end complex 2) rapidly and tightly. SEC2 assembly is complete within 30 seconds, and the complex dissociates slowly with k\u208b\u2081 = 5.8 \u00d7 10\u207b\u2074 s\u207b\u00b9, about 20-fold slower than typical helix-turn-helix proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C41-C42 establish the dimeric nature and SEC2 formation, supported by gel filtration and citations. Claims C57-C61 provide quantitative kinetic measurements from EMSA experiments (Figures 3B, 3C). The experimental data directly supports the biochemical characterization, though C41 notes data is not shown. The kinetic parameters are well-determined from the experimental data."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The rate of synapsis with open circular substrate has a half-time of 2 hours (k\u2082 = 9.6 \u00d7 10\u207b\u2075 s\u207b\u00b9). When experimental kinetic parameters are incorporated into the computational model, the rate of transposition is greatly reduced and the accelerating phase is largely eliminated. The rate is sensitive to transposition efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C62 provides experimental measurement of synapsis rate (Figure 3D). Claim C63 shows that incorporating experimental parameters into the model produces realistic dynamics (Figure 3E). Claims C64-C66 describe sensitivity to efficiency (Figures 3F, 3G, 3H). The integration of experimental kinetics into the computational model and the resulting realistic behavior validates both the measurements and the model."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C116",
+      "C117"
+    ],
+    "result": "Diffusion in the nucleus is about twofold slower than in vitro for binding, but the effect on synapsis is much greater due to chromosomal drag. Under slow in vivo diffusion, OPI becomes significant earlier and steady state is achieved at ~200 copies without allostery, or only a few copies with allostery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C54-C55 establish diffusion effects through theoretical calculations. Claim C56 validates calculations against experimental lox/Cre data. Claims C116-C117 show the impact on OPI dynamics (Figures 3A, 3G). The theoretical calculations are validated by comparison with independent experimental systems and produce realistic predictions about in vivo behavior."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C77",
+      "C78",
+      "C127"
+    ],
+    "result": "The inverse relationship between transposase concentration and transposition rate suggests that mariner transposons may resist post-transcriptional silencing, and that titration by non-autonomous elements may not contribute to transposon demise. ASO may buffer against silencing responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C9, C77-C78, C127 are explicitly marked as inference and speculation in the evidence reasoning. While the inverse relationship is well-supported experimentally (C79), the implications for silencing resistance and evolutionary dynamics are speculative extrapolations. These predictions require experimental validation in systems with active silencing mechanisms."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C121",
+      "C122"
+    ],
+    "result": "The ASO mechanism is resistant to selfish exploitation because it is an emergent property relying on competition for primary binding sites. It provides homeostatic regulation that is robust to changes in kinetic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C10, C121 establish resistance to exploitation through the mechanism's dependence on primary binding sites. Claim C122 describes the homeostatic property. The reasoning is sound: because ASO depends on competition for essential binding sites rather than secondary regulatory elements, it cannot be easily circumvented by mutant elements. The mechanism's robustness is demonstrated through computational modeling."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The bacterial S-PD mechanism results in exponential amplification that is not altered by changing kinetic constants. Cis-acting transposase or trans-acting inhibitors alone are ineffective, but their combination is effective in controlling transposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C33-C38 describe the S-PD mechanism and regulatory strategies through computational modeling (Figures 1C-F). The simulations demonstrate that bacterial regulatory strategies require both cis-action and trans-inhibition. This is consistent with established knowledge of Tn10/Tn5 regulation and provides context for why eukaryotic transposons require different mechanisms."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C87"
+    ],
+    "result": "The S-NEC model is barely sensitive to volume changes less than 100-fold, while the S-PD model shows opposite genome size dependence with smaller genomes receiving higher transposition rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C83, C87 describe differential responses to volume and genome size in the two models (Figures 6A, 6D). The computational modeling demonstrates fundamental differences between the mechanisms. This provides testable predictions about how different transpososome assembly mechanisms would behave across different host genome sizes."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Secondary transposase binding sites, such as in Osmar14, do not change the underlying dynamics of ASO and do not dampen exponential amplification in the absence of ASO or similar mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C88-C90 demonstrate through computational modeling (Figures 7A, 1E) that secondary binding sites are insufficient for regulation without ASO. Claim C88 provides the biological example from rice. The modeling shows that secondary sites only slow but do not fundamentally alter exponential dynamics, which is an important distinction for understanding regulatory mechanisms."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The dimerization end-occlusion (DEO) model provides dose-dependent inhibition and shows steady-state rate inversely proportional to inhibitory dimer stability and proportional to genome size. Larger genomes experience longer lag phases, and steady-state rate is independent of k\u2081 and k\u208b\u2081 once established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C91-C95 describe properties of the alternative DEO model through computational simulations (Figures 7D-G). While the authors note this mechanism is excluded for mariner, the modeling demonstrates it is a viable regulatory mechanism with distinct properties. The analysis is thorough and provides useful comparison with ASO."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "DNA transposons rely on horizontal transfer and face evolutionary pressures including positive selection after transfer, relaxed selection with multiple copies, and eventual extinction through dominant-negative complementation. Unregulated transposition would result in demise of transposon or host, suggesting control mechanisms must exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C12-C20 establish the evolutionary context through citations to established literature and modeling studies. These claims provide the biological motivation for the study and are well-supported by prior work. The reasoning about the necessity of control mechanisms (C18, C20) is sound given the exponential nature of transposition (C17)."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Overproduction inhibition (OPI) was first observed in Mos1 and affects other elements in vivo and in vitro. Hsmar1 is a resurrected transposon active ~50 million years ago, closely related to Mos1 in the mariner family, which is probably the most successful transposon group in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C21-C25 establish the historical and phylogenetic context through citations to established literature. The characterization of OPI, Hsmar1's evolutionary history, and mariner's phylogenetic distribution are well-documented in the cited literature. This provides appropriate context for the current study."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "For successful horizontal transfer, the autoregulation mechanism should be independent of specific host factors and allow sufficient transposition rate to protect against genetic drift while providing high probability of vector integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C26-C27 present logical inferences about requirements for horizontal transfer. The reasoning is sound: host-independent mechanisms would function across diverse hosts, and high activity would both protect against drift and increase vector integration probability. These are reasonable evolutionary constraints that motivate the search for intrinsic regulatory mechanisms."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Hsmar1, Tn10, and Tn5 transposases belong to the same nucleotidyl-transferase family and use cut-and-paste transposition, which does not directly increase transposon number. Amplification requires homologous recombination repair or replication-coupled transposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C30-C32 describe established knowledge about transposase families and cut-and-paste mechanisms, supported by citations. The mechanistic description of how cut-and-paste can lead to amplification is well-established in the transposon literature. This provides necessary background for understanding the modeling assumptions."
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C115"
+    ],
+    "result": "The peak rate of transposition occurs when free transposase concentration equals its equilibrium binding constant. The local concentration (jM) of one DNA site with respect to another is ~55 nM for a 1.3 kb transposon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C47 describes a property derived from the ASO model. Claim C115 provides a calculated value using established DNA looping equations (equation 8). The jM calculation is based on well-established biophysical theory and provides a key parameter for understanding when ASO becomes effective."
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The competition in ASO is conceptually similar to the immunological prozone phenomenon, which has been predicted to apply widely in biological systems involving bridging interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C98 draws an analogy to the prozone phenomenon, supported by citation to Bray and Lay, 1997. The conceptual similarity is valid: both involve inhibition at high concentrations due to competition for bridging interactions. This provides useful context for understanding ASO as an example of a broader biological principle."
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Transposition in somatic cells does not aid vertical spread and is detrimental to the host, potentially decreasing transposon copy number through NHEJ repair in G1 phase. The only advantage may be vector integration for horizontal transfer. Mariner transposes readily in soma and is widespread, while P element is restricted to germline with limited distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C99-C105 present logical reasoning about somatic vs. germline transposition, supported by established knowledge of inheritance, DNA repair, and citations about specific transposons. The reasoning about costs and benefits of somatic transposition is sound. The contrast between mariner and P element is well-documented and supports the hypothesis about horizontal transfer advantages."
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cut-and-paste transposition is favored in the germline due to prevalent homologous recombination. Synchronization with S phase would provide advantages through HR upregulation and replication fork integration. Evidence exists for cell cycle linkage in IS10, P element, and possibly Hsmar1 through supercoiling sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C106-C112 discuss cell cycle regulation of transposition, supported by citations to established literature. The reasoning about advantages of S phase transposition is sound. The evidence for cell cycle linkage varies in strength across elements, with direct evidence for IS10 and P element, and indirect evidence (supercoiling sensitivity) for Hsmar1."
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C125",
+      "C126"
+    ],
+    "result": "The rate of synapsis is a dominant factor determining steady-state transposition rate, influenced by transposase multimeric state, diffusion rate, and allostery. Preformed multimers overcome low-concentration limitations at invasion start. Allostery provides powerful adaptive flexibility over many orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C113-C114, C125-C126 describe how synapsis rate and allostery affect transposition dynamics, supported by computational modeling showing sensitivity to these parameters. The reasoning about advantages of preformed multimers is sound. The demonstration that allostery can tune rates over orders of magnitude (Figure 3G vs 3E) supports the claim of adaptive flexibility."
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The influence of jM on transposition rate helps explain the success of miniaturized transposons like Ost35, which outnumber their master element Osmar14. Relief of OPI by reduced affinity provides additional explanation for efficient cross-mobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C118-C120 connect model predictions to natural transposon systems. The reasoning is sound: shorter transposons have higher jM, leading to faster synapsis and higher transposition rates. The experimental data with RA104 mutant (C69-C73) validates that reduced affinity relieves OPI, supporting the explanation for cross-mobilization efficiency."
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Hsmar1 and Mos1 transposases are 37% identical with similar structure. Mos1 has two helix-turn-helix motifs binding DNA. The dissociation constant for transposon end binding is expected to be in the mid-picomolar range, similar to lactose repressor which has comparable DNA binding architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C128 provides sequence analysis data. Claim C129 cites structural data for Mos1. Claims C130-C131 use the LacI analogy to estimate binding parameters. The use of LacI as a reference is reasonable given structural similarities, though the authors acknowledge these are estimates. The approach is transparent about uncertainties and provides reasonable parameter estimates for modeling."
+  }
+]

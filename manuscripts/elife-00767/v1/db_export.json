@@ -1,0 +1,141 @@
+{
+  "submission": {
+    "id": "5359d238-8d5c-47cc-be48-4051927c66a6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:58:18.399366Z",
+    "updated_at": "2025-10-21T22:58:18.399366Z"
+  },
+  "content": [
+    {
+      "id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "submission_id": "5359d238-8d5c-47cc-be48-4051927c66a6",
+      "content_type": "manuscript",
+      "content_text": "# Unmasking the role of mast cells in dengue\n\n## Authors\n\n- Panisadee Avirutnan<sup>1</sup> \u2020\n- Ponpan Matangkasombut<sup>2</sup>\n\n### Affiliations\n\n1. the Dengue Hemorrhagic Fever Research Unit Faculty of Medicine Siriraj Hospital, Mahidol University Bangkok Thailand panisadee.avi@mahidol.ac.th\n2. the Department of Microbiology Faculty of Science, Mahidol University Bangkok Thailand ponpan@post.harvard.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nImmune cells called mast cells can hinder rather than help the body's response to dengue virus, which suggests that mast cell products could be used as biomarkers to identify severe forms of the disease.\n",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5de9a22f-dc4f-45d8-b280-bf1d2cbd18e7",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "claim_id": "C1",
+      "claim": "Mast cells can hinder the body's response to dengue virus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Immune cells called mast cells can hinder rather than help the body's response to dengue virus",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This claim is stated in the abstract as a conclusion but no specific experimental data or citations are provided in the extracted text to support it.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    },
+    {
+      "id": "db17655b-2ccc-47bd-a202-659c9ae95650",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "claim_id": "C2",
+      "claim": "Mast cells do not help the body's response to dengue virus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Immune cells called mast cells can hinder rather than help the body's response to dengue virus",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'rather than help' explicitly states that mast cells do not provide beneficial response to dengue virus, though no supporting data is provided in this excerpt.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    },
+    {
+      "id": "1c4a97f2-a754-46a4-b496-e962f6a7de18",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "claim_id": "C3",
+      "claim": "Mast cell products could be used as biomarkers to identify severe forms of dengue disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "mast cell products could be used as biomarkers to identify severe forms of the disease",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "The use of 'could be' indicates this is a speculative or hypothetical application rather than an established finding, suggesting potential future use.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    },
+    {
+      "id": "f17c6cd4-a0d9-480d-ad03-cbe56c913d70",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "claim_id": "C4",
+      "claim": "Mast cells are immune cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Immune cells called mast cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a classification statement that draws from established scientific knowledge about the nature of mast cells as part of the immune system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    },
+    {
+      "id": "9b9860d3-3b2b-4b5b-ab82-c2d58b94f4e6",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "claim_id": "C5",
+      "claim": "There are severe forms of dengue disease.",
+      "claim_type": "IMPLICIT",
+      "source_text": "mast cell products could be used as biomarkers to identify severe forms of the disease",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The reference to 'severe forms of the disease' implies that dengue disease has varying degrees of severity, which is established medical knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "688be2a1-f6ad-4a45-bdb8-9d6dc4dd4b60",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Mast cells hinder rather than help the body's immune response to dengue virus infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C2 state that mast cells hinder and do not help dengue virus response, but both are marked as INFERENCE with no experimental data, statistical analysis, or citations provided in the extracted text. Without supporting evidence such as in vivo/in vitro experiments, mechanistic data, or clinical correlations, the conclusion cannot be evaluated as supported.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    },
+    {
+      "id": "ea60654c-4675-47c8-b2fc-546d6b084c2a",
+      "content_id": "07abf403-7930-4214-9f50-a9460e7b1f73",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Mast cell products could serve as biomarkers for identifying severe dengue disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claim C3 is explicitly marked as SPECULATION with the conditional phrasing 'could be used.' No data is provided demonstrating correlation between mast cell products and disease severity, no biomarker validation studies are referenced, and no statistical analysis of diagnostic performance is presented. This represents a proposed future application rather than a demonstrated finding.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:58:18.399366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5de9a22f-dc4f-45d8-b280-bf1d2cbd18e7",
+      "result_id": "688be2a1-f6ad-4a45-bdb8-9d6dc4dd4b60"
+    },
+    {
+      "claim_id": "db17655b-2ccc-47bd-a202-659c9ae95650",
+      "result_id": "688be2a1-f6ad-4a45-bdb8-9d6dc4dd4b60"
+    },
+    {
+      "claim_id": "1c4a97f2-a754-46a4-b496-e962f6a7de18",
+      "result_id": "ea60654c-4675-47c8-b2fc-546d6b084c2a"
+    }
+  ],
+  "comparisons": []
+}

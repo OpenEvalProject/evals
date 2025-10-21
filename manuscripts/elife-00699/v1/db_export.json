@@ -1,0 +1,2045 @@
+{
+  "submission": {
+    "id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:00:14.928403Z",
+    "updated_at": "2025-10-21T23:00:14.928403Z"
+  },
+  "content": [
+    {
+      "id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "content_type": "manuscript",
+      "content_text": "# Segregation of complex acoustic scenes based on temporal coherence\n\n## Authors\n\n- Sundeep Teki<sup>1</sup> \u2020\n- Maria Chait<sup>2</sup>\n- Sukhbinder Kumar<sup>1</sup>\n- Shihab Shamma<sup>4</sup>\n- Timothy D Griffiths<sup>1</sup>\n\n### Affiliations\n\n1. Wellcome Trust Centre for Neuroimaging University College London London United Kingdom\n2. UCL Ear Institute University College London London United Kingdom\n3. Institute of Neuroscience Newcastle University Newcastle upon Tyne United Kingdom\n4. The Institute for Systems Research University of Maryland College Park United States\n5. D\u00e9partement d\u2019\u00e9tudes cognitive Ecole Normale Sup\u00e9rieure Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00699.001 In contrast to the complex acoustic environments we encounter everyday, most studies of auditory segregation have used relatively simple signals. Here, we synthesized a new stimulus to examine the detection of coherent patterns (\u2018figures\u2019) from overlapping \u2018background\u2019 signals. In a series of experiments, we demonstrate that human listeners are remarkably sensitive to the emergence of such figures and can tolerate a variety of spectral and temporal perturbations. This robust behavior is consistent with the existence of automatic auditory segregation mechanisms that are highly sensitive to correlations across frequency and time. The observed behavior cannot be explained purely on the basis of adaptation-based models used to explain the segregation of deterministic narrowband signals. We show that the present results are consistent with the predictions of a model of auditory perceptual organization based on temporal coherence. Our data thus support a role for temporal coherence as an organizational principle underlying auditory segregation. DOI: http://dx.doi.org/10.7554/eLife.00699.001\n\n## Introduction\n\nIn our daily lives, we are constantly exposed to complex acoustic environments composed of multiple sound sources, for instance, while shopping in crowded markets or listening to an orchestra. Although we do it effortlessly, the separation of such mixtures of sounds into perceptually distinct sound sources is a highly complex task. In spite of being a topic of intense investigation for several decades, the neural bases of auditory object formation and segregation still remain to be fully explained (Cherry, 1953; McDermott, 2009; Griffiths et al., 2012).\n\nThe most commonly used signal for probing auditory perceptual organization is a sequence of two pure tones alternating in time that, under certain conditions, can \u2018stream\u2019 or segregate into two sources (van Noorden, 1975; Bregman, 1990). Much work using these streaming signals has been carried out to elucidate the neural substrates and computations that underlie auditory segregation (Moore and Gockel, 2012; Snyder et al., 2012). In a series of seminal experiments, Fishman and colleagues recorded multi-unit activity from the auditory cortex of macaques in response to a simple streaming sequence (Fishman et al., 2001; 2004). For large frequency differences and fast presentation rates, which promote two distinct perceptual streams, they observed spatially segregated responses to the two tones. This pattern of segregated cortical activation, proposed to underlie the streaming percept, has since been widely replicated (e.g., Bee and Klump, 2004; 2005; Micheyl et al., 2007a; Bidet-Caulet and Bertrand, 2009) and attributed to basic physiological principles of frequency selectivity, forward masking and neural adaptation (Fishman and Steinschneider, 2010a). These properties are considered to contribute to stream segregation by promoting the activation of distinct neuronal populations in the primary auditory cortex (A1) that are well separated along the tonotopic axis (McCabe and Denham, 1997; Carlyon, 2004; Micheyl et al., 2007a; Moore and Gockel, 2012). Human imaging studies that directly correlated the perceptual representation of streaming sequences with brain responses also support the correspondence between the streaming percept and the underlying neural activity in A1 (Gutschalk et al., 2005; Snyder et al., 2006; Wilson et al., 2007; Cusack, 2005). However, similar effects have also been demonstrated in the auditory nerve, suggesting that processes contributing to segregation might occur earlier in the ascending auditory pathway rather than be mediated exclusively by the auditory cortex (Beauvois and Meddis, 1991; Pressnitzer et al., 2008).\n\nA major drawback of the streaming paradigm is that it uses relatively simple, temporally regular narrowband signals which do not capture the rich spectrotemporal complexity of natural acoustic scenes. Moving beyond streaming, Kidd and colleagues developed a spectrally rich signal referred to as the \u2018informational masking\u2019 (IM) stimulus (Kidd et al., 1994, 1995, 2011; Kidd and Mason, 2003). IM refers to a type of non-energetic or central masking that is associated with an increase in detection thresholds due to stimulus uncertainty and target-masker similarity that is distinct from peripheral energetic masking (Pollack, 1975; Durlach et al., 2003). These multi-tone masking experiments required listeners to detect tonal target signals in the presence of simultaneous multi-tone maskers, often separated by a \u2018spectral protection region\u2019 (a certain frequency region around the target with little masker energy) that promoted the perceptual segregation of the target from the masker tones. Results demonstrate that target detection is critically dependent on the width of the spectral protection region, and the \u2018density\u2019 of the maskers (Micheyl et al., 2007b; Gutschalk et al., 2008; Elhilali et al., 2009b), and has been hypothesized to rely on the same adaptation-based mechanisms as proposed in the context of simple streaming signals (Micheyl et al., 2007b).\n\nIn contrast, the sounds we are required to segregate in everyday life are distinct from the narrowband targets used in streaming and IM paradigms; they are often broadband with multiple frequency components that are temporally correlated and overlap with other signals in the environment (McDermott and Simoncelli, 2011). Indeed, the ability of models inspired by such paradigms to explain segregation is currently under debate. Recently, Elhilali et al. (2009a) demonstrated that when the two tones in a streaming signal are presented synchronously, listeners perceive the sequence as one stream irrespective of the frequency separation between the two tones, a result that is inconsistent with predictions based on adaptation-based models. Instead, the authors argued that in addition to separation in feature space, temporal coherence between different elements in the scene is essential for segregation such that temporally incoherent patterns tend to result in a segregated percept while temporal coherence promotes integration (Shamma et al., 2011; Fishman and Steinschneider, 2010b; Micheyl et al., 2013a,b).\n\nTo investigate systematically the emergence of an auditory object from a random stochastic background, we developed a new stimulus (Stochastic figure-ground; SFG) consisting of coherent (\u2018figure\u2019) and randomly varying (\u2018background\u2019) components that overlap in spectrotemporal space and vary only in their statistics of fluctuation (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00699/elife-00699-fig1-v1.jpg)\n\n**Figure 1.:** All stimuli in this example contain four identical frequency components (only for illustrative purposes: these were selected randomly in the experiments) with Fcoh = 1016.7 Hz, 2033.4 Hz, 3046.7 Hz, and 4066.8 Hz repeated over 6 chords and indicated by the black arrows. The figure is bound by a black rectangle in each stimulus. (A) Chord duration of 50 ms: stimulus comprises of 40 consecutive chords each of duration 50 ms with a total duration of 2000 ms. (B) Chord duration of 25 ms: stimulus comprises of 40 consecutive chords each of duration 25 ms with a total duration of 1000 ms. (C) Ramped figures: stimulus comprises of 40 consecutive chords each of duration 50 ms each (like A) but the frequency components comprising the figure increase in frequency in steps of 2*I or 5*I, where I = 1/24th of an octave, represents the resolution of the frequency pool. (D) Isolated figures: stimulus comprises only of the \u2018figure present\u2019 portion without any chords preceding or following the figure. The duration of the stimulus is given by the number of chords. (E) Chords interrupted by noise: stimulus comprises of 40 consecutive chords alternating with 40 chords comprising of loud, masking broadband white noise, each 50 ms in duration. In experiment 6b, the duration of the noise was varied from 100 ms to 500 ms (see \u2018Materials and methods\u2019).DOI: http://dx.doi.org/10.7554/eLife.00699.003\n\nWe used psychophysics to examine listeners\u2019 ability to extract complex figures and tested segregation behavior in the context of various spectral and temporal perturbations. Our results demonstrate that listeners are remarkably sensitive to the emergence of such figures (Figure 2) and can withstand a variety of stimulus manipulations designed to potentially disturb spectrotemporal integration (Figures 1B\u2013E and 4). We also show that a model based on the detection of temporal coherence across frequency channels (Shamma et al., 2011, 2013) accounts for the psychophysical data (Figure 3 and Figure 3\u2014figure supplement 1). The work demonstrates an automatic, highly robust segregation mechanism that is sensitive to temporal correlations across frequency channels.\n\n## Results\n\n## Experiment 1: chord duration of 50 ms\n\nIn experiment 1, the basic SFG stimulus sequence was used to probe figure-detection performance (Figure 1A; see \u2018Materials and methods\u2019). Listeners\u2019 responses were evaluated to obtain d\u2032 for each combination of coherence and duration of the figure. The results (Figure 2A) show a clear effect of increasing coherence and duration. Hit rates (not shown) mirror d\u2032 with listeners achieving mean hit rates of 93 \u00b1 2% for the most salient coherence/duration combination. It is notable that the patterns were very brief (longest figure duration was 7 chords or 350 ms), yet very high levels of performance were observed (and without extensive practice). This is consistent with the idea that this task based on the SFG stimulus taps low-level, finely tuned segregation mechanisms.\n\n## Experiment 2: figure identification\n\nWhat underlies this sensitivity? Since \u2018figure-absent\u2019 and \u2018figure-present\u2019 signals were controlled for overall number of components (see \u2018Materials and methods\u2019), a global power increase per se associated with the emergence of the figure, can be discounted as a potential cue. However, it is possible that the decisions of the listeners are based on other changes within the stimulus, for example, the emergence of a figure might be associated with a change in the temporal modulation rate of a few frequency channels. The purpose of experiment 2 was to investigate whether the detection of figures involves a specific figure-ground decomposition, namely whether the figure components are grouped together as a detectable \u2018perceptual object\u2019 distinct from the background components, or whether listeners were rather just detecting some low-level changes within the ongoing stimulus. To address this issue, we created stimulus triplets with different background patterns in which each stimulus contained a figure but where figure components were identical in two out of the three signals. Listeners were required to identify the \u2018odd\u2019 signal that contained a different figure from the other two signals with identical figures in this AXB psychophysical paradigm (see \u2018Materials and methods\u2019 for details). Results (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00699/elife-00699-fig2-v1.jpg)\n\n**Figure 2.:** The d\u2032 for experiments 1 (A; \u2018chord duration of 50 ms\u2019; n = 9) and 2 (B; \u2018figure identification\u2019; n = 9) are plotted on the ordinate and the duration of the figure (in terms of number of 50 ms long chords) is shown along the abscissa. The coherence of the different stimuli in experiment 1 is color coded according to the legend (inset) while the coherence in experiment 2 was fixed and equal to six. The AXB figure identification task was different from the single interval alternative forced choice experiments: listeners were required to discriminate a stimulus with an \u2018odd\u2019 figure from two other stimuli with identical figure components. Error bars signify one standard error of the mean (SEM).DOI: http://dx.doi.org/10.7554/eLife.00699.004\n\n## Temporal coherence modeling\n\nIt is difficult to account for listeners\u2019 performance in experiments 1 and 2 based on the standard, adaptation-based models proposed in the context of the streaming paradigm (Micheyl et al., 2007a; Fishman and Steinschneider, 2010a). The figure and background in the SFG stimuli overlap in frequency space, thus challenging segregation based on activation of spatially distinct neuronal populations in A1. Furthermore, the data clearly indicate that performance strongly depends on the number of simultaneously repeating frequency components, suggesting a mechanism that is able to integrate across widely spaced frequency channels, an element missing in previous models based on streaming. Instead, the psychophysical data are consistent with a recently proposed model of auditory object formation based on analysis of temporal coherence (Shamma et al., 2011).\n\nThe temporal coherence model is based on the idea that a perceptual \u2018stream\u2019 emerges when a group of (frequency) channels are coherently activated against the backdrop of other uncorrelated channels (Shamma and Micheyl, 2010). In our stimuli, the \u2018figure\u2019 (defined by the correlated tones) perceptually stands out against a background of random uncorrelated tones. The temporal coherence model postulates that the figure becomes progressively more salient with more correlated tones in the different frequency channels. To measure this coherence, we computed a correlation matrix across all channels of the spectrogram. In principle, the correlation between the activations of any two channels at time t should be computed over a certain time window in the past, of a duration that is commensurate with the rates of tone presentations in the channels; this may range roughly between 2 Hz and 40 Hz depending on the experimental session. Consequently, to estimate the perceptual saliency of the figure segment in our stimuli, we computed the correlation matrix simultaneously for a range of temporal resolutions, and then reported the largest correlation values as explained in more detail below and in \u2018Materials and methods\u2019.\n\nThe computations incorporated a spectrotemporal analysis postulated to take place in the auditory cortex (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00699/elife-00699-fig3-v1.jpg)\n\n**Figure 3.:** The protocol for temporal coherence analysis is demonstrated here for experiment 5. The procedure was identical for modeling the other experiments. A stimulus containing a figure (here with coherence = 4) as indicated by the arrows (A) and another, background only (figure absent) stimulus (B) was applied as input to the temporal coherence model. The model performs multidimensional feature analysis at the level of the auditory cortex followed by temporal coherence analysis which generates a coherence matrix for each stimulus as shown in C and D respectively. The coherence matrix for the stimulus with figure present contains significantly higher cross-correlation values (off the diagonal; enclosed in white square) between the channels comprising repeating frequencies as indicated by the two orthogonal sets of white arrows in C. A magnified plot of the coherence matrix for the figure stimulus is shown in E where the cross-correlation peaks are highlighted in white boxes. The strength of the cross-correlation is indicated by the heat map next to each figure. The stimulus without a figure, that is, which does not contain any repeating frequencies, does not contain significant cross-correlations. This process is repeated for 500 iterations (Niter) for all combinations of coherence and duration. The differences between these two coherence matrices were quantified by computing the maximum cross-correlation for each set of coherence matrices for the figure and the ground stimuli respectively. Temporal coherence was calculated as the difference between the average maxima for the figure and the ground stimuli respectively. The resultant model response is shown for each combination of coherence and duration in F.DOI: http://dx.doi.org/10.7554/eLife.00699.005\n\n![Figure 3\u2014Figure supplement 1.](https://cdn.elifesciences.org/articles/00699/elife-00699-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014Figure supplement 1.:** The output of the temporal coherence modeling procedure is shown for the remaining psychophysical experiments: (A) experiment 2 with 25 ms chords modeled at a rate of 40 Hz; (B, C) experiments 4a and 4b with ramped figures with step size of 2 and 5 respectively modeled at a rate of 10 Hz; (D) experiment 5 with isolated 50 ms chords modeled at a rate of 20 Hz; (E, F) experiments 6a and 6b with chords interrupted by noise of duration 50 ms and 300 ms modeled at 20 Hz and 3.33 Hz respectively.DOI: http://dx.doi.org/10.7554/eLife.00699.006\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00699/elife-00699-fig4-v1.jpg)\n\n**Figure 4.:** The d\u2032 for experiment 3, 4a (thick lines; ramp step = 2), 4b (thin lines, ramp step = 5), 5, 6a and 6b are shown here, as labeled in each figure (n = 10 for all conditions). The abscissa represents the duration of the figure (A\u2013D) and the duration of the masking noise in E. Note that the maximum duration value in experiments 4a and 4b is larger (9 chords) than in the other experiments. Error bars signify one SEM.DOI: http://dx.doi.org/10.7554/eLife.00699.007\n\n## Experiment 3: chord duration of 25 ms\n\nIn experiment 3, the length of each chord in the SFG stimulus was halved to 25 ms, thereby reducing the corresponding durations of the figure and the stimulus (Figure 1B). Here, we aimed to test whether figure-detection performance would be affected by such temporal scaling, that is, whether performance would vary as a function of the total duration of the figure (twice as long in experiment 1 vs experiment 2) or the number of repeating chords that comprised the figure (same in experiments 1 and 2).\n\nBehavioral results (Figure 4A) reveal good performance, as in experiment 1. Listeners achieved hit rates of 92 \u00b1 3% for the highest coherence/duration combination used. An ANOVA with coherence and duration as within-subject factors and experimental condition (50 ms vs 25 ms chords) as a between-subject factor revealed no significant effect of condition (F1,15 = 2; p=0.174), suggesting that performance largely depends on the number of repeating chords irrespective of the time scale. Finally, as expected, model predictions were consistent with the experimental findings. Thus, correlations across the spectrogram channels remained significant, but now occurred at higher rates than in experiment 1 (40 Hz vs 20 Hz), reflecting the faster rate of tone presentations in the figure (Figure 3\u2014figure supplement 1A).\n\n## Experiment 4: ramped figures\n\nIn the preceding experiments, figure components were identical across several chords. In experiment 4, we manipulated the figure components such that they were not identical across chords but rather ramped, that is, increasing in frequency from one chord to the next (Figure 1C). The components in the frequency pool used to generate the SFG signals are separated equally by 1/24th of an octave; and in the following two experiments we increased the frequency steps from one chord to the next by two times (experiment 4A; Figure 4B\u2014thick lines) or five times (experiment 4B; Figure 4B\u2014thin lines) the frequency resolution (i.e., 2/24th octave and 5/24th octave respectively).\n\nPerformance in these experiments was robust (maximum hit-rates of 0.97 and 0.83 were obtained for figures with coherence equal to 8 and duration equal to 7 for the two ramp levels of 2 and 5 respectively) and a comparison with experiment 1 using an ANOVA with coherence and duration as within-subject factors and experimental condition (repeating vs ramp size 2 vs ramp size 5) as a between-subject factor revealed a significant effect of condition: F2,25 = 19; p<0.001. Performance was significantly worse for the ramp = 5 vs ramp = 2 condition (F1,18 = 21, p<0.001), but, remarkably, listeners exhibited above-chance performance even for the steeper slope. This suggests that the segregation mechanisms in question are more susceptible to spectral than temporal perturbations (as in experiments 3, and 6 below) but can still integrate over dynamically changing, rather than fixed, figure components. Finally, as with previous experiments, there were significant correlations among the channels predicting the saliency of the figure. However, the optimal rate at which the correlations occurred here was slightly lower (at 10 Hz; Figure 3\u2014figure supplement 1B,C) than that of experiment 1 (20 Hz), perhaps because two 50 ms chords are integrated as a single unit to define the ramp.\n\n## Experiment 5: isolated figures\n\nThe stimuli in previous experiments consisted of a sequence of \u2018background-only\u2019 chords, prior to the onset of the figure, and another sequence of \u2018background-only\u2019 chords after figure offset. From first principles, segregation could be considered to be mediated by adaptation to the ongoing background statistics and detection of the figure as a deviation from this established pattern. In order to test this hypothesis, in experiment 5, we removed the \u2018background\u2019 context which preceded the occurrence of the figure (Figure 1D; see \u2018Materials and methods\u2019 section). The stimulus consisted simply of the chords which contained a figure (between 3 and 7 chords).\n\nSimilar to previous experiments, the results (Figure 4C) show a marked effect of coherence and duration, and performance improved with increasing salience of the figures with listeners reaching hit rates of 89 \u00b1 5% for the most salient condition. To evaluate behavior with respect to experiment 1, an ANOVA with coherence and duration as within-subject factors and experimental condition (with background vs no background) as a between-subject factor was used which yielded no significant effect of condition: F1,16 = 0.033; p=0.859, suggesting that the \u2018background-only\u2019 chords which preceded the figure did not affect performance.\n\nModeling for this experiment replicated the results of experiment 1 in that the correlations increased with the coherence and duration of the figure and showed maximum response at 20 Hz (Figure 3\u2014figure supplement 1D), corresponding to the rate of presentation of the chords comprising the figure.\n\n## Experiment 6a: chords interrupted by noise\n\nIn experiment 6, we incorporated 50 ms of loud, broadband masking noise between successive 50 ms long SFG chords (Figure 1E), in an attempt to disrupt binding of temporally successive components. If figure detection is accomplished by low level mechanisms which are sensitive to a power increase within certain frequency bands, the addition of the noise bursts would disrupt performance by introducing large power fluctuations across the entire spectrum, thus reducing the overall power differences between channels.\n\nThe results (Figure 4D) show good behavioral performance (maximum hit rate of 0.93 was obtained for the most salient condition) which varied parametrically with the coherence and duration of the figure. An ANOVA with coherence and duration as within-subject factors and experimental condition (50 ms repeating chords vs 50 ms chords alternating with white noise) as a between-subject factor revealed no significant effect of condition (F1,17 = 0.004; p=0.953). Interleaving the noise bursts between successive chords does not therefore affect performance.\n\nModel predictions in this experiment (Figure 3\u2014figure supplement 1E,F) are broadly consistent with the findings in that detection became easier with more coherent tones, and with longer figure intervals. The reason is simply because the noise weakens but does not eliminate the correlation among the tones, at least when computed at slower rates.\n\n## Experiment 6b: chords interrupted by extended noise\n\nA natural question that arises from the preceding experiment is\u2014what are the temporal limits or the range over which such a higher-order mechanism operates?\n\nIn order to test this question, we gradually varied the duration of the intervening noise bursts between stimulus chords in a set of three related experiments with different durations of noise for a particular combination of coherence (6) and duration (6; see \u2018Materials and methods\u2019). Results (Figure 4E) indicate robust performance for all durations of noise up to 300 ms and surprisingly, supra-threshold performance (d\u2032 = 1.00 \u00b1 0.30; significantly different from 0: p=0.01; t = 3.29) for a noise duration of 500 ms. This remarkable ability of listeners to integrate coherent patterns over 3 s long (in the case of 500 ms noise bursts) suggests that the underlying higher-order mechanisms are very robust over such long time windows. Model predictions of these findings are still possible if correlations are measured over longer windows (or slower rates\u2014e.g., 3.33 Hz as in Figure 3\u2014figure supplement 1F).\n\nTemporal windows of integration, as long as 500 ms, have rarely been reported in the context of auditory object formation in complex scenes such as those examined here. The results suggest the existence of a central mechanism that is not affected by interfering broadband noise that integrates repeating pure tone components as belonging to a distinct object over multiple time scales. The long temporal windows here implicate cortical mechanisms at or beyond primary auditory cortex (see e.g., Overath et al., 2008 demonstrating a range of \u2018cortical windows\u2019 between 20 ms and 300 ms).\n\n## Discussion\n\nWe demonstrate fast detection with minimal training of a novel figure-from-ground stimulus comprising an overlapping figure and ground segment where, like natural stimuli, the figure has multiple components that are temporally coherent: they start and stop together. We show that such figures can be detected as objects that can be distinguished, consistent with a high-level mechanism for object detection as opposed to the simple detection of frequency or modulation cues (experiment 2). The mechanism scales in time, in that detection depends on the number of components over time rather than their absolute duration (experiment 3) and can still operate if the object is defined by slowly changing frequency trajectories rather than a fixed set of frequencies (experiment 4). It is robust to interruption of the figure by interleaved noise (experiment 5) and can operate over a remarkably long timescale (experiment 6). Modeling based on temporal coherence demonstrated a similar profile to the behavioral results and constitutes the first demonstration of the compatibility of the temporal coherence model with segregation in complex acoustic scenes.\n\n## Segregation based on temporal coherence\n\nThe temporal coherence model proposes that segregation is determined not only based on separation in feature-space but rather by the temporal relationship between different elements in the scene, such that temporally coherent elements are grouped together, while temporally incoherent channels with independent fluctuation profiles are perceived as belonging to separate sources (Shamma et al., 2011). Specifically, the model incorporates two stages: firstly, a feature analysis stage that performs multidimensional feature analysis by distinct populations of neurons in the auditory cortex that are tuned to a range of temporal modulation rates and spectral resolution scales. Auditory features such as pitch, timbre and loudness are computed by different neuronal groups at this initial stage, the output of which is fed to a second stage that involves analysis of temporal coherence.\n\nElhilali et al. carried out work implicating a critical role for temporal coherence in the assignment of common elements within a stream: they showed that a pair of synchronous repeating tones produces the same coherent pattern of modeled central activity as a single stream irrespective of the frequency separation between them, suggesting that temporal coherence is an important factor governing segregation (Elhilali et al., 2009a). This was substantiated by direct neurophysiological recordings from ferret auditory cortex which showed that synchronous and alternating cortical responses were equally segregated despite their perceptual differences, and hence that the temporal factors are more important in inducing the one and two streams percept (Shamma and Micheyl, 2010; Pressnitzer et al., 2011; Shamma et al., 2011, 2013).\n\nIn the case of the more complex SFG stimuli, the modeling results suggest that temporal coherence is modulated as a function of the coherence and the duration of the figure in a manner similar to the modulation of figure detection performance. Although this is not causal evidence in favor of the model, it behaves similar to human listeners in complex acoustic conditions as used here. The data suggest temporal coherence as a correlate of stimulus salience by which the brain picks out the most important sounds in busy auditory scenes: a process that may not be computed by dedicated structures but could be achieved by binding across distributed feature channels without significant changes in ensemble activity. Similar accounts of binding in vision based on coherence of the temporal structure have been put forward previously (e.g., Sporns et al., 1991; Alais et al., 1998; Blake and Lee, 2005).\n\n## Neural bases of temporal coherence analysis\n\nIt is still not known how temporal coherence may be computed and which brain areas perform these computations. Temporal coherence may be implemented by neurons that show strong sensitivity to temporal coherence across distant frequency channels, or by neurons that act as multiplexers and are more selective to particular combinations of inputs (Elhilali et al., 2009a; Shamma et al., 2011). Elhilali et al. (2009a) sought such cells in the primary auditory cortex of the ferret but were unable to demonstrate any in passively listening animals but have preliminary evidence in behaving ferrets (Shamma et al., 2013).\n\nAlthough previous brain imaging studies have identified activity in A1 that was correlated with the streaming percept (e.g., Gutschalk et al., 2005; Snyder et al., 2006; Wilson et al., 2007), we found no evidence of modulation of BOLD signal in A1 as a function of figure emergence in a passive listening paradigm (Teki et al., 2011). However, we found activity in the intraparietal sulcus (IPS) to be strongly modulated by the salience of the figure, similar to the modulation of temporal coherence observed here. The IPS activation likely reflect bottom-up stimulus-driven processing of figures and is consistent with accumulating literature which suggests that areas outside the conventional auditory system, such as the parietal cortex may have a role in auditory segregation (Cusack, 2005; Dykstra et al., 2011). Although not relevant to the passive fMRI experiment (Teki et al., 2011), attention also influences segregation. In this regard, the parietal cortex is in an ideal position to integrate both bottom-up auditory input as it receives auditory input from the temporoparietal cortex (Pandya and Kuypers, 1969; Divac et al., 1977; Hyv\u00e4rinen, 1982; Cohen, 2009) as well as top-down attentional input from the prefrontal cortex (Andersen et al., 1985; Barbas and Mesulam, 1981; Petrides and Pandya, 1984; Stanton et al., 1995). IPS is associated with both bottom-up and top-down attention and is a key structure implicated in saliency map models of visual search (Koch and Ullman, 1985; Itti and Koch, 2001; Walther and Koch, 2007) where low-level feature maps may combine with top-down cognitive biases to represent a global saliency map (Gottlieb et al., 1998; Geng and Mangun, 2009; Bisley and Goldberg, 2010). IPS (and its monkey homologue) has been implicated in mediating object representations, binding of sensory features within and across different modalities, as well as attentional selection.\n\nWe hypothesize that IPS may represent a neural correlate of the figure percept where the representation will depend on the salience of auditory figures. In our model, this perceptual representation depends on the computation of temporal coherence across multiple frequencies that are initially represented in the auditory cortex. Neurophysiological recordings from parietal neurons might in future determine whether such sensory analysis (before perceptual representation) involves parietal neurons or is established in auditory cortex first.\n\n## Materials and methods\n\n## Stochastic figure-ground stimulus\n\nWe developed a new stimulus (Stochastic figure-ground [SFG] stimulus; Teki et al., 2011) to model naturally complex situations characterized by a figure and background that overlap in feature space that are only distinguishable by their fluctuation statistics. Contrary to previously used signals, the spectrotemporal properties of the figure vary from trial to trial and the figure can only be extracted by binding the spectral components that comprise the figure across frequency and time.\n\nFigure 1 presents examples of the SFG stimulus which consists of a sequence of random chords, each 50 ms in duration with 0 ms inter-chord-interval, presented for a total duration of 2000 ms (40 consecutive chords). Each chord contains a random number (average: 10 and varying between 5 and 15) of pure tone components. The spectral components are randomly selected from a set of 129 frequencies equally spaced on a logarithmic scale between 179 Hz and 7246 Hz such that the separation between successive components is 1/24th of an octave. The onset and offset of each chord are shaped by a 10 ms raised-cosine ramp. In half of these stimuli, a random number of tones are repeated across a certain number of consecutive chords (e.g., in Figure 1, four components marked by arrows are repeated across 6 chords) which results in the percept of a \u2018figure\u2019 that readily pops out of the random tonal background. To eliminate correlation between the number of figure and background components, the figure was realized by first generating the random background and then adding additional, repeating components to the relevant chords. To avoid the problem that the interval containing the figure might, on average, also contain more frequency components, and to prevent listeners from relying on this feature in performing the figure detection task, the remaining 50% of the stimuli (those containing no figure) also included additional tonal components, which were added over a variable number (2\u20137) of consecutive chords at the same time as when a figure would have appeared. But these additional components changed from chord to chord and did not form a coherent figure.\n\nIn the present study, we parametrically varied the number of consecutive chords over which the tones were repeated (\u2018duration\u2019) and the number of repeated frequency components (\u2018coherence\u2019). The onset of the figure was jittered between 15 and 20 chords (750\u20131000 ms) post stimulus onset.\n\n## Participants\n\nAll participants tested in this set of experiments reported normal hearing and had no history of audiological or neurological disorders. Experimental procedures were approved by the research ethics committee of University College London (Project ID number: 1490/002), and written informed consent was obtained from each participant. For each experiment we report the number of listeners whose data is included in the final analysis. In each experiment, a few listeners (2\u20133) were excluded from analysis because of their inability to perform the task. 9 listeners (2 females; aged between 20 and 47 years; mean age: 26.9 years) took part in experiment 1. 9 listeners (6 females; aged between 22 and 28 years; mean age: 23.8 years) participated in experiment 2 based on the AXB design. 10 listeners (5 females; aged between 20 and 36 years; mean age: 25.7 years) took part in experiment 3. 10 listeners (5 females; aged between 23 and 31 years; mean age: 26.8 years) participated in experiment 6a. 27 listeners (Group 1: 9 listeners; 5 females, aged between 19 and 27 years; mean age: 21.1 years; Group 2: 10 listeners; 3 females; aged between 19 and 25 years; mean age: 21.3 years; Group 3: 8 listeners; 3 females; aged between 19 and 29 years; mean age: 22.4 years) participated in experiment 6b. 10 listeners (6 females; aged between 21 and 34 years, and mean age of 24.7 years) participated in experiment 4a with ramp step equal to 2 and another group of 10 listeners (3 females; aged between 20 and 30 years and mean age of 24.5 years) took part in experiment 4b with ramp step of 5. 10 listeners (5 females; aged between 22 and 31 years, mean age: 24.8 years) participated in experiment 5.\n\n## Stimuli\n\nSFG stimuli in experiment 1 consisted of a sequence of 50 ms chords with 0 ms inter-chord interval and 2 s duration (40 consecutive chords). The coherence of the figure varied between 1, 2, 4, 6 or 8 and the duration of the figure ranged from 2 to 7 chords. Stimuli for all combinations of coherence and duration were presented in a separate block (total of 30 blocks) where 50% of the trials (50 trials per block) contained a figure.\n\nThe stimuli in experiment 2 consisted of 50 ms chords and a figure coherence value of 6. Figure duration varied between 4, 8 and 12 (in separate blocks). Stimuli, all containing a figure, were presented in triplets as in an AXB design (e.g., Goldinger, 1998). The background patterns were different in all three signals but two of them (either A and X or B and X) contained identical figure components. Listeners were required to indicate the \u2018odd\u2019 figure (A or B) by pressing a button. Three blocks of 60 trials each were presented for each duration condition.\n\nStimuli in experiment 3 were identical to those in experiment 1 except that chord duration was reduced to 25 ms. The coherence of the figure varied between 2, 4, 6 or 8 and the duration of the figure ranged from 2\u20137 chords resulting in a total of 24 blocks.\n\nIn experiment 4a and 4b, stimuli were similar to those in experiment 1 except that in this condition, the successive frequencies comprising the figure were not identical from one chord to the next but increased across chords in steps of 2*I or 5*I, where I = 1/24th of an octave is the resolution of the frequency pool used to create the SFG stimulus. The coherence of the figure was 4, 6, or 8 and duration was 5, 7 or 9 chords resulting in a total of 9 blocks for each condition. Note that in this experiment, the maximum duration of the figure (9 chords) is longer than the maximum duration of the figure in the remaining experiments (7 chords).\n\nThe stimuli for experiment 5 were same as in experiment 1 except that they comprised of the figure only (3\u20137 chords or 150\u2013350 ms) without any chords that preceded or succeeded the figure as in previous experiments. The coherence of the figure was 2, 4, 6, or 8 chords and this resulted in a total of 20 blocks.\n\nFor experiment 6a, we modified the SFG stimulus so that successive chords were separated by 50 ms broadband noise burst. The loudness of the noise was set to a level 12 dB above the level of the stimulus chords. The coherence of the figure was 2, 4, 6 or 8 and the duration of the figure ranged from 3 to 7 chords resulting in a total of 20 blocks.\n\nThe stimuli in experiment 6b were identical to the previous experiment save for the following differences: (a) coherence and duration were fixed at a value of 6; (b) the duration of the noise was varied in three different experiments in increasing order: group 1: 50, 100, 150 ms; group 2: 100, 200, 250 ms; group 3: 100, 300, 500 ms respectively. The 100 ms condition was chosen as an anchor and only those participants who performed above a threshold of d\u2032 = 1.5 in this condition were selected for the whole experiment.\n\n## Procedure\n\nPrior to the study, training was provided which consisted of listening to trials with no figures, easy-to-detect figures, difficult-to-detect figures and one practice block of fifty mixed trials. For the main experiment, the value of coherence and duration was displayed before the start of each block and participants were instructed to press a button as soon as they heard a figure pop out of the random background (for the brief figures used here, these sounded like a \u2018warble\u2019 in the on-going random pattern). Feedback was provided. Blocks with different values of coherence and duration were presented in a pseudorandom order. The participants self-paced the experiment and the study lasted approximately an hour and a half. The procedure was identical across all experiments.\n\n## Analysis\n\nParticipants\u2019 responses were measured in terms of sensitivity (d prime, or d\u2032). We also report hit rates for certain conditions as mean \u00b1 one standard error.\n\n## Apparatus\n\nAll stimuli were created online using MATLAB 7.5 software (The Mathworks Inc., Natick, MA) at a sampling rate of 44.1 kHz and 16 bit resolution. Sounds were delivered diotically through Sennheiser HD555 headphones (Sennheiser, Germany) and presented at a comfortable listening level of 60\u201370 dB SPL (self adjusted by each listener). Presentation of the stimuli was controlled using Cogent (http://www.vislab.ucl.ac.uk/cogent.php). Listeners were tested individually in an acoustically shielded sound booth. The apparatus was identical for all experiments.\n\n## Temporal coherence model\n\nThe temporal coherence model consists of two distinct stages. The first stage takes the spectrogram of the stimulus as its input and simulates spectral analysis performed at the level of the cochlea and temporal integration at the level of the auditory cortex (Chi et al., 2005; Elhilali and Shamma, 2008; Elhilali et al., 2009a; Shamma et al., 2011). This temporal integration is achieved through a bank of bandpass filters that are tuned to different physiologically plausible parameters that capture the rich variety of spectrotemporal receptive fields (STRFs) found in A1. This is realized by using a range of physiologically valid temporal modulation rates (from slow to fast: 2\u201332 Hz) and spectral resolution scales (narrow to broad: 0.125 to 8 cycles per octave).\n\nThe next level of the model incorporates a \u2018coherence analysis\u2019 stage which computes a \u2018windowed\u2019 correlation between each pair of channels by taking the product of the filter outputs corresponding to the different channels. A dynamic coherence matrix which consists of the cross-correlation values as a function of time is thus obtained. The off-diagonal elements of the matrix indicate the presence of coherence across different channels, that is, positively correlated activity and offer insight into the perceptual representation of the stimulus.\n\n## Procedure\n\nThe temporal coherence model was run for a range of temporal modulation rates: 2.5, 5, 10 and 20 Hz for experiments 1, 4, 5, and 6a and 5, 10, 20 and 40 Hz for experiment 3 respectively. Additionally, we used a rate of 3.33 Hz corresponding to the rate of presentation of 300 ms white noise segments in experiment 6b. These rates cover the range of physiological temporal modulation rates observed in the auditory cortex. A single spectral resolution scale of 8 cycles per octave (corresponding to the bandwidth of streaming; 4 cycles per octave for experiment 4b where larger frequency steps are required to extract a ramped figure) was used.\n\nThe analysis was conducted by entering the SFG stimulus for each experimental condition to the input stage of the model. For experiments 1 and 3, the entire stimulus duration was fed to the model input and for the remaining experiments a stimulus without the pre- and post-figure chords was entered. This was based on the prediction that the background chords before and after the figure onset contribute little to the cross-correlation matrix unlike the chords comprising the figure. The simulations were performed separately for the stimuli containing a figure and without a figure and repeated across 500 iterations. To establish differences between the resultant coherence matrices, we computed the maximum value of the cross-correlation across all time points. This spectral decomposition helps us to examine which channels are correlated with each other (hence, the channels with repeating figure components could possibly be bound together as one object, or the \u2018figure\u2019), and not significantly correlated with each other (hence, the channels with random correlation between channels may not be perceived as a single object). The difference in the average values of the maxima between the figure and the ground stimuli was calculated as the model response and plotted like the psychophysical curves to obtain model responses (see Figure 3 and Figure 3\u2014figure supplement 1).\n",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dora Angelaki, Baylor College of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00699.008](https://doi.org/10.7554/eLife.00699.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSegregation of complex acoustic scenes based on temporal coherence\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors, and one of whom, Mitchell Steinschneider, wants to reveal his identity.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis is a well-written psychoacoustical study demonstrating that subjects are able to \u201chear out\u201d a sequence of tones embedded in a complex acoustic environment of randomly presented tones. In contrast to other studies of this kind, there are no protective spectral regions where the background tones are omitted. The authors demonstrate that after initial training, most subjects are able to segregate the foreground sound pattern (one sound source) from the background sound source. Studies were appropriately performed with adequate controls. Indeed, it is remarkable that segregation of the foreground tone sequence still occurs despite introduction of interleaved bursts of white noise between the foreground tones. The duration of the white noise could extend up to 500 ms. These findings are clearly beyond the segregation capacities of core auditory cortex and the authors rightfully suggest non-classical auditory cortical processing stations as being the most likely generators of this percept. Further, the authors concisely provide modeling data and evidence that the temporal coherence model is the most appropriate model for explaining how this foreground/background segregation develops.\n\nWhile the psychoacoustic results are interesting, the reviewers were disappointed by the integration between data and modeling.\n\n1) First, the motivation for each modification of stimulus parameters should be explained more clearly. What would their model predict for the manipulation?\n\n2) Second, it is unclear why the model simulations are not shown for all experimental manipulations, but only for number of tones and frequency components. It would be nice to see what the model predicts for the ramped SFG.\n",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "759a568a-c5f8-4428-bec3-15aeab3b7d9e",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C1",
+      "claim": "Most studies of auditory segregation have used relatively simple signals, in contrast to the complex acoustic environments encountered in everyday life.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast to the complex acoustic environments we encounter everyday, most studies of auditory segregation have used relatively simple signals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established knowledge about the state of auditory segregation research and is presented as background context.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "134dd813-dd00-474f-9f68-92f763fdac97",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C2",
+      "claim": "Human listeners are remarkably sensitive to the emergence of coherent patterns ('figures') from overlapping 'background' signals in the synthesized stimulus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In a series of experiments, we demonstrate that human listeners are remarkably sensitive to the emergence of such figures and can tolerate a variety of spectral and temporal perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from the series of psychophysical experiments reported in the manuscript (Experiments 1-6).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "cf978ce1-eeb9-4532-8d8a-2df39ca3f4cc",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C3",
+      "claim": "Human listeners can tolerate a variety of spectral and temporal perturbations when detecting figures from background signals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In a series of experiments, we demonstrate that human listeners are remarkably sensitive to the emergence of such figures and can tolerate a variety of spectral and temporal perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated through experimental manipulations in Experiments 3-6 involving chord duration changes, ramped figures, and noise interruptions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "bfa6141a-42bc-4474-8bf5-e0c8cb689364",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C4",
+      "claim": "The observed behavior is consistent with the existence of automatic auditory segregation mechanisms that are highly sensitive to correlations across frequency and time.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This robust behavior is consistent with the existence of automatic auditory segregation mechanisms that are highly sensitive to correlations across frequency and time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the experimental results showing robust performance across various conditions, suggesting automatic mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "7e5ff71d-a2b9-4b7b-819e-73eb0bd60cfe",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C5",
+      "claim": "The observed behavior cannot be explained purely on the basis of adaptation-based models used to explain the segregation of deterministic narrowband signals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observed behavior cannot be explained purely on the basis of adaptation-based models used to explain the segregation of deterministic narrowband signals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the comparison of experimental results with predictions from adaptation-based models, particularly noting that figure and background overlap in frequency space.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "b745c028-9eec-4ddf-b246-70d3e3ff4fb9",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C6",
+      "claim": "The results are consistent with the predictions of a model of auditory perceptual organization based on temporal coherence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We show that the present results are consistent with the predictions of a model of auditory perceptual organization based on temporal coherence.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the modeling results presented in Figure 3 and Figure 3\u2014figure supplement 1, which show agreement between model predictions and behavioral data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "72569a8a-1dc1-4320-bba0-c6ca79846a7c",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C7",
+      "claim": "Temporal coherence plays a role as an organizational principle underlying auditory segregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our data thus support a role for temporal coherence as an organizational principle underlying auditory segregation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is drawn from the combined experimental and modeling results showing that temporal coherence accounts for the observed segregation behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "bdfb8138-f8cd-48b5-bb54-72f051c61938",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C8",
+      "claim": "The separation of mixtures of sounds into perceptually distinct sound sources is a highly complex task.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although we do it effortlessly, the separation of such mixtures of sounds into perceptually distinct sound sources is a highly complex task.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established understanding in auditory neuroscience about the computational complexity of auditory scene analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "dc053cc4-1b1f-44ff-ac8c-066b074f0a83",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C9",
+      "claim": "The neural bases of auditory object formation and segregation remain to be fully explained.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In spite of being a topic of intense investigation for several decades, the neural bases of auditory object formation and segregation still remain to be fully explained",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citations (Cherry, 1953; McDermott, 2009; Griffiths et al., 2012) and reflects the current state of knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "ae310563-ee1c-409e-8e73-77b120373cee",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C10",
+      "claim": "A sequence of two pure tones alternating in time can 'stream' or segregate into two sources under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The most commonly used signal for probing auditory perceptual organization is a sequence of two pure tones alternating in time that, under certain conditions, can 'stream' or segregate into two sources",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citations (van Noorden, 1975; Bregman, 1990) and represents established knowledge about auditory streaming.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "5ea4603c-9fb2-49db-9e64-588281389709",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C11",
+      "claim": "For large frequency differences and fast presentation rates in streaming sequences, spatially segregated responses to the two tones are observed in auditory cortex of macaques.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For large frequency differences and fast presentation rates, which promote two distinct perceptual streams, they observed spatially segregated responses to the two tones.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from Fishman et al. (2001; 2004) as cited in the text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "312e1303-10f6-413f-914d-f42162587c29",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C12",
+      "claim": "The pattern of segregated cortical activation has been attributed to basic physiological principles of frequency selectivity, forward masking and neural adaptation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This pattern of segregated cortical activation, proposed to underlie the streaming percept, has since been widely replicated (e.g., Bee and Klump, 2004; 2005; Micheyl et al., 2007a; Bidet-Caulet and Bertrand, 2009) and attributed to basic physiological principles of frequency selectivity, forward masking and neural adaptation",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations indicating replicated findings and theoretical interpretations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4fffb5d2-8b5e-4dd3-9cc2-be1b760c3a83",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C13",
+      "claim": "Processes contributing to segregation might occur in the auditory nerve rather than be mediated exclusively by the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, similar effects have also been demonstrated in the auditory nerve, suggesting that processes contributing to segregation might occur earlier in the ascending auditory pathway rather than be mediated exclusively by the auditory cortex",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Beauvois and Meddis, 1991; Pressnitzer et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "41ec24cc-59bc-44e4-ace4-8b45aa0f8216",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C14",
+      "claim": "The streaming paradigm uses relatively simple, temporally regular narrowband signals which do not capture the rich spectrotemporal complexity of natural acoustic scenes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A major drawback of the streaming paradigm is that it uses relatively simple, temporally regular narrowband signals which do not capture the rich spectrotemporal complexity of natural acoustic scenes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a critical assessment of the streaming paradigm based on comparison with natural acoustic environments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "d0a231a2-9b93-49dd-9450-b380822cf723",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C15",
+      "claim": "Target detection in informational masking experiments is critically dependent on the width of the spectral protection region and the density of the maskers.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Results demonstrate that target detection is critically dependent on the width of the spectral protection region, and the 'density' of the maskers",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Micheyl et al., 2007b; Gutschalk et al., 2008; Elhilali et al., 2009b.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "61473da4-a662-4df0-bf05-3089daecf63b",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C16",
+      "claim": "Sounds in everyday life are often broadband with multiple frequency components that are temporally correlated and overlap with other signals in the environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, the sounds we are required to segregate in everyday life are distinct from the narrowband targets used in streaming and IM paradigms; they are often broadband with multiple frequency components that are temporally correlated and overlap with other signals in the environment",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This reflects knowledge about natural sounds, supported by citation to McDermott and Simoncelli, 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "479314db-3d37-4b0f-ab73-ab09aef396b3",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C17",
+      "claim": "When two tones in a streaming signal are presented synchronously, listeners perceive the sequence as one stream irrespective of the frequency separation between the two tones.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Recently, Elhilali et al. (2009a) demonstrated that when the two tones in a streaming signal are presented synchronously, listeners perceive the sequence as one stream irrespective of the frequency separation between the two tones",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to specific findings from Elhilali et al. (2009a).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "c5445efb-ce56-46a7-bad9-c5d3b96198ed",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C18",
+      "claim": "Temporal coherence between different elements in the scene is essential for segregation such that temporally incoherent patterns tend to result in a segregated percept while temporal coherence promotes integration.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Instead, the authors argued that in addition to separation in feature space, temporal coherence between different elements in the scene is essential for segregation such that temporally incoherent patterns tend to result in a segregated percept while temporal coherence promotes integration",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Shamma et al., 2011; Fishman and Steinschneider, 2010b; Micheyl et al., 2013a,b.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "5a30045f-390a-46dc-8805-167d5c555000",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C19",
+      "claim": "In Experiment 1, listeners showed a clear effect of increasing coherence and duration on figure detection performance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The results (Figure 2A) show a clear effect of increasing coherence and duration.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly supported by the experimental data presented in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "c75449b6-e1d7-4a53-8dde-547fe11aea19",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C20",
+      "claim": "Listeners achieved mean hit rates of 93 \u00b1 2% for the most salient coherence/duration combination in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hit rates (not shown) mirror d\u2032 with listeners achieving mean hit rates of 93 \u00b1 2% for the most salient coherence/duration combination.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct report of measured behavioral data from Experiment 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "7121a12d-f7c5-4fe6-a830-852c31438e3b",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C21",
+      "claim": "The patterns in the SFG stimulus were very brief (longest figure duration was 7 chords or 350 ms), yet very high levels of performance were observed without extensive practice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is notable that the patterns were very brief (longest figure duration was 7 chords or 350 ms), yet very high levels of performance were observed (and without extensive practice).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This observation is based on the experimental design and measured performance data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "afcfeb8d-9acf-44d5-a773-6cda6469bb35",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C22",
+      "claim": "The high performance with brief patterns and minimal training is consistent with the idea that the SFG task taps low-level, finely tuned segregation mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is consistent with the idea that this task based on the SFG stimulus taps low-level, finely tuned segregation mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation of high performance with minimal training.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4e92ef46-3b2b-4760-a8d5-022c28e96fc8",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C23",
+      "claim": "A global power increase per se associated with the emergence of the figure can be discounted as a potential cue for figure detection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since 'figure-absent' and 'figure-present' signals were controlled for overall number of components (see 'Materials and methods'), a global power increase per se associated with the emergence of the figure, can be discounted as a potential cue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the experimental design where figure-absent and figure-present signals were controlled for number of components.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "233a87b5-2f72-4fc4-88f9-721fad1b90cf",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C24",
+      "claim": "In Experiment 2, listeners could identify the 'odd' signal containing a different figure from two signals with identical figures.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Results (Figure 2B) show that listeners were able to perform this task well above chance",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the behavioral data from Experiment 2 shown in Figure 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "a6c26d12-bc21-4521-8f84-0253633e7261",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C25",
+      "claim": "The figure detection involves a specific figure-ground decomposition where figure components are grouped together as a detectable 'perceptual object' distinct from the background components.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To address this issue, we created stimulus triplets with different background patterns in which each stimulus contained a figure but where figure components were identical in two out of the three signals. Listeners were required to identify the 'odd' signal that contained a different figure from the other two signals with identical figures in this AXB psychophysical paradigm",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The ability of listeners to perform the AXB task (Experiment 2) demonstrates that they perceive the figure as a distinct object, not just detecting low-level changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "9120aa96-ac0c-43f1-98aa-a98fa92eb93f",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C26",
+      "claim": "It is difficult to account for listeners' performance in experiments 1 and 2 based on standard, adaptation-based models proposed in the context of the streaming paradigm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is difficult to account for listeners' performance in experiments 1 and 2 based on the standard, adaptation-based models proposed in the context of the streaming paradigm",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the comparison of the experimental results with the predictions of adaptation-based models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "7b581827-ee2b-4d2b-b8c1-25bac2981a68",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C27",
+      "claim": "The figure and background in the SFG stimuli overlap in frequency space, challenging segregation based on activation of spatially distinct neuronal populations in A1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The figure and background in the SFG stimuli overlap in frequency space, thus challenging segregation based on activation of spatially distinct neuronal populations in A1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the stimulus design where figure and background components are drawn from the same frequency pool.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "8e3548c6-77b6-4291-a82a-094db278cf69",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C28",
+      "claim": "Performance strongly depends on the number of simultaneously repeating frequency components, suggesting a mechanism that can integrate across widely spaced frequency channels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, the data clearly indicate that performance strongly depends on the number of simultaneously repeating frequency components, suggesting a mechanism that is able to integrate across widely spaced frequency channels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the experimental data showing performance variation with coherence (number of repeating components).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "76535d91-ba88-4aa6-8698-584561b20510",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C29",
+      "claim": "The psychophysical data are consistent with a model of auditory object formation based on analysis of temporal coherence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Instead, the psychophysical data are consistent with a recently proposed model of auditory object formation based on analysis of temporal coherence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is supported by the comparison of behavioral data with model predictions shown in Figure 3 and supplements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "ae81b9c9-ecd7-46af-a966-1495b368eb51",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C30",
+      "claim": "The temporal coherence model proposes that a perceptual 'stream' emerges when a group of frequency channels are coherently activated against the backdrop of other uncorrelated channels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The temporal coherence model is based on the idea that a perceptual 'stream' emerges when a group of (frequency) channels are coherently activated against the backdrop of other uncorrelated channels",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes the theoretical basis of the temporal coherence model as proposed by Shamma and Micheyl, 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "bbd96a94-0705-4e25-8bd7-074688cad108",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C31",
+      "claim": "The temporal coherence model incorporates a spectrotemporal analysis postulated to take place in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The computations incorporated a spectrotemporal analysis postulated to take place in the auditory cortex",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on the model framework described in cited works (Chi et al., 2005).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "ae47d79c-1a63-408d-82df-db106f514997",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C32",
+      "claim": "In Experiment 3, listeners achieved hit rates of 92 \u00b1 3% for the highest coherence/duration combination with 25 ms chords.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Listeners achieved hit rates of 92 \u00b1 3% for the highest coherence/duration combination used.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct report of measured behavioral data from Experiment 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "2f838d1f-8f25-4af2-a3bc-5e3b2cab71c9",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C33",
+      "claim": "Performance in figure detection largely depends on the number of repeating chords irrespective of the time scale.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An ANOVA with coherence and duration as within-subject factors and experimental condition (50 ms vs 25 ms chords) as a between-subject factor revealed no significant effect of condition (F1,15 = 2; p=0.174), suggesting that performance largely depends on the number of repeating chords irrespective of the time scale.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by statistical analysis comparing Experiments 1 and 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "f6f8bbf4-a4d9-452e-bdac-eec3e38d4c09",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C34",
+      "claim": "In Experiment 4, listeners exhibited above-chance performance even for the steeper frequency ramp (ramp size = 5).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Performance was significantly worse for the ramp = 5 vs ramp = 2 condition (F1,18 = 21, p<0.001), but, remarkably, listeners exhibited above-chance performance even for the steeper slope.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly supported by the behavioral data from Experiment 4b.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "22bfe7fc-0456-46c7-9bfc-1667c5827dab",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C35",
+      "claim": "The segregation mechanisms are more susceptible to spectral than temporal perturbations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This suggests that the segregation mechanisms in question are more susceptible to spectral than temporal perturbations (as in experiments 3, and 6 below) but can still integrate over dynamically changing, rather than fixed, figure components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from comparing performance across experiments with different types of perturbations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "f1d328ee-9aa4-484a-9017-a3ce55e941ab",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C36",
+      "claim": "In Experiment 5, the 'background-only' chords which preceded the figure did not affect performance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To evaluate behavior with respect to experiment 1, an ANOVA with coherence and duration as within-subject factors and experimental condition (with background vs no background) as a between-subject factor was used which yielded no significant effect of condition: F1,16 = 0.033; p=0.859, suggesting that the 'background-only' chords which preceded the figure did not affect performance.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by statistical comparison between Experiments 1 and 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "50917089-b5d6-4e61-aaa3-00e28b3af8ac",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C37",
+      "claim": "Segregation is not mediated by adaptation to the ongoing background statistics and detection of the figure as a deviation from this established pattern.",
+      "claim_type": "IMPLICIT",
+      "source_text": "From first principles, segregation could be considered to be mediated by adaptation to the ongoing background statistics and detection of the figure as a deviation from this established pattern. In order to test this hypothesis, in experiment 5, we removed the 'background' context which preceded the occurrence of the figure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The lack of performance difference in Experiment 5 (without background context) compared to Experiment 1 suggests adaptation to background is not necessary.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "ae8a417d-7a88-431b-a598-753ad950126a",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C38",
+      "claim": "In Experiment 6a, interleaving noise bursts between successive chords does not affect figure detection performance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An ANOVA with coherence and duration as within-subject factors and experimental condition (50 ms repeating chords vs 50 ms chords alternating with white noise) as a between-subject factor revealed no significant effect of condition (F1,17 = 0.004; p=0.953). Interleaving the noise bursts between successive chords does not therefore affect performance.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by statistical comparison between Experiments 1 and 6a.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "3df298f3-6bfa-4293-9d56-9bc119efe19f",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C39",
+      "claim": "Listeners can integrate coherent patterns over time windows as long as 3 seconds.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This remarkable ability of listeners to integrate coherent patterns over 3 s long (in the case of 500 ms noise bursts) suggests that the underlying higher-order mechanisms are very robust over such long time windows.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on the results from Experiment 6b showing above-chance performance with 500 ms noise interruptions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "9334b2ac-dd86-480f-b300-4692ad93738a",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C40",
+      "claim": "In Experiment 6b, listeners showed supra-threshold performance (d\u2032 = 1.00 \u00b1 0.30) for a noise duration of 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Results (Figure 4E) indicate robust performance for all durations of noise up to 300 ms and surprisingly, supra-threshold performance (d\u2032 = 1.00 \u00b1 0.30; significantly different from 0: p=0.01; t = 3.29) for a noise duration of 500 ms.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct report of measured behavioral data from Experiment 6b with statistical significance testing.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "017c325f-6794-4237-8b57-c4770ed63c2b",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C41",
+      "claim": "Temporal windows of integration as long as 500 ms have rarely been reported in the context of auditory object formation in complex scenes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Temporal windows of integration, as long as 500 ms, have rarely been reported in the context of auditory object formation in complex scenes such as those examined here.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects knowledge about the existing literature on temporal integration in auditory object formation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "70f544c8-9426-4ca7-8d41-70d93f6e9909",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C42",
+      "claim": "The long temporal windows implicate cortical mechanisms at or beyond primary auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The long temporal windows here implicate cortical mechanisms at or beyond primary auditory cortex (see e.g., Overath et al., 2008 demonstrating a range of 'cortical windows' between 20 ms and 300 ms).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the temporal integration results and supported by citation to Overath et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "a84eb0ef-638f-4c45-93d2-78ed931b2d61",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C43",
+      "claim": "Figures can be detected as objects that can be distinguished, consistent with a high-level mechanism for object detection as opposed to simple detection of frequency or modulation cues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We show that such figures can be detected as objects that can be distinguished, consistent with a high-level mechanism for object detection as opposed to the simple detection of frequency or modulation cues (experiment 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is supported by the results of Experiment 2 (AXB task) showing figure identification.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "10078149-2f7a-40bb-a395-1f9787a10d89",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C44",
+      "claim": "The segregation mechanism scales in time, in that detection depends on the number of components over time rather than their absolute duration.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The mechanism scales in time, in that detection depends on the number of components over time rather than their absolute duration (experiment 3)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the comparison between Experiments 1 and 3 showing no effect of chord duration.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "c1e03aa7-f70e-4573-b0b6-c886f6c6ed28",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C45",
+      "claim": "The segregation mechanism can still operate if the object is defined by slowly changing frequency trajectories rather than a fixed set of frequencies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and can still operate if the object is defined by slowly changing frequency trajectories rather than a fixed set of frequencies (experiment 4).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the results of Experiment 4 showing above-chance performance with ramped figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "68183e3f-5f50-464e-bd1b-7c711583e290",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C46",
+      "claim": "The segregation mechanism is robust to interruption of the figure by interleaved noise.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is robust to interruption of the figure by interleaved noise (experiment 5)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the results of Experiment 6a showing no performance decrement with noise interruptions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "cc28ec42-1199-48ba-8e7b-e056ccb9dea1",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C47",
+      "claim": "The segregation mechanism can operate over a remarkably long timescale.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and can operate over a remarkably long timescale (experiment 6).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the results of Experiment 6b showing performance with 500 ms noise interruptions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "a3b8689c-3560-4f86-bae9-ddf795a6aa86",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C48",
+      "claim": "Modeling based on temporal coherence demonstrated a similar profile to the behavioral results.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Modeling based on temporal coherence demonstrated a similar profile to the behavioral results",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the modeling results shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "5b48cfbe-2242-455a-9f0d-41e10edeedd2",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C49",
+      "claim": "This work constitutes the first demonstration of the compatibility of the temporal coherence model with segregation in complex acoustic scenes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and constitutes the first demonstration of the compatibility of the temporal coherence model with segregation in complex acoustic scenes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a claim about the novelty of the work based on the modeling and experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "29ea8bfb-a7e3-4a10-aa58-8e31bca17c4f",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C50",
+      "claim": "Segregation is determined not only based on separation in feature-space but rather by the temporal relationship between different elements in the scene.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The temporal coherence model proposes that segregation is determined not only based on separation in feature-space but rather by the temporal relationship between different elements in the scene",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes the theoretical framework of the temporal coherence model as proposed by Shamma et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "efcd1431-347e-424e-9f98-654e6b464410",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C51",
+      "claim": "Temporally coherent elements are grouped together, while temporally incoherent channels with independent fluctuation profiles are perceived as belonging to separate sources.",
+      "claim_type": "EXPLICIT",
+      "source_text": "such that temporally coherent elements are grouped together, while temporally incoherent channels with independent fluctuation profiles are perceived as belonging to separate sources",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is part of the theoretical framework of the temporal coherence model cited from Shamma et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "0e33e1de-bb3e-49b8-81db-43f5d7fabc25",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C52",
+      "claim": "The temporal coherence model incorporates a feature analysis stage that performs multidimensional feature analysis by distinct populations of neurons in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, the model incorporates two stages: firstly, a feature analysis stage that performs multidimensional feature analysis by distinct populations of neurons in the auditory cortex that are tuned to a range of temporal modulation rates and spectral resolution scales.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This describes the computational architecture of the temporal coherence model based on cited work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "431f5ae5-831b-4066-a45d-344149303bf6",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C53",
+      "claim": "A pair of synchronous repeating tones produces the same coherent pattern of modeled central activity as a single stream irrespective of the frequency separation between them.",
+      "claim_type": "EXPLICIT",
+      "source_text": "they showed that a pair of synchronous repeating tones produces the same coherent pattern of modeled central activity as a single stream irrespective of the frequency separation between them",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from Elhilali et al. (2009a) as cited in the text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "06eac75f-f5ef-444a-a2fd-3ef8eefccd7e",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C54",
+      "claim": "Synchronous and alternating cortical responses in ferret auditory cortex were equally segregated despite their perceptual differences.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This was substantiated by direct neurophysiological recordings from ferret auditory cortex which showed that synchronous and alternating cortical responses were equally segregated despite their perceptual differences",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to neurophysiological findings cited from Shamma and Micheyl, 2010; Pressnitzer et al., 2011; Shamma et al., 2011, 2013.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "771312f5-bbc6-4b25-af84-0fb33a5d1247",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C55",
+      "claim": "Temporal coherence is modulated as a function of the coherence and the duration of the figure in a manner similar to the modulation of figure detection performance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the case of the more complex SFG stimuli, the modeling results suggest that temporal coherence is modulated as a function of the coherence and the duration of the figure in a manner similar to the modulation of figure detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on the modeling results showing correspondence between model output and behavioral performance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "3c72fe9d-59d7-43ad-9251-be6ccdaf5e5a",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C56",
+      "claim": "Temporal coherence may serve as a correlate of stimulus salience by which the brain picks out the most important sounds in busy auditory scenes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The data suggest temporal coherence as a correlate of stimulus salience by which the brain picks out the most important sounds in busy auditory scenes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the correspondence between temporal coherence modeling and behavioral performance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "768a1f1e-3cf5-4171-bfb8-b05f786b166c",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C57",
+      "claim": "Binding across distributed feature channels could be achieved without significant changes in ensemble activity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a process that may not be computed by dedicated structures but could be achieved by binding across distributed feature channels without significant changes in ensemble activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the neural implementation of temporal coherence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "0189a746-31b8-40c4-8581-8a20555a963b",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C58",
+      "claim": "It is not known how temporal coherence may be computed and which brain areas perform these computations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is still not known how temporal coherence may be computed and which brain areas perform these computations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects the current state of knowledge about the neural implementation of temporal coherence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "a04d205f-bb62-4205-923a-8054d7957b37",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C59",
+      "claim": "Temporal coherence may be implemented by neurons that show strong sensitivity to temporal coherence across distant frequency channels, or by neurons that act as multiplexers.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Temporal coherence may be implemented by neurons that show strong sensitivity to temporal coherence across distant frequency channels, or by neurons that act as multiplexers and are more selective to particular combinations of inputs",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative statement about possible neural mechanisms, supported by citations to Elhilali et al., 2009a; Shamma et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "8938c1ad-6141-41b0-be86-6ffff0015929",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C60",
+      "claim": "Elhilali et al. were unable to demonstrate neurons sensitive to temporal coherence in the primary auditory cortex of passively listening ferrets.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Elhilali et al. (2009a) sought such cells in the primary auditory cortex of the ferret but were unable to demonstrate any in passively listening animals",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from Elhilali et al. (2009a) as cited in the text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "cf0689db-c777-456b-8688-37230fb862b4",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C61",
+      "claim": "There is preliminary evidence for neurons sensitive to temporal coherence in behaving ferrets.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but have preliminary evidence in behaving ferrets (Shamma et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to preliminary findings cited from Shamma et al., 2013.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "28770fad-156e-412b-b338-3a57605249a6",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C62",
+      "claim": "No evidence of modulation of BOLD signal in A1 as a function of figure emergence was found in a passive listening paradigm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although previous brain imaging studies have identified activity in A1 that was correlated with the streaming percept (e.g., Gutschalk et al., 2005; Snyder et al., 2006; Wilson et al., 2007), we found no evidence of modulation of BOLD signal in A1 as a function of figure emergence in a passive listening paradigm (Teki et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from the authors' previous fMRI study (Teki et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4e6c4dc4-a7f3-4cde-a9d4-a81dc776cc1d",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C63",
+      "claim": "Activity in the intraparietal sulcus (IPS) was strongly modulated by the salience of the figure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, we found activity in the intraparietal sulcus (IPS) to be strongly modulated by the salience of the figure, similar to the modulation of temporal coherence observed here.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This refers to findings from the authors' previous fMRI study (Teki et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "af808ea4-31a4-4756-8fa4-a5c056166e21",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C64",
+      "claim": "The IPS activation likely reflects bottom-up stimulus-driven processing of figures.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The IPS activation likely reflect bottom-up stimulus-driven processing of figures",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the IPS activation pattern and supported by reference to the authors' previous work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "53f9ba57-5ec7-4ab6-ad1a-dd068ecf0bbc",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C65",
+      "claim": "Areas outside the conventional auditory system, such as the parietal cortex, may have a role in auditory segregation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and is consistent with accumulating literature which suggests that areas outside the conventional auditory system, such as the parietal cortex may have a role in auditory segregation",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Cusack, 2005; Dykstra et al., 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "788b625d-8034-460f-a0f8-cc2de66a1207",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C66",
+      "claim": "The parietal cortex receives auditory input from the temporoparietal cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this regard, the parietal cortex is in an ideal position to integrate both bottom-up auditory input as it receives auditory input from the temporoparietal cortex",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to anatomical studies (Pandya and Kuypers, 1969; Divac et al., 1977; Hyv\u00e4rinen, 1982; Cohen, 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "86a084c8-b865-4920-a068-ffd7401727cc",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C67",
+      "claim": "The parietal cortex receives top-down attentional input from the prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "as well as top-down attentional input from the prefrontal cortex",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to anatomical studies (Andersen et al., 1985; Barbas and Mesulam, 1981; Petrides and Pandya, 1984; Stanton et al., 1995).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "809e0e0d-60d6-4945-a5d7-4f877771da38",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C68",
+      "claim": "IPS is associated with both bottom-up and top-down attention and is a key structure implicated in saliency map models of visual search.",
+      "claim_type": "EXPLICIT",
+      "source_text": "IPS is associated with both bottom-up and top-down attention and is a key structure implicated in saliency map models of visual search",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Koch and Ullman, 1985; Itti and Koch, 2001; Walther and Koch, 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "f62f890b-1a5c-4364-b02c-37499891aa15",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C69",
+      "claim": "IPS has been implicated in mediating object representations, binding of sensory features within and across different modalities, as well as attentional selection.",
+      "claim_type": "EXPLICIT",
+      "source_text": "IPS (and its monkey homologue) has been implicated in mediating object representations, binding of sensory features within and across different modalities, as well as attentional selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established knowledge about the functional roles of IPS based on the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "25f5e074-a8a3-4b72-ba81-ab0b8bba32c7",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C70",
+      "claim": "IPS may represent a neural correlate of the figure percept where the representation depends on the salience of auditory figures.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We hypothesize that IPS may represent a neural correlate of the figure percept where the representation will depend on the salience of auditory figures.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a hypothesis proposed by the authors based on their fMRI findings and the modeling results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "40e33864-ebde-45c8-ada5-014aba23c1ea",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C71",
+      "claim": "The perceptual representation in IPS depends on the computation of temporal coherence across multiple frequencies that are initially represented in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our model, this perceptual representation depends on the computation of temporal coherence across multiple frequencies that are initially represented in the auditory cortex.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the computational relationship between auditory cortex and IPS.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "0cb9afc5-db20-4c36-9b4a-eddd928db88e",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C72",
+      "claim": "The SFG stimulus consists of a sequence of random chords where a random number of tones are repeated across consecutive chords, resulting in the percept of a 'figure' that pops out of the random tonal background.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In half of these stimuli, a random number of tones are repeated across a certain number of consecutive chords (e.g., in Figure 1, four components marked by arrows are repeated across 6 chords) which results in the percept of a 'figure' that readily pops out of the random tonal background.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the stimulus design and the perceptual effect it produces.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "1318468c-cac6-4d63-a8c7-ec9c36a1bd32",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C73",
+      "claim": "To eliminate correlation between the number of figure and background components, the figure was realized by adding additional, repeating components to the random background.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To eliminate correlation between the number of figure and background components, the figure was realized by first generating the random background and then adding additional, repeating components to the relevant chords.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This describes the methodological approach to control for potential confounds in the stimulus design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "62ff69e5-d4ca-480f-87d8-f74f8f7405a3",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C74",
+      "claim": "In figure-absent stimuli, additional tonal components were added that changed from chord to chord and did not form a coherent figure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "But these additional components changed from chord to chord and did not form a coherent figure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This describes the control condition design to match the number of components between figure-present and figure-absent stimuli.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "7aa9aed5-d846-451b-9d26-157d0b513b5d",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C75",
+      "claim": "All participants tested reported normal hearing and had no history of audiological or neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All participants tested in this set of experiments reported normal hearing and had no history of audiological or neurological disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the participant inclusion criteria for the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "e3576a08-fe86-4cd1-a2d1-fe891a3dfd7a",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "claim_id": "C76",
+      "claim": "Experimental procedures were approved by the research ethics committee of University College London.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experimental procedures were approved by the research ethics committee of University College London (Project ID number: 1490/002), and written informed consent was obtained from each participant.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the ethical approval and consent procedures for the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "92782685-a3d1-43b4-86a1-5ea3fb627591",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Human listeners demonstrate high sensitivity to detecting coherent figures emerging from random backgrounds in the SFG stimulus, achieving 93\u00b12% hit rates for the most salient conditions with minimal training, suggesting engagement of low-level, finely tuned segregation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C2, C19-C21 provide converging experimental evidence from Experiment 1 showing parametric effects of coherence and duration on detection performance with very high hit rates. The rapid learning without extensive practice (C21) supports the inference (C22) that low-level mechanisms are engaged. The data are internally consistent and well-documented.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "5de343e8-df15-4733-80db-99862c8bfc84",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Figure detection involves specific figure-ground decomposition where listeners perceive figures as distinct perceptual objects that can be identified and distinguished, rather than merely detecting low-level acoustic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The AXB discrimination task (Experiment 2, C24-C25) provides strong evidence that listeners can identify specific figures against different backgrounds, ruling out simple detection of power or modulation changes. This demonstrates object-level representation (C43) rather than feature-level detection. The experimental design appropriately controls for low-level confounds.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4d5e71a5-9b6d-4938-8912-a8de28ba5887",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "Global power increases cannot account for figure detection performance because figure-present and figure-absent stimuli were controlled for the total number of frequency components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The experimental design (C73-C74) explicitly controlled for component number by adding non-repeating components to figure-absent trials, eliminating power as a confound. This methodological control directly supports the inference (C23) that power differences do not drive performance. The control is appropriate and well-justified.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "c5c225ed-7d57-4903-b133-a5beb26c1eda",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "Figure detection performance scales with the number of repeating chords rather than their absolute temporal duration, as demonstrated by equivalent performance with 50 ms and 25 ms chord durations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The statistical comparison between Experiments 1 and 3 (C33) shows no significant effect of chord duration (F1,15=2; p=0.174), while both conditions achieved high performance (C32). This directly supports the claim (C44) that the mechanism operates on discrete temporal units rather than absolute time. The ANOVA design is appropriate for this comparison.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "5c46102b-3a9e-4322-a2be-ed2ed914f1e2",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "The segregation mechanism can integrate over dynamically changing frequency trajectories (ramped figures), though performance degrades with steeper spectral slopes, suggesting greater susceptibility to spectral than temporal perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Experiment 4 data (C34) show above-chance performance even for steep ramps (ramp=5), with significant but graded performance degradation (F1,18=21, p<0.001). This supports both the ability to track dynamic frequencies (C45) and differential sensitivity to perturbation types (C35). The statistical evidence is clear and the inference is warranted.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "3ed92f57-6ab0-4a7c-8213-dbcae8fc81ce",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "Figure detection does not require adaptation to preceding background statistics, as performance is equivalent when figures are presented in isolation without background context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The statistical comparison between Experiments 1 and 5 (C36) shows no effect of background presence (F1,16=0.033; p=0.859), directly contradicting an adaptation-based mechanism. This experimental manipulation appropriately tests the adaptation hypothesis and the null result strongly supports the conclusion (C37).",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "0613bff2-48c4-466d-b8fd-8efdb4e0702f",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "Figure detection is robust to interruption by interleaved noise bursts (50 ms), with no performance decrement compared to continuous presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Experiment 6a shows no significant effect of noise interruption (F1,17=0.004; p=0.953, C38), demonstrating robustness of the segregation mechanism (C46). The experimental design appropriately tests temporal integration across interruptions, and the statistical evidence clearly supports the claim.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "Listeners can integrate coherent patterns over remarkably long time windows (up to 3 seconds with 500 ms noise interruptions), achieving supra-threshold performance (d'=1.00\u00b10.30, p=0.01), implicating cortical mechanisms at or beyond primary auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Experiment 6b provides direct evidence of above-chance performance with 500 ms interruptions (C40), with appropriate statistical testing. The temporal integration window is exceptionally long (C39, C41) and the inference about cortical involvement (C42) is reasonable given known temporal windows in A1. The data are robust and the conclusions appropriately qualified.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "85fabeac-c8ab-485e-ba80-767b80896043",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "Standard adaptation-based models from the streaming paradigm cannot account for SFG performance because figure and background overlap in frequency space and performance depends on integration across widely spaced frequency channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The claims provide converging logical arguments: frequency overlap (C27) challenges spatial segregation models, dependence on coherence (C28) requires cross-frequency integration, and these factors together (C26, C5) are inconsistent with adaptation-based models. The reasoning is sound given the stimulus properties and behavioral data.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "739d1060-605f-41d3-a4a7-08b62b85254e",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "The temporal coherence model accounts for the psychophysical data, with model predictions showing similar parametric modulation by coherence and duration as behavioral performance, supporting temporal coherence as an organizational principle for auditory segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The modeling results (C48, C55) show qualitative correspondence with behavioral data across multiple experiments (Figures 3 and supplements). Claims C6 and C29 are supported by this correspondence. However, the model provides qualitative rather than quantitative fits, and no formal model comparison or goodness-of-fit statistics are provided. The conclusion (C7) is appropriately qualified as 'supporting a role' rather than proving causation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "2bd07198-48aa-480d-9c52-11298f0f6dae",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "This work constitutes the first demonstration of compatibility between the temporal coherence model and segregation in complex acoustic scenes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the authors demonstrate model-behavior correspondence for their SFG stimulus, the claim of 'first demonstration' (C49) requires comprehensive knowledge of the literature that cannot be fully verified from the manuscript alone. The novelty claim may be accurate but requires independent verification of prior work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "f6d0120e-15f0-4a76-bc15-78f545523478",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "IPS activity is strongly modulated by figure salience and may represent a neural correlate of the figure percept, integrating temporal coherence computations from auditory cortex with attentional signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims rely heavily on a separate fMRI study (Teki et al., 2011) not fully presented here. While the IPS findings (C62-C63) are cited, the interpretations (C64, C70-C71) are speculative. The hypothesis is plausible given known IPS functions (C65, C68-C69), but requires direct experimental validation linking IPS activity to temporal coherence computations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "47cbcf89-16cd-424a-879e-1fc4fcc4a265",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "The neural implementation of temporal coherence computation remains unknown, though preliminary evidence suggests neurons sensitive to cross-frequency coherence may exist in behaving animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims accurately reflect the current state of knowledge: C58 acknowledges the gap, C60 reports negative findings in passive animals, and C61 notes preliminary positive evidence in behaving animals. The claims are appropriately qualified and acknowledge uncertainty, making them well-supported statements about what is and isn't known.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R14",
+      "result_type": "llm",
+      "result": "Previous auditory segregation research has primarily used simple, narrowband signals that do not capture the spectrotemporal complexity of natural acoustic scenes, leaving the neural bases of auditory object formation incompletely explained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These background claims (C1, C8-C10, C14, C16) are well-supported by appropriate citations and represent accurate characterizations of the field. The claims about limitations of prior paradigms provide appropriate motivation for the current work. The statements reflect established knowledge in auditory neuroscience.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R15",
+      "result_type": "llm",
+      "result": "Prior work on auditory streaming and informational masking has identified roles for frequency selectivity, adaptation, and neural segregation in A1, but recent evidence emphasizes temporal coherence as critical for perceptual integration versus segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims accurately summarize prior literature with appropriate citations. C11-C13 describe streaming findings, C15 describes informational masking, and C17-C18 describe recent temporal coherence findings. The claims represent fair characterizations of cited work and provide appropriate context for the current study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "51ce43f0-0960-48f6-afc9-084637101d71",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R16",
+      "result_type": "llm",
+      "result": "The temporal coherence model proposes that segregation depends on temporal relationships between elements, with coherent elements grouped together through spectrotemporal analysis in auditory cortex, as supported by prior modeling and neurophysiological work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims accurately describe the theoretical framework of the temporal coherence model with appropriate citations (Shamma et al., 2011; Elhilali et al., 2009a). The description of model architecture (C52) and supporting evidence (C53-C54) are properly attributed to prior work. These provide appropriate theoretical context.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "99920c88-459e-45ba-b154-855ae3a47ef8",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R17",
+      "result_type": "llm",
+      "result": "Temporal coherence may serve as a correlate of stimulus salience for extracting important sounds from complex scenes, potentially implemented through binding across distributed feature channels without significant ensemble activity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "C56 is an inference from the model-behavior correspondence but lacks direct neural evidence linking temporal coherence to salience representation. C57 is explicitly speculative about neural implementation. While plausible, these claims require direct neurophysiological validation to move beyond speculation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "9a36dd28-9a86-4fdb-9c59-5769276477e5",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R18",
+      "result_type": "llm",
+      "result": "The parietal cortex, particularly IPS, is anatomically positioned to integrate bottom-up auditory input from temporoparietal cortex and top-down attentional input from prefrontal cortex, and has established roles in object representation, feature binding, and attentional selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims about parietal anatomy (C66-C67) and function (C68-C69) are well-supported by appropriate citations to anatomical and functional studies. The claims represent established knowledge about parietal cortex organization and provide appropriate context for interpreting the IPS findings.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "61160534-289d-4d47-8ea4-de3a14f94fe7",
+      "content_id": "b8785c4c-e439-46a1-902b-726b9ea81342",
+      "result_id": "R19",
+      "result_type": "llm",
+      "result": "The SFG stimulus was designed with appropriate controls for component number and power, and experiments were conducted with proper ethical approval using participants with normal hearing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These methodological claims describe the stimulus design (C72-C74), participant criteria (C75), and ethical procedures (C76). The controls are appropriate and well-justified. The methods are clearly described and meet standard experimental requirements.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "852186c3-b519-44cf-9cd0-fc37ca1165e3",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "Listeners demonstrate high sensitivity to detecting coherent figure patterns emerging from random background tones in the SFG stimulus (Experiments 1-2). Performance depends on coherence (number of repeating components) and duration, with hit rates reaching 93\u00b12% for the most salient conditions. Listeners can identify specific figures as distinct perceptual objects in an AXB discrimination task.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly affirm these findings, stating 'subjects are able to \"hear out\" a sequence of tones embedded in a complex acoustic environment' and 'most subjects are able to segregate the foreground sound pattern (one sound source) from the background sound source.' They note 'studies were appropriately performed with adequate controls.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "49fe248c-964a-4106-85c9-300a816ca70d",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "Figure detection performance scales with the number of repeating chords rather than their absolute duration (Experiment 3). Performance with 25 ms chords showed no significant difference from 50 ms chords, suggesting temporal scaling of the segregation mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers do not explicitly critique this finding, they express disappointment that 'the motivation for each modification of stimulus parameters should be explained more clearly' and ask 'What would their model predict for the manipulation?' This suggests uncertainty about the interpretation and theoretical grounding of this manipulation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "86ba5786-e6b4-485b-b776-783a2ec7e98a",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "Listeners maintain above-chance performance when figure components follow frequency ramps rather than fixed frequencies (Experiment 4). Performance decreases with steeper ramps (ramp=5 vs ramp=2), suggesting greater susceptibility to spectral than temporal perturbations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers specifically request model predictions for this manipulation, stating 'it is unclear why the model simulations are not shown for all experimental manipulations' and 'it would be nice to see what the model predicts for the ramped SFG.' This indicates the reviewers find the interpretation incomplete without modeling support.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "1db09a15-e39c-4b82-91c3-7652b7c6e565",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "Removing background-only chords that precede the figure does not affect detection performance (Experiment 5), suggesting segregation is not mediated by adaptation to ongoing background statistics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request clearer motivation for stimulus manipulations, asking 'What would their model predict for the manipulation?' The lack of model predictions for this condition leaves the mechanistic interpretation uncertain despite the behavioral finding.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "Figure detection remains robust when noise bursts are interleaved between chords (Experiment 6). Listeners show above-chance performance even with 500 ms noise interruptions, demonstrating integration over remarkably long time windows (up to 3 seconds total).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly highlight this finding as remarkable, stating 'it is remarkable that segregation of the foreground tone sequence still occurs despite introduction of interleaved bursts of white noise between the foreground tones. The duration of the white noise could extend up to 500 ms.' They affirm these findings without critique.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "7bc2ecf6-44cd-419d-bfd6-0f19969189dd",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "The long temporal integration windows (up to 500 ms) implicate cortical mechanisms at or beyond primary auditory cortex, as such long windows have rarely been reported in auditory object formation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly agree with this interpretation, stating 'These findings are clearly beyond the segregation capacities of core auditory cortex and the authors rightfully suggest non-classical auditory cortical processing stations as being the most likely generators of this percept.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "cfc5b1c5-a958-4262-bc3c-92db42512ac5",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "The behavioral results cannot be explained by standard adaptation-based models from the streaming paradigm. Figure and background overlap in frequency space, challenging segregation based on spatially distinct A1 populations. Performance depends on the number of simultaneously repeating components, suggesting integration across widely spaced frequency channels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers implicitly accept this claim by affirming the need for alternative models and explicitly stating the temporal coherence model is 'the most appropriate model for explaining how this foreground/background segregation develops,' which presupposes inadequacy of adaptation-based models.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "The psychophysical data are consistent with a temporal coherence model of auditory segregation. Model simulations show similar profiles to behavioral results for coherence and duration manipulations, constituting the first demonstration of temporal coherence model compatibility with complex acoustic scenes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers state 'the authors concisely provide modeling data and evidence that the temporal coherence model is the most appropriate model,' they express disappointment with 'the integration between data and modeling' and note 'it is unclear why the model simulations are not shown for all experimental manipulations, but only for number of tones and frequency components.' This incomplete modeling coverage creates uncertainty about the full support for temporal coherence.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "959da1a7-0f53-4b27-92d7-63b7e4392041",
+      "content_id": "6682ff63-6483-4aab-b757-bbb1d2ed4f1d",
+      "result_id": "R9",
+      "result_type": "peer",
+      "result": "Previous fMRI work found no A1 modulation during passive listening but strong IPS activation modulated by figure salience. IPS may represent a neural correlate of the figure percept, with representation depending on temporal coherence computation across frequencies initially represented in auditory cortex.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly endorse this interpretation, stating 'the authors rightfully suggest non-classical auditory cortical processing stations as being the most likely generators of this percept,' which aligns with the IPS findings and interpretation presented.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "134dd813-dd00-474f-9f68-92f763fdac97",
+      "result_id": "92782685-a3d1-43b4-86a1-5ea3fb627591"
+    },
+    {
+      "claim_id": "5a30045f-390a-46dc-8805-167d5c555000",
+      "result_id": "92782685-a3d1-43b4-86a1-5ea3fb627591"
+    },
+    {
+      "claim_id": "c75449b6-e1d7-4a53-8dde-547fe11aea19",
+      "result_id": "92782685-a3d1-43b4-86a1-5ea3fb627591"
+    },
+    {
+      "claim_id": "7121a12d-f7c5-4fe6-a830-852c31438e3b",
+      "result_id": "92782685-a3d1-43b4-86a1-5ea3fb627591"
+    },
+    {
+      "claim_id": "afcfeb8d-9acf-44d5-a773-6cda6469bb35",
+      "result_id": "92782685-a3d1-43b4-86a1-5ea3fb627591"
+    },
+    {
+      "claim_id": "233a87b5-2f72-4fc4-88f9-721fad1b90cf",
+      "result_id": "5de343e8-df15-4733-80db-99862c8bfc84"
+    },
+    {
+      "claim_id": "a6c26d12-bc21-4521-8f84-0253633e7261",
+      "result_id": "5de343e8-df15-4733-80db-99862c8bfc84"
+    },
+    {
+      "claim_id": "a84eb0ef-638f-4c45-93d2-78ed931b2d61",
+      "result_id": "5de343e8-df15-4733-80db-99862c8bfc84"
+    },
+    {
+      "claim_id": "4e92ef46-3b2b-4760-a8d5-022c28e96fc8",
+      "result_id": "4d5e71a5-9b6d-4938-8912-a8de28ba5887"
+    },
+    {
+      "claim_id": "1318468c-cac6-4d63-a8c7-ec9c36a1bd32",
+      "result_id": "4d5e71a5-9b6d-4938-8912-a8de28ba5887"
+    },
+    {
+      "claim_id": "62ff69e5-d4ca-480f-87d8-f74f8f7405a3",
+      "result_id": "4d5e71a5-9b6d-4938-8912-a8de28ba5887"
+    },
+    {
+      "claim_id": "ae47d79c-1a63-408d-82df-db106f514997",
+      "result_id": "c5c225ed-7d57-4903-b133-a5beb26c1eda"
+    },
+    {
+      "claim_id": "2f838d1f-8f25-4af2-a3bc-5e3b2cab71c9",
+      "result_id": "c5c225ed-7d57-4903-b133-a5beb26c1eda"
+    },
+    {
+      "claim_id": "10078149-2f7a-40bb-a395-1f9787a10d89",
+      "result_id": "c5c225ed-7d57-4903-b133-a5beb26c1eda"
+    },
+    {
+      "claim_id": "f6f8bbf4-a4d9-452e-bdac-eec3e38d4c09",
+      "result_id": "5c46102b-3a9e-4322-a2be-ed2ed914f1e2"
+    },
+    {
+      "claim_id": "22bfe7fc-0456-46c7-9bfc-1667c5827dab",
+      "result_id": "5c46102b-3a9e-4322-a2be-ed2ed914f1e2"
+    },
+    {
+      "claim_id": "c1e03aa7-f70e-4573-b0b6-c886f6c6ed28",
+      "result_id": "5c46102b-3a9e-4322-a2be-ed2ed914f1e2"
+    },
+    {
+      "claim_id": "f1d328ee-9aa4-484a-9017-a3ce55e941ab",
+      "result_id": "3ed92f57-6ab0-4a7c-8213-dbcae8fc81ce"
+    },
+    {
+      "claim_id": "50917089-b5d6-4e61-aaa3-00e28b3af8ac",
+      "result_id": "3ed92f57-6ab0-4a7c-8213-dbcae8fc81ce"
+    },
+    {
+      "claim_id": "ae8a417d-7a88-431b-a598-753ad950126a",
+      "result_id": "0613bff2-48c4-466d-b8fd-8efdb4e0702f"
+    },
+    {
+      "claim_id": "68183e3f-5f50-464e-bd1b-7c711583e290",
+      "result_id": "0613bff2-48c4-466d-b8fd-8efdb4e0702f"
+    },
+    {
+      "claim_id": "3df298f3-6bfa-4293-9d56-9bc119efe19f",
+      "result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7"
+    },
+    {
+      "claim_id": "9334b2ac-dd86-480f-b300-4692ad93738a",
+      "result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7"
+    },
+    {
+      "claim_id": "017c325f-6794-4237-8b57-c4770ed63c2b",
+      "result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7"
+    },
+    {
+      "claim_id": "70f544c8-9426-4ca7-8d41-70d93f6e9909",
+      "result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7"
+    },
+    {
+      "claim_id": "cc28ec42-1199-48ba-8e7b-e056ccb9dea1",
+      "result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7"
+    },
+    {
+      "claim_id": "9120aa96-ac0c-43f1-98aa-a98fa92eb93f",
+      "result_id": "85fabeac-c8ab-485e-ba80-767b80896043"
+    },
+    {
+      "claim_id": "7b581827-ee2b-4d2b-b8c1-25bac2981a68",
+      "result_id": "85fabeac-c8ab-485e-ba80-767b80896043"
+    },
+    {
+      "claim_id": "8e3548c6-77b6-4291-a82a-094db278cf69",
+      "result_id": "85fabeac-c8ab-485e-ba80-767b80896043"
+    },
+    {
+      "claim_id": "7e5ff71d-a2b9-4b7b-819e-73eb0bd60cfe",
+      "result_id": "85fabeac-c8ab-485e-ba80-767b80896043"
+    },
+    {
+      "claim_id": "b745c028-9eec-4ddf-b246-70d3e3ff4fb9",
+      "result_id": "739d1060-605f-41d3-a4a7-08b62b85254e"
+    },
+    {
+      "claim_id": "76535d91-ba88-4aa6-8698-584561b20510",
+      "result_id": "739d1060-605f-41d3-a4a7-08b62b85254e"
+    },
+    {
+      "claim_id": "a3b8689c-3560-4f86-bae9-ddf795a6aa86",
+      "result_id": "739d1060-605f-41d3-a4a7-08b62b85254e"
+    },
+    {
+      "claim_id": "771312f5-bbc6-4b25-af84-0fb33a5d1247",
+      "result_id": "739d1060-605f-41d3-a4a7-08b62b85254e"
+    },
+    {
+      "claim_id": "72569a8a-1dc1-4320-bba0-c6ca79846a7c",
+      "result_id": "739d1060-605f-41d3-a4a7-08b62b85254e"
+    },
+    {
+      "claim_id": "5b48cfbe-2242-455a-9f0d-41e10edeedd2",
+      "result_id": "2bd07198-48aa-480d-9c52-11298f0f6dae"
+    },
+    {
+      "claim_id": "28770fad-156e-412b-b338-3a57605249a6",
+      "result_id": "f6d0120e-15f0-4a76-bc15-78f545523478"
+    },
+    {
+      "claim_id": "4e6c4dc4-a7f3-4cde-a9d4-a81dc776cc1d",
+      "result_id": "f6d0120e-15f0-4a76-bc15-78f545523478"
+    },
+    {
+      "claim_id": "af808ea4-31a4-4756-8fa4-a5c056166e21",
+      "result_id": "f6d0120e-15f0-4a76-bc15-78f545523478"
+    },
+    {
+      "claim_id": "53f9ba57-5ec7-4ab6-ad1a-dd068ecf0bbc",
+      "result_id": "f6d0120e-15f0-4a76-bc15-78f545523478"
+    },
+    {
+      "claim_id": "25f5e074-a8a3-4b72-ba81-ab0b8bba32c7",
+      "result_id": "f6d0120e-15f0-4a76-bc15-78f545523478"
+    },
+    {
+      "claim_id": "40e33864-ebde-45c8-ada5-014aba23c1ea",
+      "result_id": "f6d0120e-15f0-4a76-bc15-78f545523478"
+    },
+    {
+      "claim_id": "0189a746-31b8-40c4-8581-8a20555a963b",
+      "result_id": "47cbcf89-16cd-424a-879e-1fc4fcc4a265"
+    },
+    {
+      "claim_id": "a04d205f-bb62-4205-923a-8054d7957b37",
+      "result_id": "47cbcf89-16cd-424a-879e-1fc4fcc4a265"
+    },
+    {
+      "claim_id": "8938c1ad-6141-41b0-be86-6ffff0015929",
+      "result_id": "47cbcf89-16cd-424a-879e-1fc4fcc4a265"
+    },
+    {
+      "claim_id": "cf0689db-c777-456b-8688-37230fb862b4",
+      "result_id": "47cbcf89-16cd-424a-879e-1fc4fcc4a265"
+    },
+    {
+      "claim_id": "759a568a-c5f8-4428-bec3-15aeab3b7d9e",
+      "result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1"
+    },
+    {
+      "claim_id": "bdfb8138-f8cd-48b5-bb54-72f051c61938",
+      "result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1"
+    },
+    {
+      "claim_id": "dc053cc4-1b1f-44ff-ac8c-066b074f0a83",
+      "result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1"
+    },
+    {
+      "claim_id": "ae310563-ee1c-409e-8e73-77b120373cee",
+      "result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1"
+    },
+    {
+      "claim_id": "41ec24cc-59bc-44e4-ace4-8b45aa0f8216",
+      "result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1"
+    },
+    {
+      "claim_id": "61473da4-a662-4df0-bf05-3089daecf63b",
+      "result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1"
+    },
+    {
+      "claim_id": "5ea4603c-9fb2-49db-9e64-588281389709",
+      "result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7"
+    },
+    {
+      "claim_id": "312e1303-10f6-413f-914d-f42162587c29",
+      "result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7"
+    },
+    {
+      "claim_id": "4fffb5d2-8b5e-4dd3-9cc2-be1b760c3a83",
+      "result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7"
+    },
+    {
+      "claim_id": "d0a231a2-9b93-49dd-9450-b380822cf723",
+      "result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7"
+    },
+    {
+      "claim_id": "479314db-3d37-4b0f-ab73-ab09aef396b3",
+      "result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7"
+    },
+    {
+      "claim_id": "c5445efb-ce56-46a7-bad9-c5d3b96198ed",
+      "result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7"
+    },
+    {
+      "claim_id": "ae81b9c9-ecd7-46af-a966-1495b368eb51",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "bbd96a94-0705-4e25-8bd7-074688cad108",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "29ea8bfb-a7e3-4a10-aa58-8e31bca17c4f",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "efcd1431-347e-424e-9f98-654e6b464410",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "0e33e1de-bb3e-49b8-81db-43f5d7fabc25",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "431f5ae5-831b-4066-a45d-344149303bf6",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "06eac75f-f5ef-444a-a2fd-3ef8eefccd7e",
+      "result_id": "51ce43f0-0960-48f6-afc9-084637101d71"
+    },
+    {
+      "claim_id": "3c72fe9d-59d7-43ad-9251-be6ccdaf5e5a",
+      "result_id": "99920c88-459e-45ba-b154-855ae3a47ef8"
+    },
+    {
+      "claim_id": "768a1f1e-3cf5-4171-bfb8-b05f786b166c",
+      "result_id": "99920c88-459e-45ba-b154-855ae3a47ef8"
+    },
+    {
+      "claim_id": "788b625d-8034-460f-a0f8-cc2de66a1207",
+      "result_id": "9a36dd28-9a86-4fdb-9c59-5769276477e5"
+    },
+    {
+      "claim_id": "86a084c8-b865-4920-a068-ffd7401727cc",
+      "result_id": "9a36dd28-9a86-4fdb-9c59-5769276477e5"
+    },
+    {
+      "claim_id": "809e0e0d-60d6-4945-a5d7-4f877771da38",
+      "result_id": "9a36dd28-9a86-4fdb-9c59-5769276477e5"
+    },
+    {
+      "claim_id": "f62f890b-1a5c-4364-b02c-37499891aa15",
+      "result_id": "9a36dd28-9a86-4fdb-9c59-5769276477e5"
+    },
+    {
+      "claim_id": "0cb9afc5-db20-4c36-9b4a-eddd928db88e",
+      "result_id": "61160534-289d-4d47-8ea4-de3a14f94fe7"
+    },
+    {
+      "claim_id": "1318468c-cac6-4d63-a8c7-ec9c36a1bd32",
+      "result_id": "61160534-289d-4d47-8ea4-de3a14f94fe7"
+    },
+    {
+      "claim_id": "62ff69e5-d4ca-480f-87d8-f74f8f7405a3",
+      "result_id": "61160534-289d-4d47-8ea4-de3a14f94fe7"
+    },
+    {
+      "claim_id": "7aa9aed5-d846-451b-9d26-157d0b513b5d",
+      "result_id": "61160534-289d-4d47-8ea4-de3a14f94fe7"
+    },
+    {
+      "claim_id": "e3576a08-fe86-4cd1-a2d1-fe891a3dfd7a",
+      "result_id": "61160534-289d-4d47-8ea4-de3a14f94fe7"
+    },
+    {
+      "claim_id": "134dd813-dd00-474f-9f68-92f763fdac97",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "cf978ce1-eeb9-4532-8d8a-2df39ca3f4cc",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "5a30045f-390a-46dc-8805-167d5c555000",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "c75449b6-e1d7-4a53-8dde-547fe11aea19",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "7121a12d-f7c5-4fe6-a830-852c31438e3b",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "afcfeb8d-9acf-44d5-a773-6cda6469bb35",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "4e92ef46-3b2b-4760-a8d5-022c28e96fc8",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "233a87b5-2f72-4fc4-88f9-721fad1b90cf",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "a6c26d12-bc21-4521-8f84-0253633e7261",
+      "result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3"
+    },
+    {
+      "claim_id": "ae47d79c-1a63-408d-82df-db106f514997",
+      "result_id": "49fe248c-964a-4106-85c9-300a816ca70d"
+    },
+    {
+      "claim_id": "2f838d1f-8f25-4af2-a3bc-5e3b2cab71c9",
+      "result_id": "49fe248c-964a-4106-85c9-300a816ca70d"
+    },
+    {
+      "claim_id": "10078149-2f7a-40bb-a395-1f9787a10d89",
+      "result_id": "49fe248c-964a-4106-85c9-300a816ca70d"
+    },
+    {
+      "claim_id": "f6f8bbf4-a4d9-452e-bdac-eec3e38d4c09",
+      "result_id": "86ba5786-e6b4-485b-b776-783a2ec7e98a"
+    },
+    {
+      "claim_id": "22bfe7fc-0456-46c7-9bfc-1667c5827dab",
+      "result_id": "86ba5786-e6b4-485b-b776-783a2ec7e98a"
+    },
+    {
+      "claim_id": "c1e03aa7-f70e-4573-b0b6-c886f6c6ed28",
+      "result_id": "86ba5786-e6b4-485b-b776-783a2ec7e98a"
+    },
+    {
+      "claim_id": "f1d328ee-9aa4-484a-9017-a3ce55e941ab",
+      "result_id": "1db09a15-e39c-4b82-91c3-7652b7c6e565"
+    },
+    {
+      "claim_id": "50917089-b5d6-4e61-aaa3-00e28b3af8ac",
+      "result_id": "1db09a15-e39c-4b82-91c3-7652b7c6e565"
+    },
+    {
+      "claim_id": "ae8a417d-7a88-431b-a598-753ad950126a",
+      "result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6"
+    },
+    {
+      "claim_id": "3df298f3-6bfa-4293-9d56-9bc119efe19f",
+      "result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6"
+    },
+    {
+      "claim_id": "9334b2ac-dd86-480f-b300-4692ad93738a",
+      "result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6"
+    },
+    {
+      "claim_id": "68183e3f-5f50-464e-bd1b-7c711583e290",
+      "result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6"
+    },
+    {
+      "claim_id": "cc28ec42-1199-48ba-8e7b-e056ccb9dea1",
+      "result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6"
+    },
+    {
+      "claim_id": "017c325f-6794-4237-8b57-c4770ed63c2b",
+      "result_id": "7bc2ecf6-44cd-419d-bfd6-0f19969189dd"
+    },
+    {
+      "claim_id": "70f544c8-9426-4ca7-8d41-70d93f6e9909",
+      "result_id": "7bc2ecf6-44cd-419d-bfd6-0f19969189dd"
+    },
+    {
+      "claim_id": "7e5ff71d-a2b9-4b7b-819e-73eb0bd60cfe",
+      "result_id": "cfc5b1c5-a958-4262-bc3c-92db42512ac5"
+    },
+    {
+      "claim_id": "9120aa96-ac0c-43f1-98aa-a98fa92eb93f",
+      "result_id": "cfc5b1c5-a958-4262-bc3c-92db42512ac5"
+    },
+    {
+      "claim_id": "7b581827-ee2b-4d2b-b8c1-25bac2981a68",
+      "result_id": "cfc5b1c5-a958-4262-bc3c-92db42512ac5"
+    },
+    {
+      "claim_id": "8e3548c6-77b6-4291-a82a-094db278cf69",
+      "result_id": "cfc5b1c5-a958-4262-bc3c-92db42512ac5"
+    },
+    {
+      "claim_id": "b745c028-9eec-4ddf-b246-70d3e3ff4fb9",
+      "result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b"
+    },
+    {
+      "claim_id": "72569a8a-1dc1-4320-bba0-c6ca79846a7c",
+      "result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b"
+    },
+    {
+      "claim_id": "76535d91-ba88-4aa6-8698-584561b20510",
+      "result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b"
+    },
+    {
+      "claim_id": "a3b8689c-3560-4f86-bae9-ddf795a6aa86",
+      "result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b"
+    },
+    {
+      "claim_id": "5b48cfbe-2242-455a-9f0d-41e10edeedd2",
+      "result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b"
+    },
+    {
+      "claim_id": "771312f5-bbc6-4b25-af84-0fb33a5d1247",
+      "result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b"
+    },
+    {
+      "claim_id": "28770fad-156e-412b-b338-3a57605249a6",
+      "result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041"
+    },
+    {
+      "claim_id": "4e6c4dc4-a7f3-4cde-a9d4-a81dc776cc1d",
+      "result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041"
+    },
+    {
+      "claim_id": "af808ea4-31a4-4756-8fa4-a5c056166e21",
+      "result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041"
+    },
+    {
+      "claim_id": "53f9ba57-5ec7-4ab6-ad1a-dd068ecf0bbc",
+      "result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041"
+    },
+    {
+      "claim_id": "25f5e074-a8a3-4b72-ba81-ab0b8bba32c7",
+      "result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041"
+    },
+    {
+      "claim_id": "40e33864-ebde-45c8-ada5-014aba23c1ea",
+      "result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "90d57c35-e7fd-47a4-b6f9-d77fd32cdcc7",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "92782685-a3d1-43b4-86a1-5ea3fb627591",
+      "peer_result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluations support the core findings from Experiments 1-2 showing listeners can segregate foreground tone sequences from complex backgrounds. OpenEval focuses on C2, C19-C22 (parametric effects and rapid learning), while peer review covers a broader set (C2-C3, C19-C25) including the AXB discrimination task. Both affirm the experimental controls and basic segregation findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "3fac3c88-18b6-499b-ae4b-970aa5b27394",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "5de343e8-df15-4733-80db-99862c8bfc84",
+      "peer_result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "OpenEval evaluates the AXB discrimination task (C24-C25, C43) as strongly supporting object-level representation. Peer review includes C24-C25 in their broader affirmation of segregation findings. Both support these claims, though OpenEval provides more detailed reasoning about ruling out low-level confounds.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "741f6bc0-208f-4787-96cc-ade0e1b1f511",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "4d5e71a5-9b6d-4938-8912-a8de28ba5887",
+      "peer_result_id": "852186c3-b519-44cf-9cd0-fc37ca1165e3",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "OpenEval supports the power control methodology (C23, C73-C74) as eliminating confounds. Peer review includes C23 in their broader affirmation that 'studies were appropriately performed with adequate controls.' Both agree on the adequacy of experimental controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "2fe1f750-32dd-43d3-b552-1a145869edd9",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "c5c225ed-7d57-4903-b133-a5beb26c1eda",
+      "peer_result_id": "49fe248c-964a-4106-85c9-300a816ca70d",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Perfect claim overlap (C32, C33, C44) but divergent evaluations. OpenEval finds the statistical evidence clearly supports discrete temporal unit processing. Peer reviewers express uncertainty, requesting clearer motivation and model predictions for this manipulation, suggesting incomplete theoretical grounding despite the behavioral finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "590e6d36-d251-4cc7-899d-ac47c18c5889",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "5c46102b-3a9e-4322-a2be-ed2ed914f1e2",
+      "peer_result_id": "86ba5786-e6b4-485b-b776-783a2ec7e98a",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Perfect claim overlap (C34, C35, C45) but divergent evaluations. OpenEval finds the graded performance degradation with frequency ramps clearly supports dynamic frequency tracking. Peer reviewers find the interpretation incomplete without model predictions, specifically requesting 'what the model predicts for the ramped SFG.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "0dd20a2d-fcc8-4c99-ba11-2a609077066c",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "3ed92f57-6ab0-4a7c-8213-dbcae8fc81ce",
+      "peer_result_id": "1db09a15-e39c-4b82-91c3-7652b7c6e565",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Perfect claim overlap (C36, C37) but divergent evaluations. OpenEval finds the null effect of background presence strongly supports rejection of adaptation mechanisms. Peer reviewers express uncertainty about the mechanistic interpretation, requesting model predictions to support the conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "534415db-44fd-4ead-b33a-6744eebf3a40",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "0613bff2-48c4-466d-b8fd-8efdb4e0702f",
+      "peer_result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluations support the noise interruption findings (C38, C46). OpenEval emphasizes the robustness demonstrated by the null effect. Peer reviewers explicitly highlight this as 'remarkable,' affirming the finding without critique. Strong agreement on this experimental result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "25a7b03e-1f9b-49c8-9b24-a956b52c92f4",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7",
+      "peer_result_id": "7ecc1bb0-4eae-4eba-a410-76e1e56f5fb6",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Overlapping claims (C39, C40, C47) about long temporal integration windows. Both evaluations support these findings. OpenEval also addresses C41-C42 about cortical involvement. Peer review emphasizes the remarkable nature of 500ms integration, with both affirming the robustness of the findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "89a8a621-a07f-4545-b73f-0be3e824ff65",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "4d45ec4b-2bd1-432f-a75e-18920be5bbe7",
+      "peer_result_id": "7bc2ecf6-44cd-419d-bfd6-0f19969189dd",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluations support the inference about cortical involvement (C41, C42). OpenEval finds the inference reasonable given known A1 temporal windows. Peer reviewers explicitly agree, stating findings are 'clearly beyond the segregation capacities of core auditory cortex' and authors 'rightfully suggest non-classical auditory cortical processing stations.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "b1a0ea19-1c82-4a9c-9343-f9e2d9e39f5b",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "85fabeac-c8ab-485e-ba80-767b80896043",
+      "peer_result_id": "cfc5b1c5-a958-4262-bc3c-92db42512ac5",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Perfect claim overlap (C5, C26, C27, C28) regarding inadequacy of adaptation-based models. Both evaluations support these claims. OpenEval emphasizes the logical arguments from stimulus properties. Peer reviewers implicitly accept this by affirming the need for alternative models and endorsing temporal coherence as most appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "dddd99bf-a288-4e31-899e-c5730582b8e5",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "739d1060-605f-41d3-a4a7-08b62b85254e",
+      "peer_result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "High claim overlap (C6, C7, C29, C48, C55) regarding temporal coherence model support. OpenEval finds qualitative correspondence sufficient for support with appropriate qualifications. Peer reviewers express disappointment with 'integration between data and modeling' and note model simulations aren't shown for all manipulations, creating uncertainty despite acknowledging the model as 'most appropriate.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4115c3a9-1bcc-4140-950f-b40f44bf2bc1",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "2bd07198-48aa-480d-9c52-11298f0f6dae",
+      "peer_result_id": "988c8dd9-fcf4-4e5c-b8b2-35d85d57e90b",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Both evaluations express uncertainty about the novelty claim (C49). OpenEval notes it requires comprehensive literature knowledge for verification. Peer reviewers' uncertainty about model completeness indirectly affects confidence in novelty claims. Both find the claim unverifiable from available evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "f1a4cfba-d092-4d73-af66-78f5b6670a42",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "f6d0120e-15f0-4a76-bc15-78f545523478",
+      "peer_result_id": "959da1a7-0f53-4b27-92d7-63b7e4392041",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Perfect claim overlap (C62-C65, C70-C71) regarding IPS involvement but divergent evaluations. OpenEval finds these claims speculative, requiring direct experimental validation beyond the cited fMRI study. Peer reviewers explicitly endorse the interpretation, stating authors 'rightfully suggest non-classical auditory cortical processing stations,' showing greater confidence in the IPS hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "6583a4bd-bb8c-439d-b729-9c2b1e826be1",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "47cbcf89-16cd-424a-879e-1fc4fcc4a265",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates claims about current knowledge gaps and animal studies (C58-C61) as appropriately qualified statements. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "dff2a741-8c61-4de6-b115-1ef3b723daa1",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "8a82fa22-ae0a-4fec-ab2a-7d97f217adc1",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates background/motivation claims (C1, C8-C10, C14, C16) as well-supported by citations and accurate field characterizations. No corresponding peer review evaluation found for these introductory claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "474948a3-a4da-4b20-8f3c-3724330b15cc",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "cc0778a1-83d8-4ee3-a4f8-7d3f6f29dbc7",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates literature summary claims (C11-C13, C15, C17-C18) as accurate characterizations with appropriate citations. No corresponding peer review evaluation found for these background literature claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "4973698d-517f-405f-9299-3fd253f1ea31",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "51ce43f0-0960-48f6-afc9-084637101d71",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates theoretical framework descriptions (C30-C31, C50-C54) as accurate with proper attribution to prior work. No corresponding peer review evaluation found for these theoretical background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "16dde65a-993e-4902-a735-bc7afece6f4e",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "99920c88-459e-45ba-b154-855ae3a47ef8",
+      "peer_result_id": null,
+      "openeval_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval finds claims about salience representation and neural implementation (C56-C57) speculative, requiring direct neurophysiological validation. No corresponding peer review evaluation found for these specific mechanistic inferences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "58eebc01-9671-42dd-8c56-372db0d809e7",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "9a36dd28-9a86-4fdb-9c59-5769276477e5",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates parietal anatomy and function claims (C66-C69) as well-supported by appropriate citations to established knowledge. No corresponding peer review evaluation found for these anatomical background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    },
+    {
+      "id": "37fed6f7-6167-462f-bb55-a8827f4fefb8",
+      "submission_id": "838389ec-48b4-48c6-a0c6-add549f25c53",
+      "openeval_result_id": "61160534-289d-4d47-8ea4-de3a14f94fe7",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates methodological claims (C72-C76) as appropriate and meeting standard experimental requirements. No corresponding peer review evaluation found for these specific methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:00:14.928403Z"
+    }
+  ]
+}

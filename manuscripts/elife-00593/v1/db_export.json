@@ -1,0 +1,165 @@
+{
+  "submission": {
+    "id": "a389a981-6ff3-4670-8576-d005f37fc29f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:18.790428Z",
+    "updated_at": "2025-10-21T22:51:18.790428Z"
+  },
+  "content": [
+    {
+      "id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "submission_id": "a389a981-6ff3-4670-8576-d005f37fc29f",
+      "content_type": "manuscript",
+      "content_text": "# Bidding the CpG island goodbye\n\n## Authors\n\n- John M Greally<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics Albert Einstein College of Medicine New York United States john.greally@einstein.yu.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nExperiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.\n",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "22186ef0-a7e4-4353-b4a3-632186472f37",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "claim_id": "C1",
+      "claim": "Experiments on seven vertebrates were conducted to study DNA methylation patterns and regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The claim references experiments that were performed on seven vertebrates, indicating empirical data collection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "ded6cf83-1b11-400d-9eee-1f25a4bb61c6",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "claim_id": "C2",
+      "claim": "Identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is supported by experimental data from seven vertebrates and involves inference about the comparative value of different analytical approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "c628841c-3e1b-4ebe-92db-cde636f97961",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "claim_id": "C3",
+      "claim": "Islands of non-methylated DNA exist in vertebrate genomes.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Experiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The existence of non-methylated DNA islands is implied by the discussion of identifying their locations; this is also consistent with established knowledge about DNA methylation patterns.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "2c0c2062-7c80-4920-acfb-17335f6b5933",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "claim_id": "C4",
+      "claim": "Evolutionarily-conserved epigenetic regulatory elements exist in vertebrates.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Experiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "The existence of evolutionarily-conserved epigenetic regulatory elements is implied by the discussion of methods to study them; this is also consistent with established scientific knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "ac975e46-b8ab-4604-bc4f-02b585d3dd37",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "claim_id": "C5",
+      "claim": "CpG islands have been studied as potential epigenetic regulatory elements.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Experiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The comparison implies that CpG islands have been a subject of study for understanding epigenetic regulatory elements, which is consistent with established scientific practice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "7c77656a-d9cd-4a6d-bd32-86d5cde6aeda",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "claim_id": "C6",
+      "claim": "Non-methylated DNA islands and CpG islands are distinct or different entities that can be studied separately.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Experiments on seven vertebrates suggest that identifying the locations of islands of non-methylated DNA provides more insights into evolutionarily-conserved epigenetic regulatory elements than studies of CpG islands.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The comparison between studying non-methylated DNA islands versus CpG islands implies they are distinct entities or approaches that can be differentiated.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f20a5e67-783c-48f2-b37a-2a863e809499",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors report that experiments across seven vertebrate species demonstrate that non-methylated DNA islands provide superior insights into evolutionarily-conserved epigenetic regulatory elements compared to traditional CpG island studies. This suggests a methodological shift in how epigenetic regulatory elements should be identified and studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While C1 confirms experiments were conducted on seven vertebrates, the abstract provides no details about experimental design, methodology, sample sizes, statistical analyses, or quantitative comparisons between the two approaches. The comparative claim in C2 ('more insights') is vague and lacks supporting metrics, effect sizes, or statistical validation. Critical information about how 'insights' were measured, what specific regulatory elements were identified, and whether appropriate controls were used is absent. The distinction between non-methylated DNA islands and CpG islands (C6) is implied but not explicitly defined or validated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    },
+    {
+      "id": "a4f0d116-2fb6-45e6-9261-ca42ab021564",
+      "content_id": "1a0b05ad-7303-4ce0-a0fe-568a8d155223",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "The authors reference prior work establishing CpG islands as subjects of study for understanding epigenetic regulatory elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "C5 reflects well-established scientific knowledge that CpG islands have been extensively studied in the context of epigenetic regulation. This is a standard reference to prior work in the field and is consistent with decades of published literature on CpG islands and gene regulation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:18.790428Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "22186ef0-a7e4-4353-b4a3-632186472f37",
+      "result_id": "f20a5e67-783c-48f2-b37a-2a863e809499"
+    },
+    {
+      "claim_id": "ded6cf83-1b11-400d-9eee-1f25a4bb61c6",
+      "result_id": "f20a5e67-783c-48f2-b37a-2a863e809499"
+    },
+    {
+      "claim_id": "c628841c-3e1b-4ebe-92db-cde636f97961",
+      "result_id": "f20a5e67-783c-48f2-b37a-2a863e809499"
+    },
+    {
+      "claim_id": "2c0c2062-7c80-4920-acfb-17335f6b5933",
+      "result_id": "f20a5e67-783c-48f2-b37a-2a863e809499"
+    },
+    {
+      "claim_id": "7c77656a-d9cd-4a6d-bd32-86d5cde6aeda",
+      "result_id": "f20a5e67-783c-48f2-b37a-2a863e809499"
+    },
+    {
+      "claim_id": "ac975e46-b8ab-4604-bc4f-02b585d3dd37",
+      "result_id": "a4f0d116-2fb6-45e6-9261-ca42ab021564"
+    }
+  ],
+  "comparisons": []
+}

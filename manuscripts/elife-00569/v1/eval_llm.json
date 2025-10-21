@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors developed a novel LRseq method and sequenced the B. schlosseri genome from two colonies (Sc6a-b and 356a), achieving a 580 Mbp assembly. The LRseq method for colony 356a achieved dramatically improved assembly metrics (N50 of 7kb) compared to conventional sequencing of Sc6a-b (N50 of 1kb), and reduced the confounding impact of repetitive DNA on assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C19-C21, C87-C91 provide clear quantitative comparisons showing LRseq's superior performance. Sample preparation and validation (C82-C86) are well documented. The assembly size (C4) is directly measured. The improvement in N50 from 1kb to 7kb represents a 7-fold improvement, strongly supporting the method's effectiveness."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C58",
+      "C94"
+    ],
+    "result": "The B. schlosseri genome contains 38,730 putative protein-coding loci with at least 30% transcript support, including approximately 14,000 intron-containing genes and 13,500 intron-less genes. Approximately 40% of genes were assigned to 13 of 16 chromosomes, with mean gene length of 3.6 kbp and mean exon length of 170 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Gene prediction was guided by 88 Gb of RNA-Seq data (C92) using Augustus software (C94). The numbers are internally consistent: C29 reports 38,730 total genes, while C31+C32 sum to 27,463 genes with start/stop codons. Claims C5-C6 report slightly different numbers (~14,000 and 13,500) than C31-C32 (13,910 and 13,553), likely representing different filtering criteria. PCR validation of 144/145 genes (C35) provides strong experimental support."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C7"
+    ],
+    "result": "Using metaphase chromosome sequencing and k-means clustering, 13 B. schlosseri chromosomes were successfully resolved, close to the ~16 chromosomes predicted by prior metaphase spread studies. Approximately 40% of genes were confidently assigned to these 13 chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The k-means clustering analysis (C22) shows that increasing beyond 13 clusters provides minimal error reduction, supporting the identification of 13 chromosomes. This is consistent with prior estimates of ~16 chromosomes (C23). The 40% gene assignment rate (C7) is reasonable given the technical challenges of chromosome-level assembly, though it indicates incomplete chromosome coverage."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C96",
+      "C97"
+    ],
+    "result": "The B. schlosseri genome contains extensive repetitive content: 6,601 interspersed repeat families covering ~65% of the assembly and ~3.2 million tandem repeats. This repeat content is comparable to the human genome (>50% repeats), suggesting LRseq may have general utility for repeat-rich genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Repeat identification used established tools (RepeatScout, RepeatMasker, XSTREAM) with clear parameters (C24-C26). The 65% repeat coverage is well-documented and comparable to human (C96). However, C97's claim about general utility is speculative and would require testing on additional genomes. The comparison to the independently assembled Sc6a-b (52.27% masked) provides internal validation."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C35"
+    ],
+    "result": "The genome assembly was validated by alignment of all 66 NCBI B. schlosseri genes, 11 fosmid sequences, most ESTs, and 93% of independently sequenced Sc6a-b contigs. PCR and Sanger sequencing confirmed 144 of 145 tested genes (99.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Multiple independent validation approaches converge to support assembly quality (C27-C28, C35). The 99.3% PCR validation rate is exceptionally high. The 93% mapping rate for independently generated Sc6a-b contigs provides strong orthogonal validation. These results collectively demonstrate high assembly accuracy."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Phylogenomic analysis of 521 nuclear genes across 15 species and mitogenomic analysis of 65 species both support tunicates as the sister group to vertebrates (forming Olfactores), with cephalochordates basal to other chordates. The analyses recover chordate monophyly with high statistical support, though tunicate mitochondrial sequences show characteristically high substitution rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Both nuclear (C36, C78-C81) and mitochondrial (C37, C68-C77) phylogenies converge on the same topology. PhyloBayes chains converged after 1971 cycles (C80) and the consensus tree was topologically consistent with maximum likelihood (C81). The high substitution rate in tunicates (C74-C75) is acknowledged and consistent with prior work. Statistical support is reported as high (C72), supporting robust inference."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C95"
+    ],
+    "result": "Comparative genomic analysis using blastp (e-value \u2264 e\u207b\u00b9\u2070) found that 77% of human genes have homology traceable to protochordates, indicating the common ancestor of tunicates and vertebrates had homology to at least 77% of the human gene repertoire. Approximately 660 genes are present in this common ancestor but absent in non-chordate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The analysis used a consistent e-value threshold (e\u207b\u00b9\u2070) across 19 proteomes (C95). The 77% figure (C38) is directly measured, and the inference about the common ancestor (C39) is logically sound. The identification of 660 chordate-specific genes (C40) provides insight into vertebrate origins. However, the e-value threshold choice (e\u207b\u00b9\u2070) balances sensitivity and specificity but is somewhat arbitrary and could affect the exact percentages."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C66",
+      "C67"
+    ],
+    "result": "Six hematopoietic-related genes (ZBTB1, MEFV, DSG3, NQO1, NQO2, BHLHE40) are present in B. schlosseri and vertebrates but absent in cephalochordates and solitary urochordates that lack defined vascular systems. B. schlosseri possesses a defined vasculature with synchronously beating hearts and at least ten morphologically distinct blood cell types, leading to the hypothesis that colonial ascidians retained ancestral hematopoietic programs lost in other protochordates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The presence/absence of specific genes (C41-C42) is data-driven, and the anatomical observations (C44-C45, C66-C67) are supported by citations and video evidence. However, the hypothesis (C46-C47) that colonial ascidians retained ancestral programs while others lost them is speculative. Alternative explanations (e.g., independent gain in colonial tunicates, convergent evolution) are not adequately addressed. The correlation between gene presence and vascular complexity is suggestive but not conclusive."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Expression analysis revealed 13 HSC homologs in the endostyle stem cell niche, 7 in the vasculature, and all 14 early erythroid CD71+ genes in both tissues. This pattern indicates hematopoiesis evolved from stem cells to myeloid to lymphoid populations, with T/B-cell adaptive immunity absent in B. schlosseri.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The expression data (C48-C50) are experimentally validated by PCR and re-sequencing. However, the evolutionary inference (C51) that hematopoiesis proceeded from stem cells\u2192myeloid\u2192lymphoid is based on gene conservation patterns across species, not direct evolutionary evidence. The claim relies on the assumption that gene conservation reflects evolutionary sequence, which is reasonable but not definitive. The absence of adaptive immunity (C52) is well-supported by negative results (C53-C57)."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The B. schlosseri genome lacks key vertebrate adaptive immune genes (MHC, RAG1/RAG2, terminal deoxynucleotidyl transferase, V region elements, VLR-like elements) but encodes Foxn1 homologues, indicating some genetic circuitry relevant for vertebrate adaptive immunity was present in the common ancestor. The genome contains ~45% intron-less genes including retroviral genes, consistent with hypotheses about horizontal gene transfer origins of adaptive immunity genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The absence of adaptive immune genes (C53-C57) is clearly documented through genome searches. The presence of Foxn1 (C62-C63) is data-supported. The inference about ancestral genetic circuitry (C64) is reasonable given Foxn1's role in thymopoiesis. The observation about intron-less genes and retroviruses (C58-C59) is factual, though the connection to RAG origin (C61) is appropriately presented as a cited hypothesis rather than a conclusion from this work."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C65"
+    ],
+    "result": "B. schlosseri is a colonial urochordate that follows chordate development after sexual reproduction but uses stem cell-mediated budding for asexual reproduction, producing nearly identical adult body plans through both pathways. As the first sequenced colonial tunicate and closest living invertebrate relative of vertebrates, it represents an important model for studying vertebrate origins, adaptive immunity evolution, and organ/tissue complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C1-C18) represent well-established background knowledge supported by extensive citations to prior work. The phylogenetic position of tunicates (C3, C10) is scientific consensus supported by this study's phylogenetic analyses (C36-C37). The novelty claim (C65) is factual. The characterization of B. schlosseri biology draws from established literature and is not controversial."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "RNA-Seq generated approximately 88 Gb of transcriptome data from 19 B. schlosseri colonies and approximately 4 Gb from tissue-specific samples to guide gene prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are straightforward quantitative descriptions of the sequencing effort (C92-C93). The data volumes are clearly stated and were used to guide Augustus gene prediction (C94), providing 30% transcript support for all predicted genes (C29). This represents substantial transcriptomic validation of the genome assembly."
+  }
+]

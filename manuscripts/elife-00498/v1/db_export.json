@@ -1,0 +1,2199 @@
+{
+  "submission": {
+    "id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:01.216484Z",
+    "updated_at": "2025-10-21T22:51:01.216484Z"
+  },
+  "content": [
+    {
+      "id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "content_type": "manuscript",
+      "content_text": "# Pharmacological brake-release of mRNA translation enhances cognitive memory\n\n## Authors\n\n- Carmela Sidrauski<sup>1</sup> \u2020\n- Diego Acosta-Alvear<sup>1</sup>\n- Arkady Khoutorsky<sup>3</sup>\n- Punitha Vedantham<sup>4</sup>\n- Brian R Hearn<sup>4</sup>\n- Han Li<sup>5</sup>\n- Karine Gamache<sup>6</sup>\n- Ciara M Gallagher<sup>1</sup>\n- Kenny K-H Ang<sup>4</sup>\n- Chris Wilson<sup>4</sup>\n- Voytek Okreglak<sup>1</sup>\n- Avi Ashkenazi<sup>5</sup>\n- Byron Hann<sup>7</sup>\n- Karim Nader<sup>6</sup>\n- Michelle R Arkin<sup>4</sup>\n- Adam R Renslo<sup>4</sup>\n- Nahum Sonenberg<sup>3</sup>\n- Peter Walter<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n2. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n3. Department of Biochemistry McGill Cancer Center Montreal Canada\n4. Small Molecule Discovery Center and Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n5. Department of Molecular Oncology Genentech Inc South San Francisco United States\n6. Department of Psychology McGill University Montreal Canada\n7. Helen Diller Family Comprehensive Cancer Center University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00498.001 Phosphorylation of the \u03b1-subunit of initiation factor 2 (eIF2) controls protein synthesis by a conserved mechanism. In metazoa, distinct stress conditions activate different eIF2\u03b1 kinases (PERK, PKR, GCN2, and HRI) that converge on phosphorylating a unique serine in eIF2\u03b1. This collection of signaling pathways is termed the \u2018integrated stress response\u2019 (ISR). eIF2\u03b1 phosphorylation diminishes protein synthesis, while allowing preferential translation of some mRNAs. Starting with a cell-based screen for inhibitors of PERK signaling, we identified a small molecule, named ISRIB, that potently (IC 50 = 5 nM) reverses the effects of eIF2\u03b1 phosphorylation. ISRIB reduces the viability of cells subjected to PERK-activation by chronic endoplasmic reticulum stress. eIF2\u03b1 phosphorylation is implicated in memory consolidation. Remarkably, ISRIB-treated mice display significant enhancement in spatial and fear-associated learning. Thus, memory consolidation is inherently limited by the ISR, and ISRIB releases this brake. As such, ISRIB promises to contribute to our understanding and treatment of cognitive disorders. DOI: http://dx.doi.org/10.7554/eLife.00498.001\n\n## Introduction\n\nIn metazoa, diverse stress signals converge at a single phosphorylation event at serine 51 of a common effector, the translation initiation factor eIF2\u03b1. This step is carried out by four eIF2\u03b1 kinases in mammalian cells: PERK, which responds to an accumulation of unfolded proteins in the endoplasmic reticulum (ER), GCN2 to amino acid starvation and UV light, PKR to viral infection, and HRI to heme deficiency. This collection of signaling pathways has been termed the \u2018integrated stress response\u2019 (ISR), as they converge on the same molecular event. eIF2\u03b1 phosphorylation results in an attenuation of translation with consequences that allow cells to cope with the varied stresses (Wek et al., 2006).\n\neIF2 (which is comprised of three subunits, \u03b1, \u03b2 and \u03b3) binds GTP and the initiator Met-tRNA to form the ternary complex (eIF2-GTP-Met-tRNAi), which, in turn, associates with the 40S ribosomal subunit forming the 43S pre-initiation complex (PIC) that scans the 5\u2032UTR of mRNAs to select the initiating AUG codon. Upon phosphorylation of its \u03b1-subunit, eIF2 becomes a competitive inhibitor of its guanine nucleotide exchange factor (GEF), eIF2B (Hinnebusch and Lorsch, 2012). The tight and non-productive binding of phosphorylated eIF2 to eIF2B prevents loading of the eIF2 complex with GTP thus blocking ternary complex formation and reducing translation initiation (Krishnamoorthy et al., 2001). Because eIF2B is less abundant than eIF2, phosphorylation of only a small fraction of the total eIF2 has a dramatic impact on eIF2B activity in cells.\n\nParadoxically, under conditions of reduced protein synthesis, a small group of mRNAs that contain upstream open reading frames (uORFs) in their 5\u2032UTR are translationally up-regulated (Hinnebusch, 2005; Jackson et al., 2010). These include mammalian ATF4 (a cAMP element binding [CREB] transcription factor) and CHOP (a pro-apoptotic transcription factor) (Harding et al., 2000; Vattem and Wek, 2004; Palam et al., 2011). ATF4 regulates the expression of many genes involved in metabolism and nutrient uptake and additional transcription factors, such as CHOP, which is under both translational and transcriptional control (Ma et al., 2002). Phosphorylation of eIF2\u03b1 thus leads to preferential translation of key regulatory molecules and directs diverse changes in the transcriptome of cells upon cellular stress.\n\nOne of the eIF2\u03b1 kinases, PERK, lies at the intersection of the ISR and the unfolded protein response (UPR) that maintains homeostasis of protein folding in the ER (Pavitt and Ron, 2012). The UPR is activated by unfolded or misfolded proteins that accumulate in the ER lumen because of an imbalance between protein folding load and protein folding capacity, a condition known as \u2018ER stress\u2019. In mammals, the UPR is comprised of three signaling branches mediated by ER-localized transmembrane sensors, PERK, IRE1, and ATF6. These sensor proteins detect the accumulation of unfolded protein in the ER and transmit the information across the ER membrane, initiating unique signaling pathways that converge in the activation of an extensive transcriptional response, which ultimately results in ER expansion (Ron and Walter, 2007). The lumenal stress-sensing domains of PERK and IRE1 are homologous and likely activated in analogous ways by direct binding to unfolded peptides (Gardner and Walter, 2011). This binding event leads to oligomerization and trans-autophosphorylation of their cytosolic kinase domains, and, for PERK, phosphorylation of its only known substrate, eIF2\u03b1. In this way, PERK activation results in a quick reduction in the load of newly synthesized proteins that are translocated into the ER-lumen (Harding et al., 2000).\n\nUpon ER stress, both the transcription factor XBP1s, produced as the consequence of a non-conventional mRNA splicing reaction initiated by IRE1, and the transcription factor ATF6, produced by proteolysis and release from the ER membrane, collaborate with ATF4 to induce the vast UPR transcriptional response. Transcriptional targets of the UPR include the ER protein folding machinery, the ER-associated degradation machinery, and many other components functioning in the secretory pathway (Walter and Ron, 2011). Although the UPR initially mitigates ER stress and as such confers cytoprotection, persistent and severe ER stress leads to activation of apoptosis that eliminates damaged cells (Shore et al., 2011; Tabas and Ron, 2011).\n\nBy interrogating a large chemical library for small molecules that block PERK signaling, we identified ISRIB as a potent ISR inhibitor, functioning downstream of all eIF2\u03b1 kinases. ISRIB proves a powerful tool to explore the consequences of acute inhibition of the ISR in cells and animals.\n\n## Results\n\n## Design of cell-based screen for inhibitors of PERK signaling\n\nTo identify inhibitors of PERK signaling, we engineered a reporter that allows monitoring of PERK activation in living cells. To this end, we constructed a retroviral vector containing the open-reading frame of firefly luciferase fused to the 5\u2032UTR of ATF4 mRNA (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of the ATF4 luciferase reporter used in the primary screen. The 5\u2032 UTR of human ATF4 containing the uORFs 1 and 2 was fused to firefly luciferase and inserted into a retroviral expression system. (B) Primary screen optimization. HEK293T stably expressing the ATF4 luciferase reporter were plated in 384-well plates and treated for 6 hr with 100 nM thapsigargin (Tg) or DMSO as a no ER stress control. Luciferase production was measured at the end point after 6 hr (mean \u00b1 SD). The Z\u2032 was calculated as 1\u2212(3 [\u03c3 Tg + \u03c3 DMSO]/[\u03bc Tg\u2013\u03bc DMSO]). (C) Primary screen results. The ATF4 luciferase reporter cell line was treated for 6 hr with 100 nM thapsigargin and library compounds (10 \u00b5M). Inhibition of the luciferase activity reporter was calculated as the percent reduction in relative luminescence normalized to thapsigargin treatment (0% inhibition) and the no-ER stress control (100% inhibition). Compounds were considered hits if they lied beyond three standard deviations (SD) from the thapsigargin treatment mean (red line).DOI: http://dx.doi.org/10.7554/eLife.00498.003\n\n## A symmetric bisglycolamide, ISRIB, is a potent inhibitor of PERK signaling\n\nOne of the 28 compounds was of particular interest because of its high potency in cells (library compound IC\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig2-v1.jpg)\n\n**Figure 2.:** (A) Structures of ISRIB isosteromers. (B) Inhibition of the ATF4 luciferase reporter in HEK293T cells by ISRIB stereoisomers. Inhibition is plotted in relation to the concentration of either the cis or trans isomer of ISRIB. Cells were treated with 2 \u00b5g/ml of tunicamycin to induce ER stress and different concentrations of the inhibitors for 7 hr (N = 2, mean \u00b1 SD). (C) Effect of ISRIB on production of endogenous ATF4, PERK phosphorylation, and XBP1s production. An immunoblot analysis of PERK, ATF4 and XBP1s in HEK293T cells treated with different ER stress inducers (2.5 \u00b5g/ml tunicamycin [Tm] or 100 nM thapsigargin [Tg]) with or without 200 nM ISRIB for 3 hr is shown. The arrowhead marks the XBP1s specific band. (D) Effect of ISRIB on XBP1 mRNA splicing. Taqman assays for XBP1unspliced (XBP1u) and XBP1spliced (XBP1s) on cDNA synthesized from total RNA extracted from U2OS cells treated with 2 \u00b5g/ml of tunicamycin in the presence or absence of 200 nM ISRIB for the indicated times are shown. Percent splicing was calculated as the ratio of XBP1s over total XBP1 mRNA (XBP1u + XBP1s) (mean \u00b1 SD).DOI: http://dx.doi.org/10.7554/eLife.00498.004\n\n## ISRIB is PERK-branch specific but does not impair PERK phosphorylation\n\nWe next determined at which step ISRIB blocks ATF4 production. To this end, we first probed the phosphorylation status of PERK by Western blotting. PERK phosphorylation is indicative of its activation by autophosphorylation and can be recognized by reduced mobility on SDS-polyacrylamide gels. Notably, ISRIB did not inhibit the mobility shift of PERK observed in ER-stressed cells (Figure 2C). Rather, we observed an exaggerated mobility shift, indicative of increased phosphorylation of PERK upon ER stress, induced by either thapsigargin or tunicamycin (an inhibitor of N-linked glycosylation). In each case, in the absence of ISRIB, ATF4 and XBP1s were produced upon ER stress induction. In agreement with the behavior of the reporters described above, ISRIB blocked production of endogenous ATF4, whereas XBP1 mRNA splicing (Figure 2D) and XBP1s production persisted (Figure 2C and Figure 3\u2014figure supplement 1). As shown below (Figure 5D), ISRIB also did not affect activation of the ATF6-branch of the UPR. We conclude that ISRIB specifically blocks signaling of the PERK-branch of the UPR.\n\n## ISRIB-treated cells are resistant to eIF2\u03b1 phosphorylation\n\nGiven that PERK phosphorylation was not diminished in ISRIB-treated, ER-stressed cells, we next directly assessed eIF2\u03b1 phosphorylation. We measured the levels of phosphorylated eIF2\u03b1 using an antiphospho-eIF2\u03b1 antibody-based assay to quantify phosphorylation at serine 51 (see \u2018Materials and methods\u2019). Upon induction of ER stress by tunicamycin or thapsigargin, phosphorylation of eIF2\u03b1 increased over time, reaching a fourfold and sevenfold increase after 120 min respectively (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-v1.jpg)\n\n**Figure 3.:** (A) ISRIB does not block eIF2\u03b1 phosphorylation upon ER stress. eIF2\u03b1 phosphorylation was measured using an alpha-screen Surefire eIF2\u03b1 p-S51 assay (see \u2018Materials and methods\u2019). U2OS cells were plated in 96-well plates and treated with 2 \u00b5g/ml tunicamycin or 100 nM thapsigargin in the presence or absence of 100 nM ISRIB for the indicated times or with ISRIB alone for 120 m (N = 4, mean \u00b1 SD). See Figure 3\u2014figure supplement 1 for supporting Western blot analysis of eIF2\u03b1 phosphorylation. (B) ISRIB blocks global translational attenuation observed after eIF2\u03b1 phosphorylation during ER stress. HEK293T cells were treated with 100 nM thapsigargin and 200 nM ISRIB for either 1 or 3 hr prior to a 20 min pulse with 35S methionine before lysis. Equal amounts of lysate were loaded on an SDS-PAGE gel and quantification of radiolabeled methionine incorporation of lysates was done by gel densitometry (N = 2, SD) using ImageJ. (see Figure 3\u2014figure supplement 2 for SDS-PAGE). (C) Polysome gradient analysis showing the block in global translational attenuation upon addition of ISRIB on ER-stressed cells. MEFs were grown in the presence or absence of 2 \u00b5g/ml of tunicamycin with or without 200 nM ISRIB for 1 hr. Cell lysates were loaded on a 10\u201350% sucrose gradient, centrifuged at 150,000\u00d7g for 2.4 hr and absorbance at 254 nm was measured across the gradient (see Figure 3\u2014figure supplement 3 for quantitation of polysome profile). A representative experiment is shown (N = 3). See Figure 3\u2014figure supplement 4 for a close-up of the disome and trisome peaks. (D) Cells treated with ISRIB are resistant to the global translational attenuation exerted by forced expression of eIF2\u03b1(S51D). HEK293Trex cells were transduced with a tetracycline inducible phospho-mimetic (S51D) allele of eIF2\u03b1. Transgene expression was induced by addition of 25 nM doxycycline for 14 hr in the presence or absence of 200 nM ISRIB. Lysates were collected and analyzed as described in panel (C) (see Figure 3\u2014figure supplement 6 for quantitation of polysome profile). A representative experiment is shown (N = 2). (E) ISRIB does not reverse global translational attenuation exerted through inhibition of CAP-dependent initiation. Wild-type MEFs were treated with 750 nM Torin-1 in the presence or absence of 200 nM ISRIB for 2 hr. Lysates were collected and analyzed as described in panel (C). A representative experiment is shown (N = 2). (F) ISRIB blocks production of ATF4 upon GCN2 or HRI activation. An immunoblot analysis of PERK, ATF4 and total eIF2\u03b1 in HEK293T cells starved for cysteine and methionine or treated with an HRI activator (6 \u00b5M) for 5 hr in the presence or absence of 200 nM ISRIB is shown. Tunicamycin was used as a positive control for induction of ATF4 and the shift in PERK mobility. Under amino acid starvation we consistently observe a partial reduction of ATF4 production by ISRIB by Western blot analysis but observe a complete block in induction of the ATF4 luciferase reporter (see Figure 3\u2014figure supplement 7).DOI: http://dx.doi.org/10.7554/eLife.00498.005\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Western blot analysis of PERK, ATF4, XBP1s, phospho S51-eIF2\u03b1, total eIF2\u03b1, phospho S539-eIF2B\u03b5 and total eIF2B\u03b5 in HEK293T cells treated with or without 2 \u00b5g/ml of tunicamycin or 100 nM thapsigargin in the presence or absence of 200 nM ISRIB for the indicated times.DOI: http://dx.doi.org/10.7554/eLife.00498.006\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Autoradiogram (left) and total protein (right) obtained from HEK293T cells that were treated with 100 nM thapsigargin with or without 200 nM ISRIB for either 1 or 3 hr prior to a 20 min pulse with 35S-methionine before lysis. Equal amounts of lysate were loaded on an SDS-PAGE gel.DOI: http://dx.doi.org/10.7554/eLife.00498.007\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The polysome profile in Figure 3C was quantitated by calculating the area under the curve corresponding to the monosome peak (80S), or the area under the curve corresponding to the trace covering the polysome region and then plotted as a ratio over the area under the curve corresponding to the peak of the 60S subunit.DOI: http://dx.doi.org/10.7554/eLife.00498.008\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Wildtype MEFs were grown in the presence or absence of 2 \u00b5g/ml of tunicamycin with or without 200 nM ISRIB for 1 hr. This graph is a close up of the disome and trisome peaks of the polysome gradients in Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.00498.009\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** eIF2\u03b1S51A/S51A (Eif2s1S51A/S51A)MEFs were grown in the presence or absence of 2 \u00b5g/ml of tunicamycin with or without 200 nM ISRIB for 1 hr and polysomes gradients were processed and analyzed as described in Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.00498.010\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** The polysome profile in Figure 3D was quantitated as described in Figure 3\u2014figure supplement 3.DOI: http://dx.doi.org/10.7554/eLife.00498.011\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** HEK293T carrying the ATF4 luciferase reporter were treated with 2 \u00b5g/ml of tunicamycin to induce ER stress, 6 \u00b5M of the HRI activator or grown in media lacking cysteine and methionine for 7 hr in the presence or absence of 200 nM ISRIB (N = 4). The relative luciferase units are normalized to the no treatment control. Using this reporter we observe a smaller fold change in production of luciferase by amino acid starvation that is fully blocked by addition of ISRIB.DOI: http://dx.doi.org/10.7554/eLife.00498.012\n\nOne way of explaining why ISRIB blocks ATF4 production yet leaves eIF2\u03b1 phosphorylation intact is by rendering cells insensitive to the effects of this phosphorylation event. In agreement with this notion, ISRIB sustained global translation (as monitored by 35S-methionine incorporation into newly synthesized polypeptides) even in the presence of ER stress (Figure 3B). After thapsigargin treatment, cells experienced a 40% drop in translation, which was abolished by ISRIB. As predicted by this result, extracts prepared from mouse embryonic fibroblasts (MEFs) experiencing ER stress showed a pronounced increase in the 80S monosomes at the expense of polyribosomes (Figure 3C), which was reversed (at least partially) by addition of ISRIB. We chose MEFs for this analysis because they show stronger translational inhibition in response to ER stress than HEK293T cells. ISRIB was the only molecule in our collection of 28 hits that reversed translational attenuation upon ER-stress.\n\nUnder normal growth conditions, an abundance of 43S pre-initiation complexes (PICs) leads to mRNAs loaded with a small ribosomal subunit in addition to fully assembled ribosomes. The presence of PICs on an mRNA can be detected as \u2018halfmer\u2019 peaks on polysome gradients. In the gradients shown in Figure 3C, addition of a PIC to disomes and trisomes was well resolved (enlarged in Figure 3\u2014figure supplement 4). Upon eIF2\u03b1 phosphorylation in ER-stressed cells, the reduction in PIC resulted in disappearance of the halfmer population. As expected, the disappearance of the halfmer peak upon ER-stress was dependent on eIF2\u03b1 phosphorylation as no reduction was observed in MEFs that solely express non-phosphorylatable eIF2\u03b1(S51A) (Figure 3\u2014figure supplement 5). Importantly, ISRIB partially restored the halfmer population in ER-stressed cells, providing support to the notion that it helps maintain high PIC levels even when eIF2\u03b1 is phosphorylated (Figure 3\u2014figure supplement 4). These data indicate that ISRIB exerts its function by maintaining elevated ternary complex levels.\n\nTo further ascertain that cells treated with ISRIB are resistant to the effects of eIF2\u03b1 phosphorylation, we transduced an inducible phospho-mimetic allele of eIF2\u03b1 in which serine 51 was changed to an aspartic acid (S51D) into HEK293T cells. Expression of this allele upon doxycycline addition induced translational attenuation (Figure 3D) as seen by an increase in the 80S peak and a decrease in the polysome population. ISRIB rescued translation returning it to the levels observed in non-induced cells. In conclusion, ISRIB restores translation in cells containing either phospho-eIF2\u03b1 or eIF2\u03b1(S51D), thereby excluding any pleiotropic effects that might have been caused by the reagents used to activate ER stress.\n\nTo rule out that ISRIB exerts non-specific effects on translation independent of eIF2\u03b1 phosphorylation, we tested whether ISRIB reverses a translational block in CAP-mediated initiation. To this end we used Torin-1, an inhibitor of mTOR that blocks phosphorylation of 4E-BP1 and S6K1, and leads to translational attenuation (Thoreen et al., 2012). Addition of Torin-1 to MEFs led to an increase in the 80S peak and reduction in the polysome population to a similar extent as shown above in cells treated with ER stressors or expressing eIF2\u03b1(S51D) (Figure 3E, compare with Figure 3C,D). In contrast to these treatments, addition of ISRIB did not reverse the effect of Torin-1 on translation. Therefore, the ability of ISRIB to block translational attenuation is specific to eIF2\u03b1 phosphorylation.\n\nIf ISRIB makes cells insensitive to eIF2\u03b1 phosphorylation, it should not matter which kinase phosphorylates eIF2\u03b1. To test this prediction, we subjected cells to amino acid starvation, which activates the eIF2\u03b1 kinase GCN2 and leads to ATF4 production. In addition, we used a recently identified small molecule activator to induce eIF2\u03b1 phosphorylation by activating HRI, another eIF2\u03b1 kinase (Chen et al., 2011). As expected, ISRIB blocked ATF4 induction after activation of either GCN2 or HRI (Figure 3F). Under both conditions, PERK was not activated as shown by a lack of mobility shift. These data suggest that ISRIB is a bona fide ISR inhibitor that blocks signaling downstream of all eIF2\u03b1 kinases.\n\nBoth\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig4-v1.jpg)\n\n**Figure 4.:** (A) ER-Stress dependent induction of CHOP and GADD34 mRNA is impaired in cells treated with ISRIB. qPCR analysis of total RNA extracted from U2OS cells treated with 2 \u00b5g/ml of tunicamycin in the presence or absence of 200 nM ISRIB for the indicated times. mRNA levels for each sample were normalized to GAPDH (N = 4, mean \u00b1 SD). p values are derived from a one-tail Student\u2019s t-test for unpaired samples. Statistical significance: CHOP, *p=0.0006; GADD34, *p=0.0008. (B) ISRIB blocks CHOP production during ER stress. An immunofluorescence analysis of U2OS cells treated with 100 nM thapsigargin for 2 or 4 hr in the presence or absence of 200 nM ISRIB is shown. A secondary Alexa Dye 488 anti-mouse antibody and rhodamine-phalloidin were used to visualize CHOP and actin, respectively.DOI: http://dx.doi.org/10.7554/eLife.00498.013\n\n## ISRIB impairs adaptation to ER stress\n\nAs previously shown, cells homozygous for non-phosphorylatable eIF2\u03b1, eIF2\u03b1(S51A), are unable to cope with ER stress properly, leading to reduced viability (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig5-v1.jpg)\n\n**Figure 5.:** (A) ISRIB sensitizes cells to acute ER stress. HEK293T cells were subjected with an acute dose of tunicamycin (2 \u00b5g/ml), ISRIB (200 nM) or a combination of both for 24 hr. The treated cells were equally diluted to a concentration that would allow single cell clonal expansion and re-seeded onto six-well plates in a threefold dilution series. Clonal colonies were visualized by Crystal Violet stain. (B) ISRIB synergizes with ER stress to activate caspase 3/7. Hela cells were plated in 96-well plates and treated with 5 \u00b5g/ml of tunicamycin or 500 nM thapsigargin with or without 25 nM ISRIB for the indicated times. Caspase3/7 activation was measured using Cellplayer kinetic caspase 3/7 reagent and cells were imaged in an IncuCyte system. Green object count/mm2 representing caspace-3/7 activation was measured at 2 hr intervals (See Figure 5\u2014figure supplement 1 for endpoint quantitation of % cells with activated caspase 3/7). (C) IRE1 oligomers are sustained on ER-stressed cells treated with ISRIB. Confocal microscopy micrographs of HEK293Trex cells carrying an inducible GFP-tagged IRE1 allele were treated with 10 nM doxycycline for 24 hr to induce the transgene, followed by treatment with 5 \u00b5g/ml of tunicamycin in the presence or absence of 200 nM ISRIB for the indicated times. (See Figure 5\u2014figure supplement 2 for corresponding XBP1 mRNA splicing data). (D) ATF6 cleavage is sustained in ER-stressed cells treated with ISRIB. Immunoblot analysis of ATF6 processing in HEK293Trex cells carrying an inducible FLAG epitope-tagged ATF6. Cells were treated with 50 nM doxycycline for 18 hr to induce the transgene followed by treatment with 100 nM thapsigargin in the presence or absence of 200 nM ISRIB for the indicated times. Total eIF2\u03b1 is used as a loading control.DOI: http://dx.doi.org/10.7554/eLife.00498.014\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Green object count/mm2 representing caspase-3/7 activation depicted in Figure 5A was normalized to the total number of cells at two different endpoints. In order to quantify the total number of cells, Vybrant DyeCycle Green staining solution (1 \u00b5M) was added directly to the well immediately after the caspase-3/7 scan and incubated for 1 hr prior to acquiring final images at both 46 and 72 hr. Data is presented as % cells with activated caspase 3/7 at these two endpoints. Note that by 72 hr the ER-stress inducing conditions used in this experiment are so detrimental that they diminish the synergistic effects observed by addition of ISRIB. The synergy was clearly seen at the 46 hr time-point.DOI: http://dx.doi.org/10.7554/eLife.00498.015\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** HEK293T cells were treated with tunicamycin (2 \u00b5g/ml) for the indicated times in the presence or absence of 200 nM ISRIB. RNA was isolated from the cells and reverse transcribed followed by PCR with oligos that amplify both the unspliced and spliced versions of XBP1 mRNA or GAPDH. The DNA was electrophoresed in a 2.5% agarose gel. The asterix (*) denotes a hybrid PCR product.DOI: http://dx.doi.org/10.7554/eLife.00498.016\n\nThe notion that ER stress remains unmitigated in ISRIB-treated cells is supported by sustained activation of all three UPR sensors. First, as shown in Figure 2C, PERK was hyper-phosphorylated. Second, cells expressing an IRE1-GFP fusion protein showed prolonged foci formation (Figure 5C), indicative of IRE1 oligomerization. Third, we observed prolonged ER stress-induced proteolytic processing of ATF6 (Figure 5D). Importantly, in the absence of ER stress ISRIB treatment alone did not induce any of these sensors (Figure 3\u2014figure supplement 1; Figure 5C and data not shown).\n\n## ISRIB increases long-term memory in rodents\n\neIF2\u03b1\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00498/elife-00498-fig6-v1.jpg)\n\n**Figure 6.:** (A) Plasma concentration (ng/ml) of ISRIB after a single intraperitoneal injection (5 mg/kg). Plasma was collected at the indicated times and the concentration was determined by mass spectrometry (mean \u00b1 SEM, N = 3). (B) Brain (ng/g tissue) and plasma concentrations (ng/ml) of ISRIB after a single intraperitoneal injection (2.5 mg/kg). Data (mean \u00b1 SEM, N = 3) were obtained at the indicated times. (C) Escape latencies are significantly shorter in mice treated with ISRIB. Data (mean \u00b1 SEM) were obtained in a weak 5 days-long training session in the hidden platform version of the Morris water maze (1 trial per day). Mean escape latencies were plotted as a function of training days in mice treated with ISRIB (closed squares, N = 8) or vehicle (open circles N = 8) (*p<0.05). Mice were injected daily with ISRIB immediately after training. (D) After completion of training in the study shown in panel (A), mice treated with ISRIB (black column) showed a significant preference for the target quadrant (*p<0.05). The probe test was performed 24 hr after the last training session. p values are derived from a two-tailed Student\u2019s t test for unpaired samples. (E) After completion of training in the study shown in panel a, mice treated with ISRIB (black column) increased the number of times they crossed the platform location as compared to the vehicle-treated mice (grey column) (*p<0.05). p values are derived from a two-tailed Student\u2019s t test for unpaired samples. (F) Systemic administration of ISRIB (intraperitoneally after training) enhances long-term contextual fear memory (right bars, 24 hr), while it does not affect short-term memory (left bars, 1 hr) (N = 10 per group, *p<0.05). Data are presented as mean \u00b1 SEM. (G) Auditory fear conditioning is enhanced in rats treated with ISRIB. Freezing in response to a tone was assessed 3 hr (short-term memory, STM, left panel) and 24 hr (long-term memory, LTM, right panel) after training (vehicle-treated N = 8, and ISRIB-treated N = 7) after tone presentation (CS) and before tone presentation (pre-CS). For these experiments vehicle or ISRIB was infused directly by cannula into the amygdala after training. ISRIB-infused rats show increase freezing at 24 hr (*p<0.05).DOI: http://dx.doi.org/10.7554/eLife.00498.017\n\nWe next tested contextual fear conditioning, which represents a different kind of hippocampus-dependent learning in which eIF2\u03b1 phosphorylation has also been implicated to play a role (Costa-Mattioli et al., 2007). In these experiments, we paired a particular environmental context (a different cage) with a foot shock. In this case the context acts as the \u2018conditioned stimulus, CS\u2019 and is associated with the foot shock, the \u2018unconditioned stimulus, US\u2019. ISRIB-treated mice showed increased freezing upon presentation of the conditioned environment 24 hr after training as compared to vehicle treated mice (p<0.05; Figure 6F). No differences were observed in short-term memory (1 hr) between these two treatments. Taken together, we conclude that treatment with ISRIB enhances both hippocampus-dependent spatial learning and hippocampus-dependent contextual fear conditioning.\n\nTo test learning associated with a different region of the brain, we explored the effects of ISRIB on auditory fear conditioning, which depends on the amygdala. In this type of learning a tone (CS) is paired with a foot shock (US). In these experiments, we injected ISRIB or vehicle directly into the amygdala of rats via cannulation. ISRIB-treated rats showed a significant increase over vehicle-injected rats in the level of freezing when presented with the tone (CS) at 24 hr (long-term memory, p<0.05; Figure 6G). By contrast, we observed no difference between ISRIB- and vehicle-treated rats at 3 hr (short-term memory). As expected, both ISRIB- and vehicle-treated rats showed similar freezing responses prior to training (pre-CS). Taken together, these data suggest that long-term memory is selectively enhanced in ISRIB-treated animals.\n\n## Discussion\n\nWe identified a novel small molecule, ISRIB, that renders cells resistant to the effects of eIF2\u03b1 phosphorylation, restoring the cell\u2019s translation capacity. ISRIB is the first reported antagonist of the ISR. It acts as a potent and stereospecific inhibitor with an IC50 of 5 nM in cultured cells, suggesting a specific and tight interaction with its cellular target. By blocking signaling through the PERK branch of the UPR, ISRIB prevents cells from re-establishing ER homeostasis. Unmitigated ER stress synergizes with ISRIB to induce apoptosis. ISRIB shows good pharmacokinetic properties, readily crosses the blood-brain barrier, and exhibits no overt toxicity in mice, making it suitable for in vivo studies. As such, ISRIB emerges as a powerful tool to explore the roles of the UPR and the ISR in disease models and physiological processes. In particular, we utilized ISRIB to show that overriding the consequences of eIF2\u03b1 phosphorylation enhances memory consolidation in rodents, suggesting an important role of eIF2\u03b1 phosphorylation in modulating higher-order brain function.\n\n## Molecular action of ISRIB\n\nThe structure of ISRIB provides no insights as to its target in cells. To date, we have synthesized and assayed more than 75 analogs, which demonstrate a tractable structure-activity relationship (to be published elsewhere). The analyses have identified sites on the molecule where affinity tags and/or crosslinking moieties can be added, which promise to aid in target identification. Based on previous insights on how cells can become resistant to eIF2\u03b1 phosphorylation, we consider two likely scenarios by which ISRIB could act:First, ISRIB could weaken the effects of the non-productive interaction of phospho-eIF2\u03b1 with eIF2B, thereby increasing the available eIF2\u03b1-GEF activity in the cell, restoring the concentration of ternary complex that can engage in translation initiation. Precedence for this possibility derives from genetic studies in Saccharomyces cerevisiae, where the molecular mechanism of regulation by eIF2\u03b1 phosphorylation was first discovered. As in mammalian cells, amino acid starvation in yeast leads to GCN2 activation and eIF2\u03b1 phosphorylation, resulting in overall translational down-regulation and translational induction of a transcriptional activator, GCN4, mediated by uORFs in the 5\u2032UTR of its mRNA (Hinnebusch, 2005). eIF2B is a conserved protein complex comprised of five different subunits, two of which form the catalytic core, and the remaining three have regulatory roles. Mutations in different eIF2B subunits can elicit a phospho-eIF2\u03b1 resistant phenotype (Vazquez de Aldana and Hinnebusch, 1994; Pavitt et al., 1997, 1998). These mutations have been proposed to act either by weakening the interaction of phospho-eIF2\u03b1 with eIF2B, reducing its ability to outcompete non-phosphorylated eIF2 for binding, or by allowing binding of phospho-eIF2\u03b1 to the mutant eIF2B in a manner that is conducive to nucleotide exchange. ISRIB could be altering the affinity of phospho-eIF2\u03b1 for eIF2B or overcoming the nonproductive interaction that blocks GTP loading, mimicking the effect of these mutations.Second, ISRIB could increase the activity of eIF2B, so that the residual amount not engaged with phospho-eIF2\u03b1 is sufficient to sustain normal levels of ternary complex. Precedence for this possibility derives from studies in macrophages, where engagement of toll-like receptor (TLR) 4 results in activation of the catalytic activity of eIF2B (Woo et al., 2012). This activation results from engagement of the TLR-signaling pathway that induces a phosphatase removing a constitutively present inhibitory phosphate from the eIF2B \u03b5-subunit (S539). Pathogens utilize this mechanism to circumvent translational attenuation and CHOP production under prolonged stress-inducing conditions (Woo et al., 2009). ISRIB did not reduce phosphorylation of S539 in the eIF2B \u03b5-subunit (Figure 3\u2014figure supplement 1), indicating that it does not utilize this particular regulatory phosphorylation to increase GEF activity. However, ISRIB may modulate other post-translational modifications that impinge on the activity of eIF2B.\n\n## ISRIB can influence cell fate\n\nAs a signaling network with interconnected signaling branches, the UPR exhibits both cytoprotective and pro-apoptotic functions. When faced with ER stress, PERK-mediated translational attenuation contributes to adaptation by reducing the load of newly synthesized proteins that are translocated into the ER (Harding et al., 2000). In addition, induction of the transcription regulator ATF4 upregulates many genes that increase the protein folding capacity in the ER. Both of these activities serve to reestablish homeostasis, balancing the protein folding load and protein folding capacity in the ER lumen. This reasoning is supported by the increased sensitivity to ER stress exhibited by MEFs that lack PERK or ATF4, as well as MEFs that carry a non-phosphorylatable knock-in allele of eIF2\u03b1(S51A) (Harding et al., 2000; Harding et al., 2003; Lu et al., 2004). In agreement, we show that ISRIB decreases the viability of cells that are subjected to ER-stress. In these cells, ISRIB sustains IRE1 and ATF6 activation, indicating that ER stress remains unmitigated in the absence of PERK signaling. As some cancer cells sustain an activated UPR to aid in their survival, ISRIB could provide a new therapeutic approach to cancer chemotherapy. In agreement, a PERK-specific inhibitor demonstrates antitumor activity in a human pancreatic tumor xenograft model (Axten et al., 2012). The deleterious synergistic effect between ER-stress and ISRIB may be generally advantageous to kill cancer cells, especially those derived from secretory lineages that have increased secretory load and increased basal levels of ER stress (including myelomas, and pancreatic and breast cancers).\n\nImportantly, by acting downstream of eIF2\u03b1 phosphorylation, ISRIB blocks multiple stress effectors (i.e., all eIF2\u03b1 kinases). During tumor growth, hypoxic conditions and a lack of nutrients can activate both PERK and GCN2, and PERK\u2212/\u2212 or GCN2\u2212/\u2212 MEFs give rise to significantly smaller tumors in mouse xenograft models than their wild-type counterparts (Bi et al., 2005; Ye et al., 2010). Hence both kinases have pro-survival roles in tumor development. By blocking signaling by both kinases, ISRIB displays unique properties that may be beneficial in reducing cellular fitness of tumor cells.\n\n## ISRIB and brain function\n\nThe importance of eIF2/eIF2B function in the human brain is underscored by familial diseases caused by mutations in these factors. One example is Childhood Ataxia with CNS Hypomyelination (CACH), also known as Vanishing White Matter disease (VWM), which has been mapped to mutations in different subunits of eIF2B (Li and Wang, 2004). A second example links a familial intellectual disability syndrome to a mutation in the \u03b3-subunit of eIF2 complex (Borck et al., 2012).\n\nSeveral lines of genetic evidence in mice suggest that phosphorylation-dependent regulation of eIF2\u03b1 phosphorylation is a critical hub for the control of synaptic plasticity (as assessed by late long-term potentiation [L-LTP] in brain slices) and memory consolidation (as assessed in behavioral tasks in animals). In particular, the threshold for induction of L-LTP is reduced and memory consolidation is enhanced in mice lacking GCN2 or PKR and in mice heterozygous for non-phosphorylatable eIF2\u03b1(S51A), which have reduced levels of eIF2\u03b1 phosphorylation (Costa-Mattioli et al., 2005; Costa-Mattioli et al., 2007; Zhu et al., 2011). As we show here, ISRIB pharmacologically phenocopies these genetic manipulations in behavioral tasks by rendering cells insensitive to eIF2\u03b1 phosphorylation. In agreement, treatment of mice with a PKR inhibitor was reported to enhance memory consolidation, and, conversely, treatment with salubrinal, an inhibitor that prolongs eIF2\u03b1 phosphorylation, to block L-LTP and memory consolidation (Costa-Mattioli et al., 2007; Zhu et al., 2011).\n\neIF2\u03b1 phosphorylation results in a dual effect on gene expression: a global translational diminution and translational upregulation of select mRNA, including ATF4 mRNA. Both may be important to explain the observed effects on L-LTP and memory. It has long been appreciated that new protein synthesis is required for memory consolidation and that ATF4 represses CREB-mediated transcription of \u2018memory genes\u2019 (Klann and Dever, 2004; Sutton and Schuman, 2006). Indeed, this latter function of ATF4 in memory consolidation is evolutionarily conserved from Aplysia to rodents (Yin et al., 1994; Bartsch et al., 1995; Chen et al., 2003). Because a small physiological increase in the level of eIF2\u03b1 phosphorylation that does not significantly alter overall translation is sufficient to induce ATF4, production of this transcription factor can be finely tuned in neuronal cells by perhaps selective activation of different eIF2\u03b1 kinases. The observed effects of ISRIB may therefore result from overcoming effects caused by a relatively small level of regulatory phosphorylation that is distinct from the high level resulting from ER stress-inducing agents. In light of this reasoning, a therapeutic window may exist in which ISRIB\u2019s effects as memory enhancer can be exploited without encountering long-term toxic consequences.\n\nISRIB increases memory consolidation, allowing pharmacological enhancement of the brain\u2019s ability to learn. Evolution therefore did not arrive at a maximally optimized process, imposing a brake (via eIF2\u03b1 phosphorylation) on memory consolidation. This mechanism may underscore the importance of filtering memories before committing them to long-term storage. Indeed, eIF2\u03b1 phosphorylation also plays a role in dynamic restructuring of memory, as indicated by studies showing that ablation of PERK in the brain impairs behavioral flexibility (Trinh et al., 2012). Our findings raise the possibility that ISRIB or compounds with related activities could serve as invaluable tools in deciphering these higher order brain functions and perhaps be beneficial as a therapeutic agent effecting memory improvement in diseases associated with memory impairment.\n\n## Materials and methods\n\n## Cell culture\n\nHEK293T, TREx293, U2OS, Hela, and mouse embryonic fibroblasts (MEFs) were maintained at 37\u00b0C, 5% CO2 in DMEM media supplemented with 10% FBS, L-glutamine and antibiotics (penicillin and streptomycin).\n\n## Chemicals\n\nTunicamycin was obtained from Calbiochem EMB Bioscience, Billerica, MA. Thapsigargin was obtained from Sigma-Aldrich, St Louis, MO. Torin-1 was obtained from Tocris, MN. The HRI activator was purchased from Maybridge (KM09748), Cornwall, UK.\n\n## Generation of ATF4 reporter constructs and cell lines for small-molecule screening\n\nATF4 reporters were constructed by fusing the human full-length ATF4 5\u2032-UTR (NCBI Accession BC022088.2) in front of the firefly luciferase (FLuc) or a destabilized eGFP (dEGFP) coding sequences lacking the initiator methionine.\n\nThe ATF4-FLuc reporter was generated by cloning a PCR-product containing the ATF4 full-length 5\u2032-UTR (from +1 position a the transcription start site down to one nucleotide after the terminator codon of the second uORF) flanked by KpnI/XhoI and BglII sites at the 5\u2032 and 3\u2032 ends, respectively, into the KpnI-BglII sites of pCAX-F-XBP1-Luc (kind gift of Takao Iwawaki, RIKEN, Hirosawa, Japan). The resulting construct, pCAX-ATF4-FLuc, was then digested with BamHI, blunted with T4 DNA polymerase, and then digested with XhoI. The resulting fragment was then subcloned into the retroviral expression vector pLPCX (Clontech, Mountain View, CA) after digesting it with HindIII, blunting with T4 DNA polymerase and then digesting with XhoI to generate pLPCX-ATF4-FLuc (DAA-312). DAA-312 was used to produce recombinant retroviruses using standard methods and the resulting viral supernatant was used to transduce HEK293T cells, which were then subsequently selected with puromycin to generate a stable cell line employed in the primary screen.\n\nThe ATF4-dEGFP reporter was generated using a PCR fusion-based approach. A PCR product containing the ATF4 full-length 5\u2032 leader sequence (from +1 position a the transcription start site) fused to the eGFP coding sequence 1 nucleotide downstream of the terminator codon of the second uORF, and flanked by BamHI and EcoRI, was cloned into the cognate sites of pEGFP-N3 (Clontech, Mountain View, CA) to generate pCMV-ATF4-eGFP. To destabilize the eGFP fusion protein and increase the dynamic range of the reporter, residues 422\u2013461 of mouse ornithine decarboxylase (mODC1), corresponding to its PEST sequence (Li et al., 1998), were fused to the C-terminus of the ATF-eGFP fusion protein. To such end, the corresponding mODC1 coding sequence was amplified by PCR and cloned into the BstXI and EcoRI sites of pCMV-ATF4-eGFP. The resulting construct was designated pCMV-ATF4-d2EGFP. To further destabilize the ATF4-d1EGFP fusion protein, alanine substitutions E428A, E430A, E431A (Li et al., 1998) were introduced in the ODC1 PEST sequence to generate pCMV-ATF4-d1EGFP. The ATF4-d1EGFP coding sequence was then excised from the expression vector using BamHI and EcoRI and subcloned into the BglII-EcoRI sites of the retroviral expression vector pLPCX (Clontech, Mountain View, CA) to generate pLPCX-ATF4-d2EGFP. Lastly, a fusion PCR product containing the encephalomyocarditis virus internal ribosomal entry site (EMCV-IRES) upstream of the monomeric cherry (mCherry) coding sequence and flanked by EcoRI and NotI recognition sites was subcloned into the cognate sites of pLPCX-ATF4-d1EGFP, thereby generating pLPCX-ATF4-d1EGFP-IRES-mCherry (DAA-361). DAA-361 was used to produce recombinant retroviruses using standard methods and the resulting viral supernatant was used to transduce U2OS cells, which were then subsequently selected with puromycin to generate a stable cell line employed in the secondary screen.\n\n## Generation of the inducible eIF2\u03b1 phosphomimetic mutant construct and cell line\n\nThe coding sequences of wild-type mouse eIF2\u03b1, phosphomimetic (S51D) mutant was amplified by PCR from a mammalian expression vector (kind gift of David Ron). BamHI and EcoRI recognition sites were engineered into the primers. In addition a Kozak consensus sequence and a N-terminal FLAG epitope tag were engineered in the forward primer. The resulting PCR products were subcloned into the cognate sites of the tetracycline-inducible retroviral expression vector pRetroX-Tight-Pur-GOI (Clontech, Mountain View, CA). 293T target cells stably expressing the reverse tetracycline transactivator (rtTA) were generated by standard retroviral transduction using VSV-G pseudotyped retroviruses encoding rtTA (pRetroX-Tet-On Advanced; Clontech, Mountain View, CA) and selected with G418. These cells were subsequently transduced with a VSV-G pseudotyped retrovirus, encoding the eIF2\u03b1(S51D) (DAA-A681) mutant allele, resulting in a puromycin-selected, tetracycline inducible, stable cell line.\n\n## Generation of the inducible 6xHIS-3xFLAG-hsATF6-alpha cell line\n\n6xHis-3xFLAG-hsATF6-alpha was generated by PCR from p3xFLAGCMV7.1-ATF6 (Shen et al., 2002) and cloned into pcDNA5/FRT/TO. pcDNA5/FRT/TO-6xHis-3xFLAG-hsATF6-alpha was co-transfected with pOG44 into Flp-In TRex cells (Cohen and Panning, 2007) according to manufacturers instructions (Invitrogen, Carlsbad, CA). After selection with 100 \u00b5g/ml Hygromycin B (Gold Biotechnology, St Louis, MO) single colonies were isolated, expanded and tested for expression of tagged ATF6.\n\n## High-throughput primary screen\n\nHEK293T cells carrying the ATF4 luciferase reporter were plated on poly-lysine coated 384-well plates (Greiner Bio-one, Monroe, NC) at 30,000 cells per well. Cells were treated the next day with 100 nM thapsigargin and 10 \u00b5M of the library compounds (diversity library of 106,281 compounds) for 6 hr. Luminescence was measured using One Glo (Promega, Madison, WI) as specified by the manufacturer. The primary screen had a Z\u2032 = 0.5 and its hit rate was 0.6% (compounds were considered a hit if their luciferase readouts were beyond three standard deviations of the mean luminescence intensity of thapsigargin treated cells, which corresponded to 54% inhibition). Of these, only 187 compounds did not hit a luciferase-based XBP1 splicing reporter used as proxy to measure activation of the IRE1 branch of the UPR. Thus, these were considered unique to the PERK branch and were cherry-picked for further analysis.\n\n## High-content microscopy-based secondary screen\n\nU2OS cells carrying the ATF4-dGFP-IRES-Cherry reporter were plated in 96 well plates and treated with 100 nM Thapsigargin and 10 \u00b5M of the cherry-picked compounds for 8 hr. Cells were stained with Hoechst 33,258 and were visualized using an automated microscope (InCell Analyzer 2000; GE Healthcare, Waukesha, WI). Data acquisition and image analyses were performed with the INCell Developer Toolbox Software, version 1.9 (GE Healthcare, Waukesha, WI). Compounds that blocked induction of the ATF4-dGFP reporter, did not block the accumulation of mCherry downstream of the IRES, and were deemed non-toxic as determined by cell number measured by counting nuclei, were repurchased for further analyses.\n\n## Protein analysis\n\nCells were lysed in SDS-PAGE loading buffer (1% SDS, 62.5 mM Tris-HCl pH 6.8, 10% glycerol). Lysates were sonicated and equal amounts were loaded on SDS-PAGE gels (BioRad, Hercules, CA). Proteins were transferred onto nitrocellulose and probed with primary antibodies diluted in Tris-buffered saline supplemented with 0.1% Tween 20 and 5% bovine serum albumin. The following antibodies were used: CREB-2 (C-20) (1:800), eIF2B\u03b5 (B-7) (1/500) (Santa Cruz Biotechnologies, Dallas, TX); PERK (D11A8) (1:1000), PERK (C33E10) (1:1000), eIF2\u03b1 (9722) (1:1000), phospho-eIF2\u03b1 (Ser51) (D9G8) XP (3398) (1:1000) (Cell Signaling Technology, Danvers, MA); XBP1s (C-terminus) (1:500) (BioLegend, San Diego, CA); phospho-S539 eIF2B\u03b5 (1/1000) (Abcam); M2 Flag (1:1000) (Sigma, St Louis, MO). An HRP-conjugated secondary antibody (Amersham, Piscataway, NJ) was employed to detect immune-reactive bands using enhanced chemiluminescence (SuperSignal; Thermo Scientific, Waltham, MA).\n\n## Immunofluorescence\n\nU2OS cells were seeded on Slide Flasks (Thermo Scientific, Waltham, MA) 18 hr prior to processing for immunofluorescence. Cells (60% confluent) were fixed with 4% paraformaldehyde in PBS for 15 min. The cells were then rinsed three times with PBS and permeabilized with 0.3% Triton X-100. The fixed cells were rinsed three times with PBS and blocked for 1 hr at room temperature in PBS supplemented with 0.1% Triton X-100 and 5% normal goat serum. The cells were then incubated overnight at 4\u00b0C with an anti-CHOP mouse monoclonal antibody (Cell Signaling Technology L63F7, Danvers, MA) at a 1:1000 dilution in blocking buffer. The next morning the slides were washed three times (5 min each time) with PBST (PBS-0.1% Triton X-100). The slides were then incubated for 1 hr at room temperature in a 1:500 dilution (in blocking buffer) of secondary anti-mouse antibody labeled with Alexa Dye 488 (Molecular Probes, Invitrogen, Carlsbad, CA). The slides were then washed three additional times with PBST. The cells were then counterstained with rhodamine-phalloidin (1:1000 in PBS) for 10 min at room temperature to reveal the actin cytoskeleton. Lastly, the slides were mounted using Vectashield (Vector, Burlingame, CA) mounting medium and imaged using a Zeiss Axiovert 200M epifluorescence microscope.\n\n## Polysome gradients\n\nMouse embryonic fibroblasts (MEFs) or TREx-293 cells expressing eIF2\u03b1(S51D) were seeded on 150-mm plates and allowed to grow to 80% confluence. Cells were then induced with 25 nM doxycycline for 14 hr and subsequently treated with the appropriate compounds for the indicated times. 100 \u00b5g/ml of cycloheximide was added to the cells for 1 min before lysis. Cells were washed twice with PBS supplemented with 100 \u00b5g/ml cycloheximide and subsequently lysed in 20 mM Tris pH 7.4, 200 mM NaCl, 15 mM MgCl, 1 mM DTT, 8% Glycerol, 100 \u00b5g/ml cycloheximide, 1% Triton X-100 and EDTA-free protease inhibitor tablets (Roche, South San Francisco, CA). Cells were scraped, collected, triturated with a 257/8 gauge needle, and the homogenate was centrifuged for 10 min at 10,000\u00d7g. The supernatant was loaded on a 10\u201350% sucrose gradient and sedimented in a SW40 rotor at 150,000\u00d7g for 2.4 hr. The gradients were fractionated using a piston gradient fractionator (BioComp Instruments, Fredericton, NB, Canada) and UV absorbance at 254 nm was monitored using a UV-Monitor (BioRad, Hercules, CA).\n\n## Alpha screen for phospho-S51 eIF2\u03b1\n\nU2OS cells were plated on 96-well plates and left to recover overnight. Cells were treated with either with 2 \u00b5g/ml tunicamycin or 100 nM thapsigargin in the presence or absence of 100 nM ISRIB or with ISRIB alone for the indicated and the level of eIF2\u03b1 phosphorylation was determined using the AlphaScreen SureFire eIF2\u03b1(p-Ser51) Assay kit (Perkin Elmer, Waltham, MA) following the manufacturer\u2019s recommendations. Plates were read in an Envision Xcite Multilabel Reader using the standard Alpha Screen settings.\n\n## Metabolic labeling\n\nHEK293T cells were seeded on 12-well plates, allowed to recover overnight and treated for the indicated times with the indicated compounds. The cells were subsequently switched to media lacking methionine and cysteine supplemented with the indicated compounds and 50 \u00b5Ci of 35S-methionine (Perkin Elmer, Waltham, MA) for 20 min. Cells were lysed by addition of SDS-PAGE loading buffer. Lysates were sonicated and equal amounts were loaded on SDS-PAGE gels (BioRad, Hercules, CA). The gel was dried and radioactive methionine incorporation was detected by exposure to a phosphor-screen and visualized with a Typhoon 9400 Variable Mode Imager (GE Healthcare Waukesha, WI).\n\n## Live cell imaging\n\nT-REx293 cells carrying GFP-IRE1 were imaged as described in Li et al., PNAS (Li et al., 2010).\n\n## Caspase3/7 activation\n\nHela cells were plated in 96-well Corning plates at 0.4 \u00d7 104 cells per well, 24 hr prior to imaging. On the day of experiment, DMEM media was replaced with F12 media with appropriate concentration of inhibitors and ER stress inducers and caspase 3/7 reagent at 1:1000 dilution (Essen Bioscience No. 4440, Ann Arbor, MI). Cells were imaged in the IncuCyte FLR live cell imaging system at 2 hr intervals for 70 hr. In order to quantify the total number of cells, Vybrant DyeCycle Green staining solution (1 \u00b5M) was added directly to the well immediately after the final Caspase-3/7 scan and incubated for 1 hr prior to acquiring final images. Data was analyzed using IncuCyte analysis software.\n\n## qRT-PCR\n\nU2OS cells were plated on 96-well plates and allowed to recover overnight. Cells were treated for the indicated times with the indicated compounds, lysed and cDNA was synthesized using the PowerSYBR Green Cells-to-CT kit (Ambion, Invitrogen, Carlsbad, CA) following the manufacturer\u2019s recommendations. The reactions were ran in an Opticon 2 thermal cycler (BioRad, Hercules, CA) and analyzed with the Opticon Monitor v3 software (BioRad, Hercules, CA). The following oligonucleotides were used for the amplification reaction: Human GADD34: 5\u2032-GTAGCCTGATGGGGTGCTT -3\u2032 and 5\u2032- TGAGGCAGCCGGAGATAC -3\u2032; Human CHOP: 5\u2032- AGCCAAAATCAGAGCTGGAA -3\u2032 and 5\u2032-TGGATCAGTCTGGAAAAGCA -3\u2032; Human GAPDH: 5\u2032-TGGAAGATGGTGATGGGATT -3\u2032 and 5\u2032- AGCCACATCGCTCAGACAC -3\u2032.\n\n## TaqMan assay to measure XBP1 mRNA splicing\n\ncDNA obtained with the PowerSYBR Green Cells-to-CT kit (Ambion, Invitrogen, Carlsbad, CA) as described above was used for the Taqman Assay. TaqMan assays were set up using iQ Supermix (BioRad, Hercules, CA), 250 nM of each outer primer, 200 nM FAM-XBP1U probe, or 100 nM HEX-XBP1S probe. The reactions were then run on a real-time DNA Engine Opticon 2 PCR thermal cycler (BioRad) and analyzed with the Opticon Monitor v3 software (BioRad). The outer primers employed for the human XBP1unspliced/spliced (u/s) TaqMan assay were: 5\u2032-GAAGCCAAGGGGAATGAAGT-3\u2032, and 5\u2032-GAGATGTTCTGGAGGGGTGA-3\u2032. TaqMan probes specific for human XBP1s or XBP1u were: 5\u2032-FAM-CAGCACTCAGACTACGTGCACCTCTG-BHQ1-3\u2032, and 5\u2032-HEX-TCTGCTGAGTCCGCAGCAGGTGCA-BHQ1-3\u2032.\n\n## RNA isolation and semi-quantitative RT-PCR\n\nTotal RNA from treated or untreated HEK293T cells was extracted using TRIzol (Invitrogen, Carlsbad, CA) following the manufacturer\u2019s recommendations. 500 ng of total RNA were reverse transcribed using the SuperScriptVilo cDNA Synthesis kit (Invitrogen). The cDNA was diluted 1 in 10 in TE (pH = 8) and 1% of the total reaction was used as a template for the PCR amplification reactions. The XBP1 primers flank the 26-nucleotide intron and produce both spliced (222 bp) and unspliced (248 bp) amplicons. The PCR products were resolved in 2.5% agarose. The following oligonucleotides were used for the amplification reaction: for human XBP1, 5\u2032-ACTGGGTCCAAGTTGTCCAG -3\u2032 and 5\u2032- GGAGTTAAGACAGCGCTTGG -3\u2032; for human GAPDH 5\u2032- TGGAAGATGGTGATGGGATT -3\u2032 and 5\u2032-AGCCACATCGCTCAGACAC -3\u2032.\n\n## Pharmacokinetics of ISRIB\n\nIntra-peritoneal (ip) route of administration was performed on 6\u20137 wk old female CD-1 mice (Harlan Laboratories, Indianapolis, IN). Animals received a single, 5 mg/kg dose in groups of three mice/compound/route of administration. ISRIB was dissolved in DMSO then diluted 1:1 in Super-Refined PEG 400 (Croda, Edison, NJ). Blood (80 \u03bcl) was collected from the saphenous vein at intervals post-dosing (20 min, 1 hr, 3 hr, 8 hr, 24 hr) in EDTA containing collection tubes (Sarstadt CB300) and plasma was prepared for analysis. Compounds were detected by time-of-flight mass spectroscopy.\n\nIntra-peritoneal (ip) route of administration was performed at a single dose of 2.5 mg/kg in groups of three for each time-point (2, 6, 24 and 36 hr). Brain tissue samples were individually homogenized with a Tissue Tearor (Model 985-370 type2, BioSpec Products Inc, Bartlesville, OK). Approximately 300 mg of tissue was placed in 5-ml polypropylene tube, and four volumes of water were then added to mix. The speed scale of Tissue Tearor was set at 3 for 2 min. After homogenization, the supernatant was analyzed by LC-MS/MS to determine their brain concentration. Plasma samples were collected prior to extraction of brain samples.\n\n## Memory studies\n\nEight to ten-week-old male C57BL/6J mice were used for behavioral experiments. Food and water were provided ad libitum, and mice were kept on a 12:12 hr light/dark cycle (lights on at 08:00 hr). All procedures complied with Canadian Council on Animal Care guidelines.\n\n## Morris water maze\n\nMice were trained in a water pool of 100 cm diameter with a hidden platform of 10 cm diameter. Mice were handled daily for 3 days before the experiment, and the training protocol consisted of one swimming trial per day. Each mouse swam until it found the hidden platform or 120 s, when it was gently guided to the platform and stayed there for 10 s before being returned to the cage. Immediately after the swimming trial the mice were injected intraperitoneally with ISRIB (0.25 mg/kg in saline, 1% DMSO). For the probe test, the platform was removed and each mouse was allowed to swim for 60 s, while its swimming trajectory was monitored with a video tracking system (HVS Image, Buckingham).\n\n## Contextual fear conditioning\n\nMice were trained with a protocol that consisted of a 2-min period of context exploration, followed by a single foot shock of 0.35 mA for 1 s. Mice received a single injection of ISRIB (2.5 mg/kg in 50% DMSO, 50% PEG 400, IP) immediately after training and were returned to their home cage. One and 24 hr after training, the mice were tested for contextual fear memory by placing the animals in the conditioning context for a 4-min period. The incidence of freezing was scored in 5-s intervals as either \u2018freezing\u2019 or \u2018not freezing\u2019. Percent of freezing indicates the number of intervals in which freezing was observed divided by total number of 5-s intervals. Statistical analyses were done by Student\u2019s t tests and one-way ANOVA followed by between-group comparisons using Tukey\u2019s posthoc test.\n\n## Cannulation and auditory fear conditioning\n\nMale Sprague Dawley rats (275\u2013350 g) were used for cannulation as described in Migues et al., 2010 (Migues et al., 2010). ISRIB (0.05 mg/ml, 0.5 \u03bcl) was infused bilaterally into the amygdala immediately after auditory fear conditioning training. The infusion was performed with a microinjector (28 gauge) connected to a Hamilton syringe with plastic tubing at a rate of 0.25 \u03bcl/min. To allow for the solution containing ISRIB to diffuse from the tip of the cannula into the tissue, the microinjector stayed in the cannula for one additional minute. Training protocol for auditory fear conditioning consisted of a 2-min period of context A exploration, followed by one pairing of a tone (5000 Hz, 75 dB, 30 s) with a co-terminating foot shock (0.75 mA, 1 s). Rats were returned to their home cage 1 min after the shock. Test for auditory fear memory consisted of a 2 min acclimatizing period to the context B (pre-CS), followed by tone presentation (CS) (2800 Hz, 85 dB, 30 s). Freezing time was measured and percent of freezing was calculated. At the end of the experiment, cannula placement was checked by examining 50 \u03bcm brain sections stained with formal-thionin under a light microscope.\n\n## Synthesis of ISRIB\n\n## General methods\n\nCommercially-available reagents and solvents were used as received. Silica gel chromatography was performed using a Biotage Isolera Four flash purification system with Silicycle SiliaSep cartridges. 1H NMR spectra were recorded on a Varian INOVA-400 400 MHz spectrometer. Chemical shifts are reported in \u03b4 units (ppm) relative to residual solvent peak. Coupling constants (J) are reported in hertz (Hz). LC-MS analyses were carried out using a Waters 2795 separations module equipped with a Waters 2996 photodiode array detector, a Waters 2424 ELS detector, a Waters micromass ZQ single quadropole mass detector, and an XBridge C18 column (5 \u00b5m, 4.6 x 50 mm).\n\n## Synthesis of bisglycolamides\n\n![Figure](https://cdn.elifesciences.org/articles/00498/elife-00498-fig7-v1.jpg)\n\ntrans-ISRIB: 2-(4-Chlorophenoxy)-N-[(1r,4r)-4-[2-(4-chlorophenoxy)acetamido] cyclohexyl] acetamide\n\nTo a mixture of (1r,4r)-cyclohexane-1,4-diamine (20 mg, 0.18 mmol) in tetrahydrofuran:water (1:1, 1 ml) were sequentially added potassium carbonate (73 mg, 0.53 mmol) and 4-chlorophenoxyacetyl chloride (56 \u00b5l, 0.36 mmol). Upon addition of the acid chloride, a white solid immediately formed. The reaction mixture was vigorously stirred at ambient temperature for 30 min. Water (2.5 ml) was added. The mixture was vigorously vortexed then centrifuged, and the water was decanted. This washing protocol was repeated with potassium bisulfate (1% aq, 2.5 ml), water (2.5 ml), and diethyl ether (2 \u00d7 2.5 ml). The resulting wet white solid was dried by partially dissolving in dichloromethane/methanol (10/1, 10 ml) and gravity filtering through an Autochem 4.5-ml reaction tube. The residual undissolved product was extracted from the wet filter cake by adding dichloromethane (4 \u00d7 4.5 ml) and gravity filtering. The combined filtrate was concentrated using rotary evaporation to afford 51 mg (65%) of the title compound as a white solid.\n\n![Figure](https://cdn.elifesciences.org/articles/00498/elife-00498-fig8-v1.jpg)\n\ncis-ISRIB: 2-(4-chlorophenoxy)-N-[(1s,4s)-4-[2-(4-chlorophenoxy) acetamido] cyclohexyl]acetamide\n\nTo a mixture of (1s,4s)-cyclohexane-1,4-diamine (21 \u00b5l, 20 mg, 0.18 mmol) in tetrahydrofuran:water (1:1, 1 ml) were sequentially added potassium carbonate (73 mg, 0.53 mmol) and 4-chlorophenoxyacetyl chloride (56 \u00b5l, 0.36 mmol). The reaction mixture was vigorously stirred at ambient temperature for 1.5 hr then partitioned between 30 ml of 1:1 dichloromethane:KHSO4 (10% aq.). After separating the organic layer, it was sequentially washed with water (1 \u00d7 10 ml) and brine (1 \u00d7 10 ml) then dried by gravity filtration using an Autochem 4.5-ml reaction tube. The filtrate was concentrated and loaded onto a Silicycle 4g SiO2 column using a minimal amount of dichloromethane (\u223c2 ml). The product was eluted with acetone in dichloromethane (0\u201350%). Product-containing fractions were combined and concentrated to afford 56 mg (71%) of the title compound as a white solid. 1H NMR (400 MHz, DMSO-d6) \u03b4 7.76 (d, J = 7.0 Hz, 2H), 7.32 (d, J = 9.0 Hz, 4H), 6.94 (d, J = 9.0 Hz, 4H), 4.47 (s, 4H), 3.70 (br. s., 2H), 1.44 \u2212 1.67 (m, 8H); LC-MS: m/z = 451 [M + H, 35Cl x 2]+, 453 [M + H, 35Cl, 37Cl]+.\n",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Ron, Cambridge University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00498.018](https://doi.org/10.7554/eLife.00498.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cPharmacological brake-release of mRNA translation enhances cognitive memory\u201dfor consideration at eLife. Your article has been evaluated by a Senior editor and 4 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOur consensus is that the discovery of a small molecule that interposes itself (functionally) between the phosphorylated alpha subunit of translation initiation factor 2 (eIF2\u03b1) and the target of this phosphorylation event, the translational machinery, thereby inhibiting an ancient signaling pathway known as the integrated stress response, is an important discovery. No one has previously reported a functionally similar inhibitor\u2013in fact, until this report, it was unsuspected that this node in the ISR was even susceptible to inhibition.\n\nThe compound is remarkably potent, hitting its unknown target(s) when applied to cells at a submicromolar concentration.\n\nThe functional characterization of the compound is rather thorough and thus its utility as a tool compound is well documented\u2013this is important, as many other \u2018firsts\u2019 of this type report on theoretical tool compounds, but fall short of demonstrating in vivo utility. Thus, there is reason to hope that ISRIB will be applied to much further research and that this paper will serve as a foundation for such studies.\n\nLastly, the reviewers were impressed by effects on memory formation, which is enhanced by application of the compound.\n\nWhereas the functional characterisation of ISRIB is very thorough, it is not matched by a similar level of molecular detail. We do not know if ISRIB directly modulates the interaction of eIF2\u03b1 with eIF2B or the competing interactions with eIF5 or some aspect of eIF2B activity\u2013possibilities noted by the authors in their Discussion.\n\nThe four reviewers were initially divided on the impact of this deficiency on the suitability of the paper for publication in eLife. The conclusion of our deliberations is that some simple measures\u2013that will provide further clues to the site of the compound's action\u2013need to be taken before the paper will be acceptable for publication in eLife.\n\n1) The effect of ISRIB application on the recovery of a complex between eIF2 and eIF2B could be measured directly in lysates of unstressed and stressed cells by co-immunoprecipitation. Chris Proud\u2019s lab has expressed tagged versions of eIF2B subunits that associate with endogenous eIF2 in transfected HEK293 cells (they co-precipitate eIF2\u03b1 and eIF2\u03b1-P by pulling-down the tagged eIF2B subunit (see Figure 2 in PMID: 21560189). If a coherent effect is observed (say less eIF2\u03b1-P associating with tagged eIF2Be in ISRIB-treated stressed cells) the discussion, focusing on that aspect, would be justified. However, if no effect is observed, the alternative discussion (focusing on a possible enhancement of eIF2B\u2019s enzymatic activity) would be justified.\n\n2) Similarly, the impact of ISRIB application on those aspects of the phosphorylation status of eIF2B that can be queried by commercially available phospho-specific antibodies should be measured.\n\n3) In relation to the compound\u2019s effects on memory, it was deemed important to assess the likelihood that ISRIB affects memory formation by acting on brain cells, as opposed to eliciting these effects by peripheral action. Therefore it would seem important to determine if the compound gets into the CNS, when applied at doses that affect memory. Perhaps it is possible to analyze levels in the CSF of injected animals or address this matter functionally by measuring ISR activity in the CNS of injected animals in a suitable experimental design.\n\n4) Finally ISRIB treatment was post-training for water maze and cued fear conditioning (in order to focus on effects of ISRIB on memory consolidation), but ISRIB treatment was chronic prior to training for contextual fear conditioning. The authors are asked to address how this affects the conclusions regarding the compounds impact on memory consolidation.\n",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f17f656-0e8a-4dcb-bc7a-56303f6b035b",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C1",
+      "claim": "In metazoa, distinct stress conditions activate different eIF2\u03b1 kinases (PERK, PKR, GCN2, and HRI) that converge on phosphorylating a unique serine in eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In metazoa, distinct stress conditions activate different eIF2\u03b1 kinases (PERK, PKR, GCN2, and HRI) that converge on phosphorylating a unique serine in eIF2\u03b1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established scientific consensus about the integrated stress response pathway in metazoan organisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "df021607-b2c8-4474-8b6a-8443f6c17bbc",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C2",
+      "claim": "ISRIB potently reverses the effects of eIF2\u03b1 phosphorylation with an IC50 of 5 nM.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Starting with a cell-based screen for inhibitors of PERK signaling, we identified a small molecule, named ISRIB, that potently (IC 50 = 5 nM) reverses the effects of eIF2\u03b1 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The IC50 value is presented as a measured experimental result from the cell-based screen described in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "6e56aed4-cf2b-4940-91cd-541155a55d4d",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C3",
+      "claim": "ISRIB reduces the viability of cells subjected to PERK-activation by chronic endoplasmic reticulum stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB reduces the viability of cells subjected to PERK-activation by chronic endoplasmic reticulum stress.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is presented as an experimental finding from the study, supported by data shown in the results section.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8d8f3fe5-ad08-4824-b3ee-dc5c773c8a02",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C4",
+      "claim": "ISRIB-treated mice display significant enhancement in spatial and fear-associated learning.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Remarkably, ISRIB-treated mice display significant enhancement in spatial and fear-associated learning.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from behavioral studies conducted in mice as part of this research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "b4cd249a-ebba-4ad9-8c3c-ad6a1037821f",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C5",
+      "claim": "Memory consolidation is inherently limited by the ISR.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, memory consolidation is inherently limited by the ISR, and ISRIB releases this brake.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This is inferred from the experimental observation that blocking ISR with ISRIB enhances memory, suggesting ISR normally limits memory consolidation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "fc81329e-4cd6-4567-a315-0e1340416111",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C6",
+      "claim": "Four eIF2\u03b1 kinases exist in mammalian cells: PERK, GCN2, PKR, and HRI, each responding to different stress signals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This step is carried out by four eIF2\u03b1 kinases in mammalian cells: PERK, which responds to an accumulation of unfolded proteins in the endoplasmic reticulum (ER), GCN2 to amino acid starvation and UV light, PKR to viral infection, and HRI to heme deficiency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established scientific knowledge about the mammalian integrated stress response pathway.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1c03e5fd-1ec1-4526-8842-b53f2062f573",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C7",
+      "claim": "eIF2\u03b1 phosphorylation results in an attenuation of translation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eIF2\u03b1 phosphorylation results in an attenuation of translation with consequences that allow cells to cope with the varied stresses",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in the field, supported by the citation (Wek et al., 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "834a31a7-9fe0-4cbc-a697-bc6c47c849a0",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C8",
+      "claim": "Upon phosphorylation of its \u03b1-subunit, eIF2 becomes a competitive inhibitor of its guanine nucleotide exchange factor (GEF), eIF2B.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Upon phosphorylation of its \u03b1-subunit, eIF2 becomes a competitive inhibitor of its guanine nucleotide exchange factor (GEF), eIF2B",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established mechanistic knowledge supported by citation (Hinnebusch and Lorsch, 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1b6b2e48-4f36-42c5-b758-2eb973168030",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C9",
+      "claim": "Because eIF2B is less abundant than eIF2, phosphorylation of only a small fraction of the total eIF2 has a dramatic impact on eIF2B activity in cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because eIF2B is less abundant than eIF2, phosphorylation of only a small fraction of the total eIF2 has a dramatic impact on eIF2B activity in cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This explains the mechanistic basis for the amplification effect in the ISR pathway based on established biochemical principles.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "983cd183-9072-45f3-85e9-9ec36d0dc846",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C10",
+      "claim": "Under conditions of reduced protein synthesis, a small group of mRNAs that contain upstream open reading frames (uORFs) in their 5\u2032UTR are translationally up-regulated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Paradoxically, under conditions of reduced protein synthesis, a small group of mRNAs that contain upstream open reading frames (uORFs) in their 5\u2032UTR are translationally up-regulated",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about selective translation during stress, supported by citations (Hinnebusch, 2005; Jackson et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "6aa81e2f-c585-4520-a1d0-8b7415b4f579",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C11",
+      "claim": "Mammalian ATF4 and CHOP are translationally up-regulated under conditions of reduced protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These include mammalian ATF4 (a cAMP element binding [CREB] transcription factor) and CHOP (a pro-apoptotic transcription factor)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge supported by multiple citations (Harding et al., 2000; Vattem and Wek, 2004; Palam et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "058b3c0d-bd6d-4295-b546-af538a55ccd6",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C12",
+      "claim": "PERK lies at the intersection of the ISR and the unfolded protein response (UPR).",
+      "claim_type": "EXPLICIT",
+      "source_text": "One of the eIF2\u03b1 kinases, PERK, lies at the intersection of the ISR and the unfolded protein response (UPR) that maintains homeostasis of protein folding in the ER",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about PERK's dual role, supported by citation (Pavitt and Ron, 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1b8aa039-2a42-4a4a-bbb9-e5d9c20b808a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C13",
+      "claim": "The UPR in mammals is comprised of three signaling branches mediated by ER-localized transmembrane sensors: PERK, IRE1, and ATF6.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In mammals, the UPR is comprised of three signaling branches mediated by ER-localized transmembrane sensors, PERK, IRE1, and ATF6.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established knowledge about the mammalian UPR architecture.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "afc2c65a-c688-4492-aed1-7d97af332445",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C14",
+      "claim": "The lumenal stress-sensing domains of PERK and IRE1 are homologous and likely activated in analogous ways by direct binding to unfolded peptides.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The lumenal stress-sensing domains of PERK and IRE1 are homologous and likely activated in analogous ways by direct binding to unfolded peptides",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about PERK and IRE1 activation mechanisms, supported by citation (Gardner and Walter, 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "2bcfdf15-3ab8-4612-901c-d36e1a5fa941",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C15",
+      "claim": "PERK activation results in a quick reduction in the load of newly synthesized proteins that are translocated into the ER-lumen.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this way, PERK activation results in a quick reduction in the load of newly synthesized proteins that are translocated into the ER-lumen",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about PERK function, supported by citation (Harding et al., 2000).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "27722074-f830-4b6c-9b46-19f0cd21c80f",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C16",
+      "claim": "The primary screen had a Z\u2032 of 0.5 and a hit rate of 0.6%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The primary screen had a Z\u2032 = 0.5 and its hit rate was 0.6%",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are quantitative metrics from the experimental screen performed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "2187b153-8652-4cb0-8f5d-184ee9bcb9e2",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C17",
+      "claim": "One compound from the screen was of particular interest because of its high potency in cells with a library compound IC50 of 5 nM.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One of the 28 compounds was of particular interest because of its high potency in cells (library compound IC",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is an experimental observation from the screening campaign described in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a9916d36-9d2b-4c4a-af79-0fc25757cd80",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C18",
+      "claim": "ISRIB did not inhibit the mobility shift of PERK observed in ER-stressed cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, ISRIB did not inhibit the mobility shift of PERK observed in ER-stressed cells (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from Western blot analysis shown in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "eb8a7a9e-29d2-4105-ad3f-82617e742473",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C19",
+      "claim": "ISRIB blocked production of endogenous ATF4, whereas XBP1 mRNA splicing and XBP1s production persisted.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement with the behavior of the reporters described above, ISRIB blocked production of endogenous ATF4, whereas XBP1 mRNA splicing (Figure 2D) and XBP1s production persisted",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are direct experimental observations from Western blot and RT-PCR analyses presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "0dfdd499-30d6-4282-830d-f7bb6d5a5a95",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C20",
+      "claim": "ISRIB specifically blocks signaling of the PERK-branch of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We conclude that ISRIB specifically blocks signaling of the PERK-branch of the UPR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from multiple experimental observations showing selective inhibition of PERK signaling but not IRE1 or ATF6 branches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "7f3ff4df-a01f-447f-877f-26da99867c79",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C21",
+      "claim": "Upon induction of ER stress by tunicamycin or thapsigargin, phosphorylation of eIF2\u03b1 increased over time, reaching a fourfold and sevenfold increase after 120 min respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Upon induction of ER stress by tunicamycin or thapsigargin, phosphorylation of eIF2\u03b1 increased over time, reaching a fourfold and sevenfold increase after 120 min respectively",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are quantitative measurements from the phospho-eIF2\u03b1 assay described in the methods and shown in Figure 3A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "9c723e54-0c99-4081-ba2b-53aa03669f0a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C22",
+      "claim": "ISRIB sustained global translation even in the presence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement with this notion, ISRIB sustained global translation (as monitored by 35S-methionine incorporation into newly synthesized polypeptides) even in the presence of ER stress",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from metabolic labeling experiments shown in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "197c688f-a6c8-409e-826f-05126c048775",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C23",
+      "claim": "After thapsigargin treatment, cells experienced a 40% drop in translation, which was abolished by ISRIB.",
+      "claim_type": "EXPLICIT",
+      "source_text": "After thapsigargin treatment, cells experienced a 40% drop in translation, which was abolished by ISRIB.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from the metabolic labeling experiment described in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "bec4fca5-aa9f-494c-8c75-70cc9aa1c48e",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C24",
+      "claim": "ISRIB was the only molecule in the collection of 28 hits that reversed translational attenuation upon ER-stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB was the only molecule in our collection of 28 hits that reversed translational attenuation upon ER-stress.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a comparative observation from testing all 28 hit compounds from the screen.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "bb1a01df-e3bf-4d03-9b72-f2c35818b523",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C25",
+      "claim": "ISRIB partially restored the halfmer population in ER-stressed cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, ISRIB partially restored the halfmer population in ER-stressed cells, providing support to the notion that it helps maintain high PIC levels even when eIF2\u03b1 is phosphorylated",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an observation from polysome gradient analysis, with an inference about the mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "05f63304-f0c6-447f-aafd-9edb97de3296",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C26",
+      "claim": "ISRIB exerts its function by maintaining elevated ternary complex levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These data indicate that ISRIB exerts its function by maintaining elevated ternary complex levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This mechanistic conclusion is inferred from multiple experimental observations including polysome profiles and translation measurements.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "491884ce-bfd9-4025-8d07-11d9535d5f78",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C27",
+      "claim": "Expression of eIF2\u03b1(S51D) upon doxycycline addition induced translational attenuation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Expression of this allele upon doxycycline addition induced translational attenuation (Figure 3D) as seen by an increase in the 80S peak and a decrease in the polysome population.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from polysome gradient analysis of cells expressing the phosphomimetic mutant.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1cf2eacb-b974-45fe-960c-ebc0ca1fc300",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C28",
+      "claim": "ISRIB rescued translation in cells expressing eIF2\u03b1(S51D), returning it to the levels observed in non-induced cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB rescued translation returning it to the levels observed in non-induced cells.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from polysome gradient analysis shown in Figure 3D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "27d78a2a-b756-4fc2-af38-8fa65f0ed61a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C29",
+      "claim": "ISRIB restores translation in cells containing either phospho-eIF2\u03b1 or eIF2\u03b1(S51D).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In conclusion, ISRIB restores translation in cells containing either phospho-eIF2\u03b1 or eIF2\u03b1(S51D), thereby excluding any pleiotropic effects that might have been caused by the reagents used to activate ER stress.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is based on experimental data from multiple conditions, with inference about the specificity of ISRIB's mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "4cabe8b3-7124-42d8-b64b-fd0eae3e7d2e",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C30",
+      "claim": "Addition of ISRIB did not reverse the effect of Torin-1 on translation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast to these treatments, addition of ISRIB did not reverse the effect of Torin-1 on translation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from polysome gradient analysis with Torin-1 treatment shown in Figure 3E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a40f3e15-8966-4491-b1cc-807cf8c51b1b",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C31",
+      "claim": "The ability of ISRIB to block translational attenuation is specific to eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, the ability of ISRIB to block translational attenuation is specific to eIF2\u03b1 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the observation that ISRIB reverses eIF2\u03b1-mediated but not mTOR-mediated translational attenuation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "810cd89f-6bb3-4b45-9a2a-d45cbbeab273",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C32",
+      "claim": "ISRIB blocked ATF4 induction after activation of either GCN2 or HRI.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As expected, ISRIB blocked ATF4 induction after activation of either GCN2 or HRI (Figure 3F).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from Western blot analysis shown in Figure 3F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8afd1a2e-473b-402a-8d44-6939642c073a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C33",
+      "claim": "ISRIB is a bona fide ISR inhibitor that blocks signaling downstream of all eIF2\u03b1 kinases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These data suggest that ISRIB is a bona fide ISR inhibitor that blocks signaling downstream of all eIF2\u03b1 kinases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from experimental data showing ISRIB blocks signaling from PERK, GCN2, and HRI.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a3ccb2f6-e81a-4890-93d5-8d6387d49ea8",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C34",
+      "claim": "Both CHOP and GADD34 mRNA are induced upon ER stress in an ATF4-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both CHOP and GADD34 mRNA are induced upon ER stress in an ATF4-dependent manner",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about the ATF4-dependent transcriptional response, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "2ec3ced4-cb0e-4751-b8d2-72b75cad365d",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C35",
+      "claim": "ISRIB blocked induction of CHOP and GADD34 mRNA upon ER stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As expected, ISRIB blocked induction of CHOP and GADD34 mRNA upon ER stress (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from qRT-PCR analysis shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c823496a-c970-4e9d-88f7-7b1c5fc67c81",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C36",
+      "claim": "Cells homozygous for non-phosphorylatable eIF2\u03b1, eIF2\u03b1(S51A), are unable to cope with ER stress properly, leading to reduced viability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As previously shown, cells homozygous for non-phosphorylatable eIF2\u03b1, eIF2\u03b1(S51A), are unable to cope with ER stress properly, leading to reduced viability",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from previous studies, supported by citations in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "5795379f-98c9-4951-8619-d4f75c623906",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C37",
+      "claim": "ISRIB sensitizes cells to acute ER stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB sensitizes cells to acute ER stress.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the clonogenic survival assay shown in Figure 5A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "9f4be5f9-e74a-40bd-a85e-061ae0cdd9b5",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C38",
+      "claim": "ISRIB synergizes with ER stress to activate caspase 3/7.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB synergizes with ER stress to activate caspase 3/7.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from the caspase 3/7 activation assay shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f18bb986-ae63-45d7-9fe7-a41282700fd7",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C39",
+      "claim": "Cells expressing an IRE1-GFP fusion protein showed prolonged foci formation in the presence of ISRIB during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Second, cells expressing an IRE1-GFP fusion protein showed prolonged foci formation (Figure 5C), indicative of IRE1 oligomerization.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from confocal microscopy shown in Figure 5C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8f2668e2-235e-43d4-96c3-f414f83e8170",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C40",
+      "claim": "Prolonged ER stress-induced proteolytic processing of ATF6 was observed in ISRIB-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Third, we observed prolonged ER stress-induced proteolytic processing of ATF6 (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from Western blot analysis shown in Figure 5D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "84913dee-9e70-4bc8-8bfc-4a357b93dee1",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C41",
+      "claim": "In the absence of ER stress, ISRIB treatment alone did not induce any of the UPR sensors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, in the absence of ER stress ISRIB treatment alone did not induce any of these sensors",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is stated as an experimental observation from control experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "3555a819-7908-4896-95b1-8789ecbc615a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C42",
+      "claim": "eIF2\u03b1 phosphorylation is implicated in memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eIF2\u03b1 phosphorylation is implicated in memory consolidation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from previous studies in the field, as indicated by the context and citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "3ba63ec9-250e-4ad8-924f-822398fd44ca",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C43",
+      "claim": "The threshold for induction of L-LTP is reduced and memory consolidation is enhanced in mice lacking GCN2 or PKR and in mice heterozygous for non-phosphorylatable eIF2\u03b1(S51A).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In particular, the threshold for induction of L-LTP is reduced and memory consolidation is enhanced in mice lacking GCN2 or PKR and in mice heterozygous for non-phosphorylatable eIF2\u03b1(S51A), which have reduced levels of eIF2\u03b1 phosphorylation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from previous genetic studies, supported by citations (Costa-Mattioli et al., 2005; Costa-Mattioli et al., 2007; Zhu et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "84086ec0-937e-4d58-9e1c-f352e2ca275a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C44",
+      "claim": "ISRIB pharmacologically phenocopies genetic manipulations that reduce eIF2\u03b1 phosphorylation in behavioral tasks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As we show here, ISRIB pharmacologically phenocopies these genetic manipulations in behavioral tasks by rendering cells insensitive to eIF2\u03b1 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the behavioral data showing similar memory enhancement effects as seen in genetic models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "24fec422-868b-4125-95c3-81cc327e546c",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C45",
+      "claim": "Escape latencies are significantly shorter in mice treated with ISRIB in the Morris water maze test.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Escape latencies are significantly shorter in mice treated with ISRIB.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative experimental observation from the Morris water maze behavioral test shown in Figure 6C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1bbf684f-831d-4385-9dba-d3d2ff3bd844",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C46",
+      "claim": "After completion of training, mice treated with ISRIB showed a significant preference for the target quadrant (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source_text": "After completion of training in the study shown in panel (A), mice treated with ISRIB (black column) showed a significant preference for the target quadrant (*p<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative experimental observation from the probe test in the Morris water maze shown in Figure 6D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a25f94ac-8dd0-4419-8027-a47ab6aa63f1",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C47",
+      "claim": "Mice treated with ISRIB increased the number of times they crossed the platform location as compared to vehicle-treated mice (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source_text": "After completion of training in the study shown in panel a, mice treated with ISRIB (black column) increased the number of times they crossed the platform location as compared to the vehicle-treated mice (grey column) (*p<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative experimental observation from the Morris water maze test shown in Figure 6E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "7fefb567-5c30-4aba-b2b1-fa164e59aeb7",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C48",
+      "claim": "Systemic administration of ISRIB enhances long-term contextual fear memory (24 hr), while it does not affect short-term memory (1 hr).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Systemic administration of ISRIB (intraperitoneally after training) enhances long-term contextual fear memory (right bars, 24 hr), while it does not affect short-term memory (left bars, 1 hr)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from contextual fear conditioning experiments shown in Figure 6F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "5c760a57-c632-406a-af63-0a38a3277653",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C49",
+      "claim": "ISRIB-treated mice showed increased freezing upon presentation of the conditioned environment 24 hr after training as compared to vehicle treated mice (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB-treated mice showed increased freezing upon presentation of the conditioned environment 24 hr after training as compared to vehicle treated mice (p<0.05; Figure 6F).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative experimental observation from contextual fear conditioning shown in Figure 6F.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "71f61437-e5d9-4228-afc0-d35c9098dd31",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C50",
+      "claim": "No differences were observed in short-term memory (1 hr) between ISRIB and vehicle treatments in contextual fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source_text": "No differences were observed in short-term memory (1 hr) between these two treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from the contextual fear conditioning experiment.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "45d0c759-0c4b-4dcb-9195-e3494eaff1cd",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C51",
+      "claim": "ISRIB-treated rats showed a significant increase over vehicle-injected rats in the level of freezing when presented with the tone (CS) at 24 hr (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB-treated rats showed a significant increase over vehicle-injected rats in the level of freezing when presented with the tone (CS) at 24 hr (long-term memory, p<0.05; Figure 6G).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative experimental observation from auditory fear conditioning shown in Figure 6G.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "3877a502-c013-4ae9-bf9c-8e98d5e6d6ea",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C52",
+      "claim": "No difference was observed between ISRIB- and vehicle-treated rats at 3 hr (short-term memory) in auditory fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By contrast, we observed no difference between ISRIB- and vehicle-treated rats at 3 hr (short-term memory).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct experimental observation from the auditory fear conditioning experiment.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "4dcc7d18-c072-4947-ac1c-8c919b594759",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C53",
+      "claim": "Long-term memory is selectively enhanced in ISRIB-treated animals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, these data suggest that long-term memory is selectively enhanced in ISRIB-treated animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from multiple behavioral experiments showing enhancement of long-term but not short-term memory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "6cb69805-7fa9-47f2-ab53-04ddec6a942b",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C54",
+      "claim": "ISRIB acts as a potent and stereospecific inhibitor with an IC50 of 5 nM in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It acts as a potent and stereospecific inhibitor with an IC50 of 5 nM in cultured cells, suggesting a specific and tight interaction with its cellular target.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The IC50 is experimental data, and the inference about specific interaction is drawn from the potency and stereoselectivity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "2ac9ca04-ca9d-474f-a975-a640bf5fe959",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C55",
+      "claim": "ISRIB prevents cells from re-establishing ER homeostasis by blocking signaling through the PERK branch of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By blocking signaling through the PERK branch of the UPR, ISRIB prevents cells from re-establishing ER homeostasis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from experimental observations showing sustained UPR activation and reduced cell viability under ER stress.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "25fad686-0881-4ff0-a67d-39e23b2b0fb1",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C56",
+      "claim": "Unmitigated ER stress synergizes with ISRIB to induce apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Unmitigated ER stress synergizes with ISRIB to induce apoptosis.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the caspase 3/7 activation and cell viability experiments shown in Figure 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "d5ee9e8c-2951-447d-be6e-f1d39e592e53",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C57",
+      "claim": "ISRIB shows good pharmacokinetic properties, readily crosses the blood-brain barrier, and exhibits no overt toxicity in mice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB shows good pharmacokinetic properties, readily crosses the blood-brain barrier, and exhibits no overt toxicity in mice, making it suitable for in vivo studies.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "These are experimental observations from the pharmacokinetic studies shown in Figure 6A-B and from the behavioral studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c27068cf-4b24-4efd-b863-40b2b0465027",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C58",
+      "claim": "Overriding the consequences of eIF2\u03b1 phosphorylation enhances memory consolidation in rodents.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In particular, we utilized ISRIB to show that overriding the consequences of eIF2\u03b1 phosphorylation enhances memory consolidation in rodents, suggesting an important role of eIF2\u03b1 phosphorylation in modulating higher-order brain function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is based on experimental data from behavioral studies, with inference about the role of eIF2\u03b1 phosphorylation in brain function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f3abd4ac-b344-474a-b93b-d3e946282f5d",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C59",
+      "claim": "Mutations in different eIF2B subunits can elicit a phospho-eIF2\u03b1 resistant phenotype in yeast.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutations in different eIF2B subunits can elicit a phospho-eIF2\u03b1 resistant phenotype",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from yeast genetics studies, supported by citations (Vazquez de Aldana and Hinnebusch, 1994; Pavitt et al., 1997, 1998).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "5d3fcb63-e811-4fc4-ad1b-d74560b51d84",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C60",
+      "claim": "ISRIB could be altering the affinity of phospho-eIF2\u03b1 for eIF2B or overcoming the nonproductive interaction that blocks GTP loading.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB could be altering the affinity of phospho-eIF2\u03b1 for eIF2B or overcoming the nonproductive interaction that blocks GTP loading, mimicking the effect of these mutations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a hypothetical mechanism proposed to explain ISRIB's action, indicated by the use of 'could be'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c0bd9387-59c9-4069-8c6e-ad7694250cfc",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C61",
+      "claim": "Engagement of toll-like receptor (TLR) 4 results in activation of the catalytic activity of eIF2B in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Precedence for this possibility derives from studies in macrophages, where engagement of toll-like receptor (TLR) 4 results in activation of the catalytic activity of eIF2B",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from previous studies, supported by citation (Woo et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a3b36b5b-6ea1-4910-87ee-1b7141d26384",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C62",
+      "claim": "ISRIB did not reduce phosphorylation of S539 in the eIF2B \u03b5-subunit.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ISRIB did not reduce phosphorylation of S539 in the eIF2B \u03b5-subunit (Figure 3\u2014figure supplement 1), indicating that it does not utilize this particular regulatory phosphorylation to increase GEF activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an experimental observation from Western blot analysis, with inference about the mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f35e89da-c4e6-457a-8d0d-2a176cad8ba6",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C63",
+      "claim": "ISRIB may modulate other post-translational modifications that impinge on the activity of eIF2B.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, ISRIB may modulate other post-translational modifications that impinge on the activity of eIF2B.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about ISRIB's mechanism, indicated by the use of 'may'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "97e0c4f3-a8db-499c-954f-2cbe66ec2c24",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C64",
+      "claim": "PERK-mediated translational attenuation contributes to adaptation by reducing the load of newly synthesized proteins that are translocated into the ER.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When faced with ER stress, PERK-mediated translational attenuation contributes to adaptation by reducing the load of newly synthesized proteins that are translocated into the ER",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about PERK function, supported by citation (Harding et al., 2000).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c975973a-2acd-4a62-b79c-613626ba0bc2",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C65",
+      "claim": "MEFs that lack PERK or ATF4, as well as MEFs that carry a non-phosphorylatable knock-in allele of eIF2\u03b1(S51A), exhibit increased sensitivity to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This reasoning is supported by the increased sensitivity to ER stress exhibited by MEFs that lack PERK or ATF4, as well as MEFs that carry a non-phosphorylatable knock-in allele of eIF2\u03b1(S51A)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from previous genetic studies, supported by citations (Harding et al., 2000; Harding et al., 2003; Lu et al., 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "cc657334-cab2-481d-b8e4-20a05364d610",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C66",
+      "claim": "Some cancer cells sustain an activated UPR to aid in their survival.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As some cancer cells sustain an activated UPR to aid in their survival, ISRIB could provide a new therapeutic approach to cancer chemotherapy.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "evidence_reasoning": "The first part is established knowledge about cancer cell biology; the second part is speculation about therapeutic potential.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c93de376-e2f3-41bb-a8e9-9d5bb29b72f6",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C67",
+      "claim": "A PERK-specific inhibitor demonstrates antitumor activity in a human pancreatic tumor xenograft model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement, a PERK-specific inhibitor demonstrates antitumor activity in a human pancreatic tumor xenograft model",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is knowledge from a previous study, supported by citation (Axten et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f116e7f8-47ee-495c-a6c9-18e6568188fa",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C68",
+      "claim": "During tumor growth, hypoxic conditions and a lack of nutrients can activate both PERK and GCN2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "During tumor growth, hypoxic conditions and a lack of nutrients can activate both PERK and GCN2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about stress conditions in tumors and their effects on eIF2\u03b1 kinases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c536145a-dd47-474b-91c7-fe52732bb46d",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C69",
+      "claim": "PERK\u2212/\u2212 or GCN2\u2212/\u2212 MEFs give rise to significantly smaller tumors in mouse xenograft models than their wild-type counterparts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "PERK\u2212/\u2212 or GCN2\u2212/\u2212 MEFs give rise to significantly smaller tumors in mouse xenograft models than their wild-type counterparts",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge from previous studies, supported by citations (Bi et al., 2005; Ye et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "abcc7c91-65c1-4ada-8e1a-02e41e150748",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C70",
+      "claim": "Both PERK and GCN2 have pro-survival roles in tumor development.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hence both kinases have pro-survival roles in tumor development.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that knockout of these kinases reduces tumor size, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "6f094d04-b4e7-4d72-9737-529dd15043aa",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C71",
+      "claim": "Childhood Ataxia with CNS Hypomyelination (CACH), also known as Vanishing White Matter disease (VWM), has been mapped to mutations in different subunits of eIF2B.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One example is Childhood Ataxia with CNS Hypomyelination (CACH), also known as Vanishing White Matter disease (VWM), which has been mapped to mutations in different subunits of eIF2B",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about a genetic disease, supported by citation (Li and Wang, 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8a2b6f9b-20a2-4447-8130-a4a449a3aae1",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C72",
+      "claim": "A familial intellectual disability syndrome is linked to a mutation in the \u03b3-subunit of eIF2 complex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A second example links a familial intellectual disability syndrome to a mutation in the \u03b3-subunit of eIF2 complex",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about a genetic disease, supported by citation (Borck et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f8a01cd7-f18c-403d-aeef-2753c164c0f2",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C73",
+      "claim": "Treatment of mice with a PKR inhibitor was reported to enhance memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement, treatment of mice with a PKR inhibitor was reported to enhance memory consolidation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is knowledge from previous studies, supported by citations (Costa-Mattioli et al., 2007; Zhu et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "e975282e-4815-47cc-9a58-f776cc355e73",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C74",
+      "claim": "Treatment with salubrinal, an inhibitor that prolongs eIF2\u03b1 phosphorylation, blocks L-LTP and memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "conversely, treatment with salubrinal, an inhibitor that prolongs eIF2\u03b1 phosphorylation, to block L-LTP and memory consolidation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is knowledge from previous studies, supported by citations (Costa-Mattioli et al., 2007; Zhu et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "389805a0-ead0-4685-a2ad-ba464187748b",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C75",
+      "claim": "New protein synthesis is required for memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It has long been appreciated that new protein synthesis is required for memory consolidation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in the field of memory research, supported by citations (Klann and Dever, 2004; Sutton and Schuman, 2006).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c1312e04-8b35-43c6-838a-12071df18639",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C76",
+      "claim": "ATF4 represses CREB-mediated transcription of 'memory genes'.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ATF4 represses CREB-mediated transcription of 'memory genes'",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about ATF4 function in memory, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8c2f201c-88bb-47b2-a563-abc2372ee2fd",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C77",
+      "claim": "The function of ATF4 in memory consolidation is evolutionarily conserved from Aplysia to rodents.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, this latter function of ATF4 in memory consolidation is evolutionarily conserved from Aplysia to rodents",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about evolutionary conservation, supported by citations (Yin et al., 1994; Bartsch et al., 1995; Chen et al., 2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "e126e77f-a028-4bb1-8d76-35559ccb0278",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C78",
+      "claim": "A small physiological increase in the level of eIF2\u03b1 phosphorylation that does not significantly alter overall translation is sufficient to induce ATF4.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because a small physiological increase in the level of eIF2\u03b1 phosphorylation that does not significantly alter overall translation is sufficient to induce ATF4",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the sensitivity of ATF4 induction to eIF2\u03b1 phosphorylation levels.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8b7c2f08-d89b-4117-b604-ead7ffd60cca",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C79",
+      "claim": "A therapeutic window may exist in which ISRIB's effects as memory enhancer can be exploited without encountering long-term toxic consequences.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In light of this reasoning, a therapeutic window may exist in which ISRIB's effects as memory enhancer can be exploited without encountering long-term toxic consequences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential therapeutic applications, indicated by 'may exist'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "6dc34246-bceb-433e-9b54-d7d1e323e9b4",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C80",
+      "claim": "Evolution did not arrive at a maximally optimized process for memory consolidation, imposing a brake via eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Evolution therefore did not arrive at a maximally optimized process, imposing a brake (via eIF2\u03b1 phosphorylation) on memory consolidation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is an inference about evolutionary optimization based on the observation that blocking ISR enhances memory.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c0f93953-1d4f-4c8d-a1df-a355be001870",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C81",
+      "claim": "This mechanism may underscore the importance of filtering memories before committing them to long-term storage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This mechanism may underscore the importance of filtering memories before committing them to long-term storage.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the biological function of the ISR brake on memory, indicated by 'may'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f46a94cd-498f-4e7b-9ffc-28157f44b881",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C82",
+      "claim": "Ablation of PERK in the brain impairs behavioral flexibility.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, eIF2\u03b1 phosphorylation also plays a role in dynamic restructuring of memory, as indicated by studies showing that ablation of PERK in the brain impairs behavioral flexibility",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is knowledge from a previous study, supported by citation (Trinh et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "c42325b1-7c19-4f23-8b2c-1bf7d2f5477c",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C83",
+      "claim": "ISRIB or compounds with related activities could serve as invaluable tools in deciphering higher order brain functions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our findings raise the possibility that ISRIB or compounds with related activities could serve as invaluable tools in deciphering these higher order brain functions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential research applications, indicated by 'could serve'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "0289f035-2cbf-46eb-b06a-079725a94664",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "claim_id": "C84",
+      "claim": "ISRIB could be beneficial as a therapeutic agent effecting memory improvement in diseases associated with memory impairment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "perhaps be beneficial as a therapeutic agent effecting memory improvement in diseases associated with memory impairment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential therapeutic applications, indicated by 'perhaps' and 'could be'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "A high-throughput screen identified ISRIB as a potent inhibitor of PERK signaling with an IC50 of 5 nM. The screen had a Z' of 0.5 and a hit rate of 0.6%, and ISRIB was selected from 28 hits based on its high potency and stereospecificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C16-C17 provide screening metrics and hit identification, while C2 and C54 report the IC50 value with appropriate experimental context. The Z' of 0.5 is acceptable for screening (though not ideal), and the IC50 measurement is presented as experimental data with stereoisomer controls, providing converging evidence for ISRIB's potency.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "685ac07d-7476-48e0-a0bd-39e2c53ac1cc",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "ISRIB specifically blocks the PERK branch of the UPR without inhibiting PERK phosphorylation, while leaving IRE1 and ATF6 branches intact. ISRIB blocked ATF4 production but did not prevent XBP1 mRNA splicing or XBP1s production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C18-C20 provide direct experimental evidence from Western blots and RT-PCR showing selective inhibition of PERK signaling downstream of PERK activation. The data demonstrate that ISRIB acts downstream of PERK phosphorylation and does not affect other UPR branches, supporting the specificity claim.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "ISRIB does not prevent eIF2\u03b1 phosphorylation but renders cells resistant to its effects by maintaining elevated ternary complex levels and sustaining global translation. ISRIB restored the halfmer population in polysome gradients and was the only hit compound that reversed translational attenuation during ER stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C21-C26 provide multiple lines of converging evidence including phospho-eIF2\u03b1 measurements, metabolic labeling, and polysome gradient analysis. The data consistently show that ISRIB acts downstream of eIF2\u03b1 phosphorylation to maintain translation, with the halfmer restoration providing mechanistic support for the ternary complex maintenance model.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "ISRIB rescued translation in cells expressing phosphomimetic eIF2\u03b1(S51D), demonstrating specificity for eIF2\u03b1 phosphorylation-mediated translational attenuation. ISRIB did not reverse translational attenuation caused by mTOR inhibition with Torin-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C27-C31 provide critical specificity controls using a phosphomimetic mutant and an alternative translational inhibitor. The rescue of S51D-induced translational attenuation excludes pleiotropic effects from ER stress inducers, while the lack of effect on Torin-1-mediated inhibition demonstrates pathway specificity.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "d7023ade-daa0-4630-8c71-17c88eca5fea",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "ISRIB blocks ATF4 induction downstream of all eIF2\u03b1 kinases, including GCN2 and HRI, establishing it as a bona fide ISR inhibitor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C32-C33 demonstrate that ISRIB functions downstream of multiple eIF2\u03b1 kinases through direct experimental evidence using amino acid starvation (GCN2) and an HRI activator. This supports the conclusion that ISRIB is a general ISR inhibitor rather than PERK-specific.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "f618222c-473b-4560-bce4-fc6998c1f15a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "ISRIB blocked the ATF4-dependent induction of CHOP and GADD34 mRNA upon ER stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C34 establishes the ATF4-dependent nature of CHOP and GADD34 induction (established knowledge), and C35 provides direct experimental evidence from qRT-PCR showing ISRIB blocks this induction. The result is consistent with ISRIB's inhibition of ATF4 production.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "ISRIB sensitizes cells to ER stress by preventing adaptation, leading to sustained UPR sensor activation (IRE1 oligomerization and ATF6 processing) and synergistic induction of apoptosis. ISRIB alone does not activate UPR sensors in the absence of stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C36-C41 and C55-C56 provide converging evidence from clonogenic survival assays, caspase 3/7 activation, and imaging of UPR sensors. The data show that blocking PERK signaling prevents ER homeostasis restoration, leading to prolonged stress and apoptosis. Critical controls (C41) show ISRIB does not induce stress on its own.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "8e0c1f2f-b975-4e86-beaf-808b45828bb2",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "ISRIB exhibits favorable pharmacokinetic properties, crosses the blood-brain barrier, and shows no overt toxicity in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C57 is supported by pharmacokinetic data in Figure 6A-B showing plasma and brain concentrations over time, and by the behavioral studies demonstrating tolerability. The brain-to-plasma ratio data directly demonstrate BBB penetration, and the successful completion of behavioral studies without reported adverse effects supports the lack of overt toxicity.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "dec50c8f-ceb1-4dbf-bdf4-bfa34d79c24a",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "ISRIB-treated mice showed enhanced spatial learning in the Morris water maze, with significantly shorter escape latencies, increased preference for the target quadrant (p<0.05), and more platform location crossings (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C45-C47 provide multiple convergent measures of spatial learning from the Morris water maze test. The data include training performance (escape latencies), probe test quadrant preference, and platform crossings, all showing consistent enhancement with statistical significance. These are standard, well-validated measures of hippocampal-dependent spatial memory.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "772ffd0c-cc6a-418f-a2a2-0642d0d001f8",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "Systemic ISRIB administration enhanced long-term contextual fear memory (24 hr, p<0.05) without affecting short-term memory (1 hr) in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C48-C50 demonstrate selective enhancement of long-term memory with appropriate temporal controls. The lack of effect on short-term memory (C50) is critical for establishing that ISRIB specifically affects consolidation rather than acquisition or immediate recall, supporting the mechanistic interpretation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "5690acdb-d837-4c33-bcb9-6760e07fe655",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "Direct amygdala infusion of ISRIB in rats enhanced long-term auditory fear memory (24 hr, p<0.05) without affecting short-term memory (3 hr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C51-C52 provide evidence for memory enhancement in a different brain region (amygdala) and species (rats), with direct local administration. The temporal specificity (long-term but not short-term) is consistent with the contextual fear conditioning results, strengthening the overall conclusion about memory consolidation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1b3c52c4-925e-475a-ab06-32f88ecef712",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "ISRIB-treated animals display significant enhancement in spatial and fear-associated learning, demonstrating that memory consolidation is inherently limited by the ISR. ISRIB pharmacologically phenocopies genetic manipulations that reduce eIF2\u03b1 phosphorylation, and long-term memory is selectively enhanced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4, C5, C44, C53, and C58 synthesize the behavioral findings and provide mechanistic interpretation. The enhancement across multiple memory paradigms (spatial, contextual fear, auditory fear), the selective effect on long-term vs short-term memory, and the consistency with genetic models (C43) provide strong converging evidence that ISR limits memory consolidation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "363b42cd-e412-4a94-a84b-b08220b4b1ca",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "ISRIB's mechanism may involve altering the affinity of phospho-eIF2\u03b1 for eIF2B or modulating post-translational modifications of eIF2B, though the specific molecular target remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C60 and C63 are explicitly speculative (using 'could be' and 'may'), and C62 shows that ISRIB does not act through one known regulatory mechanism (S539 phosphorylation). While the hypotheses are reasonable based on yeast genetics and known regulatory mechanisms, no direct evidence for ISRIB's molecular target is provided.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "109c0792-b038-475c-ab71-cbb0b1642bc0",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R14",
+      "result_type": "llm",
+      "result": "ISRIB may have therapeutic potential in cancer by targeting cells with activated UPR, as PERK and GCN2 have pro-survival roles in tumor development and a PERK inhibitor shows antitumor activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While C67-C70 cite established knowledge about PERK/GCN2 in tumors, C66 is speculative about ISRIB's therapeutic potential. No experimental data with ISRIB in cancer models is presented. The synergy with ER stress (C37-C38) provides mechanistic rationale, but therapeutic efficacy remains untested and speculative.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f",
+      "content_id": "7b5eed67-d733-4952-bb01-9e3999330164",
+      "result_id": "R15",
+      "result_type": "llm",
+      "result": "ISRIB may have therapeutic applications for memory enhancement and cognitive disorders, and the ISR brake on memory may serve to filter memories before long-term storage, though these represent speculative interpretations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C79-C81 and C83-C84 are explicitly speculative about therapeutic applications and evolutionary interpretations. While the memory enhancement data is solid, extrapolation to disease treatment, long-term safety, and evolutionary purpose goes beyond the experimental evidence. The therapeutic window (C79) and disease applications (C84) require additional studies.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "cf3be673-7a09-4ec8-b708-02f41cc3cd23",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "ISRIB is a potent inhibitor with an IC50 of 5 nM that was identified through cell-based screening and demonstrates stereospecificity, suggesting a specific and tight interaction with its cellular target.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly praised the compound's 'remarkable potency, hitting its unknown target(s) when applied to cells at a submicromolar concentration' and noted that 'the functional characterization of the compound is rather thorough.' The potency data and characterization are accepted without challenge.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "e8052934-d3c2-482a-a399-44abe7d481bd",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "ISRIB specifically blocks signaling downstream of all eIF2\u03b1 kinases (PERK, GCN2, HRI) without inhibiting PERK activation itself, as evidenced by maintained PERK mobility shift, blocked ATF4 production, and preserved IRE1/ATF6 signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers affirmed that 'the functional characterisation of ISRIB is very thorough' and accepted its role as an ISR inhibitor. They noted the compound 'interposes itself (functionally) between the phosphorylated alpha subunit of translation initiation factor 2 (eIF2\u03b1) and the target of this phosphorylation event' without challenging these specificity claims.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "9a9da782-f06c-4795-816b-46f7922c6421",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "ISRIB maintains translation and ternary complex levels despite eIF2\u03b1 phosphorylation, as demonstrated by sustained 35S-methionine incorporation, restored halfmer populations, and rescue of translation in cells expressing phosphomimetic eIF2\u03b1(S51D), with specificity to eIF2\u03b1 phosphorylation rather than mTOR-mediated translational control.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers stated that 'the functional characterization of the compound is rather thorough and thus its utility as a tool compound is well documented.' These mechanistic studies demonstrating ISRIB's effects on translation were not questioned, indicating acceptance of the findings.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "da9c2c44-7cd1-44de-9081-473a9157433c",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "ISRIB blocks ATF4-dependent transcriptional responses (CHOP, GADD34) and sensitizes cells to ER stress by preventing re-establishment of ER homeostasis, leading to prolonged UPR activation through IRE1 and ATF6 branches and synergistic induction of apoptosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers accepted the functional characterization without raising concerns about these cellular stress response findings. The thorough documentation of ISRIB's effects on cell viability and UPR signaling was implicitly endorsed through their overall positive assessment of the functional work.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "56902965-2385-46e1-8789-25c79bab9cac",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "ISRIB enhances long-term memory consolidation in rodents across multiple behavioral paradigms (Morris water maze, contextual and auditory fear conditioning) without affecting short-term memory, pharmacologically phenocopying genetic reductions in eIF2\u03b1 phosphorylation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers were 'impressed by effects on memory formation,' they raised critical concerns requiring additional experiments. Specifically, they requested evidence that 'the compound gets into the CNS' and asked authors to 'address how' differential treatment timing (chronic pre-training for contextual vs. post-training for other paradigms) 'affects the conclusions regarding the compounds impact on memory consolidation.' These requests indicate uncertainty about whether the observed effects definitively demonstrate CNS-mediated memory consolidation enhancement.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "ee88a973-dcd4-43ca-a326-dbc8fb1b64d3",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "ISRIB shows good pharmacokinetic properties, readily crosses the blood-brain barrier, and exhibits no overt toxicity in mice.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers explicitly requested additional data to confirm CNS penetration, stating 'it would seem important to determine if the compound gets into the CNS, when applied at doses that affect memory. Perhaps it is possible to analyze levels in the CSF of injected animals or address this matter functionally by measuring ISR activity in the CNS.' This indicates the existing evidence for BBB penetration was deemed insufficient.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "5253d005-947b-4b46-8613-b4b2b6c5d97b",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "ISRIB's mechanism may involve altering the affinity of phospho-eIF2\u03b1 for eIF2B or modulating post-translational modifications of eIF2B, though it does not act through S539 phosphorylation of the eIF2B \u03b5-subunit.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers explicitly noted that 'the functional characterisation of ISRIB is very thorough, it is not matched by a similar level of molecular detail. We do not know if ISRIB directly modulates the interaction of eIF2\u03b1 with eIF2B or the competing interactions with eIF5 or some aspect of eIF2B activity.' They requested co-immunoprecipitation experiments and phosphorylation status analysis to clarify the mechanism, indicating these mechanistic claims remain uncertain.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "0428d70f-56c0-4018-827c-5e8095879286",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "Memory consolidation is inherently limited by the ISR, and ISRIB releases this brake.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers were impressed by the memory enhancement effects, their request to clarify whether ISRIB acts on brain cells versus peripheral action, and to address treatment timing differences, suggests uncertainty about the interpretation that ISR specifically limits memory consolidation in the brain. The mechanistic conclusion requires additional supporting evidence.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a344f71f-690e-4997-8c6a-c8f81704d2bf",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R9",
+      "result_type": "peer",
+      "result": "Background knowledge claims about the integrated stress response pathway, eIF2\u03b1 kinases, UPR signaling, memory consolidation mechanisms, and related genetic and pharmacological studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims represent established knowledge from the literature and are cited appropriately. Reviewers did not challenge any of this background information, implicitly accepting it as the established scientific foundation for the study.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "7eae9292-13ec-4cec-b1d8-7a019c4f5281",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R10",
+      "result_type": "peer",
+      "result": "ISRIB reduces viability of cells subjected to chronic ER stress, and the primary screen had a Z' of 0.5 with a hit rate of 0.6%.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These screening and cell viability findings are part of the functional characterization that reviewers described as 'rather thorough.' No concerns were raised about these specific experimental observations.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "be9baf85-f526-47f4-aae2-4d88f317cde4",
+      "content_id": "12905102-6d00-46de-99f5-e911f20691b3",
+      "result_id": "R11",
+      "result_type": "peer",
+      "result": "Speculative claims about therapeutic windows, evolutionary optimization of memory, memory filtering mechanisms, and potential applications of ISRIB as a research tool or therapeutic agent.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers did not challenge these speculative discussion points. Their statement that 'there is reason to hope that ISRIB will be applied to much further research and that this paper will serve as a foundation for such studies' suggests acceptance of the potential applications discussed by the authors.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "27722074-f830-4b6c-9b46-19f0cd21c80f",
+      "result_id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061"
+    },
+    {
+      "claim_id": "2187b153-8652-4cb0-8f5d-184ee9bcb9e2",
+      "result_id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061"
+    },
+    {
+      "claim_id": "df021607-b2c8-4474-8b6a-8443f6c17bbc",
+      "result_id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061"
+    },
+    {
+      "claim_id": "6cb69805-7fa9-47f2-ab53-04ddec6a942b",
+      "result_id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061"
+    },
+    {
+      "claim_id": "a9916d36-9d2b-4c4a-af79-0fc25757cd80",
+      "result_id": "685ac07d-7476-48e0-a0bd-39e2c53ac1cc"
+    },
+    {
+      "claim_id": "eb8a7a9e-29d2-4105-ad3f-82617e742473",
+      "result_id": "685ac07d-7476-48e0-a0bd-39e2c53ac1cc"
+    },
+    {
+      "claim_id": "0dfdd499-30d6-4282-830d-f7bb6d5a5a95",
+      "result_id": "685ac07d-7476-48e0-a0bd-39e2c53ac1cc"
+    },
+    {
+      "claim_id": "7f3ff4df-a01f-447f-877f-26da99867c79",
+      "result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20"
+    },
+    {
+      "claim_id": "9c723e54-0c99-4081-ba2b-53aa03669f0a",
+      "result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20"
+    },
+    {
+      "claim_id": "197c688f-a6c8-409e-826f-05126c048775",
+      "result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20"
+    },
+    {
+      "claim_id": "bec4fca5-aa9f-494c-8c75-70cc9aa1c48e",
+      "result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20"
+    },
+    {
+      "claim_id": "bb1a01df-e3bf-4d03-9b72-f2c35818b523",
+      "result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20"
+    },
+    {
+      "claim_id": "05f63304-f0c6-447f-aafd-9edb97de3296",
+      "result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20"
+    },
+    {
+      "claim_id": "491884ce-bfd9-4025-8d07-11d9535d5f78",
+      "result_id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc"
+    },
+    {
+      "claim_id": "1cf2eacb-b974-45fe-960c-ebc0ca1fc300",
+      "result_id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc"
+    },
+    {
+      "claim_id": "27d78a2a-b756-4fc2-af38-8fa65f0ed61a",
+      "result_id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc"
+    },
+    {
+      "claim_id": "4cabe8b3-7124-42d8-b64b-fd0eae3e7d2e",
+      "result_id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc"
+    },
+    {
+      "claim_id": "a40f3e15-8966-4491-b1cc-807cf8c51b1b",
+      "result_id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc"
+    },
+    {
+      "claim_id": "810cd89f-6bb3-4b45-9a2a-d45cbbeab273",
+      "result_id": "d7023ade-daa0-4630-8c71-17c88eca5fea"
+    },
+    {
+      "claim_id": "8afd1a2e-473b-402a-8d44-6939642c073a",
+      "result_id": "d7023ade-daa0-4630-8c71-17c88eca5fea"
+    },
+    {
+      "claim_id": "a3ccb2f6-e81a-4890-93d5-8d6387d49ea8",
+      "result_id": "f618222c-473b-4560-bce4-fc6998c1f15a"
+    },
+    {
+      "claim_id": "2ec3ced4-cb0e-4751-b8d2-72b75cad365d",
+      "result_id": "f618222c-473b-4560-bce4-fc6998c1f15a"
+    },
+    {
+      "claim_id": "c823496a-c970-4e9d-88f7-7b1c5fc67c81",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "5795379f-98c9-4951-8619-d4f75c623906",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "9f4be5f9-e74a-40bd-a85e-061ae0cdd9b5",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "f18bb986-ae63-45d7-9fe7-a41282700fd7",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "8f2668e2-235e-43d4-96c3-f414f83e8170",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "84913dee-9e70-4bc8-8bfc-4a357b93dee1",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "2ac9ca04-ca9d-474f-a975-a640bf5fe959",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "25fad686-0881-4ff0-a67d-39e23b2b0fb1",
+      "result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa"
+    },
+    {
+      "claim_id": "d5ee9e8c-2951-447d-be6e-f1d39e592e53",
+      "result_id": "8e0c1f2f-b975-4e86-beaf-808b45828bb2"
+    },
+    {
+      "claim_id": "24fec422-868b-4125-95c3-81cc327e546c",
+      "result_id": "dec50c8f-ceb1-4dbf-bdf4-bfa34d79c24a"
+    },
+    {
+      "claim_id": "1bbf684f-831d-4385-9dba-d3d2ff3bd844",
+      "result_id": "dec50c8f-ceb1-4dbf-bdf4-bfa34d79c24a"
+    },
+    {
+      "claim_id": "a25f94ac-8dd0-4419-8027-a47ab6aa63f1",
+      "result_id": "dec50c8f-ceb1-4dbf-bdf4-bfa34d79c24a"
+    },
+    {
+      "claim_id": "7fefb567-5c30-4aba-b2b1-fa164e59aeb7",
+      "result_id": "772ffd0c-cc6a-418f-a2a2-0642d0d001f8"
+    },
+    {
+      "claim_id": "5c760a57-c632-406a-af63-0a38a3277653",
+      "result_id": "772ffd0c-cc6a-418f-a2a2-0642d0d001f8"
+    },
+    {
+      "claim_id": "71f61437-e5d9-4228-afc0-d35c9098dd31",
+      "result_id": "772ffd0c-cc6a-418f-a2a2-0642d0d001f8"
+    },
+    {
+      "claim_id": "45d0c759-0c4b-4dcb-9195-e3494eaff1cd",
+      "result_id": "5690acdb-d837-4c33-bcb9-6760e07fe655"
+    },
+    {
+      "claim_id": "3877a502-c013-4ae9-bf9c-8e98d5e6d6ea",
+      "result_id": "5690acdb-d837-4c33-bcb9-6760e07fe655"
+    },
+    {
+      "claim_id": "8d8f3fe5-ad08-4824-b3ee-dc5c773c8a02",
+      "result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712"
+    },
+    {
+      "claim_id": "b4cd249a-ebba-4ad9-8c3c-ad6a1037821f",
+      "result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712"
+    },
+    {
+      "claim_id": "84086ec0-937e-4d58-9e1c-f352e2ca275a",
+      "result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712"
+    },
+    {
+      "claim_id": "4dcc7d18-c072-4947-ac1c-8c919b594759",
+      "result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712"
+    },
+    {
+      "claim_id": "c27068cf-4b24-4efd-b863-40b2b0465027",
+      "result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712"
+    },
+    {
+      "claim_id": "5d3fcb63-e811-4fc4-ad1b-d74560b51d84",
+      "result_id": "363b42cd-e412-4a94-a84b-b08220b4b1ca"
+    },
+    {
+      "claim_id": "f35e89da-c4e6-457a-8d0d-2a176cad8ba6",
+      "result_id": "363b42cd-e412-4a94-a84b-b08220b4b1ca"
+    },
+    {
+      "claim_id": "cc657334-cab2-481d-b8e4-20a05364d610",
+      "result_id": "109c0792-b038-475c-ab71-cbb0b1642bc0"
+    },
+    {
+      "claim_id": "c93de376-e2f3-41bb-a8e9-9d5bb29b72f6",
+      "result_id": "109c0792-b038-475c-ab71-cbb0b1642bc0"
+    },
+    {
+      "claim_id": "f116e7f8-47ee-495c-a6c9-18e6568188fa",
+      "result_id": "109c0792-b038-475c-ab71-cbb0b1642bc0"
+    },
+    {
+      "claim_id": "c536145a-dd47-474b-91c7-fe52732bb46d",
+      "result_id": "109c0792-b038-475c-ab71-cbb0b1642bc0"
+    },
+    {
+      "claim_id": "abcc7c91-65c1-4ada-8e1a-02e41e150748",
+      "result_id": "109c0792-b038-475c-ab71-cbb0b1642bc0"
+    },
+    {
+      "claim_id": "8b7c2f08-d89b-4117-b604-ead7ffd60cca",
+      "result_id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f"
+    },
+    {
+      "claim_id": "6dc34246-bceb-433e-9b54-d7d1e323e9b4",
+      "result_id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f"
+    },
+    {
+      "claim_id": "c0f93953-1d4f-4c8d-a1df-a355be001870",
+      "result_id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f"
+    },
+    {
+      "claim_id": "c42325b1-7c19-4f23-8b2c-1bf7d2f5477c",
+      "result_id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f"
+    },
+    {
+      "claim_id": "0289f035-2cbf-46eb-b06a-079725a94664",
+      "result_id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f"
+    },
+    {
+      "claim_id": "df021607-b2c8-4474-8b6a-8443f6c17bbc",
+      "result_id": "cf3be673-7a09-4ec8-b708-02f41cc3cd23"
+    },
+    {
+      "claim_id": "2187b153-8652-4cb0-8f5d-184ee9bcb9e2",
+      "result_id": "cf3be673-7a09-4ec8-b708-02f41cc3cd23"
+    },
+    {
+      "claim_id": "6cb69805-7fa9-47f2-ab53-04ddec6a942b",
+      "result_id": "cf3be673-7a09-4ec8-b708-02f41cc3cd23"
+    },
+    {
+      "claim_id": "a9916d36-9d2b-4c4a-af79-0fc25757cd80",
+      "result_id": "e8052934-d3c2-482a-a399-44abe7d481bd"
+    },
+    {
+      "claim_id": "eb8a7a9e-29d2-4105-ad3f-82617e742473",
+      "result_id": "e8052934-d3c2-482a-a399-44abe7d481bd"
+    },
+    {
+      "claim_id": "0dfdd499-30d6-4282-830d-f7bb6d5a5a95",
+      "result_id": "e8052934-d3c2-482a-a399-44abe7d481bd"
+    },
+    {
+      "claim_id": "810cd89f-6bb3-4b45-9a2a-d45cbbeab273",
+      "result_id": "e8052934-d3c2-482a-a399-44abe7d481bd"
+    },
+    {
+      "claim_id": "8afd1a2e-473b-402a-8d44-6939642c073a",
+      "result_id": "e8052934-d3c2-482a-a399-44abe7d481bd"
+    },
+    {
+      "claim_id": "7f3ff4df-a01f-447f-877f-26da99867c79",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "9c723e54-0c99-4081-ba2b-53aa03669f0a",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "197c688f-a6c8-409e-826f-05126c048775",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "bec4fca5-aa9f-494c-8c75-70cc9aa1c48e",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "bb1a01df-e3bf-4d03-9b72-f2c35818b523",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "05f63304-f0c6-447f-aafd-9edb97de3296",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "491884ce-bfd9-4025-8d07-11d9535d5f78",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "1cf2eacb-b974-45fe-960c-ebc0ca1fc300",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "27d78a2a-b756-4fc2-af38-8fa65f0ed61a",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "4cabe8b3-7124-42d8-b64b-fd0eae3e7d2e",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "a40f3e15-8966-4491-b1cc-807cf8c51b1b",
+      "result_id": "9a9da782-f06c-4795-816b-46f7922c6421"
+    },
+    {
+      "claim_id": "2ec3ced4-cb0e-4751-b8d2-72b75cad365d",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "5795379f-98c9-4951-8619-d4f75c623906",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "9f4be5f9-e74a-40bd-a85e-061ae0cdd9b5",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "f18bb986-ae63-45d7-9fe7-a41282700fd7",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "8f2668e2-235e-43d4-96c3-f414f83e8170",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "84913dee-9e70-4bc8-8bfc-4a357b93dee1",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "2ac9ca04-ca9d-474f-a975-a640bf5fe959",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "25fad686-0881-4ff0-a67d-39e23b2b0fb1",
+      "result_id": "da9c2c44-7cd1-44de-9081-473a9157433c"
+    },
+    {
+      "claim_id": "8d8f3fe5-ad08-4824-b3ee-dc5c773c8a02",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "84086ec0-937e-4d58-9e1c-f352e2ca275a",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "24fec422-868b-4125-95c3-81cc327e546c",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "1bbf684f-831d-4385-9dba-d3d2ff3bd844",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "a25f94ac-8dd0-4419-8027-a47ab6aa63f1",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "7fefb567-5c30-4aba-b2b1-fa164e59aeb7",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "5c760a57-c632-406a-af63-0a38a3277653",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "71f61437-e5d9-4228-afc0-d35c9098dd31",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "45d0c759-0c4b-4dcb-9195-e3494eaff1cd",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "3877a502-c013-4ae9-bf9c-8e98d5e6d6ea",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "4dcc7d18-c072-4947-ac1c-8c919b594759",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "c27068cf-4b24-4efd-b863-40b2b0465027",
+      "result_id": "56902965-2385-46e1-8789-25c79bab9cac"
+    },
+    {
+      "claim_id": "d5ee9e8c-2951-447d-be6e-f1d39e592e53",
+      "result_id": "ee88a973-dcd4-43ca-a326-dbc8fb1b64d3"
+    },
+    {
+      "claim_id": "5d3fcb63-e811-4fc4-ad1b-d74560b51d84",
+      "result_id": "5253d005-947b-4b46-8613-b4b2b6c5d97b"
+    },
+    {
+      "claim_id": "a3b36b5b-6ea1-4910-87ee-1b7141d26384",
+      "result_id": "5253d005-947b-4b46-8613-b4b2b6c5d97b"
+    },
+    {
+      "claim_id": "f35e89da-c4e6-457a-8d0d-2a176cad8ba6",
+      "result_id": "5253d005-947b-4b46-8613-b4b2b6c5d97b"
+    },
+    {
+      "claim_id": "b4cd249a-ebba-4ad9-8c3c-ad6a1037821f",
+      "result_id": "0428d70f-56c0-4018-827c-5e8095879286"
+    },
+    {
+      "claim_id": "3f17f656-0e8a-4dcb-bc7a-56303f6b035b",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "fc81329e-4cd6-4567-a315-0e1340416111",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "1c03e5fd-1ec1-4526-8842-b53f2062f573",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "834a31a7-9fe0-4cbc-a697-bc6c47c849a0",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "1b6b2e48-4f36-42c5-b758-2eb973168030",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "983cd183-9072-45f3-85e9-9ec36d0dc846",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "6aa81e2f-c585-4520-a1d0-8b7415b4f579",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "058b3c0d-bd6d-4295-b546-af538a55ccd6",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "1b8aa039-2a42-4a4a-bbb9-e5d9c20b808a",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "afc2c65a-c688-4492-aed1-7d97af332445",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "2bcfdf15-3ab8-4612-901c-d36e1a5fa941",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "a3ccb2f6-e81a-4890-93d5-8d6387d49ea8",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "c823496a-c970-4e9d-88f7-7b1c5fc67c81",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "3555a819-7908-4896-95b1-8789ecbc615a",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "3ba63ec9-250e-4ad8-924f-822398fd44ca",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "f3abd4ac-b344-474a-b93b-d3e946282f5d",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "c0bd9387-59c9-4069-8c6e-ad7694250cfc",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "97e0c4f3-a8db-499c-954f-2cbe66ec2c24",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "c975973a-2acd-4a62-b79c-613626ba0bc2",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "cc657334-cab2-481d-b8e4-20a05364d610",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "c93de376-e2f3-41bb-a8e9-9d5bb29b72f6",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "f116e7f8-47ee-495c-a6c9-18e6568188fa",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "c536145a-dd47-474b-91c7-fe52732bb46d",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "abcc7c91-65c1-4ada-8e1a-02e41e150748",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "6f094d04-b4e7-4d72-9737-529dd15043aa",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "8a2b6f9b-20a2-4447-8130-a4a449a3aae1",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "f8a01cd7-f18c-403d-aeef-2753c164c0f2",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "e975282e-4815-47cc-9a58-f776cc355e73",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "389805a0-ead0-4685-a2ad-ba464187748b",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "c1312e04-8b35-43c6-838a-12071df18639",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "8c2f201c-88bb-47b2-a563-abc2372ee2fd",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "e126e77f-a028-4bb1-8d76-35559ccb0278",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "f46a94cd-498f-4e7b-9ffc-28157f44b881",
+      "result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf"
+    },
+    {
+      "claim_id": "6e56aed4-cf2b-4940-91cd-541155a55d4d",
+      "result_id": "7eae9292-13ec-4cec-b1d8-7a019c4f5281"
+    },
+    {
+      "claim_id": "27722074-f830-4b6c-9b46-19f0cd21c80f",
+      "result_id": "7eae9292-13ec-4cec-b1d8-7a019c4f5281"
+    },
+    {
+      "claim_id": "8b7c2f08-d89b-4117-b604-ead7ffd60cca",
+      "result_id": "be9baf85-f526-47f4-aae2-4d88f317cde4"
+    },
+    {
+      "claim_id": "6dc34246-bceb-433e-9b54-d7d1e323e9b4",
+      "result_id": "be9baf85-f526-47f4-aae2-4d88f317cde4"
+    },
+    {
+      "claim_id": "c0f93953-1d4f-4c8d-a1df-a355be001870",
+      "result_id": "be9baf85-f526-47f4-aae2-4d88f317cde4"
+    },
+    {
+      "claim_id": "c42325b1-7c19-4f23-8b2c-1bf7d2f5477c",
+      "result_id": "be9baf85-f526-47f4-aae2-4d88f317cde4"
+    },
+    {
+      "claim_id": "0289f035-2cbf-46eb-b06a-079725a94664",
+      "result_id": "be9baf85-f526-47f4-aae2-4d88f317cde4"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "70233664-d22f-441f-8a77-05a9fad1c07b",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061",
+      "peer_result_id": "cf3be673-7a09-4ec8-b708-02f41cc3cd23",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluations agree on ISRIB's potency (C2, C17, C54). OpenEval notes acceptable Z' factor and IC50 measurements with controls, while peer reviewers praised the 'remarkable potency' and thorough functional characterization. Full agreement on compound potency claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "0cdc0a10-ca53-486b-a900-3b51dc6d4953",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "685ac07d-7476-48e0-a0bd-39e2c53ac1cc",
+      "peer_result_id": "e8052934-d3c2-482a-a399-44abe7d481bd",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both agree on ISRIB's specificity as ISR inhibitor. OpenEval cites Western blots and RT-PCR data (C18-C20) showing selective PERK pathway inhibition. Peer reviewers accepted the functional characterization showing ISRIB acts between phosphorylated eIF2\u03b1 and downstream targets, also acknowledging multi-kinase activity (C32-C33). Strong agreement on specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "018f6d72-d45e-4753-abf9-ed1c8d300517",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "8d5e7a17-6aaa-4d0d-982c-26a4b86a0a20",
+      "peer_result_id": "9a9da782-f06c-4795-816b-46f7922c6421",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both support mechanistic claims about ISRIB acting downstream of eIF2\u03b1 phosphorylation. OpenEval emphasizes converging evidence from phospho-eIF2\u03b1 measurements, metabolic labeling, and polysome analysis (C21-C26). Peer reviewers found functional characterization 'rather thorough' and accepted these mechanistic findings along with specificity controls (C27-C31).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "6c3adef1-502b-4cb3-b648-1f7633358cbc",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "21e4c8c1-e308-4db0-8b96-ba1c33fe0dcc",
+      "peer_result_id": "9a9da782-f06c-4795-816b-46f7922c6421",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "OpenEval supports specificity controls using phosphomimetic mutant and alternative inhibitors (C27-C31). Peer reviewers grouped these with broader mechanistic characterization and accepted the thorough functional documentation. Agreement on experimental rigor of specificity controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "2dd4d8cf-5b73-4c86-b044-c64bd022e69d",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "d7023ade-daa0-4630-8c71-17c88eca5fea",
+      "peer_result_id": "e8052934-d3c2-482a-a399-44abe7d481bd",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both agree ISRIB functions downstream of multiple eIF2\u03b1 kinases (C32-C33). OpenEval cites amino acid starvation and HRI activator experiments. Peer reviewers explicitly noted ISRIB 'interposes itself between phosphorylated eIF2\u03b1 and the target' without challenging multi-kinase activity. Full agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "70707b31-e569-4c3d-8041-569d05786167",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "f618222c-473b-4560-bce4-fc6998c1f15a",
+      "peer_result_id": "da9c2c44-7cd1-44de-9081-473a9157433c",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both support claims about ISRIB blocking ATF4-dependent gene induction (C35). OpenEval cites qRT-PCR data showing inhibition of CHOP and GADD34. Peer reviewers accepted this as part of thorough functional characterization without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "56621e03-800a-4792-b7d1-4b38ac690512",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa",
+      "peer_result_id": "da9c2c44-7cd1-44de-9081-473a9157433c",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both support cellular stress response findings (C36-C41, C55-C56). OpenEval emphasizes converging evidence from survival assays, caspase activation, and UPR sensor imaging. Peer reviewers implicitly endorsed these findings through positive assessment of functional work. Strong agreement on cell viability and stress response data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "868bed1d-ad3b-4041-ade7-8c1961c9d480",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "8e0c1f2f-b975-4e86-beaf-808b45828bb2",
+      "peer_result_id": "ee88a973-dcd4-43ca-a326-dbc8fb1b64d3",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on BBB penetration and lack of toxicity (C57). OpenEval finds pharmacokinetic data and behavioral studies sufficient to support CNS penetration and tolerability. Peer reviewers explicitly requested additional evidence of CNS penetration (CSF analysis or functional ISR measurements), indicating existing data was insufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "4373c933-f3af-4d8a-9bec-3149f36284d9",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "dec50c8f-ceb1-4dbf-bdf4-bfa34d79c24a",
+      "peer_result_id": "56902965-2385-46e1-8789-25c79bab9cac",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on spatial learning enhancement claims (C45-C47). OpenEval finds Morris water maze data with multiple convergent measures sufficient. Peer reviewers were 'impressed' but raised concerns about CNS penetration evidence and differential treatment timing effects on consolidation conclusions, indicating uncertainty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "981fc099-aac4-4943-8916-ebdfb0e49f68",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "772ffd0c-cc6a-418f-a2a2-0642d0d001f8",
+      "peer_result_id": "56902965-2385-46e1-8789-25c79bab9cac",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on temporal selectivity of memory enhancement (C48-C50). OpenEval supports selective long-term memory effects as evidence for consolidation specificity. Peer reviewers questioned how differential treatment timing (chronic vs. post-training) affects consolidation conclusions, indicating uncertainty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "3270b606-944d-4256-a21f-b418e60352ce",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "5690acdb-d837-4c33-bcb9-6760e07fe655",
+      "peer_result_id": "56902965-2385-46e1-8789-25c79bab9cac",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on fear conditioning memory enhancement (C51-C52). OpenEval finds evidence from amygdala-dependent memory with local administration convincing. Peer reviewers' concerns about CNS penetration and treatment timing interpretation extend to these claims, indicating uncertainty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "1b27130e-c544-4080-8aa1-9dcfb4c0962a",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712",
+      "peer_result_id": "56902965-2385-46e1-8789-25c79bab9cac",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on mechanistic interpretation that ISR limits memory consolidation (C4, C5, C44, C53, C58). OpenEval finds converging evidence across paradigms and consistency with genetic models sufficient. Peer reviewers requested clarification on brain vs. peripheral action and treatment timing effects, indicating uncertainty about the mechanistic conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "a0b7460b-8363-4eac-891e-f1b30c63c744",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "1b3c52c4-925e-475a-ab06-32f88ecef712",
+      "peer_result_id": "0428d70f-56c0-4018-827c-5e8095879286",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Partial overlap on C5 (ISR limits memory consolidation). OpenEval supports this interpretation based on behavioral data convergence. Peer reviewers' request to clarify brain vs. peripheral action suggests uncertainty about whether ISR specifically limits memory consolidation in the brain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "0c673404-4aa1-4f5e-84ae-b9303a0108fb",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "363b42cd-e412-4a94-a84b-b08220b4b1ca",
+      "peer_result_id": "5253d005-947b-4b46-8613-b4b2b6c5d97b",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Agreement on uncertainty about molecular mechanism (C60, C62, C63). OpenEval notes claims are explicitly speculative with no direct target evidence. Peer reviewers explicitly stated molecular detail doesn't match functional characterization and requested co-IP experiments and phosphorylation analysis. Both agree mechanism remains uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "0afe3f21-fc53-48f9-91e1-30ef650c79c9",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "109c0792-b038-475c-ab71-cbb0b1642bc0",
+      "peer_result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on cancer therapeutic potential (C66-C70). OpenEval considers therapeutic claims speculative without experimental cancer model data, despite mechanistic rationale. Peer reviewers accepted these discussion points without challenge, implicitly supporting the potential applications. OpenEval more conservative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "e092f878-42a9-4da4-a626-7a85fa1444d5",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "d1ec3d0a-55bd-4da3-9096-f753b5e9c91f",
+      "peer_result_id": "be9baf85-f526-47f4-aae2-4d88f317cde4",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on therapeutic speculation and evolutionary interpretation (C79-C81, C83-C84). OpenEval considers extrapolation to disease treatment and long-term safety speculative beyond experimental evidence. Peer reviewers accepted these discussion points, stating 'there is reason to hope that ISRIB will be applied to much further research.' OpenEval more conservative on speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "d341c7bf-c551-4430-9c38-de459f54c180",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "c40bfc5d-d026-4fe3-99b2-abc6d4b5b061",
+      "peer_result_id": "7eae9292-13ec-4cec-b1d8-7a019c4f5281",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Minor overlap on C16 (screening metrics). Both evaluations support the screening methodology as part of thorough functional characterization. No disagreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "759f4914-2bfe-409b-adbc-237b9eb278c7",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "f618222c-473b-4560-bce4-fc6998c1f15a",
+      "peer_result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Minor overlap on C34 (established knowledge about ATF4-dependent gene induction). Both accept this as established background information. No disagreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    },
+    {
+      "id": "73ab9bae-18a4-4e8f-84af-7d376855d30b",
+      "submission_id": "d1ede830-4007-4d3d-91ef-0dd38d061e65",
+      "openeval_result_id": "61c2e2ee-f4aa-4947-bea3-c54cf9378aaa",
+      "peer_result_id": "a344f71f-690e-4997-8c6a-c8f81704d2bf",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Minor overlap on C36 (established knowledge about ER stress and apoptosis). Both accept this as established background. No disagreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:01.216484Z"
+    }
+  ]
+}

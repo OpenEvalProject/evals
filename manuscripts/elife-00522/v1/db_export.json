@@ -1,0 +1,1661 @@
+{
+  "submission": {
+    "id": "955dac44-d26f-4035-a079-01c19720f9fd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:53:06.754085Z",
+    "updated_at": "2025-10-21T22:53:06.754085Z"
+  },
+  "content": [
+    {
+      "id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "content_type": "manuscript",
+      "content_text": "# Cellular resolution models for even skipped regulation in the entire Drosophila embryo\n\n## Authors\n\n- Garth R Ilsley<sup>1</sup> \u2020\n- Jasmin Fisher<sup>3</sup>\n- Rolf Apweiler<sup>1</sup>\n- Angela H DePace<sup>5</sup>\n- Nicholas M Luscombe<sup>1</sup>\n\n### Affiliations\n\n1. European Molecular Biology Laboratory, European Bioinformatics Institute, Wellcome Trust Genome Campus Cambridge United Kingdom\n2. Okinawa Institute of Science and Technology Graduate University Okinawa Japan\n3. Microsoft Research Cambridge Cambridge United Kingdom\n4. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n5. Department of Systems Biology Harvard Medical School Boston United States\n6. UCL Genetics Institute, Department of Genetics, Evolution, and Environment University College London London United Kingdom\n7. London Research Institute, Cancer Research UK London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00522.001 Transcriptional control ensures genes are expressed in the right amounts at the correct times and locations. Understanding quantitatively how regulatory systems convert input signals to appropriate outputs remains a challenge. For the first time, we successfully model even skipped ( eve ) stripes 2 and 3+7 across the entire fly embryo at cellular resolution. A straightforward statistical relationship explains how transcription factor (TF) concentrations define eve \u2019s complex spatial expression, without the need for pairwise interactions or cross-regulatory dynamics. Simulating thousands of TF combinations, we recover known regulators and suggest new candidates. Finally, we accurately predict the intricate effects of perturbations including TF mutations and misexpression. Our approach imposes minimal assumptions about regulatory function; instead we infer underlying mechanisms from models that best fit the data, like the lack of TF-specific thresholds and the positional value of homotypic interactions. Our study provides a general and quantitative method for elucidating the regulation of diverse biological systems. DOI: http://dx.doi.org/10.7554/eLife.00522.001\n\n## Introduction\n\nA detailed knowledge of transcriptional control will have profound consequences for our understanding of myriad biological processes, including development, homeostasis, and evolution of new phenotypes. To this end, through a combination of genomic, genetic, and molecular experiments, the field continues to accumulate considerable information documenting components of regulatory systems and regulator-target interactions (Gerstein et al., 2010; The modENCODE Consortium, 2010; The ENCODE Project Consortium, 2012). At present however, many of these descriptions are qualitative. A major goal going forward is to interpret these data in a quantitative manner (Wilczynski and Furlong, 2010): how do regulators and regulatory interactions convert input signals to the appropriate output expression pattern? In general, answering these questions remains a significant challenge. The experiments needed to probe regulatory functions in detail are technically demanding; moreover, many systems involve multiple layers of control that cannot be investigated within a single experimental set-up. Theoretical models can help advance experimental investigations by providing a framework for deriving general principles and developing testable hypotheses (Reeves et al., 2006; Tomlin and Axelrod, 2007; Lewis, 2008; Oates et al., 2009; Davidson, 2010). An effective model should be able to define and predict expression accurately by describing how and by how much regulators influence target gene expression (Hasty et al., 2001; Segal and Widom, 2009).\n\nTranscription in animals is controlled by interaction among transcription factors (TFs), enhancers, core promoters, silencers, insulators, and chromatin structure (Lemon and Tjian, 2000; Arnosti, 2003; Levine, 2010; Ohler and Wassarman, 2010; Dean, 2011). It is thought that core promoter elements and chromatin structure provide general competence for transcription at transcription start sites (Lenhard et al., 2012), whereas more distant enhancers up-regulate expression of genes under specific conditions (Bulger and Groudine, 2011; Ong and Corces, 2011). A single gene can be regulated by multiple enhancers, each directing a portion of the overall gene expression pattern in space and time. Enhancers operate by binding TFs, which in turn recruit regulatory co-factors and/or interact directly with the core promoter where RNA polymerase acts (Spitz and Furlong, 2012). A comprehensive model of transcriptional regulation would therefore include many factors, such as regulatory DNA sequence, DNA conformation, TF concentrations and nucleosome position among others (Segal and Widom, 2009). However, many of the parameters in such a model are currently impossible to measure. In the absence of such measurements, a partial yet predictive model based on available data is still valuable.\n\nHere, we propose models of transcriptional control that are highly predictive of target gene expression given only TF concentrations at cellular resolution. Our goal is to make few assumptions about the underlying molecular mechanism. Instead, by generating models that predict experimental measurements as accurately as possible, we infer probable biological mechanisms and insights suggested by the parameters of the models. To achieve this, we focus on modeling the functional link between TF inputs and the resulting output (i.e., the \u2018regulatory input function\u2018). These models are specific to individual enhancers: they capture how genomic loci interpret TF concentrations to control the output expression level of their target genes. Though multiple previous modeling studies have explicitly included protein\u2013DNA interactions (e.g., in Drosophila, see He et al., 2010; Janssens et al., 2006; Junion et al., 2012; Kazemian et al., 2010; Segal et al., 2008; Zinzen et al., 2009), here, we choose to model the relationship between inputs and outputs directly as this offers several advantages. First and most importantly, this type of model encapsulates numerous relevant levels of biophysical interactions (i.e., TF-DNA, TF-TF, enhancer-promoter etc). Second, it enables us evaluate the utility of higher-order interactions between TFs, propose potential regulators and consider alternative hypotheses of experimental results. Third, in the context of developmental biology, it allows us to explore the minimal information required to define positional information in the early embryo. Finally, focusing on input and output measurements means that the approach is applicable to relatively uncharacterized systems, for instance where enhancer regions have not yet been identified, or in assessing the conservation of regulatory input functions between species (Wunderlich et al., 2012).\n\nWe develop and test our models in the context of the well-studied even skipped (eve) enhancers in order to demonstrate their accuracy and utility. eve is expressed in a symmetrical pattern of seven stripes that subdivide the embryo along the anteroposterior axis (N\u00fcsslein-Volhard and Wieschaus, 1980). Each stripe is only a few nuclei wide and any regulatory input function of an enhancer must define at least two borders at a high level of precision. A number of well-characterized enhancers direct expression of the seven eve stripes individually or in pairs (Goto et al., 1989; Harding et al., 1989; Fujioka et al., 1999). Here, we focus on the enhancers eve 2 and eve 3+7, which have been shown to control stripe 2 and stripes 3 and 7 respectively (Goto et al., 1989; Harding et al., 1989; Stanojevic et al., 1991; Small et al., 1992, 1996). Many of the input TFs and their roles in regulating eve expression have been defined; however, there remain unexplained properties underlying their regulation. An advantage of modeling eve is that we can use the available information as independent validations of our ability to recover known regulators and predict the outcome of regulatory perturbations, while also producing new insights. It is notable that though there has been some success in simulating the simpler gap gene expression pattern and in predicting eve expression on a portion of the anteroposterior axis, modeling pair-rule expression accurately across the whole embryo has remained a significant challenge (Jaeger et al., 2004; Janssens et al., 2006; Papatsenko and Levine, 2008; Segal et al., 2008; Kazemian et al., 2010; Kim et al., 2013).\n\nTo fit regulatory input functions, we require accurate measurements of expression levels for both the regulating TFs and eve. The Virtual Embryo from the Berkeley Drosophila Transcription Network Project provides the best available data for this purpose (Fowlkes et al., 2008). It is a cellular resolution, spatiotemporal atlas of gene expression and morphology for a whole Drosophila melanogaster blastoderm embryo. The dataset contains the three-dimensional coordinates for 6078 nuclei, along with mRNA expression measurements of 95 different genes at six time points during the 50 min leading to gastrulation: these genes include critical TFs that direct patterning in the early Drosophila embryo.\n\nUsing our modeling framework, we (i) predict expression patterns with accuracy and explanatory power at cellular resolution across the whole embryo; (ii) recover previously described regulatory relationships and test whether they provide sufficient positional information to define the resulting expression pattern; (iii) propose potential new regulatory relationships by comparing alternative models; and (iv) predict expression patterns under perturbation of input TFs, capturing the outcome of knockdown and misexpression experiments. Given the high level of accuracy of our models, we conclude with observations regarding mechanism and principles of enhancer function.\n\n## Results\n\n## Approach of this study\n\nOur strategy is to find the logistic regression coefficients that most accurately describe the relationship between measured regulator concentrations and specific stripes of\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig1-v1.jpg)\n\n**Figure 1.:** eve expression.(A) Logistic regression is used to calculate the probability p that ieve is ON in a given nucleus i, given TF concentrations. A logistic model linearly combines the values of independent variables (in this case, the concentrations, x, of regulators 1 to kik) to produce a prediction; the predictor, \u03b7, is then transformed by the logistic function to give the probability, ip, of ieve being ON. The weight parameters \u03b2 are optimized to provide the best fit with the training data: positive weights indicate activators and negative weights indicate repressors. (kB) Schematic representation of the data preparation, model training and prediction steps using eve stripe 2 as an example. The plots represent how logistic regression operates; the lateral perspectives of the embryo show the Virtual Embryo and processed expression data for eve and four regulators (Bcd, Hb, Kr, and Gt). In Step 1, eve\u2019s expression is discretized whereas TF concentrations are retained as continuous values. Each nucleus corresponds to a data point. In Step 2, the logistic model is trained to classify whether eve is ON or OFF using all nuclei in stripe 2, and all OFF nuclei in the embryo. In Step 3, the trained model is used to predict eve expression in every nucleus of the entire embryo using the concentrations of the relevant regulators within them (shown in green for activators, and purple for repressors). In Step 4, the effects of perturbations are predicted by adjusting the concentration of the regulator under consideration (in this case, Hb), but without changing any model parameters.DOI:http://dx.doi.org/10.7554/eLife.00522.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** eve across the anteroposterior axis.Each strip shows the expression of eve in a narrow lateral band (10 \u03bcm either side of the lateral midline) along the anteroposterior (A-P) axis for each time point (1\u20136) in the Virtual Embryo. The interval between the time points is approximately 10 min. The horizontal line is the threshold of 0.2 used in training the models. The rug plot indicates which nuclei are considered within the stripes according to this threshold.DOI:http://dx.doi.org/10.7554/eLife.00522.004\n\n## A classification approach for modeling eve expression\n\n## Preparing the data\n\nWe trained our models on a single time point: this has the advantage of eliminating uncertainties regarding nuclei assignments across time points in the Virtual Embryo dataset, yet still provides sufficient data for fitting. All models were trained using the third time point corresponding to \u223c30 min before gastrulation, when according to the Virtual Embryo data, the borders are sharpening and the stripes are not moving dramatically (Figure 1\u2014figure supplement 1). This gave us confidence that eve is transcriptionally active in the relevant nuclei. At this time point, eve\u2019s expression changes from high to low over only a few nuclei across all seven stripes along the anteroposterior axis. Thus we categorized each nucleus as ON or OFF depending on whether eve is above or below a value of 0.2 since this defines the stripe borders reasonably (Figure 1\u2014figure supplement 1). The Virtual Embryo dataset contains expression measurements normalized to a range of 0 to just over 1 across the entire embryo and time points; thus 0.2 corresponds to \u223c20% of the maximal expression.\n\nWe made use of mRNA measurements for 34 regulatory genes and protein measurements for an additional four genes (bicoid, hunchback, Kruppel and giant). Since our model does not require absolute concentration measurements, mRNA expression is a reasonable proxy for protein assuming that the spatial distribution of the two is similar. We distinguish between protein and mRNA measurements by indicating the regulator name in italics for mRNA (e.g., gt) or normal case for protein (e.g., Gt). In contrast to eve, the expression profiles of these regulators were retained as continuous measurements because many of them are expressed in a graded fashion. Four pair-rule genes (fushi tarazu, odd skipped, hairy and paired) that have similar stripe patterns to eve were excluded from the data set; although some of them might help modulate the expression of eve, they were removed so that we could assess whether eve\u2019s complex spatial pattern could be derived directly from simpler patterns of the regulators upstream of the pair-rule genes. Moreover, eve expression looks qualitatively normal in these TF mutants (Schroeder et al., 2011).\n\n## Modeling eve expression using logistic regression\n\nWe selected logistic regression for modeling eve expression because it provides a framework for linking continuous input variables (i.e., the regulator concentrations) to a binary output (i.e., eve\u2019s expression state). Like linear regression, a logistic model linearly combines the values of the independent variables to produce a prediction; but the linear predictor is further transformed by the logistic function to give the probability, p, of eve being ON (Figure 1 for a schematic of \u2018Methods\u2019). As in any regression model, the weight parameters are optimized so that the output shows the greatest agreement with the training data. The weight assigned to each TF indicates its regulatory role, with positive weights indicating activators and negative weights indicating repressors. Importantly, since each regulator in the linear combination has independent weight parameters, the model needs only relative concentration measurements. Models were trained for classification using the nuclei of the stripe(s) under consideration as well as all OFF nuclei in the embryo. It is important to note that although this can be viewed as a training step, the ability of the model to classify at this stage is of direct interest to us: do the regulators contain sufficient positional information to explain eve expression in the given stripe(s)? We then use the model to predict eve expression in every nucleus across the entire embryo using the concentrations of the relevant regulators within them. This step reveals the model\u2019s applicability across the whole embryo, rather than just for the nuclei that were used for training.\n\n## Linear logistic modeling accurately recapitulates eve 2 expression\n\nFirst we focused on the expression of the second stripe of eve, as it is directed by a very well-characterized enhancer, eve 2. Through detailed molecular analysis, it is known that eve stripe 2 is controlled by the gap genes (Frasch and Levine, 1987; Stanojevic et al., 1991; Small et al., 1992), a class of TFs that are present in broad regions of the early embryo. In the generally accepted minimal mechanism, two activators Hunchback (Hb) and Bicoid (Bcd) enable broad permissive eve expression in the region of stripe 2, while two repressors Giant (Gt) and Kruppel (Kr) define the anterior and posterior borders respectively by suppressing eve outside the stripe.\n\n## Modeling with known regulators recapitulates eve 2 expression\n\nWe trained the logistic model to define the expression of\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig2-v1.jpg)\n\n**Figure 2.:** eve 2 expression.(A) Lateral perspectives of the Drosophila embryo depicting the contribution of four regulators (Bcd, Hb, Gt, and Kr) to the model output. Embryos are drawn with the anterior (A) to the left and posterior (P) to the right, along with regulator names and corresponding coefficients in the model. Each nucleus is shaded to indicate the level of contribution by regulators, with darker colors signifying stronger effects (in this case, due to higher regulator concentrations): green represents a positive, activating effect and purple a negative, repressive one. Inputs are continuous, but drawn using a discrete color scale for simplicity. (B) Lateral and 3D perspectives of the embryo show the model prediction of eve stripe 2 expression. Each nucleus is colored from light to dark for low to high probability of eve being ON: within stripes the color scale is from white to black and outside the stripes it is on a red scale, with peach for values below 0.15. (C) A ribbon plot showing the probability of eve expression (y-axis) for nuclei within 10 \u03bcm of the lateral midline along the anteroposterior axis (x-axis). The plot demonstrates that the stripe borders are sharply defined. It also allows easy comparisons with other models that are generally performed in one dimension. (D) For regulator discovery, for every possible pair of regulators, we determined the best-scoring model of four regulators containing the pair. The 38 regulators in the dataset are shown on the x- and y-axes of the heat map, and the highest scores for every pair are depicted in the intersecting cell on a color scale from light (minimum score in the heat map) to dark (highest score in the heat map). Regulators making consistently informative contributions to models can be identified by the dark bands running across the heat map. Using linear logistic models, Gt, Hb and Bcd can be clearly seen to be informative regulators (highlighted in black). (E\u2013G) Prediction made using a quadratic logistic model, in which Bcd is assigned a concentration-dependent dual regulatory activity: it is an activator (green) at low concentrations in the region of stripe 2, and a repressor (purple) at higher concentrations everywhere else. The model outputs a better prediction for stripe 2 expression as shown in Table 1. Most importantly, it reconciles Bcd\u2019s apparently paradoxical behavior compared with the literature (Small et al., 1992; Andrioli et al., 2002). (H) Regulator discovery using quadratic models identifies Gt, Hb, Bcd, and Kr as informative regulators (highlighted in black).DOI:http://dx.doi.org/10.7554/eLife.00522.005\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Regulator inputs and model output are shown as in Figure 2. (B) and (C) The stripe is still sharply defined when the anteriormost region is excluded. (A) Bcd is activating in stripe 2, but more strongly in the anterior.DOI:http://dx.doi.org/10.7554/eLife.00522.006\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** eve 2 linear and quadratic models (DV, AP and cross-validation).The linear and quadratic models are trained as in the main text, but with the dataset initially restricted. DV is restricted to 20 \u03bcm on either side of the lateral mid-line. AP includes only the stripe and its immediately neighboring nuclei. Cross-validation is the average of 100 predictions each trained on a random subset of 50 nuclei (out of 2936). (Max) makes use of all 38 candidate regulators, but with the same training data as the models described in the main text.DOI:http://dx.doi.org/10.7554/eLife.00522.007\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** A logistic model for Hb, Bcd, Kr, and Gt is fit using training data that is selected as described in the main text for each stripe (1\u20137, right axis). The predictions (left axis) for each nucleus are plotted along the whole anteroposterior axis, but for clarity, only the predictions for the nuclei within 10 \u03bcm either side of the lateral midline are shown.DOI:http://dx.doi.org/10.7554/eLife.00522.008\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** A logistic model for Hb, Bcd, Kr and Gt, including a quadratic term for Bcd, is fit using training data that is selected as described in the main text for each stripe (1\u20137, right axis). The predictions (left axis) for each nucleus are plotted along the whole anteroposterior axis, but for clarity, only the predictions for the nucleus within 10 \u03bcm either side of the lateral midline are shown.DOI:http://dx.doi.org/10.7554/eLife.00522.009\n\nTo the best of our knowledge, this the first time that eve 2\u2019s expression has been predicted so accurately across the entire embryo including the anteriormost region. Most nuclei inside the stripe are correctly classified as having a high probability of being ON, and there is minimal \u2018over-spill\u2019 either side of the stripe (Figure 2A\u2013C and Table 1). The model defines eve expression around the entire circumference of the embryo, following the dorsal-ventral curvature of the stripe: this demonstrates that the four standard regulators of eve 2 already encode this information, implying that dorsoventral factors are not required to provide this information directly to eve 2. Finally, it is notable that the model predicts a small amount of expression near stripe 7; ectopic expression of stripe 7 is sometimes observed in transgenic reporters driven by eve 2 enhancers (Small et al., 1992; Janssens et al., 2006; Hare et al., 2008).10.7554/eLife.00522.010Table 1.Measurements quantifying the accuracy of eve 2 predictionsDOI:http://dx.doi.org/10.7554/eLife.00522.010ModelIn the stripe (%)Immediate neighbors (%)2nd degree neighbors (%)eve 2 linear logistic86232eve 2 quadratic logistic93212The table shows the percentage of nuclei with predicted eve expression (p>0.5). This is a stringent measure of the accuracy of classification, and is particularly useful for assessing the accuracy of the stripe borders. Nuclei with eve expression>0.2 are defined as those \u2018in the stripe\u2019; neighboring nuclei are outside this thresholded region, either immediately adjacent to it, or two nuclei away. A perfect prediction should identify all stripe 2 nuclei as having a high probability of ON with the probability of being ON dropping off rapidly further from the stripe. Though both linear and quadratic models output excellent predictions, the latter provides a slightly more accurate fit to the data.\n\nIt is worth noting here that the model\u2019s performance is most reliably assessed by visually comparing the predicted and actual distributions of eve expression as in Figure 2; this enables one to evaluate thousands of individual predictions, as well as the overall shape of the prediction, which are not easily captured in a single statistical measure. Nonetheless, Table 1 quantifies the accuracy of the model\u2014particularly in defining the borders of the stripe\u2014by calculating the percentage of nuclei with a high fitted probability of eve being ON (threshold p>0.5; see \u2018Methods\u2019 for description of p). Almost all nuclei within the stripe are correctly identified as ON, and the percentage of nuclei having a high fitted probability quickly drops off further from the stripe.\n\n## The model performs consistently across different subsets of the data\n\nWe were interested in the extent to which our model fit is dependent on the subset of the embryo chosen as training data (Figure 2\u2014figure supplement 2). We found that the model performs well in a cross-validation test in which we averaged 100 predictions with the training data restricted to 50 randomly selected nuclei; that is, less than 2% of the training data. Conversely, we also assessed whether the model is overly flexible in being able to train and predict the expression of any arbitrary stripe in the embryo using the above four regulators. We found this is not the case, suggesting that the positional information provided by these regulators is specific for the eve 2 enhancer and that our model interprets this information accurately (Figure 2\u2014figure supplement 3).\n\n## Regulator discovery ascertains the known regulators\n\nHaving successfully applied the model using known regulators, we next developed a method to identify a parsimonious set of regulators from the dataset informative for the target enhancer\u2019s expression. Such techniques are broadly applicable in discovering potential regulators of uncharacterized enhancers, and therefore useful in producing testable hypotheses. We tested a stepwise selection process, but found that it generally includes more regulators than necessary for a good visual fit (e.g., a stepwise selection procedure for eve 2 with the Bayesian information criterion finds 11 regulators). The stopping point (i.e., the penalty for adding an extra parameter) is effectively arbitrary in this case, or at least difficult to determine a priori in a justifiable manner. Additionally, stepwise selection does not consider all models exhaustively.\n\nInstead, since we are particularly interested in identifying parsimonious models that can explain eve expression, and logistic models are fast to fit, we took the approach of fitting all possible models of four regulators out of the possible 38 in the dataset (73,815 models) and used the log likelihood of each fitted model as its score (or equivalently here, the Akaike information criterion). Gratifyingly, the best-scoring model comprises the known regulators Hb, Bcd, Gt, and Kr.\n\nTo make use of the scores more generally, we developed a method that summarizes the scores for all 73,815 predictions and highlights regulators that work well together (Figure 2D). For each possible pair of regulators (the fixed pair), we determined the best-scoring model of four regulators containing the pair. The two regulators of the fixed pair are shown on the axes on the heat map, with the highest score for the pair depicted in the intersecting cell on a color scale from light (the minimum score on the heat map) to dark (the maximum score). Dark bands crossing the heat map highlight individual regulators that consistently make informative contributions to stripe 2 expression. Hence, it is clear that Bcd, Hb, and Gt are key regulators. Although Kr is actually in the top-scoring model, the heat map does not show it as consistently informative.\n\n## A quadratic logistic model suggests a dual regulatory role for Bcd\n\nThe linear model successfully recapitulates stripe 2 expression; however, it identifies Bcd as a repressor, whereas most existing literature defines the TF as an activator. Despite the apparent consensus, Bcd\u2019s function is not straightforward. The need for Bcd-binding sites for successful eve expression suggests an activating function (Small et al., 1992); but this does not explain why the enhancer is inactive in the anteriormost region of the embryo despite Bcd being present at high concentrations and the known repressors Gt and Kr having low concentrations (Figure 2A). Our linear models reflect this apparent paradox: Bcd is highlighted as one of the most important TFs during regulator discovery in spite of consistently having a negative coefficient, but a model trained by excluding the anterior region of the embryo assigns Bcd an activating function (Figure 2\u2014figure supplement 1). These observations strongly suggest that Bcd\u2014as both a repressor and activator\u2014provides useful positional information to eve.\n\nWe asked whether these two functions could be reconciled if Bcd\u2019s regulatory effect were dependent on its concentration, either directly, or mediated through other factors or post-translational modifications (Janody et al., 2000, 2001; Andrioli et al., 2002). This is readily modeled by adding a single parameter: a quadratic term for Bcd (Figure 2E\u2013G). The result is clear: the modified model retains a repressive function for Bcd in the anterior of the embryo where it is present in high concentrations, but enables an activating function in the region of stripe 2 where it has lower concentrations (Figure 2E). The modification doesn\u2019t lead to over-fitting on small training subsets and in fact improves the model\u2019s ability to generalize to the whole embryo from an anteroposteriorly restricted training subset (Figure 2\u2014figure supplements 2 and 4). In addition, regulator discovery now identifies all four TFs as important, with a more consistently informative role for Kr than in the simple linear model (Figure 2H).\n\n## Independent experiments validate eve 2 model predictions\n\nWe next tested whether our model is predictive of experimental perturbations. We considered experiments that test the role of eve 2 regulators by either knocking down the input TF (Stanojevic et al., 1991), or by mutating binding sites for that TF in the eve 2 enhancer (Arnosti et al., 1996). To simulate these perturbations, we set the concentrations of Bcd or Hb to zero without further adjustment of the coefficients. Strictly speaking, this models the direct effect of the perturbation and is akin to the removal of the relevant binding sites from the enhancer.\n\nThe results of these perturbations are shown in\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig3-v1.jpg)\n\n**Figure 3.:** eve 2 expression under perturbation of input TFs.The effects of regulatory perturbations on stripe 2 expression are predicted by altering regulator concentrations but keeping all the model coefficients unchanged; for TF deletion or binding site mutants, this involves setting the relevant regulator\u2019s concentrations to 0. Predictions are made for perturbations using the linear and quadratic models. Comparisons to experiments provide robust, independent validations of model predictions. Loss of (A) gt or (B) Kr causes eve expression to extend towards the anterior and posterior of the embryo respectively, in excellent agreement with experimental evidence. (C) For the bcd mutant, the linear model predicts expression at the anterior of the embryo, something that is not observed in experiments. In contrast, the quadratic model does not suffer from this. (D) Perturbing hb leads to complete loss of eve stripe 2 for both models. The better agreement between predictions and experimental evidence suggests that the quadratic is a more plausible model of eve 2 regulation.In situ images in panels 1, 2, and 6 are reproduced from Figure 4B\u2013C and 6C, Small et al. (1992), The EMBO Journal; Nature Publishing Group has granted permission to reproduce these images under the terms of the Creative Commons Attribution 3.0 Unported License (CC BY 3.0).DOI:http://dx.doi.org/10.7554/eLife.00522.011\n\nBoth models predict the observed response to binding site mutations: the expansions of stripe 2 in the correct directions and extent along the length of the embryo. The models demonstrate that the extent of posterior extension in the Kr mutant is restricted because of decreasing activator concentrations (Figure 3B). For the anterior extension in the Gt mutant, the restriction requires a repressor since activator concentrations remain high to the end of the embryo (Figure 3A; Andrioli et al., 2002). Bcd can provide this repression in both linear and quadratic models: however, only the quadratic can reconcile this with Bcd\u2019s known activating function. For the linear model to work with a Bcd activator, one would need a fifth regulator as an anterior repressor. Indeed, multiple studies have searched for a repressor in this region, and multiple candidates have been identified though none have been conclusive (Bella\u00efche et al., 1996; Janody et al., 2000; Andrioli et al., 2002; Zhao et al., 2002; Singh et al., 2005).\n\n## Models successfully predict eve 3+7 expression\n\neve stripes 3 and 7 are regulated together by a single enhancer (Small et al., 1996; Clyde et al., 2003; Struffi et al., 2011). Such an arrangement requires appropriate TF concentrations for eve activation to be present in nuclei separated by some distance. We tested whether our modeling framework can contend with the challenge of specifying two extra stripe borders using the available regulator concentrations.\n\n## A combination of modeling and regulator discovery suggests two plausible models\n\nWe first fit our models using only the known regulators of eve stripes 3 and 7, Hb and Kni. Kni is thought to repress the region between the stripes and Hb is thought to repress in the anterior and posterior regions outside the stripes (Clyde et al., 2003). The measured concentrations of Hb (protein) and kni (mRNA) alone are not sufficient for our models of stripe 3 and 7 expression; in particular, the concentration of Hb is too low to repress expression to the posterior of stripe 7 (Figure 4\u2014figure supplement 1).\n\nUsing regulator discovery (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-v1.jpg)\n\n**Figure 4.:** eve 3+7 expression.Regulator inputs and model output are shown as in Figure 2. (A\u2013C) The linear model including Hb, kni, tll, and Gt; (D\u2013F) the quadratic model comprises Hb, kni, and tll, with a quadratic term for Hb as a concentration-dependent dual regulator. Both models clearly define the two stripes, though the midline ribbon plots show that the quadratic model defines the sharpest borders. The initial predictions therefore suggest that the quadratic model provides the best output.DOI:http://dx.doi.org/10.7554/eLife.00522.012\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** kni are not sufficient for a good model fit.Regulator inputs and model output are shown as in Figure 2. (A\u2013C) The linear logistic model with only Hb and kni does not repress expression to the posterior of stripe 7.DOI:http://dx.doi.org/10.7554/eLife.00522.013\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** kni and tll does not have sharp stripe borders.Regulator inputs and model output are shown as in Figure 2. (A\u2013C) The linear logistic model with Hb, kni and tll does not produce as sharp borders as the models in Figure 4.DOI:http://dx.doi.org/10.7554/eLife.00522.014\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** eve 3+7 linear and quadratic models.(Stripe 3, Stripe 7, DV, AP and Cross-validation) The linear and quadratic models are trained as in the main text, but with the dataset initially restricted. Stripe 3 is trained using stripe 3 and the nuclei that are outside of the stripes (OFF). Stripe 7 is trained using stripe 7 and the nuclei that are outside of the stripes (OFF). DV is restricted to 20 \u03bcm on either side of the lateral mid-line. AP includes only the stripes and their immediately neighboring nuclei. Cross-validation is the average of 100 predictions each trained on a random subset of 50 nuclei (out of 3481). (Max) makes use of all 38 candidate regulators, but with the same training data as the models described in the main text.DOI:http://dx.doi.org/10.7554/eLife.00522.015\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** A logistic model for Hb, kni, tll, and Gt is fit using training data that is selected as described in the main text for each pair of stripes excluding stripe 1 (right axis). The predictions (left axis) for each nucleus are plotted along the whole anteroposterior axis, but for clarity, only the predictions for the nuclei within 10 \u03bcm either side of the lateral midline are shown.DOI:http://dx.doi.org/10.7554/eLife.00522.016\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** A logistic model for Hb, kni, and tll, including a quadratic term for Hb, is fit using training data that is selected as described in the main text for each pair of stripes excluding stripe 1 (right axis). The predictions (left axis) for each nucleus are plotted along the whole anteroposterior axis, but for clarity, only the predictions for the nuclei within 10 \u03bcm either side of the lateral midline are shown.DOI:http://dx.doi.org/10.7554/eLife.00522.017\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** eve 3+7.Regulatory discovery is as shown in Figure 2D. For every possible pair of regulators, we determined the best-scoring model of four regulators containing the pair. The 38 regulators in the dataset are shown on the x- and y-axes of the heat map, and the highest scores for every pair are depicted in the intersecting cell on a color scale from light (minimum score in the heat map) to dark (highest score in the heat map). Regulators making consistently informative contributions to models can be identified by the dark bands running across the heat map. Here, Gt, kni, and tll can be seen to be informative regulators.DOI:http://dx.doi.org/10.7554/eLife.00522.018\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** eve 3+7.Regulatory discovery is as shown in Figure 2H. For every possible pair of regulators, we determined the best-scoring model of four regulators containing the pair. The 38 regulators in the dataset are shown on the x- and y-axes of the heat map, and the highest scores for every pair are depicted in the intersecting cell on a color scale from light (minimum score in the heat map) to dark (highest score in the heat map). Regulators making consistently informative contributions to models can be identified by the dark bands running across the heat map. Here, Hb, kni, Kr, and tll can be seen to be informative regulators.DOI:http://dx.doi.org/10.7554/eLife.00522.019\n\n## There are reasons to favor the quadratic model\n\nWe prefer the quadratic model over the linear for a variety of reasons. First, it is simpler: the quadratic requires only three regulators, compared to four in the linear model. Both models have five parameters, which include three shared regulators (Hb, kni, tll) and the intercept. Second, the quadratic model has more clearly defined stripe borders than the linear model. Third, the quadratic model is more robust to the choice of training data (Figure 4\u2014figure supplement 3), indicating that it describes the regulatory relationship uniformly across the embryo: the model performs consistently whether it is trained on either of the two stripes, a restricted region around the lateral midline, or only on the stripes and their immediately neighboring nuclei. Finally, the quadratic model retains accurate expression of the stripes even when all 38 candidate regulators are included; by contrast the prediction from the linear model begins to fragment spatially, which suggests localized over-fitting.\n\n## Independent experimental perturbations are consistent with the quadratic model\n\nAs with\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig5-v1.jpg)\n\n**Figure 5.:** eve 3+7 expression under perturbation of Kni and Hb.The effects of regulatory perturbations on eve 3+7 expression are predicted as described in the main text. (A) Perturbation of kni and its binding sites cause full reporter expression between the stripes. The linear model predicts this observed extension, but the quadratic does not. (B) Perturbation of hb causes stripe 3 to expand and move anteriorly, and stripe 7 to expand slightly. Binding site mutations show similar effects, though perhaps without the anterior shift of stripe 3. The linear model provides good prediction of both stripes. The quadratic produces a good stripe 3 prediction, including its anterior shift, but fails to predict any expression in stripe 7. (C\u2013F) Given the initial preference for the quadratic, we considered minor and biological plausible assumptions that allow the model to make accurate predictions. For the kni mutants, these are (C) the minor adjustment of the intercept and (D) inclusion of indirect effects of kni on hb by increasing Hb by 50% of wild-type kni. For the hb mutants, these are (E) the inclusion of residual maternal Hb in the posterior and (F) simulating the effects of residual Hb binding sites.In situ images in panels 1 and 3 are reprinted with permission from Figure 4B\u2013C, Small et al. (1996), Developmental Biology (\u00a9 copyright Elsevier, 1996, All Rights Reserved). In situ images in panels 2 and 4 are reproduced with permission from Figures 4H and 6D, Struffi et al. (2011), Development (\u00a9 copyright The Company of Biologists, 2011, All Rights Reserved).DOI:http://dx.doi.org/10.7554/eLife.00522.021\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** eve 3+7 reporter in a kni mutant.Since Kni represses Hb, the loss of kni may lead to an increase of Hb towards steady state. To approximate this, Hb was added in increasing proportion, from 20% to 150%, of wild-type kni expression. The resulting eve 3+7 quadratic prediction is shown in a kni mutant.DOI:http://dx.doi.org/10.7554/eLife.00522.022\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** eve 3+7 results in a slight expansion of expression between the stripes.This prediction shows the effect of increasing the intercept by 4.5. This change in the intercept corresponds to potential differences in expression between the endogenous gene and the transgenic reporter.DOI:http://dx.doi.org/10.7554/eLife.00522.023\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Dampening the effect of Hb at higher concentrations, for example by  as shown in the center plot, changes the regulatory impact of Hb in the embryo (left and right plots). The left plot shows Hb activating at low concentrations and repressing at high concentrations; the right plot shows an attenuation of this effect leading instead to a weakening in activation. The corresponding predictions are shown below.12(1\u2212\u00a0e\u22122Hb)DOI:http://dx.doi.org/10.7554/eLife.00522.024\n\n## Perturbing kni\n\nIn the kni mutant, expression of an eve 3+7 reporter transgene extends fully between the two stripes before partially retreating towards wild-type expression (Small et al., 1996). Similarly, when Kni-binding sites in the eve 3+7 enhancer are removed, the expression pattern matches the kni null mutant (Struffi et al., 2011), although an earlier transgenic reporter with fewer mutated Kni-binding sites showed only partial extension (Clyde et al., 2003).\n\nTo mimic both of these types of perturbations, we eliminated kni as an input. Under these conditions, the linear model predicts the observed full extension between the two stripes, whereas the quadratic does not (Figure 5A). However, given our reasons for preferring the quadratic model described above, it is worth considering some minor and biologically plausible assumptions to reconcile these perturbation experiments with the quadratic model (Figure 5C,D). We discuss these in terms of direct and indirect effects below.\n\n## Direct effects\n\nThe direct effects can be understood by considering two related minor adjustments (Figure 5C). First, we can assume that the Kni protein is ubiquitously expressed in the embryo at low concentrations, but that this is not reflected in the Virtual Embryo dataset; it is possible that in situ hybridization was not sufficiently sensitive for these low-level transcripts or that the protein has a slightly different profile to the kni mRNA. If we increase kni concentrations in the Virtual Embryo dataset by just 0.1 (\u223c10% of the maximum measured value across all time points), the retrained quadratic model predicts full extension between the stripes. The prediction for wild-type expression is not affected and this adjustment is sufficient for explaining both the kni mutant and the eve 3+7 binding site mutations. Second, since this adjustment produces a model with identical coefficients (i.e., \u03b2k) except for the intercept (i.e., \u03b20)\u2014which increases from \u22128.1 to \u22123.6\u2014we can change the intercept directly in the quadratic model. This adjustment is also sufficient to predict full extension between the stripes, though it alters the wild-type prediction slightly (Figure 5\u2014figure supplement 2). This change in the intercept corresponds to potential differences in expression between the endogenous gene and the transgenic reporter. For instance, the reporter might have a lower barrier to activation and be more efficiently transcribed relative to the endogenous enhancer. Alternatively, the mutations in the transgenic enhancer may have abolished Kni repression, but then introduced the binding of another weak, ubiquitous activator.\n\n## Indirect effects\n\nNext, we consider the effects of Kni on downstream regulators (Figure 5D). There is strong evidence that kni is a repressor of hb, as its loss causes hb expression to extend from stripe 7 towards stripe 3 (H\u00fclskamp et al., 1990; Clyde et al., 2003). We simulated this indirect interaction by increasing Hb concentration in proportion to the relative loss of kni. Since Hb is an activator at low concentrations in the quadratic model, this indirect effect can drive eve expression between the stripes. This adjustment is not relevant to binding site mutants, but interestingly it does provide a tentative explanation for the partial retreat of eve\u2019s extension towards a wild-type expression pattern: as Hb concentrations increase over time, the TF eventually switches from an activator to a repressor of eve between the stripes (Figure 5\u2014figure supplement 1).\n\n## Perturbing hb\n\nhb is both maternally and zygotically expressed. In embryos null for hb zygotic expression, eve stripe 3 moves anteriorly and expands, whereas stripe 7 shows more limited widening (Small et al., 1996). Mutating Hb-binding sites in the eve 3+7 enhancer leads to similar expansion, though perhaps without the anterior shift of stripe 3 (Struffi et al., 2011). Maternally deposited hb mRNA is ubiquitous but differentially translated in the anterior (H\u00fclskamp et al., 1989). Zygotically, hb is transcribed in both an anterior domain that largely overlaps the maternal hb pattern and in a posterior stripe (Margolis et al., 1995). Thus at the time point used here, the zygotic mutant likely contains residual Hb protein in the anterior at the time point we use in this study.\n\nWe simulated the zygotic mutant by eliminating Hb altogether in the posterior and decreasing its expression to 20% in the anterior domain (Figure 5B). In these conditions, the linear model produces a good prediction for both stripes. The quadratic model arguably produces a better prediction for stripe 3, capturing its movement towards the anterior; however, it predicts zero expression in stripe 7. Based on our preference for the quadratic model as described in previous sections, and on the evidence presented in the following section, we again consider minor adjustments to reconcile it with experimental results (Figure 5E,F).\n\n## Direct effects\n\nThe first adjustment is relevant for the zygotic mutant, and assumes some active Hb in the posterior around stripe 7 (Figure 5E). Specifically, having as little as 0.15 of Hb (\u223c15% of maximal expression) in this region is sufficient for a good prediction of stripe 7. Next, we simulated the effects of having some residual Hb-binding sites in the enhancer, as a mutagenesis experiment may not abolish all binding (e.g., see Clyde et al., 2003 compared to Struffi et al., 2011). A simple way to model this is to have the same low level of Hb activity as in the zygotic mutant, which produces a good prediction as just described. As an alternative, we also considered whether incomplete mutagenesis could affect Hb\u2019s dual-regulatory behavior. Papatsenko and Levine (2008) proposed that the dual role is facilitated by adjacently bound Hb molecules masking each other\u2019s active sites; in this scenario, we would expect dual regulation to be attenuated as binding sites are lost through mutagenesis. We simulated this by dampening the regulatory effect of Hb at higher concentrations and found that the predicted expression patterns agree with experimental results (Figure 5F, Figure 5\u2014figure supplement 3). Notably, this prediction does not show movement of stripe 3 towards the anterior or expansion in stripe 7, correctly reflecting the experimental results of binding site mutagenesis.\n\n## Models predict eve 2 and 3+7 expression at earlier time points\n\nWe also tested the linear and quadratic models for both\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig6-v1.jpg)\n\n**Figure 6.:** eve 2 and 3+7 expression at earlier time points.Model predictions for earlier time points in the Virtual Embryo are shown for the (A) eve 2 and (B) eve 3+7 linear and quadratic models. The time points are labeled from the start of the dataset; the third time point is the one used throughout the main text. For eve 2, the linear and quadratic models show a wider stripe at the second time point and a well-defined stripe at time point 3. This matches the in situ images below from Andrioli et al. (2002) which show a transgenic reporter at early and mid cycle. The predictions for eve 3+7 are consistent in terms of the positions of the stripes, with stripe 3 appearing earlier than stripe 7. At the earlier time points the difference in sharpness of the stripe borders between the quadratic and linear model is more pronounced suggesting that the interpretation of positional information by the quadratic model is more stable and precise.The in situ image for eve 3+7 is reprinted with permission from Figure 2C, Small et al. (1996), Developmental Biology (\u00a9 copyright Elsevier, 1996, All Rights Reserved). In situ images for eve 2 are reproduced with permission from Figure 4A,B, Andrioli et al. (2006), Development (\u00a9 copyright The Company of Biologists, 2006, All Rights Reserved).DOI:http://dx.doi.org/10.7554/eLife.00522.025\n\n## Quadratic eve 2 and 3+7 models predict TF misexpression results better than linear models\n\nAs a final test of our models, we compare our predictions to the misexpression work of Clyde and colleagues (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig7-v1.jpg)\n\n**Figure 7.:** The study by Clyde et al. (2003) misexpressed hb and kni along the ventral surface of the embryo using transgenes driven by a snail promoter and recorded the effects of one or two copies of these transgenes on eve expression. We replicated these experiments using quadratic models for eve 2 and eve 3+7 (trained on stripe 3), by adding Hb and kni in proportion to the distribution of snail in the Virtual Embryo dataset. As described in the main text, we also added an indirect effect from Hb activating Kr. (A) With kni misexpression, the model accurately predicts the thinning (x1 transgene), then cutting of stripe 3 (x2). (B) With Hb misexpression, the model successfully predicts the bulging, then cutting and bending of stripe 3 (x2), and the bulging of stripe 7 (x2). Stripe 2 remains unaffected in both perturbations, in agreement with the experimental results. The accuracy of the predictions indicates that the quadratic model for eve 3+7 can explain the experimental results very well. In contrast the linear models are unable to predict these results.In situ images are reproduced from Figures 1F\u2013H and 1K\u2013M, Clyde et al. (2003), published in Nature; Nature Publishing Group has granted permission to reproduce these images under the terms of the Creative Commons Attribution 3.0 Unported License (CC BY 3.0).DOI:http://dx.doi.org/10.7554/eLife.00522.026\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00522/elife-00522-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** eve 2 and eve 3+7 linear (A,B) and quadratic (C\u2013E) models.(A, C and E) have no indirect effects, whereas (B and D) include a hypothetical indirect effect mediated by Hb activating Kr. This is modeled by adding Kr in proportion (50%) to the increase of Hb. The eve 3+7 model in (A\u2013D) was trained on stripes 3 and 7, whereas in (E) it was trained on stripe 3 only. The predictions are shown for one (x1) and two (x2) copies of the hb and kni transgenes as described in the main text.DOI:http://dx.doi.org/10.7554/eLife.00522.027\n\nTo model this experiment, we added Hb and kni to the Virtual Embryo in proportion to the measured distribution of snail at different concentrations ranging from 0.1 to 0.4 (\u223c10% to \u223c40% of maximal expression). We simulated the responses of eve 2 and eve 3+7 using both the linear and quadratic models above and a quadratic model trained on stripe 3. Figure 7 and Figure 7\u2014figure supplement 1 display the predictions of these models at 0.2 and 0.4 of Hb and kni, simulating the effects of one or two copies of the transgene respectively. Figure 7 includes a putative indirect effect on eve 2 via Kr (see below).\n\nThe quadratic models predict the fine-scale effects of this misexpression experiment with remarkable accuracy whereas the linear models do not (compare Figure 7 to Figure 7\u2014figure supplement 1A,B). Specifically, the quadratic model trained on stripe 3 successfully reproduces the bending and bulging of both stripes 3 and 7 under hb misexpression (Figure 7B), as well as the repression seen with kni misexpression (Figure 7A). Our models for eve 2 predict that since Hb is an activator, increasing the concentration of Hb should lead to increased activation of eve 2 and a resultant broadening of the stripe (Figure 7\u2014figure supplement 1A,C,E); but this is not in fact observed in the misexpression study. Indirect effects of Hb on another factor, such as Kr, can resolve this discrepancy: adding Kr in proportion (50%) to the increase of Hb does indeed prevent stripe 2 from expanding, but only in the quadratic model and not in the linear (Figure 7 and Figure 7\u2014figure supplement 1B,D). Given all the evidence provided here, on balance we conclude that the quadratic models are the most likely for both eve 2 and eve 3+7.\n\n## Discussion\n\n## Summary\n\nOur goal was to understand the regulatory system underlying spatiotemporal patterning in the early Drosophila embryo by fitting regulatory input functions to the output of individual enhancers. Our models are accurate, predictive and simple to apply and interpret. We showed that simple functional forms relating TF concentrations to eve expression outputs are highly predictive of wild-type and mutant expression patterns. In doing so, we have demonstrated that precise positional information\u2014in other words, information interpreted by individual nuclei to produce an expression pattern\u2014is available in the early embryo. We determined whether TFs are most informative when serving as activators or repressors of each enhancer, and we also explored whether a dual-regulatory role for some TFs improved expression predictions. Here we discuss our work in relation to other models of regulatory function, the insights our models provide into transcriptional regulation and positional information in the embryo, and the experimentally testable hypotheses proposed by our models.\n\n## Previous models\n\nThe regulation underlying anteroposterior patterning of the Drosophila blastoderm has long been a favorite system for modeling work; for recent reviews, see for example Jaeger et al. (2009) and Papatsenko (2009). Some models have been successful in reproducing the gap gene patterns (Jaeger et al., 2004, 2007; Bieler et al., 2011; Papatsenko and Levine, 2011), but none have succeeded in accurately predicting precise stripes of even skipped across the whole anteroposterior axis of the embryo (Levine, 2008). In general, previous models have focused on utilizing information contained in the cis-regulatory sequence; for example predicting expression and evaluating potential TFs of a 1.7kb region of regulatory DNA upstream of eve (Janssens et al., 2006), fitting models to fusions of eve enhancers and predicting expression from different regulatory DNA (Kim et al., 2013), testing models of TF binding and synergy by predicting expression across many enhancers (Segal et al., 2008; He et al., 2010) and identifying enhancer sequences within the genome based on the fit between predicted and observed expression patterns (Kazemian et al., 2010).\n\nOur choices in modeling the regulatory function of enhancers differ from these previous studies in a number of important respects. First, our models are highly accurate in fitting the eve expression pattern in the entire embryo. This is in part because we chose to model the regulatory function of each enhancer separately, rather than fitting a single model that applies across many enhancers simultaneously. By defining parameters that are specific for each enhancer, we are able to assign the regulatory roles for TFs in a context-specific manner. Second, our models also perform well because, unlike previous studies, we do not impose any biological mechanisms on our models (e.g., a \u2018thermodynamic score\u2019 for protein\u2013DNA interactions). Instead we worked the other way round: we tested models that fit data as accurately as possible and then inferred the underlying mechanisms. This simple framework nonetheless allows us to propose experimentally testable hypotheses. Third, our modeling framework is quick to apply. This allowed us to search comprehensively for informative regulators, a property that is particularly valuable for studying poorly characterized enhancers.\n\n## Inferred mechanisms for regulatory input function\n\nSince the models are accurate and predictive, they may reflect the underlying molecular mechanism for transcriptional regulation. Further, the models are relatively easy to interpret, so we can infer what they mean in terms of biological mechanism. Here we highlight three features.\n\n## Thresholding a combination of TFs is sufficient for positional information\n\nOne of the important questions in animal development is how each cell determines its position in the embryo. Early work on positional information in the Drosophila embryo was inspired by the idea of a morphogen gradient that is interpreted by the nuclei according to a set threshold (Ashe and Briscoe, 2006; Crick, 1970; Wolpert, 1969, 1996). More recently, it has been concluded that a lone-acting morphogen is insufficient for providing precise positional information to the embryo, especially since no gradient with this characteristic has been measured in an embryo (Kerszberg and Wolpert, 2007; Wolpert, 2011). Our model, however, shows that the combined action of multiple morphogens and a corresponding interpretative threshold is indeed able to read positional information from measured gradients alone. In particular, it succeeds by applying the threshold to the overall balance of activators and repressors rather than to each factor individually.\n\nFocusing on the contributions of individual TFs also tends to emphasize the role of repressors in providing positional information to the eve stripes. Since repressors are often crucial in defining the borders of the stripes, it is natural to suppose that the activators are merely permissive, and that precision in positional information is provided by the repressors. Here we show that an alternative view is compatible with the data. In particular, activators and repressors contribute symmetrically to positional information: they work to increase or decrease the probability of transcription, but neither class acts separately according to a threshold that is independent of the concentrations of other factors. Thus, if more activators are present in a nucleus, a higher concentration of repressors will be required to reduce transcription to the same level. This means that positional information cannot be defined by any one factor in isolation, and nor can mutant results be interpreted reliably in the absence of data on other factors.\n\n## Pairwise cooperative interactions between TFs are not necessary for synergy\n\nOur model can help clarify the concept of synergy, where the effect of one regulator depends on the concentration of another. This has been proposed in the context of transcriptional activators in general (Struhl, 2001) and observed between Hb and Bcd in controlling expression of eve 2 (Stanojevic et al., 1991; Simpson-Brose et al., 1994). Our model shows that this effect is observed with a linear combination of concentrations: that is, without any pairwise interactions between Hb and Bcd or other factors. Thus, our model is compatible with the early findings of Arnosti et al. (1996), which suggest that eve transcription is controlled by the total balance of activators and repressors rather than through complex and intricate combinatorial interactions between TFs. However, this is not to say that cooperative interactions do not take place, or are not important in other contexts, but rather that it is necessary to distinguish between synergistic interactions that can be explained by independent binding of multiple factors (as in our model), and those that occur as a result of pairwise interactions between TFs. We expect pairwise interactions between TFs on the DNA to require particular arrangements of binding sites. Therefore, the success of our model without pairwise interactions suggests that the ordering and exact spacing of binding sites are not important, except potentially in the case of dual regulation. This agrees well with multiple observations about the flexibility of enhancer sequences, which can tolerate rearrangement over evolutionary time while maintaining their function (reviewed in Borok et al., 2010).\n\n## Dual regulatory function of Hb and Bcd\n\nHb has a dual role: it acts as a repressor in some enhancers (e.g., eve 3+7) and an activator in others (e.g. eve 2) (Small et al., 1992, 1996). Here, like Papatsenko and Levine (2008), we model a dual role for Hb in the context of a single enhancer. In our model of eve 3+7, including a quadratic term for concentration-dependent dual regulation produces better wild-type predictions, explains experimental perturbations accurately (with certain assumptions), and produces consistent fits across different training subsets. Although Kazemian el al. (2010) did not find a quadratic term for Hb generally useful for fitting logistic models to Drosophila expression patterns, they did find this to be true for Bcd, particularly for the anterior parts of the expression patterns. In our work, this term is not needed for a good fit, but we add it for eve 2 to show how a repressive role in the anterior can be reconciled with an activating role around stripe 2 (Zhao et al., 2002; Singh et al., 2005).\n\nConcentration-dependent regulatory activities have been observed in other systems: for instance in humans, at low concentrations, Sp1 is as an activator of the folate receptor gene in conjunction with Ets TFs; at higher concentrations it becomes a repressor by blocking Ets binding (Kelley et al., 2003). Our model does not reveal how Hb and Bcd achieve dual-regulatory activity, and it is quite possible that they make use of different mechanisms. One possibility is a change in protein\u2013protein interactions, through formation of homo-oligomers or interactions with co-factors (e.g., Janody et al., 2001). Alternatively as with Sp1, changes in DNA occupancies may alter how regulators interact with adjacent TF molecules. We discuss experimental tests of these possibilities below. Regardless of mechanism, however, we propose that concentration-dependent effects are important, in contrast to the hypothesis that concentrations above a predefined threshold are neutral in effect. Moreover, we suggest that similar analysis techniques could be used to test potential dual-regulatory capabilities of other regulators, such as Gli and Lef/Tcf in the Hedgehog and Wnt signaling pathways (Logan and Nusse, 2004; Arce et al., 2006; Varjosalo and Taipale, 2008; Whitington et al., 2011).\n\n## Experimentally testable hypotheses\n\nOur models predict which input TFs are relevant for a given enhancer, and whether they act as activators or repressors. In the case of eve 2 and eve 3+7, we showed that many of these predictions are confirmed by independent experiments already in the literature. These studies involve either perturbing a candidate regulator by mutation, over-expression or misexpression, or mutagenizing binding sites for a candidate regulator in an enhancer sequence, and then measuring the expression of eve. To confirm our predictions, we made qualitative comparisons between published data (in the form of a single representative image) and our model predictions. Having validated our modeling framework on these well-characterized enhancers, we can now broadly apply this framework to discover regulators for less well-characterized enhancers in this system. While many enhancers in this network have been mapped by computational studies and functional genomics (Berman et al., 2002; Schroeder et al., 2004; Kazemian et al., 2010; N\u00e9gre et al., 2011; Schroeder et al., 2011), our knowledge of most of their regulatory input functions remains incomplete. Our modeling framework complements existing functional genomic and bioinformatics approaches: combined they will allow a comprehensive description of the relevant inputs of each of these enhancers, and how those inputs work together to produce an output expression pattern.\n\nOur models also point to a role for concentration-dependent effects of Hb and Bcd on their targets. We hypothesize that this is due to concentration-dependent differences in protein-protein interactions, perhaps mediated by the arrangement of TF binding sites in an enhancer, as has been proposed for Hb (Papatsenko and Levine, 2008). To test whether binding site arrangements are important, the binding sites for Bcd and Hb can be rearranged within the eve 2 and eve 3+7 enhancers, and the output of these mutated enhancers measured. To test which parts of the TFs are involved in mediating protein-protein interactions, the TFs themselves can be mutated, and protein\u2013protein interactions can be assayed by in vitro binding studies. Finally, to test the concentration-dependent effects directly, the concentration of Hb and Bcd can be manipulated in vivo by over-expression, knock-down and misexpression. Our modeling framework is especially useful in this last case, as predictions with and without concentration-dependent effects can be compared. We propose that misexpression studies are likely to be particularly informative, based on the fine-scale differences such as stripe bending and bulging that we were able to predict.\n\nInstead of making qualitative comparisons to experimental data, it would be ideal to test our models quantitatively at cellular resolution. This is possible if we create additional Virtual Embryo data where perturbations, both to input TFs and enhancer sequences, are measured. For knock-down, over-expression or misexpression of TFs, we will need to create a new Virtual Embryo for each perturbation. This will capture all of the direct and indirect consequences of perturbing the TF. We can assess the consequences of mutating enhancer sequences by integrating transgenic reporters into any given Virtual Embryo dataset, as in Wunderlich et al., 2012. Creating these new datasets is not a trivial undertaking technically but it would provide the framework for us to directly compare the output of our model predictions to experimental data at cellular resolution to detect fine-scale differences, and without making assumptions about indirect effects. For example, this would allow us to test our proposed role for tll in repressing the posterior border of eve stripe 7, where classic experiments have been inconclusive and to validate future predictions for other enhancers in the segmentation network. We fully anticipate that analyzing this type of data will lead to further refinements of our models.\n\n## General applicability of our modeling approach\n\nClearly, our model depends on the quality of the data in the Virtual Embryo, which was derived from many in situ hybridization images of the Drosophila blastoderm (Ker\u00e4nen et al., 2006; Luengo Hendriks et al., 2006; Fowlkes et al., 2008). To predict spatiotemporal expression patterns, it\u2019s important that the measurements are quantitative and at the resolution of individual cells. One advantage of the blastoderm is that the relevant nuclei are near the surface of the embryo, making it easier to segment the overall fluorescence signal and assign it to individual nuclei. However, microscopy and other techniques such as single-cell transcriptomics are continually improving (Kalisky et al., 2011); we anticipate that many comparable datasets will become available over time, both for other developmental time points in Drosophila, and in other model systems. Our study demonstrates how theoretical models can be applied to such data in order to make new biological discoveries.\n\n## Methods\n\n## Virtual Embryo dataset\n\nRelease 2.0 of the Virtual Embryo dataset was downloaded from the Berkeley Drosophila Transcription Network Project website (http://bdtnp.lbl.gov/Fly-Net/) (Fowlkes et al., 2008). The release contains composited mRNA expression measurements for 95 genes in 6078 nuclei at six time points (or \u2018cohorts\u2019). Also provided are protein expression data for four gene products (Bcd, Hb, Kr, and Gt) for some of the time points. Data for the current study were extracted from a \u2018comma-separated values\u2019 (CSV) format Virtual Embryo file (D_mel_wt__alas_r2.vpc): each row corresponds to a nucleus in the embryo, with columns containing measurements including three-dimensional coordinates, average expression level for a given gene, time point for measurement etc. Expression measurements are provided as relative values for each nucleus, ranging from \u20180\u2019 for minimum expression across all six time points to a little over \u20181\u2019 for maximum expression (e.g.,, the maximum for eve is 1.11 and for Hb it is 1.05). The variability in the maximum is a result of the method used to determine the relative variation between nuclei across different time points in the Virtual Embryo (Fowlkes et al., 2008).\n\nThe coordinates of the Virtual Embryo are along the anteroposterior (x), left-right (y) and dorsoventral (z) axes. The difference between the minimum and maximum is 404 \u03bcm for the x-coordinate, 154 \u03bcm for the y-coordinate and 155 \u03bcm for the z-coordinate.\n\n## Training data preparation\n\nTraining was performed using expression measurements at the third time point (Cohort 3). 6,078 nuclei were classed as ON (2444) or OFF (3634) depending on whether eve\u2019s expression is above or below the threshold of 0.2 (approximately 20% of maximum). Nuclei were grouped into the seven eve stripes making use of the neighboring nuclei information provided in the Virtual Embryo (stripe 2 = 348 nuclei, stripe 3 = 342 nuclei, stripe 7 = 383 nuclei). mRNA expression measurements for 34 genes were included in the training data (brk, bun, cad, CG10924, CG17786, CG4702, cnc, croc, Cyp310a1, D, Dfd, Doc2, emc, fj, fkh, hkb, kni, knrl, oc, path, rho, sala, slp1, slp2, sna, sob, srp, term, tll, Traf1, trn, tsh, twi, zen). For four TFs (Bcd, Hb, Kr, Gt), we used the protein expression measurements instead.\n\n## Training logistic regression models\n\nLogistic regression was used to model eve expression by linking the regulator concentrations as continuous input variables, to eve\u2019s expression state as the binary output. For a nucleus i, the predictor, \u03b7i, is calculated as a linear combination of concentrations:\u03b7i=\u03b20+\u03b21x1i+...+\u03b2kxkiwhere xki is the expression measurement of the kth gene for the ith nucleus with the \u03b2 to be estimated. For the quadratic models, a single quadratic term was added for the regulator, q, in question:\n\nThe predictor is linked to the estimated probability pi of eve being ON in the ith nucleus:\n\nModels for eve 2 were trained using the 348 nuclei defined as ON in stripe 2, as well as the nuclei defined as OFF excluding the nuclei of other stripes and their immediate neighbors (2588 nuclei). Similarly, models for eve 3+7 were trained using 725 ON nuclei in stripes 3 and 7, and 2756 OFF nuclei.\n\nThe models were fitted using the R function glm from the stats package, which uses Iteratively Re-weighted Least Squares. For our best fitting models, glm issued a fitting and evaluation warning message. This was because most of the logistic models that classify the eve stripes successfully have some fitted probabilities very near 0 or 1. (The nuclei on the borders of the stripes have intermediate values). Although this can suggest problems in certain situations, here, in agreement with Ripley (Ripley, 2008) it is viewed as a desirable outcome of classification. The trained model was then used to predict eve expression in all 6078 nuclei across the entire embryo, using the concentrations of the relevant regulators.\n\n## Tests of model consistency across different training subsets\n\nThe consistency of the model across different training subsets was tested in several ways. (i) Each model was trained on a subset of the training dataset and then used to predict eve expression for the whole embryo. Subsets used included: nuclei within 20 \u03bcm either side of the lateral midline; nuclei within the relevant stripe(s) and only their immediate neighbors; and a cross-validation test, which was the average of 100 predictions each trained on a random subset of 50 nuclei. For eve 3+7, two extra subsets excluded the ON nuclei from either stripe 3 or 7. Less consistent models produce poor predictions after training on some subsets. (ii) Each model was trained using all 38 regulators and then used to predict eve expression for the whole embryo. Models suffering from localized over-fitting show fragmented eve expression. (iii) Models were trained for each of the stripes in turn, using the regulators of the best-fitting models (such as Bcd, Hb, Gt, and Kr for eve 2). This showed that the given regulators are not able to fit any arbitrary stripe well.\n\n## Predictions of regulatory perturbations\n\nThe effects of regulatory perturbations were simulated by adjusting the concentrations of the relevant regulator without changing any model parameters (i.e., without retraining), and then predicting eve expression across the whole embryo. Binding site mutations and null mutants were simulated by setting the regulator concentration to \u20180\u2019 in all nuclei. Where indicated, indirect effects were simulated by adjusting the expression level of downstream regulators and again, predicting eve expression without any model adjustments. Other types of regulatory perturbations, such as the misexpression studies, were performed similarly by adjusting regulator concentrations as described in the main text.\n\n## Visual display of model outputs\n\nModel predictions of wild-type and mutant eve expression are displayed graphically for each nucleus in the embryo. The Virtual Embryo contains three-dimensional coordinates for each nucleus, making it possible to show the predictions in their spatial context. In most figures, embryos are shown from two perspectives: lateral and three-dimensional. In the lateral perspective, each nucleus is plotted using the (x,z) coordinate, ignoring the y coordinate. The x- and z-axes are aligned to the anteroposterior (left to right) and dorsoventral (top to bottom) axes respectively, so showing a view from the left side of the embryo. Since predictions for the left and right sides are similar, all nuclei (i.e., both left and right) are plotted in one composite view from the left side of the embryo. The three-dimensional perspective is plotted using the cloud function from the lattice package in R, similarly from an anterior perspective. Nuclei are colored according to the model\u2019s prediction, from p=0 (light) to p=1 (dark). The color scale for predictions within stripes is grey-scale and predictions outside of stripes are shown on a red scale, with peach for values below 0.15.\n\n## Calculating the accuracy of model outputs\n\nTo accompany the visual display of wild-type predictions, we also calculated percentage accuracies to aid comparison between alternative models. These values provide good indications of model performance in predicting the stripe boundaries. For each model, we calculated the proportion of nuclei predicted as being ON (p>0.5) within the stripe(s) under consideration (i.e., true positives), in nuclei immediately adjacent to the stripe nuclei, and two nuclei away (i.e., false positives). The identities of neighboring nuclei are provided by the Virtual Embryo dataset.\n\n## Regulator discovery\n\nFor eve 2, we trained all possible linear models using four out of 38 regulators in the dataset (total 73,815 models), using the log likelihood of each fitted model as its score. A similar approach was used for exploring quadratic models, except that any model containing Bcd and/or Hb also included the corresponding quadratic term(s). The results are summarized as heat maps as shown in Figure 3.\n\n## Software\n\nAnalysis was performed with R version 2.15.1 (R Core Team, 2012), using colors from the ColorBrewer palettes in the RColorBrewer package. Plots made use of the lattice, ggplot2 and RBGL packages. The graph package was used to select neighboring nuclei.\n",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roderic Guigo, Center for Genomic Regulation , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00522.028](https://doi.org/10.7554/eLife.00522.028)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCellular resolution models for even skipped regulation in the entire Drosophila embryo\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission each wish to reveal their identity: Roderic Guigo (Reviewing editor); Mike Levine (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) Two of the reviewers raised concerns about the statistical methods employed to validate the model. Specifically, one of the reviewers stated that the conclusions should be drawn from a blind test or N-fold cross validation; however, the authors used this to test the model over-fitting as a separate section. Nevertheless, if we understood them correctly, the main conclusions presented are drawn from using the entire set of data points, including those used for training. This is circular, and the authors should clarify this point in the main text. The over-fitting assessment is not generally necessary here, as the number of parameters is considerably below the number of independent data points.\n\n2) Two of the reviewers also suggested that the authors should further investigate the correlation between the input variables and test models including fewer variables. One of the reviewers suggested that you might use stepwise logistic regression as a way to select those variables that are truly informative. Using all combinations of 4 variables (in the case of stripe 2) did not seem the optimal way to infer the minimum combination of maximally informative variables.\n\n3) Two of the reviewers also raised concerns about the way you attempted to simulate the effects of perturbation by manipulating the input signal of the regression model without changing its learned coefficients. One of the referees specifically believes that this practice is incorrect, simply because the model was learned and optimized based on 3 input signal, and should be re-optimized if you decided to remove one input. Again the model comparison should be conducted by a blind test, not all entire dataset used for training.\n\n4) Two of the reviewers asked themselves whether it would not be of interest to test the stability of the models during development. One of the referees specifically encouraged the authors to extend their models to earlier stages of development, namely the first 20 min of nuclear cleavage cycle 14.\n\n5) The utility of the models rely on their capacity to generate testable hypotheses. In this regard, one of the referees asked whether any novel prediction that could be experimentally tested has been derived from the model. This is an issue that should be made more explicit by the authors.\n",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "572a4907-6cdd-4ff7-bd77-a45e25d21418",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C1",
+      "claim": "The Virtual Embryo from the Berkeley Drosophila Transcription Network Project is a cellular resolution, spatiotemporal atlas of gene expression and morphology for a whole Drosophila melanogaster blastoderm embryo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Virtual Embryo from the Berkeley Drosophila Transcription Network Project provides the best available data for this purpose (Fowlkes et al., 2008). It is a cellular resolution, spatiotemporal atlas of gene expression and morphology for a whole Drosophila melanogaster blastoderm embryo.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Fowlkes et al., 2008, which describes the Virtual Embryo dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "5b09dc6d-9f30-4dc7-90c7-fa30569794ef",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C2",
+      "claim": "The Virtual Embryo dataset contains three-dimensional coordinates for 6078 nuclei.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The dataset contains the three-dimensional coordinates for 6078 nuclei, along with mRNA expression measurements of 95 different genes at six time points during the 50 min leading to gastrulation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by the dataset description, which provides specific numerical data about the number of nuclei.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "e1846754-7066-4d3c-b885-88406a67c504",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C3",
+      "claim": "The Virtual Embryo dataset contains mRNA expression measurements of 95 different genes at six time points during the 50 min leading to gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The dataset contains the three-dimensional coordinates for 6078 nuclei, along with mRNA expression measurements of 95 different genes at six time points during the 50 min leading to gastrulation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by the dataset description, providing specific information about gene measurements and time points.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "384dd255-c5f1-4c3c-94ab-b6d72b07c00e",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C4",
+      "claim": "eve is expressed in a symmetrical pattern of seven stripes that subdivide the embryo along the anteroposterior axis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "eve is expressed in a symmetrical pattern of seven stripes that subdivide the embryo along the anteroposterior axis (N\u00fcsslein-Volhard and Wieschaus, 1980).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by a citation to N\u00fcsslein-Volhard and Wieschaus, 1980, and represents established scientific knowledge about eve expression.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "2771d09d-4d30-40e5-8c36-7fb25a6d6621",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C5",
+      "claim": "Each eve stripe is only a few nuclei wide.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Each stripe is only a few nuclei wide and any regulatory input function of an enhancer must define at least two borders at a high level of precision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim draws from established knowledge about the spatial characteristics of eve stripes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "95597b47-7f88-4d98-8988-8beebee15fbc",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C6",
+      "claim": "The enhancer eve 2 controls stripe 2 of eve expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here, we focus on the enhancers eve 2 and eve 3+7, which have been shown to control stripe 2 and stripes 3 and 7 respectively (Goto et al., 1989; Harding et al., 1989; Stanojevic et al., 1991; Small et al., 1992, 1996).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by multiple citations and represents established knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "59dee0cb-864f-4a30-9912-fbf2544f3457",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C7",
+      "claim": "The enhancer eve 3+7 controls stripes 3 and 7 of eve expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here, we focus on the enhancers eve 2 and eve 3+7, which have been shown to control stripe 2 and stripes 3 and 7 respectively (Goto et al., 1989; Harding et al., 1989; Stanojevic et al., 1991; Small et al., 1992, 1996).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by multiple citations and represents established knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "10ead101-b16c-4848-9132-464a19271ea2",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C8",
+      "claim": "eve stripe 2 is controlled by the gap genes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Through detailed molecular analysis, it is known that eve stripe 2 is controlled by the gap genes (Frasch and Levine, 1987; Stanojevic et al., 1991; Small et al., 1992)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by multiple citations and represents established knowledge about eve stripe 2 regulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "28fa90d8-f0bc-41dd-9926-274d849cc7eb",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C9",
+      "claim": "Hunchback (Hb) and Bicoid (Bcd) are activators that enable broad permissive eve expression in the region of stripe 2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the generally accepted minimal mechanism, two activators Hunchback (Hb) and Bicoid (Bcd) enable broad permissive eve expression in the region of stripe 2, while two repressors Giant (Gt) and Kruppel (Kr) define the anterior and posterior borders respectively by suppressing eve outside the stripe.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim represents the generally accepted mechanism in the field, drawing from established scientific knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "d1cb60c0-5993-443c-b5ab-f7d081c8658e",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C10",
+      "claim": "Giant (Gt) and Kruppel (Kr) are repressors that define the anterior and posterior borders of eve stripe 2 respectively by suppressing eve outside the stripe.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the generally accepted minimal mechanism, two activators Hunchback (Hb) and Bicoid (Bcd) enable broad permissive eve expression in the region of stripe 2, while two repressors Giant (Gt) and Kruppel (Kr) define the anterior and posterior borders respectively by suppressing eve outside the stripe.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim represents the generally accepted mechanism in the field, drawing from established scientific knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4929fb91-dd9c-4a5e-9634-820efbf51acf",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C11",
+      "claim": "The logistic model using Bcd, Hb, Gt, and Kr accurately recapitulates eve stripe 2 expression across the entire embryo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To the best of our knowledge, this the first time that eve 2's expression has been predicted so accurately across the entire embryo including the anteriormost region. Most nuclei inside the stripe are correctly classified as having a high probability of being ON, and there is minimal 'over-spill' either side of the stripe",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the model predictions and data analysis presented in the manuscript, including quantitative measurements in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "dc704f91-ec3d-45df-9556-026bc1832d8f",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C12",
+      "claim": "The four standard regulators of eve 2 (Bcd, Hb, Gt, Kr) encode dorsoventral curvature information, implying that dorsoventral factors are not required to provide this information directly to eve 2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The model defines eve expression around the entire circumference of the embryo, following the dorsal-ventral curvature of the stripe: this demonstrates that the four standard regulators of eve 2 already encode this information, implying that dorsoventral factors are not required to provide this information directly to eve 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is based on the model's ability to predict dorsoventral curvature using only the four regulators, leading to an inference about the sufficiency of these factors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "a0027a92-d7a5-4bbd-8620-c15eb8a2075c",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C13",
+      "claim": "The linear logistic model identifies 86% of nuclei in stripe 2 as having high probability of being ON.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Table 1. Measurements quantifying the accuracy of eve 2 predictions... eve 2 linear logistic 86 23 2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by quantitative data presented in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "d35241e5-8648-4590-9a0e-7c5a44afb05b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C14",
+      "claim": "The quadratic logistic model identifies 93% of nuclei in stripe 2 as having high probability of being ON.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Table 1. Measurements quantifying the accuracy of eve 2 predictions... eve 2 quadratic logistic 93 21 2",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by quantitative data presented in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "0de35e1b-af0c-496f-a590-82800ac2fa20",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C15",
+      "claim": "The quadratic logistic model provides a slightly more accurate fit to the data than the linear model for eve stripe 2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Though both linear and quadratic models output excellent predictions, the latter provides a slightly more accurate fit to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by comparison of the quantitative accuracy measurements in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "b4e49b5c-67d3-49fe-98e2-1e7241061830",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C16",
+      "claim": "The linear model identifies Bcd as a repressor of eve stripe 2, whereas most existing literature defines the TF as an activator.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The linear model successfully recapitulates stripe 2 expression; however, it identifies Bcd as a repressor, whereas most existing literature defines the TF as an activator.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim compares the model output (data) with established literature (knowledge), highlighting a discrepancy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "e9803990-03f9-4cad-980f-2fba3de1ac24",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C17",
+      "claim": "The need for Bcd-binding sites for successful eve expression suggests an activating function for Bcd.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The need for Bcd-binding sites for successful eve expression suggests an activating function (Small et al., 1992)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Small et al., 1992, which provides experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "03ed0fd1-e44a-4925-bb24-fe436f87e147",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C18",
+      "claim": "The eve 2 enhancer is inactive in the anteriormost region of the embryo despite Bcd being present at high concentrations and the known repressors Gt and Kr having low concentrations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but this does not explain why the enhancer is inactive in the anteriormost region of the embryo despite Bcd being present at high concentrations and the known repressors Gt and Kr having low concentrations",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is based on observed expression patterns (data) and known regulator distributions (knowledge).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "3f25b5ae-b73f-4ffe-9f91-ddb9495152cb",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C19",
+      "claim": "A quadratic term for Bcd enables the model to reconcile Bcd's dual regulatory function as both a repressor in the anterior and an activator in the region of stripe 2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The result is clear: the modified model retains a repressive function for Bcd in the anterior of the embryo where it is present in high concentrations, but enables an activating function in the region of stripe 2 where it has lower concentrations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the model predictions showing concentration-dependent regulatory effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "55da1023-8c19-4ed9-9115-5f2c727f0bdd",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C20",
+      "claim": "The quadratic model for eve 2 predicts that loss of gt causes eve expression to extend towards the anterior of the embryo, in excellent agreement with experimental evidence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Loss of (A) gt or (B) Kr causes eve expression to extend towards the anterior and posterior of the embryo respectively, in excellent agreement with experimental evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by model predictions (data) that match experimental results (citation to Small et al., 1992).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "8983180f-cb33-45cc-8abd-ccfec2ec047c",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C21",
+      "claim": "The quadratic model for eve 2 predicts that loss of Kr causes eve expression to extend towards the posterior of the embryo, in excellent agreement with experimental evidence.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Loss of (A) gt or (B) Kr causes eve expression to extend towards the anterior and posterior of the embryo respectively, in excellent agreement with experimental evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by model predictions (data) that match experimental results (citation to Small et al., 1992).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "c7c8f03c-3645-446c-9833-b005e4f0889b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C22",
+      "claim": "The quadratic model predicts that perturbing hb leads to complete loss of eve stripe 2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "(D) Perturbing hb leads to complete loss of eve stripe 2 for both models.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by the model predictions shown in Figure 3D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "0c175b09-a31e-495b-a3de-b6f049dfe73b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C23",
+      "claim": "The measured concentrations of Hb (protein) and kni (mRNA) alone are not sufficient for models of stripe 3 and 7 expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The measured concentrations of Hb (protein) and kni (mRNA) alone are not sufficient for our models of stripe 3 and 7 expression; in particular, the concentration of Hb is too low to repress expression to the posterior of stripe 7",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the model fitting results showing insufficient predictive power with only these two regulators.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "6399be7f-dd47-40a5-b2b3-fab77b560e03",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C24",
+      "claim": "Kni is thought to repress the region between eve stripes 3 and 7.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Kni is thought to repress the region between the stripes and Hb is thought to repress in the anterior and posterior regions outside the stripes (Clyde et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by a citation and represents established knowledge about Kni function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "1e0c2334-ed6f-4cf5-9aff-9243b8931e2c",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C25",
+      "claim": "Hb is thought to repress in the anterior and posterior regions outside eve stripes 3 and 7.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Kni is thought to repress the region between the stripes and Hb is thought to repress in the anterior and posterior regions outside the stripes (Clyde et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by a citation and represents established knowledge about Hb function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "ca83d7ff-0287-4d1e-98cd-59853b8e55bd",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C26",
+      "claim": "The linear model for eve 3+7 includes Hb, kni, tll, and Gt as regulators.",
+      "claim_type": "EXPLICIT",
+      "source_text": "(A\u2013C) The linear model including Hb, kni, tll, and Gt",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim describes the composition of the linear model as presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "0e81bcc6-2702-4f7e-b832-44a51e724475",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C27",
+      "claim": "The quadratic model for eve 3+7 comprises Hb, kni, and tll, with a quadratic term for Hb as a concentration-dependent dual regulator.",
+      "claim_type": "EXPLICIT",
+      "source_text": "(D\u2013F) the quadratic model comprises Hb, kni, and tll, with a quadratic term for Hb as a concentration-dependent dual regulator.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim describes the composition of the quadratic model as presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "924e2746-ba79-4846-be12-e0cdf4c9bc17",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C28",
+      "claim": "The quadratic model for eve 3+7 defines sharper stripe borders than the linear model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both models clearly define the two stripes, though the midline ribbon plots show that the quadratic model defines the sharpest borders.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by visual comparison of model predictions shown in the figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4dbcb4d4-257d-4552-8a0b-4fd165651ce4",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C29",
+      "claim": "The quadratic model for eve 3+7 is simpler than the linear model, requiring only three regulators compared to four.",
+      "claim_type": "EXPLICIT",
+      "source_text": "First, it is simpler: the quadratic requires only three regulators, compared to four in the linear model.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is based on direct comparison of the model compositions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4b5e2659-661f-4c2a-b5ea-66dc12cdebfa",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C30",
+      "claim": "The quadratic model for eve 3+7 is more robust to the choice of training data than the linear model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Third, the quadratic model is more robust to the choice of training data (Figure 4\u2014figure supplement 3), indicating that it describes the regulatory relationship uniformly across the embryo",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by cross-validation results shown in Figure 4\u2014figure supplement 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "f947007b-6e9a-46b9-a7ce-5cf336302fec",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C31",
+      "claim": "In the kni mutant, expression of an eve 3+7 reporter transgene extends fully between the two stripes before partially retreating towards wild-type expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the kni mutant, expression of an eve 3+7 reporter transgene extends fully between the two stripes before partially retreating towards wild-type expression (Small et al., 1996).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Small et al., 1996, describing experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "e8bd1fcd-6178-4b19-a2c3-4cafa04c0034",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C32",
+      "claim": "When Kni-binding sites in the eve 3+7 enhancer are removed, the expression pattern matches the kni null mutant.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Similarly, when Kni-binding sites in the eve 3+7 enhancer are removed, the expression pattern matches the kni null mutant (Struffi et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Struffi et al., 2011, describing experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "2757ce56-1baf-44a1-8b50-5eda1dfd94f2",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C33",
+      "claim": "The linear model for eve 3+7 predicts full extension between the two stripes when kni is eliminated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To mimic both of these types of perturbations, we eliminated kni as an input. Under these conditions, the linear model predicts the observed full extension between the two stripes, whereas the quadratic does not",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the model predictions shown in Figure 5A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "741ced81-aedf-4880-b2aa-abb13b127972",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C34",
+      "claim": "There is strong evidence that kni is a repressor of hb, as its loss causes hb expression to extend from stripe 7 towards stripe 3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There is strong evidence that kni is a repressor of hb, as its loss causes hb expression to extend from stripe 7 towards stripe 3 (H\u00fclskamp et al., 1990; Clyde et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by citations to experimental studies showing the regulatory relationship.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "b2edd869-eeeb-4ae4-bf01-ac78bf9e9fb4",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C35",
+      "claim": "In embryos null for hb zygotic expression, eve stripe 3 moves anteriorly and expands, whereas stripe 7 shows more limited widening.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In embryos null for hb zygotic expression, eve stripe 3 moves anteriorly and expands, whereas stripe 7 shows more limited widening (Small et al., 1996).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Small et al., 1996, describing experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "7955883e-2351-40c5-88f7-9d4fe0d5a8da",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C36",
+      "claim": "Mutating Hb-binding sites in the eve 3+7 enhancer leads to expansion of stripe 3, though perhaps without the anterior shift.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Mutating Hb-binding sites in the eve 3+7 enhancer leads to similar expansion, though perhaps without the anterior shift of stripe 3 (Struffi et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Struffi et al., 2011, describing experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "11cf17d1-c2be-4c4c-814c-ed08970558a7",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C37",
+      "claim": "Maternally deposited hb mRNA is ubiquitous but differentially translated in the anterior.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Maternally deposited hb mRNA is ubiquitous but differentially translated in the anterior (H\u00fclskamp et al., 1989).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to H\u00fclskamp et al., 1989, describing the distribution of maternal hb.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "1078c613-dab7-4644-b875-42d10c4137df",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C38",
+      "claim": "Zygotically, hb is transcribed in both an anterior domain that largely overlaps the maternal hb pattern and in a posterior stripe.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Zygotically, hb is transcribed in both an anterior domain that largely overlaps the maternal hb pattern and in a posterior stripe (Margolis et al., 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Margolis et al., 1995, describing zygotic hb expression.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "18a5166c-87dd-40fc-a9bd-4b42fa9cf4c8",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C39",
+      "claim": "The quadratic models predict the fine-scale effects of misexpression experiments with remarkable accuracy whereas the linear models do not.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The quadratic models predict the fine-scale effects of this misexpression experiment with remarkable accuracy whereas the linear models do not",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by comparison of model predictions to experimental results shown in Figure 7.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "3e0d62b8-6a48-43de-8d3c-1a227d438df5",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C40",
+      "claim": "The quadratic model trained on stripe 3 successfully reproduces the bending and bulging of both stripes 3 and 7 under hb misexpression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, the quadratic model trained on stripe 3 successfully reproduces the bending and bulging of both stripes 3 and 7 under hb misexpression (Figure 7B)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the model predictions shown in Figure 7B compared to experimental images.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "cc18ac29-ea35-4583-8db2-a5673716b445",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C41",
+      "claim": "The quadratic model trained on stripe 3 successfully reproduces the repression seen with kni misexpression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, the quadratic model trained on stripe 3 successfully reproduces the bending and bulging of both stripes 3 and 7 under hb misexpression (Figure 7B), as well as the repression seen with kni misexpression (Figure 7A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the model predictions shown in Figure 7A compared to experimental images.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "ba78b078-3131-4243-bab9-30bbde103a08",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C42",
+      "claim": "Simple functional forms relating TF concentrations to eve expression outputs are highly predictive of wild-type and mutant expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We showed that simple functional forms relating TF concentrations to eve expression outputs are highly predictive of wild-type and mutant expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim summarizes the overall findings of the study, supported by the various model predictions and validations presented.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "45ebed8a-d392-456a-94a8-1eb3fb450a5b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C43",
+      "claim": "Precise positional information is available in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In doing so, we have demonstrated that precise positional information\u2014in other words, information interpreted by individual nuclei to produce an expression pattern\u2014is available in the early embryo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is inferred from the success of the models in predicting precise expression patterns using only TF concentrations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "1bb8ab6c-76f3-489e-b935-8653baee5b3c",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C44",
+      "claim": "The combined action of multiple morphogens and a corresponding interpretative threshold is able to read positional information from measured gradients alone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our model, however, shows that the combined action of multiple morphogens and a corresponding interpretative threshold is indeed able to read positional information from measured gradients alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is inferred from the model's ability to predict expression patterns using combinations of TF concentrations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "14245d6a-025d-454f-b2e3-31ba0ae4d7f5",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C45",
+      "claim": "Activators and repressors contribute symmetrically to positional information: they work to increase or decrease the probability of transcription, but neither class acts separately according to a threshold that is independent of the concentrations of other factors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In particular, activators and repressors contribute symmetrically to positional information: they work to increase or decrease the probability of transcription, but neither class acts separately according to a threshold that is independent of the concentrations of other factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is inferred from the structure and behavior of the logistic regression models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "a3e18475-4706-477a-9c29-dfd80917cac1",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C46",
+      "claim": "Synergistic effects can be observed with a linear combination of concentrations without any pairwise interactions between TFs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our model shows that this effect is observed with a linear combination of concentrations: that is, without any pairwise interactions between Hb and Bcd or other factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is inferred from the success of linear models that do not include explicit pairwise interaction terms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "13f985b2-87bf-433a-9c45-8f1368fba3b7",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C47",
+      "claim": "The success of the model without pairwise interactions suggests that the ordering and exact spacing of binding sites are not important, except potentially in the case of dual regulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, the success of our model without pairwise interactions suggests that the ordering and exact spacing of binding sites are not important, except potentially in the case of dual regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is inferred from the model structure and its predictive success without explicit spatial binding site information.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "21e53f19-4a61-40d3-9a69-bd0818e90f7d",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C48",
+      "claim": "Hb has a dual role: it acts as a repressor in some enhancers (e.g., eve 3+7) and an activator in others (e.g. eve 2).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hb has a dual role: it acts as a repressor in some enhancers (e.g., eve 3+7) and an activator in others (e.g. eve 2) (Small et al., 1992, 1996).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by citations and represents established knowledge about Hb function in different contexts.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4f4217b4-af47-42a0-8986-c6f27e1baf6c",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C49",
+      "claim": "Including a quadratic term for Hb in the eve 3+7 model produces better wild-type predictions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our model of eve 3+7, including a quadratic term for concentration-dependent dual regulation produces better wild-type predictions, explains experimental perturbations accurately (with certain assumptions), and produces consistent fits across different training subsets.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by comparison of model performance metrics and visual predictions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "fda0eab6-906d-45b6-820d-0ca401d8aef0",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C50",
+      "claim": "Concentration-dependent regulatory activities have been observed in other systems, such as Sp1 regulation of the folate receptor gene in humans.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Concentration-dependent regulatory activities have been observed in other systems: for instance in humans, at low concentrations, Sp1 is as an activator of the folate receptor gene in conjunction with Ets TFs; at higher concentrations it becomes a repressor by blocking Ets binding (Kelley et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Kelley et al., 2003, providing an example from another biological system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "79c7187d-f425-473c-8b03-44c64cb63440",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C51",
+      "claim": "This is the first time that eve 2's expression has been predicted accurately across the entire embryo including the anteriormost region.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To the best of our knowledge, this the first time that eve 2's expression has been predicted so accurately across the entire embryo including the anteriormost region.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is based on the model's performance and comparison to previous modeling efforts in the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "eddb26fb-667f-4b24-b34a-5054e5d63618",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C52",
+      "claim": "Modeling pair-rule expression accurately across the whole embryo has remained a significant challenge.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is notable that though there has been some success in simulating the simpler gap gene expression pattern and in predicting eve expression on a portion of the anteroposterior axis, modeling pair-rule expression accurately across the whole embryo has remained a significant challenge (Jaeger et al., 2004; Janssens et al., 2006; Papatsenko and Levine, 2008; Segal et al., 2008; Kazemian et al., 2010; Kim et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by multiple citations documenting the state of the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "50d600bd-8d73-4593-b6a7-1205aafe1b5b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C53",
+      "claim": "The Virtual Embryo dataset contains expression measurements normalized to a range of 0 to just over 1 across the entire embryo and time points.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The Virtual Embryo dataset contains expression measurements normalized to a range of 0 to just over 1 across the entire embryo and time points; thus 0.2 corresponds to \u223c20% of the maximal expression.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim describes the data normalization method used in the Virtual Embryo dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "21b2badd-4521-4d18-abc1-f4a41809ec19",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C54",
+      "claim": "All models were trained using the third time point corresponding to \u223c30 min before gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All models were trained using the third time point corresponding to \u223c30 min before gastrulation, when according to the Virtual Embryo data, the borders are sharpening and the stripes are not moving dramatically",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim describes the specific time point chosen for model training based on the dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4b23af62-7eb8-44ec-8d7d-5245011e14cf",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C55",
+      "claim": "Four pair-rule genes (fushi tarazu, odd skipped, hairy and paired) were excluded from the dataset.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Four pair-rule genes (fushi tarazu, odd skipped, hairy and paired) that have similar stripe patterns to eve were excluded from the data set",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim describes a methodological choice in data preparation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "c62e31aa-f416-47e8-995b-59203385663d",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C56",
+      "claim": "eve expression looks qualitatively normal in fushi tarazu, odd skipped, hairy and paired mutants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, eve expression looks qualitatively normal in these TF mutants (Schroeder et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by a citation to Schroeder et al., 2011, providing experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "ef7e0eb0-2522-494b-b789-864560e3a27d",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C57",
+      "claim": "The model predicts a small amount of eve expression near stripe 7 when modeling stripe 2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, it is notable that the model predicts a small amount of expression near stripe 7; ectopic expression of stripe 7 is sometimes observed in transgenic reporters driven by eve 2 enhancers (Small et al., 1992; Janssens et al., 2006; Hare et al., 2008).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This claim is based on model predictions that are consistent with experimental observations cited in the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "acd4203b-1e23-4928-a05e-756286308747",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C58",
+      "claim": "Ectopic expression of stripe 7 is sometimes observed in transgenic reporters driven by eve 2 enhancers.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ectopic expression of stripe 7 is sometimes observed in transgenic reporters driven by eve 2 enhancers (Small et al., 1992; Janssens et al., 2006; Hare et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by multiple citations documenting experimental observations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "d481cc1f-eac6-4a83-8631-e1317ee5cb47",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C59",
+      "claim": "The best-scoring linear model for eve 2 comprises the known regulators Hb, Bcd, Gt, and Kr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Gratifyingly, the best-scoring model comprises the known regulators Hb, Bcd, Gt, and Kr.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is based on the regulator discovery analysis that scored all possible models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "45696620-e9c2-4fa1-be5d-21cf62a9d9fc",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "claim_id": "C60",
+      "claim": "The models extend from the posterior of stripe 7 to the anterior of the embryo, covering approximately 404 \u03bcm along the anteroposterior axis.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The coordinates of the Virtual Embryo are along the anteroposterior (x), left-right (y) and dorsoventral (z) axes. The difference between the minimum and maximum is 404 \u03bcm for the x-coordinate",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is implicit in the description of the coordinate system and the extent of the embryo covered by the models.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85383762-5754-4f81-bfcb-9f4a90ae19e0",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors use the Virtual Embryo dataset from the Berkeley Drosophila Transcription Network Project, which contains cellular resolution measurements of gene expression for 6078 nuclei across 95 genes at six time points. Models were trained on the third time point (~30 min before gastrulation) with four pair-rule genes excluded from the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1-C3 and C53-C56 provide clear documentation of the dataset characteristics, data preparation methods, and justification for methodological choices. The dataset is well-established (Fowlkes et al., 2008) and the authors provide transparent descriptions of their data processing steps including time point selection, gene exclusion criteria, and normalization procedures.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "1c9d9349-df36-4707-a5d2-48629b39c07f",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "The authors establish the biological context for eve stripe regulation, noting that eve is expressed in seven stripes along the anteroposterior axis, with stripe 2 controlled by the eve 2 enhancer and stripes 3 and 7 controlled by the eve 3+7 enhancer. The generally accepted mechanism for stripe 2 involves activators Hb and Bcd and repressors Gt and Kr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims (C4-C10) represent well-established knowledge in the field, supported by multiple citations to foundational studies. The authors accurately describe prior work on eve expression patterns and regulatory mechanisms, providing appropriate context for their modeling approach.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "The authors demonstrate that a logistic regression model using Bcd, Hb, Gt, and Kr accurately predicts eve stripe 2 expression across the entire embryo for the first time, with the quadratic model (93% accuracy) slightly outperforming the linear model (86% accuracy) in identifying nuclei within the stripe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C11, C13-C15 are supported by quantitative data in Table 1 and visual predictions shown in figures. The regulator discovery analysis (C59) independently recovered the known regulators, providing validation. Claim C51 about being the first accurate whole-embryo prediction is supported by comparison to prior literature (C52), though this comparative claim relies on the authors' assessment of previous work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "dc6b837d-858b-4250-b90e-73e5deaf22fc",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "The model predicts eve expression around the entire circumference of the embryo following dorsoventral curvature, demonstrating that the four standard regulators encode this information without requiring direct input from dorsoventral factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C12 is supported by the model's ability to predict the 3D expression pattern using only the four anteroposterior regulators. The visual predictions in figures show accurate dorsoventral curvature, providing empirical support for this inference about information sufficiency.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "39ba1e8d-5063-4f92-9750-216a5c816e6b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "The authors identify a paradox where the linear model assigns Bcd a repressive role contradicting literature showing it as an activator, and propose that a quadratic term reconciles this by modeling Bcd as a concentration-dependent dual regulator that represses at high concentrations (anterior) and activates at lower concentrations (stripe 2 region).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C16-C18 document a genuine discrepancy between model output and established literature. Claim C19 shows that the quadratic model resolves this paradox with biologically plausible concentration-dependent effects. The model predictions match known expression patterns and the quadratic formulation provides a mechanistic hypothesis, though the underlying molecular mechanism remains to be experimentally validated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "c4172bd7-5aab-459e-8105-341b455b4096",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "The quadratic model for eve 2 accurately predicts the effects of regulatory perturbations: loss of gt causes anterior extension, loss of Kr causes posterior extension, and loss of hb causes complete stripe loss, all in agreement with experimental evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C20-C22 are supported by model predictions that match experimental results from the literature (Small et al., 1992). The predictions are shown in Figure 3 and represent independent validation of the model using perturbation experiments not used in training.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "a44609cc-1ceb-4d98-91c2-aba6765f365b",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "For eve stripes 3 and 7, the authors show that Hb and kni alone are insufficient and develop two models: a linear model with Hb, kni, tll, and Gt, and a quadratic model with Hb, kni, and tll (with quadratic Hb term). The quadratic model is preferred as it is simpler (3 vs 4 regulators), defines sharper borders, and is more robust to training data selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C23 is supported by model fitting results showing poor predictions with only two regulators. Claims C26-C30 document the two alternative models and provide multiple lines of evidence (parsimony, border sharpness, cross-validation robustness) favoring the quadratic model. The comparisons are supported by visual predictions and quantitative assessments in supplementary figures.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "60a61b8a-227c-459f-89ae-8b594f602afe",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "For kni perturbations, the linear model predicts the observed full extension of eve expression between stripes 3 and 7, whereas the quadratic model does not. The authors note that kni represses hb, providing a potential indirect mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C31-C32 accurately report experimental observations from the literature. Claim C33 shows the linear model matches these observations while the quadratic does not, creating a discrepancy with the authors' preference for the quadratic model. While C34 provides evidence for an indirect pathway, the authors must invoke additional assumptions (discussed in subsequent claims) to reconcile the quadratic model with experiments, indicating the result requires further validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "4c87864b-0357-4470-87bf-330a39c99913",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "In hb zygotic mutants, eve stripe 3 moves anteriorly and expands while stripe 7 shows limited widening. Binding site mutations show similar effects. The authors note that maternal hb is ubiquitous but differentially translated, while zygotic hb is expressed in anterior and posterior domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C35-C38 accurately report experimental observations and established knowledge from the literature (Small et al., 1996; Struffi et al., 2011; H\u00fclskamp et al., 1989; Margolis et al., 1995). These provide the empirical context for evaluating model predictions of hb perturbations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "5cf6ff24-a818-44d8-9457-d242fa5be17e",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "The quadratic models predict fine-scale effects of hb and kni misexpression experiments with remarkable accuracy, including the bending and bulging of stripes 3 and 7 under hb misexpression and repression under kni misexpression, whereas linear models fail to capture these effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C39-C41 are supported by detailed visual comparisons between model predictions and experimental images from Clyde et al. (2003) shown in Figure 7. The quadratic models capture fine-scale spatial features (bending, bulging) that the linear models miss, providing strong validation of the quadratic formulation. However, the predictions for hb misexpression required assuming an indirect effect via Kr activation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "a9328333-3431-4a38-8d78-65312340e461",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "The authors conclude that simple functional forms relating TF concentrations to eve expression are highly predictive, demonstrating that precise positional information is available from measured gradients through combined action of multiple morphogens with an interpretative threshold. Activators and repressors contribute symmetrically without requiring pairwise TF interactions or specific binding site arrangements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C42-C47 represent high-level conclusions inferred from the collective success of the models. The models' accuracy across multiple stripes, perturbations, and validation tests supports these mechanistic inferences. The lack of need for explicit pairwise interaction terms (C46-C47) is demonstrated by the linear models' success, though this doesn't rule out that such interactions occur in vivo.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "05876339-435d-4335-9fb2-55753a02ce75",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "The authors propose that Hb exhibits concentration-dependent dual regulation, acting as a repressor in eve 3+7 and an activator in eve 2, with the quadratic term improving predictions. They note similar concentration-dependent effects have been observed in other systems like Sp1 regulation in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C48 accurately reports established knowledge about Hb's context-dependent roles. Claim C49 is supported by model performance comparisons showing the quadratic term improves predictions and explains perturbations. Claim C50 provides precedent from another system (Kelley et al., 2003), strengthening the biological plausibility of the proposed mechanism, though the molecular basis remains to be experimentally determined.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "7fe97e0a-a482-4eab-b1dd-cf6bf99f22bf",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "The authors claim that modeling pair-rule expression accurately across the whole embryo has remained a significant challenge in the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C52 is supported by multiple citations documenting previous modeling efforts and their limitations (Jaeger et al., 2004; Janssens et al., 2006; Papatsenko and Levine, 2008; Segal et al., 2008; Kazemian et al., 2010; Kim et al., 2013). This contextualizes the significance of the current work's achievement.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "26fd257a-c7ff-45c7-a4ea-b57e42f25683",
+      "content_id": "9424e73c-0f8b-41a6-a9a4-923abfe95102",
+      "result_id": "R14",
+      "result_type": "llm",
+      "result": "The eve 2 model predicts a small amount of ectopic expression near stripe 7, which is consistent with observations in transgenic reporters driven by eve 2 enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C57 describes a model prediction that is validated by experimental observations reported in the literature (C58, citing Small et al., 1992; Janssens et al., 2006; Hare et al., 2008). This represents an additional point of validation for the model, capturing even unintended cross-regulatory effects.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "9680e1c2-e513-4136-90d6-bcf167dd8b78",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "The authors developed logistic regression models (linear and quadratic) using known regulators (Bcd, Hb, Gt, Kr) that accurately predict eve stripe 2 expression across the entire embryo, including the anteriormost region. The quadratic model achieves 93% accuracy compared to 86% for the linear model.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raised concerns about the statistical validation methods, noting that 'the main conclusions presented are drawn from using the entire set of data points, including those used for training. This is circular.' They requested that conclusions be drawn from blind tests or N-fold cross-validation rather than the full dataset, indicating uncertainty about the validity of the accuracy claims without proper validation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "0f6feafc-537a-4a2e-b2d1-b21889d5c698",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "The linear model identifies Bcd as a repressor, contradicting literature showing it as an activator. The quadratic model with a quadratic Bcd term reconciles this by showing Bcd acts as a repressor at high concentrations (anterior) and an activator at lower concentrations (stripe 2 region).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the authors present this concentration-dependent dual regulation as explaining the discrepancy, reviewers questioned the approach of 'manipulating the input signal of the regression model without changing its learned coefficients,' stating 'this practice is incorrect, simply because the model was learned and optimized based on [certain] input signal, and should be re-optimized if you decided to remove one input.' This methodological concern undermines confidence in the dual regulation interpretation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "33adb521-7c0b-4a5c-a6ce-505f99b5f66c",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "The quadratic model predicts that loss of gt or Kr causes eve stripe 2 expression to extend anteriorly or posteriorly respectively, matching experimental evidence, while loss of hb causes complete stripe loss.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers specifically criticized the perturbation simulation approach, stating that 'the model was learned and optimized based on [certain] input signal, and should be re-optimized if you decided to remove one input.' They emphasized that 'model comparison should be conducted by a blind test, not all entire dataset used for training,' casting doubt on the validity of these mutant predictions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "18132468-470a-449b-ad82-4b98b9740a76",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "The model predicts dorsoventral curvature of eve stripe 2 using only the four standard anteroposterior regulators, implying dorsoventral factors are not required to provide this information directly.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers did not raise concerns about this specific finding. The ability of the model to capture dorsoventral curvature using only anteroposterior factors represents a novel insight that was not challenged in the review, suggesting implicit acceptance of this result.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "fb718045-9de6-40c7-81b5-3f958dba006d",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "For eve stripes 3 and 7, the quadratic model (using Hb, kni, tll with quadratic Hb term) is simpler, defines sharper borders, and is more robust to training data choice than the linear model (using Hb, kni, tll, Gt).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers requested that authors 'further investigate the correlation between the input variables and test models including fewer variables,' suggesting that 'using all combinations of 4 variables did not seem the optimal way to infer the minimum combination of maximally informative variables.' They also raised concerns about validation methods and suggested 'stepwise logistic regression as a way to select those variables that are truly informative,' indicating uncertainty about the variable selection and model comparison approach.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "The linear model for eve 3+7 predicts full extension between stripes when kni is eliminated, matching experimental observations. The authors explain the quadratic model's failure to predict this by invoking indirect effects through kni repression of hb, accounting for maternal and zygotic hb contributions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers explicitly criticized the perturbation simulation methodology, stating that 'the model was learned and optimized based on [certain] input signal, and should be re-optimized if you decided to remove one input.' This fundamental methodological concern applies directly to the kni elimination predictions, undermining confidence in both the linear model's success and the explanation for the quadratic model's behavior.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "b2b1ac4e-a440-4e8e-bf3c-5333e666cabc",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "The quadratic models predict fine-scale effects of hb and kni misexpression experiments with remarkable accuracy, successfully reproducing bending, bulging, and repression patterns, whereas linear models do not.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raised concerns about the perturbation simulation approach, noting that models 'should be re-optimized if you decided to remove one input' and that 'model comparison should be conducted by a blind test, not all entire dataset used for training.' These methodological critiques directly apply to the misexpression predictions, creating uncertainty about the claimed accuracy of these predictions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "721a3908-a74f-46a9-824d-2784edbbf491",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "The authors conclude that simple functional forms relating TF concentrations to eve expression are highly predictive, demonstrating that precise positional information is available from measured gradients alone through combined morphogen action, with activators and repressors contributing symmetrically without requiring pairwise interactions or specific binding site arrangements.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers questioned whether 'any novel prediction that could be experimentally tested has been derived from the model,' requesting that 'this is an issue that should be made more explicit by the authors.' Combined with concerns about statistical validation ('conclusions should be drawn from a blind test or N-fold cross validation') and variable selection methods, the broader mechanistic conclusions remain uncertain pending proper validation and testable predictions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "b82f2870-37b7-43fa-b0ee-a4bdb8031fad",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R9",
+      "result_type": "peer",
+      "result": "The authors propose that Hb exhibits concentration-dependent dual regulation, acting as a repressor in eve 3+7 and an activator in eve 2, with the quadratic term in the eve 3+7 model producing better predictions. They cite analogous concentration-dependent regulation in other systems.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the authors present this as a key finding, reviewers' concerns about the perturbation simulation methodology ('the model was learned and optimized based on [certain] input signal, and should be re-optimized') and the lack of explicit novel testable predictions undermine confidence in this mechanistic interpretation. The concentration-dependent dual regulation hypothesis requires validation beyond model fitting.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "16899c2a-0828-4191-8357-d87736e698be",
+      "content_id": "3024ac44-1f0c-43cd-b9b9-f661ca1da060",
+      "result_id": "R10",
+      "result_type": "peer",
+      "result": "All models were trained using the third time point (approximately 30 minutes before gastrulation) when stripe borders are sharpening and not moving dramatically.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers specifically suggested that authors 'extend their models to earlier stages of development, namely the first 20 min of nuclear cleavage cycle 14' to test model stability during development. This recommendation implies that the choice of a single time point is a limitation that should be addressed, creating uncertainty about whether the models capture developmental dynamics appropriately.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "572a4907-6cdd-4ff7-bd77-a45e25d21418",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "5b09dc6d-9f30-4dc7-90c7-fa30569794ef",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "e1846754-7066-4d3c-b885-88406a67c504",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "50d600bd-8d73-4593-b6a7-1205aafe1b5b",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "21b2badd-4521-4d18-abc1-f4a41809ec19",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "4b23af62-7eb8-44ec-8d7d-5245011e14cf",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "c62e31aa-f416-47e8-995b-59203385663d",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "45696620-e9c2-4fa1-be5d-21cf62a9d9fc",
+      "result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0"
+    },
+    {
+      "claim_id": "384dd255-c5f1-4c3c-94ab-b6d72b07c00e",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "2771d09d-4d30-40e5-8c36-7fb25a6d6621",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "95597b47-7f88-4d98-8988-8beebee15fbc",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "59dee0cb-864f-4a30-9912-fbf2544f3457",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "10ead101-b16c-4848-9132-464a19271ea2",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "28fa90d8-f0bc-41dd-9926-274d849cc7eb",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "d1cb60c0-5993-443c-b5ab-f7d081c8658e",
+      "result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f"
+    },
+    {
+      "claim_id": "4929fb91-dd9c-4a5e-9634-820efbf51acf",
+      "result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93"
+    },
+    {
+      "claim_id": "a0027a92-d7a5-4bbd-8620-c15eb8a2075c",
+      "result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93"
+    },
+    {
+      "claim_id": "d35241e5-8648-4590-9a0e-7c5a44afb05b",
+      "result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93"
+    },
+    {
+      "claim_id": "0de35e1b-af0c-496f-a590-82800ac2fa20",
+      "result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93"
+    },
+    {
+      "claim_id": "79c7187d-f425-473c-8b03-44c64cb63440",
+      "result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93"
+    },
+    {
+      "claim_id": "d481cc1f-eac6-4a83-8631-e1317ee5cb47",
+      "result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93"
+    },
+    {
+      "claim_id": "dc704f91-ec3d-45df-9556-026bc1832d8f",
+      "result_id": "dc6b837d-858b-4250-b90e-73e5deaf22fc"
+    },
+    {
+      "claim_id": "b4e49b5c-67d3-49fe-98e2-1e7241061830",
+      "result_id": "39ba1e8d-5063-4f92-9750-216a5c816e6b"
+    },
+    {
+      "claim_id": "e9803990-03f9-4cad-980f-2fba3de1ac24",
+      "result_id": "39ba1e8d-5063-4f92-9750-216a5c816e6b"
+    },
+    {
+      "claim_id": "03ed0fd1-e44a-4925-bb24-fe436f87e147",
+      "result_id": "39ba1e8d-5063-4f92-9750-216a5c816e6b"
+    },
+    {
+      "claim_id": "3f25b5ae-b73f-4ffe-9f91-ddb9495152cb",
+      "result_id": "39ba1e8d-5063-4f92-9750-216a5c816e6b"
+    },
+    {
+      "claim_id": "55da1023-8c19-4ed9-9115-5f2c727f0bdd",
+      "result_id": "c4172bd7-5aab-459e-8105-341b455b4096"
+    },
+    {
+      "claim_id": "8983180f-cb33-45cc-8abd-ccfec2ec047c",
+      "result_id": "c4172bd7-5aab-459e-8105-341b455b4096"
+    },
+    {
+      "claim_id": "c7c8f03c-3645-446c-9833-b005e4f0889b",
+      "result_id": "c4172bd7-5aab-459e-8105-341b455b4096"
+    },
+    {
+      "claim_id": "0c175b09-a31e-495b-a3de-b6f049dfe73b",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "6399be7f-dd47-40a5-b2b3-fab77b560e03",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "1e0c2334-ed6f-4cf5-9aff-9243b8931e2c",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "ca83d7ff-0287-4d1e-98cd-59853b8e55bd",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "0e81bcc6-2702-4f7e-b832-44a51e724475",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "924e2746-ba79-4846-be12-e0cdf4c9bc17",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "4dbcb4d4-257d-4552-8a0b-4fd165651ce4",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "4b5e2659-661f-4c2a-b5ea-66dc12cdebfa",
+      "result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b"
+    },
+    {
+      "claim_id": "f947007b-6e9a-46b9-a7ce-5cf336302fec",
+      "result_id": "60a61b8a-227c-459f-89ae-8b594f602afe"
+    },
+    {
+      "claim_id": "e8bd1fcd-6178-4b19-a2c3-4cafa04c0034",
+      "result_id": "60a61b8a-227c-459f-89ae-8b594f602afe"
+    },
+    {
+      "claim_id": "2757ce56-1baf-44a1-8b50-5eda1dfd94f2",
+      "result_id": "60a61b8a-227c-459f-89ae-8b594f602afe"
+    },
+    {
+      "claim_id": "741ced81-aedf-4880-b2aa-abb13b127972",
+      "result_id": "60a61b8a-227c-459f-89ae-8b594f602afe"
+    },
+    {
+      "claim_id": "b2edd869-eeeb-4ae4-bf01-ac78bf9e9fb4",
+      "result_id": "4c87864b-0357-4470-87bf-330a39c99913"
+    },
+    {
+      "claim_id": "7955883e-2351-40c5-88f7-9d4fe0d5a8da",
+      "result_id": "4c87864b-0357-4470-87bf-330a39c99913"
+    },
+    {
+      "claim_id": "11cf17d1-c2be-4c4c-814c-ed08970558a7",
+      "result_id": "4c87864b-0357-4470-87bf-330a39c99913"
+    },
+    {
+      "claim_id": "1078c613-dab7-4644-b875-42d10c4137df",
+      "result_id": "4c87864b-0357-4470-87bf-330a39c99913"
+    },
+    {
+      "claim_id": "18a5166c-87dd-40fc-a9bd-4b42fa9cf4c8",
+      "result_id": "5cf6ff24-a818-44d8-9457-d242fa5be17e"
+    },
+    {
+      "claim_id": "3e0d62b8-6a48-43de-8d3c-1a227d438df5",
+      "result_id": "5cf6ff24-a818-44d8-9457-d242fa5be17e"
+    },
+    {
+      "claim_id": "cc18ac29-ea35-4583-8db2-a5673716b445",
+      "result_id": "5cf6ff24-a818-44d8-9457-d242fa5be17e"
+    },
+    {
+      "claim_id": "ba78b078-3131-4243-bab9-30bbde103a08",
+      "result_id": "a9328333-3431-4a38-8d78-65312340e461"
+    },
+    {
+      "claim_id": "45ebed8a-d392-456a-94a8-1eb3fb450a5b",
+      "result_id": "a9328333-3431-4a38-8d78-65312340e461"
+    },
+    {
+      "claim_id": "1bb8ab6c-76f3-489e-b935-8653baee5b3c",
+      "result_id": "a9328333-3431-4a38-8d78-65312340e461"
+    },
+    {
+      "claim_id": "14245d6a-025d-454f-b2e3-31ba0ae4d7f5",
+      "result_id": "a9328333-3431-4a38-8d78-65312340e461"
+    },
+    {
+      "claim_id": "a3e18475-4706-477a-9c29-dfd80917cac1",
+      "result_id": "a9328333-3431-4a38-8d78-65312340e461"
+    },
+    {
+      "claim_id": "13f985b2-87bf-433a-9c45-8f1368fba3b7",
+      "result_id": "a9328333-3431-4a38-8d78-65312340e461"
+    },
+    {
+      "claim_id": "21e53f19-4a61-40d3-9a69-bd0818e90f7d",
+      "result_id": "05876339-435d-4335-9fb2-55753a02ce75"
+    },
+    {
+      "claim_id": "4f4217b4-af47-42a0-8986-c6f27e1baf6c",
+      "result_id": "05876339-435d-4335-9fb2-55753a02ce75"
+    },
+    {
+      "claim_id": "fda0eab6-906d-45b6-820d-0ca401d8aef0",
+      "result_id": "05876339-435d-4335-9fb2-55753a02ce75"
+    },
+    {
+      "claim_id": "eddb26fb-667f-4b24-b34a-5054e5d63618",
+      "result_id": "7fe97e0a-a482-4eab-b1dd-cf6bf99f22bf"
+    },
+    {
+      "claim_id": "ef7e0eb0-2522-494b-b789-864560e3a27d",
+      "result_id": "26fd257a-c7ff-45c7-a4ea-b57e42f25683"
+    },
+    {
+      "claim_id": "acd4203b-1e23-4928-a05e-756286308747",
+      "result_id": "26fd257a-c7ff-45c7-a4ea-b57e42f25683"
+    },
+    {
+      "claim_id": "4929fb91-dd9c-4a5e-9634-820efbf51acf",
+      "result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78"
+    },
+    {
+      "claim_id": "a0027a92-d7a5-4bbd-8620-c15eb8a2075c",
+      "result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78"
+    },
+    {
+      "claim_id": "d35241e5-8648-4590-9a0e-7c5a44afb05b",
+      "result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78"
+    },
+    {
+      "claim_id": "0de35e1b-af0c-496f-a590-82800ac2fa20",
+      "result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78"
+    },
+    {
+      "claim_id": "79c7187d-f425-473c-8b03-44c64cb63440",
+      "result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78"
+    },
+    {
+      "claim_id": "d481cc1f-eac6-4a83-8631-e1317ee5cb47",
+      "result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78"
+    },
+    {
+      "claim_id": "b4e49b5c-67d3-49fe-98e2-1e7241061830",
+      "result_id": "0f6feafc-537a-4a2e-b2d1-b21889d5c698"
+    },
+    {
+      "claim_id": "e9803990-03f9-4cad-980f-2fba3de1ac24",
+      "result_id": "0f6feafc-537a-4a2e-b2d1-b21889d5c698"
+    },
+    {
+      "claim_id": "03ed0fd1-e44a-4925-bb24-fe436f87e147",
+      "result_id": "0f6feafc-537a-4a2e-b2d1-b21889d5c698"
+    },
+    {
+      "claim_id": "3f25b5ae-b73f-4ffe-9f91-ddb9495152cb",
+      "result_id": "0f6feafc-537a-4a2e-b2d1-b21889d5c698"
+    },
+    {
+      "claim_id": "55da1023-8c19-4ed9-9115-5f2c727f0bdd",
+      "result_id": "33adb521-7c0b-4a5c-a6ce-505f99b5f66c"
+    },
+    {
+      "claim_id": "8983180f-cb33-45cc-8abd-ccfec2ec047c",
+      "result_id": "33adb521-7c0b-4a5c-a6ce-505f99b5f66c"
+    },
+    {
+      "claim_id": "c7c8f03c-3645-446c-9833-b005e4f0889b",
+      "result_id": "33adb521-7c0b-4a5c-a6ce-505f99b5f66c"
+    },
+    {
+      "claim_id": "dc704f91-ec3d-45df-9556-026bc1832d8f",
+      "result_id": "18132468-470a-449b-ad82-4b98b9740a76"
+    },
+    {
+      "claim_id": "0c175b09-a31e-495b-a3de-b6f049dfe73b",
+      "result_id": "fb718045-9de6-40c7-81b5-3f958dba006d"
+    },
+    {
+      "claim_id": "ca83d7ff-0287-4d1e-98cd-59853b8e55bd",
+      "result_id": "fb718045-9de6-40c7-81b5-3f958dba006d"
+    },
+    {
+      "claim_id": "0e81bcc6-2702-4f7e-b832-44a51e724475",
+      "result_id": "fb718045-9de6-40c7-81b5-3f958dba006d"
+    },
+    {
+      "claim_id": "924e2746-ba79-4846-be12-e0cdf4c9bc17",
+      "result_id": "fb718045-9de6-40c7-81b5-3f958dba006d"
+    },
+    {
+      "claim_id": "4dbcb4d4-257d-4552-8a0b-4fd165651ce4",
+      "result_id": "fb718045-9de6-40c7-81b5-3f958dba006d"
+    },
+    {
+      "claim_id": "4b5e2659-661f-4c2a-b5ea-66dc12cdebfa",
+      "result_id": "fb718045-9de6-40c7-81b5-3f958dba006d"
+    },
+    {
+      "claim_id": "2757ce56-1baf-44a1-8b50-5eda1dfd94f2",
+      "result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5"
+    },
+    {
+      "claim_id": "741ced81-aedf-4880-b2aa-abb13b127972",
+      "result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5"
+    },
+    {
+      "claim_id": "b2edd869-eeeb-4ae4-bf01-ac78bf9e9fb4",
+      "result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5"
+    },
+    {
+      "claim_id": "7955883e-2351-40c5-88f7-9d4fe0d5a8da",
+      "result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5"
+    },
+    {
+      "claim_id": "11cf17d1-c2be-4c4c-814c-ed08970558a7",
+      "result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5"
+    },
+    {
+      "claim_id": "1078c613-dab7-4644-b875-42d10c4137df",
+      "result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5"
+    },
+    {
+      "claim_id": "18a5166c-87dd-40fc-a9bd-4b42fa9cf4c8",
+      "result_id": "b2b1ac4e-a440-4e8e-bf3c-5333e666cabc"
+    },
+    {
+      "claim_id": "3e0d62b8-6a48-43de-8d3c-1a227d438df5",
+      "result_id": "b2b1ac4e-a440-4e8e-bf3c-5333e666cabc"
+    },
+    {
+      "claim_id": "cc18ac29-ea35-4583-8db2-a5673716b445",
+      "result_id": "b2b1ac4e-a440-4e8e-bf3c-5333e666cabc"
+    },
+    {
+      "claim_id": "ba78b078-3131-4243-bab9-30bbde103a08",
+      "result_id": "721a3908-a74f-46a9-824d-2784edbbf491"
+    },
+    {
+      "claim_id": "45ebed8a-d392-456a-94a8-1eb3fb450a5b",
+      "result_id": "721a3908-a74f-46a9-824d-2784edbbf491"
+    },
+    {
+      "claim_id": "1bb8ab6c-76f3-489e-b935-8653baee5b3c",
+      "result_id": "721a3908-a74f-46a9-824d-2784edbbf491"
+    },
+    {
+      "claim_id": "14245d6a-025d-454f-b2e3-31ba0ae4d7f5",
+      "result_id": "721a3908-a74f-46a9-824d-2784edbbf491"
+    },
+    {
+      "claim_id": "a3e18475-4706-477a-9c29-dfd80917cac1",
+      "result_id": "721a3908-a74f-46a9-824d-2784edbbf491"
+    },
+    {
+      "claim_id": "13f985b2-87bf-433a-9c45-8f1368fba3b7",
+      "result_id": "721a3908-a74f-46a9-824d-2784edbbf491"
+    },
+    {
+      "claim_id": "21e53f19-4a61-40d3-9a69-bd0818e90f7d",
+      "result_id": "b82f2870-37b7-43fa-b0ee-a4bdb8031fad"
+    },
+    {
+      "claim_id": "4f4217b4-af47-42a0-8986-c6f27e1baf6c",
+      "result_id": "b82f2870-37b7-43fa-b0ee-a4bdb8031fad"
+    },
+    {
+      "claim_id": "fda0eab6-906d-45b6-820d-0ca401d8aef0",
+      "result_id": "b82f2870-37b7-43fa-b0ee-a4bdb8031fad"
+    },
+    {
+      "claim_id": "21b2badd-4521-4d18-abc1-f4a41809ec19",
+      "result_id": "16899c2a-0828-4191-8357-d87736e698be"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "5db735c4-9209-42fc-a046-7907738f0aba",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "3f928219-8789-4f1a-8818-ff2b0e8d9b93",
+      "peer_result_id": "9680e1c2-e513-4136-90d6-bcf167dd8b78",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate the same claims (C11, C13-C15, C51, C59) about model accuracy and regulator discovery. OpenEval finds the quantitative results and visual predictions sufficient support. Peer reviewers raise critical concerns about circular reasoning, noting conclusions are drawn from training data rather than blind tests or proper cross-validation, creating uncertainty about validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "32ccf15b-65b6-4bca-b549-91e951e4f733",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "dc6b837d-858b-4250-b90e-73e5deaf22fc",
+      "peer_result_id": "18132468-470a-449b-ad82-4b98b9740a76",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluate C12 regarding dorsoventral information encoded in anteroposterior regulators. OpenEval finds empirical support in visual predictions. Peer reviewers did not challenge this finding, suggesting implicit acceptance of this novel insight about information sufficiency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "d79c98b8-5120-4f86-a607-bd91dad7a2a9",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "39ba1e8d-5063-4f92-9750-216a5c816e6b",
+      "peer_result_id": "0f6feafc-537a-4a2e-b2d1-b21889d5c698",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address C16-C19 about concentration-dependent dual regulation of Hb. OpenEval finds the quadratic model provides biologically plausible resolution of the paradox. Peer reviewers question the methodology of manipulating input signals without re-optimizing model coefficients, undermining confidence in the dual regulation interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "40b3a393-1963-48a9-a089-a9efcf7e1cb7",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "c4172bd7-5aab-459e-8105-341b455b4096",
+      "peer_result_id": "33adb521-7c0b-4a5c-a6ce-505f99b5f66c",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate C20-C22 regarding mutant predictions matching experimental results. OpenEval considers these independent validation of the model. Peer reviewers criticize the perturbation simulation approach, stating models should be re-optimized when inputs change and comparisons should use blind tests, not training data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "06be28ef-815f-47c8-b2f8-f21b19368d3a",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "5cf6ff24-a818-44d8-9457-d242fa5be17e",
+      "peer_result_id": "b2b1ac4e-a440-4e8e-bf3c-5333e666cabc",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both assess C39-C41 about quadratic models capturing fine-scale spatial features in hb misexpression. OpenEval finds strong validation in detailed visual comparisons. Peer reviewers apply their methodological critique about re-optimization and blind testing to these predictions, creating uncertainty about claimed accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "2917d20e-db04-438b-910d-413a3ea7b111",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "a9328333-3431-4a38-8d78-65312340e461",
+      "peer_result_id": "721a3908-a74f-46a9-824d-2784edbbf491",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate C42-C47 regarding high-level mechanistic conclusions about regulation. OpenEval finds collective model success supports these inferences. Peer reviewers question whether novel testable predictions emerge and raise concerns about statistical validation methods and variable selection, leaving mechanistic conclusions uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "cbac7f21-2446-4fc0-829e-267f70c3d2aa",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "05876339-435d-4335-9fb2-55753a02ce75",
+      "peer_result_id": "b82f2870-37b7-43fa-b0ee-a4bdb8031fad",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address C48-C50 about Hb's concentration-dependent dual regulation mechanism. OpenEval finds support in model performance and biological precedent. Peer reviewers' methodological concerns about perturbation simulations and lack of explicit testable predictions undermine confidence in this mechanistic interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "d20871fa-2d3a-4e6a-b8c5-c382fc1a8b9b",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "a44609cc-1ceb-4d98-91c2-aba6765f365b",
+      "peer_result_id": "fb718045-9de6-40c7-81b5-3f958dba006d",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "OpenEval R7 addresses C23-C30 about variable selection and model comparison. Peer R5 covers overlapping claims (C23, C26-C30). OpenEval finds multiple lines of evidence favor the quadratic model. Peer reviewers request investigation of variable correlations, suggest alternative methods like stepwise logistic regression, and raise validation concerns about the variable selection approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "00414c24-992b-4bc8-8923-0c82aa5b03be",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "4c87864b-0357-4470-87bf-330a39c99913",
+      "peer_result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "OpenEval R9 addresses C35-C38 (experimental context from literature). Peer R6 includes these claims plus C33-C34 (model predictions). OpenEval supports the accurate reporting of experimental observations. Peer reviewers criticize the perturbation methodology for kni elimination predictions, undermining confidence in both linear model success and quadratic model explanations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "fc0d28c2-45a4-4636-a8a2-897bed87a614",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "60a61b8a-227c-459f-89ae-8b594f602afe",
+      "peer_result_id": "3a8b9bb2-b381-4a59-9b8c-86e99e9422a5",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Both evaluate overlapping claims about kni perturbations (C33-C34 shared). OpenEval notes discrepancy requiring additional assumptions for quadratic model reconciliation. Peer reviewers apply fundamental methodological critique about re-optimization when inputs change. Both find uncertainty, though for somewhat different reasons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "01849589-bdf6-45bd-bb02-3f85d65f6091",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "85383762-5754-4f81-bfcb-9f4a90ae19e0",
+      "peer_result_id": "16899c2a-0828-4191-8357-d87736e698be",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Minimal overlap (C54 only). OpenEval R1 broadly supports dataset documentation and methods. Peer R10 specifically questions the single time point choice (C54), suggesting extension to earlier developmental stages to test model stability, indicating this methodological choice is a limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "895dd10f-bd98-4d58-9870-c3bc5e4a8ed7",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "1c9d9349-df36-4707-a5d2-48629b39c07f",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval R2 addresses C4-C10 about established knowledge of eve regulation and prior work context. No corresponding peer review evaluation found; these background claims were not specifically challenged by reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "0d5d7e4e-0b80-4691-8805-2542812e324c",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "7fe97e0a-a482-4eab-b1dd-cf6bf99f22bf",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval R13 addresses C52 about limitations of previous modeling efforts. No corresponding peer review evaluation found; reviewers did not specifically challenge the characterization of prior work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    },
+    {
+      "id": "bb1e199a-3e09-4c5b-8bba-05e272cb1792",
+      "submission_id": "955dac44-d26f-4035-a079-01c19720f9fd",
+      "openeval_result_id": "26fd257a-c7ff-45c7-a4ea-b57e42f25683",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval R14 addresses C57-C58 about model prediction of cross-regulatory effects validated by literature. No corresponding peer review evaluation found; this additional validation point was not specifically discussed by reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:53:06.754085Z"
+    }
+  ]
+}

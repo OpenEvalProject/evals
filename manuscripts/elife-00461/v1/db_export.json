@@ -1,0 +1,2371 @@
+{
+  "submission": {
+    "id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:33.883489Z",
+    "updated_at": "2025-10-21T22:51:33.883489Z"
+  },
+  "content": [
+    {
+      "id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "content_type": "manuscript",
+      "content_text": "# Ribosome structures to near-atomic resolution from thirty thousand cryo-EM particles\n\n## Authors\n\n- Xiao-chen Bai<sup>1</sup>\n- Israel S Fernandez<sup>1</sup>\n- Greg McMullan<sup>1</sup>\n- Sjors HW Scheres<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00461.001 Although electron cryo-microscopy (cryo-EM) single-particle analysis has become an important tool for structural biology of large and flexible macro-molecular assemblies, the technique has not yet reached its full potential. Besides fundamental limits imposed by radiation damage, poor detectors and beam-induced sample movement have been shown to degrade attainable resolutions. A new generation of direct electron detectors may ameliorate both effects. Apart from exhibiting improved signal-to-noise performance, these cameras are also fast enough to follow particle movements during electron irradiation. Here, we assess the potentials of this technology for cryo-EM structure determination. Using a newly developed statistical movie processing approach to compensate for beam-induced movement, we show that ribosome reconstructions with unprecedented resolutions may be calculated from almost two orders of magnitude fewer particles than used previously. Therefore, this methodology may expand the scope of high-resolution cryo-EM to a broad range of biological specimens. DOI: http://dx.doi.org/10.7554/eLife.00461.001\n\n## Introduction\n\nFor many years, electron cryo-microscopy (cryo-EM) has held the promise that macromolecular structure determination should in principle be possible to near-atomic resolution from only several thousand projection images of isolated particles in ice (Henderson, 1995; Glaeser, 1999). However, cryo-EM single-particle reconstructions in which protein main-chains may be traced reliably or individual side-chains are well resolved have been limited to large icosahedral viruses, and have typically required averaging over millions of asymmetric units (Grigorieff and Harrison, 2011). These results are in accordance with early observations that the contrast in EM images is not as good as expected from theory (Henderson, 1995). The main limiting factor of the information content in cryo-EM data is radiation damage: the electron dose needs to be limited to prevent the molecules from disintegrating while they are being imaged. However, radiation damage alone is not enough to account for the loss in expected contrast. Two additional factors that have been attributed to information loss in cryo-EM images are poor detective quantum efficiency (DQE, a frequency-dependent measure for the signal-to-noise performance) of conventional recording devices, and beam-induced movement or charging of the specimen during imaging (Henderson, 1992).\n\nTraditionally, EM images have been recorded on photographic film, which has a large field of view and a reasonably good DQE, but is not convenient for high-throughput methods due to laborious steps of film development and digitization. Therefore, over the past decade many electron microscopes have been equipped with charge-coupled device (CCD) cameras. These digital detectors allow instant inspection of the images and are much more convenient in automated data collection schemes, so that large quantities of data may be obtained with relatively little effort (Stagg et al., 2006). However, the conversion of electrons into visible light that is detected by the CCD comes at the expense of a poorer DQE, in particular at higher voltages where many microscopes operate best. Consequently, despite the advantages of CCDs in terms of ease-of-use and data quantity, most of the near-atomic resolution cryo-EM structures published to date have been recorded on photographic film (Grigorieff and Harrison, 2011).\n\nThe second factor that has been attributed to the missing contrast in cryo-EM images is related to the radiation damage itself. For every elastic scattering event, which contributes positively to the phase contrast image, also three to four inelastic scattering events occur (Henderson, 1995). The inelastic events deposit energy in the sample, which leads to radiation damage by breaking covalent bonds and the generation of free radicals. Besides destroying the very structures one aims to determine, these interactions also generate charges in the sample that could lead to image blurring by deflecting the incoming electrons. In addition, radiolysis products such as hydrogen gas may build up internal pressure, thus leading to mechanical stress in the sample (Leapman and Sun, 1995). At high electron doses this stress ultimately leads to bubbling of the sample, while at much lower doses it has been postulated to induce movements that cause blurring of the images (Glaeser, 2008).\n\nRecent technological advances may mitigate the image-blurring effects of both poor detectors and beam-induced movements. Building on technological developments that were initiated almost a decade ago (Prydderch et al., 2003), three different companies now sell digital cameras that detect electrons directly, that is, without the need to first convert electrons into visible light. Initial characterization of these direct electron detectors indicated that their DQE at high resolution is superior to that of CCD and film (McMullan et al., 2009a), in particular when backscattering of electrons is reduced by back-thinning of the substrate (McMullan et al., 2009c). An additional advantage of these devices is that they record images at high rates: ranging from 16 to 400 images per second for the currently available products. This allows the recording of a video during typical exposures, compared to a single image on film or CCD. By processing these videos, Grigorieff and colleagues previously showed that beam-induced movements could be followed for large icosahedral viruses, although the gain in resolution compared to similar data recorded on film was not as large as expected, possibly due to experimental design (Brilot et al., 2012; Campbell et al., 2012).\n\nHere, we assess the potential of a back-thinned FEI Falcon direct electron detector for cryo-EM structure determination by recording videos on two well-characterized test samples: the prokaryotic and eukaryotic ribosome. Ribosome samples have been characterized by cryo-EM for more than 20 years (Frank et al., 1991), and encompass characteristics that are favorable to cryo-EM structure determination: their large content of dense RNA and their large molecular weight (2.8 MDa for prokaryotic 70S and \u223c4 MDa for eukaryotic 80S ribosomes) result in images of relatively high contrast compared to many other macromolecular complexes, and RNA is known to be less radiation sensitive than protein. On the other hand, the ribosome is an intrinsically flexible macromolecular machine, which often leads to the presence of more than one structural state in ribosome samples. This represents a challenge, as advanced classification techniques are required to separate the different conformations into structurally homogeneous subsets that are amenable to single-particle reconstruction (Scheres et al., 2007; Fischer et al., 2010). In addition, the absence of symmetry in the ribosome makes it necessary to image many more particles (and to determine many more orientations) than is the case for icosahedral viruses with 60-fold symmetry. The combination of structural variability and the lack of symmetry may account for the fact that near-atomic resolution cryo-EM maps of ribosome structures have remained elusive thus far.\n\nIn the experiments described below, we used a 70S T. thermophilus ribosome sample to develop image-processing procedures that account for beam-induced movement of individual particles. Our detector operates at a rate of 17 frames per second, and we recorded 16-frame videos during 1-s exposures. At a total dose of 16 electrons/\u00c52, each individual video frame therefore integrates less than 1 electron/\u00c52. We expected the high noise levels in these individual frames to pose severe limitations on the accuracy with which these frames may be aligned. Because the alignment accuracy of individual particles remains unknown in typical single-particle analysis, we collected an entire data set as tilted pairs and used tilt-pair analysis to experimentally assess alignment errors for video frames (Rosenthal and Henderson, 2003). Guided by the results obtained from this analysis, we then developed a statistical video processing procedure that does not depend on tilted images. Application of this procedure to a second, untilted data set of 80S S. cerevisiae ribosomes serves to illustrate the impact these detectors, combined with suitable video processing procedures, will have on the field of cryo-EM structure determination.\n\n## Results\n\nWe recorded tilt pairs of videos on the 70S\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00461/elife-00461-fig1-v1.jpg)\n\n**Figure 1.:** (A) The 16-frame (1-s) average of two untilted videos. The scale bar indicates 50 nm. Relative positions for independently aligned four-frame averaged particles are shown with circles connected by white lines. The relative position of the average from the first four frames is shown in green, the relative position of the last four frames in red. The differences between these relative positions are exaggerated 25 times for improved clarity, and only those four-frame averages for which correct alignment was confirmed by tilt-pair analysis are included. Movements in the area on the left are smaller (up to 1.5 \u00c5) then in the area on the right (up to 10 \u00c5). (B) Examples of two individual ribosome particles as averages over a decreasing number of video frames. The scale bar indicates 20 nm. Zoomed-in areas of micrographs, additional individual particles and reference-free 2D class averages for both the 70S and 80S data are shown in Figure 1\u2014figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.00461.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00461/elife-00461-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The scale bar indicates 50 nm. (B) Individual 70S particles. The scale bar indicates 20 nm. (C) Reference-free 2D class averages showing distinct views of the 70S ribosome. (D\u2013F) As in (A\u2013C), but for the 80S data.The scale bar indicates 50 nm.DOI: http://dx.doi.org/10.7554/eLife.00461.004\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00461/elife-00461-fig2-v1.jpg)\n\n**Figure 2.:** (A) Histogram of tilt-pair alignment errors for particles that were calculated as 16-frame averages. The width of the first peak at half its height is 2\u00b0. This value is plotted as the tilt-pair alignment precision in (B). (B) Tilt-pair alignment precision (top) and the number of incorrectly aligned particle pairs (bottom) for independent refinements of 16-frame, 8-frame, 6-frame, 4-frame and 2-frame averages (ranges in frame numbers are indicated on the x-axis); the total number of particle pairs was 15,202. Particle pairs with alignment errors larger than three times the reported precision were considered as aligned incorrectly. (C) Gold-standard FSC curves. The same blue colors are used as in (B); orange lines indicate the results of the statistical video-processing approach described in the main text. (D) FSC-curves between a rigid-body fitted atomic model and the cryo-EM maps (using the same color scheme as in [C]). (E\u2013F) Illustrative density and atomic model for the reconstructions obtained from 16-frame averaged particles (light blue), independently refined four-frame averages (dark blue) and the statistical video processing procedure (orange). The density maps were sharpened with B-factors of \u2212211, \u2212185 and \u2212178 \u00c52, respectively. Complete density maps for these three reconstructions are shown in Figure 2\u2014figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.00461.005\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00461/elife-00461-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The large subunit is shown in blue; the small subunit in yellow.DOI: http://dx.doi.org/10.7554/eLife.00461.006\n\nWe then assessed how accurately particle movement may be followed during the electron exposure. To this purpose, we partitioned each original 16-frame average particle into multiple independent particles that were calculated as the average of a varying number of individual video frames. In this manner, we artificially created four additional data sets of increasing size, comprising averages of 2 \u00d7 8, 3 \u00d7 6, 4 \u00d7 4 or 8 \u00d7 2 video frames for each original particle. Tilt-pair analysis for these data showed that, as expected, the numbers of correctly aligned particles as well as the alignment precision decrease with averaging over fewer video frames (Figure 2B). In addition, we noted a trend for particles that were calculated from later video frames to align less accurately, most likely as a result of accumulated radiation damage. To assess the effects of these alignment errors on reconstruction quality, we also inspected the Fourier Shell Correlation (FSC) curves that were reported for the four refinements (Figure 2C). The best reconstructions, at 5.4 \u00c5 resolution, were obtained when using averages of six or four individual video frames, which apparently represent the optimum between accurately describing particle movement and not introducing too large alignment errors for these data. Analysis of the orientations for the four-frame averaged particles that were aligned correctly according to the tilt-pair analysis revealed that overall rotations and translations during the exposure are in the order of 1.7 \u00b1 1.2\u00b0 and 4.2 \u00b1 2.3 \u00c5, respectively. Complicated patterns of movement for particles on some of the illuminated areas (e.g., see white lines in Figure 1A) indicate that the observed movements were not merely the result of a drifting stage, but more likely to be attributed to, as yet poorly understood, beam-induced effects.\n\nAlthough useful for tilt-pair analysis, treating the averages of multiple video frames as completely independent also left valuable information unused. The observations that beam-induced movements are relatively small, and that the 16-frame averages may be aligned most accurately, represent valuable prior knowledge that may be efficiently expressed using statistical refinement methods. In the \u2018Materials and methods' section we describe the implementation of a probabilistic prior on the orientations of the video frames inside a Bayesian refinement approach (Scheres, 2012a). This prior down-weights orientations for the video frames in a continuous manner according to their distance from the orientation determined for the 16-frame averages. Application of this procedure to the 70S ribosome data yielded a reconstruction with a resolution of 5.1 \u00c5 (orange line in Figure 2C). Comparison of the FSCs between the reconstructed maps and a rigid-body fitted crystal structure (Selmer et al., 2006), decreasing estimated B-factors, and visual inspection of the maps all confirmed that reconstruction quality may be improved by following the movement of individual particles, and that the statistical approach outperforms the straightforward use of multi-frame averaged particles in this respect (Figure 2D\u2013F, Figure 2\u2013figure supplement 1).\n\nFinally, the developed procedure was applied to a second, untilted data set that was collected on an 80S\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00461/elife-00461-fig3-v1.jpg)\n\n**Figure 3.:** (A) Gold-standard FSC curves for class 1 (red) and class 2 (green). (B) Slices through the reconstructions of class 1 (left) and class 2 (right). The fuzzy appearance for the density of the 40S subunits (green and red lines) is an indication of unresolved structural heterogeneity. (C\u2013G) Densities for the 60S subunit of class 1 showing a protein loop interacting with a flipped-out RNA base (C), a short stretch of an RNA helix (D), a \u03b2-strand (E), a \u03b2-sheet (F), and an \u03b1-helix (G). (H\u2013I) Density for the 40S subunit of class 1 showing a well-resolved \u03b1-helix (H) and a poorly-resolved one (I). The density map of class 1 was sharpened with a B-factor of \u2212160 \u00c52. (J) FSC curves between the map of class 1 and the rigid-body fitted atomic models of the entire 80S particle, and for the 40S and 60S subunits separately. (K) As in J, but for class 2.DOI: http://dx.doi.org/10.7554/eLife.00461.008\n\n## Discussion\n\nThe reconstructions presented in this paper are of significantly higher resolution than any prokaryotic or eukaryotic ribosome structures that were calculated from cryo-EM data on photographic film or CCD. Moreover, they were obtained from unprecedented small numbers of particles. For comparison, currently the highest resolution ribosome map in the EMDB (an 80S structure from the plant Triticum aestivum) was calculated from almost 1.4 million particles and was reported to be at 5.5 \u00c5 resolution (Armache et al., 2010). We obtained reconstructions with useful information up to \u223c4 \u00c5 resolution from nearly two orders of magnitude fewer particles. The observation that we could calculate maps with useful information up to 90% of the Nyquist frequency surpassed our initial expectations and clearly illustrates the potential of direct electron detectors combined with adequate video processing for cryo-EM structure determination.\n\nIncorporation of the new detectors into automated data collection schemes will result in much larger amounts of data than we have used in our study. For relatively high molecular-weight complexes that display sufficient contrast for accurate alignment and classification, this may then allow high-resolution reconstruction of many more structural states, or of states that are adopted by only a small fraction of the particles. Moreover, if the sample is sufficiently rigid to exist in only one or a few distinct states, then larger amounts of data are expected to lead to even higher resolutions than the ones reported here. For example, following the SNR considerations proposed by (Rosenthal and Henderson, 2003), our overall resolution of 4.5 \u00c5 would increase to \u223c3.3 \u00c5 if we would apply our approach to 1 million particles of similar quality (provided no other resolution-degrading factors play a role). Therefore, we foresee that the combination of direct electron detectors, video processing approaches, and automated data collection schemes will significantly increase the number of specimens for which de novo building of atomic models into cryo-EM maps becomes feasible.\n\nThe advantages of direct electron detectors and video processing procedures are not limited to relatively large complexes alone. Current alignment procedures are often severely limited by low SNRs in images of complexes that are smaller than \u223c300 to 500 kDa. Also in this respect, the ability to record videos may provide significant benefits. Because SNRs in individual particles drop quickly with increasing spatial frequency image alignments are typically mainly driven by the lower-resolution components in the images (Henderson et al., 2011; Scheres and Chen, 2012). These components have been observed to remain intact after much higher electron doses than the high-resolution information (Hayward and Glaeser, 1979; Baker and Rubinstein, 2010). Therefore, relatively long videos with a high dose could be used to obtain reliable low-resolution components, while a dose-dependent weighting scheme to account for radiation damage may be used to optimize the SNR for higher spatial frequencies at the same time (Campbell et al., 2012). Such procedures are expected to significantly lower the size limit of particles that may still be aligned correctly and are thus amenable to cryo-EM structure determination. Still, accurately following the movement of small particles during videos will be more challenging than for the high-contrast ribosome particles presented here. Therefore, in order to also obtain near-atomic resolutions for smaller particles, further investigations into the nature of beam-induced image blurring and how to stop it will still be necessary. Also these investigations are expected to benefit significantly from the possibility to analyze beam-induced movements during videos recorded by direct electron detectors.\n\nBased on our observations and the potential for further improvements in the technique, we believe the future for cryo-EM structure determination to be bright. Currently available detectors, combined with video processing algorithms like the one presented here, will result in higher-resolution cryo-EM structures for many more samples than those reported until now. Meanwhile, cryo-EM image quality will keep improving as ongoing technological developments such as single-electron counting detectors (McMullan et al., 2009b), phase-plate imaging (Nagayama, 2011) and better sample preparation techniques mature. Therefore, we are optimistic that the field will continue to progress towards fulfilling the promise of providing near-atomic resolution reconstructions, and thereby more detailed biological insights, for a wide range of specimens.\n\n## Materials and methods\n\n## Sample preparation\n\n70S T. thermophilus ribosome samples with tRNAs and mRNA were produced as described previously (Selmer et al., 2006). 80S ribosomes were purified from S. cereviseae strain YAS-2488. Cells were grown to OD600 = 2\u20134 and starved for 10 min at 4\u00b0C in buffer without sucrose (20 mM Hepes-KOH pH 7.45, 150 mM KCl, 150 mM K-acetate, 10 mM Mg-acetate, 1 mg/ml heparin, 0.1 mM PMFS, 0.1 mM benzamidine, 2 mM DTT). After starvation, cells were frozen in liquid nitrogen and mechanically disrupted by a blender machine operated under liquid nitrogen conditions. The lysate was allowed to defrost at 4\u00b0C and then clarified by a 20 min centrifugation at 14,500\u00d7g. The 80S ribosomes from the supernatant were pelleted through a sucrose cushion for 4 hr at 45,000 rpm in a Ti45 Beckman Coulter rotor (Palo Alto, California, USA), in buffer that was supplemented with 1 M sucrose. The pellets were re-suspended in a sucrose gradient buffer without sucrose (20 mM Hepes-KOH pH 7.45, 50 mM KCl, 5 mM Mg-acetate, 0.1 mM PMFS, 0.1 mM benzamidine, 2 mM DTT) and incubated for 15 min with 1 mM puromycin. The sample was loaded on a 10\u201340% sucrose gradient and centrifuged for 18 hr at 28,000 rpm in a Ti25 zonal rotor. A single peak after gradient fractionation was confirmed to correspond to 80S ribosome particles. All ribosomal proteins, as well as the protein Stm1, were identified using mass spectrometry. For storage in liquid nitrogen, the buffer was exchanged to buffer M (3 mM Hepes-KOH pH 7.45, 6.6 mM Tris-acetate pH 7.2, 3 mM NH4Cl, 6.6 mM NH4-acetate, 48 mM K-acetate, 4 mM Mg-acetate, 2.4 mM DTT) and the sample was concentrated to 6 \u03bcM.\n\n## Electron microscopy\n\nFor both the 70S and 80S samples, aliquots of 3 \u03bcl at a concentration of \u223c80 nM were incubated for 30 s on glow-discharged holey carbon grids (Quantifoil R2/2), on which a home-made continuous carbon film (estimated to be \u223c30-\u00c5 thick) had previously been deposited. Grids were blotted for 2.5 s and plunge-frozen in liquid ethane using an FEI Vitrobot. Grids were transferred to an FEI Polara G2 microscope that was operated at 300 kV. A C2 aperture of 70 \u03bcm and an objective aperture of 100 \u03bcm were used. Defocus was varied from 1.3 to 3.8 \u03bcm. Using an extraction voltage of 3900 V, a gun lens setting of 2 and a spotsize of 4 or 5, an estimated dose of 16 electrons/\u00c52 was applied during 1-s exposures. The beam used was larger than the Quantifoil hole, illuminating the carbon all around the hole. Images were recorded at the approximate center of the hole on a back-thinned FEI Falcon detector at a calibrated magnification of 79,096 (yielding a pixel size of 1.77 \u00c5). The small area that was imaged relative to the area that was illuminated resulted in a beam-tilt that was much smaller than the one expected from the relatively large C2 aperture that we used, but we cannot exclude that our final resolution was limited by beam-tilt. An in-house built system was used to intercept the videos from the detector (we were capable of recording 16 frames during a 1-s exposure). All data were collected manually during two half-day sessions for the 70S sample, and a single half-day session for the 80S sample. Tilt pairs were collected at tilt angles of 0\u00b0 and 10\u00b0. Electron micrographs were evaluated for astigmatism and drift. For the 70S sample, 159 out of 285 micrograph pairs were selected for further analysis; 260 out of 291 micrographs were selected for the 80S sample.\n\n## Image processing\n\nA total of 24,044 70S particle pairs and 72,447 80S particles were selected using the swarm tool in the e2boxer.py program of EMAN2 (Tang et al., 2007), contrast transfer function parameters were estimated using CTFFIND3 (Mindell and Grigorieff, 2003), and all 2D and 3D classifications and refinements were performed in RELION (Scheres, 2012b). Prior to 3D refinement, both data sets were subjected to reference-free 2D class averaging and 3D classification to identify structurally homogeneous subsets. Initial 3D classifications were run for 25 iterations, with four classes, at the original image size, with an angular sampling of 7.5\u00b0, and a regularization parameter T = 4. For the 70S data set, discarded particles included 50S subunits and 70S ribosomes with tRNAs in the E- and P-sites, and 15,202 particles were selected to correspond to 70S ribosomes with a single tRNA in the P-site. For the 80S data, dissociated subunits could again be identified in the 2D class averages, but initial 3D classification did not yield structurally distinct classes. However, after 3D refinement of a single model, blurry density for the 40S subunit indicated that significant structural heterogeneity was still present. In a subsequent 3D classification run with four classes, an angular sampling of 1.8\u00b0 was combined with local angular searches around the refined orientations, and the refined single model was used as a starting model. This calculation separated two conformations with different degrees of ratchet-like movement, comprising 35,813 and 22,638 particles, respectively.\n\nInitial 3D classifications and all 3D refinements were started from ribosome maps that were downloaded from the Electron Microscopy Data Bank (EMDB-1657 for the 70S; EMDB-1780 for the 80S ribosome; Seidelt et al., 2009; Armache et al., 2010) and subsequently low-pass filtered to 60 \u00c5. All 3D refinements used gold-standard FSC calculations to avoid overfitting and reported resolutions were based on the FSC = 0.143 criterion (Scheres and Chen, 2012). Final FSC curves were calculated using a soft spherical mask (with a 5-pixel fall-off) on the two independent reconstructions. Prior to visualization, all density maps were corrected for the modulation transfer function (MTF) of the detector, and then sharpened by applying a negative B-factor that was estimated using automated procedures (Rosenthal and Henderson, 2003).\n\nRigid body fitting of 70S and 80S crystal structures (PDB-IDs: 2WH1-2, Weixlbaumer et al., 2008, and 3U5B-E, Ben-Shem et al., 2011, respectively) was performed using UCSF Chimera (Pettersen et al., 2004). In order to describe the distinct degrees of ratchet rotation in the two 80S conformations, the 40S and 60S subunits were fitted separately. The resulting models merely served to illustrate the quality of our maps; we did not analyze our maps in terms of differences with the crystal structures. To allow others to mine our structures for additional information (e.g., we see continuous density for RNA nucleotides 440\u2013499 of expansion segment 7 and nucleotides 1954\u20132093 of expansion segment 27 in 25S, which were not modelled in the 80S crystal structure), we have deposited our maps at the EMDB (accession numbers 2275, 2276 and 2277).\n\n## Statistical video processing\n\nA novel procedure for video-frame alignment was developed that exploits the relatively high accuracy of aligning 16-frame average particles (Figure 2B), as well as the prior knowledge that particles are unlikely to undergo very large rotations or translations during the 1-s exposure. To this purpose, we defined Gaussian prior distributions on the rotations and translations of the video frames, and centered these distributions at the observed orientations for alignments with the corresponding 16-frame average particles. The priors were then incorporated as prior probability distributions, P(\u03c6|\u0398,Y) in Eq. 7 of Scheres (2012a), in the Bayesian refinement approach of the RELION program. This open-source program may be downloaded from http://www2.mrc-lmb.cam.ac.uk/relion; the video-processing procedures described here are available in version 1.2. The widths of the priors were implemented as user-controlled parameters that may be tuned to express the expected amount of movement during the video. In addition to the Gaussian priors, we also implemented an option to use running averages of a user-defined number of frames for the alignments. This allows more precise sampling of the particle movement than the four discrete 4-frame averages along the 16-frame videos shown in Figure 1. The corresponding orientations (or probability distributions in the Bayesian approach) are only applied to the single, middle video frame of the running average window. For all calculations shown in this paper, we used running averages of five video frames; a standard deviation of 1\u00b0 for the priors on the Euler angles; and the standard deviation that was estimated for the picked particle positions in the 16-frame alignment for the prior on the translations. Rotational searches (or integrations in the Bayesian approach) were then limited to \u00b13\u00b0 with a step size of 0.45\u00b0, while translational searches were performed up to \u00b12 pixels with a step size of 0.5 pixels. We note that in this case we used the observed translations and rotations of the four-frame average refinements to choose the widths of our priors. Alternatively, one may optimize these values based on their effects on the gold-standard FSC curve. Although not pursued in this study, the Bayesian approach also provides a convenient framework to estimate these widths from the data themselves. In addition, as the field gains a better understanding of beam-induced movements, more detailed priors (e.g., with widths that depend on the accumulated dose for each frame) may easily be incorporated.\n",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Werner K\u00fchlbrandt, Max Planck Institute for Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00461.010](https://doi.org/10.7554/eLife.00461.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cRibosome structures to near-atomic resolution from thirty thousand cryo-EM particles\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Werner K\u00fchlbrandt (Reviewing editor); Niko Grigorieff (peer reviewer). The Reviewing editor and the other reviewers discussed their comments, and the Reviewing editor has assembled the following summary to help you prepare a revised submission.\n\nBai et al report the cryo-EM structure of the yeast 80S ribosome at close to 4 \u00c5 resolution, determined from images recorded with the new direct electron detection Falcon camera. An essential modification of the camera readout that is not yet commercially available enabled the recording of dose-fractionation movies. By aligning and averaging individual subframes from these movies, the authors were able to overcome the effects of beam-induced specimen movement, which has been the most serious limitation in high-resolution data acquisition by cryo-EM until now. Remarkably, movies of 35,000 particles or less recorded in a single session were sufficient to achieve this impressive result.\n\nSimilar cameras have been developed by Gatan and the Direct Electron company. The high detective quantum efficiency of these innovative devices makes them far superior to the widely used scintillator-based CCD cameras and even to film, which has been the medium of choice for high-resolution cryo-EM data recording. The new direct electron detection cameras are set to revolutionize cryo-EM, and the present study is the first to take advantage of their full power to determine the structure of an important macromolecular complex at high resolution.\n\nAn important factor contributing to this success is new software. Scheres' powerful Bayesian approach already proved in the RELION program to excel in the job of sorting projections from heterogeneous samples. This frame-by-frame particle alignment had already been studied by Brilot et al (2012) and Campbell et al. (2012) but with limited improvement in resolution. Scheres and coworkers prove the superiority of their statistical framework over more traditional methods, bringing the resolution of single-particle methods into a new territory. The paper requires only minor modifications, as below.\n\n1. The concept of a \u201cprobabilistic prior\u201d will be unfamiliar to most readers and requires a brief explanation. How were the widths of the priors for the statistical movie processing chosen? Did the authors perform some kind of optimization, maybe by observing improvements in the gold-standard FSC? How did the authors take into account the observation that the beam-induced movement per dose unit is larger at the beginning of an exposure and smaller towards the end?\n\n2. Comments on image processing:\n\n* What was the beam tilt in the centre of the illuminated area, and how was it measured or estimated? How much beam tilt would be acceptable at 4 \u00c5 resolution? Can you exclude that the resolution was limited by beam tilt?\n\n* Please provide details on the classification (window size, number of classes, regularization factor, how many cycles?).\n\n* Code for this novel alignment procedure should be provided.\n\n* It would be desirable, and a great asset for the community, if the data would be deposited as a benchmark that allowed the testing of other algorithms. EMDB now allows for such depositions.\n\n3. Comments on figures:\n\n* Figure 1: The red and green dots reinforce the (false) notion that the particle moves by this amount. The underlying vector with exaggerated length is okay.\n\n* Figure 2G: there should be a panel 2G (or a separate figure) showing complete density maps of the 80S ribosome for the three modes of frame integration. Many readers are familiar with the appearance of the ribosome in various reconstructions and reproduction of the full maps would provide a good qualitative appreciation of the results.\n",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "689a7f9f-a800-4d86-ab18-5a3d8ddeb82c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C1",
+      "claim": "Electron cryo-microscopy (cryo-EM) single-particle analysis has become an important tool for structural biology of large and flexible macromolecular assemblies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although electron cryo-microscopy (cryo-EM) single-particle analysis has become an important tool for structural biology of large and flexible macro-molecular assemblies, the technique has not yet reached its full potential.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established scientific consensus about the role of cryo-EM in structural biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "57c67de2-363f-4a54-a947-bdf49f69b242",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C2",
+      "claim": "Cryo-EM has not yet reached its full potential.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although electron cryo-microscopy (cryo-EM) single-particle analysis has become an important tool for structural biology of large and flexible macro-molecular assemblies, the technique has not yet reached its full potential.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an assessment based on known limitations in the field and is supported by the subsequent discussion of limiting factors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "62bcbdce-2fbb-4ff9-9fdb-a9ebd1ea7c01",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C3",
+      "claim": "Radiation damage imposes fundamental limits on cryo-EM resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Besides fundamental limits imposed by radiation damage, poor detectors and beam-induced sample movement have been shown to degrade attainable resolutions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge in the field, supported by references to prior work on radiation damage effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "41820fd5-b860-4f71-be35-59c647ca7a7c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C4",
+      "claim": "Poor detectors degrade attainable resolutions in cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Besides fundamental limits imposed by radiation damage, poor detectors and beam-induced sample movement have been shown to degrade attainable resolutions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement references established findings about detector limitations, as indicated by 'have been shown'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "a86a5250-d849-4cd4-a8dc-5f004d7afcfa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C5",
+      "claim": "Beam-induced sample movement degrades attainable resolutions in cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Besides fundamental limits imposed by radiation damage, poor detectors and beam-induced sample movement have been shown to degrade attainable resolutions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This references prior research demonstrating the effects of beam-induced movement on resolution.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6835077e-488c-418b-a6f3-1729cc8d2fe6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C6",
+      "claim": "A new generation of direct electron detectors may ameliorate both poor detector performance and beam-induced movement effects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new generation of direct electron detectors may ameliorate both effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The use of 'may' indicates this is a hypothesis about the potential benefits of new detectors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "f66cd92b-ccf4-4b16-b2a5-3241767274a9",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C7",
+      "claim": "Direct electron detectors exhibit improved signal-to-noise performance compared to previous detectors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Apart from exhibiting improved signal-to-noise performance, these cameras are also fast enough to follow particle movements during electron irradiation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by characterization data referenced in the manuscript (McMullan et al., 2009a).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "85529fe9-51c2-495b-b165-9af025e5c5da",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C8",
+      "claim": "Direct electron detectors are fast enough to follow particle movements during electron irradiation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Apart from exhibiting improved signal-to-noise performance, these cameras are also fast enough to follow particle movements during electron irradiation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "evidence_reasoning": "This is based on technical specifications and characterization of the detectors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ae042ca2-2a00-4b2d-99b9-b92b15b39217",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C9",
+      "claim": "Using a statistical movie processing approach to compensate for beam-induced movement, ribosome reconstructions with unprecedented resolutions may be calculated from almost two orders of magnitude fewer particles than used previously.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using a newly developed statistical movie processing approach to compensate for beam-induced movement, we show that ribosome reconstructions with unprecedented resolutions may be calculated from almost two orders of magnitude fewer particles than used previously.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a primary finding of the study, supported by experimental data presented in the results section.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "24db5b78-3140-42aa-aea9-2ee68a0920e7",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C10",
+      "claim": "This methodology may expand the scope of high-resolution cryo-EM to a broad range of biological specimens.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, this methodology may expand the scope of high-resolution cryo-EM to a broad range of biological specimens.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative conclusion about the potential broader impact of the methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "7c735196-b4d1-4365-a7ca-52ff6ba26649",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C11",
+      "claim": "Macromolecular structure determination should in principle be possible to near-atomic resolution from only several thousand projection images of isolated particles in ice.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For many years, electron cryo-microscopy (cryo-EM) has held the promise that macromolecular structure determination should in principle be possible to near-atomic resolution from only several thousand projection images of isolated particles in ice (Henderson, 1995; Glaeser, 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a theoretical prediction from prior work by Henderson (1995) and Glaeser (1999).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1b355e37-12d6-49b3-aad7-53d94a73f2be",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C12",
+      "claim": "Cryo-EM single-particle reconstructions in which protein main-chains may be traced reliably or individual side-chains are well resolved have been limited to large icosahedral viruses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, cryo-EM single-particle reconstructions in which protein main-chains may be traced reliably or individual side-chains are well resolved have been limited to large icosahedral viruses, and have typically required averaging over millions of asymmetric units (Grigorieff and Harrison, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes the state of the field based on a review by Grigorieff and Harrison (2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "aaee277e-c89c-4bcc-ae4a-03528dbec9bf",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C13",
+      "claim": "Near-atomic resolution cryo-EM reconstructions have typically required averaging over millions of asymmetric units.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, cryo-EM single-particle reconstructions in which protein main-chains may be traced reliably or individual side-chains are well resolved have been limited to large icosahedral viruses, and have typically required averaging over millions of asymmetric units (Grigorieff and Harrison, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on a review of the field by Grigorieff and Harrison (2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "85de469a-fb70-4c2a-9891-3a9362e83a0a",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C14",
+      "claim": "The contrast in EM images is not as good as expected from theory.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results are in accordance with early observations that the contrast in EM images is not as good as expected from theory (Henderson, 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This references early observations by Henderson (1995).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "4338bfc8-c60a-43a5-a480-efe957590fb6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C15",
+      "claim": "The main limiting factor of the information content in cryo-EM data is radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The main limiting factor of the information content in cryo-EM data is radiation damage: the electron dose needs to be limited to prevent the molecules from disintegrating while they are being imaged.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge in the cryo-EM field about the primary limitation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "08f1625f-4f58-4abf-9098-e65ac1eb6944",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C16",
+      "claim": "The electron dose needs to be limited to prevent the molecules from disintegrating while they are being imaged.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The main limiting factor of the information content in cryo-EM data is radiation damage: the electron dose needs to be limited to prevent the molecules from disintegrating while they are being imaged.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is fundamental knowledge about radiation damage in electron microscopy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "4c0d1bda-f93f-4e55-8e57-03f4b03d626d",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C17",
+      "claim": "Radiation damage alone is not enough to account for the loss in expected contrast.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, radiation damage alone is not enough to account for the loss in expected contrast.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on analysis of contrast loss that cannot be fully explained by radiation damage alone.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "c7dceb1c-a57c-4057-9380-c897e1233307",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C18",
+      "claim": "Poor detective quantum efficiency (DQE) of conventional recording devices contributes to information loss in cryo-EM images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two additional factors that have been attributed to information loss in cryo-EM images are poor detective quantum efficiency (DQE, a frequency-dependent measure for the signal-to-noise performance) of conventional recording devices, and beam-induced movement or charging of the specimen during imaging (Henderson, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is attributed to Henderson (1992) as a known factor in information loss.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "3dbc015f-9952-48e9-acc8-ba31edd1e261",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C19",
+      "claim": "Beam-induced movement or charging of the specimen during imaging contributes to information loss in cryo-EM images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two additional factors that have been attributed to information loss in cryo-EM images are poor detective quantum efficiency (DQE, a frequency-dependent measure for the signal-to-noise performance) of conventional recording devices, and beam-induced movement or charging of the specimen during imaging (Henderson, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is attributed to Henderson (1992) as a known factor in information loss.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "77b8abbd-4638-4b52-94ac-62012a0bd13f",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C20",
+      "claim": "EM images have traditionally been recorded on photographic film.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Traditionally, EM images have been recorded on photographic film, which has a large field of view and a reasonably good DQE, but is not convenient for high-throughput methods due to laborious steps of film development and digitization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the historical standard practice in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "c096e28b-3cb8-4ea3-ad22-662550d79842",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C21",
+      "claim": "Photographic film has a large field of view and a reasonably good DQE.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Traditionally, EM images have been recorded on photographic film, which has a large field of view and a reasonably good DQE, but is not convenient for high-throughput methods due to laborious steps of film development and digitization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the properties of photographic film.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "4015f800-d44f-4df2-9cb5-8e82c2bfad4f",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C22",
+      "claim": "Photographic film is not convenient for high-throughput methods due to laborious steps of film development and digitization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Traditionally, EM images have been recorded on photographic film, which has a large field of view and a reasonably good DQE, but is not convenient for high-throughput methods due to laborious steps of film development and digitization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a well-known practical limitation of film-based imaging.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "03afb248-98b9-4c5b-9701-1178107c500d",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C23",
+      "claim": "Over the past decade many electron microscopes have been equipped with charge-coupled device (CCD) cameras.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, over the past decade many electron microscopes have been equipped with charge-coupled device (CCD) cameras.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a trend in the field over the past decade.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "0a3d26ad-0df7-4e8d-bc99-fa351e7c998c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C24",
+      "claim": "CCD cameras allow instant inspection of images and are much more convenient in automated data collection schemes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These digital detectors allow instant inspection of the images and are much more convenient in automated data collection schemes, so that large quantities of data may be obtained with relatively little effort (Stagg et al., 2006).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about CCD advantages, supported by citation to Stagg et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "709724e6-4855-40af-9f98-680ead7a8f74",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C25",
+      "claim": "The conversion of electrons into visible light in CCDs comes at the expense of a poorer DQE, particularly at higher voltages.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the conversion of electrons into visible light that is detected by the CCD comes at the expense of a poorer DQE, in particular at higher voltages where many microscopes operate best.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the physical limitations of CCD detectors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "a87ba8a2-6a9d-47b5-adf5-a97c35579f61",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C26",
+      "claim": "Most of the near-atomic resolution cryo-EM structures published to date have been recorded on photographic film.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consequently, despite the advantages of CCDs in terms of ease-of-use and data quantity, most of the near-atomic resolution cryo-EM structures published to date have been recorded on photographic film (Grigorieff and Harrison, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on a review of published structures by Grigorieff and Harrison (2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "47334072-eb46-4c64-9be8-5fb06dae82fd",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C27",
+      "claim": "For every elastic scattering event, three to four inelastic scattering events occur.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For every elastic scattering event, which contributes positively to the phase contrast image, also three to four inelastic scattering events occur (Henderson, 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a quantitative statement from Henderson (1995) about scattering ratios.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "0c09bce8-7e05-436e-b6db-63337bf28fc5",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C28",
+      "claim": "Inelastic scattering events deposit energy in the sample, which leads to radiation damage by breaking covalent bonds and the generation of free radicals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The inelastic events deposit energy in the sample, which leads to radiation damage by breaking covalent bonds and the generation of free radicals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established mechanism of radiation damage in electron microscopy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1a528ce6-8b15-4922-b191-c715cdbdaeaf",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C29",
+      "claim": "Inelastic scattering interactions generate charges in the sample that could lead to image blurring by deflecting the incoming electrons.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Besides destroying the very structures one aims to determine, these interactions also generate charges in the sample that could lead to image blurring by deflecting the incoming electrons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a theoretical explanation for image blurring based on known physics of electron-sample interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "542626ef-d4e1-42d1-8057-b4b94740dcc5",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C30",
+      "claim": "Radiolysis products such as hydrogen gas may build up internal pressure, leading to mechanical stress in the sample.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, radiolysis products such as hydrogen gas may build up internal pressure, thus leading to mechanical stress in the sample (Leapman and Sun, 1995).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This mechanism is attributed to Leapman and Sun (1995).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "00bcbc90-d404-41b1-b388-6e014ae34c74",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C31",
+      "claim": "At high electron doses, mechanical stress ultimately leads to bubbling of the sample.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At high electron doses this stress ultimately leads to bubbling of the sample, while at much lower doses it has been postulated to induce movements that cause blurring of the images (Glaeser, 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about high-dose effects, referenced to Glaeser (2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "394fc010-c6d0-41b7-ac5b-c1833ae096b5",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C32",
+      "claim": "At much lower doses, mechanical stress has been postulated to induce movements that cause blurring of the images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At high electron doses this stress ultimately leads to bubbling of the sample, while at much lower doses it has been postulated to induce movements that cause blurring of the images (Glaeser, 2008).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "evidence_reasoning": "The use of 'postulated' indicates this is a hypothesis from Glaeser (2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "d1e77e85-e7b0-4d73-86be-098439ffd650",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C33",
+      "claim": "Three different companies now sell digital cameras that detect electrons directly.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Building on technological developments that were initiated almost a decade ago (Prydderch et al., 2003), three different companies now sell digital cameras that detect electrons directly, that is, without the need to first convert electrons into visible light.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the current commercial availability of direct electron detectors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "e2e174a0-294f-4340-9401-dca5d46abd7a",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C34",
+      "claim": "Initial characterization of direct electron detectors indicated that their DQE at high resolution is superior to that of CCD and film.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Initial characterization of these direct electron detectors indicated that their DQE at high resolution is superior to that of CCD and film (McMullan et al., 2009a), in particular when backscattering of electrons is reduced by back-thinning of the substrate (McMullan et al., 2009c).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on characterization studies by McMullan et al. (2009a, 2009c).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "17e5e557-b07a-4c2b-b0d1-d586c5b13a9b",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C35",
+      "claim": "Backscattering of electrons is reduced by back-thinning of the substrate in direct electron detectors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Initial characterization of these direct electron detectors indicated that their DQE at high resolution is superior to that of CCD and film (McMullan et al., 2009a), in particular when backscattering of electrons is reduced by back-thinning of the substrate (McMullan et al., 2009c).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on technical characterization by McMullan et al. (2009c).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6331e2ea-3dc8-4052-935a-cc39d9530d62",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C36",
+      "claim": "Direct electron detectors record images at high rates, ranging from 16 to 400 images per second for currently available products.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An additional advantage of these devices is that they record images at high rates: ranging from 16 to 400 images per second for the currently available products.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a statement about the technical specifications of commercially available detectors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "2b6f688f-d122-4347-8f13-8df10dc9f592",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C37",
+      "claim": "Direct electron detectors allow the recording of a video during typical exposures, compared to a single image on film or CCD.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This allows the recording of a video during typical exposures, compared to a single image on film or CCD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a direct consequence of the high frame rates of direct electron detectors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "9b7ff1cb-139f-4fe0-ba56-11ca1ca95614",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C38",
+      "claim": "Grigorieff and colleagues previously showed that beam-induced movements could be followed for large icosahedral viruses by processing videos.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By processing these videos, Grigorieff and colleagues previously showed that beam-induced movements could be followed for large icosahedral viruses, although the gain in resolution compared to similar data recorded on film was not as large as expected, possibly due to experimental design (Brilot et al., 2012; Campbell et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This references prior work by Brilot et al. (2012) and Campbell et al. (2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "aaefe164-14ca-46e4-93ab-03aa1e0f0f7c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C39",
+      "claim": "The gain in resolution from video processing for icosahedral viruses was not as large as expected, possibly due to experimental design.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By processing these videos, Grigorieff and colleagues previously showed that beam-induced movements could be followed for large icosahedral viruses, although the gain in resolution compared to similar data recorded on film was not as large as expected, possibly due to experimental design (Brilot et al., 2012; Campbell et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is an interpretation of results from Brilot et al. (2012) and Campbell et al. (2012), with speculation about the cause.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "99e95bdb-4645-4562-8836-aa39dd2374d6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C40",
+      "claim": "Ribosome samples have been characterized by cryo-EM for more than 20 years.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Ribosome samples have been characterized by cryo-EM for more than 20 years (Frank et al., 1991), and encompass characteristics that are favorable to cryo-EM structure determination",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is a historical statement supported by citation to Frank et al. (1991).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "7d7346fb-5452-4dd1-9f83-8a78470842e1",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C41",
+      "claim": "The large content of dense RNA and large molecular weight of ribosomes result in images of relatively high contrast compared to many other macromolecular complexes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "their large content of dense RNA and their large molecular weight (2.8 MDa for prokaryotic 70S and \u223c4 MDa for eukaryotic 80S ribosomes) result in images of relatively high contrast compared to many other macromolecular complexes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on established understanding of how RNA content and molecular weight affect image contrast.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "0f8c1c67-eda5-446f-b4e9-9fd3bc21d1df",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C42",
+      "claim": "RNA is known to be less radiation sensitive than protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and RNA is known to be less radiation sensitive than protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the relative radiation sensitivity of different biomolecules.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "d6cf49d4-ee9d-4d9c-b6d1-054498f8200a",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C43",
+      "claim": "The ribosome is an intrinsically flexible macromolecular machine.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, the ribosome is an intrinsically flexible macromolecular machine, which often leads to the presence of more than one structural state in ribosome samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about ribosome structural dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "c8b54f9a-b02b-46b2-8049-7146b990f0d2",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C44",
+      "claim": "Ribosome flexibility often leads to the presence of more than one structural state in ribosome samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, the ribosome is an intrinsically flexible macromolecular machine, which often leads to the presence of more than one structural state in ribosome samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on established understanding of ribosome conformational heterogeneity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "2ec4225a-5bb7-4436-9f17-91c8b93b1e79",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C45",
+      "claim": "Advanced classification techniques are required to separate different ribosome conformations into structurally homogeneous subsets.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This represents a challenge, as advanced classification techniques are required to separate the different conformations into structurally homogeneous subsets that are amenable to single-particle reconstruction (Scheres et al., 2007; Fischer et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by citations to methods papers (Scheres et al., 2007; Fischer et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "81c7146a-2dd5-441c-9f28-2f64b8a8d680",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C46",
+      "claim": "The absence of symmetry in the ribosome makes it necessary to image many more particles than for icosahedral viruses with 60-fold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, the absence of symmetry in the ribosome makes it necessary to image many more particles (and to determine many more orientations) than is the case for icosahedral viruses with 60-fold symmetry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on fundamental principles of how symmetry reduces the number of particles needed for reconstruction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "f56536ed-bd26-442e-bc27-16cca4c61dea",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C47",
+      "claim": "The combination of structural variability and the lack of symmetry may account for the fact that near-atomic resolution cryo-EM maps of ribosome structures have remained elusive thus far.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The combination of structural variability and the lack of symmetry may account for the fact that near-atomic resolution cryo-EM maps of ribosome structures have remained elusive thus far.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference about why near-atomic resolution has not been achieved for ribosomes, based on known challenges.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "c397c246-0f47-4dac-93f8-79f040f151c6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C48",
+      "claim": "The detector used in this study operates at a rate of 17 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our detector operates at a rate of 17 frames per second, and we recorded 16-frame videos during 1-s exposures.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a technical specification of the detector used in the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "8ef62e38-d592-4188-9380-c36d8a755ed2",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C49",
+      "claim": "16-frame videos were recorded during 1-s exposures.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our detector operates at a rate of 17 frames per second, and we recorded 16-frame videos during 1-s exposures.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental protocol used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "21df7253-6811-4fb6-b8fd-bfce4bfb5c93",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C50",
+      "claim": "At a total dose of 16 electrons/\u00c52, each individual video frame integrates less than 1 electron/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source_text": "At a total dose of 16 electrons/\u00c52, each individual video frame therefore integrates less than 1 electron/\u00c52.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a calculation based on the experimental parameters (total dose divided by number of frames).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "223ea57f-6929-45a6-bc50-49d8c0fdb2fa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C51",
+      "claim": "High noise levels in individual video frames pose severe limitations on the accuracy with which these frames may be aligned.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We expected the high noise levels in these individual frames to pose severe limitations on the accuracy with which these frames may be aligned.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction based on understanding of how noise affects alignment accuracy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1f44a6fe-34ca-4090-b01f-eedc50b342d7",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C52",
+      "claim": "Tilt-pair analysis can be used to experimentally assess alignment errors for video frames.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because the alignment accuracy of individual particles remains unknown in typical single-particle analysis, we collected an entire data set as tilted pairs and used tilt-pair analysis to experimentally assess alignment errors for video frames (Rosenthal and Henderson, 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is based on an established method from Rosenthal and Henderson (2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "298d2421-5308-49cb-bd88-c1d797b17b1e",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C53",
+      "claim": "Movements in different areas of the micrograph vary, with some areas showing movements up to 1.5 \u00c5 and others up to 10 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Movements in the area on the left are smaller (up to 1.5 \u00c5) then in the area on the right (up to 10 \u00c5).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct observation from the experimental data shown in Figure 1A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "04b73dc1-f767-43de-9a78-3c59e64ef109",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C54",
+      "claim": "The width of the first peak at half its height in the histogram of tilt-pair alignment errors for 16-frame averaged particles is 2\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The width of the first peak at half its height is 2\u00b0.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a measurement from the histogram shown in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "89c01272-a156-48ff-8c96-6ec01d018f0a",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C55",
+      "claim": "The numbers of correctly aligned particles and the alignment precision decrease with averaging over fewer video frames.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Tilt-pair analysis for these data showed that, as expected, the numbers of correctly aligned particles as well as the alignment precision decrease with averaging over fewer video frames (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the tilt-pair analysis presented in the results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "b9f35f1d-1546-46ee-8297-417f8395b6b8",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C56",
+      "claim": "Particles calculated from later video frames align less accurately, most likely as a result of accumulated radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, we noted a trend for particles that were calculated from later video frames to align less accurately, most likely as a result of accumulated radiation damage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an observation from the data with an inferred explanation based on known effects of radiation damage.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "99cceee9-94b2-4118-ba83-9038e2f7b352",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C57",
+      "claim": "The best reconstructions, at 5.4 \u00c5 resolution, were obtained when using averages of six or four individual video frames.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The best reconstructions, at 5.4 \u00c5 resolution, were obtained when using averages of six or four individual video frames, which apparently represent the optimum between accurately describing particle movement and not introducing too large alignment errors for these data.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct result from the reconstruction experiments shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "e27a6e3d-9566-4f55-9ba9-af40b8f4040d",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C58",
+      "claim": "Overall rotations and translations during the exposure are in the order of 1.7 \u00b1 1.2\u00b0 and 4.2 \u00b1 2.3 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Analysis of the orientations for the four-frame averaged particles that were aligned correctly according to the tilt-pair analysis revealed that overall rotations and translations during the exposure are in the order of 1.7 \u00b1 1.2\u00b0 and 4.2 \u00b1 2.3 \u00c5, respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative measurement from the analysis of correctly aligned particles.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "fd18ba4c-1a73-4780-aaa0-fb758768e3aa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C59",
+      "claim": "Complicated patterns of movement indicate that the observed movements were not merely the result of a drifting stage, but more likely attributed to beam-induced effects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Complicated patterns of movement for particles on some of the illuminated areas (e.g., see white lines in Figure 1A) indicate that the observed movements were not merely the result of a drifting stage, but more likely to be attributed to, as yet poorly understood, beam-induced effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the movement patterns observed in the data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "d6f6418b-cd38-4606-abf1-8109f6b4ad30",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C60",
+      "claim": "Beam-induced movements are relatively small.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observations that beam-induced movements are relatively small, and that the 16-frame averages may be aligned most accurately, represent valuable prior knowledge that may be efficiently expressed using statistical refinement methods.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a summary observation from the experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "d63f301d-3575-414e-942d-47d1e0c6c8a9",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C61",
+      "claim": "16-frame averages may be aligned most accurately.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observations that beam-induced movements are relatively small, and that the 16-frame averages may be aligned most accurately, represent valuable prior knowledge that may be efficiently expressed using statistical refinement methods.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a finding from the tilt-pair analysis shown in Figure 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "97aabd2a-7d52-4ded-85fc-42c1d3302585",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C62",
+      "claim": "Application of the statistical video processing procedure to the 70S ribosome data yielded a reconstruction with a resolution of 5.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Application of this procedure to the 70S ribosome data yielded a reconstruction with a resolution of 5.1 \u00c5 (orange line in Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct result from applying the new method to the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6946cc54-3927-45e5-9be1-58d10b84e4aa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C63",
+      "claim": "Reconstruction quality may be improved by following the movement of individual particles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Comparison of the FSCs between the reconstructed maps and a rigid-body fitted crystal structure (Selmer et al., 2006), decreasing estimated B-factors, and visual inspection of the maps all confirmed that reconstruction quality may be improved by following the movement of individual particles",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by multiple lines of evidence from the experimental results (FSC curves, B-factors, visual inspection).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "fa0ce3b7-6bcc-43fd-875c-25c6e96fd86c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C64",
+      "claim": "The statistical approach outperforms the straightforward use of multi-frame averaged particles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and that the statistical approach outperforms the straightforward use of multi-frame averaged particles in this respect (Figure 2D\u2013F, Figure 2\u2013figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a comparative finding from the experimental results shown in the figures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "7e29704c-c93f-40dc-839e-271d909029ab",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C65",
+      "claim": "A total of 24,044 70S particle pairs were selected for analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A total of 24,044 70S particle pairs and 72,447 80S particles were selected",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a description of the dataset size used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "bd5ee355-412f-4b8c-9c07-037baeb4e1b9",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C66",
+      "claim": "72,447 80S particles were selected for analysis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A total of 24,044 70S particle pairs and 72,447 80S particles were selected",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a description of the dataset size used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "08075cec-9d89-46ec-9262-e7a043a440c8",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C67",
+      "claim": "15,202 particles were selected to correspond to 70S ribosomes with a single tRNA in the P-site.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For the 70S data set, discarded particles included 50S subunits and 70S ribosomes with tRNAs in the E- and P-sites, and 15,202 particles were selected to correspond to 70S ribosomes with a single tRNA in the P-site.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the result of classification and particle selection for the 70S dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "e5f82e54-c05d-4192-9aaa-69f175c0fda2",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C68",
+      "claim": "Initial 3D classification of the 80S data did not yield structurally distinct classes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For the 80S data, dissociated subunits could again be identified in the 2D class averages, but initial 3D classification did not yield structurally distinct classes.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a result from the initial classification attempts on the 80S data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6dfce84b-1342-4bb0-be08-a631abb8998d",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C69",
+      "claim": "Blurry density for the 40S subunit after 3D refinement indicated that significant structural heterogeneity was still present in the 80S data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, after 3D refinement of a single model, blurry density for the 40S subunit indicated that significant structural heterogeneity was still present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is an interpretation of the observed density quality in the reconstruction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ca08ddaf-a393-4259-aee6-3d222ad019e4",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C70",
+      "claim": "Subsequent 3D classification separated two conformations with different degrees of ratchet-like movement, comprising 35,813 and 22,638 particles, respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This calculation separated two conformations with different degrees of ratchet-like movement, comprising 35,813 and 22,638 particles, respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a result from the classification procedure applied to the 80S data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "9423e6fc-a65d-4947-80e5-352efedabd4c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C71",
+      "claim": "The reconstructions presented in this paper are of significantly higher resolution than any prokaryotic or eukaryotic ribosome structures calculated from cryo-EM data on photographic film or CCD.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The reconstructions presented in this paper are of significantly higher resolution than any prokaryotic or eukaryotic ribosome structures that were calculated from cryo-EM data on photographic film or CCD.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a comparative claim based on the resolutions achieved in this study versus prior published structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "99a327bf-37ee-4744-92d2-0a1ea4aaa639",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C72",
+      "claim": "The reconstructions were obtained from unprecedented small numbers of particles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, they were obtained from unprecedented small numbers of particles.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on comparison of particle numbers used in this study versus prior work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "350df740-120c-4459-8837-96f54ca9261f",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C73",
+      "claim": "The highest resolution ribosome map in the EMDB (an 80S structure from Triticum aestivum) was calculated from almost 1.4 million particles and was reported to be at 5.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For comparison, currently the highest resolution ribosome map in the EMDB (an 80S structure from the plant Triticum aestivum) was calculated from almost 1.4 million particles and was reported to be at 5.5 \u00c5 resolution (Armache et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is information from a prior published structure (Armache et al., 2010) in the EMDB.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "28579ee0-1572-4f71-a372-1a22dbfe73aa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C74",
+      "claim": "The authors obtained reconstructions with useful information up to \u223c4 \u00c5 resolution from nearly two orders of magnitude fewer particles than the Triticum aestivum structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We obtained reconstructions with useful information up to \u223c4 \u00c5 resolution from nearly two orders of magnitude fewer particles.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a comparative statement about the efficiency of the new method based on the experimental results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "09f6297e-0c31-4f28-b117-89768a8a0979",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C75",
+      "claim": "The authors calculated maps with useful information up to 90% of the Nyquist frequency.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observation that we could calculate maps with useful information up to \u223c4 \u00c5 resolution from nearly two orders of magnitude fewer particles. The observation that we could calculate maps with useful information up to 90% of the Nyquist frequency surpassed our initial expectations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative assessment of the resolution achieved relative to the theoretical limit.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ffc87f9a-eb6b-4458-a919-509496d9711e",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C76",
+      "claim": "Incorporation of the new detectors into automated data collection schemes will result in much larger amounts of data than used in this study.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Incorporation of the new detectors into automated data collection schemes will result in much larger amounts of data than we have used in our study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about future data collection capabilities based on automation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "5678bcf2-707c-42c7-921e-73819bb95835",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C77",
+      "claim": "For relatively high molecular-weight complexes with sufficient contrast, larger amounts of data may allow high-resolution reconstruction of many more structural states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For relatively high molecular-weight complexes that display sufficient contrast for accurate alignment and classification, this may then allow high-resolution reconstruction of many more structural states, or of states that are adopted by only a small fraction of the particles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about future capabilities based on the demonstrated methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "df1db889-309b-411a-acc1-1ba0cf62e12b",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C78",
+      "claim": "If the sample is sufficiently rigid to exist in only one or a few distinct states, larger amounts of data are expected to lead to even higher resolutions than reported here.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, if the sample is sufficiently rigid to exist in only one or a few distinct states, then larger amounts of data are expected to lead to even higher resolutions than the ones reported here.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction based on theoretical considerations about data quantity and resolution.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "67ddf4d6-eb6a-4156-ba8f-8134f32fa58b",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C79",
+      "claim": "Following SNR considerations, an overall resolution of 4.5 \u00c5 would increase to \u223c3.3 \u00c5 if the approach were applied to 1 million particles of similar quality.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, following the SNR considerations proposed by (Rosenthal and Henderson, 2003), our overall resolution of 4.5 \u00c5 would increase to \u223c3.3 \u00c5 if we would apply our approach to 1 million particles of similar quality (provided no other resolution-degrading factors play a role).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a theoretical calculation based on SNR scaling principles from Rosenthal and Henderson (2003).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "8dc41951-d1a3-4c6a-8827-df1080622a22",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C80",
+      "claim": "The combination of direct electron detectors, video processing approaches, and automated data collection schemes will significantly increase the number of specimens for which de novo building of atomic models into cryo-EM maps becomes feasible.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, we foresee that the combination of direct electron detectors, video processing approaches, and automated data collection schemes will significantly increase the number of specimens for which de novo building of atomic models into cryo-EM maps becomes feasible.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about the future impact of the technology based on the demonstrated results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "5e97ccdf-5fe0-4b18-8991-68b2a927ad0c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C81",
+      "claim": "Current alignment procedures are often severely limited by low SNRs in images of complexes smaller than \u223c300 to 500 kDa.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Current alignment procedures are often severely limited by low SNRs in images of complexes that are smaller than \u223c300 to 500 kDa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the limitations of current cryo-EM methods for small particles.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "893c3244-6e64-4257-a6d6-a73790486369",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C82",
+      "claim": "SNRs in individual particles drop quickly with increasing spatial frequency.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because SNRs in individual particles drop quickly with increasing spatial frequency image alignments are typically mainly driven by the lower-resolution components in the images (Henderson et al., 2011; Scheres and Chen, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge supported by citations to Henderson et al. (2011) and Scheres and Chen (2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "b52977c1-0b62-4db5-8b42-a867e3ccb237",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C83",
+      "claim": "Image alignments are typically mainly driven by the lower-resolution components in the images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Because SNRs in individual particles drop quickly with increasing spatial frequency image alignments are typically mainly driven by the lower-resolution components in the images (Henderson et al., 2011; Scheres and Chen, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about alignment procedures, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "9290df82-ee3a-46be-9b52-012f47ea18e0",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C84",
+      "claim": "Lower-resolution components have been observed to remain intact after much higher electron doses than the high-resolution information.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These components have been observed to remain intact after much higher electron doses than the high-resolution information (Hayward and Glaeser, 1979; Baker and Rubinstein, 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is based on observations from Hayward and Glaeser (1979) and Baker and Rubinstein (2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ce710a2f-3c75-454e-ba2e-5c49852fc803",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C85",
+      "claim": "Relatively long videos with a high dose could be used to obtain reliable low-resolution components while optimizing SNR for higher spatial frequencies using dose-dependent weighting.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, relatively long videos with a high dose could be used to obtain reliable low-resolution components, while a dose-dependent weighting scheme to account for radiation damage may be used to optimize the SNR for higher spatial frequencies at the same time (Campbell et al., 2012).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a proposed strategy based on the observations and methods from Campbell et al. (2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "e2983258-806a-4e60-aa52-80fa60bf5737",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C86",
+      "claim": "Such procedures are expected to significantly lower the size limit of particles that may still be aligned correctly and are amenable to cryo-EM structure determination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such procedures are expected to significantly lower the size limit of particles that may still be aligned correctly and are thus amenable to cryo-EM structure determination.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about the future capabilities of the methodology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "3f048eb4-e1f4-4fac-8863-0a20ae151ac6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C87",
+      "claim": "Accurately following the movement of small particles during videos will be more challenging than for the high-contrast ribosome particles presented here.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Still, accurately following the movement of small particles during videos will be more challenging than for the high-contrast ribosome particles presented here.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference based on the relationship between particle size, contrast, and alignment accuracy.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "b8e4742a-5ad8-4513-99a1-ce95d6c22640",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C88",
+      "claim": "To obtain near-atomic resolutions for smaller particles, further investigations into the nature of beam-induced image blurring and how to stop it will be necessary.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, in order to also obtain near-atomic resolutions for smaller particles, further investigations into the nature of beam-induced image blurring and how to stop it will still be necessary.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a conclusion about what future work is needed based on current limitations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "21731ad1-24b9-44d1-80d2-48dbd7fa44ac",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C89",
+      "claim": "Investigations into beam-induced image blurring are expected to benefit significantly from the possibility to analyze beam-induced movements during videos recorded by direct electron detectors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Also these investigations are expected to benefit significantly from the possibility to analyze beam-induced movements during videos recorded by direct electron detectors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about how the new technology will enable future research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "a03912a0-8a78-4a25-8f25-e498660f3211",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C90",
+      "claim": "Currently available detectors, combined with video processing algorithms, will result in higher-resolution cryo-EM structures for many more samples than those reported until now.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Currently available detectors, combined with video processing algorithms like the one presented here, will result in higher-resolution cryo-EM structures for many more samples than those reported until now.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a prediction about the broader impact of the technology based on the demonstrated results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "791b2ac5-88f0-4e53-ae9f-73cbedd772ce",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C91",
+      "claim": "Cryo-EM image quality will keep improving as ongoing technological developments mature.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Meanwhile, cryo-EM image quality will keep improving as ongoing technological developments such as single-electron counting detectors (McMullan et al., 2009b), phase-plate imaging (Nagayama, 2011) and better sample preparation techniques mature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a prediction about future improvements based on technologies under development, with citations to relevant work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "124d5bb1-6375-4cdf-8912-19e597367992",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C92",
+      "claim": "The field will continue to progress towards fulfilling the promise of providing near-atomic resolution reconstructions for a wide range of specimens.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, we are optimistic that the field will continue to progress towards fulfilling the promise of providing near-atomic resolution reconstructions, and thereby more detailed biological insights, for a wide range of specimens.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is an optimistic prediction about the future of the field based on current progress.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "b9f3890c-3555-4b90-aa52-3d5383d3ccad",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C93",
+      "claim": "70S T. thermophilus ribosome samples with tRNAs and mRNA were produced as described by Selmer et al., 2006.",
+      "claim_type": "EXPLICIT",
+      "source_text": "70S T. thermophilus ribosome samples with tRNAs and mRNA were produced as described previously (Selmer et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This references the method used for sample preparation from a prior publication.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "41cf280d-6e44-43f7-b55e-5a5a84e11d17",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C94",
+      "claim": "80S ribosomes were purified from S. cerevisiae strain YAS-2488.",
+      "claim_type": "EXPLICIT",
+      "source_text": "80S ribosomes were purified from S. cereviseae strain YAS-2488.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the source of the 80S ribosome sample used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "161a38b4-cf18-44d4-8c5b-1a2b92bd575f",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C95",
+      "claim": "All ribosomal proteins, as well as the protein Stm1, were identified using mass spectrometry in the 80S sample.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All ribosomal proteins, as well as the protein Stm1, were identified using mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the characterization of the 80S sample composition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "74fcac13-dd54-4124-ace8-8f5604f9436d",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C96",
+      "claim": "An estimated dose of 16 electrons/\u00c52 was applied during 1-s exposures.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using an extraction voltage of 3900 V, a gun lens setting of 2 and a spotsize of 4 or 5, an estimated dose of 16 electrons/\u00c52 was applied during 1-s exposures.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental parameters used for data collection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "c69e5932-25f1-4098-8c87-75e8e08db9aa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C97",
+      "claim": "Images were recorded at a calibrated magnification of 79,096, yielding a pixel size of 1.77 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Images were recorded at the approximate center of the hole on a back-thinned FEI Falcon detector at a calibrated magnification of 79,096 (yielding a pixel size of 1.77 \u00c5).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the imaging parameters used in the experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "4d926582-0513-49b8-ac98-3ca63f3c40be",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C98",
+      "claim": "159 out of 285 micrograph pairs were selected for further analysis for the 70S sample.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For the 70S sample, 159 out of 285 micrograph pairs were selected for further analysis",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data selection process for the 70S dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1f3b9796-01cf-4655-a174-180d07b2f9c2",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C99",
+      "claim": "260 out of 291 micrographs were selected for the 80S sample.",
+      "claim_type": "EXPLICIT",
+      "source_text": "260 out of 291 micrographs were selected for the 80S sample.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the data selection process for the 80S dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "7abe96b7-458f-469e-93c6-e8eaf84df99c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C100",
+      "claim": "A novel procedure for video-frame alignment was developed that exploits the relatively high accuracy of aligning 16-frame average particles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A novel procedure for video-frame alignment was developed that exploits the relatively high accuracy of aligning 16-frame average particles (Figure 2B), as well as the prior knowledge that particles are unlikely to undergo very large rotations or translations during the 1-s exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the methodological innovation developed in this study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "0cea1b10-ce76-412c-9d3f-4fa6d6cff64c",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C101",
+      "claim": "Gaussian prior distributions were defined on the rotations and translations of the video frames, centered at the observed orientations for alignments with the corresponding 16-frame average particles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To this purpose, we defined Gaussian prior distributions on the rotations and translations of the video frames, and centered these distributions at the observed orientations for alignments with the corresponding 16-frame average particles.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the technical implementation of the statistical video processing method.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "b3c32f45-b4b5-46bf-8be3-9e08ac2fd0af",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C102",
+      "claim": "Running averages of five video frames were used for all calculations shown in the paper.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For all calculations shown in this paper, we used running averages of five video frames",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a specific parameter used in the video processing procedure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ecc2277e-3fb5-44f9-89b5-35ba78f8ecfa",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C103",
+      "claim": "A standard deviation of 1\u00b0 was used for the priors on the Euler angles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a standard deviation of 1\u00b0 for the priors on the Euler angles",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes a specific parameter used in the statistical video processing method.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "5d6fef53-b22e-4f08-a073-dad1a9048ea4",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "claim_id": "C104",
+      "claim": "Continuous density for RNA nucleotides 440\u2013499 of expansion segment 7 and nucleotides 1954\u20132093 of expansion segment 27 in 25S was observed, which were not modelled in the 80S crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "e.g., we see continuous density for RNA nucleotides 440\u2013499 of expansion segment 7 and nucleotides 1954\u20132093 of expansion segment 27 in 25S, which were not modelled in the 80S crystal structure",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a specific observation from the cryo-EM maps that provides new structural information not present in the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4977b38f-a19c-4391-a739-c5c35aa32159",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors establish the historical context and limitations of cryo-EM, noting that while it has become important for structural biology, it has not reached its full potential due to fundamental limits from radiation damage, poor detectors, and beam-induced sample movement. Near-atomic resolution has been limited to large icosahedral viruses requiring millions of asymmetric units, with most high-resolution structures recorded on film rather than CCD despite CCD's convenience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims collectively describe well-established knowledge in the cryo-EM field, supported by appropriate citations to prior work (Henderson 1995, Glaeser 1999, Grigorieff and Harrison 2011, etc.). The historical context and technical limitations are accurately represented and form the foundation for understanding the significance of the current work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "92123148-f24a-4f43-8117-94b323f4ba71",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Direct electron detectors represent a new generation of technology that may ameliorate detector performance and beam-induced movement issues. These detectors exhibit improved signal-to-noise performance and DQE compared to CCD and film, operate at high frame rates (16-400 fps), and allow video recording during exposures. Prior work by Grigorieff and colleagues showed beam-induced movements could be followed for viruses, though resolution gains were smaller than expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C7, C8, C34-C37 are supported by citations to characterization studies (McMullan et al. 2009a, 2009c) and technical specifications. Claims C38-C39 accurately reference prior work (Brilot et al. 2012, Campbell et al. 2012). Claim C6 appropriately uses 'may' to indicate potential, which is reasonable given the supporting evidence for detector capabilities.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "23f65875-4192-4812-854c-a52119b1a6d6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "Ribosomes serve as favorable test specimens for cryo-EM due to their high RNA content, large molecular weight (2.8-4 MDa), and resulting high contrast, with RNA being less radiation sensitive than protein. However, ribosomes present challenges due to intrinsic flexibility leading to multiple structural states, requiring advanced classification techniques, and lack of symmetry necessitating many more particles than icosahedral viruses. These factors may explain why near-atomic resolution ribosome maps have remained elusive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims accurately describe established knowledge about ribosome properties and cryo-EM challenges, supported by appropriate citations (Frank et al. 1991, Scheres et al. 2007, Fischer et al. 2010). The inference in C47 about why near-atomic resolution has been elusive is reasonable given the documented challenges of flexibility and lack of symmetry.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "25a075cc-da18-4d1a-9804-d6d24afa61e1",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "The authors collected cryo-EM data on 70S T. thermophilus and 80S S. cerevisiae ribosomes using a back-thinned FEI Falcon detector operating at 17 fps, recording 16-frame videos during 1-s exposures at 16 electrons/\u00c5\u00b2 total dose (less than 1 electron/\u00c5\u00b2 per frame). They used tilt-pair analysis to assess alignment errors, selecting 159/285 micrograph pairs for 70S and 260/291 micrographs for 80S analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims describe the experimental design and data collection parameters, which are clearly documented in the methods section. The use of tilt-pair analysis (C52) is appropriately cited to Rosenthal and Henderson (2003). The sample preparation and data selection criteria are explicitly stated and internally consistent.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "Tilt-pair analysis revealed spatially variable beam-induced movements (1.5-10 \u00c5) with complicated patterns indicating beam-induced rather than stage drift effects. Alignment accuracy and precision decreased with fewer averaged frames, with later frames showing worse alignment likely due to radiation damage. The best reconstructions (5.4 \u00c5) used 4-6 frame averages, with overall movements of 1.7\u00b11.2\u00b0 rotation and 4.2\u00b12.3 \u00c5 translation. The 16-frame averages aligned most accurately.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims are directly supported by experimental data presented in Figures 1 and 2. The tilt-pair analysis provides objective validation of alignment accuracy (C52), and the quantitative measurements (C54, C58) are explicitly reported. The interpretation that complicated movement patterns indicate beam-induced effects (C59) is reasonable given the spatial variability observed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "a15f4843-2b41-423d-aeb4-1b7be394697e",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "The authors developed a novel statistical video processing procedure using Gaussian priors centered on 16-frame average orientations, with running averages of 5 frames, 1\u00b0 standard deviation for Euler angles, and limited rotational/translational searches. This approach yielded a 5.1 \u00c5 reconstruction for 70S ribosomes and outperformed straightforward multi-frame averaging, as confirmed by FSC curves, B-factors, and visual inspection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The methodological development (C100-C103) is clearly described with specific parameters. The results (C62-C64) are supported by multiple lines of evidence including gold-standard FSC curves (Figure 2C), comparison with crystal structures (Figure 2D), and visual inspection (Figure 2E-F). The comparison demonstrates clear improvement over simpler approaches.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "32855604-57d6-4699-aa04-8c1762555b22",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "From 24,044 70S particle pairs, 15,202 particles corresponding to 70S ribosomes with single P-site tRNA were selected after classification. For 72,447 80S particles, initial 3D classification did not yield distinct classes, but blurry 40S density indicated heterogeneity. Subsequent classification with local angular searches separated two conformations with different ratchet-like movements (35,813 and 22,638 particles).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims describe the data processing workflow with specific particle numbers and classification results. The interpretation of blurry density as indicating heterogeneity (C69) is standard practice in cryo-EM. The successful separation of conformational states after refined classification demonstrates appropriate handling of structural heterogeneity.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "The reconstructions achieved significantly higher resolution than any previous prokaryotic or eukaryotic ribosome structures from film or CCD, with useful information to ~4 \u00c5 (90% Nyquist frequency) from nearly two orders of magnitude fewer particles than the previous best 80S structure (1.4 million particles at 5.5 \u00c5 from Armache et al. 2010).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The comparative claims are supported by specific reference to the highest resolution structure in EMDB (C73, citing Armache et al. 2010). The quantitative improvements in both resolution and particle efficiency (C74-C75) are documented in the results. The achievement of 90% Nyquist frequency is a concrete measure of data quality that can be verified from the FSC curves.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "c40c9ef8-99e3-4316-a8da-a3335ea09308",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "The statistical movie processing approach enables ribosome reconstructions with unprecedented resolutions from ~100-fold fewer particles than previously used, potentially expanding high-resolution cryo-EM to a broad range of specimens. With automated data collection providing larger datasets, the methodology could enable high-resolution reconstruction of many structural states or rare conformations, with theoretical resolution improvements to ~3.3 \u00c5 for 1 million particles based on SNR scaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While the core finding (C9) is supported by the experimental data, the broader claims about expanding scope (C10) and future capabilities (C76-C80) are largely speculative. The theoretical calculation (C79) relies on assumptions ('provided no other resolution-degrading factors play a role') that may not hold. These represent reasonable predictions but require validation through additional experiments on diverse specimens.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "8975f605-29b9-457f-a27b-57747d47d399",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "Current alignment procedures are limited by low SNR for complexes <300-500 kDa, with alignments driven by lower-resolution components that survive higher doses. The authors propose that long videos with high doses could optimize both low-resolution alignment and high-resolution information through dose-dependent weighting, potentially lowering size limits for structure determination. However, following movements of small particles will be more challenging, requiring further investigation into beam-induced blurring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C81-C84 about current limitations are supported by citations (Henderson et al. 2011, Scheres and Chen 2012, Hayward and Glaeser 1979). However, the proposed strategies (C85-C86) are speculative and not experimentally validated in this study. The acknowledgment of challenges for small particles (C87-C88) is appropriate, but the need for 'further investigations' indicates these results do not yet solve the problem for smaller complexes.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "b20885be-e858-4dbd-b559-5e654cf5de3e",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "The authors predict that current detectors with video processing will enable higher-resolution structures for many more samples, with continued improvements expected from maturing technologies like single-electron counting detectors, phase-plate imaging, and better sample preparation. They express optimism that the field will progress toward near-atomic resolution reconstructions for a wide range of specimens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These are forward-looking predictions about the impact of the technology (C90) and future developments (C91-C92). While the demonstrated results for ribosomes support optimism, the claims about 'many more samples' and 'wide range of specimens' are speculative and not validated by the current study, which only examined two ribosome systems. The predictions are reasonable but represent future work rather than established results.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "51998864-6d84-48c6-b89b-dc4fb2dfc111",
+      "content_id": "1e8e7566-a992-4707-a097-954fb62a9f63",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "The cryo-EM maps revealed continuous density for RNA expansion segments (nucleotides 440-499 of ES7 and 1954-2093 of ES27 in 25S) that were not modeled in the 80S crystal structure, providing new structural information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "This claim describes a specific observation from the experimental density maps that provides structural information beyond existing crystal structures. The specific nucleotide ranges are explicitly stated, and this represents a concrete example of the biological insights enabled by the improved resolution. The maps have been deposited in EMDB for verification.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "1987d724-dce4-4338-a7e8-dee83a743f99",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "The authors achieved ribosome reconstructions at unprecedented high resolution (4-5 \u00c5) using a novel statistical movie processing approach with direct electron detectors, requiring nearly two orders of magnitude fewer particles than previous methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly affirm this achievement, stating 'Bai et al report the cryo-EM structure of the yeast 80S ribosome at close to 4 \u00c5 resolution' and 'Remarkably, movies of 35,000 particles or less recorded in a single session were sufficient to achieve this impressive result.' They describe the work as bringing 'the resolution of single-particle methods into a new territory.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "Direct electron detectors exhibit superior DQE performance compared to CCD and film, and are fast enough to record videos during exposures, enabling tracking of beam-induced particle movements.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers accept these technical capabilities without question, noting that 'the high detective quantum efficiency of these innovative devices makes them far superior to the widely used scintillator-based CCD cameras and even to film.' They acknowledge the video recording capability as enabling the success of the method.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "07c38821-21cf-4f03-803a-72d7e26e1a24",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "A novel statistical video processing procedure was developed using Gaussian prior distributions centered on 16-frame average particle alignments, with specific parameters including running averages of five frames and 1\u00b0 standard deviation for Euler angles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers acknowledge the methodological innovation and its superiority ('Scheres and coworkers prove the superiority of their statistical framework over more traditional methods'), they request clarification on key aspects: 'How were the widths of the priors for the statistical movie processing chosen? Did the authors perform some kind of optimization?' This indicates the evidence for parameter selection is incomplete.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6115919d-8561-4c2b-bdc6-b8fe7b349671",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "Beam-induced movements during exposure are relatively small (1.7\u00b11.2\u00b0 rotations, 4.2\u00b12.3 \u00c5 translations) but vary spatially across micrographs, with complicated patterns indicating beam-induced rather than stage-drift effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not challenge these observations about beam-induced movement. However, they request a minor figure modification, noting 'The red and green dots reinforce the (false) notion that the particle moves by this amount,' suggesting acceptance of the underlying movement data while requesting clearer visualization.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "faa23358-9eab-489d-bb8f-2ec59d4ad655",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "Previous work by Grigorieff and colleagues showed beam-induced movements could be followed for icosahedral viruses, though resolution gains were limited, possibly due to experimental design.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly reference this prior work, stating 'This frame-by-frame particle alignment had already been studied by Brilot et al (2012) and Campbell et al. (2012) but with limited improvement in resolution,' confirming the authors' characterization of previous results and their limitations.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "d5e0334b-c025-477c-aabc-42317472965d",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "Tilt-pair analysis showed that alignment accuracy and particle numbers decrease with fewer averaged frames, with later frames aligning less accurately due to radiation damage, and 16-frame averages providing the most accurate alignments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers do not directly challenge these findings, they ask 'How did the authors take into account the observation that the beam-induced movement per dose unit is larger at the beginning of an exposure and smaller towards the end?' This suggests the treatment of time-dependent movement effects requires clarification.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6ed23a56-329a-42be-9824-21615821de7a",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "The study used 24,044 70S particle pairs (15,202 selected for single tRNA P-site state) and 72,447 80S particles (separated into two ratchet-state conformations with 35,813 and 22,638 particles).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request additional methodological details about classification: 'Please provide details on the classification (window size, number of classes, regularization factor, how many cycles?).' This indicates that while the particle numbers are stated, the procedures used to arrive at these classifications need better documentation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "9b632d75-8384-4666-b58f-e677ab6f4457",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "The cryo-EM maps revealed continuous density for RNA expansion segments not modeled in crystal structures, providing new structural information.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers request visualization of complete density maps ('there should be a panel 2G showing complete density maps of the 80S ribosome'), which implies acceptance of the quality claims while wanting better presentation. They note 'Many readers are familiar with the appearance of the ribosome in various reconstructions and reproduction of the full maps would provide a good qualitative appreciation of the results.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "084f7b12-4c32-43b9-85b4-66212b2659b2",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R9",
+      "result_type": "peer",
+      "result": "The methodology is predicted to enable higher-resolution structures for many more specimens, with theoretical calculations suggesting 3.3 \u00c5 resolution would be achievable with 1 million particles, expanding the scope of near-atomic cryo-EM.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not challenge these forward-looking predictions and implicitly support them by stating the work will 'revolutionize cryo-EM' and represents 'the first to take advantage of their full power to determine the structure of an important macromolecular complex at high resolution.' Their enthusiasm suggests agreement with the broader impact claims.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "60011653-0974-4ff6-8a7d-18ddef7edc89",
+      "content_id": "70f31fbc-0338-46e8-afe7-08b35aa1fb34",
+      "result_id": "R10",
+      "result_type": "peer",
+      "result": "Data were collected using specific experimental parameters: 16 electrons/\u0172 dose over 1-second exposures at 17 frames/second, with magnification of 79,096 yielding 1.77 \u00c5 pixel size, resulting in <1 electron/\u0172 per frame.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request clarification on beam tilt parameters: 'What was the beam tilt in the centre of the illuminated area, and how was it measured or estimated? How much beam tilt would be acceptable at 4 \u00c5 resolution? Can you exclude that the resolution was limited by beam tilt?' This indicates incomplete documentation of experimental conditions that could affect resolution.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "689a7f9f-a800-4d86-ab18-5a3d8ddeb82c",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "57c67de2-363f-4a54-a947-bdf49f69b242",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "62bcbdce-2fbb-4ff9-9fdb-a9ebd1ea7c01",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "41820fd5-b860-4f71-be35-59c647ca7a7c",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "a86a5250-d849-4cd4-a8dc-5f004d7afcfa",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "7c735196-b4d1-4365-a7ca-52ff6ba26649",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "1b355e37-12d6-49b3-aad7-53d94a73f2be",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "aaee277e-c89c-4bcc-ae4a-03528dbec9bf",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "85de469a-fb70-4c2a-9891-3a9362e83a0a",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "4338bfc8-c60a-43a5-a480-efe957590fb6",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "08f1625f-4f58-4abf-9098-e65ac1eb6944",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "4c0d1bda-f93f-4e55-8e57-03f4b03d626d",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "c7dceb1c-a57c-4057-9380-c897e1233307",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "3dbc015f-9952-48e9-acc8-ba31edd1e261",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "77b8abbd-4638-4b52-94ac-62012a0bd13f",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "c096e28b-3cb8-4ea3-ad22-662550d79842",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "4015f800-d44f-4df2-9cb5-8e82c2bfad4f",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "03afb248-98b9-4c5b-9701-1178107c500d",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "0a3d26ad-0df7-4e8d-bc99-fa351e7c998c",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "709724e6-4855-40af-9f98-680ead7a8f74",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "a87ba8a2-6a9d-47b5-adf5-a97c35579f61",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "47334072-eb46-4c64-9be8-5fb06dae82fd",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "0c09bce8-7e05-436e-b6db-63337bf28fc5",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "1a528ce6-8b15-4922-b191-c715cdbdaeaf",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "542626ef-d4e1-42d1-8057-b4b94740dcc5",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "00bcbc90-d404-41b1-b388-6e014ae34c74",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "394fc010-c6d0-41b7-ac5b-c1833ae096b5",
+      "result_id": "4977b38f-a19c-4391-a739-c5c35aa32159"
+    },
+    {
+      "claim_id": "6835077e-488c-418b-a6f3-1729cc8d2fe6",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "f66cd92b-ccf4-4b16-b2a5-3241767274a9",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "85529fe9-51c2-495b-b165-9af025e5c5da",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "d1e77e85-e7b0-4d73-86be-098439ffd650",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "e2e174a0-294f-4340-9401-dca5d46abd7a",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "17e5e557-b07a-4c2b-b0d1-d586c5b13a9b",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "6331e2ea-3dc8-4052-935a-cc39d9530d62",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "2b6f688f-d122-4347-8f13-8df10dc9f592",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "9b7ff1cb-139f-4fe0-ba56-11ca1ca95614",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "aaefe164-14ca-46e4-93ab-03aa1e0f0f7c",
+      "result_id": "92123148-f24a-4f43-8117-94b323f4ba71"
+    },
+    {
+      "claim_id": "99e95bdb-4645-4562-8836-aa39dd2374d6",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "7d7346fb-5452-4dd1-9f83-8a78470842e1",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "0f8c1c67-eda5-446f-b4e9-9fd3bc21d1df",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "d6cf49d4-ee9d-4d9c-b6d1-054498f8200a",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "c8b54f9a-b02b-46b2-8049-7146b990f0d2",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "2ec4225a-5bb7-4436-9f17-91c8b93b1e79",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "81c7146a-2dd5-441c-9f28-2f64b8a8d680",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "f56536ed-bd26-442e-bc27-16cca4c61dea",
+      "result_id": "23f65875-4192-4812-854c-a52119b1a6d6"
+    },
+    {
+      "claim_id": "c397c246-0f47-4dac-93f8-79f040f151c6",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "8ef62e38-d592-4188-9380-c36d8a755ed2",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "21df7253-6811-4fb6-b8fd-bfce4bfb5c93",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "223ea57f-6929-45a6-bc50-49d8c0fdb2fa",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "1f44a6fe-34ca-4090-b01f-eedc50b342d7",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "b9f3890c-3555-4b90-aa52-3d5383d3ccad",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "41cf280d-6e44-43f7-b55e-5a5a84e11d17",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "161a38b4-cf18-44d4-8c5b-1a2b92bd575f",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "74fcac13-dd54-4124-ace8-8f5604f9436d",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "c69e5932-25f1-4098-8c87-75e8e08db9aa",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "4d926582-0513-49b8-ac98-3ca63f3c40be",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "1f3b9796-01cf-4655-a174-180d07b2f9c2",
+      "result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1"
+    },
+    {
+      "claim_id": "298d2421-5308-49cb-bd88-c1d797b17b1e",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "04b73dc1-f767-43de-9a78-3c59e64ef109",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "89c01272-a156-48ff-8c96-6ec01d018f0a",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "b9f35f1d-1546-46ee-8297-417f8395b6b8",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "99cceee9-94b2-4118-ba83-9038e2f7b352",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "e27a6e3d-9566-4f55-9ba9-af40b8f4040d",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "fd18ba4c-1a73-4780-aaa0-fb758768e3aa",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "d6f6418b-cd38-4606-abf1-8109f6b4ad30",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "d63f301d-3575-414e-942d-47d1e0c6c8a9",
+      "result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6"
+    },
+    {
+      "claim_id": "7abe96b7-458f-469e-93c6-e8eaf84df99c",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "0cea1b10-ce76-412c-9d3f-4fa6d6cff64c",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "b3c32f45-b4b5-46bf-8be3-9e08ac2fd0af",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "ecc2277e-3fb5-44f9-89b5-35ba78f8ecfa",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "97aabd2a-7d52-4ded-85fc-42c1d3302585",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "6946cc54-3927-45e5-9be1-58d10b84e4aa",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "fa0ce3b7-6bcc-43fd-875c-25c6e96fd86c",
+      "result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e"
+    },
+    {
+      "claim_id": "7e29704c-c93f-40dc-839e-271d909029ab",
+      "result_id": "32855604-57d6-4699-aa04-8c1762555b22"
+    },
+    {
+      "claim_id": "bd5ee355-412f-4b8c-9c07-037baeb4e1b9",
+      "result_id": "32855604-57d6-4699-aa04-8c1762555b22"
+    },
+    {
+      "claim_id": "08075cec-9d89-46ec-9262-e7a043a440c8",
+      "result_id": "32855604-57d6-4699-aa04-8c1762555b22"
+    },
+    {
+      "claim_id": "e5f82e54-c05d-4192-9aaa-69f175c0fda2",
+      "result_id": "32855604-57d6-4699-aa04-8c1762555b22"
+    },
+    {
+      "claim_id": "6dfce84b-1342-4bb0-be08-a631abb8998d",
+      "result_id": "32855604-57d6-4699-aa04-8c1762555b22"
+    },
+    {
+      "claim_id": "ca08ddaf-a393-4259-aee6-3d222ad019e4",
+      "result_id": "32855604-57d6-4699-aa04-8c1762555b22"
+    },
+    {
+      "claim_id": "9423e6fc-a65d-4947-80e5-352efedabd4c",
+      "result_id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603"
+    },
+    {
+      "claim_id": "99a327bf-37ee-4744-92d2-0a1ea4aaa639",
+      "result_id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603"
+    },
+    {
+      "claim_id": "350df740-120c-4459-8837-96f54ca9261f",
+      "result_id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603"
+    },
+    {
+      "claim_id": "28579ee0-1572-4f71-a372-1a22dbfe73aa",
+      "result_id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603"
+    },
+    {
+      "claim_id": "09f6297e-0c31-4f28-b117-89768a8a0979",
+      "result_id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603"
+    },
+    {
+      "claim_id": "ae042ca2-2a00-4b2d-99b9-b92b15b39217",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "24db5b78-3140-42aa-aea9-2ee68a0920e7",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "ffc87f9a-eb6b-4458-a919-509496d9711e",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "5678bcf2-707c-42c7-921e-73819bb95835",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "df1db889-309b-411a-acc1-1ba0cf62e12b",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "67ddf4d6-eb6a-4156-ba8f-8134f32fa58b",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "8dc41951-d1a3-4c6a-8827-df1080622a22",
+      "result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308"
+    },
+    {
+      "claim_id": "5e97ccdf-5fe0-4b18-8991-68b2a927ad0c",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "893c3244-6e64-4257-a6d6-a73790486369",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "b52977c1-0b62-4db5-8b42-a867e3ccb237",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "9290df82-ee3a-46be-9b52-012f47ea18e0",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "ce710a2f-3c75-454e-ba2e-5c49852fc803",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "e2983258-806a-4e60-aa52-80fa60bf5737",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "3f048eb4-e1f4-4fac-8863-0a20ae151ac6",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "b8e4742a-5ad8-4513-99a1-ce95d6c22640",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "21731ad1-24b9-44d1-80d2-48dbd7fa44ac",
+      "result_id": "8975f605-29b9-457f-a27b-57747d47d399"
+    },
+    {
+      "claim_id": "a03912a0-8a78-4a25-8f25-e498660f3211",
+      "result_id": "b20885be-e858-4dbd-b559-5e654cf5de3e"
+    },
+    {
+      "claim_id": "791b2ac5-88f0-4e53-ae9f-73cbedd772ce",
+      "result_id": "b20885be-e858-4dbd-b559-5e654cf5de3e"
+    },
+    {
+      "claim_id": "124d5bb1-6375-4cdf-8912-19e597367992",
+      "result_id": "b20885be-e858-4dbd-b559-5e654cf5de3e"
+    },
+    {
+      "claim_id": "5d6fef53-b22e-4f08-a073-dad1a9048ea4",
+      "result_id": "51998864-6d84-48c6-b89b-dc4fb2dfc111"
+    },
+    {
+      "claim_id": "ae042ca2-2a00-4b2d-99b9-b92b15b39217",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "97aabd2a-7d52-4ded-85fc-42c1d3302585",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "6946cc54-3927-45e5-9be1-58d10b84e4aa",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "fa0ce3b7-6bcc-43fd-875c-25c6e96fd86c",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "9423e6fc-a65d-4947-80e5-352efedabd4c",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "99a327bf-37ee-4744-92d2-0a1ea4aaa639",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "28579ee0-1572-4f71-a372-1a22dbfe73aa",
+      "result_id": "1987d724-dce4-4338-a7e8-dee83a743f99"
+    },
+    {
+      "claim_id": "f66cd92b-ccf4-4b16-b2a5-3241767274a9",
+      "result_id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c"
+    },
+    {
+      "claim_id": "85529fe9-51c2-495b-b165-9af025e5c5da",
+      "result_id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c"
+    },
+    {
+      "claim_id": "e2e174a0-294f-4340-9401-dca5d46abd7a",
+      "result_id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c"
+    },
+    {
+      "claim_id": "6331e2ea-3dc8-4052-935a-cc39d9530d62",
+      "result_id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c"
+    },
+    {
+      "claim_id": "2b6f688f-d122-4347-8f13-8df10dc9f592",
+      "result_id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c"
+    },
+    {
+      "claim_id": "7abe96b7-458f-469e-93c6-e8eaf84df99c",
+      "result_id": "07c38821-21cf-4f03-803a-72d7e26e1a24"
+    },
+    {
+      "claim_id": "0cea1b10-ce76-412c-9d3f-4fa6d6cff64c",
+      "result_id": "07c38821-21cf-4f03-803a-72d7e26e1a24"
+    },
+    {
+      "claim_id": "b3c32f45-b4b5-46bf-8be3-9e08ac2fd0af",
+      "result_id": "07c38821-21cf-4f03-803a-72d7e26e1a24"
+    },
+    {
+      "claim_id": "ecc2277e-3fb5-44f9-89b5-35ba78f8ecfa",
+      "result_id": "07c38821-21cf-4f03-803a-72d7e26e1a24"
+    },
+    {
+      "claim_id": "298d2421-5308-49cb-bd88-c1d797b17b1e",
+      "result_id": "6115919d-8561-4c2b-bdc6-b8fe7b349671"
+    },
+    {
+      "claim_id": "e27a6e3d-9566-4f55-9ba9-af40b8f4040d",
+      "result_id": "6115919d-8561-4c2b-bdc6-b8fe7b349671"
+    },
+    {
+      "claim_id": "fd18ba4c-1a73-4780-aaa0-fb758768e3aa",
+      "result_id": "6115919d-8561-4c2b-bdc6-b8fe7b349671"
+    },
+    {
+      "claim_id": "d6f6418b-cd38-4606-abf1-8109f6b4ad30",
+      "result_id": "6115919d-8561-4c2b-bdc6-b8fe7b349671"
+    },
+    {
+      "claim_id": "9b7ff1cb-139f-4fe0-ba56-11ca1ca95614",
+      "result_id": "faa23358-9eab-489d-bb8f-2ec59d4ad655"
+    },
+    {
+      "claim_id": "aaefe164-14ca-46e4-93ab-03aa1e0f0f7c",
+      "result_id": "faa23358-9eab-489d-bb8f-2ec59d4ad655"
+    },
+    {
+      "claim_id": "89c01272-a156-48ff-8c96-6ec01d018f0a",
+      "result_id": "d5e0334b-c025-477c-aabc-42317472965d"
+    },
+    {
+      "claim_id": "b9f35f1d-1546-46ee-8297-417f8395b6b8",
+      "result_id": "d5e0334b-c025-477c-aabc-42317472965d"
+    },
+    {
+      "claim_id": "99cceee9-94b2-4118-ba83-9038e2f7b352",
+      "result_id": "d5e0334b-c025-477c-aabc-42317472965d"
+    },
+    {
+      "claim_id": "d63f301d-3575-414e-942d-47d1e0c6c8a9",
+      "result_id": "d5e0334b-c025-477c-aabc-42317472965d"
+    },
+    {
+      "claim_id": "7e29704c-c93f-40dc-839e-271d909029ab",
+      "result_id": "6ed23a56-329a-42be-9824-21615821de7a"
+    },
+    {
+      "claim_id": "bd5ee355-412f-4b8c-9c07-037baeb4e1b9",
+      "result_id": "6ed23a56-329a-42be-9824-21615821de7a"
+    },
+    {
+      "claim_id": "08075cec-9d89-46ec-9262-e7a043a440c8",
+      "result_id": "6ed23a56-329a-42be-9824-21615821de7a"
+    },
+    {
+      "claim_id": "ca08ddaf-a393-4259-aee6-3d222ad019e4",
+      "result_id": "6ed23a56-329a-42be-9824-21615821de7a"
+    },
+    {
+      "claim_id": "5d6fef53-b22e-4f08-a073-dad1a9048ea4",
+      "result_id": "9b632d75-8384-4666-b58f-e677ab6f4457"
+    },
+    {
+      "claim_id": "ffc87f9a-eb6b-4458-a919-509496d9711e",
+      "result_id": "084f7b12-4c32-43b9-85b4-66212b2659b2"
+    },
+    {
+      "claim_id": "5678bcf2-707c-42c7-921e-73819bb95835",
+      "result_id": "084f7b12-4c32-43b9-85b4-66212b2659b2"
+    },
+    {
+      "claim_id": "df1db889-309b-411a-acc1-1ba0cf62e12b",
+      "result_id": "084f7b12-4c32-43b9-85b4-66212b2659b2"
+    },
+    {
+      "claim_id": "67ddf4d6-eb6a-4156-ba8f-8134f32fa58b",
+      "result_id": "084f7b12-4c32-43b9-85b4-66212b2659b2"
+    },
+    {
+      "claim_id": "8dc41951-d1a3-4c6a-8827-df1080622a22",
+      "result_id": "084f7b12-4c32-43b9-85b4-66212b2659b2"
+    },
+    {
+      "claim_id": "74fcac13-dd54-4124-ace8-8f5604f9436d",
+      "result_id": "60011653-0974-4ff6-8a7d-18ddef7edc89"
+    },
+    {
+      "claim_id": "c69e5932-25f1-4098-8c87-75e8e08db9aa",
+      "result_id": "60011653-0974-4ff6-8a7d-18ddef7edc89"
+    },
+    {
+      "claim_id": "c397c246-0f47-4dac-93f8-79f040f151c6",
+      "result_id": "60011653-0974-4ff6-8a7d-18ddef7edc89"
+    },
+    {
+      "claim_id": "8ef62e38-d592-4188-9380-c36d8a755ed2",
+      "result_id": "60011653-0974-4ff6-8a7d-18ddef7edc89"
+    },
+    {
+      "claim_id": "21df7253-6811-4fb6-b8fd-bfce4bfb5c93",
+      "result_id": "60011653-0974-4ff6-8a7d-18ddef7edc89"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "90ceed62-2668-4ff0-a65d-200bbe52a138",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "51998864-6d84-48c6-b89b-dc4fb2dfc111",
+      "peer_result_id": "9b632d75-8384-4666-b58f-e677ab6f4457",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Perfect agreement on C104. Both evaluations support the structural observation about nucleotides 2652-2689 and 2816-2830. Peer reviewers request better visualization but accept the quality of the density maps.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "e1470737-e1dc-47a3-92cb-696fa119bd43",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308",
+      "peer_result_id": "084f7b12-4c32-43b9-85b4-66212b2659b2",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on forward-looking predictions (C76-C80). OpenEval considers these speculative claims requiring validation, while peer reviewers enthusiastically support the broader impact predictions, stating the work will 'revolutionize cryo-EM.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "0916aa2b-b448-46c0-bb45-28e2221e2fd3",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "32855604-57d6-4699-aa04-8c1762555b22",
+      "peer_result_id": "6ed23a56-329a-42be-9824-21615821de7a",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on data processing workflow (C65-C67, C70). OpenEval finds the particle numbers and classification results well-supported, while peer reviewers request additional methodological details about classification parameters.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "fadcfc85-8caf-46d1-b0b0-5e6ca43053c1",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e",
+      "peer_result_id": "07c38821-21cf-4f03-803a-72d7e26e1a24",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on methodological development (C100-C103). OpenEval finds the statistical framework clearly described with specific parameters, while peer reviewers request clarification on prior width selection and optimization procedures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "6523a208-3edc-47c4-8ef9-fe060d54b162",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "92123148-f24a-4f43-8117-94b323f4ba71",
+      "peer_result_id": "64b9d889-cfc2-4ade-b240-1fcc8c0b945c",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on detector capabilities (C7, C8, C34, C36, C37). Both evaluations accept the technical specifications and superior performance of direct electron detectors without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "f86b3701-6ce8-48da-a22a-5e847abb132c",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6",
+      "peer_result_id": "6115919d-8561-4c2b-bdc6-b8fe7b349671",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on beam-induced movement observations (C53, C58-C60). Both evaluations accept the movement data, though peer reviewers request clearer visualization to avoid false impressions about particle displacement magnitude.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "fc3f8004-d1a6-4f12-ba84-c2dbb60b0970",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "1cb21275-004b-4e0b-9b7e-cb845cb425a6",
+      "peer_result_id": "d5e0334b-c025-477c-aabc-42317472965d",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on movement pattern analysis (C55-C57, C61). OpenEval finds the experimental data in Figures 1-2 directly supportive, while peer reviewers question how time-dependent movement effects were accounted for.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "5b95f983-787e-41cd-bd9b-6732f43e10f3",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "25a075cc-da18-4d1a-9804-d6d24afa61e1",
+      "peer_result_id": "60011653-0974-4ff6-8a7d-18ddef7edc89",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on experimental parameters (C48-C50, C96-C97). OpenEval finds data collection parameters clearly documented, while peer reviewers request clarification on beam tilt measurements and potential resolution limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ab387394-b0ca-4103-8fdf-526730ab4ad7",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "4d6ddf18-2751-43cc-acb3-bb47ffe50603",
+      "peer_result_id": "1987d724-dce4-4338-a7e8-dee83a743f99",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on comparative achievement claims (C71-C72, C74). Both evaluations support the resolution improvement and particle efficiency gains. Peer reviewers explicitly affirm the 'impressive result' and 'new territory' for single-particle methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "66ad68c0-80f5-4acd-9343-c8a5bbe75b8c",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "a15f4843-2b41-423d-aeb4-1b7be394697e",
+      "peer_result_id": "1987d724-dce4-4338-a7e8-dee83a743f99",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on core methodological results (C62-C64). Both evaluations support the demonstration of improvement through FSC curves, crystal structure comparison, and visual inspection. Peer reviewers describe the achievement as bringing resolution 'into a new territory.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "49a44c3b-77e4-4d47-a93e-5cfbc5d69469",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "92123148-f24a-4f43-8117-94b323f4ba71",
+      "peer_result_id": "faa23358-9eab-489d-bb8f-2ec59d4ad655",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on prior work characterization (C38-C39). Both evaluations accept the authors' description of Brilot et al. and Campbell et al. studies showing limited resolution improvement with frame-by-frame alignment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "ecd1beb1-a5a2-4859-99f0-99601b238051",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "c40c9ef8-99e3-4316-a8da-a3335ea09308",
+      "peer_result_id": "1987d724-dce4-4338-a7e8-dee83a743f99",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on scope expansion claim (C9). OpenEval considers the broader implications speculative pending validation on diverse specimens, while peer reviewers enthusiastically support the achievement as documented.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "56fd3fbf-80d5-4e7d-994c-12b326aaa9c8",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "4977b38f-a19c-4391-a739-c5c35aa32159",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated extensive background claims (C1-C5, C11-C32) about cryo-EM history and technical limitations as well-supported by appropriate citations. No corresponding peer review evaluation found for these background/introduction claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "50709b78-af86-4dea-816e-6a65175f1773",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "23f65875-4192-4812-854c-a52119b1a6d6",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated ribosome properties and cryo-EM challenges (C40-C47) as accurately describing established knowledge with appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "d02f6bdd-83da-4dea-97e1-f0f5840eaf54",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "8975f605-29b9-457f-a27b-57747d47d399",
+      "peer_result_id": null,
+      "openeval_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval found claims about current limitations and proposed strategies (C81-C89) to be partially speculative, with strategies not experimentally validated. No corresponding peer review evaluation found for these discussion points.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    },
+    {
+      "id": "f2bbe7b4-1ff7-41bc-a7fe-1d4fbde78931",
+      "submission_id": "047cc098-4b5d-4e24-b3ec-6e470cbee2bd",
+      "openeval_result_id": "b20885be-e858-4dbd-b559-5e654cf5de3e",
+      "peer_result_id": null,
+      "openeval_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval considered future impact predictions (C90-C92) as speculative, noting validation only on two ribosome systems. No corresponding peer review evaluation found for these concluding predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:33.883489Z"
+    }
+  ]
+}

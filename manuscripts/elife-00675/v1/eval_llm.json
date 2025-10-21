@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C82",
+      "C98"
+    ],
+    "result": "The ethylene transcriptional response occurs in four temporal waves significantly regulated by EIN3 (p<10\u207b\u00b9\u2070), with distinct temporal behaviors (p<0.001) and progressive reduction in transcriptional noise. These waves show functional enrichment for RNA binding/translation (Wave 1, 3), cell wall maintenance (Wave 2), and endogenous stimulus response (Wave 4), accounting for 50% of EIN3-regulated targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3, C12, C22-C30, C33-C34, C82, and C98 collectively provide strong statistical evidence (DREM analysis with p<10\u207b\u00b9\u2070) and functional characterization of temporal waves. The ChIP-Seq and mRNA-Seq data converge to support wave identification, temporal dynamics, and functional enrichment patterns. Quantitative metrics and statistical tests are appropriately applied."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C84"
+    ],
+    "result": "EIN3 establishes a negative feedback regulatory circuit by binding to and inducing expression of multiple ethylene pathway negative regulators including ETR2, ERS1/2, RTE1, CTR1, and EBF1/2, enabling identification of the majority of known ethylene signaling components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C43-C45, and C84 are well-supported by ChIP-Seq data showing EIN3 binding to negative regulators, combined with mRNA-Seq showing their transcriptional induction. The feedback mechanism is consistent with prior literature (C44, C45) and represents a coherent regulatory logic for pathway homeostasis."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C83"
+    ],
+    "result": "EIN3 integrates hormone cross-regulation by binding targets involved in multiple hormone pathways. EIN3 targets are enriched 2-fold for hormone genes (46% vs 21% genome-wide, p=10\u207b\u2079\u2076), with many genes involved in multiple hormone responses, and EIN3 targets these pathways at multiple regulatory levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C40, C46-C51, and C83 provide strong statistical evidence (hypergeometric p=10\u207b\u2079\u2076) for hormone pathway enrichment. The ChIP-Seq data directly demonstrates EIN3 binding to hormone pathway genes, and network analysis (C48) shows interconnectivity. The quantitative comparison to genome background is appropriate and compelling."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Ethylene primes cells for jasmonate response through anticipatory binding: EIN3 targets four JAZ repressors (including JAZ1 and JAZ6 that are ethylene-induced), loading promoters of jasmonate/ethylene response genes with EIN3 and JAZ proteins before jasmonate stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C52-C55 are supported by ChIP-Seq showing EIN3 binding to JAZ genes and jasmonate-responsive genes, combined with mRNA-Seq showing ethylene induction of JAZ1/JAZ6. The anticipatory binding model is consistent with prior literature in other organisms (C56) and represents a mechanistic explanation for ethylene-jasmonate synergy."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "EIN3 coordinates ethylene-gibberellin cross-regulation by binding GID1B/GID1C receptors and PIF3 transcription factor, with the regulatory logic promoting gibberellin response through DELLA degradation and PIF3 release. PIF3 motifs are over-represented in ethylene-responsive gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C57-C59 are supported by ChIP-Seq data showing EIN3 binding to gibberellin pathway components, and motif enrichment analysis (C59, p<10\u207b\u2075) supporting feed-forward regulation. The regulatory logic (C58) is inferred from established gibberellin signaling knowledge combined with the binding data, providing a coherent mechanistic model."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "EIN3 coordinates ethylene-auxin cross-regulation at transport and transcriptional levels by targeting PID, PBP1, and seven auxin response proteins. EIN3 also binds AUX1 and IAA29, though these are not ethylene-responsive in etiolated seedlings, suggesting tissue-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C61-C62 are directly supported by ChIP-Seq and mRNA-Seq data. The tissue-specificity interpretation (C64) is appropriately cautious given the lack of ethylene response in the tested tissue, and is supported by prior literature (C63) showing AUX1 function in roots. The speculation is reasonable and appropriately qualified."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Twelve EIN3-regulated transcription factors were characterized by protein binding microarrays, identifying AT-ERF1, ERF5, WRKY14/47, PIF3, NAC6, and RAP2.2 as candidates for secondary ethylene response regulation based on motif over-representation (p<10\u207b\u2075) in ethylene-responsive gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C66-C68 are supported by PBM experimental data generating DNA-binding motifs and subsequent motif enrichment analysis with appropriate statistical testing (p<10\u207b\u2075). The integration of in vitro binding data with in vivo expression data provides strong evidence for these transcription factors' roles in the ethylene cascade."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "EIN3 targets the HLS1 gene family (HLS1, HLH1-3), which form a plant-specific acetyltransferase class. Quadruple mutants reveal pleiotropic phenotypes including embryo patterning defects, dwarfism (similar to axr1), and floral defects (similar to arf3/ettin), demonstrating functional redundancy and roles extending beyond apical hook development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C70-C79, C94-C96 provide comprehensive evidence: ChIP-Seq shows EIN3 binding (C70, C72), expression analysis confirms regulation (C71, C77), phylogenetic analysis establishes plant-specificity (C96), and genetic analysis of quadruple mutants reveals severe pleiotropic phenotypes (C73-C76). The functional redundancy inference (C95) is well-supported by lack of single mutant phenotypes versus severe quadruple mutant defects."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The majority (85%) of ethylene-regulated EIN3 targets are up-regulated, with ~14% being transcription factors. EIN3 targets are significantly enriched for transcription factor regulation GO terms, confirming EIN3 activates a transcriptional cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C14-C18 are supported by quantitative mRNA-Seq analysis (C15) and GO enrichment analysis (C17). The data consistently show EIN3 functions primarily as an activator, and the enrichment of transcription factors among targets (C16) combined with GO analysis (C17) provides strong evidence for transcriptional cascade activation (C18)."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C100",
+      "C103"
+    ],
+    "result": "EIN3-regulated targets (EIN3-R) show increased binding at transcription start sites compared to non-regulated targets, but there is no quantitative correlation between EIN3 binding levels and transcriptional changes. The majority of EIN3 targets show increased binding without corresponding transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C20, C100, and C103 are supported by ChIP-Seq and mRNA-Seq integration with appropriate statistical analysis (linear regression, C100). The finding that binding does not quantitatively predict transcription is consistent with general knowledge (C19) and highlights the complexity of transcriptional regulation. The qualitative difference between EIN3-R and non-regulated targets (C20) is appropriately demonstrated."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C99"
+    ],
+    "result": "ChIP-Seq analysis identified 1460 EIN3 binding regions, recovering four of seven previously known targets. EIN3 binding preferentially occurs in promoter regions (1000 bp upstream of TSS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C92-C93 and C99 report straightforward quantitative results from ChIP-Seq analysis. The recovery rate of known targets (4/7, C93) provides validation, though the incomplete recovery suggests either false negatives in the current study or false positives in prior work. The promoter enrichment (C99) is expected for a transcription factor and is appropriately demonstrated."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "EIN3 transcriptional control is likely conserved across plants, with orthologs in poplar, soybean, rice, maize, moss, and algae. Physcomitrella patens EIN3 binds similar motif sequences to Arabidopsis EIN3, suggesting adaptable system homeostasis in plants requires robust hormone co-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C86-C88 are supported by database evidence (C87) and PBM data showing conserved DNA-binding specificity (C88). The conservation across diverse plant lineages including moss provides strong evidence for functional importance. The broader conclusion about system homeostasis (C89) is appropriately inferred from the comprehensive analysis of EIN3's regulatory roles, though it remains a high-level interpretation."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C64"
+    ],
+    "result": "The first wave may serve as immediate ethylene response activating desensitization genes, while later waves become more hormone-focused and less noisy. The expression kinetics may reflect distinct transcriptional control mechanisms or tissue heterogeneity, with feed-forward/feed-back mechanisms potentially establishing functional specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C32, C35-C39, and C64 are explicitly speculative (indicated by 'may,' 'likely,' 'appears') and represent interpretations of observed patterns rather than directly tested hypotheses. While the temporal patterns are well-documented (other result groups), the mechanistic explanations for wave characteristics and the desensitization hypothesis remain untested. These require additional experiments (single-cell analysis, mechanistic studies) to be definitively supported."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C19",
+      "C31",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C54",
+      "C56",
+      "C60",
+      "C63",
+      "C65",
+      "C69",
+      "C78",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "Background knowledge claims establishing the context for the study, including ethylene's role in plant development, EIN3 as master regulator, biphasic growth inhibition kinetics, and general principles of hormone cross-regulation and transcriptional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1-C2, C6-C11, C19, C31, C41-C42, C44-C45, C54, C56, C60, C63, C65, C69, C78, C80-C81, and C85 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context and are not novel findings of this study. They are accepted as supported based on the cited literature and general scientific consensus in plant biology."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C102"
+    ],
+    "result": "Equivalent numbers of genes are up- and down-regulated upon ethylene treatment genome-wide, with approximately 1% overlap between up- and down-regulated genes across timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C13 and C102 are straightforward quantitative results from mRNA-Seq differential expression analysis. The minimal overlap (C102) indicates genes are generally either induced or repressed but not both, which is biologically reasonable and suggests the analysis appropriately distinguishes temporal dynamics from bidirectional regulation."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C97",
+      "C101"
+    ],
+    "result": "Methodological and descriptive findings: experiments used 3-day-old etiolated seedlings treated with ethylene for 0-24 hr; 21% of genome genes are hormone-related; decreased expression standard deviation correlates with increased hormone-related genes in waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C90-C91 and C97 are straightforward methodological descriptions and quantitative annotations. Claim C101 reports a correlation observed in the data analysis. These are appropriately documented and represent basic characterization of the experimental system and dataset."
+  }
+]

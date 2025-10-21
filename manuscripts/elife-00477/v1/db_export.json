@@ -1,0 +1,72 @@
+{
+  "submission": {
+    "id": "2e4aceaa-b260-4685-b708-80c399b3d3bc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:45:45.040160Z",
+    "updated_at": "2025-10-21T22:45:45.040160Z"
+  },
+  "content": [
+    {
+      "id": "54df6f3f-2fb1-45d9-998d-ec835169244c",
+      "submission_id": "2e4aceaa-b260-4685-b708-80c399b3d3bc",
+      "content_type": "manuscript",
+      "content_text": "# Crossing oceans\n\n## Authors\n\n- Eve Marder<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology and the Volen National Center for Complex Systems Brandeis University Waltham United States marder@brandeis.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nEve Marder explains why all scientists should spend time living and working in a foreign country.\n",
+      "created_at": "2025-10-21T22:45:45.040160Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:45:45.040160Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:45:45.040160Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5cd8d022-847f-4477-9a9a-44b98ed5fe2e",
+      "content_id": "54df6f3f-2fb1-45d9-998d-ec835169244c",
+      "claim_id": "C1",
+      "claim": "All scientists should spend time living and working in a foreign country.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Eve Marder explains why all scientists should spend time living and working in a foreign country.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a prescriptive recommendation presented in the abstract without supporting data, citations, or established scientific consensus provided in the visible manuscript content.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:45.040160Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7d5f4b9f-d995-4cfc-ac36-99674be09fe3",
+      "content_id": "54df6f3f-2fb1-45d9-998d-ec835169244c",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The author recommends that all scientists should spend time living and working in a foreign country.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claim C1 presents a prescriptive recommendation without any supporting empirical data, statistical analysis, experimental evidence, or cited literature within the provided manuscript content. This is classified as speculation rather than a scientific finding, and no evidence is presented to support this universal recommendation for all scientists.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:45:45.040160Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5cd8d022-847f-4477-9a9a-44b98ed5fe2e",
+      "result_id": "7d5f4b9f-d995-4cfc-ac36-99674be09fe3"
+    }
+  ],
+  "comparisons": []
+}

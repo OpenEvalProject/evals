@@ -1,0 +1,165 @@
+{
+  "submission": {
+    "id": "e009c0d4-0037-47da-9521-6b2899beffff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:10.156728Z",
+    "updated_at": "2025-10-21T22:51:10.156728Z"
+  },
+  "content": [
+    {
+      "id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "submission_id": "e009c0d4-0037-47da-9521-6b2899beffff",
+      "content_type": "manuscript",
+      "content_text": "# Direct detection pays off for electron cryo-microscopy\n\n## Authors\n\n- Nikolaus Grigorieff<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and the Howard Hughes Medical Institute, Brandeis University Waltham Untied States niko@brandeis.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nImproved electron detectors and image-processing techniques will allow the structures of macromolecules to be determined from tens of thousands of single-particle cryo-EM images, rather than the hundreds of thousands needed previously.\n",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8655f23e-7207-4125-9b2f-1825c2366e70",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "claim_id": "C1",
+      "claim": "Improved electron detectors will allow the structures of macromolecules to be determined from tens of thousands of single-particle cryo-EM images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Improved electron detectors and image-processing techniques will allow the structures of macromolecules to be determined from tens of thousands of single-particle cryo-EM images, rather than the hundreds of thousands needed previously.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a forward-looking statement about what improved detectors 'will allow' without presenting experimental data or citations to support this specific quantitative claim.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "594e61fa-8086-4e86-8054-1b4035153baa",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "claim_id": "C2",
+      "claim": "Improved image-processing techniques will allow the structures of macromolecules to be determined from tens of thousands of single-particle cryo-EM images.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Improved electron detectors and image-processing techniques will allow the structures of macromolecules to be determined from tens of thousands of single-particle cryo-EM images, rather than the hundreds of thousands needed previously.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a forward-looking statement about what improved image-processing techniques 'will allow' without presenting experimental data or citations to support this specific quantitative claim.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "ec4b9b16-c401-48fe-bc33-67a1b8ee84fc",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "claim_id": "C3",
+      "claim": "Previously, hundreds of thousands of single-particle cryo-EM images were needed to determine the structures of macromolecules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Improved electron detectors and image-processing techniques will allow the structures of macromolecules to be determined from tens of thousands of single-particle cryo-EM images, rather than the hundreds of thousands needed previously.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This refers to the prior state of the field and represents established knowledge about previous requirements for cryo-EM structure determination.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "bc062469-d229-4595-8cef-4f01d8e64807",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "claim_id": "C4",
+      "claim": "Nikolaus Grigorieff is affiliated with the Department of Biochemistry at Brandeis University.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Department of Biochemistry and the Howard Hughes Medical Institute, Brandeis University Waltham Untied States niko@brandeis.edu",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is factual information directly stated in the author affiliation section of the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "63aa46e2-0c09-4903-a109-9e8d3910acd7",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "claim_id": "C5",
+      "claim": "Nikolaus Grigorieff is affiliated with the Howard Hughes Medical Institute at Brandeis University.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Department of Biochemistry and the Howard Hughes Medical Institute, Brandeis University Waltham Untied States niko@brandeis.edu",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is factual information directly stated in the author affiliation section of the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "01679e4c-0d04-4d89-be3a-f258c0f0c9ee",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "claim_id": "C6",
+      "claim": "Direct detection is beneficial for electron cryo-microscopy.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Direct detection pays off for electron cryo-microscopy",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title implies that direct detection provides benefits ('pays off') for cryo-EM, though the specific nature of these benefits is elaborated in the abstract through improved detector capabilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "33f3db75-9b91-4633-abe2-277d31a895c8",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors assert that improved electron detectors and image-processing techniques will reduce the number of single-particle cryo-EM images needed for macromolecular structure determination from hundreds of thousands to tens of thousands, representing a beneficial advancement in direct detection technology for cryo-EM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claims C1 and C2 are speculative forward-looking statements without experimental data, statistical analysis, or citations to support the specific quantitative reduction claimed (hundreds of thousands to tens of thousands). While C3 establishes the baseline and C6 implies benefits, no evidence is presented in this abstract to validate the predicted improvement or demonstrate that this reduction has been achieved.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    },
+    {
+      "id": "f201d1b8-a009-4025-893a-a07a9d5d7c80",
+      "content_id": "03ef232f-0085-4614-b8d5-edfb126cc4cc",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Nikolaus Grigorieff holds dual affiliations at the Department of Biochemistry and the Howard Hughes Medical Institute at Brandeis University.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4 and C5 are directly stated factual information from the author affiliation section. These administrative details are verifiable and appropriately documented in the manuscript metadata.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:10.156728Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8655f23e-7207-4125-9b2f-1825c2366e70",
+      "result_id": "33f3db75-9b91-4633-abe2-277d31a895c8"
+    },
+    {
+      "claim_id": "594e61fa-8086-4e86-8054-1b4035153baa",
+      "result_id": "33f3db75-9b91-4633-abe2-277d31a895c8"
+    },
+    {
+      "claim_id": "ec4b9b16-c401-48fe-bc33-67a1b8ee84fc",
+      "result_id": "33f3db75-9b91-4633-abe2-277d31a895c8"
+    },
+    {
+      "claim_id": "01679e4c-0d04-4d89-be3a-f258c0f0c9ee",
+      "result_id": "33f3db75-9b91-4633-abe2-277d31a895c8"
+    },
+    {
+      "claim_id": "bc062469-d229-4595-8cef-4f01d8e64807",
+      "result_id": "f201d1b8-a009-4025-893a-a07a9d5d7c80"
+    },
+    {
+      "claim_id": "63aa46e2-0c09-4903-a109-9e8d3910acd7",
+      "result_id": "f201d1b8-a009-4025-893a-a07a9d5d7c80"
+    }
+  ],
+  "comparisons": []
+}

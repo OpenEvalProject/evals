@@ -1,0 +1,133 @@
+{
+  "submission": {
+    "id": "bd973a0c-b2be-4ee6-bacc-a37a1de54cbd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:07.659967Z",
+    "updated_at": "2025-10-21T22:51:07.659967Z"
+  },
+  "content": [
+    {
+      "id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "submission_id": "bd973a0c-b2be-4ee6-bacc-a37a1de54cbd",
+      "content_type": "manuscript",
+      "content_text": "# Building a super elongation complex for HIV\n\n## Authors\n\n- Christopher P Hill<sup>1</sup>\n- Wesley I Sundquist<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Utah School of Medicine Salt Lake City United States chris@biochem.utah.edu\n2. Department of Biochemistry University of Utah School of Medicine Salt Lake City United States wes@biochem.utah.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nA better understanding of the host cell protein complex that helps HIV replicate inside cells offers the possibility of new therapeutic targets.\n",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4532bbdc-3ea3-437a-8c09-7ebc9efea0c2",
+      "content_id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "claim_id": "C1",
+      "claim": "A host cell protein complex helps HIV replicate inside cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A better understanding of the host cell protein complex that helps HIV replicate inside cells offers the possibility of new therapeutic targets.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established scientific knowledge about HIV replication mechanisms involving host cell machinery.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    },
+    {
+      "id": "2c699d2b-5f22-426c-b540-4bd1d7b30511",
+      "content_id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "claim_id": "C2",
+      "claim": "Better understanding of the host cell protein complex that helps HIV replicate offers the possibility of new therapeutic targets.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A better understanding of the host cell protein complex that helps HIV replicate inside cells offers the possibility of new therapeutic targets.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a forward-looking statement about potential therapeutic applications that could result from improved understanding, representing speculative reasoning about future possibilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    },
+    {
+      "id": "e124fcba-c0d3-483f-b9ae-29e46ddf9dfa",
+      "content_id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "claim_id": "C3",
+      "claim": "The manuscript concerns the super elongation complex in the context of HIV.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Building a super elongation complex for HIV",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title indicates the manuscript's focus is on the super elongation complex and its relationship to HIV, though the specific nature of this relationship is inferred from the title and abstract together.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    },
+    {
+      "id": "fb2e55b0-adc1-4c66-aa74-3adb1e26d0d3",
+      "content_id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "claim_id": "C4",
+      "claim": "The super elongation complex is a host cell protein complex involved in HIV replication.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Building a super elongation complex for HIV... A better understanding of the host cell protein complex that helps HIV replicate inside cells offers the possibility of new therapeutic targets.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The connection between the title's reference to 'super elongation complex' and the abstract's reference to 'host cell protein complex that helps HIV replicate' implies these refer to the same or related complexes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "efcd6cf1-6c04-4c12-af64-c34fb3a39de7",
+      "content_id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The manuscript discusses the super elongation complex as a host cell protein complex that facilitates HIV replication inside cells. This represents established knowledge about HIV's dependence on host cellular machinery for its replication cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While C1 reflects established scientific knowledge about host cell complexes in HIV replication, and C3-C4 infer that the super elongation complex is the specific complex being discussed, the manuscript provided is only a title and abstract without experimental data, methods, or detailed results. No new findings are presented to evaluate, only a statement of context and future possibilities.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    },
+    {
+      "id": "3c1a3221-a70d-4cc4-8f96-1067814c955e",
+      "content_id": "2923df11-40be-4198-9bb4-84cac9acb957",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Improved understanding of the host cell protein complex involved in HIV replication could lead to new therapeutic targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "C2 is explicitly speculative about future therapeutic possibilities. Without experimental validation, mechanistic insights, or demonstration of druggability in the manuscript, this remains a hypothesis rather than a supported result. The claim represents a rationale for research rather than a demonstrated outcome.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:07.659967Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4532bbdc-3ea3-437a-8c09-7ebc9efea0c2",
+      "result_id": "efcd6cf1-6c04-4c12-af64-c34fb3a39de7"
+    },
+    {
+      "claim_id": "e124fcba-c0d3-483f-b9ae-29e46ddf9dfa",
+      "result_id": "efcd6cf1-6c04-4c12-af64-c34fb3a39de7"
+    },
+    {
+      "claim_id": "fb2e55b0-adc1-4c66-aa74-3adb1e26d0d3",
+      "result_id": "efcd6cf1-6c04-4c12-af64-c34fb3a39de7"
+    },
+    {
+      "claim_id": "2c699d2b-5f22-426c-b540-4bd1d7b30511",
+      "result_id": "3c1a3221-a70d-4cc4-8f96-1067814c955e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2159 @@
+{
+  "submission": {
+    "id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:14.273615Z",
+    "updated_at": "2025-10-21T22:51:14.273615Z"
+  },
+  "content": [
+    {
+      "id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "content_type": "manuscript",
+      "content_text": "# The homologous recombination machinery modulates the formation of RNA\u2013DNA hybrids and associated chromosome instability\n\n## Authors\n\n- Lamia Wahba<sup>1</sup>\n- Steven K Gore<sup>1</sup>\n- Douglas Koshland<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell and Molecular Biology Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n2. Department of Biology Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00505.001 Genome instability in yeast and mammals is caused by RNA\u2013DNA hybrids that form as a result of defects in different aspects of RNA biogenesis. We report that in yeast mutants defective for transcription repression and RNA degradation, hybrid formation requires Rad51p and Rad52p. These proteins normally promote DNA\u2013DNA strand exchange in homologous recombination. We suggest they also directly promote the DNA\u2013RNA strand exchange necessary for hybrid formation since we observed accumulation of Rad51p at a model hybrid-forming locus. Furthermore, we provide evidence that Rad51p mediates hybridization of transcripts to homologous chromosomal loci distinct from their site of synthesis. This hybrid formation in trans amplifies the genome-destabilizing potential of RNA and broadens the exclusive co-transcriptional models that pervade the field. The deleterious hybrid-forming activity of Rad51p is counteracted by Srs2p, a known Rad51p antagonist. Thus Srs2p serves as a novel anti-hybrid mechanism in vivo. DOI: http://dx.doi.org/10.7554/eLife.00505.001\n\n## Introduction\n\nGenome instability can lead to a range of alterations in both the sequence and structure of chromosomes. While such changes may help drive evolution, more often they are associated with decreased organism fitness and increased susceptibility to disease (Aguilera and G\u00f3mez-Gonz\u00e1lez, 2008). Historically, most genome instability was thought to occur as the result of errors during replication, or the failure of DNA repair pathways. However, work in Saccharomyces cerevisiae and mammalian cells has demonstrated that genome instability also arises from lesions generated from the formation of RNA\u2013DNA hybrids (Huertas and Aguilera, 2003; Li and Manley, 2005; Kim and Jinks-Robertson, 2009; Paulsen et al., 2009; Wahba et al., 2011; Stirling et al., 2012). Many important aspects of hybrid-mediated genome instability remain to be elucidated.\n\nGenome-wide screens in budding yeast and human cells have revealed that levels of RNA\u2013DNA hybrids increase when RNA biogenesis is disturbed at sites of transcription initiation or repression, elongation, splicing, degradation, and export (Huertas and Aguilera, 2003; Li and Manley, 2005; Paulsen et al., 2009; Wahba et al., 2011; Stirling et al., 2012). The co-transcriptional binding of many RNA processing and transcription factors suggests that they prevent hybrid formation by restricting the access of nascent RNA molecules to the DNA template at the site of transcription (Aguilera and Garc\u00eda-Muse, 2012). Recent studies suggest that these RNA biogenesis factors are not sufficient to prevent transient hybrid formation at some loci in wild-type budding yeast; rather, hybrids form but are removed rapidly by hybrid removal factors, including two endogenous RNase H enzymes, and Sen1p, an RNA\u2013DNA helicase (Mischo et al., 2011; Wahba et al., 2011). In RNA biogenesis mutants the elevated levels of hybrid formation overwhelm the capacity of these hybrid removal factors, allowing the accumulation of hybrids and genome instability.\n\nWhile a number of factors that prevent hybrid formation or persistence have been identified, little is known about factors that promote the formation of RNA\u2013DNA hybrids in vivo. One potential factor is RNA polymerase, which generates negative supercoiling behind the elongating polymerase. The negative supercoiling facilitates DNA unwinding, and may allow RNA access to the DNA template (Roy et al., 2010). A connection between negative supercoiling and hybrid formation is supported by in vivo work on topoisomerase mutants in bacteria, yeast, and human cells (Drolet et al., 1995; Tuduri et al., 2009; El Hage et al., 2010). Another potential promoter of hybrid formation is RecA, the bacterial strand exchange protein that normally promotes the invasion of single-stranded DNA into duplex DNA to repair DNA damage. Studies a decade ago showed that RecA promotes RNA\u2013DNA hybrid formation in vitro (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000). This observation supported a model of RecA-dependent hybrid formation that had been postulated as an alternative mechanism to initiate DNA replication (Cao and Kogoma, 1993; Hong et al., 1995). The intriguing possibility that RecA or its eukaryotic ortholog, Rad51p, might play a role in vivo to promote hybrid formation has not been pursued further.\n\nThe in vitro studies on RecA-dependent hybrid formation also challenged ideas of when hybrid formation occurs. In these studies, RecA-mediated R-loops formed when RecA was mixed with RNA and its homologous DNA template in the absence of active transcription. This observation showed that hybrids could, at least in vitro, form post-transcriptionally (i.e., in trans) (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000). However, to date, models postulated from in vivo studies suggest that RNA\u2013DNA hybrids occur co-transcriptionally (in cis) from the invasion of the duplex DNA at the site of transcription by a nascent RNA transcript (Huertas and Aguilera, 2003; Aguilera and Garc\u00eda-Muse, 2012). The cis mechanism is supported by the co-transcriptional nature of many of the RNA biogenesis steps implicated in preventing hybrid formation. However, the cis mechanism does not fully explain how mutants in post-transcriptional processes, such as RNA degradation and export, would cause hybrid-mediated instability (Wahba et al., 2011). Therefore, the formation of RNA\u2013DNA hybrids may occur in trans as well as in cis. The intriguing possibility that hybrids may occur in trans and contribute to genomic instability has not been assessed.\n\nIn this work we used S. cerevisiae as the model system to test in vivo the role of Rad51p in hybrid formation. We report that the formation of RNA\u2013DNA hybrids and associated genome instability in at least four RNA biogenesis mutants requires Rad51p and its activator, Rad52p. Furthermore, the deleterious hybrid-forming activity of Rad51p is suppressed in wild-type cells by Srs2p, a Rad51p inhibitor. Additionally, we developed a model locus system that allows us to monitor hybrid-mediated genome instability as a result of transcription. We manipulate this system to provide compelling evidence that hybrids and ensuing genome instability can occur via a trans mechanism that is dependent on Rad51p.\n\n## Results\n\n## Formation of RNA\u2013DNA hybrids is dependent on Rad51p\n\nThe conditions that drive the initial formation of RNA\u2013DNA hybrids in vivo are not well understood. With the bacterial in vitro experiments in mind, we wondered whether hybrid formation was simply a strand exchange reaction, similar to that mediated by Rad51p during DNA repair and homologous recombination. To test this possibility, we examined the effect of deleting RAD51 on hybrid formation and the associated genome instability in RNA biogenesis mutants of budding yeast. We chose a representative set of mutants defective in elongation (leo1\u0394), repression (med12\u0394 and sin3\u0394), and degradation (kem1\u0394 and rrp6\u0394). We assayed directly for the presence of RNA\u2013DNA hybrids in wild-type cells and these mutants by staining chromosomes in spread nuclei with S9.6 antibody (see \u2018Materials and methods\u2019). Previously, we demonstrated the specificity of the S9.6 antibody for hybrids by two approaches. First, S9.6 staining in spreads of RNA biogenesis mutants is reduced to that seen in wild-type cells by post treatment of chromosome spreads with RNase H (Wahba et al., 2011). Similarly, spreads of an RNA biogenesis mutant over-expressing RNase H no longer stained with S9.6.\n\nAs reported previously, less than 5% of wild-type nuclei stain with this antibody (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left panel: Representative images of chromatin spreads stained with S9.6 antibody, showing reduced RNA\u2013DNA hybrid staining in mutants with a deletion of RAD51 (rad51\u0394). Right panel: The percent of total nuclei scored that stain positively for RNA\u2013DNA hybrid in chromatin spreads is quantified. A total of 50\u2013100 nuclei from two independent experiments were scored for each genotype. (B) Rate of yeast artificial chromosome (YAC) instability in mutants is also reduced when RAD51 is deleted. Error bars represent standard deviation calculated from at least four independent colonies.DOI: http://dx.doi.org/10.7554/eLife.00505.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.00505.004\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.00505.005\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Roughly 1 \u03bcg of DNA from indicated genotypes was spotted onto the membrane and stained with the S9.6 antibody. As a reference known amounts of pre-formed RNA\u2013DNA hybrids were also spotted. Pre-formed RNA\u2013DNA hybrids were made by performing a first strand synthesis reaction on total RNA. Amounts were quantified using Quant-iT Picogreen (Invitrogen, Carlsbad, CA).DOI: http://dx.doi.org/10.7554/eLife.00505.006\n\nOne prediction from the cytological results is that the suppression of hybrid formation by rad51\u0394 should also lead to the suppression of hybrid-mediated chromosome instability. To measure hybrid-mediated genome instability, we exploited an assay we developed previously using a yeast artificial chromosome (YAC) (Wahba et al., 2011; see \u2018Materials and methods\u2019). The total rate of YAC instability (the sum of chromosome loss and terminal deletions) in wild-type cells was 6 \u00d7 10\u22124 per division. Notably, rad51\u0394 alone caused no increase in YAC instability. In our subset of RNA biogenesis mutants, YAC instability increased fivefold to tenfold (Figure 1B). The introduction of rad51\u0394 into the RNA biogenesis mutants completely suppressed the elevated YAC instability, both chromosome loss and terminal deletions, in leo1\u0394, kem1\u0394, rrp6\u0394, and sin3\u0394 mutants. In med12\u0394, YAC instability was mostly but not entirely suppressed despite the near complete suppression of hybrid formation as monitored by spreads, indicating that in the med12\u0394 rad51\u0394 strain a subset of the YAC instability was hybrid independent. Overall, the suppression of hybrid-mediated chromosome instability by rad51\u0394 corroborates its elimination of RNA\u2013DNA hybrids and associated destabilizing lesions.\n\nTo further validate the occurrence of Rad51-dependent hybrids, we sought to develop a model locus that can be used to induce hybrid formation and hybrid-mediated instability at a known region. From our previous study on RNA biogenesis mutants that induce hybrids, we noted that many of these mutants allow cryptic transcription, and likely the production of aberrant transcripts (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig2-v1.jpg)\n\n**Figure 2.:** GALpr).(A) Schematic of the YAC-GALpr construct. Total yeast artificial chromosome (YAC) length is 350 kb, of which 324 kb come from human chromosome VII. The GALpr was integrated 10 kb from the telomere, on the arm with the URA3 marker. (B) Quantitative RT-PCR monitoring changes in RNA levels on the YAC 5 hr after induction with galactose. YAC RNA is normalized to actin RNA, and represented as fold change, as compared to RNA levels detected in uninduced cells. Above the table is a schematic representation of the YAC region from which RNA is measured, with the qRT-PCR fragments used in quantification indicated with black dashes. The region in gray represents the GAL1-10 promoter and selectable marker integrated in the YAC-GALpr strain. (C) DIP analysis to monitor RNA\u2013DNA hybrid formation in the YAC-GALpr strain in the absence of galactose, and 2 hr after induction with galactose. Error bars represent standard deviation calculated from two independent DIP experiments. (D) Rates of YAC instability in strains with YAC (black bars) or YAC-GALpr (gray bars) 5 hr after addition of galactose to the media. Strains carried either an RNase H over-expressing plasmid or an empty control vector. (E) Induced YAC instability is suppressed when RAD51 is deleted. Error bars represent standard deviation calculated from at least three independent colonies.DOI: http://dx.doi.org/10.7554/eLife.00505.007\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.00505.008\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.00505.009\n\nUsing the model locus, we monitored the presence of transcription-induced hybrids specifically proximal to GALpr. Total nucleic acids were isolated from strains containing either the YAC or YAC-GALpr in the presence or absence of galactose. These samples were subjected to DNA immunoprecipitation (DIP) analysis with the S9.6 antibody that should only precipitate DNA in RNA\u2013DNA hybrids (Mischo et al., 2011; see \u2018Materials and methods\u2019). Using primers specific to the YAC region proximal to the GALpr, low DIP signals were observed in YAC-GALpr cultures in the absence of galactose, as well as in cultures with the YAC, with and without the addition of galactose (Figure 2C, Figure 2\u2014figure supplement 1A). Thus, hybrids form rarely in the YAC sequences proximal to the GALpr in the absence of their transcription. In contrast, we observed a dramatic increase in the DIP signal for hybrids on the YAC sequences proximal to YAC-GALpr, 2 hr after induction by galactose (Figure 2C). The specificity of this increased DIP signal was evident by the fact that no elevation in hybrid signal was detected in two regions of the YAC-GALpr distal to the GALpr (Figure 2\u2014figure supplement 1B). Additionally, lower DIP signals coincide with the transcriptional start site of the GALpr, where there is little transcript detectable upon addition of galactose (Figure 2C). Furthermore, the DIP signal in the YAC-GALpr strains was suppressed when transcription was repressed by the addition of glucose (Figure 2\u2014figure supplement 1C). Finally, hybrid formation at YAC-GALpr was dependent upon RAD51 (see \u2018Rad51p-dependent hybrid formation can occur in trans\u2019). These data provide molecular evidence for the formation of RAD51-dependent hybrids at the YAC sequences transcribed by induction of GALpr.\n\nTo determine whether the Rad51p-dependent hybrids induced by YAC-GALpr led to genome instability, we monitored the instability of YAC-GALpr upon galactose treatment. Indeed, its instability was elevated 25-fold with a distribution of chromosome loss and terminal deletions similar to that seen in wild-type cells and RNA biogenesis mutants (Figure 2, Figure 2\u2014figure supplement 2). Furthermore, this transcription-induced YAC instability was suppressed by over-expression of RNase H or deletion of RAD51 (Figure 2D\u2013E). Thus both by DIP and YAC instability, hybrids induced by transcription at the model YAC-GALpr locus, like those induced by RNA biogenesis mutants, required Rad51p for their formation.\n\n## Rad51p binding at the site of hybrid formation\n\nA second prediction concerning Rad51p-mediated hybrid formation is that Rad51p should be detectable near sites of hybrid formation. To test this prediction we used our YAC-GALpr model locus to assay for the presence of Rad51p binding around the site of hybrid formation. We generated cultures of strains containing the YAC or YAC-GALpr that had been grown in the presence or absence of galactose. These cultures were fixed and assayed for Rad51p binding to the YAC sequences by chromatin immunoprecipitation (ChIP) (see \u2018Materials and methods\u2019). ChIP was performed using two independent antibodies, anti-HA against a C-terminal haemagglutinin (HA) tagged Rad51p and a polyclonal rabbit anti-Rad51p. No Rad51p binding was detected either on YAC-GALpr in the absence of galactose or on the YAC in the presence or absence of galactose (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig3-v1.jpg)\n\n**Figure 3.:** Cells growing exponentially in YEP-lactic acid were split, and galactose added to one half. The other half was collected immediately for the \u2013Gal sample and fixed for chromatin immunoprecipitation (ChIP; see \u2018Materials and methods\u2019). After 120 min, the +Gal sample was similarly fixed for ChIP. Input DNA and DNA coimmunprecipitated with \u03b1-HA or -\u03b3-H2a.X (IP) antibody were amplified using primer sets along the yeast artificial chromosome (YAC) as annotated with black dashes on the YAC-GALpr or YAC schematic above each graph. (A) ChIP of Rad51-HA in the YAC-GALpr strain shows an increased signal in Rad51-HA binding 2 hr after induction of transcription by addition of galactose to the media (top panel). No change in the RAD51-HA signal is observed in the YAC strain (bottom panel). (B) ChIP of \u03b3-H2a.X in YAC-GALpr reveals no significant change in signal within 2 hr of galactose induction.DOI: http://dx.doi.org/10.7554/eLife.00505.010\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Chromatin immunoprecipitation (ChIP) of untagged Rad51 using a polyclonal antibody, showing an increased signal in Rad51 binding 2 hr after induction of transcription with galactose.DOI: http://dx.doi.org/10.7554/eLife.00505.011\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** After 2 hr of growth in galactose-containing media, dextrose was then added to the media, and cells were allowed to grow, maintained in exponential phase, for 3 hr. Cells were then fixed and used for chromatin immunoprecipitation (ChIP) of Rad51-HA.DOI: http://dx.doi.org/10.7554/eLife.00505.012\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Chromatin immunoprecipitation (ChIP) of Rad51-V5 around a double-strand break induced by a site-specific HO endonuclease under control of a galactose inducible promoter. The graph shows levels of Rad51-V5 binding prior to, and 2 hr after galactose was added to the media. (B) ChIP of \u03b3-H2a.X around the break site prior to, and 2 hr after galactose was added to the media.DOI: http://dx.doi.org/10.7554/eLife.00505.013\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** YAC-GALpr strains were grown for 2 hr in galactose-containing media, followed by addition of dextrose and growth for 3 more hours. Error bars represent standard deviation calculated from two independent colonies.DOI: http://dx.doi.org/10.7554/eLife.00505.014\n\nWe propose that the binding of Rad51p observed at the model locus is due to its role in hybrid formation. However, hybrids are thought to induce double-strand breaks (DSBs), and Rad51p binds at DSBs to initiate DNA repair through homologous recombination (Sugawara et al., 2003; Figure 3\u2014figure supplement 3A). Therefore, the presence of Rad51p at the hybrid-forming locus might be due to its function in repair rather than in hybrid formation. To address this alternative explanation for Rad51p binding, we performed molecular and functional tests for the formation of DSBs 2 hr after the induction of transcription. As a molecular assay, we monitored a 20 kb region surrounding the GAL promoter for the accumulation of phosphorylated histone H2AX (\u03b3-H2AX) by ChIP. This modification is one of the most dramatic and earliest markers of DSB formation, arising within minutes and spanning large regions of chromatin adjacent to the break (Shroff et al., 2004; Figure 3\u2014figure supplement 3B). However, we did not detect a ChIP signal for \u03b3-H2AX above background level in the YAC-GALpr strain even under conditions that induced Rad51p binding (Figure 3B). Thus by this molecular assay Rad51p binding occurs at the site of hybrid formation prior to hybrid-induced DNA damage.\n\nAs a functional test, we took advantage of the fact that adding dextrose after 2 hr suppressed transcription and Rad51p binding at the model hybrid locus. We reasoned that if Rad51p binding during the 2 hr prior to the addition of dextrose reflected Rad51p association with hybrid-induced DNA damage, then this damage would manifest as increased YAC instability. However, no increase in YAC instability was observed (Figure 3\u2014figure supplement 4), indicating that binding of Rad51p to this locus during the first 2 hr was unlikely to result from DNA damage. Thus neither our molecular nor functional test supports the binding of Rad51p to the model locus prior to hybrid-induced DNA damage, pointing to a direct role of Rad51p in hybrid formation.\n\nDoes the formation of all hybrids require Rad51p? Studies from our laboratory and the Aguilera laboratory suggest that hybrids not only form in RNA biogenesis mutants but also transiently in wild-type cells (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig4-v1.jpg)\n\n**Figure 4.:** rnh1\u0394rnh201\u0394.(A) Representative images of chromatin spreads stained with S9.6 antibody. (B) Rate of yeast artificial chromosome (YAC) instability is similar in rnh1\u0394rnh201\u0394 and strains lacking RAD51 (rad51\u0394) or RAD52 (rad52\u0394). Error bars represent standard deviation calculated from at least six independent colonies.DOI: http://dx.doi.org/10.7554/eLife.00505.015\n\n## Rad51p-dependent hybrid formation can occur in trans\n\nIn the in vitro bacterial studies, RecA promoted hybrid formation in the absence of active transcription, suggesting that RNA\u2013DNA hybrids can form post-transcriptionally, or in\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig5-v1.jpg)\n\n**Figure 5.:** trans on the YAC.(A) Schematic representation of the trans assay is depicted. The GALpr, selectable marker (CLONAT), and 1.1 kb of yeast artificial chromosome (YAC) DNA was integrated on chromosome III. (B) Schematic representation of where the primer sets used to monitor hybrid formation in trans are depicted. Hybrid formation is monitored by DIP 2 hr after induction with galactose in RAD51 and rad51\u0394 strains. Error bars represent standard deviation from two independent experiments.DOI: http://dx.doi.org/10.7554/eLife.00505.016\n\nTo test directly whether hybrids can form in trans, DIP was performed on cultures of our LW7003 strain after growth in the presence or absence of galactose. One primer set that monitored hybrids from both the YAC and YAC-GALpr module generated a strong DIP signal only in the presence of galactose (Figure 5B, primer 1). This combined hybrid signal was eliminated when the rad51\u0394 was introduced in this strain (Figure 5B, primer 1). These results minimally corroborate our previous demonstration of hybrids forming in cis and show that hybrid formation is dependent upon Rad51p.\n\nTwo other primer sets that monitored hybrids only from the YAC also revealed a strong DIP signal only in the presence of galactose (Figure 5B, primers 2 and 3). These results demonstrated transcription-dependent hybrid formation in trans. This trans-specific hybrid signal was eliminated when rad51\u0394 was introduced into our strain. The RAD51-dependent DIP results strongly support the formation of Rad51p-dependent hybrids in trans.\n\nWe also tested for hybrid formation on the YAC in\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig6-v1.jpg)\n\n**Figure 6.:** trans causes hybrid-mediated YAC instability.(A) Rates of yeast artificial chromosome (YAC) instability in strains carrying an empty control vector (black bars) or RNase H over-expressing vector (gray bars) showing an increased rate of instability upon induction of transcription that is reduced when RNase H is over-expressed. Error bars represent standard deviation calculated from at least three independent colonies. (B) Rate of YAC instability is suppressed when RAD51 is knocked out. (C) Pulse-field gel and Southern analysis with HIS3 probe of FOAresistant, His+ colonies, showing that 9/10 colonies analyzed have YACs rearranged to a smaller size.DOI: http://dx.doi.org/10.7554/eLife.00505.017\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** trans assay with and without a region of homology on the YAC.The 1 kb region of the yeast artificial chromosome (YAC) inserted on chromosome III (YAC-GALpr module) was replaced on the YAC with a LEU2 cassette. Wild-type levels of YAC instability are observed in that strain after 2 hr of induction with galactose.DOI: http://dx.doi.org/10.7554/eLife.00505.018\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** trans assay.Upon induction of transcription, breaks may occur in cis on chromosome III. Repair via break-induced replication using homologous yeast artificial chromosome (YAC) sequences as a substrate can lead to a chromosome III;YAC translocation.DOI: http://dx.doi.org/10.7554/eLife.00505.019\n\nIf the YAC instability induced by the YAC-GALpr module on chromosome III is mediated by hybrids formed in trans on the YAC, then these hybrids should lead to a similar distribution of YAC loss and terminal deletion as hybrids induced in cis. Indeed hybrids induced in trans and in cis both lead to a similar distribution of YAC instability events; on average 85% are HIS\u2212 URA\u2212 (chromosome loss) and 15% are HIS+ URA\u2212 (putative terminal deletions). However, the total rate of YAC instability increased only 10-fold by hybrids formed in trans (from the YAC-GALpr module on chromosome III) compared to 25-fold by hybrids formed in cis. Thus, hybrid formation in trans may be less efficient than in cis.\n\nWhile we have assumed that HIS+ URA\u2212 clones of LW7003 reflect terminal deletions of the YAC, these clones may have had rearrangements that occurred by an indirect mechanism as a result of hybrid-induced double strand breaks in cis. In this model hybrids would form in cis at the module on chromosome III and cause DSBs there. These DSBs in cis would induce recombination between the YAC sequences on the broken chromosome III and the YAC, resulting in a chromosome III;YAC translocation that has the same genetic phenotype (HIS+ URA\u2212) as YAC terminal deletions (Figure 6\u2014figure supplement 2). To determine what fraction of rearrangements may have occurred by this indirect mechanism, we performed pulse-field gel and Southern analysis on DNA isolated from 10 independent HIS+ URA\u2212 colonies of LW7003. Amongst the 10 YAC rearrangements analyzed, nine were shorter than the existing YAC, consistent with the formation of YAC terminal deletions (Figure 6C). Only one rearrangement was the size expected if a chromosome III;YAC translocation had occurred. Thus the structure of most rearranged YACs in LW7003 is consistent with the formation of terminal deletions through the formation of hybrids in trans. These results further support our hypothesis that hybrids can form in trans by a Rad51p mechanism, causing chromosome instability at sites distinct from the site of hybrid RNA transcription.\n\n## Enhancers and repressors of Rad51p modulate hybrid formation\n\nDuring homologous recombination, the activity of Rad51p is regulated by a number of factors that modulate Rad51p binding to ssDNA and dsDNA (Krejci et al., 2003; Sugawara et al., 2003). Because of the importance of such accessory factors for Rad51p function, we wondered whether they might also help regulate Rad51 in hybrid formation. To test this, we deleted positive and negative regulators of Rad51\u2013DNA filament formation.\n\nRad52p is required for the binding of Rad51p to ssDNA (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig7-v1.jpg)\n\n**Figure 7.:** RAD52 suppresses RNA\u2013DNA hybrids.(A) Schematic showing the major proteins canonically involved in regulating Rad51p binding in DNA repair. Following resection, replication protein A (RPA) polymerizes onto ssDNA. Rad52 then interacts with RPA and catalyzes its exchange for Rad51p. The Rad51\u2013ssDNA filament promotes the pairing and strand exchange reaction with a homologous region in duplex DNA. Srs2p, Rad54p, and Rdh54p all regulate the Rad51 filament by dismantling Rad51 from ssDNA and dsDNA, respectively. (B) Representative images of chromatin spreads stained with S9.6 antibody and quantification of nuclei, showing reduced RNA\u2013DNA hybrid staining in mutants with RAD52 knocked out. A total of 50\u2013100 nuclei from two independent experiments were scored for each genotype.DOI: http://dx.doi.org/10.7554/eLife.00505.020\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** rad52\u0394 mutants stained with S9.6 antibody.DOI: http://dx.doi.org/10.7554/eLife.00505.021\n\nA number of inhibitors of Rad51p have been identified.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig8-v1.jpg)\n\n**Figure 8.:** SRS2, but not RAD54 and RDH54 increases genome instability and hybrid formation.(A) Rate of yeast artificial chromosome (YAC) instability is increased in srs2\u0394 but not in rad54\u0394 and rdh54\u0394 single and double mutants. Error bars represent standard deviation calculated from at least six independent colonies. (B) Representative images of chromatin spreads stained with S9.6 antibody, showing increased RNA\u2013DNA hybrid staining in srs2\u0394. (C) Left panel: Rate of YAC instability in srs2\u0394 is suppressed when RAD51 is knocked out. Right panel: Hybrid staining is also reduced in the srs2\u0394 rad51\u0394 double mutant. (D) srs2\u0394 mutants with URA3 integrated at the rDNA were assayed for loss of the URA3 marker, showing increased instability. Error bars represent standard deviation calculated from at least six independent colonies.DOI: http://dx.doi.org/10.7554/eLife.00505.022\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** srs2\u0394 and rdh54\u0394rad54\u0394 mutants stained with S9.6 antibody.Quantification of number of nuclei that stained positively for RNA\u2013DNA hybrids in srs2\u0394 and rdh54\u0394rad54\u0394. Total number of nuclei scored is 50\u2013100 per genotype, from two independent experiments.DOI: http://dx.doi.org/10.7554/eLife.00505.023\n\nThe hybrid staining pattern in srs2\u0394 nuclei was reminiscent of the pattern observed in sin3\u0394 cells, exhibiting an apparent enrichment of RNA\u2013DNA hybrids at the RDN locus on chromosome XII, the site of 150 tandem rDNA copies (Wahba et al., 2011). We measured rDNA instability by monitoring the rate of excision of a URA3 marker inserted at the RDN locus (Heidinger-Pauli et al., 2010). In srs2\u0394 cells, the rate of rDNA instability is twenty threefold greater compared to wild-type cells, a marked increase in instability as compared to the fourfold increase in YAC instability (Figure 8C,D). Together these results suggest that Srs2p has a particularly important role in protecting the highly transcribed rDNA locus against Rad51p-dependent hybrid formation and repeat instability.\n\n## Discussion\n\nIn this study we describe a compelling series of observations that demonstrate an in vivo role for Rad51p in promoting formation of RNA\u2013DNA hybrids. First, cytological detection of RNA\u2013DNA hybrids in RNA biogenesis mutants is dramatically suppressed when RAD51 is deleted. Second, Rad51p is required for the associated hybrid-mediated instability of a YAC in the RNA biogenesis mutants. Third, Rad51p is required for the hybrid formation and YAC instability that results from galactose-induced transcription of specific YAC sequences in our hybrid model locus. Fourth, cofactors canonically known to regulate Rad51p binding and function also modulate hybrid formation. Removal of Rad52p, a positive regulator of Rad51p, blocks hybrid formation. Conversely, the removal of Srs2p, a negative regulator of Rad51 filament formation, increases both hybrid formation and genome instability in a Rad51p-dependent manner. Finally, Rad51p binds to the YAC at the site of hybrid formation proximal to the galactose promoter, in a transcription-dependent manner, prior to any evidence that DSBs have formed. Taken together these results strongly suggest that Rad51p plays a direct role in RNA\u2013DNA hybrid formation.\n\nEstablishing a role for Rad51p in the formation of RNA\u2013DNA hybrids marks the first direct in vivo evidence of a factor that facilitates hybrid formation. Indications that a strand-exchange mechanism is important for hybrid formation were suggested by in vitro work on RecA, where RecA catalyzes assimilation of complementary RNA into a homologous region in duplex DNA (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000). Interestingly, previous in vivo studies showed that over-expressing Rad51p can compromise genome integrity (Richardson et al., 2004; Shah et al., 2010). We suggest that this instability may result in part from the ability of Rad51p to promote RNA\u2013DNA hybrid formation. This deleterious activity of Rad51p is also intriguing because a number of studies have shown that RAD51 expression is up-regulated in tumor cells (Klein, 2008). The increased expression is part of a coordinated up-regulation of DNA repair proteins in response to increased damage in cancerous cells (Zhou and Elledge, 2000). These high levels of Rad51p have been interpreted as evidence for Rad51p acting as a tumor suppressor by ensuring non-faulty repair of DNA damage. However, our results are consistent with a different interpretation: high levels of Rad51p may be oncogenic, driving hybrid-mediated genomic instability that promotes carcinogenesis.\n\nHow can Rad51p promote hybrid formation? In the forward reaction, the conventional mechanism for Rad51p action, it forms a filament on ssDNA, finds a homologous region of dsDNA, and then catalyzes a strand exchange (\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00505/elife-00505-fig9-v1.jpg)\n\n**Figure 9.:** (A) In the forward reaction, Rad51p polymerizes onto RNA, and mediates strand exchange with homologous DNA, forming an RNA\u2013DNA hybrid. (B) In the inverse reaction, Rad51p forms a filament on dsDNA and promotes strand exchange with homologous RNA. (C) A third alternative is that Rad51 forms a filament on the extruded ssDNA, stabilizing an open D-loop that allows RNA to bind to homologous sequences.DOI: http://dx.doi.org/10.7554/eLife.00505.024\n\nHere we show that Rad51p allows transcripts of YAC sequences generated on chromosome III to act in trans to form hybrids and cause hybrid-mediated instability of the YAC. Thus RNA molecules, with the aid of Rad51p can invade duplex DNA to form RNA\u2013DNA hybrids at sites distinct from the site of hybrid RNA transcription. The ability of hybrids to form in trans forces a broadening of previous in vivo models for hybrid formation that only considered co-transcriptional mechanisms. The lower level of instability observed in trans compared to in cis implies that hybrid formation occurs less efficiently in trans. A lower efficiency might be expected since the RNA concentration at a cis site of hybrid formation will invariably be higher than at a trans site of hybrid formation. Indeed, an effect for RNA concentration on hybrid formation has been documented in the in vitro reactions with RecA (Zaitsev and Kowalczykowski, 2000). While we show that Rad51p is clearly required to mediate hybrid formation in trans, it is likely also important for hybrid formation in cis. However, the fact that rad51\u0394 has no effect on hybrid formation in the rnh1\u0394rnh201\u0394 mutant implies that alternative mechanisms for hybrid formation, presumably in cis, exist. Notably, hybrid formation in trans might be a more potent promoter of genome instability than hybrid formation in cis, particularly for hybrid RNA generated from a highly repetitive element, which in trans can cause instability at a plethora of targets.\n\nThe formation of hybrids in trans has potential applications beyond genome instability. Intriguingly, recent studies in mammalian cells and budding yeast have developed a system for generating targeted DNA breaks using the CRISPR system, where target specificity is determined by a guide RNA complementary to the region of interest (Jinek et al., 2012; DiCarlo et al., 2013). It is unknown how the guide RNA finds and hybridizes to its homologous DNA region. From our work, it is clear that these two steps could be mediated through Rad51p. Additionally, positive roles for hybrid formation in modulating transcription state have been found in both human cells and fission yeast (Ginno et al., 2012; Nakama et al., 2012). In fission yeast, there is evidence that RNA\u2013DNA hybrids may provide a platform for RNAi-mediated heterochromatin formation, driving transcriptional silencing (Nakama et al., 2012). If transcripts from one locus can induce hybrid formation and modulate heterochromatin formation at a homologous locus, this could provide a rapid mechanism for the silencing of repetitive elements\u2014including transposable elements\u2014in a genome.\n\nCells have developed a number of mechanisms to keep RNA\u2013DNA hybrids in check. We provide evidence for a novel Srs2p-dependent pathway that limits the formation of Rad51p-dependent hybrids. We show that deletion of SRS2 causes Rad51-dependent hybrid formation and YAC instability. Srs2p interacts directly with Rad51p, dismantling inappropriate Rad51p filaments from DNA (Krejci et al., 2003; Burgess et al., 2009). By removing Rad51p from DNA, Srs2p could potentially inhibit hybrid formation by a mechanism like the inverse strand exchange. Alternatively, Srs2p might be playing a direct role in dismantling RNA\u2013DNA hybrids. Its bacterial homolog UvrD has been shown to catalyze the unwinding of RNA\u2013DNA hybrids in vitro (Matson, 1989).\n\nThe work reported here, coupled with previous studies, has revealed that cells possess at least four lines of defense against RNA\u2013DNA hybrids: (1) suppressing the deleterious hybrid-forming activity of Rad51p by Srs2p; (2) suppressing the amount of RNA in the nucleus with hybridization potential through proper RNA biogenesis; (3) unwinding RNA\u2013DNA hybrids by helicases such as Sen1p; and (4) degrading RNA in RNA\u2013DNA hybrids by RNases H. The fact that hybrids form when any one of these anti-hybrid pathways is abrogated clearly indicates that they are not completely functionally redundant. The increased propensity for hybrids to form and cause instability at the rDNA locus in srs2\u0394 cells is particularly intriguing, as it may be that the abundance of rRNA, as well as homologous rDNA loci, makes this region a particularly good substrate for Rad51p-mediated hybrid formation. When Rad51p activity is no longer limiting because of inactivation of Srs2p, hybrid formation may overwhelm the anti-hybrid activities of RNases H or Sen1p. Alternatively, the RNases H or Sen1 may be occluded from the nucleolus, making the rDNA locus more susceptible to hybrid formation by elevated Rad51p activity. It will be exciting to map where hybrids form in RNase H, sen1-1 and srs2\u0394 mutants to elucidate whether these different anti-hybrid systems are dedicated to protect different regions of the genome.\n\n## Materials and methods\n\n## Yeast strains, media, and reagents\n\nFull genotypes for the strains used in this study are listed in Supplementary file 1A. Strain LW6811, the YAC-GALpr strain, was made by integrating the GAL1-10 promoter along with the selectable marker CLONAT at site 323,280 kb on the YAC. The trans YAC module in LW7003 encompasses 1 kb of the YAC, along with the GALpr and CLONAT marker integrated on chromosome III in place of the BUD5 (YCR038C) open reading frame. All integrations were done using standard one-step PCR techniques. The 70mers used for integration are listed in Supplementary file 1B. The empty control and RNase H plasmids used are 2\u03bc plasmids, previously described in Wahba et al., 2011. Yeast strains were grown in YEP or minimal media supplemented with 2% glucose. 5-Fluoroorotic (5-FOA) was purchased from BioVectra (Charlottetown, PE).\n\n## Quantitative assay for YAC instability\n\nCells were dilution streaked out on SC-URA plates to select for the YAC terminal marker (URA3). Single colonies were then picked and resuspended in 0.5 ml of water, diluted, and 105 cells were plated onto 5-FOA and \u2013HIS 5-FOA plates. Plating efficiency was monitored by plating 200 cells onto rich media plates. Plates were incubated at 30\u00b0C for 3 d after which the number of colonies formed on each plate was counted. The number of colonies that grow on 5-FOA, normalized for plating efficiencies, is a measure of the rate of events.\n\n## Chromosome spreads and microscopy\n\nChromosome spreads were performed as previously described (Wahba et al., 2011). Slides were incubated with the mouse monoclonal antibody S9.6 directed to RNA\u2013DNA hybrids, and available in the hybridoma cell line HB-8730. The primary antibody was diluted 1:2000 in blocking buffer (5% BSA, 0.2% milk, 1\u00d7 PBS) for a final concentration 0.25 \u03bcg/ml. The secondary Cy3-conjugated goat anti-mouse antibody (No. 115-165-003) was obtained from Jackson ImmunoResearch (West Grove, PA) and diluted 1:2000 in blocking buffer. Indirect immunofluorescence (IF) was observed using an Olympus IX-70 microscope with a 100\u00d7/NA 1.4 objective, and Orca II camera (Hamamatsu, Bridgewater, NJ).\n\n## Liquid assay for YAC instability with galactose induction\n\nCells were picked from SC-URA plates, resuspended in SC-URA media, and grown to saturation. Fresh YEP or -URA media with 2% lactic acid, 3% glycerol was inoculated to an optical density (OD) of \u223c0.3, and allowed to double to an OD of \u223c1.0. Galactose was then added to a final concentration of 2%. Cells were shaken at 30\u00b0C and then plated onto 5-FOA 0, 2 and 5 hr after induction with galactose. Plating efficiency was monitored by plating 200 cells onto rich media plates.\n\n## Dot blotting with S9.6 antibody\n\nGenomic DNA was isolated using the Qiagen Genomic DNA kit (Qiagen, Hilden, Germany). Roughly 1 \u00b5g of DNA was resuspended to a final volume of 50 \u00b5l in nuclease-free water, and spotted directly onto a nylon GeneScreen Plus membrane (NEF988; PerkinElmer, Waltham, MA) using a Bio-Dot Microfiltration Apparatus (Bio-Rad, Hercules, CA). The membrane was UV-crosslinked and blocked with 5% 1\u00d7 PBS/0.1% Tween-20 prior to incubation with primary and secondary antibodies. A 5 \u00b5g aliquot of S9.6 antibody was used for the primary, and a 25,000\u00d7 dilution of goat anti-mouse HRP (Bio-Rad) was used as the secondary. The HRP signal was developed with Clarity Western ECL Substrate (Bio-Rad) and exposed to autoradiography film.\n\n## Quantitative reverse transcriptase PCR\n\nTotal RNA was isolated using an RNeasy Mini Kit (Qiagen). Reverse transcriptase was carried out with specified primer pairs using the OneStep RT-PCR Kit (Qiagen) and quantified using SYBR Green (Invitrogen, Carlsbad, CA) and the DNA Engine Opticon Continuous Fluorescence Detection System (CMJ Research).\n\n## DNA immunoprecipitation (DIP)\n\nDIP analysis was performed as previously described (Mischo et al., 2011; Alzu et al., 2012). Briefly, 150\u2013200 \u00b5g of genomic DNA isolated using the Qiagen Genomic DNA kit was sonicated, precipitated, and resuspended in 50 \u00b5l of nuclease-free water. Then 350 \u00b5l of FA buffer (1% Triton X-100, 0.1% sodium deoxycholate, 0.1% SDS, 50 mM HEPES, 150 mM NaCl, 1 mM EDTA) was added to the DNA, and incubated for 90 min with 5 \u00b5g of S9.6 antibody prebound to magnetic protein A beads. Beads were then washed and the DNA eluted according to standard ChIP protocols. % RNA\u2013DNA hybrid amounts were quantified using quantitative PCRs on DNA samples from DIP and total DNA with the DyNAmo HS SYBR Green qPCR kit (Thermo Scientific, Waltham, MA).\n\n## Chromatin immunoprecipitation (ChIP)\n\nCells used for ChIP experiments were grown in YEP media with 2% lactic acid, 3% glycerol and collected either before galactose was added (\u2212Gal) or 2 hr after the addition of galactose at a final 2% concentration (+Gal). Standard ChIP was performed as described previously (Unal et al., 2004). Briefly, 5 \u00d7 108 cells were crosslinked in 1% formaldehyde for 30 min at room temperature. Chromatin was sheared 20 times for 45 s each (settings at duty cycle: 20%, intensity: 10, cycles/burst: 200) with 30 s of rest in between using a Covaris S2. Immunoprecipitation of Rad51-HA or untagged Rad51p was done with anti-HA antibody (Roche, Mannheim, Germany) or anti-Rad51p polyclonal antibody (Santa Cruz, Dallas, TX). Immunoprecipitation of \u03b3-H2a.X was done with anti-\u03b3-H2AX (Abcam, Cambridge, UK). A no primary antibody control is also run to ensure specificity. Appropriate dilutions of input and immunoprecipitated DNA samples were used for PCR analysis to ensure linearity of the PCR signal. PCR and data analysis was carried out as described previously (Unal et al., 2004). With the exception of the experiment shown in Figure 3\u2014figure supplement 1 which was carried out once, all experiments were done at least twice and a representative data set is shown. ChIP primers are listed in Supplementary file 1B.\n\n## Pulse-field gel electrophoresis and Southern analysis\n\nYeast genomic DNA was prepared in 1% pulse-field grade agarose plugs (SeaPlaque 50100) and resolved as previously described (Schwartz and Cantor, 1984) with a Bio-Rad CHEF-DR III system. The following parameters were used: 6 V/cm, 120\u00b0 angle, 20\u201350 s switch times, 17 hr at 14\u00b0C. For Southern analysis, gels were transferred onto a GeneScreen Plus membrane (PerkinElmer NEF988) and probed with a 0.5 kb fragment containing HIS3 sequence.\n\n## Quantitative assay for rDNA instability\n\nCells were dilution streaked out on SC-URA. The rate of rDNA instability was calculated from 5-FOA plates as described above for YAC instability.\n",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nick Proudfoot, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00505.026](https://doi.org/10.7554/eLife.00505.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cThe homologous recombination machinery modulates the formation of RNA-DNA hybrids and associated chromosome instability\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis study describes the role played by S. cerevisiae Rad51 in promoting the formation of RNA:DNA hybrid structure, especially in mutant backgrounds that are defective in different stages of RNA biogenesis. Thus while in wt cells loss of Rad51 has no effect on hybrid formation (visualised by immunofluorescence using RNA:DNA hybrid specific antibody), in various mutant cells loss of Rad51 causes loss of hybrid signal (Figure 1). This data is then complemented by use of an integrated human YAC from which recombination rates can be measured (based on a previous paper from Wahba et al, Mol Cell 2011).\n\nThe key experiments are an extension of the YAC assay to include an inducible GAL1 promoter in the YAC. Induction by galactose growth promotes bidirectional transcription that correlates with YAC instability, an effect lost by deletion of RAD51 or RNase H over expression. Rad51 is shown to specifically localize to the YAC GAL1 promoter region (Figures 2 and 3). A case is made that this localization is hybrid dependent but not caused by recruitment to DNA damage sites (Figure 4). Another important result (Figure 5) is that these hybrid-induced DNA damage effects can be caused in trans by placing the GAL1 promoter plus adjacent human sequence on a yeast chromosome and then showing instability of the YAC (lacking GAL1 promoter). Finally a gene known to antagonise Rad51, Srs2, is also shown to cause hybrid formation in wt cells when deleted, presumably because Rad51 is more active.\n\nOverall these results are of great interest as they point to the role of factors (Rad51/52) in enhancing hybrid formation rather than operating to restrict hybrids (e.g., RNase H and Sen1). The trans effects are also important as a mechanism is implied for how RNA might target duplex DNA to form hybrids. This could be relevant to gene silencing by RNAi pathways in higher eukaryotes.\n\nThe major issue with these studies is proving that Rad51 directly promotes R-loops or instead is recruited to R-loop induced sites of DNA damage to promote recombination. The referees feel that the case for a direct effect needs tightening by additional experiments as listed below.\n\n1) Statistical analysis of how many nuclei over a field of cells show positive immunofluorescence for the S9.6 antibody is required whenever this analysis is employed (e.g., Figures 1A, 4A, 6B, and 7B&C).\n\n2) Controls for the specificity of the S9.6 signal. Is it RNase H sensitive? Is it transcription dependent? Is it nuclear specific?\n\n3) Better analysis of GAL induced ncRNA over the YAC human sequence. Showing fold change post GAL induction is too imprecise. Ideally RNAseq or strand specific Northern analysis is needed.\n\n4) Direct detection of R-loops over the ncRNA positions (as in 2) should be obtained by using S9.6 in chromatin or genomic DNA immunoprecipitation experiments (ChIP or DIP).\n\nThis is especially important for the trans experiments (Figure 5).\n\n5) Controls for how much (if any) homologous sequence are required for GAL induction of ncRNA to work in trans to promote YAC instability.\n\n6) Test SEN1 and TOP1/2 mutation on RAD51 dependent R-looping.\n\nFinally we feel that it is impossible to exclude the possibility that loss of RAD51 has a combined effect on both recombination and the promotion of RNA:DNA hybrids. The paper\u2019s claims should acknowledge this possibility. Indeed one neat way to address this issue might be to incorporate an HO cleavage site near to the GAL human DNA insert in Chr III. If homologous recombination at the target YAC region is promoted by a combination of HO endo and GAL transcription then this would suggest that HR employs R-loops to promote recombination. If such an experiment is doable this might suggest that HR involves R-loop formation. Such an experimental approach would be very helpful to the paper\u2019s final impact in the field.\n",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6cbca919-119a-464d-98c5-0c1e49ebb884",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C1",
+      "claim": "Genome instability in yeast and mammals is caused by RNA\u2013DNA hybrids that form as a result of defects in different aspects of RNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Genome instability in yeast and mammals is caused by RNA\u2013DNA hybrids that form as a result of defects in different aspects of RNA biogenesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement draws from established scientific literature and consensus in the field, as indicated by the context of prior work mentioned throughout the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "eb301ca4-e222-4dcf-b902-9dbad29fbee3",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C2",
+      "claim": "In yeast mutants defective for transcription repression and RNA degradation, hybrid formation requires Rad51p and Rad52p.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We report that in yeast mutants defective for transcription repression and RNA degradation, hybrid formation requires Rad51p and Rad52p.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is supported by experimental data presented in the manuscript, including chromosome spreads and YAC instability assays showing suppression of hybrids when RAD51 or RAD52 are deleted.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b5a62537-313d-43b1-ac19-b02e2de727b1",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C3",
+      "claim": "Rad51p and Rad52p normally promote DNA\u2013DNA strand exchange in homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These proteins normally promote DNA\u2013DNA strand exchange in homologous recombination.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established scientific knowledge about the canonical function of these proteins in DNA repair pathways.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "89353bda-ff48-4daf-a0f7-6f7f7b0c3420",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C4",
+      "claim": "Rad51p and Rad52p directly promote the DNA\u2013RNA strand exchange necessary for hybrid formation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We suggest they also directly promote the DNA\u2013RNA strand exchange necessary for hybrid formation since we observed accumulation of Rad51p at a model hybrid-forming locus.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This claim is based on ChIP data showing Rad51p accumulation at hybrid-forming loci, combined with logical inference about the mechanism.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "84ea01dd-5963-4a74-8fa5-6e325a549f97",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C5",
+      "claim": "Rad51p accumulates at a model hybrid-forming locus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we observed accumulation of Rad51p at a model hybrid-forming locus.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly supported by ChIP experimental data presented in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "490de913-e86e-4b80-9e29-170e7989bc5f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C6",
+      "claim": "Rad51p mediates hybridization of transcripts to homologous chromosomal loci distinct from their site of synthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, we provide evidence that Rad51p mediates hybridization of transcripts to homologous chromosomal loci distinct from their site of synthesis.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by the trans assay experiments showing hybrid formation on the YAC from transcripts generated on chromosome III.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "d2053b0e-9a3c-4751-bbf6-3114c7762903",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C7",
+      "claim": "Hybrid formation in trans amplifies the genome-destabilizing potential of RNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This hybrid formation in trans amplifies the genome-destabilizing potential of RNA and broadens the exclusive co-transcriptional models that pervade the field.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the experimental data showing YAC instability caused by transcripts generated at a distant locus.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "7b455551-d39a-410b-bb66-a96f8f416578",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C8",
+      "claim": "The deleterious hybrid-forming activity of Rad51p is counteracted by Srs2p.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The deleterious hybrid-forming activity of Rad51p is counteracted by Srs2p, a known Rad51p antagonist.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data showing increased hybrid formation and instability in srs2\u0394 mutants that is suppressed by rad51\u0394.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "6191b735-b14b-42ae-81fb-bd8a09d0268f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C9",
+      "claim": "Srs2p is a known Rad51p antagonist.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Srs2p, a known Rad51p antagonist.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge in the field about the relationship between Srs2p and Rad51p.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "5c03ecc5-500a-4b97-a644-bb1bb06b01e1",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C10",
+      "claim": "Srs2p serves as a novel anti-hybrid mechanism in vivo.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus Srs2p serves as a novel anti-hybrid mechanism in vivo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the experimental data showing that deletion of SRS2 increases hybrid formation in a Rad51p-dependent manner.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "4f4062f2-1974-4c5d-b306-a67863b64573",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C11",
+      "claim": "Genome instability can lead to alterations in both the sequence and structure of chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Genome instability can lead to a range of alterations in both the sequence and structure of chromosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is general scientific knowledge about the consequences of genome instability.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "d0400eaf-ec73-4880-8b88-4a2adf659830",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C12",
+      "claim": "Genome instability is associated with decreased organism fitness and increased susceptibility to disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While such changes may help drive evolution, more often they are associated with decreased organism fitness and increased susceptibility to disease",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is supported by the citation (Aguilera and G\u00f3mez-Gonz\u00e1lez, 2008) and represents established scientific understanding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "23871253-018b-4751-942e-8033c7948bc2",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C13",
+      "claim": "Most genome instability was historically thought to occur as the result of errors during replication, or the failure of DNA repair pathways.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Historically, most genome instability was thought to occur as the result of errors during replication, or the failure of DNA repair pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes historical scientific understanding in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "3eb6c03d-ebef-4df2-9835-a1a7d74f9818",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C14",
+      "claim": "Work in Saccharomyces cerevisiae and mammalian cells has demonstrated that genome instability also arises from lesions generated from the formation of RNA\u2013DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, work in Saccharomyces cerevisiae and mammalian cells has demonstrated that genome instability also arises from lesions generated from the formation of RNA\u2013DNA hybrids",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations provided in the text (Huertas and Aguilera, 2003; Li and Manley, 2005; Kim and Jinks-Robertson, 2009; Paulsen et al., 2009; Wahba et al., 2011; Stirling et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "22166c7d-ea01-45e2-8f8c-64b51cae28cb",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C15",
+      "claim": "Levels of RNA\u2013DNA hybrids increase when RNA biogenesis is disturbed at sites of transcription initiation or repression, elongation, splicing, degradation, and export.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Genome-wide screens in budding yeast and human cells have revealed that levels of RNA\u2013DNA hybrids increase when RNA biogenesis is disturbed at sites of transcription initiation or repression, elongation, splicing, degradation, and export",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by multiple citations (Huertas and Aguilera, 2003; Li and Manley, 2005; Paulsen et al., 2009; Wahba et al., 2011; Stirling et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "816aecf4-f07c-44d5-be89-5cb7e87fc048",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C16",
+      "claim": "RNA processing and transcription factors prevent hybrid formation by restricting the access of nascent RNA molecules to the DNA template at the site of transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The co-transcriptional binding of many RNA processing and transcription factors suggests that they prevent hybrid formation by restricting the access of nascent RNA molecules to the DNA template at the site of transcription",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the co-transcriptional binding patterns and supported by citation (Aguilera and Garc\u00eda-Muse, 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "12bb2f56-977f-4733-b091-f5559ffebfdb",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C17",
+      "claim": "RNA biogenesis factors are not sufficient to prevent transient hybrid formation at some loci in wild-type budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Recent studies suggest that these RNA biogenesis factors are not sufficient to prevent transient hybrid formation at some loci in wild-type budding yeast",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to recent studies (Mischo et al., 2011; Wahba et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ae30f5c3-9f8d-4981-9361-6f9257f7bc1c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C18",
+      "claim": "Hybrids form but are removed rapidly by hybrid removal factors, including two endogenous RNase H enzymes, and Sen1p, an RNA\u2013DNA helicase.",
+      "claim_type": "EXPLICIT",
+      "source_text": "rather, hybrids form but are removed rapidly by hybrid removal factors, including two endogenous RNase H enzymes, and Sen1p, an RNA\u2013DNA helicase",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Mischo et al., 2011; Wahba et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ea994ca1-ce38-4b8e-9ae2-a16daadcf0f8",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C19",
+      "claim": "In RNA biogenesis mutants the elevated levels of hybrid formation overwhelm the capacity of hybrid removal factors, allowing the accumulation of hybrids and genome instability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In RNA biogenesis mutants the elevated levels of hybrid formation overwhelm the capacity of these hybrid removal factors, allowing the accumulation of hybrids and genome instability.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the observation that hybrids accumulate in these mutants despite the presence of removal factors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8747bc77-9e99-432e-bbab-0c50d382c737",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C20",
+      "claim": "RNA polymerase generates negative supercoiling behind the elongating polymerase.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One potential factor is RNA polymerase, which generates negative supercoiling behind the elongating polymerase.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about RNA polymerase function, supported by citation (Roy et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "93569d3d-4006-47ec-8bd9-ca3bb1285cf5",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C21",
+      "claim": "Negative supercoiling facilitates DNA unwinding and may allow RNA access to the DNA template.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The negative supercoiling facilitates DNA unwinding, and may allow RNA access to the DNA template",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This involves speculation about the mechanism by which negative supercoiling might promote hybrid formation, based on citation (Roy et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c69e5553-e369-4a84-8b1a-a5f1f1876a11",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C22",
+      "claim": "A connection between negative supercoiling and hybrid formation is supported by in vivo work on topoisomerase mutants in bacteria, yeast, and human cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A connection between negative supercoiling and hybrid formation is supported by in vivo work on topoisomerase mutants in bacteria, yeast, and human cells",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Drolet et al., 1995; Tuduri et al., 2009; El Hage et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "6799b7c3-62df-4ad8-919a-ad47392e0390",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C23",
+      "claim": "RecA is the bacterial strand exchange protein that normally promotes the invasion of single-stranded DNA into duplex DNA to repair DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another potential promoter of hybrid formation is RecA, the bacterial strand exchange protein that normally promotes the invasion of single-stranded DNA into duplex DNA to repair DNA damage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about RecA function in bacteria.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ca68658b-da91-40b2-b1b6-bffb79985e3c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C24",
+      "claim": "RecA promotes RNA\u2013DNA hybrid formation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Studies a decade ago showed that RecA promotes RNA\u2013DNA hybrid formation in vitro",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "30d97605-95e3-45dd-8316-617e304c009f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C25",
+      "claim": "RecA-dependent hybrid formation had been postulated as an alternative mechanism to initiate DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This observation supported a model of RecA-dependent hybrid formation that had been postulated as an alternative mechanism to initiate DNA replication",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Cao and Kogoma, 1993; Hong et al., 1995).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8b42b079-f798-4aa7-b537-428ca1a69fa5",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C26",
+      "claim": "RecA-mediated R-loops formed when RecA was mixed with RNA and its homologous DNA template in the absence of active transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In these studies, RecA-mediated R-loops formed when RecA was mixed with RNA and its homologous DNA template in the absence of active transcription.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ea8f07e2-a02b-4e3b-979d-1f1d64752834",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C27",
+      "claim": "Hybrids can form post-transcriptionally (in trans) in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This observation showed that hybrids could, at least in vitro, form post-transcriptionally (i.e., in trans)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ac57b301-bac1-4418-b4d8-f38758080aee",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C28",
+      "claim": "Models postulated from in vivo studies suggest that RNA\u2013DNA hybrids occur co-transcriptionally (in cis) from the invasion of the duplex DNA at the site of transcription by a nascent RNA transcript.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, to date, models postulated from in vivo studies suggest that RNA\u2013DNA hybrids occur co-transcriptionally (in cis) from the invasion of the duplex DNA at the site of transcription by a nascent RNA transcript",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the prevailing models in the field, supported by citations (Huertas and Aguilera, 2003; Aguilera and Garc\u00eda-Muse, 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a77535f0-c25b-43f3-8ae0-d791cd8f099b",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C29",
+      "claim": "The cis mechanism is supported by the co-transcriptional nature of many of the RNA biogenesis steps implicated in preventing hybrid formation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The cis mechanism is supported by the co-transcriptional nature of many of the RNA biogenesis steps implicated in preventing hybrid formation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that many RNA biogenesis factors act co-transcriptionally.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b1a678c6-2fe0-4629-adcc-2c2dc0eaff03",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C30",
+      "claim": "The cis mechanism does not fully explain how mutants in post-transcriptional processes, such as RNA degradation and export, would cause hybrid-mediated instability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the cis mechanism does not fully explain how mutants in post-transcriptional processes, such as RNA degradation and export, would cause hybrid-mediated instability",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a logical inference based on the observation that post-transcriptional mutants also cause hybrid-mediated instability (Wahba et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "fce82c94-de53-46e4-b88d-1877916c7318",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C31",
+      "claim": "Less than 5% of wild-type nuclei stain with S9.6 antibody for RNA-DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As reported previously, less than 5% of wild-type nuclei stain with this antibody",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data from chromosome spreads shown in Figure 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "eda2996d-ed4e-400a-a877-7d188d674f27",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C32",
+      "claim": "In leo1\u0394, med12\u0394, sin3\u0394, kem1\u0394, and rrp6\u0394 mutants, 30-60% of nuclei stain positively for RNA-DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, in leo1\u0394, med12\u0394, sin3\u0394, kem1\u0394, and rrp6\u0394 mutants, 30\u201360% of nuclei stain positively",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data from chromosome spreads shown in Figure 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "82755adb-2b35-4d1e-bd8b-5654528fe58b",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C33",
+      "claim": "Deletion of RAD51 in RNA biogenesis mutants reduces hybrid staining to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Strikingly, deletion of RAD51 in these RNA biogenesis mutants reduced hybrid staining to wild-type levels",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data from chromosome spreads shown in Figure 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "d6c5d7ba-4e74-4f65-b172-ee65ddb7424a",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C34",
+      "claim": "The total rate of YAC instability in wild-type cells was 6 \u00d7 10\u22124 per division.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The total rate of YAC instability (the sum of chromosome loss and terminal deletions) in wild-type cells was 6 \u00d7 10\u22124 per division.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly measured experimental data shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "30d573e6-fd48-4b10-b86b-5e506e707d50",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C35",
+      "claim": "rad51\u0394 alone caused no increase in YAC instability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, rad51\u0394 alone caused no increase in YAC instability.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b61273ab-4681-4f24-b6ab-2c47e1bcde18",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C36",
+      "claim": "In RNA biogenesis mutants, YAC instability increased fivefold to tenfold.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our subset of RNA biogenesis mutants, YAC instability increased fivefold to tenfold",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c06edd04-ed42-421a-89ac-1bca3dc29a89",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C37",
+      "claim": "The introduction of rad51\u0394 into the RNA biogenesis mutants completely suppressed the elevated YAC instability in leo1\u0394, kem1\u0394, rrp6\u0394, and sin3\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The introduction of rad51\u0394 into the RNA biogenesis mutants completely suppressed the elevated YAC instability, both chromosome loss and terminal deletions, in leo1\u0394, kem1\u0394, rrp6\u0394, and sin3\u0394 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "db9edb8d-adaf-4f16-8f7d-2a007efd90a7",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C38",
+      "claim": "In med12\u0394, YAC instability was mostly but not entirely suppressed by rad51\u0394 despite the near complete suppression of hybrid formation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In med12\u0394, YAC instability was mostly but not entirely suppressed despite the near complete suppression of hybrid formation as monitored by spreads, indicating that in the med12\u0394 rad51\u0394 strain a subset of the YAC instability was hybrid independent.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is based on experimental data and inference about the mechanism of instability in this particular mutant.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "0a4936d9-c4a9-4419-ad77-d90ef9d30570",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C39",
+      "claim": "Many RNA biogenesis mutants that induce hybrids allow cryptic transcription and likely the production of aberrant transcripts.",
+      "claim_type": "EXPLICIT",
+      "source_text": "From our previous study on RNA biogenesis mutants that induce hybrids, we noted that many of these mutants allow cryptic transcription, and likely the production of aberrant transcripts",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is based on observations from a previous study (Wahba et al., 2011) and inference about transcript production.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "de32c8dc-caf8-489e-a4b0-9916529796f2",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C40",
+      "claim": "A galactose-inducible promoter (GALpr) was integrated 10 kb from the telomere on the YAC arm with the URA3 marker.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The GALpr was integrated 10 kb from the telomere, on the arm with the URA3 marker.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental construct created for the study, shown in Figure 2A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "e210af21-b9a2-448b-ac4a-874cca8a2b55",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C41",
+      "claim": "Upon addition of galactose, RNA levels increased 100-fold to 1000-fold in the region proximal to the GALpr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Upon addition of galactose, RNA levels increased 100-fold to 1000-fold in the region proximal to the GALpr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by qRT-PCR data shown in Figure 2B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "307be967-6565-41ae-a570-c5761129f6ee",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C42",
+      "claim": "A dramatic increase in the DIP signal for hybrids on the YAC sequences proximal to YAC-GALpr was observed 2 hr after induction by galactose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, we observed a dramatic increase in the DIP signal for hybrids on the YAC sequences proximal to YAC-GALpr, 2 hr after induction by galactose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 2C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "587d8cfe-9173-4e35-847b-61fc1e389b40",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C43",
+      "claim": "No elevation in hybrid signal was detected in two regions of the YAC-GALpr distal to the GALpr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The specificity of this increased DIP signal was evident by the fact that no elevation in hybrid signal was detected in two regions of the YAC-GALpr distal to the GALpr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "52937ae6-50c9-4e5b-9d76-b5148479019f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C44",
+      "claim": "Lower DIP signals coincide with the transcriptional start site of the GALpr, where there is little transcript detectable upon addition of galactose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, lower DIP signals coincide with the transcriptional start site of the GALpr, where there is little transcript detectable upon addition of galactose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP and qRT-PCR data shown in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "fb3ee5dd-5362-4ba7-b81e-438093ea11d0",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C45",
+      "claim": "The DIP signal in the YAC-GALpr strains was suppressed when transcription was repressed by the addition of glucose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, the DIP signal in the YAC-GALpr strains was suppressed when transcription was repressed by the addition of glucose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 2\u2014figure supplement 1C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "942a3259-76a4-43eb-b854-c7a134215b94",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C46",
+      "claim": "YAC-GALpr instability was elevated 25-fold upon galactose treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, its instability was elevated 25-fold with a distribution of chromosome loss and terminal deletions similar to that seen in wild-type cells and RNA biogenesis mutants",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by YAC instability assay data shown in Figure 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "88f0255f-d460-4660-84ed-b14bae80b6bd",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C47",
+      "claim": "Transcription-induced YAC instability was suppressed by over-expression of RNase H.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, this transcription-induced YAC instability was suppressed by over-expression of RNase H or deletion of RAD51",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 2D-E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8d383483-fa50-4621-a8e0-568104c09e34",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C48",
+      "claim": "Transcription-induced YAC instability was suppressed by deletion of RAD51.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, this transcription-induced YAC instability was suppressed by over-expression of RNase H or deletion of RAD51",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 2D-E.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b206bac0-4561-4742-8080-6c39e0bcc80a",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C49",
+      "claim": "No Rad51p binding was detected on YAC-GALpr in the absence of galactose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "No Rad51p binding was detected either on YAC-GALpr in the absence of galactose or on the YAC in the presence or absence of galactose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "d13eb78b-e0fa-401a-a96e-c380dcf614d5",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C50",
+      "claim": "No Rad51p binding was detected on the YAC in the presence or absence of galactose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "No Rad51p binding was detected either on YAC-GALpr in the absence of galactose or on the YAC in the presence or absence of galactose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a7943ef5-4dda-401e-99ff-fdf69fbe28e4",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C51",
+      "claim": "Rad51p binding was detected on YAC-GALpr 2 hr after induction with galactose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, 2 hr after induction with galactose, Rad51p binding was detected on YAC-GALpr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "32c3448d-2c9c-4a04-8899-3431de0933cc",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C52",
+      "claim": "Rad51p binding was detected in the region proximal to the GALpr where hybrids form.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad51p binding was detected in the region proximal to the GALpr where hybrids form",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "e2b67612-5b0a-4dd8-ba67-4197cfab151f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C53",
+      "claim": "Rad51p binding was not detected at the transcriptional start site of the GALpr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad51p binding was not detected at the transcriptional start site of the GALpr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "7afb77c1-1359-4c40-a2a3-44af608bb12f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C54",
+      "claim": "Rad51p binding was not detected in regions distal to the GALpr.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad51p binding was not detected in regions distal to the GALpr",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ebc6603f-0b7b-40d4-9d86-c19aaef3091c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C55",
+      "claim": "Rad51p binding was eliminated when transcription was repressed by the addition of glucose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad51p binding was eliminated when transcription was repressed by the addition of glucose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3\u2014figure supplement 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "dd421552-0014-4199-a8e4-a9756d6eb54a",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C56",
+      "claim": "No ChIP signal for \u03b3-H2AX above background level was detected in the YAC-GALpr strain under conditions that induced Rad51p binding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, we did not detect a ChIP signal for \u03b3-H2AX above background level in the YAC-GALpr strain even under conditions that induced Rad51p binding",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by ChIP experimental data shown in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "f62ab5d9-9bd3-4c92-bad5-305f5b65f9d6",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C57",
+      "claim": "No increase in YAC instability was observed when dextrose was added after 2 hr of galactose induction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, no increase in YAC instability was observed",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 3\u2014figure supplement 4.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b91942f2-b928-4ae8-8e01-6323e0b15d5c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C58",
+      "claim": "Hybrids form transiently in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Studies from our laboratory and the Aguilera laboratory suggest that hybrids not only form in RNA biogenesis mutants but also transiently in wild-type cells",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to previous studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "42ff2dc5-4b07-484f-8f15-616dbe8912e0",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C59",
+      "claim": "Deletion of both RNase H genes (rnh1\u0394rnh201\u0394) leads to the accumulation of hybrids in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Deletion of both RNase H genes (rnh1\u0394rnh201\u0394) leads to the accumulation of hybrids in wild-type cells",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 4 and previous studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "71d1228b-543b-4ff1-a053-67c6d0fc46b3",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C60",
+      "claim": "In rnh1\u0394rnh201\u0394 mutants, 30% of nuclei stain positively for hybrids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In rnh1\u0394rnh201\u0394 mutants, 30% of nuclei stain positively for hybrids",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by chromosome spread data shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "92f94b81-45f0-4ede-b410-3df45adccf33",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C61",
+      "claim": "Deletion of RAD51 or RAD52 in the rnh1\u0394rnh201\u0394 mutant does not reduce hybrid staining.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, deletion of RAD51 or RAD52 in the rnh1\u0394rnh201\u0394 mutant does not reduce hybrid staining",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by chromosome spread data shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "cd73e376-3333-4d5a-8580-a2aa46234380",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C62",
+      "claim": "YAC instability in rnh1\u0394rnh201\u0394 is similar to that in rnh1\u0394rnh201\u0394 rad51\u0394 and rnh1\u0394rnh201\u0394 rad52\u0394 strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Similarly, YAC instability in rnh1\u0394rnh201\u0394 is similar to that in rnh1\u0394rnh201\u0394 rad51\u0394 and rnh1\u0394rnh201\u0394 rad52\u0394 strains",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by YAC instability assay data shown in Figure 4B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "dd558e3d-57cc-4cf3-b967-eb4e6f433d61",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C63",
+      "claim": "RecA promoted hybrid formation in the absence of active transcription in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the in vitro bacterial studies, RecA promoted hybrid formation in the absence of active transcription",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to in vitro studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "5a4637d7-bb21-4b6c-8d67-49ff2d345bd1",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C64",
+      "claim": "A 1.1 kb region of the YAC was integrated on chromosome III along with the GALpr and selectable marker.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The GALpr, selectable marker (CLONAT), and 1.1 kb of yeast artificial chromosome (YAC) DNA was integrated on chromosome III.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental construct shown in Figure 5A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "37e22e8a-a8e0-461b-93f8-1089924a331a",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C65",
+      "claim": "A strong DIP signal was observed only in the presence of galactose using a primer set that monitored hybrids from both the YAC and YAC-GALpr module.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One primer set that monitored hybrids from both the YAC and YAC-GALpr module generated a strong DIP signal only in the presence of galactose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a7e17790-4520-4afb-8756-f58a367daab5",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C66",
+      "claim": "The combined hybrid signal was eliminated when rad51\u0394 was introduced in the trans assay strain.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This combined hybrid signal was eliminated when the rad51\u0394 was introduced in this strain",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "eaf08de9-fafb-48f1-9ee2-21dafdce8d96",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C67",
+      "claim": "Two primer sets that monitored hybrids only from the YAC revealed a strong DIP signal only in the presence of galactose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Two other primer sets that monitored hybrids only from the YAC also revealed a strong DIP signal only in the presence of galactose",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "629ee04c-7288-4d02-b9b9-dec88c001a76",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C68",
+      "claim": "The trans-specific hybrid signal was eliminated when rad51\u0394 was introduced.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This trans-specific hybrid signal was eliminated when rad51\u0394 was introduced into our strain.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by DIP experimental data shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8d71b52a-b266-4051-aebd-90467ffa84ba",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C69",
+      "claim": "YAC instability increased 10-fold in the trans assay strain upon galactose induction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the total rate of YAC instability increased only 10-fold by hybrids formed in trans (from the YAC-GALpr module on chromosome III)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by YAC instability assay data shown in Figure 6.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "1710893f-98a9-4ed2-828a-aa1b2c900dd9",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C70",
+      "claim": "YAC instability in the trans assay was suppressed by over-expression of RNase H.",
+      "claim_type": "EXPLICIT",
+      "source_text": "YAC instability in the trans assay was suppressed by over-expression of RNase H",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 6A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a870c744-7d29-4990-b3e4-9d4685059b87",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C71",
+      "claim": "YAC instability in the trans assay was suppressed by deletion of RAD51.",
+      "claim_type": "EXPLICIT",
+      "source_text": "YAC instability in the trans assay was suppressed by deletion of RAD51",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by experimental data shown in Figure 6B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "9de92e61-4457-4d2d-bcf6-bc9aa116baec",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C72",
+      "claim": "Hybrids induced in trans and in cis both lead to a similar distribution of YAC instability events; on average 85% are HIS\u2212 URA\u2212 (chromosome loss) and 15% are HIS+ URA\u2212 (putative terminal deletions).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed hybrids induced in trans and in cis both lead to a similar distribution of YAC instability events; on average 85% are HIS\u2212 URA\u2212 (chromosome loss) and 15% are HIS+ URA\u2212 (putative terminal deletions).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on analysis of YAC instability events in the different assays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c56fee09-9ebe-419c-b0c6-c70d6eb13b77",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C73",
+      "claim": "Hybrid formation in trans may be less efficient than in cis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, hybrid formation in trans may be less efficient than in cis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that YAC instability increased 10-fold in trans compared to 25-fold in cis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "2ec3b9be-8fc7-40d4-8d98-a9d8fc68ea01",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C74",
+      "claim": "Nine out of ten rearranged YACs analyzed were shorter than the existing YAC, consistent with the formation of YAC terminal deletions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Amongst the 10 YAC rearrangements analyzed, nine were shorter than the existing YAC, consistent with the formation of YAC terminal deletions",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by pulse-field gel and Southern analysis data shown in Figure 6C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "6ca6eef1-24ae-48b8-ba18-4662c434c2a3",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C75",
+      "claim": "Only one rearrangement was the size expected if a chromosome III;YAC translocation had occurred.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Only one rearrangement was the size expected if a chromosome III;YAC translocation had occurred.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by pulse-field gel and Southern analysis data shown in Figure 6C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "f3030301-8773-483d-aaab-838b42a207d8",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C76",
+      "claim": "Rad52p is required for the binding of Rad51p to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad52p is required for the binding of Rad51p to ssDNA",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about Rad52p function, supported by citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "75d6fe8d-5503-4421-a2d8-7366fabe3c98",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C77",
+      "claim": "Deletion of RAD52 in RNA biogenesis mutants reduces hybrid staining to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Deletion of RAD52 in these RNA biogenesis mutants reduced hybrid staining to wild-type levels",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by chromosome spread data shown in Figure 7B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "82503864-859c-4d59-ab4e-d903c814f85a",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C78",
+      "claim": "Deletion of RAD52 in RNA biogenesis mutants suppresses YAC instability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Deletion of RAD52 in RNA biogenesis mutants suppresses YAC instability",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by YAC instability assay data shown in Figure 1B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "d14bb8f0-787b-41d3-b251-4cc34e4fdb7e",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C79",
+      "claim": "Srs2p, Rad54p, and Rdh54p are inhibitors of Rad51p.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A number of inhibitors of Rad51p have been identified.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about these proteins' functions in regulating Rad51p.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8611eac2-c343-44a9-aa26-6f6530e1e03c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C80",
+      "claim": "Srs2p removes Rad51p from ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Srs2p removes Rad51p from ssDNA",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about Srs2p function.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "bd7decc2-e392-4696-9c4b-42323ac4081d",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C81",
+      "claim": "Rad54p and Rdh54p remove Rad51p from dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad54p and Rdh54p remove Rad51p from dsDNA",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about Rad54p and Rdh54p functions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "efa7034e-177c-4695-b1f8-42075b0efed5",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C82",
+      "claim": "YAC instability is increased in srs2\u0394 but not in rad54\u0394 and rdh54\u0394 single and double mutants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rate of yeast artificial chromosome (YAC) instability is increased in srs2\u0394 but not in rad54\u0394 and rdh54\u0394 single and double mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by YAC instability assay data shown in Figure 8A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "5f8cfb60-b064-4eb0-ae0b-1a42f256ec2e",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C83",
+      "claim": "Hybrid staining is increased in srs2\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Representative images of chromatin spreads stained with S9.6 antibody, showing increased RNA\u2013DNA hybrid staining in srs2\u0394.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by chromosome spread data shown in Figure 8B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a1108041-473a-491d-9623-d130f20992af",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C84",
+      "claim": "YAC instability in srs2\u0394 is suppressed when RAD51 is knocked out.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rate of YAC instability in srs2\u0394 is suppressed when RAD51 is knocked out.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by YAC instability assay data shown in Figure 8C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "7d9cea2e-b536-49d5-9f93-8467c388d43d",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C85",
+      "claim": "Hybrid staining is reduced in the srs2\u0394 rad51\u0394 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Hybrid staining is also reduced in the srs2\u0394 rad51\u0394 double mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by chromosome spread data shown in Figure 8C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b7754d75-688b-4fd0-922b-a14d4db175b8",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C86",
+      "claim": "The rate of rDNA instability in srs2\u0394 cells is twenty threefold greater compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In srs2\u0394 cells, the rate of rDNA instability is twenty threefold greater compared to wild-type cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by rDNA instability assay data shown in Figure 8D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "3bebe50a-09d7-45fb-8c76-eb69801175a4",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C87",
+      "claim": "Srs2p has a particularly important role in protecting the highly transcribed rDNA locus against Rad51p-dependent hybrid formation and repeat instability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Together these results suggest that Srs2p has a particularly important role in protecting the highly transcribed rDNA locus against Rad51p-dependent hybrid formation and repeat instability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that rDNA instability is particularly elevated in srs2\u0394 mutants.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "81a8fad5-003f-4a0e-9024-ded61f3db34d",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C88",
+      "claim": "Over-expressing Rad51p can compromise genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, previous in vivo studies showed that over-expressing Rad51p can compromise genome integrity",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Richardson et al., 2004; Shah et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b0ed43b1-a117-49e3-bc0e-596f19d38074",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C89",
+      "claim": "RAD51 expression is up-regulated in tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This deleterious activity of Rad51p is also intriguing because a number of studies have shown that RAD51 expression is up-regulated in tumor cells",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation (Klein, 2008).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "95dcb4ab-6c49-4805-9957-d8c25f3fc716",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C90",
+      "claim": "High levels of Rad51p may be oncogenic, driving hybrid-mediated genomic instability that promotes carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, our results are consistent with a different interpretation: high levels of Rad51p may be oncogenic, driving hybrid-mediated genomic instability that promotes carcinogenesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative interpretation of the results in the context of cancer biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "bb1eb871-1614-495e-bb8c-a331418e76fe",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C91",
+      "claim": "In the forward reaction, Rad51p forms a filament on ssDNA, finds a homologous region of dsDNA, and then catalyzes a strand exchange.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the forward reaction, the conventional mechanism for Rad51p action, it forms a filament on ssDNA, finds a homologous region of dsDNA, and then catalyzes a strand exchange",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established mechanism of Rad51p action in DNA repair.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "bf508ae5-935a-4669-92e8-ae50ba1f9540",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C92",
+      "claim": "Rad51p can polymerize onto RNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rad51p can polymerize onto RNA in vitro",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to in vitro studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "1a709864-3575-477e-93c6-ca8f2f8b1890",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C93",
+      "claim": "Cells possess at least four lines of defense against RNA\u2013DNA hybrids: suppressing the deleterious hybrid-forming activity of Rad51p by Srs2p; suppressing the amount of RNA in the nucleus with hybridization potential through proper RNA biogenesis; unwinding RNA\u2013DNA hybrids by helicases such as Sen1p; and degrading RNA in RNA\u2013DNA hybrids by RNases H.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The work reported here, coupled with previous studies, has revealed that cells possess at least four lines of defense against RNA\u2013DNA hybrids: (1) suppressing the deleterious hybrid-forming activity of Rad51p by Srs2p; (2) suppressing the amount of RNA in the nucleus with hybridization potential through proper RNA biogenesis; (3) unwinding RNA\u2013DNA hybrids by helicases such as Sen1p; and (4) degrading RNA in RNA\u2013DNA hybrids by RNases H.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a synthesis of the current study's findings with previous work in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "59db0e83-b56f-446e-a1fd-c69cff7acd1e",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C94",
+      "claim": "The fact that hybrids form when any one of these anti-hybrid pathways is abrogated indicates that they are not completely functionally redundant.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The fact that hybrids form when any one of these anti-hybrid pathways is abrogated clearly indicates that they are not completely functionally redundant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that deletion of individual anti-hybrid factors leads to hybrid accumulation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "23dffa1a-161d-4422-b1e4-cbd849b16b28",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C95",
+      "claim": "The S9.6 antibody is specific for RNA-DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Previously, we demonstrated the specificity of the S9.6 antibody for hybrids by two approaches.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by previous work (Wahba et al., 2011) demonstrating antibody specificity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "5f0d6ccd-d953-479d-800d-041023713282",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C96",
+      "claim": "S9.6 staining in spreads of RNA biogenesis mutants is reduced to that seen in wild-type cells by post treatment of chromosome spreads with RNase H.",
+      "claim_type": "EXPLICIT",
+      "source_text": "First, S9.6 staining in spreads of RNA biogenesis mutants is reduced to that seen in wild-type cells by post treatment of chromosome spreads with RNase H",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by previous work (Wahba et al., 2011) demonstrating antibody specificity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ed9ba660-8d55-4e22-9785-404249391fc4",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C97",
+      "claim": "Spreads of an RNA biogenesis mutant over-expressing RNase H no longer stained with S9.6.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Similarly, spreads of an RNA biogenesis mutant over-expressing RNase H no longer stained with S9.6.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by previous work demonstrating antibody specificity.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c7bd3396-0053-4174-819a-13cc77e96490",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C98",
+      "claim": "Phosphorylated histone H2AX (\u03b3-H2AX) is one of the most dramatic and earliest markers of DSB formation, arising within minutes and spanning large regions of chromatin adjacent to the break.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This modification is one of the most dramatic and earliest markers of DSB formation, arising within minutes and spanning large regions of chromatin adjacent to the break",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about \u03b3-H2AX as a DSB marker, supported by citation (Shroff et al., 2004).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "8f15b48d-dfb1-49b5-9b91-4e989e174521",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C99",
+      "claim": "Rad51p binding occurs at the site of hybrid formation prior to hybrid-induced DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus by this molecular assay Rad51p binding occurs at the site of hybrid formation prior to hybrid-induced DNA damage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the absence of \u03b3-H2AX signal despite the presence of Rad51p binding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "7484391f-9e14-43a0-a017-a5a48ca6c773",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C100",
+      "claim": "Binding of Rad51p to the model locus during the first 2 hr was unlikely to result from DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus neither our molecular nor functional test supports the binding of Rad51p to the model locus prior to hybrid-induced DNA damage, pointing to a direct role of Rad51p in hybrid formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the lack of YAC instability when transcription is shut off after 2 hr of Rad51p binding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "e8c31bce-0fc9-456d-a895-c8765646707c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C101",
+      "claim": "The hybrid staining pattern in srs2\u0394 nuclei exhibits an apparent enrichment of RNA\u2013DNA hybrids at the RDN locus on chromosome XII, the site of 150 tandem rDNA copies.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The hybrid staining pattern in srs2\u0394 nuclei was reminiscent of the pattern observed in sin3\u0394 cells, exhibiting an apparent enrichment of RNA\u2013DNA hybrids at the RDN locus on chromosome XII, the site of 150 tandem rDNA copies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on chromosome spread observations and comparison to previous work (Wahba et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c9444caf-5865-4f3b-b760-8e1f1a13ea8e",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C102",
+      "claim": "Srs2p interacts directly with Rad51p, dismantling inappropriate Rad51p filaments from DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Srs2p interacts directly with Rad51p, dismantling inappropriate Rad51p filaments from DNA",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about Srs2p function, supported by citations (Krejci et al., 2003; Burgess et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c75dc226-8167-49fb-b243-5ae73b7e6651",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C103",
+      "claim": "The bacterial homolog of Srs2p, UvrD, has been shown to catalyze the unwinding of RNA\u2013DNA hybrids in vitro.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Its bacterial homolog UvrD has been shown to catalyze the unwinding of RNA\u2013DNA hybrids in vitro",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation (Matson, 1989).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "3379a3d8-2f7f-4421-9a06-da05afb1afca",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C104",
+      "claim": "Positive roles for hybrid formation in modulating transcription state have been found in both human cells and fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additionally, positive roles for hybrid formation in modulating transcription state have been found in both human cells and fission yeast",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations (Ginno et al., 2012; Nakama et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "3dd159e9-c876-4575-962e-cdcac886002d",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "claim_id": "C105",
+      "claim": "In fission yeast, there is evidence that RNA\u2013DNA hybrids may provide a platform for RNAi-mediated heterochromatin formation, driving transcriptional silencing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In fission yeast, there is evidence that RNA\u2013DNA hybrids may provide a platform for RNAi-mediated heterochromatin formation, driving transcriptional silencing",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation (Nakama et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Rad51p is required for RNA-DNA hybrid formation and associated genome instability in RNA biogenesis mutants. Deletion of RAD51 in leo1\u0394, med12\u0394, sin3\u0394, kem1\u0394, and rrp6\u0394 mutants reduces hybrid staining from 30-60% to wild-type levels (<5%) and suppresses the 5-10 fold increase in YAC instability observed in these mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C31-C33 provide cytological evidence showing RAD51 deletion eliminates hybrids in RNA biogenesis mutants. Claims C34-C37 provide functional evidence showing RAD51 deletion suppresses hybrid-mediated YAC instability. The data from both chromosome spreads and YAC instability assays converge to support the conclusion in C2. Claim C38 notes partial suppression in med12\u0394, which is appropriately acknowledged as having hybrid-independent instability.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "A galactose-inducible model locus (YAC-GALpr) demonstrates that transcription induces Rad51p-dependent hybrid formation and genome instability. Galactose induction increases RNA levels 100-1000 fold, produces a dramatic increase in DIP signal for hybrids proximal to the promoter, and elevates YAC instability 25-fold, all of which are suppressed by RNase H overexpression or RAD51 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C40-C45 establish the experimental system and demonstrate transcription-dependent hybrid formation by DIP with appropriate spatial and temporal controls. Claims C46-C48 show functional consequences (25-fold YAC instability increase) that are suppressed by both RNase H overexpression and RAD51 deletion, providing converging molecular and genetic evidence for Rad51p-dependent hybrid formation at this locus.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ac4d2a36-658a-40b9-be8d-cfac55652796",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "Rad51p accumulates at the model hybrid-forming locus in a transcription-dependent manner. ChIP experiments show Rad51p binding is detected on YAC-GALpr 2 hours after galactose induction in regions proximal to the GALpr where hybrids form, but not at the transcriptional start site, distal regions, or in the absence of transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C49-C55 provide comprehensive ChIP data showing specific, transcription-dependent Rad51p binding at the hybrid-forming locus with appropriate negative controls (no galactose, distal regions, glucose repression). The spatial correlation between Rad51p binding and hybrid formation (C52) supports the mechanistic claim C4, though C4 involves inference about direct promotion of DNA-RNA strand exchange.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "b90bd238-2e67-48ac-900e-e7700fbdf211",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "Rad51p binding at the hybrid-forming locus occurs prior to DNA damage. No \u03b3-H2AX signal is detected under conditions that induce Rad51p binding, and shutting off transcription after 2 hours of Rad51p binding does not increase YAC instability, indicating Rad51p binds before hybrid-induced DNA damage occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C56 provides molecular evidence (absence of \u03b3-H2AX, an early DSB marker per C98) that DNA damage has not occurred when Rad51p is bound. Claim C57 provides functional evidence that 2 hours of Rad51p binding without continued transcription does not cause instability. Together, C99 and C100 represent reasonable inferences from these data, though alternative explanations (e.g., transient damage below detection threshold) cannot be completely excluded.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "aa6c4eb1-9798-46e6-8eba-5defc4c9eb0b",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "Hybrid formation in RNase H deletion mutants (rnh1\u0394rnh201\u0394) is independent of Rad51p and Rad52p. While 30% of nuclei in rnh1\u0394rnh201\u0394 mutants stain positively for hybrids, deletion of RAD51 or RAD52 does not reduce hybrid staining or YAC instability in this background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C60-C62 provide consistent evidence from both cytological (chromosome spreads) and functional (YAC instability) assays that RAD51/RAD52 deletion does not suppress hybrids in the rnh1\u0394rnh201\u0394 background. This contrasts with RNA biogenesis mutants and demonstrates that not all hybrid formation requires Rad51p, supporting the existence of alternative (likely cis) mechanisms for hybrid formation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "3b936833-4fae-4896-b4c3-b77fa0085bb6",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "Rad51p mediates hybrid formation in trans, where transcripts from chromosome III cause hybrids and instability on the homologous YAC sequence. DIP analysis shows Rad51p-dependent hybrid signals on the YAC when transcription occurs from the chromosome III module, resulting in 10-fold increased YAC instability that is suppressed by RNase H overexpression or RAD51 deletion, with 9/10 rearrangements consistent with YAC terminal deletions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C64-C68 establish the trans assay system and provide molecular evidence (DIP) for Rad51p-dependent hybrid formation on the YAC from transcripts generated on chromosome III. Claims C69-C71 show functional consequences suppressed by RNase H and RAD51 deletion. Claims C72-C75 characterize the instability events, with structural analysis supporting terminal deletions rather than translocations. The lower efficiency in trans vs cis (C73) is appropriately noted. This represents strong evidence for trans hybrid formation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "edf765a0-0c3d-4512-9f7d-23298826c308",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "Rad52p, a positive regulator required for Rad51p binding to ssDNA, is necessary for hybrid formation in RNA biogenesis mutants. Deletion of RAD52 reduces hybrid staining to wild-type levels and suppresses YAC instability in RNA biogenesis mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C76 establishes the known relationship between Rad52p and Rad51p. Claims C77-C78 show that RAD52 deletion has similar effects to RAD51 deletion in suppressing both hybrid formation (cytological) and YAC instability (functional) in RNA biogenesis mutants. This supports the model that Rad52p acts through Rad51p to promote hybrid formation, consistent with their established functional relationship.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "730376d6-fed7-4203-9444-90e230c7bf3f",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "Srs2p, a Rad51p antagonist, serves as a novel anti-hybrid mechanism by counteracting Rad51p-dependent hybrid formation. Deletion of SRS2 increases hybrid staining and YAC instability in a Rad51p-dependent manner, with particularly dramatic effects at the rDNA locus (23-fold increase in instability).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C82-C85 demonstrate that srs2\u0394 increases both hybrid formation and YAC instability, and that these effects are suppressed by rad51\u0394, establishing Rad51p-dependence. Claims C86-C87 and C101 show particularly strong effects at the rDNA locus. The specificity is supported by C82 showing that other Rad51p inhibitors (rad54\u0394, rdh54\u0394) do not have the same effect. This provides strong evidence for Srs2p as an anti-hybrid factor acting through Rad51p regulation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "2ef887b2-2eea-4ee7-bc16-c7504533fffd",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "The S9.6 antibody used for detecting RNA-DNA hybrids is specific, as demonstrated by RNase H sensitivity. S9.6 staining in RNA biogenesis mutants is reduced to wild-type levels by post-treatment with RNase H or by overexpressing RNase H in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C96-C97 describe validation experiments from prior work (Wahba et al., 2011) showing that the S9.6 signal is eliminated by RNase H treatment, which specifically degrades RNA in RNA-DNA hybrids. This provides strong evidence for antibody specificity, which is critical for interpreting all cytological hybrid detection experiments in the manuscript.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "51a648ed-b291-4263-9e59-82bbe554d84c",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "Hybrid formation in trans amplifies the genome-destabilizing potential of RNA, and high levels of Rad51p may be oncogenic by driving hybrid-mediated genomic instability that promotes carcinogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C7 is a reasonable inference from the trans hybrid data, though 'amplifies' is somewhat speculative given the lower efficiency in trans vs cis (C73). Claim C90 is explicitly speculative (evidence type includes SPECULATION) and extrapolates yeast findings to human cancer without direct experimental support. While the logic is plausible given C89 (RAD51 upregulation in tumors), this represents a hypothesis rather than a demonstrated result.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a26de5b3-f1c2-437e-9416-dff6cb93f8f3",
+      "content_id": "9ff4144a-f98b-44e7-a69c-4145ac75ba38",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "Cells possess at least four non-redundant lines of defense against RNA-DNA hybrids: Srs2p suppression of Rad51p activity, proper RNA biogenesis, Sen1p helicase unwinding, and RNase H degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C93 synthesizes findings from the current study (Srs2p/Rad51p pathway) with prior work on other anti-hybrid mechanisms. Claim C94 provides the logical inference that these pathways are non-redundant based on the observation that deletion of any single pathway leads to hybrid accumulation. This is well-supported by the data showing hybrids accumulate in RNA biogenesis mutants, RNase H mutants, and srs2\u0394 mutants.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "010758fa-3ef6-4d77-9678-b438a82dbc67",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "In RNA biogenesis mutants (leo1\u0394, med12\u0394, sin3\u0394, kem1\u0394, rrp6\u0394), deletion of RAD51 or RAD52 suppresses both hybrid formation (as detected by S9.6 antibody staining) and YAC instability to wild-type levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request statistical analysis of S9.6 immunofluorescence data (point 1) and additional controls for S9.6 specificity including RNase H sensitivity, transcription dependence, and nuclear localization (point 2). These requests indicate the reviewers need more rigorous quantification and validation before accepting the hybrid formation claims, though they do not explicitly reject the findings.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "Rad51p accumulates at the YAC-GALpr locus where hybrids form, and this binding occurs prior to DNA damage, suggesting Rad51p directly promotes DNA-RNA strand exchange necessary for hybrid formation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers identify this as 'the major issue' and state that 'proving that Rad51 directly promotes R-loops or instead is recruited to R-loop induced sites of DNA damage to promote recombination' needs tightening. They conclude 'it is impossible to exclude the possibility that loss of RAD51 has a combined effect on both recombination and the promotion of RNA:DNA hybrids' and request the paper acknowledge this possibility.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "Integration of a galactose-inducible promoter (GALpr) on the YAC leads to increased RNA levels (100-1000 fold), increased DIP signal for hybrids proximal to the GALpr, and 25-fold elevated YAC instability upon galactose treatment, which is suppressed by RNase H overexpression or RAD51 deletion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request 'better analysis of GAL induced ncRNA over the YAC human sequence' stating that 'showing fold change post GAL induction is too imprecise' and recommend 'RNAseq or strand specific Northern analysis' (point 3). They also request 'direct detection of R-loops over the ncRNA positions' using 'S9.6 in chromatin or genomic DNA immunoprecipitation experiments (ChIP or DIP)' (point 4), indicating the current evidence is insufficient.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "Rad51p mediates hybridization of transcripts to homologous chromosomal loci distinct from their site of synthesis (trans hybrid formation). When a 1.1 kb YAC region with GALpr is integrated on chromosome III, galactose induction causes hybrid formation on the YAC and 10-fold increased YAC instability, which is suppressed by RNase H overexpression or RAD51 deletion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers specifically emphasize that 'direct detection of R-loops over the ncRNA positions should be obtained by using S9.6 in chromatin or genomic DNA immunoprecipitation experiments (ChIP or DIP). This is especially important for the trans experiments (Figure 5)' (point 4). They also request 'controls for how much (if any) homologous sequence are required for GAL induction of ncRNA to work in trans to promote YAC instability' (point 5), indicating the evidence for trans effects needs strengthening.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "1cf25709-aea0-4938-b476-32ed0fa9d915",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "Srs2p counteracts the deleterious hybrid-forming activity of Rad51p and serves as a novel anti-hybrid mechanism. Deletion of SRS2 increases hybrid staining and YAC instability in a Rad51p-dependent manner, with particularly elevated rDNA instability (23-fold increase).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers request testing 'SEN1 and TOP1/2 mutation on RAD51 dependent R-looping' (point 6), suggesting they want to see how Srs2p compares to other known anti-hybrid factors. Additionally, the general request for statistical analysis of S9.6 staining (point 1) applies to the srs2\u0394 hybrid staining data, indicating the quantification needs improvement.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "48a62048-78d8-4c30-b366-2db2b9aa7930",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "In rnh1\u0394rnh201\u0394 double mutants, hybrids accumulate (30% of nuclei stain positively) but deletion of RAD51 or RAD52 does not reduce hybrid staining or YAC instability, indicating these hybrids form independently of Rad51p/Rad52p.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers do not specifically critique this result, their general request for statistical analysis of S9.6 immunofluorescence data (point 1) and controls for S9.6 specificity (point 2) apply to these experiments as well, indicating the quantification and validation need strengthening before the claims can be fully supported.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "d6cade61-65d3-4bfb-9e70-c5b6bd8d9701",
+      "content_id": "b97eef51-6f3e-465e-9d50-c95daa79130f",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "No \u03b3-H2AX signal is detected at the YAC-GALpr locus under conditions that induce Rad51p binding, and no YAC instability occurs when transcription is shut off after 2 hours of galactose induction, suggesting Rad51p binding precedes DNA damage.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims are central to the authors' argument that Rad51p directly promotes hybrid formation rather than being recruited to damage sites. However, reviewers state this is 'the major issue' and that 'the case for a direct effect needs tightening.' They suggest an HO cleavage experiment to distinguish between Rad51p's role in recombination versus hybrid formation, indicating the current evidence is insufficient to definitively establish the mechanism.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb301ca4-e222-4dcf-b902-9dbad29fbee3",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "fce82c94-de53-46e4-b88d-1877916c7318",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "eda2996d-ed4e-400a-a877-7d188d674f27",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "82755adb-2b35-4d1e-bd8b-5654528fe58b",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "d6c5d7ba-4e74-4f65-b172-ee65ddb7424a",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "30d573e6-fd48-4b10-b86b-5e506e707d50",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "b61273ab-4681-4f24-b6ab-2c47e1bcde18",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "c06edd04-ed42-421a-89ac-1bca3dc29a89",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "db9edb8d-adaf-4f16-8f7d-2a007efd90a7",
+      "result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233"
+    },
+    {
+      "claim_id": "de32c8dc-caf8-489e-a4b0-9916529796f2",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "e210af21-b9a2-448b-ac4a-874cca8a2b55",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "307be967-6565-41ae-a570-c5761129f6ee",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "587d8cfe-9173-4e35-847b-61fc1e389b40",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "52937ae6-50c9-4e5b-9d76-b5148479019f",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "fb3ee5dd-5362-4ba7-b81e-438093ea11d0",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "942a3259-76a4-43eb-b854-c7a134215b94",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "88f0255f-d460-4660-84ed-b14bae80b6bd",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "8d383483-fa50-4621-a8e0-568104c09e34",
+      "result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11"
+    },
+    {
+      "claim_id": "89353bda-ff48-4daf-a0f7-6f7f7b0c3420",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "84ea01dd-5963-4a74-8fa5-6e325a549f97",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "b206bac0-4561-4742-8080-6c39e0bcc80a",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "d13eb78b-e0fa-401a-a96e-c380dcf614d5",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "a7943ef5-4dda-401e-99ff-fdf69fbe28e4",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "32c3448d-2c9c-4a04-8899-3431de0933cc",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "e2b67612-5b0a-4dd8-ba67-4197cfab151f",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "7afb77c1-1359-4c40-a2a3-44af608bb12f",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "ebc6603f-0b7b-40d4-9d86-c19aaef3091c",
+      "result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796"
+    },
+    {
+      "claim_id": "dd421552-0014-4199-a8e4-a9756d6eb54a",
+      "result_id": "b90bd238-2e67-48ac-900e-e7700fbdf211"
+    },
+    {
+      "claim_id": "f62ab5d9-9bd3-4c92-bad5-305f5b65f9d6",
+      "result_id": "b90bd238-2e67-48ac-900e-e7700fbdf211"
+    },
+    {
+      "claim_id": "c7bd3396-0053-4174-819a-13cc77e96490",
+      "result_id": "b90bd238-2e67-48ac-900e-e7700fbdf211"
+    },
+    {
+      "claim_id": "8f15b48d-dfb1-49b5-9b91-4e989e174521",
+      "result_id": "b90bd238-2e67-48ac-900e-e7700fbdf211"
+    },
+    {
+      "claim_id": "7484391f-9e14-43a0-a017-a5a48ca6c773",
+      "result_id": "b90bd238-2e67-48ac-900e-e7700fbdf211"
+    },
+    {
+      "claim_id": "42ff2dc5-4b07-484f-8f15-616dbe8912e0",
+      "result_id": "aa6c4eb1-9798-46e6-8eba-5defc4c9eb0b"
+    },
+    {
+      "claim_id": "71d1228b-543b-4ff1-a053-67c6d0fc46b3",
+      "result_id": "aa6c4eb1-9798-46e6-8eba-5defc4c9eb0b"
+    },
+    {
+      "claim_id": "92f94b81-45f0-4ede-b410-3df45adccf33",
+      "result_id": "aa6c4eb1-9798-46e6-8eba-5defc4c9eb0b"
+    },
+    {
+      "claim_id": "cd73e376-3333-4d5a-8580-a2aa46234380",
+      "result_id": "aa6c4eb1-9798-46e6-8eba-5defc4c9eb0b"
+    },
+    {
+      "claim_id": "490de913-e86e-4b80-9e29-170e7989bc5f",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "5a4637d7-bb21-4b6c-8d67-49ff2d345bd1",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "37e22e8a-a8e0-461b-93f8-1089924a331a",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "a7e17790-4520-4afb-8756-f58a367daab5",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "eaf08de9-fafb-48f1-9ee2-21dafdce8d96",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "629ee04c-7288-4d02-b9b9-dec88c001a76",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "8d71b52a-b266-4051-aebd-90467ffa84ba",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "1710893f-98a9-4ed2-828a-aa1b2c900dd9",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "a870c744-7d29-4990-b3e4-9d4685059b87",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "9de92e61-4457-4d2d-bcf6-bc9aa116baec",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "c56fee09-9ebe-419c-b0c6-c70d6eb13b77",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "2ec3b9be-8fc7-40d4-8d98-a9d8fc68ea01",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "6ca6eef1-24ae-48b8-ba18-4662c434c2a3",
+      "result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6"
+    },
+    {
+      "claim_id": "f3030301-8773-483d-aaab-838b42a207d8",
+      "result_id": "edf765a0-0c3d-4512-9f7d-23298826c308"
+    },
+    {
+      "claim_id": "75d6fe8d-5503-4421-a2d8-7366fabe3c98",
+      "result_id": "edf765a0-0c3d-4512-9f7d-23298826c308"
+    },
+    {
+      "claim_id": "82503864-859c-4d59-ab4e-d903c814f85a",
+      "result_id": "edf765a0-0c3d-4512-9f7d-23298826c308"
+    },
+    {
+      "claim_id": "7b455551-d39a-410b-bb66-a96f8f416578",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "5c03ecc5-500a-4b97-a644-bb1bb06b01e1",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "d14bb8f0-787b-41d3-b251-4cc34e4fdb7e",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "8611eac2-c343-44a9-aa26-6f6530e1e03c",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "efa7034e-177c-4695-b1f8-42075b0efed5",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "5f8cfb60-b064-4eb0-ae0b-1a42f256ec2e",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "a1108041-473a-491d-9623-d130f20992af",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "7d9cea2e-b536-49d5-9f93-8467c388d43d",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "b7754d75-688b-4fd0-922b-a14d4db175b8",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "3bebe50a-09d7-45fb-8c76-eb69801175a4",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "e8c31bce-0fc9-456d-a895-c8765646707c",
+      "result_id": "730376d6-fed7-4203-9444-90e230c7bf3f"
+    },
+    {
+      "claim_id": "23dffa1a-161d-4422-b1e4-cbd849b16b28",
+      "result_id": "2ef887b2-2eea-4ee7-bc16-c7504533fffd"
+    },
+    {
+      "claim_id": "5f0d6ccd-d953-479d-800d-041023713282",
+      "result_id": "2ef887b2-2eea-4ee7-bc16-c7504533fffd"
+    },
+    {
+      "claim_id": "ed9ba660-8d55-4e22-9785-404249391fc4",
+      "result_id": "2ef887b2-2eea-4ee7-bc16-c7504533fffd"
+    },
+    {
+      "claim_id": "d2053b0e-9a3c-4751-bbf6-3114c7762903",
+      "result_id": "51a648ed-b291-4263-9e59-82bbe554d84c"
+    },
+    {
+      "claim_id": "95dcb4ab-6c49-4805-9957-d8c25f3fc716",
+      "result_id": "51a648ed-b291-4263-9e59-82bbe554d84c"
+    },
+    {
+      "claim_id": "1a709864-3575-477e-93c6-ca8f2f8b1890",
+      "result_id": "a26de5b3-f1c2-437e-9416-dff6cb93f8f3"
+    },
+    {
+      "claim_id": "59db0e83-b56f-446e-a1fd-c69cff7acd1e",
+      "result_id": "a26de5b3-f1c2-437e-9416-dff6cb93f8f3"
+    },
+    {
+      "claim_id": "eb301ca4-e222-4dcf-b902-9dbad29fbee3",
+      "result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67"
+    },
+    {
+      "claim_id": "82755adb-2b35-4d1e-bd8b-5654528fe58b",
+      "result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67"
+    },
+    {
+      "claim_id": "c06edd04-ed42-421a-89ac-1bca3dc29a89",
+      "result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67"
+    },
+    {
+      "claim_id": "75d6fe8d-5503-4421-a2d8-7366fabe3c98",
+      "result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67"
+    },
+    {
+      "claim_id": "82503864-859c-4d59-ab4e-d903c814f85a",
+      "result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67"
+    },
+    {
+      "claim_id": "89353bda-ff48-4daf-a0f7-6f7f7b0c3420",
+      "result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e"
+    },
+    {
+      "claim_id": "84ea01dd-5963-4a74-8fa5-6e325a549f97",
+      "result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e"
+    },
+    {
+      "claim_id": "a7943ef5-4dda-401e-99ff-fdf69fbe28e4",
+      "result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e"
+    },
+    {
+      "claim_id": "32c3448d-2c9c-4a04-8899-3431de0933cc",
+      "result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e"
+    },
+    {
+      "claim_id": "8f15b48d-dfb1-49b5-9b91-4e989e174521",
+      "result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e"
+    },
+    {
+      "claim_id": "7484391f-9e14-43a0-a017-a5a48ca6c773",
+      "result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e"
+    },
+    {
+      "claim_id": "de32c8dc-caf8-489e-a4b0-9916529796f2",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "e210af21-b9a2-448b-ac4a-874cca8a2b55",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "307be967-6565-41ae-a570-c5761129f6ee",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "587d8cfe-9173-4e35-847b-61fc1e389b40",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "52937ae6-50c9-4e5b-9d76-b5148479019f",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "fb3ee5dd-5362-4ba7-b81e-438093ea11d0",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "942a3259-76a4-43eb-b854-c7a134215b94",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "88f0255f-d460-4660-84ed-b14bae80b6bd",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "8d383483-fa50-4621-a8e0-568104c09e34",
+      "result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6"
+    },
+    {
+      "claim_id": "490de913-e86e-4b80-9e29-170e7989bc5f",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "5a4637d7-bb21-4b6c-8d67-49ff2d345bd1",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "37e22e8a-a8e0-461b-93f8-1089924a331a",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "a7e17790-4520-4afb-8756-f58a367daab5",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "eaf08de9-fafb-48f1-9ee2-21dafdce8d96",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "629ee04c-7288-4d02-b9b9-dec88c001a76",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "8d71b52a-b266-4051-aebd-90467ffa84ba",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "1710893f-98a9-4ed2-828a-aa1b2c900dd9",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "a870c744-7d29-4990-b3e4-9d4685059b87",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "9de92e61-4457-4d2d-bcf6-bc9aa116baec",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "c56fee09-9ebe-419c-b0c6-c70d6eb13b77",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "2ec3b9be-8fc7-40d4-8d98-a9d8fc68ea01",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "6ca6eef1-24ae-48b8-ba18-4662c434c2a3",
+      "result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf"
+    },
+    {
+      "claim_id": "7b455551-d39a-410b-bb66-a96f8f416578",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "5c03ecc5-500a-4b97-a644-bb1bb06b01e1",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "efa7034e-177c-4695-b1f8-42075b0efed5",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "5f8cfb60-b064-4eb0-ae0b-1a42f256ec2e",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "a1108041-473a-491d-9623-d130f20992af",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "7d9cea2e-b536-49d5-9f93-8467c388d43d",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "b7754d75-688b-4fd0-922b-a14d4db175b8",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "3bebe50a-09d7-45fb-8c76-eb69801175a4",
+      "result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915"
+    },
+    {
+      "claim_id": "42ff2dc5-4b07-484f-8f15-616dbe8912e0",
+      "result_id": "48a62048-78d8-4c30-b366-2db2b9aa7930"
+    },
+    {
+      "claim_id": "71d1228b-543b-4ff1-a053-67c6d0fc46b3",
+      "result_id": "48a62048-78d8-4c30-b366-2db2b9aa7930"
+    },
+    {
+      "claim_id": "92f94b81-45f0-4ede-b410-3df45adccf33",
+      "result_id": "48a62048-78d8-4c30-b366-2db2b9aa7930"
+    },
+    {
+      "claim_id": "cd73e376-3333-4d5a-8580-a2aa46234380",
+      "result_id": "48a62048-78d8-4c30-b366-2db2b9aa7930"
+    },
+    {
+      "claim_id": "dd421552-0014-4199-a8e4-a9756d6eb54a",
+      "result_id": "d6cade61-65d3-4bfb-9e70-c5b6bd8d9701"
+    },
+    {
+      "claim_id": "f62ab5d9-9bd3-4c92-bad5-305f5b65f9d6",
+      "result_id": "d6cade61-65d3-4bfb-9e70-c5b6bd8d9701"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2a9f08e1-cdd1-4012-8610-46ac7161418a",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "1d37ddbe-56e3-4276-b6ad-6aeaae092c11",
+      "peer_result_id": "40112fc8-7f0c-492e-a2b0-a2a4d2403fa6",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate the GAL-induced ncRNA system and hybrid formation at the YAC locus (C40-C48). OpenEval finds the DIP data and functional instability assays sufficient. Peer reviewers request more precise transcription analysis (RNAseq or Northern) and direct S9.6 DIP/ChIP detection of R-loops at ncRNA positions, indicating current evidence is insufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "95ce0845-8c7d-49b7-8df9-e99c08cbd2d8",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "aa6c4eb1-9798-46e6-8eba-5defc4c9eb0b",
+      "peer_result_id": "48a62048-78d8-4c30-b366-2db2b9aa7930",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address RNase H mutant hybrids being RAD51-independent (C59-C62). OpenEval finds the cytological and functional data sufficient to demonstrate alternative hybrid formation mechanisms. Peer reviewers apply general concerns about S9.6 quantification and specificity controls to these experiments, requiring statistical analysis before full acceptance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "79197c9f-1c8c-40f7-b131-e43fc68ca1e8",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "3b936833-4fae-4896-b4c3-b77fa0085bb6",
+      "peer_result_id": "ac3dc1df-0ec6-4d2e-9bc0-7d0a986bb5bf",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate trans hybrid formation (C6, C64-C75). OpenEval finds the DIP molecular evidence and functional instability data with structural characterization sufficient. Peer reviewers specifically emphasize that direct S9.6 DIP/ChIP detection is especially important for trans experiments and request controls for homology requirements, indicating the evidence needs strengthening.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "01906b77-6eef-44b5-885d-1f579a0dbc06",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "730376d6-fed7-4203-9444-90e230c7bf3f",
+      "peer_result_id": "1cf25709-aea0-4938-b476-32ed0fa9d915",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address Srs2p as anti-hybrid factor (C8, C10, C82-C87). OpenEval finds the Rad51p-dependent hybrid increase in srs2\u0394 with specificity controls sufficient. Peer reviewers request testing other anti-hybrid factors (SEN1, TOP1/2) for comparison and statistical analysis of S9.6 staining, indicating quantification needs improvement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "4af6ecb1-19c5-414a-b83e-ed8e46fc0724",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "b90bd238-2e67-48ac-900e-e7700fbdf211",
+      "peer_result_id": "d6cade61-65d3-4bfb-9e70-c5b6bd8d9701",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address whether Rad51p binding precedes DNA damage (C56-C57). OpenEval finds the \u03b3-H2AX absence and timing data sufficient, though acknowledges alternative explanations. Peer reviewers identify this as central to the major issue of direct versus indirect Rad51p effects and suggest HO cleavage experiments, indicating current evidence insufficient to definitively establish mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "aa941cd3-84a7-4116-af32-e18422d7e7d5",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "ac4d2a36-658a-40b9-be8d-cfac55652796",
+      "peer_result_id": "e2498b5a-871c-4b79-ae23-dc7aa3eca87e",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address Rad51p ChIP at hybrid-forming locus and mechanistic claims (C4, C5, C49-C55). OpenEval finds ChIP data with spatial/temporal controls sufficient, noting C4 involves mechanistic inference. Peer reviewers identify this as 'the major issue,' stating it's impossible to exclude combined effects on recombination and hybrid promotion, requesting acknowledgment of this limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "08707e16-7f9d-4035-93ae-b8fad8983305",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "edf765a0-0c3d-4512-9f7d-23298826c308",
+      "peer_result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address Rad52p effects on hybrids (C76-C78). OpenEval finds the parallel suppression by RAD52 deletion sufficient given known Rad52p-Rad51p relationship. Peer reviewers' concerns about S9.6 quantification and specificity controls (points 1-2) apply to these experiments, requiring statistical analysis and additional validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "0aafc706-b4e1-4779-b1da-6b40eb8529de",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "cc9a4dd5-9a9c-4eea-a4bd-49adbc098233",
+      "peer_result_id": "010758fa-3ef6-4d77-9678-b438a82dbc67",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate RAD51 deletion suppressing hybrids in RNA biogenesis mutants (C2, C31-C38). OpenEval finds converging cytological and functional evidence sufficient. Peer reviewers request statistical analysis of S9.6 immunofluorescence and additional specificity controls (RNase H sensitivity, transcription dependence, nuclear localization), indicating more rigorous quantification needed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "763ba7b0-b6c7-4a0a-89b1-d8f38182b904",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "2ef887b2-2eea-4ee7-bc16-c7504533fffd",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates S9.6 antibody specificity validation (C95-C97) from prior work showing RNase H sensitivity. No corresponding peer review result specifically addresses this, though peer point 2 requests additional S9.6 specificity controls, suggesting they want more validation beyond what's cited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "a95963d2-d4d3-428d-849b-c1e51f8d4215",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "51a648ed-b291-4263-9e59-82bbe554d84c",
+      "peer_result_id": null,
+      "openeval_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates speculative claims about trans hybrid amplification and cancer relevance (C7, C90), finding them uncertain due to limited direct evidence. No corresponding peer review evaluation found, though these speculative claims are not central to the experimental findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    },
+    {
+      "id": "c93fca7b-e0ee-4960-81e7-3d918343bbec",
+      "submission_id": "744530cc-1a36-4ddc-a2e1-8472c28e5865",
+      "openeval_result_id": "a26de5b3-f1c2-437e-9416-dff6cb93f8f3",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates synthesis claims about non-redundant anti-hybrid pathways (C93-C94), finding them well-supported by accumulated evidence. No corresponding peer review evaluation found; peer reviewers focus on experimental validation rather than synthetic conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:51:14.273615Z"
+    }
+  ]
+}

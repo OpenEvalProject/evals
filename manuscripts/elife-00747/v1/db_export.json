@@ -1,0 +1,2155 @@
+{
+  "submission": {
+    "id": "4244113a-0ed2-4526-a65e-d075a358356f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:02:07.802173Z",
+    "updated_at": "2025-10-21T23:02:07.802173Z"
+  },
+  "content": [
+    {
+      "id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary dynamics of cancer in response to targeted combination therapy\n\n## Authors\n\n- Ivana Bozic<sup>1</sup>\n- Johannes G Reiter<sup>3</sup>\n- Benjamin Allen<sup>1</sup>\n- Tibor Antal<sup>5</sup>\n- Krishnendu Chatterjee<sup>3</sup>\n- Preya Shah<sup>6</sup>\n- Yo Sup Moon<sup>6</sup>\n- Amin Yaqubie<sup>7</sup>\n- Nicole Kelly<sup>7</sup>\n- Dung T Le<sup>8</sup>\n- Evan J Lipson<sup>8</sup>\n- Paul B Chapman<sup>7</sup>\n- Luis A Diaz<sup>9</sup>\n- Bert Vogelstein<sup>9</sup>\n- Martin A Nowak<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Program for Evolutionary Dynamics Harvard University Cambridge United States\n2. Department of Mathematics Harvard University Cambridge United States\n3. Institute of Science and Technology Austria Klosterneuburg Austria\n4. Department of Mathematics Emmanuel College Boston United States\n5. School of Mathematics Edinburgh University Edinburgh United Kingdom\n6. Harvard College Cambridge United States\n7. Memorial Sloan-Kettering Cancer Center New York United States\n8. Department of Medical Oncology Johns Hopkins University School of Medicine; The Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins Baltimore United States\n9. Ludwig Center for Cancer Genetics and Therapeutics, Howard Hughes Medical Institute Johns Hopkins Kimmel Cancer Center Baltimore United States\n10. Department of Organismic and Evolutionary Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00747.001 In solid tumors, targeted treatments can lead to dramatic regressions, but responses are often short-lived because resistant cancer cells arise. The major strategy proposed for overcoming resistance is combination therapy. We present a mathematical model describing the evolutionary dynamics of lesions in response to treatment. We first studied 20 melanoma patients receiving vemurafenib. We then applied our model to an independent set of pancreatic, colorectal, and melanoma cancer patients with metastatic disease. We find that dual therapy results in long-term disease control for most patients, if there are no single mutations that cause cross-resistance to both drugs; in patients with large disease burden, triple therapy is needed. We also find that simultaneous therapy with two drugs is much more effective than sequential therapy. Our results provide realistic expectations for the efficacy of new drug combinations and inform the design of trials for new cancer therapeutics. DOI: http://dx.doi.org/10.7554/eLife.00747.001\n\n## Introduction\n\nThe current wave of excitement about targeted cancer therapy (Sawyers, 2004; Sequist et al., 2008; Kwak et al., 2010; Chapman et al., 2011; Gonzalez-Angulo et al., 2011) was initiated by the success of imatinib in the treatment of chronic myeloid leukemia (CML) (Druker et al., 2006; Gambacorti-Passerini et al., 2011). Four decades of research passed between the discovery of the Philadelphia chromosome and the first treatment to target an activated oncogene in a human cancer. Targeted therapies against many different types of cancer are now being developed at a fast pace. These include gefitinib and erlotinib for non-small-cell lung cancer patients with EGFR mutations (Sequist et al., 2008), panitumumab and cetuximab for metastatic colon cancer (Amado et al., 2008), vemurafenib for patients with melanomas harboring BRAF mutations (Chapman et al., 2011), and crizotinib for lung cancer patients with EML4-ALK translocations (Kwak et al., 2010). At present, dozens of other targeted cancer therapies have either been approved or are being evaluated in clinical trials.\n\nAlthough targeted agents have prolonged the lives of cancer patients, clinical responses are generally short-lived. In most patients with solid tumors, the cancer evolves to become resistant within a few months (Amado et al., 2008; Sequist et al., 2008; Gerber and Minna, 2010; Chapman et al., 2011). Understanding the evolutionary dynamics of resistance in targeted cancer treatment is crucial for progress in this area and has been the focus of experimental (Engelman et al., 2007; Corcoran et al., 2010; Bivona et al., 2011; Diaz et al., 2012; Ellis et al., 2012; Misale et al., 2012; Straussman et al., 2012; Wilson et al., 2012; Khorashad et al., 2013) and theoretical studies (Dewanji et al., 2005; Komarova and Wodarz, 2005; Michor et al., 2005, 2006; Haeno et al., 2007; Dingli et al., 2008; Katouli and Komarova, 2010; Lenaerts et al., 2010; Beckman et al., 2012; Bozic et al., 2012). One of the most important conclusions of these studies is that a small number of cells resistant to any targeted agent are always present in large solid tumors at the start of therapy and that these cells clonally expand once therapy is administered. Tumor recurrences are thus a fait accompli when single agents are delivered (Diaz et al., 2012).\n\nHow can one overcome the near-certainty of disease recurrence following therapy with such agents? Conceptually, there are two paths: treat tumors when they are very small, before a sufficient number of mutant cells conferring resistance have developed, or treat tumors with two or more drugs that target different pathways. In reality, the first option is usually not feasible, as clinicians have little or no control over the size of lesions in their patients at presentation. The second option, however, will become possible as more targeted agents are developed. The potential of combination therapy with targeted agents is buttressed by the success of conventional chemotherapeutic agents in leukemias and other cancers (DeVita, 1975) and of combination therapies for infectious diseases such as HIV (Porter et al., 2003). But the potential therapeutic utility of combination therapies targeting different pathways in solid tumors cannot be inferred from these prior studies, as the anatomic and evolutionary characteristics of solid tumors are far different from those of liquid tumors (leukemias) or infectious diseases. In this work, we have formulated a mathematical model to predict the effects of combined targeted therapies in realistic clinical scenarios and attempted to answer the question posed at the beginning of this paragraph.\n\n## Results\n\nOur model is based on a multitype branching process (see \u2018Materials and methods\u2019). Similar mathematical modeling has successfully predicted the dynamics of acquired resistance, including the timing of treatment failure, in colorectal cancer patients treated with the EGFR inhibitor panitumumab (Diaz et al., 2012), and has led to specific recommendations for combination therapies to treat CML (Komarova et al., 2009; Katouli and Komarova, 2010). Our current work builds on these previous studies by using recent advances in the mathematical theory of branching processes (Antal and Krapivsky, 2011), which enable us to obtain results that are exact in the biologically relevant limit of many tumor cells and small mutation rate.\n\nTo obtain key parameters for our model, we have studied the dynamics of 68 index lesions in 20 melanoma patients receiving the BRAF inhibitor vemurafenib. The data from six patients that represented distinct patterns of responses are shown in\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00747/elife-00747-fig1-v1.jpg)\n\n**Figure 1.:** Patients were treated with the BRAF inhibitor vemurafenib. Patients P1 and P2 achieved a complete response. Patient P3 had stable disease. Patients P4, P5, and P6 had partial responses. The minimal detection size (indicated by discontinuous red line) was assumed to be \u224863 \u00d7 106 cells.DOI: http://dx.doi.org/10.7554/eLife.00747.00310.7554/eLife.00747.004Figure 1\u2014source data 1.DOI: http://dx.doi.org/10.7554/eLife.00747.004\n\nFor 21 lesions in our vemurafenib dataset, two pretreatment measurements were available. Using these data, we calculate the average net growth rate of these lesions to be 0.01 per day, which is consistent with previous reports (Friberg and Mattson, 1997; Eskelin et al., 2000). The estimated average time between cell divisions in the absence of cell death in melanoma cells is 7 days (Rew and Wilson, 2000), implying a birth (cell division) rate of b = 0.14 per day. We set this as the typical birth rate, and additionally explore birth rates that correspond to a wide range of 1\u201314 days between cell divisions (Supplementary file 3). To achieve the observed net growth rate, we set the cell death rate to d = b \u2212 0.01 (typical d = 0.13). We assume that these birth and death rates are valid for all cell types prior to treatment. For simplicity, we assume that these birth and death rates remain constant for all cell types prior to treatment, and neglect variations in the growth rate due to spatial and metabolic constraints in solid tumors (Bozic et al., 2012).\n\nA given cancer therapy will reduce the birth rate and/or increase the death rate of tumor cells. A cell type is defined as sensitive if the treatment in question would cause its death rate to exceed its birth rate; otherwise, it is resistant. The key parameters describing a particular combination treatment are its effects on the birth and death rates of cells and the number of point mutations that have the potential to confer resistance. Consider a treatment with two drugs, 1 and 2. We denote by n1 (respectively, n2) the number of point mutations that have the potential to confer resistance to drug 1 alone (respectively, drug 2 alone). We denote by n12 the number of point mutations that have the potential to confer resistance to both drug 1 and drug 2 (cross-resistance mutations). We assume that drugs in a combination treatment are given at concentrations tolerable by patients, and define the numbers of resistance mutations (n1, n2, n12) relative to these concentrations (Katouli and Komarova, 2010).\n\nA crucial quantity for the effects of combination therapy is the expected number, X, of resistant cells at the start of treatment in a lesion containing M cells. From the dynamics of our branching process model (see Supplementary file 1), we obtainX\u2248M[n12\u03bc+(n1n2+n122(n1+n2\u2212n12))\u03bc2].\n\nHere \u03bc=uslog(Ms) (log denotes the natural logarithm), where s = 1 \u2212 d/b is the survival probability of the branching process initiated with a single cell and u is the point mutation rate, \u223c10\u22129 for most cancers. As \u00b5 is small, this formula can be further simplified. If there is at least one possible mutation that could in principle confer resistance to both drugs, n12 \u2265 1, then X \u2248 M n12 \u00b5. In this case, the expected number of cells resistant to both drugs is independent of the numbers of mutations, n1 and n2, that have the potential to confer resistance to each individual drug. Intuitively, this means that tumor cells are much more likely to become resistant to dual therapy through the occurrence of one mutation conferring resistance to both drugs simultaneously than through sequential mutations conferring resistance to each drug separately. If there is no mutation that could confer resistance to both drugs simultaneously (no cross-resistance), then n12 = 0 and we obtain X \u2248 M n1n2 \u00b52. This quantity scales with the square of the point mutation rate, so the number of resistant cells in a tumor will be much smaller than for the case n12 > 0. In general, the expected number of cells resistant to combination therapy with k drugs, with no cross-resistance, is X \u2248 M n1n2 \u2026 nk \u00b5k (proof in Supplementary file 1).\n\nWe emphasize, however, that resistance is the outcome of random mutation, division, and death events, and consequently may arise in one lesion but not in another, even if these lesions are otherwise identical. We therefore also obtain formulas for the probability that resistance to combination therapy is present at the time of detection. This probability can be computed as pres=1\u2212p1p2. Here, p1 is the probability that there is no resistance at detection that arose in a single mutational step, due to one of the n12 possible cross-resistance mutations. p2 is the probability that no such resistance arises in two mutational steps. These probabilities can be expressed as follows (proofs in Supplementary file 1, Section 4):p1=exp(Mun12log(s)1\u2212s)p2\u2248exp[Mu2(2n1n2+n12(n1+n2))log(s)log(Ms)s(1\u2212s)].\n\nAs above, s = 1 \u2212 d/b is the survival probability of the branching process initiated with a single cell. The quantity 2n1n2 + n12(n1 + n2) in the expression for p2 represents the number of possible two-step mutational paths to dual resistance.\n\nWe turn now to the dynamics of the treatment response. Once treatment starts, sensitive cells decline, but resistant cells continue to grow. We assume that resistant cells maintain the pretreatment birth and death rates, b and d, respectively, during treatment. To obtain estimates for the birth rate b\u2032 and death rate d\u2032 of sensitive cells during treatment, we calculate that the 68 lesions in our dataset declined at median rate b\u2032 \u2212 d\u2032 = \u22120.03 per day (\u22120.01 and \u22120.07 being 10th and 90th percentile, respectively). Thus, we set the typical death rate of sensitive cells during treatment to d\u2032 = b\u2032 + 0.03, and additionally explore cases when treatment is less (d\u2032 = b\u2032 + 0.01) or more effective (d\u2032 = b\u2032 + 0.07). As a default in our simulations, we suppose that treatment affects only the death rate (b\u2032 = b), but our mathematical analysis applies also to the case that treatment affects the birth rate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00747/elife-00747-fig2-v1.jpg)\n\n**Figure 2.:** The tumor grows exponentially until a certain detection size, M, is reached, at which point treatment is initiated. The number of point mutations that could in principle confer resistance to monotherapy is n = 50. For dual therapy, the number of point mutations that could confer resistance to drugs 1 and 2 separately is given by n1 = 50 and n2 = 50. The number of point mutations that could confer resistance to both drugs simultaneously is given by n12. The point mutation rate was assumed to be u = 10 and the rate of cell division \u22129b = 0.14 per day and is unaffected by treatment. The rate of cell death before treatment is d = 0.13 per day; it is increased to d\u2019 for sensitive cells during treatment. (A)\u2013(C) For clinically detectable sizes (M = 1010, 109, 108, depending on the location of the tumors and the detection methods used), monotherapy leads to a temporary shrinkage of the tumor but is always followed by tumor regrowth. (D) Due to stochastic fluctuations the few resistant cells present at the start of treatment go extinct and the lesion is eradicated. (E) Treatment leads to a temporary shrinkage of the tumor followed by regrowth. (F) The tumor decreases slowly in response to dual therapy, but resistant cells eventually evolve and cause treatment failure.DOI: http://dx.doi.org/10.7554/eLife.00747.005\n\nThe results predicted to occur with dual therapy are shown in Figure 2D\u2013F. Here, we also assume that there are 50 mutations that have the potential to confer resistance to either drug alone, but also that there is at least one mutation that can confer resistance to both drugs simultaneously. Intuitively, one might imagine that the existence of even a single cell resistant to both drugs at the start of therapy will automatically result in treatment failure. However, our results show that this is not necessarily true, and that the response depends on the size of the lesion, the number of cross-resistant cells, and the effects of the therapy on the balance between cell birth and cell death. Three examples illustrate these points. In Figure 2D, there is a small number of cells resistant to both drugs at the initiation of dual therapy, but these cells are lost by stochastic drift and the lesion is eradicated. In Figure 2E, there is a greater, but still relatively small number (\u223c100), of cells resistant to both drugs. The lesion shrinks at first, but eventually progresses due to preexisting cross-resistance mutations within it. In the third lesion, the few cells resistant to both drugs at the initiation of therapy are lost to stochastic drift, but the cytolytic effects of the drug combination are less pronounced than in the other two cases (d\u2019 = 0.15 instead of 0.17 or 0.21). The relatively slow decrease in lesion size enables the generation of de novo resistance mutations during treatment and the lesion eventually recurred (Figure 2F).\n\nIn summary, treatment failure can be caused either by the preexistence of resistance to both drugs in a small number of tumor cells (Figure 2E) or the emergence of resistant cells during treatment (Figure 2F). Taking both of these possibilities into account, the probability, perad, that dual therapy eradicates a lesion containing M cells at the start of treatment is given by(1)perad=p1\u2191p1\u2193p2\u2191p2\u2193.\n\np1\u2191 is the probability that no 1-step resistant lineage arises (and survives) prior to treatment. p1\u2193 is the probability that no 1-step resistant lineage arises (and survives) during treatment. p2\u2191 is the probability that no 2-step resistant lineage arises (and survives) prior to treatment. p2\u2193 is the probability that no 2-step resistant lineage arises (and survives) during treatment. Here, \u2018steps\u2019 refers to the number of mutations (one or two) needed to achieve dual resistance, and \u2018lineage\u2019 refers to the descendants of a single cell that has achieved dual resistance via a particular mutational path. The therapy is successful if there is no resistant lineage arising in any of these four scenarios; since these are independent events, the overall success probability is obtained by multiplying the corresponding probabilities as shown in equation (1). The probabilities that no 1-step resistant lineages arise before (p1\u2191) or during treatment (p1\u2193) and survive are given by Komarova and Wodarz (2005)p1\u2191=exp\u2009(\u2212Mun12)and Michor et al. (2006)p1\u2193=exp(Mun12ss').\n\nHere s = 1 \u2212 d/b as above, and s\u2032 = 1 \u2212 d\u2032 /b\u2032, where b\u2032 and d\u2032 are birth and death rates of cells sensitive to at least one drug during treatment (note that s\u2019<0). The probabilities that no 2-step resistant lineages arise before (p2\u2191) or during (p2\u2193) treatment and survive can be calculated as:p2\u2191=exp[Mu2s'\u2212sss'(n1(n2+n12)\u00a0log(1sM+u(n2+n12)s'\u2212sss')\u00a0+n2(n1+n12)log(1sM+u(n1+n12)s'\u2212sss'))]andp2\u2193=exp(\u2212Mu2(2n1n2+n12(n1+n2))ss'2).\n\nThe proofs of these results are provided in\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00747/elife-00747-fig3-v1.jpg)\n\n**Figure 3.:** A single mutation conferring cross-resistance to both drugs (n12 = 1) can prohibit any hope for a successful dual therapy. Solid curves show analytical results for dual therapy and dashed curve shows analytical results for a typical monotherapy, both are calculated using equation (1). Markers (square, triangle, circle, diamond) indicate simulation results (averages of 106 runs). Parameter values: birth rate b = 0.14, death rate d = 0.13, death rate for sensitive cells during treatment d\u2019 = 0.17, point mutation rate u = 10\u22129.DOI: http://dx.doi.org/10.7554/eLife.00747.006\n\nAlthough modeling of single neoplastic lesions is the norm in theoretical studies, most patients with advanced cancers have multiple lesions and curing a patient requires eradication of all lesions. Equation (1) can be used to evaluate which combination treatments will be successful in typical patients with multiple metastatic lesions.\n\nTo determine the total extent of disease in typical patients who enroll for clinical trials, we quantified all radiographically detectable metastases in 22 such patients: 7 with pancreatic ductal adenocarcinomas, 11 with colorectal carcinomas, and 6 with melanomas\u2014a different cohort than that depicted in Figure 1, in which only index lesions (those easiest to measure) were evaluated. The number of metastatic lesions in the 22 patients described in Table 1 ranged from 1 to 30, and their total tumor burden ranged from 9 \u00d7 108 to 3 \u00d7 1011 cells (see Supplementary file 2).10.7554/eLife.00747.007Table 1.Probability of treatment failure for combination therapy in patientsDOI: http://dx.doi.org/10.7554/eLife.00747.007PatientPrimary tumor typeNumber of metastasesTotal tumor burden (number of cells)Probability of treatment failureMonotherapyDual therapy: n12 = 1Dual therapy: n12 = 0N1Pancreas182.6 \u00d7 1011110.283N2Colon252.3 \u00d7 1011110.26N3Melanoma261.7 \u00d7 1011110.203N4Melanoma301.4 \u00d7 1011110.172N5Colon211.0 \u00d7 1011110.128N6Melanoma89.8 \u00d7 1010110.12N7Colon259.1 \u00d7 1010110.112N8Pancreas87.4 \u00d7 1010110.092N9Pancreas236.4 \u00d7 1010110.08N10Pancreas55.5 \u00d7 1010110.069N11Colon145.4 \u00d7 1010110.068N12Rectal234.8 \u00d7 1010110.061N13Melanoma94.1 \u00d7 1010110.052N14Pancreas134.1 \u00d7 1010110.051N15Pancreas83.3 \u00d7 1010110.042N16Melanoma72.2 \u00d7 1010110.028N17Melanoma102.1 \u00d7 1010110.027N18Colon42.0 \u00d7 1010110.026N19Melanoma91.8 \u00d7 1010110.023N20Colon31.6 \u00d7 10910.8810.002N21Melanoma211.3 \u00d7 10910.8280.002N22Pancreas18.5 \u00d7 10810.6770.001For monotherapy, we assume that 50 point mutations (n = 50) can in principle confer resistance to the drug. With dual therapy, we assume that 50 point mutations can in principle confer resistance to each drug individually (n1 = n2 = 50). Two scenarios are modeled: in the first, there is one mutation that can in principle confer resistance to both drugs (i.e., cross-resistance, n12 = 1). In the other case, there are no possible mutations that can confer resistance to both drugs (n12 = 0). Parameter values: birth rate, b = 0.14, death rate, d = 0.13, death rate for sensitive cells during treatment, d\u2032 = 0.17, point mutation rate u = 10\u22129.Colon: colonic adenocarcinoma; Rectal: rectal adenocarcinoma; Pancreas: pancreatic ductal adenocarcinoma.\n\nFor each of these 22 patients, we used equation (1) to calculate the probability that monotherapy or dual therapy would eradicate all the patients\u2019 lesions. We find that monotherapy will fail in all 22 patients (Table 1 and Supplementary file 3), as expected from the simulations in Figure 2A\u2013C and from clinical experience. If there is even one possible mutation that can in principle confer resistance to both drugs, then our model shows that dual therapy has also only a small chance of curing patients, even those with the smallest tumor burden. In our cohort of 22 patients, none are expected to be cured under these circumstances (Table 1). Only if there are no potential mutations that can confer cross-resistance will dual therapy be successful in eradicating all lesions. In the cohort described in Table 1, we calculate that eight patients (those with the smallest tumor burden) would have >95% probability of cure. Those with the largest tumor burden would still have a >20% probability of tumor recurrence. Additional simulations show that therapy with three agents will also not cure patients if there is even one mutation that can confer resistance to all three agents. Similar conclusions hold if we vary parameter values within a reasonable range (Supplementary file 3). We note that in patients whose tumors have high cell turnover (time between cell divisions of 1 day, corresponding to b = 1), even dual therapy with no cross-resistance mutations would be expected to fail in 37% of patients described in Table 1 (Supplementary file 3).\n\nGraphical representations of the simulated responses of two patients with multiple metastatic lesions are shown in\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00747/elife-00747-fig4-v1.jpg)\n\n**Figure 4.:** (A) Depiction of all 18 detectable metastases in patient N1, who had a particularly heavy tumor burden (scale 1:4). (B) Simulated treatment of patient N1, comparing monotherapy with n = 50 resistance mutations and dual therapy with n1 = n2 = 50 resistance mutations to the individual drugs and one (n12 = 1) or no (n12 = 0) cross-resistance mutations to both drugs. (C) Depiction of all 14 detectable metastases in patient N11, who had a more typical tumor burden (scale 1:4). (D) Simulated treatment of patient N11. Parameter values for simulations in (B) and (D): birth rate b = 0.14; death rate d = 0.13; death rate for sensitive cells during treatment d\u2032 = 0.17; point mutation rate u = 10\u22129.DOI: http://dx.doi.org/10.7554/eLife.00747.008\n\nIn current clinical practice, it is common to administer targeted agents sequentially: once relapse occurs, a second, often experimental, agent is administered. The model described above can also be used to predict the relative effectiveness of sequential vs simultaneous therapies of a single lesion with two drugs. When there is a possibility of a single mutation conferring resistance to both drugs, sequential combination therapy will \u2018always\u2019 fail. In \u223c74% of lesions, the failure is due to mutations that were present prior to the treatment with the first drug, whereas in \u223c26% of the lesions, failure is due to the development of cells resistant to drug 2 during treatment with drug 1 (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00747/elife-00747-fig5-v1.jpg)\n\n**Figure 5.:** (A) If there is even a single mutation that confers cross-resistance to both drugs (n12 = 1), then sequential therapy will fail in all cases. In 73.7% of the cases, this failure is due to the exponential growth of fully resistant cells that were present at the start of treatment. In the remaining 26.3% of cases, the failure is due to resistance mutations that developed during therapy with the first drug. (B) With simultaneous therapy, 26.3% of patients can be cured under the same circumstances. In the remaining patients (73.7%), cross-resistant mutations existed prior to the therapy and their expansive growth will ensure treatment failure whether treatment is simultaneous or sequential (see Figure 5\u2014figure supplement 1 for further details). (C) and (D) If the two drugs have no resistance mutations in common (n12 = 0), then simultaneous therapy is successful with a probability of 99.9% while sequential therapy still fails in all cases.DOI: http://dx.doi.org/10.7554/eLife.00747.009\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00747/elife-00747-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Two drugs are available for treatment where n1 = 50 and n2 = 50 point mutations confer resistance to each drug individually and one mutation confers resistance to both drugs simultaneously (n12 = 1). (A) A typical example of a tumor relapsing in the second wave of panel (A) in Figure 5. The few fully resistant cells go extinct due to stochastic fluctuations at the start of treatment. The cells resistant only to drug 1 produce cross-resistant cells during the treatment with the first drug. The cells resistant to both drugs received sequentially two mutations. (B) A typical example of a tumor relapsing in the first wave of panel (A) in Figure 5. The fully resistant cells are already present at the start of treatment. These cells received the cross-resistance mutation and are therefore immediately resistant to both drugs. The exponential growth of these fully resistant cells cause the relapse; their growth is unaffected by whether treatment is simultaneous or sequential. Parameter values: birth rate b = 0.14, death rate d = 0.13, death rate for sensitive cells during treatment d' = 0.17, point mutation rate u = 10\u22129, detection size of tumor (for start of treatment and relapse) M = N = 109 cells.DOI: http://dx.doi.org/10.7554/eLife.00747.010\n\nOne of the most important aspects of the cancer stem cell hypothesis revolves around therapeutic resistance. Evidence to date does not indicate that cancer stem cells are innately resistant to either single drugs or drug combinations. However, the precise proportion of cancer stem cells (among all cancer cells) has a dramatic effect on the development of resistance. This effect can be studied using our model if we use the number of cancer stem cells as an effective population size in our formulas and adjust other parameters to account for the stem cell dynamics (Tomasetti and Levy, 2010) (i.e., the birth rate should correspond to the rate of symmetric renewal, the rate of symmetric differentiation should be added to the death rate, and an effective mutation rate for stem cells should be introduced to account for mutations that occur during asymmetric division). For example, if cancer stem cells represent only 0.1% of cancer cells, then the development of resistance to single agents or combinations is roughly 0.1% as likely as if 100% of the cancer cells have the capacity to repopulate the tumor. The fraction of cancer stem cells appears to be this low in CML, perhaps explaining the remarkable success of imatinib (Michor et al., 2005). In solid tumors, however, the fraction of cancer stem cells seems much higher, usually higher than 5% and in some cases close to 100% (Shackleton et al., 2009). This issue is further complicated by the fact that the situation is plastic, with non-stem cells converting to cancer stem cells under certain conditions (Gupta et al., 2009). As better approaches to quantify cancer stem cells in solid tumors become available, our estimates of the likelihood of therapeutic success will be improved.\n\nIf resistance has a fitness cost, then we expect a smaller number of resistant cells at the start of treatment and correspondingly a higher chance of treatment success. We used computer simulations to verify our results in the case when there is a cost for resistance, by assuming that each resistance mutation decreases the net growth rate of the cell by up to 10%. The results are shown in Table 2. For combination therapies with drugs that have resistance mutations in common, the probability of eradicating a lesion is only marginally affected by costly resistance. For dual therapies with no cross-resistance mutations, treatment has a high chance of eradicating all but the largest lesions, whether or not resistance is costly. In the case of large lesions with high cell turnover rates (the case in which even dual therapies with no cross-resistance might fail), costly resistance increases the chance of treatment success. For example, if each resistance mutation decreases the net growth rate of cells by 10%, the probability that dual therapy with no cross-resistance mutations will eradicate a lesion of size 1011 in which cells divide on average every day is 68% (compared with 47% in the case of neutral resistance).10.7554/eLife.00747.011Table 2.Simulation results for the probability of treatment failure when resistance is costlyDOI: http://dx.doi.org/10.7554/eLife.00747.011Dual therapy:Number of cellsBirth rateProbability of treatment failuren1 = n2n12c = 0%c = 1%c = 5%c = 10%5001090.140.00.00.00.050010910.010.010.010.05011090.140.740.730.720.750110910.740.740.720.750010110.140.120.110.080.06500101110.530.510.420.3250110110.141.01.01.01.0501101111.01.01.01.0Each resistance mutation reduces the net growth rate by a factor c via a decrease of the birth rate b. Parameter values are death rate, d = b \u2212 0.01, death rate for sensitive cells during treatment, d\u2019 = b + 0.03, point mutation rate, u = 10\u22129. The simulation results are averages over 106 runs per parameter combination.\n\nSome therapies may directly eliminate tumor cells (d\u2032 > d), whereas others may impede their division (b\u2032 < b). Our formulas account for both of these possibilities. Overall, the rate b\u2032 \u2212 d\u2032 of tumor decline is of primary importance, and whether this is achieved by eliminating cells or suppressing division has only a minor effect on treatment outcomes. For example, consider a dual therapy with n1 = n2 = 50, n12 = 1, applied to a lesion of size M = 109, with other parameters as inferred from our dataset. If this therapy shrinks the tumor at rate \u22120.03 per day by increasing cell death, the eradication probability is 26%. If the therapy instead suppresses division, this probability increases to 29%, because there are fewer chances for resistance mutations during treatment.\n\nWhile our typical parameter values are derived from the melanoma dataset, our analytical results can accommodate parameter values from any other type of cancer, once they become available. Furthermore, our results are qualitatively robust across a wide range of birth and death rates (Supplementary file 3). The parameters with the strongest effects on the success of combination treatments\u2014apart from the number of cross-resistance mutations\u2014are lesion sizes and point mutation rate. Thus, we expect that combination treatments will be more effective in cancers with small fractions of tumor stem cells (small effective population size of lesions) and less effective in cancers with significantly increased point mutation rates.\n\n## Discussion\n\nOur conclusions are highly relevant for the expanding development and use of targeted agents for cancer therapy. Most importantly, they show that even if there is one genetic alteration within any of the 6.6 billion base pairs present in a human diploid cell that can confer resistance to two targeted agents, therapy with those agents will not result in sustained benefit for the majority of patients with advanced disease. The same result is obtained with triple therapy; if there is the possibility of a mutation conferring cross-resistance to three drugs, lesions of the size commonly observed in patients with advanced cancers will always recur. Similar conclusions were reached by Komarova et al. (2009), who showed that a combination of three current targeted drugs for CML will not be beneficial over a combination of two such drugs due to cross-resistance. Our formulas could be used to develop an optimum in vitro assay to detect the existence of cross-resistance mutations for a given drug combination.\n\nThe development of drugs that act through distinct pathways will therefore be essential for the success of combination therapies in the clinic. Although this seems feasible in principle, there are a number of observations suggesting that it will be difficult in practice. For example, it has been shown that the increased expression of growth factors (such as hepatocyte growth factor) can confer resistance to a variety of drugs that inhibit kinases functioning through different pathways (Straussman et al., 2012; Wilson et al., 2012). Moreover, it is well known that mutations in several different genes, including those encoding ABC transporters, can confer resistance to many different drugs (Lavi et al., 2012). Drugs that have very different chemical structures, in addition to distinct mechanisms of action, may be required to circumvent these resistance mechanisms.\n\nOur results are not readily applicable to therapies that rely on the immune destruction of tumors (Kirkwood et al., 2012), such as those employing CTLA-4 (Hodi et al., 2010), PD1 (Topalian et al., 2012), or CD19-CARs (Grupp et al., 2013). This promising line of therapy relies on an ongoing battle between cancer cells and the immune system. The immune system, unlike small molecule compounds, can replicate and evolve, and the factors underlying therapeutic success or failure are not sufficiently understood to allow useful modeling at this point. Once the mechanisms underlying the failures of immune modulators become more apparent, it will be important to try to understand why long-term control of disease is more common with these therapies than with small molecule drugs.\n\nOur results on sequential vs simultaneous therapy with two or more agents (Figure 5) are in agreement with previous results (Katouli and Komarova, 2011) and have immediate practical implications even while new combinations are being developed. Sequential administration of targeted agents is often used to treat patients, for a variety of medical and economic reasons. Our data show that this sequential administration precludes any chance for cure\u2014even when there are no possible mutations that can confer cross-resistance (Figure 5C). And when there are potential mutations conferring cross-resistance to two or more agents, simultaneous administration offers some hope for cure while there is no hope with sequential therapy (Figure 5A). The realization of the advantages of simultaneous vs sequential dual therapy will hopefully stimulate efforts to combine agents much earlier in the drug development process.\n\n## Materials and methods\n\n## Model\n\nWe model tumor growth and evolution as a continuous time multitype branching process (Athreya and Ney, 1972; Goldie and Coldman, 1998; Komarova and Wodarz, 2005). In the case of two drugs, there are four possible types: 00, 01, 10, and 11, where zeros indicate sensitivity to a drug and ones indicate resistance. For example, type 01 is sensitive to drug 1 and resistant to drug 2.\n\nOur model includes two phases: pretreatment and treatment. The pretreatment phase is initiated with a single fully sensitive cell (type 00 for two drugs). During this phase, all cell types reproduce at rate b and die at rate d. The offspring of a type 00 cell has probability un1 of being type 10, un2 of being type 01, un12 of being type 11, and otherwise is of type 00. The offspring of a type 10 cell has probability u (n2 + n12) of being of type 11 and otherwise is of type 10; similar probabilities apply to type 01. Type 11 cells produce only type 11. These formulas generalize in straightforward manner to combination therapy with three or more drugs.\n\nThe pretreatment phase ends, and the treatment phase begins, when there are a total of M cells. During the treatment phase, all cell types that are sensitive to one or more drugs have birth rate b\u2019 and death rate d\u2019; fully resistant cells maintain the pretreatment birth and death rates. Mutation probabilities are unchanged.\n\n## Analysis\n\nOur mathematical analysis of dual therapy is based in part on a recently discovered exact solution to the two-type branching process (Antal and Krapivsky, 2011). Detailed proofs of all results are provided in Supplementary file 1.\n\n## Computer simulations\n\nWe use Monte Carlo computer simulations to confirm our analytical results and improve our understanding of the evolutionary dynamics during cancer treatment. The developed tool is an enhanced version of TTP (Tool for Tumor Progression) where the discrete time branching processes are replaced by continuous time branching processes (Reiter et al., 2013). Moreover, the new version also simulates tumor dynamics during treatment with several drugs. The simulations implement a multitype birth\u2013death branching process using the specified parameter values. For cell subpopulations with less than 104 cells, the process is simulated exactly; for larger subpopulations, a deterministic (exponential growth) approximation is used in the interest of efficiency. Within this deterministic approximation, the timing of appearances of new mutations is simulated using an adapted version of the Gillespie algorithm (Gillespie, 1977). Between 106 and 108 runs are used for each parameter combination.\n\nTo study the consequences of costly resistance, we suppose that each resistance mutation reduces the cell division rate such that the net growth rate is decreased by a factor c representing the metabolic costs of resistance. For example, cells with two resistance mutations divide at rate (b \u2212 d)(1 \u2212 c)2 + d.\n",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carl T Bergstrom, University of Washington , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00747.015](https://doi.org/10.7554/eLife.00747.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cEvolutionary dynamics of cancer in response to targeted combination therapy\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 4 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Carl Bergstrom (Reviewing editor) and Rustom Antia (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers all found the paper to be an important contribution based on elegant modeling work. They raised the following points for consideration:\n\n1) The authors state that the models explored in the context of previous studies are not applicable to describe solid tumors. It would help the reader if it were then explained in what way the new model differs from the old ones, and how its design helps to handle solid tumors. To this end, it would be helpful to discuss how the spatial structure of the tumor makes for non-homogenous growth and death rates and so on, and the limitations of the branching process model for dealing with these complexities.\n\n2) The authors should consider moving supplementary figure 3 into the main text. One referee feels that this would greatly enhance the impact of the paper by making the result immediately and intuitively clear.\n\n3) The clinical dataset used to generate the birth and death rates is from BRAF mutant melanoma. What is the evidence that the results can be extrapolated to all cancers?\n\n4) The authors should comment on whether/how their modeling studies apply to the recent reports of long-term responses (cures?) with single agent immunotherapy (CTLA-4, PD1, CD19-CARs).\n\n5) The authors make the assumption that the time between cell doublings is 7 days based on a single reference (Cell production rates in human tissues and tumours and their significance. Part II: clinical data. European journal of surgical oncology: the journal of the European Society of Surgical Oncology and the British Association of Surgical Oncology; doi: 10.1053/ejso.1999.0907). This is a difficult measurement to make and could be inaccurate. How would the predictions from the model change if this time were much different?\n\n6) Near the end of the manuscript the authors make the point that the probability of cure with one or two drugs is greatly increased in tumors where the only cells that contribute to relapse are rare cancer stem cells. This is a logical and important distinction but seems to be quickly dismissed as not relevant clinically, with the possible exception of CML. Since the cancer stem cell question remains murky, this deserves more comment.\n\n7) All of the calculations are based on tumor cell number (for obvious reasons) but tumor size (on CT scan) is used by clinicians. We encourage the authors to include both measurements on relevant figures, perhaps in the form of a conversion scale, to make it easier for clinicians to appreciate the clinical relevance of the modeling predictions.\n\n8) The authors may wish to consider the presentation of the mathematical results, which currently are spread among several different parts of the manuscript and supplementary information. Given that eLife doesn't impose constraints on length, we wonder whether it would be possible to better structure the manuscript so that the reader does not have to flip between so many different sections to follow the story. This is not to say that the separation is without merit\u2013the main story is well told with the mathematical details set elsewhere. But it seems worth at least considering whether the supplementary information could be consolidated.\n",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "85097145-afb7-4172-a61d-06fd83ddace4",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C1",
+      "claim": "In solid tumors, targeted treatments can lead to dramatic regressions, but responses are often short-lived because resistant cancer cells arise.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In solid tumors, targeted treatments can lead to dramatic regressions, but responses are often short-lived because resistant cancer cells arise.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This statement reflects established scientific consensus about targeted cancer therapy outcomes and is supported by the citations provided in the introduction section.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "e1c0a1d2-0322-4e94-a7e9-f06dac48267f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C2",
+      "claim": "The major strategy proposed for overcoming resistance is combination therapy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The major strategy proposed for overcoming resistance is combination therapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established scientific consensus in the field of cancer therapeutics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "047d2f8a-b39e-4478-988e-8625267d019e",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C3",
+      "claim": "Dual therapy results in long-term disease control for most patients, if there are no single mutations that cause cross-resistance to both drugs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We find that dual therapy results in long-term disease control for most patients, if there are no single mutations that cause cross-resistance to both drugs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a primary finding from the mathematical model applied to patient data, supported by computational analysis and simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "832b1c8f-948e-4295-8e0b-93d1f472df0f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C4",
+      "claim": "In patients with large disease burden, triple therapy is needed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in patients with large disease burden, triple therapy is needed",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is derived from the mathematical model's predictions based on tumor burden data from patients.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "97d47f8a-ae11-4431-9ecf-d49ad83f485f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C5",
+      "claim": "Simultaneous therapy with two drugs is much more effective than sequential therapy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We also find that simultaneous therapy with two drugs is much more effective than sequential therapy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This finding is supported by mathematical modeling results shown in Figure 5 and analytical calculations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "2af3f82c-325b-48da-9d69-172b0b3149c5",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C6",
+      "claim": "Imatinib initiated the current wave of excitement about targeted cancer therapy through its success in treating chronic myeloid leukemia (CML).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The current wave of excitement about targeted cancer therapy (Sawyers, 2004; Sequist et al., 2008; Kwak et al., 2010; Chapman et al., 2011; Gonzalez-Angulo et al., 2011) was initiated by the success of imatinib in the treatment of chronic myeloid leukemia (CML) (Druker et al., 2006; Gambacorti-Passerini et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This historical claim is supported by citations to published literature documenting imatinib's success.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "6f265747-c798-4c13-9f65-f0d56e260776",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C7",
+      "claim": "Four decades of research passed between the discovery of the Philadelphia chromosome and the first treatment to target an activated oncogene in a human cancer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Four decades of research passed between the discovery of the Philadelphia chromosome and the first treatment to target an activated oncogene in a human cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a historical fact about the timeline of cancer research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "fa5ea700-3aea-446b-8f05-faca8b28dc2d",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C8",
+      "claim": "In most patients with solid tumors, the cancer evolves to become resistant within a few months.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In most patients with solid tumors, the cancer evolves to become resistant within a few months (Amado et al., 2008; Sequist et al., 2008; Gerber and Minna, 2010; Chapman et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by multiple citations to clinical studies documenting resistance development timelines.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "8e5fedf9-318c-4587-ab69-a30159764381",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C9",
+      "claim": "A small number of cells resistant to any targeted agent are always present in large solid tumors at the start of therapy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One of the most important conclusions of these studies is that a small number of cells resistant to any targeted agent are always present in large solid tumors at the start of therapy",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is drawn from previous theoretical and experimental studies cited in the text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "4dab8085-8997-4167-a077-0b0015d5a94a",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C10",
+      "claim": "Resistant cells clonally expand once therapy is administered.",
+      "claim_type": "EXPLICIT",
+      "source_text": "these cells clonally expand once therapy is administered",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is supported by cited studies and represents established understanding of resistance mechanisms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "57a2b81f-6d98-48a6-8c99-4dc0de6d0f3a",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C11",
+      "claim": "Tumor recurrences are a fait accompli when single agents are delivered.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Tumor recurrences are thus a fait accompli when single agents are delivered (Diaz et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is supported by citation to a study and follows from the previous claims about preexisting resistance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "62d7311b-7d4d-42c5-bd56-314e40f41538",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C12",
+      "claim": "The study analyzed 68 index lesions in 20 melanoma patients receiving vemurafenib.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To obtain key parameters for our model, we have studied the dynamics of 68 index lesions in 20 melanoma patients receiving the BRAF inhibitor vemurafenib.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the actual dataset collected and analyzed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "050c4393-a820-40b3-a6ab-0adb0702ef70",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C13",
+      "claim": "The average net growth rate of melanoma lesions is 0.01 per day.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using these data, we calculate the average net growth rate of these lesions to be 0.01 per day, which is consistent with previous reports (Friberg and Mattson, 1997; Eskelin et al., 2000).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is calculated from the study's dataset and validated against previous literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ca05e2ea-6605-427d-a621-1270232eb246",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C14",
+      "claim": "The estimated average time between cell divisions in melanoma cells is 7 days.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The estimated average time between cell divisions in the absence of cell death in melanoma cells is 7 days (Rew and Wilson, 2000)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This parameter is obtained from a cited reference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a4346291-9a9b-4503-a85d-adbe9fcb8154",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C15",
+      "claim": "The birth (cell division) rate of melanoma cells is b = 0.14 per day.",
+      "claim_type": "EXPLICIT",
+      "source_text": "implying a birth (cell division) rate of b = 0.14 per day",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the time between cell divisions (1/7 days \u2248 0.14 per day).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "aa9f31ba-075c-47eb-8261-bf93179d3358",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C16",
+      "claim": "The expected number of resistant cells at treatment start in a lesion with M cells is X \u2248 M n12 \u00b5 when n12 \u2265 1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If there is at least one possible mutation that could in principle confer resistance to both drugs, n12 \u2265 1, then X \u2248 M n12 \u00b5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is derived mathematically from the branching process model as shown in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "bbc81c2f-a566-42db-af57-45760c6009eb",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C17",
+      "claim": "When there is at least one cross-resistance mutation possible, the expected number of cells resistant to both drugs is independent of the numbers of mutations that confer resistance to each individual drug.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this case, the expected number of cells resistant to both drugs is independent of the numbers of mutations, n1 and n2, that have the potential to confer resistance to each individual drug.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This follows from the mathematical formula X \u2248 M n12 \u00b5, which does not depend on n1 or n2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "436b97c4-6e94-4f6b-a9cc-613af5ae913f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C18",
+      "claim": "Tumor cells are much more likely to become resistant to dual therapy through one mutation conferring resistance to both drugs simultaneously than through sequential mutations conferring resistance to each drug separately.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Intuitively, this means that tumor cells are much more likely to become resistant to dual therapy through the occurrence of one mutation conferring resistance to both drugs simultaneously than through sequential mutations conferring resistance to each drug separately.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is explained as an intuitive interpretation of the mathematical results comparing single-step vs two-step resistance pathways.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a4707a21-2c6b-4857-8b62-76e52ed3899b",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C19",
+      "claim": "When there is no cross-resistance (n12 = 0), the expected number of resistant cells is X \u2248 M n1n2 \u00b5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If there is no mutation that could confer resistance to both drugs simultaneously (no cross-resistance), then n12 = 0 and we obtain X \u2248 M n1n2 \u00b52.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is derived from the mathematical model when cross-resistance mutations are not possible.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "168f1c97-1dfd-422c-af76-580b8592a142",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C20",
+      "claim": "The expected number of cells resistant to combination therapy with k drugs, with no cross-resistance, is X \u2248 M n1n2 \u2026 nk \u00b5k.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In general, the expected number of cells resistant to combination therapy with k drugs, with no cross-resistance, is X \u2248 M n1n2 \u2026 nk \u00b5k (proof in Supplementary file 1).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a generalization of the mathematical model to k drugs, with proof provided in supplementary materials.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "c7668514-9cbf-459f-afb7-0f9d30d1ba9c",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C21",
+      "claim": "The 68 lesions in the dataset declined at a median rate of -0.03 per day during vemurafenib treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To obtain estimates for the birth rate b\u2032 and death rate d\u2032 of sensitive cells during treatment, we calculate that the 68 lesions in our dataset declined at median rate b\u2032 \u2212 d\u2032 = \u22120.03 per day (\u22120.01 and \u22120.07 being 10th and 90th percentile, respectively).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a direct calculation from the study's dataset of melanoma patients.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9856f0d6-ceb0-40ac-86fe-b486b90fa318",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C22",
+      "claim": "Monotherapy leads to temporary tumor shrinkage but is always followed by tumor regrowth for clinically detectable tumor sizes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For clinically detectable sizes (M = 1010, 109, 108, depending on the location of the tumors and the detection methods used), monotherapy leads to a temporary shrinkage of the tumor but is always followed by tumor regrowth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through simulations shown in Figure 2A-C based on the mathematical model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a2f7a8c8-dc14-4cf1-9c1c-c0584e2ed7fe",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C23",
+      "claim": "Treatment failure can be caused either by preexistence of resistance to both drugs or the emergence of resistant cells during treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In summary, treatment failure can be caused either by the preexistence of resistance to both drugs in a small number of tumor cells (Figure 2E) or the emergence of resistant cells during treatment (Figure 2F).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This conclusion is drawn from the simulation results shown in Figure 2 and the mathematical model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "1fcb5019-e863-4727-84c1-655e14b1507f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C24",
+      "claim": "Monotherapy will fail in all 22 patients studied with metastatic disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We find that monotherapy will fail in all 22 patients (Table 1 and Supplementary file 3)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated using equation (1) applied to the tumor burden data from 22 patients.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "c69f74d6-afc1-4d1b-a5ac-f60eddde46c4",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C25",
+      "claim": "If there is even one possible mutation that can confer resistance to both drugs, dual therapy has only a small chance of curing patients.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If there is even one possible mutation that can in principle confer resistance to both drugs, then our model shows that dual therapy has also only a small chance of curing patients, even those with the smallest tumor burden.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through calculations shown in Table 1 for the 22-patient cohort.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "d224e9e1-e8e0-4fea-9126-06de985dfb98",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C26",
+      "claim": "None of the 22 patients are expected to be cured by dual therapy when there is one cross-resistance mutation possible.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In our cohort of 22 patients, none are expected to be cured under these circumstances (Table 1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the model applied to patient data, shown in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "3bc95e75-c3df-49f4-8e43-1d0652c81e3c",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C27",
+      "claim": "Eight patients with the smallest tumor burden would have >95% probability of cure with dual therapy when there are no cross-resistance mutations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the cohort described in Table 1, we calculate that eight patients (those with the smallest tumor burden) would have >95% probability of cure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated using the mathematical model for the scenario with n12 = 0, as shown in Table 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "993c2317-b78f-454f-8466-5acdd39c497e",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C28",
+      "claim": "Patients with the largest tumor burden would still have a >20% probability of tumor recurrence even with dual therapy without cross-resistance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Those with the largest tumor burden would still have a >20% probability of tumor recurrence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the model for patients with high tumor burden in the n12 = 0 scenario.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "f991ecf0-a12a-4822-a304-2a478ef49e01",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C29",
+      "claim": "Therapy with three agents will not cure patients if there is even one mutation that can confer resistance to all three agents.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Additional simulations show that therapy with three agents will also not cure patients if there is even one mutation that can confer resistance to all three agents.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through additional computer simulations extending the dual therapy model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "88e79aa9-d8da-447b-80c0-c982022d8cef",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C30",
+      "claim": "The number of metastatic lesions in the 22 patients ranged from 1 to 30.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The number of metastatic lesions in the 22 patients described in Table 1 ranged from 1 to 30",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is direct observational data from radiographic quantification of patient metastases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9958ce2e-f89e-4273-9db0-9ded9eb4cf1e",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C31",
+      "claim": "The total tumor burden in the 22 patients ranged from 9 \u00d7 10^8 to 3 \u00d7 10^11 cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "their total tumor burden ranged from 9 \u00d7 108 to 3 \u00d7 1011 cells",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from radiographic measurements of metastatic lesions in the patient cohort.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "dce58fad-872c-4df4-9044-cf83f3d3fa67",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C32",
+      "claim": "Sequential combination therapy will 'always' fail when there is a possibility of a single mutation conferring resistance to both drugs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When there is a possibility of a single mutation conferring resistance to both drugs, sequential combination therapy will 'always' fail.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This is demonstrated through mathematical modeling and simulations shown in Figure 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a8793b5a-987f-4e4b-b86e-2e54ad772651",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C33",
+      "claim": "In approximately 74% of lesions treated sequentially, failure is due to mutations present prior to treatment with the first drug.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In \u223c74% of lesions, the failure is due to mutations that were present prior to the treatment with the first drug",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This percentage is calculated from simulations of sequential therapy shown in Figure 5.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "432d8c3e-ed0f-4ccd-8fdd-6279e2dbbf44",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C34",
+      "claim": "In approximately 26% of lesions treated sequentially, failure is due to development of cells resistant to drug 2 during treatment with drug 1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "whereas in \u223c26% of the lesions, failure is due to the development of cells resistant to drug 2 during treatment with drug 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This percentage is calculated from simulations of sequential therapy dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9973307b-93f1-459b-9b6b-636f6bd8a04f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C35",
+      "claim": "With simultaneous therapy, 26.3% of patients can be cured when there is one cross-resistance mutation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "With simultaneous therapy, 26.3% of patients can be cured under the same circumstances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the mathematical model comparing simultaneous vs sequential therapy, shown in Figure 5B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b4615d1a-a75b-457a-8376-9478ca78b84e",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C36",
+      "claim": "If two drugs have no resistance mutations in common (n12 = 0), simultaneous therapy is successful with a probability of 99.9%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "If the two drugs have no resistance mutations in common (n12 = 0), then simultaneous therapy is successful with a probability of 99.9%",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is calculated from the model for the no cross-resistance scenario, shown in Figure 5C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "1bdc0f90-6d96-4495-a393-706a75efc0dd",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C37",
+      "claim": "Sequential therapy fails in all cases when there are no cross-resistance mutations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "while sequential therapy still fails in all cases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through simulations shown in Figure 5D even when n12 = 0.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b755e97c-b196-4d31-a61c-aa7a1cea52af",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C38",
+      "claim": "Cancer stem cells in CML represent only 0.1% of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The fraction of cancer stem cells appears to be this low in CML",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is stated as an established fact about CML, implicitly supported by the citation to Michor et al., 2005.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b8ea08fe-d88a-47b5-8a3c-bebebc7ccef0",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C39",
+      "claim": "In solid tumors, the fraction of cancer stem cells is usually higher than 5% and in some cases close to 100%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In solid tumors, however, the fraction of cancer stem cells seems much higher, usually higher than 5% and in some cases close to 100% (Shackleton et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by citation to Shackleton et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "070cbbb3-e2ec-4efc-ae05-882b7e6b4fd8",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C40",
+      "claim": "Non-stem cells can convert to cancer stem cells under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This issue is further complicated by the fact that the situation is plastic, with non-stem cells converting to cancer stem cells under certain conditions (Gupta et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by citation to Gupta et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "208046bc-d90b-4060-8f32-2502db3e1b5d",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C41",
+      "claim": "If each resistance mutation decreases the net growth rate of cells by 10%, the probability that dual therapy with no cross-resistance will eradicate a lesion of size 10^11 with daily cell division is 68%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, if each resistance mutation decreases the net growth rate of cells by 10%, the probability that dual therapy with no cross-resistance mutations will eradicate a lesion of size 1011 in which cells divide on average every day is 68% (compared with 47% in the case of neutral resistance).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from simulations incorporating costly resistance, shown in Table 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "0d32489a-beea-4a70-ad54-289a750d0813",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C42",
+      "claim": "The rate b\u2032 \u2212 d\u2032 of tumor decline is of primary importance for treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Overall, the rate b\u2032 \u2212 d\u2032 of tumor decline is of primary importance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is drawn from analysis of the mathematical model under different scenarios.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "66c619ed-4170-4a0f-bc3a-52d571abc024",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C43",
+      "claim": "Whether tumor decline is achieved by eliminating cells or suppressing division has only a minor effect on treatment outcomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "whether this is achieved by eliminating cells or suppressing division has only a minor effect on treatment outcomes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This is demonstrated through comparison of different treatment mechanisms in the model, with example calculations provided.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "3707cab0-aa9d-473a-8ad4-7b3797dc6948",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C44",
+      "claim": "If there is one genetic alteration that can confer resistance to two targeted agents, therapy with those agents will not result in sustained benefit for the majority of patients with advanced disease.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Most importantly, they show that even if there is one genetic alteration within any of the 6.6 billion base pairs present in a human diploid cell that can confer resistance to two targeted agents, therapy with those agents will not result in sustained benefit for the majority of patients with advanced disease.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This is a primary conclusion drawn from the mathematical modeling and patient data analysis presented throughout the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b19d7d62-a4ed-45a0-9e78-9ca24001c98c",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C45",
+      "claim": "If there is the possibility of a mutation conferring cross-resistance to three drugs, lesions of the size commonly observed in patients with advanced cancers will always recur.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The same result is obtained with triple therapy; if there is the possibility of a mutation conferring cross-resistance to three drugs, lesions of the size commonly observed in patients with advanced cancers will always recur.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This extends the dual therapy findings to triple therapy through additional simulations and mathematical analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "90135a9b-6a49-4ea9-946e-040a41f85578",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C46",
+      "claim": "Increased expression of growth factors such as hepatocyte growth factor can confer resistance to a variety of drugs that inhibit kinases functioning through different pathways.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, it has been shown that the increased expression of growth factors (such as hepatocyte growth factor) can confer resistance to a variety of drugs that inhibit kinases functioning through different pathways (Straussman et al., 2012; Wilson et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim is supported by citations to Straussman et al., 2012 and Wilson et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "4cdbbafc-c0a0-4215-8704-df8c30a85fb7",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C47",
+      "claim": "Mutations in genes encoding ABC transporters can confer resistance to many different drugs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, it is well known that mutations in several different genes, including those encoding ABC transporters, can confer resistance to many different drugs (Lavi et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is stated as well-known knowledge and supported by citation to Lavi et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "31ac932f-c929-4750-ac88-667f864c9d42",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C48",
+      "claim": "The results are not readily applicable to therapies that rely on immune destruction of tumors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our results are not readily applicable to therapies that rely on the immune destruction of tumors (Kirkwood et al., 2012), such as those employing CTLA-4 (Hodi et al., 2010), PD1 (Topalian et al., 2012), or CD19-CARs (Grupp et al., 2013).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a limitation acknowledged by the authors based on the nature of their model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b7a12b7e-fae8-430b-a241-eae6a996cce7",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C49",
+      "claim": "The immune system, unlike small molecule compounds, can replicate and evolve.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The immune system, unlike small molecule compounds, can replicate and evolve",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a fundamental biological fact about the immune system.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "087799dc-79e7-4dc2-84d6-7814d3cffe3d",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C50",
+      "claim": "Long-term control of disease is more common with immune modulators than with small molecule drugs.",
+      "claim_type": "IMPLICIT",
+      "source_text": "why long-term control of disease is more common with these therapies than with small molecule drugs",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is implied by the discussion of differences between immunotherapy and small molecule therapy outcomes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ef43fb27-b344-4eaa-ae01-e67bdcfc65e4",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C51",
+      "claim": "Sequential administration of targeted agents precludes any chance for cure even when there are no possible mutations that can confer cross-resistance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our data show that this sequential administration precludes any chance for cure\u2014even when there are no possible mutations that can confer cross-resistance (Figure 5C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through the mathematical model and simulations shown in Figure 5C.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "33694b2e-d0be-4982-9a37-1c772f52c53c",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C52",
+      "claim": "When there are potential mutations conferring cross-resistance to two or more agents, simultaneous administration offers some hope for cure while there is no hope with sequential therapy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "And when there are potential mutations conferring cross-resistance to two or more agents, simultaneous administration offers some hope for cure while there is no hope with sequential therapy (Figure 5A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is demonstrated through comparison of simultaneous vs sequential therapy in the model, shown in Figure 5A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "0f4a9556-0d1e-4a60-8b56-eeeac69c1469",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C53",
+      "claim": "The model is based on a multitype branching process.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our model is based on a multitype branching process (see 'Materials and methods').",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This describes the mathematical framework used to construct the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9261dae2-caae-4ec4-9ba7-71688456a66d",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C54",
+      "claim": "Similar mathematical modeling has successfully predicted the dynamics of acquired resistance in colorectal cancer patients treated with panitumumab.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Similar mathematical modeling has successfully predicted the dynamics of acquired resistance, including the timing of treatment failure, in colorectal cancer patients treated with the EGFR inhibitor panitumumab (Diaz et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This claim about previous successful predictions is supported by citation to Diaz et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "f5308abc-3d9b-4f1d-a6cc-448a8c58a368",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C55",
+      "claim": "The current work builds on previous studies by using recent advances in the mathematical theory of branching processes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our current work builds on these previous studies by using recent advances in the mathematical theory of branching processes (Antal and Krapivsky, 2011)",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This describes how the current work extends previous modeling approaches, citing the mathematical advances used.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b08928d1-337c-40be-bead-d766f38b84dd",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C56",
+      "claim": "The point mutation rate is approximately 10^-9 for most cancers.",
+      "claim_type": "EXPLICIT",
+      "source_text": "where s = 1 \u2212 d/b is the survival probability of the branching process initiated with a single cell and u is the point mutation rate, \u223c10\u22129 for most cancers",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is stated as an established parameter value for cancer mutation rates.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "3c5927f8-25b7-4d1e-8e5b-339c011daba1",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C57",
+      "claim": "The study quantified all radiographically detectable metastases in 22 patients: 7 with pancreatic ductal adenocarcinomas, 11 with colorectal carcinomas, and 6 with melanomas.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To determine the total extent of disease in typical patients who enroll for clinical trials, we quantified all radiographically detectable metastases in 22 such patients: 7 with pancreatic ductal adenocarcinomas, 11 with colorectal carcinomas, and 6 with melanomas",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the actual data collection performed in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b0fbfbf6-691e-400e-8226-3ca4a27d6f70",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C58",
+      "claim": "For 21 lesions in the vemurafenib dataset, two pretreatment measurements were available.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For 21 lesions in our vemurafenib dataset, two pretreatment measurements were available.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the available data used for parameter estimation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "8f845998-2e05-4470-916b-8c4112d3909d",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C59",
+      "claim": "The model assumes birth and death rates remain constant for all cell types prior to treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For simplicity, we assume that these birth and death rates remain constant for all cell types prior to treatment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an explicit modeling assumption stated by the authors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "d7fec096-c825-4932-9ce8-7b0faa267f2b",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C60",
+      "claim": "The model neglects variations in growth rate due to spatial and metabolic constraints in solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and neglect variations in the growth rate due to spatial and metabolic constraints in solid tumors (Bozic et al., 2012)",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an explicit simplifying assumption of the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "91df1007-f7ec-45d3-b100-a08702bb9038",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C61",
+      "claim": "A cell type is defined as sensitive if the treatment would cause its death rate to exceed its birth rate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A cell type is defined as sensitive if the treatment in question would cause its death rate to exceed its birth rate; otherwise, it is resistant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a definition established by the authors for their model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "70cfe3b7-ae57-41bf-95ec-3f42e2431210",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C62",
+      "claim": "Drugs in a combination treatment are assumed to be given at concentrations tolerable by patients.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We assume that drugs in a combination treatment are given at concentrations tolerable by patients",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an explicit assumption of the model reflecting clinical practice.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9bb9a912-a4f6-4794-b11e-d2297c1492d7",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C63",
+      "claim": "Resistant cells maintain pretreatment birth and death rates during treatment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We assume that resistant cells maintain the pretreatment birth and death rates, b and d, respectively, during treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an explicit modeling assumption about resistant cell behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "fbe1f2af-22ff-404d-b251-ff1661eda941",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C64",
+      "claim": "The typical death rate of sensitive cells during treatment is d\u2032 = b\u2032 + 0.03.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, we set the typical death rate of sensitive cells during treatment to d\u2032 = b\u2032 + 0.03",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This parameter is set based on the median decline rate observed in the dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "f726b499-583a-4d03-98cc-b6c5298066a9",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C65",
+      "claim": "As a default in simulations, treatment affects only the death rate (b\u2032 = b).",
+      "claim_type": "EXPLICIT",
+      "source_text": "As a default in our simulations, we suppose that treatment affects only the death rate (b\u2032 = b)",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an explicit default assumption for the simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "5f3e6c55-2ae8-4b8b-998c-038d20be64e8",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C66",
+      "claim": "The mathematical analysis applies also to the case that treatment affects the birth rate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "but our mathematical analysis applies also to the case that treatment affects the birth rate",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This states the generality of the mathematical framework beyond the default assumption.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "e115106a-2431-465a-9417-25c1847e9faf",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C67",
+      "claim": "Resistance is the outcome of random mutation, division, and death events.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We emphasize, however, that resistance is the outcome of random mutation, division, and death events",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This reflects the stochastic nature of the biological process being modeled.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "2a0c5507-6443-40da-8268-5b20f803ea9c",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C68",
+      "claim": "Resistance may arise in one lesion but not in another, even if these lesions are otherwise identical.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and consequently may arise in one lesion but not in another, even if these lesions are otherwise identical",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a consequence of the stochastic nature of resistance development in the model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a6613b91-6557-4e07-9116-2a56923010b5",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C69",
+      "claim": "For combination therapies with drugs that have resistance mutations in common, the probability of eradicating a lesion is only marginally affected by costly resistance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For combination therapies with drugs that have resistance mutations in common, the probability of eradicating a lesion is only marginally affected by costly resistance.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This conclusion is drawn from simulation results shown in Table 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "616c921b-a1db-4a81-8fe0-a45f93776fdd",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C70",
+      "claim": "For dual therapies with no cross-resistance mutations, treatment has a high chance of eradicating all but the largest lesions, whether or not resistance is costly.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For dual therapies with no cross-resistance mutations, treatment has a high chance of eradicating all but the largest lesions, whether or not resistance is costly.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This conclusion is drawn from simulation results shown in Table 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a004dc97-4273-47c8-af45-c56c480ed917",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C71",
+      "claim": "The parameters with the strongest effects on the success of combination treatments are lesion sizes and point mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The parameters with the strongest effects on the success of combination treatments\u2014apart from the number of cross-resistance mutations\u2014are lesion sizes and point mutation rate.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "evidence_reasoning": "This conclusion is drawn from sensitivity analysis of the model across different parameter values.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "6cea8398-0758-41ed-a692-56b0f6e27fb7",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C72",
+      "claim": "Combination treatments will be more effective in cancers with small fractions of tumor stem cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, we expect that combination treatments will be more effective in cancers with small fractions of tumor stem cells (small effective population size of lesions)",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This prediction follows from the model's dependence on effective population size.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "2553747e-7d93-4738-bbfe-06bb694e6c21",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C73",
+      "claim": "Combination treatments will be less effective in cancers with significantly increased point mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and less effective in cancers with significantly increased point mutation rates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This prediction follows from the model's dependence on mutation rate.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "57c1cb9e-4620-4629-a9f7-c75d7be6a383",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C74",
+      "claim": "The development of drugs that act through distinct pathways will be essential for the success of combination therapies in the clinic.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The development of drugs that act through distinct pathways will therefore be essential for the success of combination therapies in the clinic.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This recommendation follows from the finding that cross-resistance severely limits treatment success.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "44b69321-e26a-4a2d-8a2a-1ecdd51f2ff3",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C75",
+      "claim": "Drugs that have very different chemical structures, in addition to distinct mechanisms of action, may be required to circumvent resistance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Drugs that have very different chemical structures, in addition to distinct mechanisms of action, may be required to circumvent these resistance mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative recommendation based on the challenges of avoiding cross-resistance identified in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "0a078b1c-189f-4477-8132-f5e232b4b689",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C76",
+      "claim": "Long-term control of disease is more common with immune modulators than with small molecule drugs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "why long-term control of disease is more common with these therapies than with small molecule drugs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is stated as an observed clinical phenomenon that the authors acknowledge but do not model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a5e5de04-8b2d-447e-a2bc-ccd53045f67b",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C77",
+      "claim": "The model uses Monte Carlo computer simulations to confirm analytical results.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We use Monte Carlo computer simulations to confirm our analytical results and improve our understanding of the evolutionary dynamics during cancer treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This describes the computational methodology used to validate the mathematical model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "4901c5cd-9386-4979-8edd-605b1d0bf80b",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C78",
+      "claim": "Between 10^6 and 10^8 simulation runs are used for each parameter combination.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Between 106 and 108 runs are used for each parameter combination.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational effort invested in the simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "8380bceb-b3c7-402a-8117-aa36218ef897",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "claim_id": "C79",
+      "claim": "In the case of large lesions with high cell turnover rates, even dual therapy with no cross-resistance mutations would be expected to fail in 37% of patients.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We note that in patients whose tumors have high cell turnover (time between cell divisions of 1 day, corresponding to b = 1), even dual therapy with no cross-resistance mutations would be expected to fail in 37% of patients described in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from simulations with different parameter values as shown in Supplementary file 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The manuscript establishes the clinical context that targeted cancer therapies in solid tumors lead to dramatic but short-lived responses due to resistant cancer cells, with resistance being inevitable for monotherapy due to preexisting resistant cells in large tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1, C6-C11 collectively establish well-documented clinical observations about targeted therapy resistance, supported by multiple citations to clinical studies. These represent established knowledge in the field and provide appropriate context for the study.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "c9902cf1-0c60-47fc-be97-a0d43d2fa35d",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Combination therapy is proposed as the major strategy for overcoming resistance to targeted cancer treatments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C2 represents established scientific consensus in oncology, consistent with the historical success of combination therapies in other diseases and supported by the broader literature context provided in the manuscript.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ce4df57b-8678-4431-b01a-b30490fb5c9e",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "The authors parameterized their model using data from 68 index lesions in 20 melanoma patients treated with vemurafenib, calculating growth rates and cell division parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C12-C15 and C58 describe the empirical dataset and parameter estimation. The calculated growth rate (0.01/day) is validated against prior literature, and the birth rate calculation (b=0.14/day) follows logically from the 7-day division time. The data collection is clearly documented.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "The authors developed a multitype branching process model building on previous work, incorporating stochastic mutation, birth, and death events, with explicit modeling assumptions about cell dynamics and treatment effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C53-C68 and C77-C78 describe the mathematical framework and modeling assumptions. The model is appropriately grounded in established mathematical theory (Antal and Krapivsky, 2011) and validated with extensive simulations (10^6-10^8 runs). The assumptions are explicitly stated, though some simplifications (C59, C60) may limit applicability.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "The mathematical model predicts that when cross-resistance mutations exist (n12\u22651), the expected number of resistant cells is X\u2248M\u00b7n12\u00b7\u03bc, independent of single-drug resistance mutations, while without cross-resistance (n12=0), resistance requires sequential mutations with X\u2248M\u00b7n1\u00b7n2\u00b7\u03bc\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C16-C20 present core mathematical results derived from the branching process model. The formulas are mathematically consistent and proofs are provided in supplementary materials. The intuitive interpretation (C18) correctly explains why single-step cross-resistance dominates over two-step sequential resistance.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ea74e198-c633-423b-be97-34914fde5241",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "The authors estimated treatment effect parameters from the melanoma dataset, finding a median tumor decline rate of -0.03/day and setting the death rate for sensitive cells during treatment to d'=b'+0.03.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C21 and C64 describe empirical parameter estimation from the clinical dataset. The median decline rate is directly calculated from observed data with reported percentiles, and the death rate parameter is appropriately derived from this observation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "f6dcf04d-2b1a-4d54-bc51-387f1b848643",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "Model simulations predict that monotherapy leads to temporary tumor shrinkage followed by inevitable regrowth for all clinically detectable tumor sizes, with failure caused by either preexisting resistance or emergence during treatment, and will fail in all 22 patients studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C22-C24 present simulation results consistent with the mathematical model and clinical observations. The prediction of universal monotherapy failure aligns with established clinical experience and the model's assumptions about preexisting resistant cells in large tumors.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "c90765d8-b955-44b4-80af-c92e204b1a6f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "For dual therapy with even one cross-resistance mutation (n12=1), none of the 22 patients are expected to be cured; without cross-resistance (n12=0), eight patients with smallest tumor burden have >95% cure probability while those with largest burden retain >20% recurrence probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C25-C28 and C44 present model predictions applied to the 22-patient cohort. The calculations follow from equation (1) and are internally consistent. However, the strong conclusion in C44 about 'any of the 6.6 billion base pairs' may overstate certainty given model assumptions and parameter uncertainties.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "f8dd7f1e-a052-4dcd-8e06-3da2082308db",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "Dual therapy results in long-term disease control for most patients if there are no cross-resistance mutations, while patients with large disease burden require triple therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C3-C4 are primary conclusions but depend critically on the assumption of no cross-resistance (n12=0), which may not reflect biological reality. The model shows dual therapy fails when n12\u22651, and the manuscript acknowledges multiple mechanisms of cross-resistance exist (C46-C47). The necessity of triple therapy (C4) is asserted but not rigorously demonstrated\u2014C29 and C45 show triple therapy also fails if cross-resistance exists.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "d8b6afed-74de-45c8-9bd2-cf056c19db90",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "Triple therapy will not cure patients if there is even one mutation conferring resistance to all three agents, with lesions of typical size in advanced cancers always recurring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C29 and C45 extend the dual therapy logic to triple therapy through additional simulations. The conclusion is mathematically consistent with the model framework, though it highlights the fundamental limitation that cross-resistance undermines any combination therapy.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ade76a59-a13f-4927-8e47-cf501510ee4e",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "The authors quantified tumor burden in 22 patients with metastatic disease (7 pancreatic, 11 colorectal, 6 melanoma), finding 1-30 metastatic lesions per patient with total burden ranging from 9\u00d710^8 to 3\u00d710^11 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C30-C31 and C57 describe direct observational data from radiographic measurements. The data collection methodology is clearly described and provides realistic clinical parameters for model application.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "Simultaneous dual therapy is much more effective than sequential therapy: with one cross-resistance mutation, simultaneous therapy cures 26.3% vs 0% for sequential; without cross-resistance, simultaneous therapy succeeds 99.9% vs 0% for sequential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C5, C32-C37, C51-C52 present a clear comparison of simultaneous vs sequential therapy from model simulations. The results are internally consistent and mathematically sound. The breakdown of failure mechanisms (74% preexisting, 26% emergent during treatment) provides mechanistic insight. However, the 'always' language in C32 and C51 is strong\u2014stochastic effects mean some rare successes are possible.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "bcb9ed66-bdb0-485a-8606-74d8c93ad83a",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "Cancer stem cell fraction affects treatment success, with CML having only 0.1% stem cells (explaining imatinib success) while solid tumors have 5-100% stem cells, and combination treatments will be more effective in cancers with small stem cell fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C38-C40 and C72 discuss cancer stem cells with appropriate citations. The logic connecting low stem cell fraction to treatment success is sound. However, C40 notes plasticity in stem cell status, which complicates the model's assumption of fixed effective population size. The prediction in C72 is reasonable but not directly tested.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "463bbb5e-f98b-4080-a218-bfb3ddb1bd02",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R14",
+      "result_type": "llm",
+      "result": "When resistance mutations carry fitness costs (up to 10% reduction in growth rate), dual therapy with cross-resistance shows marginal improvement, while dual therapy without cross-resistance maintains high success rates except for largest lesions with high turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C41, C69-C70 present simulation results for costly resistance scenarios shown in Table 2. The results are consistent with expectations that fitness costs reduce resistant cell populations. The specific example in C41 (68% vs 47% success) demonstrates quantitative impact.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "c8ff9080-7239-4c7d-b227-cca6e55f3185",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R15",
+      "result_type": "llm",
+      "result": "The rate of tumor decline (b'-d') is of primary importance for treatment outcomes, while whether decline is achieved by cell elimination or division suppression has only minor effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C42-C43 present a general conclusion about treatment mechanisms. The example calculation (26% vs 29% eradication probability) supports the claim of minor differences. This is a useful insight for treatment design, though the magnitude of 'minor' effects could be clinically relevant in some contexts.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "27f37d8e-46d6-4803-8875-aec6370b2163",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R16",
+      "result_type": "llm",
+      "result": "Lesion size and point mutation rate are the parameters with strongest effects on combination treatment success (apart from cross-resistance), with treatments being less effective in cancers with significantly increased mutation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C71 and C73 identify key model parameters affecting outcomes. This follows logically from the mathematical formulas where X scales with M (lesion size) and \u03bc (mutation rate). The sensitivity analysis across parameter ranges (Supplementary file 3) supports these conclusions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9d091833-c616-47dc-8a9d-058fbd5ffcba",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R17",
+      "result_type": "llm",
+      "result": "Cross-resistance mechanisms exist in practice (e.g., hepatocyte growth factor expression, ABC transporter mutations), making development of drugs with distinct pathways and different chemical structures essential for successful combination therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C46-C47 cite experimental evidence for cross-resistance mechanisms. Claims C74-C75 present logical recommendations based on the model's predictions. However, C75 is somewhat speculative ('may be required') about the necessity of different chemical structures, as this has not been rigorously tested.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "b97135c5-c7ae-4f7c-9145-6438f68b9234",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R18",
+      "result_type": "llm",
+      "result": "The model is not applicable to immune-based therapies because the immune system can replicate and evolve unlike small molecules, and long-term disease control is more common with immune modulators than small molecule drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C48-C50 and C76 appropriately acknowledge model limitations. The distinction between immune therapies and small molecules is valid, and the observation about better long-term control with immunotherapy reflects clinical experience. This represents appropriate scientific humility about model scope.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ccce0449-41df-4fc2-baf6-8587f9559fb5",
+      "content_id": "be933d9d-27c0-4edc-ad51-3486b123c436",
+      "result_id": "R19",
+      "result_type": "llm",
+      "result": "In patients with high cell turnover (1-day division time), even dual therapy without cross-resistance would fail in 37% of patients from the study cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C79 presents a specific prediction for high-turnover tumors from Supplementary file 3. This demonstrates the model's sensitivity to birth rate parameters and identifies a clinically relevant scenario where even optimal dual therapy may fail due to rapid mutation accumulation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "358ad17c-7345-4475-bf06-81b4f325d052",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "The authors developed a mathematical model based on multitype branching processes to predict resistance dynamics in solid tumors, building on previous work that successfully predicted resistance in colorectal cancer. The model makes simplifying assumptions including constant birth/death rates and neglects spatial/metabolic constraints.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers explicitly requested clarification on how the new model differs from previous models and how it handles solid tumors (point 1). They also asked for discussion of limitations regarding spatial structure and non-homogeneous growth rates, indicating concern about the branching process model's ability to handle these complexities. This suggests reviewers found the methodological approach needed better justification.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "afc5cd52-139e-418f-828d-52ffa2662dc8",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "The authors parameterized their model using clinical data from 68 melanoma lesions in 20 patients treated with vemurafenib, calculating growth rates (0.01/day), cell division time (7 days), birth rate (0.14/day), and treatment-induced decline rates (-0.03/day median).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers raised two significant concerns about these parameters. Point 3 questions whether results from BRAF mutant melanoma can be extrapolated to all cancers. Point 5 challenges the 7-day cell doubling assumption based on a single reference, noting this is difficult to measure and asking how predictions would change if this were different. These concerns indicate uncertainty about parameter validity and generalizability.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "The model predicts that dual therapy results in long-term disease control for most patients only if there are no cross-resistance mutations. With even one cross-resistance mutation possible, dual therapy has minimal chance of curing patients. In the 22-patient cohort, 8 patients with smallest tumor burden would have >95% cure probability without cross-resistance, but none would be cured with one cross-resistance mutation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers found the paper to be 'an important contribution based on elegant modeling work' and did not challenge these core findings. The editorial decision was favorable, and no reviewer questioned the validity of these predictions about dual therapy outcomes under different cross-resistance scenarios.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "e4ea5148-29ea-410f-8c50-e2e04343e350",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "The model demonstrates that simultaneous therapy with two drugs is much more effective than sequential therapy. Sequential therapy always fails even without cross-resistance mutations, while simultaneous therapy offers 26.3% cure rate with one cross-resistance mutation and 99.9% success without cross-resistance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers did not challenge these findings comparing simultaneous versus sequential therapy. One reviewer specifically suggested moving supplementary figure 3 into the main text (point 2), stating this would 'greatly enhance the impact of the paper by making the result immediately and intuitively clear,' indicating strong support for this result.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ecb3050e-ab47-472a-876f-9f297b9f50bd",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "The model predicts that in patients with large disease burden, triple therapy is needed, but therapy with three agents will not cure patients if there is even one mutation conferring cross-resistance to all three agents.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers did not question these predictions about triple therapy. The overall favorable evaluation and lack of specific critique of these claims suggests acceptance of the findings regarding the need for triple therapy and its limitations with cross-resistance.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "7ac3c459-b2e1-49b4-9d15-44d87618e67d",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "The authors discuss cancer stem cells, noting that in CML they represent only 0.1% of cells, while in solid tumors the fraction is usually >5% and sometimes close to 100%. The model predicts combination treatments will be more effective in cancers with small fractions of tumor stem cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers specifically raised concern about this topic in point 6, stating 'the probability of cure with one or two drugs is greatly increased in tumors where the only cells that contribute to relapse are rare cancer stem cells. This is a logical and important distinction but seems to be quickly dismissed as not relevant clinically.' Reviewers noted 'Since the cancer stem cell question remains murky, this deserves more comment,' indicating the treatment of this issue was insufficient.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "72e63c15-dcc6-4e89-bdc1-55cedebf8fbe",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "The authors acknowledge their results are not readily applicable to immunotherapies (CTLA-4, PD1, CD19-CARs) because the immune system can replicate and evolve, and long-term disease control is more common with immune modulators than small molecule drugs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers explicitly requested in point 4 that 'The authors should comment on whether/how their modeling studies apply to the recent reports of long-term responses (cures?) with single agent immunotherapy (CTLA-4, PD1, CD19-CARs).' This direct request indicates the reviewers found the discussion of immunotherapy applicability insufficient and wanted more detailed commentary.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "35a48dd1-5173-4e38-bdac-b826a4b6a18d",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "The authors quantified tumor burden in 22 patients (7 pancreatic, 11 colorectal, 6 melanoma), finding 1-30 metastatic lesions per patient with total tumor burdens ranging from 9\u00d710^8 to 3\u00d710^11 cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers did not challenge the data collection itself, point 7 requests that authors 'include both measurements on relevant figures, perhaps in the form of a conversion scale, to make it easier for clinicians to appreciate the clinical relevance.' This suggests the presentation of tumor burden data needed improvement for clinical interpretation, though the data itself was not questioned.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R9",
+      "result_type": "peer",
+      "result": "The mathematical model derives formulas for expected numbers of resistant cells: X \u2248 M n12 \u03bc when cross-resistance mutations exist (n12 \u2265 1), and X \u2248 M n1n2 \u03bc\u00b2 without cross-resistance (n12 = 0). This shows tumor cells are more likely to become resistant through one cross-resistance mutation than through sequential mutations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers praised the work as 'elegant modeling' and did not challenge the mathematical derivations. While point 8 suggests reconsidering the presentation of mathematical results spread across sections, this is about organization rather than validity. The lack of critique of the mathematical framework indicates acceptance of these theoretical results.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R10",
+      "result_type": "peer",
+      "result": "Sensitivity analyses show that lesion size and mutation rate are the strongest parameters affecting treatment success. Costly resistance has minimal effect when cross-resistance exists. Combination treatments will be less effective in cancers with increased mutation rates, and even dual therapy without cross-resistance would fail in 37% of patients with high cell turnover.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Point 5 directly challenges parameter sensitivity by asking 'How would the predictions from the model change if this time [cell doubling] were much different?' This indicates reviewers wanted more thorough sensitivity analysis. The question about cell turnover rate variations suggests uncertainty about how robust the predictions are to parameter changes.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "c0aa6f1c-a90f-44b8-91fa-1492e5cc01c0",
+      "content_id": "b4ff8e4a-26b7-428c-9d1a-5a136b1d10ce",
+      "result_id": "R11",
+      "result_type": "peer",
+      "result": "The authors conclude that developing drugs acting through distinct pathways with very different chemical structures will be essential for successful combination therapies to circumvent cross-resistance mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers did not challenge these clinical implications and recommendations. The overall favorable evaluation ('important contribution') and lack of specific critique of these conclusions suggests acceptance of the therapeutic recommendations derived from the modeling work.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "85097145-afb7-4172-a61d-06fd83ddace4",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "2af3f82c-325b-48da-9d69-172b0b3149c5",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "6f265747-c798-4c13-9f65-f0d56e260776",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "fa5ea700-3aea-446b-8f05-faca8b28dc2d",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "8e5fedf9-318c-4587-ab69-a30159764381",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "4dab8085-8997-4167-a077-0b0015d5a94a",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "57a2b81f-6d98-48a6-8c99-4dc0de6d0f3a",
+      "result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21"
+    },
+    {
+      "claim_id": "e1c0a1d2-0322-4e94-a7e9-f06dac48267f",
+      "result_id": "c9902cf1-0c60-47fc-be97-a0d43d2fa35d"
+    },
+    {
+      "claim_id": "62d7311b-7d4d-42c5-bd56-314e40f41538",
+      "result_id": "ce4df57b-8678-4431-b01a-b30490fb5c9e"
+    },
+    {
+      "claim_id": "050c4393-a820-40b3-a6ab-0adb0702ef70",
+      "result_id": "ce4df57b-8678-4431-b01a-b30490fb5c9e"
+    },
+    {
+      "claim_id": "ca05e2ea-6605-427d-a621-1270232eb246",
+      "result_id": "ce4df57b-8678-4431-b01a-b30490fb5c9e"
+    },
+    {
+      "claim_id": "a4346291-9a9b-4503-a85d-adbe9fcb8154",
+      "result_id": "ce4df57b-8678-4431-b01a-b30490fb5c9e"
+    },
+    {
+      "claim_id": "b0fbfbf6-691e-400e-8226-3ca4a27d6f70",
+      "result_id": "ce4df57b-8678-4431-b01a-b30490fb5c9e"
+    },
+    {
+      "claim_id": "0f4a9556-0d1e-4a60-8b56-eeeac69c1469",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "9261dae2-caae-4ec4-9ba7-71688456a66d",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "f5308abc-3d9b-4f1d-a6cc-448a8c58a368",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "b08928d1-337c-40be-bead-d766f38b84dd",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "8f845998-2e05-4470-916b-8c4112d3909d",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "d7fec096-c825-4932-9ce8-7b0faa267f2b",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "91df1007-f7ec-45d3-b100-a08702bb9038",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "70cfe3b7-ae57-41bf-95ec-3f42e2431210",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "9bb9a912-a4f6-4794-b11e-d2297c1492d7",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "f726b499-583a-4d03-98cc-b6c5298066a9",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "5f3e6c55-2ae8-4b8b-998c-038d20be64e8",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "e115106a-2431-465a-9417-25c1847e9faf",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "2a0c5507-6443-40da-8268-5b20f803ea9c",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "a5e5de04-8b2d-447e-a2bc-ccd53045f67b",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "4901c5cd-9386-4979-8edd-605b1d0bf80b",
+      "result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f"
+    },
+    {
+      "claim_id": "aa9f31ba-075c-47eb-8261-bf93179d3358",
+      "result_id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36"
+    },
+    {
+      "claim_id": "bbc81c2f-a566-42db-af57-45760c6009eb",
+      "result_id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36"
+    },
+    {
+      "claim_id": "436b97c4-6e94-4f6b-a9cc-613af5ae913f",
+      "result_id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36"
+    },
+    {
+      "claim_id": "a4707a21-2c6b-4857-8b62-76e52ed3899b",
+      "result_id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36"
+    },
+    {
+      "claim_id": "168f1c97-1dfd-422c-af76-580b8592a142",
+      "result_id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36"
+    },
+    {
+      "claim_id": "c7668514-9cbf-459f-afb7-0f9d30d1ba9c",
+      "result_id": "ea74e198-c633-423b-be97-34914fde5241"
+    },
+    {
+      "claim_id": "fbe1f2af-22ff-404d-b251-ff1661eda941",
+      "result_id": "ea74e198-c633-423b-be97-34914fde5241"
+    },
+    {
+      "claim_id": "9856f0d6-ceb0-40ac-86fe-b486b90fa318",
+      "result_id": "f6dcf04d-2b1a-4d54-bc51-387f1b848643"
+    },
+    {
+      "claim_id": "a2f7a8c8-dc14-4cf1-9c1c-c0584e2ed7fe",
+      "result_id": "f6dcf04d-2b1a-4d54-bc51-387f1b848643"
+    },
+    {
+      "claim_id": "1fcb5019-e863-4727-84c1-655e14b1507f",
+      "result_id": "f6dcf04d-2b1a-4d54-bc51-387f1b848643"
+    },
+    {
+      "claim_id": "c69f74d6-afc1-4d1b-a5ac-f60eddde46c4",
+      "result_id": "c90765d8-b955-44b4-80af-c92e204b1a6f"
+    },
+    {
+      "claim_id": "d224e9e1-e8e0-4fea-9126-06de985dfb98",
+      "result_id": "c90765d8-b955-44b4-80af-c92e204b1a6f"
+    },
+    {
+      "claim_id": "3bc95e75-c3df-49f4-8e43-1d0652c81e3c",
+      "result_id": "c90765d8-b955-44b4-80af-c92e204b1a6f"
+    },
+    {
+      "claim_id": "993c2317-b78f-454f-8466-5acdd39c497e",
+      "result_id": "c90765d8-b955-44b4-80af-c92e204b1a6f"
+    },
+    {
+      "claim_id": "3707cab0-aa9d-473a-8ad4-7b3797dc6948",
+      "result_id": "c90765d8-b955-44b4-80af-c92e204b1a6f"
+    },
+    {
+      "claim_id": "047d2f8a-b39e-4478-988e-8625267d019e",
+      "result_id": "f8dd7f1e-a052-4dcd-8e06-3da2082308db"
+    },
+    {
+      "claim_id": "832b1c8f-948e-4295-8e0b-93d1f472df0f",
+      "result_id": "f8dd7f1e-a052-4dcd-8e06-3da2082308db"
+    },
+    {
+      "claim_id": "f991ecf0-a12a-4822-a304-2a478ef49e01",
+      "result_id": "d8b6afed-74de-45c8-9bd2-cf056c19db90"
+    },
+    {
+      "claim_id": "b19d7d62-a4ed-45a0-9e78-9ca24001c98c",
+      "result_id": "d8b6afed-74de-45c8-9bd2-cf056c19db90"
+    },
+    {
+      "claim_id": "88e79aa9-d8da-447b-80c0-c982022d8cef",
+      "result_id": "ade76a59-a13f-4927-8e47-cf501510ee4e"
+    },
+    {
+      "claim_id": "9958ce2e-f89e-4273-9db0-9ded9eb4cf1e",
+      "result_id": "ade76a59-a13f-4927-8e47-cf501510ee4e"
+    },
+    {
+      "claim_id": "3c5927f8-25b7-4d1e-8e5b-339c011daba1",
+      "result_id": "ade76a59-a13f-4927-8e47-cf501510ee4e"
+    },
+    {
+      "claim_id": "97d47f8a-ae11-4431-9ecf-d49ad83f485f",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "dce58fad-872c-4df4-9044-cf83f3d3fa67",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "a8793b5a-987f-4e4b-b86e-2e54ad772651",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "432d8c3e-ed0f-4ccd-8fdd-6279e2dbbf44",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "9973307b-93f1-459b-9b6b-636f6bd8a04f",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "b4615d1a-a75b-457a-8376-9478ca78b84e",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "1bdc0f90-6d96-4495-a393-706a75efc0dd",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "ef43fb27-b344-4eaa-ae01-e67bdcfc65e4",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "33694b2e-d0be-4982-9a37-1c772f52c53c",
+      "result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f"
+    },
+    {
+      "claim_id": "b755e97c-b196-4d31-a61c-aa7a1cea52af",
+      "result_id": "bcb9ed66-bdb0-485a-8606-74d8c93ad83a"
+    },
+    {
+      "claim_id": "b8ea08fe-d88a-47b5-8a3c-bebebc7ccef0",
+      "result_id": "bcb9ed66-bdb0-485a-8606-74d8c93ad83a"
+    },
+    {
+      "claim_id": "070cbbb3-e2ec-4efc-ae05-882b7e6b4fd8",
+      "result_id": "bcb9ed66-bdb0-485a-8606-74d8c93ad83a"
+    },
+    {
+      "claim_id": "6cea8398-0758-41ed-a692-56b0f6e27fb7",
+      "result_id": "bcb9ed66-bdb0-485a-8606-74d8c93ad83a"
+    },
+    {
+      "claim_id": "208046bc-d90b-4060-8f32-2502db3e1b5d",
+      "result_id": "463bbb5e-f98b-4080-a218-bfb3ddb1bd02"
+    },
+    {
+      "claim_id": "a6613b91-6557-4e07-9116-2a56923010b5",
+      "result_id": "463bbb5e-f98b-4080-a218-bfb3ddb1bd02"
+    },
+    {
+      "claim_id": "616c921b-a1db-4a81-8fe0-a45f93776fdd",
+      "result_id": "463bbb5e-f98b-4080-a218-bfb3ddb1bd02"
+    },
+    {
+      "claim_id": "0d32489a-beea-4a70-ad54-289a750d0813",
+      "result_id": "c8ff9080-7239-4c7d-b227-cca6e55f3185"
+    },
+    {
+      "claim_id": "66c619ed-4170-4a0f-bc3a-52d571abc024",
+      "result_id": "c8ff9080-7239-4c7d-b227-cca6e55f3185"
+    },
+    {
+      "claim_id": "a004dc97-4273-47c8-af45-c56c480ed917",
+      "result_id": "27f37d8e-46d6-4803-8875-aec6370b2163"
+    },
+    {
+      "claim_id": "2553747e-7d93-4738-bbfe-06bb694e6c21",
+      "result_id": "27f37d8e-46d6-4803-8875-aec6370b2163"
+    },
+    {
+      "claim_id": "90135a9b-6a49-4ea9-946e-040a41f85578",
+      "result_id": "9d091833-c616-47dc-8a9d-058fbd5ffcba"
+    },
+    {
+      "claim_id": "4cdbbafc-c0a0-4215-8704-df8c30a85fb7",
+      "result_id": "9d091833-c616-47dc-8a9d-058fbd5ffcba"
+    },
+    {
+      "claim_id": "57c1cb9e-4620-4629-a9f7-c75d7be6a383",
+      "result_id": "9d091833-c616-47dc-8a9d-058fbd5ffcba"
+    },
+    {
+      "claim_id": "44b69321-e26a-4a2d-8a2a-1ecdd51f2ff3",
+      "result_id": "9d091833-c616-47dc-8a9d-058fbd5ffcba"
+    },
+    {
+      "claim_id": "31ac932f-c929-4750-ac88-667f864c9d42",
+      "result_id": "b97135c5-c7ae-4f7c-9145-6438f68b9234"
+    },
+    {
+      "claim_id": "b7a12b7e-fae8-430b-a241-eae6a996cce7",
+      "result_id": "b97135c5-c7ae-4f7c-9145-6438f68b9234"
+    },
+    {
+      "claim_id": "087799dc-79e7-4dc2-84d6-7814d3cffe3d",
+      "result_id": "b97135c5-c7ae-4f7c-9145-6438f68b9234"
+    },
+    {
+      "claim_id": "0a078b1c-189f-4477-8132-f5e232b4b689",
+      "result_id": "b97135c5-c7ae-4f7c-9145-6438f68b9234"
+    },
+    {
+      "claim_id": "8380bceb-b3c7-402a-8117-aa36218ef897",
+      "result_id": "ccce0449-41df-4fc2-baf6-8587f9559fb5"
+    },
+    {
+      "claim_id": "0f4a9556-0d1e-4a60-8b56-eeeac69c1469",
+      "result_id": "358ad17c-7345-4475-bf06-81b4f325d052"
+    },
+    {
+      "claim_id": "9261dae2-caae-4ec4-9ba7-71688456a66d",
+      "result_id": "358ad17c-7345-4475-bf06-81b4f325d052"
+    },
+    {
+      "claim_id": "f5308abc-3d9b-4f1d-a6cc-448a8c58a368",
+      "result_id": "358ad17c-7345-4475-bf06-81b4f325d052"
+    },
+    {
+      "claim_id": "8f845998-2e05-4470-916b-8c4112d3909d",
+      "result_id": "358ad17c-7345-4475-bf06-81b4f325d052"
+    },
+    {
+      "claim_id": "d7fec096-c825-4932-9ce8-7b0faa267f2b",
+      "result_id": "358ad17c-7345-4475-bf06-81b4f325d052"
+    },
+    {
+      "claim_id": "62d7311b-7d4d-42c5-bd56-314e40f41538",
+      "result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8"
+    },
+    {
+      "claim_id": "050c4393-a820-40b3-a6ab-0adb0702ef70",
+      "result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8"
+    },
+    {
+      "claim_id": "ca05e2ea-6605-427d-a621-1270232eb246",
+      "result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8"
+    },
+    {
+      "claim_id": "a4346291-9a9b-4503-a85d-adbe9fcb8154",
+      "result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8"
+    },
+    {
+      "claim_id": "c7668514-9cbf-459f-afb7-0f9d30d1ba9c",
+      "result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8"
+    },
+    {
+      "claim_id": "b0fbfbf6-691e-400e-8226-3ca4a27d6f70",
+      "result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8"
+    },
+    {
+      "claim_id": "047d2f8a-b39e-4478-988e-8625267d019e",
+      "result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0"
+    },
+    {
+      "claim_id": "c69f74d6-afc1-4d1b-a5ac-f60eddde46c4",
+      "result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0"
+    },
+    {
+      "claim_id": "d224e9e1-e8e0-4fea-9126-06de985dfb98",
+      "result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0"
+    },
+    {
+      "claim_id": "3bc95e75-c3df-49f4-8e43-1d0652c81e3c",
+      "result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0"
+    },
+    {
+      "claim_id": "993c2317-b78f-454f-8466-5acdd39c497e",
+      "result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0"
+    },
+    {
+      "claim_id": "3707cab0-aa9d-473a-8ad4-7b3797dc6948",
+      "result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0"
+    },
+    {
+      "claim_id": "97d47f8a-ae11-4431-9ecf-d49ad83f485f",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "dce58fad-872c-4df4-9044-cf83f3d3fa67",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "a8793b5a-987f-4e4b-b86e-2e54ad772651",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "432d8c3e-ed0f-4ccd-8fdd-6279e2dbbf44",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "9973307b-93f1-459b-9b6b-636f6bd8a04f",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "b4615d1a-a75b-457a-8376-9478ca78b84e",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "1bdc0f90-6d96-4495-a393-706a75efc0dd",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "ef43fb27-b344-4eaa-ae01-e67bdcfc65e4",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "33694b2e-d0be-4982-9a37-1c772f52c53c",
+      "result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350"
+    },
+    {
+      "claim_id": "832b1c8f-948e-4295-8e0b-93d1f472df0f",
+      "result_id": "ecb3050e-ab47-472a-876f-9f297b9f50bd"
+    },
+    {
+      "claim_id": "f991ecf0-a12a-4822-a304-2a478ef49e01",
+      "result_id": "ecb3050e-ab47-472a-876f-9f297b9f50bd"
+    },
+    {
+      "claim_id": "b19d7d62-a4ed-45a0-9e78-9ca24001c98c",
+      "result_id": "ecb3050e-ab47-472a-876f-9f297b9f50bd"
+    },
+    {
+      "claim_id": "b755e97c-b196-4d31-a61c-aa7a1cea52af",
+      "result_id": "7ac3c459-b2e1-49b4-9d15-44d87618e67d"
+    },
+    {
+      "claim_id": "b8ea08fe-d88a-47b5-8a3c-bebebc7ccef0",
+      "result_id": "7ac3c459-b2e1-49b4-9d15-44d87618e67d"
+    },
+    {
+      "claim_id": "070cbbb3-e2ec-4efc-ae05-882b7e6b4fd8",
+      "result_id": "7ac3c459-b2e1-49b4-9d15-44d87618e67d"
+    },
+    {
+      "claim_id": "6cea8398-0758-41ed-a692-56b0f6e27fb7",
+      "result_id": "7ac3c459-b2e1-49b4-9d15-44d87618e67d"
+    },
+    {
+      "claim_id": "31ac932f-c929-4750-ac88-667f864c9d42",
+      "result_id": "72e63c15-dcc6-4e89-bdc1-55cedebf8fbe"
+    },
+    {
+      "claim_id": "b7a12b7e-fae8-430b-a241-eae6a996cce7",
+      "result_id": "72e63c15-dcc6-4e89-bdc1-55cedebf8fbe"
+    },
+    {
+      "claim_id": "087799dc-79e7-4dc2-84d6-7814d3cffe3d",
+      "result_id": "72e63c15-dcc6-4e89-bdc1-55cedebf8fbe"
+    },
+    {
+      "claim_id": "0a078b1c-189f-4477-8132-f5e232b4b689",
+      "result_id": "72e63c15-dcc6-4e89-bdc1-55cedebf8fbe"
+    },
+    {
+      "claim_id": "88e79aa9-d8da-447b-80c0-c982022d8cef",
+      "result_id": "35a48dd1-5173-4e38-bdac-b826a4b6a18d"
+    },
+    {
+      "claim_id": "9958ce2e-f89e-4273-9db0-9ded9eb4cf1e",
+      "result_id": "35a48dd1-5173-4e38-bdac-b826a4b6a18d"
+    },
+    {
+      "claim_id": "3c5927f8-25b7-4d1e-8e5b-339c011daba1",
+      "result_id": "35a48dd1-5173-4e38-bdac-b826a4b6a18d"
+    },
+    {
+      "claim_id": "aa9f31ba-075c-47eb-8261-bf93179d3358",
+      "result_id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7"
+    },
+    {
+      "claim_id": "bbc81c2f-a566-42db-af57-45760c6009eb",
+      "result_id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7"
+    },
+    {
+      "claim_id": "436b97c4-6e94-4f6b-a9cc-613af5ae913f",
+      "result_id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7"
+    },
+    {
+      "claim_id": "a4707a21-2c6b-4857-8b62-76e52ed3899b",
+      "result_id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7"
+    },
+    {
+      "claim_id": "168f1c97-1dfd-422c-af76-580b8592a142",
+      "result_id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7"
+    },
+    {
+      "claim_id": "a6613b91-6557-4e07-9116-2a56923010b5",
+      "result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f"
+    },
+    {
+      "claim_id": "616c921b-a1db-4a81-8fe0-a45f93776fdd",
+      "result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f"
+    },
+    {
+      "claim_id": "a004dc97-4273-47c8-af45-c56c480ed917",
+      "result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f"
+    },
+    {
+      "claim_id": "2553747e-7d93-4738-bbfe-06bb694e6c21",
+      "result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f"
+    },
+    {
+      "claim_id": "8380bceb-b3c7-402a-8117-aa36218ef897",
+      "result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f"
+    },
+    {
+      "claim_id": "57c1cb9e-4620-4629-a9f7-c75d7be6a383",
+      "result_id": "c0aa6f1c-a90f-44b8-91fa-1492e5cc01c0"
+    },
+    {
+      "claim_id": "44b69321-e26a-4a2d-8a2a-1ecdd51f2ff3",
+      "result_id": "c0aa6f1c-a90f-44b8-91fa-1492e5cc01c0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "d5db6ad6-48e0-46da-9675-0933a7c5d924",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "8ebee35f-fa2e-4927-a7ad-7584756e3c36",
+      "peer_result_id": "0d4c448b-6984-4aa9-9869-9d1c6853a3b7",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluate the core mathematical results (C16-C20) from the branching process model. OpenEval finds the mathematical derivations consistent and well-supported with proofs. Peer reviewers praised the 'elegant modeling' and did not challenge the mathematical framework, though they suggested reorganizing presentation. Strong agreement on validity of theoretical results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "d3ff07fa-0524-4b5d-b734-fc85e2f5e991",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "ade76a59-a13f-4927-8e47-cf501510ee4e",
+      "peer_result_id": "35a48dd1-5173-4e38-bdac-b826a4b6a18d",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address radiographic tumor burden measurements (C30, C31, C57). OpenEval finds the observational data clearly described and appropriate. Peer reviewers did not challenge the data collection itself but requested improved presentation with conversion scales for clinical interpretation, indicating the data was acceptable but presentation needed enhancement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a0a2533b-e691-4c6d-8e9a-eefed6c02b4e",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "4a05a350-d5f6-482c-9b5f-78f99d5ecb4f",
+      "peer_result_id": "e4ea5148-29ea-410f-8c50-e2e04343e350",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluate simultaneous vs sequential therapy findings (C5, C32-C37, C51-C52). OpenEval finds results internally consistent and mathematically sound, with minor concern about 'always' language. Peer reviewers strongly supported these findings, specifically requesting supplementary figure 3 be moved to main text to enhance impact. Strong agreement on this key result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "da0923e0-0fe3-4390-94d7-9d87627b12f6",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "bcb9ed66-bdb0-485a-8606-74d8c93ad83a",
+      "peer_result_id": "7ac3c459-b2e1-49b4-9d15-44d87618e67d",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address cancer stem cell implications (C38-C40, C72). OpenEval finds the logic sound with appropriate citations, noting plasticity complicates assumptions. Peer reviewers expressed concern that this important distinction was 'quickly dismissed as not relevant clinically' and requested more commentary since 'the cancer stem cell question remains murky.' Disagreement on adequacy of treatment of this topic.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "fc64ec5d-1b3d-4c68-bb40-52a20b16ce2d",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "b97135c5-c7ae-4f7c-9145-6438f68b9234",
+      "peer_result_id": "72e63c15-dcc6-4e89-bdc1-55cedebf8fbe",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate discussion of immunotherapy limitations (C48-C50, C76). OpenEval finds the acknowledgment of model limitations appropriate and scientifically humble. Peer reviewers found this discussion insufficient, explicitly requesting more detailed commentary on how modeling applies to immunotherapy responses. Disagreement on adequacy of immunotherapy discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "dd91fb5c-0add-4aae-b3be-083643f4b004",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "ce4df57b-8678-4431-b01a-b30490fb5c9e",
+      "peer_result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address empirical dataset and parameter estimation (C12-C15, C58, C21). OpenEval validates parameters against literature and finds calculations well-documented. Peer reviewers raised significant concerns about generalizability from BRAF mutant melanoma to all cancers and challenged the 7-day doubling assumption, requesting sensitivity analysis. Disagreement on parameter validity and generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a97d56f7-2640-446e-afe5-0031809e2e9d",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "c90765d8-b955-44b4-80af-c92e204b1a6f",
+      "peer_result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both evaluate dual therapy predictions (C3, C25-C28, C44). OpenEval finds calculations internally consistent following from equation (1). Peer reviewers found this 'an important contribution based on elegant modeling work' without challenging core findings. Strong agreement on these predictions, though OpenEval notes C44 may overstate certainty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "0424e9d3-e6e5-4ad3-8d04-84fd66bc2dfb",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "d8b6afed-74de-45c8-9bd2-cf056c19db90",
+      "peer_result_id": "ecb3050e-ab47-472a-876f-9f297b9f50bd",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both address triple therapy predictions (C29, C45, with C4 also in peer evaluation). OpenEval finds the extension to triple therapy mathematically consistent with the model framework. Peer reviewers did not question these findings, with overall favorable evaluation suggesting acceptance. Agreement on triple therapy conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "d06c5c8f-509c-4dbc-9090-85c30d8567a7",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "17d6558c-80f6-4f25-95fd-c26f6af34a3f",
+      "peer_result_id": "358ad17c-7345-4475-bf06-81b4f325d052",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both evaluate the mathematical modeling framework (C53-C55, C59-C60, plus additional claims in OpenEval). OpenEval finds the model appropriately grounded in established theory with extensive validation. Peer reviewers requested clarification on how the model differs from previous work and expressed concern about handling spatial structure and non-homogeneous growth in solid tumors. Disagreement on adequacy of methodological justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "d51937be-f5c5-4a00-88df-b1b69cdc1366",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "9d091833-c616-47dc-8a9d-058fbd5ffcba",
+      "peer_result_id": "c0aa6f1c-a90f-44b8-91fa-1492e5cc01c0",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both address clinical recommendations about cross-resistance (C74-C75, plus C46-C47 in OpenEval). OpenEval finds recommendations logical based on model predictions, noting C75 is somewhat speculative. Peer reviewers did not challenge these therapeutic implications. Agreement on clinical recommendations derived from modeling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "9bd7eaef-3a80-48d1-be0f-6fbf971142be",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "27f37d8e-46d6-4803-8875-aec6370b2163",
+      "peer_result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address parameter sensitivity (C71, C73, C79 in OpenEval; broader sensitivity concerns in peer review). OpenEval finds identification of key parameters follows logically from mathematical formulas with supporting sensitivity analysis. Peer reviewers explicitly requested more thorough sensitivity analysis, asking how predictions would change with different parameter values. Disagreement on adequacy of sensitivity analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ad20063f-4616-4e64-9abf-0b63dbe3a975",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "463bbb5e-f98b-4080-a218-bfb3ddb1bd02",
+      "peer_result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Partial overlap on costly resistance scenarios (C69-C70). OpenEval finds simulation results consistent with expectations about fitness costs. Peer reviewers' concern about parameter sensitivity (point 5) extends to these predictions, questioning robustness to parameter variations. Disagreement on confidence in parameter-dependent predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "ac9c1818-74bc-43a5-97c2-4b06bca3d558",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "f8dd7f1e-a052-4dcd-8e06-3da2082308db",
+      "peer_result_id": "6cfb68f0-4f70-4240-88fc-26e09cd50ae0",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Both address primary conclusions about dual therapy necessity (C3-C4). OpenEval expresses uncertainty due to critical dependence on no cross-resistance assumption (n12=0), noting the model fails when cross-resistance exists. Peer reviewers found the paper an important contribution and did not challenge these core findings. Disagreement on certainty of main conclusions given model assumptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "283e35c6-a372-4afd-a1ac-5ef2c93d361d",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "ea74e198-c633-423b-be97-34914fde5241",
+      "peer_result_id": "afc5cd52-139e-418f-828d-52ffa2662dc8",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Minimal overlap on empirical parameter estimation (C21 shared). OpenEval finds median decline rate directly calculated from observed data. Peer reviewers' broader concerns about parameter validity and generalizability (point 3) extend to all empirical parameters. Partial disagreement on parameter robustness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "933a4d75-c744-4182-8f4a-1adc33665d4a",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "ccce0449-41df-4fc2-baf6-8587f9559fb5",
+      "peer_result_id": "1fa4c5b2-f504-49b5-bca0-ab36b03ab43f",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Both address high-turnover tumor predictions (C79). OpenEval finds this demonstrates appropriate model sensitivity to birth rate parameters. Peer reviewers' request for more sensitivity analysis (point 5) indicates uncertainty about how robust such predictions are to parameter variations. Disagreement on confidence in parameter-sensitive predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "667255b7-0031-4d6c-91f3-03f16e31caeb",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "c8ff9080-7239-4c7d-b227-cca6e55f3185",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated claims about treatment mechanism timing (C42-C43), finding the conclusion about minor differences between mechanisms supported by calculations. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "fb4c1100-1852-4e6a-806e-85b28addec13",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "525cfc8b-234a-44ee-b19e-cd8b6c2a3e21",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated background claims about targeted therapy resistance (C1, C6-C11), finding them well-documented with appropriate citations. No corresponding peer review evaluation found - reviewers did not comment on background/introduction claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "a8022d1e-3b77-4a6d-bd18-5e4d3198bb13",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "c9902cf1-0c60-47fc-be97-a0d43d2fa35d",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated the rationale for combination therapy (C2) as established scientific consensus. No corresponding peer review evaluation found - reviewers did not comment on this foundational claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    },
+    {
+      "id": "6f85baa6-db60-4d70-9552-da884b356735",
+      "submission_id": "4244113a-0ed2-4526-a65e-d075a358356f",
+      "openeval_result_id": "f6dcf04d-2b1a-4d54-bc51-387f1b848643",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated simulation results predicting universal monotherapy failure (C22-C24), finding them consistent with model and clinical experience. No corresponding peer review evaluation found for these specific simulation results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:02:07.802173Z"
+    }
+  ]
+}

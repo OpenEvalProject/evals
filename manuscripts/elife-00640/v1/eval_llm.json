@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "miR-124 mutant males exhibit reduced reproductive success with females, characterized by decreased copulation rates, while maintaining normal courtship initiation and activity levels. The mating defect is not due to courtship song deficits (persists after wing removal) or reduced male activity, but likely reflects female rejection. Genetic rescue restores normal mating success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C2, C32, C34, C37, and C40 provide converging experimental evidence from multiple behavioral assays showing the mating phenotype and its rescue. The wing removal experiment (C34, C35) appropriately controls for courtship song, and decapitated female assays (C37, C38) control for male activity. The inference that females reject mutant males (C39) is logically supported by normal courtship activity but reduced copulation success."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "miR-124 mutant males elicit increased male-male courtship from wild-type males, but mutant males themselves do not court other males. This phenotype depends on target genotype rather than test male genotype, suggesting altered chemical cues rather than changes in neuronal circuitry or sexual orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C41 and C42 provide clear experimental data showing the genotype-dependent courtship behavior. The inference that this reflects chemical cues rather than neuronal changes (C43, C44) is well-supported by the observation that the phenotype depends on the target's genotype, not the courting male's genotype\u2014a key control that rules out behavioral circuit defects."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C4"
+    ],
+    "result": "miR-124 mutant males exhibit aberrant pheromone production, with significantly reduced cVA levels and elevated 9-pentacosene levels compared to controls, as measured by GC-MS analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C45 and C46 present quantitative GC-MS data with statistical significance (p<0.001 and p<0.01, respectively). The manuscript provides detailed methods for pheromone extraction and analysis, and includes multiple biological replicates (n=6 for some measurements). The conclusion that behavioral effects trace to aberrant pheromone production (C4) is supported by these measurements."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Perfuming miR-124 mutant males with synthetic cVA partially rescues male-female mating success but does not significantly affect male-male courtship behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While C47 shows significant improvement in mating success (p<0.05), the authors acknowledge that perfuming only restored cVA to <50% of control levels and that mutant males still have elevated pentacosenes, creating mixed signals. The lack of rescue in male-male courtship (C48) is explained as potentially due to insufficient cVA concentration or improper localization, but this remains speculative. The partial rescue suggests cVA contributes to the phenotype but does not definitively establish it as the sole or primary cause."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C49"
+    ],
+    "result": "In female mate choice assays, females show strong preference for wild-type males over miR-124 mutant males, with >95% of wild-type males achieving copulation in competitive settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3 and C49 present clear experimental data from competitive mating assays. The dramatic preference (>95% vs ~50% when competing with rescued males) provides strong evidence for female discrimination against mutant males. The experimental design appropriately controls for male competition effects."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "miR-124 mutant males exhibit reduced aggression, with increased fighting latency and decreased fighting frequency, while maintaining normal locomotor activity. This may be related to reduced cVA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C51 and C52 provide quantitative behavioral data with statistical significance (p<0.01). The locomotion control (C53) appropriately rules out general activity defects. The connection to cVA (C54) is appropriately presented as speculative ('may contribute') and is supported by prior literature (C55) showing cVA promotes aggression. The causal link is not definitively established but the correlation is well-documented."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "miR-124 activity in the CNS contributes to the male courtship phenotype. Expression of a miR-124 sponge under pan-neuronal elav-Gal4 control in heterozygous miR-124 males results in increased courtship by wild-type males, suggesting CNS-mediated modulation of pheromone production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C58 provides experimental data showing that CNS-specific knockdown of miR-124 recapitulates the courtship phenotype. This tissue-specific manipulation is a strong experimental approach. The inference that this acts through pheromone modulation (C59) is reasonable given the established connection between CNS and pheromone regulation, though the mechanism remains to be fully elucidated."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The transformer 3'UTR contains two predicted miR-124 binding sites, and miR-124 can repress a luciferase reporter bearing the tra 3'UTR in cell culture assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C61 presents sequence analysis identifying binding sites, and C62 provides functional validation through luciferase assays with statistical significance (p<0.05). The combination of computational prediction and experimental validation using a standard reporter assay provides solid evidence for direct targeting. However, the manuscript notes that computational databases did not initially predict this interaction (C60), suggesting the sites may be non-canonical."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C82",
+      "C91",
+      "C92"
+    ],
+    "result": "miR-124 mutant males show elevated levels of tra and dsxF transcripts compared to controls, while dsxM transcript levels remain unchanged, as measured by qRT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C63, C82, and C91 present qRT-PCR data with statistical significance (p<0.05 for tra, p<0.01 for dsxF). The manuscript describes appropriate normalization to actin controls and multiple biological replicates (n=5 for tra, n=4 for dsx). The unchanged dsxM levels (C92) serve as an important internal control showing specificity for the female splice form."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C5",
+      "C6"
+    ],
+    "result": "Knockdown of transformer in miR-124 expressing cells or neurons rescues the miR-124 mutant phenotypes, including mating success, male-male courtship, and pheromone production (cVA and 9-pentacosene levels). This demonstrates that transformer is a functionally significant target of miR-124 that limits inappropriate expression of the female form of transformer in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C64-C68 provide comprehensive rescue data across multiple phenotypes using tra RNAi under different Gal4 drivers. The rescue of behavioral phenotypes (C64, C65, C68) and pheromone levels (C66, C67) with tissue-specific tra knockdown provides strong evidence for a causal relationship. The convergence of luciferase assays (C62), elevated tra in mutants (C63), and phenotypic rescue by tra knockdown (C64-C68) collectively support the conclusion that tra is a functionally significant target (C5, C6, C69)."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C7",
+      "C8",
+      "C78"
+    ],
+    "result": "Low levels of female-specific traF transcripts are detected in wild-type males and appear innocuous under normal conditions. miR-124 buffers against inappropriate traF expression, and modest increases in traF in miR-124 expressing CNS cells can interfere with male pheromone production. This represents a secondary mechanism for controlling sex-specific splicing events in sexual differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C70 is supported by both current data and prior literature. The detection of low-level traF in males combined with the phenotypes observed only when miR-124 is lost (C73, C74) supports the buffering model. Claims C75 and C76 synthesize the experimental findings into a coherent model. The broader conclusions (C7, C8, C78) about miRNA-mediated control of splicing noise are well-supported by the experimental evidence, though claims C71 and C72 about mechanisms are appropriately presented as speculative."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93"
+    ],
+    "result": "Pheromone production is controlled by the sex determination pathway through Dsx proteins. In miR-124 mutants, elevated traF leads to increased dsxF, which affects pheromone production. However, female-specific diene-hydrocarbons are not detected in miR-124 mutant males, likely because miR-124 is not expressed in oenocytes where these compounds are synthesized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C79-C81 establish the known regulatory framework through citations. Claims C84-C86 cite prior work showing DsxF effects on pheromones. The observation that female-specific dienes are absent in miR-124 mutants (C87) despite elevated dsxF is explained by tissue-specific expression patterns (C88), which is a logical inference. Claim C90 provides important context about tissue-specific pheromone synthesis. The model is internally consistent and supported by both current data and prior literature."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Drosophila pheromones are sexually dimorphic chemical signals that influence courtship and aggressive behaviors. These include cuticular hydrocarbons synthesized by oenocytes and ejaculatory bulb-produced compounds like cVA, which have sex-specific effects on behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C9-C20) establish the background knowledge about Drosophila pheromone biology and are all supported by appropriate citations to prior literature. They provide essential context for interpreting the experimental results but do not represent novel findings of this manuscript."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C94",
+      "C95"
+    ],
+    "result": "The Drosophila sex determination pathway involves a cascade of sex-specific splicing events, where Sxl promotes production of TraF in females, which in turn promotes DsxF production. In males, the default forms DsxM and FruM are produced. Dsx controls sexual differentiation including pheromone production, while FruM controls sexual behavior but not pheromones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C21-C26, C94-C95) describe established knowledge about the Drosophila sex determination pathway and are supported by appropriate citations to foundational literature. They provide the necessary framework for understanding how miR-124 regulation of tra affects sexual differentiation."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "MicroRNAs have been implicated in controlling gene expression noise and buffering inappropriate splicing. miR-124 is abundantly expressed in the Drosophila brain and has been shown to limit leaky expression during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C27-C31) establish prior knowledge about microRNA function and miR-124 specifically, supported by appropriate citations including the authors' previous work. They provide the conceptual framework for the current study but represent background rather than novel findings."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "A modest increase in traF is not expected to have much effect in females, where endogenous traF levels are higher.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "This inference (C77) is logically sound based on the dose-response principle\u2014if low levels of traF cause phenotypes in males where baseline is near zero, the same absolute increase would be proportionally much smaller in females where traF is normally high. This is supported by the lack of reported phenotypes in miR-124 mutant females."
+  }
+]

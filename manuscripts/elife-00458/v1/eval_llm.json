@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study surveyed microbiota from 159 individuals across 60 families with varying compositions (children, dogs, both, or neither), sampling fecal, oral, and skin sites from humans and dogs. DNA was extracted, 16S rRNA V2 region amplified, and sequenced using Illumina GAIIx, yielding 969 samples with 74,855,127 total reads after quality filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3, C19-C24 provide comprehensive study design details that are internally consistent. Claims C59-C64 describe standard molecular and bioinformatic methods appropriate for microbiome studies. The methodology is well-documented with specific sample sizes, sequencing parameters, and quality control steps clearly stated."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Household members, particularly couples, shared more microbiota than individuals from different households, with stronger effects on skin than oral or fecal sites. Family membership explained a large proportion of variability in bacterial diversity across all body sites, with partner comparisons showing the strongest effects (R < 0.30 for tongue/feces).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4-C5 and C25-C27 present consistent findings with quantitative effect sizes (R values). The hierarchical pattern (partners > family > unrelated individuals) is supported by appropriate statistical analyses (PERMANOVA, ANOSIM). The body site-specific differences are clearly documented with specific R values provided."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C36"
+    ],
+    "result": "Parent-offspring microbiota sharing showed weaker effects (R < 0.15) than partner sharing, with age-dependent patterns. Parents shared more similar communities with older children (3-18 years) than infants, and cohabitation effects were insufficient to overcome age-related differences, particularly between infants and adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C28-C31 provide age-stratified analyses with specific R values and are supported by established knowledge (C31) about infant-adult microbiota differences. The interpretation that cohabitation cannot overcome age effects (C30) is a reasonable inference from the data. Claim C36 appropriately summarizes body site-dependent developmental dynamics."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Shared environments may homogenize skin communities through contact with common surfaces. Skin microbe exchange via home surfaces and indoor air (dominated by skin-associated microbes) may be easier than gut or mouth bacteria exchange, potentially because skin is a less selective environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C32-C33 are mechanistic inferences from observed patterns rather than directly tested hypotheses. While C34 is supported by citation, C35 is explicitly speculative. The proposed mechanisms are plausible but lack direct experimental validation (e.g., no surface sampling, no controlled contact experiments). These remain reasonable interpretations requiring further testing."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cohabiting couples shared skin taxa including Propionibacteria and oral-associated taxa (Prevotella, Veillonella). SourceTracker analysis estimated ~11% of palm microbiota from oral sources vs <2% from fecal sources, suggesting moderately frequent oral-skin transfer between couples that can affect skin taxonomic composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C37-C40 provide specific taxonomic identifications with quantitative estimates from computational analysis (SourceTracker). The presence of oral taxa on skin (C38-C39) is supported by both data and established knowledge about bacterial persistence (C41). The conclusion about physical contact effects (C42) is a reasonable inference from converging lines of evidence."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52"
+    ],
+    "result": "Dog ownership significantly increased shared skin microbiota in cohabiting adults, with dog-owners sharing more skin microbiota with their own dogs than other dogs. Cohabiting dogs showed similar patterns to humans, with skin sites showing greatest similarity. Methylophilaceae (abundant in dog mouths at 4.6%) was a main taxon driving similarity between dog owners, consistent with oral-skin transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6-C7 and C43-C46 present consistent findings about dog-human microbiota sharing with appropriate comparisons (own vs other dogs, dog-owners vs non-owners). Claims C51-C52 provide specific taxonomic evidence with quantitative abundance data supporting the proposed transfer mechanism. The parallel patterns between cohabiting dogs and humans (C44) strengthen the interpretation."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Dog ownership and gender had no detectable effects on gut or oral communities. Cat ownership did not significantly affect skin community diversity, similarity, or shared taxa (p=0.92). Having children had minimal effects compared to age or dog ownership, with family size explaining <8% of diversity variability across body sites versus 15-46% for age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C47-C50 present negative and comparative findings with specific statistical values (p-values, variance explained percentages). The quantitative comparison showing minimal child effects (C50) is well-documented. The lack of cat effects (C48) is notable but appropriately reported with statistical support. These findings are internally consistent with the stronger dog effects reported elsewhere."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work shows genetically related individuals share more gut microbes than unrelated individuals regardless of cohabitation, though monozygotic twins are not more similar than dizygotic twins. Previous studies found teens' fecal microbiota more similar to parents than unrelated adults, and cohabiting couples shared more similar gut communities, indicating shared environment/lifestyle effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C9-C15 accurately summarize prior literature with appropriate citations. The twin findings (C10-C11) are correctly attributed and the inference about non-genetic factors (C11) is reasonable. Claims C12-C14 reference the authors' own prior work (Yatsunenko et al., 2012) appropriately. These claims provide necessary context but are not novel findings of the current study."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Human microbiota vary across individuals due to genetic relatedness, diet, and age, but surroundings and interaction partners likely also shape microbial communities. Since we leave microbes on touched surfaces and direct contact facilitates microbial exchange, body site-associated communities may be shaped by surroundings and daily contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C1 accurately represents established knowledge. Claims C2 and C18 present the study's motivating hypothesis as speculation/inference, which is appropriate for an introduction. Claims C16-C17 are supported by citations and established knowledge. These claims properly frame the research question and are validated by the subsequent experimental findings."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Given microbiota effects on metabolism and immunity in animal models, cohabitation with humans and pets may alter physiological properties by influencing microbial symbionts. This relates to the hygiene hypothesis, with recent studies linking pet exposure to decreased allergies. Skin microbes are receiving focus in immune regulation, and skin may serve as a collector of shared environmental bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C53 and C55-C57 accurately represent established knowledge and prior work. However, C54 and C58 are speculative extensions suggesting physiological impacts and functional roles that were not directly tested in this study. While the speculation is reasonable given the findings, the study only demonstrates microbiota sharing patterns, not physiological consequences. These claims represent appropriate discussion of implications but lack direct experimental support."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Direct and frequent contact with cohabitants may significantly shape the composition of microbial communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C8 is the main conclusion synthesizing multiple lines of evidence from the study: increased sharing among household members (C4), stronger effects for couples (C27), body site-specific patterns (C5), dog ownership effects (C6-C7), and taxonomic evidence of transfer (C37-C42, C51-C52). This inference is well-supported by converging evidence across multiple analyses."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Alpha diversity estimates (PD, OTU counts) may be overestimated due to Illumina sequencing error since no accepted denoising methods exist, but this overestimation should not affect relative differences in diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C65 appropriately acknowledges a known technical limitation of Illumina sequencing. Claim C66 makes a reasonable inference that systematic error would affect all samples similarly, preserving relative comparisons. This is a standard caveat in microbiome studies and the authors appropriately note it does not invalidate their comparative analyses."
+  }
+]

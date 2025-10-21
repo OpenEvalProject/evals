@@ -1,0 +1,136 @@
+{
+  "submission": {
+    "id": "0fa51c8e-5a06-47cf-9009-c6a0af73deb5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:53:06.269257Z",
+    "updated_at": "2025-10-21T22:53:06.269257Z"
+  },
+  "content": [
+    {
+      "id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "submission_id": "0fa51c8e-5a06-47cf-9009-c6a0af73deb5",
+      "content_type": "manuscript",
+      "content_text": "# Shedding new light on circadian clocks\n\n## Authors\n\n- Maud Demarque<sup>1</sup>\n- Ueli Schibler<sup>2</sup>\n\n### Affiliations\n\n1. Department of Molecular Biology University of Geneva Geneva Switzerland maud.demarque@unige.ch\n2. the Department of Molecular Biology University of Geneva Geneva Switzerland ueli.schibler@unige.ch\n\n\u2020 Corresponding author\n\n## Abstract\n\nUsing a clever combination of genetic and biochemical tools researchers have shown that a transcription factor called USF1 has a central role in determining how mutations of the Clock gene manifest themselves in the behaviour of different mouse strains.\n",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "64e4fa7d-eec4-4da8-b6a3-fc95b42b3e26",
+      "content_id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "claim_id": "C1",
+      "claim": "Researchers have shown that a transcription factor called USF1 has a central role in determining how mutations of the Clock gene manifest themselves in the behaviour of different mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using a clever combination of genetic and biochemical tools researchers have shown that a transcription factor called USF1 has a central role in determining how mutations of the Clock gene manifest themselves in the behaviour of different mouse strains.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "The claim references research conducted by others ('researchers have shown') indicating citation of external work, and the abstract summarizes findings that are inferred from the full study being described.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    },
+    {
+      "id": "017da8f9-f46d-4bfc-951f-a66d28439f65",
+      "content_id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "claim_id": "C2",
+      "claim": "USF1 is a transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source_text": "a transcription factor called USF1",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The classification of USF1 as a transcription factor is stated as established fact, drawing from existing scientific knowledge about this protein.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    },
+    {
+      "id": "a52a3cc1-d33b-4ec4-a021-8b44fbd4996d",
+      "content_id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "claim_id": "C3",
+      "claim": "The research used a combination of genetic and biochemical tools.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using a clever combination of genetic and biochemical tools",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This describes the methodology of the referenced research, inferred from the study being summarized.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    },
+    {
+      "id": "fd21918b-4c70-4b7c-a381-f6065b455643",
+      "content_id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "claim_id": "C4",
+      "claim": "Clock gene mutations manifest themselves in the behaviour of different mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "how mutations of the Clock gene manifest themselves in the behaviour of different mouse strains",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is presented as an established phenomenon that the research investigates, drawing on existing knowledge about Clock gene mutations and their behavioral effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    },
+    {
+      "id": "6695ce95-44d2-4755-bc2e-658c871f0398",
+      "content_id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "claim_id": "C5",
+      "claim": "Different mouse strains show variation in how Clock gene mutations affect their behavior.",
+      "claim_type": "IMPLICIT",
+      "source_text": "how mutations of the Clock gene manifest themselves in the behaviour of different mouse strains",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The phrase 'different mouse strains' implies that there is variation among strains in the manifestation of Clock gene mutations, though this is not explicitly stated.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fcce28f3-83dc-4b3a-8906-50b7db5f338e",
+      "content_id": "f6e7ef2e-cab7-442f-bf56-9aeabaeaca21",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The manuscript describes research demonstrating that USF1, a transcription factor, plays a central role in modulating how Clock gene mutations affect behavior across different mouse strains. This work employed genetic and biochemical approaches to establish USF1's role in strain-specific behavioral manifestations of Clock mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "This appears to be a commentary or review abstract rather than a primary research report, as indicated by the phrase 'researchers have shown' (C1) and citation-based evidence types. No experimental data, statistical analyses, sample sizes, controls, or specific behavioral phenotypes are provided in the abstract. Without access to the methodology, results, or the primary study being referenced, it is impossible to evaluate the validity of the central claim about USF1's role. The claims rely entirely on citation and inference from work conducted by others, making independent verification from this manuscript impossible.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:53:06.269257Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64e4fa7d-eec4-4da8-b6a3-fc95b42b3e26",
+      "result_id": "fcce28f3-83dc-4b3a-8906-50b7db5f338e"
+    },
+    {
+      "claim_id": "017da8f9-f46d-4bfc-951f-a66d28439f65",
+      "result_id": "fcce28f3-83dc-4b3a-8906-50b7db5f338e"
+    },
+    {
+      "claim_id": "a52a3cc1-d33b-4ec4-a021-8b44fbd4996d",
+      "result_id": "fcce28f3-83dc-4b3a-8906-50b7db5f338e"
+    },
+    {
+      "claim_id": "fd21918b-4c70-4b7c-a381-f6065b455643",
+      "result_id": "fcce28f3-83dc-4b3a-8906-50b7db5f338e"
+    },
+    {
+      "claim_id": "6695ce95-44d2-4755-bc2e-658c871f0398",
+      "result_id": "fcce28f3-83dc-4b3a-8906-50b7db5f338e"
+    }
+  ],
+  "comparisons": []
+}

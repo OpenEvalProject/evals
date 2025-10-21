@@ -1,0 +1,133 @@
+{
+  "submission": {
+    "id": "d985b7e9-9767-4248-9500-7577e0c63b37",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:45:54.223778Z",
+    "updated_at": "2025-10-21T22:45:54.223778Z"
+  },
+  "content": [
+    {
+      "id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "submission_id": "d985b7e9-9767-4248-9500-7577e0c63b37",
+      "content_type": "manuscript",
+      "content_text": "# How does doxorubicin work?\n\n## Authors\n\n- Anand G Patel<sup>1</sup>\n- Scott H Kaufmann<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Pharmacology and Experimental Therapeutics Mayo Clinic Rochester United States\n2. Department of Molecular Pharmacology and Experimental Therapeutics and the Department of Oncology Mayo Clinic Rochester United States Kaufmann.Scott@mayo.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nA new mechanism involving cleavage of a transcription factor called CREB3L1 has been proposed to explain the anti-tumour effects of doxorubicin.\n",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "535e6867-bdc6-4d58-8a2c-ebeffeede11b",
+      "content_id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "claim_id": "C1",
+      "claim": "A new mechanism involving cleavage of a transcription factor called CREB3L1 has been proposed to explain the anti-tumour effects of doxorubicin.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new mechanism involving cleavage of a transcription factor called CREB3L1 has been proposed to explain the anti-tumour effects of doxorubicin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The abstract states that a mechanism has been proposed, indicating this is based on work being discussed in the manuscript, but no direct experimental data or citations are provided in the extracted text.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    },
+    {
+      "id": "5159202a-917d-44e3-95e7-8dbb180ced19",
+      "content_id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "claim_id": "C2",
+      "claim": "Doxorubicin has anti-tumour effects.",
+      "claim_type": "IMPLICIT",
+      "source_text": "A new mechanism involving cleavage of a transcription factor called CREB3L1 has been proposed to explain the anti-tumour effects of doxorubicin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The statement assumes doxorubicin has anti-tumour effects as an established fact that requires mechanistic explanation, drawing from established scientific knowledge about this chemotherapy drug.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    },
+    {
+      "id": "1370c04b-4f76-46b6-8ffb-09c387a4d92b",
+      "content_id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "claim_id": "C3",
+      "claim": "CREB3L1 is a transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new mechanism involving cleavage of a transcription factor called CREB3L1 has been proposed to explain the anti-tumour effects of doxorubicin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The text directly identifies CREB3L1 as a transcription factor, which is a classification based on established biological knowledge.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    },
+    {
+      "id": "c669a191-12d8-4bf1-85f9-4f031e1090d7",
+      "content_id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "claim_id": "C4",
+      "claim": "CREB3L1 undergoes cleavage as part of the proposed mechanism of doxorubicin's anti-tumour effects.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A new mechanism involving cleavage of a transcription factor called CREB3L1 has been proposed to explain the anti-tumour effects of doxorubicin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly mentions cleavage of CREB3L1 as part of the proposed mechanism, though the supporting evidence for this claim would be in the full manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ec3f7ee2-a8ba-4ada-9908-9d7d4b381f5e",
+      "content_id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The manuscript references established knowledge that doxorubicin has anti-tumour effects and that CREB3L1 is a transcription factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C2 and C3 are well-established facts in the scientific literature. Doxorubicin is a widely used chemotherapy agent with documented anti-tumour activity, and CREB3L1 is a known transcription factor. These background claims require no additional validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    },
+    {
+      "id": "dc321af4-8eb3-4a96-b914-9bd8d227fb09",
+      "content_id": "a4c95216-c023-40ef-bff9-026837ffb5bf",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "A novel mechanism is proposed whereby CREB3L1 cleavage mediates the anti-tumour effects of doxorubicin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C4 describe a proposed mechanism but provide no experimental evidence, methodological details, or data to evaluate the validity of this proposal. The abstract alone is insufficient to assess whether CREB3L1 cleavage actually occurs in response to doxorubicin, whether it is causally linked to anti-tumour effects, or what experimental approaches were used to establish this relationship.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:45:54.223778Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5159202a-917d-44e3-95e7-8dbb180ced19",
+      "result_id": "ec3f7ee2-a8ba-4ada-9908-9d7d4b381f5e"
+    },
+    {
+      "claim_id": "1370c04b-4f76-46b6-8ffb-09c387a4d92b",
+      "result_id": "ec3f7ee2-a8ba-4ada-9908-9d7d4b381f5e"
+    },
+    {
+      "claim_id": "535e6867-bdc6-4d58-8a2c-ebeffeede11b",
+      "result_id": "dc321af4-8eb3-4a96-b914-9bd8d227fb09"
+    },
+    {
+      "claim_id": "c669a191-12d8-4bf1-85f9-4f031e1090d7",
+      "result_id": "dc321af4-8eb3-4a96-b914-9bd8d227fb09"
+    }
+  ],
+  "comparisons": []
+}

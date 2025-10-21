@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors collected approximately 300 expression profiles from 15 yeast species at six physiologically comparable time points during growth on glucose. The data quality is high with median Pearson correlation of 0.97 between replicates and strong correlation between microarray and RNA-Seq validation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly state 'The data look very nice, with physiology-aligned sampling points based on growth phase and nutrient availability.' They describe the dataset as 'excellent and carefully analyzed' without raising concerns about data quality or experimental design."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The Arboretum algorithm is a new computational method that uses a generative probabilistic model to identify expression modules across species and reconstruct their evolutionary history. A key constraint is that every gene must be assigned to exactly one module at any phylogenetic point.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers raise significant concerns about the Arboretum algorithm's constraint that 'every gene (if present in that species) must be assigned to exactly one module,' noting this 'seems to be a very crucial point for much of the analysis' and that 'one would canonically expect that most genes have pleiotropic functions, i.e., could easily be part of more than one module.' They request additional analysis of assignment probabilities and statistical tests to assess whether shifts are significant."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The transcriptional response involves five major modules across all species: Module 1 (ribosome biogenesis), Module 2 (cell division), Module 3 (cell morphogenesis), Module 4 (mitochondrial/proteasome), and Module 5 (respiration/stress response).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers express concern that 'Only five modules are inferred, whereas by eye it is clear from Figures 3 and 4 that there are more than five expression patterns in each species, due to subtle (but likely important) temporal differences.' They note that 'simply defining modules based on \"strong\" versus \"mild\" induction or repression, without subdividing modules by temporal patterns, does not provide a lot of resolution,' leaving 'the biological interpretation of these modules murky.'"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C25",
+      "C29",
+      "C45",
+      "C47"
+    ],
+    "result": "Module expression patterns are conserved across species, but gene membership diverges proportionally to phylogenetic distance. The correlation between expression profiles and phylogenetic distance is statistically significant (r<-0.39 to -0.77, p<3\u00d710\u207b\u2075), and AMCI decreases with increased phylogenetic distance (correlation -0.68, p\u22641.13\u00d710\u207b\u2074).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers do not directly challenge the correlation findings, they express concern that 'the module classification is discrete but doesn't really quantify the divergence in expression very well' and that 'changes of genes from one module to another could potentially be due to small probability shifts of assignment within the algorithm.' This suggests uncertainty about whether the observed divergence patterns are robust or artifacts of the method."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Modules 1 and 5 are the most phylogenetically conserved (94% and 84% stability) and least dynamic, while Modules 2, 3, and 4 are less stable with more frequent reassignment of member genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers do not explicitly challenge these stability findings, but their concerns about the discrete module classification and lack of quantitative divergence measures apply to these claims. They note that 'it would therefore be important to know the second best assignments for these genes and how much the assignment probabilities differ from each other,' which is essential for interpreting stability claims."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C58",
+      "C60",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Prominent changes in gene regulation accompany changes in lifestyle and ploidy, especially in carbon metabolism. Mitochondrial and respiratory genes were reassigned en masse at the WGD ancestor and Schizosaccharomyces ancestor, corresponding to independent evolution of respiro-fermentation. Changes in amino acid, purine, and sulfur metabolism occurred only following WGD.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers raise concerns about interpreting module reassignments, noting that 'genes in Figure 7C look mildly induced to similar levels in Smik and Sbay, but the middle panel shows that the genes are classified into different modules in the two species.' This suggests that the discrete module assignments may not accurately reflect biological divergence, casting doubt on conclusions about coordinated regulatory changes."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Paralogs significantly contribute to regulatory divergence, typically within a short window from duplication. Approximately 53% of sporadically duplicated paralogs that eventually change module assignment do so at their point of duplication, and such paralogs are significantly enriched among reassigned genes at their duplication point but not later.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers do not directly challenge the paralog findings, their fundamental concerns about the Arboretum algorithm's discrete module assignments and the need for statistical tests of assignment significance apply to these claims. The 'short window of opportunity' interpretation depends on the reliability of module reassignment calls, which reviewers question."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "WGD paralogs have a uniquely substantial and prolonged contribution to regulatory divergence compared to sporadically duplicated paralogs. This may be because segmental duplication rarely preserves regulatory regions (causing immediate divergence), while WGD duplicates preserve regulatory inputs and take longer to diverge.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers' concerns about the reliability of module reassignment calls and the need for statistical validation of shifts apply to these claims about differential behavior of WGD versus sporadic duplications. The mechanistic interpretation depends on accurately distinguishing true regulatory divergence from methodological artifacts."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Most paralogs (66%) have at least one member diverging from the ancestral module, with 27% showing classical neo-functionalization, 12% asymmetric divergence, and 27% symmetric divergence. Only 34% conserve ancestral assignments. Neo-functionalized genes are enriched in previously unregulated modules, suggesting genes gain regulation de novo post-duplication.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "These detailed classifications of paralog fates depend entirely on the Arboretum module assignments, which reviewers question. The concern that 'changes of genes from one module to another could potentially be due to small probability shifts of assignment within the algorithm' directly undermines confidence in distinguishing neo-functionalization from other divergence patterns."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Lag phase profiles show the largest divergence between species, while diauxic shift, post-shift, and plateau profiles are most conserved. S. japonicus and S. castellii are the most divergent species, with some lag phase profiles anti-correlated to other species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers criticize that 'the Arboretum approach does not exploit the interesting temporal details' and that there are 'more than five expression patterns in each species, due to subtle (but likely important) temporal differences.' This suggests the method may not adequately capture the temporal divergence patterns being claimed, particularly for lag phase."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C88"
+    ],
+    "result": "Similar patterns of paralog reassignment occur in both heat shock and glucose depletion responses, suggesting these are general evolutionary principles in this phylogeny.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers do not specifically address the heat shock comparison, their fundamental concerns about the Arboretum method's ability to reliably identify module reassignments apply equally to both conditions. The generalization to 'evolutionary principles' depends on the validity of the underlying module assignments."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C71",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Respiratory genes lost Sfp1 binding sites in respiro-fermentative species, while Sfp1 sites remain conserved in Module 1 genes. Purine metabolism and amino acid catabolism genes were reassigned from Module 1 to Module 5 in post-WGD species. These changes in nucleotide biosynthetic pathways may contribute to the respiro-fermentative phenotype and are analogous to the Warburg Effect in cancer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "These mechanistic interpretations depend on the accuracy of module reassignments, which reviewers question. The biological significance of these regulatory changes is uncertain given reviewers' concerns that the method 'doesn't really quantify the divergence in expression very well' and may misclassify genes into different modules despite similar expression levels."
+  }
+]

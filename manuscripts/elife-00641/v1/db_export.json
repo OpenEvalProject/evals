@@ -1,0 +1,133 @@
+{
+  "submission": {
+    "id": "8227525b-03de-4412-8a0e-bf79262547de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:51:54.522102Z",
+    "updated_at": "2025-10-21T22:51:54.522102Z"
+  },
+  "content": [
+    {
+      "id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "submission_id": "8227525b-03de-4412-8a0e-bf79262547de",
+      "content_type": "manuscript",
+      "content_text": "# Multitasking on the run\n\n## Authors\n\n- Mary E Hatten<sup>1</sup> \u2020\n- Stephen G Lisberger<sup>2</sup>\n\n### Affiliations\n\n1. Laboratory of Developmental Neurobiology The Rockefeller University New York United States hatten@rockefeller.edu\n2. Department of Neurobiology and the Howard Hughes Medical Institute Duke University School of Medicine Durham United States lisberger@neuro.duke.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nResearchers combine genetics and imaging to reveal that individual granule cells in the cerebellum integrate sensory and motor information.\n",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0fce1784-f26c-46c0-b5a4-a29e1fceffa9",
+      "content_id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "claim_id": "C1",
+      "claim": "Researchers combine genetics and imaging to reveal that individual granule cells in the cerebellum integrate sensory and motor information.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Researchers combine genetics and imaging to reveal that individual granule cells in the cerebellum integrate sensory and motor information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The claim states that researchers used specific methods (genetics and imaging) to reveal a finding about granule cells. This implies experimental data was collected using these techniques, and the integration function was inferred from the results.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    },
+    {
+      "id": "cbd0ce72-a877-4ebf-b3bd-f9a034ac50cf",
+      "content_id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "claim_id": "C2",
+      "claim": "Individual granule cells in the cerebellum integrate sensory and motor information.",
+      "claim_type": "EXPLICIT",
+      "source_text": "individual granule cells in the cerebellum integrate sensory and motor information",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the primary finding stated in the abstract. It represents a functional assertion about granule cells that was revealed through the research methods mentioned, suggesting it is supported by experimental data and inference from that data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    },
+    {
+      "id": "cd4e361d-b623-4713-8a08-2ca6f7da312b",
+      "content_id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "claim_id": "C3",
+      "claim": "Genetics can be used as a method to study granule cells in the cerebellum.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Researchers combine genetics and imaging to reveal that individual granule cells in the cerebellum integrate sensory and motor information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement that researchers combined genetics with imaging to study granule cells implies that genetics is a viable methodological approach for investigating these cells, though this is not explicitly stated as a separate claim.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    },
+    {
+      "id": "c28ae00d-e880-452d-b89f-d9e0e36752fe",
+      "content_id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "claim_id": "C4",
+      "claim": "Imaging can be used as a method to study granule cells in the cerebellum.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Researchers combine genetics and imaging to reveal that individual granule cells in the cerebellum integrate sensory and motor information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement that researchers combined imaging with genetics to study granule cells implies that imaging is a viable methodological approach for investigating these cells, though this is not explicitly stated as a separate claim.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ebede2a2-b0ab-4039-9ba6-a9bf69ff6df1",
+      "content_id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Individual granule cells in the cerebellum integrate sensory and motor information, as revealed through combined genetics and imaging approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1 and C2 state the main finding but this is an abstract-only manuscript lacking methodological details, experimental data, statistical analyses, controls, or sample sizes. Without access to the actual experimental evidence, replication details, or validation of the integration claim, the result cannot be evaluated as supported. The manuscript appears to be a commentary or perspective piece rather than a primary research article presenting original data.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    },
+    {
+      "id": "bad0549c-dd49-4aa6-bb29-1f6dbcdf3e6b",
+      "content_id": "d7e84d29-1b3b-4dc1-859a-54b0c2135890",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Genetics and imaging are viable methodological approaches for studying granule cells in the cerebellum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C3 and C4 are implicit methodological assertions inferred from C1. While these techniques are established in neuroscience, the manuscript provides no details about specific genetic tools (e.g., transgenic lines, viral vectors), imaging modalities (e.g., two-photon microscopy, calcium imaging), temporal/spatial resolution, or validation of these methods for the stated purpose. The viability of these approaches for demonstrating sensory-motor integration in individual granule cells cannot be assessed without experimental details.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:51:54.522102Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fce1784-f26c-46c0-b5a4-a29e1fceffa9",
+      "result_id": "ebede2a2-b0ab-4039-9ba6-a9bf69ff6df1"
+    },
+    {
+      "claim_id": "cbd0ce72-a877-4ebf-b3bd-f9a034ac50cf",
+      "result_id": "ebede2a2-b0ab-4039-9ba6-a9bf69ff6df1"
+    },
+    {
+      "claim_id": "cd4e361d-b623-4713-8a08-2ca6f7da312b",
+      "result_id": "bad0549c-dd49-4aa6-bb29-1f6dbcdf3e6b"
+    },
+    {
+      "claim_id": "c28ae00d-e880-452d-b89f-d9e0e36752fe",
+      "result_id": "bad0549c-dd49-4aa6-bb29-1f6dbcdf3e6b"
+    }
+  ],
+  "comparisons": []
+}

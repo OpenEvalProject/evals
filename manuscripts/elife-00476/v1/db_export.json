@@ -1,0 +1,120 @@
+{
+  "submission": {
+    "id": "06f58034-6cd8-43bb-b2bc-d1abb44a5ba0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:45:52.764688Z",
+    "updated_at": "2025-10-21T22:45:52.764688Z"
+  },
+  "content": [
+    {
+      "id": "763ff063-14f4-4443-98f6-22e25cb56954",
+      "submission_id": "06f58034-6cd8-43bb-b2bc-d1abb44a5ba0",
+      "content_type": "manuscript",
+      "content_text": "# \u2018Cryptic\u2019 exons reveal some of their secrets\n\n## Authors\n\n- John A Calarco<sup>1</sup> \u2020\n\n### Affiliations\n\n1. FAS Center for Systems Biology Harvard University Cambridge United States jcalarco@fas.harvard.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nBy regulating the inclusion of \u2018cryptic\u2019 exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.\n",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fb3ee229-e743-45fd-9119-ddbdb3cbd69e",
+      "content_id": "763ff063-14f4-4443-98f6-22e25cb56954",
+      "claim_id": "C1",
+      "claim": "NOVA proteins regulate the inclusion of 'cryptic' exons in messenger RNA in nerve cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The abstract states this as a finding but does not provide experimental data, citations, or detailed evidence within this manuscript excerpt.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    },
+    {
+      "id": "4fa8d8a1-85f6-4f27-921d-69a1e2af2d86",
+      "content_id": "763ff063-14f4-4443-98f6-22e25cb56954",
+      "claim_id": "C2",
+      "claim": "NOVA proteins influence the abundance of proteins corresponding to messenger RNAs containing cryptic exons.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is stated as a consequence of NOVA protein regulation, but no experimental data or citations are provided in this manuscript excerpt to support this claim.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    },
+    {
+      "id": "a0d6e37e-5ddb-4c5b-bac6-22adc762699e",
+      "content_id": "763ff063-14f4-4443-98f6-22e25cb56954",
+      "claim_id": "C3",
+      "claim": "The regulation of cryptic exon inclusion by NOVA proteins occurs specifically in nerve cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The location (nerve cells) is explicitly stated but no supporting data or citations are provided in this manuscript excerpt.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    },
+    {
+      "id": "7ed40c51-f884-4068-91fa-1788692f4071",
+      "content_id": "763ff063-14f4-4443-98f6-22e25cb56954",
+      "claim_id": "C4",
+      "claim": "Cryptic exons can be included in messenger RNA.",
+      "claim_type": "IMPLICIT",
+      "source_text": "By regulating the inclusion of 'cryptic' exons in messenger RNA in nerve cells, NOVA proteins are able to influence the abundance of the corresponding proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The statement about regulating inclusion implies that cryptic exons are capable of being included in mRNA, though this is not directly stated as a separate claim.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef903d7b-76df-4fbb-b1bb-d70c2daf746b",
+      "content_id": "763ff063-14f4-4443-98f6-22e25cb56954",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "NOVA proteins regulate the inclusion of cryptic exons in messenger RNA specifically in nerve cells, thereby influencing the abundance of the corresponding proteins. This regulatory mechanism depends on the capacity of cryptic exons to be included in mRNA transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "All claims (C1-C4) are based solely on inference without experimental data, statistical analysis, or citations provided in this manuscript excerpt. The abstract presents these as findings, but the excerpt lacks the methodological details, controls, sample sizes, or empirical evidence necessary to evaluate whether the claims are supported by rigorous experimentation. This appears to be a commentary or perspective piece rather than a primary research article, making it impossible to assess the underlying evidence.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:45:52.764688Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fb3ee229-e743-45fd-9119-ddbdb3cbd69e",
+      "result_id": "ef903d7b-76df-4fbb-b1bb-d70c2daf746b"
+    },
+    {
+      "claim_id": "4fa8d8a1-85f6-4f27-921d-69a1e2af2d86",
+      "result_id": "ef903d7b-76df-4fbb-b1bb-d70c2daf746b"
+    },
+    {
+      "claim_id": "a0d6e37e-5ddb-4c5b-bac6-22adc762699e",
+      "result_id": "ef903d7b-76df-4fbb-b1bb-d70c2daf746b"
+    },
+    {
+      "claim_id": "7ed40c51-f884-4068-91fa-1788692f4071",
+      "result_id": "ef903d7b-76df-4fbb-b1bb-d70c2daf746b"
+    }
+  ],
+  "comparisons": []
+}

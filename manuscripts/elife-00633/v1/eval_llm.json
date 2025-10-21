@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Deletion of Lsd1 in hematopoietic stem cells using VavCre results in pancytopenia with significantly reduced blood counts, reduced bone marrow cellularity, and vastly distorted stem and progenitor cell compartments with over 30-fold reduction in LS+K+ and LS-K+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C14-C18 provide converging evidence from multiple measurements (blood counts, bone marrow cellularity, flow cytometry) demonstrating severe hematopoietic defects. The data are internally consistent and supported by appropriate quantification with statistical analysis (n\u22654-8 per group)."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Lsd1-deficient LT-HSCs maintain their immunophenotypic identity but fail to differentiate properly in vitro, producing small colonies of immature blasts with LS+K+ phenotype rather than mature Gr1+ Mac1+ myeloid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C19-C21 are supported by complementary approaches: single-cell qPCR immunophenotyping confirms LT-HSC identity (C19), while colony assays demonstrate functional differentiation defects with morphological and flow cytometric validation (C20-C21). The experimental design appropriately controls for cell identity by sorting before Lsd1 deletion."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C46"
+    ],
+    "result": "Lsd1-deficient bone marrow cells fail to contribute to multilineage hematopoiesis in competitive transplantation and lose HSC and progenitor populations over time, indicating defects in both differentiation and self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C22-C23 and C46 are supported by competitive transplantation data showing loss of donor chimerism in mature lineages and near-complete loss of HSC/progenitor populations at 12 weeks (n=4-12 recipients). The inference about self-renewal defects (C46) is reasonable given the progressive loss of HSCs in a competitive setting."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C45"
+    ],
+    "result": "Lsd1 is essential for terminal differentiation in multiple lineages, with Mx1Cre deletion causing loss of mature granulocytes and EpoRCre deletion resulting in lethal embryonic anemia with 20-fold reduction in reticulocytes/erythrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C24-C27 and C45 demonstrate lineage-specific terminal maturation defects using appropriate Cre drivers. Flow cytometry and phenotypic analysis provide clear evidence of maturation blocks in both granulocytic and erythroid lineages (n\u22655-10 per group with statistical significance)."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C47",
+      "C70",
+      "C72"
+    ],
+    "result": "Loss of Lsd1 results in upregulation of HSPC signature genes and Hox genes across multiple cell types (Gr1dim Mac1+ myeloid cells, CD71+ c-Kit+ erythroid cells, and CD150+ CD48- LSK cells), indicating failure to repress stem/progenitor gene expression programs during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C28-C31, C47, C70, and C72 are supported by GSEA analysis of microarray data from multiple sorted cell populations showing consistent upregulation of HSPC signatures. The use of established gene signatures and appropriate statistical methods (GSEA with FDR) strengthens these findings. Multiple biological replicates (n=4) were used for validation by qPCR."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "Lsd1 occupies 25,173 genomic sites predominantly at intergenic (40%) and intronic (38%) regions with limited promoter binding (15%), and occupies 55% of genes upregulated in Lsd1 knockout cells, indicating direct regulation at both enhancers and promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C32-C35 and C42 are supported by ChIP-Seq data with validation by ChIP-qPCR showing >85% concordance (16/18 sites) between cell line and primary cells (C33). The integration of ChIP-Seq with gene expression data provides evidence for direct regulation, though the use of 32D cell line for initial ChIP-Seq is a limitation partially addressed by validation."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C49",
+      "C75"
+    ],
+    "result": "While global H3K4me1/me2 levels remain unchanged, Lsd1 deletion causes localized increases in H3K4me1 at enhancers and H3K4me2 at promoters of HSPC genes, with KO-specific peaks highly enriched in LSK signature genes (ES: 2.31-2.60, p<10^-14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C36-C39, C43, C49, and C75 demonstrate that Lsd1 acts locally rather than globally. Western blot shows no global changes (C36), while ChIP-Seq with MAnorm normalization reveals localized increases at specific loci. The enrichment statistics are highly significant and the correlation between histone modifications and gene expression is well-established (C37)."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C74"
+    ],
+    "result": "Genes with Lsd1 bound at both distal and promoter regions are highly enriched in LSK signature (ES: 2.02, p=2.53\u00d710^-11) and include key HSC regulators (Meis1, Gfi1b, Myb, \u03b2-catenin, Runx1), while Lsd1 target genes are not enriched in granulocyte signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C40-C41 and C74 are supported by enrichment analysis with highly significant p-values and identification of biologically relevant target genes with established roles in HSC function. The lack of enrichment in granulocyte signatures (C74) supports the specificity of Lsd1's repressive function on HSPC genes."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C6",
+      "C44",
+      "C48",
+      "C52",
+      "C71",
+      "C73"
+    ],
+    "result": "Lsd1 is an indispensable epigenetic governor of hematopoietic differentiation that represses HSPC gene expression programs, and failure to silence these genes compromises both HSC differentiation and terminal maturation across multiple lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C2-C3, C6, C44, C48, C52, C71, and C73 represent the main conclusions integrating phenotypic, gene expression, and epigenomic data. The evidence is comprehensive and internally consistent across multiple experimental approaches, cell types, and Cre drivers. The causal link between gene derepression and differentiation defects is well-supported by the correlation between molecular and phenotypic data."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C50",
+      "C51"
+    ],
+    "result": "Lsd1 acts at both transcription start sites and enhancer regions, occupying approximately 30% of active enhancers in mature myeloid cells, and serves a critical role in regulating enhancer activity through H3K4me1 demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4-C5, C50-C51 are supported by ChIP-Seq data showing Lsd1 binding patterns and H3K4me1 changes at enhancers. The 30% occupancy calculation (C51) is derived from comparison with H3K27ac-marked active enhancers. The inference about critical role in enhancer regulation (C50) is reasonable given the data, though the word 'critical' implies necessity that is supported by the functional defects observed."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Lsd1 is proposed as an epigenetic governor required broadly for repression of stem cell gene expression programs during both embryonic stem cell and somatic cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C53 extends beyond the data presented in this study, which focuses on hematopoietic cells. While the current data support Lsd1's role in hematopoietic differentiation and cited studies support roles in ES cells, the claim of 'broad' requirement across all somatic cell types is not directly tested and represents a speculative generalization."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Appreciable or complete inhibition of Lsd1 could have undesired side effects in therapeutic contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C56 is a reasonable inference from the severe hematopoietic defects observed in this study (pancytopenia, loss of multiple lineages) combined with cited studies showing similar findings. This represents an important translational consideration supported by the data, though the specific threshold for 'appreciable' inhibition is not defined."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background knowledge claims about histone modifications, Lsd1 biochemistry, prior knockout studies, and related epigenetic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C7-C13, C54-C55, C57-C69 represent established knowledge from the literature supported by appropriate citations. These provide necessary context for interpreting the current study's findings. While the authors do not independently verify these claims, they are appropriately cited and generally accepted in the field."
+  }
+]

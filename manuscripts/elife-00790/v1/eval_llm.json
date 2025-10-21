@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C64",
+      "C65"
+    ],
+    "result": "The crystal structure of Ecp6 was determined to 1.6 \u00c5 resolution, revealing a tightly packed protein with four disulfide bridges, two glycosylation sites, and three LysM domains with the canonical \u03b2\u03b1\u03b1\u03b2-fold. LysM1 is separated from a compact LysM2-LysM3 body by a flexible linker, and a chitin tetramer was found bound in an interdomain groove between LysM1 and LysM3, forming 12 hydrogen bonds with specific residues from both domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The structural claims (C19-C28, C64-C65) are directly supported by crystallographic data collected at high resolution with appropriate validation. The electron density maps clearly show the bound chitin tetramer, and the structural features are well-defined at 1.6 \u00c5 resolution. The methods describe proper data collection, processing, refinement, and validation procedures."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C40",
+      "C42",
+      "C43"
+    ],
+    "result": "Ecp6 binds chitin through a novel intrachain LysM dimerization mechanism involving LysM1 and LysM3, creating a composite binding site with ultra-high picomolar affinity that is approximately 1 million times higher than LysM2 alone. This ultra-high affinity explains how LysM effectors outcompete plant host receptors for chitin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C2, C3, C40 are supported by the crystal structure showing the LysM1-LysM3 binding groove and ITC measurements of HEK293-produced chitin-free Ecp6 demonstrating picomolar affinity. The comparison to LysM2's micromolar affinity (C42) and the conclusion about outcompeting plant receptors (C43) are well-supported by the quantitative binding data and comparison to published plant receptor affinities."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Mutants in the LysM1-LysM3 binding groove (L152R and S177K in LysM3) retained chitin binding ability but showed reduced affinity and were impaired in suppressing chitin-triggered immunity in tomato cells, while maintaining proper protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C29-C31 are supported by ITC data (Figure 3) showing binding and alkalinization assays (Figure 4) demonstrating impaired immune suppression. Circular dichroism data (C33) confirms proper folding. The mutagenesis approach appropriately tests the functional importance of the LysM1-LysM3 binding site."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Mutants T22R and N47K in LysM1 resulted in autoactive proteins that triggered tomato cell responses in the absence of chitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C32 is directly supported by alkalinization assay data (Figure 4A) showing medium alkalinization without chitin addition. This unexpected result is clearly documented and prevents assessment of these mutants' chitin-binding function, which is appropriately acknowledged by the authors."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "LysM2 binds chitin with low micromolar affinity (Kd = 4.5 \u03bcM), and mutants in LysM2 (T95R and D121K) were impaired in both chitin binding and suppression of chitin-triggered immunity while retaining proper folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C34, C36, and C41 are supported by ITC measurements (Figures 5C-D, 7) and alkalinization assays (Figure 5A). Circular dichroism data (C35) confirms proper folding. The convergent evidence from binding and functional assays strongly supports LysM2's independent chitin-binding activity."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C71"
+    ],
+    "result": "Chitin-free Ecp6 was successfully produced in HEK293 cells (4 mg yield), retained the ability to suppress chitin-triggered immunity, and showed two distinct chitin-binding sites with different affinities in ITC analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C37-C39 and C71 are supported by the reported production method, alkalinization assays (Figure 6), and ITC data requiring a two-site binding model (Figure 7). The successful production of chitin-free protein was critical for measuring the true affinity of the LysM1-LysM3 site, though the low yield (4 mg) is noted."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C72",
+      "C73"
+    ],
+    "result": "P. pastoris-produced Ecp6 can suppress chitin-triggered immunity despite only LysM2 being available for binding, even though LysM2's affinity (4.5 \u03bcM) is lower than previously reported tomato cell chitin-binding affinities and the experimental concentrations (100 nM Ecp6, 10 nM chitin) are much lower than the Kd, suggesting insufficient sequestration to explain the observed immune suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C47-C49, C72-C73 are supported by alkalinization assay data and ITC measurements. The quantitative analysis correctly identifies the paradox: at the concentrations used, simple sequestration by LysM2 cannot explain immune suppression. This observation is well-documented and leads logically to the alternative mechanism hypothesis."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "LysM2 may suppress chitin-triggered immunity through interference with host immune receptor complexes rather than chitin sequestration, possibly by binding chitin oligomers already bound by receptor monomers and blocking receptor dimerization. Ecp6 appears to suppress immunity through two mechanisms: efficient sequestration via LysM1-LysM3 and receptor complex perturbation via LysM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C5, C50-C52 are explicitly speculative ('conceivably', 'possibly', 'potentially', 'may') and represent hypotheses inferred from the paradox identified in the previous result. While the speculation is reasonable given the data, no direct experimental evidence is provided for receptor complex interference. The dual-mechanism model (C52) combines supported data (LysM1-LysM3 sequestration) with unsupported speculation (LysM2 receptor interference)."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C55"
+    ],
+    "result": "The structural arrangement of LysMs in AtCERK1 does not allow intrachain LysM dimerization like Ecp6, and convergent evolution has produced different modes of chitin binding in taxonomically diverse organisms. AtCERK1 receptors bind in tandem to long chitin oligomers, prompting dimerization and immune signaling activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C45 and C55 are supported by structural comparison between the Ecp6 structure and the published AtCERK1 structure (Liu et al., 2012). Claim C46 is appropriately attributed to prior work. The comparison effectively demonstrates the structural novelty of Ecp6's intrachain dimerization mechanism versus the interchain mechanism in plant receptors."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C44",
+      "C53",
+      "C54"
+    ],
+    "result": "Background knowledge claims about fungal LysM effectors, chitin as a PAMP, plant immune receptors (CEBiP, CERK1), canonical LysM structure, and convergent evolution in immune recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C1, C6-C18, C44, C53-C54) represent established knowledge appropriately supported by citations to primary literature. The authors correctly attribute findings to original sources and accurately represent the state of knowledge in the field as context for their work."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Methodological details for protein production, purification, crystallization, structure determination, ITC experiments, and circular dichroism measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C56-C63 describe standard, well-established methods with appropriate detail. The crystallographic methods include proper data collection at synchrotron sources, phasing using SAD, model building, and refinement to high resolution. ITC and CD methods follow standard protocols with specified conditions. The methods are sufficiently detailed for reproducibility."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The observation that chitin co-purified with Ecp6 from P. pastoris suggests high-affinity binding and demonstrates Ecp6's potential to instantly bind chitin after secretion. The structural features suggest longer chitin oligomers can bind with four GlcNAc units contacting the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C66-C69 represent reasonable inferences from the structural data. The co-purification of chitin (C66) is a direct observation that supports high-affinity binding, later confirmed by ITC. The inferences about binding longer oligomers (C68-C69) are structurally justified by the solvent-exposed ends of the bound tetramer. Claim C67 is a reasonable functional interpretation."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Attempts to obtain functional chitin-free Ecp6 after denaturing with 8 M urea were unsuccessful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C70 is a straightforward report of a negative experimental result. The authors appropriately document this failed approach before describing the successful alternative strategy using HEK293 cells. This transparency about unsuccessful methods is appropriate."
+  }
+]

@@ -1,0 +1,1815 @@
+{
+  "submission": {
+    "id": "cba608bb-148c-4065-a50e-8279fc86242d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:50:37.502100Z",
+    "updated_at": "2025-10-21T22:50:37.502100Z"
+  },
+  "content": [
+    {
+      "id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "content_type": "manuscript",
+      "content_text": "# Mechanism for priming DNA synthesis by yeast DNA Polymerase \u03b1\n\n## Authors\n\n- Rajika L Perera<sup>1</sup>\n- Rubben Torella<sup>2</sup>\n- Sebastian Klinge<sup>1</sup>\n- Mairi L Kilkenny<sup>1</sup>\n- Joseph D Maman<sup>1</sup>\n- Luca Pellegrini<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n2. Unilever Centre of Molecular Informatics, Department of Chemistry University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00482.001 The DNA Polymerase \u03b1 (Pol \u03b1)/primase complex initiates DNA synthesis in eukaryotic replication. In the complex, Pol \u03b1 and primase cooperate in the production of RNA-DNA oligonucleotides that prime synthesis of new DNA. Here we report crystal structures of the catalytic core of yeast Pol \u03b1 in unliganded form, bound to an RNA primer/DNA template and extending an RNA primer with deoxynucleotides. We combine the structural analysis with biochemical and computational data to demonstrate that Pol \u03b1 specifically recognizes the A-form RNA/DNA helix and that the ensuing synthesis of B-form DNA terminates primer synthesis. The spontaneous release of the completed RNA-DNA primer by the Pol \u03b1/primase complex simplifies current models of primer transfer to leading- and lagging strand polymerases. The proposed mechanism of nucleotide polymerization by Pol \u03b1 might contribute to genomic stability by limiting the amount of inaccurate DNA to be corrected at the start of each Okazaki fragment. DOI: http://dx.doi.org/10.7554/eLife.00482.001\n\n## Introduction\n\nCellular organisms initiate DNA synthesis during genome duplication by the universal mechanism of RNA priming, the assembly of short RNA molecules on the unwound strands of the DNA helix by a specialized DNA-dependent RNA polymerase known as primase (Frick and Richardson, 2001; Kuchta and Stengel, 2010; DePamphilis and Bell, 2011). The RNA primers are extended in an obligate 5\u2032 to 3\u2032 direction by the replicative DNA polymerases that synthesize the bulk of chromosomal DNA. The initiation of DNA synthesis is made more complicated by the concurrent duplication of the antiparallel strands of parental DNA (Hamdan and van Oijen, 2010). The repeated priming events necessary for the discontinuous synthesis of the lagging strand require the constant activity of primase at the replication fork.\n\nIn bacteria and bacteriophages, RNA priming is performed by a single-chain primase, acting in combination with the replicative helicase, to which it is bound by a dynamic interaction or is fused together in the same polypeptide (Patel et al., 2011). The molecular apparatus responsible for initiation of DNA synthesis in eukaryotic replication is more complex. The eukaryotic primase is a heterodimer of catalytic and regulatory subunits that is associated with the catalytic subunit of Pol \u03b1 and its accessory B subunit in a constitutive heterotetrameric assembly, the Pol \u03b1/primase complex (Loeb et al., 1986; Kaguni and Lehman, 1988; Foiani et al., 1997; Lao-Sirieix et al., 2005b). Reflecting its critical importance to DNA replication, the Pol \u03b1/primase complex is an integral component of the eukaryotic replisome (Calzada et al., 2005).\n\nThe oligonucleotides synthesized by bacterial and bacteriophage primases are between 4 and 12 nucleotides long and made exclusively of RNA. In contrast, the Pol \u03b1/primase complex produces longer, composite RNA-DNA primers that result from the concerted enzymatic activities of primase and Pol \u03b1 (Chang et al., 1984; Hu et al., 1984; Singh, et al., 1986). The constitutive association of Pol \u03b1 and primase in the cell reflects presumably their tight functional coordination, demanded by the frequent priming necessary for lagging strand synthesis. Detailed knowledge of the mechanism of primer synthesis is lacking, but it must involves initiation, extension and completion of RNA synthesis by primase, intramolecular hand-off of the RNA oligonucleotide to Pol \u03b1 and limited RNA extension with deoxynucleotides (dNTPs) (Brooks and Dumas, 1989; Kuchta et al., 1990; Copeland and Wang, 1993; Sheaff and Kuchta, 1993; Sheaff et al., 1994). The large subunit of primase performs a critical function in the primer initiation step via its Fe-S domain (Klinge et al., 2007; Weiner et al., 2007), whereas the B subunit of Pol \u03b1 lacks enzymatic activity and likely acts as a scaffold to mediate interactions with other components of the replicative apparatus (Uchiyama and Wang, 2004; Klinge et al., 2009; Zhou et al., 2012).\n\nAfter completion of primer synthesis by Pol \u03b1/primase, the primer is elongated by the processive Pols \u03b4 and \u03b5 that synthesize the majority of chromosomal DNA on the lagging and leading strand templates, respectively. Synchronization of priming with Okazaki fragment synthesis requires a concerted mode of primer transfer from Pol \u03b1 to Pol \u03b4 and several mechanisms of polymerase switch have been put forward (Yuzhakov et al., 1999; Maga et al., 2000). Before ligation of the completed Okazaki fragments, the RNA portion of the primer is excised by specific nucleases such as Fen1 and Dna2 (Burgers, 2009). The composite nature of the RNA-DNA primers poses a special challenge to the eukaryotic replication apparatus, that must further correct the DNA segment synthesized by Pol \u03b1, which lacks proofreading activity; current evidence indicates that the DNA portion of the primer might be corrected by Pol \u03b4 (Pavlov et al., 2006).\n\nDespite its central role in genomic duplication, the molecular mechanism of primer synthesis by the Pol \u03b1/primase complex is poorly understood and structural insights remain limited. Here we use a multi-disciplinary approach to elucidate the structural basis for the catalytic role of Pol \u03b1 in the synthesis of the RNA-DNA oligonucleotides that prime DNA synthesis in eukaryotic replication. We demonstrate that Pol \u03b1 recognizes the intrinsic and induced conformation of the A-form RNA primer/DNA template helix and that the resulting synthesis of B-form DNA forms the basis for a feedback mechanism of primer termination. Our findings provide a new paradigm for a critical step in the complex choreography of events that ultimately lead to replication of the lagging DNA strand.\n\n## Results\n\n## Overall structure of actively copying Pol \u03b1\n\nWe have determined crystal structures of the catalytic core (349\u20131258; 910 amino acids) of yeast Pol \u03b1 in unliganded form (apo), bound to an RNA primer/DNA template duplex (binary complex) and in a productive complex with RNA primer/DNA template and incoming dGTP (ternary complex). For structural studies of the ternary complex, we used a polymerase mutant (D998N) with attenuated catalytic activity. During crystallization of the ternary complex, the polymerase extended the 3\u2032-end of the RNA primer by addition of two deoxyguanosine nucleotides. Thus, our crystal structure captures the actively copying Pol \u03b1 in the act of extending the RNA primer with deoxynucleotides (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-v1.jpg)\n\n**Figure 1.:** (A) The polymerase domain of yeast Pol \u03b1 is shown in complex with an RNA primer/DNA template and dGTP bound in the active site. The polymerase is represented as ribbon, colored blue to red from the N-terminus. The RNA primer and DNA template are shown in dark and light gray, respectively. The two deoxyguanosine nucleotides added to the RNA primer by Pol \u03b1 during the crystallization experiment as shown in light gray. The dGTP nucleotide is shown in spacefill representation. The different subdomains of the polymerase structure are marked in the figure. (B) A view of the RNA primer/DNA template double helix bound to Pol \u03b1. The nucleic acids are shown as stick models; carbon atoms in light brown, nitrogen atoms in blue, oxygen atoms in red and phosphate atoms in orange. The 2\u2032-hydroxyl oxygen atoms of the ribose moieties of the RNA primer are shown in magenta. The polymerase is shown as a clipped molecular surface, in blue. The conformation assigned to each dinucleotide step in the RNA/DNA helix is indicated on the left-hand side of the panel. The first five di-nucleotide steps of the hybrid RNA/DNA helix are numbered one to five, from the 3\u2032-terminus of the RNA primer. (C) Scatter plot of zP, the mean z-coordinate of the backbone phosphorus atoms with respect to individual dinucleotide reference frames, against the mean value for the four \u03c7 torsion angles at each di-nucleotide step, for the RNA/DNA helix bound to Pol \u03b1 (black dots). The data points of the first five steps in the RNA/DNA helix bound to Pol \u03b1 are numbered. For comparison, the values obtained for the DNA double helix bound to yeast Pol \u03b4 (empty dots; PDB entry 3IAY) and phage RB69 Pol (gray dots; PDB entry 1IG9) are also shown. For reference, the values obtained for A- and B-form DNA models based on fiber diffraction analysis are marked in the plot with a black cross. The stereochemical analysis of the RNA/DNA helix was performed with 3DNA (Lu and Olson, 2003).DOI: http://dx.doi.org/10.7554/eLife.00482.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The assay was performed as described in the 'Materials and methods'. The range of protein concentrations tested in the experiment is indicated in the figure. Incubation time was 90 s. Polymerase activity is readily detectable at micromolar levels of protein concentrations.DOI: http://dx.doi.org/10.7554/eLife.00482.004\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The results of the analysis for the RNA 10mer in solution (control; top panel) and recovered from a sample of washed crystals of the ternary complex (bottom panel) are shown. The analysis shows primer extension by two dGMP nucleotides and partial incorporation of a third dGMP, during the crystallization process. Translocation onto the next templating base (Adenine at position -1, see Figure 2C) was prevented from formation of the crystal lattice based on the non-crystallographic dimer of ternary complexes, illustrated in Figure 1\u2014figure supplement 6.DOI: http://dx.doi.org/10.7554/eLife.00482.005\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** o-Fc electron density map at 3.1 \u00c5 resolution, after B-sharpening and contoured at 2.5 rmsd.The map was calculated in PHENIX and displayed in Chimera. (A) Overall view of the double-stranded region of the RNA primer-DNA template in the ternary complex. The refined crystallographic model is shown in stick representation, superimposed on the electron density. (B) Two views of electron density for the ribophosphate backbone of the DNA template (left panel) and RNA primer (right panel), with the refined model superimposed on the density.DOI: http://dx.doi.org/10.7554/eLife.00482.006\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** For comparison, the active site of yeast Pol \u03b4 (PDB id: 3IAY) is shown, superimposed on Pol \u03b1. The polymerase chains are represented as blue (Pol \u03b1) or light blue (Pol \u03b4) ribbons; the nucleic acid, nucleotides and amino acid side chains are drawn as sticks. Carbon atoms in Pol \u03b1 are coloured white, whereas in Pol \u03b4 are coloured in light brown. Only amino acids belonging to Pol \u03b1 are labeled, for clarity. The 3\u2032-hydroxyl in the templated primer bound to Pol \u03b1 is labelled. Three Ca2+ ions identified in the active site of Pol \u03b4 are also shown, as green spheres.DOI: http://dx.doi.org/10.7554/eLife.00482.007\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Trajectory of the ssDNA template on the surface of Pol \u03b1. The deoxy-nucleotides of the DNA template ahead of the templating base fit in a groove formed by the exonuclease and N-terminal regions of Pol \u03b1. (B) In the ternary complex, the aromatic bases project inwards towards the polymerase, whereas the ribophosphate backbone remains largely exposed to solvent. Phe685 in the exonuclease domain protrudes into the groove and stacks its phenyl ring against the base of guanidine in position -3 of the DNA template.DOI: http://dx.doi.org/10.7554/eLife.00482.008\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The figure shows a view of the asymmetric unit that highlights the non-crystallographic dyad relating the two copies of ternary complex. The protein is shown as a ribbon in light blue, and the RNA-DNA duplex as an all-atom stick model, with a thin tube running through the positions of the phosphorus atoms of the ribo-phosphate backbone.DOI: http://dx.doi.org/10.7554/eLife.00482.009\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (A) General view of the contact between Pol \u03b1 and the second, non-crystallographic RNA-DNA molecule in the asymmetric unit. The polymerase is shown as molecular surface in light blue and the position of its RNA-DNA substrate is shown by thin gray tubes. The non-crystallographic RNA-DNA molecule is shown as an all-atom stick model, with the 5\u2032-terminal nucleotide of the RNA primer highlighted in yellow. (B) Atomic details of the non-crystallographic interface between Pol \u03b1 and the second copy of the RNA-DNA molecule in the asymmetric unit of the ternary complex crystals. A negatively-charged loop in the palm domain of Pol \u03b1, including residues D889, D891 and E892, unwinds the 5\u2032-terminal nucleotide of the templated RNA primer. The 5\u2032-terminal nucleotide of the RNA primer remains trapped by multiple polar and hydrophobic interactions in a pocket on the surface of the palm domain, whilst its templating nucleotide in the DNA molecule is disordered in the electron density map and is not included in the crystallographic model.DOI: http://dx.doi.org/10.7554/eLife.00482.010\n\nThe catalytic region of Pol \u03b1 adopts the universal \u2018right-hand' DNA polymerase fold consisting of a palm domain harboring the active site, a fingers domain that interacts with the incoming nucleotide and a thumb domain that grips the primer-template duplex. As the prototypical member of the B-family of DNA polymerases, distinctive structural features that had been identified previously in bacteriophage RB69 Pol (Wang et al., 1997), bacterial DNA Pol II (Wang and Yang, 2009) and yeast Pol \u03b4 (Swan et al., 2009), such as the extended N-terminal region or the antiparallel hairpin fold of the helical fingers domain, are also present in Pol \u03b1.\n\nThe majority of the contacts of the polymerase with the primer/template duplex takes place within a region of 7 bp from the 3\u2032-terminus of the templated primer (Figure 1B). Pol \u03b1's footprint on the primer-template duplex is smaller than normally observed in B-family DNA polymerases and matches the minimal primer size that is efficiently utilized by the polymerase (Kuchta et al., 1990). Four deoxynucleotides of single-stranded DNA template fit in extended conformation within the groove formed by the exonuclease domain and N-terminal region of Pol \u03b1, in agreement with the position of template DNA upstream of the active site previously observed in other B-family DNA polymerases (Hogg et al., 2007; Swan, et al., 2009; Figure 1\u2014figure supplement 5).\n\nIn the crystals, two ternary complexes are related by non-crystallographic dyad symmetry, which brings into contact one end of each RNA/DNA duplex with the palm domain of the other polymerase molecule (Figure 1\u2014figure supplements 6 and 7). The acidic tip of a long loop connecting the palm and finger domains unwinds the first base pair of the RNA/DNA duplex, capturing the 5\u2032-end nucleotide of the RNA primer in a surface pocket on the palm domain. Such interaction would potentially begin the unwinding of the templated RNA primer, in preparation for its excision. However, the physiological relevance of our structural observation is currently unclear.\n\nThe RNA primer\u2013DNA template helix bound to Pol \u03b1 adopts overall an A-DNA conformation. Clustering analysis for each dinucleotide step of the mean z-coordinates of the phosphorus atoms with the glycosyl torsion angle \u03c7 (Lu et al., 2000) identifies a continuous stretch of six dinucleotide steps as A-DNA and one step as B-DNA flanked by dinucleotides in A-like conformation (Figure 1C). As a control, the clustering analysis identifies correctly the double-stranded DNA bound productively by B-family Pol \u03b4 and RB69 Pol as B-form DNA and the dinucleotide step at the primer 3\u2032-end as of A-like character.\n\n## Specific recognition of the RNA primer\n\nExtensive structural analysis has demonstrated that the palm and thumb domains of actively copying DNA polymerases make continuous contact with the minor groove of the primer-template DNA over a full turn of the DNA double helix. Interactions of the palm domain with the primer-template help position the 3\u2032-terminus of the primer in optimal arrangement for catalysis, whereas the thumb domain secures the grip of the polymerase onto the DNA duplex. Strikingly, the structure of Pol \u03b1 bound productively to RNA primer/DNA template shows that, although the palm domain makes a canonical set of interactions with the first 3 bp of the primer-template helix, the thumb domain engages almost exclusively with the RNA primer strand (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig2-v1.jpg)\n\n**Figure 2.:** (A) Identical views of active complexes of yeast Pols \u03b1 (left) and \u03b4 (Swan et al., 2009; right; PDB entry 3IAY), bound to primer/template duplexes and incoming deoxynucleotide. The polymerase structures are depicted as ribbons (Pol \u03b1, blue; Pol \u03b4, cyan). Primer/template duplexes are shown in spacefill representation and colored light brown, with the exception of the phosphate groups that have red oxygen atoms and orange phosphate atoms. The 2\u2032-hydroxyl oxygen atoms in the ribose moieties of the RNA are highlighted in magenta. (B) The interface between the thumb domain of Pol \u03b1 and the RNA primer/DNA template duplex. The ribo-phosphate backbone is shown as a thin tube, in salmon and pale yellow color for the RNA and DNA strands, respectively, and the bases are depicted as rungs of a ladder. Pol \u03b1 is shown as a molecular surface, colored gray except for atoms that are within a 5 \u00c5 radius of the RNA primer or the DNA template, that are colored as the nucleic acid strand. (C) Schematic diagram of the interactions of Pol \u03b1\u2032s thumb domain with the RNA/DNA helix. The ribophosphate portion of nucleotides that interact with the thumb domain is shaded gray. A small circle at position two of the ribose ring indicates the RNA nucleotides. (D) Hydrophobic contacts of the thumb domain with the exposed minor groove of the RNA/DNA helix. The protein is shown as thin blue tube and amino acid side chains as sticks with white carbon atoms, yellow sulfur atoms and red oxygen atoms. The RNA primer is shown as sticks, with atoms colored as in panel A. Protein-RNA contacts are shown as dashed green lines.DOI: http://dx.doi.org/10.7554/eLife.00482.012\n\nThe interactions between the thumb domain and the RNA primer are concentrated in a contiguous region of five nucleotides, from position two to six of the RNA primer and involve solely the ribose and phosphate moieties of the RNA backbone (Figure 2C). Two sequence motifs, residues 1074\u20131077 in the long segment of the L-shaped thumb, and residues 1130\u20131150 in the tip of the thumb, form a continuous protein interface that tracks the position of the phosphodiester backbone of the RNA primer. Pol \u03b1 exploits the wide, shallow nature of the minor groove of the RNA/DNA helix with a series of hydrophobic contacts involving the side chains of Met1131, Leu1133, Tyr1140, Pro1141, Met1146, which recognize the C3\u2032-endo conformation of the ribose moieties of RNA nucleotides in position four to six (Figure 2D).\n\nThe contiguous pair of invariant arginine residues 1075 and 1076 straddles the ribose-phosphate backbone between nucleotides three and four from the 3\u2032-end of the RNA primer (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig3-v1.jpg)\n\n**Figure 3.:** (A) Close-up view of the interaction of Arg1075 with the RNA primer. A hydrogen bond interaction between the carboxylate group of Glu1077 and Arg1075 is also shown, as a yellow dashed line. The protein is shown as thin blue tube and amino acid side chains as sticks with white carbon atoms, blue nitrogen atoms and red oxygen atoms. The RNA primer is shown as sticks, with atoms colored as in Figure 2A. A black arrow highlights the position of the 2\u2032-hydroxyl moiety of the ribose ring. For clarity, the DNA template has been omitted. (B) Close-up view of the interaction of Pol \u03b4 Arg839 with the DNA primer, in the same orientation as Pol \u03b1 in panel A. The interaction of Asp841 with Arg839 is also shown. (C) Conformation of the RNA primer bound to Pol \u03b1. The polymerase is shown as a clipped molecular surface, in light blue. The position of Arg1075 and Arg1076 is indicated in dark blue. Color scheme is as in Figure 2A. The DNA template strand is omitted for clarity. (D) Polar contacts at the interface between Pol \u03b1's thumb domain and the RNA primer. Hydrogen bonds between the phosphate groups of the RNA primer and main chain nitrogen atoms of the thumb domain are depicted as dashed yellow lines. Color scheme is as in Figure 2A. The DNA template strand is omitted for clarity.DOI: http://dx.doi.org/10.7554/eLife.00482.013\n\nThe hydrogen-bond network between thumb domain and RNA is augmented by polar interactions contributed by the side chains of Lys1132, Ser1134, Lys1135 and Tyr1140 (Figure 3D). The G1116E mutation in fission yeast Pol \u03b1 at the equivalent position to Ser1134 causes a defect in mating-type switching (Singh and Klar, 1993): the close interaction of Ser1134 with the RNA primer suggests that the defect might be caused by weakened affinity of Pol \u03b1 for its primer-template substrate.\n\n## Limited extension of the RNA primer\n\nThe crystallographic analysis pointed to a specific mechanism for the intrinsic and induced recognition of the templated RNA primer by Pol \u03b1. The result of the structural study prompted us to investigate whether the polymerase activity of Pol \u03b1 reflected such specificity. In order to test this hypothesis, we examined the ability of the polymerase domain of yeast Pol \u03b1 to extend with deoxynucleotides a templated primer made of either RNA or DNA. Whereas Pol \u03b1 displayed only weak activity and limited processivity when extending a DNA primer, extension of an RNA primer resulted in much higher levels of polymerization (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig4-v1.jpg)\n\n**Figure 4.:** (A) Primer extension assay, analyzed by denaturing acrylamide gel electrophoresis and [\u03b1-32P]dATP phosphorimaging. The wild-type polymerase domain of yeast Pol \u03b1 was incubated at 37\u00b0C with poly(dT) 70mer template, dATP and either an oligo(A) or oligo(dA) 15mer primer (see \u2018Materials and methods' for details). The reaction products were analyzed at the indicated time points. (B) Quantitative product size-distribution analysis of the primer extension assay in panel A. For each time point, the intensities of the RNA and DNA primer extension products were measured and normalized relative to the measured intensity of the 12mer product in the RNA primer lane. The normalized values of the RNA and DNA-primer extension products are plotted against the size of the extension product, as number of bases, in the top and bottom panels, respectively. The normalized values are the average of three independent measurements. (C) Primer extension assay. The catalytic domain of yeast Pol \u03b1 and a recombinant version of the yeast Pol \u03b1/primase complex were incubated at 37\u00b0C and for 60 s with a poly(dT) 70mer template, dATP and either an oligo(A) or oligo(dA) of different length, as indicated in the panel. (D) Primer extension assay. The catalytic domain of yeast Pol \u03b1 was incubated at 37\u00b0C and for 60 s with dATP and one of the following 5\u2032-to-3\u2032 primer/template pairs: A12, A12/(dT)50; dA12, (dA)12/(dT)50; 2 G, A5GGA5/T43CCT5; 4 G, AGGA2GGA5/T43CCT2CCT ; 6 G, AGGA2GGAGGA2/T40CCTCCT2CCT; 7 G, AGGAGGGAGGA2/T40CCTCCCTCCT.DOI: http://dx.doi.org/10.7554/eLife.00482.014\n\nThe marked difference in catalytic behavior of Pol \u03b1 in the presence of either an RNA or a DNA primer is consistent with the crystallographic evidence that Pol \u03b1 recognizes structural features of the primer-template helix. Elongation of the RNA primer with deoxynucleotides would cause translocation of the polymerase beyond the RNA/DNA duplex region and onto B-DNA, with loss of the RNA-specific contacts, eventually causing Pol \u03b1 to stall and terminate primer synthesis. We sought to test this mechanism of primer termination by design of DNA primer sequences with altered conformational properties. It is known that, although double-stranded DNA normally adopts a B-DNA conformation, its structure can display pronounced conformational variation depending on the local sequence of bases. Short runs of consecutive deoxyguanosine nucleotides can induce A-like DNA conformation in double-stranded DNA (Svozil et al., 2008; Marathe et al., 2009). We examined the ability of Pol \u03b1 to extend a templated oligo(dA) primer with increasing deoxyguanylate content, introduced incrementally as di- and tri-nucleotides. Indeed, as the deoxyguanosine content of the DNA primer increased, the size profile of the extension products synthesized by Pol \u03b1 changed from that expected of a DNA primer to that of an RNA primer (Figure 4D).\n\n## RNA-DNA primer termination and release\n\nThe observation that extension of the RNA primer is limited to a single turn of double helix indicates that termination of primer synthesis might be triggered by the loss of specific interactions of Pol \u03b1 with the RNA/DNA duplex. Further insight as to the possible structural basis for a termination mechanism can be obtained by comparing the structures of isolated and actively copying Pol \u03b1, which reveals a striking difference in the position of the thumb domain. In order to adopt the conformation observed in ternary complex, the thumb domain of Pol \u03b1 must rotate inwards by about 20\u00b0, a large conformational rearrangement compared for instance with the limited movement of the thumb domain observed in structures of isolated and copying RB69 Pol (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig5-v1.jpg)\n\n**Figure 5.:** (A) Structural superposition of the isolated and active conformations of the polymerase domain of Pol \u03b1 (left) and RB69 Pol (Wang et al., 1997; Franklin et al., 2001; right; PDB entries 1IH7 and 1IG9). The protein is shown as ribbons and the nucleic acid duplex as sticks. The polymerase domain is colored light blue (apo) and dark blue (active conformation). In order to help visualize the difference between apo and active conformations of the polymerase, the major inertia axis of the thumb domain for each structure is also shown (Pettersen et al., 2004). (B) Change in root mean square deviation (RMSD) of the C\u03b1 positions over the time of simulation for the HOLO (100 ns; left panel) and APO trajectories (150 ns; right panel), calculated relative to the starting structure of the trajectory (see \u2018Materials and methods' for details). (C) Time-dependent projection on the first two principal components of the trajectory of the apo polymerase structure (150 ns, light blue trace), the polymerase structure in the ternary complex (100 ns, dark blue trace) and the polymerase structure starting from the conformation adopted in the ternary complex, but in absence of the RNA/DNA duplex and deoxynucleotide (100 ns; green trace). A black arrow marks the starting position of the green trace. The position of the crystallographic models of the polymerase in the apo form and in the ternary complex is marked by an orange cross.DOI: http://dx.doi.org/10.7554/eLife.00482.015\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The mean RMSF values of the two HOLO trajectories were subtracted from the mean RMSF value of the two APO trajectories. The approximate boundaries of the polymerase domains are indicated below the diagram.DOI: http://dx.doi.org/10.7554/eLife.00482.016\n\nWe explored this model by performing nanosecond (ns) molecular dynamics simulations of the catalytic domain of Pol \u03b1, based on the crystallographic models of isolated and actively copying polymerase (Figure 5B and Figure 5\u2014figure supplement 1). Principal component analysis of the trajectories shows that the actively copying polymerase maintains a stable conformation over the 100 ns duration of the simulation. In comparison, the structure of the isolated polymerase displays considerable conformational fluctuations, indicative of large-scale conformational changes and local loss of secondary structure that affect in particular the N-amino terminal region and the thumb domain. Importantly, the conformational flexibility of the isolated polymerase does not seem to be sufficient to sample conformations adopted by the polymerase in the ternary complex.\n\nIn order to determine whether the conformation of the actively copying polymerase can be maintained in the absence of the RNA/DNA duplex and deoxynucleotide, we analyzed the behavior of the polymerase taking the conformation adopted in the ternary complex as the starting point for the simulation. The trajectory showed an increased conformational instability, accompanied by a tendency to relax towards the apo conformation of the polymerase (Figure 5C and Video 1). Taken together, the results of the molecular dynamics simulations indicate that Pol \u03b1 reaches the active conformation observed in the ternary complex via an \u2018induced fit' mechanism that is dependent on its interactions with the RNA/DNA duplex and deoxynucleotide. Loss of the optimal set of protein-RNA contacts would weaken the grip of the polymerase on its primer/template substrate and promote primer release.10.7554/eLife.00482.017Video 1.Principal motion of the Pol \u03b1 structure in the simulated trajectory of the polymerase, starting from the conformation adopted in the ternary complex but in the absence of RNA/DNA and dGTP (APOFORCED trajectory; see \u2018Materials and methods' for details). The movie was prepared with the MD movie tool in Chimera, by interpolation of 30 Pol \u03b1 structures representative of the APOFORCED trajectory. The Pol \u03b1 structure is shown as a ribbon, coloured blue to red from the N- to the C-terminal end of the polypeptide.DOI: http://dx.doi.org/10.7554/eLife.00482.017\n\n## Palm domain movement controls nucleotide access to active site\n\nIt is well established that adoption of a conformation competent for catalysis by DNA polymerases requires the concerted movements of the fingers domain, that rotates upwards to form the nucleotide binding site, and of the thumb domain, that embraces the primer-template duplex. Comparison of Pol \u03b1 structures in the apo, binary and ternary complex reveals a further and unexpected rearrangement: as the polymerase morphs from the apo to the active conformation, the palm domain tilts away from the rising fingers, by rotating on the short helix containing the highly conserved 864-DFNSLYPS-871 motif, known as region II of B-family DNA polymerases (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig6-v1.jpg)\n\n**Figure 6.:** (A) Structural superposition of the polymerase domain of Pol \u03b1 in the apo form (light blue), in the binary (blue) and ternary (dark blue) complex. Only the palm and fingers domains of the polymerase are shown. The position of the region II sequence, conserved in B-family DNA polymerases, is indicated. (B) Polypeptide conformation in the region II sequence of Pol \u03b1. From left to right, the panel shows the conformation of the polymerase in the apo form (light blue), in the two polymerase molecules in the asymmetric unit of the binary complex crystals (blue) and in the ternary complex form (dark blue). The polypeptide is shown as a thin tube. The 866-NS-867 di-peptide and the dGTP nucleotide are shown as sticks.DOI: http://dx.doi.org/10.7554/eLife.00482.018\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Both structures present in the asymmetric unit of the binary complex crystals are shown, as they differ markedly in conformation of the thumb and palm domains (see also text for details). The polymerase is shown as ribbon, coloured blue to red from the N-terminus. The RNA/DNA molecule is shown as all-atom stick model.DOI: http://dx.doi.org/10.7554/eLife.00482.019\n\nRotation of the palm domain is accompanied by a conformational rearrangement of region II that is necessary in order to accommodate the phosphoribose moiety of the incoming nucleotide (Figure 6B). The two copies of binary complex present in the asymmetric unit of the crystals capture intermediate states of the transition, as in one binary complex the conformation of region II is apo-like, whereas in the second copy region II adopts a conformation akin to that observed in the ternary complex. The range of positions adopted by the palm domain in the apo, binary and ternary complex structures suggests that adoption of an active conformation by Pol \u03b1 might require a wider set of conformational rearrangements than predicted by current models of DNA polymerase activity. The observed movement of the palm domain could participate in a \u2018ratchet' mechanism for unidirectional translocation of Pol \u03b1, as return of the palm domain to the apo conformation after catalysis would propel the polymerase forward onto the next templating base. Interestingly, site-specific mutations of Ser863 in region II of human Pol \u03b1 (Ser867 of yeast Pol \u03b1), which acts as the pivot during rotation of the palm domain, cause a drastic reduction in the specific activity of the polymerase without changing its kinetic parameters, in agreement with a potential structural role of this serine residue in DNA polymerisation (Dong et al., 1993).\n\n## Discussion\n\nHere we have presented structural, biochemical and computational experiments that address the essential role of Pol \u03b1 in the initiation of DNA synthesis in eukaryotic replication. Our findings provide evidence for a specific mechanism of RNA primer recognition, limited extension and termination by Pol \u03b1, that is encoded in the interaction of the polymerase with the hybrid RNA primer/DNA template helix (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00482/elife-00482-fig7-v1.jpg)\n\n**Figure 7.:** (A) Priming eukaryotic replication requires synthesis of an RNA primer by the primase subunit of the Pol \u03b1/primase complex, intramolecular primer hand-off to the catalytic subunit of Pol \u03b1 and limited primer extension with DNA; processive elongation of the completed RNA-DNA primer by Pol \u03b4 results in Okazaki fragment synthesis. The ribbon model of the Pol \u03b1/primase complex was assembled from the crystal structures of apo Pol \u03b1 (this manuscript), the yeast Pol \u03b1 CTD\u2013B subunit complex (Klinge et al., 2009), and the archaeal primase (Lao-Sirieix et al., 2005a). The location of the Pol \u03b1/primase complex components in the model is based on previous electron microscopy and biochemical data (Nunez-Ramirez et al., 2011; Kilkenny et al., 2012) and is not meant to give an accurate representation of their reciprocal spatial relationship. The crystal structures of isolated and copying Pol \u03b1 and Pol \u03b4 are shown in spacefill representation. The model of Pol \u03b4 is based on PDB entry 3IAY (Swan et al., 2009). In the diagram, DNA is shown in yellow and RNA in magenta. (B) The catalytic cycle of Pol \u03b1 consists of specific recognition of the templated RNA primer, rapid and limited primer extension with dNTPs and termination of synthesis induced by polymerization of B-form DNA. Constitutive tethering of primase to Pol \u03b1 (not drawn in the panel; Kilkenny et al., 2012) ensures efficient recycling of Pol \u03b1 onto the 3\u2032-terminus of the next RNA primer.DOI: http://dx.doi.org/10.7554/eLife.00482.021\n\nThe emerging picture of Pol \u03b1 as a specialized polymerase that extends processively an RNA primer with deoxynucleotides to the limited size of a helical turn has important implications for our understanding of lagging strand synthesis. Uninterrupted DNA synthesis during replication depends on the tight coordination of Pol \u03b1 function with the upstream activity of primase, that synthesizes the RNA primer, and the downstream activity of Pol \u03b4, that elongates the resulting RNA-DNA primers. The efficient mechanism for the rapid extension and controlled termination of RNA primers by Pol \u03b1 uncovered here seems ideally suited for the frequently repeated, highly integrated priming events taking place on the lagging strand template. After termination of synthesis and release of the completed primer, the physical tethering of Pol \u03b1 to primase would facilitate its recycling onto the 3\u2032-end of the next RNA primer (Nunez-Ramirez et al., 2011; Kilkenny et al., 2012).\n\nThe evidence for a mechanism of primer release which stems from Pol \u03b1's ability to discriminate between different shapes of the primer-template helix is relevant to our mechanistic understanding of the coordinated sequence of events that take place during Okazaki fragment synthesis. Spontaneous primer release once a helical equivalent of deoxynucleotides has been added to the RNA primer would make the 3\u2032-terminus of the RNA-DNA primer directly available for extension by Pol \u03b4 and Pol \u03b5, the DNA polymerases that synthesize the bulk of genomic DNA. Such a mechanism provides a straightforward model of primer hand-off in eukaryotic replication, by removing the need for molecular transactions between primer-bound Pol \u03b1 and the replicative apparatus deputed to leading and lagging strand synthesis. We note that, although the molecular details differ, the mechanism of primer release by Pol \u03b1 described here is conceptually similar to the mechanism of polymerase switching proposed for Pol \u03b7 after lesion by-pass (Biertumpfel et al., 2010; Silverstein et al., 2010): for both polymerases, termination of DNA synthesis appears to be a direct consequence of the specific way in which they interact with their nucleic acid substrate.\n\nThe ability of primases to synthesise RNA primers of discrete size has been well characterized (Kuchta and Stengel, 2010). Our work has highlighted a previously unappreciated functional similarity between primase and Pol \u03b1, as extension of an RNA primer by Pol \u03b1 leads to controlled termination of synthesis, in a functionally analogous manner to the known counting ability of primase. This functional symmetry in the behavior of the two polymerases responsible for priming DNA synthesis seems logical, as the lack of proof-reading ability by Pol \u03b1 poses a potential threat to genomic stability. Thus, in addition to excising the RNA portion of the primer, eukaryotic replication faces the additional challenge of correcting possible mismatches introduced by Pol \u03b1 in the DNA segment of the primer. How mistakes made by Pol \u03b1 are corrected by the replication apparatus has not been fully elucidated yet but current evidence points to a proofreading role of Pol \u03b4 (Pavlov et al., 2006). The mechanism of primer termination indicated by our findings would constitute a simple and elegant way to limit the extent of inaccurate DNA that needs to be corrected from the 5\u2032-terminus of each Okazaki fragment.\n\n## Materials and methods\n\n## Cloning, expression and purification\n\nA gene segment corresponding to amino acids 349\u20131258 of the yeast Pol \u03b1 (910 residues; hereinafter referred to as Pol \u03b1) was PCR amplified from Saccharomyces cerevisiae genomic DNA and inserted by enzymatic restriction into the pRSFDuet-1 vector (Merck KGaA, Darmstadt, Germany) for bacterial over-expression, as a polypeptide fused at its N-terminus to a dual histidine and streptavidin TEV-cleavable tag. The pRSF-Pol \u03b1 construct was over-expressed with IPTG in Escherichia coli BL21(DE3)Rosetta2 strain (Invitrogen Life Technologies Ltd, Paisley, UK) growing at 20\u00b0C in Turbo Broth\u2122 (Molecular Dimensions Ltd, Newmarket, UK). The Pol \u03b1 protein was purified by successive steps of Co-NTA affinity chromatography (Qiagen Ltd, Manchester, UK), Heparin Sepharose chromatography (GE Healthcare Life Sciences, Little Chalfont, UK) and Strep-Tactin chromatography (IBA GmbH, G\u00f6ttingen, Germany), followed by tag removal and a final step of size exclusion chromatography on a Superdex 200 16/60 (GE Healthcare). The eluted Pol \u03b1 sample was concentrated to 100 \u03bcM in 20 mM Hepes pH 6.8, 300 mM NaCl, 10% glycerol buffer and divided in small aliquots that were flash frozen in liquid nitrogen for crystallography and functional studies.\n\nA version of pRSFDuet-1-Pol \u03b1 carrying mutations R508A, N509A, D998N construct was prepared with QuikChange site-directed mutagenesis kit (Agilent Technologies UK Ltd, Stockport, UK), according to the manufacturer's instructions. Catalytic Asp998 was mutated to asparagine in order to produce an inactive polymerase; unexpectedly, the D998N mutation greatly reduced but did not abolished polymerisation by Pol \u03b1 (Figure 1\u2014figure supplement 1). The double mutation R508A, N509A was introduced in order to promote crystallization of the ternary complex. As expression levels of the Pol \u03b1 mutant were lower than observed for the wild-type protein, over-expression was carried out in a 30 l BIOSTAT\u00ae (Sartorius Stedim UK Ltd, Epsom, UK) bioreactor. Purification of the Pol \u03b1 mutant was carried out in the same way as for the wild-type protein.\n\nFor preparation of recombinant Pol \u03b1/primase complex, the pRSFDuet-1 vector was adapted for polycistronic expression of Pol \u03b1, the B subunit and the heterodimeric primase (RP and LP, unpublished data). Expression of the Pol \u03b1/primase complex was carried out in 30 l BIOSTAT\u00ae (Sartorius Stedim) bioreactor, using 20 l of auto induction media. Purification of the Pol \u03b1/primase complex was carried out according to a similar protocol followed for Pol \u03b1 purification, including steps of Ni-NTA chromatography (Qiagen), Heparin sepharose chromatography (GE Healthcare), Strep-Tactin chromatography (IBA), tag removal by TEV cleavage and gel filtration chromatography. All steps of this purification were carried out at 4\u00b0C to avoid degradation of the complex. The purified Pol \u03b1/primase complex was concentrated to 20 \u03bcM in 20 mM Hepes pH 7.0, 300 mM KCl, 10% glycerol buffer and divided in small aliquots that were flash frozen in liquid nitrogen for functional studies.\n\n## Crystal structure of Pol \u03b1\n\nCrystals of Pol \u03b1 (apo) were grown by mixing equal volumes of protein at 50 \u03bcM and 0.1 M Bicine pH 9.4, 6\u201310% PEG 8000 and improved by streak seeding. The X-ray crystal structure of Pol \u03b1 was determined by single-wavelength anomalous scattering using selenomethionine-labelled (SeMet) protein crystals. Pol \u03b1 crystallized in the monoclinic space group P21, with cell dimensions: a = 74.4 \u00c5 b = 127.1 \u00c5 c = 74.5 \u00c5, \u03b2 = 104.8\u00b0. X-ray diffraction data for native and SeMet crystals were collected at European Synchrotron Research Facility (ESRF) on beam line ID23-1 at the peak wavelength of the Selenium K edge. Data were indexed, integrated, scaled and merged using MOSFLM (Battye et al., 2011) and SCALA (Evans, 2011) of the CCP4 program suite (Collaborative Computational Project, 1994). Phasing and initial automatic model building of SeMet Pol \u03b1 was carried out in PHENIX (Adams et al., 2010) and the crystallographic model was completed manually and refined at 2.67 \u00c5 resolution in REFMAC 5.5 (Murshudov et al., 1997), BUSTER (Bricogne et al., 2011) and PHENIX, to R-factor/R-free (%) of 19.6/23.4. As SeMet Pol \u03b1 crystallized in a different space group (orthorhombic space group P22121, cell dimensions: 74.0 \u00c5 127.4 \u00c5 144.1 \u00c5) determination of the native Pol \u03b1 structure was achieved by molecular replacement with PHASER (McCoy et al., 2007), using the crystal structure of SeMet Pol \u03b1 as search model. The crystal structure of native Pol \u03b1 structure was refined at 2.3 \u00c5 resolution using BUSTER and PHENIX, to R-factor/R-free (%) of 20.5/23.6. For both SeMet and native Pol \u03b1 structures, amino acids 677\u2013679 (3 residues), 816\u2013847 (32 residues), 1056\u20131062 (7 residues), 1176\u20131185 (10 residues) and 1129\u20131258 (30 residues) were not visible or poorly ordered in the electron density maps during refinement and were therefore excluded from the final refined model. Details of data processing and crystallographic refinement are provided in Table 1.\n\n## Co-crystal structure of Pol \u03b1 with RNA/DNA\n\nCo-crystals of Pol \u03b1 bound to an RNA/DNA duplex (binary complex) were grown by vapour diffusion in hanging drop at 18\u00b0C, by mixing Pol \u03b1 with 5\u2032-AGGCGGGCAG-3\u2032 RNA 10mer annealed to 5\u2032-TTTTCGCTGCCCGCCT-3\u2032 DNA 16mer and 1 mM di-deoxycytidine triphosphate with 0.1 M Bicine pH 8.0, 12% PEG 3350 and 10 mM MgCl2. The binary complex crystallized in the triclinic space group P1, with cell dimensions: a = 72.1 \u00c5 b = 74.8 \u00c5 c = 117.0 \u00c5 \u03b1 = 82.3\u00b0 \u03b2 = 72.6\u00b0 \u03b3 = 82.4\u00b0, and two copies of the binary complex in the asymmetric unit. X-ray diffraction data were collected at ESRF beam line ID14-1, and processed as for the native Pol \u03b1 crystal structure. The structure was solved by molecular replacement in PHASER, using the crystallographic model of the apo Pol \u03b1 as search model, and refined to 3.0 \u00c5 resolution with PHENIX, to R-factor/R-free (%) of 25.5/28.6. Amino acids 349\u2013350 (2 residues), 816\u2013847 (32 residues), 1176\u20131186 (11 residues), 1243\u20131258 (16 residues) in both polymerase chains were not visible or poorly ordered in the electron density maps during refinement and were therefore excluded from the final refined model. In addition, amino acids 1056\u20131062 (7 residues) and 1133\u20131166 (34 residues) in polymerase chain B were disordered and excluded from the final model. Of the DNA 16mer/RNA 10mer substrate, only a duplex region spanning 8 bp from the 3\u2032-terminus of the RNA primer was visible in the electron density map and was included in the final model. Three RNA nucleotides at the 5\u2032-end of chains D, F and three DNA nucleotides at the 5\u2032-end of chain E are poorly ordered in the map and their position must be considered tentative. Despite the presence of nucleotide in the crystallization buffer, no electron density for ddCTP was visible in the map. Details of data processing and the crystallographic refinement are provided in Table 1.\n\n## Co-crystal structure of Pol \u03b1 with RNA/DNA and dGTP\n\nFor co-crystallization of Pol \u03b1 with RNA/DNA and deoxynucleotide (ternary complex), the R508A, N509A, D998N Pol \u03b1 mutant was used. The ternary complex was reconstituted prior to crystallization by incubating Pol \u03b1 with a twofold excess of 5\u2032-CGGCGGGCAG-3\u2032 RNA 10mer annealed to 5\u2032-TGAGCGTGTGTACCCCTGCCCGCCG-3\u2032 DNA 25mer and 5 mM deoxyguanosine triphosphate. Crystals of ternary complex were grown under oil in micro-batch setup, by mixing the sample with 200 mM MgAc2, 10% PEG 8000 crystallization buffer, at a protein to buffer ratio of 1.1:1.8 (v/v). Crystals were optimised by addition of 3% glycerol and by batch seeding. The ternary complex crystallized in the orthorhombic space group P212121, with cell dimensions: a = 111.7 \u00c5 b = 145.7 \u00c5 c = 197.2 \u00c5, and two copies of the ternary complex in the asymmetric unit. X-ray diffraction data were collected at beamline I02 of the Diamond Light Source, and processed as for the native Pol \u03b1 crystal structure. The structure was solved by molecular replacement in PHASER, using the crystallographic model of the native Pol \u03b1 as search model, and refined to 3.1 \u00c5 resolution with BUSTER and PHENIX, to R-factor/R-free (%) of 21.1/24.8. Amino acids 507\u2013510 (4 residues), 677\u2013680 (4 residues), 816\u2013839 (24 residues), 1175\u20131187 (13 residues) and 1243\u20131258 (16 residues) were not visible or poorly ordered in the electron density maps during refinement and were therefore excluded from the final refined model. Details of data processing and the crystallographic refinement are provided in Table 1.\n\n## Primer extension assay\n\nThe assay was performed in a 20 \u03bcl reaction containing 10 nM wild-type Pol \u03b1 (amino acid 349\u20131258), 0.75 \u03bcM template poly(dT) DNA 70mer (Sigma-Genosys), 0.5 \u03bcM oligo(dA) DNA or oligo(A) RNA 15mer (Sigma-Genosys), 100 \u03bcM dATP in 20 mM Tris-HCl pH 8.0, 50 mM NaCl, 10 mM MgCl2, 0.2 mg/ml BSA, 2 mM DTT buffer. Reactions were initiated by the addition of 1 \u03bcl of radio-labeled 2 mM dATP (1:30 v/v dilution of 0.7 \u03bcCi [\u03b132P] dATP with cold dATP), incubated at 37\u00b0C for the appropriate time and quenched by addition of 12 \u03bcl of formamide loading buffer (95% formamide, 0.025% bromophenol blue, 0.025% xylene cyanol, 5 mM EDTA and 0.025% SDS) and heating at 70\u00b0C for 5 min. The reaction products were separated by electrophoresis in denaturing conditions, on a pre-run 7 M urea 12.5% polyacrylamide gel run for 2 hr at 2000 V. Gels were fixed in 10% acetic acid, 10% ethanol for 5 min, dried under vacuum and imaged by storage phosphor autoradiography in a Typhoon\u2122 FLA 9000 biomolecular imager (GE Healthcare). Quantitative gel analysis was performed with ImageQuant TL (GE Healthcare).\n\nThe RNA and DNA sequences used in the experiment of Figure 4D are shown in Table 2.10.7554/eLife.00482.022Table 2.Oligonucleotides used in the primer extension assay of Figure 4DDOI: http://dx.doi.org/10.7554/eLife.00482.022Primer nameTypePrimer5\u20133\u2032Template5\u20133\u2032A12RNAA12T50dA12DNAdA12T50G2DNAAAAAAGGAAAAAT43CCT5G4DNAAGGAAGGAAAAAT43CCTTCCTG6DNAAGGAAGGAGGAAT40CCTCCTTCCTG7DNAAGGAGGGAGGAAT40CCTCCCTCCT\n\nResidual activity of the D998N R508A N509A Pol \u03b1 mutant was demonstrated by the primer extension assay, as described; the protein concentration in the assay was varied over a range of concentrations up to 10 \u03bcM (Figure 1\u2014figure supplement 1).\n\n## Molecular dynamics\n\nIn preparation for the simulation, three loop regions of Pol \u03b1 corresponding to amino acids 677\u2013679 (3 residues), 1056\u20131062 (7) and 1176\u20131185 (10), that are disordered in the crystal structures of Pol \u03b1, were modeled using MODELLER9v8 (Sali and Blundell, 1993; Fiser et al., 2000). A longer, disordered loop region spanning amino acids 816\u2013840 (25 residues) was too long for modeling without template; the equivalent region in the crystal structure of Pol \u03b4 (residues 578\u2013585; PDB ID 3IAY) was used instead. The C-terminal helix of the thumb domain (residues 1229\u20131242) is disordered in the apo structure and was modeled based on its conformation in the structure of the ternary complex. After modelling of the missing loops, the Pol \u03b1 polypeptide comprises 877 residues. In addition to the Pol \u03b1 polypeptide, the ternary complex contains one template DNA molecule of 16 deoxyribonucleotides, one RNA primer of nine ribonucleotides extended at the 3\u2032-end with two deoxynucleotides and one deoxyguanosine triphosphate (dGTP). The 5\u2032-terminal ribonucleotide of the RNA primer was excluded from the model of ternary complex, as it makes extensive contacts with the other Pol \u03b1 chain in the asymmetric unit and does not form a Watson-Crick base pair.\n\nThe dynamic behaviour of Pol \u03b1 was explored by simulating the trajectory of the apo structure (APO trajectory), of the ternary complex (HOLO trajectory) and of the polymerase structure in the conformation adopted in the ternary complex but in the absence of RNA/DNA and dGTP (APOFORCED trajectory). A total of six trajectories were simulated: two APO trajectories of 150 ns, two HOLO trajectories of 100 ns and two APOFORCED trajectories of 100 ns.\n\nMolecular dynamics simulations were performed with the AMBER11 package, using the AMBER FF99SB force field (Wang et al., 2004). A dodecahedral box of water molecules, treated as in the TIP3P model (Jorgensen et al., 1983), was built around the complexes and a physiological concentration of 0.15 M NaCl (72 counterions each) was added to the box. The dGTP molecule, present in the HOLO structure, has been parameterized using the GAFF code, as implemented in AMBER. The following protocol was used for all the simulations: (1) in vacuo minimization (1000 steps); (2) minimization, keeping the complexes fixed, allowing water molecules and ions to equilibrate (1000 steps of steepest descent plus 1000 steps of conjugate gradient); (3) minimization of all the system, without restrictions (1000 steps of steepest descent plus 1000 steps of conjugate gradient); (4) NVT equilibration, 1 ns; (5) production phase. All calculations were performed with the CUDA-enabled version of PMEMD (Goetz, et al., 2012), using TESLA GPUs at the High Performance Computing (HPC) cluster of the University of Cambridge. Two TESLA-GPUs perform approximately 4 ns/day, when computing a system of approximately 115000 atoms. Analysis of the trajectories was performed with the AMBERTOOLS 1.5 and GROMACS packages (Hess et al., 2008).\n\nPrincipal component analysis was used to compare the principal modes of motion of Pol \u03b1 in the APO, HOLO and APOFORCED trajectories. The covariance matrix of the APOFORCED trajectories was constructed, based on the three-dimensional positional fluctuations of C-\u03b1 atoms from their ensemble average position, and diagonalized, creating a set of eigenvectors and eigenvalues that represent the direction and the amplitude of the motion, respectively. All the trajectories were projected on the first two eigenvectors and eigenvalues of the APOFORCED trajectories, in order to compare the regions sampled along common eigenvectors and to analyze the distribution of the motion. Construction and diagonalization of the covariance matrix was performed using the g_covar command of GROMACS. Projection of structures onto eigenvectors was performed using the g_anaeig command of GROMACS. All the other analyses have been performed with GROMACS tools, such as g_rms, g_rmsf, g_cluster. AmberTools's ptraj was used for the DSSP calculations and for all the transformation of the trajectories.\n\nArtwork figures were prepared with PyMOL (Version 1.5.0.4, Schr\u00f6dinger LLC, http://www.pymol.org/), Chimera (Pettersen et al., 2004) and QuteMol (Tarini et al., 2006). Movies were prepared with Chimera.\n",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00482.023](https://doi.org/10.7554/eLife.00482.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cMechanism for priming DNA synthesis by yeast DNA Polymerase \u03b1\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 2 reviewers. The Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission. We anticipate that you will be able to deal with all of these comments by revising the text of the manuscript, and we look forward to receiving your revised manuscript soon.\n\nThis study investigates one of the most frequent DNA transactions in a eukaryotic cell, the initiation of Okazaki fragment synthesis during nuclear DNA replication. The manuscript describes X-ray crystal structures of the catalytic subunit of yeast DNA polymerase alpha in three states (apo, bound to RNA-primed DNA, and a complete catalytic complex). The polymerase is shown to bind to an RNA/DNA helix containing a turn of A-form base pairs in the duplex upstream of the active site. Biochemical and computational results are presented that lead the authors to suggest a mechanism for the termination of primer synthesis by polymerase alpha after one helical turn, allowing transfer of the primer-template to the DNA polymerases that perform most of nuclear DNA replication. The enzyme binds selectively to the A-form helix embodied by the RNA-DNA substrate. Primer extension with deoxynucletides is expected to change the conformation of the primer-template towards a B-form helix, which would not be optimal for the observed contacts seen with the A-form primer-template in the crystal structure. Release of Pol \u03b1 enables Pol \u03b4 to proceed to complete the faithful synthesis of Okazaki fragments.\n\nThis is an excellent paper in which the structural and biochemical analyses are augmented by molecular dynamics simulations that show that the polymerase is so constructed that it requires the presence of the RNA-DNA hybrid to maintain a closed form (in contrast to a bacteriophage DNA polymerase of the same family). The crystallographic data presented are impressive and are technically sound, and the structures are novel. The observations presented here are consistent with the authors' hypothesis about DNA release from Pol \u03b1, which is logical and elegant in its simplicity. This manuscript elucidates a fundamental mechanism of eukaryotic replication and will therefore be of general interest to a large group of biologists. Publication in eLife is recommended after the manuscript is revised to address the following comments.\n\n1) A key point of emphasis in the manuscript is that Pol \u03b1 synthesizes about 10 nt. of DNA (i.e., a turn of duplex) before dissociation. This is a key point because that length of DNA suffices to release the RNA from the Pol binding site. The reviewers are confused by apparently contradictory statements about the length of the DNA segment synthesized in the literature. For example, reviews by Burgers (2009) [JBC 284:4041] and Arezi and Kuchta (2000) [TIBS 25: 572] both state that \u223c20 nt of DNA are synthesized. If 20 nts of DNA are synthesized, the duplex bound by DNA polymerase \u03b1 would be all DNA, and the structural features that are suggested to be important for termination would no longer be relevant. We recognize that both reviews simply state this \u201cfact\u201d without attribution, but a review by Balakrishnan and Bambara (2011) [JBC 286:6865] clearly states that experiments with the SV40 system shows synthesis of \u223c20 nucleotides of DNA by the primase. What is the length of DNA synthesized by Pol \u03b1 before dissociation? The authors should clear up this point of confusion by referring clearly to the literature concerning the length of DNA synthesized by Pol \u03b1 as opposed to SV40. If this is a matter of uncertainty then the manuscript should be revised accordingly to reflect the uncertainty.\n\n2) The authors indicate that the structure of the ternary complex depicts an actively copying polymerase. The protein was pre-incubated with RNA-DNA and dGTP. Could the observed incorporation have occurred prior to crystal formation? Why is the incoming dGTP observed in the ternary complex not incorporated? Are all atoms needed for catalysis observed and in the correct geometry? If not, and/or if the resolution is insufficient, then the claim is premature. It would be very useful, and standard in this field, to shown the geometry of the polymerase active site in detail, perhaps superimposing it with that of another polymerase (e.g., RB69 Pol), to show that the primer terminus and the 3\u00b4-O is the correct position with respect to the catalytic metals and incoming nucleotide.\n\n3) The models presented in this paper are plausible, rather than completely convincing. The model in Figure 6 might be more convincing (or not) depending on the outcome of more precise mapping experiments using a natural DNA sequence, ideally the sequence used for the crystallography, rather than the artificial template used in Figure 4. It would be straightforward to quantify termination of processive synthesis at each nucleotide position as synthesis proceeds, and map this pattern against the structural features that are hypothesized to be important for switching. This experiment could be applied to derivatives containing amino acid substitutions for residues thought to be important for switching. Even one positive result of this type would lend confidence to the model that is the main take home message of the manuscript.\n\nIt would also be great to have genetic evidence that the proposed mechanism limits genome instability, which is stated in the last sentence of the Abstract more like a fact than a possibility worth investigating. In the absence of such experiments, the authors should adjust the language to reflect the fact that they are proposing plausible but not proven models.\n",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e99a7879-96db-437c-b504-e0a3b3f64c00",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C1",
+      "claim": "The DNA Polymerase \u03b1 (Pol \u03b1)/primase complex initiates DNA synthesis in eukaryotic replication.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The DNA Polymerase \u03b1 (Pol \u03b1)/primase complex initiates DNA synthesis in eukaryotic replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an established fact in the field of molecular biology regarding eukaryotic DNA replication.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "bef6b3c2-3bb1-42b5-9e0b-60c4e76337bf",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C2",
+      "claim": "Pol \u03b1 and primase cooperate in the production of RNA-DNA oligonucleotides that prime synthesis of new DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the complex, Pol \u03b1 and primase cooperate in the production of RNA-DNA oligonucleotides that prime synthesis of new DNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the established functional relationship between Pol \u03b1 and primase in DNA replication.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "7327612c-f77c-4033-9b3c-f1cfd786e2f4",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C3",
+      "claim": "Crystal structures of the catalytic core of yeast Pol \u03b1 were determined in unliganded form, bound to an RNA primer/DNA template, and extending an RNA primer with deoxynucleotides.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Here we report crystal structures of the catalytic core of yeast Pol \u03b1 in unliganded form, bound to an RNA primer/DNA template and extending an RNA primer with deoxynucleotides.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The manuscript presents experimental crystallographic data showing these three structural states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "81ef4390-33ef-4ab6-a0d5-53c543aadf5c",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C4",
+      "claim": "Pol \u03b1 specifically recognizes the A-form RNA/DNA helix.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We combine the structural analysis with biochemical and computational data to demonstrate that Pol \u03b1 specifically recognizes the A-form RNA/DNA helix",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is supported by structural data showing specific interactions with A-form helix and biochemical assays demonstrating differential activity with RNA vs DNA primers.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "cc9f1a7f-622e-4d2b-bc80-cad72859017c",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C5",
+      "claim": "The synthesis of B-form DNA terminates primer synthesis by Pol \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the ensuing synthesis of B-form DNA terminates primer synthesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from structural analysis showing loss of specific contacts and biochemical data showing limited extension of RNA primers.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "6567c5ba-6975-4e9b-aa8c-477bccf995b0",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C6",
+      "claim": "The Pol \u03b1/primase complex spontaneously releases the completed RNA-DNA primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The spontaneous release of the completed RNA-DNA primer by the Pol \u03b1/primase complex simplifies current models of primer transfer to leading- and lagging strand polymerases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural and biochemical evidence showing loss of specific interactions after B-form DNA synthesis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "8f81823c-dd4b-4491-9c4c-b5e4750c0bef",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C7",
+      "claim": "The proposed mechanism of nucleotide polymerization by Pol \u03b1 might contribute to genomic stability by limiting the amount of inaccurate DNA to be corrected at the start of each Okazaki fragment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The proposed mechanism of nucleotide polymerization by Pol \u03b1 might contribute to genomic stability by limiting the amount of inaccurate DNA to be corrected at the start of each Okazaki fragment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about the potential biological significance of the mechanism, indicated by the word 'might'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "4853d74a-c9c1-4dd6-b939-fdecfa5c3b6c",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C8",
+      "claim": "Cellular organisms initiate DNA synthesis during genome duplication by the universal mechanism of RNA priming.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cellular organisms initiate DNA synthesis during genome duplication by the universal mechanism of RNA priming",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge in the field, supported by citations to Frick and Richardson, 2001; Kuchta and Stengel, 2010; DePamphilis and Bell, 2011.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "dcd46532-a78a-4f7c-8f3a-4e071aab87b3",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C9",
+      "claim": "RNA primers are extended in an obligate 5\u2032 to 3\u2032 direction by replicative DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The RNA primers are extended in an obligate 5\u2032 to 3\u2032 direction by the replicative DNA polymerases that synthesize the bulk of chromosomal DNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the directionality of DNA synthesis by replicative polymerases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "f5e77689-f114-44ba-88c5-ec28ab303a01",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C10",
+      "claim": "The eukaryotic primase is a heterodimer of catalytic and regulatory subunits associated with the catalytic subunit of Pol \u03b1 and its accessory B subunit in a constitutive heterotetrameric assembly.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The eukaryotic primase is a heterodimer of catalytic and regulatory subunits that is associated with the catalytic subunit of Pol \u03b1 and its accessory B subunit in a constitutive heterotetrameric assembly, the Pol \u03b1/primase complex",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge supported by multiple citations (Loeb et al., 1986; Kaguni and Lehman, 1988; Foiani et al., 1997; Lao-Sirieix et al., 2005b).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "883e6b6c-4076-491b-84c1-39fc5f783184",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C11",
+      "claim": "The Pol \u03b1/primase complex is an integral component of the eukaryotic replisome.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Reflecting its critical importance to DNA replication, the Pol \u03b1/primase complex is an integral component of the eukaryotic replisome",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation to Calzada et al., 2005.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "68e519c1-fea8-41d2-b281-59eed5558787",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C12",
+      "claim": "The Pol \u03b1/primase complex produces composite RNA-DNA primers that result from the concerted enzymatic activities of primase and Pol \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, the Pol \u03b1/primase complex produces longer, composite RNA-DNA primers that result from the concerted enzymatic activities of primase and Pol \u03b1",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge supported by citations (Chang et al., 1984; Hu et al., 1984; Singh, et al., 1986).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "c1bb56a0-41cb-49b6-a3ce-cb44612fd228",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C13",
+      "claim": "During crystallization of the ternary complex, the polymerase extended the 3\u2032-end of the RNA primer by addition of two deoxyguanosine nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source_text": "During crystallization of the ternary complex, the polymerase extended the 3\u2032-end of the RNA primer by addition of two deoxyguanosine nucleotides.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed experimental data from the crystallization experiment, confirmed by mass spectrometry analysis shown in Figure 1\u2014figure supplement 2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "91a20aea-1630-4d73-ae3c-fd5d93acf5a3",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C14",
+      "claim": "The catalytic region of Pol \u03b1 adopts the universal 'right-hand' DNA polymerase fold consisting of a palm domain, a fingers domain, and a thumb domain.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The catalytic region of Pol \u03b1 adopts the universal 'right-hand' DNA polymerase fold consisting of a palm domain harboring the active site, a fingers domain that interacts with the incoming nucleotide and a thumb domain that grips the primer-template duplex.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "28e8e87c-082d-434b-af11-0bf64452996a",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C15",
+      "claim": "The RNA primer\u2013DNA template helix bound to Pol \u03b1 adopts overall an A-DNA conformation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The RNA primer\u2013DNA template helix bound to Pol \u03b1 adopts overall an A-DNA conformation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is determined from stereochemical analysis of the crystal structure using 3DNA software.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "45c12941-f8db-4deb-8617-379483e87b2e",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C16",
+      "claim": "Clustering analysis identifies a continuous stretch of six dinucleotide steps as A-DNA and one step as B-DNA flanked by dinucleotides in A-like conformation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Clustering analysis for each dinucleotide step of the mean z-coordinates of the phosphorus atoms with the glycosyl torsion angle \u03c7 (Lu et al., 2000) identifies a continuous stretch of six dinucleotide steps as A-DNA and one step as B-DNA flanked by dinucleotides in A-like conformation",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a quantitative analysis of the crystal structure data using established structural parameters.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "d2bc964a-8982-4ccd-96a3-cdb30aa2af74",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C17",
+      "claim": "The thumb domain of Pol \u03b1 engages almost exclusively with the RNA primer strand.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the structure of Pol \u03b1 bound productively to RNA primer/DNA template shows that, although the palm domain makes a canonical set of interactions with the first 3 bp of the primer-template helix, the thumb domain engages almost exclusively with the RNA primer strand",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure of the ternary complex.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "88365870-6416-4ec2-9dde-839be0829d39",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C18",
+      "claim": "The interactions between the thumb domain and the RNA primer are concentrated in a contiguous region of five nucleotides, from position two to six of the RNA primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The interactions between the thumb domain and the RNA primer are concentrated in a contiguous region of five nucleotides, from position two to six of the RNA primer and involve solely the ribose and phosphate moieties of the RNA backbone",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from analysis of the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "9466ebbe-3fd3-4640-b5bf-ea49ed4a3aae",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C19",
+      "claim": "Pol \u03b1 exploits the wide, shallow nature of the minor groove of the RNA/DNA helix with a series of hydrophobic contacts involving Met1131, Leu1133, Tyr1140, Pro1141, Met1146.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pol \u03b1 exploits the wide, shallow nature of the minor groove of the RNA/DNA helix with a series of hydrophobic contacts involving the side chains of Met1131, Leu1133, Tyr1140, Pro1141, Met1146, which recognize the C3\u2032-endo conformation of the ribose moieties of RNA nucleotides in position four to six",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure showing specific amino acid-RNA interactions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "8543e614-22d1-43bf-8216-0e0b3aab3fc2",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C20",
+      "claim": "The contiguous pair of invariant arginine residues 1075 and 1076 straddles the ribose-phosphate backbone between nucleotides three and four from the 3\u2032-end of the RNA primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The contiguous pair of invariant arginine residues 1075 and 1076 straddles the ribose-phosphate backbone between nucleotides three and four from the 3\u2032-end of the RNA primer",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "37942b3c-17bb-4280-a40b-3b2a4a560aab",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C21",
+      "claim": "Pol \u03b1 displayed only weak activity and limited processivity when extending a DNA primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Whereas Pol \u03b1 displayed only weak activity and limited processivity when extending a DNA primer",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the primer extension assay shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "9a0310c8-58de-4d93-b927-cc19cd3de369",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C22",
+      "claim": "Extension of an RNA primer by Pol \u03b1 resulted in much higher levels of polymerization compared to DNA primer extension.",
+      "claim_type": "EXPLICIT",
+      "source_text": "extension of an RNA primer resulted in much higher levels of polymerization",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the primer extension assay shown in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "70043d67-2741-434a-827c-10212d7b3b2f",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C23",
+      "claim": "As the deoxyguanosine content of the DNA primer increased, the size profile of the extension products synthesized by Pol \u03b1 changed from that expected of a DNA primer to that of an RNA primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Indeed, as the deoxyguanosine content of the DNA primer increased, the size profile of the extension products synthesized by Pol \u03b1 changed from that expected of a DNA primer to that of an RNA primer",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the primer extension assay shown in Figure 4D.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "ebdcf5a6-f46d-4e83-a6f1-93e697dcc8ba",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C24",
+      "claim": "The thumb domain of Pol \u03b1 must rotate inwards by about 20\u00b0 to adopt the conformation observed in ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In order to adopt the conformation observed in ternary complex, the thumb domain of Pol \u03b1 must rotate inwards by about 20\u00b0",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is determined by comparing the crystal structures of apo and ternary complex forms.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "82c19b53-c924-4848-85d5-0d626782c0de",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C25",
+      "claim": "The actively copying polymerase maintains a stable conformation over the 100 ns duration of the simulation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Principal component analysis of the trajectories shows that the actively copying polymerase maintains a stable conformation over the 100 ns duration of the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by molecular dynamics simulation data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "79bb70d2-8584-46de-b665-800a8c87f832",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C26",
+      "claim": "The structure of the isolated polymerase displays considerable conformational fluctuations, indicative of large-scale conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In comparison, the structure of the isolated polymerase displays considerable conformational fluctuations, indicative of large-scale conformational changes and local loss of secondary structure that affect in particular the N-amino terminal region and the thumb domain.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by molecular dynamics simulation data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "7f81a1c3-f7a1-44c7-9258-3baf48e4b2f3",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C27",
+      "claim": "Pol \u03b1 reaches the active conformation observed in the ternary complex via an 'induced fit' mechanism that is dependent on its interactions with the RNA/DNA duplex and deoxynucleotide.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, the results of the molecular dynamics simulations indicate that Pol \u03b1 reaches the active conformation observed in the ternary complex via an 'induced fit' mechanism that is dependent on its interactions with the RNA/DNA duplex and deoxynucleotide.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the molecular dynamics simulation data showing conformational instability when RNA/DNA and nucleotide are removed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "adcf6614-cdde-42af-8074-8cd9663a7359",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C28",
+      "claim": "Loss of the optimal set of protein-RNA contacts would weaken the grip of the polymerase on its primer/template substrate and promote primer release.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Loss of the optimal set of protein-RNA contacts would weaken the grip of the polymerase on its primer/template substrate and promote primer release.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural and computational data showing the importance of RNA-specific contacts for maintaining the active conformation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "69bc5a5a-f954-424c-8bbc-f542ca4f70b7",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C29",
+      "claim": "As the polymerase morphs from the apo to the active conformation, the palm domain tilts away from the rising fingers, by rotating on the short helix containing the highly conserved 864-DFNSLYPS-871 motif.",
+      "claim_type": "EXPLICIT",
+      "source_text": "as the polymerase morphs from the apo to the active conformation, the palm domain tilts away from the rising fingers, by rotating on the short helix containing the highly conserved 864-DFNSLYPS-871 motif, known as region II of B-family DNA polymerases",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing the crystal structures of apo, binary, and ternary complexes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "bdba4515-12f7-4242-aedc-1486287e0549",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C30",
+      "claim": "Rotation of the palm domain is accompanied by a conformational rearrangement of region II that is necessary to accommodate the phosphoribose moiety of the incoming nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Rotation of the palm domain is accompanied by a conformational rearrangement of region II that is necessary in order to accommodate the phosphoribose moiety of the incoming nucleotide",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is observed from the crystal structures and inferred from the structural changes required for nucleotide binding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "62bad773-4a22-44fb-b93e-3469baf19a7a",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C31",
+      "claim": "The G1116E mutation in fission yeast Pol \u03b1 at the equivalent position to Ser1134 causes a defect in mating-type switching.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The G1116E mutation in fission yeast Pol \u03b1 at the equivalent position to Ser1134 causes a defect in mating-type switching",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Singh and Klar, 1993.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "ff001458-559b-465b-9e0d-5ef9d7a7c8bb",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C32",
+      "claim": "The defect caused by the G1116E mutation might be caused by weakened affinity of Pol \u03b1 for its primer-template substrate.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the close interaction of Ser1134 with the RNA primer suggests that the defect might be caused by weakened affinity of Pol \u03b1 for its primer-template substrate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural observation of Ser1134's interaction with the RNA primer.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "b5c766f2-7bba-43e8-b7ec-b4ffb2250a82",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C33",
+      "claim": "Short runs of consecutive deoxyguanosine nucleotides can induce A-like DNA conformation in double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is known that, although double-stranded DNA normally adopts a B-DNA conformation, its structure can display pronounced conformational variation depending on the local sequence of bases. Short runs of consecutive deoxyguanosine nucleotides can induce A-like DNA conformation in double-stranded DNA",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge supported by citations (Svozil et al., 2008; Marathe et al., 2009).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "0ccee985-44aa-4293-bae9-bef7931f8f94",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C34",
+      "claim": "Extension of the RNA primer is limited to a single turn of double helix.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observation that extension of the RNA primer is limited to a single turn of double helix indicates that termination of primer synthesis might be triggered by the loss of specific interactions of Pol \u03b1 with the RNA/DNA duplex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is observed from the biochemical assays and inferred from the structural data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "a4116ea3-faeb-45ae-b5cf-937599b7773b",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C35",
+      "claim": "Termination of primer synthesis might be triggered by the loss of specific interactions of Pol \u03b1 with the RNA/DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observation that extension of the RNA primer is limited to a single turn of double helix indicates that termination of primer synthesis might be triggered by the loss of specific interactions of Pol \u03b1 with the RNA/DNA duplex.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural and biochemical data showing limited extension and specific RNA recognition.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "359248c8-19d3-439f-acf8-e16063e55117",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C36",
+      "claim": "The mechanism of primer release by Pol \u03b1 is conceptually similar to the mechanism of polymerase switching proposed for Pol \u03b7 after lesion by-pass.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We note that, although the molecular details differ, the mechanism of primer release by Pol \u03b1 described here is conceptually similar to the mechanism of polymerase switching proposed for Pol \u03b7 after lesion by-pass",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a comparison inferred from the current findings and cited work on Pol \u03b7 (Biertumpfel et al., 2010; Silverstein et al., 2010).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "a3e6c0e4-0a4a-4d1a-bae5-a6117446bee6",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C37",
+      "claim": "Pol \u03b1 lacks proofreading activity.",
+      "claim_type": "EXPLICIT",
+      "source_text": "the lack of proof-reading ability by Pol \u03b1 poses a potential threat to genomic stability",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the properties of Pol \u03b1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "83d6143a-efcf-470d-bb09-78a268d9a78c",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C38",
+      "claim": "Current evidence points to a proofreading role of Pol \u03b4 in correcting mistakes made by Pol \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "How mistakes made by Pol \u03b1 are corrected by the replication apparatus has not been fully elucidated yet but current evidence points to a proofreading role of Pol \u03b4",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citation to Pavlov et al., 2006.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "3c42d757-4632-4df0-b986-6a3e0a7f7df5",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C39",
+      "claim": "The mechanism of primer termination would constitute a simple and elegant way to limit the extent of inaccurate DNA that needs to be corrected from the 5\u2032-terminus of each Okazaki fragment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The mechanism of primer termination indicated by our findings would constitute a simple and elegant way to limit the extent of inaccurate DNA that needs to be corrected from the 5\u2032-terminus of each Okazaki fragment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the findings about limited primer extension and its potential biological significance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "380c45ed-01c0-436a-9a84-4d66c5d86b75",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C40",
+      "claim": "The crystal structure of Pol \u03b1 was determined by single-wavelength anomalous scattering using selenomethionine-labelled protein crystals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The X-ray crystal structure of Pol \u03b1 was determined by single-wavelength anomalous scattering using selenomethionine-labelled (SeMet) protein crystals.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental method used to determine the structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "7a62a662-7027-4d03-8918-5fc27f939342",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C41",
+      "claim": "Pol \u03b1 crystallized in the monoclinic space group P21, with cell dimensions: a = 74.4 \u00c5 b = 127.1 \u00c5 c = 74.5 \u00c5, \u03b2 = 104.8\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pol \u03b1 crystallized in the monoclinic space group P21, with cell dimensions: a = 74.4 \u00c5 b = 127.1 \u00c5 c = 74.5 \u00c5, \u03b2 = 104.8\u00b0.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental crystallographic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "2bd7e0a2-3207-452c-ac6e-ac3b87159bf6",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C42",
+      "claim": "The native Pol \u03b1 structure was refined at 2.3 \u00c5 resolution to R-factor/R-free (%) of 20.5/23.6.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The crystal structure of native Pol \u03b1 structure was refined at 2.3 \u00c5 resolution using BUSTER and PHENIX, to R-factor/R-free (%) of 20.5/23.6.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental crystallographic data describing the quality of the structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "387ee0f7-19f7-46a9-9e27-0ddc83f10a63",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C43",
+      "claim": "The binary complex crystallized in the triclinic space group P1, with two copies of the binary complex in the asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The binary complex crystallized in the triclinic space group P1, with cell dimensions: a = 72.1 \u00c5 b = 74.8 \u00c5 c = 117.0 \u00c5 \u03b1 = 82.3\u00b0 \u03b2 = 72.6\u00b0 \u03b3 = 82.4\u00b0, and two copies of the binary complex in the asymmetric unit.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental crystallographic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "2ec063c4-62c4-491c-a635-d919bbdf6392",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C44",
+      "claim": "The ternary complex crystallized in the orthorhombic space group P212121, with two copies of the ternary complex in the asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The ternary complex crystallized in the orthorhombic space group P212121, with cell dimensions: a = 111.7 \u00c5 b = 145.7 \u00c5 c = 197.2 \u00c5, and two copies of the ternary complex in the asymmetric unit.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental crystallographic data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "5af15b28-4145-490d-bf1c-a11505acd73f",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C45",
+      "claim": "The ternary complex structure was refined to 3.1 \u00c5 resolution with R-factor/R-free (%) of 21.1/24.8.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The structure was solved by molecular replacement in PHASER, using the crystallographic model of the native Pol \u03b1 as search model, and refined to 3.1 \u00c5 resolution with BUSTER and PHENIX, to R-factor/R-free (%) of 21.1/24.8.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is experimental crystallographic data describing the quality of the structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "3a18194d-cb97-4fb6-a1e4-23d0b13a52e9",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C46",
+      "claim": "The majority of the contacts of the polymerase with the primer/template duplex takes place within a region of 7 bp from the 3\u2032-terminus of the templated primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The majority of the contacts of the polymerase with the primer/template duplex takes place within a region of 7 bp from the 3\u2032-terminus of the templated primer",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "462d6bae-54d9-4fe0-835b-2a42e2af7d08",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C47",
+      "claim": "Pol \u03b1's footprint on the primer-template duplex is smaller than normally observed in B-family DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pol \u03b1's footprint on the primer-template duplex is smaller than normally observed in B-family DNA polymerases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is observed from the crystal structure and inferred by comparison with other B-family polymerases.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "fcbc7f40-e448-4264-8504-0465d34fe89a",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C48",
+      "claim": "Pol \u03b1's footprint on the primer-template duplex matches the minimal primer size that is efficiently utilized by the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pol \u03b1's footprint on the primer-template duplex is smaller than normally observed in B-family DNA polymerases and matches the minimal primer size that is efficiently utilized by the polymerase",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is observed from the crystal structure and supported by citation to Kuchta et al., 1990.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "3aa640d6-2804-4d40-9d7c-92faa038c780",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C49",
+      "claim": "Four deoxynucleotides of single-stranded DNA template fit in extended conformation within the groove formed by the exonuclease domain and N-terminal region of Pol \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Four deoxynucleotides of single-stranded DNA template fit in extended conformation within the groove formed by the exonuclease domain and N-terminal region of Pol \u03b1",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "73074ad8-4150-4fba-8318-4d0c8b0bc78f",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C50",
+      "claim": "The position of template DNA upstream of the active site in Pol \u03b1 is in agreement with the position previously observed in other B-family DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in agreement with the position of template DNA upstream of the active site previously observed in other B-family DNA polymerases",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is observed from the crystal structure and supported by citations to Hogg et al., 2007; Swan, et al., 2009.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "4261f076-ce74-4af4-a2e4-bf46c0216200",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C51",
+      "claim": "The acidic tip of a long loop connecting the palm and finger domains unwinds the first base pair of the RNA/DNA duplex in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The acidic tip of a long loop connecting the palm and finger domains unwinds the first base pair of the RNA/DNA duplex, capturing the 5\u2032-end nucleotide of the RNA primer in a surface pocket on the palm domain.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "10c05c9d-7a94-40a5-a84d-ad15ba498758",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C52",
+      "claim": "The physiological relevance of the interaction between the acidic loop and the 5\u2032-end of the RNA primer is currently unclear.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, the physiological relevance of our structural observation is currently unclear.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "The authors explicitly state uncertainty about the biological significance of this observation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "006a3383-a824-462f-bf5d-ae29c3a3b28e",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C53",
+      "claim": "The hydrogen-bond network between thumb domain and RNA is augmented by polar interactions contributed by the side chains of Lys1132, Ser1134, Lys1135 and Tyr1140.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The hydrogen-bond network between thumb domain and RNA is augmented by polar interactions contributed by the side chains of Lys1132, Ser1134, Lys1135 and Tyr1140",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed from the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "2aaba3ac-71e9-496e-a6bd-5290ab4b4cd6",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C54",
+      "claim": "Elongation of the RNA primer with deoxynucleotides would cause translocation of the polymerase beyond the RNA/DNA duplex region and onto B-DNA, with loss of the RNA-specific contacts, eventually causing Pol \u03b1 to stall and terminate primer synthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Elongation of the RNA primer with deoxynucleotides would cause translocation of the polymerase beyond the RNA/DNA duplex region and onto B-DNA, with loss of the RNA-specific contacts, eventually causing Pol \u03b1 to stall and terminate primer synthesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a mechanistic inference based on the structural observations of RNA-specific contacts.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "63ada33e-bdc7-4ba9-a085-b6ce35bdc7a9",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C55",
+      "claim": "The observed movement of the palm domain could participate in a 'ratchet' mechanism for unidirectional translocation of Pol \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The observed movement of the palm domain could participate in a 'ratchet' mechanism for unidirectional translocation of Pol \u03b1, as return of the palm domain to the apo conformation after catalysis would propel the polymerase forward onto the next templating base.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative mechanistic proposal based on the structural observations, indicated by the word 'could'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "d2cf4cc2-c670-4819-a8f6-3a3271a0435d",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C56",
+      "claim": "Site-specific mutations of Ser863 in region II of human Pol \u03b1 cause a drastic reduction in the specific activity of the polymerase without changing its kinetic parameters.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, site-specific mutations of Ser863 in region II of human Pol \u03b1 (Ser867 of yeast Pol \u03b1), which acts as the pivot during rotation of the palm domain, cause a drastic reduction in the specific activity of the polymerase without changing its kinetic parameters",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is cited from Dong et al., 1993.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "1a5f5b04-b5ce-443d-9d65-177c984a2cb7",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C57",
+      "claim": "The effect of Ser863 mutations is in agreement with a potential structural role of this serine residue in DNA polymerisation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "in agreement with a potential structural role of this serine residue in DNA polymerisation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the structural observation of Ser867's role as a pivot point and the cited mutational data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "dee954c7-65e8-45c4-b302-d3aa423f7c28",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C58",
+      "claim": "Spontaneous primer release once a helical equivalent of deoxynucleotides has been added to the RNA primer would make the 3\u2032-terminus of the RNA-DNA primer directly available for extension by Pol \u03b4 and Pol \u03b5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Spontaneous primer release once a helical equivalent of deoxynucleotides has been added to the RNA primer would make the 3\u2032-terminus of the RNA-DNA primer directly available for extension by Pol \u03b4 and Pol \u03b5, the DNA polymerases that synthesize the bulk of genomic DNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the mechanism of primer termination and release demonstrated in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "7c085b32-ec86-45e1-b772-4ed15dcd01d9",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C59",
+      "claim": "The mechanism of primer release by Pol \u03b1 removes the need for molecular transactions between primer-bound Pol \u03b1 and the replicative apparatus deputed to leading and lagging strand synthesis.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such a mechanism provides a straightforward model of primer hand-off in eukaryotic replication, by removing the need for molecular transactions between primer-bound Pol \u03b1 and the replicative apparatus deputed to leading and lagging strand synthesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the proposed mechanism of spontaneous primer release.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "5eaef997-b7ae-4f2c-9f3e-f8315ed4aec6",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C60",
+      "claim": "The physical tethering of Pol \u03b1 to primase would facilitate its recycling onto the 3\u2032-end of the next RNA primer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "After termination of synthesis and release of the completed primer, the physical tethering of Pol \u03b1 to primase would facilitate its recycling onto the 3\u2032-end of the next RNA primer",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the mechanism and supported by citations to Nunez-Ramirez et al., 2011; Kilkenny et al., 2012.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "64768316-9f25-4b3a-a7d4-a56761febe43",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C61",
+      "claim": "The efficient mechanism for the rapid extension and controlled termination of RNA primers by Pol \u03b1 is ideally suited for the frequently repeated, highly integrated priming events taking place on the lagging strand template.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The efficient mechanism for the rapid extension and controlled termination of RNA primers by Pol \u03b1 uncovered here seems ideally suited for the frequently repeated, highly integrated priming events taking place on the lagging strand template.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference about the biological significance of the mechanism based on the experimental findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "e197c9eb-ac82-44ab-8657-ea72a54b84bf",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C62",
+      "claim": "The mechanism of primer termination would limit the extent of inaccurate DNA that needs to be corrected from the 5\u2032-terminus of each Okazaki fragment.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The mechanism of primer termination indicated by our findings would constitute a simple and elegant way to limit the extent of inaccurate DNA that needs to be corrected from the 5\u2032-terminus of each Okazaki fragment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the limited extension observed and the known lack of proofreading activity of Pol \u03b1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "67e24446-ed15-41fc-b66e-29904fe5a0ad",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C63",
+      "claim": "The D998N mutation greatly reduced but did not abolish polymerisation by Pol \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Catalytic Asp998 was mutated to asparagine in order to produce an inactive polymerase; unexpectedly, the D998N mutation greatly reduced but did not abolished polymerisation by Pol \u03b1",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed from the primer extension assay shown in Figure 1\u2014figure supplement 1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "33fa5f4e-3cb5-4bfe-a3ca-b8b83a122067",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C64",
+      "claim": "Molecular dynamics simulations were performed with the AMBER11 package, using the AMBER FF99SB force field.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Molecular dynamics simulations were performed with the AMBER11 package, using the AMBER FF99SB force field",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational methods used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "20577d59-12ca-4005-9e98-c55bafd84636",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C65",
+      "claim": "A total of six trajectories were simulated: two APO trajectories of 150 ns, two HOLO trajectories of 100 ns and two APOFORCED trajectories of 100 ns.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A total of six trajectories were simulated: two APO trajectories of 150 ns, two HOLO trajectories of 100 ns and two APOFORCED trajectories of 100 ns.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the computational experiments performed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "1747fca6-bcc6-40cf-a615-b1bac6a007f2",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C66",
+      "claim": "The conformational flexibility of the isolated polymerase does not seem to be sufficient to sample conformations adopted by the polymerase in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Importantly, the conformational flexibility of the isolated polymerase does not seem to be sufficient to sample conformations adopted by the polymerase in the ternary complex.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the molecular dynamics simulation data and principal component analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "ada93327-fba7-4693-8fd2-f4b9536eb6f1",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "claim_id": "C67",
+      "claim": "The trajectory of the polymerase starting from the ternary complex conformation but without RNA/DNA and dGTP showed an increased conformational instability, accompanied by a tendency to relax towards the apo conformation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The trajectory showed an increased conformational instability, accompanied by a tendency to relax towards the apo conformation of the polymerase",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is demonstrated by the molecular dynamics simulation data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5690272-56de-408e-a002-976a9d06ab56",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors determined crystal structures of yeast Pol \u03b1 in three states: unliganded (apo), bound to RNA primer/DNA template (binary complex), and actively extending an RNA primer with deoxynucleotides (ternary complex). The structures were solved using single-wavelength anomalous scattering with selenomethionine-labeled protein and refined to resolutions between 2.3-3.1 \u00c5 with acceptable R-factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C3, C13, C40-C45 provide comprehensive crystallographic data including methods, space groups, cell dimensions, and refinement statistics. The R-factors (19.6-21.1% for R-factor, 23.4-24.8% for R-free) are within acceptable ranges for the reported resolutions. The structural determination is well-documented with appropriate controls and validation metrics.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "7c2c4791-c471-45f8-b064-565915124e6d",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "The RNA primer-DNA template helix bound to Pol \u03b1 adopts an A-form conformation, with clustering analysis identifying six consecutive dinucleotide steps as A-DNA and one as B-DNA. The polymerase contacts the duplex within 7 bp from the 3' terminus, a smaller footprint than typical B-family polymerases that matches the minimal primer size efficiently utilized by Pol \u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C15-C16 provide quantitative structural analysis using established methods (3DNA software). Claims C46-C48 describe the protein-DNA interface with appropriate comparison to other B-family polymerases and citation support. The structural observations are directly derived from the crystal structure data and validated by comparison with known polymerase structures.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "3ebd01a7-4850-4967-8eac-9402d29d7003",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "The thumb domain of Pol \u03b1 engages almost exclusively with the RNA primer strand through specific interactions concentrated in nucleotides 2-6 from the 3' end. These interactions involve hydrophobic contacts (Met1131, Leu1133, Tyr1140, Pro1141, Met1146) recognizing the C3'-endo ribose conformation, invariant arginines (Arg1075, Arg1076) straddling the backbone, and polar interactions from Lys1132, Ser1134, Lys1135, and Tyr1140.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C17-C20 and C53 describe detailed molecular interactions directly observed in the crystal structure. The specificity of residue identification and interaction types (hydrophobic, polar, backbone contacts) indicates direct structural evidence. These observations form the molecular basis for RNA primer recognition.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "Pol \u03b1 specifically recognizes A-form RNA/DNA helix, showing much higher activity and processivity with RNA primers compared to DNA primers. When DNA primers were modified with increasing deoxyguanosine content (which induces A-like conformation), the extension profile shifted from DNA-like to RNA-like, supporting the structural specificity hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4, C21-C23 combine structural data with biochemical validation. The primer extension assays (Figure 4A, 4D) demonstrate differential activity with RNA vs DNA primers, and the clever experimental design using dG-rich sequences (C23, C33) that induce A-form DNA provides strong support for the mechanism. The convergence of structural and functional data supports the conclusion.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "81bb8d39-d024-4e8f-a7d0-e6cb92550666",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "Extension of the RNA primer is limited to approximately one helical turn (~10 nucleotides), and termination is triggered by loss of specific Pol \u03b1-RNA contacts as the polymerase translocates onto B-form DNA synthesized from deoxynucleotides. This conformational transition from A-form to B-form DNA causes the polymerase to stall and terminate primer synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C5, C34-C35, C54 integrate structural observations (RNA-specific contacts) with biochemical data (limited extension in Figure 4). The mechanism is logically consistent: specific recognition of A-form helix combined with synthesis of B-form DNA naturally leads to loss of contacts and termination. The experimental evidence from primer extension assays supports the ~10 nucleotide limit.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "849765e4-b056-48f0-af04-a02f69beac54",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "Molecular dynamics simulations (100-150 ns) reveal that Pol \u03b1 adopts the active conformation via an induced-fit mechanism dependent on RNA/DNA and dGTP binding. The thumb domain rotates ~20\u00b0 inward upon substrate binding. The actively copying polymerase maintains stable conformation, while the isolated polymerase shows conformational fluctuations, and removal of substrates from the active conformation causes relaxation toward the apo state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C24-C27, C64-C67 describe comprehensive MD simulations with appropriate methods (AMBER11, FF99SB force field) and sufficient simulation times. The comparison of APO, HOLO, and APOFORCED trajectories provides strong evidence for induced-fit mechanism. Principal component analysis validates that substrate binding stabilizes the active conformation. The computational approach is sound and supports the structural observations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "During activation, the palm domain tilts away from the fingers domain by rotating on the conserved region II helix (864-DFNSLYPS-871), accompanied by conformational rearrangement to accommodate incoming nucleotide. This movement may participate in a ratchet mechanism for translocation. Mutations of Ser863 (human)/Ser867 (yeast) drastically reduce polymerase activity without changing kinetic parameters, consistent with a structural role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C29-C30 describe structural observations from comparing apo, binary, and ternary complexes, which are well-supported. However, C55 is explicitly speculative ('could participate'), and while C56-C57 cite mutational data supporting a structural role, the ratchet mechanism remains hypothetical. The structural observations are solid, but the mechanistic interpretation requires further validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "The Pol \u03b1/primase complex spontaneously releases the completed RNA-DNA primer after synthesis of approximately one helical turn. Loss of RNA-specific contacts weakens the polymerase grip, promoting release. This makes the primer directly available for extension by Pol \u03b4/\u03b5 without requiring active handoff mechanisms, and physical tethering to primase facilitates Pol \u03b1 recycling to the next primer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C6, C28, C58-C60 present a mechanistic model inferred from structural and biochemical data, but lack direct experimental evidence for spontaneous release. While the structural basis (loss of contacts) and biochemical data (limited extension) are solid, the manuscript does not demonstrate actual primer release or handoff to Pol \u03b4/\u03b5. The model is logical and consistent with the data, but requires validation through direct observation of release kinetics or primer transfer experiments.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "25e464b4-e10c-478a-9a10-bd649cf9f337",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "The mechanism of limited primer extension by Pol \u03b1 (~10 nucleotides) may contribute to genomic stability by restricting the amount of error-prone DNA (synthesized without proofreading) that requires correction at each Okazaki fragment. This efficient mechanism is ideally suited for the frequent priming events on the lagging strand, with Pol \u03b4 likely correcting Pol \u03b1 errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C7, C39, C61-C62 are explicitly speculative ('might contribute,' 'would constitute,' 'seems ideally suited'). While C37 (lack of proofreading) is established knowledge and C38 cites evidence for Pol \u03b4 proofreading, the proposed contribution to genomic stability is inferred rather than demonstrated. The manuscript does not provide data on error rates, correction efficiency, or genomic stability outcomes. This represents a reasonable hypothesis requiring experimental validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "6c28efcf-ae07-4b31-a7d2-110f88df01ce",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "The G1116E mutation in fission yeast Pol \u03b1 (equivalent to Ser1134 in the structure) causes a mating-type switching defect, potentially due to weakened affinity for the primer-template substrate based on the observed close interaction of Ser1134 with the RNA primer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C31 cites published mutational data (Singh and Klar, 1993), and C32 provides a structural interpretation based on the crystal structure showing Ser1134's interaction with RNA. While the mechanistic explanation is inferred, it represents a reasonable interpretation connecting published genetic data with the new structural information.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "cd7940ad-971d-4336-bcb9-bec8ffd53312",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "The mechanism of primer release by Pol \u03b1 is conceptually similar to polymerase switching by Pol \u03b7 after lesion bypass, where termination results from loss of specific substrate interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C36 makes an appropriate conceptual comparison to published work on Pol \u03b7 (Biertumpfel et al., 2010; Silverstein et al., 2010). The authors explicitly note that molecular details differ but the principle is similar\u2014both polymerases terminate synthesis due to loss of specific substrate recognition. This is a valid comparative analysis rather than a new claim requiring validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "eea237d7-e06e-452e-b118-97b93c6854ef",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "An acidic loop connecting palm and finger domains unwinds the first base pair of the RNA/DNA duplex in the crystal structure, capturing the 5'-end nucleotide in a surface pocket. However, the physiological relevance of this observation is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C51 describes a structural observation from the crystal structure, but C52 explicitly states the authors are uncertain about its physiological relevance. This interaction may be a crystallographic artifact from the non-crystallographic dimer arrangement. Without functional validation, the biological significance remains uncertain.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "da2eebf5-bb51-40b9-b6b2-7cc11a6b914d",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "The D998N mutation in the catalytic aspartate greatly reduced but did not abolish polymerase activity, contrary to the expectation of producing an inactive enzyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C63 reports an unexpected experimental observation documented in Figure 1\u2014figure supplement 1. The primer extension assay shows residual activity at micromolar protein concentrations. This is a straightforward experimental result, though it indicates the mutation was less effective than intended for producing the ternary complex crystals.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "b2a3d914-00d2-4ed1-92e2-089666297765",
+      "content_id": "18386b16-66f0-4afa-bee8-190475808cfe",
+      "result_id": "R14",
+      "result_type": "llm",
+      "result": "Background knowledge claims about eukaryotic DNA replication: Pol \u03b1/primase initiates DNA synthesis through RNA priming, the complex is a constitutive heterotetramer that is an integral replisome component, and it produces composite RNA-DNA primers through concerted primase and Pol \u03b1 activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1-C2, C8-C12 represent established knowledge in the field, appropriately cited to primary literature. These provide necessary context for the study and are not contested. The authors accurately represent prior work on the Pol \u03b1/primase complex and DNA replication mechanisms.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "3f9ec994-bd0c-4787-8c7e-5958b9258694",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "The authors determined crystal structures of yeast Pol \u03b1 in three states (apo, binary complex with RNA primer/DNA template, and ternary complex extending an RNA primer with deoxynucleotides). The structures reveal that Pol \u03b1 adopts a right-hand polymerase fold and binds to an RNA/DNA helix in A-form conformation, with the thumb domain engaging almost exclusively with the RNA primer strand through specific hydrophobic and polar contacts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly state 'The crystallographic data presented are impressive and are technically sound, and the structures are novel.' They affirm that the structural work is of high quality and accept the structural observations without questioning the crystallographic findings or the specific protein-RNA interactions described.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "52af432b-b7e3-4a20-999e-59c89b3196e9",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "The authors demonstrate through biochemical assays that Pol \u03b1 specifically recognizes the A-form RNA/DNA helix, showing much higher activity and processivity when extending RNA primers compared to DNA primers. The addition of deoxyguanosine nucleotides to DNA primers progressively changes the extension profile to resemble that of RNA primers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers describe the work as 'an excellent paper' and state that 'the structural and biochemical analyses are augmented by molecular dynamics simulations.' They do not challenge the biochemical data showing differential activity with RNA versus DNA primers, implicitly accepting these findings as valid support for the A-form recognition mechanism.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "e80961db-6211-4cf4-82ed-070ea427a850",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "Molecular dynamics simulations demonstrate that Pol \u03b1 reaches its active conformation via an induced fit mechanism dependent on RNA/DNA duplex and nucleotide binding. The actively copying polymerase maintains a stable conformation, while the isolated polymerase displays considerable conformational fluctuations and cannot sample the ternary complex conformation without substrate binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly praise the computational work, stating 'the structural and biochemical analyses are augmented by molecular dynamics simulations that show that the polymerase is so constructed that it requires the presence of the RNA-DNA hybrid to maintain a closed form.' This indicates clear acceptance of the MD simulation findings and their interpretation.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "The authors propose that extension of the RNA primer is limited to approximately one helical turn (\u223c10 nucleotides) of DNA synthesis, after which the transition from A-form to B-form DNA causes loss of specific protein-RNA contacts, leading to termination of primer synthesis and spontaneous release of the primer by Pol \u03b1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers express significant concern about this central claim, stating 'A key point of emphasis in the manuscript is that Pol \u03b1 synthesizes about 10 nt. of DNA (i.e., a turn of duplex) before dissociation... The reviewers are confused by apparently contradictory statements about the length of the DNA segment synthesized in the literature.' They note that some reviews state \u223c20 nt are synthesized, which would undermine the proposed mechanism, and request clarification of this uncertainty.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "4ec9023d-dbcc-4d02-b5eb-35b8c9e0c112",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "The authors claim that the ternary complex structure depicts an actively copying polymerase, with the polymerase having extended the RNA primer by two deoxyguanosine nucleotides during crystallization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers question whether this represents true active catalysis, asking 'Could the observed incorporation have occurred prior to crystal formation? Why is the incoming dGTP observed in the ternary complex not incorporated? Are all atoms needed for catalysis observed and in the correct geometry?' They state 'If not, and/or if the resolution is insufficient, then the claim is premature' and request detailed comparison with other polymerase active sites.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "212db8c7-3388-4736-a637-c0bdab7e6567",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "The authors propose that Pol \u03b1 spontaneously releases the completed RNA-DNA primer after synthesis of approximately one helical turn, making the primer directly available for extension by Pol \u03b4 and Pol \u03b5 without requiring active molecular transactions for primer handoff. This mechanism is proposed to be ideally suited for the repeated priming events on the lagging strand.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers state 'The models presented in this paper are plausible, rather than completely convincing' and suggest that 'more precise mapping experiments using a natural DNA sequence... would be straightforward to quantify termination of processive synthesis at each nucleotide position.' They indicate the model needs additional experimental validation beyond the structural and biochemical data presented.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "bcf40294-6540-47bb-b335-e428abdbdbe1",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "The authors propose that the mechanism of primer termination by Pol \u03b1 contributes to genomic stability by limiting the amount of inaccurate DNA that needs to be corrected at the start of each Okazaki fragment, given that Pol \u03b1 lacks proofreading activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers explicitly challenge this claim, stating 'It would also be great to have genetic evidence that the proposed mechanism limits genome instability, which is stated in the last sentence of the Abstract more like a fact than a possibility worth investigating. In the absence of such experiments, the authors should adjust the language to reflect the fact that they are proposing plausible but not proven models.' This indicates the claim is speculative without supporting genetic evidence.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c",
+      "content_id": "eb4c4a65-03b3-482f-8210-9fd57e9fb43e",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "The authors describe conformational changes during the catalytic cycle, including rotation of the palm domain on a conserved motif and rearrangement of region II to accommodate the incoming nucleotide. They propose this movement could participate in a ratchet mechanism for polymerase translocation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not challenge these structural observations or the mechanistic interpretations of domain movements. Their overall positive assessment of the structural work ('crystallographic data presented are impressive and are technically sound') and lack of specific critique of these conformational change descriptions indicates implicit acceptance of these findings.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7327612c-f77c-4033-9b3c-f1cfd786e2f4",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "c1bb56a0-41cb-49b6-a3ce-cb44612fd228",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "91a20aea-1630-4d73-ae3c-fd5d93acf5a3",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "380c45ed-01c0-436a-9a84-4d66c5d86b75",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "7a62a662-7027-4d03-8918-5fc27f939342",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "2bd7e0a2-3207-452c-ac6e-ac3b87159bf6",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "387ee0f7-19f7-46a9-9e27-0ddc83f10a63",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "2ec063c4-62c4-491c-a635-d919bbdf6392",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "5af15b28-4145-490d-bf1c-a11505acd73f",
+      "result_id": "c5690272-56de-408e-a002-976a9d06ab56"
+    },
+    {
+      "claim_id": "28e8e87c-082d-434b-af11-0bf64452996a",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "45c12941-f8db-4deb-8617-379483e87b2e",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "3a18194d-cb97-4fb6-a1e4-23d0b13a52e9",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "462d6bae-54d9-4fe0-835b-2a42e2af7d08",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "fcbc7f40-e448-4264-8504-0465d34fe89a",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "3aa640d6-2804-4d40-9d7c-92faa038c780",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "73074ad8-4150-4fba-8318-4d0c8b0bc78f",
+      "result_id": "7c2c4791-c471-45f8-b064-565915124e6d"
+    },
+    {
+      "claim_id": "d2bc964a-8982-4ccd-96a3-cdb30aa2af74",
+      "result_id": "3ebd01a7-4850-4967-8eac-9402d29d7003"
+    },
+    {
+      "claim_id": "88365870-6416-4ec2-9dde-839be0829d39",
+      "result_id": "3ebd01a7-4850-4967-8eac-9402d29d7003"
+    },
+    {
+      "claim_id": "9466ebbe-3fd3-4640-b5bf-ea49ed4a3aae",
+      "result_id": "3ebd01a7-4850-4967-8eac-9402d29d7003"
+    },
+    {
+      "claim_id": "8543e614-22d1-43bf-8216-0e0b3aab3fc2",
+      "result_id": "3ebd01a7-4850-4967-8eac-9402d29d7003"
+    },
+    {
+      "claim_id": "006a3383-a824-462f-bf5d-ae29c3a3b28e",
+      "result_id": "3ebd01a7-4850-4967-8eac-9402d29d7003"
+    },
+    {
+      "claim_id": "81ef4390-33ef-4ab6-a0d5-53c543aadf5c",
+      "result_id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407"
+    },
+    {
+      "claim_id": "37942b3c-17bb-4280-a40b-3b2a4a560aab",
+      "result_id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407"
+    },
+    {
+      "claim_id": "9a0310c8-58de-4d93-b927-cc19cd3de369",
+      "result_id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407"
+    },
+    {
+      "claim_id": "70043d67-2741-434a-827c-10212d7b3b2f",
+      "result_id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407"
+    },
+    {
+      "claim_id": "b5c766f2-7bba-43e8-b7ec-b4ffb2250a82",
+      "result_id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407"
+    },
+    {
+      "claim_id": "cc9f1a7f-622e-4d2b-bc80-cad72859017c",
+      "result_id": "81bb8d39-d024-4e8f-a7d0-e6cb92550666"
+    },
+    {
+      "claim_id": "0ccee985-44aa-4293-bae9-bef7931f8f94",
+      "result_id": "81bb8d39-d024-4e8f-a7d0-e6cb92550666"
+    },
+    {
+      "claim_id": "a4116ea3-faeb-45ae-b5cf-937599b7773b",
+      "result_id": "81bb8d39-d024-4e8f-a7d0-e6cb92550666"
+    },
+    {
+      "claim_id": "2aaba3ac-71e9-496e-a6bd-5290ab4b4cd6",
+      "result_id": "81bb8d39-d024-4e8f-a7d0-e6cb92550666"
+    },
+    {
+      "claim_id": "ebdcf5a6-f46d-4e83-a6f1-93e697dcc8ba",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "82c19b53-c924-4848-85d5-0d626782c0de",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "79bb70d2-8584-46de-b665-800a8c87f832",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "7f81a1c3-f7a1-44c7-9258-3baf48e4b2f3",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "33fa5f4e-3cb5-4bfe-a3ca-b8b83a122067",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "20577d59-12ca-4005-9e98-c55bafd84636",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "1747fca6-bcc6-40cf-a615-b1bac6a007f2",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "ada93327-fba7-4693-8fd2-f4b9536eb6f1",
+      "result_id": "849765e4-b056-48f0-af04-a02f69beac54"
+    },
+    {
+      "claim_id": "69bc5a5a-f954-424c-8bbc-f542ca4f70b7",
+      "result_id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626"
+    },
+    {
+      "claim_id": "bdba4515-12f7-4242-aedc-1486287e0549",
+      "result_id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626"
+    },
+    {
+      "claim_id": "63ada33e-bdc7-4ba9-a085-b6ce35bdc7a9",
+      "result_id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626"
+    },
+    {
+      "claim_id": "d2cf4cc2-c670-4819-a8f6-3a3271a0435d",
+      "result_id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626"
+    },
+    {
+      "claim_id": "1a5f5b04-b5ce-443d-9d65-177c984a2cb7",
+      "result_id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626"
+    },
+    {
+      "claim_id": "6567c5ba-6975-4e9b-aa8c-477bccf995b0",
+      "result_id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30"
+    },
+    {
+      "claim_id": "adcf6614-cdde-42af-8074-8cd9663a7359",
+      "result_id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30"
+    },
+    {
+      "claim_id": "dee954c7-65e8-45c4-b302-d3aa423f7c28",
+      "result_id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30"
+    },
+    {
+      "claim_id": "7c085b32-ec86-45e1-b772-4ed15dcd01d9",
+      "result_id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30"
+    },
+    {
+      "claim_id": "5eaef997-b7ae-4f2c-9f3e-f8315ed4aec6",
+      "result_id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30"
+    },
+    {
+      "claim_id": "8f81823c-dd4b-4491-9c4c-b5e4750c0bef",
+      "result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337"
+    },
+    {
+      "claim_id": "a3e6c0e4-0a4a-4d1a-bae5-a6117446bee6",
+      "result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337"
+    },
+    {
+      "claim_id": "83d6143a-efcf-470d-bb09-78a268d9a78c",
+      "result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337"
+    },
+    {
+      "claim_id": "3c42d757-4632-4df0-b986-6a3e0a7f7df5",
+      "result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337"
+    },
+    {
+      "claim_id": "64768316-9f25-4b3a-a7d4-a56761febe43",
+      "result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337"
+    },
+    {
+      "claim_id": "e197c9eb-ac82-44ab-8657-ea72a54b84bf",
+      "result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337"
+    },
+    {
+      "claim_id": "62bad773-4a22-44fb-b93e-3469baf19a7a",
+      "result_id": "6c28efcf-ae07-4b31-a7d2-110f88df01ce"
+    },
+    {
+      "claim_id": "ff001458-559b-465b-9e0d-5ef9d7a7c8bb",
+      "result_id": "6c28efcf-ae07-4b31-a7d2-110f88df01ce"
+    },
+    {
+      "claim_id": "359248c8-19d3-439f-acf8-e16063e55117",
+      "result_id": "cd7940ad-971d-4336-bcb9-bec8ffd53312"
+    },
+    {
+      "claim_id": "4261f076-ce74-4af4-a2e4-bf46c0216200",
+      "result_id": "eea237d7-e06e-452e-b118-97b93c6854ef"
+    },
+    {
+      "claim_id": "10c05c9d-7a94-40a5-a84d-ad15ba498758",
+      "result_id": "eea237d7-e06e-452e-b118-97b93c6854ef"
+    },
+    {
+      "claim_id": "67e24446-ed15-41fc-b66e-29904fe5a0ad",
+      "result_id": "da2eebf5-bb51-40b9-b6b2-7cc11a6b914d"
+    },
+    {
+      "claim_id": "e99a7879-96db-437c-b504-e0a3b3f64c00",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "bef6b3c2-3bb1-42b5-9e0b-60c4e76337bf",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "4853d74a-c9c1-4dd6-b939-fdecfa5c3b6c",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "dcd46532-a78a-4f7c-8f3a-4e071aab87b3",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "f5e77689-f114-44ba-88c5-ec28ab303a01",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "883e6b6c-4076-491b-84c1-39fc5f783184",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "68e519c1-fea8-41d2-b281-59eed5558787",
+      "result_id": "b2a3d914-00d2-4ed1-92e2-089666297765"
+    },
+    {
+      "claim_id": "7327612c-f77c-4033-9b3c-f1cfd786e2f4",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "c1bb56a0-41cb-49b6-a3ce-cb44612fd228",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "91a20aea-1630-4d73-ae3c-fd5d93acf5a3",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "28e8e87c-082d-434b-af11-0bf64452996a",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "45c12941-f8db-4deb-8617-379483e87b2e",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "d2bc964a-8982-4ccd-96a3-cdb30aa2af74",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "88365870-6416-4ec2-9dde-839be0829d39",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "9466ebbe-3fd3-4640-b5bf-ea49ed4a3aae",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "8543e614-22d1-43bf-8216-0e0b3aab3fc2",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "380c45ed-01c0-436a-9a84-4d66c5d86b75",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "7a62a662-7027-4d03-8918-5fc27f939342",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "2bd7e0a2-3207-452c-ac6e-ac3b87159bf6",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "387ee0f7-19f7-46a9-9e27-0ddc83f10a63",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "2ec063c4-62c4-491c-a635-d919bbdf6392",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "5af15b28-4145-490d-bf1c-a11505acd73f",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "3a18194d-cb97-4fb6-a1e4-23d0b13a52e9",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "462d6bae-54d9-4fe0-835b-2a42e2af7d08",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "fcbc7f40-e448-4264-8504-0465d34fe89a",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "3aa640d6-2804-4d40-9d7c-92faa038c780",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "73074ad8-4150-4fba-8318-4d0c8b0bc78f",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "4261f076-ce74-4af4-a2e4-bf46c0216200",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "006a3383-a824-462f-bf5d-ae29c3a3b28e",
+      "result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694"
+    },
+    {
+      "claim_id": "81ef4390-33ef-4ab6-a0d5-53c543aadf5c",
+      "result_id": "52af432b-b7e3-4a20-999e-59c89b3196e9"
+    },
+    {
+      "claim_id": "37942b3c-17bb-4280-a40b-3b2a4a560aab",
+      "result_id": "52af432b-b7e3-4a20-999e-59c89b3196e9"
+    },
+    {
+      "claim_id": "9a0310c8-58de-4d93-b927-cc19cd3de369",
+      "result_id": "52af432b-b7e3-4a20-999e-59c89b3196e9"
+    },
+    {
+      "claim_id": "70043d67-2741-434a-827c-10212d7b3b2f",
+      "result_id": "52af432b-b7e3-4a20-999e-59c89b3196e9"
+    },
+    {
+      "claim_id": "ebdcf5a6-f46d-4e83-a6f1-93e697dcc8ba",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "82c19b53-c924-4848-85d5-0d626782c0de",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "79bb70d2-8584-46de-b665-800a8c87f832",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "7f81a1c3-f7a1-44c7-9258-3baf48e4b2f3",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "33fa5f4e-3cb5-4bfe-a3ca-b8b83a122067",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "20577d59-12ca-4005-9e98-c55bafd84636",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "1747fca6-bcc6-40cf-a615-b1bac6a007f2",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "ada93327-fba7-4693-8fd2-f4b9536eb6f1",
+      "result_id": "e80961db-6211-4cf4-82ed-070ea427a850"
+    },
+    {
+      "claim_id": "0ccee985-44aa-4293-bae9-bef7931f8f94",
+      "result_id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee"
+    },
+    {
+      "claim_id": "cc9f1a7f-622e-4d2b-bc80-cad72859017c",
+      "result_id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee"
+    },
+    {
+      "claim_id": "adcf6614-cdde-42af-8074-8cd9663a7359",
+      "result_id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee"
+    },
+    {
+      "claim_id": "a4116ea3-faeb-45ae-b5cf-937599b7773b",
+      "result_id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee"
+    },
+    {
+      "claim_id": "2aaba3ac-71e9-496e-a6bd-5290ab4b4cd6",
+      "result_id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee"
+    },
+    {
+      "claim_id": "c1bb56a0-41cb-49b6-a3ce-cb44612fd228",
+      "result_id": "4ec9023d-dbcc-4d02-b5eb-35b8c9e0c112"
+    },
+    {
+      "claim_id": "6567c5ba-6975-4e9b-aa8c-477bccf995b0",
+      "result_id": "212db8c7-3388-4736-a637-c0bdab7e6567"
+    },
+    {
+      "claim_id": "dee954c7-65e8-45c4-b302-d3aa423f7c28",
+      "result_id": "212db8c7-3388-4736-a637-c0bdab7e6567"
+    },
+    {
+      "claim_id": "7c085b32-ec86-45e1-b772-4ed15dcd01d9",
+      "result_id": "212db8c7-3388-4736-a637-c0bdab7e6567"
+    },
+    {
+      "claim_id": "5eaef997-b7ae-4f2c-9f3e-f8315ed4aec6",
+      "result_id": "212db8c7-3388-4736-a637-c0bdab7e6567"
+    },
+    {
+      "claim_id": "64768316-9f25-4b3a-a7d4-a56761febe43",
+      "result_id": "212db8c7-3388-4736-a637-c0bdab7e6567"
+    },
+    {
+      "claim_id": "8f81823c-dd4b-4491-9c4c-b5e4750c0bef",
+      "result_id": "bcf40294-6540-47bb-b335-e428abdbdbe1"
+    },
+    {
+      "claim_id": "3c42d757-4632-4df0-b986-6a3e0a7f7df5",
+      "result_id": "bcf40294-6540-47bb-b335-e428abdbdbe1"
+    },
+    {
+      "claim_id": "e197c9eb-ac82-44ab-8657-ea72a54b84bf",
+      "result_id": "bcf40294-6540-47bb-b335-e428abdbdbe1"
+    },
+    {
+      "claim_id": "69bc5a5a-f954-424c-8bbc-f542ca4f70b7",
+      "result_id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c"
+    },
+    {
+      "claim_id": "bdba4515-12f7-4242-aedc-1486287e0549",
+      "result_id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c"
+    },
+    {
+      "claim_id": "63ada33e-bdc7-4ba9-a085-b6ce35bdc7a9",
+      "result_id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c"
+    },
+    {
+      "claim_id": "d2cf4cc2-c670-4819-a8f6-3a3271a0435d",
+      "result_id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c"
+    },
+    {
+      "claim_id": "1a5f5b04-b5ce-443d-9d65-177c984a2cb7",
+      "result_id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "207ecb44-4bf7-4667-88b1-5d9d2fc51468",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "849765e4-b056-48f0-af04-a02f69beac54",
+      "peer_result_id": "e80961db-6211-4cf4-82ed-070ea427a850",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Perfect agreement on MD simulation data (C24-C27, C64-C67). Both evaluations find the computational work sound and accept that simulations demonstrate induced-fit mechanism and substrate-dependent conformational stabilization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "535d49f5-9043-4f69-b670-afafbfe0bbfd",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "de1a3c1e-bd39-4ad3-b776-38550bbe2626",
+      "peer_result_id": "cfdfc90e-d05f-4b0d-9b72-63526b295b2c",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on conformational change claims (C29-C30, C55-C57). OpenEval considers the ratchet mechanism hypothetical and requiring validation, while peer reviewers accept the structural observations and mechanistic interpretations without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "7a06d64e-24e0-49f9-981a-ec408a472466",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "c1ecb13a-a1fd-4eea-a02f-5dc8b02ad407",
+      "peer_result_id": "52af432b-b7e3-4a20-999e-59c89b3196e9",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Strong agreement on biochemical validation (C4, C21-C23). Both evaluations accept the primer extension assays demonstrating differential RNA vs DNA activity and the clever experimental design using dG-rich sequences to support A-form recognition mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "bd1cdfd5-e6be-4f18-9806-3ec29289bf03",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "81bb8d39-d024-4e8f-a7d0-e6cb92550666",
+      "peer_result_id": "98a4b16b-8fb8-467e-8bc4-83ad1e27d0ee",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Significant disagreement on synthesis termination mechanism (C5, C34-C35, C54). OpenEval finds the ~10 nucleotide limit well-supported by structural and biochemical data, while peer reviewers express confusion about contradictory literature stating ~20 nt synthesis, requesting clarification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "37c13c5d-f2bf-42d7-9eb2-8dc3fa6af1a2",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "4e2cf124-fb7d-4c25-a285-c9f147a9fa30",
+      "peer_result_id": "212db8c7-3388-4736-a637-c0bdab7e6567",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Agreement on uncertainty regarding spontaneous release model (C6, C28, C58-C60). Both evaluations find the model plausible but lacking direct experimental evidence for primer release or handoff to Pol \u03b4/\u03b5, requiring additional validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "d2906b6b-f6e0-4ed7-b33b-8b89d8637a49",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "25e464b4-e10c-478a-9a10-bd649cf9f337",
+      "peer_result_id": "bcf40294-6540-47bb-b335-e428abdbdbe1",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Agreement on genomic stability claims being speculative (C7, C39, C61-C62). Both evaluations note the lack of genetic evidence and request that language be adjusted to reflect these are plausible hypotheses rather than demonstrated facts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "ff444353-fc32-4835-b381-a2678805f0df",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "c5690272-56de-408e-a002-976a9d06ab56",
+      "peer_result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Strong agreement on crystallographic data quality (C3, C13-C14, C40-C45). Both evaluations praise the structural work as technically sound and impressive, accepting R-factors, refinement statistics, and overall crystallographic methods. However, peer review R5 questions C13 specifically regarding active catalysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "c692f356-1e1b-4b77-8f97-99612a2a57a7",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "c5690272-56de-408e-a002-976a9d06ab56",
+      "peer_result_id": "4ec9023d-dbcc-4d02-b5eb-35b8c9e0c112",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on claim C13 regarding catalytic incorporation. OpenEval accepts the ternary complex as demonstrating active catalysis, while peer reviewers question whether incorporation occurred before crystallization and request detailed active site geometry comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "ad5c17d5-b939-4365-a753-81976c1f6510",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "7c2c4791-c471-45f8-b064-565915124e6d",
+      "peer_result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on structural analysis of protein-DNA interface (C15-C16, C46-C50). Both evaluations accept the quantitative structural analysis and comparisons to other B-family polymerases as valid and well-supported by crystallographic data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "9f90a8fd-1a7d-4489-ab46-c63da3bff108",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "3ebd01a7-4850-4967-8eac-9402d29d7003",
+      "peer_result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on molecular interaction details (C17-C20, C53). Both evaluations accept the specific residue-level interactions observed in the crystal structure as valid structural evidence for RNA primer recognition mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "547b0cb2-1504-45cc-857c-308db78589aa",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "eea237d7-e06e-452e-b118-97b93c6854ef",
+      "peer_result_id": "3f9ec994-bd0c-4787-8c7e-5958b9258694",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on C51 (protein-protein interaction). OpenEval questions physiological relevance and considers it potentially a crystallographic artifact, while peer reviewers include it among accepted structural observations without specific critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "64781c47-9357-4177-9685-2e8df8eb7897",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "6c28efcf-ae07-4b31-a7d2-110f88df01ce",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval finds structural interpretation of published mutational data (C31-C32) reasonable. No corresponding peer review evaluation found for these specific claims about Ser1134 and its role in RNA recognition.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "edc8600c-3eac-4f21-9c21-adf753b5eb44",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "cd7940ad-971d-4336-bcb9-bec8ffd53312",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval accepts conceptual comparison to Pol \u03b7 termination mechanism (C36) as valid comparative analysis. No corresponding peer review evaluation found for this specific comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "67525dfb-11b1-4ca6-af7b-4b60659051dd",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "da2eebf5-bb51-40b9-b6b2-7cc11a6b914d",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval accepts experimental observation of residual activity in mutant (C63) as straightforward result. No corresponding peer review evaluation found for this specific finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    },
+    {
+      "id": "0106bc87-b99d-4338-9113-11ef3e9622e1",
+      "submission_id": "cba608bb-148c-4065-a50e-8279fc86242d",
+      "openeval_result_id": "b2a3d914-00d2-4ed1-92e2-089666297765",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval accepts background/context claims (C1-C2, C8-C12) as appropriately cited established knowledge. Peer reviewers do not separately evaluate these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T22:50:37.502100Z"
+    }
+  ]
+}

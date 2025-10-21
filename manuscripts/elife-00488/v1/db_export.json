@@ -1,0 +1,72 @@
+{
+  "submission": {
+    "id": "1cb22b48-9a37-4e60-b73b-4d6de800ff05",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:46:03.840947Z",
+    "updated_at": "2025-10-21T22:46:03.840947Z"
+  },
+  "content": [
+    {
+      "id": "4c1dc6b1-2d54-44d3-aa49-deaaa41fd910",
+      "submission_id": "1cb22b48-9a37-4e60-b73b-4d6de800ff05",
+      "content_type": "manuscript",
+      "content_text": "# Correction: RecA filament sliding on DNA facilitates homology search\n\n## Authors\n\n- Kaushik Ragunathan\n- Cheng Liu\n- Taekjip Ha\n\n\u2020 Corresponding author\n",
+      "created_at": "2025-10-21T22:46:03.840947Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:46:03.840947Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:46:03.840947Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6656e271-521d-4fd6-83c9-9c12cb204d4b",
+      "content_id": "4c1dc6b1-2d54-44d3-aa49-deaaa41fd910",
+      "claim_id": "C1",
+      "claim": "RecA filament sliding on DNA facilitates homology search.",
+      "claim_type": "EXPLICIT",
+      "source_text": "RecA filament sliding on DNA facilitates homology search",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is the main claim stated in the title, presented as a correction to previous work. The evidence type would depend on the full manuscript content which is not provided beyond the title and author information.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:46:03.840947Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "08a4bca6-c553-4b55-8ea9-4bd8e4fc9ca5",
+      "content_id": "4c1dc6b1-2d54-44d3-aa49-deaaa41fd910",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors claim that RecA filament sliding on DNA facilitates homology search, presented as a correction to previous work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Only the title is provided without any experimental data, methodology, or supporting evidence. As this is labeled as a 'Correction,' it likely addresses errors in a prior publication, but without access to the corrected content, experimental details, or the nature of the correction, the validity of this claim cannot be evaluated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:46:03.840947Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6656e271-521d-4fd6-83c9-9c12cb204d4b",
+      "result_id": "08a4bca6-c553-4b55-8ea9-4bd8e4fc9ca5"
+    }
+  ],
+  "comparisons": []
+}

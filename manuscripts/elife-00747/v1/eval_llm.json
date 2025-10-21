@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the clinical context that targeted cancer therapies in solid tumors lead to dramatic but short-lived responses due to resistant cancer cells, with resistance being inevitable for monotherapy due to preexisting resistant cells in large tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C6-C11 collectively establish well-documented clinical observations about targeted therapy resistance, supported by multiple citations to clinical studies. These represent established knowledge in the field and provide appropriate context for the study."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Combination therapy is proposed as the major strategy for overcoming resistance to targeted cancer treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C2 represents established scientific consensus in oncology, consistent with the historical success of combination therapies in other diseases and supported by the broader literature context provided in the manuscript."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C58"
+    ],
+    "result": "The authors parameterized their model using data from 68 index lesions in 20 melanoma patients treated with vemurafenib, calculating growth rates and cell division parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C12-C15 and C58 describe the empirical dataset and parameter estimation. The calculated growth rate (0.01/day) is validated against prior literature, and the birth rate calculation (b=0.14/day) follows logically from the 7-day division time. The data collection is clearly documented."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors developed a multitype branching process model building on previous work, incorporating stochastic mutation, birth, and death events, with explicit modeling assumptions about cell dynamics and treatment effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C53-C68 and C77-C78 describe the mathematical framework and modeling assumptions. The model is appropriately grounded in established mathematical theory (Antal and Krapivsky, 2011) and validated with extensive simulations (10^6-10^8 runs). The assumptions are explicitly stated, though some simplifications (C59, C60) may limit applicability."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The mathematical model predicts that when cross-resistance mutations exist (n12\u22651), the expected number of resistant cells is X\u2248M\u00b7n12\u00b7\u03bc, independent of single-drug resistance mutations, while without cross-resistance (n12=0), resistance requires sequential mutations with X\u2248M\u00b7n1\u00b7n2\u00b7\u03bc\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C16-C20 present core mathematical results derived from the branching process model. The formulas are mathematically consistent and proofs are provided in supplementary materials. The intuitive interpretation (C18) correctly explains why single-step cross-resistance dominates over two-step sequential resistance."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C64"
+    ],
+    "result": "The authors estimated treatment effect parameters from the melanoma dataset, finding a median tumor decline rate of -0.03/day and setting the death rate for sensitive cells during treatment to d'=b'+0.03.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C21 and C64 describe empirical parameter estimation from the clinical dataset. The median decline rate is directly calculated from observed data with reported percentiles, and the death rate parameter is appropriately derived from this observation."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Model simulations predict that monotherapy leads to temporary tumor shrinkage followed by inevitable regrowth for all clinically detectable tumor sizes, with failure caused by either preexisting resistance or emergence during treatment, and will fail in all 22 patients studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C22-C24 present simulation results consistent with the mathematical model and clinical observations. The prediction of universal monotherapy failure aligns with established clinical experience and the model's assumptions about preexisting resistant cells in large tumors."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44"
+    ],
+    "result": "For dual therapy with even one cross-resistance mutation (n12=1), none of the 22 patients are expected to be cured; without cross-resistance (n12=0), eight patients with smallest tumor burden have >95% cure probability while those with largest burden retain >20% recurrence probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C25-C28 and C44 present model predictions applied to the 22-patient cohort. The calculations follow from equation (1) and are internally consistent. However, the strong conclusion in C44 about 'any of the 6.6 billion base pairs' may overstate certainty given model assumptions and parameter uncertainties."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Dual therapy results in long-term disease control for most patients if there are no cross-resistance mutations, while patients with large disease burden require triple therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C3-C4 are primary conclusions but depend critically on the assumption of no cross-resistance (n12=0), which may not reflect biological reality. The model shows dual therapy fails when n12\u22651, and the manuscript acknowledges multiple mechanisms of cross-resistance exist (C46-C47). The necessity of triple therapy (C4) is asserted but not rigorously demonstrated\u2014C29 and C45 show triple therapy also fails if cross-resistance exists."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C45"
+    ],
+    "result": "Triple therapy will not cure patients if there is even one mutation conferring resistance to all three agents, with lesions of typical size in advanced cancers always recurring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C29 and C45 extend the dual therapy logic to triple therapy through additional simulations. The conclusion is mathematically consistent with the model framework, though it highlights the fundamental limitation that cross-resistance undermines any combination therapy."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C57"
+    ],
+    "result": "The authors quantified tumor burden in 22 patients with metastatic disease (7 pancreatic, 11 colorectal, 6 melanoma), finding 1-30 metastatic lesions per patient with total burden ranging from 9\u00d710^8 to 3\u00d710^11 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C30-C31 and C57 describe direct observational data from radiographic measurements. The data collection methodology is clearly described and provides realistic clinical parameters for model application."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C51",
+      "C52"
+    ],
+    "result": "Simultaneous dual therapy is much more effective than sequential therapy: with one cross-resistance mutation, simultaneous therapy cures 26.3% vs 0% for sequential; without cross-resistance, simultaneous therapy succeeds 99.9% vs 0% for sequential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C32-C37, C51-C52 present a clear comparison of simultaneous vs sequential therapy from model simulations. The results are internally consistent and mathematically sound. The breakdown of failure mechanisms (74% preexisting, 26% emergent during treatment) provides mechanistic insight. However, the 'always' language in C32 and C51 is strong\u2014stochastic effects mean some rare successes are possible."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C72"
+    ],
+    "result": "Cancer stem cell fraction affects treatment success, with CML having only 0.1% stem cells (explaining imatinib success) while solid tumors have 5-100% stem cells, and combination treatments will be more effective in cancers with small stem cell fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C38-C40 and C72 discuss cancer stem cells with appropriate citations. The logic connecting low stem cell fraction to treatment success is sound. However, C40 notes plasticity in stem cell status, which complicates the model's assumption of fixed effective population size. The prediction in C72 is reasonable but not directly tested."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C69",
+      "C70"
+    ],
+    "result": "When resistance mutations carry fitness costs (up to 10% reduction in growth rate), dual therapy with cross-resistance shows marginal improvement, while dual therapy without cross-resistance maintains high success rates except for largest lesions with high turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C41, C69-C70 present simulation results for costly resistance scenarios shown in Table 2. The results are consistent with expectations that fitness costs reduce resistant cell populations. The specific example in C41 (68% vs 47% success) demonstrates quantitative impact."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The rate of tumor decline (b'-d') is of primary importance for treatment outcomes, while whether decline is achieved by cell elimination or division suppression has only minor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C42-C43 present a general conclusion about treatment mechanisms. The example calculation (26% vs 29% eradication probability) supports the claim of minor differences. This is a useful insight for treatment design, though the magnitude of 'minor' effects could be clinically relevant in some contexts."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C73"
+    ],
+    "result": "Lesion size and point mutation rate are the parameters with strongest effects on combination treatment success (apart from cross-resistance), with treatments being less effective in cancers with significantly increased mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C71 and C73 identify key model parameters affecting outcomes. This follows logically from the mathematical formulas where X scales with M (lesion size) and \u03bc (mutation rate). The sensitivity analysis across parameter ranges (Supplementary file 3) supports these conclusions."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C74",
+      "C75"
+    ],
+    "result": "Cross-resistance mechanisms exist in practice (e.g., hepatocyte growth factor expression, ABC transporter mutations), making development of drugs with distinct pathways and different chemical structures essential for successful combination therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C46-C47 cite experimental evidence for cross-resistance mechanisms. Claims C74-C75 present logical recommendations based on the model's predictions. However, C75 is somewhat speculative ('may be required') about the necessity of different chemical structures, as this has not been rigorously tested."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C76"
+    ],
+    "result": "The model is not applicable to immune-based therapies because the immune system can replicate and evolve unlike small molecules, and long-term disease control is more common with immune modulators than small molecule drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C48-C50 and C76 appropriately acknowledge model limitations. The distinction between immune therapies and small molecules is valid, and the observation about better long-term control with immunotherapy reflects clinical experience. This represents appropriate scientific humility about model scope."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "In patients with high cell turnover (1-day division time), even dual therapy without cross-resistance would fail in 37% of patients from the study cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C79 presents a specific prediction for high-turnover tumors from Supplementary file 3. This demonstrates the model's sensitivity to birth rate parameters and identifies a clinically relevant scenario where even optimal dual therapy may fail due to rapid mutation accumulation."
+  }
+]

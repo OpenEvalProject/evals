@@ -1,0 +1,101 @@
+{
+  "submission": {
+    "id": "6c6f2932-3ad7-43f9-9958-f5236cbd3733",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T22:47:18.461941Z",
+    "updated_at": "2025-10-21T22:47:18.461941Z"
+  },
+  "content": [
+    {
+      "id": "5f5fc30c-9850-42d4-9f2a-7e4ab34d03b1",
+      "submission_id": "6c6f2932-3ad7-43f9-9958-f5236cbd3733",
+      "content_type": "manuscript",
+      "content_text": "# A new answer to old questions\n\n## Authors\n\n- Yves Barral<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry ETH Zurich, Zurich Switzerland yves.barral@bc.biol.ethz.ch\n\n\u2020 Corresponding author\n\n## Abstract\n\nSudden changes in the level of a coenzyme called NADPH might be the underlying cause of aging in cells.\n",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bdb5602b-d1e6-4d96-9cb4-63b963eae34b",
+      "content_id": "5f5fc30c-9850-42d4-9f2a-7e4ab34d03b1",
+      "claim_id": "C1",
+      "claim": "Sudden changes in the level of NADPH might be the underlying cause of aging in cells.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sudden changes in the level of a coenzyme called NADPH might be the underlying cause of aging in cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "The use of 'might be' indicates this is a speculative or hypothetical statement about the relationship between NADPH level changes and cellular aging, without presenting supporting data or citations in this abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    },
+    {
+      "id": "034387d3-44ce-4007-ab11-efe2c48cdb6a",
+      "content_id": "5f5fc30c-9850-42d4-9f2a-7e4ab34d03b1",
+      "claim_id": "C2",
+      "claim": "NADPH is a coenzyme.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Sudden changes in the level of a coenzyme called NADPH might be the underlying cause of aging in cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The classification of NADPH as a coenzyme is established scientific knowledge and is stated as a definitional fact in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2de07cf7-8b0b-40b0-8508-5f9660e01ff5",
+      "content_id": "5f5fc30c-9850-42d4-9f2a-7e4ab34d03b1",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors propose that sudden changes in NADPH levels might be the underlying cause of cellular aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claim C1 is explicitly marked as speculation with no supporting experimental data, statistical analysis, or mechanistic evidence provided in the manuscript. The use of 'might be' and the absence of any experimental validation, controls, or quantitative measurements means this hypothesis cannot be considered supported by the presented work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    },
+    {
+      "id": "770485e4-3901-4395-98e9-06b879728a71",
+      "content_id": "5f5fc30c-9850-42d4-9f2a-7e4ab34d03b1",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "NADPH is identified as a coenzyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C2 states established biochemical knowledge that NADPH functions as a coenzyme. This is a well-documented fact in the scientific literature and requires no additional experimental validation within this manuscript.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T22:47:18.461941Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bdb5602b-d1e6-4d96-9cb4-63b963eae34b",
+      "result_id": "2de07cf7-8b0b-40b0-8508-5f9660e01ff5"
+    },
+    {
+      "claim_id": "034387d3-44ce-4007-ab11-efe2c48cdb6a",
+      "result_id": "770485e4-3901-4395-98e9-06b879728a71"
+    }
+  ],
+  "comparisons": []
+}

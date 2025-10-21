@@ -1,0 +1,108 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C16",
+      "C34"
+    ],
+    "result": "The authors claim that eQTMs (expression-to-methylation associations) are mostly independent of the repressive mechanism of DNA methylation on expression across genes, showing both positive and negative associations between methylation and expression variation among individuals that differ from differentiation patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers identified this as 'Claim 1' and stated the conclusion is 'strong' but 'currently poorly supported.' They noted that eQTMs were partitioned into only two bins (positive and negative), which may mask important inter-relations 'within a sea of noise.' Reviewers requested regenerating plots with finer binning (5 bins) to verify the negative correlation holds and is not an artifact of binning."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors claim that differentially methylated regions (DMRs) across cell types are more often associated with eQTMs and mQTLs than non-DMRs, suggesting that cell-type differential methylation delineates a platform for inter-individual changes in gene regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers identified this as 'Claim 2' and raised concerns that the relation between DMRs and eQTMs might be a byproduct of their relation with average methylation (higher average leads to higher variance). They requested using 'normalized differentiation in methylation' (residuals after removing the effect of methylation average) to control for this confound. Additionally, reviewers stated that 'regardless of the validity of the test, the additional biological conclusions are over-stretched and should be toned down.'"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C42"
+    ],
+    "result": "The authors claim differential associations of mQTLs and eQTMs with genomic features, particularly showing mQTL depletion in CGI promoters and enrichment in non-CGI promoters, suggesting context-dependent roles for DNA methylation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers identified this as 'Claim 3' and stated 'The differential association of mQTLs to CGI and non-CGI promoters is intriguing and well supported.' They noted the analysis of positive and negative eQTMs should be repeated with finer binning (as in Claim 1), but otherwise found it 'satisfactory.'"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors claim that DNA methylation alone does not significantly drive allele-specific expression independent of genetic variation, suggesting non-genetically determined methylation is defined at the whole cell level rather than being allelic.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers identified this as 'Claim 4' and expressed serious concerns, stating 'This is a strong assertion, but is also a negative result. Our main concern is that it is hard to devise an appropriate control here. We urge the authors to remove this result, unless they can provide additional support.' The reviewers questioned the validity of the control and the strength of evidence for this negative finding."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors claim synergistic interactions exist between genetic variants and DNA methylation on gene expression, with enrichment in LCLs and T-cells and specific numbers of individually significant interactions identified.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers identified this as 'Claim 5' and noted that 'Although the authors note that they \"controlled\" for artificial inflation, Figure 3C shows that there is a clear inflation in the resulting P-values.' They questioned the reason for this inflation and stated 'Without correcting for this, it is impossible to judge the number of significant relations.' Reviewers advised using bootstrapping for empirical correction and correcting for population structure and other confounders."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C45",
+      "C46",
+      "C63"
+    ],
+    "result": "The authors claim that three different causality models (INDEP, SME, and SEM) exist between genetic variation, DNA methylation, and gene expression, with all three types present in the three cell-types, suggesting both passive and active roles for DNA methylation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers identified this as 'Claim 6' and raised concerns that 'Each of the three models has a different number of parameters, and the correction with AIC is based on theoretical considerations and hence might not compensate for the different degrees of freedom.' They noted 'there is no evaluation of the significance of the resulting predicted models (which then precludes the authors \u2013 and future readers \u2013 from following up on individual findings).' Reviewers requested permutation tests to establish significance thresholds and to report how many results are significant, with specific examples highlighted."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors claim that transcription factor levels modulate DNA methylation at their binding sites and can influence both methylation and gene expression simultaneously, with enrichment of TF-methylation associations and interactions between genetic variants and TF abundance on methylation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers identified this as 'Claim 7' and stated 'This is an intriguing and important direction, but it has to be done carefully.' They noted 'it is not clear whether the reported P-values are corrected for the special characteristics of the data' and requested permutation tests to derive corrected P-values. Reviewers emphasized that 'while we do not require the authors to conduct follow up biological experiments, in the absence of such follow up, the conclusions should be toned down significantly.'"
+  }
+]

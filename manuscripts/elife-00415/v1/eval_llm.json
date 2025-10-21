@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Female reproductive glands (spermathecae and parovaria) are required for ovulation in Drosophila. Hr39 and lz mutant females, which lack these glands, show severely reduced ovulation (0-2% vs 50% in controls within 6 hours post-mating) and reduced egg laying, despite normal mating success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C47-C56 provide converging experimental evidence from mutant analysis showing that gland-deficient females fail to ovulate normally while maintaining normal copulation rates. The phenotypic characterization is thorough with appropriate controls, and the conclusion (C1, C56) logically follows from the data presented in Figure 1 and associated quantitative measurements."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The ovulation defects in lz and Hr39 mutants are not due to neural defects or disrupted SP/SPR signaling. lz is expressed in some fru+ppk+ neurons, but knockdown experiments and mSP rescue experiments demonstrate that the ovulation phenotype is independent of these neural pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C57-C65 present multiple lines of evidence ruling out neural mechanisms: neuron numbers are unaffected by knockdowns (C58-C59), Hr39 knockdown in ppk neurons has no effect (C60), and mSP can still block receptivity in Hr39 mutants (C61-C62) while failing to rescue egg laying (C63). These experiments effectively exclude alternative explanations and support the conclusion that the defect lies elsewhere."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Notch signaling and Hindsight (Hnt) are required during development to form secretory cells in reproductive glands. Disrupting Notch signaling or depleting Hnt blocks secretory cell formation, and females lacking secretory cells show strong ovulation defects and reduced egg laying.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C66-C81 provide comprehensive developmental genetic evidence using multiple approaches (dominant negative constructs, RNAi knockdowns) with consistent phenotypes documented in Figure 3 and Table 1. The differential effects on gland structures (secretory cells vs. lumen/duct) strengthen the specificity of the findings, and the functional consequences for ovulation establish causality."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "A quantitative threshold of approximately 80 secretory cells is required for normal sperm storage in spermathecae. Females with fewer than 25 secretory cells rarely store sperm, while those with 80+ cells show wild-type levels of sperm storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C82-C89 and C112-C114 present dose-response data from Figure 4F showing a clear quantitative relationship between secretory cell number and sperm storage. The observation that sperm reach the seminal receptacle but not spermathecae in deficient females (C87-C89) rules out physical blockage and supports a secretion-dependent mechanism. The threshold values are empirically determined and well-documented."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C102",
+      "C103",
+      "C118",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Canonical protein secretion from adult secretory cells is required for sperm storage but not ovulation. Blocking canonical secretion (using shi-ts, \u03b2COP RNAi, or sec23 RNAi) in adults compromises sperm storage and causes sperm morphological abnormalities while ovulation continues normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C90-C97 and C122-C125 present consistent results across multiple independent manipulations of the canonical secretory pathway (Figure 5, Table 2). The temporal control experiments (disruption after eclosion) elegantly demonstrate adult-specific requirements and rule out developmental effects. The dissociation between sperm storage and ovulation phenotypes is clear and reproducible, supporting the mechanistic conclusion (C102-C103, C118, C121)."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C98",
+      "C99",
+      "C100",
+      "C104",
+      "C105",
+      "C131",
+      "C132"
+    ],
+    "result": "Hr39 function in adult secretory cells is required for normal ovulation rate through a non-canonical secretory pathway. Adult-specific Hr39 knockdown increases ovulation time from 7.6 to 27 minutes per egg, while canonical secretion disruption does not affect ovulation timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C98-C100 provide quantitative data from Table 2 showing a 3.5-fold increase in ovulation time with adult Hr39 knockdown. The temporal control using Gal80-ts (C4, C131) ensures the effect is adult-specific. The key dissociation\u2014Hr39 knockdown slows ovulation while canonical secretion blockade does not (C7, C132)\u2014is well-documented and supports the non-canonical mechanism conclusion (C104-C105)."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C101",
+      "C129",
+      "C130"
+    ],
+    "result": "Two distinct secretory mechanisms operate in reproductive gland secretory cells: canonical protein secretion for sperm storage and a non-canonical Hr39-dependent secretion for ovulation. This represents a major finding that secretory cells control ovulation through non-canonical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C101, C129-C130 synthesize the experimental findings into a coherent model supported by the differential effects documented in previous result groups. The conclusion that two distinct mechanisms exist (C9-C10) is well-justified by the genetic dissection showing canonical pathway disruption affects only sperm storage while Hr39 affects both functions. This is a logical inference from converging experimental evidence."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Different mechanisms transport sperm to the two storage organs (spermathecae vs. seminal receptacle). In the absence of secretory cells, sperm still reach the seminal receptacle but not the spermathecae, and seminal receptacle sperm aggregate abnormally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C117-C120 present a clear observation from secretory cell-deficient females showing differential sperm distribution between storage organs. This anatomical/functional distinction is well-documented in Figures 4D-E and supports the inference of distinct transport mechanisms (C117). The aggregation phenotype (C120) provides additional evidence of secretion-dependent sperm maintenance."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C145",
+      "C146",
+      "C153",
+      "C154"
+    ],
+    "result": "The reproductive tract signals to the ovary using glandular secretions, and this pathway involving Hr39/Lrh-1 may be evolutionarily conserved between Drosophila and mammals. Both Hr39 (Drosophila) and its homolog Lrh-1 (mammals) are required for ovulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While C146 and C153 correctly note that both Hr39 and Lrh-1 are required for ovulation in their respective organisms, the claims of evolutionary conservation (C12, C145, C154) and oviduct-ovary signaling (C11) are largely speculative. The evidence shows Hr39 functions in secretory cells, but direct signaling to the ovary is inferred rather than demonstrated. The parallel with Lrh-1 is suggestive but requires functional validation of Lrh-1 in mammalian oviduct secretory cells."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Hr39 has an ongoing functional role in adult glands beyond its developmental function, consistent with its expression in adult secretory cells and regulation of spermathecal protein mRNAs. The requirement for new secretion aligns with mating-induced protein expression in these glands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C126-C128 integrate current findings with prior knowledge. The adult-specific knockdown experiments (referenced in C127) directly demonstrate adult function beyond the known developmental role. The connection to mating-induced protein expression (C126) and transcriptional targets (C128) from prior work provides mechanistic context that is consistent with the functional requirements demonstrated here."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The current study confirms Schnakenberg et al.'s findings on sperm storage but differs in interpretation of egg laying defects. While Schnakenberg et al. attributed reduced egg laying to sporadic egg release defects, the current study demonstrates the primary defect is in ovulation, not egg release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C134-C138 appropriately compare findings between studies. The key methodological difference (C138)\u2014separating ovulation from egg laying\u2014allows the current study to localize the defect more precisely (C137). The confirmation of sperm storage findings (C134) validates both studies while the divergent interpretation regarding egg release vs. ovulation is justified by the improved assay design."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C152",
+      "C155"
+    ],
+    "result": "The findings may be relevant to ovarian cancer, which originates from oviduct secretory epithelia following extended ovulatory cycles. However, how the oviduct influences mammalian ovulation remains unclear, and insights may come from model systems given conservation of gamete biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C13-C14 correctly cite current understanding of ovarian cancer origins, and C15-C17 accurately describe knowledge gaps. However, the relevance of Drosophila glandular secretions to human ovarian cancer (C152, C155) is highly speculative. While the evolutionary conservation argument (C18-C19) has merit, the mechanistic connection between ovulation control and cancer etiology requires substantial additional evidence and represents future work rather than supported conclusions."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Prostaglandin-like signaling may be conserved between mammals and Drosophila in ovulation control. Lrh-1 regulates COX-II in mouse granulosa cells, while Hr39 controls a COX-II-like enzyme (CG10211) in Drosophila spermathecae, and prostaglandin-like signals function in Drosophila egg maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C147-C150 accurately cite established knowledge about prostaglandin signaling and enzyme expression. However, the functional connection remains speculative. While the molecular parallels are suggestive (homologous receptors controlling COX-II-like enzymes), C151 correctly identifies this as a future research direction. The expression of CG10211 under Hr39 control does not demonstrate it mediates the ovulation phenotype, and prostaglandin function in egg maturation (C149) is distinct from ovulation control."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Hr39 is a nuclear hormone receptor homologous to mammalian Lrh-1 and serves as a master regulator of reproductive gland development. Secretory cell development follows a stereotyped lineage dependent on both Lozenge and Hr39.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6 and C43-C46 accurately summarize established knowledge from prior work (Allen and Spradling 2008; Sun and Spradling 2012) that provides essential context for the current study. These are well-supported by citations and represent the foundation upon which the current experiments build. The characterization as 'master regulator' (C6) is justified by the prior developmental studies."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Background knowledge on Drosophila and mammalian reproductive biology, including oviduct functions, neural control, hormonal regulation, male and female glandular secretions, and sperm storage mechanisms across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C20-C42 and C106-C111, C139-C142 represent established background knowledge appropriately cited from the literature. These provide necessary context for interpreting the experimental findings. The claims accurately reflect current understanding in the field and are properly attributed to prior work through citations. This background establishes the rationale for the current study."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C133",
+      "C143",
+      "C144"
+    ],
+    "result": "Speculative mechanisms for how secretory products might function, including potential interactions with Acp36DE, direct effects on sperm flagellar function, alternative secretory mechanisms, and the complexity of follicle selection involving local interactions and inter-ovary communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C115-C116, C133, C143-C144 are explicitly speculative possibilities for future investigation. While these are reasonable hypotheses based on the findings and prior knowledge, they lack direct experimental support in the current study. The authors appropriately present these as possibilities ('might,' 'likely to be') rather than conclusions, but they remain untested and therefore uncertain."
+  }
+]

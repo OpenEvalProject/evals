@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A reporter-based mutagenesis screen identified the F876L mutation in the androgen receptor, which converts enzalutamide into an AR agonist. After five rounds of enzalutamide exposure and FACS sorting, cells with durable EGFP expression were enriched, and sequencing revealed the F876L mutation emerged as the dominant variant in two of three replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C12-C17 provide converging experimental evidence from the mutagenesis screen, including FACS enrichment data (C12, C13), validation of AR-dependent agonism (C14, C15), sequencing identification (C16), and enrichment tracking (C17). The methodology is sound and the results are internally consistent across multiple experimental approaches."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C82",
+      "C83"
+    ],
+    "result": "The F876L mutation converts bisaryl-thiohydantoin antiandrogens (enzalutamide and ARN-509) into AR agonists with potency comparable to DHT, while structurally distinct antiandrogens (bicalutamide and hydroxyflutamide) do not activate the mutant receptor. This pharmacological specificity was validated across multiple reporter assays and endogenous gene expression analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C18-C22, C82-C83 demonstrate consistent pharmacological characterization across EGFP reporter assays, luciferase assays, and qRT-PCR for endogenous AR target genes. The structure-activity relationships are well-documented with appropriate controls (AR WT vs F876L, different antiandrogen classes), supporting the specificity of the mutation's effect."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C84"
+    ],
+    "result": "Ectopic expression of AR F876L confers resistance to enzalutamide in cell proliferation and xenograft models. VCaP and CWR22Pc cells expressing F876L showed rescued growth in the presence of enzalutamide, and LNCaP/AR-F876L xenografts grew with kinetics equivalent to vehicle treatment, while AR-WT tumors were potently suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C23-C26, C84 provide comprehensive in vitro and in vivo validation of functional resistance. The data span multiple cell lines (VCaP, CWR22Pc, LNCaP), culture conditions (full serum and androgen-depleted), and include xenograft studies with appropriate controls comparing AR WT and F876L responses to enzalutamide."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C59"
+    ],
+    "result": "The F876L mutation spontaneously emerges in prostate cancer models during prolonged enzalutamide or ARN-509 treatment. Deep sequencing revealed F876L in >50% of enzalutamide-resistant CWR22Pc cells and in multiple resistant xenograft tumors, with one tumor showing 71% F876L and a related F876I substitution found in another resistant tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C27-C30, C59 demonstrate spontaneous acquisition of the mutation through deep sequencing of resistant cell lines and xenografts. The data show dose-dependent selection (higher frequency with enzalutamide vs ARN-509) and identify related mutations at the same residue (F876I), strengthening the biological relevance of position 876 in resistance."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Structure-activity relationships at position 876 show that conservative aromatic substitutions (F876Y) maintain wild-type pharmacology, while aliphatic substitutions (F876L, F876I) convert enzalutamide and ARN-509 into agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C31-C32 are supported by systematic mutagenesis data from luciferase reporter assays. The findings are consistent with the structural model and the spontaneous emergence of F876I in resistant tumors (C30), providing orthogonal validation of the importance of residue 876's chemical properties."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C69"
+    ],
+    "result": "Bicalutamide retains weak antagonist activity against AR F876L but is not a viable treatment option for patients with this mutation, particularly given that AR overexpression (a common resistance mechanism) confers partial agonism to bicalutamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C33-C34, C69 are supported by luciferase and EGFP reporter data showing lack of agonism but dose-dependent loss of antagonism, plus minimal growth inhibition in CWR22Pc cells. The inference about clinical viability (C69) is reasonable given the experimental data combined with cited knowledge about AR overexpression effects on bicalutamide."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Molecular dynamics simulations suggest that the F876L mutation alleviates antagonism by allowing H12 to adopt a more agonist-like conformation. The simulations show that enzalutamide and ARN-509 bind to an 'H11 pocket' rather than the 'H12 pocket' occupied by bicalutamide, and the F876L substitution reduces RMSD values for H11 and H12 positioning relative to the agonist conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C6, C35-C41, C70-C75 present a mechanistic model based on MD simulations in the absence of experimental crystal structures (C71). While the simulations provide quantitative RMSD measurements and are consistent with experimental pharmacology, they remain computational predictions. The model is plausible and internally consistent, but lacks direct structural validation through crystallography or other biophysical methods to definitively confirm the proposed mechanism."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C63",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A structure-guided chemical screen identified three novel compounds (DR103, DR105, DR106) that effectively antagonize both AR WT and AR F876L. The lead compound (\u00b1)-DR103 inhibits growth of enzalutamide-resistant cells, with structure-activity relationships showing that precise positioning of gem-dimethyl groups on the D-ring is critical for antagonism of the mutant receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C7, C43-C52, C63, C85-C87 provide comprehensive validation of the novel compounds through EGFP reporter assays, luciferase assays, cell proliferation studies, and specificity controls (AR-null DU145 cells). The systematic SAR studies (C47-C50, C63) demonstrate that subtle structural changes dramatically affect activity, supporting the rational design approach. Western blot data (C51) confirms on-target activity."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C76"
+    ],
+    "result": "MD simulations predict that (S)-DR103 antagonizes AR F876L through a distinct mechanism: the D-ring directly displaces H12 N-terminal residues and occupies a region of the H12 pocket inaccessible to enzalutamide or ARN-509, with potential enantiomer-specific differences in antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C53-C55, C76 present computational predictions that rationalize the experimental activity of DR103. While the simulations are consistent with observed pharmacology and provide a plausible mechanism, they lack experimental validation through structural biology or mutagenesis studies targeting the proposed H12 interactions. The speculation about enantiomer differences (C76) requires experimental testing with resolved enantiomers."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C56"
+    ],
+    "result": "Enzalutamide is an approved therapy for castration-resistant prostate cancer, but response duration is often limited. AR mutations represent a well-documented mechanism of resistance to antiandrogens, with many mutations converting antagonists into agonists of the mutant receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1-C3, C8-C10, C56 establish the clinical and scientific context through regulatory knowledge (C1), clinical observations (C2), and well-cited prior work (C3, C8-C10, C56). These background claims are appropriately supported by established knowledge and multiple literature citations to foundational studies in the field."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C57",
+      "C64"
+    ],
+    "result": "Unbiased mutagenesis screens in preclinical models can prospectively identify clinically relevant drug resistance mutations, as demonstrated by prior work with kinase inhibitors where preclinically identified mutations were subsequently found in resistant patients within 2 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C11, C57, C64 are supported by citations to prior work with BCR-ABL and dasatinib (Azam et al., 2003; Burgess et al., 2005; Shah et al., 2007). The precedent from kinase inhibitor studies provides strong rationale for the mutagenesis screening approach used in this manuscript."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "A proof-of-concept screen demonstrated that the FACS-based approach can enrich for known resistance mutations, with AR W741C cells dominating populations after four rounds of bicalutamide selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C81 is supported by quantitative PCR data from the validation experiment. This proof-of-concept establishes the technical feasibility of the screening approach before applying it to identify novel enzalutamide resistance mutations, strengthening confidence in the primary screen results."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C60"
+    ],
+    "result": "The F876L mutation converts enzalutamide and ARN-509 into AR agonists and confers resistance in vitro and in vivo, representing a gain-of-function mechanism rather than simple loss of inhibitor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C58, C60 synthesize the primary findings across multiple experimental systems. The characterization as a gain-of-function mechanism (C60) is well-supported by the agonist activity data (C18-C22) and distinguishes this resistance mechanism from simple binding-site mutations, which has important implications for therapeutic strategies."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C88"
+    ],
+    "result": "Prior studies of nuclear receptors and bisaryl-thiohydantoin chemistry informed the rational design approach, with precedent showing that single amino acids can determine antagonist sensitivity and that compounds with similar D-rings can antagonize AR WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C61, C62, C88 appropriately cite prior work on progesterone receptor (Benhamou et al., 1992), the bisaryl-thiohydantoin literature, and medicinal chemistry (Jung et al., 2010). These citations provide scientific rationale for the structure-guided drug design strategy employed in the study."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Blood-based assays for AR mutation detection may be a compelling alternative to tumor rebiopsy in prostate cancer patients, given the challenges of biopsying osteoblastic bone lesions and recent success with circulating tumor DNA in other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C65-C66 combine established clinical knowledge about biopsy challenges (C66) with a speculative proposal about blood-based detection (C65). While the proposal is reasonable and cites relevant precedent from other cancers (Diehl et al., 2008; Leary et al., 2012), it remains untested for AR F876L detection and represents a future direction rather than a demonstrated result."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C80"
+    ],
+    "result": "AR overexpression is a common resistance mechanism in CRPC that confers partial agonism to bicalutamide, and approximately 50% of patients fail to respond to enzalutamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C67-C68, C80 are supported by citations to clinical studies (Linja et al., 2001; Chen et al., 2004; Scher et al., 2012). These claims establish the clinical context for the study, including the prevalence of resistance mechanisms and the unmet medical need addressed by the research."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The structural model provides a tool for future drug development, and the success of MD simulations in predicting compound activity suggests that in silico screening could guide antiandrogen discovery, though a cocrystal structure would enhance this approach. Discovery of F876L may facilitate crystallographic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C77-C79 are speculative statements about future applications and research directions. While the MD simulations successfully predicted DR103 activity (supporting C79), the broader claims about facilitating crystallography (C77) and general utility for drug development (C78) remain prospective. These represent reasonable hypotheses based on the current work but lack experimental validation."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "MD simulations suggest that the substituent on position 4 of the B-ring (gem-dimethyl on enzalutamide, spirocyclobutyl on ARN-509) is positioned to interact with H12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C42 is supported by MD simulation data and is consistent with the experimental SAR data showing that modifications at this position (DR103-107 series) dramatically affect antagonist activity. The computational prediction aligns with the empirical structure-activity relationships observed in the chemical screen."
+  }
+]

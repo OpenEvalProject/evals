@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C66"
+    ],
+    "result": "The authors reconstructed a 39-mutation evolutionary trajectory from Aichi/1968 to Brisbane/2007 NP using 431 date-stamped H3N2 sequences and Bayesian phylogenetic methods with a Jones-Taylor-Thornton substitution model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C32, and C66 collectively describe the phylogenetic reconstruction methodology. The use of 431 sequences (C32), BEAST with appropriate models (C66), and the resulting 39-mutation trajectory (C4) are well-documented with provided code and data. The methods are standard and appropriate for this type of analysis."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29"
+    ],
+    "result": "Three mutations (L259S, R384G, V280A) are individually deleterious to the parent Aichi/1968 NP, reducing transcriptional activity and viral growth by >20-fold, with effects that are intrinsic to NP rather than dependent on polymerase background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5 and C6 report experimental measurements of activity and growth defects that are well-replicated. C29 demonstrates these effects persist across three different polymerase backgrounds, strengthening the conclusion that the effects are intrinsic to NP. The experimental controls and replication appear adequate."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C65"
+    ],
+    "result": "N334H rescues the deleterious effects of L259S on transcriptional activity and viral growth, though N334H alone has minimal effect. L259S and N334H fixed in unknown order at Step 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C7 presents clear experimental evidence for epistatic rescue by N334H. C65 establishes that N334H is neutral in the parent background, and C54 documents the evolutionary timing. The epistatic interaction is well-demonstrated through multiple assays (activity and growth)."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C27",
+      "C28",
+      "C55",
+      "C56"
+    ],
+    "result": "R384G is enabled by the reversion of L259S (S259L) and requires E375G for full rescue of viral growth. The reversion S259L preceded R384G in the evolutionary trajectory (Step 20 to Step 21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C8, C27, and C28 provide experimental evidence for complex epistasis involving R384G. C55 and C56 document the evolutionary order. The data show that S259L is necessary but E375G is also required for full growth rescue, demonstrating multi-mutation epistasis. The experimental evidence across multiple genetic backgrounds is convincing."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C26",
+      "C57",
+      "C58"
+    ],
+    "result": "M136I preceded and largely rescues the deleterious effect of V280A. V280A fixed at Step 35, immediately after M136I in the natural evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C9 and C26 present experimental evidence for epistatic rescue, while C57 and C58 document the evolutionary timing. The rescue is demonstrated in both activity and growth assays, and the temporal order is clear from the phylogenetic reconstruction."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The three deleterious mutations (L259S, R384G, V280A) destabilize NP (\u0394Tm \u22123.6\u00b0C to \u22124.9\u00b0C) and reduce protein levels, while N334H stabilizes NP (\u0394Tm +4.4\u00b0C) and rescues all three mutations. All variants showed similar CD spectra and single cooperative unfolding transitions, though denaturation was irreversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C11-C14 present a coherent biophysical mechanism supported by multiple lines of evidence: thermal stability measurements (C13, C14), protein level quantification (C12), and functional rescue (C11). Claims C67-C69 document appropriate controls showing similar secondary structure and unfolding behavior. The irreversibility (C67) is a limitation but doesn't invalidate the comparative \u0394Tm measurements."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C71",
+      "C72"
+    ],
+    "result": "M136I is modestly stabilizing and can partially rescue the activity of all three individually deleterious mutations, and largely rescues V280A protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C15 documents the stabilizing effect of M136I through thermal denaturation. C71 and C72 show functional rescue in activity assays and protein level restoration. The data are consistent across multiple experimental approaches."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C24",
+      "C25"
+    ],
+    "result": "NP stability above ~42\u00b0C is neutral with respect to activity and growth, but below this threshold function declines sharply. The parent Aichi/1968 and most evolutionary intermediates are only marginally above this threshold, yet higher stability has no deleterious effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C16 and C25 establish the threshold relationship between stability and function from comprehensive data across variants. C17 and C24 document that natural NP variants operate near this threshold. The data in Figure 7 clearly support this threshold model, with multiple variants tested above and below the critical stability."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C61"
+    ],
+    "result": "The epistatically interacting residues are not in contact in known NP crystal structures. R384 and E375 are on the same surface contributing opposite charges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C10 is supported by structural analysis of multiple crystal structures (monomeric and oligomeric). C61 describes the spatial relationship of R384 and E375 based on structural data. These are straightforward structural observations that can be verified from the cited PDB structures."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "All three destabilizing mutations occur in characterized CTL epitopes, with two sites showing reduced CTL recognition. These sites are significantly enriched in CTL epitopes compared to random sites (p=0.001) or mutated sites (p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C18 and C19 are supported by literature citations documenting epitope locations and CTL escape. C20 and C21 provide statistical evidence for enrichment with appropriate p-values from permutation tests. The statistical approach is sound, testing against two relevant null distributions."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C31",
+      "C53"
+    ],
+    "result": "Stability-mediated epistasis is the dominant constraint on NP evolution, with stabilizing mutations enabling otherwise deleterious destabilizing mutations that contribute to viral immune escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "This overarching conclusion integrates multiple lines of evidence: the biophysical mechanism (stability), the evolutionary pattern (enabling mutations), and the adaptive significance (CTL epitope enrichment). Claims C22, C23, and C31 synthesize the experimental findings, while C53 connects to immune escape. The evidence is comprehensive and internally consistent."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The results favor the explanation that evolution only selects against insufficient stability (not for marginal stability), as NP is marginally stable despite higher stability having no deleterious effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C47 and C48 present two competing hypotheses from the literature (C46). C49 argues the data support the second hypothesis based on the observation that increased stability is not deleterious (C25). The logic is sound: if excess stability were selected against, variants with higher stability should show functional defects, but they don't."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C73"
+    ],
+    "result": "The final Brisbane/2007 NP contains V280A, R384G, N334H, and M136I (L259S reverted), and this combination exhibits wild-type activity levels. The two stabilizing mutations together can rescue combinations of deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C59 and C60 document the final sequence composition and its functional properties. C73 demonstrates the combined rescue effect of both stabilizing mutations. The experimental data show that the evolutionary endpoint is functional, validating the overall trajectory reconstruction."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "E375G is destabilizing and alone does not rescue R384G, but is necessary with stabilizing mutations for full growth rescue. The authors hypothesize this relates to surface charge important for late-stage protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C63 is experimentally supported, but C62 and C64 are explicitly speculative hypotheses. While the differential effect on growth vs. activity is observed, the mechanistic explanation involving surface charge and late-stage interactions lacks direct experimental validation. This represents an interesting hypothesis requiring further testing."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C30",
+      "C33"
+    ],
+    "result": "All tested NP evolutionary intermediates are functional in fixed polymerase backgrounds, and NP's primary function is fairly authentically represented in tissue-culture assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C30 is supported by the experimental observation that all intermediates showed activity. C33 makes a reasonable inference that intracellular NP function is well-represented in tissue culture, based on the nature of NP's role. While C33 contains an element of assumption, it is reasonable given that NP functions inside cells rather than at the cell surface."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Functionally neutral but stabilizing mutations occasionally fix by stochastic forces such as genetic drift, population bottlenecks, or hitchhiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C52 is explicitly presented as a suggestion/speculation by the authors. While consistent with the data showing that stabilizing mutations are neutral in the parent background, the claim about the specific mechanisms of fixation (drift, bottlenecks, hitchhiking) is not directly tested. This is a plausible evolutionary model but lacks direct experimental support."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Deletion of residues 2\u20137 and R416A mutation enable obtaining non-aggregated RNA-free NP in a CD-compatible buffer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C70 describes a methodological approach based on prior work (Ye et al., 2006). The authors successfully obtained monomeric, RNA-free protein suitable for CD analysis, as evidenced by size-exclusion chromatography, low 260/280 ratios, and proper CD spectra. The approach is well-validated."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C34",
+      "C35"
+    ],
+    "result": "Human H3N2 influenza NP accumulates ~1 amino acid substitution per year, serves as a scaffold for viral RNA, is a CTL target under continual immune pressure (though weaker than surface proteins), with some epitopes under functional constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These background claims (C1-C3, C34-C35) are all supported by appropriate literature citations. They establish the biological context for the study. The citations are to established work in the field and the claims represent accepted knowledge about influenza NP."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Epistasis can constrain evolutionary pathways and increase contingency in adaptation. Laboratory and natural studies have demonstrated strong epistatic interactions, though most previous studies examined small numbers of pre-selected mutations with unknown temporal order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C36-C40) provide literature context and identify a gap in prior work. All are supported by appropriate citations. C40 correctly identifies a limitation in previous studies that motivates the current work's approach of reconstructing complete temporal trajectories."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Previous studies have identified stabilizing mutations contributing to enzyme specificity evolution, drug resistance, H5N1 transmissibility, and shown that mutations are commonly deleterious to one homolog but benign to another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims (C42-C45) cite prior literature establishing precedent for stability-mediated epistasis in protein evolution. The citations are appropriate and the claims accurately represent the cited work, providing important context for interpreting the current findings."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Influenza hemagglutinin antigenic evolution is punctuated, with one explanation being that adaptive change is limited by waiting time for antigenically neutral mutations that enable large antigenic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C50 and C51 cite established literature on hemagglutinin evolution and theoretical explanations for punctuated evolution. These provide context for the Discussion's speculation about broader implications of stability-mediated epistasis. The citations are appropriate."
+  }
+]

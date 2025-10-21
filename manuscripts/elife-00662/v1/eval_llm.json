@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors sequenced 43 clinical isolates from 11 HIV-infected patients with oropharyngeal candidiasis using Illumina sequencing (53-283X coverage), validated SNP calls with 93.9% accuracy using Sequenom iPlex genotyping, and established phylogenetic relationships to identify clonal vs. non-clonal isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C16-C20 and C77-C84 collectively describe a well-executed sequencing study with appropriate validation (C20: 93.9% concordance), clear methodology for alignment and SNP calling (C80, C82), and phylogenetic analysis (C83, C84). The validation data provides strong support for the technical quality of the genomic analysis."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C3",
+      "C24",
+      "C66"
+    ],
+    "result": "LOH events were commonly detected across all patient series and were associated with increased drug resistance as measured by MIC, with progenitor isolates being more sensitive to fluconazole than subsequent isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C18, C3, C24, and C66 are supported by direct measurements of MIC across isolates and computational detection of LOH events. The association between LOH and MIC changes is demonstrated through correlation analysis across multiple patient series, providing strong evidence for this result."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C5",
+      "C28",
+      "C67"
+    ],
+    "result": "Aneuploidies were detected in 80% of patient series, most commonly involving Chromosome 5, but were predominantly transient and not consistently associated with adaptive increases in MIC levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C26-C28, C5, and C67 are supported by copy number variation analysis showing high prevalence of aneuploidies (C26, C27) but lack of consistent correlation with MIC changes (C28, C5). The transient nature is demonstrated through temporal analysis of isolates, distinguishing aneuploidies from persistent LOH events."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C54"
+    ],
+    "result": "Aneuploidies may serve as transient intermediates that facilitate the evolution of more stable adaptive genotypes, potentially by increasing the likelihood of LOH events, as evidenced by the co-occurrence of Chromosome 5 trisomy with Chromosome 5 LOH in 4 of 6 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While C29 provides observational data showing co-occurrence of aneuploidy and LOH, claims C30 and C54 are explicitly acknowledged as hypotheses by the authors ('we hypothesize', 'may be'). The temporal ordering cannot be definitively established from single-colony sampling at each timepoint, making the mechanistic interpretation speculative despite suggestive patterns."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C4"
+    ],
+    "result": "240 genes with persistent, recurrent nonsynonymous SNPs were identified as likely contributors to adaptation, a number significantly higher than expected by chance (p < 10\u207b\u2074), though these genes are longer than average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C31-C33 are supported by appropriate statistical modeling (Poisson model accounting for gene length, C32) and direct measurement (C33). The filtering strategy (persistent and recurrent mutations) is reasonable for identifying adaptive changes, and the statistical significance accounts for the confounding factor of gene length."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C68"
+    ],
+    "result": "Among the 240 recurrently mutated genes, 166 were associated with MIC increases, with enrichment for cell wall and cell surface genes. Key genes include AXL1 (mutated in 8 series) and ERG11 (affected in 70% of patient series).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C34-C38 and C68 are supported by correlation analysis with MIC data (C34: empirical p < 10\u207b\u2075), gene ontology enrichment analysis (C35, C68), and direct counting of mutations across patient series (C36-C38). The identification of known resistance genes like ERG11 provides positive control validation."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "17 putative driver mutations were identified in genes that were both recurrently mutated and showed homozygous changes from the progenitor genotype, with 8 also homozygosed in LOH tracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C25 is supported by the analysis pipeline that identifies specific mutation patterns (heterozygous to homozygous changes) consistent with positive selection. The overlap with LOH events provides additional mechanistic support for these being adaptive changes under selection."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The 240 recurrently mutated genes were partitioned into 5 co-occurrence clusters with significantly correlated mutation patterns (p < 5.2 \u00d7 10\u207b\u00b9\u2078\u00b2), enriched for functionally coherent gene sets including cell wall/surface (Cluster 1), cell cycle/stress (Cluster 2), drug response (Cluster 3), and carbohydrate binding (Cluster 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C39-C44 are supported by NMF clustering analysis with permutation testing showing highly significant co-occurrence patterns (C40). The functional enrichment of clusters (C41-C44) using gene ontology provides biological validation of the clustering approach, suggesting these represent coordinated adaptive responses."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C75"
+    ],
+    "result": "At least 30-36% of patients carried more than one unrelated Candida strain, yet substantial genetic diversity (thousands of SNPs) exists even among clonally related isolates from the same patient, including isolates collected on the same day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C21-C23 and C75 are supported by phylogenetic analysis (C21, C75) and direct SNP counting (C22). The observation that same-day isolates differ by thousands of SNPs (C22) provides strong evidence for pre-existing diversity within clonal populations (C23), though the relative contributions of de novo mutation vs. standing variation cannot be definitively determined."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C6"
+    ],
+    "result": "Significant changes in virulence were observed between isolate pairs in C. elegans infection assays (p < 0.001), with three of four evolved isolates showing increased virulence, and substantial variation in adhesion, filamentation, and virulence phenotypes across isolates within patient series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C45-C47 and C6 are supported by experimental measurements with appropriate statistical testing (C45: log-rank test, p < 0.001). The phenotypic assays (adhesion, filamentation, C. elegans survival) provide direct evidence for evolved changes in virulence-associated traits beyond drug resistance."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Increased fitness in vitro (without drug) generally correlated with increased virulence traits, while initial MIC increases were accompanied by decreased fitness in the absence of drug but increased relative fitness in the presence of fluconazole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C48-C50 are supported by competitive fitness assays and correlation analysis. The trade-off between drug resistance and fitness in the absence of drug (C49, C50) is demonstrated through direct measurements in both conditions, consistent with the cost of resistance."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Later isolates often showed improved fitness without further MIC changes, suggesting compensatory mutations offset fitness costs of resistance. Loss of aneuploidies resulted in improved fitness, consistent with the general negative effect of aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C52, C53, and C55 are supported by temporal fitness measurements (C52) and comparison of aneuploid vs. euploid isolates (C55). The interpretation of compensatory evolution (C53) is reasonable given the data pattern and is supported by citations to similar findings in other organisms, though direct identification of compensatory mutations is not provided."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C71"
+    ],
+    "result": "Functional validation of candidate genes through deletion mutants showed that deletion of orf19.4658 caused a twofold decrease in MIC, while 5 of 22 deletion mutants (including cell wall genes HYR1, HYR3, PIR1) reduced fitness in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C56, C57, and C71 are supported by direct experimental measurements of MIC and competitive fitness in deletion mutants. However, the functional validation is limited in scope (only 23 of 240 candidate genes tested) and most deletions showed no MIC effect, suggesting the mutations in clinical isolates may be gain-of-function or context-dependent."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Evolved isolate 4617 from patient 59 showed dramatically increased filamentation concomitant with persistent SNPs in genes associated with filamentous growth (CHO1, MNN2, and 7 FGR genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C72 is supported by direct phenotypic measurement (filamentation assay) and genomic analysis showing mutations in functionally relevant genes. The correlation between genotype and phenotype in this specific case provides a concrete example linking mutations to evolved traits, though causality is not definitively established."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study identified substantially more genetic diversity than a comparable C. glabrata study, which the authors attribute to differences in drug mechanism (fungistatic vs. fungicidal), ploidy (diploid vs. haploid), and stress-induced mutation rates in C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C58-C64 provide a well-reasoned comparative analysis supported by citations. The explanations for greater diversity in C. albicans (fungistatic drug preserving diversity C59, diploid buffering C60-C61, elevated mutation rates C62-C63) are biologically plausible and supported by literature, though the relative contribution of each factor cannot be quantified from the data."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C51",
+      "C65",
+      "C69",
+      "C70",
+      "C74"
+    ],
+    "result": "The manuscript provides appropriate background context on C. albicans biology, azole resistance mechanisms, clinical epidemiology, and parallels with cancer evolution, supported by relevant citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1-C2, C7-C15, C51, C65, C69-C70, and C74 represent established knowledge appropriately cited from the literature. These provide necessary context for interpreting the study's findings and are not novel claims requiring validation from this study's data."
+  }
+]

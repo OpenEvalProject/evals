@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C42"
+    ],
+    "result": "Heat stress triggers extensive endocytic downregulation of multiple plasma membrane cargo proteins (Can1, Mup1, Lyp1), with different cargoes exhibiting distinct thermostability profiles. This cargo-intrinsic thermostability suggests that heat stress induces varying degrees of misfolding in different PM proteins, leading to their selective recognition and endocytic targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C25, C32, C33 provide direct microscopy and Western blot evidence of heat-induced cargo trafficking. Claims C35-C36 demonstrate differential thermostability through kinetic analysis (Table 1, Figure 1 supplements). The mechanistic interpretation (C37, C42) is reasonably inferred from the thermostability data and is consistent with known temperature-protein folding relationships."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C105"
+    ],
+    "result": "Glycerol, a chemical chaperone, stabilizes the thermolabile cargo Lyp1 during heat stress but does not affect substrate-induced endocytosis of Mup1. This differential effect supports the hypothesis that the ART-Rsp5 network recognizes misfolded proteins rather than responding to general endocytic signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C38-C41 provide experimental evidence showing glycerol's selective stabilization of Lyp1 during heat stress (Figure 1C, supplements 4, 9, 10). The inference that this supports misfolding recognition (C105) is logical and well-supported by the differential effects on heat-induced vs. substrate-induced endocytosis."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C101"
+    ],
+    "result": "The thermolabile cargo Lyp1 exhibits reduced detergent solubility and forms aggregates during heat stress, as demonstrated by detergent solubilization assays and sucrose gradient analysis. In contrast, the thermostable cargo Pdr5 maintains detergent solubility at high temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C43-C48 are directly supported by biochemical data in Figure 1D-E showing differential detergent solubility and sucrose gradient migration patterns. The aggregation of Lyp1 (C47, C101) is a reasonable inference from the migration to the bottom of the sucrose gradient, consistent with aggregate behavior."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C103"
+    ],
+    "result": "The Rsp5 ubiquitin ligase mediates the heat-induced endocytic response. Mutants rsp5-ww2 and rsp5-ww3 exhibit defects in heat-induced endocytosis of multiple cargoes (Can1, Mup1, Lyp1) and display temperature-sensitive growth phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C51-C53 are directly supported by microscopy (Figure 2A), Western blot (Figure 2B-C), and growth assay data (Figure 2D). The requirement for Rsp5 in the heat-induced endocytic response (C103) is well-demonstrated by the cargo trafficking defects in rsp5 mutants."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Plasma membrane clearance through endocytosis is the critical protective event during heat stress. Mutations blocking endocytosis (\u0394end3, \u0394rvs167) cause significant PI staining and loss of PM integrity, while mutations affecting downstream trafficking (\u0394vps23, \u0394vam3, \u0394pep4) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C54-C56 establish PI staining as a valid assay for PM integrity. Claims C59-C61 provide clear experimental evidence (Figure 3C) showing differential effects of endocytic vs. post-endocytic mutations. The conclusion that PM clearance is the critical protective step is well-supported by this genetic dissection."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C121",
+      "C122"
+    ],
+    "result": "Loss of PM integrity in rsp5 and endocytic mutants during heat stress is linked to accumulation of misfolded cargo at the cell surface. This accumulation is toxic and leads to cell death, establishing the ART-Rsp5 network as critical for protecting PM integrity during proteotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4-C5, C28-C29, C121-C122 are supported by PI staining assays (Figure 3B-C) and viability measurements showing correlation between cargo accumulation, PI staining, and cell death. The causal link between cargo accumulation and toxicity is demonstrated through multiple genetic approaches, though the precise molecular mechanism of toxicity remains speculative (C30, C62)."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The ART adaptor network, particularly Art1 and Art2, mediates the heat-induced endocytic response. \u0394art1 mutants show temperature sensitivity and cargo trafficking defects, with synthetic phenotypes observed in double and higher-order art mutants. A genetic screen identified only ART1 and ART2 as suppressors, indicating functional redundancy among ART proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C66-C74 are supported by comprehensive genetic data including growth assays (Figure 4A, D), microscopy (Figure 4B, G), Western blots (Figure 4C), and PI staining (Figure 4E-F). The genetic screen result (C70) and synthetic phenotypes (C68-C69, C73) provide strong evidence for redundancy (C71-C72). The collective data firmly establish the ART network's role (C75)."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Accumulation of the thermolabile cargo Lyp1 at the plasma membrane is toxic during heat stress. Lyp1 expression levels correlate with temperature sensitivity in \u0394art1\u0394lyp1 cells, and a non-ubiquitinatable Lyp1-K10XR mutant causes toxicity even in wildtype cells. Overexpression of Art1 provides protection against this toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C79-C87 are supported by systematic experiments including promoter titrations (Figure 5B), ubiquitination-defective mutants (Figure 5C, supplements 2-3), PI staining correlations (Figure 5D), and Art1 rescue experiments (Figure 5E). The data convincingly demonstrate that Lyp1 accumulation at the PM is toxic and that Art1-mediated clearance is protective (C88)."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C6",
+      "C31",
+      "C139"
+    ],
+    "result": "The ART-Rsp5 plasma membrane quality control system functions in parallel with ER quality control (ERAD) and Golgi quality control (GQC) systems. Genetic interactions show that defects in all three sequential pathways result in severe PM integrity defects during misfolding stress, suggesting they function as spatially distinct yet mechanistically overlapping systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C90-C93 are supported by systematic genetic interaction data (Figure 6B-D) showing synthetic phenotypes when combining defects in ERQC, GQC, and PMQC. The interpretation that these systems function in parallel (C6, C31, C139) is well-supported by the genetic data, though alternative explanations for the synthetic interactions are acknowledged (C141)."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C76",
+      "C99",
+      "C149"
+    ],
+    "result": "The ART-Rsp5 network comprises a novel plasma membrane quality control (PMQC) system that recognizes and targets misfolded integral membrane proteins for endocytic removal and vacuolar degradation. This system meets the criteria for a bona fide quality control pathway: selective recognition of misfolded proteins, broad substrate range, activation during stress, and cellular protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "This central conclusion (C3, C99, C149) is supported by the collective evidence from all experimental results: cargo-specific thermostability (C35-C36), misfolding/aggregation (C44-C48), Rsp5/ART requirement (C51-C52, C67), protection from toxicity (C80-C87), and genetic interactions with other QC systems (C90-C93). The four criteria for QC systems (C95-C98) are adequately addressed by the data."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C77",
+      "C102",
+      "C109",
+      "C110"
+    ],
+    "result": "Heat stress results in misfolding of thermolabile PM cargo molecules, triggering their recognition by specific ART-Rsp5 complexes. Different ART proteins recognize distinct misfolded signatures, and the system targets proteins as they become conformationally disordered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C26, C77, C102 are supported by the aggregation data (C44-C48), thermostability profiles (C35-C36), and glycerol stabilization experiments (C39-C41). The cargo-specific recognition by different ARTs (C109-C110) is supported by differential requirements for ART proteins (C67, C74) and the genetic redundancy data (C68-C74)."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C62",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The molecular mechanism by which misfolded PM protein accumulation causes loss of PM integrity involves either non-specific leakage through misfolded channels/transporters or protein aggregation disrupting membrane function. Conformational flux in channels and transporters during proteotoxic stress may compromise ion gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Claims C30, C62, C123, C125-C126 are explicitly speculative (marked as SPECULATION in evidence_type). While the correlation between cargo accumulation and PI staining is demonstrated (C86), the precise molecular mechanism of toxicity is not experimentally tested. These are reasonable hypotheses but lack direct experimental support in the manuscript."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The ART network contains 173 predicted intrinsically disordered regions, suggesting potential capacity for direct detection of misfolded proteins. Recognition of integral membrane protein misfolding may involve detection of aggregated membrane-spanning domains through mechanisms distinct from soluble protein quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C116 provides computational prediction data, but C117-C119 are speculative inferences about mechanism. While the presence of disordered regions is documented, their functional role in misfolding recognition is not experimentally tested. The speculation about aggregation recognition (C119) is reasonable but unsupported by direct evidence."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The ART-Rsp5 network is activated during heat stress through PM translocation of Art1. This activation occurs independently of Art1 phosphorylation status, but the mechanistic basis remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C132 is supported by microscopy data (Figure 4 supplement 2), but C133 relies on unpublished negative results. The lack of phosphorylation changes (C133) and unknown mechanism (C134) indicate incomplete understanding. While Art1 translocation is demonstrated, the activation mechanism requires further investigation."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C143",
+      "C152"
+    ],
+    "result": "Beyond proteotoxic stress responses, the PMQC system may serve housekeeping functions in protein turnover during normal growth and have implications for human channelopathies and aging. Understanding compartment-specific quality control coordination could improve therapeutic strategies for protein misfolding diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Claims C135, C137, C143, C152 are explicitly speculative about broader implications and future applications. While C136 and C138 cite established knowledge about protein turnover and channelopathies, the specific role of PMQC in these contexts is not experimentally demonstrated in this study. These represent reasonable extrapolations but lack direct experimental support."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "A similar peripheral quality control function may be mediated by the ARRDC family of proteins in mammalian cells, which share structural similarities with yeast ART proteins including arrestin domains and PY motifs for Nedd4 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Claim C150 is explicitly speculative ('tempting to speculate'), and while C151 describes structural similarities based on established knowledge, no experimental evidence is provided for ARRDC function in mammalian PMQC. This is a reasonable hypothesis for future investigation but remains untested."
+  }
+]

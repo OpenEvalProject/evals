@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C73"
+    ],
+    "result": "The authors estimate that one-quarter (24%) of chondrichthyan species are threatened globally, based on IUCN Red List assessments of 1,041 species combined with predictive modeling for Data Deficient species. Of assessed species, 17.4% (181 species) are directly classified as threatened (25 CR, 43 EN, 113 VU), with an additional 68 DD species predicted to be threatened through statistical modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The threat assessment is based on systematic expert evaluation through 17 workshops with 300+ experts (C92, C93) using standardized IUCN criteria. The predictive modeling approach (C17) is methodologically sound, using body size and geographic distribution to estimate threat status of DD species. The 46.8% DD rate (C16) is acknowledged as high uncertainty, but the authors appropriately use conservative prediction methods and validate their approach against independent fisheries data (C109, C110)."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Overfishing (both targeted and incidental) is identified as the primary threat to chondrichthyans, with one-third of threatened species subject to targeted fishing and others declining due to bycatch. Half (53.6%) of the 69 high-value species in the global fin trade are threatened.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The threat attribution is based on systematic threat coding in IUCN assessments by expert panels (C2). The specific proportions for targeted vs. incidental capture (C24, C25) come directly from threat assessment data. The fin trade analysis (C26) cross-references independently documented trade species with threat status, providing convergent evidence for overfishing as the primary driver."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Large-bodied, shallow-water chondrichthyan species face the greatest extinction risk, with maximum body size and minimum depth being the strongest predictors of threat status. Coastal/shelf and pelagic species >1 m have >50% probability of being threatened, compared to ~12% for similar-sized deepwater species. Five of seven most threatened families are rays, with sawfishes (Pristidae) being the most threatened family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The result is supported by rigorous statistical modeling using GLMMs with phylogenetic controls (Tables 3, 9, Figure 3). The body size and depth effects are statistically significant with clear mechanistic explanations (C35, C36). The family-level patterns (C4, C22) are derived from direct counts in threat assessments. The >50% threat probability for large shallow species (C76, C77) comes from validated predictive models with high accuracy (AUC values in Table 3)."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Geographic range size (Extent of Occurrence) is largely unrelated to chondrichthyan extinction risk, contrasting with terrestrial patterns where small range size predicts extinction. This is attributed to the widespread distribution of fishing activity throughout the world's oceans, while fishing has narrow depth penetration allowing deeper species refuge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The lack of range-risk relationship is demonstrated statistically (Table 9E shows non-significant effect). The contrast with terrestrial patterns (C38) is supported by appropriate citations to comparative studies. The mechanistic explanations (C39, C40) are well-reasoned and supported by citations on fishing footprint and depth penetration, though these remain hypotheses rather than directly tested mechanisms."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Habitat degradation threatens nearly one-third (29.8%) of threatened sharks and rays through coastal development, mangrove destruction, dam construction, and pollution. Freshwater species face particularly acute combined threats, with 36% threatened. Persecution affects at least 12 species, while climate change has been directly linked to only one species' threatened status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The proportions and species counts (C27, C28, C29, C30) come directly from threat coding in IUCN assessments. The specific examples of threatened species and threat types are documented. The climate change finding (C31) appropriately reflects current limited evidence. The freshwater threat level (C28) is consistent with broader freshwater biodiversity patterns (C45)."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C15"
+    ],
+    "result": "Chondrichthyan extinction risk is substantially higher than most other vertebrates (except amphibians), with only 23.2% of species classified as Least Concern\u2014the lowest percentage among all vertebrate groups. This compares unfavorably to amphibians (38% LC, 32% DD) despite amphibians having >30% threatened.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The comparative analysis (C5, C41) is based on published data from comprehensive vertebrate assessments (Hoffmann et al., 2010; Stuart et al., 2004). The 23.2% LC rate (C15) is a direct count from assessments. The comparison is appropriate and the conclusion that chondrichthyans have worse conservation status than most vertebrates is justified by the combination of high threat (17.4% observed), low safety (23.2% LC), and high uncertainty (46.8% DD)."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Chondrichthyan population depletion has occurred throughout ice-free waters globally, with particular hotspots in the Indo-Pacific Biodiversity Triangle (76 threatened species, Gulf of Thailand having highest density with 48 species in 0.36 million km\u00b2), Mediterranean Sea, Red Sea (29 threatened species), and pelagic oceans (86% threatened or Near Threatened). Fifteen irreplaceable hotspots harbor all 66 threatened endemic species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The geographic patterns are based on systematic spatial analysis using hexagonal grids and species distribution maps (Methods section). The specific counts for each region (C68, C69, C70, C71) are derived from spatial overlays of threat status and distribution data. The residual threat analysis (Figure 9) appropriately controls for species richness to identify true hotspots. The Mediterranean pattern is additionally validated by independent quantitative studies (C109)."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The chondrichthyan threat estimate (>24%) is distinctly greater than global fisheries assessments for teleost fishes (7-18% collapsed stocks). Independent fisheries data show sharks and rays are the most overfished groups (median B/BMSY = 0.37), with median biomass declined 81-89% by 2009. The authors caution that fisheries assessments may underestimate risk for less-resilient species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The comparison with fisheries assessments (C46) appropriately cites published studies (Branch et al., 2011; Costello et al., 2012). The B/BMSY data (C110) and biomass decline calculations (C49) come from Costello et al., 2012. The validation against Mediterranean quantitative analyses (C109) shows consistency between expert assessments and independent population trend data. The cautionary interpretation (C48) is appropriately conservative given the different methodologies and taxonomic coverage."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "While no chondrichthyan species has been confirmed globally extinct, at least 28 populations are locally or regionally extinct. Several species have not been observed for decades, including the Critically Endangered Pondicherry shark (not seen since 1979), and Common skate and Common angel shark (regionally extinct from much of European waters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The population extinction count (C51) is documented from literature review (Dulvy et al., 2003; Dulvy and Forrest, 2010). The specific examples (C53-C57) are supported by museum records, regional assessments, and published studies. The qualification 'as far as we know' (C52) appropriately acknowledges uncertainty, particularly for poorly studied species. The evidence is consistent with severe population declines documented elsewhere in the manuscript."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Chondrichthyans are an ancient lineage (\u2265420 million years old) that occupy upper tiers of aquatic food webs and play important functional roles in ecosystem control. They exhibit extreme life histories including the longest gestation periods and highest maternal investment in the animal kingdom, resulting in very low population growth rates and weak density-dependent compensation, rendering them intrinsically sensitive to fishing mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The evolutionary age (C58) and ecological roles (C59, C60) are established knowledge supported by appropriate paleontological and ecological citations (Compagno, 1990; Kriwet et al., 2008; Ferretti et al., 2010). The life history characteristics (C61-C63) are documented in Cort\u00e9s, 2000. The population dynamics consequences (C64-C66) are well-established principles supported by multiple citations (Musick, 1999b; Cort\u00e9s, 2002; Garc\u00eda et al., 2008). This provides the mechanistic basis for understanding extinction vulnerability."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "Coastal species face greater combined threats from fishing and habitat degradation than offshore species. While deepwater chondrichthyans are intrinsically more sensitive to overfishing due to slow growth and low productivity, they are less threatened than shallow-water species of similar size because they remain largely inaccessible to most fisheries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The habitat-specific threat patterns (C75) are demonstrated through habitat-stratified analyses (Table 2) and spatial mapping. The intrinsic sensitivity of deepwater species (C79) is supported by life history literature (Garc\u00eda et al., 2008; Simpfendorfer and Kyne, 2009). The lower realized threat (C80) is shown in statistical models (Figure 5, Table 9) and explained mechanistically by fishing depth limitations. This represents an important insight about the interaction between intrinsic sensitivity and extrinsic exposure."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C16",
+      "C17"
+    ],
+    "result": "Chondrichthyans have one of the highest rates of Data Deficiency (46.8%, 487 species) of any taxon assessed to date. Predictive modeling based on body size and distribution suggests at least 68 additional DD species are likely threatened.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The DD rate (C16) is a direct count from assessments. The comparison with other taxa (C74) is supported by citation to Hoffmann et al., 2010. The predictive modeling approach (C17) is methodologically sound, using validated statistical models (Table 3) with good prediction accuracy (AUC values). The authors appropriately acknowledge this as a minimum estimate and discuss the high uncertainty as a key challenge."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Most threatened chondrichthyans (81%, 148 of 181 species) were assessed using IUCN Criterion A (population reduction over time), with 29 species assessed under Criterion B (geographic range) and 4 species under Criterion C (small population size and decline).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are direct counts (C81, C82, C83) from the assessment process documenting which IUCN criteria were applied. The Methods section provides detailed justification for criterion selection and discusses the appropriateness of decline thresholds for marine fishes. The predominance of Criterion A assessments is appropriate given the available data types (catch trends, CPUE trajectories) for most species."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C115"
+    ],
+    "result": "One-third of all chondrichthyan species have been described in the past 30 years, with new species described on average every 2-3 weeks since the 1970s. Since 2005, ~140 additional species have been recognized, with 70 described in three 2008 CSIRO publications alone. The description rate peaked in 2008 (81 species), with most new species from the Indo-West Pacific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The taxonomic trends (C84-C91) are documented from species description records and cited publications (Last, 2007; White and Last, 2012; Last et al., 2008a,b,c). The specific counts and rates are verifiable from taxonomic databases. The Indonesian market survey example (C115) provides concrete evidence of undiscovered diversity. This highlights an important challenge: the assessment baseline is moving as new species are discovered, potentially affecting threat estimates."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Despite widespread finning bans being the most common conservation measure, they have not significantly reduced shark mortality or risk to threatened species. Most governments lack resources and political will for effective conservation. International protections remain limited: only a handful of species have RFMO protections, CMS MoU covers only 7 species, and only 10 species were CITES-listed by 2013 (with 7 more added in 2013), despite >50 sharks in the Law of the Sea Convention and potentially >150 migratory species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The assessment of finning ban effectiveness (C95) is supported by Clarke et al., 2013. The counts of species under various international agreements (C97-C102) are documented from treaty provisions and meeting outcomes. The assessment of government capacity (C96) is a reasonable inference from the review of management measures and continued high threat levels. The gap between the number of species warranting protection and those actually protected is clearly documented."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C116"
+    ],
+    "result": "Hong Kong handled approximately half of global shark fin imports annually from 1996-2001. Chondrichthyan catches are under-reported to FAO, with only one-third reported at species level. The aggregate 'sharks, rays, skates, etc' category comprised 45% of total reported catch (1950-2009), though this proportion has declined from ~50% to ~35%. Chimaeras represent only 0.72% of catch, and 11% of landings data are unavailable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The Hong Kong trade data (C103) comes from Clarke et al., 2006. The FAO data quality issues (C104, C105) are documented through analysis of FishStat database and supported by Fischer et al., 2012. The specific proportions (C106-C108, C116) are calculated from FAO data. These findings highlight important data limitations that affect the ability to monitor population trends and validate threat assessments, though the authors appropriately work within these constraints."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The IUCN Red List assessment process involved 17 workshops with more than 300 experts, with 302 national, regional, and international experts from 64 countries participating in the GSRLA workshops and assessment production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are factual descriptions (C92, C93) of the assessment methodology documented in Table 8 and the Methods section. The scale and geographic breadth of expert participation supports the credibility of the consensus-based assessments. The multi-workshop approach with peer review provides quality control, though the authors appropriately acknowledge remaining uncertainties, particularly for DD species."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C28"
+    ],
+    "result": "The high threat level in freshwater chondrichthyans (36% of 90 obligate and euryhaline species) is consistent with intense extinction risk faced by many freshwater and estuarine species globally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The freshwater threat level (C28) is a direct count from assessments. The comparison with broader freshwater biodiversity patterns (C45) is supported by citation to Darwall et al., 2011. The consistency between chondrichthyan patterns and general freshwater biodiversity trends strengthens confidence in the findings and suggests common underlying drivers (combined fishing and habitat degradation pressures)."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The Blue shark is one of the most productive oceanic pelagic sharks, maturing at 4-6 years with an annual population increase rate of ~28% and BMSY at ~42% of virgin biomass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These life history parameters (C112-C114) are cited from Cort\u00e9s, 2008 and Simpfendorfer et al., 2008. The Blue shark is used as an example to illustrate the challenges of assessing globally distributed species with regional variation in data quality and fishing pressure. The parameters are relevant to understanding why this relatively productive species was classified as Near Threatened rather than threatened globally."
+  }
+]

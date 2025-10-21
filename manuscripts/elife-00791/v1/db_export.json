@@ -1,0 +1,162 @@
+{
+  "submission": {
+    "id": "637272ef-df79-41de-8c3e-4e90ced73be2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:00:24.573719Z",
+    "updated_at": "2025-10-21T23:00:24.573719Z"
+  },
+  "content": [
+    {
+      "id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "submission_id": "637272ef-df79-41de-8c3e-4e90ced73be2",
+      "content_type": "manuscript",
+      "content_text": "# Time for a change\n\n## Authors\n\n- Sabrina E Sanchez<sup>1</sup>\n- Marcelo J Yanovsky<sup>2</sup>\n\n### Affiliations\n\n1. the Instituto de Investigaciones Bioqu\u00edmicas de Buenos Aires Leloir Institute Buenos Aires Argentina ssanchez@leloir.org.ar\n2. the Instituto de Investigaciones Bioqu\u00edmicas de Buenos Aires Leloir Institute Buenos Aires Argentina myanovsky@leloir.org.ar\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe circadian clock of Arabidopsis , a popular model organism for plants, is more complex than expected, with negative feedback loops based on the repression of gene expression having a less exclusive role than previously thought.\n",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8f67476c-3bff-4391-8c22-3db7e15b4ac0",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "claim_id": "C1",
+      "claim": "The circadian clock of Arabidopsis is more complex than expected.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The circadian clock of Arabidopsis , a popular model organism for plants, is more complex than expected",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a comparative statement inferring increased complexity relative to previous understanding, but no specific data or citations are provided in this abstract to support it.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "462ec622-963f-457a-bc23-ed7286a0d17e",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "claim_id": "C2",
+      "claim": "Arabidopsis is a popular model organism for plants.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Arabidopsis , a popular model organism for plants",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This draws from established scientific consensus that Arabidopsis is widely used as a model organism in plant biology research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "e9ab2b12-3774-4ddb-81a2-f5df63cc76d0",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "claim_id": "C3",
+      "claim": "Negative feedback loops in the Arabidopsis circadian clock are based on the repression of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "negative feedback loops based on the repression of gene expression",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a known mechanism of circadian clock regulation that is part of established scientific understanding of circadian systems.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "2311f516-db5c-4ae5-9cfc-38b965296c4c",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "claim_id": "C4",
+      "claim": "Negative feedback loops based on the repression of gene expression have a less exclusive role in the Arabidopsis circadian clock than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source_text": "negative feedback loops based on the repression of gene expression having a less exclusive role than previously thought",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a comparative claim about a shift in understanding, but the abstract does not provide specific data or citations to support this assertion.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "dcc24369-ba11-48e6-990c-94081588964b",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "claim_id": "C5",
+      "claim": "The complexity of the Arabidopsis circadian clock involves mechanisms beyond negative feedback loops based on gene repression.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The circadian clock of Arabidopsis , a popular model organism for plants, is more complex than expected, with negative feedback loops based on the repression of gene expression having a less exclusive role than previously thought.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is logically inferred from the statement that negative feedback loops have a 'less exclusive role,' implying other mechanisms must be involved, though not explicitly stated.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ccef8304-6260-45dd-9f72-1b1e5b193a3d",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Arabidopsis is established as a popular model organism for plant biology research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C2 is a well-established fact in plant biology supported by decades of scientific consensus and widespread use of Arabidopsis in research. This is general knowledge that requires no additional validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "4832d2fe-c164-4a36-a77a-6513a4317d10",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "The Arabidopsis circadian clock operates through negative feedback loops based on repression of gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C3 describes an established mechanism of circadian clock regulation that is part of the foundational knowledge in chronobiology. This represents prior work that is well-documented in the literature.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    },
+    {
+      "id": "160accae-a03b-4c85-b5b0-532adee67e24",
+      "content_id": "6116e7d1-936e-4bee-9bfb-b97b56e2cbb3",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "The Arabidopsis circadian clock is more complex than previously understood, with negative feedback loops based on gene repression playing a less exclusive role and other mechanisms contributing to clock function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claims C1, C4, and C5 make assertions about increased complexity and diminished exclusivity of negative feedback loops, but the abstract provides no experimental data, statistical analysis, citations to supporting studies, or description of alternative mechanisms. These are interpretive statements without evidentiary support in the provided text, making them unverifiable assertions that would require substantial experimental or analytical evidence to support.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:00:24.573719Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "462ec622-963f-457a-bc23-ed7286a0d17e",
+      "result_id": "ccef8304-6260-45dd-9f72-1b1e5b193a3d"
+    },
+    {
+      "claim_id": "e9ab2b12-3774-4ddb-81a2-f5df63cc76d0",
+      "result_id": "4832d2fe-c164-4a36-a77a-6513a4317d10"
+    },
+    {
+      "claim_id": "8f67476c-3bff-4391-8c22-3db7e15b4ac0",
+      "result_id": "160accae-a03b-4c85-b5b0-532adee67e24"
+    },
+    {
+      "claim_id": "2311f516-db5c-4ae5-9cfc-38b965296c4c",
+      "result_id": "160accae-a03b-4c85-b5b0-532adee67e24"
+    },
+    {
+      "claim_id": "dcc24369-ba11-48e6-990c-94081588964b",
+      "result_id": "160accae-a03b-4c85-b5b0-532adee67e24"
+    }
+  ],
+  "comparisons": []
+}
