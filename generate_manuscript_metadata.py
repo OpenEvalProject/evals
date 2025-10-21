@@ -24,15 +24,16 @@ def main():
 
     print(f"Found {len(xml_files)} XML files to process")
 
-    # Path to jxp command
-    jxp_path = Path(__file__).parent.parent / "jxp" / ".venv" / "bin" / "jxp"
+    # Path to jats command
+    jats_path = Path(__file__).parent.parent / "jats" / ".venv" / "bin" / "jats"
 
-    if not jxp_path.exists():
-        print(f"Error: jxp not found at {jxp_path}", file=sys.stderr)
+    if not jats_path.exists():
+        print(f"Error: jats not found at {jats_path}", file=sys.stderr)
         sys.exit(1)
 
     files_processed = 0
     files_failed = 0
+    files_skipped = 0
 
     for xml_file in sorted(xml_files):
         # Extract manuscript ID and version from filename
@@ -50,10 +51,15 @@ def main():
 
         output_file = output_dir / "manuscript_metadata.json"
 
-        # Run jxp metadata command
+        # Skip if metadata already exists
+        if output_file.exists():
+            files_skipped += 1
+            continue
+
+        # Run jats metadata command
         try:
             result = subprocess.run(
-                [str(jxp_path), "metadata", str(xml_file), "-o", str(output_file)],
+                [str(jats_path), "metadata", str(xml_file), "-o", str(output_file)],
                 capture_output=True,
                 text=True,
                 check=True
@@ -67,7 +73,7 @@ def main():
             print(f"✗ Failed: {manuscript_id_with_version}", file=sys.stderr)
             print(f"  Error: {e.stderr}", file=sys.stderr)
 
-    print(f"\nProcessed {files_processed} files successfully, {files_failed} failed")
+    print(f"\nProcessed {files_processed} files successfully, {files_skipped} skipped (already exist), {files_failed} failed")
 
 
 if __name__ == "__main__":
