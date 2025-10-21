@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors assume k-mer counts follow Poisson distributions with rates \u03bb1 and \u03bb2 in cases and controls, which allows faster p-value computation compared to negative binomial distributions. They justify this by showing that for typical k-mer counts in whole genome sequencing, p-values from Poisson are not notably lower than those from negative binomial, and use conservative Bonferroni correction to account for possible deviations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers expressed serious concerns about the Poisson distributional assumption. In Round 1, reviewers requested empirical evidence that counts are Poisson and warned about overdispersion issues known from RNA-seq. In Round 2, reviewers stated that using conservative error control is 'not really a sensible way to fix the potential problem' and requested comparison with negative binomial tests to assess the cost of the Poisson assumption. The reviewers wanted specific demonstration that Bonferroni is conservative enough to outweigh potential false positives from model misspecification."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C6",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors demonstrate that population stratification can be inferred from k-mers by performing PCA on a binary matrix of k-mer presence/absence. In YRI-TSI comparison, the first two principal components separate the populations, with PC1 correlating with sequencing depth and PC2 primarily separating populations, though clusters are not as clearly separated as with variant calls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers raised multiple concerns about the PCA approach. In Round 2, reviewers questioned whether the mean was removed from the data, noting that 'if you don't remove the mean, you don't really have a covariance matrix, and the first PCA will then just capture the mean.' They also requested head-to-head comparison with standard genetics PCA and questioned the interpretation that PC1 correlates with sequencing depth. The observation that 'only PC2 is separating the populations; PC1 is most certainly not' contradicts the authors' claims about population separation."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C125",
+      "C126"
+    ],
+    "result": "To correct for confounders including population structure and sequencing depth, the authors fit logistic regression models on phenotype against potential confounders and normalized k-mer counts. By default, they include the first two principal components and total k-mer count. This approach has less power than the Poisson-based test but can detect associations under various conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers expressed confusion and concern about the confounder correction approach. In Round 2, reviewers stated the description was unclear ('involving? What precisely does this mean?') and questioned whether the authors were 'abandoning the fundamental part of HAWK, the Poisson testing' in favor of 'standard GWAS techniques on the k-mer counts instead of on SNPs.' They requested explicit description of what was being done, why, and the pros and cons, plus head-to-head comparison with HAWK when there is no confounding. The need for gender and total k-mer counts in the model was also questioned."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C95",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors applied HAWK to compare BEB and TSI populations to explore genetic basis of high CVD mortality in South Asians. They found significant differences in frequencies of non-synonymous variants in CVD-linked genes between populations, including rs1042034 and rs676210 in ApoB gene, which have been previously associated with CVD risk.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Reviewers strongly criticized this analysis in Round 2, stating 'The CVD study seems very odd. The authors use BEB or TSI as response variables, and do association, instead of using CVD status (i.e. cases or controls).' They noted that 'the resulting k-mers would mostly reflect ancestry-specific markers' and that frequency differences are 'so large that they unlikely result from their disease effects.' Reviewers found it 'almost impossible to interpret the results here \u2013 whether it's due to population difference or disease association.' The authors only showed results from genes already linked to CVD without demonstrating these genes ranked high genome-wide."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C154"
+    ],
+    "result": "Application of HAWK to E. coli ampicillin resistance dataset identified 5047 significant k-mers that assembled into 16 sequences, with strongest associations in the \u03b2-lactamase TEM-1 gene known to confer ampicillin resistance. The conventional variant calling approach found no genome-wide significant hits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers acknowledged this as 'more like a true association study' in Round 2, they questioned whether the method adds something new, asking 'if one uses traditional procedure of variant calling and association testing, will the same gene(s) be found? The authors need to demonstrate that their method adds something new.' The comparison showing conventional approaches found no significant hits suggests HAWK may be more powerful, but reviewers wanted clearer demonstration of added value beyond what standard methods could achieve."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C145"
+    ],
+    "result": "In YRI-TSI comparison, HAWK identified sequences that largely agree with standard GWAS results, with 80.3% of significant sites from genotype calling covered by HAWK sequences, and 95.2% covered by at least one k-mer. However, around 42% of HAWK sequences don't overlap with genotype-called sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers requested more rigorous validation in Round 1, asking to 'restrict the analysis to only SNPs' to see power differences and to 'provide quantile plots of p-values' to assess false positive control. They wanted comparison using dosage calls and questioned whether SNP calls were based on the same data HAWK used. The large fraction of non-overlapping sequences raised questions about whether these represent true discoveries or false positives, with reviewers requesting 'explanation of all the ways HAWK might lead to false positives, how likely they are to occur, and what can be done to find out if they are happening.'"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C87",
+      "C91",
+      "C92",
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C144",
+      "C146",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Unlike standard GWAS, HAWK identifies associations with structural variations, indels, copy number variations, and sequences not present in the reference genome. The method found 2-4% of associated sequences not in the human reference, including sequences longer than 1kbp, with YRI-TSI comparison yielding almost 60kbp of non-reference sequence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers showed enthusiasm for detecting structural variants, they expressed concern in Round 1 that validation was inadequate and requested better demonstration: 'If the false positive rate is well-controlled here (provide quantile plots of p-values), and you are well-powered, then the much-harder-to-verify claims about finding structural variants are better supported.' The lack of independent validation for these novel sequences and the potential for false positives due to sequencing biases and depth differences (C90) left reviewers uncertain about the reliability of these findings."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C136"
+    ],
+    "result": "QQ plots show large deviations from the diagonal line, which the authors attribute to large numbers of k-mers for which the null hypothesis is not true. The cumulative distribution of p-values shows that the majority are not significantly small.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers specifically requested QQ plots in Round 1 to show 'that for most k-mers, there is no association' and to assess whether 'the signal is not driven by overdispersion or confounders.' In Round 2, they requested additional QQ plots: 'Please draw a QQ plot for the adjusted p-values so we can see just how calibrated thing are. I'd also like to see QQ plots for the distribution of p-values in your simulations in general and on the real data analyses.' The interpretation of deviations remains uncertain without these additional analyses."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Simulation experiments show that with logistic regression-based tests, associations can be detected with small sample sizes under various conditions. For example, if 80% of case individuals are YRI, associations can be detected in all trials if penetrance is 100% and about 80% of trials when penetrance is 80%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "In Round 2, reviewers noted that 'You do this experiment, you have a plot in the appendix, but you fail to tell the reader what the results/take-home message are for it in the main text. Please add this.' The lack of clear interpretation and integration of these simulation results into the main narrative left their implications uncertain."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C55",
+      "C56",
+      "C57",
+      "C147"
+    ],
+    "result": "Tests based on k-mer counts have more power than tests based on presence/absence of k-mers. Logistic regression tests using counts can detect associations with copy number variations, while presence/absence tests cannot distinguish two copies from one copy of an allele.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not challenge these simulation-based power comparisons. The demonstration that count-based tests have advantages over presence/absence tests, particularly for CNV detection, was accepted as shown by the simulation data in the appendices."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors present HAWK, an alignment-free method implemented in C++ that counts k-mers (length 31) using Jellyfish, tests for differential representation using likelihood ratio tests, and locally assembles significant k-mers using ABySS with specific parameters for robustness.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not challenge the basic methodological implementation details or the software engineering aspects. The technical choices for k-mer counting, filtering, and assembly were accepted as described, though the statistical testing approach received scrutiny separately."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Validation using simulated E. coli reads with introduced mutations (SNPs, short indels, long indels) showed results consistent with theoretical power calculations, with slightly lower values due to sequencing errors and assembly conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not challenge the simulation validation results. This technical validation of the method's ability to detect known mutations in simulated data was accepted as demonstrating the method works as intended under controlled conditions."
+  }
+]
