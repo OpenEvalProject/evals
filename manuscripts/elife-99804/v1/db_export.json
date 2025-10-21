@@ -1,0 +1,149 @@
+{
+  "submission": {
+    "id": "4fb06129-6c35-4020-b0a0-4fabe5e695a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:10:25.326347Z",
+    "updated_at": "2025-10-21T23:10:25.326347Z"
+  },
+  "content": [
+    {
+      "id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "submission_id": "4fb06129-6c35-4020-b0a0-4fabe5e695a9",
+      "content_type": "manuscript",
+      "content_text": "# Mapping the fly nerve cord\n\n## Authors\n\n- Anna Seggewisse<sup>1</sup> ([ORCID: 0009-0009-6742-5998](https://orcid.org/0009-0009-6742-5998))\n- Michael Winding<sup>1</sup> ([ORCID: 0000-0003-1965-3266](https://orcid.org/0000-0003-1965-3266)) \u2020\n\n### Affiliations\n\n1. https://ror.org/04tnbqb63 The Francis Crick Institute London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe first neuronal wiring diagram of an insect nerve cord, which includes biological information on cell type and organisation, enables further investigation into premotor circuit function.\n",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2b0d34e8-869e-485f-b074-ce27676dd0ed",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "claim_id": "C1",
+      "claim": "The first neuronal wiring diagram of an insect nerve cord has been created.",
+      "claim_type": "IMPLICIT",
+      "source_text": "The first neuronal wiring diagram of an insect nerve cord, which includes biological information on cell type and organisation, enables further investigation into premotor circuit function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The abstract implies that this wiring diagram exists and has been completed, though it does not explicitly state 'we created' or 'has been created'.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    },
+    {
+      "id": "3c4aaa53-b831-443a-bc90-54e7ce3ab5d8",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "claim_id": "C2",
+      "claim": "The neuronal wiring diagram of the insect nerve cord includes biological information on cell type.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first neuronal wiring diagram of an insect nerve cord, which includes biological information on cell type and organisation, enables further investigation into premotor circuit function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The manuscript explicitly states that the wiring diagram includes information on cell type, though the specific data supporting this is not provided in the abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    },
+    {
+      "id": "02aa6591-b428-413e-92e9-39e0d4a63d2a",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "claim_id": "C3",
+      "claim": "The neuronal wiring diagram of the insect nerve cord includes biological information on organisation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first neuronal wiring diagram of an insect nerve cord, which includes biological information on cell type and organisation, enables further investigation into premotor circuit function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The manuscript explicitly states that the wiring diagram includes information on organisation, though the specific data supporting this is not provided in the abstract.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    },
+    {
+      "id": "99da193f-95ec-45b8-bbaa-441d0db0d785",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "claim_id": "C4",
+      "claim": "The neuronal wiring diagram of the insect nerve cord enables further investigation into premotor circuit function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first neuronal wiring diagram of an insect nerve cord, which includes biological information on cell type and organisation, enables further investigation into premotor circuit function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a forward-looking statement about the potential utility of the wiring diagram for future research, representing a speculative claim about future investigations that the resource will enable.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    },
+    {
+      "id": "043df21a-2dd2-4336-bcc7-9f88fe39ed73",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "claim_id": "C5",
+      "claim": "This is the first neuronal wiring diagram of an insect nerve cord to include biological information on cell type and organisation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first neuronal wiring diagram of an insect nerve cord, which includes biological information on cell type and organisation, enables further investigation into premotor circuit function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The claim of being 'first' is explicitly stated but would require knowledge of prior literature to verify; it is presented as a factual assertion about the novelty of this work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4206d531-a43c-4773-9596-bc4dd01b4b22",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors report creating the first neuronal wiring diagram of an insect nerve cord that includes biological information on cell type and organization. This represents a novel resource with comprehensive cellular annotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1-C3 and C5 describe the creation and content of the wiring diagram, but the abstract provides no methodological details, validation data, or evidence to support these assertions. The claim of being 'first' (C5) requires verification against prior literature. Without access to the methods, data quality metrics, cell type classification criteria, or organizational annotations, the completeness and accuracy of this resource cannot be evaluated.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    },
+    {
+      "id": "25e2c40d-efe5-41bd-88c0-e0e0d233f83a",
+      "content_id": "9498272a-4105-4964-b470-0f1fa3c94dc7",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "The neuronal wiring diagram will enable future investigations into premotor circuit function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C4 is explicitly speculative about future utility rather than a demonstrated result. While a comprehensive wiring diagram would plausibly enable such investigations, no evidence is provided that demonstrates its actual utility for studying premotor circuits, nor are specific examples or preliminary analyses shown to support this potential application.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:25.326347Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b0d34e8-869e-485f-b074-ce27676dd0ed",
+      "result_id": "4206d531-a43c-4773-9596-bc4dd01b4b22"
+    },
+    {
+      "claim_id": "3c4aaa53-b831-443a-bc90-54e7ce3ab5d8",
+      "result_id": "4206d531-a43c-4773-9596-bc4dd01b4b22"
+    },
+    {
+      "claim_id": "02aa6591-b428-413e-92e9-39e0d4a63d2a",
+      "result_id": "4206d531-a43c-4773-9596-bc4dd01b4b22"
+    },
+    {
+      "claim_id": "043df21a-2dd2-4336-bcc7-9f88fe39ed73",
+      "result_id": "4206d531-a43c-4773-9596-bc4dd01b4b22"
+    },
+    {
+      "claim_id": "99da193f-95ec-45b8-bbaa-441d0db0d785",
+      "result_id": "25e2c40d-efe5-41bd-88c0-e0e0d233f83a"
+    }
+  ],
+  "comparisons": []
+}

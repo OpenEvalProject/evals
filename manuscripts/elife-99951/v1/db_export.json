@@ -1,0 +1,262 @@
+{
+  "submission": {
+    "id": "c25ea9ea-8762-4d65-b422-6eb808a41526",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:10:18.777078Z",
+    "updated_at": "2025-10-21T23:10:18.777078Z"
+  },
+  "content": [
+    {
+      "id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "submission_id": "c25ea9ea-8762-4d65-b422-6eb808a41526",
+      "content_type": "manuscript",
+      "content_text": "# Emergence of power-law distributions in protein-protein interaction networks through study bias\n\n## Authors\n\n- David B Blumenthal<sup>1</sup> ([ORCID: 0000-0001-8651-750X](https://orcid.org/0000-0001-8651-750X)) \u2020\n- Marta Lucchetta<sup>2</sup>\n- Linda Kleist<sup>3</sup>\n- S\u00e1ndor P Fekete<sup>3</sup>\n- Markus List<sup>4</sup> \u2020\n- Martin H Schaefer<sup>2</sup> ([ORCID: 0000-0001-7503-6364](https://orcid.org/0000-0001-7503-6364)) \u2020\n\n### Affiliations\n\n1. Department Artificial Intelligence in Biomedical Engineering University of Erlangen-Nuremberg Erlangen Germany\n2. Department of Experimental Oncology European Institute of Oncology Milan Italy\n3. Department of Computer Science Technische Universit\u00e4t Braunschweig Braunschweig Germany\n4. Data Science in Systems Biology Technical University of Munich Freising Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDegree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL). However, technical and study bias affect the experimental procedures for detecting PPIs. For instance, cancer-associated proteins have received disproportional attention. Moreover, bait proteins in large-scale experiments tend to have many false-positive interaction partners. Studying the degree distributions of thousands of PPI networks of controlled provenance, we address the question if PL distributions in observed PPI networks could be explained by these biases alone. Our findings are supported by mathematical models and extensive simulations and indicate that study bias and technical bias suffice to produce the observed PL distribution. It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks. Our study casts doubt on the use of the PL property of biological networks as a modeling assumption or quality criterion in network biology.\n",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c95e8e89-ac2f-457a-b340-0ef7a188c54e",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C1",
+      "claim": "Degree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Degree distributions in protein-protein interaction (PPI) networks are believed to follow a power law (PL).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established belief in the field, presented as existing scientific consensus.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "f27ae189-7dce-4f4e-8100-01e9dcc193d0",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C2",
+      "claim": "Technical and study bias affect the experimental procedures for detecting PPIs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, technical and study bias affect the experimental procedures for detecting PPIs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is presented as an established fact about experimental limitations in PPI detection.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "2f7cbd30-4862-4bd0-95dc-0bb786e225a6",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C3",
+      "claim": "Cancer-associated proteins have received disproportional attention.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For instance, cancer-associated proteins have received disproportional attention.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is stated as a known example of study bias in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "9e87723a-414e-44fe-9406-4afe8fc3569f",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C4",
+      "claim": "Bait proteins in large-scale experiments tend to have many false-positive interaction partners.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, bait proteins in large-scale experiments tend to have many false-positive interaction partners.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is presented as an established characteristic of technical bias in large-scale PPI experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "0439a54e-0d46-42a4-b29f-3e626d23ddfc",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C5",
+      "claim": "The authors studied the degree distributions of thousands of PPI networks of controlled provenance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Studying the degree distributions of thousands of PPI networks of controlled provenance, we address the question if PL distributions in observed PPI networks could be explained by these biases alone.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the experimental approach taken in the study, indicating data collection and analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "bdeb0e26-3f0a-45f9-9d62-fd8e7b15b032",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C6",
+      "claim": "Study bias and technical bias suffice to produce the observed PL distribution in PPI networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our findings are supported by mathematical models and extensive simulations and indicate that study bias and technical bias suffice to produce the observed PL distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main finding of the study, supported by mathematical models and simulations (data), and represents an inference from the analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "97cd6cdc-decc-4cba-b373-dbe438f8c4be",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C7",
+      "claim": "The findings are supported by mathematical models and extensive simulations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our findings are supported by mathematical models and extensive simulations",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This explicitly states that mathematical models and simulations were used as supporting evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "366f11b8-beab-48ca-8d50-410f7503ca51",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C8",
+      "claim": "It is problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a conclusion inferred from the finding that biases can produce PL distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "f6c78129-4644-4b08-9e59-ba8284f1f509",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C9",
+      "claim": "The study casts doubt on the use of the PL property of biological networks as a modeling assumption or quality criterion in network biology.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our study casts doubt on the use of the PL property of biological networks as a modeling assumption or quality criterion in network biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an implication drawn from the study's findings about the artifactual nature of PL distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "12cacbcd-9cc1-424e-934d-3b9007555660",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C10",
+      "claim": "PL distributions in observed PPI networks could potentially be explained by study bias and technical bias alone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "we address the question if PL distributions in observed PPI networks could be explained by these biases alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the research question that the study addresses through data analysis and inference.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "b7be991b-1d22-4777-a4af-f2c8669f81ef",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "claim_id": "C11",
+      "claim": "The observed PL distributions in PPI networks may not reflect the true topology of the biological interactome.",
+      "claim_type": "IMPLICIT",
+      "source_text": "It is, hence, problematic to derive hypotheses about the topology of the true biological interactome from the PL distributions in observed PPI networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is logically implied by the statement that it is problematic to derive hypotheses about true topology from observed PL distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "980ef9a3-89af-40ac-ac84-0ce70a06162a",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors establish the background context that PPI networks are believed to follow power-law degree distributions, but that experimental detection of PPIs is affected by study bias (e.g., disproportionate attention to cancer-associated proteins) and technical bias (e.g., false-positive interaction partners for bait proteins in large-scale experiments).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1-C4 represent established knowledge in the field and provide appropriate context for the study. These are background claims citing known phenomena (study and technical biases in PPI detection) that are well-documented in the literature. The claims appropriately frame the research question without requiring additional validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "3f92c3e5-0744-49e8-a8fd-95390207a63e",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "The authors analyzed degree distributions of thousands of PPI networks of controlled provenance using mathematical models and extensive simulations to determine whether study bias and technical bias alone suffice to produce the observed power-law distributions in PPI networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While claims C5-C7 and C10 describe the study approach and main finding, the abstract provides insufficient methodological detail to evaluate the rigor of the analysis. Critical information is missing: what constitutes 'controlled provenance,' how biases were modeled mathematically, what simulation parameters were used, how power-law fitting was performed and validated, sample sizes, statistical tests, and whether alternative distributions were considered. Without access to methods, data, and results sections, the sufficiency of evidence cannot be determined.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    },
+    {
+      "id": "817e2503-2960-4822-965a-fcf3111e5638",
+      "content_id": "60a9939b-e0fe-4e41-9e59-e21db921e244",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "The authors conclude that because study and technical biases suffice to produce observed power-law distributions, it is problematic to derive hypotheses about the true biological interactome topology from observed PPI networks, casting doubt on using power-law properties as modeling assumptions or quality criteria in network biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C6, C8, C9, and C11 represent the study's main conclusions, but their support depends entirely on the validity of the analysis described in C5-C7. The logical chain (biases can produce PL \u2192 observed PL may be artifactual \u2192 cannot infer true topology) is sound, but requires that the simulation and modeling work definitively demonstrates sufficiency of biases alone. The abstract does not provide quantitative evidence (e.g., goodness-of-fit comparisons, effect sizes) or address whether the true interactome might independently have PL properties that coincide with bias-induced patterns. Alternative explanations (biases contribute but don't fully explain PL) are not discussed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:18.777078Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c95e8e89-ac2f-457a-b340-0ef7a188c54e",
+      "result_id": "980ef9a3-89af-40ac-ac84-0ce70a06162a"
+    },
+    {
+      "claim_id": "f27ae189-7dce-4f4e-8100-01e9dcc193d0",
+      "result_id": "980ef9a3-89af-40ac-ac84-0ce70a06162a"
+    },
+    {
+      "claim_id": "2f7cbd30-4862-4bd0-95dc-0bb786e225a6",
+      "result_id": "980ef9a3-89af-40ac-ac84-0ce70a06162a"
+    },
+    {
+      "claim_id": "9e87723a-414e-44fe-9406-4afe8fc3569f",
+      "result_id": "980ef9a3-89af-40ac-ac84-0ce70a06162a"
+    },
+    {
+      "claim_id": "0439a54e-0d46-42a4-b29f-3e626d23ddfc",
+      "result_id": "3f92c3e5-0744-49e8-a8fd-95390207a63e"
+    },
+    {
+      "claim_id": "bdeb0e26-3f0a-45f9-9d62-fd8e7b15b032",
+      "result_id": "3f92c3e5-0744-49e8-a8fd-95390207a63e"
+    },
+    {
+      "claim_id": "97cd6cdc-decc-4cba-b373-dbe438f8c4be",
+      "result_id": "3f92c3e5-0744-49e8-a8fd-95390207a63e"
+    },
+    {
+      "claim_id": "12cacbcd-9cc1-424e-934d-3b9007555660",
+      "result_id": "3f92c3e5-0744-49e8-a8fd-95390207a63e"
+    },
+    {
+      "claim_id": "bdeb0e26-3f0a-45f9-9d62-fd8e7b15b032",
+      "result_id": "817e2503-2960-4822-965a-fcf3111e5638"
+    },
+    {
+      "claim_id": "366f11b8-beab-48ca-8d50-410f7503ca51",
+      "result_id": "817e2503-2960-4822-965a-fcf3111e5638"
+    },
+    {
+      "claim_id": "f6c78129-4644-4b08-9e59-ba8284f1f509",
+      "result_id": "817e2503-2960-4822-965a-fcf3111e5638"
+    },
+    {
+      "claim_id": "b7be991b-1d22-4777-a4af-f2c8669f81ef",
+      "result_id": "817e2503-2960-4822-965a-fcf3111e5638"
+    }
+  ],
+  "comparisons": []
+}

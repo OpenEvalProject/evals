@@ -1,0 +1,133 @@
+{
+  "submission": {
+    "id": "a39fa242-ca5f-4db2-9b06-361aed8e0569",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:10:04.400502Z",
+    "updated_at": "2025-10-21T23:10:04.400502Z"
+  },
+  "content": [
+    {
+      "id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "submission_id": "a39fa242-ca5f-4db2-9b06-361aed8e0569",
+      "content_type": "manuscript",
+      "content_text": "# Correction: Inhibition of CERS1 in skeletal muscle exacerbates age-related muscle dysfunction\n\n## Authors\n\n- Martin Wohlwend ([ORCID: 0000-0001-9851-0364](https://orcid.org/0000-0001-9851-0364)) \u2020\n- Pirkka-Pekka Laurila\n- Ludger JE Goeminne\n- Tanes Imamura de lima\n- Ioanna Daskalaki\n- Xiaoxu Li ([ORCID: 0000-0001-5121-9190](https://orcid.org/0000-0001-5121-9190))\n- Giacomo von Alvensleben ([ORCID: 0000-0001-7231-0276](https://orcid.org/0000-0001-7231-0276))\n- Barbara Crisol\n- Renata Mangione\n- Hector Gallart-Ayala ([ORCID: 0000-0003-2333-0646](https://orcid.org/0000-0003-2333-0646))\n- Amelia Lalou\n- Olivier Burri\n- Stephen Butler\n- Jonathan C Morris ([ORCID: 0000-0002-5109-9069](https://orcid.org/0000-0002-5109-9069))\n- Nigel Turner\n- Julijana Ivanisevic\n- Johan Auwerx ([ORCID: 0000-0002-5065-5393](https://orcid.org/0000-0002-5065-5393)) \u2020\n\n\u2020 Corresponding author\n",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5cb3895c-7271-4e6a-9b0a-5a9060e9a62c",
+      "content_id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "claim_id": "C1",
+      "claim": "Inhibition of CERS1 in skeletal muscle exacerbates age-related muscle dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Inhibition of CERS1 in skeletal muscle exacerbates age-related muscle dysfunction",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is the main finding stated in the title, which typically represents a conclusion drawn from experimental data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    },
+    {
+      "id": "26e1f24c-d1c3-4110-99cd-65663b052fa1",
+      "content_id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "claim_id": "C2",
+      "claim": "CERS1 plays a role in skeletal muscle function during aging.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Inhibition of CERS1 in skeletal muscle exacerbates age-related muscle dysfunction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The title implies that CERS1 has a functional role in skeletal muscle during aging, as its inhibition worsens age-related dysfunction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    },
+    {
+      "id": "bdbd48c7-2349-4669-961b-593aa1905ec1",
+      "content_id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "claim_id": "C3",
+      "claim": "Age-related muscle dysfunction exists as a biological phenomenon.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Inhibition of CERS1 in skeletal muscle exacerbates age-related muscle dysfunction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "The title assumes the existence of age-related muscle dysfunction, which is established scientific knowledge in the field of aging research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    },
+    {
+      "id": "0bdc710d-79e1-41c8-9550-e1fb84543e9a",
+      "content_id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "claim_id": "C4",
+      "claim": "CERS1 can be inhibited in skeletal muscle.",
+      "claim_type": "IMPLICIT",
+      "source_text": "Inhibition of CERS1 in skeletal muscle exacerbates age-related muscle dysfunction",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The title implies that experimental inhibition of CERS1 in skeletal muscle was performed, suggesting this is technically feasible and was done in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "123ad89f-515a-4c56-9cd9-4a9ff471c331",
+      "content_id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors demonstrate that inhibition of CERS1 in skeletal muscle worsens age-related muscle dysfunction, establishing a functional role for CERS1 in maintaining muscle function during aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C1, C2, and C4 are interconnected but lack sufficient detail for evaluation. The manuscript appears to be a correction notice with only a title provided, containing no experimental data, methods, statistical analyses, or controls to assess whether CERS1 inhibition was achieved, how muscle dysfunction was measured, what age comparisons were made, or whether appropriate controls were included. Without access to the actual experimental evidence, the causal claim that CERS1 inhibition 'exacerbates' dysfunction cannot be verified.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    },
+    {
+      "id": "ae9d5356-48e7-48b4-ad46-8638194ae665",
+      "content_id": "7c923e77-dffd-4335-9d01-c13b6f9455bf",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Age-related muscle dysfunction is an established biological phenomenon that serves as the context for this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C3 represents well-established scientific knowledge in aging biology and sarcopenia research. Age-related decline in muscle function (sarcopenia) is extensively documented in the literature and does not require additional validation in this manuscript. This background claim appropriately contextualizes the research question.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:10:04.400502Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5cb3895c-7271-4e6a-9b0a-5a9060e9a62c",
+      "result_id": "123ad89f-515a-4c56-9cd9-4a9ff471c331"
+    },
+    {
+      "claim_id": "26e1f24c-d1c3-4110-99cd-65663b052fa1",
+      "result_id": "123ad89f-515a-4c56-9cd9-4a9ff471c331"
+    },
+    {
+      "claim_id": "0bdc710d-79e1-41c8-9550-e1fb84543e9a",
+      "result_id": "123ad89f-515a-4c56-9cd9-4a9ff471c331"
+    },
+    {
+      "claim_id": "bdbd48c7-2349-4669-961b-593aa1905ec1",
+      "result_id": "ae9d5356-48e7-48b4-ad46-8638194ae665"
+    }
+  ],
+  "comparisons": []
+}

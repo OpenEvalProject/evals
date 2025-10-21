@@ -1,0 +1,963 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Light-sheet microscopy systems based on mesoSPIM have emerged as powerful tools for high-resolution 3D imaging of biological specimens.",
+    "claim_type": "EXPLICIT",
+    "source_text": "imaging systems based on light-sheet microscopy (LSM), such as the mesoscopic selective plane-illumination microscopy (mesoSPIM) initiative (Voigt et al., 2019), have emerged as powerful tools for high-resolution 3D imaging of biological specimens.",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is supported by a citation to Voigt et al., 2019, which describes the mesoSPIM initiative."
+  },
+  {
+    "claim_id": "C2",
+    "claim": "MesoSPIM has minimal phototoxicity and ability to capture high-resolution 3D images of thick biological samples.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Due to its minimal phototoxicity and ability to capture high-resolution 3D images of thick biological samples, it has been a powerful new approach for imaging thick samples",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim draws from established knowledge about the properties of mesoSPIM imaging technology."
+  },
+  {
+    "claim_id": "C3",
+    "claim": "MesoSPIM can image whole mouse brain without the need for sectioning.",
+    "claim_type": "EXPLICIT",
+    "source_text": "it has been a powerful new approach for imaging thick samples, such as the whole mouse brain, without the need for sectioning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim is based on established capabilities of the mesoSPIM technology."
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Accurate and efficient segmentation of cells is a crucial step towards density estimates as well as quantification of morphological features.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Yet, accurate and efficient segmentation of cells is a crucial step towards density estimates as well as quantification of morphological features.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim reflects established scientific understanding of the importance of cell segmentation in biological analysis."
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Several studies have explored the use of supervised deep learning techniques using CNNs or transformers for improving cell segmentation accuracy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "To begin to address this challenge, several studies have explored the use of supervised deep learning techniques using convolutional neural networks (CNNs) or transformers for improving cell segmentation accuracy (Weigert et al., 2020; Stringer et al., 2021; Iqbal et al., 2019; H\u00f6rst et al., 2023).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is supported by multiple citations to prior work in the field."
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Typical cell segmentation methods use a multi-step approach, first segmenting cells in 2D images, optionally performing instance segmentation, and then reconstructing them in 3D using the volume information.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Typically, these methods use a multi-step approach, first segmenting cells in 2D images, optionally performing instance segmentation, and then reconstructing them in 3D using the volume information (Stringer et al., 2021).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes typical methods and is supported by a citation to Stringer et al., 2021."
+  },
+  {
+    "claim_id": "C7",
+    "claim": "2D-to-3D reconstruction approaches can suffer from low recall or have trouble retaining finer, non-convex labeling.",
+    "claim_type": "EXPLICIT",
+    "source_text": "While this can be successful in many contexts, this approach can suffer from low recall or have trouble retaining finer, non-convex labeling.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is based on known limitations of 2D-to-3D reconstruction methods and logical inference about their shortcomings."
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Ample 2D datasets now exist thanks to community efforts.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Nevertheless, by training on (ideally large) human-annotated datasets, these supervised learning methods can learn to accurately segment cells in 2D, and ample 2D datasets now exist thanks to community efforts (Ma et al., 2024).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is supported by a citation to Ma et al., 2024, which documents community efforts in creating datasets."
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Directly segmenting volumes in 3D ('direct-3D') could limit errors and streamline processing by retaining important morphological information.",
+    "claim_type": "EXPLICIT",
+    "source_text": "However, directly segmenting volumes in 3D ('direct-3D') could limit errors and streamline processing by retaining important morphological information (Weigert et al., 2020).",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is supported by a citation and represents a logical inference about the advantages of direct 3D segmentation."
+  },
+  {
+    "claim_id": "C10",
+    "claim": "3D annotated datasets are lacking, likely due to the fact that they are highly time-consuming to generate.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Yet, 3D annotated datasets are lacking (Ma et al., 2024), likely due to the fact that they are highly time-consuming to generate.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "The lack of datasets is supported by citation, and the reason (time-consuming) is inferred."
+  },
+  {
+    "claim_id": "C11",
+    "claim": "No 3D segmentation datasets of cells in whole-brain LSM volumes are available.",
+    "claim_type": "EXPLICIT",
+    "source_text": "For example, to our knowledge, no 3D segmentation datasets of cells in whole-brain LSM volumes are available, despite the existence of open-source microscopy database repositories (Williams et al., 2017).",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is based on the authors' knowledge of the field and supported by a citation to database repositories."
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The authors provide the first human-annotated ground truth 3D data from mesoSPIM samples in over 2.5K neural nuclei from the mouse neocortex.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Thus, here we provide the first human-annotated ground truth 3D data from mesoSPIM samples in over 2,5 K neural nuclei from the mouse neocortex.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by the dataset created and presented in the manuscript."
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Self-supervised learning is emerging as a powerful approach for training deep neural networks without the need for explicit labeling of ground truth data.",
+    "claim_type": "EXPLICIT",
+    "source_text": "On the other hand, in computer vision, self-supervised learning (unsupervised learning) is emerging as a powerful approach for training deep neural networks without the need for explicit labeling of ground truth data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim reflects established trends in computer vision and machine learning."
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Several studies have explored the use of unsupervised techniques to learn representations of cellular structures and improve segmentation accuracy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In the context of segmentation of cells, several studies have explored the use of unsupervised techniques to learn representations of cellular structures and improve segmentation accuracy (Yao et al., 2022; Han and Yin, 2021).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is supported by citations to prior work in unsupervised cell segmentation."
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Unsupervised methods for cell segmentation rely on adversarial learning, which can be difficult to train.",
+    "claim_type": "EXPLICIT",
+    "source_text": "However, these methods rely on adversarial learning, which can be difficult to train and have not been shown to provide accurate 3D results on cleared tissue for LSM data",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim is based on knowledge of adversarial learning methods referenced in the context of prior citations."
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Previous unsupervised methods have not been shown to provide accurate 3D results on cleared tissue for LSM data.",
+    "claim_type": "EXPLICIT",
+    "source_text": "However, these methods rely on adversarial learning, which can be difficult to train and have not been shown to provide accurate 3D results on cleared tissue for LSM data, which can suffer from clearing and other related artifacts.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is based on the authors' knowledge of the limitations of existing methods in the specific context of LSM data."
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The authors developed a custom Python toolbox for direct-3D supervised and self-supervised cell segmentation built on state-of-the-art transformers and 3D CNN architectures.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Here, we developed a custom Python toolbox for direct-3D supervised and self-supervised cell segmentation built on state-of-the-art transformers and 3D CNN architectures (Xia and Kulis, 2017; Hatamizadeh et al., 2022) paired with classical image processing techniques (Robert et al., 2020).",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes the work presented in the manuscript and is supported by citations to the underlying architectures used."
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The authors' supervised method can match or outperform Cellpose and StarDist in 3D semantic segmentation on mesoSPIM-acquired volumes in the low data regime.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We benchmark our methods against Cellpose and StarDist - two leading supervised cell segmentation packages with user-friendly workflows - on our newly generated 3D ground truth dataset and show our supervised method can match or outperform them (in the low data regime) in 3D semantic segmentation on mesoSPIM-acquired volumes.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results presented in the manuscript."
+  },
+  {
+    "claim_id": "C19",
+    "claim": "WNet3D can be as good as or better than supervised models without any human-labeled data for training.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Then, we show that our novel self-supervised model, which we named WNet3D, can be as good as or better than supervised models without any human-labeled data for training.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results comparing WNet3D to supervised models."
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Whole mouse brain LSM followed by counting nuclei is becoming an increasingly popular task thanks to advances in imaging and tissue clearing techniques.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Whole mouse brain LSM followed by counting nuclei is becoming an increasingly popular task thanks to advances in imaging and tissue clearing techniques (Chung et al., 2013; Renier et al., 2014; Ert\u00fcrk, 2024).",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim is supported by citations to advances in the field and reflects current trends."
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Nuclear counting can be useful for c-FOS quantification, post-hoc verification of calcium indicator imaging location, and anatomical mapping.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Nuclear counting can be useful for c-FOS quantification, post-hoc verification of calcium indicator imaging location, and anatomical mapping.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim is based on established applications of nuclear counting in neuroscience."
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The authors developed a 3D human-annotated dataset based on data acquired with a mesoSPIM system containing 2632 neurons that were endogenously labeled by TPH2-tdTomato.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Therefore, we developed a 3D human-annotated dataset based on data acquired with a mesoSPIM system (Voigt et al., 2019; Figure 1a, see Methods and the Dataset Card). Using whole-brain data from mice, we cropped small regions and human-annotated in 3D 2632 neurons that were endogenously labeled by TPH2-tdTomato (Figure 1a).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the dataset created in the study and is supported by the data presented."
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The authors built a 3D annotator in napari, which is included in their Python package called CellSeg3D.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In order to aid experts in performing labeling, we built a 3D annotator in napari, which is included in our Python package called CellSeg3D (see Methods).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes a tool developed as part of the study."
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Cellpose is a spatial-embedding-based instance segmentation method that predicts a flow vector at each pixel representing the pre-computed solution of the heat diffusion equation applied to instance masks.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Cellpose is a spatial-embedding-based instance segmentation method. The network predicts a flow vector at each pixel, representing the pre-computed solution of the heat diffusion equation applied to instance masks, with the heat source at the object center.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes the Cellpose method based on established knowledge of the algorithm."
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Cellpose-3D extends Cellpose by using the trained 2D model and processing all slices of a test volume independently along the xy, xz, and yz planes.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Cellpose-3D extends Cellpose by using the trained 2D model, and processing all slices of a test volume independently along the xy, xz, and yz planes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes how Cellpose-3D works based on established knowledge of the method."
+  },
+  {
+    "claim_id": "C26",
+    "claim": "StarDist predicts distances from each pixel (or voxel) to the boundary of the surrounding object along predefined directions (rays).",
+    "claim_type": "EXPLICIT",
+    "source_text": "StarDist predicts distances from each pixel (or voxel) to the boundary of the surrounding object along predefined directions (rays).",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes the StarDist method based on established knowledge of the algorithm."
+  },
+  {
+    "claim_id": "C27",
+    "claim": "StarDist is one of the most widely applied methods for instance segmentation, particularly for objects with star-convex shapes.",
+    "claim_type": "EXPLICIT",
+    "source_text": "This allows for precise instance segmentation, particularly for objects with star-convex shapes, making StarDist one of the most widely applied methods in this domain.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim reflects the established status of StarDist in the field."
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The authors trained two additional models from different classes - transformers and 3D convolutional neural networks - for supervised direct-3D segmentation: SwinUNetR and SegResNet.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We then trained two additional models from different classes - transformers and 3D convolutional neural networks - for supervised direct-3D segmentation. Specifically, we leveraged a SwinUNetR transformer (Hatamizadeh et al., 2022), and a SegResNet CNN (Myronenko, 2018) from the MONAI project (The MONAI Consortium, 2020).",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes models trained in the study and cites the original architectures."
+  },
+  {
+    "claim_id": "C29",
+    "claim": "SwinUNetR is a transformer-based segmentation model that combines the Swin Transformer architecture with the UNet design.",
+    "claim_type": "EXPLICIT",
+    "source_text": "SwinUNetR is a transformer-based segmentation model that combines the Swin Transformer architecture with the UNet design.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes the SwinUNetR architecture based on established knowledge."
+  },
+  {
+    "claim_id": "C30",
+    "claim": "SegResNet is a convolutional neural network developed for 3D medical image segmentation based on a ResNet-like architecture.",
+    "claim_type": "EXPLICIT",
+    "source_text": "SegResNet is a convolutional neural network (CNN) developed for 3D medical image segmentation (Myronenko, 2018). It is based on a ResNet-like architecture, incorporating residual connections to improve gradient flow and model convergence during training.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes SegResNet and is supported by a citation to the original work."
+  },
+  {
+    "claim_id": "C31",
+    "claim": "SwinUNetR and SegResNet are optimized for volumetric segmentation tasks but not used previously in cell segmentation tasks.",
+    "claim_type": "EXPLICIT",
+    "source_text": "SwinUNetR and SegResNet are optimized for volumetric segmentation tasks but not used previously in cell segmentation tasks.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim is based on the authors' knowledge of prior applications of these architectures."
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The authors' supervised models (SwinUNetR and SegResNet) have comparable instance segmentation performance to Cellpose and StarDist on held-out test data.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We found that our supervised models (SwinUNetR and SegResNet) have comparable instance segmentation performance to Cellpose and StarDist on held-out (unseen) test data set as measured by the F1 vs. IoU threshold (see Methods, Figure 1b and c)",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results presented in the manuscript."
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Many deep learning-based models could achieve excellent performance on the authors' new dataset, with the SwinUNetR transformer performing the best.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Importantly, many deep learning-based models could achieve excellent performance on our new dataset (Figure 1b and c), with the SwinUNetR transformer performing the best (Figure 1b).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results comparing multiple models."
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Self-supervised learning for 3D cell segmentation relies on the assumption that structural and morphological features of cells can be inferred directly from unlabeled data.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Self-supervised learning for 3D cell segmentation relies on the assumption that structural and morphological features of cells can be inferred directly from unlabeled data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes the fundamental assumption underlying self-supervised learning approaches."
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Self-supervised methods are better equipped to generalize across diverse imaging modalities and datasets by capturing underlying structural features, rather than relying on potentially biased human labels.",
+    "claim_type": "EXPLICIT",
+    "source_text": "To note, a strength of this approach is that self-supervised methods are better equipped to generalize across diverse imaging modalities and datasets by capturing underlying structural features, rather than relying on potentially biased human labels.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim is based on logical inference about the advantages of self-supervised learning and general knowledge of the approach."
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The authors built a new self-supervised model called WNet3D for direct-3D segmentation that requires no ground truth training data, only raw volumes.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Here, we built a new self-supervised model called WNet3D for direct-3D segmentation that requires no ground truth training data, only raw volumes.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the model developed in the study."
+  },
+  {
+    "claim_id": "C37",
+    "claim": "WNet3D is inspired by WNet.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Our WNet3D model is inspired by WNet (Xia and Kulis, 2017) (see Methods, Figure 1b and c).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is supported by a citation to the original WNet architecture."
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The authors' changes to WNet include a conversion to a fully 3D architecture, adding the SoftNCuts loss, replacing the proposed two-step model update with the weighted sum of the encoder and decoder losses, and trimming the number of weights for faster inference.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Our changes include a conversion to a fully 3D architecture and adding the SoftNCuts loss, replacing the proposed two-step model update with the weighted sum of the encoder and decoder losses, and trimming the number of weights for faster inference",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes modifications made to the original WNet architecture in the study."
+  },
+  {
+    "claim_id": "C39",
+    "claim": "WNet3D could be as good or better than the fully supervised models, especially in the low data regime, on the mesoSPIM dataset at semantic segmentation.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We found that WNet3D could be as good or better than the fully supervised models, especially in the low data regime, on this dataset at semantic segmentation (Figure 2a",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results presented in Figure 2a."
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The pre-trained WNet3D, trained on 100% of the raw data without any labels, achieves 0.81\u00b10.004 F1-Score with simple filtering of artifacts.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Notably, our pre-trained WNet3D, which is trained on 100% of the raw data without any labels, achieves 0.81\u00b10.004 F1-Score with simple filtering of artifacts (removing the slices containing the problematic regions; Figure 1\u2014figure supplement 1g)",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The pre-trained WNet3D achieves 0.74\u00b10.12 F1-Score without any filtering.",
+    "claim_type": "EXPLICIT",
+    "source_text": "and 0.74\u00b10.12 without any filtering.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C42",
+    "claim": "For models with 80% of the training data, the F1-Score for SwinUNetR was 0.83\u00b10.01.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Considering models with 80% of the training data, the F1-Score for SwinUNetR was 0.83\u00b10.01",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C43",
+    "claim": "For models with 80% of the training data, the F1-Score for Cellpose (tuned) was 0.76\u00b10.03.",
+    "claim_type": "EXPLICIT",
+    "source_text": "0.76\u00b10.03 for Cellpose (tuned)",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C44",
+    "claim": "For models with 80% of the training data, the F1-Score for SegResNet was 0.74\u00b10.006.",
+    "claim_type": "EXPLICIT",
+    "source_text": "0.74\u00b10.006 for SegResNet",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C45",
+    "claim": "For models with 80% of the training data, the F1-Score for StarDist (tuned) was 0.72\u00b10.007.",
+    "claim_type": "EXPLICIT",
+    "source_text": "0.72\u00b10.007 for StarDist (tuned)",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C46",
+    "claim": "For models with 80% of the training data, the F1-Score for WNet3D with 80% raw data for training was 0.71\u00b10.03 (unfiltered).",
+    "claim_type": "EXPLICIT",
+    "source_text": "For WNet3D with 80% raw data for training was 0.71\u00b10.03 (unfiltered) (Figure 2a",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C47",
+    "claim": "For models with only 10% of the training data, the F1-Score was 0.78\u00b10.07 for SwinUNetR.",
+    "claim_type": "EXPLICIT",
+    "source_text": "For models with only 10% of the training data, the F1-Score was 0.78\u00b10.07 for SwinUNetR",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results."
+  },
+  {
+    "claim_id": "C48",
+    "claim": "For models with only 10% of the training data, WNet3D was 0.74\u00b10.02 (unfiltered), which is on-par with the top supervised model.",
+    "claim_type": "EXPLICIT",
+    "source_text": "and WNet3D was 0.74\u00b10.02 (unfiltered), which is still on-par with the top supervised model",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by quantitative experimental results and comparison."
+  },
+  {
+    "claim_id": "C49",
+    "claim": "On the MesoSPIM 3D dataset, there are significant differences in model performance (Kruskal-Wallis H test, H=49.21, p=2.06e-08, n=12).",
+    "claim_type": "EXPLICIT",
+    "source_text": "Thus, on this new MesoSPIM 3D dataset (over the four different data subsets we tested), we find significant differences in model performance (Kruskal-Wallis H test, H=49.21, p=2.06e-08, n=12).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by statistical analysis of experimental results."
+  },
+  {
+    "claim_id": "C50",
+    "claim": "WNet3D showed significant performance gains over StarDist and Cellpose (defaults) with post-hoc Conover-Iman testing.",
+    "claim_type": "EXPLICIT",
+    "source_text": "With post-hoc Conover-Iman testing, WNet3D showed significant performance gains over StarDist and Cellpose (defaults) (statistics in Figure 1\u2014figure supplement 1f).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by statistical analysis of experimental results."
+  },
+  {
+    "claim_id": "C51",
+    "claim": "WNet3D is not significantly different from the best-performing supervised models (i.e. SwinUNetR p=1, and other competitive supervised models: Cellpose (tuned) p=0.21, or SegResNet p=0.076).",
+    "claim_type": "EXPLICIT",
+    "source_text": "Importantly, it is not significantly different from the best-performing supervised models (i.e. SwinUNetR p=1, and other competitive supervised models: Cellpose (tuned) p=0.21, or SegResNet p=0.076; Figure 1\u2014figure supplement 1f).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by statistical analysis of experimental results."
+  },
+  {
+    "claim_id": "C52",
+    "claim": "WNet3D cannot inherently discriminate cells vs. artifacts as it has no notion of a 'cell.'",
+    "claim_type": "EXPLICIT",
+    "source_text": "As WNet3D is self-supervised, it therefore cannot inherently discriminate cells vs. artifacts \u2013 it has no notion of a 'cell.'",
+    "evidence_type": [
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is based on logical inference about the limitations of self-supervised learning."
+  },
+  {
+    "claim_id": "C53",
+    "claim": "WNet3D can be used to generate 3D labels that can be corrected and then used to train a suitable supervised model, a process called active learning.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Therefore, filtering can be used to clean up artifacts when sufficient (e.g. using rules based on label volume to remove aberrantly small or large particles), or one could use WNet3D to generate 3D labels, correct them, and then use these semi-manually annotated images in order to train a suitable supervised model (such as Cellpose or SwinUNetR), which would be able to distinguish artifacts from cells. This process is called active learning",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes a known machine learning approach (active learning) applied to the context of the study."
+  },
+  {
+    "claim_id": "C54",
+    "claim": "A SwinUNetR trained using WNet3D self-supervised generated labels can be nearly as good as a fully supervised model that required human 3D labels.",
+    "claim_type": "EXPLICIT",
+    "source_text": "To show the feasibility of this approach, we trained a SwinUNetR using WNet3D self-supervised generated labels (Figure 2b) and show it can be nearly as good as a fully supervised model that required human 3D labels (no significant difference across F1 vs. IoU thresholds; Kruskal-Wallis H test H=4.91, p=0.085, n=9).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results and statistical analysis."
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The models presented are available in Jupyter Notebooks and in a new napari plugin developed by the authors.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Moreover, the models we present are available in Jupyter Notebooks (which can be used locally or on Google Colab) and in a new napari plugin we developed, with full support for labeling, training (self-supervised or supervised), model inference, and evaluation plus other utilities (Figure 2c).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes software tools provided as part of the study."
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The authors benchmarked WNet3D, Cellpose, StarDist, plus a non-deep learning baseline, on three other 3D datasets that were recently developed.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We benchmarked WNet3D, Cellpose, StarDist, plus the non-deep learning baseline, on three other 3D datasets that were recently developed (Lalit and Tomancak, 2021).",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes benchmarking experiments conducted in the study using datasets from cited work."
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The three additional benchmark datasets have varying cell sizes and cell density, and are collected with either LSM or confocal microscopy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "These three additional datasets have varying cell sizes and cell density, and are collected with either LSM or confocal microscopy (Figure 3a, c and e).",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes properties of the benchmark datasets used in the study."
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The pre-trained WNet3D used for benchmarking was only pretrained on the mesoSPIM dataset.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We used the pretrained Cellpose model (Pachitariu and Stringer, 2022), trained a StarDist model (as no pretrained model existed), and used our pretrained WNet3D model that was only pretrained on the mesoSPIM dataset we presented above.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the experimental setup for benchmarking."
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The pre-trained WNet3D generalizes quite favorably on most datasets, and on average has the highest F1-Score on each individual dataset.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Our pre-trained WNet3D generalizes quite favorably on most datasets, and on average has the highest F1-Score on each individual dataset (Table 1, Figure 3a\u2013f).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results presented in the manuscript."
+  },
+  {
+    "claim_id": "C60",
+    "claim": "WNet3D showed strong performance on the challenging Mouse Skull dataset.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Notably, WNet3D showed strong performance on the challenging Mouse Skull dataset (Figure 3e and f; Figure 1\u2014figure supplement 2b).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results presented in the manuscript."
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The authors tested their pre-trained WNet3D on mouse whole-brain tissue that was cleared and stained with cFOS then imaged with a mesoSPIM microscope.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Lastly, as a worked example, we tested our pre-trained WNet3D on mouse whole-brain tissue that was cleared and stained with cFOS then imaged with a mesoSPIM microscope (Figure 4a and b; see Methods).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes an application example presented in the study."
+  },
+  {
+    "claim_id": "C62",
+    "claim": "One major limitation for the field has been the lack of 3D data.",
+    "claim_type": "EXPLICIT",
+    "source_text": "One major limitation for the field has been the lack of 3D data (Ma et al., 2024).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim is supported by a citation documenting the lack of 3D data in the field."
+  },
+  {
+    "claim_id": "C63",
+    "claim": "More datasets will be needed in the future to understand the limitations of self-supervised learning for this type of data and beyond.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Thus, while we put considerable efforts here to provide a new neuron 3D dataset, more datasets will be needed in the future to understand the limitations of self-supervised learning for this type of data and beyond.",
+    "evidence_type": [
+      "SPECULATION"
+    ],
+    "evidence_reasoning": "This claim involves speculation about future research needs."
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Self-supervised methods are going to excel in samples that have enough separation in the signal-to-noise (i.e. clearly visible nuclei).",
+    "claim_type": "EXPLICIT",
+    "source_text": "Another limitation is that self-supervised methods are going to excel in samples that have enough separation in the signal-to-noise (i.e. clearly visible nuclei).",
+    "evidence_type": [
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is based on logical inference about the requirements for self-supervised methods to work effectively."
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The authors have never tested their approach on electron microscopy data or for axon tracing, so other tools are likely to be more suitable for those tasks.",
+    "claim_type": "EXPLICIT",
+    "source_text": "However, we have never tested our approach on electron microscopy data, or for axon tracing, so other tools are likely to be more suitable for those tasks (Dorkenwald et al., 2023; Friedmann et al., 2020).",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim acknowledges limitations of the current work and cites alternative tools for other applications."
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The CellSeg3D Python package supports high-performance supervised and self-supervised direct-3D segmentation for quantifying cells, as shown on four benchmark datasets.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In summary, the CellSeg3D Python package supports high-performance supervised and self-supervised direct-3D segmentation for quantifying cells, as shown on four benchmark datasets.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim summarizes the capabilities of the software package demonstrated in the study."
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The napari plugin supports the pretrained WNet3D for testing, the ability to train the WNet3D, and to use other top supervised models (SegResNet, SwinUNetR).",
+    "claim_type": "EXPLICIT",
+    "source_text": "Our napari plugin supports both our new pretrained WNet3D for testing, the ability to train the WNet3D, and to use other top supervised models presented here (SegResNet, SwinUNetR).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the features of the software tool developed in the study."
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The authors provide various tools for pre- and post-processing as well as utilities for labeling in 3D.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We also provide various tools for pre- and post-processing as well as utilities for labeling in 3D.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes additional features of the software package."
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The authors provide their new 2632 cell 3D dataset intended for benchmarking 3D cell segmentation algorithms on mesoSPIM acquired cleared tissue.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We additionally provide our new 2632 cell 3D dataset intended for benchmarking 3D cell segmentation algorithms on mesoSPIM acquired cleared tissue (see Dataset Card).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the dataset contribution of the study."
+  },
+  {
+    "claim_id": "C70",
+    "claim": "All code and data is fully open-sourced at https://github.com/AdaptiveMotorControlLab/CellSeg3D.",
+    "claim_type": "EXPLICIT",
+    "source_text": "All code and data is fully open-sourced at https://github.com/AdaptiveMotorControlLab/CellSeg3D.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim states the availability of the code and data from the study."
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The whole-brain data used was obtained from the IDR platform and consists of CLARITY-cleared tissue from a TPH2-tdTomato mouse.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The whole-brain data by Voigt et al., 2019 was obtained from the IDR platform (Williams et al., 2017); the volume consists of CLARITY-cleared tissue from a TPH2-tdTomato mouse.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes the source and nature of the data used in the study."
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Data was acquired with the mesoSPIM system at a zoom of 0.63 X with 561 nm excitation.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Data was acquired with the mesoSPIM system at a zoom of 0.63 X with 561 nm excitation.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the imaging parameters used for data acquisition."
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The data was cropped to several regions of the somatosensory (five volumes, without artifacts) and visual cortex (one volume, with artifacts) and annotated by an expert.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The data was cropped to several regions of the somatosensory (five volumes, without artifacts) and visual cortex (one volume, with artifacts) and annotated by an expert.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the data preparation and annotation process."
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The WNet3D model consists of an encoder and decoder, each comprising seven blocks, for a total of 14 blocks.",
+    "claim_type": "EXPLICIT",
+    "source_text": "To summarize, the model consists of an encoder Uenc and decoder Udec, as originally proposed; however, each UNet comprises seven blocks, for a total of 14 blocks, down from nine blocks per UNet originally.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the architecture of the WNet3D model developed in the study."
+  },
+  {
+    "claim_id": "C75",
+    "claim": "WNet3D uses group normalization to replace batch normalization, which improved performance in the low batch size setting.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Finally, we introduced group normalization (Wu and He, 2018) to replace batch normalization, which improved performance in the present low batch size setting, as well as training and inference speed.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes a design choice in the model and its effect, supported by experimental observation."
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Segmentation in WNet3D is performed using an adapted 3D SoftNCuts loss with voxel brightness differences defining the edge weight.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Segmentation is performed in Uenc by using an adapted 3D SoftNCuts loss (Shi and Malik, 2000) as an objective, with the voxel brightness differences defining the edge weight in the calculation, as proposed in the initial Ncuts algorithm.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes the loss function used in the model, citing the original Ncuts algorithm."
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Lowering the radius for the SoftNCuts loss calculation greatly sped up training without impacting performance, even with a radius as low as 2 voxels.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In our experiments, lowering the radius greatly sped up training without impacting performance, even with a radius as low as 2 voxels.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental observations during model development."
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The modified WNet3D model was usually trained for 50 epochs.",
+    "claim_type": "EXPLICIT",
+    "source_text": "This modified model was usually trained for 50 epochs, unless stated otherwise.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the training procedure used in the study."
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The SegResNet and SwinUNetR models were trained using the Generalized Dice loss for 50 epochs.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The SegResNet and SwinUNetR models shown here were trained using the Generalized Dice loss for 50 epochs",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the training procedure for supervised models in the study."
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The Voronoi-Otsu method combines an Otsu threshold and a Voronoi tessellation to perform instance segmentation.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The latter combines an Otsu threshold and a Voronoi tessellation to perform instance segmentation",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This claim describes the Voronoi-Otsu method based on established knowledge of the algorithm."
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The Voronoi-Otsu method more readily avoids fusing clumped cells than connected components and watershed algorithms, provided that the objects are convex.",
+    "claim_type": "EXPLICIT",
+    "source_text": "and more readily avoids fusing clumped cells than the former two, provided that the objects are convex, which is the case in the present task.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is based on knowledge of the algorithm's properties and inference about its suitability for the task."
+  },
+  {
+    "claim_id": "C82",
+    "claim": "StarDist was retrained using the provided example notebook for 3D, using default parameters.",
+    "claim_type": "EXPLICIT",
+    "source_text": "StarDist was retrained using the provided example notebook for 3D, using default parameters.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the experimental procedure for training StarDist."
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Cellpose was retrained without pretrained weights using default parameters, except for the mean diameter which was set to 3.3.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Cellpose was retrained without pretrained weights using default parameters, except for the mean diameter which was set to 3.3 according to the provided object size estimation utility in the GUI (and visually confirmed).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the experimental procedure for training Cellpose."
+  },
+  {
+    "claim_id": "C84",
+    "claim": "No pretrained Cellpose model was found to be suitable for the authors' data.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We investigated pretrained models provided by Cellpose, as well as attempting transfer learning, but no pretrained model was found to be suitable for our data.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is based on experimental observations during model evaluation."
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Cellpose achieved best performance with a cell probability threshold of \u22129 and resampling enabled after tuning.",
+    "claim_type": "EXPLICIT",
+    "source_text": "After tuning, we found that Cellpose achieved best performance with a cell probability threshold of \u22129 and resampling enabled",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by hyperparameter optimization experiments."
+  },
+  {
+    "claim_id": "C86",
+    "claim": "A SwinUNetR trained using WNet3D generated labels showed no significant difference from a fully supervised model across F1 vs. IoU thresholds (Kruskal-Wallis H test H=4.91, p=0.085, n=9).",
+    "claim_type": "EXPLICIT",
+    "source_text": "To assess whether WNet3D can generalize to unseen data when trained on a specific brain volume, we trained a WNet3D from scratch using volumes cropped from a different mesoSPIM-acquired whole-brain sample, labeled with c-FOS, imaged at 561 nm with a pixel size of 5.26\u00d75.26\u03bcm in x and y, and a step size in z of 5\u03bcm (see Additional datasets). This model was then used to generate labels for our provided dataset. A SwinUNetR model was then trained using these WNet3D generated labels, and compared to the performance of the pretrained model we provide in our napari plugin.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by experimental results and statistical analysis."
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The models were evaluated using standard segmentation metrics, namely F1-Score and intersection over union (IoU).",
+    "claim_type": "EXPLICIT",
+    "source_text": "The models were evaluated using standard segmentation metrics (Hirling et al., 2024), namely F1-Score and intersection over union (IoU).",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes standard evaluation metrics used in the field, supported by a citation."
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The authors used the evaluation utilities provided by StarDist.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We used the evaluation utilities provided by StarDist (Weigert et al., 2020).",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This claim describes the tools used for evaluation, supported by a citation."
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The napari plugin allows users to easily annotate data, train models, run inference, and perform various post-processing steps.",
+    "claim_type": "EXPLICIT",
+    "source_text": "To facilitate the use of our models, we provide a napari plugin where users can easily annotate data, train models, run inference, and perform various post-processing steps.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the functionality of the software tool developed in the study."
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The napari plugin provides additional interfaces such as orthogonal projections to better view the ongoing labeling process.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Users may manually annotate the data in napari using our labeling interface, which provides additional interfaces such as orthogonal projections to better view the ongoing labeling process, as well as keeping track of time spent labeling each slice",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes specific features of the software tool."
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The authors provide a Colab Notebook to train their self-supervised model.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We additionally provide a Colab Notebook to train our self-supervised model using the same procedure described above.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes an additional resource provided by the authors."
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The pretrained weights for all models are made available through the HuggingFace platform.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The pretrained weights for all our models are also made available through the HuggingFace platform (and automatically downloaded by the plugin or in Colab)",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the availability of model weights from the study."
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The authors used a Kruskal-Wallis test to check the null hypothesis that the median of all models was equal.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We used Python 3.8\u20133.10 using the https://pypi.org/project/scikit-posthocs/ package, and we performed a Kruskal-Wallis test to check the null hypothesis that the median of all models was equal.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the statistical methods used in the study."
+  },
+  {
+    "claim_id": "C94",
+    "claim": "When the Kruskal-Wallis test was significant, the authors used two-sided Conover-Iman post-hoc testing to test pairwise differences between models with the Holm-Bonferroni correction for multiple comparisons.",
+    "claim_type": "EXPLICIT",
+    "source_text": "When this test was significant, we used two-sided Conover-Iman post-hoc testing to test pairwise differences between models, also using the 'scikit_posthoc' implementation, with the Holm-Bonferroni correction for multiple comparisons (step-down method using Bonferroni adjustments).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim describes the statistical methods used in the study."
+  }
+]

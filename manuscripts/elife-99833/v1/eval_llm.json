@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "The authors identified consecutive hydrophilic amino acids in the RBM region (437-508) of SARS-CoV-2 spike protein and observed specific patterns of amino acid substitutions across viral lineages. As the virus evolved from Wuhan-Hu-1 to Omicron, there was a twofold increase in substitutions to lysine (K) and arginine (R), while glutamine (Q), phenylalanine (F), and glutamic acid (E) decreased by half, with polarity changes increasing in NN* patterns and decreasing in PP* patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C20-C24 and C26 are consistently supported by sequence analysis of 7,335,614 viral sequences from GISAID, with quantitative data presented in Figure 1A-C and supplementary files. The patterns are clearly documented with specific numerical values and visual representations."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Comparative analysis of coronaviruses (MERS-CoV, SARS-CoV-1, SARS-CoV-2) showed no significant differences in polarity across positions. Nucleotide sequence analysis revealed directional biases in transitions (G\u2192U and C\u2192U rates higher than reverse) and extremely low transversion rates (C\u2194G).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C25 and C27-C29 are supported by comparative analysis shown in Figure 1\u2014figure supplement 3A-C and analysis of 7,335,614 samples. The nucleotide transition/transversion patterns are consistent with known SARS-CoV-2 mutational biases."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C5",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The D467 position shows extreme conservation with only 7 mutations out of 7,335,614 sequences analyzed. Experimental validation demonstrated that D467P and D467I mutations reduced infectivity compared to wild-type, which the authors attribute to disruption of salt-bridge interactions (R457-D467-R454) critical for structural stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C31-C32, and C92-C97 are well-supported by convergent evidence: sequence rarity data from GISAID (C31), experimental luciferase and viral entry assays (C32), structural analysis showing salt-bridge disruption (C94), and AlphaFold2 predictions showing structural changes (C97). The mechanistic explanation linking structural stability to infectivity is supported by both computational and experimental data."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Later SARS-CoV-2 lineages showed reduced diversity in amino acid substitutions, with mutations becoming fixed over time. In Omicron variants, L452R and T478K became the most numerous non-synonymous mutations, contrasting with the greater diversity observed in earlier Alpha, Beta, and Delta lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C33-C34 and C81-C83 are supported by temporal analysis of mutation patterns shown in Figure 2B and viral sequence data. The reduction in diversity and fixation of specific mutations in later lineages is clearly documented across the dataset."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Epidemiological analysis identified three distinct periods with different infection and death patterns correlating with viral evolution. Delta variant mutations (L452R, T478K) were significantly associated with symptomatic infections (OR 4.346 and 3.116 respectively), while Omicron variants showed predominantly asymptomatic presentations. The authors establish an association between mutation fixation and changes in disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C35-C42 and C84-C86 present epidemiological correlations, but the causal interpretation is uncertain. While the statistical associations for Delta mutations (C39-C40) are quantified with odds ratios, confounding factors (vaccination rates, prior immunity, testing practices, healthcare access) are not adequately controlled. The correlation between mutation diversity and case/death rates (C84-C85) may reflect multiple unmeasured variables rather than direct causation."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C51",
+      "C107"
+    ],
+    "result": "Gene expression analysis comparing Delta and Omicron (BA.4/BA.5) infections showed that Delta was associated with upregulation of genes in molecular and virus infection pathways (p<0.05), including mTOR, PI3K-AKT, and metabolic pathways. The authors conclude that Delta's increased severity is attributed to greater host molecular pathway dysregulation compared to Omicron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C43-C45, C51, and C107 are based on gene expression analysis from GSE235262, but critical methodological details are missing. The manuscript does not specify sample sizes, patient characteristics, time points of sample collection, or control for confounders (disease severity, viral load, treatment). The p<0.05 threshold without multiple testing correction and the lack of effect sizes limit confidence in the conclusions. The causal attribution of severity to pathway dysregulation (C107) is inferential rather than demonstrated."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C52",
+      "C6"
+    ],
+    "result": "Computational docking analysis (pDockQ and HADDOCK) showed that SARS-CoV-2 variants have differential binding affinities to ACE2, with Delta (0.577) and Omicron variants showing higher affinity than Wuhan-Hu-1 (0.506). The authors found that binding affinity increased as the virus evolved to Omicron and that higher binding affinity was associated with increased infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C6, C46-C47, C48, C50, and C52 rely on computational docking predictions. While pDockQ and HADDOCK are established methods, the manuscript does not provide validation of these predictions against experimental binding measurements for the specific variants analyzed. The correlation between computational binding scores and epidemiological infectivity (C47) is asserted but not rigorously demonstrated with statistical analysis. The small differences in pDockQ scores (0.506 to 0.577) may not be biologically significant without experimental validation."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C53",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "The authors conclude that viruses evolving within human hosts are most infectious to humans, that Omicron is more infectious due to increased ACE2 binding, and that Beta variant's high binding affinity did not translate to high infectivity due to insufficient K/R substitutions and early emergence with vaccination pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Claims C49, C53, C103-C106, and C108 involve substantial speculation beyond the data. C49 is an overgeneralization from limited interspecies comparisons. C105-C106 are explicitly speculative explanations for Beta's epidemiology without supporting data. The conclusion that Omicron is 'more infectious' (C53, C103) conflates binding affinity predictions with actual infectivity without controlling for immune escape, which is a major driver of Omicron spread. These claims require additional experimental validation and epidemiological analysis."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors developed APESS, a composite scoring model combining four components (SCPS, PCS, MR, BPES) to evaluate SARS-CoV-2 infectivity. APESS scores calculated for 7,335,614 sequences showed that Alpha and Beta received lower scores while Delta and Omicron variants received higher scores (>1.62), with Gaussian Mixture Modeling identifying four distinct groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C7, C54-C57, C60-C61 describe the APESS model, but critical validation is incomplete. The model combines four weighted components with arbitrary weights (e.g., 0.9 vs 0.1 in SCPS) that are not justified. The threshold of 1.62 for 'high infectivity' (C56) appears to be determined post-hoc based on known variants rather than predictively validated. While GMM clustering (C60-C61) groups variants, the biological meaning and predictive power of these groups require prospective validation. The model's ability to predict infectivity independently of the training data used to develop it is not demonstrated."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors validated APESS through in silico analysis of real-world sequences and in vitro viral entry assays. Prospective validation showed that BA.2.86, EG.5.1, and HK.3, which were predicted one year earlier, subsequently appeared at high frequencies (43%, 28%, 12%) and had high APESS scores (2.051, 1.982, 1.986).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C8-C9, C114-C115 provide validation evidence. The prospective prediction of variants that later emerged at high frequency (C114) with corresponding high APESS scores (C115) is strong evidence for the model's utility. The in vitro validation (C9) through luciferase and viral entry assays provides experimental support, though the full extent of validation across all predictions is not completely detailed."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of candidate lineages with engineered mutations showed that substitutions to positively charged residues K and R yielded higher APESS scores than wild-type variants, with S477K and S477R specifically linked to increased infectivity. Substitutions to N, S, Y, and G resulted in similar or lower scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C62-C65 are supported by systematic mutagenesis analysis shown in Figure 5A-B. The computational predictions show consistent patterns where K and R substitutions yield higher APESS and pDockQ scores, which aligns with the observed evolutionary trends (C23). The analysis is internally consistent with the model's design."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C98"
+    ],
+    "result": "Machine learning models (LightGBM, XGBoost, Random Forest, ensemble) were used to predict mutation probabilities, achieving high performance (Precision, Recall, F1 >0.95; Accuracy 0.78-0.89). Predictions showed increasing probability for N460K in Omicron lineages, relatively constant probability for Q493R, and decreasing frequency for XBB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C10, C66-C69, and C98 are supported by machine learning analysis with documented performance metrics. The models show consistent results across different algorithms (Figure 5C, Figure 5\u2014figure supplement 1), and the high performance scores indicate good predictive capability on the test data. However, the temporal validation and generalization to truly novel variants beyond the training period would strengthen these claims."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C99"
+    ],
+    "result": "Experimental validation using SPR showed Q493R and N460K variants had approximately 2-3 fold increased binding affinity to ACE2 compared to wild-type. However, luciferase and viral entry assays showed N437R increased infectivity 2-fold, while N460K and Q493R decreased infectivity, with N460K showing 10-fold higher viral entry than Q493R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C70-C73 and C99 present contradictory results that are not adequately resolved. SPR data (C70, C99) shows increased binding affinity for N460K and Q493R, but viral entry assays (C72-C73) show decreased infectivity for these same mutations. This discrepancy between binding affinity and functional infectivity is acknowledged but not mechanistically explained. The authors speculate about combinatorial effects (C90, C100-C101) but do not test this experimentally. The contradiction suggests that binding affinity alone is insufficient to predict infectivity."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C100",
+      "C101"
+    ],
+    "result": "N460K mutations occurred at low rates but showed higher infection probability than other mutations, while N437R showed high APESS scores and increased infectivity experimentally but was barely observed (only 3 instances) due to requiring multiple codon changes. The authors speculate these mutations remain candidates for future monitoring and that combinatorial effects with other mutations could increase infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C74, C87-C90, C100-C101 mix data with speculation. The rarity of N437R (C88) and its requirement for multiple nucleotide changes is well-documented, and the experimental increase in infectivity (C71) is demonstrated. However, the prediction that it 'remains a primary candidate for close monitoring' (C89) is speculative given its rarity over 7+ million sequences. The speculation about combinatorial effects (C90, C100-C101) is reasonable but untested. The claim about N460K having 'higher probability of infection' (C74) contradicts the viral entry data (C72) unless 'probability' refers to evolutionary likelihood rather than per-virion infectivity."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C91",
+      "C102"
+    ],
+    "result": "Protein structure predictions showed that Wuhan-Hu-1+N460K had increased folding compared to Wuhan-Hu-1, while XBB (containing N460K plus other mutations) showed more stabilized structure with alpha-helix and beta-sheet formations. The authors conclude that consecutive hydrophobic amino acids and specific substitutions affect both infection and protein structure, with N460K forming hydrogen bonds to ACE2 glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C75-C76, C91, and C102 are supported by AlphaFold2 structural predictions (Figure 6) and citation to Ito et al., 2023 for the glycan interaction (C91). The structural analysis showing differential folding between single mutation (Wuhan-Hu-1+N460K) and multiple mutations (XBB) provides mechanistic insight into why combinatorial effects might be important, consistent with the experimental observations."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Based on outbreak.info data from March 21, 2023, S477K mutation showed 2% cumulative prevalence in Omicron BA.5.1 and BA.5.2 variants, with severe infections associated with K and R substitutions at the S477 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C58-C59 present observational data (C58) but the association with severe infections (C59) is not supported by statistical analysis or clinical data in the manuscript. The claim appears to be an inference from APESS scores and mutation patterns rather than direct epidemiological evidence linking S477K/R to severity."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors developed AIVE, a web-based platform (https://ai-ve.org) that provides infectivity measurements for user-entered mutations, can be used without expert knowledge or GPU setup, and completes analysis in 50 minutes on RTX8000 hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C11, C116-C118 describe the AIVE platform with specific technical details. The platform's existence, accessibility, and functionality are documented with usage guidelines (Figure 6, Figure 6\u2014figure supplement 1) and performance specifications. These are verifiable implementation claims rather than scientific findings."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The GMM model applied to APESS scores can predict a new sample's membership in specific components, allowing conjectures about potential strains and infectivity. The authors predicted approximately 440 mutations with probability of occurring in the near future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C111-C113 describe the GMM application and predictions. While the GMM methodology is sound (C111), the utility for making 'informed conjectures' (C112) depends on the model's validation. The prediction of 440 mutations (C113) is vague ('near future') and the success rate is unclear. The subsequent validation (C114) shows some successful predictions but does not quantify the false positive rate or overall accuracy of the 440 predictions."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C119",
+      "C86",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors conclude they established a clear link between specific viral properties (consecutive hydrophobic amino acids, K/R substitutions, binding affinity) and increased infectivity, demonstrating that SARS-CoV-2 increased in infectivity over time through evolutionary changes in the RBM region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C12, C119, C86, C102, and C103 represent the manuscript's overarching conclusions. While the authors demonstrate correlations between biochemical properties and known variant infectivity, the 'clear link' and causal language overstates the evidence. The analysis is largely correlative, with computational predictions and limited experimental validation. The increase in infectivity over time (C119) is confounded by immune escape (not addressed), and the mechanistic links between properties and infectivity involve substantial inference. The work provides useful associations but not definitive causal mechanisms."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript establishes context by noting unprecedented SARS-CoV-2 data accumulation, the role of genomic databases (GISAID, Nextstrain), and established knowledge about viral mutations affecting gene function, spike protein structure, ACE2 binding, and the utility of deep learning methods including AlphaFold2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C13-C19 represent background knowledge and context, supported by appropriate citations and general scientific consensus. These establish the foundation for the study but are not novel findings of this work."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C95"
+    ],
+    "result": "The authors cite established knowledge about hydrophobic protein structure's role in stability and folding, E-protein folding in Flaviviruses, hydrophobic domains affecting coronavirus infectivity, and salt bridges in thermostabilization. They speculate that consecutive hydrophilic amino acids in MERS-CoV contributed to its low infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C77-C79 and C95 are supported by appropriate citations and represent established knowledge. However, C80 is speculative\u2014while the authors observe consecutive hydrophilic amino acids in MERS-CoV, the causal attribution to low infectivity is not demonstrated and represents the authors' belief rather than established fact."
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The authors predict that Omicron XBB-derived sequences will have high infectivity and continue to occur, leading to the expectation of consistent SARS-CoV-2 infections going forward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Claims C109-C110 are speculative predictions about future viral evolution and epidemiology. While based on the APESS model and machine learning predictions, these claims extend beyond the data to make broad predictions about ongoing transmission. The prediction does not account for immune evolution, public health interventions, or potential evolutionary constraints. These are reasonable hypotheses but lack the evidence to be considered supported conclusions."
+  }
+]

@@ -1,0 +1,2277 @@
+{
+  "submission": {
+    "id": "a144e175-aa29-4c30-8522-b2f3611d5333",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:21:32.578016Z",
+    "updated_at": "2025-10-21T23:21:32.578016Z"
+  },
+  "content": [
+    {
+      "id": "9a15cd58-1037-485c-a296-b73601955835",
+      "submission_id": "a144e175-aa29-4c30-8522-b2f3611d5333",
+      "content_type": "manuscript",
+      "content_text": "# Exploring protein structural ensembles: Integration of sparse experimental data from electron paramagnetic resonance spectroscopy with molecular modeling methods\n\n## Authors\n\n- Julia Belyaeva<sup>1</sup> ([ORCID: 0000-0002-6175-7942](https://orcid.org/0000-0002-6175-7942))\n- Matthias Elgeti<sup>1</sup> ([ORCID: 0000-0002-0550-4852](https://orcid.org/0000-0002-0550-4852)) \u2020\n\n### Affiliations\n\n1. https://ror.org/03s7gtk40 Institute for Drug Discovery, Leipzig University Medical School Leipzig Germany\n2. https://ror.org/03s7gtk40 Institute for Medical Physics and Biophysics, Leipzig University Medical School Leipzig Germany\n3. https://ror.org/03s7gtk40 Integrative Center for Bioinformatics, Leipzig University Leipzig Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnder physiological conditions, proteins continuously undergo structural fluctuations on different timescales. Some conformations are only sparsely populated, but still play a key role in protein function. Thus, meaningful structure\u2013function frameworks must include structural ensembles rather than only the most populated protein conformations. To detail protein plasticity, modern structural biology combines complementary experimental and computational approaches. In this review, we survey available computational approaches that integrate sparse experimental data from electron paramagnetic resonance spectroscopy with molecular modeling techniques to derive all-atom structural models of rare protein conformations. We also propose strategies to increase the reliability and improve efficiency using deep learning approaches, thus advancing the field of integrative structural biology.\n\n## Introduction\n\n## The conformational landscape and its role for protein function\n\nUnder physiological conditions, most proteins are highly dynamic, adopting various structures with distinct probabilities. The diversity and thermodynamics of protein structures may be conceptualized as a conformational landscape, which represents a low-dimensional projection of the multidimensional free energy surface of generalized protein coordinates (Figure 1). Following the nomenclature introduced by Frauenfelder et al., a macrostate represents the global thermodynamic state of a protein defined by the physical and (bio)chemical conditions, such as temperature, pressure, chemical potential, type, and concentration of solutes or ligands (Frauenfelder et al., 1991). Within a given macrostate, protein structural rearrangements may occur on different timescales. For example, conformational states (or simply conformations) are separated by barriers of several kT and thus interconvert on the timescale of microseconds to milliseconds. Within each conformational state, fluctuations which occur on the order of nanoseconds separate individual conformational substates, while even faster transitions occur between statistical substates (Frauenfelder et al., 1991; Henzler-Wildman and Kern, 2007). It is conceivable that the macrostate defines the equilibrium distributions of the entire conformational ensemble comprising all timescales (Shi et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99770/elife-99770-fig1-v1.jpg)\n\nEach conformational state contributes a specific functional profile. Thus, protein function is defined by the distribution of conformational states, and their redistribution upon interaction with binding partners such as ligands (Figure 1). This functional framework entails that even sparsely populated conformational states can rise to functional relevance and thus should be considered when a protein is targeted pharmacologically. This was recently demonstrated for the most prominent pharmacological targets, G-protein-coupled receptors (GPCRs), where minute amounts of active conformation lead to basal receptor activity (Lerch et al., 2020).\n\nThe three tiers of protein states are defined by their timescales of interconversion. Conformational states exchange on the slow, micro- to millisecond timescale (dotted lines), while conformational substates (green) and statistical substates (red) have lifetimes of nanoseconds or picoseconds, respectively. Changing the protein\u2019s macrostate, for example by adding ligand (blue), leads to redistribution of the conformational equilibrium.\n\nWhile various computational methods have been developed for the characterization of conformational landscapes, slow timescales (milliseconds and beyond) are still challenging to access. These shortcomings can be addressed by using complementary experimental methods, which provide access to slow conformational exchange and can resolve the equilibrium ensemble under (near-) physiological conditions. The integration of these experimental results with molecular modeling culminates in high-resolution structures of rare conformational states and their thermodynamics (Allison, 2017).\n\n## Experimental methods for studying conformational landscapes\n\nCurrently, the most commonly used approaches to study protein structure include X-ray diffraction, cryo-electron microscopy (EM), nuclear magnetic resonance (NMR) spectroscopy, F\u00f6rster resonance energy transfer (FRET), and electron paramagnetic resonance (EPR) spectroscopy. Each of these methods has its strengths and limitations. For instance, structures determined by X-ray diffraction provide high resolution, however, the conformational state most stable under crystal conditions may lack physiological relevance (Freed et al., 2010; Dasgupta et al., 1997; Rasmussen et al., 2011). Furthermore, the requirements of crystallization narrow the applicability of X-ray crystallography, because many proteins exhibit flexible regions which prevent crystallization or diminish resolution. This is especially true for membrane proteins, where shortening of dynamics loops or insertion of highly soluble and rigid proteins circumvent this problem (Carpenter et al., 2008; Lacap\u00e8re et al., 2007; Ding et al., 2021; Thorsen et al., 2014). In order to access conformational dynamics, X-ray structural models commonly serve as a starting point for molecular modeling, for example using molecular dynamics (MD) simulations. However, slow conformational changes (>10\u22125 s) remain challenging to follow with atomic resolution.\n\nCryo-EM may in principle directly explore conformational ensembles, and rapid vitrification enables the characterization of macrostates (Glaeser, 2016; K\u00fchlbrandt, 2014; Yip et al., 2020). Though freezing may still introduce bias toward specific conformations, cryo-EM is the most rapidly advancing method for investigating conformational ensembles of proteins (Twomey et al., 2015; Mehra et al., 2020; Bonilla and Kieft, 2022; Noble et al., 2018; Karplus and McCammon, 2002). Pairing individual structural models from cryo-EM with MD simulations has recently given valuable insight into the activation process of G proteins by an activated GPCR (Papasergi-Scott et al., 2023). However, flexible membrane proteins may adopt a vast number of conformational states constituting a great obstacle to current classification approaches.\n\nMost commonly used NMR methods effectively explore structural and dynamic features of small- and medium-sized proteins, typically up to 300 amino acid residues (Clore and Gronenborn, 1991; Opella and Marassi, 2004; Kaptein and Wagner, 2015). Site-specific fluorine NMR extends these capabilities to larger proteins, also enabling observation of dynamic events spanning from nanoseconds to seconds (Prosser and Alonzi, 2023; Danielson and Falke, 1996). Computational integration of NMR data remains challenging due to the added difficulty of assigning resonances to specific residues. Novel, detector-based methods elegantly integrate NMR timescale information with computational modeling (Smith et al., 2023), but access to large amounts of functional sample as well as acquisition and processing times remain limiting factors.\n\nFRET detects conformational changes in the range of 30\u201380 \u00c5 and, in combination with single particle analysis (smFRET), provides access to conformational heterogeneity and exchange dynamics (Ha, 2001; Agam et al., 2023; Gregorio et al., 2017; Zhao et al., 2024). However, fluorophores represent relatively large, flexible, and hydrophobic probes, which limits spatial resolution or may disturb the local structure and dynamics (S\u00e1nchez-Rico et al., 2017; Peter et al., 2022).\n\nIn this review, we focus on EPR spectroscopy, which allows the investigation of protein dynamics across a broad range of timescales (from picoseconds to seconds or longer) with few restrictions on sample conditions. The application of pulse EPR spectroscopy adds further capabilities in terms of spatial resolution and accurate quantification of individual conformational states. A continuously growing number of computational tools are becoming available assisting with the integration of EPR spectroscopic data and providing a detailed picture of structural dynamics underlying protein function.\n\n## Site-directed spin labeling EPR spectroscopy\n\nEPR spectroscopy comprises a large toolbox of methods enabling the exploration of protein systems containing paramagnetic centers. Since unpaired electrons are usually depleted during protein expression, stable radicals need to be introduced for example via site-directed spin labeling in order to obtain an EPR signal (Torricella et al., 2021; Pierro and Drescher, 2023; Jana et al., 2023). Several continuous wave (CW) EPR methods have been developed to study the different timescales of protein dynamics, and gain insight into structure and population of conformational states within an ensemble (Table 1). In the following, we limit our considerations to studies with nitroxides, which are by far the most commonly used spin labels. However, especially for distance measurements several other spin label side chains have been developed, each exhibiting benefits and drawbacks compared to nitroxides that are discussed elsewhere (Fielding et al., 2014). The CW EPR lineshape (first derivative of the absorption spectrum) is highly sensitive to spin label dynamics on the 100 ps to 100 ns timescale which is strongly influenced by structure and dynamics of the protein (Hubbell et al., 1996; Campbell et al., 2022; Mchaourab et al., 1996; Fichou et al., 2019; Pierro et al., 2020). Coexistence of several conformational states leads to superimposed, complex EPR spectra. While a comprehensive theory of spin label motion exists, the interpretation of CW EPR lineshapes remains challenging due to a large number of parameters. In particular cases, when the selection of fitting parameters during lineshape analysis is ambiguous, statistical analysis becomes necessary to assess the likelihood of one parameter set over another (Francis et al., 2012; Etienne et al., 2023; Lindemann et al., 2020).\n\nFurther information on protein topology can be obtained via power saturation CW EPR spectroscopy, which is often combined with spin label scanning. Here, spin labels are introduced to successive sites along a sequence of amino acids and the influence of paramagnetic substances on the saturation behavior is evaluated (Altenbach et al., 1990; Hubbell et al., 2003). In general, full seqeunce coverage with spin labels is desired to uncover even subtle changes in structure and dynamics of the protein segment of interest. However, evaluating or comparing specific secondary structure models with different periodicities, such as \u03b1-helix or \u03b2-sheet, requires only a strongly reduced set of spin labeling sites. Saturation transfer (ST) EPR and time-resolved (TR) EPR represent two other methods utilizing continuous microwave radiation, extending sensitivity to the timescales of microseconds to milliseconds (Hyde and Dalton, 1972; Hyde and Thomas, 1973; Schwarz et al., 1990; Rayes et al., 2011) and millisecond to hours (Steinhoff et al., 1994; Farahbakhsh et al., 1993; Knierim et al., 2007), respectively. While several approaches for the analysis of ST EPR spectra have been developed (Hustedt and Beth, 2004), these represent purely heuristic methods and will therefore not be discussed in more detail. The dynamic processes picked up by TR EPR are too slow to be modeled using all-atom modeling techniques and are also outside the focus of this review. Notably, all EPR methods mentioned so far exhibit little to no restrictions on the experimental conditions, including a wide range of temperatures or different environments (solution, membranes, living cells, etc.).\n\nThe power of EPR spectroscopy is strongly expanded by the application of microwave pulses (pulse EPR spectroscopy). Four-pulse double electron\u2013electron resonance energy transfer (DEER), also known as pulsed electron\u2013electron double resonance (PELDOR), is a pulsed EPR spectroscopic technique usually performed on frozen solutions, in order to resolve distances between two spin labels at sub-Angstrom resolution. This method captures interspin distances ranging from 1.5 to 8.0 nm, and even up to 16.0 nm in fully deuterated samples (Peter et al., 2022; Jeschke, 2012). Moreover, DEER experiments elegantly connect structure and thermodynamics of proteins by resolving the conformational ensemble in probability distance distributions (Elgeti and Hubbell, 2021; Evans et al., 2020; Dawidowski and Cafiso, 2013; Wingler et al., 2019). This makes DEER the prime method for computational integration with structural biology which will be discussed in detail. Electron-nuclear double resonance (ENDOR) assesses hyperfine interactions among magnetic nuclei and paramagnetic centers within solute samples cooled to cryogenic temperatures. It can be implemented as both CW and pulse technique (Lubitz et al., 2002; Weber et al., 2001). ENDOR is effective for revealing the structures of specific parts of protein molecules, achieving atomic-level accuracy in distances below 1.5 nm (Lendzian et al., 1996). Recent work has demonstrated that using fluorinated amino acids (19F-ENDOR), in particular in combination with Gadolinium spin labels, extends the upper distance limit to above 2 nm (Bogdanov et al., 2024). Several computational methods have been developed to simulate ENDOR spectra, however, integration with structural models has not been achieved yet (Meyer et al., 2020; Meyer et al., 2022; Stoll and Schweiger, 2006). Lastly, saturation recovery EPR (SR EPR) represents another pulsed EPR technique used to gain insights into protein dynamics. It enables the resolution of dynamic events on the low to intermediate microsecond timescale which remains difficult to access with other methods (Bridges et al., 2010; Sarewicz et al., 2008; Yang et al., 2015). However, so far no computational approaches for the structural integration of SR EPR have been developed.\n\n## Analysis and interpretation of experimental CW EPR data\n\nThe sensitivity of CW EPR to molecular motion arises from the incomplete averaging of anisotropic magnetic interactions leading to characteristic lineshapes.\n\n## Semi-empirical analysis methods\n\nDerive parameters of molecular motion directly from the lineshape. Columbus and Hubbell showed that the distance between the minimum and maximum of the CW EPR lineshape, the center linewidth \u03b4 (Figure 2A), is strongly related with the correlation time and order parameter of the observed motion (Columbus and Hubbell, 2002). Also, the effective hyperfine splitting A\u2019zz, as assessed by the distance between the outer minima can be used to determine the correlation time or the polarity of spin label environment (Freed, 1976; Altenbach and Hubbell, 2015). Axially symmetric systems such as spin-labeled lipids of a membrane bilayer can be analyzed using the parallel (A\u2225) and perpendicular (A\u27c2), which significantly simplifies the analysis of the experimental results (Subczynski et al., 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99770/elife-99770-fig2-v1.jpg)\n\n**Figure 2.:** (A) Semi-empirical analysis of the CW EPR lineshape provides insight into the rate of motion (\u03b4), polarity (A\u2019) of the spin label environment, parallel (zzA\u0965), and perpendicular (A\u22a5) compounds of CW EPR spectra of spin-labeled membrane bilayer lipids. (B) Lineshape analysis provides access to motional parameters and populations of individual equilibrium conformations. (C) Molecular dynamics (MD) simulations may explore the entire conformational landscape of a protein and provide data to simulate the CW EPR spectrum. The latter is then compared with the experiment. (D) RosettaEPR approach uses results from single and double mutant CW EPR experiments to derive distance constraints for subsequent conformational modeling.\n\n## Lineshape analysis\n\nMotional models for analyzing CW EPR lineshapes computationally exist at varying degrees of complexity. Most widely used models for the description of intermediate to slow spin label dynamics solve the stochastic Liouville equation (SLE) and assume microscopic order and macroscopic disorder (MOMD, Figure 2B; Meirovitch et al., 1984; Budil et al., 2006). Such models can include ordering potentials in the lineshape analysis to characterize the amplitude of molecular motions. However, while intricate motional models can be implemented, distinct parameter sets may result in equally good mathematical fits. To this end, strongly correlated fitting parameters indicate that the complexity of the model (i.e., number of parameters) should be reduced to avoid overfitting (Altenbach and Budil, 2024). Motion faster than 1 ns leads to complete averaging of anisotropic magnetic interactions. This simplifies the analysis and an effective Hamiltonian can be used (Hubbell and McConnell, 1971).\n\nAnalysis via lineshape simulation includes iterative adjustment of model parameters to fit the experimental spectra. Such methods are implemented in the programs EasySpin, NLSL, MultiComponent, Spinach, Simlabel, and cwepr (Stoll and Schweiger, 2006; Altenbach and Budil, 2024; Budil et al., 1996; Altenbach and Hubbell, 2024; Schr\u00f6der and Biskup, 2022). These software toolkits require relatively low computational resources and have a user-friendly graphical interface. Lineshape simulations offer valuable insights into the protein local structure, dynamics, topology, conformational changes, and interactions between binding partners. Notably, when a protein conformational change affects spin label dynamics sufficiently leading distinct lineshapes, lineshape analysis can disentangle such multicomponent spectra (Figure 2B) and thus describe conformational equilibria (Altenbach and Budil, 2024). However, CW EPR spectra represent a convolution of spin label and protein dynamics (Mchaourab et al., 1996) and when spin label and protein motions occur on similar timescales, lineshape analysis is reaching its limits. In such cases, integrative analysis approaches incorporating molecular modeling will provide a possible alternative.\n\n## MD-based approaches for CW EPR analysis\n\nThe majority of integrative methods for the analysis of CW EPR data rely on MD simulations of spin-labeled proteins. MD-SLE (Figure 2C) approach combines short MD simulations with solving the SLE to analyze CW EPR data (Budil et al., 2006; Stoica, 2004). Short MD trajectories corrected for translation and rotation of the protein are assumed to describe only spin label motion. Such trajectories serve as inputs for SLE-solving lineshape analysis. Combining MD-SLE with high-field CW EPR experiments, where protein motions are assumed frozen, further validates the separate treatment of protein and spin label dynamics (Barnes et al., 1999).\n\nTwo other approaches construct simplified models of the spin labels dynamics from short MD trajectories, namely hindered Brownian dynamics (MD-HBD, Figure 2C) and hidden Markov models (MD-HMM). These methods generate long-scale stochastic trajectories of spin label dynamics. Stochastic trajectories are then used to compute the trajectory of magnetization, also known as free-induction decay (FID). From the FID, the CW EPR spectrum is reconstructed via Fourier transform (Martin et al., 2019; Steinhoff and Hubbell, 1996; Beier and Steinhoff, 2006; White et al., 2007; Sezer et al., 2008a; Sezer et al., 2009). Besides MD-HBD and MD-HMM, there is also the Direct-MD approach (Figure 2C), which is becoming increasingly popular. It models the magnetization trajectory from longer MD trajectories of spin-labeled proteins without employing stochastic modeling of spin label dynamics (Martin et al., 2019; Oganesyan, 2011; Tyrrell and Oganesyan, 2013).\n\nMD-HBD and MD-HMM have proven effective for calculating the CW EPR spectrum of small- and medium-sized proteins that adopt a single conformational state. However, modeling multiple conformations of large- and medium-sized proteins requires extensive MD simulations lasting several microseconds or longer. While this was still challenging a few years ago, the advent of GPU-based computing made such simulations available to a larger community. We suggest that MD-based approaches, which effectively sample the conformational states of spin labels, should be integrated with deep learning techniques, such as AlphaFold2, RoseTTAFold, or ESMFold (Jumper et al., 2021; Baek et al., 2021; Krishna et al., 2024; Jeliazkov et al., 2023), to enhance conformational sampling of proteins. Structural models of protein conformations produced by such neural networks should be validated and refined through replicas of MD simulations including spin labels and by comparison with experiments (Baek et al., 2021; Sala et al., 2023). To this end, the benefit of combining MD simulations with deep learning is twofold: providing experimentally validated all-atom structural information while assisting with the interpretation of complex CW EPR spectra.\n\nRosetta is a software toolbox with a wide range of applications, including molecular design, folding, docking, and modeling tools (Leman et al., 2020). Rosetta uses a library of protein fragments and employs Monte-Carlo assembly to construct structural models of protein conformations. These resulting models are then evaluated with a physics-based scoring function. RosettaNMR represents the first algorithms for the de novo prediction of protein structures, which integrated experimental NMR data. This was the basis for the development of the RosettaEPR. RosettaEPR integrates interspin distances into the modeling process, which are derived from exchange broadening via CW EPR of doubly spin-labeled protein (Alexander et al., 2008). The distance range accessible using this approach is limited to <~25 \u212b. Thus, it should be noted that each line-broadening analysis requires three CW EPR experiments. One experiment with the doubly spin-labeled mutant, and two experiments with each individual single mutant of the spin pair (Farrens et al., 1996; Rabenstein and Shin, 1995; Altenbach et al., 2001). In summary, RosettaEPR represents a computationally efficient approach for conformational modeling, which includes experimental data and does not require a structural template of the protein. However, in contrast to MD approaches, Rosetta does not allow for the observation of time-dependent conformational changes.\n\n## Integration of distance information derived from experimental DEER data\n\nPulsed dipolar spectroscopy (PDS) in combination with site-directed spin labeling (SDSL) gives access to distance distributions between two coupled spins. While several different PDS pulse sequences exist, the most commonly used method is 4-pulse deadtime-free DEER, for which recently application guidelines have been put forward (Pannier et al., 2000; Schiemann et al., 2021). Experimental DEER data consist of time-dependent spin echo intensities (dipolar evolution), which can be translated into interspin distance distributions. In addition to the dipolar interaction of intramolecular spins, DEER signals also contain intermolecular contributions (background), which must either be included in the analysis or subtracted a priori. Several different analysis methods have been developed, which are concisely reviewed in the following. A more detailed introduction including benchmark tests can be found elsewhere (Russell et al., 2022).\n\n## Model-free analysis\n\nModel-free analysis of DEER data presents a mathematically ill-posed problem that is typically addressed by Tikhonov regularization which essentially smooths the distance distribution. Adequate smoothness is typically chosen via the L-curve criterion of the regularization parameter, but other methods such as the Akaike information criterion corrected or the Bayesian information criterion exist, and determine the level of detail observed in the analyzed distance distributions (Edwards and Stoll, 2018). While a minimum width of distance peaks makes physical sense, taking into account the conformational entropy of the labels and the protein, the assumption of equal widths for all distance peaks is inconsistent with the heterogeneous picture of a conformational state (Figure 1). The evaluation of populations, one of the main virtues of DEER, is complicated because it requires a posteriori fitting of the distance distribution to a linear combination of parametric distributions with quantifiable area, such as Gaussians.\n\n## Model-based analyses\n\nModel-based analyses, such as Gaussian mixture models, assume that DEER distributions represent a superposition of individual distance peaks. Each peak has a specific shape that is described by parameters such as mean position, peak width, and amplitude. This approach dramatically reduces the number of fitting parameters during analysis and provides direct access to populations of individual peaks as well as confidence intervals of each fitting parameter. In addition, simultaneous (global) analysis of multiple DEER datasets of the same spin pair recorded under different conditions further increases the confidence in parameter values such as peak positions, populations, or background parameters (Hustedt et al., 2021; Jeschke et al., 2006; Khan et al., 2023).\n\nBoth Tikhonov regularization and parametric models are included in widely used software packages, such as the Python toolbox DEERlab or DeerAnalysis (F\u00e1bregas Ib\u00e1\u00f1ez et al., 2020; Stein et al., 2015). More recently, DEER analysis methods using deep learning have been developed. These tools include neural networks trained on a large dataset of synthetic DEER data (Worswick et al., 2018) and show comparable or even improved reliability (Casiraghi et al., 2024). The most prominent example is DeerNet, which is included in the DeerAnalysis2022 and Spinach software packages (ETH Zurich, 2023; Hogben et al., 2011).\n\nOne main challenge in interpreting DEER results is peak assignment. In principle, each distance peak is due to a specific protein and label conformation. Thus, if a peak appears shifted, for example under altered ligand conditions, the origin of this shift could be due to a change of the protein or label conformation, or a combination of both. One way to tackle this problem is to select surface-exposed spin labeling sites. This way, when the protein changes conformation, the ensemble of spin label rotamers remains unaffected. Surface exposure can be verified using CW EPR as the lineshape provides a sensitive monitor of spin label dynamics. Once this condition is met, the DEER analysis can be reduced to conformational states and populations of the protein, thus directly linking protein structure and thermodynamics.\n\nPDS methods such as DEER depend on two paramagnetic centers being in proximity, and thus can be used to evaluate and characterize protein oligomerization. Studies evaluating the monomer/dimer equilibrium, the dimer architecture, and functionality have been conducted all of which utilizing distance information and modulation depth parameters obtained from DEER experiments (Hilger et al., 2005; Bergdoll et al., 2018; Pliotas et al., 2012). In cases when more than two spins are present per nano-object, data analysis needs to be amended by power scaling to avoid artificial \u2018ghost distances\u2019 (Evans et al., 2020; von Hagens et al., 2013; Khan et al., 2023).\n\nNotably, membrane proteins are commonly investigated in a detergent solubilized form to prevent oligomer formation. Generally, the different properties of detergent and lipid molecules lead to altered spin label dynamics which are easily picked up by CW EPR (Flores Jim\u00e9nez et al., 2011). Interestingly, the changed label dynamics do not lead to dramatic structural alterations and the DEER distances in different systems are often quite similar. Obviously, this is not necessarily true for the position of conformational equilibria, which are often sensitive to the environmental parameters such as lipid or detergent composition (Van Eps et al., 2017).\n\n## Methods for simultaneous modeling of protein and spin label dynamics\n\nSeveral molecular modeling techniques have been developed to simulate the dynamics of proteins and spin labels. They provide atomistic models of protein conformations that can explain sparse DEER experimental data. Molecular modeling approaches simulate protein and spin labels either simultaneously (combining approaches) or separately (discriminating approaches).\n\nMost combining approaches (Figure 3B), such as restrained-ensemble MD (reMD), ensemble-biased metadynamics (EBMetaD), and bias-resampling ensemble refinement (BRER), steer MD simulations of spin-labeled proteins toward a conformational ensemble that accurately reproduces the experimental interspin distance distributions. This is achieved by introducing a scalable bias potential into the modeling system. The addition of a bias potential by these three approaches is based on the principle of maximum entropy. This principle implies the addition of a minimal bias to the MD simulation that is capable of bringing the modeled ensemble into agreement with the experiment (Pitera and Chodera, 2012). Biased MD simulations can use both full-atom and simplified (dummy) representations of spin labels (Figure 3A). In addition, in certain cases, such as distances between rigid spin labels, it may be feasible to simplify the system by modeling the unlabeled protein and replacing interspin distances with distances between C\u03b2 or C\u237a atoms (Hays et al., 2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99770/elife-99770-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Combining approaches simultaneously model the dynamics of both a protein and spin labels. Full-atom and dummy representations of spin labels are possible. (C, D) Discriminating approaches investigate conformations of a protein and spin labels separately. (A) Unbiased molecular dynamics (MD) simulations of a spin-labeled protein. (B) Biased MD approaches add biasing potential to the simulating system according to the principle of maximum entropy. The potential is gradually adjusted based on the degree of agreement between simulated and experimental data, including distance distributions (reMD, EBMetaD, and BRER) and echo decay time traces (restrained average dynamics, RAD). (C) Static approaches explore the conformations of either proteins (top) using statistical and physics-based methods, or spin labels (bottom) using accessible volume (AV, yellow arrows), rotamer library approach (RLA, dark blue arrows), and off-rotamer sampling (red arrows). (D) Dynamic discriminating approaches use MD-based techniques to investigate the conformational landscapes of either spin labels (left, CREST/MD) or a protein (right, unbiased MD). In the latter case, both full-atom and coarse-grained representations of the protein are possible.\n\nReMD (Figure 3B) performs a user-defined number of simulation replicas for the spin labels, while the rest of the system, including protein and solvent, is modeled only once. This method operates with a global bias potential that is distributed across all modeling replicas (Roux and Islam, 2013; Islam et al., 2013; Islam and Roux, 2015). In contrast, EBMetaD is a single-replica metadynamics-based approach designed to bias a user-defined variable, such as an interatomic distance, by incorporating an adjustable bias potential (Marinelli and Faraldo-G\u00f3mez, 2015; Hustedt et al., 2018). BRER simulates multiple replicas of the biased MD to adjust the ensemble distribution of a particular geometric property (e.g., interspin distance) to match the experimentally derived data (Hays et al., 2019). The restrained average dynamics (RAD) technique (Figure 3B) also follows the principle of maximum entropy. A key difference between RAD and reMD, EBMetaD or BRER is that MD simulations are directly driven by raw dipolar evolutions rather than distance distributions (Marinelli and Fiorin, 2019). In particular, RAD can model both single and multiple MD simulation replicas.\n\nChoosing a meaningful and effective bias potential, and analyzing biased MD simulations requires experience. Users with less experience in performing MD simulations with non-standard potentials may opt for unbiased MD methods instead (Figure 3A).\n\nIn principle, unbiased MD simulations (Figure 3A), can provide a representation of all protein conformations within the ensemble. Quantification of the individual conformations corresponding to the equilibrium populations in an experiment is difficult to access, especially for slow conformational transitions (Grossfield and Zuckerman, 2009; Sawle and Ghosh, 2016). Similar to biased MD simulations, both full-atom and dummy spin label representations are viable options for unbiased MD simulations (Islam et al., 2013). Unbiased MD simulations require more computational time than biased ones to overcome energy barriers between conformations (Figure 1). To enhance conformational sampling in unbiased MD simulations, multiple replicas starting from different geometries of both the protein and spin labels can be used. Another strategy is to implement different initial velocities in multiple MD replicas (Rice and Br\u00fcnger, 1994).\n\nTo set up a molecular model for conducting biased or unbiased MD simulations, including all-atom or dummy description of spin labels, we recommend the Charmm-GUI module called PDB Manipulator (Jo et al., 2014). In addition, the Charmm-GUI offers many options for constructing and parameterizing membrane proteins such as receptors and transporters in various lipid systems. Lipid mono- and bilayers, nanodiscs, micelles and bicelles, lipid hexagonal phase systems, are available. In each case, the lipid composition is customizable (Feng et al., 2023; Qi et al., 2019; Brown et al., 2024).\n\n## Methods for separate modeling of protein and spin label dynamics\n\nDiscriminating approaches model protein and spin label conformations independently using different methods. We divide discriminating approaches into static (Figure 3C) and dynamic ones (Figure 3D).\n\nStatic approaches (Figure 3C) rely on statistical data or physical knowledge to model new variants of molecular geometry and evaluate their reliability (score). Static approaches to modeling spin label conformations work with their full-atom representations during the sampling process. The rotamers of spin labels in the resulting sampled set can be represented by dummy or coarse-grained (CG) models. Static approaches to modeling spin labels include the rotamer library approach (RLA) with its modification called off-rotamer sampling, and the Monte-Carlo accessible volume (AV) sampling (Tessmer et al., 2022). Both RLA and off-rotamer sampling work with a pre-calculated rotamer library, while AV starts with a single spin label structure. In all three approaches, spin label structures are virtually attached to specific labeling sites on the protein structure. The crucial step is the selection of spin label conformations that do not lead to steric clashes (overlapping van der Waals radii) with protein atoms. The main result of all three methods is the ensemble of spin label conformations that can be reliably accommodated at selected label sites. The RLA approach is implemented in the MMM and RosettaEPR programs, and in Python packages such as DEER-PREdict and chiLife (Jeschke, 2018; Alexander et al., 2013; Tesei et al., 2021; Tessmer and Stoll, 2023). AV is implemented in MtsslWizard, mtsslSuite, PRONOX software, and chiLife (Tessmer and Stoll, 2023; Hagelueken et al., 2012; Hagelueken et al., 2013; Hatmal et al., 2012).\n\nStatic approaches to modeling protein conformations include statistics-based approaches (neural networks) and a physics-based approach. Neural networks for modeling protein conformations, such as AlphaFold3, AlphaFold2, RoseTTAFold2, ESMFold, OmegaFold, and EquiFold are becoming increasingly popular (Jumper et al., 2021; Jeliazkov et al., 2023; Abramson et al., 2024; Baek et al., 2023; Wu et al., 2022). The main reason is that neural networks allow the rapid generation of multiple and diverse conformational models in a short time. However, currently developed neural networks are not necessarily consistent with the laws of physics (Baek and Baker, 2022). Therefore, the results should be further refined using physics-based approaches, such as MD simulations, a dynamic approach that will be considered further, or the static approach implemented in the Rosetta toolkit (Leman et al., 2020). Rosetta\u2019s scoring function includes physics-based terms that ensure that the modeled conformations would better reproduce the real geometries. Protein conformations obtained by modeling with Rosetta can be integrated with the RLA approach for modeling spin label conformations described above. Note RosettaDEER, which uses a dummy representation of the rotamer library in its pipeline for efficient modeling of spin-labeled protein conformations in agreement with experimental data (Del Alamo et al., 2021).\n\nDynamic discriminating approaches combine methods that use MD simulations to explore the conformations of either the spin label or the protein (Figure 3D). One such technique for effectively modeling spin label conformations is CREST/MD. In a first step, the CREST software samples low-energy conformations of spin labels attached to the specific sites of the protein (Spicher et al., 2020; Pracht et al., 2020). It then performs multiple replicas of short equilibrating MD simulations of the protein labeled with the previously selected lowest energy spin label conformations. In this way, CREST/MD efficiently explores the conformational space of spin labels. Another group of dynamic discriminating approaches performs long MD simulations of an unlabeled protein. To enhance conformational sampling, simplified CG protein models with appropriate modeling parameters (force fields) can be used. In CG models, only a few particles represent each amino acid residue of the protein, which reduces the computational cost but also reduces the accuracy of the calculations (Monticelli et al., 2008). Modern CG force fields such as Martini 3 and SIRAH do not include parameters for spin labels (Souza et al., 2021; Klein et al., 2023). Thus, the simulation frames of the resulting MD trajectories must be supplemented with, for instance, the RLA approach to attach realistic spin label rotamers. Subsequently, spin\u2013spin distances are calculated, and the resulting distributions are compared with the DEER experiment (Wingler et al., 2019).\n\n## Outlook\n\nDistance distributions are the easiest way to integrate sparse EPR data into computational structural biology. Such distributions can be derived from different EPR approaches, in particular CW EPR line-broadening or PDS such as DEER, and compared directly with MD simulations. In this way, MD trajectories can provide us with atomistic structures and dynamics of protein conformations observed in experiment.\n\nThere are two major challenges in performing such MD simulations. First, as shown in Figure 1, protein conformations are often separated by high energy barriers, resulting in slow (\u00b5s to ms) transitions. This leads to high computational costs and very long simulation times (often weeks or months even on supercomputers), especially for unbiased MD simulations. The second challenge is to obtain reliable simulation parameters (force fields) for the attached spin labels. Force field parameterization is an active area of research with no general solutions yet. Existing tools may not be suitable for a particular task or may be closed source (Jo et al., 2014; Boothroyd et al., 2023). To address the first challenge, we propose to combine MD tools with deep learning approaches. Neural networks can provide a diverse set of protein conformations that serve as starting points for multiple independent and shorter MD replicas. This may improve the efficiency of conformational landscape sampling. The second challenge can be addressed in two ways: either by avoiding the need for parameterization altogether by using discriminating approaches (Figure 3C, D), or by exploring the literature-validated parameters of spin labels. Parameters exist for spin labels such as MTSSL, PROXYL-MTS, BtnRG-TP, Cu2+-nitrilotriacetic, and Cu2+-iminodiacetic acid (Sezer et al., 2008b; Qi et al., 2020; Bogetti et al., 2020). Alternatively, the parameters for the attached spin labels can be determined independently. In this case, special attention should be paid to the calculation of atomic charges (He et al., 2022). We propose the idea of a database of spin label parameters, compatible with commonly used force fields for proteins, and freely available to the research community.\n\nAn alternative method for modeling protein conformations uses DEER distances to guide the modeling process. Here, we refer here to rapidly developing deep learning methods, such as AlphaLink and AFEXplorer, which are capable of incorporating experimentally derived geometric constraints directly into the workflow (Stahl et al., 2023; Xie et al., 2023). Although originally developed for photo-crosslinking mass spectrometry data, AlphaLink can be adapted to DEER distance distributions as descriptors. Such neural networks sample the conformational landscape very efficiently, easily generating hundreds or more models. It is imperative to validate such conformational models using physics-based methods such as MD simulations.\n\nCurrently, the only method available to integrate CW EPR data with molecular modeling techniques is RosettaEPR (Alexander et al., 2008). It combines the results of EPR experiments performed on two single cysteine mutants and one double cysteine mutant to calculate interspin distance distributions. The main advantage of this approach is its applicability to physiologically relevant temperatures. Computational approaches that integrate the dynamic information encoded in CW EPR lineshapes with structural biology are still lacking. We suggest that data such as the Heisenberg exchange rate or heuristic accessibility (Altenbach et al., 1989; Altenbach et al., 2005) could be converted to accessible surface area, which then can be used as a sparse descriptor to bias deep learning methods such as AlphaFold3, AlphaFold2, RoseTTAFold2, and ESMFold (Jumper et al., 2021; Jeliazkov et al., 2023; Abramson et al., 2024; Baek et al., 2023). Another possible application of experimental CW EPR data is the filtering and validation of structural models predicted by neural networks or observed in MD simulations (Baek and Baker, 2022).\n\nIn summary, we highlight the potential applications of using sparse EPR data for atomistic modeling of protein conformations. We hope that this concise and high-level introduction to the field of integrative modeling using EPR constraints will help interested researchers from other research areas to incorporate these methods into their own research and further advance the field.\n",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6845feb1-8a80-4946-910b-60a6cac28653",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C1",
+      "claim": "Under physiological conditions, most proteins are highly dynamic, adopting various structures with distinct probabilities.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Under physiological conditions, most proteins are highly dynamic, adopting various structures with distinct probabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement reflects established scientific consensus about protein behavior under physiological conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ea13a9b8-1a26-4a65-8d0b-d04b8c8b67a8",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C2",
+      "claim": "A macrostate represents the global thermodynamic state of a protein defined by physical and (bio)chemical conditions such as temperature, pressure, chemical potential, type, and concentration of solutes or ligands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Following the nomenclature introduced by Frauenfelder et al., a macrostate represents the global thermodynamic state of a protein defined by the physical and (bio)chemical conditions, such as temperature, pressure, chemical potential, type, and concentration of solutes or ligands (Frauenfelder et al., 1991).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This definition is attributed to Frauenfelder et al., 1991, and represents established terminology in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "69f224e5-77d0-471f-a869-57dc30acc900",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C3",
+      "claim": "Conformational states are separated by barriers of several kT and interconvert on the timescale of microseconds to milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For example, conformational states (or simply conformations) are separated by barriers of several kT and thus interconvert on the timescale of microseconds to milliseconds.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This statement about energy barriers and timescales is presented as established knowledge, supported by the citation to Frauenfelder et al., 1991.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "824ba0c7-d968-448c-ba69-52371a1cc932",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C4",
+      "claim": "Within each conformational state, fluctuations which occur on the order of nanoseconds separate individual conformational substates.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Within each conformational state, fluctuations which occur on the order of nanoseconds separate individual conformational substates, while even faster transitions occur between statistical substates (Frauenfelder et al., 1991; Henzler-Wildman and Kern, 2007).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim about timescales of conformational substates is supported by citations to Frauenfelder et al., 1991 and Henzler-Wildman and Kern, 2007.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "00fdbf70-88bd-445e-a084-d4d381a5c5c0",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C5",
+      "claim": "Protein function is defined by the distribution of conformational states and their redistribution upon interaction with binding partners such as ligands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, protein function is defined by the distribution of conformational states, and their redistribution upon interaction with binding partners such as ligands (Figure 1).",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This represents a conceptual framework about protein function based on conformational dynamics, drawing from established understanding in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "afbc12b7-a516-4ed2-b861-ecbfaa624fc1",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C6",
+      "claim": "Even sparsely populated conformational states can rise to functional relevance and should be considered when a protein is targeted pharmacologically.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This functional framework entails that even sparsely populated conformational states can rise to functional relevance and thus should be considered when a protein is targeted pharmacologically.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a logical inference from the conformational landscape framework and has implications for drug design.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "19224fe9-ce27-4352-a0b1-a134530a772c",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C7",
+      "claim": "Minute amounts of active conformation lead to basal receptor activity in G-protein-coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source_text": "This was recently demonstrated for the most prominent pharmacological targets, G-protein-coupled receptors (GPCRs), where minute amounts of active conformation lead to basal receptor activity (Lerch et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This claim is supported by a specific citation to Lerch et al., 2020, which presumably contains experimental data demonstrating this phenomenon.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "9737f97c-2b88-401f-ab9b-ebdd66f860fc",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C8",
+      "claim": "Slow timescales (milliseconds and beyond) are still challenging to access using computational methods.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While various computational methods have been developed for the characterization of conformational landscapes, slow timescales (milliseconds and beyond) are still challenging to access.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects current limitations in computational structural biology, representing established knowledge about the state of the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "60e9e182-63b5-4875-8b91-225bf60952ae",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C9",
+      "claim": "X-ray diffraction structures provide high resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For instance, structures determined by X-ray diffraction provide high resolution, however, the conformational state most stable under crystal conditions may lack physiological relevance (Freed et al., 2010; Dasgupta et al., 1997; Rasmussen et al., 2011).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about X-ray crystallography capabilities, supported by multiple citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "213a9f5d-2914-4701-80fd-ffc05f092281",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C10",
+      "claim": "The conformational state most stable under crystal conditions may lack physiological relevance.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For instance, structures determined by X-ray diffraction provide high resolution, however, the conformational state most stable under crystal conditions may lack physiological relevance (Freed et al., 2010; Dasgupta et al., 1997; Rasmussen et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This limitation of X-ray crystallography is supported by three citations and represents known issues in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "d2a651be-f476-4541-84d7-85de897512aa",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C11",
+      "claim": "Many proteins exhibit flexible regions which prevent crystallization or diminish resolution.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Furthermore, the requirements of crystallization narrow the applicability of X-ray crystallography, because many proteins exhibit flexible regions which prevent crystallization or diminish resolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about limitations of X-ray crystallography related to protein flexibility.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "d0560dd8-5ba6-43dc-b5b3-40e04b7c732d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C12",
+      "claim": "Shortening of dynamic loops or insertion of highly soluble and rigid proteins can circumvent crystallization problems in membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is especially true for membrane proteins, where shortening of dynamics loops or insertion of highly soluble and rigid proteins circumvent this problem (Carpenter et al., 2008; Lacap\u00e8re et al., 2007; Ding et al., 2021; Thorsen et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This claim about strategies to enable crystallization is supported by four citations describing these approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "756a11b7-e43b-48f8-a1e4-282ac6233037",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C13",
+      "claim": "Cryo-EM may in principle directly explore conformational ensembles.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cryo-EM may in principle directly explore conformational ensembles, and rapid vitrification enables the characterization of macrostates (Glaeser, 2016; K\u00fchlbrandt, 2014; Yip et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This capability of cryo-EM is supported by three citations and represents established understanding of the technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "b6bced88-6030-4da0-b3f9-ffade98fa1d9",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C14",
+      "claim": "Freezing in cryo-EM may introduce bias toward specific conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Though freezing may still introduce bias toward specific conformations, cryo-EM is the most rapidly advancing method for investigating conformational ensembles of proteins (Twomey et al., 2015; Mehra et al., 2020; Bonilla and Kieft, 2022; Noble et al., 2018; Karplus and McCammon, 2002).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This limitation of cryo-EM is acknowledged alongside its advantages, supported by multiple citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "2466444a-f3de-4bb8-a35b-b739a2c34023",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C15",
+      "claim": "Cryo-EM is the most rapidly advancing method for investigating conformational ensembles of proteins.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Though freezing may still introduce bias toward specific conformations, cryo-EM is the most rapidly advancing method for investigating conformational ensembles of proteins (Twomey et al., 2015; Mehra et al., 2020; Bonilla and Kieft, 2022; Noble et al., 2018; Karplus and McCammon, 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This assessment of cryo-EM's development trajectory is supported by five citations and reflects current trends in structural biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "58d00f1b-d0a5-4517-85ad-47a13e0c74d2",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C16",
+      "claim": "Pairing individual structural models from cryo-EM with MD simulations has given valuable insight into the activation process of G proteins by an activated GPCR.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Pairing individual structural models from cryo-EM with MD simulations has recently given valuable insight into the activation process of G proteins by an activated GPCR (Papasergi-Scott et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This claim about a specific application is supported by a citation to Papasergi-Scott et al., 2023, which presumably contains the relevant data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "8176d5ff-6585-4571-82ff-9087cba47274",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C17",
+      "claim": "Most commonly used NMR methods effectively explore structural and dynamic features of small- and medium-sized proteins, typically up to 300 amino acid residues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Most commonly used NMR methods effectively explore structural and dynamic features of small- and medium-sized proteins, typically up to 300 amino acid residues (Clore and Gronenborn, 1991; Opella and Marassi, 2004; Kaptein and Wagner, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This limitation of NMR is supported by three citations and represents established knowledge about the technique's capabilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "586561a9-2609-40b8-b585-df927cadedb9",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C18",
+      "claim": "Site-specific fluorine NMR extends NMR capabilities to larger proteins and enables observation of dynamic events spanning from nanoseconds to seconds.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Site-specific fluorine NMR extends these capabilities to larger proteins, also enabling observation of dynamic events spanning from nanoseconds to seconds (Prosser and Alonzi, 2023; Danielson and Falke, 1996).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This claim about fluorine NMR capabilities is supported by two citations describing this technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "b7728ffd-e417-4efd-a09a-085d96f60d42",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C19",
+      "claim": "Computational integration of NMR data remains challenging due to the added difficulty of assigning resonances to specific residues.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Computational integration of NMR data remains challenging due to the added difficulty of assigning resonances to specific residues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents a known challenge in NMR spectroscopy and its computational analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "4995dc17-c190-4f66-8215-746cf7c71963",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C20",
+      "claim": "FRET detects conformational changes in the range of 30\u201380 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "FRET detects conformational changes in the range of 30\u201380 \u00c5 and, in combination with single particle analysis (smFRET), provides access to conformational heterogeneity and exchange dynamics (Ha, 2001; Agam et al., 2023; Gregorio et al., 2017; Zhao et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This distance range for FRET is supported by four citations and represents established knowledge about the technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ee9fcbc4-1c47-4266-88ad-e03c09a3cd80",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C21",
+      "claim": "FRET in combination with single particle analysis (smFRET) provides access to conformational heterogeneity and exchange dynamics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "FRET detects conformational changes in the range of 30\u201380 \u00c5 and, in combination with single particle analysis (smFRET), provides access to conformational heterogeneity and exchange dynamics (Ha, 2001; Agam et al., 2023; Gregorio et al., 2017; Zhao et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This capability of smFRET is supported by four citations describing applications of the technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "1f58d9b9-0254-4dad-977e-bf73b0a97b65",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C22",
+      "claim": "Fluorophores represent relatively large, flexible, and hydrophobic probes, which limits spatial resolution or may disturb the local structure and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, fluorophores represent relatively large, flexible, and hydrophobic probes, which limits spatial resolution or may disturb the local structure and dynamics (S\u00e1nchez-Rico et al., 2017; Peter et al., 2022).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This limitation of fluorophores is supported by two citations and represents known issues with FRET probes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "24acb348-1dc3-4958-8f61-dfffa3afca0c",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C23",
+      "claim": "EPR spectroscopy allows the investigation of protein dynamics across a broad range of timescales (from picoseconds to seconds or longer) with few restrictions on sample conditions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In this review, we focus on EPR spectroscopy, which allows the investigation of protein dynamics across a broad range of timescales (from picoseconds to seconds or longer) with few restrictions on sample conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the general capabilities of EPR spectroscopy, representing established knowledge about the technique.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "aec3c81d-adf7-4d5f-92cb-c8dd1e3b035a",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C24",
+      "claim": "Pulse EPR spectroscopy adds capabilities in terms of spatial resolution and accurate quantification of individual conformational states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The application of pulse EPR spectroscopy adds further capabilities in terms of spatial resolution and accurate quantification of individual conformational states.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes advantages of pulse EPR over continuous wave EPR, representing established knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "e9c9a342-7ed0-4c8c-83d1-82e1a051d6bc",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C25",
+      "claim": "Unpaired electrons are usually depleted during protein expression.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since unpaired electrons are usually depleted during protein expression, stable radicals need to be introduced for example via site-directed spin labeling in order to obtain an EPR signal (Torricella et al., 2021; Pierro and Drescher, 2023; Jana et al., 2023).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about the need for spin labeling in EPR, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "919b624c-a446-4c21-9655-62babbbc8cd6",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C26",
+      "claim": "Stable radicals need to be introduced via site-directed spin labeling in order to obtain an EPR signal.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Since unpaired electrons are usually depleted during protein expression, stable radicals need to be introduced for example via site-directed spin labeling in order to obtain an EPR signal (Torricella et al., 2021; Pierro and Drescher, 2023; Jana et al., 2023).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the standard approach for EPR studies of proteins, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "46d43bb2-0232-430a-9df3-47526149889b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C27",
+      "claim": "The CW EPR lineshape is highly sensitive to spin label dynamics on the 100 ps to 100 ns timescale which is strongly influenced by structure and dynamics of the protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The CW EPR lineshape (first derivative of the absorption spectrum) is highly sensitive to spin label dynamics on the 100 ps to 100 ns timescale which is strongly influenced by structure and dynamics of the protein (Hubbell et al., 1996; Campbell et al., 2022; Mchaourab et al., 1996; Fichou et al., 2019; Pierro et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the sensitivity of CW EPR to specific timescales, supported by five citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "349d6351-331e-4918-89fe-4d90bec416e8",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C28",
+      "claim": "Coexistence of several conformational states leads to superimposed, complex EPR spectra.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Coexistence of several conformational states leads to superimposed, complex EPR spectra.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a consequence of conformational heterogeneity on EPR spectra, representing established understanding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "9b58a0ce-eabc-4bd1-83ee-b7d04cf47563",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C29",
+      "claim": "The interpretation of CW EPR lineshapes remains challenging due to a large number of parameters.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While a comprehensive theory of spin label motion exists, the interpretation of CW EPR lineshapes remains challenging due to a large number of parameters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a known challenge in CW EPR analysis, representing current limitations in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c1e928b3-66c7-4742-beff-dc204f27ac48",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C30",
+      "claim": "When the selection of fitting parameters during lineshape analysis is ambiguous, statistical analysis becomes necessary to assess the likelihood of one parameter set over another.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In particular cases, when the selection of fitting parameters during lineshape analysis is ambiguous, statistical analysis becomes necessary to assess the likelihood of one parameter set over another (Francis et al., 2012; Etienne et al., 2023; Lindemann et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes an approach to address ambiguity in fitting, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "00169860-24e4-436d-8224-1bb1d2f9027d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C31",
+      "claim": "Power saturation CW EPR spectroscopy provides information on protein topology and is often combined with spin label scanning.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Further information on protein topology can be obtained via power saturation CW EPR spectroscopy, which is often combined with spin label scanning. Here, spin labels are introduced to successive sites along a sequence of amino acids and the influence of paramagnetic substances on the saturation behavior is evaluated (Altenbach et al., 1990; Hubbell et al., 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a specific EPR technique and its application, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "86c7e448-e299-4751-b2a2-c6b2c81bc895",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C32",
+      "claim": "Full sequence coverage with spin labels is desired to uncover even subtle changes in structure and dynamics of the protein segment of interest.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In general, full seqeunce coverage with spin labels is desired to uncover even subtle changes in structure and dynamics of the protein segment of interest.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents best practices in spin label scanning EPR studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "3e8111fa-3e80-4010-b563-801b0a229c1d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C33",
+      "claim": "Evaluating or comparing specific secondary structure models with different periodicities requires only a strongly reduced set of spin labeling sites.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, evaluating or comparing specific secondary structure models with different periodicities, such as \u03b1-helix or \u03b2-sheet, requires only a strongly reduced set of spin labeling sites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a practical consideration for experimental design in EPR studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f8df77d4-515e-4266-8c93-ffe4397d32a4",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C34",
+      "claim": "Saturation transfer (ST) EPR extends sensitivity to the timescales of microseconds to milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Saturation transfer (ST) EPR and time-resolved (TR) EPR represent two other methods utilizing continuous microwave radiation, extending sensitivity to the timescales of microseconds to milliseconds (Hyde and Dalton, 1972; Hyde and Thomas, 1973; Schwarz et al., 1990; Rayes et al., 2011)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the timescale sensitivity of ST EPR, supported by four citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "333dccf3-f7d0-4f8a-bf86-b63ccbc1ec78",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C35",
+      "claim": "Time-resolved (TR) EPR extends sensitivity to timescales from milliseconds to hours.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and millisecond to hours (Steinhoff et al., 1994; Farahbakhsh et al., 1993; Knierim et al., 2007), respectively.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the timescale sensitivity of TR EPR, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "e1001478-3415-4531-85f3-5300eabfab11",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C36",
+      "claim": "Four-pulse DEER captures interspin distances ranging from 1.5 to 8.0 nm, and even up to 16.0 nm in fully deuterated samples.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Four-pulse double electron\u2013electron resonance energy transfer (DEER), also known as pulsed electron\u2013electron double resonance (PELDOR), is a pulsed EPR spectroscopic technique usually performed on frozen solutions, in order to resolve distances between two spin labels at sub-Angstrom resolution. This method captures interspin distances ranging from 1.5 to 8.0 nm, and even up to 16.0 nm in fully deuterated samples (Peter et al., 2022; Jeschke, 2012).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes the distance range capabilities of DEER, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "42ef0b46-43a4-4d08-bf01-352119288b1f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C37",
+      "claim": "DEER experiments elegantly connect structure and thermodynamics of proteins by resolving the conformational ensemble in probability distance distributions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, DEER experiments elegantly connect structure and thermodynamics of proteins by resolving the conformational ensemble in probability distance distributions (Elgeti and Hubbell, 2021; Evans et al., 2020; Dawidowski and Cafiso, 2013; Wingler et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a key advantage of DEER for studying protein conformational ensembles, supported by four citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c3b7423d-71de-43c6-9b31-70a0c136c75e",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C38",
+      "claim": "DEER is the prime method for computational integration with structural biology.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This makes DEER the prime method for computational integration with structural biology which will be discussed in detail.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is an inference based on the capabilities of DEER described in the manuscript, particularly its ability to provide distance distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "92dce35c-8273-431d-a35c-b506afdbc4af",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C39",
+      "claim": "ENDOR is effective for revealing the structures of specific parts of protein molecules, achieving atomic-level accuracy in distances below 1.5 nm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ENDOR is effective for revealing the structures of specific parts of protein molecules, achieving atomic-level accuracy in distances below 1.5 nm (Lendzian et al., 1996).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes the capabilities of ENDOR, supported by a citation to Lendzian et al., 1996.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "d827d46d-40ac-4b6d-9baa-95c07971a58b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C40",
+      "claim": "Using fluorinated amino acids (19F-ENDOR), in particular in combination with Gadolinium spin labels, extends the upper distance limit to above 2 nm.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Recent work has demonstrated that using fluorinated amino acids (19F-ENDOR), in particular in combination with Gadolinium spin labels, extends the upper distance limit to above 2 nm (Bogdanov et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes a recent advancement in ENDOR capabilities, supported by a citation to Bogdanov et al., 2024.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "bc1f0894-a111-4c7f-99a9-f5a37266eb10",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C41",
+      "claim": "Integration of ENDOR with structural models has not been achieved yet.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Several computational methods have been developed to simulate ENDOR spectra, however, integration with structural models has not been achieved yet (Meyer et al., 2020; Meyer et al., 2022; Stoll and Schweiger, 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a current limitation in ENDOR analysis, supported by three citations about simulation methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "bcbd2aaf-5fdc-4d6e-b73f-001cc4a2e509",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C42",
+      "claim": "Saturation recovery EPR (SR EPR) enables the resolution of dynamic events on the low to intermediate microsecond timescale.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Lastly, saturation recovery EPR (SR EPR) represents another pulsed EPR technique used to gain insights into protein dynamics. It enables the resolution of dynamic events on the low to intermediate microsecond timescale which remains difficult to access with other methods (Bridges et al., 2010; Sarewicz et al., 2008; Yang et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the capabilities of SR EPR, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "4373f81e-d533-41ae-8b8c-dcb209662e05",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C43",
+      "claim": "No computational approaches for the structural integration of SR EPR have been developed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, so far no computational approaches for the structural integration of SR EPR have been developed.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a current gap in computational methods for EPR analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "5d0cbfb5-f54c-48ae-91cb-f8b13787aa8b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C44",
+      "claim": "The distance between the minimum and maximum of the CW EPR lineshape, the center linewidth \u03b4, is strongly related with the correlation time and order parameter of the observed motion.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Columbus and Hubbell showed that the distance between the minimum and maximum of the CW EPR lineshape, the center linewidth \u03b4 (Figure 2A), is strongly related with the correlation time and order parameter of the observed motion (Columbus and Hubbell, 2002).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes a relationship demonstrated by Columbus and Hubbell, supported by a citation to their 2002 work.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "396f03f2-b642-4b42-ba7f-a4e237358a1d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C45",
+      "claim": "The effective hyperfine splitting A'zz can be used to determine the correlation time or the polarity of spin label environment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Also, the effective hyperfine splitting A'zz, as assessed by the distance between the outer minima can be used to determine the correlation time or the polarity of spin label environment (Freed, 1976; Altenbach and Hubbell, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a parameter that can be extracted from CW EPR spectra, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "7d2d944c-9f4f-474d-91c7-95267e9d06fb",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C46",
+      "claim": "Most widely used models for the description of intermediate to slow spin label dynamics solve the stochastic Liouville equation (SLE) and assume microscopic order and macroscopic disorder (MOMD).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Most widely used models for the description of intermediate to slow spin label dynamics solve the stochastic Liouville equation (SLE) and assume microscopic order and macroscopic disorder (MOMD, Figure 2B; Meirovitch et al., 1984; Budil et al., 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the theoretical framework for CW EPR lineshape analysis, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c4e6bb57-7e14-4711-a029-0a8ff9bb57bc",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C47",
+      "claim": "Strongly correlated fitting parameters indicate that the complexity of the model should be reduced to avoid overfitting.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, while intricate motional models can be implemented, distinct parameter sets may result in equally good mathematical fits. To this end, strongly correlated fitting parameters indicate that the complexity of the model (i.e., number of parameters) should be reduced to avoid overfitting (Altenbach and Budil, 2024).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a principle for model selection in lineshape analysis, supported by a citation to Altenbach and Budil, 2024.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "897a28d7-31eb-4ae4-9750-b5fe1e68b090",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C48",
+      "claim": "Motion faster than 1 ns leads to complete averaging of anisotropic magnetic interactions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Motion faster than 1 ns leads to complete averaging of anisotropic magnetic interactions. This simplifies the analysis and an effective Hamiltonian can be used (Hubbell and McConnell, 1971).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a physical phenomenon in EPR spectroscopy, supported by a citation to Hubbell and McConnell, 1971.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ac5bddf9-e21e-458b-94ce-7b746aed9904",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C49",
+      "claim": "When a protein conformational change affects spin label dynamics sufficiently leading to distinct lineshapes, lineshape analysis can disentangle such multicomponent spectra and describe conformational equilibria.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, when a protein conformational change affects spin label dynamics sufficiently leading distinct lineshapes, lineshape analysis can disentangle such multicomponent spectra (Figure 2B) and thus describe conformational equilibria (Altenbach and Budil, 2024).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a capability of lineshape analysis for studying conformational equilibria, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c43c4c17-58ee-4795-93d5-880216e0b65f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C50",
+      "claim": "CW EPR spectra represent a convolution of spin label and protein dynamics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, CW EPR spectra represent a convolution of spin label and protein dynamics (Mchaourab et al., 1996) and when spin label and protein motions occur on similar timescales, lineshape analysis is reaching its limits.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a fundamental characteristic of CW EPR spectra, supported by a citation to Mchaourab et al., 1996.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "d410d917-b909-4b4d-b911-ef01af11a129",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C51",
+      "claim": "When spin label and protein motions occur on similar timescales, lineshape analysis is reaching its limits.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, CW EPR spectra represent a convolution of spin label and protein dynamics (Mchaourab et al., 1996) and when spin label and protein motions occur on similar timescales, lineshape analysis is reaching its limits.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference about the limitations of lineshape analysis based on the convolution of dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f216d832-038d-4c69-a2ba-d82435eb5ad8",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C52",
+      "claim": "MD-SLE approach combines short MD simulations with solving the SLE to analyze CW EPR data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The majority of integrative methods for the analysis of CW EPR data rely on MD simulations of spin-labeled proteins. MD-SLE (Figure 2C) approach combines short MD simulations with solving the SLE to analyze CW EPR data (Budil et al., 2006; Stoica, 2004).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a computational method for EPR analysis, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "cabf9996-165c-408e-92da-b1cf97de73fc",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C53",
+      "claim": "Short MD trajectories corrected for translation and rotation of the protein are assumed to describe only spin label motion.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Short MD trajectories corrected for translation and rotation of the protein are assumed to describe only spin label motion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes an assumption underlying the MD-SLE approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "83ed4960-680f-433a-8446-e88d369c71ca",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C54",
+      "claim": "Combining MD-SLE with high-field CW EPR experiments, where protein motions are assumed frozen, further validates the separate treatment of protein and spin label dynamics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Combining MD-SLE with high-field CW EPR experiments, where protein motions are assumed frozen, further validates the separate treatment of protein and spin label dynamics (Barnes et al., 1999).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes a validation approach for the MD-SLE method, supported by a citation to Barnes et al., 1999.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "0eb529de-e156-405d-922d-665a46748d5b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C55",
+      "claim": "MD-HBD and MD-HMM have proven effective for calculating the CW EPR spectrum of small- and medium-sized proteins that adopt a single conformational state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "MD-HBD and MD-HMM have proven effective for calculating the CW EPR spectrum of small- and medium-sized proteins that adopt a single conformational state.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the demonstrated capabilities of these computational methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "45fdb320-a19c-42b8-b042-7f8fe0152573",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C56",
+      "claim": "Modeling multiple conformations of large- and medium-sized proteins requires extensive MD simulations lasting several microseconds or longer.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, modeling multiple conformations of large- and medium-sized proteins requires extensive MD simulations lasting several microseconds or longer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes computational requirements for modeling conformational ensembles.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "8cf90c51-fe07-4edb-81fa-b8437a037f7d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C57",
+      "claim": "The advent of GPU-based computing made microsecond-scale MD simulations available to a larger community.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While this was still challenging a few years ago, the advent of GPU-based computing made such simulations available to a larger community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a technological advancement that has impacted computational structural biology.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "fbb06126-8426-4815-b012-a513592d1c16",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C58",
+      "claim": "RosettaEPR integrates interspin distances into the modeling process, which are derived from exchange broadening via CW EPR of doubly spin-labeled protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "RosettaEPR integrates interspin distances into the modeling process, which are derived from exchange broadening via CW EPR of doubly spin-labeled protein (Alexander et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes the RosettaEPR method, supported by a citation to Alexander et al., 2008.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "b319c623-3db0-45fa-acc7-cefbdae87e0c",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C59",
+      "claim": "The distance range accessible using the RosettaEPR approach is limited to <~25 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The distance range accessible using this approach is limited to <~25 \u00c5.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a limitation of the RosettaEPR method based on the exchange broadening phenomenon.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "4124a5be-591b-4b38-8dd2-36b11e474658",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C60",
+      "claim": "Each line-broadening analysis requires three CW EPR experiments: one with the doubly spin-labeled mutant, and two with each individual single mutant of the spin pair.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, it should be noted that each line-broadening analysis requires three CW EPR experiments. One experiment with the doubly spin-labeled mutant, and two experiments with each individual single mutant of the spin pair (Farrens et al., 1996; Rabenstein and Shin, 1995; Altenbach et al., 2001).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the experimental requirements for line-broadening analysis, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "b38e99ab-eaf5-49db-a3e4-a02c75a7c72b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C61",
+      "claim": "RosettaEPR represents a computationally efficient approach for conformational modeling which does not require a structural template of the protein.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In summary, RosettaEPR represents a computationally efficient approach for conformational modeling, which includes experimental data and does not require a structural template of the protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This summarizes the advantages of the RosettaEPR approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "bd960684-8be9-432d-b146-ba0331f1b365",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C62",
+      "claim": "In contrast to MD approaches, Rosetta does not allow for the observation of time-dependent conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, in contrast to MD approaches, Rosetta does not allow for the observation of time-dependent conformational changes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a limitation of Rosetta compared to MD simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f29268e3-2395-4d1b-b26c-86deee67a184",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C63",
+      "claim": "The most commonly used PDS method is 4-pulse deadtime-free DEER.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While several different PDS pulse sequences exist, the most commonly used method is 4-pulse deadtime-free DEER, for which recently application guidelines have been put forward (Pannier et al., 2000; Schiemann et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the most common PDS method, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "12e43458-74f6-4cac-8178-36b9960737f6",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C64",
+      "claim": "Experimental DEER data consist of time-dependent spin echo intensities (dipolar evolution), which can be translated into interspin distance distributions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Experimental DEER data consist of time-dependent spin echo intensities (dipolar evolution), which can be translated into interspin distance distributions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the nature of DEER data and how it is analyzed.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "e0467ddb-e22f-4f23-b35f-3732af399c78",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C65",
+      "claim": "DEER signals contain intermolecular contributions (background), which must either be included in the analysis or subtracted a priori.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition to the dipolar interaction of intramolecular spins, DEER signals also contain intermolecular contributions (background), which must either be included in the analysis or subtracted a priori.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a characteristic of DEER data that must be addressed during analysis.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "1bb47323-24ba-43dd-a8fd-4fcaaddb295d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C66",
+      "claim": "Model-free analysis of DEER data presents a mathematically ill-posed problem that is typically addressed by Tikhonov regularization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Model-free analysis of DEER data presents a mathematically ill-posed problem that is typically addressed by Tikhonov regularization which essentially smooths the distance distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the mathematical nature of DEER analysis and a common solution approach.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "8431847f-9d69-4720-a7ba-671c3a32e68a",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C67",
+      "claim": "The assumption of equal widths for all distance peaks in Tikhonov regularization is inconsistent with the heterogeneous picture of a conformational state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "While a minimum width of distance peaks makes physical sense, taking into account the conformational entropy of the labels and the protein, the assumption of equal widths for all distance peaks is inconsistent with the heterogeneous picture of a conformational state (Figure 1).",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference about a limitation of Tikhonov regularization based on the conformational landscape framework.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "93e055dd-48cb-4a10-b79e-54f26b9f3925",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C68",
+      "claim": "Model-based analyses such as Gaussian mixture models assume that DEER distributions represent a superposition of individual distance peaks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Model-based analyses, such as Gaussian mixture models, assume that DEER distributions represent a superposition of individual distance peaks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the underlying assumption of model-based DEER analysis approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f1ab024f-2763-4589-ba4b-ca1313a20c9a",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C69",
+      "claim": "Model-based analysis dramatically reduces the number of fitting parameters during analysis and provides direct access to populations of individual peaks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This approach dramatically reduces the number of fitting parameters during analysis and provides direct access to populations of individual peaks as well as confidence intervals of each fitting parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes advantages of model-based analysis over model-free approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "d4df9092-efab-426e-9c40-4f8c1dc8d10a",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C70",
+      "claim": "Simultaneous (global) analysis of multiple DEER datasets of the same spin pair recorded under different conditions further increases the confidence in parameter values.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In addition, simultaneous (global) analysis of multiple DEER datasets of the same spin pair recorded under different conditions further increases the confidence in parameter values such as peak positions, populations, or background parameters (Hustedt et al., 2021; Jeschke et al., 2006; Khan et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes an approach to improve confidence in DEER analysis, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "bf05f01c-c4a3-4b9b-a177-ab8801670efd",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C71",
+      "claim": "DEER analysis methods using deep learning show comparable or even improved reliability compared to traditional methods.",
+      "claim_type": "EXPLICIT",
+      "source_text": "More recently, DEER analysis methods using deep learning have been developed. These tools include neural networks trained on a large dataset of synthetic DEER data (Worswick et al., 2018) and show comparable or even improved reliability (Casiraghi et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes the performance of deep learning methods for DEER analysis, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "7543f473-6679-4723-a7a4-51218b657d91",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C72",
+      "claim": "One main challenge in interpreting DEER results is peak assignment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One main challenge in interpreting DEER results is peak assignment. In principle, each distance peak is due to a specific protein and label conformation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a fundamental challenge in DEER data interpretation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "045bc4dc-98ed-403a-b2d7-5bac9b3cb98f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C73",
+      "claim": "If a DEER peak appears shifted under altered ligand conditions, the origin could be due to a change of the protein or label conformation, or a combination of both.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Thus, if a peak appears shifted, for example under altered ligand conditions, the origin of this shift could be due to a change of the protein or label conformation, or a combination of both.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a logical inference about the possible origins of changes in DEER distance distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "5fcc637d-e173-403b-a925-18ab97b2dd45",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C74",
+      "claim": "Selecting surface-exposed spin labeling sites allows the ensemble of spin label rotamers to remain unaffected when the protein changes conformation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One way to tackle this problem is to select surface-exposed spin labeling sites. This way, when the protein changes conformation, the ensemble of spin label rotamers remains unaffected.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "evidence_reasoning": "This describes a strategy to simplify DEER data interpretation based on understanding of spin label behavior.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "9200d2f5-ec8f-4a5c-8e4e-84cd7eece11c",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C75",
+      "claim": "Surface exposure of spin labeling sites can be verified using CW EPR as the lineshape provides a sensitive monitor of spin label dynamics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Surface exposure can be verified using CW EPR as the lineshape provides a sensitive monitor of spin label dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes how CW EPR can be used to validate site selection for DEER experiments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "89778470-c030-4e4b-b741-f854c53270f1",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C76",
+      "claim": "PDS methods such as DEER can be used to evaluate and characterize protein oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "PDS methods such as DEER depend on two paramagnetic centers being in proximity, and thus can be used to evaluate and characterize protein oligomerization. Studies evaluating the monomer/dimer equilibrium, the dimer architecture, and functionality have been conducted all of which utilizing distance information and modulation depth parameters obtained from DEER experiments (Hilger et al., 2005; Bergdoll et al., 2018; Pliotas et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes an application of DEER to study oligomerization, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "97d37b22-1d3c-474a-9792-15e1823eb30d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C77",
+      "claim": "When more than two spins are present per nano-object, DEER data analysis needs to be amended by power scaling to avoid artificial 'ghost distances'.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In cases when more than two spins are present per nano-object, data analysis needs to be amended by power scaling to avoid artificial 'ghost distances' (Evans et al., 2020; von Hagens et al., 2013; Khan et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a necessary correction in DEER analysis for multi-spin systems, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "a30d9541-6bd0-4610-9d20-aae01df529c4",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C78",
+      "claim": "Membrane proteins are commonly investigated in a detergent solubilized form to prevent oligomer formation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, membrane proteins are commonly investigated in a detergent solubilized form to prevent oligomer formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a common practice in membrane protein studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "23577b9d-23c7-47e1-877f-16ea61f43383",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C79",
+      "claim": "The different properties of detergent and lipid molecules lead to altered spin label dynamics which are easily picked up by CW EPR.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Generally, the different properties of detergent and lipid molecules lead to altered spin label dynamics which are easily picked up by CW EPR (Flores Jim\u00e9nez et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes an effect of the membrane environment on spin label dynamics, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "01ac9614-113a-4ba0-b2d4-ed97792389ed",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C80",
+      "claim": "The changed label dynamics in different environments do not lead to dramatic structural alterations and the DEER distances in different systems are often quite similar.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Interestingly, the changed label dynamics do not lead to dramatic structural alterations and the DEER distances in different systems are often quite similar.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes an observation about the robustness of DEER distance measurements across different environments.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "0f8c743a-d861-480a-84a4-3144a0f6388c",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C81",
+      "claim": "The position of conformational equilibria are often sensitive to environmental parameters such as lipid or detergent composition.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Obviously, this is not necessarily true for the position of conformational equilibria, which are often sensitive to the environmental parameters such as lipid or detergent composition (Van Eps et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the sensitivity of conformational equilibria to environmental conditions, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "bdb9fdaa-5543-46c4-ae57-486eff5eecf4",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C82",
+      "claim": "Restrained-ensemble MD (reMD), ensemble-biased metadynamics (EBMetaD), and bias-resampling ensemble refinement (BRER) steer MD simulations toward a conformational ensemble that accurately reproduces experimental interspin distance distributions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Most combining approaches (Figure 3B), such as restrained-ensemble MD (reMD), ensemble-biased metadynamics (EBMetaD), and bias-resampling ensemble refinement (BRER), steer MD simulations of spin-labeled proteins toward a conformational ensemble that accurately reproduces the experimental interspin distance distributions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the general approach of these biased MD methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f249048d-866d-471d-b780-fd29bc2deeae",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C83",
+      "claim": "The addition of a bias potential by reMD, EBMetaD, and BRER is based on the principle of maximum entropy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is achieved by introducing a scalable bias potential into the modeling system. The addition of a bias potential by these three approaches is based on the principle of maximum entropy. This principle implies the addition of a minimal bias to the MD simulation that is capable of bringing the modeled ensemble into agreement with the experiment (Pitera and Chodera, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the theoretical basis for these biased MD approaches, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "bb6620c7-69a9-412d-a5e1-24235538cf1f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C84",
+      "claim": "ReMD performs a user-defined number of simulation replicas for the spin labels, while the rest of the system is modeled only once.",
+      "claim_type": "EXPLICIT",
+      "source_text": "ReMD (Figure 3B) performs a user-defined number of simulation replicas for the spin labels, while the rest of the system, including protein and solvent, is modeled only once. This method operates with a global bias potential that is distributed across all modeling replicas (Roux and Islam, 2013; Islam et al., 2013; Islam and Roux, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the specific implementation of reMD, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f5c23901-a617-45c3-bacd-263f55ecba8f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C85",
+      "claim": "EBMetaD is a single-replica metadynamics-based approach designed to bias a user-defined variable by incorporating an adjustable bias potential.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, EBMetaD is a single-replica metadynamics-based approach designed to bias a user-defined variable, such as an interatomic distance, by incorporating an adjustable bias potential (Marinelli and Faraldo-G\u00f3mez, 2015; Hustedt et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the specific implementation of EBMetaD, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ad447241-c91f-4174-9b92-cfa10c92b5e3",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C86",
+      "claim": "BRER simulates multiple replicas of the biased MD to adjust the ensemble distribution of a particular geometric property to match experimentally derived data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "BRER simulates multiple replicas of the biased MD to adjust the ensemble distribution of a particular geometric property (e.g., interspin distance) to match the experimentally derived data (Hays et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the specific implementation of BRER, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "578b30e3-dd86-41a3-8c10-0ac431b9caca",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C87",
+      "claim": "A key difference between RAD and reMD, EBMetaD or BRER is that MD simulations are directly driven by raw dipolar evolutions rather than distance distributions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The restrained average dynamics (RAD) technique (Figure 3B) also follows the principle of maximum entropy. A key difference between RAD and reMD, EBMetaD or BRER is that MD simulations are directly driven by raw dipolar evolutions rather than distance distributions (Marinelli and Fiorin, 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a distinguishing feature of RAD compared to other biased MD methods, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "1b3523e3-728e-420d-974f-a02d7269cddb",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C88",
+      "claim": "Unbiased MD simulations can provide a representation of all protein conformations within the ensemble.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In principle, unbiased MD simulations (Figure 3A), can provide a representation of all protein conformations within the ensemble.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the theoretical capability of unbiased MD simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ca9dbfbc-5343-4d20-8002-789dca2eac52",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C89",
+      "claim": "Quantification of individual conformations corresponding to equilibrium populations in an experiment is difficult to access with unbiased MD, especially for slow conformational transitions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Quantification of the individual conformations corresponding to the equilibrium populations in an experiment is difficult to access, especially for slow conformational transitions (Grossfield and Zuckerman, 2009; Sawle and Ghosh, 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a limitation of unbiased MD simulations, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "12949d71-5b34-44a7-80e2-0a0435daf396",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C90",
+      "claim": "Unbiased MD simulations require more computational time than biased ones to overcome energy barriers between conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Unbiased MD simulations require more computational time than biased ones to overcome energy barriers between conformations (Figure 1).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a computational cost difference between biased and unbiased MD approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "1de3c97a-d8a8-4b47-82ac-83de0cc419f4",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C91",
+      "claim": "The rotamer library approach (RLA) with off-rotamer sampling and Monte-Carlo accessible volume (AV) sampling are static approaches to modeling spin label conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Static approaches to modeling spin label conformations work with their full-atom representations during the sampling process. The rotamers of spin labels in the resulting sampled set can be represented by dummy or coarse-grained (CG) models. Static approaches to modeling spin labels include the rotamer library approach (RLA) with its modification called off-rotamer sampling, and the Monte-Carlo accessible volume (AV) sampling (Tessmer et al., 2022).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes different static approaches for modeling spin labels, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "e442b732-25d0-4a85-ad77-fa430ab45d5e",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C92",
+      "claim": "Both RLA and off-rotamer sampling work with a pre-calculated rotamer library, while AV starts with a single spin label structure.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both RLA and off-rotamer sampling work with a pre-calculated rotamer library, while AV starts with a single spin label structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a key difference between these static modeling approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "cbe66f01-ceda-4759-964a-aa56b0dd7567",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C93",
+      "claim": "The crucial step in static spin label modeling is the selection of spin label conformations that do not lead to steric clashes with protein atoms.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In all three approaches, spin label structures are virtually attached to specific labeling sites on the protein structure. The crucial step is the selection of spin label conformations that do not lead to steric clashes (overlapping van der Waals radii) with protein atoms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a key consideration in static spin label modeling approaches.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c5d9667f-e520-4b64-bcea-182cae8e22ed",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C94",
+      "claim": "Neural networks for modeling protein conformations such as AlphaFold3, AlphaFold2, RoseTTAFold2, ESMFold, OmegaFold, and EquiFold allow rapid generation of multiple and diverse conformational models.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Neural networks for modeling protein conformations, such as AlphaFold3, AlphaFold2, RoseTTAFold2, ESMFold, OmegaFold, and EquiFold are becoming increasingly popular (Jumper et al., 2021; Jeliazkov et al., 2023; Abramson et al., 2024; Baek et al., 2023; Wu et al., 2022). The main reason is that neural networks allow the rapid generation of multiple and diverse conformational models in a short time.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the capabilities of neural network-based protein structure prediction, supported by five citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c5c64cbd-0098-4ba6-918f-fedcd1175841",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C95",
+      "claim": "Currently developed neural networks for protein structure prediction are not necessarily consistent with the laws of physics.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, currently developed neural networks are not necessarily consistent with the laws of physics (Baek and Baker, 2022).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a limitation of neural network-based structure prediction, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "be62f70b-5c02-4d28-a635-0174fd000f9b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C96",
+      "claim": "Results from neural network structure prediction should be refined using physics-based approaches such as MD simulations or Rosetta.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Therefore, the results should be further refined using physics-based approaches, such as MD simulations, a dynamic approach that will be considered further, or the static approach implemented in the Rosetta toolkit (Leman et al., 2020).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is a recommendation based on the limitations of neural networks, with a citation to the Rosetta toolkit.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "87397f65-7b05-43b8-a5fb-21ec2a496472",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C97",
+      "claim": "CREST/MD efficiently explores the conformational space of spin labels by combining CREST software sampling with short equilibrating MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "One such technique for effectively modeling spin label conformations is CREST/MD. In a first step, the CREST software samples low-energy conformations of spin labels attached to the specific sites of the protein (Spicher et al., 2020; Pracht et al., 2020). It then performs multiple replicas of short equilibrating MD simulations of the protein labeled with the previously selected lowest energy spin label conformations. In this way, CREST/MD efficiently explores the conformational space of spin labels.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the CREST/MD approach, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ccdf88a7-6a71-410e-bfbe-69a3311f484f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C98",
+      "claim": "Simplified coarse-grained protein models can be used to enhance conformational sampling in MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another group of dynamic discriminating approaches performs long MD simulations of an unlabeled protein. To enhance conformational sampling, simplified CG protein models with appropriate modeling parameters (force fields) can be used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a strategy to improve computational efficiency in MD simulations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "f8e55191-c13c-4cce-8503-ab4088c9608d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C99",
+      "claim": "In coarse-grained models, only a few particles represent each amino acid residue of the protein, which reduces computational cost but also reduces accuracy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In CG models, only a few particles represent each amino acid residue of the protein, which reduces the computational cost but also reduces the accuracy of the calculations (Monticelli et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the trade-off in coarse-grained modeling, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "fccb2eb5-4d23-4b2d-be62-af2c3a12097b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C100",
+      "claim": "Modern coarse-grained force fields such as Martini 3 and SIRAH do not include parameters for spin labels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Modern CG force fields such as Martini 3 and SIRAH do not include parameters for spin labels (Souza et al., 2021; Klein et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a current limitation of coarse-grained force fields, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "e1362190-5bf5-4757-a8f5-6a531cbfff68",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C101",
+      "claim": "Protein conformations are often separated by high energy barriers, resulting in slow (\u00b5s to ms) transitions, which leads to high computational costs and very long simulation times.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There are two major challenges in performing such MD simulations. First, as shown in Figure 1, protein conformations are often separated by high energy barriers, resulting in slow (\u00b5s to ms) transitions. This leads to high computational costs and very long simulation times (often weeks or months even on supercomputers), especially for unbiased MD simulations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a major computational challenge in MD simulations of protein conformational changes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ad05fff6-4d83-4128-b18e-1523a656c02d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C102",
+      "claim": "The second major challenge in MD simulations is to obtain reliable simulation parameters (force fields) for the attached spin labels.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The second challenge is to obtain reliable simulation parameters (force fields) for the attached spin labels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes another major challenge in MD simulations of spin-labeled proteins.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "7bcbe2f9-afe0-403c-b327-eca941a64361",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C103",
+      "claim": "Force field parameterization is an active area of research with no general solutions yet.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Force field parameterization is an active area of research with no general solutions yet.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes the current state of force field development for spin labels.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "b9ddd018-ada3-42e7-80ef-82acf131a491",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C104",
+      "claim": "Parameters exist for spin labels such as MTSSL, PROXYL-MTS, BtnRG-TP, Cu2+-nitrilotriacetic, and Cu2+-iminodiacetic acid.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The second challenge can be addressed in two ways: either by avoiding the need for parameterization altogether by using discriminating approaches (Figure 3C, D), or by exploring the literature-validated parameters of spin labels. Parameters exist for spin labels such as MTSSL, PROXYL-MTS, BtnRG-TP, Cu2+-nitrilotriacetic, and Cu2+-iminodiacetic acid (Sezer et al., 2008b; Qi et al., 2020; Bogetti et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes available force field parameters for specific spin labels, supported by three citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "0dbf24c5-6237-4979-83b0-35c204e74315",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C105",
+      "claim": "Neural networks can provide a diverse set of protein conformations that serve as starting points for multiple independent and shorter MD replicas, which may improve the efficiency of conformational landscape sampling.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To address the first challenge, we propose to combine MD tools with deep learning approaches. Neural networks can provide a diverse set of protein conformations that serve as starting points for multiple independent and shorter MD replicas. This may improve the efficiency of conformational landscape sampling.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a proposed strategy for improving MD sampling efficiency, representing a speculative recommendation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "12d492b9-f854-48da-b963-79b41ac0b10f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C106",
+      "claim": "AlphaLink and AFEXplorer are capable of incorporating experimentally derived geometric constraints directly into the workflow.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An alternative method for modeling protein conformations uses DEER distances to guide the modeling process. Here, we refer here to rapidly developing deep learning methods, such as AlphaLink and AFEXplorer, which are capable of incorporating experimentally derived geometric constraints directly into the workflow (Stahl et al., 2023; Xie et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This describes the capabilities of these deep learning methods, supported by two citations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "05cf1705-9743-4280-98ec-72e691f65d3d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C107",
+      "claim": "AlphaLink was originally developed for photo-crosslinking mass spectrometry data but can be adapted to DEER distance distributions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although originally developed for photo-crosslinking mass spectrometry data, AlphaLink can be adapted to DEER distance distributions as descriptors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is an inference about the potential adaptability of AlphaLink to DEER data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "80bcdba6-7de1-44bf-9ca5-5432ac8b7f2c",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C108",
+      "claim": "It is imperative to validate conformational models from neural networks using physics-based methods such as MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Such neural networks sample the conformational landscape very efficiently, easily generating hundreds or more models. It is imperative to validate such conformational models using physics-based methods such as MD simulations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a recommendation based on the limitations of neural network predictions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "9d9c16da-9b7d-48a9-8cc8-016b385fc86e",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C109",
+      "claim": "Currently, the only method available to integrate CW EPR data with molecular modeling techniques is RosettaEPR.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Currently, the only method available to integrate CW EPR data with molecular modeling techniques is RosettaEPR (Alexander et al., 2008).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the current state of computational methods for CW EPR integration, with a citation to RosettaEPR.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "e50b5660-3e5c-4bc0-8adf-1165b4b74eb8",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C110",
+      "claim": "Computational approaches that integrate the dynamic information encoded in CW EPR lineshapes with structural biology are still lacking.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Computational approaches that integrate the dynamic information encoded in CW EPR lineshapes with structural biology are still lacking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This describes a current gap in computational methods for EPR integration.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "5ceddf4e-3c83-48f6-99bb-c00c9c3920cb",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C111",
+      "claim": "Data such as Heisenberg exchange rate or heuristic accessibility could be converted to accessible surface area and used as a sparse descriptor to bias deep learning methods.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We suggest that data such as the Heisenberg exchange rate or heuristic accessibility (Altenbach et al., 1989; Altenbach et al., 2005) could be converted to accessible surface area, which then can be used as a sparse descriptor to bias deep learning methods such as AlphaFold3, AlphaFold2, RoseTTAFold2, and ESMFold (Jumper et al., 2021; Jeliazkov et al., 2023; Abramson et al., 2024; Baek et al., 2023).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a speculative proposal for integrating CW EPR data with deep learning methods, with citations to relevant methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "3c24ebaa-9f4e-42d0-80d1-af267ea39709",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "claim_id": "C112",
+      "claim": "Experimental CW EPR data could be used for filtering and validation of structural models predicted by neural networks or observed in MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another possible application of experimental CW EPR data is the filtering and validation of structural models predicted by neural networks or observed in MD simulations (Baek and Baker, 2022).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "evidence_reasoning": "This is a proposed application of CW EPR data for model validation, supported by a citation.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c2ed36a6-f316-4d22-8e3a-2bfd50f9f70b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Proteins exist as dynamic conformational ensembles under physiological conditions, with different conformational states separated by energy barriers and interconverting on timescales from picoseconds to milliseconds. Protein function is defined by the distribution of these conformational states and their redistribution upon ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1-C5 collectively describe the conformational landscape framework for protein dynamics, supported by established knowledge and citations to foundational work (Frauenfelder et al., 1991; Henzler-Wildman and Kern, 2007). The hierarchical organization of protein states and their functional relevance represents well-accepted concepts in structural biology.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "384d65d7-78e6-49d2-bc85-a40618d4e30b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Sparsely populated conformational states can be functionally relevant and should be considered in drug design, as demonstrated by basal activity in GPCRs arising from minute amounts of active conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C6 presents a logical inference from the conformational landscape framework, while C7 provides experimental support through citation to Lerch et al., 2020, demonstrating this principle in GPCRs. The combination of conceptual framework and experimental validation supports this result.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "773f3e1c-efb7-491e-a64b-d40e55344ac7",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "Computational methods still face challenges in accessing slow timescales (milliseconds and beyond) for protein conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "This claim reflects established knowledge about current limitations in computational structural biology. The statement is consistent with known computational constraints and is presented as a motivation for integrative approaches combining computation with experiment.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "061ffe7e-2d2b-40ba-b5f5-27821ebc3901",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "X-ray crystallography provides high-resolution structures but has limitations including potential lack of physiological relevance of crystal conformations and difficulties with flexible proteins, particularly membrane proteins where engineering strategies are often required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C9-C12 describe well-established capabilities and limitations of X-ray crystallography, supported by multiple citations (Freed et al., 2010; Dasgupta et al., 1997; Rasmussen et al., 2011; Carpenter et al., 2008; Lacap\u00e8re et al., 2007; Ding et al., 2021; Thorsen et al., 2014). These represent accepted knowledge in structural biology.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "88eada9b-2d3b-49f3-8380-9a1d56cab470",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "Cryo-EM can directly explore conformational ensembles and is the most rapidly advancing method for investigating protein conformational ensembles, though freezing may introduce conformational bias. Integration with MD simulations has provided insights into GPCR-G protein activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C13-C16 describe cryo-EM capabilities and limitations supported by extensive citations (Glaeser, 2016; K\u00fchlbrandt, 2014; Yip et al., 2020; Twomey et al., 2015; Mehra et al., 2020; Bonilla and Kieft, 2022; Noble et al., 2018; Papasergi-Scott et al., 2023). The assessment of cryo-EM as rapidly advancing is supported by citation evidence and reflects current trends in the field.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "33ad1fa3-cee0-41ae-bf10-eb336e91119f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "NMR methods effectively explore structural and dynamic features of proteins up to ~300 residues, with site-specific fluorine NMR extending capabilities to larger proteins and broader timescales, though computational integration remains challenging due to resonance assignment difficulties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C17-C19 describe established capabilities and limitations of NMR spectroscopy, supported by citations (Clore and Gronenborn, 1991; Opella and Marassi, 2004; Kaptein and Wagner, 2015; Prosser and Alonzi, 2023; Danielson and Falke, 1996). The challenges in computational integration represent known issues in the field.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "288042bf-c878-4ad0-bf6f-8b656c70911b",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "FRET detects conformational changes in the 30-80 \u00c5 range and provides access to conformational heterogeneity through smFRET, but fluorophores are relatively large, flexible, and hydrophobic probes that may limit spatial resolution or perturb local structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C20-C22 describe FRET capabilities and limitations supported by multiple citations (Ha, 2001; Agam et al., 2023; Gregorio et al., 2017; Zhao et al., 2024; S\u00e1nchez-Rico et al., 2017; Peter et al., 2022). These represent established knowledge about FRET as a structural biology technique.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "b2d4399f-cf03-4da5-9666-165cf0ac1d12",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "EPR spectroscopy investigates protein dynamics across timescales from picoseconds to seconds with few sample restrictions. Pulse EPR adds spatial resolution and quantification capabilities. Site-directed spin labeling is required because unpaired electrons are depleted during protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C23-C26 describe fundamental aspects of EPR spectroscopy supported by citations (Torricella et al., 2021; Pierro and Drescher, 2023; Jana et al., 2023). These represent established knowledge about EPR capabilities and requirements for protein studies.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "dbd38f01-f26b-4ba5-8b56-b59cbf8a3b9d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "CW EPR lineshapes are sensitive to spin label dynamics on the 100 ps to 100 ns timescale influenced by protein structure and dynamics. Multiple conformational states produce complex superimposed spectra, and interpretation remains challenging due to numerous parameters, sometimes requiring statistical analysis to assess parameter likelihood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C27-C30 describe CW EPR characteristics and analysis challenges supported by multiple citations (Hubbell et al., 1996; Campbell et al., 2022; Mchaourab et al., 1996; Fichou et al., 2019; Pierro et al., 2020; Francis et al., 2012; Etienne et al., 2023; Lindemann et al., 2020). These represent established understanding of CW EPR spectroscopy.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "5bc80748-723b-4a3e-b8ba-4489482e3ff8",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "Power saturation CW EPR combined with spin label scanning provides protein topology information. Full sequence coverage is desired for detecting subtle structural changes, though evaluating specific secondary structure models requires only a reduced set of labeling sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C31-C33 describe power saturation EPR methodology and experimental design considerations supported by citations (Altenbach et al., 1990; Hubbell et al., 2003). These represent established practices in EPR spectroscopy.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "a136ad90-fd57-4c5b-ac9a-8e531456be7f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "Saturation transfer EPR and time-resolved EPR extend sensitivity to microsecond-to-millisecond and millisecond-to-hour timescales, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C34-C35 describe the timescale capabilities of ST EPR and TR EPR, supported by multiple citations (Hyde and Dalton, 1972; Hyde and Thomas, 1973; Schwarz et al., 1990; Rayes et al., 2011; Steinhoff et al., 1994; Farahbakhsh et al., 1993; Knierim et al., 2007). These represent established knowledge about these EPR techniques.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "5fb783cb-a5c6-4c58-a037-8a9018757ec5",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "Four-pulse DEER captures interspin distances from 1.5 to 8.0 nm (up to 16.0 nm in deuterated samples) and connects protein structure and thermodynamics through probability distance distributions, making it the prime method for computational integration with structural biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C36-C38 describe DEER capabilities supported by citations (Peter et al., 2022; Jeschke, 2012; Elgeti and Hubbell, 2021; Evans et al., 2020; Dawidowski and Cafiso, 2013; Wingler et al., 2019). The assessment of DEER as prime for computational integration (C38) is a reasonable inference based on its ability to provide quantitative distance distributions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c50610f0-3d13-4640-9bb9-2b51efb95ae1",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "ENDOR achieves atomic-level accuracy for distances below 1.5 nm, with recent advances using fluorinated amino acids and Gadolinium labels extending the range above 2 nm, though integration with structural models has not been achieved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C39-C41 describe ENDOR capabilities and limitations supported by citations (Lendzian et al., 1996; Bogdanov et al., 2024; Meyer et al., 2020; Meyer et al., 2022; Stoll and Schweiger, 2006). The statement about lack of structural integration represents an accurate assessment of current limitations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "1b2f6439-f7c6-4164-8df2-33863d28c8aa",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R14",
+      "result_type": "llm",
+      "result": "Saturation recovery EPR enables resolution of dynamic events on the low-to-intermediate microsecond timescale, but no computational approaches for structural integration have been developed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C42-C43 describe SR EPR capabilities and current limitations supported by citations (Bridges et al., 2010; Sarewicz et al., 2008; Yang et al., 2015). The statement about lack of computational integration methods represents an accurate assessment of the current state of the field.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "436aeabb-681d-4be9-8628-b3e61e192018",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R15",
+      "result_type": "llm",
+      "result": "Semi-empirical CW EPR analysis derives motional parameters from lineshape features including center linewidth \u03b4 and hyperfine splitting. Lineshape analysis typically uses stochastic Liouville equation models assuming MOMD, with model complexity requiring careful consideration to avoid overfitting. Motion faster than 1 ns simplifies analysis through complete averaging of anisotropic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C44-C48 describe established methods for CW EPR analysis supported by multiple citations (Columbus and Hubbell, 2002; Freed, 1976; Altenbach and Hubbell, 2015; Meirovitch et al., 1984; Budil et al., 2006; Altenbach and Budil, 2024; Hubbell and McConnell, 1971). These represent standard approaches in EPR spectroscopy.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "ca9e3c3f-0a30-433c-a03d-6b2fbccb8764",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R16",
+      "result_type": "llm",
+      "result": "Lineshape analysis can disentangle multicomponent spectra to describe conformational equilibria when protein conformational changes sufficiently affect spin label dynamics. However, CW EPR spectra represent a convolution of spin label and protein dynamics, and lineshape analysis reaches its limits when these motions occur on similar timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C49-C51 describe capabilities and limitations of lineshape analysis supported by citations (Altenbach and Budil, 2024; Mchaourab et al., 1996). The limitation when timescales overlap (C51) is a logical inference from the convolution of dynamics (C50).",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R17",
+      "result_type": "llm",
+      "result": "MD-based approaches for CW EPR analysis include MD-SLE, MD-HBD, and MD-HMM, which have proven effective for small-to-medium proteins in single conformational states. Modeling multiple conformations of larger proteins requires microsecond-scale simulations, which have become more accessible through GPU computing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C52-C57 describe MD-based EPR analysis methods supported by citations (Budil et al., 2006; Stoica, 2004; Barnes et al., 1999). The progression from capabilities to limitations to technological solutions represents a coherent assessment of the field's current state.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "3b5fb7f7-18c2-4694-bb02-11c345b2641e",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R18",
+      "result_type": "llm",
+      "result": "RosettaEPR integrates interspin distances from CW EPR line-broadening into conformational modeling, providing a computationally efficient approach that doesn't require structural templates but is limited to distances <~25 \u00c5 and requires three EPR experiments per distance constraint. Unlike MD approaches, Rosetta cannot observe time-dependent conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C58-C62 describe RosettaEPR capabilities and limitations supported by citations (Alexander et al., 2008; Farrens et al., 1996; Rabenstein and Shin, 1995; Altenbach et al., 2001). The characterization of advantages and limitations represents an accurate assessment of this method.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "416fb2fd-1f0d-48c6-b933-56b42b3d8250",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R19",
+      "result_type": "llm",
+      "result": "Four-pulse deadtime-free DEER is the most commonly used PDS method. DEER data consist of time-dependent spin echo intensities that can be translated into interspin distance distributions, with intermolecular background contributions requiring appropriate handling during analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C63-C65 describe fundamental aspects of DEER spectroscopy supported by citations (Pannier et al., 2000; Schiemann et al., 2021). These represent established knowledge about DEER data acquisition and analysis.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "1c1621fb-6633-4b8a-a55c-89c61322dfe5",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R20",
+      "result_type": "llm",
+      "result": "Model-free DEER analysis using Tikhonov regularization addresses the ill-posed problem of distance distribution extraction, but the assumption of equal peak widths is inconsistent with the heterogeneous nature of conformational states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C66 describes the mathematical nature of DEER analysis and standard solution approach (established knowledge). Claim C67 presents a valid criticism based on the conformational landscape framework established earlier in the manuscript, representing a logical inference about limitations of this approach.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "4af7e147-d6d9-4ff3-89db-2aec70209b69",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R21",
+      "result_type": "llm",
+      "result": "Model-based DEER analyses using parametric models dramatically reduce fitting parameters and provide direct access to populations and confidence intervals. Global analysis of multiple datasets increases confidence in parameters. Deep learning methods show comparable or improved reliability compared to traditional approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C68-C71 describe model-based DEER analysis approaches supported by citations (Hustedt et al., 2021; Jeschke et al., 2006; Khan et al., 2023; Worswick et al., 2018; Casiraghi et al., 2024). The advantages of these methods and performance of deep learning approaches are supported by cited evidence.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "16c12535-87c3-4aa5-8cdf-d645dda43500",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R22",
+      "result_type": "llm",
+      "result": "Peak assignment is a main challenge in DEER interpretation because distance peaks arise from specific protein and label conformations. Selecting surface-exposed labeling sites, verifiable by CW EPR, allows the spin label ensemble to remain unaffected by protein conformational changes, simplifying interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C72-C75 describe a fundamental challenge in DEER interpretation (established knowledge) and a practical strategy to address it. The strategy of using surface-exposed sites is a logical approach based on understanding of spin label behavior, and CW EPR verification is an established practice.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "75450a06-ba18-4c12-94d0-505f0548a94f",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R23",
+      "result_type": "llm",
+      "result": "DEER can evaluate and characterize protein oligomerization using distance information and modulation depth parameters. Multi-spin systems require power scaling corrections to avoid artificial ghost distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C76-C77 describe applications and technical considerations for DEER studies of oligomerization, supported by citations (Hilger et al., 2005; Bergdoll et al., 2018; Pliotas et al., 2012; Evans et al., 2020; von Hagens et al., 2013; Khan et al., 2023). These represent established practices in the field.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "0775b559-4113-4ebe-bf52-9a8c959cb4d5",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R24",
+      "result_type": "llm",
+      "result": "Membrane proteins are commonly studied in detergent-solubilized form to prevent oligomerization. Different detergent and lipid environments alter spin label dynamics detectable by CW EPR, but DEER distances often remain similar across systems. However, conformational equilibria are sensitive to environmental parameters like lipid or detergent composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C78-C81 describe practices and observations in membrane protein EPR studies supported by citations (Flores Jim\u00e9nez et al., 2011; Van Eps et al., 2017). The distinction between structural robustness and thermodynamic sensitivity represents important nuances in membrane protein studies.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "aae932bf-e521-45ad-80df-50b71efbe46e",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R25",
+      "result_type": "llm",
+      "result": "Biased MD approaches (reMD, EBMetaD, BRER, and RAD) steer simulations toward conformational ensembles reproducing experimental distance distributions using bias potentials based on maximum entropy principles. These methods differ in replica strategies and whether they use distance distributions or raw dipolar evolutions as restraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C82-C87 describe biased MD methods supported by citations (Pitera and Chodera, 2012; Roux and Islam, 2013; Islam et al., 2013; Islam and Roux, 2015; Marinelli and Faraldo-G\u00f3mez, 2015; Hustedt et al., 2018; Hays et al., 2019; Marinelli and Fiorin, 2019). These represent established computational approaches for integrating EPR data with MD simulations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c214a876-b2a5-4eef-8e35-7c68aa6df6bb",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R26",
+      "result_type": "llm",
+      "result": "Unbiased MD simulations can in principle represent all protein conformations within an ensemble, but quantifying equilibrium populations is difficult, especially for slow transitions. Unbiased MD requires more computational time than biased approaches to overcome energy barriers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C88-C90 describe capabilities and limitations of unbiased MD supported by citations (Grossfield and Zuckerman, 2009; Sawle and Ghosh, 2016). These represent established understanding of the trade-offs between biased and unbiased MD approaches.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "6636b16c-2f93-4608-9019-2b2287ed094d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R27",
+      "result_type": "llm",
+      "result": "Static approaches to modeling spin label conformations include RLA with off-rotamer sampling and Monte-Carlo AV sampling. RLA and off-rotamer sampling use pre-calculated rotamer libraries while AV starts with a single structure. All approaches require selection of conformations avoiding steric clashes with protein atoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C91-C93 describe static spin label modeling approaches supported by citation (Tessmer et al., 2022). These represent established methods for predicting spin label conformations in structural modeling.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "4c991f39-b4f4-4f9c-8de2-46de978b8d18",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R28",
+      "result_type": "llm",
+      "result": "Neural networks for protein structure prediction (AlphaFold3, AlphaFold2, RoseTTAFold2, ESMFold, OmegaFold, EquiFold) allow rapid generation of diverse conformational models, but are not necessarily consistent with physics laws and should be refined using physics-based approaches like MD simulations or Rosetta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C94-C96 describe capabilities and limitations of neural network structure prediction supported by citations (Jumper et al., 2021; Jeliazkov et al., 2023; Abramson et al., 2024; Baek et al., 2023; Wu et al., 2022; Baek and Baker, 2022; Leman et al., 2020). The recommendation for physics-based refinement is a reasonable inference from the identified limitations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c4a816f3-2189-4967-930f-9a6a082c7f2d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R29",
+      "result_type": "llm",
+      "result": "Dynamic discriminating approaches include CREST/MD for spin labels and coarse-grained MD for proteins. CREST/MD combines CREST sampling with short MD simulations. Coarse-grained models reduce computational cost but also accuracy, and current CG force fields lack spin label parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C97-C100 describe dynamic discriminating approaches supported by citations (Spicher et al., 2020; Pracht et al., 2020; Monticelli et al., 2008; Souza et al., 2021; Klein et al., 2023). These represent established methods and their current limitations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "7441ac4e-f9ea-4fdf-9321-cdde1aa6f9f6",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R30",
+      "result_type": "llm",
+      "result": "Major challenges in MD simulations include high energy barriers between conformations leading to slow transitions and long simulation times, and obtaining reliable force field parameters for spin labels. Force field parameterization remains an active research area, though parameters exist for several specific spin labels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C101-C104 describe fundamental challenges in MD simulations of spin-labeled proteins supported by citations (Sezer et al., 2008b; Qi et al., 2020; Bogetti et al., 2020). These represent well-recognized limitations in the field.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "c70f3250-6ee7-415e-b431-63bf371365f8",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R31",
+      "result_type": "llm",
+      "result": "Combining neural networks with MD simulations, where neural networks provide diverse starting conformations for multiple shorter MD replicas, may improve conformational landscape sampling efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claim C105 is explicitly presented as a proposal ('we propose') and speculation ('may improve') rather than demonstrated capability. While the strategy is reasonable, it represents a suggested future direction without supporting evidence of implementation or validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "70174d80-2c56-47ec-8f64-9af21d67c0cf",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R32",
+      "result_type": "llm",
+      "result": "Deep learning methods like AlphaLink and AFEXplorer can incorporate experimental geometric constraints into modeling workflows. AlphaLink, originally for crosslinking mass spectrometry, can be adapted to DEER data. Neural network models should be validated using physics-based methods like MD simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claim C106 describes capabilities of AlphaLink and AFEXplorer supported by citations (Stahl et al., 2023; Xie et al., 2023). Claims C107-C108 represent reasonable inferences about adaptability and validation needs based on the methods' characteristics and limitations discussed earlier.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "03bae580-ee7b-4c4e-8835-f00fe978ea37",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R33",
+      "result_type": "llm",
+      "result": "RosettaEPR is currently the only method available to integrate CW EPR data with molecular modeling. Computational approaches integrating dynamic information from CW EPR lineshapes with structural biology are still lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C109-C110 describe the current state of computational methods for CW EPR integration, with C109 supported by citation (Alexander et al., 2008). These represent accurate assessments of current capabilities and gaps in the field, consistent with the review's comprehensive survey of methods.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    },
+    {
+      "id": "a567d3c6-6f4c-45b8-b5d1-29267d6c2c5d",
+      "content_id": "9a15cd58-1037-485c-a296-b73601955835",
+      "result_id": "R34",
+      "result_type": "llm",
+      "result": "CW EPR data such as Heisenberg exchange rate or heuristic accessibility could be converted to accessible surface area for biasing deep learning methods, or used for filtering and validating structural models from neural networks or MD simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C111-C112 are explicitly presented as suggestions ('we suggest', 'could be', 'possible application') representing proposed future applications rather than demonstrated capabilities. While the proposals are reasonable based on the nature of the data, they lack supporting evidence of implementation or validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:21:32.578016Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6845feb1-8a80-4946-910b-60a6cac28653",
+      "result_id": "c2ed36a6-f316-4d22-8e3a-2bfd50f9f70b"
+    },
+    {
+      "claim_id": "ea13a9b8-1a26-4a65-8d0b-d04b8c8b67a8",
+      "result_id": "c2ed36a6-f316-4d22-8e3a-2bfd50f9f70b"
+    },
+    {
+      "claim_id": "69f224e5-77d0-471f-a869-57dc30acc900",
+      "result_id": "c2ed36a6-f316-4d22-8e3a-2bfd50f9f70b"
+    },
+    {
+      "claim_id": "824ba0c7-d968-448c-ba69-52371a1cc932",
+      "result_id": "c2ed36a6-f316-4d22-8e3a-2bfd50f9f70b"
+    },
+    {
+      "claim_id": "00fdbf70-88bd-445e-a084-d4d381a5c5c0",
+      "result_id": "c2ed36a6-f316-4d22-8e3a-2bfd50f9f70b"
+    },
+    {
+      "claim_id": "afbc12b7-a516-4ed2-b861-ecbfaa624fc1",
+      "result_id": "384d65d7-78e6-49d2-bc85-a40618d4e30b"
+    },
+    {
+      "claim_id": "19224fe9-ce27-4352-a0b1-a134530a772c",
+      "result_id": "384d65d7-78e6-49d2-bc85-a40618d4e30b"
+    },
+    {
+      "claim_id": "9737f97c-2b88-401f-ab9b-ebdd66f860fc",
+      "result_id": "773f3e1c-efb7-491e-a64b-d40e55344ac7"
+    },
+    {
+      "claim_id": "60e9e182-63b5-4875-8b91-225bf60952ae",
+      "result_id": "061ffe7e-2d2b-40ba-b5f5-27821ebc3901"
+    },
+    {
+      "claim_id": "213a9f5d-2914-4701-80fd-ffc05f092281",
+      "result_id": "061ffe7e-2d2b-40ba-b5f5-27821ebc3901"
+    },
+    {
+      "claim_id": "d2a651be-f476-4541-84d7-85de897512aa",
+      "result_id": "061ffe7e-2d2b-40ba-b5f5-27821ebc3901"
+    },
+    {
+      "claim_id": "d0560dd8-5ba6-43dc-b5b3-40e04b7c732d",
+      "result_id": "061ffe7e-2d2b-40ba-b5f5-27821ebc3901"
+    },
+    {
+      "claim_id": "756a11b7-e43b-48f8-a1e4-282ac6233037",
+      "result_id": "88eada9b-2d3b-49f3-8380-9a1d56cab470"
+    },
+    {
+      "claim_id": "b6bced88-6030-4da0-b3f9-ffade98fa1d9",
+      "result_id": "88eada9b-2d3b-49f3-8380-9a1d56cab470"
+    },
+    {
+      "claim_id": "2466444a-f3de-4bb8-a35b-b739a2c34023",
+      "result_id": "88eada9b-2d3b-49f3-8380-9a1d56cab470"
+    },
+    {
+      "claim_id": "58d00f1b-d0a5-4517-85ad-47a13e0c74d2",
+      "result_id": "88eada9b-2d3b-49f3-8380-9a1d56cab470"
+    },
+    {
+      "claim_id": "8176d5ff-6585-4571-82ff-9087cba47274",
+      "result_id": "33ad1fa3-cee0-41ae-bf10-eb336e91119f"
+    },
+    {
+      "claim_id": "586561a9-2609-40b8-b585-df927cadedb9",
+      "result_id": "33ad1fa3-cee0-41ae-bf10-eb336e91119f"
+    },
+    {
+      "claim_id": "b7728ffd-e417-4efd-a09a-085d96f60d42",
+      "result_id": "33ad1fa3-cee0-41ae-bf10-eb336e91119f"
+    },
+    {
+      "claim_id": "4995dc17-c190-4f66-8215-746cf7c71963",
+      "result_id": "288042bf-c878-4ad0-bf6f-8b656c70911b"
+    },
+    {
+      "claim_id": "ee9fcbc4-1c47-4266-88ad-e03c09a3cd80",
+      "result_id": "288042bf-c878-4ad0-bf6f-8b656c70911b"
+    },
+    {
+      "claim_id": "1f58d9b9-0254-4dad-977e-bf73b0a97b65",
+      "result_id": "288042bf-c878-4ad0-bf6f-8b656c70911b"
+    },
+    {
+      "claim_id": "24acb348-1dc3-4958-8f61-dfffa3afca0c",
+      "result_id": "b2d4399f-cf03-4da5-9666-165cf0ac1d12"
+    },
+    {
+      "claim_id": "aec3c81d-adf7-4d5f-92cb-c8dd1e3b035a",
+      "result_id": "b2d4399f-cf03-4da5-9666-165cf0ac1d12"
+    },
+    {
+      "claim_id": "e9c9a342-7ed0-4c8c-83d1-82e1a051d6bc",
+      "result_id": "b2d4399f-cf03-4da5-9666-165cf0ac1d12"
+    },
+    {
+      "claim_id": "919b624c-a446-4c21-9655-62babbbc8cd6",
+      "result_id": "b2d4399f-cf03-4da5-9666-165cf0ac1d12"
+    },
+    {
+      "claim_id": "46d43bb2-0232-430a-9df3-47526149889b",
+      "result_id": "dbd38f01-f26b-4ba5-8b56-b59cbf8a3b9d"
+    },
+    {
+      "claim_id": "349d6351-331e-4918-89fe-4d90bec416e8",
+      "result_id": "dbd38f01-f26b-4ba5-8b56-b59cbf8a3b9d"
+    },
+    {
+      "claim_id": "9b58a0ce-eabc-4bd1-83ee-b7d04cf47563",
+      "result_id": "dbd38f01-f26b-4ba5-8b56-b59cbf8a3b9d"
+    },
+    {
+      "claim_id": "c1e928b3-66c7-4742-beff-dc204f27ac48",
+      "result_id": "dbd38f01-f26b-4ba5-8b56-b59cbf8a3b9d"
+    },
+    {
+      "claim_id": "00169860-24e4-436d-8224-1bb1d2f9027d",
+      "result_id": "5bc80748-723b-4a3e-b8ba-4489482e3ff8"
+    },
+    {
+      "claim_id": "86c7e448-e299-4751-b2a2-c6b2c81bc895",
+      "result_id": "5bc80748-723b-4a3e-b8ba-4489482e3ff8"
+    },
+    {
+      "claim_id": "3e8111fa-3e80-4010-b563-801b0a229c1d",
+      "result_id": "5bc80748-723b-4a3e-b8ba-4489482e3ff8"
+    },
+    {
+      "claim_id": "f8df77d4-515e-4266-8c93-ffe4397d32a4",
+      "result_id": "a136ad90-fd57-4c5b-ac9a-8e531456be7f"
+    },
+    {
+      "claim_id": "333dccf3-f7d0-4f8a-bf86-b63ccbc1ec78",
+      "result_id": "a136ad90-fd57-4c5b-ac9a-8e531456be7f"
+    },
+    {
+      "claim_id": "e1001478-3415-4531-85f3-5300eabfab11",
+      "result_id": "5fb783cb-a5c6-4c58-a037-8a9018757ec5"
+    },
+    {
+      "claim_id": "42ef0b46-43a4-4d08-bf01-352119288b1f",
+      "result_id": "5fb783cb-a5c6-4c58-a037-8a9018757ec5"
+    },
+    {
+      "claim_id": "c3b7423d-71de-43c6-9b31-70a0c136c75e",
+      "result_id": "5fb783cb-a5c6-4c58-a037-8a9018757ec5"
+    },
+    {
+      "claim_id": "92dce35c-8273-431d-a35c-b506afdbc4af",
+      "result_id": "c50610f0-3d13-4640-9bb9-2b51efb95ae1"
+    },
+    {
+      "claim_id": "d827d46d-40ac-4b6d-9baa-95c07971a58b",
+      "result_id": "c50610f0-3d13-4640-9bb9-2b51efb95ae1"
+    },
+    {
+      "claim_id": "bc1f0894-a111-4c7f-99a9-f5a37266eb10",
+      "result_id": "c50610f0-3d13-4640-9bb9-2b51efb95ae1"
+    },
+    {
+      "claim_id": "bcbd2aaf-5fdc-4d6e-b73f-001cc4a2e509",
+      "result_id": "1b2f6439-f7c6-4164-8df2-33863d28c8aa"
+    },
+    {
+      "claim_id": "4373f81e-d533-41ae-8b8c-dcb209662e05",
+      "result_id": "1b2f6439-f7c6-4164-8df2-33863d28c8aa"
+    },
+    {
+      "claim_id": "5d0cbfb5-f54c-48ae-91cb-f8b13787aa8b",
+      "result_id": "436aeabb-681d-4be9-8628-b3e61e192018"
+    },
+    {
+      "claim_id": "396f03f2-b642-4b42-ba7f-a4e237358a1d",
+      "result_id": "436aeabb-681d-4be9-8628-b3e61e192018"
+    },
+    {
+      "claim_id": "7d2d944c-9f4f-474d-91c7-95267e9d06fb",
+      "result_id": "436aeabb-681d-4be9-8628-b3e61e192018"
+    },
+    {
+      "claim_id": "c4e6bb57-7e14-4711-a029-0a8ff9bb57bc",
+      "result_id": "436aeabb-681d-4be9-8628-b3e61e192018"
+    },
+    {
+      "claim_id": "897a28d7-31eb-4ae4-9750-b5fe1e68b090",
+      "result_id": "436aeabb-681d-4be9-8628-b3e61e192018"
+    },
+    {
+      "claim_id": "ac5bddf9-e21e-458b-94ce-7b746aed9904",
+      "result_id": "ca9e3c3f-0a30-433c-a03d-6b2fbccb8764"
+    },
+    {
+      "claim_id": "c43c4c17-58ee-4795-93d5-880216e0b65f",
+      "result_id": "ca9e3c3f-0a30-433c-a03d-6b2fbccb8764"
+    },
+    {
+      "claim_id": "d410d917-b909-4b4d-b911-ef01af11a129",
+      "result_id": "ca9e3c3f-0a30-433c-a03d-6b2fbccb8764"
+    },
+    {
+      "claim_id": "f216d832-038d-4c69-a2ba-d82435eb5ad8",
+      "result_id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5"
+    },
+    {
+      "claim_id": "cabf9996-165c-408e-92da-b1cf97de73fc",
+      "result_id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5"
+    },
+    {
+      "claim_id": "83ed4960-680f-433a-8446-e88d369c71ca",
+      "result_id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5"
+    },
+    {
+      "claim_id": "0eb529de-e156-405d-922d-665a46748d5b",
+      "result_id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5"
+    },
+    {
+      "claim_id": "45fdb320-a19c-42b8-b042-7f8fe0152573",
+      "result_id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5"
+    },
+    {
+      "claim_id": "8cf90c51-fe07-4edb-81fa-b8437a037f7d",
+      "result_id": "013a4dd7-7073-4510-9237-9c7c9e9a3dd5"
+    },
+    {
+      "claim_id": "fbb06126-8426-4815-b012-a513592d1c16",
+      "result_id": "3b5fb7f7-18c2-4694-bb02-11c345b2641e"
+    },
+    {
+      "claim_id": "b319c623-3db0-45fa-acc7-cefbdae87e0c",
+      "result_id": "3b5fb7f7-18c2-4694-bb02-11c345b2641e"
+    },
+    {
+      "claim_id": "4124a5be-591b-4b38-8dd2-36b11e474658",
+      "result_id": "3b5fb7f7-18c2-4694-bb02-11c345b2641e"
+    },
+    {
+      "claim_id": "b38e99ab-eaf5-49db-a3e4-a02c75a7c72b",
+      "result_id": "3b5fb7f7-18c2-4694-bb02-11c345b2641e"
+    },
+    {
+      "claim_id": "bd960684-8be9-432d-b146-ba0331f1b365",
+      "result_id": "3b5fb7f7-18c2-4694-bb02-11c345b2641e"
+    },
+    {
+      "claim_id": "f29268e3-2395-4d1b-b26c-86deee67a184",
+      "result_id": "416fb2fd-1f0d-48c6-b933-56b42b3d8250"
+    },
+    {
+      "claim_id": "12e43458-74f6-4cac-8178-36b9960737f6",
+      "result_id": "416fb2fd-1f0d-48c6-b933-56b42b3d8250"
+    },
+    {
+      "claim_id": "e0467ddb-e22f-4f23-b35f-3732af399c78",
+      "result_id": "416fb2fd-1f0d-48c6-b933-56b42b3d8250"
+    },
+    {
+      "claim_id": "1bb47323-24ba-43dd-a8fd-4fcaaddb295d",
+      "result_id": "1c1621fb-6633-4b8a-a55c-89c61322dfe5"
+    },
+    {
+      "claim_id": "8431847f-9d69-4720-a7ba-671c3a32e68a",
+      "result_id": "1c1621fb-6633-4b8a-a55c-89c61322dfe5"
+    },
+    {
+      "claim_id": "93e055dd-48cb-4a10-b79e-54f26b9f3925",
+      "result_id": "4af7e147-d6d9-4ff3-89db-2aec70209b69"
+    },
+    {
+      "claim_id": "f1ab024f-2763-4589-ba4b-ca1313a20c9a",
+      "result_id": "4af7e147-d6d9-4ff3-89db-2aec70209b69"
+    },
+    {
+      "claim_id": "d4df9092-efab-426e-9c40-4f8c1dc8d10a",
+      "result_id": "4af7e147-d6d9-4ff3-89db-2aec70209b69"
+    },
+    {
+      "claim_id": "bf05f01c-c4a3-4b9b-a177-ab8801670efd",
+      "result_id": "4af7e147-d6d9-4ff3-89db-2aec70209b69"
+    },
+    {
+      "claim_id": "7543f473-6679-4723-a7a4-51218b657d91",
+      "result_id": "16c12535-87c3-4aa5-8cdf-d645dda43500"
+    },
+    {
+      "claim_id": "045bc4dc-98ed-403a-b2d7-5bac9b3cb98f",
+      "result_id": "16c12535-87c3-4aa5-8cdf-d645dda43500"
+    },
+    {
+      "claim_id": "5fcc637d-e173-403b-a925-18ab97b2dd45",
+      "result_id": "16c12535-87c3-4aa5-8cdf-d645dda43500"
+    },
+    {
+      "claim_id": "9200d2f5-ec8f-4a5c-8e4e-84cd7eece11c",
+      "result_id": "16c12535-87c3-4aa5-8cdf-d645dda43500"
+    },
+    {
+      "claim_id": "89778470-c030-4e4b-b741-f854c53270f1",
+      "result_id": "75450a06-ba18-4c12-94d0-505f0548a94f"
+    },
+    {
+      "claim_id": "97d37b22-1d3c-474a-9792-15e1823eb30d",
+      "result_id": "75450a06-ba18-4c12-94d0-505f0548a94f"
+    },
+    {
+      "claim_id": "a30d9541-6bd0-4610-9d20-aae01df529c4",
+      "result_id": "0775b559-4113-4ebe-bf52-9a8c959cb4d5"
+    },
+    {
+      "claim_id": "23577b9d-23c7-47e1-877f-16ea61f43383",
+      "result_id": "0775b559-4113-4ebe-bf52-9a8c959cb4d5"
+    },
+    {
+      "claim_id": "01ac9614-113a-4ba0-b2d4-ed97792389ed",
+      "result_id": "0775b559-4113-4ebe-bf52-9a8c959cb4d5"
+    },
+    {
+      "claim_id": "0f8c743a-d861-480a-84a4-3144a0f6388c",
+      "result_id": "0775b559-4113-4ebe-bf52-9a8c959cb4d5"
+    },
+    {
+      "claim_id": "bdb9fdaa-5543-46c4-ae57-486eff5eecf4",
+      "result_id": "aae932bf-e521-45ad-80df-50b71efbe46e"
+    },
+    {
+      "claim_id": "f249048d-866d-471d-b780-fd29bc2deeae",
+      "result_id": "aae932bf-e521-45ad-80df-50b71efbe46e"
+    },
+    {
+      "claim_id": "bb6620c7-69a9-412d-a5e1-24235538cf1f",
+      "result_id": "aae932bf-e521-45ad-80df-50b71efbe46e"
+    },
+    {
+      "claim_id": "f5c23901-a617-45c3-bacd-263f55ecba8f",
+      "result_id": "aae932bf-e521-45ad-80df-50b71efbe46e"
+    },
+    {
+      "claim_id": "ad447241-c91f-4174-9b92-cfa10c92b5e3",
+      "result_id": "aae932bf-e521-45ad-80df-50b71efbe46e"
+    },
+    {
+      "claim_id": "578b30e3-dd86-41a3-8c10-0ac431b9caca",
+      "result_id": "aae932bf-e521-45ad-80df-50b71efbe46e"
+    },
+    {
+      "claim_id": "1b3523e3-728e-420d-974f-a02d7269cddb",
+      "result_id": "c214a876-b2a5-4eef-8e35-7c68aa6df6bb"
+    },
+    {
+      "claim_id": "ca9dbfbc-5343-4d20-8002-789dca2eac52",
+      "result_id": "c214a876-b2a5-4eef-8e35-7c68aa6df6bb"
+    },
+    {
+      "claim_id": "12949d71-5b34-44a7-80e2-0a0435daf396",
+      "result_id": "c214a876-b2a5-4eef-8e35-7c68aa6df6bb"
+    },
+    {
+      "claim_id": "1de3c97a-d8a8-4b47-82ac-83de0cc419f4",
+      "result_id": "6636b16c-2f93-4608-9019-2b2287ed094d"
+    },
+    {
+      "claim_id": "e442b732-25d0-4a85-ad77-fa430ab45d5e",
+      "result_id": "6636b16c-2f93-4608-9019-2b2287ed094d"
+    },
+    {
+      "claim_id": "cbe66f01-ceda-4759-964a-aa56b0dd7567",
+      "result_id": "6636b16c-2f93-4608-9019-2b2287ed094d"
+    },
+    {
+      "claim_id": "c5d9667f-e520-4b64-bcea-182cae8e22ed",
+      "result_id": "4c991f39-b4f4-4f9c-8de2-46de978b8d18"
+    },
+    {
+      "claim_id": "c5c64cbd-0098-4ba6-918f-fedcd1175841",
+      "result_id": "4c991f39-b4f4-4f9c-8de2-46de978b8d18"
+    },
+    {
+      "claim_id": "be62f70b-5c02-4d28-a635-0174fd000f9b",
+      "result_id": "4c991f39-b4f4-4f9c-8de2-46de978b8d18"
+    },
+    {
+      "claim_id": "87397f65-7b05-43b8-a5fb-21ec2a496472",
+      "result_id": "c4a816f3-2189-4967-930f-9a6a082c7f2d"
+    },
+    {
+      "claim_id": "ccdf88a7-6a71-410e-bfbe-69a3311f484f",
+      "result_id": "c4a816f3-2189-4967-930f-9a6a082c7f2d"
+    },
+    {
+      "claim_id": "f8e55191-c13c-4cce-8503-ab4088c9608d",
+      "result_id": "c4a816f3-2189-4967-930f-9a6a082c7f2d"
+    },
+    {
+      "claim_id": "fccb2eb5-4d23-4b2d-be62-af2c3a12097b",
+      "result_id": "c4a816f3-2189-4967-930f-9a6a082c7f2d"
+    },
+    {
+      "claim_id": "e1362190-5bf5-4757-a8f5-6a531cbfff68",
+      "result_id": "7441ac4e-f9ea-4fdf-9321-cdde1aa6f9f6"
+    },
+    {
+      "claim_id": "ad05fff6-4d83-4128-b18e-1523a656c02d",
+      "result_id": "7441ac4e-f9ea-4fdf-9321-cdde1aa6f9f6"
+    },
+    {
+      "claim_id": "7bcbe2f9-afe0-403c-b327-eca941a64361",
+      "result_id": "7441ac4e-f9ea-4fdf-9321-cdde1aa6f9f6"
+    },
+    {
+      "claim_id": "b9ddd018-ada3-42e7-80ef-82acf131a491",
+      "result_id": "7441ac4e-f9ea-4fdf-9321-cdde1aa6f9f6"
+    },
+    {
+      "claim_id": "0dbf24c5-6237-4979-83b0-35c204e74315",
+      "result_id": "c70f3250-6ee7-415e-b431-63bf371365f8"
+    },
+    {
+      "claim_id": "12d492b9-f854-48da-b963-79b41ac0b10f",
+      "result_id": "70174d80-2c56-47ec-8f64-9af21d67c0cf"
+    },
+    {
+      "claim_id": "05cf1705-9743-4280-98ec-72e691f65d3d",
+      "result_id": "70174d80-2c56-47ec-8f64-9af21d67c0cf"
+    },
+    {
+      "claim_id": "80bcdba6-7de1-44bf-9ca5-5432ac8b7f2c",
+      "result_id": "70174d80-2c56-47ec-8f64-9af21d67c0cf"
+    },
+    {
+      "claim_id": "9d9c16da-9b7d-48a9-8cc8-016b385fc86e",
+      "result_id": "03bae580-ee7b-4c4e-8835-f00fe978ea37"
+    },
+    {
+      "claim_id": "e50b5660-3e5c-4bc0-8adf-1165b4b74eb8",
+      "result_id": "03bae580-ee7b-4c4e-8835-f00fe978ea37"
+    },
+    {
+      "claim_id": "5ceddf4e-3c83-48f6-99bb-c00c9c3920cb",
+      "result_id": "a567d3c6-6f4c-45b8-b5d1-29267d6c2c5d"
+    },
+    {
+      "claim_id": "3c24ebaa-9f4e-42d0-80d1-af267ea39709",
+      "result_id": "a567d3c6-6f4c-45b8-b5d1-29267d6c2c5d"
+    }
+  ],
+  "comparisons": []
+}

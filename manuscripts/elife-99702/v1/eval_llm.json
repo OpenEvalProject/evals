@@ -1,0 +1,150 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C38",
+      "C40"
+    ],
+    "result": "AlphaFold2 structures are inadequate for docking type II kinase inhibitors targeting metastable DFG-out conformations. AF2 predominantly predicts DFG-in states (>95% of human kinases) and fails to dock type II inhibitors with ligand RMSDs >8 \u00c5 across multiple docking methods, while performing adequately for type I inhibitors (minimum RMSD 2.14 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C11 and C12 provide direct experimental evidence with quantitative RMSD measurements showing AF2's differential performance between type I and II inhibitors. Claims C1, C38, and C40 provide established knowledge context explaining why AF2 structures lack the metastable conformations needed for type II inhibitor binding. The data consistently demonstrate AF2's limitation for this application."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "rMSA AF2 generates diverse structural ensembles with variable success in capturing metastable DFG-out conformations across kinases. For DDR1, 1 out of 15 classical DFG-out structures successfully docked type II inhibitors (ponatinib RMSD 0.89 \u00c5, imatinib 1.04 \u00c5 with IFD-trim), while Abl1's rMSA ensemble failed to produce any classical DFG-out structures suitable for type II inhibitor docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C13-C21 provide comprehensive quantitative data on ensemble generation, structural analysis, and docking results. The differential success between DDR1 (containing one holo-like structure) and Abl1 (containing none) is well-documented with specific RMSD measurements and structural counts. The IFD-trim protocol modification for imatinib demonstrates methodological rigor in addressing steric clashes."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "AF2RAVE successfully enriches holo-like structures from rMSA AF2 ensembles through physics-based Boltzmann ranking. For DDR1, the method enriched the single holo-like structure from 1 in 15 to 1 in 2 (top structures with PMF <1 kJ/mol), with the holo-model ranking in the top 2 by umbrella sampling and top 5 by unbiased MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C24-C27 provide quantitative enrichment data with specific PMF values and rankings. Claim C22 demonstrates that SPIB coordinates have interpretable physical meaning (A-loop position and DFG type). Claim C25 provides orthogonal validation through DiffDock confidence scores. The consistency between umbrella sampling and unbiased MD approaches (C24, C27) strengthens confidence in the enrichment effect, though the authors acknowledge PMF value fluctuations with sampling setup."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "AF2-template homology modeling using DDR1 structures as templates successfully generates Abl1 classical DFG-out structures where rMSA AF2 and AF2-cluster failed. Physics-based ranking enriched 4 holo-like structures to the top 8 (unbiased MD) or top 6 (umbrella sampling) from 30 tAF2 structures, achieving docking RMSDs of 2.74 \u00c5 (imatinib) and 0.78 \u00c5 (ponatinib).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C28, C33, and C34 establish that both rMSA AF2 and AF2-cluster failed to generate classical DFG-out structures for Abl1. Claims C29-C32 provide quantitative evidence that AF2-template successfully addressed this limitation, with physics-based methods effectively enriching holo-like structures. The consistency between two independent PMF calculation methods (unbiased MD and umbrella sampling) strengthens the result, though the umbrella sampling required excluding windows with broken \u03b1C helix."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The AF2RAVE-Glide workflow is transferable to Src kinase, producing classical DFG-out structures using DDR1 templates that achieve a minimum docking RMSD of 2.82 \u00c5 with imatinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C35 and C36 provide direct evidence of transferability to a third kinase system. The successful generation of Src DFG-out structures using DDR1 templates and achievement of reasonable docking RMSD demonstrates the generalizability of the approach, though only limited data for Src is presented in the main text."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37"
+    ],
+    "result": "The AF2RAVE-Glide framework achieves >50% success rates for docking known type II kinase inhibitors to metastable conformations, increasing the ratio of holo-like structures in selected sets to 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C37 directly reports the 50% enrichment ratio based on Table 1 data. Claims C2 and C3 frame this as the main achievement of the framework. The quantitative data from DDR1 (1/2 top structures) and Abl1 (4/8 top structures) support this success rate, representing substantial improvement over unenriched ensembles (1/15 for DDR1, 4/30 for Abl1)."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Physics-based methods are necessary to assign accurate Boltzmann weights to AF2-generated ensembles because AF2-based methods produce structurally diverse ensembles that deviate significantly from correct Boltzmann distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C43 provides cited evidence that rMSA AF2 ensembles deviate from Boltzmann distributions. Claim C5 establishes the challenge of assigning weights to AI-generated structures. Claims C6, C45, and C46 describe how the AF2RAVE protocol addresses this through physics-based MD simulations and RAVE. The experimental results throughout the manuscript demonstrate the practical necessity of this approach for enriching holo-like structures."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Kinase inhibitor selectivity can be improved by targeting metastable conformations because the ~500 human kinases share highly conserved active site structures but differ in metastable states. Type I inhibitors target the active DFG-in state while type II inhibitors target the inactive classical DFG-out state, which differ in A-loop configuration and DFG motif orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C7-C10 present well-established knowledge about kinase structure and inhibitor classification, supported by appropriate citations. Claim C4 provides the rationale for targeting metastable states for selectivity, also supported by citation. These claims establish the biological and pharmacological context for the study and are consistent with established kinase biology literature."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "Prior work has shown that AF2 structures have limitations for virtual screening as rigid receptors but can be improved through various refinement approaches including ligand grafting with optimization, and that rMSA-like protocols can generate diverse pocket conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C39, C41, and C42 all cite prior published work to support their statements about AF2's performance and potential improvements. These claims accurately represent the cited literature and provide appropriate context for the current study's approach. The citations are specific and verifiable."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C47",
+      "C48"
+    ],
+    "result": "Integration of generative AI methods like AlphaFold2 with physics-based validation through MD simulations represents a promising approach for drug discovery, as AI predictions without careful testing may be hallucinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C44 and C48 represent forward-looking perspectives about future workflows rather than demonstrated results. Claim C47 makes a general cautionary statement about AI predictions. While the manuscript demonstrates one successful integration (AF2RAVE-Glide), these claims extrapolate to broader conclusions about the field. The speculative nature and lack of systematic comparison across multiple systems or targets limits the strength of evidence for these general statements."
+  }
+]

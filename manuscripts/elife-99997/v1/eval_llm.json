@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors demonstrate that brain dynamics during narrative comprehension are optimally characterized by three latent states with distinct spatial patterns (sensory-motor, bilateral temporal, and DMN regions). This tripartite organization was validated through model selection criteria, replicated across different parcellation schemes and datasets, and shown to be hierarchically reconstructable from more granular state models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C2, C3, C12-C17 provide converging evidence from multiple analyses (model selection, replication, hierarchical reconstruction) that consistently support a three-state organization. The finding is robust across different analytical approaches, parcellation schemes, and independent datasets (young and older adults), with high spatial (r=0.72-0.98) and temporal (>77%) correspondence in reconstruction analyses."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "State #2 functions as a transitional hub with preferential switching from States #1 and #3, occupies the most time (46.7% FO, 15.29s dwell time), and exhibits higher global efficiency and lower modularity than the other states, indicating enhanced functional integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C24-C32 provide multiple lines of converging evidence: transition probability analysis with permutation testing (>94.4% and >99.9% of null distribution), occupancy measures validated against surrogate data (>99.88%), and graph theoretical analyses showing significant differences in network topology (t>4.67, p<10^-4 for efficiency; t<-5.82, p<10^-6 for modularity). The statistical rigor and consistency across measures strongly support this result."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C11"
+    ],
+    "result": "The three brain states correspond to theoretical components of language faculty: State #1 (sensory-motor networks) to external sensory-motor module, State #2 (language and frontal-parietal networks) to basic linguistic component, and State #3 (DMN and frontal-parietal networks) to internal conceptual-intentional component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While claims C18, C20, C22 provide clear spatial characterizations from HMM data, the associations with language faculty components (C19, C21, C23) are inferred rather than directly demonstrated. The correspondence relies on spatial overlap with theoretical expectations (C11) but lacks direct causal or manipulative evidence linking specific states to specific language functions. This remains a plausible interpretation requiring further validation."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Brain states are selectively modulated by narrative properties at different timescales: State #1 by acoustic envelope, State #2 by word-level semantic coherence, and State #3 by clause-level semantic coherence, with correlations validated through permutation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C33-C40 provide statistical evidence for selective modulation with appropriate controls (FDR correction, permutation testing exceeding 99.28-99.8% of null distributions). However, the effect sizes are small (r\u22480.03), which the authors acknowledge is typical for fMRI studies. The selective pattern across states and the statistical validation support the result, though the modest effect sizes suggest these features explain only a portion of state dynamics."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Temporal alignment of brain state expression with best performers and group mean predicts narrative comprehension scores (r=0.31-0.51), and this relationship persists after controlling for head movement (a proxy for task engagement), while overall state occupancy does not predict comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C42-C50 demonstrate brain-behavior relationships with appropriate controls. The correlations are moderate and significant (r=0.27-0.51), persist after controlling for head movement confound (partial r=0.30-0.31 for States #1 and #2), and show specificity (timing matters but not overall occupancy, C49). The control for task engagement (C45-C48) strengthens the interpretation that alignment reflects cognitive processes rather than general attention."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The tripartite state organization is driven by language processing, as evidenced by State #2 serving as hub during both comprehensible and unintelligible speech (but not rest), and State #2 occupancy increasing monotonically with linguistic demands (rest < unintelligible < comprehension) while State #3 decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C51-C55 provide systematic evidence across three conditions with varying linguistic demands. The pattern is internally consistent: State #2 acts as hub during language conditions but not rest (C51-C52), and occupancy measures show monotonic relationships with linguistic processing demands (C53-C54). This cross-condition comparison effectively isolates language processing as the key driver of the observed state dynamics."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C14",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The tripartite state organization replicates across different brain atlases and generalizes to older adults, though some effects (clause-level modulation, brain-behavior correlations) do not replicate in the older adult sample, potentially due to age-related heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C7, C13-C14 demonstrate replication of the core three-state finding across parcellation schemes and age groups. The null findings in older adults (C65-C66) are appropriately acknowledged and explained by age-related heterogeneity with supporting evidence (C67-C68 showing lower ISC in older adults). The partial replication strengthens confidence in the core finding while appropriately noting boundary conditions."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C71",
+      "C72",
+      "C73",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "The study proposes that narrative comprehension arises from dynamic switching through a tripartite state space where each state serves specific language functions, with effective comprehension requiring timely engagement of states, providing a mechanistic account that reconciles modular and network approaches to brain function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C8-C9 and C71-C73, C78, C81-C82 represent high-level theoretical interpretations and syntheses of the empirical findings. While the data support dynamic state switching and timing-dependent behavioral relationships, the mechanistic claims about how states 'serve' specific functions and the reconciliation of theoretical frameworks are inferences that extend beyond what the correlational data directly demonstrate. These remain plausible interpretations requiring further causal validation."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study employed appropriate methods including 64 young adults (main dataset) and 30 older adults (replication), validated behavioral measures (inter-rater reliability r=0.74), state-of-the-art brain parcellation, and BERT-based semantic feature extraction with dimensionality reduction, with proper ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C57-C64, C74-C76 describe methodological details that are internally consistent and follow established practices. Sample sizes are reasonable for fMRI studies, behavioral measures show good reliability, and computational methods (brain parcellation, BERT embeddings, PCA) are appropriately cited and justified. Ethical procedures are documented (C74-C75)."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C56",
+      "C69",
+      "C70",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "The study is grounded in established theoretical frameworks about speech comprehension, dynamic brain function, language faculty architecture, and hierarchical timescales, with findings consistent with prior literature on brain activity patterns during language processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C10-C11, C56, C69-C70, C77, C79 appropriately cite and represent established knowledge from cognitive neuroscience and psycholinguistics. Claim C77 explicitly validates consistency with prior findings. Claim C80 is appropriately speculative about future applications. These background claims provide appropriate theoretical context for the empirical work."
+  }
+]

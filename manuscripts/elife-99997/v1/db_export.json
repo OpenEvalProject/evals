@@ -1,0 +1,2004 @@
+{
+  "submission": {
+    "id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:14:48.435241Z",
+    "updated_at": "2025-10-21T23:14:48.435241Z"
+  },
+  "content": [
+    {
+      "id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "content_type": "manuscript",
+      "content_text": "# Tripartite organization of brain state dynamics underlying spoken narrative comprehension\n\n## Authors\n\n- Lanfang Liu<sup>1</sup> ([ORCID: 0000-0002-1448-9009](https://orcid.org/0000-0002-1448-9009))\n- Jiahao Jiang<sup>3</sup> ([ORCID: 0000-0001-6335-391X](https://orcid.org/0000-0001-6335-391X))\n- Hehui Li<sup>4</sup> ([ORCID: 0000-0002-7315-3396](https://orcid.org/0000-0002-7315-3396))\n- Guosheng Ding<sup>3</sup> ([ORCID: 0000-0002-0065-6398](https://orcid.org/0000-0002-0065-6398)) \u2020\n\n### Affiliations\n\n1. https://ror.org/022k4wk35 Department of Psychology, School of Arts and Sciences, Beijing Normal University at Zhuhai Zhuhai China\n2. https://ror.org/022k4wk35 Faculty of Psychology, Beijing Normal University Beijing China\n3. https://ror.org/022k4wk35 State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University & IDG/McGovern Institute for Brain Research Beijing China\n4. https://ror.org/01vy4gh70 Center for Brain Disorders and Cognitive Sciences, School of Psychology, Shenzhen University Shenzhen China\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpeech comprehension involves the dynamic interplay of multiple cognitive processes, from basic sound perception, to linguistic encoding, and finally to complex semantic-conceptual interpretations. How the brain handles the diverse streams of information processing remains poorly understood. Applying Hidden Markov Modeling to fMRI data obtained during spoken narrative comprehension, we reveal that the whole brain networks predominantly oscillate within a tripartite latent state space. These states are, respectively, characterized by high activities in the sensory-motor (State #1), bilateral temporal (State #2), and default mode networks (DMN; State #3) regions, with State #2 acting as a transitional hub. The three states are selectively modulated by the acoustic, word-level semantic, and clause-level semantic properties of the narrative. Moreover, the alignment with both the best performer and the group-mean in brain state expression can predict participants\u2019 narrative comprehension scores measured from the post-scan recall. These results are reproducible with different brain network atlas and generalizable to two datasets consisting of young and older adults. Our study suggests that the brain underlies narrative comprehension by switching through a tripartite state space, with each state probably dedicated to a specific component of language faculty, and effective narrative comprehension relies on engaging those states in a timely manner.\n\n## Introduction\n\nWhen listening to a speech, one adaptively samples information from external sound streams, converting them to linguistic expressions stored in the mental lexicon, and integrating those mental expressions with the internalized \u2018mental world\u2019 to infer the semantic-pragmatic interpretations and intentions (Berwick et al., 2013). Crucially, those cognitive processes do not occur one after another in a fixed sequence, but are interwoven and occur in a fluid, dynamic manner. At one moment, you might detect the auditory cues such as volume and pitch in the speech. At another, you might recall memories or knowledge in relation to certain words just heard. To effectively understand the speech, you must flexibly and adaptively switch among those cognitive processes. The neural mechanism behind it is still elusive.\n\nAn emerging view suggests that flexible and adaptive cognitive functions arise from the dynamic brain, which transiently activates and coordinates distributed neural circuits in response to the changes in the external environment and internal demands (Honey et al., 2018; Kelso, 2012). To capture the complex neural dynamics occurring across large-scale systems of the brain, researchers have conceptualized the brain\u2019s activity as operating on a low-dimensional neural manifold. The dynamics of brain activity can then be modeled as a temporal trajectory within a latent state space, with each latent state characterized by a distinct pattern of brain activities and network connectivities (Langdon et al., 2023). Employing statistical techniques for modeling dynamic systems such as Hidden Markov Modeling (HMM), recent studies have begun to explore the brain dynamics involved in narrative comprehension (Baldassano et al., 2017; Song et al., 2021; Tang et al., 2023) or movie viewing (van der Meer et al., 2020; Song et al., 2023). It has been found that the whole brain systematically switches among a limited number of temporal clusters or latent states with distinct spatial features. Moreover, the switching of brain states was modulated by the time-varying stimuli features including event boundary (Baldassano et al., 2017) and movie annotations (van der Meer et al., 2020), and subjective experience including engagement (van der Meer et al., 2020), attention fluctuations (Song et al., 2023), emotional changes (Tan et al., 2022), and narrative integration (Song et al., 2021). Those findings demonstrate the functional relevance of brain state dynamics. Nevertheless, how neural state dynamics contribute to the different streams of cognitive processing that ebb and flow with the unfolding of speech is still elusive.\n\nIn this study, we explored how language comprehension arises from the dynamic interplay of large-scale brain networks. According to the psycholinguistic theory, the basic design of language faculty mainly comprises three modules (components): an external sensory-motor module, an internal conceptual-intentional module, and a basic linguistic module which represents mental expressions formed by syntactic rules and connects the other two modules (Berwick et al., 2013). Built upon this theory, we hypothesize that brain dynamics underlying narrative comprehensions would predominantly oscillate within a tripartite latent state space, with each latent state primarily dedicated to a specific component of language faculty. Furthermore, we hypothesize that effective speech comprehension would rely on engaging these states in a timely manner.\n\nTo test the above tripartite-state-space hypothesis, we collected fMRI data from 64 young adults as they listened to 10 min real-life narratives. The HMM was applied to model the dynamics of whole-brain network activities. We expect the dynamics of whole-brain network activities would be optimally characterized by three latent states with distinct activity patterns. Specifically, one state would mainly activate the auditory and sensory-motor areas, contributing to the perceptual analyses of external sound streams. The second state would mainly activate the language network and frontal-parietal network, contributing to linguistic encoding and information integration. The third state would mainly activate the default mode networks (DMN), contributing to internalized semantic-conceptual processing. Moreover, according to the proposed architecture of language components, we expect both the externally-oriented and internally-oriented states would be more likely to transit to the second state than directly transiting between each other. To further validate the functional nature of the three states, we investigated how the dynamic changes of state expression probabilities would be modulated by the temporal variation of speech properties. Three speech properties were analyzed, each reflecting progressively longer timescales of linguistic information: sound envelope, word-level semantic coherence, and clause-level semantic coherence. Based on previous findings that the timescales of information accumulation vary hierarchically from early sensory areas to higher-order areas (Hasson et al., 2015; Lerner et al., 2011), we expect the occurrence probabilities of three brain states would be selectively modulated by these speech properties corresponding to distinct timescales. Finally, to probe the behavioral significance of the timing of brain states, we examined whether the alignment of a participant with the best performer in the time courses of brain state expression could predict the participant\u2019s narrative comprehension score. To validate the robustness of the results, we also conducted all the analyses using a replication dataset consisting of older adults.\n\n## Results\n\n## The brain reliably and robustly switches through three latent states\n\nWe applied the HMM to infer hidden brain states in 64 participants as they listened to one of three 10 min narratives. The observed variables were BOLD signal time series of nine networks (Figure 1\u2014figure supplement 1) obtained employing a state-of-the-art technique for cortical network communities detection (Ji et al., 2019). Two criteria were comprehensively considered to determine the optimal number of latent states for the HMM. The first was the effectiveness of a model in capturing and separating patterns in the data, which was assessed by the clustering performance of the model. The second was the degree to which it aligned with prior knowledge about the data, which was evaluated by the model\u2019s ability to classify the three narratives. These dual criteria ensure that the selected model would be both statistically robust and cognitively sensible (Pohle et al., 2017).\n\nAcross a range of candidate models with K from 2 to 10, the model\u2019s clustering performance tended to decrease with larger K, whereas the accuracy in classifying narrative contents tended to increase. The model with K = 3 achieved the best overall performance, quantified by summed z scores (Figure 1). When applying a different whole-brain parcellation scheme (Yeo-7 Networks atlas) to extract the brain time series used for HMM inference, we also found the model with K = 3 to be the optimal (Figure 1\u2014figure supplement 2). Moreover, when examining the replication dataset wherein participants\u2019 age, narrative contents, as well as scanning duration differed substantially from those of the main dataset, we again found the model with K = 3 to be optimal (Figure 1\u2014figure supplement 2). The robustness of findings suggests the tripartite state space likely captured some fundamental processes of the brain involved in narrative comprehension.\n\nTo further establish that the above tripartite-state organization was not trivial, we examined whether the three states could be reconstructed from smaller, more transient states. To this end, we applied a hierarchical clustering algorithm to the transition probability matrix derived from HMM models with 4, 10, and 12 states, and obtained three clusters for each. Those model orders were examined since they have been reported to be the optimal number in previous studies (van der Meer et al., 2020; Song et al., 2021; Song et al., 2023; Vidaurre et al., 2017). In this approach, states assigned to the same cluster were more likely to switch within themselves than switching to states belonging to other clusters, and such clusters have been called metastates in the literature (Vidaurre et al., 2017). We then examined whether there was significant and exclusive correspondence between the clustered states and the three target states (from the HMM with K = 3). There was a clear and exclusive correspondence between clusters reconstructed from both the 4-state and 10-state models and the predefined target states in terms of activity patterns (r(6) ranges from 0.72 to 0.98) (Figure 1\u2014figure supplement 3). The timing of state expression was also well aligned between the reconstructed model and the target model (more than 77% overlap across a total of 19, 200 time points for 64 participants). For the 12-state model, we also found two reconstructed clusters resembling State #1 and State #3. Probe on the cluster that deviated most from the target states showed that it consisted of nine states, possibly capturing too many nuanced patterns of neural dynamics. Indeed, when splitting this \u2018big\u2019 cluster into two smaller ones, one of them demonstrated significant similarity to State#2 (r(7)=0.75) . These findings suggest the tripartite-state organization is not trivial, but likely reflect some fundamental processes of brain dynamics.\n\n## Three latent brain states have distinct spatial features\n\nFor each state, the HMM estimated its activity loadings on the nine networks and a functional connectivity matrix between these networks. We found the three latent states exhibited distinct activity patterns corresponding to the neural substrates for the three language components as suggested by the theory (Berwick et al., 2013). The first state (State #1) was characterized by relatively high activities in the auditory and somatomotor networks, along with low activities in the DMN and the cognitive control network (Figure 2). This state seems to be associated with the external sensory-motor module of language faculty. The second state (State #2) was characterized by relatively high activities in the language and the frontal-parietal networks whereas low activities in the somatomotor and auditory networks, seemingly being associated with the basic linguistic component. The third state (State #3) was characterized by relatively high activities in the DMN and frontal-parietal networks whereas low activities in the auditory and language networks, seemingly being associated with the internal conceptual-intentional component. We observed similar activity patterns of latent states when using the Yeo-7 network atlas for brain parcellation (Figure 2\u2014figure supplement 1), and in the replication dataset consisting of older adults (Figure 2\u2014figure supplement 2).\n\n## State #2 acts as a \u2018transitional hub\u2019 with high functional integration\n\nAccording to the linguistic theory, the module for linguistic representation is located in the middle of the external and internal modules, having direct interactions with the other two modules (Berwick et al., 2013). If the hypothesis that the three brain states were associated with each module of the language faculty holds, we expect that State #1 and State #3 would be more likely to switch to State #2 than switching directly to each other. Moreover, the brain occupied by State #2 would exhibit the highest degree of information integration.\n\nTo test the first prediction, we examined the between-state switching matrix inferred by the HMM, which showed the probabilities of a state at each timepoint transitioning to another or staying in the same state at the next timepoint. Consistent with our prediction, both State #1 and #3 were more likely to switch to State #2 than switching directly to each other, i.e., State #2 acted as a transitional hub. To confirm that this state-switching tendency was driven by meaningful processes rather than occurring by chance, we made surrogate data by having the nine-network time series circular shifted independently 1000 times. In each iteration, we carried out an HMM analysis with K = 3, and extracted the difference in transition probability if the inferred states exhibited a similar switching pattern as those from the experiment data. The results showed the differences in transition probabilities observed in our experiment, computed as P(State#1\u2192State#2)\uff0dP(State#1\u2192State#3) and P(State#3\u2192State#2)\uff0d P(State#3\u2192State#1), were respectively larger than 99.9% and 94.4% of instances from the surrogate data (Figure 2). In agreement with the between-state switching pattern, the brain spent most of the time on State #2 (mean FO = 46.7%), next on State #1 (mean FO = 29%) and the least on State #3 (mean FO = 24.3 %). The same pattern was found in the dwelling time, with a group mean of 15.29 s for State #2, 9.99 s for State #1, and 9.68 s for State #3. Both the FO and dwell time of State #2 were higher than 99.88% of instances in the surrogate data.\n\nTo test the second prediction, we applied the graph theoretical analyses to assess the global efficiency and modularity of the whole-brain networks when occupied by each of the three states. Consistent with our prediction, when occupied by State #2, the brain exhibited significantly higher global efficiency than when occupied by the other two states (t values >4.67, ps <10\u20134). An opposite pattern was found in network modularity (t values <\u20135.82, ps <10\u20136). These results indicate that, when occupied by State #2, the whole-brain networks were well connected to enable efficient information integration across distinct functional systems. In contrast, when occupied by State #1 and State #3, the whole-brain networks were well separated which enabled functional specialization. The findings were consistent whether using state-specific time series from individual participants to construct the FC matrix or taking the FC matrix derived from the HMM (Figure 2).\n\nThe between-state switching and topological properties are replicable using the different brain network parcellation schemes (Figure 2\u2014figure supplement 1) and generalizable to the replication dataset consisting of the older adults (Figure 2\u2014figure supplement 2).\n\n## Expression of brain states is selectively modulated by narrative properties\n\nTo more directly establish the association of the three brain states to the theoretical language modules, we investigated how the expression of brain states would be modulated by changes in the stimulus properties as the narrative progressed. Three distinct stimuli properties presumably reflecting an increasingly deeper level of information conveyed by the narrative were extracted, including speech envelope, word-level semantic coherence, and clause-level semantic coherence.\n\nSpeech envelope captures the smoothed, slow amplitude fluctuations of the speech signal over time, which is the perceptual property of the stimuli. We observed a consistent positive correlation between the speech envelope and the expression probability of State #1 across participants, with a group mean of 0.035. This correlation was significantly greater than zero (t(63) = 2.67, p = 0.009, FDR corrected) and surpassed 99.8% of the 5,000 instances from permutation tests where the state time courses were randomly circularly shifted, yielding a mean of \u22120.0005 (Figure 3). A similar effect was observed for State #2, with a group mean r=0.034 (t(63) = 2.61, p = 0.011, FDR corrected).\n\nWord-level semantic coherence was evaluated using cosine similarity between embedding vectors for each word and the preceding word. Among the three states, only the expression probability of State #2 showed a consistent correlation with word-level semantic coherence across participants, with a group mean of 0.030 (one-sample t-test against zero: t(63) = 2.48, p = 0.015, FDR corrected). This group\u2019s mean value was significantly greater than 99.28% of instances from permutation tests, which produced a mean r = 0.001.\n\nClause-level semantic coherence was evaluated using cosine similarity between embedding vectors for each clause and the preceding clause. Among the three states, only the expression probability of State #3 exhibited a consistent correlation with clause-level semantic coherence, with a group mean of 0.031 (one-sample t-test against zero: t(63) = 2.89, p = 0.005, FDR corrected). This group\u2019s mean value was significantly greater than 99.8% of instances from the permuted data, which yielded a mean r = 0.0001.\n\nWe noted that the correlation value between individual brain state dynamics and speech features was relatively low (group averaged r \u2248 0.03), which is also the case in previous studies (e.g. Fernandino et al., 2022; Oota et al., 2022). This low correlation is likely due to the high level of noise inherent in fMRI data. Brain activity fluctuations are shaped by a variety of factors, including task-related cognitive processing, internal thoughts, physiological states, as well as arousal and vigilance. Additionally, the speech features we measured may account for only a small portion of the cognitive processes underlying the task. As a result, the variance in speech features may only explain a limited portion of the overall variance in brain state fluctuations. Nonetheless, the brain-stimuli correlation achieves statistical significance, and is reproducible across different populations and narratives, providing robust support for the reliability of the results.\n\nIn sum, the selective modulation by the different aspects of narrative properties provides further evidence supporting the functional relevance of three latent brain states to different language components. These results are replicated with the different brain network atlas (Figure 3\u2014figure supplement 1). On the older-adult dataset, we also observed selective modulation effects of speech envelope on State #1 and word-level semantic coherence on State #2; however, no modulation effect of clause-level semantic coherence was found (Figure 3\u2014figure supplement 1).\n\n## Inter-subject correlation in brain state dynamics predicts task performance\n\nThe above results have demonstrated the functional relevance of the tripartite state space to narrative comprehension. Next, we tested the hypothesis that effective narrative comprehension would rely on engaging these states in a timely manner. To tackle this question, we measured the alignment of brain state fluctuation between each participant (except for the best performers) with that of the best performer(s). Then we used the inter-brain alignment index to relate to participants\u2019 comprehension scores, which were measured from the post-scan recall of the stories scored by two independent raters. The best performers were the ones (or those) who achieved the highest comprehension score within the subgroup of participants exposed to the same narrative. The rationale is that, if effective comprehension relies on the brain to turn into specific patterns at the right times, the best performer would demonstrate the most \u2018accurate\u2019 pattern. Consequently, participants whose brain state fluctuations deviated more (or less alignment) from the \u2018accurate\u2019 pattern were anticipated to perform less effectively in the task.\n\nAs anticipated, alignments with the best performers in both the State #1 and State #2 were significantly correlated with participants\u2019 comprehension scores (Pearson\u2019s r(54) = 0.31 and 0.37, respectively). A marginally significant correlation was also found in the alignment of State #3 (r(54) = 0.22, p = 0.10). We also examined participants\u2019 alignment with the group-mean time courses of brain state expression, which is supposed to represent the systematic response to the stimulus (Nastase and Gazzola, 2019). Even stronger correlations were found between individual-to-group alignments and comprehension scores in all three states (r(62) = 0.42, 0.51, 0.27 for State #1, #2, and #3, respectively; Figure 4).\n\nIn previous studies, the similarity of brain activities across subjects has usually been interpreted as reflecting the inter-subject similarity in the fluctuation of task engagement or attention (Nanni-Zepeda et al., 2024; Ohad and Yeshurun, 2023), which in turn may be associated with the individual similarity in task performance. We examined whether the above association of inter-subject alignment in brain states with behavior was merely an epiphenomenon of overall task engagement. It is well known that continuous self-reports on task engagement may severely disrupt the ongoing processing of prolonged naturalistic stimuli. As an alternative, studies have demonstrated that head movement serves as a reliable time-resolved indicator for task engagement, with greater task engagement accompanied by decreased movement (Ballenghein et al., 2019; Greipl et al., 2021; Kaakinen et al., 2018). Leveraging this, we computed inter-subject correlations (ISC) in the trajectory of head movement (quantified by framewise displacement) during the fMRI scanning as a proxy for inter-subject similarity in task engagement. Congruent with our assumption, similarities with the best performers in terms of head movement trajectory were indeed positively correlated with participants\u2019 comprehension scores (r(54) = 0.33, p = 0.01; Figure 4). After adjusting the effect of head movement by applying partial correlation, the positive correlations between the inter-brain alignment with the best performers and comprehension scores remained significant for State #1 (partial r(53) = 0.30, p = 0.03) and State #2 (partial r(53) = 0.31, p = 0.025), except for State #3 (partial r(53) = 0.12, p = 0.39). These findings suggest that the inter-subject alignments in brain states were unlikely merely the byproduct of shared levels of task engagement, but instead reflected the commonality in neural processes that directly influence narrative comprehension.\n\nAs a comparison, we investigated whether individual differences in the FO and dwell time of latent states were associated with individual differences in narrative comprehension. No significant result was found on any of the three states (r values <0.15, ps >0.23). Taken together, these findings suggest that timely engagement with specific brain states, rather than the overall magnitude of engagement in those states, is crucial for narrative comprehension.\n\nThese findings were replicable with a different scheme for brain network parcellation (Figure 4\u2014figure supplement 1). However, in the dataset of older adults, we did not find significant positive correlations between inter-subject alignment in brain states and narrative comprehension. This may be due to substantial heterogeneity among older adults. Despite engaging in the same task, older adults exhibit considerable inter-subject variation in cortical morphology, function, and brain metabolism (Yu, 2024). These factors can diminish the inter-subject correlation of brain state dynamics \u2014 indeed, ISCs among older adults were significantly lower than those among younger adults (Figure 4\u2014figure supplement 2) \u2014 and potentially reduce ISC\u2019s sensitivity to individual differences in task performance.\n\n## Comparison between conditions\n\nThe above results have revealed a tripartite latent space of whole-brain dynamics, with each state probably subserving a different cognitive component underlying narrative comprehension. Is this temporospatial organization a task-free, intrinsic organization of the dynamic brain, or mainly driven by language processing? To address this question, we compared the brain states involved in the narrative comprehension task with those of the same participants when they listened to an unintelligible narrative (told in Mongolian, MG) and during rest. Note, the involvement in linguistic computations decreased monotonically across the three conditions.\n\nHMMs with K = 3 were conducted separately for the resting and MG conditions. To establish correspondence between states in the resting and MG conditions with those in the task condition, we examined the correlation in network activities for each state identified in the rest/MG (treated as \u2018candidate state\u2019) with each of the three states identified in the task (treated as \u2018predefined state\u2019). The predefined state that a candidate state most closely resembled was designated as its matching state.\n\nFor the resting condition, two candidate states showed the highest similarity to State #2 in the task condition. The most similar candidate (r(7) = 0.778) was labeled as State #2. The other candidate was assigned to the predefined state (State #3) with the second-highest correlation, denoted with a prime symbol (State #3') to indicate this confusion. The last candidate state matched best with State #1 without any confusion. Analysis of the between-state transition matrix revealed that, unlike in the task condition, State #3 acted as the transitional hub in the resting condition (Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99997/elife-99997-fig5-v1.jpg)\n\n**Figure 5.:** (a) During the rest period, the activity patterns of latent states were similar to those during narrative comprehension, but State #3 became the transitional hub. (b) When listening to the unintelligible narrative (in Mongolian, MG), the activity patterns of latent states varied substantially from that during narrative comprehension, but State #2 was still the transitional hub. (c) The fractional occupation of State#2 increased with greater involvement in linguistic computations, while that of State#3 decreased. A similar pattern was found on the dwelling time of states. The error bars indicate standard error of the mean.\n\nFor the MG condition, two candidate states also showed the highest similarity to State #2. The most similar candidate (r(7) = 0.687) was labeled as State #2, while the other was labeled as State #1\u2019. The final candidate state best matched with State #3 without any ambiguity. Consistent with the task condition, State #2 served as the transitional hub under the MG condition (Figure 5b).\n\nNotably, the FOs of State #2 monotonically increased across the three conditions: resting < MG (incomprehensible speech) < task (narrative comprehension). In contrast, the FOs of the State #3 monotonically decreased: resting > MG > task (Figure 5c). A similar pattern was found on the dwelling time. These findings provide additional evidence supporting that State #2 was associated with linguistic computations, while State #3 was associated with internalized mental activities. Together, these results suggest that the tripartite latent space of whole-brain dynamics is mainly driven by language processing.\n\n## Discussion\n\nSpeech comprehension is a sophisticated cognitive task that requires the dynamic interplay of various processes, from basic sound perception to complex semantic-pragmatic interpretations, all of which are fluidly coordinated in real-time as the speech unfolds. Here, we explored how the brain transiently activates and coordinates distributed neural networks to support the diverse cognitive streams underlying spoken narrative comprehension. Applying HMM, we found that the brain reliably and robustly switched through three latent states, which were characterized respectively by high activities in the sensory-motor (State #1), bilateral temporal-frontal (State #2), and DMN (State #3) regions. Among them, State #2 occurred most frequently, acted as a \u2018transitional hub,\u2019 and was characterized by the highest level of functional integration. Furthermore, the three states were selectively modulated by the perceptual, word-level semantic, and clause-level semantic properties of the speech. Importantly, participants\u2019 alignments with both the best performers and the group-mean on the time courses of brain states expression predicted their narrative comprehension scores, indicating effective speech comprehension relies on engaging the specific brain states in a timely manner. Finally, by comparing the comprehension task with the resting and the unintelligible speech conditions, we demonstrated that the tripartite latent state space was mainly driven by language processing.\n\nA set of results convergently suggests that the tripartite state space is not incidental, but likely reflects a fundamental principle governing the brain dynamics underlying narrative comprehension. First, among a range of candidate models with the number of states ranging from 2 to 10, the model with K = 3 performed the best in terms of separating patterns in the data and decoding narrative contents, being both statistically robust and cognitively sensible. Second, the tripartite latent state space was replicable with different network atlas and generalizable to different datasets. Especially, despite that the two datasets vary substantially in terms of participants (young versus older adults), the contents of narratives, and data length, the two groups still exhibited highly similar brain temporal organization that was best captured by the three latent states. Moreover, the spatial and temporal patterns of the tripartite state space can be hierarchically reconstructed from more nuanced state patterns, being \u2018metastates\u2019 of the brain.\n\nIntriguingly, the characteristics of the three latent states align well with the theoretical framework concerning the basic design of language faculty (Berwick et al., 2013). The State #1, which was featured by relatively high activities in the auditory and somatomotor networks and more likely to occur when speech sounds were louder, probably corresponds to the external sensory-motor component of language faculty. State #2, which was featured by relatively high activities in the bilateral temporal and the frontal-parietal networks and more likely to occur when the inputting word was semantically related to the word immediately before it, probably corresponds to the basic linguistic component. State #3, which was featured by relatively high activities in the DMN and frontal-parietal networks and more likely to occur when the inputting clause was semantically related to the clause immediately before it, probably corresponds to the higher-level semantic-conceptual component. Moreover, State #2 acted as a transitional hub, with both State #1 and State #3 were more likely to switch to it than switching directly within them. This directed switching pattern was not incidental, as the observed discrepancy in switching probability was greater than in most instances from the surrogate data. Additionally, when occupied by State #2, whole brain networks exhibited a higher level of information integration (quantified by global efficiency) than when occupied by the other two states. These patterns are also consistent with the theoretical prediction that the basic linguistic module is located in the middle of the external and internal modules, having direct interactions with the other two. Collectively, these findings demonstrate the specific relationship between the tripartite brain latent states and three critical components of language cognition, going beyond the account of arousal or attentional fluctuation for brain state dynamics (van der Meer et al., 2020; Song et al., 2023; Taghia et al., 2018).\n\nThe activity patterns of the brain\u2019s latent states associated with each of the theoretical components of language faculty are consistent with the findings from earlier studies that have mainly focused on the averaged brain activities over time (Ferstl et al., 2008; Price, 2012). Extending prior work, our study may provide novel insights about how the different streams of cognitive processing are temporally organized with the unfolding of speech. Specifically, the time-varying probabilities of latent states indicate that the associated cognitive processes underlying speech comprehension may not operate in parallel with equal priority or occur one after another. Instead, while all processes are simultaneously engaged, one process dominates over others and this dominance changes over time, taking the form of mode-switching. This is consistent with the emerging view that internal/external switching processes of neural circuits drive learning (Honey et al., 2018). Furthermore, we found it was the alignment with the best performer (and the group-mean) in the time courses of state expression, rather than the overall occupancy of latent states, that positively correlated with participants\u2019 task performance, suggesting recruiting these states in a timely manner is the key to effective speech comprehension. These findings may provide a useful guide to understand the development of language ability as well as language disorders.\n\nOur study provides a unifying perspective for two prevailing approaches aiming to understand how the brain produces cognition. The modular approach postulates the brain areas to act as independent processors for a specific aspect of complex cognitive functions, contributing to much of our current knowledge of the relationship between the brain and behavior. However, this approach has been criticized for ignoring the multifunctionality of brain structures (Fuster, 2000). Alternatively, the network approach, which has been growing rapidly in recent years, posits that cognitive functions arise from dynamic interactions within and between distributed brain systems (Bressler and Menon, 2010). While revealing valuable insights into the operation rules of the brain, the network approach seems to only provide a general descriptive model. It lacks a mechanism that accounts for how the interactions of large-scale brain networks give rise to the different streams of information processing involved in a cognitive task. Here, by demonstrating the multistability of large-scale brain networks and establishing the close relationship between specific latent states to specific language components, our study raises a hypothesis that could reconcile the modular and the dynamic network approaches to understand the brain function. Specifically, for a given task, the brain follows modular organization where different regions specialize in specific functions. However, the importance of these regions dynamically changes in response to external environment and internal demands. Accordingly, goal-directed behaviors arise from the precise temporal coordination of different functional modules (Vyas et al., 2020). To test this possibility, future studies could combine fMRI and neuroregulation techniques and assess the change in state dynamics and behavioral performance as a result of an intervention.\n\n## Conclusion\n\nIn sum, our study reveals that the brain involved in narrative comprehension predominantly oscillates within a tripartite latent state space. The spatial and topological characteristics of these states correspond well to the three core components of language faculty as specified in the theory (Berwick et al., 2013). Moreover, we demonstrate that effective speech comprehension relies on engaging these brain states in a timely manner. These results are largely reproducible with different brain network parcellation schemes, and generalizable to two replication datasets consisting of young and older adults. The findings establish the link of brain dynamics with both ongoing cognitive processing and behavioral outcomes, providing a mechanistic account of how language comprehension arises from the dynamic interplay of large-scale brain networks.\n\n## Materials and methods\n\n## Participants and experiment procedure\n\nThe main dataset consisted of 68 Chinese college students (33 males, aged 19\u201327 y) scanned with fMRI while listening to a 10 min narrative in Chinese. Data of four participants were omitted from further analyses due to excessive head movements (>3 mm or 3 degrees).The speech played to each participant was randomly chosen from three real-life stories told by a female college student. These stories described her experiences with a graduate admission interview, a hiking trip, and her first time taking a flight.\n\nThe replication dataset came from 30 healthy older adults (12 males, aged 53\u201375 y) recruited from the residential community near the college. During fMRI scanning, each participant listened to two real-life stories presented with and without background noise. Those stories were told by a 62-year-old woman in a Chinese dialect, describing her experience in Thailand and riding a warship, respectively. After omitting 10 runs with large head movements (>3 mm or 3 degrees), a total of 50 runs of fMRI scans were included for subsequence analyses.\n\nFor both datasets, the recordings were collected when the speakers were scanned with fMRI. To obtain audio recordings with good quality, we used a noise-canceling microphone (FOMRI-III, Optoacoustics Ltd., Or-Yehuda, Israel) positioned above the mouth of the speaker and further de-noised the audio recordings offline using Adobe Audition 3.0 (Adobe Systems Inc, USA).\n\nAfter the scanning session, participants were asked to retell the story in detail. Following the free recall, experimenters asked additional questions from a prepared list about details not previously mentioned. The list contained 9\u201310 questions for each story, which addressed key events from different parts of the narrative (e.g. \u2018Can you describe the preparations she made for the hike?\u2019 or \u2018What happened on her way to the hotel?\u2019). Correct answers are needed to cover critical details, including actions, characters, locations, time, and motivations. Two independent raters listened to the recordings of participants\u2019 free recall and their responses to the experimenters, assigning a score for each question based on the completeness of the key points provided. The comprehension score for each participant was calculated as a percentage of the total possible points. Given the high inter-rater reliability (Spearman\u2019s r(62) = 0.74), the average score from both raters was used to quantify each participant level of story comprehension. The audio files of those stories, along with their corresponding transcriptions and sample questions used in the comprehension test, are available at: https://github.com/liulanfang11/Tripartite-brain-states/upload/main.\n\nThis research was approved by the Reviewer Board of Beijing Normal University in China (ICBIR_A_0002_009). Written informed consent was obtained from all participants before the study. The dataset has been used in our previous work addressing different questions (Liu et al., 2022; Liu et al., 2020).\n\n## MRI acquisition and preprocessing\n\nWe used a 3T Siemens Trio scanner in the MRI Center of the Southwest University of China to collect imaging data. Functional images were acquired employing a gradient echo-planar imaging sequence with the specified parameters: repetition time = 2000 ms, echo time = 30 ms, \ufb02ip angle = 90\u00b0, field of view = 220 mm2, matrix size = 64 \u00d7 64, 32 interleaved slice, voxel size = 3.44 \u00d7 3.44 \u00d7 3.99 mm3. Structural images were acquired using a MPRAGE sequence with the following parameters: repetition time = 2530 ms, echo time = 3.39 ms, \ufb02ip angle = 7\u00b0, FOV = 256 mm2, scan order = interleaved, matrix size = 256 \u00d7 256, and voxel size = 1.0 \u00d7 1.0 \u00d7 1.33 mm3. The preprocessing pipeline included slice-timing correction, spatial realignment, co-registration to the individual participants\u2019 anatomical maps, normalization to the Montreal Neurological Institute (MNI) space, resampling into a 3 \u00d7 3 \u00d7 3 mm3 voxel size, and smoothing (FWHM = 7 mm). The resulting images underwent additional processing, including detrending, nuisance variable regression, and high-pass filtering (1/128 Hz). Data with head movement exceeding 3 degrees or 3 mm were omitted from further analyses.\n\n## Data analyses\n\n## Whole-brain parcellation\n\nThe inference for brain dynamic states was conducted at the whole-brain network level. Currently, most brain functional networks reported in the literature are made based on resting-state fMRI data. To better capture the brain network organization during the task, we conducted brain network parcellation applying a state-of-the-art method proposed by Ji et al., 2019, using data from the 64 participants engaged in narrative comprehension. This method employs multiple quality control metrics to ensure the stability and reliability of the network partition, and most importantly, uses parameter optimization guided by well-established neurobiological principles (e.g. the separation of sensory and motor systems).\n\nFirst, the mean time series of 246 regions defined by the Brainnetome atlas (Fan et al., 2016) were extracted, and a functional connectivity (FC) matrix was computed for each participant and then averaged across them. This atlas covers both cortical and subcortical regions and is made based on both anatomical and FC patterns. Next, community detection was performed on the group-averaged FC matrix by applying the Louvain clustering algorithm in the Brain connectivity toolbox (https://sites.google.com/site/bctnet/). Three criteria were taken into account when determining the Gamma parameter in the algorithm, including (1) separation of primary sensory-motor network (visual, auditory and somatomotor) from all other networks (i.e. neurobiologically sensible); (2) high similarity of network partitions across nearby parameters (i.e. statistically stable); and (3) high within-network connectivity relative to between-network connectivity (i.e. high modularity).\n\nA set of gamma values ranging from 1.2 to 2.5, with a step size of 0.01, were tested. For every tested gamma, we ran the algorithm 1000 times and measured how consistent a given partition was to every other partition using a z-rand score. Each z-rand score averaged across the iterations was then multiplied by its corresponding modularity score to find a modularity-weighted z-rand score. Finally, the gamma value of 2.5 was selected, as it corresponded to the peak of the modularity-weighted z-rand score and satisfied the three criteria, resulting in a plausible number of networks, including the primary sensory/motor networks. We implemented network detection using code published by a prior study (Barnett et al., 2021).\n\nThe network detection approach identified a total of 11 networks (Figure 1\u2014figure supplement 1). Two networks were discarded due to comprising too few nodes (less than three) and thus nine networks were included for further analyses. By reference to the functional decoding results using NeuroSynth (https://www.neurosynth.org), we tentatively labeled the nine networks as the auditory, visual, somatomotor, bilateral language, medial temporal, frontal-parietal, ventral attention, subcortical, and default mode networks. To test the robustness of the findings, we also adopted the seven-network atlas (Yeo et al., 2011) for whole-brain parcellation and reconducted the main analyses.\n\n## Brain state inference using Hidden Markov Model\n\nWe applied the HMM to infer latent brain states during narrative comprehension using the HMM-MAR toolbox (https://github.com/OHBA-analysis/HMM-MAR; Vidaurre and Higgins, 2025). The HMM assumes that the observed data is generated through a finite number of latent states, and each state can be characterized, respectively, by a multivariate Gaussian distribution with mean and covariance. The BOLD time series was first standardized within each participant and each network. Then HMM was fitted using concatenated data from all participants, such that unified brain states could be obtained.\n\nThe number of latent states (represented by \u2018K\u2019) is a crucial aspect of the HMM, and it needs to be predetermined before fitting the model. Two criteria were considered to determine the optimal K. The first was a model\u2019s clustering performance, which reflects how well the model can capture and separate different patterns in the data. The second criterion was how well the model aligned with existing knowledge about the data. This criterion was evaluated by the ability of a trained HMM model to decode the narrative content heard by unseen participants. This dual criterion ensures that the selected number of brain states (K) for the HMM is both statistically robust and cognitively meaningful (Pohle et al., 2017). The clustering performance and prediction accuracy were assessed through a leave-one-out cross-validation strategy. In this approach, we trained the HMM using data from all participants except one. For each candidate K, we repeated the training process 10 times, and the instance with the smallest free energy was selected for decoding the latent state sequence of the left-out participant (Song et al., 2023). Utilizing the decoded latent state sequence, along with the participant\u2019s network time series, we calculated the Calinski-Harabasz score as an indicator of the model\u2019s clustering performance, with a higher score indicating better clustering performance. Furthermore, to assess the model\u2019s decoding capability, we applied a K-nearest neighbor algorithm utilizing the decoded latent state sequences to classify which of the three narratives the left-out participant was listening to. A higher accuracy indicates the model has well captured the task information in the data. Both the Calinski-Harabasz score and narrative classification accuracy were acquired from each participant and then averaged across the group. To combine the two criteria, we first converted the Calinski-Harabasz score and narrative decoding accuracy independently to Z scores and then summed them up to create a single composite score.\n\nWe repeated the above cross-validation procedure across a range of K from 2 to 10. The K with the largest composite score was set to be the optimal number of HMM states representing the brain dynamics during the narrative comprehension task. Upon determining the optimal number of states, we reconducted the HMM on the data from all participants and chose the instance with the largest model evidence (lowest free energy) from 10 iterations as the final result.\n\n## Reconstruction of latent states using hierarchical clustering\n\nTo demonstrate that those hidden states identified by the above analyses were not trivial but potentially reflected several fundamental processes of the dynamic brain, we explored whether those states can be reconstructed from smaller, more nuanced patterns using hierarchical clustering (Vidaurre et al., 2017). To this end, we applied an agglomerative hierarchical clustering algorithm to the transition probability matrix derived from HMM with K = 4, 10, and 12, respectively, and obtained three clusters from each. Next, we compared the clusters with the target states (i.e. those resulting from the HMM with K = 3) in terms of similarities in activity patterns (spatial overlap) and the time course of state expression (temporal overlap).\n\nTo evaluate the spatial overlap, we first averaged the activation values across those states belonging to the same cluster, merging them into a single new state. Then we assessed the similarity in the activity patterns between the merged states and the target states using Pearson\u2019s correlation. To evaluate temporal overlap, we first substituted states belonging to the same cluster with the newly formed one, then computed Jaccard Similarity between the sequences of the new states and the sequences of the targeted states.\n\n## Analyses of brain state properties\n\nThe HMM model generated, for each state, a group-level activation map and a functional connectivity matrix, as well as a between-state transition probability matrix. With these parameters, the probability of each state being active (or expressed) at each time point and the most likely sequence of states were estimated for each participant using the Viterbi algorithm (Rezek and Roberts, 2005). Based on the Viterbi path, the total time spent on each state over the entire duration (referred to as FO) and the duration for which a state continuously persisted before switching to another one (referred to as dwell time) were computed for each participant.\n\nNext, we conducted a graph theoretical analysis to assess the degree of functional integration and segregation of the whole brain when occupied by a specific state. For each participant and each state, a weighted and undirected graph was constructed in which the nine networks were represented as nodes, and FCs estimated using network time series corresponding to the specific state were represented as edges. Employing the Brain Connectivity toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012), we computed network global efficiency as the measurement for functional integration. Functional segregation was measured by a network modularity score using the Louvain algorithm with a resolution parameter gamma = 1. Then t-tests were employed to examine the differences in these indices across the three states. For validation purposes, we additionally computed the two graph theoretical indices using the state-specific FC matrices estimated by the HMM.\n\n## Surrogate data generation and permutation test\n\nTo ascertain that the trend in between-state transition was not by chance, we generated surrogate data by having the 9-network time series circular shifted independently. In this approach, the meaningful covariance between networks was disrupted while the temporal characteristics of the time series were retained (Song et al., 2023). On each permutated data, we conducted an HMM analysis with the optimal K (i.e. K = 3). If there were two states where both showed a higher probability of transitioning to a third state compared to directly transitioning between them, this instance would be taken as exhibiting a similar switching pattern as to the experiment result. Then the associated differences in the transition probabilities were extracted and averaged between two pairs. Otherwise, the difference for this instance was set to zero. This step ensured that only meaningful differences in transition probabilities were considered. By repeating this procedure 1000 times, we obtained a null distribution for the discrepancy in state transition probabilities.\n\n## Modulation of brain state activation by time-varying stimuli features\n\nTo gain more insights into the functional nature of brain dynamic states, we investigated how narrative properties would modulate the probability of a neural state being expressed in individuals. Specifically, we focused on three different stimuli properties which were assumed to reflect an increasingly \u2018deeper\u2019 level of information conveyed by the narrative, including the temporal changes in acoustic property, and semantic coherence at the word level and at the clause level.\n\nTo characterize the temporal variation of acoustic property, we derived the temporal envelope of each story using the Hilbert transform, which reflects the overall fluctuation of voice amplitude. The speech envelope was then convolved with the canonical hemodynamic response function (HRF) and down-sampled to 0.5 Hz (the same resolution as the fMRI acquisition). To characterize the temporal variation of semantic coherence, we first transcribed the speech to texts and retrieved the semantic representations for each word by applying a large language model BERT that was pretrained on a large-scale Chinese corpus (Cui et al., 2021; Devlin et al., 2018). The output from the last layer of the model was used as word embedding. To avoid overfitting, we further decomposed the high-dimensional embedding vectors (N = 768) with principal component analysis (PCA) and retained the first 50 PCs (Goldstein et al., 2024; Goldstein et al., 2022). Next, a vector of word-level semantic coherence was generated for each narrative by computing the cosine similarity between the embeddings of every word and the word immediately before it. After aligning the onset time of words using Praat (https://www.fon.hum.uva.nl/praat/), the semantic coherence vector was convolved with HRF and down-sampled to 0.5 Hz. Clauses were encoded by two researchers, each including 8\u20139 characters on average. The semantic representations for clauses were obtained by averaging the embedding vectors of words within a clause. Using the same method, a vector for clause-level semantic coherence was generated for each narrative.\n\nWe first computed Pearson\u2019s correlation between the vector of narrative properties and the vector of state expression probability at the individual level. To infer significance, the group mean of correlation values across participants was compared to a null distribution generated by 5000 permutations. For each iteration, the time courses of brain state expression were randomly circular-shuffled, and the correlation between the narrative property vector and the shuffled time course of state expression was re-calculated and averaged over participants to create a random value. An empirical p-value was determined by the proportion of values from the 5000 iterations that were larger than the original group-mean value. FDR correction was used to account for multiple comparisons.\n\n## Correlation of latent state dynamics with behavior\n\nTo assess the importance of the timing of brain latent states to behavior, we examined whether the alignment of participant\u2019s brain state fluctuations with that of the best performer could predict their narrative comprehension scores. The best performer was the one (or those) who scored the highest in the narrative recall task within the subgroup of participants exposed to the same narrative. For each narrative, if there were more than one best performer, we first assessed the alignment between a participant with each of them, and then got the average. For the non-best-performers (N = 56), their brain alignment with the best performer(s) was measured by Pearson\u2019s correlation using the time course of state expression probability. After that, we computed a Pearson\u2019s correlation between inter-brain alignments and participants\u2019 comprehension scores.\n\nIn addition to the inter-brain alignments with the best performer, we also examined the alignment of each participant\u2019s brain state fluctuations with the group mean, which is supposed to be representative of the systematic response to the stimulus (Nastase and Gazzola, 2019). The inter-brain alignment was assessed by iteratively leaving out one participant and calculating the Pearson correlation between the time course of state expression probabilities for the left-out participant and the average time course for the remaining participants. All participants were engaged in the same narrative during this process.\n\nAs a comparison, we also investigated whether the overall engagement of a brain state was associated with task performance. For this purpose, we examined the correlation between participants\u2019 FO and dwell time in each state and their comprehension scores.\n\n## Compare brain states across conditions\n\nFinally, we investigated whether the temporal organization of brain dynamics observed during narrative comprehension was mainly driven by language processing, or instead an intrinsic organization of the dynamic brain. For this purpose, we analyzed the fMRI data from the same group of participants at rest and when listening to an unintelligible narrative told in a foreign language (Mongolian). The scanning parameters as well as the scanning length were identical to the main experiment. The HMM with K = 3 was conducted separately for the two conditions, and then the resulting three brain states were mapped to the corresponding states from the narrative comprehension condition by maximizing the similarity in state activity patterns.\n\n## Establishing state correspondence between analyses\n\nState correspondence between the two datasets and across different conditions was established based on spatial overlap. To assess this overlap, we first extracted each state\u2019s activity values in the nine networks derived from the HMM in the main analyses. Then, for each state identified in other analyses (treated as a candidate state), we calculated its correlation with the three states from the main analyses (treated as the predefined states) in terms of network activity patterns. The predefined state that a candidate state most closely resembled was designated to be its matching state. For instance, if a candidate state showed the strongest correlation with State #1, it was labeled as State #1 accordingly. In cases where two candidate states showed the highest similarity to the same predefined state (e.g. State #1), the candidate state with the stronger correlation was labeled as State #1, and the other was assigned to the predefined state with the next highest correlation. A prime symbol (e.g. State #2') was used to indicate cases where such confusion occurred.\n\nGiven that the spatial layout of the 9-network atlas used in the main analysis does not align well with the Yeo-7 network atlas, we established state correspondence between the two parcellation schemes using evidence of temporal overlap. Specifically, we calculated Pearson\u2019s correlation between each state derived from the Yeo-7 network scheme (treated as a \u2018candidate state\u2019) and the three predefined states from the main analysis, based on time courses of state expression probabilities. For each state, the time courses from all 64 participants were concatenated, resulting in 19,200 (300 \u00d7 64) time points. The predefined state most similar to each candidate state was designated as its corresponding state.\n\nTo assess the statistical significance of the spatial (and temporal) overlap, we utilized the HMM results from 1000 permutations, where participants\u2019 BOLD time courses were circularly shifted and HMMs were conducted for each permutation. Applying the same state-correspondence strategy described above, we generated a null distribution representing the matches between candidate states and states in the surrogate data.\n",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea E Martin, Max Planck Institute for Psycholinguistics Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99997.3.sa0](https://doi.org/10.7554/eLife.99997.3.sa0)\n\nThis study provides important insights into the brain activity and connectivity underlying speech comprehension, revealing three brain states. The authors present compelling evidence by leveraging hidden Markov modeling of fMRI data to link brain state dynamics to comprehension scores, though the functional role of these states remains under-explored. These findings advance our understanding of how brain state transitions in narrative comprehension relate to stimulus-specific features.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99997.3.sa1](https://doi.org/10.7554/eLife.99997.3.sa1)\n\nSummary:\n\nLiu and colleagues applied the hidden Markov model on fMRI to show three brain states underlying speech comprehension. Many interesting findings were presented: brain state dynamics were related to various speech and semantic properties, timely expression of brain states (rather than their occurrence probabilities) was correlated with better comprehension, and the estimated brain states were specific to speech comprehension but not at rest or when listening to non-comprehensible speech.\n\nStrengths:\n\nRecently, the HMM has been applied to many fMRI studies, including movie watching and rest. The authors cleverly used the HMM to test the external/linguistic/internal processing theory that was suggested in comprehension literature. I appreciated the way the authors theoretically grounded their hypotheses and reviewed relevant papers that used the HMM on other naturalistic datasets. The manuscript was well written, the analyses were sound, and the results had clear implications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99997.3.sa2](https://doi.org/10.7554/eLife.99997.3.sa2)\n\nLiu et al. applied hidden Markov models (HMM) to fMRI data from 64 participants listening to audio stories. The authors identified three brain states, characterized by specific patterns of activity and connectivity, that the brain transitions between during story listening. Drawing on a theoretical framework proposed by Berwick et al. (TICS 2023), the authors interpret these states as corresponding to external sensory-motor processing (State 1), lexical processing (State 2), and internal mental representations (State 3). States 1 and 3 were more likely to transition to State 2 than between one another, suggesting that State 2 acts as a transition hub between states. Participants whose brain state trajectories closely matched those of an individual with high comprehension scores tended to have higher comprehension scores themselves, suggesting that optimal transitions between brain states facilitated narrative comprehension.\n\nOverall, the conclusions of the paper are well-supported by the data. Several recent studies (e.g., Song, Shim, and Rosenberg, eLife, 2023) have found that the brain transitions between a small number of states; however, the functional role of these states remains under-explored. An important contribution of this paper is that it relates the expression of brain states to specific features of the stimulus in a manner that is consistent with theoretical predictions.\n\nThe correlation between narrative features and brain state expression was reliable, but relatively low (~0.03). As discussed in the manuscript, this could be due to measurement noise, as well as narrative features accounting for a small proportion of cognitive processes underlying the brain states.\n\nA strength of the paper is that the authors repeated the HMM analyses across different tasks (Figure 5) and an independent dataset (Figure S3) and found that the data was consistently best fit by 3 brain states. Across tasks, however, the spatial regions associated with each state varied. For example, state 2 during narrative comprehension was similar to both states 2 and 3 during rest (Fig. 5A), suggesting that the organization of the three states was task dependent.\n\nThe three states identified in the manuscript correspond rather well to areas with short, medium, and long temporal timescales (see Hasson, Chen & Honey, TiCs, 2015). Given the relationship with behavior, where State 1 responds to acoustic properties, State 2 responds to word-level properties, and State 3 responds to clause-level properties, a \"single-process\" account where the states differ in terms of the temporal window for which one needs to integrate information over may offer a more parsimonious account than a multi-process account where the states correspond to distinct processes. This possibility is mentioned briefly in the introduction, but not developed further.\n",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c628810d-c1fa-4128-bc5d-3ac952f4673d",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C1",
+      "claim": "Speech comprehension involves the dynamic interplay of multiple cognitive processes, from basic sound perception, to linguistic encoding, and finally to complex semantic-conceptual interpretations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Speech comprehension involves the dynamic interplay of multiple cognitive processes, from basic sound perception, to linguistic encoding, and finally to complex semantic-conceptual interpretations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement draws from established understanding in cognitive science and psycholinguistics about the hierarchical nature of speech comprehension.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f0512c2b-1c25-44df-a160-4862b25bebb9",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C2",
+      "claim": "Applying Hidden Markov Modeling to fMRI data obtained during spoken narrative comprehension reveals that whole brain networks predominantly oscillate within a tripartite latent state space.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Applying Hidden Markov Modeling to fMRI data obtained during spoken narrative comprehension, we reveal that the whole brain networks predominantly oscillate within a tripartite latent state space.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by the experimental fMRI data analyzed using HMM as described in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "626d6d18-b10d-4858-bb76-4b29a269727c",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C3",
+      "claim": "The three brain states are respectively characterized by high activities in the sensory-motor (State #1), bilateral temporal (State #2), and default mode networks (DMN; State #3) regions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These states are, respectively, characterized by high activities in the sensory-motor (State #1), bilateral temporal (State #2), and default mode networks (DMN; State #3) regions",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This characterization is based on direct analysis of the activity patterns from the HMM applied to fMRI data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "966d9a6b-4a8f-4c3f-a117-0bbc1073d2e8",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C4",
+      "claim": "State #2 acts as a transitional hub among the three brain states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with State #2 acting as a transitional hub",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by analysis of the between-state transition probability matrix derived from the HMM.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "496dcf7a-5699-4e57-9511-306213637578",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C5",
+      "claim": "The three states are selectively modulated by the acoustic, word-level semantic, and clause-level semantic properties of the narrative.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The three states are selectively modulated by the acoustic, word-level semantic, and clause-level semantic properties of the narrative.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by correlation analyses between state expression probabilities and extracted narrative features.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f4111840-8b76-4d32-a389-7002ef914d16",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C6",
+      "claim": "The alignment with both the best performer and the group-mean in brain state expression can predict participants' narrative comprehension scores measured from the post-scan recall.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, the alignment with both the best performer and the group-mean in brain state expression can predict participants' narrative comprehension scores measured from the post-scan recall.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by correlation analyses between inter-subject alignment measures and behavioral comprehension scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "fcc8d1c7-d9bd-4ea1-8ec9-1460ac086093",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C7",
+      "claim": "The results are reproducible with different brain network atlas and generalizable to two datasets consisting of young and older adults.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results are reproducible with different brain network atlas and generalizable to two datasets consisting of young and older adults.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "The manuscript reports replication analyses using Yeo-7 network atlas and a separate dataset of older adults.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "d3bab40c-2016-4090-94b4-9211ccf111e4",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C8",
+      "claim": "The brain underlies narrative comprehension by switching through a tripartite state space, with each state probably dedicated to a specific component of language faculty.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our study suggests that the brain underlies narrative comprehension by switching through a tripartite state space, with each state probably dedicated to a specific component of language faculty",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the combined evidence of state characteristics, selective modulation by linguistic features, and theoretical alignment with language faculty components.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "56db076c-d370-44e9-8d14-465c06eb7f41",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C9",
+      "claim": "Effective narrative comprehension relies on engaging those states in a timely manner.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and effective narrative comprehension relies on engaging those states in a timely manner.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the finding that temporal alignment of brain states with best performers predicts comprehension scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "5ffb3323-de4c-4c3b-8700-daff0a515b1d",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C10",
+      "claim": "Flexible and adaptive cognitive functions arise from the dynamic brain, which transiently activates and coordinates distributed neural circuits in response to changes in the external environment and internal demands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "An emerging view suggests that flexible and adaptive cognitive functions arise from the dynamic brain, which transiently activates and coordinates distributed neural circuits in response to the changes in the external environment and internal demands",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This statement is attributed to cited literature (Honey et al., 2018; Kelso, 2012) and represents an established theoretical perspective.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f47131b8-003b-49b2-b9ae-fc5e9c267d1b",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C11",
+      "claim": "The basic design of language faculty mainly comprises three modules: an external sensory-motor module, an internal conceptual-intentional module, and a basic linguistic module.",
+      "claim_type": "EXPLICIT",
+      "source_text": "According to the psycholinguistic theory, the basic design of language faculty mainly comprises three modules (components): an external sensory-motor module, an internal conceptual-intentional module, and a basic linguistic module which represents mental expressions formed by syntactic rules and connects the other two modules",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a theoretical framework from psycholinguistics cited from Berwick et al., 2013.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "9e280e39-e67d-49cc-926b-144496bef4c0",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C12",
+      "claim": "The model with K = 3 achieved the best overall performance in terms of clustering performance and narrative classification accuracy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The model with K = 3 achieved the best overall performance, quantified by summed z scores",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on quantitative comparison of HMM models with different numbers of states using the experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "807c1942-c67e-4c98-b787-f030967707b5",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C13",
+      "claim": "When applying a different whole-brain parcellation scheme (Yeo-7 Networks atlas), the model with K = 3 was found to be optimal.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When applying a different whole-brain parcellation scheme (Yeo-7 Networks atlas) to extract the brain time series used for HMM inference, we also found the model with K = 3 to be the optimal",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a replication analysis using a different parcellation scheme on the same dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "dae0d36a-de20-4c55-8655-1102df5aa5f2",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C14",
+      "claim": "In the replication dataset with older adults, the model with K = 3 was again found to be optimal.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Moreover, when examining the replication dataset wherein participants' age, narrative contents, as well as scanning duration differed substantially from those of the main dataset, we again found the model with K = 3 to be optimal",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on analysis of an independent dataset with different participants and stimuli.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "e8f27e45-d99b-4ed4-bd91-f863b93867ae",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C15",
+      "claim": "The tripartite state space likely captured some fundamental processes of the brain involved in narrative comprehension.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The robustness of findings suggests the tripartite state space likely captured some fundamental processes of the brain involved in narrative comprehension.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This inference is drawn from the robustness and replicability of the three-state finding across different analyses and datasets.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "3631e949-30cb-443d-a33a-4b58f21b6425",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C16",
+      "claim": "There was significant and exclusive correspondence between clusters reconstructed from both the 4-state and 10-state models and the predefined target states from the 3-state model.",
+      "claim_type": "EXPLICIT",
+      "source_text": "There was a clear and exclusive correspondence between clusters reconstructed from both the 4-state and 10-state models and the predefined target states in terms of activity patterns (r(6) ranges from 0.72 to 0.98)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on hierarchical clustering analysis and correlation measurements between reconstructed and target states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "304b549f-affe-4f32-b6d5-26c0886fc761",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C17",
+      "claim": "The timing of state expression was well aligned between the reconstructed model and the target model (more than 77% overlap across a total of 19,200 time points for 64 participants).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The timing of state expression was also well aligned between the reconstructed model and the target model (more than 77% overlap across a total of 19, 200 time points for 64 participants).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on temporal overlap analysis between hierarchically reconstructed states and the original three states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "d6c43df0-e8e7-4b19-839e-b4967cb6ddc7",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C18",
+      "claim": "State #1 is characterized by relatively high activities in the auditory and somatomotor networks, along with low activities in the DMN and the cognitive control network.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The first state (State #1) was characterized by relatively high activities in the auditory and somatomotor networks, along with low activities in the DMN and the cognitive control network",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This characterization is based on the activity loadings estimated by the HMM for State #1.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f7392479-2ad3-4531-881f-85cbf01ce065",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C19",
+      "claim": "State #1 seems to be associated with the external sensory-motor module of language faculty.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This state seems to be associated with the external sensory-motor module of language faculty.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This association is inferred from the activity pattern of State #1 and its alignment with theoretical language components.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "9c1232c0-7419-49a3-82ea-c1ffacec77d1",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C20",
+      "claim": "State #2 is characterized by relatively high activities in the language and the frontal-parietal networks whereas low activities in the somatomotor and auditory networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The second state (State #2) was characterized by relatively high activities in the language and the frontal-parietal networks whereas low activities in the somatomotor and auditory networks",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This characterization is based on the activity loadings estimated by the HMM for State #2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "7e92680f-9baf-4175-aa99-9e7acde2dfa8",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C21",
+      "claim": "State #2 seems to be associated with the basic linguistic component.",
+      "claim_type": "EXPLICIT",
+      "source_text": "seemingly being associated with the basic linguistic component.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This association is inferred from the activity pattern of State #2 and its alignment with theoretical language components.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "2568bdae-b1cb-4a1b-9ff4-5a8c98c50cf7",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C22",
+      "claim": "State #3 is characterized by relatively high activities in the DMN and frontal-parietal networks whereas low activities in the auditory and language networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The third state (State #3) was characterized by relatively high activities in the DMN and frontal-parietal networks whereas low activities in the auditory and language networks",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This characterization is based on the activity loadings estimated by the HMM for State #3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "30e63432-623c-411d-be66-c59d25664f1a",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C23",
+      "claim": "State #3 seems to be associated with the internal conceptual-intentional component.",
+      "claim_type": "EXPLICIT",
+      "source_text": "seemingly being associated with the internal conceptual-intentional component.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This association is inferred from the activity pattern of State #3 and its alignment with theoretical language components.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "9ec5bf72-77df-43cf-a51b-4fed91b21316",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C24",
+      "claim": "Both State #1 and #3 were more likely to switch to State #2 than switching directly to each other.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consistent with our prediction, both State #1 and #3 were more likely to switch to State #2 than switching directly to each other, i.e., State #2 acted as a transitional hub.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on analysis of the between-state transition probability matrix from the HMM.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "8e5b2d54-8da0-45f0-9571-37679467a515",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C25",
+      "claim": "The differences in transition probabilities observed in the experiment were respectively larger than 99.9% and 94.4% of instances from the surrogate data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The results showed the differences in transition probabilities observed in our experiment, computed as P(State#1\u2192State#2)\uff0dP(State#1\u2192State#3) and P(State#3\u2192State#2)\uff0d P(State#3\u2192State#1), were respectively larger than 99.9% and 94.4% of instances from the surrogate data",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on permutation testing comparing observed transition probabilities to a null distribution.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "718a6697-72ac-4cd1-aed7-77d38db762ba",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C26",
+      "claim": "The brain spent most of the time on State #2 (mean FO = 46.7%), next on State #1 (mean FO = 29%) and the least on State #3 (mean FO = 24.3%).",
+      "claim_type": "EXPLICIT",
+      "source_text": "In agreement with the between-state switching pattern, the brain spent most of the time on State #2 (mean FO = 46.7%), next on State #1 (mean FO = 29%) and the least on State #3 (mean FO = 24.3 %).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on calculation of fractional occupancy from the Viterbi path of the HMM.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "fced4319-7f10-4119-aad9-cad169a7e008",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C27",
+      "claim": "The dwelling time was 15.29 s for State #2, 9.99 s for State #1, and 9.68 s for State #3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The same pattern was found in the dwelling time, with a group mean of 15.29 s for State #2, 9.99 s for State #1, and 9.68 s for State #3.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on calculation of dwell time from the Viterbi path of the HMM.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "2302f367-55bb-4065-b6d7-1119e0880fd8",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C28",
+      "claim": "Both the FO and dwell time of State #2 were higher than 99.88% of instances in the surrogate data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Both the FO and dwell time of State #2 were higher than 99.88% of instances in the surrogate data.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on comparison with permutation-generated null distributions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "b6f46025-b0ba-4c3d-830f-fe75b698018b",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C29",
+      "claim": "When occupied by State #2, the brain exhibited significantly higher global efficiency than when occupied by the other two states (t values >4.67, ps <10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consistent with our prediction, when occupied by State #2, the brain exhibited significantly higher global efficiency than when occupied by the other two states (t values >4.67, ps <10\u20134).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on graph theoretical analysis of functional connectivity during different brain states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "2856a52c-5a81-4c90-a031-8b497a5792b0",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C30",
+      "claim": "When occupied by State #2, the brain exhibited significantly lower network modularity than when occupied by the other two states (t values <\u20135.82, ps <10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source_text": "An opposite pattern was found in network modularity (t values <\u20135.82, ps <10\u20136).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on graph theoretical analysis of network modularity during different brain states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "c36684b2-b33e-4ccc-9bca-32aa3be1b4f2",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C31",
+      "claim": "When occupied by State #2, the whole-brain networks were well connected to enable efficient information integration across distinct functional systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These results indicate that, when occupied by State #2, the whole-brain networks were well connected to enable efficient information integration across distinct functional systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This interpretation is inferred from the high global efficiency and low modularity observed for State #2.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "730d4ebf-2813-4155-8750-d118cd7cf175",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C32",
+      "claim": "When occupied by State #1 and State #3, the whole-brain networks were well separated which enabled functional specialization.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, when occupied by State #1 and State #3, the whole-brain networks were well separated which enabled functional specialization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This interpretation is inferred from the lower global efficiency and higher modularity observed for States #1 and #3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "fb21653f-b939-4d5a-9693-55b7b968e648",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C33",
+      "claim": "There was a consistent positive correlation between the speech envelope and the expression probability of State #1 across participants, with a group mean of 0.035.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We observed a consistent positive correlation between the speech envelope and the expression probability of State #1 across participants, with a group mean of 0.035.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between extracted speech envelope features and state expression probabilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "536b3a5e-a263-4589-b829-bd2d51f5eb69",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C34",
+      "claim": "The correlation between speech envelope and State #1 expression was significantly greater than zero (t(63) = 2.67, p = 0.009, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source_text": "This correlation was significantly greater than zero (t(63) = 2.67, p = 0.009, FDR corrected)",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on statistical testing of the correlation values across participants.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "9cb824db-fcd6-4e5e-8074-67ba240a3b4d",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C35",
+      "claim": "The correlation between speech envelope and State #1 expression surpassed 99.8% of the 5,000 instances from permutation tests.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and surpassed 99.8% of the 5,000 instances from permutation tests where the state time courses were randomly circularly shifted, yielding a mean of \u22120.0005",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on permutation testing to establish statistical significance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "9afa39da-8d6d-46f5-959d-97e59d570e89",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C36",
+      "claim": "A similar positive correlation with speech envelope was observed for State #2, with a group mean r=0.034 (t(63) = 2.61, p = 0.011, FDR corrected).",
+      "claim_type": "EXPLICIT",
+      "source_text": "A similar effect was observed for State #2, with a group mean r=0.034 (t(63) = 2.61, p = 0.011, FDR corrected).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between speech envelope and State #2 expression probabilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "5729ee16-b8b1-4a2a-a38c-fa101dae6c09",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C37",
+      "claim": "Only the expression probability of State #2 showed a consistent correlation with word-level semantic coherence across participants, with a group mean of 0.030.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Among the three states, only the expression probability of State #2 showed a consistent correlation with word-level semantic coherence across participants, with a group mean of 0.030 (one-sample t-test against zero: t(63) = 2.48, p = 0.015, FDR corrected).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between word-level semantic coherence and state expression probabilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "7fae9d89-997f-477f-a879-5e3c271d2e9b",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C38",
+      "claim": "The correlation between word-level semantic coherence and State #2 expression was significantly greater than 99.28% of instances from permutation tests.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This group's mean value was significantly greater than 99.28% of instances from permutation tests, which produced a mean r = 0.001.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on permutation testing to establish statistical significance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "0c3a901b-f74e-4946-a9e4-c17f8b07aa4d",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C39",
+      "claim": "Only the expression probability of State #3 exhibited a consistent correlation with clause-level semantic coherence, with a group mean of 0.031.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Among the three states, only the expression probability of State #3 exhibited a consistent correlation with clause-level semantic coherence, with a group mean of 0.031 (one-sample t-test against zero: t(63) = 2.89, p = 0.005, FDR corrected).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between clause-level semantic coherence and state expression probabilities.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "8159fb0d-a283-4ab3-9755-17e155fc135c",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C40",
+      "claim": "The correlation between clause-level semantic coherence and State #3 expression was significantly greater than 99.8% of instances from the permuted data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This group's mean value was significantly greater than 99.8% of instances from the permuted data, which yielded a mean r = 0.0001.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on permutation testing to establish statistical significance.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "18ee2045-905e-4ead-a9ab-b1b2ba908bcb",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C41",
+      "claim": "The selective modulation by different aspects of narrative properties provides evidence supporting the functional relevance of three latent brain states to different language components.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In sum, the selective modulation by the different aspects of narrative properties provides further evidence supporting the functional relevance of three latent brain states to different language components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the pattern of selective correlations between different narrative features and specific brain states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "def5c3a6-29ae-4682-a271-5591c68b7d19",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C42",
+      "claim": "Alignments with the best performers in both State #1 and State #2 were significantly correlated with participants' comprehension scores (Pearson's r(54) = 0.31 and 0.37, respectively).",
+      "claim_type": "EXPLICIT",
+      "source_text": "As anticipated, alignments with the best performers in both the State #1 and State #2 were significantly correlated with participants' comprehension scores (Pearson's r(54) = 0.31 and 0.37, respectively).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between inter-subject alignment measures and behavioral comprehension scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "cdf16562-1f8f-49ee-8ab9-47b7231527be",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C43",
+      "claim": "A marginally significant correlation was found between alignment with best performers in State #3 and comprehension scores (r(54) = 0.22, p = 0.10).",
+      "claim_type": "EXPLICIT",
+      "source_text": "A marginally significant correlation was also found in the alignment of State #3 (r(54) = 0.22, p = 0.10).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between inter-subject alignment in State #3 and behavioral scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "98b7c66e-5a1c-48df-a0f6-3a70b3de4e2b",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C44",
+      "claim": "Even stronger correlations were found between individual-to-group alignments and comprehension scores in all three states (r(62) = 0.42, 0.51, 0.27 for State #1, #2, and #3, respectively).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Even stronger correlations were found between individual-to-group alignments and comprehension scores in all three states (r(62) = 0.42, 0.51, 0.27 for State #1, #2, and #3, respectively",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between individual-to-group alignment measures and behavioral scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "068df394-21c6-400d-9a70-41f9923ed7a2",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C45",
+      "claim": "Head movement serves as a reliable time-resolved indicator for task engagement, with greater task engagement accompanied by decreased movement.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It is well known that head movement serves as a reliable time-resolved indicator for task engagement, with greater task engagement accompanied by decreased movement",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from previous studies (Ballenghein et al., 2019; Greipl et al., 2021; Kaakinen et al., 2018).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "ee66494b-ba4f-47f3-8504-c9fffb059f22",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C46",
+      "claim": "Similarities with the best performers in terms of head movement trajectory were positively correlated with participants' comprehension scores (r(54) = 0.33, p = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Congruent with our assumption, similarities with the best performers in terms of head movement trajectory were indeed positively correlated with participants' comprehension scores (r(54) = 0.33, p = 0.01",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between inter-subject similarity in head movement and comprehension scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "48b7e03b-4c45-4289-9950-9c2e176bd169",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C47",
+      "claim": "After adjusting for head movement effects, the positive correlations between inter-brain alignment with best performers and comprehension scores remained significant for State #1 (partial r(53) = 0.30, p = 0.03) and State #2 (partial r(53) = 0.31, p = 0.025).",
+      "claim_type": "EXPLICIT",
+      "source_text": "After adjusting the effect of head movement by applying partial correlation, the positive correlations between the inter-brain alignment with the best performers and comprehension scores remained significant for State #1 (partial r(53) = 0.30, p = 0.03) and State #2 (partial r(53) = 0.31, p = 0.025), except for State #3 (partial r(53) = 0.12, p = 0.39).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on partial correlation analysis controlling for head movement effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "7254b44d-65c6-4b6a-87b5-4a5b25bcfe1e",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C48",
+      "claim": "The inter-subject alignments in brain states were unlikely merely the byproduct of shared levels of task engagement, but instead reflected the commonality in neural processes that directly influence narrative comprehension.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These findings suggest that the inter-subject alignments in brain states were unlikely merely the byproduct of shared levels of task engagement, but instead reflected the commonality in neural processes that directly influence narrative comprehension.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the persistence of brain-behavior correlations after controlling for head movement.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "866571c5-ae16-4c2e-86e7-154394fdc399",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C49",
+      "claim": "No significant association was found between individual differences in the FO and dwell time of latent states and narrative comprehension (r values <0.15, ps >0.23).",
+      "claim_type": "EXPLICIT",
+      "source_text": "As a comparison, we investigated whether individual differences in the FO and dwell time of latent states were associated with individual differences in narrative comprehension. No significant result was found on any of the three states (r values <0.15, ps >0.23).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on correlation analysis between state occupancy measures and comprehension scores.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "dc9ea94d-f007-4c11-a0ee-689022b9c74a",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C50",
+      "claim": "Timely engagement with specific brain states, rather than the overall magnitude of engagement in those states, is crucial for narrative comprehension.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, these findings suggest that timely engagement with specific brain states, rather than the overall magnitude of engagement in those states, is crucial for narrative comprehension.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the contrast between significant timing-based correlations and non-significant occupancy-based correlations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "5d1951c1-bd15-4d83-a868-1367b985fbb3",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C51",
+      "claim": "During the rest period, State #3 acted as the transitional hub, unlike in the task condition where State #2 was the hub.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Analysis of the between-state transition matrix revealed that, unlike in the task condition, State #3 acted as the transitional hub in the resting condition",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on HMM analysis of resting-state fMRI data and comparison with task data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "dccf3816-598c-42f6-a389-2a7f0a4bf289",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C52",
+      "claim": "When listening to the unintelligible narrative (in Mongolian), State #2 was still the transitional hub.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consistent with the task condition, State #2 served as the transitional hub under the MG condition",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on HMM analysis of fMRI data during unintelligible speech listening.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "7e77fbcc-e3ca-4ec9-a703-d691a8b8f2e3",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C53",
+      "claim": "The fractional occupancy of State #2 monotonically increased across the three conditions: resting < MG (incomprehensible speech) < task (narrative comprehension).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, the FOs of State #2 monotonically increased across the three conditions: resting < MG (incomprehensible speech) < task (narrative comprehension).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on comparison of state occupancy measures across three experimental conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "6e68f0d6-a758-4bc1-bde7-fbc30cb703e7",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C54",
+      "claim": "The fractional occupancy of State #3 monotonically decreased across conditions: resting > MG > task.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, the FOs of the State #3 monotonically decreased: resting > MG > task",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on comparison of state occupancy measures across three experimental conditions.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "252308af-778d-49ed-986d-628ae66a39ab",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C55",
+      "claim": "The tripartite latent space of whole-brain dynamics is mainly driven by language processing.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Together, these results suggest that the tripartite latent space of whole-brain dynamics is mainly driven by language processing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the systematic differences in state dynamics across conditions with varying linguistic demands.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "a5f654d1-aa4a-47ef-823b-05760db1b29a",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C56",
+      "claim": "The timescales of information accumulation vary hierarchically from early sensory areas to higher-order areas.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Based on previous findings that the timescales of information accumulation vary hierarchically from early sensory areas to higher-order areas",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge cited from previous studies (Hasson et al., 2015; Lerner et al., 2011).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "84ea49e2-b202-40c9-8bcb-e50c8e80ae94",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C57",
+      "claim": "The main dataset consisted of 64 Chinese college students (after excluding 4 participants due to excessive head movements).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The main dataset consisted of 68 Chinese college students (33 males, aged 19\u201327 y) scanned with fMRI while listening to a 10 min narrative in Chinese. Data of four participants were omitted from further analyses due to excessive head movements (>3 mm or 3 degrees).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the participant sample used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "1a741725-49f0-476c-afa2-34b8ddac370c",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C58",
+      "claim": "The replication dataset consisted of 30 healthy older adults with 50 runs of fMRI scans included after quality control.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The replication dataset came from 30 healthy older adults (12 males, aged 53\u201375 y) recruited from the residential community near the college... After omitting 10 runs with large head movements (>3 mm or 3 degrees), a total of 50 runs of fMRI scans were included for subsequence analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the replication sample used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "d2f1f0b3-5127-4856-a2c6-e3c41f9e47a1",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C59",
+      "claim": "Participants' comprehension scores were measured from post-scan recall of the stories scored by two independent raters with high inter-rater reliability (Spearman's r(62) = 0.74).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The comprehension score for each participant was calculated as a percentage of the total possible points. Given the high inter-rater reliability (Spearman's r(62) = 0.74), the average score from both raters was used to quantify each participant level of story comprehension.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the behavioral measurement procedure and its reliability.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "6d16f5c5-c095-48f8-a76c-b8c4c6b5dbca",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C60",
+      "claim": "Brain network parcellation was conducted using a state-of-the-art method that employs multiple quality control metrics to ensure stability and reliability.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To better capture the brain network organization during the task, we conducted brain network parcellation applying a state-of-the-art method proposed by Ji et al., 2019, using data from the 64 participants engaged in narrative comprehension. This method employs multiple quality control metrics to ensure the stability and reliability of the network partition",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the methodological approach used for brain parcellation, citing the source method.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "ac7aaef0-a464-4fd6-a3f2-ba9c40f87695",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C61",
+      "claim": "The network detection approach identified a total of 9 networks (after discarding 2 networks with fewer than three nodes).",
+      "claim_type": "EXPLICIT",
+      "source_text": "The network detection approach identified a total of 11 networks (Figure 1\u2014figure supplement 1). Two networks were discarded due to comprising too few nodes (less than three) and thus nine networks were included for further analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the outcome of the network parcellation procedure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "eeb8b50c-553e-4768-a4cf-9c923072facd",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C62",
+      "claim": "The nine networks were labeled as auditory, visual, somatomotor, bilateral language, medial temporal, frontal-parietal, ventral attention, subcortical, and default mode networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "By reference to the functional decoding results using NeuroSynth (https://www.neurosynth.org), we tentatively labeled the nine networks as the auditory, visual, somatomotor, bilateral language, medial temporal, frontal-parietal, ventral attention, subcortical, and default mode networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The network labels are inferred from functional decoding analysis using NeuroSynth.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "d91aaf53-10ca-4f3d-91b4-041f8a9b0956",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C63",
+      "claim": "Word embeddings were obtained using a large language model BERT that was pretrained on a large-scale Chinese corpus.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To characterize the temporal variation of semantic coherence, we first transcribed the speech to texts and retrieved the semantic representations for each word by applying a large language model BERT that was pretrained on a large-scale Chinese corpus",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the method for extracting semantic features, citing the BERT model.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "0caa0596-1634-4c85-92ac-5a3ce96d5635",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C64",
+      "claim": "The high-dimensional embedding vectors (N = 768) were decomposed with PCA and the first 50 PCs were retained to avoid overfitting.",
+      "claim_type": "EXPLICIT",
+      "source_text": "To avoid overfitting, we further decomposed the high-dimensional embedding vectors (N = 768) with principal component analysis (PCA) and retained the first 50 PCs",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This describes the dimensionality reduction procedure, citing supporting literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f7b7c428-fca6-4c30-b376-c1189cfddb2a",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C65",
+      "claim": "In the older-adult dataset, no modulation effect of clause-level semantic coherence was found.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the older-adult dataset, we also observed selective modulation effects of speech envelope on State #1 and word-level semantic coherence on State #2; however, no modulation effect of clause-level semantic coherence was found",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This reports a null finding in the replication dataset for clause-level semantic effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f14c9cac-6c56-4289-bde4-713aa0de7337",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C66",
+      "claim": "In the dataset of older adults, no significant positive correlations were found between inter-subject alignment in brain states and narrative comprehension.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, in the dataset of older adults, we did not find significant positive correlations between inter-subject alignment in brain states and narrative comprehension.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This reports a null finding in the replication dataset for brain-behavior correlations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "db1fff83-ea05-4b9e-9864-e474c39f194b",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C67",
+      "claim": "The lack of brain-behavior correlation in older adults may be due to substantial heterogeneity among older adults in cortical morphology, function, and brain metabolism.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This may be due to substantial heterogeneity among older adults. Despite engaging in the same task, older adults exhibit considerable inter-subject variation in cortical morphology, function, and brain metabolism",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This explanation is inferred and supported by cited literature about aging effects on the brain.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "2d5cc3e6-f623-4575-83f2-65624067dbfe",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C68",
+      "claim": "Inter-subject correlations among older adults were significantly lower than those among younger adults.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These factors can diminish the inter-subject correlation of brain state dynamics \u2014 indeed, ISCs among older adults were significantly lower than those among younger adults",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is based on comparison of ISC measures between the two age groups.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "756d961c-daa7-4575-b285-a95c971a1672",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C69",
+      "claim": "The modular approach to understanding brain function has been criticized for ignoring the multifunctionality of brain structures.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The modular approach postulates the brain areas to act as independent processors for a specific aspect of complex cognitive functions, contributing to much of our current knowledge of the relationship between the brain and behavior. However, this approach has been criticized for ignoring the multifunctionality of brain structures",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents established critique in the neuroscience literature, citing Fuster, 2000.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "c85f8254-9543-46a9-bbdd-f11b30f90acd",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C70",
+      "claim": "The network approach posits that cognitive functions arise from dynamic interactions within and between distributed brain systems.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Alternatively, the network approach, which has been growing rapidly in recent years, posits that cognitive functions arise from dynamic interactions within and between distributed brain systems",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents an established theoretical perspective in neuroscience, citing Bressler and Menon, 2010.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "1080e257-15d8-4d31-86cd-e6503c7fcd64",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C71",
+      "claim": "The study provides a unifying perspective that could reconcile the modular and the dynamic network approaches to understanding brain function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our study provides a unifying perspective for two prevailing approaches aiming to understand how the brain produces cognition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a theoretical claim inferred from the study's findings about state dynamics and functional specialization.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "af6149cf-928a-4e83-b63a-1f17941b2314",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C72",
+      "claim": "For a given task, the brain follows modular organization where different regions specialize in specific functions, but the importance of these regions dynamically changes in response to external environment and internal demands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, for a given task, the brain follows modular organization where different regions specialize in specific functions. However, the importance of these regions dynamically changes in response to external environment and internal demands.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is a theoretical synthesis proposed based on the study's findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "a44af26f-a1e6-4148-90e8-c633be1a972c",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C73",
+      "claim": "Goal-directed behaviors arise from the precise temporal coordination of different functional modules.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Accordingly, goal-directed behaviors arise from the precise temporal coordination of different functional modules",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This is inferred from the study's findings and supported by cited literature (Vyas et al., 2020).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "4a85458b-5670-40fe-91cb-f59ca6695970",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C74",
+      "claim": "The study was approved by the Reviewer Board of Beijing Normal University in China (ICBIR_A_0002_009).",
+      "claim_type": "EXPLICIT",
+      "source_text": "This research was approved by the Reviewer Board of Beijing Normal University in China (ICBIR_A_0002_009).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a factual statement about ethical approval for the research.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "653c01a8-8241-4828-b98c-21495ba38ee2",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C75",
+      "claim": "Written informed consent was obtained from all participants before the study.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Written informed consent was obtained from all participants before the study.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a factual statement about the consent procedure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "28e3bf7a-e297-4c76-918f-9a2effc9e7d2",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C76",
+      "claim": "The dataset has been used in previous work addressing different questions.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The dataset has been used in our previous work addressing different questions (Liu et al., 2022; Liu et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This acknowledges prior publications using the same dataset.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "4c2d3372-f33c-486d-aed5-01e90c5dfe56",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C77",
+      "claim": "The activity patterns of the brain's latent states associated with each of the theoretical components of language faculty are consistent with findings from earlier studies that focused on averaged brain activities over time.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The activity patterns of the brain's latent states associated with each of the theoretical components of language faculty are consistent with the findings from earlier studies that have mainly focused on the averaged brain activities over time",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This compares the current findings with established literature (Ferstl et al., 2008; Price, 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "dbd18a15-bc40-499f-8535-0f259a81be33",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C78",
+      "claim": "The time-varying probabilities of latent states indicate that the associated cognitive processes underlying speech comprehension may not operate in parallel with equal priority or occur one after another, but instead one process dominates over others and this dominance changes over time.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Specifically, the time-varying probabilities of latent states indicate that the associated cognitive processes underlying speech comprehension may not operate in parallel with equal priority or occur one after another. Instead, while all processes are simultaneously engaged, one process dominates over others and this dominance changes over time, taking the form of mode-switching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This interpretation is inferred from the dynamic state expression patterns observed in the data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f1bf19bc-403d-4dcf-af29-f08a49b8f4fa",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C79",
+      "claim": "The findings are consistent with the emerging view that internal/external switching processes of neural circuits drive learning.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This is consistent with the emerging view that internal/external switching processes of neural circuits drive learning",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This connects the findings to theoretical perspectives in the literature (Honey et al., 2018).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "11848f79-e8ef-4326-8839-d170702e4f8e",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C80",
+      "claim": "The findings may provide a useful guide to understand the development of language ability as well as language disorders.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These findings may provide a useful guide to understand the development of language ability as well as language disorders.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential applications of the findings.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "5a803e1e-39ff-44bf-80f9-10f59011f97e",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C81",
+      "claim": "The study establishes the link of brain dynamics with both ongoing cognitive processing and behavioral outcomes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The findings establish the link of brain dynamics with both ongoing cognitive processing and behavioral outcomes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This summary claim is supported by the combined evidence of stimulus modulation and behavior prediction analyses.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "c9821a95-4b9b-4792-9c9e-273589665d97",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "claim_id": "C82",
+      "claim": "The study provides a mechanistic account of how language comprehension arises from the dynamic interplay of large-scale brain networks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "providing a mechanistic account of how language comprehension arises from the dynamic interplay of large-scale brain networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a summary claim synthesizing the overall findings of the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f4959710-90d2-42ce-917a-e24a91df2448",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "The authors demonstrate that brain dynamics during narrative comprehension are optimally characterized by three latent states with distinct spatial patterns (sensory-motor, bilateral temporal, and DMN regions). This tripartite organization was validated through model selection criteria, replicated across different parcellation schemes and datasets, and shown to be hierarchically reconstructable from more granular state models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C2, C3, C12-C17 provide converging evidence from multiple analyses (model selection, replication, hierarchical reconstruction) that consistently support a three-state organization. The finding is robust across different analytical approaches, parcellation schemes, and independent datasets (young and older adults), with high spatial (r=0.72-0.98) and temporal (>77%) correspondence in reconstruction analyses.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "6ad3faad-9718-4653-992b-68e1886241bd",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "State #2 functions as a transitional hub with preferential switching from States #1 and #3, occupies the most time (46.7% FO, 15.29s dwell time), and exhibits higher global efficiency and lower modularity than the other states, indicating enhanced functional integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C4, C24-C32 provide multiple lines of converging evidence: transition probability analysis with permutation testing (>94.4% and >99.9% of null distribution), occupancy measures validated against surrogate data (>99.88%), and graph theoretical analyses showing significant differences in network topology (t>4.67, p<10^-4 for efficiency; t<-5.82, p<10^-6 for modularity). The statistical rigor and consistency across measures strongly support this result.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "0cd2cd15-556e-4ae7-956c-814168fdf147",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "The three brain states correspond to theoretical components of language faculty: State #1 (sensory-motor networks) to external sensory-motor module, State #2 (language and frontal-parietal networks) to basic linguistic component, and State #3 (DMN and frontal-parietal networks) to internal conceptual-intentional component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While claims C18, C20, C22 provide clear spatial characterizations from HMM data, the associations with language faculty components (C19, C21, C23) are inferred rather than directly demonstrated. The correspondence relies on spatial overlap with theoretical expectations (C11) but lacks direct causal or manipulative evidence linking specific states to specific language functions. This remains a plausible interpretation requiring further validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "Brain states are selectively modulated by narrative properties at different timescales: State #1 by acoustic envelope, State #2 by word-level semantic coherence, and State #3 by clause-level semantic coherence, with correlations validated through permutation testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C33-C40 provide statistical evidence for selective modulation with appropriate controls (FDR correction, permutation testing exceeding 99.28-99.8% of null distributions). However, the effect sizes are small (r\u22480.03), which the authors acknowledge is typical for fMRI studies. The selective pattern across states and the statistical validation support the result, though the modest effect sizes suggest these features explain only a portion of state dynamics.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "Temporal alignment of brain state expression with best performers and group mean predicts narrative comprehension scores (r=0.31-0.51), and this relationship persists after controlling for head movement (a proxy for task engagement), while overall state occupancy does not predict comprehension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C42-C50 demonstrate brain-behavior relationships with appropriate controls. The correlations are moderate and significant (r=0.27-0.51), persist after controlling for head movement confound (partial r=0.30-0.31 for States #1 and #2), and show specificity (timing matters but not overall occupancy, C49). The control for task engagement (C45-C48) strengthens the interpretation that alignment reflects cognitive processes rather than general attention.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "e889e793-5f18-4fa0-86d0-639ece2e92f1",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "The tripartite state organization is driven by language processing, as evidenced by State #2 serving as hub during both comprehensible and unintelligible speech (but not rest), and State #2 occupancy increasing monotonically with linguistic demands (rest < unintelligible < comprehension) while State #3 decreases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C51-C55 provide systematic evidence across three conditions with varying linguistic demands. The pattern is internally consistent: State #2 acts as hub during language conditions but not rest (C51-C52), and occupancy measures show monotonic relationships with linguistic processing demands (C53-C54). This cross-condition comparison effectively isolates language processing as the key driver of the observed state dynamics.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "06ad1816-910f-4086-ae4c-179881ad49e2",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "The tripartite state organization replicates across different brain atlases and generalizes to older adults, though some effects (clause-level modulation, brain-behavior correlations) do not replicate in the older adult sample, potentially due to age-related heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C7, C13-C14 demonstrate replication of the core three-state finding across parcellation schemes and age groups. The null findings in older adults (C65-C66) are appropriately acknowledged and explained by age-related heterogeneity with supporting evidence (C67-C68 showing lower ISC in older adults). The partial replication strengthens confidence in the core finding while appropriately noting boundary conditions.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "8e396450-77d9-479f-8449-0ec4c1a96750",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "The study proposes that narrative comprehension arises from dynamic switching through a tripartite state space where each state serves specific language functions, with effective comprehension requiring timely engagement of states, providing a mechanistic account that reconciles modular and network approaches to brain function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Claims C8-C9 and C71-C73, C78, C81-C82 represent high-level theoretical interpretations and syntheses of the empirical findings. While the data support dynamic state switching and timing-dependent behavioral relationships, the mechanistic claims about how states 'serve' specific functions and the reconciliation of theoretical frameworks are inferences that extend beyond what the correlational data directly demonstrate. These remain plausible interpretations requiring further causal validation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f22d63de-dc7b-4276-9096-5698a6c31684",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "The study employed appropriate methods including 64 young adults (main dataset) and 30 older adults (replication), validated behavioral measures (inter-rater reliability r=0.74), state-of-the-art brain parcellation, and BERT-based semantic feature extraction with dimensionality reduction, with proper ethical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C57-C64, C74-C76 describe methodological details that are internally consistent and follow established practices. Sample sizes are reasonable for fMRI studies, behavioral measures show good reliability, and computational methods (brain parcellation, BERT embeddings, PCA) are appropriately cited and justified. Ethical procedures are documented (C74-C75).",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a",
+      "content_id": "a3ed197d-6e43-4a70-acd6-6470e8961ce4",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "The study is grounded in established theoretical frameworks about speech comprehension, dynamic brain function, language faculty architecture, and hierarchical timescales, with findings consistent with prior literature on brain activity patterns during language processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Claims C1, C10-C11, C56, C69-C70, C77, C79 appropriately cite and represent established knowledge from cognitive neuroscience and psycholinguistics. Claim C77 explicitly validates consistency with prior findings. Claim C80 is appropriately speculative about future applications. These background claims provide appropriate theoretical context for the empirical work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "73b124a1-b479-41eb-a916-ceae2f932930",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "The authors applied Hidden Markov Modeling to fMRI data and identified three distinct brain states during narrative comprehension, characterized by activity in sensory-motor (State #1), bilateral temporal (State #2), and default mode networks (State #3). This three-state model was optimal across different parcellation schemes and replicated in an independent dataset of older adults.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly affirm this finding. One reviewer states 'the conclusions of the paper are well-supported by the data' and notes 'A strength of the paper is that the authors repeated the HMM analyses across different tasks and an independent dataset and found that the data was consistently best fit by 3 brain states.' Another reviewer describes the manuscript as 'well written, the analyses were sound, and the results had clear implications.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "834ae8a6-47ce-4deb-8e90-be6a87470720",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "State #2 acts as a transitional hub between States #1 and #3, with the brain spending the most time in State #2 (46.7% fractional occupancy). When occupied by State #2, the brain exhibits higher global efficiency and lower modularity compared to the other states, enabling efficient information integration across functional systems.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers accept these findings without critique. One reviewer summarizes: 'States 1 and 3 were more likely to transition to State 2 than between one another, suggesting that State 2 acts as a transition hub between states.' The editor's summary also notes the study 'reveals three brain states' and discusses 'how brain state transitions in narrative comprehension relate to stimulus-specific features,' implicitly accepting the transition dynamics.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "The three brain states are selectively modulated by different narrative properties: State #1 correlates with acoustic features (speech envelope), State #2 with word-level semantic coherence, and State #3 with clause-level semantic coherence, providing evidence for functional relevance to different language components.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "While reviewers acknowledge this as an important contribution, they express concerns about the strength of the evidence. One reviewer notes 'An important contribution of this paper is that it relates the expression of brain states to specific features of the stimulus in a manner that is consistent with theoretical predictions,' but immediately qualifies: 'The correlation between narrative features and brain state expression was reliable, but relatively low (~0.03). As discussed in the manuscript, this could be due to measurement noise, as well as narrative features accounting for a small proportion of cognitive processes underlying the brain states.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "d1fb52bb-33d0-459d-963d-6b9d39310f09",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "The three brain states correspond to distinct components of language faculty: State #1 to external sensory-motor processing, State #2 to basic linguistic/lexical processing, and State #3 to internal conceptual-intentional processing. The brain switches between these states rather than engaging all processes in parallel with equal priority.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewers acknowledge this interpretation but suggest alternative explanations. One reviewer notes: 'the functional role of these states remains under-explored' and proposes that 'a \"single-process\" account where the states differ in terms of the temporal window for which one needs to integrate information over may offer a more parsimonious account than a multi-process account where the states correspond to distinct processes. This possibility is mentioned briefly in the introduction, but not developed further.' This indicates the multi-process interpretation is not definitively established.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "fd28c79a-cf92-4a29-bb68-d58268402c1b",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "Alignment with best performers in brain state expression predicts narrative comprehension scores, with timely engagement of states (rather than overall magnitude of engagement) being crucial for comprehension. These correlations remain significant after controlling for head movement effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers affirm this finding. One reviewer states: 'Participants whose brain state trajectories closely matched those of an individual with high comprehension scores tended to have higher comprehension scores themselves, suggesting that optimal transitions between brain states facilitated narrative comprehension.' The editor's summary notes the study 'leverag[es] hidden Markov modeling of fMRI data to link brain state dynamics to comprehension scores,' accepting this brain-behavior relationship.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "The tripartite state space is specific to language processing, as demonstrated by differences across conditions: State #2 serves as the transitional hub during narrative comprehension and unintelligible speech but not during rest, and State #2 fractional occupancy increases monotonically from rest to incomprehensible speech to narrative comprehension.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers accept these findings. One reviewer notes: 'the estimated brain states were specific to speech comprehension but not at rest or when listening to non-comprehensible speech' as one of the 'many interesting findings' presented. The reviewer also states 'the authors repeated the HMM analyses across different tasks' as a strength, and notes that 'the organization of the three states was task dependent,' which aligns with the claim about language-specific dynamics.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "114d3d43-90ee-4f3b-a881-2779be8e5df3",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "In the older adult replication dataset, no modulation effect of clause-level semantic coherence was found, and no significant correlations were observed between inter-subject alignment in brain states and narrative comprehension, possibly due to substantial heterogeneity among older adults.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers do not challenge these null findings or the authors' explanation. The lack of reviewer critique of these replication limitations, combined with their overall positive assessment that 'the conclusions of the paper are well-supported by the data,' suggests acceptance of these results and their interpretation as age-related heterogeneity effects.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "6ac667c2-371f-4a16-9aae-b48d1b4fc0ea",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R8",
+      "result_type": "peer",
+      "result": "The three-state model is reproducible across different brain network atlases (Yeo-7 Networks) and shows hierarchical correspondence with models using different numbers of states (4-state and 10-state models can be reconstructed to match the 3-state model).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers explicitly praise the robustness analyses. One reviewer states: 'A strength of the paper is that the authors repeated the HMM analyses across different tasks (Figure 5) and an independent dataset (Figure S3) and found that the data was consistently best fit by 3 brain states.' This demonstrates reviewer acceptance of the reproducibility claims.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "f9ec7452-b7e4-47b7-88d2-1d65ed3c06cb",
+      "content_id": "bf7f547a-ad90-4ed9-9c44-3f8c890015d4",
+      "result_id": "R9",
+      "result_type": "peer",
+      "result": "The study provides a unifying perspective reconciling modular and dynamic network approaches to brain function, showing that the brain follows modular organization with regions specializing in specific functions, but the importance of these regions dynamically changes over time, and goal-directed behaviors arise from precise temporal coordination of functional modules.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers affirm the theoretical contribution. The editor's summary states the study 'provides important insights into the brain activity and connectivity underlying speech comprehension' and that findings 'advance our understanding of how brain state transitions in narrative comprehension relate to stimulus-specific features.' One reviewer notes 'the results had clear implications' and appreciated 'the way the authors theoretically grounded their hypotheses,' indicating acceptance of the theoretical framework.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f0512c2b-1c25-44df-a160-4862b25bebb9",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "626d6d18-b10d-4858-bb76-4b29a269727c",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "9e280e39-e67d-49cc-926b-144496bef4c0",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "807c1942-c67e-4c98-b787-f030967707b5",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "dae0d36a-de20-4c55-8655-1102df5aa5f2",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "e8f27e45-d99b-4ed4-bd91-f863b93867ae",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "3631e949-30cb-443d-a33a-4b58f21b6425",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "304b549f-affe-4f32-b6d5-26c0886fc761",
+      "result_id": "f4959710-90d2-42ce-917a-e24a91df2448"
+    },
+    {
+      "claim_id": "966d9a6b-4a8f-4c3f-a117-0bbc1073d2e8",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "9ec5bf72-77df-43cf-a51b-4fed91b21316",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "8e5b2d54-8da0-45f0-9571-37679467a515",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "718a6697-72ac-4cd1-aed7-77d38db762ba",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "fced4319-7f10-4119-aad9-cad169a7e008",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "2302f367-55bb-4065-b6d7-1119e0880fd8",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "b6f46025-b0ba-4c3d-830f-fe75b698018b",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "2856a52c-5a81-4c90-a031-8b497a5792b0",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "c36684b2-b33e-4ccc-9bca-32aa3be1b4f2",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "730d4ebf-2813-4155-8750-d118cd7cf175",
+      "result_id": "6ad3faad-9718-4653-992b-68e1886241bd"
+    },
+    {
+      "claim_id": "d6c43df0-e8e7-4b19-839e-b4967cb6ddc7",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "f7392479-2ad3-4531-881f-85cbf01ce065",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "9c1232c0-7419-49a3-82ea-c1ffacec77d1",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "7e92680f-9baf-4175-aa99-9e7acde2dfa8",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "2568bdae-b1cb-4a1b-9ff4-5a8c98c50cf7",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "30e63432-623c-411d-be66-c59d25664f1a",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "f47131b8-003b-49b2-b9ae-fc5e9c267d1b",
+      "result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147"
+    },
+    {
+      "claim_id": "496dcf7a-5699-4e57-9511-306213637578",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "fb21653f-b939-4d5a-9693-55b7b968e648",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "536b3a5e-a263-4589-b829-bd2d51f5eb69",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "9cb824db-fcd6-4e5e-8074-67ba240a3b4d",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "9afa39da-8d6d-46f5-959d-97e59d570e89",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "5729ee16-b8b1-4a2a-a38c-fa101dae6c09",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "7fae9d89-997f-477f-a879-5e3c271d2e9b",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "0c3a901b-f74e-4946-a9e4-c17f8b07aa4d",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "8159fb0d-a283-4ab3-9755-17e155fc135c",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "18ee2045-905e-4ead-a9ab-b1b2ba908bcb",
+      "result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe"
+    },
+    {
+      "claim_id": "f4111840-8b76-4d32-a389-7002ef914d16",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "def5c3a6-29ae-4682-a271-5591c68b7d19",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "cdf16562-1f8f-49ee-8ab9-47b7231527be",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "98b7c66e-5a1c-48df-a0f6-3a70b3de4e2b",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "068df394-21c6-400d-9a70-41f9923ed7a2",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "ee66494b-ba4f-47f3-8504-c9fffb059f22",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "48b7e03b-4c45-4289-9950-9c2e176bd169",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "7254b44d-65c6-4b6a-87b5-4a5b25bcfe1e",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "866571c5-ae16-4c2e-86e7-154394fdc399",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "dc9ea94d-f007-4c11-a0ee-689022b9c74a",
+      "result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d"
+    },
+    {
+      "claim_id": "5d1951c1-bd15-4d83-a868-1367b985fbb3",
+      "result_id": "e889e793-5f18-4fa0-86d0-639ece2e92f1"
+    },
+    {
+      "claim_id": "dccf3816-598c-42f6-a389-2a7f0a4bf289",
+      "result_id": "e889e793-5f18-4fa0-86d0-639ece2e92f1"
+    },
+    {
+      "claim_id": "7e77fbcc-e3ca-4ec9-a703-d691a8b8f2e3",
+      "result_id": "e889e793-5f18-4fa0-86d0-639ece2e92f1"
+    },
+    {
+      "claim_id": "6e68f0d6-a758-4bc1-bde7-fbc30cb703e7",
+      "result_id": "e889e793-5f18-4fa0-86d0-639ece2e92f1"
+    },
+    {
+      "claim_id": "252308af-778d-49ed-986d-628ae66a39ab",
+      "result_id": "e889e793-5f18-4fa0-86d0-639ece2e92f1"
+    },
+    {
+      "claim_id": "fcc8d1c7-d9bd-4ea1-8ec9-1460ac086093",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "807c1942-c67e-4c98-b787-f030967707b5",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "dae0d36a-de20-4c55-8655-1102df5aa5f2",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "f7b7c428-fca6-4c30-b376-c1189cfddb2a",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "f14c9cac-6c56-4289-bde4-713aa0de7337",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "db1fff83-ea05-4b9e-9864-e474c39f194b",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "2d5cc3e6-f623-4575-83f2-65624067dbfe",
+      "result_id": "06ad1816-910f-4086-ae4c-179881ad49e2"
+    },
+    {
+      "claim_id": "d3bab40c-2016-4090-94b4-9211ccf111e4",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "56db076c-d370-44e9-8d14-465c06eb7f41",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "1080e257-15d8-4d31-86cd-e6503c7fcd64",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "af6149cf-928a-4e83-b63a-1f17941b2314",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "a44af26f-a1e6-4148-90e8-c633be1a972c",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "dbd18a15-bc40-499f-8535-0f259a81be33",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "5a803e1e-39ff-44bf-80f9-10f59011f97e",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "c9821a95-4b9b-4792-9c9e-273589665d97",
+      "result_id": "8e396450-77d9-479f-8449-0ec4c1a96750"
+    },
+    {
+      "claim_id": "84ea49e2-b202-40c9-8bcb-e50c8e80ae94",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "1a741725-49f0-476c-afa2-34b8ddac370c",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "d2f1f0b3-5127-4856-a2c6-e3c41f9e47a1",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "6d16f5c5-c095-48f8-a76c-b8c4c6b5dbca",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "ac7aaef0-a464-4fd6-a3f2-ba9c40f87695",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "eeb8b50c-553e-4768-a4cf-9c923072facd",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "d91aaf53-10ca-4f3d-91b4-041f8a9b0956",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "0caa0596-1634-4c85-92ac-5a3ce96d5635",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "4a85458b-5670-40fe-91cb-f59ca6695970",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "653c01a8-8241-4828-b98c-21495ba38ee2",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "28e3bf7a-e297-4c76-918f-9a2effc9e7d2",
+      "result_id": "f22d63de-dc7b-4276-9096-5698a6c31684"
+    },
+    {
+      "claim_id": "c628810d-c1fa-4128-bc5d-3ac952f4673d",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "5ffb3323-de4c-4c3b-8700-daff0a515b1d",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "f47131b8-003b-49b2-b9ae-fc5e9c267d1b",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "a5f654d1-aa4a-47ef-823b-05760db1b29a",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "756d961c-daa7-4575-b285-a95c971a1672",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "c85f8254-9543-46a9-bbdd-f11b30f90acd",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "4c2d3372-f33c-486d-aed5-01e90c5dfe56",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "f1bf19bc-403d-4dcf-af29-f08a49b8f4fa",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "11848f79-e8ef-4326-8839-d170702e4f8e",
+      "result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a"
+    },
+    {
+      "claim_id": "f0512c2b-1c25-44df-a160-4862b25bebb9",
+      "result_id": "73b124a1-b479-41eb-a916-ceae2f932930"
+    },
+    {
+      "claim_id": "626d6d18-b10d-4858-bb76-4b29a269727c",
+      "result_id": "73b124a1-b479-41eb-a916-ceae2f932930"
+    },
+    {
+      "claim_id": "9e280e39-e67d-49cc-926b-144496bef4c0",
+      "result_id": "73b124a1-b479-41eb-a916-ceae2f932930"
+    },
+    {
+      "claim_id": "807c1942-c67e-4c98-b787-f030967707b5",
+      "result_id": "73b124a1-b479-41eb-a916-ceae2f932930"
+    },
+    {
+      "claim_id": "dae0d36a-de20-4c55-8655-1102df5aa5f2",
+      "result_id": "73b124a1-b479-41eb-a916-ceae2f932930"
+    },
+    {
+      "claim_id": "e8f27e45-d99b-4ed4-bd91-f863b93867ae",
+      "result_id": "73b124a1-b479-41eb-a916-ceae2f932930"
+    },
+    {
+      "claim_id": "966d9a6b-4a8f-4c3f-a117-0bbc1073d2e8",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "9ec5bf72-77df-43cf-a51b-4fed91b21316",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "8e5b2d54-8da0-45f0-9571-37679467a515",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "718a6697-72ac-4cd1-aed7-77d38db762ba",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "fced4319-7f10-4119-aad9-cad169a7e008",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "2302f367-55bb-4065-b6d7-1119e0880fd8",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "b6f46025-b0ba-4c3d-830f-fe75b698018b",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "2856a52c-5a81-4c90-a031-8b497a5792b0",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "c36684b2-b33e-4ccc-9bca-32aa3be1b4f2",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "730d4ebf-2813-4155-8750-d118cd7cf175",
+      "result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720"
+    },
+    {
+      "claim_id": "496dcf7a-5699-4e57-9511-306213637578",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "fb21653f-b939-4d5a-9693-55b7b968e648",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "536b3a5e-a263-4589-b829-bd2d51f5eb69",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "9cb824db-fcd6-4e5e-8074-67ba240a3b4d",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "9afa39da-8d6d-46f5-959d-97e59d570e89",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "5729ee16-b8b1-4a2a-a38c-fa101dae6c09",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "7fae9d89-997f-477f-a879-5e3c271d2e9b",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "0c3a901b-f74e-4946-a9e4-c17f8b07aa4d",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "8159fb0d-a283-4ab3-9755-17e155fc135c",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "18ee2045-905e-4ead-a9ab-b1b2ba908bcb",
+      "result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13"
+    },
+    {
+      "claim_id": "d3bab40c-2016-4090-94b4-9211ccf111e4",
+      "result_id": "d1fb52bb-33d0-459d-963d-6b9d39310f09"
+    },
+    {
+      "claim_id": "f7392479-2ad3-4531-881f-85cbf01ce065",
+      "result_id": "d1fb52bb-33d0-459d-963d-6b9d39310f09"
+    },
+    {
+      "claim_id": "7e92680f-9baf-4175-aa99-9e7acde2dfa8",
+      "result_id": "d1fb52bb-33d0-459d-963d-6b9d39310f09"
+    },
+    {
+      "claim_id": "30e63432-623c-411d-be66-c59d25664f1a",
+      "result_id": "d1fb52bb-33d0-459d-963d-6b9d39310f09"
+    },
+    {
+      "claim_id": "dbd18a15-bc40-499f-8535-0f259a81be33",
+      "result_id": "d1fb52bb-33d0-459d-963d-6b9d39310f09"
+    },
+    {
+      "claim_id": "f4111840-8b76-4d32-a389-7002ef914d16",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "56db076c-d370-44e9-8d14-465c06eb7f41",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "def5c3a6-29ae-4682-a271-5591c68b7d19",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "cdf16562-1f8f-49ee-8ab9-47b7231527be",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "98b7c66e-5a1c-48df-a0f6-3a70b3de4e2b",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "48b7e03b-4c45-4289-9950-9c2e176bd169",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "7254b44d-65c6-4b6a-87b5-4a5b25bcfe1e",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "866571c5-ae16-4c2e-86e7-154394fdc399",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "dc9ea94d-f007-4c11-a0ee-689022b9c74a",
+      "result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b"
+    },
+    {
+      "claim_id": "5d1951c1-bd15-4d83-a868-1367b985fbb3",
+      "result_id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab"
+    },
+    {
+      "claim_id": "dccf3816-598c-42f6-a389-2a7f0a4bf289",
+      "result_id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab"
+    },
+    {
+      "claim_id": "7e77fbcc-e3ca-4ec9-a703-d691a8b8f2e3",
+      "result_id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab"
+    },
+    {
+      "claim_id": "6e68f0d6-a758-4bc1-bde7-fbc30cb703e7",
+      "result_id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab"
+    },
+    {
+      "claim_id": "252308af-778d-49ed-986d-628ae66a39ab",
+      "result_id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab"
+    },
+    {
+      "claim_id": "f7b7c428-fca6-4c30-b376-c1189cfddb2a",
+      "result_id": "114d3d43-90ee-4f3b-a881-2779be8e5df3"
+    },
+    {
+      "claim_id": "f14c9cac-6c56-4289-bde4-713aa0de7337",
+      "result_id": "114d3d43-90ee-4f3b-a881-2779be8e5df3"
+    },
+    {
+      "claim_id": "db1fff83-ea05-4b9e-9864-e474c39f194b",
+      "result_id": "114d3d43-90ee-4f3b-a881-2779be8e5df3"
+    },
+    {
+      "claim_id": "2d5cc3e6-f623-4575-83f2-65624067dbfe",
+      "result_id": "114d3d43-90ee-4f3b-a881-2779be8e5df3"
+    },
+    {
+      "claim_id": "fcc8d1c7-d9bd-4ea1-8ec9-1460ac086093",
+      "result_id": "6ac667c2-371f-4a16-9aae-b48d1b4fc0ea"
+    },
+    {
+      "claim_id": "3631e949-30cb-443d-a33a-4b58f21b6425",
+      "result_id": "6ac667c2-371f-4a16-9aae-b48d1b4fc0ea"
+    },
+    {
+      "claim_id": "304b549f-affe-4f32-b6d5-26c0886fc761",
+      "result_id": "6ac667c2-371f-4a16-9aae-b48d1b4fc0ea"
+    },
+    {
+      "claim_id": "1080e257-15d8-4d31-86cd-e6503c7fcd64",
+      "result_id": "f9ec7452-b7e4-47b7-88d2-1d65ed3c06cb"
+    },
+    {
+      "claim_id": "af6149cf-928a-4e83-b63a-1f17941b2314",
+      "result_id": "f9ec7452-b7e4-47b7-88d2-1d65ed3c06cb"
+    },
+    {
+      "claim_id": "a44af26f-a1e6-4148-90e8-c633be1a972c",
+      "result_id": "f9ec7452-b7e4-47b7-88d2-1d65ed3c06cb"
+    },
+    {
+      "claim_id": "c9821a95-4b9b-4792-9c9e-273589665d97",
+      "result_id": "f9ec7452-b7e4-47b7-88d2-1d65ed3c06cb"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c6335bd3-6427-451d-a4f8-a9afbff53a13",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "6ad3faad-9718-4653-992b-68e1886241bd",
+      "peer_result_id": "834ae8a6-47ce-4deb-8e90-be6a87470720",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Perfect agreement on transition dynamics and State #2 as hub (C4, C24-C32). Both evaluations accept the statistical evidence from transition probability analysis, occupancy measures, and graph theoretical analyses. OpenEval emphasizes statistical rigor while peer reviewers summarize findings without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "afb79027-e3f9-45b6-a2e9-ffe4e838c504",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "0266a3ee-96d0-416d-b2fc-a0d5b0daacfe",
+      "peer_result_id": "a7d7c6ee-df7b-4c36-9131-aa73c6957e13",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on stimulus feature modulation (C5, C33-C41). OpenEval finds statistical evidence sufficient despite small effect sizes (r\u22480.03), while peer reviewers express concern about the low correlations and acknowledge measurement noise may limit interpretation. Both recognize the finding as important but differ on evidential strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "9c8f8a4b-a0da-4d79-9969-51525765f499",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "e889e793-5f18-4fa0-86d0-639ece2e92f1",
+      "peer_result_id": "51d3fc7e-83d9-4085-9d0c-e9af43162eab",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Perfect agreement on language-specific state dynamics (C51-C55). Both evaluations accept that State #2 acts as hub during language conditions but not rest, and that occupancy shows monotonic relationships with linguistic demands. Reviewers note this as a strength demonstrating task-specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "08546b5b-4ab5-4774-a255-71f24f04addc",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "f4959710-90d2-42ce-917a-e24a91df2448",
+      "peer_result_id": "73b124a1-b479-41eb-a916-ceae2f932930",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Strong agreement on three-state organization (C2, C3, C12-C15). Both evaluations emphasize robustness across analytical approaches and datasets. Peer reviewers explicitly praise replication across tasks and datasets as a key strength. OpenEval includes additional claims (C16-C17) about hierarchical reconstruction not explicitly mentioned by peer reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "c57a37d5-71bf-4f83-8da2-a47ffbd43321",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "b3c9a59d-1585-4923-a508-7c3b8cc6677d",
+      "peer_result_id": "fd28c79a-cf92-4a29-bb68-d58268402c1b",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on brain-behavior relationships (C6, C42-C50). Both accept moderate correlations (r=0.27-0.51) and timing-dependent effects. OpenEval emphasizes control for confounds while peer reviewers focus on the alignment between state trajectories and comprehension scores. Both find evidence sufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "3b22b8e1-de43-49e8-bb82-892876a06064",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "06ad1816-910f-4086-ae4c-179881ad49e2",
+      "peer_result_id": "114d3d43-90ee-4f3b-a881-2779be8e5df3",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on null findings in older adults (C65-C68). Both evaluations accept the age-related heterogeneity explanation for failed replication. OpenEval also includes broader replication claims (C7, C13-C14) not explicitly addressed in this peer review result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "07e01b5f-959b-47c4-9992-8c8dd9976043",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "8e396450-77d9-479f-8449-0ec4c1a96750",
+      "peer_result_id": "f9ec7452-b7e4-47b7-88d2-1d65ed3c06cb",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "partial",
+      "comparison": "Disagreement on theoretical synthesis (C71-C73, C82). OpenEval rates mechanistic interpretations as uncertain, noting they extend beyond correlational data. Peer reviewers accept the theoretical framework, praising clear implications and theoretical grounding. Shared claims focus on high-level interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "fc04bf64-48ae-4004-8743-6551b2537745",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "0cd2cd15-556e-4ae7-956c-814168fdf147",
+      "peer_result_id": "d1fb52bb-33d0-459d-963d-6b9d39310f09",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Agreement on uncertainty regarding functional interpretations (C19, C21, C23). OpenEval notes associations are inferred rather than demonstrated. Peer reviewers suggest alternative single-process accounts may be more parsimonious than multi-process interpretations, indicating the functional roles remain under-explored.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "fed8c4c7-d378-42ea-ab5b-f6e220ddda00",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "f4959710-90d2-42ce-917a-e24a91df2448",
+      "peer_result_id": "6ac667c2-371f-4a16-9aae-b48d1b4fc0ea",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Both address robustness/replication (C16-C17 overlap). OpenEval includes these in broader three-state evidence, while peer reviewers specifically praise replication across tasks and datasets as a methodological strength. Agreement on reproducibility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "e7fffd31-89f7-46a7-962c-eae770cb7419",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "06ad1816-910f-4086-ae4c-179881ad49e2",
+      "peer_result_id": "6ac667c2-371f-4a16-9aae-b48d1b4fc0ea",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Minimal overlap on replication claims (C7). OpenEval emphasizes replication across parcellation schemes and age groups, while peer reviewers focus on cross-task replication. Both accept robustness evidence positively.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "3d0ee5f6-46e1-4188-80a2-9063dd4583e5",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "f22d63de-dc7b-4276-9096-5698a6c31684",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates methodological details (C57-C64, C74-C76) including sample sizes, behavioral measures, computational methods, and ethical procedures. No corresponding peer review evaluation found addressing these specific methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    },
+    {
+      "id": "338efc4d-81d1-4457-9587-ae7703f56157",
+      "submission_id": "403bb6db-d36b-4325-9551-4a09ac0b9d4c",
+      "openeval_result_id": "a37cf7ee-10a9-4c33-99eb-cc33eb525e7a",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluates background/contextual claims (C1, C10-C11, C56, C69-C70, C77, C79-C80) about established knowledge and theoretical context. No corresponding peer review evaluation found specifically addressing these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:14:48.435241Z"
+    }
+  ]
+}

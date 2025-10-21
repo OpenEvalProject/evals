@@ -1,0 +1,2205 @@
+{
+  "submission": {
+    "id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-21T23:20:41.357249Z",
+    "updated_at": "2025-10-21T23:20:41.357249Z"
+  },
+  "content": [
+    {
+      "id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "content_type": "manuscript",
+      "content_text": "# Unanticipated mechanisms of covalent inhibitor and synthetic ligand cobinding to PPAR\u03b3\n\n## Authors\n\n- Jinsai Shang<sup>1</sup> ([ORCID: 0000-0001-8164-1544](https://orcid.org/0000-0001-8164-1544)) \u2020\n- Douglas J Kojetin<sup>1</sup> ([ORCID: 0000-0001-8058-6168](https://orcid.org/0000-0001-8058-6168)) \u2020\n\n### Affiliations\n\n1. https://ror.org/056pdzs28 Department of Integrative Structural and Computational Biology, Scripps Research and The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology Jupiter United States\n2. https://ror.org/00zat6v61 School of Basic Medical Sciences, Guangzhou Laboratory, Guangzhou Medical University Guangzhou China\n3. https://ror.org/02vm5rt34 Department of Biochemistry, Vanderbilt University Nashville United States\n4. https://ror.org/02vm5rt34 Center for Structural Biology, Vanderbilt University Nashville United States\n5. https://ror.org/02vm5rt34 Vanderbilt Institute of Chemical Biology, Vanderbilt University Nashville United States\n6. https://ror.org/02vm5rt34 Center for Applied AI in Protein Dynamics, Vanderbilt University Nashville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeroxisome proliferator-activated receptor gamma (PPAR\u03b3) is a nuclear receptor transcription factor that regulates gene expression programs in response to ligand binding. Endogenous and synthetic ligands, including covalent antagonist inhibitors GW9662 and T0070907, are thought to compete for the orthosteric pocket in the ligand-binding domain (LBD). However, we previously showed that synthetic PPAR\u03b3 ligands can cooperatively cobind with and reposition a bound endogenous orthosteric ligand to an alternate site, synergistically regulating PPAR\u03b3 structure and function (Shang et al., 2018). Here, we reveal the structural mechanism of cobinding between a synthetic covalent antagonist inhibitor with other synthetic ligands. Biochemical and NMR data show that covalent inhibitors weaken\u2014but do not prevent\u2014the binding of other ligands via an allosteric mechanism, rather than direct ligand clashing, by shifting the LBD ensemble toward a transcriptionally repressive conformation, which structurally clashes with orthosteric ligand binding. Crystal structures reveal different cobinding mechanisms including alternate site binding to unexpectedly adopting an orthosteric binding mode by altering the covalent inhibitor binding pose. Our findings highlight the significant flexibility of the PPAR\u03b3 orthosteric pocket, its ability to accommodate multiple ligands, and demonstrate that GW9662 and T0070907 should not be used as chemical tools to inhibit ligand binding to PPAR\u03b3.\n\n## Introduction\n\nPeroxisome proliferator-activated receptor \u03b3 (PPAR\u03b3) is a ligand-regulated nuclear receptor transcription factor that regulates gene expression programs controlling adipogenesis and insulin sensitization. Endogenous PPAR\u03b3 ligands, which include lipids and fatty acids, bind to an orthosteric pocket within the PPAR\u03b3 ligand-binding domain (LBD) and function as PPAR\u03b3 agonists that activate gene programs (Itoh et al., 2008; Li et al., 2008; Malapaka et al., 2012; Kliewer et al., 1997; Kliewer et al., 1995; Waku et al., 2009; Shang et al., 2018). Synthetic small molecule PPAR\u03b3 ligands, which include FDA-approved antidiabetic drugs, also bind to the same orthosteric pocket, most of which function as agonists that activate PPAR\u03b3-mediated transcription. Endogenous and synthetic ligands were originally thought to compete for binding to the PPAR\u03b3 orthosteric pocket. However, we previously showed that endogenous and synthetic ligands can cobind to PPAR\u03b3, likely due to the large size and flexibility of the orthosteric pocket, and synergistically influence PPAR\u03b3 structure and function (Johnson et al., 2000).\n\nThe structural mechanism of agonist-induced activation of PPAR\u03b3 transcription has been revealed by structural biology studies including NMR spectroscopy and crystal structures. In the absence of ligand, the apo (ligand-free) PPAR\u03b3 LBD dynamically exchanges between two or more structural conformations (Shang et al., 2020). NMR data show that a critical structural element in the LBD called activation function-2 (AF-2) helix (helix 12), which is part of the AF-2 coactivator binding surface, exchanges between active and repressive conformations that can be stabilized upon binding ligand (Hughes et al., 2012). Agonist binding to the orthosteric pocket stabilizes a solvent exposed helix 12 conformation that enables high-affinity binding of coactivators and increases transcription (Shang et al., 2019; Frkic et al., 2023). Transcriptionally neutral antagonists and repressive inverse agonists developed from orthosteric agonist ligand scaffolds bind via a similar mechanism of agonists but stabilize non-active helix 12 conformations (Frkic et al., 2018; Zheng et al., 2018; Marciano et al., 2015; Lee et al., 2002).\n\nGW9662 and T0070907 are covalent ligands originally described as antagonists as they bind via a nucleophilic substitution mechanism to Cys285 located within the orthosteric pocket and were shown to inhibit binding of select reference PPAR\u03b3 agonists (Leesnitzer et al., 2002; Hughes et al., 2014). These ligands have been used extensively by the field as covalent antagonist inhibitors to block other synthetic ligands from binding PPAR\u03b3 to test for synthetic ligand specificity in functional experiments. However, we previously showed GW9662 and T0070907 do not block all ligands from binding to PPAR\u03b3 Johnson et al., 2000; Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024 \u2014 and moreover, they have distinct pharmacological PPAR\u03b3 functions as a transcriptionally neutral antagonist (GW9662) and repressive inverse agonist (T0070907) (Irwin et al., 2022). Although these covalent ligands have similar pharmacological functions to orthosteric non-covalent antagonists and inverse agonists, GW9662 and T0070907 function through a different structural mechanism: they slow the rate of exchange between transcriptionally active and repressive conformations natively populated in the apo-LBD, with T0070907 having a more pronounced effect than GW9662 (Hughes et al., 2012; Orsi et al., 2023). In the transcriptionally repressive conformation stabilized by covalent inverse agonists, helix 12 adopts a solvent-occluded conformation within the orthosteric pocket that overlaps with orthosteric ligand binding poses (Figure 1; Hughes et al., 2012; Orsi et al., 2023; Shang and Kojetin, 2021; Arifi et al., 2023). These and other published studies have informed a ligand activation model whereby agonist binding to the orthosteric pocket either displaces helix 12 from a solvent occluded repressive conformation within the orthosteric pocket to a solvent exposed active conformation, or selects for an active helix 12 conformation from the dynamic LBD ensemble (Jang et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig1-v1.jpg)\n\n**Figure 1.:** The active LBD (PDB 6ONJ) is stabilized by agonist (rosiglitazone) and coactivator peptide (TRAP220/MED1), whereas the repressive LBD (PDB 6ONI) is stabilized by covalent inverse agonist (T0070907) and corepressor peptide (NCoR1).\n\nWhat remains unclear is the structural basis of covalent inhibitor and synthetic ligand cobinding. This ligand cobinding mechanism was originally discovered in studies of alternate site ligand binding (Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024; Laghezza et al., 2018; Leijten-van de Gevel et al., 2022; Choi et al., 2011; Berger et al., 2003). Structural studies have mapped the alternate ligand-binding site (Hughes et al., 2016; Brust et al., 2017) when two equivalents of a synthetic ligand bind, one to the orthosteric pocket and another to the entrance of the orthosteric pocket (Jang et al., 2017). NMR and biochemical data revealed non-covalent synthetic compounds can still bind to the PPAR\u03b3 LBD in the presence of a covalent orthosteric inhibitor (Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024). While it is presumed that the non-covalent synthetic compound adopts a non-orthosteric binding mode at an alternate site, crystal structures to verify this cobinding mechanism are still needed. Here, using structural biology studies including NMR and crystallography, we confirm that GW9662 and T0070907 do not prevent other synthetic ligands from binding to PPAR\u03b3. Furthermore, we demonstrate that certain synthetic ligands can unexpectedly adopt an orthosteric binding pose when cobound with a covalent antagonist inhibitor.\n\n## Results\n\n## Covalent inhibitor and synthetic ligand cobinding influences PPAR\u03b3 LBD function\n\nWe assembled a set of four non-covalent synthetic PPAR\u03b3 ligands (BVT-13, MRL24, nTZDpa, and SR1664) previously shown to bind the PPAR\u03b3 LBD via two molar equivalents or bind in the presence of a covalent ligand, GW9662 or T0070907 (Hughes et al., 2016; Figure 2A). In that previous study, we showed that an analog of MRL24, called MRL20, can activate PPAR\u03b3-mediated transcription and increase the expression of PPAR\u03b3 target genes in differentiated mouse 3T3-L1 preadipocytes when cells were correlated with GW9662 or T0070907 covalent inhibitors. Using a time-resolved fluorescence resonance energy transfer (TR-FRET) biochemical ligand displacement assay, we verified the ligands bind PPAR\u03b3 LBD with Ki values (Figure 2B) consistent with published data (Ostberg et al., 2004; Acton et al., 2005; Ge et al., 2002; Yu et al., 2005). These ligands are generally classified as partial agonists that activate PPAR\u03b3 transcription with limited or weak efficacy, or non-agonists/antagonists that are transcriptionally neutral.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig2-v1.jpg)\n\n**Figure 2.:** (A) Chemical structures of the compounds. (B) TR-FRET ligand displacement data for the compounds (n=3; mean \u00b1s.d.).\n\nWe profiled the non-covalent synthetic ligands using TR-FRET coregulator peptide interaction assays (Figure 3A) to determine how the compounds affect interaction between the PPAR\u03b3 LBD and peptides derived from NCoR1 corepressor and TRAP220/MED1 coactivator proteins, two coregulator proteins that influence PPAR\u03b3 transcription in cells (Nolte et al., 1998; Bruning et al., 2007). Consistent with their partial agonist and/or antagonist profiles, the compounds did not significantly increase interaction with the TRAP220 coactivator peptide. Only two compounds, nTZDpa and SR1664, caused notable changes in the coactivator TR-FRET assay. Of these, nTZDpa showed a biphasic transition that may be due to the binding of more than one nTZDpa molecule, which is also suggested by 2D [1H,15N]-TROSY-HSQC NMR data where chemical shift perturbations (CSPs) are observed going from 1 to 2 equivalents of added ligand.\n\nWe next performed TR-FRET coregulator interaction assays using PPAR\u03b3 LBD protein that was first pretreated with a covalent ligand, GW9662 or T0070907, followed by titration of the non-covalent synthetic ligands. When bound to GW9662 or T0070907, corepressor peptide binding affinity to the LBD is progressively strengthened upon binding to GW9662 and T0070907 while coactivator peptide affinity is weakened according to their neutral and repressive pharmacological activities, respectively (Orsi et al., 2023). As a result of this change in coregulator affinity, the baseline TR-FRET signal progressively increases in the corepressor assay and decreases in the coactivator assay. Titration of the synthetic ligands shows notable changes in the NCoR1 corepressor TR-FRET assay, where the ligands decrease NCoR1 peptide interaction with IC50 profiles (Figure 3B) with a similar rank-order to ligand Ki values (MRL24 <nTZDpa < SR1664<BVT.13). Relatively minor changes are observed for the ligands in the TRAP220/MED1 coactivator TR-FRET assay except for MRL24, which shows a concentration-dependent increase in coactivator peptide recruitment. Taken together, these data indicate the functional effect of synthetic ligands binding to PPAR\u03b3 LBD in the presence of a covalent inhibitor is decreased corepressor peptide interaction. Notably, the synthetic ligand IC50 values are weakened (right shifted) more by the inverse agonist T0070907 compared to the neutral antagonist GW9662, suggesting that pharmacological repressive ligand efficacy may be involved in the ligand cobinding inhibitory mechanism.\n\n## NMR studies indicate covalent inhibitors allosterically weaken cobinding of non-covalent synthetic ligands by stabilizing a repressive conformation\n\nTwo mechanisms may contribute to the covalent inhibitor mechanism of weakening synthetic ligand cobinding. The covalent ligands could structurally overlap or clash with synthetic ligand orthosteric binding modes, leading to alternate site binding with a reduced binding affinity. In this case, the relatively simple phenyl group (GW9662) to pyridyl group (T0070907) change would somehow lead to a more robust clash between the covalent inhibitor and synthetic ligand. Alternatively, the TR-FRET data suggested a different mechanism that involves the repressive efficacy of the covalent ligand. The pharmacological shift from a neutral covalent antagonist (GW9662) to repressive covalent inverse agonist (T0070907) may allosterically shift the dynamic LBD ensemble towards a transcriptionally repressive conformation, where helix 12 adopts a solvent occluded conformation within the orthosteric pocket that structurally clashes with orthosteric binding of a synthetic ligand. In this case, synthetic ligand binding to T0070907-bound PPAR\u03b3 LBD would significantly influence the NMR-detected repressive LBD conformation where helix 12 is within the orthosteric pocket more than the active LBD conformation where helix 12 is solvent exposed and not occluding the orthosteric pocket.\n\nTo structurally assess the non-covalent cobinding mechanism, we performed protein NMR footprinting by comparing 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPAR\u03b3 LBD preincubated with a covalent ligand (GW9662 or T0070907) in the absence or presence of a synthetic ligand. Non-covalent ligand cobinding to GW9662-bound LBD shows NMR CSPs for select peaks (Figure 4A). In contrast, NMR CSPs are more pronounced for non-covalent ligand binding to T0070907-bound LBD (Figure 4B). Focusing on Gly399, a residue near the AF-2 surface that displays two T0070907-bound NMR peaks in slow exchange corresponding to the active or repressive LBD state but only one GW9662-bound active state peak (Hughes et al., 2012; Irwin et al., 2022; Orsi et al., 2023), cobinding of the non-covalent synthetic ligand causes the two NMR peaks in slow exchange to converge to one NMR peak. The NMR peaks corresponding to the repressive T0070907-bound conformation disappear, while the remaining peaks have NMR chemical shift values similar to the T0070907-bound active state but shifted along the active-repressive continuum (i.e. diagonal between the active and repressive T0070907-bound NMR peaks) that correlates with function (Orsi et al., 2023).\n\nAmong the synthetic ligands we tested, MRL24 cobinding shows an increase in TRAP220 coactivator peptide recruitment to T0070907-bound PPAR\u03b3 LBD and the largest shift NMR-detected shift of the LBD conformational ensemble towards an active state. In contrast, nTZDpa cobinding shows an antagonist-like profile in the TR-FRET data, decreasing both NCoR1 corepressor and to a lesser degree TRAP220 coactivator interaction, and shifts the NMR-detected shift of the LBD conformational ensemble towards an intermediate state between the active and repressive T0070907-observed populations.\n\nTaken together, these NMR-detected observations support the mechanism whereby the repressive conformation helix 12 within the orthosteric pocket of T0070907-bound LBD is displaced to a solvent-exposed active conformation. Furthermore, comparison of 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPAR\u03b3 LBD bound to the synthetic ligands alone, or cobound with GW9662 or T0070907, show similar spectral profiles with more subtle CSPs (Figure 4C) compared to the larger NMR CSPs observed when comparing 15N-labeled PPAR\u03b3 LBD bound to each synthetic ligand alone or T0070907-bound LBD relative to GW9662-bound LBD (Figure 4\u2014figure supplement 1; Hughes et al., 2012). This suggests the active conformation of the PPAR\u03b3 LBD when bound to a synthetic ligand alone vs. cobound to a covalent ligand are similar, which is supported by the TR-FRET data (Figure 3) showing that synthetic ligand cobinding to T0070907-bound PPAR\u03b3 LBD decreases corepressor peptide interaction.\n\n## Crystal structures reveal disparate alternate site ligand binding poses\n\nTo visualize the ligand cobinding poses, we first crystalized complexes of PPAR\u03b3 LBD covalently bound to GW9662 or T0070907, which produced solvent exposed active (chain A) and inactive (chain B) helix 12 conformations similar to apo-PPAR\u03b3 LBD (Bae et al., 2016), then we added synthetic ligands to the crystals using soaking methods. We obtained seven crystal structures in total where each synthetic ligand was cobound to either GW9662 or T0070907, except for SR1664 for which we only obtained a structure cobound to T0070907 (Table 1, Figure 5\u2014figure supplement 1). In most structures, electron density was observed for non-covalent and covalent ligands in both chains. However, in the nTZDpa structures, the covalent ligand was not observed in chain A; and nTZDpa was observed in chains A and B when cobound to GW9662, but only chain B when cobound to T0070907. The structures show high structural similarity to the transcriptionally active LBD conformation with rmsd values ranging from 0.77 to 1.03 \u212b (Table 2).\n\nWe compared our cobound crystal structures to published structures of PPAR\u03b3 LBD bound to non-covalent ligands\u2014BVT.13 (Chrisman et al., 2018), MRL24 (Chrisman et al., 2018), nTZDpa Chrisman et al., 2018, and SR1664 alone (Lee et al., 2002) or cobound to NCOA1 coactivator peptide Agirre et al., 2023 \u2014and alone to covalent ligands\u2014GW9662 Johnson et al., 2000 and T0070907 (Irwin et al., 2022). Overall, the LBD conformations when bound to a single ligand or cobound two ligands are highly similar, with only relatively minor conformational changes in certain residue side chains. Although this is largely influenced by the crystallized forms used for soaking, these findings are also consistent with the aforedescribed 2D NMR data, which indicates a similar LBD conformation for these different liganded states.\n\nFocusing on the non-covalent synthetic ligand cobinding poses (Figure 5A), most of the structures surprisingly showed that the ligand adopts a cobound conformation similar to orthosteric binding pose observed in crystals structures of PPAR\u03b3 LBD bound to the synthetic ligand alone (Figure 5B). Slight reorientations of portions of the synthetic ligand occur to accommodate the cobinding mode, as there are clashes between the synthetic orthosteric and covalent orthosteric ligand binding modes (Figure 5C). Of note, below we use \u2018orthosteric binding pose\u2019 to refer to the crystallized ligand conformation when PPAR\u03b3 LBD is bound to a single ligand.\n\nThe BVT.13 cobinding pose is similar to its orthosteric binding pose located near the \u03b2-sheet. However, the 2,4-dichloro group clashes with the orthosteric GW9662 and T0070907 binding poses, specifically the phenyl and pyridyl groups respectively, resulting in a slight reorientation of the 2,4-dichloro group to accommodate the cobound state. The MRL24 cobinding pose is also similar to its orthosteric ligand binding pose, which was surprising given its larger scaffold size significantly clashes with the orthosteric covalent ligand binding pose. The nTZDpa cobinding pose is also similar to its orthosteric binding pose near the \u03b2-sheet. However, the 1-chloro group clashes with the orthosteric covalent ligand binding pose, resulting in a minor reorientation in the cobinding pose. Finally, the SR1664 cobinding pose reveals an alternate site binding mode similar to the crystallized binding pose in the presence of NCOA1 peptide, with a slight reorientation of the benzoic acid group that avoids a clash with the orthosteric T0070907 binding pose. Notably, these alternate site binding modes are distinct from the orthosteric SR1664 binding mode obtained without coregulator peptide, which shows a large steric clash with the orthosteric covalent ligand binding pose.\n\nFocusing on the covalent ligand binding poses, previously determined crystal structures (Hughes et al., 2012) show that GW9662 and T0070907, when bound alone, are oriented in different directions within the orthosteric pocket in the active state when soaked into apo-PPAR\u03b3 LBD or repressive state when cobound to NCoR1 corepressor peptide, pointing towards or away from the \u03b2-sheet surface, respectively (Figure 6A). Cobinding of a non-covalent synthetic ligand has different effects on the covalent ligand binding pose (Figure 6B). For BVT.13, the covalent ligand cobinding pose is similar to the orthosteric binding pose. For MRL24, the cobound covalent ligands adopt a similar binding pose that is different from the active and repressive orthosteric binding poses. For nTZDpa, the cobound covalent ligands adopt different orientations, both of which are distinct from the active and repressive covalent ligand only-bound states. For SR1664, the cobinding mode of T0070907 is similar to the orthosteric binding mode. These structures show that the conformation of the covalent ligand can change and adapt to the cobound non-covalent ligand.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig6-v1.jpg)\n\n**Figure 6.:** (A) Structural overlay showing the orthosteric binding modes of GW9662 and T0070907 in crystal structures of PPAR\u03b3 LBD in active and repressive conformations. (B) Comparison of the covalent binding modes when singly bound (orthosteric) and cobound to a non-covalent synthetic ligand. Black arrows indicate the conformational differences between the orthosteric binding modes vs. cobinding modes. PDB codes for crystal structures used in the overlays are listed in the Materials and methods section.\n\nNotably, orthosteric ligand Ki values for the non-covalent compounds (Figure 2B) correlate with the ability of the non-covalent ligand to push the covalent ligand into a cobinding binding mode that is distinct from the active and repressive covalent ligand binding modes (Figure 6B). MRL24 and nTZDa, which are the most potent non-covalent ligands tested, pushed the covalent ligands into different non-natural conformations, whereas BVT.13 and SR1664 do not. Taken together with structural data showing that the covalent ligands naturally exchange between different active and repressive binding poses (Hughes et al., 2012; Irwin et al., 2022), these findings indicate the malleability of the dynamic orthosteric pocket, the natural orthosteric binding mode of the non-covalent ligand, and the relative orthosteric affinity of the non-covalent ligand may determine whether the covalent ligand traps a non-covalent ligand in the entrance to and/or the \u03b2-sheet region of the orthosteric pocket.\n\n## Discussion\n\nCrystal structures of PPAR\u03b3 bound to covalent and non-covalent synthetic ligands have shown overlapping ligand binding modes, indicating the covalent ligands should block binding of the non-covalent ligands. We and others have posited that cobinding of a non-covalent synthetic ligand to the PPAR\u03b3 LBD prebound to a covalent ligand (GW9662 or T0070907) would reveal an alternate site binding mode, different from the crystallized binding modes. To our surprise, the non-covalent ligand can bind via its native orthosteric binding mode by pushing the covalent ligand aside, or slightly adapt its binding mode within the orthosteric pocket. Our structural analysis of non-covalent ligand cobinding with a covalent ligand reveals several important observations and conclusions.\n\nEach of the non-covalent synthetic ligands utilizes unique mechanisms to cobind with the covalent ligands, as inferred from our crystal structures in which pre-formed crystals of the PPAR\u03b3 LBD were soaked with non-covalent synthetic ligands BVT.13 cobinds to a region of the orthosteric pocket that only slightly overlaps with the orthosteric covalent ligand binding pose, adopting a cobinding pose that is similar to when soaked into apo-PPAR\u03b3 LBD crystals. MRL24 and nTZDpa cobinding pushes the covalent orthosteric ligand into a different conformation, allowing these ligands to adopt their orthosteric binding modes in the cobound state. This finding was surprising for MRL24 in particular, as its orthosteric binding mode overlaps considerably with the orthosteric covalent ligand binding mode. In contrast, SR1664 cobinding occurs to the so-called alternate site, located at the entrance to the orthosteric pocket.\n\nIn our previous study, we observed synthetic and natural/endogenous ligand co-binding via co-crystallography where preformed crystals of PPAR\u03b3 LBD bound to unsaturated fatty acids (UFAs) were soaked with a synthetic ligand, which pushed the bound UFA to an alternate site within the orthosteric ligand-binding pocket (Johnson et al., 2000). In the scenario of synthetic ligand cobinding with a covalent inhibitor, it is possible that soaking a covalent inhibitor into preformed crystals where the PPAR\u03b3 LBD is already bound to a non-covalent ligand may prove to be difficult. The covalent inhibitor would need to flow through solvent channels within the crystal lattice, which may not be a problem. However, upon reaching the entrance surface to the orthosteric ligand-binding pocket, it may be difficult for the covalent inhibitor to gain access to the region of the orthosteric pocket required for covalent modification as the larger non-covalent ligand could block access. This potential order of addition problem may not be a problem for studies in solution or in cells, where the non-covalent ligand can more freely exchange in and out of the orthosteric pocket and over time the covalent reaction would reach full occupancy.\n\nOur data provide support to structural model where in the absence of ligand, the PPAR\u03b3 LBD exchanges between a transcriptionally repressive conformation where helix 12 is solvent occluded within the orthosteric pocket and a solvent exposed active conformation (Hughes et al., 2012). T0070907 binding slows the rate of exchange between these two conformations, stabilizing a long-lived active and repressive state (Irwin et al., 2022). GW9662-bound PPAR\u03b3 LBD also samples active and repressive states, as observed by PRE NMR (Hughes et al., 2012), although the active conformation is more abundantly populated (McCoy et al., 2007). Agonist binding occurs via a two-step mechanism involving a fast encounter complex binding step at the entrance to the orthosteric pocket followed by a slow conformational change where the ligand translocates into the orthosteric pocket (Jang et al., 2017). Our NMR data here show that non-covalent ligand cobinding to T0070907-bound PPAR\u03b3 LBD selects for an active conformation, as the repressive conformation NMR peak disappears. This indicates non-covalent ligand cobinding prevents the LBD from adopting a transcriptionally repressive helix 12 conformation within orthosteric pocket, explaining why non-covalent ligand cobinding of MRL24 and other PPAR\u03b3 agonists with a covalent ligand activates PPAR\u03b3 transcription (Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024). Another way to test this structural model could be through the use of covalent PPAR\u03b3 inverse agonist analogs with graded activity (Orsi et al., 2023), where one might posit that covalent inverse agonist analogs that shift the LBD conformational ensemble towards a fully repressive LBD conformation may better inhibit synthetic ligand cobinding.\n\nOur findings may have profound implications as these GW9662 and T0070907 have been used in many published studies as covalent inhibitors to block ligand binding to PPAR\u03b3 to test for binding and functional specificity in cells. As of May 2024, more than 1900 citations referring to \u2018GW9662 or T0070907\u2019 are reported in PubMed. Nearly 1000 of these publications were published in 2015 or later, after the original report that GW9662 and T0070907 are not effective inhibitors of ligand binding (Hughes et al., 2016), yet many in the field continue to use these compounds as covalent inhibitors. Our findings strongly suggest GW9662 and T0070907 should not be used as antagonists to block binding of other synthetic PPAR\u03b3 ligands. On the other hand, GW9662 and T0070907 display unique pharmacological properties as a transcriptionally neutral antagonist and repressive inverse agonist, respectively Irwin et al., 2022, and thus it would be appropriate to use these compounds as pharmacological ligands. It may be possible to use the crystal structures we obtained to guide structure-informed design of covalent inhibitors that would physically block cobinding of a synthetic ligand. This could be the potential mechanism of a newer generation covalent antagonist inhibitor we developed, SR16832, that more completely inhibit alternate site ligand binding of an analog of MRL20, rosiglitazone and the UFA docosahexaenoic acid (DHA) MacTavish et al., 2024 and thus may be a better choice for the field to use as a covalent ligand inhibitor of PPAR\u03b3.\n\n## Materials and methods\n\n## Materials and reagents\n\nAll compounds used in this study\u2014GW9662, T0070907, BVT-13, nTZDpa, MRL24, and SR1664\u2014were obtained from commercial sources including Cayman Chemicals, Tocris Bioscience, and Sigma-Aldrich with purity >95%. Peptides of LXXLL-containing motifs from TRAP220/MED1 (residues 638\u2013656; NTKNHPMLMNLLKDNPAQD) and NCoR1 (2256\u20132278; DPASNLGLEDIIRKALMGSFDDK) with or without a N-terminal FITC label with a six-carbon linker (Ahx) and an amidated C-terminus for stability were synthesized by LifeTein.\n\n## Protein expression and purification\n\nHuman PPAR\u03b3 LBD (residues 203\u2013477, isoform 1 numbering) was expressed in Escherichia coli BL21(DE3) cells using autoinduction ZY media or M9 minimal media supplemented with NMR isotopes (15NH4Cl) as a Tobacco Etch Virus (TEV)-cleavable N-terminal His-tagged fusion protein using a pET46 Ek/LIC vector (Novagen) and purified using Ni-NTA affinity chromatography and gel filtration chromatography. The purified proteins were concentrated to 10 mg/mL in a buffer consisting of 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, 5 mM tris(2-carboxyethyl)phosphine (TCEP), and 0.5 mM ethylenediaminetetraacetic acid (EDTA). Purified protein was verified by SDS-PAGE as >95% pure. For studies using a covalent orthosteric antagonist, PPAR\u03b3 LBD protein was incubated with at least a~1.05 x excess of GW9662 or T0070907 at 4 \u00b0C for 24 hr to ensure covalent modification to residue C285, then buffer exchanged the sample to remove excess covalent antagonist and DMSO. Complete attachment of the covalent antagonist occurs within 30\u201360 min, as detected using an LTQ XL linear Ion trap mass spectrometer with an electrospray ionization source (Thermo Fisher Scientific).\n\n## Crystallization and structure determination\n\nFor T0070907- and GW9662-bound PPAR\u03b3 LBD complexes, protein was incubated at a 1:3 protein/ligand molar ratio in PBS overnight. Proteins were buffer exchanged to remove DMSO and concentrated to 10 mg/mL. All crystals were obtained after 3\u20138 days at 22 \u00b0C by sitting-drop vapor diffusion against 50 \u03bcL of well solution using 96-well format crystallization plates. The crystallization drops contained 1 \u03bcL of protein complex sample mixed with apo crystal seeds prepared by PTFE seed bead (Hampton research) and 1 \u03bcL of reservoir solution containing 0.1 M MOPS (pH 7.6) and 0.8 M sodium citrate for T0070907 or GW9662-PPAR\u03b3 LBD complexes; 0.1 M MES (pH 6.5), 0.2 M ammonium sulfate. The non-covalent ligands (BVT.13, MRL24, nTZDpa, SR1664) were soaked into T0070907 or GW9662-PPAR\u03b3 LBD complex crystals by adding 1.5 \u03bcL of compound at a concentration of 2 mM suspended in reservoir solution containing 5% DMSO for 5 days. Data were processed, integrated, and scaled with the programs Mosflm and Scala in CCP4 (Adams et al., 2010). The structure was solved by molecular replacement using the program Phaser (Emsley and Cowtan, 2004) implemented in the PHENIX package Johnson, 2018 and used previously published PPAR\u03b3 LBD structure (PDB code: 1PRG/6ONI; Hughes et al., 2012; Bae et al., 2016) as the search model. The structure was refined using PHENIX with several cycles of interactive model rebuilding in COOT (Williamson, 2013).\n\n## NMR spectroscopy\n\n2D [1H,15N]-TROSY HSQC NMR data of 200 \u00b5M 15N-labeled PPAR\u03b3 LBD, pre-incubated with a 2 x molar excess of covalent ligand overnight at 4 \u00b0C, were acquired at 298 K on a Bruker 700 MHz NMR instrument equipped with a QCI cryoprobe in NMR buffer (50 mM potassium phosphate, 20 mM potassium chloride, 1 mM TCEP, pH 7.4, 10% D2O). Data were processed and analyzed using Topspin 3.0 (Bruker Biospin) and NMRViewJ (OneMoon Scientific, Inc; Johnson, 2018), respectively. NMR chemical shift assignments previously transferred from rosiglitazone-bound PPAR\u03b3 LBD (Shang et al., 2019) to T0070907- and GW9662-bound states (Hughes et al., 2012; Irwin et al., 2022) were used in this study for well-resolved residues with conversed NMR peak positions to the previous ligand-bound forms using the minimum chemical shift perturbation procedure (Williamson, 2013).\n\n## Time-resolved fluorescence resonance energy transfer (TR-FRET) assay\n\nThe time-resolved fluorescence resonance energy transfer (TR-FRET) assays were performed in black 384-well plates (Greiner) with 23 \u00b5L final well volume containing 4 nM His6-PPAR\u03b3 LBD with or without covalently modification by GW9662 or T0070907, 1 nM LanthaScreen Elite Tb-anti-His Antibody (Thermo Fisher), and 400 TRAP220 or NCoR peptide in TR-FRET buffer (20 mM KPO4 pH 7.4, 50 mM KCl, 5 mM TCEP, 0.005% Tween 20). Compound stocks were prepared via serial dilution in DMSO, added to wells in triplicate, and plates were read using BioTek Synergy Neo multimode plate reader after incubating at 25 \u00b0C for 1 hr. The Tb donor was excited at 340 nm, its emission was measured at 495 nm, and the acceptor FITC emission was measured at 520 nm. Data were plotted using GraphPad Prism as TR-FRET ratio 520 nm/495 nm vs. ligand concentration and fit to sigmoidal dose-response equation \u2014 or biphasic or bell shaped dose response equations when appropriate, determined by comparison of fits to both equations and F test where the simpler model is selected if the p value is less than 0.05.\n\n## Structural comparisons to published crystal structures\n\nStructural overlays were compared to crystals structures of PPAR\u03b3 LBD bound to GW9662 (PDB 3B0R), T0070907 (PDB 6C1I; Irwin et al., 2022), GW9662 and NCoR1 peptide (PDB 8FHE; Orsi et al., 2023), T0070907 and NCoR1 peptide (6ONI) Hughes et al., 2012, BVT.13 (PDB 2Q6S) Chrisman et al., 2018, MRL24 (PDB 2Q5P; Chrisman et al., 2018), nTZDpa (PDB 2Q5S; Chrisman et al., 2018), SR1664 and NCOA1 peptide (PDB 5DWL) Agirre et al., 2023, and SR1664 (PDB 4R2U; Lee et al., 2002). Pairwise structural alignment and rmsd calculations of the cobound structures to the transcriptionally active (PDB 6ONJ) PPAR\u03b3 LBD conformation was performed via the RCSB webserver (https://www.rcsb.org/alignment/) using the jFATCAT rigid structural alignment algorithm.\n",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Julien Roche, Iowa State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99782.3.sa0](https://doi.org/10.7554/eLife.99782.3.sa0)\n\nThis landmark study elucidates the intricate structural mechanisms by which both covalent and non-covalent synthetic ligands can co-occupy the binding pocket of the nuclear receptor transcription factor PPAR\u03b3. Through a compelling integration of structural, biochemical, and biophysical evidence, the authors challenge the reliability of two commonly used covalent inhibitors. These findings have far-reaching implications for the broader field of nuclear receptor research. This work will be of high interest to structural biologists and biochemists exploring ligand interactions within the nuclear receptor superfamily.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99782.3.sa1](https://doi.org/10.7554/eLife.99782.3.sa1)\n\nSummary:\n\nPPARgamma is a nuclear receptor that binds to orthosteric ligands to coordinate transcriptional programs that are critical for adipocyte biogenesis and insulin sensitivity. Consequently, it is a critical therapeutic target for many diseases but especially diabetes. The malleable nature and promiscuity of the PPARgamma orthosteric ligand binding pocket has confounded the development of improved therapeutic modulators. Covalent inhibitors have been developed but they show unanticipated mechanisms of action depending on which orthosteric ligands are present. In this work, Shang and Kojetin present a compelling and comprehensive structural, biochemical, and biophysical analysis that shows how covalent and noncovalent ligands can co-occupy the PPARgamma ligand binding pocket to elicit distinctive preferences of coactivator and corepressor proteins. Importantly, this work shows how the covalent inhibitors GW9662 and T0070907 may be unreliable tools as pan-PPARgamma inhibitors despite their wide-spread use.\n\nStrengths:\n\n- Highly detailed structure and functional analyses provide a comprehensive structure-based hypothesis for the relationship between PPARgamma ligand binding domain co-occupancy and allosteric mechanisms of action.\n\n- Multiple orthogonal approaches are used to provide high resolution information on ligand binding poses and protein dynamics.\n\n- The large number of x-ray crystal structures solved for this manuscript should be applauded along with their rigorous validation and interpretation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99782.3.sa2](https://doi.org/10.7554/eLife.99782.3.sa2)\n\nSummary:\n\nThe flexibility of the ligand binding domain (LBD) of NRs allows various modes of ligand binding leading to various cellular outcomes. In the case of PPAR\u03b3, it's known that two ligands can cobind to the receptor. However, whether a covalent inhibitor functions by blocking the binding of a non-covalent ligand, or cobind in a manner that weakens the binding of a non-covalent ligand remains unclear. In this study, the authors first used TR-FRET and NMR to demonstrate that covalent inhibitors (such as GW9662 and T0070907) weaken but do not prevent non-covalent synthetic ligands from binding, likely via an allosteric mechanism. The AF-2 helix can exchange between active and repressive conformations, and covalent inhibitors shift the conformation toward a transcriptionally repressive one to reduce orthosteric binding of the non-covalent ligands. By co-crystal studies, the authors further reveal the structural details of various non-covalent ligand binding mechanisms in a ligand specific manner (e.g., an alternate binding site, or a new orthosteric binding mode by alerting covalent ligand binding pose).\n\nStrengths:\n\nThe biochemical and biophysical evidence as presented is strong and convincing.\n\nAdditional comments:\n\nThe co-crystal studies were performed by soaking a non-covalent ligand to LBD pre-crystalized with a covalent inhibitor. Since the covalent inhibitors would shift the LBD toward transcriptionally repressive conformation which reduces orthosteric binding of non-covalent ligands, one might ask if the sequence was reversed (i.e., soaking a covalent inhibitor to LBD pre-crystalized with a non-covalent ligand), would similar conclusion be drawn? The authors have reasonably speculated that it might be difficult to soak a covalent inhibitor into preformed crystals where the PPAR\u03b3 LBD is already bound to a non-covalent ligand, because the larger non-covalent ligand could block the covalent inhibitor to gain access to the region of the orthosteric pocket required for covalent modification.\n",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e850632c-551c-42e4-a754-5e74f7187b58",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C1",
+      "claim": "PPAR\u03b3 is a nuclear receptor transcription factor that regulates gene expression programs in response to ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Peroxisome proliferator-activated receptor gamma (PPAR\u03b3) is a nuclear receptor transcription factor that regulates gene expression programs in response to ligand binding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is a well-established characterization of PPAR\u03b3 function based on scientific consensus in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "d262d6b8-2f3b-4f1a-807c-78dfbcc2fbf8",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C2",
+      "claim": "Endogenous and synthetic ligands, including covalent antagonist inhibitors GW9662 and T0070907, are thought to compete for the orthosteric pocket in the ligand-binding domain (LBD).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Endogenous and synthetic ligands, including covalent antagonist inhibitors GW9662 and T0070907, are thought to compete for the orthosteric pocket in the ligand-binding domain (LBD).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This represents the prevailing understanding in the field prior to the authors' work, based on established literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "748457ee-3898-4166-b010-5cfde4d50f3f",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C3",
+      "claim": "Synthetic PPAR\u03b3 ligands can cooperatively cobind with and reposition a bound endogenous orthosteric ligand to an alternate site, synergistically regulating PPAR\u03b3 structure and function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, we previously showed that synthetic PPAR\u03b3 ligands can cooperatively cobind with and reposition a bound endogenous orthosteric ligand to an alternate site, synergistically regulating PPAR\u03b3 structure and function (Shang et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This claim is supported by the authors' previous published work (Shang et al., 2018), which contained experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "bde89d99-09ed-45c4-a5db-04ad1c8a2be3",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C4",
+      "claim": "Covalent inhibitors weaken\u2014but do not prevent\u2014the binding of other ligands via an allosteric mechanism.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Biochemical and NMR data show that covalent inhibitors weaken\u2014but do not prevent\u2014the binding of other ligands via an allosteric mechanism, rather than direct ligand clashing",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This claim is directly supported by biochemical and NMR experimental data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "6783c58a-9f7b-41c4-829b-1af775abc909",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C5",
+      "claim": "Covalent inhibitors shift the LBD ensemble toward a transcriptionally repressive conformation, which structurally clashes with orthosteric ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "by shifting the LBD ensemble toward a transcriptionally repressive conformation, which structurally clashes with orthosteric ligand binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This mechanism is inferred from NMR and biochemical data showing conformational changes in the LBD upon covalent inhibitor binding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "4650cfcc-6228-4048-8653-abcbca8f7485",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C6",
+      "claim": "Crystal structures reveal different cobinding mechanisms including alternate site binding to unexpectedly adopting an orthosteric binding mode by altering the covalent inhibitor binding pose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Crystal structures reveal different cobinding mechanisms including alternate site binding to unexpectedly adopting an orthosteric binding mode by altering the covalent inhibitor binding pose.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly supported by crystallographic data presented in the manuscript showing multiple ligand binding modes.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "63fd144c-12fd-4971-bd1a-b05fc53c02eb",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C7",
+      "claim": "GW9662 and T0070907 should not be used as chemical tools to inhibit ligand binding to PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our findings highlight the significant flexibility of the PPAR\u03b3 orthosteric pocket, its ability to accommodate multiple ligands, and demonstrate that GW9662 and T0070907 should not be used as chemical tools to inhibit ligand binding to PPAR\u03b3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This recommendation is based on the experimental data showing that these compounds do not completely prevent other ligands from binding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "8898b6d1-50db-4249-a39d-7b45422a2c57",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C8",
+      "claim": "Endogenous PPAR\u03b3 ligands, which include lipids and fatty acids, bind to an orthosteric pocket within the PPAR\u03b3 ligand-binding domain (LBD) and function as PPAR\u03b3 agonists that activate gene programs.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Endogenous PPAR\u03b3 ligands, which include lipids and fatty acids, bind to an orthosteric pocket within the PPAR\u03b3 ligand-binding domain (LBD) and function as PPAR\u03b3 agonists that activate gene programs (Itoh et al., 2008; Li et al., 2008; Malapaka et al., 2012; Kliewer et al., 1997; Kliewer et al., 1995; Waku et al., 2009; Shang et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This claim is supported by multiple literature citations and represents established knowledge in the field.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "94aadbae-2509-4144-b4cf-f29767d59c5a",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C9",
+      "claim": "Synthetic small molecule PPAR\u03b3 ligands, which include FDA-approved antidiabetic drugs, also bind to the same orthosteric pocket, most of which function as agonists that activate PPAR\u03b3-mediated transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Synthetic small molecule PPAR\u03b3 ligands, which include FDA-approved antidiabetic drugs, also bind to the same orthosteric pocket, most of which function as agonists that activate PPAR\u03b3-mediated transcription.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about synthetic PPAR\u03b3 ligands and FDA-approved drugs.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "6ee2bcc5-3385-4c4b-a8f9-fde4e20697aa",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C10",
+      "claim": "Endogenous and synthetic ligands were originally thought to compete for binding to the PPAR\u03b3 orthosteric pocket.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Endogenous and synthetic ligands were originally thought to compete for binding to the PPAR\u03b3 orthosteric pocket.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This represents the historical understanding in the field before cobinding mechanisms were discovered.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "ed351182-1a6c-4072-8fb6-8bc72e39b883",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C11",
+      "claim": "Endogenous and synthetic ligands can cobind to PPAR\u03b3, likely due to the large size and flexibility of the orthosteric pocket, and synergistically influence PPAR\u03b3 structure and function.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, we previously showed that endogenous and synthetic ligands can cobind to PPAR\u03b3, likely due to the large size and flexibility of the orthosteric pocket, and synergistically influence PPAR\u03b3 structure and function (Johnson et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by previous work cited (Johnson et al., 2000) which contained experimental evidence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "43f2047d-6caf-4bc7-9880-46357edee774",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C12",
+      "claim": "In the absence of ligand, the apo (ligand-free) PPAR\u03b3 LBD dynamically exchanges between two or more structural conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the absence of ligand, the apo (ligand-free) PPAR\u03b3 LBD dynamically exchanges between two or more structural conformations (Shang et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This claim is supported by cited work (Shang et al., 2020) that used NMR and other structural methods.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "28e70a20-b07e-44ec-bb31-169170e7ff55",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C13",
+      "claim": "NMR data show that a critical structural element in the LBD called activation function-2 (AF-2) helix (helix 12), which is part of the AF-2 coactivator binding surface, exchanges between active and repressive conformations that can be stabilized upon binding ligand.",
+      "claim_type": "EXPLICIT",
+      "source_text": "NMR data show that a critical structural element in the LBD called activation function-2 (AF-2) helix (helix 12), which is part of the AF-2 coactivator binding surface, exchanges between active and repressive conformations that can be stabilized upon binding ligand (Hughes et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by NMR data from cited work (Hughes et al., 2012).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "5b72ed22-1083-4942-99d7-129ee46d377a",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C14",
+      "claim": "Agonist binding to the orthosteric pocket stabilizes a solvent exposed helix 12 conformation that enables high-affinity binding of coactivators and increases transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Agonist binding to the orthosteric pocket stabilizes a solvent exposed helix 12 conformation that enables high-affinity binding of coactivators and increases transcription (Shang et al., 2019; Frkic et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This mechanism is supported by structural and functional data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "730aa806-08b0-4522-8549-0c1b0d02d802",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C15",
+      "claim": "Transcriptionally neutral antagonists and repressive inverse agonists developed from orthosteric agonist ligand scaffolds bind via a similar mechanism of agonists but stabilize non-active helix 12 conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Transcriptionally neutral antagonists and repressive inverse agonists developed from orthosteric agonist ligand scaffolds bind via a similar mechanism of agonists but stabilize non-active helix 12 conformations (Frkic et al., 2018; Zheng et al., 2018; Marciano et al., 2015; Lee et al., 2002).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by multiple cited structural and functional studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "08dcee95-55bb-4faf-80e8-3399838f6dcb",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C16",
+      "claim": "GW9662 and T0070907 are covalent ligands originally described as antagonists as they bind via a nucleophilic substitution mechanism to Cys285 located within the orthosteric pocket.",
+      "claim_type": "EXPLICIT",
+      "source_text": "GW9662 and T0070907 are covalent ligands originally described as antagonists as they bind via a nucleophilic substitution mechanism to Cys285 located within the orthosteric pocket and were shown to inhibit binding of select reference PPAR\u03b3 agonists (Leesnitzer et al., 2002; Hughes et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "evidence_reasoning": "This is established knowledge about the mechanism of these covalent inhibitors, supported by cited literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "aef65a63-1ccb-4a1d-88db-72bb034d331f",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C17",
+      "claim": "GW9662 and T0070907 were shown to inhibit binding of select reference PPAR\u03b3 agonists.",
+      "claim_type": "EXPLICIT",
+      "source_text": "they bind via a nucleophilic substitution mechanism to Cys285 located within the orthosteric pocket and were shown to inhibit binding of select reference PPAR\u03b3 agonists (Leesnitzer et al., 2002; Hughes et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by cited studies that tested inhibition of specific agonists.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "5eb32c86-49f0-414d-80c9-74c278b893cf",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C18",
+      "claim": "GW9662 and T0070907 do not block all ligands from binding to PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, we previously showed GW9662 and T0070907 do not block all ligands from binding to PPAR\u03b3 Johnson et al., 2000; Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by multiple previous studies by the authors showing ligand cobinding.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "fa321ec8-10f8-442b-9775-51ddab4b7f40",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C19",
+      "claim": "GW9662 and T0070907 have distinct pharmacological PPAR\u03b3 functions as a transcriptionally neutral antagonist (GW9662) and repressive inverse agonist (T0070907).",
+      "claim_type": "EXPLICIT",
+      "source_text": "and moreover, they have distinct pharmacological PPAR\u03b3 functions as a transcriptionally neutral antagonist (GW9662) and repressive inverse agonist (T0070907) (Irwin et al., 2022).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This functional characterization is supported by cited work (Irwin et al., 2022).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "c7b0473d-1393-42f0-a655-6d6b68cc7ee6",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C20",
+      "claim": "GW9662 and T0070907 function through a different structural mechanism than orthosteric non-covalent antagonists and inverse agonists: they slow the rate of exchange between transcriptionally active and repressive conformations natively populated in the apo-LBD.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Although these covalent ligands have similar pharmacological functions to orthosteric non-covalent antagonists and inverse agonists, GW9662 and T0070907 function through a different structural mechanism: they slow the rate of exchange between transcriptionally active and repressive conformations natively populated in the apo-LBD, with T0070907 having a more pronounced effect than GW9662 (Hughes et al., 2012; Orsi et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This mechanism is supported by NMR and other biophysical data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "6cc54758-a52c-4fe6-b89e-91066c88734e",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C21",
+      "claim": "T0070907 has a more pronounced effect than GW9662 on slowing the rate of exchange between transcriptionally active and repressive conformations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "with T0070907 having a more pronounced effect than GW9662 (Hughes et al., 2012; Orsi et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This comparative effect is supported by experimental data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "22ecd206-78eb-4778-ba84-ea45e34a27f6",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C22",
+      "claim": "In the transcriptionally repressive conformation stabilized by covalent inverse agonists, helix 12 adopts a solvent-occluded conformation within the orthosteric pocket that overlaps with orthosteric ligand binding poses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the transcriptionally repressive conformation stabilized by covalent inverse agonists, helix 12 adopts a solvent-occluded conformation within the orthosteric pocket that overlaps with orthosteric ligand binding poses (Figure 1; Hughes et al., 2012; Orsi et al., 2023; Shang and Kojetin, 2021; Arifi et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This structural observation is supported by crystal structures and NMR data from multiple cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e271541d-f7d1-4fab-810b-19e8f182fd9d",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C23",
+      "claim": "Agonist binding to the orthosteric pocket either displaces helix 12 from a solvent occluded repressive conformation within the orthosteric pocket to a solvent exposed active conformation, or selects for an active helix 12 conformation from the dynamic LBD ensemble.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These and other published studies have informed a ligand activation model whereby agonist binding to the orthosteric pocket either displaces helix 12 from a solvent occluded repressive conformation within the orthosteric pocket to a solvent exposed active conformation, or selects for an active helix 12 conformation from the dynamic LBD ensemble (Jang et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This model is inferred from multiple structural studies and represents a mechanistic interpretation of the data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "8d63ff6f-6f4e-4c04-a353-3db5ed51cb7e",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C24",
+      "claim": "Non-covalent synthetic compounds can still bind to the PPAR\u03b3 LBD in the presence of a covalent orthosteric inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source_text": "NMR and biochemical data revealed non-covalent synthetic compounds can still bind to the PPAR\u03b3 LBD in the presence of a covalent orthosteric inhibitor (Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by NMR and biochemical experimental data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "2c30196e-cf8a-41d1-9b4b-b62f4cf89199",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C25",
+      "claim": "An analog of MRL24, called MRL20, can activate PPAR\u03b3-mediated transcription and increase the expression of PPAR\u03b3 target genes in differentiated mouse 3T3-L1 preadipocytes when cells were cotreated with GW9662 or T0070907 covalent inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In that previous study, we showed that an analog of MRL24, called MRL20, can activate PPAR\u03b3-mediated transcription and increase the expression of PPAR\u03b3 target genes in differentiated mouse 3T3-L1 preadipocytes when cells were correlated with GW9662 or T0070907 covalent inhibitors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This functional data is from a previous study by the authors showing transcriptional activation despite covalent inhibitor presence.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e7983e6b-13dd-445f-8546-7ec59238a8d8",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C26",
+      "claim": "BVT-13, MRL24, nTZDpa, and SR1664 bind the PPAR\u03b3 LBD with Ki values consistent with published data.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Using a time-resolved fluorescence resonance energy transfer (TR-FRET) biochemical ligand displacement assay, we verified the ligands bind PPAR\u03b3 LBD with Ki values (Figure 2B) consistent with published data (Ostberg et al., 2004; Acton et al., 2005; Ge et al., 2002; Yu et al., 2005).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is supported by TR-FRET experimental data in the current study that matches previously published values.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "2de9a381-3d9e-4752-8cc4-ec3058437a43",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C27",
+      "claim": "BVT-13, MRL24, nTZDpa, and SR1664 are generally classified as partial agonists that activate PPAR\u03b3 transcription with limited or weak efficacy, or non-agonists/antagonists that are transcriptionally neutral.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These ligands are generally classified as partial agonists that activate PPAR\u03b3 transcription with limited or weak efficacy, or non-agonists/antagonists that are transcriptionally neutral.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This classification is based on established characterization of these compounds in the literature.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "2dc5373c-7772-4cf2-b035-bbafb46c6a5d",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C28",
+      "claim": "The tested compounds did not significantly increase interaction with the TRAP220 coactivator peptide.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Consistent with their partial agonist and/or antagonist profiles, the compounds did not significantly increase interaction with the TRAP220 coactivator peptide.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the TR-FRET coregulator peptide interaction assays presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "c71f2237-b12e-43e5-9feb-da71c25d072a",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C29",
+      "claim": "nTZDpa showed a biphasic transition in the coactivator TR-FRET assay that may be due to the binding of more than one nTZDpa molecule.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Of these, nTZDpa showed a biphasic transition that may be due to the binding of more than one nTZDpa molecule, which is also suggested by 2D [1H,15N]-TROSY-HSQC NMR data where chemical shift perturbations (CSPs) are observed going from 1 to 2 equivalents of added ligand.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The biphasic behavior is observed in TR-FRET data, and the interpretation of multiple binding events is inferred from both TR-FRET and NMR data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b7cebe3c-7f32-4e2b-83d9-8b232452c3a0",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C30",
+      "claim": "When bound to GW9662 or T0070907, corepressor peptide binding affinity to the LBD is progressively strengthened upon binding to GW9662 and T0070907 while coactivator peptide affinity is weakened according to their neutral and repressive pharmacological activities, respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "When bound to GW9662 or T0070907, corepressor peptide binding affinity to the LBD is progressively strengthened upon binding to GW9662 and T0070907 while coactivator peptide affinity is weakened according to their neutral and repressive pharmacological activities, respectively (Orsi et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by TR-FRET data from cited work (Orsi et al., 2023).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "02f7f071-69c7-4053-84ce-61931243d809",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C31",
+      "claim": "Titration of the synthetic ligands shows notable changes in the NCoR1 corepressor TR-FRET assay, where the ligands decrease NCoR1 peptide interaction with IC50 profiles with a similar rank-order to ligand Ki values (MRL24 <nTZDpa < SR1664<BVT.13).",
+      "claim_type": "EXPLICIT",
+      "source_text": "Titration of the synthetic ligands shows notable changes in the NCoR1 corepressor TR-FRET assay, where the ligands decrease NCoR1 peptide interaction with IC50 profiles (Figure 3B) with a similar rank-order to ligand Ki values (MRL24 <nTZDpa < SR1664<BVT.13).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the TR-FRET experimental data presented in Figure 3B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f6408828-6614-4cb7-87b9-55e9b1063b17",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C32",
+      "claim": "Relatively minor changes are observed for the ligands in the TRAP220/MED1 coactivator TR-FRET assay except for MRL24, which shows a concentration-dependent increase in coactivator peptide recruitment.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Relatively minor changes are observed for the ligands in the TRAP220/MED1 coactivator TR-FRET assay except for MRL24, which shows a concentration-dependent increase in coactivator peptide recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the TR-FRET experimental data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "151a3945-db9f-4fb9-9212-2bfebeaabf34",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C33",
+      "claim": "The functional effect of synthetic ligands binding to PPAR\u03b3 LBD in the presence of a covalent inhibitor is decreased corepressor peptide interaction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, these data indicate the functional effect of synthetic ligands binding to PPAR\u03b3 LBD in the presence of a covalent inhibitor is decreased corepressor peptide interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the TR-FRET data showing decreased NCoR1 interaction.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "5b20627e-e194-4d83-8f40-7fc60707775e",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C34",
+      "claim": "The synthetic ligand IC50 values are weakened (right shifted) more by the inverse agonist T0070907 compared to the neutral antagonist GW9662.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, the synthetic ligand IC50 values are weakened (right shifted) more by the inverse agonist T0070907 compared to the neutral antagonist GW9662",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing IC50 values in the TR-FRET data for GW9662 vs T0070907.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b3b48edc-6075-4423-a582-213a0349b861",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C35",
+      "claim": "Pharmacological repressive ligand efficacy may be involved in the ligand cobinding inhibitory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source_text": "suggesting that pharmacological repressive ligand efficacy may be involved in the ligand cobinding inhibitory mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the observation that T0070907 (inverse agonist) has a stronger inhibitory effect than GW9662 (neutral antagonist).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "d4fa71a6-1327-4c6f-9e0b-2981ab690e22",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C36",
+      "claim": "Non-covalent ligand cobinding to GW9662-bound LBD shows NMR CSPs for select peaks.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Non-covalent ligand cobinding to GW9662-bound LBD shows NMR CSPs for select peaks (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the 2D NMR TROSY-HSQC data presented in Figure 4A.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "62300376-cf66-4d5a-9092-12d583a941e4",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C37",
+      "claim": "NMR CSPs are more pronounced for non-covalent ligand binding to T0070907-bound LBD compared to GW9662-bound LBD.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, NMR CSPs are more pronounced for non-covalent ligand binding to T0070907-bound LBD (Figure 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing NMR data in Figures 4A and 4B.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "ebd230f2-60bb-465a-b90d-86645267fe64",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C38",
+      "claim": "Gly399 displays two T0070907-bound NMR peaks in slow exchange corresponding to the active or repressive LBD state but only one GW9662-bound active state peak.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Focusing on Gly399, a residue near the AF-2 surface that displays two T0070907-bound NMR peaks in slow exchange corresponding to the active or repressive LBD state but only one GW9662-bound active state peak (Hughes et al., 2012; Irwin et al., 2022; Orsi et al., 2023)",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This observation is supported by NMR data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "cdc02998-f053-4937-a495-5ee0a49694ae",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C39",
+      "claim": "Cobinding of the non-covalent synthetic ligand causes the two NMR peaks in slow exchange to converge to one NMR peak.",
+      "claim_type": "EXPLICIT",
+      "source_text": "cobinding of the non-covalent synthetic ligand causes the two NMR peaks in slow exchange to converge to one NMR peak.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the NMR data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b99cc1d6-b69a-4c6c-8674-ece826bb8a77",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C40",
+      "claim": "The NMR peaks corresponding to the repressive T0070907-bound conformation disappear upon non-covalent ligand cobinding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The NMR peaks corresponding to the repressive T0070907-bound conformation disappear, while the remaining peaks have NMR chemical shift values similar to the T0070907-bound active state but shifted along the active-repressive continuum",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the NMR data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "4a33c16d-c993-4603-a2ab-a521f693afea",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C41",
+      "claim": "MRL24 cobinding shows an increase in TRAP220 coactivator peptide recruitment to T0070907-bound PPAR\u03b3 LBD and the largest shift NMR-detected shift of the LBD conformational ensemble towards an active state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Among the synthetic ligands we tested, MRL24 cobinding shows an increase in TRAP220 coactivator peptide recruitment to T0070907-bound PPAR\u03b3 LBD and the largest shift NMR-detected shift of the LBD conformational ensemble towards an active state.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is supported by both TR-FRET and NMR data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "fae0d709-34f6-4525-bcc4-a52bb40c04e6",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C42",
+      "claim": "nTZDpa cobinding shows an antagonist-like profile in the TR-FRET data, decreasing both NCoR1 corepressor and to a lesser degree TRAP220 coactivator interaction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, nTZDpa cobinding shows an antagonist-like profile in the TR-FRET data, decreasing both NCoR1 corepressor and to a lesser degree TRAP220 coactivator interaction",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the TR-FRET data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e756ba4c-8453-4048-9feb-aadec85b6d59",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C43",
+      "claim": "nTZDpa cobinding shifts the NMR-detected shift of the LBD conformational ensemble towards an intermediate state between the active and repressive T0070907-observed populations.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and shifts the NMR-detected shift of the LBD conformational ensemble towards an intermediate state between the active and repressive T0070907-observed populations.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the NMR data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "42198e9c-ba02-4bb4-bf58-33c8d35cdaed",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C44",
+      "claim": "The repressive conformation helix 12 within the orthosteric pocket of T0070907-bound LBD is displaced to a solvent-exposed active conformation upon non-covalent ligand cobinding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together, these NMR-detected observations support the mechanism whereby the repressive conformation helix 12 within the orthosteric pocket of T0070907-bound LBD is displaced to a solvent-exposed active conformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This mechanism is inferred from the NMR data showing disappearance of repressive state peaks.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "264c1f4f-0116-4ebb-97c3-ee9c10b614d3",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C45",
+      "claim": "The active conformation of the PPAR\u03b3 LBD when bound to a synthetic ligand alone vs. cobound to a covalent ligand are similar.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This suggests the active conformation of the PPAR\u03b3 LBD when bound to a synthetic ligand alone vs. cobound to a covalent ligand are similar",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from comparison of NMR spectral profiles showing similar chemical shifts.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "72fead7c-d02e-40af-b4e6-50770c5c7ae5",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C46",
+      "claim": "Synthetic ligand cobinding to T0070907-bound PPAR\u03b3 LBD decreases corepressor peptide interaction.",
+      "claim_type": "EXPLICIT",
+      "source_text": "which is supported by the TR-FRET data (Figure 3) showing that synthetic ligand cobinding to T0070907-bound PPAR\u03b3 LBD decreases corepressor peptide interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the TR-FRET data presented in Figure 3.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "eb20bd8a-9df7-4837-b930-d1ea214365b7",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C47",
+      "claim": "Seven crystal structures were obtained in total where each synthetic ligand was cobound to either GW9662 or T0070907, except for SR1664 for which only a structure cobound to T0070907 was obtained.",
+      "claim_type": "EXPLICIT",
+      "source_text": "We obtained seven crystal structures in total where each synthetic ligand was cobound to either GW9662 or T0070907, except for SR1664 for which we only obtained a structure cobound to T0070907 (Table 1, Figure 5\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This describes the crystallographic data obtained in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "67bd87c0-659c-48c4-a100-a64013af7724",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C48",
+      "claim": "In most structures, electron density was observed for non-covalent and covalent ligands in both chains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In most structures, electron density was observed for non-covalent and covalent ligands in both chains.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structure electron density maps.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "64e833bb-04dc-4528-9c17-c7107c8b052a",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C49",
+      "claim": "In the nTZDpa structures, the covalent ligand was not observed in chain A; and nTZDpa was observed in chains A and B when cobound to GW9662, but only chain B when cobound to T0070907.",
+      "claim_type": "EXPLICIT",
+      "source_text": "However, in the nTZDpa structures, the covalent ligand was not observed in chain A; and nTZDpa was observed in chains A and B when cobound to GW9662, but only chain B when cobound to T0070907.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structure electron density maps.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "418c4c9e-2c92-4f79-acab-cbea1293b7b7",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C50",
+      "claim": "The cobound crystal structures show high structural similarity to the transcriptionally active LBD conformation with rmsd values ranging from 0.77 to 1.03 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The structures show high structural similarity to the transcriptionally active LBD conformation with rmsd values ranging from 0.77 to 1.03 \u00c5 (Table 2).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is calculated from structural alignment of the crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "2865e5ae-a92d-4ba5-a02e-c8cd02072e33",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C51",
+      "claim": "The LBD conformations when bound to a single ligand or cobound two ligands are highly similar, with only relatively minor conformational changes in certain residue side chains.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Overall, the LBD conformations when bound to a single ligand or cobound two ligands are highly similar, with only relatively minor conformational changes in certain residue side chains.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed by comparing crystal structures of different liganded states.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "5818d447-6146-4af3-b34f-d4bb8eab8cb4",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C52",
+      "claim": "Most of the cobound structures surprisingly showed that the ligand adopts a cobound conformation similar to orthosteric binding pose observed in crystals structures of PPAR\u03b3 LBD bound to the synthetic ligand alone.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Focusing on the non-covalent synthetic ligand cobinding poses (Figure 5A), most of the structures surprisingly showed that the ligand adopts a cobound conformation similar to orthosteric binding pose observed in crystals structures of PPAR\u03b3 LBD bound to the synthetic ligand alone (Figure 5B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing the cobound crystal structures to single-ligand structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "6d9752bf-b31e-48c0-8fef-e2e83506cffa",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C53",
+      "claim": "Slight reorientations of portions of the synthetic ligand occur to accommodate the cobinding mode, as there are clashes between the synthetic orthosteric and covalent orthosteric ligand binding modes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Slight reorientations of portions of the synthetic ligand occur to accommodate the cobinding mode, as there are clashes between the synthetic orthosteric and covalent orthosteric ligand binding modes (Figure 5C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The reorientations are observed in the crystal structures, and the clashes are inferred from structural overlays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "40b2eeba-1347-4170-8356-b1360fa0df8f",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C54",
+      "claim": "The BVT.13 cobinding pose is similar to its orthosteric binding pose located near the \u03b2-sheet, but the 2,4-dichloro group clashes with the orthosteric GW9662 and T0070907 binding poses, resulting in a slight reorientation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The BVT.13 cobinding pose is similar to its orthosteric binding pose located near the \u03b2-sheet. However, the 2,4-dichloro group clashes with the orthosteric GW9662 and T0070907 binding poses, specifically the phenyl and pyridyl groups respectively, resulting in a slight reorientation of the 2,4-dichloro group to accommodate the cobound state.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structures and structural overlays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "8c73de09-b791-48ee-980e-067ab7d5d170",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C55",
+      "claim": "The MRL24 cobinding pose is similar to its orthosteric ligand binding pose, which was surprising given its larger scaffold size significantly clashes with the orthosteric covalent ligand binding pose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The MRL24 cobinding pose is also similar to its orthosteric ligand binding pose, which was surprising given its larger scaffold size significantly clashes with the orthosteric covalent ligand binding pose.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed in the crystal structures, and the surprise reflects the expectation based on structural overlays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e21324ef-15b0-436e-951e-78168b03c8e0",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C56",
+      "claim": "The nTZDpa cobinding pose is similar to its orthosteric binding pose near the \u03b2-sheet, but the 1-chloro group clashes with the orthosteric covalent ligand binding pose, resulting in a minor reorientation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "The nTZDpa cobinding pose is also similar to its orthosteric binding pose near the \u03b2-sheet. However, the 1-chloro group clashes with the orthosteric covalent ligand binding pose, resulting in a minor reorientation in the cobinding pose.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structures and structural overlays.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "92b17af9-d165-4b60-b1b6-5f0aee8e6a78",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C57",
+      "claim": "The SR1664 cobinding pose reveals an alternate site binding mode similar to the crystallized binding pose in the presence of NCOA1 peptide, with a slight reorientation of the benzoic acid group that avoids a clash with the orthosteric T0070907 binding pose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Finally, the SR1664 cobinding pose reveals an alternate site binding mode similar to the crystallized binding pose in the presence of NCOA1 peptide, with a slight reorientation of the benzoic acid group that avoids a clash with the orthosteric T0070907 binding pose.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structures and comparison to published structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "60a1bb3b-5863-45e8-92ba-d52d9e179754",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C58",
+      "claim": "The alternate site SR1664 binding modes are distinct from the orthosteric SR1664 binding mode obtained without coregulator peptide, which shows a large steric clash with the orthosteric covalent ligand binding pose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, these alternate site binding modes are distinct from the orthosteric SR1664 binding mode obtained without coregulator peptide, which shows a large steric clash with the orthosteric covalent ligand binding pose.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is observed by comparing different crystal structures of SR1664-bound PPAR\u03b3 LBD.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "5b6c03f8-7380-49ce-a811-5e8b00076238",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C59",
+      "claim": "GW9662 and T0070907, when bound alone, are oriented in different directions within the orthosteric pocket in the active state when soaked into apo-PPAR\u03b3 LBD or repressive state when cobound to NCoR1 corepressor peptide, pointing towards or away from the \u03b2-sheet surface, respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Focusing on the covalent ligand binding poses, previously determined crystal structures (Hughes et al., 2012) show that GW9662 and T0070907, when bound alone, are oriented in different directions within the orthosteric pocket in the active state when soaked into apo-PPAR\u03b3 LBD or repressive state when cobound to NCoR1 corepressor peptide, pointing towards or away from the \u03b2-sheet surface, respectively (Figure 6A).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is observed in previously published crystal structures cited in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "055b506c-a5c5-4c37-a0ba-9d6b2e1bc2c8",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C60",
+      "claim": "Cobinding of a non-covalent synthetic ligand has different effects on the covalent ligand binding pose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Cobinding of a non-covalent synthetic ligand has different effects on the covalent ligand binding pose (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing covalent ligand poses in different cobound crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "126b13f4-f7b4-40d5-a761-819778cc7ba2",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C61",
+      "claim": "For BVT.13, the covalent ligand cobinding pose is similar to the orthosteric binding pose.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For BVT.13, the covalent ligand cobinding pose is similar to the orthosteric binding pose.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "34b1d590-7972-4b9b-beda-ddcf291c6d0f",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C62",
+      "claim": "For MRL24, the cobound covalent ligands adopt a similar binding pose that is different from the active and repressive orthosteric binding poses.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For MRL24, the cobound covalent ligands adopt a similar binding pose that is different from the active and repressive orthosteric binding poses.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "7416666f-e684-4785-babf-4438a0aadff0",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C63",
+      "claim": "For nTZDpa, the cobound covalent ligands adopt different orientations, both of which are distinct from the active and repressive covalent ligand only-bound states.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For nTZDpa, the cobound covalent ligands adopt different orientations, both of which are distinct from the active and repressive covalent ligand only-bound states.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "1fd73de6-c1d6-429f-a4b6-728876339534",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C64",
+      "claim": "For SR1664, the cobinding mode of T0070907 is similar to the orthosteric binding mode.",
+      "claim_type": "EXPLICIT",
+      "source_text": "For SR1664, the cobinding mode of T0070907 is similar to the orthosteric binding mode.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "3f7a5496-e98b-4cb4-9d3e-e2613bbc3cfa",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C65",
+      "claim": "The conformation of the covalent ligand can change and adapt to the cobound non-covalent ligand.",
+      "claim_type": "EXPLICIT",
+      "source_text": "These structures show that the conformation of the covalent ligand can change and adapt to the cobound non-covalent ligand.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This conclusion is inferred from the observation of different covalent ligand conformations in different cobound structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "dde2fb75-a4d4-4064-814c-ca879fa899cd",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C66",
+      "claim": "Orthosteric ligand Ki values for the non-covalent compounds correlate with the ability of the non-covalent ligand to push the covalent ligand into a cobinding binding mode that is distinct from the active and repressive covalent ligand binding modes.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Notably, orthosteric ligand Ki values for the non-covalent compounds (Figure 2B) correlate with the ability of the non-covalent ligand to push the covalent ligand into a cobinding binding mode that is distinct from the active and repressive covalent ligand binding modes (Figure 6B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This correlation is inferred by comparing Ki values with observed structural changes in the crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "0c171ad1-c5be-4ee7-b7a5-03b92337ac41",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C67",
+      "claim": "MRL24 and nTZDpa, which are the most potent non-covalent ligands tested, pushed the covalent ligands into different non-natural conformations, whereas BVT.13 and SR1664 do not.",
+      "claim_type": "EXPLICIT",
+      "source_text": "MRL24 and nTZDa, which are the most potent non-covalent ligands tested, pushed the covalent ligands into different non-natural conformations, whereas BVT.13 and SR1664 do not.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing crystal structures and Ki values.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "28f08601-afbc-4f6b-8bb7-0c1c28568fb2",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C68",
+      "claim": "The malleability of the dynamic orthosteric pocket, the natural orthosteric binding mode of the non-covalent ligand, and the relative orthosteric affinity of the non-covalent ligand may determine whether the covalent ligand traps a non-covalent ligand in the entrance to and/or the \u03b2-sheet region of the orthosteric pocket.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Taken together with structural data showing that the covalent ligands naturally exchange between different active and repressive binding poses (Hughes et al., 2012; Irwin et al., 2022), these findings indicate the malleability of the dynamic orthosteric pocket, the natural orthosteric binding mode of the non-covalent ligand, and the relative orthosteric affinity of the non-covalent ligand may determine whether the covalent ligand traps a non-covalent ligand in the entrance to and/or the \u03b2-sheet region of the orthosteric pocket.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "evidence_reasoning": "This mechanistic interpretation is inferred from the structural data and cited studies showing ligand dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "4fcbd834-2754-4154-989f-404bdbc245ee",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C69",
+      "claim": "Each of the non-covalent synthetic ligands utilizes unique mechanisms to cobind with the covalent ligands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Each of the non-covalent synthetic ligands utilizes unique mechanisms to cobind with the covalent ligands, as inferred from our crystal structures in which pre-formed crystals of the PPAR\u03b3 LBD were soaked with non-covalent synthetic ligands",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the different cobinding modes observed in the crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "981447d3-0678-4783-be56-fd79dd3892a1",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C70",
+      "claim": "BVT.13 cobinds to a region of the orthosteric pocket that only slightly overlaps with the orthosteric covalent ligand binding pose, adopting a cobinding pose that is similar to when soaked into apo-PPAR\u03b3 LBD crystals.",
+      "claim_type": "EXPLICIT",
+      "source_text": "BVT.13 cobinds to a region of the orthosteric pocket that only slightly overlaps with the orthosteric covalent ligand binding pose, adopting a cobinding pose that is similar to when soaked into apo-PPAR\u03b3 LBD crystals.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed by comparing crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b0eef66d-ae66-4b5c-bcf0-5fe2e9c904c5",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C71",
+      "claim": "MRL24 and nTZDpa cobinding pushes the covalent orthosteric ligand into a different conformation, allowing these ligands to adopt their orthosteric binding modes in the cobound state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "MRL24 and nTZDpa cobinding pushes the covalent orthosteric ligand into a different conformation, allowing these ligands to adopt their orthosteric binding modes in the cobound state.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structures.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "661eec21-ac0a-4b42-965e-9d6316b40e49",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C72",
+      "claim": "SR1664 cobinding occurs to the so-called alternate site, located at the entrance to the orthosteric pocket.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In contrast, SR1664 cobinding occurs to the so-called alternate site, located at the entrance to the orthosteric pocket.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the crystal structure.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e4328212-f9e4-4003-a117-480c410f5983",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C73",
+      "claim": "Soaking a covalent inhibitor into preformed crystals where the PPAR\u03b3 LBD is already bound to a non-covalent ligand may prove to be difficult because the non-covalent ligand could block access to the region required for covalent modification.",
+      "claim_type": "EXPLICIT",
+      "source_text": "In the scenario of synthetic ligand cobinding with a covalent inhibitor, it is possible that soaking a covalent inhibitor into preformed crystals where the PPAR\u03b3 LBD is already bound to a non-covalent ligand may prove to be difficult. The covalent inhibitor would need to flow through solvent channels within the crystal lattice, which may not be a problem. However, upon reaching the entrance surface to the orthosteric ligand-binding pocket, it may be difficult for the covalent inhibitor to gain access to the region of the orthosteric pocket required for covalent modification as the larger non-covalent ligand could block access.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative explanation for why the reverse soaking order was not attempted, based on reasoning about steric accessibility.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "1f6bcaff-4af1-486f-bef6-353b58cff3c9",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C74",
+      "claim": "This potential order of addition problem may not be a problem for studies in solution or in cells, where the non-covalent ligand can more freely exchange in and out of the orthosteric pocket and over time the covalent reaction would reach full occupancy.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This potential order of addition problem may not be a problem for studies in solution or in cells, where the non-covalent ligand can more freely exchange in and out of the orthosteric pocket and over time the covalent reaction would reach full occupancy.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative statement about behavior in solution/cells based on reasoning about ligand dynamics.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "776a88f1-c289-4e9a-bb76-b6360197d222",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C75",
+      "claim": "In the absence of ligand, the PPAR\u03b3 LBD exchanges between a transcriptionally repressive conformation where helix 12 is solvent occluded within the orthosteric pocket and a solvent exposed active conformation.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our data provide support to structural model where in the absence of ligand, the PPAR\u03b3 LBD exchanges between a transcriptionally repressive conformation where helix 12 is solvent occluded within the orthosteric pocket and a solvent exposed active conformation (Hughes et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This model is supported by the current data and cited NMR studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "7af72b47-c78f-4eaf-9be1-540401deea24",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C76",
+      "claim": "T0070907 binding slows the rate of exchange between active and repressive conformations, stabilizing a long-lived active and repressive state.",
+      "claim_type": "EXPLICIT",
+      "source_text": "T0070907 binding slows the rate of exchange between these two conformations, stabilizing a long-lived active and repressive state (Irwin et al., 2022).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by NMR data from cited work (Irwin et al., 2022).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f7e185b9-bef1-40e4-b405-a874737ca80f",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C77",
+      "claim": "GW9662-bound PPAR\u03b3 LBD samples active and repressive states, as observed by PRE NMR, although the active conformation is more abundantly populated.",
+      "claim_type": "EXPLICIT",
+      "source_text": "GW9662-bound PPAR\u03b3 LBD also samples active and repressive states, as observed by PRE NMR (Hughes et al., 2012), although the active conformation is more abundantly populated (McCoy et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This is supported by PRE NMR data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "231b957b-d28c-4813-83b2-207362eff858",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C78",
+      "claim": "Agonist binding occurs via a two-step mechanism involving a fast encounter complex binding step at the entrance to the orthosteric pocket followed by a slow conformational change where the ligand translocates into the orthosteric pocket.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Agonist binding occurs via a two-step mechanism involving a fast encounter complex binding step at the entrance to the orthosteric pocket followed by a slow conformational change where the ligand translocates into the orthosteric pocket (Jang et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This mechanism is supported by cited kinetic and structural studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e799bcc1-ec4e-4bd6-a65f-05514eb34d77",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C79",
+      "claim": "Non-covalent ligand cobinding to T0070907-bound PPAR\u03b3 LBD selects for an active conformation, as the repressive conformation NMR peak disappears.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our NMR data here show that non-covalent ligand cobinding to T0070907-bound PPAR\u03b3 LBD selects for an active conformation, as the repressive conformation NMR peak disappears.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly observed in the NMR data presented in the manuscript.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "a3f89461-b282-457f-a7fb-237440809aa1",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C80",
+      "claim": "Non-covalent ligand cobinding prevents the LBD from adopting a transcriptionally repressive helix 12 conformation within orthosteric pocket.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This indicates non-covalent ligand cobinding prevents the LBD from adopting a transcriptionally repressive helix 12 conformation within orthosteric pocket",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the NMR data showing disappearance of the repressive state peak.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "90bc8ff4-ef87-4bba-9251-6e220f7dc4e2",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C81",
+      "claim": "Non-covalent ligand cobinding of MRL24 and other PPAR\u03b3 agonists with a covalent ligand activates PPAR\u03b3 transcription.",
+      "claim_type": "EXPLICIT",
+      "source_text": "explaining why non-covalent ligand cobinding of MRL24 and other PPAR\u03b3 agonists with a covalent ligand activates PPAR\u03b3 transcription (Hughes et al., 2016; Brust et al., 2017; MacTavish et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This functional outcome is supported by transcriptional data from cited studies.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "26e2c2e3-7c5a-418c-b452-846a72946efa",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C82",
+      "claim": "Covalent inverse agonist analogs that shift the LBD conformational ensemble towards a fully repressive LBD conformation may better inhibit synthetic ligand cobinding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Another way to test this structural model could be through the use of covalent PPAR\u03b3 inverse agonist analogs with graded activity (Orsi et al., 2023), where one might posit that covalent inverse agonist analogs that shift the LBD conformational ensemble towards a fully repressive LBD conformation may better inhibit synthetic ligand cobinding.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is a speculative hypothesis about how to test the model, based on reasoning about conformational effects.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "fb078f24-cde6-4a67-9b26-4ee0e5189b24",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C83",
+      "claim": "As of May 2024, more than 1900 citations referring to 'GW9662 or T0070907' are reported in PubMed.",
+      "claim_type": "EXPLICIT",
+      "source_text": "As of May 2024, more than 1900 citations referring to 'GW9662 or T0070907' are reported in PubMed.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a factual statement based on a PubMed search conducted by the authors.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b98d3707-7b63-40d9-838c-00bfc160c14b",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C84",
+      "claim": "Nearly 1000 of these publications were published in 2015 or later, after the original report that GW9662 and T0070907 are not effective inhibitors of ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Nearly 1000 of these publications were published in 2015 or later, after the original report that GW9662 and T0070907 are not effective inhibitors of ligand binding (Hughes et al., 2016)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "evidence_reasoning": "This is based on PubMed search data and reference to the 2016 publication.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "c6d1905f-bc5b-47c7-82a6-d28a70ece299",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C85",
+      "claim": "Many in the field continue to use GW9662 and T0070907 as covalent inhibitors despite evidence they are not effective.",
+      "claim_type": "EXPLICIT",
+      "source_text": "yet many in the field continue to use these compounds as covalent inhibitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the continued publication of papers using these compounds after 2015.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b5971fe6-1109-4da4-b684-6246d7118875",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C86",
+      "claim": "GW9662 and T0070907 display unique pharmacological properties as a transcriptionally neutral antagonist and repressive inverse agonist, respectively.",
+      "claim_type": "EXPLICIT",
+      "source_text": "On the other hand, GW9662 and T0070907 display unique pharmacological properties as a transcriptionally neutral antagonist and repressive inverse agonist, respectively Irwin et al., 2022",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "evidence_reasoning": "This pharmacological characterization is supported by cited work (Irwin et al., 2022).",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "31bfdb3f-2aa6-48de-8b7b-8665f63d20d6",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C87",
+      "claim": "It would be appropriate to use GW9662 and T0070907 as pharmacological ligands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "and thus it would be appropriate to use these compounds as pharmacological ligands.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This recommendation is inferred from their characterized pharmacological properties.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e5554c42-9f8f-428a-ad5b-9565f78cc2e0",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C88",
+      "claim": "It may be possible to use the crystal structures obtained to guide structure-informed design of covalent inhibitors that would physically block cobinding of a synthetic ligand.",
+      "claim_type": "EXPLICIT",
+      "source_text": "It may be possible to use the crystal structures we obtained to guide structure-informed design of covalent inhibitors that would physically block cobinding of a synthetic ligand.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative statement about potential future applications of the structural data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "7bf6a3a1-c674-459a-8e3d-aa9759e87847",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C89",
+      "claim": "SR16832 more completely inhibits alternate site ligand binding of an analog of MRL20, rosiglitazone and the UFA docosahexaenoic acid (DHA) and thus may be a better choice for the field to use as a covalent ligand inhibitor of PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source_text": "This could be the potential mechanism of a newer generation covalent antagonist inhibitor we developed, SR16832, that more completely inhibit alternate site ligand binding of an analog of MRL20, rosiglitazone and the UFA docosahexaenoic acid (DHA) MacTavish et al., 2024 and thus may be a better choice for the field to use as a covalent ligand inhibitor of PPAR\u03b3.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The inhibitory properties are supported by cited data (MacTavish et al., 2024), and the recommendation is inferred from this data.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "87b5c67b-6070-4cc3-9f77-e57b48f288f8",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C90",
+      "claim": "All compounds used in this study were obtained from commercial sources with purity >95%.",
+      "claim_type": "EXPLICIT",
+      "source_text": "All compounds used in this study\u2014GW9662, T0070907, BVT-13, nTZDpa, MRL24, and SR1664\u2014were obtained from commercial sources including Cayman Chemicals, Tocris Bioscience, and Sigma-Aldrich with purity >95%.",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is a factual statement about the materials used in the study.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "61d5285f-ac1f-45b2-9af2-2554f025ad91",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C91",
+      "claim": "Complete attachment of the covalent antagonist occurs within 30\u201360 min, as detected using mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Complete attachment of the covalent antagonist occurs within 30\u201360 min, as detected using an LTQ XL linear Ion trap mass spectrometer with an electrospray ionization source (Thermo Fisher Scientific).",
+      "evidence_type": "[\"DATA\"]",
+      "evidence_reasoning": "This is directly measured using mass spectrometry.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f3a31f24-096b-46e4-9c17-6fb217a60631",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "claim_id": "C92",
+      "claim": "The PPAR\u03b3 orthosteric pocket has significant flexibility and the ability to accommodate multiple ligands.",
+      "claim_type": "EXPLICIT",
+      "source_text": "Our findings highlight the significant flexibility of the PPAR\u03b3 orthosteric pocket, its ability to accommodate multiple ligands",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the crystal structures showing multiple ligands binding simultaneously and adopting various conformations.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R1",
+      "result_type": "llm",
+      "result": "Covalent inhibitors (GW9662 and T0070907) weaken but do not prevent binding of non-covalent synthetic ligands through an allosteric mechanism rather than direct steric clash. The mechanism involves shifting the LBD conformational ensemble toward a transcriptionally repressive state where helix 12 occludes the orthosteric pocket, with T0070907 having a stronger effect than GW9662. NMR data show that non-covalent ligand cobinding displaces helix 12 from the repressive conformation to an active conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The allosteric mechanism is well-supported by converging NMR (C36-C40, C79) and TR-FRET data (C34). The differential effects of GW9662 vs T0070907 correlate with their pharmacological properties (C34, C35, C37), and the conformational selection model is directly observed through disappearance of repressive state NMR peaks upon ligand cobinding (C39, C40, C79, C80). The data provide strong evidence for the proposed allosteric mechanism.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "239f7051-fad8-40b3-8146-da1f159a08e5",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R2",
+      "result_type": "llm",
+      "result": "Four non-covalent synthetic ligands (BVT-13, MRL24, nTZDpa, SR1664) bind PPAR\u03b3 LBD with Ki values consistent with published data and are classified as partial agonists or antagonists. When cobound with covalent inhibitors, these ligands decrease corepressor (NCoR1) interaction, with MRL24 uniquely increasing coactivator (TRAP220) recruitment and nTZDpa showing an antagonist-like profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The binding affinities are validated by TR-FRET assays matching published values (C26), and the functional characterization through coregulator interaction assays is directly measured (C28, C31, C32, C41, C42). The rank-order correlation between Ki values and IC50 profiles (C31) provides internal consistency. The differential effects of MRL24 vs nTZDpa on coactivator recruitment are clearly demonstrated in the TR-FRET data (C32, C41, C42).",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f3621f0d-84d6-4441-a390-da14243445f9",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R3",
+      "result_type": "llm",
+      "result": "Seven crystal structures of PPAR\u03b3 LBD cobound with covalent and non-covalent ligands reveal that most non-covalent ligands unexpectedly adopt orthosteric-like binding poses similar to their single-ligand structures, with only slight reorientations to accommodate cobinding. SR1664 uniquely adopts an alternate site binding mode at the entrance to the orthosteric pocket. The cobound structures show high similarity to the active LBD conformation (rmsd 0.77-1.03 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The crystallographic data directly demonstrate the unexpected orthosteric binding modes for BVT-13, MRL24, and nTZDpa (C52, C54, C55, C56) and alternate site binding for SR1664 (C57, C58). The structural similarity to active conformations is quantified by rmsd values (C50), and electron density observations are reported for both chains in most structures (C48, C49). The findings are surprising but well-documented through direct structural observation.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R4",
+      "result_type": "llm",
+      "result": "The covalent ligand binding pose adapts to accommodate cobound non-covalent ligands, with different effects depending on the non-covalent ligand. MRL24 and nTZDpa, the most potent ligands, push covalent ligands into non-natural conformations, while BVT-13 and SR1664 do not. The ability to alter covalent ligand conformation correlates with the orthosteric binding affinity (Ki values) of the non-covalent ligand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The crystal structures directly show different covalent ligand conformations in cobound states (C60-C64), and the adaptability of the covalent ligand is clearly demonstrated (C65). The correlation between Ki values and ability to alter covalent ligand pose (C66, C67) is supported by comparing binding affinities with structural observations. The mechanistic interpretation about pocket malleability (C68) is reasonably inferred from the structural data and cited dynamics studies.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f6eab698-03e3-448c-ac14-625274372683",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R5",
+      "result_type": "llm",
+      "result": "Each non-covalent synthetic ligand utilizes a unique cobinding mechanism: BVT-13 binds to a region with minimal overlap with covalent ligands; MRL24 and nTZDpa push covalent ligands into different conformations to adopt orthosteric binding modes; SR1664 binds to an alternate site at the entrance to the orthosteric pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The distinct cobinding mechanisms are directly observed in the crystal structures (C70, C71, C72) and represent a clear summary of the structural findings. Each mechanism is supported by electron density data and structural comparisons to single-ligand bound forms. The claim of unique mechanisms (C69) is well-justified by the diverse binding modes observed.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "33d95277-882b-4182-bef2-5671e7a947bb",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R6",
+      "result_type": "llm",
+      "result": "The active conformation of PPAR\u03b3 LBD is similar whether bound to a synthetic ligand alone or cobound with a covalent ligand. The apo-LBD exchanges between active and repressive conformations, with T0070907 slowing this exchange more than GW9662. Agonist binding occurs via a two-step mechanism involving encounter complex formation followed by translocation into the orthosteric pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The conformational similarity is supported by NMR spectral comparisons (C45) and crystal structure overlays (C51). The conformational dynamics model (C75-C77) is supported by cited NMR studies and consistent with the current data. The two-step binding mechanism (C78) is from cited work and provides context for interpreting the cobinding results. All claims are well-supported by either current data or established prior work.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R7",
+      "result_type": "llm",
+      "result": "GW9662 and T0070907 should not be used as chemical tools to inhibit ligand binding to PPAR\u03b3 because they do not block all ligands from binding. Despite evidence since 2016, nearly 1000 publications continue to use these compounds as inhibitors. However, they display unique pharmacological properties as antagonist/inverse agonist and would be appropriate to use as pharmacological ligands rather than binding inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The recommendation against using these compounds as binding inhibitors (C7) is strongly supported by the cobinding data throughout the manuscript (C4, C18, C24, C92). The literature analysis (C83-C85) documents continued misuse despite prior evidence. The alternative recommendation to use them as pharmacological ligands (C86, C87) is reasonable given their characterized pharmacological properties. The conclusion is well-justified by the experimental findings.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "494f0571-cea3-4687-9e0f-cdee6a44c343",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R8",
+      "result_type": "llm",
+      "result": "MRL20 (an analog of MRL24) can activate PPAR\u03b3-mediated transcription and increase target gene expression in differentiated 3T3-L1 cells when cotreated with GW9662 or T0070907. This functional activation is explained by non-covalent ligand cobinding preventing the LBD from adopting a repressive helix 12 conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The functional data in cells (C25) is from a cited previous study by the authors, and the mechanistic explanation (C81) is supported by the current NMR data showing displacement of repressive conformations. The connection between structural observations and functional outcomes is logical and well-supported by converging evidence from multiple techniques.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "42a91912-9fef-40f7-aaaa-b23ed051bf6e",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R9",
+      "result_type": "llm",
+      "result": "Soaking covalent inhibitors into crystals already bound to non-covalent ligands may be difficult because the non-covalent ligand could block access to the covalent modification site. However, this order-of-addition problem may not occur in solution or cells where ligands can freely exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "These claims (C73, C74) are speculative explanations for why reverse-order soaking experiments were not performed. While the reasoning about steric accessibility is plausible, no experimental data directly test this hypothesis. The speculation is reasonable but remains unvalidated, making the status uncertain rather than supported.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f007ba13-bbd3-4f96-844d-9bf737c404b1",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R10",
+      "result_type": "llm",
+      "result": "Covalent inverse agonist analogs that more completely shift the LBD toward a repressive conformation may better inhibit ligand cobinding. The crystal structures could guide design of improved covalent inhibitors. SR16832, a newer covalent inhibitor, more completely inhibits alternate site ligand binding and may be a better choice than GW9662/T0070907.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "The hypothesis about improved inhibitors (C82) is speculative and untested in this study. The suggestion about structure-guided design (C88) is reasonable but speculative. While SR16832 shows improved inhibition according to cited data (C89), the claim that it would be a 'better choice' requires more comprehensive validation across different ligands and experimental contexts. These represent promising future directions but lack sufficient current support.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "c5a50921-fb08-4fec-bfed-99911e940bad",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R11",
+      "result_type": "llm",
+      "result": "Background knowledge about PPAR\u03b3 structure, function, and ligand binding mechanisms, including the historical understanding that ligands compete for the orthosteric pocket, the discovery of ligand cobinding, conformational dynamics of the LBD and helix 12, and the mechanisms of agonists, antagonists, and covalent inhibitors GW9662 and T0070907.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These claims represent established knowledge from the field, supported by multiple citations to prior work (C1-C3, C8-C23). They provide essential context for the current study and are well-documented in the literature. The authors' previous work on cobinding (C3, C11, C18) is cited and provides the foundation for the current investigation. All background claims are appropriately supported by citations.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "03c3afd6-8f62-4683-8ec2-9f68d48175f9",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R12",
+      "result_type": "llm",
+      "result": "When PPAR\u03b3 LBD is bound to GW9662 or T0070907, corepressor peptide binding affinity is progressively strengthened while coactivator peptide affinity is weakened according to their neutral and repressive pharmacological activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "This claim (C30) is supported by TR-FRET data from cited work (Orsi et al., 2023) and is consistent with the pharmacological characterization of these compounds. The progressive strengthening/weakening correlates with the neutral antagonist (GW9662) vs repressive inverse agonist (T0070907) activities, providing a functional basis for interpreting the cobinding experiments.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "6b9bb248-a3bd-4fa1-a68e-c0323c5d9c1e",
+      "content_id": "81cca515-1ea2-424a-8c60-1a7358a717a8",
+      "result_id": "R13",
+      "result_type": "llm",
+      "result": "All compounds used in this study were obtained from commercial sources with >95% purity, and complete covalent attachment of GW9662/T0070907 to Cys285 occurs within 30-60 minutes as verified by mass spectrometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "These methodological claims (C90, C91) describe material sourcing and validation procedures. The purity specification is standard for commercial compounds, and the covalent modification kinetics are directly measured by mass spectrometry. These quality control measures are appropriate and well-documented.",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "9b4f466c-0dd2-41e1-97ea-ead761fcf439",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R1",
+      "result_type": "peer",
+      "result": "The authors demonstrate using TR-FRET and NMR that covalent inhibitors GW9662 and T0070907 weaken but do not prevent non-covalent synthetic ligands from binding to PPAR\u03b3 LBD, functioning via an allosteric mechanism by shifting the LBD ensemble toward a transcriptionally repressive conformation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "All three reviewers explicitly affirm this finding. The editor states the study 'elucidates the intricate structural mechanisms' of cobinding. Reviewer 1 notes the work 'shows how covalent and noncovalent ligands can co-occupy the PPARgamma ligand binding pocket.' Reviewer 2 states 'The biochemical and biophysical evidence as presented is strong and convincing' and specifically describes how the authors 'used TR-FRET and NMR to demonstrate that covalent inhibitors...weaken but do not prevent non-covalent synthetic ligands from binding, likely via an allosteric mechanism.'",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "66c8ce84-212b-4104-a6de-2712a27b626e",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R2",
+      "result_type": "peer",
+      "result": "Crystal structures reveal diverse cobinding mechanisms where non-covalent ligands adopt various binding modes (alternate site binding or orthosteric binding with altered covalent inhibitor poses) in the presence of covalent inhibitors, demonstrating the flexibility of the PPAR\u03b3 orthosteric pocket.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewers unanimously praise the structural work. Reviewer 1 states 'The large number of x-ray crystal structures solved for this manuscript should be applauded along with their rigorous validation and interpretation.' Reviewer 2 confirms 'the authors further reveal the structural details of various non-covalent ligand binding mechanisms in a ligand specific manner (e.g., an alternate binding site, or a new orthosteric binding mode by alerting covalent ligand binding pose).' The editor describes the integration of 'structural, biochemical, and biophysical evidence' as compelling.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R3",
+      "result_type": "peer",
+      "result": "NMR data show that non-covalent ligand cobinding to T0070907-bound PPAR\u03b3 LBD causes the repressive conformation NMR peaks to disappear and shifts the conformational ensemble toward an active state, with the effect varying by ligand (MRL24 showing the largest shift, nTZDpa showing an intermediate state).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer 1 explicitly notes 'Multiple orthogonal approaches are used to provide high resolution information on ligand binding poses and protein dynamics.' Reviewer 2 states 'The biochemical and biophysical evidence as presented is strong and convincing' and specifically describes how 'The AF-2 helix can exchange between active and repressive conformations, and covalent inhibitors shift the conformation toward a transcriptionally repressive one.' The NMR evidence for conformational selection is not questioned by any reviewer.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R4",
+      "result_type": "peer",
+      "result": "TR-FRET coregulator peptide interaction assays demonstrate that synthetic ligands decrease NCoR1 corepressor interaction when cobound with covalent inhibitors, with T0070907 showing stronger inhibitory effects than GW9662, suggesting pharmacological repressive efficacy is involved in the cobinding inhibitory mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer 1 states the work 'shows how covalent and noncovalent ligands can co-occupy the PPARgamma ligand binding pocket to elicit distinctive preferences of coactivator and corepressor proteins.' Reviewer 2 confirms 'The biochemical and biophysical evidence as presented is strong and convincing.' No reviewer questions the TR-FRET data or the functional interpretation regarding coregulator interactions.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e540c31b-e981-44fb-8d89-3976dbf3da43",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R5",
+      "result_type": "peer",
+      "result": "The authors conclude that GW9662 and T0070907 should not be used as chemical tools to inhibit ligand binding to PPAR\u03b3, though they may be appropriate as pharmacological ligands given their distinct transcriptional properties.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "Reviewer 1 explicitly states 'Importantly, this work shows how the covalent inhibitors GW9662 and T0070907 may be unreliable tools as pan-PPARgamma inhibitors despite their wide-spread use.' The editor notes the authors 'challenge the reliability of two commonly used covalent inhibitors.' No reviewer disputes this conclusion or the recommendation regarding appropriate use of these compounds.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "6beef835-a874-4580-9ba1-ab3686720ecc",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R6",
+      "result_type": "peer",
+      "result": "The authors speculate that soaking a covalent inhibitor into preformed crystals where PPAR\u03b3 LBD is already bound to a non-covalent ligand may be difficult because the larger non-covalent ligand could block access, though this may not be problematic in solution or cellular studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "UNCERTAIN",
+      "result_reasoning": "Reviewer 2 specifically addresses this speculation, noting 'The authors have reasonably speculated that it might be difficult to soak a covalent inhibitor into preformed crystals where the PPAR\u03b3 LBD is already bound to a non-covalent ligand' and raises the question of whether reversing the soaking sequence would yield similar conclusions. This indicates the reviewer accepts the speculation as reasonable but implicitly suggests the lack of experimental validation leaves some uncertainty about the generalizability of the findings.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "c2e56ca2-a532-4940-9b73-065ebbf524b8",
+      "content_id": "7d1ae1aa-9bc2-49fb-a371-3887532fb079",
+      "result_id": "R7",
+      "result_type": "peer",
+      "result": "The findings highlight the significant flexibility of the PPAR\u03b3 orthosteric pocket and its ability to accommodate multiple ligands.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "result_status": "SUPPORTED",
+      "result_reasoning": "The editor describes the study as elucidating 'the intricate structural mechanisms by which both covalent and non-covalent synthetic ligands can co-occupy the binding pocket.' Reviewer 1 notes the work provides 'a comprehensive structure-based hypothesis for the relationship between PPARgamma ligand binding domain co-occupancy and allosteric mechanisms.' Reviewer 2 states 'The flexibility of the ligand binding domain (LBD) of NRs allows various modes of ligand binding' and confirms the evidence is strong. All reviewers affirm the pocket flexibility conclusion.",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bde89d99-09ed-45c4-a5db-04ad1c8a2be3",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "6783c58a-9f7b-41c4-829b-1af775abc909",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "5b20627e-e194-4d83-8f40-7fc60707775e",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "b3b48edc-6075-4423-a582-213a0349b861",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "d4fa71a6-1327-4c6f-9e0b-2981ab690e22",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "62300376-cf66-4d5a-9092-12d583a941e4",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "ebd230f2-60bb-465a-b90d-86645267fe64",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "cdc02998-f053-4937-a495-5ee0a49694ae",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "b99cc1d6-b69a-4c6c-8674-ece826bb8a77",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "42198e9c-ba02-4bb4-bf58-33c8d35cdaed",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "e799bcc1-ec4e-4bd6-a65f-05514eb34d77",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "a3f89461-b282-457f-a7fb-237440809aa1",
+      "result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722"
+    },
+    {
+      "claim_id": "e7983e6b-13dd-445f-8546-7ec59238a8d8",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "2de9a381-3d9e-4752-8cc4-ec3058437a43",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "2dc5373c-7772-4cf2-b035-bbafb46c6a5d",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "c71f2237-b12e-43e5-9feb-da71c25d072a",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "02f7f071-69c7-4053-84ce-61931243d809",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "f6408828-6614-4cb7-87b9-55e9b1063b17",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "151a3945-db9f-4fb9-9212-2bfebeaabf34",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "4a33c16d-c993-4603-a2ab-a521f693afea",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "fae0d709-34f6-4525-bcc4-a52bb40c04e6",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "e756ba4c-8453-4048-9feb-aadec85b6d59",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "72fead7c-d02e-40af-b4e6-50770c5c7ae5",
+      "result_id": "239f7051-fad8-40b3-8146-da1f159a08e5"
+    },
+    {
+      "claim_id": "eb20bd8a-9df7-4837-b930-d1ea214365b7",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "67bd87c0-659c-48c4-a100-a64013af7724",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "64e833bb-04dc-4528-9c17-c7107c8b052a",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "418c4c9e-2c92-4f79-acab-cbea1293b7b7",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "2865e5ae-a92d-4ba5-a02e-c8cd02072e33",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "5818d447-6146-4af3-b34f-d4bb8eab8cb4",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "6d9752bf-b31e-48c0-8fef-e2e83506cffa",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "40b2eeba-1347-4170-8356-b1360fa0df8f",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "8c73de09-b791-48ee-980e-067ab7d5d170",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "e21324ef-15b0-436e-951e-78168b03c8e0",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "92b17af9-d165-4b60-b1b6-5f0aee8e6a78",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "60a1bb3b-5863-45e8-92ba-d52d9e179754",
+      "result_id": "f3621f0d-84d6-4441-a390-da14243445f9"
+    },
+    {
+      "claim_id": "5b6c03f8-7380-49ce-a811-5e8b00076238",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "055b506c-a5c5-4c37-a0ba-9d6b2e1bc2c8",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "126b13f4-f7b4-40d5-a761-819778cc7ba2",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "34b1d590-7972-4b9b-beda-ddcf291c6d0f",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "7416666f-e684-4785-babf-4438a0aadff0",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "1fd73de6-c1d6-429f-a4b6-728876339534",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "3f7a5496-e98b-4cb4-9d3e-e2613bbc3cfa",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "dde2fb75-a4d4-4064-814c-ca879fa899cd",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "0c171ad1-c5be-4ee7-b7a5-03b92337ac41",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "28f08601-afbc-4f6b-8bb7-0c1c28568fb2",
+      "result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd"
+    },
+    {
+      "claim_id": "4fcbd834-2754-4154-989f-404bdbc245ee",
+      "result_id": "f6eab698-03e3-448c-ac14-625274372683"
+    },
+    {
+      "claim_id": "981447d3-0678-4783-be56-fd79dd3892a1",
+      "result_id": "f6eab698-03e3-448c-ac14-625274372683"
+    },
+    {
+      "claim_id": "b0eef66d-ae66-4b5c-bcf0-5fe2e9c904c5",
+      "result_id": "f6eab698-03e3-448c-ac14-625274372683"
+    },
+    {
+      "claim_id": "661eec21-ac0a-4b42-965e-9d6316b40e49",
+      "result_id": "f6eab698-03e3-448c-ac14-625274372683"
+    },
+    {
+      "claim_id": "264c1f4f-0116-4ebb-97c3-ee9c10b614d3",
+      "result_id": "33d95277-882b-4182-bef2-5671e7a947bb"
+    },
+    {
+      "claim_id": "2865e5ae-a92d-4ba5-a02e-c8cd02072e33",
+      "result_id": "33d95277-882b-4182-bef2-5671e7a947bb"
+    },
+    {
+      "claim_id": "776a88f1-c289-4e9a-bb76-b6360197d222",
+      "result_id": "33d95277-882b-4182-bef2-5671e7a947bb"
+    },
+    {
+      "claim_id": "7af72b47-c78f-4eaf-9be1-540401deea24",
+      "result_id": "33d95277-882b-4182-bef2-5671e7a947bb"
+    },
+    {
+      "claim_id": "f7e185b9-bef1-40e4-b405-a874737ca80f",
+      "result_id": "33d95277-882b-4182-bef2-5671e7a947bb"
+    },
+    {
+      "claim_id": "231b957b-d28c-4813-83b2-207362eff858",
+      "result_id": "33d95277-882b-4182-bef2-5671e7a947bb"
+    },
+    {
+      "claim_id": "63fd144c-12fd-4971-bd1a-b05fc53c02eb",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "5eb32c86-49f0-414d-80c9-74c278b893cf",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "8d63ff6f-6f4e-4c04-a353-3db5ed51cb7e",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "fb078f24-cde6-4a67-9b26-4ee0e5189b24",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "b98d3707-7b63-40d9-838c-00bfc160c14b",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "c6d1905f-bc5b-47c7-82a6-d28a70ece299",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "b5971fe6-1109-4da4-b684-6246d7118875",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "31bfdb3f-2aa6-48de-8b7b-8665f63d20d6",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "f3a31f24-096b-46e4-9c17-6fb217a60631",
+      "result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8"
+    },
+    {
+      "claim_id": "2c30196e-cf8a-41d1-9b4b-b62f4cf89199",
+      "result_id": "494f0571-cea3-4687-9e0f-cdee6a44c343"
+    },
+    {
+      "claim_id": "90bc8ff4-ef87-4bba-9251-6e220f7dc4e2",
+      "result_id": "494f0571-cea3-4687-9e0f-cdee6a44c343"
+    },
+    {
+      "claim_id": "e4328212-f9e4-4003-a117-480c410f5983",
+      "result_id": "42a91912-9fef-40f7-aaaa-b23ed051bf6e"
+    },
+    {
+      "claim_id": "1f6bcaff-4af1-486f-bef6-353b58cff3c9",
+      "result_id": "42a91912-9fef-40f7-aaaa-b23ed051bf6e"
+    },
+    {
+      "claim_id": "26e2c2e3-7c5a-418c-b452-846a72946efa",
+      "result_id": "f007ba13-bbd3-4f96-844d-9bf737c404b1"
+    },
+    {
+      "claim_id": "e5554c42-9f8f-428a-ad5b-9565f78cc2e0",
+      "result_id": "f007ba13-bbd3-4f96-844d-9bf737c404b1"
+    },
+    {
+      "claim_id": "7bf6a3a1-c674-459a-8e3d-aa9759e87847",
+      "result_id": "f007ba13-bbd3-4f96-844d-9bf737c404b1"
+    },
+    {
+      "claim_id": "e850632c-551c-42e4-a754-5e74f7187b58",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "d262d6b8-2f3b-4f1a-807c-78dfbcc2fbf8",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "8898b6d1-50db-4249-a39d-7b45422a2c57",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "94aadbae-2509-4144-b4cf-f29767d59c5a",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "6ee2bcc5-3385-4c4b-a8f9-fde4e20697aa",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "ed351182-1a6c-4072-8fb6-8bc72e39b883",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "43f2047d-6caf-4bc7-9880-46357edee774",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "28e70a20-b07e-44ec-bb31-169170e7ff55",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "5b72ed22-1083-4942-99d7-129ee46d377a",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "730aa806-08b0-4522-8549-0c1b0d02d802",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "08dcee95-55bb-4faf-80e8-3399838f6dcb",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "aef65a63-1ccb-4a1d-88db-72bb034d331f",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "fa321ec8-10f8-442b-9775-51ddab4b7f40",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "c7b0473d-1393-42f0-a655-6d6b68cc7ee6",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "6cc54758-a52c-4fe6-b89e-91066c88734e",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "22ecd206-78eb-4778-ba84-ea45e34a27f6",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "e271541d-f7d1-4fab-810b-19e8f182fd9d",
+      "result_id": "c5a50921-fb08-4fec-bfed-99911e940bad"
+    },
+    {
+      "claim_id": "b7cebe3c-7f32-4e2b-83d9-8b232452c3a0",
+      "result_id": "03c3afd6-8f62-4683-8ec2-9f68d48175f9"
+    },
+    {
+      "claim_id": "87b5c67b-6070-4cc3-9f77-e57b48f288f8",
+      "result_id": "6b9bb248-a3bd-4fa1-a68e-c0323c5d9c1e"
+    },
+    {
+      "claim_id": "61d5285f-ac1f-45b2-9af2-2554f025ad91",
+      "result_id": "6b9bb248-a3bd-4fa1-a68e-c0323c5d9c1e"
+    },
+    {
+      "claim_id": "bde89d99-09ed-45c4-a5db-04ad1c8a2be3",
+      "result_id": "9b4f466c-0dd2-41e1-97ea-ead761fcf439"
+    },
+    {
+      "claim_id": "6783c58a-9f7b-41c4-829b-1af775abc909",
+      "result_id": "9b4f466c-0dd2-41e1-97ea-ead761fcf439"
+    },
+    {
+      "claim_id": "5eb32c86-49f0-414d-80c9-74c278b893cf",
+      "result_id": "9b4f466c-0dd2-41e1-97ea-ead761fcf439"
+    },
+    {
+      "claim_id": "8d63ff6f-6f4e-4c04-a353-3db5ed51cb7e",
+      "result_id": "9b4f466c-0dd2-41e1-97ea-ead761fcf439"
+    },
+    {
+      "claim_id": "4650cfcc-6228-4048-8653-abcbca8f7485",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "eb20bd8a-9df7-4837-b930-d1ea214365b7",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "67bd87c0-659c-48c4-a100-a64013af7724",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "64e833bb-04dc-4528-9c17-c7107c8b052a",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "418c4c9e-2c92-4f79-acab-cbea1293b7b7",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "2865e5ae-a92d-4ba5-a02e-c8cd02072e33",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "5818d447-6146-4af3-b34f-d4bb8eab8cb4",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "6d9752bf-b31e-48c0-8fef-e2e83506cffa",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "40b2eeba-1347-4170-8356-b1360fa0df8f",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "8c73de09-b791-48ee-980e-067ab7d5d170",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "e21324ef-15b0-436e-951e-78168b03c8e0",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "92b17af9-d165-4b60-b1b6-5f0aee8e6a78",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "60a1bb3b-5863-45e8-92ba-d52d9e179754",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "055b506c-a5c5-4c37-a0ba-9d6b2e1bc2c8",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "126b13f4-f7b4-40d5-a761-819778cc7ba2",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "34b1d590-7972-4b9b-beda-ddcf291c6d0f",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "7416666f-e684-4785-babf-4438a0aadff0",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "1fd73de6-c1d6-429f-a4b6-728876339534",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "3f7a5496-e98b-4cb4-9d3e-e2613bbc3cfa",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "dde2fb75-a4d4-4064-814c-ca879fa899cd",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "0c171ad1-c5be-4ee7-b7a5-03b92337ac41",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "28f08601-afbc-4f6b-8bb7-0c1c28568fb2",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "4fcbd834-2754-4154-989f-404bdbc245ee",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "981447d3-0678-4783-be56-fd79dd3892a1",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "b0eef66d-ae66-4b5c-bcf0-5fe2e9c904c5",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "661eec21-ac0a-4b42-965e-9d6316b40e49",
+      "result_id": "66c8ce84-212b-4104-a6de-2712a27b626e"
+    },
+    {
+      "claim_id": "d4fa71a6-1327-4c6f-9e0b-2981ab690e22",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "62300376-cf66-4d5a-9092-12d583a941e4",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "ebd230f2-60bb-465a-b90d-86645267fe64",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "cdc02998-f053-4937-a495-5ee0a49694ae",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "b99cc1d6-b69a-4c6c-8674-ece826bb8a77",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "4a33c16d-c993-4603-a2ab-a521f693afea",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "fae0d709-34f6-4525-bcc4-a52bb40c04e6",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "e756ba4c-8453-4048-9feb-aadec85b6d59",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "42198e9c-ba02-4bb4-bf58-33c8d35cdaed",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "264c1f4f-0116-4ebb-97c3-ee9c10b614d3",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "e799bcc1-ec4e-4bd6-a65f-05514eb34d77",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "a3f89461-b282-457f-a7fb-237440809aa1",
+      "result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc"
+    },
+    {
+      "claim_id": "02f7f071-69c7-4053-84ce-61931243d809",
+      "result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb"
+    },
+    {
+      "claim_id": "f6408828-6614-4cb7-87b9-55e9b1063b17",
+      "result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb"
+    },
+    {
+      "claim_id": "151a3945-db9f-4fb9-9212-2bfebeaabf34",
+      "result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb"
+    },
+    {
+      "claim_id": "5b20627e-e194-4d83-8f40-7fc60707775e",
+      "result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb"
+    },
+    {
+      "claim_id": "b3b48edc-6075-4423-a582-213a0349b861",
+      "result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb"
+    },
+    {
+      "claim_id": "72fead7c-d02e-40af-b4e6-50770c5c7ae5",
+      "result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb"
+    },
+    {
+      "claim_id": "63fd144c-12fd-4971-bd1a-b05fc53c02eb",
+      "result_id": "e540c31b-e981-44fb-8d89-3976dbf3da43"
+    },
+    {
+      "claim_id": "c6d1905f-bc5b-47c7-82a6-d28a70ece299",
+      "result_id": "e540c31b-e981-44fb-8d89-3976dbf3da43"
+    },
+    {
+      "claim_id": "b5971fe6-1109-4da4-b684-6246d7118875",
+      "result_id": "e540c31b-e981-44fb-8d89-3976dbf3da43"
+    },
+    {
+      "claim_id": "31bfdb3f-2aa6-48de-8b7b-8665f63d20d6",
+      "result_id": "e540c31b-e981-44fb-8d89-3976dbf3da43"
+    },
+    {
+      "claim_id": "e4328212-f9e4-4003-a117-480c410f5983",
+      "result_id": "6beef835-a874-4580-9ba1-ab3686720ecc"
+    },
+    {
+      "claim_id": "1f6bcaff-4af1-486f-bef6-353b58cff3c9",
+      "result_id": "6beef835-a874-4580-9ba1-ab3686720ecc"
+    },
+    {
+      "claim_id": "f3a31f24-096b-46e4-9c17-6fb217a60631",
+      "result_id": "c2e56ca2-a532-4940-9b73-065ebbf524b8"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "45ca3dec-a92c-4530-bbf3-3e4c97d730b0",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "42a91912-9fef-40f7-aaaa-b23ed051bf6e",
+      "peer_result_id": "6beef835-a874-4580-9ba1-ab3686720ecc",
+      "openeval_status": "UNCERTAIN",
+      "peer_status": "UNCERTAIN",
+      "agreement_status": "agree",
+      "comparison": "Perfect agreement on claims C73-C74 regarding speculation about reverse-order soaking experiments. Both evaluations recognize this as reasonable speculation lacking experimental validation, resulting in UNCERTAIN status for both.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "9211b9d9-e3a6-4339-a4ce-01c6f79bb458",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722",
+      "peer_result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Strong agreement on allosteric mechanism and NMR evidence (C36-C40, C44, C79-C80). Both evaluations affirm the NMR data demonstrating conformational selection and the integration of multiple orthogonal approaches. OpenEval emphasizes convergence with TR-FRET data while peer review highlights the strength of biophysical evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "b40a6571-908f-427e-b023-1c31dbdbd471",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "f3621f0d-84d6-4441-a390-da14243445f9",
+      "peer_result_id": "66c8ce84-212b-4104-a6de-2712a27b626e",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Strong agreement on crystallographic findings (C47-C58). Both evaluations praise the structural work demonstrating unexpected orthosteric binding modes and alternate site binding. Peer review explicitly applauds the large number of structures and their rigorous validation, aligning with OpenEval's assessment of well-documented direct structural observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "1aa0f557-62e1-4c0a-b461-aaa7f7ae6069",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "14f7a427-d2d6-4ab8-86ae-96d45392b7dd",
+      "peer_result_id": "66c8ce84-212b-4104-a6de-2712a27b626e",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on covalent ligand adaptability and conformational changes (C60-C68). Both evaluations support the structural evidence showing different covalent ligand conformations in cobound states. Peer review confirms ligand-specific binding mechanisms including altered covalent ligand poses, consistent with OpenEval's assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "9b0e3e70-a2bd-4e0a-ae3d-5069e2d28fa2",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "f6eab698-03e3-448c-ac14-625274372683",
+      "peer_result_id": "66c8ce84-212b-4104-a6de-2712a27b626e",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on distinct cobinding mechanisms (C69-C72). OpenEval emphasizes the diversity of binding modes observed, while peer review confirms the structural details of various non-covalent ligand binding mechanisms in a ligand-specific manner. Both find the evidence compelling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "4645d848-7ef3-4dae-8619-dd2d6dc0d79a",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8",
+      "peer_result_id": "e540c31b-e981-44fb-8d89-3976dbf3da43",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Strong agreement on recommendations against using GW9662/T0070907 as pan-inhibitors (C7, C85-C87). Both evaluations explicitly affirm this conclusion. Peer review states these compounds 'may be unreliable tools' and the editor notes the authors 'challenge the reliability' of these inhibitors, fully aligning with OpenEval's assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "9d5260d2-d7e4-4b58-ab4a-a82cb9e80f48",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "239f7051-fad8-40b3-8146-da1f159a08e5",
+      "peer_result_id": "88b5dadd-1be7-45a4-a4d5-8522fa81c2eb",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on TR-FRET functional characterization and coregulator interactions (C31-C33, C46). Both evaluations support the biochemical evidence. Peer review confirms the work shows distinctive preferences of coactivator and corepressor proteins, consistent with OpenEval's validation of TR-FRET assays and functional measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "18134261-32a3-41be-b578-0dc526eff45d",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "0ef1f923-6a76-4a54-ad1b-01dd5d5e8722",
+      "peer_result_id": "9b4f466c-0dd2-41e1-97ea-ead761fcf439",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on core cobinding findings (C4-C5, overlapping with C18, C24 from peer R1). Both evaluations affirm that covalent and non-covalent ligands can co-occupy the binding pocket. Peer review describes the evidence as 'strong and convincing' for the allosteric mechanism, aligning with OpenEval's assessment of converging evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "245e4378-06c2-4fd6-8144-a12fa7da008a",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "ec5085eb-b0cc-4012-bef4-6bd88d4215a8",
+      "peer_result_id": "c2e56ca2-a532-4940-9b73-065ebbf524b8",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Agreement on pocket flexibility and co-occupancy mechanisms (C92). Both evaluations support the conclusion about ligand binding domain flexibility allowing various binding modes. Peer review affirms the comprehensive structure-based hypothesis for co-occupancy and allosteric mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "e9f47544-99e8-4c96-9bf3-263a9009cfba",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "33d95277-882b-4182-bef2-5671e7a947bb",
+      "peer_result_id": "2078a9e1-1ed7-44e6-819f-88fbcaf857dc",
+      "openeval_status": "SUPPORTED",
+      "peer_status": "SUPPORTED",
+      "agreement_status": "agree",
+      "comparison": "Partial overlap on conformational similarity and dynamics (C45 shared). Both evaluations support the NMR spectral comparisons and conformational dynamics model. OpenEval groups this with cited prior work on two-step binding, while peer review emphasizes the orthogonal approaches providing high-resolution information.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "994407d0-3a72-4e6e-9448-db7db393d048",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "494f0571-cea3-4687-9e0f-cdee6a44c343",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated functional data in cells (C25) and mechanistic explanation for displacement of repressive conformations (C81). No corresponding peer review evaluation found for this specific grouping, though related conformational claims are addressed in peer R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "28ce02a5-b169-47c3-ac1a-769e24218e4b",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "f007ba13-bbd3-4f96-844d-9bf737c404b1",
+      "peer_result_id": null,
+      "openeval_status": "UNCERTAIN",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval found speculative claims about improved inhibitors and structure-guided design (C82, C88-C89) to be UNCERTAIN due to lack of comprehensive validation. No corresponding peer review evaluation found addressing these future directions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "f60249e1-fc57-4be8-9193-792dd0d60470",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "c5a50921-fb08-4fec-bfed-99911e940bad",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated extensive background claims and established knowledge from the field (C1-C2, C8-C23) as SUPPORTED based on appropriate citations. Peer review does not separately evaluate background/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "158313eb-7f5d-48f6-8db5-d022fc3ee5d3",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "03c3afd6-8f62-4683-8ec2-9f68d48175f9",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated TR-FRET data from cited work on progressive strengthening/weakening effects (C30) as SUPPORTED. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "bebf8a47-3762-428f-b42f-daf39a8d5aa8",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": "6b9bb248-a3bd-4fa1-a68e-c0323c5d9c1e",
+      "peer_result_id": null,
+      "openeval_status": "SUPPORTED",
+      "peer_status": null,
+      "agreement_status": "disjoint",
+      "comparison": "OpenEval evaluated methodological claims about material sourcing and validation (C90-C91) as SUPPORTED. Peer review does not separately evaluate these quality control measures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    },
+    {
+      "id": "35d933ae-b7c0-4601-88c7-22d9af70c656",
+      "submission_id": "36e9224a-c6dd-4e27-be0d-03215bc29a17",
+      "openeval_result_id": null,
+      "peer_result_id": "66c8ce84-212b-4104-a6de-2712a27b626e",
+      "openeval_status": null,
+      "peer_status": "SUPPORTED",
+      "agreement_status": "disjoint",
+      "comparison": "Peer review R2 encompasses a very broad set of structural claims (C6, C47-C72) that are distributed across multiple OpenEval results (R3, R4, R5). The peer evaluation provides an overarching endorsement of all structural work, while OpenEval provides more granular assessment by mechanism type.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-21T23:20:41.357249Z"
+    }
+  ]
+}

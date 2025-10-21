@@ -1,0 +1,828 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Radiotherapy resistance in nasopharyngeal carcinoma (NPC) is a major cause of recurrence and metastasis.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Radiotherapy resistance in nasopharyngeal carcinoma (NPC) is a major cause of recurrence and metastasis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This statement reflects established scientific understanding about NPC treatment outcomes and is presented as background knowledge."
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The glmBoost+NaiveBayes model was selected to construct the NPC-RSS based on 18 key genes.",
+    "claim_type": "EXPLICIT",
+    "source_text": "By evaluating 113 machine learning algorithm combinations, the glmBoost+NaiveBayes model was selected to construct the NPC-RSS based on 18 key genes",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This claim is supported by the computational analysis performed in the study, with model selection based on performance metrics."
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The NPC-RSS demonstrated good predictive performance in both public and in-house datasets.",
+    "claim_type": "EXPLICIT",
+    "source_text": "which demonstrated good predictive performance in both public and in-house datasets",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is supported by experimental validation results from multiple datasets analyzed in the study."
+  },
+  {
+    "claim_id": "C4",
+    "claim": "NPC-RSS is closely associated with immune features, including chemokine factors and their receptor families and the major histocompatibility complex (MHC).",
+    "claim_type": "EXPLICIT",
+    "source_text": "The study found that NPC-RSS is closely associated with immune features, including chemokine factors and their receptor families and the major histocompatibility complex (MHC).",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This finding is based on correlation analyses performed between NPC-RSS and immune features in the study datasets."
+  },
+  {
+    "claim_id": "C5",
+    "claim": "NPC-RSS influences key signaling pathways such as Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Gene functional analysis revealed that NPC-RSS influences key signaling pathways such as Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This is based on gene functional analysis (GSVA and GSEA) performed in the study, with inference about influence on these pathways."
+  },
+  {
+    "claim_id": "C6",
+    "claim": "SMARCA2 and CD9 gene expression is consistent with NPC-RSS in cell line validation.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Cell line validation confirmed that SMARCA2 and CD9 gene expression is consistent with NPC-RSS.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is supported by experimental validation using CNE2 cell lines as described in the results section."
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The radiotherapy-sensitive group exhibited richer immune infiltration and activation states.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Single-cell analysis revealed that the radiotherapy-sensitive group exhibited richer immune infiltration and activation states.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This finding is based on single-cell RNA sequencing analysis performed in the study."
+  },
+  {
+    "claim_id": "C8",
+    "claim": "A total of 133,354 new cases of nasopharyngeal cancer were reported according to the most recent global cancer statistics.",
+    "claim_type": "EXPLICIT",
+    "source_text": "According to the most recent global cancer statistics, a total of 133,354 new cases of nasopharyngeal cancer were reported, accounting for only 0.7% of all new cancer cases that year",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This statistic is cited from Sung et al., 2021, as indicated in the text."
+  },
+  {
+    "claim_id": "C9",
+    "claim": "About 70% of new nasopharyngeal cancer cases occur in Eastern and Southeastern Asia.",
+    "claim_type": "EXPLICIT",
+    "source_text": "About 70% of new nasopharyngeal cancer cases occur in Eastern and Southeastern Asia, while the rest are mainly in South-Central Asia, North Africa, and East Africa",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This epidemiological data is cited from Chen et al., 2019."
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Hyperfractionated intensity-modulated radiotherapy increases the 3-year overall survival rate in NPC patients from 55.0% to 74.6% compared to conventional fractionated intensity-modulated radiotherapy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "recent studies have shown that hyperfractionated intensity-modulated radiotherapy increases the 3-year overall survival rate in these patients from 55.0% to 74.6% compared to conventional fractionated intensity-modulated radiotherapy",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This finding is cited from You et al., 2023."
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Approximately 20\u201330% of NPC patients experience locoregional recurrence of the tumor due to radiation resistance.",
+    "claim_type": "EXPLICIT",
+    "source_text": "However, approximately 20\u201330% of patients experience locoregional recurrence of the tumor due to radiation resistance",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This statistic is supported by citations to Lee et al., 2015; Ma and Chan, 2005; Agulnik and Epstein, 2008."
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Radiotherapy resistance is the main reason for treatment failure in nasopharyngeal cancer patients.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Studies have shown that radiotherapy resistance is the main reason for treatment failure in nasopharyngeal cancer patients",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to Linkous and Yazlovitskaya, 2012; Ribassin-Majed et al., 2017."
+  },
+  {
+    "claim_id": "C13",
+    "claim": "48 models were successfully constructed from 113 machine learning algorithm combinations.",
+    "claim_type": "EXPLICIT",
+    "source_text": "As shown in Figure 1, 48 models were successfully constructed, and the area under the curve (AUC) of each model was calculated in both the training and validation sets.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct result from the computational modeling performed in the study."
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The glmBoost + NaiveBayes model combination was found to be the best after sample weighting.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The best model combination was found to be glmBoost + NaiveBayes after sample weighting",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on comparative performance evaluation of different models using AUC metrics."
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The model identified 18 genes as candidate genes for subsequent studies.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The model identified 18 genes, which were used as candidate genes for subsequent studies.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct output from the feature selection process of the machine learning model."
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The top 5 genes characterized in the NPC-RSS are SMARCA2, DMC1, CD9, PSG4, and KNG1.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The top 5 genes characterized in the NPC-RSS, in order of their contribution to radiotherapy sensitivity and weighting coefficients, are SMARCA2, DMC1, CD9, PSG4, and KNG1.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This ranking is based on the weighting coefficients calculated in the logistic regression model."
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The prediction model demonstrated an AUC of 0.996 for the training set.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The prediction model constructed using these 18 genes demonstrated good diagnostic efficacy, with an area under the receiver operating characteristic (ROC) curve (AUC) of 0.996 for the training set.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a quantitative performance metric calculated from the training dataset."
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The GSE32389 dataset yielded an AUC of 0.823 as an external validation set.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The GSE32389 dataset was employed as an external validation set, yielding an AUC of 0.823, which demonstrated the model's robustness.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a validation metric calculated from an independent external dataset."
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The overall sample-weighted AUC for the combined training and validation sets was 0.932.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The overall sample-weighted AUC for the combined training and validation sets was 0.932",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a combined performance metric calculated across both datasets."
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Differential expression analysis resulted in 2932 differentially expressed genes.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The genes used to construct the model were derived from our center's NPC transcriptome expression data and underwent differential expression analysis, resulting in 2932 differentially expressed genes (DEGs",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct result from the differential expression analysis performed on the transcriptome data."
+  },
+  {
+    "claim_id": "C21",
+    "claim": "SMARCA2 and CD9 were significantly highly expressed in the sensitive group (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source_text": "The analysis results showed that SMARCA2 and CD9, among the key genes of NPC-RSS, were significantly highly expressed in the sensitive group (p<0.001, t-test)",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is supported by statistical analysis (t-test) of gene expression data from cell line experiments."
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The sensitivity scores of the sensitive group were significantly higher than those of the resistant group in CNE2 cell lines.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The results showed that the sensitivity scores of the sensitive group were significantly higher than those of the resistant group, further confirming the reliability of NPC-RSS",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on NPC-RSS score calculations from experimental cell line data."
+  },
+  {
+    "claim_id": "C23",
+    "claim": "T follicular helper cells, regulatory T cells (Tregs), and activated NK cells were significantly elevated in the radiosensitive group compared to the radioresistant group.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The results demonstrated a significant elevation in the levels of T follicular helper cells, regulatory T cells (Tregs), and activated NK cells in the samples from the radiosensitive group compared to those from the radioresistant group",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This finding is based on immune cell infiltration analysis using the CIBERSORT algorithm."
+  },
+  {
+    "claim_id": "C24",
+    "claim": "SMARCA2 was significantly positively correlated with resting CD4 + memory T cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "SMARCA2 was significantly positively correlated with resting CD4 + memory T cells",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on correlation analysis between gene expression and immune cell infiltration."
+  },
+  {
+    "claim_id": "C25",
+    "claim": "DMC1 was significantly positively correlated with resting NK cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "DMC1 was significantly positively correlated with resting NK cells",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on correlation analysis between gene expression and immune cell infiltration."
+  },
+  {
+    "claim_id": "C26",
+    "claim": "CD9 was significantly positively correlated with resting CD4 + memory T cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "CD9 was significantly positively correlated with resting CD4 + memory T cells",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on correlation analysis between gene expression and immune cell infiltration."
+  },
+  {
+    "claim_id": "C27",
+    "claim": "KNG1 was significantly negatively correlated with M1 macrophages, \u03b3\u03b4 T cells, monocytes, eosinophils, and neutrophils.",
+    "claim_type": "EXPLICIT",
+    "source_text": "KNG1 was significantly negatively correlated with M1 macrophages, \u03b3\u03b4 T cells, monocytes, eosinophils, neutrophils, and other immune cell types",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on correlation analysis between gene expression and immune cell infiltration."
+  },
+  {
+    "claim_id": "C28",
+    "claim": "A total of 28,957 cells were acquired from single-cell transcriptome data of four patients.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Following single-cell suspension preparation, library construction, sequencing analysis, and quality control of the obtained data, we acquired transcriptome data for a total of 28,957 cells.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct count from the single-cell sequencing experiment."
+  },
+  {
+    "claim_id": "C29",
+    "claim": "22,796 cells were derived from the radiotherapy-sensitive group, and 6161 cells were from the radiotherapy-resistant group.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Among these, 22,796 cells were derived from the radiotherapy-sensitive group, and 6161 cells were from the radiotherapy-resistant group.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct count from the single-cell sequencing data grouped by treatment response."
+  },
+  {
+    "claim_id": "C30",
+    "claim": "17 cell subpopulations were identified through clustering of the 28,957 cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "As illustrated in Figure 4, 17 cell subpopulations were identified through clustering.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a result from unsupervised clustering analysis of single-cell data."
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The 17 cell subpopulations belonged to seven distinct cell types: T cells, myeloid cells, B cells, epithelial cells, neutrophils, fibroblasts, and mast cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "By examining the expression profiles of cell-type-specific marker genes, we determined that these 17 cell subpopulations belonged to seven distinct cell types: T cells, myeloid cells, B cells, epithelial cells, neutrophils, fibroblasts, and mast cells",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This is based on marker gene expression analysis combined with established knowledge of cell type markers."
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Myeloid cells, epithelial cells, fibroblasts, and mast cells were significantly more abundant in samples from the radiotherapy-sensitive group compared to the radiotherapy-resistant group.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Myeloid cells, epithelial cells, fibroblasts, and mast cells were significantly more abundant in samples from the radiotherapy-sensitive group compared to the radiotherapy-resistant group.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on quantitative comparison of cell type proportions in single-cell data."
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The predicted scores of cells in the sensitized group were significantly higher than those in the resistant group, particularly in epithelial cells, myeloid cells, fibroblasts, and mast cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The predicted scores of cells in the sensitized group were significantly higher than those in the resistant group, particularly in epithelial cells, myeloid cells, fibroblasts, and mast cells.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on NPC-RSS score calculations applied to single-cell data."
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The radiotherapy-sensitive group showed significant dominance in terms of immune cells, whereas the radiotherapy-resistant group was mainly composed of malignant epithelial and stromal cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Interestingly, the radiotherapy-sensitive group showed significant dominance in terms of immune cells, whereas the radiotherapy-resistant group was mainly composed of malignant epithelial and stromal cells",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on cell type composition analysis from single-cell sequencing data."
+  },
+  {
+    "claim_id": "C35",
+    "claim": "High expression of SMARCA2 enriched signaling pathways such as WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, TGF_BETA_SIGNALING, and NOTCH_SIGNALING.",
+    "claim_type": "EXPLICIT",
+    "source_text": "GSVA results demonstrated that high expression of SMARCA2 enriched signaling pathways such as WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, TGF_BETA_SIGNALING, and NOTCH_SIGNALING",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Gene Set Variation Analysis (GSVA) performed on the expression data."
+  },
+  {
+    "claim_id": "C36",
+    "claim": "High expression of DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Similarly, high expression of DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Gene Set Variation Analysis (GSVA) performed on the expression data."
+  },
+  {
+    "claim_id": "C37",
+    "claim": "SMARCA2 was enriched in pathways such as the JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Moreover, GSEA results showed that SMARCA2 was enriched in pathways such as the JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Gene Set Enrichment Analysis (GSEA) performed on the expression data."
+  },
+  {
+    "claim_id": "C38",
+    "claim": "DMC1 was enriched in pathways such as cell adhesion molecules, Hedgehog signaling pathway, and phosphatidylinositol signaling system.",
+    "claim_type": "EXPLICIT",
+    "source_text": "DMC1 was enriched in pathways such as cell adhesion molecules, Hedgehog signaling pathway, and phosphatidylinositol signaling system",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Gene Set Enrichment Analysis (GSEA) performed on the expression data."
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The expression of SMARCA2 was positively correlated with high expression levels of TP53, EGFR, BRCA2, and ATM.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Spearman correlation analysis indicated that the expression of SMARCA2 was positively correlated with high expression levels of TP53, EGFR, BRCA2, and ATM.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Spearman correlation analysis between gene expression levels."
+  },
+  {
+    "claim_id": "C40",
+    "claim": "DMC1 expression was positively correlated with high expression levels of BRCA1, APTX, ATM, and CCR6.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Similarly, DMC1 expression was positively correlated with high expression levels of BRCA1, APTX, ATM, and CCR6",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Spearman correlation analysis between gene expression levels."
+  },
+  {
+    "claim_id": "C41",
+    "claim": "CD9 expression was positively correlated with high expression levels of EGFR, TP53, ERBB2, and RAD51.",
+    "claim_type": "EXPLICIT",
+    "source_text": "while CD9 expression was positively correlated with high expression levels of EGFR, TP53, ERBB2, and RAD51.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Spearman correlation analysis between gene expression levels."
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The expression of KNG1 was correlated with high expression levels of HULC and significantly negatively correlated with high expression levels of BADA.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The expression of KNG1 was correlated with high expression levels of HULC and significantly negatively correlated with high expression levels of BADA",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on Spearman correlation analysis between gene expression levels."
+  },
+  {
+    "claim_id": "C43",
+    "claim": "SMARCA2, DMC1, CD9, PSG4, and KNG1 have been associated with tumor radiosensitization to varying degrees in previous studies.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Previous studies have demonstrated that the core genes of NPC-RSS, including SMARCA2, DMC1, CD9, PSG4, and KNG1, are associated with tumor radiosensitization to varying degrees",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to multiple previous studies (Zernickel et al., 2019; Xu et al., 2018b; Erovic et al., 2005; Jennrich et al., 2022; Xu et al., 2018a)."
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The protein encoded by the SMARCA2 gene plays a crucial role in various cellular processes, including cytokine response, DNA repair, regulation of cell proliferation, lineage specification and development, and cell adhesion.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The protein encoded by the SMARCA2 gene plays a crucial role in various cellular processes, including cytokine response, DNA repair, regulation of cell proliferation, lineage specification and development, and cell adhesion",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to multiple studies (Helming et al., 2014; Wang et al., 2014; Zhu et al., 2015; Tian et al., 2013; Dykhuizen et al., 2013)."
+  },
+  {
+    "claim_id": "C45",
+    "claim": "DMC1 is a key factor in homologous recombination and is involved in the repair process of DNA double-strand breaks.",
+    "claim_type": "EXPLICIT",
+    "source_text": "DMC1, a key factor in homologous recombination, is involved in the repair process of DNA double-strand breaks",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to studies (Dunne et al., 2003; Zhang et al., 2017; Xie et al., 2019)."
+  },
+  {
+    "claim_id": "C46",
+    "claim": "CD9 is involved in regulating cell-cell adhesion and interactions.",
+    "claim_type": "EXPLICIT",
+    "source_text": "As a cell surface protein, CD9 is involved in regulating cell-cell adhesion and interactions",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This reflects established knowledge about CD9 function as a cell surface protein."
+  },
+  {
+    "claim_id": "C47",
+    "claim": "CD9 may impact tumor sensitivity to radiation therapy by modulating the metastatic and invasive properties of tumor cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Moreover, CD9 may impact tumor sensitivity to radiation therapy by modulating the metastatic and invasive properties of tumor cells",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to studies (Hori et al., 2004; Herr et al., 2013; Yin et al., 2014; Rappa et al., 2015)."
+  },
+  {
+    "claim_id": "C48",
+    "claim": "All human PSGs initiate TGF-\u03b21.",
+    "claim_type": "EXPLICIT",
+    "source_text": "It has been shown that all human PSGs initiate TGF-\u03b21.",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Warren et al., 2018."
+  },
+  {
+    "claim_id": "C49",
+    "claim": "TGF-\u03b21 levels accurately predict radiosensitization in elderly patients with unresectable NSCLC undergoing 3D-CRT.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Furthermore, TGF-\u03b21 levels accurately predict radiosensitization in elderly patients with unresectable NSCLC undergoing 3D-CRT",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Fu et al., 2014."
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Kininogen-1 (KNG1) is a factor associated with coagulation and inflammatory response.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Kininogen-1 (KNG1), a factor associated with coagulation and inflammatory response",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Abdullah-Soheimi et al., 2010."
+  },
+  {
+    "claim_id": "C51",
+    "claim": "SMARCA2 depletion can increase the sensitivity to radiotherapy in non-small cell lung cancer.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Previous studies have shown that SMARCA2 has a significant effect on the responsiveness to radiotherapy in non-small cell lung cancer, and its depletion can increase the sensitivity to radiotherapy",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Zernickel et al., 2019."
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The DMC1 gene was used in the construction of the radiosensitivity index (RSI) to assess the sensitivity and prognosis of radiotherapy, especially in endometrial cancer.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In addition, the DMC1 gene was used in the construction of the radiosensitivity index (RSI) to assess the sensitivity and prognosis of radiotherapy, especially in endometrial cancer providing an important perspective on the DNA damage repair process",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Yang et al., 2024."
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The increase of CD9 and CD81 in extracellular vesicles (EVs) after radiotherapy was closely related to the cytotoxic response after treatment in glioblastoma multiforme (GBM).",
+    "claim_type": "EXPLICIT",
+    "source_text": "For CD9, its study in glioblastoma multiforme (GBM) revealed that the increase of CD9 and CD81 in extracellular vesicles (EVs) after radiotherapy was closely related to the cytotoxic response after treatment",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Jennrich et al., 2022."
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Radiation can induce an inflammatory response in tissues and affect angiogenesis.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In radiation therapy, radiation can induce an inflammatory response in tissues and affect angiogenesis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This reflects established knowledge about radiation effects on tissues."
+  },
+  {
+    "claim_id": "C55",
+    "claim": "There is growing evidence of the potential for synergistic effects between radiation therapy and components of the immune response.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Radiotherapy plays a pivotal role in cancer treatment, and there is growing evidence of the potential for synergistic effects between radiation therapy and components of the immune response",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to Ngwa, 2018; Binder et al., 2015."
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Irradiated tumors can act as adjuvants to the immune system, promoting local tumor control and inducing regression of distant tumor deposits through abscopal effects.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Indeed, recent preclinical studies have demonstrated that irradiated tumors can act as adjuvants to the immune system, promoting local tumor control and inducing regression of distant tumor deposits through abscopal effects",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Ngwa et al., 2018."
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Radiation significantly alters the distribution of tumor antigens, recruits anti-tumor T cells, and induces a distinct inflammatory microenvironment.",
+    "claim_type": "EXPLICIT",
+    "source_text": "In addition to potential systemic effects, radiation significantly alters the distribution of tumor antigens, recruits anti-tumor T cells, and induces a distinct inflammatory microenvironment",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Demaria et al., 2021."
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Tumors with high immune cell infiltration are more sensitive to radiation.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Some studies have shown that tumors with high immune cell infiltration are more sensitive to radiation",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Grass et al., 2022."
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Over one-third of tumor types in the radiotherapy-sensitive group of solid tumors exhibit an enrichment of CD8 + T cells, M1 macrophages, and NK + cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Studies have demonstrated that over one-third of tumor types in the radiotherapy-sensitive group of solid tumors exhibit an enrichment of CD8 + T cells, M1 macrophages, and NK + cells",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Grass et al., 2022."
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Proteins related to the Wnt/\u03b2-catenin signaling pathway (DKK-3, \u03b2-catenin, and c-MYC) are involved in the development of NPC.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Previous studies have demonstrated that proteins related to the Wnt/\u03b2-catenin signaling pathway (DKK-3, \u03b2-catenin, and c-MYC) are involved in the development of NPC",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citations to Pang et al., 2019; Luo et al., 2019."
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Knockdown of FOXO3a promotes radioresistance in NPC through the Wnt/\u03b2-catenin signaling pathway.",
+    "claim_type": "EXPLICIT",
+    "source_text": "and that knockdown of FOXO3a promotes radioresistance in NPC through the Wnt/\u03b2-catenin signaling pathway",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is cited from Pang et al., 2019; Luo et al., 2019."
+  },
+  {
+    "claim_id": "C62",
+    "claim": "SMARCA2 may regulate the radiosensitivity of NPC via the Wnt/\u03b2-catenin signaling pathway.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Therefore, we hypothesized that SMARCA2 may regulate the radiosensitivity of NPC via the Wnt/\u03b2-catenin signaling pathway.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This is a hypothesis based on inference from pathway enrichment analysis and previous literature, representing speculative reasoning."
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Written informed consent was obtained from the NPC patients whose NPC tissues were collected.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Written informed consent was obtained from the NPC patients whose NPC tissues were collected, and the study was approved by the Ethics Committee of Zhujiang Hospital of Southern Medical University.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a statement about the study's ethical procedures and data collection."
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The study was approved by the Ethics Committee of Zhujiang Hospital of Southern Medical University.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Written informed consent was obtained from the NPC patients whose NPC tissues were collected, and the study was approved by the Ethics Committee of Zhujiang Hospital of Southern Medical University.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a statement about the study's ethical approval."
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Differential analysis identified 71 DEGs (p<0.05 and |LogFC|>0.585) between nasopharyngeal carcinoma patients who were sensitive or resistant to radiotherapy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "This analysis identified 71 DEGs (p<0.05 and |LogFC|>0.585",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct result from differential expression analysis with specified statistical criteria."
+  },
+  {
+    "claim_id": "C66",
+    "claim": "113 combinations of machine learning algorithms were integrated in the study.",
+    "claim_type": "EXPLICIT",
+    "source_text": "We combined these algorithms with the others to form 113 combinations of machine learning algorithms.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This describes the methodological approach used in the study."
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The CNE2 nasopharyngeal carcinoma cell line was cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The CNE2 nasopharyngeal carcinoma cell line, previously preserved by the Pearl River Hospital Center for Translational Medicine, was cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This describes the experimental methods used for cell culture."
+  },
+  {
+    "claim_id": "C68",
+    "claim": "CNE-2-RS cells were exposed to a cumulative dose of 50 Gy through nine irradiations.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Each T25 culture flask was seeded with approximately 2x105 cells in the exponential growth phase and sequentially irradiated with increasing doses (2, 4, 6, 8, and 10 Gy) twice, followed by a single 10 Gy dose, for a total of nine irradiations and a cumulative dose of 50 Gy.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This describes the experimental protocol for creating radiation-resistant cells."
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The CIBERSORT algorithm was applied to analyze the expression data to infer the relative proportions of 22 immune-infiltrating cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "The CIBERSORT algorithm was applied to analyze the expression data of nasopharyngeal cancer patients to infer the relative proportions of 22 immune-infiltrating cells.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This describes the computational method used for immune cell analysis."
+  },
+  {
+    "claim_id": "C70",
+    "claim": "After quality control, 28,957 high-quality NPC cells were retained for further analysis.",
+    "claim_type": "EXPLICIT",
+    "source_text": "After quality control, 28,957 high-quality NPC cells were retained for further analysis.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a direct result from the quality control process of single-cell data."
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Three patients were sensitive to radiotherapy, while one was resistant among the four patients analyzed at single-cell level.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Among the four patients, three were sensitive to radiotherapy, while one was resistant.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This describes the clinical characteristics of the patients in the single-cell analysis."
+  },
+  {
+    "claim_id": "C72",
+    "claim": "NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC.",
+    "claim_type": "EXPLICIT",
+    "source_text": "NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC, offering new insights for precise screening of patients who may benefit from radiotherapy.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This conclusion is based on the validation results from multiple datasets and experimental approaches, with inference about clinical utility."
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The radiosensitive group classified by NPC-RSS exhibited a more abundant and active state of immune infiltration compared to the resistant group.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Compared to the resistant group, the sensitive group classified by NPC-RSS exhibited a more abundant and active state of immune infiltration.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on immune infiltration analysis comparing the two groups."
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The top 2 NPC-RSS genes were associated with several signaling pathways, including the Wnt/\u03b2-catenin signaling pathway, JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling pathway.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Single-gene pathway enrichment analysis revealed that the top 2 NPC-RSS genes were associated with several signaling pathways, including the Wnt/\u03b2-catenin signaling pathway, JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling pathway.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is based on pathway enrichment analysis (GSVA and GSEA) performed in the study."
+  },
+  {
+    "claim_id": "C75",
+    "claim": "These pathways may influence the immune microenvironment of NPC, thereby affecting its susceptibility to radiotherapy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "These pathways may influence the immune microenvironment of NPC, thereby affecting its susceptibility to radiotherapy.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ],
+    "evidence_reasoning": "This is an inference based on the pathway analysis results, involving speculative reasoning about mechanism."
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The relationship between radiation and immune response remains complex and context-dependent.",
+    "claim_type": "EXPLICIT",
+    "source_text": "however, the relationship between radiation and immune response remains complex and context-dependent",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This reflects current scientific understanding about the complexity of radiation-immune interactions."
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The optimal approach to integrating radiation and immunotherapy remains uncertain.",
+    "claim_type": "EXPLICIT",
+    "source_text": "and the optimal approach to integrating radiation and immunotherapy remains uncertain.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ],
+    "evidence_reasoning": "This reflects the current state of knowledge in the field regarding combination therapy."
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The presence of immune cells might have influenced the tumor's responsiveness to treatment prior to radiation therapy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "This finding suggests that the presence of immune cells might have influenced the tumor's responsiveness to treatment to some extent prior to radiation therapy.",
+    "evidence_type": [
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This is an inference drawn from the single-cell analysis results."
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Tumors with a predominance of immune cells may be more likely to exhibit a positive response to radiation therapy.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Tumors with a predominance of immune cells may be more likely to exhibit a positive response to radiation therapy, either due to the involvement of immune cells in tumor surveillance and clearance or because the responsiveness of tumors to radiation therapy is modulated by immune cells.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This is speculative reasoning based on the observed patterns in the data."
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The sample size of the dataset is small, which may affect the generalization and extrapolation ability of the model.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Second, the sample size of the dataset is small, which may affect the generalization and extrapolation ability of the model.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is an acknowledgment of a limitation in the study design."
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The study focuses on specific types of NPC, and thus may not be directly generalizable to other subtypes or related head and neck cancers.",
+    "claim_type": "EXPLICIT",
+    "source_text": "First, this study focuses on specific types of NPC, and thus may not be directly generalizable to other subtypes or related head and neck cancers.",
+    "evidence_type": [
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This is an inference about the limitations of the study's scope."
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The lack of direct experimental validation of function is a deficiency in the study.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Further, while our study relies on bioinformatics methods to identify and analyze key genes, the lack of direct experimental validation of function is a glaring deficiency.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is an acknowledgment of a methodological limitation."
+  }
+]
