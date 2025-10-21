@@ -7,7 +7,7 @@ workflow (extract, eval LLM, eval peer, compare, db_export) and saving
 all outputs to prepare for database import.
 
 Usage:
-    python batch_cllm.py [--dry-run] [--limit N] [--continue-on-error] [--force] [--parallel N]
+    python batch_cllm.py [--dry-run] [--limit N] [--continue-on-error] [--force] [--parallel N] [--reverse]
 
 Options:
     --dry-run, -n          Show what would be done without processing
@@ -15,6 +15,7 @@ Options:
     --continue-on-error    Continue processing even if CLLM fails
     --force, -f            Overwrite existing CLLM outputs
     --parallel N, -p N     Process N manuscripts in parallel (default: 10, use 1 for sequential)
+    --reverse, -r          Process manuscripts in reverse order (newest first)
 """
 
 import json
@@ -319,6 +320,7 @@ def process_manuscript_versions(
     force: bool = False,
     verbose: bool = True,
     parallel: int = 1,
+    reverse: bool = False,
 ) -> tuple[int, int, int, int]:
     """
     Process all manuscript version folders.
@@ -331,6 +333,7 @@ def process_manuscript_versions(
         force: If True, overwrite existing CLLM outputs
         verbose: Enable verbose CLLM logging
         parallel: Number of manuscripts to process in parallel (1 for sequential)
+        reverse: If True, process manuscripts in reverse order (newest first)
 
     Returns:
         (total_processed, successful, failed, skipped)
@@ -348,6 +351,10 @@ def process_manuscript_versions(
                 manuscript_files = list(version_dir.glob("manuscript_v*.md"))
                 if manuscript_files:
                     version_dirs.append((manuscript_dir.name, version_dir, manuscript_files[0]))
+
+    # Reverse order if requested
+    if reverse:
+        version_dirs = version_dirs[::-1]
 
     if limit:
         version_dirs = version_dirs[:limit]
@@ -495,6 +502,12 @@ def main():
         help="Process N manuscripts in parallel (default: 10, use 1 for sequential)"
     )
 
+    parser.add_argument(
+        "--reverse", "-r",
+        action="store_true",
+        help="Process manuscripts in reverse order (newest first)"
+    )
+
     args = parser.parse_args()
 
     # Setup paths
@@ -516,6 +529,10 @@ def main():
         print(f"Parallel processing: {args.parallel} concurrent processes")
     else:
         print(f"Sequential processing")
+    if args.reverse:
+        print("Order: Reverse (newest first)")
+    else:
+        print("Order: Forward (oldest first)")
     if args.dry_run:
         print("Mode: DRY RUN (no processing will be performed)")
     if args.continue_on_error:
@@ -535,6 +552,7 @@ def main():
             force=args.force,
             verbose=not args.quiet,
             parallel=args.parallel,
+            reverse=args.reverse,
         )
 
         print("=" * 70)
