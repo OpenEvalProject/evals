@@ -4,182 +4,218 @@
     "claim_ids": [
       "C2",
       "C3",
-      "C23",
-      "C42"
+      "C17",
+      "C30",
+      "C47"
     ],
+    "result": "Ensemble refinement of 20 protein datasets at 1.1\u20133.1 \u00c5 resolution reduced cross-validated R values (Rfree) by 0.3\u20134.9%, demonstrating that ensemble models fit X-ray data better than single structures. The method yields reproducible ensembles with improved fit validated by cross-validation, Rfree, and stereochemical analyses.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers explicitly affirm that 'Significant improvements in Rfree are reported' and state the method 'show convincingly that there is no longer a problem with over-fitting.' The general assessment confirms ensemble models fit X-ray data better than single structures, supporting the claims of improved R-values across all 20 datasets."
+    "status_reasoning": "Reviewers explicitly state 'Significant improvements in Rfree are reported' and note that 'the authors show convincingly that there is no longer a problem with over-fitting.' The general assessment confirms the method 'dramatically improves the situation' and validates improvements through multiple metrics."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C20",
-      "C21",
-      "C22",
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C60",
-      "C61"
+      "C16",
+      "C45",
+      "C49"
     ],
+    "result": "The ensemble-refinement method restricts the number of structures modeled and uses shorter relaxation times (0.25\u20132 ps) compared to previous methods, thereby preventing over-fitting of the data. The gain in Rfree and high local correlations between independent runs indicate high reliability of ensemble models.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers highlight as a key achievement the 'separation of global domain disorder from local fluctuation' and note that 'Taking out the large-scale effects (by modeling them with a TLS parameterization) has been crucial.' Point 3 requests clarification that the new implementation uses much smaller relaxation times (usually less than 1ps), affirming the methodological approach."
+    "status_reasoning": "Reviewers explicitly state 'the authors show convincingly that there is no longer a problem with over-fitting' and note that 'Taking out the large-scale effects (by modeling them with a TLS parameterization) has been crucial.' Point 3 acknowledges the shorter relaxation times as a key improvement over the 1990 work."
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C20",
+      "C21",
       "C43",
-      "C44",
-      "C45",
-      "C64"
+      "C44"
     ],
+    "result": "Large-scale disorder was approximated by an overall TLS model derived from atomic B-factors, which separates intermolecular variations of protein packing from detailed intra-molecular atomic fluctuations. This contrasts with the original approach by Gros et al. (1990) that required very long relaxation times.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers explicitly highlight 'validation by comparison for a case with highly accurate MAD phases' as a strength. The use of high-quality experimental phases for 1YTT and robustness testing through repeated refinements are affirmed as validation approaches without criticism."
+    "status_reasoning": "Reviewers highlight 'separation of global domain disorder from local fluctuation' as a key strength and note that 'Taking out the large-scale effects (by modeling them with a TLS parameterization) has been crucial' for preventing over-fitting."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C114",
-      "C115",
-      "C116",
-      "C117"
+      "C4",
+      "C5",
+      "C54",
+      "C55",
+      "C56"
     ],
+    "result": "The ensembles revealed that while most proteins display a well-ordered core, some proteins exhibit a 'molten core' likely supporting functionally important dynamics in ligand binding, enzyme activity and protomer assembly. These molten cores may indicate intermediates of protein molecules that function in larger complexes.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers note 'agreement with NMR relaxation studies for two cases' as a highlight but in Point 12 request additional detailed comparison plots with NMR data and ADP refinement. This request for more comprehensive validation suggests the current evidence, while promising, needs strengthening to fully support the claims."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers note 'discovery of flexible interior residues for some proteins' as a highlight and state 'there are some surprises, of internal regions that show more flexibility than would be expected, and this is likely to have functional consequences.'"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C118",
-      "C119",
-      "C120",
-      "C121",
       "C6",
-      "C77"
+      "C57"
     ],
+    "result": "Order\u2013disorder changes in HIV protease indicate a mechanism of entropy compensation for ordering the catalytic residues upon ligand binding by disordering specific core residues. The ensembles show details of specific order\u2013disorder transitions between active site and core residues that suggest this mechanism.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "While reviewers acknowledge the HIV protease findings show 'biologically relevant insights into protein function,' Point 13 requests 'detailed comparison with NMR data (if they are readily available) and comparison to single conformer ADP refinement.' This indicates the entropy compensation mechanism and order-disorder transitions require additional validation beyond the current ensemble data."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not raise concerns about this finding and note that 'the dynamic behavior implied by the simulation correlates with other physical evidence and provides biologically relevant insights into protein function.'"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C4",
-      "C5",
-      "C46",
-      "C74",
-      "C75",
-      "C76",
-      "C111",
-      "C112",
-      "C113"
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29"
     ],
+    "result": "For dataset 1UOY, the largest improvement in Rfree (~5%) was observed among datasets tested, possibly due to high degree of anisotropic and anharmonic side-chain motion. Averaging structure factors over relaxation time of 1 ps dropped Rwork and Rfree to ~11% and ~15% respectively, with 167 structures required to reproduce the R-value.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reviewers explicitly highlight 'discovery of flexible interior residues for some proteins' as a key finding and note 'there are some surprises, of internal regions that show more flexibility than would be expected, and this is likely to have functional consequences.' The observations of molten cores and well-ordered cores are accepted without challenge."
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers acknowledge this as an 'interesting case,' Point 9 specifically asks 'why is the improvement (\u223c 5% in Rfree) so good compared to some of the other cases? Can this be explained?' This indicates the reviewers want clarification on the exceptional improvement and the speculative explanation provided."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C72"
+      "C31",
+      "C32"
     ],
+    "result": "High-quality experimental phases available for 1YTT of mannose-binding protein were used for validation. The robustness of observed atomic distributions was tested by repeating ensemble refinements 10 times using different random starting velocities.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Point 1 raises the concern that 'The final description of the structure as an ensemble does involve many more (non-independent) parameters than a single description' and notes this 'has always been the worry about ensemble methods.' While reviewers acknowledge the approach is 'conservative and controlled,' they request 'an explicit discussion on this point,' indicating uncertainty about parameter-to-observation ratios and limitations for disordered regions."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers highlight 'validation by comparison for a case with highly accurate MAD phases' as a key strength. Point 5 suggests using this data for additional validation, indicating acceptance of the validation approach."
   },
   {
     "result_id": "R8",
     "claim_ids": [
       "C33",
-      "C34",
-      "C37",
-      "C38",
-      "C39"
+      "C58"
     ],
+    "result": "NMR spectroscopy has previously revealed specific dynamics for active-site residues of proline isomerase. The difference in dynamics observed between ensembles at cryo and ambient temperatures indicates that flash freezing anneals local conformational fluctuations and removes functionally relevant protein dynamics.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Point 9 asks 'why is the improvement (\u223c 5% in Rfree) so good compared to some of the other cases? Can this be explained?' This indicates reviewers find the 1UOY results noteworthy but want clarification on why this case shows exceptional improvement, suggesting the speculative explanation about anisotropic motion needs better support."
+    "status_reasoning": "While reviewers note 'agreement with NMR relaxation studies for two cases' as a highlight, Point 12 requests 'a plot with the ensemble variability (rmsd), NMR relaxation parameters...and the ADP as a function of residue' for more detailed comparison. This suggests the reviewers want stronger validation before fully accepting the temperature-dependent dynamics interpretation."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C62",
-      "C63",
-      "C65"
+      "C46",
+      "C47",
+      "C48"
     ],
+    "result": "The method is applicable to data with a wide range of upper resolution limits (1.5 to 2.6-\u00c5), showing marked improvements in Rfree. However, at lower resolution limits and for highly disordered loops, the local correlation between independent runs drops and detailed interpretation is not feasible.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Point 4 notes 'interesting features are seen with resolutions as low as 2.6 Angstrom' and observes the correlation between resolution and ensemble size, requesting the authors point out 'there is more potential for observing interesting features at higher resolution.' This affirms the method works across resolution ranges while acknowledging resolution-dependent limitations."
+    "status_reasoning": "Reviewers acknowledge the method works across resolutions but note in Point 4 that 'there is more potential for observing interesting features at higher resolution' due to the correlation between resolution and number of structures allowed. This indicates acceptance of the resolution-dependent limitations."
   },
   {
     "result_id": "R10",
     "claim_ids": [
+      "C38",
+      "C39",
       "C40",
-      "C41",
-      "C92"
+      "C59",
+      "C7"
     ],
+    "result": "Far more structural information can be reliably extracted from protein diffraction data than achieved by traditional single-structure modeling. The ensemble refinement method samples distributions reflecting structural details of protein dynamics, providing a more comprehensive description that allows interpretation of molecular function in terms of both three-dimensional arrangements and flexibilities.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Point 5 identifies an 'apparent contradiction' between averaging results from multiple blocks versus selecting one acquisition period, requesting clarification. Reviewers also question 'is there objective evidence that choosing a time block with the lowest R(work) really gives the best model?' indicating uncertainty about the structure selection protocol."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers state 'the dynamic behavior implied by the simulation correlates with other physical evidence and provides biologically relevant insights into protein function' and note that 'exploring dynamics by this method may indeed produce important biological insights, at least in some cases.'"
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C50",
       "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C79"
+      "C53"
     ],
+    "result": "The method is not a panacea for highly disordered protein regions. In the absence of ordered conformations, ensemble refinement will sample diverse conformations to prevent negative peaks in electron-density difference maps. The method is particularly suited to resolve dynamical fluctuations in ordered parts of the protein structure.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers affirm that the method 'provides biologically relevant insights into protein function' and state 'exploring dynamics by this method may indeed produce important biological insights, at least in some cases.' Point 2 asks about general applicability, which indicates acceptance of the method's value while seeking clarity on appropriate use cases."
+    "status_reasoning": "Reviewers acknowledge this limitation in Point 1, noting 'the final description of the structure as an ensemble does involve many more (non-independent) parameters than a single description, and particularly needs in essence more parameters to describe poorly ordered regions, which are the least well determined from the data.'"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C84",
-      "C87",
-      "C88",
-      "C89",
-      "C98",
-      "C99"
+      "C65",
+      "C66",
+      "C67"
     ],
+    "result": "The basal TLS model returns the lowest Rfree values in all test cases compared to other B-factor models. The mean Rfree of resulting ensembles from three different input structures are within 0.5%, and all ensemble pairs exhibit cross correlation greater than 0.99.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Point 7 requests that 'the optimum values of the other adjustable parameters should be shown as well for all cases to get a sense for the variation of these parameters for different systems.' Point 8 asks for 'representation (e.g., 2D contour plots) of the variation of R_free with adjustable parameters.' These requests indicate reviewers want more comprehensive documentation of parameter optimization before fully accepting the protocol."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not question these validation results and highlight the importance of the TLS B-factor model choice, stating it 'has been crucial' for the method's success."
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C83",
-      "C86"
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
     ],
+    "result": "Single-structure models derived from X-ray data do not adequately account for inherent, functionally important dynamics of protein molecules. Despite established knowledge that atomic dynamics play an inherent role in protein structure and function, 95% of protein residues in the PDB are modeled with a single conformation.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Point 14 notes a technical correction that 'Equation 5 is the likelihood function for acentric reflections, not centric reflections' and clarifies notation about rolling averages. Point 15 seeks confirmation about the bulk solvent mask. These are minor technical clarifications rather than challenges to the underlying methodology."
+    "status_reasoning": "Reviewers accept this motivation for the work, stating the method 'will then raise awareness that crystal structures are not static, but rather represent time and spatial averages.' The general assessment acknowledges the importance of modeling dynamics."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "MD simulation with time-averaged restraints results in a population of structures interrelated by a Boltzmann-weighted energy function. The method introduced by Torda et al. (1989) and implemented by Gros et al. (1990) showed reduction in R-value, but cross-validation subsequently revealed chronically over-fitted models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers acknowledge this historical context, stating 'Subsequent works suggested that over-fitting may occur' and that the current work 'dramatically improves the situation' compared to these earlier methods."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C63",
+      "C64",
+      "C68"
+    ],
+    "result": "The X-ray restraint optimized averaged calculated structure factors against observed structure factors, where calculated structure factors are computed as rolling averages from MD trajectory structures. Time-averaged restraints produce rolling-average structure factors. B-factors are not refined but derived from the global TLS model and atomic fluctuations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers do not challenge the overall approach, Point 14 identifies a technical error: 'Equation 5 is the likelihood function for acentric reflections, not centric reflections. Also in equations 5\u20137, the notation implies that the calculated structure factors are the instantaneous ones, whereas they should be the rolling averages.' This indicates the methodological description needs correction."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Ensemble models minimize the risk of structural over-interpretation associated with seemingly rigid single-structure models. Comparative analyses of protein molecules in different states are very useful for identifying detailed changes in structural dynamics that may be mechanistically relevant for molecular function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not challenge these claims and note that the method 'will then raise awareness that crystal structures are not static' and that 'exploring dynamics by this method may indeed produce important biological insights.'"
   }
 ]

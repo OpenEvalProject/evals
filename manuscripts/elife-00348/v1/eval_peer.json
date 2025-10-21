@@ -2,61 +2,46 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C24",
-      "C30",
+      "C4",
+      "C16",
+      "C17",
       "C31",
-      "C49",
-      "C50"
+      "C32",
+      "C33",
+      "C34"
     ],
+    "result": "The authors used Bio-CAP methodology to experimentally identify non-methylated islands (NMIs) across seven vertebrate species, revealing that NMIs are a central and conserved feature of vertebrate gene promoters. They demonstrate that CGI prediction algorithms do not accurately identify NMIs, particularly in lower vertebrates, because Bio-CAP detects non-methylated DNA through affinity-based isolation rather than relying solely on nucleotide content.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers request validation of NMI identification by orthogonal methods (bisulphite sequencing, pyrosequencing, or EpiTyping), stating 'This is mentioned as data not shown but please provide some examples.' While the Bio-CAP methodology is not rejected, the reviewers indicate that additional validation is needed to fully support confidence in the method's ability to identify NMIs."
+    "status_reasoning": "Reviewers accepted the work as 'well executed' and recommended publication, but explicitly requested validation of 'some of the new NMIs by orthogonal, quantitative single locus studies, such as bisulphite sequencing, pyrosequencing or EpiTyping' (Comment 1). They also noted that 'the performance of the affinity-based assay may differ between species depending on the CpG content overall and at CpG-dense loci' and requested this be acknowledged (Comment 2), and that 'an affinity approach (such as the use of the CXXC reagent) is more likely to be sensitive to CpG-dense than CpG-depleted loci' (Comment 5). These requests indicate the reviewers want additional validation before fully accepting the NMI identifications."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48"
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
     ],
+    "result": "The authors characterized nucleotide composition (CpG O/E and GC content) of NMIs across species, showing substantial variation that explains why CGI prediction algorithms fail in different species. They attribute this variation to differences in genome-wide CpG and GC content driven by methylcytosine deamination and GC-biased gene conversion, and note that genome assembly quality also affects predictions.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers accept the explanation for species differences in sequence composition but request better presentation and citation. They ask authors to 'briefly summarise (perhaps in the Introduction) why the different species have such different sequence composition' and cite prior work (PMID: 17932072). The underlying claims about sequence variation are not challenged, only their presentation and attribution."
+    "status_reasoning": "Reviewers accepted these findings without challenge. They acknowledged that 'the substantial variability between species of genomic CpG and (G+C) content has previously been described' and requested appropriate citation (Comment 3), indicating agreement with the observations. They also requested the authors 'briefly summarise (perhaps in the Introduction) why the different species have such different sequence composition' (Comment 2), which implies acceptance of the findings but desire for clearer explanation. Comment 6 further supports this by noting that 'the quality of the annotation of repetitive elements also plays a role in CpG island annotation,' affirming the authors' reasoning about genome assembly quality."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C27"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers question the framing that NMIs at promoters are 'contrary to expectations,' stating 'It is not clear why the authors talk about NMIs at promoters being \"contrary to expectations\", when the opposite is probably more generally accepted.' This suggests the reviewers believe the finding itself may not be as surprising as the authors claim, requesting justification or revision of this characterization."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C49",
-      "C50",
-      "C51"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reviewers acknowledge a methodological limitation, noting 'an affinity approach (such as the use of the CXXC reagent) is more likely to be sensitive to CpG-dense than CpG-depleted loci,' but explicitly state 'this does not influence the conclusions.' The claims about Bio-CAP's ability to detect NMIs across CpG density ranges are accepted with the caveat that this limitation should be acknowledged."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C26",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
       "C36",
       "C37",
       "C38",
@@ -64,91 +49,116 @@
       "C40",
       "C41",
       "C42",
-      "C43",
-      "C52"
+      "C43"
     ],
+    "result": "The authors found that NMIs are present at approximately 50-60% of protein-coding gene TSSs across all seven vertebrate species examined, with non-methylated DNA signal peaking at the TSS in all vertebrates.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers noted that 'it is not clear why the authors talk about NMIs at promoters being \"contrary to expectations\", when the opposite is probably more generally accepted' (Comment 4), suggesting they found the framing problematic rather than the data itself. However, the request for orthogonal validation of NMIs (Comment 1) applies to these TSS-associated NMIs as well, indicating the reviewers want additional confirmation of the methodology before fully accepting the quantitative overlap percentages reported."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The authors demonstrated that NMIs at orthologous gene TSSs are conserved across vertebrate species, with highly statistically significant conservation (p<10\u207b\u00b9\u2070) in all pairwise comparisons across the seven species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "The reviewers do not challenge the finding that CGI predictions fail to accurately identify NMIs across species. They request acknowledgment that 'the annotation is performed on repeat masked sequence, so the quality of the annotation of repetitive elements also plays a role' (Comment 6), but this is presented as an additional factor to acknowledge rather than a critique of the main finding."
+    "status_reasoning": "Reviewers did not challenge these conservation findings and described the work as 'well executed' and 'clearly presented original piece of work' with publication recommended. The conservation analysis was not specifically questioned, and the general positive assessment indicates acceptance of this key finding about NMI conservation across vertebrate evolution."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors found that a large proportion of NMIs lie within intergenic regions, including at lncRNA TSSs (45% in mouse, 64% in zebrafish), suggesting these intergenic NMIs mark novel transcriptional units or regulatory elements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not raise concerns about these findings regarding intergenic NMIs or their association with lncRNAs. The general assessment that this is 'well executed, clearly presented original piece of work' with publication recommended indicates acceptance of these observations, though the request for orthogonal validation (Comment 1) would apply to these NMIs as well."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C5",
-      "C6",
-      "C7",
-      "C8",
-      "C9",
-      "C28",
-      "C29",
+      "C52",
+      "C53",
       "C54",
       "C55",
       "C56",
-      "C60",
-      "C61",
-      "C99",
-      "C100",
-      "C101"
+      "C57",
+      "C58",
+      "C59",
+      "C78"
     ],
+    "result": "The authors identified a class of 'plastic' NMIs that show differential methylation between tissues across all vertebrate species. These tissue-specific NMIs are shorter, have lower CpG density, are found away from TSSs, are predominantly intergenic, and are associated with H3K4me3 in the tissue where they are non-methylated. Genes with tissue-specific NMIs show significantly increased differential expression.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "The core findings about NMI conservation across vertebrates, their presence at orthologous genes, and the unprecedented level of epigenetic conservation are not questioned by reviewers. The general assessment states this is 'a well executed, clearly presented original piece of work and publication is recommended,' with no concerns raised about these central claims."
+    "status_reasoning": "Reviewers did not challenge these findings about differential methylation and tissue-specific NMIs. The characterization of this 'plastic' class of NMIs and their properties was not questioned in the review comments, and the overall positive assessment ('well executed, clearly presented') indicates acceptance of these observations about epigenetic plasticity across vertebrates."
   },
   {
     "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C74"
+    ],
+    "result": "The authors identified a third class of 'broad' NMIs that cover entire genes, are enriched for transcription factors and developmental genes (by GO analysis, p<10\u207b\u2075), and are associated with polycomb-mediated silencing (H3K27me3 and polycomb complex components). H3K4me3 and H3K27me3 profiles reflect underlying non-methylated DNA profiles, and Hox gene clusters are characterized by broad NMIs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not raise concerns about the identification or characterization of broad NMIs or their association with polycomb marks. The integration of ChIP-seq data for histone modifications and polycomb components was not questioned, and the overall positive assessment indicates acceptance of this novel class of NMIs and their functional associations."
+  },
+  {
+    "result_id": "R8",
     "claim_ids": [
       "C69",
       "C70",
       "C71",
       "C72",
       "C73",
-      "C74",
       "C75",
-      "C91",
-      "C92",
-      "C93",
-      "C94"
+      "C76",
+      "C77"
     ],
+    "result": "The authors synthesized their findings to propose three distinct yet highly conserved classes of NMIs in vertebrate evolution: (1) canonical NMIs at promoters that remain constitutively non-methylated, (2) plastic NMIs at regulatory elements subject to differential methylation, and (3) broad NMIs at developmental genes associated with polycomb silencing. They conclude that the NMI system is highly conserved across vertebrates and under strong selective pressure.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "The findings about tissue-specific differential methylation of NMIs and the characterization of 'plastic' NMIs are not challenged by reviewers. No concerns are raised about these observations, and they are implicitly accepted as part of the 'well executed' work."
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C88",
-      "C89",
-      "C90",
-      "C95",
-      "C96",
-      "C97",
-      "C98"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "The identification and characterization of three distinct classes of NMIs, including broad NMIs associated with developmental genes and polycomb regulation, are not questioned by reviewers. These findings are implicitly accepted as part of the overall positive assessment of the manuscript."
+    "status_reasoning": "Reviewers did not challenge the authors' synthesis and classification of three NMI classes or the conclusion about conservation. The general assessment describes this as 'original piece of work' and the conceptual framework was not questioned. The reviewers' concerns focused on methodological validation and presentation clarity rather than disagreement with the interpretive framework or conservation conclusions."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C62",
-      "C63",
-      "C64",
-      "C65"
+      "C15",
+      "C68"
     ],
+    "result": "The authors challenge the prior hypothesis that non-methylated DNA at promoters is unique to endotherms and represents a major divergence between warm-blooded and cold-blooded vertebrates.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "The observations about intergenic NMIs and their association with lncRNAs and regulatory elements are not challenged by reviewers. These findings are accepted without comment as part of the overall work."
+    "status_reasoning": "Reviewers explicitly noted that 'it is not clear why the authors talk about NMIs at promoters being \"contrary to expectations\", when the opposite is probably more generally accepted' (Comment 4), suggesting they agree with the authors that NMIs at promoters should not be surprising. This indicates reviewer support for challenging the prior hypothesis about endotherm-specific divergence, though they request clearer framing of what was actually expected versus unexpected."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The authors conclude that work over the past 25 years using CGI prediction maps as a proxy for non-methylated DNA and evolutionary comparison requires re-evaluation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not challenge this strong conclusion about re-evaluating prior work based on CGI predictions. Their acceptance of the manuscript for publication with the general assessment that it is 'well executed, clearly presented original piece of work' indicates they agree that the experimental NMI data reveals limitations of CGI prediction approaches, warranting re-evaluation of prior studies."
   }
 ]

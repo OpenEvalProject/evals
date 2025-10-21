@@ -3,113 +3,174 @@
     "result_id": "R1",
     "claim_ids": [
       "C1",
-      "C27",
-      "C71",
-      "C72"
+      "C26",
+      "C53"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Undifferentiated hESCs express only six TAFs (TAFs 2, 3, 5, 6, 7, and 11), while seven TAFs (TAFs 1, 4, 8, 9, 10, 12, and 13) are absent. This pattern is consistent across H9 and H1 hESC lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The claim that undifferentiated H9 hESCs express only 6 TAFs (2,3,5,6,7,11) is supported by multiple independent methods: immunoblotting (Figure 1A), qRT-PCR (Figure 1B), and ChIP (Figure 4B). The convergence of orthogonal techniques strengthens confidence, though the authors acknowledge possible low-level expression below detection limits."
+    "status_reasoning": "Claims C1, C26, and C53 are supported by multiple independent experimental approaches including immunoblot analysis (Figure 1A), qRT-PCR (Figure 1B), and validation across two hESC lines (Figure 1\u2014figure supplement 3). The antibody specificity is validated through siRNA knockdown experiments (Figure 1\u2014figure supplements 1 and 2)."
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C2",
+      "C27",
       "C28",
       "C29",
-      "C30",
-      "C31",
-      "C97"
+      "C30"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Following retinoic acid-induced differentiation of hESCs, the seven TAFs absent in undifferentiated cells (TAFs 1, 4, 8, 9, 10, 12, 13) are induced, while the six TAFs present in undifferentiated cells remain at constant levels. This correlates with loss of pluripotency marker OCT4 and induction of differentiation marker NES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Retinoic acid-induced differentiation results in expression of all TAFs (previously absent TAFs 1,4,8,9,10,12,13 are induced) while maintaining expression of TAFs 2,3,5,6,7,11. This is well-documented by immunoblotting (Figure 1D) with appropriate positive (NES induction) and negative (OCT4 loss) differentiation controls."
+    "status_reasoning": "Claims C2, C27-C30 are supported by immunoblot data in Figure 1D showing TAF expression changes during differentiation alongside expected changes in pluripotency and differentiation markers. The experimental design appropriately uses retinoic acid as a standard differentiation inducer."
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C5",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36",
-      "C112"
+      "C31",
+      "C32"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "hESCs contain a novel TBP-containing complex comprising TAFs 2, 6, 7, 11, and TBP, but not TAFs 3 and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The existence of a non-canonical TBP/TAF 2,6,7,11 complex is supported by sucrose gradient sedimentation showing co-migration (Figure 2A) and co-immunoprecipitation demonstrating stable TBP association with TAFs 2,6,7,11 but not TAFs 3,5 (Figure 2B). The biochemical evidence is internally consistent and uses appropriate controls."
+    "status_reasoning": "Claims C5, C31, and C32 are supported by converging biochemical evidence from sucrose gradient sedimentation (Figure 2A) and co-immunoprecipitation experiments (Figure 2B). The co-IP data clearly show TBP association with TAFs 2, 6, 7, and 11 but not TAFs 3 and 5, consistent with the existence of a distinct complex."
   },
   {
     "result_id": "R4",
     "claim_ids": [
       "C3",
       "C4",
-      "C37",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C115",
-      "C116"
+      "C33",
+      "C34",
+      "C35"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Active genes in hESCs fall into two classes based on TAF occupancy: Class I genes (7 of 10 tested) are bound by TAFs 3 and 5 along with TBP, while Class II genes (3 of 10 tested) are bound by all six hESC TAFs plus TBP. Both classes show comparable TBP and POL2 occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The two-class model of gene regulation (Class I: TAF3/5+TBP; Class II: all 6 TAFs+TBP) is supported by directed ChIP on 10 genes (Figures 3-4) and comparison with HeLa cells showing different TAF usage for the same genes. The model is mechanistically consistent with the biochemical complex data (R3)."
+    "status_reasoning": "Claims C3, C4, C33-C35 are supported by directed ChIP experiments (Figures 3A-B) showing distinct TAF occupancy patterns at active promoters. The normalization to TBP and POL2 provides appropriate internal controls. However, the sample size of 10 genes is relatively small for the initial characterization."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C117"
+      "C36",
+      "C37",
+      "C38",
+      "C72"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Housekeeping genes show cell-type-specific TAF recruitment patterns. In HeLa cells, class I genes recruit TAFs 1, 8, and 9, while in H9 cells the same genes recruit only TAFs 3 and 5. TAFs 2, 6, 7, and 11 are not recruited to class I genes in either cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Global ChIP-chip analysis confirms the two-class model genome-wide with high overlap between TAF3/5 (96.8%) and between TAF7/11 (81.5% by ChIP-chip, 92.3% by validation ChIP). Directed validation of 44 genes (Figure 7) shows higher co-occupancy than ChIP-chip predicted, suggesting the ChIP-chip may underestimate but the core finding is robust."
+    "status_reasoning": "Claims C36-C38 and C72 are supported by comparative ChIP analysis in HeLa and H9 cells (Figures 4B-C). The data demonstrate that the same genes can be activated by different TAF complexes in different cell types, revealing transcriptional machinery plasticity. The experimental design appropriately controls for cell-type differences."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C43",
-      "C44"
+      "C39",
+      "C40"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "TAF knockdown experiments reveal functional differences between TAF classes: TAF3 or TAF5 knockdown decreases expression of both class I and class II genes, while knockdown of TAFs 2, 6, 7, or 11 selectively decreases class II gene expression without affecting class I genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "RNAi knockdown experiments functionally validate the two-class model: TAF3/5 depletion affects both class I and II genes (Figure 5A), while TAF2,6,7,11 depletion affects only class II genes (Figure 5B). This is the expected pattern if TAF3/5 are required for all active genes while TAF2,6,7,11 are specific to class II genes."
+    "status_reasoning": "Claims C39 and C40 are supported by qRT-PCR data (Figures 5A-B) showing differential effects of TAF knockdown on gene expression. The results are consistent with the ChIP occupancy data and are validated with independent siRNAs (Figure 5\u2014figure supplements 1-2). The functional data support the two-class model of TAF-dependent transcription."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C6",
-      "C56",
-      "C57",
-      "C58",
-      "C70"
+      "C41",
+      "C42"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Class I and class II genes differ in two genomic features: class I gene promoters have significantly higher H3K4me3 levels, while class II genes have a significantly higher frequency of alternative promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Knockdown of any of the six hESC TAFs causes loss of pluripotency markers (decreased alkaline phosphatase-positive colonies, NANOG downregulation) and induction of differentiation markers (Figure 8A-C). The consistency across all six TAFs and use of multiple differentiation markers provides strong evidence, though incomplete knockdown (acknowledged in C98) may complicate interpretation."
+    "status_reasoning": "Claims C41 and C42 are supported by genome-wide ChIP-chip analysis (Figures 6E-F, Table 1) with appropriate statistical testing (Fisher's exact test). The H3K4me3 analysis uses previously published data appropriately converted to matching genome coordinates. The statistical significance is clearly demonstrated (p < 10^-13 for both features)."
   },
   {
     "result_id": "R8",
     "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "ChIP-chip validation experiments confirm high co-occupancy of TAFs 7 and 11 (92.3% of sites), and that genes bound by TAFs 7 and 11 are also co-occupied by TAFs 2 and 6 (16/16 for TAF2, 15/16 for TAF6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C80-C85 are supported by directed ChIP validation experiments (Figures 7B-C) that confirm the ChIP-chip predictions. The high validation rate (92.3% co-occupancy) strengthens confidence in the genome-wide data and supports the model of a stable TBP/TAF 2,6,7,11 complex."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Knockdown of any of the six hESC TAFs results in loss of pluripotency, as evidenced by decreased alkaline phosphatase-positive colonies, induction of differentiation markers, and decreased NANOG expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6, C43-C45 are supported by multiple orthogonal assays (Figures 8A-C) including alkaline phosphatase staining, qRT-PCR for differentiation markers, and NANOG expression analysis. The results are validated with independent shRNAs (Figure 8\u2014figure supplements 1-4), strengthening the conclusion that TAF composition is critical for hESC self-renewal."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
       "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ectopic expression of TAFs normally absent from hESCs (including TAF1) induces differentiation, selectively decreases class II gene expression (including OCT4), and prevents TBP and POL2 recruitment to class II promoters. In contrast, ectopic expression of TAFs present in hESCs or TBP does not affect OCT4 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C7, C46-C51 are supported by multiple complementary experiments (Figures 8D-I) including alkaline phosphatase staining, qRT-PCR for differentiation and pluripotency markers, gene-specific expression analysis, and ChIP showing loss of TBP/POL2 recruitment. The specificity controls (ectopic expression of endogenous TAFs or TBP) appropriately demonstrate that the effect is specific to normally absent TAFs."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C25"
+    ],
+    "result": "The selective expression and use of TAFs underlies the ability of hESCs to self-renew and maintain proper transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C8 and C25 represent the central conclusion, supported by the combined evidence from TAF expression patterns (C1-C2), functional perturbation experiments (C6-C7, C43-C51), and the demonstration that altering TAF composition in either direction (depletion or ectopic expression) leads to loss of pluripotency. The inference is well-supported by the experimental data."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Mouse ESCs express TAFs 1, 4, 8, 9, 10, and 13, which are absent in human ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C52 is supported by immunoblot analysis (Figure 9) comparing mouse ESCs to HeLa cells and implicitly to the hESC data. This demonstrates a species-specific difference in TAF composition between mouse and human ESCs, which has important implications for comparative stem cell biology."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
       "C59",
       "C60",
       "C61",
@@ -117,70 +178,100 @@
       "C63",
       "C64",
       "C65",
-      "C66",
+      "C66"
+    ],
+    "result": "The hESC TBP/TAF 2,6,7,11 complex differs structurally from canonical TFIID: it lacks TAF1 (which normally interacts with TBP) and TAF4 (essential for Drosophila TFIID assembly). The three HFD-containing TAFs in hESCs (TAFs 3, 6, 11) cannot form any of the five known TAF heterodimers, suggesting major structural differences from canonical TFIID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C54-C66 combine experimental findings with established knowledge about TFIID structure. The inference about structural differences is well-reasoned based on: (1) absence of key TFIID components (C54-C55), (2) documented protein-protein interactions that support the observed complex (C56-C59), and (3) the inability to form canonical heterodimers (C64-C65). The conclusion (C66) is a logical inference from these observations."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Pluripotency factors are distributed across both TAF classes: OCT4 is a class II gene while NANOG and SOX2 are class I genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C70 and C71 are supported by ChIP data (Figures 3B and 10) showing differential TAF occupancy at pluripotency gene promoters. This finding is important as it demonstrates that pluripotency gene regulation involves both TAF-dependent mechanisms, challenging simple models of pluripotency network regulation."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C76"
+    ],
+    "result": "The transcriptional induction of normally absent TAFs may contribute to pluripotency gene silencing during differentiation. hESCs follow a developmental trajectory from specialized transcription machinery to complete TFIID and back to specialized forms in terminal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C73 and C76 are speculative inferences that extend beyond the direct experimental evidence. While C73 is consistent with the ectopic TAF expression data showing OCT4 repression, the manuscript does not directly test whether endogenous TAF induction during differentiation is causally responsible for pluripotency gene silencing. C76 integrates cited literature with current findings but represents a model rather than a directly tested hypothesis."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
       "C67",
       "C68",
       "C69"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Differential TAF recruitment may be mediated by promoter-bound activators, core promoter elements, or both. TAF2 and TAF6 can interact with promoter sequences, and TAF3 contains a PHD finger domain that binds H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Ectopic expression of TAFs normally absent from hESCs (particularly TAF1) causes differentiation, loss of pluripotency markers, and selective downregulation of class II genes while sparing class I genes (Figure 8D-I). The ChIP data showing loss of TBP/POL2 recruitment to OCT4 promoter provides a mechanistic explanation. Controls showing no effect from ectopic TBP or endogenous TAFs strengthen the specificity."
+    "status_reasoning": "Claims C67-C69 are supported by appropriate citations to prior work. These claims provide mechanistic context for understanding differential TAF recruitment observed in the current study. The connection to H3K4me3 (C69) is particularly relevant given the finding that class I genes have higher H3K4me3 levels (C41)."
   },
   {
-    "result_id": "R9",
+    "result_id": "R17",
     "claim_ids": [
-      "C8",
-      "C96"
+      "C77"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The overarching conclusion that selective TAF expression/use underlies hESC self-renewal is supported by the convergence of loss-of-function (R7) and gain-of-function (R8) experiments, both showing that altering TAF composition disrupts pluripotency. However, this is a high-level interpretive claim that integrates multiple results."
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C49",
-      "C50"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Statistical analysis of ChIP-chip data reveals two significant differences between class I and II genes: class I promoters have higher H3K4me3 (p<10^-13) and class II genes more frequently have alternative promoters (p<10^-58) (Table 1, Figure 6E-F). The statistical significance is strong, though functional relevance of these differences remains unclear."
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C73",
-      "C74"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Immunoblot analysis clearly shows that mouse ESCs express TAFs 1,4,8,9,10,13 that are absent in human ESCs (Figure 9), demonstrating species-specific differences in TAF composition. This is a straightforward descriptive finding with appropriate controls."
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C108",
-      "C109",
-      "C110",
-      "C111"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Altering the composition of the basic transcription machinery, particularly TAFs, may be a powerful mechanism for developmental reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The paper acknowledges ~12% mouse feeder cell contamination in ChIP samples and potential cell line differences (H9 vs H1). While the authors argue their H9 data is internally consistent and validated by multiple methods, the ENCODE TAF1 ChIP-seq data in H1 cells raises questions about whether TAF1 is truly absent or present at low levels. This uncertainty doesn't invalidate the core findings but suggests the absolute absence claim may be too strong."
+    "status_reasoning": "Claim C77 is a speculative conclusion that extrapolates from the findings about TAF composition changes during hESC differentiation. While the data support that TAF composition is important for hESC identity, the claim about developmental reprogramming more broadly is not directly tested and represents a hypothesis for future investigation."
   },
   {
-    "result_id": "R13",
+    "result_id": "R18",
     "claim_ids": [
-      "C104"
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C74",
+      "C75"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Background knowledge claims about transcription machinery, TFIID composition, TAF-dependent and -independent genes, TAF depletion during terminal differentiation, and hESC transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The developmental model proposing that hESCs start with specialized TAF composition, transition to complete TFIID upon differentiation, then re-specialize in terminal differentiation is supported by the current data (R1, R2) combined with cited prior work on muscle and liver differentiation (C101, C102). This represents a conceptual advance over the previous progressive specialization model."
+    "status_reasoning": "Claims C9-C24 and C74-C75 represent established knowledge appropriately cited from the literature. These provide necessary context for interpreting the novel findings. The citations appear appropriate and the knowledge claims are consistent with the field's understanding of transcription and stem cell biology."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Methodological details: H9 cells were cultured on irradiated mouse feeder cells, and ChIP experiments were performed with samples where feeder cells represented less than ~12% of total material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C78 and C79 describe experimental methods. The feeder cell percentage (C79) is important for interpreting ChIP results, as it indicates minimal contamination from mouse cells. The approach is consistent with published hESC ChIP studies (Boyer et al., 2005), though ideally feeder-free conditions would eliminate this concern entirely."
   }
 ]

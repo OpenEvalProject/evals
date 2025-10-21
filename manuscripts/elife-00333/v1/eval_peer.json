@@ -2,111 +2,139 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C2",
-      "C27",
-      "C30",
-      "C37",
-      "C82"
+      "C12",
+      "C13",
+      "C14",
+      "C15"
     ],
+    "result": "The authors observed virion arrest behavior upon pH drop, where virions moved under hydrodynamic force while retaining contact with the target bilayer, then arrested at various times before hemifusion. Approximately 20% of virions at pH 5.5 and 5.65 had already arrested before or at the onset of imaging.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reviewers explicitly affirm that 'release of the fusion peptide from its pocket is rate-limiting for virion arrest and hemifusion' and state this 'illustrates' the rate-limiting nature of fusion peptide release. They describe this as a 'key insight' linking kinetic intermediates to structural requirements, indicating acceptance of this central claim."
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers requested clarification about the pre-arrested virion subset (question 1), asking for speculation about whether fusion peptides had been released at higher pH. They also asked about arrest efficiency (question 2), indicating the data on arrest behavior needed further explanation or quantification."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C3",
-      "C14",
-      "C26",
-      "C28",
-      "C38",
-      "C44",
-      "C48"
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
     ],
+    "result": "The authors found that mean lag times for arrest and hemifusion show the same pH dependence, with arrest being about an order of magnitude faster. Both distributions fit gamma probability density functions, suggesting that arrest results from fusion-peptide insertion from 3-4 independent HA trimers anywhere in the contact area, while hemifusion requires the same rearrangements but with a specific geometry (proximity) of participating HAs.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers accept that 'the apparent number of events (\u223c3 trimers) remains unchanged' but express concern about the interpretation of the gamma distribution model. They state 'it is not intuitively clear that the kinetics from arrest to hemi-fusion would show a gamma distribution with N \u223c 3\u20134' and request simulation validation, indicating uncertainty about whether the gamma-derived N accurately reflects the number of neighboring trimers required for hemifusion."
+    "status_reasoning": "Reviewers raised a fundamental concern (question 4) about whether the kinetics from arrest to hemifusion would show a gamma distribution with N~3-4, noting that 'it is not intuitively clear' given the model's requirement for neighboring trimers. They requested simulation to validate whether the proposed model could reproduce the observed distributions, indicating uncertainty about the interpretation."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C4",
-      "C63",
-      "C68",
-      "C96",
-      "C97"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reviewers affirm the model is 'consistent with a model of an extended HA intermediate that bridges membranes prior to a further conformational change that leads to hemifusion.' They describe this as providing 'key insight' and an 'important contribution,' indicating acceptance of the long-lived extended intermediate as a fundamental aspect of the fusion mechanism."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C10",
-      "C11",
-      "C120"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers note that 'a subset of the virons for X31-HA is already arrested prior to the pH drop' and request 'speculation about the origin of this phenomenon,' suggesting 'perhaps some fusion peptides have been released for this variant even at higher pH.' This indicates the reviewers find the pre-arrest phenomenon inadequately explained and seek clarification."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C119",
-      "C122"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers explicitly request quantification of arrest and hemifusion efficiency, asking 'what is the efficiency of arrest upon the pH drop' and 'what is the estimated efficiency of hemifusion for those virions that are arrested.' These questions indicate the reviewers find the efficiency data incomplete or unclear, though they note 'some rough estimation would be sufficient.'"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C40",
-      "C41",
-      "C67"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers question the model's prediction that arrest occurs from 'fusion peptide release of the first few' trimers 'regardless of proximity' while hemifusion requires '3\u20134 neighboring ones.' They request simulation validation because 'it is not intuitively clear' how this model produces the observed gamma distribution, indicating uncertainty about the spatial requirements for arrest versus hemifusion."
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C42",
-      "C43",
-      "C45",
-      "C46",
-      "C47"
-    ],
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers request that 'the observed lag-time distributions be reproduced with a simple simulation' using 'a triangular lattice of a certain size' to test whether the proposed model can generate the observed kinetics. They suggest 'such a simulation would be more directly related to the model that is proposed here,' indicating they view the current computational validation as insufficient or unclear."
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C23",
-      "C24",
-      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
       "C31",
       "C32",
       "C33",
       "C34",
-      "C35"
+      "C35",
+      "C43",
+      "C44",
+      "C45"
     ],
+    "result": "Mutations at positions 4 and 112 in HA2 (G4S and D112A) accelerated both arrest and hemifusion kinetics while leaving N values unchanged, demonstrating that fusion-peptide release from its pre-fusion pocket is rate-limiting for both arrest and hemifusion, and that both processes result from the action of several HA trimers undergoing independent rate-limiting rearrangements.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers affirm that 'the kinetics of both virion arrest and hemifusion are accelerated by the destabilizing mutations' and that these mutations 'destabilize the interaction between the fusion peptide and the rest of HA in the pre-fusion state.' They accept these findings as supporting the rate-limiting role of fusion peptide release without expressing concerns about the mutational analysis."
+    "status_reasoning": "Reviewers explicitly stated this as a 'key insight' of the paper: 'to make a link between the kinetic intermediates that lead to virion arrest and hemifusion with the structural requirement of fusion peptide release.' They affirmed that the mutations 'illustrate that release of the fusion peptide from its pocket is rate-limiting for virion arrest and hemifusion.'"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Computer simulations predicted Na = 3-4 and Nh = 3-4 for a contact patch of approximately 120 HAs, with simulation-derived distributions agreeing well with experimental data. The gamma-distribution-derived N for arrest closely approximates the true number of trimers, while for hemifusion it only approximates the true Nh for smaller patch sizes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers explicitly requested this simulation work (question 4), stating 'Could the observed lag-time distributions be reproduced with a simple simulation?' They suggested a specific approach using a triangular lattice model. This indicates the simulation results were needed to validate the model but may not have been fully convincing without the requested additional analysis."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C82",
+      "C83",
+      "C89",
+      "C90",
+      "C91",
+      "C126",
+      "C127"
+    ],
+    "result": "The experiments provide evidence for a long-lived extended HA intermediate (with mean lifetime up to a minute or more depending on pH) that bridges membranes, followed by rapid and cooperative transition to hemifusion when 3-4 neighboring HA trimers accumulate. Fusion requires engagement of three or four neighboring HA trimers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers affirmed this as the central finding, stating the work is 'consistent with a model of an extended HA intermediate that bridges membranes prior to a further conformational change that leads to hemifusion.' They described this as an 'important contribution towards understanding the molecular mechanism of HA fusion.'"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Withdrawal of the fusion peptide from its pocket in the pre-fusion trimer is rate-limiting for both arrest and hemifusion events, and the requirement for cooperative action of several HAs leads to a long-lived intermediate state for single extended HA trimers, which is a fundamental aspect of the fusion mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly affirmed this conclusion, stating 'This result illustrates that release of the fusion peptide from its pocket is rate-limiting for virion arrest and hemifusion' and describing it as a 'key insight' linking kinetic intermediates with structural requirements."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "At pH 4.5 and below, all mutants showed indistinguishable mean lag times that became nearly pH independent, with unchanged N values (3-6), confirming that pH changes affect only the rate of rate-limiting rearrangements, not their number. This is explained by protonation of Asp112 at lower pH.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not question these pH-dependent findings. The data support the mechanistic interpretation that protonation eliminates the mutation effects, which is consistent with the reviewers' acceptance of the overall model linking fusion-peptide release to kinetics."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Previous single-virion fusion experiments confirmed the estimate of 3-4 HAs per fusion event and showed that lipid-mixing precedes content mixing with a rate constant of about 0.05/s for the rate-limiting step.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers suggested (question 5) investigating the effect of mutations on content mixing using the content marker from the previous PNAS study, noting 'It would be nice (but not required)' to test whether the mutations affect the hemifusion to full fusion transition. This indicates some uncertainty about how the current findings relate to the complete fusion process."
   }
 ]

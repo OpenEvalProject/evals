@@ -1,26 +1,16 @@
 [
   {
     "claim_id": "C1",
-    "claim": "The unfolded protein response (UPR) monitors the protein folding capacity of the endoplasmic reticulum (ER) in all organisms analyzed to date.",
-    "claim_type": "EXPLICIT",
-    "source_text": "The unfolded protein response (UPR) monitors the protein folding capacity of the endoplasmic reticulum (ER).",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "This is a statement of established scientific consensus about the UPR function across organisms."
-  },
-  {
-    "claim_id": "C2",
-    "claim": "In all organisms analyzed to date, the UPR drives transcriptional programs that allow cells to cope with ER stress.",
+    "claim": "The unfolded protein response (UPR) drives transcriptional programs in all organisms analyzed to date that allow cells to cope with ER stress.",
     "claim_type": "EXPLICIT",
     "source_text": "In all organisms analyzed to date, the UPR drives transcriptional programs that allow cells to cope with ER stress.",
     "evidence_type": [
       "KNOWLEDGE"
     ],
-    "evidence_reasoning": "This represents established scientific knowledge about UPR function prior to the current study."
+    "evidence_reasoning": "This statement reflects established scientific consensus about UPR function across organisms prior to the findings of this study."
   },
   {
-    "claim_id": "C3",
+    "claim_id": "C2",
     "claim": "The non-conventional splicing of Hac1 (yeasts) and XBP1 (metazoans) mRNA is conserved and dependent on Ire1.",
     "claim_type": "EXPLICIT",
     "source_text": "The non-conventional splicing of Hac1 (yeasts) and XBP1 (metazoans) mRNA, encoding orthologous UPR transcription activators, is conserved and dependent on Ire1, an ER membrane-resident kinase/endoribonuclease.",
@@ -28,81 +18,61 @@
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge in the field, supported by prior literature on UPR mechanisms."
+    "evidence_reasoning": "This represents established knowledge in the field about conserved UPR mechanisms, supported by prior literature."
   },
   {
-    "claim_id": "C4",
-    "claim": "Ire1 is an ER membrane-resident kinase/endoribonuclease.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Ire1, an ER membrane-resident kinase/endoribonuclease",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "This is established knowledge about the biochemical properties of Ire1."
-  },
-  {
-    "claim_id": "C5",
-    "claim": "Schizosaccharomyces pombe lacks a Hac1/XBP1 ortholog.",
+    "claim_id": "C3",
+    "claim": "Schizosaccharomyces pombe lacks both a Hac1/XBP1 ortholog and a UPR-dependent-transcriptional-program.",
     "claim_type": "EXPLICIT",
     "source_text": "We found that the fission yeast Schizosaccharomyces pombe lacks both a Hac1/XBP1 ortholog and a UPR-dependent-transcriptional-program.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is a finding from the authors' bioinformatic analysis and experimental observations in this study."
+    "evidence_reasoning": "This is a primary finding based on experimental observations and genomic analysis presented in the manuscript."
   },
   {
-    "claim_id": "C6",
-    "claim": "Schizosaccharomyces pombe lacks a UPR-dependent transcriptional program.",
-    "claim_type": "EXPLICIT",
-    "source_text": "We found that the fission yeast Schizosaccharomyces pombe lacks both a Hac1/XBP1 ortholog and a UPR-dependent-transcriptional-program.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is supported by the RNA-seq data showing no upregulation of genes during ER stress."
-  },
-  {
-    "claim_id": "C7",
-    "claim": "In S. pombe, Ire1 initiates the selective decay of a subset of ER-localized mRNAs that is required to survive ER stress.",
+    "claim_id": "C4",
+    "claim": "Ire1 initiates the selective decay of a subset of ER-localized-mRNAs that is required to survive ER stress in S. pombe.",
     "claim_type": "EXPLICIT",
     "source_text": "Instead, Ire1 initiates the selective decay of a subset of ER-localized-mRNAs that is required to survive ER stress.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is supported by RNA-seq data, Northern blots, and viability assays presented in the manuscript."
+    "evidence_reasoning": "This is a primary finding supported by experimental data including RNA-seq and viability assays presented in the manuscript."
   },
   {
-    "claim_id": "C8",
+    "claim_id": "C5",
     "claim": "Bip1 mRNA is the sole mRNA cleaved upon Ire1 activation that escapes decay in S. pombe.",
     "claim_type": "EXPLICIT",
     "source_text": "We identified Bip1 mRNA, encoding a major ER-chaperone, as the sole mRNA cleaved upon Ire1 activation that escapes decay.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is supported by Northern blot analysis, RNA-seq data, and 3' RACE experiments."
+    "evidence_reasoning": "This finding is supported by Northern blot analysis, RNA-seq data, and 3' RACE experiments presented in the manuscript."
   },
   {
-    "claim_id": "C9",
+    "claim_id": "C6",
     "claim": "Truncation of Bip1 mRNA's 3\u2032 UTR, including loss of its polyA tail, stabilizes Bip1 mRNA.",
     "claim_type": "EXPLICIT",
     "source_text": "Instead, truncation of its 3\u2032 UTR, including loss of its polyA tail, stabilized Bip1 mRNA, resulting in increased Bip1 translation.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is supported by mRNA stability measurements, Northern blots, and ribosome profiling data."
+    "evidence_reasoning": "This is supported by experimental data including Northern blots, mRNA half-life measurements, and ribosome profiling presented in the manuscript."
   },
   {
-    "claim_id": "C10",
+    "claim_id": "C7",
     "claim": "Truncation of Bip1 mRNA results in increased Bip1 translation.",
     "claim_type": "EXPLICIT",
-    "source_text": "truncation of its 3\u2032 UTR, including loss of its polyA tail, stabilized Bip1 mRNA, resulting in increased Bip1 translation.",
+    "source_text": "Instead, truncation of its 3\u2032 UTR, including loss of its polyA tail, stabilized Bip1 mRNA, resulting in increased Bip1 translation.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is supported by ribosome profiling and polysome analysis data."
+    "evidence_reasoning": "This is supported by ribosome profiling and polysome analysis data presented in Figure 4."
   },
   {
-    "claim_id": "C11",
+    "claim_id": "C8",
     "claim": "S. pombe uses a universally conserved stress-sensing machinery in novel ways to maintain homeostasis in the ER.",
     "claim_type": "EXPLICIT",
     "source_text": "Thus, S. pombe uses a universally conserved stress-sensing machinery in novel ways to maintain homeostasis in the ER.",
@@ -110,97 +80,53 @@
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is an inference drawn from the experimental data showing different UPR mechanisms in S. pombe compared to other organisms."
+    "evidence_reasoning": "This is a conclusion drawn from the experimental findings showing that S. pombe uses Ire1 differently than other organisms."
   },
   {
-    "claim_id": "C12",
-    "claim": "Environmental or physiological demands can lead to an imbalance between the protein folding load and the protein folding capacity in the ER lumen, resulting in ER stress.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Environmental or physiological demands can lead to an imbalance between the protein folding load and the protein folding capacity in the ER lumen, resulting in an accumulation of unfolded or misfolded proteins, a condition termed 'ER stress'",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge in the field, supported by the cited reference (Walter and Ron, 2011)."
-  },
-  {
-    "claim_id": "C13",
-    "claim": "Unmitigated ER stress is toxic to cells and triggers cell death.",
+    "claim_id": "C9",
+    "claim": "ER stress is toxic to cells and triggers cell death when unmitigated.",
     "claim_type": "EXPLICIT",
     "source_text": "When unmitigated, ER stress is toxic to cells and triggers cell death",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by multiple citations (Shore et al., 2011; Tabas and Ron, 2011; Hetz, 2012)."
+    "evidence_reasoning": "This is established knowledge in the field, supported by citations to Shore et al., 2011; Tabas and Ron, 2011; Hetz, 2012."
   },
   {
-    "claim_id": "C14",
-    "claim": "In metazoan cells, three ER-resident transmembrane sensors (Ire1, PERK, ATF6) transmit information into the cytosol.",
+    "claim_id": "C10",
+    "claim": "Three ER-resident transmembrane sensors (Ire1, PERK, ATF6) transmit information into the cytosol in metazoan cells.",
     "claim_type": "EXPLICIT",
     "source_text": "In metazoan cells, three ER-resident transmembrane sensors, Ire1, PERK, ATF6 transmit information into the cytosol.",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about metazoan UPR pathways, supported by citation (Walter and Ron, 2011)."
+    "evidence_reasoning": "This represents established knowledge about metazoan UPR pathways, supported by citation to Walter and Ron, 2011."
   },
   {
-    "claim_id": "C15",
-    "claim": "Each UPR sensor activates transcription factors that collaborate to drive expression of UPR target genes.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Each sensor activates transcription factors that collaborate to drive expression of UPR target genes",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about UPR signaling, supported by citation."
-  },
-  {
-    "claim_id": "C16",
-    "claim": "BiP is an abundantly expressed Hsp70 family member located in the ER lumen.",
-    "claim_type": "EXPLICIT",
-    "source_text": "including genes encoding ER-lumenal chaperones, such as BiP, an abundantly expressed Hsp70 family member.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "This is established knowledge about BiP protein characteristics."
-  },
-  {
-    "claim_id": "C17",
-    "claim": "Ire1 is a bifunctional transmembrane kinase/endoribonuclease that controls expression of the transcription factor XBP1 by non-conventional splicing of its mRNA.",
+    "claim_id": "C11",
+    "claim": "Ire1 is a bifunctional transmembrane kinase/endoribonuclease.",
     "claim_type": "EXPLICIT",
     "source_text": "Ire1 is a bifunctional transmembrane kinase/endoribonuclease that controls expression of the transcription factor XBP1 by a non-conventional splicing of its mRNA.",
     "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
+      "KNOWLEDGE"
     ],
-    "evidence_reasoning": "This is established knowledge about Ire1 function in metazoans."
+    "evidence_reasoning": "This is established knowledge about Ire1's enzymatic activities."
   },
   {
-    "claim_id": "C18",
+    "claim_id": "C12",
     "claim": "Ire1 uses its ER-lumenal domain to detect unfolded proteins.",
     "claim_type": "EXPLICIT",
-    "source_text": "Ire1 uses its ER-lumenal domain to detect unfolded proteins",
+    "source_text": "Ire1 uses its ER-lumenal domain to detect unfolded proteins, and in response activates by homo-oligomerization, trans-autophosphorylation, and allosteric activation of its cytosolic nuclease modality",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by citations (Korennykh et al., 2009; Gardner and Walter, 2011)."
+    "evidence_reasoning": "This is established knowledge supported by citations to Korennykh et al., 2009; Gardner and Walter, 2011."
   },
   {
-    "claim_id": "C19",
-    "claim": "Ire1 activates by homo-oligomerization, trans-autophosphorylation, and allosteric activation of its cytosolic nuclease modality in response to unfolded proteins.",
-    "claim_type": "EXPLICIT",
-    "source_text": "in response activates by homo-oligomerization, trans-autophosphorylation, and allosteric activation of its cytosolic nuclease modality",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about Ire1 activation mechanism, supported by citations."
-  },
-  {
-    "claim_id": "C20",
+    "claim_id": "C13",
     "claim": "Activated Ire1 cleaves XBP1 mRNA at two discrete stem-loop structures, excising a short intron.",
     "claim_type": "EXPLICIT",
     "source_text": "Activated Ire1 cleaves the XBP1 mRNA at two discrete stem-loop structures, excising a short intron.",
@@ -208,87 +134,43 @@
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about XBP1 mRNA splicing mechanism."
+    "evidence_reasoning": "This is established knowledge about XBP1 mRNA splicing, supported by citations to Yoshida et al., 2001; Calfon et al., 2002."
   },
   {
-    "claim_id": "C21",
-    "claim": "The two severed exons of XBP1 mRNA are ligated to produce spliced XBP1 mRNA.",
-    "claim_type": "EXPLICIT",
-    "source_text": "The two severed exons are then ligated to produce spliced XBP1 mRNA",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about XBP1 mRNA processing."
-  },
-  {
-    "claim_id": "C22",
-    "claim": "A frame-shift induced by XBP1 mRNA splicing results in translation of active XBP1 protein.",
-    "claim_type": "EXPLICIT",
-    "source_text": "which because of a frame-shift induced by the splicing event, are translated to produce active XBP1",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge supported by citations (Yoshida et al., 2001; Calfon et al., 2002)."
-  },
-  {
-    "claim_id": "C23",
+    "claim_id": "C14",
     "claim": "Ire1 was first discovered in the budding yeast S. cerevisiae.",
     "claim_type": "EXPLICIT",
-    "source_text": "Ire1 was first discovered in the budding yeast S. cerevisiae",
+    "source_text": "Ire1 was first discovered in the budding yeast S. cerevisiae, where it constitutes the core machinery of the cells' only UPR signaling pathway",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is historical knowledge supported by citations (Cox et al., 1993; Mori et al., 1993)."
+    "evidence_reasoning": "This is historical knowledge supported by citations to Cox et al., 1993; Mori et al., 1993."
   },
   {
-    "claim_id": "C24",
-    "claim": "In S. cerevisiae, Ire1 constitutes the core machinery of the cells' only UPR signaling pathway.",
+    "claim_id": "C15",
+    "claim": "S. cerevisiae Ire1 splices Hac1 mRNA by a mechanism conserved in all metazoan cells.",
     "claim_type": "EXPLICIT",
-    "source_text": "where it constitutes the core machinery of the cells' only UPR signaling pathway",
+    "source_text": "S. cerevisiae Ire1 splices Hac1 mRNA, encoding the yeast ortholog of XBP1, by a mechanism that was later found conserved in all metazoan cells",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about S. cerevisiae UPR, supported by citations."
+    "evidence_reasoning": "This is established knowledge supported by citations to Cox and Walter, 1996; Sidrauski et al., 1996."
   },
   {
-    "claim_id": "C25",
-    "claim": "S. cerevisiae Ire1 splices Hac1 mRNA, encoding the yeast ortholog of XBP1.",
-    "claim_type": "EXPLICIT",
-    "source_text": "S. cerevisiae Ire1 splices Hac1 mRNA, encoding the yeast ortholog of XBP1",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge supported by citations (Cox and Walter, 1996; Sidrauski et al., 1996)."
-  },
-  {
-    "claim_id": "C26",
-    "claim": "The mechanism of Ire1-mediated mRNA splicing in S. cerevisiae was later found conserved in all metazoan cells.",
-    "claim_type": "EXPLICIT",
-    "source_text": "by a mechanism that was later found conserved in all metazoan cells",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about evolutionary conservation of the splicing mechanism."
-  },
-  {
-    "claim_id": "C27",
-    "claim": "Ire1-mediated mRNA splicing is considered to be the most evolutionary ancient branch of the UPR.",
+    "claim_id": "C16",
+    "claim": "Ire1-mediated mRNA splicing is the most evolutionary ancient branch of the UPR.",
     "claim_type": "EXPLICIT",
     "source_text": "Ire1-mediated mRNA splicing therefore is considered to be the most evolutionary ancient branch of the UPR.",
     "evidence_type": [
       "KNOWLEDGE",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is an inference based on evolutionary conservation patterns across species."
+    "evidence_reasoning": "This is a conclusion based on evolutionary conservation patterns established in the literature."
   },
   {
-    "claim_id": "C28",
+    "claim_id": "C17",
     "claim": "PERK reduces the load of proteins entering the ER through translational control.",
     "claim_type": "EXPLICIT",
     "source_text": "PERK superimposes another layer of control by reducing the load of proteins entering the ER through translational control",
@@ -296,399 +178,206 @@
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about PERK function, supported by citation (Pavitt and Ron, 2012)."
+    "evidence_reasoning": "This is established knowledge about PERK function, supported by citation to Pavitt and Ron, 2012."
   },
   {
-    "claim_id": "C29",
-    "claim": "Ire1 induction in Drosophila cells results in splicing of XBP1 mRNA and mediates enhanced mRNA breakdown.",
+    "claim_id": "C18",
+    "claim": "Ire1 induction in Drosophila cells results in both splicing of XBP1 mRNA and enhanced mRNA breakdown.",
     "claim_type": "EXPLICIT",
     "source_text": "In particular, Hollien and Weissman (2006) first discovered in Drosophila cells that Ire1 induction not only results in splicing of XBP1 mRNA but also mediates enhanced mRNA breakdown.",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge from prior work, supported by citation (Hollien and Weissman, 2006)."
+    "evidence_reasoning": "This is a finding from prior work, supported by citation to Hollien and Weissman, 2006."
   },
   {
-    "claim_id": "C30",
-    "claim": "Regulated Ire1-dependent decay (RIDD) is conserved in mammalian cells.",
+    "claim_id": "C19",
+    "claim": "Regulated Ire1-dependent decay (RIDD) is conserved in mammalian cells but not in S. cerevisiae.",
     "claim_type": "EXPLICIT",
-    "source_text": "This output of Ire1 activation, termed 'regulated Ire1-dependent decay' (RIDD), is conserved in mammalian cells",
+    "source_text": "This output of Ire1 activation, termed 'regulated Ire1-dependent decay' (RIDD), is conserved in mammalian cells, but not in S. cerevisiae",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by citations (Niwa et al., 2005; Han et al., 2009; Hollien et al., 2009)."
+    "evidence_reasoning": "This is established knowledge supported by citations to Niwa et al., 2005; Han et al., 2009; Hollien et al., 2009."
   },
   {
-    "claim_id": "C31",
-    "claim": "RIDD is not present in S. cerevisiae.",
-    "claim_type": "EXPLICIT",
-    "source_text": "but not in S. cerevisiae, where transcriptional control via Hac1 mRNA splicing remains the only known route of UPR signaling",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about S. cerevisiae UPR mechanisms, supported by citations."
-  },
-  {
-    "claim_id": "C32",
+    "claim_id": "C20",
     "claim": "All identified RIDD target mRNAs are translated by membrane-bound ribosomes at the ER surface.",
     "claim_type": "EXPLICIT",
-    "source_text": "All identified RIDD target mRNAs are translated by membrane-bound ribosomes at the ER surface",
+    "source_text": "All identified RIDD target mRNAs are translated by membrane-bound ribosomes at the ER surface, where they are cleaved, most likely by Ire1 directly",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge from prior studies, supported by citations."
+    "evidence_reasoning": "This is established knowledge supported by citations to Han et al., 2009; Hollien et al., 2009; Cross et al., 2012."
   },
   {
-    "claim_id": "C33",
-    "claim": "RIDD target mRNAs are most likely cleaved by Ire1 directly.",
-    "claim_type": "EXPLICIT",
-    "source_text": "where they are cleaved, most likely by Ire1 directly",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is an inference from prior studies, supported by citations (Han et al., 2009; Hollien et al., 2009; Cross et al., 2012)."
-  },
-  {
-    "claim_id": "C34",
-    "claim": "Once nicked and no longer protected by their polyA tails and 5\u2032 caps, mRNA fragments are quickly degraded by the RNA surveillance machinery.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Once nicked and no longer protected by their polyA tails and 5\u2032 caps, mRNA fragments are quickly degraded by the RNA surveillance machinery",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about RNA degradation mechanisms, supported by citations (Hollien and Weissman, 2006; Garneau et al., 2007)."
-  },
-  {
-    "claim_id": "C35",
-    "claim": "Hac1/XBP1 mRNA splice sites contain strictly conserved stem/loop structures.",
-    "claim_type": "EXPLICIT",
-    "source_text": "By contrast to the strictly conserved stem/loop structures found at Hac1/XBP1 mRNA splice sites",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge supported by citation (Gonzalez et al., 1999)."
-  },
-  {
-    "claim_id": "C36",
+    "claim_id": "C21",
     "claim": "RIDD target mRNAs do not contain easily recognizable features in common.",
     "claim_type": "EXPLICIT",
-    "source_text": "RIDD target mRNAs do not contain easily recognizable features in common.",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is an inference from comparative analysis of RIDD targets across studies."
-  },
-  {
-    "claim_id": "C37",
-    "claim": "RIDD is thought to arise by a more promiscuous cleavage mode of Ire1.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Consequently, RIDD is thought to arise by a more promiscuous cleavage mode of Ire1.",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative interpretation based on the lack of conserved recognition sequences."
-  },
-  {
-    "claim_id": "C38",
-    "claim": "RIDD cleavage reactions have been reconstituted in vitro with recombinantly expressed purified Ire1.",
-    "claim_type": "EXPLICIT",
-    "source_text": "RIDD cleavage reactions have been reconstituted in vitro with recombinantly expressed purified Ire1",
+    "source_text": "By contrast to the strictly conserved stem/loop structures found at Hac1/XBP1 mRNA splice sites (Gonzalez et al., 1999), RIDD target mRNAs do not contain easily recognizable features in common.",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge from prior biochemical studies, supported by citations (Lee et al., 2011; Cross et al., 2012)."
+    "evidence_reasoning": "This is a comparison to established knowledge about splice site conservation, with citation to Gonzalez et al., 1999."
   },
   {
-    "claim_id": "C39",
-    "claim": "Ire1's endoribonuclease activity, rather than another enzyme recruited to it, carries out the initial RIDD cleavage reaction.",
+    "claim_id": "C22",
+    "claim": "RIDD cleavage reactions have been reconstituted in vitro with recombinantly expressed purified Ire1.",
     "claim_type": "EXPLICIT",
-    "source_text": "lending support to the notion that Ire1's endoribonuclease actvity, rather than another enzyme recruited to it, carries out the initial cleavage reaction",
+    "source_text": "RIDD cleavage reactions have been reconstituted in vitro with recombinantly expressed purified Ire1, lending support to the notion that Ire1's endoribonuclease actvity, rather than another enzyme recruited to it, carries out the initial cleavage reaction",
     "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION",
-      "INFERENCE"
+      "CITATION"
     ],
-    "evidence_reasoning": "This is an inference from in vitro reconstitution experiments, supported by citations."
+    "evidence_reasoning": "This is supported by citations to Lee et al., 2011; Cross et al., 2012."
   },
   {
-    "claim_id": "C40",
+    "claim_id": "C23",
     "claim": "RIDD contributes to important feedback control on proinsulin expression in pancreatic beta-cells.",
     "claim_type": "EXPLICIT",
     "source_text": "RIDD has been suggested to play cytoprotective roles, such as contributing to important feedback control on proinsulin expression in pancreatic beta-cells",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is a suggested role from prior studies, supported by citation (Lipson et al., 2008)."
+    "evidence_reasoning": "This is supported by citation to Lipson et al., 2008."
   },
   {
-    "claim_id": "C41",
-    "claim": "RIDD protects liver cells from acetaminophen toxicity by degrading mRNAs encoding cytochrome P450 variants responsible for the drug's toxification.",
+    "claim_id": "C24",
+    "claim": "RIDD protects liver cells from acetaminophen toxicity by degrading mRNAs encoding cytochrome P450 variants.",
     "claim_type": "EXPLICIT",
-    "source_text": "or protecting liver cells from acetaminophen toxicity by degrading the mRNAs encoding the cytochrome P450 variants responsible for the drug's toxification",
+    "source_text": "RIDD has been suggested to play cytoprotective roles, such as...protecting liver cells from acetaminophen toxicity by degrading the mRNAs encoding the cytochrome P450 variants responsible for the drug's toxification",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is a suggested protective role from prior studies, supported by citation (Hur et al., 2012)."
+    "evidence_reasoning": "This is supported by citation to Hur et al., 2012."
   },
   {
-    "claim_id": "C42",
-    "claim": "RIDD has been suggested to be a major contributor driving cells into apoptosis after prolonged and unmitigated exposure to ER stress.",
+    "claim_id": "C25",
+    "claim": "RIDD is a major contributor driving cells into apoptosis after prolonged and unmitigated exposure to ER stress.",
     "claim_type": "EXPLICIT",
     "source_text": "RIDD has also been suggested to play cytotoxic roles as a major contributor driving cells into apoptosis after prolonged and unmitigated exposure to ER stress",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is a suggested cytotoxic role from prior studies, supported by citation (Han et al., 2009)."
+    "evidence_reasoning": "This is supported by citation to Han et al., 2009."
   },
   {
-    "claim_id": "C43",
-    "claim": "Ire1\u0394 cells and Ire1(H1018N) mutant cells show reduced viability on media containing tunicamycin compared to wild type cells.",
+    "claim_id": "C26",
+    "claim": "There is no evidence that Ire1 controls transcription in the UPR of S. pombe.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Surprisingly, in the work presented here we found no evidence that Ire1 controls transcription in the UPR of Schizosaccharomyces pombe.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is a primary finding based on RNA-seq data showing no UPR-dependent transcriptional upregulation."
+  },
+  {
+    "claim_id": "C27",
+    "claim": "S. pombe Ire1 maintains ER homeostasis through two post-transcriptional mechanisms.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Instead, in S. pombe Ire1 maintains ER homeostasis through two post-transcriptional mechanisms: it initiates RIDD of a large, select set of ER-targeted mRNAs and processes Bip1 mRNA in an unprecedented way, thereby stabilizing it.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This is a conclusion based on experimental findings including RNA-seq, Northern blots, and functional assays."
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Ire1\u0394 and Ire1(H1018N) mutant cells show reduced viability on ER stress-inducing media.",
     "claim_type": "EXPLICIT",
     "source_text": "Viability assay by serial dilution of wild type, Ire1\u0394 and Ire1(H1018N) cells spotted on solid media with or without 0.03 \u00b5g/ml of the ER stress inducer tunicamycin (Tm).",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed experimental data from viability assays shown in Figure 1b."
+    "evidence_reasoning": "This is supported by the viability assay data shown in Figure 1b."
   },
   {
-    "claim_id": "C44",
-    "claim": "DTT-stressed Ire1\u0394 cells show widespread mRNA up-regulation compared to DTT-stressed wild type cells.",
-    "claim_type": "IMPLICIT",
-    "source_text": "Unexpectedly, we observed widespread Ire1-dependent mRNA down-regulation, but virtually no mRNA up-regulation",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from RNA-seq data comparing Ire1\u0394 and wild type cells under DTT stress."
-  },
-  {
-    "claim_id": "C45",
-    "claim": "Thirty-nine mRNA species were reduced by more than twofold in a DTT- and Ire1-dependent manner.",
+    "claim_id": "C29",
+    "claim": "Thirty-nine mRNA species were reduced by more than twofold in a DTT- and Ire1-dependent manner in S. pombe.",
     "claim_type": "EXPLICIT",
     "source_text": "Thirty-nine mRNA species were reduced by more than twofold in a DTT- and Ire1-dependent manner",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is a quantitative result from RNA-seq analysis shown in Figure 1c."
+    "evidence_reasoning": "This is based on RNA-seq analysis presented in Figure 1c."
   },
   {
-    "claim_id": "C46",
-    "claim": "Most members of the set of down-regulated mRNAs were abundantly expressed.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Most members of this set of down-regulated mRNAs were abundantly expressed, as depicted by the size of the plotted circles.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from the RNA-seq data visualization in Figure 1c."
-  },
-  {
-    "claim_id": "C47",
-    "claim": "Down-regulation of mRNAs did not correlate with mRNA abundance.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Down-regulation, however, did not correlate with mRNA abundance",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is a statistical observation from the RNA-seq data shown in Figure 1\u2014figure supplement 2."
-  },
-  {
-    "claim_id": "C48",
+    "claim_id": "C30",
     "claim": "The set of down-regulated genes exclusively encoded proteins targeted to the ER.",
     "claim_type": "EXPLICIT",
     "source_text": "Intriguingly, the set of down-regulated genes exclusively encoded proteins targeted to the ER (identified by signal sequences and/or transmembrane segments)",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ],
-    "evidence_reasoning": "This is observed from bioinformatic analysis of the down-regulated gene set combined with RNA-seq data."
+    "evidence_reasoning": "This is based on RNA-seq data combined with bioinformatic analysis of protein targeting signals."
   },
   {
-    "claim_id": "C49",
-    "claim": "The genome-wide profile of Ire1- and ER stress-dependent mRNA changes of genes encoding ER-targeted proteins is skewed significantly toward down-regulation compared to other mRNAs (p<1\u00d710\u221220).",
-    "claim_type": "EXPLICIT",
-    "source_text": "the genome-wide profile of Ire1- and ER stress-dependent mRNA changes of genes encoding ER-targeted proteins is skewed to a significantly greater extent toward down-regulation than that of other mRNAs (p<1\u00d710\u221220).",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is a statistical result from RNA-seq data analysis shown in Figure 1d."
-  },
-  {
-    "claim_id": "C50",
+    "claim_id": "C31",
     "claim": "More than half of the most down-regulated mRNAs encode proteins with annotated functions in the secretory pathway.",
     "claim_type": "EXPLICIT",
     "source_text": "More than half of the most down-regulated mRNAs encode proteins with annotated functions in the secretory pathway, in particular proteins involved in lipid metabolism, trafficking, and ER functions",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is from gene ontology analysis of the down-regulated mRNA set shown in Figure 1e."
+    "evidence_reasoning": "This is based on gene ontology analysis of RNA-seq data presented in Figure 1e."
   },
   {
-    "claim_id": "C51",
-    "claim": "Ski2 is a component of the exosome complex involved in 3\u2032 to 5\u2032 RNA degradation.",
+    "claim_id": "C32",
+    "claim": "Gas2 mRNA shows Ire1-dependent cleavage products that accumulate in Ski2\u0394 cells.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Northern blot of total RNA extracted from wild type, Ire1\u0394, Ski2\u0394 and double mutant ER stressed Ire1\u0394 Ski2\u0394 cells (2 mM DTT, 1 hr). A probe complementary to the 5\u2032 UTR of Gas2 was used to detect cleavage products.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is supported by Northern blot data shown in Figure 2a."
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Ski2 is required for degradation of Ire1-cleaved mRNA fragments.",
     "claim_type": "IMPLICIT",
-    "source_text": "To address this question, we deleted Ski2, a component of the exosome complex involved in 3\u2032 to 5\u2032 RNA degradation",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about Ski2 function, supported by citations (Anderson and Parker, 1998; Gatfield and Izaurralde, 2004)."
-  },
-  {
-    "claim_id": "C52",
-    "claim": "In Ski2\u0394 cells under ER stress, two distinct Ire1-dependent Gas2 mRNA cleavage products accumulate.",
-    "claim_type": "EXPLICIT",
-    "source_text": "we observed two distinct Ire1-dependent Gas2 mRNA cleavage products (Figure 2a, labeled \u25b2 and \u00d7)",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from Northern blot data shown in Figure 2a."
-  },
-  {
-    "claim_id": "C53",
-    "claim": "The Ire1-dependent Gas2 mRNA cleavage products are not observed in Ire1\u0394 Ski2\u0394 double mutant cells.",
-    "claim_type": "EXPLICIT",
-    "source_text": "These cleavage products were not observed in Ire1\u0394 Ski2\u0394 double mutant cells",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from Northern blot data shown in Figure 2a."
-  },
-  {
-    "claim_id": "C54",
-    "claim": "The accumulation of Gas2 mRNA cleavage products in Ski2\u0394 cells is transient, peaking at 30 min after ER stress induction.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Intriguingly, we observed that the accumulation of Gas2 mRNA cleavage products in Ski2\u0394 cells was transient, peaking at 30 min after ER stress induction",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from time-course Northern blot data shown in Figure 2b."
-  },
-  {
-    "claim_id": "C55",
-    "claim": "Ski2\u0394 cells are viable on tunicamycin-containing media.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Ski2\u0394 cells are viable on tunicamycin-containing media (Figure 2c)",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from viability assay data shown in Figure 2c."
-  },
-  {
-    "claim_id": "C56",
-    "claim": "Ire1\u0394 Ski2\u0394 double mutant cells show reduced viability on tunicamycin-containing media similar to Ire1\u0394 single mutant cells.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Ire1\u0394 Ski2\u0394 double mutant cells show reduced viability on tunicamycin-containing media similar to Ire1\u0394 single mutant cells (Figure 2c)",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from viability assay data shown in Figure 2c."
-  },
-  {
-    "claim_id": "C57",
-    "claim": "Ire1-dependent cleavage products terminate in 2\u2032,3\u2032-cyclic phosphates.",
-    "claim_type": "EXPLICIT",
-    "source_text": "We used tRNA ligase to attach linker sequences specifically to those RNA fragments terminating in a 2\u2032,3\u2032-cyclic phosphate, which is the expected product of Ire1-catalyzed RNA cleavage",
+    "source_text": "To this end, we sought to trap any putative primary Ire1-cleavage products prior to degradation by deleting...Ski2\u0394 mutant strains impaired in exosome function",
     "evidence_type": [
       "DATA",
-      "KNOWLEDGE"
+      "INFERENCE"
     ],
-    "evidence_reasoning": "This is supported by the successful ligation reaction and is consistent with known Ire1 biochemistry."
+    "evidence_reasoning": "This is inferred from the experimental design and the accumulation of cleavage products in Ski2\u0394 cells shown in Figure 2."
   },
   {
-    "claim_id": "C58",
-    "claim": "Deep-sequencing identified 39 Ire1-dependent fragments mapping to 24 of the most down-regulated genes.",
-    "claim_type": "EXPLICIT",
-    "source_text": "we identified 39 Ire1-dependent fragments mapping to 24 of the most down-regulated genes",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is a quantitative result from 3' end deep-sequencing analysis shown in Figure 2d."
-  },
-  {
-    "claim_id": "C59",
-    "claim": "Ire1-dependent cleavage sites contain a core motif with three conserved nucleotides (UG\\C) at positions \u22122, \u22121, and +1.",
+    "claim_id": "C34",
+    "claim": "Ire1-dependent cleavage sites in S. pombe contain a core motif with three conserved nucleotides (UG\\C).",
     "claim_type": "EXPLICIT",
     "source_text": "Alignment of the experimentally determined Ire1-dependent cleavage sites revealed a core motif with a signature of three conserved nucleotides (UG\\C) that flank the Ire1-dependent cleavage sites at positions \u22122, \u22121, and +1",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is derived from sequence alignment analysis of mapped cleavage sites shown in Figure 2e."
+    "evidence_reasoning": "This is based on 3' end mapping and sequence analysis presented in Figure 2e."
   },
   {
-    "claim_id": "C60",
-    "claim": "There is a strong bias against G in position +2 of the Ire1 cleavage site.",
-    "claim_type": "EXPLICIT",
-    "source_text": "with an additional strong bias against G in position +2",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from the position weight matrix analysis shown in Figure 2e."
-  },
-  {
-    "claim_id": "C61",
-    "claim": "Most mapped mRNA cleavage sites (34 of 39) localized within the open reading frames.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Most mapped mRNA cleavage sites (34 of 39), including those in Gas2 mRNA, localized within the open reading frames.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is a quantitative result from the 3' end mapping analysis."
-  },
-  {
-    "claim_id": "C62",
-    "claim": "A Gas2 reporter construct containing only the Gas2 ORF flanked by heterologous UTRs is down-regulated upon ER stress in an Ire1-dependent manner.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Indeed, a Gas2 reporter construct transcribed off a heterologous alpha-tubulin (Nda2) promoter and containing only the Gas2 ORF flanked by heterologous 5\u2032 and 3\u2032 tubulin untranslated regions (UTRs), was down-regulated upon ER stress in an Ire1-dependent manner",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from qPCR data shown in Figure 2f."
-  },
-  {
-    "claim_id": "C63",
+    "claim_id": "C35",
     "claim": "The information contained within the Gas2 ORF is sufficient to confer susceptibility to Ire1-dependent cleavage.",
     "claim_type": "EXPLICIT",
-    "source_text": "indicating that the information contained within the Gas2 ORF is sufficient to confer susceptibility to Ire1-dependent cleavage.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from the reporter construct experiment showing cleavage with heterologous UTRs."
-  },
-  {
-    "claim_id": "C64",
-    "claim": "Mutation of the UGC-residues at the Gas2 mRNA cleavage site abolishes ER stress-dependent cleavage at the mapped site.",
-    "claim_type": "EXPLICIT",
-    "source_text": "As expected, ER stress-dependent cleavage of the Gas2 reporter mRNA at the mapped site was abolished",
+    "source_text": "Indeed, a Gas2 reporter construct transcribed off a heterologous alpha-tubulin (Nda2) promoter and containing only the Gas2 ORF flanked by heterologous 5\u2032 and 3\u2032 tubulin untranslated regions (UTRs), was down-regulated upon ER stress in an Ire1-dependent manner...indicating that the information contained within the Gas2 ORF is sufficient to confer susceptibility to Ire1-dependent cleavage.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from Northern blot data of the mutant construct shown in Figure 2g."
+    "evidence_reasoning": "This is supported by qPCR data of the reporter construct shown in Figure 2f."
   },
   {
-    "claim_id": "C65",
-    "claim": "When the primary Gas2 cleavage site is mutated, two new Ire1-dependent fragments are observed.",
+    "claim_id": "C36",
+    "claim": "Mutation of the UGC-residues at the Gas2 mRNA cleavage site abolishes ER stress-dependent cleavage at that site.",
     "claim_type": "EXPLICIT",
-    "source_text": "In its place, however, we observed two new Ire1-dependent fragments (labeled \u00d7 and *).",
+    "source_text": "To assess the functional importance of the identified Gas2 mRNA cleavage site experimentally, we mutated the UGC-residues of the \u25b2-site (UG\\CU). As expected, ER stress-dependent cleavage of the Gas2 reporter mRNA at the mapped site was abolished",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from Northern blot data shown in Figure 2g."
+    "evidence_reasoning": "This is supported by Northern blot data of the mutant construct shown in Figure 2g."
   },
   {
-    "claim_id": "C66",
+    "claim_id": "C37",
     "claim": "Ire1-dependent mRNA cleavage in S. pombe is sequence dependent.",
     "claim_type": "EXPLICIT",
     "source_text": "Taken together, we conclude that Ire1-dependent mRNA cleavage in S. pombe is sequence dependent.",
@@ -696,223 +385,132 @@
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from the mutational analysis and sequence motif identification."
+    "evidence_reasoning": "This conclusion is based on mutational analysis and sequence motif identification presented in Figure 2."
   },
   {
-    "claim_id": "C67",
-    "claim": "Bip1 is a major UPR target gene that is upregulated when cells experience ER stress in all species analyzed to date.",
+    "claim_id": "C38",
+    "claim": "Bip1 mRNA abundance increases approximately fourfold upon ER stress in wild type cells.",
     "claim_type": "EXPLICIT",
-    "source_text": "In all species analyzed to date, Bip1 is a major UPR target gene that is upregulated when cells experience ER stress.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "This is established knowledge about Bip1 regulation across species."
-  },
-  {
-    "claim_id": "C68",
-    "claim": "Bip1 mRNA in S. pombe is present in two forms: full-length Bip1 mRNA and a truncated form (tBip1 mRNA).",
-    "claim_type": "EXPLICIT",
-    "source_text": "we found that Bip1 mRNA is present in two forms: full-length Bip1 mRNA and a truncated form (tBip1 mRNA)",
+    "source_text": "Northern blot analysis of total RNA extracted from wild type and Ire1\u0394 cells untreated or treated with tunicamycin (1 \u00b5g/ml), and hybridized with a probe complementary to the ORF of Bip1 mRNA. Right panel: quantitation normalized to Pgk1 mRNA.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from Northern blot data shown in Figure 3a."
+    "evidence_reasoning": "This is supported by Northern blot quantitation shown in Figure 3a."
   },
   {
-    "claim_id": "C69",
-    "claim": "The truncated form of Bip1 mRNA (tBip1) accumulates in an Ire1-dependent manner upon ER stress.",
+    "claim_id": "C39",
+    "claim": "Bip1 mRNA processing is dependent on Ire1.",
     "claim_type": "EXPLICIT",
-    "source_text": "The truncated form (tBip1 mRNA) accumulated in an Ire1-dependent manner upon ER stress",
+    "source_text": "Northern blot analysis of total RNA extracted from wild type and Ire1\u0394 cells untreated or treated with tunicamycin",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from Northern blot data comparing wild type and Ire1\u0394 cells shown in Figure 3a."
+    "evidence_reasoning": "This is shown by the absence of processed Bip1 mRNA in Ire1\u0394 cells in Figure 3a."
   },
   {
-    "claim_id": "C70",
-    "claim": "Total Bip1 mRNA abundance increases approximately fourfold upon ER stress.",
+    "claim_id": "C40",
+    "claim": "A GFP mRNA driven by the Bip1 promoter does not show the same increase in abundance as endogenous Bip1 mRNA upon ER stress.",
     "claim_type": "EXPLICIT",
-    "source_text": "Total Bip1 mRNA abundance increased approximately fourfold",
+    "source_text": "The abundance of a GFP mRNA driven by the Bip1 promoter (black) compared to endogenous Bip1 mRNA was determined as a time course after DTT (2 mM) addition by quantitative Northern blotting.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is quantified from Northern blot data shown in Figure 3a."
+    "evidence_reasoning": "This is supported by the data shown in Figure 3b, indicating post-transcriptional regulation."
   },
   {
-    "claim_id": "C71",
-    "claim": "In Ire1\u0394 cells, Bip1 mRNA abundance increases only approximately twofold upon ER stress.",
+    "claim_id": "C41",
+    "claim": "Truncated Bip1 mRNA (tBip1) is more stable than full-length Bip1 mRNA.",
     "claim_type": "EXPLICIT",
-    "source_text": "In Ire1\u0394 cells, Bip1 mRNA abundance increased only approximately twofold",
+    "source_text": "Wild type cells bearing a construct encoding the Nmt1 5\u2032 UTR, Bip1 ORF and Bip1 3\u2032 UTR driven by the Nmt1 promoter were pre-treated with tunicamycin (0.25 \u00b5g/ml, 1 hr). At different time points after thiamine (15 \u00b5M) addition (to effect transcriptional shut-off of the Nmt1 promoter), RNA was extracted and analyzed by Northern hybridization.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is quantified from Northern blot data shown in Figure 3a."
+    "evidence_reasoning": "This is supported by mRNA half-life measurements shown in Figure 3c."
   },
   {
-    "claim_id": "C72",
-    "claim": "A GFP reporter driven by the Bip1 promoter shows only a twofold increase upon ER stress.",
+    "claim_id": "C42",
+    "claim": "tBip1 mRNA lacks a polyA tail and terminates at G373 in the 3\u2032 UTR.",
     "claim_type": "EXPLICIT",
-    "source_text": "a GFP reporter driven by the Bip1 promoter showed only a twofold increase",
+    "source_text": "The sequence of the amplified DNA confirmed that tBip1 mRNA lacks a polyA tail and terminates at G373 in the 3\u2032 UTR",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is observed from quantitative Northern blot data shown in Figure 3b."
+    "evidence_reasoning": "This is supported by 3' RACE sequencing data presented in Figure 3d."
   },
   {
-    "claim_id": "C73",
-    "claim": "The increase in Bip1 mRNA abundance is due to increased mRNA stability rather than increased transcription.",
-    "claim_type": "EXPLICIT",
-    "source_text": "indicating that the increase in Bip1 mRNA abundance is due to increased mRNA stability rather than increased transcription",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from comparing the reporter construct data with endogenous Bip1 mRNA levels."
-  },
-  {
-    "claim_id": "C74",
-    "claim": "tBip1 mRNA has a longer half-life than full-length Bip1 mRNA.",
-    "claim_type": "EXPLICIT",
-    "source_text": "tBip1 mRNA had a longer half-life (t1/2 \u223c 60 min) than full-length Bip1 mRNA (t1/2 \u223c 20 min)",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly measured from mRNA decay experiments shown in Figure 3c."
-  },
-  {
-    "claim_id": "C75",
-    "claim": "tBip1 mRNA lacks a polyA tail.",
-    "claim_type": "EXPLICIT",
-    "source_text": "We also performed 3\u2032-RACE to determine the 3\u2032 end of tBip1 mRNA. The sequence of the amplified DNA confirmed that tBip1 mRNA lacks a polyA tail",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly determined from 3' RACE sequencing data shown in Figure 3d."
-  },
-  {
-    "claim_id": "C76",
-    "claim": "tBip1 mRNA terminates at G373 in the 3\u2032 UTR.",
-    "claim_type": "EXPLICIT",
-    "source_text": "tBip1 mRNA lacks a polyA tail and terminates at G373 in the 3\u2032 UTR",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly determined from 3' RACE sequencing data shown in Figure 3d."
-  },
-  {
-    "claim_id": "C77",
+    "claim_id": "C43",
     "claim": "The sequences flanking G373 in Bip1 mRNA align with the UG\\CU motif.",
     "claim_type": "EXPLICIT",
-    "source_text": "The sequences flanking G373 align with the UG\\CU motif",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from sequence alignment with the consensus motif identified earlier."
-  },
-  {
-    "claim_id": "C78",
-    "claim": "tBip1 mRNA is produced by truncation of Bip1 mRNA in an Ire1-dependent RNA cleavage reaction.",
-    "claim_type": "EXPLICIT",
-    "source_text": "suggesting that tBip1 mRNA is produced by truncation of Bip1 mRNA in an Ire1-dependent RNA cleavage reaction that resembles those of the Ire1-dependently down-regulated mRNAs described above.",
+    "source_text": "The sequences flanking G373 align with the UG\\CU motif (Figure 2e), suggesting that tBip1 mRNA is produced by truncation of Bip1 mRNA in an Ire1-dependent RNA cleavage reaction",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from the sequence motif, Ire1-dependence, and 2',3'-cyclic phosphate terminus."
+    "evidence_reasoning": "This is based on sequence analysis comparing the Bip1 cleavage site to the consensus motif."
   },
   {
-    "claim_id": "C79",
-    "claim": "Mutation of G373 to C or U in Bip1 mRNA abolishes Ire1-dependent Bip1 mRNA processing.",
+    "claim_id": "C44",
+    "claim": "Mutation of G373 to C or U and its deletion abolishes Ire1-dependent Bip1 mRNA processing.",
     "claim_type": "EXPLICIT",
     "source_text": "Mutation of G373 to C or U and its deletion together with preceding nucleotides abolished Ire1-dependent Bip1 mRNA processing",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from Northern blot data of mutant constructs shown in Figure 3e."
+    "evidence_reasoning": "This is supported by mutational analysis shown in Figure 3e."
   },
   {
-    "claim_id": "C80",
-    "claim": "Mutation of G370 to C in Bip1 mRNA diminishes cleavage only marginally (less than twofold).",
-    "claim_type": "EXPLICIT",
-    "source_text": "By contrast, a mutation of the preceding G370 to C diminished cleavage only marginally (less than twofold).",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from Northern blot data shown in Figure 3e."
-  },
-  {
-    "claim_id": "C81",
-    "claim": "In all analyzed Bip1 mRNA mutants, UPR-induction increases transcript abundance approximately twofold.",
-    "claim_type": "EXPLICIT",
-    "source_text": "In all analyzed mutants of Bip1 mRNA, UPR-induction increased abundance of the transcript approximately twofold",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from Northern blot quantification of mutant constructs shown in Figure 3e."
-  },
-  {
-    "claim_id": "C82",
-    "claim": "Bip1 mRNA is the only stable mRNA in the cell that loses its polyA tail upon UPR induction.",
+    "claim_id": "C45",
+    "claim": "Bip1 mRNA is the only stable mRNA in S. pombe that loses its polyA tail upon UPR induction.",
     "claim_type": "EXPLICIT",
     "source_text": "From these data we conclude that, remarkably, Bip1 mRNA is the only stable mRNA in the cell that loses its polyA tail upon UPR induction.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from comparing polyA+ and total RNA-seq data shown in Figure 3f."
+    "evidence_reasoning": "This conclusion is based on comparison of polyA+ and total RNA-seq data shown in Figure 3f."
   },
   {
-    "claim_id": "C83",
-    "claim": "tBip1 mRNA is present in polyribosomes.",
+    "claim_id": "C46",
+    "claim": "tBip1 mRNA is associated with polyribosomes.",
     "claim_type": "EXPLICIT",
-    "source_text": "To determine the translation proficiency of tBip1 mRNA, we analyzed its distribution in polyribosomes. tBip1 mRNA was present in polyribosomes",
+    "source_text": "Northern blot analysis of the distribution of total or tBip1 mRNA in polyribosomes from extracts of unstressed or ER-stressed (2 mM DTT, 1 hr) cells.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from polysome fractionation and Northern blot analysis shown in Figure 4a."
+    "evidence_reasoning": "This is supported by polysome fractionation data shown in Figure 4a."
   },
   {
-    "claim_id": "C84",
-    "claim": "The ribosome density on tBip1 mRNA parallels its increased abundance.",
+    "claim_id": "C47",
+    "claim": "tBip1 mRNA is translated.",
     "claim_type": "EXPLICIT",
-    "source_text": "The ribosome density on tBip1 mRNA paralleled its increased abundance",
+    "source_text": "tBip1 mRNA is translated and is important for fitness during ER stress.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is observed from ribosome footprinting data shown in Figure 4b."
+    "evidence_reasoning": "This is supported by ribosome footprinting data shown in Figure 4b."
   },
   {
-    "claim_id": "C85",
-    "claim": "Bip1 protein levels increase upon ER stress.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Bip1 protein levels increased upon ER stress (Figure 4\u2014figure supplement 2)",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from Western blot data shown in Figure 4\u2014figure supplement 2."
-  },
-  {
-    "claim_id": "C86",
-    "claim": "Cells carrying a deletion of Bip1 mRNA cleavage sites show a marked growth delay in early log phase after exposure to ER stress and recovery.",
+    "claim_id": "C48",
+    "claim": "Cells carrying a deletion of Bip1 mRNA cleavage sites show a marked growth delay after ER stress.",
     "claim_type": "EXPLICIT",
     "source_text": "Liquid cultures of Bip1 mRNA mutant, that were exposed to a pulse of ER stress (tunicamycin) and allowed to recover after washout of the drug showed a marked growth delay in early log phase",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from growth curve data shown in Figure 4c."
+    "evidence_reasoning": "This is supported by growth curve data shown in Figure 4c."
   },
   {
-    "claim_id": "C87",
-    "claim": "Cells carrying a deletion of Bip1 mRNA cleavage sites show enhanced cell death after ER stress exposure.",
+    "claim_id": "C49",
+    "claim": "Cells carrying a deletion of Bip1 mRNA cleavage sites show enhanced cell death after ER stress.",
     "claim_type": "EXPLICIT",
-    "source_text": "and enhanced cell death",
+    "source_text": "Liquid cultures of Bip1 mRNA mutant, that were exposed to a pulse of ER stress (tunicamycin) and allowed to recover after washout of the drug showed...enhanced cell death",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from colony forming unit assay data shown in Figure 4d."
+    "evidence_reasoning": "This is supported by colony forming unit assay data shown in Figure 4d."
   },
   {
-    "claim_id": "C88",
+    "claim_id": "C50",
     "claim": "Bip1 mRNA processing is important for maintaining cell fitness in the face of ER stress.",
     "claim_type": "EXPLICIT",
     "source_text": "indicating that Bip1 mRNA processing is important for maintaining cell fitness in the face of ER stress.",
@@ -920,115 +518,92 @@
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from the growth and viability defects observed in Bip1 cleavage site mutants."
+    "evidence_reasoning": "This conclusion is based on the growth and viability defects observed in Bip1 cleavage site mutants."
   },
   {
-    "claim_id": "C89",
+    "claim_id": "C51",
     "claim": "The importance of Bip1 mRNA processing varies with growth conditions.",
     "claim_type": "EXPLICIT",
-    "source_text": "The importance of Bip1 mRNA processing, therefore, varies with growth conditions.",
+    "source_text": "By contrast to cell growth in liquid culture, Bip1 mutant cells grew on UPR-inducing tunicamycin plates only marginally worse that wild type cells...The importance of Bip1 mRNA processing, therefore, varies with growth conditions.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from comparing liquid culture growth defects with solid media growth shown in Figure 4\u2014figure supplement 3."
+    "evidence_reasoning": "This is based on comparing liquid culture growth data with plate growth assays."
   },
   {
-    "claim_id": "C90",
-    "claim": "S. pombe does not utilize Ire1 to control transcription in the UPR.",
-    "claim_type": "EXPLICIT",
-    "source_text": "To our surprise, we discovered that\u2014by contrast to all other eukaryotes studied to date\u2014S. pombe does not utilize Ire1, the most ancient ER stress sensor, to control transcription.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from the RNA-seq data showing no transcriptional upregulation in the UPR."
-  },
-  {
-    "claim_id": "C91",
-    "claim": "S. pombe relies exclusively on two means of Ire1-dependent post-transcriptional regulation to cope with ER stress.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Rather, S. pombe exclusively relies on two means of Ire1-dependent post-transcriptional regulation to cope with ER stress",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from the comprehensive analysis showing only RIDD and Bip1 processing as UPR outputs."
-  },
-  {
-    "claim_id": "C92",
-    "claim": "RIDD in S. pombe reduces the total protein influx into the ER by only 15% under severe ER stress conditions.",
+    "claim_id": "C52",
+    "claim": "RIDD reduces the total protein influx into the ER by only 15% in S. pombe under severe ER stress conditions.",
     "claim_type": "EXPLICIT",
     "source_text": "Indeed, a back-of-the-envelope calculation indicates that in S. pombe RIDD reduces the total protein influx into the ER by only 15%, even under the severe ER stress conditions explored here experimentally.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is calculated from ribosome footprinting data as described in Materials and methods."
+    "evidence_reasoning": "This is calculated from ribosome footprinting data analyzing translational engagement of ER-targeted mRNAs."
   },
   {
-    "claim_id": "C93",
-    "claim": "mRNAs encoding proteins involved in lipid metabolism are highly enriched in the RIDD target population (31% vs 6.7% in all ER-targeted mRNAs).",
+    "claim_id": "C53",
+    "claim": "mRNAs encoding proteins involved in lipid metabolism are highly enriched among RIDD targets.",
     "claim_type": "EXPLICIT",
-    "source_text": "mRNAs encoding proteins involved in lipid metabolism are highly enriched (31% of RIDD target mRNA as compared to 6.7% in all ER-targeted mRNAs).",
+    "source_text": "In support of this notion, we notice that the population of RIDD target mRNAs is highly selective. mRNAs encoding proteins involved in lipid metabolism are highly enriched (31% of RIDD target mRNA as compared to 6.7% in all ER-targeted mRNAs).",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is from gene ontology analysis of RIDD targets shown in Figure 1e."
+    "evidence_reasoning": "This is based on gene ontology analysis of RIDD target mRNAs shown in Figure 1e."
   },
   {
-    "claim_id": "C94",
-    "claim": "RIDD targets encoding proteins involved in sterol metabolism are particularly enriched (13% vs 1.3%).",
+    "claim_id": "C54",
+    "claim": "RIDD targets encoding proteins involved in sterol metabolism are particularly enriched.",
     "claim_type": "EXPLICIT",
     "source_text": "Moreover, we find that RIDD targets encoding proteins involved in sterol metabolism are particularly enriched (13% as compared to 1.3%).",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is from gene ontology analysis of RIDD targets."
+    "evidence_reasoning": "This is based on gene ontology analysis of RIDD target mRNAs."
   },
   {
-    "claim_id": "C95",
-    "claim": "An Ire1 RNase active site mutant, Ire1(H1018N), is unable to sustain cell growth on ER stress-inducing media.",
+    "claim_id": "C55",
+    "claim": "Ire1 is the nuclease that initiates RIDD in metazoan cells.",
     "claim_type": "EXPLICIT",
-    "source_text": "first, we show that an Ire1 RNase active site mutant, Ire1(H1018N), is unable to sustain cell growth on ER stress-inducing media.",
+    "source_text": "Previous work strongly suggests that Ire1 is the nuclease that initiates RIDD in metazoan cells",
     "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from viability assay data shown in Figure 1b."
-  },
-  {
-    "claim_id": "C96",
-    "claim": "The equivalent single amino acid substitution in S. cerevisiae Ire1, Ire1(H1080N), reduces catalytic activity by >10^5-fold.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Indeed, the equivalent single amino acid substitution in S. cerevisiae Ire1, Ire1(H1080N), reduces catalytic activity by >105-fold.",
-    "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge from prior biochemical studies, supported by citation (Korennykh et al., 2011)."
+    "evidence_reasoning": "This is supported by citations to Han et al., 2009; Hollien et al., 2009; Cross et al., 2012."
   },
   {
-    "claim_id": "C97",
-    "claim": "Cleaved RIDD target mRNAs carry a 2\u2032,3\u2032-cyclic phosphate group.",
+    "claim_id": "C56",
+    "claim": "An Ire1 RNase active site mutant, Ire1(H1018N), is unable to sustain cell growth on ER stress-inducing media.",
     "claim_type": "EXPLICIT",
-    "source_text": "Second, we showed that cleaved RIDD target mRNAs carry a 2\u2032,3\u2032-cyclic phosphate group",
+    "source_text": "we show that an Ire1 RNase active site mutant, Ire1(H1018N), is unable to sustain cell growth on ER stress-inducing media.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is demonstrated by successful ligation with tRNA ligase, which is specific for 2',3'-cyclic phosphates."
+    "evidence_reasoning": "This is supported by viability assay data shown in Figure 1b."
   },
   {
-    "claim_id": "C98",
+    "claim_id": "C57",
+    "claim": "Cleaved RIDD target mRNAs carry a 2\u2032,3\u2032-cyclic phosphate group.",
+    "claim_type": "EXPLICIT",
+    "source_text": "Second, we showed that cleaved RIDD target mRNAs carry a 2\u2032,3\u2032-cyclic phosphate group, which is a prerequisite for the ligation reaction (tRNA ligase) used in the genome-wide mapping of mRNA ends created upon ER stress.",
+    "evidence_type": [
+      "DATA"
+    ],
+    "evidence_reasoning": "This is demonstrated by the successful ligation of linkers using tRNA ligase, which specifically requires 2',3'-cyclic phosphates."
+  },
+  {
+    "claim_id": "C58",
     "claim": "Ire1 and tRNA endonuclease are the only cytoplasmic nucleases known to produce 2\u2032,3\u2032-cyclic phosphate products.",
     "claim_type": "EXPLICIT",
     "source_text": "Ire1 and tRNA endonuclease (and the Ire1-family member RNase L found in mammalian cells) are the only cytoplasmic nucleases known to produce such products.",
     "evidence_type": [
       "KNOWLEDGE"
     ],
-    "evidence_reasoning": "This is established knowledge about nuclease biochemistry."
+    "evidence_reasoning": "This represents established knowledge about nuclease activities and their products."
   },
   {
-    "claim_id": "C99",
+    "claim_id": "C59",
     "claim": "In S. cerevisiae, Ire1 has a single known substrate, Hac1 mRNA.",
     "claim_type": "EXPLICIT",
     "source_text": "In S. cerevisiae, Ire1 has a single known substrate, Hac1 mRNA",
@@ -1036,136 +611,94 @@
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by citation (Niwa et al., 2005)."
+    "evidence_reasoning": "This is established knowledge supported by citation to Niwa et al., 2005."
   },
   {
-    "claim_id": "C100",
-    "claim": "Hac1 and XBP1 mRNA have highly conserved and readily recognizable stem loop structures that demarcate the splice sites.",
+    "claim_id": "C60",
+    "claim": "Hac1 and XBP1 mRNA have highly conserved stem loop structures that demarcate the splice sites.",
     "claim_type": "EXPLICIT",
     "source_text": "Hac1 and XBP1 mRNA have highly conserved and readily recognizable stem loop structures that demarcate the splice sites.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "KNOWLEDGE",
+      "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about the structural features of these mRNAs."
+    "evidence_reasoning": "This is established knowledge supported by citation to Gonzalez et al., 1999."
   },
   {
-    "claim_id": "C101",
-    "claim": "Cleavage of Hac1/XBP1 mRNA occurs at a universally conserved G always found at position 3 in the seven-base loop.",
+    "claim_id": "C61",
+    "claim": "Cleavage of Hac1/XBP1 mRNA occurs at a universally conserved G at position 3 in the seven-base loop.",
     "claim_type": "EXPLICIT",
     "source_text": "Cleavage occurs at a universally conserved G always found at position 3 in the seven-base loop",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by citation (Gonzalez et al., 1999)."
+    "evidence_reasoning": "This is established knowledge supported by citation to Gonzalez et al., 1999."
   },
   {
-    "claim_id": "C102",
+    "claim_id": "C62",
     "claim": "Constructs derived from S. cerevisiae Hac1 mRNA are properly spliced in mammalian cells.",
     "claim_type": "EXPLICIT",
     "source_text": "This information is interchangeable between species: constructs derived from S. cerevisiae Hac1 mRNA are properly spliced in mammalian cells",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge from prior cross-species experiments, supported by citation (Niwa et al., 1999)."
+    "evidence_reasoning": "This is supported by citation to Niwa et al., 1999."
   },
   {
-    "claim_id": "C103",
+    "claim_id": "C63",
     "claim": "Yeast Ire1 recognizes and precisely cleaves XBP1 mRNA-derived substrates.",
     "claim_type": "EXPLICIT",
-    "source_text": "and yeast Ire1 recognizes and precisely cleaves XBP1 mRNA-derived substrates",
+    "source_text": "yeast Ire1 recognizes and precisely cleaves XBP1 mRNA-derived substrates",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge from prior cross-species experiments."
+    "evidence_reasoning": "This is supported by citation to Niwa et al., 1999."
   },
   {
-    "claim_id": "C104",
+    "claim_id": "C64",
     "claim": "RIDD target mRNAs contain a short three-base UGC consensus at the Ire1 cleavage site where cleavage occurs after the G.",
     "claim_type": "EXPLICIT",
     "source_text": "We show that RIDD target mRNAs contain a short three-base UGC consensus at the Ire1 cleavage site where cleavage occurs after the G",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is derived from sequence alignment of mapped cleavage sites shown in Figure 2e."
+    "evidence_reasoning": "This is based on sequence analysis of mapped cleavage sites shown in Figure 2e."
   },
   {
-    "claim_id": "C105",
-    "claim": "UGC triplets occur much more frequently in mRNAs than Ire1 cleavage sites by chance.",
+    "claim_id": "C65",
+    "claim": "UGC triplets occur much more frequently in mRNAs than Ire1 cleavage sites.",
     "claim_type": "EXPLICIT",
     "source_text": "By chance, UGC triplets occur much more frequently in mRNAs than Ire1 cleavage sites.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from bioinformatic analysis comparing motif frequency to cleavage site frequency."
+    "evidence_reasoning": "This is inferred from the observation that only specific UGC sites are cleaved despite many being present in the genome."
   },
   {
-    "claim_id": "C106",
-    "claim": "The information that specifies an mRNA as an Ire1 substrate must require additional elements beyond the UGC motif.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Therefore, the information that specifies an mRNA as an Ire1 substrate must require additional elements.",
-    "evidence_type": [
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from the observation that UGC motifs are more common than cleavage sites."
-  },
-  {
-    "claim_id": "C107",
-    "claim": "Many of the identified cleavage sites lie in loops of potential hairpin structures.",
+    "claim_id": "C66",
+    "claim": "Many identified cleavage sites lie in loops of potential hairpin structures.",
     "claim_type": "EXPLICIT",
     "source_text": "We and others note that many of the identified cleavage sites lie in loops of potential hairpin structures",
     "evidence_type": [
       "DATA",
       "CITATION"
     ],
-    "evidence_reasoning": "This is observed from structural prediction analysis, supported by citations (Hur et al., 2012; Oikawa et al., 2010)."
+    "evidence_reasoning": "This is based on structural analysis of cleavage sites, with citation to Hur et al., 2012; Oikawa et al., 2010."
   },
   {
-    "claim_id": "C108",
-    "claim": "The position of the scissile G in the loops of hairpin structures is not conserved.",
-    "claim_type": "EXPLICIT",
-    "source_text": "however, the position of the scissile G in the loops is not conserved.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from comparative structural analysis of cleavage sites."
-  },
-  {
-    "claim_id": "C109",
+    "claim_id": "C67",
     "claim": "Mutation of one cleavage site in Gas2 mRNA gives rise to cleavage at alternative sites.",
     "claim_type": "EXPLICIT",
     "source_text": "The concept of Ire1 recruitment, whether through interactions via the nascent chain or elements in the mRNA per se, is supported by our finding that mutation of one cleavage site (UG\\C \u2192 UC\\U) in Gas2 mRNA gives rise to cleavage at alternative sites.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is directly observed from Northern blot data of mutant constructs shown in Figure 2g."
+    "evidence_reasoning": "This is supported by Northern blot data of the mutant construct shown in Figure 2g."
   },
   {
-    "claim_id": "C110",
-    "claim": "Local proximity rather than the RNA sequence surrounding the immediate cleavage site may guide substrate selection.",
-    "claim_type": "EXPLICIT",
-    "source_text": "These data indicate that local proximity rather than the RNA sequence surrounding the immediate cleavage site may guide substrate selection.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from the observation of alternative cleavage sites when the primary site is mutated."
-  },
-  {
-    "claim_id": "C111",
-    "claim": "Gas2 mRNA decay in Ski2\u0394 mutant strains is observed only transiently, peaking at 30 min after ER stress induction.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Intriguingly, we observed that Gas2 mRNA decay in Ski2\u0394 mutant strains was observed only transiently, peaking at 30 min after ER stress induction.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly observed from time-course Northern blot data shown in Figure 2b."
-  },
-  {
-    "claim_id": "C112",
+    "claim_id": "C68",
     "claim": "Clearance of Ire1-cleavage products by Ski2 may be a requirement for continued Ire1 activity.",
     "claim_type": "EXPLICIT",
     "source_text": "This kinetic behavior suggests that clearance of Ire1-cleavage products by Ski2 may be a requirement for continued Ire1 activity.",
@@ -1173,83 +706,30 @@
       "DATA",
       "SPECULATION"
     ],
-    "evidence_reasoning": "This is a speculative interpretation of the transient accumulation kinetics observed."
+    "evidence_reasoning": "This is a speculative interpretation of the transient accumulation of cleavage products in Ski2\u0394 cells."
   },
   {
-    "claim_id": "C113",
-    "claim": "Initiation of RIDD by Ire1 and further decay may be obligatorily coupled.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Thus, initiation of RIDD by Ire1 and further decay may be obligatorily coupled.",
-    "evidence_type": [
-      "DATA",
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative interpretation based on the transient accumulation of cleavage products."
-  },
-  {
-    "claim_id": "C114",
-    "claim": "The observation that S. pombe Bip1 mRNA changes size upon ER stress dates back to 1992.",
+    "claim_id": "C69",
+    "claim": "S. pombe Bip1 mRNA changes size upon ER stress, an observation dating back to 1992.",
     "claim_type": "EXPLICIT",
     "source_text": "The observation that S. pombe Bip1 mRNA changes size upon ER stress dates back to 1992",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is historical knowledge supported by citation (Pidoux and Armstrong, 1992)."
+    "evidence_reasoning": "This is supported by citation to Pidoux and Armstrong, 1992."
   },
   {
-    "claim_id": "C115",
-    "claim": "Bip1 mRNA processing has not been observed in any other species to date.",
+    "claim_id": "C70",
+    "claim": "Bip1 mRNA processing has not been observed in any species other than S. pombe.",
     "claim_type": "EXPLICIT",
     "source_text": "To date, Bip1 mRNA processing has not been observed in any other species.",
     "evidence_type": [
       "KNOWLEDGE"
     ],
-    "evidence_reasoning": "This is a statement about the current state of knowledge in the field."
+    "evidence_reasoning": "This represents the state of knowledge in the field based on literature review."
   },
   {
-    "claim_id": "C116",
-    "claim": "Bip1 mRNA is cleaved by Ire1 but escapes decay.",
-    "claim_type": "EXPLICIT",
-    "source_text": "As we suggest here, Bip1 mRNA is also cleaved by Ire1, yet escapes decay.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from the accumulation of truncated Bip1 mRNA and its stability measurements."
-  },
-  {
-    "claim_id": "C117",
-    "claim": "The Ire1 cleavage site in Bip1 mRNA shares the same features as RIDD target mRNAs.",
-    "claim_type": "EXPLICIT",
-    "source_text": "The Ire1 cleavage site shares the same features described above for RIDD target mRNAs.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from sequence alignment showing the UGC motif at the Bip1 cleavage site."
-  },
-  {
-    "claim_id": "C118",
-    "claim": "During ER stress-induced processing, Bip1 mRNA loses a portion of its 3\u2032 UTR and polyA tail.",
-    "claim_type": "EXPLICIT",
-    "source_text": "During ER stress-induced processing, Bip1 mRNA loses a portion of its 3\u2032 UTR and polyA tail.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly determined from 3' RACE and RNA-seq data shown in Figure 3d."
-  },
-  {
-    "claim_id": "C119",
-    "claim": "The processed tBip1 mRNA is more stable than full-length Bip1 mRNA.",
-    "claim_type": "EXPLICIT",
-    "source_text": "The resulting processed tBip1 mRNA is more stable and hence is present at an increased steady-state concentration.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is directly measured from mRNA half-life experiments shown in Figure 3c."
-  },
-  {
-    "claim_id": "C120",
+    "claim_id": "C71",
     "claim": "A plausible explanation for the increased stability of tBip1 mRNA is the loss of an RNA degron located in the severed portion of the 3\u2032 UTR.",
     "claim_type": "EXPLICIT",
     "source_text": "A plausible explanation for the increased stability of tBip1 mRNA is the loss of an RNA degron located in the severed portion of the 3\u2032 UTR.",
@@ -1259,283 +739,189 @@
     "evidence_reasoning": "This is a speculative explanation for the observed stability increase."
   },
   {
-    "claim_id": "C121",
-    "claim": "tBip1 mRNA is actively translated with its ribosome density paralleling its increased abundance.",
-    "claim_type": "EXPLICIT",
-    "source_text": "tBip1 mRNA is actively translated with its ribosome density paralleling its increased abundance.",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "This is observed from ribosome profiling data shown in Figure 4b."
-  },
-  {
-    "claim_id": "C122",
-    "claim": "Histone mRNAs lack polyA tails and provide precedence for stable, efficiently translated mRNAs without polyA tails.",
+    "claim_id": "C72",
+    "claim": "Histone mRNAs lack polyA tails and provide precedence for stable, translatable mRNAs without polyA tails.",
     "claim_type": "EXPLICIT",
     "source_text": "Although polyA tails are generally linked to stability and translational efficiency, histone mRNAs, which likewise lack polyA tails, provide precedence for such an exception to the rule",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about histone mRNA biology, supported by citation (Marzluff et al., 2008)."
+    "evidence_reasoning": "This is established knowledge supported by citation to Marzluff et al., 2008."
   },
   {
-    "claim_id": "C123",
+    "claim_id": "C73",
     "claim": "Histone mRNAs terminate in a well-conserved 3\u2032 stem-loop structure that protects from exonucleolytic degradation.",
     "claim_type": "EXPLICIT",
     "source_text": "Histone mRNAs terminate in a well-conserved 3\u2032 stem-loop structure, which protects from exonucleolytic degradation.",
     "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "This is established knowledge about histone mRNA structure and stability."
-  },
-  {
-    "claim_id": "C124",
-    "claim": "Proteins binding to the histone mRNA 3' stem-loop function akin to polyA binding proteins to enhance histone mRNA translation by looping back to the 5\u2032 cap structure.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Proteins binding there functions akin to the polyA binding proteins found on other mRNAs to enhance histone mRNA translation by looping back to the 5\u2032 cap structure",
-    "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge about histone mRNA translation, supported by citation (Sanchez and Marzluff, 2002)."
+    "evidence_reasoning": "This is established knowledge supported by citation to Sanchez and Marzluff, 2002."
   },
   {
-    "claim_id": "C125",
-    "claim": "A predicted conserved hairpin structure exists at the 3\u2032 termini of tBip1 RNAs in some fission yeasts (S. pombe, S. octosporus and S. cryophilus).",
+    "claim_id": "C74",
+    "claim": "A predicted conserved hairpin structure exists at the 3\u2032 termini of tBip1 RNAs in some fission yeasts.",
     "claim_type": "EXPLICIT",
     "source_text": "Indeed, we find a predicted conserved hairpin structure at the 3\u2032 termini of tBip1 RNAs in some fission yeasts (S. pombe, S. octosporus and S. cryophilus)",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ],
-    "evidence_reasoning": "This is from computational structural prediction analysis."
+    "evidence_reasoning": "This is based on computational prediction of RNA secondary structure."
   },
   {
-    "claim_id": "C126",
+    "claim_id": "C75",
     "claim": "Preliminary mutational analysis failed to validate the importance of the predicted hairpin structure for mRNA stability in S. pombe.",
     "claim_type": "EXPLICIT",
     "source_text": "however preliminary mutational analysis failed to validate its importance for mRNA stability in S. pombe.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is from unpublished experimental data mentioned by the authors."
+    "evidence_reasoning": "This is based on unpublished mutational experiments mentioned in the text."
   },
   {
-    "claim_id": "C127",
-    "claim": "The 3\u2032 end of tBip1 mRNA may be covalently modified at the 2\u2032-OH position.",
-    "claim_type": "EXPLICIT",
-    "source_text": "An alternative possibility is that the 3\u2032 end of tBip1 mRNA may be covalently modified. Such modification would need to be restricted to the 2\u2032-OH, because the 3\u2032-OH group is still accessible for modification by RNA ligase",
-    "evidence_type": [
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative explanation for tBip1 stability based on the ligation data."
-  },
-  {
-    "claim_id": "C128",
-    "claim": "miRNAs are 2\u2032-O-methylated, conferring resistance to degradation.",
-    "claim_type": "EXPLICIT",
-    "source_text": "In this regard, tBip1 mRNA would resemble miRNAs, which are 2\u2032-O-methylated, conferring resistance to degradation",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is established knowledge about miRNA modifications, supported by citation (Yu et al., 2005)."
-  },
-  {
-    "claim_id": "C129",
+    "claim_id": "C76",
     "claim": "Bip1 mRNA is the only mRNA in S. pombe in the expressed genome that is subject to this unique regulation.",
     "claim_type": "EXPLICIT",
     "source_text": "Our data show that Bip1 mRNA is the only mRNA in S. pombe in the expressed genome that is subject to this unique regulation.",
     "evidence_type": [
       "DATA"
     ],
-    "evidence_reasoning": "This is inferred from the comprehensive RNA-seq analysis comparing polyA+ and total RNA."
+    "evidence_reasoning": "This is based on genome-wide RNA-seq analysis comparing polyA+ and total RNA."
   },
   {
-    "claim_id": "C130",
-    "claim": "Bip1 holds a unique position in S. pombe, where it is glycosylated.",
+    "claim_id": "C77",
+    "claim": "Bip1 is the most pleiotropically important and precisely controlled ER chaperone based on work in other species.",
+    "claim_type": "EXPLICIT",
+    "source_text": "From work in other species, Bip1 emerges as the most pleiotropically important and precisely controlled ER chaperone",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is established knowledge supported by citation to Gulow et al., 2002."
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Bip1 holds a unique position in S. pombe where it is glycosylated.",
     "claim_type": "EXPLICIT",
     "source_text": "Moreover, Bip1 holds a unique position in S. pombe, where it is glycosylated",
     "evidence_type": [
       "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by citation (Pidoux and Armstrong, 1993)."
+    "evidence_reasoning": "This is established knowledge supported by citation to Pidoux and Armstrong, 1993."
   },
   {
-    "claim_id": "C131",
-    "claim": "A recent comprehensive gene interaction map revealed that Ire1 in S. pombe clusters tightly with enzymes involved in the quality control cycle of glycosylated proteins.",
+    "claim_id": "C79",
+    "claim": "Ire1 in S. pombe clusters tightly with enzymes involved in the quality control cycle of glycosylated proteins in gene interaction maps.",
     "claim_type": "EXPLICIT",
     "source_text": "A recent comprehensive gene interaction map revealed that Ire1 in S. pombe clusters tightly with enzymes involved in the quality control cycle of glycosylated proteins",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is from a prior study, supported by citation (Frost et al., 2012)."
+    "evidence_reasoning": "This is supported by citation to Frost et al., 2012."
   },
   {
-    "claim_id": "C132",
-    "claim": "E-maps in S. cerevisiae confirm the linear relationship between Ire1 and Hac1.",
+    "claim_id": "C80",
+    "claim": "In S. cerevisiae, E-maps confirm the linear relationship between Ire1 and Hac1.",
     "claim_type": "EXPLICIT",
     "source_text": "By contrast, corresponding E-maps in S. cerevisiae succinctly confirm the long-appreciated linear relationship between Ire1 and Hac1",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by citation (Schuldiner et al., 2005)."
+    "evidence_reasoning": "This is supported by citation to Schuldiner et al., 2005."
   },
   {
-    "claim_id": "C133",
-    "claim": "ER stress in S. pombe may enhance turnover of glycosylated proteins.",
-    "claim_type": "EXPLICIT",
-    "source_text": "One may speculate that ER stress in S. pombe, as in other species, enhances turnover of glycosylated proteins",
-    "evidence_type": [
-      "SPECULATION",
-      "CITATION"
-    ],
-    "evidence_reasoning": "This is a speculative interpretation based on known ER stress responses, supported by citation (Bernasconi et al., 2012)."
-  },
-  {
-    "claim_id": "C134",
-    "claim": "The regulation of Bip1 mRNA may be beneficial to its stability by compensating for loss due to enhanced turnover of glycosylated proteins.",
-    "claim_type": "EXPLICIT",
-    "source_text": "and that the regulation of Bip1 mRNA is beneficial to its stability by compensating for such loss",
-    "evidence_type": [
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative explanation for the unique regulation of Bip1 mRNA."
-  },
-  {
-    "claim_id": "C135",
+    "claim_id": "C81",
     "claim": "The UPR in S. pombe provides an example of how molecular machines can be repurposed evolutionarily.",
     "claim_type": "EXPLICIT",
     "source_text": "From an evolutionary angle, the UPR in S. pombe provides an intriguing example of how molecular machines can be repurposed.",
     "evidence_type": [
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is an evolutionary interpretation of the findings."
+    "evidence_reasoning": "This is a conceptual conclusion drawn from the comparative analysis of UPR mechanisms across species."
   },
   {
-    "claim_id": "C136",
-    "claim": "While input (unfolded proteins, ER stress) and output (RNA cleavage) of Ire1 have been conserved, both detail and global consequences of downstream processes have been adapted to serve different needs.",
-    "claim_type": "EXPLICIT",
-    "source_text": "While input (unfolded proteins, ER stress) and output (RNA cleavage) have been conserved, both detail and global consequences of downstream processes have been adapted to serve different needs.",
-    "evidence_type": [
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is an evolutionary interpretation comparing UPR mechanisms across species."
-  },
-  {
-    "claim_id": "C137",
-    "claim": "The UPR in both S. cerevisiae and S. pombe fulfills a cytoprotective role.",
-    "claim_type": "EXPLICIT",
-    "source_text": "The UPR in both S. cerevisae and S. pombe fulfills a cytoprotective role",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "This is inferred from viability data showing Ire1 is required for survival under ER stress in both species."
-  },
-  {
-    "claim_id": "C138",
-    "claim": "In S. cerevisiae, folding capacity is increased via transcriptional up-regulation.",
+    "claim_id": "C82",
+    "claim": "In S. cerevisiae, folding capacity is increased via transcriptional up-regulation during the UPR.",
     "claim_type": "EXPLICIT",
     "source_text": "In S. cerevisiae, folding capacity is increased via transcriptional up-regulation",
     "evidence_type": [
       "KNOWLEDGE"
     ],
-    "evidence_reasoning": "This is established knowledge about S. cerevisiae UPR mechanisms."
+    "evidence_reasoning": "This is established knowledge about the S. cerevisiae UPR mechanism."
   },
   {
-    "claim_id": "C139",
-    "claim": "In S. pombe the folding load is decreased and the ER is restructured.",
+    "claim_id": "C83",
+    "claim": "In S. pombe, the folding load is decreased and the ER is restructured during the UPR.",
     "claim_type": "EXPLICIT",
     "source_text": "in S. pombe the folding load is decreased and the ER is restructured.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is inferred from the RIDD data and the types of genes targeted."
+    "evidence_reasoning": "This is a conclusion based on the experimental findings of RIDD and Bip1 regulation."
   },
   {
-    "claim_id": "C140",
-    "claim": "In metazoan cells, both modes of Ire1 activity (splicing and RIDD) are merged.",
+    "claim_id": "C84",
+    "claim": "In metazoan cells, both modes of Ire1 activity (transcriptional and RIDD) are merged.",
     "claim_type": "EXPLICIT",
-    "source_text": "In metazoan cells, both modes of Ire1 activity are merged",
+    "source_text": "In metazoan cells, both modes of Ire1 activity are merged, and depending on condition and cell type can serve different purposes.",
     "evidence_type": [
       "KNOWLEDGE"
     ],
     "evidence_reasoning": "This is established knowledge about metazoan UPR mechanisms."
   },
   {
-    "claim_id": "C141",
-    "claim": "Depending on condition and cell type, Ire1 activity in metazoans can serve different purposes.",
+    "claim_id": "C85",
+    "claim": "RIDD can protect insulin secreting cells by removing major secretory protein loads.",
     "claim_type": "EXPLICIT",
-    "source_text": "and depending on condition and cell type can serve different purposes.",
+    "source_text": "RIDD can protect cells by removing major secretory protein loads, as it is the case in insulin secreting cells",
     "evidence_type": [
-      "KNOWLEDGE",
       "CITATION"
     ],
-    "evidence_reasoning": "This is established knowledge supported by the examples cited (Lipson et al., 2008; Han et al., 2009)."
+    "evidence_reasoning": "This is supported by citation to Lipson et al., 2008."
   },
   {
-    "claim_id": "C142",
-    "claim": "It is tempting to speculate that a primitive UPR may have served primarily as an ER-localized yet promiscuous RNA degradation system.",
+    "claim_id": "C86",
+    "claim": "RIDD can serve to activate apoptotic pathways in cells experiencing prolonged and unmitigated ER stress.",
     "claim_type": "EXPLICIT",
-    "source_text": "While we cannot ascertain what represents the ancestral state, it is tempting to speculate that a primitive UPR may have served primarily as an ER-localized yet promiscuous RNA degradation system.",
+    "source_text": "or it can serve to activate apopototic pathways, as it is the case in cells experiencing prolonged and unmitigated ER stress",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "evidence_reasoning": "This is supported by citation to Han et al., 2009."
+  },
+  {
+    "claim_id": "C87",
+    "claim": "A primitive UPR may have served primarily as an ER-localized yet promiscuous RNA degradation system.",
+    "claim_type": "EXPLICIT",
+    "source_text": "it is tempting to speculate that a broader mRNA degradation pathway preceded the development of the more specialized splicing mechanism...a primitive UPR may have served primarily as an ER-localized yet promiscuous RNA degradation system.",
     "evidence_type": [
       "SPECULATION"
     ],
-    "evidence_reasoning": "This is explicitly stated as speculation about evolutionary origins."
+    "evidence_reasoning": "This is explicitly presented as speculation about evolutionary origins."
   },
   {
-    "claim_id": "C143",
-    "claim": "Individual mRNA substrates would have evolved appropriate affinities for Ire1, rendering them more or less susceptible substrates.",
-    "claim_type": "EXPLICIT",
-    "source_text": "Individual mRNA substrates would then have evolved appropriate affinities for the enzyme, rendering them more or less susceptible substrates.",
-    "evidence_type": [
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative evolutionary scenario proposed by the authors."
-  },
-  {
-    "claim_id": "C144",
+    "claim_id": "C88",
     "claim": "The stem/loop splice sites of HAC1/XBP1 mRNAs could be the result of a long time optimization process.",
     "claim_type": "EXPLICIT",
     "source_text": "In this way, the stem/loop splice sites of HAC1/XBP1 mRNAs could be the result of a long time optimization process",
     "evidence_type": [
       "SPECULATION"
     ],
-    "evidence_reasoning": "This is a speculative evolutionary interpretation."
+    "evidence_reasoning": "This is explicitly presented as speculation about evolutionary development."
   },
   {
-    "claim_id": "C145",
-    "claim": "Duplication of the cleavage site with concomitant recruitment and repurposing of tRNA ligase would have culminated the UPR splicing reaction.",
-    "claim_type": "EXPLICIT",
-    "source_text": "duplication of the cleavage site with concomitant recruitment and repurposing of tRNA ligase would have culminated the UPR splicing reaction.",
-    "evidence_type": [
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative evolutionary scenario for the origin of the splicing mechanism."
-  },
-  {
-    "claim_id": "C146",
+    "claim_id": "C89",
     "claim": "S. cerevisiae emerges as the endpoint of an optimization process rather than an evolutionary precursor.",
     "claim_type": "EXPLICIT",
     "source_text": "In this view, S. cerevisiae emerges as the endpoint of an optimization process rather than an evolutionary precursor.",
     "evidence_type": [
       "SPECULATION"
     ],
-    "evidence_reasoning": "This is a speculative evolutionary interpretation based on the comparative data."
-  },
-  {
-    "claim_id": "C147",
-    "claim": "By losing the more ancient RIDD function of the UPR, S. cerevisiae cells would have developed to rely exclusively on a more refined and more powerful transcriptional regulation program.",
-    "claim_type": "EXPLICIT",
-    "source_text": "By losing the more ancient RIDD function of the UPR, S. cerevisiae cell would have developed to rely exclusively on a more refined and more powerful transcriptional regulation program.",
-    "evidence_type": [
-      "SPECULATION"
-    ],
-    "evidence_reasoning": "This is a speculative evolutionary interpretation of the differences between species."
+    "evidence_reasoning": "This is explicitly presented as a speculative evolutionary interpretation."
   }
 ]

@@ -2,148 +2,289 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C35",
-      "C36"
+      "C23",
+      "C24",
+      "C25"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK components (Ku70, Ku80, and DNA-PKcs) bind to cytoplasmic DNA. Biotinylated DNA was transfected into cells, affinity purified from cytoplasmic fractions, and the three major protein bands were identified as DNA-PK components by mass spectrometry. Ku80 is required for efficient DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The pull-down experiments with mass spectrometry identification, cell fractionation demonstrating cytoplasmic localization, and binding specificity to DNA but not RNA provide strong direct biochemical evidence. The requirement for Ku80 for efficient DNA-PKcs binding is well-demonstrated through knockout experiments."
+    "status_reasoning": "Claims C23-C25 describe a clear experimental workflow with appropriate controls (biotinylated pam-3-cys) and demonstrate DNA-PK binding to cytoplasmic DNA through affinity purification and mass spectrometry. The requirement for Ku80 is shown by comparing binding in cells with and without Ku80 (C25)."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C1",
-      "C3",
-      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
       "C32",
       "C33",
       "C34",
+      "C35",
+      "C36",
       "C37",
       "C38",
       "C39",
       "C40",
       "C41",
       "C42",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48"
+      "C43",
+      "C44"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK is required for the innate immune response to DNA in fibroblasts. Cells lacking DNA-PKcs, Ku80, or Ku70 show impaired cytokine and chemokine transcription/secretion in response to DNA but not RNA. The defect is consistent across time points, multiple cell preparations, and different genetic backgrounds. Re-expression of Ku80 restores the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple independent knockout cell lines (DNA-PKcs, Ku80, Ku70) show consistent defects in cytokine and chemokine responses to DNA stimulation across multiple readouts (transcription, protein secretion). RNA responses remain intact, demonstrating specificity. Rescue experiments restore function, and the phenotype is consistent across primary and transformed cells from multiple genetic backgrounds."
+    "status_reasoning": "Claims C26-C44 collectively demonstrate DNA-PK's role in DNA sensing through multiple lines of evidence: dose-response (C26), specificity controls (C27-C28, C31, C35), knockout phenotypes in multiple genetic backgrounds (C29-C30, C39-C41), time-course analysis (C33-C34), rescue experiments (C43), and consistency across preparations (C36-C37, C42, C87). The specificity for DNA over RNA (C31-C32) and normal LPS response (C35) rule out general signaling defects."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C2",
-      "C11",
+      "C1",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
       "C49",
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C67",
-      "C68",
-      "C69"
+      "C50"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK activates innate immunity through an IRF-3 and TBK1-dependent pathway. Cytokine induction in response to DNA requires IRF-3 and TBK1. DNA-PKcs-deficient cells show impaired IRF-3 nuclear translocation in response to DNA but not RNA, while NF-\u03baB translocation and downstream gene expression are also affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Knockout studies demonstrate dependence on IRF-3 and TBK1 for DNA-induced responses. IRF-3 translocation is specifically impaired in DNA-PK-deficient cells after DNA but not RNA stimulation, while NF-\u03baB signaling remains intact. The STING-Ku70 interaction data and its disruption upon DNA stimulation support pathway involvement, though complete mechanistic details remain to be elucidated."
+    "status_reasoning": "Claims C1, C45-C50 demonstrate pathway dependence through genetic knockouts (Irf3\u2212/\u2212, Tbk1\u2212/\u2212) and immunofluorescence showing impaired IRF-3 translocation in Prkdc\u2212/\u2212 cells. The data show DNA-specific defects in IRF-3 activation while RNA responses remain intact, establishing DNA-PK upstream of IRF-3/TBK1 in the DNA sensing pathway."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C95",
-      "C96",
-      "C97"
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK's DNA sensing function is independent of its kinase activity. Cells from PrkdcSCID mice (which lack kinase activity due to a truncated protein) and cells treated with DNA-PKcs kinase inhibitor Nu7026 show normal cytokine responses to DNA, unlike complete DNA-PKcs knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "PrkdcSCID cells lacking kinase activity retain substantial DNA sensing capability for both transfected DNA and DNA virus infection, and pharmacological kinase inhibition does not block responses. This demonstrates that DNA-PK functions in DNA sensing through a kinase-independent mechanism, likely as a scaffolding protein, distinct from its kinase-dependent role in DNA repair."
+    "status_reasoning": "Claims C52-C54 and C89-C91 demonstrate through two independent approaches (genetic mutation and pharmacological inhibition) that kinase activity is dispensable for DNA sensing. This contrasts with the established requirement for kinase activity in DNA repair (C90), establishing a kinase-independent function for DNA-PK."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C26",
-      "C27",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79"
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK interacts with STING in a DNA-dependent manner. In an inducible STING expression system in HEK293 cells, STING forms a complex with Ku70 prior to DNA stimulation, and this interaction is abrogated following DNA transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "DNA-PK and signaling components colocalize with viral replication sites during infection. Knockout cells show impaired IRF-3-dependent cytokine responses to DNA viruses (MVA, HSV-1) but not RNA viruses (NDV), while NF-\u03baB responses and viral replication remain intact. This demonstrates DNA-PK specifically senses DNA virus infection without affecting viral permissiveness."
+    "status_reasoning": "Claims C55-C59 describe a well-controlled experimental system using HEK293 cells (which lack functional STING, C55) with inducible STING expression. Immunoprecipitation experiments show STING-Ku70 interaction that changes upon DNA stimulation (C57-C58), providing mechanistic insight into how DNA-PK connects to the STING pathway."
   },
   {
     "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C61",
+      "C62",
+      "C63",
+      "C75"
+    ],
+    "result": "DNA-PK and TBK1 co-localize with sites of viral DNA replication during vaccinia virus infection. Immunofluorescence microscopy shows Ku80, DNA-PKcs, and TBK1 localize to cytoplasmic viral factories visualized by DAPI staining in MVA-infected HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C21, C61-C63, and C75 describe immunofluorescence experiments showing co-localization of DNA-PK components and TBK1 with viral replication sites. The visualization method (DAPI staining of viral factories) and co-localization are clearly documented, supporting the relevance of DNA-PK to viral DNA sensing."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DNA-PKcs is required for the innate immune response to DNA viruses in cell culture. MVA infection induces an IRF-3-dependent response in fibroblasts, and Prkdc\u2212/\u2212 MEFs show impaired cytokine and chemokine induction following MVA infection but not NDV (RNA virus) infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C2, C22, C64-C68 demonstrate that the DNA sensing defect extends to DNA virus infection. The IRF-3 dependence is established (C64-C65), and the specificity for DNA viruses over RNA viruses is shown by comparing MVA and NDV responses (C66-C67). Viral protein expression is unaffected (C68), indicating the defect is in sensing rather than replication."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DNA-PKcs is required for innate immune responses to DNA and DNA viruses in vivo. Prkdc\u2212/\u2212 mice show reduced Ifnb and Il6 transcription following intradermal injection of DNA or infection with MVA or HSV-1, but not following poly(I:C) injection or influenza virus infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C69-C73 demonstrate in vivo relevance through mouse experiments with appropriate controls. The defect is specific to DNA and DNA viruses (MVA, HSV-1) but not RNA or RNA viruses (influenza), consistent with cell culture findings. The inability to detect ifnb in HSV-1 experiments (C73) is acknowledged as a technical limitation but Il6 data support the conclusion."
+  },
+  {
+    "result_id": "R9",
     "claim_ids": [
       "C80",
       "C81",
       "C82",
       "C83",
-      "C84"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "In vivo experiments in DNA-PKcs-deficient mice show impaired cytokine responses to DNA transfection and DNA virus infection (MVA, HSV-1) but normal responses to RNA virus (influenza). The sample size is modest (n=5 per group) but the effects are statistically significant and consistent with the in vitro findings, demonstrating physiological relevance."
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
+      "C84",
+      "C85",
       "C86",
       "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93",
-      "C94"
+      "C88"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK plays a non-redundant role in DNA sensing despite the existence of other DNA sensors. The defect in DNA-PKcs-deficient cells and mice is specific to DNA (not RNA or LPS), observed across multiple genetic backgrounds, and greater in DNA-PKcs knockouts than Ku knockouts, suggesting DNA-PKcs can signal independently but Ku enhances affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The cell-type specificity is well-established: prior studies ruled out DNA-PK in monocytes and HEK293 cells, while current work demonstrates function in fibroblasts and in vivo. DNA-PK is absent in macrophages but highly expressed in fibroblasts. The defect is specific to DNA stimuli without affecting RNA, LPS, or RNA virus responses, demonstrating this is not a general immune defect."
+    "status_reasoning": "Claims C80-C88 establish DNA-PK's non-redundant role through specificity controls (C82-C83), consistency across genotypes (C87-C88), and differential effects of DNA-PKcs vs. Ku deletion (C84-C86). The interpretation that Ku enhances DNA-PKcs function by increasing DNA affinity (C86) is reasonable given established biochemical properties (C85) and the observed phenotypic differences."
   },
   {
-    "result_id": "R8",
+    "result_id": "R10",
     "claim_ids": [
-      "C25",
-      "C124",
-      "C125"
+      "C76",
+      "C77",
+      "C78",
+      "C79"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "DNA-PK's role in DNA sensing is cell-type specific. Previous studies ruled out DNA-PK in monocytic cells and HEK293 cells, and DNA-PK components are absent in primary macrophages, but are expressed at high levels in fibroblasts and other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The collective experimental evidence from biochemical binding studies, genetic knockouts, rescue experiments, virus infection studies, and in vivo validation establishes a novel cytoplasmic function for DNA-PK in innate immunity. This is distinct from its established nuclear roles in DNA repair and V(D)J recombination, expanding understanding of DNA-PK biology and cytoplasmic DNA sensing mechanisms."
+    "status_reasoning": "Claims C76-C79 reconcile the current findings with prior literature by establishing cell-type specificity. The absence of DNA-PK in macrophages (C79) explains why it wasn't identified in monocytic cells (C76), while its high expression in fibroblasts (C78) explains its importance in these cells. This is supported by citations and the authors' data."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C129",
+      "C130"
+    ],
+    "result": "This study identifies a novel cytoplasmic function for DNA-PK in innate immunity, distinct from its established nuclear roles in DNA repair and V(D)J recombination. DNA-PK has been detected in the cytoplasm previously but no function had been assigned to this localization prior to this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3-C4, C14-C20, C129-C130 establish the novelty of the findings by contrasting the new cytoplasmic immune function with well-established nuclear functions. The prior detection of DNA-PK in the cytoplasm without assigned function (C19-C20) and the demonstration of a kinase-independent role (distinct from DNA repair which requires kinase activity) support the novelty claim."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Multiple DNA sensors have been proposed but their in vivo relevance remains unclear. DAI, RNA polymerase III, IFI16, and DDX41 have been described as DNA sensors, but Dai\u2212/\u2212 and Ips1\u2212/\u2212 cells show normal responses to DNA, and plasmodium DNA sensing occurs independently of these receptors, indicating additional sensors exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5-C13 accurately summarize the state of the field based on cited literature. The claims about normal responses in knockout cells (C11) and independent sensing of plasmodium DNA (C12) are supported by citations, justifying the inference that additional sensors exist (C13). This provides appropriate context for identifying DNA-PK as a novel sensor."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C92",
+      "C93"
+    ],
+    "result": "The molecular mechanism of DNA-PK-mediated DNA sensing requires further investigation. While DNA-PK was previously shown to interact with IRF-3, the functional significance remains unknown. Future work is needed to understand how TBK1 and STING contribute to IRF-3 activation following DNA-PK binding to DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C51-C93 appropriately acknowledge gaps in mechanistic understanding. The statement about unknown functional significance of DNA-PK/IRF-3 interaction (C92) and the need for future work (C93) are honest assessments of limitations. The STING interaction data (C57-C59) provides some mechanistic insight but doesn't fully explain the pathway."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "DNA acts as an immunostimulatory agent in multiple contexts including vaccination and neutrophil extracellular traps. DNA vaccination relies on DNA sensing for innate immune activation, alum adjuvant acts by stimulating DNA release from neutrophils, and NETs (webs of DNA with proteins) function as antimicrobial traps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C94-C100 summarize established knowledge about DNA immunology supported by appropriate citations. These contextual claims about DNA vaccination (C95), alum mechanism (C97), and NET function (C98-C100) are well-established in the literature and provide relevant background for understanding the significance of DNA sensing mechanisms."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "DNA can act as a damage-associated molecular pattern (DAMP) and DNA sensing is linked to autoimmune disorders. DNA accumulation and detection contribute to diseases including atherosclerosis, thrombosis, SLE, AGS, and systemic sclerosis. Mice lacking DNA degradation enzymes (Trex1, DNaseII) develop autoimmune disorders, and anti-DNA-PK antibodies are found in autoimmune patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C101-C117 summarize established connections between DNA sensing and autoimmunity, supported by extensive citations. The presence of anti-DNA-PK antibodies in SLE and systemic sclerosis patients (C115) is particularly relevant to the current findings. These claims provide important context for the broader implications of DNA sensing mechanisms, though they are primarily literature review rather than new findings."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Multiple DNA sensors likely exist due to evolutionary pressure from pathogen immune evasion. There are at least three outcomes of DNA sensing (IRF-3/NF-\u03baB activation, AIM2 inflammasome, DAI-mediated necroptosis), but how these contribute to immune responses and their cell-type specificity remains unclear and requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C118-C128 provide evolutionary context (C118-C121) and synthesize knowledge about DNA sensing outcomes (C122-C124) while appropriately acknowledging gaps in understanding (C125-C128). The inference about redundancy due to pathogen evasion (C118-C120) is reasonable and supported by citations. The acknowledgment of unknowns (C125-C126) and need for future work (C127-C128) is appropriate."
   }
 ]

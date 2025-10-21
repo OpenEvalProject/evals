@@ -2,116 +2,274 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C16",
-      "C17",
-      "C18",
       "C19",
       "C20",
       "C21",
-      "C22"
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The membrane directs rhomboid protease cleavage site specificity. In living cells, rhomboid proteases cleave substrates at a single, invariant site, but this specificity is lost in detergent micelles where cleavage sites shift. Reconstituting rhomboid and substrate into proteoliposomes restores the natural cleavage site specificity, demonstrating that the membrane itself\u2014not the enzyme\u2014dictates cleavage position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Mass spectrometry data from multiple rhomboid proteases, substrates, and cell types consistently show invariant cleavage sites in cellular membranes but shifted sites in detergent. Reconstitution into proteoliposomes with diverse lipid compositions restores natural site-specificity, demonstrating the membrane itself, not lipid composition, controls cleavage position. The experimental design includes appropriate controls and multiple independent validations."
+    "status_reasoning": "Claims C19-C27 provide converging evidence from mass spectrometry across multiple experimental systems (cells, detergent, proteoliposomes) showing that membrane presence controls site-specificity. The observation that diverse lipid compositions all restore specificity (C26) strengthens the conclusion that membrane physical properties, rather than specific lipid interactions, drive this effect."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C27",
       "C28",
       "C29",
-      "C30"
+      "C30",
+      "C31"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "EPR spectroscopy shows increased immobility of the W236 gate position in proteoliposomes versus detergent, supporting membrane restraint of gate dynamics. However, only two positions were tested (W236 gate and M247 cap), and no quantitative correlation between gate dynamics and proteolytic activity is provided. Additional positions and functional validation would strengthen this result."
+    "result": "The membrane restricts substrate selectivity by enforcing requirements for helix-destabilizing residues. GA residues in Spitz are essential for cleavage in cells and proteoliposomes but dispensable in detergent micelles, indicating the membrane plays a direct role in substrate discrimination beyond just positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C28-C31 demonstrate through comparative analysis in different environments that substrate selectivity requirements are membrane-dependent. The rescue of GA mutant cleavage in detergent (C30) directly supports that the membrane imposes selectivity constraints."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C31",
       "C32",
       "C33",
       "C34",
-      "C35",
-      "C36",
-      "C37",
-      "C38",
-      "C66"
+      "C35"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The membrane restrains rhomboid gate dynamics to limit proteolysis. EPR spectroscopy reveals that the W236 gate position shows dramatically increased immobility in proteoliposomes compared to detergent, while the M247 cap position remains dynamic in both environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "CD spectroscopy provides quantitative measurements showing substrates (TatA, APP+Spi7) lose 31-46% helicity in detergent compared to proteoliposomes, while non-substrates maintain stable helices in both environments. Multiple substrate/non-substrate pairs tested with consistent results. The differential helical stability between substrates and non-substrates in detergent (36-46% difference) is substantial and reproducible."
+    "status_reasoning": "Claims C32-C35 provide direct biophysical evidence from EPR spectroscopy showing differential protein dynamics in membrane vs detergent environments. The specific observation of increased immobile component at the gate position (C33) in proteoliposomes directly supports the conclusion that membranes restrain gate opening."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
       "C40",
       "C41",
       "C42",
       "C43",
       "C44",
+      "C71"
+    ],
+    "result": "Rhomboid substrates possess intrinsically unstable transmembrane helices that depend on the membrane for structural stability. CD spectroscopy reveals that substrates and non-substrates form similarly stable helices in proteoliposomes, but substrates lose 31-300% helicity in detergent while non-substrates maintain stable helices comparable to those in helix-inducing solvents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C36-C44 and C71 provide comprehensive CD spectroscopy data across multiple substrate/non-substrate pairs in different environments. The quantitative measurements (C40-C43) showing dramatic helicity loss for substrates but not non-substrates in detergent provide strong support for the conclusion about intrinsic substrate instability."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
       "C45",
       "C46",
       "C47",
       "C48",
       "C49",
-      "C50",
+      "C50"
+    ],
+    "result": "Manipulating substrate transmembrane helix stability predictably shifts cleavage sites in living cells. Introducing helix-destabilizing glycines into Spitz shifts cleavage sites deeper into the TM segment (+3 to +5 residues), while stabilizing mutations shift cleavage outward (-1 residues), with dramatic redistribution of residues at P4-P2' positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C45-C50 provide direct experimental evidence from living cells showing predictable cleavage site shifts correlating with helical stability changes measured by CD spectroscopy (C45). The bidirectional nature of shifts (both inward and outward depending on mutation type) strengthens the causal relationship."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
       "C51",
       "C52",
       "C53",
       "C54",
-      "C55",
-      "C72"
+      "C55"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Gate-open rhomboid mutants shift cleavage sites deeper into substrate TM segments, but helix-stabilizing substrate mutations can reverse this shift even with an open gate. All gate-open GlpG mutants cleave Spitz deeper in living cells, but replacing helix-destabilizing residues (S142A or GA to LM) shifts cleavage back toward the membrane surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Systematic mutagenesis in living cells demonstrates that altering TM dynamics shifts cleavage sites in a manner that correlates strongly with turn propensity (r=0.86, n=12 mutants) but is incompatible with fixed sequence binding. Gate-open mutants and substrate helix-stabilizing mutations produce predictable shifts. The failure of a 1000-fold excess recognition peptide to inhibit proteolysis independently argues against sequence-specific binding as the primary determinant. While mutations necessarily alter sequence, the consistency across multiple proteases, substrates, and the correlation with a physical scale provide strong converging evidence."
+    "status_reasoning": "Claims C51-C55 demonstrate through systematic mutagenesis in living cells that both gate dynamics and substrate helix stability independently influence cleavage position. The observation that substrate mutations affect cleavage even with gate-open mutants (C55) provides strong evidence that substrate dynamics are required beyond simple gate access."
   },
   {
-    "result_id": "R5",
+    "result_id": "R7",
     "claim_ids": [
-      "C5",
       "C56",
+      "C5",
+      "C83"
+    ],
+    "result": "Cleavage site shifts correlate strongly (r=0.86) with a transmembrane turn propensity scale that integrates both helix-destabilizing properties and membrane-exit propensity. This correlation across 12 mutant substrates in cellular membranes suggests substrate partitioning into the active site is driven by residues that promote both helix unwinding and escape from the membrane environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C56, C5, and C83 provide quantitative correlation analysis between experimental cleavage data and an independently derived physical scale. The high correlation coefficient (0.86) across diverse mutations supports that turn propensity captures the key physical properties driving substrate recognition."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
       "C57",
+      "C76",
+      "C77"
+    ],
+    "result": "Extended sequence binding is not the primary determinant of rhomboid specificity. A hexapeptide containing the complete P4-P2' recognition motif fails to inhibit proteolysis even at millimolar concentrations (~1000\u00d7 substrate concentration), and diverse residues at positions beyond P1/P1' support efficient cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C57, C76, and C77 provide direct competitive inhibition data and analysis of cleavage site diversity. The failure of a recognition motif peptide to compete at extreme concentrations (C57, C77) provides strong negative evidence against sequence-specific binding as the primary specificity mechanism."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
       "C58",
       "C59",
       "C60",
       "C61",
       "C62",
-      "C67",
-      "C68"
+      "C63",
+      "C64",
+      "C73"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Single proline insertions convert non-substrates (APP, Delta, TGF\u03b1) into efficient rhomboid substrates by destabilizing transmembrane helices. Proline insertion at various positions (2-10) enables cleavage of all three non-substrates by seven different rhomboid proteases, with cleavage sites moving deeper as proline position descends into the TM segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Single proline insertions converted three unrelated non-substrates (APP, Delta, TGF\u03b1) into efficient substrates for seven different rhomboid proteases in both cellular and in vitro systems. CD spectroscopy confirms that proline insertion dramatically reduces helical stability. Proline scanning shows position-dependent effects on cleavage site preference, consistent with the dynamics-based model. The breadth of testing (multiple proteins, proteases, and experimental systems) and direct measurement of helical stability provide strong support."
+    "status_reasoning": "Claims C58-C64 and C73 provide systematic evidence across multiple non-substrates, proline positions, and rhomboid proteases in both cells and in vitro. CD spectroscopy directly confirms that proline insertion reduces helical stability (C59), and controls rule out \u03b3-secretase involvement (C64), supporting that helix destabilization is sufficient for substrate conversion."
   },
   {
-    "result_id": "R6",
+    "result_id": "R10",
     "claim_ids": [
       "C2",
       "C3",
-      "C6",
-      "C39",
-      "C63",
-      "C64",
+      "C7",
       "C65",
-      "C69",
+      "C66",
+      "C85",
+      "C92"
+    ],
+    "result": "Membrane immersion enables rhomboid proteases to achieve specificity by reading intrinsic transmembrane segment dynamics rather than through extended sequence binding. The membrane imposes dual constraints\u2014inducing helix formation and restricting gate opening\u2014that unmask differences in substrate conformational dynamics, allowing substrates with meta-stable helices to partition into the hydrophilic active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C2, C3, C7, C65, C66, C85, and C92 represent the central mechanistic model synthesized from EPR, CD, mutagenesis, and cleavage site mapping data. The model is well-supported by the convergence of multiple independent lines of evidence showing membrane effects on both enzyme and substrate dynamics, though some mechanistic details remain speculative (acknowledged in C66)."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C48"
+    ],
+    "result": "Cleavage site shifts in living cells are incompatible with rigid sequence-specific binding models. Manipulating substrate and gate dynamics causes dramatic redistribution of residues at P4, P3, P2, and P2' positions while maintaining efficient cleavage, demonstrating that substrates can be productively positioned in multiple configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4 and C48 are directly supported by mass spectrometry data showing that mutations shift cleavage sites while maintaining efficiency, resulting in different residues occupying the putative recognition positions. This observation is incompatible with models requiring stereotypical binding of specific residues at each subsite."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C72",
       "C74",
       "C75",
-      "C76",
-      "C77",
-      "C79"
+      "C81"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The main factor preventing type I transmembrane proteins from becoming rhomboid substrates is their ability to maintain stable helices. Substrate TM dynamics likely derive from both helix-destabilizing residues and limited hydrophobicity that promotes partitioning into the hydrophilic active site, explaining why alanines are important despite not being directly helix-destabilizing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C70, C72, C74, C75, and C81 synthesize CD spectroscopy data, mutagenesis results, and correlation analysis to explain substrate discrimination. The model is supported by direct measurements of helical stability differences and the correlation with turn propensity scale that integrates both helix stability and hydrophobicity."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "Rhomboid proteases patrol membranes for meta-stable TM helices, with gate-open conformations providing a microenvironment that unmasks intrinsic TM segment differences. Proteolysis ensues when extended TMs can reach the catalytic apparatus, though the precise mechanistic details remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The integrated mechanistic model proposing that membrane immersion allows rhomboid proteases to identify substrates by reading TM dynamics is well-supported by the collective experimental data (EPR, CD, mutagenesis, reconstitution). However, key mechanistic details remain speculative: the entropy-driven conformational switch, the exact order of events, substrate partitioning dynamics, and what triggers each step are inferred but not directly demonstrated. The authors acknowledge these limitations. Additional structural and kinetic studies would be needed to fully validate the proposed mechanism."
+    "status_reasoning": "Claims C78, C79, and C82 represent a working model that integrates experimental observations but contains speculative elements about mechanism. While C80 cites support for gate-open stability, the claims about how substrates 'reach' the active site and the exact order of events lack direct experimental validation and are acknowledged as speculative."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C84"
+    ],
+    "result": "Initial docking between rhomboid and transmembrane segments appears non-specific, as diverse non-substrates can be converted to substrates by single mutations. Proline scanning moves cleavage sites deeper and sometimes positions them at unacceptable residues, suggesting substrate positioning is dynamic rather than rigidly determined by initial binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C67 and C84 are supported by the proline insertion experiments showing that diverse sequences can become substrates (C60-C63) and by mass spectrometry data showing position-dependent cleavage site shifts. The observation that cleavage can occur at 'unacceptable' residues (C84) supports that initial recognition is not sequence-specific."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "While the most dramatic differences between substrates and non-substrates occur outside the membrane environment, differences within the membrane beyond current experimental resolution are possible. Structural analysis of rhomboid-substrate complexes and determination of the precise order of catalytic events remain as future challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C86-C90 appropriately acknowledge limitations and future directions. C87 is supported by CD data showing dramatic differences in detergent but not proteoliposomes. The acknowledgment of what remains unknown (C88-C90) is scientifically appropriate and does not undermine the supported conclusions."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Intramembrane proteases represent a distinct enzyme class because they are membrane-immersed and operate under different physical rules, giving cells enzymes with unique properties for evolving new functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C93 is a broad conceptual conclusion with speculative elements about evolutionary implications. While the experimental data support that membrane immersion confers different properties (C92), the evolutionary and functional implications are inferred rather than directly demonstrated."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C91"
+    ],
+    "result": "Background context on proteases and intramembrane proteases, including their ubiquity, regulatory roles, structural features, and prior characterization of rhomboid substrate determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C8-C18, and C91 represent established knowledge supported by citations to prior literature. These provide appropriate context for the current work and are not contested by the experimental findings."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Membrane thinning around GlpG has been observed in molecular dynamics simulations, though its functional consequence remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C68 and C69 accurately report prior computational observations with appropriate acknowledgment of uncertainty about functional relevance. The citation-supported observation (C68) and explicit statement of uncertainty (C69) are appropriately qualified."
   }
 ]

@@ -1,20 +1,20 @@
 {
   "submission": {
-    "id": "613928fd-f141-4f83-a2b8-050222fbb58a",
+    "id": "028803ef-46f8-4468-a8ea-0bad87e0d2fc",
     "user_id": null,
     "manuscript_title": null,
     "manuscript_doi": null,
     "status": "completed",
-    "created_at": "2025-10-16T21:23:20.436577Z",
-    "updated_at": "2025-10-16T21:23:20.436577Z"
+    "created_at": "2025-10-21T20:01:29.291773Z",
+    "updated_at": "2025-10-21T20:01:29.291773Z"
   },
   "content": [
     {
-      "id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "submission_id": "613928fd-f141-4f83-a2b8-050222fbb58a",
+      "id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "submission_id": "028803ef-46f8-4468-a8ea-0bad87e0d2fc",
       "content_type": "manuscript",
       "content_text": "# Plants regenerated from tissue culture contain stable epigenome changes in rice\n\n## Authors\n\n- Hume Stroud<sup>1</sup>\n- Bo Ding<sup>2</sup>\n- Stacey A Simon<sup>3</sup>\n- Suhua Feng<sup>1</sup>\n- Maria Bellizzi<sup>2</sup>\n- Matteo Pellegrini<sup>1</sup>\n- Guo-Liang Wang<sup>2</sup>\n- Blake C Meyers<sup>3</sup>\n- Steven E Jacobsen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cell and Developmental Biology University of California, Los Angeles Los Angeles United States\n2. Department of Plant Pathology Ohio State University Columbus United States\n3. Department of Plant and Soil Sciences Delaware Biotechnology Institute, University of Delaware Newark United States\n4. Howard Hughes Medical Institute, University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00354.001 Most transgenic crops are produced through tissue culture. The impact of utilizing such methods on the plant epigenome is poorly understood. Here we generated whole-genome, single-nucleotide resolution maps of DNA methylation in several regenerated rice lines. We found that all tested regenerated plants had significant losses of methylation compared to non-regenerated plants. Loss of methylation was largely stable across generations, and certain sites in the genome were particularly susceptible to loss of methylation. Loss of methylation at promoters was associated with deregulated expression of protein-coding genes. Analyses of callus and untransformed plants regenerated from callus indicated that loss of methylation is stochastically induced at the tissue culture step. These changes in methylation may explain a component of somaclonal variation, a phenomenon in which plants derived from tissue culture manifest phenotypic variability. DOI: http://dx.doi.org/10.7554/eLife.00354.001\n\n## Introduction\n\nRice is one of the world's most important food crops, and genetic modifications are extensively used for various purposes such as to increase yield and tolerate harsh environments. Tissue culture has been heavily used for decades for transformation procedures to generate transgenic crops such as rice and maize (Rao et al., 2009). A previous study has reported that Arabidopsis cell suspension culture has a different epigenomic profile compared to wild-type plants, such that certain transposable elements (TEs) become hypomethylated and certain genes become hypermethylated (Tanurdzic et al., 2008). This raised the question of how tissue culture processes affect the epigenome of regenerated plants derived from tissue culture. Changes in the epigenome have been proposed to be a source of somaclonal variation (i.e., phenotypic variation among regenerated plants) for decades (Kaeppler and Phillips, 1993; Kaeppler et al., 2000; Thorpe, 2006; Rhee et al., 2010; Miguel and Marum, 2011; Neelakandan and Wang, 2012). Indeed, some evidence suggesting changes in the epigenome of regenerated plants have been reported at several specific loci or by methods such as methylation sensitive restrictive enzyme digestion (Neelakandan and Wang, 2012). However, the extent of methylation changes on a genome-wide level has not been previously assessed. Because, unlike most crops, Arabidopsis is almost exclusively transformed via Agrobacterium-mediated floral dip methods that do not utilize tissue culture (Clough and Bent, 1998), Arabidopsis is not a good model for the study of the effect of plant regeneration on the epigenome. The study of the model plant rice, however, may have practical implications for other crop species that are transformed using similar tissue culture methods.\n\nThe rice genome is DNA methylated in all three cytosine contexts (CG, CHG, CHH, where H=A, T, or C), with high levels of CG and CHG methylation and very low levels of CHH methylation (Feng et al., 2010; Zemach et al., 2010). Whole genome bisulfite sequencing (BS-seq) enables measurement of DNA methylation at single nucleotide resolution and thus allows one to distinguish DNA methylation in different cytosine contexts (Cokus et al., 2008; Lister et al., 2008).\n\nTo investigate the effect that tissue culture processes have on regenerated rice epigenomes, we generated genome-wide, single-nucleotide maps of DNA methylation in several regenerated rice lines that had been transformed with various transgenes, callus, and rice regenerated from tissue culture without transformation. We observed that the tissue culture procedure induced stable changes in DNA methylation in regenerated plants, such that all regenerated lines had ectopic losses of DNA methylation. We found that loss of DNA methylation occurred stochastically, affecting individual plants somewhat differently, was associated with loss of small RNAs, and changes were enriched at promoters of genes. Loss of DNA methylation at promoters was associated with altered expression of particular genes.\n\n## Results\n\nWe performed deep BS-seq to map DNA methylation in nine regenerated rice lines in the Nipponbare ecotype background that were transformed by various transgenes and were at various stages of inbreeding after transformation: rice blast resistance lines PiZ-t, PiZ-t-839 (a non-functional PiZ-t), Pi9, and an RNAi line for flowering time regulator Spin1 (Zhou et al., 2006; Vega-Sanchez et al., 2008; Table 1). For the PiZ-t line, both transgenic and non-transgenic T2 and T4 plants were available by genetic segregation of the PiZ-t transgene (Table 1). For comparison, we profiled an untransformed wild-type line, which was used to generate all the regenerated lines, WT2003 (sample 1). WT2003 was also inbred 5\u20137 generations to produce WT2007 (sample 2), and WT2007 was inbred 5\u20137 additional generations to produce WT2011 (sample 3). We obtained an average genome coverage of 15\u00d7 and error rates were low at 1.5%, 1.2%, 0.8%, for CG, CHG, CHH methylation, respectively, indicating high quality data (Table 1).10.7554/eLife.00354.003Table 1.BS-Seq samples analyzed in this studyDOI: http://dx.doi.org/10.7554/eLife.00354.003SampleDescriptionRaw readsUniquely mapping readsCoverage (X)CG error rateCHG error rateCHH error rate1WT200323156890210057278013.51780.01760.01220.00992WT200720354135710437698814.02920.01070.00870.00823WT20111878031098430190411.33090.01580.00950.00654T2-PiZt-11-R22965025911871009415.95570.01390.00990.00695T2-PiZt-11-S26332960213647141118.34290.01010.00960.00766T4-PiZt-11-R27067087113105670017.61510.01170.01000.00747T4-PiZt-11-S25215029812846772117.26720.00960.00760.00748T6-PiZt-11-R23728013712196674516.39340.01050.00960.00649T6-Pi9-R2047526998699574211.69300.01060.00930.005010T6-Spin1i-1-R2154510229046823612.15970.01130.00880.006111T2-PiZt-839-8-R (non functional PiZt)23873028111747133215.78920.01290.00790.005612T2-PiZt-839-8-S (non functional PiZt)21100611910617287214.27050.01780.01290.009513WT Callus 12171215229614527912.92280.01850.01780.007014WT Callus 21992614938261764311.10450.02320.02220.008415WT regenerated from tissue culture 121800883511636762615.64080.01700.01550.007816WT regenerated from tissue culture 22252021139790514213.15930.02620.02060.009317WT regenerated from tissue culture 325230642810654473514.32050.01940.01600.007318WT2011 (replicate)25397182711814006215.87900.01720.01480.0086Number of raw sequencing reads, number of uniquely mapping reads (post-removal of identical reads), genome coverage (rice genome size = 372 Mb), and error rates are listed. DNA methylation levels of the chloroplast genome were used to estimate error rates. Samples 1\u201312 and samples 13\u201318 were prepared separately. \u201cR\u201d and \u201cS\u201d correspond to plants that either contain the transgene (R) or plants in which the transgene was segregated away (S).\n\nWe observed strong losses of DNA methylation at certain sites in the genome in the regenerated plants but not in wild-type plants (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig1-v1.jpg)\n\n**Figure 1.:** (A) Genome browser views of fractional CG methylation levels. Sample numbers correspond to those listed in Table 1. Regenerated samples of the same line are grouped together in red boxes. (B) Genome coverage of identified CG hypermethylation and hypomethylation DMRs. DMRs were defined relative to sample 1 (wild type). (C) Distribution of sizes of CG hypomethylation DMRs in regenerated plants. (D) Heat map representation of hierarchical clustering based on CG methylation levels within DMRs. Rows represent all 3610 CG-DMRs identified and columns represent the samples. (E) Overlap of CG-DMRs between samples. The bottom triangle represents the percent overlap of elements listed in the x-axis with those listed in the y-axis. The upper triangle on the other hand represents the percent overlap of elements listed in the y-axis with those listed in the x-axis.DOI: http://dx.doi.org/10.7554/eLife.00354.00410.7554/eLife.00354.005Figure 1\u2014source data 1.Defined hypomethylation DMRs for each sample are listed.DOI: http://dx.doi.org/10.7554/eLife.00354.005\n\nWe next investigated the stability of DNA methylation losses across generations. To test this, we analyzed a line for which we had plants in T2, T4, and T6 generations (samples 4, 6, 8). 84% of sites that lost CG methylation in the T2 did not recover methylation in the T4 and T6 generations (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig2-v1.jpg)\n\n**Figure 2.:** Methylation status of sample 4 (T2) DMRs in T4 and T6 generations are indicated. Loss: less than half of respective wild-type CG methylation levels. Gain: more than half of respective wild-type CG methylation levels.DOI: http://dx.doi.org/10.7554/eLife.00354.006\n\nLoss of DNA methylation in regenerated plants also occurred in non-CG contexts (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig3-v1.jpg)\n\n**Figure 3.:** (A) Average distributions of DNA methylation in wild type (faded) and regenerated plants (solid) were plotted over defined CG hypomethylation DMRs in the indicated samples. Flanking regions are the same lengths as the middle region. (B) Heat map of DNA methylation levels within all defined hypomethylation DMRs (CG + CHG + CHH). (C) Average distribution of smRNA-seq reads in wild type (black) and regenerated plants (red) over defined CHH hypomethylation DMRs in indicated samples. Flanking regions are the same lengths as the middle region.DOI: http://dx.doi.org/10.7554/eLife.00354.007\n\nWe next examined the genomic characteristics of sites that lost DNA methylation in regenerated plants. We tested the extent of overlap between 3597 CG DMRs, 1875 CHG DMRs, and 2298 CHH DMRs defined in the regenerated lines within gene bodies, gene promoters, downstream regions of genes, gene coding sequences, gene introns, and TE genes. Although loss of DNA methylation occurred at a variety of sites, we found the most significant enrichments of DMRs at the promoters of genes (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig4-v1.jpg)\n\n**Figure 4.:** (A) Overlap of hypomethylation DMRs with indicated genomic elements. Observed overlap (dark bars) is compared to randomized regions of similar number and size distribution as the DMRs (light bars). Gene body: transcribed region of protein coding genes. Gene promoter: TSS to 2 kb upstream of TSS. 3' downstream of gene TTS (transcription termination site): TTS to 2 kb downstream of TTS. CDS: Coding sequence. TE: Transposable element. Error bars represent standard deviation. *Significant enrichment, p<0.01. (B) Percentages of genes with CG hypomethylation DMRs near TSSs that have significantly altered expression levels (fourfold up/down regulation, FDR<0.01). Genes with zero mRNA-seq reads in both wild type and regenerated samples were removed from the analyses. An average of 11.3 genes were deregulated. (C) Genome browser views of DNA methylation and gene expression levels.DOI: http://dx.doi.org/10.7554/eLife.00354.00910.7554/eLife.00354.010Figure 4\u2014source data 1.Genes with CG hypomethylation DMRs at the promoter regions (TSS minus 2 kb to TSS) in samples 4\u201310 along with their normalized expression levels are listed. Also indicated are whether they were significantly up- or down-regulated based on fourfold and FDR < 0.01 cutoffs. Descriptions of genes were directly taken from the rice genome annotation project website (http://rice.plantbiology.msu.edu/).DOI: http://dx.doi.org/10.7554/eLife.00354.010\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Relative expression levels of genes with CG hypomethylation DMRs near TSS. Log2 ratios between RPKM values of indicated regenerated lines and wild type (sample 2) were calculated, and data is represented as boxplots. Genes with zero mRNA-seq reads in both wild type and regenerated samples were removed from the analyses. Red lines, median; edges of boxes, 25th (bottom) and 75th (top) percentiles; error bars, minimum and maximum points within 1.5 \u00d7 IQR (Interquartile range); red dots, outliers.DOI: http://dx.doi.org/10.7554/eLife.00354.011\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.00354.012\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Defined significantly up-regulated genes with CG hypomethylation DMRs at promoters were categorized based on the number of lines (out of seven tested) in which they were up-regulated. Gene identifiers are listed below.DOI: http://dx.doi.org/10.7554/eLife.00354.013\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Average distributions of DNA methylation in wild type (faded lines) and regenerated lines (solid lines) over defined up-regulated TE genes in the indicated regenerated samples.DOI: http://dx.doi.org/10.7554/eLife.00354.014\n\nWhile the losses of DNA methylation in regenerated plants occurred within a relatively small proportion of the rice genome, they were concentrated near protein-coding gene promoters and therefore in regions of the genome that are more prone to alter gene expression. We therefore examined the impact of hypomethylation on gene expression by performing mRNA-seq on the same seven randomly chosen regenerated plants as well as on wild-type plants (Table 3). We found that loss of DNA methylation at promoters was associated with higher expression levels of certain genes (Figure 4B,C, Figure 4\u2014source data 1, Figure 4\u2014figure supplement 1, 2). Notably, the closer the hypomethylation was to the gene transcription start site, the more likely the gene tended to be misregulated (Figure 4B). Furthermore, the expression of these genes was much more frequently increased, rather than decreased, suggesting that the misexpression of these genes is likely a direct consequence of losses of DNA methylation (Figure 4B). Hence loss of DNA methylation in regenerated plants is associated with deregulated transcription of certain protein-coding genes.10.7554/eLife.00354.015Table 3.mRNA-seq samples analyzed in this studyDOI: http://dx.doi.org/10.7554/eLife.00354.015SampleDescriptionRaw readsUniquely mapping reads2WT200744029089294611623WT201133997755226570984T2-PiZt-11-R42550136278395985T2-PiZt-11-S43173764286883816T4-PiZt-11-R46624891358268617T4-PiZt-11-S31729173226676338T6-PiZt-11-R46624532353356279T6-Pi9-R389785413062363310T6-Spin1i-1-R4228023532485204Number of raw sequencing reads and number of uniquely mapping reads are listed.\n\nWe further sought to determine whether it was the tissue culture process or the transformation process that induced loss of DNA methylation in regenerated plants. To test this, we performed BS-seq on callus and three individual plants regenerated from untransformed callus, all of which were derived from a single parent plant (WT2011;\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig5-v1.jpg)\n\n**Figure 5.:** (A) Genome coverage of identified CG hypermethylation and hypomethylation DMRs. DMRs were defined relative to sample 18 (wild type). (B) Heat map of CG methylation levels within all 1074 CG hypomethylation DMRs identified in samples 13 to 17 (callus samples and wild-type plants regenerated from callus). (C) Heat map of CG methylation levels within 241 CG hypomethylation DMRs that were observed in all tested regenerated plants. (D) Boxplot representations of (C). Red lines, median; edges of boxes, 25th (bottom) and 75th (top) percentiles; error bars, minimum and maximum points within 1.5 \u00d7 IQR (Interquartile range); red dots, outliers.DOI: http://dx.doi.org/10.7554/eLife.00354.016\n\nPrevious reports have indicated that certain genes are hypermethylated in Arabidopsis cell suspension culture and callus (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig6-v1.jpg)\n\n**Figure 6.:** (A) Genome browser views of DNA methylation. (B) Genome coverage of identified CHH hypermethylation and hypomethylation DMRs. Regenerated samples of the same line are grouped together in red boxes. (C) Overlap of callus CHH hypermethylation DMRs with indicated genomic elements. Observed overlap (dark bars) is compared to randomized regions of a similar number and size distribution as the DMRs (light bars). Error bars represent standard deviation.DOI: http://dx.doi.org/10.7554/eLife.00354.017\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00354/elife-00354-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Average distribution of DNA methylation over defined CHH hypermethylated regions in callus, genes, and TE genes. Flanking regions are the same lengths as the middle region. (B) Overlap between defined CHH hypermethylation DMRs of the two callus samples in this study (13 and 14).DOI: http://dx.doi.org/10.7554/eLife.00354.018\n\n## Discussion\n\nIn this report, we have investigated the effect that tissue culture processes have on the epigenome of regenerated plants by generating high-resolution maps of DNA methylation. Consistent with a previous study in Arabidopsis cell culture using microarray hybridization on chromosome 4 (Tanurdzic et al., 2008), we observed hypermethylation at certain genes in rice callus. We extend this observation by showing that hypermethylation predominantly occurs in CHH sequence contexts, most notably occurring at the promoters of genes. Interestingly, we found that this CHH hypermethylation was completely eliminated upon regeneration, suggesting that CHH hypermethylation may be linked specifically to the dedifferentiated state.\n\nIn contrast to Arabidopsis cell culture, we did not observe global hypomethylation at TEs in rice callus. Instead, we found that DNA methylation was specifically lost at certain sites in the genome, appearing to affect individual plants somewhat differently despite coming from the same parent plant. We found that loss of DNA methylation was maintained upon plant regeneration, and was largely stable over subsequent generations. It is possible that some of the DMRs affected only one homologous chromosome and were segregating. However, because we required DMRs to have at least 70% reduction in DNA methylation compared to wild-type, the sites we analyzed in Figure 2 are likely homozygous for loss of DNA methylation, consistent with their stability across generations. Loss of DNA methylation occurred in all sequence contexts, and was associated with loss of 24-nt siRNAs. Notably, these sites were frequently associated with promoters of genes, and loss of DNA methylation was associated with misregulation of expression of proximal protein-coding genes, indicating a biological importance of this phenomenon. Interestingly, genes significantly up-regulated (fourfold upregulated compared to wild type, p<0.01) in each regenerated line were somewhat different (Figure 4\u2014figure supplement 3). For this reason, it is difficult to assess the severity of impact of misregulated gene expression for any particular regenerated line, since some lines may have more biologically important genes affected than others. This would correlate with the observation that somoclonal variation affects only a proportion of plants that arise from regeneration experiments (Kaeppler and Phillips, 1993; Kaeppler et al., 2000; Thorpe, 2006; Rhee et al., 2010; Miguel and Marum, 2011; Neelakandan and Wang, 2012).\n\nPrevious studies have shown that certain TEs such as Tos17 and mPing are reactivated in tissue culture, and are associated with changes in DNA methylation (Neelakandan and Wang, 2012). While our results suggest that most DNA hypomethylation occurs near genes and are relatively depleted at TE related sequences (Figure 4A), some of the hypomethylation did occur proximal to TE genes (average of 62.1 TE genes per line). The association of loss of methylation with TE gene reactivation was not clear (data not shown), however very subtle depletion of DNA methylation was observed over reactivated TE genes (Figure 4\u2014figure supplement 4), suggesting that loss of methylation may in part be responsible for reactivation of TEs.\n\nOur results suggest that each regenerated plant has distinct DNA methylation profiles despite coming from the same parent (Figure 5A\u2013D). It therefore appears that the tissue culture step induces DNA hypomethylation in a rather stochastic manner affecting individual plants differently. We further show that descendants of regenerated plants stably maintain most hypomethylation across plant generations (Figure 2). Indeed, lines derived from the same original regenerated plant show very similar methylation profiles (Figure 1E; samples 4\u20138 and 11\u201312). It has long been proposed that changes in the epigenome may be a source of somaclonal variation (Thorpe, 2006; Rhee et al., 2010; Miguel and Marum, 2011; Neelakandan and Wang, 2012). Our genome-wide data support this notion since we show that stochastic hypomethylation in individual regenerants is associated with misregulated expression of certain genes. These epigenetic changes likely explain a component of somaclonal variation that has been observed for decades in a number of plant species.\n\nIn summary, our results suggest that use of tissue culture leaves behind an epigenetic footprint in regenerated plants that is stable over multiple generations and may partially explain somaclonal variation. Whereas the material used in this study were self-fertilized plants, a common practice in the development of agricultural biotechnology traits is to introgress new transgene loci into commercial genetic backgrounds, meaning that the plants used in agriculture are many generations removed from the initial regenerated plants (Bregitzer et al., 2008; Bennetzen and Hake, 2009; Johnson, 2009; Yang et al., 2012). The crosses utilized in these introgression schemes are likely to correct the vast majority of tissue culture-induced epigenetic changes.\n\n## Material and methods\n\n## Rice material\n\nWild-type rice (Oryza sativa ssp japonica cv Nipponbare) and regenerated rice lines (in Nipponbare background) were used in this study (Zhou et al., 2006; Vega-Sanchez et al., 2008). Hygromycin was used as the selection marker in rice transformation. All the resistant plants were selfed for indicated generations (Table 1). Homozygosity was confirmed by PCR analysis of the transgene. Rice seeds were surface-sterilized and transferred to 1/2 MS medium. After germination, rice seedlings were transplanted into soil and kept in a growth chamber at 26/20\u00b0C under a 14-hr light/10-hr dark cycle. The rice plants regenerated from untransformed rice callus induced from Nipponbare seeds (WT2011) were prepared as previously described (Zhou et al., 2006; Vega-Sanchez et al., 2008). Rice leaf samples were collected at 3 weeks after transplanted into soil and the rice callus were harvested from the callus inducing media.\n\n## Bisulfite sequencing (BS-seq) and analysis\n\nBS-seq libraries were generated as previously described using premethylated adapters (Feng et al., 2011) using 1 \u03bcg of genomic DNA isolated using DNeasy Plant Maxi Kit (Qiagen, Hilden, Germany). Libraries were single-end sequenced on a HiSeq 2000, and reads were base-called using the standard Illumina software. The read counts for these libraries are listed in Table 1. Reads (50 nt) were mapped to the MSU 6.1 version genome using BS-seeker (Chen et al., 2010) allowing up to two mismatches. Identical reads were collapsed into one read. Fractional methylation levels were calculated by #C/(#C+#T).\n\nDMRs for each sample were defined by comparing methylation levels to wild type in 100 bp bins across the genome. Fischer's exact test was used to identify bins that were significantly differentially methylated by comparing #C and #T (Benjamini-Hochberg corrected FDR < 0.01). In addition, we required an absolute methylation difference of 0.7, 0.5, 0.1, for CG, CHG, CHH methylation, respectively. Bins that were within 100 bp were merged. Finally, only bins that contained 10 informative cytosines (i.e., covered by \u22654 reads) in both the sample and wild type were considered as DMRs. Sample 1 was used for the wild type control for samples 2\u201312, whereas sample 18 was used for the wild type control for samples 13\u201317. This was because sample preparation (i.e., growth of plants and library constructions) were performed in two batches: 1\u223c12 and 13\u223c18.\n\nAll heat maps in this study were generated by complete linkage and using Euclidean distance as a distance measure. Rows with missing values were omitted for presentation purposes but did not affect the conclusions in the paper.\n\nFor determining overlap of DMRs with different genomic elements, we considered 1 bp overlap as an overlap. To assess significance, we generated 100 sets of \u2018randomized DMRs' which mimicked both the number and size distributions as the observed DMRs, and examined their overlaps with the different genomic elements.\n\n## mRNA/smRNA sequencing and analysis\n\nRNA-seq libraries were constructed from total RNA isolated using TRIzol reagent (Invitrogen, Life Technologies, Carlsbad, CA) from leaf tissues of samples 2\u223c10. Total RNA (10 \u03bcg) for each sample was used to purify poly-A mRNA; this mRNA was used for synthesis and amplification of cDNA. The RNA-seq libraries were prepared using the TruSeq RNA Sample Preparation Kit from Illumina (San Diego, CA). Libraries were sequenced on an Illumina HiSeq 2000. The read counts for these libraries are listed in Table 3.\n\nsmRNA-seq libraries were constructed from total RNA isolated from the same tissues as described for the mRNA libraries, using the TruSeq Small RNA Sample Prep Kit from Illumina (San Diego, CA). The libraries were sequenced on the same Illumina HiSeq 2000 as the mRNA-seq libraries. The read counts for these libraries are listed in Table 2.\n\nGene annotations (MSU 6.1) were obtained from the Rice Genome Annotation Project website (http://rice.plantbiology.msu.edu/). mRNA-seq reads were mapped and processed as previously described (Stroud et al., 2012). Briefly, reads were uniquely mapped to the genome using Bowtie (Langmead et al., 2009) allowing two mismatches, and differentially expressed genes were defined by applying fourfold and FDR < 0.01 cutoffs. smRNA-seq reads were uniquely mapped to the genome using Bowtie allowing no mismatches, and reads were categorized by their lengths for analyses. Reads per kilobase per million mapped reads (RPKM) was used to quantify RNA-seq datasets.\n\n## Accession numbers\n\nAll sequencing data have been deposited in the NCBI Gene Expression Omnibus with accession number GSE42410.\n",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     }
   ],
   "prompts": [
@@ -23,32 +23,32 @@
       "prompt_text": "claim extraction prompt",
       "prompt_type": "extract",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
       "id": "8e6aa149e11d7c3d",
       "prompt_text": "llm evaluation prompt",
       "prompt_type": "eval_llm",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     }
   ],
   "claims": [
     {
-      "id": "1d6ff7df-326a-4c5a-8ca6-f2e090359f71",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "ba357483-446e-4c0d-beee-72cb7818ada8",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C1",
       "claim": "Most transgenic crops are produced through tissue culture.",
       "claim_type": "EXPLICIT",
       "source_text": "Most transgenic crops are produced through tissue culture.",
       "evidence_type": "[\"KNOWLEDGE\"]",
-      "evidence_reasoning": "This is a statement about established agricultural biotechnology practices, presented as general knowledge in the abstract.",
+      "evidence_reasoning": "This statement reflects established knowledge about agricultural biotechnology practices.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "fbf43c2a-45d4-4c7d-8174-febe35552915",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "0e6603dd-94b9-48e7-8968-37d3410a5385",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C2",
       "claim": "All tested regenerated rice plants had significant losses of methylation compared to non-regenerated plants.",
       "claim_type": "EXPLICIT",
@@ -56,35 +56,35 @@
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This claim is directly supported by the BS-seq experimental data presented in the manuscript comparing regenerated and non-regenerated plants.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "a00ab99a-0aa1-461c-b426-22ac3c505e78",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "ce94372b-713d-4070-8354-57cf4aa1eeea",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C3",
-      "claim": "Loss of methylation in regenerated rice plants was largely stable across generations.",
+      "claim": "Loss of methylation was largely stable across generations.",
       "claim_type": "EXPLICIT",
       "source_text": "Loss of methylation was largely stable across generations",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by experimental data comparing methylation patterns across T2, T4, and T6 generations as shown in Figure 2.",
+      "evidence_reasoning": "This is supported by experimental data analyzing T2, T4, and T6 generations showing 84% of sites that lost CG methylation in T2 did not recover in T4 and T6.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "16db4b92-d8c7-4e13-9574-50e3ee12ddd2",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "87c26635-a192-4f6a-8611-68c4ba12a984",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C4",
-      "claim": "Certain sites in the rice genome were particularly susceptible to loss of methylation.",
+      "claim": "Certain sites in the genome were particularly susceptible to loss of methylation.",
       "claim_type": "EXPLICIT",
       "source_text": "certain sites in the genome were particularly susceptible to loss of methylation",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by the identification of specific DMRs (differentially methylated regions) that consistently lost methylation across samples.",
+      "evidence_reasoning": "This is supported by the identification of specific DMRs that were enriched at particular genomic locations, especially gene promoters.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "36ce477f-4770-4429-9aab-36ba508268c5",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "225bfb21-0477-4d46-bf5f-e31a2b62f03b",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C5",
       "claim": "Loss of methylation at promoters was associated with deregulated expression of protein-coding genes.",
       "claim_type": "EXPLICIT",
@@ -92,1759 +92,1111 @@
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data showing correlation between promoter hypomethylation and altered gene expression.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "4b436e95-5720-4116-ac63-0d80438c8149",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "001e895e-ae05-424a-8ea4-d30deea06e8f",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C6",
       "claim": "Loss of methylation is stochastically induced at the tissue culture step.",
       "claim_type": "EXPLICIT",
       "source_text": "Analyses of callus and untransformed plants regenerated from callus indicated that loss of methylation is stochastically induced at the tissue culture step.",
       "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from data showing different methylation patterns in individual plants regenerated from the same parent, with the tissue culture step identified as the causative process.",
+      "evidence_reasoning": "This is supported by data from callus and untransformed regenerated plants showing different methylation profiles in individual plants from the same parent, and inferred from the pattern of variation observed.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "ad49fc8b-794b-49a5-84f7-3a4929c86b5c",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "2677ab40-1f3d-49ac-b9c7-238669923e24",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C7",
       "claim": "Changes in methylation may explain a component of somaclonal variation.",
       "claim_type": "EXPLICIT",
       "source_text": "These changes in methylation may explain a component of somaclonal variation, a phenomenon in which plants derived from tissue culture manifest phenotypic variability.",
-      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
-      "evidence_reasoning": "This is a speculative inference connecting the observed methylation changes to the known phenomenon of somaclonal variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is inferred from the correlation between methylation changes and gene expression changes, and represents a speculative explanation for the observed phenomenon of somaclonal variation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "54cceb9e-516f-48ca-af2a-5f6fea4bf113",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "21af968d-8640-4160-a37d-ec861881c5f7",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C8",
       "claim": "Rice is one of the world's most important food crops.",
       "claim_type": "EXPLICIT",
       "source_text": "Rice is one of the world's most important food crops",
       "evidence_type": "[\"KNOWLEDGE\"]",
-      "evidence_reasoning": "This is a statement of general knowledge about the agricultural importance of rice.",
+      "evidence_reasoning": "This is established knowledge about the global importance of rice as a staple crop.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "57aeb440-b20f-4390-8cbc-190270f4169d",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "46215c5d-45e6-4d5a-bdfa-5a739c908e42",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "claim_id": "C9",
-      "claim": "Genetic modifications are extensively used in rice for various purposes such as to increase yield and tolerate harsh environments.",
-      "claim_type": "EXPLICIT",
-      "source_text": "genetic modifications are extensively used for various purposes such as to increase yield and tolerate harsh environments",
-      "evidence_type": "[\"KNOWLEDGE\"]",
-      "evidence_reasoning": "This is a statement about established agricultural practices in rice biotechnology.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "3edfa702-f4ee-420b-a2c9-4bedbe4ffad1",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C10",
       "claim": "Tissue culture has been heavily used for decades for transformation procedures to generate transgenic crops such as rice and maize.",
       "claim_type": "EXPLICIT",
       "source_text": "Tissue culture has been heavily used for decades for transformation procedures to generate transgenic crops such as rice and maize",
       "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "This is supported by citation to Rao et al., 2009 and represents established knowledge in plant biotechnology.",
+      "evidence_reasoning": "This is established knowledge in plant biotechnology, supported by the citation to Rao et al., 2009.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "5617022b-08ea-4158-aebe-3ac14012fa83",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C11",
+      "id": "0ae0dd35-b308-4958-ada9-9cd3fc8cdac8",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C10",
       "claim": "Arabidopsis cell suspension culture has a different epigenomic profile compared to wild-type plants, with certain transposable elements becoming hypomethylated and certain genes becoming hypermethylated.",
       "claim_type": "EXPLICIT",
       "source_text": "A previous study has reported that Arabidopsis cell suspension culture has a different epigenomic profile compared to wild-type plants, such that certain transposable elements (TEs) become hypomethylated and certain genes become hypermethylated",
       "evidence_type": "[\"CITATION\"]",
       "evidence_reasoning": "This claim is supported by citation to Tanurdzic et al., 2008.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "deaf76b3-fcbb-4317-b13d-8bf1557bc203",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C12",
+      "id": "09f48c2e-a900-483b-a99e-d0b996fb010d",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C11",
       "claim": "Changes in the epigenome have been proposed to be a source of somaclonal variation for decades.",
       "claim_type": "EXPLICIT",
       "source_text": "Changes in the epigenome have been proposed to be a source of somaclonal variation (i.e., phenotypic variation among regenerated plants) for decades",
       "evidence_type": "[\"CITATION\"]",
-      "evidence_reasoning": "This is supported by multiple citations including Kaeppler and Phillips, 1993; Kaeppler et al., 2000; and others.",
+      "evidence_reasoning": "This is supported by multiple citations including Kaeppler and Phillips, 1993; Kaeppler et al., 2000; Thorpe, 2006; Rhee et al., 2010; Miguel and Marum, 2011; Neelakandan and Wang, 2012.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "2fa7b261-faf3-4aea-8bba-c81da19f47c0",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C13",
-      "claim": "Some evidence suggesting changes in the epigenome of regenerated plants have been reported at several specific loci or by methods such as methylation sensitive restrictive enzyme digestion.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Indeed, some evidence suggesting changes in the epigenome of regenerated plants have been reported at several specific loci or by methods such as methylation sensitive restrictive enzyme digestion",
-      "evidence_type": "[\"CITATION\"]",
-      "evidence_reasoning": "This is supported by citation to Neelakandan and Wang, 2012.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "b78bc2ee-3bb4-44c5-94ce-e08926ebacea",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C14",
+      "id": "c631a471-19ea-400c-89f6-d4e8cbc4b123",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C12",
       "claim": "The extent of methylation changes on a genome-wide level has not been previously assessed in regenerated plants.",
       "claim_type": "EXPLICIT",
       "source_text": "However, the extent of methylation changes on a genome-wide level has not been previously assessed.",
       "evidence_type": "[\"KNOWLEDGE\"]",
-      "evidence_reasoning": "This is a statement about the state of the field prior to this study, based on literature review.",
+      "evidence_reasoning": "This represents a gap in existing knowledge that the authors identify based on their review of the literature.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "4780811a-47a9-451d-8120-6380095dffab",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C15",
+      "id": "473e25a8-d174-48ef-a575-b538edef6d41",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C13",
       "claim": "Arabidopsis is almost exclusively transformed via Agrobacterium-mediated floral dip methods that do not utilize tissue culture.",
       "claim_type": "EXPLICIT",
       "source_text": "Because, unlike most crops, Arabidopsis is almost exclusively transformed via Agrobacterium-mediated floral dip methods that do not utilize tissue culture",
       "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "This is supported by citation to Clough and Bent, 1998 and represents established knowledge in plant transformation methods.",
+      "evidence_reasoning": "This is established knowledge in plant transformation methodology, supported by citation to Clough and Bent, 1998.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "3de42412-634b-4f04-96cf-325dc6bc9351",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C16",
+      "id": "0a79f685-a448-46a8-b88a-db1d72535d52",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C14",
       "claim": "Arabidopsis is not a good model for the study of the effect of plant regeneration on the epigenome.",
       "claim_type": "EXPLICIT",
       "source_text": "Arabidopsis is not a good model for the study of the effect of plant regeneration on the epigenome",
       "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the fact that Arabidopsis transformation does not typically involve tissue culture regeneration.",
+      "evidence_reasoning": "This is inferred from the fact that Arabidopsis transformation does not typically involve tissue culture, which is the process being studied.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "e5120800-3f01-4812-a1e3-46344ec97518",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C17",
-      "claim": "The study of the model plant rice may have practical implications for other crop species that are transformed using similar tissue culture methods.",
-      "claim_type": "EXPLICIT",
-      "source_text": "The study of the model plant rice, however, may have practical implications for other crop species that are transformed using similar tissue culture methods.",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is an inference about the broader applicability of findings from rice to other crops.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "66724ea1-03d8-427b-bc17-63994715672e",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C18",
+      "id": "984f5765-0b75-4032-a1d1-fe8a6f6c6db6",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C15",
       "claim": "The rice genome is DNA methylated in all three cytosine contexts (CG, CHG, CHH).",
       "claim_type": "EXPLICIT",
       "source_text": "The rice genome is DNA methylated in all three cytosine contexts (CG, CHG, CHH, where H=A, T, or C)",
-      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
-      "evidence_reasoning": "This is supported by citations to Feng et al., 2010 and Zemach et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "evidence_reasoning": "This is supported by citations to Feng et al., 2010; Zemach et al., 2010.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "bae1695e-7c18-48d9-8fbe-a2762122b348",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C19",
+      "id": "089f6d8e-a195-44d7-a3d1-3248b02d7f07",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C16",
       "claim": "Rice has high levels of CG and CHG methylation and very low levels of CHH methylation.",
       "claim_type": "EXPLICIT",
       "source_text": "with high levels of CG and CHG methylation and very low levels of CHH methylation",
       "evidence_type": "[\"CITATION\"]",
-      "evidence_reasoning": "This is supported by citations to Feng et al., 2010 and Zemach et al., 2010.",
+      "evidence_reasoning": "This is supported by citations to Feng et al., 2010; Zemach et al., 2010.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "e8447293-f971-45ec-b578-9d86a8dd877c",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C20",
-      "claim": "Whole genome bisulfite sequencing (BS-seq) enables measurement of DNA methylation at single nucleotide resolution.",
+      "id": "7dfd59bc-15c6-4f8a-b050-dc6c35584b51",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C17",
+      "claim": "Whole genome bisulfite sequencing enables measurement of DNA methylation at single nucleotide resolution.",
       "claim_type": "EXPLICIT",
       "source_text": "Whole genome bisulfite sequencing (BS-seq) enables measurement of DNA methylation at single nucleotide resolution",
       "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "This is supported by citations to Cokus et al., 2008 and Lister et al., 2008, describing an established method.",
+      "evidence_reasoning": "This is established knowledge about the BS-seq technique, supported by citations to Cokus et al., 2008; Lister et al., 2008.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "bf79610f-a873-4feb-80b1-f90357cfd7d0",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C21",
+      "id": "6692a773-f43a-4fa7-bca5-219aa001a5ff",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C18",
       "claim": "BS-seq allows one to distinguish DNA methylation in different cytosine contexts.",
       "claim_type": "EXPLICIT",
       "source_text": "thus allows one to distinguish DNA methylation in different cytosine contexts",
       "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "This is a technical capability of the BS-seq method, supported by the cited references.",
+      "evidence_reasoning": "This is a known capability of BS-seq methodology, supported by citations to Cokus et al., 2008; Lister et al., 2008.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "7a7791af-a43c-4ed2-bbe0-7bd623c41365",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C22",
+      "id": "6a8efbff-c92a-4ab5-a91c-e83aec2997fe",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C19",
       "claim": "The tissue culture procedure induced stable changes in DNA methylation in regenerated plants.",
       "claim_type": "EXPLICIT",
       "source_text": "We observed that the tissue culture procedure induced stable changes in DNA methylation in regenerated plants",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data comparing regenerated plants across generations.",
+      "evidence_reasoning": "This is supported by BS-seq data from multiple regenerated lines and across generations.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "1a5d43c4-20bc-47ec-b887-836437fd2805",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C23",
-      "claim": "All regenerated rice lines had ectopic losses of DNA methylation.",
+      "id": "dea6baed-f88e-41d7-ad56-83df82811dfc",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C20",
+      "claim": "All regenerated lines had ectopic losses of DNA methylation.",
       "claim_type": "EXPLICIT",
       "source_text": "such that all regenerated lines had ectopic losses of DNA methylation",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is directly supported by the BS-seq data from all nine regenerated lines tested.",
+      "evidence_reasoning": "This is directly supported by the BS-seq data showing hypomethylation DMRs in all tested regenerated lines.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "866c23ca-0be2-47fc-996f-8206bb7c3ad4",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C24",
+      "id": "8edf550f-1b00-4f63-a82e-7b2c8ba3f638",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C21",
       "claim": "Loss of DNA methylation occurred stochastically, affecting individual plants somewhat differently.",
       "claim_type": "EXPLICIT",
       "source_text": "We found that loss of DNA methylation occurred stochastically, affecting individual plants somewhat differently",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by data showing different DMR patterns in individual regenerated plants from the same parent.",
+      "evidence_reasoning": "This is supported by data showing different DMR patterns in individual plants regenerated from the same parent.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "e8233e0d-196f-475c-9d4a-76fd5be378b9",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C25",
+      "id": "0e4741ae-b1aa-4fd6-bd15-e5bce06752f3",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C22",
       "claim": "Loss of DNA methylation was associated with loss of small RNAs.",
       "claim_type": "EXPLICIT",
       "source_text": "was associated with loss of small RNAs",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by smRNA-seq data showing reduced small RNA levels at hypomethylated regions.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "ec4baf4f-5e0b-4538-9bb2-69974e6b8fe8",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C26",
-      "claim": "Changes in DNA methylation were enriched at promoters of genes.",
+      "id": "508e4ec5-11c3-4738-bc16-f1782f3f9d20",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C23",
+      "claim": "Changes in methylation were enriched at promoters of genes.",
       "claim_type": "EXPLICIT",
       "source_text": "changes were enriched at promoters of genes",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by statistical analysis showing significant enrichment of DMRs at gene promoters compared to random regions.",
+      "evidence_reasoning": "This is supported by statistical analysis showing significant enrichment of DMRs at gene promoters compared to randomized regions.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "ff640b0a-584e-48b1-8332-81db7cf41fa1",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C27",
+      "id": "1e48c121-aa11-487e-b0f1-03f0addfcfa6",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C24",
       "claim": "Loss of DNA methylation at promoters was associated with altered expression of particular genes.",
       "claim_type": "EXPLICIT",
       "source_text": "Loss of DNA methylation at promoters was associated with altered expression of particular genes.",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data showing correlation between promoter hypomethylation and gene expression changes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "a1f4c986-7faa-402c-8bdd-1cc9d8564fb9",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C28",
-      "claim": "The researchers performed deep BS-seq to map DNA methylation in nine regenerated rice lines in the Nipponbare ecotype background.",
-      "claim_type": "EXPLICIT",
-      "source_text": "We performed deep BS-seq to map DNA methylation in nine regenerated rice lines in the Nipponbare ecotype background that were transformed by various transgenes and were at various stages of inbreeding after transformation",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the experimental approach and samples used in the study.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "8320d2f4-afd9-4c29-8818-44573b40bc5b",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C29",
-      "claim": "The regenerated lines included rice blast resistance lines PiZ-t, PiZ-t-839, Pi9, and an RNAi line for flowering time regulator Spin1.",
-      "claim_type": "EXPLICIT",
-      "source_text": "rice blast resistance lines PiZ-t, PiZ-t-839 (a non-functional PiZ-t), Pi9, and an RNAi line for flowering time regulator Spin1",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the specific transgenic lines used in the study.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "f2126802-b7b9-42bc-b772-988b09536d78",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C30",
-      "claim": "The researchers obtained an average genome coverage of 15\u00d7 for BS-seq.",
+      "id": "42f9e14d-6b33-45c8-a3f6-7496bcde4cdc",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C25",
+      "claim": "An average genome coverage of 15\u00d7 was obtained for BS-seq samples.",
       "claim_type": "EXPLICIT",
       "source_text": "We obtained an average genome coverage of 15\u00d7",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is a technical metric of the sequencing data quality.",
+      "evidence_reasoning": "This is a direct measurement from the sequencing data as reported in Table 1.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "27e92ef3-07b8-41fa-a136-fe42bca0419e",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C31",
-      "claim": "BS-seq error rates were low at 1.5%, 1.2%, 0.8%, for CG, CHG, CHH methylation, respectively.",
+      "id": "c209513e-a939-4a2d-b092-40841ac69a7e",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C26",
+      "claim": "Error rates for BS-seq were low at 1.5%, 1.2%, 0.8%, for CG, CHG, CHH methylation, respectively.",
       "claim_type": "EXPLICIT",
-      "source_text": "error rates were low at 1.5%, 1.2%, 0.8%, for CG, CHG, CHH methylation, respectively, indicating high quality data",
+      "source_text": "error rates were low at 1.5%, 1.2%, 0.8%, for CG, CHG, CHH methylation, respectively",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is a technical metric of the sequencing data quality calculated from chloroplast genome methylation levels.",
+      "evidence_reasoning": "These error rates were calculated from the chloroplast genome methylation levels in the BS-seq data.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "8d572e97-9bbf-4db0-853b-9530b704e954",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C32",
-      "claim": "Strong losses of DNA methylation were observed at certain sites in the genome in the regenerated plants but not in wild-type plants.",
-      "claim_type": "EXPLICIT",
-      "source_text": "We observed strong losses of DNA methylation at certain sites in the genome in the regenerated plants but not in wild-type plants",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by genome browser views and DMR analysis comparing regenerated and wild-type plants.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "5d4ef303-863a-45be-8645-8d8ba8093aad",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C33",
+      "id": "1e48fd4a-9caa-410f-9702-92c9bf8557ed",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C27",
       "claim": "84% of sites that lost CG methylation in the T2 generation did not recover methylation in the T4 and T6 generations.",
       "claim_type": "EXPLICIT",
       "source_text": "84% of sites that lost CG methylation in the T2 did not recover methylation in the T4 and T6 generations",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is a quantitative result from analyzing methylation patterns across three generations of the same line.",
+      "evidence_reasoning": "This is a quantitative result from analyzing methylation status across generations in samples 4, 6, and 8.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "f5dc7a92-c7e8-410f-8fcd-3815ec93c061",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C34",
-      "claim": "Loss of DNA methylation in regenerated plants also occurred in non-CG contexts.",
+      "id": "49d3dd48-c3a6-48df-b98b-53663d3fc425",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C28",
+      "claim": "Loss of DNA methylation in regenerated plants occurred in non-CG contexts.",
       "claim_type": "EXPLICIT",
       "source_text": "Loss of DNA methylation in regenerated plants also occurred in non-CG contexts",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data showing hypomethylation in CHG and CHH contexts.",
+      "evidence_reasoning": "This is supported by identification of CHG and CHH hypomethylation DMRs in the BS-seq data.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "6b9f98c7-7692-4e8d-9330-450da7c9491a",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C35",
-      "claim": "The most significant enrichments of DMRs were found at the promoters of genes.",
+      "id": "47d84267-f9a6-41bf-9af9-afc61ae27eca",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C29",
+      "claim": "The most significant enrichments of DMRs were at the promoters of genes.",
       "claim_type": "EXPLICIT",
       "source_text": "we found the most significant enrichments of DMRs at the promoters of genes",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by statistical analysis comparing observed DMR overlap with genomic features versus randomized regions.",
+      "evidence_reasoning": "This is supported by statistical analysis comparing observed DMR overlap with gene promoters versus randomized regions.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "7e8bbc9b-d3cc-44c1-b014-672a3bc330e0",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C36",
+      "id": "a4a896ec-c351-4323-bd5f-51322f7ff66b",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C30",
       "claim": "Loss of DNA methylation at promoters was associated with higher expression levels of certain genes.",
       "claim_type": "EXPLICIT",
       "source_text": "We found that loss of DNA methylation at promoters was associated with higher expression levels of certain genes",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data analysis.",
+      "evidence_reasoning": "This is supported by mRNA-seq data showing increased expression of genes with promoter hypomethylation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "badac0b8-ad0b-471c-a634-5e6f1b002600",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C37",
+      "id": "5c47ce28-6183-4ea4-932c-528998f9481f",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C31",
       "claim": "The closer the hypomethylation was to the gene transcription start site, the more likely the gene tended to be misregulated.",
       "claim_type": "EXPLICIT",
       "source_text": "Notably, the closer the hypomethylation was to the gene transcription start site, the more likely the gene tended to be misregulated",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by analysis of DMR distance from TSS and correlation with gene expression changes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "a368d1a2-ee43-415d-bd37-89d74459fea2",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C38",
-      "claim": "The expression of genes near hypomethylated promoters was much more frequently increased, rather than decreased.",
+      "id": "9ab5e4ec-6ebe-4753-ac79-c833457e4b25",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C32",
+      "claim": "The expression of genes with promoter hypomethylation was much more frequently increased, rather than decreased.",
       "claim_type": "EXPLICIT",
       "source_text": "Furthermore, the expression of these genes was much more frequently increased, rather than decreased",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by mRNA-seq data showing directional bias in expression changes.",
+      "evidence_reasoning": "This is supported by mRNA-seq data showing directional bias toward upregulation in genes with promoter hypomethylation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "143c797e-5e38-43e5-a7bd-b85056d99ca4",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C39",
-      "claim": "The misexpression of genes near hypomethylated promoters is likely a direct consequence of losses of DNA methylation.",
+      "id": "c3f3e2e7-7c19-4774-8ead-fa3f6537061e",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C33",
+      "claim": "The misexpression of genes with promoter hypomethylation is likely a direct consequence of losses of DNA methylation.",
       "claim_type": "EXPLICIT",
       "source_text": "suggesting that the misexpression of these genes is likely a direct consequence of losses of DNA methylation",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the correlation between hypomethylation and increased gene expression, though causality is not directly proven.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the correlation between hypomethylation and increased expression, and the directional bias of the effect.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "c3da326b-6595-4d8c-8543-10ddbdbd16ab",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C40",
+      "id": "a2da2ead-6c34-406a-b93b-0dca27a1b47a",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C34",
       "claim": "Loss of DNA methylation in regenerated plants is associated with deregulated transcription of certain protein-coding genes.",
       "claim_type": "EXPLICIT",
       "source_text": "Hence loss of DNA methylation in regenerated plants is associated with deregulated transcription of certain protein-coding genes.",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data showing correlation between methylation loss and expression changes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "e552b8e7-d414-47ae-9d27-961d87042c03",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C41",
-      "claim": "Callus and three individual plants regenerated from untransformed callus were all derived from a single parent plant (WT2011).",
-      "claim_type": "EXPLICIT",
-      "source_text": "we performed BS-seq on callus and three individual plants regenerated from untransformed callus, all of which were derived from a single parent plant (WT2011",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the experimental design for testing the effect of tissue culture versus transformation.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "69f78a9e-1ae6-4bb8-a66d-a3b21f680b0c",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C42",
+      "id": "1e2affc0-ffc9-4095-8c0b-1ba7da4be9e1",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C35",
       "claim": "Each regenerated plant has distinct DNA methylation profiles despite coming from the same parent.",
       "claim_type": "EXPLICIT",
       "source_text": "Our results suggest that each regenerated plant has distinct DNA methylation profiles despite coming from the same parent",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data showing different DMR patterns in individual plants regenerated from the same parent.",
+      "evidence_reasoning": "This is supported by BS-seq data from three individual plants regenerated from the same parent showing different DMR patterns.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "d52db61b-f312-4aa4-826d-fff14d608cac",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C43",
-      "claim": "The tissue culture step induces DNA hypomethylation in a rather stochastic manner affecting individual plants differently.",
+      "id": "5a7fb26e-ce1a-4886-97ed-4cae37b8b982",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C36",
+      "claim": "The tissue culture step induces DNA hypomethylation in a stochastic manner affecting individual plants differently.",
       "claim_type": "EXPLICIT",
       "source_text": "It therefore appears that the tissue culture step induces DNA hypomethylation in a rather stochastic manner affecting individual plants differently.",
       "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from data showing variable hypomethylation patterns in plants from the same parent, with tissue culture identified as the causative step.",
+      "evidence_reasoning": "This is inferred from the observation that individual plants from the same parent have different methylation profiles after tissue culture.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "ea89e089-de95-4f53-b8dd-e9ff12dcbf2c",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C44",
+      "id": "9392723f-790a-4b04-8285-cb4d5a376d05",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C37",
       "claim": "Descendants of regenerated plants stably maintain most hypomethylation across plant generations.",
       "claim_type": "EXPLICIT",
       "source_text": "We further show that descendants of regenerated plants stably maintain most hypomethylation across plant generations",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data comparing methylation patterns across T2, T4, and T6 generations.",
+      "evidence_reasoning": "This is supported by data showing 84% of hypomethylation sites remain unmethylated across T2, T4, and T6 generations.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "2da6f13a-d1d1-49e2-9fba-96f59a0ade8a",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C45",
+      "id": "11f1d03e-0063-4d62-8dac-764cfc4f04ef",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C38",
       "claim": "Lines derived from the same original regenerated plant show very similar methylation profiles.",
       "claim_type": "EXPLICIT",
       "source_text": "Indeed, lines derived from the same original regenerated plant show very similar methylation profiles",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by hierarchical clustering analysis showing samples from the same line cluster together.",
+      "evidence_reasoning": "This is supported by hierarchical clustering and overlap analysis of DMRs showing high similarity between samples 4-8 and 11-12.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "70c1f737-50a6-4dad-be9a-81945b815c05",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C46",
+      "id": "4ee2487d-1645-4c83-8a33-8ef422de228c",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C39",
       "claim": "Stochastic hypomethylation in individual regenerants is associated with misregulated expression of certain genes.",
       "claim_type": "EXPLICIT",
       "source_text": "Our genome-wide data support this notion since we show that stochastic hypomethylation in individual regenerants is associated with misregulated expression of certain genes.",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data showing correlation between hypomethylation and gene expression changes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "8c01cb07-ea9c-473b-b561-01aae5e666af",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C47",
-      "claim": "Epigenetic changes likely explain a component of somaclonal variation that has been observed for decades in a number of plant species.",
+      "id": "a07edb10-c6f4-432e-a80a-256a76670374",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C40",
+      "claim": "Epigenetic changes likely explain a component of somaclonal variation.",
       "claim_type": "EXPLICIT",
       "source_text": "These epigenetic changes likely explain a component of somaclonal variation that has been observed for decades in a number of plant species.",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is an inference connecting the observed epigenetic changes to the known phenomenon of somaclonal variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "This is inferred from the correlation between stochastic methylation changes and gene expression changes, combined with knowledge of somaclonal variation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "ef32381e-801a-49a1-b54d-4c2e9e94328c",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C48",
+      "id": "233ac8c5-b000-4e64-b6f7-204c9bde5528",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C41",
       "claim": "Use of tissue culture leaves behind an epigenetic footprint in regenerated plants that is stable over multiple generations.",
       "claim_type": "EXPLICIT",
       "source_text": "In summary, our results suggest that use of tissue culture leaves behind an epigenetic footprint in regenerated plants that is stable over multiple generations",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data showing persistent methylation changes across generations.",
+      "evidence_reasoning": "This is supported by BS-seq data showing persistent hypomethylation across T2, T4, and T6 generations.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "007c28ff-f2ce-480c-95c1-8a4345048ede",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C49",
+      "id": "cc206849-961b-4b33-8341-f76846a5689b",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C42",
       "claim": "The epigenetic footprint from tissue culture may partially explain somaclonal variation.",
       "claim_type": "EXPLICIT",
-      "source_text": "and may partially explain somaclonal variation",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is an inference connecting the observed stable epigenetic changes to somaclonal variation.",
+      "source_text": "may partially explain somaclonal variation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is inferred from the correlation between methylation changes and gene expression changes, representing a speculative explanation for somaclonal variation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "93490654-53f4-4299-a8cf-5081af120e49",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C50",
-      "claim": "A common practice in the development of agricultural biotechnology traits is to introgress new transgene loci into commercial genetic backgrounds.",
+      "id": "dd3a94ce-5103-40da-8ea1-85193368791f",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C43",
+      "claim": "A common practice in agricultural biotechnology is to introgress new transgene loci into commercial genetic backgrounds.",
       "claim_type": "EXPLICIT",
       "source_text": "a common practice in the development of agricultural biotechnology traits is to introgress new transgene loci into commercial genetic backgrounds",
       "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "This is supported by citations to Bregitzer et al., 2008; Bennetzen and Hake, 2009; Johnson, 2009; Yang et al., 2012.",
+      "evidence_reasoning": "This is established knowledge in agricultural biotechnology, supported by citations to Bregitzer et al., 2008; Bennetzen and Hake, 2009; Johnson, 2009; Yang et al., 2012.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "55ba91fa-9a8d-48a6-8d59-0d669eee41e8",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C51",
+      "id": "e12450de-7a4e-4357-a4fc-f2092b46350a",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C44",
       "claim": "Plants used in agriculture are many generations removed from the initial regenerated plants.",
       "claim_type": "EXPLICIT",
       "source_text": "meaning that the plants used in agriculture are many generations removed from the initial regenerated plants",
       "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "This is supported by the cited references describing agricultural biotechnology practices.",
+      "evidence_reasoning": "This is established knowledge about agricultural breeding practices, supported by citations to Bregitzer et al., 2008; Bennetzen and Hake, 2009; Johnson, 2009; Yang et al., 2012.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "887ef90b-3b99-4435-b311-5917ad0dea61",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C52",
+      "id": "63c0e501-becd-4177-a049-0bf2d25852b7",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C45",
       "claim": "The crosses utilized in introgression schemes are likely to correct the vast majority of tissue culture-induced epigenetic changes.",
       "claim_type": "EXPLICIT",
       "source_text": "The crosses utilized in these introgression schemes are likely to correct the vast majority of tissue culture-induced epigenetic changes.",
       "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
-      "evidence_reasoning": "This is a speculative inference about the effect of breeding practices on epigenetic changes, not directly tested in the study.",
+      "evidence_reasoning": "This is a speculative inference based on the understanding that crossing and multiple generations of breeding would dilute or correct epigenetic changes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "ccd43cfc-719c-44db-b61a-820c115a94ac",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C53",
+      "id": "21309f4e-7c76-4bd6-b3b2-5a6282a3b609",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C46",
       "claim": "Certain genes are hypermethylated in Arabidopsis cell suspension culture and callus.",
       "claim_type": "EXPLICIT",
       "source_text": "Previous reports have indicated that certain genes are hypermethylated in Arabidopsis cell suspension culture and callus",
       "evidence_type": "[\"CITATION\"]",
-      "evidence_reasoning": "This is supported by citations to previous studies on Arabidopsis.",
+      "evidence_reasoning": "This is supported by citations to previous studies on Arabidopsis cell culture.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "edf7ad55-01ca-4ad9-93a6-1cfc85b4ee34",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C54",
-      "claim": "Hypermethylation predominantly occurs in CHH sequence contexts in rice callus.",
+      "id": "58a3fcb2-176f-476f-b8c2-f6809c49bb27",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C47",
+      "claim": "Hypermethylation in rice callus predominantly occurs in CHH sequence contexts.",
       "claim_type": "EXPLICIT",
       "source_text": "We extend this observation by showing that hypermethylation predominantly occurs in CHH sequence contexts",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data from rice callus samples showing CHH hypermethylation.",
+      "evidence_reasoning": "This is supported by BS-seq data from callus samples showing CHH hypermethylation DMRs.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "36ba41e6-dd0d-4617-85aa-f01639b8d9b2",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C55",
-      "claim": "CHH hypermethylation in rice callus most notably occurs at the promoters of genes.",
+      "id": "cc13f7c5-fac8-4e50-b634-31f5eddfc1fc",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C48",
+      "claim": "CHH hypermethylation in callus occurs most notably at the promoters of genes.",
       "claim_type": "EXPLICIT",
       "source_text": "most notably occurring at the promoters of genes",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by analysis of CHH hypermethylation DMRs showing enrichment at gene promoters.",
+      "evidence_reasoning": "This is supported by analysis showing enrichment of CHH hypermethylation DMRs at gene promoters in callus samples.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "e5516989-3bcb-49f0-8d0b-6a131d18af4c",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C56",
+      "id": "c3f1a16f-17d6-43fb-b1dc-eba7dff8c49c",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C49",
       "claim": "CHH hypermethylation was completely eliminated upon regeneration.",
       "claim_type": "EXPLICIT",
       "source_text": "we found that this CHH hypermethylation was completely eliminated upon regeneration",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data comparing callus and regenerated plants.",
+      "evidence_reasoning": "This is supported by BS-seq data comparing callus and regenerated plants showing loss of CHH hypermethylation after regeneration.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "36a7d34c-c976-4be5-8776-e0a473299b52",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C57",
+      "id": "6c98752a-18c7-4147-8717-614606ad2725",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C50",
       "claim": "CHH hypermethylation may be linked specifically to the dedifferentiated state.",
       "claim_type": "EXPLICIT",
       "source_text": "suggesting that CHH hypermethylation may be linked specifically to the dedifferentiated state",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the observation that CHH hypermethylation is present in callus but absent in regenerated plants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is inferred from the observation that CHH hypermethylation is present in callus but eliminated upon regeneration, representing a speculative interpretation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "07f93b21-6208-465f-b6bc-b865196ba372",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C58",
+      "id": "0d1b333a-3371-4423-8d88-22200a2a5145",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C51",
       "claim": "Global hypomethylation at TEs was not observed in rice callus.",
       "claim_type": "EXPLICIT",
       "source_text": "In contrast to Arabidopsis cell culture, we did not observe global hypomethylation at TEs in rice callus.",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data from rice callus showing no global TE hypomethylation, contrasting with Arabidopsis.",
+      "evidence_reasoning": "This is supported by BS-seq data from rice callus samples showing no widespread TE hypomethylation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "513d8ee8-70b9-4667-b53d-97d0817d6320",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C59",
+      "id": "9454fc39-fd03-493b-862d-7ff385b22cbd",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C52",
       "claim": "DNA methylation was specifically lost at certain sites in the genome in rice callus.",
       "claim_type": "EXPLICIT",
       "source_text": "Instead, we found that DNA methylation was specifically lost at certain sites in the genome",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data identifying specific DMRs in callus samples.",
+      "evidence_reasoning": "This is supported by identification of specific hypomethylation DMRs in callus BS-seq data.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "8f44ff75-158b-4faa-9e43-8f1bb04053fd",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C60",
+      "id": "872aa007-18c5-4721-959f-affc9b9e7c47",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C53",
       "claim": "Loss of DNA methylation was maintained upon plant regeneration.",
       "claim_type": "EXPLICIT",
       "source_text": "We found that loss of DNA methylation was maintained upon plant regeneration",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data comparing callus and regenerated plants.",
+      "evidence_reasoning": "This is supported by BS-seq data comparing callus and regenerated plants showing persistence of hypomethylation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "4c60d6c4-354b-41f7-9db9-92ca5ff87d24",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C61",
+      "id": "bb2cdd7f-398a-40c8-97bc-21c58b30933f",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C54",
       "claim": "Loss of DNA methylation occurred in all sequence contexts.",
       "claim_type": "EXPLICIT",
       "source_text": "Loss of DNA methylation occurred in all sequence contexts",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by BS-seq data showing hypomethylation in CG, CHG, and CHH contexts.",
+      "evidence_reasoning": "This is supported by identification of CG, CHG, and CHH hypomethylation DMRs in the BS-seq data.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "13779b87-3cac-4d52-9fb7-68d078fc30b2",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C62",
+      "id": "4efbab8c-e1dd-459c-9f9e-0a434cfdcf54",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C55",
       "claim": "Loss of DNA methylation was associated with loss of 24-nt siRNAs.",
       "claim_type": "EXPLICIT",
       "source_text": "and was associated with loss of 24-nt siRNAs",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by smRNA-seq data showing reduced 24-nt siRNA levels at hypomethylated regions.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "75c84151-f344-4b66-a85d-4ba80d0f5976",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C63",
-      "claim": "Sites of DNA methylation loss were frequently associated with promoters of genes.",
+      "id": "cc3d974e-60f7-4b59-b099-42c30ced3846",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C56",
+      "claim": "Hypomethylation sites were frequently associated with promoters of genes.",
       "claim_type": "EXPLICIT",
       "source_text": "Notably, these sites were frequently associated with promoters of genes",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by statistical analysis showing enrichment of DMRs at gene promoters.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "a2c69734-4857-4e32-b0a5-0a95172817aa",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C64",
+      "id": "cfcf1789-e2d5-4b07-b84b-1bb6572f6e21",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C57",
       "claim": "Loss of DNA methylation was associated with misregulation of expression of proximal protein-coding genes.",
       "claim_type": "EXPLICIT",
       "source_text": "and loss of DNA methylation was associated with misregulation of expression of proximal protein-coding genes",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data.",
+      "evidence_reasoning": "This is supported by combined BS-seq and mRNA-seq data showing correlation between hypomethylation and expression changes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "9dc7b996-910b-40d9-865f-27bd1b461b9a",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C65",
-      "claim": "The phenomenon of DNA methylation loss and gene misregulation has biological importance.",
-      "claim_type": "EXPLICIT",
-      "source_text": "indicating a biological importance of this phenomenon",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the association between methylation loss and gene expression changes.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "326c9e31-2d80-4329-9a66-c01951b064e6",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C66",
+      "id": "26167165-b327-43aa-a225-d38fbf9eb1cc",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C58",
       "claim": "Genes significantly up-regulated in each regenerated line were somewhat different.",
       "claim_type": "EXPLICIT",
       "source_text": "Interestingly, genes significantly up-regulated (fourfold upregulated compared to wild type, p<0.01) in each regenerated line were somewhat different",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by mRNA-seq data showing different sets of upregulated genes across lines.",
+      "evidence_reasoning": "This is supported by mRNA-seq data showing different sets of upregulated genes across different regenerated lines.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "56e0f205-d518-440d-b19d-f6610ef14d1f",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C67",
+      "id": "0f39d2d1-8958-4f5b-ab7b-1b8579c94578",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C59",
       "claim": "It is difficult to assess the severity of impact of misregulated gene expression for any particular regenerated line.",
       "claim_type": "EXPLICIT",
       "source_text": "For this reason, it is difficult to assess the severity of impact of misregulated gene expression for any particular regenerated line",
       "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the variability in which genes are affected across different lines.",
+      "evidence_reasoning": "This is inferred from the observation that different genes are affected in different lines, making it hard to predict biological impact.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "b0f296b8-4c2a-4f6a-99f6-18a74e7c5586",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C68",
+      "id": "d873960b-3f4d-4acd-856f-a357fe5384bb",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C60",
       "claim": "Some regenerated lines may have more biologically important genes affected than others.",
       "claim_type": "EXPLICIT",
       "source_text": "since some lines may have more biologically important genes affected than others",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the observation that different genes are affected in different lines.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative inference based on the variable nature of which genes are affected in different lines.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "dcb1c1d2-776c-4e52-b058-f45b99a91a9f",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C69",
-      "claim": "Somaclonal variation affects only a proportion of plants that arise from regeneration experiments.",
+      "id": "5abac0c4-1a4c-4e3e-a077-aa9e432fb091",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C61",
+      "claim": "Somoclonal variation affects only a proportion of plants that arise from regeneration experiments.",
       "claim_type": "EXPLICIT",
       "source_text": "This would correlate with the observation that somoclonal variation affects only a proportion of plants that arise from regeneration experiments",
-      "evidence_type": "[\"CITATION\"]",
-      "evidence_reasoning": "This is supported by multiple citations describing somaclonal variation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "evidence_reasoning": "This is established knowledge about somaclonal variation, supported by citations to Kaeppler and Phillips, 1993; Kaeppler et al., 2000; Thorpe, 2006; Rhee et al., 2010; Miguel and Marum, 2011; Neelakandan and Wang, 2012.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "e9b7c511-ec74-46ff-b071-795876419fa7",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C70",
-      "claim": "Certain TEs such as Tos17 and mPing are reactivated in tissue culture.",
+      "id": "ae0c76d3-1981-411e-a9c5-6898ca693e7c",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C62",
+      "claim": "Certain TEs such as Tos17 and mPing are reactivated in tissue culture and are associated with changes in DNA methylation.",
       "claim_type": "EXPLICIT",
-      "source_text": "Previous studies have shown that certain TEs such as Tos17 and mPing are reactivated in tissue culture",
+      "source_text": "Previous studies have shown that certain TEs such as Tos17 and mPing are reactivated in tissue culture, and are associated with changes in DNA methylation",
       "evidence_type": "[\"CITATION\"]",
       "evidence_reasoning": "This is supported by citation to Neelakandan and Wang, 2012.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "44085eaf-d8e9-456d-ba9a-4892e9ec0cab",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C71",
-      "claim": "TE reactivation is associated with changes in DNA methylation.",
-      "claim_type": "EXPLICIT",
-      "source_text": "and are associated with changes in DNA methylation",
-      "evidence_type": "[\"CITATION\"]",
-      "evidence_reasoning": "This is supported by citation to Neelakandan and Wang, 2012.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "20b09f0c-7ebc-4cea-bf7b-b8ff520ee75e",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C72",
+      "id": "c2cd1a81-358c-4e2c-bd76-e06c7898e454",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C63",
       "claim": "Most DNA hypomethylation occurs near genes and is relatively depleted at TE related sequences.",
       "claim_type": "EXPLICIT",
       "source_text": "While our results suggest that most DNA hypomethylation occurs near genes and are relatively depleted at TE related sequences",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by analysis of DMR overlap with genomic features.",
+      "evidence_reasoning": "This is supported by analysis showing enrichment of DMRs at gene promoters and relative depletion at TEs.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "65f476b6-37cd-4384-951c-0d13cfc77e09",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C73",
-      "claim": "Some hypomethylation occurred proximal to TE genes (average of 62.1 TE genes per line).",
+      "id": "fd3e74c3-4333-4228-8279-8f7970e65add",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C64",
+      "claim": "Some hypomethylation occurred proximal to TE genes.",
       "claim_type": "EXPLICIT",
       "source_text": "some of the hypomethylation did occur proximal to TE genes (average of 62.1 TE genes per line)",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is a quantitative result from analyzing DMR overlap with TE genes.",
+      "evidence_reasoning": "This is a quantitative result from analyzing overlap of DMRs with TE genes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "eee66f64-aba3-4d21-a734-ff8cc0b56fd7",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C74",
+      "id": "5e54502d-f050-4a7a-9922-317319bfff47",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C65",
       "claim": "The association of loss of methylation with TE gene reactivation was not clear.",
       "claim_type": "EXPLICIT",
       "source_text": "The association of loss of methylation with TE gene reactivation was not clear (data not shown)",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This indicates that the expected correlation was not observed in the data.",
+      "evidence_reasoning": "This is based on analysis of the data that did not show a clear correlation.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "2da0113c-2918-470b-910b-3ade86cf5a60",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C75",
+      "id": "eca6ab03-07db-4c47-b800-c7bf9bdd152e",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C66",
       "claim": "Very subtle depletion of DNA methylation was observed over reactivated TE genes.",
       "claim_type": "EXPLICIT",
       "source_text": "however very subtle depletion of DNA methylation was observed over reactivated TE genes",
       "evidence_type": "[\"DATA\"]",
       "evidence_reasoning": "This is supported by analysis of methylation levels over reactivated TE genes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "f1dc5551-ed48-4c90-925b-199c2957a910",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C76",
+      "id": "89b47c15-f52c-4068-b5b7-d73262a0f3d3",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
+      "claim_id": "C67",
       "claim": "Loss of methylation may in part be responsible for reactivation of TEs.",
       "claim_type": "EXPLICIT",
       "source_text": "suggesting that loss of methylation may in part be responsible for reactivation of TEs",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the subtle methylation depletion observed at reactivated TE genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "evidence_reasoning": "This is a speculative inference based on the subtle depletion of methylation observed at reactivated TE genes.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "f88d407c-411b-41f9-94a3-613366ea6f1d",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C77",
-      "claim": "Consistent with a previous study in Arabidopsis cell culture using microarray hybridization on chromosome 4, hypermethylation was observed at certain genes in rice callus.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Consistent with a previous study in Arabidopsis cell culture using microarray hybridization on chromosome 4 (Tanurdzic et al., 2008), we observed hypermethylation at certain genes in rice callus.",
-      "evidence_type": "[\"DATA\", \"CITATION\"]",
-      "evidence_reasoning": "This is supported by BS-seq data from rice callus and comparison with cited Arabidopsis study.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "21607867-569e-4564-81bd-0bf1d6de9a7a",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C78",
-      "claim": "Losses of methylation in regenerated plants were concentrated near protein-coding gene promoters.",
-      "claim_type": "EXPLICIT",
-      "source_text": "While the losses of DNA methylation in regenerated plants occurred within a relatively small proportion of the rice genome, they were concentrated near protein-coding gene promoters",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is supported by statistical analysis showing enrichment of DMRs at gene promoters.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "fad952e5-9b87-43d0-b4a3-9e06337852a9",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C79",
-      "claim": "Methylation losses were in regions of the genome that are more prone to alter gene expression.",
-      "claim_type": "EXPLICIT",
-      "source_text": "and therefore in regions of the genome that are more prone to alter gene expression",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the location of DMRs at gene promoters, which are regulatory regions.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "a83a0594-a923-4b63-be82-b0c248a6d4f4",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C80",
-      "claim": "An average of 11.3 genes were deregulated per regenerated line.",
-      "claim_type": "IMPLICIT",
-      "source_text": "An average of 11.3 genes were deregulated.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is a quantitative result from mRNA-seq analysis of genes with promoter hypomethylation.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "769d6b3e-b4aa-4ed1-95bf-5dffca6f4db3",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C81",
-      "claim": "BS-seq libraries were generated using premethylated adapters.",
-      "claim_type": "EXPLICIT",
-      "source_text": "BS-seq libraries were generated as previously described using premethylated adapters",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the technical method used for library preparation.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "e18eef5e-e431-4507-bd3d-509e70ac07e0",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C82",
-      "claim": "1 \u03bcg of genomic DNA was used for BS-seq library preparation.",
-      "claim_type": "EXPLICIT",
-      "source_text": "using 1 \u03bcg of genomic DNA isolated using DNeasy Plant Maxi Kit",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the technical method and amount of starting material.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "a45db2cc-f841-4048-92c6-be88cf31dfee",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C83",
-      "claim": "Libraries were single-end sequenced on a HiSeq 2000.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Libraries were single-end sequenced on a HiSeq 2000",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the sequencing platform used.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "31e56abd-2fc1-4518-adc3-83a7959d6736",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C84",
-      "claim": "Reads were mapped to the MSU 6.1 version genome using BS-seeker allowing up to two mismatches.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Reads (50 nt) were mapped to the MSU 6.1 version genome using BS-seeker (Chen et al., 2010) allowing up to two mismatches.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the bioinformatic analysis method.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "b8304dba-da09-4b25-b0e1-222c6a823aac",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C85",
-      "claim": "Identical reads were collapsed into one read.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Identical reads were collapsed into one read.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the data processing method to remove PCR duplicates.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "7b5f6454-9ffa-4f40-a5f1-caf37e0eb094",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C86",
-      "claim": "Fractional methylation levels were calculated by #C/(#C+#T).",
-      "claim_type": "EXPLICIT",
-      "source_text": "Fractional methylation levels were calculated by #C/(#C+#T).",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method for calculating methylation levels from BS-seq data.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "d6e637d9-e74d-44ec-90da-4c1493cdd830",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C87",
-      "claim": "DMRs for each sample were defined by comparing methylation levels to wild type in 100 bp bins across the genome.",
-      "claim_type": "EXPLICIT",
-      "source_text": "DMRs for each sample were defined by comparing methylation levels to wild type in 100 bp bins across the genome.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the computational method for identifying DMRs.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "366310dc-382d-40ef-bbbd-c9d3954a98a4",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C88",
-      "claim": "Fischer's exact test was used to identify bins that were significantly differentially methylated.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Fischer's exact test was used to identify bins that were significantly differentially methylated by comparing #C and #T (Benjamini-Hochberg corrected FDR < 0.01).",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the statistical method used for DMR identification.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "23d8ac1d-77da-4aef-90a6-28ed7db72f56",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C89",
-      "claim": "An absolute methylation difference of 0.7, 0.5, 0.1 was required for CG, CHG, CHH methylation, respectively, to define DMRs.",
-      "claim_type": "EXPLICIT",
-      "source_text": "In addition, we required an absolute methylation difference of 0.7, 0.5, 0.1, for CG, CHG, CHH methylation, respectively.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the threshold criteria used for DMR identification.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "2bfc31d1-4ce6-43a1-9a52-d482a232ac42",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C90",
-      "claim": "Bins that were within 100 bp were merged for DMR definition.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Bins that were within 100 bp were merged.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method for consolidating adjacent differentially methylated bins.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "3d9a2f34-fae9-4d3a-848b-3af13e883f1b",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C91",
-      "claim": "Only bins that contained 10 informative cytosines covered by \u22654 reads in both the sample and wild type were considered as DMRs.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Finally, only bins that contained 10 informative cytosines (i.e., covered by \u22654 reads) in both the sample and wild type were considered as DMRs.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the coverage threshold used for DMR identification.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "fd47d0e8-7c40-4266-9a72-d4ee9eacc4b4",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C92",
-      "claim": "All heat maps were generated by complete linkage and using Euclidean distance as a distance measure.",
-      "claim_type": "EXPLICIT",
-      "source_text": "All heat maps in this study were generated by complete linkage and using Euclidean distance as a distance measure.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method used for hierarchical clustering analysis.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "b6218c13-5df8-4ea9-97b2-d0b7daadedbe",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C93",
-      "claim": "1 bp overlap was considered as an overlap for determining overlap of DMRs with different genomic elements.",
-      "claim_type": "EXPLICIT",
-      "source_text": "For determining overlap of DMRs with different genomic elements, we considered 1 bp overlap as an overlap.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the criterion used for overlap analysis.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "505152fe-1e15-4ba2-a160-664b489655fc",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C94",
-      "claim": "100 sets of 'randomized DMRs' were generated to assess significance of overlap with genomic elements.",
-      "claim_type": "EXPLICIT",
-      "source_text": "To assess significance, we generated 100 sets of 'randomized DMRs' which mimicked both the number and size distributions as the observed DMRs",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the statistical method for assessing enrichment significance.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "eedf8b1b-dee9-4d2e-b412-ec4c0b355231",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C95",
-      "claim": "RNA-seq libraries were constructed from total RNA isolated using TRIzol reagent from leaf tissues.",
-      "claim_type": "EXPLICIT",
-      "source_text": "RNA-seq libraries were constructed from total RNA isolated using TRIzol reagent (Invitrogen, Life Technologies, Carlsbad, CA) from leaf tissues of samples 2\u223c10.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method for RNA extraction and library preparation.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "ce5423d9-7e9b-4243-9fda-b2288676f13a",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C96",
-      "claim": "10 \u03bcg of total RNA for each sample was used to purify poly-A mRNA for RNA-seq.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Total RNA (10 \u03bcg) for each sample was used to purify poly-A mRNA",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the amount of starting material for mRNA-seq.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "06839485-eabf-4321-af1e-0557e696e01e",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C97",
-      "claim": "The RNA-seq libraries were prepared using the TruSeq RNA Sample Preparation Kit from Illumina.",
-      "claim_type": "EXPLICIT",
-      "source_text": "The RNA-seq libraries were prepared using the TruSeq RNA Sample Preparation Kit from Illumina",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the commercial kit used for library preparation.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "9f5e6bfe-05a2-4e6a-af6a-85c6bdd04765",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C98",
-      "claim": "smRNA-seq libraries were constructed using the TruSeq Small RNA Sample Prep Kit from Illumina.",
-      "claim_type": "EXPLICIT",
-      "source_text": "smRNA-seq libraries were constructed from total RNA isolated from the same tissues as described for the mRNA libraries, using the TruSeq Small RNA Sample Prep Kit from Illumina",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method for small RNA library preparation.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "7d91b888-2759-4494-a5ff-437150c709a2",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C99",
-      "claim": "Gene annotations (MSU 6.1) were obtained from the Rice Genome Annotation Project website.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Gene annotations (MSU 6.1) were obtained from the Rice Genome Annotation Project website (http://rice.plantbiology.msu.edu/).",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the source of gene annotation data used in the analysis.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "14874167-770a-4d9b-bc93-5d2f77b9b0be",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C100",
-      "claim": "mRNA-seq reads were uniquely mapped to the genome using Bowtie allowing two mismatches.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Briefly, reads were uniquely mapped to the genome using Bowtie (Langmead et al., 2009) allowing two mismatches",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the bioinformatic method for mapping mRNA-seq reads.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "ada8e85e-f22d-47ae-a806-a4b97e895724",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C101",
-      "claim": "Differentially expressed genes were defined by applying fourfold and FDR < 0.01 cutoffs.",
-      "claim_type": "EXPLICIT",
-      "source_text": "and differentially expressed genes were defined by applying fourfold and FDR < 0.01 cutoffs",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the statistical criteria for identifying differentially expressed genes.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "e57fa761-4c3c-41b3-9441-7d1a9dcc5fdd",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C102",
-      "claim": "smRNA-seq reads were uniquely mapped to the genome using Bowtie allowing no mismatches.",
-      "claim_type": "EXPLICIT",
-      "source_text": "smRNA-seq reads were uniquely mapped to the genome using Bowtie allowing no mismatches",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the bioinformatic method for mapping small RNA reads.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "7596130c-7619-4cc3-84dc-2e9813bbc58b",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C103",
-      "claim": "RPKM was used to quantify RNA-seq datasets.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Reads per kilobase per million mapped reads (RPKM) was used to quantify RNA-seq datasets.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the normalization method used for RNA-seq quantification.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "a191d256-14b0-407a-99f6-e43495b4e123",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C104",
-      "claim": "All sequencing data have been deposited in the NCBI Gene Expression Omnibus with accession number GSE42410.",
-      "claim_type": "EXPLICIT",
-      "source_text": "All sequencing data have been deposited in the NCBI Gene Expression Omnibus with accession number GSE42410.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This provides the public repository accession for the data.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "5cca66db-8571-4ae3-83d6-ff2cce89694f",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C105",
-      "claim": "Hygromycin was used as the selection marker in rice transformation.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Hygromycin was used as the selection marker in rice transformation.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the selection method used in the transformation process.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "ab6bf9f3-5dda-46a6-a311-bc1699beee1a",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C106",
-      "claim": "All resistant plants were selfed for indicated generations.",
-      "claim_type": "EXPLICIT",
-      "source_text": "All the resistant plants were selfed for indicated generations",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the breeding scheme used to generate the plant materials.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "980120f2-e4db-49f9-861b-509e2bfe8a84",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C107",
-      "claim": "Homozygosity was confirmed by PCR analysis of the transgene.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Homozygosity was confirmed by PCR analysis of the transgene.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method used to verify transgene homozygosity.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "fcff8bc5-5582-4ac2-a14b-5029596b59ab",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C108",
-      "claim": "Rice seedlings were kept in a growth chamber at 26/20\u00b0C under a 14-hr light/10-hr dark cycle.",
-      "claim_type": "EXPLICIT",
-      "source_text": "After germination, rice seedlings were transplanted into soil and kept in a growth chamber at 26/20\u00b0C under a 14-hr light/10-hr dark cycle.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the growth conditions used for the plant materials.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "ba149e84-2443-48b3-8895-0936dcba34c9",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C109",
-      "claim": "Rice leaf samples were collected at 3 weeks after transplanted into soil.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Rice leaf samples were collected at 3 weeks after transplanted into soil",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the timing of sample collection for the experiments.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "715c83a5-e56b-4f39-a580-8a30d0a02b43",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C110",
-      "claim": "DNA methylation levels of the chloroplast genome were used to estimate error rates.",
-      "claim_type": "EXPLICIT",
-      "source_text": "DNA methylation levels of the chloroplast genome were used to estimate error rates.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This describes the method for calculating BS-seq error rates, using the unmethylated chloroplast genome as a control.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "25540b3f-186a-4956-9906-058582686962",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C111",
-      "claim": "Sites analyzed in Figure 2 are likely homozygous for loss of DNA methylation.",
-      "claim_type": "EXPLICIT",
-      "source_text": "However, because we required DMRs to have at least 70% reduction in DNA methylation compared to wild-type, the sites we analyzed in Figure 2 are likely homozygous for loss of DNA methylation",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the stringent threshold used for DMR identification.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "bb5bdbf3-10d6-4e1b-88a9-cf8bf0b221e1",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C112",
-      "claim": "The homozygous nature of methylation loss is consistent with stability across generations.",
-      "claim_type": "EXPLICIT",
-      "source_text": "consistent with their stability across generations",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the observation that homozygous changes would be expected to be stable.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "f85004c0-309d-47eb-8d3e-93c82ade2580",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C113",
-      "claim": "It is possible that some of the DMRs affected only one homologous chromosome and were segregating.",
-      "claim_type": "EXPLICIT",
-      "source_text": "It is possible that some of the DMRs affected only one homologous chromosome and were segregating.",
-      "evidence_type": "[\"SPECULATION\"]",
-      "evidence_reasoning": "This is a speculative possibility about the nature of some DMRs.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "8f40bee0-d75d-4ba2-8394-8f20d51554a9",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "claim_id": "C114",
-      "claim": "It is difficult to assess the severity of impact because some lines may have more biologically important genes affected than others.",
-      "claim_type": "EXPLICIT",
-      "source_text": "For this reason, it is difficult to assess the severity of impact of misregulated gene expression for any particular regenerated line, since some lines may have more biologically important genes affected than others.",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This is inferred from the observation that different genes are affected in different lines, with varying potential biological importance.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     }
   ],
   "results": [
     {
-      "id": "0bced2dc-15ee-4eef-a986-897aeaad11bd",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "58761991-7115-495d-9f66-709e1aeceb9e",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R1",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "All tested regenerated rice plants showed significant losses of DNA methylation compared to non-regenerated controls, as measured by high-quality BS-seq with 15\u00d7 average coverage and low error rates (1.5%, 1.2%, 0.8% for CG, CHG, CHH contexts).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The finding that all regenerated rice plants show significant methylation losses is well-supported by high-quality BS-seq data (15\u00d7 coverage, low error rates) from nine independent lines using rigorous statistical methods (Fischer's exact test, FDR < 0.01, stringent methylation difference thresholds). The experimental design, technical quality metrics, and analytical pipeline are clearly described and appropriate.",
+      "result_reasoning": "Claims C2, C20, and C19 are directly supported by BS-seq data from multiple regenerated lines. The technical quality metrics (C25, C26) demonstrate the data is reliable with adequate coverage and low error rates, strengthening confidence in the methylation loss observations.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "fe50d42d-c4c5-407d-b786-2c7a6b65ee5b",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "1866e433-e7ae-4bdf-8bfa-674a531e30cc",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R2",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "DNA methylation losses induced by tissue culture are largely stable across multiple generations, with 84% of hypomethylated CG sites remaining unmethylated from T2 through T6 generations, and lines derived from the same regenerated plant showing highly similar methylation profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The stability of methylation losses across generations is strongly supported by longitudinal data showing 84% of T2 hypomethylated sites remain hypomethylated in T4 and T6 generations. The stringent DMR threshold (70% reduction) likely ensures homozygous changes were analyzed, consistent with observed stability. However, formal segregation analysis was not performed to definitively rule out heterozygous segregating sites.",
+      "result_reasoning": "Claim C27 provides quantitative evidence (84% stability) across three generations (T2, T4, T6). Claims C37, C38, and C41 corroborate this with hierarchical clustering and overlap analyses showing high similarity within lineages. The multi-generational tracking provides strong evidence for heritability.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "c3ba5361-3610-458b-a053-22be80986532",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "4ba92921-d3f2-4cfd-b274-88d08f2c30c1",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R3",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "DNA methylation losses are non-randomly distributed in the genome, with significant enrichment at gene promoters compared to randomized control regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The enrichment of methylation losses at gene promoters is well-supported by statistical analysis comparing observed DMR overlap with 100 randomized control sets matching size and number distributions. The finding that DMRs are depleted at TEs but enriched at promoters is consistent across multiple lines and uses appropriate statistical controls.",
+      "result_reasoning": "Claims C23, C29, and C56 consistently report enrichment at gene promoters, supported by statistical analysis comparing observed DMR overlap with randomized regions (C29). The use of appropriate statistical controls strengthens this finding, though the exact p-values and effect sizes are not fully detailed in the claims.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "63837043-037e-458a-9024-92e47bb553e5",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "f18d5050-ebeb-42a1-a897-953d9f1edd61",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R4",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Loss of DNA methylation at gene promoters is associated with altered gene expression, predominantly upregulation, with stronger effects when hypomethylation occurs closer to the transcription start site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The association between promoter hypomethylation and gene expression changes is supported by integrated BS-seq and mRNA-seq data from seven lines. The directional bias toward upregulation, distance-dependent effect from TSS, and use of appropriate statistical thresholds (4-fold change, FDR < 0.01) strengthen the finding. However, causality is inferred from correlation rather than directly demonstrated.",
+      "result_reasoning": "Multiple claims (C5, C24, C30, C34, C39, C57) report correlation between promoter hypomethylation and gene expression changes using combined BS-seq and mRNA-seq data. Claims C31 and C32 provide additional mechanistic detail (distance-dependent effects and directional bias toward upregulation). However, the correlation does not definitively establish causation, and C33's claim of 'direct consequence' is inferential.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "76166c39-c004-442e-a9c1-7f6026f05930",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "c8b72472-0f62-417a-95f9-9f17544b8705",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R5",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "DNA methylation loss is stochastically induced during the tissue culture step, with individual plants regenerated from the same parent showing distinct methylation profiles that are maintained upon regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The stochastic nature of methylation loss during tissue culture is well-demonstrated by analyzing untransformed callus and three regenerated plants from a single parent (WT2011). The observation of distinct methylation profiles in individual regenerants from the same parent, combined with evidence that losses occur in callus and are maintained upon regeneration, strongly supports the conclusion that tissue culture (not transformation) induces stochastic hypomethylation.",
+      "result_reasoning": "Claims C6, C21, C35, and C36 are supported by BS-seq data from untransformed callus and regenerated plants showing different DMR patterns in individuals from the same parent. Claims C52 and C53 confirm that specific sites lose methylation in callus and this is maintained post-regeneration. The experimental design appropriately separates tissue culture effects from transformation effects.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "a37b7ba1-4c80-4ad5-aa75-d87ff93d89e8",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "d4057ee0-c32f-4c27-b13c-76c1ee36564d",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R6",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "DNA methylation losses occur in all sequence contexts (CG, CHG, CHH) and are associated with reduced levels of 24-nt small interfering RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The association between DNA methylation loss and reduced 24-nt siRNA levels is supported by smRNA-seq data showing depletion at hypomethylated regions. This is consistent with known RdDM pathway biology where siRNAs direct DNA methylation. The correlation is clear from the data presented in Figure 3C.",
+      "result_reasoning": "Claims C28 and C54 report hypomethylation in all three cytosine contexts, supported by identification of context-specific DMRs in BS-seq data. Claims C22 and C55 link this to reduced 24-nt siRNA levels via smRNA-seq data, suggesting involvement of the RNA-directed DNA methylation pathway. The correlation is well-documented but mechanistic causality is not definitively established.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "2ddac81a-72e7-4553-95f4-64c94fb19f98",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "9305de6d-4642-4283-a82e-6735179781e5",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R7",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Rice callus exhibits CHH hypermethylation predominantly at gene promoters, which is completely eliminated upon plant regeneration, suggesting this hypermethylation is specific to the dedifferentiated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "CHH hypermethylation in callus at gene promoters, and its complete elimination upon regeneration, is well-supported by BS-seq data from two callus samples and three regenerated plants. The finding extends prior Arabidopsis work and the inference that CHH hypermethylation is linked to the dedifferentiated state is reasonable given the temporal pattern, though the mechanism is not explored.",
+      "result_reasoning": "Claims C47 and C48 are supported by BS-seq data from callus samples showing CHH hypermethylation DMRs enriched at promoters. Claim C49 demonstrates elimination of this hypermethylation in regenerated plants. However, C50's interpretation that this is 'linked to the dedifferentiated state' is speculative and represents an inference rather than direct evidence.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "b9159810-bc56-4d2f-8bab-7afcf67e4daf",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "ce40f20b-f27a-4f25-8999-ef1b6a4d254e",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R8",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Unlike Arabidopsis cell culture, rice callus does not show global hypomethylation at transposable elements; instead, hypomethylation is enriched near genes and relatively depleted at TE sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The absence of global TE hypomethylation in rice callus, contrasting with Arabidopsis, is supported by BS-seq data analysis. This represents a clear species difference in tissue culture response and is appropriately noted as distinct from prior findings.",
+      "result_reasoning": "Claims C51 and C63 are supported by BS-seq analysis showing no widespread TE hypomethylation and enrichment of DMRs at gene promoters with relative depletion at TEs. This represents a clear contrast with prior Arabidopsis findings (C10), though direct quantitative comparison between species is not provided.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "0c3135e1-bbcc-4aeb-9d10-816a9d500b56",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "f1d37999-f8e7-4676-8856-acba518a316b",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R9",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Different regenerated lines show variable sets of upregulated genes, making it difficult to assess the biological impact for any particular line, as some may have more functionally important genes affected than others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "SUPPORTED",
-      "result_reasoning": "The observation that lines from the same original regenerant show similar methylation profiles while different regenerants show different affected genes is supported by hierarchical clustering (Figure 1E) and mRNA-seq analysis (Figure 4\u2014figure supplement 3). This demonstrates both the heritability of specific changes and the stochastic nature of which sites are affected.",
+      "result_reasoning": "Claim C58 is supported by mRNA-seq data showing different upregulated gene sets across lines. Claims C59 and C60 are reasonable inferences from this variability, though they acknowledge uncertainty about biological significance. The limitation in predicting phenotypic impact is appropriately recognized.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "59c60b60-c0ea-493a-b983-b589e7923bcb",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "fcc76c42-cdb7-442e-9197-4dafab8a9d55",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R10",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Epigenetic changes induced by tissue culture may explain a component of somaclonal variation observed in regenerated plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "UNCERTAIN",
-      "result_reasoning": "While the data demonstrate stable epigenetic changes and gene expression alterations, the direct link to somaclonal variation (phenotypic variability) remains speculative. No phenotypic data are presented to demonstrate that the observed molecular changes actually cause phenotypic variation. This is acknowledged as a hypothesis supported by correlation with literature but requires experimental validation.",
+      "result_reasoning": "While claims C7, C40, and C42 are supported by correlations between methylation changes and gene expression alterations, they represent speculative explanations for somaclonal variation. No direct phenotypic data linking specific methylation changes to observed phenotypic variation is provided. The claims appropriately use hedging language ('may explain,' 'likely explain') but lack direct experimental validation of the proposed mechanism.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "c6d0b18c-be5f-4493-a565-7b3bc3722a41",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "89153dee-2909-4eb9-b677-f26a054d21f1",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R11",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Some hypomethylation occurs at transposable element genes, with subtle methylation depletion observed over reactivated TE genes, suggesting methylation loss may partially contribute to TE reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "UNCERTAIN",
-      "result_reasoning": "The claim that gene misexpression is a 'direct consequence' of methylation loss is inferred from correlation and directional bias but lacks experimental validation. No functional experiments (e.g., targeted demethylation, methylation restoration) were performed to establish causality. The correlation is strong and biologically plausible, but the causal claim exceeds what the correlative data can support.",
+      "result_reasoning": "Claim C64 provides quantitative data (average 62.1 TE genes per line affected), but C65 explicitly states the association with TE reactivation was unclear. Claim C66 reports only 'very subtle' depletion, and C67's suggestion of causality is speculative. The evidence is insufficient to establish a clear mechanistic link between methylation loss and TE reactivation.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     },
     {
-      "id": "442713e6-8465-4adc-b7c4-e2703bb1608b",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
+      "id": "8cdcb092-4cba-4158-af11-24fba60991a0",
+      "content_id": "e05e8d5d-095e-463a-a43e-41c83743832b",
       "result_id": "R12",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
-      "result_status": "UNSUPPORTED",
-      "result_reasoning": "The claim that breeding crosses 'are likely to correct the vast majority of tissue culture-induced epigenetic changes' is speculative and not supported by data in this study. No experiments tracking methylation through crosses were performed. Given that 84% of changes are stable across self-fertilized generations, the assumption that outcrossing would eliminate these changes requires experimental validation.",
-      "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
-    },
-    {
-      "id": "09ed015d-9dec-40ac-a7c5-36a9b9070129",
-      "content_id": "5474b531-b680-4a96-b706-b9291e80ec74",
-      "result_id": "R13",
-      "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Crosses used in agricultural introgression schemes are likely to correct the vast majority of tissue culture-induced epigenetic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "UNCERTAIN",
-      "result_reasoning": "The relationship between methylation loss and TE reactivation is unclear from the data. While subtle methylation depletion is observed at reactivated TEs, the authors explicitly state the association 'was not clear' and data are not shown. The inference that methylation loss 'may in part be responsible' for TE reactivation is weakly supported and requires further investigation.",
+      "result_reasoning": "Claim C45 is purely speculative inference without supporting experimental data. No crossing experiments or multi-generational breeding studies are presented to test whether epigenetic changes are corrected through introgression. This represents a hypothesis about agricultural practice rather than a demonstrated result.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:23:20.436577Z"
+      "created_at": "2025-10-21T20:01:29.291773Z"
     }
   ],
   "claim_results": [
     {
-      "claim_id": "fbf43c2a-45d4-4c7d-8174-febe35552915",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "0e6603dd-94b9-48e7-8968-37d3410a5385",
+      "result_id": "58761991-7115-495d-9f66-709e1aeceb9e"
     },
     {
-      "claim_id": "1a5d43c4-20bc-47ec-b887-836437fd2805",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "dea6baed-f88e-41d7-ad56-83df82811dfc",
+      "result_id": "58761991-7115-495d-9f66-709e1aeceb9e"
     },
     {
-      "claim_id": "a1f4c986-7faa-402c-8bdd-1cc9d8564fb9",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "6a8efbff-c92a-4ab5-a91c-e83aec2997fe",
+      "result_id": "58761991-7115-495d-9f66-709e1aeceb9e"
     },
     {
-      "claim_id": "8320d2f4-afd9-4c29-8818-44573b40bc5b",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "42f9e14d-6b33-45c8-a3f6-7496bcde4cdc",
+      "result_id": "58761991-7115-495d-9f66-709e1aeceb9e"
     },
     {
-      "claim_id": "f2126802-b7b9-42bc-b772-988b09536d78",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "c209513e-a939-4a2d-b092-40841ac69a7e",
+      "result_id": "58761991-7115-495d-9f66-709e1aeceb9e"
     },
     {
-      "claim_id": "27e92ef3-07b8-41fa-a136-fe42bca0419e",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "ce94372b-713d-4070-8354-57cf4aa1eeea",
+      "result_id": "1866e433-e7ae-4bdf-8bfa-674a531e30cc"
     },
     {
-      "claim_id": "8d572e97-9bbf-4db0-853b-9530b704e954",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "1e48fd4a-9caa-410f-9702-92c9bf8557ed",
+      "result_id": "1866e433-e7ae-4bdf-8bfa-674a531e30cc"
     },
     {
-      "claim_id": "769d6b3e-b4aa-4ed1-95bf-5dffca6f4db3",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "9392723f-790a-4b04-8285-cb4d5a376d05",
+      "result_id": "1866e433-e7ae-4bdf-8bfa-674a531e30cc"
     },
     {
-      "claim_id": "e18eef5e-e431-4507-bd3d-509e70ac07e0",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "11f1d03e-0063-4d62-8dac-764cfc4f04ef",
+      "result_id": "1866e433-e7ae-4bdf-8bfa-674a531e30cc"
     },
     {
-      "claim_id": "a45db2cc-f841-4048-92c6-be88cf31dfee",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "233ac8c5-b000-4e64-b6f7-204c9bde5528",
+      "result_id": "1866e433-e7ae-4bdf-8bfa-674a531e30cc"
     },
     {
-      "claim_id": "31e56abd-2fc1-4518-adc3-83a7959d6736",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "87c26635-a192-4f6a-8611-68c4ba12a984",
+      "result_id": "4ba92921-d3f2-4cfd-b274-88d08f2c30c1"
     },
     {
-      "claim_id": "b8304dba-da09-4b25-b0e1-222c6a823aac",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "508e4ec5-11c3-4738-bc16-f1782f3f9d20",
+      "result_id": "4ba92921-d3f2-4cfd-b274-88d08f2c30c1"
     },
     {
-      "claim_id": "7b5f6454-9ffa-4f40-a5f1-caf37e0eb094",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "47d84267-f9a6-41bf-9af9-afc61ae27eca",
+      "result_id": "4ba92921-d3f2-4cfd-b274-88d08f2c30c1"
     },
     {
-      "claim_id": "d6e637d9-e74d-44ec-90da-4c1493cdd830",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "cc3d974e-60f7-4b59-b099-42c30ced3846",
+      "result_id": "4ba92921-d3f2-4cfd-b274-88d08f2c30c1"
     },
     {
-      "claim_id": "366310dc-382d-40ef-bbbd-c9d3954a98a4",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "225bfb21-0477-4d46-bf5f-e31a2b62f03b",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "23d8ac1d-77da-4aef-90a6-28ed7db72f56",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "1e48c121-aa11-487e-b0f1-03f0addfcfa6",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "2bfc31d1-4ce6-43a1-9a52-d482a232ac42",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "a4a896ec-c351-4323-bd5f-51322f7ff66b",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "3d9a2f34-fae9-4d3a-848b-3af13e883f1b",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "5c47ce28-6183-4ea4-932c-528998f9481f",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "715c83a5-e56b-4f39-a580-8a30d0a02b43",
-      "result_id": "0bced2dc-15ee-4eef-a986-897aeaad11bd"
+      "claim_id": "9ab5e4ec-6ebe-4753-ac79-c833457e4b25",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "a00ab99a-0aa1-461c-b426-22ac3c505e78",
-      "result_id": "fe50d42d-c4c5-407d-b786-2c7a6b65ee5b"
+      "claim_id": "c3f3e2e7-7c19-4774-8ead-fa3f6537061e",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "5d4ef303-863a-45be-8645-8d8ba8093aad",
-      "result_id": "fe50d42d-c4c5-407d-b786-2c7a6b65ee5b"
+      "claim_id": "a2da2ead-6c34-406a-b93b-0dca27a1b47a",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "ea89e089-de95-4f53-b8dd-e9ff12dcbf2c",
-      "result_id": "fe50d42d-c4c5-407d-b786-2c7a6b65ee5b"
+      "claim_id": "4ee2487d-1645-4c83-8a33-8ef422de228c",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "25540b3f-186a-4956-9906-058582686962",
-      "result_id": "fe50d42d-c4c5-407d-b786-2c7a6b65ee5b"
+      "claim_id": "cfcf1789-e2d5-4b07-b84b-1bb6572f6e21",
+      "result_id": "f18d5050-ebeb-42a1-a897-953d9f1edd61"
     },
     {
-      "claim_id": "bb5bdbf3-10d6-4e1b-88a9-cf8bf0b221e1",
-      "result_id": "fe50d42d-c4c5-407d-b786-2c7a6b65ee5b"
+      "claim_id": "001e895e-ae05-424a-8ea4-d30deea06e8f",
+      "result_id": "c8b72472-0f62-417a-95f9-9f17544b8705"
     },
     {
-      "claim_id": "16db4b92-d8c7-4e13-9574-50e3ee12ddd2",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "8edf550f-1b00-4f63-a82e-7b2c8ba3f638",
+      "result_id": "c8b72472-0f62-417a-95f9-9f17544b8705"
     },
     {
-      "claim_id": "ec4baf4f-5e0b-4538-9bb2-69974e6b8fe8",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "1e2affc0-ffc9-4095-8c0b-1ba7da4be9e1",
+      "result_id": "c8b72472-0f62-417a-95f9-9f17544b8705"
     },
     {
-      "claim_id": "6b9f98c7-7692-4e8d-9330-450da7c9491a",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "5a7fb26e-ce1a-4886-97ed-4cae37b8b982",
+      "result_id": "c8b72472-0f62-417a-95f9-9f17544b8705"
     },
     {
-      "claim_id": "75c84151-f344-4b66-a85d-4ba80d0f5976",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "9454fc39-fd03-493b-862d-7ff385b22cbd",
+      "result_id": "c8b72472-0f62-417a-95f9-9f17544b8705"
     },
     {
-      "claim_id": "20b09f0c-7ebc-4cea-bf7b-b8ff520ee75e",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "872aa007-18c5-4721-959f-affc9b9e7c47",
+      "result_id": "c8b72472-0f62-417a-95f9-9f17544b8705"
     },
     {
-      "claim_id": "21607867-569e-4564-81bd-0bf1d6de9a7a",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "49d3dd48-c3a6-48df-b98b-53663d3fc425",
+      "result_id": "d4057ee0-c32f-4c27-b13c-76c1ee36564d"
     },
     {
-      "claim_id": "b6218c13-5df8-4ea9-97b2-d0b7daadedbe",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "bb2cdd7f-398a-40c8-97bc-21c58b30933f",
+      "result_id": "d4057ee0-c32f-4c27-b13c-76c1ee36564d"
     },
     {
-      "claim_id": "505152fe-1e15-4ba2-a160-664b489655fc",
-      "result_id": "c3ba5361-3610-458b-a053-22be80986532"
+      "claim_id": "0e4741ae-b1aa-4fd6-bd15-e5bce06752f3",
+      "result_id": "d4057ee0-c32f-4c27-b13c-76c1ee36564d"
     },
     {
-      "claim_id": "36ce477f-4770-4429-9aab-36ba508268c5",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "4efbab8c-e1dd-459c-9f9e-0a434cfdcf54",
+      "result_id": "d4057ee0-c32f-4c27-b13c-76c1ee36564d"
     },
     {
-      "claim_id": "ff640b0a-584e-48b1-8332-81db7cf41fa1",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "58a3fcb2-176f-476f-b8c2-f6809c49bb27",
+      "result_id": "9305de6d-4642-4283-a82e-6735179781e5"
     },
     {
-      "claim_id": "7e8bbc9b-d3cc-44c1-b014-672a3bc330e0",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "cc13f7c5-fac8-4e50-b634-31f5eddfc1fc",
+      "result_id": "9305de6d-4642-4283-a82e-6735179781e5"
     },
     {
-      "claim_id": "badac0b8-ad0b-471c-a634-5e6f1b002600",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "c3f1a16f-17d6-43fb-b1dc-eba7dff8c49c",
+      "result_id": "9305de6d-4642-4283-a82e-6735179781e5"
     },
     {
-      "claim_id": "a368d1a2-ee43-415d-bd37-89d74459fea2",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "6c98752a-18c7-4147-8717-614606ad2725",
+      "result_id": "9305de6d-4642-4283-a82e-6735179781e5"
     },
     {
-      "claim_id": "c3da326b-6595-4d8c-8543-10ddbdbd16ab",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "0d1b333a-3371-4423-8d88-22200a2a5145",
+      "result_id": "ce40f20b-f27a-4f25-8999-ef1b6a4d254e"
     },
     {
-      "claim_id": "a2c69734-4857-4e32-b0a5-0a95172817aa",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "c2cd1a81-358c-4e2c-bd76-e06c7898e454",
+      "result_id": "ce40f20b-f27a-4f25-8999-ef1b6a4d254e"
     },
     {
-      "claim_id": "a83a0594-a923-4b63-be82-b0c248a6d4f4",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "26167165-b327-43aa-a225-d38fbf9eb1cc",
+      "result_id": "f1d37999-f8e7-4676-8856-acba518a316b"
     },
     {
-      "claim_id": "eedf8b1b-dee9-4d2e-b412-ec4c0b355231",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "0f39d2d1-8958-4f5b-ab7b-1b8579c94578",
+      "result_id": "f1d37999-f8e7-4676-8856-acba518a316b"
     },
     {
-      "claim_id": "ce5423d9-7e9b-4243-9fda-b2288676f13a",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "d873960b-3f4d-4acd-856f-a357fe5384bb",
+      "result_id": "f1d37999-f8e7-4676-8856-acba518a316b"
     },
     {
-      "claim_id": "06839485-eabf-4321-af1e-0557e696e01e",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "2677ab40-1f3d-49ac-b9c7-238669923e24",
+      "result_id": "fcc76c42-cdb7-442e-9197-4dafab8a9d55"
     },
     {
-      "claim_id": "14874167-770a-4d9b-bc93-5d2f77b9b0be",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "a07edb10-c6f4-432e-a80a-256a76670374",
+      "result_id": "fcc76c42-cdb7-442e-9197-4dafab8a9d55"
     },
     {
-      "claim_id": "ada8e85e-f22d-47ae-a806-a4b97e895724",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "cc206849-961b-4b33-8341-f76846a5689b",
+      "result_id": "fcc76c42-cdb7-442e-9197-4dafab8a9d55"
     },
     {
-      "claim_id": "7596130c-7619-4cc3-84dc-2e9813bbc58b",
-      "result_id": "63837043-037e-458a-9024-92e47bb553e5"
+      "claim_id": "fd3e74c3-4333-4228-8279-8f7970e65add",
+      "result_id": "89153dee-2909-4eb9-b677-f26a054d21f1"
     },
     {
-      "claim_id": "4b436e95-5720-4116-ac63-0d80438c8149",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
+      "claim_id": "5e54502d-f050-4a7a-9922-317319bfff47",
+      "result_id": "89153dee-2909-4eb9-b677-f26a054d21f1"
     },
     {
-      "claim_id": "866c23ca-0be2-47fc-996f-8206bb7c3ad4",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
+      "claim_id": "eca6ab03-07db-4c47-b800-c7bf9bdd152e",
+      "result_id": "89153dee-2909-4eb9-b677-f26a054d21f1"
     },
     {
-      "claim_id": "e552b8e7-d414-47ae-9d27-961d87042c03",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
+      "claim_id": "89b47c15-f52c-4068-b5b7-d73262a0f3d3",
+      "result_id": "89153dee-2909-4eb9-b677-f26a054d21f1"
     },
     {
-      "claim_id": "69f78a9e-1ae6-4bb8-a66d-a3b21f680b0c",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
-    },
-    {
-      "claim_id": "d52db61b-f312-4aa4-826d-fff14d608cac",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
-    },
-    {
-      "claim_id": "513d8ee8-70b9-4667-b53d-97d0817d6320",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
-    },
-    {
-      "claim_id": "8f44ff75-158b-4faa-9e43-8f1bb04053fd",
-      "result_id": "76166c39-c004-442e-a9c1-7f6026f05930"
-    },
-    {
-      "claim_id": "e8233e0d-196f-475c-9d4a-76fd5be378b9",
-      "result_id": "a37b7ba1-4c80-4ad5-aa75-d87ff93d89e8"
-    },
-    {
-      "claim_id": "13779b87-3cac-4d52-9fb7-68d078fc30b2",
-      "result_id": "a37b7ba1-4c80-4ad5-aa75-d87ff93d89e8"
-    },
-    {
-      "claim_id": "edf7ad55-01ca-4ad9-93a6-1cfc85b4ee34",
-      "result_id": "2ddac81a-72e7-4553-95f4-64c94fb19f98"
-    },
-    {
-      "claim_id": "36ba41e6-dd0d-4617-85aa-f01639b8d9b2",
-      "result_id": "2ddac81a-72e7-4553-95f4-64c94fb19f98"
-    },
-    {
-      "claim_id": "e5516989-3bcb-49f0-8d0b-6a131d18af4c",
-      "result_id": "2ddac81a-72e7-4553-95f4-64c94fb19f98"
-    },
-    {
-      "claim_id": "36a7d34c-c976-4be5-8776-e0a473299b52",
-      "result_id": "2ddac81a-72e7-4553-95f4-64c94fb19f98"
-    },
-    {
-      "claim_id": "f88d407c-411b-41f9-94a3-613366ea6f1d",
-      "result_id": "2ddac81a-72e7-4553-95f4-64c94fb19f98"
-    },
-    {
-      "claim_id": "07f93b21-6208-465f-b6bc-b865196ba372",
-      "result_id": "b9159810-bc56-4d2f-8bab-7afcf67e4daf"
-    },
-    {
-      "claim_id": "2da6f13a-d1d1-49e2-9fba-96f59a0ade8a",
-      "result_id": "0c3135e1-bbcc-4aeb-9d10-816a9d500b56"
-    },
-    {
-      "claim_id": "326c9e31-2d80-4329-9a66-c01951b064e6",
-      "result_id": "0c3135e1-bbcc-4aeb-9d10-816a9d500b56"
-    },
-    {
-      "claim_id": "ad49fc8b-794b-49a5-84f7-3a4929c86b5c",
-      "result_id": "59c60b60-c0ea-493a-b983-b589e7923bcb"
-    },
-    {
-      "claim_id": "8c01cb07-ea9c-473b-b561-01aae5e666af",
-      "result_id": "59c60b60-c0ea-493a-b983-b589e7923bcb"
-    },
-    {
-      "claim_id": "007c28ff-f2ce-480c-95c1-8a4345048ede",
-      "result_id": "59c60b60-c0ea-493a-b983-b589e7923bcb"
-    },
-    {
-      "claim_id": "143c797e-5e38-43e5-a7bd-b85056d99ca4",
-      "result_id": "c6d0b18c-be5f-4493-a565-7b3bc3722a41"
-    },
-    {
-      "claim_id": "887ef90b-3b99-4435-b311-5917ad0dea61",
-      "result_id": "442713e6-8465-4adc-b7c4-e2703bb1608b"
-    },
-    {
-      "claim_id": "eee66f64-aba3-4d21-a734-ff8cc0b56fd7",
-      "result_id": "09ed015d-9dec-40ac-a7c5-36a9b9070129"
-    },
-    {
-      "claim_id": "2da0113c-2918-470b-910b-3ade86cf5a60",
-      "result_id": "09ed015d-9dec-40ac-a7c5-36a9b9070129"
-    },
-    {
-      "claim_id": "f1dc5551-ed48-4c90-925b-199c2957a910",
-      "result_id": "09ed015d-9dec-40ac-a7c5-36a9b9070129"
+      "claim_id": "63c0e501-becd-4177-a049-0bf2d25852b7",
+      "result_id": "8cdcb092-4cba-4158-af11-24fba60991a0"
     }
   ],
   "comparisons": []

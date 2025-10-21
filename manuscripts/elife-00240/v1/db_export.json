@@ -1,20 +1,20 @@
 {
   "submission": {
-    "id": "7d53f872-5a32-475a-9f82-2ac86c647b69",
+    "id": "8d7d11f5-8e7f-4e70-838e-06a0634346c7",
     "user_id": null,
     "manuscript_title": null,
     "manuscript_doi": null,
     "status": "completed",
-    "created_at": "2025-10-16T21:05:32.152546Z",
-    "updated_at": "2025-10-16T21:05:32.152546Z"
+    "created_at": "2025-10-21T19:53:25.257820Z",
+    "updated_at": "2025-10-21T19:53:25.257820Z"
   },
   "content": [
     {
-      "id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
-      "submission_id": "7d53f872-5a32-475a-9f82-2ac86c647b69",
+      "id": "6b0742fe-0847-47a2-8456-5a37dcde0825",
+      "submission_id": "8d7d11f5-8e7f-4e70-838e-06a0634346c7",
       "content_type": "manuscript",
       "content_text": "# Indirect routes to reproductive success\n\n## Authors\n\n- John Pickett\n\n### Affiliations\n\n1. Rothamsted Research Harpenden United Kingdom john.pickett@rothamsted.ac.uk\n\n\u2020 Corresponding author\n\n## Abstract\n\nBy comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.\n",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     }
   ],
   "prompts": [
@@ -23,144 +23,97 @@
       "prompt_text": "claim extraction prompt",
       "prompt_type": "extract",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     },
     {
       "id": "8e6aa149e11d7c3d",
       "prompt_text": "llm evaluation prompt",
       "prompt_type": "eval_llm",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     }
   ],
   "claims": [
     {
-      "id": "4db6a779-3e22-434d-bad7-1221a330229c",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
+      "id": "9eec2419-5912-4e9f-ab6f-b1d9274cd73a",
+      "content_id": "6b0742fe-0847-47a2-8456-5a37dcde0825",
       "claim_id": "C1",
-      "claim": "Researchers have compared wild-type and transgenic tobacco plants in a natural ecosystem.",
+      "claim": "Researchers have confirmed that indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness by comparing wild-type and transgenic tobacco plants in a natural ecosystem.",
       "claim_type": "EXPLICIT",
       "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "The abstract describes a comparative study that was conducted, indicating experimental research was performed with wild-type and transgenic plants in natural conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "evidence_reasoning": "The claim references a comparative study between wild-type and transgenic plants in a natural ecosystem (DATA), and the conclusion about increased Darwinian fitness is drawn from this comparison (INFERENCE).",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     },
     {
-      "id": "4dc1cb86-de62-4b53-aa81-31fed679404e",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
+      "id": "1d7a2e2b-2273-4f14-9dc1-9ebd72cc229a",
+      "content_id": "6b0742fe-0847-47a2-8456-5a37dcde0825",
       "claim_id": "C2",
       "claim": "Plants employ indirect defence mechanisms to fend off herbivorous insects.",
       "claim_type": "EXPLICIT",
-      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
+      "source_text": "the indirect defence mechanisms employed by plants to fend off herbivorous insects",
       "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
-      "evidence_reasoning": "This is stated as an established phenomenon that plants use indirect defences against herbivores, and the study provides data confirming this mechanism's effects.",
+      "evidence_reasoning": "This is established scientific knowledge about plant defense strategies (KNOWLEDGE), and is supported by the referenced research comparing plant types (DATA).",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     },
     {
-      "id": "4348b8a3-0bba-4d73-9e7c-aec7a3eeb69f",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
+      "id": "47aa47c1-f349-43d9-a1da-ddf497ff834a",
+      "content_id": "6b0742fe-0847-47a2-8456-5a37dcde0825",
       "claim_id": "C3",
-      "claim": "Indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
+      "claim": "Wild-type and transgenic tobacco plants were compared in a natural ecosystem.",
       "claim_type": "EXPLICIT",
-      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
+      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem",
       "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "The abstract states this finding was 'confirmed' through the comparative study, indicating empirical data supports this conclusion.",
+      "evidence_reasoning": "This describes the experimental design and methodology of the research being discussed, indicating empirical data collection.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     },
     {
-      "id": "589cdbb9-f9d8-4287-8cfc-03575e61c08b",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
+      "id": "db2a21a1-deb2-4765-881e-e331fe28d141",
+      "content_id": "6b0742fe-0847-47a2-8456-5a37dcde0825",
       "claim_id": "C4",
-      "claim": "The comparison between wild-type and transgenic tobacco plants was conducted to test the effect of indirect defence mechanisms on fitness.",
+      "claim": "Indirect defence mechanisms can affect plant reproductive success.",
       "claim_type": "IMPLICIT",
-      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "The experimental design (comparing wild-type vs transgenic plants) and the conclusion about indirect defences and fitness logically implies this was the purpose of the comparison, though not explicitly stated.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
-    },
-    {
-      "id": "5f883630-30e7-4d4f-a87e-10f310f290fc",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
-      "claim_id": "C5",
-      "claim": "Transgenic tobacco plants differ from wild-type tobacco plants in their indirect defence mechanisms.",
-      "claim_type": "IMPLICIT",
-      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
-      "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "The comparison between wild-type and transgenic plants to study indirect defence mechanisms implies that the transgenic modification affected these defence mechanisms, otherwise the comparison would not be informative.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
-    },
-    {
-      "id": "d2e11206-6874-41d3-9377-7d74f3afe3ca",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
-      "claim_id": "C6",
-      "claim": "Darwinian fitness can be measured or assessed in tobacco plants in natural ecosystems.",
-      "claim_type": "IMPLICIT",
-      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
+      "source_text": "the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness",
       "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "The study confirmed effects on Darwinian fitness, which implies that fitness was measured or assessed as part of the experimental methodology.",
+      "evidence_reasoning": "Darwinian fitness is directly related to reproductive success; the claim that defense mechanisms increase fitness implies they affect reproductive success. This is supported by the comparative study data (DATA) and logical inference (INFERENCE).",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
-    },
-    {
-      "id": "9ef8f5c2-33c0-4ff7-98dc-c23e73144647",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
-      "claim_id": "C7",
-      "claim": "Herbivorous insects interact with tobacco plants in natural ecosystems.",
-      "claim_type": "IMPLICIT",
-      "source_text": "By comparing wild-type and transgenic tobacco plants in a natural ecosystem, researchers have confirmed that the indirect defence mechanisms employed by plants to fend off herbivorous insects can increase Darwinian fitness.",
-      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
-      "evidence_reasoning": "The study examines plant defences against herbivorous insects in a natural ecosystem, which necessarily implies these insects interact with the plants in that setting.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     }
   ],
   "results": [
     {
-      "id": "6b727643-d5ae-45f5-b433-481a6edda9b2",
-      "content_id": "3838fc66-2d1a-4430-a52b-bae733f8cb1e",
+      "id": "7ae3be07-244d-4d4d-88fa-72b5263f3c83",
+      "content_id": "6b0742fe-0847-47a2-8456-5a37dcde0825",
       "result_id": "R1",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "The authors report that indirect plant defense mechanisms against herbivorous insects increase Darwinian fitness, as demonstrated by comparing wild-type and transgenic tobacco plants in a natural ecosystem. This finding confirms that these defense mechanisms affect reproductive success.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "UNCERTAIN",
-      "result_reasoning": "The abstract claims that indirect plant defence mechanisms increase Darwinian fitness based on comparing wild-type and transgenic tobacco plants (C1-C7). However, critical methodological details are absent: the nature of the transgenic modification is not specified (C5), how Darwinian fitness was measured is unclear (C6), and no statistical evidence, sample sizes, or controls are described. Without access to the full manuscript detailing experimental design, statistical analyses, and mechanistic validation that the transgenic plants specifically differ in indirect defences, the result cannot be evaluated as supported or unsupported.",
+      "result_reasoning": "While C1 and C3 describe a comparative field study design that could test this hypothesis, the manuscript provides no details about the actual data collected, statistical analyses performed, sample sizes, controls, or effect sizes. The claim that fitness was 'increased' (C1, C4) requires quantitative evidence of reproductive output differences, which is not presented. Without access to the underlying data, experimental details, or statistical validation, the strength of this confirmation cannot be assessed. This appears to be a commentary or summary of other researchers' work rather than a primary research report.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:05:32.152546Z"
+      "created_at": "2025-10-21T19:53:25.257820Z"
     }
   ],
   "claim_results": [
     {
-      "claim_id": "4db6a779-3e22-434d-bad7-1221a330229c",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
+      "claim_id": "9eec2419-5912-4e9f-ab6f-b1d9274cd73a",
+      "result_id": "7ae3be07-244d-4d4d-88fa-72b5263f3c83"
     },
     {
-      "claim_id": "4dc1cb86-de62-4b53-aa81-31fed679404e",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
+      "claim_id": "1d7a2e2b-2273-4f14-9dc1-9ebd72cc229a",
+      "result_id": "7ae3be07-244d-4d4d-88fa-72b5263f3c83"
     },
     {
-      "claim_id": "4348b8a3-0bba-4d73-9e7c-aec7a3eeb69f",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
+      "claim_id": "47aa47c1-f349-43d9-a1da-ddf497ff834a",
+      "result_id": "7ae3be07-244d-4d4d-88fa-72b5263f3c83"
     },
     {
-      "claim_id": "589cdbb9-f9d8-4287-8cfc-03575e61c08b",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
-    },
-    {
-      "claim_id": "5f883630-30e7-4d4f-a87e-10f310f290fc",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
-    },
-    {
-      "claim_id": "d2e11206-6874-41d3-9377-7d74f3afe3ca",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
-    },
-    {
-      "claim_id": "9ef8f5c2-33c0-4ff7-98dc-c23e73144647",
-      "result_id": "6b727643-d5ae-45f5-b433-481a6edda9b2"
+      "claim_id": "db2a21a1-deb2-4765-881e-e331fe28d141",
+      "result_id": "7ae3be07-244d-4d4d-88fa-72b5263f3c83"
     }
   ],
   "comparisons": []

@@ -2,26 +2,46 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C5",
-      "C36",
-      "C37",
-      "C38",
-      "C39",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127"
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The authors determined the first 3D EM structure of the human PRC2-AEBP2 complex at 21 \u00c5 resolution. The complex has a molecular mass of ~275 kDa with an elongated shape (16 nm \u00d7 7 nm) consisting of four lobes (A, B, C, D) interconnected by two arms. Mild glutaraldehyde cross-linking (0.015%) improved complex stability for structural analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The first 3D EM structure of PRC2-AEBP2 is well-supported by appropriate methodology (RCT reconstruction, 39,527 particles, 21 \u00c5 resolution). The elongated architecture with 4 lobes and 2 arms is consistently observed across multiple reconstructions, indicating structural homogeneity. The exclusion of end-on views is a limitation but does not undermine the overall structural determination."
+    "status_reasoning": "Claims C4, C17-C21 provide converging evidence from size-exclusion chromatography, negative-stain EM, and 3D reconstruction with appropriate resolution estimation using Fourier shell correlation. The structural characterization is well-documented with multiple complementary measurements and appropriate controls (cross-linked vs non-cross-linked samples)."
   },
   {
     "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Using a novel internal GFP tagging method combined with EM, the authors localized all PRC2 subunits and their functional domains within the structure. EED WD40 is at Lobe A, RbAp48 WD40 at Lobe D, Ezh2 SANT domains between Lobes A-B, Ezh2 SET domain at Lobe B, Suz12 N-terminus at Lobe C terminating at Lobe B, and AEBP2 running from Lobe A/Arm 1 to Arm 2/Lobe D. The complex contains a single copy of each subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C37-C50 describe a systematic localization strategy using multiple tagged constructs with redundant labeling positions. The observation of single tag densities per construct (C49) supports stoichiometry claims. The localizations are internally consistent with cross-linking data (C42) and integrate well with known crystal structures, providing strong converging evidence for the architectural model."
+  },
+  {
+    "result_id": "R3",
     "claim_ids": [
       "C22",
       "C23",
@@ -31,208 +51,97 @@
       "C27",
       "C28",
       "C29",
-      "C30",
       "C31",
       "C32",
       "C33",
       "C34",
-      "C35"
+      "C35",
+      "C36"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Chemical cross-linking with isotope-labeled DSSG combined with mass spectrometry identified extensive inter- and intra-molecular interactions within PRC2-AEBP2. Key findings include: EED WD40 interacts with Ezh2 N-terminus; Ezh2 SANT domains interact with each other and with AEBP2/Suz12; the SET domain of Ezh2 and Zn fingers of Suz12 and AEBP2 form a trimeric subcomplex; RbAp48, central Suz12, and AEBP2 undergo extensive interactions. AEBP2 plays a major coordinating role, explaining its stabilizing effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The reconstitution strategy and stabilization approach are well-documented. The tetrameric PRC2 showed conformational flexibility (C25), which was addressed by adding AEBP2 cofactor and mild glutaraldehyde cross-linking (0.015%). The improved quality of 2D class averages after cross-linking (C34) validates this approach. The biochemical homogeneity is confirmed by SDS-PAGE analysis."
+    "status_reasoning": "Claims C22-C36 describe cross-linking data validated against known crystal structures (C22, C31) and consistent with EM localization data. The use of isotope-labeled cross-linkers with appropriate mass spectrometry identification provides rigorous evidence. The cross-linking distances are appropriate for the DSSG linker length, and the data converge with structural localization to support the interaction map and AEBP2's coordinating role."
   },
   {
-    "result_id": "R3",
+    "result_id": "R4",
     "claim_ids": [
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
+      "C30",
+      "C38",
+      "C57",
+      "C58",
+      "C60",
+      "C62",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Integration of the EM structure with existing crystal structures reveals the spatial organization of functional domains. The Ezh2 SET domain forms a structural core with EED WD40 and Suz12 VEFS domains. The two SANT domains of Ezh2 are positioned between EED WD40 and the SET domain. The two WD40 domains (EED and RbAp48) are ~100 \u00c5 apart at opposite ends of the structure, consistent with the length of a histone H3 tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C30, C38, C57-C58, C60, C62, C69-C71 integrate crystallographic data with the EM structure through rigid-body docking validated by tag localization. The ~100 \u00c5 distance measurement between WD40 domains (C70) is directly observable from the structure and the comparison to histone H3 tail length (C71) is based on established structural knowledge, providing a reasonable structural interpretation."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
       "C51",
       "C52",
       "C53",
       "C54",
       "C55",
       "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C128",
-      "C129",
-      "C130"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The cross-linking/mass spectrometry interaction map is well-supported by appropriate methodology (isotope-labeled DSSG cross-linker, xQuest analysis). The cross-linking data are validated against known crystal structures (C43, C51), showing consistency. The identification of AEBP2 as a central interaction hub (C57) is supported by multiple independent cross-links. The extensive interactions are consistent with previous biochemical data (C56)."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C60",
       "C61",
+      "C63",
       "C64",
-      "C65",
       "C66",
-      "C68",
-      "C69",
-      "C70",
-      "C40"
+      "C67"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The localization of EED WD40 domain to Lobe A is well-supported by multiple independent tags (internal GFP at positions 115 and 370, plus MBP-Ezh2 N-terminus). The novel internal GFP tagging method successfully overcame limitations of terminal tags. The positioning is validated by consistency with known EED-Ezh2 crystal structure (C69) and allows accurate placement of the histone H3-binding site (C70)."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The localization of RbAp48 WD40 domain to Lobe D is supported by indirect tagging via Suz12-GFP123, which exploits the known Suz12-RbAp48 interaction. The docking of Drosophila RbAp48-Suz12 crystal structure into the density shows high fidelity (C74). The inferred histone H3 tail orientation (C75) is a reasonable inference based on the docked structure, though it remains a model."
+    "result": "The authors propose mechanistic models for PRC2 regulation based on their structure. They suggest that SANT domains may transmit H3K27me3 binding signals from EED to the SET domain, and that the proximity of Suz12 VEFS and Ezh2 SET domains explains how H3K4me3/H3K36me2-3 inhibition could be transferred to regulate methyltransferase activity. These models integrate prior biochemical findings with the new structural context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C51-C56 accurately cite prior biochemical work, but claims C61, C63-C64, C66-C67 are explicitly speculative mechanistic proposals based on structural proximity. While the structural positioning is well-established, the functional implications (signal transmission, allosteric regulation) are hypotheses requiring experimental validation. The authors appropriately use conditional language ('suggests', 'could', 'possibly'), but these remain untested predictions."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C76",
-      "C77",
-      "C78",
-      "C79"
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C59",
+      "C65",
+      "C68"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The manuscript provides extensive background on PRC2 function, including its essential role in gene silencing through H3K27 tri-methylation, the evolutionary conservation of PcG/TrxG complexes, AEBP2's role as a cofactor, developmental importance, substrate preferences, and prior structural knowledge of individual subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The localization of Ezh2 domains is well-supported by multiple internal GFP tags at strategic positions (after first SANT at 303, before second SANT at 436, flanking SET domain). The proximity of the two SANT domains is independently validated by cross-linking data (C78). The SET domain localization to Lobe B is consistent with cross-linking showing interactions with Suz12 and AEBP2 Zn fingers."
+    "status_reasoning": "Claims C1-C3, C8-C16, C59, C65, C68 represent established knowledge in the field, appropriately cited from prior literature. These background claims are well-supported by the cited references and represent accurate summaries of the current understanding of PRC2 biology. No issues with misattribution or inaccurate general knowledge claims are evident."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C80",
-      "C81"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The Suz12 chain path is inferred from limited tagging data (Suz12-GFP269 and Suz12-\u0394C-GFP). The N-terminus and C-terminus localizations are reasonable, but the proposed path through Arm2 (C81) is speculative. The authors acknowledge this with 'most likely,' indicating uncertainty. Additional tags along the Suz12 chain would strengthen this assignment."
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The AEBP2 chain path is well-supported by multiple tags (GFP84, GFP115, C-terminal GFP) and extensive cross-linking data. The Zn finger localization near Lobe A/Arm 1 is validated by cross-links to EED and Ezh2 SANT1 (C83). The C-terminal localization is supported by cross-links to central Suz12 (C85). The opposite directionality relative to Suz12 (C86) is a reasonable inference from the combined data."
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C87",
-      "C88"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The stoichiometry determination (single copy of each subunit) is supported by observation of only one additional density per tagged complex across all labeling experiments. This is consistent with biochemical data showing stoichiometric complex by SDS-PAGE. The successful localization of all subunits confirms the structure contains all purified components."
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
       "C6",
-      "C89",
-      "C94",
-      "C95",
-      "C117"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The comprehensive architectural model is supported by convergent evidence from multiple orthogonal techniques: EM structure, cross-linking/MS, internal tagging, and integration with existing crystal structures. The redundancy and consistency across methods (C89) provides strong validation. This represents a significant advance over previous limited structural knowledge (two isolated domains)."
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
       "C7",
-      "C45",
-      "C57"
+      "C72",
+      "C73",
+      "C74"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The proposed allosteric role of AEBP2 (C7) is an interpretation based on its position and stabilization effect. While AEBP2 clearly acts as an interaction hub (C45, C57) and stabilizes the complex, the specific mechanism of allosteric regulation is not directly demonstrated. This remains a hypothesis requiring functional validation through mutagenesis or activity assays."
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C8",
-      "C9",
-      "C70",
-      "C75",
-      "C102",
-      "C103"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The authors conclude that their structure provides an invaluable framework for understanding PRC2 function, suggests an allosteric role for AEBP2, localizes histone-binding regions near the methyltransferase site, and is expected to be conserved across higher eukaryotes. The work generates testable hypotheses for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The localization of histone-tail binding regions (EED and RbAp48 WD40 domains) near the SET methyltransferase site is well-supported by the structural data. The EED H3-binding site at Lobe A/Arm 2 intersection (C70) and RbAp48 at Lobe D facing the SET domain provide a structural basis for chromatin-based regulation. The formation of a structural core (C102) is directly observed in the EM density."
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C111",
-      "C113"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The proposed regulatory mechanisms are reasonable inferences based on structural proximity and known SANT domain function (C104), but they remain mechanistic hypotheses. The proximity of SANT domains to the SET domain (C105) and VEFS to SET (C106) suggests potential regulatory interactions, but the actual allosteric mechanisms are not demonstrated. These models require functional validation through mutagenesis and activity assays."
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C114",
-      "C115",
-      "C116"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The hypothesis that PRC2 can simultaneously bind two nucleosomes is based on the elongated shape and WD40 domain spacing (~16 nm matching di-nucleosome spacing of ~15 nm). While this is a reasonable structural inference supported by known substrate preference (C114), it remains speculative. Direct demonstration of di-nucleosome binding in the context of the full complex structure would be needed for full support."
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C90",
-      "C118",
-      "C119",
-      "C120"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "These claims about the utility and implications of the structural model are appropriate forward-looking statements. The structure does provide a framework for interpreting previous biochemical data (C118) and generates testable hypotheses (C119). The expectation of conservation across higher eukaryotes (C120) is reasonable given sequence similarity, though this is a prediction rather than a demonstrated result."
+    "status_reasoning": "Claims C6-C7 are reasonable inferences from the structural and cross-linking data showing AEBP2's extensive interactions and the proximity of histone-binding domains to the catalytic site. Claim C72 is a reasonable inference based on known sequence conservation. Claims C73-C74 are appropriate summary statements about the contribution of the work. These conclusions are proportionate to the evidence presented and appropriately distinguish between demonstrated findings and future directions."
   }
 ]

@@ -1,76 +1,42 @@
 [
   {
     "claim_id": "C1",
-    "claim": "A protein is found in the main olfactory epithelium of mice.",
-    "claim_type": "EXPLICIT",
-    "source_text": "A protein that is found in the main olfactory epithelium of mice",
-    "evidence_type": [
-      "DATA"
-    ],
-    "evidence_reasoning": "The statement refers to a specific protein localized to a specific tissue in mice, which would be based on experimental observation or data from the study being discussed."
-  },
-  {
-    "claim_id": "C2",
-    "claim": "The protein ensures that odour-sensing neurons that are active have longer lifespans than those that are inactive.",
+    "claim": "A protein found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active have longer lifespans than those that are inactive.",
     "claim_type": "EXPLICIT",
     "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
     "evidence_type": [
-      "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "This is the main finding being reported, which would be supported by experimental data comparing lifespan of active versus inactive neurons. The causal relationship ('ensures') involves inference from the experimental observations."
+    "evidence_reasoning": "This claim is stated in the abstract as a summary of findings, but no experimental data, measurements, or citations are provided in the manuscript excerpt to support it. It appears to be an inference about the content of the full paper."
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Neuronal activity influences lifespan of odour-sensing neurons in the main olfactory epithelium.",
+    "claim_type": "IMPLICIT",
+    "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
+    "evidence_type": [
+      "INFERENCE"
+    ],
+    "evidence_reasoning": "This claim is logically inferred from the statement that active neurons have longer lifespans than inactive ones, implying that activity level is a determinant of neuronal lifespan."
   },
   {
     "claim_id": "C3",
-    "claim": "Active odour-sensing neurons have longer lifespans than inactive odour-sensing neurons.",
-    "claim_type": "EXPLICIT",
-    "source_text": "odour-sensing neurons that are active to have longer lifespans than those that are inactive",
+    "claim": "There is a differential survival mechanism between active and inactive odour-sensing neurons in mice.",
+    "claim_type": "IMPLICIT",
+    "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
     "evidence_type": [
-      "DATA"
+      "INFERENCE"
     ],
-    "evidence_reasoning": "This is a direct observational claim about differential lifespans between active and inactive neurons, which would be measured experimentally."
+    "evidence_reasoning": "The existence of different lifespans based on activity status implies a mechanism that differentially affects survival of these neuron populations, though the specific mechanism is not detailed in this excerpt."
   },
   {
     "claim_id": "C4",
-    "claim": "Odour-sensing neurons exist in the main olfactory epithelium of mice.",
-    "claim_type": "IMPLICIT",
-    "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans",
+    "claim": "A specific protein mediates the relationship between neuronal activity and lifespan in olfactory neurons.",
+    "claim_type": "EXPLICIT",
+    "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
     "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "The presence of odour-sensing neurons in the olfactory epithelium is established scientific knowledge and is implied by the discussion of these neurons in this tissue."
-  },
-  {
-    "claim_id": "C5",
-    "claim": "Neuronal activity influences the lifespan of odour-sensing neurons.",
-    "claim_type": "IMPLICIT",
-    "source_text": "odour-sensing neurons that are active to have longer lifespans than those that are inactive",
-    "evidence_type": [
-      "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "The differential lifespan based on activity status implies that activity level is a factor influencing neuronal lifespan, inferred from the comparative data presented."
-  },
-  {
-    "claim_id": "C6",
-    "claim": "The protein's function is related to neuronal lifespan regulation.",
-    "claim_type": "IMPLICIT",
-    "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "The protein 'ensures' differential lifespan, implying its functional role is in regulating or maintaining neuronal lifespan, which is inferred from the experimental findings."
-  },
-  {
-    "claim_id": "C7",
-    "claim": "There is a mechanism linking neuronal activity to neuronal survival in the olfactory system.",
-    "claim_type": "IMPLICIT",
-    "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "The protein-mediated connection between activity status and lifespan implies the existence of a molecular mechanism linking activity to survival, inferred from the described relationship."
+    "evidence_reasoning": "The abstract explicitly states that 'a protein' ensures the lifespan difference, indicating protein-mediated regulation, though no experimental evidence is provided in this excerpt."
   }
 ]

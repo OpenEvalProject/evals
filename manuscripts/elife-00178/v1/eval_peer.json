@@ -2,123 +2,147 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C10",
-      "C11",
-      "C12",
-      "C15",
-      "C16",
-      "C53",
-      "C67",
-      "C68",
-      "C88",
-      "C89",
-      "C116",
-      "C117",
-      "C118"
+      "C9",
+      "C15"
     ],
+    "result": "The authors identified >200 transcripts (specifically 229) showing NOVA-dependent changes in abundance using microarray profiling with a log2 magnitude change cutoff of 0.3.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers express significant concern about the pilocarpine-induced seizure experiments, noting that 'pilocarpine-induced seizures are known to cause oxidative damage and neuronal loss' and questioning whether the treatment 'directly impacts Nova-dependent splicing activity.' They request the authors 'mention the caveats of this experiment, soften their conclusions, and modify the manuscript title,' indicating uncertainty about whether the observed changes reflect dynamic electrical activity-dependent regulation or indirect pathological effects."
+    "status_reasoning": "Reviewers explicitly questioned the liberal cutoff used in microarray analysis, noting that a log2 change of 0.3 corresponds to less than 1.25-fold change. They requested qRT-PCR validation across the range of 229 genes to assess false-positive rates and suggested the descriptor 'widespread' may be overstated, indicating uncertainty about the reliability of these findings."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C6",
-      "C7",
-      "C42",
-      "C85"
+      "C2",
+      "C16",
+      "C18",
+      "C19",
+      "C64"
     ],
+    "result": "HITS-CLIP analysis revealed that NOVA binding to transcripts showing steady-state changes was primarily in intronic sequences (76-90% in nucleus) rather than 3' UTRs (63% in cytoplasm), with nuclear HITS-CLIP tags enriched in introns and cytoplasmic tags enriched in 3' UTRs.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers propose 'a possible alternative model for the physiological relevance' suggesting that 'Nova-dependent suppression of cryptic exons serves as a mechanism to ensure that specific neuronal transcripts are not spuriously expressed in non-neuronal cells' rather than dynamic regulation in neurons. They request additional experiments in non-neural cells to test this alternative interpretation, indicating the mechanism and biological significance remain uncertain."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers acknowledged this finding without criticism, noting that 'the use of HITS-CLIP to identify novel exons that function in regulating transcript levels is a clever application of an already powerful genome-wide approach.' The distribution of NOVA binding sites was accepted as part of the overall methodology."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C4",
-      "C28"
+      "C3",
+      "C23",
+      "C29",
+      "C33"
     ],
+    "result": "The authors discovered NOVA-regulated cryptic exons within introns of transcripts showing NOVA-dependent changes, identifying these previously unannotated exons (termed 'occult exons') in 9 of 11 transcripts with orphan intronic NOVA binding sites, including specific examples like Dlg3.15-16-17 and Scn9a E17a that harbor premature termination codons.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers challenge the identification of >200 transcripts showing NOVA-dependent changes, stating 'the authors utilize a liberal cutoff' where 'a magnitude log2 change of 0.3 corresponds to slightly less than a 1.25 fold ratio change.' They note 'it is unlikely that estimated changes in this range will validate at the same rate as those changes estimated to be >1.5 fold' and request qRT-PCR validation 'to assess false-positive rates,' suggesting the extent of regulation may be overstated."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly praised this finding, stating 'the identification of a coherent network of splicing events subject to this mode of regulation, with potentially important roles in the synapse, is a significant advance' and that 'the use of HITS-CLIP to identify novel exons that function in regulating transcript levels is a clever application.' No concerns were raised about these discoveries."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C1",
-      "C2",
-      "C3",
-      "C5",
-      "C29",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
       "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34"
+      "C31"
     ],
+    "result": "Cryptic exons regulated by NOVA trigger nonsense-mediated decay (NMD), as demonstrated by experiments showing that UPF1 knockdown and protein synthesis inhibition (emetine treatment) were required for NOVA's effect on RNA and protein levels in multiple transcripts including Dlg3 and Scn9a.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers acknowledge these findings about NOVA binding patterns and subcellular localization without raising concerns. They note 'the use of HITS-CLIP to identify novel exons that function in regulating transcript levels is a clever application of an already powerful genome-wide approach,' indicating acceptance of the HITS-CLIP data showing intronic versus 3' UTR binding patterns."
+    "status_reasoning": "Reviewers accepted the NMD mechanism without criticism, acknowledging that 'regulation of transcript levels via alternative splicing coupled to NMD has already been described in several biological contexts' but noting the authors' contribution was 'the identification of a coherent network of splicing events subject to this mode of regulation.' The experimental evidence for NMD involvement was not questioned."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C35",
-      "C36",
-      "C37",
-      "C38",
-      "C39",
-      "C40",
-      "C41"
+      "C5",
+      "C6",
+      "C44",
+      "C45",
+      "C103"
     ],
+    "result": "The authors claim that NMD exons regulated by NOVA are dynamically regulated by seizures, which induce changes in Nova subcellular localization (nuclear to cytoplasmic shift), revealing a mechanism linking electrical activity to splicing and protein output.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reviewers do not challenge the Dlg3 experimental findings. They acknowledge 'Nova-dependent suppression or activation of the PTC-introducing exons promotes increased or decreased transcript/protein levels' as part of their summary, implicitly accepting the Dlg3 data as an example of this mechanism."
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers raised significant concerns about this conclusion, noting that 'pilocarpine-induced seizures are known to cause oxidative damage and neuronal loss' and requesting the authors 'attempt to address whether this treatment directly impacts Nova-dependent splicing activity.' They explicitly asked authors to 'mention the caveats of this experiment, soften their conclusions, and modify the manuscript title,' indicating substantial uncertainty about whether the observed effects represent direct dynamic regulation or secondary consequences of seizure-induced damage."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48"
+      "C36",
+      "C37",
+      "C38",
+      "C75",
+      "C76"
     ],
+    "result": "Very few splicing changes were detected after pilocarpine-induced seizure (only 23 exons at 24hr and 96 at 4hr using stringent criteria), indicating that pilocarpine does not have a global impact on Nova splicing activity and alternative splicing regulation is not globally perturbed within 24 hr of epileptic seizure.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reviewers do not raise concerns about the Scn9a findings. They acknowledge the mechanism where 'Nova-dependent suppression or activation of the PTC-introducing exons promotes increased or decreased transcript/protein levels,' with Scn9a serving as an example of NOVA-dependent increases in protein levels through NMD regulation."
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers did not directly critique these specific numbers, their concern about pilocarpine causing 'oxidative damage and neuronal loss' and request to address whether the treatment 'directly impacts Nova-dependent splicing activity' casts uncertainty on the interpretation of these limited splicing changes. The reviewers' request to soften conclusions suggests they view the seizure experiments as potentially confounded."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C49",
-      "C50",
-      "C51"
+      "C8",
+      "C42",
+      "C43",
+      "C56"
     ],
+    "result": "Nova haploinsufficient (Nova2+/-) mice exhibit spontaneous epilepsy, including frequent bilateral synchronous cortical epileptiform discharges and spontaneous generalized seizures, demonstrating that NOVA haploinsufficiency is sufficient to induce epilepsy.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers praise the identification of cryptic exons, stating 'the identification of a coherent network of splicing events subject to this mode of regulation, with potentially important roles in the synapse, is a significant advance' and noting 'the use of HITS-CLIP to identify novel exons that function in regulating transcript levels is a clever application,' indicating acceptance of these findings."
+    "status_reasoning": "Reviewers did not raise concerns about the epilepsy phenotype in Nova2+/- mice. This finding was presented as part of the overall narrative connecting NOVA function to epilepsy, and reviewers acknowledged the work's appeal to 'researchers in the fields of gene regulation and neurobiology' without questioning these specific observations."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C14",
-      "C63",
-      "C64",
-      "C65",
-      "C66"
+      "C20",
+      "C21",
+      "C22",
+      "C46",
+      "C47",
+      "C48"
     ],
+    "result": "NOVA regulates transcript and protein levels through both intronic NMD exon regulation (e.g., ~90% reduction in Dlg3 mRNA and DLG3 protein) and 3' UTR binding (e.g., ~50% effect on Dlg3, 25-65% stabilization in reporter assays, ~30-35% reduction in Syngr3).",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Reviewers do not challenge the findings about spontaneous epilepsy in Nova haploinsufficient mice. These data are not mentioned in the critique, suggesting implicit acceptance of the EEG recordings and the conclusion that NOVA haploinsufficiency causes epilepsy."
+    "status_reasoning": "Reviewers acknowledged that 'Nova binding to 3\u2032UTR sequences appears to control the levels of some transcripts' alongside the more widespread intronic mechanism, accepting both mechanisms without specific criticism. The quantitative data on protein and mRNA changes were not questioned."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C49",
+      "C7",
+      "C39",
+      "C40"
+    ],
+    "result": "NOVA-regulated NMD exons control steady-state mRNA levels in a bidirectional manner (7 transcripts with NOVA-dependent inclusion correlating with increased levels in DKO; 4 with NOVA-dependent suppression correlating with decreased levels), affecting transcripts enriched for synaptic proteins and proteins implicated in epilepsy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers praised 'the identification of a coherent network of splicing events subject to this mode of regulation, with potentially important roles in the synapse' as 'a significant advance.' They acknowledged the work would 'appeal to researchers in the fields of gene regulation and neurobiology,' accepting the bidirectional regulation and functional enrichment findings."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose that NOVA-dependent regulation through NMD represents a mechanism for dynamic RNA regulation linking electrical activity to splicing and protein output, mediating homeostatic excitation/inhibition balance in neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers questioned the strength of conclusions about dynamic regulation by electrical activity, requesting authors 'soften their conclusions' about seizure experiments. They also suggested an alternative model that 'Nova-dependent suppression of cryptic exons serves as a mechanism to ensure that specific neuronal transcripts are not spuriously expressed in non-neuronal cells,' indicating the physiological interpretation remains uncertain and alternative explanations should be considered."
   }
 ]

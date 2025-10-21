@@ -3,40 +3,74 @@
     "result_id": "R1",
     "claim_ids": [
       "C2",
-      "C20",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C67"
+      "C3",
+      "C36",
+      "C37",
+      "C39",
+      "C40"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "XPD helicase unwinds DNA in 1-bp steps with frequent backsteps. The majority of backsteps measure 1 bp, while less common large backsteps span ~4.6 bp. Both step sizes are independent of ATP concentration, and backsteps are very frequent for XPD compared to other helicases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The 1-bp step size is directly measured using high-resolution optical tweezers with multiple independent analyses (PWD and step-fitting). The step size is consistent across ATP concentrations and confirmed by quantitative measurements (1.0 \u00b1 0.4 bp). The evidence is strong and reproducible."
+    "status_reasoning": "Claims C2, C3, C36, C37, C39, and C40 are all directly supported by high-resolution optical tweezers data with single base pair resolution. The step-fitting algorithm quantitatively confirms 1-bp forward steps and backsteps, and the ATP-independence of step sizes is demonstrated across multiple ATP concentrations. The novelty claim (C40) is appropriately qualified with 'to our knowledge.'"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C21",
-      "C22",
-      "C30",
-      "C31",
-      "C32",
-      "C47"
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "XPD undergoes conformational transitions manifested in 5-bp backward and forward steps. These large backsteps are almost always followed by equal-size forward steps, suggesting XPD tracks its position along the hairpin. The probability of 5-bp backsteps is low (5-10%), depends weakly on ATP, and inversely on force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Low processivity (~12 \u00b1 3 bp per burst) and repetitive unwinding behavior are directly observed across 363 traces with quantitative measurements of re-annealing rates (>100 bp/s) and burst sizes. The behavior is consistent and well-characterized."
+    "status_reasoning": "Claims C4, C43, C44, C45, C46, C48, and C49 are well-supported by quantitative experimental data. The pairing of 5-bp backsteps with forward steps is directly observed (C43), the interpretation that XPD tracks position (C44) is a reasonable inference from this correlation, and the ATP-independence of dwell times (C48) with exponential distributions (C49) supports a conformational mechanism distinct from ATP-driven stepping."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C48",
-      "C49",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C27"
+    ],
+    "result": "XPD exhibits repetitive, non-processive unwinding bursts with low processivity (12 \u00b1 3 bp per burst). During bursts, the hairpin gradually unfolds then suddenly re-anneals in large backward jumps (~6.3 bp) at high rates (>100 bp/s) that are ATP-independent, suggesting XPD can backslide without dissociating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C13-C17, C19, and C27 are directly supported by experimental observations in Figure 1D and quantitative measurements. The repetitive burst behavior, re-annealing characteristics, and low processivity are all quantified with appropriate statistics (N=144 bursts). The inference that XPD backslides without dissociating (C19) is reasonable given the ATP-independence and the structural basis provided by the ARCH domain."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-molecule XPD activity requires a minimum 10-nt loading site, while processive activity requires \u226519 nt to accommodate multiple helicases. Titration experiments show that low-processivity behavior is due to single-XPD activity (kon = 0.28 \u00b1 0.01 s\u207b\u00b9nM\u207b\u00b9, kd = 5 nM), while processive activity requires cooperative action of at minimum two monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C28-C35 are well-supported by systematic experiments varying loading site length and XPD concentration. The linear dependence of 1/\u03c41 on [XPD] (C30) supports single-protein binding (C31), while the higher-order dependence of 1/\u03c42 (C33) supports multi-protein requirement. The kinetic parameters are determined from appropriate fitting, and the kd value agrees with independent bulk measurements, providing external validation."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
       "C50",
       "C51",
       "C52",
@@ -46,170 +80,114 @@
       "C56",
       "C57",
       "C58",
-      "C59",
-      "C60"
+      "C70"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "XPD unwinding is highly sequence-dependent and utilizes spontaneous opening of the duplex. The helicase stalls when popen < ~0.1, and the forward stepping rate kF varies linearly with popen but with a non-zero offset, indicating a 'partially active' mechanism where the fork is destabilized by 1.9 kBT. This sequence dependence explains XPD's low processivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple rigorous control experiments demonstrate single-molecule activity: loading site length requirements (\u226510 nt for activity, \u226519 nt for processivity), linear concentration dependence for first binding, and higher-order dependence for processive activity. The kinetic parameters (Kd = 5 nM) match bulk studies."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C3",
-      "C23",
-      "C24",
-      "C68",
-      "C72",
-      "C74"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Frequent 1-bp backsteps are directly observed in high-resolution traces and quantified across ATP concentrations and sequences. The backsteps are much more frequent than in other helicases (e.g., NS3), and statistical analysis shows their direction is independent of preceding steps."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C4",
-      "C25",
-      "C69",
-      "C70",
-      "C73",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C80",
-      "C81"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Large ~5-bp backsteps (\u22124.6 \u00b1 0.9 bp) are consistently observed and always paired with equal-size forward steps (4.4 \u00b1 0.9 bp), indicating position memory. The ATP-independent, exponentially distributed dwell times support a single rate-limiting conformational step. This is a novel observation not previously reported for helicases."
+    "status_reasoning": "Claims C5, C50-C58, and C70 are supported by systematic analysis of stepping dynamics across different sequences with near base-pair registration. The linear dependence of kF on popen (C54) is directly observed, and the non-zero offset (C55-C56) distinguishes this from a strictly passive model. The global kinetic model fits the data well (reduced \u03c7\u00b2 = 3.6 vs 6.7 for passive model), and the derived translocation rate (~10 nt/s) agrees excellently with independent measurements (C58), providing strong validation."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C136"
+      "C41",
+      "C42",
+      "C47"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The probability of 1-bp backsteps varies inversely with ATP but remains significant (~15%) at saturating ATP. The direction of each 1-bp step is independent of the preceding step, and dwell times between 1-bp steps exhibit Michaelis-Menten-like behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Strong correlation between stepping kinetics and DNA sequence is demonstrated with near base-pair resolution across three different sequences. Processivity is limited by regions of low opening probability, and backstepping probability increases when opening probability decreases. The position-dependent analysis is rigorous."
+    "status_reasoning": "Claims C41, C42, and C47 are directly supported by quantitative analysis of stepping statistics. The ATP-dependence of p\u2212 (C41) is clearly shown in Figure 4E, the independence of consecutive steps (C42) is demonstrated by showing that pair probabilities equal products of individual probabilities, and the Michaelis-Menten behavior (C47) is evident in Figure 4F. These observations are consistent with the proposed kinetic model."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C5",
-      "C27",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92"
+      "C20",
+      "C21",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The linear dependence of forward rate on opening probability with a non-zero offset (indicating 1.9 kBT destabilization) is clearly demonstrated. A strictly passive model yields poorer fits (\u03c7\u00b2 = 6.7 vs 3.6), supporting the partially active mechanism. The evidence directly addresses the long-standing debate about helicase unwinding mechanisms."
+    "result": "The 5-bp backsteps are proposed to involve rearrangements of the translocating strand relative to a secondary DNA binding site that accommodates ~5 nt. This secondary site separates the motor core from the wedge structure, and unwinding occurs only when DNA resides within this site. The site controls translocation and stalls the helicase at UV-induced damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C61-C69 propose a structural mechanism for 5-bp backsteps based on existing structural data (C20, C62-C64) and the observed stepping behavior. While the mechanism is plausible and consistent with the data (pairing of backsteps/forward steps, force dependence), it remains a proposed model requiring validation by ternary complex structures. The authors appropriately acknowledge this ('we propose,' 'likely involve'), and alternative mechanisms cannot be fully ruled out. The functional roles (C68-C69) are supported by citations but are inferences about the secondary site's role."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C28",
-      "C97",
-      "C98",
-      "C99",
-      "C100",
-      "C101",
-      "C102"
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "XPD's backsliding mechanism differs from Rep helicase 'repetitive shuttling' and is inconsistent with translocation on the opposite strand or DNA looping. Re-annealing occurs in multiple jumps rather than single snapback, and loop formation is unlikely at the applied tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The kinetic model quantitatively explains low processivity through sequence dependence. The threshold opening probability (~0.1) where forward and reverse rates balance predicts stall positions to within 1 bp across different sequences and forces. The predictive power of the model is strong."
+    "status_reasoning": "Claims C18, C22-C26 provide comparative analysis ruling out alternative mechanisms. The ATP-independence and high rate of re-annealing (C16-C17) support the inference that it's inconsistent with opposite-strand translocation (C18). The comparison to Rep (C22-C24) is appropriate, and the data showing multiple jumps rather than single snapback (C25) disfavors a looping mechanism. The argument about loop formation at applied tension (C26) is a reasonable inference from DNA mechanics."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C137",
-      "C138"
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The global kinetic model with 8 parameters simultaneously fits multiple independent datasets (ATP dependence, sequence dependence, backstep probabilities, dwell times). The fitted translocation rate (~10 nt/s) matches independent measurements (13 \u00b1 2 nt/s), and stochastic simulations reproduce experimental features, validating the model."
+    "result": "The authors speculate that the unwinding mechanism may be universal for DNA helicases moving along phosphodiester backbones, particularly SF2B helicases. XPD's inefficient, sequence-dependent unwinding is proposed to be suitable for its cellular roles in NER and transcription, with protein partners potentially playing regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C6, C72-C77, and C81 are explicitly speculative statements about broader implications and biological function. While the speculation is reasonable given the conserved architecture of SF2B helicases (C76) and known functions of XPD (C78-C80), these claims extend beyond the experimental data presented. The authors appropriately qualify these as speculation ('may be,' 'likely reflects,' 'we speculate'), but experimental validation of these broader claims would require additional studies on other helicases and in cellular contexts."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C117",
-      "C118",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132",
-      "C133"
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C38",
+      "C59",
+      "C60",
+      "C78",
+      "C79",
+      "C80"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "While the proposed mechanism based on secondary binding site rearrangements is consistent with structural data and explains the observed pairing of 5-bp backsteps with forward steps, the authors acknowledge that ternary complex structures are required for validation. Alternative mechanisms are ruled out, but direct structural evidence is lacking."
+    "result": "Background claims about helicase superfamilies, XPD classification and function, limitations of previous studies, and structural features of SF1A vs SF2 helicases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C7-C12, C38, C59-C60, and C78-C80 represent established knowledge from the literature or appropriate characterization of prior work. These are well-supported by citations and represent accurate statements about the field. The assessment of previous studies' limitations (C10-C11) is fair and justified by the higher resolution achieved in this work."
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C36",
-      "C37",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C44"
+      "C71"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "When forward and reverse rates are equal (kF = kR), the average unwinding rate is zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The backsliding mechanism (distinct from backsteps) is supported by multiple lines of evidence: re-annealing occurs in multiple jumps rather than single snapback, loop formation is unlikely at applied tension, and kinetic analysis disfavors a looping mechanism. The ARCH domain structure provides a plausible basis for backsliding without dissociation."
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C103",
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111",
-      "C112",
-      "C113"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The biological interpretation connecting inefficient unwinding to cellular function is speculative. While the sequence-dependence may be suitable for NER and transcription roles, and XPD has documented functions outside TFIIH, the mechanistic link between measured biochemical properties and in vivo function requires further validation with protein partners and cellular contexts."
+    "status_reasoning": "Claim C71 is a mathematical consequence of the kinetic model where velocity v = d(kF - kR). When kF = kR, v = 0. This is a logically sound statement derived from the model definition and does not require experimental validation."
   }
 ]

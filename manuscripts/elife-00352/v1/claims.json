@@ -1,74 +1,56 @@
 [
   {
     "claim_id": "C1",
-    "claim": "Experiments on transgenic mice have been conducted to study sensory neurons in the skin.",
+    "claim": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex than expected.",
     "claim_type": "EXPLICIT",
     "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ],
-    "evidence_reasoning": "The claim references experiments that were performed, indicating empirical research was conducted."
+    "evidence_reasoning": "The claim references experimental results from transgenic mice studies (DATA), and the assessment of complexity being greater than expected involves interpretation of those results (INFERENCE)."
   },
   {
     "claim_id": "C2",
-    "claim": "The morphologies of sensory neurons in the skin of mice are more complex than previously expected.",
+    "claim": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more diverse than expected.",
     "claim_type": "EXPLICIT",
     "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ],
-    "evidence_reasoning": "This finding is presented as a result revealed by the experiments, indicating it is supported by experimental data."
+    "evidence_reasoning": "The claim references experimental results from transgenic mice studies (DATA), and the assessment of diversity being greater than expected involves interpretation of those results (INFERENCE)."
   },
   {
     "claim_id": "C3",
-    "claim": "The morphologies of sensory neurons in the skin of mice are more diverse than previously expected.",
-    "claim_type": "EXPLICIT",
+    "claim": "Transgenic mice can be used to study the morphologies of sensory neurons in the skin.",
+    "claim_type": "IMPLICIT",
     "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "KNOWLEDGE"
     ],
-    "evidence_reasoning": "This finding is presented as a result revealed by the experiments, indicating it is supported by experimental data."
+    "evidence_reasoning": "The statement that experiments on transgenic mice revealed morphological information implies that transgenic mice are a valid experimental model for this purpose (KNOWLEDGE), supported by the experimental data referenced (DATA)."
   },
   {
     "claim_id": "C4",
-    "claim": "Prior to these experiments, there was an expectation about the complexity and diversity of sensory neuron morphologies in mouse skin.",
+    "claim": "There was a prior expectation about the complexity and diversity of sensory neuron morphologies in mouse skin.",
     "claim_type": "IMPLICIT",
     "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
     "evidence_type": [
       "INFERENCE"
     ],
-    "evidence_reasoning": "The phrase 'than expected' implies that there was a pre-existing expectation or understanding that the new findings contradict or exceed."
+    "evidence_reasoning": "The phrase 'than expected' implies there was a baseline expectation or prior understanding against which the new findings are being compared."
   },
   {
     "claim_id": "C5",
-    "claim": "Transgenic mice can be used as a model system to reveal morphological features of sensory neurons in skin.",
-    "claim_type": "IMPLICIT",
-    "source_text": "Experiments on transgenic mice have revealed that the morphologies of sensory neurons in the skin of mice are more complex and diverse than expected.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ],
-    "evidence_reasoning": "The successful revelation of morphological features through transgenic mouse experiments implies that this is a viable experimental approach for studying these structures."
-  },
-  {
-    "claim_id": "C6",
-    "claim": "Sensory neurons have nerve endings in the skin.",
-    "claim_type": "IMPLICIT",
-    "source_text": "Nerve endings reveal hidden diversity in the skin",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ],
-    "evidence_reasoning": "The title references nerve endings in the skin, which draws on established anatomical knowledge that sensory neurons terminate as nerve endings in skin tissue."
-  },
-  {
-    "claim_id": "C7",
-    "claim": "There is hidden diversity in the skin that can be revealed through studying nerve endings.",
+    "claim": "Nerve endings in the skin exhibit hidden diversity.",
     "claim_type": "EXPLICIT",
     "source_text": "Nerve endings reveal hidden diversity in the skin",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ],
-    "evidence_reasoning": "The title and abstract together indicate that the experiments revealed previously hidden diversity, suggesting this is a finding from the research."
+    "evidence_reasoning": "The title asserts that nerve endings reveal hidden diversity, which is supported by the experimental findings described in the abstract (DATA and INFERENCE from those findings)."
   }
 ]

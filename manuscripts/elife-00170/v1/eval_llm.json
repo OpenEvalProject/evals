@@ -9,151 +9,230 @@
       "C22",
       "C23",
       "C24",
-      "C68",
-      "C71",
-      "C72"
+      "C25",
+      "C26"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "TAF7L is enriched in adipocytes and white adipose tissue (WAT) in mouse. TAF7L mRNA and protein levels increase during adipocyte differentiation in both C3H10T1/2 and 3T3-L1 cells, with protein levels increasing more dramatically (5-10\u00d7) than mRNA levels (2-3\u00d7). TAF7L expression is highest in testis but also enriched in WAT compared to other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "TAF7L enrichment in adipocytes and WAT is well-supported by multiple orthogonal methods (RT-qPCR, Western blot) across different cell types and tissues. The modest mRNA increase (~2-fold) contrasted with dramatic protein elevation suggests post-transcriptional regulation, which is appropriately noted by the authors."
+    "status_reasoning": "Claims C2, C19-C26 provide converging evidence from RT-qPCR and Western blot analyses across multiple cell lines and mouse tissues. The data consistently show TAF7L enrichment in adipocytes and WAT, with appropriate controls and quantification. The findings are internally consistent across different experimental systems."
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C3",
       "C4",
-      "C28",
-      "C29",
       "C30",
       "C31",
       "C32",
       "C33",
-      "C34",
-      "C35"
+      "C36",
+      "C37"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Depletion of TAF7L by shRNA knockdown reduces adipocyte-specific gene expression and compromises adipocyte differentiation in C3H10T1/2 cells. TAF7L knockdown prevents induction of 88% of genes normally upregulated during adipogenesis, with the transcriptional profile of differentiated shTAF7L cells resembling undifferentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "TAF7L requirement for adipocyte differentiation is strongly supported by convergent evidence from shRNA knockdown, rescue experiments with shRNA-resistant TAF7LmA, specificity controls (TAF7 fails to rescue), and genome-wide mRNA-seq showing 88% of adipogenic genes fail to activate. The rescue experiment effectively addresses off-target concerns."
+    "status_reasoning": "Claims C3, C4, C30-C33, C36-C37 provide strong evidence from shRNA knockdown experiments, Oil red O staining, RT-qPCR, and genome-wide mRNA-seq analysis. The rescue experiment (C34-C35) with shRNA-resistant TAF7LmA further validates specificity. The high correlation (R=0.98) between shTAF7L-treated and undifferentiated cells strongly supports the conclusion."
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Introduction of shRNA-resistant TAF7LmA, but not TAF7, rescues adipocyte formation defects caused by TAF7L knockdown, demonstrating specificity of the TAF7L requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C34-C35 describe a well-designed rescue experiment that controls for off-target effects. The ability of TAF7LmA to restore adipogenesis while TAF7 cannot demonstrates that the phenotype is specifically due to TAF7L loss and not its paralogue TAF7, strengthening the specificity of the findings."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
       "C5",
-      "C36",
-      "C37",
       "C38",
       "C39",
       "C40",
       "C41",
       "C42",
       "C43",
-      "C91"
+      "C44"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Loss of Taf7l impairs WAT development in vivo, as demonstrated by reduced adipocyte differentiation in primary fibroblasts from Taf7l KO mice, diminished subcutaneous fat in E18.5 embryos, and reduced fat pads in a subset of young adult mice, despite similar food intake and body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "While Taf7l KO mice show reduced WAT development in primary fibroblasts and E18.5 embryos, the in vivo phenotype shows incomplete penetrance (5/12 mice) and similar food intake/body weight, suggesting compensatory mechanisms or genetic background effects. The increased connective tissue in KO mice is interesting but requires further investigation to determine if this represents a true lineage imbalance."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C6",
-      "C45",
-      "C46"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Ectopic TAF7L expression in C2C12 myoblasts inducing adipocyte formation is well-demonstrated by Oil red O staining and elevated adipocyte marker gene expression. This gain-of-function experiment complements the loss-of-function studies and demonstrates TAF7L's sufficiency to reprogram cell fate under permissive conditions."
+    "status_reasoning": "Claims C38-C44 show in vivo effects, but the phenotype exhibits incomplete penetrance (5 out of 12 mice at 1-4 months, C44) and the embryonic phenotype is described qualitatively without quantification. The similar body weights and food intake (C40-C41) are inconsistent with major metabolic defects. The partial penetrance and lack of robust phenotype suggest either genetic background effects, compensatory mechanisms, or that TAF7L may not be absolutely required for WAT development in vivo."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C7",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C94",
-      "C100",
-      "C101"
+      "C6",
+      "C45",
+      "C46",
+      "C47"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Ectopic expression of TAF7L in C2C12 myoblasts reprograms these muscle precursors into adipocytes upon adipogenic induction, activating adipocyte-specific genes and lipid metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "ChIP-seq data convincingly demonstrate TAF7L's dual localization to both promoters (30% colocalization with TBP/Pol II) and enhancers (45% of peaks). The correlation between TAF7L binding strength and gene upregulation during adipogenesis is quantitatively demonstrated. The use of two peak-calling algorithms (MACS and Grizzly) strengthens confidence in the binding site identification."
+    "status_reasoning": "Claims C6, C45-C47 demonstrate gain-of-function evidence through Oil red O staining, RT-qPCR, and mRNA-seq analysis. The ability of TAF7L to reprogram myoblasts into adipocytes provides strong complementary evidence for its role in adipogenesis, though it should be noted that this occurs under adipogenic induction conditions, not in standard myoblast culture."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C8",
-      "C52",
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
       "C53",
-      "C54",
+      "C54"
+    ],
+    "result": "TAF7L exhibits dual genomic localization patterns: 30% of TAF7L peaks colocalize with TBP and Pol II at promoters, while 45% localize to enhancer regions. TAF7L binding frequency and strength correlate with gene upregulation during adipogenesis, with preferential binding to highly upregulated adipocyte-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C7, C48-C51, C53-C54 are supported by comprehensive ChIP-seq analysis with appropriate peak calling methods and statistical validation. The quantitative binding strength correlations (C49-C50) and frequency data (C48, C53-C54) provide strong evidence for the dual localization pattern. The use of multiple peak calling algorithms and correlation with mRNA-seq data strengthens the conclusions."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
       "C55",
       "C56",
       "C57",
       "C58",
-      "C59",
+      "C59"
+    ],
+    "result": "TAF7L binding sites are enriched for PPAR\u03b3 and C/EBP\u03b1 motifs, and TAF7L co-localizes genome-wide with these adipogenic transcription factors. Specifically, 26% of TAF7L peaks overlap with PPAR\u03b3, 20% with RXR\u03b1, and 25% with C/EBP\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C55-C59 are supported by unbiased motif analysis and direct ChIP-seq overlap comparisons. The bidirectional overlap percentages (e.g., 26% of TAF7L peaks with PPAR\u03b3 and 37% of PPAR\u03b3 peaks with TAF7L) provide quantitative evidence for co-localization. The validation against published datasets for PPAR\u03b3, C/EBP\u03b1, and RXR\u03b1 in 3T3-L1 cells adds confidence."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
       "C60",
       "C61",
       "C62",
       "C63",
       "C64",
-      "C65",
-      "C66"
+      "C67"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "TAF7L physically interacts with both PPAR\u03b3 and TBP in co-immunoprecipitation assays, with interactions persisting after benzonase treatment, indicating direct or DNA-independent protein-protein associations. PPAR\u03b3 does not interact with TBP, suggesting TAF7L bridges these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Physical interactions between TAF7L and both PPAR\u03b3 and TBP are well-supported by reciprocal co-IP experiments, benzonase treatment controls (ruling out DNA-mediated interactions), and genome-wide colocalization data. The motif enrichment analysis and overlap statistics (26% TAF7L/37% PPAR\u03b3 peaks overlap) provide independent support. However, whether interactions are direct or indirect remains unresolved, which the authors appropriately acknowledge."
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C69",
-      "C70",
-      "C86"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The dual mechanism model\u2014TAF7L functioning at both enhancers (with PPAR\u03b3) and promoters (with TBP/TFIID)\u2014is well-supported by the integration of ChIP-seq localization data, co-IP physical interaction data, functional knockdown/rescue experiments, and mRNA-seq expression profiling. This represents a coherent mechanistic model supported by multiple orthogonal lines of evidence."
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C75",
-      "C76",
-      "C77"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "While TAF7L clearly regulates white adipocyte genes, the observation of brown adipocyte gene downregulation (Cidea, Ucp1, Elovl3) upon TAF7L knockdown is intriguing but not thoroughly investigated. The authors acknowledge failing to detect significant BAT defects in KO mice, leaving the role of TAF7L in brown adipogenesis unclear and requiring further study."
+    "status_reasoning": "Claims C8, C60-C64, C67 provide biochemical evidence for protein-protein interactions through reciprocal co-IP experiments. The benzonase treatment (C64) controls for DNA-mediated interactions. The observation that PPAR\u03b3 cannot co-IP TBP (C62) while TAF7L interacts with both supports the bridging model. However, the experiments use overexpression in 293T cells, which may not fully reflect endogenous interactions."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C78"
+      "C65",
+      "C66"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Over-expressed TAF7L can integrate into native TFIID complexes, as evidenced by co-immunoprecipitation of endogenous TFIID subunits including TBP and TAF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The preliminary observation of altered serum glucose levels in Taf7l KO mice after fasting is mentioned but not shown or statistically analyzed. This represents preliminary data that requires validation, replication with adequate sample sizes, and mechanistic investigation before conclusions can be drawn about TAF7L's role in metabolic homeostasis."
+    "status_reasoning": "Claims C65-C66 describe an important control experiment, but the data is explicitly stated as 'not shown' in the manuscript. While the authors present this as an expected result consistent with known TAF7L-TFIID interactions, the absence of presented data makes it impossible to evaluate the quality and extent of TFIID complex integration."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C92",
-      "C93"
+      "C73",
+      "C74"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Genome-wide mRNA-seq analysis identified TAF7L-mediated regulation of genes involved in both adipogenesis and reproductive processes, with TAF7L binding to and regulating expression of white adipose genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The validation of PPAR\u03b3 ChIP-seq data by comparison with published 3T3-L1 datasets is appropriate and shows good concordance. The authors appropriately note that some differences likely reflect inherent biological differences between C3H10T1/2 and 3T3-L1 cell lines, which is a reasonable interpretation supported by the literature showing cell-type-specific regulatory landscapes."
+    "status_reasoning": "Claims C73-C74 are supported by comprehensive mRNA-seq and ChIP-seq datasets. The gene ontology analysis identifying both adipogenic and reproductive gene enrichment is consistent with TAF7L's known role in spermatogenesis. The integration of binding data (ChIP-seq) with expression data (mRNA-seq) provides strong evidence for direct transcriptional regulation."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "TAF7L knockdown causes downregulation of some brown adipocyte genes (Cidea, Ucp1, Elovl3), suggesting potential involvement in brown adipocyte biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C75 reports downregulation of brown adipocyte markers, but the manuscript explicitly states that attempts to identify BAT defects in Taf7l KO mice were unsuccessful. The observation in C3H10T1/2 cells may reflect promiscuous differentiation potential of these mesenchymal stem cells rather than a physiological role in brown adipogenesis. Further investigation is needed."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Taf7l-deficient mice show altered serum glucose levels after 24-hour fasting compared to wild-type littermates, suggesting potential metabolic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C76 is explicitly described as 'preliminary' by the authors. No statistical analysis, sample sizes, or magnitude of changes are provided. The direction of change (increased or decreased) is not specified. This observation requires rigorous follow-up with appropriate metabolic testing, statistical validation, and mechanistic investigation before conclusions can be drawn."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C28",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Background claims establishing prior knowledge about adipose tissue biology, obesity, adipogenesis, transcriptional regulators, TAF7L's role in spermatogenesis, and potential links between metabolism and reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C9-C18, C27-C28, C68-C72 represent established knowledge supported by appropriate citations or general biological knowledge. These provide context for the current work. C71 is explicitly presented as speculation by the authors. These background claims are appropriately referenced and accurately represent the state of the field."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "TAF7L is a paralogue of TFIID subunit TAF7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C1 represents established molecular classification. TAF7L and TAF7 are known paralogues with documented sequence homology and evolutionary relationship. This is foundational knowledge for understanding the study."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Taf8 mRNA is down-regulated upon induction of C3H10T1/2 cells to form adipocytes, contrasting with TAF7L upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C29 is supported by RT-qPCR data in Figure 1A and Figure 1\u2014figure supplement 1A. This finding is important as it contrasts with prior expectations based on earlier TAF8 studies and helps establish TAF7L as the relevant TFIID component in adipogenesis rather than TAF8."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "TBP and Pol II display greater than 63% occupancy at transcriptional start sites (TSS) of highly expressed genes in both undifferentiated C3H10T1/2 cells and adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C52 is supported by ChIP-seq mapping data and is consistent with the expected behavior of general transcription machinery. This serves as an important control showing that TBP and Pol II function as general factors, contrasting with TAF7L's more selective binding pattern."
   }
 ]

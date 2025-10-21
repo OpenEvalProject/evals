@@ -2,110 +2,200 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C32"
+      "C26",
+      "C27",
+      "C28"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "UNC93B1 traffics through the secretory pathway via the Golgi apparatus and is loaded into COPII vesicles. UNC93B1 is present in phagolysosomes, acquires EndoH-resistant glycan modifications indicative of Golgi transit, and is detected in COPII vesicles by in vitro budding assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple complementary approaches (phagosome isolation, EndoH resistance assays, glycosylation site mutagenesis, COPII budding assays) converge to demonstrate that UNC93B1 traffics through the Golgi apparatus and is loaded into COPII vesicles. The glycosylation site mutations provide strong evidence that the observed EndoH resistance reflects genuine Golgi trafficking."
+    "status_reasoning": "Claims C26-C28 provide converging biochemical evidence from phagosome isolation (C26), EndoH resistance assays (C27), and COPII budding assays (C28) that collectively demonstrate UNC93B1 enters the secretory pathway. The data are internally consistent and use appropriate biochemical methods."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
       "C33",
       "C34",
       "C35",
+      "C36",
       "C37",
       "C38",
-      "C39",
-      "C71",
-      "C83"
+      "C87"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "UNC93B1 controls ER exit of multiple endosomal TLRs (TLR3, TLR7, TLR9, TLR11, TLR13) by regulating their loading into COPII vesicles. The transmembrane and cytosolic domains of TLRs are sufficient for UNC93B1-dependence, indicating the requirement is not based on ectodomain folding. This represents a novel finding for TLR11 and TLR13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The COPII budding assays directly demonstrate UNC93B1-dependent loading of TLR9 into vesicles. The CD4-TLR chimera experiments elegantly show that the requirement is independent of ectodomain folding, ruling out a chaperone function. Extension to multiple TLRs (TLR3, TLR7, TLR11, TLR13) using the same chimera approach provides strong evidence for a general mechanism of ER exit control."
+    "status_reasoning": "Claims C29-C38 and C87 provide strong evidence through multiple complementary approaches: biochemical analysis of TLR glycosylation states (C29), COPII budding assays (C30), CD4-TLR chimera experiments (C31-C36), and controls showing CD4 independence (C32). The chimera approach elegantly demonstrates that UNC93B1 is not functioning as an ectodomain folding chaperone (C33), addressing an important alternative hypothesis."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C6",
+      "C40",
       "C41",
       "C42",
       "C43",
       "C44",
       "C45",
-      "C46",
+      "C46"
+    ],
+    "result": "UNC93B1 regulates both ER exit and post-Golgi trafficking of TLR9. N-terminal truncations block ER exit while C-terminal truncations cause post-Golgi accumulation of TLR9 precursor forms. UNC93B1 remains associated with TLR9 through multiple trafficking stages including the cleaved form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C40-C46 demonstrate distinct roles for different UNC93B1 domains through systematic mutational analysis. The differential phenotypes of N-terminal vs C-terminal truncations (C40-C42) provide strong evidence for multiple regulatory steps. Co-immunoprecipitation data (C46) confirms continued association. Functional assays (C43) validate the biological relevance of the trafficking defects."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
       "C47",
       "C48",
       "C49",
       "C50",
       "C51",
       "C52",
-      "C53",
-      "C72",
-      "C87",
-      "C96"
+      "C53"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "UNC93B1 directly recruits AP-2 via a conserved Yxx\u03a6 motif (YRYL, residues 539-542) in its C-terminal tail. Mutation of Y539A abolishes AP-2 interaction, causes TLR9 precursor accumulation, and impairs TLR9 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The Y539A mutation phenotype is comprehensively characterized through multiple orthogonal approaches: Y2H and co-IP demonstrate direct AP-2 interaction, microscopy shows reduced endolysosomal localization, flow cytometry reveals surface accumulation, and AP-2 siRNA phenocopies the Y539A defect. The convergence of biochemical, cell biological, and functional data strongly supports UNC93B1-mediated AP-2 recruitment for TLR9 endocytosis."
+    "status_reasoning": "Claims C47-C53 provide strong evidence through sequence analysis (C47), biochemical characterization (C48), functional assays (C49), and direct interaction studies using yeast two-hybrid (C50-C52) and co-immunoprecipitation (C51). The Y539A mutation specifically disrupts AP-2 binding and causes the predicted trafficking defect, establishing causality."
   },
   {
-    "result_id": "R4",
+    "result_id": "R5",
     "claim_ids": [
-      "C7",
       "C54",
       "C55",
       "C56",
       "C57",
       "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C73",
-      "C74",
-      "C75",
-      "C99"
+      "C88"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "UNC93B1 and TLR9 traffic to the cell surface and require AP-2-mediated endocytosis to reach endolysosomal compartments. TLR9 accumulates at the cell surface in UNC93B1-Y539A cells and in AP-2 knockdown cells, with corresponding accumulation of precursor forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The differential requirement for UNC93B1-Y539A is clearly demonstrated by normal TLR7 signaling and trafficking in Y539A cells. The TLR7-AP-4\u03bc interaction is shown by Y2H, and the Y892A mutation disrupts both AP-4 binding and TLR7 function/trafficking. While the AP-4 pathway is less completely characterized than the TLR9/AP-2 pathway, the evidence for differential regulation is strong."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C67",
-      "C77"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "EndoH resistance assays and functional signaling data clearly show that TLR11, TLR12, and TLR13 traffic normally in UNC93B1-Y539A cells, demonstrating independence from the AP-2 pathway. The characterization of ectodomain cleavage products provides additional validation of proper trafficking. However, the specific trafficking mechanisms for these TLRs remain undefined and would benefit from further investigation."
+    "status_reasoning": "Claims C54-C58 and C88 provide multiple lines of evidence: immunofluorescence showing reduced lysosomal colocalization (C55), flow cytometry demonstrating surface accumulation (C56-C57), and biochemical analysis showing precursor accumulation (C58). The AP-2 siRNA experiments (C57-C58) phenocopy the Y539A mutation, strengthening the conclusion that AP-2 recruitment by UNC93B1 is required for TLR9 internalization."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "TLR7 trafficking is UNC93B1-dependent for ER exit but independent of the UNC93B1/AP-2 pathway for post-Golgi trafficking. TLR7 signaling and trafficking to endolysosomes are normal in UNC93B1-Y539A cells, contrasting with TLR9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C59-C65 establish differential regulation of TLR7 vs TLR9. The data show TLR7 requires UNC93B1 for ER exit (C59) and remains associated with UNC93B1 (C61), but unlike TLR9, shows normal signaling (C62), normal cleavage (C63), and no precursor accumulation (C64) in Y539A cells. This provides strong evidence for distinct post-Golgi pathways."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
       "C68",
       "C69",
-      "C70"
+      "C70",
+      "C72"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "TLR7 utilizes AP-4 rather than AP-2 for post-Golgi trafficking. TLR7 interacts with AP-4\u03bc via Y892, and mutation of this residue abolishes AP-4 interaction, impairs TLR7 signaling, and reduces ectodomain processing, suggesting TLR7 traffics directly from TGN to endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Co-immunoprecipitation experiments clearly demonstrate that TLR7 and TLR9 do not co-precipitate with each other, establishing mutually exclusive binding to UNC93B1. The inference that each UNC93B1 molecule binds a single TLR is reasonable given the mutual exclusivity and the D34A phenotype, though direct stoichiometric measurements would strengthen this conclusion."
+    "status_reasoning": "Claims C66-C70 and C72 provide evidence parallel to the TLR9/AP-2 story: yeast two-hybrid showing specific AP-4 interaction (C66), mutagenesis identifying the critical residue (C67), and functional validation showing loss of signaling (C68) and trafficking (C69) with Y892A mutation. The data support an alternative trafficking route for TLR7, though the inference about TGN-to-endosome trafficking (C72) is reasonable but somewhat indirect."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C81",
+      "C82"
+    ],
+    "result": "TLR11, TLR12, and TLR13 traffic independently of the UNC93B1/AP-2 pathway. These TLRs show normal trafficking and signaling in UNC93B1-Y539A cells, similar to TLR7 but unlike TLR9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C74-C76 and C81-C82 demonstrate that TLR11, TLR12, and TLR13 behave like TLR7 rather than TLR9 with respect to the Y539A mutation. The data include functional assays (C74) and biochemical analysis (C75, C81) showing normal trafficking. This extends the finding of differential post-Golgi regulation to additional TLRs."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "TLR11 and TLR12 undergo ectodomain cleavage, producing cleaved forms of approximately 45 kDa and 75 kDa, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C78-C80 report biochemical observations of cleaved TLR forms with distinct molecular weights. The data are straightforward observations from immunoblots (Figure 7C-D). While the authors note these receptors 'appear to undergo' cleavage, the presence of distinct lower molecular weight bands is clear evidence for proteolytic processing."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TLR7 and TLR9 associate with UNC93B1 in distinct, mutually exclusive complexes, suggesting each UNC93B1 molecule interacts with a single TLR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C84-C86 are supported by co-immunoprecipitation experiments (Figure 8) showing that TLR7 and TLR9 do not co-precipitate together despite both associating with UNC93B1. The inference that each UNC93B1 molecule binds a single TLR (C86) is reasonable given the mutually exclusive binding and the UNC93B1-D34A phenotype, though direct stoichiometry measurements would strengthen this conclusion."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C73",
+      "C89",
+      "C90"
+    ],
+    "result": "UNC93B1 mediates differential trafficking of endosomal TLRs through distinct post-Golgi mechanisms. TLR9 requires UNC93B1-mediated AP-2 recruitment for delivery to endolysosomes, while TLR7, TLR11, TLR12, and TLR13 utilize alternative pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3-C7 and C73, C89-C90 represent the central findings of the manuscript. The evidence from multiple experimental approaches (mutational analysis, interaction studies, trafficking assays, functional assays) across multiple TLRs provides strong support for differential post-Golgi regulation. The data are internally consistent and address the key hypothesis."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "TLR9 trafficking may be unusual among endosomal TLRs by trafficking via the plasma membrane en route to endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C83 is supported by the differential AP-2 requirement for TLR9 but not other endosomal TLRs, combined with the surface accumulation data (C56-C57). AP-2 mediates endocytosis from the plasma membrane, so the requirement for AP-2 strongly suggests surface trafficking. The authors appropriately note this is unusual and acknowledge they have not examined TLR3."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C93"
+    ],
+    "result": "Distinct trafficking pathways may deliver TLR7 and TLR9 to compartments with different functional properties, potentially explaining their different roles in autoimmune disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C91 and C93 are explicitly speculative (marked as SPECULATION/INFERENCE). While the differential trafficking is well-established, whether this results in different compartmental localization with distinct functional properties remains to be demonstrated. The connection to differential roles in autoimmune disease (C92, C93) is plausible but requires additional experimental validation."
   }
 ]

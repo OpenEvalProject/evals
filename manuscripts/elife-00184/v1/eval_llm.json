@@ -2,24 +2,27 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
       "C26",
       "C27",
       "C28",
       "C29",
       "C30",
-      "C3",
-      "C4",
-      "C5"
+      "C31"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The GsuK intracellular gating ring structure consists of two tandem RCK domains per subunit forming a bi-lobed, asymmetric octameric assembly with a closed conformation. The structure reveals extended linkers connecting a four-helix bundle gate to RCK1, creating a constriction that occludes ion passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The characterization of GsuK as a novel two-transmembrane, dual-RCK K+ channel from Geobacter sulfurreducens with nucleotide activation and Ca2+ inhibition is well-supported by multiple lines of evidence including structural data, flux assays, and single channel recordings. The claims are internally consistent and provide converging evidence for the multi-ligand gating properties."
+    "status_reasoning": "Claims C19-C31 collectively describe the gating ring structure with consistent crystallographic data at 3.0 \u00c5 resolution. The structural features (bi-lobed architecture, asymmetry, closed gate, linker configuration) are directly observed in electron density maps and validated through comparison with MthK and BK channel structures."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C31",
       "C32",
       "C33",
       "C34",
@@ -31,41 +34,89 @@
       "C40",
       "C41",
       "C42",
-      "C43",
-      "C44"
+      "C43"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "GsuK contains two distinct metal binding sites: a Zn2+ site with zinc-finger-like coordination in RCK2, and a Ca2+ site at the inter-subunit interface that functions as an allosteric inhibitor stabilizing the closed gating ring conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The structural characterization of the GsuK gating ring is well-supported by high-resolution crystal structure data at 3.0 \u00c5 resolution. The bi-lobed RCK domain structure, asymmetric gating ring assembly, closed conformation interpretation, and linker architecture are all directly observed in the structural data and appropriately compared to MthK and BK channels."
+    "status_reasoning": "Claims C32-C43 are well-supported by crystallographic data showing coordination geometry, fluorescence scanning confirmation of Zn2+, and functional electrophysiology demonstrating Ca2+-dependent channel deactivation. The structural and functional data converge to support the inhibitory role of Ca2+."
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C2",
+      "C3",
+      "C44",
       "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ADP and NAD+ activate GsuK channel, with activation effects most pronounced under Ca2+-deactivated conditions (>300 \u03bcM Ca2+), while AMP shows no activation effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C2-C3, C44, C57-C59 are supported by converging evidence from 86Rb+ flux assays and single channel electrophysiology. The data demonstrate nucleotide-specific activation with appropriate controls (AMP as negative control) and dose-dependent effects under varying Ca2+ conditions."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C21",
       "C50",
       "C51",
       "C52",
       "C53",
       "C54",
-      "C55"
+      "C55",
+      "C85",
+      "C86",
+      "C87",
+      "C136"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Ca2+ serves as an allosteric inhibitor of GsuK by decreasing channel open probability without affecting conductance, exhibiting cooperative deactivation (K1/2 = 197 \u03bcM, Hill coefficient = 2.3) that is dominant over nucleotide activation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The identification and characterization of metal ion binding sites (Zn2+ and Ca2+) in GsuK is well-supported by crystal structure data, coordination chemistry, fluorescence scanning, and functional assays. The Ca2+ binding site at the inter-subunit interface and its inhibitory role are confirmed by both structural and electrophysiological data."
+    "status_reasoning": "Claims C4, C21, C50-C55, C85-C87, C136 are strongly supported by systematic electrophysiology experiments showing Ca2+ affects gating (not conductance), acts only from the intracellular side, and exhibits cooperative binding kinetics. The L97D mutant data provide additional mechanistic validation."
   },
   {
-    "result_id": "R4",
+    "result_id": "R5",
     "claim_ids": [
-      "C56",
-      "C57",
-      "C58",
-      "C59",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C88",
+      "C89"
+    ],
+    "result": "ADP binds to GsuK in two configurations (trans and cis), with the cis configuration representing the active form where the \u03b2-phosphate is positioned at the inter-subunit interface and chelated by arginine residues, occupying a site equivalent to the Ca2+ activation site in MthK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C74-C80, C88-C89 are supported by crystallographic data at 2.8 \u00c5 resolution showing clear electron density for both ADP configurations. The structural identification of the cis form as active is consistent with its inter-subunit positioning and coordination chemistry, though direct functional validation of the two configurations is limited."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NAD+ binds to GsuK in a bent conformation with the adenine ring at the same RCK2 site as ADP, but uses its nicotinamide ring positioned at the inter-subunit interface for channel activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C81-C84 are supported by crystallographic data at 3.2 \u00c5 resolution clearly showing NAD+ electron density and coordination. The structural data demonstrate that NAD+ and ADP share the adenine binding site but utilize different functional groups for activation, consistent with functional data."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
       "C60",
       "C61",
       "C62",
@@ -76,83 +127,65 @@
       "C67",
       "C68"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Full-length GsuK structures reveal a unique ion conduction pore with a segmented inner helix (TM2A, TM2B, TM2C) caused by helix-breaking residues Gly92 and Leu97, positioned further from the membrane than MthK with a ~50-degree rotational difference in gating ring orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The functional characterization of GsuK using flux assays and single channel recordings is well-supported. The data demonstrate nucleotide activation, Ca2+ deactivation with cooperative binding (K1/2 = 197 \u03bcM, Hill coefficient = 2.3), weak K+ selectivity, and the effects of the L97D mutation. Multiple independent measurements converge on consistent functional properties."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C69",
-      "C70",
-      "C71",
-      "C72"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The nucleotide activation effects of NAD+ and ADP are supported by single channel recordings showing increased open probability under Ca2+-deactivated conditions. The specificity (no effect with AMP) and the context-dependent nature of activation (more pronounced at high [Ca2+]) are demonstrated experimentally."
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79",
-      "C6",
-      "C80"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The full-length channel structures at 3.7 \u00c5 (wild-type) and 2.6 \u00c5 (L97D mutant) resolution reveal unique features including the segmented inner helix and distinct orientation relative to MthK. The structural observations are well-documented and provide the basis for understanding the novel pore opening mechanism."
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C100",
-      "C101",
-      "C102",
-      "C103"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The structural characterization of the GsuK ion conduction pore, including the segmented inner helix with distinct hinge points, positively charged residues at the gate, and differences between wild-type and L97D mutant, is well-supported by crystal structure data at 2.6-3.7 \u00c5 resolution. The observations provide a structural basis for understanding gating mechanisms."
+    "status_reasoning": "Claims C60-C68 are supported by crystallographic data at 3.7 \u00c5 (wild-type) and 2.6 \u00c5 (L97D mutant) resolution. The structural features (segmented helix, extended linkers, charged residue clusters) are directly observed, and comparisons with MthK are based on valid structural superimposition."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93"
+      "C70",
+      "C71",
+      "C72",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Structural comparison of wild-type and L97D mutant GsuK reveals distinct inner helix conformations with different hinge points (Gly92 in mutant, between TM2B-TM2C in wild-type), suggesting the Gly92 helix bend represents an initial step toward pore opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The structural characterization of nucleotide binding in GsuK is well-supported by co-crystal structures with ADP (2.8 \u00c5) and NAD+ (3.2 \u00c5). The data show that both ligands anchor their adenine rings at the conserved nucleotide binding motif on RCK2 but utilize different functional groups and activate at different sites, with ADP binding in both trans and cis configurations."
+    "status_reasoning": "Claims C70-C72, C95-C100 are supported by high-resolution crystallographic comparison (2.6 \u00c5 for L97D). The structural differences are clearly observed, and the inference about the opening mechanism is reasonable given the functional data showing L97D promotes opening. However, both structures show closed gates, limiting direct validation of the opening pathway."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C7",
+      "C93",
+      "C94",
+      "C101",
+      "C102",
+      "C103",
       "C104",
-      "C105",
+      "C105"
+    ],
+    "result": "GsuK exhibits a novel pore opening mechanism distinct from other K+ channels, with the intracellular gate positioned distal to the canonical bundle crossing, utilizing two hinge points for conformational changes, and dilating in a reversed direction compared to MthK due to different gating ring-pore orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C93-C94, C101-C105 propose a mechanistic model based on structural comparisons and inference. While the structural observations (gate position, hinge points, orientational differences) are well-supported, the proposed opening mechanism remains speculative as no open-state structure is available. The model requires validation through additional structural or functional studies."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "GsuK exhibits weak K+ selectivity with a permeability ratio (PNa/PK) of ~0.2, potentially attributable to the presence of Phe instead of Tyr in the selectivity filter, with the L97D mutation significantly increasing single channel conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C46-C49 are supported by systematic electrophysiology measurements under bi-ionic conditions. The reversal potential measurements and permeability ratio calculations are appropriate. The attribution to Phe vs Tyr is reasonably supported by citation to relevant selectivity studies, though direct mutagenesis validation in GsuK is absent."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
       "C106",
       "C107",
       "C108",
@@ -160,93 +193,66 @@
       "C110",
       "C111"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "All GsuK crystal structures show Ca2+-bound closed conformations despite nominal Ca2+-free conditions, with apparent Ca2+ affinity differing between crystals (high) and functional recordings (K1/2 ~200 \u03bcM), potentially due to differences between detergent and lipid environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The proposed novel pore opening mechanism is based on structural comparisons and inference rather than direct observation of an open state. While the structural data showing two hinge points and different helix conformations between wild-type and L97D mutant are solid, the actual open state structure is not captured. The mechanism remains a model requiring validation through additional structural or functional studies."
+    "status_reasoning": "Claims C106-C111 identify a significant discrepancy between structural and functional Ca2+ affinity. While the observations are valid, the proposed explanation (detergent vs lipid environment) is speculative. The inability to obtain Ca2+-free structures limits mechanistic understanding and raises questions about whether the crystallographic conditions accurately represent physiological states."
   },
   {
-    "result_id": "R10",
+    "result_id": "R12",
     "claim_ids": [
-      "C113",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "GsuK ligand binding sites show convergence with other RCK-regulated channels: the Ca2+ site is analogous to the BK Ca2+-bowl position, the ADP activation site is equivalent to the MthK Ca2+ site, and the conserved nucleotide binding motif suggests a common adenine-nucleotide binding site across RCK domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C90-C92 are supported by structural comparisons with cited BK and MthK structures, and sequence analysis showing conserved motifs. The convergence of binding sites across different channels provides strong evolutionary and mechanistic support for these functional assignments."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
       "C114",
       "C115",
       "C116",
       "C117",
       "C118",
-      "C119"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The discrepancy between structural Ca2+ affinity (all structures show Ca2+-bound closed state despite nominal Ca2+-free conditions) and functional affinity (K1/2 = 200 \u03bcM) is acknowledged but not fully resolved. The proposed explanation involving lipid effects is speculative and lacks direct experimental validation. This represents an important unresolved question about the system."
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
+      "C119",
       "C120",
-      "C121",
-      "C82"
+      "C121"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "GsuK shares structural and functional similarities with Slo2/Slo3 channels including the TVGFG signature sequence, weak K+ selectivity, conserved helix-breaking residues, NAD+ binding sites, and potentially similar gating ring-pore orientations, suggesting GsuK may be a better structural model for Slo channels than MthK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The proposed role of positively charged residues in lipid interactions and channel gating is entirely speculative, based on analogy with inwardly rectified K+ channels. No direct experimental evidence for lipid interactions or their functional consequences is provided. This hypothesis requires experimental validation."
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C94",
-      "C95"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "While the presence of a high-affinity Zn2+ binding site on RCK2 is well-documented structurally (coordination chemistry and fluorescence scanning), the functional role of Zn2+ remains completely unclear. The authors explicitly acknowledge this uncertainty, and no functional experiments addressing Zn2+ effects are presented."
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The proposed similarities between GsuK and Slo channels (TVGFG sequence, conserved Pro/helix break, NAD+ binding site, relative pore-gating ring orientation) are based on sequence comparisons and structural modeling rather than direct experimental evidence. While the analogies are reasonable and supported by some literature, they remain speculative without direct structural or functional validation of Slo channels using GsuK as a model."
+    "status_reasoning": "Claims C114-C121 draw comparisons between GsuK and Slo channels based on sequence analysis and cited functional studies. While individual observations (sequence similarity, NAD+ binding) are supported, the broader conclusion that GsuK is a better Slo model than MthK is speculative and requires direct structural or functional validation in Slo channels."
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C90"
+      "C5",
+      "C6"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "GsuK possesses a unique ion conduction pore with segmented inner helices and exhibits a novel pore opening mechanism distinct from other K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The convergence of ligand activation sites between GsuK and other RCK-regulated channels is well-supported by structural comparisons. The Ca2+ site analogy with BK's Ca2+-bowl and the ADP site equivalence with MthK's Ca2+ site are documented through structural superimposition. The conservation of nucleotide binding motifs across RCK domains is established knowledge."
+    "status_reasoning": "Claims C5-C6 are high-level summary claims supported by the detailed structural and comparative analyses in other claim groups. The segmented inner helix is directly observed crystallographically, and the distinct opening mechanism is reasonably inferred from structural comparisons, though the mechanism itself requires further validation."
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C145",
-      "C146",
-      "C147",
-      "C148"
+      "C69",
+      "C112",
+      "C113"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The methodological approach of introducing mutations (E52A, Q77E/R, L97D) to improve crystal quality is well-documented. The validation that E52A and Q77E/R mutations do not affect channel function is supported by single channel electrophysiology data, justifying their use as a 'wild-type' proxy. The L97D mutant's improved diffraction and use for nucleotide co-crystallization is appropriately documented."
+    "result": "Positively charged residues surrounding the GsuK intracellular gate could potentially participate in channel gating through interactions with phospholipid head groups, similar to mechanisms in inwardly rectified K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C69, C112-C113 are speculative proposals based on structural observations and analogy to other channels. While the presence of charged residues is well-documented, their functional role in lipid interaction and gating remains untested. This hypothesis requires experimental validation through mutagenesis and lipid interaction studies."
   }
 ]

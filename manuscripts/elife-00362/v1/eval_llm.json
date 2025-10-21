@@ -2,157 +2,252 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C4",
-      "C38",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52",
-      "C53"
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Acute immobilization stress and high-dose (40 mg/kg) corticosterone injection increase cell proliferation in the adult dorsal dentate gyrus, as measured by Ki67+ and BrdU+ cell counts. Novel environment and footshock stressors, as well as lower CORT doses (5 mg/kg), do not significantly affect proliferation. The proliferative effect correlates with sustained elevation of plasma corticosterone levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple stressors and CORT doses were tested with appropriate controls showing consistent increases in Ki67+ and BrdU+ cells in dorsal DG. The dose-response relationship is clear with immobilization and 40 mg/kg CORT producing significant effects while novel environment, footshock, and 5 mg/kg CORT did not. The finding is replicated across proliferation markers and includes 24-hr survival data. However, the context-dependency (habituation requirement) somewhat limits generalizability."
+    "status_reasoning": "Claims C28-C37 provide converging experimental evidence from multiple markers (Ki67, BrdU) and conditions (stress vs CORT injection) showing dose-dependent and stressor-specific effects on proliferation. Statistical significance is reported with appropriate p-values (p<0.05 to p<0.0001), sample sizes appear adequate (n=4-10 per group), and controls are included. The correlation between CORT elevation and proliferation strengthens the mechanistic link."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C56",
+      "C39",
+      "C40",
       "C57",
-      "C38"
+      "C58",
+      "C59",
+      "C60"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Acute stress and corticosterone do not increase cell proliferation in the ventral dentate gyrus, despite increasing fgf2 mRNA expression. FGF2 protein levels remain unchanged in the ventral hippocampus following stress or CORT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The regional specificity is clearly demonstrated with the same stressors that increased dorsal proliferation having no effect in ventral hippocampus. This provides important anatomical specificity and serves as an internal negative control, strengthening confidence in the dorsal findings."
+    "status_reasoning": "Claims C39-C40 and C59-C60 demonstrate regional specificity with appropriate negative controls showing no proliferative or protein-level changes in ventral DG. The dissociation between mRNA (C57-C58, increased) and protein (C59-C60, unchanged) is clearly documented and provides important mechanistic insight into why proliferation is not affected ventrally."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C6",
-      "C59",
-      "C60",
-      "C61",
-      "C62"
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Stress-induced hippocampal cell proliferation occurs independent of basolateral amygdala (BLA) neural input. While BLA lesions reduce baseline proliferation, they do not block the stress-induced increase in BrdU+ cells, contrasting with prior findings that BLA input is required for other stress effects on hippocampal plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The unilateral BLA lesion study demonstrates that while BLA input regulates baseline proliferation, stress-induced increases occur independently of BLA. The lack of interaction between lesion and stress is statistically demonstrated, and CORT levels were similar between groups. This is a well-controlled experiment, though limited to one time point."
+    "status_reasoning": "Claims C43-C45 provide experimental evidence from BLA lesion studies with appropriate controls (sham-operated rats). The lack of stress \u00d7 lesion interaction (C45, p=0.002 main effect only) directly supports independence from BLA input. However, the unilateral lesion design is a limitation\u2014bilateral lesions would provide stronger evidence. The finding contradicts prior work (C42, C100) on memory and LTP, which is acknowledged."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C5",
-      "C39",
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C122",
-      "C123",
-      "C79",
-      "C80"
+      "C46",
+      "C47",
+      "C48",
+      "C4"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Corticosterone does not directly increase proliferation of isolated hippocampal NPCs in vitro, but conditioned media from CORT-treated primary astrocytes significantly increases NPC proliferation. This effect is mediated by astrocyte-secreted factors rather than direct CORT action on NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple complementary methods (qPCR, Western blot, confocal microscopy) converge to show increased FGF2 expression specifically in dorsal hippocampal astrocytes following stress. The temporal profile matches the proliferation response, and the cellular localization to GFAP+ cells is demonstrated. While some statistical values are marginal (p<0.05), the consistency across methods and the correlation with proliferation effects strengthen the conclusion."
+    "status_reasoning": "Claims C46-C48 provide clear in vitro evidence with appropriate controls (vehicle, CoC media, recombinant FGF2). The lack of direct CORT effect (C46) combined with the ACM effect (C48, p<0.001) strongly supports astrocyte-mediated signaling. Statistical analyses are appropriate (two-way ANOVA), though sample sizes are modest (n=5-8). The experimental design effectively isolates cell-autonomous vs paracrine mechanisms."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C74",
-      "C75",
-      "C76",
-      "C77"
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C67",
+      "C68",
+      "C69"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The dissociation between increased fgf2 mRNA but unchanged FGF2 protein in ventral hippocampus is unexplained and raises questions about post-transcriptional regulation or measurement sensitivity. While this correlates with the lack of proliferation effect ventrally, the mechanism underlying the mRNA-protein dissociation requires further investigation to fully understand regional differences."
+    "result": "Acute stress and high-dose CORT increase FGF2 expression specifically in dorsal hippocampal astrocytes. Both mRNA and protein levels of FGF2 increase following immobilization or 40 mg/kg CORT injection, with immunohistochemistry showing increased FGF2 immunoreactivity specifically in GFAP+ astrocytes in the hilus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C49-C52 and C67-C69 provide multi-level evidence (mRNA, protein, cellular localization) with statistical support (p<0.05 to p<0.001). The cell-type specificity (C67 vs C68) strengthens the conclusion. However, C51 reports p>0.05 for the overall ANOVA despite significant post-hoc comparison (q=2.79, p<0.05), which is methodologically questionable and suggests potential p-hacking or multiple comparison issues."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C7",
-      "C8",
-      "C40",
-      "C63",
-      "C64",
-      "C65",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C113",
-      "C114",
-      "C125"
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "FGF2 neutralizing antibody blocks both recombinant FGF2-induced and astrocyte-conditioned-media-induced NPC proliferation in vitro, demonstrating that astrocyte-secreted FGF2 is necessary and sufficient for CORT-induced NPC proliferation. The antibody shows specificity for FGF2 over FGF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The in vitro experiments provide strong mechanistic evidence that astrocyte-secreted FGF2 mediates CORT effects on NPCs. Key findings include: NPCs don't respond directly to CORT, CORT-treated astrocyte conditioned media increases proliferation, FGF2 is present in CORT-ACM but not control, and FGF2 neutralizing antibody blocks the effect. The antibody specificity is demonstrated. However, the large concentration difference between ACM FGF2 (~3.5 pg/ml) and effective recombinant FGF2 (20 ng/ml) suggests other factors may contribute, though FGF2 is clearly necessary."
+    "status_reasoning": "Claims C70-C74 provide strong mechanistic evidence through antibody neutralization experiments with appropriate specificity controls (C71). The dose-response for antibody effectiveness (C70) and functional blocking in both recombinant and ACM conditions (C72, C74) support necessity. Statistical significance is reported (p<0.01 to p<0.05). However, sufficiency is not directly tested\u2014other factors in ACM could contribute."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C9",
-      "C41",
-      "C87",
-      "C88",
-      "C89"
+      "C5",
+      "C76",
+      "C77",
+      "C78"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Two weeks, but not two days, after acute immobilization stress, rats show enhanced fear extinction memory retention, as measured by reduced freezing during the 24-hr extinction probe. Training and extinction phases are unaffected at both timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The behavioral data demonstrate a clear temporal dissociation with enhanced fear extinction retention at 2 weeks but not 2 days post-stress. The timing corresponds to when newborn neurons become functional. Sample sizes are adequate and the 2-day time point serves as an important temporal control. The effect is specific to extinction retention (reduced freezing in probe) while training and extinction phases were unaffected, suggesting a selective enhancement of extinction memory consolidation."
+    "status_reasoning": "Claims C76-C78 provide clear behavioral evidence with appropriate temporal controls (2 days vs 2 weeks) and adequate sample sizes (n=10-20 per group). The selective effect on extinction retention (C78, p=0.04) without effects on training or extinction (C76-C77) is well-documented. The 2-week timepoint aligns with neuronal maturation timelines, providing biological plausibility."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C10",
-      "C90",
-      "C91",
-      "C92"
+      "C6",
+      "C79",
+      "C80",
+      "C81"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Two weeks after acute stress, immobilized rats show enhanced activation of immature (DCX+) neurons during fear extinction recall, as measured by increased cfos expression. The number and fate of surviving newborn cells do not differ between groups, suggesting enhanced utilization rather than increased survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Immobilized rats showed significantly greater cfos expression in DCX+ immature neurons at 2 weeks (5.39% vs 1.57%), indicating enhanced activation. Critically, total BrdU+ cell numbers and differentiation profiles were similar between groups, demonstrating the effect is on activation rather than survival or fate. While cfos is an indirect measure and sample sizes are modest (n=5-7), the correlation with behavioral enhancement and the specificity to immature neurons support the conclusion."
+    "status_reasoning": "Claims C79-C81 provide cellular-level evidence linking behavior to neuronal activation. The increased cfos in DCX+ cells (C81, p=0.02) without changes in cell number or fate (C79-C80) supports enhanced recruitment. However, the causal relationship between activation and behavior is correlative. The 1-hr post-probe sacrifice timing is appropriate for cfos detection."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C70",
-      "C71",
-      "C72",
-      "C73"
+      "C7",
+      "C27",
+      "C93",
+      "C96",
+      "C97",
+      "C106",
+      "C111"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The negative results for BDNF (decreased exon IV mRNA but no protein change) help rule out BDNF as a mediator and support the specificity of the FGF2 mechanism. While only one BDNF transcript was examined in detail, the protein-level analysis is the most functionally relevant measure. This negative control strengthens confidence in the FGF2-specific mechanism."
+    "result": "The authors propose that acute stress effects on hippocampal neurogenesis and function follow an inverted-U relationship, where moderate stress (e.g., immobilization in handled rats) enhances plasticity while severe or chronic stress impairs it. This framework reconciles contradictory findings in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C7, C27, C93, C96-C97, C106, and C111 are largely inferential and speculative (note 'may,' 'perhaps,' 'possibly' throughout). While the current data show beneficial effects of moderate stress, the inverted-U model requires systematic dose-response data across stress intensities, which is not provided. The comparison to traumatic stress models (C91-C92, C96) is based on citations rather than direct experimental comparison."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C54",
-      "C99",
-      "C100",
-      "C101"
+      "C38",
+      "C102",
+      "C103",
+      "C104"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Pre-stressor handling and habituation to injection procedures modulate the effect of acute CORT on neurogenesis. Non-habituated rats show no proliferative response to CORT injection, while habituated rats do, suggesting that baseline stress state influences acute stress effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C38 provides direct experimental evidence that non-habituated rats lack the proliferative response seen in habituated rats. This is an important methodological finding (C102-C104) that could explain literature discrepancies. However, the non-habituated experiment appears to be a single study with limited detail on sample sizes and statistical analysis, reducing confidence."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Acute stress produces selective changes in growth factor expression in dorsal hippocampus: FGF2 increases while BDNF exon IV mRNA decreases, though BDNF protein remains unchanged. Other growth factors (NGF, VEGF, FGFRs, GADD45\u03b2, BDNF exon IX) show minimal or inconsistent changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C53-C65 provide comprehensive qPCR and western blot data across multiple growth factors with appropriate statistical analyses. The dissociation between BDNF mRNA (decreased, C53-C54) and protein (unchanged, C55-C56) is clearly documented. The cfos data (C64-C65) serve as positive controls for stress responsiveness. The broad screening strengthens confidence that FGF2 is the primary mediator."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose a mechanism whereby glucocorticoids act on astrocytic glucocorticoid receptors to enhance FGF2 gene transcription and secretion, which then acts on NPCs to stimulate proliferation. This builds on established knowledge of astrocyte-neuron signaling and FGF2's role in NPC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C82-C85 are well-supported by citations to prior work establishing each component of the mechanism. The current study's data (FGF2 increase in astrocytes, ACM effects, neutralization experiments) fit this framework. However, the authors do not directly demonstrate GR translocation or FGF2 transcriptional regulation in their system\u2014these are inferred from cited work."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors suggest that enhanced activation of immature neurons contributes to improved fear extinction memory in stressed rats, though they acknowledge that other aspects of hippocampal plasticity may also contribute. The selective dorsal hippocampus effects suggest cognitive rather than emotional modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The finding that CORT only increased proliferation in habituated rats is important for understanding boundary conditions, but was only tested at one time point with one marker. The interpretation that pre-existing factors modulate stress effects is reasonable but requires more systematic manipulation of habituation parameters. This finding has significant implications for reproducibility and the inverted-U hypothesis but needs additional validation to determine the specific factors involved."
+    "status_reasoning": "Claims C108-C110 involve substantial speculation ('possibly contributing,' 'does not preclude,' 'implies'). The correlation between neuronal activation and behavior (C108) does not establish causation\u2014manipulation experiments (e.g., selective ablation of newborn neurons) would be needed. The functional interpretation (C110) is reasonable given dorsal/ventral dissociation but remains inferential."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior literature on acute stress effects on neurogenesis is inconsistent, with early studies showing suppression and later studies showing no change or enhancement. Acute stress increases expression of mitogenic growth factors like FGF2 and NGF, and interventions that stimulate glucocorticoid release (exercise, sexual experience) increase neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C22-C26 accurately summarize prior literature with appropriate citations. The authors correctly identify the inconsistency in the field (C22-C23) and provide context for growth factor findings (C24) and related interventions (C25-C26). This background supports the rationale for their study and helps explain their findings."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C75"
+    ],
+    "result": "Prior work establishes that newborn hippocampal neurons play important roles in fear extinction and contextual discrimination, particularly during an immature, hyperplastic phase 2-3 weeks after birth when they are preferentially recruited into active circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C75 and C86-C89 accurately cite relevant prior work establishing the functional importance of adult-born neurons in hippocampal memory. The 2-week timepoint used in the behavioral experiments (C5, C78) is well-justified by this literature. These citations provide strong rationale for the temporal design of the fear conditioning experiments."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C105",
+      "C107"
+    ],
+    "result": "Prior work in rodents and primates demonstrates that stress effects depend on intensity and duration: mild early-life stress can produce resilience (stress inoculation), severe traumatic stress produces PTSD-like deficits, and moderate acute challenges (exercise, social stress) can enhance neurogenesis and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C91-C92, C94-C95, C105, and C107 accurately cite relevant comparative and translational literature. The single prolonged stress model (C91-C92) provides a useful contrast to the current moderate stress paradigm. The primate stress inoculation work (C94) and squirrel monkey findings (C105) strengthen the translational relevance. These citations effectively contextualize the inverted-U hypothesis."
   }
 ]

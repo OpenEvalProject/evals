@@ -2,220 +2,227 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C3",
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C53"
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The authors established an in vitro embryo extract system that recapitulates developmental spindle size differences, with stage 3 extracts producing spindles of ~35-40 \u00b5m and stage 8 extracts producing spindles of ~17-20 \u00b5m. The extract spindles morphologically resemble in vivo spindles but show slightly reduced average sizes and some defects in chromosome alignment, particularly in stage 3 extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The in vitro embryo extract system successfully recapitulates spindle size differences between developmental stages (stage 3: ~35-40 \u00b5m, stage 8: ~17-20 \u00b5m), with quantitative measurements showing ~20 \u00b5m decrease in vitro compared to ~30 \u00b5m in vivo. The system preserves key architectural features including astral MTs and stage-specific morphologies, providing a valid experimental platform."
+    "status_reasoning": "Claims C2, C28-C40 collectively provide strong evidence for the establishment and characterization of the extract system. Quantitative measurements (C34, C35, C39, C40) demonstrate the ~20 \u00b5m size difference between stages in extracts, and morphological observations (C28-C30, C36-C37) document similarities and differences compared to in vivo spindles. The system successfully recapitulates the key developmental scaling phenomenon."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C54",
-      "C56",
-      "C57",
-      "C58"
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Spindle size in embryo extracts is controlled by soluble cytoplasmic components rather than nuclear content or chromatin-associated factors. Mixing stage 3 and stage 8 extracts in different ratios produces dose-dependent changes in spindle size, and varying nuclear concentration or nuclear source does not significantly affect spindle length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Extract mixing experiments demonstrate dose-dependent spindle size changes, and nuclei depletion/substitution experiments show that spindle size is independent of nuclei type or concentration. These results convincingly establish that soluble cytoplasmic components control spindle size in this system."
+    "status_reasoning": "Claims C41-C45 provide converging experimental evidence that cytoplasmic factors control spindle size. The dose-dependent response to extract mixing (C41), independence from nuclear concentration (C43), and equivalence of different nuclear sources (C44) strongly support the conclusion that soluble cytoplasmic components are the major determinants (C45)."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C121",
-      "C124"
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Spindle assembly occurs through different pathways in stage 3 versus stage 8 extracts, with stage 3 relying on chromatin-mediated RanGTP-dependent assembly while stage 8 depends primarily on centrosome-mediated nucleation. Stage 3 spindles are disrupted by RanGTP pathway inhibition while stage 8 spindles are resistant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Spindle assembly intermediates and RanT24N inhibition experiments clearly demonstrate a developmental transition from chromatin-mediated (stage 3) to centrosome-dominated (stage 8) spindle assembly pathways. This shift correlates with decreased cytoplasmic importin \u03b1 levels, providing mechanistic insight into pathway switching."
+    "status_reasoning": "Claims C46-C51 provide direct observational evidence (C46-C49) of different MT nucleation patterns at the two stages, supported by functional validation using RanT24N (C50-C51). The differential sensitivity to RanGTP pathway inhibition provides strong mechanistic support for the pathway switch during development."
   },
   {
     "result_id": "R4",
     "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The primary difference in MT dynamics between stage 3 and stage 8 extracts is a threefold increase in MT catastrophe frequency in stage 8, while MT growth rates, poleward flux, and severing activity remain similar. This increased catastrophe frequency is sufficient to drive developmental spindle scaling based on computational modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C52-C59 provide comprehensive quantitative analysis of MT dynamics parameters. The threefold increase in catastrophe frequency (C52) is well-documented experimentally, and other parameters show no significant differences (C54, C56, C58). The computational validation (C53) supports the sufficiency of this change, making the inference (C59) well-supported."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
       "C64",
-      "C65",
-      "C66",
-      "C67",
+      "C65"
+    ],
+    "result": "Kif2a is enriched in stage 8 spindles compared to stage 3 despite similar total protein levels, and its MT-destabilizing activity is critical for establishing smaller stage 8 spindle architecture. Inhibiting kif2a dramatically increases spindle size in stage 8 but has no effect in stage 3 extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C60-C65 provide strong evidence through immunofluorescence quantification (C60-C61), immunoblotting (C62), and functional inhibition experiments (C63-C64). The differential effects of kif2a inhibition between stages directly support its role in developmental spindle scaling (C65). The data are internally consistent and mechanistically coherent."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
       "C69",
       "C70",
       "C71"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Kif2a contains a conserved NLS in its motor domain and interacts with importin \u03b1, which inhibits kif2a-mediated MT depolymerization in vitro. The interaction may be subject to competition by other importin \u03b1 cargos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Comprehensive MT dynamics measurements identify a threefold increase in catastrophe frequency as the primary difference between stage 3 and stage 8 extracts, while other parameters (growth rate, flux, severing) remain similar. Computational modeling confirms this change is sufficient to account for observed spindle size differences."
+    "status_reasoning": "Claims C68-C71 provide sequence analysis (C68), biochemical interaction data (C69), and functional validation (C71) demonstrating importin \u03b1 regulation of kif2a. The in vitro depolymerization assay provides direct mechanistic evidence. The speculation about cargo competition (C70) is appropriately qualified and does not undermine the core findings."
   },
   {
-    "result_id": "R5",
+    "result_id": "R7",
     "claim_ids": [
       "C72",
       "C73",
       "C74",
       "C75",
-      "C76",
-      "C77",
-      "C4"
+      "C76"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The balance between kif2a and importin \u03b1 levels controls spindle size in embryo extracts. Adding kif2a to stage 3 extracts decreases spindle size dose-dependently, while adding importin \u03b1 to stage 8 extracts increases spindle size and decreases kif2a recruitment. An NLS mutant of kif2a shows enhanced activity, consistent with reduced importin \u03b1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Kif2a is enriched in stage 8 spindles despite similar total protein levels, and antibody inhibition dramatically increases stage 8 spindle size while having no effect in stage 3. These differential effects, combined with unchanged MCAK localization, establish kif2a as a key driver of developmental spindle scaling through regulated MT destabilization."
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C5"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "An NLS sequence in kif2a mediates importin \u03b1 binding (confirmed by co-immunoprecipitation), and purified importin \u03b1 significantly inhibits kif2a's MT depolymerization activity in vitro (p<0.0001). These biochemical data directly demonstrate that importin \u03b1 inhibits kif2a activity through physical interaction."
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C78",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Reciprocal perturbation experiments show that adding kif2a to stage 3 extracts decreases spindle size (up to 22%), while adding importin \u03b1 to stage 8 extracts increases spindle size and reduces kif2a recruitment. The NLS mutant (kif2a \u0394NLS) shows enhanced activity, confirming that the kif2a:importin \u03b1 ratio is critical for spindle size control."
+    "status_reasoning": "Claims C72-C76 provide reciprocal experimental manipulations demonstrating the regulatory relationship. The dose-dependent effects (C72), rescue experiments (C75), and enhanced activity of the NLS mutant (C76) provide strong, internally consistent evidence for the kif2a-importin \u03b1 regulatory mechanism controlling spindle size."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C6",
-      "C113"
+      "C66",
+      "C67",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Importin \u03b1 levels decrease by ~50% at stage 8 and redistribute from cytoplasm to membrane fractions during development. This redistribution is sensitive to the surface area to volume ratio and reduces the amount of importin \u03b1 available to interact with kif2a in the cytoplasm, as demonstrated by pull-down experiments showing ~10-fold less importin \u03b1 retrieved from stage 8 versus stage 3 extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple importin \u03b1 populations appear at stage 7-8, with immunofluorescence showing significant redistribution from cytoplasm to cell periphery. Pull-down experiments quantitatively demonstrate ~10-fold reduction in kif2a-importin \u03b1 interaction in stage 8 vs stage 3 extracts, supporting a mechanism where membrane partitioning reduces cytoplasmic importin \u03b1 availability and activates kif2a."
+    "status_reasoning": "Claims C66-C84 provide multiple lines of evidence including prior work (C66-C67), biochemical fractionation (C77-C78), immunofluorescence quantification (C79-C81), and pull-down experiments (C83-C84). The data consistently support importin \u03b1 redistribution as the mechanism linking cell size changes to kif2a activation. The inference about surface area to volume ratio (C82) is well-supported by the spatial redistribution data."
   },
   {
     "result_id": "R9",
     "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C8",
       "C102",
       "C103",
       "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C7",
-      "C8",
-      "C141"
+      "C105"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Developmental spindle scaling is driven by kif2a, whose MT-destabilizing activity is inhibited by importin \u03b1 in stage 3 and activated in stage 8 when importin \u03b1 partitions to membranes. This creates a cell-autonomous, ratiometric mechanism linking spindle size to cell size through the surface area to volume ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Microinjection of kif2a into embryos reduces spindle size (up to 32% with \u0394NLS mutant) and specifically impairs metaphase spindle orientation (p<0.01 for kif2a, p<0.0001 for \u0394NLS) without affecting prophase/anaphase orientation or chromosome segregation. This demonstrates a functional role for spindle size in maintaining metaphase orientation in large cells."
+    "status_reasoning": "Claims C3-C5, C8, C102-C105 represent the integrative conclusions of the study. These are well-supported by the mechanistic data from previous result groups showing kif2a regulation (C3-C5), importin \u03b1 redistribution (C102), and cytoplasmic control (C104). The ratiometric mechanism (C8, C103) is a reasonable inference from the membrane partitioning data, though the direct link to surface area/volume ratio remains somewhat speculative."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C9",
-      "C109",
-      "C112",
-      "C114",
-      "C115"
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C6",
+      "C7"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Reducing spindle size by kif2a overexpression in developing embryos specifically impairs metaphase spindle orientation but does not affect chromosome segregation. The NLS mutant shows stronger effects, reducing spindle length up to ~32% and causing significant spindle misorientation at metaphase but not at prophase or anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The complete mechanism is well-supported: spindle size couples to cell size through a ratiometric mechanism where importin \u03b1 partitioning to membranes (linked to surface area:volume ratio) releases kif2a inhibition, increasing MT catastrophe frequency and reducing spindle size. Extract mixing and stage-independent effects confirm cell-autonomous function."
+    "status_reasoning": "Claims C6-C7, C87-C93 provide in vivo validation through microinjection experiments with quantitative measurements of spindle size (C87-C88) and orientation (C89-C90). The stage-specific effect on metaphase orientation (C89-C90) and robustness of chromosome segregation (C91-C93) are well-documented. This demonstrates functional consequences of the spindle scaling mechanism."
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C110",
-      "C116"
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C120"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Spindle size plays a role in maintaining spindle orientation during metaphase in large early embryonic cells, potentially through increased frictional resistance to rotation. The authors propose that larger spindles resist rotation in the viscous cytoplasm during the short metaphase period, maintaining orientation established by prior centrosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "While MT destabilization emerges as a general theme (katanin for interspecies, kif2a for developmental scaling), the authors acknowledge that neither mechanism fully accounts for spindle size differences. The extent to which other factors contribute and whether this represents a complete mechanistic understanding remains unclear."
+    "status_reasoning": "Claims C96, C98, and C120 are supported by experimental data showing orientation defects when spindle size is reduced (C89). However, the mechanistic explanation involving frictional resistance (C98-C99) is largely speculative and based on physical principles rather than direct experimental validation. The proposed mechanism (C97, C99) requires additional experimental support to be considered fully validated."
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C128"
+      "C100",
+      "C101",
+      "C106"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Multiple importin \u03b1 bands are observed in stage 7-8 embryos, but whether these represent phosphorylation states or other post-translational modifications is explicitly stated as undetermined. This represents an important mechanistic gap requiring additional biochemical characterization."
+    "result": "Modulation of MT destabilization has emerged as a general mechanism for physiological spindle scaling in Xenopus, operating through different regulatory mechanisms in interspecies (phosphorylation-dependent) versus developmental (importin \u03b1-dependent) contexts. However, neither mechanism fully accounts for all spindle size differences observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C100-C101, C106 integrate current findings with prior work. The generalization about MT destabilization (C100) is supported by both the current data and cited prior work on katanin. The acknowledgment that mechanisms are incomplete (C106) is appropriately cautious and supported by the partial rescue effects observed in the manipulation experiments."
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C147",
-      "C148",
-      "C149",
-      "C150"
+      "C108",
+      "C109",
+      "C110"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Importin \u03b1 may coordinate nuclear and spindle size during development, positioning it as a central molecule controlling multiple subcellular structure sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The stage-specific metaphase orientation defect suggests a maintenance mechanism, and physical principles support that larger spindles resist rotation better. However, the actual mechanism maintaining metaphase orientation and the role of anaphase asters remain speculative without direct experimental evidence."
+    "status_reasoning": "Claims C108-C110 propose an integrative role for importin \u03b1 based on its effects on both nuclear size (C108, from prior work) and spindle size (current work). While both individual effects are supported, the coordination hypothesis (C109) is speculative and the claim of centrality (C110) requires more comprehensive validation across different subcellular structures and developmental contexts."
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C50",
-      "C51",
-      "C52"
+      "C111"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Kif2a is the first MT-destabilizing protein identified to be regulated by the RanGTP/importin pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The observation that chromosome misalignment is the most common defect, especially in stage 3 extracts, with the inference that this is due to poor metaphase arrest, is reasonable. The authors appropriately acknowledge that embryo extracts do not entirely preserve spindle morphology and function, which is important for interpreting results."
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C136",
-      "C138"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The speculation that high importin \u03b1 levels limit kif2a activity in egg extracts (explaining differences from MCAK) and whether importin \u03b1 regulates kif2a in cultured cells are explicitly identified as unknown. These represent important questions for understanding the generality of the mechanism."
+    "status_reasoning": "Claim C111 represents a novelty claim supported by the experimental demonstration of importin \u03b1 regulation of kif2a activity (C71, C72-C76) and the absence of prior reports of MT-destabilizing proteins regulated by this pathway. The claim is appropriately qualified as an identification rather than an absolute statement."
   }
 ]

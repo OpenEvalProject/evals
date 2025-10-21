@@ -1,20 +1,20 @@
 {
   "submission": {
-    "id": "0251d809-779d-4996-b375-bebbbff22e3f",
+    "id": "1a34d059-e711-4b9a-8aca-7ae24d4e461b",
     "user_id": null,
     "manuscript_title": null,
     "manuscript_doi": null,
     "status": "completed",
-    "created_at": "2025-10-16T21:06:02.036314Z",
-    "updated_at": "2025-10-16T21:06:02.036314Z"
+    "created_at": "2025-10-21T19:53:34.595334Z",
+    "updated_at": "2025-10-21T19:53:34.595334Z"
   },
   "content": [
     {
-      "id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
-      "submission_id": "0251d809-779d-4996-b375-bebbbff22e3f",
+      "id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
+      "submission_id": "1a34d059-e711-4b9a-8aca-7ae24d4e461b",
       "content_type": "manuscript",
       "content_text": "# Molecular clue links bacteria to the origin of animals\n\n## Authors\n\n- Michael G Hadfield\n\n### Affiliations\n\n1. Department of Biology and the Pacific Biosciences Research Center at the University of Hawaii at Manoa Honolulu United States hadfield@hawaii.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals, which suggests that bacteria might also have influenced the origin of multicellularity in animals.\n",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     }
   ],
   "prompts": [
@@ -23,140 +23,110 @@
       "prompt_text": "claim extraction prompt",
       "prompt_type": "extract",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     },
     {
       "id": "8e6aa149e11d7c3d",
       "prompt_text": "llm evaluation prompt",
       "prompt_type": "eval_llm",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     }
   ],
   "claims": [
     {
-      "id": "4e247a1f-eb95-4fb4-9970-458474ecfd34",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
+      "id": "8b66e6fa-c352-48a3-a6be-21b0b9df5b38",
+      "content_id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
       "claim_id": "C1",
-      "claim": "Bacteria have a role in the formation of colonies by a species of single-celled organisms.",
+      "claim": "Bacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals.",
       "claim_type": "EXPLICIT",
       "source_text": "Bacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals",
       "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "The claim is stated as an established finding in the abstract, suggesting it is supported by experimental or observational data from the research being discussed. The phrasing indicates this is a research finding rather than speculation.",
+      "evidence_reasoning": "The claim is presented as an established finding (DATA) about bacterial involvement in colony formation, and involves inference about ancestral relationships to animals.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     },
     {
-      "id": "5a85274e-a58b-45db-bcd7-2c63d86beb5d",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
+      "id": "95e49bd3-3438-4cfe-bbbc-5821540102fb",
+      "content_id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
       "claim_id": "C2",
-      "claim": "The single-celled organisms that form colonies with bacterial involvement are ancestral to animals.",
+      "claim": "The ancestors of a species of single-celled organisms gave rise to the animals.",
       "claim_type": "EXPLICIT",
-      "source_text": "Bacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals",
-      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
-      "evidence_reasoning": "The evolutionary relationship between certain single-celled organisms and animals is based on established phylogenetic knowledge and likely supported by cited literature in the field of evolutionary biology.",
+      "source_text": "a species of single-celled organisms whose ancestors gave rise to the animals",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "evidence_reasoning": "This reflects established scientific knowledge about the evolutionary origin of animals from single-celled ancestors.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     },
     {
-      "id": "800982c4-e831-4efa-ab7a-5d0779225956",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
+      "id": "1d6bd4e1-0663-4a7b-be27-7643802d6555",
+      "content_id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
       "claim_id": "C3",
       "claim": "Bacteria might have influenced the origin of multicellularity in animals.",
       "claim_type": "EXPLICIT",
-      "source_text": "which suggests that bacteria might also have influenced the origin of multicellularity in animals",
+      "source_text": "bacteria might also have influenced the origin of multicellularity in animals",
       "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
-      "evidence_reasoning": "The use of 'might' and 'suggests' indicates this is a speculative claim inferred from the observation about bacterial involvement in colony formation. It represents a hypothesis about evolutionary history rather than a directly demonstrated fact.",
+      "evidence_reasoning": "The use of 'might' indicates this is speculative, and it is inferred from the observation about bacteria's role in colony formation in ancestral single-celled organisms.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     },
     {
-      "id": "b655096f-f9f5-4c10-ab20-68c0a1278758",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
+      "id": "0c715272-495b-42f6-a173-d094b7b94a28",
+      "content_id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
       "claim_id": "C4",
-      "claim": "The bacterial role in colony formation of ancestral single-celled organisms provides evidence relevant to understanding animal multicellularity origins.",
+      "claim": "The role of bacteria in colony formation of ancestral single-celled organisms suggests a potential influence on animal multicellularity.",
       "claim_type": "IMPLICIT",
-      "source_text": "Bacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals, which suggests that bacteria might also have influenced the origin of multicellularity in animals",
+      "source_text": "Bacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals, which suggests that bacteria might also have influenced the origin of multicellularity in animals.",
       "evidence_type": "[\"INFERENCE\"]",
-      "evidence_reasoning": "This claim is implicit in the logical connection drawn between the observed bacterial role in modern colony formation and the hypothesis about ancient multicellularity. The manuscript implies that studying extant organisms can inform understanding of evolutionary origins.",
+      "evidence_reasoning": "This causal/logical connection between bacterial involvement in colony formation and potential influence on multicellularity is implied by the structure of the sentence using 'which suggests.'",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:06:02.036314Z"
-    },
-    {
-      "id": "58fb4d03-a734-46e2-baab-28aa06739a21",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
-      "claim_id": "C5",
-      "claim": "There is a molecular clue that links bacteria to the origin of animals.",
-      "claim_type": "EXPLICIT",
-      "source_text": "Molecular clue links bacteria to the origin of animals",
-      "evidence_type": "[\"DATA\", \"CITATION\"]",
-      "evidence_reasoning": "The title indicates that molecular evidence (a specific type of data) has been identified that connects bacteria to animal origins. This suggests molecular-level findings from research, likely detailed in the full manuscript.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:06:02.036314Z"
-    },
-    {
-      "id": "85e251a4-7b21-4be9-9bbd-1cd477d12fab",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
-      "claim_id": "C6",
-      "claim": "Colony formation is a relevant process for understanding the transition to multicellularity.",
-      "claim_type": "IMPLICIT",
-      "source_text": "Bacteria have a role in the formation of colonies by a species of single-celled organisms whose ancestors gave rise to the animals, which suggests that bacteria might also have influenced the origin of multicellularity in animals",
-      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
-      "evidence_reasoning": "The manuscript implicitly treats colony formation as a model or analog for multicellularity, drawing on established evolutionary biology concepts that colony formation represents an intermediate step toward true multicellularity.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     }
   ],
   "results": [
     {
-      "id": "20060222-fcc2-40e9-aba3-53af87197400",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
+      "id": "8cff5674-b311-41e7-ac44-b9a079961ef8",
+      "content_id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
       "result_id": "R1",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "Bacteria play a role in colony formation in a species of single-celled organisms (likely choanoflagellates) whose ancestors gave rise to animals. This is presented as an established finding based on prior research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "UNCERTAIN",
-      "result_reasoning": "Claims C1, C2, C5, and C6 establish that bacteria influence colony formation in animal-ancestral single-celled organisms, with molecular evidence linking bacteria to animal origins. However, the abstract provides no methodological details, experimental controls, sample sizes, statistical validation, or specifics about the molecular mechanism. Without access to the experimental design, replication data, or validation of the molecular clue, the empirical finding cannot be critically evaluated for rigor and reproducibility.",
+      "result_reasoning": "While C2 reflects established evolutionary knowledge about animal origins from single-celled ancestors, C1 presents bacterial involvement in colony formation as established fact without providing the underlying data, methodology, or citation in this abstract. The manuscript appears to be a commentary rather than primary research, so the actual experimental support cannot be evaluated from the provided text.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     },
     {
-      "id": "390449ee-e558-48bf-9915-d44b91a5025e",
-      "content_id": "d53ba76c-7185-4e39-80a8-1a985dce36b5",
+      "id": "88fc3d20-a86e-4a7e-8113-2310ead4f0ee",
+      "content_id": "3f321572-13ac-4c24-b7b4-7dc965546b78",
       "result_id": "R2",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
-      "result_status": "UNCERTAIN",
-      "result_reasoning": "Claims C3 and C4 propose that bacterial involvement in modern colony formation suggests bacteria may have influenced ancient animal multicellularity. The authors appropriately use speculative language ('might,' 'suggests'), acknowledging this is an evolutionary hypothesis rather than a demonstrated fact. Supporting this claim would require comparative genomic analyses across multiple lineages, experimental evolution studies, or paleobiological evidence that are not presented in the abstract. The inference is logical but remains unvalidated.",
+      "result": "The authors propose that bacteria might have influenced the origin of multicellularity in animals, based on the inference that bacterial involvement in modern colony formation of ancestral-type organisms suggests a similar role in evolutionary history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "result_status": "UNSUPPORTED",
+      "result_reasoning": "Claims C3 and C4 represent speculative inference rather than demonstrated findings. The logical leap from bacteria influencing colony formation in extant single-celled organisms to bacteria influencing the evolutionary origin of animal multicellularity requires substantial additional evidence including paleobiological data, comparative genomics, or experimental evolution studies that are not presented. The use of 'might' and 'suggests' indicates the authors acknowledge this is hypothesis rather than conclusion.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:06:02.036314Z"
+      "created_at": "2025-10-21T19:53:34.595334Z"
     }
   ],
   "claim_results": [
     {
-      "claim_id": "4e247a1f-eb95-4fb4-9970-458474ecfd34",
-      "result_id": "20060222-fcc2-40e9-aba3-53af87197400"
+      "claim_id": "8b66e6fa-c352-48a3-a6be-21b0b9df5b38",
+      "result_id": "8cff5674-b311-41e7-ac44-b9a079961ef8"
     },
     {
-      "claim_id": "5a85274e-a58b-45db-bcd7-2c63d86beb5d",
-      "result_id": "20060222-fcc2-40e9-aba3-53af87197400"
+      "claim_id": "95e49bd3-3438-4cfe-bbbc-5821540102fb",
+      "result_id": "8cff5674-b311-41e7-ac44-b9a079961ef8"
     },
     {
-      "claim_id": "58fb4d03-a734-46e2-baab-28aa06739a21",
-      "result_id": "20060222-fcc2-40e9-aba3-53af87197400"
+      "claim_id": "1d6bd4e1-0663-4a7b-be27-7643802d6555",
+      "result_id": "88fc3d20-a86e-4a7e-8113-2310ead4f0ee"
     },
     {
-      "claim_id": "85e251a4-7b21-4be9-9bbd-1cd477d12fab",
-      "result_id": "20060222-fcc2-40e9-aba3-53af87197400"
-    },
-    {
-      "claim_id": "800982c4-e831-4efa-ab7a-5d0779225956",
-      "result_id": "390449ee-e558-48bf-9915-d44b91a5025e"
-    },
-    {
-      "claim_id": "b655096f-f9f5-4c10-ab20-68c0a1278758",
-      "result_id": "390449ee-e558-48bf-9915-d44b91a5025e"
+      "claim_id": "0c715272-495b-42f6-a173-d094b7b94a28",
+      "result_id": "88fc3d20-a86e-4a7e-8113-2310ead4f0ee"
     }
   ],
   "comparisons": []

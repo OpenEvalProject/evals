@@ -2,224 +2,180 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C5",
-      "C6",
-      "C44",
-      "C45",
-      "C48",
-      "C49",
-      "C90"
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "S. pombe lacks a Hac1/XBP1 ortholog and UPR-dependent transcriptional program. Instead, Ire1 maintains ER homeostasis through post-transcriptional mechanisms: RIDD of ER-targeted mRNAs and Bip1 mRNA processing. RNA-seq analysis revealed 39 mRNAs reduced >2-fold in an Ire1- and DTT-dependent manner, all encoding ER-targeted proteins, with enrichment for secretory pathway functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The absence of a UPR-dependent transcriptional program in S. pombe is well-supported by comprehensive RNA-seq data showing no transcriptional upregulation (C44), lack of Hac1/XBP1 ortholog (C5), and statistical analysis of mRNA changes (C49). Multiple independent lines of evidence converge on this conclusion."
+    "status_reasoning": "Claims C3, C26, C27 establish the absence of transcriptional control and presence of post-transcriptional mechanisms, supported by RNA-seq data (C29-C31) showing selective mRNA downregulation of ER-targeted transcripts. Viability assays (C28) confirm Ire1 function is required for ER stress survival. The convergent evidence from genomic analysis, functional assays, and bioinformatic annotation provides strong support."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C7",
-      "C43",
-      "C45",
-      "C48",
-      "C49",
-      "C50",
-      "C52",
-      "C53",
-      "C55",
-      "C56"
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C56",
+      "C57",
+      "C64"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Ire1 initiates RIDD in S. pombe through sequence-dependent cleavage at a UG\\C consensus motif. Cleavage products accumulate in Ski2\u0394 cells and carry 2',3'-cyclic phosphates. The Gas2 ORF is sufficient for Ire1-dependent cleavage, and mutation of the UGC motif abolishes cleavage at that site. An Ire1 RNase mutant cannot sustain growth under ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "RIDD in S. pombe is demonstrated through multiple complementary approaches: RNA-seq showing selective mRNA down-regulation (C45, C48, C49), genetic epistasis with Ski2\u0394 showing Ire1-dependent cleavage products (C52, C53), and viability assays confirming functional importance (C43, C55, C56). The evidence is robust and internally consistent."
+    "status_reasoning": "Multiple lines of evidence converge: Northern blots show Ire1-dependent cleavage products (C32), 3' end mapping identifies the UG\\C motif (C34, C64), reporter constructs demonstrate ORF sufficiency (C35), mutagenesis confirms sequence dependence (C36, C37), and the 2',3'-cyclic phosphate signature (C57) is consistent with Ire1 activity. The RNase mutant phenotype (C56) provides functional validation."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C66",
-      "C95",
-      "C97",
-      "C104"
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C76"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Bip1 mRNA is uniquely processed by Ire1 cleavage at G373 in the 3' UTR, resulting in loss of polyA tail and increased stability. The truncated mRNA (tBip1) is more stable than full-length, and this processing is Ire1-dependent and sequence-specific. Bip1 is the only mRNA in S. pombe that loses its polyA tail upon UPR induction while remaining stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The characterization of Ire1 cleavage specificity is well-supported by 3' end mapping (C58), identification of consensus motif (C59, C60), mutational validation (C64, C65), and biochemical evidence of 2',3'-cyclic phosphate products (C57, C97). The catalytic mutant phenotype (C95) confirms Ire1's direct role."
+    "status_reasoning": "Northern blots (C38, C39) demonstrate Ire1-dependent processing and increased abundance. Promoter-swap experiments (C40) confirm post-transcriptional regulation. Half-life measurements (C41), 3' RACE sequencing (C42), and mutational analysis (C43, C44) establish the cleavage site and mechanism. Genome-wide RNA-seq comparison (C45, C76) confirms Bip1 is unique in this regulation."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C109",
-      "C110"
+      "C6",
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Truncation of Bip1 mRNA stabilizes the transcript and increases translation. tBip1 mRNA associates with polyribosomes and is actively translated. Cells with mutated Bip1 cleavage sites show growth delays and enhanced cell death after ER stress in liquid culture, indicating this processing is important for fitness, though the effect varies with growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The reporter construct experiments (C62, C63) demonstrate that ORF sequence is sufficient for targeting, while mutational analysis (C64, C65, C109) reveals both sequence-dependence and the existence of cryptic sites. This suggests a proximity-based recognition model (C110) that is well-supported by the data."
+    "status_reasoning": "Polysome fractionation (C46) and ribosome footprinting (C47) demonstrate tBip1 translation. Growth curves (C48) and viability assays (C49) show functional consequences of preventing Bip1 processing. The convergence of molecular (C6, C7) and phenotypic data (C48-C51) supports the physiological importance, with appropriate caveats about condition-dependence (C51)."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C8",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C82",
-      "C116"
+      "C52",
+      "C53",
+      "C54"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "RIDD reduces total protein influx into the ER by only ~15% under severe stress conditions. However, RIDD targets are highly selective, with strong enrichment for mRNAs encoding lipid metabolism proteins (31% vs 6.7% genome-wide) and particularly sterol metabolism proteins (13% vs 1.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Bip1 mRNA processing is uniquely characterized by multiple orthogonal methods: Northern blots showing two forms (C68, C69), 3' RACE mapping the cleavage site (C75, C76), sequence motif alignment (C77), and comparative RNA-seq demonstrating unique polyA loss (C82). The evidence is comprehensive and internally consistent."
+    "status_reasoning": "The 15% reduction estimate (C52) is calculated from ribosome footprinting data with transparent methodology. Gene ontology analysis (C53, C54) demonstrates statistically significant enrichment of specific functional categories. The data support both the quantitative impact assessment and the qualitative selectivity of RIDD targets."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C9",
-      "C73",
-      "C74",
-      "C119"
+      "C65",
+      "C66",
+      "C67",
+      "C68"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Bip1 mRNA stabilization is directly demonstrated by half-life measurements (C74) and supported by transcriptional reporter experiments (C72, C73) that distinguish transcriptional from post-transcriptional effects. The ~3-fold difference in half-life provides quantitative support for the stabilization claim."
+    "result": "UGC triplets are more frequent in mRNAs than actual Ire1 cleavage sites, indicating additional determinants beyond the consensus sequence. Many cleavage sites lie in predicted hairpin loops, and mutation of one site can lead to cleavage at alternative sites. Clearance of cleavage products by Ski2 may be required for continued Ire1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While C65 and C67 are supported by data, the structural predictions (C66) lack experimental validation, and the Ski2 requirement (C68) is explicitly speculative based on transient kinetics. The underspecification of cleavage determinants is acknowledged but not resolved. Additional experiments would be needed to definitively establish the mechanism of substrate selection and the role of product clearance."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C10",
-      "C83",
-      "C84",
-      "C85",
-      "C121"
+      "C71",
+      "C74",
+      "C75"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Increased Bip1 translation is supported by polysome profiling (C83), ribosome footprinting showing proportional ribosome density (C84, C121), and Western blot confirmation of increased protein levels (C85). Multiple independent methods confirm active translation of the truncated mRNA."
+    "result": "The increased stability of tBip1 mRNA may result from loss of an RNA degron in the severed 3' UTR. A predicted conserved hairpin structure exists at the 3' terminus in some fission yeasts, but preliminary mutational analysis failed to validate its importance for stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "C71 is explicitly speculative, and C75 indicates that the hairpin hypothesis (C74) was tested but not validated. The mechanism of tBip1 stabilization remains unresolved. While the observation of increased stability is well-supported, the molecular basis requires further investigation."
   },
   {
     "result_id": "R8",
     "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C77",
+      "C78",
       "C79",
       "C80",
-      "C81"
+      "C82",
+      "C84",
+      "C85",
+      "C86"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Background knowledge about UPR mechanisms across species, including established facts about Ire1 function, XBP1/Hac1 splicing, RIDD in metazoans, and species-specific features. This includes the historical context of UPR discovery and characterization in various organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Mutational analysis of the Bip1 cleavage site provides clear structure-function relationships: mutations at G373 abolish processing (C79), while G370 mutations have minimal effect (C80). The consistent ~2-fold transcriptional response in all mutants (C81) serves as an internal control, strengthening the conclusions."
+    "status_reasoning": "These claims represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context for interpreting the novel findings in S. pombe. The authors accurately represent the state of the field and cite primary sources appropriately."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C86",
+      "C8",
+      "C81",
+      "C83",
       "C87",
       "C88",
       "C89"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "S. pombe uses conserved stress-sensing machinery (Ire1) in novel ways to maintain ER homeostasis, providing an example of evolutionary repurposing. The authors speculate that a primitive UPR may have been a promiscuous RNA degradation system, with the specialized splicing mechanism evolving later, making S. cerevisiae an evolutionary endpoint rather than precursor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The physiological importance of Bip1 processing is demonstrated by growth delay (C86) and enhanced cell death (C87) in cleavage site mutants after ER stress. The context-dependent phenotype (C89) is appropriately noted, indicating the authors recognize limitations in their assay conditions."
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C92",
-      "C93",
-      "C94"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "While the calculation that RIDD reduces ER protein influx by only 15% (C92) is based on ribosome footprinting data, the authors acknowledge this seems insufficient to explain the lethal phenotype. The enrichment of lipid/sterol metabolism genes (C93, C94) suggests qualitative rather than quantitative effects, but the mechanistic connection to ER stress relief remains speculative."
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C54",
-      "C111",
-      "C112",
-      "C113"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The transient accumulation of cleavage products in Ski2\u0394 cells (C54, C111) is an interesting observation, but the interpretation that clearance is required for continued Ire1 activity (C112, C113) is explicitly speculative. Additional experiments would be needed to test this coupling hypothesis."
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C110"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The observation that UGC motifs are more common than cleavage sites (C105) correctly identifies that additional determinants must exist (C106). While hairpin structures are noted (C107), their variable positioning (C108) and the proximity-based model (C110) remain incompletely specified. Further work is needed to fully define substrate recognition rules."
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C120",
-      "C125",
-      "C126",
-      "C127"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The mechanism of tBip1 mRNA stability remains unclear. The RNA degron hypothesis (C120) is plausible but untested. The predicted hairpin structure (C125) failed experimental validation (C126), and the 2'-O-methylation hypothesis (C127) is purely speculative. Additional biochemical characterization is needed."
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C135",
-      "C136",
-      "C137",
-      "C138",
-      "C139",
-      "C140",
-      "C141"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The evolutionary interpretation that S. pombe represents a repurposing of conserved UPR machinery (C135, C136) is well-supported by the comparative data across species. The contrasting mechanisms in S. cerevisiae (C138) vs S. pombe (C139) and the merged system in metazoans (C140, C141) provide a coherent evolutionary framework consistent with the experimental findings."
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The evolutionary speculation that RIDD represents an ancestral state (C142-C147) is explicitly acknowledged as speculative by the authors. While the scenario is plausible and consistent with the data, it represents one possible evolutionary trajectory among several. Without phylogenetic reconstruction or ancestral state analysis, this remains an interesting but unproven hypothesis."
+    "status_reasoning": "The conclusion that S. pombe uses Ire1 differently (C8, C81, C83) is well-supported by the experimental data showing absence of transcriptional control and presence of RIDD/Bip1 processing. The evolutionary speculation (C87-C89) is appropriately presented as hypothesis rather than established fact, and is reasonable given the comparative data, though it cannot be definitively tested with the current evidence."
   }
 ]

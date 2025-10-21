@@ -2,64 +2,27 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C16",
-      "C17",
-      "C97"
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The claims show decreased sFLT-1 in AMD eyes with CNV and RAP compared to controls. However, the manuscript describes 'representative' images without quantification, sample sizes, or statistical analysis. The lack of quantitative data and potential selection bias in choosing 'representative' samples makes it impossible to determine if this is a robust, generalizable finding."
+    "result": "sFLT-1 is synthesized by photoreceptors and RPE, with higher relative expression in photoreceptors compared to inner retinal layers, and is decreased in human AMD eyes with CNV and RAP compared to age-matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C27, C28, C30, and C31 are supported by in situ hybridization and immunostaining data (Figure 1B,C) showing both mRNA and protein expression. Claims C5, C25, and C26 are supported by immunostaining comparisons between AMD and control eyes (Figure 1A). The localization data (C29, C34) is supported by immunohistochemistry. The evidence converges to support the synthesis, expression pattern, and disease-associated reduction of sFLT-1."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C96"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Multiple complementary techniques (in situ hybridization, immunohistochemistry) demonstrate sFLT-1 mRNA and protein expression in photoreceptors and RPE in both mouse and human tissue. The presence of both mRNA and protein supports the synthesis claim. The polarized basal localization in RPE is consistently observed across samples."
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C23",
-      "C24",
-      "C25",
-      "C27",
-      "C28"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The differential expression patterns of sFLT-1 and VEGF-A across retinal layers are well-documented with immunohistochemistry. The polarized distribution of sFLT-1 on the basal RPE facing the choroid, contrasted with VEGF-A on both surfaces, is clearly demonstrated. The functional interpretation about maintaining vascular balance is reasonable given the established roles of these factors."
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C29",
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C38",
-      "C98"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Antibody-mediated blockade of FLT-1 increases free VEGF-A and induces CNV in both wild-type and Flt-1 tk\u2212/\u2212 mice with appropriate statistical significance (n=10, p<0.001). The use of Flt-1 tk\u2212/\u2212 mice (lacking VEGF-B signaling) and PlGF measurements effectively rule out these factors, demonstrating VEGF-A specificity. In vitro binding assays confirm the antibody releases VEGF-A but not PlGF-2 from FLT-1."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C39",
+      "C6",
       "C40",
       "C41",
       "C42",
@@ -67,136 +30,219 @@
       "C44",
       "C45",
       "C46",
-      "C99"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "AAV-mediated shRNA knockdown of sFLT-1 is confirmed by Western blot and IHC. The approach induces CNV and increases VEGF-A in wild-type mice. Critically, the authors address the potential confound of non-specific immune activation by showing: (1) non-specific shRNA does not induce CNV despite elevating IFN-\u03b3, and (2) sFLT-1 shRNA induces CNV in Tlr3\u2212/\u2212 mice without immune activation. The VEGF-A dependence is demonstrated in Vegfa lox/lox mice."
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
       "C47",
       "C48",
       "C49",
       "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C100",
-      "C101"
+      "C51"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Suppression of sFLT-1 by neutralizing antibodies increases free VEGF-A levels and induces CNV in wild-type and Flt-1 tk\u2212/\u2212 mice, with CNV mediated specifically by VEGF-A desequestration rather than PlGF or VEGF-B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Conditional Cre/lox deletion of Flt-1 in RPE (Vmd2-cre) or photoreceptors (iCre-75) produces spontaneous CNV or RAP, respectively, with high penetrance in homozygotes (82% and 57%) and significant penetrance in heterozygotes. Cell-type specificity is confirmed with mT/mG reporter mice. Molecular validation shows decreased sFLT-1 and increased VEGF-A. The models recapitulate key features of human disease including spontaneous development without injury."
+    "status_reasoning": "Claims C40-C42 are supported by ELISA and imaging data (Figure 2A-D) with statistical significance (n=10, p<0.001). The ELISA validation studies (C43-C48, Figure 2 supplements 1-3) confirm assay specificity and antibody mechanism. Claims C49-C51 demonstrate that PlGF is not involved, supported by ELISA data and experiments in Flt-1 tk\u2212/\u2212 mice where VEGF-B signaling is inoperative. The mechanistic conclusion is well-supported by converging evidence."
   },
   {
-    "result_id": "R7",
+    "result_id": "R3",
     "claim_ids": [
+      "C7",
+      "C59",
+      "C60",
       "C61",
       "C62",
       "C63",
-      "C64"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Temporal analysis of VMD-Cre flt-1 lox/lox mice shows nascent choroidal endothelial changes at p21 (histology) before angiographically detectable CNV at p28, with no CNV at p21. This temporal sequence demonstrates that vascular changes precede neural retinal disruption, addressing the important question of whether CNV is primary or secondary to retinal degeneration."
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
+      "C64",
+      "C65",
       "C66",
       "C67",
-      "C92",
-      "C103"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The transgenic models exhibit spontaneous CNV/RAP early in life (1-3 months) without injury, in both homozygous and heterozygous animals, with phenotypes recapitulating human AMD features. This represents a significant advance over existing models that require senility or injury. The claim of being 'first' to show spontaneous early-onset CNV/RAP is supported by comparison to cited literature."
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
+      "C68",
+      "C69",
       "C70",
       "C71",
-      "C81",
-      "C104",
-      "C105"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The convergent evidence from three independent approaches (antibody blockade, shRNA knockdown, genetic deletion) all demonstrate that sFLT-1 suppression is sufficient to induce CNV/RAP through VEGF-A desequestration. The consistency across methods, the dose-response (heterozygotes show intermediate phenotype), and mechanistic validation (VEGF-A dependence) strongly support the conclusion that sFLT-1 is critical for photoreceptor avascular privilege."
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C68",
-      "C69"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The cited studies showing that VEGF-A overexpression alone produces intrachoroidal or retinal neovascularization but not CNV/RAP, combined with the current findings that sFLT-1 reduction causes CNV, support the inference that VEGF-A overexpression is insufficient and that the sFLT-1:VEGF-A ratio is critical. This is well-reasoned comparative analysis."
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C77",
-      "C78",
-      "C79"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The observation that AAV-mediated knockdown produces less CNV than antibody/genetic approaches is noted, and the speculation about preformed sFLT-1 persistence is reasonable. However, the observation of reduced VEGF-A and CNV in Vegfa lox/lox mice compared to wild-type during AAV experiments raises concerns about potential artifacts from loxP insertion affecting baseline gene expression, which the authors acknowledge but do not fully resolve."
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
       "C72",
       "C73",
       "C74",
       "C75",
       "C76"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "These claims about why physiologic sFLT-1 is not disruptive, the role of the interphotoreceptor matrix in trapping sFLT-1, and the translational value of the models are largely speculative interpretations. While plausible, they lack direct experimental support. The polarized secretion is observed (C75), but the functional implications and diffusion barriers are inferred rather than tested."
+    "result": "AAV-mediated shRNA knockdown of sFLT-1 induces CNV and increases VEGF-A levels in wild-type and Tlr3\u2212/\u2212 mice, with CNV formation due to specific sFLT-1 suppression rather than non-specific immune activation via TLR3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C59-C61 are supported by Western blot, IHC, FA, and ELISA data (Figure 3A-C) at 4 weeks. Claim C62 demonstrates VEGF-A necessity using Vegfalox/lox mice (Figure 3D). The TLR3 control experiments (C63-C76) effectively address the confound of non-specific immune activation: while both specific and non-specific shRNA increase IFN-\u03b3 and IL-12 in wild-type mice (C70-C71), only specific sFLT-1 knockdown induces CNV (C72-C73). Experiments in Tlr3\u2212/\u2212 mice (C74-C76) confirm CNV is due to sFLT-1 knockdown, not immune activation. The evidence is comprehensive and well-controlled."
   },
   {
-    "result_id": "R13",
+    "result_id": "R4",
     "claim_ids": [
-      "C83"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The speculation that Flt-1 knockdown in photoreceptors may cause degeneration through compromised Wnt signaling is not supported by data in this manuscript. While the authors acknowledge this as a potential confound, they do not provide evidence for or against this mechanism. The temporal data (R7) suggests vascular changes precede neural changes, but focal degeneration in photoreceptor-specific knockouts is not systematically evaluated."
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
+      "C8",
+      "C9",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
       "C87",
       "C88",
       "C89",
       "C90",
-      "C102"
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Cre/lox-mediated conditional ablation of Flt-1 in RPE or photoreceptors induces spontaneous CNV or RAP, respectively, in transgenic mice at early ages (1-3 months), with homozygous RPE-specific knockouts showing 82% CNV incidence and homozygous photoreceptor-specific knockouts showing 57% RAP incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C77-C81 establish the experimental system with Western blot and fluorescence imaging confirming cell-type-specific Cre expression (Figure 4A-B). Claims C82-C87 demonstrate spontaneous CNV/RAP development with decreased sFLT-1 and increased VEGF-A (Figure 4C-E). The quantitative data (C88-C93, Tables 2-3) show statistically significant increases in CNV/RAP incidence in knockout mice versus controls. Temporal analysis (C104-C108) demonstrates early choroidal changes preceding neural retinal changes, supporting a primary vascular mechanism. The evidence is robust with appropriate controls and multiple complementary methods."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "ADAM10, the only described protease that cleaves membrane-bound FLT-1 to soluble FLT-1, is not expressed in RPE or photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C109 is supported by citation to established literature. Claim C110 is supported by IHC data (Figure 5) showing absence of ADAM10 in RPE and photoreceptors. This evidence supports the conclusion that sFLT-1 in these tissues arises from direct transcription rather than proteolytic cleavage, strengthening the rationale for the genetic approaches used."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C114",
+      "C115",
+      "C119",
+      "C120",
+      "C134",
+      "C135"
+    ],
+    "result": "The mouse models recapitulate human AMD characteristics and demonstrate that sFLT-1, through sequestration of VEGF-A, is a key molecular defender of photoreceptor avascular privilege, with protein blockade, transcriptional silencing, or genomic ablation of sFLT-1 sufficient to induce CNV/RAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C111, C114, and C115 are supported by the phenotypic characterization showing CNV/RAP development in heterozygous mice at young ages (Tables 2-3), which differs from previous models. Claims C119-C120 are supported by the RPE-specific knockout data (Figure 4, Table 2). Claim C134 is a well-supported summary of the three experimental approaches (antibody, AAV-shRNA, Cre/lox). Claim C135 represents the main conclusion, supported by converging evidence from all experimental approaches showing that loss of sFLT-1 leads to VEGF-A desequestration and vascular invasion."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C121",
+      "C122"
+    ],
+    "result": "The differential expression patterns and polarities of VEGF-A and sFLT-1 in the retina suggest a critical balance that maintains photoreceptor layer health and choriocapillaris function while preventing subretinal vascular invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "These claims about broader implications, translational impact, and therapeutic applications are speculative and aspirational. While the findings do provide mechanistic insight into vascular zoning and support the rationale for AAV.sFlt-1 therapy (citing an ongoing clinical trial), the actual impact on pharmaceutical testing, other diseases, and therapeutic development remains to be demonstrated. These are reasonable interpretations of potential significance but not established results."
+    "status_reasoning": "Claims C32-C33 are inferences from expression data (Figure 1C) but represent theoretical interpretations. Claims C35-C38 are supported by data and citations. However, claims C39, C121, and C122 are explicitly speculative statements about functional balance and mechanisms. While the expression patterns are well-documented, the functional interpretation of how the ratio and polarity maintain vascular barriers is not directly tested. The claims represent reasonable hypotheses based on the data but lack direct experimental validation of the proposed balance mechanism."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Previous studies show that VEGF-A overexpression in RPE or photoreceptors produces intrachoroidal or retinal neovascularization but not CNV or RAP, suggesting VEGF-A overexpression alone is insufficient to overcome the subretinal vascular barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C116-C117 are supported by citations to Okamoto et al., 1997 and Schwesinger et al., 2001. Claim C118 is a reasonable inference from these cited studies. This prior work provides important context for interpreting the current findings, suggesting that the balance between VEGF-A and sFLT-1 is critical rather than absolute VEGF-A levels alone."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C152",
+      "C153"
+    ],
+    "result": "The genetic models described are the first to exhibit spontaneous CNV or RAP at early ages, more closely mimicking human AMD than previous models, and represent useful platform technologies for further studies and translational applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C152 regarding novelty is supported by comparison with previous models (C112-C113) and the experimental data showing early spontaneous disease. Claim C123 is an interpretive comparison that appears reasonable based on the phenotypic data. However, claims C124 and C153 are speculative statements about future utility and applications that cannot be evaluated from the current data. The novelty claim is supported, but the translational utility claims are prospective and uncertain."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "sFLT-1 secretion by RPE is polarized basally toward the choroid, and various observations about diffusion, CNV levels across different experimental approaches, and effects of loxP insertion on VEGF-A expression are discussed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C127 is well-supported by immunostaining data (Figure 1C,D). Claim C128 is a reasonable inference. However, claims C125-C126 are speculative about diffusion barriers. Claims C129-C130 describe an observation but offer only speculation about mechanism. Claims C131-C132 describe an interesting observation in Vegfalox/lox mice but provide only speculative explanations. Claim C133 cites prior reports of loxP effects but doesn't demonstrate this mechanism in the current system. These claims mix supported observations with speculative interpretations that lack direct experimental validation."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C136",
+      "C137"
+    ],
+    "result": "Various technical considerations and potential confounds of the experimental approaches are discussed, including injection-related effects and potential photoreceptor degeneration in knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C103 is speculation about injection artifacts. Claim C136 is a reasonable inference about the specificity of the Cre drivers but is not directly tested. Claim C137 is speculation about potential photoreceptor degeneration mechanisms. These are appropriate caveats and considerations but represent uncertainties rather than tested conclusions. The authors appropriately acknowledge these limitations, but they remain unresolved."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The findings have broader implications for understanding AMD therapy resistance, angiogenesis regulation, and potential therapeutic applications, with relevance to ongoing clinical trials and other diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C138 and C143 are supported by citations to prior clinical/pathological observations. Claims C140-C142 and C151 cite established knowledge about sFLT-1 functions. However, claims C139, C144-C150 are largely speculative statements about implications, applications, and future directions. Claim C145 is a reasonable interpretive statement about the study's contribution. While these speculative claims are appropriate for a Discussion section and some are grounded in the data, they represent prospective applications and hypotheses rather than demonstrated results. The translational relevance is plausible but uncertain."
   }
 ]

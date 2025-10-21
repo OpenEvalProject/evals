@@ -2,132 +2,147 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C56",
-      "C57",
-      "C58"
+      "C67",
+      "C68",
+      "C69",
+      "C70"
     ],
+    "result": "The model's sensitivity analysis identified CD8+ T-cell density at the initially infected region as the most predictive parameter of episode peak viral load and duration, with viral replication rate and T-cell expansion rate also correlating with viral production and episode duration.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers request a comprehensive multi-dimensional sensitivity analysis, stating the current approach of 'progressively modifying one at a time' is insufficient and that 'a multi-dimensional parameter space exploration is more suited to understand the relationships between input and model's output.' While the manuscript includes sensitivity analyses (claims about CD8+ T-cell density, viral replication rates, etc.), reviewers indicate these need to be expanded to fully validate the model's predictions about infection dynamics."
+    "status_reasoning": "Reviewer 1 explicitly states 'The paper lacks a proper sensitivity analysis that correlates parameter variability to outcomes of interest. This really needs to be performed to make the results complete.' The reviewers acknowledge parametrization is robust but request 'a multi-dimensional parameter space exploration' rather than the one-at-a-time approach used, indicating the current sensitivity analysis is insufficient despite the claims made."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C71",
-      "C73",
-      "C84"
+      "C3",
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C42"
     ],
+    "result": "A spatial mathematical model with 300 hexagonal regions was developed that reproduced heterogeneity in shedding episode duration and viral production, and predicted rapid viral expansion, decay, and spatial dispersion of HSV replication.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers explicitly ask 'What does the model suggest are likely drivers of variability between patients?' This directly questions claims about patient-level heterogeneity and long-term dynamics. The reviewers seek clarification on whether the model adequately explains inter-patient variability versus intra-patient variability over time, indicating uncertainty about these conclusions."
+    "status_reasoning": "While reviewers do not directly challenge the model structure, they ask fundamental questions about model behavior: 'How sensitive is the model to seeding frequency or location?' and 'What is the impact of the starting distribution of immune cells on the dynamics or success of lesions?' These questions indicate uncertainty about whether the model adequately captures the biological system and whether its predictions are robust to initial conditions."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C74",
-      "C75"
+      "C6",
+      "C7",
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C63"
     ],
+    "result": "Model simulations predicted extremely rapid viral dynamics: HSV-2 spread to thousands of cells in <12 hr with viral DNA doubling every 17 minutes during expansion, while immune responses eliminated infected cells in <24 hr, and secondary ulcers formed via cell-free viral spread.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers ask 'How sensitive is the model to seeding frequency or location?' This directly challenges claims about neuronal HSV release patterns and spatial distribution requirements. The reviewers want additional analysis to determine whether the model's conclusions about constant viral release and random spatial distribution are robust or sensitive to these assumptions."
+    "status_reasoning": "Reviewers ask 'What is the main driver of the size of the lesions?' which directly relates to these rapid kinetic predictions. The lack of proper multi-dimensional sensitivity analysis (as noted by reviewers) means the robustness of these specific quantitative predictions is uncertain. Reviewers' questions about model sensitivity to initial conditions further suggest uncertainty about these precise temporal dynamics."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C47",
-      "C50",
-      "C51",
-      "C64",
-      "C70"
+      "C57",
+      "C58",
+      "C62",
+      "C82",
+      "C83",
+      "C84",
+      "C89"
     ],
+    "result": "The model predicted that episode duration depends on total ulcers formed, with cell-free HSV being ~2000-fold less infectious than cell-associated HSV, and that secondary seeding occurs at viral loads of 10^6 copies, enabling prolonged asymptomatic episodes and efficient transmission.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers ask 'What is the impact of the starting distribution of immune cells on the dynamics or success of lesions?' This questions claims about CD8+ T-cell density determining episode outcomes. While the manuscript presents these findings, reviewers seek more thorough exploration of how initial immune conditions affect model predictions, suggesting the current analysis may be incomplete."
+    "status_reasoning": "Reviewer question 6 explicitly requests: 'Please discuss the likely implications of the work for transmission and how it is related to the presence or absence of lesions.' This indicates reviewers want more analysis of these transmission-related predictions. The request for better sensitivity analysis also affects confidence in the specific quantitative predictions about cell-free vs. cell-associated infectivity ratios."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C40",
-      "C44",
-      "C78",
-      "C107"
+      "C64",
+      "C65",
+      "C66",
+      "C71",
+      "C73",
+      "C74",
+      "C87"
     ],
+    "result": "The model predicts that CD8+ T-cell density inversely correlates with reproductive number, with spatial patterns cycling over years to create a chronic dynamic inflammatory state in the genital tract with spatially heterogeneous immune readiness.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers ask 'What is the main driver of the size of the lesions?' This directly questions claims about lesion size determinants and the relationship between infected cell numbers and ulcer dimensions. The reviewers want clarification on which model parameters most strongly influence lesion size, indicating the current presentation may not adequately address this question."
+    "status_reasoning": "Reviewer questions 2 and 4 directly address these claims: 'What does the model suggest are likely drivers of variability between patients?' and 'What is the impact of the starting distribution of immune cells on the dynamics or success of lesions?' These questions indicate reviewers want more thorough exploration of how immune cell distributions affect outcomes, suggesting the current analysis is incomplete."
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C76",
       "C77",
       "C78",
       "C79",
-      "C80",
-      "C88"
+      "C80"
     ],
+    "result": "The model requires assuming nearly constant viral release from neurons (~82 HSV DNA/day) with diffuse dispersal into genital epithelia, suggesting most HSV in ganglia remains latent while a minority reactivates frequently.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers request 'Please discuss the likely implications of the work for transmission and how it is related to the presence or absence of lesions.' This questions claims about asymptomatic transmission and the relationship between viral load thresholds and transmission risk. The reviewers indicate the manuscript needs more explicit discussion of how the findings relate to transmission dynamics."
+    "status_reasoning": "Reviewer question 3 asks 'How sensitive is the model to seeding frequency or location?' which directly challenges these claims about neuronal release patterns. Without the requested sensitivity analysis on seeding parameters, the necessity of these specific assumptions and their robustness remains uncertain."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C3",
-      "C4",
-      "C5",
-      "C6",
-      "C32",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
       "C33",
       "C34",
-      "C60",
-      "C61",
-      "C66"
+      "C35"
     ],
+    "result": "Empirical data showed that HSV DNA copy differences between swabs correlate with time intervals (R\u00b2=0.87-0.99), HSV-2 reactivates simultaneously in multiple genital regions, and CD8+ T cells are highly localized to ulcer edges with fourfold lower density 1 cm away.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "The core findings about rapid viral expansion (<12 hours to thousands of cells) and rapid immune clearance (<24 hours) are not challenged by reviewers. They acknowledge 'the parametrization is robust and identifiability does not seem to be a major issue,' implicitly accepting the model's fundamental kinetic predictions. The reviewers' concerns focus on extending the analysis rather than questioning these basic results."
+    "status_reasoning": "These are empirical observations from the study's data collection. Reviewers do not question the validity of these experimental findings, and their questions focus on model interpretation and analysis rather than the underlying data quality. The spatial and temporal patterns observed are accepted as the basis for model development."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C25"
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38"
     ],
+    "result": "Clinical and histological observations showed that genital lesions consist of multiple clustered ulcers developing sequentially, with intense virus-T cell interactions at ulcer sites and relatively quiescent tissue between ulcers, suggesting micrometer-scale host-pathogen dynamics.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "The empirical observations from high-frequency sampling, spatial sampling, and immunofluorescent staining are not questioned by reviewers. These data-driven claims about viral dynamics, spatial distribution, and immune cell localization form the foundation for the modeling work and are implicitly accepted as the reviewers focus their critique on model analysis rather than data quality."
+    "status_reasoning": "These observational claims about lesion structure and immune cell localization are not challenged by reviewers. The reviewers' questions focus on how the model interprets these observations rather than disputing the observations themselves. These form the empirical foundation that reviewers implicitly accept."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C31",
-      "C35",
-      "C36",
-      "C37"
+      "C41",
+      "C92"
     ],
+    "result": "Cell culture experiments showed that viral replication does not occur until approximately 12-16 hr after infection at very low MOI, with individual infected cells becoming detectable at 12-24 hr.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "SUPPORTED",
-    "status_reasoning": "Claims about model validation and fit to empirical data are not challenged. Reviewers state 'the parametrization is robust and identifiability does not seem to be a major issue,' indicating acceptance that the model adequately reproduces observed shedding patterns. Their concerns are about extending the analysis, not about the basic model-data agreement."
+    "status_reasoning": "These are direct experimental observations from cell culture studies conducted by the authors. Reviewers do not question these in vitro findings, which serve as supporting data for model parameter estimation."
   }
 ]

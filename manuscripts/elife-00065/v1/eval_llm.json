@@ -2,171 +2,314 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C6",
       "C7",
-      "C8",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C124"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "FGF21 transgenic overexpression significantly extends lifespan (~30-40% increase in median survival) without reducing food intake. The survival analysis uses appropriate statistical methods (Cox proportional hazards, Kaplan-Meier), adequate sample sizes, and demonstrates sex-specific effects with robust hazard ratios and confidence intervals."
-  },
-  {
-    "result_id": "R2",
-    "claim_ids": [
-      "C4",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
       "C48",
       "C49",
       "C50",
       "C51"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Transgenic overexpression of FGF21 markedly extends lifespan in mice without reducing food intake. Median survival increased by ~30% in males and ~40% in females (hazard ratio=0.22), with lifespan extension comparable to caloric restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Enhanced insulin sensitivity in FGF21-Tg mice is demonstrated through multiple complementary approaches including glucose tolerance tests, insulin tolerance tests, and gold-standard hyperinsulinemic-euglycemic clamp studies with tracer kinetics. The clamp data show both enhanced hepatic insulin sensitivity and whole-body glucose disposal with appropriate controls."
+    "status_reasoning": "Claims C6, C48-C51 provide robust survival data from Kaplan-Meier analysis with appropriate statistical testing (Cox proportional-hazards). Claim C7 is supported by metabolic cage data (C30) showing no difference in food intake. The survival extension is well-documented with clear hazard ratios and confidence intervals."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "FGF21-Tg mice exhibit dramatically enhanced insulin sensitivity and glucose tolerance. This is demonstrated by improved glucose and insulin tolerance tests, and hyperinsulinemic-euglycemic clamp studies showing increased glucose infusion rates and enhanced suppression of hepatic glucose production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Multiple complementary experimental approaches (glucose tolerance tests C39-C42, insulin tolerance tests, and gold-standard hyperinsulinemic-euglycemic clamps C43-C46) consistently demonstrate enhanced insulin sensitivity. The clamp studies with tracer kinetics provide mechanistic insight into both hepatic and peripheral insulin action."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C38",
-      "C39",
-      "C40",
-      "C21"
+      "C20",
+      "C34",
+      "C35",
+      "C36"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "FGF21-Tg mice are smaller than wild-type mice with reduced body weight at multiple ages and altered body composition, showing decreased fat mass and increased lean mass percentage at 26 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "FGF21-Tg mice exhibit reduced body weight and altered body composition (lower fat mass, higher lean mass percentage) across multiple age timepoints (6, 12, 26 months). The phenotype is consistent with prior characterization and measured using validated body composition methods with adequate sample sizes."
+    "status_reasoning": "Body weight data at multiple time points (C34) and body composition analysis by EchoMRI (C35-C36) provide consistent evidence. This phenotype is also supported by prior published work (C20) and aligns with the known effects of FGF21 on growth."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C6",
-      "C42",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C130",
-      "C131"
+      "C5",
+      "C38",
+      "C69",
+      "C70",
+      "C71"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "FGF21 causes bone loss in both young and old mice. Older FGF21-Tg mice (33-35 months) show reduced trabecular bone volume, consistent with prior findings in younger mice and acute FGF21 administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "FGF21 causes bone loss as demonstrated by \u03bcCT analysis showing reduced trabecular bone volume in both young and old transgenic mice. The mechanism involves increased marrow adipocyte differentiation and decreased osteoblast differentiation, supported by prior published work and confirmed in the current study."
+    "status_reasoning": "\u03bcCT analysis (C38, C71) demonstrates reduced trabecular bone volume in older mice, consistent with prior published data in younger mice (C69-C70). The finding is reproducible across age groups and treatment paradigms, though the mechanism involves multiple factors including altered bone cell differentiation (C72)."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C12",
-      "C64",
-      "C72",
-      "C79",
-      "C93"
+      "C30",
+      "C31",
+      "C32",
+      "C33"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The proposed mechanism that FGF21 extends lifespan primarily through GH/IGF-1 axis suppression is based on gene expression overlap with STAT5 knockout mice and phenotypic similarities to dwarf mice. However, direct measurements of GH/IGF-1 signaling components in aged FGF21-Tg mice are limited, and the transcriptomic analysis was performed in young (3-month-old) rather than aged mice where longevity effects manifest."
+    "result": "There were no differences in food intake, physical activity, oxygen consumption, or respiratory exchange ratio between 26-27-month-old wild-type and FGF21-Tg mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Metabolic cage data (C30-C33) directly measured these parameters over multiple days with appropriate acclimation. This is critical for establishing that lifespan extension occurs without caloric restriction, distinguishing FGF21's mechanism from traditional dietary restriction."
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C8",
       "C9",
       "C10",
-      "C11",
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108"
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The claim that FGF21 does not affect AMPK, mTOR, NAD+ metabolism, or mitochondrial content is based on western blots and biochemical assays in 26-28-month-old mice. However, sample sizes are small (n=4 for most measurements, n=2 for female adipose), only a single timepoint was assessed, and the lack of difference could reflect insufficient statistical power or age-dependent effects not captured."
+    "result": "FGF21 extends lifespan without affecting canonical longevity pathways including NAD+ metabolism, AMPK signaling, or mTOR signaling. No significant differences were observed in phosphorylated AMPK, S6, or 4E-BP1 levels, mitochondrial DNA content, or NAD+ concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Multiple biochemical measurements (western blots C91-C93, HPLC for NAD+ C95, qPCR for mitochondrial DNA C94) across multiple tissues consistently show no differences in these pathways. This negative result is important for mechanistic understanding, though the analysis is limited to steady-state measurements in aged mice and may miss dynamic changes."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C101",
-      "C102",
-      "C103"
+      "C11",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C62",
+      "C63"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNSUPPORTED",
-    "status_reasoning": "The claim that FGF21 achieves similar longevity to caloric restriction while regulating fewer genes is undermined by a critical methodological limitation: the transcriptomic analysis was performed in 3-month-old mice, not in aged mice where the longevity phenotype occurs. Age-dependent transcriptional changes that may be critical for lifespan extension were not assessed, making conclusions about mechanism premature."
+    "result": "Transcriptomic analysis suggests FGF21 acts primarily by blunting the GH/IGF-1 signaling pathway in liver. FGF21 regulated 33 genes in liver (vs 8 in muscle, 22 in adipose), with 30/33 also regulated by caloric restriction and 26/33 previously shown to be STAT5-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Microarray analysis with appropriate statistical criteria (FDR<0.10, >2-fold change) shows tissue-specific gene regulation (C52-C54) with strong overlap with caloric restriction in liver (C55-C56) and STAT5-regulated genes (C62). This convergent evidence supports the proposed mechanism, though the analysis is correlative and would benefit from functional validation."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C100",
-      "C91",
-      "C92"
+      "C57",
+      "C59",
+      "C76",
+      "C81"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNSUPPORTED",
-    "status_reasoning": "The conclusion that FGF21 could be used as hormone therapy to extend lifespan in mammals is speculative and insufficiently supported. It extrapolates from a single mouse strain to mammals generally without validation in other species, does not address whether bone loss occurs in humans, and lacks long-term safety data. The adverse bone effects represent a significant barrier acknowledged but not resolved."
+    "result": "The authors propose that FGF21 may extend lifespan by acting as a selective caloric restriction mimetic in liver through suppression of the GH/IGF-1 axis, and could potentially be used as hormone therapy to extend lifespan in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the gene expression overlap with caloric restriction (C55) and GH/IGF-1 pathway involvement are well-documented, these are correlative findings. The claim that FGF21 acts as a 'caloric restriction mimetic' is speculative (C57), and therapeutic potential in mammals (C81) is extrapolated from mouse data. The observation that caloric restriction does not increase FGF21 levels (C58-C59) actually argues against FGF21 being a mediator of caloric restriction's effects."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C34",
-      "C35",
-      "C36",
-      "C37"
+      "C37",
+      "C87"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "FGF21-Tg mice share multiple phenotypic similarities with long-lived dwarf mice including increased circulating adiponectin levels, small size, reduced insulin and IGF-1, and female infertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Metabolic cage studies demonstrate no differences in food intake, physical activity, oxygen consumption, or respiratory exchange ratio between 30-month-old wild-type and FGF21-Tg mice. This rules out caloric restriction or altered energy expenditure as mechanisms for lifespan extension, with adequate sample size (n=6/group) and appropriate methodology."
+    "status_reasoning": "Western blot data shows increased adiponectin (C37), body weight data confirms small size (C34), and hormonal measurements show reduced insulin and IGF-1 (C28, C40). The comparison to dwarf mice phenotypes (C87) is well-supported by the data, though female infertility is mentioned but not directly demonstrated in the current study."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C41"
+      "C82",
+      "C83",
+      "C84",
+      "C85"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The lifespan extension by FGF21 (~30-40%) is comparable to caloric restriction, less than Ames and GH receptor knockout mice (50-70%), but similar to Snell and PAPP-A knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The ratio of high molecular weight adiponectin to total adiponectin is increased in FGF21-Tg mice as shown by western blot analysis of adiponectin oligomeric forms. This is consistent with improved metabolic health, as HMW adiponectin is the most biologically active form."
+    "status_reasoning": "The quantitative comparisons (C82-C85) are appropriately supported by citations to published longevity data from other models. The ~30-40% increase in median survival is clearly documented in the current study (C50-C51), making these comparative statements valid."
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C62",
-      "C54",
-      "C55"
+      "C88"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Like Ames and Snell dwarf mice, female FGF21-Tg mice live longer than males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Female FGF21-Tg mice show greater lifespan extension (~40%) than males (~30%), similar to the sex-specific pattern observed in Ames and Snell dwarf mice. This is supported by separate survival analyses for each sex with adequate statistical power."
+    "status_reasoning": "The survival data (Figure 3D) shows female median survival of ~42 months vs male ~36 months (C50-C51), representing a clear sex difference. This is appropriately compared to published data on dwarf mice showing similar sex-specific effects."
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C73",
-      "C74"
+      "C60",
+      "C61"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The claim that endogenous FGF21 does not mediate caloric restriction's longevity effects is based on the observation that caloric restriction did not increase circulating FGF21 levels. However, the specific data supporting this observation are not shown in the figures, and tissue-specific FGF21 expression or activity was not assessed."
+    "result": "Multiple genes regulated by FGF21 in liver overlap with candidate longevity genes, including 8 genes identified by Swindell (2007) and 4 additional genes previously validated by qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The overlap with Swindell's candidate longevity genes (C60) is based on direct comparison of gene lists from microarray data. The additional 4 genes (C61) were validated by more sensitive qPCR in prior work, addressing potential false negatives in the microarray analysis."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "FGF21 modulated more genes in liver (33) than muscle (8) or adipose (22), yet achieved similar longevity extension as caloric restriction while regulating a much smaller gene set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The tissue-specific gene counts (C89) are directly from microarray analysis. The comparison to caloric restriction's broader transcriptional effects (C90) is valid, though the exact number of genes regulated by caloric restriction is not specified. This suggests FGF21 may act through a more focused mechanism."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "FGF21 is an atypical endocrine FGF hormone secreted by liver during fasting that induces hepatic fatty acid oxidation, ketogenesis, gluconeogenesis, and sensitizes mice to torpor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are well-established facts about FGF21 function supported by extensive prior literature (citations to Potthoff et al., 2012 and others). The claims accurately represent the current understanding of FGF21 biology based on published work."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "FGF21 blocks somatic growth by causing GH resistance through inhibition of JAK2-mediated STAT5 phosphorylation and nuclear translocation, suppressing Igf1 and other GH/STAT5-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The mechanism is well-documented in prior work (Inagaki et al., 2008) showing decreased IGF-1 despite elevated GH (C21), and the molecular mechanism through STAT5 inhibition (C23-C24). Supporting evidence from FGF21-knockout mice (C22) provides genetic validation of this pathway."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C25"
+    ],
+    "result": "Caloric restriction inhibits aging across species through multiple nutrient-sensing pathways (insulin/IGF-1, TOR, AMPK, sirtuins), and dwarf mice with impaired GH/IGF-1 signaling live up to ~70% longer than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are well-established facts in the aging field, appropriately cited to authoritative reviews and primary literature (Masoro, 2005; Bishop and Guarente, 2007; Kenyon, 2010; and others). The claims accurately represent consensus knowledge."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "GH induces FGF21 in liver through a STAT5-dependent mechanism, creating a regulatory feedback loop likely important for controlling GH activity and energy homeostasis during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The GH-FGF21 regulatory relationship is supported by multiple citations (Barclay et al., 2011; Chen et al., 2011; Yu et al., 2012). The proposed physiological significance (C65) is a reasonable inference based on the known roles of both hormones in starvation response, though it remains somewhat speculative."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "FGF21-induced bone loss involves multiple mechanisms including increased marrow adipocyte differentiation, decreased osteoblast differentiation, direct inhibition of GH action at the growth plate, and changes in GH/IGF-1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The mechanisms are supported by prior published work (Wei et al., 2012 for adipocyte/osteoblast effects C72; Wu et al., 2012 for growth plate effects C73). The inference about GH/IGF-1 involvement (C75) is reasonable given that other long-lived mice with altered GH/IGF-1 also show reduced bone mass."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Pharmacologic administration of FGF21 causes insulin sensitization, normalization of glycemia, and reduced body weight in obese animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are established effects from prior pharmacological studies, appropriately cited to Potthoff et al., 2012. The claims accurately represent published findings on FGF21's therapeutic effects in obesity models."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Klotho can be cleaved to yield a circulating peptide that blocks insulin/IGF-1 signaling and may contribute to lifespan extension, but unlike FGF21, Klotho causes insulin resistance which may limit therapeutic utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The biochemistry of Klotho cleavage and signaling effects (C77, C79) are established facts appropriately cited. The comparison to FGF21 highlights an important distinction for therapeutic development (C80), though the speculation about Klotho's mechanism of lifespan extension (C78) is acknowledged as uncertain."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Increases in AMPK and sirtuin activity and decreases in mTOR activity are associated with increased longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are well-established associations in the longevity field, appropriately cited to relevant literature. The claims accurately represent current understanding of these pathways' roles in aging, though the relationships are correlative and mechanistically complex."
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "FGF21-Tg mice were maintained on C57Bl/6J background in specific-pathogen-free conditions with 12:12 light:dark cycle, housed as littermates with maximum 5 mice per cage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are straightforward methodological details clearly stated in the Materials and Methods section. The housing conditions are appropriate for longevity studies and adequately described."
   }
 ]

@@ -2,184 +2,303 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C18",
-      "C19",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36",
-      "C59"
+      "C1",
+      "C2"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "HSV-2 exhibits episodic shedding with variable patterns that are poorly understood biologically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Temporal kinetics of HSV-2 shedding are well-characterized through multiple sampling frequencies (5-min to 24-hr intervals). The finding of extremely rapid expansion (10-fold every 57 min) and decay is supported by high-frequency empirical data from Cohorts A-C and accurately reproduced by the model. Statistical correlations (R\u00b2=0.99, 0.87) demonstrate measurement reliability."
+    "status_reasoning": "Claims C1 and C2 establish the background knowledge context for the study. C1 describes well-established HSV-2 behavior (episodic shedding, ulcers, transmission), while C2 identifies the knowledge gap regarding variable shedding patterns. Both are appropriately supported by scientific consensus."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C20",
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C116",
-      "C117",
-      "C118"
+      "C3",
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "A spatial mathematical model with 300 hexagonal regions was developed and validated against empirical data, reproducing key features of HSV-2 shedding including episode heterogeneity, rapid expansion/decay, and spatial dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Spatial features of HSV-2 reactivation are directly demonstrated through multi-site sampling (Cohort D) and quantitative immunofluorescence of biopsies. The finding that CD8+ T-cells are 4-fold more dense at ulcer edges (287 vs 72/mm\u00b2) and form micrometer-scale clusters provides strong evidence for highly localized immune responses. The observation of simultaneous multi-site reactivation is well-documented."
+    "status_reasoning": "Claims C3-C5 and C39-C42 collectively describe model development and validation. The model structure (C39-C40), incorporation of biological observations (C41), and successful reproduction of empirical data from Cohort E (C42) provide converging evidence. The model's ability to reproduce heterogeneity (C4) and predict key dynamics (C5) is validated against multiple independent datasets."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100",
-      "C104"
+      "C6",
+      "C7",
+      "C8",
+      "C9"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Model simulations predict extremely rapid HSV-2 spread within ulcers (<12 hr to thousands of cells), rapid immune clearance (<24 hr), and secondary ulcer formation via cell-free virus, characterizing HSV-2 infection as rapid growth and containment at multiple sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The spatial mathematical model successfully reproduces 8 key shedding features from 531 subjects across 1020 episodes. The iterative model development (Models 1-4) shows systematic improvement, with earlier models failing to capture prolonged episodes and re-expansion. The final spatial model with 300 hexagonal regions achieves good fit by AIC criteria, though the authors acknowledge stochastic variability and potential for multiple solutions."
+    "status_reasoning": "Claims C6-C9 present the main conclusions from model simulations. These predictions are internally consistent and supported by the validated model (C3-C5, C42). The conclusion (C9) integrates both empirical data and model inferences, providing a coherent explanation for observed shedding patterns."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C3",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C60",
-      "C61",
-      "C114",
-      "C115"
+      "C23",
+      "C24"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Model predictions of extremely rapid cell-to-cell spread (median 59 min to first infection, 6.8 hr generation time) are derived from parameter fitting rather than direct observation. The claim that cells become infectious before viral replication initiates (C43) contradicts established virology showing 4-6 hr replication time (C115) versus the authors' own cell culture observation of 12-16 hr (C114). This mechanistic hypothesis requires experimental validation."
+    "result": "Temporal variation in HSV DNA copies between swabs correlates strongly with time interval between swabs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C23 and C24 report high R\u00b2 values (0.99 and 0.87) from statistical analysis of swab data, indicating strong correlations. These are direct empirical findings from the study's temporal sampling protocols."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C5",
-      "C30",
-      "C44",
-      "C45",
-      "C67",
-      "C87",
-      "C108",
-      "C113"
+      "C25",
+      "C26",
+      "C27",
+      "C28"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "HSV-2 reactivation occurs simultaneously across multiple genital tract regions, with higher peak viral loads associated with increased probability of episode re-expansion, and lesions consisting of clustered ulcers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The role of cell-free virus in episode prolongation is supported by multiple lines of evidence: (1) correlation between peak viral load and re-expansion probability (C21), (2) model requirement for spatial spread to reproduce prolonged episodes, (3) simulation showing neutralizing antibodies reduce shedding from 18.2% to 10.8%, and (4) clinical observation of spatially clustered ulcers. The 2000-fold lower infectivity of cell-free virus is a reasonable parameter estimate."
+    "status_reasoning": "Claims C25-C28 describe spatial features of HSV-2 infection based on direct observations from spatial sampling (C25), analysis of 1020 episodes (C26), and clinical examination (C27). The inference about concurrent viral dynamics (C28) is reasonable given the observed clustering pattern."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C105"
+      "C29",
+      "C33",
+      "C34",
+      "C35"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "CD8+ and CD4+ T-cell densities are highly localized to ulcer edges with substantially lower densities 1 cm away, and form cluster-like aggregates even within small biopsies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "CD8+ T-cell density as the primary determinant of episode severity is strongly supported by global sensitivity analysis showing it is the most predictive parameter. This finding is consistent with mouse studies (Gebhardt 2009, Shin 2012) and explains the rapid clearance of infected cells (<24 hr even for thousands of cells). The model's prediction that most episodes are contained when <10 cells are infected aligns with previous work."
+    "status_reasoning": "Claims C29, C33-C35 present quantitative immunofluorescence data from biopsies showing spatial gradients of T-cell density. The measurements are specific (287/mm\u00b2 vs 72/mm\u00b2 for CD8+ cells) and based on direct microscopic observation, providing strong evidence for localized immune responses."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C74",
-      "C75",
-      "C76"
+      "C30",
+      "C31",
+      "C32"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Claims about continuous, spatially diffuse neuronal HSV release are model requirements to reproduce episode frequency rather than direct observations. While the model shows shedding patterns are insensitive to release timing (continuous vs pulsatile), the hypothesis that a minority of neurons frequently reactivate while most remain latent is speculative. Direct measurement of ganglionic reactivation patterns in humans is not feasible, making this prediction difficult to validate."
+    "result": "Herpetic lesions consist of multiple clustered ulcers that develop sequentially, suggesting virus from single ulcers may seed ancillary ulcers, with T-cell responses highly localized to viral replication foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C30-C32 integrate cited literature (C30, C32) with current observations. The sequential development and clustering pattern (C30) supports the inference about ancillary ulcer formation (C31). The localization of T-cell responses (C32) is supported by previous publications from the same group."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C52",
-      "C53",
-      "C56",
-      "C57",
-      "C58",
-      "C71",
-      "C72",
-      "C73",
-      "C84"
+      "C36",
+      "C37",
+      "C38"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Viral-immune interactions occur within micrometer-scale microenvironments at ulcer sites, while tissue between ulcers remains relatively quiescent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Long-term dynamics predictions from 10-year simulations reveal counterintuitive findings: enhanced immune function (higher CD8+ replication, lower viral replication) paradoxically increases long-term shedding rates by promoting more brief episodes and lower average CD8+ density. This nonlinear behavior is well-explained mechanistically and demonstrates model complexity. The prediction of chronic dynamic inflammatory states with cycling immune patterns is consistent with biopsy studies."
+    "status_reasoning": "Claims C36-C38 are reasonable inferences from the observed T-cell clustering (C35) and spatial density gradients (C29, C33-C34). The micrometer-scale interaction (C36) and quiescent inter-ulcer tissue (C38) logically follow from the localized high-density T-cell aggregates at ulcer edges."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C86",
-      "C88"
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Model simulations with high-frequency sampling reveal extremely rapid viral expansion (10-fold every 57 min, doubling every 17 min), peak at 13.5 hr, and demonstrate that daily sampling substantially underestimates expansion/clearance rates and misses ~50% of episodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Implications for asymptomatic transmission are well-supported by model predictions that secondary seeding occurs at 10^6 copies (roughly 1000 dead cells), below the threshold for visible lesions. This explains the established observation that most transmissions occur asymptomatically (Mertz 1985, 1998). The inference that rapid spread and re-expansion enhance transmission is a logical consequence of the model's validated predictions."
+    "status_reasoning": "Claims C43-C47 present model predictions about sampling frequency effects. The prediction that daily sampling underestimates slopes (C43) is validated against empirical findings from Cohort C. The quantitative expansion rates (C44-C45) and timing (C46) are internally consistent model outputs, and the episode detection finding (C47) explains discrepancies between sampling protocols."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C69",
-      "C89"
+      "C48"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Therapeutic implications are speculative. The claim that current antivirals fail to eliminate prolonged episodes because they only target intracellular replication is a hypothesis based on the model's prediction about cell-free virus spread. The recommendation to target cell-to-cell spread and neutralizing antibodies is reasonable but requires experimental validation. No clinical trial data or direct evidence supports these therapeutic strategies."
+    "result": "Approximately 75% of HSV-2 episodes are asymptomatic, brief (<48 hr), and associated with low peak copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C48 is a model prediction that matches empirical findings from Cohort C, providing validation. This convergence between model output and independent observational data supports the result."
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Model parameter estimates indicate epidermal cells produce 72,000-170,000 HSV DNA copies/day, with one of 76-123 cell-associated particles infecting neighboring cells/day, resulting in infection of 100, 1000, and 10,000 cells at median times of 5.6, 8.7, and 12.9 hr respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C49-C53 present quantitative parameter estimates and simulation results from the fitted model. These values are internally consistent and derived from systematic model fitting to empirical data (C42). The rapid kinetics are consistent with the overall finding of extremely rapid viral spread."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In vivo HSV-infected keratinocytes may become infectious before intracellular replication initiates, contrasting with 4-6 hr replication time in culture, a phenomenon described for vaccinia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C54-C56 present a hypothesis (C55) to reconcile model predictions with established in vitro observations (C54). The hypothesis is supported by analogy to vaccinia (C56). While speculative, this is appropriately framed as a suggested mechanism rather than a definitive conclusion."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Episode duration correlates with number of ulcers, with cell-free HSV ~2000-fold less infectious than cell-associated HSV due to environmental hazards, and elimination of infectious cell-free virus reduces shedding frequency from 18.2% to 10.8%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C57-C62 describe model findings about secondary ulcer formation and differential infectivity. The correlation (C57), infectivity difference (C58), mechanistic explanation (C59-C61), and simulation result (C62) form a coherent narrative. The biological explanations for reduced cell-free infectivity are plausible and supported by cited literature."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Rapid immune clearance of infected cells occurs within hours, with CD8+ T-cell density at reactivation sites being the most predictive parameter of episode severity, determining viral reproductive number and short-term trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C63-C70 present model predictions about immune dynamics and sensitivity analysis results. The rapid clearance kinetics (C63), inverse relationship with episode severity (C64-C66), sensitivity analysis findings (C67-C69), and overall conclusion (C70) are mutually reinforcing. The sensitivity analysis methodology provides quantitative support for the primacy of local CD8+ density."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Prolonged episodes (>10 days) occur when large areas have low CD8+ T-cell density, with spatial patterns cycling intermittently over years, suggesting HSV causes chronic dynamic inflammatory states consistent with empirical biopsy studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C71-C75 describe long-term model dynamics and their biological interpretation. The observations from simulations (C71-C73), interpretation (C74), and validation against empirical studies (C75) provide converging support. The consistency with published biopsy data strengthens the conclusions."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Model fitting requires nearly constant, spatially diffuse HSV-2 release from neurons (~82 DNA particles/day), with most ganglionic HSV maintained in latent state while a minority reactivates frequently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C76-C80 describe model requirements for neuronal virus release patterns. The necessity of constant release (C76), spatial diffusion (C77), insensitivity to temporal pulsing (C78), and interpretation about latency (C79-C80) are internally consistent. The latency interpretation (C79) is supported by cited literature and model requirements."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
       "C81",
       "C82",
       "C83",
-      "C85"
+      "C84"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Most HSV-2 transmission occurs during asymptomatic periods, with secondary seeding beginning at >10\u2076 HSV DNA copies (before ulcers are visible), enabling prolonged high-copy episodes without lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Model limitations are appropriately acknowledged by the authors. The exclusion of CD4+ T-cells, NK cells, dendritic cells, and innate immunity (particularly interferon) represents significant simplifications. The potential underestimation of viral load if swabs remove only a fixed proportion of virus is a valid concern. These limitations do not invalidate the model's main findings but indicate areas for future refinement."
+    "status_reasoning": "Claims C81-C84 connect model predictions to transmission biology. The asymptomatic transmission observation (C81) is supported by cited studies. The model predictions about seeding thresholds (C82-C83) and implications for asymptomatic transmission (C84) provide mechanistic explanation for the epidemiological observation."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The model generates hypotheses about HSV-2 pathogenesis including spatially heterogeneous immune readiness, rapid cell-to-cell spread ensuring high viral production despite immune responses, and cell-free virus prolonging episodes, with these strategies enhancing transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C85-C90 present model-generated hypotheses and acknowledge limitations. The acknowledgment of missing innate immunity (C85-C86) is appropriate. The hypotheses about immune heterogeneity (C87), rapid spread (C88), cell-free prolongation (C89), and transmission enhancement (C90) are reasonable inferences from the validated model, appropriately framed as hypotheses rather than definitive conclusions."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Localized infections differ from disseminated infections in that viral and immune dynamics are not accurately reflected in blood, with HSV-2 representing a useful model for studying localized pathogenesis in accessible genital keratinocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C10-C14 establish the rationale for studying HSV-2 as a model of localized infection. These are well-established principles of infectious disease pathogenesis supported by general knowledge and the specific accessibility of HSV-2 replication sites."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior studies have documented frequent variable HSV-2 shedding episodes with heterogeneous characteristics, localized T-cell responses, and complex viral trajectories, with previous models suggesting constant neuronal reactivation and varying T-cell responses account for episode patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C15-C22 summarize prior literature establishing the context for the current study. All claims are appropriately supported by multiple citations to published work, providing the foundation for the current investigation."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Recurrent genital HSV lesions in immunocompetent persons average 60 mm\u00b2 (range 2-270 mm\u00b2), and viral replication in cell culture is detectable 12-24 hr post-infection at low MOI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C91 and C92 provide specific measurements used in model design. C91 is supported by cited literature providing lesion size data, while C92 reports direct experimental observations from the study's cell culture experiments. Both provide empirical foundations for model parameters."
   }
 ]

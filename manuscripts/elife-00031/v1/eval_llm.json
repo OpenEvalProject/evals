@@ -2,144 +2,346 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C3",
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior research established that speed is underestimated at low contrast in both 2D and 3D environments, with uniform contrast reduction proposed as an explanation for excessive driving speed in fog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C1, C2, C8-C11 accurately characterize the state of prior research with appropriate citations (Thompson 1982, Snowden et al. 1998, Horswill and Plooy 2008, Owens et al. 2010). The authors correctly identify that all prior studies used uniform contrast reduction methodology."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C77"
+    ],
+    "result": "Fog creates distance-dependent contrast reduction because water droplets accumulate along the line of sight, causing contrast to decrease with distance and visibility to be better for close than distant objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C14-C17 and C77 describe the physical properties of fog based on established atmospheric physics. These are well-established facts about how fog affects visibility and are appropriately characterized as general knowledge."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Uniform contrast reduction is appropriate for 2D stimuli but is a poor model for fog in 3D environments, and the effects of distance-dependent contrast reduction on motion perception were unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C12-C13 and C18-C21 correctly identify a critical gap in the literature. The distinction between uniform and distance-dependent contrast reduction is logically sound and well-justified. The claim that effects of distance-dependent contrast reduction were unknown is supported by the literature review."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
       "C22",
       "C23",
       "C24",
       "C25",
       "C26",
       "C27",
-      "C78"
+      "C28",
+      "C29"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Experiment 1 showed that contrast reduction altered speed perception (F(4,44)=28.82, p<0.001), with opposite effects depending on type: distance-dependent reduction (fog) caused speed overestimation while uniform reduction caused underestimation. Discrimination sensitivity was lower with uniform reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The replication of speed underestimation with uniform contrast reduction is well-supported by strong statistical evidence (F(4,44)=18.82, p<0.001, \u03b7G2=0.30) and consistent effects across all target speeds. This validates the experimental paradigm and confirms prior literature findings."
+    "status_reasoning": "Claims C22-C29 report the primary findings from Experiment 1 with appropriate statistical support. The significant main effect, interaction, and post-hoc comparisons are properly reported. The JND findings (C27-C29) are also well-supported with statistics (F(4,44)=29.58, p<0.001)."
   },
   {
-    "result_id": "R2",
+    "result_id": "R5",
     "claim_ids": [
-      "C4",
-      "C24",
-      "C64",
-      "C85",
-      "C136"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "Speed overestimation in fog is robustly demonstrated across two independent experiments (1 and 3) with different participant groups, showing consistent perceptual effects with strong statistical support (F(4,44)=18.82 and F(2,18)=28.99, both p<0.001). The finding directly contradicts prior beliefs and is a primary contribution of the paper."
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C5",
+      "C33",
+      "C34",
+      "C35",
       "C36",
       "C37",
       "C38",
       "C39",
       "C40",
-      "C41",
+      "C41"
+    ],
+    "result": "Experiment 2 demonstrated that contrast type affected driving behavior (F(4,36)=43.18, p<0.001): drivers drove slower in fog (77.3-70.9 km/hr vs 85.1 km/hr baseline) but faster with uniform reduction (93.6-101.3 km/hr), consistent with perceptual biases from Experiment 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C33-C41 report behavioral findings that directly parallel the perceptual results. The statistical support is appropriate, all conditions differed significantly (p<0.05), and the pattern was consistent across target speeds. The interpretation linking perception to behavior (C40-C41) is well-justified by the data."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
       "C42",
       "C43",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C137"
+      "C44",
+      "C45"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Distance-dependent and distance-independent contrast reduction produce opposite perceptual and behavioral effects despite identical global contrast attenuation, suggesting that spatial distribution of contrast, not just global level, affects perceived speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The behavioral consequences of perceptual biases are convincingly demonstrated through experiments 2 and 4, with strong statistical effects (F(4,36)=43.18 and F(2,18)=39.99, both p<0.001). The consistent relationship between perceived speed (experiments 1, 3) and driving behavior (experiments 2, 4) provides strong evidence for the causal link between perception and action."
+    "status_reasoning": "Claims C42-C45 synthesize the key finding from Experiments 1-2. The claim that global contrast was matched (C43) is supported by RMS measurements in methods. The inference that spatial distribution matters (C44-C45) is strongly supported by the opposite effects with equal global contrast."
   },
   {
-    "result_id": "R4",
+    "result_id": "R7",
     "claim_ids": [
-      "C6",
-      "C44",
-      "C45",
       "C46",
       "C47",
-      "C79",
-      "C80",
-      "C83",
-      "C84",
-      "C87",
-      "C88"
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The authors hypothesize that fog's effect on speed perception results from relative contrast between central and peripheral visual fields, based on prior work showing speed overestimation with central occlusion and the spatial mapping of fog visibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The claim that spatial distribution rather than global contrast determines perceived speed is well-supported by the systematic comparison of fog versus uniform contrast conditions with matched global contrast (RMS values). The opposite perceptual effects despite identical global contrast reduction provide compelling evidence for this mechanism, though the choice of RMS as the measure of 'global' contrast could be questioned."
+    "status_reasoning": "Claims C46-C53 present a mechanistic hypothesis linking fog properties to visual field effects. The spatial mapping claims (C46-C48) are logical inferences supported by citation (Snowden & Freeman 2004). The connection to prior work (C49-C51, citing Pretto et al. 2009) appropriately motivates the hypothesis, though C52-C53 are explicitly speculative."
   },
   {
-    "result_id": "R5",
+    "result_id": "R8",
     "claim_ids": [
+      "C54",
+      "C55",
       "C56",
       "C57",
       "C58",
       "C59",
       "C60",
       "C61",
-      "C63",
+      "C62",
+      "C63"
+    ],
+    "result": "Experiment 3 tested the hypothesis using anti-fog (reversed visibility gradient). Results showed significant effects (F(2,18)=28.82, p<0.001): fog caused speed overestimation while anti-fog caused underestimation, supporting the central-peripheral contrast hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C54-C63 describe a well-designed critical test of the hypothesis. The anti-fog manipulation (C54-C56) appropriately reverses the spatial distribution while maintaining global contrast. Statistical results (C60) are significant, and the pattern (C61-C63) directly supports the hypothesis with all conditions differing (p<0.05)."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
       "C64",
       "C65",
       "C66",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C86"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The anti-fog manipulation provides strong confirmatory evidence for the proposed mechanism by inverting the visibility gradient and observing the predicted reversal of perceptual bias. Statistical support is robust (F(2,18)=28.99 for perception, F(2,18)=39.99 for behavior, both p<0.001). However, the doubled speed variability in anti-fog driving (C75) suggests participants may have found this condition particularly challenging or unnatural, which could indicate ecological validity concerns."
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31",
       "C67",
-      "C68"
+      "C68",
+      "C69",
+      "C70"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Experiment 4 showed that anti-fog affected driving behavior (F(2,18)=39.99, p<0.001): drivers drove slower in fog (53.1 km/hr) but faster in anti-fog (104.4 km/hr) compared to baseline (67.9 km/hr). Speed variability was higher in anti-fog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The differential effects on discrimination sensitivity (JND) are statistically significant (F(4,44)=29.58, p<0.001 for experiment 1; F(2,18)=4.01, p<0.05 for experiment 3), showing that uniform contrast reduction impairs speed discrimination more than fog. The proposed ecological explanation (C31) is speculative but the empirical finding itself is well-supported."
+    "status_reasoning": "Claims C64-C70 report behavioral validation of Experiment 3's perceptual findings. Statistics are appropriate and significant. The increased variability in anti-fog (C69-C70, F(2,18)=9.56, p<0.01) is an interesting additional finding, possibly reflecting the unnaturalness of the anti-fog condition."
   },
   {
-    "result_id": "R7",
+    "result_id": "R10",
     "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study demonstrates that perceived speed depends on spatial distribution of contrast rather than global level per se. Specifically, speed is determined by relative contrast between central and peripheral visual fields, with better peripheral visibility causing overestimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6, C74-C76, and C79-C84 present the primary theoretical contribution. This conclusion is strongly supported by all four experiments showing opposite effects with matched global contrast but different spatial distributions. The mechanistic explanation (C80) is well-supported by the anti-fog manipulation."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study demonstrates a direct relationship between perceived and produced speed: speed overestimation prompted slower driving while underestimation led to faster driving, showing that driving speed is strongly affected by perceived visual speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C85-C88 are strongly supported by the consistent correspondence between perceptual judgments (Experiments 1 and 3) and driving behavior (Experiments 2 and 4). The parallel patterns across all conditions provide compelling evidence for this perception-action link."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
       "C95",
       "C96",
-      "C97",
-      "C98",
-      "C103",
-      "C104",
-      "C105",
-      "C106",
-      "C107"
+      "C97"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The authors justify their use of a simplified driving environment without landmarks to isolate perceptual effects from cognitive factors and prevent subjects from using cognitive strategies to estimate speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The experimental design choice to exclude landmarks is well-justified and the validation data (accurate speed estimates in clear conditions, low JNDs) confirm that the rough textures provided sufficient visual flow information. This addresses potential concerns about the ecological validity of the simplified driving environment for studying perceptual mechanisms."
+    "status_reasoning": "Claims C89-C97 present a reasonable methodological justification. The concern about cognitive confounds (C90, C95-C97) is valid. However, C95-C97 are speculative ('would have'). The design choice is defensible for isolating perceptual mechanisms, though it limits ecological validity."
   },
   {
-    "result_id": "R8",
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Despite the absence of landmarks, the rough textures in the driving scenario provided robust visual flow information, as evidenced by accurate speed estimates and low variability (JNDs) in clear visibility conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C98-C104 address a potential concern about the simplified environment. The empirical evidence (C102-C103) of accurate performance and low JNDs in baseline conditions supports the claim that visual flow was adequate. This validates the experimental approach despite the simplification."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Contrast-dependent modulation of neural activity has been reported throughout the visual system, from retina through LGN and V1 to area MT/V5, which plays important roles in motion processing and speed detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C105-C111 accurately summarize neurophysiological literature with appropriate citations (Shapley & Victor 1978, Solomon et al. 2002, Pack et al. 2005, Maunsell & Van Essen 1983, etc.). These are well-established findings in visual neuroscience."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Linking neurophysiology to perception is not straightforward: MT neuron responses to low contrast would predict speed overestimation, opposite to behavioral observations with uniform contrast reduction. Pack et al. (2005) suggested this might be resolved by assuming a slow-speed bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C112-C116 correctly identify a known inconsistency between neurophysiology and behavior. The characterization of Pack et al.'s findings (C113) and the prediction (C114) are accurate. The acknowledgment of the inconsistency (C115) and proposed resolution (C116) are appropriately attributed."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Bayesian models of speed perception, which assume noisy measurements and a prior for slow speeds, can predict speed underestimation at low contrast but have difficulty accounting for speed overestimation at high speeds or low luminance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C117-C122 accurately characterize Bayesian models with appropriate citations (Weiss et al. 2002, Stocker & Simoncelli 2006). The description of model assumptions (C118-C119) and predictive successes/limitations (C120-C122) are fair assessments of the cited literature."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Alternative 'ratio models' can account for both under- and overestimation at low contrast, but neither Bayesian nor ratio models address situations with spatially varying contrast reduction, and thus cannot explain the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C123-C127 accurately describe ratio models (citing Hammett et al. 2000, 2005) and correctly identify that existing models don't address spatially heterogeneous contrast reduction. The claim that models cannot explain opposite biases with equal global contrast (C127) is a valid critique supported by the experimental findings."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C73",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study confirms speed underestimation with uniform contrast reduction but shows for the first time that fog (distance-dependent reduction) causes speed overestimation and slower driving, revealing that speed perception depends on spatial contrast distribution due to central-peripheral visibility differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C3-C5, C73, and C131-C135 summarize the main contributions. The replication of prior findings (C3, C73) validates the methods. The novel findings about fog (C4-C5, C134-C135) are well-supported by all four experiments. The claim of novelty (C131) appears justified given the literature review."
+  },
+  {
+    "result_id": "R19",
     "claim_ids": [
       "C128",
       "C129",
-      "C130"
+      "C130",
+      "C136"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Poor visibility affects millions of drivers and contributes to thousands of deaths annually, with excessive speed as a major causal factor. The authors suggest drivers should heed their visual system's prompting to decelerate in fog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C128-C130 about accident statistics lack specific citations and may overstate the connection to visibility-related accidents. Claim C136 is a practical recommendation that follows logically from the findings but is qualified with 'probably,' acknowledging uncertainty about real-world application. The recommendation assumes the laboratory findings generalize to actual driving."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The reduced discrimination sensitivity with uniform contrast might result from distance-independent contrast alteration being seldom encountered in real life, as drivers typically demist windshields before driving.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C30 is explicitly speculative ('might result from') and lacks direct empirical support. While C31-C32 about demisting behavior are plausible, they don't constitute evidence for the proposed explanation. Alternative explanations (e.g., different neural processing mechanisms) are not considered. This remains an interesting but untested hypothesis."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Thirty-two experienced drivers with normal or corrected-to-normal vision participated voluntarily, and the study was conducted in accordance with ethical standards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The identification of a gap in existing theoretical models (Bayesian and ratio models) is well-justified. The current findings demonstrate that these models cannot account for opposite perceptual biases with identical global contrast, highlighting the need for models that incorporate spatial distribution of contrast. This represents an important theoretical contribution."
+    "status_reasoning": "Claims C137-C139 are straightforward methodological facts about participants and ethics. The sample size is adequate for the within-subjects design, and ethical compliance is appropriately documented."
   }
 ]

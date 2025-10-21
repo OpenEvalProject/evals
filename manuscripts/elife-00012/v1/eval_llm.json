@@ -2,38 +2,43 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C1",
       "C2",
       "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
       "C28",
       "C29",
-      "C99",
-      "C101",
-      "C102",
+      "C30",
       "C31",
       "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C73"
+      "C33"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "An STDP protocol pairing postsynaptic action potentials with visually driven presynaptic inputs bidirectionally modifies neuronal spiking responses in vivo depending on spike timing. Positive timing (post-before-pre) converted subthreshold responses to suprathreshold in over 50% of neurons (8/15), increasing average spiking by 0.11\u00b10.06 APs per stimulus (p=0.01). Negative timing (pre-before-post) decreased spiking from 0.84\u00b10.23 to 0.18\u00b10.10 APs per stimulus (p=0.04, n=15). These changes were not explained by membrane potential depolarization or input resistance changes, and control experiments without pairing showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Positive timing STDP reliably converts subthreshold to suprathreshold responses with strong statistical support (p=0.01, 8/15 neurons transitioned, significant even after removing outliers). Appropriate controls rule out alternative explanations including membrane potential changes, input resistance changes, and spontaneous drift. The experimental design with ~40 pairings is physiologically plausible."
+    "status_reasoning": "Claims C1-C3, C21-C33 provide converging experimental evidence with appropriate statistical tests, controls, and sample sizes (n=15-17 neurons per condition). The bidirectional timing-dependent effects are demonstrated with significant p-values, control experiments rule out confounds, and robustness analyses (C32) confirm the effect persists after removing outliers. The experimental design appropriately addresses the core hypothesis."
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C4",
-      "C30",
-      "C100",
-      "C103",
-      "C74"
+      "C35",
+      "C36",
+      "C37",
+      "C38"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "STDP induction restructured neuronal responses across the receptive field, with suprathreshold response centers shifting toward the pairing position after positive timing protocols. The shift was strongly correlated with the initial distance from pairing position (R=0.81, p=0.008, n=9). Subthreshold response centers also shifted toward pairing position for positive timing (R=0.53, p=0.04), though less robustly. Negative timing showed non-significant trends away from pairing position (p=0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Negative timing STDP reduces AP responses with statistical significance (p=0.04, 12/15 neurons decreased, 4 significant at single-neuron level). This bidirectional effect complements the positive timing results and demonstrates timing-dependent plasticity. The effect size is smaller than positive timing but remains robust across the population."
+    "status_reasoning": "Claims C4, C35-C38 demonstrate spatial restructuring of receptive fields with appropriate statistical analyses. The strong correlation for suprathreshold shifts (C36) and weaker but significant subthreshold shifts (C38) are consistent with the proposed mechanism. The lack of significance for negative timing (C37) is appropriately reported and does not undermine the positive timing results."
   },
   {
     "result_id": "R3",
@@ -44,97 +49,110 @@
       "C41",
       "C42",
       "C43",
-      "C75"
+      "C44",
+      "C45",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Suprathreshold response center shifts toward paired position are well-supported (R=0.81, p=0.008), but subthreshold shifts are weaker (R=0.53, p=0.04) and negative timing shows no significant trend (p=0.70). The spatial transfer mechanism relies on assumptions about shared presynaptic inputs that are modeled but not experimentally validated. The decay of plasticity with distance is shown but the underlying circuit mechanisms remain unclear."
+    "result": "Computational modeling demonstrated that presynaptic temporal jitter is necessary to reproduce in vivo STDP effects. Models with precise timing produced narrow STDP windows matching in vitro studies, but introducing 40 ms jitter produced biphasic membrane potential changes matching experimental observations, with peaks at 30-50 ms before and after pairing spikes rather than at t=0. The model also reproduced partial transfer of plasticity to neighboring stimulus positions assuming overlapping presynaptic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C5, C39-C45, C59-C64 present a coherent computational model that explains the discrepancy between in vivo and in vitro STDP timing. The model makes testable predictions, reproduces key experimental observations (C61), and provides mechanistic insight into the role of temporal jitter. The modeling appropriately acknowledges alternative explanations (C63) and builds on prior work (C64)."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C6",
-      "C44",
-      "C45",
       "C46",
       "C47",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C91",
-      "C93",
-      "C94",
-      "C96",
-      "C97",
-      "C98"
+      "C48",
+      "C49",
+      "C50"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Small voltage changes (~2 mV) induced by STDP were sufficient to significantly alter stimulus-evoked spiking probability. This demonstrates that small subthreshold changes can have dramatic effects on suprathreshold output, consistent with prior in vitro studies showing reliable spike generation from complex waveforms and sensitivity to small current injections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Computational modeling demonstrates that presynaptic temporal jitter (~40ms) is necessary and sufficient to reproduce the broader STDP timing windows observed in vivo compared to in vitro (peak changes at 30-50ms vs t=0). The model uses physiologically realistic parameters (2mV mean EPSP, exponential distribution, 400 inputs) and successfully predicts both the biphasic voltage changes and partial spatial transfer. While alternative mechanisms are acknowledged, the jitter hypothesis is well-supported by the simulations matching experimental data."
+    "status_reasoning": "Claims C46-C48 report direct experimental observations linking small voltage changes to significant spiking changes, supported by the statistical results in C21-C25. Claims C49-C50 provide appropriate context from prior literature. The conclusion is well-supported by the data showing conversion from non-spiking to spiking states despite modest membrane potential changes."
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C48",
-      "C49",
-      "C50",
+      "C6",
+      "C7",
+      "C34",
       "C51",
       "C52",
-      "C53"
+      "C53",
+      "C54",
+      "C55",
+      "C65",
+      "C66",
+      "C67"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The observation that ~2mV voltage changes produce significant spiking changes is empirically demonstrated, but the underlying mechanism remains speculative. The authors acknowledge the complexity of spike generation in vivo and can only cite in vitro studies showing reliable spike generation from complex waveforms. The lack of mechanistic understanding of how such small voltage changes translate to large spiking changes in vivo limits confidence, though the empirical observation itself is clear."
+    "result": "STDP rules can modify output patterns of sensory neurons, with single-spike timing playing a crucial role in sensory coding and plasticity. The study provides experimental validation that STDP can change receptive fields and demonstrates a mechanism by which neurons join or leave cell assemblies. This bridges the gap between population-level receptive field plasticity and single-neuron STDP, extending prior knowledge from subthreshold to suprathreshold domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C6-C7, C34, C51-C55, C65-C67 synthesize the experimental findings into broader conclusions about STDP function. These interpretations are well-supported by the experimental data (Results 1-4) and appropriately contextualized within the existing literature. The claims about bridging different scales of plasticity (C66) and extending to suprathreshold domains (C65) are justified by the presented evidence."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C7",
-      "C8",
-      "C36",
-      "C37",
-      "C38",
-      "C54",
-      "C55",
-      "C73",
-      "C74",
-      "C76",
-      "C77",
-      "C89"
+      "C56",
+      "C57",
+      "C58",
+      "C20"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Whole-cell recordings were obtained from layer 2/3 pyramidal neurons in primary visual cortex (169\u00b13 \u03bcm depth, n=71 neurons from 58 rats). Visual stimuli were flashed bars presented during down-states, evoking responses at all four stimulus positions consistent with broad receptive fields in young rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The study successfully demonstrates that STDP rules can modify output patterns of sensory neurons using physiologically realistic protocols (~40 pairings, low firing rates). The results extend prior in vivo work from subthreshold to suprathreshold domain and provide experimental validation for theoretical predictions about receptive field plasticity. The bidirectional nature of the plasticity (both LTP and LTD) and the timing dependence are robustly demonstrated across multiple neurons with appropriate controls."
+    "status_reasoning": "Claims C56-C58, C20 describe methodological details and basic observations that are clearly documented. The experimental approach is appropriate for studying STDP in vivo, with proper cell-type selection (C57) and stimulus delivery (C58). The observation about broad receptive fields (C20) is consistent with established knowledge about young rat visual cortex."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C26",
-      "C27",
-      "C90"
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C68"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Background claims establish that: (1) sensory percepts involve action potential propagation through connected neurons; (2) synaptic plasticity depends on correlated activity; (3) STDP protocols use physiologically relevant spike numbers and frequencies; (4) cortical neurons show temporally precise responses; (5) prior evidence for in vivo STDP was limited to subthreshold changes; and (6) visual cortex exhibits high plasticity. The experimental protocol used firing rates similar to those in awake rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "The study shows robust timing-dependent changes in peak amplitude: negative timing (APs before peak) decreases amplitude while positive timing (APs after peak) increases it, consistent with STDP rules. This bidirectional effect on the initial peak is clearly demonstrated in the data (Figure 2B-C) and represents a key validation that the protocol induces STDP-like plasticity in vivo."
+    "status_reasoning": "Claims C8-C19, C68 provide appropriate background context supported by extensive citations. These establish the rationale for the study and accurately represent the state of the field. The comparison of experimental parameters to physiological conditions (C10, C68) strengthens the biological relevance of the findings."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C56",
-      "C57",
-      "C58",
-      "C80"
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNSUPPORTED",
-    "status_reasoning": "These claims about STDP being a fundamental mechanism for neurons joining/leaving cell assemblies and selecting synaptic sequences for long-term storage are speculative interpretations that extend beyond the experimental data. While the physiological relevance is argued by comparison to firing rates in awake animals, the actual functional role in cell assembly dynamics and learning is not tested. These remain hypotheses requiring future experimental validation in behaving animals."
+    "result": "The authors propose that timing-based STDP represents a general plasticity principle for neurons joining/leaving cell assemblies, while acknowledging that subthreshold voltage manipulation alone might produce similar effects. They contextualize their findings within broader theories of Hebbian plasticity and optimality theories of STDP, proposing that both pre-before-post LTP and post-before-pre LTD are robust mechanisms for manipulating neuronal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claims C69-C76 present interpretations and theoretical context that extend beyond the direct experimental evidence. While C76 is reasonably supported by the experimental data, claims about general principles (C69) and alternative mechanisms (C70) are appropriately cautious but speculative. The theoretical framing (C71-C75) accurately represents prior work but the connection to the current findings requires additional validation to move from UNCERTAIN to SUPPORTED."
   }
 ]

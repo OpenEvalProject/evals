@@ -2,109 +2,138 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C15",
-      "C19",
-      "C69",
-      "C70"
+      "C11",
+      "C12",
+      "C38",
+      "C39"
     ],
+    "result": "The study used a discovery cohort of 119 males and a validation cohort of 128 females, enrolled approximately 18 months apart.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers raised a critical concern that 'discovery and replication are confounded by sex' since the discovery cohort was male-only and validation cohort was female-only. They questioned 'What was the purpose of this design?' indicating uncertainty about whether the validation truly replicates findings or introduces sex-specific confounding that undermines the study's conclusions."
+    "status_reasoning": "Reviewers raised a critical concern about the study design: 'The eQTL discovery was performed in a cohort comprised of males only and the replication was performed in a cohort comprised of females only. What was the purpose of this design? The authors do not address the issue that discovery and replication are confounded by sex.' This indicates uncertainty about whether the findings are robust or confounded by sex differences."
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28",
-      "C29"
+      "C18",
+      "C19",
+      "C20",
+      "C53"
     ],
+    "result": "The study identified genetic effects on expression that differ across time points after vaccination, with 146 SNP-transcript pairs showing the strongest evidence based on delta-R\u00b2g analysis, and these findings were consistent between cohorts (Cor = 0.25, p<2\u00d710\u207b\u00b9\u2076).",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers expressed substantial doubt about the delta R\u00b2 methodology, stating 'only 146 of the 541 cases were validated' and questioning 'why the difference in r2 is necessarily interpreted as a significant change when only 30% of the cases are validated.' They suggested alternative approaches and noted that 'a difference of r2 between time points can have multiple causes,' indicating the evidence for temporal genetic effects is insufficient."
+    "status_reasoning": "Reviewers questioned the analytical approach and validation rate: 'The authors use the delta r2 metric to identify eQTLs that differ between time points... It seems that the authors could have performed the analysis using the delta of transcription(time point x)\u2212transcription(baseline) as a trait.' After resubmission, reviewers remained unsatisfied: 'The case is still not convincing because only 146 of the 541 cases were validated. It is not clear why the difference in r2 is necessarily interpreted as a significant change when only 30% of the cases are validated.'"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C41",
-      "C42",
-      "C43",
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C109"
+      "C60",
+      "C61"
     ],
+    "result": "The study used a random effects linear model with terms for day, additive genotype effects, day-genotype interactions, and random person effects to analyze repeated gene expression measurements.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNSUPPORTED",
-    "status_reasoning": "Reviewers explicitly challenged the causality claims, stating 'enrichment in the QQ plots on Figure 6A does not provide evidence about causality of SNPs to vaccine response but simply of correlation among the two effects.' In follow-up, they noted 'causality is not as well demonstrated, as the authors want to claim' and that 'the association with the residuals is lower than with the original values is not direct but indirect evidence.' They requested 'direct causal models' instead of the indirect approach used."
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers suggested an alternative analytical approach: 'We suspect that an interaction term in the models would actually be more efficient in detecting genetic effects modified by the time point after vaccination. Why was this not used (instead a simple comparison among time points was made)?' This indicates the reviewers questioned whether the chosen statistical approach was optimal."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C82",
-      "C84",
-      "C85"
+      "C25",
+      "C64",
+      "C65",
+      "C66"
     ],
+    "result": "The study performed causal modeling analysis showing enrichment in QQ plots for eQTL SNPs associated with antibody response, using an extended framework with permutation testing.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers raised concerns about combining data from two different array versions (HT-12v3 and HT-12v4), requesting that authors 'describe how they combined data from these arrays, particularly for transcripts where the probe sequence differs between versions.' This indicates uncertainty about whether technical differences between platforms were adequately addressed."
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Reviewers explicitly challenged the causality claims: 'The fact that there is enrichment in the QQ plots on Figure 6A does not provide evidence about causality of SNPs to vaccine response but simply of correlation among the two effects. More complex models need to be implemented to show causality.' After resubmission, they reiterated: 'The modelling as previously discussed in point 3 is somewhat weak and causality is not as well demonstrated, as the authors want to claim. The fact that the association with the residuals is lower than with the original values is not direct but indirect evidence that there are casual relationships... direct causal models would help in establishing the relationships rather than the indirect approach the authors use.'"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C96"
+      "C47",
+      "C86"
     ],
+    "result": "The study used two different Illumina array versions (HT-12v3 with 48,742 reporters and HT-12v4 with 47,301 reporters) with all samples from a given individual processed on the same slide.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers stated 'The expression data processing should be described in more detail to make it clear how normalization, and so on, was performed given the different time points, array versions, and discovery/replication cohorts.' This indicates the processing methodology was insufficiently described for reviewers to assess its adequacy."
+    "status_reasoning": "Reviewers requested clarification on data integration: 'The study design used two different array versions: Illumina HT-12v3 and HT-12v4. The authors should describe how they combined data from these arrays, particularly for transcripts where the probe sequence differs between versions.' Additionally, 'The expression data processing should be described in more detail to make it clear how normalization, and so on, was performed given the different time points, array versions, and discovery/replication cohorts.'"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C100",
-      "C101"
+      "C15",
+      "C16",
+      "C21",
+      "C24"
     ],
+    "result": "The study identified 20 genes exhibiting transcriptional response to vaccination, significant genotype effects, and correlation with antibody responses, with enrichment for genes involved in membrane trafficking and antigen processing, including seven genes specifically involved in antigen transport, processing, and presentation.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers challenged the modeling assumption that 'the person effect within their model would account for differences in cell populations among individuals,' noting 'No data or references are provided to support this claim. Immune cell relative proportions can change rapidly.' They also suggested 'an interaction term in the models would actually be more efficient in detecting genetic effects modified by the time point after vaccination,' questioning why this approach was not used."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "While reviewers raised methodological concerns about the analytical approaches and study design, they did not directly challenge the identification of these 20 genes or their functional enrichment patterns. The reviewers' concerns focused on statistical methods and causality claims rather than questioning the gene identification results themselves."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C40"
+      "C17",
+      "C22",
+      "C23"
     ],
+    "result": "The study found 78 genes showing both genotype-expression association and transcriptional response to vaccine in both cohorts, and 301 genes showing correlation between expression and antibody response (281 positive, 83 negative).",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
-    "status": "UNCERTAIN",
-    "status_reasoning": "Reviewers questioned the statistical threshold for trans-eQTL analysis, noting 'for a GWAS of common variation, this may be appropriate for a single trait, but the authors should account for testing nearly 10K transcripts.' This indicates concern that the significance threshold may not adequately control for multiple testing, creating uncertainty about which associations are truly significant."
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not challenge these descriptive findings about gene numbers and correlations. Their concerns focused on the analytical methods used to derive these results and the interpretation of causality, but they did not dispute the basic observations of genes showing these associations."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C20",
-      "C21",
-      "C38",
-      "C39",
-      "C45"
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C70",
+      "C77"
     ],
+    "result": "The study demonstrates that an integrative, longitudinal genomic study design combining genotype data with serial transcriptional and humoral response measurements is an efficient alternative to cross-sectional methods for identifying genes involved in complex traits like vaccine response.",
     "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
     "status": "UNCERTAIN",
-    "status_reasoning": "The main integrative findings about 20 genes and their role in vaccine response are indirectly questioned through reviewers' concerns about methodology (sex confounding, causality claims, delta R\u00b2 validation). While reviewers acknowledged 'the design is innovative and promises interesting discoveries,' the multiple methodological concerns create uncertainty about whether these specific gene identifications are robust and whether the mechanistic conclusions about membrane trafficking and antigen processing are fully supported."
+    "status_reasoning": "While reviewers acknowledged the design as 'innovative and promises interesting discoveries,' they raised substantial concerns about the execution: sex confounding between discovery and replication cohorts, suboptimal statistical modeling choices, weak causality evidence, and low validation rates (30%). These methodological issues undermine the claim that this approach is demonstrably more efficient than existing methods."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C80"
+    ],
+    "result": "The authors acknowledge that the sample size was not sufficient to establish causal relationships between identified loci and antibody response, and that additional studies would be necessary to determine causality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers strongly agreed with this limitation, explicitly stating that 'The fact that there is enrichment in the QQ plots on Figure 6A does not provide evidence about causality' and that 'causality is not as well demonstrated, as the authors want to claim.' The reviewers' emphasis on this point validates the authors' acknowledgment of this limitation."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C79"
+    ],
+    "result": "The study was limited to healthy young adults (ages 18-40) of Caucasian ancestry to minimize population stratification, excluding children, elderly, and individuals with severe illnesses, and the authors acknowledge additional studies are needed in other populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers did not challenge these study design choices or the acknowledgment of limitations. Their concerns focused on other methodological issues (sex confounding, statistical approaches) rather than questioning the rationale for ethnic homogeneity or age restrictions."
   }
 ]

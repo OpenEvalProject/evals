@@ -8,130 +8,169 @@
       "C78",
       "C79"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Arfrp1 is required for Vangl2 transport from the TGN. siRNA knockdown of Arfrp1 causes juxtanuclear accumulation of Vangl2 that colocalizes with TGN markers (Golgin 97) but not endosomal markers, confirming that Arfrp1 regulates trafficking from the late Golgi cisternae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Multiple independent siRNA knockdown experiments (C2, C33, C69) combined with colocalization analysis (C78) provide strong, convergent evidence that Arfrp1 is required for Vangl2 export from the TGN. The specificity is demonstrated by colocalization with TGN but not endosomal markers, and the phenotype is reproducible across different experimental setups."
+    "status_reasoning": "Claims C2, C33, C69, C78 provide converging experimental evidence from siRNA knockdown and colocalization studies showing Vangl2 accumulation at the TGN upon Arfrp1 depletion. The colocalization with TGN markers but not endosomal markers (C78) strengthens the conclusion that the trafficking block occurs specifically at the TGN (C79)."
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C3",
-      "C43",
-      "C69",
+      "C37",
+      "C42",
+      "C90",
       "C91",
-      "C92"
+      "C92",
+      "C93"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "AP-1 is required for Vangl2 transport from the TGN and specifically interacts with GTP-bound Arfrp1. The \u03bc and \u03b3 subunits of AP-1 preferentially bind GTP-loaded Arfrp1, and knockdown of \u03bc1-adaptin or \u03b31-adaptin causes Vangl2 accumulation at the TGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "siRNA knockdown of multiple AP-1 subunits (\u03bc1 and \u03b31) independently causes Vangl2 accumulation at the TGN (C43, C69, C92), and affinity chromatography confirms these subunits interact with Arfrp1 (C91). The redundancy of testing multiple subunits and the convergence of functional and biochemical evidence strongly support AP-1's requirement."
+    "status_reasoning": "Claims C37, C90, C92 demonstrate GTP-selective interaction between Arfrp1 and AP-1 subunits through affinity chromatography. Claims C42, C93 show that siRNA knockdown of AP-1 subunits phenocopies Arfrp1 knockdown, causing TGN accumulation of Vangl2. The specificity for AP-1 over AP-2 and AP-3 (C91) strengthens the conclusion."
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C37",
-      "C90",
-      "C91"
+      "C5",
+      "C6",
+      "C39",
+      "C41",
+      "C70",
+      "C94",
+      "C97"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Vangl2 contains a conserved YYXXF sorting signal in its C-terminal cytosolic domain that is required for both Vangl2 trafficking and direct interaction with \u03bc1-adaptin. Mutagenesis of the tyrosine or phenylalanine residues blocks TGN export and abolishes AP-1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Affinity chromatography with GDP- and GTP-loaded Arfrp1 demonstrates GTP-selective binding of AP-1 subunits (C37, C91), with specificity confirmed by absence of AP-2 and AP-3 binding (C90). The use of nucleotide-locked mutants and detection of specific subunits provides strong biochemical evidence for this interaction."
+    "status_reasoning": "Claims C5, C6, C70 establish the YYXXF motif through mutagenesis studies. Claims C41, C94 demonstrate direct interaction with \u03bc1-adaptin using GST pull-down and yeast two-hybrid assays. Claim C97 shows that motif mutations block trafficking more completely than Arfrp1 knockdown, confirming the motif's functional importance."
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C6",
-      "C7",
-      "C40",
-      "C42",
-      "C70",
-      "C93",
-      "C99"
-    ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "SUPPORTED",
-    "status_reasoning": "The YYXXF motif's importance is demonstrated through multiple complementary approaches: mutagenesis blocking trafficking (C6, C99), direct binding assays showing motif-dependent \u03bc1-adaptin interaction (C7, C42, C93), and yeast two-hybrid validation (C42). The convergence of trafficking, binding, and genetic evidence with specific residue requirements (particularly phenylalanine, C70) provides robust support."
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
+      "C43",
       "C44",
       "C45",
       "C46",
       "C47",
-      "C48",
+      "C50",
       "C51",
-      "C52",
-      "C53"
+      "C52"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Arfrp1-GTP, AP-1, and the Vangl2 cytosolic domain interact on synthetic liposomes, with the Vangl2 sorting signal enhancing AP-1 recruitment approximately threefold specifically in the presence of Arfrp1-GTP but not Arf1-GTP. This enhancement requires an intact YYXXF motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Liposome flotation assays with purified components demonstrate GTP-dependent Arfrp1 membrane association (C45), threefold enhancement of AP-1 recruitment by Vangl2 cytosolic domain (C46), motif-dependence (C47), and specificity for Arfrp1 over Arf1 (C51-C53). The reconstitution with purified components and quantitative measurements provide strong mechanistic evidence, though the ~3-fold enhancement is modest."
+    "status_reasoning": "Claims C44, C46 provide quantitative liposome flotation data showing GTP-dependent Arfrp1 membrane association and threefold AP-1 recruitment enhancement. Claims C47, C50 demonstrate specificity through negative controls with YYXXF mutants and Arf1-GTP. The reconstitution with purified components on synthetic membranes provides strong mechanistic evidence for the proposed interaction."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C84",
+      "C124"
+    ],
+    "result": "TGN export of Frizzled-6 and Celsr1 does not depend on Arfrp1 or AP-1, indicating that differential sorting machineries regulate the TGN export of Vangl2 versus Frizzled-6. When co-expressed with Celsr1, Frizzled-6 localizes to cell junctions independently of the Arfrp1/AP-1 machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C4, C60, C84 provide experimental evidence from siRNA knockdown showing no effect on Frizzled-6 or Celsr1 trafficking. Claims C58, C59 establish the experimental system for studying Frizzled-6. Claim C124 draws the appropriate inference about differential sorting machineries based on the contrasting requirements."
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C4",
-      "C61",
-      "C84"
+      "C62",
+      "C63"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "While siRNA knockdown experiments show Frizzled-6 trafficking is unaffected by Arfrp1 or AP-1 depletion (C4, C61, C84), this is primarily negative evidence demonstrating independence rather than identifying the actual machinery responsible for Frizzled-6 export. The lack of positive identification of alternative sorting machinery and the observation that Frizzled-6 is inefficiently transported in HeLa cells (C59) limits the strength of this conclusion."
+    "result": "Arfrp1 regulates TGN export of protein tyrosine kinase 7 (PTK7), which contains a conserved tyrosine sorting motif in its C-terminal cytosolic domain. Temperature shift experiments show PTK7 accumulation at the TGN upon Arfrp1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C62 is supported by siRNA knockdown and temperature shift experiments showing PTK7 accumulation at the TGN. Claim C63 provides sequence alignment evidence for a conserved tyrosine sorting motif. Together, these suggest PTK7 may be another cargo for the Arfrp1/AP-1 pathway, though the mechanistic details are less thoroughly characterized than for Vangl2."
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C63",
       "C64",
-      "C96",
-      "C97"
+      "C65"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Both Vangl2 and Frizzled-6 require protein kinase D (PKD) for transport from the TGN. Expression of kinase-dead PKD mutants causes TGN accumulation of both proteins, consistent with PKD's role in membrane fission to generate TGN-to-cell surface transport carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "SUPPORTED",
-    "status_reasoning": "Sequence analysis identifies a conserved YXX\u03a6 motif in PTK7 (C63, C96), and temperature-shift experiments with Arfrp1 knockdown demonstrate TGN accumulation of PTK7 (C64, C97). This extends the Arfrp1-dependent sorting mechanism beyond Vangl2, though the characterization is less complete than for Vangl2 (no direct AP-1 binding or motif mutagenesis shown)."
+    "status_reasoning": "Claim C64 is supported by experiments with kinase-dead PKD2 and PKD3 mutants showing TGN accumulation of both Vangl2 and Frizzled-6. Claim C65 provides established mechanistic context from prior work. The finding that both proteins require PKD despite using different sorting machineries suggests PKD acts downstream of cargo sorting."
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C66"
+      "C7",
+      "C71",
+      "C114",
+      "C115",
+      "C116"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "The authors propose a model wherein Arfrp1-GTP binding to AP-1 exposes a sorting recognition determinant on the \u03bc subunit that preferentially binds the Vangl2 YYXXF motif, creating a conformation not available in Arf1-AP-1 complexes. This Arfrp1-AP-1 combination may be responsible for capturing cargo destined for the proximal cell surface in polarized epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The requirement for PKD in both Vangl2 and Frizzled-6 trafficking (C66) is based solely on dominant-negative experiments without quantification, dose-response analysis, or rescue experiments. While PKD's role in TGN fission is established from prior work (C65), the evidence presented here is limited and lacks the rigor of other results in the paper."
+    "status_reasoning": "Claims C7, C71, C115 propose a mechanistic model based on inference from the experimental data showing Arfrp1 specificity. However, claim C122 explicitly acknowledges the lack of direct structural evidence for this model. While the liposome data support differential AP-1 conformations induced by Arfrp1 vs Arf1, the precise molecular mechanism and the proposed alternative binding site remain speculative without structural validation."
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C8",
-      "C71",
-      "C118",
-      "C119",
-      "C120",
-      "C124",
-      "C125",
-      "C126"
+      "C53",
+      "C54",
+      "C55"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
-    "status": "UNCERTAIN",
-    "status_reasoning": "The proposed model that Arfrp1 exposes a specific binding site on AP-1's \u03bc subunit for Vangl2 (C8, C71, C119) is explicitly speculative and lacks direct structural evidence (C126). While the functional data (differential effects of Arfrp1 vs Arf1) are consistent with this model, alternative explanations (e.g., differences in membrane recruitment kinetics, local concentration effects, or indirect conformational changes) have not been ruled out. This remains a working hypothesis requiring structural validation."
+    "result": "Arfrp1 interacts with Vangl2 indirectly through the AP-1 complex. HA-Vangl2 from cell lysates interacts with GST-Arfrp1 but weakly with GST-Arf1, and this interaction depends on the YYXXF motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claims C53, C54 provide GST pull-down data showing YYXXF-dependent interaction between Arfrp1 and Vangl2. Claim C55 draws the appropriate inference that this interaction is indirect through AP-1, given that the YYXXF motif directly binds \u03bc1-adaptin (established in other claims) and Arfrp1 binds AP-1."
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C128"
+      "C88",
+      "C89"
     ],
-    "reviewer_id": "LLM",
-    "reviewer_name": "LLM",
+    "result": "Arl1 and its associated GRIP-domain containing proteins are not involved in TGN sorting of Vangl2. Knockdown of Arl1 does not affect Vangl2 localization, distinguishing the Arfrp1 pathway from the proposed Arfrp1-Arl1-GRIP protein pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Claim C88 provides negative experimental data from Arl1 knockdown showing no effect on Vangl2 localization. Claim C89 draws the appropriate inference that Arl1 and GRIP proteins are not involved. This is important for distinguishing the Vangl2 trafficking mechanism from other proposed Arfrp1 functions, though the evidence is based on a negative result."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C27",
+      "C57",
+      "C123"
+    ],
+    "result": "Differential TGN sorting may contribute to the opposing localization of Vangl2 and Frizzled-6 on the epithelial cell surface, with Frizzled-6 potentially relying on another Arf and adaptor protein for traffic to the distal cell surface domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
     "status": "UNCERTAIN",
-    "status_reasoning": "The proposal that differential TGN sorting contributes to asymmetric PCP protein localization (C128) is a reasonable inference from the differential requirements of Vangl2 and Frizzled-6 for Arfrp1/AP-1. However, this conclusion requires validation in polarized epithelial cells, demonstration that the sorting machinery is actually present and functional at the appropriate developmental stages, and evidence that disrupting this sorting affects PCP establishment in vivo. The current evidence is from non-polarized cell culture systems."
+    "status_reasoning": "Claims C125, C27, C57 propose that differential TGN sorting contributes to asymmetric PCP protein localization. While the differential requirements for Arfrp1/AP-1 are established (Result 5), the causal link to opposing surface localization remains speculative. Claim C123 speculates about alternative machinery for Frizzled-6 without experimental identification. The hypothesis is logical but requires additional experiments demonstrating that disrupting differential sorting disrupts asymmetric localization."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Alanine substitution of the YYXXF motif tyrosines or phenylalanine completely blocks TGN export of Vangl2 to a greater extent than Arfrp1 depletion. This difference may be explained by retention of surface-localized Vangl2 during knockdown or partial redundancy with other Arf proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Claim C97 presents an interesting observation that motif mutations have a stronger phenotype than Arfrp1 knockdown. However, claims C98 and C99 offer only speculative explanations without experimental testing. The observation could also reflect incomplete knockdown, differences in experimental timescales, or other technical factors. Additional experiments (e.g., pulse-chase, complete Arfrp1 knockout, or testing other Arf proteins) would be needed to distinguish between these possibilities."
   }
 ]

@@ -1,20 +1,20 @@
 {
   "submission": {
-    "id": "04b0b6a2-7268-44d8-a2e1-87c1a883dd94",
+    "id": "048a5df9-3371-4a0a-8a9f-2032c802b8ed",
     "user_id": null,
     "manuscript_title": null,
     "manuscript_doi": null,
     "status": "completed",
-    "created_at": "2025-10-16T21:15:30.380806Z",
-    "updated_at": "2025-10-16T21:15:30.380806Z"
+    "created_at": "2025-10-21T19:58:17.728819Z",
+    "updated_at": "2025-10-21T19:58:17.728819Z"
   },
   "content": [
     {
-      "id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
-      "submission_id": "04b0b6a2-7268-44d8-a2e1-87c1a883dd94",
+      "id": "f0e5e1eb-c0bf-43e8-8409-bb09fa04e8b1",
+      "submission_id": "048a5df9-3371-4a0a-8a9f-2032c802b8ed",
       "content_type": "manuscript",
       "content_text": "# How keeping active pays off in the olfactory system\n\n## Authors\n\n- Kevin Monahan<sup>1</sup>\n- Stavros Lomvardas<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Anatomy University of California San Francisco USA\n2. Department of Anatomy University of California San Francisco USA stavros.lomvardas@ucsf.edu\n\n\u2020 Corresponding author\n\n## Abstract\n\nA protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.\n",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     }
   ],
   "prompts": [
@@ -23,156 +23,97 @@
       "prompt_text": "claim extraction prompt",
       "prompt_type": "extract",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     },
     {
       "id": "8e6aa149e11d7c3d",
       "prompt_text": "llm evaluation prompt",
       "prompt_type": "eval_llm",
       "model": "claude-sonnet-4-5-20250929",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     }
   ],
   "claims": [
     {
-      "id": "1989e499-1ea1-452a-8bee-f1e3ddda1f19",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
+      "id": "640b43bc-32a5-4b28-8217-630d7144fbe7",
+      "content_id": "f0e5e1eb-c0bf-43e8-8409-bb09fa04e8b1",
       "claim_id": "C1",
-      "claim": "A protein is found in the main olfactory epithelium of mice.",
-      "claim_type": "EXPLICIT",
-      "source_text": "A protein that is found in the main olfactory epithelium of mice",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "The statement refers to a specific protein localized to a specific tissue in mice, which would be based on experimental observation or data from the study being discussed.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
-    },
-    {
-      "id": "6971a5d8-f74b-4bcd-b4f0-80517faaccee",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
-      "claim_id": "C2",
-      "claim": "The protein ensures that odour-sensing neurons that are active have longer lifespans than those that are inactive.",
+      "claim": "A protein found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active have longer lifespans than those that are inactive.",
       "claim_type": "EXPLICIT",
       "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
-      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "This is the main finding being reported, which would be supported by experimental data comparing lifespan of active versus inactive neurons. The causal relationship ('ensures') involves inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This claim is stated in the abstract as a summary of findings, but no experimental data, measurements, or citations are provided in the manuscript excerpt to support it. It appears to be an inference about the content of the full paper.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     },
     {
-      "id": "a8f6460d-85c7-4238-838e-88a5a84fa564",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
+      "id": "016e7bed-cb17-4048-9820-aa37630a33d1",
+      "content_id": "f0e5e1eb-c0bf-43e8-8409-bb09fa04e8b1",
+      "claim_id": "C2",
+      "claim": "Neuronal activity influences lifespan of odour-sensing neurons in the main olfactory epithelium.",
+      "claim_type": "IMPLICIT",
+      "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "This claim is logically inferred from the statement that active neurons have longer lifespans than inactive ones, implying that activity level is a determinant of neuronal lifespan.",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-21T19:58:17.728819Z"
+    },
+    {
+      "id": "18feae8e-e7f3-4d07-a4a6-becacc9ebf4d",
+      "content_id": "f0e5e1eb-c0bf-43e8-8409-bb09fa04e8b1",
       "claim_id": "C3",
-      "claim": "Active odour-sensing neurons have longer lifespans than inactive odour-sensing neurons.",
-      "claim_type": "EXPLICIT",
-      "source_text": "odour-sensing neurons that are active to have longer lifespans than those that are inactive",
-      "evidence_type": "[\"DATA\"]",
-      "evidence_reasoning": "This is a direct observational claim about differential lifespans between active and inactive neurons, which would be measured experimentally.",
+      "claim": "There is a differential survival mechanism between active and inactive odour-sensing neurons in mice.",
+      "claim_type": "IMPLICIT",
+      "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The existence of different lifespans based on activity status implies a mechanism that differentially affects survival of these neuron populations, though the specific mechanism is not detailed in this excerpt.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     },
     {
-      "id": "2557560a-8220-49d0-a53c-3ad21eef0ab8",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
+      "id": "91d6630a-f72c-4219-ad47-4c0459f2849e",
+      "content_id": "f0e5e1eb-c0bf-43e8-8409-bb09fa04e8b1",
       "claim_id": "C4",
-      "claim": "Odour-sensing neurons exist in the main olfactory epithelium of mice.",
-      "claim_type": "IMPLICIT",
-      "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans",
-      "evidence_type": "[\"KNOWLEDGE\"]",
-      "evidence_reasoning": "The presence of odour-sensing neurons in the olfactory epithelium is established scientific knowledge and is implied by the discussion of these neurons in this tissue.",
+      "claim": "A specific protein mediates the relationship between neuronal activity and lifespan in olfactory neurons.",
+      "claim_type": "EXPLICIT",
+      "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "evidence_reasoning": "The abstract explicitly states that 'a protein' ensures the lifespan difference, indicating protein-mediated regulation, though no experimental evidence is provided in this excerpt.",
       "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
-    },
-    {
-      "id": "3e13f8f1-3077-431f-9d08-7278956913d8",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
-      "claim_id": "C5",
-      "claim": "Neuronal activity influences the lifespan of odour-sensing neurons.",
-      "claim_type": "IMPLICIT",
-      "source_text": "odour-sensing neurons that are active to have longer lifespans than those that are inactive",
-      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "The differential lifespan based on activity status implies that activity level is a factor influencing neuronal lifespan, inferred from the comparative data presented.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
-    },
-    {
-      "id": "05094191-95ee-45c4-b66d-07b86578b5d5",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
-      "claim_id": "C6",
-      "claim": "The protein's function is related to neuronal lifespan regulation.",
-      "claim_type": "IMPLICIT",
-      "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans",
-      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "The protein 'ensures' differential lifespan, implying its functional role is in regulating or maintaining neuronal lifespan, which is inferred from the experimental findings.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
-    },
-    {
-      "id": "8cf1748e-d724-42db-b5e0-40e05546c183",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
-      "claim_id": "C7",
-      "claim": "There is a mechanism linking neuronal activity to neuronal survival in the olfactory system.",
-      "claim_type": "IMPLICIT",
-      "source_text": "A protein that is found in the main olfactory epithelium of mice ensures that odour-sensing neurons that are active to have longer lifespans than those that are inactive",
-      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
-      "evidence_reasoning": "The protein-mediated connection between activity status and lifespan implies the existence of a molecular mechanism linking activity to survival, inferred from the described relationship.",
-      "prompt_id": "7b23fa081598e399",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     }
   ],
   "results": [
     {
-      "id": "64a65fd5-f955-4bbc-8c8b-f422e9537455",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
+      "id": "916d2ebb-fdb0-48c1-a4e9-5d263f4cd79d",
+      "content_id": "f0e5e1eb-c0bf-43e8-8409-bb09fa04e8b1",
       "result_id": "R1",
       "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
+      "result": "The authors report that a protein in the main olfactory epithelium of mice mediates activity-dependent neuronal survival, where active odour-sensing neurons have longer lifespans than inactive ones. This implies a differential survival mechanism regulated by neuronal activity through protein-mediated pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
       "result_status": "UNCERTAIN",
-      "result_reasoning": "The abstract asserts a causal relationship between a protein and activity-dependent neuronal survival (C2, C6, C7) based on differential lifespan observations (C3, C5). However, no experimental details, controls, statistical tests, protein identity, or mechanistic validation are provided in this abstract. The strong causal language ('ensures') requires loss-of-function experiments, appropriate controls, and demonstration that the protein is necessary and sufficient for the observed effect, none of which can be verified from the abstract alone.",
+      "result_reasoning": "All claims (C1-C4) are based solely on the abstract statement with no experimental data, statistical analysis, controls, or methodological details provided in the manuscript excerpt. The identity of the protein, the experimental approach to measure neuronal lifespan, methods to distinguish active from inactive neurons, sample sizes, and statistical significance are all absent. Without access to the experimental evidence, it is impossible to evaluate whether the claims are supported by rigorous data or appropriate controls.",
       "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:15:30.380806Z"
-    },
-    {
-      "id": "27dc8a1e-0206-4716-acc2-ffcbd417d549",
-      "content_id": "e136395c-5c99-4b75-b460-e2c4e9e1f906",
-      "result_id": "R2",
-      "result_type": "llm",
-      "reviewer_id": "LLM",
-      "reviewer_name": "LLM",
-      "result_status": "SUPPORTED",
-      "result_reasoning": "The presence of odour-sensing neurons in the mouse olfactory epithelium (C4) is well-established scientific knowledge supported by decades of research. This is contextual information rather than a novel finding of this work.",
-      "prompt_id": "8e6aa149e11d7c3d",
-      "created_at": "2025-10-16T21:15:30.380806Z"
+      "created_at": "2025-10-21T19:58:17.728819Z"
     }
   ],
   "claim_results": [
     {
-      "claim_id": "1989e499-1ea1-452a-8bee-f1e3ddda1f19",
-      "result_id": "64a65fd5-f955-4bbc-8c8b-f422e9537455"
+      "claim_id": "640b43bc-32a5-4b28-8217-630d7144fbe7",
+      "result_id": "916d2ebb-fdb0-48c1-a4e9-5d263f4cd79d"
     },
     {
-      "claim_id": "6971a5d8-f74b-4bcd-b4f0-80517faaccee",
-      "result_id": "64a65fd5-f955-4bbc-8c8b-f422e9537455"
+      "claim_id": "016e7bed-cb17-4048-9820-aa37630a33d1",
+      "result_id": "916d2ebb-fdb0-48c1-a4e9-5d263f4cd79d"
     },
     {
-      "claim_id": "a8f6460d-85c7-4238-838e-88a5a84fa564",
-      "result_id": "64a65fd5-f955-4bbc-8c8b-f422e9537455"
+      "claim_id": "18feae8e-e7f3-4d07-a4a6-becacc9ebf4d",
+      "result_id": "916d2ebb-fdb0-48c1-a4e9-5d263f4cd79d"
     },
     {
-      "claim_id": "3e13f8f1-3077-431f-9d08-7278956913d8",
-      "result_id": "64a65fd5-f955-4bbc-8c8b-f422e9537455"
-    },
-    {
-      "claim_id": "05094191-95ee-45c4-b66d-07b86578b5d5",
-      "result_id": "64a65fd5-f955-4bbc-8c8b-f422e9537455"
-    },
-    {
-      "claim_id": "8cf1748e-d724-42db-b5e0-40e05546c183",
-      "result_id": "64a65fd5-f955-4bbc-8c8b-f422e9537455"
-    },
-    {
-      "claim_id": "2557560a-8220-49d0-a53c-3ad21eef0ab8",
-      "result_id": "27dc8a1e-0206-4716-acc2-ffcbd417d549"
+      "claim_id": "91d6630a-f72c-4219-ad47-4c0459f2849e",
+      "result_id": "916d2ebb-fdb0-48c1-a4e9-5d263f4cd79d"
     }
   ],
   "comparisons": []
