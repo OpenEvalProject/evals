@@ -1,0 +1,16 @@
+# Structural development and dorsoventral maturation of the medial entorhinal cortex
+
+## Authors
+
+- Saikat Ray †
+- Michael Brecht
+
+### Affiliations
+
+1. Bernstein Center for Computational Neuroscience Humboldt University of Berlin Berlin Germany
+
+† Corresponding author
+
+## Abstract
+
+We investigated the structural development of superficial-layers of medial entorhinal cortex and parasubiculum in rats. The grid-layout and cholinergic-innervation of calbindin-positive pyramidal-cells in layer-2 emerged around birth while reelin-positive stellate-cells were scattered throughout development. Layer-3 and parasubiculum neurons had a transient calbindin-expression, which declined with age. Early postnatally, layer-2 pyramidal but not stellate-cells co-localized with doublecortin- a marker of immature neurons- suggesting delayed functional-maturation of pyramidal-cells. Three observations indicated a dorsal-to-ventral maturation of entorhinal cortex and parasubiculum: (i) calbindin-expression in layer-3 neurons decreased progressively from dorsal-to-ventral, (ii) doublecortin in layer-2 calbindin-positive-patches disappeared dorsally before ventrally, and (iii) wolframin-expression emerged earlier in dorsal than ventral parasubiculum. The early appearance of calbindin-pyramidal grid-organization in layer-2 suggests that this pattern is instructed by genetic information rather than experience. Superficial-layer-microcircuits mature earlier in dorsal entorhinal cortex, where small spatial-scales are represented. Maturation of ventral-entorhinal-microcircuits- representing larger spatial-scales - follows later around the onset of exploratory behavior.

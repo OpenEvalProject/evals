@@ -1,0 +1,188 @@
+# Peer review - Round 1
+
+Editors:
+- Caleb Kemere, https://ror.org/008zs3103 Rice University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.85635.sa0](https://doi.org/10.7554/eLife.85635.sa0)
+
+In this valuable work, the authors present a case for a new standard in replay detection, tackling the formidable problem that different methods can produce in vastly different results. The authors show compelling evidence about the source of this problem (which is that the true false positive rate can vary wildly between methods). The authors present a solution to the challenge of underestimation of the false positive rate and leverage new experimental data and novel analysis techniques to provide solid evidence that – under specific assumptions – their approach is effective.
+
+
+---
+
+# Peer review - Round 1
+
+Editors:
+- Caleb Kemere, https://ror.org/008zs3103 Rice University United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.85635.sa1](https://doi.org/10.7554/eLife.85635.sa1)
+
+Our editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Evaluating hippocampal replay without a ground truth" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor.
+
+The reviewers have discussed their reviews with one another and multiple reviewing editors and the Reviewing Editor has drafted this to help you prepare a revised submission.
+
+Essential revisions (for the authors):
+
+(1) The reviewers were unanimous in disagreeing with the idea that the cell-ID shuffle could be used as a method to estimate a false positive rate, and thus generally opposed the prospective premise of the work.
+
+(1b) There was an opinion that "it might still be a useful tool to compare popular replay scoring methods, as long as (1) instances where the threshold is incorrectly referred to as an "adjusted p-value" are removed and (2) it is not recommended as a novel replay detection approach but simply a tool to compare the methods.
+
+(2) However, the reviewers felt that there was value in comparing track discriminability vs. sequence detection, particularly for analysis and comparisons including the PRE-RUN data. Reviewers were moderately enthusiastic about an alternative presentation that concentrated on reporting effect sizes rather than p-values alone, and shifted towards understanding the relationships between the factors.
+
+(3) Towards this end, in the discussion, the reviewers were also concerned about the idea of restricting analyses only to those neurons that had fields in both environments. This makes sense as a potential way to avoid concerns about spike sorting, but a subsequent paper should include the obviously functionally important population of neurons that have place fields in only one environment.
+
+Reviewer #1 (Recommendations for the authors):
+
+1. I would suggest showing the analysis on a single environment and three environments if possible for the log odds measure.
+
+2. It would be ideal for the functions used for the main analysis to be clearly documented in the code repository. At the very least highlighted in the README for use by others.
+
+3. Do these results hold over animals? It would be important to see the variability in conclusions if possible.
+
+4. Would the conclusions about p-values hold if you applied a multiple comparisons correction like the Benjamini and Hochberg procedure or Storey's q-value first? I would suggest clarifying why the empirically determined adjusted p-value works better than the other multiple comparison measures.
+
+5. I would clarify that the p-value threshold and significant events are determined by the replay score only in the text.
+
+6. "computing the summed posteriors (across time bins) within the replay event for each track" – Please clarify or correct this line because I believe the posterior is summed across time and position.
+
+7. "difference in mean log odds between track 1 and track 2 replay events" – It is unclear what this mean is over. Session? Over all animals?
+
+8. " ripple power threshold is not necessary for RUN replay, but should be applied to POST replay events" – It is my understanding that a multiunit threshold is still applied. It would be important to clarify this if this is the case.
+
+9. "a more positive mean log odds difference would indicate a higher trajectory discriminability in the replay content, and a higher confidence in replay quality. In contrast, a mean log odds difference of 0 would suggest that the quality of replay events is comparable to chance level trajectory discriminability, and that the detected event population most likely consists of low fidelity events, indistinguishable from false-positives,"- is there an absolute value being taken here? The measure can be both positive and negative, so unless the track selected by the replay score is always the positive going track, this cannot be quite correct. Please clarify if that is the case and note that the statistic can be negative.
+
+10. The term "cross-validation" is being used improperly. Cross-validation has a specific meaning in statistics, implying a test and training set. I would suggest using validation, or orthogonal validation instead.
+
+11. I would add individual examples of the log odds procedure and z-score (as in Tirole et al. 2022, Figure 4B) to help the readers understand the procedure better.
+
+12. "Based on the desire to maximize the statistical independence of data, we avoided any smoothing in our analysis, as this could increase the false-positive rate of replay detection. Because we did not use spatial or temporal smoothing, we opted to use larger bin sizes for Bayesian decoding (10 cm by 20 ms)." – Using bins of any kind is a form of "smoothing" and choice of bin edges will lead to different answers. Furthermore smoothing is not inherently bad as it can reduce variance and potentially lead to more statistical power. Choosing not to smooth with a gaussian is fine as a choice but I would change this sentence.
+
+13. "To determine if the decrease in detection rate was associated with decrease in the false-positive rate for this detection method, we calculated the false-positive rate (mean fraction of spurious replay events detected across both tracks)" – I would suggest clarifying that the spurious replay events detected are from the shuffled data. It is clear in the figure legend, but not in the main body of the text.
+
+Reviewer #2 (Recommendations for the authors):
+
+I would recommend the authors focus on the analysis of preplay in their dataset. They can better analyze their observation that no reactivation is evident in events with high replay scores, which will be of interest to the field. I believe that the rest of the work is highly problematic.
+
+Reviewer #3 (Recommendations for the authors):
+
+I have two fundamental suggestions.
+
+1) While I agree that the sequenceless decoding is important to cross-validate the main findings of the paper, reading the paper for the first time gave me the (false) impression that the proposed framework of detecting replay somehow uses this measure to select the final replay events. After reading the methods multiple times, it seems to me that first impression was untrue, and the proposed replay detection only depends on adjusting the p-value based on the empirical false positive estimate using a cell-ID shuffle. If this is correct, then the sequenceless decoding only provides an x-axis as additional evidence to help convince the reader of the conclusions of the comparisons.
+
+The way the paper is written, I think most readers would make the same initial assumption as I did. The first time false positive estimates are mentioned in the results of the paper, we are directed to Figure 1D which describes the sequenceless cross-validation. Moreover, given the emphasis of this sequenceless approach in the abstract and the entire manuscript, it is easy to conclude that the false-positive rate is estimated as the number of events that don't show sequenceless log-odds higher than the shuffle.
+
+This is problematic because many people in the field might dismiss the findings by thinking "Well that's nice but I don't have two tracks, so I can't do any of that". The only place in the manuscript that made me dig deeper was in the discussion, where the authors state "As such, it is critical for replay studies to independently verify and report this false-positive rate even for the experiments involving only one spatial context." Only after reaching this sentence did I even consider that estimating the false positive rate might not require two tracks, and it took quite some time to make sure it doesn't, and yet even now a part of me is still unsure that I got it right. I would urge the authors to make it more clear that the false positive rate can be estimated readily using a simple shuffle and does not require having two tracks.
+
+It is my opinion that estimating the false positive rate and taking it into account is very powerful and can be a game changer for replay detection, but it won't happen if people don't understand it was done and how it was done.
+
+2) In my initial reading of the paper, I was confused by Figure 4D (and all the figures like it). It sounds counter-intuitive that a more strict method (e.g. 2 shuffles vs 1 shuffle) can end up detecting *more* replay events. It is not trivial point to grasp, and it is easy for readers to get lost here (e.g. the y-axis "proportion of significant events" may be considered by some confused readers to mean some measure of specificity like "among the events selected by each method, how many of them were true positives"). I think something can be added to this section to better guide readers and explain what is being proposed.
+
+I'm thinking of something like "Before controlling for the false positive rates associated with each method, as expected, stricter methods found fewer replay events than more permissive methods: for example, a single shuffle selected 50% of awake events as significant, as opposed to 40% that the stricter 2-shuffles method selected (Figure 4C). However, after adjusting the p-value to control for the false positive rate, we found that stricter methods actually resulted in detecting more replay events: the single shuffle awake replay adjusted p-value was 0.007 which brought down the proportion of significant events to 32%, while the stricter 2-shuffles awake replay adjusted p-value was 0.032, resulting in 35% of events detected as significant. This shows that controlling for the empirically measured false positive rate can, almost paradoxically, result in stricter methods detecting more replay events." The "Place+jump distance" is somewhat separate and can be presented after taking the time to explain this very critical point.
+
+[Editors' note: further revisions were suggested prior to acceptance, as described below.]
+
+Thank you for resubmitting your work entitled "Evaluating hippocampal replay without a ground truth" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.
+
+The manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:
+
+The reviewers reached a consensus that the paper requires minor revisions. Please see individual reviewer comments below. In particular, there was a consensus that the discussion of the paper needs to clearly articulate a proper interpretation of the corrected p-values. Specifically, that using one shuffle (cell-ID) to correct the p-values of another (i.e., circular) on a collection of events is not the same as somehow correcting the replay detection for individual events.
+
+Reviewer #1 (Recommendations for the authors):
+
+Thank you to the authors for their thoughtful responses to the reviews. I do think the response clarified several aspects of the manuscript and improved the clarity of the manuscript overall. The documentation and improvement of the code associated with the manuscript is also improved.
+
+As I understand the logic, the main claims of the framework to study sequence detection methods are:
+
+1. A good sequence detection method should assign the same track as track decoding.
+
+2. The significant replay events for a given method can be adjusted by matching the false positive rate resulting in greater track discriminability (and more conservatively identified replay events)
+
+3. This can be used to compare replay detection methods or quality of replay event
+
+The strengths of the work are:
+
+1. it is more conservative in judging which sequence is a replay or "spurious" given that the two track model is true
+
+2. it makes some interesting conclusions about the use of the ripple power and multiunit as criterion for detecting replay events.
+
+The weaknesses of the work are:
+
+1. The framework relies on an adjustment for track discriminability but, as the authors acknowledge, there are many ways in which the model can be misspecified. This only tests for a very specific way in which they are misspecified. And it doesn't seem to give one much insight into why a particular method is better. For example, the authors' response seems concerned about the lack of accounting for bursting in replay detection, but track discriminability does not circumvent this. The way to account for lack of independence in time bins is to explicitly account for the bursting, such as fitting the place field estimates with a self-history term. The track discriminability measure simply marginalizes over the time and position and already incorporates the misspecified encoding model.
+
+2. This framework relies on classifying aspects of the replay event as significant or not significant at a given significance threshold. This is reliant on the particular null distribution specified.
+
+3. The generality of the work is limited by their two track framing.
+
+The work claims that their framework is a "unifying approach to quantify and compare the replay detection performance". The work falls short of doing this in general but I do think it accomplishes this with a much narrower scope, namely in adjusting methods that fail to discriminate between tracks appropriately in the case of two tracks.
+
+– Are the significant events being corrected for multiple comparisons? Could the authors explain why no corrections are needed?
+
+– I do not think the authors sufficiently addressed the question of what happens if the track discrimination model is misspecified in their response. For example, if there are truly three tracks but you only account for two?
+
+Reviewer #2 (Recommendations for the authors):
+
+While I appreciate the conceptual novelty of using the log odds ratio as a metric for testing the noisiness of replay events and comparing this metric with results from sequence analyses, unfortunately, I was not persuaded by the arguments presented in the authors' rebuttal. I think the study would benefit greatly if the authors consulted or collaborated closely with an expert on statistical methods, particularly on the application of resampling methods, to enhance the rigor of their approach. Without this, I remain concerned that this work can cause further confusion (and noise) rather than clarity in these analyses.
+
+I believe I noted my concerns to great length in the initial review, but perhaps the authors will wish to look through the section "The problem with replay decoding: shuffles" section in Foster 2017 and note that each shuffle is permissive for some events and not others. E.g. if the circular shuffle is likely to pass through events that arise from edge effects, their study does not explain how a shift of the α level is going to fix that issue and remove false positives. Each type of shuffle will pass through different subsets of events, some of which may be "false positives," but they will be different events in each case. Simply adjusting the α levels or p-values, the solution proposed by this study, will not fix the underlying reasons for the false positives, and lead to potentially mistaken confidence in the results.
+
+Reviewer #3 (Recommendations for the authors):
+
+I find that the revised manuscript has considerably improved. I have one outstanding issue with the randomization shuffle, which can actually be alleviated if the authors update Figure D to include the 3 remaining shuffles, and a minor comment.
+
+Outstanding question regarding the randomization shuffle:
+
+My concerns about the cell-id shuffle were that (1) any shuffle, including this one, may actually underestimate the true false positive rate, and (2) this tendency to underestimate the true false positive rate will be exacerbated when the randomization shuffle is similar to the shuffle used for detecting replay events, resulting in a biased comparison between methods.
+
+I think (1) is unavoidable as it would be hard to disprove any structure that could be inadvertently erased by any given shuffle. The true false positive rate may always be higher than our best estimates captured by our surrogate datasets, and our estimates are simply a lower bound of the true false positive rate. In particular for the cell-id shuffle (including the "cross experiment cell-id" shuffle), there may be some underlying structure in biological data which violates assumptions of independence that is not captured by place-field swapping. This would undoubtedly be the case when including a variety of cell types with generally different place field properties (e.g. along the dorsoventral axis or the deep/superficial sublayer). Even without different anatomical cell types, more excitable cells may be more likely to have multiple place fields as well as firing more spikes within candidate events – a potential structure that is not captured by the cell-id shuffle.
+
+While concern (1) only needs to be mentioned (in the discussion or in a public review), concern (2) is particularly problematic because the authors compare the (FRP-matched) performance of different methods to conclude which are best. Figure D shows a comparison of two methods: place field shifting and place field swapping (with place fields within the same dataset, the randomization used throughout the manuscript, or from a different dataset, which is almost identical to the original randomization) before trajectory decoding. Figure D convincingly argues that relative to field swapping (cell-id shuffle), field shifting (place field circular shifted shuffle) is a much poorer method of randomization as it considerably underestimates the false positive rate for detection methods using similar shuffles. Note that the bias is slightly attenuated for the "place bin shuffle" (it is worse for the "place field shuffle"), demonstrating that there is a confounding gradient with larger similarities between the randomization and the detection shuffles resulting in larger bias.
+
+According to the authors, Figure D shows that "cell-id based randomization is sufficiently independent from both place-based and temporally-based shuffles for replay detection". I cannot see how that can be concluded from the figure. The place field swapping methods may well be underestimating the false positive rate unevenly. Place field swapping is still a pre-decoding place-based shuffle, so the fact that its estimate agrees with the estimate of another pre-decoding place-based shuffle (place field shifting) does not demonstrate that these estimates are not a biased. I would like to stress that one of the authors' conclusions is that "more shuffles, with a preference for pre-decoding shuffles, lead to better replay detection." All of the approaches using "more shuffles, with a preference for pre-decoding shuffles" included place field shifting, which in my opinion is similar to the place field swapping of the cell-id shuffle.
+
+I commend the authors for the approach of Figure D, which is a good way to address this key concern. I recommend this figure to be included in the manuscript. Moreover, if the authors were to include the other 3 shuffles (it currently includes "Shuffle 2" from the methods) and show that the cell-id does not underestimate the false positive rate more than those shuffles in a biased way, that would practically disprove this issue. Indeed, the concern is that the cell-id shuffle may be underestimating the false positive rate particularly for detection methods using pre-decoding and place-based shuffles, but if none of the other 3 shuffles produce higher false positive estimates for the lower row in Figure D, that would be convincing evidence that the cell-id randomization procedure is not biased towards detection methods employing pre-decoding place-based shuffles and strengthen the conclusions.
+
+[Editors' note: further revisions were suggested prior to acceptance, as described below.]
+
+Thank you for resubmitting your work entitled "Evaluating hippocampal replay without a ground truth" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.
+
+The manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:
+
+The introduction of the manuscript has already been significantly revised. However, the final revision requested by the reviewers is to spend a few sentences outlining not only sequence scoring, but also the fact that the manuscript utilises multiple types of surrogate data sets to establish null distributions. In particular, it is suggested that some assumptions about the utility of the cell-id shuffle surrogate be described, as well as the importance of track discriminability. Reviewer #2 (see below) is quite proscriptive; please consider their points and update the introduction to at least mention these issues up front.
+
+Reviewer #2 (Recommendations for the authors):
+
+The revision added some text regarding the limitations of the study. I was hoping that the revised manuscript would also be more explicit regarding the underlying assumptions. While I don't think reviewers should do the authors work for them, after such a lengthy review, perhaps this is the only way short of a rejection.
+
+From what I can tell, these are the main assumptions. If I am wrong, perhaps the other reviewers, or the authors can correct me. Also perhaps there are others that I missed.
+
+1) After recording from two tracks, events with low discriminability between these two tracks cannot be said to be replays, regardless of their sequence scores.
+
+– Pooled across data, discriminability generally correlates with replay score, though this differs across datasets and timepoints of recording.
+
+2) The cell-id shuffle provides the best null distribution to test against for replay.
+
+– This is so because cell-id shuffled events show low discriminability even in instances where they have high sequence scores
+
+3) The proportion of cell-id shuffled events that qualify as replays in any given period is similar to the proportion of events generated in the real data from hippocampus network that are likewise not actual replay but are labeled as significantly ordered.
+
+– This therefore allows for a scaling correction to bring this proportion in line with the α level.
+
+4) In the absence of performing cell-id shuffles, which is straightforward, the alternative prescription is to record from two tracks and adjust the apparent α to match those of cell-id shuffled events obtained during the recording
+
+– This is so that the same relative number of events are labeled as replays, even though they may not be the actual replays.
+
+In my view, these assumptions should be provided very clearly early in the manuscript, ideally in the introduction section, to guide readers towards a better understanding of the study.

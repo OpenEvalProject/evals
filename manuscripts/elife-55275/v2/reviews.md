@@ -1,0 +1,65 @@
+# Peer review - Round 1
+
+Editors:
+- Adam Frost, University of California, San Francisco United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.55275.sa1](https://doi.org/10.7554/eLife.55275.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Acceptance summary:
+
+Circadian cycling is a fundamental cellular process that remains poorly understood in molecular terms. By combining insights from many disciplines – X-ray crystallography, electron microscopy, quantitative binding, sizing, and molecular dynamics simulations Fribourgh et al. propose an innovative model for the differing effects and phenotypes associated with the circadian transcriptional repressors, Cry1 and Cry2. Their work shows how another factor, PER2, tunes the binding affinity of CRY1and CRY2 for the CLOCK:BMAL1 transcription factor complex through modulation of a flexible serine-rich loop. They also provide a structure-based model and biochemical evidence for a high-affinity complex comprising CRY1 and CLOCK:BMAL1, in the absence of PER2, which may be the late repressive complex. Together, their data provide explanations for how CRY1 represses BMAL1/CLOCK alone in the late repressive complex. By contrast, CRY2 only suppresses BMAL1/CLOCK when bound to PER2, likely within the early repressive complex.
+
+[Editors' note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]
+
+Decision letter after peer review:
+
+Thank you for submitting your work entitled "Protein dynamics regulate distinct biochemical properties of cryptochromes in mammalian circadian rhythms" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Halil Kavakli (Reviewer #3).
+
+Our decision has been reached after consultation between all the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered for publication in eLife at this time. We would like to add, however, that I am open to considering an appeal that addresses the reviewer's comments concerning the functional significance of the advance, the use of and interpretations of the MD simulations, and the concerns about the cryo-EM aspects of your study.
+
+Reviewer #1:The manuscript by Fribourgh et al., concerns the structural basis of circadian rhythm regulation by two paralogous repressors of transcription, CRY1 and CRY2, and their modulator, PER2. Each CRY protein binds to the PAS-B domain of CLOCK, which together with BMAL1, forms the heterodimeric transcription factor complex that cycles "on" (when free of CRY1 and CRY2) and "off" (when repressed by CRY1 or CRY2). Notably, CRY1 and CRY2 knockout mice have different phenotypes, with CRY2 being insufficient for ~24hour circadian cycling, despite high sequence conservation. This study attempts to explain how these repressor proteins differ in their structural dynamics and therefore differentially regulate circadian cycling.
+
+The authors start by showing that CRY1 binds to CLOCK:BMAL(bHLH-PAS) heterodimers with an ~18 fold tighter affinity than CRY2 (Kd values of ~65nM versus ~1.2uM). Comparison of different structural models (some published, some based on MD modeling, and some generated from a new crystal form in the current manuscript) suggest a plausible explanation for CRY1 versus CRY2 differential binding affinity. In short, CRY1 and CRY2 vary in sequence in the critical "serine loop" and the nearby PAS domain-binding "secondary pocket." These sequence differences alter the size and inferred dynamics of the secondary pocket. Consistently, seven key substitutions in this region of CRY2 make that make it more like CRY1 confer tighter binding to CLOCK:BMAL(bHLH-PAS) – which is expected given published data concerning the CRY2 7M mutant.
+
+Second, Fribourgh et al., investigate how a critical modulatory protein, PER2, binds and remodels the structure of the serine loop and the secondary binding pocket for CRY1 and CRY2. A comparison of their new crystal structure of CRY1:PER2(CBD) with prior structures (including PDBs: 6OF7,4I6E) revealed a surprise. Inclusion of PER2 in the complex partially orders the serine loop, and this correlates with weakened binding between PER2:CRY1 and CLOCK:BMAL(bHLH-PAS), by comparison with CRY1 alone. By contrast, PER2 binding to CRY2 leads to more extensive remodeling of the serine loop and secondary pocket, and this correlates with ~2 fold tighter binding between CRY2 and CLOCK:BMAL(bHLH-PAS). Synthesizing these observations, the authors conclude that PER2(CBD) can "tune" the affinities of CRY1 and CRY2 for CLOCK:BMAL1(bHLH-PAS) by restructuring the serine loop, and that this activity largely normalizes the ternary complex stabilities (collapsing a ~18-fold difference for the PER2-free complexes to a ~3 fold difference for the PER2-containing complexes).
+
+Overall, this study has some crisp new insights into PER2's effects on CRY1 versus CRY2 structure and binding properties, but it remains unclear to me how this work should change our thinking about circadian rhythmicity since, as the authors wrote, after accounting for PER2's opposing effects on CRY1 versus CRY2, "the actions of CRY1 and CRY2 within the heteromultimeric PER-CRY repressive complexes may be largely similar." Is the central takeaway that the ~3 fold binding difference for CRY2, in the presence of PER2, the mechanistic basis for CRY2's limitations as a suppressor? Finally, the cryo-EM and associated structural modeling efforts based on the cryo-EM suffer from limitations that make it of unclear value to the manuscript.
+
+Essential revisions:
+
+1) The title of the paper seems too generic to me, bordering on insignificant since protein dynamics regulate biochemistry in all contexts, not just circadian rhythms. What mechanistic take-home message about the CRY1/2 and PER proteins would the authors suggest as an eLife title that conveys the significance of their discovery?
+
+2) I had some trouble navigating the diverse depictions of the structures. If Figure 1A defines the standard view, please add clear labels for the serine loop, the secondary pocket, the footprint of the PAS domain, and the imprint of the TAD domain here and then use this figure with standard rotation symbols to help the reader understand which surface features are being focused on and highlighted in subsequent figures.
+
+3) MD simulations are thought-provoking, fine-grained structural hypotheses, but I do not think of them as experimental data. I am happy to see such models in the supplemental data, but it's not clear to me how useful they were in thinking about the differences between CRY1 and CRY2, or the consequences of PER2 binding for either CRY proteins. For example, I may be confused by Figure 3 suggests that models of CRY2=>CRY1 mutations (the 7M mutant) display the strongest effects for residues far away from the serine loop (near aa250 and aa300), while the serine loop and especially the secondary pocket (around aa400) are less impressively altered in RMSF.
+
+4) The authors use unnecessarily polemical language when describing a prior structure as "non-physiological" and an "artifact". Yes, vector residues are a problem, but all crystal structures have limitations. I would encourage the authors to describe their work as an attempt to glean explanatory power from all of the available structural data-which when considered together suggests considerable flexibility and scope for regulatory remodeling in this region of CRY1/2.
+
+5) The authors wrote that they attempted to resolve outstanding ambiguity about the structure of PER2(CBD)CRY1(PHR):CLOCK:BMAL1(bHLH-PAS)+dsDNA using single particle cryoEM. I am afraid the uncertainty remains, and the cryo-EM data and associated analysis are both incomplete and disconnected from the rest of the study. Despite claiming a resolution between ~6Ã… and ~7Ã…, I can only appreciate a few apparent Î±-helices in the figures. For the most part, the map lacks secondary structure element separation, and this precludes a reliable interpretation of their map. The unbiased class averages shown in Figure 4—figure supplement 2B bear only a partial resemblance to projections of the author's pseudoatomic model. So, while their low-resolution fitting exercise may be a reasonable guess, I cannot endorse this structural model based on the cryo-EM data as presented.
+
+Reviewer #2:This is a follow-on paper to the authors' earlier work which established the structure of a repressive complex involving the circadian clock proteins CRY1, CLOCK, and BMAL1. The present study seeks to understand how it is that CRY1 and CRY2 have similar structures yet function differently. The authors show experimentally that CRY1 and CRY2 have similar binding affinities for BMAL1 but different binding affinities for CLOCK; the presence of PER2 stabilizes the CRY2:CLOCK:BMAL1 complex two-fold. Based on molecular dynamics simulations, they attribute the differences in affinity to differences in flexibility of a loop adjacent to the binding pocket for CLOCK (dubbed the serine loop). This loop is unstructured (or at least largely unresolved crystallographically) in CRY1. By contrast, in CRY2, in the absence of PER2, it forms an Î± helix and, in the presence of PER2, takes on an alternate structure consistent with data for the loop in CRY1. This is an interesting result since it seems to contradict the intuition that a more well-structured complex will be tighter. Along the way, they solve a structure of the CRY1:PER2 complex that removes a vector artifact and model the CRY1:CLOCK complex based on cryoEM and biophysical data.
+
+1) It would be nice if the authors could better explain the forces that stabilize the different serine loop conformations. Given that they use molecular dynamics simulations to generate hypotheses, they could use restrained free energy perturbation simulations to identify the interactions favoring different conformations, for example. Or try to map the (free) energy landscapes more systematically.
+
+2) This is potentially a study of interest to readers beyond those working on circadian clocks since overall differences in function of related proteins (e.g., isoforms) are not well understood, at least quantitatively. In this regard, the manuscript could be written more accessibly for readers less familiar with the clock.
+
+Reviewer #3:In the present study Fribourgh at al., use a combination of structural biology and computational methods to describe association of CRY1 and CRY2 with CLOCK:BMAL1. They found that a highly dynamic Ser looping and size of secondary packet in the CRYs is responsible for their affinity to CLOCK:BMAL1 complex. They specifically found that the binding of PER2 to CRY2 is required for its repressor activity due remodeling of Ser loop by PER2. However, they showed CRY1 can directly interact with PAS domain of CLOCK with or without PER2 and, therefore strongly repress CLOCK:BMAL1 transactivation. In this aspect this study is important and provides biochemical evidence how both CRYs have differential repressor activity. This topic is potentially appropriate for eLife, followings should be address in the manuscript before publication.
+
+1) Experiments in Figure 1C and Figure 2 should have done with a type of negative control like using photolyase or Drosphila CRY (since it has small cavity in their secondary packet) to validate their results.
+
+2) Repression assay (commonly done in the field) should be performed using appropriate cell line to support their conclusion indicated in the Results section.
+
+3) It is hard believe whether CRY2 binds to C:B bHLH-PAS since peak of CRY2 PHR: C:B bHLH-PAS and C:B bHLH-PAS overlaps Figure 2B. For validation some other CRY type from plant/insect in both experiments. Alternatively, trimeric complex needs to be shown by either SDS PAGE (as shown in Figure 2—figure supplement 1) or Western blot.
+
+4) Subsection "The serine loop differentially gates access to the secondary pocket of CRY1 and CRY2": Change in RMSF is not clearly shown in Figure 3D for A61G. Although they cited papers (mutants that used in these papers are different than CRY2 A61G) they should confirm their findings using CRY2-A61G by measuring the mutant repressor capacity and its effect on circadian rhythm using MEF double knockout CRY cell line.
+
+5) Subsection "The serine loop differentially gates access to the secondary pocket of CRY1 and CRY2" "these data demonstrate that modest sequences differences..."
+
+I disagree with this statement. CRY2 7M consists of seven mutations in and around secondary packet and such number of mutations can make things complicated.

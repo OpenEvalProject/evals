@@ -1,0 +1,88 @@
+# Peer review - Round 1
+
+Editors:
+- Axel T Brunger, Stanford University School of Medicine, Howard Hughes Medical Institute United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.70506.sa0](https://doi.org/10.7554/eLife.70506.sa0)
+
+Since its initial inception, as a sample thinning technique for cryo-electron tomography, cryo-focused ion beam (FIB) milling has developed to include a range of different methodologies. At the moment, there is no dedicated software that is able to integrate all these methodologies and their supporting software packages. Klumpe et al. aimed to alleviate this problem by developing an open-source software tool, SerialFIB. SerialFIB allows users to set up automated protocols for on-grid lamella preparation, FIB-SEM volume imaging, and lift-out trench milling. This work has significant importance for the field as it decouples the need for proprietary software for the execution of highly specialized milling protocols.
+
+
+---
+
+# Peer review - Round 1
+
+Editors:
+- Axel T Brunger, Stanford University School of Medicine, Howard Hughes Medical Institute United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.70506.sa1](https://doi.org/10.7554/eLife.70506.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "A Modular Platform for Streamlining Automated Cryo-FIB Workflows" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor.
+
+The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission in the "Tools and Resources" category.
+
+Essential revisions:
+
+The paper's focus, the software package SerialFIB, is very poorly described. All the information on how the software works (lamella/pattern/volume design and script editor) takes up only a small section of the results. Prospective users of the software would like to know how SerialFIB features are used and applied. We acknowledge that the authors have provided videos and supplementary figures in an attempt to introduce the software's features. Unfortunately, these videos are not helpful to give the required insight. More comprehensive videos are needed, which show the automated milling and volume imaging of a sample from the design stage to the final lamella. Informative captions throughout the video should be included so that the procedure is easy to follow. Video S1 intends to demonstrate the workflow, however, it is hard to follow due to little number of explanatory legends. A narration or comment of the different steps would help as well. Since the scripting module and its compatibility with Python is another potential benefit of this software, we think it is important to better showcase its use for the reader.
+
+The authors show that the tool runs on Thermo Fisher instrumentation. For SerialFIB to become widely applicable and to realize its full potential, it would be great if the implementation on instruments of other vendors could be shown – at least a more clear outline of the steps to be taken should be provided.
+
+The insights into the deformation of the sample during the milling were very intriguing. Unfortunately, from the amount of data that is shown, there is too little evidence to make a definitive statements about the importance of grid rigidity for successful targeting ('Our benchmarking results illustrate the importance of having a mechanically stable specimen when performing 3D-CLEM-guided milling'). In particular, there are no replicates of the gold grid results to verify that this outcome is not an outlier. In addition, for us it would be important to have more than two grid types and one sample type before making a statement about the importance of a mechanically stable specimen.
+
+The tools presented in this manuscript are an important contribution to the growing in situ structural biology community. It is great to see the diversity of applications supported by SerialFIB. Despite without doubt representing an immense advance, the authors may want to be more careful not to give the impression that everything is easy. This is especially important since many new labs that are now diving into cryo-ET have previous experience in SPA cryo-EM which is streamlined to a more advanced level, and they may interpret the availability of this platform as a similar level of facilitation.
+
+Please point out the shortcomings of the cryo-CLEM procedure, and that it not suitable for targeted cryo-FIB milling to locate rare and small protein complexes. It's important to more clearly discuss that the way cryo-FM-guided FIB milling currently works is that the positioning of the lamellae, i.e. the milling process, is only roughly targeted, while a more precise correlation between the final lamella and the cryo-FM best fitting z-plane is generated post-milling. It remains a bit unclear how the best fitting z-plane is determined. Line 712 implies that it is empirically chosen, based on visual similarity between image features. This is a potential source of error and requires significant user intuition, which should be explicitly discussed. Moreover, I understand that the targeting is relatively good when stable support grids are used and when relatively large fluorescent objects, such as lipid droplets (estimated 300-500 nm in diameter), are targeted. However, the size of the object to locate (when it is not diffraction-limited) will play a role in how frequently the targeting is successful: this issue should at least be discussed. Furthermore, how is the precision of lamellae positioning (axial correlation precision) affected by the (limited, possibly suboptimal) distribution of the microbeads in z, and the limited axial resolution of the cryo-confocal microscope? I appreciate the discussion of the axial compression of the imaged volume (line 585) being unproblematic for affine transforms on the level of single cells, but I am not convinced that the precision of localisation in z is unaffected, and I think this should be better discussed.
+
+The presented correlation workflow relies on the acquisition of 3D confocal stacks on a cryo-confocal microscope. This is at present not a standard instrument and most labs that use cryo-fluorescence microscopy have wide-field instruments. It would be very helpful if the authors could also provide an example how 2D wide-field fluorescence images can be used during the milling procedure.
+
+The ribosome subtomogram averaged maps are a useful measure for the quality of the data, but the way the maps are presented it is difficult to judge whether they really represent ribosomes, and how good the maps are. At least the FSC curves used to assess the resolutions should be shown in a supplement figure.
+
+Reviewer #1:
+
+Since its initial inception, as a sample thinning technique for cryo-electron tomography, cryo-focused ion beam (FIB) milling has developed to include a range of different methodologies. At the moment there is no dedicated software which is able to integrate all these methodologies and their supporting software packages. Klumpe et al. aimed to alleviate this problem by developing an open-source software tool, SerialFIB. SerialFIB allows users to set up automated protocols for on-grid lamella preparation, FIB-SEM volume imaging and lift-out trench milling. In addition, SerialFIB takes advantage of external software packages, such as 3DCT for the correlation of fluorescent light microscopy data and provides a scripting module for users to design their own milling methodologies. The authors shortly describe the newly developed software, which is followed by an extensive showcasing of data produced by using this software.
+
+This paper has significant importance for the field, as it decouples the need for proprietary software for the execution of highly specialized milling protocols. Due to continuous development in the cryo-FIB milling community it will become of importance to have a software that is able to integrate all the new developments into one tool. SerialFIB shows that it is able to automate milling procedures that are commonly used in the FIB milling community. In addition, by providing an example of how the software can interface with a previously existing 3-dimensional correlative light and electron microscopy tool, 3D-CLEM, SerialFIB shows that it may become the 'one-stop shop' for cryo-FIB milling community (similar to SerialEM for tomography data acquisition).
+
+That said, there are a number of major concerns:
+
+1. The paper's focus, the software package SerialFIB, is very poorly described. All the information on how the software works (lamella/pattern/volume design and script editor) takes up only a small section of the results. Prospective users of the software would like to know how SerialFIB features are used and applied. We acknowledge that the authors have provided videos and supplementary figures in an attempt to introduce the software's features. Unfortunately, these videos are not helpful to give the required insight. More comprehensive videos are needed, which show the automated milling and volume imaging of a sample from the design stage to the final lamella. Informative captions throughout the video should be included so that the procedure is easy to follow. Video S1 intends to demonstrate the workflow, however, it is hard to follow due to little number of explanatory legends. A narration or comment of the different steps would help as well. Since the scripting module and its compatibility with Python is another potential benefit of this software, we think it is important to better showcase its use for the reader.
+
+2. While the paper provides a potentially great tool, it does not report conceptual advance regarding methodology or biology. It should therefore be considered as a resource article.
+
+3. The authors show that the tool runs on Thermo Fisher instrumentation. For SerialFIB to become widely applicable and to realize its full potential, it would be great if the implementation on instruments of other vendors could be shown – at least a more clear outline of the steps to be taken should be provided.
+
+4. The insights into the deformation of the sample during the milling were very intriguing. Unfortunately, from the amount of data that is shown, there is too little evidence to make a definitive statements about the importance of grid rigidity for successful targeting ('Our benchmarking results illustrate the importance of having a mechanically stable specimen when performing 3D-CLEM-guided milling'). In particular, there are no replicates of the gold grid results to verify that this outcome is not an outlier. In addition, for us it would be important to have more than two grid types and one sample type before making a statement about the importance of a mechanically stable specimen.
+
+Reviewer #2:
+
+This work introduces serialFIB, an open-source tool for the automation of in situ cryo-ET sample preparation using focused ion-beam milling. SerialFIB is comprised of a graphical user interface, a scripting module, and a driver that interprets user-defined actions for the microscope. The driver works with the TFS dual beam instruments. Based on the desired milling protocol, a user can work with either the GUI or the scripting module. The authors provide substantial evidence on how this tool can be programmed to carry out a wide range of existing sample preparation techniques including: lamella preparation on single cells, fluorescence guided lamella targeting, trench milling for cryo-lift out procedures, and cryo-FIB-SEM volume imaging. All the workflows are fully benchmarked from sample preparation all the way to sub-tomogram averaging. The authors have also tested these workflows on multiple different cell types and provided their recipes for the thinning of each specific cell type. The data provided supports the claim that serialFIB makes the execution of these techniques more streamlined and flexible. As an example, the authors take advantage of the streamlined CLEM lamella preparation and study the deformation of the grid support because of exposure to the ion beam and quantify the resulting offsets in the positioning of the lamella. The authors then provide a workflow that will help with the correct registration of FLM volume data with the tomograms of the offset lamella acquired with TEM. This finding alone is of great interest to the researches in the field. In another benchmarking effort, the authors characterize lamella preparation directly following cryo-FIB-SEM volume imaging. They provide a recipe where volume imaging can be used to identify sub-cellular organelles after which a lamella is prepared and imaged in TEM. A reconstruction of the ribosomes in that lamella shows that the quality is comparable to that of a conventionally prepared lamella. They conclude that the radiation damage during volume imaging can be managed and minimized in this workflow.
+
+This work uses previously established techniques to demonstrate the abilities of serialFIB. Being able to carry out such a wide range of techniques proves that serialFIB is flexible and programmable. Furthermore, the impact of serialFIB on the field is established by applying it to important fundamental questions such as sample deformation and radiation damage. This is done in a quantitative manner which reflects the high throughput that is enabled by serialFIB.
+
+Aside from introducing multiple useful tools, many useful recipes are provided in this paper. These include milling parameters for different cell types, milling conditions for volume imaging, and techniques for fluorescence labeling of the cells and the subsequent registration of FLM data with TEM data. This will be of great value to the researchers in the field.
+
+Each workflow is fully tested from milling all the way to sub-tomogram averaging. The authors use ribosomes as standard particles with which they determine the quality of the tomograms. They report the number of sub-tomograms used in each reconstruction and the resolution.
+
+Two important milling side-effects are characterized and quantified in this paper; one is sample deformation and the other is radiation damage. TEM imaging of sparse biological phenomena in cells requires guided lamella preparation with the help of fluorescence tags. The authors show that despite the guided lamella preparation, the final lamella can be offset to the extent that it does not encompass the region of interest anymore. This is traced back to the deformations in the support film that can happen at the area exposed to the ion beam and even in the surrounding areas. Using two different grid types that differ in the continuity of the support film and the element of the grid bars, the authors demonstrate substantial variability in the extent of sample deformation. This is an important lesson for the researchers in the field and it provides a workflow to characterize such deformations for different grid types.
+
+Although volume imaging of chemically fixed specimen is well characterized, cryo-FIB-SEM volume imaging remains challenging both in implementation and in minimizing radiation damage. The authors present an interesting case where a lamella is prepared from a cell that has also gone through volume imaging. By checking the lamella quality with a 3D reconstruction of a specific ribosome, the authors successfully demonstrate a workflow where radiation is optimized to produce enough contrast in the SEM volume stack and also confined such that a lamella can be prepared for TEM only 100 nm below the imaged volume.
+
+Reviewer #3:
+
+Cryo-FIB milling for generating thin lamellae amenable to cryo-ET is considered tedious, time-consuming and requiring expert knowledge. Therefore, approaches to automate the process and to interface it better with other imaging modalities such as SEM imaging or cryo-fluorescence imaging are eagerly awaited by the community. This paper and the presented open-source software suite will without doubt contribute to popularising and easing different cryo-FIB SEM applications. Particularly the flexible protocols with tested, recipe-like default parameters will be helpful. Despite these advances, it should be noted that some of the procedures addressed here, in particular cryo-CLEM and cryo-lift-out from high-pressure frozen tissue samples, remain difficult non-routine applications that will still require expert know-how and empirical developments of protocols. This is not to diminish the contributions of this paper but to warn readers that these methods are still neither easy nor fully automated. As the authors note, the software is a foundation for future developments. However several bottlenecks remain unsolved.
+
+In particular, the presented cryo-CLEM procedures are useful for a rough targeting of organelles, but for precisely localising rare or small protein assemblies in cells, the accuracy of the fluorescence-based milling is not sufficient. Currently, this problem is circumvented by empirically finding the best-matching fluorescence z-plane after the lamella has been milled. While this works for relatively abundant and large (non-diffraction limited), easily identifiable structures such as lipid droplets, rare and small structures will more often be missed.

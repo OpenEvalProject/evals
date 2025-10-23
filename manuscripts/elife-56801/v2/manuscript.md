@@ -1,0 +1,20 @@
+# Slightly beneficial genes are retained by bacteria evolving DNA uptake despite selfish elements
+
+## Authors
+
+- Bram van Dijk<sup>1</sup> ([ORCID: 0000-0002-6330-6934](https://orcid.org/0000-0002-6330-6934)) †
+- Paulien Hogeweg<sup>2</sup> †
+- Hilje M Doekes<sup>1</sup> ([ORCID: 0000-0002-6360-5176](https://orcid.org/0000-0002-6360-5176))
+- Nobuto Takeuchi<sup>3</sup>
+
+### Affiliations
+
+1. Theoretical Biology Utrecht University Utrecht Netherlands
+2. Biology Utrecht University Utrecht Netherlands
+3. School of Biological Sciences University of Auckland Auckland New Zealand
+
+† Corresponding author
+
+## Abstract
+
+Horizontal gene transfer (HGT) and gene loss result in rapid changes in the gene content of bacteria. While HGT aids bacteria to adapt to new environments, it also carries risks such as selfish genetic elements (SGEs). Here, we use modelling to study how HGT of slightly beneficial genes impacts growth rates of bacterial populations, and if bacteria collectives can evolve to take up DNA despite selfish elements. We find four classes of slightly beneficial genes: indispensable, enrichable, rescuable, and unrescuable genes. Rescuable genes — genes with small fitness benefits that are lost from the population without HGT — can be collectively retained by a community that engages in costly HGT. While this `gene-sharing' cannot evolve in well-mixed cultures, it does evolve in a spatial population like a biofilm. Despite enabling infection by harmful SGEs, the uptake of DNA is evolutionarily maintained by the hosts, explaining the coexistence of bacteria and SGEs.

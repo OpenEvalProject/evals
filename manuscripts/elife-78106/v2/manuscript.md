@@ -1,0 +1,16 @@
+# Foveal vision anticipates defining features of eye movement targets
+
+## Authors
+
+- Lisa M Kroell<sup>1</sup> ([ORCID: 0000-0002-3508-5214](https://orcid.org/0000-0002-3508-5214)) †
+- Martin Rolfs<sup>1</sup> ([ORCID: 0000-0002-8214-8556](https://orcid.org/0000-0002-8214-8556)) †
+
+### Affiliations
+
+1. Department of Psychology Humboldt-Universität zu Berlin Berlin Germany
+
+† Corresponding author
+
+## Abstract
+
+High-acuity foveal processing is vital for human vision. Nonetheless, little is known about how the preparation of large-scale rapid eye movements (saccades) affects visual sensitivity in the center of gaze. Based on findings from passive fixation tasks, we hypothesized that during saccade preparation, foveal processing anticipates soon-to-be fixated visual features. Using a dynamic large-field noise paradigm, we indeed demonstrate that defining features of an eye movement target are enhanced in the pre-saccadic center of gaze. Enhancement manifested as higher Hit Rates for foveal probes with target-congruent orientation and a sensitization to incidental, target-like orientation information in foveally presented noise. Enhancement was spatially confined to the center of gaze and its immediate vicinity, even after parafoveal task performance had been raised to a foveal level. Moreover, foveal enhancement during saccade preparation was more pronounced and developed faster than enhancement during passive fixation. Based on these findings, we suggest a crucial contribution of foveal processing to trans-saccadic visual continuity: Foveal processing of saccade targets commences before the movement is executed and thereby enables a seamless transition once the center of gaze reaches the target.

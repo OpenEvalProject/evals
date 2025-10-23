@@ -1,0 +1,238 @@
+# Dopamine receptor 1 neurons in the dorsal striatum regulate food anticipatory circadian activity rhythms in mice
+
+## Authors
+
+- Christian M Gallardo<sup>1</sup>
+- Martin Darvas<sup>2</sup>
+- Mia Oviatt<sup>1</sup>
+- Chris H Chang<sup>3</sup>
+- Mateusz Michalik<sup>4</sup>
+- Timothy F Huddy<sup>5</sup>
+- Emily E Meyer<sup>3</sup>
+- Scott A Shuster<sup>1</sup>
+- Antonio Aguayo<sup>5</sup>
+- Elizabeth M Hill<sup>5</sup>
+- Karun Kiani<sup>3</sup>
+- Jonathan Ikpeazu<sup>1</sup>
+- Johan S Martinez<sup>1</sup>
+- Mari Purpura<sup>3</sup>
+- Andrea N Smit<sup>4</sup>
+- Danica F Patton<sup>4</sup>
+- Ralph E Mistlberger<sup>4</sup>
+- Richard D Palmiter<sup>6</sup>
+- Andrew D Steele<sup>1</sup> †
+
+### Affiliations
+
+1. Division of Biology California Institute of Technology Pasadena United States
+2. Department of Pathology University of Washington Seattle United States
+3. W M Keck Science Department Claremont McKenna, Pitzer and Scripps Colleges Claremont United States
+4. Department of Psychology Simon Fraser University Burnaby Canada
+5. Biological Sciences Department California State Polytechnic University Pomona Pomona United States
+6. Department of Biochemistry Howard Hughes Medical Institute, University of Washington Seattle United States
+
+† Corresponding author
+
+## Abstract
+
+10.7554/eLife.03781.001 Daily rhythms of food anticipatory activity (FAA) are regulated independently of the suprachiasmatic nucleus, which mediates entrainment of rhythms to light, but the neural circuits that establish FAA remain elusive. In this study, we show that mice lacking the dopamine D1 receptor (D1R KO mice) manifest greatly reduced FAA, whereas mice lacking the dopamine D2 receptor have normal FAA. To determine where dopamine exerts its effect, we limited expression of dopamine signaling to the dorsal striatum of dopamine-deficient mice; these mice developed FAA. Within the dorsal striatum, the daily rhythm of clock gene period2 expression was markedly suppressed in D1R KO mice. Pharmacological activation of D1R at the same time daily was sufficient to establish anticipatory activity in wild-type mice. These results demonstrate that dopamine signaling to D1R-expressing neurons in the dorsal striatum plays an important role in manifestation of FAA, possibly by synchronizing circadian oscillators that modulate motivational processes and behavioral output. DOI: http://dx.doi.org/10.7554/eLife.03781.001
+
+## Introduction
+
+Circadian (∼24 hr) rhythms of behavior and physiology are regulated by a distributed system of cell-autonomous circadian oscillators located in the brain and in most peripheral organs and tissues (Bell-Pedersen et al., 2005; Mohawk et al., 2012). In mammals, a population of coupled circadian clock cells in the hypothalamic suprachiasmatic nuclei (SCN) function as a master pacemaker responsible for coordinating circadian oscillators elsewhere in the brain and other tissues with daily light–dark cycles (Welsh et al., 2010). Circadian clocks in many tissues, including multiple brain regions outside of the SCN, can also be entrained by daily cycles of food availability, independently of the SCN pacemaker (Stokkan et al., 2001; Mistlberger, 2011; Verwey and Amir, 2011; Mohawk et al., 2012). In rat and mouse, this is readily demonstrated by restricting food access to the middle of the light period, when nocturnal rodents normally eat little and are inactive. This induces a marked shifting of circadian oscillators and organ functions to align with the new daily feeding time, while the SCN remains coupled to the light-dark (LD) cycle. In many species, this is also associated with the emergence of a daily bout of locomotor activity that anticipates meal time by 1–3 hr (Boulos and Terman, 1980; Stephan, 2002; Mistlberger, 2011). Remarkably, this so-called food anticipatory activity (FAA) exhibits formal properties of circadian clock control, yet persists robustly after removal of the SCN (Stephan et al., 1979; Boulos and Terman, 1980; Marchant and Mistlberger, 1997). Anticipatory rhythms can also be induced by scheduled daily access to water, salt, palatable foods, an opportunity to mate, and psychostimulant drugs (Mistlberger and Rusak, 1987; Mistlberger, 1994; Kosobud et al., 1998; Iijima et al., 2002; Mendoza et al., 2005; Honma and Honma, 2009; Webb et al., 2009; Hsu et al., 2010a, 2010b; Gallardo et al., 2012; Jansen et al., 2012; Landry et al., 2012; Mohawk et al., 2013). The ability of animals to coordinate activity and physiology with access to critical resources is obviously adaptive. Similar circadian processes in humans could create daily windows of vulnerability to drug seeking, overeating, and other addictive behaviors.
+
+A major knowledge gap in circadian neurobiology is the location of circadian oscillators that generate food (and other reward) anticipatory circadian rhythms. The stimuli and neural pathways that entrain these oscillators also remain unspecified. Conventional lesion experiments have ruled out a number of brain regions as the site of circadian oscillators necessary for FAA (Mistlberger, 1994, 2011; Davidson, 2009). This includes the dorsomedial nucleus of the hypothalamus, an area that may nonetheless participate in the expression of daytime FAA by inhibiting output from the SCN pacemaker that normally opposes activity and promotes rest during the day in nocturnal rodents (Acosta-Galvan et al., 2011; Landry et al., 2011). Induction of anticipatory rhythms by a range of ingestive and non-ingestive reward stimuli suggest that activation of reward circuits in the brain may play a role, perhaps as a final common entrainment pathway. This is supported by evidence that circadian clock genes exhibit daily rhythms of expression in components of the reward system, including the dorsal striatum and nucleus accumbens (Wakamatsu et al., 2001; Angeles-Castellanos et al., 2007; Verwey and Amir, 2011). These rhythms are inverted by daytime feeding, and, in the dorsal striatum, can be induced or reset by dopaminergic stimuli (Iijima et al., 2002; Hood et al., 2010; Natsubori et al., 2013, 2014). Importantly, FAA rhythms can be shifted by a single injection of a dopamine D2 receptor agonist (Smit et al., 2013) and can be attenuated by dopamine D1 and D2 antagonists (Liu et al., 2012). In addition, genetic deletion of factors that activate dopamine transmission (e.g., ghrelin receptors) can attenuate FAA (Blum et al., 2009; LeSauter et al., 2009; Lamont et al., 2012), but see (Szentirmai et al., 2010; Gunapala et al., 2011; Patton et al., 2013) while deletion of factors that suppress DA transmission (e.g., leptin and 5HT1c receptors) can increase FAA (Mistlberger and Marchant, 1999; Hsu et al., 2010c; Ribeiro et al., 2011). Lesion experiments rule out the nucleus accumbens as the site of dopamine receptors that might be necessary for FAA (Mistlberger and Mumby, 1992), but comparable experiments of the dorsal striatum have not been reported.
+
+In this study, we used dopamine-deficient mice and dopamine receptor knockout mice to show that food-entrained circadian rhythms are markedly attenuated in the absence of D1 receptors but are spared in mice lacking D2 receptors and in mice that express dopamine only in the dorsal striatum. We further show that a D1 receptor agonist administered once daily in the light period can induce an anticipatory rhythm. Analyses of total daily activity, FAA as a proportion of daily activity, body temperature, and striatal clock gene expression suggest that the FAA phenotype of D1R KO mice may involve impaired synchronization of food-entrainable oscillators combined with an alteration in the strategy for maintaining metabolic homeostasis, favoring reduced total daily activity over nocturnal hypothermia.
+
+## Results
+
+## Absence of the dopamine D2 receptor does not impair FAA
+
+To determine the significance of the dopamine system in mediating FAA, we tested mice lacking either dopamine D1 receptors (D1R KO mice) or dopamine D2R receptors (D2R KO mice). First, we investigated whether mice lacking D2R (
+
+![Figure 1.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig1-v2.jpg)
+
+**Figure 1.:** (A) The fraction of all recorded frames within each 1-hr bin on day -7 when the mice were walking, hanging, jumping, or rearing. All mice were still on an ad libitum diet. (B, C, D) The fraction of high activity frames for D2R WT (n = 12) and KO (n = 8) mice in each 1-hr bin on days 14, 21, and 28 of CR. Arrows indicate the bin in which the calorie restricted meal was delivered (ZT 8). Shaded boxes represent lights-off and yellow boxes indicated lights on. (E) The fraction of high activity in the 3 hr before feeding time (ZT 5–8) on days -7, 0, 7, 14, 21, and 28 of the study for mice on CR diets. (F) The fraction of high activity in the 3 hr before feeding time (ZT 5–8) for mice on ad libitum diets. There were no significant differences (Mann–Whitney) in fraction of high activity between D2R WT and KO mice. Median data are plotted with error bars indicating interquartile ranges.DOI: http://dx.doi.org/10.7554/eLife.03781.003
+
+## Absence of the dopamine D1 receptor attenuates FAA
+
+We also examined mice deficient in D1R (
+
+![Figure 2.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig2-v2.jpg)
+
+**Figure 2.:** (A) The fraction of high activity within each 1 hr bin on day -7 during which all mice were on an ad libitum diet. (B) The fraction of high activity on day 14, (C) day 21, and (D) day 28 of CR. Arrows indicate the bin in which the meal was delivered (ZT 8). Shaded boxes represent lights-off and yellow boxes indicate lights on. (E) Summed normalized high activity in the 3 hr before feeding (ZT 5–8) for days -7, 0, 7, 14, 21, and 28 of the mice on CR diets. (F) Summed normalized high activity in the 3 hr before feeding (ZT 5–8) for the mice on AL feeding schedules. Bars show medians and interquartile ranges. The statistical test used was Mann–Whitney, where * indicates p < 0.05, ** indicates p < 0.01, and *** indicates p < 0.001.DOI: http://dx.doi.org/10.7554/eLife.03781.004
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** High activity behaviors of D1R KO and WT (same mice as Figure 2) in terms of median seconds (unnormalized) for (A) day 7, (B) day 0, (C) day 7, (D)day 14, (E) day 21, and (F) day 28. (G) Amount of high activity in the 3 hr preceding scheduled feeding in seconds. (H) Amount of total high activity over 24 hr recordings in seconds.DOI: http://dx.doi.org/10.7554/eLife.03781.005
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.03781.006
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.03781.007
+
+When placed on a timed 60% CR feeding schedule with a ZT 8 meal time, D1R WT mice showed notable increase in activity preceding scheduled meal time by 14 days of CR while D1R KO mice showed only a small increase in activity (Figure 2B). On day 21 of CR, WT control mice exhibited a significant (p < 0.05) increase in high activity compared to D1R KO mice in ZT 6 and 7 (Figure 2C). This was observed again on day 28 with WT mice showing a significantly higher (p < 0.01) fraction of high activity in each hourly bin from ZT 5–7 (Figure 2D). Summation of the amount of normalized high activity in the 3 hr preceding scheduled meal access revealed that D1R KO mice had a stable and significant impairment in FAA (p < 0.01 at day 14, p < 0.001 at days 21 and 28) from day 14 of scheduled feeding onwards (Figure 2E). As expected, both D1R KO and WT mice with AL access to food showed very little normalized high activity behaviors in ZT 5–8 with the exception of day 7 when D1R WT control mice showed a small increase in activity relative to D1R KO mice (Figure 2F). We also plotted the median time (in seconds) of high activity in D1R KO and WT mice over the course of 28 days of CR and observed that D1R KO mice had reduced overall activity on a 60% CR diet after day 14 (Figure 2—figure supplement 1). Data from representative D1R WT and KO mice on days 0 and 21 are presented in Figure 2—figure supplements 2 and 3, respectively.
+
+To confirm these findings using conventional methods for long-term continuous recording of circadian activity rhythms in mice, D1R KO (n = 4) and WT (n = 12) mice were housed individually in plastic cages with horizontal running discs, within isolation cabinets with motion sensors and controlled lighting (LD 12:12, ∼70 lux), temperature (22 ± 2°C range), and humidity (50%).
+
+During AL food access, activity measured by running discs and motion sensors was nearly indistinguishable in amount and timing (% nocturnality) in the KO and WT groups (
+
+![Figure 3.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig3-v2.jpg)
+
+**Figure 3.:** (A) Group mean (±SEM) waveforms of activity in 10 min bins during ad-lib food access. Data from each mouse are averages of the last 7 days prior to restricted feeding (red dashed lines and bars). Lights-on (ZT 0–12) is indicated by the yellow bar. (B) Group mean waveforms of activity during restricted feeding (4 hr daily access to a moderately high fat diet). (C) Group mean waveforms of activity during restricted feeding regular chow. (D) Total daily activity and nocturnality ratios of WT and KO mice during ad-lib food access. (E) Total daily activity, FAA (2-hr pre-meal) counts, and FAA ratios (2-hr pre-meal counts divided by activity during lights-off) during moderately high fat chow schedule. (F) The same metrics as panel E, during regular chow schedule. * denotes significant difference between WT and KO, p < 0.05, 1-tailed. **denotes significant difference, p < 0.001.DOI: http://dx.doi.org/10.7554/eLife.03781.008
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative actograms of disc running activity in D1R WT (A and C) and D1R KO (B and D) mice. Each line represents 24 hr plotted in 10 min bins from left to right. Consecutive days are aligned vertically. Bins during which activity was registered are denoted by vertical deflections of varying height in proportion to the amount of activity. Lights-off is indicated by shading. Days of restricted feeding are indicated by the vertical thin bars to the immediate right or left of the actograms. Meal time hours are outlined by thin red lines. Food was a high fat chow (A and B) or regular chow (C and D).DOI: http://dx.doi.org/10.7554/eLife.03781.009
+
+The diet of powdered chow mixed with corn oil was used to encourage food intake during the limited time of availability. To determine if the palatability or caloric density of the food influences the magnitude of FAA differentially in KO and WT mice, the diet was changed to powdered chow mixed with water. The mice were fed ad-lib for 22 days and were then restricted to a 4-hr daily meal for 74 days. KO mice continued to show significantly less total activity (p < 0.01) and less FAA (p < 0.01) than WT mice. FAA ratios in both groups were increased relative to the ratios evident when fed high fat chow, but remained significantly lower in KO mice (p < 0.05). In only one KO mice were the FAA counts and the FAA ratios significantly increased during the last 10 days of restricted feeding compared to the last 10 days of ad-lib food access (counts: paired t(9) = 6.52, p < 0.001; ratios t(9) = 5.22, p = 0.005), whereas the counts and ratios were significantly increased in all of the WT mice at p < 0.00001. Differences between KO and WT mice were stable across 74 days on this restricted feeding schedule. Body weights remained stable at ∼90% of baseline in both groups. Data from representative D1R KO and WT mice are shown in Figure 3—figure supplement 1.
+
+## D1R KO mice have greatly attenuated FAA for more palatable diets
+
+As D1R KO mice show low body weight on standard diets and have a decreased interest in feeding (
+
+![Figure 4.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig4-v2.jpg)
+
+**Figure 4.:** (A) Normalized high activity behavior of D1R KO (n = 6) and control (n = 8) mice on day 21 of 60% CR of breeder chow diet. (B) Normalized high activity behavior of D1R KO (n = 11) and control (n = 6) mice on day 21 of 60% CR on rodent high fat diet. (C) Normalized high activity in the 3 hr preceding scheduled meal time for mice on a diet of 60% CR breeder chow. (D) Normalized high activity in the 3 hr preceding scheduled meal time for mice on a diet of 60% CR high fat diet. The statistical test used was Mann–Whitney, where * indicates p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.03781.010
+
+## D1R KO mice have normal increase in fasting-induced activity
+
+Because D1R KO mice failed to anticipate a variety of 60% CR meals fed once daily, we assessed whether this defect was due to an inability to cope with reduced calories. To address this issue, we employed an alternative assay for relating hunger status to activity levels by acutely fasting D1R KO and control mice. In previous studies of the home-cage behavioral response to acute fasting in WT C57BL/6J mice, mice increased their high-activity behaviors two-fold upon acute fasting as compared to AL food access (
+
+![Figure 5.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig5-v2.jpg)
+
+**Figure 5.:** (A) Total number of seconds of high intensity activity (walking, hanging, jumping, or rearing) for D1R KO (n = 6 KO) and WT (n = 12) mice on 3 consecutive days of ad libitum diet. (B) Total number of seconds of high intensity activity for D1R KO (n = 7) and WT (n = 14) mice on 3 consecutive days. On day 1 and day 2 all mice were on an ad libitum diet, but on the third day all mice were deprived of food. (C) The ratio of total seconds of high activity on day 3 divided by total seconds of high activity on day 2. Bars show medians and interquartile ranges. The statistical test used was Mann–Whitney, where ** indicates p < 0.01.DOI: http://dx.doi.org/10.7554/eLife.03781.011
+
+## Handling cues do not facilitate the expression of FAA in D1R KO mice
+
+Having noted that some D1R KO mice had a small amount of FAA on a 60% CR diet (note the interquartile range in
+
+![Figure 6.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig6-v2.jpg)
+
+**Figure 6.:** (A) High activity data (in seconds) in 5 min bins for D1R KO (n = 7) and D1R WT (n = 8) mice that were disturbed 2 hr prior to scheduled feeding. (B) High activity data (in seconds) in 5 min bins for timed, calorie restricted D1R KO (n = 6) and D1R WT (n = 7) mice. Mice were disturbed 2 hr prior to feeding. (C) Summed high activity data over the cued period. The statistical test used was Mann–Whitney, where * indicates p < 0.05, ** indicates p < 0.01, and *** indicates p < 0.001.DOI: http://dx.doi.org/10.7554/eLife.03781.012
+
+## Palatable meal anticipation by D1R KO mice on an ad libitum diet
+
+Rodents exhibit FAA in response to a timed palatable mid-day meal even with AL access to regular chow (Mistlberger and Rusak, 1987; Mendoza et al., 2005). This model does not involve substantial weight loss and mice, in particular, show FAA for fatty meals as opposed to sugary meals (Hsu et al., 2010b; Gallardo et al., 2012). To gain further insight into the role of the dopaminergic system in FAA, we next studied FAA in response to scheduled palatable meals. We fed a daily meal of rodent HFD at ZT 9 to D1R KO and WT male mice daily for 14 days while they retained AL access to standard chow. The palatable meal corresponded to about 30% of their total daily caloric intake.
+
+D1R KO mice, which often fail to eat from the wire food bin and need to be fed their standard chow on the cage floor, approached the HFD meal placed in their food bin immediately and started consuming it avidly. Both WT and D1R KO mice consumed their HFD meal in less than 1 hr, spending 10% of their food-bin entry time during the hour after palatable-diet feeding (
+
+![Figure 7.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig7-v2.jpg)
+
+**Figure 7.:** (A) Fraction of time spent entering the food bin in the hour after feeding (ZT 9) on days 4, 0, and 7. (B) The fraction of normalized food bin entry and (C) normalized high activity in each 1-hr bin on day 14. (D) Sum of normalized high activity in the 3 hr before feeding on days 4, 0, 7, 10, 11, and 14. There were no statistically significant differences between groups, Mann–Whitney. Arrows indicate the bin in which the palatable meal was delivered (ZT 9). Bars show medians and interquartile ranges.DOI: http://dx.doi.org/10.7554/eLife.03781.013
+
+## Pre-treatment with scheduled palatable meals allows D1R KO mice to express FAA transiently
+
+Subsequent to being maintained on a daily HFD meal schedule for 2 weeks, we converted D1R KO and control mice to a standard AL chow diet without palatable meal access for 1 week, days 14–21 (
+
+![Figure 8.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig8-v2.jpg)
+
+**Figure 8.:** (A) A diagram representing the feeding schedule used in this study. (B) The fraction of high activity each 1-hr bin on day 22, (C) day 28, (D) day 35, (E) day 43, and (F) day 49. Arrows indicate the scheduled feeding time. Shaded boxes represent lights-off while yellow represents lights on. (G) The fraction high activity in the 3 hr before feeding time (ZT 6–9) on day 22, 28, 35, 42, 49. Bars show medians and interquartile ranges. The statistical test used was Mann–Whitney, where * indicates p < 0.05, ** indicates p < 0.01, and *** indicates p < 0.001.DOI: http://dx.doi.org/10.7554/eLife.03781.014
+
+## Body temperature entrainment in D1R KO mice on scheduled feeding
+
+Caloric restriction can induce torpor in WT mice, which could mask entrainment of circadian oscillators by food. Visual observations at meal time provided no evidence for torpor in D1R KO mice. To rule out defects in thermoregulation as a reason why D1R KO mice do not show FAA, we placed D1R KO (n = 7) and WT (n = 7) mice at 30°C continuously. After 1 week at 30°C, we tested their behavioral response to 60% CR for the next 4 weeks and did not observe FAA in D1R KO mice and noted a marked reduction in FAA for the WT mice at this elevated temperature compared to ambient (22–24°C) temperature (Figure 9—figure supplement 1).
+
+To address body temperature regulation more directly, we implanted miniature radiofrequency transmitters (Minimitter) for continuous recording of body temperature by telemetry in D1R KO (n = 6) and WT (n = 8) mice, which were then maintained on 60% CR feeding at ZT 8. The 24-hr body temperature profiles showed identical waveforms for WT and KO groups before CR schedules were started (‘day -3’) with temperatures remaining close to 34.5°C during the daytime and increasing to up to ∼36°C at night-time (
+
+![Figure 9.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig9-v2.jpg)
+
+**Figure 9.:** (A) Mean (± SEM) body temperature of WT and D1R KO mice 3 days prior to initiating CR, (B) day 14, (C) day 17, and (D) day 21 of CR. (E) Mean (±SEM) body temperature overall for each day of measurement. (F) Mean change in temperature in the 3 hr prior to scheduled feeding. * indicates p < 0.05, Mann–Whitney; n = 6 D1R KO and n = 8 WT.DOI: http://dx.doi.org/10.7554/eLife.03781.015
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** After 1 week at 30°C mice were placed on timed 60% CR feeding. (A) Normalized high activity on day 14 and (B) day 28. (C) Fraction of high activity in the 3 hr preceding expected meal time.DOI: http://dx.doi.org/10.7554/eLife.03781.016
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Body temperature measurements during lights-off (A) for the entire dark cycle and (B) for the last 4 hr of the dark cycle.DOI: http://dx.doi.org/10.7554/eLife.03781.017
+
+## Dopamine signaling solely in the dorsal striatum permits FAA
+
+To determine where in the striatum D1R neurons are signaling FAA, we employed the dopamine-deficient (DD) mouse model. In this system, the rate-limiting enzyme for dopamine production, tyrosine hydroxylase (TH), has a ‘lox-stop-lox’ cassette within the first intron of the
+
+![Figure 10.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig10-v2.jpg)
+
+**Figure 10.:** (A) Representative tyrosine hydroxylase staining in a dopamine-deficient dorsolateral viral restoration mouse. (B) Quantitation of tyrosine hydroxylase expression in dopamine deficient mice (n = 5). TH immune-stained striatal sections from DD-VR mice were analyzed with MacBiophotonics ImageJ software to measure fluorescence intensities in the dorsal striatum, ventral striatum, and also in the anterior part of the anterior commissure (aca), a structure that is always devoid of TH staining. For each mouse fluorescence intensity values were divided by the size of the analyzed area to generate normalized fluorescence values. (C) Normalized high activity in control (normal dopamine levels, n = 4) and dopamine-deficient viral restoration mice (n = 7) on the first day of CR. (D) Normalized high activity on day 7 of CR and (E) day 14 of CR. (F) Summation of normalized high activity in the 3 hr preceding meal time over the course of the experiment. * indicates p < 0.05, Mann–Whitney.DOI: http://dx.doi.org/10.7554/eLife.03781.018
+
+## Dopamine D1 receptor KO attenuates circadian rhythm of Per2 expression in the dorsal striatum
+
+Circadian rhythms in mammals are generated at the single-cell level by autoregulatory transcription–translation feedback loops involving so-called circadian clock genes and their protein products. A core loop is comprised of the clock genes
+
+![Figure 11.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig11-v2.jpg)
+
+**Figure 11.:** Per2 mRNA expression measured by quantitative reverse-transcriptase PCR at 4 times of day in D1R KO (red dashed curve) and WT mice (blue curve) fed for 4 hr daily at Zeitgeber Time 6.n = 4 mice per group per time point. ANOVA confirms a significant effect of sample time in both groups. **denotes significant difference between KO and WT mice, p < 0.0001.DOI: http://dx.doi.org/10.7554/eLife.03781.019
+
+## Daily timed pharmacological activation of D1R entrains behavior
+
+We next asked whether deliberate timed activation of D1R neurons is sufficient for behavioral entrainment in the absence of dietary restriction. We injected WT C57BL/6J male mice daily intraperitoneally with D1R agonist SKF-81297 for 12 days (see top panel in
+
+![Figure 12.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig12-v2.jpg)
+
+**Figure 12.:** (A) Seconds of high activity behavior in the 2 hr after injection on day 0, the first day of injection, (B) day 12, and (C) on day 13 when no injection was performed. (D) Fraction of high activity plotted in 1 hr bins after the first day of injection, (E) seventh, (F) 12th day of injection, and (G) 1 day after the last injection. (H) The sum of normalized high activity in the 3 hr preceding scheduled injection at each behavioral measurement. * indicates p < 0.05, **p < 0.01, Mann–Whitney.DOI: http://dx.doi.org/10.7554/eLife.03781.020
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/03781/elife-03781-fig12-figsupp1-v2.jpg)
+
+**Figure 12—figure supplement 1.:** (A) High activity in the 3 hr preceding daily injection on days 0, 7, and 14 of the experiment. (B) Quantitation of c-Fos immunostaining in the dorsal striatum of D1R WT (n = 2) and D1R KO (n = 2). (C) A low magnification (D) and at 10×. (E) c-Fos immunostaining in the dorsal striatum of a D1R KO mouse, a low magnification (F) and at 10×.DOI: http://dx.doi.org/10.7554/eLife.03781.021
+
+We repeated this experiment, omitting caffeine, and prevented food intake for 4 hr post-injection to control for drug-induced feeding as a potential factor for inducing anticipatory activity in the experiment described above. To that end, mice were injected daily for 14 days with either SKF-81297 (n = 12) or water (n = 12). We observed significant (p < 0.05) behavioral entrainment by the 14th day of injection (Figure 12—figure supplement 1). To confirm that the SKF-81297 was activating D1R neurons, we injected n = 2 D1R WT and D1R KO mice with drug and euthanized them 1 hr after injection, processing their brains of c-Fos immunostaining. We noted a marked number of cells staining in the dorsal striatum of WT but not the D1R KO mice (Figure 12—figure supplement 1).
+
+From these experiments, we conclude that timed activation of D1R neurons is sufficient to induce moderate behavioral entrainment (about 20% of total high activity behavior in a 3-hr pre-injection window). Moreover, this entrainment can persist in the absence of stimuli, as at the end of day 13 anticipatory activity occurs nearly 46 hr after the last injection of drug.
+
+## Discussion
+
+In rodents, behavioral anticipation of a regularly scheduled feeding time is mediated by circadian oscillators entrainable by feeding. Localization of these oscillators and their entrainment pathways has been an enduring challenge (Davidson, 2009; Mistlberger, 2011). Recent studies suggest a role for dopamine signaling in the expression and timing of food anticipatory rhythms in mice and rats (Liu et al., 2012; Smit et al., 2013). In this study, we provide comprehensive evidence supporting an important role for dopamine signaling via D1R in the expression of FAA in CR mice fed in the light period. Using video-based automated behavior analysis, motion sensors, and running discs, we demonstrated that anticipation of a daily meal is markedly attenuated in mice lacking D1R. By contrast, it is normal in mice lacking D2R and in dopamine-deficient mice with local production of dopamine in the dorsal striatum. The reduction in FAA in D1R KO mice is evident both in total counts and when normalized for total daily activity. We propose that attenuated FAA in D1R KO mice may involve three distinct processes; circadian oscillator entrainment, incentive motivation, and metabolic homeostasis.
+
+Circadian clocks regulate the timing of behavior, but can also regulate the peak level of activity by variations in clock amplitude. Mammalian circadian clocks are comprised of populations of coupled circadian oscillators (clock cells) (Colwell, 2000; Mohawk and Takahashi, 2011). Disruption of coupling within a population of circadian oscillators can flatten aggregate clock output and attenuate rhythm peaks. A circadian oscillator entrainment interpretation of attenuated FAA in D1R KO mice is suggested by two observations. First, in parallel with attenuated FAA rhythms, D1R KO mice also exhibited a marked attenuation of a daily rhythm of clock gene (Per2) expression in the dorsal striatum. Second, a daily injection of the D1 agonist SKF-81257 was sufficient to induce a rhythm of anticipatory activity that was synchronized to the injection time and that persisted during a withdrawal day. These results converge on a hypothesis that dopamine signaling via D1R in the dorsal striatum entrains circadian oscillators that regulate the timing and amplitude of FAA. We speculate that a daily rhythm of dopamine release associated with food acquisition serves to coordinate the phase of circadian clock cells in the dorsal striatum, and that genetic deletion of D1R impairs this function, thereby reducing the amplitude of the population rhythm and the magnitude of the activity rhythm driven by these oscillators. In this respect, D1R signaling in food-entrainable oscillators of the dorsal striatum may be analogous to VPAC receptor signaling in the SCN, which is critical for coupling the population of circadian oscillators that constitute this light entrained circadian pacemaker (Harmar et al., 2002; Aton et al., 2005).
+
+Circadian clocks are thought to directly drive or gate output of neural systems that produce observable daily rhythms of rest and activity. Circadian clocks also generate internal time cues that animals can use to discriminate time of day; for example, to permit daily time-place learning, or time-compensated-sun-compass orientation (Mistlberger, 1994). A representation of circadian clock phase, by repeated association with a fixed daily meal time, could acquire salience as an incentive stimulus and generate a daily rhythm of incentive motivation manifest as FAA. Such a model could account for the ability of some animals to anticipate two or more meal times per day (Biebach et al., 1991; Van der Zee et al., 2008; Luby et al., 2012; Mistlberger et al., 2012; Mulder et al., 2013). It is therefore possible that attenuated FAA in D1R KO mice, which did not express FAA even when aroused 2 hr prior to meal time (Figure 6), reflects impaired incentive motivation, due to a failure to attribute incentive salience to representations of circadian phase, due to degradation of the clock signals by striatal oscillator damping, or both.
+
+An unexpected finding was that while a palatable HFD did not improve FAA in CR D1R KO mice, the same diet provided once daily did induce a weak FAA equivalently in KO and WT mice with AL access to regular chow throughout the day. Furthermore, upon transfer to the CR schedule, the KO mice showed a transient FAA that dissipated over the course of the first week. These observations suggest that enhanced palatability can compensate for deficits in oscillator entrainment or incentive motivation, but that this effect is masked by CR. We speculate that the activity phenotype in D1R KO mice reflects an additional metabolic factor. Although D1R KO mice, like WT mice, exhibited hyperactivity during acute food deprivation they were significantly less active throughout the day and night during the chronic CR schedules. This was not due to metabolic collapse, given that during chronic restriction, D1R KO mice maintained nocturnal body temperatures relative to WT mice, which were hypothermic at night and early in the light period. These results suggest a different strategy used by WT and KO mice to maintain metabolic homeostasis during CR. The WT mice may conserve energy by reducing metabolism at night and expend energy by raising body temperature and locomotor activity in anticipation of a regular daily meal time. The KO mice, by contrast, switch from an initial hyperactivity to a long-term hypoactivity of sufficient magnitude to support a more normal body temperature despite restricted calorie intake. This strategy results in low levels of activity both at night and prior to meal time. Nonetheless, the reduction in FAA is significant even when normalized against total daily activity. Thus, the food anticipation phenotype in CR D1R KO mice may be explained by an alteration in the strategy to maintain metabolic homeostasis, which damps activity non-specifically throughout the 24-hr cycle and an impairment in circadian entrainment and/or incentive motivation processes that results in a disproportionate reduction of activity in anticipation of meal time.
+
+Another notable feature of the food entrainment phenotype in D1R KO mice is that despite the marked attenuation of FAA, the preprandial rise in body temperature is essentially normal (Figure 9). Feeding schedules entrain circadian oscillators in many body tissues and brain regions. There is at present no direct evidence for a master food-entrainable pacemaker analogous to the retinorecipient light-entrainable pacemaker in the SCN, which in mammals is indispensible for entrainment to light:dark cycles. Indeed hypophysectomy eliminates preprandial temperature increases but not FAA (Davidson and Stephan, 1999), a dissociation that we have also observed with mice showing temperature entrainment without FAA (Gallardo et al., 2012) and mice showing FAA without showing preprandial temperature increases (Luby et al., 2012). Food entrainment may involve multiple parallel entrainment pathways, acting on a fully distributed, non-hierarchical system of circadian oscillators in local circuits, each responsible for generating food-entrained rhythms in tissue specific functions. The differential effect of the D1R KO on behavior and body temperature is consistent with this model.
+
+Evidence that daily rhythms of food anticipatory activity may reflect entrainment of circadian oscillations in the dorsal striatum by daily reward schedules and D1R signaling suggest new insights into the processes that may induce and sustain daily repetitive or even addictive behaviors.
+
+## Materials and methods
+
+## Ethics statement
+
+These experiments were approved by the institutional animal care committees of California Institute of Technology (protocol number 1567); Keck Science Department of Claremont McKenna College, Pitzer College, Scripps Colleges; California State Polytechnic University, Pomona (13.029), University of Washington, Seattle; and Simon Fraser University.
+
+## Mouse strains and husbandry
+
+For experiments performed at Caltech (Figures 1, 2, Figure 2—figure supplements 1, 2, Figures 4–9, Figure 9—figure supplements 1, 2) mice were maintained on a 13:11 Light:Dark cycle and their behavior was measured by computer vision of video recordings (described below). For data collected at Simon Fraser University (Figure 3, Figure 3—figure supplement 1, Figure 11), FAA was measured using horizontal running discs and motion sensors and mice were maintained on 12:12 Light:Dark cycles. Experiments utilizing dopamine-deficient mice with viral restorations of TH were performed at the University of Washington (Figure 10) with behavioral measurements using computer vision in mice maintained on 12:12 Light:Dark cycles. Pharmacological studies of dopamine receptor 1 activation with SKF-81297 were performed at the Keck Science Department (Figure 12) and Cal Poly Pomona (Figure 12—figure supplement 1) in mice maintained on 12:12 Light:Dark cycles. The D1R KO mice used in this study (Drago et al., 1994) had been backcrossed on to C57BL/6J for at least eight generations. DNA was extracted from tail clips and the Drd1 locus was examined by genotyped using the following primers: neomycin CACTTGTGTAGCGCCAAGTGC, drd1 TCCTGATTAGCGTAGCATGGAC, d1 GGTGACGATCATAATGGCTACGGG.
+
+DA-deficient mice were bred and reared as described previously (Zhou and Palmiter, 1995). The DD mice were maintained by daily injections of l-DOPA until they were old enough to undergo surgery to re-establish TH expression in the dorsal striatum. Mice were maintained on l-DOPA for 2 weeks after surgery and then monitored closely when l-DOPA injections were terminated. Mice that were able to maintain at least 80% of body weight were considered ‘rescued’. As conducted previously (Darvas and Palmiter, 2011), TH immune-stained striatal sections from DD-VR mice were analyzed with MacBiophotonics ImageJ software to measure fluorescence intensities in the dorsal striatum, ventral striatum, and also in the anterior part of the anterior commissure (aca), a structure that is always devoid of TH staining. For each mouse, fluorescence intensity values were divided by the size of the analyzed area to generate normalized fluorescence values.
+
+D2R knockout mice on a C57BL/6J background were obtained from Jackson laboratory (stock # 003190). WT C57BL/6J mice (stock #000664) used for D1R pharmacology were purchased from Jackson labs.
+
+## Scheduled feeding and behavioral measurements
+
+Prior to being placed on special feeding protocols all mice were single-housed with AL access to food (Rodent Chow Type 5001; Lab Diet, St. Louis, MO) and water in standard microisolator cages. Daily food intake was measured over a 48-hr period beginning at least 3 days after single-housing. For all experiments, the mass of food provided to CR mice in any 24-hr period was equal to 60–70% of the average daily intake during AL food availability.
+
+For all experiments, during scheduled feeding, food was provided in a restricted amount or for a restricted duration in the latter half of the daily light period. In different experiments, meal onset began at ZT 6, 8, or 9 (i.e., 6, 4, or 3 hr prior to lights-off), but was consistent for all groups and individual mice within experiments. Previous studies have shown that the timing of meal onset in the light period makes little to no difference in the duration and magnitude of food anticipatory activity, therefore the different meal times used in these experiments do not affect interpretation of the results (Mistlberger, 1994; Mistlberger et al., 2012). In the CR experiments, the amount of food provided in any 24-hr period was equal to 60–70% of the average daily intake during AL food availability.
+
+D1R KO mice were fed their food allotment on the cage floor rather than in the wire food bin as we found that they were more likely to consume food when it was more readily accessible. For palatable meal feeding schedules, we used male mice only as female mice do not anticipate scheduled palatable meals robustly (Hsu et al., 2010b). HF group received a daily meal of 0.8 g of Bio-SERV (Flemington, NJ) high-fat diet, corresponding to ∼33% of total caloric intake.
+
+To assess activity, mice were video recorded for 23.5–24 hr. Dim red lighting was provided during the 11 hr dark cycle with red LED lights (LEDwholesalers.com, Hayward, CA) to allow acceptable contrast when recording during the night cycle. Video-based activity data were analyzed using HomeCageScan 3.0 (Clever Systems, Inc; Reston, VA); behavioral definitions were as described previously (Steele et al., 2007; Hsu et al., 2010a). High intensity activity was defined as walking, jumping, rearing, and hanging behaviors. Data were normalized by dividing the number of seconds per hour of a high activity behavior (e.g., hanging, jumping, rearing, and walking) by the total number of seconds engaged in that behavior across the ∼24 hr video recording. For Figure 3 only, data were collecting using running wheels and motion detectors as described previously (Smit et al., 2013). Behavioral data were exported from HomeCageScan 3.0 as excel files, which were analyzed using MATLAB programs to sum, average, and visualize data. Statistical tests were performed using GraphPad InStat, and graphs were produced using GraphPad Prism. For comparisons of behavioral data, we used non-parametric analysis: Mann–Whitney for comparisons of two groups and Kruskal–Wallis ANOVA for >2 groups. Sample sizes for each experiment are indicated in the figure legends.
+
+For mice in Figure 3 (Simon Fraser University), powdered food was provided. Following the baseline activity measurement period, food was presented at ZT 6 for 8 hr on the first RF day, with gradually decreasing windows of food access until stable weight was maintained on a 4-hr window of food access. Food under this RF procedure was 20% corn oil by weight mixed in with normal powdered chow. This medium high caloric formulation was chosen to help D1R KO mice maintain healthy weight under RF conditions. Data collection under these conditions continued for 30 days. FAA was defined as locomotor activity in the 4-hr window preceding onset of food availability. Both raw FAA counts and FAA ratios (the ratio of activity in the FAA window to total activity in the day) were analyzed. Average 24 hr waveforms were constructed for each RF condition for comparisons of activity profiles including onset times, peak FAA activity, and nocturnal activity profiles.
+
+## Body temperature experiments
+
+For testing whether external temperature would modulate FAA in D1R KO mice, we housed D1R KO and WT mice at 30° for 1 week before beginning a 60% CR feeding schedule. Activity was measured weekly during this experiment.
+
+For temperature monitoring experiments, mice were implanted with Mini-Mitters (Starr Life Science Corp., Oakmont, PA) subcutaneously. Mice were anesthetized using isoflurane gas. Post-operative monitoring and recovery time was provided for at least 7 days before putting mice on CR feeding schedules. Body temperature, but not activity levels, was measured in these mice.
+
+## Pharmacology experiment
+
+SKF-81297 and caffeine were purchased from Sigma (St. Louis, MO) (Figure 12) or Tocris (Bristol, United Kingdom) (Figure 12—figure supplement 1). Both were dissolved in water and filter sterilized prior to being injected i.p. daily for 12 days. Caffeine was injected at a dose of 15 mg/kg and SKF-81297 was injected at 5 mg/kg. Total injection volumes were approximately 250 µl per mouse. For the mice in Figure 12—figure supplement 1, we decreased the dose of SKF-81297 to 3 mg/kg due to seizures induced by the drug. c-Fos staining was done as described previously (Gallardo et al., 2014).
+
+## Quantitative reverse-transcriptase PCR
+
+Mice were sacrificed by sodium pentobarbital injection immediately prior to tissue collection at ZT 18, ZT 0, ZT 6, or ZT 12. Tissue was rapidly extracted, frozen on dry ice, and stored at −80°C until RNA extraction. Tissue samples were later mechanically homogenized and RNA was extracted using Trizol Reagent (Invitrogen) according to manufacturer's specifications. RNA concentrations were obtained using a Qubit 2.0 Fluorometer (Life Technologies, Carlsbad, CA) and concentrations were adjusted to 50 ng/µl. cDNA was synthesized from 500 ng RNA using High Capacity Reverse Transcription Kit (Life Technologies). Real-time PCR was performed using 2 µl cDNA with SYBR Green FastMix (Quanta Biosciences, Gaithersburg, MD) in a Step-One real time PCR system (Life Technologies). Gene expression was normalized to total RNA input. Primers used for PCR were as follows: Per2 forward: ACCTCCCTGCAGACAAGAA, Per2 reverse: CTCATTAGCCTTCACCTGCTT.

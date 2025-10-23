@@ -1,0 +1,37 @@
+# Peer review - Round 1
+
+Editors:
+- Wilfred van der Donk, University of Illinois-Urbana Champaign , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.02523.017](https://doi.org/10.7554/eLife.02523.017)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Pharmacological inhibition of cystine-glutamate exchange induces endoplasmic reticulum stress and ferroptosis” for consideration at eLife. Your article has been evaluated by a Senior editor, a Reviewing editor, and 2 reviewers. They found many of your findings to be novel and important, and recommended potential publication. However, to place your new findings in perspective with regard to prior studies, you are requested to address a number of questions.
+
+The study explores the action of erastin, a small molecule that causes ferroptotic cell death. The key findings include 1) RNA seq analysis following erastin treatment indicates upregulation of ER stress response genes like CHAC1, ATF4, and DDIT3 2) chemical optimization of the erastin structure results in more potent antiporter xc- inhibition, 3) data that suggest that the clinical agent sorafenib also inhibits xc- function, and 4) clinical database analysis that suggests that xc- inhibition may have a particular toxicological profile. The observation that erastin inhibits xc- was previously reported by the authors in Cell in 2012. Part of the current study corroborates this previous finding with additional data; while solid and valuable, this part of the study is more confirmatory and has less impact.
+
+The more novel aspects of the work are the identification of ER stress as a potential marker for ferroptosis, which is distinct from apoptosis and other more well characterized forms of cell death, and the possibility that sorafenib may also inhibit system x- and that this inhibition may be responsible for or contribute to observed adverse clinical effects. These more novel and higher impact aspects of the study are not investigated to the same depth, in part because the manuscript covers so many different aspects of erastin and sorafenib. As a result, the study raises a number of questions that should be addressed. In addition, the various parts of the manuscript are not as well connected as they could be (e.g., the discovery of the new erastin analogs with significantly higher potency in Figure 3 are not used in any subsequent experiments). The reviewers request you to address the questions listed below in your manuscript, either by new data or just by discussing them:
+
+1) The study would have higher impact if a deeper mechanistic connection between the induction of ER stress genes and other features of ER stress could be explored. The demonstrated upregulation of CHAC1 is a minimal step. The authors should provide additional data that ER stress is indeed induced in ferroptosis. For instance, a correlation between the described upregulation of ER stress markers, as observed in tumor cell lines in response to erastin/sorafenib treatment, and in vivo xenotransplantation tumor models that the authors reported in Yang 2014 would strengthen the conclusion that certain ER stress genes may serve as biomarkers for pharmacodynamic investigations.
+
+2) In Figure 4E, the authors should check for statistical significance of upregulation of CHAC1 by erastin vs. STS – if there is no difference then this read-out may not be a clear discriminator.
+
+3) With respect to sorafenib, the findings that a clinically used kinase inhibitor could function through xc- inhibition, either directly or indirectly, is critical since the clinical community may be alarmed by this report. However, the high concentrations used in this study, 10 and 20µM, may be beyond the blood concentrations reached in patients. The PK profile of sorafenib should be compared to the in vitro activity. Also, if sorafenib is significantly protein bound, the assays in Figure 5CDE should be repeated in the presence of normal human serum.
+
+4) Figures 5 and 6: Sorafenib treatment causes cell death that can be rescued by ß-ME, ferrostatin-1 and DFO, suggesting a similar mode of action as erastin. Although the authors show that glutamate secretion is inhibited by sorafenib, a direct measurement of cystine uptake, which in turn leads to glutathione depletion and lipid peroxidation, would strengthen their conclusion.
+
+5) The structure activity relationship of the sorafenib analogs is very useful for distinguishing the relevant target. However, the authors need to measure the kinase inhibitory activity of the molecules to see if one of the active analogs has actually lost kinase binding.
+
+6) Figure 8 provides a highly interesting peace of information that was, at present, left mostly unexplored. Erastin resistant cell lines were shown to strongly up-regulate the AKR1C enzyme family. This family of enzyme is known to be partially responsible for the detoxification of reactive aldehyde like 4-HNE. Therefore, a few questions arise: Are the resistant clones still able to undergo ferroptosis in response to different inducers? Does modulation of AKR1C expression by RNAi re-establish sensitivity to erastin?
+
+7) In previous work (Yagoda 2007), the authors showed that erastin bound to SLC7A5, a subunit of system L, and they mention in Dixon 2012 that treatment with erastin resulted in highly significant decreases in the levels of system L substrates. These findings appear to contrast to the observations in the current work that erastin is selective for system x- and did not affect system L. The authors should discuss these apparently contradictory results in the text.
+
+8) The authors made 19 analogs including several with significantly improved potency. They do not show the selectivity of these compounds for RAS mutant cells, which would be important for therapeutic use. A previous study from this group did report selectivity for a smaller set of analogs (Yang 2014). The selectivity should be investigated for the best analogs.
+
+9) A statistical analysis (Figure 7) reveals sorafenib to cause multiple side effects in patients that might be partially linked to System xc- inhibition beyond its well-documented kinase inhibitory effects. As these are mere statistical data, the statement that sorafenib indeed causes these side effects in patients partially due to system xc- inhibition is over-interpreted and should be de-emphasized. In that sense, the authors should consider that mice lacking system xc- are fully viable and only show subtle phenotypes (Sato et al., JBC 2005). Therefore, major adverse effects induced by system xc- inhibition in “normal” cells are less likely, which questions the validity of the statement on page 22, second paragraph, last sentence. Furthermore, the paper by De Bundel et al 2011 (referred to on page 27) describes that xCT knockout cells are in fact more resistant to against limbic seizures, and 6-OH dopamine lesioning in substantia nigra (Massie et al., FASEB 2011).

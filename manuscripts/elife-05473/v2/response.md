@@ -1,0 +1,23 @@
+# Author response - Round 1
+
+Authors:
+- Michael A Gaviño
+- Kevin J Ford
+- Santiago Archila
+- Graeme W Davis
+
+## Response text
+
+DOI: [10.7554/eLife.05473.011](https://doi.org/10.7554/eLife.05473.011)
+
+1) The authors report in Figure 7 that overexpressed Cac-GFP levels at individual active zones are reduced in vGlut-OE lines compared to WT. From this experiment, the authors propose that PHD expression occurs via reduction in the number of calcium channels at individual active zones. Can the authors also report the number of active zones (immunocytochemical counts of active zones numbers with an anti-BRP antibody) and Cac/GFP puncta)/bouton as well? From the representative images, the vGlut-OE lines appear to shown a reduced number of active zones per bouton, something that could affect the expression mechanisms of PHD. Excluding a possible reduction in the number of active zones per bouton could more strongly support the author's conclusion that expression of PHD is mediated by reduction in calcium channel number per active zone. Including quantification for synapse number (boutons and active zones) in vGlut-OE lines compared to WT would provide some insights into potential structural alterations in synapses that might accompany (and potentially modify) the types of plasticity observed.
+
+This is an excellent point. We have now quantified the number of active zones per bouton. There are no statistically significant changes in vGlut-OE animals compared to wild type controls. These values are provided in the text including samples sizes and the results of our statistical tests.
+
+2) One important question that these results do not address is the possible postsynaptic mechanisms that contribute to PHP and PHD. In the case of PHP, in particular, there must be some postsynaptic signal triggered by the blockade of glutamate receptors in the motor neuron. How does this postsynaptic signal cause the presynaptic changes that lead to increased presynaptic release in the case of PHP? Moreover, it is possible, indeed likely, that there is a postsynaptic mechanism that senses the increase in mini amplitude produced by overexpression of presynaptic vGlut2; this postsynaptic sensor might produce a retrograde signal that causes the decrease in the number of CaV2.1 channels in the presynaptic terminals observed in the present study. There is ample evidence for regulation of presynaptic mechanisms of plasticity by retrograde signaling at other synapses, e.g., the Aplysia sensory-motor synapse. It is disappointing that the authors do not discuss potential postsynaptic contributions to PHP and PHD in their paper. To my mind, this leaves a large conceptual gap in their scheme of how these two forms of homeostatic plasticity are independently regulated at NMJs.
+
+This is an interesting point and one that we are more than happy to discuss, as we have been trying to identify the molecular nature of retrograde signaling systems at our system for many years. We have added a new paragraph to the Discussion section of our text. In this paragraph we cite the potential requirement for retrograde signaling systems and we cite the outstanding work that has been performed previously at mammalian synapses with the discovery of retrograde endocanabinoid signaling as well as work performed at the Aplysia sensory-motor synapse. Truly, this is the subject for a more extensive review. But, we hope that by raising this issue we have adequately addressed this reviewer’s concern.
+
+3) The authors provide experiments in Figure 3 suggesting that distinct mechanisms mediate PHD and PHP. The experiments indicate PHD is maintained in 3 genetic or pharmacological manipulations that have been previously shown to block PHP. The conclusions could be strengthened if the authors performed experiments demonstrating that PHP was indeed blocked in at least one of these preparations. For example, is PTHX induced PHP blocked in rim103 + vGlut-OE animals that express PHD as predicted? Inclusion of this control, while not absolutely necessary would more strongly support the authors' conclusion that PHD and PHP occur via experimentally separable mechanisms.
+
+We now provide a control in which we demonstrate that application of the ENaC inhibitor Benzamil blocks PhTx-driven homeostatic potentiation in the vGlut-OE background. We chose this experiment as it also supports our experimental model for the integration of PHP and PHD, which proposes that new ENaC channels will still be sufficient to potentiate calcium influx even though calcium channel number is diminished in the vGlut-OE background.

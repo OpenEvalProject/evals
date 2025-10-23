@@ -1,0 +1,27 @@
+# Taar1 gene variants have a causal role in methamphetamine intake and response and interact with Oprm1
+
+## Authors
+
+- Alexandra M Stafford<sup>1</sup> ([ORCID: 0000-0003-4045-1888](https://orcid.org/0000-0003-4045-1888))
+- Cheryl Reed<sup>1</sup>
+- Harue Baba<sup>1</sup>
+- Nicole AR Walter<sup>2</sup>
+- John RK Mootz<sup>1</sup>
+- Robert W Williams<sup>3</sup>
+- Kim A Neve<sup>1</sup> ([ORCID: 0000-0003-0109-7345](https://orcid.org/0000-0003-0109-7345))
+- Lev M Fedorov<sup>4</sup>
+- Aaron J Janowsky<sup>1</sup>
+- Tamara J Phillips<sup>1</sup> ([ORCID: 0000-0002-7350-6323](https://orcid.org/0000-0002-7350-6323)) †
+
+### Affiliations
+
+1. Department of Behavioral Neuroscience Oregon Health and Science University Portland United States
+2. Division of Neuroscience Oregon National Primate Research Center Portland United States
+3. Department of Genetics, Genomics and Informatics University of Tennessee Health Sciences Center Memphis United States
+4. Transgenic Mouse Models Shared Resource, Knight Cancer Institute Oregon Health and Science University Portland United States
+
+† Corresponding author
+
+## Abstract
+
+We identified a locus on mouse chromosome 10 that accounts for 60% of the genetic variance in methamphetamine intake in mice selectively bred for high versus low methamphetamine consumption. We nominated the trace amine-associated receptor 1 gene, Taar1 , as the strongest candidate and identified regulation of the mu-opioid receptor 1 gene, Oprm1 , as another contributor. This study exploited CRISPR-Cas9 to test the causal role of Taar1 in methamphetamine intake and a genetically-associated thermal response to methamphetamine. The methamphetamine-related traits were rescued, converting them to levels found in methamphetamine-avoiding animals. We used a family of recombinant inbred mouse strains for interval mapping and to examine independent and epistatic effects of Taar1 and Oprm1 . Both methamphetamine intake and the thermal response mapped to Taar1 and the independent effect of Taar1 was dependent on genotype at Oprm1 . Our findings encourage investigation of the contribution of Taar1 and Oprm1 variants to human methamphetamine addiction.

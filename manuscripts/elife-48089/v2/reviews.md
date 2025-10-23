@@ -1,0 +1,31 @@
+# Peer review - Round 1
+
+Editors:
+- Anne E West, Duke University School of Medicine United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.48089.027](https://doi.org/10.7554/eLife.48089.027)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "PESCA: A scalable platform for the development of cell-type-specific viral drivers" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Catherine Dulac as the Senior Editor. The reviewers have opted to remain anonymous.
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+This manuscript presents a method to screen sequences for the ability to drive cell type-specific gene expression in the brain. The authors cleverly bring together three recent genomic technologies (cell type-specific ATAC-Seq, single nucleus RNA-Seq, massively parallel reporter assays) to screen for regulatory elements that can drive cell type-specific gene expression. Improved tools to mark specific cell types across mammalian model organisms have the potential to accelerate research by reducing reliance on transgenic mouse models. The technique presented in this manuscript is a substantial improvement over previous methods, which rely upon laboriously screening individual candidates. The proof of principle, a set of gene regulatory sequences which can drive expression in SST neurons, is itself a useful tool that is likely to be used by a number of neuroscience research groups.
+
+Essential revisions:
+
+1) Specificity of the approach: 27% of neurons expressing GFP with the δ-GRE vector are positive for Td-Tomato in the reporter mice, which is much higher than the% of SST neurons in V1. These data suggest the base vector may have some preference for SST neurons on its own. To justify the method as a general strategy to target multiple cell types, the authors should show whether the same base vector can be used in combination with enhancers from other cell types to drive GFP expression in those cells. Another alternative would be to find another base vector that does not have the SST preference without a GRE added and then show that these GREs still restrict expression to SST cells. Finally if the GREs need to work in combination with regulatory elements from the specific vector used here to direct expression to SST cells the results would still be useful, but the readers would need to know this, as it would suggest that the strategy might not work for other cell types with this vector.
+
+2) Sensitivity of the approach: The reviewers raised question about whether the method works "somewhat well", "very well" or is a "broadly useful and scalable platform". To address these questions, more detail is needed about the level of replication across the injected animals – are the data from each animal very similar or very different? Knowing this will be useful for anyone hoping to use this technique. It would be further helpful if the authors could conduct some analysis to determine the viral concentration required to identify a positive vector in the screen. The ideal experiment (spiking in positive control vectors a different concentrations) might take too much time, but reanalysis of their data could be quite valuable (like showing the concentration of all vectors that were positive vs. negative, or where there was disagreement in the three barcodes did it correspond to the library concentration?). Finally, the authors should discuss in more detail, what are the limitations of the current method and how might it be improved? It seems from the text as if the particular single nuclear sequencing method was one weak point due to the very low sensitivity of the method. Could the authors have done as well or better (and proceeded faster) using a more robust sequencing method with pooled nuclei and then screening more candidates? Especially because this is an article for the tools and resources section, a critical and forward-looking Discussion section would make the paper highly valuable to the readership.
+
+3) Subpopulations of SST cells: The reviewers all felt that more data was needed for the authors to conclude that they have labeled a specific subpopulation of SST cells. One possibility is that the virally infected and SST reporter neurons are different from one another because of viral infection. The authors could rule out this possibility experimentally, for example using a low titer non cell-type specific AAV to infect the cortex of SST reporter mice and then compare virally infected to uninfected neurons in the same layers recorded here. Another possibility is that the authors could do more detailed molecular characterization to establish what cell types are being labeled by their vector (snRNA-seq or other method). Through scRNA-seq (Tasic et al.), many of the SST subtypes are now known at high resolution. The authors could use other information (e.g. morphology, marker expression) that is already known about subtypes of SST neurons in addition to layer information to further support their argument that this is a specific subtype of SST cells. Finally we discussed the possibility that the authors could simply drop the claim that this is a subset of SST cells if it cannot be further supported. We do not favor this option as we think the readership of eLife will be very interested in new data supporting the existence of subtypes and the utility of these enhancers to target them. However if the authors are unable to provide further data to support the claim, simply removing it from the manuscript would not undermine the publishability of the study.
+
+4) The sequences of the GREs discovered and tested should be reported in the supplementary material of the revised manuscript prior to publication.

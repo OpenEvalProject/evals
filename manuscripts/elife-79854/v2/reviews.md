@@ -1,0 +1,80 @@
+# Peer review - Round 1
+
+Editors:
+- Lucy J Colwell, https://ror.org/013meh722 Cambridge University United Kingdom
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.79854.sa0](https://doi.org/10.7554/eLife.79854.sa0)
+
+This important study proposes a method to sample novel sequences from a protein language model that could have exciting applications in protein sequence design. The claims are supported by a solid benchmarking of the designed sequences in terms of quality, novelty and diversity.
+
+
+---
+
+# Peer review - Round 1
+
+Editors:
+- Lucy J Colwell, https://ror.org/013meh722 Cambridge University United Kingdom
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.79854.sa1](https://doi.org/10.7554/eLife.79854.sa1)
+
+Our editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Generative power of a protein language model trained on multiple sequence alignments" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Lucy Colwell as Reviewing Editor and José Faraldo-Gómez as Senior Editor. All reviewers have opted to remain anonymous.
+
+The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.
+
+Essential revisions:
+
+(1) Please address the technical points raised by each referee below, paying particular attention to those around the generalizability of hyperparameter choices, the training of bmDCA, and the comparison between bmDCA and the MSA transformer and the sampling temperatures used, and the evaluation of sample diversity.
+
+(2) Both reviewers note the lack of experimental validation. Adding some level of experimental validation of the proposed method would significantly improve the manuscript. If this is not possible, an alternative option might be to build a retrospective model evaluation using previously published protein design experimental datasets.
+
+Reviewer #1 (Recommendations for the authors):
+
+Sampling hyperparameters:
+
+Figures S1/2 convincingly motivate the choice of parameters for one protein family, but it is unclear whether these would generalize well for other proteins. In particular, it is unclear whether the number of iterations should be the same across protein sizes.
+
+bmDCA training:
+
+In figure 3 middle left panel (comparing MSA covariance versus bmDCA-generated covariance) shows a fairly small regression line slope (0.67). This suggests too large a regularization on couplings and/or an insufficient number of iterations. Have you checked that the algorithm successfully converged, or was the maximum number of iterations reached? What about using a smaller regularization strength (two values were used in Russ et al. Science 2020, one small and one large)? I know that parameter tuning is a weakness of bmDCA, but the proposed method also has free parameters and it is not clear whether they are universal for all protein lengths. This could also explain the discrepancy in the topology of the sequence distribution shown in Figure 5 (weak couplings cannot create "ferromagnetic" multimodal distributions).
+
+Evaluation of sequence quality:
+
+I feel that the comparison of Figure 1 is a bit unfair. On the one hand, the proposed MSA-Transformer sampling method generates samples from the T=0 conditional distribution (according to step 3, the bottom of p9), whereas the bmDCA generates samples from the T=1 distribution. It is known that samples from the T=1 distribution have worse statistical energy scores than natural sequences due to the regularization of fields/couplings and that this must be adequately compensated by low-temperature sampling (Russ et al. Science 2020). The authors argue p13 that low-temperature sampling results in distortion of the first and second-order moments of the data, but I think this is not a practical problem for protein design (by definition, an optimal design protocol will discard all suboptimal amino acids for a given position and only retain the most favorable ones).
+
+The comparison of AlphaFold confidence scores between MSAtransformer-generated and natural sequences is interesting but the results are not discussed at all in the main text. Is there a statistically significant difference between the distributions? Moreover, it is not shown here whether the predicted structures are similar to the native ones. Please provide a fold similarity metric such as backbone RMSD values.
+
+Evaluation of sample diversity:
+
+The authors convincingly show that sequences generated by MSAtransformer differ substantially from natural sequences. However, given that the MSA-Transformer samples are essentially obtained by zero-temperature dynamics, it is important to assess how diverse are the generated sequences. This is partially addressed in Figure S5, but consider using simpler metrics. Can the authors provide basic estimates of sample diversity? (e.g., effective number of sequences as a function of the number of samples).
+
+Reviewer #2 (Recommendations for the authors):
+
+I have a series of questions that if resolved could help, in my opinion, to create an improved version of this interesting study.
+
+1. The manuscript describes how MSA Transformers could lead to metrics that are "even better" than the natural sequences. I feel that this statement is a bit misleading as the natural sequences are a baseline to compare. There are no better properties than those of the natural sequences because that is what we observe in nature. I would suggest removing those statements as they might produce confusion. On the other hand, if the authors would provide examples of sequences that are "better" in terms of function, stability, or any other quantifiable metric, then I would agree that these statements would make more sense.
+
+2. The authors mention methods that can be trained in an unsupervised way to predict structure based on a single sequence. I wonder if this statement can be clarified, as it is obvious that those methods use several sequences as training. Are these methodologies based on physical principles instead of learning from sequences?
+
+3. It is not clear to me what is the importance of the correlation between HMMER and Hamming distance, the authors should provide more intuition on why this is a relevant metric. Since those correlations are quite low for both models I am not sure if it contributes to the analysis in a meaningful way.
+
+4. Are the contact maps created from the generated MSA of Transformer better than those of bmDCA? My understanding is that the value of p=0.1 optimizes contact map accuracy, but how are those compared against DCA maps?
+
+5. Haldane et al. (https://doi.org/10.1016/j.bpj.2017.10.028) has proposed how pairwise statistics seem to be enough to recapitulate higher order mutational patterns in natural sequences. Could the authors comment on this, and mention if there is a substantial advantage in capturing 3-body statistics in the process of protein design or generative modeling?
+
+6. It would be interesting to see how Alphafold would perform if some of these generated MSAs are used as input. I don't think it is needed to test it with all the families, but it would be an interesting experiment for a single family.
+
+7. The families used in this study appear to have enough statistics to perform well, this is reasonable, however, for the sake of comparison, it would be interesting to see how the MSA Transformer would compare against bmDCA for a family with just a few sequence members. Are the trends the same? Or do we see a change in performance between the two generative methodologies?

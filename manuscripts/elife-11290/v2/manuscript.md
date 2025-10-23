@@ -1,0 +1,18 @@
+# Optimal level activity of matrix metalloproteinases is critical for adult visual plasticity in the healthy and stroke-affected brain
+
+## Authors
+
+- Justyna Pielecka-Fortuna †
+- Evgenia Kalogeraki
+- Michal G Fortuna
+- Siegrid Löwel
+
+### Affiliations
+
+1. Department of Systems Neuroscience, Bernstein Focus Neurotechnology, Johann-Friedrich-Blumenbach Institute for Zoology and Anthropology University of Göttingen Göttingen Germany
+
+† Corresponding author
+
+## Abstract
+
+The ability of the adult brain to undergo plastic changes is of particular interest in medicine, especially regarding recovery from injuries or improving learning and cognition. Matrix metalloproteinases (MMPs) have been associated with juvenile experience-dependent primary visual cortex (V1) plasticity, yet little is known about their role in this process in the adult V1. Activation of MMPs is a crucial step facilitating structural changes in a healthy brain; however, upon brain injury, upregulated MMPs promote the spread of a lesion and impair recovery. To clarify these seemingly opposing outcomes of MMPs-activation, we examined the effects of MMPs-inhibition on experience-induced plasticity in healthy and stoke-affected adult mice. In healthy animals, 7-day application of MMPs-inhibitor prevented visual plasticity. Additionally, treatment with MMPs-inhibitor once but not twice following stroke rescued plasticity, normally lost under these conditions. Our data imply that a fine balance of MMPs-activity is crucial for adult visual plasticity to occur.

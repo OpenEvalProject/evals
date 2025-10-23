@@ -1,0 +1,200 @@
+# A host basal transcription factor is a key component for infection of rice by TALE-carrying bacteria
+
+## Authors
+
+- Meng Yuan<sup>1</sup> †
+- Yinggen Ke<sup>1</sup>
+- Renyan Huang<sup>1</sup>
+- Ling Ma<sup>1</sup>
+- Zeyu Yang<sup>1</sup>
+- Zhaohui Chu<sup>2</sup> ([ORCID: 0000-0001-8320-7872](https://orcid.org/0000-0001-8320-7872))
+- Jinghua Xiao<sup>1</sup>
+- Xianghua Li<sup>1</sup>
+- Shiping Wang<sup>1</sup> ([ORCID: 0000-0002-8743-3129](https://orcid.org/0000-0002-8743-3129)) †
+
+### Affiliations
+
+1. National Key Laboratory of Crop Genetic Improvement National Center of Plant Gene Research (Wuhan), Huazhong Agricultural University Wuhan China
+2. State Key Laboratory of Crop Biology Shandong Provincial Key Laboratory of Agricultural Microbiology, Shandong Agricultural University Taian China
+
+† Corresponding author
+
+## Abstract
+
+10.7554/eLife.19605.001 Transcription activator-like effectors (TALEs) are sequence-specific DNA binding proteins found in a range of plant pathogenic bacteria, where they play important roles in host-pathogen interactions. However, it has been unclear how TALEs, after they have been injected into the host cells, activate transcription of host genes required for infection success. Here, we show that the basal transcription factor IIA gamma subunit TFIIAγ5 from rice is a key component for infection by the TALE-carrying bacterium Xanthomonas oryzae pv. oryzae , the causal agent for bacterial blight. Direct interaction of several TALEs with TFIIAγ5 is required for activation of disease susceptibility genes. Conversely, reduced expression of the TFIIAγ5 host gene limits the induction of susceptibility genes and thus decreases bacterial blight symptoms. Suppression or mutation of TFIIAγ5 can also reduce bacterial streak, another devastating disease of rice caused by TALE-carrying X. oryzae pv. oryzicola . These results have important implications for formulating a widely applicable strategy with which to improve resistance of plants to TALE-carrying pathogens. DOI: http://dx.doi.org/10.7554/eLife.19605.001
+
+## Introduction
+
+Transcription activator-like effectors (TALEs) are important effectors of plant pathogenic bacteria of the genus Xanthomonas (Boch et al., 2009). The bacteria inject TALEs via their Type III secretion system (T3SS) into host cells, where they translocate to the nucleus and bind host gene promoters in a sequence-specific manner. The DNA binding domain consists of variable repeats that together account for a predictable DNA recognition code (Boch et al., 2009; Moscou and Bogdanove, 2009). This property has been exploited for programmable DNA binding, and has allowed targeted genome editing by combining TALE DNA binding domains with nucleases (TALENs) (Maggio and Gonçalves, 2015). TALE-like proteins are not restricted to the genus Xanthomonas, and have also been found in the plant pathogen Ralstonia solanacearum (de Lange et al., 2014), and in the endosymbiont Burkholderia rhizoxinica (de Lange et al., 2014; Juillerat et al., 2014). TALE-like proteins thus may play not only antagonistic roles in host-microbe interactions.
+
+Xanthomonas infect many important crops including barley, bean, brassica, cassava, citrus, cotton, mango, pepper, rice, rye, tomato, triticale, and wheat (Schornack et al., 2013; Boch et al., 2014). In rice, Xanthomonas oryzae pv. oryzae (Xoo) causes bacterial blight and X. oryzae pv. oryzicola (Xoc) causes bacterial streak, both of which are highly devastating diseases. The recessive resistance gene xa5 is widely used to improve rice resistance to Xoo (Kottapalli et al., 2007). xa5 is a natural allele of the gene for the transcription factor IIA gamma subunit 5 (TFIIAγ5), changing a valine to a glutamine (TFIIAγ5V39E thereafter) (Iyer and McCouch, 2004; Sugio et al., 2007). TFIIA is a basal transcription factor of eukaryotes and it is essential for polymerase II–dependent transcription (Høiby et al., 2007). It consists of two subunits, the large subunit TFIIAαβ and the small subunit TFIIAγ (Li et al., 1999).
+
+Rice TFIIAγ5 has been suggested to be a cofactor that directly enables TALEs to induce host gene expression (Iyer-Pascuzzi and McCouch, 2007), either as a helper of TALE function (Boch et al., 2014), or as a TALE-targeted host gene (Gu et al., 2009). The latter scenario is supported by the finding that the TALE PthXo7 directly activates expression of another TFIIAγ encoding gene, TFIIAγ1 (Sugio et al., 2007).
+
+In this paper, we reveal that TALEs from two Xanthomonas pathogens, Xoo and Xoc directly interact with TFIIAγ5 to activate host susceptibility genes, and that RNAi-mediated suppression or mutation of TFIIAγ5 confers disease resistance. Our results suggest that modifying host TFIIAγ genes by mutation or suppression may provide a widely applicable strategy to improve plant resistance to TALE-carrying pathogens.
+
+## Results
+
+## TFIIAγ5 is required for TALE-dependent induction of host genes
+
+To assess whether host TFIIAγ is required for TALE-regulated transcriptional activation of rice susceptibility genes, we first assessed how pair of rice near-isogenic lines, IR24 carrying
+
+![Figure 1.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig1-v2.jpg)
+
+**Figure 1.:** TFIIAγ5 on the expression of disease susceptibility genes Os8N3, Os11N3, TFIIAγ1, or OsTFX1, after Xoo infection.Plants were inoculated with Xoo strain PXO99 (harbouring TALEs PthXo1, PthXo7, and PthXo6), PXO86 (harbouring TALE PthXo3) or PXO61 (harbouring TALE AvrXa7) at the booting (panicle development) stage. It is known that PthXo1, PthXo7, and PthXo6 induce Os8N3, TFIIAγ1, and OsTFX1, respectively, and PthXo3 and AvrXa7 all induce Os11N3. Each bar represents mean (three replicates) ± standard deviation. (A) Mutation of TFIIAγ5 (rice line IRBB5). b, significant difference between IR24 and IRBB5 at p<0.01. (B) TFIIAγ5-RNAi lines. b, significant difference between wild-type (WT) and transgenic plants at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.003
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** TFIIAγ5 on rice resistance to Xoo strains known to carry TALEs.Rice plants at the booting (panicle development) stage were inoculated with Xoo. (A) The near-isogenic lines IR24 and IRBB5 showed different responses to the infection of Xoo. IRBB5 in IR24 background carries a natural mutated TFIIAγ5, TFIIAγ5V39E. Each bar represents mean (total 17 to 29 leaves from 5 plants) ± standard deviation. b, significant difference between IR24 and IRBB5 at p<0.01. (B) The enhanced resistance of TFIIAγ5-RNAi plants to strain PXO99 was associated with reduced transcription of TFIIAγ5 but not TFIIAγ1. WT, wild-type Zhonghua 11. Each bar represents mean (3 replicates for gene expression and total 5 to 10 leaves from one plant for lesion length) ± standard deviation. b, significant difference between wild-type (WT) and transgenic plants at p<0.01. (C) The enhanced resistance of TFIIAγ5-RNAi plants co-segregated with reduced TFIIAγ5 transcription in T1 families. Each bar represents mean (3 replicates for gene expression and 5 to 10 leaves from one plant for lesion length) ± standard deviation. b, significant difference between WT and transgenic plants at p<0.01. (D) TFIIAγ5-RNAi plants showed enhanced resistance to all the Xoo strains. Each bar represents mean (total 35 to 40 leaves from 5 plants) ± standard deviation. b, significant difference between WT and transgenic plants at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.004
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** TFIIAγ5 on Xa23-mediated resistance to Xoo strain PXO99.Each bar represents mean (total 40 to 45 leaves from 5 plants for lesion length and 3 replicates for gene expression) ± standard deviation. (A) Xa23 Xa23- mediated resistance required the presence of TFIIAγ5/TFIIAγ5 or TFIIAγ5/TFIIAγ5 Rice plants at the booting stage were inoculated with V39E.Xoo. b, significant difference between IR24 and other plants at p<0.01. (B) PXO99 infection-induced Xa23 expression required the presence of TFIIAγ5/TFIIA5 or TFIIAγ5/TFIIA5. b, significant difference between non-inoculated plants (ck) and PXO99-inoculated plants within each rice line at V39Ep<0.01. 1d and 2d, 1 day or 2 days after inoculation of PXO99.DOI: http://dx.doi.org/10.7554/eLife.19605.005
+
+To determine directly the role of TFIIAγ5 in host gene expression, we suppressed its activity by RNA interference (RNAi). Only the expression of TFIIAγ5, but not of TFIIAγ1 was reduced in T0 transgenic plants, and the reduction in TFIIAγ5 expression correlated with enhanced resistance to Xoo PXO99 in T0 and T1 plants (Figure 1—figure supplement 1B,C). TFIIAγ5-RNAi plants also had enhanced resistance to a diverse collection of 13 additional Xoo strains (Figure 1—figure supplement 1D), and Xoo-induced expression of Os8N3 and OsTFX1 was reduced in TFIIAγ5-RNAi plants (Figure 1B). Suppressing TFIIAγ5 did not obviously influence growth and development of the transgenic plants.
+
+TALE DNA-binding motifs have been detected in the promoters of some disease resistance genes, an apparent evolutionary response against TALE-carrying bacteria (Gu et al., 2005; Römer et al., 2010; Wang et al., 2015). Xoo TALE AvrXa23 activates the Xa23 resistance gene, resulting in resistance to Xoo (Wang et al., 2015). To investigate the role of TFIIAγ5 in Xa23 resistance, we crossed rice lines IRBB5, with a xa23 susceptibility and a TFIIAγ5V39E resistance allele, and CBB23, with a Xa23 resistance and a TFIIAγ5 susceptibility allele. F2 plants of genotypes Xa23/Xa23 or Xa23/xa23 were completely resistant to PXO99 in the TFIIAγ5/TFIIAγ5 or TFIIAγ5/TFIIAγ5V39E background, but showed the reduced resistance in the TFIIAγ5V39E/TFIIAγ5V39E background (Figure 1—figure supplement 2A). Consistent with the resistance phenotype, Xa23 expression was rapidly induced by PXO99 in Xa23/Xa23 or Xa23/xa23 plants when they also were of genotype TFIIAγ5/TFIIAγ5 or TFIIAγ5/TFIIAγ5V39E (Figure 1—figure supplement 2B). Xa23 induction was completely lost in TFIIAγ5V39E/TFIIAγ5V39E plants. These results suggest that TFIIAγ5 plays dual roles in Xoo−rice interactions: it is required by TALE-containing Xoo to cause disease, but at the same time it can help to protect against disease in the presence of certain resistance genes that have TALE-binding motifs in their promoters.
+
+## Xoo TALEs directly interact with TFIIAγ5
+
+Xoo TALEs typically have an amino-terminal translocation signal (TS), a central repeat region (RR), a transcription factor binding (TFB) region, a nuclear localization signal (NLS), and a carboxyl-terminal transcription activation domain (AD) (Figure 2—figure supplement 1, Figure 2—source data 1) (Yang et al., 2006; Schreiber et al., 2015). When fused to the GAL4 DNA binding domain, Xoo TALE PthXo1 on its own could activate reporter gene expression in yeast. This was observed whenever the TS or AD were present, but not with the RR, TFB or NLS (Figure 2—figure supplement 1A). This is similar to what has been reported for Xoo TALE AvrXa10 and X. euvesicatoria TALE AvrBs3 (Szurek et al., 2001; Zhu et al., 1998).
+
+We hypothesized that TALEs use TFIIAγ5 directly as a co-factor to induce transcription of susceptibility genes. In yeast two-hybrid (Y2H) assays, truncated PthXo1, RR-TFB-NLS, lacking transcriptional activation ability, interacted strongly with TFIIAγ5, somewhat less so with the mutant TFIIAγ5V39E, and not at all with the large subunit of TFIIA, TFIIAαβ (Figure 2—figure supplement 1B,C). The interaction with TFIIAγ5 required the TFB (Figure 2—figure supplement 1D).
+
+To determine whether this observation of interaction of a TALE TFB with TFIIAγ5, was general, we isolated the TFB encoding DNA fragments from 14 of the 18 other TALE genes in Xoo pv. PXO99 (Salzberg et al., 2008). These TFBs are 134 to 145 amino acids long, with the Tal7b and Tal8b TFBs predicted to be identical (Figure 2—source data 2). All 14 TFB fragments interacted with TFIIAγ5, but only two (Tal7a and Tal8a) with TFIIAγ5V39E (Figure 2—figure supplement 1E,F). Notably, different from PthXo1, Tal7a and Tal8a interacted equally well with TFIIAγ5 and TFIIAγ5V39E. The TFBs of Tal7a, Tal8a, and PthXo1 differed by 1 to 20 residues from the other 12 TFBs that interacted only with TFIIAγ5 (Figure 2—source data 2).
+
+We confirmed the interactions observed in the Y2H system by transient expression of Myc- and FLAG-labeled proteins in
+
+![Figure 2.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig2-v2.jpg)
+
+**Figure 2.:** Xoo in planta by co-immunoprecipitation.The protein–protein interaction assays were performed in N. benthamiana leaf cells. Proteins before (input) and after immunoprecipitation (IP) were detected with anti-myc and anti-FLAG antibodies. (A) Interaction of the myc-labelled full-length PthXo1 with FLAG-labelled TFIIAγ5, TFIIAγ5V39E, and mutated rice TFIIAγ1 (TFIIAγ1S47E). (B) Interactions of the myc-labelled TFB regions of six TALEs with FLAG-labelled rice TFIIAγs.DOI: http://dx.doi.org/10.7554/eLife.19605.00610.7554/eLife.19605.007Figure 2—source data 1.Xoo strain PXO99.DOI: http://dx.doi.org/10.7554/eLife.19605.00710.7554/eLife.19605.008Figure 2—source data 2.Xanthomonas oryzae strains, composed of either 134 or 145 amino acids.DOI: http://dx.doi.org/10.7554/eLife.19605.008
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Xoo TALEs and plant TFIIAγs in yeast cells.The interactions were assessed by growth of yeast cells on synthetic defined premixes (SD) medium lacking (-) leucine (L), tryptophan (W), histidine (H), and adenine (A). V, empty vector as control. TS, translocation signal; RR, repeat region; TFB, transcription factor binding region; NLS, nuclear localization signal; AD, transcription activation domain. (A) Examination of transactivation activity of different domains and motifs of TALE PthXo1. The full-length and truncated PthXo1 were separately fused to the DNA-binding domain of GAL4, which is a yeast transcription factor, and transformed into yeast. (B) Truncated PthXo1 (RR-TFB-NLS) interacted with rice TFIIAγ5 and TFIIAγ5V39E (mutated TFIIAγ5) and Arabidopsis AtTFIIAγ analysed by yeast two-hybrid (Y2H) assay. (C) Truncated PthXo1 did not interact with rice basal transcription factor TFIIAαβ analysed by Y2H assay. (D) The TFB region of PthXo1 was required for the interaction with TFIIAγ5 analysed by Y2H assay. (E) The TFB regions of TALEs differentially interacted with rice TFIIAγs. The TFB regions of all the 15 TALEs from Xoo strain PXO99 interacted with rice TFIIAγ5, and the TFB regions of some of the 15 TALEs interacted with the mutated TFIIAγs from rice (TFIIAγ5V39E and TFIIAγ1S47E) analysed by Y2H assay. The Tal6b is a putative non-functional TALE. (F) The TFB regions of TALEs interacted with rice TFIIAγs with different strength based on the analysis of LacZ activity. DOI: http://dx.doi.org/10.7554/eLife.19605.009
+
+## TALE-dependent induction of host genes requires interaction with TFIIAγ5 but not TFIIAγ1
+
+To learn whether the TFB region of TALEs is directly responsible for TALE-induced host gene expression, we generated recombinant
+
+![Figure 3.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig3-v2.jpg)
+
+**Figure 3.:** Xoo strains and on the expression of rice susceptibility gene in rice−Xoo interaction.Each bar represents mean (total 30 to 35 leaves from five plants for lesion length; three replicates for gene expression and bacterial growth rate) ± standard deviation. (A) Virulence of wild-type strain T7174 and recombinant strains carrying PthXo1 and its derivatives in IR24 and IRBB5. b, significant difference between T7174 and recombinant strains in each rice line at p<0.01. (B) Growth of different Xoo strains in rice leaves. b, significant difference between 0 day (30 min after infection) and 12 days after infection of each strain at p<0.01. (C) Expression of susceptibility gene Os8N3 after infection of different strains. b, significant difference between non-inoculated (ck) and inoculated (at 48 hr after infection of a strain) plants in each rice line at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.01010.7554/eLife.19605.011Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.19605.011
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Xoo strains and on the expression of rice susceptibility gene in rice−Xoo interaction. Each bar represents mean (total 30 to 35 leaves from five plants for lesion length; three replicates for gene expression and bacterial growth rate) ± standard deviation. (A) Virulence of wild-type strain KACC10331 and recombinant strains carrying PthXo1 and its derivatives in near-isogenic lines IR24 and IRBB5. b, significant difference between T7174 and recombinant strains in each rice line at p<0.01. (B) Growth of different strains in rice leaves. b, significant difference between 0 day (30 minutes after infection) and 12 days after infection of each strain at p<0.01. (C) Expression of susceptibility gene Os8N3 after infection of different strains. b, significant difference between non-inoculated (ck) and inoculated (at 48 hr after infection of a strain) plants in each rice line at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.012
+
+As expected, the deletion control PthXo1-ΔTFB did not change the success of infection by T7174 or KACC10331 (Figure 3A, and Figure 3—figure supplement 1A), while the TFBs from PthXo1 and Tal7a, which can interact with both TFIIAγ5 and TFIIAγ5V39E, enhanced infection success in both hosts, IR24 (TFIIAγ5) and IRBB5 (TFIIAγ5V39E). Consistent with Tal7a, but not PthXo1, interacting equally well with TFIIAγ5 and TFIIAγ5V39E, only the Tal7a TFB caused similar sized lesions in both IR24 and IRBB5 (Figure 3A, and Figure 3—figure supplement 1A). The TFBs of PthXo7 and AvrXa23, which can interact only with TFIIAγ5, accordingly increased disease symptoms only on IR24. Lesion size in these experiments was correlated with titer of bacterial growth (Figure 3B, and Figure 3—figure supplement 1B) and expression of Os8N3 (Figure 3C, and Figure 3—figure supplement 1C).
+
+The TFB region of the TALEs harbours an imperfect leucine zipper motif, a known protein-protein interaction domain (Schreiber et al., 2015). We generated three TFB mutants of PthXo1, substituting leucine with alanine residues (Figure 3—source data 1A). The muations did, however, not compromise interaction with TFIIAγ5, nor infection success (Figure 3—source data 1B,C).
+
+The other TFIIAγ encoded in the rice genome, TFIIAγ1, shares 86% sequence identity with TFIIAγ5 (Figure 4—source data 1), but has a very restricted expression profile, with highest expression in endosperm and stamens (Figure 4—figure supplement 1). TFIIAγ1 did not interact with full-length or truncated PthXo1 or other Xoo TALE TFBs in yeast or in planta (Figure 2, and Figure 2—figure supplement 1B,E,F).
+
+We produced eight TFIIAγ1 derivatives with TFIIAγ5 substitutions at six positions (Figure 4—figure supplement 2). Of 15 TFBs tested, those of PthXo1, Tal3a, Tal7a, Tal8a, Tal9d and Tal9e could interact in yeast with TFIIAγ1S47E, but not with other TFIIAγ1 mutants (Figure 4—figure supplement 2, and Figure 2—figure supplement 1E). Four of these interactions could be confirmed in planta (Figure 2B).
+
+We then generated
+
+![Figure 4.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig4-v2.jpg)
+
+**Figure 4.:** TFIIAγ1 on response to infections by different Xoo strains.Plants were inoculated with Xoo at the booting stage. Each bar represents mean (three replicates for gene expression and total 35 to 40 leaves from five plants for lesion length) ± standard deviation. (A) Suppressing TFIIAγ1 enhanced rice resistance to strain PXO99. b, significant difference between wild-type (WT) Zhonghua 11 and transgenic plants at p<0.01. (B) Suppressing TFIIAγ1 did not change rice response to other strains. b, significant difference between WT and transgenic plants at p<0.01. (C) PTFIIAγ1:TFIIAγ1S47E-transgenic plants showed susceptibility to PXO99 and PXO341 compared to IRBB5. b, significant difference between IRBB5 and transgenic plants at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.01310.7554/eLife.19605.014Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.19605.01410.7554/eLife.19605.015Figure 4—source data 2.TFIIAγ1 coding region of 1419 rice accessions from RiceVarMap (http://ricevarmap.ncpgr.cn).DOI: http://dx.doi.org/10.7554/eLife.19605.01510.7554/eLife.19605.016Figure 4—source data 3.TFIIAγ5 coding region of 1419 rice accessions from RiceVarMap (http://ricevarmap.ncpgr.cn).DOI: http://dx.doi.org/10.7554/eLife.19605.016
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** TFIIAγ5 and TFIIAγ1 in 28 tissues covering the entire life cycle of rice varieties Minghui 63 and Zhenshan 97.Data were obtained from a microarray database (http://www.ncbi.nlm.nih.gov). E3, endosperm at 21 days after pollination; E2, endosperm at 14 days after pollination; E1, endosperm at 7 days after heading; Spi, spikelet at 3 days after pollination; Sta, stamen at 1 day before flowering; H, hull at 1 day before flowering; P5, panicle at heading stage; P4, panicle at 4- to 5-cm young panicle stage; P3, panicle at pollen–mother cell formation stage; P2, panicle at pistil and stamen primordium differentiation stage; P1, panicle at secondary branch primordium stage; Ste2, stem at heading stage; Ste1, stem at 5 days before heading; FL2, flag leaf at 14 days after heading; FL1, flag leaf at 5 days before heading; L2, leaf at 4- to 5-cm young panicle stage; L1, leaf at secondary branch primordium stage; She2, sheath at 4- to 5-cm young panicle stage; She1, sheath at secondary branch primordium stage; Sh, shoot ofseedling with two tillers; R, root of seedling with two tillers; L & R, leaf and root at three-leaf stage; Em & Ra, embryo and radicle at 3 days after germination; Pl1, plumule at 48 hr after emergence under light; Pl2, plumule at 48 hr after emergence under dark; Ra1, radicle at 48 hr after emergence under light; Ra2, radicle at 48 hr after emergence under dark; S, germinating seed at 72 hr of imbibitions. Expression levels (log2 transformations of average signal values) are color-coded: yellow and blue denote high and low expression, respectively. DOI: http://dx.doi.org/10.7554/eLife.19605.017
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The interactions were assessed by growth of yeast cells on synthetic defined premixes (SD) medium lacking leucine (L), tryptophan (W), histidine (H), and adenine (A).DOI: http://dx.doi.org/10.7554/eLife.19605.018
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** TFIIAγ1 on rice resistance to Xoo strain PXO99.Plants were inoculated with PXO99 at the booting stage. RNA was isolated from the flag leaves. WT, wild-type Zhonghua 11. Each bar represents mean (3 replicates for gene expression and 5 to10 leaves from one plant for lesion length) ± standard deviation. b, significant difference between WT and transgenic plants at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.019
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** TFIIAγ1 on the expression of disease susceptibility gene Os8N3 after Xoo infection.Plants were inoculated with Xoo PXO99 at the booting stage. Each bar represents mean (3 replicates) ± standard deviation. b, significant difference between IRBB5 and transgenic plants at p<0.01. ck, before Xoo inoculation.DOI: http://dx.doi.org/10.7554/eLife.19605.020
+
+In the background of TFIIAγ5V39E, the TFIIAγ1S47E-transgenic plants showed increased susceptibility to Xoo pv. PXO99 and PXO341 (Figure 4C). The increased susceptibility to PXO99 might be due to an interaction between TFIIAγ1S47E and PthXo1 (Figure 2B) to induce the susceptibility gene Os8N3 (Figure 4—figure supplement 4), while the susceptibility to PXO341 may be explained by another TALE (see the TFBs tested in Figure 2—figure supplement 1E,F) that can interact with TFIIAγ1S47E.
+
+## Genetic variation in TFIIAγ5 and TFIIAγ1 genes
+
+We searched the RiceVarMap database of 1419 rice accessions (http://ricevarmap.ncpgr.cn; Zhao et al., 2015) for allelic variation at TFIIAγ1 and TFIIAγ5. There were no non-synonymous single nucleotide polymorphisms (SNPs) in TFIIAγ1 (Figure 4—source data 2). Thirty-three rice accessions shared the same two non-synonymous SNPs diagnostic for the TFIIAγ5V39E allele (Figure 4—source data 3). Twenty-nine of these belong to the Aus group, which is mainly from South Asia, and the other four accessions belong to the Indica II group, mainly from Southeast Asia (Xie et al., 2015) (Figure 4—source data 3). The regional distribution of the TFIIAγ5V39E resistance allele likely reflects the high disease pressure in these regions.
+
+## Xoc TALEs hijack TFIIAγ5 to cause bacterial streak
+
+To learn whether TALEs of other pathogenic bacteria also exploit TFIIAγ5 to cause disease, we investigated the interaction of TFIIAγ5 with TALEs from
+
+![Figure 5.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig5-v2.jpg)
+
+**Figure 5.:** Xoc interaction.(A) Interactions of myc-labelled TFB regions of TALEs from Xoc RH3 and FLAG-labelled rice TFIIAγs in N. benthamiana leaf cells analysed by CoIP assays. Proteins before (input) and after immunoprecipitation (IP) were detected with anti-myc and anti-FLAG antibodies. (B) TFIIAγ5-RNAi but not TFIIAγ1-RNAi plants showed enhanced resistance to Xoc strains. Each bar represents mean (total 30 to 35 leaves from five plants) ± standard deviation. b, significant difference between wild-type and transgenic plants after infection of a strain at p<0.01. (C) Mutation of TFIIAγ5 (rice line IRBB5) reduced expression of disease susceptibility gene OsSULTR3;6 after infection. Each bar represents mean (three replicates) ± standard deviation. b, significant difference between IR24 and IRBB5 at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.021
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Xanthomonas species.DNA was digested with SphI and probed with the 2.9-kb SphI fragment of TALE gene pthXo1 from Xoo strain PXO99. The size positions of DNA markers are indicated at left. Xac, Xanthomonas axonopodis pv. citri; Xcv, Xanthomonas euvesicatoria; Xoc, Xanthomonas oryzae pv. oryzicola; Xcc, Xanthomonas campestris pv. camperstris. The Xcc strain 8004 is TALE-free (Qian et al., 2005, Genome Res. 15:757-767).DOI: http://dx.doi.org/10.7554/eLife.19605.022
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Xoc TALEs and rice TFIIAγs.The physical interactions between TFB regions of TALEs from Xoc RH3 and TFIIAγs were assessed by growth of yeast cells on synthetic defined premixes (SD) medium lacking leucine (L), tryptophan (W), histidine (H), and adenine (A). Among the 18 TFB regions, the sequences of TFB11, TFB15, TFB23, TFB24, and TFB27 from RH3 were the same as the TFB regions of Tal9b, Tal11a, Tal5b, Tal3c, and Tal12 from sequenced Xoc strain BLS256, respectively. (A) The TFB regions from RH3 interacted with rice TFIIAγ5 analysed using yeast two-hybrid assay. (B) A randomly chosen 7 of the 18 TFB regions did not interact with TFIIAγ5V39E (the mutated TFIIAγ5), but three interacted with mutated rice TFIIAγ1S47E analysed by yeast two-hybrid assay. (C) Mutation of TFIIA5 enhanced resistance to Xoc. Plants were inoculated with Xoc at the booting stage. Each bar represents mean (total 40 to 50 leaves from 5 plants) ± standard deviation. b, significant difference between IR24 and IRBB5 plants at p<0.01.DOI: http://dx.doi.org/10.7554/eLife.19605.023
+
+A recent study has shown that a major quantitative trait locus for resistance to Xoc col-localizes with TFIIAγ5 (Xie et al., 2014). Two additional studies have revealed that a TALE that occurs in at least 10 sequenced Xoc strains transcriptionally activates the gene for the sulphate transporter OsSULTR3;6, a major susceptibility gene in rice−Xoc interactions (Cernadas et al., 2014; Wilkins et al., 2015). Xoc-induced expression of OsSULTR3;6 was significantly reduced (p<0.01) in IRBB5 relative to IR24 (Figure 5C), suggesting that TALE-containing Xoc also requires TFIIAγ5 to infect rice via TALE-induced expression of host susceptibility genes.
+
+## Discussion
+
+TFIIAγ is indispensable for polymerase II–dependent transcription (
+
+![Figure 6.](https://cdn.elifesciences.org/articles/19605/elife-19605-fig6-v2.jpg)
+
+**Figure 6.:** Xanthomonas bacteria.The bacteria hijack rice basal transcription factor TFIIAγ5 (IIAγ) by the transcription factor binding (TFB) region of their TALEs to induce host susceptibility (S) genes for infection. TS, amino-terminal translocation signal; RR, central repeat region; NLS, nuclear localization signal; AD, carboxyl-terminal transcription activation domain. The IIAγ belongs to the transcription pre-initiation complex. This complex consists of transcription factors IIA, which is composed of IIAβα subunit and IIAγ subunit, IIB, IID, IIE, IIF, and IIH, RNA polymerase II (Pol II), and TATA-binding protein (TBP). The binding of transcription pre-initiation complex to the TATA box of promoter was adopted and modified based on Yudkovsky et al. (2000).DOI: http://dx.doi.org/10.7554/eLife.19605.024
+
+It is striking that the only TFIIAγ5 paralog in rice, TFIIAγ1, apparently functions as a downstream susceptibility gene for Xoo PXO99, such that the TALE PthXo7 directly activates TFIIAγ1 transcription (Sugio et al., 2007), which differs from the protein-protein interaction of several Xoo TALEs with TFIIAγ5.
+
+The recessive disease resistance allele TFIIAγ5V39E confers markedly reduced TALE-dependent induction of downstream susceptibility genes, apparently without compromising the overall activity of TFIIA. The rice accession IRBB5 carrying TFIIAγ5V39E is indistinguishable from the near-isogenic line IR24 in plant morphology and agronomic performance, including heading date, flag leaf length, number of panicles per plant, panicle length, grains per panicle, 1000-grain weight, yield per plant, seed setting rate, grain length, width, and thickness, with only slightly reduced plant height (Supplementary file 1). Here, we have shown that not only the specific point mutant TFIIAγ5V39E has increased Xoo resistance, but also that this can also be achieved by RNAi mediated knockdown of TFIIAγ5. In addition, we have shown that TALEs from other Xanthomonas pathogens, such as Xoc, exploit TFIIAγ5. Alteration of TFIIAγ5 activity, either through the introduction of the TFIIAγ5V39E allele, or through other reduction-of-function mutations, can provide a general strategy for improving rice resistance to TALE-carrying pathogens. TALE-carrying bacteria cause diseases in many other crops (Schornack et al., 2013; Boch et al., 2014). If these bacteria also exploit the host TFIIAγ for infection, modification of TFIIAγ may provide a road to improving disease resistance in other crops as well.
+
+## Materials and methods
+
+## Plant and bacterial materials
+
+A pair of near-isogenic lines, IR24 (TFIIAγ5) and IRBB5 (TFIIAγ5V39E), and the variety Zhonghua 11 were used in this study. Plants were grown during the normal rice growing season under natural field conditions in the Experimental Stations of Huazhong Agricultural University, Wuhan, China.
+
+Chinese, Japanese, Korean, and Pilipino Xoo strains were used to study rice resistance to bacterial blight disease (Gao et al. 2010; Li et al., 2012). Resistance to Xoc was tested using Chinese strains (Ke et al., 2014). X. campestris pv. campestris strain was used for Southern blot analysis of TALE genes (He et al., 2007). All Xanthomonas strains were grown at 28°C on nutrient agar medium. Antibiotics were used at the following final concentrations as required: ampicillin at 100 μg ml−1, rifampicin at 75 μg ml−1, kanamycin at 25 μg ml−1, and spectinomycin at 50 μg ml−1 when genetic manipulation of bacteria.
+
+## Transformation
+
+To construct RNA interference vector, the 3′ untranslated regions of TFIIAγ5 and TFIIAγ1 were amplified with primers listed in Supplementary file 2 and inserted into vector pDS1301 (Yuan et al., 2010). Agrobacterium-mediated transformation of rice was performed (Lin and Zhang, 2005; Ge et al., 2006).
+
+## Pathogen inoculation
+
+To evaluate reaction of rice plants to Xoo, plants were inoculated with the Xoo strains by the leaf-clipping method at the booting (panicle development) stage (Chen et al., 2002). The disease was scored by measuring the lesion length at 14 days after inoculation. Each bacterial inoculation assay was repeated at least twice. The disease of some plants was also evaluated by analysing bacterial growth based on a count of the colony-forming units as described previously (Sun et al., 2004). For measuring bacterial growth, one Xoo-infected leaf from each plant was examined as one replicate, and a total of three plants for each sample were analysed.
+
+To evaluate Xoc resistance, rice plants were inoculated with Xoc strains by the penetration method using a needleless syringe at the booting stage (Ke et al., 2014). Disease was scored by lesion length at 14 days after inoculation. Each bacterial inoculation assay was repeated twice.
+
+## Gene expression analysis
+
+The 2-cm leaf segments next to the bacterial infection sites in the rice plants were collected for RNA isolation. Quantitative reverse transcription-PCR (qRT-PCR) was conducted using gene-specific primers (Supplementary file 3) as described previously (Qiu et al., 2007). The expression level of the rice actin gene was used to normalize the measurement of the expression. Each rice sample was a mixture of leaf tissue from at least five plants, with 8 to 10 leaves per plant. For transgenic plants, segments from three to five leaves of the plant were sampled. Each qRT-PCR assay was repeated at least twice, with each repetition having three technical replicates.
+
+## Vector construction
+
+The TALE PthXo1 was cloned into pHM1 vector to produce pHM1pthXo1, and transferred into Xoo strains T7174 and KACC10331 following published method (Yang and White, 2004). The TFB region of PthXo1 was replaced with TFB regions of other TALEs by Gibson assembly (Gibson et al., 2009). The recombinant strains were confirmed by PCR amplification of TALE fragments.
+
+## Southern hybridization analysis
+
+A standard procedure for Southern hybridization of the bacterial DNA was performed (Gu et al., 2009). Genomic DNA from different Xanthomonas strains was digested with SphI, separated by electrophoresis on 1.2% agarose gel in TAE buffer, blotted onto a nylon membrane, and hybridized using a 32P-labeled 2.9-kb SphI fragment of PthXo1.
+
+## Transactivation activity assay
+
+The transactivation activity of PthXo1 was analysed in yeast cells as described previously (Deng et al., 2012). The open reading frame of pthXo1 was ligated into pGBKT7 vector and fused in frame with the yeast GAL4 DNA binding domain. The recombinant vector was transformed into yeast strain AH109. The transformed yeast cells were plated on SD/−Trp or SD/−Trp-His medium and cultured for 3 days as described previously (Yuan et al., 2010).
+
+## Protein–protein interaction assay
+
+The interaction between bacterial TALE proteins and host proteins in yeast cells was assayed using MATCHMAKER GAL4 Two-Hybrid System 3 (Clontech, Mountain View, CA) according the manufacturer’s instructions. To construct the interaction vectors, full-length and truncated TALEs and the TFB regions of TALEs and plant genes were amplified using the PCR primers listed in Supplementary file 2. The amplified DNA fragments were first inserted into vector pBluescript (Agilent Technologies, Santa Clara, CA) for sequencing confirmation. The confirmed bacterial DNA fragments were then ligated into pGBKT7 vector, and the confirmed plant DNA fragments were then ligated into pGADT7 Rec vector. The recombinant pGBKT7 and pGADT7 plasmids were co-transformed into yeast strain AH109 for yeast two-hybrid assays following the lithium acetate method (Yuan et al., 2010). The yeast clones were first scribed on the synthetic defined premixes (SD) medium lacking leucine (L) and tryptophan (W) (−LW). The growth of yeast cells on SD/−LW medium indicated that they carried both pGBKT7 and pGADT7 plasmids. An aliquot (10 μl) of 1:10 diluted stationary phase cultured yeast clones grown on the SD/−LW medium was then scribed on the selective SD medium lacking L, W, histidine (H), and adenine (A) (−LWHA). The growth of yeast cells on SD/−LWHA medium indicated that the examined proteins interacted with each other. The interactions of these proteins were also assessed by examination of β-D-galactopyranoside (X-α-gal) activity and β-galactosidase (LacZ) activity as described previously (Yuan et al., 2010). Each yeast two-hybrid assay was repeated at least twice.
+
+CoIP assays were performed to study the interaction between TALE proteins and plant proteins in planta. The 9×myc DNA fragment was amplified from pN-TAPa vector (Rubio et al., 2005) by using myc-specific primers (Supplementary file 2) and inserted into the SmaI- and BamHI-digested pU1301 vector (Cao et al., 2007), resulting in a vector that we named pU1301-9myc. The DNA fragments of full-length, truncated, or TFB region of TALEs were ligated into the pU1031-9myc vector. The DNA fragments of plant genes were ligated into the pU1301-3FLAG vector (Yuan et al., 2010). The recombinant vectors were introduced into Agrobacterium tumefaciens strain GV3101. Agrobacterium-mediated transformation was performed by infiltration into N. benthamiana leaves using a needleless syringe (Yuan et al., 2010). CoIP assays were conducted using anti-FLAG antibody (RRID:AB_259529, Sigma-Aldrich, St. Louis, MO) and anti-myc antibody (Tiangen, Beijing, China) as described previously (Yuan et al., 2010). Each CoIP assay was repeated at least twice.
+
+## Site-directed mutation
+
+Mutations of plant genes and the Xoo TALE genes were made using the GeneTailor Site-Directed Mutagenesis System (Invitrogen Life Technologies, Carlsbad, CA) as described previously (Yuan et al., 2011). The mutagenic primers are listed in Supplementary file 2.
+
+## Statistical analysis
+
+Differences between samples were analysed for statistical significance by t-test in Microsoft Excel (Microsoft, Redmond, WA). Correlations between gene transcript level and disease level were calculated using CORREL analysis in the Microsoft Office Excel program.

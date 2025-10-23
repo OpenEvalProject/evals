@@ -1,0 +1,35 @@
+# Peer review - Round 1
+
+Editors:
+- Mani Ramaswami, Trinity College Dublin , Ireland
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.21937.016](https://doi.org/10.7554/eLife.21937.016)
+
+In the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.
+
+Thank you for submitting your article "Peptidoglycan sensing by octopaminergic neurons modulates Drosophila oviposition" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Mani Ramaswami as the Reviewing Editor and Wendy Garrett as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Giovanni Bosco (Reviewer #2).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+Summary:
+
+The work explores mechanisms through which Drosophila modulate oviposition in response to bacterial infection. An intriguing aspect of this study is that, in addition to physiological responses, Drosophila also exhibit behavioral changes in response to bacterial pathogens. The authors suggest this to be an example of a behavioral adaptation that facilitates both protection against the pathogen for the exposed individual as well as affecting fitness by modulating reproduction, e.g. "behavioral immunity". The evidence supports a model whereby octopaminergic neurons act directly on ovarian tissues to modulate egg laying in response to neuronal signaling elicited by bacterial infection. In a series of convincing loss- and gain-of function experiments, the authors establish that bacterially derived peptidoglycan acting through the NF-ΚB (IMD) pathway is responsible for this effect, and describe novel isoform-specificity in the function of the PGN degrading enzyme PGRP-LB in this context. They then present some evidence that the IMD pathway exerts its effects on egg production in a subset of octopaminergic cells, some of which innervate the oviduct.
+
+The text was clear and concisely written, and for the most part figures were easy to follow and data supported the interpretations presented in the text. This study presents a new and exciting link between the innate immune system and the nervous system that allows for a multi-system integration of physiological and behavior responses to relevant environmental challenges, such as infection.
+
+Essential revisions:
+
+In general, it is important to strengthen the genetic experiments concerning neuronal manipulations in order to clarify the neuronal contribution to the described phenotypes.
+
+1) There is some confusion re: the neuronal site of NF-ΚB activation. Based on the CNS neurites in the images provided, the pLB1-expressing cells seem to include peripheral sensory (taste?) neurons and sensory neurons in the oviduct, but not efferent oviduct-innervating neurons such as the octopaminergic neurons, with cell bodies located in the posterior tip of the VNC (see, for example, Monastirioti et al. (2003) Dev Biol PMID 14623230). Puzzlingly, the authors seem to imply that the octopaminergic neurons are a subset of pLB1 neurons – in fact, the subset that matters for the PGN effects on egg laying. To make matters more complicated, some of the drivers used in the study to demonstrate neuronal effects (e.g. elav-Gal4) also target enteroendocrine cells, recently shown to sense luminal bacteria (see Du et al. (2016) PLoS Genet doi: 10.1371/journal.pgen.1005773). While the authors are careful not to ascribe the observed effects to a specific neuronal subset, the paper will be greatly improved by experiments to restrict and better define the specific octopinergic responsible for the phenotype. The authors should use restricted genetic manipulations and detailed neuronal characterisation. For example, using drivers specific for oviduct sensing (ppk) or efferent (Ilp7, oct+) neurons should allow them to establish the whether the IMD pathway acts in sensory, efferent and/or other endocrine cells to mediate the egg laying reduction.
+
+2) Related to this point, the authors need to distinguish between a generic role for neurons in controlling egg laying, relaying the PGN-triggered signal or sensing it. In this regard, I see how presenting egg laying phenotypes as their ratio relative to control conditions makes comparisons visually straightforward, but can also mask "constitutive" phenotypes resulting from some genetic manipulations – especially those resulting from interfering with the activity of oviduct-innervating neurons. The authors should clarify which of their genetic manipulations have a strong effect on the constitutive egg laying ability of flies, and which are specific to septic injury responses.
+
+3) Based on the data provided, it also seems conceivable that the main effect of PGN is to transiently reduce food intake, which can indirectly impact egg production. Do any of the described genetic manipulations affect one phenotype without affecting the other one?
+
+4) The images of ovaries in Figure 1—figure supplement 3 would be more useful if they were stained with a DNA dye that better revealed the mostly translucent very early stage egg chambers, i.e. it's otherwise very difficult to see stage 7/8 and younger egg chamber. Nevertheless, from these few images it is clear that the ovaries 6h post clean injury have vast numbers of very early (stages 2-5/6) whereas 6h post septic injury these early stages are almost completely absent. Because the figure only presents one ovary and the quantitation does not measure earlier stages it is impossible to know what the fate of these earlier stage egg chambers is in response to infection. This is an important point because the authors suggest (Discussion, end of first paragraph) that infection does not trigger oogenesis checkpoints that utilize apoptosis to eliminate early stage oocytes while allowing continued development of stage 8 and older oocytes. This claim is not supported by their observations since the increase in stage 14 oocytes could result from a combination of continued development of stage 7/8 and older oocytes AND apoptotic elimination of some stage 7/8 and earlier oocytes. I suggest the authors consider this possibility and change their language with respect to the exact stage of oocyst development or do a simple DAPI/caspase staining at different times after infection to quantitate all stages of egg chambers and report amount of early and mid-oogenesis apoptotic events. I understand that this analysis may be outside the scope of the present study and not necessarily critical. The authors may wish not to do this if they change the language so as to consider the possibility that younger oocytes may be eliminated (unless there is some other compelling argument that excludes this possibility).

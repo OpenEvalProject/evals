@@ -1,0 +1,67 @@
+# Peer review - Round 1
+
+Editors:
+- Franz-Ulrich Hartl, Max Planck Institute for Biochemistry Germany
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.57457.sa1](https://doi.org/10.7554/eLife.57457.sa1)
+
+In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.
+
+Acceptance summary:
+
+Formation of fibrillar (amyloid) aggregates is associated with neurodegenerative diseases such as Parkinson's disease and amyotrophic lateral sclerosis (ALS). Bacteria and fungi, but not mammalian cells, contain specialized AAA+ chaperones of the Hsp104 type that have the ability to dissociate fibrillar aggregates. Here, the authors investigated natural homologues of Hsp104 from species across multiple kingdoms that can suppress cellular toxicity arising from aggregation of disease-associated proteins, such as TDP-43, α-synuclein and FUS. Using natural variants of Hsp104, they identified homologs that prevented aggregation without showing previously observed off-target effects. These findings may help in developing new therapeutic strategies.
+
+Decision letter after peer review:
+
+Thank you for submitting your article "Therapeutic genetic variation revealed in diverse Hsp104 homologs" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Huda Zoghbi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David Li-Kroeger (Reviewer #3).
+
+The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.
+
+As the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is "in revision at eLife". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)
+
+The reviewers and the reviewing editor agree that this study should be considered for publication in eLife, subject to the following revisions:
+
+Essential revisions:
+
+1) The authors need to more carefully interpret protein levels in their experiments. Throughout the text, the authors conclude that the levels of Hsp104, ɑ-synuclein, and TDP-43 do not change enough to affect their preferred interpretations. However, levels of the Hsp104 variants vary over at least an order of magnitude (Figure 1D, Figure 2C, Figure 3B, Figure 5C). The authors need to consider Hsp104 variant levels when arguing that one Hsp104 variant is more effective than another (e.g. subsection “Diverse Hsp104 homologs selectively suppress TDP-43 toxicity and aggregation in yeast”).
+
+Furthermore, some Hsp104 variants reduce expression of toxic proteins (i.e., A503S in Figure 1D, Figure 2D, Figure 3B). The text needs to properly acknowledge that alterations in toxic protein expression could be a mechanism by which some Hsp104 variants suppress toxicity (e.g. subsection “Hsp104 homologs prevent TDP-43 aggregation in human cells”, sentence beginning with, "We also monitored mClover3-TDP-43∆NLS…").
+
+2) Some experiments lack important controls. In Figure 4, the authors should also analyze worms lacking both ɑ-synuclein and Hsp104 as well as worms expressing the Hsp104 variants alone. This control will help the reader to understand: (a) whether the loss of DA neurons is ɑ-synuclein-specific, and (b) whether the Hsp104-dependent rescue of DA neurons is ɑ-synuclein-specific. In Figure 5G,H, the authors should include un-aggregated luciferase controls so the reader can better understand the magnitude of luciferase refolding induced by these Hsp104 variants.
+
+3) The result that these Hsp104 variants could suppress toxicity by a disaggregase-independent mechanism is a compelling finding that requires an additional control. Because many of these Hsp104 variants have not been biochemically characterized before this work, the authors should demonstrate that the canonical walker A, pore loop, and walker B mutations used in Figure 6 disrupt disaggregase activity in the expected manner. The authors could use the same luciferase assay from Figure 5G,5H with wild-type, walker A mutant, pore loop mutant, and walker B mutant variants of S. cerevisiae Hsp104 as well as Hsp104 from one of the more exotic species.
+
+4) Subsection "Hsp104 homologs prevent TDP-43 aggregation in human cells":
+
+a) Regarding the observation that ScHsp104WT also reduced the proportion of HEK293T cells with TDP-43 aggregation at 24-hours post transfection while it did not in yeast cells (Figure 3C vs. Figure 1G), the authors did not address if this is just a protein artefact in utilizing mClover3-TDP-43ΔNLS instead of TDP-43-GFP, or if it reflects differences in cellular environments or factors related to Hsp104 activity that are unaccounted for. It should be emphasized that the latter possibility requires attention as it raises the problem of relevance in using the yeast model to approximate the human cell, despite the authors' justification by referencing such practice by other groups. It is thus prudent that the authors repeat some of the TDP-43 experiments for ScHsp104WT in yeast cells using mClover3-TDP-43ΔNLS instead of TDP-43-GFP, for example.
+
+b) In tracking the TDP-43 foci formation at 24-hours versus 48-hours post transfection, the authors did not address as to why the magnitude of increase in % cells with foci from 24-hours to 48-hours displayed by no-Hsp104 (vector-only) control is drastically lower compared to all other cells co-expressing a Hsp104 homologue. One explanation is the unaccounted protein overexpression-induced stress / toxicity experienced by cells co-transfected with an Hsp104 homologue that is absent in the vector-only (no Hsp104) control, which will likely make the results more difficult to interpret.
+
+c) Western blots for samples at 48-hours post transfection is missing.
+
+5) Subsection "αSyn-selective Hsp104 homologs prevent dopaminergic neurodegeneration in C. elegans":
+
+a) Regarding the interpretation of lack of neuroprotection by CtHsp104 due to target promiscuity, this argument will be convincing once CtHsp104 is shown to also fail in providing neuroprotection against TDP-43 toxicity compared to Hsp104 homologues that are specific against TDP-43 using the C. elegans model (TDP-43 toxicity in C. elegans model: https://www.ncbi.nlm.nih.gov/pubmed/20530643). This data is currently missing from the manuscript.
+
+6) Subsection "Differential suppression of proteotoxicity by Hsp104 homologs is not due to changes in disaggregase activity":
+
+a) Regarding the authors' statement on potentiated Hsp104 disaggregases having elevated ATPase and disaggregase activities: Even though this has been shown previously, ScHsp104(A503S) or another potentiated mutant should be included in the biochemistry assays presented as a positive control, which will validate the experimental procedures employed and importantly, to provide conclusive evidence that the natural Hsp104 homologues are indeed "potentiated" differently compared to the artificially potentiated mutants.
+
+b) In Figure 5C, the authors should also include Western blots showing normal induction of Hsp26 or other heat shock-inducible proteins as confirmation that the yeast strains used are not compromised in heat shock response.
+
+c) In Figure 5E, the authors should label the individual rescuer and non-rescuer Hsp104 homologues; the current figure is not very informative.
+
+d) Although the authors presented extensive biochemistry data showing the ATPase and disaggregase activity of Hsp104 homologues, there is no discussion in regard to the oligomerization state, which can be assessed using a variety of experimental techniques, including native PAGE, size exclusion chromatography, analytical ultracentrifugation, negative-stain electron microscopy, etc. In fact, examination of oligomeric state becomes particularly important in the authors' investigation of Hsp104 domains that contribute to suppression of aggregate toxicity, as chimeric proteins or isolated cognate domains may not form the expected hexameric form. Furthermore, data pertaining to the particular oligomeric state of the chimeras / cognate domains are expected to provide valuable information in establishing the molecular / structural basis of any retention of loss of toxicity suppression activity.
+
+7) Subsection "ATPase-independent passive chaperone activity underlies suppression of TDP-43 and αSyn toxicity by Hsp104 homologs":
+
+a) Regarding the authors' claim of Hsp104 homologues in suppressing aggregate toxicity via passive chaperone activity: Although the authors have provided extensive, thorough yeast genetics data showing that neither the ATPase nor substrate translocation activity is required for aggregate toxicity suppression, to claim passive chaperone activity being the molecular basis requires additional experimental proof, such as comparing the refolding rate of thermally denatured reporter proteins (e.g. luciferase) in the presence or absence of Hsp104 homologues, their respective chimeric proteins or isolated cognate domains.
+
+8) In subsection “Diverse Hsp104 homologs selectively suppress TDP-43 toxicity and aggregation in yeast” and subsection “Distinct Hsp104 homologs selectively suppress αSyn toxicity and inclusion formation in yeast”, referring to the data In Figure 1—figure supplement 3: Suppression of TDP-43 or αSyn toxicity by select Hsp104 homologs is a substrate-specific effect (related to Figure 1 and Figure 2). The authors make the claim that "MbHsp104, SrHsp104, CrHsp104, PeHsp104, and GsHsp104, which all suppress TDP-43 toxicity, do not suppress αSyn nor FUS toxicity" (panel A) and that "TtHsp104 and TlHsp104 do not suppress TDP43 nor FUS toxicity" panel B and that "other Hsp104s investigated in this study do not suppress toxicity of TDP-43 (left), αSyn (middle), or FUS (right)" (panel C). While most of the data here support the authors conclusions, the wording "does not suppress" is a very strong statement. The data is not completely convincing. For example, in panel C, for the FUS overexpression (right panel) ChtHsp104 and StHsp140 seem to show some suppression of toxicity. Similarly, MtHsp104, StHsp104 and TaHsp104 for α-Syn maybe show some slight suppression. I don't think this changes the nature of the conclusion; however, the authors should be a little more cautious in their choice of wording and/or better discuss the data if they feel that there is compelling evidence that absolutely no suppression is shown.
+
+9) In subsection “Diverse Hsp104 homologs selectively suppress TDP-43 toxicity and aggregation in yeast”: the authors state "Hsp104 homologs were consistently expressed,.… (Figure 1D)". The data on the Western Blot for Hsp104 (anti-flag in the blot in Figure 1D) is not convincing. The levels of protein look variable. Perhaps a quantification of replicates could be added to show whether Hsp104::flag protein levels are indeed consistent? Similarly, in Figure 2 panel C the Western blot could also be more convincing with replication and quantification. In Figure 5C, the Western Blot and the text that refer to it show variation in the levels of expression as well. For example, ScHsp104, TtHsp104 and GsHsp104 show much higher protein levels than StHsp104, MtHsp104 and ChtHsp104 yet the text claims: "These differences are not due to differences in expression, as all homologs were consistently expressed, as confirmed by Western blot (Figure 5C)". ScHsp104, TtHsp104 and GsHsp104 are among the highest rescue of thermotolerance. Contrast this with Figure 7—figure supplement 1, where the expression levels look much more consistent, with only CtHsp104 ∆N from the HSP104 promoter (panel F) showing lowered expression. The chimeras presented in Figure 8—figure supplement 1 also show some variation in levels. Here, the claim in the text is not as strong ("Generally, the chimeras expressed well in yeast"), however the figure caption states "Chimeric Hsp104s and proteotoxic substrates are consistently expressed. In addition, the authors discuss the variation in regard to the results (subsection “Hsp104 chimeras display reduced thermotolerance”: "But, expression levels of chimeras alone are insufficient to explain their thermotolerance phenotypes: even specific chimeras that reduce TDP-43 toxicity and express well from pHSP104 (e.g. Cr NTD:NBD2:MDScNBD2:CTD) fail to confer thermotolerance"). In summary, the differences in expression levels for these experiments should be better quantified if possible and should be discussed in more depth regarding possible effects on the data, especially given the reliance on ectopic expression throughout the manuscript.

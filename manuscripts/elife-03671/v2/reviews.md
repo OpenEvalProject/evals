@@ -1,0 +1,23 @@
+# Peer review - Round 1
+
+Editors:
+- Richard Aldrich, The University of Texas at Austin , United States
+
+Reviewers:
+- (Reviewers not individually listed)
+
+## Review text
+
+DOI: [10.7554/eLife.03671.010](https://doi.org/10.7554/eLife.03671.010)
+
+eLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.
+
+Thank you for sending your work entitled “Quantitative analysis of mammalian GIRK2 channel regulation by G proteins, PIP2 and Na+ in a reconstituted system” for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and Richard Aldrich (Board of Reviewing Editors) and two external reviewers (Donald Hilgemann and Christopher Miller).
+
+The Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.
+
+In this elegant, thorough, and important fundamental analysis of GIRK activation mechanisms, the authors exploit the membrane reconstitution approach for precisely the purposes le bon Dieu (Ef Racker) invented it. For what seems like millennia of time and kilograms of publications on cellular patch-recording, GIRK channels have been understood to be activated on the intracellular side by G-proteins, PIP2, and in some case Na+ ions. But the complexity of the cell membrane, even when detached from the cell itself, has stymied a quantitative analysis of these effectors. This is not a persnickety pedant's problem of being unable to dot some inconsequential i's and cross some trivial t's, but is a basic deficit that has persistently prevented the field from developing a satisfactory picture of GIRK function. For many channels, such functional landscapes were well worked out long before crystal structures appeared, but for GIRK it's the reverse situation. The various GIRK structures that have been emerging from MacKinnon's lab over past years have been a bit thin on the function that the structures would be so valuable in explaining. Instead, features such as PIP2 and Na+ activation had almost to be “read into” the new structures rather than being explained by them.
+
+With this paper, the situation changes. Now, the important GIRK effectors are examined with full reductionist control, of both protein and lipid bilayer composition: G-protein subunits charged with relevant nucleotides, PIP2 etc, all in quantitatively manipulable amounts. The conclusions are not surprising – the basic lessons have been long suspected, both from qualitative probing by cellular electrophysiology and by MacKinnon's previous GIRK structures – but they are deeply satisfying and now quantitative. In essence, the functions explain the structures, for a refreshing change. Particularly important is – at last – a proper activation curve for PIP2, real PIP2 from real brains, along with a comparison to the convenient, commonly used exogenous C8-analog. It's also satisfying to see a Hill-fit (nH=2.7) accompanied by an unapologetic assertion that this, while consistent with involvement of 4 binding sites, long-envisioned in cartoons and now seen in crystal structures, cannot adequately distinguish cooperative from independent activator binding. In addition, the effect of Na+ as a modulator of PIP2 action is clearly shown by direct experiments, simple on paper but never before properly implemented. The authors even treat old-timers with a brief historical frisson by re-visiting the non-role of Gα, lubrol and all, reminding them of the Great Clapham-Brown Debates of yore that established for the first time the central place of Gβγ in GIRK function. Finally, the exposition relates the mechanistic minutiae uncovered here to central biological roles of GIRKs in cardiac and neuronal electrical behaviors.
+
+The main issue that needs to be addressed is that the authors need to more clearly lay out the state of understanding of this system previous to their present contributions. They should more directly describe the context, within the existing knowledge, of each of their experimental conclusions and more greatly emphasize which of their conclusions are confirmatory (but done in a superior experimental system) and which are unprecedented.

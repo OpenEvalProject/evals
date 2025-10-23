@@ -1,0 +1,21 @@
+# Perceptual restoration fails to recover unconscious processing for smooth eye movements after occipital stroke
+
+## Authors
+
+- Sunwoo Kwon<sup>1</sup>
+- Berkeley K Fahrenthold<sup>2</sup>
+- Matthew R Cavanaugh<sup>2</sup>
+- Krystel R Huxlin<sup>3</sup> ([ORCID: 0000-0001-7138-6156](https://orcid.org/0000-0001-7138-6156))
+- Jude F Mitchell<sup>3</sup> ([ORCID: 0000-0003-0197-7545](https://orcid.org/0000-0003-0197-7545)) †
+
+### Affiliations
+
+1. Herbert Wertheim School of Optometry and Vision Science University of California, Berkeley Berkeley United States
+2. Center for Visual Science University of Rochester Rochester United States
+3. Department of Brain and Cognitive Sciences University of Rochester Rochester United States
+
+† Corresponding author
+
+## Abstract
+
+The visual pathways that guide actions do not necessarily mediate conscious perception. Patients with primary visual cortex (V1) damage lose conscious perception but often retain unconscious abilities (e.g. blindsight). Here, we asked if saccade accuracy and post-saccadic following responses (PFRs) that automatically track target motion upon saccade landing are retained when conscious perception is lost. We contrasted these behaviors in the blind and intact fields of 11 chronic V1-stroke patients, and in 8 visually-intact controls. Saccade accuracy was relatively normal in all cases. Stroke patients also had normal PFR in their intact fields, but no PFR in their blind fields. Thus, V1 damage did not spare the unconscious visual processing necessary for automatic, post-saccadic smooth eye movements. Importantly, visual training that recovered motion perception in the blind field did not restore the PFR, suggesting a clear dissociation between pathways mediating perceptual restoration and automatic actions in the V1-damaged visual system.
