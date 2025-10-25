@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Present-day humans exhibit an excess of ancient polymorphisms (13.7% of SNVs) that cannot be explained by neutral demographic models. The observed proportion significantly exceeds neutral simulations across 36 different demographic models, and alternative explanations including recurrent mutations, CpG hypermutability, and ancestral population structure are insufficient to account for the excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C30 provide converging evidence through empirical observations (13.7% ancient SNVs), extensive neutral simulations across parameter space, and systematic evaluation of alternative explanations. The statistical significance is robust (entire simulated distribution below observed value), and controls for recurrence (A\u2194T SNVs yielding 14.24%) and population structure are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Among 4863 human deletion polymorphisms, 430 (8.8%) are ancient polymorphisms shared with archaic hominins by common descent, with median age ~1 million years. The categorization pipeline successfully distinguished ancient deletions from recurrent (53) and introgressed (92) deletions using linkage disequilibrium patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe a systematic categorization approach validated by independent age estimation methods (Relate and Human Genome Dating). The concordance between categorization and age estimates (Figure 3) provides strong validation. The LD-based approach to distinguish recurrence and introgression is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Ancient deletions show significantly elevated std\u03b22 values compared to non-ancient deletions (p<10\u207b\u2077 across YRI, CEU, CHB), indicating enrichment for balancing selection targets. 77 common ancient deletions are in LD with SNVs showing high std\u03b22 values, with 73% representing novel balancing selection candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C41 demonstrate enrichment using an established balancing selection statistic (std\u03b22) with strong statistical significance. The comparison is appropriate (ancient vs. non-ancient deletions), and the identification of novel candidates (73%) extends beyond previous genome-wide scans. The validation through overlap with prior candidates (C40) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C55",
+      "C70",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Overdominance is rare among ancient deletions, as evidenced by greater allele frequency variation (\u03c7\u00b2 statistic, p=2\u00d710\u207b\u2077) rather than the stable trajectories expected under overdominance. Simulations show that standard population genetic statistics cannot distinguish overdominance from neutrality, but allele frequency stability can. The observed instability suggests spatially and temporally variable selection as more common mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C55, C70, C75-C77 provide a well-reasoned argument based on simulations establishing expected signatures of overdominance (stable frequencies) versus observations (variable frequencies). The statistical significance is strong (p=2\u00d710\u207b\u2077), and the logic connecting absence of overdominance signatures to alternative mechanisms is sound, though the alternative mechanisms remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Ancient deletions show 4.2-fold enrichment (p=0.003) for variants that are both exonic and GWAS-associated, with 50% of such common functional deletions being ancient. Phenotypic enrichment analysis reveals 12.5-fold enrichment (p=10\u207b\u2075) for inflammatory response traits and 2.8-fold enrichment (p=0.003) for metabolism traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C45 demonstrate functional enrichment with appropriate statistical testing (permutation-based p-values). The conservative definition of functionality (both exonic AND GWAS-associated) strengthens the result. The phenotypic enrichments for immunity and metabolism are biologically plausible for balancing selection and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Ancient deletions affect gene function through multiple mechanisms including whole-gene deletions (esv3587563 deleting LCE3B/LCE3C, esv3600896 deleting UGT2B28), altered expression of related genes, opposing effects on HLA gene expression (esv3608584), and isoform switching in genes including SIRPB1, GHR, and CYP3A43. These mechanisms may enable fine-tuning of environment-interacting gene families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C50 present solid observational data on functional effects, but claims C67-C69, C71-C73 involve substantial speculation about adaptive significance. While the functional observations are well-supported (expression changes, isoform switching), the adaptive interpretations require additional validation. The mechanistic hypotheses are plausible but remain largely speculative without direct fitness measurements or functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Deletions experience stronger negative selection than SNVs, evidenced by lower proportion of ancient deletions (9.6%) versus ancient SNVs (13.7%). Ancient deletions are 14% shorter on average (p=0.02) than non-ancient deletions, but show excess at the 95th (33% larger, p=0.04) and 98th (128% larger, p=0.005) percentiles, suggesting balancing selection on large deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51-C54, C63-C66 provide coherent evidence for differential selection on deletions versus SNVs. The lower proportion of ancient deletions is consistent with stronger purifying selection. The size distribution pattern (smaller median but larger tails) is paradoxical under neutrality alone and supports balancing selection on specific large deletions. The statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C74"
+    ],
+    "result": "The GHR deletion (esv3604875) exemplifies temporally and geographically variable selection, ranking in the 93rd percentile of allele frequency variation (\u03c7\u00b2). The longest 5% of ancient deletions represent priority targets for future balancing selection studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C74 provide a specific example (GHR deletion) with prior evidence of variable selection and high \u03c7\u00b2 values consistent with the general pattern. The recommendation for future studies (C74) follows logically from the observed excess of large ancient deletions. However, this is primarily a case study supporting the broader conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Among 4863 deletions analyzed, 243 (5%) are exonic, 433 (8.9%) have GWAS associations, and 96.2% are derived relative to chimpanzees based on liftover analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide straightforward descriptive statistics about the deletion dataset. The liftover analysis appropriately validates that deletions are derived in humans. These are basic dataset characteristics that support the analytical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Polymorphisms shared between AMHs and archaic hominins by common descent were present in their common ancestral population and have been maintained for over 700,000 years, based on phylogenetic parsimony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 present sound logical inference based on phylogenetic principles. The reasoning is straightforward: shared polymorphisms (excluding recurrence and introgression) imply ancestral polymorphism. This forms the conceptual foundation for defining 'ancient polymorphisms' and is well-established in population genetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background context on balancing selection, including definitions, historical examples (ABO, MHC, ERAP2, sickle-cell), and rationale for studying deletions. AMHs diverged from archaic hominins ~700,000 years ago, and deletions may have more profound functional consequences than SNVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C22 provide established background knowledge supported by appropriate citations. These are definitional claims and well-accepted examples from the literature that frame the study. The divergence time (~700 kya) and functional impact of deletions are well-supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "A considerable portion of biologically relevant variants has been segregating among human ancestors for hundreds of thousands to millions of years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents the overarching conclusion synthesizing the identification of ancient deletions (8.8% of dataset, median age ~1 million years) with their demonstrated functional relevance (enrichment for GWAS associations, immunity, metabolism). This conclusion is well-supported by the collective evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  }
+]

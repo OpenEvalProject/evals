@@ -1,0 +1,2634 @@
+{
+  "submission": {
+    "id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:18:58.093166Z",
+    "updated_at": "2025-10-25T01:18:58.093166Z"
+  },
+  "content": [
+    {
+      "id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "content_type": "manuscript",
+      "content_text": "# Serial, parallel and hierarchical decision making in primates\n\n## Authors\n\n- Ariel Zylberberg<sup>1</sup> ([ORCID: 0000-0002-2572-4748](https://orcid.org/0000-0002-2572-4748)) \u2020\n- Jeannette AM Lorteije<sup>1</sup> \u2020\n- Brian G Ouellette<sup>1</sup>\n- Chris I De Zeeuw<sup>4</sup>\n- Mariano Sigman<sup>6</sup>\n- Pieter Roelfsema<sup>1</sup> ([ORCID: 0000-0002-1625-0034](https://orcid.org/0000-0002-1625-0034)) \u2020\n\n### Affiliations\n\n1. Department of Vision and Cognition Netherlands Institute for Neuroscience Amsterdam-Zuidoost Netherlands\n2. Howard Hughes Medical Institute, Columbia University New York United States\n3. Cognitive and Systems Neuroscience Group, Center for Neuroscience, Faculty of Science, Swammerdam Institute for Life Sciences University of Amsterdam Amsterdam Netherlands\n4. Cerebellar Coordination and Cognition group Netherlands Institute for Neuroscience Amsterdam-Zuidoost Netherlands\n5. Department of Neuroscience Erasmus MC Rotterdam Netherlands\n6. Universidad Torcuato Di Tella Buenos Aires Argentina\n7. Department of Integrative Neurophysiology VU University Amsterdam Amsterdam Netherlands\n8. Psychiatry Department Academic Medical Center Amsterdam The Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.17331.001 The study of decision-making has mainly focused on isolated decisions where choices are associated with motor actions. However, problem-solving often involves considering a hierarchy of sub-decisions. In a recent study (Lorteije et al. 2015), we reported behavioral and neuronal evidence for hierarchical decision making in a task with a small decision tree. We observed a first phase of parallel evidence integration for multiple sub-decisions, followed by a phase in which the overall strategy formed. It has been suggested that a 'flat' competition between the ultimate motor actions might also explain these results. A reanalysis of the data does not support the critical predictions of flat models. We also examined the time-course of decision making in other, related tasks and report conditions where evidence integration for successive decisions is decoupled, which excludes flat models. We conclude that the flexibility of decision-making implies that the strategies are genuinely hierarchical. DOI: http://dx.doi.org/10.7554/eLife.17331.001\n\n## Introduction\n\nThe main aim of Lorteije et al. (2015) was to examine the neuronal correlates of hierarchical decision-making in the visual cortex. We trained monkeys to navigate through a decision tree with stochastic sensory evidence at branching points at two hierarchical levels, L1 and L2 (Figure 2 of Lorteije et al., [2015]). We measured the psychophysical kernels\u00a0(Ahumada, 1996), which reflect the contribution of sensory information at different time-points to the decisions and recorded neuronal activity in visual cortical areas V1 and V4.\n\nThere are various strategies for solving this task. A decision maker could adopt a serial strategy, mentally tracing the curve from the fixation point and making a decision at each bifurcation until reaching one of the targets. Alternatively, evidence for the decisions could be integrated in parallel. In that case, the task might be represented as a \u2018flat\u2019 competition between four alternatives, or multiple decisions might first be considered independently before they are integrated to form a strategy. These models have been explored by Lorteije et al. (2015) and were reanalyzed in a companion paper by Hyafil and Moreno-Bote (H and M)\u00a0(Hyafil and Moreno-Bote, 2017). The data of Lorteije et al. (2015) ruled out serial strategies, which wrongly predict that the psychophysical kernel for the L2 (level\u00a02)\u00a0decision should be protracted relative to L1 and that evidence integration for L1 (level\u00a01)\u00a0precedes evidence integration for L2.\n\nLorteije et al. (2015) also presented evidence against \u2018flat\u2019 models with a single accumulator per motor action, which predict that L1 difficulty should affect L2 accuracy. When the L1 decision is easy, strong evidence for L1 causes the decision variable to be close to the bound so that less evidence is required to make the L2 decision. We confirmed this intuition by fitting a simple (3-parameters) instantiation of a \u2018flat\u2019 model to the behavioral data. As in most models of sensory decision making\u00a0(Smith and Ratcliff, 2004; Gold and Shadlen, 2007)\u2014but contrary to the model by H and M\u2014we assumed that the evidence is integrated without self-excitation (or leak) until reaching a criterion or bound. The model fits revealed that the decision-termination bound was low, which led to short integration times. This observation was supported by a model-free analysis of the psychophysical kernels, showing that the monkey\u2019s choices were mainly influenced by the earliest luminance samples. Later samples made only a small contribution to the decision even though the monkeys had to wait at least 500 ms before they could report their decision. Unlike the monkeys, our instantiation of the flat model exhibited an influence of L1 difficulty on L2 accuracy, which led us to reject the flat model.\n\nH and M challenge our conclusion about flat models\u00a0(Hyafil and Moreno-Bote, 2017), putting forward an 8-parameter version of the leaky-competing accumulator model (LCA\u00a0[Usher and McClelland, 2001; Tsetsos et al., 2012]), which at first sight captures many aspects of the monkeys\u2019 behavior. We therefore consider this model an interesting addition to the literature on the neural mechanisms for hierarchical decision-making. In H and M\u2019s model, the task is represented as a flat competition between the four possible motor actions. Each alternative (i) integrates evidence simultaneously from L1 and L2, (ii) is endowed with self-excitation, establishing a positive feedback loop, and (iii) is inhibited by a global process that affects all races equally.\n\nHere, we will first examine the manner in which H and M avoided the influence of L1 difficulty on L2 accuracy and conclude that it is neither compatible with the behavioral data nor with the neurophysiological data. We then examine more general properties of flat models and conclude that they lack the flexibility to account for decision making in hierarchical tasks.\n\nH and M\u2019s model reduced the influence of L1 difficulty on L2 accuracy by implementing high bounds, strong recurrent excitation and sensory noise that does not scale with the strength of the evidence. Self-excitation was needed in H and M\u2019s model to explain why the monkeys assigned high weights to the early samples in our task. Without self-excitation, models with high bounds produce flat psychophysical kernels, because they assign equal weights to many samples before committing to a choice\u00a0(Brunton et al., 2013).\n\nUnfortunately, the self-excitation in the model of H and M causes unstable activity. This can be seen in H and M\u2019s Figure 3C where activity appears to follow an exponential time-course, which is incompatible with the findings of Lorteije et al. (2015) and other neurophysiological results\u00a0(e.g.\u00a0Kiani et al., 2008). One possibility to stabilize the firing rates in H and M\u2019s model would be to use an attractor network\u00a0(Wang, 2002; Wong and Wang, 2006). However, attractors act as bounds and would increase the dependency of L2 accuracy on L1 difficulty. Furthermore, in primates and rodents evidence accumulation can occur without loss of information about the later samples\u00a0(Kira et al., 2015; Kiani et al., 2013; Brunton et al., 2013), which is incompatible with strong self-excitation.\n\nWe simulated the two models proposed by H and M and observed that the high bounds combined with self-excitation did not suffice to prevent the interaction between L1 and L2. The first model had infinite bounds collapsing after 500 ms, and the second one had high constant bounds, which were not reached on a large fraction of trials (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17331/elife-17331-fig1-v1.jpg)\n\n**Figure 1.:** We computed the psychometric function for the L2 decision for trials with a correct (green traces) or erroneous (red) decision at L1. Left, H and M model with infinite bounds collapsing after 500 ms. Middle, H and M model with high bounds that are stable. Right, data of the monkeys in Lorteije et al. (2015). Green/red regions, s.e.m.DOI: http://dx.doi.org/10.7554/eLife.17331.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17331/elife-17331-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The monkeys\u2019 response times (white bars) exhibit a substantial increase with the difficulty of the stimulus, as expected from a decision process in which evidence is accumulated to a bound (see also Figure S1D in Lorteije et al., 2015).\u00a0The model of Hyafil and Moreno-Bote with stable high bounds produces unrealistically long response times (black bars) and the decision variable does not reach the bound in a large fraction of the trials.DOI: http://dx.doi.org/10.7554/eLife.17331.004\n\nWe conclude that the models of H and M fail to account for the behavioral data. We next reanalyzed our neurophysiological data to test H and M\u2019s model more directly. Specifically, the authors stated that the model predicts that \u2018selection signals at levels two are only influenced by information provided at level two branches [\u2026] and not by information provided at level 1\u2019. To test this prediction, we grouped the trials into four categories based on the strength of evidence at L1 and examined the activity elicited by L2 branches in V4 (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17331/elife-17331-fig2-v1.jpg)\n\n**Figure 2.:** (A) In the data, high L1 signal strength increases the representation of TT, suppresses the representations of DT and DD, but has little impact on TD. This finding is incompatible with flat models that include only one source of inhibition. (B) Upper panel, Same analysis conducted for the activity in the model of H and M. Note the steep rise in activity, which is very different from the neuronal activity in area V4. High L1 signal strength increased activity elicited by both TT and TD, and suppressed DT and DD. Because of the rectification (firing rates cannot take negative values), L1 evidence has the weakest influence on the DD branch. Lower panels, same data after the average activity was subtracted. Both models by H and M yielded similar results.DOI: http://dx.doi.org/10.7554/eLife.17331.005\n\nOur V4 recordings revealed that trials with strong evidence at L1 boosted the representation of the TT branch, suppressed the representation of the DT and DD branches (linear regression, all Ps\u00a0<\u00a010\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17331/elife-17331-fig3-v1.jpg)\n\n**Figure 3.:** V1 activity elicited by a target curve was stronger than that elicited by a distractor curve. The latency of this enhanced activity reveals a serial decision process, as the selection signal of neurons with a receptive field near the\u00a0fixation point (close RF, L1-decision) preceded the selection signal of neurons with a receptive field beyond the crossing (far RF, L2-decision). The lower panels on the right represent the selection signals (target minus distractor response). Reprinted with permission from Pooresmaeili and Roelfsema (2014)18.DOI: http://dx.doi.org/10.7554/eLife.17331.006\n\nHyafil and Moreno-Bote criticized Lorteije et al. (2015) by stating that ad-hoc assumptions need to be made to explain the interactions between local selection signals in a hierarchical model. Indeed, hierarchical models imply that there are mechanisms to enable interactions between the different decisions. For example, Lorteije et al. (2015) demonstrated that the relative difficulty of the L2 decisions biases the L1 choice, an effect that is not only visible in the animals\u2019 behavior but also in the modulation of firing rates in visual cortex. Because H and M\u2019s global inhibitory process is refuted by the data, it follows that another mechanism should play an equivalent role. It is conceivable, for example, that there is a process that compares the confidence in the two L2 decisions and then biases the L1 decision. Lorteije et al. (2015) implemented a simple version of this mechanism where the confidence in the two L2-decisions was evaluated to select the target that maximizes reward. Such a role of confidence is supported by previous studies demonstrating that the confidence in one decision can guide another one\u00a0(Kepecs et al., 2008; van den Berg et al., 2016; Kiani and Shadlen, 2009). We believe that elucidating the interactions between local selection signals is an important topic for future research. Importantly, these interactions between local selection signals do not provide evidence in favor of or against flat models. They are equally compatible with hierarchical models.\n\nH\u00a0and\u00a0M also claim that their two models are more parsimonious than the models in Lorteije et al. (2015). We disagree with this parsimony claim. The models proposed by H\u00a0and\u00a0M contain a large number of parameters and have the same shortcomings as the simpler flat model that was explored in Lorteije et al. (2015).\u00a0We are also concerned that the results by H\u00a0and\u00a0M critically depend on (1) infinite bounds that collapse rapidly, which have not been observed in neurophysiology, (2) noise that does not scale with the strength of the evidence, and (3) strong self-excitation that causes a suboptimal decision making process and exponentially-increasing firing rates. More importantly, when testing the models by H\u00a0and\u00a0M, we found that they cannot explain the lack of an influence of L2 accuracy on L1 sensitivity, nor the absence of an influence of L1 luminance strength on the TD branch, and as such they fail to account for the behavioral and neurophysiological results in the hierarchical decision making task of\u00a0Lorteije et al.\u00a0(2015).\n\nWe will now turn to a more general problem that flat models incur when they are applied to hierarchical decision-making tasks. Flat models make all local decisions at the same time, because there is a single bound that governs them all. In contrast, previous curve-tracing studies presented evidence for serial decision making and we will here illustrate that shifts between parallel and serial strategies can occur. Indeed, under many conditions, curve-tracing invokes a serial operation, which is implemented in the visual cortex by the propagation of enhanced neuronal activity along a target curve\u00a0(Pooresmaeili and Roelfsema, 2014). This propagation of enhanced neuronal activity has a correlate in psychology: observers gradually spread object-based attention over the relevant curve\u00a0(Houtkamp et al., 2003). In one previous study\u00a0(Pooresmaeili and Roelfsema, 2014) monkeys had to mentally trace a target curve that was connected to a fixation point (Figure 3). The target curve either crossed with a distractor curve or the curves did not intersect. We found that neuronal activity elicited in V1 by L1-segments of the target curve near the fixation point was enhanced before the activity elicited by the L2-segments beyond the location of the possible crossing. Thus, the enhanced V1 activity first reflects the L1-decision about the connection at the fixation point and only later reflects the L2-decision about the crossing. This result refutes flat models that implement a race between the four possible interpretations of the stimulus (i.e. one accumulator for each of the four configurations on the left of Figure 3).\n\nWhy is hierarchical decision-making parallel in some situations (Lorteije et al., 2015) and serial in others (Figure 3)? Multiple factors may be at play. The first factor is the configuration of the stimulus. The crossings in the stimulus of Figure 3 do not provide independent evidence about the target or distractor status of the L2 branches (the problem has an \u2018exclusive-or\u2019 structure), whereas in the task of Lorteije et al. (2015) local evidence at L2 permitted discarding branches as distractors before the L1 decision was taken.\n\nA second factor that may influence the degree of seriality is the number of decisions that have to be taken at the same time. We examined this possibility in a new experiment, which tested the capacity of parallel decision-making in human observers. We inferred the time-course of evidence accumulation by adding stochastic luminance evidence to branching points so that we could estimate the subjects\u2019 psychophysical kernels, similarly to\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17331/elife-17331-fig4-v1.jpg)\n\n**Figure 4.:** (a) Left, at every bifurcation, subjects had to choose the branch with the higher luminance. At L1 they chose left/right and at L2 they chose up/down. Right, the psychophysical kernel for L1 (red) and L2 (blue), which represents the influence of luminance fluctuations at different time points aligned to the second response. (b) Adding a L3 decision caused a more serial decision process and decreased the overlap between the kernels for the L1 and L2 decisions. Panel b was reproduced with permission from Zylberberg et al. (2012).DOI: http://dx.doi.org/10.7554/eLife.17331.007\n\nA third factor that can influence the seriality of decision making is practice. Prolonged training on a fixed set of problems is likely to result in more efficient decision making process, where multiple sources of evidence are efficiently considered and combined to form a strategy. We note, however, that the subjects of the tasks of Figures 3 and 4b performed many thousands of trials but that their decision-making process remained serial.\n\nThese results, taken together, indicate that hierarchical decision-making is a highly flexible process during which evidence can be integrated by separate accumulators, allowing subjects to adapt their strategy to the task at hand. Parallel accumulation can only occur if it is permitted by the structure of the task (i.e. if it does not have the exclusive-or structure) and if the subject\u2019s capacity for parallel decision making is not exceeded. Flat models lack the required flexibility.\n\nWe conclude that critical predictions of the models of Hyafil and Moreno-Bote are not supported by the data and, more generally, that flat models fail to account for any situation where decision making is serial (Figure 3). Our finding in humans that adding L3 branches increases seriality at L1 and L2 (Figure 4) implies that the machinery to take independent decisions at L1 and L2 is always in place. To further elucidate the neuronal mechanisms for hierarchical decision making, future studies could record from neurons with persistent activity, in areas like LIP or FEF, using variants of the task studied by Lorteije et al. They could also focus on the neuronal mechanisms that improve the interactions between successive decisions when subjects become proficient in a task.\n\n## Materials\u00a0and\u00a0methods\n\n## Monkey electrophysiology\n\nAll experimental procedures complied with the National Institutes of Health Guide for Care and Use of Laboratory Animals, and were approved by the Institutional Animal Care and Use Committee of the Royal Netherlands Academy of Arts and Sciences. Detailed methods can be found in the original publication (Lorteije et al., 2015). Briefly, multi-unit activity was collected from multi-channel electrode arrays implanted in the visual cortex (area V1 and V4) of 2 monkeys, while these animals performed a hierarchical curve tracing task. For the analysis in Figure 2A, we grouped trials in quartiles of L1-evidence strength. For each trial, we averaged the luminance of the target and distractor segments at L1 over the first two samples, and then computed the difference. We then classified trials into quartiles, including only correct trials, independently for each of the three difficulty levels. Figure 2 shows the average firing rate (normalized as in Lorteije et al., 2015) within each quartile for receptive fields located at different branches. The averages are from 31 sites, and they were obtained in a total of 19 recording sessions.\n\n## Human decision-making in tasks with two- and-three level hierarchies\n\nThe\u00a0three-level task displayed in Figure 4 was reproduced from Zylberberg et al. (2012). The data from the two-level hierarchical task has not been published before.\n\nThree subjects had to trace a curve that bifurcated twice, completing between 1825 and 2534 trials each. Subjects had to make a left/right decision at L1, and an up/down decision at L2, reporting their decisions with different key-presses. As in Zylberberg et al. (2012), luminance samples were perturbed with additive Gaussian noise (\u03c3\u00a0=\u00a010 cd/m2), the background luminance was 50 cd/m2 and the mean luminance of the target was adjusted online with a Quest procedure to keep performance at\u00a0~75% correct. The psychophysical reverse correlation analysis was conducted as explained in the Supplemental Information of Zylberberg et al. (2012).\n",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua I Gold, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17331.009](https://doi.org/10.7554/eLife.17331.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Serial, parallel and hierarchical decision making in the visual cortex\" for consideration by eLife. Your article has been reviewed by a Reviewing Editor and Timothy Behrens as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThese two papers present an enlightened and useful discussion about the interpretation of results previously published by Lorteije and colleagues. In that prior study, monkeys performed a task that required them to make a saccadic eye movement to the appropriate endpoint of a visual branching pattern with three bifurcations: one at the top, then two others under each branch, resulting in four distinct endpoints. Each bifurcation had a modulating luminance cue at each branch that determined the correct path: always choose the brighter (on average) branch. Through analyses of behavior and the activity of neurons in cortical areas V1 and V4 whose receptive fields corresponded to the locations of the luminance cues, a primary conclusion from that study was that the monkeys solved the task in a hierarchical manner, with decisions about the top- and lower-level branches first occurring in parallel, then combined for a final choice.\n\nThat landmark paper spawned several interesting discussions in the field. Hyafil and Moreno-Bote's technical comment encapsulates one of the critical lines of discussion about whether it is possible to truly distinguish a hierarchical decision-making process from a flat process based on the experimental data of Lorteije and colleagues. It is a critical and complex question. The reply by Zylerberg and colleagues adds further to the discussion, presenting several counter-arguments to the claims of Hyafil and Moreno-Bote.\n\nAll three reviewers were impressed by the tone and content of the submissions and agree that both represent worthwhile contributions to the literature. As noted by one of the reviewers, this kind of debate is \"very valuable and generally underappreciated.\"\n\nThe above comments are included, verbatim, in our decision letters to both groups of submitting authors. We also will now make both initial submissions available to both groups, so that any potential revisions can fully take into account the claims made in the other submission. We will then allow for one more iteration: if and when we receive revised submissions and deem them appropriate, we will then again make each available to the other group for further revisions and clarifications.\n\nBelow are summaries of the discussions among the reviewers that are specific to your submission.\n\nEssential revisions:\n\nThe reviewers agreed this paper presents several important arguments and analyses that support the idea of a hierarchical model. However, they also raised several concerns:\n\n1) The paper may be stronger and more accessible if it was reorganized such that the rebuttals of the arguments for the flat model that were made by Hyafil and Moreno-Bote were addressed first. That is, more directly address whether the data in the original submission by Lorteije et al. exclude a flat model with inhibition.\n\n2) It also would be useful treat more directly the claim by Hyafil and Moreno-Bote that the hierarchical model requires an \"extra modulatory signal\" from L2 to L1 \"that must be carefully tuned.\" This brings up the more general point that, as the authors are well aware, sensory neural responses provide only indirect evidence for the mechanism of the decision-making process. In the absence of a clear understanding about the nature of choice-related feedback to V1 and V4 one should interpret the neural responses with caution. Making this point more explicitly would be useful.\n\n3) Although the other data presented here are interesting, there were questions about their relevance to the main argument. For example, the authors should be more explicit about how the gradual spread of object-based attention in the \"mental curve tracing\" tasks relate to hierarchical decision-making. The should also clarify exactly why that result \"cannot be explained by 'flat' models that implement a race between the four possible interpretations of the stimulus.\" Likewise, the data from the three-branch task is interesting, and under those conditions subjects likely rely on a serial and hierarchical decision-making process based on accumulation of evidence that is largely (albeit not necessarily entirely, as the authors seem to imply) independent at different levels of the decision tree. However, does this result necessarily imply that a decision tree with two branching points is complex enough to necessitate a hierarchical decision? It seems quite possible that subjects' strategy shifts from a flat process to a hierarchical process as the number of branching points increases.\n\n4) The assertion that a flat model predicts either unrealistically long reaction times or a dependence of L2 decisions on L1 stimulus strength raised several concerns. First, the task did not have a reaction time design -- the monkey had to view the stimulus for 500ms before responding. It is unclear whether subjects curtailed their decisions after the fixation point turned off, continued to accumulate evidence toward a decision bound, or used a mixture of those strategies. The very weak dependence of RT on stimulus strength (only ~100ms RT difference between the weakest and strongest stimuli) make them particularly difficult to interpret in terms of decision models. Second, additional mechanisms, such as a collapsing decision bound (or urgency) might make a flat model compatible with the RT data. Is a quantitative match between the model and data truly impossible?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Serial, parallel and hierarchical decision-making in the visual cortex\" for consideration by eLife. Your article has been evaluated by a Reviewing Editor and Timothy Behrens as the Senior Editor.\n\nWe received revised manuscripts from both your group and from Hyafil and Moreno Bote. We asked them to respond to a few remaining issues, which they have done. As we indicated to them, we are now forwarding to you the newest version of their manuscript, to give you an opportunity to revise and respond accordingly. Once we hear back from you, we then will share both papers with both groups, but at that point, if any further changes are desired, they have to be essential and very well justified.\n\nThere are two points in particular that we think might benefit from further discussion/analyses in your paper. Specifically:\n\n1) As you have indicated, the behavioral data show that stimulus difficulty at the L1 branch did not influence performance at the L2 branch. In the original Lorteije et al. paper, a flat model without lateral interactions did not reproduce this result. Hyafil and Moreno Bote then showed that it could be reproduced with a flat model with lateral interactions and rectification. You have pointed out that implementation required very high decision bounds that would have produced unrealistic RTs. Hyafil and Moreno Bote now produce a version of the model that reproduces the L1 dependence and realistic mean RTs, using a kind of \"collapsing bound\" that is infinite (unreachable) for the first several samples that appears to reasonably account for the task design that allowed responses only after 500 ms of stimulus viewing.\n\n2) Both papers discuss the new analysis by Zylberberg et al. showing that the strength of evidence at L1 affects V4 activity elicited by the L2 and L2' branches. Both papers are in agreement with the finding but disagree with the interpretation. Part of the disagreement appears to stem from misunderstandings from some comments in an earlier version of the Hyafil and Moreno Bote manuscript. Specifically, as quoted by Zylberberg et al., Hyafil and Moreno Bote state in Appendix A that the flat model predicts that \"selection signals at levels 2 are only influenced by information provided at level 2 branches [\u2026] and not by information provided at level 1.\" The new analyses by Zylberberg et al. clearly contradict this prediction. However, in their main text, Hyafil and Moreno Bote stated that \"this observation is most compatible with the flat model and by itself rules out the hierarchical model that relies on complete neural segregation of integration of L1 and L2 evidence.\" We asked Hyafil and Moreno Bote to reconcile these statements. In the new manuscript, they provide the following comment: \"At this point, an important distinction has to be made in the hierarchical model between localized activations, which indeed mix evidence from both branches, and selection signals at L2, extracted by looking at the difference between two units in the same L1 branch, and which as shown above are largely insensitive to L1 signals.\"\n",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ddcaa066-2a9b-4f89-8b14-661ce39a171b",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C1",
+      "claim": "Problem-solving often involves considering a hierarchy of sub-decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "problem-solving often involves considering a hierarchy of sub-decisions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about decision-making that draws from established understanding in cognitive science",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "27ce0b47-ccaf-4e22-b2c4-9afdb0e2fd6c",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C2",
+      "claim": "Lorteije et al. (2015) reported behavioral and neuronal evidence for hierarchical decision making in a task with a small decision tree.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study (Lorteije et al. 2015), we reported behavioral and neuronal evidence for hierarchical decision making in a task with a small decision tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a prior publication by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "22d38a1d-a30b-4f29-862e-06f3adafbed4",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C3",
+      "claim": "A first phase of parallel evidence integration for multiple sub-decisions was observed, followed by a phase in which the overall strategy formed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a first phase of parallel evidence integration for multiple sub-decisions, followed by a phase in which the overall strategy formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from the Lorteije et al. 2015 study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "1044b519-79f8-4331-a2f3-10aa3b6f0de6",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C4",
+      "claim": "A reanalysis of the data does not support the critical predictions of flat models.",
+      "claim_type": "EXPLICIT",
+      "source": "A reanalysis of the data does not support the critical predictions of flat models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on reanalysis of existing data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "bb3c31b9-fefa-4381-8c52-0ac3b3adb0b3",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C5",
+      "claim": "Evidence integration for successive decisions can be decoupled under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the time-course of decision making in other, related tasks and report conditions where evidence integration for successive decisions is decoupled",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on examination of time-course data in related tasks",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "b6ddc8f4-12a1-4859-aa9d-8fd406ca50fc",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C6",
+      "claim": "The flexibility of decision-making implies that the strategies are genuinely hierarchical.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the flexibility of decision-making implies that the strategies are genuinely hierarchical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analyses presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "88d48a6f-e297-4435-bf5a-90fde2d31b47",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C7",
+      "claim": "Monkeys were trained to navigate through a decision tree with stochastic sensory evidence at branching points at two hierarchical levels, L1 and L2.",
+      "claim_type": "EXPLICIT",
+      "source": "We trained monkeys to navigate through a decision tree with stochastic sensory evidence at branching points at two hierarchical levels, L1 and L2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure from Lorteije et al. 2015",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "1ee4c43f-55f9-4121-8e1d-c3ad93331736",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C8",
+      "claim": "Psychophysical kernels reflect the contribution of sensory information at different time-points to the decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the psychophysical kernels (Ahumada, 1996), which reflect the contribution of sensory information at different time-points to the decisions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of psychophysical kernels supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "ca2d9581-1415-4d60-afa5-3b633f28d8c1",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C9",
+      "claim": "Neuronal activity was recorded in visual cortical areas V1 and V4.",
+      "claim_type": "EXPLICIT",
+      "source": "recorded neuronal activity in visual cortical areas V1 and V4",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "fc76759e-468e-4503-9a02-7409a8e5f6a3",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C10",
+      "claim": "Serial strategies wrongly predict that the psychophysical kernel for the L2 decision should be protracted relative to L1.",
+      "claim_type": "EXPLICIT",
+      "source": "The data of Lorteije et al. (2015) ruled out serial strategies, which wrongly predict that the psychophysical kernel for the L2 (level 2) decision should be protracted relative to L1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from serial strategy models that was tested against data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "05c8a5da-9058-4c8e-bf4c-774b6937225f",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C11",
+      "claim": "Serial strategies wrongly predict that evidence integration for L1 precedes evidence integration for L2.",
+      "claim_type": "EXPLICIT",
+      "source": "serial strategies, which wrongly predict that the psychophysical kernel for the L2 (level 2) decision should be protracted relative to L1 and that evidence integration for L1 (level 1) precedes evidence integration for L2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from serial strategy models that was tested against data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "295d6754-699c-40a4-ab28-8aec570b9d0a",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C12",
+      "claim": "Flat models with a single accumulator per motor action predict that L1 difficulty should affect L2 accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Lorteije et al. (2015) also presented evidence against 'flat' models with a single accumulator per motor action, which predict that L1 difficulty should affect L2 accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from flat models",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8ede231d-1a7e-4d69-bb1f-b78a31d5c9f3",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C13",
+      "claim": "When the L1 decision is easy, strong evidence for L1 causes the decision variable to be close to the bound so that less evidence is required to make the L2 decision.",
+      "claim_type": "EXPLICIT",
+      "source": "When the L1 decision is easy, strong evidence for L1 causes the decision variable to be close to the bound so that less evidence is required to make the L2 decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how flat models should behave",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e48024f6-2d78-4f17-a535-e44a1be6ad04",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C14",
+      "claim": "A simple 3-parameter instantiation of a flat model was fitted to the behavioral data.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this intuition by fitting a simple (3-parameters) instantiation of a 'flat' model to the behavioral data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling analysis performed on the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "befc36a0-1576-4c8e-aed0-8ef9689e2ae8",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C15",
+      "claim": "Most models of sensory decision making assume that evidence is integrated without self-excitation or leak until reaching a criterion or bound.",
+      "claim_type": "EXPLICIT",
+      "source": "As in most models of sensory decision making (Smith and Ratcliff, 2004; Gold and Shadlen, 2007)\u2014but contrary to the model by H and M\u2014we assumed that the evidence is integrated without self-excitation (or leak) until reaching a criterion or bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about standard assumptions in decision-making models, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "7b4050ca-b5a5-4f95-8aa5-a54dbfb1812f",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C16",
+      "claim": "The model fits revealed that the decision-termination bound was low, which led to short integration times.",
+      "claim_type": "EXPLICIT",
+      "source": "The model fits revealed that the decision-termination bound was low, which led to short integration times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from fitting models to data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "92aa88e8-49d6-4f0b-b580-c2d337f20628",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C17",
+      "claim": "The monkey's choices were mainly influenced by the earliest luminance samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was supported by a model-free analysis of the psychophysical kernels, showing that the monkey's choices were mainly influenced by the earliest luminance samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of psychophysical kernels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c4c24905-df82-4007-bedc-17426796f04e",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C18",
+      "claim": "Later luminance samples made only a small contribution to the decision even though the monkeys had to wait at least 500 ms before they could report their decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Later samples made only a small contribution to the decision even though the monkeys had to wait at least 500 ms before they could report their decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of psychophysical kernels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "6395a9f1-adc5-4149-bf71-ac479a237d33",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C19",
+      "claim": "The instantiation of the flat model exhibited an influence of L1 difficulty on L2 accuracy, unlike the monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the monkeys, our instantiation of the flat model exhibited an influence of L1 difficulty on L2 accuracy, which led us to reject the flat model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model predictions and behavioral data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "046943b3-39e4-402c-94da-7fca2c1ce369",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C20",
+      "claim": "Hyafil and Moreno-Bote put forward an 8-parameter version of the leaky-competing accumulator model (LCA).",
+      "claim_type": "EXPLICIT",
+      "source": "H and M challenge our conclusion about flat models (Hyafil and Moreno-Bote, 2017), putting forward an 8-parameter version of the leaky-competing accumulator model (LCA [Usher and McClelland, 2001; Tsetsos et al., 2012])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a model proposed by other researchers",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "0e68c0cb-6a3f-453f-be19-52346f19a761",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C21",
+      "claim": "In H and M's model, the task is represented as a flat competition between the four possible motor actions.",
+      "claim_type": "EXPLICIT",
+      "source": "In H and M's model, the task is represented as a flat competition between the four possible motor actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the H&M model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "ffd2faba-10fe-4d3e-90be-d571c0e3e044",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C22",
+      "claim": "In H and M's model, each alternative integrates evidence simultaneously from L1 and L2.",
+      "claim_type": "EXPLICIT",
+      "source": "Each alternative (i) integrates evidence simultaneously from L1 and L2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the H&M model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "b26e8df1-529e-4dd6-9120-970d5d2d8f26",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C23",
+      "claim": "In H and M's model, each alternative is endowed with self-excitation, establishing a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Each alternative (i) integrates evidence simultaneously from L1 and L2, (ii) is endowed with self-excitation, establishing a positive feedback loop",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the H&M model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "987222ee-cba2-47f4-9782-af8886ed8596",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C24",
+      "claim": "In H and M's model, each alternative is inhibited by a global process that affects all races equally.",
+      "claim_type": "EXPLICIT",
+      "source": "Each alternative (i) integrates evidence simultaneously from L1 and L2, (ii) is endowed with self-excitation, establishing a positive feedback loop, and (iii) is inhibited by a global process that affects all races equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the H&M model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "63acc8db-e975-4437-9585-d865dd9080b7",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C25",
+      "claim": "H and M's model reduced the influence of L1 difficulty on L2 accuracy by implementing high bounds, strong recurrent excitation and sensory noise that does not scale with the strength of the evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "H and M's model reduced the influence of L1 difficulty on L2 accuracy by implementing high bounds, strong recurrent excitation and sensory noise that does not scale with the strength of the evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the H&M model achieves a particular behavior",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "2186f279-203f-495e-b73b-31100410323c",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C26",
+      "claim": "Self-excitation was needed in H and M's model to explain why the monkeys assigned high weights to the early samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-excitation was needed in H and M's model to explain why the monkeys assigned high weights to the early samples in our task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for a model feature",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "7198abf7-a9f2-4bbd-ad6c-a3b301951e3e",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C27",
+      "claim": "Without self-excitation, models with high bounds produce flat psychophysical kernels, because they assign equal weights to many samples before committing to a choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Without self-excitation, models with high bounds produce flat psychophysical kernels, because they assign equal weights to many samples before committing to a choice (Brunton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general property of decision-making models supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "2da417e2-1793-459c-ae87-0009d20bb18a",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C28",
+      "claim": "The self-excitation in the model of H and M causes unstable activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the self-excitation in the model of H and M causes unstable activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the behavior of the H&M model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "01591b4e-09b9-4159-a98a-8cea61735cb6",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C29",
+      "claim": "Activity in H and M's Figure 3C appears to follow an exponential time-course.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be seen in H and M's Figure 3C where activity appears to follow an exponential time-course",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from a figure in the H&M paper",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "d8f970dd-ee76-4860-8234-5cfd51d111a7",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C30",
+      "claim": "The exponential time-course of activity in H and M's model is incompatible with the findings of Lorteije et al. (2015) and other neurophysiological results.",
+      "claim_type": "EXPLICIT",
+      "source": "activity appears to follow an exponential time-course, which is incompatible with the findings of Lorteije et al. (2015) and other neurophysiological results (e.g. Kiani et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model predictions and neurophysiological data",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "48787881-ed9d-4dd0-a951-7725ed00c9c9",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C31",
+      "claim": "Attractors act as bounds and would increase the dependency of L2 accuracy on L1 difficulty.",
+      "claim_type": "EXPLICIT",
+      "source": "However, attractors act as bounds and would increase the dependency of L2 accuracy on L1 difficulty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how attractor networks would affect model behavior",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "98696fa9-1134-44c6-9c89-91aaceed536c",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C32",
+      "claim": "In primates and rodents evidence accumulation can occur without loss of information about the later samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in primates and rodents evidence accumulation can occur without loss of information about the later samples (Kira et al., 2015; Kiani et al., 2013; Brunton et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior neurophysiological studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "444986da-4053-4053-816c-be32859e8b90",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C33",
+      "claim": "Evidence accumulation without loss of information about later samples is incompatible with strong self-excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "in primates and rodents evidence accumulation can occur without loss of information about the later samples (Kira et al., 2015; Kiani et al., 2013; Brunton et al., 2013), which is incompatible with strong self-excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the incompatibility between empirical findings and model features",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c82a48d2-38ae-42c1-b0a1-fa5d1d022887",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C34",
+      "claim": "The high bounds combined with self-excitation in H and M's models did not suffice to prevent the interaction between L1 and L2.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated the two models proposed by H and M and observed that the high bounds combined with self-excitation did not suffice to prevent the interaction between L1 and L2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from simulations of the H&M models",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "889a951a-d84e-4d16-8449-66834c430834",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C35",
+      "claim": "The first H and M model had infinite bounds collapsing after 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The first model had infinite bounds collapsing after 500 ms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of one of the H&M models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "b1205483-9be5-4a6b-bb57-bfef26e9cffd",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C36",
+      "claim": "The second H and M model had high constant bounds, which were not reached on a large fraction of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "the second one had high constant bounds, which were not reached on a large fraction of trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of one of the H&M models and its behavior",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "27ae1d99-4c1e-4f49-bed5-e555eb57426d",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C37",
+      "claim": "In both H and M models, L2 accuracy was higher when the L1 decision was correct compared to when it was erroneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 shows that in both models, L2 accuracy was higher when the L1 decision was correct (green traces) compared to when it was erroneous (red traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulations shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "821142ab-797b-445c-8cbb-9d0b011238c5",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C38",
+      "claim": "The monkeys' L2 accuracy was not affected by whether the L1 decision was correct or erroneous.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the monkeys' L2 accuracy was not affected by whether the L1 decision was correct or erroneous (Figure 1, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding from the monkey data shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "a32eb89e-509a-483d-b3f4-cdcbeb6e8244",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C39",
+      "claim": "The monkeys' response times exhibit a substantial increase with the difficulty of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The monkeys' response times (white bars) exhibit a substantial increase with the difficulty of the stimulus, as expected from a decision process in which evidence is accumulated to a bound",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "57167573-066a-4959-b71e-ea98936984cf",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C40",
+      "claim": "The model of Hyafil and Moreno-Bote with stable high bounds produces unrealistically long response times.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of Hyafil and Moreno-Bote with stable high bounds produces unrealistically long response times (black bars)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e68c4133-59c6-4d6a-8fd1-234c66c0ed39",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C41",
+      "claim": "In the H and M model with stable high bounds, the decision variable does not reach the bound in a large fraction of the trials.",
+      "claim_type": "EXPLICIT",
+      "source": "the decision variable does not reach the bound in a large fraction of the trials",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "31ae9205-3514-4748-9560-09a21498bc49",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C42",
+      "claim": "The models of H and M fail to account for the behavioral data.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the models of H and M fail to account for the behavioral data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e5ade671-311f-41e9-9e2b-dfb551c4a895",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C43",
+      "claim": "H and M's model predicts that selection signals at level two are only influenced by information provided at level two branches and not by information provided at level 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the authors stated that the model predicts that 'selection signals at levels two are only influenced by information provided at level two branches [\u2026] and not by information provided at level 1'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the H&M model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "cef03c9c-903b-4586-a0b3-fcfaab98e187",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C44",
+      "claim": "High L1 signal strength increases the representation of TT in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the data, high L1 signal strength increases the representation of TT",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from V4 recordings shown in Figure 2A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "ea6bb19c-debd-411a-9be7-d54ef1fa5952",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C45",
+      "claim": "High L1 signal strength suppresses the representations of DT and DD in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the data, high L1 signal strength increases the representation of TT, suppresses the representations of DT and DD",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from V4 recordings shown in Figure 2A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8530080e-976e-48a2-b35f-bcd8ac246581",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C46",
+      "claim": "High L1 signal strength has little impact on TD in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the data, high L1 signal strength increases the representation of TT, suppresses the representations of DT and DD, but has little impact on TD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from V4 recordings shown in Figure 2A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "d1b9a38f-8bcc-4fd3-8e50-625babac264c",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C47",
+      "claim": "The finding that high L1 signal strength has differential effects on different branches is incompatible with flat models that include only one source of inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is incompatible with flat models that include only one source of inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the V4 data shown in Figure 2A",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "a731a18c-06ca-45b2-a1c0-5d86c48ce77a",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C48",
+      "claim": "In H and M's model, high L1 signal strength increased activity elicited by both TT and TD, and suppressed DT and DD.",
+      "claim_type": "EXPLICIT",
+      "source": "High L1 signal strength increased activity elicited by both TT and TD, and suppressed DT and DD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulations of the H&M model shown in Figure 2B",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "fdf4a640-fafc-427b-9a7d-d8db44c67948",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C49",
+      "claim": "Trials with strong evidence at L1 boosted the representation of the TT branch in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "Our V4 recordings revealed that trials with strong evidence at L1 boosted the representation of the TT branch",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from V4 recordings with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "fb78c4d9-12e8-427b-b5e0-b8ba4ce67acf",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C50",
+      "claim": "Trials with strong evidence at L1 suppressed the representation of the DT and DD branches in V4 (linear regression, all Ps < 10^-4).",
+      "claim_type": "EXPLICIT",
+      "source": "trials with strong evidence at L1 boosted the representation of the TT branch, suppressed the representation of the DT and DD branches (linear regression, all Ps < 10",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from V4 recordings with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "2282a1d3-aaa5-4f9c-ad2b-fc2039358aba",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C51",
+      "claim": "Trials with strong evidence at L1 had no significant effect on the TD branch in V4 (P = 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "but had no significant effect on the TD branch (P = 0.13)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from V4 recordings with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "0febad07-45d2-47b9-a333-a282e4e54348",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C52",
+      "claim": "V1 activity elicited by a target curve was stronger than that elicited by a distractor curve.",
+      "claim_type": "EXPLICIT",
+      "source": "V1 activity elicited by a target curve was stronger than that elicited by a distractor curve.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from V1 recordings shown in Figure 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "a22013a9-6a67-45b7-a847-ba31d41aa662",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C53",
+      "claim": "The latency of enhanced V1 activity reveals a serial decision process.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency of this enhanced activity reveals a serial decision process",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the V1 recording data shown in Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "12ccc0b0-ff78-49a0-abae-875207e3479a",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C54",
+      "claim": "The selection signal of V1 neurons with a receptive field near the fixation point (close RF, L1-decision) preceded the selection signal of neurons with a receptive field beyond the crossing (far RF, L2-decision).",
+      "claim_type": "EXPLICIT",
+      "source": "the selection signal of neurons with a receptive field near the fixation point (close RF, L1-decision) preceded the selection signal of neurons with a receptive field beyond the crossing (far RF, L2-decision)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from V1 recordings shown in Figure 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "ef7b72c7-4362-4fac-885b-15ef2415b671",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C55",
+      "claim": "Hierarchical models imply that there are mechanisms to enable interactions between the different decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hierarchical models imply that there are mechanisms to enable interactions between the different decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements of hierarchical models",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "db65feef-1dde-45ee-8304-03b616c3221d",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C56",
+      "claim": "The relative difficulty of the L2 decisions biases the L1 choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Lorteije et al. (2015) demonstrated that the relative difficulty of the L2 decisions biases the L1 choice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Lorteije et al. 2015 study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "9417c855-56b8-4f96-8558-98ca95ecb2df",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C57",
+      "claim": "The relative difficulty of L2 decisions affects the modulation of firing rates in visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "the relative difficulty of the L2 decisions biases the L1 choice, an effect that is not only visible in the animals' behavior but also in the modulation of firing rates in visual cortex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Lorteije et al. 2015 study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "d422e6dd-379d-44c9-bc08-9d9eef869958",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C58",
+      "claim": "H and M's global inhibitory process is refuted by the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Because H and M's global inhibitory process is refuted by the data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8db2cee0-984c-4692-bdaa-5d0c142351dd",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C59",
+      "claim": "There is a process that compares the confidence in the two L2 decisions and then biases the L1 decision.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable, for example, that there is a process that compares the confidence in the two L2 decisions and then biases the L1 decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about a possible mechanism",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "b60f7698-bf43-4db7-b824-7b63cc89bb43",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C60",
+      "claim": "The confidence in one decision can guide another one.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a role of confidence is supported by previous studies demonstrating that the confidence in one decision can guide another one (Kepecs et al., 2008; van den Berg et al., 2016; Kiani and Shadlen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "1c16e3d0-ca8f-4e48-a801-c4dc0c8a479c",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C61",
+      "claim": "Interactions between local selection signals do not provide evidence in favor of or against flat models.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these interactions between local selection signals do not provide evidence in favor of or against flat models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what the data can and cannot distinguish",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "05acfe94-449e-4386-8dce-978180155cf6",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C62",
+      "claim": "Interactions between local selection signals are equally compatible with hierarchical models.",
+      "claim_type": "EXPLICIT",
+      "source": "They are equally compatible with hierarchical models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about model compatibility",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8145fc08-0c4d-4e19-822b-e318b0b90bc4",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C63",
+      "claim": "The models proposed by H and M contain a large number of parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The models proposed by H and M contain a large number of parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the H&M models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "7e32d8c7-27f3-4ef3-9c74-cc3f2b43868b",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C64",
+      "claim": "The models proposed by H and M have the same shortcomings as the simpler flat model that was explored in Lorteije et al. (2015).",
+      "claim_type": "EXPLICIT",
+      "source": "The models proposed by H and M contain a large number of parameters and have the same shortcomings as the simpler flat model that was explored in Lorteije et al. (2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "f67473e3-9d4c-4190-b9cf-c92b02da27f7",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C65",
+      "claim": "The results by H and M critically depend on infinite bounds that collapse rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "We are also concerned that the results by H and M critically depend on (1) infinite bounds that collapse rapidly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the critical features of the H&M models",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "119499ca-feef-4bf3-a7bb-d8c12a6edd87",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C66",
+      "claim": "Infinite bounds that collapse rapidly have not been observed in neurophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "infinite bounds that collapse rapidly, which have not been observed in neurophysiology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of neurophysiological evidence for a model feature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "86a2f0ae-c8dd-4612-aab3-d80c0404ed61",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C67",
+      "claim": "The results by H and M critically depend on noise that does not scale with the strength of the evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "the results by H and M critically depend on (1) infinite bounds that collapse rapidly, which have not been observed in neurophysiology, (2) noise that does not scale with the strength of the evidence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the critical features of the H&M models",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "57b26a58-9826-4b79-8fab-4a96404b9cdb",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C68",
+      "claim": "The results by H and M critically depend on strong self-excitation that causes a suboptimal decision making process and exponentially-increasing firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "the results by H and M critically depend on (1) infinite bounds that collapse rapidly, which have not been observed in neurophysiology, (2) noise that does not scale with the strength of the evidence, and (3) strong self-excitation that causes a suboptimal decision making process and exponentially-increasing firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the critical features of the H&M models",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "2907e792-3175-45c9-8cdb-4161f4e4156d",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C69",
+      "claim": "The models by H and M cannot explain the lack of an influence of L2 accuracy on L1 sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "when testing the models by H and M, we found that they cannot explain the lack of an influence of L2 accuracy on L1 sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from testing the H&M models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "6fb5d4d8-cdf7-4ccf-85f7-cbe725e18749",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C70",
+      "claim": "The models by H and M cannot explain the absence of an influence of L1 luminance strength on the TD branch.",
+      "claim_type": "EXPLICIT",
+      "source": "they cannot explain the lack of an influence of L2 accuracy on L1 sensitivity, nor the absence of an influence of L1 luminance strength on the TD branch",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from testing the H&M models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "b1b5fea4-7a55-4c0e-b588-f09e365f0f97",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C71",
+      "claim": "The models by H and M fail to account for the behavioral and neurophysiological results in the hierarchical decision making task of Lorteije et al. (2015).",
+      "claim_type": "EXPLICIT",
+      "source": "as such they fail to account for the behavioral and neurophysiological results in the hierarchical decision making task of Lorteije et al. (2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8fda31ba-3bc8-4ec4-afb4-e7673fad4be3",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C72",
+      "claim": "Flat models make all local decisions at the same time, because there is a single bound that governs them all.",
+      "claim_type": "EXPLICIT",
+      "source": "Flat models make all local decisions at the same time, because there is a single bound that governs them all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the properties of flat models",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "61e63cb2-0c13-4471-9d9f-2d99fe810f52",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C73",
+      "claim": "Previous curve-tracing studies presented evidence for serial decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, previous curve-tracing studies presented evidence for serial decision making",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "94ea4557-0b03-4576-9b1f-fb05b207547e",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C74",
+      "claim": "Shifts between parallel and serial strategies can occur.",
+      "claim_type": "EXPLICIT",
+      "source": "we will here illustrate that shifts between parallel and serial strategies can occur",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim that will be supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "443550f0-1b90-49d0-b158-39a7270bc2d7",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C75",
+      "claim": "Under many conditions, curve-tracing invokes a serial operation, which is implemented in the visual cortex by the propagation of enhanced neuronal activity along a target curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, under many conditions, curve-tracing invokes a serial operation, which is implemented in the visual cortex by the propagation of enhanced neuronal activity along a target curve (Pooresmaeili and Roelfsema, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "18de1e98-81cb-4bfd-8e7c-79f18f4c3f98",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C76",
+      "claim": "The propagation of enhanced neuronal activity has a correlate in psychology: observers gradually spread object-based attention over the relevant curve.",
+      "claim_type": "EXPLICIT",
+      "source": "This propagation of enhanced neuronal activity has a correlate in psychology: observers gradually spread object-based attention over the relevant curve (Houtkamp et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e300323b-58d5-46ab-8cfa-2d33d3130e78",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C77",
+      "claim": "Neuronal activity elicited in V1 by L1-segments of the target curve near the fixation point was enhanced before the activity elicited by the L2-segments beyond the location of the possible crossing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neuronal activity elicited in V1 by L1-segments of the target curve near the fixation point was enhanced before the activity elicited by the L2-segments beyond the location of the possible crossing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from V1 recordings in the curve-tracing task shown in Figure 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "97e870e3-2546-4196-ad2e-dcbebb4067af",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C78",
+      "claim": "The enhanced V1 activity first reflects the L1-decision about the connection at the fixation point and only later reflects the L2-decision about the crossing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the enhanced V1 activity first reflects the L1-decision about the connection at the fixation point and only later reflects the L2-decision about the crossing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the V1 recording data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "94aee18f-d959-4cd6-b023-52349a624a89",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C79",
+      "claim": "The finding that enhanced V1 activity first reflects L1 then L2 decisions refutes flat models that implement a race between the four possible interpretations of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This result refutes flat models that implement a race between the four possible interpretations of the stimulus (i.e. one accumulator for each of the four configurations on the left of Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the V1 data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "fae01b0a-3090-465c-bd0f-96ebf09a51ab",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C80",
+      "claim": "The configuration of the stimulus may influence whether hierarchical decision-making is parallel or serial.",
+      "claim_type": "EXPLICIT",
+      "source": "The first factor is the configuration of the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about factors affecting decision-making strategy",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8c157179-0886-40af-885f-d8f81c3092dc",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C81",
+      "claim": "The crossings in the stimulus of Figure 3 do not provide independent evidence about the target or distractor status of the L2 branches (the problem has an 'exclusive-or' structure).",
+      "claim_type": "EXPLICIT",
+      "source": "The crossings in the stimulus of Figure 3 do not provide independent evidence about the target or distractor status of the L2 branches (the problem has an 'exclusive-or' structure)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the task structure shown in Figure 3",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8b08cb90-ec1f-4558-ae25-60fb675396c7",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C82",
+      "claim": "In the task of Lorteije et al. (2015) local evidence at L2 permitted discarding branches as distractors before the L1 decision was taken.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas in the task of Lorteije et al. (2015) local evidence at L2 permitted discarding branches as distractors before the L1 decision was taken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task structure in Lorteije et al. 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "cb4d6e43-12f7-4dce-9451-2320ee943473",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C83",
+      "claim": "The number of decisions that have to be taken at the same time may influence the degree of seriality.",
+      "claim_type": "EXPLICIT",
+      "source": "A second factor that may influence the degree of seriality is the number of decisions that have to be taken at the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about factors affecting decision-making strategy",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8660cc2a-c13a-4ba5-971a-c13dda56d6b7",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C84",
+      "claim": "Adding a L3 decision caused a more serial decision process and decreased the overlap between the kernels for the L1 and L2 decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding a L3 decision caused a more serial decision process and decreased the overlap between the kernels for the L1 and L2 decisions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the human experiment shown in Figure 4b",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "ee7d5227-6a8f-4886-82be-00c0b96e0420",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C85",
+      "claim": "Prolonged training on a fixed set of problems is likely to result in more efficient decision making process, where multiple sources of evidence are efficiently considered and combined to form a strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Prolonged training on a fixed set of problems is likely to result in more efficient decision making process, where multiple sources of evidence are efficiently considered and combined to form a strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the effects of training",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "defff75b-cef6-4ee2-ac3f-962c89deac20",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C86",
+      "claim": "The subjects of the tasks of Figures 3 and 4b performed many thousands of trials but their decision-making process remained serial.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the subjects of the tasks of Figures 3 and 4b performed many thousands of trials but that their decision-making process remained serial.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the persistence of serial processing despite training",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e040ec46-7c87-4111-92e3-10a8e2f101c9",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C87",
+      "claim": "Hierarchical decision-making is a highly flexible process during which evidence can be integrated by separate accumulators, allowing subjects to adapt their strategy to the task at hand.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, taken together, indicate that hierarchical decision-making is a highly flexible process during which evidence can be integrated by separate accumulators, allowing subjects to adapt their strategy to the task at hand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the various analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e8300e5d-1738-4007-a4cc-aa485e278255",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C88",
+      "claim": "Parallel accumulation can only occur if it is permitted by the structure of the task (i.e. if it does not have the exclusive-or structure).",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel accumulation can only occur if it is permitted by the structure of the task (i.e. if it does not have the exclusive-or structure)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c6185486-57f5-453f-881e-48655727d5ab",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C89",
+      "claim": "Parallel accumulation can only occur if the subject's capacity for parallel decision making is not exceeded.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel accumulation can only occur if it is permitted by the structure of the task (i.e. if it does not have the exclusive-or structure) and if the subject's capacity for parallel decision making is not exceeded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "eed4aaae-4d1b-49e8-92f7-c5c5af0232ad",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C90",
+      "claim": "Flat models lack the required flexibility to account for shifts between parallel and serial decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Flat models lack the required flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "43e2ae4f-8330-4933-a6dd-1f796c7d6678",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C91",
+      "claim": "Critical predictions of the models of Hyafil and Moreno-Bote are not supported by the data.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that critical predictions of the models of Hyafil and Moreno-Bote are not supported by the data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "a2d0044c-4ebd-45f0-9d84-56a03d6f04e5",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C92",
+      "claim": "Flat models fail to account for any situation where decision making is serial.",
+      "claim_type": "EXPLICIT",
+      "source": "more generally, that flat models fail to account for any situation where decision making is serial (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the analyses presented",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c3118384-c6c7-4c81-8395-c1e6ab916d68",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C93",
+      "claim": "Adding L3 branches increases seriality at L1 and L2 in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding in humans that adding L3 branches increases seriality at L1 and L2 (Figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the human experiment shown in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "5e1ee5e6-241c-4f4c-b38f-9eba6866ff96",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C94",
+      "claim": "The machinery to take independent decisions at L1 and L2 is always in place.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding in humans that adding L3 branches increases seriality at L1 and L2 (Figure 4) implies that the machinery to take independent decisions at L1 and L2 is always in place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the human experiment data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "77448c4b-9cb7-4f50-b87a-1028a431e4b5",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C95",
+      "claim": "All experimental procedures complied with the National Institutes of Health Guide for Care and Use of Laboratory Animals.",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental procedures complied with the National Institutes of Health Guide for Care and Use of Laboratory Animals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "216f454d-f9f7-4a62-b5a5-bdb811ac5181",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C96",
+      "claim": "Experimental procedures were approved by the Institutional Animal Care and Use Committee of the Royal Netherlands Academy of Arts and Sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "were approved by the Institutional Animal Care and Use Committee of the Royal Netherlands Academy of Arts and Sciences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "6e9e063b-348a-4bc9-8229-346293b658db",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C97",
+      "claim": "Multi-unit activity was collected from multi-channel electrode arrays implanted in the visual cortex (area V1 and V4) of 2 monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "multi-unit activity was collected from multi-channel electrode arrays implanted in the visual cortex (area V1 and V4) of 2 monkeys",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "2a6b5424-dc5e-41d8-aead-7e2c35fe955e",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C98",
+      "claim": "For the analysis in Figure 2A, trials were grouped in quartiles of L1-evidence strength.",
+      "claim_type": "EXPLICIT",
+      "source": "For the analysis in Figure 2A, we grouped trials in quartiles of L1-evidence strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "63db65fb-4565-4759-94c5-2e5f5dd32865",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C99",
+      "claim": "The averages in Figure 2A are from 31 sites, obtained in a total of 19 recording sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "The averages are from 31 sites, and they were obtained in a total of 19 recording sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "ddcf396c-44e0-410e-a910-fb7d6100ad11",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C100",
+      "claim": "Three subjects had to trace a curve that bifurcated twice, completing between 1825 and 2534 trials each.",
+      "claim_type": "EXPLICIT",
+      "source": "Three subjects had to trace a curve that bifurcated twice, completing between 1825 and 2534 trials each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the human experiment methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "31a7f937-b255-4874-aa99-7d067832bbaa",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C101",
+      "claim": "Subjects had to make a left/right decision at L1, and an up/down decision at L2, reporting their decisions with different key-presses.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects had to make a left/right decision at L1, and an up/down decision at L2, reporting their decisions with different key-presses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the human experiment methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "3b997126-b510-476e-a111-846a83a3f591",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C102",
+      "claim": "Luminance samples were perturbed with additive Gaussian noise (\u03c3 = 10 cd/m2).",
+      "claim_type": "EXPLICIT",
+      "source": "luminance samples were perturbed with additive Gaussian noise (\u03c3 = 10 cd/m2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "cce957b0-758b-4e2d-b497-f4912e250ac8",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C103",
+      "claim": "The background luminance was 50 cd/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "the background luminance was 50 cd/m2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "0d2b6cd0-7411-4015-9421-93d0ce19a4b5",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "claim_id": "C104",
+      "claim": "The mean luminance of the target was adjusted online with a Quest procedure to keep performance at ~75% correct.",
+      "claim_type": "EXPLICIT",
+      "source": "the mean luminance of the target was adjusted online with a Quest procedure to keep performance at ~75% correct",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "57e1d966-3c22-41e5-9a57-eac82f5033fd",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors' simple 3-parameter flat model with low bounds and no self-excitation exhibits an influence of L1 difficulty on L2 accuracy, unlike the monkey behavioral data, leading to rejection of this flat model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 describe model fitting and behavioral analysis showing that the simple flat model predicts L1-L2 interactions not observed in monkeys. The psychophysical kernel analysis (C17-C18) provides converging model-free evidence. The logic is sound and the comparison between model predictions and data is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Hyafil and Moreno-Bote (H&M) 8-parameter LCA model with self-excitation produces exponentially increasing firing rates that are incompatible with neurophysiological data and requires strong self-excitation that is inconsistent with evidence accumulation without information loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 identify exponential activity in H&M's model (observed in their Figure 3C) as incompatible with neurophysiology. Claims C32-C33 cite empirical evidence that evidence accumulation occurs without loss of late sample information, contradicting strong self-excitation. The logical chain from model features to neurophysiological incompatibility is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulations of both H&M models show that L2 accuracy depends on L1 correctness (unlike monkey behavior), and the model with stable high bounds produces unrealistically long response times with bounds often not reached.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 present simulation results directly comparing H&M model predictions to monkey data, showing clear discrepancies in L1-L2 interactions. Claims C39-C41 provide additional evidence from response time analysis. Figure 1 and Figure 1\u2014figure supplement 1 provide visual support. The conclusion (C42) follows logically from the presented evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "88d174b6-fa45-4a88-8895-f575d015598f",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "V4 neuronal recordings show that high L1 signal strength has differential effects on different L2 branches (boosting TT, suppressing DT/DD, no effect on TD), which is incompatible with H&M's flat model prediction and its global inhibition mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 and C49-C51 present V4 recording data with statistical support (P < 10^-4 for significant effects, P = 0.13 for non-significant). The differential pattern across branches (C47) contradicts the H&M model's global inhibition prediction (C43). Figure 2A provides visual evidence. The comparison between data and model (C48) is clear and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "cb7fc01f-815c-45f4-9442-8a02c73cda07",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "V1 recordings in a curve-tracing task show that enhanced activity for L1-segments precedes enhancement for L2-segments, revealing serial decision-making that refutes flat models implementing parallel races between all alternatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 and C77-C78 present V1 recording data showing temporal precedence of L1 over L2 selection signals. Figure 3 provides visual support. The inference of serial processing (C53, C78) is justified by the temporal sequence. The conclusion that this refutes flat models (C79) follows logically since flat models predict simultaneous decisions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "14f24a6b-3ea4-474f-8959-c88888ac53c5",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In human subjects, adding a third hierarchical level (L3) increases seriality between L1 and L2 decisions, implying that the machinery for independent decisions at each level is always present but can be flexibly deployed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 presents empirical data from human experiments (Figure 4b) showing increased seriality with L3 addition. Claim C93 reiterates this finding. The inference (C94) that independent decision machinery exists is logical given that adding complexity reveals it. However, the sample size (3 subjects, C100) is small, though each completed substantial trials (1825-2534).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hierarchical decision-making is flexible, with parallel vs. serial strategies depending on task structure (exclusive-or vs. independent evidence) and decision capacity, a flexibility that flat models cannot account for.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 identify factors affecting parallel vs. serial processing. Claims C87-C89 synthesize conclusions about flexibility and constraints. The evidence from multiple tasks (Figures 3, 4) supports this flexibility. Claim C90 concludes flat models lack this flexibility, which follows from their structural constraints (C72). The argument is well-constructed across multiple experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c71b3ff8-b295-4869-b56b-7db0743f4b30",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The H&M models fail to account for behavioral and neurophysiological data, critically depending on neurophysiologically implausible features (infinite collapsing bounds, non-scaling noise, strong self-excitation) and cannot explain key empirical patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 identify critical model dependencies that lack neurophysiological support (C66). Claims C69-C71 specify empirical patterns the models cannot explain. Claims C91-C92 provide the overall conclusion. The evaluation is comprehensive, addressing multiple lines of evidence (behavioral, neurophysiological, model simulations). The conclusion is well-justified by the accumulated evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lorteije et al. (2015) reported behavioral and neuronal evidence for hierarchical decision-making using a task with stochastic evidence at two hierarchical levels, measuring psychophysical kernels and recording from V1 and V4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the prior study's methods and findings. They are supported by citation to the published work (Lorteije et al. 2015). The claims are factual descriptions of experimental procedures and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hierarchical models require mechanisms for interactions between decisions; while H&M's global inhibition is refuted, alternative mechanisms like confidence-based biasing are plausible and supported by prior literature, and such interactions are compatible with hierarchical models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 establishes the logical requirement. Claims C56-C57 cite empirical evidence for interactions. Claim C58 concludes H&M's mechanism is refuted (supported by prior results). Claim C59 proposes an alternative mechanism, supported by citations (C60). Claims C61-C62 clarify that interactions don't distinguish between model types. The reasoning is sound and appropriately caveated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "f1aa74be-e10d-42a3-8ae5-d038ce70d778",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior curve-tracing studies demonstrated serial decision-making implemented by propagation of enhanced neuronal activity along target curves, with psychological correlates in object-based attention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize findings from prior published work (Pooresmaeili and Roelfsema 2014; Houtkamp et al. 2003). They are appropriately cited and provide context for the current work. The claims are factual descriptions of established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "43cec276-84eb-422c-88cc-e8cb6e705b31",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While prolonged training might be expected to enable more efficient parallel processing, subjects in the current tasks remained serial despite thousands of trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 presents a reasonable hypothesis about training effects. Claim C86 provides empirical observation that contradicts this expectation, noting persistence of serial processing despite extensive practice. The observation is straightforward and supported by the data from Figures 3 and 4b.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methods description: Experiments complied with ethical guidelines, used multi-unit recordings from V1/V4 in 2 monkeys (31 sites, 19 sessions), and tested 3 human subjects (1825-2534 trials each) with specific stimulus parameters and adaptive procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe methodological details including ethical compliance, sample sizes, recording sites, and stimulus parameters. They are straightforward factual statements about experimental procedures. The details are specific and appropriate for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "96fa1491-62cb-45c1-908c-7f267c642ad1",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Problem-solving involves hierarchical sub-decisions, and the flexibility of decision-making observed in this work implies that strategies are genuinely hierarchical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a general statement about decision-making supported by established knowledge. Claim C6 is the main conclusion of the manuscript, supported by the accumulated evidence from multiple experiments and analyses showing flexibility in parallel vs. serial processing that flat models cannot accommodate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c5eb768a-83f4-445a-8802-707ac6c085f1",
+      "content_id": "a88d6817-5f45-4709-acc9-a4238bddd02d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Flat models make all local decisions simultaneously because a single bound governs all alternatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim describes a fundamental property of flat models that follows logically from their architecture. It is a valid inference about model structure and provides important context for understanding why flat models cannot account for serial processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors simulated the Hyafil and Moreno-Bote (H&M) flat models and found that both models exhibited an influence of L1 difficulty on L2 accuracy (unlike the monkeys' behavior), produced unrealistically long response times with high constant bounds, and failed to match key behavioral patterns including the independence of L2 accuracy from L1 decision correctness.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raised concerns about the RT analysis, noting that 'the task did not have a reaction time design' and that 'additional mechanisms, such as a collapsing decision bound (or urgency) might make a flat model compatible with the RT data.' They questioned whether 'a quantitative match between the model and data truly impossible.' In Round 2, reviewers noted that 'Hyafil and Moreno Bote now produce a version of the model that reproduces the L1 dependence and realistic mean RTs, using a kind of \"collapsing bound\"' that addresses the authors' concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "New V4 recordings revealed that high L1 signal strength differentially affected L2 branch representations: boosting TT, suppressing DT and DD (P<10^-4), but having no significant effect on TD (P=0.13). This pattern was incompatible with the H&M flat model's prediction and with flat models using only global inhibition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledged the finding but noted interpretational disagreements in Round 2: 'Both papers are in agreement with the finding but disagree with the interpretation.' The disagreement stems from whether this observation supports or refutes flat models, with H&M arguing it 'is most compatible with the flat model' while the authors argue it refutes flat models with global inhibition. Reviewers requested clarification on the distinction between 'localized activations' and 'selection signals.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "4de6fb25-d9cc-4307-84d9-833fa4804faf",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "V1 recordings in a curve-tracing task showed that enhanced activity for target curves near fixation (L1-decision) preceded enhanced activity for curves beyond the crossing (L2-decision), revealing serial decision-making that refutes flat models implementing a race between four possible interpretations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers questioned the relevance and interpretation of this result, asking 'the authors should be more explicit about how the gradual spread of object-based attention in the \"mental curve tracing\" tasks relate to hierarchical decision-making' and to 'clarify exactly why that result \"cannot be explained by 'flat' models.\"' They also noted that 'it seems quite possible that subjects' strategy shifts from a flat process to a hierarchical process as the number of branching points increases,' suggesting this doesn't necessarily prove the two-branch task requires hierarchical processing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "48720f39-7984-4e3f-bcc1-08e183e9e520",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "In human subjects, adding a third hierarchical level (L3) to the decision tree increased seriality and decreased overlap between L1 and L2 psychophysical kernels, implying that the machinery for independent decisions at different levels is always present but its deployment depends on task demands.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers questioned the interpretation, stating 'does this result necessarily imply that a decision tree with two branching points is complex enough to necessitate a hierarchical decision? It seems quite possible that subjects' strategy shifts from a flat process to a hierarchical process as the number of branching points increases.' This suggests the data may not definitively support the authors' conclusion about the original two-branch task.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "9dc53443-807e-4750-9a3b-be2948c5cb4b",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Reanalysis of Lorteije et al. (2015) data showed parallel evidence integration at L1 and L2 followed by strategy formation, ruling out serial strategies (which predict protracted L2 kernels) and simple flat models (which predict L1 difficulty affecting L2 accuracy).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged these findings as the basis for discussion, stating 'a primary conclusion from that study was that the monkeys solved the task in a hierarchical manner, with decisions about the top- and lower-level branches first occurring in parallel, then combined for a final choice.' However, they requested the paper 'more directly address whether the data in the original submission by Lorteije et al. exclude a flat model with inhibition,' indicating acceptance of the basic findings but uncertainty about their interpretation regarding flat models.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "047315ba-2768-48f3-8dc0-99843906c4ce",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The relative difficulty of L2 decisions biases L1 choices in both behavior and visual cortex firing rates, suggesting hierarchical interactions between decision levels. However, these interactions are compatible with both hierarchical and flat models and do not definitively distinguish between them.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers requested the authors 'treat more directly the claim by Hyafil and Moreno-Bote that the hierarchical model requires an \"extra modulatory signal\" from L2 to L1 \"that must be carefully tuned.\"' This suggests reviewers accept the finding of interactions but want more careful interpretation regarding what these interactions imply about model architecture.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c11e33ef-361a-41b4-bc51-884ded8af582",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The self-excitation mechanism in H&M's model causes unstable, exponentially-increasing activity that is incompatible with neurophysiological findings from Lorteije et al. (2015) and other studies showing evidence accumulation without loss of information about later samples.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not explicitly challenge these neurophysiological compatibility arguments, and they requested the authors make more explicit that 'sensory neural responses provide only indirect evidence for the mechanism of the decision-making process' and to 'interpret the neural responses with caution,' suggesting acceptance of the neurophysiological observations but requesting more careful interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "22322d0d-0baa-42f9-bbae-54e6484d445a",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Hierarchical decision-making is a flexible process where evidence integration can shift between parallel and serial modes depending on task structure and capacity limits. Flat models lack this flexibility and fail to account for serial decision-making situations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers questioned whether the flexibility data necessarily supports hierarchical over flat models, noting 'it seems quite possible that subjects' strategy shifts from a flat process to a hierarchical process as the number of branching points increases.' This suggests the conclusion about flat models lacking flexibility may be premature or overstated.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0",
+      "content_id": "b12b0e21-57c4-4aba-9b99-7ea69952103a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The H&M models contain many parameters and critically depend on features lacking neurophysiological support: infinite bounds that collapse rapidly, noise that doesn't scale with evidence strength, and strong self-excitation causing suboptimal decision-making and exponentially-increasing firing rates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers questioned whether these features are truly incompatible with the data, asking if 'additional mechanisms, such as a collapsing decision bound (or urgency) might make a flat model compatible with the RT data.' In Round 2, they noted that H&M 'produce a version of the model that reproduces the L1 dependence and realistic mean RTs, using a kind of \"collapsing bound\"' that addresses some of these concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1044b519-79f8-4331-a2f3-10aa3b6f0de6",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "fc76759e-468e-4503-9a02-7409a8e5f6a3",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "05c8a5da-9058-4c8e-bf4c-774b6937225f",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "295d6754-699c-40a4-ab28-8aec570b9d0a",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "8ede231d-1a7e-4d69-bb1f-b78a31d5c9f3",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "e48024f6-2d78-4f17-a535-e44a1be6ad04",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "befc36a0-1576-4c8e-aed0-8ef9689e2ae8",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "7b4050ca-b5a5-4f95-8aa5-a54dbfb1812f",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "92aa88e8-49d6-4f0b-b580-c2d337f20628",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "c4c24905-df82-4007-bedc-17426796f04e",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "6395a9f1-adc5-4149-bf71-ac479a237d33",
+      "result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd"
+    },
+    {
+      "claim_id": "046943b3-39e4-402c-94da-7fca2c1ce369",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "0e68c0cb-6a3f-453f-be19-52346f19a761",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "ffd2faba-10fe-4d3e-90be-d571c0e3e044",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "b26e8df1-529e-4dd6-9120-970d5d2d8f26",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "987222ee-cba2-47f4-9782-af8886ed8596",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "63acc8db-e975-4437-9585-d865dd9080b7",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "2186f279-203f-495e-b73b-31100410323c",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "7198abf7-a9f2-4bbd-ad6c-a3b301951e3e",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "2da417e2-1793-459c-ae87-0009d20bb18a",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "01591b4e-09b9-4159-a98a-8cea61735cb6",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "d8f970dd-ee76-4860-8234-5cfd51d111a7",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "48787881-ed9d-4dd0-a951-7725ed00c9c9",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "98696fa9-1134-44c6-9c89-91aaceed536c",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "444986da-4053-4053-816c-be32859e8b90",
+      "result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78"
+    },
+    {
+      "claim_id": "c82a48d2-38ae-42c1-b0a1-fa5d1d022887",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "889a951a-d84e-4d16-8449-66834c430834",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "b1205483-9be5-4a6b-bb57-bfef26e9cffd",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "27ae1d99-4c1e-4f49-bed5-e555eb57426d",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "821142ab-797b-445c-8cbb-9d0b011238c5",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "a32eb89e-509a-483d-b3f4-cdcbeb6e8244",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "57167573-066a-4959-b71e-ea98936984cf",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "e68c4133-59c6-4d6a-8fd1-234c66c0ed39",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "31ae9205-3514-4748-9560-09a21498bc49",
+      "result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4"
+    },
+    {
+      "claim_id": "e5ade671-311f-41e9-9e2b-dfb551c4a895",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "cef03c9c-903b-4586-a0b3-fcfaab98e187",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "ea6bb19c-debd-411a-9be7-d54ef1fa5952",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "8530080e-976e-48a2-b35f-bcd8ac246581",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "d1b9a38f-8bcc-4fd3-8e50-625babac264c",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "a731a18c-06ca-45b2-a1c0-5d86c48ce77a",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "fdf4a640-fafc-427b-9a7d-d8db44c67948",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "fb78c4d9-12e8-427b-b5e0-b8ba4ce67acf",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "2282a1d3-aaa5-4f9c-ad2b-fc2039358aba",
+      "result_id": "88d174b6-fa45-4a88-8895-f575d015598f"
+    },
+    {
+      "claim_id": "0febad07-45d2-47b9-a333-a282e4e54348",
+      "result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07"
+    },
+    {
+      "claim_id": "a22013a9-6a67-45b7-a847-ba31d41aa662",
+      "result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07"
+    },
+    {
+      "claim_id": "12ccc0b0-ff78-49a0-abae-875207e3479a",
+      "result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07"
+    },
+    {
+      "claim_id": "e300323b-58d5-46ab-8cfa-2d33d3130e78",
+      "result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07"
+    },
+    {
+      "claim_id": "97e870e3-2546-4196-ad2e-dcbebb4067af",
+      "result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07"
+    },
+    {
+      "claim_id": "94aee18f-d959-4cd6-b023-52349a624a89",
+      "result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07"
+    },
+    {
+      "claim_id": "8660cc2a-c13a-4ba5-971a-c13dda56d6b7",
+      "result_id": "14f24a6b-3ea4-474f-8959-c88888ac53c5"
+    },
+    {
+      "claim_id": "c3118384-c6c7-4c81-8395-c1e6ab916d68",
+      "result_id": "14f24a6b-3ea4-474f-8959-c88888ac53c5"
+    },
+    {
+      "claim_id": "5e1ee5e6-241c-4f4c-b38f-9eba6866ff96",
+      "result_id": "14f24a6b-3ea4-474f-8959-c88888ac53c5"
+    },
+    {
+      "claim_id": "bb3c31b9-fefa-4381-8c52-0ac3b3adb0b3",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "94ea4557-0b03-4576-9b1f-fb05b207547e",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "fae01b0a-3090-465c-bd0f-96ebf09a51ab",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "8c157179-0886-40af-885f-d8f81c3092dc",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "8b08cb90-ec1f-4558-ae25-60fb675396c7",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "cb4d6e43-12f7-4dce-9451-2320ee943473",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "e040ec46-7c87-4111-92e3-10a8e2f101c9",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "e8300e5d-1738-4007-a4cc-aa485e278255",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "c6185486-57f5-453f-881e-48655727d5ab",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "eed4aaae-4d1b-49e8-92f7-c5c5af0232ad",
+      "result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a"
+    },
+    {
+      "claim_id": "8145fc08-0c4d-4e19-822b-e318b0b90bc4",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "7e32d8c7-27f3-4ef3-9c74-cc3f2b43868b",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "f67473e3-9d4c-4190-b9cf-c92b02da27f7",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "119499ca-feef-4bf3-a7bb-d8c12a6edd87",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "86a2f0ae-c8dd-4612-aab3-d80c0404ed61",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "57b26a58-9826-4b79-8fab-4a96404b9cdb",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "2907e792-3175-45c9-8cdb-4161f4e4156d",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "6fb5d4d8-cdf7-4ccf-85f7-cbe725e18749",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "b1b5fea4-7a55-4c0e-b588-f09e365f0f97",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "43e2ae4f-8330-4933-a6dd-1f796c7d6678",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "a2d0044c-4ebd-45f0-9d84-56a03d6f04e5",
+      "result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30"
+    },
+    {
+      "claim_id": "27ce0b47-ccaf-4e22-b2c4-9afdb0e2fd6c",
+      "result_id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668"
+    },
+    {
+      "claim_id": "22d38a1d-a30b-4f29-862e-06f3adafbed4",
+      "result_id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668"
+    },
+    {
+      "claim_id": "88d48a6f-e297-4435-bf5a-90fde2d31b47",
+      "result_id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668"
+    },
+    {
+      "claim_id": "1ee4c43f-55f9-4121-8e1d-c3ad93331736",
+      "result_id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668"
+    },
+    {
+      "claim_id": "ca2d9581-1415-4d60-afa5-3b633f28d8c1",
+      "result_id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668"
+    },
+    {
+      "claim_id": "ef7b72c7-4362-4fac-885b-15ef2415b671",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "db65feef-1dde-45ee-8304-03b616c3221d",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "9417c855-56b8-4f96-8558-98ca95ecb2df",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "d422e6dd-379d-44c9-bc08-9d9eef869958",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "8db2cee0-984c-4692-bdaa-5d0c142351dd",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "b60f7698-bf43-4db7-b824-7b63cc89bb43",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "1c16e3d0-ca8f-4e48-a801-c4dc0c8a479c",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "05acfe94-449e-4386-8dce-978180155cf6",
+      "result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48"
+    },
+    {
+      "claim_id": "61e63cb2-0c13-4471-9d9f-2d99fe810f52",
+      "result_id": "f1aa74be-e10d-42a3-8ae5-d038ce70d778"
+    },
+    {
+      "claim_id": "443550f0-1b90-49d0-b158-39a7270bc2d7",
+      "result_id": "f1aa74be-e10d-42a3-8ae5-d038ce70d778"
+    },
+    {
+      "claim_id": "18de1e98-81cb-4bfd-8e7c-79f18f4c3f98",
+      "result_id": "f1aa74be-e10d-42a3-8ae5-d038ce70d778"
+    },
+    {
+      "claim_id": "ee7d5227-6a8f-4886-82be-00c0b96e0420",
+      "result_id": "43cec276-84eb-422c-88cc-e8cb6e705b31"
+    },
+    {
+      "claim_id": "defff75b-cef6-4ee2-ac3f-962c89deac20",
+      "result_id": "43cec276-84eb-422c-88cc-e8cb6e705b31"
+    },
+    {
+      "claim_id": "77448c4b-9cb7-4f50-b87a-1028a431e4b5",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "216f454d-f9f7-4a62-b5a5-bdb811ac5181",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "6e9e063b-348a-4bc9-8229-346293b658db",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "2a6b5424-dc5e-41d8-aead-7e2c35fe955e",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "63db65fb-4565-4759-94c5-2e5f5dd32865",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "ddcf396c-44e0-410e-a910-fb7d6100ad11",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "31a7f937-b255-4874-aa99-7d067832bbaa",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "3b997126-b510-476e-a111-846a83a3f591",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "cce957b0-758b-4e2d-b497-f4912e250ac8",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "0d2b6cd0-7411-4015-9421-93d0ce19a4b5",
+      "result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5"
+    },
+    {
+      "claim_id": "ddcaa066-2a9b-4f89-8b14-661ce39a171b",
+      "result_id": "96fa1491-62cb-45c1-908c-7f267c642ad1"
+    },
+    {
+      "claim_id": "b6ddc8f4-12a1-4859-aa9d-8fd406ca50fc",
+      "result_id": "96fa1491-62cb-45c1-908c-7f267c642ad1"
+    },
+    {
+      "claim_id": "8fda31ba-3bc8-4ec4-afb4-e7673fad4be3",
+      "result_id": "c5eb768a-83f4-445a-8802-707ac6c085f1"
+    },
+    {
+      "claim_id": "c82a48d2-38ae-42c1-b0a1-fa5d1d022887",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "27ae1d99-4c1e-4f49-bed5-e555eb57426d",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "821142ab-797b-445c-8cbb-9d0b011238c5",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "a32eb89e-509a-483d-b3f4-cdcbeb6e8244",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "57167573-066a-4959-b71e-ea98936984cf",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "e68c4133-59c6-4d6a-8fd1-234c66c0ed39",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "31ae9205-3514-4748-9560-09a21498bc49",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "2907e792-3175-45c9-8cdb-4161f4e4156d",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "6fb5d4d8-cdf7-4ccf-85f7-cbe725e18749",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "b1b5fea4-7a55-4c0e-b588-f09e365f0f97",
+      "result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6"
+    },
+    {
+      "claim_id": "e5ade671-311f-41e9-9e2b-dfb551c4a895",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "cef03c9c-903b-4586-a0b3-fcfaab98e187",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "ea6bb19c-debd-411a-9be7-d54ef1fa5952",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "8530080e-976e-48a2-b35f-bcd8ac246581",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "d1b9a38f-8bcc-4fd3-8e50-625babac264c",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "a731a18c-06ca-45b2-a1c0-5d86c48ce77a",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "fdf4a640-fafc-427b-9a7d-d8db44c67948",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "fb78c4d9-12e8-427b-b5e0-b8ba4ce67acf",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "2282a1d3-aaa5-4f9c-ad2b-fc2039358aba",
+      "result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a"
+    },
+    {
+      "claim_id": "0febad07-45d2-47b9-a333-a282e4e54348",
+      "result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf"
+    },
+    {
+      "claim_id": "a22013a9-6a67-45b7-a847-ba31d41aa662",
+      "result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf"
+    },
+    {
+      "claim_id": "12ccc0b0-ff78-49a0-abae-875207e3479a",
+      "result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf"
+    },
+    {
+      "claim_id": "e300323b-58d5-46ab-8cfa-2d33d3130e78",
+      "result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf"
+    },
+    {
+      "claim_id": "97e870e3-2546-4196-ad2e-dcbebb4067af",
+      "result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf"
+    },
+    {
+      "claim_id": "94aee18f-d959-4cd6-b023-52349a624a89",
+      "result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf"
+    },
+    {
+      "claim_id": "8660cc2a-c13a-4ba5-971a-c13dda56d6b7",
+      "result_id": "48720f39-7984-4e3f-bcc1-08e183e9e520"
+    },
+    {
+      "claim_id": "c3118384-c6c7-4c81-8395-c1e6ab916d68",
+      "result_id": "48720f39-7984-4e3f-bcc1-08e183e9e520"
+    },
+    {
+      "claim_id": "5e1ee5e6-241c-4f4c-b38f-9eba6866ff96",
+      "result_id": "48720f39-7984-4e3f-bcc1-08e183e9e520"
+    },
+    {
+      "claim_id": "27ce0b47-ccaf-4e22-b2c4-9afdb0e2fd6c",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "22d38a1d-a30b-4f29-862e-06f3adafbed4",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "1044b519-79f8-4331-a2f3-10aa3b6f0de6",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "fc76759e-468e-4503-9a02-7409a8e5f6a3",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "05c8a5da-9058-4c8e-bf4c-774b6937225f",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "295d6754-699c-40a4-ab28-8aec570b9d0a",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "6395a9f1-adc5-4149-bf71-ac479a237d33",
+      "result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b"
+    },
+    {
+      "claim_id": "db65feef-1dde-45ee-8304-03b616c3221d",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "9417c855-56b8-4f96-8558-98ca95ecb2df",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "d422e6dd-379d-44c9-bc08-9d9eef869958",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "8db2cee0-984c-4692-bdaa-5d0c142351dd",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "b60f7698-bf43-4db7-b824-7b63cc89bb43",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "1c16e3d0-ca8f-4e48-a801-c4dc0c8a479c",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "05acfe94-449e-4386-8dce-978180155cf6",
+      "result_id": "047315ba-2768-48f3-8dc0-99843906c4ce"
+    },
+    {
+      "claim_id": "2da417e2-1793-459c-ae87-0009d20bb18a",
+      "result_id": "c11e33ef-361a-41b4-bc51-884ded8af582"
+    },
+    {
+      "claim_id": "01591b4e-09b9-4159-a98a-8cea61735cb6",
+      "result_id": "c11e33ef-361a-41b4-bc51-884ded8af582"
+    },
+    {
+      "claim_id": "d8f970dd-ee76-4860-8234-5cfd51d111a7",
+      "result_id": "c11e33ef-361a-41b4-bc51-884ded8af582"
+    },
+    {
+      "claim_id": "48787881-ed9d-4dd0-a951-7725ed00c9c9",
+      "result_id": "c11e33ef-361a-41b4-bc51-884ded8af582"
+    },
+    {
+      "claim_id": "98696fa9-1134-44c6-9c89-91aaceed536c",
+      "result_id": "c11e33ef-361a-41b4-bc51-884ded8af582"
+    },
+    {
+      "claim_id": "444986da-4053-4053-816c-be32859e8b90",
+      "result_id": "c11e33ef-361a-41b4-bc51-884ded8af582"
+    },
+    {
+      "claim_id": "e040ec46-7c87-4111-92e3-10a8e2f101c9",
+      "result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a"
+    },
+    {
+      "claim_id": "e8300e5d-1738-4007-a4cc-aa485e278255",
+      "result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a"
+    },
+    {
+      "claim_id": "c6185486-57f5-453f-881e-48655727d5ab",
+      "result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a"
+    },
+    {
+      "claim_id": "eed4aaae-4d1b-49e8-92f7-c5c5af0232ad",
+      "result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a"
+    },
+    {
+      "claim_id": "43e2ae4f-8330-4933-a6dd-1f796c7d6678",
+      "result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a"
+    },
+    {
+      "claim_id": "a2d0044c-4ebd-45f0-9d84-56a03d6f04e5",
+      "result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a"
+    },
+    {
+      "claim_id": "8145fc08-0c4d-4e19-822b-e318b0b90bc4",
+      "result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0"
+    },
+    {
+      "claim_id": "7e32d8c7-27f3-4ef3-9c74-cc3f2b43868b",
+      "result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0"
+    },
+    {
+      "claim_id": "f67473e3-9d4c-4190-b9cf-c92b02da27f7",
+      "result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0"
+    },
+    {
+      "claim_id": "119499ca-feef-4bf3-a7bb-d8c12a6edd87",
+      "result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0"
+    },
+    {
+      "claim_id": "86a2f0ae-c8dd-4612-aab3-d80c0404ed61",
+      "result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0"
+    },
+    {
+      "claim_id": "57b26a58-9826-4b79-8fab-4a96404b9cdb",
+      "result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f1a8f31c-de08-4530-a42e-0cc7e0535cd1",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "88d174b6-fa45-4a88-8895-f575d015598f",
+      "peer_result_id": "7d863fa1-a6ad-4c36-bec1-dc2f39d90a1a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate V4 recording data showing differential L1 effects across branches (C43-C51). OpenEval finds this strongly supports refutation of flat models with global inhibition (P < 10^-4). Peer reviewers acknowledge the finding but note interpretational disagreement in Round 2, with H&M arguing the data is 'most compatible with the flat model' while authors argue it refutes flat models. Reviewers request clarification on 'localized activations' vs 'selection signals.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "95386cb7-1405-4cae-8416-da405d56ee22",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "cb7fc01f-815c-45f4-9442-8a02c73cda07",
+      "peer_result_id": "4de6fb25-d9cc-4307-84d9-833fa4804faf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address V1 recording data showing temporal precedence of L1 over L2 selection signals (C52-C54, C77-C79). OpenEval finds this strongly supports serial processing and refutes flat models. Peer reviewers question the relevance and interpretation, asking for clarification on 'how the gradual spread of object-based attention in mental curve tracing tasks relate to hierarchical decision-making' and why this 'cannot be explained by flat models.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "bd317350-c088-43cf-86df-d2ac70156547",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "14f24a6b-3ea4-474f-8959-c88888ac53c5",
+      "peer_result_id": "48720f39-7984-4e3f-bcc1-08e183e9e520",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate human L3 addition experiment showing increased seriality (C84, C93-C94). OpenEval finds this supports the existence of independent decision machinery. Peer reviewers question whether this necessarily implies the two-branch task requires hierarchical processing, suggesting 'subjects' strategy shifts from a flat process to a hierarchical process as the number of branching points increases.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "f54599c6-7a72-4abd-b490-51033a254e14",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "4bab5aa0-80ec-44de-8c98-72a8b2561a48",
+      "peer_result_id": "047315ba-2768-48f3-8dc0-99843906c4ce",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address L1-L2 interactions and mechanism claims (C55-C62). OpenEval finds the reasoning sound and appropriately caveated, noting interactions don't distinguish between model types. Peer reviewers accept the finding of interactions but request more direct treatment of H&M's claim about 'extra modulatory signal' that 'must be carefully tuned,' suggesting acceptance but wanting more careful interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "78912f30-57a0-4ad9-a5dd-c6be33b2521c",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "cde6c6d0-41c8-498e-9f0b-047eab6f5bc4",
+      "peer_result_id": "bdf6fe7d-32fe-4e3a-93e9-dc8061788fd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate simulation results and RT analysis comparing H&M model to monkey data (C34-C42 overlap, with R1 also including C69-C71). OpenEval finds clear discrepancies supporting refutation of flat models. Peer reviewers raise concerns about RT analysis, noting 'the task did not have a reaction time design' and that 'additional mechanisms, such as a collapsing decision bound might make a flat model compatible with the RT data.' In Round 2, they note H&M produced a compatible version.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "4605f62a-7052-46d0-a08d-13651307b93f",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "c71b3ff8-b295-4869-b56b-7db0743f4b30",
+      "peer_result_id": "2b47d4bd-3d93-471b-8ef9-0fa45e8bf6d0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address critical model dependencies lacking neurophysiological support (C63-C68 overlap). OpenEval finds the evaluation comprehensive and conclusion well-justified. Peer reviewers question whether these features are truly incompatible, noting in Round 2 that H&M 'produce a version of the model that reproduces the L1 dependence and realistic mean RTs, using a kind of collapsing bound' that addresses some concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "abd5a26d-dc9b-4d5b-9832-eec3ebb7a0c9",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a3dc2331-54df-4dbc-83d4-8dcbf7bcbb78",
+      "peer_result_id": "c11e33ef-361a-41b4-bc51-884ded8af582",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address neurophysiological compatibility of H&M model's exponential activity and self-excitation (C28-C33). OpenEval finds the logical chain from model features to neurophysiological incompatibility well-supported. Peer reviewers did not explicitly challenge these arguments but requested authors make more explicit that 'sensory neural responses provide only indirect evidence' and to 'interpret the neural responses with caution.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "e09caa42-6783-4270-adfc-c2c51f370d28",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "57e1d966-3c22-41e5-9a57-eac82f5033fd",
+      "peer_result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address model fitting and behavioral analysis showing flat model predictions vs monkey data (C4, C10-C12, C19 overlap). OpenEval finds the logic sound and comparison clear. Peer reviewers acknowledge these as basis for discussion, accepting the basic findings but requesting the paper 'more directly address whether the data in the original submission by Lorteije et al. exclude a flat model with inhibition,' indicating uncertainty about interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "c2156b11-fe84-4e84-8314-8e80ac7e912e",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "010dd9a1-95e0-4ffa-9f24-ade3101c105a",
+      "peer_result_id": "22322d0d-0baa-42f9-bbae-54e6484d445a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address flexibility in parallel vs serial processing and flat model limitations (C87-C90 overlap). OpenEval finds the argument well-constructed across multiple experimental conditions. Peer reviewers question whether flexibility data necessarily supports hierarchical over flat models, noting 'subjects' strategy shifts from a flat process to a hierarchical process as the number of branching points increases,' suggesting the conclusion may be premature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "51efc9e4-e2f6-4f69-8b3c-bec958357e4a",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "8e9192ff-7d2e-4bc8-a6a0-3914a853c668",
+      "peer_result_id": "9dc53443-807e-4750-9a3b-be2948c5cb4b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both reference prior study methods and findings (C2-C3 overlap). OpenEval finds these appropriately cited factual descriptions. Peer reviewers acknowledge these findings as basis for discussion, accepting the primary conclusion about hierarchical processing but requesting more direct address of whether data exclude flat models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "1904c15c-2762-40d4-9e28-13df62309124",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "f1aa74be-e10d-42a3-8ae5-d038ce70d778",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C73, C75-C76 summarizing prior published work (Pooresmaeili and Roelfsema 2014; Houtkamp et al. 2003) as appropriately cited factual descriptions. No corresponding peer review evaluation found for these specific contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "61161945-b429-426c-a05f-23161e26b35b",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "43cec276-84eb-422c-88cc-e8cb6e705b31",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C85-C86 about training effects and persistence of serial processing as supported by straightforward empirical observation. No corresponding peer review evaluation found for these specific claims about practice effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "0232fff3-1a12-4ec5-bb3b-82a79ddac84d",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6a4fd1fb-fb1e-4c25-8fed-07b21120b0f5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated methodological details (C95-C104) including ethical compliance, sample sizes, recording sites, and stimulus parameters as appropriate factual statements for reproducibility. No corresponding peer review evaluation found for these methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "52bc57aa-ca85-4be6-9f3d-1b7345d7ba08",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "96fa1491-62cb-45c1-908c-7f267c642ad1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated general statement about decision-making (C1) and main conclusion (C6) as supported by accumulated evidence. No corresponding peer review evaluation found specifically addressing these framing claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    },
+    {
+      "id": "9ce5390f-d2c0-4616-b6af-8e7f6b9f018a",
+      "submission_id": "b3a0c53e-1801-4c33-b18a-b1d0e609701f",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "c5eb768a-83f4-445a-8802-707ac6c085f1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C72 about fundamental property of flat models as valid inference about model structure. No corresponding peer review evaluation found specifically addressing this architectural claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:18:58.093166Z"
+    }
+  ]
+}

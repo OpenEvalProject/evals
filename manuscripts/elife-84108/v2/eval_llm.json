@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "HIV-1 protease cleaves human CARD8 at a specific site between F59 and F60, and this cleavage is dependent on the F60 residue. The cleavage is blocked by the protease inhibitor lopinavir and is much more efficient for wildtype CARD8 compared to F60L or F60S mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C18-C21 collectively demonstrate HIV-1PR cleavage of CARD8 through multiple lines of evidence including immunoblot data (Figures 1C, 1D), pharmacological inhibition with lopinavir, and mutagenesis studies showing F60 is critical for efficient cleavage. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The F59-F60 motif in human CARD8 arose after the divergence of humans from chimpanzees and bonobos, is present in Neanderthals, and represents a human-specific feature. F59 is conserved across primates, but only humans have F60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C13-C17 are supported by phylogenetic alignment data (Figure 1A) showing species-specific variation at position 60. The presence of F59-F60 in Neanderthals and its absence in chimpanzees provides strong evidence for the evolutionary timing. The dating to within the last million years is appropriately cited and conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C28"
+    ],
+    "result": "SIVcpz proteases cleave human CARD8 but not chimpanzee CARD8 or human CARD8 variants lacking F60. This demonstrates that SIVcpzPR had pre-existing ability to cleave human CARD8 prior to cross-species transmission, and the F59-F60 motif renders human CARD8 uniquely susceptible to multiple primate lentiviral proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C22-C25, C28 are well-supported by immunoblot data (Figures 2A, 2B) showing differential cleavage patterns. The experiments include appropriate controls (chimpanzee CARD8, human CARD8 mutants) and test multiple SIVcpz strains. The conclusion about pre-existing cleavage capacity is logically sound given the evolutionary timeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C23",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "SIVcpz was poised to activate human CARD8 prior to cross-species transmission because the F59-F60 motif arose before HIV-1 emergence (within the last million years vs. within the last century). This represents a distinct evolutionary scenario where the host factor predated the modern virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C23, C85-C89 are supported by the combination of biochemical data showing SIVcpzPR cleavage of human CARD8, phylogenetic evidence for F59-F60 timing, and cited literature on HIV-1 emergence timing. The evolutionary inference is logical and well-reasoned, though it remains an inference rather than direct proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "HIV-1 infection induces CARD8-dependent pyroptotic cell death and IL-1\u03b2 secretion in THP-1 cells. Cell death occurs with or without TLR priming, but IL-1\u03b2 secretion is entirely dependent on TLR priming. The response is independent of HIV-1 envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C30-C39 are supported by flow cytometry data for cell death (PI uptake) and IL-1\u03b2 secretion assays (Figure 3B). The experiments include appropriate controls (CARD8 KO, CASP1 KO, mock infection) and test multiple priming conditions. The differential requirement for priming between cell death and cytokine secretion is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C80"
+    ],
+    "result": "TLR priming regulates CARD8 inflammasome responses to HIV-1 infection, specifically being required for IL-1\u03b2 transcriptional upregulation and secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C80 are supported by experimental data (Figure 3B) showing TLR-dependent IL-1\u03b2 secretion and cited literature (Chan and Schroder, 2019) establishing the mechanism. The experiments test multiple TLR agonists and show consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "CARD8-dependent inflammasome activation is conserved across HIV-1 strains, as demonstrated by testing HIV-1Q23-BG505 in addition to HIV-1LAI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by data showing IL-1\u03b2 secretion in WT but not CARD8 KO cells after infection with HIV-1Q23-BG505 (Figure 3D). However, only two strains were tested, which is a limited sample size for claiming conservation across all HIV-1 strains. The claim is supported but could benefit from additional strain testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49"
+    ],
+    "result": "CARD8 senses both packaged HIV-1PR from incoming virions (as early as 2 hours post-infection, before reverse transcription) and de novo translated HIV-1PR (at later timepoints like 24 hours). This represents a biphasic response to HIV-1 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C42-C45, C48-C49 are supported by time-course data (Figure 4A) showing early (2 hr) and late (24 hr) IL-1\u03b2 secretion. The interpretation that 2-hour responses reflect packaged protease is reasonable given cited literature on reverse transcription timing (Mohammadi et al., 2013). However, the mechanism for early protease release into cytoplasm could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "CARD8 inflammasome activation by HIV-1 infection is dependent on HIV-1PR activity (blocked by lopinavir) but independent of Vpr (\u0394Vpr virus still activates CARD8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by data showing lopinavir blocks IL-1\u03b2 secretion while \u0394Vpr virus retains activity (Figure 4B). These are appropriate controls to establish protease dependence and rule out Vpr involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Complementation experiments demonstrate that HIV-1 inflammasome activation requires the F59-F60 motif in CARD8. Only WT human CARD8 or chimpanzee CARD8 with L60F mutation restore HIV-1 responses, while cleavage-resistant mutants (F60L, F60S, F60A) or chimpanzee CARD8 do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by comprehensive complementation data (Figures 5B-F) using doxycycline-inducible expression. The experiments include appropriate controls (VbP responses to confirm functional CARD8 expression) and test multiple mutants. The data strongly support that F60 is necessary and sufficient for HIV-1PR recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C103"
+    ],
+    "result": "SIVmac239PR cleaves human CARD8 in an F60-dependent manner, and its substrate specificity is distinct from HIV-1PR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C103 are supported by immunoblot data (Figure 2\u2014figure supplement 1) showing cleavage of WT but reduced cleavage of F60A mutant. The data demonstrate that multiple primate lentiviral proteases can cleave human CARD8, though only limited characterization of SIVmac239PR specificity is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C77"
+    ],
+    "result": "HIV-1PR is active in the cytoplasm of infected cells, as evidenced by Gag processing in cytoplasmic lysates and consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C77 are supported by immunoblot data showing Gag processing products in cytoplasmic lysates (Figure 3A) and appropriately cited literature (Alvarez et al., 2006; Tabler et al., 2022). This provides important context for understanding how CARD8 can sense HIV-1PR during infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "CARD8 is a bona fide innate immune sensor of viral infection via sensing viral protease activity, with broad antiviral sensing capacity predicated on detection of the ubiquitous and essential function of viral proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C78 are supported by the current data on HIV-1/SIVcpz sensing combined with cited literature on CARD8 sensing of other viruses (Nadkarni et al., 2022; Tsu et al., 2023). The generalization about broad sensing capacity is reasonable but relies heavily on cited work rather than data presented in this manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Multiple residues in the CARD8 N-terminus show evidence of positive selection, the HIV-1PR cleavage site overlaps with coronavirus 3CL protease cleavage site, and an ancient viral infection may have driven evolution of the F59-F60 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 rely on cited literature for positive selection evidence (Daugherty and Malik, 2012; Tsu et al., 2023) and coronavirus protease overlap (Tsu et al., 2023). Claim C93 is explicitly speculative. While the hypothesis is plausible and well-reasoned, no direct evidence is provided in this manuscript to test whether an ancient virus drove F60 evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "HIV-1 PAMPs and/or circulating microbial ligands from gut epithelial breakdown (a hallmark of acute HIV-1 disease) are potential sources for TLR priming of HIV-1 target cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 are speculative regarding in vivo priming sources. While C83 is supported by cited literature (Sandler and Douek, 2012), claims C81-C82 are hypotheses based on in vitro TLR priming data. No in vivo data are provided to test these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "HIV-1 infection drives CARD8-dependent pyroptotic cell death in primary human CD4+ T cells ex vivo and in humanized mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by cited recent literature (Wang and Shan, 2023). While not data from this manuscript, the citation is appropriate and relevant to the discussion of pathogenic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "CARD8 inflammasome activation may be relevant to CD4+ T cell depletion in experimental macaque SIV infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is speculative and based on the observation that SIVmac239PR has distinct substrate specificity. No experimental data are provided to test CARD8 involvement in macaque infections. This is appropriately framed as speculation for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background information on inflammasome biology, CARD8 structure and function, mechanisms of CARD8 activation, and prior work on CARD8 sensing of HIV-1PR in latently infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C74 represent background knowledge and cited literature establishing the context for the current work. These are appropriately cited and accurately represent established knowledge in the field. Claim C74 is additionally supported by data in this manuscript using VbP as a positive control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C84",
+      "C88",
+      "C90",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "General knowledge claims about viral protease evolution, SIVcpz adaptations, HIV-1 emergence timing, CARD8 polymorphism, HIV-1 pathogenesis, and SIV pathogenicity in natural and non-natural hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C84, C88, C90, C94-C95, C98-C102 represent established knowledge appropriately cited from the literature. These provide important context for interpreting the experimental findings but are not novel results from this study.",
+    "result_type": "MINOR"
+  }
+]

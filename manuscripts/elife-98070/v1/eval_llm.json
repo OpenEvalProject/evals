@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "DTX3L binds and ubiquitinates single-stranded DNA and RNA. Both full-length DTX3L and truncated constructs (DTX3L 232-C and DTX3L-RD) bind various ssDNA and ssRNA sequences and catalyze their ubiquitination, producing a ~15 kDa product consistent with Ub-nucleic acid conjugates. The modification does not occur on fluorescent labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C36-C39, C43-C44, and C46 collectively demonstrate DTX3L's ability to bind and ubiquitinate ssNAs through multiple complementary experiments including fluorescence polarization binding assays, gel-based ubiquitination assays with multiple labels, and domain mapping studies. The molecular weight calculations and alternative labeling controls provide strong evidence for direct nucleic acid ubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The minimal catalytically competent fragment of DTX3L comprises the C-terminal RING and DTC domains (RD), while the N-terminal region contains putative nucleic acid binding domains. DTX3L 232-C (lacking N-terminal domains) shows reduced autoubiquitination but comparable catalytic activity to full-length DTX3L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C34, and C40-C42 are well-supported by domain deletion experiments, AlphaFold structural predictions, DALI server analysis, and comparative biochemical assays. The data clearly demonstrate that the RD domain is sufficient for catalysis while the N-terminus contains predicted nucleic acid binding domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "DTX3L-RD catalyzes ubiquitination at the 3' hydroxyl group of the 3'-terminal nucleotide of single-stranded nucleic acids. The linkage is an ester bond, as demonstrated by sensitivity to basic pH and hydroxylamine treatment, and blocking the 3' hydroxyl with a phosphate group abolishes ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52, C55-C59 are strongly supported by systematic chemical and biochemical experiments including 5' vs 3' labeling comparisons, pH sensitivity tests, hydroxylamine treatment, and site-specific modifications (2'-F vs 3'-phosphate). The convergent evidence from multiple orthogonal approaches convincingly establishes the modification site and linkage chemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DTX3L-RD exhibits substrate specificity for single-stranded nucleic acids and dsDNA with 3' overhangs. The enzyme requires at least two single-stranded nucleotides at the 3' end, preferentially ubiquitinates sequences ending in adenine (and to lesser extent guanine), and can modify ssDNA ranging from 5 to 80 nucleotides in length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51, C61-C66 are well-supported by systematic substrate specificity studies testing various nucleotide sequences, lengths, and structural configurations. The experiments clearly define the substrate requirements including terminal nucleotide preferences, minimal overhang length, and acceptable size range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The ubiquitination of nucleic acids by DTX3L requires all components of the ubiquitination cascade and is reversibly cleaved by deubiquitinases. The modification is distinct from ubiquitination of ADP-ribosylated nucleic acids, as it is not sensitive to PARG treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C50 are supported by component omission experiments, USP2 treatment demonstrating reversibility, Benzonase treatment confirming nucleic acid involvement, and PARG resistance distinguishing this from Ub-ADPr-NA conjugates. The experiments provide clear evidence for the enzymatic requirements and specificity of the modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The DTC domain binds single-stranded DNA and shares overlapping binding sites for ssDNA and ADPr. NMR chemical shift perturbations show similar binding patterns for both substrates, and competition experiments demonstrate mutual inhibition between ADPr and ssDNA/NAD+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67-C71 are well-supported by NMR HSQC experiments showing chemical shift perturbations upon ligand binding and biochemical competition assays. The similarity in CSPs and reciprocal competition provide strong evidence for overlapping binding sites in the DTC domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The DTC domain facilitates catalysis of Ub transfer through conserved catalytic residues. Mutations of His707, Tyr719, and Glu733 in DTX3L abolish or severely impair ssDNA ubiquitination, indicating these residues are critical for catalysis using the same mechanism as ADPr ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C79, C82-C84 are supported by systematic mutational analysis showing that conserved DTC residues are essential for ssNA ubiquitination. The parallel requirements for ADPr and ssNA ubiquitination support a unified catalytic mechanism, though the inference about mechanism could benefit from additional structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DTX3L-RD exhibits 4.5-fold higher catalytic efficiency for ssDNA (D4) compared to F-NAD+, primarily due to better Km for ssDNA. However, substrate concentration influences preference, as DTX3L-RD shows higher conversion rates for F-NAD+ at elevated concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by kinetic analysis experiments, though the Michaelis-Menten curve for F-NAD+ did not reach saturation, requiring estimation of kinetic parameters. The comparison is valid but the incomplete saturation for F-NAD+ introduces some uncertainty in the quantitative comparison. The conclusion about substrate concentration dependence is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Ubiquitination of ssDNA is unique to DTX3L and DTX3 among DTX family members. The specific arrangement of RING and DTC domains in DTX3L is crucial, as the reaction only occurs in cis and domain-swapped chimeras with DTX2 cannot ubiquitinate ssDNA despite retaining NAD+ ubiquitination activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are well-supported by comparative studies across DTX family members, trans-complementation experiments, sequence specificity tests with DTX2, and chimeric protein analyses. The convergent evidence from multiple experimental approaches strongly supports the conclusion that DTX3L/DTX3 specificity arises from unique domain architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The proposed mechanism for ssNA ubiquitination involves DTC domain binding of ssNAs, RING domain recruitment of E2~Ub, and catalytic residues in the DTC domain enabling Ub transfer to the 3' hydroxyl. The DTC domain substrate repertoire includes ADPr, NAD+, and ADPr-modified substrates in addition to ssNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 present a mechanistic model that is well-supported by the collective experimental evidence including binding studies, domain requirements, mutational analysis, and substrate specificity. However, this is an inferred mechanism that would benefit from direct structural visualization of substrate-enzyme complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The formation of Ub-DNA is time-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by time-course ubiquitination assays showing progressive product formation. This is a straightforward kinetic observation consistent with enzymatic catalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The Ub-DNA linkage is sensitive to basic pH and hydroxylamine treatment, with the band disappearing over time at pH 9.5 and rapidly upon NH2OH treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by chemical treatment experiments. These observations are consistent with ester bond chemistry and support the identification of the modification site, serving as important validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C97"
+    ],
+    "result": "The KHL domains in DTX3L lack the canonical GXXG motif found in typical KH domains, yet DTX3L 232-C (lacking the first KHL domain and RRM) can still bind ssDNA and ssRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C97 are supported by sequence analysis and binding experiments. The observation that DTX3L 232-C retains binding activity despite lacking N-terminal domains suggests the RD region contributes to nucleic acid binding, though the role of the atypical KHL domains remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "DTX3L and DTX3 have structural differences from other DTX family members including smaller RING domains lacking insertions, absence of an AR motif near the DTC pocket causing conformational changes, and an extended groove that could accommodate additional nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 are supported by sequence alignment and structural analysis, but C109 is speculative. While the structural differences are documented, the functional significance of the extended groove and its ability to accommodate nucleotides requires experimental validation through structural studies with bound substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C60",
+      "C78",
+      "C80",
+      "C81",
+      "C94",
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background claims establishing prior knowledge about ubiquitination, the DTX family, and DTX3L/PARP9 complex functions including canonical ubiquitination mechanisms, non-proteinaceous substrate ubiquitination, DTX family composition and domain architecture, ADPr ubiquitination, and roles in DNA damage repair and antiviral defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C35, C60, C78, C80-C81, C94, C96, C98-C104) are appropriately cited to prior literature and represent established knowledge that provides context for the current study. They are not novel findings but necessary background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "DTX3L can ubiquitinate ssRNA containing a poly-A sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by experimental data showing ubiquitination of poly-A containing ssRNA. This extends the substrate specificity findings and has potential biological relevance for mRNA modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "This study reports the first example of direct ubiquitination of single-stranded nucleic acids by DTX3L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by the collective experimental evidence presented in the manuscript. The novelty claim is justified as prior work showed ubiquitination of ADP-ribosylated nucleic acids but not direct ubiquitination of ssNAs themselves.",
+    "result_type": "MAJOR"
+  }
+]

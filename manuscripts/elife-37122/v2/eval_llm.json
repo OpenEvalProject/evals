@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "RAS proteins are highly mutated in human cancers (~30% of tumors) but have eluded drug therapy, with no RAS-targeted drugs currently available in the clinic despite their potential therapeutic value, particularly in cancers like pancreatic cancer with high KRAS mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, C7, C8, and C9 are well-supported by citations to established literature (Downward, 2003; Prior et al., 2012; Kleeff et al., 2016; Cox et al., 2014) and reference to the COSMIC database. These represent established knowledge in the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "RAS is a membrane-bound GTPase that signals through effector interactions to promote cell survival and proliferation. Previous therapeutic approaches including farnesylation inhibitors have had limited success, though intracellular antibodies blocking RAS-effector interactions have shown efficacy in preclinical models, and recent studies have identified compounds binding RAS pockets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 provide well-supported background on RAS biology and prior therapeutic approaches, backed by multiple citations to published literature. These establish the rationale for developing cell-based assays to test RAS inhibitors and represent accurate summaries of established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors developed BRET-based RAS biosensors by fusing RLuc8 to the N-terminus of full-length RAS proteins (KRAS, HRAS, NRAS with various mutations) and GFP2 to the C-terminus of effectors, with optimized linker lengths. All effector domains interact specifically with KRASG12D, reaching donor saturation, and proteins are expressed at equivalent levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C19-C23 describe the biosensor design and initial validation, supported by experimental data in Figures 1A-C and supplementary figures. The BRET signal saturation curves (C22) and western blot data (C23) provide direct evidence for specific interactions and equivalent protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The BRET biosensors were validated using negative controls (KRASS17N showing linear non-specific BRET signal) and positive controls (iDAb RAS specifically inhibiting KRASG12D-effector interactions). A dematured iDAb RAS with reduced affinity (~1 \u03bcM vs 6.2 nM) showed expected changes in BRET50 and BRETmax parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 demonstrate rigorous validation of the biosensor system with appropriate positive and negative controls. The KRASS17N negative control (C24-C25) shows expected linear BRET signal typical of non-specific interactions, while iDAb RAS competition (C29) and the dematured iDAb variant (C27-C28) provide strong evidence for biosensor specificity and sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Compound 3344 binds KRASG12V with 126 nM affinity by CPMG NMR and shows dose-dependent reduction in BRET signal for KRASG12D interactions with multiple effectors (PI3K\u03b1, PI3K\u03b3, CRAF, RALGDS), while control compound Abd-2 shows no effect. The inhibition is specific to RAS-effector interactions and does not affect biosensor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by NMR binding data (Figure 1\u2014figure supplement 3D-E) and BRET dose-response experiments (Figure 1E). The inclusion of Abd-2 as a negative control compound and multiple control BRET pairs (C34) strengthens the conclusion that 3344 specifically inhibits RAS-effector interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A full-length CRAFS257L biosensor was developed that interacts with KRASG12D but not KRASS17N. Both iDAb RAS and compound 3344 inhibit KRASG12D/CRAFFL interaction in a dose-dependent manner and reduce MEK1/2 and ERK1/2 phosphorylation. Compound 3344 shows pan-activity against multiple KRAS G12 mutants (G12A, G12C, G12V, G12R) while Abd-2 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by BRET data (Figures 2A, 2D, 2G) and western blot analysis of downstream signaling (Figures 2B-C, 2E-F). The dose-dependent effects on both BRET signal and pathway biomarkers, tested at multiple time points (3 hr and 20 hr), provide strong evidence for functional inhibition. The pan-mutant activity (C41) is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Wild-type KRAS biosensor responds to EGF stimulation, showing increased BRETmax from 4.02 to 10.01, indicating enhanced KRASWT/CRAFFL interaction. Both iDAb RAS and compound 3344 inhibit this EGF-stimulated interaction in a dose-dependent manner and reduce MEK1/2 and ERK1/2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 extend the biosensor validation to wild-type KRAS with physiological stimulation (EGF). The data in Figures 3A-F demonstrate that the biosensor can detect stimulus-induced changes in RAS-effector interactions and that 3344 inhibits both mutant and wild-type KRAS signaling, supported by both BRET and western blot data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A tripartite KRASG12D/PI3K\u03b1FL/p85\u03b1 biosensor was developed requiring co-expression of p85\u03b1 regulatory subunit for optimal signal. KRASS17N shows no specific interaction. Both iDAb RAS and compound 3344 inhibit KRASG12D/PI3K\u03b1FL interaction in a dose-dependent manner and reduce AKT Ser473 phosphorylation, while Abd-2 shows no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 demonstrate extension of the biosensor platform to the PI3K pathway. The requirement for p85\u03b1 co-expression (C45) is experimentally justified, and the negative control with KRASS17N (C46) validates specificity. BRET and western blot data (Figures 4A-F) consistently show dose-dependent inhibition by 3344 but not Abd-2, affecting both interaction and downstream AKT phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The biosensor toolbox was extended to NRAS and HRAS family members. NRASQ61H and HRASG12V interact with CRAFFL and effector RBDs, showing plateau BRET signals. iDAb RAS inhibits these interactions while Abd-2 does not. Compound 3344 shows dose-dependent inhibition of all NRAS and HRAS interactions with effectors, demonstrating pan-RAS family activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by BRET titration and competition data (Figure 5 and supplements). The extension to NRAS and HRAS with appropriate controls (iDAb RAS vs control, 3344 vs Abd-2) demonstrates the broad applicability of the biosensor platform and establishes 3344 as a pan-RAS inhibitor across all three family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "X-ray crystallography shows compound 3344 binds to KRASQ61H in a previously identified pocket close to the switch regions. Structural superimposition with RAS-effector complexes suggests 3344 inhibits effector binding through steric hindrance, as parts of 3344 would overlap with bound effector structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by X-ray crystallography data (Figure 6A-B, Table 1 with refinement statistics). The binding site identification is validated by citations to prior work (Maurer et al., 2012; Sun et al., 2012). The steric hindrance mechanism (C58) is a reasonable inference from structural superimposition, though it remains a model rather than direct experimental proof of the inhibition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Compound 3344 inhibits endogenous RAS signaling in human cancer cell lines DLD-1 (expressing KRASG13D) and H358 (expressing KRASG12C), decreasing EGF-induced pAKT and pERK1/2 with IC50 of ~5-10 \u03bcM without affecting total AKT or ERK1/2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by western blot data in cancer cell lines (Figure 6C-D) and RT-PCR/sequencing confirmation of KRAS mutations (Materials and Methods). The demonstration of activity in endogenous systems with mutant KRAS validates the biosensor findings and shows 3344 can inhibit RAS signaling in a physiologically relevant context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Compound 3344 shows lower IC50 in endogenous cancer cell assays (~5 \u03bcM) compared to BRET assays (~20 \u03bcM), which the authors attribute to differences in protein expression levels between transient transfection in HEK293T cells versus endogenous expression in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 present a reasonable interpretation of the IC50 difference between overexpression and endogenous systems. The explanation (C65-C66) is logical and consistent with known effects of target protein concentration on apparent inhibitor potency. However, this remains an inference rather than directly tested hypothesis, as protein levels were not quantitatively compared between systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors discuss broader applications of BRET biosensors, noting they have been used successfully for inhibitor discovery, provide quantitative PPI measurements, could be used for library screening with dematured antibodies as acceptors, and may be applicable to studying RAS isoform/mutant-specific properties and other PPI systems in drug development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C72 are largely speculative or represent potential future applications rather than demonstrated results. While C62 is supported by citations and C63 is a reasonable inference from the demonstrated capabilities, claims C68-C69 and C72 about future applications are explicitly speculative. The dematuration strategy (C71) is demonstrated but its general applicability to screening is not tested.",
+    "result_type": "MINOR"
+  }
+]

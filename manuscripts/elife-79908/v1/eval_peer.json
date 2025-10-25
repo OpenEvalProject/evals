@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C18",
+      "C19",
+      "C28",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model demonstrates that neurons develop robust selectivity to task-relevant abstract variables (category and context) after learning through gradient descent. This selectivity increase is universal across all parameter settings and independent of circuit or task details.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, stating the paper 'provides compelling evidence that neural networks trained on two-way classification tasks will develop responses whose category and context selectivity profiles depend on key network details.' The robustness of selectivity increases is not questioned, though reviewers request clarification about the dependence on gradient descent specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C22",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C42",
+      "C47",
+      "C48"
+    ],
+    "result": "The model shows that category and context correlations (positive vs. negative) depend on specific circuit parameters including activation function thresholds and gains, learning rate ratios, and task features like stimulus number. The model can produce both positive and negative correlations depending on these parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this as a key contribution, noting the paper provides 'compelling evidence' that selectivity profiles 'depend on key network details, such as neural activation functions and initial connectivity.' They recognize these results 'can explain apparently contradictory results in the experimental literature.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C43",
+      "C44"
+    ],
+    "result": "The model demonstrates that learning reorganizes neural activity into distinct clouds in activity space, with activity vectors acquiring components along common stimulus-independent directions determined by category (and context in the context-dependent task).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this geometric interpretation of learning dynamics. They accept the mathematical framework and request only more intuitive explanations of the mechanisms, particularly for context selectivity emergence, indicating acceptance of the underlying results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The emergence of context-related structure in the intermediate layer is a signature of gradient-descent learning, occurring even though the readout neuron does not depend on context. This emerges because intermediate-layer representations evolve based on both target category and input correlations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly request clarification about this result, asking 'would it be possible to give the intuition for the emergence of context selectivity, in a couple of sentences?' and noting 'it is important because the emergence of context selectivity is the most unexpected of the results.' They also question 'how much of the results presented here depend on doing gradient descent, as opposed to more generally minimising the loss?'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C49",
+      "C50"
+    ],
+    "result": "The model predicts that neurons developing strong selectivity are those initially strongly connected to downstream readout neurons before learning. The learning algorithm exhibits 'inertia,' relying heavily on initial connectivity structure rather than learned changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these predictions about the role of initial connectivity. They accept the framework and request discussion about generalization and model choices, but do not question the specific findings about initial connectivity determining selectivity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model predicts an asymmetry between category and context selectivity: neurons with pure category selectivity and mixed selectivity should be observed, but not neurons with pure context selectivity (unless a context readout is included). This asymmetry arises from the readout structure, and initial activity patterns determine functional specialization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers recognize these as 'new experimental predictions for testing in the future' and do not challenge the logic or findings. They accept the model's predictive framework, though they request discussion about generalization to more complex scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C59"
+    ],
+    "result": "The model makes experimentally testable predictions, including that increasing stimulus number should push category correlation from positive to negative values, and provides predictions about circuitry supporting abstract knowledge acquisition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the predictive value, stating the results 'make new experimental predictions for testing in the future.' They recognize the paper's contribution to interpreting experimental findings and generating testable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The model is based on the hypothesis that synaptic connectivity evolves through gradient descent on an error function, which can be implemented in biologically plausible ways and enables high performance on tasks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly question the dependence on gradient descent, asking 'how much of the results presented here depend on doing gradient descent, as opposed to more generally minimising the loss?' They note this question was 'apparently already asked' in a previous review round and 'the rebuttal did not really answer it.' This indicates uncertainty about whether gradient descent specifically is necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The model architecture consists of a sensory input layer, intermediate layer, and readout neuron, with two types of tasks: simple categorization (fixed stimulus-category associations) and context-dependent (reversed associations across contexts).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the model architecture itself. Reviewer 2 requests clarification about context implementation ('I am a bit confused how you implemented the context'), but this is a request for explanation rather than a challenge to the validity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing that neurons in associative cortex develop selectivity to abstract variables during learning, with different studies reporting both negatively correlated/symmetric responses (PFC) and positively correlated/asymmetric responses (LIP cortex).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these as established experimental findings that motivate the study. They recognize the paper addresses 'apparently contradictory results in the experimental literature,' implicitly accepting the characterization of existing experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Experimental studies in rodent PFC found that highly selective neurons projected to the same downstream area, consistent with the model's predictions about initial connectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this supporting experimental evidence. They accept the paper's framework for relating model predictions to existing experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Before learning, neural responses are random and uncorrelated. After learning, correlation matrices develop category-dependent structure, with the sign of correlations (positive or negative) determining whether neurons show same-sign or opposite-sign changes in responses to different categories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these characterizations of pre- and post-learning activity patterns. They accept the correlation analysis framework and focus their questions on interpretation and generalization rather than the validity of these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The model provides a framework for interpreting seemingly disparate experimental findings and can recapitulate experimental observations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this contribution, stating 'The findings of the paper are very valuable for neuroscientists studying the learning of abstract representations' and that results 'can explain apparently contradictory results in the experimental literature.'",
+    "result_type": "MAJOR"
+  }
+]

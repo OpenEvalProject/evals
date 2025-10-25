@@ -1,0 +1,2844 @@
+{
+  "submission": {
+    "id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:13:59.653857Z",
+    "updated_at": "2025-10-25T01:13:59.653857Z"
+  },
+  "content": [
+    {
+      "id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "content_type": "manuscript",
+      "content_text": "# Wild worm embryogenesis harbors ubiquitous polygenic modifier variation\n\n## Authors\n\n- Annalise B Paaby<sup>1</sup> \u2020\n- Amelia G White<sup>1</sup>\n- David D Riccardi<sup>1</sup>\n- Kristin C Gunsalus<sup>1</sup>\n- Fabio Piano<sup>1</sup>\n- Matthew V Rockman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology and Center for Genomics and Systems Biology New York University New York United States\n2. New York University Abu Dhabi Abu Dhabi United Arab Emirates\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.09178.001 Embryogenesis is an essential and stereotypic process that nevertheless evolves among species. Its essentiality may favor the accumulation of cryptic genetic variation (CGV) that has no effect in the wild-type but that enhances or suppresses the effects of rare disruptions to gene function. Here, we adapted a classical modifier screen to interrogate the alleles segregating in natural populations of Caenorhabditis elegans : we induced gene knockdowns and used quantitative genetic methodology to examine how segregating variants modify the penetrance of embryonic lethality. Each perturbation revealed CGV, indicating that wild-type genomes harbor myriad genetic modifiers that may have little effect individually but which in aggregate can dramatically influence penetrance. Phenotypes were mediated by many modifiers, indicating high polygenicity, but the alleles tend to act very specifically, indicating low pleiotropy. Our findings demonstrate the extent of conditional functionality in complex trait architecture. DOI: http://dx.doi.org/10.7554/eLife.09178.001\n\n## Introduction\n\nThe effect of gene disruption on an organism depends on a combination of the gene's function and the genetic background in which it resides (Chandler et al., 2013; Chari and Dworkin, 2013; Vu et al., 2015). The average human genome contains loss-of-function alleles for 100 or more genes, some of which cause known genetic diseases (Abecasis et al., 2010; MacArthur et al., 2012); disease expression depends on exposure of the disease allele, such as by homozygosity, but also on variants elsewhere in the genome that act as penetrance modifiers (Hamilton and Yu, 2012). When looked for, such modifier variation is routinely observed; in model organisms, this phenomenon is recognized as genetic background effects (Chandler et al., 2013).\n\nGenetic background effects are an example of cryptic genetic variation (CGV), the class of mutations that affect phenotype under rare conditions (Gibson and Dworkin, 2004; Paaby and Rockman, 2014). Unlike mutations that are always silent with respect to phenotype, or mutations that always affect phenotype, CGV is invisible until a perturbation changes the molecular, cellular, or developmental processes that govern its phenotypic expression. In addition to genetic perturbations, CGV may be \u2018released\u2019 by environmental exposure, like the modern changes to diet that have been hypothesized to underlie the emergence of complex metabolic diseases in humans (Gibson, 2009). The concept of CGV has been of longstanding interest to evolutionary theorists because it explains how populations might store alleles that enable adaptation when conditions change (Dobzhansky, 1941; Waddington, 1956; McGuigan et al., 2011), but its extent, architecture, and role in nature is largely unknown. Most of our empirical knowledge of CGV arises from studies that inhibited the heat shock chaperone protein HSP90 to reveal previously-silent mutational effects across many taxa, which probably represents a general mechanism that buffers genome-wide functional variation (Queitsch et al., 2002; Yeyati et al., 2007; Jarosz and Lindquist, 2010; Chen and Wagner, 2012; Rohner et al., 2013).\n\nIn this study, we aimed to systematically uncover and characterize genome-wide variation affecting a major metazoan process. C. elegans embryogenesis is both complex and typically invariant, which may favor the accumulation of mutations that act in a conditionally-functional manner (Gibson and Dworkin, 2004; Paaby and Rockman, 2014). We revealed these alleles by perturbing known embryonic genes and measuring differences in penetrance across multiple wild-derived strains.\n\n## Results\n\nTo uncover the nature and extent of natural genetic modifiers in\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09178/elife-09178-fig1-v3.jpg)\n\n**Figure 1.:** (A) Under ordinary conditions, wild-type Caenorhabditis elegans embryos hatch into larvae. (B) We targeted maternally-expressed genes by RNAi to induce embryonic lethality that varied in penetrance across strains. (C) L1 larvae in the parental generation were fed Escherichia coli expressing dsRNA against target genes, in 96-well plates in liquid media. 5 days later, wells were imaged to capture the penetrance of embryonic lethality in the next generation. (D, E) Raw images were evaluated using DevStaR (White et al., 2013), which identified objects as larvae (blue), dead embryos (green), or adults (red).DOI: http://dx.doi.org/10.7554/eLife.09178.003\n\nThe experiments revealed extensive variation in embryonic lethality caused by genetic differences among strains (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09178/elife-09178-fig2-v3.jpg)\n\n**Figure 2.:** Each cell represents the embryonic hatching success for a strain and targeted gene, averaged from at least eight replicate wells. The rows and columns are ordered by average hatching, and boxplots illustrate hatching phenotypes for each strain (across all targeted genes) and for each gene (across all strains).DOI: http://dx.doi.org/10.7554/eLife.09178.004\n\nThe variation in embryonic lethality attributable to informational modifiers, represented by genetic strain effect in our statistical model, provides an estimate of each strain's sensitivity to exogenous germline RNAi. We observed dramatic variation in sensitivity. Most strains exhibited moderately reduced lethality penetrance relative to the RNAi-sensitive laboratory strain N2, but two strains, the germline RNAi-insensitive strain CB4856 (Tijsterman et al., 2002) and the genetically divergent strain QX1211, showed consistently weak penetrance across the targeted genes (Figure 2). CB4856 harbors a ppw-1 loss-of-function mutation that confers resistance to germline RNAi (Tijsterman et al., 2002), but sequencing shows that QX1211 and other strains with intermediate sensitivity do not. We found that a ppw-1 mutation in the N2 background was more sensitive than CB4856, showing high lethality on mex-3 and pos-1 (Figure 2), indicating that some of the difference between N2 and CB4856 is ppw-1-independent. These results demonstrate that insensitivity to germline RNAi is genetically complex and that wild C. elegans populations harbor many alleles affecting germline RNAi (Elvin et al., 2011; Pollard and Rockman, 2013).\n\nGenetic modifiers of RNAi efficacy in our experiment may affect uptake of dsRNA, general RNAi machinery, or tissue-specific RNAi requirements. To distinguish among these, we targeted tubulin (tba-2), which is expressed ubiquitously. Among wild-type strains, all but four (KR314, JU396, CB4852 and ED3040) showed complete sensitivity to somatic RNAi, indicated by developmental arrest of P0 animals on tba-2, which demonstrates that most wild-type strains take up dsRNA and are capable of RNAi. An rrf-1 deletion mutant, which is sensitive to RNAi against genes expressed in the germline but resistant to RNAi in most somatic tissues (Yigit et al., 2006; Kumsta and Hansen, 2012), grew to adulthood but laid dead embryos, suggesting that germline RNAi successfully silenced maternal tba-2 required for embryonic development. The four somatically-resistant wild strains also exhibited embryonic lethality on tba-2 and other germline-expressed genes, confirming that the modifier variability acts tissue-specifically.\n\nGene-specific modifiers explain as much of the total variation as the informational modifiers, as estimated by the strain-by-gene interaction term in our model (Table 1), and represent cryptic genetic variation in developmental processes. The modifiers could act via network bypasses, where loss of the targeted gene reveals variation among strains in developmental network structure (e.g., Zhang and Emmons, 2000). Gene-specific modifiers could also act on the extent of the knockdown at a gene-specific level, in a manner akin to intragenic suppressors, resulting in variable residual activity of the targeted gene. This latter class potentially includes gene-specific variation in RNAi sensitivity, perhaps due to heritable variation in transcriptional licensing (Shirayama et al., 2012; Seth et al., 2013), and variation in wild-type expression level of the targeted gene, due to cis- or trans-acting regulatory variation.\n\nEach of the 29 genes we targeted showed significant strain-by-gene interaction coefficients, indicating that genetic modifiers of embryonic gene perturbations are pervasive in natural populations. The coefficients, which are statistical estimates of the gene-specific cryptic phenotypes (see \u2018Materials and methods\u2019), exhibit low correlations between gene perturbations known to share function: 36 gene pairs have known physical or genetic interactions, but these did not show significantly elevated phenotypic correlations (\u03c72 = 2.30, df = 1, p = 0.13). For example, despite high interaction within the par network, which underlies polarization of the zygote, the average pairwise par gene correlation was no higher than the average correlation across all genes (Supplementary file 1). Coefficients for par-3 and par-6 were correlated (correlation = 0.40, p = 0.003), but not for par-3 and pkc-3 (correlation = \u22120.17, p = 0.24) or par-6 and pkc-3 (correlation = 0.12, p = 0.41), even though their proteins together comprise the anterior polarity complex (Munro et al., 2004). This indicates that the cryptic genetic modifiers have low developmental pleiotropy (Paaby and Rockman, 2013). That is, variation at these loci must influence a very restricted suite of developmental events, since only specific perturbations uncover evidence of their phenotypic effects. For those associated with polarization of the zygote, this may be explained by the high degree of redundancy observed in the process (Beatty et al., 2010; Fievet et al., 2013; Motegi and Seydoux, 2013), as redundancy allows shared function of some factors and specificity of others. Exceptions to the overall trend of low correlation between gene perturbations are discussed below, in the context of genome-wide associations. The low pleiotropy of cryptic alleles may be a result of purifying selection, which over evolutionary time should deplete populations of pleiotropic alleles as they may be more likely to be deleterious (Stern, 2000).\n\nOur quantitative-genetic approach is uniquely able to discern modifier effects that depend simultaneously on variants at many loci. In order to evaluate the polygenicity of the gene-specific variation we observed, and to ask whether cryptic alleles are rare or common in populations, we assessed whether genome-wide genetic similarity among strains explained patterns of phenotypic similarity (Kang et al., 2008). Specifically, we estimated the genomic heritability of the strain-by-gene coefficients. This approach estimates the proportion of gene-specific modifier effects caused by alleles of intermediate frequency at many loci, as these are best captured in estimates of strain relatedness.\n\nWe found that for most of the perturbations, variation in lethality penetrance is due to common alleles at many contributing cryptic loci. Of the 29 genes we targeted, 12 exhibited gene-specific modifier variation with genomic heritability estimates greater than 0.80; for 19 genes, estimates were greater than 0.60 (Table 2). However, genotypic similarity failed to explain phenotypic similarity for perturbations of emb-30, mel-32, mex-3, mom-5, par-3 and sur-6 (Table 2). Because these genes exhibit nonzero variance in their associated strain-by-gene interaction coefficients, the strains necessarily harbor cryptic genetic differences affecting lethality under these perturbations. Thus, the genetic architecture of the cryptic variation associated with these genes is likely comprised of few loci, rarer alleles, or both.10.7554/eLife.09178.006Table 2.Genome heritability estimates for CGV phenotypes associated with 29 targeted genesDOI: http://dx.doi.org/10.7554/eLife.09178.006Targeted geneHeritability estimatep-valueaph-10.67470.16car-10.91490.02cdc-370.73080.11cdc-420.36390.29emb-300.00000.46fat-20.35480.32lag-10.90750.01lsy-220.12700.43mel-260.82450.05mel-280.84100.04mel-320.00000.47mex-30.00000.76mom-20.74850.09mom-50.00000.46nmy-20.48410.26par-10.78710.08par-20.97190.01par-30.00000.77par-40.90320.07par-50.66400.15par-60.92580.01pkc-30.81360.06pos-10.73070.10rfc-30.69580.13rpn-90.87150.02rpn-100.83970.05skn-10.85990.03skr-20.89610.02sur-60.00000.47\n\nTo locate genome regions harboring gene-specific modifiers, we performed genome-wide association (GWA) mapping using the strain-by-gene interaction coefficients as phenotypes. GWA in C. elegans benefits from high linkage disequilibrium in this species, which reduces the number of tests required to scan the genome, and from high biological replication, which reduces the number of required genotypes relative to human GWA (Rockman and Kruglyak, 2009; Andersen et al., 2012). Nine of the 29 analyses identified at least one single nucleotide polymorphism (SNP) associated with phenotype under a strict Bonferroni-corrected threshold for significance (Supplementary file 2). Across all tests, a total of 19 SNPs or SNP haplotype blocks, defined by SNPs in high linkage disequilibrium (R2 > 0.9), exhibited significant associations at that threshold (Supplementary file 2), while many additional variants exhibit suggestive associations (p < 0.001).\n\nTo validate the GWA findings, we introgressed a segment of chromosome II from strain N2 into the genome of wild isolate EG4348. Gene-specific modifier phenotypes for\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09178/elife-09178-fig3-v3.jpg)\n\n**Figure 3.:** Introgression of part of chromosome II from strain N2 (yellow) into strain EG4348 (blue) rescues the N2 phenotype on lsy-22 (F = 12.15, DF = 2, p = 0.001) and pkc-3 (F = 55.87, DF = 2, p < 0.001); genome-wide analyses found associations between this region and hatching phenotypes for both lsy-22 and pkc-3.DOI: http://dx.doi.org/10.7554/eLife.09178.00710.7554/eLife.09178.008Figure 3\u2014source data 1.Figure 3, which reports hatching for three different strains targeted by RNAi against genes lsy-22 and pkc-3.It provides counts of dead embryos (emb) or hatched larvae (larv) on individual agarose-media plates seeded with bacteria expressing dsRNA for the target genes. In the data file, the strain QG611 has the N2 genetic background.DOI: http://dx.doi.org/10.7554/eLife.09178.008\n\nTo distinguish between intragenic and extragenic modifiers, we considered the list of 129 associated SNPs (in 27 haplotype blocks) with p-values less than 10\u22124 (Supplementary file 2), all of which exceed the significance of the validated lsy-22 and pkc-3 modifiers. These associations were spread across 15 targeted-gene phenotypes. No SNPs lie within or near the locus of the targeted gene, with the exception of one SNP within the mel-28 locus that associates with the mel-28 phenotype. The mel-28 phenotype is also associated with multiple other SNPs elsewhere in the genome. Thus, most of the CGV detectable by GWA is caused by extragenic modifiers.\n\nExtragenic modifiers may work by affecting, in trans, the expression level of the targeted gene. Recent work shows that differences in severity of RNAi phenotype, for four C. elegans strains perturbed at electron transport chain genes, are associated with differences in expression level of the targeted gene (Vu et al., 2015). However, we find no evidence for the reported pattern of lower expression explaining more severe phenotypes. We examined published transcript abundances for our 29 target genes measured in 4-cell embryos (Grishkevich et al., 2012) under standard conditions in five strains. Five of the genes exhibited significant variation in expression among the strains. In contrast, RNAi against 28 induced significant gene-specific variation in embryonic lethality among the five strains. Overall, both for genes with significant variation and for the whole set, lower expression of the target gene was usually correlated with less severe RNAi phenotypes (20 of 29 genes, p = 0.06), though the correlations are weak. Although undetectable differences in transcript level may nevertheless contribute to embryonic survival, these results suggest that much of the gene-specific modifier effect we observe depends on variation beyond the target gene.\n\nOur GWA mapping identified few SNPs associated with more than one phenotype. For example, lethality phenotypes for 4 of the 7 targeted polarity genes (par-2, -4, -6 and pkc-3) were associated with SNPs, but none were shared. The discrete nature of the genotype\u2013phenotype associations further implies low developmental pleiotropy of the cryptic alleles; variants with effects under one perturbation have no detectable effects under another.\n\nHowever, the rare instances of multiple associations for individual SNPs implicate a relationship between the targeted genes (Supplementary file 2). The co-association of SNPs in a haplotype block on chromosome IV with lethality phenotypes for rpn-9 and rpn-10 support a known relationship, as rpn-9 and rpn-10 both encode non-ATPase regulatory subunits of the proteasome and are predicted to interact with each other (Zhong and Sternberg, 2006; Lee et al., 2008). The haplotype, which spans approximately 10 kb, was also significantly associated with lethality phenotypes for car-1, mom-5, and skn-1; skn-1 has a role in proteasome-mediated protein homeostasis (Li et al., 2011). Separately, modifier phenotypes for pkc-3, involved in anterior-posterior polarity in the early embryo, and rfc-3, which shows homology to DNA replication factors C and effects on cell cycle synchrony (Piano et al., 2002), are associated with SNPs on both chromosome III and X. Because the co-associations occur twice, with unlinked SNPs (R2 = 0.26), they implicate the presence of at least two interacting cryptic alleles and provide independent lines of evidence for a relationship between pkc-3 and rfc-3, genes with no reported interactions or shared functions.\n\n## Discussion\n\nWe have uncovered pervasive CGV that modifies the probability that an embryo will survive a gene perturbation. By evaluating the effects of naturally-occurring mutations on gene knockdowns, we explored a genotypic space that is distinct from that accessible to conventional screens. Our findings provide complementary insight, including discovery of modifier activity that may be detectable only when effects are moderate (Fievet et al., 2013) or polygenic (Mackay, 2014).\n\nWe describe the variation we uncovered as \u2018cryptic\u2019 because its effect on embryonic survival is dramatically magnified under perturbed conditions. Without gene perturbation, our strains exhibit little embryonic lethality. However, under ordinary conditions the strains vary in gene expression and other cellular or developmental phenotypes (Grishkevich et al., 2012; Farhadifar et al., 2015), which may be the mechanisms by which the cryptic alleles influence the penetrance of the primary perturbation. Previously, we and others have described such differences as variation in \u2018intermediate\u2019 phenotypes (F\u00e9lix and Wagner, 2008; Paaby and Rockman, 2014); whether a genetic variant is cryptic requires definition of the focal phenotype, since even at the morphological level an allele can be cryptic in one trait but penetrant in another (Duveau and F\u00e9lix, 2012).\n\nExploration of CGV is not new: CGV has been demonstrated following perturbation of candidate genes (Gibson and Hogness, 1996; Dworkin et al., 2003; Cassidy et al., 2013; Chandler et al., 2013; Chari and Dworkin, 2013); its potential role in adaptive evolution has been considered in diverse systems (Dobzhansky, 1941; Waddington, 1953; Masel, 2006; Ledon-Rettig et al., 2010; McGuigan et al., 2011; Duveau and F\u00e9lix, 2012; Rohner et al., 2013); and most extensively, it has been characterized following inhibition of HSP90 (Rutherford and Lindquist, 1998; Queitsch et al., 2002; Yeyati et al., 2007; Jarosz and Lindquist, 2010). Here, we show by systematic evaluation that the phenomenon of conditionally functional variation pervades even the highly stereotyped and controlled process of embryogenesis.\n\nWe found that gene-specific cryptic variation affects every targeted gene, implying that wild populations harbor many enhancers and suppressors of critical embryonic genes. In humans, such penetrance modifiers may mediate expression of genetic diseases arising from loss-of-function mutations (Abecasis et al., 2010; Hamilton and Yu, 2012; MacArthur et al., 2012), and if their crypsis is environmentally influenced they may also explain modern disease susceptibility (Gibson, 2009). Our screen also revealed dramatic variation among wild-type strains in their responses to exogenous RNAi in the germline. Somatic RNAi response has been shown to influence C. elegans susceptibility to viral infection; variation in germline RNAi may affect vertical viral transmissibility (F\u00e9lix et al., 2011) as well as transposon activity (Sijen and Plasterk, 2003; Vastenhouw and Plasterk, 2004). The variation we describe illustrates how conditionally-functional relationships between genes may pervade the variation on which natural selection acts, affecting how complex traits evolve (True and Haag, 2001; F\u00e9lix, 2007; Wang and Sommer, 2011; Verster et al., 2014) and the nature of their genetic architecture (Mackay, 2014). Moreover, this variation has major implications for model system biologists that work with a single genetic strain.\n\n## Materials and methods\n\n## C. elegans strains\n\nWe evaluated laboratory strain N2, originally derived from Bristol, England, and 54 wild-type strains derived from populations around the world. The wild-type strains were chosen with reference to genotype data (Rockman and Kruglyak, 2009; Andersen et al., 2012); we avoided haplotype-identical isolates, which can occur even across disparate sampling locations, and included the most diverged genotypes at the population level. The wild-type strains were: AB1, AB2 (Adelaide, Australia), CB3197, PS2025 (Altadena, CA, USA), CB3198 (Pasadena, CA, USA), CB4852 (Rothamsted, England), CB4856 (Hawaii, USA), CB4857 (Claremont, CA, USA), CB4932 (Taunton, England), ED3010, ED3017, ED3021 (Edinburgh, Scotland), ED3040 (Johannesburg, South Africa), ED3042, ED3046 (Western Cape, South Africa), ED3073 (Limuru, Kenya), EG4347, EG4348, EG4945, EG4951 (Salt Lake City, UT, USA), EG4724 (Amares, Portugal), JU1088 (Japan), JU1171, JU1172 (Chile), JU258 (Madeira, Portugal), JU301 (LeBlanc, France), JU319, JU347 (Merlet, France), JU362, JU366, JU371, JU694 (Franconville, France), JU396, JU398, JU399, JU406 (Hermanville, France), JU440 (Beauchene, France), JU533 (Primel, France), JU563 (Sainte Barbe, France), JU642 (Le Perreux, France), KR314 (Vancouver, Canada), LKC34 (Madagascar), MY1 (Lingen, Germany), MY14, MY15, MY16 (Mecklenbeck, Germany), MY18, MY21 (Roxel, Germany), PB303 (isolated from an isopod from Ward's Biological Supply), PB306 (isolated from an isopod from Connecticut Valley Biological Supply), PX174 (Lincoln City, OR, USA), PX179 (Eugene, OR, USA), QX1211 (San Francisco, CA, USA), and QX1218 (Berkeley, CA, USA). Isolates were acquired from the Caenorhabditis Genetics Center or kindly shared by members in the worm community. We also assayed N2 mutants NL2557, which carries a deletion at ppw-1 (pk1425) that confers resistance to RNAi in the germline (Tijsterman et al., 2002), and NL2098, which carries a deletion at rrf-1 (pk1417) that confers resistance to RNAi in most somatic tissues (Yigit et al., 2006; Kumsta and Hansen, 2012). These were provided by the Caenorhabditis Genetics Center, which is funded by NIH Office of Research Infrastructure Programs (P40 OD010440).\n\n## Phenotyping embryonic lethality in liquid culture\n\nWorms were grown to large numbers on agarose-media plates, and healthy embryos at least two generations past starvation or thawing were collected using standard bleaching techniques. For each strain, \u223c10,000 embryos were plated onto a 15 cm agarose-media plate densely seeded with E. coli OP50. Worms were reared at 20\u00b0C with food until gravid, then bleached and the embryos synchronized to the arrested L1 larval stage by rocking in M9 buffer overnight at 20\u00b0C. Following the methodology for growing and imaging worms in 96-well plates described in ref. 27, larvae were washed and diluted to 10 worms per 20 \u03bcl of S buffer with additives. Worms were dispensed with a peristaltic pump (Matrix Wellmate) in 20 \u03bcl volumes into wells of flat-bottomed 96-well plates (in rows, 8 strains per plate) already containing 30 \u03bcl of the appropriate RNAi feeding bacteria. Each plate was replicated eight times, and N2 was dispensed on every plate. After dispensing, plates were stored at 20\u00b0C in sealed humid chambers for 5 days. Three sets of eight worm strains were dispensed per experimental cycle; we performed a total of three cycles over 3 months.\n\n## RNAi vectors\n\nIn our initial survey, we targeted 41 germline-expressed genes and one somatic gene (tba-2). The germline-expressed genes were chosen following exploratory examination of a larger set of embryonic genes for which observations of embryonic lethality phenotypes were reported on wormbase.org. The final set of 41 were selected by eliminating genes with effects on post-embryonic development or sterility, by including genes with a range of lethality penetrance in N2, and by including the seven core members of the par pathway. We targeted the genes by feeding the worms HT115 E. coli bacteria expressing dsRNA for their targets. Bacteria had been transformed with pL4440-derived RNAi feeding vectors into which target DNA had been cloned (Timmons et al., 2001) and which carry genes for ampicillin and tetracycline resistance. We also included E. coli carrying the empty pL4440 vector, for a total of 43 RNAi vectors in the survey. The majority of the RNAi vectors we used were obtained from the Ahringer feeding library (Kamath and Ahringer, 2003). These included: aph-1 (VF36H2L.1), car-1 (Y18D10A.17), cdc-37 (W08F4.8), cdc-42 (R07G3.1), ceh-18 (ZC64.3), cyb-2.1 (Y43E12A.1), emb-30 (F54C8.3), fat-2 (W02A2.1), gad-1 (T05H4.14), lag-1 (K08B4.1), lin-5 (T09A5.10), lsy-22 (F27D4.2), mel-26 (ZK858.4), mel-28 (C38D4.3), mel-32 (C05D11.11), mes-1 (F54F7.5), mex-3 (F53G12.5), mom-2 (F38E1.7), mom-5 (T23D8.1), nmy-2 (F20G4.3), nos-3 (Y53C12B.3), ooc-3 (B0334.11), par-1 (H39E23.1), par-2 (F58B6.3), par-3 (F54E7.3), par-5 (M117.2), par-6 (T26E3.3), pkc-3 (F09E5.1), pos-1 (F52E1.1), rfc-3 (C39E9.13), rpn-10 (B0205.3), rpn-12 (ZK20.5), rpn-9 (T06D8.8), skn-1 (T19E7.2), skr-2 (F46A9.4), spat-1 (F57C2.6), spat-2 (Y48A6B.13), sur-6 (F26E4.1), tba-2 (C47B2.3), and ztf-1 (F54F2.5). We also used two feeding vectors created and kindly shared by M. Mana, for genes gpb-1 (F13D12.7) and par-4 (Y59A8B.14).\n\nWe constructed a frozen RNAi bacterial feeding library in 96-well plates with 20% glycerol. The bacteria were distributed across the plates in columns (12 vectors per plate); the mom-2 vector was included on every plate. Using a 96-pin replicator, bacterial colonies were transferred from the frozen libraries and grown on LB agar plates (100 \u03bcg/ml ampicillin, 12 \u03bcg/ml tetracyclin). LB broth (50 \u03bcg/ml ampicillin) in 96-deep-well plates was inoculated from the solid cultures using the pin replicator and grown overnight in a 37\u00b0C shaker. Cultures were induced with 1 mM IPTG for two hours and dispensed into 96-well flat-bottom plates using a Tecan Aquarius robot.\n\n## Excluding genes from the analysis\n\nAlthough we evaluated 41 genes in our experiment, in our final analysis we included results only for 29. Perturbing gpb-1 and lin-5 induced growth defects in multiple strains such that the parental generation of worms failed to develop to reproductive maturity, indicating that these genes have effects outside of embryogenesis. We also identified ten genes (ceh-18, cyb-2.1, gad-1, mes-1, ooc-3, nos-3, rpn-12, spat-1, spat-2 and ztf-1) that induced no or extremely low embryonic lethality. As they were indistinguishable from the empty vector negative control, we excluded them from analysis.\n\n## Image acquisition and data extraction\n\n5 days after the experimental cycle was initiated, the L1 larvae had developed into egg-laying adults and consumed the RNAi bacteria so that the wells were optically clear. Wells were photographed at the point at which viable embryos had hatched but not developed past early larval stages. We captured single images of each well using a DFC340 FX camera and a Z16 dissecting microscope (Leica Microsystems, Inc., Buffalo Grove, IL), a Bio-precision motorized stage with adaptors for the 96-well plates and stage fittings (Ludl, Inc., Hawthorne, NY), and Surveyor software from Media Cybernetics, Inc. (Warrendale, PA). We used a 1.2 ms exposure at 17.3\u00d7 magnification.\n\nData were extracted from the images using the automated image analysis system DevStaR (White et al., 2013). DevStaR is an object recognition machine that classifies each object in the image as an adult, larva or embryo using a support vector machine and global shape recognition. Embryonic lethality estimates were derived from the proportion of embryos in each well relative to all progeny (embryos plus larvae). During the development of DevStaR, each of the approximately 30,000 images in this experiment were manually evaluated and assigned qualitative scores for the number of embryos and the number of larvae, and exact counts were determined for the adults in each well. These data provided independent phenotype estimates and demonstrate that DevStaR is accurate and reliable (White et al., 2013), and we used the manually-collected adult count data in our analyses evaluating the number of adults in each well.\n\n## Statistical analyses\n\nThe counts of dead embryos and living larvae from each experimental well were bound together as a single response variable and modeled using a generalized linear model with a quasi-binomial error structure. In the central analysis, in which we evaluated 55 strains and 29 genes, the model included main effects of strain, targeted gene, number of adult worms per well, and experimental date; and interaction terms for strain-by-gene, strain-by-adults and gene-by-adults, in the form:E(Y)=g\u22121(\u03b20+\u03b2StrainXStrain+\u03b2GeneXGene+\u03b2AdultsXAdults+\u03b2DateXDate+\u03b2Strain*GeneXStrainXGene+\u03b2Strain*AdultsXStrainXAdults+\u03b2Gene*AdultsXGeneXAdults)\n\nwhere g\u22121 represents a logit link function. The analysis was conducted using the glm function in R Development Core Team (2010) and model fit was examined with the deviance statistic.\n\nCoefficients from the strain-by-gene interaction term in this model were used as estimates of gene-specific CGV, as they provide quantitative measures of probability of embryonic lethality associated with each perturbation after accounting for contributions from the general degree of lethality of the perturbation, the strain effect associated with variation in informational modifiers affecting germline RNAi, and other experimental variables. The significance of each coefficient was computed by assessing the coefficient ratio against the t-distribution using the summary.glm function. We also performed a mixed-model analysis using the glmer function in the R package lme4 (Bates, 2010) with a logit link function and a binomial error structure, in which all effects except the number of adults were specified as random. Results from this analysis were consistent with the fixed-effects analysis, including tight correlation between the fixed-effect coefficients and the mixed-effect estimates and between the downstream GWAS results; we only report results from the fixed-effects analysis. Other analyses, including those exploring confounding effects of experimental design, fitted models with additional terms for well position and bacterial source to subsets of the data. To identify best-fitting models, terms were sequentially reduced from the full model and model comparison was achieved with the F statistic.\n\nCorrelations among gene perturbations were estimated using the Spearman Rank method in R. The coefficients, extracted from the generalized linear model, for each strain on each targeted gene were compared for each pairwise combination of genes. Evidence for known interactions among pairs of genes was collated from wormbase.org (February 2015) and includes physical and genetic interactions. We tested whether gene pairs with known interactions had higher phenotypic correlations using the Kruskal\u2013Wallis method in R.\n\n## Experimental replication and controls\n\nBecause we arranged worm strains in fixed rows and RNAi vectors in fixed columns across the 96-well experimental plates, well position was a potentially confounding source of variation in the data. The source of each bacterial culture was also potentially confounding, as each culture was grown independently for each strain on a plate. To estimate the contribution of these variables to the lethality phenotypes, we examined hatching variation for strain N2 on targeted gene mom-2, which we included in every plate. The dataset includes counts of dead and alive offspring from 285 experimental wells. Independent cultures of E. coli bacteria expressing dsRNA against mom-2 only weakly affected hatching (F = 3.12, DF = 2, p = 0.046) (Table 3), and whether a well was on the edge, near the edge, or in the center of the plate had no effect on phenotype (F = 1.39, DF = 2, p = 0.251).10.7554/eLife.09178.009Table 3.Factorial analysis of deviance of strain N2 lethality on targeted gene mom-2DOI: http://dx.doi.org/10.7554/eLife.09178.009DfDevianceResid. DfResid. DevFPr (>F)NULL\u2013\u20132849191.7\u2013\u2013Date11060.262838131.438.3972.0 \u00d7 10\u201409Bacterial source2172.472817958.93.1230.04556\n\nWith the exception of N2, strains were assayed in one of three date batches. To evaluate the relative importance of date, we examined the N2 lethality phenotypes for all 29 lethality-inducing genes across the three dates. While the date effect was statistically significant, it explained only 1.9% of the deviance; the gene effect explained 86.6% of the deviance (Table 4). The model that best fits the data also includes main and interaction terms for the number of adults per well, but their effects are similarly negligible.10.7554/eLife.09178.010Table 4.Factorial analysis of deviance of strain N2 lethality phenotypes across 29 targeted genesDOI: http://dx.doi.org/10.7554/eLife.09178.010DfDevianceResid. DfResid. DevFPr (>F)NULL\u2013\u20132254280,706\u2013\u2013Silenced gene28221,081222659,624378.3275<2 \u00d7 10\u201416Date16090222553,534291.8186<2 \u00d7 10\u201416Adults per well1249222453,28511.92480.00056Silenced gene \u00d7 date285265219648,0209.0099<2 \u00d7 10\u221216Silenced gene \u00d7 adults per well282423216845,5974.14672.7 \u00d7 10\u201412\n\n## Genome-wide association tests\n\nAssociation analyses of the gene-specific embryonic lethality phenotypes were implemented with the emma.ML.LRT function in the R package emma, which controls for population structure using a kinship matrix and performs efficient mixed-model association using maximum likelihood (Kang et al., 2008). The kinship matrix was determined from a total of 41,188 SNPs across 53 strains; we excluded strains CB4856 and QX1211, as they are essentially insensitive to RNAi in the germline. The SNP genotypes are as described in Andersen et al. (2012) and were downloaded from the website of E Andersen (http://groups.molbiosci.northwestern.edu/andersen/Data.html). We assayed six wild isolates not fully genotyped by that study; see our imputation method below. The phenotype values were the coefficients estimated from the strain-by-gene interaction by the generalized linear model, as they include strain contributions to lethality minus the strain effect, the date effect, and other effects of experimental design. We evaluated SNPs with minor allele counts of 6 or more, which allowed us to interrogate 9362 SNPs. Of these, 3057 exhibit unique genotype identities across the 53 strains, and the strict threshold for significance, following Bonferroni correction for multiple tests, was determined at 0.05/3,057, or 1.6 \u00d7 10\u22125. Genomic heritability estimates for each of the cryptic phenotypes represented by the strain-by-gene coefficients was determined from the genetic and residual error variance components estimated by restricted maximum likelihood, using the function emma.REMLE. Significance was tested by 1000 permutations of strain phenotypes.\n\n## Genotype imputation\n\nSix wild isolates in our study were not fully genotyped using the RAD-seq method by Andersen et al. (2012), and we used the following procedure to impute genotypes at the full set of SNPs. If the strain was identical at the 1454 SNPs assayed by Rockman and Kruglyak (2009) to a strain genotyped by RAD-seq, we used the RAD-seq data of the matching strain. This allowed us to use genotype data of CB4854 for CB3197; JU310 for JU301; JU311 for JU319; JU367 for JU371, and MY10 for MY21. In each of these cases, multiple RAD-sequenced strains collapse into groups of strains that are also identical at the 1454 SNPs, suggesting that this procedure is reliable. Only in the case of JU366 do we encounter uncertainty. At the 1454 SNP markers, this strain is identical to JU360, JU363, and JU368 (and three others not RAD-sequenced). JU360 and JU368 have identical RAD-seq haplotypes, but JU363 is different at 224 sites (of which 164 were tested for association with phenotype). We substituted both JU360 and JU363 as proxies for JU366 and ran the full GWAS pipeline twice; the differences in outcome were negligible, with extremely tight correlation among SNP p-values across all tests and no differences in the set of statistically significant SNPs.\n\n## Validation of CGV by introgression\n\nWe created the strain QG611, which carries two markers (mIs12, expressing GFP in the pharynx, and juIs76, expressing GFP in the motor neurons) in the N2 wild-type background. The markers are positioned at the approximate middle and right end of chromosome II, respectively (precise locations are unknown), which flank the region for which lsy-22 and pkc-3 phenotypes were associated. We crossed QG611 to wild-type strain EG4348 and then backcrossed to EG4348 for 20 generations, retaining the N2 introgression by selecting for the double markers. The introgression strain, QG1438, carries the N2 haplotype from approximately II 3,174,000 to the right of II 14,430,751. To test the effect of the introgression on lsy-22 and pkc-3 perturbations, RNAi was induced by feeding on agarose plates following standard protocols (wormbook.org): test worms were singled onto plates, 6 replicates each, at the L4 stage following bleaching and developmental synchronization; worms were transferred daily for 3 days and the number of dead embryos and hatched larvae were counted 24 hr after transfer. Test strains included QG611 (the GFP constructs in QG611 have no effect on phenotype relative to N2, data not shown), EG4348, and QG1438. The data were analyzed using a generalized linear model with a quasi-binomial error structure to test the effect of strain on embryonic lethality.\n\n## Genome sequencing and off-target predictions\n\nSeventeen strains (AB1, AB2, CB3198, CB4852, CB4856, EG4347, EG4348, JU319, JU371, JU1088, JU1171, MY1, MY16, MY18, PB306, PX174, PX179) were examined for sequence variation at the RNAi target sites. Sequences were derived from 100-bp paired-end reads run on an Illumina HiSeq 2500 that were mapped to the N2 reference (ce10) using stampy (Lunter and Goodson, 2011) and variant-called with samtools (Li et al., 2009). We observed nucleotide variation in these genes, but zero mutations in the exons targeted by the RNAi clones we used. Thus, we exclude RNAi mismatch via target locus sequence variation as a source of the phenotypic variation we observed. Off-target predictions for our RNAi clones were generated from a sliding window analysis of matching 21-mers between the RNAi reagent and the C. elegans reference genome (ce10). We predicted no off-target sequence matches for the 29 clones used in our final analysis.\n\n## Comparison of gene expression and embryonic lethality data\n\nTo test whether native gene expression of our target genes correlates with the embryonic lethality phenotypes, we downloaded microarray transcriptome data published by Grishkevich et al. (2012). These data were collected on 4-cell embryos, which retain the maternally-inherited mRNA transcripts that were the targets of our study, and include three replicate values (following quantile normalization and log10 transformation) determined from three pools of 50 embryos each. We examined gene expression values for the 29 targeted genes, collected under control conditions, for five strains: AB2, CB4856, CB4857, N2, and RC301 (identical to PX174, which we tested in our study). We tested for the genotypic effect of strain with an ANOVA and for correlations between the transcriptome data and our estimates of gene-specific CGV using the Spearman Rank method. For each gene, we looked for correlation between the average gene expression value for each of the five strains and the strain coefficients from the strain-by-gene interaction term in our statistical analysis. We used the same generalized linear model structure as described above; in this analysis, we included 29 genes and five strains. We used a two-tailed binomial sign test to assess whether the 29 correlations were disproportionately positive or negative.\n",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan Flint, Wellcome Trust Centre for Human Genetics , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09178.017](https://doi.org/10.7554/eLife.09178.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \u201cWild worm embryogenesis harbors ubiquitous polygenic modifier variation\u201d for peer review at eLife. Your submission has been favorably evaluated by Diethard Tautz (Senior editor), a Reviewing editor, and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThis paper uses counts of dead embryos and living C. elegans larvae as a phenotype to explore the extent of naturally occurring genetic variation in the presence of mutations in embryonic genes. The authors report that knockdown of the same gene has different effects in different isolates. These results represent a systematic analysis of the background genetic effects that mitigate gene knockdown on cell or developmental processes. The authors\u2019 results have broad implications for evolutionary, cellular and developmental biology.\n\nEssential revisions:\n\n1) The authors discovered that knocking down the same genes in different isolates has different effects on embryonic lethality and the authors state that this observation indicates that there is cryptic genetic variation. It is not clear that this interpretation is correct. The alternative possibility is that the variation is not \u201ccryptic\u201d: i.e. that development (and/or embryonic lethality) is really phenotypically different in the different isolates.\n\nThe authors state that \u201cEmbryogenesis is an essential and stereotypic process.\u201d While it is certainly true that development is stereotypic within the standard lab strain, N2, no study reports the extent of similarity of development across different C. elegans isolates. Thus, it seems possible that development could be different between different isolates. Similarly, spontaneous embryonic lethality (in the absence of any gene knockdown) might also vary across C. elegans isolates.\n\nIf development and spontaneous embryonic lethality are phenotypically different in different isolates then it does not makes sense to say that a different genetic basis for these traits is \u201ccryptic\u201d. Thus, the authors should either i) demonstrate that development and/or embryonic lethality is phenotypically similar in the different isolates, or ii) better justify in what sense the observed genetic variation is \u201ccryptic\u201d, or iii) not refer to the observed genetic variation as \u201ccryptic\u201d.\n\n2) The authors state that \u201cWe have uncovered pervasive CGV among wild C. elegans strains in the molecular and cellular processes of embryogenesis\u201d and their title is \u201cWild worm embryogenesis harbors ubiquitous polygenic modifier variation\u201d. However, the authors study embryonic lethality. While their results might certainly have interesting implications for the genetic basis of \u201ccellular processes of embryogenesis\u201d and other aspects of \u201cembryogenesis\u201d, strictly speaking, their data does not address phenotypes other than embryonic lethality. The paper would be improved by a more extensive discussion of the limitations of their results in this regard.\n\n3) The \u201cnon-informational\u201d variants are of greatest interest to developmental and evolutionary biologists. It is thus important to rule out as much of this as possible. The authors themselves note that \u201cgene-specific modifiers ... potentially include gene-specific variation in RNAi sensitivity, perhaps due to heritable variation in transcriptional licensing and variation in wild-type expression level of the targeted gene, due to cis- or trans-acting regulatory variation.\u201d This could be tested by generating transcriptomes for five or so strains with unusually divergent phenotype distributions. This would then allow the authors to directly estimate the extent to which gene-by-strain interactions are due to expression levels. RNAi knockdown efficacy is also an important informational variation to explore, but much harder to address.\n",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2584d419-df78-4b5a-80bc-75c2c8db0fe7",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C1",
+      "claim": "Embryogenesis is an essential and stereotypic process that nevertheless evolves among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryogenesis is an essential and stereotypic process that nevertheless evolves among species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about embryogenesis being both conserved and evolving.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "56dbdd5f-5636-4f0b-a7a2-660b6a395c88",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C2",
+      "claim": "The essentiality of embryogenesis may favor the accumulation of cryptic genetic variation (CGV) that has no effect in the wild-type but that enhances or suppresses the effects of rare disruptions to gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "Its essentiality may favor the accumulation of cryptic genetic variation (CGV) that has no effect in the wild-type but that enhances or suppresses the effects of rare disruptions to gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical speculation about the relationship between essentiality and CGV accumulation.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "b50a8622-9ceb-4c53-84a6-051a1d25cfae",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C3",
+      "claim": "The authors adapted a classical modifier screen to interrogate alleles segregating in natural populations of Caenorhabditis elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we adapted a classical modifier screen to interrogate the alleles segregating in natural populations of Caenorhabditis elegans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "908f670a-0487-40ed-8f99-5546f3e44808",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C4",
+      "claim": "The authors induced gene knockdowns and used quantitative genetic methodology to examine how segregating variants modify the penetrance of embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "we induced gene knockdowns and used quantitative genetic methodology to examine how segregating variants modify the penetrance of embryonic lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e5f51dfe-0544-4696-930d-43f694a8359f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C5",
+      "claim": "Each perturbation revealed CGV, indicating that wild-type genomes harbor myriad genetic modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "Each perturbation revealed CGV, indicating that wild-type genomes harbor myriad genetic modifiers that may have little effect individually but which in aggregate can dramatically influence penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data showing CGV across all perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "600fa08b-646a-4b38-b59b-77e0b5d6ebe7",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C6",
+      "claim": "Genetic modifiers may have little effect individually but in aggregate can dramatically influence penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "wild-type genomes harbor myriad genetic modifiers that may have little effect individually but which in aggregate can dramatically influence penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of polygenic effects in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c2c329f6-2306-45ba-b6ec-f70e6115fb80",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C7",
+      "claim": "Phenotypes were mediated by many modifiers, indicating high polygenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypes were mediated by many modifiers, indicating high polygenicity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing multiple genetic contributors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "0f69ec25-802d-4209-a85d-dc6eeafe1524",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C8",
+      "claim": "The alleles tend to act very specifically, indicating low pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "but the alleles tend to act very specifically, indicating low pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the specificity of modifier effects observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "4068e374-6200-4b3a-b324-038588f05787",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C9",
+      "claim": "The average human genome contains loss-of-function alleles for 100 or more genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The average human genome contains loss-of-function alleles for 100 or more genes, some of which cause known genetic diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies on human genomics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "3dd04caf-094b-484f-add4-ee1eef9831c8",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C10",
+      "claim": "Disease expression depends on exposure of the disease allele and on variants elsewhere in the genome that act as penetrance modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "disease expression depends on exposure of the disease allele, such as by homozygosity, but also on variants elsewhere in the genome that act as penetrance modifiers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work on genetic modifiers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "fcc8931d-4d5d-403a-ab10-d7197152faa9",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C11",
+      "claim": "Genetic background effects are an example of cryptic genetic variation (CGV).",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic background effects are an example of cryptic genetic variation (CGV), the class of mutations that affect phenotype under rare conditions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement based on established scientific knowledge and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "8794a2e2-edcd-4f31-a83f-f07a20905968",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C12",
+      "claim": "CGV is invisible until a perturbation changes the molecular, cellular, or developmental processes that govern its phenotypic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "CGV is invisible until a perturbation changes the molecular, cellular, or developmental processes that govern its phenotypic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about CGV based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c075cb06-e6ce-4a15-b168-1596015c51e5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C13",
+      "claim": "CGV may be 'released' by environmental exposure, like modern changes to diet that have been hypothesized to underlie the emergence of complex metabolic diseases in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to genetic perturbations, CGV may be 'released' by environmental exposure, like the modern changes to diet that have been hypothesized to underlie the emergence of complex metabolic diseases in humans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published speculation about diet and disease.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "66dd8dc1-d0ef-42fc-a4a0-4424b041a1c3",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C14",
+      "claim": "The concept of CGV has been of longstanding interest to evolutionary theorists because it explains how populations might store alleles that enable adaptation when conditions change.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of CGV has been of longstanding interest to evolutionary theorists because it explains how populations might store alleles that enable adaptation when conditions change",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical evolutionary theory literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "581c6dff-cb29-4559-9402-3cbc26cb0bf5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C15",
+      "claim": "Inhibition of the heat shock chaperone protein HSP90 reveals previously-silent mutational effects across many taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of our empirical knowledge of CGV arises from studies that inhibited the heat shock chaperone protein HSP90 to reveal previously-silent mutational effects across many taxa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published HSP90 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "f833a2c7-d566-4add-85cf-84416ff01c6d",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C16",
+      "claim": "HSP90 inhibition probably represents a general mechanism that buffers genome-wide functional variation.",
+      "claim_type": "EXPLICIT",
+      "source": "which probably represents a general mechanism that buffers genome-wide functional variation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited HSP90 studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "dadf962a-456f-4e10-80ee-aab52cb53410",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C17",
+      "claim": "C. elegans embryogenesis is both complex and typically invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans embryogenesis is both complex and typically invariant",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "4642312b-5243-42f7-a0da-4f4d8c69bfb3",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C18",
+      "claim": "The complexity and invariance of C. elegans embryogenesis may favor the accumulation of mutations that act in a conditionally-functional manner.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans embryogenesis is both complex and typically invariant, which may favor the accumulation of mutations that act in a conditionally-functional manner",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "62670adf-af18-4d8b-b9ae-8eb125a75e95",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C19",
+      "claim": "The authors revealed cryptic alleles by perturbing known embryonic genes and measuring differences in penetrance across multiple wild-derived strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We revealed these alleles by perturbing known embryonic genes and measuring differences in penetrance across multiple wild-derived strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "f9267f7c-e35d-4a39-80b8-ec0859036f69",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C20",
+      "claim": "Under ordinary conditions, wild-type C. elegans embryos hatch into larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Under ordinary conditions, wild-type Caenorhabditis elegans embryos hatch into larvae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and stated in the text as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "d6f1d94d-1899-44c1-957c-c4a7d248c3e0",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C21",
+      "claim": "The authors targeted maternally-expressed genes by RNAi to induce embryonic lethality that varied in penetrance across strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted maternally-expressed genes by RNAi to induce embryonic lethality that varied in penetrance across strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "cd9d6773-518d-4570-8560-29e8ba3b726b",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C22",
+      "claim": "L1 larvae in the parental generation were fed E. coli expressing dsRNA against target genes in 96-well plates in liquid media.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 larvae in the parental generation were fed Escherichia coli expressing dsRNA against target genes, in 96-well plates in liquid media.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental protocol shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "574b3a77-4b32-415b-834e-d8a0ee9bd6e3",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C23",
+      "claim": "5 days after feeding RNAi bacteria, wells were imaged to capture the penetrance of embryonic lethality in the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "5 days later, wells were imaged to capture the penetrance of embryonic lethality in the next generation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental protocol shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "aa437407-b8c8-471a-9f09-d079f113bdd5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C24",
+      "claim": "Raw images were evaluated using DevStaR, which identified objects as larvae, dead embryos, or adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw images were evaluated using DevStaR (White et al., 2013), which identified objects as larvae (blue), dead embryos (green), or adults (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the image analysis method shown in Figure 1D and 1E, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "95dfe8c0-f11f-4c78-b0bc-40a365ff49dc",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C25",
+      "claim": "The experiments revealed extensive variation in embryonic lethality caused by genetic differences among strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments revealed extensive variation in embryonic lethality caused by genetic differences among strains",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding shown in Figure 2 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "852c0efe-ca03-48b3-b8ee-f7ee9074e990",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C26",
+      "claim": "Each cell in Figure 2 represents the embryonic hatching success for a strain and targeted gene, averaged from at least eight replicate wells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cell represents the embryonic hatching success for a strain and targeted gene, averaged from at least eight replicate wells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data representation in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e1bb654d-9703-4528-9454-c52fa88ed53f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C27",
+      "claim": "Most strains exhibited moderately reduced lethality penetrance relative to the RNAi-sensitive laboratory strain N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strains exhibited moderately reduced lethality penetrance relative to the RNAi-sensitive laboratory strain N2",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "4afee115-8ced-4e21-ab43-b3843e1629f7",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C28",
+      "claim": "Two strains, CB4856 and QX1211, showed consistently weak penetrance across the targeted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "but two strains, the germline RNAi-insensitive strain CB4856 (Tijsterman et al., 2002) and the genetically divergent strain QX1211, showed consistently weak penetrance across the targeted genes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 2, with citation for CB4856's known RNAi insensitivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "f6df17eb-32ad-49b3-af16-0020cf0bb5e3",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C29",
+      "claim": "CB4856 harbors a ppw-1 loss-of-function mutation that confers resistance to germline RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "CB4856 harbors a ppw-1 loss-of-function mutation that confers resistance to germline RNAi (Tijsterman et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "b03807d0-8293-47dd-bd28-265418260592",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C30",
+      "claim": "QX1211 and other strains with intermediate sensitivity do not harbor ppw-1 mutations based on sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "but sequencing shows that QX1211 and other strains with intermediate sensitivity do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequencing data generated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "d06ddae3-edb8-4fb6-9f69-14429cf41e75",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C31",
+      "claim": "A ppw-1 mutation in the N2 background was more sensitive than CB4856, showing high lethality on mex-3 and pos-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a ppw-1 mutation in the N2 background was more sensitive than CB4856, showing high lethality on mex-3 and pos-1 (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "61b9e667-1e38-427a-8898-8f6582aa1fab",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C32",
+      "claim": "Some of the difference between N2 and CB4856 is ppw-1-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that some of the difference between N2 and CB4856 is ppw-1-independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of ppw-1 mutant in N2 background versus CB4856.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "33539e02-9272-420a-a2e4-bdfcbeb141a5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C33",
+      "claim": "Insensitivity to germline RNAi is genetically complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that insensitivity to germline RNAi is genetically complex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data showing variable RNAi sensitivity not fully explained by ppw-1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "fd1343a1-6e9b-4f90-a644-1f389146647c",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C34",
+      "claim": "Wild C. elegans populations harbor many alleles affecting germline RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "and that wild C. elegans populations harbor many alleles affecting germline RNAi (Elvin et al., 2011; Pollard and Rockman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the current study's data and cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "9e1cb4b8-f14f-49a3-9858-b8c680875285",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C35",
+      "claim": "Among wild-type strains, all but four (KR314, JU396, CB4852 and ED3040) showed complete sensitivity to somatic RNAi on tba-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among wild-type strains, all but four (KR314, JU396, CB4852 and ED3040) showed complete sensitivity to somatic RNAi, indicated by developmental arrest of P0 animals on tba-2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from targeting tba-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "9fcc9b8c-eb35-48c6-8fb9-0a574992b1f9",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C36",
+      "claim": "Most wild-type strains take up dsRNA and are capable of RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "which demonstrates that most wild-type strains take up dsRNA and are capable of RNAi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of somatic RNAi sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "205014a5-3e79-44c3-9313-d6b79b3b82e9",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C37",
+      "claim": "An rrf-1 deletion mutant is sensitive to RNAi against genes expressed in the germline but resistant to RNAi in most somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "An rrf-1 deletion mutant, which is sensitive to RNAi against genes expressed in the germline but resistant to RNAi in most somatic tissues (Yigit et al., 2006; Kumsta and Hansen, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "bd54b835-8310-4907-8cc6-bad66209fb41",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C38",
+      "claim": "The rrf-1 deletion mutant grew to adulthood but laid dead embryos on tba-2 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "grew to adulthood but laid dead embryos, suggesting that germline RNAi successfully silenced maternal tba-2 required for embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "de45cac2-2e5f-4b1c-a7e2-4ad17b71766c",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C39",
+      "claim": "The four somatically-resistant wild strains exhibited embryonic lethality on tba-2 and other germline-expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The four somatically-resistant wild strains also exhibited embryonic lethality on tba-2 and other germline-expressed genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "74729223-f347-4beb-b9e1-7561c992ca5b",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C40",
+      "claim": "The modifier variability acts tissue-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that the modifier variability acts tissue-specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that somatically-resistant strains still show germline RNAi effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "be461053-87db-4293-8254-5092a46d1875",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C41",
+      "claim": "Gene-specific modifiers explain as much of the total variation as the informational modifiers, as estimated by the strain-by-gene interaction term.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-specific modifiers explain as much of the total variation as the informational modifiers, as estimated by the strain-by-gene interaction term in our model (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "666071d6-2bfb-4866-9b62-fdbb4d898a37",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C42",
+      "claim": "Gene-specific modifiers represent cryptic genetic variation in developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "and represent cryptic genetic variation in developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "211931a2-9c6b-4c65-aff1-cb9737e6f672",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C43",
+      "claim": "The modifiers could act via network bypasses, where loss of the targeted gene reveals variation among strains in developmental network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The modifiers could act via network bypasses, where loss of the targeted gene reveals variation among strains in developmental network structure (e.g., Zhang and Emmons, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citation to an example.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "70267433-1e86-4af4-ad25-37526bd71349",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C44",
+      "claim": "Gene-specific modifiers could act on the extent of the knockdown at a gene-specific level, resulting in variable residual activity of the targeted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-specific modifiers could also act on the extent of the knockdown at a gene-specific level, in a manner akin to intragenic suppressors, resulting in variable residual activity of the targeted gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism for how modifiers could work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "858bd667-c9c9-45ab-9f97-100b7c7806f9",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C45",
+      "claim": "Each of the 29 genes targeted showed significant strain-by-gene interaction coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 29 genes we targeted showed significant strain-by-gene interaction coefficients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c156987f-3f96-4167-8640-6df0c5ede7a5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C46",
+      "claim": "Genetic modifiers of embryonic gene perturbations are pervasive in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that genetic modifiers of embryonic gene perturbations are pervasive in natural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that all 29 genes showed significant interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "ff223546-7544-46dd-a165-d02f1faebbce",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C47",
+      "claim": "36 gene pairs have known physical or genetic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "36 gene pairs have known physical or genetic interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on information from wormbase.org as stated in the methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "04eaf946-f2cc-4bad-be34-58d25fc868cd",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C48",
+      "claim": "Gene pairs with known interactions did not show significantly elevated phenotypic correlations (\u03c72 = 2.30, df = 1, p = 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "but these did not show significantly elevated phenotypic correlations (\u03c72 = 2.30, df = 1, p = 0.13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "ec0469cb-75b8-4a2d-b717-06c392e1b09c",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C49",
+      "claim": "The average pairwise par gene correlation was no higher than the average correlation across all genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, despite high interaction within the par network, which underlies polarization of the zygote, the average pairwise par gene correlation was no higher than the average correlation across all genes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c028a082-3222-454d-9809-9c5b90152230",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C50",
+      "claim": "Coefficients for par-3 and par-6 were correlated (correlation = 0.40, p = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Coefficients for par-3 and par-6 were correlated (correlation = 0.40, p = 0.003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "b3d3f476-1982-44a0-bd51-2ee38d4e664a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C51",
+      "claim": "Coefficients for par-3 and pkc-3 were not correlated (correlation = \u22120.17, p = 0.24).",
+      "claim_type": "EXPLICIT",
+      "source": "but not for par-3 and pkc-3 (correlation = \u22120.17, p = 0.24)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "57ddf948-f4d2-4586-9efa-164ad7504ce9",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C52",
+      "claim": "Coefficients for par-6 and pkc-3 were not correlated (correlation = 0.12, p = 0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "or par-6 and pkc-3 (correlation = 0.12, p = 0.41)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "902445c7-d875-46cf-b403-023cf5fb824a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C53",
+      "claim": "PAR-3, PAR-6, and PKC-3 proteins together comprise the anterior polarity complex.",
+      "claim_type": "EXPLICIT",
+      "source": "even though their proteins together comprise the anterior polarity complex (Munro et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c87de14a-97d2-4d06-a7c9-c0d703b7bd90",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C54",
+      "claim": "The cryptic genetic modifiers have low developmental pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the cryptic genetic modifiers have low developmental pleiotropy (Paaby and Rockman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the low correlation between functionally related genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "94a69b46-b256-47b3-9426-19b5e8ffe9bb",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C55",
+      "claim": "Variation at cryptic loci must influence a very restricted suite of developmental events.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, variation at these loci must influence a very restricted suite of developmental events, since only specific perturbations uncover evidence of their phenotypic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of low pleiotropy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e3b231d4-892e-449f-a319-bff0e45594b0",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C56",
+      "claim": "The high degree of redundancy observed in zygote polarization may explain the specificity of some factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For those associated with polarization of the zygote, this may be explained by the high degree of redundancy observed in the process (Beatty et al., 2010; Fievet et al., 2013; Motegi and Seydoux, 2013), as redundancy allows shared function of some factors and specificity of others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to studies on redundancy.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1ec8b506-bc19-41f2-af22-95ac423e9b2f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C57",
+      "claim": "The low pleiotropy of cryptic alleles may be a result of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The low pleiotropy of cryptic alleles may be a result of purifying selection, which over evolutionary time should deplete populations of pleiotropic alleles as they may be more likely to be deleterious (Stern, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative evolutionary explanation supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "579ea5ce-a3e6-4db5-8bf3-80f8e81faa38",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C58",
+      "claim": "For most of the perturbations, variation in lethality penetrance is due to common alleles at many contributing cryptic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for most of the perturbations, variation in lethality penetrance is due to common alleles at many contributing cryptic loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the genomic heritability analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "11d18372-b892-40a4-95eb-2201d00fbcb1",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C59",
+      "claim": "Of the 29 genes targeted, 12 exhibited gene-specific modifier variation with genomic heritability estimates greater than 0.80.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 29 genes we targeted, 12 exhibited gene-specific modifier variation with genomic heritability estimates greater than 0.80",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from heritability analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1cdbf273-b13c-44ea-bb24-408e96f190f6",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C60",
+      "claim": "For 19 genes, genomic heritability estimates were greater than 0.60.",
+      "claim_type": "EXPLICIT",
+      "source": "for 19 genes, estimates were greater than 0.60 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from heritability analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1fa8e5ce-0a5c-4143-acc1-560ae727b662",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C61",
+      "claim": "Genotypic similarity failed to explain phenotypic similarity for perturbations of emb-30, mel-32, mex-3, mom-5, par-3 and sur-6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genotypic similarity failed to explain phenotypic similarity for perturbations of emb-30, mel-32, mex-3, mom-5, par-3 and sur-6 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from heritability analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "88506cdf-9b6d-4c13-bf16-8c1475b7ab7f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C62",
+      "claim": "The genetic architecture of the cryptic variation associated with emb-30, mel-32, mex-3, mom-5, par-3 and sur-6 is likely comprised of few loci, rarer alleles, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the genetic architecture of the cryptic variation associated with these genes is likely comprised of few loci, rarer alleles, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the low heritability estimates for these genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "919e481a-a021-4b38-8ebb-3bb305f1b65a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C63",
+      "claim": "Nine of the 29 analyses identified at least one SNP associated with phenotype under a strict Bonferroni-corrected threshold for significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine of the 29 analyses identified at least one single nucleotide polymorphism (SNP) associated with phenotype under a strict Bonferroni-corrected threshold for significance (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "ef130fb0-301e-46a7-add5-362aba55ea27",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C64",
+      "claim": "A total of 19 SNPs or SNP haplotype blocks exhibited significant associations at the Bonferroni-corrected threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all tests, a total of 19 SNPs or SNP haplotype blocks, defined by SNPs in high linkage disequilibrium (R2 > 0.9), exhibited significant associations at that threshold (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "108790a7-7510-44c6-b749-97b900d146bd",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C65",
+      "claim": "Introgression of part of chromosome II from strain N2 into strain EG4348 rescues the N2 phenotype on lsy-22 (F = 12.15, DF = 2, p = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Introgression of part of chromosome II from strain N2 (yellow) into strain EG4348 (blue) rescues the N2 phenotype on lsy-22 (F = 12.15, DF = 2, p = 0.001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental validation shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "9f84e78a-2cbe-4073-9dfc-51a3d6963d37",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C66",
+      "claim": "Introgression of part of chromosome II from strain N2 into strain EG4348 rescues the N2 phenotype on pkc-3 (F = 55.87, DF = 2, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and pkc-3 (F = 55.87, DF = 2, p < 0.001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental validation shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c3c79a8c-c7fc-46eb-9d48-fa6214c5da09",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C67",
+      "claim": "Genome-wide analyses found associations between the introgressed chromosome II region and hatching phenotypes for both lsy-22 and pkc-3.",
+      "claim_type": "EXPLICIT",
+      "source": "genome-wide analyses found associations between this region and hatching phenotypes for both lsy-22 and pkc-3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 3 caption and validates the GWAS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "bb07a058-4825-499c-be22-56e545d30535",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C68",
+      "claim": "No SNPs lie within or near the locus of the targeted gene, with the exception of one SNP within the mel-28 locus that associates with the mel-28 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "No SNPs lie within or near the locus of the targeted gene, with the exception of one SNP within the mel-28 locus that associates with the mel-28 phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "de9b890c-3d35-4e7a-97ac-ca6494d27573",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C69",
+      "claim": "Most of the CGV detectable by GWA is caused by extragenic modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, most of the CGV detectable by GWA is caused by extragenic modifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that most associated SNPs are not near target genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2a0a46ec-db5d-4c9b-ac5e-d756737b6f5e",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C70",
+      "claim": "Differences in severity of RNAi phenotype for four C. elegans strains perturbed at electron transport chain genes are associated with differences in expression level of the targeted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work shows that differences in severity of RNAi phenotype, for four C. elegans strains perturbed at electron transport chain genes, are associated with differences in expression level of the targeted gene (Vu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e2fb055e-70c1-4b94-b20f-1a4212afa066",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C71",
+      "claim": "The authors find no evidence for the pattern of lower expression explaining more severe phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find no evidence for the reported pattern of lower expression explaining more severe phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a532aa91-9dce-4fec-899d-9913a94f997f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C72",
+      "claim": "Five of the 29 target genes exhibited significant variation in expression among five strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Five of the genes exhibited significant variation in expression among the strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of published expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "34b2590f-87bb-42ff-8791-6cbf811e54de",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C73",
+      "claim": "RNAi against 28 genes induced significant gene-specific variation in embryonic lethality among the five strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RNAi against 28 induced significant gene-specific variation in embryonic lethality among the five strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "415e9686-eeca-4c35-b889-fa0d4df0c2ee",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C74",
+      "claim": "Lower expression of the target gene was usually correlated with less severe RNAi phenotypes (20 of 29 genes, p = 0.06).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, both for genes with significant variation and for the whole set, lower expression of the target gene was usually correlated with less severe RNAi phenotypes (20 of 29 genes, p = 0.06)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from correlation analysis of expression and phenotype data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a78f529e-f031-4aa5-89ec-295a3b416dda",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C75",
+      "claim": "Much of the gene-specific modifier effect observed depends on variation beyond the target gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Although undetectable differences in transcript level may nevertheless contribute to embryonic survival, these results suggest that much of the gene-specific modifier effect we observe depends on variation beyond the target gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the weak correlation between expression and phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "0f2ee103-4b4c-4cf4-abb8-bedf05cf1adf",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C76",
+      "claim": "GWA mapping identified few SNPs associated with more than one phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our GWA mapping identified few SNPs associated with more than one phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "67878986-11e2-4bd3-bbd1-b631a171a520",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C77",
+      "claim": "Lethality phenotypes for 4 of the 7 targeted polarity genes (par-2, -4, -6 and pkc-3) were associated with SNPs, but none were shared.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lethality phenotypes for 4 of the 7 targeted polarity genes (par-2, -4, -6 and pkc-3) were associated with SNPs, but none were shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "65649c22-6305-4f78-bbd7-4023ec27950b",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C78",
+      "claim": "The discrete nature of the genotype\u2013phenotype associations implies low developmental pleiotropy of the cryptic alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrete nature of the genotype\u2013phenotype associations further implies low developmental pleiotropy of the cryptic alleles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the lack of shared SNP associations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "d68cea4f-2fae-4e49-b2af-cb4088391461",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C79",
+      "claim": "Variants with effects under one perturbation have no detectable effects under another.",
+      "claim_type": "EXPLICIT",
+      "source": "variants with effects under one perturbation have no detectable effects under another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the specificity of SNP associations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "11c8c190-4651-4f3f-9451-615c94de3900",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C80",
+      "claim": "rpn-9 and rpn-10 both encode non-ATPase regulatory subunits of the proteasome and are predicted to interact with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "as rpn-9 and rpn-10 both encode non-ATPase regulatory subunits of the proteasome and are predicted to interact with each other (Zhong and Sternberg, 2006; Lee et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "8088f087-faeb-4aaf-9429-e44f45bc8f93",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C81",
+      "claim": "SNPs in a haplotype block on chromosome IV were significantly associated with lethality phenotypes for rpn-9 and rpn-10.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-association of SNPs in a haplotype block on chromosome IV with lethality phenotypes for rpn-9 and rpn-10 support a known relationship",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1f7e9e2c-88f6-4454-ad2e-787933630fff",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C82",
+      "claim": "The chromosome IV haplotype was also significantly associated with lethality phenotypes for car-1, mom-5, and skn-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The haplotype, which spans approximately 10 kb, was also significantly associated with lethality phenotypes for car-1, mom-5, and skn-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "f274cfb7-678a-4ce0-89ac-38646dbb64ad",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C83",
+      "claim": "skn-1 has a role in proteasome-mediated protein homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "skn-1 has a role in proteasome-mediated protein homeostasis (Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "db7cc2d9-dff2-4dfc-8b8b-a8401c127c00",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C84",
+      "claim": "Modifier phenotypes for pkc-3 and rfc-3 are associated with SNPs on both chromosome III and X.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, modifier phenotypes for pkc-3, involved in anterior-posterior polarity in the early embryo, and rfc-3, which shows homology to DNA replication factors C and effects on cell cycle synchrony (Piano et al., 2002), are associated with SNPs on both chromosome III and X.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "fdb96fa5-d375-4ecf-afed-e76db24c01ba",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C85",
+      "claim": "The co-associations of pkc-3 and rfc-3 with unlinked SNPs implicate the presence of at least two interacting cryptic alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the co-associations occur twice, with unlinked SNPs (R2 = 0.26), they implicate the presence of at least two interacting cryptic alleles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pattern of associations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1b9a49a6-5390-4f26-973f-4c356bf0ae31",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C86",
+      "claim": "The co-associations provide independent lines of evidence for a relationship between pkc-3 and rfc-3, genes with no reported interactions or shared functions.",
+      "claim_type": "EXPLICIT",
+      "source": "and provide independent lines of evidence for a relationship between pkc-3 and rfc-3, genes with no reported interactions or shared functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pattern of associations combined with knowledge of gene functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "ca2176fb-b5bc-485d-94db-116e6c2c493a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C87",
+      "claim": "The authors uncovered pervasive CGV that modifies the probability that an embryo will survive a gene perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have uncovered pervasive CGV that modifies the probability that an embryo will survive a gene perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1e542397-1b6c-42f2-bb84-89c94261fc86",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C88",
+      "claim": "By evaluating the effects of naturally-occurring mutations on gene knockdowns, the authors explored a genotypic space that is distinct from that accessible to conventional screens.",
+      "claim_type": "EXPLICIT",
+      "source": "By evaluating the effects of naturally-occurring mutations on gene knockdowns, we explored a genotypic space that is distinct from that accessible to conventional screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological approach of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "742ac20d-c758-4ec1-9808-7bb20a6d344d",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C89",
+      "claim": "The findings provide complementary insight, including discovery of modifier activity that may be detectable only when effects are moderate or polygenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide complementary insight, including discovery of modifier activity that may be detectable only when effects are moderate (Fievet et al., 2013) or polygenic (Mackay, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's contribution supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "90ec5d86-d221-449a-b9e3-f4f653c3f2ca",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C90",
+      "claim": "Without gene perturbation, the strains exhibit little embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Without gene perturbation, our strains exhibit little embryonic lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2dfed922-1dbf-487b-9e87-84580ce6be47",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C91",
+      "claim": "Under ordinary conditions the strains vary in gene expression and other cellular or developmental phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under ordinary conditions the strains vary in gene expression and other cellular or developmental phenotypes (Grishkevich et al., 2012; Farhadifar et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "005d307e-fead-4aa2-a1fd-64c5ed237672",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C92",
+      "claim": "Variation in gene expression and cellular phenotypes may be the mechanisms by which the cryptic alleles influence the penetrance of the primary perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "which may be the mechanisms by which the cryptic alleles influence the penetrance of the primary perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism for how CGV operates.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "da3f652c-59ac-4a3d-9719-66635edde440",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C93",
+      "claim": "Whether a genetic variant is cryptic requires definition of the focal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "whether a genetic variant is cryptic requires definition of the focal phenotype",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the definition of cryptic variation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e2e61d88-4732-4f81-b5ae-d97af1476f11",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C94",
+      "claim": "An allele can be cryptic in one trait but penetrant in another.",
+      "claim_type": "EXPLICIT",
+      "source": "since even at the morphological level an allele can be cryptic in one trait but penetrant in another (Duveau and F\u00e9lix, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "b2dbc063-3eab-4f69-9a3d-a1451b76676a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C95",
+      "claim": "CGV has been demonstrated following perturbation of candidate genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CGV has been demonstrated following perturbation of candidate genes (Gibson and Hogness, 1996; Dworkin et al., 2003; Cassidy et al., 2013; Chandler et al., 2013; Chari and Dworkin, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "792727df-d0fc-4535-baca-ca92992967d7",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C96",
+      "claim": "The potential role of CGV in adaptive evolution has been considered in diverse systems.",
+      "claim_type": "EXPLICIT",
+      "source": "its potential role in adaptive evolution has been considered in diverse systems (Dobzhansky, 1941; Waddington, 1953; Masel, 2006; Ledon-Rettig et al., 2010; McGuigan et al., 2011; Duveau and F\u00e9lix, 2012; Rohner et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "73879119-05ff-479f-9fc4-317b2ad90dc4",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C97",
+      "claim": "CGV has been most extensively characterized following inhibition of HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "and most extensively, it has been characterized following inhibition of HSP90 (Rutherford and Lindquist, 1998; Queitsch et al., 2002; Yeyati et al., 2007; Jarosz and Lindquist, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c6b4d150-c0bc-4f16-8ba9-ed9f8a18c912",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C98",
+      "claim": "By systematic evaluation, the phenomenon of conditionally functional variation pervades even the highly stereotyped and controlled process of embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show by systematic evaluation that the phenomenon of conditionally functional variation pervades even the highly stereotyped and controlled process of embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the systematic experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "772270d9-1c15-408a-83d7-860bedec750b",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C99",
+      "claim": "Gene-specific cryptic variation affects every targeted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that gene-specific cryptic variation affects every targeted gene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis showing significant interactions for all 29 genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a793917b-d00e-42bf-a545-f09504e94a90",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C100",
+      "claim": "Wild populations harbor many enhancers and suppressors of critical embryonic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that wild populations harbor many enhancers and suppressors of critical embryonic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that all genes showed modifier variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e306c820-799b-40c1-a990-4e9cab083f92",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C101",
+      "claim": "In humans, penetrance modifiers may mediate expression of genetic diseases arising from loss-of-function mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, such penetrance modifiers may mediate expression of genetic diseases arising from loss-of-function mutations (Abecasis et al., 2010; Hamilton and Yu, 2012; MacArthur et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative application of the findings supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "dbd90de2-7c9f-4441-bf23-58f5152194af",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C102",
+      "claim": "If the crypsis of penetrance modifiers is environmentally influenced, they may explain modern disease susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "and if their crypsis is environmentally influenced they may also explain modern disease susceptibility (Gibson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative application of the findings supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "ea210b71-9dba-41b2-9f67-bc752302354f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C103",
+      "claim": "The screen revealed dramatic variation among wild-type strains in their responses to exogenous RNAi in the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "Our screen also revealed dramatic variation among wild-type strains in their responses to exogenous RNAi in the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a72ef52e-eb99-4050-99bf-1844ec1f6ade",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C104",
+      "claim": "Somatic RNAi response has been shown to influence C. elegans susceptibility to viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic RNAi response has been shown to influence C. elegans susceptibility to viral infection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2d26acab-2450-4ab2-86af-5e379f38d106",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C105",
+      "claim": "Variation in germline RNAi may affect vertical viral transmissibility.",
+      "claim_type": "EXPLICIT",
+      "source": "variation in germline RNAi may affect vertical viral transmissibility (F\u00e9lix et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "b6649088-0b53-4124-8bfb-80fdcf2de061",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C106",
+      "claim": "Variation in germline RNAi may affect transposon activity.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as transposon activity (Sijen and Plasterk, 2003; Vastenhouw and Plasterk, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "9bb9b2a6-3676-435d-8907-7e65cfe06228",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C107",
+      "claim": "Conditionally-functional relationships between genes may pervade the variation on which natural selection acts.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation we describe illustrates how conditionally-functional relationships between genes may pervade the variation on which natural selection acts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative evolutionary implication of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "86a8fc04-4df9-43e7-82a9-baa96072ae03",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C108",
+      "claim": "Conditionally-functional relationships affect how complex traits evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "affecting how complex traits evolve (True and Haag, 2001; F\u00e9lix, 2007; Wang and Sommer, 2011; Verster et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "192e4054-dcc1-4d55-a31b-a6d915abad91",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C109",
+      "claim": "Conditionally-functional relationships affect the nature of complex trait genetic architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "and the nature of their genetic architecture (Mackay, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c75734eb-fa06-4a1f-a795-f4d3c1830105",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C110",
+      "claim": "This variation has major implications for model system biologists that work with a single genetic strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this variation has major implications for model system biologists that work with a single genetic strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a06ae6f9-dab3-4ab9-afff-7b32e55b296f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C111",
+      "claim": "The authors evaluated laboratory strain N2 and 54 wild-type strains derived from populations around the world.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated laboratory strain N2, originally derived from Bristol, England, and 54 wild-type strains derived from populations around the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental materials used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "004f0e59-9949-4ef3-ab95-cca0947ce9de",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C112",
+      "claim": "The wild-type strains were chosen to avoid haplotype-identical isolates and to include the most diverged genotypes at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type strains were chosen with reference to genotype data (Rockman and Kruglyak, 2009; Andersen et al., 2012); we avoided haplotype-identical isolates, which can occur even across disparate sampling locations, and included the most diverged genotypes at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2f13d783-c860-4a66-9d52-f78dc833eaf5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C113",
+      "claim": "The date effect on N2 lethality phenotypes explained only 1.9% of the deviance.",
+      "claim_type": "EXPLICIT",
+      "source": "While the date effect was statistically significant, it explained only 1.9% of the deviance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "37135666-fde6-4ca3-91c2-9fe465d01a9e",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C114",
+      "claim": "The gene effect on N2 lethality phenotypes explained 86.6% of the deviance.",
+      "claim_type": "EXPLICIT",
+      "source": "the gene effect explained 86.6% of the deviance (Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a183cb9f-1284-405d-a773-c949839832ab",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C115",
+      "claim": "The authors observed zero mutations in the exons targeted by the RNAi clones in 17 sequenced strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed nucleotide variation in these genes, but zero mutations in the exons targeted by the RNAi clones we used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from genome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c7915b4c-86ca-4d64-8fc8-b29406611e2e",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C116",
+      "claim": "RNAi mismatch via target locus sequence variation is excluded as a source of the phenotypic variation observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we exclude RNAi mismatch via target locus sequence variation as a source of the phenotypic variation we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the sequencing data showing no mutations in target exons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "6df35b1f-fc7f-4daa-9166-502363dcebf1",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "claim_id": "C117",
+      "claim": "No off-target sequence matches were predicted for the 29 RNAi clones used in the final analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted no off-target sequence matches for the 29 clones used in our final analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational off-target prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a systematic RNAi-based modifier screen using 55 C. elegans strains (N2 and 54 wild isolates) to interrogate natural genetic variation affecting embryonic lethality. The experimental approach involved feeding L1 larvae with E. coli expressing dsRNA against 29 maternally-expressed genes in 96-well plates, imaging wells after 5 days, and quantifying embryonic lethality using automated image analysis (DevStaR).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C19-C24, and C111-C112 collectively describe a well-documented experimental methodology with appropriate controls, replication (at least 8 wells per condition), and validated image analysis tools. The approach is clearly described and the experimental design is sound for detecting modifier variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e8956088-fb68-499e-9ece-e39fab0cf925",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The screen revealed extensive cryptic genetic variation (CGV) affecting embryonic lethality across all 29 targeted genes, with every gene showing significant strain-by-gene interactions. This demonstrates that wild C. elegans populations harbor pervasive genetic modifiers that influence the penetrance of gene perturbations during embryogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28, C5, C87, C98-C100 are strongly supported by the experimental data shown in Figure 2 and statistical analyses. The finding that all 29 genes showed significant strain-by-gene interactions (C45) provides robust evidence for pervasive CGV, with appropriate statistical modeling and multiple replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "292b2a24-93ad-40ed-affa-4b4fc08479b6",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study identified dramatic variation in RNAi sensitivity among wild strains, with CB4856 and QX1211 showing consistently weak penetrance. Analysis of ppw-1 mutants and tissue-specific RNAi responses (somatic vs. germline) demonstrated that insensitivity to germline RNAi is genetically complex and involves multiple loci beyond ppw-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C40 and C103 are well-supported by experimental data including sequencing (C30), genetic comparisons with ppw-1 mutants (C31), and tissue-specific RNAi tests using tba-2 and rrf-1 mutants (C35-C40). The controls appropriately distinguish between somatic and germline RNAi mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "70ef4949-a62b-424e-8129-0df05a99a44d",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gene-specific modifiers explain as much total variation as informational modifiers (strain effects), representing cryptic genetic variation in developmental processes. These modifiers could act via network bypasses or by affecting the extent of gene knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by the statistical model showing comparable variance components (Table 1). However, C43-C44 are speculative mechanisms without direct experimental validation. The statistical finding is solid, but mechanistic understanding remains incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All 29 targeted genes showed significant strain-by-gene interactions, but phenotypic correlations between functionally related genes were low. Even genes encoding proteins in the same complex (PAR-3, PAR-6, PKC-3) showed weak or no correlations, indicating that cryptic genetic modifiers have low developmental pleiotropy and act very specifically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C55, C7-C8 are supported by statistical analyses showing significant interactions for all genes (C45) and correlation analyses (C48-C52). The finding that known interacting gene pairs show no elevated correlations (\u03c7\u00b2=2.30, p=0.13) provides strong evidence for low pleiotropy. Statistical methods are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genomic heritability analysis revealed that for most perturbations (19 of 29 genes with h\u00b2>0.60), variation in lethality penetrance is due to common alleles at many contributing loci, indicating high polygenicity. However, six genes (emb-30, mel-32, mex-3, mom-5, par-3, sur-6) showed low heritability, suggesting their cryptic variation involves fewer or rarer alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C6 are supported by genomic heritability estimates in Table 2 using appropriate mixed-model methods (emma package). The interpretation that low heritability indicates fewer/rarer alleles (C62) is reasonable but represents one of multiple possible explanations. The statistical approach is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "52cca663-1ea9-40d8-873f-ceef63f6f158",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Genome-wide association (GWA) mapping identified 19 significant SNPs/haplotype blocks associated with modifier phenotypes across 9 genes. Introgression experiments validated associations for lsy-22 and pkc-3 on chromosome II. Most associated SNPs were extragenic (only one within mel-28), indicating that detectable CGV is primarily caused by extragenic modifiers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 are well-supported by GWA analysis with appropriate Bonferroni correction and experimental validation via introgression (C65-C67, Figure 3). The statistical significance of introgression effects (F=12.15, p=0.001 for lsy-22; F=55.87, p<0.001 for pkc-3) provides strong validation of the GWA findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of published expression data for 29 target genes in five strains showed that only 5 genes exhibited significant expression variation, while 28 showed significant gene-specific modifier effects. Lower target gene expression was weakly correlated with less severe (not more severe) RNAi phenotypes (20/29 genes, p=0.06), suggesting gene-specific modifiers act beyond target gene expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 are supported by analysis of published transcriptome data. The finding contradicts a prior study (C70-C71) and shows weak opposite correlation (C74). However, the correlation is marginally non-significant (p=0.06) and the analysis is limited to 5 strains, reducing power. The conclusion (C75) is reasonable but somewhat tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "8665c4b5-119f-4a4d-9e60-a5b738ab3852",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GWA mapping identified few SNPs associated with multiple phenotypes, with no shared associations among 4 polarity genes (par-2, -4, -6, pkc-3) despite their functional relationships. This discrete nature of genotype-phenotype associations further supports low developmental pleiotropy of cryptic alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by the GWA results showing gene-specific associations. This finding reinforces the low pleiotropy conclusion from correlation analyses (C48-C54). The evidence is consistent across multiple analytical approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "d696a7db-03aa-46be-8847-f9aa840da1ef",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GWA identified shared associations that implicate functional relationships: a chromosome IV haplotype associated with rpn-9, rpn-10 (known proteasome subunits), car-1, mom-5, and skn-1 (involved in proteasome homeostasis); and unlinked SNPs on chromosomes III and X associated with both pkc-3 and rfc-3, suggesting a novel functional relationship between these genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 are supported by GWA data. The rpn-9/rpn-10 association validates known biology (C80-C81), strengthening confidence in the approach. The pkc-3/rfc-3 associations on two unlinked chromosomes (R\u00b2=0.26) provide independent evidence for interaction (C85-C86), though the functional relationship remains to be experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Control analyses demonstrated that experimental date effects were minimal (1.9% deviance) compared to gene effects (86.6% deviance). Sequencing of 17 strains found zero mutations in RNAi target exons, and no off-target matches were predicted, excluding technical artifacts as sources of the observed phenotypic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C117 describe appropriate control analyses. The date effect analysis (Table 4) shows the experimental design is robust. Sequencing controls (C115-C116) and off-target predictions (C117) appropriately rule out technical confounders. These controls strengthen confidence in the biological interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "821064d9-a01c-4845-84a8-0779bcbd2372",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides background on cryptic genetic variation (CGV), establishing that embryogenesis is essential yet evolving, that human genomes harbor loss-of-function alleles whose disease expression depends on genetic modifiers, and that CGV has been extensively studied through HSP90 inhibition. C. elegans embryogenesis is proposed as favorable for CGV accumulation due to its complexity and invariance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 represent well-established background knowledge supported by appropriate citations. These are accurate summaries of prior work that provide context for the study. C2 and C18 are theoretical speculations about CGV accumulation that are reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "0ff20a3b-d5d4-466d-bf23-824f907b663f",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within evolutionary theory and prior CGV research, noting that the approach explores distinct genotypic space from conventional screens and may detect moderate or polygenic effects. The authors discuss potential mechanisms (redundancy, purifying selection) and note that strains show variation in intermediate phenotypes under normal conditions despite low embryonic lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C88-C97 provide appropriate contextualization with citations. C56-C57 and C92 are speculative mechanisms that are reasonable but not directly tested. The discussion appropriately distinguishes between demonstrated findings and interpretations, though some mechanistic explanations remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a",
+      "content_id": "fb2f3a17-91f3-4fdc-b531-41d39b812124",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss broader implications of their findings, including potential relevance to human disease modifier genetics, viral susceptibility, transposon activity, and evolutionary processes. They note implications for model organism research using single genetic backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C110 are largely speculative extrapolations from the C. elegans findings to other systems and processes. While these are reasonable hypotheses supported by citations, they represent future directions rather than demonstrated results. The implications are plausible but require experimental validation in the relevant systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "e060086c-a703-4f4b-af81-90ddde08f505",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors claim that C. elegans embryogenesis is stereotypic and that wild strains exhibit little spontaneous embryonic lethality without perturbation, supporting the idea that observed variation is 'cryptic'.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers challenge whether the variation is truly 'cryptic,' noting that 'no study reports the extent of similarity of development across different C. elegans isolates' and that 'development could be different between different isolates.' They request the authors either demonstrate phenotypic similarity across isolates or better justify calling the variation 'cryptic.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "017cbb1b-2431-4023-a383-ceab4978b7fa",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors report that each gene perturbation revealed cryptic genetic variation, with phenotypes mediated by many modifiers (high polygenicity) that act specifically (low pleiotropy), indicating wild populations harbor myriad genetic modifiers of embryonic gene perturbations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the systematic analysis and state the results 'have broad implications,' they raise fundamental concerns about whether the variation is truly 'cryptic' (Essential Revision 1) and note that 'strictly speaking, their data does not address phenotypes other than embryonic lethality' (Essential Revision 2), limiting claims about 'cellular processes of embryogenesis.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "59232bd8-ec01-4b36-93b8-a456ca5b86de",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The screen revealed dramatic variation among wild strains in RNAi sensitivity, with some strains showing reduced penetrance due to ppw-1-independent mechanisms, demonstrating that insensitivity to germline RNAi is genetically complex and that modifier variability acts tissue-specifically.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these findings about RNAi sensitivity variation. The observations about strain-specific RNAi responses and tissue-specific effects are presented as data without critique in the review comments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "dc2918be-9b4b-45f1-a816-174f9df2c65b",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Gene pairs with known interactions did not show elevated phenotypic correlations, and GWA mapping identified few SNPs associated with multiple phenotypes, indicating that cryptic genetic modifiers have low developmental pleiotropy with variants acting specifically under particular perturbations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these findings about low pleiotropy. The correlation analyses and specificity of genetic associations are not challenged in the review comments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c8e715f9-5125-4158-aed5-9f547ee44da0",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "For most perturbations, variation in lethality penetrance is due to common alleles at many contributing cryptic loci, with 19 of 29 genes showing genomic heritability estimates greater than 0.60, though six genes showed low heritability suggesting fewer loci or rarer alleles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the heritability analysis or the inference about polygenic architecture. These statistical findings are not questioned in the review comments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Genome-wide association analysis identified 19 significant SNPs or haplotype blocks across nine genes, with experimental validation by introgression confirming associations, and most CGV is caused by extragenic modifiers rather than variation in the target genes themselves.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the GWAS findings or the introgression validation experiments. These mapping results are not questioned in the review comments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "5800e3d2-1157-482c-9a1c-ebac53a461d0",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors tested whether variation in target gene expression explains modifier effects and found that lower expression was usually correlated with less severe (not more severe) RNAi phenotypes, suggesting much of the gene-specific modifier effect depends on variation beyond the target gene.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers explicitly request this analysis in Essential Revision 3, stating 'This could be tested by generating transcriptomes for five or so strains with unusually divergent phenotype distributions' to 'directly estimate the extent to which gene-by-strain interactions are due to expression levels.' The existing analysis may be insufficient to address reviewer concerns about 'informational' versus 'non-informational' variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "fb57ea0b-3aed-439e-90d1-4ccf2ec5a336",
+      "content_id": "d94c810a-3956-4f6d-9cb4-e0a1693d8b3d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Sequencing analysis found zero mutations in the exons targeted by RNAi clones and no predicted off-target matches, excluding RNAi mismatch via target locus sequence variation as a source of phenotypic variation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these control analyses ruling out technical artifacts. The sequencing validation is not questioned in the review comments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b50a8622-9ceb-4c53-84a6-051a1d25cfae",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "908f670a-0487-40ed-8f99-5546f3e44808",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "62670adf-af18-4d8b-b9ae-8eb125a75e95",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "f9267f7c-e35d-4a39-80b8-ec0859036f69",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "d6f1d94d-1899-44c1-957c-c4a7d248c3e0",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "cd9d6773-518d-4570-8560-29e8ba3b726b",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "574b3a77-4b32-415b-834e-d8a0ee9bd6e3",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "aa437407-b8c8-471a-9f09-d079f113bdd5",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "a06ae6f9-dab3-4ab9-afff-7b32e55b296f",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "004f0e59-9949-4ef3-ab95-cca0947ce9de",
+      "result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700"
+    },
+    {
+      "claim_id": "95dfe8c0-f11f-4c78-b0bc-40a365ff49dc",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "852c0efe-ca03-48b3-b8ee-f7ee9074e990",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "e1bb654d-9703-4528-9454-c52fa88ed53f",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "4afee115-8ced-4e21-ab43-b3843e1629f7",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "e5f51dfe-0544-4696-930d-43f694a8359f",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "ca2176fb-b5bc-485d-94db-116e6c2c493a",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "c6b4d150-c0bc-4f16-8ba9-ed9f8a18c912",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "772270d9-1c15-408a-83d7-860bedec750b",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "a793917b-d00e-42bf-a545-f09504e94a90",
+      "result_id": "e8956088-fb68-499e-9ece-e39fab0cf925"
+    },
+    {
+      "claim_id": "4afee115-8ced-4e21-ab43-b3843e1629f7",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "f6df17eb-32ad-49b3-af16-0020cf0bb5e3",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "b03807d0-8293-47dd-bd28-265418260592",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "d06ddae3-edb8-4fb6-9f69-14429cf41e75",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "61b9e667-1e38-427a-8898-8f6582aa1fab",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "33539e02-9272-420a-a2e4-bdfcbeb141a5",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "fd1343a1-6e9b-4f90-a644-1f389146647c",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "9e1cb4b8-f14f-49a3-9858-b8c680875285",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "9fcc9b8c-eb35-48c6-8fb9-0a574992b1f9",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "205014a5-3e79-44c3-9313-d6b79b3b82e9",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "bd54b835-8310-4907-8cc6-bad66209fb41",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "de45cac2-2e5f-4b1c-a7e2-4ad17b71766c",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "74729223-f347-4beb-b9e1-7561c992ca5b",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "ea210b71-9dba-41b2-9f67-bc752302354f",
+      "result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6"
+    },
+    {
+      "claim_id": "be461053-87db-4293-8254-5092a46d1875",
+      "result_id": "70ef4949-a62b-424e-8129-0df05a99a44d"
+    },
+    {
+      "claim_id": "666071d6-2bfb-4866-9b62-fdbb4d898a37",
+      "result_id": "70ef4949-a62b-424e-8129-0df05a99a44d"
+    },
+    {
+      "claim_id": "211931a2-9c6b-4c65-aff1-cb9737e6f672",
+      "result_id": "70ef4949-a62b-424e-8129-0df05a99a44d"
+    },
+    {
+      "claim_id": "70267433-1e86-4af4-ad25-37526bd71349",
+      "result_id": "70ef4949-a62b-424e-8129-0df05a99a44d"
+    },
+    {
+      "claim_id": "858bd667-c9c9-45ab-9f97-100b7c7806f9",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "c156987f-3f96-4167-8640-6df0c5ede7a5",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "ff223546-7544-46dd-a165-d02f1faebbce",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "04eaf946-f2cc-4bad-be34-58d25fc868cd",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "ec0469cb-75b8-4a2d-b717-06c392e1b09c",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "c028a082-3222-454d-9809-9c5b90152230",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "b3d3f476-1982-44a0-bd51-2ee38d4e664a",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "57ddf948-f4d2-4586-9efa-164ad7504ce9",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "902445c7-d875-46cf-b403-023cf5fb824a",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "c87de14a-97d2-4d06-a7c9-c0d703b7bd90",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "94a69b46-b256-47b3-9426-19b5e8ffe9bb",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "c2c329f6-2306-45ba-b6ec-f70e6115fb80",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "0f69ec25-802d-4209-a85d-dc6eeafe1524",
+      "result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4"
+    },
+    {
+      "claim_id": "579ea5ce-a3e6-4db5-8bf3-80f8e81faa38",
+      "result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a"
+    },
+    {
+      "claim_id": "11d18372-b892-40a4-95eb-2201d00fbcb1",
+      "result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a"
+    },
+    {
+      "claim_id": "1cdbf273-b13c-44ea-bb24-408e96f190f6",
+      "result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a"
+    },
+    {
+      "claim_id": "1fa8e5ce-0a5c-4143-acc1-560ae727b662",
+      "result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a"
+    },
+    {
+      "claim_id": "88506cdf-9b6d-4c13-bf16-8c1475b7ab7f",
+      "result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a"
+    },
+    {
+      "claim_id": "600fa08b-646a-4b38-b59b-77e0b5d6ebe7",
+      "result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a"
+    },
+    {
+      "claim_id": "919e481a-a021-4b38-8ebb-3bb305f1b65a",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "ef130fb0-301e-46a7-add5-362aba55ea27",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "108790a7-7510-44c6-b749-97b900d146bd",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "9f84e78a-2cbe-4073-9dfc-51a3d6963d37",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "c3c79a8c-c7fc-46eb-9d48-fa6214c5da09",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "bb07a058-4825-499c-be22-56e545d30535",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "de9b890c-3d35-4e7a-97ac-ca6494d27573",
+      "result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158"
+    },
+    {
+      "claim_id": "2a0a46ec-db5d-4c9b-ac5e-d756737b6f5e",
+      "result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5"
+    },
+    {
+      "claim_id": "e2fb055e-70c1-4b94-b20f-1a4212afa066",
+      "result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5"
+    },
+    {
+      "claim_id": "a532aa91-9dce-4fec-899d-9913a94f997f",
+      "result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5"
+    },
+    {
+      "claim_id": "34b2590f-87bb-42ff-8791-6cbf811e54de",
+      "result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5"
+    },
+    {
+      "claim_id": "415e9686-eeca-4c35-b889-fa0d4df0c2ee",
+      "result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5"
+    },
+    {
+      "claim_id": "a78f529e-f031-4aa5-89ec-295a3b416dda",
+      "result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5"
+    },
+    {
+      "claim_id": "0f2ee103-4b4c-4cf4-abb8-bedf05cf1adf",
+      "result_id": "8665c4b5-119f-4a4d-9e60-a5b738ab3852"
+    },
+    {
+      "claim_id": "67878986-11e2-4bd3-bbd1-b631a171a520",
+      "result_id": "8665c4b5-119f-4a4d-9e60-a5b738ab3852"
+    },
+    {
+      "claim_id": "65649c22-6305-4f78-bbd7-4023ec27950b",
+      "result_id": "8665c4b5-119f-4a4d-9e60-a5b738ab3852"
+    },
+    {
+      "claim_id": "d68cea4f-2fae-4e49-b2af-cb4088391461",
+      "result_id": "8665c4b5-119f-4a4d-9e60-a5b738ab3852"
+    },
+    {
+      "claim_id": "11c8c190-4651-4f3f-9451-615c94de3900",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "8088f087-faeb-4aaf-9429-e44f45bc8f93",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "1f7e9e2c-88f6-4454-ad2e-787933630fff",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "f274cfb7-678a-4ce0-89ac-38646dbb64ad",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "db7cc2d9-dff2-4dfc-8b8b-a8401c127c00",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "fdb96fa5-d375-4ecf-afed-e76db24c01ba",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "1b9a49a6-5390-4f26-973f-4c356bf0ae31",
+      "result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef"
+    },
+    {
+      "claim_id": "2f13d783-c860-4a66-9d52-f78dc833eaf5",
+      "result_id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154"
+    },
+    {
+      "claim_id": "37135666-fde6-4ca3-91c2-9fe465d01a9e",
+      "result_id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154"
+    },
+    {
+      "claim_id": "a183cb9f-1284-405d-a773-c949839832ab",
+      "result_id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154"
+    },
+    {
+      "claim_id": "c7915b4c-86ca-4d64-8fc8-b29406611e2e",
+      "result_id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154"
+    },
+    {
+      "claim_id": "6df35b1f-fc7f-4daa-9166-502363dcebf1",
+      "result_id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154"
+    },
+    {
+      "claim_id": "2584d419-df78-4b5a-80bc-75c2c8db0fe7",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "56dbdd5f-5636-4f0b-a7a2-660b6a395c88",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "4068e374-6200-4b3a-b324-038588f05787",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "3dd04caf-094b-484f-add4-ee1eef9831c8",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "fcc8931d-4d5d-403a-ab10-d7197152faa9",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "8794a2e2-edcd-4f31-a83f-f07a20905968",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "c075cb06-e6ce-4a15-b168-1596015c51e5",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "66dd8dc1-d0ef-42fc-a4a0-4424b041a1c3",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "581c6dff-cb29-4559-9402-3cbc26cb0bf5",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "f833a2c7-d566-4add-85cf-84416ff01c6d",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "dadf962a-456f-4e10-80ee-aab52cb53410",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "4642312b-5243-42f7-a0da-4f4d8c69bfb3",
+      "result_id": "821064d9-a01c-4845-84a8-0779bcbd2372"
+    },
+    {
+      "claim_id": "e3b231d4-892e-449f-a319-bff0e45594b0",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "1ec8b506-bc19-41f2-af22-95ac423e9b2f",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "1e542397-1b6c-42f2-bb84-89c94261fc86",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "742ac20d-c758-4ec1-9808-7bb20a6d344d",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "90ec5d86-d221-449a-b9e3-f4f653c3f2ca",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "2dfed922-1dbf-487b-9e87-84580ce6be47",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "005d307e-fead-4aa2-a1fd-64c5ed237672",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "da3f652c-59ac-4a3d-9719-66635edde440",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "e2e61d88-4732-4f81-b5ae-d97af1476f11",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "b2dbc063-3eab-4f69-9a3d-a1451b76676a",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "792727df-d0fc-4535-baca-ca92992967d7",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "73879119-05ff-479f-9fc4-317b2ad90dc4",
+      "result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f"
+    },
+    {
+      "claim_id": "e306c820-799b-40c1-a990-4e9cab083f92",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "dbd90de2-7c9f-4441-bf23-58f5152194af",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "a72ef52e-eb99-4050-99bf-1844ec1f6ade",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "2d26acab-2450-4ab2-86af-5e379f38d106",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "b6649088-0b53-4124-8bfb-80fdcf2de061",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "9bb9b2a6-3676-435d-8907-7e65cfe06228",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "86a8fc04-4df9-43e7-82a9-baa96072ae03",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "192e4054-dcc1-4d55-a31b-a6d915abad91",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "c75734eb-fa06-4a1f-a795-f4d3c1830105",
+      "result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a"
+    },
+    {
+      "claim_id": "2584d419-df78-4b5a-80bc-75c2c8db0fe7",
+      "result_id": "e060086c-a703-4f4b-af81-90ddde08f505"
+    },
+    {
+      "claim_id": "dadf962a-456f-4e10-80ee-aab52cb53410",
+      "result_id": "e060086c-a703-4f4b-af81-90ddde08f505"
+    },
+    {
+      "claim_id": "90ec5d86-d221-449a-b9e3-f4f653c3f2ca",
+      "result_id": "e060086c-a703-4f4b-af81-90ddde08f505"
+    },
+    {
+      "claim_id": "e5f51dfe-0544-4696-930d-43f694a8359f",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "600fa08b-646a-4b38-b59b-77e0b5d6ebe7",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "c2c329f6-2306-45ba-b6ec-f70e6115fb80",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "0f69ec25-802d-4209-a85d-dc6eeafe1524",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "95dfe8c0-f11f-4c78-b0bc-40a365ff49dc",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "be461053-87db-4293-8254-5092a46d1875",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "666071d6-2bfb-4866-9b62-fdbb4d898a37",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "858bd667-c9c9-45ab-9f97-100b7c7806f9",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "c156987f-3f96-4167-8640-6df0c5ede7a5",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "ca2176fb-b5bc-485d-94db-116e6c2c493a",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "c6b4d150-c0bc-4f16-8ba9-ed9f8a18c912",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "772270d9-1c15-408a-83d7-860bedec750b",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "a793917b-d00e-42bf-a545-f09504e94a90",
+      "result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa"
+    },
+    {
+      "claim_id": "e1bb654d-9703-4528-9454-c52fa88ed53f",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "4afee115-8ced-4e21-ab43-b3843e1629f7",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "f6df17eb-32ad-49b3-af16-0020cf0bb5e3",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "b03807d0-8293-47dd-bd28-265418260592",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "d06ddae3-edb8-4fb6-9f69-14429cf41e75",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "61b9e667-1e38-427a-8898-8f6582aa1fab",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "33539e02-9272-420a-a2e4-bdfcbeb141a5",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "fd1343a1-6e9b-4f90-a644-1f389146647c",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "9e1cb4b8-f14f-49a3-9858-b8c680875285",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "9fcc9b8c-eb35-48c6-8fb9-0a574992b1f9",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "bd54b835-8310-4907-8cc6-bad66209fb41",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "de45cac2-2e5f-4b1c-a7e2-4ad17b71766c",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "74729223-f347-4beb-b9e1-7561c992ca5b",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "ea210b71-9dba-41b2-9f67-bc752302354f",
+      "result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de"
+    },
+    {
+      "claim_id": "04eaf946-f2cc-4bad-be34-58d25fc868cd",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "ec0469cb-75b8-4a2d-b717-06c392e1b09c",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "c028a082-3222-454d-9809-9c5b90152230",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "b3d3f476-1982-44a0-bd51-2ee38d4e664a",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "57ddf948-f4d2-4586-9efa-164ad7504ce9",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "c87de14a-97d2-4d06-a7c9-c0d703b7bd90",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "94a69b46-b256-47b3-9426-19b5e8ffe9bb",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "0f2ee103-4b4c-4cf4-abb8-bedf05cf1adf",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "67878986-11e2-4bd3-bbd1-b631a171a520",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "65649c22-6305-4f78-bbd7-4023ec27950b",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "d68cea4f-2fae-4e49-b2af-cb4088391461",
+      "result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b"
+    },
+    {
+      "claim_id": "579ea5ce-a3e6-4db5-8bf3-80f8e81faa38",
+      "result_id": "c8e715f9-5125-4158-aed5-9f547ee44da0"
+    },
+    {
+      "claim_id": "11d18372-b892-40a4-95eb-2201d00fbcb1",
+      "result_id": "c8e715f9-5125-4158-aed5-9f547ee44da0"
+    },
+    {
+      "claim_id": "1cdbf273-b13c-44ea-bb24-408e96f190f6",
+      "result_id": "c8e715f9-5125-4158-aed5-9f547ee44da0"
+    },
+    {
+      "claim_id": "1fa8e5ce-0a5c-4143-acc1-560ae727b662",
+      "result_id": "c8e715f9-5125-4158-aed5-9f547ee44da0"
+    },
+    {
+      "claim_id": "88506cdf-9b6d-4c13-bf16-8c1475b7ab7f",
+      "result_id": "c8e715f9-5125-4158-aed5-9f547ee44da0"
+    },
+    {
+      "claim_id": "919e481a-a021-4b38-8ebb-3bb305f1b65a",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "ef130fb0-301e-46a7-add5-362aba55ea27",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "108790a7-7510-44c6-b749-97b900d146bd",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "9f84e78a-2cbe-4073-9dfc-51a3d6963d37",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "c3c79a8c-c7fc-46eb-9d48-fa6214c5da09",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "bb07a058-4825-499c-be22-56e545d30535",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "de9b890c-3d35-4e7a-97ac-ca6494d27573",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "8088f087-faeb-4aaf-9429-e44f45bc8f93",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "1f7e9e2c-88f6-4454-ad2e-787933630fff",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "db7cc2d9-dff2-4dfc-8b8b-a8401c127c00",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "fdb96fa5-d375-4ecf-afed-e76db24c01ba",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "1b9a49a6-5390-4f26-973f-4c356bf0ae31",
+      "result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406"
+    },
+    {
+      "claim_id": "2a0a46ec-db5d-4c9b-ac5e-d756737b6f5e",
+      "result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0"
+    },
+    {
+      "claim_id": "e2fb055e-70c1-4b94-b20f-1a4212afa066",
+      "result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0"
+    },
+    {
+      "claim_id": "a532aa91-9dce-4fec-899d-9913a94f997f",
+      "result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0"
+    },
+    {
+      "claim_id": "34b2590f-87bb-42ff-8791-6cbf811e54de",
+      "result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0"
+    },
+    {
+      "claim_id": "415e9686-eeca-4c35-b889-fa0d4df0c2ee",
+      "result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0"
+    },
+    {
+      "claim_id": "a78f529e-f031-4aa5-89ec-295a3b416dda",
+      "result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0"
+    },
+    {
+      "claim_id": "a183cb9f-1284-405d-a773-c949839832ab",
+      "result_id": "fb57ea0b-3aed-439e-90d1-4ccf2ec5a336"
+    },
+    {
+      "claim_id": "c7915b4c-86ca-4d64-8fc8-b29406611e2e",
+      "result_id": "fb57ea0b-3aed-439e-90d1-4ccf2ec5a336"
+    },
+    {
+      "claim_id": "6df35b1f-fc7f-4daa-9166-502363dcebf1",
+      "result_id": "fb57ea0b-3aed-439e-90d1-4ccf2ec5a336"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a04a8d39-9f98-4fd2-8a77-8c6c5a3fda4c",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7b811fd5-f83e-4f59-a139-8714e3dff1c5",
+      "peer_result_id": "5800e3d2-1157-482c-9a1c-ebac53a461d0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C70-C75 about transcriptome analysis and expression variation. OpenEval finds the analysis supported despite marginal significance (p=0.06), while peer reviewers find it UNCERTAIN and explicitly request additional transcriptome data for strains with divergent phenotypes (Essential Revision 3), suggesting the existing analysis is insufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "c0d92833-825c-47cd-8995-dc04b994549c",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "292b2a24-93ad-40ed-affa-4b4fc08479b6",
+      "peer_result_id": "59232bd8-ec01-4b36-93b8-a456ca5b86de",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C28-C40, C103 about RNAi sensitivity variation and tissue-specific mechanisms. OpenEval finds these well-supported with appropriate controls, and peer reviewers agree (SUPPORTED), with no challenges noted in review comments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a746d2d7-6251-45e6-97e9-06fd7f2498ca",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8d98680a-c6d6-4966-81d1-1a1f1f53107a",
+      "peer_result_id": "c8e715f9-5125-4158-aed5-9f547ee44da0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C58-C62 about heritability estimates and polygenic architecture. OpenEval finds the statistical approach sound and interpretation reasonable (SUPPORTED), and peer reviewers agree (SUPPORTED), with no challenges to the heritability analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a8f7b31a-e7df-474c-a7e1-6d13924205d7",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2354fc22-8818-4a79-ad9c-a17ddc5fd154",
+      "peer_result_id": "fb57ea0b-3aed-439e-90d1-4ccf2ec5a336",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C115-C117 about sequencing controls and off-target predictions. OpenEval finds these controls strengthen confidence in results (SUPPORTED), and peer reviewers agree (SUPPORTED), with no challenges to the technical validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "022e8d09-1b51-465e-8707-242b28f7a0ec",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "52cca663-1ea9-40d8-873f-ceef63f6f158",
+      "peer_result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C63-C69 about GWA analysis and introgression validation. OpenEval finds strong statistical validation (SUPPORTED), and peer reviewers agree (SUPPORTED), with no challenges to the mapping results or experimental validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "5b68aab3-962c-4428-80a9-19e11b1686c5",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "655e01fe-83ee-4d9c-9443-4df6772ad9b4",
+      "peer_result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C48-C55 about low pleiotropy and correlation analyses. OpenEval finds appropriate statistical methods and strong evidence (SUPPORTED), and peer reviewers agree (SUPPORTED), with no challenges to the pleiotropy findings. Peer R4 also includes C76-C79 which OpenEval addresses separately in R9.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "27482477-9ea2-4810-9d93-521ee3e81e90",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "e8956088-fb68-499e-9ece-e39fab0cf925",
+      "peer_result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C5, C25-C28, C87, C98-C100 about strain-by-gene interactions and pervasive CGV. OpenEval finds strong support from experimental data (SUPPORTED), but peer reviewers rate UNCERTAIN, raising fundamental concerns about whether variation is truly 'cryptic' (Essential Revision 1) and noting data only addresses embryonic lethality, not broader cellular processes (Essential Revision 2).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "11798f96-a039-4b20-83d9-2fdd9bebd120",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8665c4b5-119f-4a4d-9e60-a5b738ab3852",
+      "peer_result_id": "dc2918be-9b4b-45f1-a816-174f9df2c65b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R9 addresses claims C76-C79 about gene-specific GWA associations supporting low pleiotropy. Peer R4 addresses overlapping low pleiotropy claims (C48-C55, C76-C79). Both find the evidence SUPPORTED with no challenges to the specificity of genetic associations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "1d50f281-2bef-4044-8699-0213e0ba0a70",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d696a7db-03aa-46be-8847-f9aa840da1ef",
+      "peer_result_id": "5045e1a9-c1df-45c6-b3ff-f45103e2e406",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R10 addresses claims C80-C86 about specific GWA associations (rpn-9/rpn-10, pkc-3/rfc-3). Peer R6 addresses overlapping GWA claims (C63-C69, C81-C82, C84-C86). Both find the mapping results SUPPORTED with no challenges to the GWAS findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "cf0b9d97-3e64-4ef5-b10d-3d471bdc672c",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "70ef4949-a62b-424e-8129-0df05a99a44d",
+      "peer_result_id": "017cbb1b-2431-4023-a383-ceab4978b7fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R4 addresses claims C41-C44 about variance components and mechanisms. Peer R2 includes C41-C42 among broader concerns about CGV. OpenEval finds statistical findings solid but mechanisms speculative (SUPPORTED with caveats), while peer reviewers rate the broader set UNCERTAIN due to fundamental questions about 'cryptic' variation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "4c5c2279-b041-4004-ac67-0497ffa12cc6",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "821064d9-a01c-4845-84a8-0779bcbd2372",
+      "peer_result_id": "e060086c-a703-4f4b-af81-90ddde08f505",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R12 addresses claims C1-C18 about background knowledge and CGV theory, finding them well-established (SUPPORTED). Peer R1 addresses C1, C17, C90, challenging whether variation is truly 'cryptic' (UNCERTAIN), requesting demonstration of phenotypic similarity across isolates or better justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "a5bec963-678a-452b-bec5-0cca7c949531",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "0ff20a3b-d5d4-466d-bf23-824f907b663f",
+      "peer_result_id": "e060086c-a703-4f4b-af81-90ddde08f505",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R13 addresses claims C56-C57, C88-C97 about contextualization and speculative mechanisms (SUPPORTED). Peer R1 addresses C90 within broader challenge to 'cryptic' variation concept (UNCERTAIN). Limited overlap, but both touch on the theoretical framing of cryptic genetic variation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "2beb1f64-6658-4e17-9fdf-28168f808fbd",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "ca5f8bdf-d8a7-477b-a1c3-1fe000f55700",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R1 addresses claims C3-C4, C19-C24, C111-C112 about experimental methodology, controls, and image analysis, finding the approach sound (SUPPORTED). No corresponding peer review evaluation found; reviewers did not challenge the basic experimental methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    },
+    {
+      "id": "3f6461ef-092d-481c-b359-03ac23836c6f",
+      "submission_id": "46564ef2-bc8c-401a-ba78-64f3ac023abb",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "2c6b03c6-9452-4c1b-8fbe-91024adeee6a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R14 addresses claims C101-C110 about speculative extrapolations to other systems, rating them UNCERTAIN as they represent future directions requiring validation. No corresponding peer review evaluation found; reviewers did not comment on these broader implications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:59.653857Z"
+    }
+  ]
+}

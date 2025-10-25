@@ -1,0 +1,2123 @@
+{
+  "submission": {
+    "id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:13:36.162895Z",
+    "updated_at": "2025-10-25T01:13:36.162895Z"
+  },
+  "content": [
+    {
+      "id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "content_type": "manuscript",
+      "content_text": "# Neuromodulation of excitatory synaptogenesis in striatal development\n\n## Authors\n\n- Yevgenia Kozorovitskiy<sup>1</sup>\n- Rui Peixoto<sup>1</sup>\n- Wengang Wang<sup>1</sup>\n- Arpiar Saunders<sup>1</sup>\n- Bernardo L Sabatini<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Howard Hughes Medical Institute, Harvard Medical School Boston United States\n2. Department of Neurobiology Northwestern University Evanston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.10111.001 Dopamine is released in the striatum during development and impacts the activity of Protein Kinase A (PKA) in striatal spiny projection neurons (SPNs). We examined whether dopaminergic neuromodulation regulates activity-dependent glutamatergic synapse formation in the developing striatum. Systemic in vivo treatment with G\u03b1 s -coupled G-protein receptors (GPCRs) agonists enhanced excitatory synapses on direct pathway striatal spiny projection neurons (dSPNs), whereas rapid production of excitatory synapses on indirect pathway neurons (iSPNs) required the activation of G\u03b1 s GPCRs in SPNs of both pathways. Nevertheless, in vitro G\u03b1 s activation was sufficient to enhance spinogenesis induced by glutamate photolysis in both dSPNs and iSPNs, suggesting that iSPNs in intact neural circuits have additional requirements for rapid synaptic development. We evaluated the in vivo effects of enhanced glutamate release from corticostriatal axons and postsynaptic PKA and discovered a mechanism of developmental plasticity wherein rapid synaptogenesis is promoted by the coordinated actions of glutamate and postsynaptic G\u03b1 s -coupled receptors. DOI: http://dx.doi.org/10.7554/eLife.10111.001\n\n## Introduction\n\nIn the vertebrate basal ganglia, dopamine performs critical functions in motivated, goal-directed learning and behavior, transmitting signals related to rewarding stimuli and other salient experiences (Bromberg-Martin et al., 2010). Classical models of dopaminergic signaling in adult animals propose that the activity of dopamine-producing neurons encodes reward prediction errors and that released dopamine regulates the strength of corticostriatal excitatory glutamatergic inputs. This process is thought to favor the execution of a specific action that previously led to reward, at the expense of competing motor programs. An important element of this model is the distinct action of dopamine on the direct and indirect pathways, comprised of two classes of striatal spiny projection output neurons that express different types of dopamine receptors, project to separate downstream targets, and regulate complementary aspects of motor behavior (Bateup et al., 2010; Kravitz et al., 2010; Cui et al., 2013). Dopamine differentially regulates biochemical signaling (Nishi et al., 1999; 1997), neuronal activity and synaptic plasticity in these two classes of striatal neurons, promoting synaptic potentiation and depression through different receptor subtypes (Shen et al., 2008).\n\nLess is known about the function of dopamine in the postnatal development of basal ganglia, when goal-oriented motor programs are first expressed and activity-dependent synapse formation occurs in the striatum. Therefore, we investigated whether dopamine modulates activity-dependent striatal plasticity and synapse formation during this time. In mice, the second postnatal week of life is a period of rapid growth of excitatory synapses on SPNs, a process driven by the release of glutamate from corticostriatal axons (Kozorovitskiy et al., 2012), among other striatal glutamatergic projections. Furthermore, the balance of activity in direct and indirect pathway SPNs (dSPNs and iSPNs, respectively) influences activity in the neocortex, potentially altering the firing patterns of corticostriatal neurons via recurrent circuit interactions (Kozorovitskiy et al., 2012; Oldenburg and Sabatini, 2015). Thus, positive feedback in recurrent circuits can amplify early glutamatergic signaling, rapidly changing network connectivity. If dopamine modulates glutamatergic synapse function in developing SPNs as it does in mature circuits, it likely interacts with glutamate-dependent neural circuit development during the early postnatal period. In dSPNs, dopamine acts on type 1 dopamine receptor (Drd1), a G\u03b1s-coupled GPCR to activate PKA, a critical enzyme involved in cell growth and plasticity (Nishi et al., 2000). In contrast, in iSPNs, dopamine activates type 2 dopamine receptors (Drd2), G\u03b1i-coupled GPCRs, decreasing PKA activity. Since PKA activity levels influence spinogenesis and synaptogenesis in cortical pyramidal neurons (Kwon and Sabatini, 2011), dopamine may directly set the threshold for activity-dependent synaptogenesis in striatal SPNs.\n\nDopamine is poised to regulate striatal signaling early in postnatal life, since embryonic striatum receives substantial dopaminergic innervation from substantia nigra pars compacta (SNc) and the ventral tegmental area (VTA), as is evidenced by neuroanatomical studies (Hu et al., 2004) and direct functional assays showing embryonic dopamine release (Ferrari et al., 2012). Two observations indirectly support the involvement of dopamine in the developmental wiring of the striatum. First, dysfunctions of the dopaminergic system are linked to numerous diseases that are postulated to have a developmental origin, including schizophrenia (Lau et al., 2013; Laruelle, 2014), obsessive compulsive disorder (Nikolaus et al., 2010) and Tourette Syndrome (Buse et al., 2013). Second, embryonic exposure to drugs of abuse that act on the dopaminergic system, such as methamphetamine (Heller et al., 2001), induces profound brain and behavioral abnormalities in the offspring.\n\nHere we tested the hypothesis that neuromodulators, and specifically dopamine, regulate glutamate-dependent synaptogenesis during striatal development. We found a potentially general mechanism of developmental synaptogenesis that relies on the coordinated actions of glutamate and the activation of PKA via G\u03b1s-coupled receptors.\n\n## Results\n\nConsistent with early development of the dopaminergic projection from SNc/VTA to striatum, the\u00a0dopamine transporter promoter is active and dopaminergic axons are found in the neonatal striatum on postnatal day 1 (P1) (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig1-v2.jpg)\n\n**Figure 1.:** s\u00a0GPCR stimulation rapidly increases SPN dendritic spine and excitatory synapse number.(A) Cre recombinase expression driven by dopamine transporter gene (Slc6a3) promoter activates tdTomato expression (red) in a reporter mouse, revealing cells bodies in SNc (left) and densely innervating fibers within striatum (right) at postnatal day 1 (P1). (B) At P10, immunohistochemistry for tyrosine hydroxylase shows expression in SNc cell bodies (left) and a punctate pattern in the striatum (right). (C) Schematic of the experiment and recording preparation. (D) 2PLSM image of a Drd2-GFP negative SPN filled with Alexa 594 during whole-cell recording. (E) 2PLSM images of dendrites and dendritic spines on dSPNs after saline or SKF 81297 administration in vivo. (F) Example mEPSC recordings and individual events demonstrating enhanced mEPSC frequency in dSPNs with Drd1 stimulation. (G) Summaries of spine density, mEPSC frequency and amplitude in dSPNs following in vivo administration of saline or the Drd1 agonist SKF\u00a081297 to control animals or those treated with the PKA antagonist H-89. (H) Summaries of spine density, mEPSC frequency and amplitude in iSPNs following in vivo administration of saline, the Drd1 agonist SKF\u00a081297, the Drd2 agonist quinpirole, the A2aR agonist CGS\u00a021680, or SKF\u00a081297 and CGS\u00a021680 together.DOI: http://dx.doi.org/10.7554/eLife.10111.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Trace examples of miniature EPSC (mEPSC) recordings from dSPNs in slices that were incubated in the presence or absence of Drd1 agonist SKF 81297 (10 \u00b5M) for ~1\u2009hr. (B) Summary data demonstrating no difference in normalized mEPSC frequency between conditions. Error bars indicate SEM. C. Summary data demonstrating no difference in mEPSC amplitude between conditions. Error bars indicate SEM.DOI: http://dx.doi.org/10.7554/eLife.10111.004\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) View from above the arena used to record locomotor activity and quantify grid crossings, with example tracks of individual mice from the noted conditions recorded for 30 min. (B) Summary graphs of distance travelled and grid coverage from mice injected with saline, Drd1 agonist SKF 81297, or Drd2 agonist quinpirole. A subset of animals was pre-treated with PKA blocker H-89 thirty minutes before saline/agonist injections. Drd1 agonist treatment increased locomotion, an effect that was partially blocked by H-89 pre-administration. N=9, 11, 7 and 5 mice/group; *p<0.05, p<0.1; error bars indicate SEM.DOI: http://dx.doi.org/10.7554/eLife.10111.005\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) View from above the arena used to record locomotor activity, with example tracks of individual mice from the noted conditions recorded for 30 min, on day 3 of the experiment. P9 mice received priming injections on day 1, as noted, and their locomotor behavior in response to a second injection on Day 3 was evaluated. (B) Summary graph of distance travelled from mice injected twice with saline on days 1 and 3, saline and SKF 81297, or two rounds of SKF 81297 treatment. Drd1 agonist treatment increased locomotion and further potentiated SKF 81297-induced locomotion increase on day 3. N=10 mice/group; one-way ANOVA p<0.0001, post hoc tests *p<0.05, **p<0.01, *** p<0.001; error bars indicate SEM.DOI: http://dx.doi.org/10.7554/eLife.10111.006\n\nTo address whether neuromodulation regulates synapse formation in developing striatum, we examined the number and strength of glutamatergic synapses on SPNs in acute brain slices prepared from P8-13 mice, age-balanced across groups. Comparisons of dendritic spine density and spontaneous miniature excitatory post-synaptic currents (mEPSCs) were made between slices prepared from mice injected 1\u2009hr previously with saline or ligands for GPCRs differentially expressed by dSPNs and iSPNs.\n\nWe observed that in acute mouse brain slices prepared 1\u2009hr after systemic injection of the Drd1 agonist SKF 81297 (5 mg/kg), both dendritic spine density and mEPSC frequency in dSPNs were increased compared to saline-injected littermates (Figure 1C\u2013G). The frequency of mEPSCs in Drd1 agonist exposed SPNs was 593 \u00b1 168% of that in saline-treated controls (N\u00a0=\u00a07 and 8 neurons from 4 mice/group, Kruskal-Wallis test p\u00a0=\u00a00.0063, with p<0.05 for Dunn\u2019s multiple comparison post hoc test). mEPSC amplitude was 10.8 \u00b1 1.6 and 12.7 \u00b1 1.1 pA for control and Drd1 agonist groups and was not significantly different (one way ANOVA, p\u00a0=\u00a00.313). Dendritic spine density was 0.29 \u00b1 0.02 spines/\u00b5m and 0.60 \u00b1 0.04 spines/\u00b5m for saline control and Drd1 agonist groups respectively (p<0.001 on Dunnett\u2019s multiple comparison test after one-way ANOVA; N\u00a0=\u00a036 dendrites, 12 neurons from 3 mice and 21 dendrites in 7 neurons from 3 mice). Pretreating mice with a PKA antagonist H-89 (5 mg/kg) 30\u2009min prior to agonist injection prevented the effects on mEPSC frequency and spine density (mEPSC frequency, 122 \u00b1 47% of control with Drd1 agonist, N\u00a0=\u00a06 and 8 neurons from 2 mice/group, p>0.05 for Dunn\u2019s multiple comparison post hoc test; spine density, 0.27 \u00b1 0.02 spines/\u00b5m vs. 0.29 \u00b1 0.02 spines/\u00b5m in control and Drd1 agonist treatment conditions, N\u00a0=\u00a018 dendrites in 6 neurons from 2 mice, and 24 dendrites in 8 neurons from 2 mice). These results suggest a PKA-dependent increase in the number of AMPA receptor-containing glutamatergic synapses induced by in vivo\u00a0Drd1 activation. However, Drd1 receptor activation alone is insufficient to increase synapse number, as changes in mEPSC frequency or amplitude were not observed with incubation of acute brain slices in SKF 81297 in vitro (Figure 1\u2014figure supplement 1. For mEPSC frequency, 107 \u00b1 23% of ACSF control values with Drd1 stimulation; N\u00a0=\u00a06 neurons from 2 mice/group, t-test p\u00a0=\u00a00.83. The amplitude of mEPSCs was 12.3 \u00b1 1.9 and 13.8 \u00b1 2.2 pA for control and Drd1 stimulation groups respectively, t-test p\u00a0=\u00a00.51). Thus, dSPN excitatory synapse enhancement by a single, acute dose of a Drd1 receptor agonist alone requires intact circuitry, as it cannot be induced in the slice.\n\nIn contrast to the effects seen in dSPNs, in vivo administration of SKF 81297 had no effects on excitatory synapses in iSPNs (Figure 1H), consistent with the lack of expression of Drd1 receptor on these cells (Gerfen et al., 1990) (mEPSC frequency, 73.3 \u00b1 30.1% of control values in presence of Drd1 agonist; N\u00a0=\u00a06 neurons from 4 mice and 8 neurons from 2 mice). iSPNs express G\u03b1s-coupled Adenosine 2a (A2a) receptor, which also enhances PKA activity (Higley and Sabatini 2010) \u2013 nevertheless, administration of an agonist of A2aRs (CGS 21680, 0.1 mg/kg) had no significant effect on iSPN dendritic spine density or mEPSC rate, within the rapid time-frame of 1\u2009hr (140 \u00b1 63% of control, p>0.05 for control vs. A2aR agonist post-hoc comparison; N\u00a0=\u00a011 neurons from 3 mice). Similarly, administering an agonist of G\u03b1i-coupled Drd2 receptors (quinpirole 0.5 mg/kg) also resulted in no significant differences from controls (132 \u00b1 17.0% of control, p>0.05 for control vs. Drd2 agonist post hoc comparison; N\u00a0=\u00a08 neurons from 3 mice). However, co-administration of Drd1 and A2a receptor agonists increased mEPSC frequency and dendritic spine density in iSPNs, with no change in mEPSC amplitude, suggesting an increase in the number of functional excitatory synapses (Figure 1H) (mEPSC frequency, 470 \u00b1 124% of control values with CGS 21680/SKF 81297, one-way ANOVA p<0.0008, Bonferroni post hoc p<0.05; N\u00a0=\u00a06 neurons from 4 mice and 5 neurons from 2 mice for this comparison. Dendritic spine density, 0.29 \u00b1 0.02 spines/\u00b5m and 0.63 \u00b1 0.05 spines/\u00b5m, for control vs. CGS 21680/SKF 81297, one-way ANOVA p<0.0001, Bonferroni post hoc p<0.0001; 31 dendrites, 9 neurons, 2 mice, and 7 dendrites, 4 neurons in 2 mice, for this comparison).\n\nThese results indicate that neither the activation of dopamine receptors, nor of G\u03b1s-coupled GPCRs, is sufficient to cell-autonomously enhance glutamatergic synapses on SPNs. Instead, neuromodulatory GPCR signaling may be a permissive, or facilitating, signal that acts in concert with other stimuli to induce synaptogenesis in vivo. We hypothesized that GPCR activation modulates glutamate-induced, activity-dependent synaptogenesis. Since Drd1 activation also increases dSPN excitability, which in turn may increase recurrent corticostriatal glutamatergic transmission onto SPNs by altering cortical activity (Oldenburg and Sabatini, 2015), then activation of this receptor alone in vivo\u00a0will (1) activate PKA and (2) enhance glutamate release. This may be sufficient to drive synapse formation. Such stimulatory effects of dopamine on basal ganglia circuitry are consistent with the observation of Drd1 receptor activation-induced locomotion observed in pups, which normally show limited mobility at P8-13 (Dehorter et al., 2011; Wills et al., 2014) (Figure 1\u2014figure supplement 2). This acute locomotion induction has lasting consequences for behavior and brain development, since priming with Drd1 receptor agonist\u00a0administration at P9 potentiated agonist-evoked locomotion at P11 (Figure 1\u2014figure supplement 3). In contrast to dSPNs, iSPNs would be expected to have more complex requirements for synaptogenesis, since iSPN activity is negatively coupled to intrastriatal glutamate release in the adult, via regulation of cortical activity (Oldenburg and Sabatini, 2015). We hypothesize that the cooperation of presynaptic glutamate release and postsynaptic PKA signaling explains why coincident activation of Drd1 receptors (to recurrently drive glutamate release) and A2aRs (to enhance PKA signaling) is required in vivo\u00a0to\u00a0increase synaptogenesis in iSPNs.\n\nWe directly tested this hypothesis ex vivo by examining the ability of exogenous glutamate exposure, through focal photolysis of MNI-L-glutamate, to trigger synaptogenesis in SPNs under different states of GPCR activation. Spatio-temporally controlled glutamate release can focally and rapidly induce de novo formation of a synapse-bearing dendritic spine on young cortical pyramidal neurons (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of experimental setup. AAVs encoding Cre-dependent GFP expression are used with appropriate transgenic mice to induce sparse GFP labeling of dSPNs or iSPNs. (B) Schematic illustrating de novo dendritic spine formation triggered by focal 2-photon glutamate uncaging. In a subset of experiments, uncaging was rapidly alternated between two sites, located close to (<2 \u00b5m) and far from (>5 \u00b5m) the GFP-positive dendrite. De novo spinogenesis occurred in a subset of trials in locations near the dendrite. (C) Example of a GFP+ neuron imaged at low magnification (left) and higher magnification images of a dendrite before (middle) and after (right) successful induction of new spine formation (arrow). (D) Probability of successful spinogenesis across all induction attempts in dSPNs (left) and iSPNs (right) as a function of uncaging pulse width in control conditions (black) or in the presence of the indicated G\u03b1s GPCR agonist (grey, Drd1 agonist SKF\u00a081297; burgundy, A2aR agonist CGS\u00a021680). (E) Average probability of spinogenesis for dSPNs and iSPNs analyzed in control conditions or in the presence of the indicated G\u03b1s GPCR agonist. Error bars indicated SEM of the probability across mice. (F) Analysis of spinogenesis kinetics using line scans to measure fluorescence in the emerging spine head (left) indicates that although the actual process of spinogenesis is fast (right), some spines are generated early (burgundy) and others late (black) during the stimulation protocol. (G) G\u03b1s GPCR agonist treatment reduces the number of uncaging pulses needed for detection of an emergent dendritic spine. Error bars indicate SEM.DOI: http://dx.doi.org/10.7554/eLife.10111.007\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Experimental schematic. For sparse expression of GFP-expressing AAV in striatal SPNs, mice were injected with a combination of two AAVs, mCherry-Cre and Cre-dependent DIO-EGFP AAV. (B) At P8-13, acute slices were prepared and GFP+ dendritic segments were imaged with one laser tuned to 840 nm before, during and after delivering a two-site MNI-L-glutamate uncaging protocol. One site was near the dendrite (<2 \u00b5m), while the second one was at least 5 \u00b5m away. Distal sites (2) were selected either on the same or different side of the dendrite, relative to the proximal (1) uncaging location. (C) Fluorescence\u00a0image illustrating the\u00a0uncaging sites selected for one trial (left). Before (middle) and after (right) images, demonstrating successful induction of a spiny protrusion. (D) Summary data for 82 trials. Success rate for proximal uncaging site spinogenesis is consistent with that from previous studies (~50% success rate with no added Mg2+ ACSF; Figure 2). No trials were associated with appearance of a protrusion or an isolated fluorescence spot at the distal uncaging site. To further evaluate dynamics of signal change in the locations of induction attempts, we tracked line-scan intensity changes across time and uncaging pulses. (E) Examples of individual successful and unsuccessful inductions of spinogenesis showing line-scan tracking at both uncaging locations. (F) Summary graph of line-scans before and after uncaging showing normalized intensity levels for trials at proximal and distal sites.DOI: http://dx.doi.org/10.7554/eLife.10111.008\n\nAs was previously described for layer 2/3 pyramidal neurons, P8-13 SPNs of both pathways were capable of de novo spinogenesis in response to glutamate uncaging (Kozorovitskiy et al., 2012; Kwon and Sabatini, 2011). The basal rate of spinogenesis (the probability of induction of a structure shaped like a dendritic spine), as well as its dependence on uncaging pulse width and proximity to the dendrite were similar for striatal SPNs and previously examined cortical neurons (Kwon and Sabatini, 2011). For both dSPNs and iSPNs, the success rate for inductions with stimulation 1\u20132 \u00b5m away from a labeled dendrite was ~20\u201350%, with longer uncaging pulses associated with a greater probability of spinogenesis (dSPNs, N\u00a0=\u00a0146 and 174 trials in 10 mice for control group and in presence of GPCR agonist, respectively, balanced across conditions; iSPNs, N\u00a0=\u00a0132 and 164 trials in 11 mice). The probability of spinogenesis increased in the presence of SKF 81297 for dSPNs, and CGS 21680 for iSPNs, respectively (the proportion of success trials was 0.23, 0.40, and 0.57 in the control condition, for varied length glutamate uncaging pulses, and 0.44, 0.62, and 0.76 in presence of Drd1 receptor agonist for dSPNs; for iSPNs, the respective proportions were 0.19, 0.46, and 0.49 in the control condition vs. 0.73, 0.74, and 0.70 for iSPNs with A2aR stimulation; two-tailed Z tests for proportions, p\u00a0=\u00a00.040, 0.015, and 0.018 for dSPNs, and p<0.0001, p\u00a0=\u00a00.018, and 0.008 for iSPNs). This enhancement was observed for all 3 uncaging pulse-widths tested (Figure 2D), and is also evident in across-cell averages within each\u00a0mouse, for the 4 ms-long uncaging pulse condition (Figure 2E; proportion of successful trials, 0.48 vs. 0.80 for dSPNs in control and with Drd1 agonist treatment, and 0.48 vs. 0.72 for iSPNs; dSPNs, N\u00a0=\u00a03 and 4 mice/group, 68 and 75 trials; iSPNs, N\u00a0=\u00a03 and 4 mice/group, 61 and 103 trials).\n\nAnalysis of the time course of spine formation for successful inductions reveals that G\u03b1s-coupled receptor stimulation decreased the number of glutamate pulses necessary to induce spinogenesis (Figure 2F). Whereas spine growth occurs rapidly in all conditions, as observed in pyramidal neurons (Kwon and Sabatini, 2011), SKF 81297 and CGS 21680 accelerated the onset of spinogenesis for dSPNs and iSPNs, respectively. We compared the number of photoactivation pulses to threshold, defined as 50% fluorescence increase over baseline in the uncaging location, leading to an appearance of a spine-like extension from the dendrite. At 2\u2009Hz stimulation, for successful trials, threshold pulse number was 21.3 without drug and 6.0 in the presence of G\u03b1s agonist for dSPNs, and 17.4 vs. 8.7 pulses for iSPNs (Mann-Whitney test, p\u00a0=\u00a00.0025 and p\u00a0=\u00a00.0048 for d- and iSPN comparisons, respectively; N\u00a0=\u00a012 and 13 induction trials for dSPN control vs. in the presence of agonist, with 16 and 17 induction trials for iSPNs, respectively). Given that glutamate was exogenously controlled and G\u03b1s receptors were stimulated by agonist bath application, these findings suggest the presence of cell-autonomous mechanisms for neuromodulatory regulation of glutamate-dependent spinogenesis.\n\nIf a similar interaction of neuromodulation and glutamate release controls synapse formation in vivo, it should be possible to bias rapidly developing networks towards increased synaptogenesis by briefly enhancing either PKA signaling or glutamate release. To test this prediction for PKA signaling, we used a pharmacogenetic approach based on Rs1, a modified G\u03b1\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig3-v2.jpg)\n\n**Figure 3.:** s GPCR activation is sufficient to rapidly enhance corticostriatal innervation.(A) Secreted alkaline phosphatase (SEAP)-based in vitro test of the efficacy of PKA activation following activation of the G\u03b1s-targeted RASSL with RS 67333. (B) Experimental design showing unilateral neonatal virus injection of DIO-Rs1-EGFP AAV and mCherry-Cre AAV into striatum of Rbp4-Cre; Ai32 mice. At P8-13, pups were systemically injected with RS 67333 and acute slices were prepared 1.5\u2009hr after the injection. Light-evoked EPSCs were recorded in SPNs and compared across injected and uninjected hemispheres. (C) Confocal image showing striatal expression of a Cre-dependent G\u03b1s targeted Rs1-EGFP AAV in a Cre-expressing mouse. (D) YFP fluorescence image illustrating the expression ChR2-YFP in layer 5 pyramidal neurons in coronal brain section of an Rbp4-Cre; Ai32 mouse. (E) Images mCherry-Cre (left, red) and NeuN (middle, green) expression in control (top) or Cre-mCherry encoding AAV injected (bottom) striatum. The proportion of striatal neurons identified immunohistochemically by NeuN expression that co-express Cre in infected or uninfected hemispheres. (F) Examples of light-evoked EPSCs from SPNs in control and virally injected hemisphere of the same mouse. Ten overlaid consecutive acquisition traces are shown for each neuron. (G) Summary data showing larger amplitudes of ChR2-evoked EPSCs for SPNs from the injected side of the brain. Circles are average responses of single neurons, whereas lines reflect individual mouse averages.DOI: http://dx.doi.org/10.7554/eLife.10111.009\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Examples of individual (grey) and average (black, 5 consecutive traces) light-evoked, pharmacologically isolated AMPAR-dependent responses in SPNs from Rbp4-Cre; Ai32 mice of different ages. More individual response failures in responsive SPNs and non-responsive neurons are observed at the younger ages. (B) Summary data across age groups indicating expansion of connectivity from P8 through eye opening at P13-14. Individual neuron peak response amplitude averages are shown as clear circles, with group averages in red. Error bars reflect SEM.DOI: http://dx.doi.org/10.7554/eLife.10111.010\n\nWe tested the sufficiency of G\u03b1s-coupled GPCR activation in SPNs for enhancing corticostriatal transmission, using a combination of pharmacogenetic activation in vivo and optogenetic analysis of evoked corticostriatal transmission ex vivo (Figure 3B\u2013G). We compared the magnitude of EPSCs evoked by channelrhodopsin (ChR2)-mediated activation of Rbp4-Cre expressing neurons, which include a dense corticostriatal projection, in SPNs in acute brain slices from animals with and without Rs1 expression. Rbp4-Cre; Ai32 mice were unilaterally injected in the striatum with a Cre-expressing AAV and Cre-dependent AAV encoding Rs1 (Hsiao et al., 2008) (Figure 3C\u2013D). This co-injection resulted in broad expression in dorsal striatum SPNs of the injected hemisphere in both dSPNs and iSPNs (Figure 3E) (0% vs. 98% co-labeling, N\u00a0=\u00a0750 and 728 neurons in control and injected hemispheres, from 3 mice). P8-13 infected mice were injected with the Rs1 ligand RS 67333 (3 mg/kg) and acute brain slices were prepared 1.5\u2009hr later for analysis. Whole-cell voltage clamp recordings were used to monitor pharmacologically isolated, AMPAR-mediated blue light-evoked corticostriatal EPSCs, which were recorded from SPNs in dorsal striatum, located either in the control or in the infected hemisphere. Although this strategy results in ChR2 expression in SPNs, the brief time of expression from a single floxed ChR2 allele yielded negligible direct ChR2-evoked currents in SPNs under whole-cell voltage clamp configuration (e.g., Figure 3F). With this strategy, both the control and infected striatum were exposed to RS 67333 and comparisons were made across SPNs from control and infected hemispheres in the same animal. In the control condition, there was a strong age dependence of peak amplitude of EPSCs, ranging from an average of 10 pA to an average of 196 pA per age group, in a cohort of P8-P13/14 mice (Figure 3\u2014figure supplement 1; light evoked EPSC amplitude across age, N\u00a0=\u00a014 neurons from 3 mice, 30 neurons from 6 mice and 14 neurons from 3 mice/group. Kruskal-Wallis test p<0.0001, for main effect and Dunn\u2019s post hoc tests). Consistent with our hypothesis, light-evoked EPSC amplitude was increased in virally transduced SPNs, compared to control hemisphere SPNs (Figure 3G; light-evoked EPSC amplitude, 68.6 \u00b1 29.9 pA control vs. 150.3 \u00b1 55.8 pA injected hemisphere; N\u00a0=\u00a021 and 23 neurons from 4 mice/group, t-test p\u00a0=\u00a00.039). Thus, in vivo transient activation of a G\u03b1s-coupled GPCR in SPNs is sufficient to rapidly enhance corticostriatal connectivity, in the presence of otherwise normal corticostriatal transmission. The observed sufficiency of pharmacogenetic PKA activation to enhance corticostriatal connectivity for iSPNs (in contrast to stimulating iSPNs with an A2aR agonist, as in Figure 1H) stems from the likelihood that the concurrent pharmacogenetic activation of G\u03b1s cascades in dSPNs enhances corticostriatal glutamatergic drive via recurrent connections and regulating cortical activity (Oldenburg and Sabatini, 2015).\n\nConversely, to examine whether increased glutamate release in vivo is able to enhance corticostriatal transmission during this developmental period, a small blue light LED was mounted over somatosensory cortex on one hemisphere and used to activate ChR2-expressing Rbp4-Cre positive neurons in cortex (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig4-v2.jpg)\n\n**Figure 4.:** s-coupled receptor activation.(A) Experimental schematic. A mouse pup expressing ChR2-YFP in corticostriatal fibers (Rbp4-Cre; Ai32) receives 300 light\u00a0pulses over the course of 1\u2009hr via an extracranially mounted LED located over somatosensory and motor cortices. Immediately after in vivo\u00a0optogenetic stimulation, acute slices are prepared and ChR2-mediated EPSCs in SPNs are recorded from stimulated and control hemispheres. (B) Immunohistochemical labeling of immediate early gene c-fos product\u00a0shows increased labeling on the optogenetically stimulated side. (C) Schematic of the experiment and example traces showing ten sequentially evoked EPSCs from example SPNs of the control and stimulated hemisphere in one mouse. (D) Average amplitudes of optogenetically evoked EPSCs showing successful induction of corticostriatal plasticity under baseline conditions. Group averages are shown on the left (error bars reflect SEM) and single neuron (circles) as well as individual mouse (lines) averages are on the right. (E) As in D, repeated in in striatum-only slices, prepared by removing cortex before recording from SPNs. (F,G) As in D, showing in vivo\u00a0pre-administration of PKA blocker H-89 30 min before optogenetic stimulation (F) or antagonism of Drd1 and A2a receptors with SKF 83566 and KW-6002 (G) prevent optogenetically induced corticostriatal plasticity.DOI: http://dx.doi.org/10.7554/eLife.10111.011\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Rbp4-Cre; Ai32 mice.(A) Examples of individual pharmacologically isolated AMPAR-dependent light-evoked EPSCs, recorded from SPNs in Rbp4-Cre; Ai32 mice, either in a standard coronal preparation (left), or in a striatum-only slice with the neocortex removed (right). Individual acquisition sweeps are shown in grey and the average of 5 consecutive traces is in black. (B) Classification of light-evoked responses into silent, unitary (single-peak) and complex responses, in control and in optogenetically stimulated hemispheres. (C) Charge transfer was similar for standard slices and striatum only preparations.DOI: http://dx.doi.org/10.7554/eLife.10111.012\n\nBecause stimulating layer 5 pyramidal neurons may alter intra-cortical connectivity, which could indirectly account for the observed differences in SPN responses, we tested whether this form of plasticity is striatally expressed by trimming off cortex from acute coronal brain slices with a fine scalpel prior to recording (Figure 4E, Figure 4\u2014figure supplement 1). Both peak EPSC amplitude and charge transfer were increased on the stimulated side (light-evoked EPSC amplitude, 9.6 \u00b1 2.4 pA vs. 23.4 \u00b1 4.3 pA for control vs. stimulated hemisphere; charge transfer, 0.64 \u00b1 0.14 and 1.2 \u00b1 0.26 pC for the same comparison; N\u00a0=\u00a019 and 26 neurons from 4 mice/group). These data demonstrate that a major component of the functional reorganization induced through brief in vivo stimulation of corticostriatal afferents in young mice is locally expressed in the striatum. We further probed the\u00a0pharmacological dependence of this form of plasticity and found that it was blocked by either pre-administration of PKA inhibitor H-89 (5 mg/kg), or by a combination of Drd1 and A2aR blockers SKF 83566 (0.5 mg/kg) and istradefylline/KW-6002 (2.5 mg/kg), administered 30 min before optogenetic stimulation (Figure 4F\u2013G). Light-evoked EPSC amplitude, in presence of H-89, was 18.8 \u00b1 4.4 pA vs. 13.8 \u00b1 3.3 pA in neurons from control and stimulated hemispheres (t-test p\u00a0=\u00a00.376, N\u00a0=\u00a022 and 19 neurons from 3 mice/group). In presence of Drd1 and A2aR blockers, it was 34.2 \u00b1 9.3 pA and 26.5 \u00b1 5.3 pA, respectively (t-test p\u00a0=\u00a00.458, N\u00a0=\u00a012 and 15 neurons from 3 mice/group). Thus, SPN changes induced by glutamatergic stimulation require PKA signaling, which in turn is activated via Drd1 and A2aR for dSPNs and iSPNs, respectively. Increasing either pre-synaptic glutamatergic drive or enhancing striatal PKA signaling is sufficient to rapidly alter SPN synaptogenesis, supporting the idea of cooperative, neuromodulation-dependent circuit remodeling during striatal development.\n\nIn order to directly evaluate whether PKA activation and glutamate release within striatum are sufficient for strengthening corticostriatal synapses, we performed ex vivo plasticity induction using optogenetic stimulation of corticostriatal afferents in the presence of drugs activating PKA in SPNs (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig5-v2.jpg)\n\n**Figure 5.:** s-coupled receptor activation are sufficient to rapidly enhance corticostriatal connectivity in brain slices.(A) Experimental schematic for optogenetic stimulation parameters. (B) Graphic representation of stimulation conditions in the acute slice. (C) Example traces showing average evoked EPSCs for representative neurons in control, stimulation (light+G\u03b1s-coupled receptor agonists) and drugs only conditions. (D) Average amplitudes of optogenetically evoked EPSCs. Left, cumulative distribution of responses in control and stimulated groups. Group averages are shown on the middle and right graphs. Single neurons are represented by circles, error bars reflect SEM.DOI: http://dx.doi.org/10.7554/eLife.10111.013\n\n## Discussion\n\nWe examined the hypothesis that neuromodulation interacts with glutamate-dependent circuit wiring in the developing striatum. Instead of a privileged action of dopamine in striatal synapse development, we discovered a mechanism of regulated synaptogenesis requiring cooperative action of glutamatergic drive and neuromodulation. Our data reveal that neuromodulation, through the activity of PKA, enhances the probability of dendritic spine formation and lowers the amount of glutamate necessary to\u00a0trigger spinogenesis in the developing striatum.\n\nThese findings must be integrated into the context of basal ganglia circuitry, where inhibitory outputs of the direct and indirect pathways form functionally complementary loops that provide polysynaptic recurrent positive and negative feedback for excitatory striatal synaptogenesis (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10111/elife-10111-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic summarizing the key result of this study. Neuromodulation, acting via PKA, regulates glutamate-dependent developmental synaptogenesis. (B) These results fit into the larger framework of the basal ganglia model, which indicates that through polysynaptic recurrent loops involving the neocortex, dSPN activity is positively coupled to striatal glutamate release onto SPNs of both pathways, whereas indirect pathway activity provides negative feedback. (C) Together the two models can account for a transient developmental bias towards the earlier\u00a0innervation of dSPNs over iSPNs. During development, dSPNs have greater dendritic spine density and miniature EPSC frequency but not amplitude, compared to iSPNs. These graphs represent re-analyses of control data from a previously published study (Kozorovitskiy et al., 2012).DOI: http://dx.doi.org/10.7554/eLife.10111.014\n\nThe observation that two types of G\u03b1s-dependent modulation appear to regulate synaptogenesis in d- and iSPNs raises the possibility that PKA activity, via G\u03b1s GPCRs, generally serves to potentiate activity-dependent synaptogenesis during the time of rapid synapse production. The array of G\u03b1s GPCRs expressed in the central nervous system is substantial and includes abundant receptors such as 5-HT4 and 5-HT7 serotonin receptors (Giulietti et al., 2014), as well beta-adrenergic (Nomura et al., 2014; Arriza et al., 1992) and corticotropin-releasing factor receptors (Fu and Neugebauer, 2008; Riegel and Williams, 2008). A general role for neuromodulators acting on G\u03b1s GPCRs during neural circuit development would transform our understanding of core principles in developmental neurobiology, greatly expanding the list therapeutic targets for neurodevelopmental and neurodegenerative disorders.\n\n## Materials and methods\n\n## Mouse strains and genotyping\n\nAnimals were handled according to protocols approved by the Harvard Standing Committee on Animal Care, in accordance with the guidelines described in the US National Institutes of Health Guide for the Care and Use of Laboratory Animals. In order to identify direct- and indirect-pathways SPNs in experiments described in Figure 1 and related supporting data, we used Drd2-EGFP transgenic mice (GENSAT, #RP23-161H15). For de novo spinogenesis experiments, Drd1a-Cre (GENSAT, founder line EY262) (Gong et al., 2003) and Adora2A-Cre (Gong et al., 2007) (GENSAT, founder line KG139) mouse pups were generated by crossing a parent carrying a single Cre-positive allele to C57BL6 wild-type mice. Genotyping primers and PCR protocols have been previously described (Kozorovitskiy et al., 2012). Experiments were also performed on mice that carried the Rbp4-Cre transgene (GENSAT, #RP24-285K21) crossed to floxed TdTomato reporter mice (Ai14, Jackson Lab, #007914) (Madisen et al., 2010) or floxed ChR2 (H134R) mice (Ai32, Jackson Lab, Bar Harbor, ME, #012569). For detecting dopamine transporter (DAT) activity at a young age, knock-in mice expressing Cre recombinase under DAT promoter, Slc6a3-ires-Cre (Jackson Lab, # 006660) (B\u00e4ckman et al., 2006), were crossed to Ai14 mice. To evaluate locomotor activity in mouse pups, P8-13 mice were videotaped from above in square or rectangular enclosures, for 30\u201345 min, 15 min following a single or repeat i.p. administration of saline or receptor agonists (doses are described below). Euclidean distance traveled was calculated from body center positions in x,y space over time.\n\n## Viruses and intracranial injections\n\nConditional expression of EGFP in Cre-containing neurons was achieved using recombinant adeno-associated viruses (AAVs) encoding a double-floxed inverted open reading frame (DIO) of EGFP, as described previously (Kozorovitskiy et al., 2012). Double-floxed Rs1-EGFP AAV (Srinivasan et al., 2003) was co-delivered with an AAV expressing Cre fused to mCherry, in order to drive expression in most striatal neurons. Vector DNA was amplified in recombination deficient bacteria (Stbl3, Invitrogen, Thermo Fisher Scientific, Waltham, MA) and packaged in the vector core of University of North Carolina. P0-3 day old mice were cryoanesthetized, received ketoprofen for analgesia, and were placed on a cooling pad. Virus was delivered at a rate of 100 nl/minute using an UltraMicroPump (World Precision Instruments, Sarasota,\u00a0FL). Dorsal striatum was targeted by directing the needle approximately 1 mm anterior to midpoint between ear and eye, 1.5 mm from midline and 1.8 mm ventral to brain surface. Coordinates were slightly adjusted based on pup age and size. After 200\u2013300 nl injections and wound closure, mice were warmed on a heating pad and returned to home cages.\n\n## Acute slice preparation and electrophysiology\n\nCoronal striatal slices were prepared as described previously (Kozorovitskiy et al., 2012). Animals were deeply anesthetized by inhalation of isoflurane. Cerebral hemispheres were removed and placed in cold choline-based artificial cerebrospinal fluid (choline-ACSF) containing 25 mM NaHCO3, 1.25 mM NaH2PO4, 2.5 mM KCl, 7 mM MgCl2, 25 mM glucose, 1 mM CaCl2, 110 mM choline chloride, 11.60 mM ascorbic acid, and 3.10 mM pyruvic acid, and equilibrated with 95%O2/5%CO2. Tissue was blocked and transferred to a slicing chamber containing choline-ACSF. Two hundred and seventy-five or three hundred \u03bcm-thick slices were cut on a Leica VT1000s (Leica Instruments, Buffalo Grove, IL) and transferred into a holding chamber with ACSF containing (in mM) 127 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 2.0 CaCl2, +/-1.0 MgCl2, and 25 glucose, equilibrated with 95%\u00a0O2/5%\u00a0CO2. Slices were incubated at room temperature, or at 34\u00b0C, for 20\u201330 min prior to imaging or electrophysiological recording, respectively. In a subset of experiments, cortex was removed from the striatum in coronal sections using a microsurgical knife (EMS, Hatfield, PA).\n\nWhole-cell recordings were obtained from striatal SPNs visualized under infrared differential interference contrast (IR-DIC) using patch pipettes with pipette resistance of ~2\u20134 M\u03a9. Epifluorescent illumination enabled identification of infected or GFP-positive SPNs. For miniature excitatory postsynaptic current (mEPSC) recordings and for light-evoked responses, the internal solution consisted of 120 mM CsMeSO4, 15 mM CsCl, 8 mM NaCl, 10 mM TEACl, 10 mM HEPES, 2 mM QX314, 4 mM MgATP, 0.3 mM NaGTP (pH 7.4). Alexa Fluor 594 (10\u201320 \u00b5M) was added to internal to visualize cell morphology and confirm cell identity as SPN. Recordings were made from cells held at -70 mV using Axoclamp 200B or 700B amplifiers (Axon Instruments, Union City, CA) at room temperature. Data were filtered at 3 kHz and sampled at 10 kHz. Series resistance, measured with a 5 mV hyperpolarizing pulse in voltage clamp, was under 20 M\u03a9 and was left uncompensated. All responses were examined for light-evoked EPSC analysis. Miniature EPSC amplitude cut-off for analysis was 6 pA and cells that had no mEPSCs during the recording were included. Neurons with high root-mean-square current noise values (~IRMS>2.5 pA) were excluded, regardless of series resistance and holding current. Several minutes following breaking in, ~5 min of continuously acquired 30 second long sweeps were collected and analyzed offline per neuron. The amplitude of mEPSCs amplitude reflects absolute value of inward currents for neurons held at -70 mV in all figures. For normalized mEPSC frequency calculation, the mean of the entire control group was considered 100%. Ages of mice were balanced across drug treatment groups and were always P8-13, except for P14-15 mEPSC and dendritic spine data reanalyzed from a previously published paper in Figure 6C (Kozorovitskiy et al., 2012), as well as light-evoked EPSC data in Figure 3\u2014figure supplement 1, which includes a P13-14 group of mice after eye-opening.\n\n## Optogenetic stimulation in vivo\u00a0and ex vivo\n\nA bare Cree XPE emitter blue LED was used for in vivo\u00a0unilateral optogenetic stimulation. P8-14 mice were anesthetized and received analgesia. The emitter surface was flattened and attached directly to the skull over somatosensory cortex on one side. Skin was closed over the emitter, and upon recovery from anesthesia, awake mice were transferred into the stimulation chamber where they could move freely. Three hundred 10 ms-long pulses (~15 mW outside the cranium) were delivered through the skull. Pulses were delivered in a train of 5 stimuli at 20\u2009Hz, once per minute. Brain slices were prepared immediately after completion of stimulation. For ex vivo\u00a0whole cell recording of light-evoked EPSCs in SPNs, light from a 473 nm laser (Optoengine, Midvale, UT) was focused on the back aperture of the microscope objective to produce wide-field illumination. Brief pulses of light (10\u00a0ms duration, 2\u20133 mW under the objective) were delivered at the recording site at 30 second intervals. Epifluorescence illumination was used sparingly to minimize ChR2 activation prior to recording and was never used with a GFP filter cube.\n\nFor ex vivo optogenetic stimulation of acute brain slices we used a custom built chamber with blue (470 nm) LEDs set perpendicular to the plane of slices. Slices were incubated in ACSF with 5 \u00b5M CGP\u00a055845, 10 \u00b5M SR\u00a095531, 10 \u00b5M SKF\u00a081297, 10 \u00b5M CGS\u00a021680 at room temperature and stimulated with 10 mW.mm-2 light pulses (5 ms) for one hour. Light pulses were triggered with a Master-8 stimulator and the pulse pattern used for stimulation was 5 pulses at 20\u2009Hz every minute.\n\n## Two-photon imaging with two-photon glutamate uncaging\n\nDendritic imaging and uncaging of MNI-glutamate for spinogenesis induction were accomplished on a custom-built microscope combining two-photon laser-scanning microscopy (2PLSM) and two-photon laser photoactivation (2PLP), as previously described (Kwon and Sabatini, 2011). Two mode-locked Ti:Sapphire lasers (Chameleon lasers, Coherent, Santa Clara, CA ) were tuned to 840 and 725 nm for exciting GFP or Alexa 594 fluorescence and uncaging, respectively. The intensity of each laser was independently controlled by Pockels cells (Conoptics, Danbury, CT). A modified version of ScanImage software was used for data acquisition (Pologruto et al., 2003) (https://github.com/bernardosabatinilab). For glutamate uncaging, 2.5 mM MNI-caged-L-glutamate was perfused into the slice chamber, and 10\u201315 mW of 725 nm light at the specimen plane (60X objective, Olympus, Waltham, MA) was used to focally release the caging group. Secondary and tertiary dendritic branches were selected for dendritic imaging and spinogenesis induction. MNI-glutamate was uncaged near the dendrite (~0.5 or >5 \u00b5m away from the edge) at 2\u2009Hz using up to forty 0.5, 2 or 4 ms-long pulses. Images were continually acquired during the induction protocol at 1\u2009Hz, and uncaging was stopped if an apparent spinehead was visible before 40 uncaging pulses were delivered. For analysis of the spinogenesis timecourse and the 2-site uncaging comparisons, the intensity of pixels along a line crossing the middle of the spinehead (or uncaging spot if no detectable spine appeared) was measured across consecutive images (ImageJ, NIH) and expressed as percentage of maximum fluorescence reached in the uncaging locus 1\u20132\u2009min following induction. For dendritic spine density analyses, stacks through secondary and tertiary dendrites were acquired, coded and analyzed in MATLAB (MathWorks, Natick, MA) and ImageJ.\n\n## Pharmacology\n\nPharmacological agents were acquired from Tocris (Bristol, UK) or Sigma-Aldrich (St. Louis, MO). For mEPSC recordings, ACSF contained 1 \u03bcM TTX, 50 \u03bcM SR 95531/Gabazine, 10 \u03bcM CPP, and 10 \u03bcM Scopolamine hydrobromide. For light evoked EPSC recordings, SR 95531 and CPP were used at the same concentrations as for mEPSC recordings. Acute slices were treated with 10 \u03bcM SKF 81297 or CGS 21680. In vivo treatment of mice included intraperitoneal or subcutaneous injections of SKF 81297 (2.5\u20135 mg/kg), CGS 21680 (0.1 mg/kg), quinpirole (0.5 mg/kg), H-89 (5 mg/kg), istradefylline/KW-6002 (2.5 mg/kg), SKF 83566 (0.5 mg/kg), and RS 67333 (3 mg/kg).\n\n## Fixed tissue preparation, immunohistochemistry and imaging\n\nMice were transcardially perfused with 4% paraformaldehyde and brains were post-fixed for 1\u20135 days, prior to sectioning at 40\u201350 \u00b5m on a Vibratome. No immunoenhancement was used to increase the signal of virally transduced fluorescent proteins. For tyrosine hydroxylase (TH), NeuN and c-fos immunofluorescence, 1:4 series of coronal sections through the striatum or SNc were incubated overnight at 4\u00baC with rabbit anti-TH, mouse anti-NeuN, or rabbit anti-c-fos antibody in TBS with 0.5% Tween-20 (1:500\u20131000, all from EMD\u00a0Millipore, Billerica, MA). The following day tissue was rinsed in TBS, reacted with goat anti-rabbit or anti-mouse Alexa Fluor 594 (1:500, Molecular Probes, Thermo Scientific) for 1\u2009hr at RT, rinsed, mounted onto superfrost slides, dried and coverslipped under ProLong antifade reagent with DAPI (Molecular Probes). Images were acquired with a Zeiss LSM 510 META or a Leica SP8 confocal microscope (Harvard NeuroDiscovery Center). For quantitative estimates of mCherry-Cre and NeuN overlap, slides were coded for confocal microscopy and data analysis. Z-stacks matching the dorsal targeting of electrophysiological recordings and viral injections were selected for analysis. Two-dimensional 1 \u00b5m-thick optical sections were analyzed in ImageJ (FIJI) (Schindelin et al., 2012). The percentage of Cre+ and Cre- among NeuN+ neurons was quantified in both hemispheres.\n\n## Cell culture and SEAP assay\n\nHEK293 cells were grown in DMEM containing 5% FBS and 500 \u00b5g/ml G-418 (all Invitrogen) and maintained at 37\u00b0C in an atmosphere of 5%CO2. Cells were plated in 96-well plates at 30,000 cells/well and transfected with the SEAP reporter plasmid using Lipofectamine\u00ae and PLUS\u00ae reagent (Invitrogen). The transfection media was replaced with ligand-containing DMEM (200 \u00b5l/well) and cells were incubated in the dark for 24\u2009hrs at 37\u00b0C with 5%CO2. After transferring 100 \u00b5l aliquots from each well to a fresh 96-well plate, 100 \u00b5l of an aqueous buffer containing 2 M diethanolamine bicarbonate and 1.2 mM methylumbelliferone phosphate, pH 10.0, was added to each well. Plates were imaged on a Perkin Elmer Envision plate reader using optical settings for methylumbelliferone fluorescence (Perkin Elmer, Waltham, MA). Data reflect an average of 6 condition replicates, run in parallel during two independent runs of 6 replicates each, done on different days.\n\n## Data analysis\n\nOffline analysis of electrophysiology data was performed using Igor Pro (Wavemetrics, Portland, OR) and MATLAB. Statistical analyses were done using GraphPad PRIZM 5 software (GraphPad, LaJolla, CA). All data except for probabilities are expressed as mean +SEM. Probabilities are expressed as aggregate probabilities across experiments of the same type. For two-group comparisons, statistical significance was determined by two-tailed Student\u2019s t-tests or two-sample Z test for proportions. For multiple group comparisons, one-way analysis of variance (ANOVA) tests were used for normally distributed data, followed by post hoc analyses. For non-normally distributed data, non-parametric tests for the appropriate group numbers were used, such as Mann-Whitney and Kruskal-Wallis. p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, Albert-Ludwigs-Universit\u00e4t Freiburg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10111.015](https://doi.org/10.7554/eLife.10111.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Neuromodulation of excitatory synaptogenesis in striatal development\" for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor (Marlene Bartos) and three reviewers, one of whom has agreed to reveal their identity: Richard Palmiter.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour study was intensely discussed by the Reviewing editor and three reviewers who came to the conclusion that your manuscript has the potential to be published in eLife after major revision. Reviewer 1 stated that the findings only show that neuromodulation can transiently enhance synaptogenesis but that the experiments do not demonstrate that the dopamine effect is 'necessary' for synaptogenesis. Thus, conclusions such as \"general role for neuromodulators acting on G\u03b1s-coupled GPCRs during neural circuit development would transform our understanding of core principle in developmental neurobiology\" (in the Discussion) should be toned down throughout the manuscript. Moreover, reviewer 1 was asking whether a critical time window exists during which the observed phenomena exist. Reviewers 2 and 3 expressed interest in the main findings of the manuscript, in particular that D1Rs and A2aRs can specifically enhance synaptogenesis in dSPN and iSPN, respectively. However, they ask for additional in vitro experiments which demonstrate that the effects of D1 or A2aR agonists are specific to the striatum and not caused by alterations in other cortical areas upon in vivo systemic administration of drugs which reduces/block synaptogenesis. They formulated some key experiments which are attached below. The reviewers and the Reviewing editor felt that these control experiments are critical to support the finding that the observed effects reflect specific actions on iSPNs/dSPNs, but that these should not take more than a month to conduct once the animals are ready.\n\nReviewer #1:\n\n1)The authors demonstrate transient effects of D1R activation on synapse function and locomotion (Figure 1\u2014figure supplement 2), but they never demonstrate that these transient effects translate into any long-term changes in synapses or behavior. The details for Figure 1\u2014figure supplement 2 are not included, but I assume that pups (about P15) were treated with SKF and locomotor activity was assayed for the 30\u2009min following drug administration. It would be interesting to know if a subsequent injection of SKF a day or two later would reveal a more-lasting effect on locomotion, suggestive of a stable change in synaptic strength.\n\n2) As the results stand, the observations described do not establish that dopamine is critical for synaptogenesis on SPNs, but rather they only show that a D1R agonist can transiently bolster synaptic strength in mouse pups that already have normal dopamine signaling.\n\nReviewer #2:\n\nThe authors present a number of interesting experiments that together provide strong evidence for a role of both corticostriatal activity and PKA signaling in SPNs for synaptogenesis. The evidence for spinogenesis in slices is very strong, and the optogenetic and chemogenetic experiments provide supporting evidence for this scheme in vivo. The optogenetic and chemogenetic experiments provide additional evidence for a corticostriatal interaction. Furthermore, the in vivo pharmacology is entirely consistent with the proposed mechanism. In general, I have relatively minor concerns.\n\n1) In Figure 1\u2014figure supplement 1, the authors show the effect of SKF81297 on mEPSC frequency, but don't show the amplitude data. This should be added.\n\n2) Related to the last point, is there a reason why the authors rely on mEPSCs in Figure 1 vs evoked EPSCs in Figure 3 and Figure 4? Evoked EPSCs are relevant, but do not as readily allow one to argue for synaptogenesis vs increased synaptic strength.\n\n3) In light of the experiments from Figure 4, is there a reason why the authors didn't try to optogenetically stimulate cortical inputs in the presence of SKF81297 in slice for 1\u2009hr to elicit an increase an innervation? Demonstrating this mechanism in a reduced preparation (as in Figure 2) provides confidence that the phenomenon can be reduced to cortical afferent activity and PKA activation. I don't see this as essential, but it would strengthen their hypothesis.\n\nReviewer #3:\n\nThe paper by Kozorovitskiy et al. follows earlier work by these authors showing that inactivation of dMSNs and iMSNs leads to opposing changes on synapse number in the striatum. That paper, along with others from the Sabatini lab have argued that synaptogenesis in the striatum depends on recurrent feedback from the cortex. Here, the authors argue that in addition to excitatory cortical feedback, synaptogenesis depends on neuromodulation, specifically activation of G\u03b1s by D1Rs or A2aRs in dMSNs or iMSNs, respectively. The idea that neuromodulation gates the ability of cortical feedback to drive synaptogenesis is interesting, as is the possible dependence on G\u03b1s.\n\n1) All of the experiments have been done by systemically administering drugs to block synaptogenesis in vivo. Thus, it is unclear whether the effects specifically reflect actions within the basal ganglia. When drugs act to block synaptogenesis, they could be doing so by reducing cortical activity through actions in the cortex or thalamus.\n\na) To resolve this issue, the authors should ideally perform experiments in striatal brain slices with the cortex cut off. They could use ChR2 stimulation of cortical terminals to elicit excitatory cortical feedback in the presence/absence of drugs to activate/block D1Rs or A2aRs, then measure the effects on synaptogenesis physiologically (by measuring changes in light-evoked EPSCs) or morphologically (by examining spine density). Another possibility would be local infusion of these drugs into the striatum but this is slightly less preferred because there could still be indirect effects of such a manipulation on cortical activity \u2013 it would be ideal to have separate control over cortical activity and striatal neuromodulatory state as would be possible in a slice preparation.\n\nb) In order to truly test the hypothesis that D1R or A2aR activation are specifically necessary in dMSNs vs. iMSNs, the authors should also examine the effects of antagonizing D1Rs or A2aRs separately, and also separate out recordings from dMSNs and iMSNs, rather than lumping all four conditions (2 cell types x 2 receptor antagonists) together as has been done in Figure 4G.\n",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "302b1190-8176-4abc-8ff4-a808a10ff76c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C1",
+      "claim": "Dopamine is released in the striatum during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine is released in the striatum during development and impacts the activity of Protein Kinase A (PKA) in striatal spiny projection neurons (SPNs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract and is supported by citations in the introduction regarding embryonic dopamine release.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "fc646f0f-172b-4429-955b-3c24f54ff773",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C2",
+      "claim": "Dopamine impacts the activity of Protein Kinase A (PKA) in striatal spiny projection neurons (SPNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine is released in the striatum during development and impacts the activity of Protein Kinase A (PKA) in striatal spiny projection neurons (SPNs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction about dopamine receptor signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "86acef61-8551-4033-a8c0-848162b2db85",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C3",
+      "claim": "Systemic in vivo treatment with G\u03b1s-coupled G-protein receptors (GPCRs) agonists enhanced excitatory synapses on direct pathway striatal spiny projection neurons (dSPNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic in vivo treatment with G\u03b1s-coupled G-protein receptors (GPCRs) agonists enhanced excitatory synapses on direct pathway striatal spiny projection neurons (dSPNs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1G showing increased spine density and mEPSC frequency in dSPNs after SKF 81297 administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "595610dd-2b9e-4cdc-9696-1bcb4136c220",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C4",
+      "claim": "Rapid production of excitatory synapses on indirect pathway neurons (iSPNs) required the activation of G\u03b1s GPCRs in SPNs of both pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas rapid production of excitatory synapses on indirect pathway neurons (iSPNs) required the activation of G\u03b1s GPCRs in SPNs of both pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1H showing that co-administration of Drd1 and A2a receptor agonists was necessary to increase synapses on iSPNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2cfdb528-b8e9-46da-a37e-9453eaa71e70",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C5",
+      "claim": "In vitro G\u03b1s activation was sufficient to enhance spinogenesis induced by glutamate photolysis in both dSPNs and iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, in vitro G\u03b1s activation was sufficient to enhance spinogenesis induced by glutamate photolysis in both dSPNs and iSPNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2 showing increased probability of spinogenesis with GPCR agonist treatment during glutamate uncaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2ffd6123-4c78-4d57-9eed-4f86aac93152",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C6",
+      "claim": "iSPNs in intact neural circuits have additional requirements for rapid synaptic development compared to in vitro conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that iSPNs in intact neural circuits have additional requirements for rapid synaptic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference between in vivo requirements (both Drd1 and A2aR activation) and in vitro sufficiency (A2aR activation alone) for iSPN spinogenesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "34786080-c759-471d-82ee-dd0e7e93fda9",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C7",
+      "claim": "Rapid synaptogenesis is promoted by the coordinated actions of glutamate and postsynaptic G\u03b1s-coupled receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the in vivo effects of enhanced glutamate release from corticostriatal axons and postsynaptic PKA and discovered a mechanism of developmental plasticity wherein rapid synaptogenesis is promoted by the coordinated actions of glutamate and postsynaptic G\u03b1s-coupled receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by multiple experimental approaches including pharmacogenetic, optogenetic, and glutamate uncaging experiments shown in Figures 2-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "1a319949-c54a-46c4-89d2-1c9d370a1466",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C8",
+      "claim": "Dopamine differentially regulates biochemical signaling, neuronal activity and synaptic plasticity in direct and indirect pathway striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine differentially regulates biochemical signaling (Nishi et al., 1999; 1997), neuronal activity and synaptic plasticity in these two classes of striatal neurons, promoting synaptic potentiation and depression through different receptor subtypes (Shen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "aff406c6-8362-4acc-93f1-dad0eb037312",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C9",
+      "claim": "The second postnatal week of life in mice is a period of rapid growth of excitatory synapses on SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, the second postnatal week of life is a period of rapid growth of excitatory synapses on SPNs, a process driven by the release of glutamate from corticostriatal axons (Kozorovitskiy et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "fc3c14af-43a8-4f2e-9ab1-b8a58d39b6bf",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C10",
+      "claim": "The balance of activity in direct and indirect pathway SPNs influences activity in the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the balance of activity in direct and indirect pathway SPNs (dSPNs and iSPNs, respectively) influences activity in the neocortex, potentially altering the firing patterns of corticostriatal neurons via recurrent circuit interactions (Kozorovitskiy et al., 2012; Oldenburg and Sabatini, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "601e405b-6ace-43f3-a2a8-de1320a399fd",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C11",
+      "claim": "In dSPNs, dopamine acts on type 1 dopamine receptor (Drd1), a G\u03b1s-coupled GPCR to activate PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "In dSPNs, dopamine acts on type 1 dopamine receptor (Drd1), a G\u03b1s-coupled GPCR to activate PKA, a critical enzyme involved in cell growth and plasticity (Nishi et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "fc92c727-87b3-43ce-86c4-1d496064f5f0",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C12",
+      "claim": "In iSPNs, dopamine activates type 2 dopamine receptors (Drd2), G\u03b1i-coupled GPCRs, decreasing PKA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in iSPNs, dopamine activates type 2 dopamine receptors (Drd2), G\u03b1i-coupled GPCRs, decreasing PKA activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about dopamine receptor signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "574eceb6-1bb6-4f74-859f-cb8325b11d88",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C13",
+      "claim": "PKA activity levels influence spinogenesis and synaptogenesis in cortical pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PKA activity levels influence spinogenesis and synaptogenesis in cortical pyramidal neurons (Kwon and Sabatini, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "63c994f4-f838-4cd8-afad-fa4d72dedb74",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C14",
+      "claim": "Embryonic striatum receives substantial dopaminergic innervation from substantia nigra pars compacta (SNc) and the ventral tegmental area (VTA).",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine is poised to regulate striatal signaling early in postnatal life, since embryonic striatum receives substantial dopaminergic innervation from substantia nigra pars compacta (SNc) and the ventral tegmental area (VTA), as is evidenced by neuroanatomical studies (Hu et al., 2004) and direct functional assays showing embryonic dopamine release (Ferrari et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "6509560a-32a3-499a-9493-33c59cb11912",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C15",
+      "claim": "Dysfunctions of the dopaminergic system are linked to schizophrenia, obsessive compulsive disorder, and Tourette Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "First, dysfunctions of the dopaminergic system are linked to numerous diseases that are postulated to have a developmental origin, including schizophrenia (Lau et al., 2013; Laruelle, 2014), obsessive compulsive disorder (Nikolaus et al., 2010) and Tourette Syndrome (Buse et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "81f63828-1c6d-4cf0-b83f-cf078271c12c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C16",
+      "claim": "Embryonic exposure to methamphetamine induces profound brain and behavioral abnormalities in offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, embryonic exposure to drugs of abuse that act on the dopaminergic system, such as methamphetamine (Heller et al., 2001), induces profound brain and behavioral abnormalities in the offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "7ae05392-7068-48b1-b035-9d6ee246ec29",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C17",
+      "claim": "The dopamine transporter promoter is active in the neonatal striatum on postnatal day 1 (P1).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with early development of the dopaminergic projection from SNc/VTA to striatum, the dopamine transporter promoter is active and dopaminergic axons are found in the neonatal striatum on postnatal day 1 (P1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1A showing tdTomato expression driven by dopamine transporter gene promoter at P1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f8450476-90e4-4dd9-b7c0-3f1d28e9d6d3",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C18",
+      "claim": "Dopaminergic axons are found in the neonatal striatum on postnatal day 1 (P1).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with early development of the dopaminergic projection from SNc/VTA to striatum, the dopamine transporter promoter is active and dopaminergic axons are found in the neonatal striatum on postnatal day 1 (P1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 1A showing densely innervating fibers within striatum at P1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "9af7d495-899d-4447-842f-734dc016a0ef",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C19",
+      "claim": "At P10, tyrosine hydroxylase is expressed in SNc cell bodies and shows a punctate pattern in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B shows: At P10, immunohistochemistry for tyrosine hydroxylase shows expression in SNc cell bodies (left) and a punctate pattern in the striatum (right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1B through immunohistochemistry data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f03fe923-7c7b-4874-bfe8-77585ca179c1",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C20",
+      "claim": "The frequency of mEPSCs in Drd1 agonist exposed SPNs was 593 \u00b1 168% of that in saline-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of mEPSCs in Drd1 agonist exposed SPNs was 593 \u00b1 168% of that in saline-treated controls (N = 7 and 8 neurons from 4 mice/group, Kruskal-Wallis test p = 0.0063, with p<0.05 for Dunn's multiple comparison post hoc test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from electrophysiological recordings shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2fb8c2f7-b186-4103-b06f-ff7e99ad52d4",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C21",
+      "claim": "mEPSC amplitude was not significantly different between control and Drd1 agonist groups in dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC amplitude was 10.8 \u00b1 1.6 and 12.7 \u00b1 1.1 pA for control and Drd1 agonist groups and was not significantly different (one way ANOVA, p = 0.313).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from electrophysiological recordings shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "1bd11183-fc1a-4534-a351-74a1128d7e7e",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C22",
+      "claim": "Dendritic spine density in dSPNs was 0.29 \u00b1 0.02 spines/\u00b5m for saline control and 0.60 \u00b1 0.04 spines/\u00b5m for Drd1 agonist groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic spine density was 0.29 \u00b1 0.02 spines/\u00b5m and 0.60 \u00b1 0.04 spines/\u00b5m for saline control and Drd1 agonist groups respectively (p<0.001 on Dunnett's multiple comparison test after one-way ANOVA; N = 36 dendrites, 12 neurons from 3 mice and 21 dendrites in 7 neurons from 3 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from imaging data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "bbf6e08b-58e8-4fc0-9b9a-a4d8dcce5027",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C23",
+      "claim": "Pretreating mice with PKA antagonist H-89 prevented the effects of Drd1 agonist on mEPSC frequency and spine density in dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pretreating mice with a PKA antagonist H-89 (5 mg/kg) 30 min prior to agonist injection prevented the effects on mEPSC frequency and spine density",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1G showing no significant differences with H-89 pretreatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f143b1fc-37e7-4a2e-8185-d0f9d0101fe9",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C24",
+      "claim": "Drd1 receptor activation alone is insufficient to increase synapse number in acute brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Drd1 receptor activation alone is insufficient to increase synapse number, as changes in mEPSC frequency or amplitude were not observed with incubation of acute brain slices in SKF 81297 in vitro (Figure 1\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1\u2014figure supplement 1 showing no changes in mEPSC frequency or amplitude with in vitro Drd1 stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "d1f3d4dd-c7a4-4b7f-ab6c-455e69fa926c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C25",
+      "claim": "dSPN excitatory synapse enhancement by Drd1 receptor agonist requires intact circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dSPN excitatory synapse enhancement by a single, acute dose of a Drd1 receptor agonist alone requires intact circuitry, as it cannot be induced in the slice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference between in vivo effects (synapse enhancement) and in vitro effects (no enhancement) of Drd1 agonist.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "98f085a0-cc4a-4240-856a-f628f25e325b",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C26",
+      "claim": "In vivo administration of SKF 81297 had no effects on excitatory synapses in iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the effects seen in dSPNs, in vivo administration of SKF 81297 had no effects on excitatory synapses in iSPNs (Figure 1H)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1H showing no significant changes in mEPSC frequency in iSPNs with Drd1 agonist alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "09b9b691-c500-45ea-ad3e-c3c9bfc5c25b",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C27",
+      "claim": "iSPNs express G\u03b1s-coupled Adenosine 2a (A2a) receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "iSPNs express G\u03b1s-coupled Adenosine 2a (A2a) receptor, which also enhances PKA activity (Higley and Sabatini 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "ec7b747e-acfb-42fe-b084-5ae132d5e544",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C28",
+      "claim": "Administration of A2aR agonist CGS 21680 alone had no significant effect on iSPN dendritic spine density or mEPSC rate within 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "nevertheless, administration of an agonist of A2aRs (CGS 21680, 0.1 mg/kg) had no significant effect on iSPN dendritic spine density or mEPSC rate, within the rapid time-frame of 1 hr (140 \u00b1 63% of control, p>0.05 for control vs. A2aR agonist post-hoc comparison; N = 11 neurons from 3 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "faf566cb-c410-4a51-9aee-a66ac0984976",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C29",
+      "claim": "Administering Drd2 receptor agonist quinpirole resulted in no significant differences from controls in iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, administering an agonist of G\u03b1i-coupled Drd2 receptors (quinpirole 0.5 mg/kg) also resulted in no significant differences from controls (132 \u00b1 17.0% of control, p>0.05 for control vs. Drd2 agonist post hoc comparison; N = 8 neurons from 3 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "b2def36f-ba70-4d54-8237-3a72d8cde6ce",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C30",
+      "claim": "Co-administration of Drd1 and A2a receptor agonists increased mEPSC frequency and dendritic spine density in iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-administration of Drd1 and A2a receptor agonists increased mEPSC frequency and dendritic spine density in iSPNs, with no change in mEPSC amplitude, suggesting an increase in the number of functional excitatory synapses (Figure 1H)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1H showing significant increases with combined agonist treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "27769871-9ff6-486c-8203-8c9f5b20efad",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C31",
+      "claim": "Drd1 activation increases dSPN excitability.",
+      "claim_type": "IMPLICIT",
+      "source": "Since Drd1 activation also increases dSPN excitability, which in turn may increase recurrent corticostriatal glutamatergic transmission onto SPNs by altering cortical activity (Oldenburg and Sabatini, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "cbc2dbfb-c660-4ff7-b346-62c3f055bada",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C32",
+      "claim": "Drd1 receptor activation induces locomotion in P8-13 pups.",
+      "claim_type": "EXPLICIT",
+      "source": "Such stimulatory effects of dopamine on basal ganglia circuitry are consistent with the observation of Drd1 receptor activation-induced locomotion observed in pups, which normally show limited mobility at P8-13 (Dehorter et al., 2011; Wills et al., 2014) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "3c18ec8a-9cf4-4a67-affb-046835013e57",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C33",
+      "claim": "Priming with Drd1 receptor agonist administration at P9 potentiated agonist-evoked locomotion at P11.",
+      "claim_type": "EXPLICIT",
+      "source": "This acute locomotion induction has lasting consequences for behavior and brain development, since priming with Drd1 receptor agonist administration at P9 potentiated agonist-evoked locomotion at P11 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "11b66e43-da65-4687-b6d4-64de815ac0d5",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C34",
+      "claim": "Focal photolysis of MNI-L-glutamate can trigger synaptogenesis in SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We directly tested this hypothesis ex vivo by examining the ability of exogenous glutamate exposure, through focal photolysis of MNI-L-glutamate, to trigger synaptogenesis in SPNs under different states of GPCR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2bf2f305-27e8-4be3-857a-8db0e9bbb7d4",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C35",
+      "claim": "Spatio-temporally controlled glutamate release can focally and rapidly induce de novo formation of a synapse-bearing dendritic spine on young cortical pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatio-temporally controlled glutamate release can focally and rapidly induce de novo formation of a synapse-bearing dendritic spine on young cortical pyramidal neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with implicit reference to previous work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "7dc46241-580d-48ad-9bc0-afe2a4e58870",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C36",
+      "claim": "P8-13 SPNs of both pathways were capable of de novo spinogenesis in response to glutamate uncaging.",
+      "claim_type": "EXPLICIT",
+      "source": "As was previously described for layer 2/3 pyramidal neurons, P8-13 SPNs of both pathways were capable of de novo spinogenesis in response to glutamate uncaging (Kozorovitskiy et al., 2012; Kwon and Sabatini, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "9bf7c4a1-c265-45e7-b82b-e0e21f41a044",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C37",
+      "claim": "The basal rate of spinogenesis for SPNs was similar to previously examined cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal rate of spinogenesis (the probability of induction of a structure shaped like a dendritic spine), as well as its dependence on uncaging pulse width and proximity to the dendrite were similar for striatal SPNs and previously examined cortical neurons (Kwon and Sabatini, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of current data in Figure 2 with cited previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "482deba6-dc7a-44ae-991c-953da0b196bb",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C38",
+      "claim": "The probability of spinogenesis increased in the presence of SKF 81297 for dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of spinogenesis increased in the presence of SKF 81297 for dSPNs, and CGS 21680 for iSPNs, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2D-E showing increased success rates with GPCR agonist treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "d40dd4a9-1211-4889-b241-bc35c0891f99",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C39",
+      "claim": "The probability of spinogenesis increased in the presence of CGS 21680 for iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of spinogenesis increased in the presence of SKF 81297 for dSPNs, and CGS 21680 for iSPNs, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2D-E showing increased success rates with GPCR agonist treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "651d3b57-6abd-4085-9cd7-0d7b9518c273",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C40",
+      "claim": "G\u03b1s-coupled receptor stimulation decreased the number of glutamate pulses necessary to induce spinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the time course of spine formation for successful inductions reveals that G\u03b1s-coupled receptor stimulation decreased the number of glutamate pulses necessary to induce spinogenesis (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "98cb4676-40b8-429c-9bac-e9013fc24297",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C41",
+      "claim": "Spine growth occurs rapidly in all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas spine growth occurs rapidly in all conditions, as observed in pyramidal neurons (Kwon and Sabatini, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2F and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "ae3cbbc9-8cb5-4440-9eef-73a70479759a",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C42",
+      "claim": "SKF 81297 and CGS 21680 accelerated the onset of spinogenesis for dSPNs and iSPNs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "SKF 81297 and CGS 21680 accelerated the onset of spinogenesis for dSPNs and iSPNs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis in Figure 2G showing reduced number of pulses to threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "71f81ac2-26bc-4282-b337-969a69c9e5e9",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C43",
+      "claim": "Cell-autonomous mechanisms exist for neuromodulatory regulation of glutamate-dependent spinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that glutamate was exogenously controlled and G\u03b1s receptors were stimulated by agonist bath application, these findings suggest the presence of cell-autonomous mechanisms for neuromodulatory regulation of glutamate-dependent spinogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental design where both glutamate and GPCR activation were externally controlled.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "bb2bcdef-f8fa-4180-897b-8cef14ca00f7",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C44",
+      "claim": "Rs1 is a modified G\u03b1s-coupled GPCR that can be activated by the small molecule RS 67333.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction for PKA signaling, we used a pharmacogenetic approach based on Rs1, a modified G\u03b1s-coupled GPCR that can be activated by the small molecule RS 67333",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by data in Figure 3A showing SEAP assay results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "b5d3fdad-cb74-40b8-9f72-05fc6857d42c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C45",
+      "claim": "Rs1 activation by RS 67333 increases PKA activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A shows: Secreted alkaline phosphatase (SEAP)-based in vitro test of the efficacy of PKA activation following activation of the G\u03b1s-targeted RASSL with RS 67333.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly demonstrated by the SEAP assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "50b808fd-e694-4978-994c-7b9011eb8da6",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C46",
+      "claim": "Co-injection of Cre-expressing AAV and Cre-dependent AAV encoding Rs1 resulted in broad expression in dorsal striatum SPNs of both dSPNs and iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "This co-injection resulted in broad expression in dorsal striatum SPNs of the injected hemisphere in both dSPNs and iSPNs (Figure 3E) (0% vs. 98% co-labeling, N = 750 and 728 neurons in control and injected hemispheres, from 3 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative immunohistochemistry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "78230f2e-41e9-4f91-908f-268ceb127a93",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C47",
+      "claim": "There is a strong age dependence of peak amplitude of EPSCs in control conditions from P8 to P13/14.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control condition, there was a strong age dependence of peak amplitude of EPSCs, ranging from an average of 10 pA to an average of 196 pA per age group, in a cohort of P8-P13/14 mice (Figure 3\u2014figure supplement 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "865a61dc-6d10-4293-9ae3-9ce68d652afc",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C48",
+      "claim": "Light-evoked EPSC amplitude was increased in virally transduced SPNs compared to control hemisphere SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, light-evoked EPSC amplitude was increased in virally transduced SPNs, compared to control hemisphere SPNs (Figure 3G; light-evoked EPSC amplitude, 68.6 \u00b1 29.9 pA control vs. 150.3 \u00b1 55.8 pA injected hemisphere; N = 21 and 23 neurons from 4 mice/group, t-test p = 0.039).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative electrophysiology data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "80be3bea-76e6-4bb7-80c2-05eca358f063",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C49",
+      "claim": "In vivo transient activation of a G\u03b1s-coupled GPCR in SPNs is sufficient to rapidly enhance corticostriatal connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in vivo transient activation of a G\u03b1s-coupled GPCR in SPNs is sufficient to rapidly enhance corticostriatal connectivity, in the presence of otherwise normal corticostriatal transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the pharmacogenetic experiment data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "d108a156-2b8d-47e1-a99e-c02e8f4f716e",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C50",
+      "claim": "Concurrent pharmacogenetic activation of G\u03b1s cascades in dSPNs enhances corticostriatal glutamatergic drive via recurrent connections.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed sufficiency of pharmacogenetic PKA activation to enhance corticostriatal connectivity for iSPNs (in contrast to stimulating iSPNs with an A2aR agonist, as in Figure 1H) stems from the likelihood that the concurrent pharmacogenetic activation of G\u03b1s cascades in dSPNs enhances corticostriatal glutamatergic drive via recurrent connections and regulating cortical activity (Oldenburg and Sabatini, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference in iSPN responses between A2aR agonist alone and pharmacogenetic activation of both pathways, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "b9583751-1a82-43e1-97d5-0aa3ec5b4f25",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C51",
+      "claim": "In vivo optogenetic stimulation of Rbp4-Cre positive neurons in cortex increased c-fos expression on the stimulated side.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B shows: Immunohistochemical labeling of immediate early gene c-fos product shows increased labeling on the optogenetically stimulated side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by immunohistochemistry data in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f248b8f4-0cc0-42b0-915a-871e8828cf0e",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C52",
+      "claim": "In vivo optogenetic stimulation of corticostriatal afferents enhanced light-evoked EPSCs in SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D shows successful induction of corticostriatal plasticity under baseline conditions with larger EPSC amplitudes on the stimulated side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative electrophysiology data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "93955511-1ca0-4c5a-b21e-945005965939",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C53",
+      "claim": "The functional reorganization induced through brief in vivo stimulation of corticostriatal afferents is locally expressed in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that a major component of the functional reorganization induced through brief in vivo stimulation of corticostriatal afferents in young mice is locally expressed in the striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from striatum-only slice experiments shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "6e454fc8-6bd8-44bc-bd98-00d5003dbb2b",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C54",
+      "claim": "Optogenetically-induced corticostriatal plasticity was blocked by pre-administration of PKA inhibitor H-89.",
+      "claim_type": "EXPLICIT",
+      "source": "We further probed the pharmacological dependence of this form of plasticity and found that it was blocked by either pre-administration of PKA inhibitor H-89 (5 mg/kg)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 4F showing no difference between control and stimulated hemispheres with H-89 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "c2cdef35-18bf-4329-bf91-481ea193ebf6",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C55",
+      "claim": "Optogenetically-induced corticostriatal plasticity was blocked by a combination of Drd1 and A2aR blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "or by a combination of Drd1 and A2aR blockers SKF 83566 (0.5 mg/kg) and istradefylline/KW-6002 (2.5 mg/kg), administered 30 min before optogenetic stimulation (Figure 4F\u2013G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 4G showing no difference between control and stimulated hemispheres with receptor blocker treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2c2a33ef-7a0c-4f4a-af05-96cf0a701507",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C56",
+      "claim": "SPN changes induced by glutamatergic stimulation require PKA signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SPN changes induced by glutamatergic stimulation require PKA signaling, which in turn is activated via Drd1 and A2aR for dSPNs and iSPNs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the pharmacological blocking experiments shown in Figures 4F-G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "ee47029a-3175-4e05-bc00-05c2da9247fa",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C57",
+      "claim": "Increasing either pre-synaptic glutamatergic drive or enhancing striatal PKA signaling is sufficient to rapidly alter SPN synaptogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing either pre-synaptic glutamatergic drive or enhancing striatal PKA signaling is sufficient to rapidly alter SPN synaptogenesis, supporting the idea of cooperative, neuromodulation-dependent circuit remodeling during striatal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the combined results of pharmacogenetic (Figure 3) and optogenetic (Figure 4) experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "607eaf06-61af-4ec9-beb1-8c674a0e73fc",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C58",
+      "claim": "Ex vivo optogenetic stimulation of corticostriatal afferents in the presence of drugs activating PKA in SPNs enhanced light-evoked EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5D shows increased amplitudes of optogenetically evoked EPSCs in the stimulation condition compared to control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative electrophysiology data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "a5500196-5d8b-48c0-b10e-b0a09491ef12",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C59",
+      "claim": "PKA activation and glutamate release within striatum are sufficient for strengthening corticostriatal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to directly evaluate whether PKA activation and glutamate release within striatum are sufficient for strengthening corticostriatal synapses, we performed ex vivo plasticity induction using optogenetic stimulation of corticostriatal afferents in the presence of drugs activating PKA in SPNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ex vivo optogenetic stimulation experiment data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "b31de9cd-733d-4953-b97f-9b740c2aa79d",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C60",
+      "claim": "Neuromodulation, through the activity of PKA, enhances the probability of dendritic spine formation in the developing striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that neuromodulation, through the activity of PKA, enhances the probability of dendritic spine formation and lowers the amount of glutamate necessary to trigger spinogenesis in the developing striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by data from Figures 2-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "aeedf467-0d88-4495-81bf-f04c7e9af6b6",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C61",
+      "claim": "Neuromodulation lowers the amount of glutamate necessary to trigger spinogenesis in the developing striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that neuromodulation, through the activity of PKA, enhances the probability of dendritic spine formation and lowers the amount of glutamate necessary to trigger spinogenesis in the developing striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by data from Figure 2 showing reduced pulses to threshold with GPCR activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "9ef313a0-26b0-4c92-81a6-4c0742a9c2d2",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C62",
+      "claim": "dSPN activity is positively coupled to striatal glutamate release onto SPNs of both pathways through polysynaptic recurrent loops involving the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6B shows: These results fit into the larger framework of the basal ganglia model, which indicates that through polysynaptic recurrent loops involving the neocortex, dSPN activity is positively coupled to striatal glutamate release onto SPNs of both pathways",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as part of the basal ganglia circuit model and illustrated in Figure 6B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "5054dfc0-d75d-4488-a564-d5f4283fad15",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C63",
+      "claim": "Indirect pathway activity provides negative feedback for striatal glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas indirect pathway activity provides negative feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the basal ganglia circuit model shown in Figure 6B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "5e579553-5534-468e-8b5e-286845c869dd",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C64",
+      "claim": "During development, dSPNs have greater dendritic spine density compared to iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, dSPNs have greater dendritic spine density and miniature EPSC frequency but not amplitude, compared to iSPNs. These graphs represent re-analyses of control data from a previously published study (Kozorovitskiy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by re-analyzed data shown in Figure 6C from a previous publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "a9e4539e-9423-46c7-a626-71117ac4dc77",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C65",
+      "claim": "During development, dSPNs have greater miniature EPSC frequency compared to iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, dSPNs have greater dendritic spine density and miniature EPSC frequency but not amplitude, compared to iSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by re-analyzed data shown in Figure 6C from a previous publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "fdcbb4a5-d669-40c3-a022-e5056e0eb1c8",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C66",
+      "claim": "During development, dSPNs and iSPNs do not differ in miniature EPSC amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, dSPNs have greater dendritic spine density and miniature EPSC frequency but not amplitude, compared to iSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by re-analyzed data shown in Figure 6C from a previous publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "ba972f19-aac7-4272-84e6-4e4e6b389425",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C67",
+      "claim": "PKA activity via G\u03b1s GPCRs generally serves to potentiate activity-dependent synaptogenesis during the time of rapid synapse production.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that two types of G\u03b1s-dependent modulation appear to regulate synaptogenesis in d- and iSPNs raises the possibility that PKA activity, via G\u03b1s GPCRs, generally serves to potentiate activity-dependent synaptogenesis during the time of rapid synapse production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on the findings with Drd1 and A2aR.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "4e957ae1-0632-4ee1-8348-781b200e794e",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C68",
+      "claim": "The array of G\u03b1s GPCRs expressed in the central nervous system includes 5-HT4 and 5-HT7 serotonin receptors, beta-adrenergic receptors, and corticotropin-releasing factor receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The array of G\u03b1s GPCRs expressed in the central nervous system is substantial and includes abundant receptors such as 5-HT4 and 5-HT7 serotonin receptors (Giulietti et al., 2014), as well beta-adrenergic (Nomura et al., 2014; Arriza et al., 1992) and corticotropin-releasing factor receptors (Fu and Neugebauer, 2008; Riegel and Williams, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "28a5c0e9-60a1-4148-9951-b1905a4e4f1d",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "claim_id": "C69",
+      "claim": "A general role for neuromodulators acting on G\u03b1s GPCRs during neural circuit development would transform understanding of core principles in developmental neurobiology.",
+      "claim_type": "EXPLICIT",
+      "source": "A general role for neuromodulators acting on G\u03b1s GPCRs during neural circuit development would transform our understanding of core principles in developmental neurobiology, greatly expanding the list therapeutic targets for neurodevelopmental and neurodegenerative disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "124c9eff-a7cb-479f-a570-ad270a738e7e",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In vivo Drd1 receptor agonist treatment rapidly increases excitatory synapses on dSPNs in a PKA-dependent manner. Systemic administration of SKF 81297 increased mEPSC frequency (~593% of control) and dendritic spine density (~2-fold increase) without changing mEPSC amplitude, and these effects were blocked by PKA inhibitor H-89.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20-C23 provide converging evidence from electrophysiology (mEPSC frequency increase) and imaging (spine density increase) that are statistically significant with appropriate controls. The PKA-dependence is demonstrated by pharmacological blockade with H-89. Sample sizes appear adequate (7-12 neurons from 3-4 mice per group) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "38148b6d-c94f-4358-bac1-690f795e88e9",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo synaptogenesis on iSPNs requires co-activation of both Drd1 and A2aR receptors. Neither Drd1 agonist alone, A2aR agonist alone, nor Drd2 agonist alone increased synapses on iSPNs, but co-administration of Drd1 and A2aR agonists increased mEPSC frequency (~470% of control) and spine density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26, C28-C30 demonstrate that iSPNs have distinct requirements from dSPNs for synaptogenesis in vivo. The negative controls (single agonists) and positive result (combined agonists) are well-documented with appropriate statistics. Sample sizes are adequate (5-11 neurons from 2-4 mice per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "0ad7d6d5-98bc-43b6-9337-b6c1d3d27911",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Drd1 receptor activation alone is insufficient to increase synapse number in acute brain slices, indicating that intact circuitry is required for dSPN synapse enhancement. In vitro incubation with SKF 81297 produced no changes in mEPSC frequency or amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 establish an important distinction between in vivo and in vitro effects. The negative in vitro result (Figure 1\u2014figure supplement 1) with adequate sample size (N=6 neurons from 2 mice per group) supports the conclusion that circuit-level interactions are necessary for the observed synaptogenic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vitro G\u03b1s-coupled receptor activation enhances glutamate-induced spinogenesis in both dSPNs and iSPNs through cell-autonomous mechanisms. GPCR agonists increased spinogenesis probability and reduced the number of glutamate uncaging pulses needed to induce spine formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34, C36-C40, C42-C43 demonstrate that G\u03b1s activation is sufficient to enhance spinogenesis when glutamate is exogenously controlled. The data show increased success rates (proportions with appropriate Z-tests, p<0.05) and reduced pulses to threshold (Mann-Whitney tests, p<0.005) with adequate trial numbers (132-174 trials from 10-11 mice). The experimental design with controlled glutamate uncaging supports the cell-autonomous mechanism conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "759d8044-bdb4-414c-a37e-db4791039ddb",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "iSPNs in intact neural circuits have additional requirements for rapid synaptic development beyond cell-autonomous G\u03b1s activation. The difference between in vivo (requiring both Drd1 and A2aR activation) and in vitro (A2aR sufficient) suggests that concurrent dSPN activation enhances glutamatergic drive via recurrent cortical connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C50 provide a mechanistic explanation for the differential requirements observed in iSPNs. The inference is well-supported by comparing in vivo (C4, C30) and in vitro (C5, C39) results, and is consistent with cited work on recurrent circuit interactions. However, this remains an inference rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "7b00c60e-b2f8-4508-8fe5-b553735c081b",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pharmacogenetic activation of G\u03b1s-coupled GPCRs in SPNs is sufficient to rapidly enhance corticostriatal connectivity in vivo. Viral expression of Rs1 in striatal SPNs followed by systemic RS 67333 administration increased light-evoked EPSC amplitude (~2.2-fold increase) compared to control hemisphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46, C48-C49 demonstrate sufficiency of postsynaptic PKA activation using a pharmacogenetic approach. The within-animal control design (comparing injected vs. control hemisphere) is rigorous. Sample sizes are adequate (21-23 neurons from 4 mice, t-test p=0.039). The Rs1 system is validated with SEAP assay (C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2deefbda-e254-46ab-9233-12cd32571ab7",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vivo optogenetic stimulation of corticostriatal afferents induces PKA-dependent and G\u03b1s GPCR-dependent plasticity that is locally expressed in striatum. Brief optogenetic stimulation enhanced light-evoked EPSCs, and this effect was blocked by PKA inhibitor H-89 or by combined Drd1/A2aR receptor antagonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 demonstrate that enhanced glutamate release is sufficient to induce synaptogenesis and that this requires PKA signaling. The striatum-only slice preparation (C53) demonstrates local expression. Pharmacological blockade experiments provide mechanistic insight with appropriate controls. Sample sizes appear adequate (12-26 neurons from 3-4 mice per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "0664fe36-51f2-4c07-a299-daa0c2cc8ea5",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PKA activation and glutamate release within striatum are sufficient for strengthening corticostriatal synapses. Ex vivo optogenetic stimulation combined with PKA-activating drugs enhanced light-evoked EPSCs, demonstrating that both signals together are sufficient without intact circuitry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 provide the critical demonstration that glutamate and PKA activation are jointly sufficient. The ex vivo experiment (Figure 5) directly tests this by controlling both variables in slices. This complements the in vivo pharmacogenetic (C49) and optogenetic (C52) experiments to establish the cooperative mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "b629870b-eb07-4529-8135-245536c9914c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rapid synaptogenesis in developing striatum is promoted by coordinated actions of glutamate and postsynaptic G\u03b1s-coupled receptors. Neuromodulation through PKA enhances spinogenesis probability and lowers the glutamate threshold for triggering spine formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C60-C61 represent the main conclusion synthesizing results from multiple experimental approaches (pharmacology, pharmacogenetics, optogenetics, glutamate uncaging). The conclusion is well-supported by converging evidence from Figures 1-5 demonstrating both necessity (pharmacological blockade) and sufficiency (pharmacogenetic and optogenetic manipulations) of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "877cc422-6b94-434b-a8be-b9240e5c606c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dopaminergic innervation of striatum is present early in postnatal development. The dopamine transporter promoter is active and dopaminergic axons are present at P1, and tyrosine hydroxylase shows punctate striatal expression at P10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are directly supported by imaging data in Figures 1A-B showing tdTomato expression driven by DAT promoter and tyrosine hydroxylase immunohistochemistry. These anatomical observations establish the developmental context for the functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f68fcc3c-56df-424e-918e-182e077dbf8c",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Drd1 receptor activation induces locomotion in P8-13 pups and priming with agonist at P9 potentiates locomotor responses at P11. This demonstrates functional consequences of dopaminergic signaling during the developmental period studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by behavioral data in Figure 1\u2014figure supplements 2-3. The locomotor effects provide functional validation that the pharmacological manipulations are behaviorally relevant. Sample sizes appear adequate (5-11 mice per group) with appropriate statistics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "720ef15e-3eba-4aae-9e4e-40a7353c06b9",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Light-evoked EPSC amplitude shows strong age dependence from P8 to P13/14, ranging from ~10 pA to ~196 pA. This demonstrates ongoing developmental changes in corticostriatal connectivity during the experimental window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by data in Figure 3\u2014figure supplement 1 with adequate sample sizes (14-30 neurons from 3-6 mice per age group) and appropriate statistics (Kruskal-Wallis test p<0.0001). This establishes the developmental context for the plasticity experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "29997a71-227b-4ea3-8063-7e353f95d765",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "During development, dSPNs have greater dendritic spine density and mEPSC frequency but not amplitude compared to iSPNs. This pathway-specific difference in synapse number is consistent with the differential neuromodulatory requirements observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by re-analysis of previously published data (Kozorovitskiy et al., 2012) shown in Figure 6C. While this is not new data, the re-analysis provides important context for interpreting the differential effects on dSPNs vs iSPNs and supports the circuit model proposed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge claims about dopamine signaling, striatal development, and basal ganglia circuitry. These include established facts about dopamine receptor signaling pathways, developmental timeline of striatal synaptogenesis, and circuit organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C16, C27, C31, C35, C41, C62-C63, C68 represent established knowledge supported by appropriate citations to prior literature. These provide the conceptual framework and rationale for the experimental work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "c47120c5-a362-4e5f-ac6e-d1e7675f9017",
+      "content_id": "621a0fe3-0acb-4898-adad-5559fca19d05",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Speculative claims about potential generalization of findings. The authors suggest that PKA activity via G\u03b1s GPCRs may generally potentiate activity-dependent synaptogenesis, and that this could transform understanding of developmental neurobiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67 and C69 are explicitly speculative statements about broader implications. While the speculation is reasonable given the findings with Drd1 and A2aR, and the existence of other G\u03b1s-coupled receptors (C68), these claims require additional experimental validation across different brain regions, developmental stages, and receptor systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "fba6f1f2-7897-43d3-86f1-963c6a80518c",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "In vivo systemic administration of Drd1 agonist (SKF 81297) enhanced excitatory synapses on dSPNs, as evidenced by increased mEPSC frequency and spine density without changes in amplitude. This effect was blocked by PKA inhibitor H-89.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raises a critical concern that 'all of the experiments have been done by systemically administering drugs' and 'it is unclear whether the effects specifically reflect actions within the basal ganglia' versus indirect effects through cortex or thalamus. Reviewers 2 and 3 request additional in vitro experiments to demonstrate specificity to the striatum, indicating the current evidence is insufficient to establish the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "In vivo co-administration of Drd1 and A2aR agonists was required to enhance excitatory synapses on iSPNs, while neither agonist alone (nor Drd2 agonist) produced significant effects within 1 hour.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 specifically requests that 'the authors should also examine the effects of antagonizing D1Rs or A2aRs separately, and also separate out recordings from dMSNs and iMSNs, rather than lumping all four conditions together as has been done in Figure 4G.' This indicates the current evidence does not adequately demonstrate pathway-specific necessity. The systemic administration concern raised by Reviewer 3 also applies here.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "4fa6da31-9342-455f-b68a-83a1e29a49c2",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In vitro glutamate uncaging experiments demonstrated that G\u03b1s-coupled receptor activation (SKF 81297 for dSPNs, CGS 21680 for iSPNs) enhanced spinogenesis probability and reduced the number of glutamate pulses required for spine formation, suggesting cell-autonomous mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 states 'the evidence for spinogenesis in slices is very strong' and notes these experiments provide 'strong evidence for a role of both corticostriatal activity and PKA signaling in SPNs for synaptogenesis.' The in vitro nature of these experiments addresses the specificity concerns raised for in vivo pharmacology.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "715b77cf-695e-4ad1-87bc-36802b480fa7",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Drd1 receptor activation alone was insufficient to increase synapse number in acute brain slices, indicating that dSPN excitatory synapse enhancement requires intact circuitry.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 requests experiments 'in striatal brain slices with the cortex cut off' using 'ChR2 stimulation of cortical terminals' in the presence/absence of receptor agonists to resolve whether effects are specific to the striatum. Reviewer 2 also suggests optogenetically stimulating cortical inputs with SKF81297 in slice, noting 'I don't see this as essential, but it would strengthen their hypothesis,' indicating current evidence is incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Pharmacogenetic activation of G\u03b1s-coupled GPCR (Rs1) in SPNs of both pathways enhanced light-evoked EPSC amplitude, demonstrating that transient PKA activation in SPNs is sufficient to rapidly enhance corticostriatal connectivity in vivo.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes 'the optogenetic and chemogenetic experiments provide supporting evidence for this scheme in vivo' and 'provide additional evidence for a corticostriatal interaction.' While Reviewer 3 raises concerns about systemic drug administration, the pharmacogenetic approach with viral transduction provides more targeted manipulation that addresses some specificity concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f8af208b-ceb9-40f0-abaf-f0237197c663",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "In vivo optogenetic stimulation of corticostriatal afferents enhanced light-evoked EPSCs in SPNs, an effect that was locally expressed in the striatum and blocked by PKA inhibitor H-89 or combined Drd1/A2aR receptor antagonists.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 states that 'all of the experiments have been done by systemically administering drugs to block synaptogenesis in vivo' and requests experiments 'in striatal brain slices with the cortex cut off' to demonstrate specificity. The pharmacological blocking experiments used systemic administration, which 'could be doing so by reducing cortical activity through actions in the cortex or thalamus,' leaving the mechanism uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "687b62fa-416e-4ebc-a73d-14cd7af7715a",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Ex vivo optogenetic stimulation of corticostriatal afferents in the presence of drugs activating PKA in SPNs enhanced light-evoked EPSCs, demonstrating that PKA activation and glutamate release within striatum are sufficient for strengthening corticostriatal synapses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This ex vivo experiment directly addresses Reviewer 3's concern about demonstrating effects specific to the striatum. Reviewer 2 suggests this type of experiment ('optogenetically stimulate cortical inputs in the presence of SKF81297 in slice') would 'strengthen their hypothesis,' and the authors appear to have performed a version of this in Figure 5, providing confidence in the reduced preparation mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "1f3c96e5-9c8b-40b5-9be0-25e4ac1f5509",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Drd1 receptor activation induced locomotion in P8-13 pups, and priming with Drd1 agonist at P9 potentiated agonist-evoked locomotion at P11, suggesting lasting behavioral consequences.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'the authors demonstrate transient effects of D1R activation on synapse function and locomotion...but they never demonstrate that these transient effects translate into any long-term changes in synapses or behavior.' Reviewer 1 requests additional experiments to determine 'if a subsequent injection of SKF a day or two later would reveal a more-lasting effect on locomotion, suggestive of a stable change in synaptic strength.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "4a8349bc-4947-41ea-aa40-d23fe8ab2838",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The main conclusion that rapid synaptogenesis is promoted by coordinated actions of glutamate and postsynaptic G\u03b1s-coupled receptors, with neuromodulation enhancing spine formation probability and lowering glutamate requirements.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'the observations described do not establish that dopamine is critical for synaptogenesis on SPNs, but rather they only show that a D1R agonist can transiently bolster synaptic strength.' The editorial summary notes that Reviewer 1 stated 'the experiments do not demonstrate that the dopamine effect is necessary for synaptogenesis' and conclusions should be 'toned down throughout the manuscript.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "7c8b27df-1402-4086-becb-72c40f65f688",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The speculative conclusion that PKA activity via G\u03b1s GPCRs generally serves to potentiate activity-dependent synaptogenesis and that this would transform understanding of developmental neurobiology.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The editorial summary explicitly states that Reviewer 1 indicated 'conclusions such as \"general role for neuromodulators acting on G\u03b1s-coupled GPCRs during neural circuit development would transform our understanding of core principle in developmental neurobiology\" (in the Discussion) should be toned down throughout the manuscript.' This directly challenges the broad generalization made by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "841fbab8-1bd3-469a-b38b-213b5600c9e3",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Dopaminergic innervation is present in neonatal striatum at P1 and P10, as shown by dopamine transporter promoter activity, tdTomato expression, and tyrosine hydroxylase immunohistochemistry.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These anatomical characterization data are not questioned by any reviewer and serve as background context for the developmental studies. No concerns were raised about these descriptive findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "5a60cbfa-fa22-44c9-9005-87dd8a556ddc",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "During development, dSPNs have greater dendritic spine density and mEPSC frequency but not amplitude compared to iSPNs, based on re-analysis of previously published data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are re-analyzed data from a previous publication used to support the model. Reviewers did not question these findings, which serve as supporting context rather than novel primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "8ccb7156-b445-4355-bd12-47748f9b820a",
+      "content_id": "e2394c41-f26e-4edd-b551-52b265bce636",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Background claims about established knowledge regarding dopamine signaling, receptor expression, developmental timing, circuit organization, and disease relevance in the striatum.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established facts from the literature cited throughout the manuscript. Reviewers did not question these background claims, which provide context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "86acef61-8551-4033-a8c0-848162b2db85",
+      "result_id": "124c9eff-a7cb-479f-a570-ad270a738e7e"
+    },
+    {
+      "claim_id": "f03fe923-7c7b-4874-bfe8-77585ca179c1",
+      "result_id": "124c9eff-a7cb-479f-a570-ad270a738e7e"
+    },
+    {
+      "claim_id": "2fb8c2f7-b186-4103-b06f-ff7e99ad52d4",
+      "result_id": "124c9eff-a7cb-479f-a570-ad270a738e7e"
+    },
+    {
+      "claim_id": "1bd11183-fc1a-4534-a351-74a1128d7e7e",
+      "result_id": "124c9eff-a7cb-479f-a570-ad270a738e7e"
+    },
+    {
+      "claim_id": "bbf6e08b-58e8-4fc0-9b9a-a4d8dcce5027",
+      "result_id": "124c9eff-a7cb-479f-a570-ad270a738e7e"
+    },
+    {
+      "claim_id": "595610dd-2b9e-4cdc-9696-1bcb4136c220",
+      "result_id": "38148b6d-c94f-4358-bac1-690f795e88e9"
+    },
+    {
+      "claim_id": "98f085a0-cc4a-4240-856a-f628f25e325b",
+      "result_id": "38148b6d-c94f-4358-bac1-690f795e88e9"
+    },
+    {
+      "claim_id": "09b9b691-c500-45ea-ad3e-c3c9bfc5c25b",
+      "result_id": "38148b6d-c94f-4358-bac1-690f795e88e9"
+    },
+    {
+      "claim_id": "ec7b747e-acfb-42fe-b084-5ae132d5e544",
+      "result_id": "38148b6d-c94f-4358-bac1-690f795e88e9"
+    },
+    {
+      "claim_id": "faf566cb-c410-4a51-9aee-a66ac0984976",
+      "result_id": "38148b6d-c94f-4358-bac1-690f795e88e9"
+    },
+    {
+      "claim_id": "b2def36f-ba70-4d54-8237-3a72d8cde6ce",
+      "result_id": "38148b6d-c94f-4358-bac1-690f795e88e9"
+    },
+    {
+      "claim_id": "f143b1fc-37e7-4a2e-8185-d0f9d0101fe9",
+      "result_id": "0ad7d6d5-98bc-43b6-9337-b6c1d3d27911"
+    },
+    {
+      "claim_id": "d1f3d4dd-c7a4-4b7f-ab6c-455e69fa926c",
+      "result_id": "0ad7d6d5-98bc-43b6-9337-b6c1d3d27911"
+    },
+    {
+      "claim_id": "2cfdb528-b8e9-46da-a37e-9453eaa71e70",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "11b66e43-da65-4687-b6d4-64de815ac0d5",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "7dc46241-580d-48ad-9bc0-afe2a4e58870",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "9bf7c4a1-c265-45e7-b82b-e0e21f41a044",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "482deba6-dc7a-44ae-991c-953da0b196bb",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "d40dd4a9-1211-4889-b241-bc35c0891f99",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "651d3b57-6abd-4085-9cd7-0d7b9518c273",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "ae3cbbc9-8cb5-4440-9eef-73a70479759a",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "71f81ac2-26bc-4282-b337-969a69c9e5e9",
+      "result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee"
+    },
+    {
+      "claim_id": "2ffd6123-4c78-4d57-9eed-4f86aac93152",
+      "result_id": "759d8044-bdb4-414c-a37e-db4791039ddb"
+    },
+    {
+      "claim_id": "d108a156-2b8d-47e1-a99e-c02e8f4f716e",
+      "result_id": "759d8044-bdb4-414c-a37e-db4791039ddb"
+    },
+    {
+      "claim_id": "bb2bcdef-f8fa-4180-897b-8cef14ca00f7",
+      "result_id": "7b00c60e-b2f8-4508-8fe5-b553735c081b"
+    },
+    {
+      "claim_id": "b5d3fdad-cb74-40b8-9f72-05fc6857d42c",
+      "result_id": "7b00c60e-b2f8-4508-8fe5-b553735c081b"
+    },
+    {
+      "claim_id": "50b808fd-e694-4978-994c-7b9011eb8da6",
+      "result_id": "7b00c60e-b2f8-4508-8fe5-b553735c081b"
+    },
+    {
+      "claim_id": "865a61dc-6d10-4293-9ae3-9ce68d652afc",
+      "result_id": "7b00c60e-b2f8-4508-8fe5-b553735c081b"
+    },
+    {
+      "claim_id": "80be3bea-76e6-4bb7-80c2-05eca358f063",
+      "result_id": "7b00c60e-b2f8-4508-8fe5-b553735c081b"
+    },
+    {
+      "claim_id": "b9583751-1a82-43e1-97d5-0aa3ec5b4f25",
+      "result_id": "2deefbda-e254-46ab-9233-12cd32571ab7"
+    },
+    {
+      "claim_id": "f248b8f4-0cc0-42b0-915a-871e8828cf0e",
+      "result_id": "2deefbda-e254-46ab-9233-12cd32571ab7"
+    },
+    {
+      "claim_id": "93955511-1ca0-4c5a-b21e-945005965939",
+      "result_id": "2deefbda-e254-46ab-9233-12cd32571ab7"
+    },
+    {
+      "claim_id": "6e454fc8-6bd8-44bc-bd98-00d5003dbb2b",
+      "result_id": "2deefbda-e254-46ab-9233-12cd32571ab7"
+    },
+    {
+      "claim_id": "c2cdef35-18bf-4329-bf91-481ea193ebf6",
+      "result_id": "2deefbda-e254-46ab-9233-12cd32571ab7"
+    },
+    {
+      "claim_id": "2c2a33ef-7a0c-4f4a-af05-96cf0a701507",
+      "result_id": "2deefbda-e254-46ab-9233-12cd32571ab7"
+    },
+    {
+      "claim_id": "ee47029a-3175-4e05-bc00-05c2da9247fa",
+      "result_id": "0664fe36-51f2-4c07-a299-daa0c2cc8ea5"
+    },
+    {
+      "claim_id": "607eaf06-61af-4ec9-beb1-8c674a0e73fc",
+      "result_id": "0664fe36-51f2-4c07-a299-daa0c2cc8ea5"
+    },
+    {
+      "claim_id": "a5500196-5d8b-48c0-b10e-b0a09491ef12",
+      "result_id": "0664fe36-51f2-4c07-a299-daa0c2cc8ea5"
+    },
+    {
+      "claim_id": "34786080-c759-471d-82ee-dd0e7e93fda9",
+      "result_id": "b629870b-eb07-4529-8135-245536c9914c"
+    },
+    {
+      "claim_id": "b31de9cd-733d-4953-b97f-9b740c2aa79d",
+      "result_id": "b629870b-eb07-4529-8135-245536c9914c"
+    },
+    {
+      "claim_id": "aeedf467-0d88-4495-81bf-f04c7e9af6b6",
+      "result_id": "b629870b-eb07-4529-8135-245536c9914c"
+    },
+    {
+      "claim_id": "7ae05392-7068-48b1-b035-9d6ee246ec29",
+      "result_id": "877cc422-6b94-434b-a8be-b9240e5c606c"
+    },
+    {
+      "claim_id": "f8450476-90e4-4dd9-b7c0-3f1d28e9d6d3",
+      "result_id": "877cc422-6b94-434b-a8be-b9240e5c606c"
+    },
+    {
+      "claim_id": "9af7d495-899d-4447-842f-734dc016a0ef",
+      "result_id": "877cc422-6b94-434b-a8be-b9240e5c606c"
+    },
+    {
+      "claim_id": "cbc2dbfb-c660-4ff7-b346-62c3f055bada",
+      "result_id": "f68fcc3c-56df-424e-918e-182e077dbf8c"
+    },
+    {
+      "claim_id": "3c18ec8a-9cf4-4a67-affb-046835013e57",
+      "result_id": "f68fcc3c-56df-424e-918e-182e077dbf8c"
+    },
+    {
+      "claim_id": "78230f2e-41e9-4f91-908f-268ceb127a93",
+      "result_id": "720ef15e-3eba-4aae-9e4e-40a7353c06b9"
+    },
+    {
+      "claim_id": "5e579553-5534-468e-8b5e-286845c869dd",
+      "result_id": "29997a71-227b-4ea3-8063-7e353f95d765"
+    },
+    {
+      "claim_id": "a9e4539e-9423-46c7-a626-71117ac4dc77",
+      "result_id": "29997a71-227b-4ea3-8063-7e353f95d765"
+    },
+    {
+      "claim_id": "fdcbb4a5-d669-40c3-a022-e5056e0eb1c8",
+      "result_id": "29997a71-227b-4ea3-8063-7e353f95d765"
+    },
+    {
+      "claim_id": "302b1190-8176-4abc-8ff4-a808a10ff76c",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "fc646f0f-172b-4429-955b-3c24f54ff773",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "1a319949-c54a-46c4-89d2-1c9d370a1466",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "aff406c6-8362-4acc-93f1-dad0eb037312",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "fc3c14af-43a8-4f2e-9ab1-b8a58d39b6bf",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "601e405b-6ace-43f3-a2a8-de1320a399fd",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "fc92c727-87b3-43ce-86c4-1d496064f5f0",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "574eceb6-1bb6-4f74-859f-cb8325b11d88",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "63c994f4-f838-4cd8-afad-fa4d72dedb74",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "6509560a-32a3-499a-9493-33c59cb11912",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "81f63828-1c6d-4cf0-b83f-cf078271c12c",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "09b9b691-c500-45ea-ad3e-c3c9bfc5c25b",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "27769871-9ff6-486c-8203-8c9f5b20efad",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "2bf2f305-27e8-4be3-857a-8db0e9bbb7d4",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "98cb4676-40b8-429c-9bac-e9013fc24297",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "9ef313a0-26b0-4c92-81a6-4c0742a9c2d2",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "5054dfc0-d75d-4488-a564-d5f4283fad15",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "4e957ae1-0632-4ee1-8348-781b200e794e",
+      "result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf"
+    },
+    {
+      "claim_id": "ba972f19-aac7-4272-84e6-4e4e6b389425",
+      "result_id": "c47120c5-a362-4e5f-ac6e-d1e7675f9017"
+    },
+    {
+      "claim_id": "28a5c0e9-60a1-4148-9951-b1905a4e4f1d",
+      "result_id": "c47120c5-a362-4e5f-ac6e-d1e7675f9017"
+    },
+    {
+      "claim_id": "86acef61-8551-4033-a8c0-848162b2db85",
+      "result_id": "fba6f1f2-7897-43d3-86f1-963c6a80518c"
+    },
+    {
+      "claim_id": "f03fe923-7c7b-4874-bfe8-77585ca179c1",
+      "result_id": "fba6f1f2-7897-43d3-86f1-963c6a80518c"
+    },
+    {
+      "claim_id": "2fb8c2f7-b186-4103-b06f-ff7e99ad52d4",
+      "result_id": "fba6f1f2-7897-43d3-86f1-963c6a80518c"
+    },
+    {
+      "claim_id": "1bd11183-fc1a-4534-a351-74a1128d7e7e",
+      "result_id": "fba6f1f2-7897-43d3-86f1-963c6a80518c"
+    },
+    {
+      "claim_id": "bbf6e08b-58e8-4fc0-9b9a-a4d8dcce5027",
+      "result_id": "fba6f1f2-7897-43d3-86f1-963c6a80518c"
+    },
+    {
+      "claim_id": "595610dd-2b9e-4cdc-9696-1bcb4136c220",
+      "result_id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834"
+    },
+    {
+      "claim_id": "98f085a0-cc4a-4240-856a-f628f25e325b",
+      "result_id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834"
+    },
+    {
+      "claim_id": "ec7b747e-acfb-42fe-b084-5ae132d5e544",
+      "result_id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834"
+    },
+    {
+      "claim_id": "faf566cb-c410-4a51-9aee-a66ac0984976",
+      "result_id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834"
+    },
+    {
+      "claim_id": "b2def36f-ba70-4d54-8237-3a72d8cde6ce",
+      "result_id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834"
+    },
+    {
+      "claim_id": "2cfdb528-b8e9-46da-a37e-9453eaa71e70",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "11b66e43-da65-4687-b6d4-64de815ac0d5",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "7dc46241-580d-48ad-9bc0-afe2a4e58870",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "9bf7c4a1-c265-45e7-b82b-e0e21f41a044",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "482deba6-dc7a-44ae-991c-953da0b196bb",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "d40dd4a9-1211-4889-b241-bc35c0891f99",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "651d3b57-6abd-4085-9cd7-0d7b9518c273",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "ae3cbbc9-8cb5-4440-9eef-73a70479759a",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "71f81ac2-26bc-4282-b337-969a69c9e5e9",
+      "result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2"
+    },
+    {
+      "claim_id": "f143b1fc-37e7-4a2e-8185-d0f9d0101fe9",
+      "result_id": "715b77cf-695e-4ad1-87bc-36802b480fa7"
+    },
+    {
+      "claim_id": "d1f3d4dd-c7a4-4b7f-ab6c-455e69fa926c",
+      "result_id": "715b77cf-695e-4ad1-87bc-36802b480fa7"
+    },
+    {
+      "claim_id": "bb2bcdef-f8fa-4180-897b-8cef14ca00f7",
+      "result_id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb"
+    },
+    {
+      "claim_id": "b5d3fdad-cb74-40b8-9f72-05fc6857d42c",
+      "result_id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb"
+    },
+    {
+      "claim_id": "50b808fd-e694-4978-994c-7b9011eb8da6",
+      "result_id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb"
+    },
+    {
+      "claim_id": "865a61dc-6d10-4293-9ae3-9ce68d652afc",
+      "result_id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb"
+    },
+    {
+      "claim_id": "80be3bea-76e6-4bb7-80c2-05eca358f063",
+      "result_id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb"
+    },
+    {
+      "claim_id": "b9583751-1a82-43e1-97d5-0aa3ec5b4f25",
+      "result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663"
+    },
+    {
+      "claim_id": "f248b8f4-0cc0-42b0-915a-871e8828cf0e",
+      "result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663"
+    },
+    {
+      "claim_id": "93955511-1ca0-4c5a-b21e-945005965939",
+      "result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663"
+    },
+    {
+      "claim_id": "6e454fc8-6bd8-44bc-bd98-00d5003dbb2b",
+      "result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663"
+    },
+    {
+      "claim_id": "c2cdef35-18bf-4329-bf91-481ea193ebf6",
+      "result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663"
+    },
+    {
+      "claim_id": "2c2a33ef-7a0c-4f4a-af05-96cf0a701507",
+      "result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663"
+    },
+    {
+      "claim_id": "607eaf06-61af-4ec9-beb1-8c674a0e73fc",
+      "result_id": "687b62fa-416e-4ebc-a73d-14cd7af7715a"
+    },
+    {
+      "claim_id": "a5500196-5d8b-48c0-b10e-b0a09491ef12",
+      "result_id": "687b62fa-416e-4ebc-a73d-14cd7af7715a"
+    },
+    {
+      "claim_id": "cbc2dbfb-c660-4ff7-b346-62c3f055bada",
+      "result_id": "1f3c96e5-9c8b-40b5-9be0-25e4ac1f5509"
+    },
+    {
+      "claim_id": "3c18ec8a-9cf4-4a67-affb-046835013e57",
+      "result_id": "1f3c96e5-9c8b-40b5-9be0-25e4ac1f5509"
+    },
+    {
+      "claim_id": "34786080-c759-471d-82ee-dd0e7e93fda9",
+      "result_id": "4a8349bc-4947-41ea-aa40-d23fe8ab2838"
+    },
+    {
+      "claim_id": "ee47029a-3175-4e05-bc00-05c2da9247fa",
+      "result_id": "4a8349bc-4947-41ea-aa40-d23fe8ab2838"
+    },
+    {
+      "claim_id": "b31de9cd-733d-4953-b97f-9b740c2aa79d",
+      "result_id": "4a8349bc-4947-41ea-aa40-d23fe8ab2838"
+    },
+    {
+      "claim_id": "aeedf467-0d88-4495-81bf-f04c7e9af6b6",
+      "result_id": "4a8349bc-4947-41ea-aa40-d23fe8ab2838"
+    },
+    {
+      "claim_id": "ba972f19-aac7-4272-84e6-4e4e6b389425",
+      "result_id": "7c8b27df-1402-4086-becb-72c40f65f688"
+    },
+    {
+      "claim_id": "28a5c0e9-60a1-4148-9951-b1905a4e4f1d",
+      "result_id": "7c8b27df-1402-4086-becb-72c40f65f688"
+    },
+    {
+      "claim_id": "7ae05392-7068-48b1-b035-9d6ee246ec29",
+      "result_id": "841fbab8-1bd3-469a-b38b-213b5600c9e3"
+    },
+    {
+      "claim_id": "f8450476-90e4-4dd9-b7c0-3f1d28e9d6d3",
+      "result_id": "841fbab8-1bd3-469a-b38b-213b5600c9e3"
+    },
+    {
+      "claim_id": "9af7d495-899d-4447-842f-734dc016a0ef",
+      "result_id": "841fbab8-1bd3-469a-b38b-213b5600c9e3"
+    },
+    {
+      "claim_id": "5e579553-5534-468e-8b5e-286845c869dd",
+      "result_id": "5a60cbfa-fa22-44c9-9005-87dd8a556ddc"
+    },
+    {
+      "claim_id": "a9e4539e-9423-46c7-a626-71117ac4dc77",
+      "result_id": "5a60cbfa-fa22-44c9-9005-87dd8a556ddc"
+    },
+    {
+      "claim_id": "fdcbb4a5-d669-40c3-a022-e5056e0eb1c8",
+      "result_id": "5a60cbfa-fa22-44c9-9005-87dd8a556ddc"
+    },
+    {
+      "claim_id": "302b1190-8176-4abc-8ff4-a808a10ff76c",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "fc646f0f-172b-4429-955b-3c24f54ff773",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "1a319949-c54a-46c4-89d2-1c9d370a1466",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "aff406c6-8362-4acc-93f1-dad0eb037312",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "fc3c14af-43a8-4f2e-9ab1-b8a58d39b6bf",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "601e405b-6ace-43f3-a2a8-de1320a399fd",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "fc92c727-87b3-43ce-86c4-1d496064f5f0",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "574eceb6-1bb6-4f74-859f-cb8325b11d88",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "63c994f4-f838-4cd8-afad-fa4d72dedb74",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "6509560a-32a3-499a-9493-33c59cb11912",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "81f63828-1c6d-4cf0-b83f-cf078271c12c",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "09b9b691-c500-45ea-ad3e-c3c9bfc5c25b",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "27769871-9ff6-486c-8203-8c9f5b20efad",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "2bf2f305-27e8-4be3-857a-8db0e9bbb7d4",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "98cb4676-40b8-429c-9bac-e9013fc24297",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "9ef313a0-26b0-4c92-81a6-4c0742a9c2d2",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "5054dfc0-d75d-4488-a564-d5f4283fad15",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    },
+    {
+      "claim_id": "4e957ae1-0632-4ee1-8348-781b200e794e",
+      "result_id": "8ccb7156-b445-4355-bd12-47748f9b820a"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "e78b981a-e4f8-4428-b79d-73f2244a7428",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "124c9eff-a7cb-479f-a570-ad270a738e7e",
+      "peer_result_id": "fba6f1f2-7897-43d3-86f1-963c6a80518c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C3, C20-C23 regarding in vivo pharmacology effects on synaptogenesis. OpenEval finds evidence SUPPORTED with adequate statistics and controls. Peer reviewers rate UNCERTAIN due to systemic drug administration concerns - effects may be indirect through cortex/thalamus rather than specific to striatum. Major disagreement on interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2b817918-86e7-4796-b645-fa0026dfc6fe",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "38148b6d-c94f-4358-bac1-690f795e88e9",
+      "peer_result_id": "f46f27f6-c20f-4fc2-ad9f-7e3c5a847834",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C4, C26, C28-C30 on differential requirements for iSPNs vs dSPNs. OpenEval finds SUPPORTED with adequate controls and statistics. Peer reviewers rate UNCERTAIN, requesting separate examination of D1R/A2aR antagonism and separation of dMSN/iMSN recordings rather than lumping conditions. Systemic administration concerns also apply.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "1cf74dc1-821e-4fa4-9ad7-af1866abf9f5",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0ad7d6d5-98bc-43b6-9337-b6c1d3d27911",
+      "peer_result_id": "715b77cf-695e-4ad1-87bc-36802b480fa7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C24-C25 on in vivo vs in vitro distinction. OpenEval finds SUPPORTED, viewing negative in vitro result as evidence for circuit-level necessity. Peer reviewers rate UNCERTAIN, requesting additional slice experiments with cortex removed and ChR2 stimulation to definitively establish striatal specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "a5078eeb-0aea-4fc5-9c07-23a16e7ab138",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a51d649a-aaaa-41d1-b8a6-1347a943e2ee",
+      "peer_result_id": "4fa6da31-9342-455f-b68a-83a1e29a49c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C5, C34, C36-C40, C42-C43 on glutamate uncaging experiments. Both agree these are SUPPORTED. OpenEval notes controlled glutamate design supports cell-autonomous mechanism. Peer Reviewer 2 states 'evidence for spinogenesis in slices is very strong' and provides 'strong evidence for role of corticostriatal activity and PKA signaling.' Strong concordance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "2033cdeb-59a9-433c-b680-9d76006fc905",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "7b00c60e-b2f8-4508-8fe5-b553735c081b",
+      "peer_result_id": "c8686f6b-ffdc-4a5c-bcb8-01b2b85225cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C44-C46, C48-C49 on pharmacogenetic PKA activation. Both find SUPPORTED. OpenEval highlights rigorous within-animal control design. Peer reviewers note optogenetic/chemogenetic experiments 'provide supporting evidence' and 'additional evidence for corticostriatal interaction,' with targeted viral transduction addressing some specificity concerns. Strong agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "8f1f63ae-88cb-4cd2-b4a9-82887ecf58ac",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2deefbda-e254-46ab-9233-12cd32571ab7",
+      "peer_result_id": "f8af208b-ceb9-40f0-abaf-f0237197c663",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C51-C56 on glutamate release sufficiency and PKA requirement. OpenEval finds SUPPORTED with adequate controls and sample sizes. Peer reviewers rate UNCERTAIN due to systemic drug administration for blocking experiments, which 'could be reducing cortical activity through actions in cortex or thalamus.' Disagreement on pharmacological specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "a95619be-afa0-4b5f-9b32-27fd6b39d51b",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0664fe36-51f2-4c07-a299-daa0c2cc8ea5",
+      "peer_result_id": "687b62fa-416e-4ebc-a73d-14cd7af7715a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C57-C59 (OpenEval includes C57, peer review focuses on C58-C59) on joint sufficiency of glutamate and PKA. Both find SUPPORTED. OpenEval notes ex vivo experiment directly tests cooperative mechanism. Peer reviewers state this addresses specificity concerns and would 'strengthen their hypothesis.' Strong concordance on reduced preparation evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "981bf0a2-ac3e-4466-ba03-828b4a9b54f6",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "b629870b-eb07-4529-8135-245536c9914c",
+      "peer_result_id": "4a8349bc-4947-41ea-aa40-d23fe8ab2838",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate main conclusion claims C7, C60-C61 (peer review also includes C57). OpenEval finds SUPPORTED by converging evidence demonstrating necessity and sufficiency. Peer reviewers rate UNCERTAIN, with Reviewer 1 stating experiments 'do not establish that dopamine is critical for synaptogenesis' but only show 'D1R agonist can transiently bolster synaptic strength.' Major disagreement on strength of conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "3a9ad992-9e3e-469d-aa28-d293cba8e554",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "877cc422-6b94-434b-a8be-b9240e5c606c",
+      "peer_result_id": "841fbab8-1bd3-469a-b38b-213b5600c9e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C17-C19 on anatomical characterization of dopamine innervation. Both find SUPPORTED. OpenEval notes imaging data establishes developmental context. Peer reviewers note no concerns raised about these descriptive findings. Complete agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f4a00faa-05b2-462d-ab3a-4b49e3364384",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f68fcc3c-56df-424e-918e-182e077dbf8c",
+      "peer_result_id": "1f3c96e5-9c8b-40b5-9be0-25e4ac1f5509",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C32-C33 on behavioral/locomotor effects. OpenEval finds SUPPORTED with adequate statistics validating pharmacological manipulations are behaviorally relevant. Peer reviewers rate UNCERTAIN, with Reviewer 1 noting 'transient effects' are demonstrated but 'never demonstrate these translate into long-term changes,' requesting follow-up experiments. Disagreement on interpretation of transient vs lasting effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "e930d75d-6cc0-43bd-8351-36ca640f9515",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "29997a71-227b-4ea3-8063-7e353f95d765",
+      "peer_result_id": "5a60cbfa-fa22-44c9-9005-87dd8a556ddc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C64-C66 on re-analyzed data from prior publication. Both find SUPPORTED. OpenEval notes re-analysis provides context for differential dSPN/iSPN effects. Peer reviewers note no concerns raised about these supporting findings. Complete agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "88163366-18ce-4849-aa6a-af91dbd850c9",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "439c5dc7-f862-4b5e-8e75-e57742dd31bf",
+      "peer_result_id": "8ccb7156-b445-4355-bd12-47748f9b820a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C1-C2, C8-C16, C27, C31, C35, C41, C62-C63, C68 representing established literature background. Both find SUPPORTED. OpenEval notes these provide conceptual framework but are not novel findings. Peer reviewers note these background claims were not questioned. Complete agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "f82e10ee-457d-448e-a6ad-c47bb1281ac3",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "c47120c5-a362-4e5f-ac6e-d1e7675f9017",
+      "peer_result_id": "7c8b27df-1402-4086-becb-72c40f65f688",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C67, C69 on broader implications and generalization. OpenEval rates UNCERTAIN, noting speculation is reasonable but requires additional validation across systems. Peer reviewers rate UNSUPPORTED, with editorial summary explicitly stating Reviewer 1 indicated such conclusions 'should be toned down throughout the manuscript.' Both skeptical but peer review more critical.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "c196252b-87a6-4b44-b8d7-bbb44ccab053",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "759d8044-bdb4-414c-a37e-db4791039ddb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C6, C50 on mechanistic explanation for differential iSPN requirements, finding SUPPORTED as inference from comparing in vivo and in vitro results. No corresponding peer review evaluation found specifically addressing this mechanistic inference.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    },
+    {
+      "id": "3ffd03a6-9e8c-4b88-9567-12466afa97be",
+      "submission_id": "0b92352e-34c7-47f5-b964-cb5f24b21652",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "720ef15e-3eba-4aae-9e4e-40a7353c06b9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claim C47 on developmental spine density changes, finding SUPPORTED with adequate statistics establishing developmental context. No corresponding peer review evaluation found addressing this specific developmental characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:13:36.162895Z"
+    }
+  ]
+}

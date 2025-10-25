@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The Malaria-071 trial demonstrated that the delayed fractional dose (DFD) regimen of RTS,S/AS01 vaccine provided superior protection (86.7%) compared to the standard (STD) regimen (62.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 report efficacy data from the Malaria-071 trial with specific protection rates cited from the published study (Regules et al., 2016). These are primary outcome data from a controlled human malaria infection trial and represent well-documented results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Protected subjects in both vaccine regimens showed early induction and sustained expansion of functional CSP-specific pTfh cells expressing IL-21, ICOS, and Ki67, while non-protected subjects failed to mount these responses. The DFD regimen maintained higher frequencies of IL-21+ and ICOS+ CSP-specific pTfh at late timepoints compared to the STD regimen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C24-C36 present comprehensive flow cytometry data showing consistent associations between pTfh responses and protection status across multiple timepoints and functional markers. The data demonstrate statistically significant differences between protected and non-protected subjects, with appropriate controls and repeated measures analysis using GLMM. The temporal dynamics and regimen-specific differences are well-documented with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Protected subjects developed CSP-specific memory B cell responses after the second dose that persisted through later timepoints, with the DFD regimen showing larger antigen-specific memory B cell responses, particularly for switch memory and activated memory subsets, compared to the STD regimen at late timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C37-C49 present multiple complementary assays (flow cytometry, ELISpot, ELISA) demonstrating B cell responses associated with protection. The data show consistent patterns across different B cell subsets and CSP epitopes (PF-CSP, PF-16, R32LR), with statistically significant differences between protected and non-protected subjects, and between regimens at appropriate timepoints. The functional assessments (antibody secretion, proliferation) support the phenotypic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C76",
+      "C83"
+    ],
+    "result": "Machine learning analysis using early-stage immune responses (pre-dose 3) revealed that a subset of non-protected subjects in the STD regimen initially mounted protective immune responses after doses 1 and 2, but lost these responses after the third dose, accounting for the difference in efficacy between regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C63-C69, C73, C76, C83 present machine learning predictions with appropriate validation (leave-one-out analysis) showing differential predictive accuracy between regimens (97% for DFD vs 69% for STD). The identification of STD subjects with promising early responses who later failed to be protected is supported by the predictive modeling and provides mechanistic insight. However, the small sample size (particularly only 10 non-protected subjects total) limits the robustness of these subgroup analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "The DFD regimen favors persistence of functional B cells after the third dose through early Tfh-mediated formation of high-affinity memory B cells, while the STD regimen's early third dose is detrimental to pre-formed memory B cell expansion and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C74, C75, C80, and C81 represent mechanistic interpretations of the observed data. While the data show associations between pTfh responses, B cell responses, and protection, and demonstrate regimen-specific differences, the proposed causal mechanism remains inferential. The study does not directly measure affinity maturation kinetics, germinal center dynamics, or demonstrate causality through intervention. The conclusions are reasonable interpretations but require additional mechanistic studies for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Data integration using correlation analysis and machine learning identified vaccine-induced immune responses, with pTfh responses emerging early (T2) and memory B cell responses peaking later (T4-T5). Random forest models achieved 85% accuracy in predicting both regimen and protection status, with antigen-specific B cell characteristics most predictive of regimen and pTfh parameters most predictive of protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 describe comprehensive statistical and machine learning analyses with appropriate methods (GLMM, random forest, PCA, correlation clustering). The predictive accuracies are reported with kappa values indicating model performance. The temporal dynamics and variable importance analyses are well-documented. However, the moderate kappa value for protection prediction (0.45) indicates limited predictive power, likely due to small sample size and class imbalance (78% protected), which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C84"
+    ],
+    "result": "Study participants were classified into three outcome groups based on early immune responses: weak responders (10-15%, 16% efficacy), DFD strong responders (96% efficacy), and STD strong responders (70% efficacy), with non-protected subjects in the DFD regimen being almost entirely weak responders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C84 present a classification scheme based on machine learning predictions using early-stage data. The efficacy rates for each group are calculated from the actual outcomes and provide useful stratification. However, the very small numbers in some groups (n=6 weak responders, n=4 non-protected in DFD) limit the statistical robustness of these classifications and the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "CSP-specific pTfh responses persist for at least 159 days post-challenge and could serve as potential biomarkers for vaccine efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 presents longitudinal data showing persistence of CSP-specific pTfh at the final study timepoint (T7, 159 days post-challenge). Claim C79 proposes these cells as biomarkers based on their association with protection and persistence. While the persistence data are supported, the biomarker utility claim is speculative and would require validation in independent cohorts and field settings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C85"
+    ],
+    "result": "The adverse effect of the third dose in the STD regimen may be caused by antigen/adjuvant concentration or timing, potentially through overstimulation and anergy or weak selection pressure. The mixed population of non-protected subjects in the STD regimen may explain difficulties in finding correlates of protection in previous RTS,S studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C85 are speculative interpretations. C82 proposes multiple possible mechanisms without direct evidence distinguishing between them. C85 offers a retrospective explanation for previous study challenges but is not directly tested. These represent reasonable hypotheses that require future experimental validation through mechanistic studies or analysis of additional datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on malaria burden, RTS,S/AS01 vaccine composition, prior trial results, and immunological mechanisms of T follicular helper cells and B cell responses in vaccine immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C23 provide background context from published literature and established immunological knowledge. These claims appropriately cite primary sources (WHO statistics, vaccine composition, prior trial results, immunological mechanisms) and accurately represent the cited information. C23 provides the study design details from the Malaria-071 trial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Malaria infection may induce memory Tfh cells with impaired B cell helper function and inhibit differentiation to fully functional Tfh cells, resulting in germinal center dysfunction and suboptimal antibody responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 cites emerging data from Hansen et al., 2017 regarding the potential negative effects of malaria infection on Tfh cell function. This is appropriately presented as cited information from another study and is relevant to the discussion of how natural malaria exposure might affect vaccine responses in endemic settings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Participants performed a 4-arm bandit task where they alternated between exploitation (72% of trials, mean block length 13.7 trials) and exploration phases. Model entropy was high during exploitation and low during exploration, and both high entropy and high relative uncertainty predicted switching from exploitation to exploration following reward omission. The computational model predicted 95% of exploit trials and 51% of explore trials correctly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 provide converging behavioral and model-based evidence. The task design is clearly described (C20-C21), behavioral patterns are quantified with appropriate statistics (C22-C25), model entropy relationships are demonstrated (C26-C27), and statistical tests show significant effects (C28-C29 with p<0.001). Model validation shows good predictive accuracy (C30), supporting the validity of the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Exploration and exploitation phases engaged distinct brain networks: exploration activated frontal-parietal networks and dorsomedial prefrontal cortex, while exploitation engaged medial orbitofrontal cortex (mOFC) and hippocampus. Response switching and high model entropy predicted activity in frontal-parietal and dorsomedial frontal cortex, while low model entropy predicted mOFC and hippocampus activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe univariate fMRI results from GLM1 and GLM2 analyses. The findings are supported by appropriate statistical analyses and are consistent with prior literature on model-based choice (C33). The dissociation between exploration and exploitation networks is clearly demonstrated, though the results are primarily descriptive rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Multivariate fMRI analysis identified a region in mOFC where representation strength for the chosen option was higher when model entropy was lower (p<0.05 corrected). This effect survived multiple comparisons correction, remained significant after controlling for value and reward history, and was distinct from action/policy representations in motor and visual cortex. A similar but weaker effect was observed in hippocampus (uncorrected p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 describe the core multivariate fMRI finding. The result is well-supported with appropriate multiple comparisons correction (C40-C41), control analyses ruling out confounds from value and reward history (C47-C48), and validation using alternative measures (C46). The authors appropriately note the hippocampus effect did not survive correction (C43). The interpretation as a probabilistic state representation (C44-C45) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Pupil diameter was larger during exploration than exploitation and increased following reward omission. Critically, increases in baseline pupil size predicted decreases in mOFC representation strength specifically on unrewarded trials (t(15)=-2.94, p=0.01) but not rewarded trials (t(15)=0.37, p=0.71), with a significant difference between conditions (t(15)=2.82, p=0.01). This relationship was temporally specific and remained significant after controlling for value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 provide strong evidence for the pupil-mOFC relationship. The directional specificity (increases but not decreases in entropy, C54-C58) is well-demonstrated with appropriate statistics. Control analyses confirm temporal specificity (C59) and robustness to confounds (C60). The effect replicates in explore trials (C61) and is illustrated with median split analysis (C62). The finding that uncertainty increases occurred almost exclusively after reward omissions (C57: 0.2% after rewards) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C81",
+      "C82",
+      "C88"
+    ],
+    "result": "ACC activity was directionally sensitive to changes in entropy, being more active when entropy increased. ACC activity predicted changes in baseline pupil diameter (p<0.05 corrected), over and above effects of entropy changes and mean brain activity. However, there was no direct relationship between ACC activity and changes in mOFC representation strength (p>0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C67-C68, and C88 describe the ACC findings with appropriate statistical corrections. The lack of direct ACC-mOFC relationship (C68) is honestly reported and may reflect measurement noise. The interpretation connecting to prior literature (C65, C81-C82) is reasonable. The results support a model where ACC influences mOFC indirectly via neuromodulatory systems, though the evidence is correlational rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C79",
+      "C80",
+      "C84",
+      "C96"
+    ],
+    "result": "The study provides evidence for top-down neuromodulatory control of entropy in neural state models, where pupil diameter (indexing neuromodulatory state) predicted increases in entropy in mOFC, and ACC activity predicted pupil diameter. This suggests neuromodulatory systems play a crucial role in implementing flexibility of internal representations during decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C79-C80, C84, C96 represent the main conclusions synthesizing the empirical findings. The evidence chain (ACC \u2192 pupil \u2192 mOFC entropy) is well-supported by the individual results, though the interpretation regarding neuromodulation must be qualified given that pupil diameter reflects multiple neuromodulators and arousal factors (acknowledged in C77). The conclusions are appropriately cautious about causal mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C5",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C78"
+    ],
+    "result": "While pupil diameter is used to index neuromodulatory state including noradrenaline, it depends on multiple neuromodulators (noradrenaline and acetylcholine) and other arousal factors. Prior work has proposed noradrenaline as a mechanism for controlling uncertainty in neural models, with experimental evidence showing it increases behavioral randomness and reduces selectivity of cortical representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C17-C19, C77-C78 appropriately contextualize the pupillometry measure and its limitations. The authors correctly note that pupil diameter cannot be linked directly to noradrenaline (C77) and cite relevant prior work. This represents appropriate scientific caution about the interpretation of the pupillometry results, though it somewhat limits the specificity of the mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study is grounded in established theoretical frameworks showing that internal models represent uncertainty about environmental states, which controls learning rates and choice behavior. Theoretical models include mechanisms to increase model uncertainty (transition functions), and prior work has linked ACC activity to volatility, belief updating, and uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C16 provide theoretical background and literature review. These are well-supported by appropriate citations to established work in reinforcement learning, Bayesian inference, and prior neuroimaging studies. The theoretical framework is clearly articulated and provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The mOFC representation is interpreted as consistent with prior proposals that this region represents current location in task state space and hidden task-relevant information. The authors speculate that different task domains might rely on probabilistic models in other cortical regions, and that the mOFC representation might reflect online rather than offline storage of contingencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 provide interpretation and speculation about the nature of mOFC representations. The connection to prior work (C72-C73) is appropriate, and the speculations (C74-C76) are clearly identified as such and are reasonable given the data. These claims appropriately acknowledge limitations in understanding the exact nature of the representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors consider and address an alternative explanation that ACC and pupil effects reflect drive for exploratory behavior rather than belief changes. They argue this cannot account for the pupil-mOFC relationship in the absence of behavioral change, and cite animal work showing noradrenaline reduces cortical selectivity. They propose a hypothesis distinguishing noradrenaline effects on ACC (behavioral stochasticity) versus mOFC (entropic beliefs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 demonstrate appropriate consideration of alternative explanations. The counterargument (C92) is logical given that the key pupil-mOFC effects were observed during stable exploitation behavior. The synthesis (C94) is presented as a hypothesis rather than established fact, which is appropriate. This represents good scientific reasoning about competing interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study included 22 participants (19 in final fMRI analysis, 16 in pupil analysis after exclusions) who completed 1600 trials across two sessions. The computational model used Bayesian inference with a fixed switch probability of 1/20. fMRI data were acquired at 3T with multiband EPI. Multivariate analysis used PCA dimensionality reduction to 20 components, validated by permutation testing showing no bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C113 describe methods and validation analyses. Sample sizes are appropriate based on reported power analyses. The computational model is clearly specified (C103-C104). fMRI acquisition parameters are standard (C105-C106). The dimensionality reduction approach is justified (C107-C109) and validated with permutation testing (C110-C112) showing the method does not introduce spurious results. Methods are generally well-described and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "In the current task, state and option value are inherently interlinked because possible states correspond to which option is the high reward option. High confidence in the chosen option (low entropy) necessarily correlates strongly with that option having high expected value (r=-0.93\u00b10.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 acknowledge an important limitation of the task design where state identity and value are confounded. The authors appropriately note this correlation (C50) and discuss its implications. This represents appropriate transparency about the interpretation of their results, though it does limit the ability to dissociate state representation from value representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C95"
+    ],
+    "result": "The authors acknowledge the study was not designed to dissociate ACC's role in belief updating from other proposed functions (cognitive control, choice difficulty). They note that while ACC-noradrenaline coordination has been theoretically proposed and anatomically plausible, direct evidence during belief updating tasks has been lacking. The results suggest different mechanisms for forming versus revising beliefs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85-C87, C95 appropriately acknowledge limitations and contextualize the findings. The authors correctly note they cannot dissociate between alternative ACC theories (C83) and that their evidence is correlational rather than causal. The acknowledgment of gaps in prior literature (C87) and speculation about mechanisms (C85, C95) are appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

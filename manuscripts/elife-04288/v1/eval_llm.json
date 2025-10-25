@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Sup35 amyloid is disassembled at elevated temperatures by Hsp104. Exposure to 40\u00b0C induces quantitative [PSI+]Weak curing, while 37\u00b0C does not, correlating with changes in aggregate size and Sup35 solubilization. This curing requires Hsp104 activity, as demonstrated by GdnHCl inhibition and reduced Hsp104 levels blocking the effect. Reducing [PSI+]Strong amplification by Sup35 mutations or reduced expression also promotes curing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C31 provide converging evidence from multiple experimental approaches (temperature titrations, chemical inhibition, genetic manipulations) demonstrating that Hsp104 actively disassembles existing Sup35 amyloid at elevated temperatures. The dose-response relationships, biochemical data, and genetic requirements are internally consistent and well-documented in Figures 1-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Heat-induced protein aggregation, not chaperone expression levels, correlates with curing efficiency. While Hsp104, Ssa1/2, and Sis1 levels increase similarly at all elevated temperatures, protein aggregation varies dramatically (10% at 37\u00b0C vs 40% at 40\u00b0C), directly correlating with curing efficiency at different temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 establish through quantitative biochemical measurements that protein aggregation levels, rather than chaperone expression, correlate with curing. The differential centrifugation data (Figure 3B) and immunoblotting (Figure 3A) provide clear quantitative support for this temperature-dependent relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Hsp104 co-localizes with heat-induced protein aggregates at elevated temperature, but overexpression alone is insufficient for curing. Galactose-inducible Hsp104 overexpression to comparable levels does not induce aggregation or curing. Hsp104-GFP localizes to cytoplasmic foci at elevated temperatures, with the proportion of cells containing foci correlating with protein aggregation severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate through immunocapture, microscopy, and genetic manipulation that Hsp104 engagement with heat-induced aggregates is necessary but overexpression alone is insufficient. The data distinguish between chaperone levels and chaperone engagement, supported by Figures 3-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Hsp104 is asymmetrically retained in mother cells following thermal stress, and this asymmetric retention is required for curing. At 40\u00b0C, approximately 75% of Hsp104-GFP remains in mother cells. Disrupting asymmetric retention through BNI1 deletion or GdnHCl treatment dramatically suppresses curing from ~80% to ~10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44-C49 establish through microfluidics, genetic manipulation, and chemical inhibition that asymmetric Hsp104 retention is necessary for curing. The quantitative measurements (Figure 5A-D) and the dramatic suppression of curing upon disrupting retention (Figure 5C) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cells accumulating higher levels of Hsp104 are more efficiently cured. Mother cells experiencing elevated temperature are more likely to be cured than daughters. FACS-sorted populations show direct correlation between Hsp104-GFP accumulation and curing efficiency. Both Hsp104 asymmetric localization and enzymatic activity are required for curing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate through single-cell analysis, micromanipulation, and FACS that Hsp104 accumulation correlates with curing at the single-cell level. The requirement for both localization and activity is shown by post-stress GdnHCl treatment experiments (Figures 4-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cell-cycle stage impacts curing sensitivity, with late-stage cells more susceptible. Nocodazole-arrested cells (late stage) show ~90% curing while \u03b1-factor-arrested cells (early stage) show ~15% curing. Budded cells retain Hsp104-GFP foci through division while unbudded cells resolve foci before division. Hsp104-GFP retention is significantly reduced when unbudded cells are exposed to elevated temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 establish through cell-cycle synchronization, microfluidics, and time-lapse imaging that cell-cycle stage determines curing efficiency. The quantitative differences between arrest conditions (Figure 6F-G) and direct visualization of foci dynamics (Figure 7B-C) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C77"
+    ],
+    "result": "Cell division imposes a limitation on proteostasis capacity that can be bypassed by spatial engagement of quality control factors. Hsp104 engagement with heat-induced aggregates enhances proteostasis capacity by increasing chaperone accumulation beyond levels attainable by gene expression alone. The dynamics and balance of protein-based and cell-based contributors create niches that both allow amyloid persistence and promote clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62, C77 represent the major conceptual conclusions synthesized from the experimental data. These are well-supported by the convergence of multiple experimental approaches showing that spatial engagement and asymmetric retention overcome cell division-imposed limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Amyloid amplification, rather than thermodynamic stability, imposes the primary limitation on clearance. [PSI+]Weak (more stable, less efficiently amplified) is cured at elevated temperature while [PSI+]Strong (less stable, more efficiently amplified) is not. Reducing [PSI+]Strong amplification through Sup35 mutations or reduced expression promotes curing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 establish through comparison of prion variants and genetic manipulations that amplification kinetics, not stability, determine clearance susceptibility. The data from Figures 1-2 showing differential curing of variants and rescue of [PSI+]Strong curing by reducing amplification provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Among PQC factors, only Hsp104 is asymmetrically retained upon cell division following thermal stress, despite Hsp104, Ssa1, and Sis1 all localizing to cytoplasmic foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by microscopy data (Figure 5\u2014figure supplement 1D,E) showing differential retention patterns among chaperones. This specificity strengthens the mechanistic model by demonstrating selective retention rather than general aggregate partitioning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The dynamics of chaperone engagement with substrates, rather than simply chaperone presence, correlates with impact on proteostasis capacity. At endogenous Sup35 levels, no differences in Hsp104-GFP localization are detected between [PSI+] and [psi\u2212] strains at 30\u00b0C, but [PSI+] can become toxic upon Sup35 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 synthesize observations about substrate-chaperone dynamics. The lack of differential localization at endogenous levels (Figure 4A) and toxicity upon overexpression (cited literature) support the importance of stoichiometric balance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Hsp104 overexpression alone induces curing but through a different mechanism than thermal stress. Overexpression increases SDS-resistant Sup35 aggregate size and may involve aberrant, non-productive co-localization with Sup35 amyloid. The mode of overexpression (individual vs. network) affects Hsp104 co-localization with Sup35 amyloid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 distinguish between overexpression-induced and thermal stress-induced curing mechanisms. The aggregate size data (Figure 3\u2014figure supplement 1D) and cited literature support different mechanisms, though the exact mechanism of overexpression-induced curing remains incompletely resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Proteostasis limitations allowing chronically misfolded protein accumulation may differ between native contexts and overexpression conditions. Proteostasis regulators aimed at transitioning proteostasis landscapes to new thresholds may be the most effective interventions into amyloidosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are speculative extrapolations from the study's findings. While the data support context-dependent proteostasis limitations, the therapeutic implications remain hypothetical and would require additional validation in disease-relevant models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Metazoans lack Hsp104 but possess an alternative disaggregase system (Hsp110/Hsp70/Hsp40) that is largely ineffective against amyloid in vitro but can promote slow disassembly with small heat shock proteins. Hsp110 localizes to foci and interacts with amyloids in vivo, suggesting it might function analogously to Hsp104.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C86 review literature on metazoan disaggregase systems and speculate about functional parallels to the yeast system. While the cited literature is accurate, the speculation that Hsp110 engagement could promote activity toward amyloids (C86) lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on proteostasis networks and amyloid properties. The proteostasis network supports protein folding and can adapt to stress by elevating PQC factor expression. Many pathogenic states involve protein misfolding, and amyloids are particularly resistant to clearance due to their self-templating ability and thermodynamic stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C10 provide established background knowledge supported by appropriate citations. These contextual claims accurately represent the field's understanding of proteostasis networks and amyloid biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Literature review on chaperone overexpression and amyloid clearance. Chaperone overexpression reduces proteotoxicity in multiple model systems, but existing protein has not been demonstrated to transition from amyloid to non-amyloid forms. Mechanisms typically involve inhibition of assembly rather than disassembly. Amyloid resolution is biochemically feasible in vitro and can occur in vivo under conditions reducing amyloid amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 accurately review prior literature with appropriate citations. The critical assessment that existing protein transitions have not been demonstrated (C12) provides important context for the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on [PSI+] prion biology and prior observations. [PSI+] is the amyloid form of Sup35 that propagates faithfully under normal conditions but becomes destabilized at elevated temperatures in a conformation-specific manner. Prior work linked [PSI+]Weak curing to Hsp104 inhibition, but these studies used stationary phase cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 provide accurate background on the [PSI+] system with appropriate citations. The identification of potential confounds in prior work (stationary phase effects, C22) provides important justification for revisiting the phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Background on spatial organization of protein quality control. Spatial engagement of PQC factors is a newly appreciated aspect of their function. Various cytoplasmic foci arise in response to stressors. Protein aggregates have been linked to reduced lifespan and proteostasis collapse through chaperone sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C63-C64 provide accurate background on spatial quality control with appropriate citations. These contextual claims frame the significance of the spatial engagement findings.",
+    "result_type": "MINOR"
+  }
+]

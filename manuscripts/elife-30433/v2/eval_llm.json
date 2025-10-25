@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "LAST is a c-Myc-inducible long noncoding RNA. The lncRNA LAST (lncRNA-52) is approximately 700 nt in length, predominantly localized in the cytosol, and is transcriptionally activated by c-Myc through binding sites BS2 and BS3 in its promoter region. LAST expression is positively correlated with c-Myc levels and is higher in tumor cells compared to normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 provide converging evidence from multiple experimental approaches (microarray, northern blot, FISH, subcellular fractionation, ChIP, and luciferase assays) demonstrating that LAST is a c-Myc-regulated lncRNA. The data are internally consistent and use appropriate controls (e.g., mutant binding sites, doxycycline treatment).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "LAST promotes G1/S phase transition by specifically regulating cyclin D1/CCND1 expression. Knockdown of LAST causes G1 arrest with decreased S and G2/M phase cells, and specifically reduces CCND1 mRNA and cyclin D1 protein levels without affecting other cyclins, CDKs, or c-Myc. LAST does not affect adjacent genes DHCR7 and NADSYN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 demonstrate specificity of LAST's effect on CCND1 through flow cytometry, RT-PCR, and western blot analyses. The inclusion of multiple cell cycle regulators as controls and testing of adjacent genes strengthens the conclusion. Rescue experiments (C2\u2014figure supplement 1D-E) further validate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "LAST post-transcriptionally regulates CCND1 mRNA stability. LAST knockdown does not affect CCND1 pre-mRNA levels but reduces mature mRNA levels and decreases CCND1 mRNA half-life from 5 to 3 hours, while LAST overexpression increases half-life from 5 to 9 hours. LAST associates with CCND1 mRNA without complementary base pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 use appropriate methods (intron/exon-specific primers, actinomycin D chase, RNA pull-down) to distinguish transcriptional from post-transcriptional regulation. The bidirectional effects (knockdown vs. overexpression) and lack of complementarity suggest a protein-mediated mechanism, setting up the next result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CNBP acts as a mediator bridging LAST and CCND1 mRNA to regulate CCND1 stability. CNBP was identified by mass spectrometry as a LAST-binding protein and shown to interact with both LAST and CCND1 mRNA. CNBP depletion reduces CCND1 mRNA stability and abolishes LAST's effect on CCND1, while LAST depletion does not change CNBP levels but reduces CNBP-CCND1 mRNA association. The CNBP-mediated stabilization occurs in the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C57 provide comprehensive evidence for CNBP's mediator role through multiple complementary approaches (mass spec, pull-down, RIP, subcellular fractionation, epistasis experiments). The demonstration that LAST requires CNBP (C51) and that LAST affects CNBP-CCND1 association without changing CNBP levels (C53-C56) strongly supports the bridging model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "LAST and CNBP bind to the 5'UTR of CCND1 mRNA to enhance its stability. Mapping experiments show that LAST and CNBP bind the 5'UTR but not 3'UTR of CCND1 mRNA. The 5'UTR is required for LAST/CNBP-mediated stabilization, as demonstrated by half-life experiments with constructs lacking or containing the 5'UTR. Sequential immunoprecipitation confirms formation of a ternary complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 use deletion mapping, RIP-seq, and sequential IP to precisely localize the binding site and demonstrate ternary complex formation. The functional validation with 5'UTR deletion constructs (C60-C61) directly tests the requirement of this region for stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "LAST and CCND1 mRNA interact with CNBP through G-rich motifs containing the GGAG core. Bioinformatic analysis shows ~60% of CNBP-enriched sequences contain GGAG motifs and >90% contain GGR motifs. EMSA demonstrates that CNBP binds G-rich-1 and G-rich-2 in CCND1 5'UTR and G-rich-A, C, D, F (but not B or E) in LAST, all containing GGAG cores. Mutation of all four GGAG motifs in LAST abolishes its effect on CCND1, while single mutations retain function. Domain mapping shows LAST binds CNBP domain 3 while CCND1 5'UTR binds domains 2+3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 provide detailed molecular characterization through bioinformatics, EMSA, mutagenesis, and domain mapping. The mutagenesis experiments (C72-C73) demonstrate functional redundancy among GGAG motifs and validate the binding specificity observed in EMSA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "LAST and CNBP regulate the stability of additional mRNAs beyond CCND1. Integration of LAST knockdown RNA-seq and CNBP RIP-seq identified 225 overlapping genes, narrowed to 75 high-confidence targets. Three mRNAs (SOX9, NFE2L1, PDF) were experimentally validated, showing decreased levels upon LAST or CNBP depletion and altered half-lives in response to LAST manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 use unbiased transcriptome-wide approaches followed by targeted validation. The convergence of two independent datasets (RNA-seq and RIP-seq) and experimental confirmation of multiple targets supports the generalizability of the LAST/CNBP mechanism beyond CCND1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "LAST promotes tumorigenesis. Xenograft experiments show LAST knockdown reduces tumor formation while LAST overexpression enhances it. TCGA analysis reveals elevated LAST and CCND1 expression in multiple tumor types compared to normal tissues. RNA-seq of LAST-depleted cells shows downregulation of 667 genes enriched in tumorigenesis-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 combine functional in vivo data (xenografts) with clinical correlations (TCGA) and mechanistic insights (pathway analysis). The bidirectional xenograft results and consistent elevation in multiple cancer types support the oncogenic role, though the lack of correlation between LAST and CCND1 expression in tumors (C106) and survival differences (C107) suggest complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Despite elevated expression in tumors, there is no correlation between LAST and CCND1 expression levels across 15 tumor types, and no survival differences between high and low LAST or CCND1 expression groups. This suggests CCND1 regulation is more complex than anticipated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 report negative findings from TCGA analysis that complicate the simple model. These are appropriately reported and interpreted as indicating additional regulatory complexity. The lack of correlation may reflect tissue-specific regulation, additional LAST targets, or other confounding factors in clinical samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "LAST regulates CCND1 in trans rather than in cis. Although LAST and CCND1 are both on chromosome 11, they are 1.8 Mb apart with separate c-Myc-responsive promoters. LAST requires CNBP to affect CCND1, and the long distance precludes direct interaction, indicating trans regulation rather than cis regulation of a neighboring gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 address an important mechanistic question about cis vs. trans regulation. The evidence that LAST requires CNBP (C118), doesn't affect adjacent genes (C30), and acts on the mature cytoplasmic mRNA rather than nascent transcripts supports trans regulation. The conclusion that co-localization is random (C120) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The proposed mechanism is that LAST interacts with CNBP to be guided to the 5'UTR of CCND1 mRNA, stabilizing it and ensuring cell cycle progression. LAST dysregulation destabilizes CCND1 mRNA, decreasing cyclin D1 and causing G1/S arrest. This represents a novel mechanism for CCND1 mRNA regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 synthesize the experimental findings into a coherent model. The mechanism is well-supported by the collective evidence from binding studies, stability assays, epistasis experiments, and functional analyses. The novelty claim (C123) is justified as this 5'UTR protection mechanism by lncRNA-protein complexes is distinct from previously described regulatory modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The lack of sequence similarity between human LAST and mouse transcripts precludes using mouse c-Myc-driven tumor models to study LAST function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by sequence comparison data (Figure 6I) and represents an important limitation. This is a common issue with lncRNAs, which often show poor sequence conservation. The authors appropriately acknowledge this constraint on future mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C40",
+      "C41",
+      "C65",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background and context claims about c-Myc, cyclin D1, CCND1 regulation, lncRNAs, and CNBP function based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7-C10, C40-C41, C65, C91-C102, C109-C110, C112-C113, C125-C134 represent established knowledge from cited literature. These provide appropriate context for the study. The citations appear relevant and the claims accurately represent general knowledge in the field, though individual citations were not verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Summary claims from abstract stating main findings: LAST is a c-Myc-inducible lncRNA that cooperates with CNBP to stabilize CCND1 mRNA via 5'UTR binding, also regulates other mRNAs (SOX9, NFE2L1, PDF), and has oncogenic function in xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C6 are high-level summaries of the main findings detailed in other claim groups. These are well-supported by the comprehensive experimental evidence presented throughout the manuscript, as evaluated in the other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "LAST depletion causes G1/S arrest due to decreased cyclin D1 and attenuates tumor growth. LAST could be a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 summarize findings supported by cell cycle analysis and xenograft data. Claim C105 about therapeutic potential is appropriately framed as speculative ('could be') and represents a reasonable extrapolation from the oncogenic function demonstrated, though it would require extensive additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "CNBP guides LAST to bind the 5'UTR of CCND1 mRNA, acting as a mediator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a summary statement of the mechanism supported by the detailed evidence in claims C39-C57 and C58-C64. The 'guiding' language appropriately describes the bridging function demonstrated experimentally.",
+    "result_type": "MAJOR"
+  }
+]

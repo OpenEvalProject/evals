@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors developed a minimal actin cortex (MAC) system consisting of biotinylated actin filaments coupled to a supported lipid bilayer via neutravidin bonds, with controllable actin density achieved by varying biotinylated lipid concentration. Synthetic myofilaments were assembled from rabbit muscle myosin II with typical lengths of 500-600 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C77-C79 describe the experimental system design with clear methodological details. The MAC system is well-characterized with appropriate controls for actin density (Figure 1B) and myofilament length measurements via AFM (Figure 1C). The experimental design is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C75"
+    ],
+    "result": "Addition of myofilaments to MACs resulted in dynamic actin rearrangement and actomyosin foci formation in an ATP-dependent manner, occurring specifically at ATP concentrations between 0.1-1 \u00b5M (94% of experiments, n=45) but absent at higher or lower concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C75 are well-supported by systematic experimental observations across multiple conditions (Table 1, Figure 1D). The ATP concentration dependence is clearly demonstrated with adequate sample size (n=45) and high reproducibility (94%). The use of ATP regeneration systems ensures constant ATP levels during experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "In low-density MACs, myofilaments caused actin filament breakage and compaction, with fluorescence intensity approximately doubling at breakage sites, indicating that fragments are dragged along remaining filaments. This fragmentation and compaction contributes to coalescence of actin into foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by direct experimental observations (Figure 2, Movies 2-3) across all experiments (n=21). The fluorescence intensity measurements provide quantitative evidence for fragment compaction. However, the mechanistic link to foci formation (C16) is somewhat inferential, though reasonably supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Single-molecule experiments revealed that individual myofilaments exhibit processive directed movement along actin filaments and cause fragmentation specifically at low ATP concentrations (0.1-1 \u00b5M). At low ATP, myofilament trajectories were longer (n=681 with dwell time >900 ms) compared to high ATP (n=102), indicating increased processivity. At high ATP concentrations, processive movement was barely visible and fragmentation was absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 and C54-C58 are well-supported by single-molecule tracking data (Figures 3, 5, Movies 4-5). The quantitative comparison of trajectory lengths and dwell times provides strong evidence for ATP-dependent processivity. The correlation between velocity fluctuations and fluorescence intensity increases (C21) is demonstrated but the temporal resolution may limit precise determination of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors propose a mechanism where the leading end of the myofilament walks processively toward the actin plus end while the trailing end (separated by a 160 nm bare zone) moves much slower, creating tension within the myofilament. This tension is transferred as compressive force to the actin filament, causing buckling and breakage. After breakage, the leading end drags the broken fragment along the remaining filament.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 present a mechanistic model supported by experimental observations (velocity-fluorescence correlations in C21-C22) and established structural knowledge (C23-C26 from literature). The model is internally consistent and explains the observed phenomena. However, direct visualization of the proposed tension buildup is not provided, making some aspects inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C72"
+    ],
+    "result": "Computational modeling using established physical parameters (actin bending rigidity EI=60 nN\u00b7\u00b5m\u00b2, bare zone length 160 nm) calculated that 23 pN force is needed to buckle actin filaments. Simulations showed this force can be reached at ATP concentrations \u22643 \u00b5M with 30 myosin heads, with force increasing as ATP concentration decreases and myosin head number increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 and C72 are supported by computational simulations using well-established physical parameters from literature (C31, C70, C71). The force calculation (C32) follows standard buckling theory (Euler buckling formula). The simulations systematically explore parameter space (Figure 4A, 7A-C) and results are consistent with experimental observations of ATP-dependent fragmentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The computational model assumes myosin heads undergo a six-state biochemical cycle with 5 nm step size, with leading end heads always stepping and trailing end heads either not stepping (pst=0) or stepping with probability 0.1. Model parameters include 30 interacting heads per myofilament (calculated from 560 nm median length, 160 nm bare zone, and structural data) and myosin head stiffness \u03ba=1 pN/nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 describe model parameters and assumptions based on established literature values and reasonable structural calculations. The six-state cycle (C60) is standard for myosin. The estimate of 30 interacting heads (C69) involves several assumptions about head orientation but is transparently derived from structural data. The differential stepping probability (C62-C63) is the key novel assumption, justified by literature on trailing end behavior (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The modeling demonstrates that single myofilaments can generate sufficient force to break actin filaments without requiring attachment to rigid supports, with forces acting within the myofilament itself. The membrane provides planar confinement through increased viscosity rather than rigid tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C43-C48 present key conclusions from the modeling work. The simulations successfully demonstrate force generation sufficient for breakage (C44) using literature-derived parameters (C43). The conclusion that rigid attachment is unnecessary (C45) is well-supported by the model mechanics. The interpretation of membrane role (C47-C48) is reasonable though the effective viscosity is not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Simulations showed that myofilament velocity increased approximately linearly with ATP concentration below 100 \u00b5M, independent of myosin head number or actin bending. The fraction of attached myosin heads increased with decreasing ATP concentration, also independent of head number and bending.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by simulation results (Figure 6A-B). The linear velocity-ATP relationship is consistent with standard myosin kinetics in the low ATP regime. The independence from head number and bending conditions strengthens the conclusions. These results align with experimental observations of ATP-dependent processivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C55",
+      "C59"
+    ],
+    "result": "Skeletal muscle myosin II has lower duty ratio than non-muscle myosin, but lowering ATP concentration increases duty ratio and processivity by increasing duration of the actin-bound post-working stroke state. This increased processivity is necessary for processive movement and is a prerequisite for fragmentation and compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C55 are supported by established literature and experimental observations (Figure 5, Movie 5). The mechanistic explanation (C55) is well-established. Claim C59 proposes that increased processivity is necessary for fragmentation, which is supported by the correlation between low ATP (high processivity) and fragmentation occurrence, though direct causality is not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42"
+    ],
+    "result": "While physiological ATP concentrations are typically millimolar, ATP levels vary significantly in living cells. The authors speculate that in vivo, myofilament processivity may be controlled by phosphorylation of myosin light chains, which could shift the observed behavior to higher physiological ATP concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 cite literature on ATP levels but highlight a tension between the low ATP concentrations required in vitro (0.1-1 \u00b5M) and typical cellular ATP levels (millimolar). Claim C42 is explicitly speculative about phosphorylation control. While the speculation is reasonable and cited, no experimental evidence is provided to bridge this gap, leaving the physiological relevance uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Synthetic myofilaments fragment and compact membrane-bound actin while processively moving along filaments. The proposed mechanism involves tension buildup between myofilament ends resulting in compressive stress that causes actin buckling and breakage. Modeling revealed single myofilaments can generate sufficient force (~20 pN) for this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 summarize the main findings. C2 is directly supported by experimental observations throughout the manuscript. C3 presents the proposed mechanism supported by both experimental correlations and modeling. C4 is supported by computational simulations using established parameters. Together these claims represent the core contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose that this mechanism of filament fragmentation and compaction may contribute to actin turnover and cortex reorganization during cytokinesis, and may explain pattern formation in other in vitro actomyosin systems. They suggest it could serve as a general mechanism for actin turnover and cortex remodeling, noting that myosin II-dependent actin bundle breakage occurs in neuronal growth cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C49, and C51 are explicitly speculative about biological relevance and generalizability. While C50 cites in vivo evidence of myosin II-dependent breakage, no direct experiments connect the in vitro mechanism to cellular processes. The speculation is reasonable and well-motivated, but lacks experimental validation in cellular contexts or with non-muscle myosin II.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6"
+    ],
+    "result": "Cell cortex remodeling during cell division results from myofilament-driven contractility of the cortical membrane-bound actin meshwork. The actin cortex consists of a thin actin meshwork bound to the inner cytosolic face of the plasma membrane by various anchor proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C6 present established background knowledge about the actin cortex and its role in cell division. These are well-supported by the broader literature and provide appropriate context for the study. They are not novel findings of this work but rather motivate the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C52",
+      "C53",
+      "C76"
+    ],
+    "result": "At low ATP concentrations, myofilaments function as active temporary crosslinkers that may drive actin self-assembly into clusters. Single muscle myosin II motors are traditionally non-processive, but assembling them into filaments makes them processive through coupling of multiple myosin heads. Actin structure formation after ATP depletion has been reported in solution-based experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C52-C53, and C76 cite established knowledge and prior work. C13 references predictions from Smith et al. 2007. C52-C53 describe well-established myosin motor properties. C76 provides relevant context from prior studies. These claims appropriately position the current work within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Actin filaments have a persistence length of 15 \u00b5m (corresponding to bending rigidity EI=60 nN\u00b7\u00b5m\u00b2) and break when the radius of curvature decreases below 0.18 \u00b5m (curvature 5.6 \u00b5m\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 cite well-established physical properties of actin filaments from literature (Yanagida et al. 1984; Arai et al. 1999). These values are standard in the field and appropriately used as model parameters. The relationship between persistence length and bending rigidity is correctly stated.",
+    "result_type": "MINOR"
+  }
+]

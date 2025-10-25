@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors demonstrate that rat position can be decoded from ACC ensemble activity with high spatial resolution (~10 cm accuracy) using a deep artificial neural network, which outperformed Bayesian methods by 36%. This fine-grained decoding is much more precise than the broad spatial tuning of individual ACC neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged the finding as 'quite remarkable' but raised concerns about its robustness. Reviewer 3 questioned whether the precision might be an artifact of data preprocessing (smoothing with 150ms kernel), stating 'the precise spatial encoding may instead be an artifact of how the spiking data was pre-processed' and requested analysis with raw binned data. Reviewers also questioned whether decoding would be as good 'in the absence of feeders or on a much larger maze' and requested lap-by-lap decoding analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C64"
+    ],
+    "result": "The decoded position normally tracked the rat's actual position, but sometimes exhibited large excursions (up to ~100 cm) that occurred almost exclusively at the two choice feeders. These excursions consisted of several consecutive time points encoding the alternate target feeder location before returning to the rat's actual position.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed significant concerns about whether excursions represent genuine neural phenomena or decoding artifacts. The main critique (1a, 1 overall) was that 'the authors have not done sufficient work to demonstrate that the teleportation effect is not an artifact of decoding errors given the way the cells respond around the feeders.' Reviewers noted that 'predictions are worse around the feeders' and that 'given these properties of the neurons, the most common type of decoding error around a feeder will be the other feeder location.' This concern persisted through multiple review rounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C65"
+    ],
+    "result": "Multiple analyses were performed to demonstrate that the two feeder locations have statistically different ensemble patterns. LDA showed distinct clusters for each feeder, noise addition did not reduce feeder classification accuracy, and ROC analysis showed high discrimination (AUC=0.94) between excursions and non-excursions at the same feeder.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly rejected these analyses as insufficient. Reviewer 3 stated 'LDA finds the most discriminating axes and since the authors showed that the networks strongly encode spatial information, LDA presumably separated the 3 feeder locations based on location-related activity. The LDA figure is therefore just another demonstration of what they already showed.' The reviewer emphasized that 'the two feeder locations are different in that they have different x-y values but similar in that they both deliver reward and the neurons encode both sources of information,' and the analyses did not adequately parse spatial from reward-related signals. In the final round, reviewers requested softening language about lack of similarity, noting 'these analyses do not provide evidence that the excursions are not due to similarity at the feeders.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Excursions recruited activation of neurons encoding choice and reward information. Analysis revealed that 30% of cells were predictive of reward and 36% were predictive of choice, with some of these cells activating during excursion events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this finding directly. The observation that reward and choice encoding cells activate during excursions was accepted, though reviewers used this to argue that excursions might reflect multiplexed reward and spatial signals rather than pure spatial shifts. This finding was incorporated into the reviewers' critique that 'if single neurons or the network as a whole encodes both spatial and reward information, the dNN will learn this.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The likelihood of excursions at a feeder was strongly inversely correlated with feeder preference (r\u00b2=0.86, p=0.002). Excursions were much more likely when rats were forced to select or chose the less-preferred feeder.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 requested clarification about behavioral performance and how preference was measured, asking 'what is the feeder (as in preference for the feeder in free-choice trials on the x-axis in 4A)?' and noting confusion about sessions with very strong/weak preferences. Reviewer 3 raised concerns about whether 'the neurons and the dNN had the same exposure to the two feeders' which could affect the validity of Figure 4A. While the correlation itself was not directly challenged, its interpretation remained unclear to reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C101"
+    ],
+    "result": "Excursions did not occur at the center feeder, even though it delivered the same reward type. This selective occurrence at choice feeders suggests the phenomenon is related to evaluating choice options rather than general reward properties or planning the next action.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted this observation but questioned its interpretation. Reviewer 1 pointed out that 'there is mention of a central feeder, but I couldn't find a description of how much reward was delivered there or even whether it was delivered on every trial,' which is 'important as those control analyses rely on this feeder being an equivalently salient location.' In the final round, reviewers explicitly requested 'some discussion about why there are no excursions to the central feeder on non-preferred trials,' indicating the finding required better explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Excursion events had a median duration of 400 ms (20 consecutive 20ms bins) and occurred almost exclusively while the animal was stationary at feeders, mostly after reinforcement and prior to locomotion away from the feeder.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these temporal characteristics of excursions. The timing and duration measurements were accepted as descriptive features of the phenomenon, though the interpretation of what these excursions represent remained contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The decoder was robust to moderate spike timing noise. Adding jitter (mean 25ms) to spike times increased decoding error by only 1.3% (0.14 cm), with only 0.07% of samples deviating more than 25 cm from original decoding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 explicitly questioned the value of these noise controls, stating 'the noise procedures are of limited value since any information on this timescale is completely occluded by the pre-processing' and noting 'it begs the question of how much noise is useful to make the point? Too much and all decoding would break down, too little and the dNN would be robust to it.' The reviewer argued these controls did not address the fundamental concern about whether excursions reflect artifact or genuine neural shifts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C66",
+      "C78",
+      "C83",
+      "C84",
+      "C100"
+    ],
+    "result": "The authors propose that excursions represent mental navigation of a schematic world model organized around spatial position, used to evaluate real or fictive choice outcomes. The multiplexing of position with choice-related information forms a mental model isomorphic with task space that can be mentally navigated to recall multimodal information about remote locations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers were critical of the interpretive framework. Reviewer 1 stated 'I felt the framing of the whole paper was unnecessarily hyperbolic' and criticized the emphasis on 'regret' and 'regretful situations,' noting it 'really isn't supported by any rigorous evidence. Just because the effect occurs on free choice trials when they choose the on average less preferred option does not automatically confer that the rats must be regretting the choice.' However, the reviewer also noted 'the basic effect \u2013 of representing a potential alternative outcome at the time of reward collection \u2013 is very neat and fits well with the wider literature.' The theoretical interpretation remained speculative and not fully supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The spatial information encoded by ACC is stable within a session despite changes in effort and reward contingencies, as shown by similar decoding errors between interleaved versus sequential trial training/testing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this stability finding. The analysis showing no significant difference in decoding errors (0.6 cm change, t6=1.28, p=0.24) between training/testing schemes was accepted as evidence for within-session stability of spatial encoding.",
+    "result_type": "MINOR"
+  }
+]

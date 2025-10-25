@@ -1,0 +1,2854 @@
+{
+  "submission": {
+    "id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:08:38.825267Z",
+    "updated_at": "2025-10-25T01:08:38.825267Z"
+  },
+  "content": [
+    {
+      "id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "content_type": "manuscript",
+      "content_text": "# Modes of flagellar assembly in Chlamydomonas reinhardtii and Trypanosoma brucei\n\n## Authors\n\n- Johanna L H\u00f6\u00f6g<sup>1</sup> \u2020\n- Sylvain Lacomble<sup>1</sup>\n- Eileen T O\u2019Toole<sup>2</sup>\n- Andreas Hoenger<sup>2</sup>\n- J Richard McIntosh<sup>2</sup>\n- Keith Gull<sup>1</sup>\n\n### Affiliations\n\n1. Sir William Dunn School of Pathology University of Oxford Oxford United Kingdom\n2. The Boulder Laboratory for 3D Electron Microscopy of Cells, Department of MCD Biology University of Colorado Boulder Boulder United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.01479.001 Defects in flagella growth are related to a number of human diseases. Central to flagellar growth is the organization of microtubules that polymerize from basal bodies to form the axoneme, which consists of hundreds of proteins. Flagella exist in all eukaryotic phyla, but neither the mechanism by which flagella grow nor the conservation of this process in evolution are known. Here, we study how protein complexes assemble onto the growing axoneme tip using (cryo) electron tomography. In Chlamydomonas reinhardtii microtubules and associated proteins are added simultaneously. However, in Trypanosoma brucei , disorganized arrays of microtubules are arranged into the axoneme structure by the later addition of preformed protein complexes. Post assembly, the T. brucei transition zone alters structure and its association with the central pair loosens. We conclude that there are multiple ways to form a flagellum and that species-specific structural knowledge is critical before evaluating flagellar defects. DOI: http://dx.doi.org/10.7554/eLife.01479.001\n\n## Introduction\n\nMost vertebrate cells have a cilium or flagellum (the terms are used here interchangeable). It is a thin, microtubule-containing, membrane-covered extension on the surface of the cell, which may generate cell motility and/or act as a sensory and signaling organelle. Defects in cilia and flagella can cause severe human diseases for example skeletal deformations, polycystic kidney disease, infertility, situs invertus, blindness, obesity, and even cancer (Escudier et al., 2009; Chandok, 2012; Huber and Cormier-Daire, 2012; Li et al., 2012). A collective name for these conditions is the \u2018ciliopathies\u2019 (Fliegauf et al., 2007). Some ciliopathies, such as primary ciliary dyskinesia, are diagnosed by ultrastructural investigations of cilia that should be motile (Chandok, 2012; Chilvers et al., 2003; Escudier et al., 2009; Huber and Cormier-Daire, 2012; Li et al., 2012; O\u2019Toole et al., 2012). However, the ultrastructural pathology of many ciliopathies remains unknown.\n\nEach flagellum consists of \u223c1000 different proteins (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig1-v1.jpg)\n\n**Figure 1.:** (A) A 20 nm tomographic slice showing a new T. brucei flagellum attached to the old flagellum. (B) A schematic of the picture in A describing the relevant regions of the flagellum. (C\u2013G) Tomographic slices (20 nm thick) showing distal tips of flagella in different stages of the cell cycle. (C) T. brucei old flagellum, (D) T. brucei short flagellum, (E) T. brucei long flagellum, (F) C. reinhardtii short flagellum, and (G) C. reinhardtii long flagellum. (C\u2032\u2013G\u2032) 3D models of flagella in the same cell cycle stage as in C\u2013G, showing the axoneme with A-tubules in pink, B-tubules in dark blue and central pair in green. Flagellar membrane is shown in transparent pink.DOI: http://dx.doi.org/10.7554/eLife.01479.003\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** T. brucei tips, all showing disordered axonemes (20 nm thick tomography slices).DOI: http://dx.doi.org/10.7554/eLife.01479.004\n\nIn most multicellular organisms, the cilium is produced after the cell has exited the cell cycle, but in many protozoan flagellates, new flagella must be built to maintain motility in daughter cells (Ginger et al., 2008; Dawson and House, 2010). Flagellar elongation occurs by addition of protein subunits at the axoneme\u2019s distal end (Rosenbaum and Child, 1967; Marshall, 2001). Large protein complexes containing the precursor axoneme building blocks are delivered to this site via an evolutionary conserved process called intraflagellar transport (IFT; [Kozminski et al., 1993]). The roles of IFT in ciliary function are well studied (Pedersen and Rosenbaum, 2008), and the molecular mechanisms that mediate IFT of axonemal proteins are beginning to be characterized (Bhogaraju et al., 2013). The structure of the flagellar tip has been characterized; the B-tubule ends before the A-tubule creating a distal \u2018singlet region\u2019 in the flagellum tip of most species (Ringo, 1967; Satir, 1968; Sale and Satir, 1976; Woolley and Nickels, 1985); the CPs extend further into the distal tip than the dMTs (Ringo, 1967); the dMTs and CPs are linked to the membrane through capping structures (Dentler, 1980; Woolley et al., 2006). Yet, we know very little about how the flagellar components, once delivered to the distal tip, are assembled to form the beating flagellum (Ishikawa and Marshall, 2011; Fisch and Dupuis-Williams, 2012). For example, does the CP extend beyond the dMTs during tip growth, like in the mature flagellum, or is the growth of all MTs synchronized? Alternatively do the dMTs extend beyond the CP during flagellar extension? When do other structural modules such as radial spokes, dynein arms, and central pair projections get incorporated? Clearly, there are multiple possibilities for how a flagellum might extend.\n\nWe have examined two evolutionary distant organisms, the green algae Chlamydomonas reinhardtii and the parasitic protozoa Trypanosoma brucei, to determine if a consistent pattern of flagellar extension exists. By studying the tips of their growing flagella and their basal plate region, we reveal two separate assembly pathways of flagella extension and maturation.\n\n## Results\n\n## Surprising microtubule arrangements at the flagellar tip\n\nTo elucidate the pathways for axoneme elongation, we used electron tomography to examine the tips of actively growing flagella in two organisms, just when the flagella have started growing (at \u223c0.7\u20131.5 \u03bcm), and after a period of flagellar growth (at 4\u201310 \u03bcm; Table 1). C. reinhardtii has two flagella that are reabsorbed down to their transition zones, which are then expelled prior to mitosis (Rasi et al., 2009; Parker et al., 2010). After mitosis, the small daughter cells remain within the wall of the mother cell where they regrow their flagella; a cell stage we easily identified in the electron microscope. In T. brucei the new flagellum starts growing midway through the cell cycle (Sherwin and Gull, 1989). Its tip is attached to the side of the old flagellum by a structure called the flagella connector (Moreira-Leite, 2001; Briggs, 2004; Davidge, 2006). The relative positions of a cell\u2019s two flagella allow an unambiguous identification of which flagellum is old and which is new (Figure 1A,B). Throughout the rest of the cell cycle, the length of the new flagellum correlates with cell cycle progression.10.7554/eLife.01479.005Table 1.Sample size of each species/cell cycle stageDOI: http://dx.doi.org/10.7554/eLife.01479.005Flagellum typeN (flagella tips reconstructed)T. bruceiOld6Short5Long HPF10Long chemical fixed2C. reinhardtiiShort4Long4\n\n3D electron tomographic reconstructions of flagellar tips were made of old T. brucei flagella (slowly growing or of constant length; Video 1) (Davidge, 2006; Farr and Gull, 2009), and growing new flagella that were short or long (Videos 2 and 3). Comparable images of new growing flagella that were short or long were also obtained from C. reinhardtii (Videos 4 and 5). The axoneme in all flagellar tips studied, except the T. brucei growing long flagella, displayed the regular spacing of dMTs found in the rest of the flagellum (Figure 1C,D,F,G, Figure 1\u2014figure supplement 1). In contrast, the growing long T. brucei flagellar tips showed a disorganized array of dMTs (Figure 1E); some dMTs lay very close to the CPs. The axoneme structure is revealed in 3D models of each of the tips (Figure 1C\u2032\u2013G\u2032, Videos 6\u201310). The disorganized microtubules at the tips of growing flagella in T. brucei indicate that the mechanism of axonemal growth in long flagella is different in this species from that seen in C. reinhardtii, so we investigated the structure of growing flagella further.10.7554/eLife.01479.006Video 1.Old T. brucei flagellum tip (related to Figure 1).1-nm thick sections of a tomogram reconstruction containing the distal tip. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.00610.7554/eLife.01479.007Video 2.Growing short T. brucei flagellum tip (related to Figure 1).1-nm thick sections of a tomogram reconstruction containing the distal tip. Please also note the just formed basal plate. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.00710.7554/eLife.01479.008Video 3.Disordered long growing T. brucei flagellum tip (related to Figure 1).1-nm thick sections of a tomogram reconstruction containing the distal tip. Note the bent doublet microtubules and the absence of electron-dense structures associated with the central pair. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.00810.7554/eLife.01479.009Video 4.Short growing Chlamydomonas reinhardtii flagellum tip (related to Figure 1).Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.00910.7554/eLife.01479.010Video 5.Long growing Chlamydomonas reinhardtii flagellum tip (related to Figure 1).Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.01010.7554/eLife.01479.011Video 6.3D model of the microtubules found in an old T. brucei flagellum tip (related to Figure 1).Model was made by drawing lines in the microtubules and around membranes as seen in a tomogram reconstruction of the old T. brucei flagellum tip (Video 1). The lines were then provided with a skin through a meshing process. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.01110.7554/eLife.01479.012Video 7.3D model of the microtubules found in a short growing T. brucei flagellum tip (related to Figure 1).Model is a segmentation from the tomogram, Video 2. The tomogram reconstruction contained the most of the flagellum tip, but cropped off some the axoneme shortly proximal to it and one dMT was not found within the reconstruction (missing in the model). Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.01210.7554/eLife.01479.013Video 8.3D model of the disordered microtubules found in a growing T. brucei flagellum tip (related to Figure 1).Note that some doublet microtubules are in contact with the flagella membrane. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.01310.7554/eLife.01479.014Video 9.3D model of a short growing C. reinhardtii flagellum (related to Figure 1).Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.01410.7554/eLife.01479.015Video 10.3D model of a long growing C. reinhardtii flagellum (related to Figure 1).Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.015\n\n## Missing axoneme-associated structures at the growing tip of T. brucei flagella\n\nThe structural disorder in growing long new flagella of\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig2-v1.jpg)\n\n**Figure 2.:** T. brucei flagella.(A) 3D model of a tomographic reconstruction of a growing, long T. brucei axoneme. The doublets are color coded in a gradient from yellow (dMT1) to red (dMT9). (B) A cut through of the 3D model shows that (1) at the end of the flagellum, the circular arrangement of the MTs is completely lost, (2) <0.5 \u03bcm before the flagella tip, the MTs start losing their circular organization, and (3) >0.5 \u03bcm from its tip the axoneme is well organized. (C) Individual traces of the nine dMTs in A reveals them bending both toward and away from the CP. dMTs not touching the membrane also showed this random bending (e.g., dMTs 2 and 5) (D) CP projections are arranged as an electron-dense ladder (arrows) extending from the central pair. (E) In the tip of the T. brucei old flagellum the associated structural proteins are visible all the way to the tip. In the longitudinal view, we see the distal end that then curves and the final 200 nm is shown in cross-sectional view (insert). (F) Central pair projections are clearly seen all the way to the end of the central pair in the short growing T. brucei flagellum. (G) In the T. brucei long growing flagellum such associated proteins are not visible (red arrows). (H) The structural proteins are clearly visible along the length of a mature C. reinhardtii flagellum. (I and J) In the growing short C. reinhardtii flagellum, these proteins were also present at the axoneme\u2019s tip, indicating that microtubules and associated structures are simultaneously assembled.DOI: http://dx.doi.org/10.7554/eLife.01479.016\n\nThe disorder seen in the growing T. brucei axoneme could be explained by a transient lack of MT-associated structures that are present in the mature axoneme, for example the radial spoke complex, CP projections and/or nexin links. Central pair projections display a ladder-like arrangement along the length of the mature T. brucei flagellum (Figure 2D), and in all the distal flagella tips (Figure 2E,F,H\u2013J) except for in the growing T. brucei long flagellum tip (Figure 2G), where the associated complexes were not visible. Therefore, although we have a relatively small sample size (Table 2), we suggest that during the elongation of a T. brucei flagellum, the microtubules extend beyond the position of the associated proteins, and hence the final structures are added to the already formed but disorganized axonemal tip.10.7554/eLife.01479.017Table 2.Distances between the axonemal microtubules and the flagellar membraneDOI: http://dx.doi.org/10.7554/eLife.01479.017Flagellum typeN (A/B-tubule and CPs)Average MT-membrane distance (nm)Range: MT-membrane distance (nm)T. bruceiOld4826 \u00b1 99\u201354Short5494 \u00b1 2735\u2013160Long4750 \u00b1 370\u2013157C. reinhardtiiShort6077 \u00b1 3233\u2013214Long6097 \u00b1 4742\u2013230\n\n## Axonemal microtubule and flagellar membrane extension\n\nWe investigated whether the plus ends of axonemal MTs pushed against the flagellar membrane as they grew. The 3D nature of our data allowed the quantification of microtubule end distances to the nearest flagellar tip membrane. The reconstructions of old\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig3-v1.jpg)\n\n**Figure 3.:** (A) The distance between the dMTs/CP MT plus ends and the closest flagellar tip membrane was measured in flagella of each cell cycle stage/species. These properties are represented here as box plots in which the mean value is identified by a dotted horizontal line, the median value by a line, the 25\u201375% percentile by the height of the box, and the horizontal bars outside the box include the 5th and the 95th percentile. Only in T. brucei long new flagellum (LNF) were the microtubules touching the membrane, but in all samples all MT ends were closer than 230 nm to the membrane. (number above box = n) (B) To determine if dMTs or CP microtubules extended the furthest within the axoneme, all microtubule plus end\u2019s distance to the longest microtubule in the axoneme was measured. (*) In T. brucei LNF, the CPs was lagging behind the dMT extension, and in C. reinhardtii CPs extended further than the dMTs. (C) The extension of the A- or B-tubule within the doublet was measured. The A-tubule did not always extend the furthest. (D) The difference of extension between the A- and B-tubule in a dMT is merely 10\u201320 nm in both species.DOI: http://dx.doi.org/10.7554/eLife.01479.018\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) A tomographic slice and the belonging 3D model of a high pressure frozen and freeze substituted long new flagellum tip in T. brucei. (B) A tomographic slice and the corresponding 3D model of a chemically fixed long new flagellum tip in T. brucei. Note that the membrane is in a similar place in comparison to the flagellar connector as seen in A (white arrows). Black arrows show the distal microtubule ends. The stable position of the flagellum tip membrane in relation to the FC in both sample preparations indicates that the distance increase between the axoneme and the membrane is due to microtubule depolymerization. (C) Quantification of distances between CPs and dMTs to the tip membrane. Numbers over the boxes are the amount of MTs measured. (D) The distribution of microtubule plus-ends within the axoneme show a much wider range in chemically fixed samples. This explains why the T. brucei new flagellum tip has been shown to lack some dMTs in previous studies e.g., Briggs (2004).DOI: http://dx.doi.org/10.7554/eLife.01479.019\n\nWe also investigated whether there was a difference between the elongation of CPs and dMTs. To show microtubule extension within the axoneme, we measured the distance from the ends of the A-, B-tubule and CP to the end of the furthest reaching microtubule of the axoneme. The ends of dMTs and CPs of flagellar ends did not significantly differ in their extension in most samples (Figure 3B; Table 3). However, we found a significant difference between the extensions of dMTs and CPs in the growing long T. brucei flagella, where the CP lagged behind the dMTs extension by approximately 50 nm (p<0.01). Also in C. reinhardtii, a significant difference was revealed, but here the CP extended \u223c50 nm beyond most dMTs (p<0.01).10.7554/eLife.01479.020Table 3.Statistics on the microtubule extension within the axonemeDOI: http://dx.doi.org/10.7554/eLife.01479.020Flagellum typedMT/Cp extension differencePaired t testn (axonemes)A-B tubule extension DifferencePaired t testN (MTs)T. bruceiOldNo0.242No0.6323ShortNo0.813No0.7324LongYes0.016No0.1236C. reinhardtiiShortNo0.283No0.1428LongYes0.014No0.5136\n\nThe small distance from the tip in which all the MT tips were found in both T. brucei and C. reinhardtii contradicts the existence of a long singlet region, previously published to be \u223c1 \u03bcm in C. reinhardtii (Ringo, 1967; Satir, 1968; Sale and Satir, 1976; Woolley and Nickels, 1985). Furthermore, the extension of the A- and B-tubule within the dMTs revealed that the A-tubule commonly extended the furthest (Figure 3C). However, the extension of the longest sub-fiber did not protrude more than 10\u201320 nm beyond its partner tubule. No samples showed a significant difference between A- and B-tubule extension (Figure 3D; Table 3).\n\nWe also compared the distances from the MT ends to the tip membrane in high pressure frozen vs chemically fixed growing T. brucei flagella (Figure 3\u2014figure supplement 1). In chemically fixed cells, the dMT and CP ends were found in a wide range of distances, up to 350 nm from the membrane (average 203 \u00b1 75 nm; n = 40), in contrast to the high pressure frozen T. brucei flagella where the same distance was a maximum of 125 nm (45 \u00b1 37 nm; n = 75). The microtubule plus ends within the same axoneme were spread over a larger distance in chemically fixed samples than in high pressure frozen ones. Indeed, a partial axoneme was previously used to localize an image as having been acquired close to the distal flagellum end (Briggs, 2004), when such an area of a partial axoneme was rarely to be found in this study. These findings, in combination with the absence of a singlet region in high-pressure frozen samples, indicate that the distal flagellar arrangements previously published in C. reinhardtii tips were likely disturbed by the chemical fixation used.\n\nWe conclude that the singlet region is not found in either species examined, but that the two species examined display two different assembly pathways.\n\n## Microtubule plus end anchoring\n\nAxonemal microtubules have previously been shown to be linked to the flagellar membrane (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig4-v1.jpg)\n\n**Figure 4.:** 4-nm thick slices of tomograms from (A and B) T. brucei short new flagellum, (C and D) T. brucei long new flagellum, (E and F) C. reinhardtii short new flagellum, and (G and H) C. reinhardtii long new flagellum. In the left column CP distal ends are shown and the right column, dMT plus ends. dMTs are always displayed with the A-tubule to the left. Examples of flared ends are marked with turquoise arrowhead and capped ends with white arrowheads. Electron-dense structures associated with the C. reinhardtii and T. brucei CPs in long new flagella are marked by green arrows. (I and J) 15-nm thick cryo-electron tomography sections of (I) CP and (J) dMTs at the old T. brucei flagellum tip. Note the electron density extending into the lumen of both CP MTs and into the A-tubule lumen in the dMTs.DOI: http://dx.doi.org/10.7554/eLife.01479.021\n\n## Maturation of the flagellum\u2019s proximal end in T. brucei\n\nWe investigated whether the proximal end of the flagellum becomes altered as the flagellum grows and matures. Electron tomographic reconstructions of five cells revealed the ultrastructure of the basal plate and the anchoring of the central pair microtubules throughout the cell cycle in ten flagella (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig5-v1.jpg)\n\n**Figure 5.:** T. brucei basal plate matures and alters its association with the CP minus ends during the cell cycle.(A) A 20 nm thick tomographic slice showing the new flagellum (NF) basal plate region. (B) The exact thickness of the basal plates and the locations and structure of the CP minus ends within/around them. The new flagellum in Cell1 is so short that no CP microtubules have started to grow yet. (C) The length of the new flagellum (marked with *) reveals the cell\u2019s position in the cell cycle; The cell earliest in the cell cycle displaying a short new flagellum (top of Figure) and the most mature cell with two flagella in individual flagellar pockets at the bottom. The cartoons to the left show outlines of the flagellar pocket region in the cells studied, the cartoons are oriented so that the anterior end of the cell points to the right. (D) 10-nm thick tomographic slices of the new flagella showing the bilayered electron-dense material forming the basal plates, with the capped minus end (e.g., turquoise arrow) of one of the CP MTs nucleated on the proximal surface. Cell 1 has such a short flagellum that no CPs has grown yet, but an early basal plate is evident. (E) The CP MTs were modeled and the basal plates visualized using electron density thresholding. The bi-layered structure of the basal plate is clearly visible until cell 4, where the two flagella have separated into two separate flagellar pockets in preparation for cell division. (F) A selection of the models displayed in D and F show how the basal plate is formed of two stacked rings early in the cell cycle, which is then lost as the flagellum matures. (G) The tomographic slices of basal plates in the old flagella (OF) of the same cell as the new flagellum shown to the left. The bilayered structure is mostly lost, the basal plate is longer and the CP microtubule now has an open end (e.g., red arrow) i.e. inserted further into the basal plate. (H) The 3D models of the basal plate region in the old flagella reveal amorphous structures that sometimes only anchor one CP MT (cell 3 and 5).DOI: http://dx.doi.org/10.7554/eLife.01479.022\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** T. brucei.(A) A cartoon of the cell that is imaged in B. It has two flagella in separated pockets, meaning that the new flagellum (marked with an *) already is long. (B) Cross-sectional views (slices from tomograms) of the basal plate region in both the old and the new flagellum. The number in the bottom right corner is the distance from the first image.DOI: http://dx.doi.org/10.7554/eLife.01479.023\n\nSeveral differences were found over the cell cycle in T. brucei: first, the minus ends of the central pair microtubules were capped in all four growing new flagella long enough to have a CP (Figure 5B and arrow in D; Video 11), whereas in old flagella of the same cells, CPs showed some open ends (6 out of 9 CP ends of known morphology; Figure 5B and arrow in G; Video 12). Second, in new flagella, the \u223c30-nm thick basal plate consisted of two stacked electron-dense rings, and the minus ends were found within the more distal ring (Figure 5C,D, Figure 5\u2014figure supplement 1). In old flagella, this defined basal plate structure consisting of two rings was gradually lost and replaced with a more diffuse electron dense mass that became up to 90 nm thick with the progression of the flagellum maturation (Figure 5B,G,H). Third, the central pair minus ends were commonly found within this electron dense mass in old flagella, but in 2 out of the 10 CPs, one of the ends was found around 100 nm distal to the basal plate (Figure 5B,G; cells 3 and 5), showing a loosened CP anchoring in more mature flagella.10.7554/eLife.01479.024Video 11.The basal plate in a new T. brucei flagellum (related to Figure 5).The basal plate has been modeled by density thresholding and is displayed in brown. The CP is modeled as all MTs but also show their capped minus ends. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.02410.7554/eLife.01479.025Video 12.The basal plate of an old T. brucei flagellum (related to Figure 5).The basal plate has been modeled by density thresholding and is displayed in brown. The CP is modeled and show one capped and one open minus end. Scale bar = 50 nm.DOI: http://dx.doi.org/10.7554/eLife.01479.025\n\nThus, the T. brucei basal plate structure and its association with the central pair minus ends changes as the flagellum matures. We wondered if this is a conserved feature of the CP nucleating region of flagella (Euteneuer and McIntosh, 1981; Song and Mandelkow, 1995).\n\n## Little structural maturation in the C. reinhardtii transition zone\n\nWe therefore reconstructed nine transition zone regions of\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig6-v1.jpg)\n\n**Figure 6.:** C. reinhardtii is structurally uniform during the cell cycle.(A) A 20-nm thick tomographic slice showing the two flagella extending from the C. reinhardtii cell. (B) The exact thickness of the transition zone central tube structure and the locations and structure of the CP minus ends within/around them. Note that the thickness of the central tube does not correlate with the flagellar length. This graph includes both flagella that we know are growing, and flagella of unknown dynamic state. The three colored columns represent the measurements of central tubes found in cell 1, 2 and 3 in C\u2013E. (C) The cartoons to the left show outlines of the cells visualized in 10-nm thick tomographic slices of transition zone (D) and (E) where their 3D models show that the central tube structure consists of two baskets. The top basket is almost complete and the bottom one is partial. (F) The nine central tubes are here arranged by size, and the contribution of the upper and lower basket to the thickness of the structure is displayed. Note that the proportions within the structure remain similar through out, with the upper basket contributing 60 \u00b1 5%, and the lower basket 28 \u00b1 5% of the total central tube thickness.DOI: http://dx.doi.org/10.7554/eLife.01479.026\n\nThree cells were arranged by the lengths of their flagella and thus, their cell cycle stages (Figure 6C\u2013E). The central cylinder looks like two stacked U\u2019s in tomographic slices of all cells (Figure 6D). Density thresholding of our tomograms reveals that the U\u2019s resemble two stacked baskets in 3D (Figure 6E). As the central cylinder grows, the proportions of the baskets remain surprisingly similar (Figure 6D,E), with the longer upper basket constituting 60 \u00b1 5% of the total basal plate thickness and the more partial lower basket constituting 28 \u00b1 5% (Figure 6F). Interestingly, in the one cell with long flagella where we reconstructed both transition zones, the two central cylinder structures were similar in thickness and in their anchoring of the CPs (Figure 6A,B; long flagellum).\n\nWe conclude that the structural alterations in the region of CP nucleation during flagellar maturation in T. brucei are not conserved between these two species, as the C. reinhardtii structure merely grows lengthwise.\n\n## Growth and maturation of the flagellum\n\nSince the flagellum extends at the distal end, one has a timeline of flagellar extension with the most recently built piece at the distal tip and the oldest region at the proximal end (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01479/elife-01479-fig7-v1.jpg)\n\n**Figure 7.:** (A) Because the new flagellum (*) grows at its distal tip, the axoneme is older closer to the basal body. This spatial assembly progress is used to reveal the order of structural additions to the growing axoneme. (B) Cross-sectional views from a tomogram of T. brucei flagella (old flagellum to the left and the growing new flagellum to the right). In (A) the slice is taken close to the tip of the growing flagellum. Only a few doublet microtubules have extended to here. (B) 100 nm in to the flagellum, dMTs and CPs are present but arranged in abnormal angles to each other. (C) The axoneme starts appearing normal \u223c250 nm into the axoneme. However, note the almost complete ring around the CPs in the old flagellum (arrow), most likely formed by central pair projections and/or heads of radial spokes. This ring is still not to be found in this most proximal tomographic slice taken. (C) Measurements of axonemal component incooperation was done in a multitude of cross-sectional and longitudinal flagella tip tomography reconstructions. (D) T. brucei flagellum grows in a disorganized manner probably due to a lack of associated axonemal proteins in the distal tip, this model is made to approximate where the components are added in comparison to the distal tip. As the flagellum matures (right), the axoneme is organized all the way to the tip and the basal plate has altered structure from the two rings to an electron-dense cloud. Electron-dense structures are visible from the lumen of the CP and A-tubule extending towards the membrane. (E) In C. reinhardtii, growth is organized with the CP protruding slightly at the tip of the axoneme. As the flagellum matures, the transition zone central tube extends but no morphological changes were seen.DOI: http://dx.doi.org/10.7554/eLife.01479.028\n\nFinally, we used this information to build a summarizing model of the two ways to grow and mature a flagellum in the protozoa T. brucei and C. reinhardtii. In T. brucei the growing axoneme is disorganized, with shorter CPs than dMTs, all of which are possibly not anchored to the flagellar membrane (Figure 7D). The associated axonemal protein modules such as radial spokes and CP projections are added in later assembly steps. In the proximal part of the growing flagellum, the basal plate is first arranged into two electron-dense rings close to which capped CP ends can be found. In the corresponding area of a mature flagellum, the basal plate is a loose electron-dense area in which one, sometimes two, open or closed CP minus ends are found.\n\nIn C. reinhardtii, the growing axoneme is not very different (on this ultrastructural level) from the mature axoneme as the circular arrangement, with the associated axonemal proteins, is maintained all the way to the growing tip (Figure 7E). This holds true also for the central structure of the transition zone, the only maturation of which seems to be a lengthwise extension.\n\n## Discussion\n\nDespite the remarkable conservation of the axonemal structure, we have shown two ways to build a flagellum; flagellar growth occurs in both species and length-dependent manner. Whereas, we see no difference in growth in short T. brucei and C. reinhardtii flagella, T. brucei long flagella appear to first elongate their axonemal MTs in a disordered manner, which is then stabilized to a circular arrangement by the addition of associated protein complexes such as the radial spokes. In contrast, our study suggests that the axonemal dMTs and structural proteins are assembling simultaneously in long C. reinhardtii. What regulates such differences in the assembly pathways? Dentler (1980) showed that the growing axoneme in C. reinhardtii had structures linking from the tips of the microtubules to the membrane. Woolley et al. (2006) failed to see such linking structures in growing flagella of Leishmania major (but did see them in mature flagella), a close relative to T. brucei. We speculate that the presence of such anchorage in C. reinhardtii could provide structural clues for the growing axoneme, holding it into a close-to-circular arrangement. This arrangement could then facilitate the incorporation of the associated axonemal proteins such as radial spokes.\n\nAnother explanation for the apparent difference in axonemal growth mechanism between T. brucei and C. reinhardtii could be that these flagella are elongating at different rates: snapshots of a fast-growing axoneme might capture disordered intermediates that are not seen in a more slowly elongating structure. However, the initial growth rate of regrowing C. reinhardtii flagella (shed by ionic shock) is approximately 12\u201324 \u00b5m/hr, which then declines to 9 \u00b5m/hr as the flagellum gets longer (Rosenbaum et al., 1969; Flavin and Slaughter, 1974). The growth rate of their flagella after mitosis remains unknown, but we assume equal or faster assembly because of the pre-mitotic reabsorbtion of the flagellar components that could then be utilized in the construction of the next flagellum. In T. brucei, we deduced the flagellum growth rate from the growth rate of the PFR to be a constant \u223c4 \u00b5m/hr (Bastin et al., 1999). These growth rates indicate that the structural differences we see are not caused by a slower flagellar growth rate, and therefore more organized growth, in C. reinhardtii.\n\nThe differences in growth mechanics may not be so surprising, since the two species grow their flagella in different circumstances. In T. brucei, the new flagellum is not necessary for cell motility since the old flagellum is still present and active. In C. reinhardtii on the other hand, both flagella have been shed as a preparation for mitosis, so the cell is completely dependent on the reappearance of the two new flagella for its motility, making the rapid establishment of function important.\n\nThere are numerous further differences between the flagella of these two organisms: (1) The beat form of the flagella (Schmidt and Eckert, 1976; Heddergott et al., 2012). (2) The presence of a PFR in T. brucei (Vickerman, 1962; Bastin et al., 1998; Portman and Gull, 2010; H\u00f6\u00f6g et al., 2012). (3) A rotational CP in C. reinhardtii; (Mitchell, 2003) vs a stationary CP T. brucei (Gadelha et al., 2006). Based on the findings presented in this paper, we can now add to this list a difference in the pathways for establishing axoneme organization during MT elongation, and maturation of the proximal region during the cell cycle.\n\nIt is important to note that we did not use deflagellation to create a situation of regenerating flagella in C. reinhardtii, as this regrowth might be different from the natural situation occurring when flagella regrow after mitosis. Pre-mitotic reabsorption of the flagellum probably allows for storage of the flagellar protein pool, a pool that would have been lost in the event of ionic shock deflagellation. Furthermore, in deflagellation before mitosis the basal plate is lost in a final event of shedding (Parker et al., 2010), whereas the stress induced deflagellation triggers a severing event distal to the basal plate, which can then form the transition zone for the next flagellum (Rosenbaum et al., 1969).\n\nWe also revealed that the flagellum tip structure might be different to what was previously described. Most notably, we found no evidence of a singlet region, which has been shown to be over 2 \u03bcm long in Tetrahymena sp (Sale and Satir, 1976) and \u223c1 \u03bcm in C. reinhardtii. We also found no obvious CP cap, not disproving its existence (we did see evidence for filamentous proteins extending into the CP lumen), but showing that in well preserved cells it does not appear as previously described (Dentler and Rosenbaum, 1977; Dentler, 1980; Fisch and Dupuis-Williams, 2012). Even though we found the CPs to extend further than the dMTs, it was only within \u223c50 nm, in contrast to the published flagellar tip arrangement in C. reinhardtii (of unknown dynamic state), that shows the central pair protruding \u223c400 nm beyond the doublet microtubules (Ringo, 1967).\n\nThese differences in assembly order, speed, function, and structure, in two species both with the conventional 9+2 motile flagella structure, pose the question if the internal environments of flagella of different species are more different than presently assumed. Ciliogenesis will most likely involve a whole subset of flagellar proteins, with functions that are distinct from the IFT of axonemal proteins to the assembling tip. Flagellar growth rates after ionic shock in C. reinhardtii are length dependent, with shorter flagella growing faster than longer ones. Together with a steady disassembly rate, this forms the basis of the balance-point-model of flagellar length regulation (Marshall et al., 2005). The faster growth of short C. reinhardtii was then showed to depend on longer IFT trans in the short flagellum (Engel et al., 2009). This would fit well with our observations that the modes of assembly in the short and long post-mitotic C. reinhardtii tips do not differ beyond the point of central pair extension. Interestingly, we did detect differences in short vs long growing flagellar tips in T. brucei, an organism that most likely has linear flagellum growth. The absence of several axonemal components at the long growing tip might indicate that IFT is rate limiting in this growth. One would then predict that flagellar length is independent of size of IFT trains in these cells. However, it has recently been shown that the IFT traffic in T. brucei also differs considerably from that of C. reinhardtii (Buisson et al., 2013).\n\nThus, to further understand the normal structure and function of flagella, and the pathology of various ciliopathies, it is crucial to further understand ciliogenesis. With this paper we have revealed two modes of flagella growth, an area of flagellum biology that still remained mostly in the dark, and complementing our extensive knowledge on IFT of building material to the site of flagellar growth.\n\n## Materials and methods\n\n## Preparation T. brucei for electron tomography\n\nProcyclic T. brucei strain 427 (high pressure freezing; HPF) or 29\u201313 (chemical fixation) were grown in SDM-79 media supplemented with 10% fetal bovine serum (for chemical fixation; PAA Laboratories Ltd, UK) and 20% fetal bovine serum (for HPF) (Brun and Sch\u00f6nenberger, 1979). Cell growth was monitored by using a CASY DT cell counter (Sedna Scientific, UK), and cultures were diluted on a daily basis to maintain a density between 5 \u00d7 105 and 1 \u00d7 107 cells per milliliter.\n\nCells were prepared for electron tomography by high pressure freezing or chemical fixation followed by epon embedding as described previously (H\u00f6\u00f6g et al., 2010).\n\n## Preparation of T. brucei for cryo-electron tomography\n\nUnperturbed procyclic T. brucei strain 427 was plunge frozen and imaged intact as in (H\u00f6\u00f6g et al., 2012).\n\n## Preparation of C. reinhardtii for electron tomography\n\nWild-type Chlamydomonas reinhardtii strain 137C mt+ was grown at room temperature in liquid culture (Sagar and Granick medium) using a 10/14 dark/light cycle. After the cultures were shifted to the dark cycle, the cells were prepared for electron microscopy by HPF followed by freeze substitution as essentially described in O\u2019Toole et al. (2003, 2007). Briefly, the liquid culture was spun at 500\u00d7g for 5 min and the loose pellet was resuspended in a medium containing 150 mM mannitol for 1 hr. The samples were then spun at 500\u00d7g, the supernatant decanted and the loose pellet frozen using a BAL-TEC HPM-010 high-pressure freezer. The frozen samples were freeze substituted in 1% OsO4 and 0.1% uranyl acetate in acetone for 3 days then embedded in epon/araldite resin.\n\n## Serial sectioning and on-section staining\n\nSemi-thick (300\u2013400 nm) serial sections of the samples were cut using an ultracut UCT ultramicrotome (Leica Microsystems Ltd, UK). The sections were flattened by chloroform gas exposure whilst floating on the water surface. Ribbons of serial sections were put centered on 2 \u00d7 1 mm copper palladium slot grids (Agar Scientific Ltd, UK).\n\nThe sections were stained for 5 min on 2% uranyl acetate followed by 30 s Reynold\u2019s lead citrate. 15-nm colloidal gold particles were applied to both sides of the grid, to be used for image alignment.\n\n## Electron tomography and image analysis\n\nTilt series of serial sections from flagella distal tips were acquired using the serialEM software (Mastronarde, 2005) operating a Tecnai TF30 300 kV IVEM microscope (FEI Co., The Netherlands). Images were collected about two orthogonal axes in 1\u00b0 increments (\u00b160\u00b0) using a Gatan CCD camera (pixel size 0.76\u20131.3 nm). Tomographic reconstructions were calculated, the two axis combined, serial sections stitched together and models were created using the IMOD software package (Kremer et al., 1996; Mastronarde, 1997).\n\nNote that not all flagella tips are complete within the reconstructed volume in one tomogram. Many are reconstructed over serial sections. Measurements were only done within the same tomogram to ensure no error was introduced in the joining process. All flagella visualized were followed through the serial sections, taking lower magnification images of the entire cell to be able to reconstruct the flagellum length. Microtubule ends were classified as in H\u00f6\u00f6g et al. (2007, 2011, 2013).\n",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Randy Schekman, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01479.029](https://doi.org/10.7554/eLife.01479.029)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMechanisms of flagellar assembly in Chlamydomonas reinhardtii and Trypanosoma brucei\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAll the reviewers found it an intriguing study. We like the idea that there are different modes of assembly, and the potential link to the structures seen in PCD patients. We would therefore like to publish your paper, as long as you address the concerns below.\n\nThe main concern for the reviewers is that you are over-stating your case. It may be that you are seeing different mechanisms, but you could easily be looking at different kinetics. We think that you need to discuss other ways of interpreting your data. We think you should call them different modes of assembly, rather than different mechanisms. You should comment on how the delayed incorporation of structural proteins that cross-link (and thus likely stabilize) the axonemal MTs may result in a less stable tip, which would in turn affect the kinetics of flagellar assembly (and the Balance-Point model is a good way to think about this). The reviewers also felt that given that you only have 5 tomograms per condition, the data set is a bit limited, and that you should state this caveat somewhere. When you resubmit, please answer these issues explicitly.\n\nThe reviewers had some discussions on whether you were always looking at growing flagella. We realised that because they are always within the mother wall, this means that they must be growing, but you should make this point explicit in the text.\n\nYou should also comment on why you did not use regeneration after pH shock, as this is a standard way to look at growth.\n",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cd512071-e95d-4d90-9493-02556fddc846",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C1",
+      "claim": "Defects in flagella growth are related to a number of human diseases including skeletal deformations, polycystic kidney disease, infertility, situs invertus, blindness, obesity, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in cilia and flagella can cause severe human diseases for example skeletal deformations, polycystic kidney disease, infertility, situs invertus, blindness, obesity, and even cancer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published literature (Escudier et al., 2009; Chandok, 2012; Huber and Cormier-Daire, 2012; Li et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4357d798-d377-49df-a60d-6cfea7289b01",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C2",
+      "claim": "Ciliopathies is a collective name for conditions caused by defects in cilia and flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "A collective name for these conditions is the 'ciliopathies'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fliegauf et al., 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "e8b45425-1761-4566-a75e-b6d551d718a0",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C3",
+      "claim": "Some ciliopathies, such as primary ciliary dyskinesia, are diagnosed by ultrastructural investigations of cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Some ciliopathies, such as primary ciliary dyskinesia, are diagnosed by ultrastructural investigations of cilia that should be motile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations (Chandok, 2012; Chilvers et al., 2003; Escudier et al., 2009; Huber and Cormier-Daire, 2012; Li et al., 2012; O'Toole et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d476fffc-e631-4a6d-8ae6-0bb7f5eece15",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C4",
+      "claim": "Each flagellum consists of approximately 1000 different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Each flagellum consists of \u223c1000 different proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact in the manuscript text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6a14aebd-7fa3-4e4b-82b0-3b4966a31ebd",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C5",
+      "claim": "Flagellar elongation occurs by addition of protein subunits at the axoneme's distal end.",
+      "claim_type": "EXPLICIT",
+      "source": "Flagellar elongation occurs by addition of protein subunits at the axoneme's distal end",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rosenbaum and Child, 1967; Marshall, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "7379753e-824d-4a99-b76e-afaf25edaee0",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C6",
+      "claim": "Large protein complexes containing precursor axoneme building blocks are delivered to the distal end via intraflagellar transport (IFT).",
+      "claim_type": "EXPLICIT",
+      "source": "Large protein complexes containing the precursor axoneme building blocks are delivered to this site via an evolutionary conserved process called intraflagellar transport (IFT)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kozminski et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "18025246-e234-4511-8412-178cb6f8bd9f",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C7",
+      "claim": "The B-tubule ends before the A-tubule creating a distal 'singlet region' in the flagellum tip of most species.",
+      "claim_type": "EXPLICIT",
+      "source": "the B-tubule ends before the A-tubule creating a distal 'singlet region' in the flagellum tip of most species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ringo, 1967; Satir, 1968; Sale and Satir, 1976; Woolley and Nickels, 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "77d5e3a1-108c-4d73-9964-45550bafb529",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C8",
+      "claim": "The central pairs (CPs) extend further into the distal tip than the doublet microtubules (dMTs).",
+      "claim_type": "EXPLICIT",
+      "source": "the CPs extend further into the distal tip than the dMTs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ringo, 1967",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "16d6aee3-828c-4964-a9ba-7adaa272447e",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C9",
+      "claim": "The dMTs and CPs are linked to the membrane through capping structures.",
+      "claim_type": "EXPLICIT",
+      "source": "the dMTs and CPs are linked to the membrane through capping structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dentler, 1980; Woolley et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c64072a3-f784-4688-9bdd-892e1c418c8e",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C10",
+      "claim": "In Chlamydomonas reinhardtii, microtubules and associated proteins are added simultaneously during flagellar growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chlamydomonas reinhardtii microtubules and associated proteins are added simultaneously",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data presented in the manuscript, including Figure 1 and Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "e57b9524-9899-4a95-95a4-02ba765390c3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C11",
+      "claim": "In Trypanosoma brucei, disorganized arrays of microtubules are arranged into the axoneme structure by the later addition of preformed protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in Trypanosoma brucei, disorganized arrays of microtubules are arranged into the axoneme structure by the later addition of preformed protein complexes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data presented in the manuscript, including Figure 1 and Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "582da4e2-2ac9-4e5f-a562-1a64ac743db4",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C12",
+      "claim": "Post assembly, the T. brucei transition zone alters structure and its association with the central pair loosens.",
+      "claim_type": "EXPLICIT",
+      "source": "Post assembly, the T. brucei transition zone alters structure and its association with the central pair loosens",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data presented in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ba556fe6-ce97-4c19-b82d-a47ae62fb64f",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C13",
+      "claim": "There are multiple ways to form a flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that there are multiple ways to form a flagellum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparative data showing different assembly mechanisms in C. reinhardtii and T. brucei",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4a49201b-1536-4b67-90f7-077e2cf2d930",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C14",
+      "claim": "Species-specific structural knowledge is critical before evaluating flagellar defects.",
+      "claim_type": "EXPLICIT",
+      "source": "species-specific structural knowledge is critical before evaluating flagellar defects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the finding that different species use different assembly mechanisms",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "57a8c548-d704-4b93-a99a-97dfd078d2c5",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C15",
+      "claim": "C. reinhardtii has two flagella that are reabsorbed down to their transition zones prior to mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "C. reinhardtii has two flagella that are reabsorbed down to their transition zones, which are then expelled prior to mitosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rasi et al., 2009; Parker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "155f37f1-3cda-480f-a3f1-f897156530af",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C16",
+      "claim": "After mitosis, C. reinhardtii daughter cells remain within the wall of the mother cell where they regrow their flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "After mitosis, the small daughter cells remain within the wall of the mother cell where they regrow their flagella",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact in the manuscript text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "bececc86-730e-43c8-83f4-b2e148ebd2d6",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C17",
+      "claim": "In T. brucei, the new flagellum starts growing midway through the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. brucei the new flagellum starts growing midway through the cell cycle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Sherwin and Gull, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "90045cb7-1932-4a1e-9608-f74bbb395cbe",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C18",
+      "claim": "The T. brucei new flagellum tip is attached to the side of the old flagellum by a structure called the flagella connector.",
+      "claim_type": "EXPLICIT",
+      "source": "Its tip is attached to the side of the old flagellum by a structure called the flagella connector",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Moreira-Leite, 2001; Briggs, 2004; Davidge, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "181ae4ac-0bdf-417a-b8ac-e8be2e6bf9ed",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C19",
+      "claim": "The axoneme in all flagellar tips studied, except the T. brucei growing long flagella, displayed the regular spacing of dMTs found in the rest of the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The axoneme in all flagellar tips studied, except the T. brucei growing long flagella, displayed the regular spacing of dMTs found in the rest of the flagellum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 1C,D,F,G and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ef2da5e5-cdee-424c-b945-e16d047d98a8",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C20",
+      "claim": "Growing long T. brucei flagellar tips showed a disorganized array of dMTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the growing long T. brucei flagellar tips showed a disorganized array of dMTs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 1E",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "8ae8c766-13ee-4aec-aeb7-6e98e7754115",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C21",
+      "claim": "Some dMTs lay very close to the CPs in growing long T. brucei flagellar tips.",
+      "claim_type": "EXPLICIT",
+      "source": "some dMTs lay very close to the CPs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 1E",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "8e354429-9934-4af6-ab99-0ae6422ede79",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C22",
+      "claim": "Central pair projections display a ladder-like arrangement along the length of the mature T. brucei flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Central pair projections display a ladder-like arrangement along the length of the mature T. brucei flagellum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 2D",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "596ec5c7-4cd5-4a47-871a-4fc08b2ca392",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C23",
+      "claim": "In growing T. brucei long flagellum tips, the associated complexes (such as central pair projections) were not visible.",
+      "claim_type": "EXPLICIT",
+      "source": "in the growing T. brucei long flagellum tip (Figure 2G), where the associated complexes were not visible",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 2G",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "887604dd-4ae3-4906-948b-acfcb2337bcd",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C24",
+      "claim": "During the elongation of a T. brucei flagellum, the microtubules extend beyond the position of the associated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "we suggest that during the elongation of a T. brucei flagellum, the microtubules extend beyond the position of the associated proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that associated complexes are not visible in growing long flagellum tips",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c44fa44e-fd8a-4bc7-8c1b-705ce674e67b",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C25",
+      "claim": "The final structures (associated proteins) are added to the already formed but disorganized axonemal tip in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "hence the final structures are added to the already formed but disorganized axonemal tip",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that microtubules extend beyond the position of associated proteins",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1500a444-ca3a-4574-94e3-2c0e10659f1c",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C26",
+      "claim": "Only in T. brucei long new flagellum were the microtubules touching the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Only in T. brucei long new flagellum (LNF) were the microtubules touching the membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3A and Table 2",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1968ea35-50f9-4a25-bd9c-a7cc0d81c856",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C27",
+      "claim": "In all samples, all MT ends were closer than 230 nm to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "but in all samples all MT ends were closer than 230 nm to the membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3A and Table 2",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "32b86901-88c5-4a94-b05b-e2badcbb9138",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C28",
+      "claim": "In T. brucei long new flagellum, the CPs were lagging behind the dMT extension.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. brucei LNF, the CPs was lagging behind the dMT extension",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3B and Table 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3026702c-02cd-4bad-8d80-b33ff8956086",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C29",
+      "claim": "In C. reinhardtii, CPs extended further than the dMTs.",
+      "claim_type": "EXPLICIT",
+      "source": "in C. reinhardtii CPs extended further than the dMTs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3B and Table 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ad2ae935-8605-4047-a2d2-356431add6f9",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C30",
+      "claim": "The A-tubule did not always extend the furthest within the doublet.",
+      "claim_type": "EXPLICIT",
+      "source": "The A-tubule did not always extend the furthest",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3C",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "56cf99ad-a95b-4db0-b77d-5be1374b628d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C31",
+      "claim": "The difference of extension between the A- and B-tubule in a dMT is merely 10\u201320 nm in both species.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference of extension between the A- and B-tubule in a dMT is merely 10\u201320 nm in both species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3D and Table 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4b4395e2-3248-4744-a114-1cffebd920ae",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C32",
+      "claim": "In chemically fixed T. brucei cells, the dMT and CP ends were found in a wide range of distances, up to 350 nm from the membrane (average 203 \u00b1 75 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "In chemically fixed cells, the dMT and CP ends were found in a wide range of distances, up to 350 nm from the membrane (average 203 \u00b1 75 nm; n = 40)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "5ae92695-dd55-4bf6-bc44-af51c16b0862",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C33",
+      "claim": "In high pressure frozen T. brucei flagella, the distance from MT ends to membrane was a maximum of 125 nm (45 \u00b1 37 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast to the high pressure frozen T. brucei flagella where the same distance was a maximum of 125 nm (45 \u00b1 37 nm; n = 75)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c6b2f930-cea6-40a4-bd11-f0353a10cf36",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C34",
+      "claim": "The distal flagellar arrangements previously published in C. reinhardtii tips were likely disturbed by the chemical fixation used.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings, in combination with the absence of a singlet region in high-pressure frozen samples, indicate that the distal flagellar arrangements previously published in C. reinhardtii tips were likely disturbed by the chemical fixation used",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of high pressure frozen vs chemically fixed samples",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6b490cb1-f23b-4c2f-91bb-2c2c44a99e81",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C35",
+      "claim": "The singlet region is not found in either T. brucei or C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the singlet region is not found in either species examined",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data from high pressure frozen samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c28ce4b7-d220-454c-84ca-e5eb14295aaa",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C36",
+      "claim": "The two species examined display two different assembly pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "but that the two species examined display two different assembly pathways",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative electron tomography data from both species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "aaac3851-e560-45ab-a150-55b30c5c50ad",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C37",
+      "claim": "Axonemal microtubules have previously been shown to be linked to the flagellar membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonemal microtubules have previously been shown to be linked to the flagellar membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge in the manuscript",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4d8eac27-bf58-4ef4-a2c1-c16c48e33bf3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C38",
+      "claim": "In T. brucei short new flagellum and C. reinhardtii short and long new flagella, both flared and capped microtubule ends were found.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 4 shows examples of flared ends marked with turquoise arrowhead and capped ends with white arrowheads in panels A, B, E, F, G, H",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "68c5fc0f-674b-4d66-bc36-0706e8652229",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C39",
+      "claim": "Electron-dense structures are associated with the C. reinhardtii and T. brucei CPs in long new flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron-dense structures associated with the C. reinhardtii and T. brucei CPs in long new flagella are marked by green arrows",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "cdd3eb6d-289b-4447-87bb-3b50ab687277",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C40",
+      "claim": "Electron density extends into the lumen of both CP MTs and into the A-tubule lumen in the dMTs in old T. brucei flagellum tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Note the electron density extending into the lumen of both CP MTs and into the A-tubule lumen in the dMTs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cryo-electron tomography data shown in Figure 4I and J",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b46eb1af-8c07-4968-9d46-706646da9261",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C41",
+      "claim": "The proximal end of the T. brucei flagellum becomes altered as the flagellum grows and matures.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated whether the proximal end of the flagellum becomes altered as the flagellum grows and matures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c29666e7-d19a-4b1c-af1f-99bd86482582",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C42",
+      "claim": "The minus ends of the central pair microtubules were capped in all four growing new T. brucei flagella long enough to have a CP.",
+      "claim_type": "EXPLICIT",
+      "source": "the minus ends of the central pair microtubules were capped in all four growing new flagella long enough to have a CP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5B, D and Video 11",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d362df2a-9e3e-4560-a314-134707e8e41e",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C43",
+      "claim": "In old T. brucei flagella, CPs showed some open ends (6 out of 9 CP ends of known morphology).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas in old flagella of the same cells, CPs showed some open ends (6 out of 9 CP ends of known morphology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5B, G and Video 12",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3d0d811e-bcf2-43e3-8cf8-256e2b0bbcc6",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C44",
+      "claim": "In new T. brucei flagella, the approximately 30-nm thick basal plate consisted of two stacked electron-dense rings.",
+      "claim_type": "EXPLICIT",
+      "source": "in new flagella, the \u223c30-nm thick basal plate consisted of two stacked electron-dense rings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5C, D and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b0490eac-c7f3-4860-924e-9e4cd3f9d60d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C45",
+      "claim": "The minus ends of the central pair were found within the more distal ring of the basal plate in new T. brucei flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "the minus ends were found within the more distal ring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5C, D",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c35c2fb3-8855-4e47-ad6b-49b95d82506d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C46",
+      "claim": "In old T. brucei flagella, the defined basal plate structure consisting of two rings was gradually lost and replaced with a more diffuse electron dense mass that became up to 90 nm thick.",
+      "claim_type": "EXPLICIT",
+      "source": "In old flagella, this defined basal plate structure consisting of two rings was gradually lost and replaced with a more diffuse electron dense mass that became up to 90 nm thick with the progression of the flagellum maturation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5B, G, H",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3f7326eb-442e-4f56-ba79-2b13804a00ed",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C47",
+      "claim": "The central pair minus ends were commonly found within the electron dense mass in old T. brucei flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "the central pair minus ends were commonly found within this electron dense mass in old flagella",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5B, G",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3bc2d1ee-a99c-489d-81dd-8a35b8acf955",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C48",
+      "claim": "In 2 out of the 10 CPs in old T. brucei flagella, one of the ends was found around 100 nm distal to the basal plate.",
+      "claim_type": "EXPLICIT",
+      "source": "but in 2 out of the 10 CPs, one of the ends was found around 100 nm distal to the basal plate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5B, G (cells 3 and 5)",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "de9e96b5-131c-4900-9945-79de6d97377d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C49",
+      "claim": "The T. brucei basal plate structure and its association with the central pair minus ends changes as the flagellum matures.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the T. brucei basal plate structure and its association with the central pair minus ends changes as the flagellum matures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "a6843313-586b-4e53-b6a0-1b8f9b949f6d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C50",
+      "claim": "The C. reinhardtii transition zone central cylinder structure consists of two stacked baskets.",
+      "claim_type": "EXPLICIT",
+      "source": "Density thresholding of our tomograms reveals that the U's resemble two stacked baskets in 3D",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 6D, E",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ea91ce83-0357-4473-880b-cc440d5c51f3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C51",
+      "claim": "As the C. reinhardtii central cylinder grows, the proportions of the baskets remain surprisingly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "As the central cylinder grows, the proportions of the baskets remain surprisingly similar",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 6D, E, F",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "2e7dc198-aa5a-4ec3-93d5-0a1f9e94bc24",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C52",
+      "claim": "The longer upper basket constitutes 60 \u00b1 5% of the total basal plate thickness in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "with the longer upper basket constituting 60 \u00b1 5% of the total basal plate thickness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 6F",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "883cd05d-fa35-4f9e-b40a-4218031c7515",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C53",
+      "claim": "The more partial lower basket constitutes 28 \u00b1 5% of the total basal plate thickness in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "and the more partial lower basket constituting 28 \u00b1 5%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 6F",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "961d702a-b6f7-4fc7-af8a-5028cc36ba05",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C54",
+      "claim": "The structural alterations in the region of CP nucleation during flagellar maturation in T. brucei are not conserved between T. brucei and C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the structural alterations in the region of CP nucleation during flagellar maturation in T. brucei are not conserved between these two species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparative data showing different maturation patterns in the two species",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "7b90aefd-4599-406d-ac53-808d845b97cf",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C55",
+      "claim": "The C. reinhardtii transition zone structure merely grows lengthwise during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "as the C. reinhardtii structure merely grows lengthwise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d326673a-1732-4287-b461-6e9d6383cce9",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C56",
+      "claim": "In T. brucei, the growing axoneme is disorganized, with shorter CPs than dMTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. brucei the growing axoneme is disorganized, with shorter CPs than dMTs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 7D",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "672e99b5-9ad8-4308-ab9c-37e735950d7c",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C57",
+      "claim": "The associated axonemal protein modules such as radial spokes and CP projections are added in later assembly steps in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "The associated axonemal protein modules such as radial spokes and CP projections are added in later assembly steps",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that these structures are absent in growing tips but present in mature regions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b7b6d208-6d99-4b36-9ebd-d0c06e030432",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C58",
+      "claim": "In the proximal part of the growing T. brucei flagellum, the basal plate is first arranged into two electron-dense rings close to which capped CP ends can be found.",
+      "claim_type": "EXPLICIT",
+      "source": "In the proximal part of the growing flagellum, the basal plate is first arranged into two electron-dense rings close to which capped CP ends can be found",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5 and Figure 7D",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d2cf5ecc-d2f8-42c9-af95-3e645c2f86ef",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C59",
+      "claim": "In the corresponding area of a mature T. brucei flagellum, the basal plate is a loose electron-dense area in which one, sometimes two, open or closed CP minus ends are found.",
+      "claim_type": "EXPLICIT",
+      "source": "In the corresponding area of a mature flagellum, the basal plate is a loose electron-dense area in which one, sometimes two, open or closed CP minus ends are found",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 5 and Figure 7D",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "8769e00f-d757-46c9-8e7e-ce1c16739fec",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C60",
+      "claim": "In C. reinhardtii, the growing axoneme is not very different on the ultrastructural level from the mature axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. reinhardtii, the growing axoneme is not very different (on this ultrastructural level) from the mature axoneme",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 7E",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b1424ef0-fae3-4848-83f2-894d9508f73f",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C61",
+      "claim": "The circular arrangement with the associated axonemal proteins is maintained all the way to the growing tip in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "as the circular arrangement, with the associated axonemal proteins, is maintained all the way to the growing tip",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 7E",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "941fec76-05b5-429f-9bb3-ee3c53fb1ee0",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C62",
+      "claim": "The only maturation of the C. reinhardtii transition zone central structure seems to be a lengthwise extension.",
+      "claim_type": "EXPLICIT",
+      "source": "This holds true also for the central structure of the transition zone, the only maturation of which seems to be a lengthwise extension",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data shown in Figure 6 and Figure 7E",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "02354d52-69a4-4748-8f5d-5b40144bd757",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C63",
+      "claim": "Despite the remarkable conservation of the axonemal structure, there are two ways to build a flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the remarkable conservation of the axonemal structure, we have shown two ways to build a flagellum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative electron tomography data from both species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "42311334-10e4-40e9-a214-c997ff0abedf",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C64",
+      "claim": "Flagellar growth occurs in both species and length-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "flagellar growth occurs in both species and length-dependent manner",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that short and long flagella show different assembly characteristics",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3a4077c7-a230-47d8-bd8a-b8f9d4ee91f5",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C65",
+      "claim": "There is no difference in growth in short T. brucei and C. reinhardtii flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "we see no difference in growth in short T. brucei and C. reinhardtii flagella",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data comparing short flagella in both species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "e9472089-9c62-4cb8-93a6-2ee92379aaa3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C66",
+      "claim": "T. brucei long flagella appear to first elongate their axonemal MTs in a disordered manner, which is then stabilized to a circular arrangement by the addition of associated protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "T. brucei long flagella appear to first elongate their axonemal MTs in a disordered manner, which is then stabilized to a circular arrangement by the addition of associated protein complexes such as the radial spokes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of disorganized MTs at the tip and organized MTs proximally",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ccbad434-69d7-463e-a9d9-09c730b1bbc0",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C67",
+      "claim": "The axonemal dMTs and structural proteins are assembling simultaneously in long C. reinhardtii flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "our study suggests that the axonemal dMTs and structural proteins are assembling simultaneously in long C. reinhardtii",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that structural proteins are present all the way to the growing tip",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "7f6d2a30-f8f2-452b-99dd-4191e6e09dff",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C68",
+      "claim": "Dentler (1980) showed that the growing axoneme in C. reinhardtii had structures linking from the tips of the microtubules to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Dentler (1980) showed that the growing axoneme in C. reinhardtii had structures linking from the tips of the microtubules to the membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dentler, 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "94ab3d29-30ef-4fd5-8c36-2e969722f64c",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C69",
+      "claim": "Woolley et al. (2006) failed to see linking structures in growing flagella of Leishmania major but did see them in mature flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Woolley et al. (2006) failed to see such linking structures in growing flagella of Leishmania major (but did see them in mature flagella)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Woolley et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "37929550-a28f-4d36-8a8e-c9264889dfbc",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C70",
+      "claim": "The presence of anchorage structures in C. reinhardtii could provide structural clues for the growing axoneme, holding it into a close-to-circular arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the presence of such anchorage in C. reinhardtii could provide structural clues for the growing axoneme, holding it into a close-to-circular arrangement",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observed differences between species",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "06b9b86c-76b4-4742-8acd-62e02ffa0a66",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C71",
+      "claim": "The circular arrangement in C. reinhardtii could facilitate the incorporation of the associated axonemal proteins such as radial spokes.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement could then facilitate the incorporation of the associated axonemal proteins such as radial spokes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observed structural organization",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "da7c08ed-2f05-4f14-980b-90797c7ab101",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C72",
+      "claim": "The initial growth rate of regrowing C. reinhardtii flagella (shed by ionic shock) is approximately 12\u201324 \u00b5m/hr, which then declines to 9 \u00b5m/hr as the flagellum gets longer.",
+      "claim_type": "EXPLICIT",
+      "source": "the initial growth rate of regrowing C. reinhardtii flagella (shed by ionic shock) is approximately 12\u201324 \u00b5m/hr, which then declines to 9 \u00b5m/hr as the flagellum gets longer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rosenbaum et al., 1969; Flavin and Slaughter, 1974",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "852d323d-78a8-4434-85e7-22f052e685ad",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C73",
+      "claim": "The flagellum growth rate in T. brucei was deduced from the growth rate of the PFR to be a constant approximately 4 \u00b5m/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. brucei, we deduced the flagellum growth rate from the growth rate of the PFR to be a constant \u223c4 \u00b5m/hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data cited from Bastin et al., 1999",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4144dceb-4ee0-4d93-aa62-a03d5431e980",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C74",
+      "claim": "The structural differences observed are not caused by a slower flagellar growth rate in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "These growth rates indicate that the structural differences we see are not caused by a slower flagellar growth rate, and therefore more organized growth, in C. reinhardtii",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of growth rates between the two species",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6296be0d-3819-4871-b796-eb8e994dfe12",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C75",
+      "claim": "In T. brucei, the new flagellum is not necessary for cell motility since the old flagellum is still present and active.",
+      "claim_type": "EXPLICIT",
+      "source": "In T. brucei, the new flagellum is not necessary for cell motility since the old flagellum is still present and active",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of T. brucei cell biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1c75974b-356b-4919-aa13-9ba661fb5895",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C76",
+      "claim": "In C. reinhardtii, both flagella have been shed as a preparation for mitosis, so the cell is completely dependent on the reappearance of the two new flagella for its motility.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. reinhardtii on the other hand, both flagella have been shed as a preparation for mitosis, so the cell is completely dependent on the reappearance of the two new flagella for its motility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of C. reinhardtii cell biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "0c39076a-a4e3-4b77-9534-658e6a6e521e",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C77",
+      "claim": "The rapid establishment of function is important for C. reinhardtii flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "making the rapid establishment of function important",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the dependence on flagella for motility",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d5057d1f-84ed-4f88-a1e6-1799bd05f72e",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C78",
+      "claim": "The beat form of the flagella differs between T. brucei and C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "The beat form of the flagella",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schmidt and Eckert, 1976; Heddergott et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "2dc478fe-41ce-4ae0-a5cf-71c1d151f755",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C79",
+      "claim": "T. brucei has a paraflagellar rod (PFR) structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a PFR in T. brucei",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Vickerman, 1962; Bastin et al., 1998; Portman and Gull, 2010; H\u00f6\u00f6g et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3ee8f490-ccb2-42e1-803a-b8736a7e9f05",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C80",
+      "claim": "C. reinhardtii has a rotational central pair.",
+      "claim_type": "EXPLICIT",
+      "source": "A rotational CP in C. reinhardtii",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mitchell, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "62c6a789-ce57-4059-9eb1-c7e0ac2cd551",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C81",
+      "claim": "T. brucei has a stationary central pair.",
+      "claim_type": "EXPLICIT",
+      "source": "vs a stationary CP T. brucei",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gadelha et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b2d46fa6-0460-403a-9f64-5fe8c3ccb52b",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C82",
+      "claim": "Deflagellation was not used to create a situation of regenerating flagella in C. reinhardtii in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that we did not use deflagellation to create a situation of regenerating flagella in C. reinhardtii",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the experimental methods used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "870de0ad-c9f9-4dd5-b44a-f7de7383aef3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C83",
+      "claim": "Regrowth after deflagellation might be different from the natural situation occurring when flagella regrow after mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "as this regrowth might be different from the natural situation occurring when flagella regrow after mitosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential differences in experimental conditions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "527fcf60-92a3-4690-a89e-8a7e4cdbb8c7",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C84",
+      "claim": "Pre-mitotic reabsorption of the flagellum probably allows for storage of the flagellar protein pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-mitotic reabsorption of the flagellum probably allows for storage of the flagellar protein pool",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from knowledge of flagellar biology",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "f81b9212-0059-41f8-9346-d7d1ec752b0b",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C85",
+      "claim": "The flagellar protein pool would have been lost in the event of ionic shock deflagellation.",
+      "claim_type": "EXPLICIT",
+      "source": "a pool that would have been lost in the event of ionic shock deflagellation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from knowledge of deflagellation mechanisms",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "f3d18bea-adc0-4059-a48c-a87c53b3302d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C86",
+      "claim": "In deflagellation before mitosis, the basal plate is lost in a final event of shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "in deflagellation before mitosis the basal plate is lost in a final event of shedding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Parker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1b369c21-55d5-4f48-a380-5e01d3d3d003",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C87",
+      "claim": "Stress induced deflagellation triggers a severing event distal to the basal plate, which can then form the transition zone for the next flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the stress induced deflagellation triggers a severing event distal to the basal plate, which can then form the transition zone for the next flagellum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rosenbaum et al., 1969",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "fbf340f7-9d0e-4b40-b6d2-535aa5137ab3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C88",
+      "claim": "No obvious CP cap was found in well preserved cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found no obvious CP cap, not disproving its existence (we did see evidence for filamentous proteins extending into the CP lumen), but showing that in well preserved cells it does not appear as previously described",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data and contrasts with previous descriptions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "fccbe88a-ccfd-45a8-a9b5-fd4b853bcff4",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C89",
+      "claim": "The CPs extend further than the dMTs by only within approximately 50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though we found the CPs to extend further than the dMTs, it was only within \u223c50 nm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data from electron tomography",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "da1375a6-ea05-41ac-856a-96f2349c0241",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C90",
+      "claim": "The published flagellar tip arrangement in C. reinhardtii shows the central pair protruding approximately 400 nm beyond the doublet microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast to the published flagellar tip arrangement in C. reinhardtii (of unknown dynamic state), that shows the central pair protruding \u223c400 nm beyond the doublet microtubules",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ringo, 1967",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "16ec756c-d233-4cef-8e95-0f0a6f6a61d3",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C91",
+      "claim": "The internal environments of flagella of different species are more different than presently assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in assembly order, speed, function, and structure, in two species both with the conventional 9+2 motile flagella structure, pose the question if the internal environments of flagella of different species are more different than presently assumed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed differences between species",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ab8800dd-2342-43b6-bfc0-c3996b2cd602",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C92",
+      "claim": "Ciliogenesis will most likely involve a whole subset of flagellar proteins, with functions that are distinct from the IFT of axonemal proteins to the assembling tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliogenesis will most likely involve a whole subset of flagellar proteins, with functions that are distinct from the IFT of axonemal proteins to the assembling tip",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observed complexity of flagellar assembly",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "36652ef8-d250-461f-8791-04a5f75888a8",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C93",
+      "claim": "Flagellar growth rates after ionic shock in C. reinhardtii are length dependent, with shorter flagella growing faster than longer ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Flagellar growth rates after ionic shock in C. reinhardtii are length dependent, with shorter flagella growing faster than longer ones",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c4c73437-07d2-4262-8384-66a25cc6b2cc",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C94",
+      "claim": "The length-dependent growth rate together with a steady disassembly rate forms the basis of the balance-point-model of flagellar length regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with a steady disassembly rate, this forms the basis of the balance-point-model of flagellar length regulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Marshall et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "48f4652d-49ad-4f7c-848c-658c43066c0a",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C95",
+      "claim": "The faster growth of short C. reinhardtii flagella depends on longer IFT trains in the short flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The faster growth of short C. reinhardtii was then showed to depend on longer IFT trans in the short flagellum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Engel et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "52e5d4e0-b35f-4405-a01a-b8aa4b888c15",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C96",
+      "claim": "The modes of assembly in the short and long post-mitotic C. reinhardtii tips do not differ beyond the point of central pair extension.",
+      "claim_type": "EXPLICIT",
+      "source": "This would fit well with our observations that the modes of assembly in the short and long post-mitotic C. reinhardtii tips do not differ beyond the point of central pair extension",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the electron tomography data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "de1e1a0f-5e45-4eac-9508-2b4581ff97f0",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C97",
+      "claim": "Differences were detected in short vs long growing flagellar tips in T. brucei.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we did detect differences in short vs long growing flagellar tips in T. brucei",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electron tomography data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "19ee5dc6-2807-4a9d-b2fc-0f7dc77644a1",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C98",
+      "claim": "T. brucei most likely has linear flagellum growth.",
+      "claim_type": "EXPLICIT",
+      "source": "an organism that most likely has linear flagellum growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from knowledge of T. brucei biology",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "e719633e-6f33-410b-8c0d-ddea7ef2a4fa",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C99",
+      "claim": "The absence of several axonemal components at the long growing tip in T. brucei might indicate that IFT is rate limiting in this growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of several axonemal components at the long growing tip might indicate that IFT is rate limiting in this growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observed absence of components",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "7336675d-0b92-48a1-b612-a94ca7c45b9e",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C100",
+      "claim": "If IFT is rate limiting in T. brucei, one would predict that flagellar length is independent of size of IFT trains in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "One would then predict that flagellar length is independent of size of IFT trains in these cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the hypothesis about IFT rate limitation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "55001f92-7a73-4187-b1ea-5fd73a6169de",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C101",
+      "claim": "The IFT traffic in T. brucei differs considerably from that of C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has recently been shown that the IFT traffic in T. brucei also differs considerably from that of C. reinhardtii",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Buisson et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6fe1adb6-5956-402c-b4f6-a5a4c9c26e50",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C102",
+      "claim": "Two modes of flagella growth have been revealed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "With this paper we have revealed two modes of flagella growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the electron tomography data presented throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6bf18d96-c223-4687-9621-25cad4c26189",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C103",
+      "claim": "Ciliogenesis is an area of flagellum biology that still remained mostly in the dark before this study.",
+      "claim_type": "EXPLICIT",
+      "source": "an area of flagellum biology that still remained mostly in the dark",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assessment of the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ddb11b18-3524-4d43-a2ad-ed98f02ead69",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "claim_id": "C104",
+      "claim": "This study complements extensive knowledge on IFT of building material to the site of flagellar growth.",
+      "claim_type": "EXPLICIT",
+      "source": "and complementing our extensive knowledge on IFT of building material to the site of flagellar growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assessment of the contribution of this work to the field",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study reveals two distinct modes of flagellar assembly: in C. reinhardtii, microtubules and associated proteins are added simultaneously during growth, while in T. brucei, disorganized microtubules are first extended and then organized by later addition of preformed protein complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C19-25, C56-67 provide converging electron tomography evidence showing organized growth in C. reinhardtii versus disorganized growth in T. brucei long flagella. The data from multiple flagellar stages, quantitative measurements, and visual evidence from Figures 1-2 and 7 strongly support this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "fdb52052-672e-4ad4-8667-be5fe80bea61",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Growing long T. brucei flagellar tips show disorganized doublet microtubules lacking associated structural proteins like central pair projections, suggesting microtubules extend beyond where associated proteins are positioned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-25 are supported by electron tomography data in Figures 1E and 2G showing disorganized dMTs and absence of structural proteins at growing tips. The inference that microtubules extend beyond associated proteins (C24-25) is reasonable given the visual evidence, though the sample size is relatively small (n=10 long flagella per Table 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "121ffc8f-a483-4994-95b3-f0925a4828be",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Quantitative analysis reveals species-specific differences in microtubule extension patterns: in T. brucei long flagella, central pairs lag behind doublet microtubules by ~50 nm, while in C. reinhardtii, central pairs extend ~50 nm beyond doublet microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-31 are supported by quantitative measurements shown in Figure 3 and Tables 2-3, with statistical testing (p<0.01 for differences). The measurements are precise and the sample sizes adequate (n=47-97 microtubules per condition). The finding that A- and B-tubule extension differs by only 10-20 nm challenges previous models of singlet regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6ec937f9-5dec-4bfc-9a87-2071a58ccb0b",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High-pressure frozen samples show no evidence of the previously reported singlet region in either species, with microtubule ends within 125 nm of the membrane, suggesting that chemical fixation artifacts distorted previous observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-35 are well-supported by comparative data (Figure 3\u2014figure supplement 1) showing dramatic differences between chemical fixation (up to 350 nm) and high-pressure freezing (max 125 nm). The conclusion that previous singlet region observations were fixation artifacts is reasonable, though the authors appropriately note they cannot completely disprove the existence of CP caps (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The T. brucei basal plate undergoes structural maturation during the cell cycle, transitioning from a defined two-ring structure with capped central pair minus ends in new flagella to a diffuse electron-dense mass with loosened central pair anchoring in old flagella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-49 are supported by detailed electron tomography reconstructions of 10 flagella across 5 cells at different cell cycle stages (Figure 5). The progression from organized two-ring structure (~30 nm) to diffuse mass (up to 90 nm) is well-documented visually and quantitatively. The observation of capped ends in new flagella (4/4) versus open ends in old flagella (6/9) provides strong evidence for maturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "f6d2005e-226c-46d1-b81f-6eeb96960313",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The C. reinhardtii transition zone central cylinder consists of two stacked baskets that maintain consistent proportions (upper basket 60\u00b15%, lower basket 28\u00b15%) as the structure grows lengthwise, showing no structural alterations comparable to T. brucei maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-55 are supported by electron tomography data from 9 transition zones (Figure 6). The quantitative analysis showing consistent proportions despite size variation is convincing. The conclusion that maturation differs between species (C54) is well-supported by the comparative data, though the sample size for C. reinhardtii is smaller than for T. brucei.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "18020dc8-1015-434f-8e90-2f950aac8c94",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Flagellar growth is length-dependent in both species, with no differences observed in short flagella between species, but distinct assembly mechanisms emerging in long flagella where T. brucei shows disorganized growth while C. reinhardtii maintains organized simultaneous assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-67, C96-97 are supported by comparative electron tomography data across different flagellar lengths. The observation that short flagella show similar assembly in both species while long flagella differ is well-documented in Figures 1-2 and 7. The inference about simultaneous vs. sequential assembly is reasonable given the structural evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "9f4179c9-edce-407b-b623-cdd8cc6ac759",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Growth rate analysis shows C. reinhardtii flagella initially grow at 12-24 \u03bcm/hr (declining to 9 \u03bcm/hr) while T. brucei flagella grow at a constant ~4 \u03bcm/hr, indicating that the observed structural differences are not due to slower growth in C. reinhardtii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-74 are supported by citations to prior work for C. reinhardtii growth rates and inference from PFR growth data for T. brucei. The logic that faster growth in C. reinhardtii rules out growth rate as an explanation for more organized assembly is sound. However, C73 involves indirect inference from PFR data rather than direct measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "80e49a8f-1e23-4e92-bc1e-fb93f5e96c53",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The presence of membrane-linking structures in C. reinhardtii (but not in Leishmania major, a T. brucei relative) may provide structural guidance that maintains circular arrangement and facilitates incorporation of associated proteins during growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-69 cite prior work, but C70-71 are explicitly speculative (\"We speculate,\" \"could facilitate\"). While the hypothesis is reasonable given the observed differences, the authors provide no direct evidence for membrane-linking structures in their own data. This remains an untested mechanistic explanation requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "4627a242-b3e4-4353-b4a9-76644b7097ca",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The different cellular contexts for flagellar growth\u2014T. brucei retains a functional old flagellum during new flagellum growth while C. reinhardtii depends entirely on rapid regrowth of both flagella after mitosis\u2014may explain the different assembly strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-77 are based on established knowledge of the cell biology of both organisms. The inference that functional requirements influence assembly strategy is reasonable, though this represents interpretation rather than direct experimental evidence. The logic connecting cellular context to assembly mechanism is plausible but not experimentally tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "6e83ef00-60ef-4278-b0cc-a1941499013a",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Electron tomography reveals both flared and capped microtubule ends in growing flagella, with electron-dense structures associated with central pairs and A-tubules extending into microtubule lumens in mature flagella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-40 are supported by visual evidence in Figure 4, showing different microtubule end morphologies and electron-dense structures. The observations are descriptive and well-documented through both conventional and cryo-electron tomography. These structural details support the broader assembly mechanism findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "82745e4f-b6dd-44c8-8229-716167876684",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used post-mitotic flagellar regrowth rather than deflagellation-induced regrowth in C. reinhardtii because these processes differ in protein pool availability and basal plate retention, potentially affecting assembly mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-87 explain important methodological choices. C82 is a factual statement about methods, while C83-87 provide reasonable justification based on cited literature (C86-87) and biological reasoning (C83-85). This methodological consideration strengthens the study by using more physiologically relevant conditions, though C83 acknowledges uncertainty about potential differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "bdd6bf08-9f97-48c9-8ff1-4b98af245439",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Well-preserved cells show no obvious central pair cap structure and central pairs extend only ~50 nm beyond doublet microtubules, contrasting with previous reports of ~400 nm protrusion in C. reinhardtii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-90 are supported by electron tomography data and comparison with prior literature (Ringo, 1967). The authors appropriately note they cannot disprove CP cap existence but show it doesn't appear as previously described. The discrepancy with prior work is likely explained by fixation artifacts (C32-34), making this a valid correction to the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ca4e28d7-8710-4dc7-b71b-e615ba801ee9",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The observed differences in assembly order, speed, function, and structure between two species with conventional 9+2 flagella suggest that flagellar internal environments may be more species-specific than currently assumed, with ciliogenesis likely involving distinct protein subsets beyond IFT machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-92 represent broader implications drawn from the comparative data. C91 is a reasonable inference from the documented differences, while C92 is explicitly speculative (\"will most likely\"). These claims appropriately frame the significance of the findings for understanding flagellar diversity and complexity, though they call for future work rather than providing direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "c7fc433a-e60e-4785-a369-56de3f35a21d",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Length-dependent growth rates in C. reinhardtii, which form the basis of the balance-point model of flagellar length regulation and depend on IFT train length, are consistent with the observation that assembly modes in short versus long post-mitotic C. reinhardtii flagella do not differ beyond central pair extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-95 cite established prior work on length regulation mechanisms. C96 connects this prior knowledge to the current observations, showing internal consistency. The integration of prior models with new structural data is appropriate, though this represents interpretation of how current findings fit existing frameworks rather than new experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b914e24d-9126-4fc9-9a0c-bd82acfb6ca5",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "T. brucei likely has linear flagellum growth, and the absence of axonemal components at long growing tips might indicate IFT rate limitation, though IFT traffic in T. brucei differs considerably from C. reinhardtii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-100 are explicitly speculative (\"most likely,\" \"might indicate,\" \"would predict\"). While C101 cites recent work showing IFT differences, the mechanistic explanations in C99-100 are hypotheses requiring experimental testing. The speculation is reasonable but represents future work rather than supported conclusions from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "595c7ff0-2c01-4657-93f6-55dac45d4c97",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Defects in cilia and flagella cause various human ciliopathies including primary ciliary dyskinesia, which are diagnosed by ultrastructural investigations, making species-specific structural knowledge critical for evaluating flagellar defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-3 cite established medical literature on ciliopathies. C14 represents the authors' conclusion about the clinical relevance of their findings. While the connection between the comparative structural biology and clinical diagnosis is somewhat indirect, the logic that understanding normal species-specific assembly is important for interpreting pathology is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "427bb41c-4ee7-4aae-a744-35f71bfbb923",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Flagella consist of ~1000 proteins that are delivered via intraflagellar transport to the distal end where they assemble, with previous work showing B-tubules end before A-tubules creating singlet regions, central pairs extending beyond doublets, and capping structures linking microtubules to membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-9 summarize established background knowledge from cited literature. These claims provide context for the study but are not novel findings. Notably, the current study challenges some of these prior observations (particularly C7 about singlet regions), which the authors appropriately address in their results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d9acafab-1589-41c3-8098-a4a293c8ea9f",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "C. reinhardtii reabsorbs and expels flagella before mitosis then regrows them in daughter cells, while T. brucei grows a new flagellum attached to the old flagellum via a flagella connector midway through the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-18 describe the cell biological context for each organism based on cited literature and established knowledge. These factual descriptions of the experimental systems are well-supported and essential for interpreting the assembly observations, though they represent background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "993dbdfd-c635-481d-96f5-40bcba0746f5",
+      "content_id": "e9506c46-fd5b-4afd-a236-f3b819281f72",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "T. brucei and C. reinhardtii flagella differ in beat form, presence of paraflagellar rod structure (T. brucei only), and central pair behavior (rotational in C. reinhardtii, stationary in T. brucei).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-81 cite prior literature documenting structural and functional differences between the two species. These established differences provide important context for understanding why assembly mechanisms might differ, though they are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "50fcc746-480a-47f9-aeb5-fa701a775c13",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The manuscript claims that C. reinhardtii and T. brucei use two fundamentally different mechanisms/pathways for flagellar assembly: simultaneous addition of microtubules and associated proteins in C. reinhardtii versus sequential assembly (disorganized microtubules followed by protein complex addition) in T. brucei.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers found the study 'intriguing' and liked 'the idea that there are different modes of assembly,' but expressed the main concern that 'you are over-stating your case. It may be that you are seeing different mechanisms, but you could easily be looking at different kinetics.' They recommend calling them 'different modes of assembly, rather than different mechanisms' and discussing alternative interpretations including how delayed protein incorporation may affect assembly kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1d01d6ca-1e28-4101-b6c3-346041884ac6",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "In T. brucei long flagella, the growing tip shows disorganized doublet microtubules (dMTs) with absent associated protein complexes (radial spokes, central pair projections), suggesting microtubules extend beyond associated proteins which are added later to stabilize the axoneme structure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accepted the observations, they raised concerns about interpretation, suggesting that 'the delayed incorporation of structural proteins that cross-link (and thus likely stabilize) the axonemal MTs may result in a less stable tip, which would in turn affect the kinetics of flagellar assembly.' This indicates the data could reflect kinetic differences rather than fundamentally different mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "32954a08-a771-448c-b430-372038d5e163",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In C. reinhardtii, the growing axoneme maintains circular arrangement with associated axonemal proteins present all the way to the growing tip, suggesting simultaneous assembly of microtubules and structural proteins.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers accepted the observations but questioned whether this represents a different mechanism versus different kinetics. They suggested the authors 'discuss other ways of interpreting your data' and consider how the presence of stabilizing proteins might affect assembly kinetics rather than representing a fundamentally different assembly pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Quantitative measurements show species-specific differences in microtubule-to-membrane distances and relative extension of central pairs versus doublet microtubules, with T. brucei showing microtubules touching the membrane in long new flagella and CPs lagging behind dMTs, while C. reinhardtii shows CPs extending further than dMTs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these quantitative observations directly. However, they noted that 'given that you only have 5 tomograms per condition, the data set is a bit limited, and that you should state this caveat somewhere,' indicating acceptance of the findings with acknowledgment of sample size limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "High-pressure freezing reveals that previously reported flagellar tip structures (singlet region, extensive CP protrusion) in C. reinhardtii were likely artifacts of chemical fixation, as high-pressure frozen samples show no singlet region and only ~50 nm CP extension beyond dMTs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these methodological findings about fixation artifacts. The observations about preservation quality and differences between fixation methods appear to be accepted as valid technical contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The T. brucei transition zone basal plate undergoes structural maturation during flagellar growth, changing from two stacked electron-dense rings (~30 nm thick) with capped CP minus ends in new flagella to a diffuse electron-dense mass (up to 90 nm thick) with open CP ends in old flagella.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not raise concerns about these structural observations of the transition zone. The detailed characterization of basal plate maturation appears to be accepted as a valid finding.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "7ea03b8b-aa03-414e-970a-153b2e4258d7",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The C. reinhardtii transition zone central cylinder consists of two stacked baskets that maintain consistent proportions (60\u00b15% upper, 28\u00b15% lower) as they grow lengthwise during maturation, contrasting with the structural alterations seen in T. brucei.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these structural observations about the C. reinhardtii transition zone. The characterization of the basket structure and its growth pattern appears to be accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "3e3eab95-1198-44d7-b3e4-49d991358a6a",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Flagellar growth occurs in a length-dependent manner in both species, with no differences detected between short T. brucei and C. reinhardtii flagella, but differences appearing in long growing flagellar tips of T. brucei.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these observations about length-dependent differences. The finding that short flagella are similar while long flagella differ appears to be accepted as valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study used post-mitotic flagellar regrowth rather than pH shock-induced deflagellation for C. reinhardtii, as these represent different biological situations with different protein pools and basal plate retention.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers explicitly requested that authors 'comment on why you did not use regeneration after pH shock, as this is a standard way to look at growth.' This indicates concern about the methodological choice and whether it affects interpretation of the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "63f2d966-37b8-4802-94db-7a452000f421",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "C. reinhardtii daughter cells remain within the mother cell wall where they regrow flagella after mitosis, ensuring the observed flagella are in a growing state.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers noted 'we realised that because they are always within the mother wall, this means that they must be growing, but you should make this point explicit in the text,' indicating acceptance of this reasoning once clarified.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "abf1d3c3-e008-421a-b431-c5cd2c63ecd6",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Growth rate comparisons show C. reinhardtii flagella initially grow at 12-24 \u03bcm/hr (declining to 9 \u03bcm/hr) while T. brucei grows at constant ~4 \u03bcm/hr, indicating structural differences are not due to slower growth in C. reinhardtii.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these growth rate comparisons or the inference that structural differences are not simply due to growth speed differences. This reasoning appears to be accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "cb55b95d-e660-48dd-8aa5-c180eaca665e",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Electron tomography reveals both flared and capped microtubule ends in flagellar tips, with electron-dense structures associated with central pairs and electron density extending into microtubule lumens in mature T. brucei flagella.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these detailed structural observations from electron tomography. These appear to be accepted as valid descriptive findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "14cdb0e6-78d4-42ce-82e6-5dba9d7a082f",
+      "content_id": "ee0d60ad-1a43-48e6-a836-e12f607263c9",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Defects in cilia and flagella cause various human ciliopathies, and species-specific structural knowledge is critical before evaluating flagellar defects, providing medical relevance for understanding different assembly mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers noted they 'like...the potential link to the structures seen in PCD patients,' indicating acceptance of the medical relevance and the importance of understanding species-specific differences for clinical applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c64072a3-f784-4688-9bdd-892e1c418c8e",
+      "result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2"
+    },
+    {
+      "claim_id": "e57b9524-9899-4a95-95a4-02ba765390c3",
+      "result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2"
+    },
+    {
+      "claim_id": "ba556fe6-ce97-4c19-b82d-a47ae62fb64f",
+      "result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2"
+    },
+    {
+      "claim_id": "c28ce4b7-d220-454c-84ca-e5eb14295aaa",
+      "result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2"
+    },
+    {
+      "claim_id": "02354d52-69a4-4748-8f5d-5b40144bd757",
+      "result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2"
+    },
+    {
+      "claim_id": "6fe1adb6-5956-402c-b4f6-a5a4c9c26e50",
+      "result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2"
+    },
+    {
+      "claim_id": "181ae4ac-0bdf-417a-b8ac-e8be2e6bf9ed",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "ef2da5e5-cdee-424c-b945-e16d047d98a8",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "8ae8c766-13ee-4aec-aeb7-6e98e7754115",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "8e354429-9934-4af6-ab99-0ae6422ede79",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "596ec5c7-4cd5-4a47-871a-4fc08b2ca392",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "887604dd-4ae3-4906-948b-acfcb2337bcd",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "c44fa44e-fd8a-4bc7-8c1b-705ce674e67b",
+      "result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61"
+    },
+    {
+      "claim_id": "1500a444-ca3a-4574-94e3-2c0e10659f1c",
+      "result_id": "121ffc8f-a483-4994-95b3-f0925a4828be"
+    },
+    {
+      "claim_id": "1968ea35-50f9-4a25-bd9c-a7cc0d81c856",
+      "result_id": "121ffc8f-a483-4994-95b3-f0925a4828be"
+    },
+    {
+      "claim_id": "32b86901-88c5-4a94-b05b-e2badcbb9138",
+      "result_id": "121ffc8f-a483-4994-95b3-f0925a4828be"
+    },
+    {
+      "claim_id": "3026702c-02cd-4bad-8d80-b33ff8956086",
+      "result_id": "121ffc8f-a483-4994-95b3-f0925a4828be"
+    },
+    {
+      "claim_id": "ad2ae935-8605-4047-a2d2-356431add6f9",
+      "result_id": "121ffc8f-a483-4994-95b3-f0925a4828be"
+    },
+    {
+      "claim_id": "56cf99ad-a95b-4db0-b77d-5be1374b628d",
+      "result_id": "121ffc8f-a483-4994-95b3-f0925a4828be"
+    },
+    {
+      "claim_id": "4b4395e2-3248-4744-a114-1cffebd920ae",
+      "result_id": "6ec937f9-5dec-4bfc-9a87-2071a58ccb0b"
+    },
+    {
+      "claim_id": "5ae92695-dd55-4bf6-bc44-af51c16b0862",
+      "result_id": "6ec937f9-5dec-4bfc-9a87-2071a58ccb0b"
+    },
+    {
+      "claim_id": "c6b2f930-cea6-40a4-bd11-f0353a10cf36",
+      "result_id": "6ec937f9-5dec-4bfc-9a87-2071a58ccb0b"
+    },
+    {
+      "claim_id": "6b490cb1-f23b-4c2f-91bb-2c2c44a99e81",
+      "result_id": "6ec937f9-5dec-4bfc-9a87-2071a58ccb0b"
+    },
+    {
+      "claim_id": "b46eb1af-8c07-4968-9d46-706646da9261",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "c29666e7-d19a-4b1c-af1f-99bd86482582",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "d362df2a-9e3e-4560-a314-134707e8e41e",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "3d0d811e-bcf2-43e3-8cf8-256e2b0bbcc6",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "b0490eac-c7f3-4860-924e-9e4cd3f9d60d",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "c35c2fb3-8855-4e47-ad6b-49b95d82506d",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "3f7326eb-442e-4f56-ba79-2b13804a00ed",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "3bc2d1ee-a99c-489d-81dd-8a35b8acf955",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "de9e96b5-131c-4900-9945-79de6d97377d",
+      "result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d"
+    },
+    {
+      "claim_id": "a6843313-586b-4e53-b6a0-1b8f9b949f6d",
+      "result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313"
+    },
+    {
+      "claim_id": "ea91ce83-0357-4473-880b-cc440d5c51f3",
+      "result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313"
+    },
+    {
+      "claim_id": "2e7dc198-aa5a-4ec3-93d5-0a1f9e94bc24",
+      "result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313"
+    },
+    {
+      "claim_id": "883cd05d-fa35-4f9e-b40a-4218031c7515",
+      "result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313"
+    },
+    {
+      "claim_id": "961d702a-b6f7-4fc7-af8a-5028cc36ba05",
+      "result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313"
+    },
+    {
+      "claim_id": "7b90aefd-4599-406d-ac53-808d845b97cf",
+      "result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313"
+    },
+    {
+      "claim_id": "42311334-10e4-40e9-a214-c997ff0abedf",
+      "result_id": "18020dc8-1015-434f-8e90-2f950aac8c94"
+    },
+    {
+      "claim_id": "3a4077c7-a230-47d8-bd8a-b8f9d4ee91f5",
+      "result_id": "18020dc8-1015-434f-8e90-2f950aac8c94"
+    },
+    {
+      "claim_id": "e9472089-9c62-4cb8-93a6-2ee92379aaa3",
+      "result_id": "18020dc8-1015-434f-8e90-2f950aac8c94"
+    },
+    {
+      "claim_id": "ccbad434-69d7-463e-a9d9-09c730b1bbc0",
+      "result_id": "18020dc8-1015-434f-8e90-2f950aac8c94"
+    },
+    {
+      "claim_id": "52e5d4e0-b35f-4405-a01a-b8aa4b888c15",
+      "result_id": "18020dc8-1015-434f-8e90-2f950aac8c94"
+    },
+    {
+      "claim_id": "de1e1a0f-5e45-4eac-9508-2b4581ff97f0",
+      "result_id": "18020dc8-1015-434f-8e90-2f950aac8c94"
+    },
+    {
+      "claim_id": "da7c08ed-2f05-4f14-980b-90797c7ab101",
+      "result_id": "9f4179c9-edce-407b-b623-cdd8cc6ac759"
+    },
+    {
+      "claim_id": "852d323d-78a8-4434-85e7-22f052e685ad",
+      "result_id": "9f4179c9-edce-407b-b623-cdd8cc6ac759"
+    },
+    {
+      "claim_id": "4144dceb-4ee0-4d93-aa62-a03d5431e980",
+      "result_id": "9f4179c9-edce-407b-b623-cdd8cc6ac759"
+    },
+    {
+      "claim_id": "7f6d2a30-f8f2-452b-99dd-4191e6e09dff",
+      "result_id": "80e49a8f-1e23-4e92-bc1e-fb93f5e96c53"
+    },
+    {
+      "claim_id": "94ab3d29-30ef-4fd5-8c36-2e969722f64c",
+      "result_id": "80e49a8f-1e23-4e92-bc1e-fb93f5e96c53"
+    },
+    {
+      "claim_id": "37929550-a28f-4d36-8a8e-c9264889dfbc",
+      "result_id": "80e49a8f-1e23-4e92-bc1e-fb93f5e96c53"
+    },
+    {
+      "claim_id": "06b9b86c-76b4-4742-8acd-62e02ffa0a66",
+      "result_id": "80e49a8f-1e23-4e92-bc1e-fb93f5e96c53"
+    },
+    {
+      "claim_id": "6296be0d-3819-4871-b796-eb8e994dfe12",
+      "result_id": "4627a242-b3e4-4353-b4a9-76644b7097ca"
+    },
+    {
+      "claim_id": "1c75974b-356b-4919-aa13-9ba661fb5895",
+      "result_id": "4627a242-b3e4-4353-b4a9-76644b7097ca"
+    },
+    {
+      "claim_id": "0c39076a-a4e3-4b77-9534-658e6a6e521e",
+      "result_id": "4627a242-b3e4-4353-b4a9-76644b7097ca"
+    },
+    {
+      "claim_id": "4d8eac27-bf58-4ef4-a2c1-c16c48e33bf3",
+      "result_id": "6e83ef00-60ef-4278-b0cc-a1941499013a"
+    },
+    {
+      "claim_id": "68c5fc0f-674b-4d66-bc36-0706e8652229",
+      "result_id": "6e83ef00-60ef-4278-b0cc-a1941499013a"
+    },
+    {
+      "claim_id": "cdd3eb6d-289b-4447-87bb-3b50ab687277",
+      "result_id": "6e83ef00-60ef-4278-b0cc-a1941499013a"
+    },
+    {
+      "claim_id": "b2d46fa6-0460-403a-9f64-5fe8c3ccb52b",
+      "result_id": "82745e4f-b6dd-44c8-8229-716167876684"
+    },
+    {
+      "claim_id": "870de0ad-c9f9-4dd5-b44a-f7de7383aef3",
+      "result_id": "82745e4f-b6dd-44c8-8229-716167876684"
+    },
+    {
+      "claim_id": "527fcf60-92a3-4690-a89e-8a7e4cdbb8c7",
+      "result_id": "82745e4f-b6dd-44c8-8229-716167876684"
+    },
+    {
+      "claim_id": "f81b9212-0059-41f8-9346-d7d1ec752b0b",
+      "result_id": "82745e4f-b6dd-44c8-8229-716167876684"
+    },
+    {
+      "claim_id": "f3d18bea-adc0-4059-a48c-a87c53b3302d",
+      "result_id": "82745e4f-b6dd-44c8-8229-716167876684"
+    },
+    {
+      "claim_id": "1b369c21-55d5-4f48-a380-5e01d3d3d003",
+      "result_id": "82745e4f-b6dd-44c8-8229-716167876684"
+    },
+    {
+      "claim_id": "fbf340f7-9d0e-4b40-b6d2-535aa5137ab3",
+      "result_id": "bdd6bf08-9f97-48c9-8ff1-4b98af245439"
+    },
+    {
+      "claim_id": "fccbe88a-ccfd-45a8-a9b5-fd4b853bcff4",
+      "result_id": "bdd6bf08-9f97-48c9-8ff1-4b98af245439"
+    },
+    {
+      "claim_id": "da1375a6-ea05-41ac-856a-96f2349c0241",
+      "result_id": "bdd6bf08-9f97-48c9-8ff1-4b98af245439"
+    },
+    {
+      "claim_id": "16ec756c-d233-4cef-8e95-0f0a6f6a61d3",
+      "result_id": "ca4e28d7-8710-4dc7-b71b-e615ba801ee9"
+    },
+    {
+      "claim_id": "ab8800dd-2342-43b6-bfc0-c3996b2cd602",
+      "result_id": "ca4e28d7-8710-4dc7-b71b-e615ba801ee9"
+    },
+    {
+      "claim_id": "36652ef8-d250-461f-8791-04a5f75888a8",
+      "result_id": "c7fc433a-e60e-4785-a369-56de3f35a21d"
+    },
+    {
+      "claim_id": "c4c73437-07d2-4262-8384-66a25cc6b2cc",
+      "result_id": "c7fc433a-e60e-4785-a369-56de3f35a21d"
+    },
+    {
+      "claim_id": "48f4652d-49ad-4f7c-848c-658c43066c0a",
+      "result_id": "c7fc433a-e60e-4785-a369-56de3f35a21d"
+    },
+    {
+      "claim_id": "52e5d4e0-b35f-4405-a01a-b8aa4b888c15",
+      "result_id": "c7fc433a-e60e-4785-a369-56de3f35a21d"
+    },
+    {
+      "claim_id": "19ee5dc6-2807-4a9d-b2fc-0f7dc77644a1",
+      "result_id": "b914e24d-9126-4fc9-9a0c-bd82acfb6ca5"
+    },
+    {
+      "claim_id": "e719633e-6f33-410b-8c0d-ddea7ef2a4fa",
+      "result_id": "b914e24d-9126-4fc9-9a0c-bd82acfb6ca5"
+    },
+    {
+      "claim_id": "7336675d-0b92-48a1-b612-a94ca7c45b9e",
+      "result_id": "b914e24d-9126-4fc9-9a0c-bd82acfb6ca5"
+    },
+    {
+      "claim_id": "55001f92-7a73-4187-b1ea-5fd73a6169de",
+      "result_id": "b914e24d-9126-4fc9-9a0c-bd82acfb6ca5"
+    },
+    {
+      "claim_id": "cd512071-e95d-4d90-9493-02556fddc846",
+      "result_id": "595c7ff0-2c01-4657-93f6-55dac45d4c97"
+    },
+    {
+      "claim_id": "4357d798-d377-49df-a60d-6cfea7289b01",
+      "result_id": "595c7ff0-2c01-4657-93f6-55dac45d4c97"
+    },
+    {
+      "claim_id": "e8b45425-1761-4566-a75e-b6d551d718a0",
+      "result_id": "595c7ff0-2c01-4657-93f6-55dac45d4c97"
+    },
+    {
+      "claim_id": "4a49201b-1536-4b67-90f7-077e2cf2d930",
+      "result_id": "595c7ff0-2c01-4657-93f6-55dac45d4c97"
+    },
+    {
+      "claim_id": "d476fffc-e631-4a6d-8ae6-0bb7f5eece15",
+      "result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923"
+    },
+    {
+      "claim_id": "6a14aebd-7fa3-4e4b-82b0-3b4966a31ebd",
+      "result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923"
+    },
+    {
+      "claim_id": "7379753e-824d-4a99-b76e-afaf25edaee0",
+      "result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923"
+    },
+    {
+      "claim_id": "18025246-e234-4511-8412-178cb6f8bd9f",
+      "result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923"
+    },
+    {
+      "claim_id": "77d5e3a1-108c-4d73-9964-45550bafb529",
+      "result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923"
+    },
+    {
+      "claim_id": "16d6aee3-828c-4964-a9ba-7adaa272447e",
+      "result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923"
+    },
+    {
+      "claim_id": "57a8c548-d704-4b93-a99a-97dfd078d2c5",
+      "result_id": "d9acafab-1589-41c3-8098-a4a293c8ea9f"
+    },
+    {
+      "claim_id": "155f37f1-3cda-480f-a3f1-f897156530af",
+      "result_id": "d9acafab-1589-41c3-8098-a4a293c8ea9f"
+    },
+    {
+      "claim_id": "bececc86-730e-43c8-83f4-b2e148ebd2d6",
+      "result_id": "d9acafab-1589-41c3-8098-a4a293c8ea9f"
+    },
+    {
+      "claim_id": "90045cb7-1932-4a1e-9608-f74bbb395cbe",
+      "result_id": "d9acafab-1589-41c3-8098-a4a293c8ea9f"
+    },
+    {
+      "claim_id": "d5057d1f-84ed-4f88-a1e6-1799bd05f72e",
+      "result_id": "993dbdfd-c635-481d-96f5-40bcba0746f5"
+    },
+    {
+      "claim_id": "2dc478fe-41ce-4ae0-a5cf-71c1d151f755",
+      "result_id": "993dbdfd-c635-481d-96f5-40bcba0746f5"
+    },
+    {
+      "claim_id": "3ee8f490-ccb2-42e1-803a-b8736a7e9f05",
+      "result_id": "993dbdfd-c635-481d-96f5-40bcba0746f5"
+    },
+    {
+      "claim_id": "62c6a789-ce57-4059-9eb1-c7e0ac2cd551",
+      "result_id": "993dbdfd-c635-481d-96f5-40bcba0746f5"
+    },
+    {
+      "claim_id": "c64072a3-f784-4688-9bdd-892e1c418c8e",
+      "result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13"
+    },
+    {
+      "claim_id": "e57b9524-9899-4a95-95a4-02ba765390c3",
+      "result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13"
+    },
+    {
+      "claim_id": "ba556fe6-ce97-4c19-b82d-a47ae62fb64f",
+      "result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13"
+    },
+    {
+      "claim_id": "c28ce4b7-d220-454c-84ca-e5eb14295aaa",
+      "result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13"
+    },
+    {
+      "claim_id": "02354d52-69a4-4748-8f5d-5b40144bd757",
+      "result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13"
+    },
+    {
+      "claim_id": "6fe1adb6-5956-402c-b4f6-a5a4c9c26e50",
+      "result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13"
+    },
+    {
+      "claim_id": "181ae4ac-0bdf-417a-b8ac-e8be2e6bf9ed",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "ef2da5e5-cdee-424c-b945-e16d047d98a8",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "8ae8c766-13ee-4aec-aeb7-6e98e7754115",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "8e354429-9934-4af6-ab99-0ae6422ede79",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "596ec5c7-4cd5-4a47-871a-4fc08b2ca392",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "887604dd-4ae3-4906-948b-acfcb2337bcd",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "c44fa44e-fd8a-4bc7-8c1b-705ce674e67b",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "d326673a-1732-4287-b461-6e9d6383cce9",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "672e99b5-9ad8-4308-ab9c-37e735950d7c",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "e9472089-9c62-4cb8-93a6-2ee92379aaa3",
+      "result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6"
+    },
+    {
+      "claim_id": "8769e00f-d757-46c9-8e7e-ce1c16739fec",
+      "result_id": "32954a08-a771-448c-b430-372038d5e163"
+    },
+    {
+      "claim_id": "b1424ef0-fae3-4848-83f2-894d9508f73f",
+      "result_id": "32954a08-a771-448c-b430-372038d5e163"
+    },
+    {
+      "claim_id": "ccbad434-69d7-463e-a9d9-09c730b1bbc0",
+      "result_id": "32954a08-a771-448c-b430-372038d5e163"
+    },
+    {
+      "claim_id": "1500a444-ca3a-4574-94e3-2c0e10659f1c",
+      "result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b"
+    },
+    {
+      "claim_id": "1968ea35-50f9-4a25-bd9c-a7cc0d81c856",
+      "result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b"
+    },
+    {
+      "claim_id": "32b86901-88c5-4a94-b05b-e2badcbb9138",
+      "result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b"
+    },
+    {
+      "claim_id": "3026702c-02cd-4bad-8d80-b33ff8956086",
+      "result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b"
+    },
+    {
+      "claim_id": "ad2ae935-8605-4047-a2d2-356431add6f9",
+      "result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b"
+    },
+    {
+      "claim_id": "56cf99ad-a95b-4db0-b77d-5be1374b628d",
+      "result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b"
+    },
+    {
+      "claim_id": "4b4395e2-3248-4744-a114-1cffebd920ae",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "5ae92695-dd55-4bf6-bc44-af51c16b0862",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "c6b2f930-cea6-40a4-bd11-f0353a10cf36",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "6b490cb1-f23b-4c2f-91bb-2c2c44a99e81",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "fbf340f7-9d0e-4b40-b6d2-535aa5137ab3",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "fccbe88a-ccfd-45a8-a9b5-fd4b853bcff4",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "da1375a6-ea05-41ac-856a-96f2349c0241",
+      "result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395"
+    },
+    {
+      "claim_id": "b46eb1af-8c07-4968-9d46-706646da9261",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "c29666e7-d19a-4b1c-af1f-99bd86482582",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "d362df2a-9e3e-4560-a314-134707e8e41e",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "3d0d811e-bcf2-43e3-8cf8-256e2b0bbcc6",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "b0490eac-c7f3-4860-924e-9e4cd3f9d60d",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "c35c2fb3-8855-4e47-ad6b-49b95d82506d",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "3f7326eb-442e-4f56-ba79-2b13804a00ed",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "3bc2d1ee-a99c-489d-81dd-8a35b8acf955",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "de9e96b5-131c-4900-9945-79de6d97377d",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "b7b6d208-6d99-4b36-9ebd-d0c06e030432",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "d2cf5ecc-d2f8-42c9-af95-3e645c2f86ef",
+      "result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510"
+    },
+    {
+      "claim_id": "a6843313-586b-4e53-b6a0-1b8f9b949f6d",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "ea91ce83-0357-4473-880b-cc440d5c51f3",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "2e7dc198-aa5a-4ec3-93d5-0a1f9e94bc24",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "883cd05d-fa35-4f9e-b40a-4218031c7515",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "961d702a-b6f7-4fc7-af8a-5028cc36ba05",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "7b90aefd-4599-406d-ac53-808d845b97cf",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "941fec76-05b5-429f-9bb3-ee3c53fb1ee0",
+      "result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7"
+    },
+    {
+      "claim_id": "42311334-10e4-40e9-a214-c997ff0abedf",
+      "result_id": "3e3eab95-1198-44d7-b3e4-49d991358a6a"
+    },
+    {
+      "claim_id": "3a4077c7-a230-47d8-bd8a-b8f9d4ee91f5",
+      "result_id": "3e3eab95-1198-44d7-b3e4-49d991358a6a"
+    },
+    {
+      "claim_id": "de1e1a0f-5e45-4eac-9508-2b4581ff97f0",
+      "result_id": "3e3eab95-1198-44d7-b3e4-49d991358a6a"
+    },
+    {
+      "claim_id": "b2d46fa6-0460-403a-9f64-5fe8c3ccb52b",
+      "result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e"
+    },
+    {
+      "claim_id": "870de0ad-c9f9-4dd5-b44a-f7de7383aef3",
+      "result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e"
+    },
+    {
+      "claim_id": "527fcf60-92a3-4690-a89e-8a7e4cdbb8c7",
+      "result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e"
+    },
+    {
+      "claim_id": "f81b9212-0059-41f8-9346-d7d1ec752b0b",
+      "result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e"
+    },
+    {
+      "claim_id": "f3d18bea-adc0-4059-a48c-a87c53b3302d",
+      "result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e"
+    },
+    {
+      "claim_id": "1b369c21-55d5-4f48-a380-5e01d3d3d003",
+      "result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e"
+    },
+    {
+      "claim_id": "57a8c548-d704-4b93-a99a-97dfd078d2c5",
+      "result_id": "63f2d966-37b8-4802-94db-7a452000f421"
+    },
+    {
+      "claim_id": "155f37f1-3cda-480f-a3f1-f897156530af",
+      "result_id": "63f2d966-37b8-4802-94db-7a452000f421"
+    },
+    {
+      "claim_id": "da7c08ed-2f05-4f14-980b-90797c7ab101",
+      "result_id": "abf1d3c3-e008-421a-b431-c5cd2c63ecd6"
+    },
+    {
+      "claim_id": "852d323d-78a8-4434-85e7-22f052e685ad",
+      "result_id": "abf1d3c3-e008-421a-b431-c5cd2c63ecd6"
+    },
+    {
+      "claim_id": "4144dceb-4ee0-4d93-aa62-a03d5431e980",
+      "result_id": "abf1d3c3-e008-421a-b431-c5cd2c63ecd6"
+    },
+    {
+      "claim_id": "4d8eac27-bf58-4ef4-a2c1-c16c48e33bf3",
+      "result_id": "cb55b95d-e660-48dd-8aa5-c180eaca665e"
+    },
+    {
+      "claim_id": "68c5fc0f-674b-4d66-bc36-0706e8652229",
+      "result_id": "cb55b95d-e660-48dd-8aa5-c180eaca665e"
+    },
+    {
+      "claim_id": "cdd3eb6d-289b-4447-87bb-3b50ab687277",
+      "result_id": "cb55b95d-e660-48dd-8aa5-c180eaca665e"
+    },
+    {
+      "claim_id": "cd512071-e95d-4d90-9493-02556fddc846",
+      "result_id": "14cdb0e6-78d4-42ce-82e6-5dba9d7a082f"
+    },
+    {
+      "claim_id": "4357d798-d377-49df-a60d-6cfea7289b01",
+      "result_id": "14cdb0e6-78d4-42ce-82e6-5dba9d7a082f"
+    },
+    {
+      "claim_id": "e8b45425-1761-4566-a75e-b6d551d718a0",
+      "result_id": "14cdb0e6-78d4-42ce-82e6-5dba9d7a082f"
+    },
+    {
+      "claim_id": "4a49201b-1536-4b67-90f7-077e2cf2d930",
+      "result_id": "14cdb0e6-78d4-42ce-82e6-5dba9d7a082f"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c0dcd580-e9bb-4943-893a-73eba1f9a79e",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "95ebb44f-98dd-400f-8aa7-0465ad6d27b2",
+      "peer_result_id": "50fcc746-480a-47f9-aeb5-fa701a775c13",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the main finding about organized vs. disorganized growth (C10, C11, C13, C36, C63, C102). OpenEval finds the evidence strongly supportive, while peer reviewers accept the observations but express concern about overstating the case, suggesting the differences may reflect kinetics rather than fundamentally different mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b3373b83-36d6-4db3-a29d-9ed66031466a",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "fdb52052-672e-4ad4-8667-be5fe80bea61",
+      "peer_result_id": "1d01d6ca-1e28-4101-b6c3-346041884ac6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address disorganized dMTs and protein incorporation in T. brucei long flagella (C19-C25). OpenEval finds the electron tomography data supportive with reasonable inferences. Peer reviewers accept the observations but question interpretation, suggesting delayed protein incorporation may affect assembly kinetics rather than representing a different mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1baef47b-1db8-41e0-9750-e7b6f015f880",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "121ffc8f-a483-4994-95b3-f0925a4828be",
+      "peer_result_id": "9f8c8c27-caf7-49b9-af6b-fb0062b8439b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate quantitative measurements of A- and B-tubule extension differences (C26-C31). OpenEval finds the data well-supported with adequate statistical testing and sample sizes. Peer reviewers accept the findings but note the limited dataset (5 tomograms per condition) and request this caveat be stated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "60d5ee53-f3c1-4687-af0f-8ba6eeea20cd",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6ec937f9-5dec-4bfc-9a87-2071a58ccb0b",
+      "peer_result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address fixation artifacts and singlet region observations (C32-C35, C88-C90). OpenEval finds the comparative data compelling and the conclusion about fixation artifacts reasonable. Peer reviewers do not challenge these methodological findings, appearing to accept them as valid technical contributions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "eec6fb9e-ed8b-4bf0-ab46-a1fac6f8851a",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "386a17d6-5f31-4b97-948b-5813ef8c3b5d",
+      "peer_result_id": "35f78ed0-8e42-4e21-97d8-afbb6a64a510",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate basal plate maturation in T. brucei transition zone (C41-C49). OpenEval finds the progression from organized to diffuse structure well-documented with strong visual and quantitative evidence. Peer reviewers do not raise concerns, appearing to accept the structural observations as valid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "ab65d347-a9d0-4533-bc35-dbcd7290f080",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "f6d2005e-226c-46d1-b81f-6eeb96960313",
+      "peer_result_id": "7ea03b8b-aa03-414e-970a-153b2e4258d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address C. reinhardtii transition zone structure (C50-C55). OpenEval finds the electron tomography data and quantitative analysis convincing, noting smaller sample size than T. brucei. Peer reviewers do not challenge these observations, appearing to accept the basket structure characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "2d2a536f-79c6-4f4f-8411-4da6c8a53856",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "18020dc8-1015-434f-8e90-2f950aac8c94",
+      "peer_result_id": "3e3eab95-1198-44d7-b3e4-49d991358a6a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate length-dependent assembly differences (C64-C65, C97). OpenEval finds the comparative data well-documented and the inference about simultaneous vs. sequential assembly reasonable. Peer reviewers accept these observations without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "f39a6773-b586-4d7c-abcf-ecc16649c070",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "18020dc8-1015-434f-8e90-2f950aac8c94",
+      "peer_result_id": "32954a08-a771-448c-b430-372038d5e163",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on C67 regarding assembly differences. OpenEval supports the structural evidence for different assembly modes. Peer reviewers (R3) question whether this represents different mechanisms versus different kinetics, suggesting alternative interpretations should be discussed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "9812f9c7-a95e-4ded-a446-c6625a41a721",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "9f4179c9-edce-407b-b623-cdd8cc6ac759",
+      "peer_result_id": "abf1d3c3-e008-421a-b431-c5cd2c63ecd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate growth rate comparisons (C72-C74). OpenEval finds the logic sound that faster C. reinhardtii growth rules out growth rate as explanation, though notes C73 involves indirect inference. Peer reviewers accept this reasoning without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "63935646-9988-4ebd-aa83-9819078e0424",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "6e83ef00-60ef-4278-b0cc-a1941499013a",
+      "peer_result_id": "cb55b95d-e660-48dd-8aa5-c180eaca665e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address detailed microtubule end morphologies (C38-C40). OpenEval finds the visual evidence from electron tomography well-documented and supportive of broader findings. Peer reviewers accept these descriptive structural observations as valid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "2303bc14-2c23-4597-864c-58a50f460d40",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "82745e4f-b6dd-44c8-8229-716167876684",
+      "peer_result_id": "f45cbca8-58ce-4d24-81fd-acedc4672e0e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate methodological choices about using dividing cells vs. pH shock regeneration (C82-C87). OpenEval finds the justification reasonable based on literature and biological reasoning. Peer reviewers express concern, explicitly requesting comment on why pH shock regeneration was not used as a standard method.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "750e2db4-bfc8-40cd-b780-ef1c0d95c4a7",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "bdd6bf08-9f97-48c9-8ff1-4b98af245439",
+      "peer_result_id": "cf4fafdf-e531-41e1-82cb-3583ce8e8395",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address CP cap observations and fixation artifacts (C88-C90). OpenEval finds the authors appropriately note they cannot disprove CP cap existence but show it doesn't appear as previously described. Peer reviewers do not challenge these findings, appearing to accept them as part of the fixation artifact observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "b2f6e55a-5f0e-4c80-8ec2-a39340035023",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "595c7ff0-2c01-4657-93f6-55dac45d4c97",
+      "peer_result_id": "14cdb0e6-78d4-42ce-82e6-5dba9d7a082f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate clinical relevance and ciliopathy connections (C1-C3, C14). OpenEval finds the logic sound that understanding species-specific assembly is important for interpreting pathology, though connection is somewhat indirect. Peer reviewers like the potential link to PCD patients, indicating acceptance of medical relevance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "8fc355f9-c270-4edb-9bb5-0afb7dc94286",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "d9acafab-1589-41c3-8098-a4a293c8ea9f",
+      "peer_result_id": "63f2d966-37b8-4802-94db-7a452000f421",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address cell biological context for C. reinhardtii (C15-C16). OpenEval finds these factual descriptions well-supported as essential background. Peer reviewers accept this reasoning but request it be made more explicit in the text that flagella within mother wall must be growing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "976fab34-c7c3-4df8-a096-35c39b47c043",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "80e49a8f-1e23-4e92-bc1e-fb93f5e96c53",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates speculation about membrane-linking structures (C68-C71) as UNCERTAIN, noting the hypothesis is reasonable but lacks direct evidence and requires future validation. No corresponding peer review evaluation found for these specific speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "dcc3c437-578b-44ab-96b5-a25c9daed1ac",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "4627a242-b3e4-4353-b4a9-76644b7097ca",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims about functional requirements influencing assembly strategy (C75-C77) as SUPPORTED based on established cell biology, though noting this is interpretation rather than direct experimental evidence. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "1af99f4b-07a9-43c8-86a5-0c0a81e8cbfd",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "ca4e28d7-8710-4dc7-b71b-e615ba801ee9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates broader implications about flagellar diversity (C91-C92) as SUPPORTED, noting C92 is explicitly speculative and calls for future work. No corresponding peer review evaluation found for these significance claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "8f94f6af-57d2-49a1-886a-435359e726d2",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "c7fc433a-e60e-4785-a369-56de3f35a21d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates integration of prior length regulation models (C93-C96) as SUPPORTED, noting this represents interpretation of how findings fit existing frameworks. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "d8bd9c05-91c0-4f19-b3a6-089b58f4bdf4",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "b914e24d-9126-4fc9-9a0c-bd82acfb6ca5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates speculative mechanistic explanations about IFT (C98-C101) as UNCERTAIN, noting these are explicitly speculative hypotheses requiring experimental testing. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "47fb9f2e-3ac3-4c59-95ca-e44fe503b7be",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "427bb41c-4ee7-4aae-a744-35f71bfbb923",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background knowledge claims (C4-C9) as SUPPORTED, noting these summarize established literature and provide context, though the current study challenges some prior observations. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    },
+    {
+      "id": "79fcaf82-2c75-4237-afc0-3b089d334373",
+      "submission_id": "387c15a8-03e7-46f9-8268-58c45fcaeebf",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "993dbdfd-c635-481d-96f5-40bcba0746f5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates prior literature on structural and functional differences between species (C78-C81) as SUPPORTED background context. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:38.825267Z"
+    }
+  ]
+}

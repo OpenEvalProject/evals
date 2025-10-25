@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Comparative genomics of 25 E. lenta strains revealed an 8-gene cgr-associated gene cluster with 100% discriminative value between digoxin metabolizers and non-metabolizers. This cluster includes the 2-gene cgr operon (cgr1 and cgr2) plus six neighboring cac genes, and is highly conserved (99.95 \u00b1 0.05% nucleotide identity) among cgr+ strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23, C24, and C26 collectively demonstrate the identification and characterization of the cgr gene cluster through machine learning analysis and sequence comparison. The 100% discriminative value from random forest analysis (C23) and high sequence conservation (C26) provide strong evidence for this genetic locus being responsible for digoxin metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cgr2 alone is sufficient for digoxin reduction in heterologous expression systems. Expression of Cgr2 in R. erythropolis resulted in significant dihydrodigoxin production, while Cgr1 expression alone showed no activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C38, and C39 provide converging evidence from heterologous expression experiments that Cgr2 is sufficient for digoxin reduction. The positive result with Cgr2 alone (C37) and negative result with Cgr1 alone (C38) strongly support this conclusion, though the inability to detect Cgr1 overexpression is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cgr2 requires FAD as a cofactor but does not co-purify with it. Chemical reconstitution with iron and sulfide improved protein stability, and addition of excess FAD dramatically increased activity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C47-C49 describe the cofactor requirements of Cgr2. The observation that Cgr2 has conserved FAD-binding motifs (C41) but doesn't co-purify with FAD (C42), combined with the dramatic activity increase upon FAD addition (C48), provides clear evidence for FAD as a required but loosely bound cofactor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cgr2 contains oxygen-sensitive [Fe-S] clusters despite lacking canonical binding motifs. UV-vis spectroscopy showed absorption features consistent with [Fe-S] clusters that are redox-active and decompose upon oxygen exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C51-C56 collectively demonstrate the presence of [Fe-S] clusters through multiple lines of evidence: protein color (C44), iron/sulfide content (C51), and UV-vis spectroscopy showing characteristic absorption features (C52-C54) and oxygen sensitivity (C55-C56). The lack of canonical motifs (C46) makes this a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "EPR spectroscopy confirmed that Cgr2 contains [4Fe-4S]2+ clusters that can be reduced to [4Fe-4S]1+ state. The EPR signal characteristics (g-values of 2.045 and 1.94, temperature dependence) are diagnostic of low-potential tetranuclear [4Fe-4S]1+ centers. Reconstitution increased cluster content from 0.02-0.03 to 0.13-0.25 clusters per monomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C63-C64 provide definitive EPR spectroscopic evidence for [4Fe-4S] clusters. The specific g-values (C58), temperature dependence (C59-C60), and quantification (C63-C64) are all consistent with established spectroscopic signatures of [4Fe-4S] clusters, providing strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Site-directed mutagenesis identified six cysteine residues critical for Cgr2 activity, but EPR analysis showed these mutants retained comparable [4Fe-4S] cluster incorporation, suggesting these cysteines may not directly ligate the cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C67 present seemingly contradictory findings: six cysteines are critical for activity (C66) but their mutation doesn't affect [4Fe-4S] cluster incorporation (C67). The authors acknowledge this uncertainty and propose alternative roles for these residues, but the exact function remains unclear. Additional structural or biochemical data would be needed to resolve this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cgr2 displays strict substrate specificity for cardenolides (plant toxins including digoxin, digitoxin, and ouabain). The enzyme shows minimal activity toward the isolated lactone and no activity toward 28 other tested compounds including structurally related steroids and other xenobiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C86-C90 provide comprehensive substrate specificity data from testing 28 compounds. The robust activity only toward cardenolides (C86), faster metabolism of aglycones (C87), requirement for intact steroid core (C88), and tolerance of hydroxyl group variations (C89) collectively demonstrate strict specificity for this compound class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Cgr2 is highly conserved with only two nucleotide variants detected: Y333/N333 (common, bi-allelic in 9:5 ratio in isolates, 15:34 in metagenomes) and V381/M381 (rare, M381 only in DSM 2243). The gene is at the 67th percentile of conservation in the E. lenta pan-genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 describe comprehensive sequence analysis across isolates and metagenomes. The identification of only two variants (C71-C73), validation through multiple methods including Sanger sequencing and metagenomic analysis (C74-C78), and pan-genome context (C79) provide strong evidence for high conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The N333 variant of Cgr2 shows reduced activity compared to Y333. In vivo, N333 strains showed a trend toward decreased digoxin metabolism (p=0.052). In vitro, Y333 had KM = 94.6 \u00b1 7.1 \u00b5M and catalytic efficiency of 2.4 \u00b1 0.8\u00d710\u00b3 M\u207b\u00b9 s\u207b\u00b9, while N333 could not reach saturating conditions. However, at endpoint (4.5 hr), both variants showed comparable conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 demonstrate functional consequences of the Y333N substitution through multiple assays. The trend in vivo (C80, p=0.052 approaches significance), clear difference in vitro (C81), kinetic parameters (C82-C83), and endpoint comparison (C84) collectively support reduced but not abolished activity for N333. The p-value of 0.052 is borderline but the in vitro data strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Cgr2 is widespread in human gut microbiomes. Metagenomic analysis of 1872 individuals detected E. lenta in 41.5% and cgr2 in 27.7% of subjects. qPCR validation in 158 individuals showed higher prevalence: 81.6% for E. lenta and 74.7% for cgr2. The abundance of E. lenta and cgr2 was significantly correlated (rho = 0.455, p<0.001), with a skew suggesting mixed cgr+/cgr- strain colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C100-C106 provide robust prevalence data from two independent methods (metagenomics and qPCR) across large sample sizes. The significant correlation (C102), statistical analysis of distribution skew (C103), and validation across methods (C105-C106) strongly support widespread distribution. The higher prevalence by qPCR (C105) vs metagenomics (C100-C101) is expected due to sensitivity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors propose that gut bacteria maintain specialized enzymes to protect the host from ingested plant toxins, analogous to intestinal and hepatic detoxification systems. This is based on Cgr2's strict specificity for cardenolides and its widespread distribution despite low dietary exposure to these compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C114, and C115 present a hypothesis about the evolutionary function of Cgr2. While the strict substrate specificity (from other results) and widespread distribution support this interpretation, the authors acknowledge they cannot rule out an unidentified endogenous substrate (C115). The lack of direct benefit to bacteria (C91, C114) supports the host-protection hypothesis, but this remains speculative without additional evolutionary or functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Cgr2 does not reduce fumarate and cardenolides do not confer growth advantage to cgr2+ E. lenta, indicating these compounds are not used as terminal electron acceptors. This led to re-evaluation of the original 'fumarate reductase' annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 are supported by growth assay data showing no benefit from fumarate or cardenolides. This negative result is important for understanding Cgr2 function and is appropriately supported by experimental data (Figure 4\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "Sequence similarity network analysis revealed that Cgr2 is distinct from characterized bacterial reductases. At thresholds where characterized enzymes separate into isofunctional clusters, Cgr2 appears as a singleton. Cgr2 lacks active site residues of fumarate reductases (6/7 divergent), urocanate reductases (4/5 divergent), and ketosteroid dehydrogenases (3/5 divergent), suggesting it uses a unique catalytic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97, C99 provide comprehensive bioinformatic analysis showing Cgr2's uniqueness. The SSN analysis (C94-C95), identification of 113 uncharacterized reductase clusters (C96), and systematic comparison of active site residues (C97) collectively support the conclusion that Cgr2 represents a novel enzyme class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Bioinformatic analysis suggests Cgr1 is a membrane-anchored cytochrome c3 that may transfer electrons from the quinone pool to Cgr2, while Cgr2 is a unique FAD-dependent reductase predicted to undergo Tat secretion. A close Cgr1 homolog exists in all E. lenta strains (both cgr+ and cgr-), suggesting Cgr1 has a general function rather than specific role in digoxin reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe bioinformatic predictions about Cgr1 and Cgr2. The identification of a Cgr1 homolog in non-metabolizing strains (C31-C32) and Cgr2's uniqueness to cgr+ strains (C33) provide strong support for their proposed roles. However, these remain predictions as functional Cgr1 could not be produced (noted in C38 evaluation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose a working model where Cgr1 and Cgr2 form a membrane-associated complex for digoxin reduction. Electrons flow from a donor through Cgr1 cytochromes to Cgr2's [4Fe-4S] clusters, then to FAD, which transfers a hydride to the cardenolide lactone ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C108, and C109 present a mechanistic model that is explicitly labeled as a hypothesis (C36) and working model (C108). While consistent with the biochemical data, key aspects remain untested: the Cgr1-Cgr2 interaction, electron transfer pathway, and detailed mechanism. The model is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Seven additional digoxin-metabolizing E. lenta strains were identified beyond DSM 2243. The digoxin metabolism phenotype showed no significant phylogenetic signal (p=0.275, K=0.049), suggesting multiple independent gain/loss events during E. lenta evolution. Experiments used 10 \u00b5M digoxin, within the estimated therapeutic gut concentration range (0.4-14.6 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe the strain collection and phylogenetic analysis. The identification of additional metabolizing strains (C19), appropriate digoxin concentration (C20), statistical test for phylogenetic signal (C21), and evolutionary inference (C22) are all well-supported by the data and methods described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "RNA-seq analysis showed only the cgr operon (cgr1 and cgr2) is highly upregulated (>165-fold) in response to digoxin, while cac4 is not significantly induced (1.3-fold, p=0.83) and other cac genes are transcriptionally dormant (<6 normalized counts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by RNA-seq data with appropriate statistical analysis. The high fold-change for cgr genes, non-significant induction of cac4 with p-value, and low expression of other cac genes provide clear evidence that only the cgr operon is responsive to digoxin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Divalent metal cations (Fe\u00b2\u207a, Mn\u00b2\u207a, Mg\u00b2\u207a) stimulate Cgr2 activity in vitro, with Fe\u00b2\u207a rescuing activity of only 3 of 6 impaired cysteine mutants. This may relate to substrate binding, as Mg\u00b2\u207a mediates digoxin binding to its human target Na\u207a/K\u207a ATPase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe metal activation studies with supporting data. The differential rescue of mutants by Fe\u00b2\u207a (C69) and analogy to digoxin-ATPase binding (C70) provide context for interpreting the metal stimulation results (C68). The data support metal involvement though the exact mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The cgr gene cluster is highly conserved with only two variants, which is surprising given Cgr2's strict specificity for rarely ingested cardenolides. This conservation, combined with overall E. lenta pan-genome analysis, suggests phenotypic variation in this species is driven more by gene gain/loss than by polymorphisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 synthesize findings about conservation and evolutionary implications. The high conservation (from C26, C71-C79), substrate specificity (from C86-C90), and pan-genome context (C79) support the conclusion about gene gain/loss driving variation (C112). The observation about surprising conservation (C111) is a reasonable interpretation given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The discovery of a functionally significant single amino acid substitution (Y333N) in cgr2 emphasizes the need for nucleotide-level precision in mapping gut microbiome gene content for predicting drug metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C117 present a translational implication supported by the functional characterization of the N333 variant (from C80-C84). The recommendation for nucleotide-level precision (C117) logically follows from demonstrating that a single SNP affects enzyme activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work established that gut bacteria reduce digoxin to dihydrodigoxin, with E. lenta identified as the responsible organism. However, E. lenta presence alone cannot predict activity due to strain-level variation and dietary inhibition. The authors previously identified the cgr operon as responsible for this activity and demonstrated its function in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C17 summarize established knowledge and prior work by the authors. These are appropriately cited and provide necessary context for the current study. The claims accurately represent the state of knowledge before this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "This work demonstrates a generalizable framework for mechanistic investigation of gut microbial xenobiotic metabolism, progressing from clinical observations to genes, enzymes, and mechanisms. The identified reductase clusters in the SSN provide starting points for discovering additional microbiome-xenobiotic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 present methodological conclusions and future directions. The demonstration of the framework (C120) is supported by the successful progression from prior clinical observations to detailed mechanism. The identification of 113 uncharacterized reductase clusters (from C96) supports the recommendation for future work (C123).",
+    "result_type": "MINOR"
+  }
+]

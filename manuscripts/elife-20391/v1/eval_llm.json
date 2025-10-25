@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors determined the crystal structure of the human TREM2 ectodomain at 3.1 \u00c5 resolution, revealing a V-type Ig domain with two disulfide bonds, nine \u03b2-strands, two short \u03b1-helix passages, and a single N-acetylglucosamine glycan at N79. The asymmetric unit contains two similar monomers (C\u03b1 RMSD 0.65 \u00c5) that likely do not form a physiological dimer in solution based on limited buried surface area (~400 \u00c5\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure is well-supported by comprehensive crystallographic data (Tables 1-2), excellent quality metrics (97.7% favored Ramachandran, 0% outliers, Molprobity 100th percentile), and clear electron density maps (Figure 1). The resolution determination methodology is rigorously documented, and structural features are directly observable in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C40",
+      "C41"
+    ],
+    "result": "Structural analysis reveals that Nasu-Hakola disease (NHD) mutations (Y38C, T66M, V126G) are buried within the protein core with conserved residues, while Alzheimer's disease (AD) risk variants (R47H, R62H) are surface-exposed. The authors propose that Y38C disrupts disulfide formation, T66M causes steric clashes, and V126G destabilizes the hydrophobic core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural localization of mutations is well-supported by solvent accessibility calculations (Figure 1c) and detailed structural analysis (Figure 1\u2014figure supplement 2). The mechanistic predictions for NHD mutations are reasonable structural inferences based on local packing environments, though they remain hypotheses requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "NHD mutations cause protein misfolding and aggregation, as demonstrated by oligomerization in non-reducing conditions, decreased recognition by conformation-specific antibodies, diffuse intracellular accumulation, and SDS-resistant aggregates. Despite misfolding, NHD mutants retain some surface expression detectable by anti-FLAG antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary techniques (SEC, Western blot, flow cytometry, confocal microscopy) consistently demonstrate misfolding and aggregation of NHD mutants (Figure 2). The differential recognition by anti-FLAG versus anti-TREM2 antibodies provides strong evidence for conformational defects. The experiments are well-controlled and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C69"
+    ],
+    "result": "Both Y38C (NHD) and R47H (AD) variants show reduced sustained signaling compared to WT TREM2 in phospho-ERK assays, though both retain some initial signaling potential. The authors speculate this may reflect aberrant folding kinetics or inability to bind required co-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The signaling defects are demonstrated by phospho-ERK immunoblots in two cell types (RAW264.7 and Cos-7, Figure 2i-j). However, the mechanistic interpretation (C69) is speculative and not directly tested. The result is supported but the underlying mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C71",
+      "C72"
+    ],
+    "result": "AD risk variants show subtle effects on TREM2 structure and stability. R47H exhibits an altered CD spectrum ratio, and all surface variants (R47H, R62H, T96K) show slightly reduced thermal stability by DSF, with T96K most affected. All variants show reversible thermal denaturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biophysical characterization is thorough, using multiple techniques (CD, DSF, thermal denaturation) on multiple independent protein preparations (Figure 3). The subtle nature of the effects is consistent with surface mutations. Statistical analysis confirms significance for R47H CD changes. The reversibility experiments provide important controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C36",
+      "C37",
+      "C75"
+    ],
+    "result": "TREM2 binds phospholipids with broad specificity for anionic over neutral lipids, but AD risk variants do not show differential phospholipid binding compared to WT. TREM2-lipid binding is EDTA-insensitive, unlike TIM and CD300 proteins, suggesting a different binding mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Direct phospholipid binding is demonstrated by ELISA and liposome sedimentation assays (Figure 4\u2014figure supplement 1). The lack of variant-specific differences is clearly shown. The EDTA insensitivity and structural comparison with TIM/CD300 proteins provide strong evidence for a distinct binding mode. This negative result is important for understanding TREM2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C38",
+      "C39",
+      "C79",
+      "C80"
+    ],
+    "result": "TREM2 binds to a cell-surface ligand (TREM2-L) on N2A and THP-1 cells that contains both protein and glycosaminoglycan (GAG) components. Binding is abolished by PMA/ionomycin treatment, reduced by protease treatment, and highly dependent on heparan sulfate as shown by heparinase sensitivity and lack of binding to GAG-deficient CHO-745 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of TREM2-L is comprehensive, using multiple cell types and enzymatic treatments (Figure 4). The tetramer binding reagent is well-validated. Controls with different stimuli, proteases, and glycosidases systematically dissect ligand components. The CHO-745 negative control is particularly strong evidence for GAG involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C27",
+      "C28",
+      "C29",
+      "C82",
+      "C83"
+    ],
+    "result": "AD risk variants differentially affect TREM2-L binding: R47H shows markedly diminished binding, R62H shows intermediate reduction, and T96K shows significantly increased binding across three independent assay formats (tetramer staining, monomeric binding, competition assays).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding differences are demonstrated using three complementary methods on multiple cell types (Figure 4k-l, Figure 4\u2014figure supplement 2c-e). The consistency across assay formats strengthens the conclusions. The T96K gain-of-function is particularly interesting and correlates with its potential protective effect in AD. At least two independent experiments support each finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C85",
+      "C86",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "TREM2 possesses a unique basic surface patch (R47, R62, K66, R76, R77) not conserved in other TREM family members that mediates GAG binding. Mutations in this patch (R76D, R77D) reduce cell binding, and AD risk variants affect GAG binding. Other TREM-like proteins lacking this patch do not bind GAGs despite similar pI values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The basic patch is clearly identified by electrostatic surface analysis and sequence alignment (Figure 5). Functional validation through R76D/R77D mutations directly tests the patch's role (Figure 5g). The negative controls with TREML2 and TREML4 (Figure 4h-i) demonstrate specificity. This represents a novel functional surface unique to TREM2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose that TREM2 binding to GAGs in cis is required to orient or cluster TREM2 for phospholipid signaling, and that a hydrophobic patch adjacent to the basic patch may mediate lipid binding. Alternatively, phospholipids may orient TREM2 for presentation to GAGs and/or protein receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative models (C73, C74, C78) attempting to reconcile the observation that R47H binds phospholipids but doesn't signal in cellular assays. While the hydrophobic patch is identified structurally (C76, Figure 6\u2014figure supplement 1), its functional role is not experimentally tested. These hypotheses require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose a dosage-dependent model where homozygous NHD mutations cause complete loss of function leading to severe early-onset disease, while heterozygous AD risk variants cause partial loss of function leading to late-onset disease. They predict heterozygous NHD mutations could increase AD risk, supported by rare case reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model logically integrates the structural and functional data with genetic observations (Figure 6a). The prediction about heterozygous NHD mutations is supported by cited case reports (C96, Guerreiro et al., 2013b). However, this remains a model requiring validation through additional genetic studies and animal models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Prior genetic studies establish that TREM2 R47H confers AD risk similar to APOE4, correlates with increased CSF tau, and is found in multiple neurodegenerative diseases. R62H is also a validated AD risk factor, while N68K, D87N are uncertain due to rarity, and T96K may be protective. Homozygous TREM2 mutations cause NHD or frontotemporal dementia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize well-established findings from multiple cited genetic studies. The authors appropriately distinguish between validated risk variants (R47H, R62H) and uncertain variants (N68K, D87N, T96K) based on allele frequency and statistical power. The citations are appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prior studies in TREM2-deficient AD mouse models demonstrate that loss of TREM2 function reduces microglial activation, prevents proliferation, promotes apoptosis, increases A\u03b2 plaque accumulation, and promotes diffuse neurotoxic A\u03b2 structures, highlighting TREM2's crucial role in CNS homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize findings from multiple cited mouse model studies (Wang et al., 2015; Jay et al., 2015; Wang et al., 2016; Yuan et al., 2016). The authors appropriately use these prior findings to contextualize their structural and functional work. The synthesis into a model of CNS homeostasis (C59) is a reasonable inference from the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A recent study reported that TREM2 binds lipid-loaded ApoE and facilitates A\u03b2 uptake by microglia, with AD risk variants decreasing ApoE binding. The authors speculate ApoE is not the protein component of cell-surface TREM2-L because it is soluble rather than membrane-bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citation to Yeh et al., 2016 is appropriate and the summary accurate. The speculation about ApoE not being the membrane-bound TREM2-L (C89) is reasonable given ApoE's known properties as a soluble lipoprotein. This appropriately integrates concurrent findings into their model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Soluble TREM2 (sTREM2) may function as a survival signal, as shown in bone marrow macrophages, and could play a similar role in the CNS where it is detectable. AD risk variants, but not NHD mutants, are detected in patient CSF, potentially explaining why they retain some function and cause less severe disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of sTREM2 in CSF and differential detection of variants (C100, cited from Piccio et al., 2016) is supported. However, the proposed survival signaling role in CNS (C98) and the mechanistic explanation for disease severity differences (C101) are speculative. These hypotheses require direct experimental testing in relevant models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62"
+    ],
+    "result": "TREM2 is an innate immune receptor expressed on dendritic cells, macrophages, osteoclasts, and microglia that associates with DAP12 adapter protein containing an ITAM motif, and engagement of TREM2 ligand induces signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about TREM2 biology appropriately presented as background knowledge. The schematic in Figure 1a accurately represents the known TREM2-DAP12 signaling architecture. This provides essential context for interpreting the structural and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The authors recommend that therapies targeting the TREM2 pathway should be tailored to genetic and functional differences using patient-specific medicine approaches for neurodegenerative disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This recommendation logically follows from the demonstrated distinct molecular mechanisms of NHD versus AD mutations. The structural and functional characterization provides a rational basis for personalized therapeutic approaches. However, this is a forward-looking recommendation rather than an experimentally tested result.",
+    "result_type": "MINOR"
+  }
+]

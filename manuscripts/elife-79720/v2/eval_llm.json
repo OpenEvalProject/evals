@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C85"
+    ],
+    "result": "The study utilized genetic instruments from large GWAS datasets (320 SNPs for SHBG, 316 for testosterone, 7 for estradiol, 18 for IGF-1) and COVID-19 outcome data from the COVID-19 HGI consortium comprising 60 studies across 25 countries with over 1 million participants for each outcome (susceptibility, hospitalization, severity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are clearly stated and describe appropriate data sources with large sample sizes. The genetic instruments and outcome data are well-documented with specific numbers of SNPs and participants, providing a solid foundation for the Mendelian randomization analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C60"
+    ],
+    "result": "Higher genetically predicted IGF-1 levels showed nominally significant associations with reduced risk of COVID-19 susceptibility (OR=0.77, p=0.027) and hospitalization (OR=0.62, p=0.018), but not severity (OR=0.85, p=0.513). These associations did not survive Bonferroni correction for multiple testing, and sensitivity analyses showed no evidence of pleiotropy or outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the primary analysis shows nominally significant associations for susceptibility and hospitalization, the failure to survive multiple testing correction is a critical limitation. The confidence interval for hospitalization (0.25-0.51) appears suspiciously narrow and may indicate a reporting error. Without correction, these findings remain suggestive but not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "After removing SNPs associated with BMI to control for confounding, the associations between IGF-1 and COVID-19 outcomes remained similar: susceptibility (OR=0.76, p=0.021), hospitalization (OR=0.61, p=0.014), and severity (OR=0.84, p=0.497).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sensitivity analysis excluding BMI-associated SNPs demonstrates robustness of the primary findings, with consistent effect directions and similar effect sizes. This strengthens the evidence that the observed associations are not driven by BMI confounding, though the lack of Bonferroni correction still applies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sensitivity analysis using only SNPs located in the IGF-1 gene region showed directionally consistent but non-significant associations with COVID-19 susceptibility (OR=0.99, p=0.777), hospitalization (OR=0.90, p=0.645), and severity (OR=1.01, p=0.415).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This sensitivity analysis using gene-region SNPs shows effect estimates closer to the null compared to the primary analysis, suggesting potential weak instrument bias as acknowledged by the authors (C56). The inconsistency between this analysis and the primary results raises questions about the robustness of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C18"
+    ],
+    "result": "No causal associations were found between genetically predicted testosterone or SHBG levels and COVID-19 outcomes (susceptibility, hospitalization, or severity) in the overall population, with all p-values >0.10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The null findings for testosterone and SHBG are consistently reported across all three COVID-19 outcomes with adequate sample sizes and appropriate statistical methods. The confidence intervals are reasonably narrow and consistently include the null value, providing strong evidence for lack of association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Using a single SNP (rs7173595) in the CYP19A1 gene as a proxy for estradiol levels, no associations were found with COVID-19 outcomes in either females or males, though confidence intervals were extremely wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The extremely wide confidence intervals (e.g., 0.00-12.73 for severity in females) indicate severe lack of statistical power with a single-SNP instrument. The Wald ratio method with one instrument is highly susceptible to weak instrument bias and provides minimal information. This analysis cannot definitively rule out associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Multiple lines of biological evidence from prior studies support that IGF-1 has anti-inflammatory properties in the lung, including promoting alveolar epithelial cell repair, enhancing phagocytosis, and reducing inflammatory cytokine production, which may contribute to improved COVID-19 outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological plausibility is well-supported by multiple independent studies cited (C29-C39) demonstrating IGF-1's role in lung tissue repair, immune regulation, and anti-inflammatory effects. These mechanisms provide a coherent biological framework for the observed associations, though they are based on prior work rather than new experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "IGF-1 and estrogen have bidirectional regulatory interactions, with IGF-1 enhancing estrogen receptor activity and estrogen upregulating IGF-1 signaling components. Estrogen also has immune-enhancing effects and may affect SARS-CoV-2 entry mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interactions between IGF-1 and estrogen are well-documented in the cited literature (C42, C43), providing biological context for why these hormones might show similar directional effects on COVID-19 outcomes. However, this is background information from prior work, not new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C86",
+      "C87"
+    ],
+    "result": "The literature on testosterone and COVID-19 shows conflicting evidence, with both high and low testosterone levels associated with poor outcomes in different studies. Testosterone has complex immunosuppressive effects that could be either harmful or beneficial depending on disease stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately acknowledges the complexity and contradictory findings in the literature regarding testosterone and COVID-19 (C48-C54), which is consistent with the null findings in this MR study. The cited evidence demonstrates genuine uncertainty in the field about testosterone's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study has important limitations including potential weak instrument bias (especially in sensitivity analyses with fewer SNPs), restriction to European ancestry populations limiting generalizability, and the inherent advantages of MR design in reducing confounding and reverse causality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge key methodological limitations (C56, C58, C59) while also noting the strengths of the MR approach (C55). The discussion of weak instrument bias is particularly relevant given the inconsistent results between primary and gene-region sensitivity analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background literature establishes that males account for >60% of COVID-19 deaths, and sex hormones (estrogen as immune-boosting, testosterone as immunosuppressing) and related factors (SHBG, IGF-1) may contribute to sex differences in COVID-19 outcomes through various immune and viral entry mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims are appropriately supported by citations to prior literature and establish the scientific rationale for investigating sex hormones and COVID-19. These are standard literature review claims that provide context for the study.",
+    "result_type": "MINOR"
+  }
+]

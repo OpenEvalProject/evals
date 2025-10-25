@@ -20,6 +20,7 @@ Options:
 
 import json
 import re
+import sqlite3
 import subprocess
 import sys
 import threading
@@ -29,6 +30,9 @@ from pathlib import Path
 
 # Path to CLLM tool in its venv
 CLLM_BIN = Path(__file__).parent.parent / "cllm" / ".venv" / "bin" / "cllm"
+
+# Path to database
+DB_PATH = Path(__file__).parent / "evals.sqlite"
 
 # Global lock for thread-safe printing
 print_lock = threading.Lock()
@@ -40,17 +44,74 @@ def safe_print(*args, **kwargs):
         print(*args, **kwargs)
 
 
+def get_queued_papers_from_db():
+    """
+    Get list of papers with QUEUED status from database.
+
+    Returns:
+        List of dicts with jats_id and openeval_rel_path
+    """
+    if not DB_PATH.exists():
+        return None
+
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+
+        cursor.execute("""
+            SELECT id, openeval_rel_path
+            FROM jats
+            WHERE openeval_status = 'QUEUED'
+            ORDER BY pub_date
+        """)
+
+        results = [dict(row) for row in cursor.fetchall()]
+        conn.close()
+
+        return results
+    except Exception as e:
+        print(f"Warning: Failed to read database: {e}")
+        return None
+
+
+def update_paper_status(jats_id: str, new_status: str):
+    """
+    Update paper status in database.
+
+    Args:
+        jats_id: JATS ID (e.g., "elife-00003-v1")
+        new_status: New status ('PROCESSED', 'QUEUED', 'UNPROCESSED')
+    """
+    if not DB_PATH.exists():
+        return
+
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+
+        cursor.execute("""
+            UPDATE jats
+            SET openeval_status = ?
+            WHERE id = ?
+        """, (new_status, jats_id))
+
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"Warning: Failed to update database status for {jats_id}: {e}")
+
+
 def has_peer_reviews(version_dir: Path) -> bool:
     """Check if this version has peer reviews."""
-    # Look for reviews_v*.md files
-    review_files = list(version_dir.glob("reviews_v*.md"))
-    if not review_files:
+    # Look for reviews.md file
+    reviews_file = version_dir / "reviews.md"
+    if not reviews_file.exists():
         return False
 
     # Check if file has content (not empty)
-    for review_file in review_files:
-        if review_file.stat().st_size > 100:  # More than 100 bytes
-            return True
+    if reviews_file.stat().st_size > 100:  # More than 100 bytes
+        return True
 
     return False
 
@@ -104,6 +165,7 @@ def run_cllm_workflow(
     peer_reviews_file: Path | None,
     dry_run: bool = False,
     verbose: bool = True,
+    metrics: bool = False,
     use_safe_print: bool = False,
 ) -> bool:
     """
@@ -122,6 +184,7 @@ def run_cllm_workflow(
         peer_reviews_file: Path to peer reviews file (optional)
         dry_run: If True, only print what would be done
         verbose: Enable verbose logging
+        metrics: Enable metrics generation (automatically enables verbose)
         use_safe_print: If True, use thread-safe printing
 
     Returns:
@@ -138,10 +201,18 @@ def run_cllm_workflow(
     if dry_run:
         _print(f"      → Would run CLLM workflow:")
         _print(f"        1. Extract claims -> {claims_file.name}")
+        if metrics:
+            _print(f"           Metrics: metrics_extract.json")
         _print(f"        2. Evaluate (LLM) -> {eval_llm_file.name}")
+        if metrics:
+            _print(f"           Metrics: metrics_eval_openeval.json")
         if peer_reviews_file:
             _print(f"        3. Evaluate (peer) -> {eval_peer_file.name}")
+            if metrics:
+                _print(f"           Metrics: metrics_eval_peer.json")
             _print(f"        4. Compare -> {cmp_file.name}")
+            if metrics:
+                _print(f"           Metrics: metrics_cmp.json")
         _print(f"        5. Database export -> {db_export_file.name}")
         return True
 
@@ -149,7 +220,8 @@ def run_cllm_workflow(
         _print(f"      ✗ CLLM binary not found at {CLLM_BIN}")
         return False
 
-    verbose_flag = ["-v"] if verbose else []
+    # Metrics flag automatically enables verbose for all commands
+    verbose_flag = ["-v"] if (verbose or metrics) else []
 
     try:
         # Stage 1: Extract claims
@@ -164,7 +236,7 @@ def run_cllm_workflow(
             ],
             capture_output=True,
             text=True,
-            timeout=300,
+            timeout=600,
         )
 
         if result.returncode != 0:
@@ -184,7 +256,7 @@ def run_cllm_workflow(
             ],
             capture_output=True,
             text=True,
-            timeout=300,
+            timeout=600,
         )
 
         if result.returncode != 0:
@@ -206,7 +278,7 @@ def run_cllm_workflow(
                 ],
                 capture_output=True,
                 text=True,
-                timeout=300,
+                timeout=600,
             )
 
             if result.returncode != 0:
@@ -226,7 +298,7 @@ def run_cllm_workflow(
                 ],
                 capture_output=True,
                 text=True,
-                timeout=300,
+                timeout=600,
             )
 
             if result.returncode != 0:
@@ -266,30 +338,30 @@ def process_single_manuscript(args):
     Wrapper function to process a single manuscript (used for parallel processing).
 
     Args:
-        args: Tuple of (index, total, article_id, version_dir, manuscript_file, force, dry_run, verbose)
+        args: Tuple of (index, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics)
 
     Returns:
-        Tuple of (article_id, version_name, status, message)
+        Tuple of (jats_id, article_id, version_name, status, message)
         where status is 'success', 'skipped', or 'failed'
     """
-    i, total, article_id, version_dir, manuscript_file, force, dry_run, verbose = args
+    i, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics = args
     version_name = version_dir.name
 
-    # Check if already processed (look for claims.json)
-    claims_file = version_dir / "claims.json"
-    if not force and claims_file.exists():
-        safe_print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+    # Check if already processed (look for db_export.json - the final output file)
+    db_export_file = version_dir / "db_export.json"
+    if not force and db_export_file.exists():
+        safe_print(f"📄 [{i}/{total}] {article_id}/{version_name} ({jats_id})")
         safe_print(f"      ⏭️  Already processed (use --force to overwrite)")
         safe_print()
-        return (article_id, version_name, 'skipped', 'Already processed')
+        return (jats_id, article_id, version_name, 'skipped', 'Already processed')
 
-    safe_print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+    safe_print(f"📄 [{i}/{total}] {article_id}/{version_name} ({jats_id})")
 
     # Check for peer reviews
     peer_reviews_file = None
-    review_files = list(version_dir.glob("reviews_v*.md"))
-    if review_files and has_peer_reviews(version_dir):
-        peer_reviews_file = review_files[0]
+    reviews_file = version_dir / "reviews.md"
+    if reviews_file.exists() and has_peer_reviews(version_dir):
+        peer_reviews_file = reviews_file
         safe_print(f"      📝 Peer reviews: {peer_reviews_file.name}")
     else:
         safe_print(f"      📝 No peer reviews")
@@ -301,15 +373,21 @@ def process_single_manuscript(args):
         peer_reviews_file,
         dry_run=dry_run,
         verbose=verbose,
+        metrics=metrics,
         use_safe_print=True,
     )
+
+    # Update database status
+    if success and not dry_run:
+        update_paper_status(jats_id, 'PROCESSED')
+        safe_print(f"      ✓ Updated database status to PROCESSED")
 
     safe_print()
 
     if success:
-        return (article_id, version_name, 'success', 'Completed')
+        return (jats_id, article_id, version_name, 'success', 'Completed')
     else:
-        return (article_id, version_name, 'failed', 'Workflow failed')
+        return (jats_id, article_id, version_name, 'failed', 'Workflow failed')
 
 
 def process_manuscript_versions(
@@ -321,9 +399,11 @@ def process_manuscript_versions(
     verbose: bool = True,
     parallel: int = 1,
     reverse: bool = False,
+    use_database: bool = True,
+    metrics: bool = False,
 ) -> tuple[int, int, int, int]:
     """
-    Process all manuscript version folders.
+    Process manuscript version folders.
 
     Args:
         manuscripts_dir: Directory containing organized manuscript folders
@@ -334,23 +414,64 @@ def process_manuscript_versions(
         verbose: Enable verbose CLLM logging
         parallel: Number of manuscripts to process in parallel (1 for sequential)
         reverse: If True, process manuscripts in reverse order (newest first)
+        use_database: If True, only process papers with QUEUED status from database
+        metrics: If True, generate metrics files for each workflow stage
 
     Returns:
         (total_processed, successful, failed, skipped)
     """
-    # Get all manuscript directories
-    manuscript_dirs = sorted([d for d in manuscripts_dir.iterdir() if d.is_dir()])
-
-    # Build list of all version directories
+    # Build list of papers to process
     version_dirs = []
-    for manuscript_dir in manuscript_dirs:
-        # Find all version directories (v1, v2, etc.)
-        for version_dir in sorted(manuscript_dir.glob("v*")):
-            if version_dir.is_dir():
-                # Check if this version has a manuscript file
-                manuscript_files = list(version_dir.glob("manuscript_v*.md"))
-                if manuscript_files:
-                    version_dirs.append((manuscript_dir.name, version_dir, manuscript_files[0]))
+
+    if use_database:
+        # Get QUEUED papers from database
+        queued_papers = get_queued_papers_from_db()
+
+        if queued_papers is None:
+            print("❌ Error: Could not read database. Use --no-db to process all papers.")
+            return 0, 0, 0, 0
+
+        print(f"📊 Found {len(queued_papers)} QUEUED papers in database")
+
+        # Build paths from database entries
+        for paper in queued_papers:
+            jats_id = paper['id']
+            openeval_rel_path = paper['openeval_rel_path']
+
+            # Construct the version directory path
+            version_dir = manuscripts_dir.parent / openeval_rel_path
+            manuscript_file = version_dir / "manuscript.md"
+
+            if not version_dir.exists():
+                print(f"⚠️  Warning: Directory not found for {jats_id}: {version_dir}")
+                continue
+
+            if not manuscript_file.exists():
+                print(f"⚠️  Warning: Manuscript file not found for {jats_id}: {manuscript_file}")
+                continue
+
+            # Extract article_id from jats_id (e.g., "elife-00003-v1" -> "elife-00003")
+            article_id = '-'.join(jats_id.split('-')[:-1])
+
+            version_dirs.append((jats_id, article_id, version_dir, manuscript_file))
+
+    else:
+        # Get all manuscript directories (original behavior)
+        manuscript_dirs_list = sorted([d for d in manuscripts_dir.iterdir() if d.is_dir()])
+
+        # Build list of all version directories
+        for manuscript_dir in manuscript_dirs_list:
+            article_id = manuscript_dir.name
+            # Find all version directories (v1, v2, etc.)
+            for version_dir in sorted(manuscript_dir.glob("v*")):
+                if version_dir.is_dir():
+                    # Check if this version has a manuscript file
+                    manuscript_file = version_dir / "manuscript.md"
+                    if manuscript_file.exists():
+                        # Construct jats_id from article_id and version
+                        version_name = version_dir.name  # e.g., "v1"
+                        jats_id = f"{article_id}-{version_name}"
+                        version_dirs.append((jats_id, article_id, version_dir, manuscript_file))
 
     # Reverse order if requested
     if reverse:
@@ -372,26 +493,26 @@ def process_manuscript_versions(
 
     # Choose sequential or parallel processing
     if parallel <= 1:
-        # Sequential processing (original behavior)
-        for i, (article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1):
+        # Sequential processing
+        for i, (jats_id, article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1):
             version_name = version_dir.name  # e.g., "v1"
 
-            # Check if already processed (look for claims.json)
-            claims_file = version_dir / "claims.json"
-            if not force and claims_file.exists():
-                print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+            # Check if already processed (look for db_export.json - the final output file)
+            db_export_file = version_dir / "db_export.json"
+            if not force and db_export_file.exists():
+                print(f"📄 [{i}/{total}] {article_id}/{version_name} ({jats_id})")
                 print(f"      ⏭️  Already processed (use --force to overwrite)")
                 skipped += 1
                 print()
                 continue
 
-            print(f"📄 [{i}/{total}] {article_id}/{version_name}")
+            print(f"📄 [{i}/{total}] {article_id}/{version_name} ({jats_id})")
 
             # Check for peer reviews
             peer_reviews_file = None
-            review_files = list(version_dir.glob("reviews_v*.md"))
-            if review_files and has_peer_reviews(version_dir):
-                peer_reviews_file = review_files[0]
+            reviews_file = version_dir / "reviews.md"
+            if reviews_file.exists() and has_peer_reviews(version_dir):
+                peer_reviews_file = reviews_file
                 print(f"      📝 Peer reviews: {peer_reviews_file.name}")
             else:
                 print(f"      📝 No peer reviews")
@@ -403,7 +524,13 @@ def process_manuscript_versions(
                 peer_reviews_file,
                 dry_run=dry_run,
                 verbose=verbose,
+                metrics=metrics,
             )
+
+            # Update database status
+            if success and not dry_run:
+                update_paper_status(jats_id, 'PROCESSED')
+                print(f"      ✓ Updated database status to PROCESSED")
 
             if success:
                 successful += 1
@@ -418,8 +545,8 @@ def process_manuscript_versions(
         # Parallel processing
         # Prepare arguments for each manuscript
         tasks = [
-            (i, total, article_id, version_dir, manuscript_file, force, dry_run, verbose)
-            for i, (article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1)
+            (i, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics)
+            for i, (jats_id, article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1)
         ]
 
         # Process in parallel
@@ -430,7 +557,7 @@ def process_manuscript_versions(
             # Collect results as they complete
             for future in as_completed(futures):
                 try:
-                    article_id, version_name, status, message = future.result()
+                    jats_id, article_id, version_name, status, message = future.result()
 
                     if status == 'success':
                         successful += 1
@@ -508,6 +635,18 @@ def main():
         help="Process manuscripts in reverse order (newest first)"
     )
 
+    parser.add_argument(
+        "--no-db",
+        action="store_true",
+        help="Don't use database filtering (process all manuscripts in filesystem)"
+    )
+
+    parser.add_argument(
+        "--metrics", "-m",
+        action="store_true",
+        help="Generate metrics files for each workflow stage (enables verbose mode)"
+    )
+
     args = parser.parse_args()
 
     # Setup paths
@@ -523,6 +662,10 @@ def main():
     print("CLLM Batch Processor")
     print("=" * 70)
     print(f"Manuscripts directory: {manuscripts_dir}")
+    if args.no_db:
+        print("Selection mode: Filesystem-based (processing all manuscripts)")
+    else:
+        print("Selection mode: Database-filtered (processing QUEUED papers only)")
     if args.limit:
         print(f"Limit: {args.limit} versions")
     if args.parallel > 1:
@@ -541,6 +684,8 @@ def main():
         print("Mode: FORCE (overwriting existing outputs)")
     else:
         print("Mode: Skip already processed (use --force to overwrite)")
+    if args.metrics:
+        print("Metrics: Enabled (generating metrics files for each stage)")
     print("=" * 70)
 
     try:
@@ -553,6 +698,8 @@ def main():
             verbose=not args.quiet,
             parallel=args.parallel,
             reverse=args.reverse,
+            use_database=not args.no_db,
+            metrics=args.metrics,
         )
 
         print("=" * 70)

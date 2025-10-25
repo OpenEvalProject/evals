@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PRMT7 physically interacts with SHANK2 and catalyzes symmetric di-methylation at residue R240. This methylation is specifically mediated by PRMT7 rather than PRMT5, and the R240 residue is evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary experimental approaches support this result: mass spectrometry identified the interaction and methylation site (C31, C37), CoIP and GST pull-down assays confirmed physical binding (C4, C32, C33), and in vitro/in vivo methylation assays demonstrated PRMT7-dependent methylation at R240 (C34-C36, C39-C40). Domain mapping and specificity controls with PRMT5 strengthen the conclusion (C33, C41-C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SHANK2 R240 methylation disrupts the SPN-ANK domain blockade, exposing the ANK domain through decreased hydrogen bonding between R240 and H236, thereby destabilizing the closed conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Molecular dynamics simulations provide computational evidence that methylated R240 requires less energy to reach an open state (C56) and that methylation disrupts hydrogen bonding with H236 (C57-C59). However, experimental validation of this conformational change through structural biology methods (e.g., crystallography, NMR, FRET) would strengthen these computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SHANK2 R240 methylation promotes assembly of a multi-protein complex containing dynamin2, talin, FAK, and cortactin on endosomes. This assembly is PRMT7-dependent and requires the methylation of SHANK2 at R240.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mass spectrometry identified the protein interactions (C60), which were validated by CoIP assays (C61-C63, C66, C68-C70) and immunofluorescence showing co-localization on endosomes (C64-C65, C67). The requirement for R240 methylation is demonstrated by rescue experiments with WT vs R240K mutants. The convergence of biochemical and imaging data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SHANK2 R240 methylation activates endosomal FAK and cortactin signaling in vitro, as measured by phosphorylation at Y397 (FAK) and Y421 (cortactin). This activation is dependent on endocytosis and can be blocked by FAK inhibitors or dynamin/EEA1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data consistently show that PRMT7 overexpression or SHANK2 WT (but not R240K) increase FAK/cortactin phosphorylation (C71-C73, C75), while PRMT7 depletion decreases it (C72). Pharmacological inhibition experiments with dynasore, EEA1 knockdown, and FAK inhibitor GSK2256098 demonstrate the pathway dependencies (C74, C76-C77). The data are internally consistent across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "SHANK2 R240 methylation promotes EMT markers, MMP activation, and cell migration/invasion in breast cancer cells through an endocytosis-dependent mechanism involving FAK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMT marker changes (C51-C53), MMP activation (C54), and migration/invasion assays (C55, C79-C80) demonstrate functional consequences of SHANK2 methylation. Rescue experiments with R240K vs WT/R240F mutants establish specificity (C53, C80). Pharmacological inhibition with dynasore, EEA1 knockdown, and FAK inhibitor block these effects (C78-C79, C81-C83), establishing mechanistic dependencies. However, the manuscript notes SHANK2 did not induce EMT in some contexts, suggesting context-dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SHANK2 R240 methylation promotes breast cancer metastasis in vivo through FAK activation. Xenograft experiments show that SHANK2 R240K (methylation-deficient) reduces lung metastases, while FAK inhibitor treatment reduces metastases driven by SHANK2 R240F (methylation-mimic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vivo xenograft data demonstrate that R240K mutation reduces lung metastases compared to WT or R240F (C84), and FAK inhibitor treatment reduces R240F-driven metastases (C85). Immunohistochemistry confirms increased FAK/cortactin phosphorylation with R240F that is blocked by FAK inhibitor (C86-C87). The in vivo data are consistent with in vitro findings, though sample sizes (n=5 per group) are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C88"
+    ],
+    "result": "PRMT7, methylated SHANK2, and phosphorylated FAK/cortactin levels correlate with aggressive breast cancer subtypes and advanced disease stage in clinical samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot and immunohistochemistry analyses of patient samples show higher SHANK2 methylation in aggressive subtypes (luminal B Her2+, triple-negative) compared to less aggressive subtypes (C45, C49-C50). TCGA analysis shows PRMT7 high-expression correlates with stage III/IV disease (C47-C48). Immunohistochemistry demonstrates correlation between PRMT7, p-FAK, and p-cortactin with clinical aggressiveness (C88). However, the correlative nature limits causal inference, and sample sizes for some analyses are modest (n=27 for IHC).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript establishes background knowledge about PRMT7, FAK signaling, endocytosis, and SHANK proteins based on prior literature, positioning the current work within established frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout the introduction (C14-C29). The citations appear accurate and relevant to the context. Claims C1-C3 frame the current study's contribution within this established knowledge base.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that SHANK2 R240 methylation maintains endocytic activity, may be involved in clathrin-mediated and receptor-mediated endocytosis, localizes to multiple organelles including exosomes, and represents a potential therapeutic target for breast cancer metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative or inferential (C92-C94, C98-C99) based on mass spectrometry interaction data and co-localization studies (C95-C97). While the exosome co-localization data (C96-C97) provide some support, the functional roles in clathrin-mediated endocytosis, receptor trafficking, and multi-organelle localization require additional experimental validation. The therapeutic potential (C99-C100) is a reasonable inference but remains to be tested clinically.",
+    "result_type": "MINOR"
+  }
+]

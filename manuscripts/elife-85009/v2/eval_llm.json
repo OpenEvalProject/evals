@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C61"
+    ],
+    "result": "At 3 months post-hospitalization, patients with severe COVID-19 displayed persistent activation of CD4+ and CD8+ T-cells characterized by increased expression of HLA-DR, CD38, Ki67, and granzyme B, along with elevated plasma levels of IL-4, IL-7, IL-17, and TNF-\u03b1 compared to mild/moderate patients. Flow cytometry analysis using both manual gating and unsupervised clustering (UMAP/FlowSOM) revealed significantly higher frequencies of activated/proliferating T-cell populations in severe patients, particularly within na\u00efve and central memory subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by comprehensive flow cytometry data (Figures 1-2) using multiple analytical approaches (manual gating and unsupervised clustering) and cytokine measurements (Figure 3). The convergence of evidence from multiple markers and analytical methods strengthens the conclusion. Statistical comparisons between severity groups are appropriately performed with multiple testing corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C68",
+      "C69"
+    ],
+    "result": "Plasma from severe COVID-19 patients at 3 months induced upregulation of IL-15R\u03b1 on T-cells from healthy donors in co-culture experiments, suggesting that plasma factors may increase T-cell responsiveness to IL-15-driven bystander activation. This effect was specific to the 3-month timepoint and not observed with plasma from 12 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental co-culture data (Figure 3D-E) directly demonstrates IL-15R\u03b1 upregulation with appropriate controls (healthy donor plasma, temporal comparison). The mechanistic interpretation linking this to bystander activation is reasonable given the established role of IL-15 in this process, though the claim remains somewhat inferential regarding the in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C56",
+      "C57",
+      "C65",
+      "C66",
+      "C101"
+    ],
+    "result": "T-cell activation and pro-inflammatory cytokine levels decreased significantly from 3 to 12 months post-admission, with activated/proliferating T-cells largely absent at 12 months and comparable across all disease severity groups. Plasma levels of IL-4, IL-12, IL-13, and TNF-\u03b1 showed statistically significant decreases over this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Longitudinal data (Figures 2\u2014figure supplement 1, Figure 3B-C) clearly demonstrate temporal resolution of immune activation across multiple parameters. The convergence of cellular and cytokine data strengthens this conclusion. Statistical testing appropriately accounts for paired samples over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Patients with severe disease reported a higher number of long COVID symptoms at 3 months (79% overall prevalence), with breathlessness and fatigue being most common. However, after adjusting for age, sex, and disease severity in Poisson regression analysis, long COVID symptoms did not significantly correlate with cellular immune activation markers or pro-inflammatory cytokines (FDR p>0.05), suggesting independent associations with severe disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis is appropriately conducted with both unadjusted and adjusted models, and FDR correction for multiple testing. While unadjusted analyses showed associations with specific T-cell clusters (C86), these did not survive adjustment (C87), which is the appropriate standard. The conclusion that long COVID and immune activation correlate independently with severity is justified by the data, though the relatively small sample size (N=63) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SARS-CoV-2-specific memory T-cell responses to spike, membrane, and nucleocapsid proteins were robust and qualitatively similar across disease severities at 3 months, as measured by ELISpot and intracellular cytokine staining. However, moderate disease patients showed higher magnitudes of CD4+ and CD8+ T-cell responses and antibody titers compared to mild patients, with predominantly monofunctional T-cells (66-91%) across all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (ELISpot, ICS, antibody measurements) provide converging evidence. The distinction between qualitative similarity and quantitative differences is appropriately made. The polyfunctionality analysis is thorough and shows consistent patterns across patient groups. Statistical comparisons are appropriate for the data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Analysis of NK cells, monocyte subsets, and TCR-\u03b3\u03b4 T-cells at 3 months showed no evidence of ongoing activation, with similar frequencies and activation marker expression across disease severities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (Figure 2\u2014figure supplement 2) systematically examines multiple innate immune cell populations with appropriate activation markers. The negative findings are important for establishing specificity of T-cell activation and are adequately supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C92"
+    ],
+    "result": "CMV-specific CD4+ T-cells, but not CD8+ T-cells, expressed significantly higher levels of Ki67 compared to SARS-CoV-2-specific T-cells, suggesting low-level proliferation potentially driven by elevated cytokines at 3 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ICS data (Figure 5G) directly demonstrates differential Ki67 expression between CMV-specific and SARS-CoV-2-specific CD4+ T-cells. The mechanistic interpretation regarding cytokine-driven proliferation is speculative but reasonable given the context. The finding contributes to understanding the composition of activated T-cell pools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The data does not support persistence of SARS-CoV-2 antigens at 3 months, based on lack of activation markers in SARS-CoV-2-specific T-cells and negative RT-PCR results in plasma samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion is supported by two independent lines of evidence: ICS showing no activation markers on spike-specific T-cells (Figure 5) and RT-PCR negativity in plasma samples (C109). However, the authors appropriately acknowledge this does not exclude sequestered antigens in tissues not accessible to circulating T-cells. The negative evidence is important for ruling out viral persistence as a mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The DISCOVER study analyzed 187 samples from 63 hospitalized COVID-19 patients (17 mild, 32 moderate, 14 severe) recruited between March-June 2020 in Bristol, UK. The cohort was predominantly male (63%), Caucasian, with median ages 53-61.5 years across severity groups, and none had received COVID-19 vaccination at sample collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and cohort characteristics are clearly described with appropriate demographic and clinical details. Sample sizes and temporal sampling are documented. The lack of vaccination is important context for interpreting immune responses. All descriptive claims are internally consistent and adequately detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "At 3 months, plasma IFN-\u03b3 levels were increased in moderate compared to mild patients but were largely undetectable in severe patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Luminex data (Figure 3A) clearly shows this pattern. The finding is notable as IFN-\u03b3 is a key antiviral cytokine, and its absence in severe patients despite ongoing T-cell activation suggests dysregulated immune responses. The observation is well-supported but represents a specific cytokine finding rather than a primary conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "IP-10 levels were higher at 8 and 12 months compared to 3 months post-admission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Longitudinal Luminex data (Figure 3B-C) supports this temporal pattern. This contrasts with most other cytokines that decreased over time. IP-10 is a chemokine involved in T-cell recruitment, and its sustained elevation may have biological significance, though the clinical implications are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction establishes the context of COVID-19 immune responses, long COVID prevalence (8-21%), and prior findings from the literature regarding immune activation patterns, risk factors, and potential mechanisms underlying persistent symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately summarize established knowledge from cited literature and provide necessary background context. The citations appear appropriate for the claims made. This represents standard literature review rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C103"
+    ],
+    "result": "The discussion contextualizes findings within established knowledge about bystander T-cell activation, IL-15 responsiveness, and comparisons to other viral infections and prior COVID-19 studies, noting partial overlap between risk factors for severe acute disease and long COVID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant literature to interpret the study's findings. The comparisons to H7N9 influenza and other studies provide useful context. The discussion of risk factor overlap is supported by cited studies. These represent appropriate scholarly discussion rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C102",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors infer that resolution of inflammatory markers (CRP, albumin, IL-6) at 3 months suggests overall resolution of acute inflammatory processes, and that normalization of T-cell activation by 12 months indicates differences at 3 months were not pre-existing. They conclude that pathogenesis during acute infection and convalescence may involve distinct mechanisms, and that clinical implications of persistent T-cell activation warrant further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims are reasonable inferences from the data presented, though they involve some speculation. The inference about pre-existing differences (C102) is logical given the 12-month normalization. The conclusion about distinct mechanisms (C104) is appropriately cautious. The call for further investigation (C106) is appropriate given the study's limitations.",
+    "result_type": "MINOR"
+  }
+]

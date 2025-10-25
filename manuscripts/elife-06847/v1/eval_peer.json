@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The replication study proposes to follow mice for 11 days after tumors reach 100 mm\u00b3, with unequal sample sizes across cohorts (14 mice for most groups, but only 5 for the doxorubicin control group).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly questioned the experimental design, asking 'Is there a good reason to follow the mice one day short?' (11 vs 12 days) and requesting justification for why 'cohort 2 only has 5 mice while the other 4 cohorts have 14 mice.' These questions indicate uncertainty about the appropriateness of these design choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The statistical analysis plan proposes using two-way ANOVA followed by Bonferroni corrected Welch's t-tests, with normality and homoscedasticity testing (Shapiro-Wilk and Levene's tests) and contingency plans for data transformation if assumptions are violated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about the statistical approach, stating 'Please make sure that the data do not violate the assumptions of ANOVA: normality and homoscedasiticity' and suggesting 'I suggest the use of contrast within the ANOVA framework instead of t-test if the assumptions of ANOVA are met.' They also recommended using 'two-tailed unequal variance t-test' or 'Wilcoxon rank-sum test' depending on normality, indicating the proposed analysis may need revision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The original study demonstrated that cimetidine reduced tumor growth in A549 lung adenocarcinoma xenografts but had no effect on ACHN renal carcinoma xenografts, though conclusions are limited by testing only a single cell line with a single drug.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the replication aims to reproduce published results, they explicitly raised concerns about 'the limitation of drawing conclusions for the use of only one cell line, A549,' noting that 'activity of drugs in cell lines and xenografts is generally highly idiosyncratic' and that 'most journals require that any in vitro and in vivo experiments are replicated in multiple cell lines and in vivo models.' This indicates uncertainty about the generalizability of findings from a single cell line.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C45",
+      "C46",
+      "C47",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Power calculations were performed using R software and G*Power, determining that 12 mice per group would provide 82.4% power overall, with specific effect sizes calculated for each comparison (Glass' delta of 1.71 for cimetidine vs PBS, 2.39 for doxorubicin vs PBS).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted that 'Power calculation was based on t-test' and suggested alternative statistical approaches, implying the power calculations may need to be revised based on the appropriate statistical test. The reviewers' recommendations for different statistical methods (contrasts within ANOVA, non-parametric tests) suggest uncertainty about whether the current power calculations are based on the most appropriate analysis framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The Reproducibility Project: Cancer Biology aims to replicate 50 cancer biology papers from 2010-2012, including the Sirota et al. study that used computational methods to predict drug repurposing opportunities by comparing gene expression signatures from GEO and the Connectivity Map.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the study context without raising concerns, stating 'the authors propose a study to reproduce the findings reported in Figure 4C/D and Supplementary Figure 1 from a previously published manuscript (Sirota et al. Sci Trans Med, 2010).' The background and rationale for the replication were accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The replication protocol specifies detailed methods for cell culture, xenograft creation, tumor measurement, treatment administration, and data collection, including modifications from the original study (e.g., injecting cells in 100 \u00b5l PBS instead of per microliter, excluding lower cimetidine doses).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about the specific methodological details of cell culture, xenograft procedures, or treatment protocols. Their critiques focused on statistical analysis and experimental design duration/sample sizes rather than these technical procedures, suggesting implicit acceptance of these methodological claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C18",
+      "C19"
+    ],
+    "result": "Cimetidine is an H2 receptor blocker used to treat peptic ulcers, and was predicted by Sirota et al. to be effective against lung adenocarcinoma but not renal carcinoma, with some supporting evidence from other studies showing reduced proliferation in vitro and decreased lung cancer risk in epidemiological data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the background information about cimetidine and the original study's predictions without challenge. They focused their critiques on the experimental design and statistical analysis rather than questioning these foundational claims about the drug and prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C44",
+      "C50",
+      "C51"
+    ],
+    "result": "The replication study will use adaptive randomization for treatment assignment, make all data publicly available on the Open Science Framework, and employ meta-analytic approaches to compare original and replication effect sizes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about data sharing plans, randomization procedures, or meta-analytic approaches. These methodological elements were not questioned in the review, suggesting implicit acceptance of these aspects of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C58",
+      "C59",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Data extracted from the original study's figures show specific tumor weights at day 11 for each treatment group (e.g., PBS-treated A549: 3.3, cimetidine-treated A549: 2.34), with sample sizes of 6 mice per group, and these values were used to calculate effect sizes using Glass' delta with PBS control SD as the divisor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question the data extraction methods or the specific values obtained from the original study. Their concerns focused on the statistical analysis plan and experimental design rather than challenging the accuracy of the extracted data or effect size calculations.",
+    "result_type": "MINOR"
+  }
+]

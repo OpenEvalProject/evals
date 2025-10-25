@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C69",
+      "C108"
+    ],
+    "result": "Approximately one-third of dentate gyrus projection neurons labeled during contextual memory formation (Barnes maze and enriched environment exposure) were semilunar granule cells (SGCs), representing substantial overrepresentation relative to their ~3% population density. This proportion was consistent across both behavioral paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide quantitative morphological classification data (33.86\u00b12.18% for BM, 27.83\u00b11.33% for EE, p=0.1143) showing SGC overrepresentation among behaviorally labeled neurons. The statistical analysis, sample sizes (40 sections from 4 mice), and morphological criteria are clearly described. The finding is internally consistent across two independent behavioral paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C64",
+      "C75",
+      "C76"
+    ],
+    "result": "SGCs exhibit greater sustained firing than GCs, with higher firing frequency at large current injections (>400 pA), less spike amplitude attenuation, and reduced spike frequency adaptation. Critically, labeled SGCs showed significantly lower adaptation than unlabeled SGCs (adaptation ratio: 0.78\u00b10.076 vs 0.47\u00b10.06, p=0.006), while labeled and unlabeled GCs did not differ, suggesting sustained firing predisposes SGCs to behavioral recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42, C44-C47 present converging electrophysiological evidence with appropriate statistical tests (two-way RM ANOVA) and adequate sample sizes. The key finding that labeled SGCs differ from unlabeled SGCs specifically in adaptation (C46, C75) while GCs do not (C47) provides strong support for the intrinsic excitability hypothesis. Data are consistent with prior literature (C45, C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C5",
+      "C67",
+      "C87"
+    ],
+    "result": "No functional glutamatergic synaptic connections were detected between behaviorally labeled SGCs and GCs in 32 paired recordings, including SGC-to-GC, SGC-to-SGC, and GC-to-GC pairs. Wide-field optogenetic activation also failed to evoke EPSCs in unlabeled neurons, indicating absence of local feedforward or recurrent excitation in dentate gyrus memory ensembles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 reports systematic dual patch-clamp recordings from 32 labeled neuron pairs with clear negative results. The experimental design included appropriate controls (sEPSC presence confirming circuit health, ChR2 validation) and tested multiple cell-type combinations. Claims C87 and C5 provide converging evidence using optogenetic approaches. While negative results have inherent limitations, the sample size and methodological rigor support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C6",
+      "C50",
+      "C51",
+      "C68",
+      "C92",
+      "C93",
+      "C96",
+      "C98",
+      "C99"
+    ],
+    "result": "Behaviorally labeled dentate gyrus neurons rarely mediated lateral inhibition of unlabeled neurons. In 49 SGC-to-GC paired recordings, depolarization-evoked firing failed to evoke IPSCs in unlabeled GCs (48/49 pairs). Wide-field optogenetic stimulation elicited lateral inhibition in only 1/55 recordings. This contrasts with robust inhibition observed when activating dense cohorts of virally labeled GCs, suggesting sparse behavioral ensembles are insufficient to drive lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C93 provide extensive paired recording data (49 and 55 recordings respectively) with clear negative results. Control experiments (C52, C94, C95) demonstrate the circuit capability for lateral inhibition exists in the preparation, strengthening the interpretation that sparse behavioral labeling is insufficient. The rare positive cases (C50, C51: 2/112 total) are appropriately reported. Statistical rigor and sample sizes are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C7",
+      "C65",
+      "C88"
+    ],
+    "result": "Labeled GCs and SGCs received more frequent (shorter inter-event intervals) and larger amplitude spontaneous excitatory synaptic inputs compared to unlabeled counterparts. For GCs: labeled IEI=2.14s vs unlabeled IEI=5.87s (p<0.0001, Cohen's d=0.73); labeled amplitude=20.36pA vs unlabeled amplitude=16.69pA (p<0.0001, Cohen's d=0.57). Similar differences were observed in SGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 present sEPSC recording data with appropriate non-parametric statistics (Kolmogorov-Smirnov tests), effect sizes (Cohen's d), and sample sizes (5-6 cells from 4-5 mice per group). The TTX control experiment (C53, C54) validates that ~50% of sEPSCs are AP-dependent, justifying the analysis approach. Results are consistent across both cell types, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C8",
+      "C66",
+      "C89",
+      "C90"
+    ],
+    "result": "Labeled-labeled (L-L) neuronal pairs received more temporally correlated spontaneous excitatory inputs than labeled-unlabeled (L-U) pairs. Maximum cross-correlation (Rmax) in \u00b1100ms window: L-L=0.184\u00b10.014 vs L-U=0.126\u00b10.016 (p=0.018). Co-occurrence in 10ms center bin: L-L=0.117\u00b10.025 vs L-U=0.087\u00b10.014 (p=0.0075). Center bin correlation predicted L-L vs L-U pairs better than chance (AUROC: 67-71%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 present cross-correlation analysis with appropriate statistical tests (t-tests, two-way ANOVA) and controls for spurious correlations (jittered datasets in C61, matched event counts/rates in Figure 6 supplement 1). The ROC analysis (C63, C90) provides quantitative discrimination performance. Sample sizes (7 L-L, 8 L-U pairs) are modest but adequate for the effect sizes observed. Methods are clearly described and appropriate for temporal correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C104"
+    ],
+    "result": "Mice showed successful spatial learning in Barnes maze (progressive decrease in latency/errors, transition to spatial strategy) and enriched environment exposure labeled more neurons than Barnes maze (33.90\u00b12.13 vs 13.43\u00b10.90 cells/slice, p=0.0409). Re-exposure to enriched environment produced greater c-Fos co-labeling in previously labeled neurons (6.8\u00b10.97%) compared to Barnes maze-trained mice (2.28\u00b10.46%, p=0.0003), confirming task-specific reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 demonstrate behavioral learning with appropriate metrics (BUNS classification). Claims C32-C34 provide quantitative immunohistochemistry with nested t-tests accounting for within-animal clustering (40 slices from 4 animals per group). The reactivation experiment (C34, C104) provides critical validation of memory-specific labeling. Statistical approaches and sample sizes are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C73"
+    ],
+    "result": "Resting membrane potential, input resistance, and action potential parameters (threshold, amplitude, half-width, afterhyperpolarizations, latency) did not differ between labeled and unlabeled GCs, or between GCs and SGCs (except input resistance was lower in SGCs as previously reported). These findings indicate that basic intrinsic properties do not distinguish behaviorally recruited GCs from non-recruited GCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43, C73 report systematic electrophysiological characterization with appropriate measurements and consistency with prior literature (C38, C40 cite Afrasiabi et al., 2022; Williams et al., 2007). The negative findings for labeled vs unlabeled GCs (C39, C41, C73) are important controls that strengthen the specificity of the positive findings for SGC adaptation. Sample sizes and methods are appropriate for these standard measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Control experiments demonstrated that focal optical activation of dense cohorts of GCs (labeled via AAV-CAMKII-ChR2) produced robust feedback inhibition in unlabeled GCs, with IPSC amplitude decreasing with ROI size (p<0.05, one-way ANOVA). This confirms the circuit capability for lateral inhibition exists in the slice preparation and is consistent with prior findings that 2-4% of densely packed GCs are needed to recruit lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 provides critical positive control data (5-8 cells from 3 mice) demonstrating the slice preparation can support lateral inhibition. Claims C94-C95 cite consistent prior recordings of interneuron-mediated inhibition in the same preparation. This control is essential for interpreting the negative results with sparse behavioral labeling and strengthens the overall conclusions. The experimental design and analysis are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "TTX (1 \u00b5M) increased spontaneous EPSC inter-event interval by twofold (from 5.29\u00b10.84s to 12.49\u00b12.84s, p=0.0005, n=12 cells/3 mice), indicating approximately half of recorded sEPSCs represent action potential-dependent events. This validates the analysis of sEPSC temporal correlations as reflecting network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 provides pharmacological validation with appropriate statistics (paired t-test) and adequate sample size (12 cells from 3 mice). The twofold increase in IEI (C54) provides clear quantitative support for the interpretation that ~50% of events are AP-dependent. This control is important for justifying the correlation analyses in subsequent experiments. The experimental design and interpretation are sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Non-fear-based behavioral paradigms (Barnes maze day 6, enriched environment) produced sparser labeling than fear conditioning paradigms in prior studies. Learning-related decrease in novelty may have contributed to sparse labeling on Barnes maze day 6. Enriched environment exposure reliably labeled larger neuronal cohorts suitable for circuit analysis, consistent with novelty-driven dentate gyrus activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 acknowledge methodological considerations with appropriate citations to prior fear conditioning studies. Claim C102 provides reasonable speculation based on known DG properties (citations to Hainmueller and Bartos, 2020; Mazurkiewicz et al., 2022). Claim C103 demonstrates the practical solution adopted. This represents appropriate experimental troubleshooting and transparent reporting of methodological decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Less than 10% of tdT-positive neurons showed c-Fos co-labeling after re-exposure, consistent with reactivation rates in fear conditioning experiments but suggesting not all labeled neurons may be behaviorally relevant. The TRAP2 system may miss neurons expressing other immediate early genes, though c-Fos-driven labeling remains the best current approach for activity-dependent labeling of dentate gyrus neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 provides quantitative reactivation data with appropriate comparison to prior literature (DeNardo et al., 2019). Claims C106-C107 acknowledge methodological limitations transparently while citing supporting literature (Heroux et al., 2018; Kawashima et al., 2014). This represents appropriate discussion of caveats and limitations. The low reactivation rate is consistent with known properties of memory ensembles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C77",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The authors speculate that reduced action potential accommodation and attenuation in SGCs may contribute to enhanced c-Fos expression during behavioral encoding, and that wider dendritic arbors may support preferential recruitment. They also suggest that methodological differences (restricting analysis to filled neurons during recordings) may have contributed to higher SGC proportions in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C77, C79, C80, C82 are explicitly speculative (\"it is possible that,\" \"could contribute\"). While these speculations are reasonable given the data, they lack direct experimental support. Claim C70 is labeled as speculation in the evidence. Claim C82 regarding prior studies is conjecture about methodological artifacts. These represent reasonable interpretations but require additional experiments for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C110"
+    ],
+    "result": "The authors conclude that behaviorally relevant activation of SGCs and GCs in dentate gyrus neuronal ensembles is determined by sustained firing characteristics of SGCs, enhanced glutamatergic inputs, and shared afferent drive rather than by recurrent excitation or lateral inhibition. This represents a synthesis of the major experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C110 synthesize the major findings from multiple experimental approaches (intrinsic physiology, connectivity, synaptic inputs, temporal correlations). Each component is supported by the individual results evaluated above. The conclusion appropriately integrates positive findings (sustained firing, enhanced inputs, correlated inputs) with negative findings (no recurrent excitation, minimal lateral inhibition). This represents a well-supported overall interpretation of the data.",
+    "result_type": "MAJOR"
+  }
+]

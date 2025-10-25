@@ -1,0 +1,2835 @@
+{
+  "submission": {
+    "id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:35:39.656192Z",
+    "updated_at": "2025-10-25T01:35:39.656192Z"
+  },
+  "content": [
+    {
+      "id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "content_type": "manuscript",
+      "content_text": "# CD8+ tissue-resident memory T cells induce oral lichen planus erosion via cytokine network\n\n## Authors\n\n- Maofeng Qing<sup>1</sup> ([ORCID: 0000-0001-7829-5564](https://orcid.org/0000-0001-7829-5564))\n- Dan Yang<sup>1</sup>\n- Qianhui Shang<sup>1</sup>\n- Jiakuan Peng<sup>1</sup>\n- Jiaxin Deng<sup>1</sup>\n- Jiang Lu<sup>1</sup>\n- Jing Li<sup>1</sup>\n- HongXia Dan<sup>1</sup>\n- Yu Zhou<sup>1</sup> \u2020\n- Hao Xu<sup>1</sup> ([ORCID: 0000-0002-5665-0139](https://orcid.org/0000-0002-5665-0139)) \u2020\n- Qianming Chen<sup>3</sup> ([ORCID: 0000-0002-5371-4432](https://orcid.org/0000-0002-5371-4432)) \u2020\n\n### Affiliations\n\n1. https://ror.org/011ashp19 State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Research Unit of Oral Carcinogenesis and Management, Chinese Academy of Medical Sciences, West China Hospital of Stomatology, Sichuan University Chengdu China\n2. https://ror.org/00r67fz39 Department of Stomatology, The Second Affiliated Hospital of Chongqing Medical University Chongqing China\n3. https://ror.org/00a2xv884 Key Laboratory of Oral Biomedical Research of Zhejiang Province, Affiliated Stomatology Hospital, Zhejiang University School of Stomatology Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nCD8 + tissue-resident memory T (CD8 + Trm) cells play key roles in many immune-inflammation-related diseases. However, their characteristics in the pathological process of oral lichen planus (OLP) remains unclear. Therefore, we investigated the function of CD8 + Trm cells in the process of OLP. By using single-cell RNA sequencing profiling and spatial transcriptomics, we revealed that CD8 + Trm cells were predominantly located in the lamina propria adjacent to the basement membrane and were significantly increased in patients with erosive oral lichen planus (EOLP) compared to those with non-erosive oral lichen planus (NEOLP). Furthermore, these cells displayed enhanced cytokine production, including IFN-\u03b3 (Interferon-gamma, a pro-inflammatory signaling molecule), TNF-\u03b1 (Tumor Necrosis Factor-alpha, a cytokine regulating inflammation), and IL-17 (Interleukin-17, a cytokine involved in immune response modulation), in patients with EOLP. And our clinical cohort of 1-year follow-up was also supported the above results in RNA level and protein level. In conclusion, our study provided a novel molecular mechanism for triggering OLP erosion by CD8 + Trm cells to secrete multiple cytokines, and new insight into the pathological development of OLP.\n\n## Introduction\n\nOral lichen planus (OLP) is a chronic inflammatory disease on the oral mucosa of unknown etiology mediated by T cells with a 1.01% global prevalence rate (Gonz\u00e1lez-Moles et al., 2021; Jiang et al., 2022b). Its clinical manifestations are varied and chronic non-healing (Radwan-Oczko, 2013). Especially, recurrent erosion or ulcers in patients with erosive oral lichen planus (EOLP) were mostly accompanied by pain and discomfort, which worsen when eating or speaking, and adversely affect the physical and mental health of patients (Rotaru et al., 2020). Notably, EOLP has a significantly higher risk of malignant transformation than non-erosive oral lichen planus (NEOLP) (Arduino et al., 2021). To reduce the psychological and economic burden of OLP patients, improve their quality of life, and decrease the risk of cancer, it is crucial to maintain the disease in a relatively stable non-erosive stage for as long as possible. However, clinical experience suggests that OLP often exhibits a prolonged and recurrent disease course, with alternating periods of non-erosive and erosive lesions. Despite this, the underlying causes and mechanisms of lesion type switching remain unclear (Gorouhi et al., 2014).\n\nThe pathological feature of OLP is characterized by dense infiltration of T cells in the lamina propria, disruption of the basement membrane, and degeneration of basal keratinocytes (Xu et al., 2022). Previous studies have shown that OLP patients have immune function disorders both locally and systemically, with the infiltration of CD8+ T cells in the OLP lamina propria near the basement membrane (Neppelberg et al., 2001). CD8+ T cells are related to the liquefaction of basal cells, and it is believed that the immune microenvironment of OLP lesions has changed, especially in CD8+ T cells, which produce a complex network of cytokines and chemokines, such as IFN-\u03b3, TNF-\u03b1, IL1\u03b1, and IL17, among others (Firth et al., 2015; Ke et al., 2017; Piccinni et al., 2014; Shaker and Hassan, 2012; Viguier et al., 2015).\n\nTissue-resident memory T (Trm) cells are a recently described population of terminally differentiated T cells, which are crucial for local immunity (Mueller et al., 2014). Trm cells are mainly present in various barrier tissues, where CD8+ Trm cells can persist locally for a long time in the absence of relevant antigens (Szabo et al., 2019). Recent studies had revealed that CD8+ Trm cells play important roles in the occurrence and development of many chronic inflammatory diseases such as psoriasis and vitiligo (Eberle et al., 2016; Richmond et al., 2018; Watanabe, 2019).\n\nCD8+ Trm cells are considerable components of local immunity, yet their presence, distribution, and function in OLP are poorly understood. This study aims to investigate the presence and spatial distribution of CD8+ Trm cells in different clinical manifestations of OLP, and to determine their functional role, especially in the context of the heterogeneity observed between NEOLP and EOLP. Additionally, the study aims to explore the underlying molecular mechanisms that contribute to the development of erosive lesions in OLP.\n\n## Results\n\n## Single-cell RNA sequencing revealed the cell composition of OLP with different clinical subtypes\n\nTo investigate the cellular composition and comprehensive transcriptional effects of OLP, we performed single-cell RNA sequencing (scRNA-seq) of NEOLP (NEOLP, n = 3) and EOLP (EOLP, n = 2). The final dataset comprised 46,377 cells, with an average of 1743 genes per cell. Visualization using uniform manifold approximation and projection (UMAP) revealed 47 distinct cell clusters (Figure 1A) that were annotated as 8 major cell types (Figure 1B). Although there was no significant difference in T cell proportion between NEOLP and EOLP, T cell was still the major cell proportion in EOLP. Surprisingly, although T cells, the hallmark cells of OLP, constituted the highest proportion of all samples, the proportion of cells in EOLP-2 was the lowest at 47.47%, while the proportion of T cells in the NEOLP-3 case is the highest at 71.93%. The cell composition analysis also revealed an increase in the proportion of B cells and myeloid cells in EOLP (Figure 1C, D). Our analysis of myeloid cells revealed some interesting findings. We observed that neutrophils were significantly more abundant in EOLP than NEOLP (Figure 1\u2014figure supplement 1A, B ). Similarly, plasmacytoid (pDC) were also more common in EOLP compared to NEOLP. However, NEOLP had a higher number of myeloid (mDC) than EOLP (Figure 1\u2014figure supplement 1A\u2013D). Upon conducting GO analysis, we found that neutrophil cells in EOLP were significantly enriched in defense response and positive regulation of cytokine production (Figure 1\u2014figure supplement 1E).\n\n## The cell proportion of CD8+ Trm cells was increased in EOLP\n\nThe typical pathological manifestation of OLP is band infiltration of T cells in the lamina propria. At present, most views believe that OLP is an immune-related disease mediated by T cells (Feldmeyer et al., 2020). So, our next further analyzed the T cell population.\n\nSince NK and T cells are also derived from lymphoid progenitor cells, NK and T cells are developmentally closer and mature NK cells express CD3 (a T cell signature gene) after activation, while the cytotoxic response of mature NK cells is similar to that of CTL (Abel et al., 2018). Therefore, in the initial study, T cells and NK cells were included together to form separate NK and T cell populations, and the NK/T population constituted the majority of cells sequenced in the OLP in the study data. Subsequently, by further clustering, the genes of the NK/T cell population, the NK/T cell population was divided into a total of 23 cell subgroups (Figure 2\u2014figure supplement 1A, B). After further annotation of the NK/T cell subsets with marker genes, six large cell subpopulations were described: NK cells, CD8+ T cells, CD4+ T cells, CD4+ CD8+ T cells, CD8+ Trm cells, and CD4+ CD8+ Trm cells (Figure 2A, B).\n\nWe observed remarkable differences in the proportion of T cell populations between patients with different clinical types of OLP. EOLP exhibited fewer CD8+ T cells but more CD4+ T cells, CD8+ Trm cells, and CD4+ CD8+ T cells than NEOLP. The proportion of CD4+ CD8+ Trm and NK cells was similar in both types (Figure 2C).\n\n## The immune function of CD8+ Trm cells was activated in EOLP\n\nTo further explore the function of T cells, this study demonstrated that in the CD4+ T cells subset, LTB, an inflammatory response gene, was significantly active, while CCL4, CCL4L2, and CLL5 that guide immune cells to migrate to inflammatory sites were activated in CD8+ Trm and CD8+ T cells subset, and the expression of the latter is more obvious; the gene BTG1, which inhibits cell proliferation, is significantly expressed in the CD4+CD8+T and CD4+CD8+TRM subgroups (Figure 2D and Figure 2\u2014figure supplement 1C).\n\nOur study also explored the production of pro-inflammatory cytokines by different T cell subsets. We observed that the CD8+ T cell subset displayed significantly higher expression of GZMK, a gene known to contribute to the cytotoxicity and induction of apoptosis in target cells, compared to other subsets. Moreover, CD8+ Trm cells in particular exhibited higher expression levels of GZMA, GZMK, TNF, PRF1, and other genes associated with inflammatory factors, when compared to other subgroups. It may have contributed to the worsening of the clinical manifestations of OLP (Figure 2E).\n\nFurther analysis of the significantly different genes between NEOLP and EOLP indicated that B2M, closely related to the stability of MHC class I molecules and antigen presentation, and HIF1A, which regulates immune cell function and inflammation, were found to be significantly expressed in EOLP. Moreover, the EOLP expressed a number of markers involved in the differentiation and function of Trm cells, including CD69, IL7R, CD7, FOS, etc. (Figure 2\u2014figure supplement 2A, Supplementary file 1a).\n\nTo investigate the difference between CD8+ Trm cells in EOLP and NEOLP, we performed differential expression analysis and found that the CD8+Trm marker gene CD69, GNLY which can play a cytotoxic role, and multiple pro-inflammatory factor-related genes, such as GZMB, IFNG, TNF, and PRF1, were significantly increased in the CD8+ Trm subgroup in EOLP. These findings suggest that the CD8+ Trm activity in EOLP may be significantly enhanced than NEOLP (Figure 2\u2014figure supplement 2B, Supplementary file 1b).\n\nGO enrichment analysis indicated that CD8+ Trm differentially expressed genes (DEGs) in EOLP between NEOLP were more significantly enriched in pathways such as positive regulation of cytokine production, regulation of T cell activation, and positive regulation of cell activation (Figure 2F). It shows that CD8+ Trm subsets in EOLP have a different state and expressions compared with NEOLP subsets, and may have a more active state and a greater ability to produce cytokine. The pseudotime analysis also suggests that CD8+ Trm cells may represent one of the terminal states of T cell differentiation and development in OLP (Figure 2G), which may have a profound relationship with their clinical manifestations.\n\n## Spatial transcriptomics revealed CD8+ Trm cells were adjacent to the epithelium of OLP and its products may induce epithelial erosion and promote the development of disease\n\nCell types, relative positions among cells, and the levels of gene expression of cell populations together determine their function in biological tissues. To investigate the spatial heterogeneity between normal oral mucosa and OLP, we performed the spatial transcriptomics (ST) analysis of normal oral mucosa (n = 2), NEOLP (n = 3), and EOLP (n = 1).\n\nThe tissues in this study covered spots ranging from the lowest 296 spots in the NEOLP-1 to the highest 965 spots in the NEOLP-3, while the per-sample capture factors ranged from 2869 to 3884 (Supplementary file 1c). First, we used keratin to characterize the basal layer of the epithelium. The normal oral mucosa and NEOLP had intact epithelium, while some NEOLP samples showed atrophied and thinned epithelium, while others showed hyperplasia and thickening. In EOLP, it can be seen that the epithelium on the left side of the tissue is intact, while the epithelium on the right side is missing (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83981/elife-83981-fig3-v2.jpg)\n\n**Figure 3.:** + Trm in oral lichen planus (OLP) patients have different transcriptomic landscapes in different clinical presentations.(A) Marked the epithelial layer area of each group of samples. (B) CD8+ Trm distribution area. The dark purple spots are the CD8+ TRM marker gene co-expression spots; the area in the white circle is the CD8+ TRM distribution area; the white dotted line is the basement membrane. (C) TNF/IFNGR1/IL17RA distribution area.\n\nAfter co-localization with the marker gene of CD8+ Trm cells, it was found that CD8+ Trm cells were more distributed in EOLP than NEOLP, and more distributed in NEOLP than normal oral mucosa. And it can be observed that whether in normal oral mucosa, NEOLP or EOLP, CD8+ Trm cells are mostly distributed adjacent to the epithelium, while in EOLP tissues, CD8+ Trm cells in the areas where the epithelium is lost are correspondingly reduced, and there are CD8+ Trm cells in the deeper lamina propria of the corresponding tissues (Figure 3B).\n\nWe observed that the expression of TNF, IL17A/IL17RA, IFNGR1, etc. was higher than in normal oral mucosa. And the signals of the effector receptor IFNGR1 of IFN and the effector receptor IL17RA of IL17 were significantly enhanced in EOLP compared with NEOLP.\n\n## Cohort studies confirmed the core genes of CD8+ Trm cells were closely associated with the erosion and process of OLP\n\nTo objectively illustrate the molecular mechanism of OLP erosion, we established a clinical cohort with 40 participants, which were confirmed by clinical manifestation and pathological diagnosis. The basic information of the clinical cohort is shown in Table 1. This study included 40 OLP patients, there were 15 females and 12 males in the NEOLP group and 8 females and 5 males in the EOLP group. The mean age of the NEOLP group was 30.07 \u00b1 11.34 years and that of the EOLP group was 45.08 \u00b1 12.86 years. There were seven smoking patients and nine drinking patients in NEOLP and two smoking patients and three drinking patients in EOLP. The mean VAS score of the NEOLP group was 1.41 \u00b1 0.89 and that of the EOLP group was 2.46 \u00b1 1.391. The mean course of disease was 14.85 \u00b1 27.932 months in the NEOLP group and 14.85 \u00b1 27.932 months in the EOLP group. There was no significant difference in clinical information between the two groups (Table 1).\n\nThrough differential gene analysis, it was found that in NEOLP and EOLP, the expression of multiple core factors and effector cytokines or their receptor transcription factors of CD8+ Trm cells, including ITGA1, LITAF, SKIL, etc., and related immune factor receptors such as TNFRSF6B, IL17RA, and IFNAR1 were significantly increased in the EOLP than in the NEOLP (Figure 4A, B; Table 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83981/elife-83981-fig4-v2.jpg)\n\n**Figure 4.:** + Trm in oral lichen planus (OLP) patients have different transcriptomic expression in different clinical presentations and outcomes.(A, B) CD8+ Trm marker genes and related inflammatory factor genes in erosive oral lichen planus (EOLP)/non-erosive oral lichen planus (NEOLP). (C, D) CD8+ Trm marker genes and related inflammatory factor genes in recurrent erosion (RE)/persistent non-erosion (PNE).Figure 4\u2014source data 1.Figure 4\u2014source data 2.\n\nTo further investigate the clinical relevance of these findings, we divided the clinical cohort into two groups based on the 1-year follow-up: the recurrent erosion (RE) group (the interval between erosions <3 months) and the persistent non-erosion (PNE) group (\u22653 months without any form of erosion). In addition to the above clinical factors being included in the two groups for statistical comparison, the diagnosis (NEOLP or EOLP) and medication (divided into three groups: local glucocorticoids, local glucocorticoids + immunosuppressant, and other drugs) were analyzed (Table 3), in which glucocorticoids were all used for local and external use. Differences in clinical information other than diagnosis were still not statistically significant for the clinical outcome of OLP. Moreover, the multiple core factors and effector cytokines of CD8+ Trm cells were found to be consistently upregulated in the recurrent erosion group, further supporting the role of CD8+ Trm cells in OLP progression (Figure 4C, D).\n\nTo mitigate confounding factors and minimize systematic bias, we employed multivariate logistic regression to analyze patients with different clinical types and outcomes of OLP. The multivariate logistic model was used to perform regression analysis on the effects of CD8+ Trm-related factors on the clinical manifestations and clinical outcomes of OLP after adjusting for clinical factors such as age, gender, smoking, and drinking. We found that the core genes of CD8+ Trm cells are closely related to the clinical manifestations of OLP, and the expression differences of marker genes such as ITGA1, LITAF, SKIL, and cytokine-related genes such as IL17RA, IFNG41, IFNAR1, and TNFRSF6B were statistically significant between the two clinical types. The core genes of CD8+ Trm cells are also closely related to the erosion of OLP. Marker genes such as CD69, ITGA1, LITAF, SKIL, and cytokine-related genes such as IL17RA, IFNG41, IFNAR1, and GZMB are associated with two clinical outcomes of persistent non-erosion and recurrent erosion. The differences in expression were statistically significant and were significantly increased in the recurrent erosion group (Table 2).\n\n## CD8+ Trm cells may participate in the erosion of OLP by secreting active cytokines\n\nImmunofluorescence experiments verified that there were CD8+ Trm cells in NEOLP and EOLP. The content of CD8+ Trm cells in EOLP was significantly increased than that in NEOLP. It can be seen from the location that CD8+ Trm cells are mostly close to the basal layer. In NEOLP, the basement membrane was basically intact, and sporadic T cells entered the epithelial layer, while in EOLP, CD8+ Trm cells accumulated more obviously under the erosive epithelium, and the number was obviously higher than in NEOLP, and the mucosal epithelial basement membrane was not clear in some places, more T cells were entering the mucosal epithelial layer, some of which were CD8+ Trm cells (Figure 5A\u2013D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83981/elife-83981-fig5-v2.jpg)\n\n**Figure 5.:** +Trm in erosive oral lichen planus (EOLP) is closely related to the basement membrane and directly affects oral lichen planus\u2019s (OLP) clinical manifestations through active secretion.(A, B) Immunofluorescence images of CD8+ Trm cells in non-erosive oral lichen planus (NEOLP; the white dotted line is the basement membrane, and the red arrow points to the CD8+ TRM cells). (C, D) Immunofluorescence images of CD8+ Trm cells in EOLP (the white dotted line is the basement membrane, and the red arrow points to the CD8+ Trm cells). (E) Schematic diagram of CD8+ Trm sorting by flow cytometry. (F) Image of sorting CD8+ Trm flow cytometry and gating strategy. (G) Comparison of the proportion of CD8+ Trm in NEOLP versus EOLP. (H) Enzyme-linked immunosorbent assay (ELISA) detection results of CD8+ TRM secreting TNF-\u03b1, IFN-\u03b3, and IL17 in NEOLP versus EOLP.Figure 5\u2014source data 1.Figure 5\u2014source data 2.\n\nAccording to the classic distinguishing and defining characteristics of memory T cell subsets, a CD8+ Trm sorting strategy was developed (Figure 4E). The OLP tissue cell suspension was incubated with antibodies for sorting, and it was found that the content of CD8+ Trm cells in EOLP was significantly higher than that in NEOLP (p < 0.05) (Figure 5F, G). We further verified the previous results in scRNA-seq and ST and found that the difference in CD8+Trm content in different clinical types of OLP is strongly correlated with the clinical feature, which may be one of the reasons for the different clinical manifestations.\n\nTo investigate the functional differences between CD8+ Trm cells in EOLP and NEOLP, we stimulated sterile-sorted CD8+ Trm cells from both tissue types with phytohemagglutinin (PHA) and performed an enzyme-linked immunosorbent assay (ELISA) to detect cytokine production. Our results showed that CD8+ Trm cells in EOLP produced significantly higher levels of the inflammatory cytokines TNF-\u03b1, IFN-\u03b3, and IL17 than those in NEOLP, with the increase in IFN-\u03b3 being statistically significant (Figure 5H). It also confirmed the previous experimental results and indicated that CD8+ Trm cells may affect the clinical manifestations of OLP through the secretion of the inflammatory factor IFN-\u03b3.\n\n## Discussion\n\nThis study is the first to provide a comprehensive characterization of the presence, spatial distribution, and heterogeneity of CD8+ Trm cells in OLP tissues with different clinical manifestations, revealing possible regulatory mechanisms of CD8+ Trm cells in OLP pathology. Our findings suggest that CD8+ Trm cells play a crucial role in the pathological process of OLP and contribute to the erosion of OLP by secreting multiple cytokines.\n\nWe utilized scRNA-seq combined with spatial transcriptome to summarize the immune microenvironment of normal oral mucosa and OLP with different clinical subtypes. This study displayed that CD8+ Trm cells exist in OLP and normal tissues and the content of CD8+ Trm cells in normal mucosa, NEOLP, and EOLP increased gradually. Compared with NEOLP, CD8+ Trm cells in EOLP were more extensive, especially in the epithelial deletion area. Pseudo-time analysis revealed that CD8+ Trm cells represent one of the terminal states of T cells in OLP.\n\nCD8+ Trm cells may affect the biological process of OLP by releasing cytokines such as TNF, IFN, IL17, and the activity of CD8+ Trm cells was enhanced in EOLP. It is suggested that the presence of CD8+ Trm cells may be strongly correlated with the clinical type of OLP. Previous studies have found that CD8+ Trm cells can produce IFN-\u03b3, which is a key cytokine in response to viral infection (Cheuk et al., 2017; Guidotti et al., 1996). CD8+ Trms can also produce perforin and granzyme B upon IL15 stimulation to mediate cytotoxic responses that respond to infections by enhancing local immune responses (Cheuk et al., 2017). In addition, IFN-\u03b3 upregulates the production of vascular cell adhesion molecule-1, which recruits central memory T cells (TCM) and B cells to the site of Trm cell localization (Ariotti et al., 2014).\n\nSubsequently, we constructed an OLP clinical follow-up cohort and performed bulk RNA-seq of local lesions in patients to further investigate the role of CD8+ Trm cells in OLP progression. We found that compared with NEOLP, CD8+ Trm cells marker genes and related factors were significantly increased in EOLP. Moreover, follow-up analysis revealed that the recurrent erosion group had significantly higher expression levels of CD8+ Trm cell marker genes and related immune factors than the persistent non-erosion group, consistent with the EOLP results, which validated the accuracy and consistency of our findings. Multiple regression analyses based on OLP clinical cohort showed that multiple core genes of CD8+ Trm were closely related to OLP outcomes, which may be a significant factor leading to the deteriorative clinical outcome of OLP by causing repeated erosive lesions through local activation. Similarly, CD8+ Trm cells also play a crucial part in the recurring aggravation of psoriasis. Even after the psoriatic skin lesions have disappeared, CD8+ Trm cells can still be detected in the skin that seems normal. These cells have the potential to escalate local inflammation over time, trigger recurrent attacks at the same site, and generate a domino effect of inflammation (Owczarczyk Saczonek et al., 2020).\n\nMoreover, immunofluorescence and flow cytometry experiments confirmed that the distribution of CD8+ Trm cells was closely related to the erosion of epithelial tissue, and its content in EOLP was significantly higher than that in NEOLP. An ELISA test confirmed that CD8+ Trm cells in EOLP tissue have enhanced ability to produce inflammatory cytokines such as IFN-\u03b3 compared with NEOLP, which may be an important promoting factor of epithelial erosion. Previous evidence suggests that CD8+ Trm cells protect the host against viruses by producing IFN-\u03b3 in lung tissue (Jiang et al., 2022a). Immune and inflammatory factors are considered to play an important role in the development of OLP, and cytokines IFN-\u03b3 may contribute greatly to the immune pathogenesis of OLP.\n\nRecurrent episodes of autoimmune diseases are believed to be due, in part, to the persistence of local Trm cells that are difficult to eliminate entirely (Jiang et al., 2012; Owczarczyk Saczonek et al., 2020). Immunosuppressive medications and local, or systemic corticosteroids are the main treatments for symptomatic OLP (Garc\u00eda-Pola et al., 2017; Raj et al., 2021). We discovered that there was no statistically significant difference between medication therapy and repeated degradation of OLP in our cohort analysis. This might be because CD8+ Trm is difficult for the present medications to entirely eradicate. Therefore, through a series of studies, we have confirmed that CD8+ Trm cells are not only increased in number but also functionally active in EOLP. These cells are primarily distributed in the lamina propria close to the basement membrane and release a variety of inflammatory factors. The release of excess cytokines such as IFN-\u03b3 may influence the clinical types and outcomes of OLP, making CD8+ Trm cells an important promoting factor for the recurrent erosion of OLP. CD8+ Trm cells may be a great important promoting factor for the recurrent erosion of OLP, which may become a potential immunotherapy target and provide new ideas for the treatment of OLP.\n\nOur study has two limitations. Firstly, scRNA-seq was not performed on normal oral mucosal tissue to explore the role of CD8+ Trm cells in the pathogenesis of OLP. Secondly, since there is currently no animal model for OLP, a cell co-culture model involving CD8+ Trm cells could provide more evidence in further studies. Despite these limitations, our findings support that CD8+ Trm cells play a considerable role in the disease process of OLP and a critical factor in the worsening of its clinical manifestations.\n\n## Materials and methods\n\n## Human samples\n\nAll individuals provided written informed consent and this study was supported by the Ethics Committee of West China Hospital of Stomatology Sichuan University [WCHSIRB-2019-167]. According to the lesion with or without erosion in the biopsy, this study classified OLP as two groups, NEOLP and OLP.\n\n## Cell isolation and processing\n\nIn the framework of the study, OLP tissues were either processed immediately for scRNA-seq or flow cytometry and cell sorting and stored at \u221280\u00b0C refrigerator in freezing for bulk RNA-seq. All biopsied mucosa samples were immediately processed for scRNA-seq or flow cytometry and cell sorting. Samples were gently removed adipose tissue and minced with scissors in a sterile tissue culture dish.\n\nTissue fragments were then digested with enzyme mixture 500 \u00b5l (whole-skin dissociation kit, Miltenyi Biotec) in gentleMACS C tubes (Miltenyi Biotec) which were incubated in a 37\u00b0C water bath for 3 hr under manual agitations every 15 min. Samples were mechanically separated with gentleMACS Dissociator (Miltenyi Biotec) for 1 min and then spun to collect.\n\nThen move C tubes back to the water bath for another 20 min. Next, enzymes were inactivated with 1 ml precool DMES (Dulbecco's Modified Eagle Medium with Serum) from Gibco Laboratories at the end of the incubation. Samples were filtered through a 70 \u03bcm strainer (BD Bioscience) and collected by centrifuging in a table-top centrifuge at 400 \u00d7 g at 4\u00b0C for 5 min. Samples were treated with 5 ml ACK lysis buffer (Ammonium-Chloride-Potassium lysis buffer, Miltenyi Biotec) for 5 min and centrifuged at 400 \u00d7 g at 4\u00b0C for 5 min. Remove the supernatant, and added 100 \u00b5l dead cell removal kit (Miltenyi Biotec) for 15 min. Then added 1500 \u00b5l into the cell suspension three times, and through the magnetic column (Miltenyi Biotec) after pipetting and mixing. Samples were centrifuged at 400 \u00d7 g at 4\u00b0C for 5 min and resuspended in 200 \u00b5l Dulbecco's Phosphate Buffered Saline (D-PBS).\n\n## 10\u00d7 Genomics library preparation and sequencing\n\nThe 10\u00d7Genomics Chromium System is a microfluidic platform based on Gel-bead in EMulsion (GEM) technology for generating real test datasets.\n\nGel beads containing barcode information were combined with a mixture of cells and enzymes and then encapsulated in microfluidic droplets to form GEMs.\n\nThe GEMs flowed into a reservoir and were collected, the gel beads were lysed to release the barcode sequences, the cDNA fragment was reverse transcribed, and samples were labeled. The gel beads were broken and the oil droplets were broken up and PCR amplification was performed using the cDNA as a template. The products of all GEMs are mixed and a standard sequencing library was constructed after using the Chromium Single Cell 5\u2032 library or 3\u2032 v2 library preparation kit according to the manufacturer\u2019s protocol (10\u00d7 Genomics). Finally, all sequencing experiments were conducted using Illumina NextSeq 500 in the Genomics Sequencing.\n\n## Cell clustering and cell-type annotation\n\nThe R package Seurat (v 4.0.1) was used to cluster the cells in the merged matrix. The first step was to filter out low-quality cells, which included cells with less than 500 transcripts, less than 100 genes, or cells with more than 10% of mitochondrial expression. And then normalized the data used the NormalizeData function. The canonical correlation analysis was performed using the normalized expression levels, the batch effect was corrected, and the data were integrated. Z-score normalization is performed on the integrated data, and principal component analysis (PCA) is performed using the normalized expression. The goal of PCA is to reduce the dimension of feature vectors by compressing the scale of the original data matrix, representing the most important features with the least dimension, and the new variable is a linear combination of the original variables, reflecting the comprehensive effect of the original variables. Dimensionality reduction through PCA reduced variables and finally clustered the cells.\n\n## Cell-type subclustering and cell trajectory analysis\n\nThe prevalent cell types underwent subclustering. The subclusters were obtained using the identical functions as previously mentioned. We eliminated from further analysis subclusters that were solely defined by mitochondrial gene expression, a sign of low quality. By crossing over the canonical subtype signature genes with the marker genes for the subclusters, the subtypes were annotated. To identify the canonical pathways and putative upstream regulators, IPA was applied to the DEGs. Significant upstream regulators were those with activation z--scores \u22652 or \u22642. Using the Add Module Score function on the genes activated by the targeted cytokine from bulk RNA-seq data, as previously stated, the module scores were generated.\n\nIn this study, Monocle 2 was used for cell trajectory analysis. First, all DEGs in cell subtypes (clusters) were screened; then dimensionality reduction was performed and then a minimum spanning tree was constructed; Finally, the best cell development or differentiation pseudo-time trajectory curve was fitted.\n\n## ST process\n\nThe ST protocol was performed according to recommendations (10\u00d7 Genomics). Fresh OLP tissues were put into a mold in powdered dry ice, wrapped with optimal cutting temperature compound (OCT), completely frozen and optimized to ideal form, and then sectioned while Hematoxylin and Eosin (HE) stained. The OCT-embedded tissues were cut to 10 \u00b5m thickness with a cryostat, then adhered to the chips, and frozen sectioned.\n\nThe chips with the tissue section were fixed with methanol, then stained with HE, and incubated with permeabilase on a PCR adapter to release the mRNA in the cells and bind to the corresponding capture probe. Validation of chips with brightfield imaging and fluorescence imaging. And then cDNA synthesis and sequencing library preparation using captured RNA as template.\n\nThen, the prepared sequencing library is subjected to second-generation high-throughput short-read sequencing; finally, combined with the HE results, the expression of genes, the level of expression, and the spatial location information of these genes are determined.\n\n## ST analysis\n\nSamples\u2019 data were initially processed using the 10\u00d7 official software Space Ranger (10\u00d7 Genomics). Space Ranger displays the captured area organized in the chip through an image processing algorithm and distinguished the reads of each spot according to the spatial barcode information. The number of pair reads, the numbers of detected genes, and the number of UMIs in each spot were counted to evaluate the quality of the samples. The data were then normalized using sctransform to construct a regularized negative binomial model of gene expression to detect high variance features. After overall quality control, the proportion of mitochondrial genes in each sample is less than 0.12%, and the overall average is less than 0.08%, which meets the requirements of the 10\u00d7 Genomics Visium platform.\n\nAfter further dimensionality reduction, the gene expression of each spot was used to cluster the same type of spots to form spots clusters. Finally, through the labeling of characteristic genes, transcriptome visualization in the tissue space can be realized.\n\n## Immunofluorescence staining\n\n5 \u00b5m formalin-fixed mucosa lesion biopsy tissue sections were dewaxed in xylene and rehydrated with distilled water. Membrane rupture after proteinase K repair, then, the terminal deoxynucleotidyl transferase (TDT) enzyme, deoxyuridine triphosphate (dUTP) and buffer in the tunel kit were mixed at a ratio of 1:5:50, added to the tissue area, and then transferred to the wet box, and incubated a 37\u00b0C for 2 hr. After elution, the tissue surface was covered with 3% bovine serum albumin (BSA) and blocked at room temperature for 30 min. Then, incubation with the following primary monoclonal antibodies was performed: rabbit anti-human CD8, and mouse anti-human CD69, all at 1:200 dilution.\n\n## Flow cytometry and cell sorting\n\nSurface marker staining after resuspending the digested single-cell suspension from the lesion of mucosa in 1\u20132 ml of BD Pharmingen Stain Buffer (BSA) pre-chilled at 4\u00b0C.\n\nAfter rinsing twice with BSA, the cells were stored at 4\u00b0C in the dark, and flow cytometry was performed immediately. The BD cytometer was used and samples were sorted with fluorescence-activated cells, and the scheme of surface staining was as indicated in the text, using 4',6-diamidino-2-phenylindole (DAPI) as the reactive dye.\n\n## ELISA procedure\n\nAfter sorting the CD8+ TRM cells, add 10 \u00b5g/ml PHA to its 1640 medium. The supernatant was collected after culturing at 5% CO2 and 37\u00b0C for 72 hr, and then an ELISA assay was performed to detect TNF-\u03b1, IFN-\u03b3, and IL17, respectively.\n\nAdd deionized water to the corresponding reagents in the kit to prepare the detergent, diluent, and standard solution, prepare a standard dilution tube and prepare the color developer 15 min before use. Then, standard substances and experimental samples of different concentrations were added to the corresponding microwells, and 100 \u00b5l was added to each microtiter well and incubated for 2 hr after sealing.\n\nAfter washed of each well, added 200 \u00b5l of enzyme-labeled detection antibody, then sealed the plate and incubated for 2 hr before washing, added 200 \u00b5l of a diluted chromogenic substrate, sealed the plate and incubated for 30 min, and added 50 \u00b5l of stop solution to each well. Measured the absorbance at 450 nm with a microplate reader, set 540 nm as the calibration wavelength, and measured the OD value of each well after zero-adjusting the blank control well. Finally, made a standard curve according to the concentration and OD value of the standard product, and then calculated the sample concentration according to the standard curve equation.\n\n## Bulk-RNA sequencing procedure\n\nSample RNA was extracted by Cetyl Trimethyl Ammonium Bromide (CTAB) method (Wang and Stegemann, 2010). And the extracted RNA was then tested for purity, concentration, and integrity. A number of library construction procedures, including end repair, end addition of A, ligation adapter addition, and fragment security screening, were carried out once mRNA is recovered. It was sequenced on the device following PCR amplification and purification.\n\n## Clinical cohort and transcriptome data analysis\n\nT-tests for continuous variables and chi-square tests for categorical variables were used to analyze the baseline data of the clinical cohort\u2019s patients. T-tests were also used to determine whether one gene\u2019s expression varied from that of another.\n\nMultivariate logistic regression was used to analyze the effects of related genetic factors on the clinical outcome of OLP to account for confounding. Analysis based on a variety of variables. R software (Version 4.0.1) was used for the analysis and statistics of this portion of the statistical data, and all of the aforementioned analysis and test levels were set to 0.05.\n\nUnreliable data were filtered and eliminated by the quality assessment of the original data after sequencing is complete, and downstream analysis was carried out following gene difference analysis. Correlation analysis, PCA, sample cluster analysis, and weighted gene co-expression network analysis had next be performed.\n",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brian S Kim, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83981.sa0](https://doi.org/10.7554/eLife.83981.sa0)\n\nOverall, this manuscript is a valuable contribution to the field of human immunology and provides solid data and interpretations. Very little is known about oral lichen planus so this dataset may also serve as a public resource. Thank you for your contribution on mapping the cellular landscape of this poorly understood condition.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Brian S Kim, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83981.sa1](https://doi.org/10.7554/eLife.83981.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CD8+ tissue-resident memory T cells triggered the erosion of oral lichen planus by the cytokine network\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Brian S Kim as Reviewing Editor and Reviewer #2, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please temper claims about CD8 Trms being drivers of disease as this is not proven.\n\n2) Please clarify why erosive vs. non-erosive is a critical distinction in light of data suggesting it is more of a spectrum.\n\n3) Please clarify the source of IL-23 as its unconventional interpretations of IL-23 biology are mentioned.\n\n4) Please analyze figures and add clarifying notations as requested by both reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\n1) Need n>1 per group when comparing groups (EOLP).\n\n2) I don't understand the value of comparing NEOLP and EOLP lesions. EOLP is likely to be a more severe presentation of the same disease. Perhaps the data for NEOLP and EOLP could be pooled and compared with healthy oral mucosa to yield greater insight into OLP pathogenesis.\n\n3) Figures 1 and 2 could be improved by adding some additional or expanded displays of scRNA-seq data. Including the top 10-50 DEGs/cluster and specificity controls (non-T cells). Also, a much more detailed description of methods and manner in which data is displayed is needed in Figure 2 legend and methods section as in comment #1. As an example, for Figure 2 F, I am not clear on what is meant by 'gene ratio' and whether data are displayed as -log P values. Values of 0.05-0.15 seem very low to me (background).\n\n4) Why focus on Runx1 and il23a in Figure 3? Were these highlighted bc they are among the most highly expressed genes? Please include a more comprehensive analysis of spatial gene expression in OLP and healthy mucosa as this is very interesting data. Also, it would be nice to have some higher-power images of select areas for ease of interpretation.\n\n5) Please comment on whether you think IL-23 protein is produced by CD8 Trm, as T cells have not previously been reported to make IL-23. Is il12b co-expressed by cells in which you see il23a signal?\n\n6) Please explain what 'differential gene analysis' was done in the cohort study described in Tables 1, 3, and FiguresS2A-B.\n\n7) I am intrigued by the logistic regression analyses described in Table 3. However, it is unclear to me what the impact of each indicated gene is on the clinical type and clinical outcome. In the Results section text, the authors state that \"CD69, Itga1, LITAF, SKIL, and cytokine-related genes such as\u2026 Were associated with two clinical outcomes of persistent non-erosion and recurrent erosion.\" Can the authors give more detail on how they reached this conclusion and how the data in Table 3 can be used to describe an association with a specific outcome or clinical type?\n\n8) Gating strategy is unclear, one cannot interpret these data without them. Please label all plot axes and gated populations. What gates or populations do the data in Figure 4H derive from?\n\n9) In all bar graphs please plot individual values as well as mean plus error bars.\n\n10) The manuscript is difficult to read with a number of semantic errors including in the title. Please revise appropriately.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 Comment on the role(s) of B cells and mast cells in OLP pathogenesis since they are heavily represented specifically in erosive OLP tissue.\n\n\u2013 Revise the text to emphasize CD8+ Trm cells as a defining feature of erosive OLP rather than a mechanistic driver of disease.\n\n\u2013 Assess proliferative capacity and/or activation state of primary CD8+ Trm. Quantitative PCR analysis could also provide robust measures of cytokine production.\n\nClearly label Figure 4 flow cytometry data; replace fluorochromes with markers used and label axes with units of measurement that were used.\n",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5af641d-c9b9-4b90-9de6-fc9e651a746d",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C1",
+      "claim": "CD8+ tissue-resident memory T (CD8+ Trm) cells play key roles in many immune-inflammation-related diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8 + tissue-resident memory T (CD8 + Trm) cells play key roles in many immune-inflammation-related diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge in the field of immunology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "49def330-214a-4d2b-adc4-a5b31534693d",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C2",
+      "claim": "CD8+ Trm cells were predominantly located in the lamina propria adjacent to the basement membrane in oral lichen planus.",
+      "claim_type": "EXPLICIT",
+      "source": "we revealed that CD8 + Trm cells were predominantly located in the lamina propria adjacent to the basement membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing profiling and spatial transcriptomics data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "3dd50266-105e-4cb9-a2a0-228ad3cc326c",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C3",
+      "claim": "CD8+ Trm cells were significantly increased in patients with erosive oral lichen planus (EOLP) compared to those with non-erosive oral lichen planus (NEOLP).",
+      "claim_type": "EXPLICIT",
+      "source": "CD8 + Trm cells were predominantly located in the lamina propria adjacent to the basement membrane and were significantly increased in patients with erosive oral lichen planus (EOLP) compared to those with non-erosive oral lichen planus (NEOLP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-cell RNA sequencing and spatial transcriptomics data, as well as flow cytometry results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "e6c488e4-117d-4be5-940b-844f75455bc0",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C4",
+      "claim": "CD8+ Trm cells displayed enhanced cytokine production, including IFN-\u03b3, TNF-\u03b1, and IL-17, in patients with EOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these cells displayed enhanced cytokine production, including IFN-\u03b3 (Interferon-gamma, a pro-inflammatory signaling molecule), TNF-\u03b1 (Tumor Necrosis Factor-alpha, a cytokine regulating inflammation), and IL-17 (Interleukin-17, a cytokine involved in immune response modulation), in patients with EOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 5H and gene expression analysis from scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "7ec128b6-b91a-4180-943a-03a03346e775",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C5",
+      "claim": "Oral lichen planus (OLP) is a chronic inflammatory disease on the oral mucosa of unknown etiology mediated by T cells with a 1.01% global prevalence rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Oral lichen planus (OLP) is a chronic inflammatory disease on the oral mucosa of unknown etiology mediated by T cells with a 1.01% global prevalence rate (Gonz\u00e1lez-Moles et al., 2021; Jiang et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gonz\u00e1lez-Moles et al., 2021 and Jiang et al., 2022b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "af6b04dd-b13a-46fc-a4f7-e81c9c8c1c74",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C6",
+      "claim": "EOLP has a significantly higher risk of malignant transformation than NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, EOLP has a significantly higher risk of malignant transformation than non-erosive oral lichen planus (NEOLP) (Arduino et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Arduino et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "6f3dc351-97eb-4376-b0b8-ab555382b151",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C7",
+      "claim": "The pathological feature of OLP is characterized by dense infiltration of T cells in the lamina propria, disruption of the basement membrane, and degeneration of basal keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathological feature of OLP is characterized by dense infiltration of T cells in the lamina propria, disruption of the basement membrane, and degeneration of basal keratinocytes (Xu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Xu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "7d404932-a712-4934-bcd9-aa2c8e5dc272",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C8",
+      "claim": "CD8+ T cells are related to the liquefaction of basal cells in OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ T cells are related to the liquefaction of basal cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9415dbf6-6efa-4939-b7f2-b2c39cc7f01f",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C9",
+      "claim": "Tissue-resident memory T (Trm) cells are a recently described population of terminally differentiated T cells, which are crucial for local immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-resident memory T (Trm) cells are a recently described population of terminally differentiated T cells, which are crucial for local immunity (Mueller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mueller et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d029a214-9343-424b-8c76-721bfb5ad3b7",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C10",
+      "claim": "CD8+ Trm cells play important roles in the occurrence and development of many chronic inflammatory diseases such as psoriasis and vitiligo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies had revealed that CD8+ Trm cells play important roles in the occurrence and development of many chronic inflammatory diseases such as psoriasis and vitiligo (Eberle et al., 2016; Richmond et al., 2018; Watanabe, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eberle et al., 2016; Richmond et al., 2018; Watanabe, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "25c1c9d7-72ce-433f-9ac6-194a7fc1cc0e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C11",
+      "claim": "The final scRNA-seq dataset comprised 46,377 cells, with an average of 1743 genes per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The final dataset comprised 46,377 cells, with an average of 1743 genes per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the experimental data obtained from scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "0f5ee174-e606-45ca-b238-07f75d6051ab",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C12",
+      "claim": "Visualization using UMAP revealed 47 distinct cell clusters that were annotated as 8 major cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualization using uniform manifold approximation and projection (UMAP) revealed 47 distinct cell clusters (Figure 1A) that were annotated as 8 major cell types (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the UMAP analysis shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "4848e18e-69f3-4707-bd00-a055a3d77fa4",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C13",
+      "claim": "T cells constituted the highest proportion of all samples in the scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, although T cells, the hallmark cells of OLP, constituted the highest proportion of all samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cell composition analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "055910dd-8b8e-4f6a-b021-a027508cc377",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C14",
+      "claim": "The proportion of B cells and myeloid cells increased in EOLP compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell composition analysis also revealed an increase in the proportion of B cells and myeloid cells in EOLP (Figure 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell composition analysis shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "77a1aad1-63c7-43cf-8657-3436493e93e1",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C15",
+      "claim": "Neutrophils were significantly more abundant in EOLP than NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that neutrophils were significantly more abundant in EOLP than NEOLP (Figure 1\u2014figure supplement 1A, B ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 1\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "255625ae-6c79-4f24-a7b5-2271333d1362",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C16",
+      "claim": "Plasmacytoid dendritic cells (pDC) were more common in EOLP compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, plasmacytoid (pDC) were also more common in EOLP compared to NEOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on myeloid cell analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "76f9077c-8ced-4106-a7d1-b3528a17aefa",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C17",
+      "claim": "NEOLP had a higher number of myeloid dendritic cells (mDC) than EOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NEOLP had a higher number of myeloid (mDC) than EOLP (Figure 1\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 1\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "5a34ecef-9c7f-4173-94b0-efa4a182bd97",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C18",
+      "claim": "Neutrophil cells in EOLP were significantly enriched in defense response and positive regulation of cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon conducting GO analysis, we found that neutrophil cells in EOLP were significantly enriched in defense response and positive regulation of cytokine production (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO analysis shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "19667a62-6d76-4176-b643-1d90e77ad7ed",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C19",
+      "claim": "The NK/T cell population was divided into 23 cell subgroups by further clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, by further clustering, the genes of the NK/T cell population, the NK/T cell population was divided into a total of 23 cell subgroups (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on clustering analysis shown in Figure 2\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "b060ed6b-fb8f-4b10-868d-697b21512a3f",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C20",
+      "claim": "Six large cell subpopulations were identified in the NK/T cell population: NK cells, CD8+ T cells, CD4+ T cells, CD4+ CD8+ T cells, CD8+ Trm cells, and CD4+ CD8+ Trm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After further annotation of the NK/T cell subsets with marker genes, six large cell subpopulations were described: NK cells, CD8+ T cells, CD4+ T cells, CD4+ CD8+ T cells, CD8+ Trm cells, and CD4+ CD8+ Trm cells (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by annotation analysis shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "20129a3d-f4c2-4c49-a8e6-faf6442f87c8",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C21",
+      "claim": "EOLP exhibited fewer CD8+ T cells but more CD4+ T cells, CD8+ Trm cells, and CD4+ CD8+ T cells than NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "EOLP exhibited fewer CD8+ T cells but more CD4+ T cells, CD8+ Trm cells, and CD4+ CD8+ T cells than NEOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cell proportion analysis from scRNA-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "fb9c3edd-4adf-4c19-b3dd-d24f07051def",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C22",
+      "claim": "LTB, an inflammatory response gene, was significantly active in the CD4+ T cells subset.",
+      "claim_type": "EXPLICIT",
+      "source": "this study demonstrated that in the CD4+ T cells subset, LTB, an inflammatory response gene, was significantly active",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "26b4a5a4-554c-48d3-984d-b91556328171",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C23",
+      "claim": "CCL4, CCL4L2, and CCL5 that guide immune cells to migrate to inflammatory sites were activated in CD8+ Trm and CD8+ T cells subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "while CCL4, CCL4L2, and CLL5 that guide immune cells to migrate to inflammatory sites were activated in CD8+ Trm and CD8+ T cells subset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "60782c68-b98b-459b-8460-03a8dcfb4aff",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C24",
+      "claim": "The CD8+ T cell subset displayed significantly higher expression of GZMK compared to other subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the CD8+ T cell subset displayed significantly higher expression of GZMK, a gene known to contribute to the cytotoxicity and induction of apoptosis in target cells, compared to other subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "48321d7d-c382-47a9-a235-61c4bdf6b178",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C25",
+      "claim": "CD8+ Trm cells exhibited higher expression levels of GZMA, GZMK, TNF, PRF1, and other genes associated with inflammatory factors compared to other subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CD8+ Trm cells in particular exhibited higher expression levels of GZMA, GZMK, TNF, PRF1, and other genes associated with inflammatory factors, when compared to other subgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "2d41ae80-6f15-40bb-8abd-81cba0932dd4",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C26",
+      "claim": "B2M and HIF1A were found to be significantly expressed in EOLP compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the significantly different genes between NEOLP and EOLP indicated that B2M, closely related to the stability of MHC class I molecules and antigen presentation, and HIF1A, which regulates immune cell function and inflammation, were found to be significantly expressed in EOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential gene expression analysis shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "5ef85c6f-2759-41f0-aefd-cb7ffbf85dc3",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C27",
+      "claim": "EOLP expressed markers involved in the differentiation and function of Trm cells, including CD69, IL7R, CD7, and FOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the EOLP expressed a number of markers involved in the differentiation and function of Trm cells, including CD69, IL7R, CD7, FOS, etc. (Figure 2\u2014figure supplement 2A, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "c8de85f2-1913-4902-8c02-4495277bda9a",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C28",
+      "claim": "CD69, GNLY, GZMB, IFNG, TNF, and PRF1 were significantly increased in the CD8+ Trm subgroup in EOLP compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "we performed differential expression analysis and found that the CD8+Trm marker gene CD69, GNLY which can play a cytotoxic role, and multiple pro-inflammatory factor-related genes, such as GZMB, IFNG, TNF, and PRF1, were significantly increased in the CD8+ Trm subgroup in EOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential expression analysis shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "b9ef51ab-27f7-4a39-9bb8-76240e5fc5ce",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C29",
+      "claim": "CD8+ Trm differentially expressed genes in EOLP were more significantly enriched in pathways such as positive regulation of cytokine production, regulation of T cell activation, and positive regulation of cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "GO enrichment analysis indicated that CD8+ Trm differentially expressed genes (DEGs) in EOLP between NEOLP were more significantly enriched in pathways such as positive regulation of cytokine production, regulation of T cell activation, and positive regulation of cell activation (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "6c128916-5c35-47ed-bbfc-ca3ccf92bf44",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C30",
+      "claim": "CD8+ Trm cells may represent one of the terminal states of T cell differentiation and development in OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "The pseudotime analysis also suggests that CD8+ Trm cells may represent one of the terminal states of T cell differentiation and development in OLP (Figure 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pseudotime analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d180be29-e630-45ec-b61b-0bf1986841f1",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C31",
+      "claim": "Spatial transcriptomics analysis was performed on normal oral mucosa (n = 2), NEOLP (n = 3), and EOLP (n = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the spatial heterogeneity between normal oral mucosa and OLP, we performed the spatial transcriptomics (ST) analysis of normal oral mucosa (n = 2), NEOLP (n = 3), and EOLP (n = 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "42d7a297-796c-4d66-9ba7-cf5c7e824a4b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C32",
+      "claim": "Normal oral mucosa and NEOLP had intact epithelium in spatial transcriptomics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The normal oral mucosa and NEOLP had intact epithelium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "a0eddc1a-43a9-409c-a727-82d0d65716d2",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C33",
+      "claim": "In EOLP, the epithelium on one side of the tissue was intact while the epithelium on the other side was missing.",
+      "claim_type": "EXPLICIT",
+      "source": "In EOLP, it can be seen that the epithelium on the left side of the tissue is intact, while the epithelium on the right side is missing (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "4e287c8d-1006-4bb7-a2d2-45fb66eb80cd",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C34",
+      "claim": "CD8+ Trm cells were more distributed in EOLP than NEOLP, and more distributed in NEOLP than normal oral mucosa.",
+      "claim_type": "EXPLICIT",
+      "source": "it was found that CD8+ Trm cells were more distributed in EOLP than NEOLP, and more distributed in NEOLP than normal oral mucosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "28c3965d-e7e9-4c57-94d1-eca24342ace5",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C35",
+      "claim": "CD8+ Trm cells are mostly distributed adjacent to the epithelium in normal oral mucosa, NEOLP, and EOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "And it can be observed that whether in normal oral mucosa, NEOLP or EOLP, CD8+ Trm cells are mostly distributed adjacent to the epithelium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "5b166117-747c-40be-952f-e8da902ec5ea",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C36",
+      "claim": "In EOLP tissues, CD8+ Trm cells in the areas where the epithelium is lost are correspondingly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "while in EOLP tissues, CD8+ Trm cells in the areas where the epithelium is lost are correspondingly reduced, and there are CD8+ Trm cells in the deeper lamina propria of the corresponding tissues (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "eb9ab44d-2bbc-4417-a1eb-61e5d85d4013",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C37",
+      "claim": "The expression of TNF, IL17A/IL17RA, and IFNGR1 was higher in OLP than in normal oral mucosa.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the expression of TNF, IL17A/IL17RA, IFNGR1, etc. was higher than in normal oral mucosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "4072cfea-c8f2-49cf-997d-07dc9f4638b9",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C38",
+      "claim": "The signals of IFNGR1 and IL17RA were significantly enhanced in EOLP compared with NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "And the signals of the effector receptor IFNGR1 of IFN and the effector receptor IL17RA of IL17 were significantly enhanced in EOLP compared with NEOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ee384872-e2a0-42da-a2d1-6318de6279e7",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C39",
+      "claim": "A clinical cohort with 40 participants was established, confirmed by clinical manifestation and pathological diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To objectively illustrate the molecular mechanism of OLP erosion, we established a clinical cohort with 40 participants, which were confirmed by clinical manifestation and pathological diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ca547be6-d5f8-422c-93f8-108f142ce946",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C40",
+      "claim": "The NEOLP group included 15 females and 12 males, while the EOLP group included 8 females and 5 males.",
+      "claim_type": "EXPLICIT",
+      "source": "there were 15 females and 12 males in the NEOLP group and 8 females and 5 males in the EOLP group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic data from the clinical cohort shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "3dad3cc5-e84c-4447-898a-77b7dad9f707",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C41",
+      "claim": "The mean age of the NEOLP group was 30.07 \u00b1 11.34 years and that of the EOLP group was 45.08 \u00b1 12.86 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age of the NEOLP group was 30.07 \u00b1 11.34 years and that of the EOLP group was 45.08 \u00b1 12.86 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic data from the clinical cohort shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "36739e8d-8acc-43a1-897d-03555e98538d",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C42",
+      "claim": "The expression of ITGA1, LITAF, SKIL, TNFRSF6B, IL17RA, and IFNAR1 were significantly increased in EOLP compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Through differential gene analysis, it was found that in NEOLP and EOLP, the expression of multiple core factors and effector cytokines or their receptor transcription factors of CD8+ Trm cells, including ITGA1, LITAF, SKIL, etc., and related immune factor receptors such as TNFRSF6B, IL17RA, and IFNAR1 were significantly increased in the EOLP than in the NEOLP (Figure 4A, B; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene analysis from bulk RNA-seq shown in Figure 4A, B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "8d682403-ed47-4a29-b97b-7a3b0b97496b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C43",
+      "claim": "Multiple core factors and effector cytokines of CD8+ Trm cells were consistently upregulated in the recurrent erosion group compared to the persistent non-erosion group.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the multiple core factors and effector cytokines of CD8+ Trm cells were found to be consistently upregulated in the recurrent erosion group, further supporting the role of CD8+ Trm cells in OLP progression (Figure 4C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene analysis from bulk RNA-seq shown in Figure 4C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "e393a578-614c-4785-b87f-c82a6bdb8544",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C44",
+      "claim": "The core genes of CD8+ Trm cells are closely related to the clinical manifestations of OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the core genes of CD8+ Trm cells are closely related to the clinical manifestations of OLP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multivariate logistic regression analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "4864d88e-4576-4328-99ca-33917607bbbb",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C45",
+      "claim": "The expression differences of ITGA1, LITAF, SKIL, IL17RA, IFNG41, IFNAR1, and TNFRSF6B were statistically significant between NEOLP and EOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "the expression differences of marker genes such as ITGA1, LITAF, SKIL, and cytokine-related genes such as IL17RA, IFNG41, IFNAR1, and TNFRSF6B were statistically significant between the two clinical types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multivariate logistic regression analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f5f411db-841e-49a0-9a0a-462d002b76d3",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C46",
+      "claim": "CD69, ITGA1, LITAF, SKIL, IL17RA, IFNG41, IFNAR1, and GZMB expression differences were statistically significant between persistent non-erosion and recurrent erosion groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Marker genes such as CD69, ITGA1, LITAF, SKIL, and cytokine-related genes such as IL17RA, IFNG41, IFNAR1, and GZMB are associated with two clinical outcomes of persistent non-erosion and recurrent erosion. The differences in expression were statistically significant and were significantly increased in the recurrent erosion group (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multivariate logistic regression analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "0b437547-c714-4f94-a9c1-e3223589841e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C47",
+      "claim": "The content of CD8+ Trm cells in EOLP was significantly increased compared to NEOLP as verified by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence experiments verified that there were CD8+ Trm cells in NEOLP and EOLP. The content of CD8+ Trm cells in EOLP was significantly increased than that in NEOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunofluorescence experiments shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d7a75f59-9a32-41e2-b27f-27679ccb1f35",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C48",
+      "claim": "CD8+ Trm cells are mostly close to the basal layer in OLP tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be seen from the location that CD8+ Trm cells are mostly close to the basal layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunofluorescence experiments shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "e80423e6-8dc1-4252-abea-be642c4989e2",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C49",
+      "claim": "In EOLP, CD8+ Trm cells accumulated more obviously under the erosive epithelium compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "while in EOLP, CD8+ Trm cells accumulated more obviously under the erosive epithelium, and the number was obviously higher than in NEOLP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunofluorescence experiments shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "a3968358-5ebf-4624-aa25-5fad1e10815b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C50",
+      "claim": "The content of CD8+ Trm cells in EOLP was significantly higher than that in NEOLP as measured by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "it was found that the content of CD8+ Trm cells in EOLP was significantly higher than that in NEOLP (p < 0.05) (Figure 5F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 5F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "88052f35-bf8e-4676-8673-9725eb4973f6",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C51",
+      "claim": "CD8+ Trm cells in EOLP produced significantly higher levels of TNF-\u03b1, IFN-\u03b3, and IL17 than those in NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that CD8+ Trm cells in EOLP produced significantly higher levels of the inflammatory cytokines TNF-\u03b1, IFN-\u03b3, and IL17 than those in NEOLP, with the increase in IFN-\u03b3 being statistically significant (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ELISA analysis shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f4eb64f3-33c0-4cd9-98b0-037d741b7917",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C52",
+      "claim": "This study is the first to provide a comprehensive characterization of the presence, spatial distribution, and heterogeneity of CD8+ Trm cells in OLP tissues with different clinical manifestations.",
+      "claim_type": "EXPLICIT",
+      "source": "This study is the first to provide a comprehensive characterization of the presence, spatial distribution, and heterogeneity of CD8+ Trm cells in OLP tissues with different clinical manifestations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "89ad3d49-ff66-4495-a6db-008b9720c2b3",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C53",
+      "claim": "CD8+ Trm cells play a crucial role in the pathological process of OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that CD8+ Trm cells play a crucial role in the pathological process of OLP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "a3d1e6ba-d4bf-4411-8620-cb2af00e4fa1",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C54",
+      "claim": "CD8+ Trm cells contribute to the erosion of OLP by secreting multiple cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ Trm cells play a crucial role in the pathological process of OLP and contribute to the erosion of OLP by secreting multiple cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective data presented in the study, including scRNA-seq, spatial transcriptomics, and ELISA results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "52ac3e32-760a-48bf-97e6-f3a8c5087e7f",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C55",
+      "claim": "CD8+ Trm cells represent one of the terminal states of T cells in OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudo-time analysis revealed that CD8+ Trm cells represent one of the terminal states of T cells in OLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pseudotime analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f36bc5b5-6ace-4abe-9ba1-846896698e3b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C56",
+      "claim": "CD8+ Trm cells may affect the biological process of OLP by releasing cytokines such as TNF, IFN, and IL17.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ Trm cells may affect the biological process of OLP by releasing cytokines such as TNF, IFN, IL17",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression and protein secretion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "2b5f6539-e588-40aa-a986-783d1e5014d7",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C57",
+      "claim": "The activity of CD8+ Trm cells was enhanced in EOLP compared to NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "the activity of CD8+ Trm cells was enhanced in EOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential gene expression and GO enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "8c815b53-afd7-4b9c-aa52-7b34d23c6e4c",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C58",
+      "claim": "CD8+ Trm cells can produce IFN-\u03b3, which is a key cytokine in response to viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have found that CD8+ Trm cells can produce IFN-\u03b3, which is a key cytokine in response to viral infection (Cheuk et al., 2017; Guidotti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cheuk et al., 2017 and Guidotti et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f033e896-5b84-4527-a000-e93a3c26a095",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C59",
+      "claim": "CD8+ Trm cells can produce perforin and granzyme B upon IL15 stimulation to mediate cytotoxic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ Trms can also produce perforin and granzyme B upon IL15 stimulation to mediate cytotoxic responses that respond to infections by enhancing local immune responses (Cheuk et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cheuk et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "50b857b1-a60f-4b3d-aaf5-567230ea32c1",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C60",
+      "claim": "IFN-\u03b3 upregulates the production of vascular cell adhesion molecule-1, which recruits central memory T cells and B cells to the site of Trm cell localization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, IFN-\u03b3 upregulates the production of vascular cell adhesion molecule-1, which recruits central memory T cells (TCM) and B cells to the site of Trm cell localization (Ariotti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ariotti et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9ab7856a-ab48-43b9-ba12-235c6818fa45",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C61",
+      "claim": "CD8+ Trm cells play a crucial part in the recurring aggravation of psoriasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, CD8+ Trm cells also play a crucial part in the recurring aggravation of psoriasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with reference to psoriasis literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "3529f878-14ff-4a93-a388-ae19024b7a6b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C62",
+      "claim": "CD8+ Trm cells can still be detected in the skin that seems normal after psoriatic skin lesions have disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after the psoriatic skin lesions have disappeared, CD8+ Trm cells can still be detected in the skin that seems normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about psoriasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "4c4593c7-11f8-460e-a2af-191b4dea7461",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C63",
+      "claim": "CD8+ Trm cells in psoriasis have the potential to escalate local inflammation over time and trigger recurrent attacks at the same site.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells have the potential to escalate local inflammation over time, trigger recurrent attacks at the same site, and generate a domino effect of inflammation (Owczarczyk Saczonek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Owczarczyk Saczonek et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "c4a30931-f71e-4a5e-b57b-65898de5f6c1",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C64",
+      "claim": "CD8+ Trm cells in EOLP tissue have enhanced ability to produce inflammatory cytokines such as IFN-\u03b3 compared with NEOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "An ELISA test confirmed that CD8+ Trm cells in EOLP tissue have enhanced ability to produce inflammatory cytokines such as IFN-\u03b3 compared with NEOLP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ELISA data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "151a1bf8-0236-4438-9b8b-842c1aec87f1",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C65",
+      "claim": "CD8+ Trm cells protect the host against viruses by producing IFN-\u03b3 in lung tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous evidence suggests that CD8+ Trm cells protect the host against viruses by producing IFN-\u03b3 in lung tissue (Jiang et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jiang et al., 2022a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ecf69157-2ab8-47a3-906b-f9c42f052a45",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C66",
+      "claim": "Recurrent episodes of autoimmune diseases are believed to be due, in part, to the persistence of local Trm cells that are difficult to eliminate entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Recurrent episodes of autoimmune diseases are believed to be due, in part, to the persistence of local Trm cells that are difficult to eliminate entirely (Jiang et al., 2012; Owczarczyk Saczonek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jiang et al., 2012 and Owczarczyk Saczonek et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d22091db-5201-49d2-81b1-24049de87bac",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C67",
+      "claim": "Immunosuppressive medications and local or systemic corticosteroids are the main treatments for symptomatic OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunosuppressive medications and local, or systemic corticosteroids are the main treatments for symptomatic OLP (Garc\u00eda-Pola et al., 2017; Raj et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Garc\u00eda-Pola et al., 2017 and Raj et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "5c45fbde-7718-4d19-bd28-0d8322bd8eae",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C68",
+      "claim": "There was no statistically significant difference between medication therapy and repeated degradation of OLP in the cohort analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that there was no statistically significant difference between medication therapy and repeated degradation of OLP in our cohort analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the clinical cohort shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "283944e2-2917-43ed-b42a-56188e09a860",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C69",
+      "claim": "CD8+ Trm cells are difficult for the present medications to entirely eradicate.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be because CD8+ Trm is difficult for the present medications to entirely eradicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the lack of significant difference in medication effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9b328702-88b3-4cf1-b87d-b2080e551dc4",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C70",
+      "claim": "CD8+ Trm cells are not only increased in number but also functionally active in EOLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, through a series of studies, we have confirmed that CD8+ Trm cells are not only increased in number but also functionally active in EOLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on multiple lines of evidence including scRNA-seq, spatial transcriptomics, flow cytometry, and ELISA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "83b1654e-a1de-479c-a31a-4247a854b6d4",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C71",
+      "claim": "CD8+ Trm cells are primarily distributed in the lamina propria close to the basement membrane in OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are primarily distributed in the lamina propria close to the basement membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "95db1fca-84f6-455b-b4f9-e7991a54bbc8",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C72",
+      "claim": "The release of excess cytokines such as IFN-\u03b3 by CD8+ Trm cells may influence the clinical types and outcomes of OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "The release of excess cytokines such as IFN-\u03b3 may influence the clinical types and outcomes of OLP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between CD8+ Trm cell activity and clinical outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "113ec8be-31c2-455d-8240-47259ea9236e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C73",
+      "claim": "CD8+ Trm cells may be an important promoting factor for the recurrent erosion of OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ Trm cells may be a great important promoting factor for the recurrent erosion of OLP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective data showing increased CD8+ Trm cells and cytokine production in EOLP and recurrent erosion groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "2a2199b5-aabd-4e42-80e0-9fe5c8de6df8",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C74",
+      "claim": "CD8+ Trm cells may become a potential immunotherapy target for OLP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "which may become a potential immunotherapy target and provide new ideas for the treatment of OLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future therapeutic applications based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ba68a995-0a83-48a1-903d-2ce3d0611f37",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C75",
+      "claim": "Mature NK cells express CD3 after activation.",
+      "claim_type": "EXPLICIT",
+      "source": "mature NK cells express CD3 (a T cell signature gene) after activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to Abel et al., 2018.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d97ef2e1-3052-4074-a078-2117fb2976ea",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C76",
+      "claim": "The cytotoxic response of mature NK cells is similar to that of CTL.",
+      "claim_type": "EXPLICIT",
+      "source": "while the cytotoxic response of mature NK cells is similar to that of CTL (Abel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Abel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "199a013f-3f49-481d-8247-ec94eaae7750",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C77",
+      "claim": "OLP often exhibits a prolonged and recurrent disease course, with alternating periods of non-erosive and erosive lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clinical experience suggests that OLP often exhibits a prolonged and recurrent disease course, with alternating periods of non-erosive and erosive lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "aa460b69-b9e2-471e-8ea7-4e44e1b41e8b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C78",
+      "claim": "The underlying causes and mechanisms of lesion type switching in OLP remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the underlying causes and mechanisms of lesion type switching remain unclear (Gorouhi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Gorouhi et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "06e67fe5-d2e0-429d-b9bb-1ba964f74a92",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C79",
+      "claim": "OLP patients have immune function disorders both locally and systemically.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that OLP patients have immune function disorders both locally and systemically",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "68c4ba26-559b-4769-939b-332d0d948018",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C80",
+      "claim": "CD8+ T cells infiltrate the OLP lamina propria near the basement membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "with the infiltration of CD8+ T cells in the OLP lamina propria near the basement membrane (Neppelberg et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Neppelberg et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ff722c6f-c1b2-4791-9cda-979696832d80",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C81",
+      "claim": "CD8+ T cells produce a complex network of cytokines and chemokines in OLP, such as IFN-\u03b3, TNF-\u03b1, IL1\u03b1, and IL17.",
+      "claim_type": "EXPLICIT",
+      "source": "which produce a complex network of cytokines and chemokines, such as IFN-\u03b3, TNF-\u03b1, IL1\u03b1, and IL17, among others (Firth et al., 2015; Ke et al., 2017; Piccinni et al., 2014; Shaker and Hassan, 2012; Viguier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Firth et al., 2015; Ke et al., 2017; Piccinni et al., 2014; Shaker and Hassan, 2012; Viguier et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d34b566d-dd52-4a5c-bb14-8965350f2b62",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C82",
+      "claim": "CD8+ Trm cells can persist locally for a long time in the absence of relevant antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "where CD8+ Trm cells can persist locally for a long time in the absence of relevant antigens (Szabo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Szabo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d3aba751-adcd-45e4-add4-18b80ea7960e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C83",
+      "claim": "Recurrent erosion or ulcers in EOLP patients are mostly accompanied by pain and discomfort, which worsen when eating or speaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially, recurrent erosion or ulcers in patients with erosive oral lichen planus (EOLP) were mostly accompanied by pain and discomfort, which worsen when eating or speaking",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d595b7a6-0006-4a48-b852-7b4d85db199c",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C84",
+      "claim": "EOLP adversely affects the physical and mental health of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "and adversely affect the physical and mental health of patients (Rotaru et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rotaru et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "7f2c3b1f-69a3-4556-8a19-7af2e9cd1a67",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C85",
+      "claim": "The study included 40 OLP patients in the clinical cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "This study included 40 OLP patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the study design shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "8f6715e5-8630-48a9-84f0-0609b8660b38",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C86",
+      "claim": "The mean VAS score of the NEOLP group was 1.41 \u00b1 0.89 and that of the EOLP group was 2.46 \u00b1 1.391.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean VAS score of the NEOLP group was 1.41 \u00b1 0.89 and that of the EOLP group was 2.46 \u00b1 1.391.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from the cohort shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d14f0434-c1b3-4810-9fba-c75ba64a0bbb",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C87",
+      "claim": "There was no significant difference in clinical information between the NEOLP and EOLP groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in clinical information between the two groups (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of clinical cohort data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "564896bb-2c0f-451b-b20d-fb198cb36eb4",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C88",
+      "claim": "The clinical cohort was divided into recurrent erosion (RE) group and persistent non-erosion (PNE) group based on 1-year follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate the clinical relevance of these findings, we divided the clinical cohort into two groups based on the 1-year follow-up: the recurrent erosion (RE) group (the interval between erosions <3 months) and the persistent non-erosion (PNE) group (\u22653 months without any form of erosion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "a3cf4a6b-dcee-4a8b-a8b3-ccade1d0a9ae",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C89",
+      "claim": "Differences in clinical information other than diagnosis were not statistically significant for the clinical outcome of OLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in clinical information other than diagnosis were still not statistically significant for the clinical outcome of OLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of clinical cohort data shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "63646bee-c42b-4203-a7b1-054738e44dca",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C90",
+      "claim": "In NEOLP, the basement membrane was basically intact with sporadic T cells entering the epithelial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In NEOLP, the basement membrane was basically intact, and sporadic T cells entered the epithelial layer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunofluorescence observations shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "04d5cfc6-ce57-4b80-b970-974b8694e6b7",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C91",
+      "claim": "In EOLP, the mucosal epithelial basement membrane was not clear in some places, with more T cells entering the mucosal epithelial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "while in EOLP, CD8+ Trm cells accumulated more obviously under the erosive epithelium, and the number was obviously higher than in NEOLP, and the mucosal epithelial basement membrane was not clear in some places, more T cells were entering the mucosal epithelial layer, some of which were CD8+ Trm cells (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence observations shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "a803a9bb-6823-4af9-af42-4d8288c7a01b",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C92",
+      "claim": "The study performed single-cell RNA sequencing of NEOLP (n = 3) and EOLP (n = 2).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the cellular composition and comprehensive transcriptional effects of OLP, we performed single-cell RNA sequencing (scRNA-seq) of NEOLP (NEOLP, n = 3) and EOLP (EOLP, n = 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "6a3e5f60-2b80-4c27-8cb4-8c15490651f0",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C93",
+      "claim": "The proportion of T cells in EOLP-2 was 47.47%, the lowest among all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "the proportion of cells in EOLP-2 was the lowest at 47.47%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cell composition analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "07ed8764-f50a-40b0-bf11-3bd845e6304f",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C94",
+      "claim": "The proportion of T cells in NEOLP-3 was 71.93%, the highest among all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "while the proportion of T cells in the NEOLP-3 case is the highest at 71.93%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cell composition analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "adf9ff1b-6e8c-4f57-a54b-12b9b2224f8a",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C95",
+      "claim": "BTG1, which inhibits cell proliferation, is significantly expressed in the CD4+CD8+T and CD4+CD8+TRM subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "the gene BTG1, which inhibits cell proliferation, is significantly expressed in the CD4+CD8+T and CD4+CD8+TRM subgroups (Figure 2D and Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "8870fee3-b57c-439e-9e78-786bb0867ed8",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C96",
+      "claim": "Some NEOLP samples showed atrophied and thinned epithelium, while others showed hyperplasia and thickening.",
+      "claim_type": "EXPLICIT",
+      "source": "while some NEOLP samples showed atrophied and thinned epithelium, while others showed hyperplasia and thickening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "35025f54-8a49-4c77-9472-526d5b55be36",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C97",
+      "claim": "CD8+ Trm cells in the deeper lamina propria were observed in EOLP tissues where epithelium was lost.",
+      "claim_type": "EXPLICIT",
+      "source": "while in EOLP tissues, CD8+ Trm cells in the areas where the epithelium is lost are correspondingly reduced, and there are CD8+ Trm cells in the deeper lamina propria of the corresponding tissues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial transcriptomics analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "36995781-5662-484f-86c0-030303a88f7f",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C98",
+      "claim": "The distribution of CD8+ Trm cells was closely related to the erosion of epithelial tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, immunofluorescence and flow cytometry experiments confirmed that the distribution of CD8+ Trm cells was closely related to the erosion of epithelial tissue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on immunofluorescence and flow cytometry data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "8a0a5d9a-48db-48fc-b29f-1ae55ab1b95e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C99",
+      "claim": "The difference in CD8+Trm content in different clinical types of OLP is strongly correlated with the clinical feature.",
+      "claim_type": "EXPLICIT",
+      "source": "We further verified the previous results in scRNA-seq and ST and found that the difference in CD8+Trm content in different clinical types of OLP is strongly correlated with the clinical feature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on flow cytometry data shown in Figure 5F-G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f77a3be3-243d-4540-be46-675be4328217",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "claim_id": "C100",
+      "claim": "CD8+ Trm cells may affect the clinical manifestations of OLP through the secretion of the inflammatory factor IFN-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "It also confirmed the previous experimental results and indicated that CD8+ Trm cells may affect the clinical manifestations of OLP through the secretion of the inflammatory factor IFN-\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ELISA data showing significantly increased IFN-\u03b3 production in EOLP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of NEOLP (n=3) and EOLP (n=2) revealed 46,377 cells with 47 distinct clusters annotated as 8 major cell types. While T cells constituted the highest proportion overall, EOLP showed increased proportions of B cells, myeloid cells, neutrophils, and plasmacytoid dendritic cells compared to NEOLP, with neutrophils enriched in defense response and cytokine production pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18, C92-C94 provide consistent scRNA-seq data with appropriate sample sizes and clear analytical pipeline. The cell composition differences between NEOLP and EOLP are supported by UMAP visualization and GO enrichment analysis. However, the small sample size (n=2 for EOLP) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Further clustering of the NK/T cell population identified 23 subgroups that were annotated into 6 major subpopulations: NK cells, CD8+ T cells, CD4+ T cells, CD4+CD8+ T cells, CD8+ Trm cells, and CD4+CD8+ Trm cells. EOLP exhibited fewer CD8+ T cells but more CD4+ T cells, CD8+ Trm cells, and CD4+CD8+ T cells compared to NEOLP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 describe systematic subclustering and annotation of NK/T populations with clear marker-based identification. The differential proportions between EOLP and NEOLP are data-driven. Claims C75-C76 provide appropriate biological context for including NK cells with T cells in initial clustering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "cd3c642b-7a09-4a40-add7-8092367e1d20",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gene expression analysis revealed distinct functional profiles across T cell subsets: LTB was active in CD4+ T cells, CCL4/CCL4L2/CCL5 were activated in CD8+ Trm and CD8+ T cells, GZMK was highly expressed in CD8+ T cells, and CD8+ Trm cells exhibited elevated expression of GZMA, GZMK, TNF, PRF1, and other inflammatory genes. BTG1 was significantly expressed in CD4+CD8+ T and CD4+CD8+ Trm subgroups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C95 are supported by gene expression data from scRNA-seq shown in Figure 2D-E. The functional annotations of genes (e.g., GZMK for cytotoxicity, CCL chemokines for migration) are well-established. The differential expression patterns are consistent with known T cell biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD8+ Trm cells in EOLP showed enhanced activity compared to NEOLP, with significantly increased expression of CD69, GNLY, GZMB, IFNG, TNF, PRF1, B2M, HIF1A, and Trm differentiation markers (CD69, IL7R, CD7, FOS). GO enrichment analysis showed CD8+ Trm DEGs were enriched in cytokine production, T cell activation, and cell activation pathways. Pseudotime analysis suggested CD8+ Trm cells represent a terminal differentiation state in OLP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30, C55, C57 are well-supported by differential expression analysis, GO enrichment, and pseudotime trajectory analysis shown in Figures 2F-G and supplementary figures. The convergence of multiple analytical approaches strengthens the conclusion about enhanced CD8+ Trm activity in EOLP. However, pseudotime analysis infers developmental relationships that may not reflect actual temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "bdcfcfcc-d971-4662-9936-e4bdf47586d8",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spatial transcriptomics analysis of normal oral mucosa (n=2), NEOLP (n=3), and EOLP (n=1) revealed that normal mucosa and NEOLP had intact epithelium (with some NEOLP showing atrophy or hyperplasia), while EOLP showed partial epithelial loss with intact epithelium on one side and missing epithelium on the other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C33, C96 describe spatial transcriptomics observations, but the extremely limited sample size for EOLP (n=1) severely limits the ability to draw generalizable conclusions about EOLP epithelial characteristics. The observation may be sample-specific rather than representative of EOLP as a disease category.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "18f622b9-9667-4efd-beca-f0fe0f551f2c",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spatial transcriptomics revealed CD8+ Trm cells were predominantly located in the lamina propria adjacent to the basement membrane across all tissue types, with progressive increases from normal mucosa to NEOLP to EOLP. In EOLP tissues with epithelial loss, CD8+ Trm cells were reduced in those areas but present in deeper lamina propria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C34-C36, C71, C97 describe spatial distribution patterns supported by spatial transcriptomics data in Figure 3B. The co-localization approach using marker genes is appropriate. However, the single EOLP sample (C31) limits confidence in the generalizability of the epithelial loss observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "56ac22a2-8c70-4bf8-a203-6c32ba66a45a",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spatial transcriptomics showed that TNF, IL17A/IL17RA, and IFNGR1 expression was higher in OLP than normal oral mucosa, with IFNGR1 and IL17RA signals significantly enhanced in EOLP compared to NEOLP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by spatial transcriptomics data shown in Figure 3C. The increased cytokine receptor expression in EOLP is consistent with enhanced inflammatory signaling. However, the single EOLP sample limits statistical robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A clinical cohort of 40 OLP patients was established (NEOLP: n=27, 15 females, 12 males, mean age 30.07\u00b111.34 years, VAS 1.41\u00b10.89; EOLP: n=13, 8 females, 5 males, mean age 45.08\u00b112.86 years, VAS 2.46\u00b11.391). No significant differences in clinical information were found between groups except for the diagnostic classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41, C85-C87 provide clear demographic and clinical data from Table 1. The cohort is adequately sized for validation studies. The lack of significant differences in baseline characteristics (except diagnosis) is appropriate for comparing NEOLP vs EOLP, though the age difference (30 vs 45 years) approaches clinical significance and could be a confounding factor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "deb86abb-7b32-4a5c-9155-f50a54b4d931",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bulk RNA-seq of the clinical cohort showed that CD8+ Trm marker genes (ITGA1, LITAF, SKIL, CD69) and cytokine-related genes (TNFRSF6B, IL17RA, IFNAR1, IFNG41, GZMB) were significantly increased in EOLP vs NEOLP and in recurrent erosion vs persistent non-erosion groups. Multivariate logistic regression confirmed these genes were significantly associated with clinical manifestations and outcomes after adjusting for confounders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by bulk RNA-seq data (Figure 4, Table 2) and multivariate regression analysis that appropriately controls for age, gender, smoking, and drinking. The consistency between EOLP vs NEOLP and RE vs PNE comparisons strengthens the findings. Statistical significance is reported with appropriate methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "73ad7585-15db-4872-8af4-ad7a0fc16dfc",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The clinical cohort was divided into recurrent erosion (RE, erosion interval <3 months) and persistent non-erosion (PNE, \u22653 months without erosion) groups based on 1-year follow-up. Clinical information other than diagnosis showed no statistically significant differences between outcome groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 describe appropriate longitudinal follow-up design with clear outcome definitions. The lack of significant differences in baseline characteristics between outcome groups (Table 3) supports unbiased comparison, though sample sizes for subgroups are not explicitly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "28abaf84-0882-4f4b-88d6-6d86007e04fe",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Immunofluorescence and flow cytometry validation confirmed CD8+ Trm cells were significantly increased in EOLP compared to NEOLP (p<0.05), located predominantly near the basal layer. In EOLP, CD8+ Trm cells accumulated under erosive epithelium with disrupted basement membrane and increased T cell infiltration into the epithelial layer. The CD8+ Trm content differences strongly correlated with clinical features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C47-C50, C90-C91, C98-C99 are supported by orthogonal validation using immunofluorescence (Figure 5A-D) and flow cytometry (Figure 5F-G) with statistical significance reported. The spatial localization findings are consistent with spatial transcriptomics data. Multiple independent methods converge on the same conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "533502cc-ff4b-4487-85a2-53fe1c61f229",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ELISA analysis of PHA-stimulated sorted CD8+ Trm cells showed significantly enhanced production of inflammatory cytokines (TNF-\u03b1, IFN-\u03b3, IL-17) in EOLP compared to NEOLP, with IFN-\u03b3 increase being statistically significant. This suggests CD8+ Trm cells affect OLP clinical manifestations through IFN-\u03b3 secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C51, C64, C100 are supported by ELISA data (Figure 5H) showing functional cytokine production differences. The use of PHA stimulation is appropriate for assessing functional capacity. Statistical significance is reported for IFN-\u03b3, though significance for TNF-\u03b1 and IL-17 is unclear. The mechanistic inference (C100) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d67094bc-c275-4ecd-a5b3-61bc41d16096",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cohort analysis found no statistically significant difference between medication therapy and recurrent degradation of OLP. The authors speculate this may be because CD8+ Trm cells are difficult for current medications to entirely eradicate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 reports a negative finding from Table 3, but lacks detail on medication types, dosages, compliance, and treatment duration. Claim C69 is speculative without supporting mechanistic data. The conclusion that medications cannot eradicate CD8+ Trm cells requires direct experimental evidence (e.g., pre/post-treatment tissue analysis) that is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "fdc09c44-9b0f-4613-8ece-629664997ec0",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This study provides the first comprehensive characterization of CD8+ Trm cells in OLP, demonstrating they play a crucial role in OLP pathology by contributing to erosion through secretion of multiple cytokines (TNF, IFN-\u03b3, IL-17). CD8+ Trm cells are increased in number and functionally active in EOLP, and may be an important promoting factor for recurrent erosion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54, C56, C70, C72-C73 represent integrative conclusions supported by convergent evidence from scRNA-seq, spatial transcriptomics, bulk RNA-seq, immunofluorescence, flow cytometry, and ELISA. The novelty claim (C52) appears justified given the comprehensive multi-modal approach. However, the causal language ('contribute to erosion') is stronger than the correlative data fully support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "749f6c7a-b120-4914-a7e6-7eef7042773e",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CD8+ Trm cells may become a potential immunotherapy target for OLP treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is speculative about future therapeutic applications. While the data show CD8+ Trm cells are associated with EOLP and produce inflammatory cytokines, no therapeutic intervention studies are presented. The claim about medication ineffectiveness (C68-C69) is insufficiently supported to justify this therapeutic conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "58ec4863-99bd-4e3c-b192-93909590fe49",
+      "content_id": "d514dc6c-de42-4c8e-b0f3-a5c4d6f2a4a9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish that OLP is a chronic T cell-mediated inflammatory disease with 1.01% prevalence, EOLP has higher malignant transformation risk, CD8+ T cells infiltrate near the basement membrane producing cytokines, and CD8+ Trm cells are terminally differentiated cells crucial for local immunity that play roles in chronic inflammatory diseases like psoriasis and vitiligo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C10, C58-C67, C77-C84 provide appropriate background context supported by citations to established literature. These claims frame the rationale for investigating CD8+ Trm cells in OLP and are consistent with current immunological understanding. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "40a8d300-c342-4bad-87a8-bc4a305058e4",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "CD8+ Trm cells are predominantly located in the lamina propria adjacent to the basement membrane and are significantly increased in EOLP compared to NEOLP, as demonstrated by scRNA-seq, spatial transcriptomics, immunofluorescence, and flow cytometry.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged this as a valuable contribution to the field and did not challenge the spatial distribution or quantitative findings. The overall assessment states the manuscript 'provides solid data and interpretations' and represents a valuable dataset for this poorly understood condition.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "CD8+ Trm cells in EOLP display enhanced cytokine production including IFN-\u03b3, TNF-\u03b1, and IL-17, with significantly elevated expression of inflammatory genes (GZMA, GZMK, TNF, PRF1, GZMB, IFNG) compared to NEOLP.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the cytokine production data from ELISA or gene expression analyses. The overall positive assessment and lack of specific critique of these findings indicates acceptance of the enhanced cytokine production in EOLP.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "68590238-044e-4b10-8c75-f6f419af89bc",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "CD8+ Trm cells play a crucial role in OLP pathology and contribute to erosion by secreting multiple cytokines, representing an important promoting factor for recurrent erosion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers explicitly requested to 'temper claims about CD8 Trms being drivers of disease as this is not proven' and to 'revise the text to emphasize CD8+ Trm cells as a defining feature of erosive OLP rather than a mechanistic driver of disease.' This indicates the causal/mechanistic claims are not sufficiently supported by the correlative data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "6c359165-c330-46cd-8482-cdfc50f31380",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The proportion of B cells, myeloid cells, neutrophils, and plasmacytoid dendritic cells increased in EOLP compared to NEOLP, while myeloid dendritic cells were higher in NEOLP.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers requested commentary on 'the role(s) of B cells and mast cells in OLP pathogenesis since they are heavily represented specifically in erosive OLP tissue,' indicating acceptance of the finding itself while seeking further interpretation. The data on cell composition differences was not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "0192760f-ed97-4f6b-9d08-1a20832249d1",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Six major T/NK cell subpopulations were identified, with EOLP exhibiting fewer CD8+ T cells but more CD4+ T cells, CD8+ Trm cells, and CD4+CD8+ T cells than NEOLP.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers requested improved display of scRNA-seq data and more detailed methods descriptions but did not challenge the cell subpopulation identification or proportional differences. The request for 'top 10-50 DEGs/cluster and specificity controls' suggests acceptance of the clustering with desire for enhanced presentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "b75af702-53cb-48d5-9c2f-fa440f4c70c2",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Pseudotime analysis suggests CD8+ Trm cells represent one of the terminal states of T cell differentiation and development in OLP.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the pseudotime analysis or its interpretation. The lack of specific critique of this finding, combined with the overall positive assessment of the data, indicates acceptance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Core CD8+ Trm cell genes (ITGA1, LITAF, SKIL) and cytokine-related genes (IL17RA, IFNAR1, TNFRSF6B, GZMB) are significantly upregulated in EOLP and recurrent erosion groups, with expression differences statistically associated with clinical manifestations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers requested clarification on 'what differential gene analysis was done' and expressed confusion about the logistic regression analyses in Table 3, stating 'it is unclear to me what the impact of each indicated gene is on the clinical type and clinical outcome.' This indicates uncertainty about the analytical approach and interpretation of associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ca37c03e-d984-4b0c-befa-5bf6578cf548",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Spatial transcriptomics revealed intact epithelium in normal mucosa and NEOLP, while EOLP showed partial epithelial loss with enhanced expression of TNF, IL17A/IL17RA, and IFNGR1 signals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raised concerns about sample size ('Need n>1 per group when comparing groups (EOLP)') and requested clarification on 'why focus on Runx1 and il23a in Figure 3' along with 'a more comprehensive analysis of spatial gene expression.' They also questioned whether 'IL-23 protein is produced by CD8 Trm, as T cells have not previously been reported to make IL-23,' indicating uncertainty about the spatial transcriptomics interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "b0569f5b-e693-4d57-bc7e-56a5433206e3",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "There was no statistically significant difference between medication therapy and repeated degradation of OLP, possibly because CD8+ Trm cells are difficult for present medications to entirely eradicate.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge this finding or its interpretation. The lack of specific critique combined with the overall positive assessment suggests acceptance of this clinical observation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "15398fec-096b-46df-84cc-053dc5446116",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Single-cell RNA sequencing of 46,377 cells from NEOLP (n=3) and EOLP (n=2) revealed 47 distinct clusters annotated as 8 major cell types, with T cells constituting the highest proportion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers requested improved figure presentation and more detailed methods but did not challenge the basic scRNA-seq dataset characteristics or cell type identification. Requests for 'additional or expanded displays' and 'more detailed description of methods' indicate acceptance of the data with desire for better presentation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "b793f08c-cc7c-47d3-b28d-29ce400a4a63",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "OLP exhibits a prolonged and recurrent disease course with alternating periods of non-erosive and erosive lesions, though the underlying mechanisms of lesion type switching remain unclear.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers requested clarification on 'why erosive vs. non-erosive is a critical distinction in light of data suggesting it is more of a spectrum,' and questioned the value of comparing NEOLP and EOLP, suggesting 'EOLP is likely to be a more severe presentation of the same disease.' This indicates uncertainty about whether these represent distinct disease states or a spectrum.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Gene expression analysis revealed differential activation of inflammatory genes (LTB, CCL4, CCL5, GZMK, B2M, HIF1A) and Trm markers (CD69, IL7R, CD7, FOS) in EOLP, with enrichment in pathways related to cytokine production and T cell activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers requested clarification on figure presentation details (e.g., 'what is meant by gene ratio' in Figure 2F) but did not challenge the gene expression findings themselves. The request for methodological clarification rather than critique of conclusions suggests acceptance of the data.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "A clinical cohort of 40 OLP patients was established and characterized by demographics, VAS scores, and clinical outcomes, with no significant differences in clinical information between groups except diagnosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the cohort establishment or demographic characterization. While they requested clarification on analytical methods (logistic regression), they did not question the basic cohort data or clinical characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "d9221765-0282-41de-8910-8d3d4ce4e17d",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "Immunofluorescence and flow cytometry confirmed that CD8+ Trm cell distribution is closely related to epithelial erosion, with intact basement membrane in NEOLP but disrupted membrane in EOLP, and CD8+ Trm cells may affect OLP manifestations through IFN-\u03b3 secretion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers stated 'Gating strategy is unclear, one cannot interpret these data without them' and requested to 'Clearly label Figure 4 flow cytometry data; replace fluorochromes with markers used and label axes.' The inability to interpret the flow cytometry data due to presentation issues creates uncertainty about these validation experiments, though the immunofluorescence observations were not specifically challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "a42ff440-e9a8-46b1-9b4b-8c2efa598ed3",
+      "content_id": "93ffa27c-60b2-4602-82f6-043a80e55745",
+      "result_id": "R15",
+      "result_category": "peer",
+      "result": "CD8+ Trm cells may become a potential immunotherapy target for OLP treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge this speculative therapeutic implication. While they requested tempering claims about CD8+ Trm cells as disease drivers, they did not object to discussing them as potential therapeutic targets, which is consistent with their being a defining feature of erosive OLP.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "25c1c9d7-72ce-433f-9ac6-194a7fc1cc0e",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "0f5ee174-e606-45ca-b238-07f75d6051ab",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "4848e18e-69f3-4707-bd00-a055a3d77fa4",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "055910dd-8b8e-4f6a-b021-a027508cc377",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "77a1aad1-63c7-43cf-8657-3436493e93e1",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "255625ae-6c79-4f24-a7b5-2271333d1362",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "76f9077c-8ced-4106-a7d1-b3528a17aefa",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "5a34ecef-9c7f-4173-94b0-efa4a182bd97",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "a803a9bb-6823-4af9-af42-4d8288c7a01b",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "6a3e5f60-2b80-4c27-8cb4-8c15490651f0",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "07ed8764-f50a-40b0-bf11-3bd845e6304f",
+      "result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a"
+    },
+    {
+      "claim_id": "19667a62-6d76-4176-b643-1d90e77ad7ed",
+      "result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e"
+    },
+    {
+      "claim_id": "b060ed6b-fb8f-4b10-868d-697b21512a3f",
+      "result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e"
+    },
+    {
+      "claim_id": "20129a3d-f4c2-4c49-a8e6-faf6442f87c8",
+      "result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e"
+    },
+    {
+      "claim_id": "ba68a995-0a83-48a1-903d-2ce3d0611f37",
+      "result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e"
+    },
+    {
+      "claim_id": "d97ef2e1-3052-4074-a078-2117fb2976ea",
+      "result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e"
+    },
+    {
+      "claim_id": "fb9c3edd-4adf-4c19-b3dd-d24f07051def",
+      "result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20"
+    },
+    {
+      "claim_id": "26b4a5a4-554c-48d3-984d-b91556328171",
+      "result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20"
+    },
+    {
+      "claim_id": "60782c68-b98b-459b-8460-03a8dcfb4aff",
+      "result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20"
+    },
+    {
+      "claim_id": "48321d7d-c382-47a9-a235-61c4bdf6b178",
+      "result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20"
+    },
+    {
+      "claim_id": "adf9ff1b-6e8c-4f57-a54b-12b9b2224f8a",
+      "result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20"
+    },
+    {
+      "claim_id": "2d41ae80-6f15-40bb-8abd-81cba0932dd4",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "5ef85c6f-2759-41f0-aefd-cb7ffbf85dc3",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "c8de85f2-1913-4902-8c02-4495277bda9a",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "b9ef51ab-27f7-4a39-9bb8-76240e5fc5ce",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "6c128916-5c35-47ed-bbfc-ca3ccf92bf44",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "52ac3e32-760a-48bf-97e6-f3a8c5087e7f",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "2b5f6539-e588-40aa-a986-783d1e5014d7",
+      "result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107"
+    },
+    {
+      "claim_id": "d180be29-e630-45ec-b61b-0bf1986841f1",
+      "result_id": "bdcfcfcc-d971-4662-9936-e4bdf47586d8"
+    },
+    {
+      "claim_id": "42d7a297-796c-4d66-9ba7-cf5c7e824a4b",
+      "result_id": "bdcfcfcc-d971-4662-9936-e4bdf47586d8"
+    },
+    {
+      "claim_id": "a0eddc1a-43a9-409c-a727-82d0d65716d2",
+      "result_id": "bdcfcfcc-d971-4662-9936-e4bdf47586d8"
+    },
+    {
+      "claim_id": "8870fee3-b57c-439e-9e78-786bb0867ed8",
+      "result_id": "bdcfcfcc-d971-4662-9936-e4bdf47586d8"
+    },
+    {
+      "claim_id": "49def330-214a-4d2b-adc4-a5b31534693d",
+      "result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c"
+    },
+    {
+      "claim_id": "4e287c8d-1006-4bb7-a2d2-45fb66eb80cd",
+      "result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c"
+    },
+    {
+      "claim_id": "28c3965d-e7e9-4c57-94d1-eca24342ace5",
+      "result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c"
+    },
+    {
+      "claim_id": "5b166117-747c-40be-952f-e8da902ec5ea",
+      "result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c"
+    },
+    {
+      "claim_id": "83b1654e-a1de-479c-a31a-4247a854b6d4",
+      "result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c"
+    },
+    {
+      "claim_id": "35025f54-8a49-4c77-9472-526d5b55be36",
+      "result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c"
+    },
+    {
+      "claim_id": "eb9ab44d-2bbc-4417-a1eb-61e5d85d4013",
+      "result_id": "56ac22a2-8c70-4bf8-a203-6c32ba66a45a"
+    },
+    {
+      "claim_id": "4072cfea-c8f2-49cf-997d-07dc9f4638b9",
+      "result_id": "56ac22a2-8c70-4bf8-a203-6c32ba66a45a"
+    },
+    {
+      "claim_id": "ee384872-e2a0-42da-a2d1-6318de6279e7",
+      "result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa"
+    },
+    {
+      "claim_id": "ca547be6-d5f8-422c-93f8-108f142ce946",
+      "result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa"
+    },
+    {
+      "claim_id": "3dad3cc5-e84c-4447-898a-77b7dad9f707",
+      "result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa"
+    },
+    {
+      "claim_id": "7f2c3b1f-69a3-4556-8a19-7af2e9cd1a67",
+      "result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa"
+    },
+    {
+      "claim_id": "8f6715e5-8630-48a9-84f0-0609b8660b38",
+      "result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa"
+    },
+    {
+      "claim_id": "d14f0434-c1b3-4810-9fba-c75ba64a0bbb",
+      "result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa"
+    },
+    {
+      "claim_id": "36739e8d-8acc-43a1-897d-03555e98538d",
+      "result_id": "deb86abb-7b32-4a5c-9155-f50a54b4d931"
+    },
+    {
+      "claim_id": "8d682403-ed47-4a29-b97b-7a3b0b97496b",
+      "result_id": "deb86abb-7b32-4a5c-9155-f50a54b4d931"
+    },
+    {
+      "claim_id": "e393a578-614c-4785-b87f-c82a6bdb8544",
+      "result_id": "deb86abb-7b32-4a5c-9155-f50a54b4d931"
+    },
+    {
+      "claim_id": "4864d88e-4576-4328-99ca-33917607bbbb",
+      "result_id": "deb86abb-7b32-4a5c-9155-f50a54b4d931"
+    },
+    {
+      "claim_id": "f5f411db-841e-49a0-9a0a-462d002b76d3",
+      "result_id": "deb86abb-7b32-4a5c-9155-f50a54b4d931"
+    },
+    {
+      "claim_id": "564896bb-2c0f-451b-b20d-fb198cb36eb4",
+      "result_id": "73ad7585-15db-4872-8af4-ad7a0fc16dfc"
+    },
+    {
+      "claim_id": "a3cf4a6b-dcee-4a8b-a8b3-ccade1d0a9ae",
+      "result_id": "73ad7585-15db-4872-8af4-ad7a0fc16dfc"
+    },
+    {
+      "claim_id": "3dd50266-105e-4cb9-a2a0-228ad3cc326c",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "0b437547-c714-4f94-a9c1-e3223589841e",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "d7a75f59-9a32-41e2-b27f-27679ccb1f35",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "e80423e6-8dc1-4252-abea-be642c4989e2",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "a3968358-5ebf-4624-aa25-5fad1e10815b",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "63646bee-c42b-4203-a7b1-054738e44dca",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "04d5cfc6-ce57-4b80-b970-974b8694e6b7",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "36995781-5662-484f-86c0-030303a88f7f",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "8a0a5d9a-48db-48fc-b29f-1ae55ab1b95e",
+      "result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe"
+    },
+    {
+      "claim_id": "e6c488e4-117d-4be5-940b-844f75455bc0",
+      "result_id": "533502cc-ff4b-4487-85a2-53fe1c61f229"
+    },
+    {
+      "claim_id": "88052f35-bf8e-4676-8673-9725eb4973f6",
+      "result_id": "533502cc-ff4b-4487-85a2-53fe1c61f229"
+    },
+    {
+      "claim_id": "c4a30931-f71e-4a5e-b57b-65898de5f6c1",
+      "result_id": "533502cc-ff4b-4487-85a2-53fe1c61f229"
+    },
+    {
+      "claim_id": "f77a3be3-243d-4540-be46-675be4328217",
+      "result_id": "533502cc-ff4b-4487-85a2-53fe1c61f229"
+    },
+    {
+      "claim_id": "5c45fbde-7718-4d19-bd28-0d8322bd8eae",
+      "result_id": "d67094bc-c275-4ecd-a5b3-61bc41d16096"
+    },
+    {
+      "claim_id": "283944e2-2917-43ed-b42a-56188e09a860",
+      "result_id": "d67094bc-c275-4ecd-a5b3-61bc41d16096"
+    },
+    {
+      "claim_id": "a3cf4a6b-dcee-4a8b-a8b3-ccade1d0a9ae",
+      "result_id": "d67094bc-c275-4ecd-a5b3-61bc41d16096"
+    },
+    {
+      "claim_id": "f4eb64f3-33c0-4cd9-98b0-037d741b7917",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "89ad3d49-ff66-4495-a6db-008b9720c2b3",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "a3d1e6ba-d4bf-4411-8620-cb2af00e4fa1",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "f36bc5b5-6ace-4abe-9ba1-846896698e3b",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "9b328702-88b3-4cf1-b87d-b2080e551dc4",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "95db1fca-84f6-455b-b4f9-e7991a54bbc8",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "113ec8be-31c2-455d-8240-47259ea9236e",
+      "result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0"
+    },
+    {
+      "claim_id": "2a2199b5-aabd-4e42-80e0-9fe5c8de6df8",
+      "result_id": "749f6c7a-b120-4914-a7e6-7eef7042773e"
+    },
+    {
+      "claim_id": "f5af641d-c9b9-4b90-9de6-fc9e651a746d",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "7ec128b6-b91a-4180-943a-03a03346e775",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "af6b04dd-b13a-46fc-a4f7-e81c9c8c1c74",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "6f3dc351-97eb-4376-b0b8-ab555382b151",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "7d404932-a712-4934-bcd9-aa2c8e5dc272",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "9415dbf6-6efa-4939-b7f2-b2c39cc7f01f",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "d029a214-9343-424b-8c76-721bfb5ad3b7",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "8c815b53-afd7-4b9c-aa52-7b34d23c6e4c",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "f033e896-5b84-4527-a000-e93a3c26a095",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "50b857b1-a60f-4b3d-aaf5-567230ea32c1",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "9ab7856a-ab48-43b9-ba12-235c6818fa45",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "3529f878-14ff-4a93-a388-ae19024b7a6b",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "4c4593c7-11f8-460e-a2af-191b4dea7461",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "151a1bf8-0236-4438-9b8b-842c1aec87f1",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "ecf69157-2ab8-47a3-906b-f9c42f052a45",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "d22091db-5201-49d2-81b1-24049de87bac",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "199a013f-3f49-481d-8247-ec94eaae7750",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "aa460b69-b9e2-471e-8ea7-4e44e1b41e8b",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "06e67fe5-d2e0-429d-b9bb-1ba964f74a92",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "68c4ba26-559b-4769-939b-332d0d948018",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "ff722c6f-c1b2-4791-9cda-979696832d80",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "d34b566d-dd52-4a5c-bb14-8965350f2b62",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "d3aba751-adcd-45e4-add4-18b80ea7960e",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "d595b7a6-0006-4a48-b852-7b4d85db199c",
+      "result_id": "58ec4863-99bd-4e3c-b192-93909590fe49"
+    },
+    {
+      "claim_id": "49def330-214a-4d2b-adc4-a5b31534693d",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "3dd50266-105e-4cb9-a2a0-228ad3cc326c",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "4e287c8d-1006-4bb7-a2d2-45fb66eb80cd",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "28c3965d-e7e9-4c57-94d1-eca24342ace5",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "5b166117-747c-40be-952f-e8da902ec5ea",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "0b437547-c714-4f94-a9c1-e3223589841e",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "d7a75f59-9a32-41e2-b27f-27679ccb1f35",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "e80423e6-8dc1-4252-abea-be642c4989e2",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "a3968358-5ebf-4624-aa25-5fad1e10815b",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "83b1654e-a1de-479c-a31a-4247a854b6d4",
+      "result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4"
+    },
+    {
+      "claim_id": "e6c488e4-117d-4be5-940b-844f75455bc0",
+      "result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e"
+    },
+    {
+      "claim_id": "48321d7d-c382-47a9-a235-61c4bdf6b178",
+      "result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e"
+    },
+    {
+      "claim_id": "c8de85f2-1913-4902-8c02-4495277bda9a",
+      "result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e"
+    },
+    {
+      "claim_id": "88052f35-bf8e-4676-8673-9725eb4973f6",
+      "result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e"
+    },
+    {
+      "claim_id": "c4a30931-f71e-4a5e-b57b-65898de5f6c1",
+      "result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e"
+    },
+    {
+      "claim_id": "89ad3d49-ff66-4495-a6db-008b9720c2b3",
+      "result_id": "68590238-044e-4b10-8c75-f6f419af89bc"
+    },
+    {
+      "claim_id": "a3d1e6ba-d4bf-4411-8620-cb2af00e4fa1",
+      "result_id": "68590238-044e-4b10-8c75-f6f419af89bc"
+    },
+    {
+      "claim_id": "f36bc5b5-6ace-4abe-9ba1-846896698e3b",
+      "result_id": "68590238-044e-4b10-8c75-f6f419af89bc"
+    },
+    {
+      "claim_id": "9b328702-88b3-4cf1-b87d-b2080e551dc4",
+      "result_id": "68590238-044e-4b10-8c75-f6f419af89bc"
+    },
+    {
+      "claim_id": "95db1fca-84f6-455b-b4f9-e7991a54bbc8",
+      "result_id": "68590238-044e-4b10-8c75-f6f419af89bc"
+    },
+    {
+      "claim_id": "113ec8be-31c2-455d-8240-47259ea9236e",
+      "result_id": "68590238-044e-4b10-8c75-f6f419af89bc"
+    },
+    {
+      "claim_id": "055910dd-8b8e-4f6a-b021-a027508cc377",
+      "result_id": "6c359165-c330-46cd-8482-cdfc50f31380"
+    },
+    {
+      "claim_id": "77a1aad1-63c7-43cf-8657-3436493e93e1",
+      "result_id": "6c359165-c330-46cd-8482-cdfc50f31380"
+    },
+    {
+      "claim_id": "255625ae-6c79-4f24-a7b5-2271333d1362",
+      "result_id": "6c359165-c330-46cd-8482-cdfc50f31380"
+    },
+    {
+      "claim_id": "76f9077c-8ced-4106-a7d1-b3528a17aefa",
+      "result_id": "6c359165-c330-46cd-8482-cdfc50f31380"
+    },
+    {
+      "claim_id": "5a34ecef-9c7f-4173-94b0-efa4a182bd97",
+      "result_id": "6c359165-c330-46cd-8482-cdfc50f31380"
+    },
+    {
+      "claim_id": "b060ed6b-fb8f-4b10-868d-697b21512a3f",
+      "result_id": "0192760f-ed97-4f6b-9d08-1a20832249d1"
+    },
+    {
+      "claim_id": "20129a3d-f4c2-4c49-a8e6-faf6442f87c8",
+      "result_id": "0192760f-ed97-4f6b-9d08-1a20832249d1"
+    },
+    {
+      "claim_id": "6c128916-5c35-47ed-bbfc-ca3ccf92bf44",
+      "result_id": "b75af702-53cb-48d5-9c2f-fa440f4c70c2"
+    },
+    {
+      "claim_id": "52ac3e32-760a-48bf-97e6-f3a8c5087e7f",
+      "result_id": "b75af702-53cb-48d5-9c2f-fa440f4c70c2"
+    },
+    {
+      "claim_id": "36739e8d-8acc-43a1-897d-03555e98538d",
+      "result_id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9"
+    },
+    {
+      "claim_id": "8d682403-ed47-4a29-b97b-7a3b0b97496b",
+      "result_id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9"
+    },
+    {
+      "claim_id": "e393a578-614c-4785-b87f-c82a6bdb8544",
+      "result_id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9"
+    },
+    {
+      "claim_id": "4864d88e-4576-4328-99ca-33917607bbbb",
+      "result_id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9"
+    },
+    {
+      "claim_id": "f5f411db-841e-49a0-9a0a-462d002b76d3",
+      "result_id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9"
+    },
+    {
+      "claim_id": "d180be29-e630-45ec-b61b-0bf1986841f1",
+      "result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548"
+    },
+    {
+      "claim_id": "42d7a297-796c-4d66-9ba7-cf5c7e824a4b",
+      "result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548"
+    },
+    {
+      "claim_id": "a0eddc1a-43a9-409c-a727-82d0d65716d2",
+      "result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548"
+    },
+    {
+      "claim_id": "eb9ab44d-2bbc-4417-a1eb-61e5d85d4013",
+      "result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548"
+    },
+    {
+      "claim_id": "4072cfea-c8f2-49cf-997d-07dc9f4638b9",
+      "result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548"
+    },
+    {
+      "claim_id": "5c45fbde-7718-4d19-bd28-0d8322bd8eae",
+      "result_id": "b0569f5b-e693-4d57-bc7e-56a5433206e3"
+    },
+    {
+      "claim_id": "283944e2-2917-43ed-b42a-56188e09a860",
+      "result_id": "b0569f5b-e693-4d57-bc7e-56a5433206e3"
+    },
+    {
+      "claim_id": "25c1c9d7-72ce-433f-9ac6-194a7fc1cc0e",
+      "result_id": "15398fec-096b-46df-84cc-053dc5446116"
+    },
+    {
+      "claim_id": "0f5ee174-e606-45ca-b238-07f75d6051ab",
+      "result_id": "15398fec-096b-46df-84cc-053dc5446116"
+    },
+    {
+      "claim_id": "4848e18e-69f3-4707-bd00-a055a3d77fa4",
+      "result_id": "15398fec-096b-46df-84cc-053dc5446116"
+    },
+    {
+      "claim_id": "a803a9bb-6823-4af9-af42-4d8288c7a01b",
+      "result_id": "15398fec-096b-46df-84cc-053dc5446116"
+    },
+    {
+      "claim_id": "199a013f-3f49-481d-8247-ec94eaae7750",
+      "result_id": "b793f08c-cc7c-47d3-b28d-29ce400a4a63"
+    },
+    {
+      "claim_id": "aa460b69-b9e2-471e-8ea7-4e44e1b41e8b",
+      "result_id": "b793f08c-cc7c-47d3-b28d-29ce400a4a63"
+    },
+    {
+      "claim_id": "fb9c3edd-4adf-4c19-b3dd-d24f07051def",
+      "result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973"
+    },
+    {
+      "claim_id": "26b4a5a4-554c-48d3-984d-b91556328171",
+      "result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973"
+    },
+    {
+      "claim_id": "60782c68-b98b-459b-8460-03a8dcfb4aff",
+      "result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973"
+    },
+    {
+      "claim_id": "2d41ae80-6f15-40bb-8abd-81cba0932dd4",
+      "result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973"
+    },
+    {
+      "claim_id": "5ef85c6f-2759-41f0-aefd-cb7ffbf85dc3",
+      "result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973"
+    },
+    {
+      "claim_id": "b9ef51ab-27f7-4a39-9bb8-76240e5fc5ce",
+      "result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973"
+    },
+    {
+      "claim_id": "ee384872-e2a0-42da-a2d1-6318de6279e7",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "ca547be6-d5f8-422c-93f8-108f142ce946",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "3dad3cc5-e84c-4447-898a-77b7dad9f707",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "7f2c3b1f-69a3-4556-8a19-7af2e9cd1a67",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "8f6715e5-8630-48a9-84f0-0609b8660b38",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "d14f0434-c1b3-4810-9fba-c75ba64a0bbb",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "564896bb-2c0f-451b-b20d-fb198cb36eb4",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "a3cf4a6b-dcee-4a8b-a8b3-ccade1d0a9ae",
+      "result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a"
+    },
+    {
+      "claim_id": "63646bee-c42b-4203-a7b1-054738e44dca",
+      "result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d"
+    },
+    {
+      "claim_id": "04d5cfc6-ce57-4b80-b970-974b8694e6b7",
+      "result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d"
+    },
+    {
+      "claim_id": "36995781-5662-484f-86c0-030303a88f7f",
+      "result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d"
+    },
+    {
+      "claim_id": "8a0a5d9a-48db-48fc-b29f-1ae55ab1b95e",
+      "result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d"
+    },
+    {
+      "claim_id": "f77a3be3-243d-4540-be46-675be4328217",
+      "result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d"
+    },
+    {
+      "claim_id": "2a2199b5-aabd-4e42-80e0-9fe5c8de6df8",
+      "result_id": "a42ff440-e9a8-46b1-9b4b-8c2efa598ed3"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "cd66164d-e944-4aad-9c54-08091d09c519",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "deb86abb-7b32-4a5c-9155-f50a54b4d931",
+      "peer_result_id": "90c38e96-9b8b-45e9-b7d1-fe8bb986faa9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate bulk RNA-seq findings (C42-C46). OpenEval finds the data SUPPORTED with appropriate statistical methods. Peer reviewers express UNCERTAINTY, requesting clarification on differential gene analysis methods and expressing confusion about logistic regression interpretations in Table 3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "318a1a35-717d-400e-9e79-c8dffb13c2ac",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "749f6c7a-b120-4914-a7e6-7eef7042773e",
+      "peer_result_id": "a42ff440-e9a8-46b1-9b4b-8c2efa598ed3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address therapeutic implications (C74). OpenEval rates as UNCERTAIN due to lack of intervention studies and insufficient support for medication ineffectiveness claims. Peer reviewers rate as SUPPORTED, not objecting to therapeutic target discussion while requesting tempering of causal claims elsewhere.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9e194277-ef1f-4482-b5ff-6c9bfae49d1d",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fdc09c44-9b0f-4613-8ece-629664997ec0",
+      "peer_result_id": "68590238-044e-4b10-8c75-f6f419af89bc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate integrative conclusions about CD8+ Trm cells as disease drivers (C52-C54, C56, C70, C72-C73). OpenEval finds SUPPORTED but notes causal language exceeds correlative data. Peer reviewers rate UNCERTAIN, explicitly requesting to 'temper claims about CD8 Trms being drivers' and emphasize them as 'defining feature' rather than 'mechanistic driver.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "7dd32524-ea45-4de0-b4b7-da41fae17ce1",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "9044d3e1-e4b5-4192-8df8-ceeae6276bfa",
+      "peer_result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate cohort demographics and clinical characteristics (C39-C41, C85-C87). OpenEval finds SUPPORTED with adequate sample size, noting age difference as potential confounder. Peer reviewers also rate SUPPORTED, accepting cohort data without challenge to demographic characterization, though requesting analytical clarification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "3cfd9733-7856-4391-8345-49f383774d36",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d67094bc-c275-4ecd-a5b3-61bc41d16096",
+      "peer_result_id": "b0569f5b-e693-4d57-bc7e-56a5433206e3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address medication ineffectiveness claims (C68-C69). OpenEval rates UNCERTAIN, noting lack of detail on medications and absence of direct experimental evidence for claims about CD8+ Trm eradication. Peer reviewers rate SUPPORTED, accepting the clinical observation without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9482a8ed-e33e-4bd4-b14f-16b8348b899d",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "bdcfcfcc-d971-4662-9936-e4bdf47586d8",
+      "peer_result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate spatial transcriptomics findings (C31-C33, C37-C38). OpenEval rates UNCERTAIN due to n=1 EOLP sample limiting generalizability. Peer reviewers also rate UNCERTAIN, explicitly requesting 'n>1 per group when comparing groups (EOLP)' and questioning IL-23 production interpretation and focus on specific genes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "5e9699f6-6daf-4b6b-afec-f80b1993b615",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "533502cc-ff4b-4487-85a2-53fe1c61f229",
+      "peer_result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate cytokine production data (C4, C51, C64). OpenEval finds SUPPORTED by ELISA data with appropriate methods, though notes unclear significance for some cytokines. Peer reviewers also rate SUPPORTED, not challenging cytokine production findings from ELISA or gene expression analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "34434014-c7c8-4adc-b853-e77ebe4650d2",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a",
+      "peer_result_id": "6c359165-c330-46cd-8482-cdfc50f31380",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address cell composition differences (C14-C18). OpenEval finds SUPPORTED with consistent scRNA-seq data but notes small EOLP sample size (n=2) limits generalizability. Peer reviewers rate SUPPORTED, accepting the findings while requesting commentary on roles of B cells and mast cells in pathogenesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "458cc8f9-c2e7-4b03-af34-bb3728cde26e",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c",
+      "peer_result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate spatial distribution patterns (C2, C34-C36, C71). OpenEval finds SUPPORTED by spatial transcriptomics with appropriate co-localization methods, though notes single EOLP sample limitation. Peer reviewers rate SUPPORTED, acknowledging valuable contribution without challenging spatial or quantitative findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "9fb5d92e-7d38-43c5-87df-85330784c90c",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e",
+      "peer_result_id": "0192760f-ed97-4f6b-9d08-1a20832249d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address NK/T cell subclustering and proportional differences (C20-C21). OpenEval finds SUPPORTED with clear marker-based identification and data-driven differential proportions. Peer reviewers also rate SUPPORTED, requesting improved display and methods detail but not challenging cell identification or proportional differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "49e72850-d4a0-4dd5-99ae-faf5790523f7",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "56ac22a2-8c70-4bf8-a203-6c32ba66a45a",
+      "peer_result_id": "ca37c03e-d984-4b0c-befa-5bf6578cf548",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate cytokine receptor expression in spatial data (C37-C38). OpenEval finds SUPPORTED but notes single EOLP sample limits robustness. Peer reviewers rate UNCERTAIN with broader concerns about n=1 sample size and questioning specific gene focus and IL-23 production claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "2d8b6d76-eaeb-451f-9b0e-0c22042f8cdd",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe",
+      "peer_result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address validation experiments (C90-C91, C98-C99, C100). OpenEval finds SUPPORTED by immunofluorescence and flow cytometry with convergent methods. Peer reviewers rate UNCERTAIN specifically for flow cytometry due to unclear gating strategy and labeling issues preventing data interpretation, though immunofluorescence not specifically challenged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f3102795-0b2b-4afc-bdf5-086cafcb7089",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20",
+      "peer_result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate gene expression patterns in T cells (C22-C24). OpenEval finds SUPPORTED by scRNA-seq data with well-established functional annotations. Peer reviewers also rate SUPPORTED, requesting figure presentation clarification but not challenging gene expression findings themselves.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "e1478541-bcd6-4ad6-ace3-fef48e1fba67",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "5adde8ed-7b5a-4078-9f0f-7c2e65e4d25a",
+      "peer_result_id": "15398fec-096b-46df-84cc-053dc5446116",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address basic scRNA-seq dataset characteristics (C11-C13, C92). OpenEval finds SUPPORTED with consistent data and clear pipeline, noting small EOLP sample size limitation. Peer reviewers rate SUPPORTED, requesting improved presentation and methods detail but accepting basic dataset characteristics and cell type identification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "cafe3119-4870-43d9-b497-b8198e64ff7b",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "28abaf84-0882-4f4b-88d6-6d86007e04fe",
+      "peer_result_id": "40a8d300-c342-4bad-87a8-bc4a305058e4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate immunofluorescence validation of spatial findings (C3, C47-C50). OpenEval finds SUPPORTED by orthogonal validation with multiple convergent methods. Peer reviewers also rate SUPPORTED, acknowledging solid data and valuable contribution without challenging spatial distribution or quantitative findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "e2af6d98-765d-442e-9ac2-7815e3c6ac91",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107",
+      "peer_result_id": "525bfd77-0cac-4dc2-b5d1-00f4b09ae973",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address differential expression and GO enrichment in CD8+ T cells (C26-C27, C29). OpenEval finds SUPPORTED by convergent analytical approaches strengthening conclusions. Peer reviewers rate SUPPORTED, requesting methodological clarification on figure details but accepting gene expression data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "2ddd7ebd-46f6-4c87-8f80-5eb3fe55f242",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107",
+      "peer_result_id": "b75af702-53cb-48d5-9c2f-fa440f4c70c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate pseudotime trajectory analysis (C30, C55). OpenEval finds SUPPORTED by multiple analytical approaches, noting pseudotime infers relationships that may not reflect actual temporal dynamics. Peer reviewers rate SUPPORTED without challenging pseudotime analysis or interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "f4c5d9a8-48eb-488a-849a-e5d3f1a1f537",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "73ad7585-15db-4872-8af4-ad7a0fc16dfc",
+      "peer_result_id": "aea80ef8-5bc2-43f4-8ff8-c5689bd0166a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address longitudinal follow-up design and outcomes (C88-C89). OpenEval finds SUPPORTED with appropriate design and clear outcome definitions. Peer reviewers also rate SUPPORTED, accepting cohort establishment and clinical characterization without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "ef1c40e1-cd62-46a1-9f65-d2f61fc11ae0",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "58ec4863-99bd-4e3c-b192-93909590fe49",
+      "peer_result_id": "b793f08c-cc7c-47d3-b28d-29ce400a4a63",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates extensive background literature claims (C1, C5-C10, C58-C67, C77-C84) as SUPPORTED with appropriate citations. Peer R11 addresses only C77-C78 as UNCERTAIN, questioning whether erosive vs. non-erosive represents distinct disease states or a spectrum, suggesting EOLP may be more severe presentation of same disease.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "b79ccc67-9c0b-4dfb-a982-19adf6ba625f",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "cd3c642b-7a09-4a40-add7-8092367e1d20",
+      "peer_result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C25 (gene expression). OpenEval R3 finds gene expression patterns SUPPORTED by scRNA-seq with well-established functional annotations. Peer R2 accepts cytokine-related findings including gene expression without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "1c719d55-fd00-4aff-92eb-47a8b19135f3",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "36fb3ba8-a4ad-4d5f-ac46-de5045f45107",
+      "peer_result_id": "697d33e4-ff97-4074-bcb0-722b25ac5b0e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C28 (enhanced CD8+ Trm activity). OpenEval finds SUPPORTED by convergent analytical approaches. Peer reviewers accept cytokine production and related functional findings without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "63a7f0fc-87b7-49fe-968e-ec6ccf729e73",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "533502cc-ff4b-4487-85a2-53fe1c61f229",
+      "peer_result_id": "d9221765-0282-41de-8910-8d3d4ce4e17d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on C100 (mechanistic inference about cytokine production). OpenEval finds SUPPORTED but notes mechanistic inference is reasonable yet not definitively proven. Peer R14 rates validation experiments UNCERTAIN due to flow cytometry presentation issues preventing interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "7194abd8-c7db-4540-832c-bae7177e07ad",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP23",
+      "openeval_result_id": "47ffa1d2-5752-43f7-8af7-6a843548dc4e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R2 evaluates NK/T cell clustering rationale and marker-based identification (C19, C75-C76) as SUPPORTED. No corresponding peer review evaluation found for these specific methodological claims about initial clustering approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    },
+    {
+      "id": "61b72b71-1aed-4a7b-959a-a7e502bf570c",
+      "submission_id": "5fe3d577-5851-4194-b6fc-a2ea149d84f0",
+      "comparison_id": "CMP24",
+      "openeval_result_id": "18f622b9-9667-4efd-beca-f0fe0f551f2c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R6 evaluates spatial co-localization methodology (C97) as SUPPORTED with appropriate marker gene approach. No corresponding peer review evaluation specifically addresses this methodological claim, though related spatial findings are evaluated in peer R1.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:35:39.656192Z"
+    }
+  ]
+}

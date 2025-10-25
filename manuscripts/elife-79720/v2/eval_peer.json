@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C60"
+    ],
+    "result": "The study found that genetically predicted IGF-1 levels showed nominally significant associations with reduced COVID-19 susceptibility (OR=0.77, p=0.027) and hospitalization (OR=0.62, p=0.018), but not severity (OR=0.85, p=0.513). However, these associations did not survive Bonferroni correction for multiple testing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly challenged the statistical significance, stating 'applying a Bonferroni correction to the reported p-values for IGF-1 related SNPs yields non-significant probabilities' and that 'the conclusions pertaining to IGF-1 variants do not reflect on the author's findings.' They noted the lack of appropriate control for false discovery rate when examining 657 markers, making the interpretation 'complicated and conclusions related to genetic proxies of IGF-1 levels unreliable.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study found no causal associations between genetically predicted testosterone or SHBG levels and COVID-19 susceptibility, hospitalization, or severity in overall or sex-stratified analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these null findings and requested they be discussed more extensively, stating 'This is another trial finding no association of sex hormones to COVID-19. This has to be discussed more extensively in the discussion.' The reviewers did not challenge the validity of these negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Genetic predisposition to higher estradiol levels (proxied by rs7173595 in CYP19A1) showed no significant associations with COVID-19 outcomes in either males or females across susceptibility, hospitalization, and severity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these estradiol findings and grouped them with the broader null findings for sex hormones. The request to discuss negative results more extensively applies to these claims as well, but the findings themselves were not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "After removing SNPs associated with BMI as a sensitivity analysis, IGF-1 associations with COVID-19 outcomes remained similar (susceptibility OR=0.76, p=0.021; hospitalization OR=0.61, p=0.014; severity OR=0.84, p=0.497).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly criticized the handling of confounders, stating 'the methods employed did not adequately address potential data confounders, for example treatment of patients with dexamethasone or the influence of BMI.' While the authors attempted to address BMI, reviewers questioned whether this was sufficient and raised concerns about other unaddressed confounders and the multiple testing issue that would still apply.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Sensitivity analyses using MR-PRESSO found no outlying SNPs for IGF-1, and MR-Egger intercept tests indicated absence of directional pleiotropy (p=0.614 for susceptibility, p=0.595 for hospitalization).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about bias handling, stating 'The approach suffers from various biases that were seemingly not handled in the study herein described, for example, the winner's curse and potential pleiotropy. The authors should provide a more objective assessment of potential biases.' While pleiotropy tests were performed, reviewers questioned whether biases were adequately addressed overall.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sensitivity analysis using only SNPs located in the IGF-1 gene region showed directionally consistent but non-significant associations with COVID-19 outcomes (susceptibility OR=0.99, p=0.777; hospitalization OR=0.90, p=0.645; severity OR=1.01, p=0.415).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed concern about weak instrument bias, particularly noting 'large confidence intervals' in results and questioning the robustness of findings. The gene-region analysis showing null results further undermines the main findings, though reviewers did not specifically comment on this sensitivity analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C63"
+    ],
+    "result": "The study used 320 SNPs for SHBG, 316 for testosterone, 7 for estradiol, and 18 for IGF-1 as instrumental variables, identified from GWAS in up to 425,097 participants of European ancestry.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers criticized the methods section for lacking important details, stating 'The methods section needs to be expanded substantially by the addition of important details. For example, how was LD clumping performed? Using PLINK? Why was an r2 cutoff of < 0.01 used?' They also questioned whether examining 657 markers without appropriate multiple testing correction was valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C61",
+      "C62",
+      "C85"
+    ],
+    "result": "The study analyzed COVID-19 HGI data from 60 studies across 25 countries, including over 1.3 million participants for susceptibility, 1.5 million for hospitalization, and 1.0 million for severity analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged 'The main strength of the study is the large cohort which adds to the robustness of the data.' The sample sizes and data sources were not challenged, though reviewers raised concerns about what was measured and potential confounders within these cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript discusses biological mechanisms by which IGF-1 might protect against COVID-19, including its anti-inflammatory properties, role in lung tissue repair, regulation of alveolar epithelial cell function, and promotion of phagocytosis, supported by observational studies and mechanistic research.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers fundamentally challenged the relevance of this discussion, stating 'The study hinges solely on MR analysis of selected SNPs used as proxies...None of the markers were directly measured, and no information on their levels in the context of infections or COVID-19 was given.' They emphasized that 'Without direct measurements of the said markers minimize the potential to provide readers with a possible mechanism bridging genetic variant and phenotype.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study acknowledges that MR analysis reduces confounding and reverse causality but may suffer from weak instrument bias, especially in sensitivity analyses with smaller sets of genetic instruments, which would tend to bias estimates toward the null in two-sample MR.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the general principle that MR reduces confounding but raised specific concerns about implementation. They noted methodological limitations were acknowledged but questioned whether they were adequately addressed, particularly regarding 'winner's curse' bias and other technical issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The study was limited to individuals of European ancestry, and findings might not generalize to other populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this limitation statement. It was appropriately acknowledged by the authors as a constraint on generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C86",
+      "C87"
+    ],
+    "result": "The discussion contextualizes the null testosterone findings within existing literature showing complex and sometimes contradictory relationships between testosterone and COVID-19 outcomes, including studies on androgen deprivation therapy, TMPRSS2 expression, immunosuppressive effects, and associations with inflammatory markers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly requested this expanded discussion, stating 'This is another trial finding no association of sex hormones to COVID-19. This has to be discussed more extensively in the discussion; now discussion is more focused on IGF (the positive finding) but negative results should be put into context.' The authors appear to have addressed this in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

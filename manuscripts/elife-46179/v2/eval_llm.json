@@ -1,0 +1,467 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C40",
+      "C54",
+      "C68",
+      "C108"
+    ],
+    "result": "Family history of dementia (FH) is associated with lower PAL performance in individuals under 65 years old, with an effect size of approximately 2.4 word pairs. The Age x FH interaction shows that FH effects diminish with age, with trend lines crossing at age 65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34, C35, C37, C38, C40, C54, C68, and C108 collectively demonstrate a statistically significant main effect of FH (p=3.47e-06) and Age x FH interaction (p<0.01) in a large cohort (N=59,571). The convergence at age 65 is supported by both statistical modeling and visual evidence in Figure 4A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C55",
+      "C109"
+    ],
+    "result": "The effect of FH on PAL performance is modified by sex, with men showing greater cognitive reduction than women (Sex x FH interaction: B=-0.79, p=7.97e-06), except during the 6th decade of life where women show greater effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C44, C55, and C109 provide converging evidence from GLM analysis, EMM follow-up tests, and PSM analysis showing differential FH effects by sex. The exception in the 6th decade is supported by PSM data in Figure 4 Inset, though the biological mechanism remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Educational attainment modifies the effect of FH on PAL performance, with greater FH-associated decline at lower education levels (e.g., 1.6 word pairs at 12 years vs. 1.2 at 20 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 demonstrate a significant Education x FH interaction (p<0.01) with EMM analyses showing FH effects at all education levels but with decreasing magnitude at higher education. This suggests education may provide cognitive reserve against FH-related decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C61",
+      "C62",
+      "C110"
+    ],
+    "result": "Diabetes modifies the effect of FH on PAL performance, with FH+ individuals with diabetes showing lower PAL scores (EMM difference=1.2 word pairs, p=0.03) compared to FH+ individuals without diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C61, C62, and C110 show a significant FH x Diabetes interaction (p=0.04) with appropriate follow-up EMM analyses. However, the p-value is marginal (p=0.04) and no correction for multiple comparisons is mentioned, raising concerns about Type I error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64",
+      "C65",
+      "C111"
+    ],
+    "result": "APOE \u03b54 allele dosage is associated with lower PAL performance in FH+ individuals in a dose-dependent manner (B=-1.30 per allele, p=0.02), with \u03b54/\u03b54 carriers showing 5 word pairs lower scores than \u03b52/\u03b53 carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C50-C53, C64, C65, and C111 report significant APOE effects, but the analysis is severely underpowered (n=673 FH+ with genotypes, with only 35 \u03b54/\u03b54 carriers and 2 \u03b52/\u03b52 carriers). The small sample sizes, particularly for rare genotypes, make effect size estimates unreliable and increase risk of Type I/II errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C106"
+    ],
+    "result": "Age is significantly associated with PAL performance, with a decline of approximately 2 word pairs per decade of life (B=-0.20, p<2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C106 demonstrate a robust age effect with highly significant p-values and large sample size (N=59,571). The linear model assumption appears reasonable based on Figure 2, though non-linear age effects were not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C56",
+      "C57",
+      "C106",
+      "C107"
+    ],
+    "result": "Women perform approximately 2 word pairs better than men on PAL across the adult lifespan (B=-1.82, p<2e-16), with the sex difference amplifying during the 5th-7th decades of life. This represents the first demonstration of this effect across the full adult lifespan in a single large cohort study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C56, C57, C106, and C107 provide strong evidence for sex differences with highly significant statistics, PSM validation, and visual confirmation in Figure 2. The novelty claim (C57) regarding lifespan coverage and cohort size appears justified, though the authors acknowledge this is based on their knowledge of the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Educational attainment is positively associated with PAL performance, with approximately 0.31 word pairs improvement per education milestone (p<2e-16), though the magnitude differs between sexes at different education levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate significant education effects with both GLM and PSM analyses. However, education is treated as a continuous variable despite being measured in discrete milestones, and potential confounding with socioeconomic status and cohort effects is not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Age interacts with diabetes status, with diabetes showing greater association with lower PAL scores at younger ages, with trend lines crossing at age 50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C38, and C39 report a significant Age x Diabetes interaction (p=0.03), though the p-value is marginal. The crossing point at age 50 is mentioned but data are not shown, limiting verification. This finding is secondary to the main FH focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The MindCrowd study successfully recruited 59,571 qualified participants from 256,674 unique website visitors, with demographic characteristics including 62.46% female, 92.03% White, and 22.76% reporting first-degree family history of AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C22-C24, and C90-C92 provide descriptive statistics of the cohort. The data are internally consistent, though the predominantly White, highly educated sample limits generalizability. The overrepresentation of women is acknowledged and cited as typical for population studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The PAL task consisted of three learning-recall trials of 12 word pairs (2s presentation), with randomized order within trials but consistent word pairs and order sequences across all participants, yielding a maximum score of 36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 clearly describe the PAL methodology. However, using identical word pairs and presentation orders for all participants introduces potential confounds (practice effects if retested, inability to create alternate forms) and may limit the task's sensitivity to detect certain cognitive changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Sensitivity analyses demonstrate that the FH effect on PAL is robust to self-report error, remaining significant with up to 8% additional error (100% of iterations) and detectable with up to 24% error (>50% of iterations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 present appropriate sensitivity analyses addressing self-report validity concerns. The Monte Carlo approach with 10,000 iterations is methodologically sound. However, the analysis assumes random error; systematic misclassification (e.g., differential recall by cognitive status) is not addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Of 4,961 FH+ participants solicited for biospecimen collection, 973 (19.7%) consented and 742 returned samples, yielding 673 participants with usable APOE genotype data after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C94, C102-C105 describe the Phase II biospecimen collection. The low response rate (19.7%) and high attrition (from 973 to 673) raise concerns about selection bias. No comparison of responders vs. non-responders is provided to assess representativeness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The cross-sectional study design precludes determination of within-individual trajectories of cognitive change over time, requiring future longitudinal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 appropriately acknowledge a key limitation of cross-sectional designs. The authors correctly note that age effects observed cross-sectionally may not reflect true longitudinal change due to cohort effects, selective survival, and other confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Older FH+ participants who consented to the study may represent a cognitively intact subset, as those experiencing cognitive impairment may choose not to participate, potentially explaining the convergence of FH effects at age 65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71 and C72 present reasonable speculation about selection bias, but this remains untested. The authors provide no data comparing participants vs. non-participants or early vs. late responders. This alternative explanation for the Age x FH interaction undermines confidence in the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The study's limitation to first-degree FH may have included individuals with extended family FH risk in the FH- group, and different AD forms (early vs. late-onset) may encode different FH risk levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 acknowledge important limitations regarding FH classification. These represent potential sources of misclassification bias that would likely attenuate observed effects (bias toward null), suggesting true effects may be larger than reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The study supports recommendations for healthy lifestyle, diabetes treatment, and education to attenuate age- and AD-risk-related cognitive decline, with specific relevance for FH+ individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C85 and C86 make causal intervention recommendations based on observational cross-sectional associations. The study design cannot support causal claims about interventions. While education and diabetes show associations with PAL, these could reflect confounding, reverse causation, or selection effects rather than modifiable causal pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Web-based cohort recruitment enables large sample sizes cost-effectively, with advantages outweighing concerns about online studies despite acknowledged limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 present a reasonable assessment of web-based research trade-offs. The large sample size (N=59,571) demonstrates feasibility, though the authors' assertion that advantages 'mostly diminish' disadvantages is subjective and not empirically tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "First-degree family history of dementia is a well-documented risk factor for late-onset Alzheimer's disease, encompassing both heritable and non-heritable risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C9 accurately represent established knowledge in the AD field, supported by appropriate citations. These provide necessary background context for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C69"
+    ],
+    "result": "Previous studies found FH-associated cognitive changes in children and young adults but fewer changes in middle-aged and older adults, with effects unrelated to APOE \u03b54, partially consistent with the current findings in individuals \u226465 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C69 accurately summarize prior literature with appropriate citations. The comparison to current findings is reasonable, though the authors note their results are only 'partially' consistent, suggesting some discrepancies that are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "PAL is a medial temporal lobe-dependent learning and memory task affected early in AD onset and sensitive to healthy aging changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 accurately represent established knowledge about PAL with appropriate citations. This justifies the task selection, though the authors do not discuss why PAL was chosen over other MTL-dependent tasks or whether multiple cognitive domains should have been assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "APOE \u03b54 increases AD risk by ~6%, with total genetic heritability estimated at 33% (SNP-based) to 60-75% (twin studies), and recent evidence shows synergistic effects of FH and APOE \u03b54 on amyloid-beta deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 accurately cite established genetic epidemiology findings. However, C15's statement that APOE \u03b54 increases risk 'by ~6%' is ambiguous\u2014this likely refers to absolute risk increase but could be misinterpreted as relative risk, and the original citation should be verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The 5th decade of life corresponds to menopause onset in developed countries, when hormonal changes have been found to alter cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 provide context for interpreting the observed sex differences in PAL performance during the 5th-7th decades. The citation is appropriate, though the authors do not test whether menopause status actually explains the observed pattern in their data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Higher education levels are associated with delayed AD onset in clinical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 accurately cites prior clinical research on education and AD onset. This supports the cognitive reserve interpretation of the Education x FH interaction, though the mechanism remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C63",
+      "C66"
+    ],
+    "result": "Diabetes is linked to worse cognitive deficits in AD, and prior imaging studies show synergistic effects of FH and APOE \u03b54 on amyloid-beta deposition and glucose metabolism in AD-related brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C66 appropriately cite prior literature to contextualize the current findings. These provide mechanistic hypotheses for the observed interactions, though the current study cannot test these mechanisms directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Heritable and non-heritable changes due to FH status alter the functioning of the medial temporal lobe and associated structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 makes a mechanistic inference about MTL function based on behavioral PAL data and prior imaging studies. While plausible, the current study provides no direct evidence of MTL alterations (no imaging, no other MTL-dependent tasks for convergent validity). This interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The prevalence of AD rises after age 60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 states established epidemiological knowledge about AD prevalence. This provides context for interpreting the Age x FH interaction and potential selection bias in older participants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "First-degree FH confers higher dementia risk than second- or third-degree FH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 accurately cites prior research on FH risk gradients. This justifies the focus on first-degree relatives but also highlights the limitation noted in C74.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Socioeconomic status (SES) is associated with brain structure and cognitive measures during development and may play a role in AD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 cite relevant literature on SES effects. The authors acknowledge not measuring SES directly but argue that education (a component of SES) was assessed. However, education alone does not capture income, occupation, or childhood SES, representing an important unmeasured confounder.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Over 5 million people in the US currently have AD, projected to reach 13.8 million by 2050.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 cite epidemiological projections from Hebert et al., 2013. These provide important public health context for the study's significance, though the projections depend on assumptions about future trends that may not hold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Overrepresentation of women in population-based studies has been previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 appropriately cites prior literature documenting female overrepresentation in voluntary research participation. This contextualizes the 62.46% female sample but does not address whether this affects the generalizability of sex-specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "FH is associated with reduced PAL performance four decades before typical AD onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 makes a temporal inference about AD onset timing that is not directly supported. The study shows FH effects in people <65, but 'four decades before typical onset' assumes typical onset at ~75-85 years and that the youngest affected individuals (20s-30s) would develop AD in their 60s-70s, which is not established. The claim conflates population-level age effects with individual trajectories.",
+    "result_type": "MAJOR"
+  }
+]

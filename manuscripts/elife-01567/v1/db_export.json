@@ -1,0 +1,2431 @@
+{
+  "submission": {
+    "id": "377ba14f-da59-4524-84c2-55733b0062a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:08:08.097695Z",
+    "updated_at": "2025-10-25T01:08:08.097695Z"
+  },
+  "content": [
+    {
+      "id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "content_type": "manuscript",
+      "content_text": "# Automated quantitative histology reveals vascular morphodynamics during Arabidopsis hypocotyl secondary growth\n\n## Authors\n\n- Martial Sankar<sup>1</sup>\n- Kaisa Nieminen<sup>1</sup>\n- Laura Ragni<sup>1</sup>\n- Ioannis Xenarios<sup>2</sup>\n- Christian S Hardtke<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant Molecular Biology University of Lausanne Lausanne Switzerland\n2. Vital-IT Swiss Institute of Bioinformatics Lausanne Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.01567.001 Among various advantages, their small size makes model organisms preferred subjects of investigation. Yet, even in model systems detailed analysis of numerous developmental processes at cellular level is severely hampered by their scale. For instance, secondary growth of Arabidopsis hypocotyls creates a radial pattern of highly specialized tissues that comprises several thousand cells starting from a few dozen. This dynamic process is difficult to follow because of its scale and because it can only be investigated invasively, precluding comprehensive understanding of the cell proliferation, differentiation, and patterning events involved. To overcome such limitation, we established an automated quantitative histology approach. We acquired hypocotyl cross-sections from tiled high-resolution images and extracted their information content using custom high-throughput image processing and segmentation. Coupled with automated cell type recognition through machine learning, we could establish a cellular resolution atlas that reveals vascular morphodynamics during secondary growth, for example equidistant phloem pole formation. DOI: http://dx.doi.org/10.7554/eLife.01567.001\n\n## Introduction\n\nModel organisms have proven essential for dissecting the molecular-genetic control of biological processes in both animals and plants (Meyerowitz, 2002; Brenner, 2009). Typically, they have been chosen according to a number of criteria, including a small, diploid genome, a short generation time, and easy lab culture. Another frequent feature is their small size, which allows cultivation of numerous individuals to enable large-scale genetic analyses as well as easy observation of developmental processes by microscopy. Fulfilling all these criteria, Arabidopsis thaliana (Arabidopsis), a small, annual dicotyledon of the Brassicaceae family, is the model of choice for developmental biology of higher plants (Meyerowitz, 1989). Various central processes of the plant life cycle, for example embryogenesis, root meristem organization or flower development can be examined at high spatio-temporal resolution in Arabidopsis. Moreover, in many instances live imaging at (sub-) cellular level is possible through microscopy techniques, including confocal microscopy, which is aided by the transparency of whole organs, such as the root, or at least the outermost tissue layers. However, such investigation is limited by organ depth, which can increase dramatically with organ size. For example, while the meristematic and differentiation regions of the root tip comprise a mere 5\u20136 dozen cells in the radial dimension and can be imaged all across using state-of-the-art microscopes, cell number rapidly increases proximal, towards the mature root (Dolan et al., 1993). At the same time, the organization of the root tissue layers rearranges from a partially radial, partially bilateral symmetry towards full radial symmetry, concomitant with the formation of cylindrical secondary meristems and the replacement of the outer cell layers by a new protective outside tissue. Thus, eventually the mature root acquires the same overall organization as the mature aboveground stems, that is a few cell layers of protective tissue produced by an underlying cork cambium that surround the vascular tissues. The latter are produced by another cylindrical secondary meristem, the vascular cambium, which produces xylem tissues towards the inside and phloem tissues towards the outside (Nieminen et al., 2004; Groover and Robischon, 2006). The activity of the cambial stem cells drives the radial expansion of roots and stems, a process termed \u2018secondary growth\u2019.\n\nFormation of xylem tissues through secondary growth is the main process of durable biomass accumulation in plants and most prominent in tree trunks (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig1-v1.jpg)\n\n**Figure 1.:** (A) Light microscopy of cross sections obtained from Arabidopsis hypocotyls (organ position illustrated for a 9-day-old seedling, lower left) at 9 dag (upper left) and 35 dag (right). Size bars are 100 \u03bcm. Blue GUS staining due to the presence of an APL::GUS reporter gene in this Col-0 background line marks phloem bundles. (B) Overview of the developmental series (time points and distinct samples per genotype) analyzed in this study. (C) Example of a high-resolution hypocotyl section image assembled from 11 \u00d7 11 tiles. (D) The same image after pre-processing and binarization, and (E) subsequent segmentation using a watershed algorithm. (F) Number of mis-segmented cells as determined by careful visual inspection in 12 sections, plotted against the total number of cells per section (log scale).DOI: http://dx.doi.org/10.7554/eLife.01567.003\n\nPrevious work has identified two principal phases of hypocotyl secondary growth, an early phase of proportional growth, when the cambium produces phloem and xylem tissues at roughly equal rates, and a later phase of xylem expansion, when the relative production of xylem dominates the radial expansion (Chaffey et al., 2002; Sibout et al., 2008). Early phase xylem consists mainly of the interconnected xylem vessels (terminally differentiated, dead cells with perforated, thick cell walls that are the actual conducts for water and solutes) and xylem parenchyma cells. Early phase phloem comprises the sieve elements (interconnected, enucleated but alive cells that perform the actual transport of the phloem sap), companion cells (which provide basic metabolism for sieve elements and are responsible for loading and un-loading of phloem sap cargo) and phloem parenchyma cells. In the xylem expansion phase, both xylem and phloem also start to differentiate fibers (cells with thick secondary cell walls that provide structural support), which can be formed from parenchymatic precursor cells.\n\nIt has been shown that the transition between the early phase and the xylem expansion phase is triggered by the onset of flowering (Sibout et al., 2008), through a mobile shoot-derived signal, the plant hormone gibberellin (Ragni et al., 2011). In these studies, the transition had been defined as a shift in the relative occupancy of overall xylem vs overall phloem tissue in hypocotyl cross sections. However, as only the overall areas of combined xylem and phloem tissues were considered, it remains unclear what the transition represents at the cellular level. Various scenarios could be envisioned, for instance the relative expansion of xylem might be a consequence of increased post-cambial proliferation during xylem differentiation, or of increased cambial stem cell activity toward the xylem side, or the inverse with respect to phloem. To distinguish between these possibilities proved to be very difficult due to the absence of information about the cellular dynamics during the secondary growth process. Moreover, such investigation is severely hampered by the fact that this process is not amenable to live imaging and can only be monitored invasively, through histological cross sections, thereby killing the individual sample under investigation. Thus, a quantitative understanding of the temporal progression of secondary growth can only be acquired by a high-throughput approach that monitors enough cross-sections from distinct hypocotyls of the same age to provide statistically solid data. In conjunction with the large number and morphological diversity of the cells that constitute this tissue, a quantitative understanding of the cell proliferation, differentiation, and patterning events by conventional means, that is simple visual inspection of cross sections, is out of reach. Therefore, we established an automated histology approach to create a cellular resolution atlas that reveals the vascular morphodynamics during hypocotyl secondary growth. Our data reveal substantially different secondary growth dynamics in two genotypes as well as emerging patterns of cell orientation over time and a constantly equidistant production of phloem poles by the cambium.\n\n## Results\n\nThe goal of our study was to develop a universally applicable, \u2018automated quantitative histology\u2019 approach that could be applied to provide a comprehensive, quantitative analysis of the vascular morphodynamics during hypocotyl secondary growth in Arabidopsis. For analysis we chose two common laboratory accessions, Columbia-0 (Col-0) and Landsberg erecta (Ler), which have already been shown to display divergent secondary growth dynamics (Ragni et al., 2011).\n\n## Raw data collection and rough analysis\n\nBased on the secondary growth progression observed during pilot experiments, we chose to analyze five time points in detail, starting at 15 days after germination (dag), when a full cambium is established and the initial outer epidermal and cortex cell layers are already or about to be shed. This was followed by additional sampling at 20, 25, 30 and up to 35 dag, when the plants had seized formation of new flowers (Figure 1B). Plants were grown in soil in a 16 hr light\u20138 hr dark cycle at 22\u00b0C with 150 \u00b5E light intensity. To minimize variation due to environmental conditions and between experiments, all plants were grown in parallel in a randomized design. In our conditions, all plants of both genotypes flowered at 17 dag \u00b11 d. For each time point, 50 seedlings were initially planted with the goal to eventually harvest 40 hypocotyls, which were fixed and embedded for sectioning. Embedding was performed using plastic resin, which proved to be the only robust method to acquire 3 \u00b5m thin cross-sections while conserving the cellular structure. A first observation by light microscopy after toluidine blue staining confirmed the integrity of the samples and allowed a first rough analysis of secondary growth progression based on overall transverse area (excluding any remaining epidermal or cortex layers) and the proportion occupied by the xylem. Whereas the average hypocotyl stele diameter was ca. 0.3 mm in Col-0 and ca. 0.15 mm in Ler at 15 dag, the radial expansion resulted in an average diameter of 1.6 mm in Col-0 and 1.1 mm in Ler at 35 dag. Concomitantly, relative xylem area increased from 12% to 29% in Col-0, and from 31% to 47% in Ler, confirming previous observations (Ragni et al., 2011).\n\n## Acquisition and segmentation of high-resolution images\n\nTo obtain accurate quantitative parameters of secondary growth progression, we implemented a segmentation procedure to extract the cellular features from the cross sections. To allow reliable identification of small cells, such as cambial cells, with standard segmentation software, we obtained images of the cross sections with a light microscope at 40 X magnification. Our strategy was to produce ultra-high resolution images of 1024 \u00d7 1024 pixels, which would allow a very fine discrimination of individual cell boundaries, the critical requirement for the subsequent image segmentation process. Because the resolution was too high to fit any single cross section into a single image, we used the tiling function of the microscope to fuse 1024 \u00d7 1024 pixel subpanels into single images for each cross section. Individual cross section images subjected to segmentation were thus assembled from a minimum of 9 (3 \u00d7 3) up to 144 (12 \u00d7 12) panels (Figure 1C). This procedure permitted information extraction from the whole section without inference or data loss. To this end, we developed a custom, fully automated image processing and segmentation pipeline. This pipeline pre-processes the images (gamma correction, contrast and brightness adjustment) and discards noise pixels after binarization (Figure 1D) before segmentation using a watershed algorithm (Figure 1E). The pipeline is fully automated and robust and typically performed at more than 99% accuracy (i.e., less than 1% of mis-segmented cells) across the scale of images (Figure 1F). However, because CPU time scaled exponentially with image size, taking ca. 8 min. for a 15 dag sample but ca. 1000 min for a 35 dag sample, computation eventually became limiting for our endeavor. Thus, we restricted our analysis to ca. 20 selected cross sections per genotype and time point (i.e., 208 cross sections in total, requiring ca. 800 hr of total CPU time) (Figure 1B), which gave statistically robust quantitative data.\n\n## Computation of cellular descriptors\n\nOverall median cell number at 15 dag was 883 for Col-0 and 260 for Ler. At 35 dag, it had increased to 18\u2019124 and 11\u2019026, respectively, indicating higher overall secondary growth in Col-0, but higher relative secondary growth in Ler (i.e., a ca. 42-fold vs a ca. 21-fold increase in cell number). Together with the overall increase in total transverse area (from ca. 70\u2019000 \u00b5m2 at 15 dag to ca. 2 million \u00b5m2 at 35 dag and ca. 11\u2019000 \u00b5m2 to ca. 1 million \u00b5m2 for Col-0 and Ler, respectively), this suggests significantly different secondary growth dynamics in the two genotypes. However, these overall averages can be misleading because of the already observed differences in relative tissue abundance. Thus, we advanced towards our goal of a full cellular resolution analysis by computing 16 cellular descriptors that represent the geometric characteristics of cell shape and relative cell position (Supplementary file 1A). The initial set of descriptors was extracted from the segmented images using the EBImage R package (Pau et al., 2010). This toolbox computes morphological features by calculating the 2nd-order covariance matrix of the image moments, which is equivalent to fitting an ellipsoid to an object. From these data, we computed additional features, including the position of the cells given by their polar coordinates and the cell incline angle (see below), thereby taking full advantage of the cylindrical morphology of the hypocotyl cross sections.\n\n## Supervised learning for automated cell type recognition\n\nAlthough the descriptors provided an overview of the cell sizes, shapes and positions within the sections, they did not provide a straightforward indication of the tissue that individual cells belong to. To overcome this limitation, we sought to develop automated cell type recognition that uses the descriptors as an input for cell type classification. To this end, we performed a supervised classification using the support vector machine algorithm (SVM) (Cortes and Vapnik, 1995). Briefly, the SVM classifier principle is to find the optimal decision boundary between classes by maximizing the margin hyperplanes (the geometrical representation of the decision boundaries in multi-dimension) between the support vectors. The training set was a subset of our data that comprised a total of 3\u2019144 manually labeled cells, dispatched into two sections per time point and genotype (Supplementary file 1B). This set was split into a learning set comprising two-thirds of the data, and a test set constituted from the remaining cells. The former subset was used to build the classifier whereas the latter was employed for validation. The performance was assessed using the V-fold cross validation method, which consists of five randomly permutated reiterations of training and test sets to maximize the test set prediction error rate. Feature selection is a well-known pivotal issue in machine learning, and indeed the best combination of descriptors was critical in automated cell type classification and varied with the time point and genotype analyzed, mainly because cell type-specific position can vary with the age of the section. Thus, we developed a greedy algorithm for feature selection based on the 16 initial descriptors. This allowed us to select descriptors according to their importance in classifier performance (Figure 2\u2014figure supplement 1), such that we could build one optimized classifier with respect to a given time point. In general, we selected the combination with the least number of descriptors, the lowest variation and the highest cross-validation performance with respect to the training/test set permutations. Finally, another key criterion in classifier selection was to minimize performance trade-off across different cell types, that is classifiers that scored high in correct recognition of all the different cell types (the selected classifiers are described in Supplementary file 1C). Across all sections and time points, a common set of five distinct cell type categories (Supplementary file 1D) could be classified and quantified, that is (i) xylem vessels and parenchymatic cells, (ii) xylem fibers, (iii) cambial cells, (iv) phloem bundle cells (companion cells and sieve elements) and (v) parenchymatic phloem cells (including any of the rare phloem fibers) (Supplementary file 1E). Although more categories (e.g., xylem vessels and parenchyma cells separately) could be reliably distinguished at individual time points using other classifiers, we restricted our analyses to these five for the sake of a coherent temporal description of secondary growth progression. For these categories, our purely morphology- and position-based approach identified cells with an average accuracy of 88% and a median accuracy of 95% across the n = 50 cell type category X time point X genotype matrix.\n\n## Automated quality control and refinement of cell type recognition\n\nWhereas the automated recognition with these classifiers was thus sufficiently accurate for most cell type categories to extract quantitative data about secondary growth progression from the typically thousands of cells per section, the recognition of the xylem vessel and parenchyma cells behaved as an outlier, with lower accuracy especially at later stages. We also noticed that xylem cell types were frequently assigned to cells outside of the xylem area\u2019s average radius. This was particularly prevalent at the later stages of development and could be pinpointed to a frequent confusion between xylem vessels and phloem parenchyma cells, which increasingly resemble each other in their outlines as secondary growth proceeds. However, discarding the problematic sections based on stringent criteria would have meant the exclusion of 33% and 40% of sections for Col-0 and Ler, respectively. To tackle these problems, we developed an automated pipeline for quality control. This procedure was based on manually created mask images that specified both the xylem area and the whole section area of the 208 samples (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig2-v1.jpg)\n\n**Figure 2.:** (A) Overview of the computational pipeline from image acquisition to analysis. (B) \u2018Phenoprints\u2019 for the different genotypes and developmental stages.DOI: http://dx.doi.org/10.7554/eLife.01567.004\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The green arrow points out the selected feature combination according to the criteria of minimum number of features with the highest performance and the lowest variation (the radiusV feature was excluded due to its putative variation in tissue location).DOI: http://dx.doi.org/10.7554/eLife.01567.005\n\n## Overall similar but temporally shifted vascular patterning in the two genotypes\n\nFor a first overview of secondary growth progression, we used the thus extracted cellular data to define phenotypic profiles (phenoprints) for each time point and genotype, comprised of the global (e.g., cross-section size or total cell count) and cell type-specific (e.g., relative proportion of a particular cell type category or feature distribution) statistics (\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig3-v1.jpg)\n\n**Figure 3.:** (A) Principal component analysis (PCA) of the phenoprints shown in Figure 2B, performed with normalized values (Supplementary file 4). The inlay screeplot displays the proportion of total variation explained by each principal component. (B\u2013E) Comparative plots of parameter progression in the two genotypes. In (D), xylem represents combined vessel, parenchyma, and fiber cells, phloem represents combined phloem parenchyma and bundle cells. Error bars indicate standard error.DOI: http://dx.doi.org/10.7554/eLife.01567.006\n\n## Reduced phloem cell proliferation is the cause of higher xylem area occupancy in Ler\n\nPrevious studies (Ragni et al., 2011) have shown that Ler has a higher ratio of xylem area to phloem area than most other accessions, including Col-0. Our quantification also confirmed that overall radial expansion of Ler was reduced as compared to Col-0 (Figure 3B). However, xylem area expansion rate was nearly equal in both genotypes, which combined with lower overall radial expansion necessarily resulted in higher xylem occupancy in Ler (Figure 3C). In the temporal trend, two distinct phases of xylem occupancy could be distinguished. Initially, it decreased or remained stable between 15 and 25 dag, followed by an increase between 25 and 35 dag. Whereas these tendencies were similar in both genotypes up to 30 dag, Ler differed in that its xylem area increased steadily, eventually occupying almost 50% of the total transverse area at 35 dag. Quantification of cell proliferation confirmed that the number of xylem cells and the xylem cell proliferation rate were close in both genotypes (Figure 3D), however the total number of cells in Ler was ca. twofold lower than in Col-0 (Figure 3E). Moreover, the phloem proliferation rate was more than twofold lower in Ler, with stagnation in phloem cell number between 30 and 35 dag (Figure 3D) explaining the high xylem tissue occupancy at 35 dag. The increase of cambium cell number in Col-0 as compared to Ler at later stages of development (Figure 3E) likely contributed to this difference. In summary, our results suggest that a plateau in cambial growth combined with stagnating phloem proliferation is responsible for overall reduced radial growth but relatively increased xylem expansion in Ler.\n\n## Visualization of vascular morphodynamics through combined plots of cell size and incline angle\n\nOf the descriptors extracted by our computational approach, the incline angle proved to be most useful in detecting and illustrating the substantial features of vascular organization during secondary growth progression. The incline angle represents the deviation of the major axis of a cell with respect to the radius emanating from the manually defined center point of the cross section (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig4-v1.jpg)\n\n**Figure 4.:** (A and B) Spatial distribution of cell incline angle illustrates the vascular organization in Ler (B) as compared to Col-0 (A) at later stages of development, for example 30 dag. The size of the disc increases with the area of the cell. Blue color indicates radial cell orientation, red orthoradial. (C and D) Violin plots of incline angle distribution, illustrating increasingly bimodal distribution coincident with refined vascular organization and different dynamics of the process in the two genotypes.DOI: http://dx.doi.org/10.7554/eLife.01567.007\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The incline is the angle between the section radius through the center of an ellipse fit to a cell and the major axis of that ellipse extended towards the x axis.DOI: http://dx.doi.org/10.7554/eLife.01567.008\n\n## Local variation and rearrangement of incline angles support distinct phases of vascular patterning\n\nInterestingly, the spatio-temporal dynamics of the overall incline (i.e., covering the whole section cell content at a given time point) captured the distinct phases of secondary growth progression described above. This could be visualized in violin plots (Figure 4C\u2013D), where the incline angle was uniformly distributed at 15 dag in Col-0 (Hartigans\u2019 dip test p>10\u22123), meaning that no distinguishable vascular organization of cell orientation was yet built up. Starting at 20 dag, a first peak towards lower values of incline emerged and persisted until 35 dag. At 30 dag, a second peak towards higher values of incline arose, giving shape to a discernable bimodal distribution (Hartigans\u2019 dip test p<2.2 \u00d7 10\u22126) (Figure 4C). In Ler, the pattern was different in that a broad, slightly skewed distribution with a median value towards the lowest values of incline was observed at 15 dag, followed by a broad, slightly bimodal distribution at 20 dag (Hartigans\u2019 dip test p<10\u22124) (Figure 4D). At the later time points, sharp bimodal-shaped density curves supported the coexistence of two populations of cells, a mostly radially and a mostly orthoradially oriented one (Hartigans\u2019 dip test p<2.2 \u00d7 10\u22126), similar to Col-0.\n\n## Spatio-temporal patterning of inclines\n\nPlotting the incline of individual cells according to their radial position (i.e., distance from a cross section\u2019s center) and over time points, we could follow the rearrangement in more detail. Normalization allowed us to pool the cells from all sections from a given time point and perform relative comparisons between them. Fitting these cloud distributions with locally weighted linear regression (i.e., lowess) revealed the essential data trends (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013J) Density plots of cell incline angle vs radial position for the two genotypes at the indicated developmental stages, representing all cells across all sections for a given time point. The red lines represent the fit of these cloud distributions with locally weighted linear regression (i.e., lowess), revealing the essential data trends. All sections were normalized from 0.0 (the manually defined center) to 1.0 (the average radius in a set of sections as determined by the average distance of the outermost cells from the center for individual sections). Box plots indicate the quartiles of the radian distribution for each cell-type class and are placed at the average position of the cell type with respect to the y axis. Outliers are shown as circles.DOI: http://dx.doi.org/10.7554/eLife.01567.009\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cell number in a circle of 200\u2013500 pixels around the section centers for Col-0. Cell count in a constant area of xylem over time across all averaged across all sections.DOI: http://dx.doi.org/10.7554/eLife.01567.010\n\n## Cell proliferation and division plane switching is largely restricted to the cambium\n\nThe distribution of inclines also had possible implications for the orientation of cell divisions, in the sense that mostly radial orientation could be an indicator for the prevalence of anticlinal division planes, whereas mostly orthoradial orientations could be an indicator for the prevalence of periclinal ones. Visual inspection of cross sections suggested that this is not the case however, also revealing a remarkable rarity of post-cambial cell divisions. In the xylem area, practically no post-cambial divisions were observed (Figure 5\u2014figure supplement 1) and radial cell files were generally continuous with the adjacent cambial files. Following such cell files also suggested that cellular growth led to a switch in xylem cell incline angle orientation. Whereas xylem cells that emerged from the cambium still retained the orthoradial orientation, cellular growth eventually resulted in a switch towards a radial orientation. Such switching was not observed in the phloem, consistent with the prevalence of orthoradial inclines. Similar to the xylem however, phloem cells were typically in continuity with the corresponding cambial cell files, and practically no cell divisions, neither anticlinal nor periclinal, were observed. Importantly however, this was only observed for files of phloem parenchyma cells. The exceptions to this were cell files that ended up in vascular bundles. In these, numerous post-cambial divisions could be observed, both in the anticlinal and periclinal orientations. Finally, as expected the vast majority of cell divisions was observed in the cambium. Mostly, they occurred in a perfect periclinal orientation, but we also observed numerous interspersed anticlinal divisions that are necessary to keep up with overall radial expansion. In summary, the radial expansion of hypocotyls appeared to be mostly driven by cambial activity and very little by post-cambial cell divisions.\n\n## Phloem pole formation displays a precise periodicity\n\nSince there appeared to be no cessation of cell division in the cell files connecting the cambium and the vascular bundles, the data suggested that the patterning of phloem pole position might already be laid down in the cambium. Although such patterning was not evident from visual inspection of phloem pole distribution, a density map representation of phloem bundle cells suggested a spatial pattern of phloem poles positioning around the central xylem (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01567/elife-01567-fig6-v1.jpg)\n\n**Figure 6.:** (A) Example of Gaussian kernel density estimate of the location of predicted phloem bundles cells in a 30 dag Col-0 section. High density represents phloem poles. (B) Example of an analysis of emerging phloem pole position in a 30 dag Col-0 section. The plot represents a pixel intensity map after noise reduction along a circular region of interest across the emerging phloem poles. Intensity peaks are due to GUS staining conferred to phloem bundles by an APL::GUS reporter construct. (C) Probability density function of the data shown in (B) obtained from an automated Bayesian model. The dominant single peak indicates a constant arc distance of ca. 62 pixel between the phloem poles.DOI: http://dx.doi.org/10.7554/eLife.01567.011\n\n## Discussion\n\nSecondary growth is a major developmental process in dicotyledons, including herbaceaous plants such as Arabidopsis (Chaffey et al., 2002; Sibout et al., 2008; Elo et al., 2009); however, it is comparatively an under-researched trait. In part, this can be attributed to the difficulty of investigating secondary growth in situ in a non-invasive manner, in part to the relatively big scale of the process. Both complications also contribute to the fact that a comprehensive description of secondary growth dynamics at the cellular level is still missing. In this study, we aimed to provide a robust quantitative description of secondary growth that could serve as a reference frame for future investigations. As a secondary growth system, we chose the Arabidopsis hypocotyl, which has been shown previously to pose various advantages as opposed to Arabidopsis stems, most notably the uncoupling of elongation growth and secondary growth (Sibout et al., 2008). While a high-throughput approach was necessary to obtain statistically solid data, high-resolution imaging was required for reliable cellular level analyses. A novel type of global approach, that is, quantitative histology combined with machine learning, was the only realistic option to achieve both goals.\n\n## Quantitative histology, an automated and machine learning-based approach\n\nThe principal problems that we faced were the large range of cell sizes as well as the large number of objects within the hypocotyl radius. This required ultra high-resolution imaging of our cross sections as well as an automated segmentation procedure that would not require any seeding. The solution was the assembly of cross sections from tiled, partial high-resolution images and their segmentation through an automated pipeline that relied on a watershed algorithm. This pipeline achieved very good accuracy in object detection, but was still CPU intensive. In part, this could be off set by binarization of the images using an adaptive Gaussian filter, which greatly accelerated the segmentation procedure. We could compensate an associated decrease in segmentation quality (because watershed segmentation is more accurate on gray scale images) by effectuating morphological operations on the binarized images, thereby keeping segmentation accuracy high while automating the task. Extending our approach beyond simple cell counting to cell type recognition intrinsically hinged on supervised classification. To this end, we used the Support Vector Machine (SVM) method, because it had already proven its efficiency in a broad range of life science applications (Noble, 2006). Average prediction accuracy based on this method was generally high, however for some cell type categories it was more variable at times. This was due to the nature of the classifiers, which were chosen to optimize for overall accuracy including all cell type categories. Implementation of our quality control tool alleviated this effect, however it is noteworthy that even more accurate classifiers can be identified for analyses that focus on a given cell type or a given time point, extending the range of potential applications of our pipeline.\n\n## Morphology-based classification of plant cells\n\nThe use of shape characteristics for cell classification was pioneered by Olson et al., who classified mammalian culture cells into three groups using hierarchical cluster analysis and nearest neighbor analysis (Olson et al., 1980). Recent improvements in this area largely benefit from SVM algorithm development, which can take multiple features into account. For instance, a recent study identified factors involved in the transition between cell shapes using automated phenotyping of human cell cultures that took advantage of fluorescent staining for DNA, tubulin and actin on top of cell morphology (Fuchs et al., 2010). Conceptually similar, another study exploited cell shape in combination with fluorescent characteristics upon nuclear and cytoskeleton staining in Drosophila (Yin et al., 2013). However, classification based solely on cell morphology has also been applied to human cells (Theriault et al., 2012). Whereas all of these studies investigated isolated cells in culture, we had to apply morphology-based classification to cells that were embedded in their tissue and in a developmental context. While this complicated the analysis, it also offered the opportunity to assign spatial coordinates to the cells, which could be integrated on top of characteristics of cell geometry to build our classifiers. Average true prediction accuracy in the cited studies was in the range of 83\u201390%, as compared to 88% in our study. Notably however, our cell type assignment precision was greatly increased by our post-machine learning quality control pipeline, which enabled us to fix the principal classes with lower accuracy, due to frequent SVM confusion between xylem vessels and phloem parenchyma cells. Thereby, we successfully classified up to five cell type categories in a time course experiment where the number of cells ranged from a few hundred to several thousand. The factors that limited our approach were to some degree related to the properties of plant cells, notably that they are encapsulated by rigid cell walls that resist the internal turgor pressure. Their cellular geometry is therefore not only shaped by the material properties of the walls, but also by the permanent force of turgor pressure, manifesting in the reduced variation of cell shape in plants as compared to animals (Theriault et al., 2012). To some degree, this uniformity in cell shape hampered the identification of certain cell states by our machine learning approach, for instance the direct identification of dividing cells. Similarly, certain cell types were ticklish to distinguish by their morphology only. For instance, we were not able to separate phloem companion cells from sieve elements or xylem parenchyma cells from xylem vessels across all time points, which therefore had to be grouped into combined categories. Adding tissue-related features, such as cell connectivity (i.e., the number of neighboring cells), and improving the segmentation algorithm such that cell wall thickness could be incorporated into the analyses might overcome these obstacles and greatly increase performance. Future efforts should go into this direction and could also boost the universal application of our approach. The latter should be possible for any tissue or organ from which cell outlines can be segmented after imaging and for which a reference point can be defined, for example (partial) sections from tree trunks or confocal images of root meristems.\n\n## Vascular morphodynamics\u2014a combination of molecular patterning and mechanical constraints?\n\nFor the subsequent cellular level analysis, the incline angle descriptor of a cell proved to be particularly valuable. Whereas no temporal changes were discernible for the cell area and the cell eccentricity features, the cell incline distribution varied over time, in a seemingly non-random fashion. Indeed, combination with spatial components (i.e., radial cell position in cross sections) revealed spatio-temporal rearrangement of inclines across a sequence of intertwined morphodynamic events. Our data indicate a gradual increase and arrangement of cambial cells, which together with orthoradial cellular organization of the surrounding tissues appeared to be a prerequisite for proper xylem development and relative xylem expansion around 20\u201325 dag. One possible explanation for this phenomenon could be tissue mechanics. The growing xylem area might exert a compression force on surrounding cambial and parenchymal cells, forcing them into tangential anisotropic cell elongation. How such mechanical stress is perceived and conveyed into cellular behavior is largely enigmatic and an emerging hot topic in plant biology, where first studies on shoot apical meristem formation have implicated katanins in the dynamic reorientation of microtubules perpendicular to stress direction (Uyttewaal et al., 2012).\n\nBeyond possible mechanical constraints, molecular genetic patterning is clearly pivotal in vascular morphodynamics. For instance, polarity of the cambium to produce xylem to the inside and phloem to the outside is an inherent feature of secondary growth. A receptor-like kinase\u2014peptide ligand pair is involved in this process and interacts with hormone signaling pathways (Hirakawa et al., 2008, 2010; Etchells et al., 2012). Notably, the phenotypic penetrance of the respective mutants is background-dependent, with stronger effects in Ler than in Col-0 (Etchells et al., 2013). It would be interesting to investigate whether this could result from an interaction with the earlier cessation of phloem production we observed in Ler.\n\n## Differential secondary growth dynamics in Col-0 vs Ler\n\nThe early cessation of phloem production in Ler as compared to Col-0 does, however, not reflect an earlier termination of overall growth in Ler. Rather it appears that phloem production in Ler ceases before xylem production and contributes to the divergent growth dynamics in the two genotypes. The severely reduced overall cell production in Ler as compared to Col-0 can be mainly attributed to reduced phloem and cambium cell number, and is responsible for the higher relative proportion of xylem area that had been reported earlier (Ragni et al., 2011). Interestingly, the nearly 50% reduction in overall cell number does not mean that growth is uniformly slower in Ler. Rather, initial secondary growth appears to be particularly slow in Ler as indicated by more than threefold difference in cell number at 15 dag. This is followed by an acceleration of cell production that surpasses Col-0 in relative terms between 15 dag and 25 dag, before dropping to Col-0 levels between 25 dag and 35 dag. This pattern is also evident from the principal component analysis, in which both Col-0 and Ler reach overall similar end points. Thus, our analysis along a series of time points has revealed highly divergent secondary growth dynamics in the genotypes that would not have been evident from a comparison of end points.\n\n## Morphometric evidence for a phloem patterning mechanism\n\nBeyond the cellular dimensions, our quantitative histology approach also allowed us to conduct follow up analyses to reveal developmental patterns that were not evident from simple visual inspection. For instance, we found a constant arc interspace distance for phloem pole formation along the developmental time series with a concomitant decrease in the interspace angle due to the overall secondary growth. A reaction-diffusion model with a growing boundary (i.e., representing the expanding xylem area) would be consistent with these results. Local production of the above-mentioned mobile ligand and activation of its receptor at a distance are potential candidates for such a mechanism. Alternatively, patterning cues from apical sources might direct phloem pole formation, for instance to coordinate it with phyllotaxy. Application of our quantitative histology approach to complementary stem sections could present one way to explore these possibilities.\n\n## Materials and methods\n\n## Plant material, sectioning and image acquisition\n\nThe Arabidopsis thaliana Col-0, Ler or APL::GUS (Bonke et al., 2003) lines were grown in soil, in a 16 hr light\u20138 hr dark cycle mimicking long day conditions under white light of ca. 150 \u03bcE intensity. After harvest, hypocotyls were immediately fixed and embedded in Technovit plastic resin before toluidine blue staining as described (Sibout et al., 2008; Ragni et al., 2011). Sections of 3-\u03bcm thickness were then obtained using a Leica RM2255 microtome and were subsequently imaged on a Zeiss LSM 710 confocal microscope in transmitted light mode at 40x magnification using the automated tiling function. Hypocotyls from APL::GUS plants were subjected to GUS staining before fixation, embedding and sectioning as described (Sibout et al., 2008; Ragni et al., 2011) and imaged using a Leica DM 5500 microscope.\n\n## Quantitative histology\n\nTo extract information content of the sections at cellular resolution, we developed an automated image analysis pipeline. The pipeline was written in python with calls to R scripts and ImageJ macros. In brief, images were first pre-processed automatically (i.e., gamma correction, contrast, and brightness adjustment) before their binarization. A series of morphological operations (two times an erosion operation followed by a dilatation operation) were applied with the aim to discard noisy pixels and regularize the cell boundaries. These steps were achieved using to the EBImage R package (Pau et al., 2010). A variant watershed algorithm with automatic seeding (http://bigwww.epfl.ch/sage/soft/watershed) was used to identify the cell boundaries. Each cell was then characterized by a vector composed of 16 components that comprised 10 geometrical and 6 positional features (Supplementary file 1A) and was classified into one of the 5 cell-type classes (Supplementary file 1B). One classifier was built per genotype and per time point (Supplementary file 1C) using the C-classification with a radial basis function (RBF) kernel of the support vector machine (Cortes and Vapnik, 1995) provided by the e1071 package, the R interface for the libsvm library (Chang and Lin, 2001). The training set for the machine learning comprised 3144 manually labeled cells across 20 sections that covered all time points and genotypes. The optimal parameters, the selected features and the classifier accuracies are given in Supplementary file 1D.\n\n## Phenoprints and comparison\n\nTo compare secondary growth progression in the two genotypes, we described each developmental stage in a \u2018phenoprint\u2019 that represents a vector combined of 8 numerical values (Figure 2B). For principal component analysis (PCA), each observable was scaled with respect to the maximum value to obtain a unit range across variables (Supplementary file 4). We performed a PCA analysis by computing the eigenvalues and eigenvectors for the correlation matrix. The resulting two first principal components were displayed with a bi-plot representation. The rotation angle between the vector variables represents the correlation between two phenoprints (>90\u00b0 meaning no correlation). This method allowed direct quantitative comparison of the phenotypic variability of our samples.\n\n## Phloem pole pattern analysis\n\nTo automatically map phloem pole positions in sections obtained from APL::GUS plants, a circular region of interest (ROI) across the newly generated phloem bundles that was concentric with the section center was defined and GUS staining intensity was measured along the ROI using ImageJ software. For each image, the period between phloem poles was detected using an automated Bayesian model (Granqvist et al., 2012), corresponding to the most likely occurring arc interspace distance between two phloem poles.\n",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jan Traas, Ecole normale sup\u00e9rieure de Lyon , France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01567.016](https://doi.org/10.7554/eLife.01567.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAutomated quantitative histology reveals vascular morphodynamics during Arabidopsis hypocotyl secondary growth\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, Detlef Weigel, and 3 reviewers, one of whom served as the guest Reviewing editor for this article.\n\nAll three reviewers agree that this study describes a robust tool that represents a broadly useful addition to existing methods.\n\nNevertheless a number of issues have been identified that need to be addressed before the article is acceptable for publication:\n\n1) While the method is well adapted to the biological system analysed here, it would be important to have an idea of the applicability to other organs and/or species. Would, for example, the pipeline function as well in the case of cambium formation in poplar or root cell differentiation in maize? Since this article is mainly technically oriented and the data presented here only provide limited further biological insight, it will be important to underline and fully explain the methodological significance of the work described here. While this does not necessarily imply that extra experiments are required, it should be made clear what the wider applications are. This would largely compensate for the lack of clear conclusions on the biological system.\n\n2) The cell type detection has an accuracy of 88%, which seems relatively low. The key criteria used by the classifier to distinguish between the cell types are not very clear. If for example the main observable used to make the distinction between the cell types turns out to be cell size, then having a 12% miss-classification could have quite some effect on the conclusions drawn in the paper.\n\n3) Two remarks concern the PCA analysis:\n\n- One of the reviewers performed a PCA on the data from Table 2 (using R software ade4 package) and could not reproduce the results presented in Figure 3. The authors should clarify what data they used for this PCA. If the PCA was indeed done on Table 2B, they should double check this part of their analysis. The reviewer suggested also to include intermediate steps of the PCA (correlation matrix, eigenvectors) as supplementary material.\n\n- There is no discussion in the paper as to how the different observables contribute to the first principle component, which represents almost 94% of the variation. What is actually explaining almost all of this variation? Such a discussion would make it much more insightful what is actually changing over time and what makes Col-0 different from Ler.\n\n4) In the part on \u201cVisualization of vascular morphodynamics through combined plots of cell size and incline angle\u201d there seems to be an issue with the incline angle: what happens when a cell is round? One would expect a highly randomized distribution of incline angles in that case. Please indicate how this problem was addressed.\n\n5) Several points concern the more biological implications of the work described:\n\n- The paper contains a long description regarding the differences between the two genetic backgrounds in terms of total cross-sectional area, size variations and so forth, but no context is given how this information can be useful for understanding Arabidopsis development.\n\n- In principle it should be possible to derive the relative contribution of cell expansion and cell proliferation from the data (see for example the Supporting Online Material of Bosveld et al., Science 2012). This would show how without having the availability of explicit time series, the cell dynamics underlying secondary growth can still be derived through statistical measures. Although such an analysis might be beyond the scope of this paper, it would help the paper to go beyond methodology.\n\n- In general, the papers suffers from giving many precise measurements without inserting them in a proper context, such that it becomes unclear why these specifics are insightful and important for understanding plant development.\n\nYou might try to be clearer about these biological implications in both the Results and the Discussion.\n",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4be7f809-c786-44bf-8e5e-21018890c9a1",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C1",
+      "claim": "Secondary growth of Arabidopsis hypocotyls creates a radial pattern of highly specialized tissues that comprises several thousand cells starting from a few dozen.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary growth of Arabidopsis hypocotyls creates a radial pattern of highly specialized tissues that comprises several thousand cells starting from a few dozen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the biological process being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "0bad8ecf-005b-4330-9fa3-caccefb3c0b0",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C2",
+      "claim": "The automated quantitative histology approach established a cellular resolution atlas that reveals vascular morphodynamics during secondary growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with automated cell type recognition through machine learning, we could establish a cellular resolution atlas that reveals vascular morphodynamics during secondary growth, for example equidistant phloem pole formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract, supported by the methods and results described throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6618fe90-e4d7-4b2d-8e8e-2bb60b0ff158",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C3",
+      "claim": "Equidistant phloem pole formation occurs during secondary growth.",
+      "claim_type": "EXPLICIT",
+      "source": "we could establish a cellular resolution atlas that reveals vascular morphodynamics during secondary growth, for example equidistant phloem pole formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example finding in the abstract and supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "3b0124c5-0a62-49e6-adf8-94b4b73650a2",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C4",
+      "claim": "Arabidopsis thaliana is a small, annual dicotyledon of the Brassicaceae family.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis thaliana (Arabidopsis), a small, annual dicotyledon of the Brassicaceae family, is the model of choice for developmental biology of higher plants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the taxonomic classification of Arabidopsis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "28cb49a8-e30a-48a6-aeb7-68a491da5d2c",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C5",
+      "claim": "The meristematic and differentiation regions of the Arabidopsis root tip comprise a mere 5\u20136 dozen cells in the radial dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "the meristematic and differentiation regions of the root tip comprise a mere 5\u20136 dozen cells in the radial dimension and can be imaged all across using state-of-the-art microscopes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with a citation to Dolan et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "71ae17c0-e03e-46f0-941a-91fd86db2462",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C6",
+      "claim": "The vascular cambium produces xylem tissues towards the inside and phloem tissues towards the outside.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter are produced by another cylindrical secondary meristem, the vascular cambium, which produces xylem tissues towards the inside and phloem tissues towards the outside",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citations to Nieminen et al., 2004 and Groover and Robischon, 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "808fdd86-d799-46ae-ae0e-4504ef5704ea",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C7",
+      "claim": "Formation of xylem tissues through secondary growth is the main process of durable biomass accumulation in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of xylem tissues through secondary growth is the main process of durable biomass accumulation in plants and most prominent in tree trunks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "12efa0e7-399e-4cac-8ce9-ed4c542152f4",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C8",
+      "claim": "Two principal phases of hypocotyl secondary growth exist: an early phase of proportional growth and a later phase of xylem expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has identified two principal phases of hypocotyl secondary growth, an early phase of proportional growth, when the cambium produces phloem and xylem tissues at roughly equal rates, and a later phase of xylem expansion, when the relative production of xylem dominates the radial expansion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Chaffey et al., 2002 and Sibout et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "a25a92ae-887e-4607-88f7-41555ce6b419",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C9",
+      "claim": "Early phase xylem consists mainly of interconnected xylem vessels and xylem parenchyma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Early phase xylem consists mainly of the interconnected xylem vessels (terminally differentiated, dead cells with perforated, thick cell walls that are the actual conducts for water and solutes) and xylem parenchyma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of tissue composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "66815430-92b7-4b7b-8dfe-7aa744802469",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C10",
+      "claim": "Early phase phloem comprises sieve elements, companion cells, and phloem parenchyma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Early phase phloem comprises the sieve elements (interconnected, enucleated but alive cells that perform the actual transport of the phloem sap), companion cells (which provide basic metabolism for sieve elements and are responsible for loading and un-loading of phloem sap cargo) and phloem parenchyma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of tissue composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "1426a0ee-a623-414e-9119-5e3f81647af4",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C11",
+      "claim": "The transition between early phase and xylem expansion phase is triggered by the onset of flowering.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the transition between the early phase and the xylem expansion phase is triggered by the onset of flowering",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Sibout et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "65387fdb-58ff-4530-ad8e-b7658e82a2ee",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C12",
+      "claim": "The transition between early phase and xylem expansion phase is triggered by gibberellin, a mobile shoot-derived signal.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the transition between the early phase and the xylem expansion phase is triggered by the onset of flowering (Sibout et al., 2008), through a mobile shoot-derived signal, the plant hormone gibberellin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Ragni et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "f1c08685-143b-4767-874d-29fe08797823",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C13",
+      "claim": "Col-0 and Ler display divergent secondary growth dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For analysis we chose two common laboratory accessions, Columbia-0 (Col-0) and Landsberg erecta (Ler), which have already been shown to display divergent secondary growth dynamics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Ragni et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "052c7be6-14c9-43bc-b799-ec0b426d720a",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C14",
+      "claim": "Five time points were analyzed in detail, starting at 15 days after germination (dag) and ending at 35 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "we chose to analyze five time points in detail, starting at 15 days after germination (dag), when a full cambium is established and the initial outer epidermal and cortex cell layers are already or about to be shed. This was followed by additional sampling at 20, 25, 30 and up to 35 dag",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b917c681-4ae5-4c70-87ae-279449e1883b",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C15",
+      "claim": "All plants of both genotypes flowered at 17 dag \u00b11 d under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In our conditions, all plants of both genotypes flowered at 17 dag \u00b11 d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "e2f3dd72-8e51-4847-aba0-14257a648ac6",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C16",
+      "claim": "The average hypocotyl stele diameter was ca. 0.3 mm in Col-0 and ca. 0.15 mm in Ler at 15 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the average hypocotyl stele diameter was ca. 0.3 mm in Col-0 and ca. 0.15 mm in Ler at 15 dag",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "a57487ff-ef97-423e-b3e7-0520527e7fa7",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C17",
+      "claim": "The radial expansion resulted in an average diameter of 1.6 mm in Col-0 and 1.1 mm in Ler at 35 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "the radial expansion resulted in an average diameter of 1.6 mm in Col-0 and 1.1 mm in Ler at 35 dag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "d5f2d9bc-e2aa-48a8-8ab2-3f34aa23ade9",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C18",
+      "claim": "Relative xylem area increased from 12% to 29% in Col-0 between 15 dag and 35 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, relative xylem area increased from 12% to 29% in Col-0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "f59da697-2c42-4890-8997-4e101a5efa89",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C19",
+      "claim": "Relative xylem area increased from 31% to 47% in Ler between 15 dag and 35 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "and from 31% to 47% in Ler",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "1bd2611a-25a5-4dff-9955-fb4b44c7b0de",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C20",
+      "claim": "The segmentation pipeline performed at more than 99% accuracy (i.e., less than 1% of mis-segmented cells).",
+      "claim_type": "EXPLICIT",
+      "source": "The pipeline is fully automated and robust and typically performed at more than 99% accuracy (i.e., less than 1% of mis-segmented cells) across the scale of images",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1F showing the relationship between mis-segmented cells and total cell number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "20befb38-27c1-465c-87da-f3cfe0f43a16",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C21",
+      "claim": "Overall median cell number at 15 dag was 883 for Col-0 and 260 for Ler.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall median cell number at 15 dag was 883 for Col-0 and 260 for Ler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the segmentation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ed300dd2-3b21-4fee-a712-2a7d2700561e",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C22",
+      "claim": "At 35 dag, median cell number had increased to 18'124 and 11'026 for Col-0 and Ler, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At 35 dag, it had increased to 18'124 and 11'026, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the segmentation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "73bb6293-2980-4398-995c-070e79b5198e",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C23",
+      "claim": "Col-0 showed higher overall secondary growth but Ler showed higher relative secondary growth (ca. 42-fold vs ca. 21-fold increase in cell number).",
+      "claim_type": "EXPLICIT",
+      "source": "indicating higher overall secondary growth in Col-0, but higher relative secondary growth in Ler (i.e., a ca. 42-fold vs a ca. 21-fold increase in cell number).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cell number data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "0e7fc535-daa8-42b8-8f6b-4de8e1ea1e32",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C24",
+      "claim": "16 cellular descriptors representing geometric characteristics of cell shape and relative cell position were computed.",
+      "claim_type": "EXPLICIT",
+      "source": "we advanced towards our goal of a full cellular resolution analysis by computing 16 cellular descriptors that represent the geometric characteristics of cell shape and relative cell position",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and detailed in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "3a98f8fa-c49f-49a1-ac70-d595ae511c5d",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C25",
+      "claim": "The training set for machine learning comprised 3'144 manually labeled cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The training set was a subset of our data that comprised a total of 3'144 manually labeled cells, dispatched into two sections per time point and genotype",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the training data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "71f84f80-d37f-4d4d-ba7d-37ac7ed1b599",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C26",
+      "claim": "Five distinct cell type categories could be classified and quantified across all sections and time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all sections and time points, a common set of five distinct cell type categories (Supplementary file 1D) could be classified and quantified, that is (i) xylem vessels and parenchymatic cells, (ii) xylem fibers, (iii) cambial cells, (iv) phloem bundle cells (companion cells and sieve elements) and (v) parenchymatic phloem cells (including any of the rare phloem fibers)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "bdf583c7-c23b-49bf-b35f-2b130ccae545",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C27",
+      "claim": "The morphology- and position-based approach identified cells with an average accuracy of 88% and a median accuracy of 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "For these categories, our purely morphology- and position-based approach identified cells with an average accuracy of 88% and a median accuracy of 95% across the n = 50 cell type category X time point X genotype matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the classification performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "d61cc021-6009-4b41-87cd-6260bddbc5a7",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C28",
+      "claim": "Xylem area expansion rate was nearly equal in both Col-0 and Ler genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, xylem area expansion rate was nearly equal in both genotypes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and can be observed in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8d7878d2-407d-49c6-b1fd-acaec258e214",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C29",
+      "claim": "The number of xylem cells and the xylem cell proliferation rate were close in both Col-0 and Ler genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of cell proliferation confirmed that the number of xylem cells and the xylem cell proliferation rate were close in both genotypes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6427422a-7063-410a-bc47-0100071134ad",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C30",
+      "claim": "The total number of cells in Ler was ca. twofold lower than in Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "however the total number of cells in Ler was ca. twofold lower than in Col-0",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "fb419b55-ca9e-4b0b-8893-c296512495e7",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C31",
+      "claim": "The phloem proliferation rate was more than twofold lower in Ler compared to Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the phloem proliferation rate was more than twofold lower in Ler",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "c7484daf-cc1e-42a2-aa30-e0aa23e8c83a",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C32",
+      "claim": "Phloem cell number stagnated between 30 and 35 dag in Ler.",
+      "claim_type": "EXPLICIT",
+      "source": "with stagnation in phloem cell number between 30 and 35 dag",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6496dd76-6886-4adf-9463-d3fef4f3e10b",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C33",
+      "claim": "A plateau in cambial growth combined with stagnating phloem proliferation is responsible for overall reduced radial growth but relatively increased xylem expansion in Ler.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results suggest that a plateau in cambial growth combined with stagnating phloem proliferation is responsible for overall reduced radial growth but relatively increased xylem expansion in Ler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "521d2697-5fff-423d-b8eb-59af97de7f9e",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C34",
+      "claim": "No distinguishable vascular organization of cell orientation was yet built up at 15 dag in Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "the incline angle was uniformly distributed at 15 dag in Col-0 (Hartigans' dip test p>10\u22123), meaning that no distinguishable vascular organization of cell orientation was yet built up.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text based on statistical analysis and supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ebccdfec-ab97-4394-976f-446caced268f",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C35",
+      "claim": "A discernable bimodal distribution of incline angles emerged at 30 dag in Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "At 30 dag, a second peak towards higher values of incline arose, giving shape to a discernable bimodal distribution (Hartigans' dip test p<2.2 \u00d7 10\u22126)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text based on statistical analysis and supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "e2d03309-8ccf-44d6-9bc7-97d5e0f1fb90",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C36",
+      "claim": "Sharp bimodal-shaped density curves at later time points in Ler supported the coexistence of two populations of cells, a mostly radially and a mostly orthoradially oriented one.",
+      "claim_type": "EXPLICIT",
+      "source": "At the later time points, sharp bimodal-shaped density curves supported the coexistence of two populations of cells, a mostly radially and a mostly orthoradially oriented one (Hartigans' dip test p<2.2 \u00d7 10\u22126), similar to Col-0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text based on statistical analysis and supported by Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "a6c331ce-cd5b-40ac-b061-5cbc1a1c4e30",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C37",
+      "claim": "Practically no post-cambial divisions were observed in the xylem area.",
+      "claim_type": "EXPLICIT",
+      "source": "In the xylem area, practically no post-cambial divisions were observed (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "c5dedafd-d7e0-4931-ab2d-d7df94f8c5e4",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C38",
+      "claim": "Radial cell files in xylem were generally continuous with the adjacent cambial files.",
+      "claim_type": "EXPLICIT",
+      "source": "and radial cell files were generally continuous with the adjacent cambial files.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on visual inspection of cross sections as stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "85930532-86e5-452e-bafb-32a4174dc691",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C39",
+      "claim": "Cellular growth in xylem resulted in a switch from orthoradial to radial orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Following such cell files also suggested that cellular growth led to a switch in xylem cell incline angle orientation. Whereas xylem cells that emerged from the cambium still retained the orthoradial orientation, cellular growth eventually resulted in a switch towards a radial orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on visual inspection and analysis of cell files.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "cc9ac477-48a5-4d25-8b27-4207c36adea8",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C40",
+      "claim": "Practically no cell divisions, neither anticlinal nor periclinal, were observed in phloem parenchyma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the xylem however, phloem cells were typically in continuity with the corresponding cambial cell files, and practically no cell divisions, neither anticlinal nor periclinal, were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on visual inspection of cross sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b811e8ef-29fb-4a9a-a5f2-7ee56264c8f2",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C41",
+      "claim": "Numerous post-cambial divisions, both anticlinal and periclinal, were observed in cell files that ended up in vascular bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "The exceptions to this were cell files that ended up in vascular bundles. In these, numerous post-cambial divisions could be observed, both in the anticlinal and periclinal orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on visual inspection of cross sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "0b32f9c5-5289-4cf1-851b-5fa240cac019",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C42",
+      "claim": "The vast majority of cell divisions was observed in the cambium.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as expected the vast majority of cell divisions was observed in the cambium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on visual inspection of cross sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "155b3610-6489-4b6f-8a5e-678d931bb5e7",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C43",
+      "claim": "The radial expansion of hypocotyls is mostly driven by cambial activity and very little by post-cambial cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the radial expansion of hypocotyls appeared to be mostly driven by cambial activity and very little by post-cambial cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of cell division patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "daa4c83a-0998-4e25-825b-a31b2313d26e",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C44",
+      "claim": "Phloem pole formation displays a precise periodicity with a constant arc distance of ca. 62 pixels between phloem poles.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant single peak indicates a constant arc distance of ca. 62 pixel between the phloem poles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "eddc86a9-f304-4a96-bf4a-9f22c3afe27b",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C45",
+      "claim": "A constant arc interspace distance for phloem pole formation was found along the developmental time series with a concomitant decrease in the interspace angle due to overall secondary growth.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a constant arc interspace distance for phloem pole formation along the developmental time series with a concomitant decrease in the interspace angle due to the overall secondary growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "03866718-c89e-4cc6-9ad9-310802c402e4",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C46",
+      "claim": "A reaction-diffusion model with a growing boundary would be consistent with the phloem pole patterning results.",
+      "claim_type": "EXPLICIT",
+      "source": "A reaction-diffusion model with a growing boundary (i.e., representing the expanding xylem area) would be consistent with these results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "1ea1ea10-0cbb-45a5-88eb-5796fd9dbe8d",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C47",
+      "claim": "The growing xylem area might exert a compression force on surrounding cambial and parenchymal cells, forcing them into tangential anisotropic cell elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this phenomenon could be tissue mechanics. The growing xylem area might exert a compression force on surrounding cambial and parenchymal cells, forcing them into tangential anisotropic cell elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation for observed phenomena.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "33600bac-6379-4d57-8bf7-bbddb1808338",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C48",
+      "claim": "A receptor-like kinase\u2014peptide ligand pair is involved in cambial polarity and interacts with hormone signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, polarity of the cambium to produce xylem to the inside and phloem to the outside is an inherent feature of secondary growth. A receptor-like kinase\u2014peptide ligand pair is involved in this process and interacts with hormone signaling pathways",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Hirakawa et al., 2008, 2010 and Etchells et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6533d201-d086-40be-b52d-4baf2c10c139",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C49",
+      "claim": "The phenotypic penetrance of cambial polarity mutants is background-dependent, with stronger effects in Ler than in Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the phenotypic penetrance of the respective mutants is background-dependent, with stronger effects in Ler than in Col-0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Etchells et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "a64486d7-4259-4a21-b8c9-0014168a5511",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C50",
+      "claim": "Phloem production in Ler ceases before xylem production.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather it appears that phloem production in Ler ceases before xylem production and contributes to the divergent growth dynamics in the two genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "49c6b6ca-959f-4563-8c35-51f8096b464b",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C51",
+      "claim": "The severely reduced overall cell production in Ler as compared to Col-0 can be mainly attributed to reduced phloem and cambium cell number.",
+      "claim_type": "EXPLICIT",
+      "source": "The severely reduced overall cell production in Ler as compared to Col-0 can be mainly attributed to reduced phloem and cambium cell number",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the quantitative data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "78f0c485-369c-4b49-bb09-8bb5cdac6a3e",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C52",
+      "claim": "Initial secondary growth appears to be particularly slow in Ler as indicated by more than threefold difference in cell number at 15 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the nearly 50% reduction in overall cell number does not mean that growth is uniformly slower in Ler. Rather, initial secondary growth appears to be particularly slow in Ler as indicated by more than threefold difference in cell number at 15 dag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of cell number data between genotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "4fd8904a-fdcb-4fe8-a8f1-224c38d56cea",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C53",
+      "claim": "Cell production in Ler accelerates between 15 dag and 25 dag, surpassing Col-0 in relative terms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by an acceleration of cell production that surpasses Col-0 in relative terms between 15 dag and 25 dag",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of cell proliferation rates over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "196f42c4-3090-4693-bed4-0b74400d0c60",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C54",
+      "claim": "Both Col-0 and Ler reach overall similar end points in secondary growth as revealed by principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is also evident from the principal component analysis, in which both Col-0 and Ler reach overall similar end points.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "2e0d6ad9-49cd-4f44-b8e7-4d464ab440d6",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C55",
+      "claim": "The analysis along a series of time points revealed highly divergent secondary growth dynamics in the genotypes that would not have been evident from a comparison of end points.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our analysis along a series of time points has revealed highly divergent secondary growth dynamics in the genotypes that would not have been evident from a comparison of end points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the value of the time-series approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6e5bc020-fea2-4e21-bc99-8d173cddd759",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C56",
+      "claim": "The watershed algorithm with automatic seeding was used to identify cell boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "A variant watershed algorithm with automatic seeding (http://bigwww.epfl.ch/sage/soft/watershed) was used to identify the cell boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "920a2978-f7f9-4671-8920-2035f12f52b2",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C57",
+      "claim": "Support vector machine (SVM) with C-classification and radial basis function (RBF) kernel was used for cell type classification.",
+      "claim_type": "EXPLICIT",
+      "source": "One classifier was built per genotype and per time point (Supplementary file 1C) using the C-classification with a radial basis function (RBF) kernel of the support vector machine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the machine learning method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6cd3c5ff-982b-4ec8-8db1-3fba15fb97e7",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C58",
+      "claim": "Plants were grown in soil in a 16 hr light\u20138 hr dark cycle at 22\u00b0C with 150 \u00b5E light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants were grown in soil in a 16 hr light\u20138 hr dark cycle at 22\u00b0C with 150 \u00b5E light intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the growth conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "e884ca6f-2577-49f9-a6c4-b11d8da17ba6",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C59",
+      "claim": "Embedding was performed using plastic resin, which proved to be the only robust method to acquire 3 \u00b5m thin cross-sections while conserving the cellular structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Embedding was performed using plastic resin, which proved to be the only robust method to acquire 3 \u00b5m thin cross-sections while conserving the cellular structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological approach and its justification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "c736d6f5-ad3e-41ee-a773-5899a18539a8",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C60",
+      "claim": "Individual cross section images were assembled from a minimum of 9 (3 \u00d7 3) up to 144 (12 \u00d7 12) panels.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual cross section images subjected to segmentation were thus assembled from a minimum of 9 (3 \u00d7 3) up to 144 (12 \u00d7 12) panels",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "3e288797-f805-4419-8ecb-c784a8f606c9",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C61",
+      "claim": "CPU time scaled exponentially with image size, taking ca. 8 min. for a 15 dag sample but ca. 1000 min for a 35 dag sample.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because CPU time scaled exponentially with image size, taking ca. 8 min. for a 15 dag sample but ca. 1000 min for a 35 dag sample, computation eventually became limiting for our endeavor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about computational performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "5465d97a-5780-48f1-b680-3cb86160da28",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C62",
+      "claim": "The analysis was restricted to ca. 20 selected cross sections per genotype and time point (i.e., 208 cross sections in total, requiring ca. 800 hr of total CPU time).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we restricted our analysis to ca. 20 selected cross sections per genotype and time point (i.e., 208 cross sections in total, requiring ca. 800 hr of total CPU time)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6a44ae27-4639-45a0-9610-03337554fa99",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C63",
+      "claim": "The patterning of phloem pole position is already laid down in the cambium.",
+      "claim_type": "IMPLICIT",
+      "source": "Since there appeared to be no cessation of cell division in the cell files connecting the cambium and the vascular bundles, the data suggested that the patterning of phloem pole position might already be laid down in the cambium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of continuous cell division in files connecting cambium to vascular bundles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "e453d5a5-73cc-459e-b73d-4144102d450a",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C64",
+      "claim": "The best combination of descriptors for cell type classification varied with the time point and genotype analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Feature selection is a well-known pivotal issue in machine learning, and indeed the best combination of descriptors was critical in automated cell type classification and varied with the time point and genotype analyzed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the machine learning approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6bfe643a-90b4-4282-9193-1ba2a81d83f5",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C65",
+      "claim": "Cell type-specific position can vary with the age of the section.",
+      "claim_type": "EXPLICIT",
+      "source": "mainly because cell type-specific position can vary with the age of the section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for why feature selection varied.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6ab0f915-484b-4406-9d3c-722c0de0f447",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C66",
+      "claim": "Xylem vessels and phloem parenchyma cells increasingly resemble each other in their outlines as secondary growth proceeds.",
+      "claim_type": "EXPLICIT",
+      "source": "This was particularly prevalent at the later stages of development and could be pinpointed to a frequent confusion between xylem vessels and phloem parenchyma cells, which increasingly resemble each other in their outlines as secondary growth proceeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for classification difficulties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "e3acdc5e-dcdb-4b9c-8362-7b87ac08e614",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C67",
+      "claim": "The uniformity in plant cell shape hampered the identification of certain cell states by the machine learning approach.",
+      "claim_type": "EXPLICIT",
+      "source": "To some degree, this uniformity in cell shape hampered the identification of certain cell states by our machine learning approach, for instance the direct identification of dividing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ce5a3b14-9eae-4dec-a356-e93a5ccd829d",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C68",
+      "claim": "Adding tissue-related features such as cell connectivity and cell wall thickness might overcome obstacles in cell type classification and greatly increase performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding tissue-related features, such as cell connectivity (i.e., the number of neighboring cells), and improving the segmentation algorithm such that cell wall thickness could be incorporated into the analyses might overcome these obstacles and greatly increase performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a suggestion for future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ea24ec3a-74b7-47c6-89df-d4ff1d211ec5",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C69",
+      "claim": "The approach should be universally applicable for any tissue or organ from which cell outlines can be segmented after imaging and for which a reference point can be defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter should be possible for any tissue or organ from which cell outlines can be segmented after imaging and for which a reference point can be defined, for example (partial) sections from tree trunks or confocal images of root meristems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a claim about the generalizability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ad3126e7-6840-4446-a44c-9c4974b5a23a",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C70",
+      "claim": "The growing xylem area might exert a compression force that is perceived and conveyed into cellular behavior through katanins and dynamic reorientation of microtubules.",
+      "claim_type": "IMPLICIT",
+      "source": "How such mechanical stress is perceived and conveyed into cellular behavior is largely enigmatic and an emerging hot topic in plant biology, where first studies on shoot apical meristem formation have implicated katanins in the dynamic reorientation of microtubules perpendicular to stress direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from cited work on mechanical stress perception with a citation to Uyttewaal et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "1d6dde08-0c0f-410a-9c80-2b5ca0ac2863",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C71",
+      "claim": "A gradual increase and arrangement of cambial cells together with orthoradial cellular organization of surrounding tissues appeared to be a prerequisite for proper xylem development and relative xylem expansion around 20\u201325 dag.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate a gradual increase and arrangement of cambial cells, which together with orthoradial cellular organization of the surrounding tissues appeared to be a prerequisite for proper xylem development and relative xylem expansion around 20\u201325 dag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the spatio-temporal analysis of cell incline angles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "07738793-7e62-4202-8122-d0423e46a060",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C72",
+      "claim": "The spatio-temporal dynamics of overall incline captured the distinct phases of secondary growth progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the spatio-temporal dynamics of the overall incline (i.e., covering the whole section cell content at a given time point) captured the distinct phases of secondary growth progression described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the incline angle analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "900809a5-f0ce-4454-a256-5881f8b80c95",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C73",
+      "claim": "Mostly radial orientation could be an indicator for the prevalence of anticlinal division planes, whereas mostly orthoradial orientations could be an indicator for the prevalence of periclinal ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of inclines also had possible implications for the orientation of cell divisions, in the sense that mostly radial orientation could be an indicator for the prevalence of anticlinal division planes, whereas mostly orthoradial orientations could be an indicator for the prevalence of periclinal ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible interpretation of the incline data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "91c3da29-361f-457b-a116-4037f92b739f",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C74",
+      "claim": "Visual inspection of cross sections suggested that incline orientation is not a direct indicator of division plane orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of cross sections suggested that this is not the case however",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on visual inspection of sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b4627499-79d3-42f3-a232-29d049996df2",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C75",
+      "claim": "A remarkable rarity of post-cambial cell divisions was observed through visual inspection.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of cross sections suggested that this is not the case however, also revealing a remarkable rarity of post-cambial cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on visual inspection of sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "107a11a8-7f19-40d3-a26d-be133ebfa0fa",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C76",
+      "claim": "Cellular growth in xylem led to a switch in cell incline angle orientation from orthoradial to radial.",
+      "claim_type": "EXPLICIT",
+      "source": "Following such cell files also suggested that cellular growth led to a switch in xylem cell incline angle orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from following cell files in cross sections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "83f4891e-641c-44fa-b9a4-4be52e3210d1",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C77",
+      "claim": "Such switching in incline angle orientation was not observed in the phloem.",
+      "claim_type": "EXPLICIT",
+      "source": "Such switching was not observed in the phloem, consistent with the prevalence of orthoradial inclines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on observations of phloem cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "afcc653b-4f55-4975-b9c5-d2eb0723f620",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C78",
+      "claim": "Most cambial cell divisions occurred in a perfect periclinal orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mostly, they occurred in a perfect periclinal orientation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on visual inspection of cambial divisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "f08343fb-76ea-4479-8e6b-fdce024b531f",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C79",
+      "claim": "Numerous interspersed anticlinal divisions in the cambium are necessary to keep up with overall radial expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "but we also observed numerous interspersed anticlinal divisions that are necessary to keep up with overall radial expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on observations and functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ff09a002-81e5-42c2-9aa7-8bed78d7948d",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C80",
+      "claim": "Local production of mobile ligand and activation of its receptor at a distance are potential candidates for a reaction-diffusion mechanism of phloem pole patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Local production of the above-mentioned mobile ligand and activation of its receptor at a distance are potential candidates for such a mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "aeddaa29-ccc3-4607-98fe-ce74bfeb10b3",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C81",
+      "claim": "Patterning cues from apical sources might direct phloem pole formation, for instance to coordinate it with phyllotaxy.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, patterning cues from apical sources might direct phloem pole formation, for instance to coordinate it with phyllotaxy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an alternative speculative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "f8578573-10e0-401c-a6db-d9c6d6790569",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C82",
+      "claim": "Application of quantitative histology approach to complementary stem sections could present one way to explore phloem patterning mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of our quantitative histology approach to complementary stem sections could present one way to explore these possibilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "02264c6b-80fd-481a-b2c7-2633ee3043c8",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C83",
+      "claim": "Secondary growth is a major developmental process in dicotyledons, including herbaceous plants such as Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary growth is a major developmental process in dicotyledons, including herbaceaous plants such as Arabidopsis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Chaffey et al., 2002; Sibout et al., 2008; Elo et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "d0309fa4-4c90-426d-b5dd-5298318f688a",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C84",
+      "claim": "Secondary growth is comparatively an under-researched trait.",
+      "claim_type": "EXPLICIT",
+      "source": "however, it is comparatively an under-researched trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "851e57e7-6b29-4cb2-86cc-664f8aafdda8",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C85",
+      "claim": "A comprehensive description of secondary growth dynamics at the cellular level is still missing.",
+      "claim_type": "EXPLICIT",
+      "source": "in part to the relatively big scale of the process. Both complications also contribute to the fact that a comprehensive description of secondary growth dynamics at the cellular level is still missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "102fb19a-e327-4479-8355-721a83905541",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C86",
+      "claim": "The Arabidopsis hypocotyl poses various advantages as a secondary growth system as opposed to Arabidopsis stems, most notably the uncoupling of elongation growth and secondary growth.",
+      "claim_type": "EXPLICIT",
+      "source": "As a secondary growth system, we chose the Arabidopsis hypocotyl, which has been shown previously to pose various advantages as opposed to Arabidopsis stems, most notably the uncoupling of elongation growth and secondary growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Sibout et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "39bfaa6e-8a27-4564-962e-fa6af7fa2958",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C87",
+      "claim": "A high-throughput approach was necessary to obtain statistically solid data for secondary growth analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "While a high-throughput approach was necessary to obtain statistically solid data, high-resolution imaging was required for reliable cellular level analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a justification for the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8fa96792-b866-43a2-b4d1-692d5a635d4a",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C88",
+      "claim": "High-resolution imaging was required for reliable cellular level analyses of secondary growth.",
+      "claim_type": "EXPLICIT",
+      "source": "While a high-throughput approach was necessary to obtain statistically solid data, high-resolution imaging was required for reliable cellular level analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a justification for the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "798edb73-0020-406d-bf50-b84558e060d1",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C89",
+      "claim": "Quantitative histology combined with machine learning was the only realistic option to achieve both high-throughput and high-resolution analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A novel type of global approach, that is, quantitative histology combined with machine learning, was the only realistic option to achieve both goals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a justification for the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "df5a8106-5ede-4af8-aaea-f730a6a38f9d",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C90",
+      "claim": "The Support Vector Machine (SVM) method has proven its efficiency in a broad range of life science applications.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we used the Support Vector Machine (SVM) method, because it had already proven its efficiency in a broad range of life science applications",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Noble, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "6e9a1c6a-d23c-40cc-86c9-cb2b81aa0a74",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C91",
+      "claim": "Plant cells are encapsulated by rigid cell walls that resist the internal turgor pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The factors that limited our approach were to some degree related to the properties of plant cells, notably that they are encapsulated by rigid cell walls that resist the internal turgor pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general property of plant cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "62f33458-2abe-4218-a7ab-82b6eedf1570",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C92",
+      "claim": "Cellular geometry in plants is shaped by the material properties of the walls and by the permanent force of turgor pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Their cellular geometry is therefore not only shaped by the material properties of the walls, but also by the permanent force of turgor pressure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for plant cell shape characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b9e0a428-1ed3-4396-a365-3fbd338050c9",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C93",
+      "claim": "There is reduced variation of cell shape in plants as compared to animals.",
+      "claim_type": "EXPLICIT",
+      "source": "manifesting in the reduced variation of cell shape in plants as compared to animals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Theriault et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b7c58d6e-27e1-44b3-b33a-e777c28503a7",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C94",
+      "claim": "Binarization of images using an adaptive Gaussian filter greatly accelerated the segmentation procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "In part, this could be off set by binarization of the images using an adaptive Gaussian filter, which greatly accelerated the segmentation procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "42d3a43f-3e56-4f4d-80a7-b2f41844d3f8",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "claim_id": "C95",
+      "claim": "Morphological operations on binarized images kept segmentation accuracy high while automating the task.",
+      "claim_type": "EXPLICIT",
+      "source": "We could compensate an associated decrease in segmentation quality (because watershed segmentation is more accurate on gray scale images) by effectuating morphological operations on the binarized images, thereby keeping segmentation accuracy high while automating the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological solution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "69295bbe-8f92-4f49-b239-31b56d33192f",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed an automated quantitative histology approach combining high-resolution imaging, watershed segmentation (>99% accuracy), and machine learning (SVM) to classify five cell types with 88% average accuracy and 95% median accuracy across developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20, C24-C27, C56-C57, C59-C62, C64-C68, C87-C90, C94-C95 collectively demonstrate successful development and validation of the automated pipeline. The segmentation accuracy (>99%, C20), classification performance (88% average, 95% median, C27), and methodological details are well-documented with appropriate validation. The approach addresses stated requirements for high-throughput and high-resolution analysis (C87-C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Col-0 and Ler exhibit divergent secondary growth dynamics: Col-0 shows higher absolute growth (0.3 to 1.6 mm diameter, 883 to 18,124 cells) while Ler shows higher relative growth (0.15 to 1.1 mm, 260 to 11,026 cells, 42-fold vs 21-fold increase). Xylem area increased from 12% to 29% in Col-0 and 31% to 47% in Ler.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19, C21-C23 provide consistent quantitative measurements of hypocotyl diameter, cell numbers, and tissue proportions across developmental stages. The data clearly demonstrate genotype-specific differences in both absolute and relative growth rates, with appropriate sample sizes (ca. 20 sections per time point, C62) providing statistical robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b9060138-6347-4169-80e3-1009ba83adec",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Reduced phloem proliferation (>2-fold lower rate in Ler, with stagnation at 30-35 dag) combined with similar xylem proliferation rates between genotypes explains the higher xylem occupancy in Ler. Time-series analysis reveals non-uniform growth dynamics with initial slow growth in Ler followed by acceleration, despite similar endpoints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33, C50-C55 provide mechanistic explanation for observed phenotypic differences through cell-type-specific proliferation analysis. The data demonstrate that differential phloem production, not xylem production, drives genotype differences (C31-C33, C50-C51). Time-series analysis (C52-C55) reveals dynamics not evident from endpoint comparisons, validating the approach. Principal component analysis (C54) supports convergent endpoints despite divergent trajectories.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "52c372e9-a068-43df-9020-be48b0aa0dbc",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell incline angle analysis reveals temporal progression of vascular organization: uniform distribution at 15 dag in Col-0 (p>10\u207b\u00b3) transitions to bimodal distribution by 30 dag (p<2.2\u00d710\u207b\u2076), indicating establishment of radial and orthoradial cell populations. Gradual cambial arrangement with orthoradial organization appears prerequisite for xylem development at 20-25 dag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C71-C72 demonstrate statistically validated temporal changes in cell orientation using Hartigans' dip test. The progression from uniform to bimodal distribution is quantitatively supported and consistent across genotypes. The interpretation linking cellular organization to developmental phases (C71-C72) is reasonably supported by the spatio-temporal data, though causal relationships remain inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "d401f17f-05b5-4e2e-b868-5308fba23a7e",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Visual inspection reveals that radial expansion is driven primarily by cambial divisions (mostly periclinal with interspersed anticlinal) with minimal post-cambial divisions in xylem and phloem parenchyma. Exception: vascular bundles show numerous post-cambial divisions. Xylem cells switch from orthoradial to radial orientation during growth, while phloem maintains orthoradial orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43, C73-C79 are based on visual inspection of cross-sections, which is appropriate for assessing division patterns and cell file continuity. The observations are internally consistent and supported by Figure 5\u2014figure supplement 1 (C37). However, the analysis relies on qualitative assessment rather than quantitative metrics. The conclusion that cambial activity drives expansion (C43) is well-supported by the pattern of observations, though the initial hypothesis linking incline to division plane (C73) was refuted by inspection (C74).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "171dd24e-8948-4259-8f1a-fe4ac2867ebb",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Phloem poles form with constant arc distance (ca. 62 pixels) along developmental time series with decreasing interspace angle due to radial expansion. Patterning appears established in cambium based on continuous cell division in files connecting cambium to vascular bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44-C45, C63 demonstrate equidistant phloem pole formation using automated Bayesian analysis (C44) and GUS staining visualization (Figure 6). The constant arc distance with decreasing angle is consistent with growth on an expanding boundary. The inference that patterning originates in cambium (C63) is reasonably supported by observation of continuous divisions in connecting cell files, though direct evidence of cambial patterning mechanisms is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b69fd335-cb6b-4ccf-a661-1fd57240494b",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose potential mechanisms for observed patterns: reaction-diffusion model for phloem pole spacing, mechanical compression for cell orientation, and possible apical patterning cues, but acknowledge these remain speculative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C47, C70, C80-C82 are explicitly speculative (evidence_type: SPECULATION). While the proposed mechanisms (reaction-diffusion, mechanical stress, apical cues) are plausible interpretations consistent with the data, no experimental validation is provided. The authors appropriately present these as hypotheses requiring future investigation (C82), not as supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "741c3530-73b9-4a9c-b22b-c3981351ea19",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study examines secondary growth in Arabidopsis hypocotyls across five time points (15-35 dag) in Col-0 and Ler genotypes under controlled conditions, building on prior work identifying two growth phases and genotype-specific differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15, C58 establish the experimental framework based on prior literature (C8, C11-C13 with appropriate citations) and describe the experimental design. Growth conditions (C58) and flowering time (C15) are clearly specified. The choice of time points (C14) is justified based on cambium establishment and growth cessation. This provides appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript provides background on Arabidopsis as a model system, secondary growth biology, and plant cell properties, establishing the biological context and rationale for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C7, C83-C86, C91-C93 provide standard background information about Arabidopsis biology, secondary growth, and plant cell properties. These are appropriately cited (C5-C6, C8, C83, C86, C93) or represent established knowledge (C1, C4, C7, C91-C92). The identification of gaps in knowledge (C84-C85) appropriately motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "87e6cb23-fe9a-49bc-97b4-368a70395ea2",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work identified receptor-ligand pairs involved in cambial polarity with background-dependent penetrance (stronger in Ler than Col-0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 accurately cite prior work (Hirakawa et al., 2008, 2010; Etchells et al., 2012, 2013) on molecular mechanisms of cambial polarity and genotype-specific effects. These provide relevant context for interpreting the observed genotype differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "0f88b89e-7c09-42a5-b1b5-434d8524ffcc",
+      "content_id": "9880d794-66bb-4dff-bfb3-4af37f9f2613",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors claim the approach should be universally applicable to any tissue where cell outlines can be segmented and a reference point defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is speculative (evidence_type: SPECULATION) about generalizability. While the approach is theoretically extensible, no validation on other tissue types is provided. The claim is reasonable given the method's design principles, but requires empirical demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "d99c858b-f77c-498c-82d8-f516dc649f37",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed an automated quantitative histology pipeline combining high-resolution imaging, watershed segmentation (>99% accuracy), and machine learning to establish a cellular resolution atlas of Arabidopsis hypocotyl secondary growth. The method required plastic resin embedding, assembled images from up to 144 panels, and used binarization with adaptive Gaussian filtering to accelerate segmentation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers agree that 'this study describes a robust tool that represents a broadly useful addition to existing methods.' The reviewers did not challenge the technical performance of the segmentation pipeline or the methodological approach, though they requested clarification on broader applicability (point 1) and noted the method is 'mainly technically oriented.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The machine learning approach using Support Vector Machine with 16 cellular descriptors and 3,144 manually labeled training cells achieved automated cell type classification of five distinct categories with 88% average accuracy and 95% median accuracy. Feature selection varied by time point and genotype, and classification was challenged by morphological similarity between certain cell types at later developmental stages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer concern (point 2) states 'The cell type detection has an accuracy of 88%, which seems relatively low' and notes 'The key criteria used by the classifier to distinguish between the cell types are not very clear.' The reviewer expresses concern that '12% miss-classification could have quite some effect on the conclusions drawn in the paper,' indicating uncertainty about whether the classification accuracy is sufficient.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "e7b24bec-ef03-4030-b8f1-c058eba767e9",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Quantitative analysis revealed divergent secondary growth dynamics between Col-0 and Ler genotypes across five time points (15-35 dag). Col-0 showed higher overall growth (21-fold cell increase) while Ler showed higher relative growth (42-fold increase). Xylem expansion rates were similar between genotypes, but Ler exhibited twofold lower phloem proliferation with stagnation at 30-35 dag. Time-series analysis revealed dynamics not evident from endpoint comparisons alone.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raised multiple concerns about the biological interpretation (point 5): 'The paper contains a long description regarding the differences between the two genetic backgrounds...but no context is given how this information can be useful for understanding Arabidopsis development' and 'the paper suffers from giving many precise measurements without inserting them in a proper context.' Additionally, point 3 questions the PCA analysis, with one reviewer unable to reproduce Figure 3 results and requesting clarification on what data was used and what explains the 94% variation in PC1.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Analysis of cell incline angles revealed spatio-temporal dynamics of vascular organization during secondary growth. At 15 dag in Col-0, incline angles were uniformly distributed, but bimodal distributions emerged by 30 dag indicating two cell populations (radially and orthoradially oriented). Xylem cells switched from orthoradial to radial orientation during cellular growth, while phloem cells maintained orthoradial orientation. These dynamics captured distinct phases of secondary growth progression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer concern (point 4) specifically questions the incline angle analysis: 'what happens when a cell is round? One would expect a highly randomized distribution of incline angles in that case. Please indicate how this problem was addressed.' This indicates uncertainty about the validity of the incline angle measurements and interpretations, particularly for cells without clear elongation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "88542d35-d9ff-4a90-9e37-31deca96d0d1",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Visual inspection of cross sections revealed that radial expansion is driven primarily by cambial activity with minimal post-cambial divisions. Xylem and phloem parenchyma showed practically no post-cambial divisions and maintained continuity with cambial cell files. Exceptions were vascular bundle cell files showing numerous post-cambial divisions. Cambial divisions were mostly periclinal with interspersed anticlinal divisions necessary for radial expansion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these observations about cell division patterns. While they noted the paper 'provide[s] limited further biological insight' (point 1) and suggested additional analyses like 'deriv[ing] the relative contribution of cell expansion and cell proliferation' (point 5), they did not question the validity of the visual inspection findings themselves.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "19478b3f-cac1-435c-a294-5a4365620376",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Phloem pole formation displays precise periodicity with constant arc distance (ca. 62 pixels) between poles along the developmental time series, with concomitant decrease in interspace angle due to overall secondary growth. The patterning of phloem pole position appears to be laid down in the cambium based on continuous cell division in files connecting cambium to vascular bundles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the phloem pole patterning findings. While they noted the paper provides 'limited further biological insight' overall (point 1), they specifically accepted this as an example finding from the cellular resolution atlas without questioning its validity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b5025e64-6279-463d-8594-9281fe6b6a7c",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors claim the quantitative histology approach should be universally applicable to any tissue or organ from which cell outlines can be segmented and for which a reference point can be defined, including tree trunk sections or root meristem confocal images.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer concern (point 1) directly addresses this claim: 'While the method is well adapted to the biological system analysed here, it would be important to have an idea of the applicability to other organs and/or species. Would, for example, the pipeline function as well in the case of cambium formation in poplar or root cell differentiation in maize?' The reviewers request that authors 'make clear what the wider applications are' to compensate for limited biological conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose speculative mechanisms for observed phenomena: a reaction-diffusion model with growing boundary could explain phloem pole patterning; mechanical compression from expanding xylem might force tangential cell elongation through katanin-mediated microtubule reorientation; and patterning could involve receptor-ligand pairs or apical cues coordinating with phyllotaxy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these speculative interpretations. While they noted the paper 'provide[s] limited further biological insight' (point 1) and requested clearer biological context (point 5), they did not object to the speculative mechanisms proposed, treating them as reasonable hypotheses rather than unsupported claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "0d7cc083-834d-4e9c-b0f7-e221058d9055",
+      "content_id": "9be20748-8d15-4860-aa36-1fe4963deeb9",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Computational analysis was limited by exponentially scaling CPU time (8 min for 15 dag samples vs 1000 min for 35 dag samples), restricting analysis to approximately 20 cross sections per genotype and time point (208 total sections, 800 hr total CPU time).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the computational limitations or the scope of analysis. They accepted these constraints as reasonable given the scale of the analysis, focusing their concerns instead on biological interpretation and methodological generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0bad8ecf-005b-4330-9fa3-caccefb3c0b0",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "1bd2611a-25a5-4dff-9955-fb4b44c7b0de",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "0e7fc535-daa8-42b8-8f6b-4de8e1ea1e32",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "3a98f8fa-c49f-49a1-ac70-d595ae511c5d",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "71f84f80-d37f-4d4d-ba7d-37ac7ed1b599",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "bdf583c7-c23b-49bf-b35f-2b130ccae545",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "6e5bc020-fea2-4e21-bc99-8d173cddd759",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "920a2978-f7f9-4671-8920-2035f12f52b2",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "e884ca6f-2577-49f9-a6c4-b11d8da17ba6",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "c736d6f5-ad3e-41ee-a773-5899a18539a8",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "3e288797-f805-4419-8ecb-c784a8f606c9",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "5465d97a-5780-48f1-b680-3cb86160da28",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "e453d5a5-73cc-459e-b73d-4144102d450a",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "6bfe643a-90b4-4282-9193-1ba2a81d83f5",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "6ab0f915-484b-4406-9d3c-722c0de0f447",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "e3acdc5e-dcdb-4b9c-8362-7b87ac08e614",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "ce5a3b14-9eae-4dec-a356-e93a5ccd829d",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "39bfaa6e-8a27-4564-962e-fa6af7fa2958",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "8fa96792-b866-43a2-b4d1-692d5a635d4a",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "798edb73-0020-406d-bf50-b84558e060d1",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "df5a8106-5ede-4af8-aaea-f730a6a38f9d",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "b7c58d6e-27e1-44b3-b33a-e777c28503a7",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "42d3a43f-3e56-4f4d-80a7-b2f41844d3f8",
+      "result_id": "69295bbe-8f92-4f49-b239-31b56d33192f"
+    },
+    {
+      "claim_id": "e2f3dd72-8e51-4847-aba0-14257a648ac6",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "a57487ff-ef97-423e-b3e7-0520527e7fa7",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "d5f2d9bc-e2aa-48a8-8ab2-3f34aa23ade9",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "f59da697-2c42-4890-8997-4e101a5efa89",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "20befb38-27c1-465c-87da-f3cfe0f43a16",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "ed300dd2-3b21-4fee-a712-2a7d2700561e",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "73bb6293-2980-4398-995c-070e79b5198e",
+      "result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816"
+    },
+    {
+      "claim_id": "d61cc021-6009-4b41-87cd-6260bddbc5a7",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "8d7878d2-407d-49c6-b1fd-acaec258e214",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "6427422a-7063-410a-bc47-0100071134ad",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "fb419b55-ca9e-4b0b-8893-c296512495e7",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "c7484daf-cc1e-42a2-aa30-e0aa23e8c83a",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "6496dd76-6886-4adf-9463-d3fef4f3e10b",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "a64486d7-4259-4a21-b8c9-0014168a5511",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "49c6b6ca-959f-4563-8c35-51f8096b464b",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "78f0c485-369c-4b49-bb09-8bb5cdac6a3e",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "4fd8904a-fdcb-4fe8-a8f1-224c38d56cea",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "196f42c4-3090-4693-bed4-0b74400d0c60",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "2e0d6ad9-49cd-4f44-b8e7-4d464ab440d6",
+      "result_id": "b9060138-6347-4169-80e3-1009ba83adec"
+    },
+    {
+      "claim_id": "521d2697-5fff-423d-b8eb-59af97de7f9e",
+      "result_id": "52c372e9-a068-43df-9020-be48b0aa0dbc"
+    },
+    {
+      "claim_id": "ebccdfec-ab97-4394-976f-446caced268f",
+      "result_id": "52c372e9-a068-43df-9020-be48b0aa0dbc"
+    },
+    {
+      "claim_id": "e2d03309-8ccf-44d6-9bc7-97d5e0f1fb90",
+      "result_id": "52c372e9-a068-43df-9020-be48b0aa0dbc"
+    },
+    {
+      "claim_id": "1d6dde08-0c0f-410a-9c80-2b5ca0ac2863",
+      "result_id": "52c372e9-a068-43df-9020-be48b0aa0dbc"
+    },
+    {
+      "claim_id": "07738793-7e62-4202-8122-d0423e46a060",
+      "result_id": "52c372e9-a068-43df-9020-be48b0aa0dbc"
+    },
+    {
+      "claim_id": "a6c331ce-cd5b-40ac-b061-5cbc1a1c4e30",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "c5dedafd-d7e0-4931-ab2d-d7df94f8c5e4",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "85930532-86e5-452e-bafb-32a4174dc691",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "cc9ac477-48a5-4d25-8b27-4207c36adea8",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "b811e8ef-29fb-4a9a-a5f2-7ee56264c8f2",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "0b32f9c5-5289-4cf1-851b-5fa240cac019",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "155b3610-6489-4b6f-8a5e-678d931bb5e7",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "900809a5-f0ce-4454-a256-5881f8b80c95",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "91c3da29-361f-457b-a116-4037f92b739f",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "b4627499-79d3-42f3-a232-29d049996df2",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "107a11a8-7f19-40d3-a26d-be133ebfa0fa",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "83f4891e-641c-44fa-b9a4-4be52e3210d1",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "afcc653b-4f55-4975-b9c5-d2eb0723f620",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "f08343fb-76ea-4479-8e6b-fdce024b531f",
+      "result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e"
+    },
+    {
+      "claim_id": "6618fe90-e4d7-4b2d-8e8e-2bb60b0ff158",
+      "result_id": "171dd24e-8948-4259-8f1a-fe4ac2867ebb"
+    },
+    {
+      "claim_id": "daa4c83a-0998-4e25-825b-a31b2313d26e",
+      "result_id": "171dd24e-8948-4259-8f1a-fe4ac2867ebb"
+    },
+    {
+      "claim_id": "eddc86a9-f304-4a96-bf4a-9f22c3afe27b",
+      "result_id": "171dd24e-8948-4259-8f1a-fe4ac2867ebb"
+    },
+    {
+      "claim_id": "6a44ae27-4639-45a0-9610-03337554fa99",
+      "result_id": "171dd24e-8948-4259-8f1a-fe4ac2867ebb"
+    },
+    {
+      "claim_id": "03866718-c89e-4cc6-9ad9-310802c402e4",
+      "result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b"
+    },
+    {
+      "claim_id": "1ea1ea10-0cbb-45a5-88eb-5796fd9dbe8d",
+      "result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b"
+    },
+    {
+      "claim_id": "ad3126e7-6840-4446-a44c-9c4974b5a23a",
+      "result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b"
+    },
+    {
+      "claim_id": "ff09a002-81e5-42c2-9aa7-8bed78d7948d",
+      "result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b"
+    },
+    {
+      "claim_id": "aeddaa29-ccc3-4607-98fe-ce74bfeb10b3",
+      "result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b"
+    },
+    {
+      "claim_id": "f8578573-10e0-401c-a6db-d9c6d6790569",
+      "result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b"
+    },
+    {
+      "claim_id": "12efa0e7-399e-4cac-8ce9-ed4c542152f4",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "a25a92ae-887e-4607-88f7-41555ce6b419",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "66815430-92b7-4b7b-8dfe-7aa744802469",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "1426a0ee-a623-414e-9119-5e3f81647af4",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "65387fdb-58ff-4530-ad8e-b7658e82a2ee",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "f1c08685-143b-4767-874d-29fe08797823",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "052c7be6-14c9-43bc-b799-ec0b426d720a",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "b917c681-4ae5-4c70-87ae-279449e1883b",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "6cd3c5ff-982b-4ec8-8db1-3fba15fb97e7",
+      "result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19"
+    },
+    {
+      "claim_id": "4be7f809-c786-44bf-8e5e-21018890c9a1",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "3b0124c5-0a62-49e6-adf8-94b4b73650a2",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "28cb49a8-e30a-48a6-aeb7-68a491da5d2c",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "71ae17c0-e03e-46f0-941a-91fd86db2462",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "808fdd86-d799-46ae-ae0e-4504ef5704ea",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "02264c6b-80fd-481a-b2c7-2633ee3043c8",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "d0309fa4-4c90-426d-b5dd-5298318f688a",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "851e57e7-6b29-4cb2-86cc-664f8aafdda8",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "102fb19a-e327-4479-8355-721a83905541",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "6e9a1c6a-d23c-40cc-86c9-cb2b81aa0a74",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "62f33458-2abe-4218-a7ab-82b6eedf1570",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "b9e0a428-1ed3-4396-a365-3fbd338050c9",
+      "result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2"
+    },
+    {
+      "claim_id": "33600bac-6379-4d57-8bf7-bbddb1808338",
+      "result_id": "87e6cb23-fe9a-49bc-97b4-368a70395ea2"
+    },
+    {
+      "claim_id": "6533d201-d086-40be-b52d-4baf2c10c139",
+      "result_id": "87e6cb23-fe9a-49bc-97b4-368a70395ea2"
+    },
+    {
+      "claim_id": "ea24ec3a-74b7-47c6-89df-d4ff1d211ec5",
+      "result_id": "0f88b89e-7c09-42a5-b1b5-434d8524ffcc"
+    },
+    {
+      "claim_id": "0bad8ecf-005b-4330-9fa3-caccefb3c0b0",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "1bd2611a-25a5-4dff-9955-fb4b44c7b0de",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "6e5bc020-fea2-4e21-bc99-8d173cddd759",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "e884ca6f-2577-49f9-a6c4-b11d8da17ba6",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "c736d6f5-ad3e-41ee-a773-5899a18539a8",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "39bfaa6e-8a27-4564-962e-fa6af7fa2958",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "8fa96792-b866-43a2-b4d1-692d5a635d4a",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "798edb73-0020-406d-bf50-b84558e060d1",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "b7c58d6e-27e1-44b3-b33a-e777c28503a7",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "42d3a43f-3e56-4f4d-80a7-b2f41844d3f8",
+      "result_id": "d99c858b-f77c-498c-82d8-f516dc649f37"
+    },
+    {
+      "claim_id": "0e7fc535-daa8-42b8-8f6b-4de8e1ea1e32",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "3a98f8fa-c49f-49a1-ac70-d595ae511c5d",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "71f84f80-d37f-4d4d-ba7d-37ac7ed1b599",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "bdf583c7-c23b-49bf-b35f-2b130ccae545",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "920a2978-f7f9-4671-8920-2035f12f52b2",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "e453d5a5-73cc-459e-b73d-4144102d450a",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "6bfe643a-90b4-4282-9193-1ba2a81d83f5",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "6ab0f915-484b-4406-9d3c-722c0de0f447",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "e3acdc5e-dcdb-4b9c-8362-7b87ac08e614",
+      "result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc"
+    },
+    {
+      "claim_id": "e2f3dd72-8e51-4847-aba0-14257a648ac6",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "a57487ff-ef97-423e-b3e7-0520527e7fa7",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "d5f2d9bc-e2aa-48a8-8ab2-3f34aa23ade9",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "f59da697-2c42-4890-8997-4e101a5efa89",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "20befb38-27c1-465c-87da-f3cfe0f43a16",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "ed300dd2-3b21-4fee-a712-2a7d2700561e",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "73bb6293-2980-4398-995c-070e79b5198e",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "d61cc021-6009-4b41-87cd-6260bddbc5a7",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "8d7878d2-407d-49c6-b1fd-acaec258e214",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "6427422a-7063-410a-bc47-0100071134ad",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "fb419b55-ca9e-4b0b-8893-c296512495e7",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "c7484daf-cc1e-42a2-aa30-e0aa23e8c83a",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "6496dd76-6886-4adf-9463-d3fef4f3e10b",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "a64486d7-4259-4a21-b8c9-0014168a5511",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "49c6b6ca-959f-4563-8c35-51f8096b464b",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "78f0c485-369c-4b49-bb09-8bb5cdac6a3e",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "4fd8904a-fdcb-4fe8-a8f1-224c38d56cea",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "196f42c4-3090-4693-bed4-0b74400d0c60",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "2e0d6ad9-49cd-4f44-b8e7-4d464ab440d6",
+      "result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9"
+    },
+    {
+      "claim_id": "521d2697-5fff-423d-b8eb-59af97de7f9e",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "ebccdfec-ab97-4394-976f-446caced268f",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "e2d03309-8ccf-44d6-9bc7-97d5e0f1fb90",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "85930532-86e5-452e-bafb-32a4174dc691",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "1d6dde08-0c0f-410a-9c80-2b5ca0ac2863",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "07738793-7e62-4202-8122-d0423e46a060",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "900809a5-f0ce-4454-a256-5881f8b80c95",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "91c3da29-361f-457b-a116-4037f92b739f",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "107a11a8-7f19-40d3-a26d-be133ebfa0fa",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "83f4891e-641c-44fa-b9a4-4be52e3210d1",
+      "result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375"
+    },
+    {
+      "claim_id": "a6c331ce-cd5b-40ac-b061-5cbc1a1c4e30",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "c5dedafd-d7e0-4931-ab2d-d7df94f8c5e4",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "cc9ac477-48a5-4d25-8b27-4207c36adea8",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "b811e8ef-29fb-4a9a-a5f2-7ee56264c8f2",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "0b32f9c5-5289-4cf1-851b-5fa240cac019",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "155b3610-6489-4b6f-8a5e-678d931bb5e7",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "b4627499-79d3-42f3-a232-29d049996df2",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "afcc653b-4f55-4975-b9c5-d2eb0723f620",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "f08343fb-76ea-4479-8e6b-fdce024b531f",
+      "result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1"
+    },
+    {
+      "claim_id": "6618fe90-e4d7-4b2d-8e8e-2bb60b0ff158",
+      "result_id": "19478b3f-cac1-435c-a294-5a4365620376"
+    },
+    {
+      "claim_id": "daa4c83a-0998-4e25-825b-a31b2313d26e",
+      "result_id": "19478b3f-cac1-435c-a294-5a4365620376"
+    },
+    {
+      "claim_id": "eddc86a9-f304-4a96-bf4a-9f22c3afe27b",
+      "result_id": "19478b3f-cac1-435c-a294-5a4365620376"
+    },
+    {
+      "claim_id": "6a44ae27-4639-45a0-9610-03337554fa99",
+      "result_id": "19478b3f-cac1-435c-a294-5a4365620376"
+    },
+    {
+      "claim_id": "ea24ec3a-74b7-47c6-89df-d4ff1d211ec5",
+      "result_id": "b5025e64-6279-463d-8594-9281fe6b6a7c"
+    },
+    {
+      "claim_id": "03866718-c89e-4cc6-9ad9-310802c402e4",
+      "result_id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd"
+    },
+    {
+      "claim_id": "1ea1ea10-0cbb-45a5-88eb-5796fd9dbe8d",
+      "result_id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd"
+    },
+    {
+      "claim_id": "ad3126e7-6840-4446-a44c-9c4974b5a23a",
+      "result_id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd"
+    },
+    {
+      "claim_id": "ff09a002-81e5-42c2-9aa7-8bed78d7948d",
+      "result_id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd"
+    },
+    {
+      "claim_id": "aeddaa29-ccc3-4607-98fe-ce74bfeb10b3",
+      "result_id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd"
+    },
+    {
+      "claim_id": "3e288797-f805-4419-8ecb-c784a8f606c9",
+      "result_id": "0d7cc083-834d-4e9c-b0f7-e221058d9055"
+    },
+    {
+      "claim_id": "5465d97a-5780-48f1-b680-3cb86160da28",
+      "result_id": "0d7cc083-834d-4e9c-b0f7-e221058d9055"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c43e0be3-b723-437b-9b06-81b6165b1b76",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "69295bbe-8f92-4f49-b239-31b56d33192f",
+      "peer_result_id": "d99c858b-f77c-498c-82d8-f516dc649f37",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the technical robustness of the segmentation pipeline (C2, C20, C56, C59-C60, C87-C89, C94-C95). OpenEval evaluates the full pipeline including classification (C24-C27, C64-C68) as SUPPORTED, while peer reviewers accept the segmentation but express concerns about classification accuracy in R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "b5383c71-5c2f-4472-ace5-d79fc654c31f",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "69295bbe-8f92-4f49-b239-31b56d33192f",
+      "peer_result_id": "2659f92c-9346-46cb-a02c-1d3be1a83bcc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval finds classification performance (88% average, 95% median, C24-C27, C64-C67) SUPPORTED with appropriate validation. Peer reviewers rate this UNCERTAIN, stating '88% accuracy seems relatively low' and expressing concern that '12% miss-classification could have quite some effect on the conclusions.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8c65c1eb-7959-4756-ae28-1513100026cb",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8d1fc1de-f618-4d6d-8db0-40a6e5bab816",
+      "peer_result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval finds quantitative growth measurements (C16-C19, C21-C23) SUPPORTED with statistical robustness. Peer reviewers rate related claims UNCERTAIN, noting 'many precise measurements without inserting them in a proper context' and questioning the biological utility of genotype comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "c527dbad-9de8-406f-8d7f-c1ca4846dc03",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b9060138-6347-4169-80e3-1009ba83adec",
+      "peer_result_id": "e7b24bec-ef03-4030-b8f1-c058eba767e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval finds cell-type-specific proliferation analysis and PCA (C28-C33, C50-C55) SUPPORTED with clear mechanistic insights. Peer reviewers rate UNCERTAIN, unable to reproduce Figure 3 PCA results and questioning what explains 94% variation in PC1, plus concerns about biological context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "8c6333f2-ffe8-401a-9f0e-f12d615bb13a",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "52c372e9-a068-43df-9020-be48b0aa0dbc",
+      "peer_result_id": "25a35a6d-f4ae-47a9-af77-2630a4a7f375",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval finds cell orientation analysis (C34-C36, C71-C72) SUPPORTED with statistical validation via Hartigans' dip test. Peer reviewers rate UNCERTAIN, questioning 'what happens when a cell is round' and how randomized distributions in round cells were addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "f2d009fd-44e7-4e37-8245-e65b5bd9bad5",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "d401f17f-05b5-4e2e-b868-5308fba23a7e",
+      "peer_result_id": "88542d35-d9ff-4a90-9e37-31deca96d0d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the visual inspection findings on cell division patterns and cambial activity (C37-C43, C73-C79). OpenEval notes reliance on qualitative assessment; peer reviewers accept validity but suggest additional quantitative analyses like separating cell expansion from proliferation contributions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "4c3e2c2f-1e97-43ad-bee2-a6139ed3f4ec",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "171dd24e-8948-4259-8f1a-fe4ac2867ebb",
+      "peer_result_id": "19478b3f-cac1-435c-a294-5a4365620376",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find phloem pole patterning analysis (C3, C44-C45, C63) SUPPORTED. OpenEval validates Bayesian analysis and GUS staining; peer reviewers accept these findings as valid examples from the cellular resolution atlas.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "58250ef2-c4a0-4c29-98b7-6b1990645eff",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "b69fd335-cb6b-4ccf-a661-1fd57240494b",
+      "peer_result_id": "8975aa96-e221-4a04-b2d6-9d91a54e27bd",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates speculative mechanisms (C46-C47, C70, C80-C82) as UNCERTAIN, appropriately noting lack of experimental validation. Peer reviewers rate similar speculative claims (C46-C47, C70, C80-C81) as SUPPORTED, treating them as reasonable hypotheses rather than requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "ed887923-1b37-436a-aee9-b7c0ec0d511a",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0f88b89e-7c09-42a5-b1b5-434d8524ffcc",
+      "peer_result_id": "b5025e64-6279-463d-8594-9281fe6b6a7c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on uncertainty. Both rate generalizability claims (C69) as UNCERTAIN. OpenEval notes lack of validation on other tissue types; peer reviewers specifically request clarification on applicability to other organs/species like poplar cambium or maize roots.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "f99c28e5-6186-4ac5-9161-7601e85667b8",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "741c3530-73b9-4a9c-b22b-c3981351ea19",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds experimental framework and design (C8-C15, C58) SUPPORTED with appropriate citations and justification. No corresponding peer review evaluation found; reviewers did not challenge the experimental setup.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "76983916-cef5-4b8f-a423-6138efb40d7f",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "df68d485-0079-46f8-8ddf-f22cdb30cfa2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds background information and literature context (C1, C4-C7, C83-C86, C91-C93) SUPPORTED with appropriate citations. No corresponding peer review evaluation found; reviewers did not challenge background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "7271329f-f33b-44f9-8717-cb5bfd8dabc0",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "87e6cb23-fe9a-49bc-97b4-368a70395ea2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds citations of prior molecular work (C48-C49) SUPPORTED. No corresponding peer review evaluation found; reviewers did not challenge these literature references.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    },
+    {
+      "id": "d94f07cd-d34c-4ef3-9f38-7fe127e40f14",
+      "submission_id": "377ba14f-da59-4524-84c2-55733b0062a8",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "69295bbe-8f92-4f49-b239-31b56d33192f",
+      "peer_result_id": "0d7cc083-834d-4e9c-b0f7-e221058d9055",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval includes computational scope (C61-C62) in pipeline validation as SUPPORTED. Peer reviewers separately note these computational limitations as SUPPORTED, accepting them as reasonable constraints without challenging the analysis scope.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:08:08.097695Z"
+    }
+  ]
+}

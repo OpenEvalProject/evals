@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study generated RNA-seq data from 63 wild baboons, producing 1.89 billion reads with 67.2% mapping to the baboon genome. After quality control, 64,432 SNPs and 10,409 genes were analyzed for gene expression variation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about the basic data generation and quality metrics. The study was described as 'favorably evaluated' and reviewers focused on analytical approaches rather than questioning the fundamental data collection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study identified eQTL for 1787 genes (17.2%) and ASE for 510 genes (23.4%), with eQTL enriched near transcription start sites and gene bodies. Genes with eQTL were more likely to show ASE, and the magnitude and direction of ASE and eQTL effects were significantly correlated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns that the high number of eQTL discoveries might be 'artificially inflated' due to lack of hidden factor correction and potential structure in the data correlated in both genotype and gene expression space. They also requested that ASE detection be shown to be independent of the number of input individuals, expressing concern about variance in effect size estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C67",
+      "C68"
+    ],
+    "result": "Using the RNA-seq-based pipeline on YRI data identified 290 genes with eQTL (41.4% of those found with array data), indicating the RNA-seq pipeline reduces eQTL detection by 50-60% compared to genotyping arrays. Effect sizes were highly correlated between pipelines.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these methodological comparisons between RNA-seq and array-based genotyping pipelines. The comparison was implicitly accepted as part of understanding the study's technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The baboon population showed a different MAF spectrum than humans, with more intermediate frequency variants. Combined with higher SNP density and different LD patterns, these factors increased eQTL detection power by 2.35-fold overall in baboons versus YRI.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed concern that admixture in the baboon population 'could increase the number of hets and has the potential to increase the length of haplotypes (both observations of the study)' and 'could explain many of the observations of the study.' They requested additional analyses to address whether local patterns of admixture were inflating discoveries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C43",
+      "C44",
+      "C52",
+      "C56"
+    ],
+    "result": "Genes with eQTL in baboons overlapped significantly with those in YRI and showed higher phyloP conservation scores but lower deep homology. Genes with eQTL were enriched for immune and extracellular functions but depleted for basic metabolic processes, suggesting genes vary in tolerance to genetic perturbation in a conserved manner.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested discussion of 'the possibility that the negative correlation between conservation and probability of eQTL in a gene in baboons at least may be driven by the technical issue that only coding SNPs were tested and therefore conserved genes will tend to have low MAF and therefore low power.' This indicates uncertainty about whether the conservation patterns reflect biology or technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C53"
+    ],
+    "result": "A strong negative correlation was observed between eQTL effect size and minor allele frequency in baboons (r = -0.723). Simulations showed this pattern could be explained by winner's curse rather than negative selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted 'a comment regarding the lack of an association between effect size and minor allele frequency compared to Battle et al., 2014' and stated 'We are not sure that these studies can be easily compared to provide a definitive statement regarding negative selection in baboons here. A caveat regarding study differences might suffice.' This indicates the interpretation is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C54",
+      "C55"
+    ],
+    "result": "Genetic effects explained a median of 28.4% of variance in gene expression, far exceeding demographic effects (age: 1.89%, sex: 0.82%). Only maternal social connectedness to males showed significant environmental effects (1.9% PVE), suggesting early environmental effects can persist across the life course.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these variance partitioning results or the relative contributions of genetic versus environmental factors. The findings on heritability and environmental effects were implicitly accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Regressing out the first 10 principal components of gene expression data greatly improved eQTL detection ability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly questioned 'Why was a hidden factor correction not applied? Typically, these types of corrections dramatically improve eQTL discovery.' They expressed concern that 'if there is some structure to the data that is both present and correlated in genotype and gene expression space, the number discoveries will be artificially inflated,' indicating the PC correction approach was insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Controlling for local chromosome-specific structure modestly reduced eQTL discoveries from 1787 to 1583 (11.4% reduction), but still resulted in ~7-fold more eQTL in baboons than YRI, with similar eQTL locations under both models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested additional analyses to address admixture effects, suggesting three approaches including testing for excess trans-associations on the same chromosome or examining ASE correlation over longer distances. They noted the existing model 'does not address local patterns of admixture,' indicating uncertainty about whether the controls were adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Reference allele homozygotes showed higher coverage than alternate allele homozygotes, but this mapping bias was smaller for eQTL SNPs. A modest directional bias was observed where 56% of eQTL had major alleles associated with lower expression, driven primarily by low MAF SNPs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these technical assessments of mapping bias and directional effects. These analyses appear to have been accepted as adequate controls for potential technical artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "This study represents the first genome-wide gene expression profile in a wild primate population and establishes the feasibility of eQTL mapping using RNA-seq data alone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study was described as 'favorably evaluated' and reviewers did not challenge the novelty claims or the proof-of-principle demonstration of RNA-seq-based eQTL mapping in wild primates.",
+    "result_type": "MAJOR"
+  }
+]

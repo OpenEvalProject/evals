@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors identify a 45-amino acid C-terminal domain (C45) of TET1 that is both necessary and sufficient for direct binding to OGT. A point mutation (D2018A) within conserved residues of this domain disrupts the TET1-OGT interaction in vitro and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C35-C38, C84, and C86 provide converging evidence from deletion mapping, gain-of-function (GFP fusion), mutational analysis, and recombinant protein binding assays. The data consistently demonstrate that C45 is necessary and sufficient for OGT binding, and that D2018A disrupts this interaction. Multiple experimental approaches support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C82",
+      "C83"
+    ],
+    "result": "Multiple TPR domain deletions in OGT impair binding to TET1 CD, with deletions of TPRs 7-9, 10-12, or 13-13.5 being most severe. The authors speculate that either all TPRs are involved in binding or that deletions disrupt overall TPR structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by co-IP data in Figure 1C showing that multiple TPR deletions impair TET1 binding. However, claims C82-C83 are speculative interpretations. The data support that TPR deletions impair binding, but the mechanism (direct involvement vs. structural disruption) remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C39",
+      "C40",
+      "C85"
+    ],
+    "result": "OGT O-GlcNAcylates TET1 CD in vitro and stimulates its catalytic activity 4-5 fold. The O-GlcNAc modification is responsible for the majority of stimulation, while protein-protein interaction alone provides modest enhancement (1.3-1.7 fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8-C10, C39-C40, and C85 are supported by in vitro activity assays (Figure 4) showing O-GlcNAcylation of rTET1 and dose-dependent stimulation of 5hmC production. Controls demonstrate that UDP-GlcNAc alone has no effect and that D2018A mutant is not stimulated. The quantitative distinction between modification-dependent and interaction-dependent effects is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C52"
+    ],
+    "result": "The TET1-OGT interaction is necessary for TET1 to rescue hematopoietic stem cell production in tet2/3 double mutant zebrafish embryos. Wild-type TET1 mRNA rescues runx1 expression and modestly increases 5hmC levels, while D2018A mutant fails to rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C52 are supported by zebrafish rescue experiments (Figure 5) with five biological replicates showing statistically significant differences. Wild-type TET1 rescues runx1 expression and increases 5hmC, while D2018A does not. This demonstrates functional importance of the TET1-OGT interaction in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C44"
+    ],
+    "result": "In mESCs with endogenous TET1 D2018A mutation, OGT co-immunoprecipitation is reduced but not eliminated, TET2 protein levels are significantly increased without corresponding transcript increase or protein stability changes, and 378 genes show altered expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C44 are supported by co-IP, western blot, RNA-seq, and protein stability data (Figure 6). The incomplete loss of OGT binding in the endogenous context (C16) contrasts with complete loss in overexpression systems, suggesting additional interaction surfaces or compensatory mechanisms. The TET2 increase without transcript changes suggests post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C65"
+    ],
+    "result": "TET1 D2018A mESCs show 25% reduction in total 5mC with no change in total 5hmC (by LC-MS/MS), but 5hmC-Seal identifies 76 differentially hydroxymethylated regions affecting 95 genes, suggesting redistribution of 5hmC without affecting total levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C65 are supported by LC-MS/MS and 5hmC-Seal data (Figures 6F, 7). The apparent paradox of reduced 5mC without reduced 5hmC is explained by increased TET2 levels (C17). The small number of DhMRs is consistent with redistribution rather than global loss. The interpretation in C65 logically integrates the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "WGBS reveals genome-wide reduction in 5mC+5hmC in D2018A mESCs with 42,725 DMRs enriched in exons. There is minimal correlation between promoter methylation and gene expression (r=-0.02), but genes with gene body DMRs are enriched for differentially expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 and C67-C69 are supported by WGBS data (Figure 8). The genome-wide reduction in 5mC+5hmC is consistent with mass spec showing reduced 5mC. The very weak promoter methylation-expression correlation (C27) is statistically significant but biologically minimal. The enrichment of DMRs in gene bodies and correlation with DEGs (C32) is more substantial and biologically interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors propose that increased TET2 expression in D2018A cells compensates for impaired TET1 function, explaining unchanged total 5hmC levels. Higher TET2 levels could increase 5mC oxidation at gene bodies (TET2's preferred targets), causing widespread genic demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C70-C71 are speculative interpretations (marked as SPECULATION/INFERENCE) attempting to reconcile the observation that 5hmC doesn't decrease despite impaired TET1. While C70 cites prior work about TET2 targeting gene bodies, the mechanistic explanation in C71 lacks direct experimental validation. The model is plausible but requires additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors propose that the TET1-OGT interaction serves dual functions: OGT regulates TET1 activity through O-GlcNAcylation, and TET1 recruits OGT to chromatin where it can modify other transcription factors. This may link metabolism to epigenetic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C51 and C76-C77 combine established observations (C47-C49 from citations) with speculative models. While the dual function model is reasonable given the data, direct evidence for OGT recruitment to chromatin by TET1 and modification of nearby transcription factors is not provided in this study. The model integrates prior work but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Eight sites of O-GlcNAcylation were identified within the TET1 catalytic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 states data not shown, making it impossible to evaluate the quality of the evidence, the methods used for site identification, or the confidence in these assignments. This unpublished data cannot be properly assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "A 25 kb deletion distal to the CRISPR/Cas9 cut site was identified in WT but not D2018A mESC lines. Control experiments demonstrate that observed differences in gene expression and 5mC levels are caused by the D2018A mutation rather than this deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by genomic profiling and analysis of control cell lines (Figure 6 supplement 3). The authors appropriately identified this off-target effect and performed control experiments to demonstrate it does not confound their conclusions. This strengthens confidence in the D2018A phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "This is the first identification of a small protein domain that confers stable binding to OGT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is a novelty claim based on the authors' knowledge of the literature. While the C45 domain appears unique in conferring stable OGT binding detectable by co-IP, comprehensive validation of this novelty claim would require systematic literature review. The claim may be accurate but cannot be fully verified from the manuscript alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C33",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background claims about TET enzyme function, OGT structure and function, TET-OGT interactions, developmental roles, and metabolic pathways based on established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C33, C54, C56-C58, C60-C63, C72-C74, and C79-C81 are background information supported by citations to prior work or established knowledge. These provide context for the study but are not novel findings. The citations appear appropriate and the background information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background on the tet2/3 double mutant zebrafish model, including reduced 5hmC levels, larval lethality, reduced runx1 expression, and rescue by human TET2/TET3 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe the established zebrafish model from prior work (Li et al., 2015) that provides the foundation for the rescue experiments. This background is accurately cited and provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C59",
+      "C64",
+      "C75"
+    ],
+    "result": "Speculative claims that OGT may regulate all three TET proteins, is a strong candidate for TET regulation, that TETs are important OGT targets in development, and that OGT activity may vary with nutrient status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55, C59, C64, and C75 are speculative extrapolations from the data. While C64 has some support from the zebrafish experiments, the broader claims about OGT regulating all TETs (C55, C59) and nutrient-dependent regulation (C75) extend beyond the experimental evidence. These are reasonable hypotheses but require additional validation.",
+    "result_type": "MINOR"
+  }
+]

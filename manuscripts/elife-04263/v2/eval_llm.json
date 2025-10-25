@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C78",
+      "C109",
+      "C110"
+    ],
+    "result": "Post-transcriptional mechanisms restrict miR-128 accumulation to post-mitotic neurons during mouse corticogenesis and in adult stem cell niches. Northern blot analysis shows mature miR-128 levels increase during development while pre-miR-128-2 levels remain constant. In situ hybridization reveals that pre-miR-128-2 is expressed ubiquitously throughout the developing cortex from VZ to cortical plate, while mature miR-128 is restricted to the cortical plate and absent from progenitor zones and migrating neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression pattern data from Northern blots (C31, C32) and in situ hybridization (C35-C46) provide strong converging evidence for post-transcriptional regulation. The disparity between precursor and mature miR-128 distribution is consistently demonstrated across multiple developmental stages and in adult stem cell niches. The co-staining experiments with cell-type markers (Tbr2, Dcx) further validate the exclusion of mature miR-128 from progenitors and migrating cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C112"
+    ],
+    "result": "Premature miR-128 expression in progenitors for upper layer neurons leads to impaired neuronal migration without affecting cell fate specification. In utero electroporation of pre-miR-128-2 at E15.5 causes neurons to be retained in deeper cortical layers at P7, while maintaining expression of the upper layer marker Cux1 and not expressing the deep layer marker Ctip2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The migration defect is well-documented through quantitative binning analysis (C49) showing statistically significant shifts in neuronal position. The cell fate analysis (C50-C52) using layer-specific markers demonstrates that the migration defect is not due to altered temporal identity. The use of pre-miR-128-1 as a negative control strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C53"
+    ],
+    "result": "Sponge-mediated inhibition of miR-128 results in overmigration of upper layer neurons. Electroporation of a miR-128 sponge construct causes neurons to shift toward the uppermost cortical layers (Bin 1) compared to control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function experiment using the sponge inhibitor provides complementary evidence to the gain-of-function studies, demonstrating bidirectional control of migration by miR-128. The quantitative analysis shows statistically significant shifts in neuronal positioning. However, the mechanism of sponge function could be better validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55"
+    ],
+    "result": "Premature miR-128 expression leads to inappropriate branching morphology in migrating neurons. At P0, neurons expressing pre-miR-128-2 show significantly increased numbers of branches and filopodia compared to control neurons in the deep cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The morphological analysis is based on 3D reconstruction of individual neurons with statistical comparison (58 control vs 67 experimental neurons). The quantification shows significant increases in both branch and filopodia numbers with appropriate statistical testing. The phenotype is consistent with a migration defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Phf6 is an important regulatory target for miR-128. The Phf6 3'UTR contains three conserved miR-128 binding sites and is sensitive to miR-128 in reporter assays. Transfection with synthetic miR-128 reduces endogenous PHF6 protein levels by approximately 50% in cell culture. Phf6 mRNA and miR-128 show reciprocal temporal expression patterns during cortical development and in cultured neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support Phf6 as a miR-128 target: computational prediction (C56), reporter assays (C57), Western blot analysis in two cell lines with appropriate controls (C58-C60), and reciprocal expression patterns in vivo and in vitro (C61-C63). The ~50% reduction in protein levels is consistent with typical miRNA-mediated repression. The convergence of these independent approaches provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C64",
+      "C82",
+      "C92"
+    ],
+    "result": "Restoring PHF6 expression counteracts the deleterious effect of miR-128 on neuronal migration. Co-expression of PHF6-GFP with pre-miR-128-2-RED rescues the migration defect to control levels, indicating that miR-128 regulates migration at least in part through PHF6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiment provides strong evidence for a functional relationship between miR-128 and PHF6 in migration control. The quantitative analysis shows restoration of neuronal distribution to control levels upon PHF6 co-expression. This is a critical experiment that establishes causality in the miR-128/PHF6 regulatory axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C95"
+    ],
+    "result": "Premature miR-128 expression reduces the complexity of dendritic arborization in upper layer neurons, and this effect is mediated by PHF6. Sholl analysis at P15 and P21 shows approximately 37% reduction in dendritic intersections 40-75 \u03bcm from the soma. Co-expression of PHF6 with miR-128 rescues the dendritic complexity defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dendritic phenotype is documented at two time points (P15 and P21) using rigorous 3D reconstruction and Sholl analysis. The rescue by PHF6 co-expression demonstrates mechanistic specificity. The use of pre-miR-128-1 as an intermediate control strengthens the findings. Statistical analysis is appropriate with multiple neurons analyzed per condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C96",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Premature miR-128 expression alters intrinsic electrophysiological properties of upper layer neurons, and PHF6 co-expression largely rescues these effects. miR-128 gain-of-function neurons show depolarized resting membrane potential, increased input resistance, reduced rheobase, and increased action potential firing frequency. Co-expression of PHF6 restores most parameters to control levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological characterization is comprehensive, measuring multiple parameters (VM, RI, rheobase, AP frequency, voltage sag) with appropriate sample sizes and statistical analysis. The rescue experiments demonstrate that PHF6 mediates most but not all of the miR-128 effects on excitability. The incomplete rescue of some parameters (voltage sag, rheobase) is appropriately acknowledged and suggests additional miR-128 targets may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C80",
+      "C81",
+      "C113"
+    ],
+    "result": "miR-128 is upstream of PHF6 in a pathway vital for cortical lamination, neuronal morphology, and intrinsic excitability. miR-128 acts as a negative regulator of migration, and the pathway is highly sensitive to miR-128 levels as demonstrated by bidirectional migration phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is supported by the combined evidence from expression patterns, gain- and loss-of-function experiments, target validation, and rescue studies. The bidirectional migration phenotypes (premature expression causes undermigration, inhibition causes overmigration) demonstrate dose-sensitivity. The rescue experiments establish PHF6 as a key mediator, though the authors appropriately note that additional targets likely contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C93",
+      "C94"
+    ],
+    "result": "miR-128 may function as part of a regulatory switch required for the transition from migration to outgrowth during neuronal maturation. The disparity between pre-miR-128-2 and mature miR-128 expression suggests delayed DICER processing contributes to temporal control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent interpretive inferences and speculation based on the expression pattern and functional data. While the expression data support post-transcriptional regulation, the specific mechanism (DICER processing delay) is not directly tested. The concept of a regulatory switch is a reasonable interpretation but remains speculative without additional mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background information on miR-128 including its brain enrichment, genomic organization, prior functional studies, and deletion phenotypes in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior literature and are appropriately cited. They provide necessary context for the current study but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C97"
+    ],
+    "result": "Background information on PHF6 including its association with B\u00f6rjeson-Forssman-Lehmann syndrome and Coffin-Siris syndrome, links to chromatin remodeling complexes, and prior findings on its role in neuronal migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior literature and are appropriately cited. They provide important context for understanding the significance of PHF6 as a miR-128 target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C47",
+      "C108",
+      "C111"
+    ],
+    "result": "The pre-miR-128-1 construct shows reduced activity compared to pre-miR-128-2 in producing mature miR-128, likely due to intrinsic processing defects. This allows pre-miR-128-1 to serve as a negative control in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential activity of the two precursor constructs is demonstrated through Northern blots, sensor assays, and in vivo validation. This technical finding is important for interpreting the experimental design and provides an appropriate negative control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C104"
+    ],
+    "result": "The relationship between morphological changes and electrophysiological properties in miR-128 gain-of-function neurons is complex. Much of the change in input resistance can be explained by reduced dendritic complexity, but the depolarized resting potential likely reflects additional mechanisms. The incomplete rescue by PHF6 suggests additional miR-128 targets contribute to the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims appropriately acknowledge the complexity of the data and the limitations of the rescue experiments. The reasoning about structure-function relationships is sound, and the authors appropriately note that PHF6 is not the sole mediator of all miR-128 effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Comparison of the current findings in cortical neurons to prior work on miR-128 deletion in striatal D1 neurons suggests that miR-128's regulatory impact may be region- and time-dependent. Unlike D1 neurons, cortical neurons showed no differences in synaptic currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to prior work is appropriate and the observation about lack of synaptic changes is noted, though the data are not shown. The inference about region/time-dependence is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The effect of miR-128 on neuronal migration morphology is similar to that reported after PHF6 knockdown in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison to Zhang et al. 2013 is appropriate and helps establish the functional connection between miR-128 and PHF6. The similarity in phenotypes supports the regulatory relationship.",
+    "result_type": "MINOR"
+  }
+]

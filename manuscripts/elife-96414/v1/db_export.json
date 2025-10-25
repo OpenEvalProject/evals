@@ -1,0 +1,2504 @@
+{
+  "submission": {
+    "id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:41:35.997240Z",
+    "updated_at": "2025-10-25T01:41:35.997240Z"
+  },
+  "content": [
+    {
+      "id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "content_type": "manuscript",
+      "content_text": "# The human cytomegalovirus-encoded pUS28 antagonizes CD4+ T cell recognition by targeting CIITA\n\n## Authors\n\n- Fabienne Maassen<sup>1</sup> ([ORCID: 0009-0004-3535-3727](https://orcid.org/0009-0004-3535-3727))\n- Vu Thuy Khanh Le-Trilling<sup>1</sup> ([ORCID: 0000-0002-2733-3732](https://orcid.org/0000-0002-2733-3732))\n- Luisa Betke<sup>2</sup> ([ORCID: 0009-0008-6767-6239](https://orcid.org/0009-0008-6767-6239))\n- Thilo Bracht<sup>4</sup>\n- Corinna Siegmund<sup>1</sup> ([ORCID: 0000-0002-1371-0779](https://orcid.org/0000-0002-1371-0779))\n- Malte Bayer<sup>4</sup> ([ORCID: 0000-0003-1060-8856](https://orcid.org/0000-0003-1060-8856))\n- Benjamin Katschinski<sup>1</sup> ([ORCID: 0000-0002-1314-2820](https://orcid.org/0000-0002-1314-2820))\n- Antonia Belter<sup>1</sup> ([ORCID: 0009-0005-4409-1447](https://orcid.org/0009-0005-4409-1447))\n- Tanja Becker<sup>1</sup>\n- Denise Mennerich<sup>1</sup>\n- Sebastian Voigt<sup>1</sup>\n- Lori Frappier<sup>6</sup>\n- Barbara Sitek<sup>4</sup>\n- Katharina Fleischhauer<sup>2</sup>\n- Mirko Trilling<sup>1</sup> ([ORCID: 0000-0003-3659-3541](https://orcid.org/0000-0003-3659-3541)) \u2020\n\n### Affiliations\n\n1. https://ror.org/04mz5ra38 Institute for Virology, University Hospital Essen, University of Duisburg-Essen Essen Germany\n2. https://ror.org/04mz5ra38 Institute for Experimental Cellular Therapy, University Hospital Essen, University of Duisburg-Essen Essen Germany\n3. https://ror.org/04mz5ra38 Institute for the Research on HIV and AIDS\u2010associated Diseases, University Hospital Essen, University of Duisburg-Essen Essen Germany\n4. https://ror.org/04tsk2644 Medizinisches Proteom Center, Ruhr University Bochum Bochum Germany\n5. https://ror.org/024j3hn90 Department of Anesthesia, Intensive Care Medicine and Pain Therapy, University Hospital Knappschaftskrankenhaus Bochum Bochum Germany\n6. https://ror.org/03dbr7087 Department of Molecular Genetics, University of Toronto Toronto Canada\n7. https://ror.org/02pqn3g31 German Cancer Consortium (DKTK), partner site Essen/D\u00fcsseldorf Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman cytomegalovirus (HCMV) is a relevant pathogen, especially for individuals with impaired immunity. Harnessing potent immune antagonists, HCMV circumvents sterile immunity. Given that HCMV prevents the upregulation of human leukocyte antigen (HLA)-DP and HLA-DR, we screened a library of HCMV genes by co-expression with the HLA class II (HLA-II)-inducing transcription coordinator class II transactivator (CIITA). We identified the latency regulator pUS28 as an interaction factor and potent viral antagonist of CIITA-driven expression of CD74, HLA-DR, HLA-DM, HLA-DQ, and HLA-DP. Both wt-pUS28 and a mutant incapable of inducing G protein-coupled signaling (R129A), but not a mutant lacking the C-terminus, drastically reduced the CIITA protein abundance post-transcriptionally. While control CD4 + T cells from HCMV-seropositive individuals vigorously responded to CIITA-expressing cells decorated with HCMV antigens, pUS28 expression was sufficient to inhibit HLA-II induction and immune recognition by HCMV-specific CD4 + T cells. Our data uncover pUS28 to be employed by HCMV to evade HLA-II-mediated recognition by CD4 + T cells.\n\n## Introduction\n\nMore than half of the entire adult human population and over 90% of the elderly in developing countries are latently infected with the human cytomegalovirus (HCMV, human betaherpesvirus 5 [HHV-5]; NCBI taxonomy ID 10359) (Fowler et al., 2022). In healthy adults, HCMV raises strong canonical as well as non-canonical immune responses that limit viral replication and, in the vast majority of cases, prevent overt clinical manifestations, while leaving a substantial footprint on the immune system. Accordingly, more than half of all immune parameters are altered in HCMV-infected individuals (Brodin et al., 2015). Equipped with an astonishing arsenal of highly potent immune evasins, HCMV circumvents sterile immunity and instead establishes a life-long latency from which it reactivates during episodes of stress or impaired immunity. In cases of immune immaturity, immune senescence, or impairment of the immune system, HCMV replication is not properly controlled, frequently resulting in severe morbidity and mortality in patients such as congenitally infected infants, people living with HIV, and transplant recipients (Griffiths and Reeves, 2021).\n\nAlthough the concerted activity of various mediators of innate and adaptive immunity is crucial for efficient cytomegalovirus (CMV) control (Poli\u0107 et al., 1998), two aspects are particularly important: interferon (IFN) responses and CD4 + T cells. Accordingly, the depletion of CD4 + cells together with IFN\u03b3 results in CMV reactivation in more than 75% of animals (Poli\u0107 et al., 1998). IFN secretion is among the first responses elicited upon pathogen encounter. IFNs trigger signaling cascades and initiate a specific transcriptional profile that fosters intrinsic immunity, induces direct innate immunity, and orchestrates adaptive immune responses. In this regard, IFNs act by inducing IFN-stimulated genes (ISGs), many of which are known for their antiviral activity, and by downregulating IFN-repressed genes (IRepGs) (Megger et al., 2017; Schoggins et al., 2011; Trilling et al., 2013). In addition to their ability to establish a cell-intrinsic antiviral state, IFNs boost adaptive immune responses. In particular, IFN\u03b3 is well known as a key cytokine for antiviral Th1 responses and as potent enhancer of antigen presentation. In accordance with the relevance of IFNs, the absence of IFN-induced signaling renders mice extremely vulnerable to CMV infections (Gil et al., 2001; Le Trilling et al., 2018; Strobl et al., 2005). CMV infection induces strong CD4 + T cell responses. While best known for their cytokine secretion, helping B cells and CD8 + T cells, CD4 + T cells can elicit antiviral activity (Jonji\u0107 et al., 1990; Lim et al., 2020; Verma et al., 2016). The latter is associated with the ability to secrete antiviral cytokines such as IFN\u03b3. Furthermore, certain CD4 + T cells can kill virus-infected cells (Juno et al., 2017). HCMV-specific CD4 + T cells were shown to produce IFN\u03b3, TNF\u03b1, and granzyme B (Gamadia et al., 2004) and to lyse HCMV antigen-expressing cells in vitro (van Leeuwen et al., 2006; van Leeuwen et al., 2004). Accordingly, CD4 + T cell-mediated immunity is crucial for CMV control in mouse models in vivo (Jonji\u0107 et al., 1989; Jonji\u0107 et al., 1990; Walton et al., 2008), and for controlling maternal viremia and preventing severe CMV-associated fetal disease during primary rhesus CMV infections (Bialas et al., 2015). Furthermore, CD4 + T cells are fundamental to prevent HCMV reactivation in immunocompromised patients receiving solid organ allografts (Lim et al., 2020) or hematopoietic cell transplantation (HCT), while insufficient CD4 + T cell levels in transplant recipients are associated with recurrent HCMV reactivation, end-organ disease, and an increased likelihood of lethal infections (Einsele et al., 1993; Gabanti et al., 2015).\n\nFor the canonical T cell receptor (TCR)-dependent activation of CD4 + T cells, antigenic peptides must be presented by the HLA-II molecules HLA-DR, HLA-DQ, or HLA-DP. While antigen-presenting cells (APCs) constitutively express HLA-II, various other cell types start to express HLA-II when they are exposed to IFN\u03b3 (Chang and Flavell, 1995; Siegrist et al., 1995; Steimle et al., 1993; Ting and Trowsdale, 2002). Activated CD4 + T cells efficiently produce IFN\u03b3, leading to a positive feed-forward loop of increased HLA-II presentation and enhanced CD4 + T cell recognition in the infected niche. Constitutive as well as IFN\u03b3-induced HLA-II expression are both mediated by the class II transactivator (CIITA), which is the essential and sufficient master regulator of the transcription of the genes in the HLA-II locus. Accordingly, CIITA and its co-factors control the expression of the classical HLA-II molecules DR, DQ, DP, the non-classical HLA-II peptidome editors DM and DO, and the invariant chain (Ii, also known as CD74) (Boss and Jensen, 2003; Ting and Trowsdale, 2002). The absence of functional CIITA results in a loss of HLA-II presentation, leading to a hereditary immunodeficiency called type II bare lymphocyte syndrome (BLS) that causes an extreme vulnerability to infections. In accordance with the relevance of CD4 + T cells and CIITA-driven HLA-II presentation, BLS patients frequently suffer from severe, persistent HCMV infections (Elhasid and Etzioni, 1996; Klein et al., 1993).\n\nFor allogenic hematopoietic cell therapy (HCT), the HLA-DP locus is of particular interest given the frequent incompatibility of patients and donors (Fleischhauer and Shaw, 2017), the allotype dependency of peptide presentation and recognition by alloreactive CD4 + T cells (Arrieta-Bola\u00f1os et al., 2022; Meurer et al., 2021; Yamashita et al., 2017), and the relevance for chronic virus infections as indicated by the strong association of HLA-DPB1 SNPs with chronic hepatitis B virus (HBV) infections (see e.g. Kamatani et al., 2009). CD4 + T cells recognizing HLA-DP-restricted peptides have also been described for HCMV (Ameres et al., 2015; Hyun et al., 2020; Klobuch et al., 2022; Stevanovic et al., 2013; Ventura et al., 2012), but to our knowledge, an HCMV-encoded protein antagonizing HLA-DP-restricted antigen presentation has not yet been described.\n\nHCMV-propagating cells such as human fibroblasts, endothelial cells, and epithelial cells are capable of inducing HLA-II presentation after exposure to IFN\u03b3. Moreover, cells serving as a reservoir for HCMV latency, e.g., monocytes, constitutively express HLA-II. CD4 + T cells can recognize HCMV-derived antigens known to be expressed during latency, leading to the recognition of latently infected cells and the production of IFN\u03b3 and/or cytotoxic responses (Mason et al., 2013). These facts raise the question of how HCMV circumvents CD4 + T cell-mediated elimination during productive replication as well as latency.\n\nHere, we show that the HCMV-encoded G protein-coupled receptor (GPCR) pUS28 directly targets CIITA, impairing HLA-II presentation and CD4 + T cell recognition. Importantly, pUS28 is among the few viral proteins abundantly expressed during both productive replication as well as experimental and natural latency (Beisser et al., 2001; Cheung et al., 2006; Goodrum et al., 2002; Krishna et al., 2018; Krishna et al., 2017a). Thus, our data reveal a novel mechanism employed by HCMV to circumvent the recognition by CD4 + T cells during different stages of infection.\n\n## Results\n\n## HCMV counteracts IFN\u03b3-induced HLA-DP induction\n\nGiven the aforementioned relevance of HLA-DP in HCT and chronic virus infections, we interrogated if and how HCMV affects HLA-DP induction and presentation. IFN\u03b3 induced the upregulation of HLA-DP on the surface of HCMV-permissive fibroblasts (Figure 1A and B), whereas this was not the case after treatment with IFN\u03b1 or TNF\u03b1 (Figure 1B). Longer periods of IFN\u03b3 incubation led to an increase of HLA-DP and HLA-DR on the cell surface (Figure 1C). Despite the fact that the IFN\u03b3-induced induction of HLA-DR and HLA-DP were clearly evident, professional antigen-presenting cells such as monocyte-derived dendritic cells still reached higher HLA-II surface levels (Figure 1\u2014figure supplement 1). In clear contrast to uninfected fibroblasts, the upregulation of HLA-DP by IFN\u03b3 was prevented in HCMV-infected cells (Figure 1D and E). Interestingly, the same inhibitory phenotype was observed upon infection with HCMV mutants lacking the US2-6 or the US2-11 gene region (Figure 1D and E), that comprise the genes for pUS2 and pUS3, which degrade HLA-DR\u03b1 and HLA-DM\u03b1 (Tomazin et al., 1999) and block the assembly of HLA-DR\u03b1/\u03b2 heterodimers (Hegde et al., 2002), respectively. These data indicate that HCMV encodes so far unknown antagonists of IFN\u03b3-induced HLA-DP presentation located outside of the US2-11 gene region.\n\n## The HCMV-encoded pUS28 antagonizes CIITA-induced HLA-II expression\n\nSince HCMV prevented HLA-DP induction, we aimed to identify the responsible gene product(s). To this end, we applied an expression library, which has been previously described (Salsman et al., 2008), comprising more than 150 canonical HCMV genes, to screen for HLA-DP antagonists. To minimize potentially confounding effects of viral antagonists of IFN signaling acting upstream of CIITA induction, we set up the screen by co-transfecting a CIITA expression plasmid together with individual vectors encoding HCMV proteins. Afterwards, the CIITA-induced HLA-DP cell surface expression was quantified by flow cytometry (Figure 2A). The screen provided candidates for the observed antagonism of HLA-DP induction, including pUS9, pUS19, pp65-UL83, and pUS28. For pp65-UL83, Odeberg et al., 2003 have described a lysosomal sequestration and subsequent degradation of HLA-DR (Odeberg et al., 2003), and pUS9 targets several host proteins including HLA/MHC-like molecules such as MR1 and MICA\u2217008 (Seidel et al., 2015; Ashley et al., 2023). Due to its relevance for the HCMV biology, we further assessed the influence of pUS28 on the CIITA-dependent induction of genes in the HLA-II locus. Validation experiments substantiated that pUS28 was reproducibly capable of significantly diminishing CIITA-induced HLA-DP surface expression (Figure 2B and data not shown). Similar to its effect on HLA-DP, pUS28 also significantly diminished the cell surface expression of the presenting molecules HLA-DR (Figure 2C and D) and HLA-DQ (Figure 2D) as well as the peptide editor HLA-DM (Figure 2D). Given that different cell types express varying levels of CIITA, we tested the dose-response relationship between CIITA and pUS28. While increasing amounts of CIITA dose-dependently drove HLA-DP and HLA-DR expression in transfected cells, pUS28 significantly and dose-dependently inhibited surface levels of HLA-DR (Figure 2E) and HLA-DP (Figure 2F), at different levels of CIITA abundance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96414/elife-96414-fig2-v1.jpg)\n\n**Figure 2.:** (A) HeLa cells were co-transfected with a CIITA expression construct and a library of single HCMV gene-encoding plasmids or empty vector. At 48 hr post-transfection, cells were stained with anti-HLA-DP antibody and analyzed by flow cytometry. Cell surface expression of HLA-DP was normalized to cells transfected with CIITA expression construct and empty vector. The percentage of HLA-DP-positive cells is shown. (B/C) HeLa cells were co-transfected with a CIITA expression construct and indicated plasmids or empty vector. At 48 hr post-transfection, cells were stained with anti-HLA-DP (B) or anti-HLA-DR (C) antibody and analyzed by flow cytometry. Cell surface expression of HLA class II was normalized to cells transfected with CIITA expression construct and empty vector. The percentage of HLA-DP- or HLA-DR-positive cells is shown (mean values \u00b1 SD, n=4\u20138). Significance was calculated by the Kruskal-Wallis test compared to empty vector control. Comparisons are shown when statistically significant. Untrans, untransfected. Vector, empty vector control. (D) HeLa cells were either left untreated or were co-transfected with a CIITA expression construct and pcDNA:US28-HA or empty vector. At 48 hr post-transfection, cells were stained with anti-HLA-DP, anti-HLA-DR, or anti-HLA-DQ antibody or intracytoplasmic stained with anti-HLA-DM antibody and analyzed by flow cytometry. (E/F) HeLa cells were co-transfected with indicated amounts of CIITA expression construct and increasing doses of pcDNA:US28-HA, a control plasmid (pcDNA:US29-HA), or empty vector. The total DNA amount of each transfection was adjusted to the same level by adding the respective amount of empty vector. At 48 hr post-transfection, cells were stained with anti-HLA-DR (E) and anti-HLA-DP (F) antibodies and analyzed by flow cytometry. The percentage of HLA-DR- and HLA-DP-positive cells is shown (n=5\u20138). Significance was calculated by two-way ANOVA test. Comparisons are shown when statistically significant. Vector, empty vector control. Control, control plasmid.\n\n## pUS28 downregulates CIITA post-transcriptionally\n\nTo probe into the underlying molecular mechanism of the pUS28-mediated HLA-II inhibition, untagged or epitope-tagged CIITA was co-expressed with pUS28 or a control protein. Afterwards, transcript levels of CIITA were quantified by semi-quantitative reverse transcriptase (RT)-PCR. Irrespective of the presence or absence of pUS28, the levels of tagged as well as untagged CIITA mRNA remained unaltered (Figure 3A), while the amounts of HLA-DP and HLA-DR mRNA were decreased (data not shown). In contrast to the unchanged mRNA levels of CIITA, a parallel evaluation of CIITA protein amounts revealed a drastic reduction upon pUS28 co-expression (Figure 3B), suggesting a post-transcriptional effect of pUS28 on CIITA. The CIITA down-modulating capacity of pUS28 was observed with different plasmid preparations (Figure 3C), and was specific for CIITA, since control proteins such as the enhanced yellow fluorescent protein (EYFP) remained unaffected (Figure 3C), arguing against a general influence of pUS28 on transcription or translation. The effect on CIITA was also not an overarching capacity of viral chemokine receptor homologs, since the protein pUS27, a GPCR encoded by the neighboring gene in the viral genome, did not decrease CIITA protein amounts (Figure 3D) or HLA-DP surface levels (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96414/elife-96414-fig3-v1.jpg)\n\n**Figure 3.:** (A/B) HeLa cells were either left untreated or were co-transfected with CIITA or CIITA-3xFLAG expression constructs and pcDNA:US28-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 24 hr post-transfection, cells were harvested and split for preparation of total RNA and protein lysate. RNA samples were used for semi-quantitative RT-PCR with indicated gene-specific primers (A) and protein lysates were analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags (B). (C) HeLa cells were either left untreated or were co-transfected with the indicated plasmids. At 24 hr post-transfection, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. #1, #2, different plasmid preparations. (D) HeLa cells were either left untreated or were co-transfected with CIITA-3xFLAG expression construct and pcDNA:US28-HA, pcDNA:US27-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 24 hr post-transfection, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. (E) HeLa cells were co-transfected with CIITA expression construct and increasing doses of pcDNA:US28-HA or pcDNA:US27-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. The total DNA amount of each transfection was adjusted to the same level by adding the respective amount of empty vector. At 48 hr post-transfection, cells were stained with anti-human leukocyte antigen (HLA)-DP antibody and analyzed by flow cytometry. The percentage of HLA-DP-positive cells normalized to empty vector control is shown (n=3). The different transfection conditions were compared to the control condition (vector) by one-way ANOVA test. Comparisons are shown when statistically significant. Untrans, untransfected. Vector, empty vector control. Control, pIRESNeo-FLAG/HA-EYFP.Figure 3\u2014source data 1.Figure 3A-D, indicating the relevant bands and treatments.Figure 3\u2014source data 2.Figure 3A-D.\n\n## Global mass spectrometry confirmed the pUS28-mediated decrease of the CIITA abundance and identified downstream targets of the HLA class II pathway\n\nTo address the influence of pUS28 on CIITA and the proteome, we performed global mass spectrometry (MS) analyses in which we compared control cells with cells expressing either pUS28, CIITA, or both (Figure 4A and B). As expected, our MS analyses confirmed the expression of pUS28 (Figure 4A-C). In agreement with previous data, pUS28 led to a significant upregulation of IL-6 (Slinger et al., 2010), and attenuated AP-1 components (Krishna et al., 2019) (here JunD) (Figure 4D and E), validating our experimental setup. These unbiased MS analyses confirmed the significant downregulation of CIITA by pUS28 (Figure 4F). Other components of the CIITA enhanceosome, such as RFX5, RFX-AP, NF-YA, and NF-YC, as well as recently described factors (Kiritsy et al., 2021) that influence HLA-II transcription showed constitutive, CIITA-independent expression (Figure 4\u2014figure supplement 1). Conversely, CD74 - the invariant chain required for proper maturation and loading of HLA class II molecules - was significantly induced by CIITA, unless pUS28 was co-expressed (Figure 4G). The negative effect of pUS28 on CIITA-driven CD74 expression was confirmed by flow cytometry (Figure 4H). In contrast to several other CIITA-regulated genes, CD74 is not encoded by the HLA-II locus on chromosome 6. Thus, the fact that pUS28 prevents CIITA-induced CD74 induction suggests that pUS28 elicits the negative effect on CIITA target genes independent of their genomic localization in the MHC-II locus.\n\n## The ability of pUS28 to decrease HLA class II expression is evolutionarily conserved and evident in loss-of-function as well as gain-of-function experiments\n\nTo validate the effect of pUS28 on CIITA in an independent model, we generated fibroblasts expressing the viral GPCRs pUS28 or pUS27 in a doxycycline-inducible manner. While doxycycline treatment in parental and pUS27-expressing fibroblasts had no significant effect on the IFN\u03b3-induced HLA-DP expression, HLA-DP cell surface levels were significantly decreased upon pUS28 induction (Figure 5). Additionally, an HCMV mutant lacking the gene US28 (\u0394US28-HCMV) was generated and tested regarding its effect on HLA-II. Leukemic cells that constitutively express HLA-II were either infected with wild-type (wt) HCMV or \u0394US28-HCMV. In accordance with aforementioned data, wt HCMV significantly decreased the percentage of HLA-DP- and HLA-DR-positive cells in comparison to mock-treated cells. In contrast, \u0394US28-HCMV showed an impaired ability to downregulate HLA-II (Figure 5B and C). We also assessed the effect of the mouse cytomegalovirus (MCMV)-encoded pUS28 homolog pM33 regarding its capacity to downregulate human (Figure 5D) and mouse CIITA (Figure 5E). We found that pM33 and pUS28 both downregulate human and mouse CIITA, suggesting an evolutionarily conserved function.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/96414/elife-96414-fig5-v1.jpg)\n\n**Figure 5.:** (A) HeLa TRex Flip-in:US28HA (US28) and HeLa TRex Flip-in:US27HA (US27) cells were either treated with 200 \u00b5g/ml doxycycline or left untreated. At 24 hr after treatment, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. Furthermore, HeLa TRex Flip-in (parental), HeLa TRex Flip-in:US28HA (US28), and HeLa TRex Flip-in:US27HA (US27) were either treated with 200 U/ml IFN\u03b3 or a combination of 200 \u00b5g/ml doxycycline and 200 U/ml IFN\u03b3. After 48 hr of treatment, cells were stained with anti-HLA-DP antibody and analyzed by flow cytometry. The fold induction of the mean fluorescence intensity (MFI) values of HLA-DP expression of cells in presence compared to absence of doxycycline treatment (taking the change over background into account) are shown (n=5). Significance was calculated by one-way ANOVA test. Comparisons are shown when statistically significant. (B/C) UoC-B6 cells were either mock infected or were infected (MOI 3) with AD169-BAC2-UL131rep (wt) or AD169-BAC2-UL131rep\u0394US28 (\u0394US28). At 2 hr post-infection, medium change was performed. At 3 d post-infection, cells were stained with anti-HLA-DP and anti-HLA-DR antibodies and analyzed by flow cytometry. The percentage of HLA-DP- (B) and HLA-DR-positive (C) cells is shown (n=5). Significance was calculated by RM one-way ANOVA test. Comparisons are shown when statistically significant. (D) HeLa cells were either left untreated or were co-transfected with CIITA-3xFLAG expression construct and pcDNA:US28-HA, pcDNA:M33-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector pcDNA3.1. At 24 hr post-transfection, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. #1, #2, different plasmid preparations. (E) HeLa cells were either left untreated or were co-transfected with 3xFLAG-mouseCIITA expression construct and pcDNA:US28-HA, pcDNA:M33-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 24 hr post-transfection, protein lysates were prepared and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags.Figure 5\u2014source data 1.Figure 5A, D and E, indicating the relevant bands and treatments.Figure 5\u2014source data 2.Figure 5A, D and E.\n\n## pUS28 interacts with CIITA and reduces its half-life irrespective of the G protein-coupling capacity\n\nNext, we tested if pUS28 and CIITA physically interact. To circumvent the issue that CIITA levels were diminished to almost undetectable levels upon pUS28 co-expression, lysates either containing pUS28 or CIITA were combined before an immunoprecipitation (IP) was performed. The IP of pUS28 co-purified CIITA (Figure 6A, upper panel) and vice versa (Figure 6A, lower panel), indicating that both proteins form physical complexes. To test if pUS28 forces CIITA into a detergent-insoluble fraction, cell lysates were prepared with a denaturing lysis buffer (based on high urea concentrations) and subjected to immunoblot analysis. This approach did not lead to the reappearance of CIITA (Figure 6\u2014figure supplement 1). Irrespective of the absence or presence of pUS28, we could not detect CIITA in cell culture supernatants (Figure 6\u2014figure supplement 2), arguing against pUS28-mediated CIITA shedding. Since we did not find evidence for sequestration or shedding, we tested for a pUS28-mediated CIITA degradation. To this end, we compared the half-life of CIITA in the presence or absence of pUS28. Despite the inherently short half-life of CIITA (Schnappauf et al., 2003), we observed a more rapid CIITA decay when pUS28 was co-expressed (Figure 6B and Figure 6\u2014figure supplement 3).\n\nIntriguingly, a panel of inhibitors targeting different cellular degradation pathways (e.g. the inhibitors of the ubiquitin-proteasome pathway MG-132 and Bortezomib, the inhibitors of UBA3-dependent neddylation blocking cullin-RING ubiquitin ligase activity MLN4924 and TAS4464, the autophagy inhibitors bafilomycin and 3-MA, the inhibitors of lysosomal acidification chloroquine and ammonium chloride, the pan-caspase inhibitor Z-VAD-FMK, the protease inhibitors Pepstatin A, E-64, PMSF, and a pan-protease inhibitor cocktail, as well as the dynamin inhibitor Dynasore and the convertase inhibitor Decanoyl-RVKR-CMK) all failed to significantly and reproducibly restore CIITA levels in pUS28-expressing cells (Figure 6\u2014figure supplement 4 and data not shown), implying that pUS28 reduces CIITA levels either by redundant or unusual degradation processes.\n\nTo assess if the G-protein signaling of pUS28 is essential for the downregulation of CIITA, we compared wt-pUS28 and R129A-pUS28. The latter is a well-studied mutant of pUS28 that harbors a single amino acid substitution at position 129 (arginine to alanine) within the canonical DRY motif, abrogating G-protein signaling without compromising the subcellular localization or internalization (Waldhoer et al., 2003; visualized in Figure 7A). Both pUS28 variants diminished CIITA protein levels (Figure 7B). Conversely, the intracellular C terminus turned out to be indispensable for the CIITA degradation (Figure 7C). In accordance with these findings, R129A-pUS28 and wt-pUS28 similarly diminished the surface expression of HLA-DP (Figure 7D) and HLA-DR (Figure 7E), while the mutant lacking the C terminus (US28-\u0394C) did not (Figure 7F and G), indicating that pUS28 targets CIITA through its C terminus. In IP experiments, pUS28-\u0394C co-purified CIITA (Figure 7H), suggesting that the lack of the C terminus of pUS28 did not impair the physical interaction with CIITA but rather affected the degradation machinery. Further investigations of the C-terminal part of pUS28 revealed that amino acids in proximity to the transmembrane domain 7 were required for downregulation of CIITA as only a mutant lacking the whole C terminus completely lost the capability to target CIITA (Figure 7I).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/96414/elife-96414-fig7-v1.jpg)\n\n**Figure 7.:** (A) Schematic overview of the structure of pUS28. All structural parts of the protein and the DRY motif are indicated. Mutation of the arginine in this motif to alanine (R129A) ablates G-protein coupling. This panel was created using BioRender.com. (B) HeLa cells were either left untreated or were co-transfected with CIITA-3xFLAG expression construct and pcDNA:US28-HA, pcDNA:US28-R129A-HA, pIRESNeo-FLAG/HA-EYFP, or empty vector. At 24 hr post-transfection, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. (C) HeLa cells were either left untreated or were co-transfected with CIITA-3xFLAG expression construct and pcDNA:US28-HA, pcDNA:US28-\u0394C-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 24 hr post-transfection, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. (D/E) HeLa cells were either left untreated or were co-transfected with CIITA expression construct and pcDNA:US28-HA, pcDNA:US28-R129A-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 48 hr post-transfection, cells were stained with anti-HLA-DP (D) or anti-HLA-DR (E) antibodies and analyzed by flow cytometry. Cell surface expression of HLA-DP or HLA-DR was normalized to cells co-transfected with CIITA expression construct and empty vector. The percentage of HLA-DP- and HLA-DR-positive cells is shown (n=3). The different transfection conditions were compared to the control condition (vector) by one-way ANOVA test. Additionally, US28-R129A-HA was compared to US28-HA. Comparisons are shown when statistically significant. (F/G) HeLa cells were either left untreated or were co-transfected with CIITA-3xFLAG expression construct and pcDNA:US28-HA, pcDNA:US28-\u0394C-HA, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 48 hr post-transfection, cells were stained with anti-HLA-DP (F) or anti-HLA-DR (G) antibodies and analyzed by flow cytometry. Cell surface expression of HLA-DP or HLA-DR was normalized to cells transfected with CIITA expression construct and empty vector. The percentage of HLA-DP- and HLA-DR-positive cells is shown (n=3). The different transfection conditions were compared to the control condition (vector) by one-way ANOVA test. Additionally, US28-\u0394C-HA was compared to US28-HA. Comparisons are shown when statistically significant. (H) HeLa cells were either left untreated or were transfected with CIITA-3xFLAG expression construct or pcDNA:US28-\u0394C-HA. At 24 hr post-transfection, protein lysates were generated and an IP with HA-specific mouse monoclonal antibody was performed either with unmodified samples or with mixed samples of CIITA- and US28-transfected cells. The lysates and IP samples were analyzed by immunoblot to test CIITA and pUS28-\u0394C co-precipitation. (I) HeLa cells were either left untreated or were co-transfected with CIITA-3xFLAG expression construct and pIRES:US28-HA, different pIRES:US28-\u0394C-HA mutants, pIRESNeo-FLAG/HA-EYFP (control) or empty vector. At 24 hr post-transfection, protein lysates were generated and analyzed by immunoblot using antibodies detecting the indicated proteins or the respective epitope tags. Untrans, untransfected. Vector, empty vector control. \u0394C (1-297), C-terminal (aa 298\u2013354) deletion mutant of pUS28. 1\u2013313, C-terminal (aa 314\u2013354) deletion mutant of pUS28. 1\u2013329, C-terminal (aa 330\u2013354) deletion mutant of pUS28. 1\u2013345, C-terminal (aa 346\u2013354) deletion mutant of pUS28. R129A, point mutation mutant of pUS28. Control, pIRESNeo-FLAG/HA-EYFP.Figure 7\u2014source data 1.Figure 7A-B and H-I, indicating the relevant bands and treatments.Figure 7\u2014source data 2.Figure 7A-B and H-I.\n\n## pUS28 antagonizes HCMV-specific CD4+ T cells\n\nAfter identifying pUS28 as a viral antagonist of the CIITA-driven HLA class II expression and considering that pUS28 is expressed during HCMV latency, we aimed to investigate the relevance of pUS28 for immune recognition. HCMV-specific CD4 + T cells were enriched by antigen-dependent expansion using peripheral blood mononuclear cells (PBMCs) from HCMV-seropositive healthy individuals exposed to lysates derived from HCMV-infected fibroblasts (see schematic overview in Figure 8A). During the 24 hr re-stimulation phase, the HCMV-specific CD4 + T cells were co-cultured with HCMV antigen-loaded fibroblasts expressing CIITA together with pUS28, with pUS28-R129A or with an irrelevant protein. CD4 + T cell activation was evaluated by CD137 upregulation. HCMV-specific CD4 + T cells from HCMV-positive individuals vigorously responded to CIITA-expressing cells, but not to control cells that did not express CIITA (Figure 8B and Figure 8\u2014figure supplement 1), indicating a specific HLA-II-dependent T cell activation. In the presence of pUS28 or the mutant R129A-pUS28, the immune recognition of CIITA-expressing, antigen-loaded cells by HCMV-specific CD4 + T cells was significantly reduced (Figure 8B). Since CD4 + T cells are well-known for the ability to produce antiviral cytokines such as IFN\u03b3, we assessed the cell culture supernatants collected after the 24 hr re-stimulation phase regarding their antiviral activity against HCMV. We conditioned human fibroblasts with the supernatants prior to the infection with an EGFP-expressing reporter HCMV. Afterwards, we quantified HCMV-induced EGFP expression (Figure 8C) and visualized the degree of HCMV infection by microscopy (Figure 8D). Supernatants from HCMV-specific CD4 + T cells stimulated with CIITA-expressing cells strongly inhibited HCMV-induced EGFP expression, while supernatants derived from CD4 + T cells stimulated in the presence of pUS28 showed diminished antiviral activity (Figure 8C and D). These data demonstrate that pUS28 inhibits the CIITA-driven and HLA-II-dependent CD4 + T cell activation in terms of the production of antiviral cytokines.\n\n## Discussion\n\nIn this study, we identified pUS28 as HCMV-encoded antagonist of CIITA and CIITA-driven HLA class II expression (Figure 9). The viral protein was found to physically interact with CIITA, causing a post-transcriptional decline of the CIITA protein by an increased protein decay. This CIITA degradation was sufficient to decrease HLA-DR, HLA-DQ, HLA-DM, CD74/invariant chain, and HLA-DP expression and to abrogate activation of HCMV-specific CD4 + T cells. Despite its role as a highly relevant human pathogen, attenuated HCMVs became the basis for the development of promising vaccine vectors (e.g. for the vaccination against lentiviruses Picker et al., 2023), which may benefit from the deletion of immune evasins such as US28, either in terms of enhanced immunogenicity and/or increased safety.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/96414/elife-96414-fig9-v1.jpg)\n\n**Figure 9.:** The findings shown in this publication are consistent with the following model: pUS28 acts as Human cytomegalovirus (HCMV)-encoded antagonist of CIITA and CIITA-driven HLA class II expression. The pUS28-dependent CIITA degradation is sufficient to decrease antigen presentation by HLA-II molecules including HLA-DR and HLA-DP, and to reduce the activation of HCMV-specific CD4 + T cells. The CIITA antagonism is evolutionarily conserved in the mouse cytomegalovirus (MCMV)-encoded pM33. This figure was created using BioRender.com.\n\nBriefly after its discovery as HCMV-encoded GPCR (Chee et al., 1990), the striking homology of pUS28 to human CX3CR1 was noticed (Gao et al., 1993) and its functionality as calcium-mobilizing beta chemokine receptor was documented (Gao and Murphy, 1994). Since then, pUS28 has became one of the best-studied HCMV proteins, and several important immunological and viral functions have been assigned to this molecule. For example, it can act as a co-factor for the HIV entry (Pleskoff et al., 1997), it mediates G protein-coupled intracellular signaling (Billstrom et al., 1998), it sequesters RANTES/MCP-1 (Bodaghi et al., 1998) and serves as fractalkine receptor (Burg et al., 2015; Kledal et al., 1998), it mediates vascular smooth muscle cell migration (Burg et al., 2015; Kledal et al., 1998; Melnychuk et al., 2004; Streblow et al., 1999; Streblow et al., 2003), and it may act as an oncogene or onco-modulatory protein (Bongers et al., 2010; Maussang et al., 2006; Slinger et al., 2010). In terms of its expression profile, pUS28 is special due to its presence in experimental and natural latency (Beisser et al., 2001; Cheung et al., 2006; Goodrum et al., 2002; Krishna et al., 2018; Krishna et al., 2017a), constituting a drug target for the latent HCMV reservoir using specifically designed toxins (Krishna et al., 2017b). Our study adds the inhibition of CIITA-induced HLA-II antigen presentation to the list of important pUS28 functions. The relevance of pUS28 for latency establishment and reactivation has been studied in huNSG mice (Crawford et al., 2019). These mice develop certain aspects of a human T cell compartment (Legrand et al., 2006), which may lead to HLA-II-restricted elimination of infected cells by CD4 + T cells. In addition to its influence on latency and reactivation, the herein documented ability of pUS28 to counteract CIITA-driven HLA-II presentation may influence the outcome of such experiments by effects of pUS28 on the CD4 + T cell recognition by the immune system. Similarly, pUS28-expressing mouse cytomegalovirus (MCMV) mutants have been studied in mice (Farrell et al., 2013; Legrand et al., 2006). In this regard, it may be relevant to highlight that the HCMV-encoded pUS28 and its MCMV homolog pM33 are both capable of downregulating mouse CIITA (Figure 5E).\n\nElegant work by the Sinclair laboratory revealed that pUS28, besides its function as GPCR and latency regulator, targets certain host proteins such as MNDA/PYHIN3 and IFI16/PYHIN2 for rapid degradation. In contrast to the effect on CIITA shown here, however, this degradation was dependent on GPCR signaling as indicated by the restoration of target protein levels when R129 was mutated (Elder et al., 2019). Although CIITA and HLA-DP levels were neither assessed nor discussed, the same work documented a negative effect of pUS28 on constitutive HLA-DR expression, while no difference between wt-pUS28 and an R129A mutant with regard to the IFN\u03b3-induced HLA-DR expression was observed (Elder et al., 2019). Importantly, Elder et al., 2019 and Slobedman et al., 2002 showed that latently infected primary human CD14 + monocytes and human fetal liver hematopoietic cells exhibit less HLA-DR on the surface compared to uninfected cells (Elder et al., 2019; Slobedman et al., 2002). Our data regarding the targeting of CIITA by pUS28 now provide a parsimonious molecular explanation for these findings, and extend it to other highly relevant HLA-II molecules including CD74, HLA-DM, HLA-DQ, and HLA-DR \u2013 which is very well in line with findings by Shnayder et al., 2020 who showed an inverse correlation between HCMV transcripts and CD74 as well as HLA-II expression in CD14 + monocytes (Shnayder et al., 2020).\n\nRecent work with the MCMV model showed that the deletion of the US28 homolog M33 results in altered MHC-I presentation in an allotype-specific manner (H-2Ld and H-2Kd being downregulated in an M33-dependent manner, but not H-2Dd) (White et al., 2022). Our data show that pM33 targets mouse CIITA (Figure 5E), raising the intriguing question if pM33 also affects the MHC-II-dependent recognition of MCMV-infected cells by CD4 + T cells. Furthermore, it will be interesting to study if and how pM33 cooperates with the other MCMV-encoded GPCR pM78, which is necessary but not sufficient for a post-transcriptional attack on MHC-II molecules in the endosome (Yunis et al., 2018).\n\nPrevious studies focused on the interplay between HCMV infection and HLA-DR presentation, largely neglecting other HLA-II molecules such as HLA-DP. Work by Miller et al., 1998 showed that HCMV counteracts IFN\u03b3-induced gene expression, partly by inducing the proteasomal degradation of JAK1, leading to diminished CIITA and HLA-DR\u03b1 induction when HCMV-infected cells are exposed to IFN\u03b3 (Miller et al., 1998). Furthermore, HCMV targets constitutive as well as induced CIITA-dependent HLA-II expression at multiple levels by a multipronged attack, comprising the inhibition of (I) IFN-JAK-STAT signaling (Le et al., 2008; Le Trilling et al., 2020; Miller et al., 1998), (II) constitutive CIITA transcription (Lee et al., 2011; Sandhu and Buchkovich, 2020), (III) CIITA protein stability (as shown here), and (IV) HLA-DR degradation and translocation (Hegde and Johnson, 2003; Hegde et al., 2002; Tomazin et al., 1999). This high level of redundancy may also explain why others concluded, based on loss-of-function experiments, that the US gene region comprising US28 is dispensable for the inhibition of HLA-DR presentation (Sandhu and Buchkovich, 2020), while we observed a clear gain-of-function regarding HLA-II inhibition upon pUS28 expression and an impaired, but not completely abrogated, ability to decrease HLA class II expression by \u0394US28-HCMV.\n\nHLA-II-restricted CD4 + T cell immunity to HCMV is crucial for the control of the lifelong infection by this virus. Its impairment in immunocompromised patients, including HCT recipients, is associated with considerable clinical risks. The present study is the first to identify a mechanism by which HCMV downregulates HLA-DP. HCMV accomplishes the CIITA degradation by pUS28 which occurs even in the absence of other HCMV-encoded proteins. Based on the aforementioned role of pUS28 for HCMV latency, it is tempting to speculate that pUS28 may shield latently infected cells from HLA-II-restricted CD4 + T lymphocytes.\n\nIn our introduction, we referred to the wealth of knowledge regarding the critical importance of CD4 + T cells for the immune control of cytomegaloviruses in mouse and rhesus models as well as in humans. These findings seem to contradict the multitude of CMV-encoded inhibitors of constitutive and induced HLA-II presentation. How can these two, at first glance mutually exclusive, facts be reconciled? The first argument is that cytomegaloviruses and their hosts are situated in an evolutionary red-queen race that establishes a hard-fought equilibrium. Thus, the residual CD4 + T cell-mediated immune control recognizing CMV-infected cells presenting diminished HLA-II levels may still be crucial for host survival despite the existence of viral inhibitors. Another intriguing possibility is that a relevant fraction of the HLA-II-mediated CD4 + T cell activation might be elicited by cells that are resistant to HCMV infections, such as the recently described HLA-DR +NKG2C+memory NK cells (Costa-Garc\u00eda et al., 2019), which have been shown to be mediators of viral control in transplanted patients (Davis et al., 2015). The elucidation of the complex molecular mechanisms governing HCMV immune evasion in the immunocompetent and the immunocompromised host will provide important guidance for the design of tailored protocols of risk protection, e.g., by vaccination, targeted cellular therapies or drugs that interfere with pUS28-mediated CIITA degradation.\n\n## Methods\n\n## Cells and cell lines\n\nHeLa cells (ATCC CCL-2), HeLa CD80/Ii (Rutten et al., 2010), HeLa TRex Flip-in cells (Castello et al., 2012) and BJ-5ta cells (ATCC CRL-4001), ARPE-19 cells (ATCC CRL-2302), and MRC-5 fibroblasts (ATCC CCL-171) were grown in Dulbecco modified Eagle medium (DMEM, Gibco) supplemented with 10% (v/v) FCS (Sigma-Aldrich), 100 \u03bcg/ml streptomycin/100 U/ml penicillin (Gibco), and 2 mM glutamine (Gibco) at 37 \u00b0C in 5% CO2. Growth medium for BJ-5ta cells was further supplemented with hygromycin B (10 \u00b5g/ml, Invivogen), for HeLa TRex Flip-in cells with blasticidin (10 \u00b5g/ml, Invivogen) and normocin (100 \u00b5g/ml, Invivogen), and for HeLa TRex Flip-in:US28HA and HeLa TRex Flip-in:US27HA with geneticin (500 \u00b5g/ml, Invivogen), blasticidin (10 \u00b5g/ml, Invivogen), and normocin (100 \u00b5g/ml, Invivogen). UoC-B6 (CVCL_A304) cells were grown in RPMI 1640 medium (Gibco) supplemented with 10% (v/v) FCS (Sigma-Aldrich) and 100 \u03bcg/ml streptomycin/100 U/ml penicillin (Gibco) at 37 \u00b0C in 5% CO2. PBMCs were obtained from healthy blood donors from the University Hospital Essen after informed consent under Ethical Review Board approvals 14\u20135961-BO and 16\u20136769-BO, in accordance with the Declaration of Helsinki. HLA typing was performed by next generation sequencing as described (Lange et al., 2014). All blood donors were HCMV seropositive and were selected according to their HLA-DPB1 and HLA-DRB1 typing matching the endogenously expressed HLA-DP and HLA-DR in HeLa cells.\n\n## Generation of monocyte-derived dendritic cells\n\nTo obtain human dendritic cells, monocytes were isolated from PBMCs using a CD14 MicroBead kit (Miltenyi) according to the manufacturer\u2019s instructions, and purity was validated by flow cytometry. For maturation of monocytes into dendritic cells, monocytes were first cultured for 3 d in RPMI 1640 (c.c.pro) supplemented with 10% (v/v) heat-inactivated human serum (Merck), 50 U/ml IL-2 (Miltenyi), 10 ng/ml IL-7, 5 ng/ml IL-15 (R&D Systems), 10 ng/ml IL-4 (R&D Systems) and 100 ng/ml GMCSF (Miltenyi). Immature dendritic cells were further differentiated into mature dendritic cells by culturing for 48 hr in medium supplemented with 10 ng/ml IL-1\u03b2 (Miltenyi), 10 ng/ml TNF\u03b1 (Miltenyi), 1000 U/ml IL-6 (Miltenyi), and 1 mg/ml PGE2 (Sigma-Aldrich).\n\n## Generation of stable cell lines\n\nHeLa TRex Flip-in cells (Castello et al., 2012), kindly provided by Professor Matthias Hentze, were co-transfected with pOG44 (3 \u00b5g) and pcDNA5-FRT/TO:EF1prom-US28HA or pcDNA5-FRT/TO:EF1prom-US27HA (1 \u00b5g) using FuGENE HD transfection reagent (Promega). At 48 hr after transfection, cells were selected by culturing in DMEM (Gibco) supplemented with 10% (v/v) FCS (Sigma-Aldrich), 100 \u03bcg/ml streptomycin/100 U/ml penicillin (Gibco), 10 \u00b5g/ml blasticidin (Invivogen), 100 \u00b5g/ml normocin (Invivogen), and 500 \u00b5g/ml geneticin (Invivogen) until cell clones were grown. Successful generation of cells with Doxycycline-inducible expression of US28HA or US27HA was validated by immunoblot analysis.\n\n## Viruses, infection, and HCMV lysate generation\n\nVirus stocks from the HCMV strain AD169 (Le et al., 2008), AD169-BAC2 (Le et al., 2011), AD169-BAC2 \u0394US2-11 (Zimmermann et al., 2019), and AD169-BAC20-EGFP (Le Trilling et al., 2016) were generated as previously described and propagated in MRC-5 cells (Hengel et al., 1995).\n\nAD169-BAC2-UL131rep was generated by two-step red-mediated recombination of HCMV bacterial artificial chromosome (Tischer et al., 2006) using the primers AD169-UL131rep-Kana1 and AD169-UL131rep-Kana2 (Table 1) for PCR amplification and AD169-BAC2 as parental BAC. AD169-BAC2rep \u0394US28 was generated according to previously described procedures (Tischer et al., 2006; Wagner et al., 2002) using AD169-BAC2-UL131rep as parental BAC. Briefly, a PCR fragment was generated using the plasmid pSLFRTKn (Atalay et al., 2002) as template and primers \u0394US28-Kana1 and \u0394US28-Kana2 listed in Table 1. The PCR fragment containing a kanamycin resistance cassette was inserted into the AD169-BAC2-UL131rep by homologous recombination in E. coli, resulting in replacement of the US28 target sequence. Flp-mediated recombination was used to remove the kanamycin resistance cassette flanked by frt sites. Successful mutagenesis was confirmed by PCR analysis. Recombinant HCMV was reconstituted from HCMV BAC DNA by transfection with FuGENE HD transfection reagent (Promega) into permissive MRC-5 cells and further propagation of the virus in ARPE-19 cells.\n\nViral titers were determined by standard plaque titration on MRC-5 cells. All infections were conducted with centrifugal enhancement (900 g for 30 min).\n\nFor generation of HCMV lysates for T cell stimulation, BJ-5ta cells were infected with AD169-BAC2 at an MOI of 3 or mock-treated. At 4 d post-infection, cells were scraped, washed, and resuspended in PBS. After five freeze-thaw cycles, lysates were treated with ultra-sonication (two times 10 s) and centrifuged (1000 g, 20 min, 4 \u00b0C). Supernatants were used for T cell culture assays.\n\n## Treatment with cytokines and inhibitors\n\nHuman IFN\u03b3 (PBL), IFN\u03b1 (PBL), and TNF\u03b1 (PeproTech) were used in the following concentrations: 200 U/ml, 200 U/ml, and 20 ng/ml, respectively.\n\nDoxycycline (200 ng/\u00b5l, Sigma) was used to induce expression of the transgenes in HeLa TRex Flip-in:US28HA and HeLa TRex Flip-in:US27HA cells.\n\nThe following inhibitors were used to target different cellular degradation pathways: MG-132 (10 \u00b5M; Sigma-Aldrich), MLN4924 (2.5 \u00b5M; Active Biochem), TAS4464 (1 \u00b5M; MedChemExpress), Bortezomib (1 \u00b5M; Sellekchem), 3-Methyladenine (10 mM; Sigma-Aldrich), Bafilomycin (1 \u00b5M; Tocris), Chloroquine (50 \u00b5M; Sigma-Aldrich), Ammonium chloride (5 mM; Sigma-Aldrich), Z-VAD-FMK (50 \u00b5M; R&D), Pepstatin A (10 \u00b5M; Roth), E-64 (5 \u00b5M; Sigma-Aldrich), PMSF (1 mM; Roth), Protease Inhibitor Cocktail (1:200; Sigma-Aldrich), Dynasore (100 \u00b5M; MedChemExpress), or Decanoyl-RVKR-CMK (10 \u00b5M; Sigma-Aldrich).\n\n## Protein stability determination by cycloheximide chase assay\n\nProtein stability was determined in transfected HeLa cells (see transfection, plasmids, and mutagenesis) by treatment with 50 \u00b5g/ml cycloheximide (CHX, Roth). Cells were washed once in CHX-containing medium, followed by incubation in CHX-containing medium for indicated time periods. Finally, whole cell lysates were prepared and subjected to immunoblot analysis.\n\n## Protein precipitation of cell culture supernatant\n\nCell culture supernatant of transiently transfected HeLa cells (see transfection, plasmids and mutagenesis) was collected. 400 \u00b5l supernatant were mixed with 1600 \u00b5l ice-cold acetone and incubated for 1 hr at \u201320 \u00b0C. After centrifugation for 90 min, 4 \u00b0C, and 13,000 g, the pellet was dried and resuspended in RIPA buffer. Subsequently, samples were subjected to immunoblot analysis.\n\n## Transfection, plasmids, and mutagenesis\n\nTransient transfection was performed using 1 or 2 \u00b5g plasmid DNA and 3.5 or 7 \u00b5l FuGENE HD transfection reagent (Promega) per 5\u00d7105 cells. Cells were transfected with the following plasmids: pUNO1-hCIITA (Invitrogen), pRP-humanCIITA-3xFLAG (VectorBuilder), pRP-3xFLAG-mouseCIITA (VectorBuilder), pcDNA3.1(+) (Invitrogen), pIRESneo-FLAG/HA-EYFP (RRID:Addgene_10825, Gift from Thomas Tuschl Meister et al., 2004), pOG44 (Invitrogen), and HCMV ORF Expression Library (Salsman et al., 2008). Following plasmids were generated in this study: pcDNA3.1:US28HA, pcDNA3.1:US28HA-R129A, pcDNA3.1:US28HA-\u0394C (\u0394298\u2013354), pIRES2-EGFP:US28HA, pIRES2-EGFP:US28HA-1\u2013297, pIRES2-EGFP:US28HA-1\u2013313, pIRES2-EGFP:US28HA-1\u2013329, pIRES2-EGFP:US28HA-1\u2013345, pcDNA3.1:US27HA, pcDNA3.1:US29HA, pcDNA5-FRT/TO:EF1prom:US28HA, and pcDNA5-FRT/TO:EF1prom:US27HA.\n\nCloning of pcDNA3.1:US28HA, pcDNA3.1:US27HA, and pcDNA3.1:US29HA was performed using the primers listed in Table 1. In order to generate US28 mutants, QuikChangeII XL Site-Directed Mutagenesis kit (Agilent Technologies) was used according to the manufacturer\u2019s instructions with pcDNA3.1-US28HA plasmid as the template DNA and respective primers (see Table 1). Cloning of pIRES2-EGFP and pcDNA5-FRT/TO:EF1prom constructs was performed by subcloning the respective gene sequences from the pcDNA3.1 constructs. All constructs were confirmed by DNA sequencing of the insert (LGC Genomics).\n\n## Immunoblot analysis\n\nFor immunoblotting, whole cell lysates were prepared as described before in RIPA (Trilling et al., 2009) or 5 M urea buffer and equal amounts of protein were subjected to SDS polyacrylamide gel electrophoresis (SDS-PAGE). Proteins were subsequently transferred onto nitrocellulose membranes and immunoblot analysis was performed with the following antibodies: HA (Sigma-Aldrich, H6908), FLAG (M2, Sigma-Aldrich, F3165), \u03b2-tubulin (Cell Signaling, 2146), \u03b2-actin (Sigma-Aldrich, A2228), GAPDH (FL-335, Santa Cruz, sc-25778). Proteins were visualized using peroxidase-coupled secondary antibodies (rabbit-POD, Sigma-Aldrich, A6154; mouse-POD, Jackson ImmunoResearch, 115-035-062) and an enhanced chemiluminescence system (Cell Signaling Technology).\n\n## Immunoprecipitation\n\nCells were lysed (150 mM NaCl, 10 mM KCl, 10 mM MgCl2, 10% [v/v] glycerol, 20 mM HEPES [pH 7.4], 0.5% [v/v] NP-40, 0.1 mM phenylmethylsulfonyl fluoride [PMSF], 1 mM dithiothreitol [DTT], 10 \u00b5M pepstatin A, 5 \u00b5M leupeptin, 0.1 mM Na-vanadate, Complete protease inhibitor EDTA-free [Roche]). Lysates were centrifuged and immunoprecipitation (IP) antibody (anti-HA, HA-7, Sigma-Aldrich, H3663, or anti-FLAG, M2, Sigma-Aldrich, F3165) was added to the supernatant. Precipitation of immune complexes was performed with protein G-sepherose (GE Healthcare), benzonase (Sigma-Aldrich, E1014) digestion for 3 hr at 4 \u00b0C, and washing steps with 150, 250, and 500 mM NaCl-containing buffer. Samples were further processed by immunoblot analysis.\n\n## Semi-quantitative RT-PCR\n\nFor semi-quantitative RT-PCR, total RNA was isolated from 1\u00d7106 cells using the RNeasy Mini kit (Qiagen) and digested with DNase I. Subsequent one-step RT-PCR (Qiagen) was performed using gene-specific primers listed in Table 1.\n\n## Flow cytometry\n\nFor flow cytometry, cells were detached, washed with 2% FCS-PBS, and stained with labeled antibodies. For intracytoplasmic staining, cells were fixed in 4% PFA-PBS for 15 min at room temperature after detachment and washing steps. Permeabilization was performed with 1% saponin-PBS for 15 min at room temperature, followed by antibody staining. The following antibodies were used: HLA-DP-BV421 (B7/21, BD Biosciences, 750875), HLA-DP-APC (B7/21, Leinco Technologies, H240), HLA-DP-PE (B7/21, BD Biosciences, 566825), HLA-DR-PE (L243, BD Biosciences, 347401), HLA-DQ-PE (HLADQ1, BioLegend, 318106), HLA-DM-PE (MaP.DM1, BD Biosciences, 555983), CD137-APC (4B4-1, BD Biosciences, 561702), CD4-PE-Cy7 (SK3, BD Biosciences, 557852), CD8-Pacific Blue (B9.11, Beckman Coulter, B49182), CD3-Krome Orange (UCHT1, Beckman Coulter, B00068), CD57-FITC (TB03, Miltenyi Biotec, 130-122-935), CD14-FITC (M\u03c6P9, BD Biosciences, 345784), CD19-APC (HIB19, BD Biosciences, 555415), CD56-PE (N901, Beckman Coulter, A07788). Measurements were performed in a Gallios 10/3 cytometer (Beckman Coulter), using the Kaluza for Gallios Acquisition software (Version 1.0, Beckman Coulter), or a BD FACSCanto II (BD Biosciences), using BD FACSDiva software (BD Biosciences). Data analysis was conducted with FlowJow (Version 10.8.1, Tree Star).\n\n## T cell activation assay\n\nTo obtain HCMV-specific CD4 + T cells, PBMCs were pulsed with HCMV lysate (25 \u00b5g/ml) for 4 hr at 37 \u00b0C in 5% CO2. Cells were cultured for 14 d in RPMI 1640 (ccpro) supplemented with 10% heat-inactivated human serum (Merck), 10 ng/ml IL-7, 1 ng/ml IL-12, and 5 ng/ml IL-15 (R&D Systems). Re-stimulation with irradiated (100 Gy), lysate-pulsed PBMCs was performed at day 7 of the co-culture. Afterwards, cells were cultured in RPMI 1640 (c.c.pro) supplemented with 10% heat-inactivated human serum (Merck), 50 U/ml IL-2 (Miltenyi), 10 ng/ml IL-7 and 5 ng/ml IL-15 (R&D Systems). After 14 d, expanded T cells were re-challenged for 24 hr with HeLa cells transfected with the respective plasmids and pulsed with mock or HCMV lysate (25 \u00b5g/ml). The specific T cell response was quantified by flow cytometry as a percentage of gated CD4 + T cells expressing the activation marker CD137 as previously described (Meurer et al., 2018).\n\n## Antiviral activity of T cell supernatant\n\nTo evaluate the antiviral activity of supernatants from the T cell activation assay, MRC-5 cells were incubated with these supernatants in serial dilutions for 24 hr before cells were infected with HCMV-BAC20-EGFP at an MOI of 0.05. HCMV-induced EGFP expression was quantified using a Mithras2 LB 943 Multimode Reader (Berthold Technologies, Software MikroWin 2010). Microscopy was conducted with a Leica DM IL LED Microscope (Software LAS V4.0) and a Bioreader-7000 Fz (BIO-SYS, Software EazyReader).\n\n## LS-MS/MS sample preparation\n\nCell lysates were processed according to the SP3 protocol (Hughes et al., 2019) with minor modifications. Briefly, the cells were lysed in urea buffer (7 M urea, 2 M thiourea, 30 mM TRIS, 0.1% sodium deoxycholate, pH 8.5) and an aliquot of 10 \u00b5g was reduced with dithiothreitol (5 mM final concentration, 50 \u00b0C, 15 min), and alkylated using 2-iodoacetamide (15 mM final concentration, RT, 15 min). Subsequently, 100 \u00b5g of SP3-beads were added and the volume was adjusted to 100 \u00b5L using 50 mM ammonium bicarbonate (ambic). 170 \u00b5L of acetonitrile (ACN) were added and samples were incubated for 18 min. After washing the beads twice with 180 \u00b5L 70% EtOH and once with 180 \u00b5L ACN, 1 \u00b5g trypsin (SERVA Electrophoresis, Heidelberg, Germany) in 55 \u00b5L ambic was added and samples were digested overnight at 37 \u00b0C. Finally, the solution was transferred to a new vial, evaporated to dryness, and peptides were resuspended in 100 \u00b5L 0.1% trifluoracetic acid.\n\n## Data-independent acquisition mass spectrometry\n\n300 ng tryptic peptides per sample were analyzed in randomized order using a Vanquish Neo UHPLC coupled to an Orbitrap 480 mass spectrometer (both Thermo Scientific). The mobile phase A consisted of 0.1% formic acid (FA), mobile phase B of 80% ACN, and 0.1% FA. Peptides were loaded on a trap column (Acclaim PepMap 100, 100 \u00b5m \u00d7 2 cm, Thermo Scientific) using combined control with a loading volume of 20 \u00b5L, a maximum flow rate of 30 \u00b5L/min and a maximum pressure of 800 bar. Separation of peptides was achieved using a DNV PepMap Neo separation column (75 \u00b5m \u00d7 150 mm, Thermo Scientific) and a gradient from 1\u201340% B within 120 min and a flow rate of 400 nL/min at 60 \u00b0C. The MS parameters were set as follows: The RF lens amplitude was set to 55%, the MS1 scan range was 350\u20131450 m/z with a resolution of 120,000, a normalized AGC target of 300% and a maximum injection time of 54 ms. MS2 scans were acquired using a resolution of 30,000, a HCD collision energy of 30%, and a scan rage of 145\u20131450 with a normalized AGC target of 2500% and a maximum injection time of 80ms. A total of 40 isolation windows between 350 and 1450 m/z were cycled through with one MS1 scan being recorded after every 21 MS2 scans.\n\n## Mass spectrometry data analysis\n\nProtein identification and quantification was conducted using DIA-NN (v.1.8.1; Demichev et al., 2020) in library-free mode. The SwissProt database restricted to Homo sapiens as well as the Uniprot reference proteome for the Human cytomegalovirus (both ver. 2022_02) were used for peptide identification. Default settings were used, except for the neural network classifier, which was used in double-pass mode, and protein inference, which was set to species-specific. The report file was filtered for all q-values\u22640.01 using R (ver. 4.3.0; https://www.r-project.org/). Subsequently, protein quantities were calculated using the MaxLFQ algorithm as implemented in the DIA-NN R package. Missing data was imputed on protein level using the mixed imputation function from the imp4p package (Gianetto et al., 2020). Statistically significant differences between the experimental groups were assessed by means of ANOVA followed by Tukey\u2019s HSD post hoc tests. The ANOVA p-value was corrected for multiple testing according to the method of Benjamini-Hochberg. The significance threshold was set to pFDR \u22640.05, p posthoc \u22640.05 and a ratio of mean intensities \u22652 or \u22640.5.\n\n## Quantification and statistical analysis\n\nThe resulting data were analyzed using GraphPad Prism software. The values are reported as Mean \u00b1 standard deviation (SD). Statistical significance was tested by applying the respective test indicated in the figure legends.\n",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolfram Brune, https://ror.org/02r2q1d96 Leibniz Institute of Virology (LIV) Hamburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96414.sa0](https://doi.org/10.7554/eLife.96414.sa0)\n\nThis fundamental study substantially advances our understanding of viral immune evasion by identifying a novel player in this process and uncovering its mode of action. The evidence supporting the conclusions is compelling, with rigorous immunological assays and state-of-the-art biochemistry. The work will be of broad interest to virologists and immunologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wolfram Brune, https://ror.org/02r2q1d96 Leibniz Institute of Virology (LIV) Hamburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96414.sa1](https://doi.org/10.7554/eLife.96414.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "444c6312-892d-4d28-9013-559a17edfe4d",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C1",
+      "claim": "More than half of the entire adult human population is latently infected with human cytomegalovirus (HCMV).",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the entire adult human population and over 90% of the elderly in developing countries are latently infected with the human cytomegalovirus (HCMV, human betaherpesvirus 5 [HHV-5]; NCBI taxonomy ID 10359) (Fowler et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fowler et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "9abc0cbf-8f0b-4296-83ee-83a29cfecd2e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C2",
+      "claim": "Over 90% of the elderly in developing countries are latently infected with HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the entire adult human population and over 90% of the elderly in developing countries are latently infected with the human cytomegalovirus (HCMV, human betaherpesvirus 5 [HHV-5]; NCBI taxonomy ID 10359) (Fowler et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fowler et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "05f7acaf-7d78-42c9-b815-a84d54477887",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C3",
+      "claim": "More than half of all immune parameters are altered in HCMV-infected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, more than half of all immune parameters are altered in HCMV-infected individuals (Brodin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brodin et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "65d8391b-4489-4078-b55c-7e9bca07f3bd",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C4",
+      "claim": "The depletion of CD4+ cells together with IFN\u03b3 results in CMV reactivation in more than 75% of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the depletion of CD4 + cells together with IFN\u03b3 results in CMV reactivation in more than 75% of animals (Poli\u0107 et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Poli\u0107 et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "bf445d5f-a39d-46d1-b1e4-f5db9b3abaf0",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C5",
+      "claim": "The absence of IFN-induced signaling renders mice extremely vulnerable to CMV infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the relevance of IFNs, the absence of IFN-induced signaling renders mice extremely vulnerable to CMV infections (Gil et al., 2001; Le Trilling et al., 2018; Strobl et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gil et al., 2001; Le Trilling et al., 2018; Strobl et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "a78edc63-e633-46b3-ae12-d22f63e5679c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C6",
+      "claim": "HCMV-specific CD4+ T cells produce IFN\u03b3, TNF\u03b1, and granzyme B.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV-specific CD4 + T cells were shown to produce IFN\u03b3, TNF\u03b1, and granzyme B (Gamadia et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gamadia et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "fdbf473a-115c-46c0-9009-2599ce178881",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C7",
+      "claim": "HCMV-specific CD4+ T cells lyse HCMV antigen-expressing cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV-specific CD4 + T cells were shown to produce IFN\u03b3, TNF\u03b1, and granzyme B (Gamadia et al., 2004) and to lyse HCMV antigen-expressing cells in vitro (van Leeuwen et al., 2006; van Leeuwen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to van Leeuwen et al., 2006; van Leeuwen et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "43ba920e-4afd-464c-834e-240542b5f00f",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C8",
+      "claim": "CD4+ T cell-mediated immunity is crucial for CMV control in mouse models in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, CD4 + T cell-mediated immunity is crucial for CMV control in mouse models in vivo (Jonji\u0107 et al., 1989; Jonji\u0107 et al., 1990; Walton et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jonji\u0107 et al., 1989; Jonji\u0107 et al., 1990; Walton et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "ed40ac18-b4e8-45f0-80f2-4a431d22725b",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C9",
+      "claim": "CD4+ T cells are fundamental to prevent HCMV reactivation in immunocompromised patients receiving solid organ allografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CD4 + T cells are fundamental to prevent HCMV reactivation in immunocompromised patients receiving solid organ allografts (Lim et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lim et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "3818242e-070c-4136-8fdb-093f9413a78c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C10",
+      "claim": "Insufficient CD4+ T cell levels in transplant recipients are associated with recurrent HCMV reactivation, end-organ disease, and an increased likelihood of lethal infections.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 + T cells are fundamental to prevent HCMV reactivation in immunocompromised patients receiving solid organ allografts (Lim et al., 2020) or hematopoietic cell transplantation (HCT), while insufficient CD4 + T cell levels in transplant recipients are associated with recurrent HCMV reactivation, end-organ disease, and an increased likelihood of lethal infections (Einsele et al., 1993; Gabanti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Einsele et al., 1993; Gabanti et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7c38b554-74c5-4b14-9893-67f4a73a7690",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C11",
+      "claim": "CIITA is the essential and sufficient master regulator of the transcription of the genes in the HLA-II locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Constitutive as well as IFN\u03b3-induced HLA-II expression are both mediated by the class II transactivator (CIITA), which is the essential and sufficient master regulator of the transcription of the genes in the HLA-II locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific consensus about CIITA function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7e2dae27-05cc-4e44-86ae-bd33fc671656",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C12",
+      "claim": "CIITA and its co-factors control the expression of the classical HLA-II molecules DR, DQ, DP, the non-classical HLA-II peptidome editors DM and DO, and the invariant chain (Ii, also known as CD74).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, CIITA and its co-factors control the expression of the classical HLA-II molecules DR, DQ, DP, the non-classical HLA-II peptidome editors DM and DO, and the invariant chain (Ii, also known as CD74) (Boss and Jensen, 2003; Ting and Trowsdale, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boss and Jensen, 2003; Ting and Trowsdale, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "77292820-3cb3-4432-b616-5c3e513c0216",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C13",
+      "claim": "The absence of functional CIITA results in a loss of HLA-II presentation, leading to a hereditary immunodeficiency called type II bare lymphocyte syndrome (BLS).",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of functional CIITA results in a loss of HLA-II presentation, leading to a hereditary immunodeficiency called type II bare lymphocyte syndrome (BLS) that causes an extreme vulnerability to infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about BLS",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "64fc1322-66a5-4a13-a7cd-115ce7c57441",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C14",
+      "claim": "BLS patients frequently suffer from severe, persistent HCMV infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the relevance of CD4 + T cells and CIITA-driven HLA-II presentation, BLS patients frequently suffer from severe, persistent HCMV infections (Elhasid and Etzioni, 1996; Klein et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Elhasid and Etzioni, 1996; Klein et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "bf9dccc1-ba2a-401f-830c-d7754c9b52a7",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C15",
+      "claim": "pUS28 is among the few viral proteins abundantly expressed during both productive replication as well as experimental and natural latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, pUS28 is among the few viral proteins abundantly expressed during both productive replication as well as experimental and natural latency (Beisser et al., 2001; Cheung et al., 2006; Goodrum et al., 2002; Krishna et al., 2018; Krishna et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Beisser et al., 2001; Cheung et al., 2006; Goodrum et al., 2002; Krishna et al., 2018; Krishna et al., 2017a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "64866390-d621-44d6-b34b-c9d44df4808c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C16",
+      "claim": "IFN\u03b3 induced the upregulation of HLA-DP on the surface of HCMV-permissive fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b3 induced the upregulation of HLA-DP on the surface of HCMV-permissive fibroblasts (Figure 1A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "29d1b5be-2962-4925-a331-1ec11c56eea1",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C17",
+      "claim": "IFN\u03b1 and TNF\u03b1 treatment did not induce HLA-DP upregulation on fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b3 induced the upregulation of HLA-DP on the surface of HCMV-permissive fibroblasts (Figure 1A and B), whereas this was not the case after treatment with IFN\u03b1 or TNF\u03b1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "efd736c1-de45-409a-a0cd-3723fb0bbc5e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C18",
+      "claim": "Longer periods of IFN\u03b3 incubation led to an increase of HLA-DP and HLA-DR on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer periods of IFN\u03b3 incubation led to an increase of HLA-DP and HLA-DR on the cell surface (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e55aee2c-c494-4344-b297-5a0f543f6fe3",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C19",
+      "claim": "The upregulation of HLA-DP by IFN\u03b3 was prevented in HCMV-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In clear contrast to uninfected fibroblasts, the upregulation of HLA-DP by IFN\u03b3 was prevented in HCMV-infected cells (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "a3fcb09e-9e73-44d1-a63e-a255700983c4",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C20",
+      "claim": "HCMV mutants lacking the US2-6 or the US2-11 gene region showed the same inhibitory phenotype on HLA-DP upregulation as wild-type HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the same inhibitory phenotype was observed upon infection with HCMV mutants lacking the US2-6 or the US2-11 gene region (Figure 1D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "8253af9b-f411-4f91-8f80-d4fff4073a5a",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C21",
+      "claim": "HCMV encodes so far unknown antagonists of IFN\u03b3-induced HLA-DP presentation located outside of the US2-11 gene region.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that HCMV encodes so far unknown antagonists of IFN\u03b3-induced HLA-DP presentation located outside of the US2-11 gene region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing that US2-11 deletion mutants still inhibit HLA-DP",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "9d3de829-ffdf-43cf-a4b4-e9809f0600c7",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C22",
+      "claim": "pUS28 was identified as a candidate antagonist of HLA-DP induction in a screen of HCMV genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen provided candidates for the observed antagonism of HLA-DP induction, including pUS9, pUS19, pp65-UL83, and pUS28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental screening data described in the text and Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "af4d47a9-a717-47d1-aecd-c4e347aedb91",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C23",
+      "claim": "pUS28 reproducibly diminished CIITA-induced HLA-DP surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation experiments substantiated that pUS28 was reproducibly capable of significantly diminishing CIITA-induced HLA-DP surface expression (Figure 2B and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e279816d-7521-41cb-a0b3-6a63b13765e3",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C24",
+      "claim": "pUS28 significantly diminished the cell surface expression of HLA-DR.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to its effect on HLA-DP, pUS28 also significantly diminished the cell surface expression of the presenting molecules HLA-DR (Figure 2C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "a74a1309-bfd2-47e0-b392-c60fcbdd84d9",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C25",
+      "claim": "pUS28 significantly diminished the cell surface expression of HLA-DQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to its effect on HLA-DP, pUS28 also significantly diminished the cell surface expression of the presenting molecules HLA-DR (Figure 2C and D) and HLA-DQ (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "047426be-e221-4cca-ad20-e98ae14a140d",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C26",
+      "claim": "pUS28 significantly diminished the cell surface expression of HLA-DM.",
+      "claim_type": "EXPLICIT",
+      "source": "pUS28 also significantly diminished the cell surface expression of the presenting molecules HLA-DR (Figure 2C and D) and HLA-DQ (Figure 2D) as well as the peptide editor HLA-DM (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "fffbd8c8-823e-49ed-b970-62bdc9ddbb8b",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C27",
+      "claim": "pUS28 dose-dependently inhibited surface levels of HLA-DR at different levels of CIITA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "While increasing amounts of CIITA dose-dependently drove HLA-DP and HLA-DR expression in transfected cells, pUS28 significantly and dose-dependently inhibited surface levels of HLA-DR (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7cab4eab-d1b6-4f01-9e65-d193b8e25f57",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C28",
+      "claim": "pUS28 dose-dependently inhibited surface levels of HLA-DP at different levels of CIITA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "While increasing amounts of CIITA dose-dependently drove HLA-DP and HLA-DR expression in transfected cells, pUS28 significantly and dose-dependently inhibited surface levels of HLA-DR (Figure 2E) and HLA-DP (Figure 2F), at different levels of CIITA abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "8ccdec85-cbd7-4e95-8293-3d3141af5c45",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C29",
+      "claim": "The levels of CIITA mRNA remained unaltered in the presence of pUS28.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the presence or absence of pUS28, the levels of tagged as well as untagged CIITA mRNA remained unaltered (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "d0a1a96a-c894-41fe-9ef9-ed78fbba134a",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C30",
+      "claim": "pUS28 co-expression drastically reduced CIITA protein amounts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the unchanged mRNA levels of CIITA, a parallel evaluation of CIITA protein amounts revealed a drastic reduction upon pUS28 co-expression (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "039ff6b2-0670-4b5d-bcc4-7caa48907ef1",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C31",
+      "claim": "pUS28 has a post-transcriptional effect on CIITA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the unchanged mRNA levels of CIITA, a parallel evaluation of CIITA protein amounts revealed a drastic reduction upon pUS28 co-expression (Figure 3B), suggesting a post-transcriptional effect of pUS28 on CIITA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that mRNA levels remain unchanged while protein levels decrease",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "961dc48b-9cfd-4316-84ea-393dbbdf7c2b",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C32",
+      "claim": "The CIITA down-modulating capacity of pUS28 is specific for CIITA and does not affect control proteins such as EYFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The CIITA down-modulating capacity of pUS28 was observed with different plasmid preparations (Figure 3C), and was specific for CIITA, since control proteins such as the enhanced yellow fluorescent protein (EYFP) remained unaffected (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "3d064834-df72-4dc7-a502-fb6070f37a9d",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C33",
+      "claim": "The effect of pUS28 on CIITA is not a general capacity of viral chemokine receptor homologs, as pUS27 did not decrease CIITA protein amounts.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect on CIITA was also not an overarching capacity of viral chemokine receptor homologs, since the protein pUS27, a GPCR encoded by the neighboring gene in the viral genome, did not decrease CIITA protein amounts (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "a38b1198-f928-419b-9259-376c74413e66",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C34",
+      "claim": "pUS27 did not decrease HLA-DP surface levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect on CIITA was also not an overarching capacity of viral chemokine receptor homologs, since the protein pUS27, a GPCR encoded by the neighboring gene in the viral genome, did not decrease CIITA protein amounts (Figure 3D) or HLA-DP surface levels (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "626c06f9-53e7-4478-9ea7-86cb4bfc51da",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C35",
+      "claim": "Mass spectrometry analyses confirmed the significant downregulation of CIITA by pUS28.",
+      "claim_type": "EXPLICIT",
+      "source": "These unbiased MS analyses confirmed the significant downregulation of CIITA by pUS28 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7c9a4e24-0e71-48e5-b7cf-35dcd9856f9c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C36",
+      "claim": "pUS28 led to a significant upregulation of IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous data, pUS28 led to a significant upregulation of IL-6 (Slinger et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Slinger et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "b8fc5a35-d4c0-483b-abc1-d5217e2afeee",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C37",
+      "claim": "pUS28 attenuated AP-1 components including JunD.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous data, pUS28 led to a significant upregulation of IL-6 (Slinger et al., 2010), and attenuated AP-1 components (Krishna et al., 2019) (here JunD) (Figure 4D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D and E and citation to Krishna et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "47f692ee-dde7-4456-bf20-fc62b1757c9b",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C38",
+      "claim": "CD74 was significantly induced by CIITA, unless pUS28 was co-expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, CD74 - the invariant chain required for proper maturation and loading of HLA class II molecules - was significantly induced by CIITA, unless pUS28 was co-expressed (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "37f7419e-5ce9-46ee-9f69-4af4ba2565a3",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C39",
+      "claim": "The negative effect of pUS28 on CIITA-driven CD74 expression was confirmed by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative effect of pUS28 on CIITA-driven CD74 expression was confirmed by flow cytometry (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "1a8dc029-6d28-4e54-874b-ab028b42e19c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C40",
+      "claim": "pUS28 elicits the negative effect on CIITA target genes independent of their genomic localization in the MHC-II locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to several other CIITA-regulated genes, CD74 is not encoded by the HLA-II locus on chromosome 6. Thus, the fact that pUS28 prevents CIITA-induced CD74 induction suggests that pUS28 elicits the negative effect on CIITA target genes independent of their genomic localization in the MHC-II locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that pUS28 affects CD74, which is not in the HLA-II locus",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "8ae89f38-015b-4028-9066-091b469d1ada",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C41",
+      "claim": "HLA-DP cell surface levels were significantly decreased upon pUS28 induction in doxycycline-inducible fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "While doxycycline treatment in parental and pUS27-expressing fibroblasts had no significant effect on the IFN\u03b3-induced HLA-DP expression, HLA-DP cell surface levels were significantly decreased upon pUS28 induction (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "49b82c83-1fcf-4ec3-b5ad-a74fb11778c2",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C42",
+      "claim": "Wild-type HCMV significantly decreased the percentage of HLA-DP- and HLA-DR-positive cells compared to mock-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with aforementioned data, wt HCMV significantly decreased the percentage of HLA-DP- and HLA-DR-positive cells in comparison to mock-treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data described in the text and Figure 5B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "cde9b319-303b-4a00-b473-650184ff07ed",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C43",
+      "claim": "\u0394US28-HCMV showed an impaired ability to downregulate HLA-II compared to wild-type HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u0394US28-HCMV showed an impaired ability to downregulate HLA-II (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e4daf6a4-cdb4-4598-8560-1e36cbb6580e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C44",
+      "claim": "pM33 and pUS28 both downregulate human and mouse CIITA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pM33 and pUS28 both downregulate human and mouse CIITA, suggesting an evolutionarily conserved function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "d4ba69a5-507a-485e-b49c-0792d56f9033",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C45",
+      "claim": "The ability of pUS28 to decrease HLA class II expression is evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pM33 and pUS28 both downregulate human and mouse CIITA, suggesting an evolutionarily conserved function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that both pUS28 and its MCMV homolog pM33 downregulate CIITA",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "308cfab1-016e-47ef-8733-6233dde048bd",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C46",
+      "claim": "pUS28 and CIITA physically interact and form complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The IP of pUS28 co-purified CIITA (Figure 6A, upper panel) and vice versa (Figure 6A, lower panel), indicating that both proteins form physical complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "5617a259-3cb7-49d4-a3bf-715855ad04fc",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C47",
+      "claim": "pUS28 reduces the half-life of CIITA.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the inherently short half-life of CIITA (Schnappauf et al., 2003), we observed a more rapid CIITA decay when pUS28 was co-expressed (Figure 6B and Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cycloheximide chase assay data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "6e1ac41f-bfaf-478c-8f77-2d33ebd3c801",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C48",
+      "claim": "A panel of inhibitors targeting different cellular degradation pathways failed to significantly and reproducibly restore CIITA levels in pUS28-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a panel of inhibitors targeting different cellular degradation pathways (e.g. the inhibitors of the ubiquitin-proteasome pathway MG-132 and Bortezomib, the inhibitors of UBA3-dependent neddylation blocking cullin-RING ubiquitin ligase activity MLN4924 and TAS4464, the autophagy inhibitors bafilomycin and 3-MA, the inhibitors of lysosomal acidification chloroquine and ammonium chloride, the pan-caspase inhibitor Z-VAD-FMK, the protease inhibitors Pepstatin A, E-64, PMSF, and a pan-protease inhibitor cocktail, as well as the dynamin inhibitor Dynasore and the convertase inhibitor Decanoyl-RVKR-CMK) all failed to significantly and reproducibly restore CIITA levels in pUS28-expressing cells (Figure 6\u2014figure supplement 4 and data not shown)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "1f66b6d1-1f12-43e4-af43-a83622214757",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C49",
+      "claim": "pUS28 reduces CIITA levels either by redundant or unusual degradation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "all failed to significantly and reproducibly restore CIITA levels in pUS28-expressing cells (Figure 6\u2014figure supplement 4 and data not shown), implying that pUS28 reduces CIITA levels either by redundant or unusual degradation processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of multiple degradation pathway inhibitors to restore CIITA",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "112329b3-2f56-4522-9434-7002f187db81",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C50",
+      "claim": "R129A-pUS28 is a mutant that harbors a single amino acid substitution at position 129 (arginine to alanine) within the canonical DRY motif, abrogating G-protein signaling without compromising the subcellular localization or internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is a well-studied mutant of pUS28 that harbors a single amino acid substitution at position 129 (arginine to alanine) within the canonical DRY motif, abrogating G-protein signaling without compromising the subcellular localization or internalization (Waldhoer et al., 2003; visualized in Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Waldhoer et al., 2003 and visualization in Figure 7A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "a687c8c9-64d7-4787-88d2-ee6bf794527b",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C51",
+      "claim": "Both wt-pUS28 and R129A-pUS28 diminished CIITA protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both pUS28 variants diminished CIITA protein levels (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "981edfb1-a9f6-4b33-a6aa-3b06f85b337f",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C52",
+      "claim": "The intracellular C terminus of pUS28 is indispensable for CIITA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the intracellular C terminus turned out to be indispensable for the CIITA degradation (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "3c8247db-5f8c-4100-9ae8-b74f63d98605",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C53",
+      "claim": "R129A-pUS28 and wt-pUS28 similarly diminished the surface expression of HLA-DP.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with these findings, R129A-pUS28 and wt-pUS28 similarly diminished the surface expression of HLA-DP (Figure 7D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "f623ea9d-0144-49b5-b6f1-5bf0f12144ea",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C54",
+      "claim": "R129A-pUS28 and wt-pUS28 similarly diminished the surface expression of HLA-DR.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with these findings, R129A-pUS28 and wt-pUS28 similarly diminished the surface expression of HLA-DP (Figure 7D) and HLA-DR (Figure 7E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "3325b37b-dc9c-457d-8fc0-c2f31a30548d",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C55",
+      "claim": "The mutant lacking the C terminus (US28-\u0394C) did not diminish HLA-DP surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mutant lacking the C terminus (US28-\u0394C) did not (Figure 7F and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "eafd43e8-4612-4f7c-9a5b-bb4299455378",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C56",
+      "claim": "The mutant lacking the C terminus (US28-\u0394C) did not diminish HLA-DR surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mutant lacking the C terminus (US28-\u0394C) did not (Figure 7F and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "b26a584b-9aad-4f93-8fbb-8ca3b5853b7e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C57",
+      "claim": "pUS28 targets CIITA through its C terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mutant lacking the C terminus (US28-\u0394C) did not (Figure 7F and G), indicating that pUS28 targets CIITA through its C terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that C-terminal deletion abolishes CIITA targeting",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "8968009a-2484-4959-a563-2e8e873cf90d",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C58",
+      "claim": "pUS28-\u0394C co-purified CIITA in immunoprecipitation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In IP experiments, pUS28-\u0394C co-purified CIITA (Figure 7H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 7H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "0388b8f4-330d-4171-b365-e55b974c635e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C59",
+      "claim": "The lack of the C terminus of pUS28 did not impair the physical interaction with CIITA but rather affected the degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "In IP experiments, pUS28-\u0394C co-purified CIITA (Figure 7H), suggesting that the lack of the C terminus of pUS28 did not impair the physical interaction with CIITA but rather affected the degradation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that pUS28-\u0394C still binds CIITA but does not degrade it",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "6f1a80a4-9fc0-4077-b770-bab73c8b6079",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C60",
+      "claim": "Amino acids in proximity to the transmembrane domain 7 of pUS28 were required for downregulation of CIITA.",
+      "claim_type": "EXPLICIT",
+      "source": "Further investigations of the C-terminal part of pUS28 revealed that amino acids in proximity to the transmembrane domain 7 were required for downregulation of CIITA as only a mutant lacking the whole C terminus completely lost the capability to target CIITA (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7a42e2f2-4d4f-424c-af49-80af00082ea1",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C61",
+      "claim": "HCMV-specific CD4+ T cells from HCMV-positive individuals vigorously responded to CIITA-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV-specific CD4 + T cells from HCMV-positive individuals vigorously responded to CIITA-expressing cells, but not to control cells that did not express CIITA (Figure 8B and Figure 8\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "f8259fe5-0555-422e-8342-9f477402cc87",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C62",
+      "claim": "HCMV-specific CD4+ T cells did not respond to control cells that did not express CIITA.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV-specific CD4 + T cells from HCMV-positive individuals vigorously responded to CIITA-expressing cells, but not to control cells that did not express CIITA (Figure 8B and Figure 8\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "84f019e8-fc88-4ddf-bcb7-9faef15bb55e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C63",
+      "claim": "The response of HCMV-specific CD4+ T cells to CIITA-expressing cells indicates a specific HLA-II-dependent T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV-specific CD4 + T cells from HCMV-positive individuals vigorously responded to CIITA-expressing cells, but not to control cells that did not express CIITA (Figure 8B and Figure 8\u2014figure supplement 1), indicating a specific HLA-II-dependent T cell activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that T cells respond only to CIITA-expressing cells",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "5d01fe1a-eeb7-4f7d-ace3-e598aee5ebbc",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C64",
+      "claim": "In the presence of pUS28 or R129A-pUS28, the immune recognition of CIITA-expressing, antigen-loaded cells by HCMV-specific CD4+ T cells was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of pUS28 or the mutant R129A-pUS28, the immune recognition of CIITA-expressing, antigen-loaded cells by HCMV-specific CD4 + T cells was significantly reduced (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7936df45-d3b3-496e-83cd-10d1558b03df",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C65",
+      "claim": "Supernatants from HCMV-specific CD4+ T cells stimulated with CIITA-expressing cells strongly inhibited HCMV-induced EGFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Supernatants from HCMV-specific CD4 + T cells stimulated with CIITA-expressing cells strongly inhibited HCMV-induced EGFP expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 8C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "51ba6390-5925-4a75-952b-a9397f1f028c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C66",
+      "claim": "Supernatants derived from CD4+ T cells stimulated in the presence of pUS28 showed diminished antiviral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "while supernatants derived from CD4 + T cells stimulated in the presence of pUS28 showed diminished antiviral activity (Figure 8C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "cf9fb4e6-6481-41ad-b3c8-3fcf9fb00299",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C67",
+      "claim": "pUS28 inhibits the CIITA-driven and HLA-II-dependent CD4+ T cell activation in terms of the production of antiviral cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that pUS28 inhibits the CIITA-driven and HLA-II-dependent CD4 + T cell activation in terms of the production of antiviral cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that pUS28 reduces T cell activation and antiviral activity of supernatants",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "c5ffc4d0-1c39-48f4-898b-afc11eaa85a7",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C68",
+      "claim": "pUS28 acts as calcium-mobilizing beta chemokine receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly after its discovery as HCMV-encoded GPCR (Chee et al., 1990), the striking homology of pUS28 to human CX3CR1 was noticed (Gao et al., 1993) and its functionality as calcium-mobilizing beta chemokine receptor was documented (Gao and Murphy, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gao and Murphy, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "abead6a8-d99d-4661-8064-3d905411a7a5",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C69",
+      "claim": "pUS28 can act as a co-factor for HIV entry.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it can act as a co-factor for the HIV entry (Pleskoff et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pleskoff et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "ce27976e-fb6d-46f0-a762-27a0004eb747",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C70",
+      "claim": "pUS28 mediates G protein-coupled intracellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "it mediates G protein-coupled intracellular signaling (Billstrom et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Billstrom et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "6fc6c4b0-e5f5-47a6-b85a-02dc9371d6e6",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C71",
+      "claim": "pUS28 sequesters RANTES/MCP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "it sequesters RANTES/MCP-1 (Bodaghi et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bodaghi et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "facf01f1-ffe5-4755-9048-aedfd4064fb8",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C72",
+      "claim": "pUS28 serves as fractalkine receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "and serves as fractalkine receptor (Burg et al., 2015; Kledal et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burg et al., 2015; Kledal et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "1a7f00bd-d73a-42c0-8b16-03f6ababe1fc",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C73",
+      "claim": "pUS28 mediates vascular smooth muscle cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "it mediates vascular smooth muscle cell migration (Burg et al., 2015; Kledal et al., 1998; Melnychuk et al., 2004; Streblow et al., 1999; Streblow et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burg et al., 2015; Kledal et al., 1998; Melnychuk et al., 2004; Streblow et al., 1999; Streblow et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "1e086ea5-9589-40ad-b7d5-fb4d0f4f5efe",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C74",
+      "claim": "pUS28 may act as an oncogene or onco-modulatory protein.",
+      "claim_type": "EXPLICIT",
+      "source": "and it may act as an oncogene or onco-modulatory protein (Bongers et al., 2010; Maussang et al., 2006; Slinger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bongers et al., 2010; Maussang et al., 2006; Slinger et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "9f480e0e-e8df-4ff6-b1f9-ebda19101410",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C75",
+      "claim": "pUS28 targets MNDA/PYHIN3 and IFI16/PYHIN2 for rapid degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Elegant work by the Sinclair laboratory revealed that pUS28, besides its function as GPCR and latency regulator, targets certain host proteins such as MNDA/PYHIN3 and IFI16/PYHIN2 for rapid degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from work by the Sinclair laboratory as described in the text",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "df8328ad-5e10-4cad-8c13-97e069680055",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C76",
+      "claim": "The degradation of MNDA/PYHIN3 and IFI16/PYHIN2 by pUS28 was dependent on GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the effect on CIITA shown here, however, this degradation was dependent on GPCR signaling as indicated by the restoration of target protein levels when R129 was mutated (Elder et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Elder et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "2f552ee1-17a7-428e-b9f6-d8b4490ee9ab",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C77",
+      "claim": "Latently infected primary human CD14+ monocytes exhibit less HLA-DR on the surface compared to uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Elder et al., 2019 and Slobedman et al., 2002 showed that latently infected primary human CD14 + monocytes and human fetal liver hematopoietic cells exhibit less HLA-DR on the surface compared to uninfected cells (Elder et al., 2019; Slobedman et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Elder et al., 2019 and Slobedman et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "8e8b7fc2-5e89-42aa-bf02-ab6d3cdf5835",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C78",
+      "claim": "There is an inverse correlation between HCMV transcripts and CD74 as well as HLA-II expression in CD14+ monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "which is very well in line with findings by Shnayder et al., 2020 who showed an inverse correlation between HCMV transcripts and CD74 as well as HLA-II expression in CD14 + monocytes (Shnayder et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shnayder et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7bd96750-b969-44f2-b17c-9b920b683b6f",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C79",
+      "claim": "The deletion of the MCMV US28 homolog M33 results in altered MHC-I presentation in an allotype-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work with the MCMV model showed that the deletion of the US28 homolog M33 results in altered MHC-I presentation in an allotype-specific manner (H-2Ld and H-2Kd being downregulated in an M33-dependent manner, but not H-2Dd) (White et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "ad1d8c92-d990-43fa-aaa7-029a5d7b904a",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C80",
+      "claim": "HCMV counteracts IFN\u03b3-induced gene expression, partly by inducing the proteasomal degradation of JAK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Work by Miller et al., 1998 showed that HCMV counteracts IFN\u03b3-induced gene expression, partly by inducing the proteasomal degradation of JAK1, leading to diminished CIITA and HLA-DR\u03b1 induction when HCMV-infected cells are exposed to IFN\u03b3 (Miller et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Miller et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "9a701790-7f69-4a52-b025-bd9bbb00477f",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C81",
+      "claim": "HCMV targets constitutive as well as induced CIITA-dependent HLA-II expression at multiple levels by a multipronged attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, HCMV targets constitutive as well as induced CIITA-dependent HLA-II expression at multiple levels by a multipronged attack, comprising the inhibition of (I) IFN-JAK-STAT signaling (Le et al., 2008; Le Trilling et al., 2020; Miller et al., 1998), (II) constitutive CIITA transcription (Lee et al., 2011; Sandhu and Buchkovich, 2020), (III) CIITA protein stability (as shown here), and (IV) HLA-DR degradation and translocation (Hegde and Johnson, 2003; Hegde et al., 2002; Tomazin et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations and data from this study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "0ef0018f-2223-47c0-aa71-163e93f6d47e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C82",
+      "claim": "pUS28 may shield latently infected cells from HLA-II-restricted CD4+ T lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the aforementioned role of pUS28 for HCMV latency, it is tempting to speculate that pUS28 may shield latently infected cells from HLA-II-restricted CD4 + T lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the role of pUS28 in latency and its effect on HLA-II",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "23851ffc-08d8-4c79-a283-967db06def5c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "claim_id": "C83",
+      "claim": "HLA-DR+NKG2C+ memory NK cells are mediators of viral control in transplanted patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Another intriguing possibility is that a relevant fraction of the HLA-II-mediated CD4 + T cell activation might be elicited by cells that are resistant to HCMV infections, such as the recently described HLA-DR +NKG2C+memory NK cells (Costa-Garc\u00eda et al., 2019), which have been shown to be mediators of viral control in transplanted patients (Davis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Costa-Garc\u00eda et al., 2019 and Davis et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a3bc36ee-1eff-4363-8b56-5adcf3c78c00",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IFN\u03b3 specifically induces HLA-DP and HLA-DR upregulation on HCMV-permissive fibroblasts in a time-dependent manner, while IFN\u03b1 and TNF\u03b1 do not induce HLA-DP expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 provide converging evidence from flow cytometry experiments (Figures 1A-C) demonstrating the specificity of IFN\u03b3-induced HLA-II upregulation and its time-dependent nature. The experimental controls with IFN\u03b1 and TNF\u03b1 strengthen the conclusion about IFN\u03b3 specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "34dabba2-dd6d-453d-b015-7df63442bc19",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HCMV infection prevents IFN\u03b3-induced HLA-DP upregulation, and this inhibitory effect persists in viral mutants lacking the US2-11 gene region, indicating the existence of unknown viral antagonists outside this region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 demonstrate through deletion mutant analysis (Figures 1D-E) that HCMV antagonizes HLA-DP induction via factors outside the known US2-11 region. The inference in C21 is logically sound given that deletion of known antagonists did not restore HLA-DP expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "pUS28 was identified through screening as an antagonist of CIITA-induced HLA class II expression, significantly and dose-dependently reducing surface expression of HLA-DP, HLA-DR, HLA-DQ, and HLA-DM at various CIITA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 present a systematic identification and validation of pUS28 function through screening (Figure 2A) followed by dose-response experiments (Figures 2B-F). The data demonstrate reproducible, significant effects across multiple HLA-II molecules with appropriate statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "28d9c3f8-e480-4974-b08f-2b7ddf266109",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "pUS28 reduces CIITA protein levels post-transcriptionally without affecting CIITA mRNA abundance, as demonstrated by unchanged mRNA levels but drastically reduced protein amounts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 establish the post-transcriptional mechanism through parallel RT-PCR (Figure 3A) and immunoblot (Figure 3B) analyses. The inference in C31 is well-supported by the discordance between mRNA and protein levels, though the specific mechanism remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "6cddc940-f4d4-4509-91fa-4f438828f954",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CIITA-targeting activity of pUS28 is specific to CIITA and not a general property of viral GPCRs, as control proteins (EYFP) and the related viral GPCR pUS27 do not exhibit this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide appropriate specificity controls using both a non-viral control protein (EYFP) and a closely related viral GPCR (pUS27) shown in Figures 3C-E. These controls effectively rule out non-specific effects and demonstrate pUS28-specific targeting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Unbiased mass spectrometry confirmed pUS28-mediated CIITA downregulation and revealed effects on downstream targets including CD74, validating the experimental system and demonstrating that pUS28 affects CIITA target genes independent of their genomic location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 use orthogonal mass spectrometry validation (Figures 4D-H) that confirms prior findings and extends them to show effects on CD74, a CIITA target outside the MHC-II locus. The inference in C40 is logically sound given CD74's chromosomal location.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "455d6e1f-f9f0-432b-9713-7603fbef3da1",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both gain-of-function (doxycycline-inducible pUS28) and loss-of-function (\u0394US28-HCMV) experiments demonstrate that pUS28 is necessary and sufficient for HLA-II downregulation during HCMV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 provide complementary genetic evidence through inducible expression (Figure 5A) and viral deletion mutants (Figures 5B-C). The bidirectional genetic approach strengthens the conclusion about pUS28's role, though C43 notes impaired rather than abolished activity, consistent with the redundancy discussed elsewhere.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "ed3a4947-4b8e-4a6c-98b6-263fb6885319",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The CIITA-targeting function of pUS28 is evolutionarily conserved, as both pUS28 and its MCMV homolog pM33 downregulate human and mouse CIITA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 demonstrate cross-species conservation through experiments with both human and mouse CIITA (Figures 5D-E). This evolutionary conservation suggests functional importance, though the inference in C45 could benefit from additional functional validation in the MCMV system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "d3bba369-a2a7-4af4-bad4-cb9fb4e9c237",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "pUS28 physically interacts with CIITA and reduces its half-life, as demonstrated by co-immunoprecipitation and cycloheximide chase assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 establish direct physical interaction through reciprocal co-IP (Figure 6A) and demonstrate functional consequence through protein stability assays (Figure 6B). The combination of binding and functional data supports a direct mechanism of action.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "c4d58234-36d7-4b8a-8e00-1f410ed56ed0",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A comprehensive panel of degradation pathway inhibitors failed to restore CIITA levels in pUS28-expressing cells, suggesting redundant or unusual degradation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C49 report negative results with multiple inhibitors (Figure 6\u2014figure supplement 4), but the inference in C49 about redundant or unusual mechanisms is speculative. The failure to identify the degradation pathway limits mechanistic understanding, and alternative explanations (e.g., incomplete inhibition, wrong timing, or non-degradative mechanisms) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "pUS28 targets CIITA through its C-terminus in a manner independent of G-protein signaling, as the R129A mutant (defective in G-protein coupling) retains activity while C-terminal deletion abolishes CIITA degradation and HLA-II downregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 systematically map functional domains through mutant analysis (Figures 7A-G). The separation of G-protein signaling from CIITA targeting is well-demonstrated, and the requirement for the C-terminus is clearly established through loss-of-function experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "d59c8be6-e2ff-4e21-b1a9-d46553d97b22",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The C-terminus of pUS28 is required for CIITA degradation but not for physical interaction, with amino acids proximal to transmembrane domain 7 being critical for the degradation function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 dissect the C-terminal function through deletion mapping (Figures 7H-I), demonstrating that binding and degradation are separable functions. The progressive deletion analysis in C60 provides resolution on the critical region, though the specific amino acids remain unidentified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7de07628-42b7-4694-bf22-e36301289b91",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "pUS28 expression significantly reduces HCMV-specific CD4+ T cell recognition of CIITA-expressing, antigen-loaded cells, demonstrating functional immune evasion through HLA-II-dependent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 demonstrate functional immunological consequences using primary human HCMV-specific CD4+ T cells (Figure 8B). The specificity controls (C62) and the effect of both wild-type and R129A pUS28 (C64) strengthen the conclusion about immune evasion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "84dae181-7b3e-4004-b482-9847ce1c4f57",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "pUS28 inhibits CD4+ T cell production of antiviral cytokines, as supernatants from T cells stimulated in the presence of pUS28 show reduced ability to inhibit HCMV replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 provide functional validation of immune evasion through antiviral activity assays (Figures 8C-D). The reduction in antiviral activity of T cell supernatants provides a biologically relevant readout, though the specific cytokines responsible are not definitively identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "284cd676-700f-43a3-9e91-8e58519b4015",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "HCMV latently infects more than half of adults globally and over 90% of elderly in developing countries, with infection altering more than half of all immune parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish epidemiological and immunological context through citations to peer-reviewed literature (Fowler et al., 2022; Brodin et al., 2015). These are well-established facts in the field that provide appropriate background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "814b1a3a-7363-4269-b579-d45ac5700f8d",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CD4+ T cells and IFN responses are critical for CMV control, with CD4+ T cell depletion leading to viral reactivation and insufficient CD4+ T cell levels associated with severe clinical outcomes in immunocompromised patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 establish the immunological importance of CD4+ T cells through multiple citations to animal models and clinical studies. These provide essential context for the significance of pUS28-mediated immune evasion, though they represent prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "32a71cc6-d62b-4c7f-af7b-606e926cb6ae",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CIITA is the master regulator of HLA-II expression, controlling classical and non-classical HLA-II molecules, with CIITA deficiency causing bare lymphocyte syndrome and susceptibility to severe HCMV infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 establish the biological importance of CIITA through established knowledge and citations. These provide critical context for understanding why pUS28 targeting of CIITA represents an effective immune evasion strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "f3914fa0-1897-400b-a102-5f5e34604019",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "pUS28 is abundantly expressed during both productive HCMV replication and latency, distinguishing it from most viral proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 establishes the unique expression profile of pUS28 through multiple citations, providing important context for its potential role in immune evasion during different infection stages. This is well-established prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "pUS28 has multiple previously characterized functions including chemokine receptor activity, G-protein signaling, chemokine sequestration, cell migration, potential oncogenic activity, and targeting of innate immune proteins MNDA and IFI16.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C76 summarize prior work on pUS28 functions through appropriate citations. These establish the multifunctional nature of pUS28 and distinguish the CIITA-targeting mechanism (G-protein independent, C76) from other functions. This represents literature review rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "539a6fe4-403e-4330-b13d-4fd236642b7e",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior studies have shown that HCMV infection reduces HLA-II expression in latently infected cells and that HCMV employs multiple mechanisms to antagonize HLA-II presentation, including targeting IFN signaling, CIITA transcription, and HLA-DR degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 contextualize the current findings within prior literature, showing that HLA-II antagonism is a known HCMV strategy but that the specific pUS28-CIITA mechanism represents a novel addition to this multipronged attack. These appropriately cite relevant prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "d25b92e5-2635-480d-9fdc-a6ba000544a7",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "pUS28 may shield latently infected cells from HLA-II-restricted CD4+ T cell recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is explicitly speculative ('tempting to speculate') and represents a hypothesis rather than a demonstrated result. While consistent with the data showing pUS28 expression during latency and its effects on HLA-II, direct evidence for this function during natural latency is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "4d061b7b-080c-43ae-8bb8-b13baafd28c1",
+      "content_id": "c07639be-a0ad-456b-95a2-63af6647d8f3",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "HLA-DR+NKG2C+ memory NK cells mediate viral control in transplanted patients and may contribute to HLA-II-mediated immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 cites prior work establishing the role of these NK cells in viral control. This provides context for discussing alternative mechanisms of HLA-II-dependent immunity, though it represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7dc454a6-95d2-4013-87f6-1316d79d64b9",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "HCMV infection prevents IFN\u03b3-induced upregulation of HLA-DP on fibroblasts. This inhibition occurs even with HCMV mutants lacking the US2-11 gene region, indicating that HCMV encodes unknown antagonists of HLA-DP presentation located outside this region.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers describe this as a 'fundamental study' that 'substantially advances our understanding of viral immune evasion by identifying a novel player.' The evidence is characterized as 'compelling, with rigorous immunological assays,' indicating acceptance of these initial findings about HCMV's inhibition of HLA-DP.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "4bce9475-ab25-4194-a1c6-4e1797fb0663",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "pUS28 was identified through screening as an antagonist of HLA-DP induction and was validated to significantly and dose-dependently diminish CIITA-induced surface expression of multiple HLA class II molecules (HLA-DP, HLA-DR, HLA-DQ) and the peptide editor HLA-DM.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers explicitly state the study identifies 'a novel player in this process,' referring to pUS28's role in immune evasion. The characterization of evidence as 'compelling' with 'rigorous immunological assays' supports acceptance of the screening results and validation experiments demonstrating pUS28's broad effects on HLA-II molecules.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "92bd35d8-817b-4a1f-b7a8-044a165dbdcb",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "pUS28 exerts a post-transcriptional effect on CIITA, leaving mRNA levels unchanged while drastically reducing CIITA protein amounts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers praise the study for 'uncovering its mode of action' with 'state-of-the-art biochemistry,' which encompasses these mechanistic findings about pUS28's post-transcriptional targeting of CIITA. The compelling evidence statement supports acceptance of this key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "b30f7b1a-3689-479a-89ed-900c4d10411d",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The CIITA down-modulating capacity of pUS28 is specific for CIITA and not a general property of viral chemokine receptor homologs, as demonstrated by control experiments with EYFP and the related viral protein pUS27.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers' statement about 'rigorous immunological assays' and 'compelling' evidence encompasses these specificity controls, which are standard validation approaches. The acceptance of pUS28 as 'a novel player' implicitly supports the specificity data distinguishing it from pUS27.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Mass spectrometry and flow cytometry analyses confirmed pUS28's downregulation of CIITA and its target genes including CD74, demonstrating that pUS28 affects CIITA target genes independent of their genomic localization in the MHC-II locus.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers specifically highlight 'state-of-the-art biochemistry' as supporting the conclusions, which directly encompasses the mass spectrometry analyses. The characterization of evidence as 'compelling' supports acceptance of these orthogonal validation approaches and the mechanistic insight about genomic localization independence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "d6e0628e-033f-46e6-8a5d-4c0e3b6270eb",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Inducible expression of pUS28 in fibroblasts and infection with \u0394US28-HCMV demonstrated that pUS28 contributes to HCMV's ability to downregulate HLA-II molecules, with the deletion mutant showing impaired HLA-II downregulation compared to wild-type virus.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers' statement that the study 'substantially advances our understanding' by identifying pUS28's role encompasses these viral infection experiments. The 'compelling' evidence characterization supports acceptance of both the inducible system and viral deletion mutant data demonstrating pUS28's contribution to viral immune evasion.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "31633bc3-7bb8-4f61-a762-77f3d56483b3",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Both pUS28 and its MCMV homolog pM33 downregulate human and mouse CIITA, suggesting the function is evolutionarily conserved across cytomegaloviruses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers note the work will be 'of broad interest to virologists and immunologists,' which is consistent with accepting findings about evolutionary conservation. The 'compelling' evidence statement supports acceptance of the cross-species validation demonstrating conserved function.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "c0f12dc7-9a23-4f41-95a3-d15f34b802b6",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "pUS28 and CIITA physically interact and form complexes, with pUS28 reducing the half-life of CIITA as demonstrated by co-immunoprecipitation and cycloheximide chase assays.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers explicitly praise the 'state-of-the-art biochemistry' that supports the conclusions, which directly encompasses the co-IP experiments and protein stability assays. These are fundamental biochemical approaches for demonstrating the mechanism of action that reviewers state was successfully 'uncovered.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e7fd7800-fdf5-44a0-9fa0-9a6e7c319948",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "A comprehensive panel of inhibitors targeting various cellular degradation pathways failed to restore CIITA levels in pUS28-expressing cells, suggesting pUS28 reduces CIITA through redundant or unusual degradation processes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers' characterization of 'state-of-the-art biochemistry' and 'compelling' evidence encompasses this systematic investigation of degradation mechanisms. While the negative results don't identify the specific pathway, the reviewers' acceptance of the mode of action being 'uncovered' supports these thorough mechanistic investigations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "c4b6931e-0efc-4912-bc2a-119eeb651102",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Structure-function analysis revealed that pUS28's effect on CIITA is independent of G-protein signaling (R129A mutant retains activity) but requires the intracellular C terminus, which is indispensable for CIITA degradation and HLA-II downregulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers state the study 'uncovers its mode of action' with 'compelling' evidence, which directly encompasses these structure-function experiments defining the molecular requirements. The 'rigorous' characterization supports acceptance of the mutational analysis distinguishing signaling-dependent from signaling-independent functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "3140b61e-0e19-445f-8db2-bc32ac92a3ff",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The C-terminal deletion mutant (pUS28-\u0394C) still binds CIITA but cannot degrade it, indicating the C terminus affects the degradation machinery rather than the physical interaction. Fine mapping showed amino acids proximal to transmembrane domain 7 are required for CIITA downregulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers' praise for 'state-of-the-art biochemistry' that 'uncovers the mode of action' encompasses these detailed mechanistic dissections. The 'compelling' evidence statement supports acceptance of the fine structure-function mapping that distinguishes binding from degradation functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "10cefab2-9809-4155-9b1a-81229c4889a2",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "HCMV-specific CD4+ T cells from seropositive individuals vigorously responded to CIITA-expressing cells in an HLA-II-dependent manner, but this immune recognition was significantly reduced in the presence of pUS28 or R129A-pUS28.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers characterize the evidence as 'compelling, with rigorous immunological assays,' which directly encompasses these functional T cell activation experiments. The statement that the study 'substantially advances our understanding of viral immune evasion' supports acceptance of these data demonstrating the immunological consequences of pUS28 activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "eae0a2fb-37f3-4393-96f5-de3aa16ba0fd",
+      "content_id": "0365a9f9-fda4-4b68-8a56-8b6694d919c8",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Supernatants from HCMV-specific CD4+ T cells stimulated with CIITA-expressing cells showed strong antiviral activity, but this was diminished when cells were stimulated in the presence of pUS28, demonstrating that pUS28 inhibits CD4+ T cell activation and antiviral cytokine production.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers' statement about 'rigorous immunological assays' providing 'compelling' evidence encompasses these functional antiviral assays. The characterization of the study as 'substantially advancing understanding of viral immune evasion' supports acceptance of these data linking pUS28's molecular mechanism to functional immune evasion outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64866390-d621-44d6-b34b-c9d44df4808c",
+      "result_id": "a3bc36ee-1eff-4363-8b56-5adcf3c78c00"
+    },
+    {
+      "claim_id": "29d1b5be-2962-4925-a331-1ec11c56eea1",
+      "result_id": "a3bc36ee-1eff-4363-8b56-5adcf3c78c00"
+    },
+    {
+      "claim_id": "efd736c1-de45-409a-a0cd-3723fb0bbc5e",
+      "result_id": "a3bc36ee-1eff-4363-8b56-5adcf3c78c00"
+    },
+    {
+      "claim_id": "e55aee2c-c494-4344-b297-5a0f543f6fe3",
+      "result_id": "34dabba2-dd6d-453d-b015-7df63442bc19"
+    },
+    {
+      "claim_id": "a3fcb09e-9e73-44d1-a63e-a255700983c4",
+      "result_id": "34dabba2-dd6d-453d-b015-7df63442bc19"
+    },
+    {
+      "claim_id": "8253af9b-f411-4f91-8f80-d4fff4073a5a",
+      "result_id": "34dabba2-dd6d-453d-b015-7df63442bc19"
+    },
+    {
+      "claim_id": "9d3de829-ffdf-43cf-a4b4-e9809f0600c7",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "af4d47a9-a717-47d1-aecd-c4e347aedb91",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "e279816d-7521-41cb-a0b3-6a63b13765e3",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "a74a1309-bfd2-47e0-b392-c60fcbdd84d9",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "047426be-e221-4cca-ad20-e98ae14a140d",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "fffbd8c8-823e-49ed-b970-62bdc9ddbb8b",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "7cab4eab-d1b6-4f01-9e65-d193b8e25f57",
+      "result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17"
+    },
+    {
+      "claim_id": "8ccdec85-cbd7-4e95-8293-3d3141af5c45",
+      "result_id": "28d9c3f8-e480-4974-b08f-2b7ddf266109"
+    },
+    {
+      "claim_id": "d0a1a96a-c894-41fe-9ef9-ed78fbba134a",
+      "result_id": "28d9c3f8-e480-4974-b08f-2b7ddf266109"
+    },
+    {
+      "claim_id": "039ff6b2-0670-4b5d-bcc4-7caa48907ef1",
+      "result_id": "28d9c3f8-e480-4974-b08f-2b7ddf266109"
+    },
+    {
+      "claim_id": "961dc48b-9cfd-4316-84ea-393dbbdf7c2b",
+      "result_id": "6cddc940-f4d4-4509-91fa-4f438828f954"
+    },
+    {
+      "claim_id": "3d064834-df72-4dc7-a502-fb6070f37a9d",
+      "result_id": "6cddc940-f4d4-4509-91fa-4f438828f954"
+    },
+    {
+      "claim_id": "a38b1198-f928-419b-9259-376c74413e66",
+      "result_id": "6cddc940-f4d4-4509-91fa-4f438828f954"
+    },
+    {
+      "claim_id": "626c06f9-53e7-4478-9ea7-86cb4bfc51da",
+      "result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b"
+    },
+    {
+      "claim_id": "7c9a4e24-0e71-48e5-b7cf-35dcd9856f9c",
+      "result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b"
+    },
+    {
+      "claim_id": "b8fc5a35-d4c0-483b-abc1-d5217e2afeee",
+      "result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b"
+    },
+    {
+      "claim_id": "47f692ee-dde7-4456-bf20-fc62b1757c9b",
+      "result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b"
+    },
+    {
+      "claim_id": "37f7419e-5ce9-46ee-9f69-4af4ba2565a3",
+      "result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b"
+    },
+    {
+      "claim_id": "1a8dc029-6d28-4e54-874b-ab028b42e19c",
+      "result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b"
+    },
+    {
+      "claim_id": "8ae89f38-015b-4028-9066-091b469d1ada",
+      "result_id": "455d6e1f-f9f0-432b-9713-7603fbef3da1"
+    },
+    {
+      "claim_id": "49b82c83-1fcf-4ec3-b5ad-a74fb11778c2",
+      "result_id": "455d6e1f-f9f0-432b-9713-7603fbef3da1"
+    },
+    {
+      "claim_id": "cde9b319-303b-4a00-b473-650184ff07ed",
+      "result_id": "455d6e1f-f9f0-432b-9713-7603fbef3da1"
+    },
+    {
+      "claim_id": "e4daf6a4-cdb4-4598-8560-1e36cbb6580e",
+      "result_id": "ed3a4947-4b8e-4a6c-98b6-263fb6885319"
+    },
+    {
+      "claim_id": "d4ba69a5-507a-485e-b49c-0792d56f9033",
+      "result_id": "ed3a4947-4b8e-4a6c-98b6-263fb6885319"
+    },
+    {
+      "claim_id": "308cfab1-016e-47ef-8733-6233dde048bd",
+      "result_id": "d3bba369-a2a7-4af4-bad4-cb9fb4e9c237"
+    },
+    {
+      "claim_id": "5617a259-3cb7-49d4-a3bf-715855ad04fc",
+      "result_id": "d3bba369-a2a7-4af4-bad4-cb9fb4e9c237"
+    },
+    {
+      "claim_id": "6e1ac41f-bfaf-478c-8f77-2d33ebd3c801",
+      "result_id": "c4d58234-36d7-4b8a-8e00-1f410ed56ed0"
+    },
+    {
+      "claim_id": "1f66b6d1-1f12-43e4-af43-a83622214757",
+      "result_id": "c4d58234-36d7-4b8a-8e00-1f410ed56ed0"
+    },
+    {
+      "claim_id": "112329b3-2f56-4522-9434-7002f187db81",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "a687c8c9-64d7-4787-88d2-ee6bf794527b",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "981edfb1-a9f6-4b33-a6aa-3b06f85b337f",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "3c8247db-5f8c-4100-9ae8-b74f63d98605",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "f623ea9d-0144-49b5-b6f1-5bf0f12144ea",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "3325b37b-dc9c-457d-8fc0-c2f31a30548d",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "eafd43e8-4612-4f7c-9a5b-bb4299455378",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "b26a584b-9aad-4f93-8fbb-8ca3b5853b7e",
+      "result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82"
+    },
+    {
+      "claim_id": "8968009a-2484-4959-a563-2e8e873cf90d",
+      "result_id": "d59c8be6-e2ff-4e21-b1a9-d46553d97b22"
+    },
+    {
+      "claim_id": "0388b8f4-330d-4171-b365-e55b974c635e",
+      "result_id": "d59c8be6-e2ff-4e21-b1a9-d46553d97b22"
+    },
+    {
+      "claim_id": "6f1a80a4-9fc0-4077-b770-bab73c8b6079",
+      "result_id": "d59c8be6-e2ff-4e21-b1a9-d46553d97b22"
+    },
+    {
+      "claim_id": "7a42e2f2-4d4f-424c-af49-80af00082ea1",
+      "result_id": "7de07628-42b7-4694-bf22-e36301289b91"
+    },
+    {
+      "claim_id": "f8259fe5-0555-422e-8342-9f477402cc87",
+      "result_id": "7de07628-42b7-4694-bf22-e36301289b91"
+    },
+    {
+      "claim_id": "84f019e8-fc88-4ddf-bcb7-9faef15bb55e",
+      "result_id": "7de07628-42b7-4694-bf22-e36301289b91"
+    },
+    {
+      "claim_id": "5d01fe1a-eeb7-4f7d-ace3-e598aee5ebbc",
+      "result_id": "7de07628-42b7-4694-bf22-e36301289b91"
+    },
+    {
+      "claim_id": "7936df45-d3b3-496e-83cd-10d1558b03df",
+      "result_id": "84dae181-7b3e-4004-b482-9847ce1c4f57"
+    },
+    {
+      "claim_id": "51ba6390-5925-4a75-952b-a9397f1f028c",
+      "result_id": "84dae181-7b3e-4004-b482-9847ce1c4f57"
+    },
+    {
+      "claim_id": "cf9fb4e6-6481-41ad-b3c8-3fcf9fb00299",
+      "result_id": "84dae181-7b3e-4004-b482-9847ce1c4f57"
+    },
+    {
+      "claim_id": "444c6312-892d-4d28-9013-559a17edfe4d",
+      "result_id": "284cd676-700f-43a3-9e91-8e58519b4015"
+    },
+    {
+      "claim_id": "9abc0cbf-8f0b-4296-83ee-83a29cfecd2e",
+      "result_id": "284cd676-700f-43a3-9e91-8e58519b4015"
+    },
+    {
+      "claim_id": "05f7acaf-7d78-42c9-b815-a84d54477887",
+      "result_id": "284cd676-700f-43a3-9e91-8e58519b4015"
+    },
+    {
+      "claim_id": "65d8391b-4489-4078-b55c-7e9bca07f3bd",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "bf445d5f-a39d-46d1-b1e4-f5db9b3abaf0",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "a78edc63-e633-46b3-ae12-d22f63e5679c",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "fdbf473a-115c-46c0-9009-2599ce178881",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "43ba920e-4afd-464c-834e-240542b5f00f",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "ed40ac18-b4e8-45f0-80f2-4a431d22725b",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "3818242e-070c-4136-8fdb-093f9413a78c",
+      "result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d"
+    },
+    {
+      "claim_id": "7c38b554-74c5-4b14-9893-67f4a73a7690",
+      "result_id": "32a71cc6-d62b-4c7f-af7b-606e926cb6ae"
+    },
+    {
+      "claim_id": "7e2dae27-05cc-4e44-86ae-bd33fc671656",
+      "result_id": "32a71cc6-d62b-4c7f-af7b-606e926cb6ae"
+    },
+    {
+      "claim_id": "77292820-3cb3-4432-b616-5c3e513c0216",
+      "result_id": "32a71cc6-d62b-4c7f-af7b-606e926cb6ae"
+    },
+    {
+      "claim_id": "64fc1322-66a5-4a13-a7cd-115ce7c57441",
+      "result_id": "32a71cc6-d62b-4c7f-af7b-606e926cb6ae"
+    },
+    {
+      "claim_id": "bf9dccc1-ba2a-401f-830c-d7754c9b52a7",
+      "result_id": "f3914fa0-1897-400b-a102-5f5e34604019"
+    },
+    {
+      "claim_id": "c5ffc4d0-1c39-48f4-898b-afc11eaa85a7",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "abead6a8-d99d-4661-8064-3d905411a7a5",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "ce27976e-fb6d-46f0-a762-27a0004eb747",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "6fc6c4b0-e5f5-47a6-b85a-02dc9371d6e6",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "facf01f1-ffe5-4755-9048-aedfd4064fb8",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "1a7f00bd-d73a-42c0-8b16-03f6ababe1fc",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "1e086ea5-9589-40ad-b7d5-fb4d0f4f5efe",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "9f480e0e-e8df-4ff6-b1f9-ebda19101410",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "df8328ad-5e10-4cad-8c13-97e069680055",
+      "result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c"
+    },
+    {
+      "claim_id": "2f552ee1-17a7-428e-b9f6-d8b4490ee9ab",
+      "result_id": "539a6fe4-403e-4330-b13d-4fd236642b7e"
+    },
+    {
+      "claim_id": "8e8b7fc2-5e89-42aa-bf02-ab6d3cdf5835",
+      "result_id": "539a6fe4-403e-4330-b13d-4fd236642b7e"
+    },
+    {
+      "claim_id": "7bd96750-b969-44f2-b17c-9b920b683b6f",
+      "result_id": "539a6fe4-403e-4330-b13d-4fd236642b7e"
+    },
+    {
+      "claim_id": "ad1d8c92-d990-43fa-aaa7-029a5d7b904a",
+      "result_id": "539a6fe4-403e-4330-b13d-4fd236642b7e"
+    },
+    {
+      "claim_id": "9a701790-7f69-4a52-b025-bd9bbb00477f",
+      "result_id": "539a6fe4-403e-4330-b13d-4fd236642b7e"
+    },
+    {
+      "claim_id": "0ef0018f-2223-47c0-aa71-163e93f6d47e",
+      "result_id": "d25b92e5-2635-480d-9fdc-a6ba000544a7"
+    },
+    {
+      "claim_id": "23851ffc-08d8-4c79-a283-967db06def5c",
+      "result_id": "4d061b7b-080c-43ae-8bb8-b13baafd28c1"
+    },
+    {
+      "claim_id": "64866390-d621-44d6-b34b-c9d44df4808c",
+      "result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9"
+    },
+    {
+      "claim_id": "29d1b5be-2962-4925-a331-1ec11c56eea1",
+      "result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9"
+    },
+    {
+      "claim_id": "efd736c1-de45-409a-a0cd-3723fb0bbc5e",
+      "result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9"
+    },
+    {
+      "claim_id": "e55aee2c-c494-4344-b297-5a0f543f6fe3",
+      "result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9"
+    },
+    {
+      "claim_id": "a3fcb09e-9e73-44d1-a63e-a255700983c4",
+      "result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9"
+    },
+    {
+      "claim_id": "8253af9b-f411-4f91-8f80-d4fff4073a5a",
+      "result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9"
+    },
+    {
+      "claim_id": "9d3de829-ffdf-43cf-a4b4-e9809f0600c7",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "af4d47a9-a717-47d1-aecd-c4e347aedb91",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "e279816d-7521-41cb-a0b3-6a63b13765e3",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "a74a1309-bfd2-47e0-b392-c60fcbdd84d9",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "047426be-e221-4cca-ad20-e98ae14a140d",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "fffbd8c8-823e-49ed-b970-62bdc9ddbb8b",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "7cab4eab-d1b6-4f01-9e65-d193b8e25f57",
+      "result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663"
+    },
+    {
+      "claim_id": "8ccdec85-cbd7-4e95-8293-3d3141af5c45",
+      "result_id": "92bd35d8-817b-4a1f-b7a8-044a165dbdcb"
+    },
+    {
+      "claim_id": "d0a1a96a-c894-41fe-9ef9-ed78fbba134a",
+      "result_id": "92bd35d8-817b-4a1f-b7a8-044a165dbdcb"
+    },
+    {
+      "claim_id": "039ff6b2-0670-4b5d-bcc4-7caa48907ef1",
+      "result_id": "92bd35d8-817b-4a1f-b7a8-044a165dbdcb"
+    },
+    {
+      "claim_id": "961dc48b-9cfd-4316-84ea-393dbbdf7c2b",
+      "result_id": "b30f7b1a-3689-479a-89ed-900c4d10411d"
+    },
+    {
+      "claim_id": "3d064834-df72-4dc7-a502-fb6070f37a9d",
+      "result_id": "b30f7b1a-3689-479a-89ed-900c4d10411d"
+    },
+    {
+      "claim_id": "a38b1198-f928-419b-9259-376c74413e66",
+      "result_id": "b30f7b1a-3689-479a-89ed-900c4d10411d"
+    },
+    {
+      "claim_id": "626c06f9-53e7-4478-9ea7-86cb4bfc51da",
+      "result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b"
+    },
+    {
+      "claim_id": "7c9a4e24-0e71-48e5-b7cf-35dcd9856f9c",
+      "result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b"
+    },
+    {
+      "claim_id": "b8fc5a35-d4c0-483b-abc1-d5217e2afeee",
+      "result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b"
+    },
+    {
+      "claim_id": "47f692ee-dde7-4456-bf20-fc62b1757c9b",
+      "result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b"
+    },
+    {
+      "claim_id": "37f7419e-5ce9-46ee-9f69-4af4ba2565a3",
+      "result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b"
+    },
+    {
+      "claim_id": "1a8dc029-6d28-4e54-874b-ab028b42e19c",
+      "result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b"
+    },
+    {
+      "claim_id": "8ae89f38-015b-4028-9066-091b469d1ada",
+      "result_id": "d6e0628e-033f-46e6-8a5d-4c0e3b6270eb"
+    },
+    {
+      "claim_id": "49b82c83-1fcf-4ec3-b5ad-a74fb11778c2",
+      "result_id": "d6e0628e-033f-46e6-8a5d-4c0e3b6270eb"
+    },
+    {
+      "claim_id": "cde9b319-303b-4a00-b473-650184ff07ed",
+      "result_id": "d6e0628e-033f-46e6-8a5d-4c0e3b6270eb"
+    },
+    {
+      "claim_id": "e4daf6a4-cdb4-4598-8560-1e36cbb6580e",
+      "result_id": "31633bc3-7bb8-4f61-a762-77f3d56483b3"
+    },
+    {
+      "claim_id": "d4ba69a5-507a-485e-b49c-0792d56f9033",
+      "result_id": "31633bc3-7bb8-4f61-a762-77f3d56483b3"
+    },
+    {
+      "claim_id": "308cfab1-016e-47ef-8733-6233dde048bd",
+      "result_id": "c0f12dc7-9a23-4f41-95a3-d15f34b802b6"
+    },
+    {
+      "claim_id": "5617a259-3cb7-49d4-a3bf-715855ad04fc",
+      "result_id": "c0f12dc7-9a23-4f41-95a3-d15f34b802b6"
+    },
+    {
+      "claim_id": "6e1ac41f-bfaf-478c-8f77-2d33ebd3c801",
+      "result_id": "e7fd7800-fdf5-44a0-9fa0-9a6e7c319948"
+    },
+    {
+      "claim_id": "1f66b6d1-1f12-43e4-af43-a83622214757",
+      "result_id": "e7fd7800-fdf5-44a0-9fa0-9a6e7c319948"
+    },
+    {
+      "claim_id": "112329b3-2f56-4522-9434-7002f187db81",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "a687c8c9-64d7-4787-88d2-ee6bf794527b",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "981edfb1-a9f6-4b33-a6aa-3b06f85b337f",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "3c8247db-5f8c-4100-9ae8-b74f63d98605",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "f623ea9d-0144-49b5-b6f1-5bf0f12144ea",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "3325b37b-dc9c-457d-8fc0-c2f31a30548d",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "eafd43e8-4612-4f7c-9a5b-bb4299455378",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "b26a584b-9aad-4f93-8fbb-8ca3b5853b7e",
+      "result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102"
+    },
+    {
+      "claim_id": "8968009a-2484-4959-a563-2e8e873cf90d",
+      "result_id": "3140b61e-0e19-445f-8db2-bc32ac92a3ff"
+    },
+    {
+      "claim_id": "0388b8f4-330d-4171-b365-e55b974c635e",
+      "result_id": "3140b61e-0e19-445f-8db2-bc32ac92a3ff"
+    },
+    {
+      "claim_id": "6f1a80a4-9fc0-4077-b770-bab73c8b6079",
+      "result_id": "3140b61e-0e19-445f-8db2-bc32ac92a3ff"
+    },
+    {
+      "claim_id": "7a42e2f2-4d4f-424c-af49-80af00082ea1",
+      "result_id": "10cefab2-9809-4155-9b1a-81229c4889a2"
+    },
+    {
+      "claim_id": "f8259fe5-0555-422e-8342-9f477402cc87",
+      "result_id": "10cefab2-9809-4155-9b1a-81229c4889a2"
+    },
+    {
+      "claim_id": "84f019e8-fc88-4ddf-bcb7-9faef15bb55e",
+      "result_id": "10cefab2-9809-4155-9b1a-81229c4889a2"
+    },
+    {
+      "claim_id": "5d01fe1a-eeb7-4f7d-ace3-e598aee5ebbc",
+      "result_id": "10cefab2-9809-4155-9b1a-81229c4889a2"
+    },
+    {
+      "claim_id": "7936df45-d3b3-496e-83cd-10d1558b03df",
+      "result_id": "eae0a2fb-37f3-4393-96f5-de3aa16ba0fd"
+    },
+    {
+      "claim_id": "51ba6390-5925-4a75-952b-a9397f1f028c",
+      "result_id": "eae0a2fb-37f3-4393-96f5-de3aa16ba0fd"
+    },
+    {
+      "claim_id": "cf9fb4e6-6481-41ad-b3c8-3fcf9fb00299",
+      "result_id": "eae0a2fb-37f3-4393-96f5-de3aa16ba0fd"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "9d480749-3f1a-49ef-9a66-a7a1a465c82b",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a3bc36ee-1eff-4363-8b56-5adcf3c78c00",
+      "peer_result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C16-C18 about IFN-gamma-induced HLA-II upregulation as SUPPORTED. Peer review R1 also includes C19-C21 about HCMV antagonism, characterizing the work as 'fundamental' with 'compelling, rigorous immunological assays.' OpenEval R1 focuses specifically on flow cytometry evidence and experimental controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "32e6a72a-13e5-44da-8a83-eafbfca51556",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "34dabba2-dd6d-453d-b015-7df63442bc19",
+      "peer_result_id": "7dc454a6-95d2-4013-87f6-1316d79d64b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C19-C21 about HCMV antagonism via factors outside US2-11 as SUPPORTED. OpenEval R2 emphasizes the deletion mutant analysis logic, while peer review R1 groups these with C16-C18 and praises the overall approach as advancing understanding of viral immune evasion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "f8ee27e6-c115-421f-ac76-a2c17f6207de",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7b4be16f-c0ee-4394-b7be-39e73b2abc17",
+      "peer_result_id": "4bce9475-ab25-4194-a1c6-4e1797fb0663",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C22-C28). Both evaluate the systematic identification and validation of pUS28 as SUPPORTED. OpenEval R3 emphasizes dose-response experiments and statistical testing, while peer review R2 characterizes pUS28 as 'a novel player' with 'compelling' and 'rigorous immunological assays.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "21a7dd1c-4b1c-4a54-9d12-5d52cd57f19b",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "28d9c3f8-e480-4974-b08f-2b7ddf266109",
+      "peer_result_id": "92bd35d8-817b-4a1f-b7a8-044a165dbdcb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C29-C31). Both evaluate the post-transcriptional mechanism as SUPPORTED. OpenEval R4 notes the discordance between mRNA and protein levels, while peer review R3 praises 'state-of-the-art biochemistry' for 'uncovering its mode of action.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "ff6d58d9-9147-413b-b849-ebd81483a234",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6cddc940-f4d4-4509-91fa-4f438828f954",
+      "peer_result_id": "b30f7b1a-3689-479a-89ed-900c4d10411d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C32-C34). Both evaluate specificity controls as SUPPORTED. OpenEval R5 emphasizes the controls ruling out non-specific effects, while peer review R4 accepts these as part of 'rigorous immunological assays' with 'compelling' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "fda2935e-2232-41c8-861f-46651f90bc64",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "e5522b4a-7341-4b5a-bdc4-9f8910e0a66b",
+      "peer_result_id": "1693e28d-60ea-4ea0-855f-aa67a7a9797b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C35-C40). Both evaluate mass spectrometry validation as SUPPORTED. OpenEval R6 highlights orthogonal validation and CD74 findings, while peer review R5 specifically praises 'state-of-the-art biochemistry' as providing 'compelling' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "b27deb3d-6b27-4dea-b10f-64b813c08870",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "455d6e1f-f9f0-432b-9713-7603fbef3da1",
+      "peer_result_id": "d6e0628e-033f-46e6-8a5d-4c0e3b6270eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C41-C43). Both evaluate genetic evidence from viral systems as SUPPORTED. OpenEval R7 notes the bidirectional genetic approach and impaired rather than abolished activity, while peer review R6 accepts this as 'substantially advancing understanding' with 'compelling' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e7f11985-3e06-4925-a9c3-f46a508cea42",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ed3a4947-4b8e-4a6c-98b6-263fb6885319",
+      "peer_result_id": "31633bc3-7bb8-4f61-a762-77f3d56483b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C44-C45). Both evaluate cross-species conservation as SUPPORTED. OpenEval R8 suggests additional MCMV validation would strengthen C45, while peer review R7 accepts the findings as having 'broad interest to virologists and immunologists.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "90300634-2d50-497d-9e99-ef0b9bd16d2b",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d3bba369-a2a7-4af4-bad4-cb9fb4e9c237",
+      "peer_result_id": "c0f12dc7-9a23-4f41-95a3-d15f34b802b6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C46-C47). Both evaluate direct physical interaction and functional consequences as SUPPORTED. OpenEval R9 emphasizes the combination of binding and functional data, while peer review R8 praises 'state-of-the-art biochemistry' supporting the conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "503c93e8-247a-4e20-ba3c-ee313030af7e",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c4d58234-36d7-4b8a-8e00-1f410ed56ed0",
+      "peer_result_id": "e7fd7800-fdf5-44a0-9fa0-9a6e7c319948",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect claim overlap (C48-C49). OpenEval R10 rates as UNCERTAIN due to speculative inference about redundant mechanisms and incomplete exclusion of alternatives. Peer review R9 rates as SUPPORTED, accepting the systematic investigation as part of 'state-of-the-art biochemistry' despite negative results. This represents a notable disagreement in evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "5e234add-e35a-4184-8c7f-6a95e36fc8ce",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "b27e803a-8b0f-423b-90b8-fa4472fd6d82",
+      "peer_result_id": "c4b6931e-0efc-4912-bc2a-119eeb651102",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C50-C57). Both evaluate domain mapping as SUPPORTED. OpenEval R11 emphasizes separation of G-protein signaling from CIITA targeting, while peer review R10 accepts this as 'uncovering the mode of action' with 'compelling' evidence and 'rigorous' characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "811607ac-3731-4809-8599-519841693128",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "d59c8be6-e2ff-4e21-b1a9-d46553d97b22",
+      "peer_result_id": "3140b61e-0e19-445f-8db2-bc32ac92a3ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C58-C60). Both evaluate C-terminal function dissection as SUPPORTED. OpenEval R12 notes that specific amino acids remain unidentified, while peer review R11 praises 'state-of-the-art biochemistry' for distinguishing binding from degradation functions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "798a9f02-64aa-4f49-9932-7f6d4323429a",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7de07628-42b7-4694-bf22-e36301289b91",
+      "peer_result_id": "10cefab2-9809-4155-9b1a-81229c4889a2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C61-C64). Both evaluate functional T cell experiments as SUPPORTED. OpenEval R13 emphasizes specificity controls and effects of both wild-type and R129A mutant, while peer review R12 characterizes evidence as 'compelling, with rigorous immunological assays.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "32a9cd41-23eb-4169-b7c6-14f663d82c8f",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "84dae181-7b3e-4004-b482-9847ce1c4f57",
+      "peer_result_id": "eae0a2fb-37f3-4393-96f5-de3aa16ba0fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C65-C67). Both evaluate antiviral activity assays as SUPPORTED. OpenEval R14 notes specific cytokines are not definitively identified, while peer review R13 accepts these as 'rigorous immunological assays' providing 'compelling' evidence for functional immune evasion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "40f291a3-92ef-415f-af7f-c7f48eb2fb39",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "284cd676-700f-43a3-9e91-8e58519b4015",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R15 evaluates background claims C1-C3 about HCMV epidemiology as SUPPORTED. No corresponding peer review evaluation found; peer reviews typically focus on novel findings rather than background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "6b47240d-b78b-4ac8-a23b-7a136c1f2a17",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "814b1a3a-7363-4269-b579-d45ac5700f8d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R16 evaluates background claims C4-C10 about CD4+ T cell importance as SUPPORTED. No corresponding peer review evaluation found; these represent prior work providing context rather than new findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "7d504c20-8729-432e-9904-942f71adf06b",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "32a71cc6-d62b-4c7f-af7b-606e926cb6ae",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R17 evaluates background claims C11-C14 about CIITA biology as SUPPORTED. No corresponding peer review evaluation found; these establish context for understanding pUS28's targeting strategy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "e3395ae1-0f90-4846-a075-537611286a55",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "f3914fa0-1897-400b-a102-5f5e34604019",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R18 evaluates background claim C15 about pUS28 expression profile as SUPPORTED. No corresponding peer review evaluation found; this represents established prior knowledge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "f216fe44-f9c7-4e60-b669-9aa4d13d43d6",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "4ba45c8a-0673-4ee2-8966-4e3c73ffc92c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R19 evaluates background claims C68-C76 about prior pUS28 functions as SUPPORTED. No corresponding peer review evaluation found; these summarize literature review distinguishing new findings from known functions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "785ce0d5-8892-407a-bec7-00fe212d8a48",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "539a6fe4-403e-4330-b13d-4fd236642b7e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R20 evaluates contextual claims C77-C81 about HLA-II antagonism strategies as SUPPORTED. No corresponding peer review evaluation found; these contextualize findings within prior literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "069a44a9-7d20-4d9b-a201-3008ec567098",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "d25b92e5-2635-480d-9fdc-a6ba000544a7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R21 evaluates speculative claim C82 about latency function as UNCERTAIN, noting it is explicitly hypothetical without direct evidence. No corresponding peer review evaluation found for this discussion point.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    },
+    {
+      "id": "fd70bcf1-6d29-4088-90bf-b3eea92bd5cc",
+      "submission_id": "2f68c9da-2192-4518-a4b6-2aecc24473db",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "4d061b7b-080c-43ae-8bb8-b13baafd28c1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R22 evaluates background claim C83 about NK cells as SUPPORTED. No corresponding peer review evaluation found; this represents prior knowledge providing context for alternative immunity mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:41:35.997240Z"
+    }
+  ]
+}

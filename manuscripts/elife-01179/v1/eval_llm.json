@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors developed a ribosome profiling protocol for Drosophila using MNase instead of RNase I, demonstrating that Drosophila ribosomes are sensitive to RNase I but tolerate MNase, and that the resulting measurements are highly reproducible with an inter-replicate standard deviation of 1.07-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 provide converging experimental evidence that the MNase-based protocol is both necessary (due to RNase I sensitivity) and reliable (high reproducibility). The data from Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2 directly support these technical claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Translation efficiency measurements in 0-2 hr Drosophila embryos are highly reproducible and reveal that translational regulation is a major determinant of gene expression, with translation efficiencies spanning four orders of magnitude and being uncorrelated with mRNA abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 collectively demonstrate robust measurements (r\u00b2=0.946) and show that mRNA abundance predicts only one-third of protein production variance. The data from Figure 1C-F provide strong quantitative support for the conclusion that translational regulation is a major determinant of gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C79"
+    ],
+    "result": "Ribosome density on 5' UTRs is similar to coding regions and is attributed to translating 80S ribosomes rather than preinitiation complexes, while 3' UTR density is several orders of magnitude lower, with evidence of uORF translation including initiation peaks at ATG and near-cognate start codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C79 are supported by multiple lines of evidence including footprint length distributions (Figure 2\u2014figure supplement 2), comparison of cushion vs gradient preparations (Figure 2B), and visible initiation peaks at uORF boundaries (Figure 2C). The convergence of these independent lines of evidence strongly supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C4",
+      "C5",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors identified 350 readthrough events in Drosophila, including 43 phylogenetically predicted extensions and 307 novel extensions not predicted by phylogenetic approaches, demonstrating that readthrough is far more pervasive than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C22-C23, and C81-C82 are well-supported by ribosome profiling data (Figure 3A, supplementary table 2). The identification of 307 novel extensions represents a major finding that substantially expands the known scope of readthrough beyond the 283 phylogenetically predicted events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Ribosome-protected footprints in C-terminal extensions show multiple signatures of active translation: high correlation between different preparation methods, length distributions similar to coding regions, and characteristic termination peaks at stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide three independent lines of evidence that footprints in extensions derive from actively translating ribosomes. The correlation between preparation methods (Figure 4A), length distributions (Figure 4B), and termination peaks (Figure 4C) collectively provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Readthrough produces detectable protein products for at least 8 out of 15 tested extensions as demonstrated by immunoprecipitation and western blotting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is directly supported by experimental data from IP-western blots (Figure 4D). The detection of correctly-sized readthrough products in 8/15 reporters provides direct biochemical evidence that readthrough generates stable protein products, though the 47% failure rate suggests either technical limitations or that not all ribosome profiling signals produce stable proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors systematically excluded alternative explanations for readthrough including selenocysteine insertion, genomic polymorphisms, and RNA editing through computational and statistical analyses of sequencing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide comprehensive evidence against alternative mechanisms. The analysis of UGA codons, SECIS elements, mismatch rates, and A-to-I editing patterns (Figure 4E-G) systematically rules out these alternatives. The A-site footprint analysis (C33-C34) is particularly rigorous, showing significantly fewer A-to-G mismatches than expected under the editing hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C9",
+      "C62",
+      "C63"
+    ],
+    "result": "Readthrough occurs in yeast and humans, with ribosome profiling identifying readthrough events in [psi-] yeast and 42 events in human foreskin fibroblasts, supported by triplet periodicity characteristic of translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C35-C36, and C62-C63 demonstrate that readthrough is conserved across eukaryotes. The triplet periodicity analysis (Figure 5A) and specific examples (Figure 5B-E, supplementary tables 3-4) provide strong evidence. This cross-species conservation significantly strengthens the biological importance of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A substantial fraction of identified extensions exceed a biologically significant readthrough rate threshold of 1.2%: 61.8% in Drosophila, 94.7% in human, and 40.0% in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C39 rely on a threshold (1.2%) defined as the fifth percentile of phylogenetically conserved extensions. While this is a reasonable heuristic, the biological significance threshold is somewhat arbitrary and not independently validated. The high percentages suggest many extensions may be functional, but without additional functional validation, the biological significance remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C40",
+      "C41",
+      "C65",
+      "C66",
+      "C67",
+      "C6",
+      "C68"
+    ],
+    "result": "Novel C-terminal extensions show evidence of recent evolutionary origin and selection within D. melanogaster, with nucleotide character intermediate between coding regions and 3' UTRs and modest but significant preference for synonymous SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40-C41, and C64-C68 provide multiple lines of evidence for selection on novel extensions. The Z-curve analysis (Figure 6B) and SNP analysis (Figure 6C) show statistically significant signatures of protein-coding selection. The intermediate character between coding and non-coding regions is consistent with recent evolutionary origin, though the modest effect sizes suggest heterogeneity in the extension population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C69",
+      "C70",
+      "C8"
+    ],
+    "result": "Readthrough is differentially regulated between S2 cells and 0-2 hr embryos in a transcript-specific manner, with 9 of 182 testable transcripts showing significant changes spanning several orders of magnitude in fold-change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42-C45, and C69-C70 demonstrate regulated readthrough using Fisher's exact test with FDR control. The observation of both increases and decreases (C43-C44) strongly supports transcript-specific regulation rather than global changes. The statistical approach is appropriate, though the authors acknowledge limited power due to sequencing depth (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C7"
+    ],
+    "result": "C-terminal extensions contain predicted functional peptide signals including nuclear localization signals, transmembrane domains, prenylation signals, and peroxisomal targeting signals, with three tested extensions experimentally confirmed to contain functional NLSes that relocalize reporters to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C50 combine computational predictions (Table 2) with experimental validation (Figure 7). The experimental confirmation of functional NLSes in 3 tested extensions provides direct evidence that at least some predicted signals are functional. However, the functional significance of other predicted signals remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The 350 identified readthrough events likely represent a small subset of total readthrough events occurring throughout Drosophila development, with many phylogenetically predicted but unobserved extensions likely translated at other developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are reasonable inferences from the observed regulation data (Table 1) and sequencing depth limitations. The observation of large-magnitude, transcript-specific regulation logically implies stage-specific readthrough. However, these remain predictions requiring future experimental validation across developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C71"
+    ],
+    "result": "Stop codon readthrough provides a general mechanism for proteins to evolve at the C-terminus and to regulate gene expression and function, supported by baseline readthrough rates in control constructs and the high functionality of random peptide sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C71 synthesize the manuscript's findings with prior literature to propose an evolutionary model. The model is well-supported by the combination of: (1) observed baseline readthrough rates from prior studies (C55), (2) high functionality of random sequences (C56), (3) evidence of selection (C6, C40-C41), (4) functional signals (C7, C50), and (5) regulated expression (C8, C42-C45). This represents a coherent synthesis of multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Polysome analysis demonstrates quantitative recovery of ribosomes, with MNase digestion collapsing polysomes into monosomes and the monosome peak area being 1.04-fold the combined polysome and monosome areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 provide technical validation of the ribosome profiling protocol. The quantitative recovery (1.04-fold) demonstrated in Figure 1A indicates minimal loss of ribosomes during sample preparation, supporting the reliability of downstream measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The ribosome profiling assay enables detection of modest changes in translation efficiency, with a standard deviation of 1.19-fold between biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 demonstrate the sensitivity of the assay. The low standard deviation (1.19-fold) between biological replicates (Figure 1C inset) indicates the method can reliably detect even modest regulatory changes, which is important for the differential regulation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Some transcripts show 3' UTR footprint density consistent with alternative mechanisms such as ribosomal frameshift or RNA structure/protein binding rather than readthrough.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 acknowledge that not all 3' UTR ribosome density represents readthrough. The examples in Figure 3\u2014figure supplement 1 demonstrate appropriate quality control by excluding alternative mechanisms. This strengthens confidence in the readthrough calls by showing the authors can distinguish different phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The median readthrough rate for conserved extensions in Drosophila is 5.2%, while the median for novel extensions is 1.7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide quantitative characterization of readthrough rates. The higher median for conserved extensions (5.2%) compared to novel extensions (1.7%) is consistent with the evolutionary model that conserved extensions have been selected for higher readthrough efficiency.",
+    "result_type": "MINOR"
+  }
+]

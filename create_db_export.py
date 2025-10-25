@@ -23,20 +23,24 @@ def create_db_export(version_dir: Path) -> bool:
         from cllm.models import LLMClaimV3, LLMResultV3, LLMResultsConcordanceRow
 
         # Find files
-        manuscript_file = list(version_dir.glob("manuscript_v*.md"))[0]
+        manuscript_file = version_dir / "manuscript.md"
         claims_file = version_dir / "claims.json"
         eval_llm_file = version_dir / "eval_llm.json"
         eval_peer_file = version_dir / "eval_peer.json"
         cmp_file = version_dir / "cmp.json"
-        peer_reviews_file = list(version_dir.glob("reviews_v*.md"))
+        peer_reviews_file = version_dir / "reviews.md"
+
+        # Check if manuscript exists
+        if not manuscript_file.exists():
+            raise FileNotFoundError(f"Manuscript file not found: {manuscript_file}")
 
         # Load manuscript text
         manuscript_text = manuscript_file.read_text(encoding='utf-8')
 
         # Load peer reviews text (if available)
         peer_review_text = None
-        if peer_reviews_file and peer_reviews_file[0].exists():
-            peer_review_text = peer_reviews_file[0].read_text(encoding='utf-8')
+        if peer_reviews_file.exists():
+            peer_review_text = peer_reviews_file.read_text(encoding='utf-8')
 
         # Load claims (direct list format)
         with open(claims_file) as f:

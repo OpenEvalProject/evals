@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "GNU is a novel component of a subpopulation of RNP granules in mature Drosophila oocytes. GNU localizes to cytoplasmic granular structures that co-localize with known RNP granule markers TRAL, ME31B, and BIC-C, and forms complexes with translational repressors including BIC-C, TYF, and YPS. GNU-containing granules represent a subset of TRAL/ME31B/BIC-C granules, identifying a new subpopulation of oocyte RNP granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C13, C23, C27-29, C32-33, and C42-45 collectively provide strong converging evidence from multiple experimental approaches (immunoprecipitation/mass spectrometry, fluorescence microscopy, co-localization studies) demonstrating that GNU is a component of RNP granules. The data show GNU physically interacts with RNP components in an RNA-independent manner and localizes to a subset of granules containing known markers, establishing this as a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C35",
+      "C46",
+      "C49"
+    ],
+    "result": "The SAM domain of GNU is necessary and sufficient for direct interaction with BIC-C and for GNU localization to RNP granules. Deletion of the SAM domain abolishes both the GNU-BIC-C interaction in vivo and in vitro, and prevents GNU localization to granules. The authors propose that GNU is recruited to RNP granules via SAM domain-mediated protein-protein interactions with BIC-C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16, C17, C35, C46, and C49 are well-supported by multiple lines of evidence including in vivo immunoprecipitation, in vitro pull-down assays, and localization studies with SAM domain deletion mutants. The data consistently show that the SAM domain is required for BIC-C interaction and granule localization, though C49 includes some speculative interpretation about this being the 'main mechanism.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C30",
+      "C31",
+      "C48",
+      "C50"
+    ],
+    "result": "CDK1 phosphorylation of GNU modulates its interaction with BIC-C and localization to RNP granules. The GNU9A mutant (lacking CDK1 phosphorylation sites) shows reduced BIC-C binding and predominantly dispersed cytoplasmic localization with reduced granular localization compared to wild-type GNU. The authors propose that CDK1 phosphorylation enhances or stabilizes GNU in RNP granules, possibly by strengthening the GNU-BIC-C interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C30, C31, C48, and C50 are supported by immunoprecipitation and localization data showing that GNU9A has reduced BIC-C interaction and altered localization. However, the mechanistic interpretation (C48, C50) is somewhat speculative. The data clearly show phosphorylation affects these properties, but whether it acts through BIC-C binding or other mechanisms remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C52"
+    ],
+    "result": "BIC-C is required for GNU localization to RNP granules, and GNU reciprocally affects BIC-C granule localization. In Bic-C mutant oocytes, GNU-GFP shows dispersed localization. Conversely, in gnu mutant oocytes, BIC-C localization becomes partially dispersed in 30% of oocytes, while ME31B localization is unaffected. This suggests GNU has a role in maintaining or stabilizing BIC-C in a subset of granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-38 and C52 are supported by localization studies in mutant backgrounds. The reciprocal dependency is demonstrated, though the effect of gnu loss on BIC-C is partial (30% of oocytes) and less severe than the effect of Bic-C loss on GNU. The specificity is supported by the lack of effect on ME31B (C38), strengthening the conclusion of a specific GNU-BIC-C relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C53"
+    ],
+    "result": "The SAM domain of GNU is required for full in vivo function but not for PNG kinase activation in vitro. The gnu\u0394SAM transgene confers only partial rescue of the gnu null phenotype with reduced CYCB levels in embryos compared to wild-type rescue. However, GNU\u0394SAM activates PNG kinase in vitro at levels comparable to wild-type GNU. Additionally, BIC-C protein levels are decreased in gnu\u0394SAM embryos, and GNU protein persists in these embryos, suggesting the SAM domain is required for GNU degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-22 and C53 are supported by phenotypic analysis, immunoblots, and in vitro kinase assays. The discrepancy between in vitro kinase activity (normal) and in vivo function (partial) is clearly documented. The persistence of GNU protein in gnu\u0394SAM embryos (C22) is well-demonstrated, though the mechanistic interpretation is inferential. The decreased BIC-C levels (C21, C53) are documented but the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C56"
+    ],
+    "result": "The data support a 'beacon' model over a 'sequestration' model for PNG regulation. GNU retains its association with BIC-C after egg activation, and loss of GNU granule localization (in gnu\u0394SAM mutants) does not increase CYCB levels in mature oocytes, indicating that loss of granule localization is insufficient to prematurely activate PNG. These findings are inconsistent with a sequestration model where GNU release from granules would activate PNG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-41 and C56 provide evidence against the sequestration model through two key observations: GNU-BIC-C association persists after activation (C39), and GNU\u0394SAM does not cause premature PNG activation despite loss of granule localization (C40-41). These data logically support the beacon model interpretation, though the model itself remains somewhat speculative as it is based on exclusion of an alternative rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GNU granules dissociate upon egg activation in a PNG-independent manner. GNUWT-GFP signal becomes dispersed through the cytoplasm in in vitro activated eggs, and this dispersal occurs normally in png mutants. In contrast, PNG and PLU do not exhibit granular localization in mature oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-26 are supported by fluorescence microscopy data showing GNU dispersal after activation and the lack of granular localization for PNG/PLU. The PNG-independence of GNU dispersal (C25) is demonstrated by experiments in png mutants. These observations are consistent with the proposed model where GNU and PNG are not co-localized in oocytes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Components of the PP2A phosphatase complex (MTS, PP2A-29B, and TWS) were highly enriched in GNU-GFP immunoprecipitations from mature oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by mass spectrometry data from immunoprecipitation experiments. The enrichment of PP2A components is well-documented and suggests a potential role in GNU dephosphorylation, though this functional connection is not experimentally tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C57"
+    ],
+    "result": "The authors propose that upon egg activation, GNU brings PNG to translational repressors in RNP granules (beacon model), and that GNU may have PNG-independent roles in regulating maternal mRNA translation in mature oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C55, and C57 are speculative models and hypotheses based on the experimental findings but not directly tested. While the data are consistent with these proposals (GNU in granules, association with BIC-C persists after activation), direct evidence that GNU recruits PNG to granules or that GNU has PNG-independent functions is lacking. These represent reasonable interpretations requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "There is a diverse pool of RNP granule subtypes in the mature oocyte, as GNU is present in only a subset of TRAL, ME31B, and BIC-C granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by the co-localization data (C28, C33) showing that GNU is present in only a fraction of granules containing other markers. This observation logically implies heterogeneity in granule composition, though the functional significance of different subtypes is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The regulation of PNG by GNU and BIC-C shows parallels to the regulation of NEK7 kinase by ANKS3/ANKS6 and BICC1 in vertebrate left-right patterning. Both systems involve SAM domain-containing proteins recruiting kinases, suggesting conserved control mechanisms across developmental contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-62 are supported by citations to the literature on the NEK7/BICC1/ANKS system. The comparison drawn (C60, C62) is reasonable given the structural and functional similarities, though it remains an inference about evolutionary conservation rather than a directly tested hypothesis in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background knowledge claims about the PNG kinase complex, RNP granules, and related regulatory systems in Drosophila and other organisms, established by prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-2, C6-11, C63-89 represent established knowledge from the literature, supported by appropriate citations. These provide necessary context for interpreting the novel findings but are not new results from this study. The authors appear to accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C51"
+    ],
+    "result": "GNU contains an intrinsically disordered region (IDR) with eight of nine CDK1 phosphorylation sites, and GNU may be recruited onto pre-existing BIC-C-containing granules as its levels increase during oocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by citation to prior work characterizing GNU structure. Claim C51 is a reasonable inference based on the timing of BIC-C granule formation (mid-oogenesis) versus GNU accumulation (late oogenesis), supported by citations, though the recruitment dynamics are not directly observed in this study.",
+    "result_type": "MINOR"
+  }
+]

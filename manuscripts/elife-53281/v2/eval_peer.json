@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C39",
+      "C40",
+      "C41",
+      "C66"
+    ],
+    "result": "The computational model predicts that GGN can passively propagate signals from the \u03b1 lobe to the calyx despite substantial attenuation, with depolarizations of ~5-9 mV throughout the calyx from a 10 mV input, sufficient to support global inhibition of KCs several hundred microns away.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 notes that the authors' statement about uncertainty regarding GGN's biophysical capacity 'appears to not consider previous studies of this neuron that clearly show this capacity experimentally (Papadopoulou et al., 2011, Figure 3C).' The reviewers acknowledge the model is valuable but question whether it disambiguates alternative hypotheses. In the second round, reviewers request that the manuscript text incorporate more explanation about the nuances of interpreting the model within existing experimental data, suggesting the claims remain somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The computational model predicts that feedback inhibition from GGN expands the dynamic range of KCs by increasing their spiking threshold while allowing them to continue spiking over a much larger range of current injection compared to isolated KCs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'I am less convinced by Figure 3' and notes 'there is no experimental evidence that KCs dynamic range really is improved by inhibition. It's a prediction based on a model without experimental validation.' Reviewer 3 questions the model setup and notes 'their conclusion that feedback inhibition expands the dynamic range of KCs is not well supported by their model.' In the final round, reviewers emphasize 'The authors have not demonstrated that feedback inhibition expands the dynamic range of KCs' and require the text to 'make clear that their model predicts the dynamic range result, rather than stating definitively that feedback increases dynamic range.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C45"
+    ],
+    "result": "In vivo recordings show that GGN responds to odors with complex temporal patterns including both depolarization and hyperpolarization, with almost a quarter of odor-GGN pairs (40 out of 169) showing reliable hyperpolarizations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these as 'novel functional properties of GGN (e.g. suppressive responses to odor)' (Reviewer 3) and do not challenge the in vivo recording data showing hyperpolarizations. The observations are treated as valid experimental findings that inform subsequent modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Computational modeling demonstrates that sustained GGN responses require heterogeneous synaptic connection strengths onto KCs (following a lognormal distribution) combined with structured PN firing patterns, where 20% of PNs switch to 20 spikes/s during odor stimulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes 'the authors only tested a model in which the KC spike rates were all active or a model in which 1/5 of the neurons were inactive' and suggests 'it would have been good to test the model with different patterns of KC input...to show whether this outcome depended on the proportion of inactive KCs.' Reviewer 1 asks whether 'synchronization of KC spikes in Figure 5C be alleviated by introducing variability in timing of KC inputs' and states 'ruling out this possibility is important for the implicit logic.' The reviewers indicate the model predictions need more thorough exploration of parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Both computational modeling and in vivo recordings reveal that while most KCs produce 0-2 odor-elicited spikes with very low firing rates (~0.09-0.16 Hz), a small fraction of KCs spike at relatively high rates, forming a long-tailed distribution. These high-rate KCs are not a static population but change identity and augment GGN depolarization to realistic levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the model 'generated an interesting prediction \u2013 that GGN can only show the experimentally measured sustained odor-evoked depolarization if some KCs fire at high rates' and notes 'the authors test the prediction experimentally, finding that a small previously overlooked fraction of KCs do in fact fire at high rates.' However, Reviewer 3 notes this is 'entirely consistent with previously reported data' from Perez-Orive et al., 2002, suggesting the novelty is limited. Reviewer 1 questions whether the two outlier KCs 'weren't weird experimental flukes' but does not reject the overall finding. The experimental validation is accepted though contextualization with prior literature was requested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In vivo recordings and computational modeling indicate that GGN's odor-evoked hyperpolarizations cannot be explained solely by disinhibition from IG. Instead, IG must receive direct odor-driven excitation from an unknown pathway (potentially from KCs or PNs), as IG's firing rate increases before GGN's membrane potential returns to baseline, and spontaneous IPSPs persist when PNs and KCs are silenced.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'the authors analyze the timing of IPSPs in GGN to infer that the inhibitor of GGN must be directly excited by odors (via KCs or PNs)' and notes this 'provides novel evidence for this connectivity.' However, Reviewer 2 expresses concern about 'their conclusion that they have evidence for another olfactory pathway' and notes contradictions: 'when they cut the antennal nerve, they find that the GGN continues to spike \u2013 as normal \u2013 ruling out input from PNs or KCs to the IG...What other olfactory source could it be, if it wasn't from the antenna?' Reviewer 3 notes that cutting the antennal nerve may not silence all PNs and KCs because 'locusts also have maxillary palps which contain ORNs that innervate the antennal lobe.' The evidence is mixed and the interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Detailed morphological characterization reveals GGN's extensive anatomy, including novel observations of feather-like neurites wrapping the peduncle, with total branch length of ~65 mm placing it in the 99.75th percentile compared to 96,831 cataloged neurons, and maximum path length of ~2 mm with some neurites nearly 20 \u03bcm in diameter.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'Their anatomical characterization and compartmental model of GGN is a useful resource' and Reviewer 1 notes 'the model itself is a valuable advance.' The morphological observations, particularly the novel feather-like neurites, are not challenged by reviewers and are treated as valid descriptive findings that support the computational model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "GGN is a unique giant non-spiking GABAergic neuron that receives excitatory input from all 50,000 KCs in the \u03b1 lobe and provides inhibitory feedback to all KCs 400-500 \u03bcm away in the calyx, while also receiving inhibitory input from IG in a reciprocal circuit.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established background knowledge about GGN's role and connectivity, supported by prior literature. Reviewers do not challenge these foundational claims and treat them as accepted context for evaluating the novel findings. The acceptance summary states the work examines 'how a wide-field inhibitory neuron contributes to the dynamics of odor responses,' accepting GGN's established role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims about olfactory processing: ORNs respond vigorously to odors while downstream neurons in mushroom body respond sparsely with few spikes; information is represented through population and temporal coding; GABAergic inhibition contributes to these transformations; in locusts, spontaneous ORN activity drives PN spiking organized into rhythmic waves, while KCs are nearly silent at rest and respond selectively to odors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background claims from prior literature that reviewers do not challenge. They provide context for the study's novel findings and are accepted as foundational knowledge about the olfactory system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The computational model of GGN was implemented with 5283 isopotential compartments using biophysically realistic parameters: membrane resistivity of 33 k\u03a9-cm\u00b2, specific membrane capacitance of 1 \u03bcF/cm\u00b2, and cytoplasmic resistivity of 100 \u03a9-cm.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 asks for elaboration on some model parameters but does not challenge the basic biophysical parameters used. The parameters are based on established literature values for non-spiking neurons and cell membranes, and reviewers accept them as reasonable for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Discussion claims contextualizing findings with prior literature: small depolarizations (2-5 mV) in non-spiking interneurons can evoke postsynaptic effects; APL in Drosophila shows heterogeneous activity and provides both local and global inhibition to KCs; feedback inhibition expands dynamic range in both cortical neurons and Drosophila KCs; IG has been hypothesized to receive KC input.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent contextualization with existing literature. Reviewer 2 specifically notes 'the discussion could be strengthened if the authors took more space in the discussion to compare their data/model to the recent paper on Drosophila from Inada et al., 2017,' suggesting these comparisons are valuable. Reviewers do not challenge the accuracy of these literature citations.",
+    "result_type": "MINOR"
+  }
+]

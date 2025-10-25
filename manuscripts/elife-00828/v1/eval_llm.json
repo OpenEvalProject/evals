@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C93",
+      "C97"
+    ],
+    "result": "The crystal structure of a chemically trapped Rsp5WW3-HECT\u223cUb\u223cSna3C complex reveals a distinct catalytic architecture for ubiquitin ligation. The structure shows three-way interactions between the HECT domain N-lobe, C-lobe, and covalently linked ubiquitin that orient the E3\u223cubiquitin thioester bond for ligation and restrict substrate positioning to prioritize target lysines. This represents the first structural snapshot of a HECT E3 poised to transfer ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure (C5, C51-56, C97) provides direct structural evidence for the catalytic architecture. The structure reveals ~2800 \u00c5\u00b2 of buried surface area between domains, specific \u03b2-sheet interactions, and three-way contacts anchored by Ub Arg74. The ~130\u00b0 rotation of the C-lobe and Ub to face the substrate (C93) is directly observed. The chemical crosslinking strategy successfully trapped a catalytically relevant intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Systematic alanine scanning mutagenesis identifies distinct HECT domain regions required for E2-to-E3 versus E3-to-substrate ubiquitin transfer. Mutations at the N-lobe/E2 and C-lobe/Ub interfaces impair E2-to-E3 transfer, while mutations at the N-lobe/C-lobe interface (e.g., R559A/R560A/F561A, R501A/E502A) selectively impair E3-to-substrate ligation without affecting E2-to-E3 transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The alanine scanning data (C49, C50, C64-66) systematically map functional regions to structural features. The pulse-chase assays clearly distinguish between defects in the two transfer steps. Every mutation at the N-lobe/C-lobe interface shows impaired ligation (C64), providing strong support. The minimal Rsp5WW3-HECT construct is validated as functional (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Specific residues in the HECT domain catalytic architecture are essential for ubiquitin ligation. Ub R74A and Rsp5 S774A mutations severely impair ligation to substrate without affecting E2-to-E3 transfer, and these mutations are defective in supporting yeast growth. The C-lobe residue F806 packs against the N-lobe and is required for ligation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical data (C58-61, C69-70) clearly demonstrate selective defects in ligation for R74A, S774A, and F806A mutations. The yeast complementation assays (C62) provide in vivo validation. The structural observation of F806 packing against the N-lobe (C68) rationalizes its functional importance. Multiple independent lines of evidence converge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The N-lobe loop containing residues 491-495, particularly Glu491 and Asp495, is essential for ubiquitin ligation and forms a composite catalytic center with the C-lobe. Structural modeling suggests this loop positions near the thioester bond and acceptor lysine, with Asp495 potentially activating ligation through lysine guidance or deprotonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mutagenesis data (C75-77) clearly demonstrate that E491A and D495A are essential for ligation and yeast viability, the mechanistic interpretation relies heavily on computational modeling (C78-80) because this loop is not visible in the crystal structure. The failure to rescue activity with D495H or chemical additives (C82) argues against direct deprotonation, but the precise mechanism remains speculative (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C108"
+    ],
+    "result": "The catalytic architecture and key residues are conserved across NEDD4-family HECT E3s. Mutations that impair Rsp5-mediated ligation also impair Ub-to-Ub ligation during polyubiquitination. The corresponding aspartate mutation in human NEDD4 and NEDD4L severely impairs autoubiquitination, and sequence alignment shows conservation of critical residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data demonstrate that the mechanism applies beyond substrate ligation to polyubiquitination (C84). Testing in human NEDD4 and NEDD4L (C86) provides cross-species validation. The sequence alignment (C87) shows conservation of key residues including the critical aspartate across multiple NEDD4-family members. This supports broad applicability of the mechanism (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C107"
+    ],
+    "result": "The HECT E3 architecture prioritizes substrate lysines for ubiquitination based on their distance from the PPXY motif binding site. Substrates with 12-18 residues between the PPXY motif and target lysine are efficiently ubiquitinated, while substrates with fewer than 12 or more than 18 residues show reduced efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The substrate selection assays (C89-91) systematically test linker length and demonstrate a clear preference window. The ~25 \u00c5 distance between the WW domain binding site and active site (C88) provides structural rationale. The data directly support the hypothesis that HECT domain architecture restricts substrate positioning (C92, C107). Multiple substrate variants were tested with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C31",
+      "C32",
+      "C93"
+    ],
+    "result": "Integration of the new structure with prior E2\u223cUb-HECT structures reveals the complete E2-to-E3-to-substrate ubiquitin transfer cascade. The data confirm the prior E2\u223cUb-HECT structure explains E2-to-E3 transfer, show the C-lobe remains associated with Ub after E3\u223cUb formation, and demonstrate a ~130\u00b0 rotation of the C-lobe and Ub to face the substrate for ligation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic mutagenesis (C95) validates the prior E2\u223cUb-HECT structure (C31). The new structure combined with concurrent work (C32, C96) demonstrates C-lobe/Ub association after intermediate formation. The structural comparison directly shows the ~130\u00b0 rotation (C93). Together these provide a complete mechanistic picture of the transfer cascade (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The C-terminal residue of Rsp5 contributes to ubiquitin ligation, but the mechanism is unclear. Deleting the C-terminal residue impairs ligation, consistent with concurrent findings, but mutating all three C-terminal residues to alanine or the terminal residue to arginine shows no defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The deletion data (C71, C72) show impaired activity, but the alanine and arginine substitution data (C73, C74) contradict a simple catalytic role for the acidic C-terminus. The C-terminus is not visible in the structure, limiting mechanistic interpretation. The conflicting results suggest the C-terminus may play a structural rather than catalytic role, but this requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background information on ubiquitination mechanisms, HECT E3 structure and function, and the Rsp5-Sna3 model system. This includes the two-step HECT mechanism, NEDD4-family domain organization, substrate recognition through PPXY motifs, and the rationale for using Rsp5 and Sna3 as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, supported by appropriate citations (C1-C46). They provide necessary context for the study but do not constitute novel findings. The information about the Rsp5-Sna3 system (C36-C46) is well-documented in prior studies and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C33",
+      "C34",
+      "C35",
+      "C48"
+    ],
+    "result": "Prior to this work, no structures existed of E3\u223cUb intermediates or E3\u223cUb-substrate complexes. The prevailing hypothesis that different N-lobe/C-lobe orientations enable diverse substrate ubiquitination had not been experimentally tested, and mechanisms of lysine prioritization were unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the state of knowledge at the time of the study (C15, C16, C33-C35). The statement about interlobe flexibility leading to the multiple-orientation hypothesis (C48) is supported by citations to prior structural work. These claims establish the knowledge gaps that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Comparison of HECT and RING E3 mechanisms reveals distinct approaches to ubiquitin transfer activation. HECT E3s use extensive Ub/C-lobe interactions and expose Ub's Ile44, while RING E3s bind the I44 patch and activate E2\u223cUb even without a downstream acceptor. The authors speculate that other cysteine-dependent E3s may use similar alignment mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic comparisons between HECT and RING E3s (C99-C103) are supported by the structural data and prior literature. The structural observation of exposed Ile44 in HECT intermediates (C102) is directly from the data. The general conclusion about distinct mechanisms (C104) is well-supported. However, the speculation about other E3 families (C98) is appropriately qualified as anticipatory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Prior work on RING E3s shows different lysine selection mechanisms, with context being important for SCFCdc4-dependent ubiquitination of Sic1 and spatial proximity important for SCF\u03b2-TRCP-dependent ubiquitination of \u03b2-catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C105, C106) accurately cite prior work on lysine selection by RING E3s. They provide comparative context for understanding HECT E3 lysine selection mechanisms but represent findings from other studies rather than new results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Model for the HECT E3 catalytic cycle involving C-lobe rotation for reloading with ubiquitin after ligation. The authors propose that ubiquitin discharge may stimulate rotation by reducing interdomain contacts, and that weak interactions with substrates and regulators drive conformational changes during polyubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mutagenesis data suggest a common architecture for substrate and Ub-to-Ub ligation (C111), and the connection to prior work on chain specificity is noted (C112), the mechanistic proposals about C-lobe rotation (C109, C110) and the role of weak interactions (C113) are largely speculative inferences from the structural snapshots rather than directly tested hypotheses. These represent reasonable models but require further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

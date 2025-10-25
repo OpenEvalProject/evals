@@ -1,0 +1,2583 @@
+{
+  "submission": {
+    "id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:07:57.100672Z",
+    "updated_at": "2025-10-25T01:07:57.100672Z"
+  },
+  "content": [
+    {
+      "id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "content_type": "manuscript",
+      "content_text": "# Controlling gain one photon at a time\n\n## Authors\n\n- Gregory W Schwartz<sup>1</sup>\n- Fred Rieke<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics University of Washington Seattle United States\n2. Howard Hughes Medical Institute, University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.00467.001 Adaptation is a salient property of sensory processing. All adaptational or gain control mechanisms face the challenge of obtaining a reliable estimate of the property of the input to be adapted to and obtaining this estimate sufficiently rapidly to be useful. Here, we explore how the primate retina balances the need to change gain rapidly and reliably when photons arrive rarely at individual rod photoreceptors. We find that the weakest backgrounds that decrease the gain of the retinal output signals are similar to those that increase human behavioral threshold, and identify a novel site of gain control in the retinal circuitry. Thus, surprisingly, the gain of retinal signals begins to decrease essentially as soon as background lights are detectable; under these conditions, gain control does not rely on a highly averaged estimate of the photon count, but instead signals from individual photon absorptions trigger changes in gain. DOI: http://dx.doi.org/10.7554/eLife.00467.001\n\n## Introduction\n\nSensory systems encode an enormous range of input signals\u2014for example, a rock concert is \u223c1012 times louder than a just detectable whisper. Maintaining sensitivity as inputs change requires adaptational mechanisms that adjust the gain or amplification of neural signals to match their limited dynamic range to the range of the input signals a cell receives. Such gain control mechanisms operate under challenging conditions as the inputs they encounter can vary rapidly in time and locally in the space of possible stimuli. For example, visual neurons can experience >1000-fold changes in input a few times a second as the eyes move to explore a typical scene (Frazor and Geisler, 2006). Standard cameras fail to capture the full structure of such scenes because they employ a single global gain control in the form of an exposure setting, which is often poorly matched to the brightest and dimmest regions of a scene. Sensory gain controls are clearly more sophisticated.\n\nEffective gain control requires balancing the need to be rapid and local with the need to be accurate (reviewed by Rieke and Rudd, 2009). This is an example of the classic change detection problem: how many samples from a signal distribution are needed to determine whether or not the distribution has changed (Buracas et al., 1998; Deneve, 2008; Wark et al., 2009)? Gain control mechanisms operating near absolute visual threshold exemplify this problem. Human behavioral threshold begins to increase for backgrounds producing \u223c0.01 isomerized rhodopsin molecules per rod per second (R*/rod/s) (reviewed by Donner, 1992). Under these conditions, the number of photons absorbed in a small time window fluctuates widely due to the Poisson statistics that govern photon absorption. In principle, increases in behavioral threshold could solely reflect this increased noise without gain changes (Barlow, 1965). However, several studies suggest that weak backgrounds decrease the gain of retinal signals (Donner, 1992; Brown and Rudd, 1998). Retinal gain control mechanisms operating at these low light levels must work in the presence of the irreducible noise associated with random photon arrivals.\n\nAt low light levels, rod-mediated signals traverse the retina through the specialized rod bipolar pathway: rods \u2192 rod bipolar cells \u2192 AII amacrine cells \u2192 cone bipolar cells \u2192 ganglion cells (\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig1-v1.jpg)\n\n**Figure 1.:** (A) Simplified diagram of the excitatory circuits that relay rod and cone signals to On ganglion cells. Elements exclusive to the cone pathway are shown in light colors. Chemical synapses are excitatory and are indicated by apposition of small circles or ellipses; chemical synapses in the rod bipolar circuit are found between rods and rod bipolar cells, between rod bipolar cells and AII amacrine cells, and between cone bipolar cells and ganglion cells. Electrical synapses are indicated by connected cells\u2014for example, between cone bipolar cells and AII amacrine cells and between neighboring AII amacrine cells. \u2018Gain knob\u2019 icons indicate known or potential sites of gain control (see \u2018Introduction\u2019 for details). (B) Table of convergence (number of rods providing input) and previously described gain control mechanisms at each circuit location. Convergence numbers are estimated for an On parasol ganglion cell in peripheral macaque retina.DOI: http://dx.doi.org/10.7554/eLife.00467.003\n\nMechanisms controlling the gain of rod-mediated signals have been identified within the phototransduction cascade in the rods themselves (Schneeweis and Schnapf, 2000; Dunn and Rieke, 2006), and at the synapse between rod bipolar cells and AII amacrine cells (Dunn and Rieke, 2008). But the greater convergence at downstream locations in the rod bipolar pathway could provide a more reliable signal to control gain. Hence, we explored how the gain of retinal signals is controlled in dim backgrounds, with three main goals: (1) to determine if the gain of retinal signals is altered by backgrounds near the onset of changes in human behavioral threshold, (2) to determine how the retinal circuit averages over space and time to detect changes in the photon flux, and (3) to identify novel sites of gain control in the rod bipolar pathway.\n\n## Results\n\nWe focus on responses of primate On parasol (magnocellular projecting) ganglion cells. On parasol ganglion cells provide information to cortical circuits about subtle changes in contrast (Kaplan and Shapley, 1982) and receive abundant rod-mediated input at low light levels (Purpura et al., 1988; Field et al., 2009). Thus, these cells are likely to contribute critically to vision at low light levels. On parasol cells also provide a sensitive measure of the output of the rod bipolar pathway. This pathway dominates rod-mediated signaling across ganglion cell types at low light levels, and hence should provide shared steps in processing of rod signals. Indeed, as described below, we find that the gain of retinal signals at low light levels is controlled at a site located within the rod bipolar pathway.\n\n## Gain controls in the retinal circuitry operate near the onset of behavioral threshold changes\n\nWe measured spike responses (\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u2013(C) responses from an individual On parasol ganglion cell to dim flashes at two different backgrounds. (A) Light stimulus (top, 20 ms flashes at 0 s) and raster of the cell\u2019s spike response to several stimulus trials. (1B) Excitatory synaptic currents in response to the same stimulus. (1C) Mean spike rate and excitatory conductance. (1A)\u2013(2C) responses to the same flash as in (A21\u2013C1) but delivered on a higher background. (D) Gain of the excitatory input current and spike output as a function of background for the cell in (A\u2013C). Gain of the excitatory currents was measured by integrating the current over time and dividing by the flash strength, and hence has units of nC/R*/rod/s. Gain of the spike responses was measured by integrating spikes over time. Error bars are SD (n = 20\u201330 trials). (E) Detection threshold (see \u2018Materials and methods\u2019) calculated from excitatory input current and spike output for three different cells (symbols) at three backgrounds each (gray scale). Dashed line represents unity.DOI: http://dx.doi.org/10.7554/eLife.00467.004\n\nFigure 2C,D suggest that the effect of changes in background on a cell\u2019s spike output is dominated by the changes in excitatory input. To further test this conclusion, we defined a detection threshold as the strength of the flash (in R*/rod) eliciting a response with a signal-to-noise ratio of 1 (see \u2018Materials and methods\u2019). Noise was measured from sections of recording prior to the flash. Detection thresholds for spike responses and excitatory synaptic inputs measured in the same cell were near identical across a range of backgrounds (Figure 2E). Consistent with the similarity of the spike responses and excitatory inputs, inhibitory synaptic inputs to the same stimuli were three to four times smaller than the excitatory inputs, and hence unlikely to contribute strongly to spike output (data not shown).\n\nFigure 2 indicates the changes in the gain of an On parasol cell's spike output are dominated by changes in the cell's excitatory synaptic inputs. Below, we focus on how gain of the excitatory synaptic inputs is controlled.\n\n## Dependence of gain and noise on background\n\nChanges in human behavioral threshold with background show several characteristic regions (reviewed by Barlow, 1965; Donner, 1992; Rieke and Rudd, 2009): (1) a \u2018dark light\u2019 region extending to \u223c0.01 R*/rod/s in which threshold is independent of background, (2) a \u2018Rose\u2013deVries\u2019 region in which threshold increases with the square root of the background (de Vries, 1943; Rose, 1948), and (3) a \u2018Weber\u2019 region in which threshold increases proportionally with the background. Since threshold depends on both signal and noise, the relationship between these behavioral measurements and gain control is unclear. Hence, the experiments below characterize gain, noise, and threshold of the On parasol responses across a range of background intensities spanning these behaviorally defined regions.\n\nWe extended experiments like those in\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig3-v1.jpg)\n\n**Figure 3.:** (A)\u2013(C) Example data from a single cell showing gain of the dim flash response (A), noise (B), and threshold (C) as a function of background (see \u2018Materials and methods\u2019). Error bars (A and C) are standard deviations across two flash strengths. Colored bars indicate background segments in which the slope was computed. Dotted line (A) represents the fit of a modified Weber function with the half-desensitizing background indicated by an arrowhead (see Equation 1). (D)\u2013(F) Population data reporting the slope of each parameter on a log\u2013log scale in three background regions. Error bars are SD (n = 4, 6, and 5 cells in each background segment).DOI: http://dx.doi.org/10.7554/eLife.00467.005\n\nTwo features of Figure 3A are notable. First, over a \u223c1000-fold range of backgrounds gain closely followed Weber law behavior, even though multiple mechanisms contribute to gain control across this range. This indicates an orderly coordination of gain control mechanisms (see \u2018Discussion\u2019). Second, gain began to decrease for backgrounds near 0.01 or 0.02 R*/rod/s\u2014close to the onset of changes in human behavioral threshold. We summarized the onset of gain changes across cells by choosing three regions spanning equal ranges of background intensities centered below, on, or above I0 (horizontal colored lines in Figure 3A). Figure 3D plots the exponent describing the dependence of gain on background (i.e., the slope on a log\u2013log scale as in Figure 3A) in each region. Gain scaled inversely with background above 0.3 R*/rod/s, and more gradually at lower background intensities. Consistent with the ability of Equation 1 to describe the data, we did not see evidence for an extended region where gain scaled inversely with the square root of the background (see \u2018Discussion\u2019).\n\nWe quantified noise at each background by projecting the current prior to the flash along the same template used to measure signal (see \u2018Analysis\u2019). Noise also changed with background, but such changes were modest across those backgrounds near the onset of changes in behavioral threshold (Figure 3B,E); specifically, noise changed <10-fold over a range of backgrounds that produced an \u223c10,000-fold change in gain. These changes in noise with background were much less than expected from Poisson fluctuations in photon absorption and no changes in gain. If Poisson fluctuations dominated noise and gain remained constant, the standard deviation of the current should increase as the square root of the background\u2014that is, with slope 0.5\u2014since the variance of a Poisson process is proportional to the mean. Noise changed much less with background than this prediction (Figure 3B,E). The largest increases in noise occurred between darkness and backgrounds <0.01 R*/rod/s. These changes are produced by a nonlinear processing step that reduces gain in the dark (see above; P Ala-Laurila and F Rieke, unpublished). The reduction in noise at backgrounds higher than 0.1 R*/rod/s likely reflects the stronger decrease in gain at these backgrounds, which more than compensates the increase in Poisson fluctuations.\n\nChanges in noise, although modest, had a noticeable effect on detection threshold\u2014defined as the strength of the flash eliciting a response with a signal-to-noise ratio of 1 (Figure 3C,F; see \u2018Analysis\u2019). This measure of threshold assumes a linear scaling of response with flash strength, which fails in the dark but holds for backgrounds exceeding 0.01 R*/rod/s (P Ala-Laurila and F Rieke, preprint). The threshold in Figure 3C,F corresponds to the threshold of an ideal observer of the ganglion cell's output, assuming that signal and noise are independent and additive. Thus, the threshold defined here provides a point of comparison to human behavioral threshold vs intensity curves. The threshold for On parasol responses increased for backgrounds as low as 0.02 R*/rod/s, in close correspondence with backgrounds that produce changes in behavioral threshold (Donner, 1992). Threshold increased with a slope <1 for backgrounds between 0.02 and 5 R*/rod/s (Figure 3F). The extended region over which the slope was less than unity reflected the increase in noise at backgrounds lower than those required to produce gain changes, a region near the onset of gain changes where noise was near constant, and the decrease in noise at backgrounds where gain began to decrease proportionally with background.\n\n## Properties of gain control\n\nThe experiments described above indicate that the gain of retinal signals begins to decline at backgrounds producing \u223c0.02 R*/rod/s. Gain control under these conditions is challenging because photons arrive rarely at individual rod photoreceptors; retinal responses at these backgrounds are noisy, and hence changes in background will be difficult to discern without a large degree of spatial and/or temporal averaging. At the same time, left unabated, the high gain associated with fully dark-adapted vision would cause a parasol ganglion cell to generate hundreds of spikes per second for backgrounds producing \u223c0.02 R*/rod/s. The experiments described in this section characterize several key properties of how gain is controlled\u2014particularly the statistical feature of the input that sets gain and how the mechanism integrates over space and time.\n\n## Gain is controlled by mean not fluctuations\n\nChanges in the mean background necessarily also change the magnitude of the fluctuations about the mean because of the division of light into discrete photons and the resulting statistical fluctuations in photon arrival. Such Poisson fluctuations in photon absorption are particularly large relative to the mean absorption rate at low backgrounds. Because these statistical fluctuations increase with the square root of the background, a gain control that directly depends on the magnitude of the noise would cause gain to scale inversely with the square root of the background (Brown and Rudd, 1998). The experiments below, however, indicate that gain at low backgrounds is controlled by the mean photon absorption rate and not by the magnitude of the fluctuations about the mean rate.\n\nTo isolate the potential effects of fluctuations about the mean on gain, we delivered a series of flashes before, during, and after a high contrast fluctuating stimulus while maintaining a constant mean background (\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig4-v1.jpg)\n\n**Figure 4.:** (A) Fluctuating background experiment for an example cell. From top: background, probe flashes, mean excitatory input current, mean and SEM of each flash response (n = 10 trials), and standard deviation of the current. (B) Change in the mean of the flash response plotted against the change in the standard deviation of the baseline current caused by the fluctuating background for nine cells. Dashed line indicates the prediction for a gain control mechanism based on the noise of the background\u2014that is, if gain was inversely proportional to the standard deviation.DOI: http://dx.doi.org/10.7554/eLife.00467.006\n\n## Gain changes rapidly\n\nGain control at low backgrounds requires averaging across rods and/or time to obtain a sufficient photon count to determine that the mean background has changed (Rushton, 1965). Too much spatial or temporal averaging could limit the effectiveness of gain control: spatial averaging across regions of a scene with different backgrounds could fail to protect retinal signals from local saturation, and temporal averaging could be ineffective if it introduces too long a delay between changes in input and changes in gain. What strategy, then, does the circuit adopt? We start by describing the kinetics of gain changes.\n\nTo test for slow changes in gain that would reflect extensive temporal averaging, we switched the background periodically between two levels while delivering flashes every second to monitor gain. The baseline firing rate and mean excitatory input changed slowly following a change in background, and had not reached an obvious steady-state level even after 200 s. Gain changes, however, occurred within a few seconds following a change in background\u2014for example, in Figure 5\u2014figure supplement 1, the \u223ctwofold change in gain between panels B and C is largely complete by the time of the first flash response (1 s after the background change). Gain did not change noticeably in the subsequent 60\u2013200 s (Figure 5\u2014figure supplement 1; see also Figures 10 and 11).\n\nTo resolve the initial rapid change in gain, we delivered flashes at times ranging from 0.1 to 2 s following either an increase or a decrease in background while measuring a cell\u2019s excitatory synaptic inputs. We adjusted the flash strength to generate a near-constant response at the two backgrounds. Subtracting the response to the background step alone isolated responses to the flashes (\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig5-v1.jpg)\n\n**Figure 5.:** (A) From top: background, probe flashes, current traces for each probe flash set (see \u2018Materials and methods\u2019) and for the background alone (black), response obtained by subtracting the background step trace from each test response. Five test flashes where given in each epoch: two at variable times following background step onset and offset, and three at fixed times before the step, at the end of the step, and at the end of the epoch. (B) Gain change (on a logarithmic scale) as a function of the time of the probe flash following an increase or decrease in background. Lines are single exponential fits. (C) Time constant of the fit as in (B) across a population of cells. Error bars are SEM (n = 5).DOI: http://dx.doi.org/10.7554/eLife.00467.007\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Baseline spike rate (middle) and gain of response to a brief flash (bottom; as in Figure 2). Black line (middle) is an exponential fit with a time constant of 97 s; lines (bottom) are mean gain value at each background. (B) and (C) Changes in the holding current (middle) and gain (bottom) following an increase (B) or decrease (C) in background from whole-cell recordings with a holding potential of \u221270 mV. Changes in holding current reflect changes in the tonic excitatory synaptic input to the cell. Gain changed within a few seconds of a change in background (i.e., the \u223ctwofold change in gain between the left and right panels is already present in the first few flash responses). Black lines are mean \u00b1 SEM across seven repeats of the background step.DOI: http://dx.doi.org/10.7554/eLife.00467.008\n\n## The gain control mechanism has access to signals from many rods\n\nThe rapid kinetics of gain changes at both light onset and offset indicate a need for considerable integration of signals across rods. For example, in the 0.1 s following an increase in background from 0.02 to 0.08 R*/rod/s, <1 in 100 rods absorbs a photon. Thus, the observed gain changes cannot be explained by a mechanism operating on a small collection of rods; for example, a mechanism operating in single rods would only be engaged in 1 out of 100 rods, and hence could reduce overall gain at most by 1%. The halving of gain produced by this step in background requires a mechanism that integrates over at least 50 rods even if a single absorbed photon reduces gain to 0 (\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig6-v1.jpg)\n\n**Figure 6.:** Rod convergence required for 50% of the neural elements to collect one or more photons is plotted as a function of background (see \u2018Materials and methods\u2019). Estimated convergence along the rod bipolar pathway is indicated along the y-axis. AII: AII amacrine cell; CB: On cone bipolar cell; RB: rod bipolar cell; RGC: peripheral parasol retinal ganglion cell.DOI: http://dx.doi.org/10.7554/eLife.00467.009\n\nWe adapted subregions within the ganglion cell receptive field while probing the gain of responses elicited at distinct locations (\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig7-v1.jpg)\n\n**Figure 7.:** (A) Diagram of the experimental design. The baseline phase consisted of at least 20 trials each of two probe patterns flashed on a uniform dim background (0.02 R*/rod/s). In the adaptation phase, the same two probe patterns were presented superimposed on an adapting background of bars of higher intensity (0.2 R*/rod/s), again for at least 20 trials each. One probe location was aligned with the adapting bars (adapted location), whereas the other was out of phase (unadapted location). (B) Repeating the experiment with a variety of adapting bar sizes tests the spatial scale of adaptation. Bars up to half the diameter of the adapting subregion of the receptive field would be expected to cause a complete transfer of adaptation from the adapted to the unadapted location. Bars wider than the diameter of the adapting subregion would be expected to cause incomplete adaptation transfer.DOI: http://dx.doi.org/10.7554/eLife.00467.010\n\nBy exploring a range of widths for the adapting bars, we were able to measure the distance over which gain changes from the adapted location transferred to the unadapted location. Figure 7B illustrates the logic of the experiment. Adapting bars that are narrow compared to the adapting subregions (circles in Figure 7B) should produce near-identical gain changes in each subregion since the total adapting pattern will vary little between subregions. In this case, the ganglion cell should respond similarly to probes at the adapted and unadapted locations, indicating complete or near-complete transfer of gain changes. Adapting bars that are wide compared to the size of the adapting subregions should produce variable changes in gain across subregions; in this case, the ganglion cell should respond more strongly at the unadapted location, indicating incomplete transfer of gain changes.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig8-v1.jpg)\n\n**Figure 8.:** (A) Responses of an example cell to probes during the baseline phase (black) and the adapting phase (gray) of the experiment at both the adapted and unadapted locations. Adapting bars were 18 \u03bcm wide in (A) and 180 \u03bcm wide in (1A). (2B) Adaptation transfer as a function of the width of the adapting stripes. Gray symbols are individual cells and black points are mean and SEM (n = 7, 9, 7, and 8 for bar widths in ascending order).DOI: http://dx.doi.org/10.7554/eLife.00467.011\n\nFigure 8B collects results across bar sizes and cells. Gain changes transferred completely or near completely for bar widths up to 50 \u00b5m. Near-complete adaptation transfer at this bar width requires that the receptive field of the adapting mechanism have a diameter of at least 100 \u00b5m\u2014so that the mechanism always samples both the bright and dark bars (see Figure 7B). A receptive field of this size would contain at least 500 rods given the rod density of \u223c0.1/\u00b5m2 (Osterberg, 1935). Bar widths of 100 \u00b5m and larger produced incomplete adaptation transfer, proving an upper bound on the extent of spatial integration.\n\nThe experiments of Figures 7 and 8 indicate that gain control is mediated by a mechanism that has access to signals from hundreds of rods. This degree of spatial pooling is required to support the rapid kinetics described in Figure 5 and is present only downstream of the synapse between rod bipolar cells and AII amacrine cells (Figure 1).\n\n## Gain changes are mediated in rod bipolar pathway\n\nTo further constrain the possible sites of gain control, we looked for transfer of gain changes from rod- to cone-mediated signals (\n\n![Figure 9.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig9-v1.jpg)\n\n**Figure 9.:** (A) Response to long-wavelength light (purple) and matched response to short-wavelength light (blue) were used to derive the isolated cone response (red). (B) Rod responses to the same flash intensity at three different backgrounds. (C) Cone responses recorded in the same cell as in (B). (D) Gain of the rod and cone responses for the cell in (B and C) plotted against the background on a log\u2013log scale. Gain values have been normalized by the gain at the lowest background. (E) Slope of the background vs gain function on a log\u2013log scale for rod and cone responses in the same population of cells. Error bars are SEM (n = 7).DOI: http://dx.doi.org/10.7554/eLife.00467.012\n\nThe spectral separation of the photopigments in rods and long-wavelength (L) cones and the considerably higher gain of rod-mediated signals allowed separation of rod- and cone-mediated inputs to a ganglion cell (Figure 9A; Dunn et al., 2007). Long-wavelength light stimuli produced a rapid L-cone\u2013mediated response superimposed on a slower rod-mediated response (purple trace in Figure 9A). This reflects the \u223c600-fold greater sensitivity of the L-cones compared to the rods for long wavelength light and a roughly equal compensating factor for the higher gain of rod-mediated signals. Stimulation with dim short-wavelength light (<0.1 R*/rod and <0.03 R*/cone) generated a nearly pure rod-mediated response (blue trace in Figure 9A). Appropriate scaling of the strengths of the two flashes produced matched rod responses to long- and short-wavelength stimuli. Subtracting the rod-mediated response from the mixed response isolated the cone-mediated response (red trace in Figure 9A).\n\nWe separated rod- and cone-mediated responses as in Figure 9A across a range of dim backgrounds (Figure 9B,C). Backgrounds that produced substantial reductions in gain of the rod-mediated signals failed to reduce the gain of the cone-mediated signals (Figure 9B\u2013E). Thus, gain changes do not transfer from the rod pathway to the cone pathway, indicating that gain is controlled at a site prior to mixing of rod and cone signals in the cone bipolar cell. The lack of transfer from rod to cone pathways, together with the requirement that the gain control mechanism have access to signals from hundreds of rods (Figure 8), makes the AII amacrine cell and/or its gap junction with On cone bipolar cells likely sites.\n\n## Discussion\n\nStatistical fluctuations in the stream of photons incident on the retina make controlling the gain of rod-mediated signals at low backgrounds challenging. Yet, such gain control is important because it protects retinal signals from saturating as backgrounds increase while permitting the high amplification required to detect absorption of a few photons under fully dark-adapted conditions. Here, we have explored the properties of retinal gain controls operating near visual threshold. Below, we relate our findings to the dependence of human behavioral threshold on background and to the general speed/accuracy trade-off associated with detecting a change in the statistics of a noisy signal.\n\n## Connection to behaviorally measured threshold\n\nHow do the properties of gain controls at low backgrounds in primate retina relate to human behavioral threshold verses intensity (TVI) measurements in humans? The region of the TVI curve in which threshold is unaffected by background light has long been associated with the intrinsic noise of the visual system (Fechner, 1860; Barlow, 1956). Threshold is increased only by backgrounds that produce a sufficient rate of photon absorption to exceed intrinsic noise. Human behavioral threshold begins to increase for backgrounds near 0.01 R*/rod/s, similar to the backgrounds (\u223c0.02 R*/rod/s) at which primate ganglion cell thresholds began to increase. Both of these are considerably higher than the rate at which spontaneous activation of rhodopsin generates photon-like noise events in primate rods (0.003\u20130.004 R*/rod/s) (GD Field and F Rieke, unpublished). They are, however, consistent with measures of the total noise (i.e., both discrete and continuous) generated by macaque rods (Schneeweis and Schnapf, 2000).\n\nThe Rose\u2013deVries region of the TVI curve has long been assumed to reflect an increase in noise without a reduction in gain (Barlow, 1957). Consistent with this view, the gain of retinal signals measured via electroretinograms begins to decline only at backgrounds \u223cfivefold higher than those that increase behavioral threshold (Frishman et al., 1996). Several other previous experiments, however, suggest that gain is reduced in the Rose\u2013deVries range. First, behavioral brightness matching experiments, which should be sensitive to changes in neural gain but not noise, show a robust Rose\u2013deVries region (Brown and Rudd, 1998). Second, the spike responses of toad ganglion cells exhibit an \u223c10-fold range of backgrounds over which the threshold required to reach a criterion spike rate increases in proportion to the square root of the background (Donner et al., 1990). Experiments in cat (Barlow and Levick, 1969; Enroth-Cugell and Shapley, 1973) and mouse (Dunn et al., 2006) also find adaptation at dim backgrounds, but with an exponent >0.5.\n\nOur measurements of how gain control mechanisms affect both the signal and noise of the responses of On parasol ganglion cells provide a direct comparison to human psychophysics. The gain of signals in the rod pathway indeed decreased at low backgrounds, and noise increased much more slowly with increasing background than expected from Poisson fluctuations in photon absorption. The region of the ganglion cell TVI curve with slope 0.5 was limited to a narrow range of backgrounds. This suggests that post-retinal mechanisms contribute substantially to the more extended Rose\u2013deVries region measured in behavioral studies.\n\n## A panoply of gain control mechanisms\n\nOur results place a number of constraints on the neural gain control mechanism that is engaged at the lowest backgrounds\u2014for example, in starlight. The mechanism estimates the mean photon flux rather than its variance (Figure 4), it is rapid (Figure 5), it has access to signals from hundreds of rods (Figure 8), and it acts on rod-mediated but not cone-mediated signals (Figure 9). Previously described gain control mechanisms are sensitive to variance (reviewed by Demb, 2008), act at locations with insufficient rod convergence (Dunn et al., 2006; Dunn and Rieke, 2008), or affect cone signals (Dunn et al., 2007). The constraints above suggest a novel mechanism located in the AII amacrine cell or the synaptic connections it makes with cone bipolar cells (Figure 5). Recordings from these cells as well as the On cone bipolar cells to which they make gap junctions could uncover more mechanistic details.\n\nAlthough we focused on gain changes in the inputs to On parasol ganglion cells, a location of the site of adaptation in the rod bipolar pathway indicates that it should be shared across ganglion cell types. Consistent with this prediction, On midget ganglion cells adapted very similarly to On parasol ganglion cells (data not shown).\n\nThe mechanism we identify here adds to a long list of gain controls in the retinal circuitry. Considering luminance alone, retinal ganglion cells encode stimuli over 10 log units of background, far exceeding the dynamic range of any single mechanism. In the rod pathway, there are at least three gain control mechanisms engaged across backgrounds, each matched to the rod convergence at the adapting location. Backgrounds producing approximately 10\u201320 R*/rod/s halve the gain of the phototransduction cascade in primate rods (Schneeweis and Schnapf, 2000). Backgrounds producing \u223c0.4 R*/rod/s halve the gain of the rod bipolar to AII synapse by reducing the number of releasable vesicles (Dunn et al., 2006; Dunn and Rieke, 2008; Oesch and Diamond, 2011). And, as shown here, backgrounds \u223c0.08 R*/rod/s engage a mechanism located downstream of the rod bipolar\u2013AII synapse; the light levels at which this mechanism is engaged are consistent with backgrounds that are just detectable given the total noise generated by macaque rods (Schneeweis and Schnapf, 2000). Impressively, these mechanisms act in concert to create a smooth dependence of gain on background in the ganglion cell (e.g., Figure 3A), even extending to backgrounds at which signaling begins to switch from rods to cones and gain control mechanisms in the cone pathway become active (Dunn et al., 2007). At least five separate gain control mechanisms that contribute to a single smooth function relating background to gain over >5 log units on each axis (Figure 3A) suggest that this particular functional form for adaptation was a target of selective pressure in primate evolution.\n\n## Adapting to a noisy signal\n\nAdapting at low backgrounds is inherently dangerous as statistical fluctuations in photon absorption introduce substantial noise into the neural signals accessible to a gain control mechanism; such noise would be expected to cause gain to vary widely. The impact of noise in the signals controlling gain could be mitigated by not adapting until backgrounds increase enough to make more photons available, or by integrating over time and/or rods to reduce noise. Surprisingly, retinal gain controls appear to operate at the lowest backgrounds physically possible\u2014that is, each absorbed photon within the pool of rods providing input to an adaptational mechanism lowers gain.\n\nAdaptation at the rod bipolar to AII synapse approaches the sensitivity limit imposed by convergence and integration time (Dunn and Rieke, 2008; see Figure 1B). That is, a single absorbed photon reduces the gain of the next single photon response. Rod convergence onto AII amacrine cells is not known precisely in primate, but the onset of adaptation is consistent with a single photon absorption in the AII receptive field reducing gain. Assuming a 0.1 s integration time (Figure 5), a mechanism operating on a pool of 200 rods would have to reduce gain by 40% for each photon absorbed for the gain to be halved at 0.08 R*/rod/s; a pool of 800 rods could achieve this level of gain control with a 11% gain reduction per photon (see \u2018Modeling\u2019).\n\nVision in the dark requires high gain of the retinal circuitry conveying rod-mediated signals to ganglion cells. This high gain could easily lead to saturation of retinal signals as backgrounds increase. Indeed, the onset of retinal gain control coincides with the dimmest detectable backgrounds given the intrinsic noise of the rods. These considerations help explain why retinal gain controls are engaged by each absorbed photon, even when adaptation under these conditions is necessarily noisy.\n\n## Materials and methods\n\n## Recordings and light stimulation\n\nAll recordings were from On parasol ganglion cells in peripheral (eccentricity typically >30\u00b0; \u223c15\u00b0 to 20\u00b0 for the experiments of Figure 9) primate retina (Macaca nemestrina, fascicularis, and mulatta). Retina was obtained through the Tissue Distribution Program of the Regional Primate Center at the University of Washington. The retina was dark adapted for 1 hr while attached to the pigment epithelium and stored for up to 24 hr in a light-tight container at 32\u00b0C in Ames solution equilibrated with 95% O2/5% CO2. All subsequent procedures were performed under infrared light (>900 nm) using infrared-visible converters.\n\nFor recording, a roughly 4 \u00d7 4-mm piece of retina was removed from the pigment epithelium and mounted photoreceptor side down on a polylysine-coated glass coverslip forming the bottom of the recording chamber. The retina was secured by nylon wires stretched across a platinum ring. The retina was continuously superfused (8\u201310 ml/min) with warmed (32\u201334\u00b0C) Ames solution equilibrated with 95% O2/5% CO2. Calibrated light stimuli were delivered from LEDs focused on the retina by the microscope condenser. Spatial stimuli for Figures 7 and 8 were delivered using an OLED array (eMagin, Bellevue, WA). Stimulus intensities are given in terms of isomerizations per rod per second (R*/rod/s), based on the measured LED spectral output, the rod spectral sensitivity, and an assumed collecting area of 1 \u03bcm2.\n\nSpike responses were measured in the cell-attached configuration using pipettes filled with Ames solution. Whole-cell voltage clamp recordings were made using patch pipettes filled with 105 mM CsCH3SO3, 10 mM TEA-Cl, 20 mM HEPES, 10 mM EGTA, 5 mM Mg-ATP, 0.5 mM Tris-GTP, and 2 mM QX-314 (pH \u223c7.3 with CsOH, \u223c280 mOsm). Reported holding voltages have been corrected for the \u223c10 mV junction potential associated with this internal solution. Series resistance was typically 6\u201310 M\u2126, and was compensated 50%.\n\nAll data came from parasol ganglion cells exhibiting high sensitivity when fully dark adapted. Recordings followed previous procedures (\n\n![Figure 10.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig10-v1.jpg)\n\n**Figure 10.:** (A) Background light level. (B) Increase in spike count following a 10-ms flash (i.e., with the maintained spike rate before the flash subtracted). The test flash strength is indicated by the gray line and the right axis. Flashes were presented at 1-s intervals beginning 1 s after each background change. (C) Gain of the spike response in spikes per isomerization per rod (R*/rod). Gain was calculated by dividing the spike count in (B) by the flash strength. (D) Baseline spike rate measured prior to each flash.DOI: http://dx.doi.org/10.7554/eLife.00467.013\n\n![Figure 11.](https://cdn.elifesciences.org/articles/00467/elife-00467-fig11-v1.jpg)\n\n**Figure 11.:** (A)\u2013(D) Excitatory synaptic currents following the same format as Figure 10. Data are from a different cell voltage clamped at \u221270 mV, the approximate reversal potential for inhibitory input. (E) Standard deviation of the current in the time interval preceding each flash.DOI: http://dx.doi.org/10.7554/eLife.00467.014\n\n## Analysis\n\nA time window containing the flash response was chosen for each background and flash intensity by selecting the time points at which the average response exceeded 20% of its maximal value. The response amplitude was computed as the integrated current during this time window minus a baseline current recorded before the flash. Using a fixed time window across backgrounds and flash strengths yielded similar results. Gain values in Figures 2, 3, 10, and 11 and Figure 5\u2014figure supplement 1 are the response amplitude divided by the flash strength.\n\nWe projected flash responses along a template to compute flash detection thresholds (Figures 2 and 3). The template was the average current trace in the time window described above. For each trial, we defined the signal \u03b3 as the projection of the measured current along the template divided by the flash strength, and the noise \u03bd as the projection of the current during a time window before the flash. Detection threshold \u03b8 was defined as the flash strength required to give a signal-to-noise ratio of 1 according to the following equation:\u03b8=\u03b3/\u03c3\u03bd.\n\nGain and threshold of spike responses were computed analogously using the peristimulus time histogram to define the response time window for spike counts (Figure 2).\n\n## Modeling\n\nProbabilities of photon absorptions depending on background, integration time, and rod convergence (Figure 6) were computed from a Poisson distribution as follows. For a given background (\u03bc) in units of R*/rod/s, an integration time (\u03c4), and a rod convergence (C) per neural element, the probability of a neural element collecting a particular number (k) of photons follows Poisson statistics.\u03bb=\u03bc\u03c4CP(k,\u03bb)=\u03bbke\u2212\u03bbk!.\n\nFigure 6 plots the combination of values of \u03bc, \u03c4, and C required for half of the neural elements to collect at least one photon.P(\u03bb)=\u2211k=1\u221e\u03bbke\u2212\u03bbk!\u22650.5.\n\nIn the \u2018Discussion\u2019, we compute the gain reduction achieved for several size pools of converging rods. If each photon (k) collected by a neural element reduces the gain for the next photon response by a constant factor (\u03b1), the gain as a function of k and \u03b1 can be computed as follows.\u03b3(k,\u03b1)=(1\u2212\u03b1)k.\n\nTherefore, the gain of a collection of neural elements (\u0393) collecting photons according to Poisson statistics (normalized to \u0393 = 1 for maximal gain) is computed as follows.\u0393=\u2211k=1\u221eP(k,\u03bb)\u03b3(k,\u03b1).\n",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00467.015](https://doi.org/10.7554/eLife.00467.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cControlling gain one photon at a time\u201d for consideration at eLife. Your article has been evaluated by a Senior editor and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission want to reveal their identity: Eve Marder, Senior editor; Ronald L. Calabrese, Reviewing editor; Marla Feller, peer reviewer.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors describe electrophysiological experiments designed to determine if and how adaptation occurs at the level of ganglion cells at the lowest background light levels in macaque monkeys by recording spike output and EPSCs from parasol ganglion cells in isolated retinae. They show by systematic experiments that retinal adaptation begins at the dimmest detectable backgrounds given the intrinsic noise of the rods. Adaptation occurs rapidly at the level of AII Amacrine cells when as few as 1 or 2 photons are absorbed within a collection of several hundred rods. They successfully compare their experiments to human psychophysical experiments: human behavioral threshold begins to increase for backgrounds near 0.01 R*/rod/s, similar to the backgrounds (\u223c0.02 R*/rod/s) at which macaque ganglion cell thresholds began to increase.\n\nThe reviewers were enthusiastic about your work, found it exciting, and deemed its potential significance for the field quite high. Nonetheless, they felt that the manuscript itself did not do justice to the work, and that it made difficult reading. Therefore, as outlined below, it will require substantial editorial work before potential publication.\n\n1) A general reader interested in how we see and adapt at low light levels could use a lot more guidance by the authors. For example, Figure 5A could be more colorful and used as a guide in the Introduction. We could be given a succinct summary of relevant retinal circuitry in Introduction. What is provided may not be enough especially without reference to a figure and some explanation of how the signals are transmitted (e.g., excitation inhibition, electrical coupling). Similarly the choice of the On parasol ganglion cell could be better rationalized at the beginning of Results.\n\n2) The authors should provide clear definitions and use consistent language for describing \u201cgain\u201d, \u201cnoise\u201d, and \u201cbackground\u201d throughout the manuscript.\n\n* Background: the authors use \u201cbackground\u201d, \u201cbackground lights\u201d, or \u201cstimulus\u201d to describe changes in the background illumination. In the text describing Figure 6, this was particularly confusing, using terms like \u201ctest patterns\u201d, \u201cprobe patterns\u201d, and \u201cadapting stimulus\u201d. The authors should be explicit that changes in background illumination are what they are using for inducing adaptation.\n\n* Gain: Is it really necessary to use so many measures of gain? Is the \u201csignal gain\u201d plotted in Figure 2A the same as the \u201cgain\u201d in Figure 4? Is the y-axis of Figure 4\u2014figure supplement 1A the same as Figure 4\u2014figure supplement 1B (where the units of the Gain are different, one using /flash and the other rods/sec). How does it differ from \u201cgain factor\u201d in Figure 4B? Why is gain sometimes computed as \u201cGain slope\u201d? We realize that different definitions are more appropriate for comparing to different models, but it is tough on the reader. In addition, the authors need to make clear that the gain changes in the circuit affect both signal and noise.\n\n3) The list of \u201cqualitative features of adaptation\u201d was particularly lacking in precise language. \u201cInhibitory synaptic inputs were small\u201d (how small?), \u201c\u2026did not show obvious structure\u201d (what is meant by \u201cobvious structure\u201d?). We would strongly recommend the author forgo this format for the text and give a clear, quantitative description of the results, and clear definitions of the quantities signal, noise, and gain for both cell attached and whole cell recordings.\n",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63f259c8-a8c3-4bd9-86d7-c1a5430fad8a",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C1",
+      "claim": "The weakest backgrounds that decrease the gain of retinal output signals are similar to those that increase human behavioral threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the weakest backgrounds that decrease the gain of the retinal output signals are similar to those that increase human behavioral threshold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract and supported by experimental data comparing retinal ganglion cell responses to human behavioral thresholds throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "74ee4ec4-5c81-4070-9371-3ed1193909c3",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C2",
+      "claim": "The gain of retinal signals begins to decrease essentially as soon as background lights are detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "the gain of retinal signals begins to decrease essentially as soon as background lights are detectable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental measurements showing gain changes at ~0.02 R*/rod/s, which corresponds to detectable backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "048380e2-3108-4602-9cc6-1fc15ca676a0",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C3",
+      "claim": "Under conditions where backgrounds are just detectable, gain control does not rely on a highly averaged estimate of the photon count.",
+      "claim_type": "EXPLICIT",
+      "source": "under these conditions, gain control does not rely on a highly averaged estimate of the photon count, but instead signals from individual photon absorptions trigger changes in gain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing rapid gain changes and modeling indicating single photon absorptions affect gain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a1f3c43e-f316-4e6a-8fbc-2025b605af82",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C4",
+      "claim": "Signals from individual photon absorptions trigger changes in gain at low backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "signals from individual photon absorptions trigger changes in gain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments showing gain changes occur with minimal photon counts and modeling of single photon effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "884360f6-4417-44bf-8a28-96c05867b5e6",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C5",
+      "claim": "A rock concert is approximately 10^12 times louder than a just detectable whisper.",
+      "claim_type": "EXPLICIT",
+      "source": "a rock concert is \u223c1012 times louder than a just detectable whisper",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of the dynamic range sensory systems must encode.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "5caad768-c215-4b0f-a780-884f84b363e9",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C6",
+      "claim": "Visual neurons can experience >1000-fold changes in input a few times a second as the eyes move to explore a typical scene.",
+      "claim_type": "EXPLICIT",
+      "source": "visual neurons can experience >1000-fold changes in input a few times a second as the eyes move to explore a typical scene (Frazor and Geisler, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Frazor and Geisler, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7ecd69de-23c6-4f85-9e27-4dfa54ea5cc9",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C7",
+      "claim": "Standard cameras fail to capture the full structure of scenes with large dynamic range because they employ a single global gain control in the form of an exposure setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard cameras fail to capture the full structure of such scenes because they employ a single global gain control in the form of an exposure setting, which is often poorly matched to the brightest and dimmest regions of a scene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to illustrate the sophistication of biological sensory gain controls.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7cc9ce62-c971-46a9-9c52-3a36d5d74a73",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C8",
+      "claim": "Human behavioral threshold begins to increase for backgrounds producing approximately 0.01 isomerized rhodopsin molecules per rod per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Human behavioral threshold begins to increase for backgrounds producing \u223c0.01 isomerized rhodopsin molecules per rod per second (R*/rod/s) (reviewed by Donner, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review by Donner, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a8c06ddc-4bb1-4dd0-b7a4-b900de7f6aac",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C9",
+      "claim": "Several studies suggest that weak backgrounds decrease the gain of retinal signals.",
+      "claim_type": "EXPLICIT",
+      "source": "several studies suggest that weak backgrounds decrease the gain of retinal signals (Donner, 1992; Brown and Rudd, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Donner, 1992 and Brown and Rudd, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7939787d-a2eb-40d2-a9a7-2f0b55c2c63f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C10",
+      "claim": "Rod-mediated signals traverse the retina through the specialized rod bipolar pathway: rods \u2192 rod bipolar cells \u2192 AII amacrine cells \u2192 cone bipolar cells \u2192 ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "rod-mediated signals traverse the retina through the specialized rod bipolar pathway: rods \u2192 rod bipolar cells \u2192 AII amacrine cells \u2192 cone bipolar cells \u2192 ganglion cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This pathway is described in text and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "98903cde-ad08-45ca-8d56-6ecaa380e95d",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C11",
+      "claim": "Mechanisms controlling the gain of rod-mediated signals have been identified within the phototransduction cascade in the rods themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanisms controlling the gain of rod-mediated signals have been identified within the phototransduction cascade in the rods themselves (Schneeweis and Schnapf, 2000; Dunn and Rieke, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schneeweis and Schnapf, 2000 and Dunn and Rieke, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1b180461-ac33-4769-8780-a92e50d980c3",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C12",
+      "claim": "Mechanisms controlling the gain of rod-mediated signals have been identified at the synapse between rod bipolar cells and AII amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "at the synapse between rod bipolar cells and AII amacrine cells (Dunn and Rieke, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Dunn and Rieke, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e8d90e42-665f-427a-8bde-7bcaa75261ed",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C13",
+      "claim": "On parasol ganglion cells provide information to cortical circuits about subtle changes in contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "On parasol ganglion cells provide information to cortical circuits about subtle changes in contrast (Kaplan and Shapley, 1982)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kaplan and Shapley, 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "8e7e5aff-9a8a-4248-9cbe-558a007bfee0",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C14",
+      "claim": "On parasol ganglion cells receive abundant rod-mediated input at low light levels.",
+      "claim_type": "EXPLICIT",
+      "source": "receive abundant rod-mediated input at low light levels (Purpura et al., 1988; Field et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Purpura et al., 1988 and Field et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "db316a8b-59dd-4949-9d79-20d9e20d0d78",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C15",
+      "claim": "On parasol cells are likely to contribute critically to vision at low light levels.",
+      "claim_type": "EXPLICIT",
+      "source": "these cells are likely to contribute critically to vision at low light levels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from their properties of receiving abundant rod input and providing contrast information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e364a998-0ebe-4e50-99de-26a557b8e1a2",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C16",
+      "claim": "The effect of changes in background on a cell's spike output is dominated by the changes in excitatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2C,D suggest that the effect of changes in background on a cell's spike output is dominated by the changes in excitatory input",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 2C,D showing parallel changes in excitatory input and spike output.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "64066861-8224-4345-9373-d8b86733ab0e",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C17",
+      "claim": "Detection thresholds for spike responses and excitatory synaptic inputs measured in the same cell were near identical across a range of backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection thresholds for spike responses and excitatory synaptic inputs measured in the same cell were near identical across a range of backgrounds (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E with data points falling near the unity line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9fdb233b-adc6-49eb-a108-e354f53f670e",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C18",
+      "claim": "Inhibitory synaptic inputs to the same stimuli were three to four times smaller than the excitatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "inhibitory synaptic inputs to the same stimuli were three to four times smaller than the excitatory inputs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on measurements, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "f7a8a288-7093-443a-9647-95443f2f00b4",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C19",
+      "claim": "Inhibitory inputs are unlikely to contribute strongly to spike output.",
+      "claim_type": "EXPLICIT",
+      "source": "hence unlikely to contribute strongly to spike output",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that inhibitory inputs are much smaller than excitatory inputs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a4cb0fdd-9c1e-4abf-bbe4-adc842db5813",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C20",
+      "claim": "Changes in human behavioral threshold with background show a 'dark light' region extending to approximately 0.01 R*/rod/s in which threshold is independent of background.",
+      "claim_type": "EXPLICIT",
+      "source": "a 'dark light' region extending to \u223c0.01 R*/rod/s in which threshold is independent of background",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as a characteristic region of human behavioral threshold curves, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e318a0cf-0195-4eee-89e1-721f85d78c9f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C21",
+      "claim": "Changes in human behavioral threshold with background show a 'Rose\u2013deVries' region in which threshold increases with the square root of the background.",
+      "claim_type": "EXPLICIT",
+      "source": "a 'Rose\u2013deVries' region in which threshold increases with the square root of the background (de Vries, 1943; Rose, 1948)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as a characteristic region with citations to de Vries, 1943 and Rose, 1948.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b45d2530-ae7b-4297-8985-eb07a9611943",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C22",
+      "claim": "Changes in human behavioral threshold with background show a 'Weber' region in which threshold increases proportionally with the background.",
+      "claim_type": "EXPLICIT",
+      "source": "a 'Weber' region in which threshold increases proportionally with the background",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as a characteristic region of human behavioral threshold curves.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "584fa37f-9f94-4d9a-913c-075c9dd4456e",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C23",
+      "claim": "Gain began to decrease for backgrounds near 0.01 or 0.02 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "gain began to decrease for backgrounds near 0.01 or 0.02 R*/rod/s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and stated in the text based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7f545b07-cf99-45f5-ace4-e2469be17790",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C24",
+      "claim": "The onset of gain changes occurs close to the onset of changes in human behavioral threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "close to the onset of changes in human behavioral threshold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the background levels at which gain changes occur (~0.02 R*/rod/s) with those affecting behavioral threshold (~0.01 R*/rod/s).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "f56e290f-dfff-4d53-ab38-1a0ffb4d0be3",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C25",
+      "claim": "Over a ~1000-fold range of backgrounds, gain closely followed Weber law behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "over a \u223c1000-fold range of backgrounds gain closely followed Weber law behavior",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A showing gain scaling inversely with background over a wide range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "78611d92-6774-41a4-9a47-d928927d11f8",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C26",
+      "claim": "Multiple mechanisms contribute to gain control across the range of backgrounds tested.",
+      "claim_type": "EXPLICIT",
+      "source": "even though multiple mechanisms contribute to gain control across this range",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identification of different gain control sites and their engagement at different background levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "d933164d-6423-4a8c-a2d5-e6a675111960",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C27",
+      "claim": "Gain scaled inversely with background above 0.3 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain scaled inversely with background above 0.3 R*/rod/s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D with slope near -1 for the highest background region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1ffba441-9df9-4233-b01f-be58beb94c79",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C28",
+      "claim": "Noise changed less than 10-fold over a range of backgrounds that produced an approximately 10,000-fold change in gain.",
+      "claim_type": "EXPLICIT",
+      "source": "noise changed <10-fold over a range of backgrounds that produced an \u223c10,000-fold change in gain",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on measurements shown in Figure 3B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "56304c2c-5929-4d98-93d7-f2492491ffe9",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C29",
+      "claim": "If Poisson fluctuations dominated noise and gain remained constant, the standard deviation of the current should increase as the square root of the background.",
+      "claim_type": "EXPLICIT",
+      "source": "If Poisson fluctuations dominated noise and gain remained constant, the standard deviation of the current should increase as the square root of the background\u2014that is, with slope 0.5\u2014since the variance of a Poisson process is proportional to the mean",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the statistical properties of Poisson processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "345aa21e-c9ad-4bee-90b9-1c12794d36b3",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C30",
+      "claim": "Noise changed much less with background than predicted by Poisson fluctuations alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Noise changed much less with background than this prediction (Figure 3B,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing measured noise changes to theoretical predictions in Figure 3B,E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "58ce0f30-5097-49f5-93cc-cc3b319dbcb6",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C31",
+      "claim": "The largest increases in noise occurred between darkness and backgrounds <0.01 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest increases in noise occurred between darkness and backgrounds <0.01 R*/rod/s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "64912c22-256f-449a-b9df-e5e131821b9c",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C32",
+      "claim": "The reduction in noise at backgrounds higher than 0.1 R*/rod/s likely reflects the stronger decrease in gain at these backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in noise at backgrounds higher than 0.1 R*/rod/s likely reflects the stronger decrease in gain at these backgrounds, which more than compensates the increase in Poisson fluctuations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between gain changes and noise measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "6d641dac-ee4e-46b4-b41a-da80aebc98ab",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C33",
+      "claim": "The threshold for On parasol responses increased for backgrounds as low as 0.02 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The threshold for On parasol responses increased for backgrounds as low as 0.02 R*/rod/s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C,F based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1bfeb175-e2d2-4d15-9ace-4e55f59747e3",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C34",
+      "claim": "The threshold increase at 0.02 R*/rod/s corresponds closely with backgrounds that produce changes in behavioral threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "in close correspondence with backgrounds that produce changes in behavioral threshold (Donner, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the measured threshold changes to cited behavioral data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "82c513a9-f562-4a2a-89cf-72e0ca8da6ac",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C35",
+      "claim": "Threshold increased with a slope <1 for backgrounds between 0.02 and 5 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Threshold increased with a slope <1 for backgrounds between 0.02 and 5 R*/rod/s (Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3F based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "701a9231-6319-4e75-863d-788838b56b84",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C36",
+      "claim": "Gain at low backgrounds is controlled by the mean photon absorption rate and not by the magnitude of the fluctuations about the mean rate.",
+      "claim_type": "EXPLICIT",
+      "source": "gain at low backgrounds is controlled by the mean photon absorption rate and not by the magnitude of the fluctuations about the mean rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the fluctuating background experiment in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "8e714bd1-29ef-49d7-b275-f4eafb3a4797",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C37",
+      "claim": "A gain control that directly depends on the magnitude of the noise would cause gain to scale inversely with the square root of the background.",
+      "claim_type": "EXPLICIT",
+      "source": "a gain control that directly depends on the magnitude of the noise would cause gain to scale inversely with the square root of the background (Brown and Rudd, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction cited from Brown and Rudd, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "5013d391-3fb6-4f4c-88b2-a94481237fa3",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C38",
+      "claim": "The baseline firing rate and mean excitatory input changed slowly following a change in background and had not reached an obvious steady-state level even after 200 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline firing rate and mean excitatory input changed slowly following a change in background, and had not reached an obvious steady-state level even after 200 s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b52805d8-3bac-466a-b819-c47f93dd7810",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C39",
+      "claim": "Gain changes occurred within a few seconds following a change in background.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain changes, however, occurred within a few seconds following a change in background",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "51fcc9e3-059f-44b3-988f-34885fc42ff6",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C40",
+      "claim": "Gain changes following an increase in background had a time constant of approximately 0.3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "time constant of approximately 0.3 s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B,C based on exponential fits to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "fcd08666-e90e-4b93-94b2-78b44669ad38",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C41",
+      "claim": "Gain changes following a decrease in background had a time constant of approximately 0.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "time constant of approximately 0.5 s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B,C based on exponential fits to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "4f6169da-e348-4ff0-9f42-ed44badd6f85",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C42",
+      "claim": "In the 0.1 s following an increase in background from 0.02 to 0.08 R*/rod/s, less than 1 in 100 rods absorbs a photon.",
+      "claim_type": "EXPLICIT",
+      "source": "in the 0.1 s following an increase in background from 0.02 to 0.08 R*/rod/s, <1 in 100 rods absorbs a photon",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the background intensity and integration time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e5a6e786-0da3-4505-80c0-3659968db25c",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C43",
+      "claim": "The observed gain changes cannot be explained by a mechanism operating on a small collection of rods.",
+      "claim_type": "EXPLICIT",
+      "source": "the observed gain changes cannot be explained by a mechanism operating on a small collection of rods",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calculation that very few rods absorb photons in the relevant time window.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "bd52f333-3abf-4740-b578-154e18b0374a",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C44",
+      "claim": "The halving of gain produced by a step in background from 0.02 to 0.08 R*/rod/s requires a mechanism that integrates over at least 50 rods.",
+      "claim_type": "EXPLICIT",
+      "source": "The halving of gain produced by this step in background requires a mechanism that integrates over at least 50 rods even if a single absorbed photon reduces gain to 0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated based on the photon absorption statistics and the observed gain change.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "3855b4aa-60b5-4e4d-b040-c84ffb197ac5",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C45",
+      "claim": "Gain changes transferred completely or near completely for bar widths up to 50 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain changes transferred completely or near completely for bar widths up to 50 \u00b5m",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8B based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "c124e0e8-2c11-43e6-98c4-f64966de58ef",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C46",
+      "claim": "Near-complete adaptation transfer at 50 \u00b5m bar width requires that the receptive field of the adapting mechanism have a diameter of at least 100 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Near-complete adaptation transfer at this bar width requires that the receptive field of the adapting mechanism have a diameter of at least 100 \u00b5m",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the logic of the experimental design illustrated in Figure 7B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "6e5625d2-2110-43c3-b7d2-ad49f8232e30",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C47",
+      "claim": "A receptive field of 100 \u00b5m diameter would contain at least 500 rods given the rod density of approximately 0.1/\u00b5m\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "A receptive field of this size would contain at least 500 rods given the rod density of \u223c0.1/\u00b5m2 (Osterberg, 1935)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the receptive field size and cited rod density.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "733f9de4-063d-418f-8da5-d136a98202c0",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C48",
+      "claim": "Bar widths of 100 \u00b5m and larger produced incomplete adaptation transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Bar widths of 100 \u00b5m and larger produced incomplete adaptation transfer",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8B based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "70a58bc8-f94c-4dce-b001-cda67827125f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C49",
+      "claim": "Gain control is mediated by a mechanism that has access to signals from hundreds of rods.",
+      "claim_type": "EXPLICIT",
+      "source": "gain control is mediated by a mechanism that has access to signals from hundreds of rods",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the spatial adaptation transfer experiments in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "91bd409e-f2b9-47b4-a96a-a284731321d0",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C50",
+      "claim": "The degree of spatial pooling required for rapid gain control kinetics is present only downstream of the synapse between rod bipolar cells and AII amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This degree of spatial pooling is required to support the rapid kinetics described in Figure 5 and is present only downstream of the synapse between rod bipolar cells and AII amacrine cells (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred by comparing the required convergence to the known anatomy of the rod bipolar pathway shown in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1cc7409c-e2b2-4be4-8894-6dadab09e744",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C51",
+      "claim": "Backgrounds that produced substantial reductions in gain of the rod-mediated signals failed to reduce the gain of the cone-mediated signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Backgrounds that produced substantial reductions in gain of the rod-mediated signals failed to reduce the gain of the cone-mediated signals (Figure 9B\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 9B-E based on experimental measurements separating rod and cone responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "016e4e91-7b5e-4f3a-aa63-ba10e5748684",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C52",
+      "claim": "Gain changes do not transfer from the rod pathway to the cone pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "gain changes do not transfer from the rod pathway to the cone pathway",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experiments in Figure 9 showing differential effects on rod vs cone signals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "af8fdb5b-2c6a-48d3-8d66-aad17871db20",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C53",
+      "claim": "Gain is controlled at a site prior to mixing of rod and cone signals in the cone bipolar cell.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that gain is controlled at a site prior to mixing of rod and cone signals in the cone bipolar cell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of transfer of gain changes from rod to cone pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9c03bfef-2106-4b10-99fd-c560dccd89b2",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C54",
+      "claim": "The lack of transfer from rod to cone pathways, together with the requirement for access to signals from hundreds of rods, makes the AII amacrine cell and/or its gap junction with On cone bipolar cells likely sites of gain control.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of transfer from rod to cone pathways, together with the requirement that the gain control mechanism have access to signals from hundreds of rods (Figure 8), makes the AII amacrine cell and/or its gap junction with On cone bipolar cells likely sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by combining multiple experimental constraints on the location of the gain control mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "95364665-b173-4b41-b784-cc31c1cb4649",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C55",
+      "claim": "Human behavioral threshold begins to increase for backgrounds near 0.01 R*/rod/s, similar to the backgrounds (~0.02 R*/rod/s) at which primate ganglion cell thresholds began to increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Human behavioral threshold begins to increase for backgrounds near 0.01 R*/rod/s, similar to the backgrounds (\u223c0.02 R*/rod/s) at which primate ganglion cell thresholds began to increase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made between cited behavioral data and the experimental measurements from this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0f2a940d-b707-4ee0-b74c-b2ce694a3c4d",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C56",
+      "claim": "The rate at which spontaneous activation of rhodopsin generates photon-like noise events in primate rods is 0.003\u20130.004 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "the rate at which spontaneous activation of rhodopsin generates photon-like noise events in primate rods (0.003\u20130.004 R*/rod/s) (GD Field and F Rieke, unpublished)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on unpublished data from Field and Rieke.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "fa204b41-3fd0-4aeb-9829-c6ddfd76395f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C57",
+      "claim": "The onset of behavioral and ganglion cell threshold increases is consistent with measures of the total noise generated by macaque rods.",
+      "claim_type": "EXPLICIT",
+      "source": "They are, however, consistent with measures of the total noise (i.e., both discrete and continuous) generated by macaque rods (Schneeweis and Schnapf, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing threshold measurements to cited noise measurements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "3dfa3fc4-2720-4820-8cb2-c85e697e4388",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C58",
+      "claim": "The gain of retinal signals measured via electroretinograms begins to decline only at backgrounds approximately fivefold higher than those that increase behavioral threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "the gain of retinal signals measured via electroretinograms begins to decline only at backgrounds \u223cfivefold higher than those that increase behavioral threshold (Frishman et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Frishman et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1bb02473-6d2d-471e-b382-1995d2d9eafe",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C59",
+      "claim": "Behavioral brightness matching experiments show a robust Rose\u2013deVries region.",
+      "claim_type": "EXPLICIT",
+      "source": "behavioral brightness matching experiments, which should be sensitive to changes in neural gain but not noise, show a robust Rose\u2013deVries region (Brown and Rudd, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Brown and Rudd, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a903b842-a288-4d35-870d-492045c0c3da",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C60",
+      "claim": "The spike responses of toad ganglion cells exhibit an approximately 10-fold range of backgrounds over which the threshold required to reach a criterion spike rate increases in proportion to the square root of the background.",
+      "claim_type": "EXPLICIT",
+      "source": "the spike responses of toad ganglion cells exhibit an \u223c10-fold range of backgrounds over which the threshold required to reach a criterion spike rate increases in proportion to the square root of the background (Donner et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Donner et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1f7d6b37-3087-4303-9a83-c3e2682ec42f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C61",
+      "claim": "The region of the ganglion cell TVI curve with slope 0.5 was limited to a narrow range of backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The region of the ganglion cell TVI curve with slope 0.5 was limited to a narrow range of backgrounds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental measurements in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "5bc67290-0b13-4fd0-b7d1-4a2b0672e380",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C62",
+      "claim": "Post-retinal mechanisms contribute substantially to the more extended Rose\u2013deVries region measured in behavioral studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that post-retinal mechanisms contribute substantially to the more extended Rose\u2013deVries region measured in behavioral studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference between retinal measurements and behavioral measurements.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "376c56cf-1aa7-468c-9f5a-e0c7bfef264d",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C63",
+      "claim": "Previously described gain control mechanisms are sensitive to variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously described gain control mechanisms are sensitive to variance (reviewed by Demb, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a review by Demb, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "54a33c82-5225-41b6-8bc5-092c59b4e8a4",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C64",
+      "claim": "Some previously described gain control mechanisms act at locations with insufficient rod convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "act at locations with insufficient rod convergence (Dunn et al., 2006; Dunn and Rieke, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Dunn et al., 2006 and Dunn and Rieke, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "574f3ef6-d176-4382-86f5-cd97e34f8b15",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C65",
+      "claim": "Some previously described gain control mechanisms affect cone signals.",
+      "claim_type": "EXPLICIT",
+      "source": "or affect cone signals (Dunn et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Dunn et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "06e665d4-2bfa-4ecd-a189-3b5506487a78",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C66",
+      "claim": "The novel gain control mechanism identified in this study is located in the AII amacrine cell or the synaptic connections it makes with cone bipolar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The constraints above suggest a novel mechanism located in the AII amacrine cell or the synaptic connections it makes with cone bipolar cells (Figure 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple experimental constraints on the mechanism's properties and location.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "c342a254-8779-4e69-af84-43e94c154d28",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C67",
+      "claim": "The site of adaptation in the rod bipolar pathway should be shared across ganglion cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "a location of the site of adaptation in the rod bipolar pathway indicates that it should be shared across ganglion cell types",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the anatomy of the rod bipolar pathway which is common to multiple ganglion cell types.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "790c0ee8-49f0-4dd7-be90-56d135ad9135",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C68",
+      "claim": "On midget ganglion cells adapted very similarly to On parasol ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On midget ganglion cells adapted very similarly to On parasol ganglion cells (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a370a4af-e1d7-4037-a66b-95f143084fb5",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C69",
+      "claim": "Retinal ganglion cells encode stimuli over 10 log units of background.",
+      "claim_type": "EXPLICIT",
+      "source": "retinal ganglion cells encode stimuli over 10 log units of background",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of retinal ganglion cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e530d4f5-9421-4a21-b848-33c1831dbcc2",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C70",
+      "claim": "The dynamic range of retinal ganglion cells far exceeds the dynamic range of any single gain control mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "far exceeding the dynamic range of any single mechanism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple mechanisms are required to cover the full range.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b00ae5e3-a730-432c-a1e8-b8eb942a57c8",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C71",
+      "claim": "Backgrounds producing approximately 10\u201320 R*/rod/s halve the gain of the phototransduction cascade in primate rods.",
+      "claim_type": "EXPLICIT",
+      "source": "Backgrounds producing approximately 10\u201320 R*/rod/s halve the gain of the phototransduction cascade in primate rods (Schneeweis and Schnapf, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Schneeweis and Schnapf, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b8b42aa6-0b86-4502-806b-08615effd90a",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C72",
+      "claim": "Backgrounds producing approximately 0.4 R*/rod/s halve the gain of the rod bipolar to AII synapse by reducing the number of releasable vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Backgrounds producing \u223c0.4 R*/rod/s halve the gain of the rod bipolar to AII synapse by reducing the number of releasable vesicles (Dunn et al., 2006; Dunn and Rieke, 2008; Oesch and Diamond, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Dunn et al., 2006, Dunn and Rieke, 2008, and Oesch and Diamond, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "ecdae473-a34d-4029-807a-6dc4d97a71a7",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C73",
+      "claim": "Backgrounds approximately 0.08 R*/rod/s engage a mechanism located downstream of the rod bipolar\u2013AII synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "backgrounds \u223c0.08 R*/rod/s engage a mechanism located downstream of the rod bipolar\u2013AII synapse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experiments in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0f03a3f4-2530-4e52-8545-b3432ef895d1",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C74",
+      "claim": "The light levels at which the downstream gain control mechanism is engaged are consistent with backgrounds that are just detectable given the total noise generated by macaque rods.",
+      "claim_type": "EXPLICIT",
+      "source": "the light levels at which this mechanism is engaged are consistent with backgrounds that are just detectable given the total noise generated by macaque rods (Schneeweis and Schnapf, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the engagement threshold to cited noise measurements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0c44e527-1d2e-41fe-8073-a46390d25c49",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C75",
+      "claim": "At least five separate gain control mechanisms contribute to a single smooth function relating background to gain over more than 5 log units on each axis.",
+      "claim_type": "EXPLICIT",
+      "source": "At least five separate gain control mechanisms that contribute to a single smooth function relating background to gain over >5 log units on each axis (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the identification of multiple mechanisms and the smooth gain function shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "d6dfdf47-cea7-4fd5-8428-fc9979f4e618",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C76",
+      "claim": "The smooth functional form for adaptation relating background to gain was likely a target of selective pressure in primate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "suggest that this particular functional form for adaptation was a target of selective pressure in primate evolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the coordinated action of multiple mechanisms producing a smooth function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0334369c-36e6-430d-a452-a279d0dd0dc1",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C77",
+      "claim": "Retinal gain controls operate at the lowest backgrounds physically possible.",
+      "claim_type": "EXPLICIT",
+      "source": "retinal gain controls appear to operate at the lowest backgrounds physically possible",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation that gain changes occur as soon as backgrounds are detectable above intrinsic noise.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7038f950-5a4f-4d80-a192-01c08c32324e",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C78",
+      "claim": "Each absorbed photon within the pool of rods providing input to an adaptational mechanism lowers gain.",
+      "claim_type": "EXPLICIT",
+      "source": "each absorbed photon within the pool of rods providing input to an adaptational mechanism lowers gain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rapid kinetics and low background levels at which gain changes occur.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "6de1ec74-1ba8-41f0-bd97-96c9ee901989",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C79",
+      "claim": "Adaptation at the rod bipolar to AII synapse approaches the sensitivity limit imposed by convergence and integration time.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptation at the rod bipolar to AII synapse approaches the sensitivity limit imposed by convergence and integration time (Dunn and Rieke, 2008; see Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from Dunn and Rieke, 2008 and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b3a7fdfe-4153-45db-802a-4b3b65798385",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C80",
+      "claim": "A single absorbed photon reduces the gain of the next single photon response at the rod bipolar to AII synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "a single absorbed photon reduces the gain of the next single photon response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as a property of adaptation at the rod bipolar to AII synapse.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "db76b58c-95d4-4bdd-aaeb-6938b4986b6f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C81",
+      "claim": "The onset of retinal gain control coincides with the dimmest detectable backgrounds given the intrinsic noise of the rods.",
+      "claim_type": "EXPLICIT",
+      "source": "the onset of retinal gain control coincides with the dimmest detectable backgrounds given the intrinsic noise of the rods",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded by comparing the background levels at which gain changes occur to the intrinsic noise levels of rods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "328cfe55-c0a7-48fc-80a8-317bb512d594",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C82",
+      "claim": "All recordings were from On parasol ganglion cells in peripheral primate retina.",
+      "claim_type": "EXPLICIT",
+      "source": "All recordings were from On parasol ganglion cells in peripheral (eccentricity typically >30\u00b0; \u223c15\u00b0 to 20\u00b0 for the experiments of Figure 9) primate retina (Macaca nemestrina, fascicularis, and mulatta)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "abbf2c13-15c9-4857-9ec0-c6e9a3db98b7",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C83",
+      "claim": "Retina was obtained through the Tissue Distribution Program of the Regional Primate Center at the University of Washington.",
+      "claim_type": "EXPLICIT",
+      "source": "Retina was obtained through the Tissue Distribution Program of the Regional Primate Center at the University of Washington",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the experimental tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "eadf6ffe-cbac-4a79-9878-4614a0060c17",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "claim_id": "C84",
+      "claim": "The retina was dark adapted for 1 hr while attached to the pigment epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "The retina was dark adapted for 1 hr while attached to the pigment epithelium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental preparation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Retinal gain control begins at the lowest detectable backgrounds (~0.02 R*/rod/s), closely matching the onset of human behavioral threshold increases (~0.01 R*/rod/s). This represents a key finding that gain changes occur essentially as soon as background lights become detectable above intrinsic noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C23, C24, C33, C34, and C55 collectively demonstrate through experimental measurements (Figure 3) that gain decreases at ~0.02 R*/rod/s, which closely corresponds to behavioral threshold changes at ~0.01 R*/rod/s. The data directly support this correspondence between retinal and behavioral measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0b0260a8-e65a-4aad-ae2b-047fd30c0fd4",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gain control at low backgrounds is controlled by the mean photon absorption rate rather than fluctuations, with individual photon absorptions triggering gain changes. This mechanism does not rely on highly averaged estimates of photon count.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C36, and C78 are supported by the fluctuating background experiment (Figure 4) demonstrating that gain depends on mean rather than variance, and by kinetic analysis showing rapid gain changes consistent with single-photon sensitivity. The experimental design directly tests and rules out variance-based mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a1837afb-f297-4244-9d6a-fc504baa66d5",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gain changes occur rapidly (time constants ~0.3-0.5 s) following background changes, requiring integration over at least 50 rods to achieve observed gain reductions given the sparse photon absorption at low backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by direct measurements of gain kinetics (Figure 5) and statistical calculations showing that <1 in 100 rods absorbs a photon in 0.1 s at the tested backgrounds. The inference that at least 50 rods must be integrated is mathematically sound given the observed gain changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "44ae4340-ad1d-418d-a367-1863d6d013cc",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spatial adaptation transfer experiments demonstrate that the gain control mechanism integrates signals from hundreds of rods (at least 500), with complete transfer occurring for bar widths up to 50 \u03bcm, requiring a receptive field diameter of at least 100 \u03bcm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by systematic spatial adaptation experiments (Figures 7-8) showing complete transfer at 50 \u03bcm bar widths and incomplete transfer at larger widths. The calculation of rod numbers from receptive field size and rod density is straightforward and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "fe7ea1cb-81d6-4170-b357-746957cb17f8",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The gain control mechanism is localized to the AII amacrine cell or its gap junction with cone bipolar cells, as evidenced by pathway-specific effects (rod but not cone), required spatial pooling, and anatomical constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 and C66 are supported by experiments showing no transfer from rod to cone pathways (Figure 9), combined with spatial pooling requirements (Figures 7-8) and anatomical knowledge (Figure 1). The convergence of multiple experimental constraints provides strong support for this localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "167b4b66-ac16-454f-ae23-03dd5e851ab9",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gain follows Weber law behavior over a ~1000-fold range of backgrounds, scaling inversely with background above 0.3 R*/rod/s, while noise changes less than 10-fold over backgrounds producing ~10,000-fold gain changes, much less than predicted by Poisson statistics alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C27, C28, C30, C31, and C32 are directly supported by measurements in Figure 3 showing gain and noise as functions of background. The comparison to Poisson predictions is theoretically sound and the deviations are clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "f960e2b0-3db0-4cdf-969b-a3f56a6b0ca9",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Changes in background affect ganglion cell spike output primarily through changes in excitatory input, with inhibitory inputs being 3-4 times smaller and unlikely to contribute strongly. Detection thresholds for spikes and excitatory inputs are nearly identical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 are supported by direct measurements comparing spike responses and excitatory currents (Figure 2C-E). However, C18 notes that inhibitory input data are not shown, which slightly weakens the conclusion about inhibitory contributions, though the logic remains sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple gain control mechanisms operate at different background levels: phototransduction (~10-20 R*/rod/s), rod bipolar-AII synapse (~0.4 R*/rod/s), and downstream of the rod bipolar-AII synapse (~0.08 R*/rod/s), with at least five mechanisms contributing to a smooth gain function over >5 log units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 integrate cited prior work with current findings to describe the hierarchy of gain control mechanisms. The current study's contribution (C73) is well-supported, and the synthesis with prior work (C71-C72) is appropriately cited. The smooth function claim (C75) is demonstrated in Figure 3A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b7c54f87-b6e2-4d14-8f49-80840a8174cd",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ganglion cell threshold-versus-intensity curve shows a limited Rose-deVries region (slope 0.5) over a narrow range of backgrounds, suggesting that post-retinal mechanisms contribute substantially to the more extended Rose-deVries region observed in behavioral studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C61, and C62 are supported by measurements in Figure 3F showing threshold changes with slope <1 over the tested range. The inference about post-retinal contributions (C62) is reasonable given the discrepancy between retinal and behavioral measurements, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "74a0647c-d44c-4a36-b21f-a998ab885070",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Retinal gain controls operate at the lowest backgrounds physically possible, with the onset coinciding with the dimmest detectable backgrounds given intrinsic rod noise, and each absorbed photon within the rod pool lowering gain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C78, and C81 synthesize the main findings to conclude that gain control operates at the physical limit. This is well-supported by the correspondence between gain onset (~0.02 R*/rod/s) and detectable backgrounds given rod noise, combined with the rapid kinetics and spatial pooling data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "c6cc5bcb-5c09-4e8a-b349-c8083de8828f",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The gain control mechanism in the rod bipolar pathway should be shared across ganglion cell types, with On midget cells adapting similarly to On parasol cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is a reasonable inference from pathway anatomy, but C68 explicitly states that data are not shown. Without the supporting data for midget cells, this result cannot be fully evaluated, though the anatomical logic is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "067ceb1b-6700-41ac-8d3d-d6842559e69c",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The onset of threshold increases at ~0.02 R*/rod/s is consistent with total rod noise measurements but higher than the spontaneous rhodopsin activation rate (0.003-0.004 R*/rod/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 relies on unpublished data, which cannot be independently verified. While C57 cites published noise measurements for consistency, the reliance on unpublished data for the spontaneous activation rate introduces uncertainty into this comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "f56b8279-efb7-4864-a1ce-ddb98bb94034",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The smooth functional form for adaptation relating background to gain was likely a target of selective pressure in primate evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is explicitly speculative and not directly testable with the presented data. While the coordination of multiple mechanisms producing a smooth function is demonstrated, inferring evolutionary selective pressure requires additional comparative or evolutionary evidence not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "8fc22abf-8157-4e30-b971-9a690a9f8564",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on the rod bipolar pathway anatomy and On parasol ganglion cell properties establishes the experimental context, including known gain control sites and the rationale for studying these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 provide well-cited background information establishing the rod bipolar pathway, known gain control mechanisms, and properties of On parasol cells. These are appropriately supported by citations and anatomical knowledge (Figure 1).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9285f020-1600-4ff2-ad91-465d1004e660",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Human behavioral threshold-versus-intensity curves show three characteristic regions: dark light (threshold independent of background to ~0.01 R*/rod/s), Rose-deVries (threshold increases with square root of background), and Weber (threshold proportional to background).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 describe well-established features of human psychophysical measurements, appropriately cited to classic and review papers. This background information is accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "46b07667-2e1f-42a1-a509-a4e5c794ad38",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previously described gain control mechanisms differ from the newly identified mechanism in being sensitive to variance, acting at locations with insufficient rod convergence, or affecting cone signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 accurately characterize prior work through appropriate citations, establishing how the newly identified mechanism differs from previously known mechanisms. This comparison is important for establishing novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "bf1f44b4-5a8e-4c7a-9b92-8965f8c9e11d",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Experimental methods: recordings from On parasol ganglion cells in peripheral primate retina obtained through the University of Washington tissue program, with 1 hr dark adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 describe standard methodological details that are clearly stated and appropriate for the experiments conducted. These are factual descriptions of the experimental procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "d9912653-c107-4090-8db9-e4e856ad2d94",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Sensory systems must encode enormous dynamic ranges (e.g., 10^12-fold for audition), and visual neurons experience >1000-fold input changes during natural viewing, challenges that simple camera exposure settings fail to address.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 provide motivating examples for the importance of gain control, with C6 appropriately cited. These are accurate general statements establishing the biological significance of the problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "bde80535-b37a-4001-8e9b-ac7d1de40e60",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work establishes that human behavioral threshold increases at ~0.01 R*/rod/s and that weak backgrounds decrease retinal signal gain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 accurately cite prior work establishing key background facts that motivate the current study. The citations are appropriate and the statements are accurate representations of prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "a01122fc-2d8f-47d7-a1b6-8e168f553820",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Theoretical predictions: if Poisson fluctuations dominated noise with constant gain, noise would increase as the square root of background; if gain control depended on noise magnitude, gain would scale inversely with the square root of background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C37 present theoretically sound predictions based on Poisson statistics and prior models. These predictions are correctly derived and provide important null hypotheses against which the data are tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0e01378f-48b2-4715-8efa-230054ab4995",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Baseline firing rate and mean excitatory input changed slowly following background changes, not reaching steady state even after 200 s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by data in Figure 5\u2014figure supplement 1 showing slow changes in baseline properties. This observation contrasts with the rapid gain changes and is important for understanding the temporal dynamics of adaptation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e18876fc-278e-49d6-ad5e-e2396e065100",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Prior measurements show that electroretinogram-measured gain declines at ~5-fold higher backgrounds than behavioral threshold changes, while brightness matching and toad ganglion cell studies show Rose-deVries regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 accurately cite prior work comparing different measurement approaches. These citations appropriately contextualize the current findings within the broader literature on visual adaptation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "60e63e1a-de29-488a-ad75-3864e75b2feb",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Retinal ganglion cells encode stimuli over 10 log units of background, far exceeding the dynamic range of any single gain control mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 state well-established properties of retinal ganglion cells that motivate the need for multiple gain control mechanisms. These are accurate general statements supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9d239de2-0e47-4681-9cef-84237d254198",
+      "content_id": "2eac2473-84ed-44ce-8316-bc1285f1d004",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Adaptation at the rod bipolar-AII synapse approaches the sensitivity limit imposed by convergence and integration time, with single photons reducing gain of subsequent responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79 and C80 cite prior work (Dunn and Rieke, 2008) characterizing adaptation at the rod bipolar-AII synapse. This prior work is accurately represented and provides important context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that retinal gain control begins at the dimmest detectable backgrounds (~0.02 R*/rod/s), which closely corresponds to the backgrounds that increase human behavioral threshold (~0.01 R*/rod/s). This represents a key finding that retinal adaptation operates at the lowest backgrounds physically possible given intrinsic rod noise.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating 'They show by systematic experiments that retinal adaptation begins at the dimmest detectable backgrounds given the intrinsic noise of the rods' and 'They successfully compare their experiments to human psychophysical experiments.' No concerns were raised about these core claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1fe55c42-cf03-461b-a018-59028d3ba286",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show that gain control at low backgrounds does not rely on highly averaged photon counts but instead responds to individual photon absorptions. Gain changes occur rapidly (time constants ~0.3-0.5 s) following background changes, requiring integration over at least 50-500 rods to explain the observed kinetics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this finding, stating 'Adaptation occurs rapidly at the level of AII Amacrine cells when as few as 1 or 2 photons are absorbed within a collection of several hundred rods.' The rapid kinetics and single-photon sensitivity are accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Spatial adaptation transfer experiments demonstrate that the gain control mechanism has access to signals from hundreds of rods (at least 500), with complete transfer occurring for bar widths up to 50 \u03bcm. This degree of spatial pooling is only present downstream of the rod bipolar to AII amacrine cell synapse.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as part of the systematic experimental demonstration, noting the authors 'show by systematic experiments' the properties of adaptation. The spatial pooling requirement and its implications for localization are not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "931ea4db-6529-4481-954a-208699d2ac0d",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors demonstrate that gain changes in the rod pathway do not transfer to the cone pathway, indicating gain control occurs prior to the mixing of rod and cone signals. Combined with spatial pooling requirements, this localizes the novel gain control mechanism to the AII amacrine cell and/or its gap junction with cone bipolar cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the localization finding, stating 'Adaptation occurs rapidly at the level of AII Amacrine cells.' The pathway-specific nature of the adaptation and the anatomical localization are accepted without critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "d6ed359f-84cb-42a8-8ed8-374a31baebf6",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors show that changes in background affect spike output primarily through changes in excitatory input, with inhibitory inputs being 3-4 times smaller and unlikely to contribute strongly. Detection thresholds for spike responses and excitatory inputs were nearly identical across backgrounds.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers critique the presentation of these findings, noting 'The list of \"qualitative features of adaptation\" was particularly lacking in precise language. \"Inhibitory synaptic inputs were small\" (how small?)' and requesting 'a clear, quantitative description of the results.' The lack of precision raises uncertainty about the strength of these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors characterize how gain, noise, and threshold change across a wide range of backgrounds. Gain follows Weber law behavior over ~1000-fold range, decreasing inversely with background above 0.3 R*/rod/s. Noise changed less than 10-fold despite ~10,000-fold gain changes, much less than predicted by Poisson fluctuations alone.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers request 'clear definitions and use consistent language for describing \"gain\", \"noise\", and \"background\"' and question 'Is it really necessary to use so many measures of gain?' The confusion about terminology and multiple gain measures creates uncertainty about the precise quantitative relationships, though the general findings are not rejected.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "21b9978b-db0d-4091-9f47-058e37172cb4",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors find that the Rose-deVries region (slope 0.5) in ganglion cell threshold-versus-intensity curves is limited to a narrow range of backgrounds, suggesting post-retinal mechanisms contribute substantially to the more extended Rose-deVries region in behavioral studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this interpretation. The comparison between retinal and behavioral measurements is part of the successfully executed comparison noted by reviewers: 'They successfully compare their experiments to human psychophysical experiments.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b45f9819-0991-4f46-b555-c1e8f6a5b491",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors integrate their findings with previously identified gain control mechanisms, showing that at least five separate mechanisms contribute to a smooth function relating background to gain over >5 log units. The newly identified mechanism engages at ~0.08 R*/rod/s, complementing mechanisms in rods (~10-20 R*/rod/s) and at the rod bipolar-AII synapse (~0.4 R*/rod/s).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the systematic nature of the work and its significance, stating the authors 'show by systematic experiments' the properties of adaptation. The integration of multiple mechanisms and the evolutionary interpretation are accepted as part of the high-significance findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e7a28fc3-34c1-414b-b2ec-b3cf018a718c",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors describe the rod bipolar pathway anatomy and justify the choice of On parasol ganglion cells as the experimental model, noting these cells receive abundant rod input and provide contrast information to cortical circuits.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers request better presentation, stating 'We could be given a succinct summary of relevant retinal circuitry in Introduction' and 'the choice of the On parasol ganglion cell could be better rationalized at the beginning of Results.' While not rejecting the rationale, reviewers indicate it needs clearer explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "b5cc6bba-230f-4e38-80b9-bbdc9d7eb28d",
+      "content_id": "5366cc28-e427-4e67-9aee-0387d31eaa6a",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors describe their experimental methods, including the use of On parasol ganglion cells from peripheral primate retina, tissue source, and dark adaptation procedures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about the experimental methods or preparation. The enthusiasm for the work ('found it exciting') and acceptance of the systematic experiments implies acceptance of the methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63f259c8-a8c3-4bd9-86d7-c1a5430fad8a",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "74ee4ec4-5c81-4070-9371-3ed1193909c3",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "584fa37f-9f94-4d9a-913c-075c9dd4456e",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "7f545b07-cf99-45f5-ace4-e2469be17790",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "6d641dac-ee4e-46b4-b41a-da80aebc98ab",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "1bfeb175-e2d2-4d15-9ace-4e55f59747e3",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "95364665-b173-4b41-b784-cc31c1cb4649",
+      "result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66"
+    },
+    {
+      "claim_id": "048380e2-3108-4602-9cc6-1fc15ca676a0",
+      "result_id": "0b0260a8-e65a-4aad-ae2b-047fd30c0fd4"
+    },
+    {
+      "claim_id": "a1f3c43e-f316-4e6a-8fbc-2025b605af82",
+      "result_id": "0b0260a8-e65a-4aad-ae2b-047fd30c0fd4"
+    },
+    {
+      "claim_id": "701a9231-6319-4e75-863d-788838b56b84",
+      "result_id": "0b0260a8-e65a-4aad-ae2b-047fd30c0fd4"
+    },
+    {
+      "claim_id": "7038f950-5a4f-4d80-a192-01c08c32324e",
+      "result_id": "0b0260a8-e65a-4aad-ae2b-047fd30c0fd4"
+    },
+    {
+      "claim_id": "b52805d8-3bac-466a-b819-c47f93dd7810",
+      "result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5"
+    },
+    {
+      "claim_id": "51fcc9e3-059f-44b3-988f-34885fc42ff6",
+      "result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5"
+    },
+    {
+      "claim_id": "fcd08666-e90e-4b93-94b2-78b44669ad38",
+      "result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5"
+    },
+    {
+      "claim_id": "4f6169da-e348-4ff0-9f42-ed44badd6f85",
+      "result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5"
+    },
+    {
+      "claim_id": "e5a6e786-0da3-4505-80c0-3659968db25c",
+      "result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5"
+    },
+    {
+      "claim_id": "bd52f333-3abf-4740-b578-154e18b0374a",
+      "result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5"
+    },
+    {
+      "claim_id": "3855b4aa-60b5-4e4d-b040-c84ffb197ac5",
+      "result_id": "44ae4340-ad1d-418d-a367-1863d6d013cc"
+    },
+    {
+      "claim_id": "c124e0e8-2c11-43e6-98c4-f64966de58ef",
+      "result_id": "44ae4340-ad1d-418d-a367-1863d6d013cc"
+    },
+    {
+      "claim_id": "6e5625d2-2110-43c3-b7d2-ad49f8232e30",
+      "result_id": "44ae4340-ad1d-418d-a367-1863d6d013cc"
+    },
+    {
+      "claim_id": "733f9de4-063d-418f-8da5-d136a98202c0",
+      "result_id": "44ae4340-ad1d-418d-a367-1863d6d013cc"
+    },
+    {
+      "claim_id": "70a58bc8-f94c-4dce-b001-cda67827125f",
+      "result_id": "44ae4340-ad1d-418d-a367-1863d6d013cc"
+    },
+    {
+      "claim_id": "91bd409e-f2b9-47b4-a96a-a284731321d0",
+      "result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8"
+    },
+    {
+      "claim_id": "1cc7409c-e2b2-4be4-8894-6dadab09e744",
+      "result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8"
+    },
+    {
+      "claim_id": "016e4e91-7b5e-4f3a-aa63-ba10e5748684",
+      "result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8"
+    },
+    {
+      "claim_id": "af8fdb5b-2c6a-48d3-8d66-aad17871db20",
+      "result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8"
+    },
+    {
+      "claim_id": "9c03bfef-2106-4b10-99fd-c560dccd89b2",
+      "result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8"
+    },
+    {
+      "claim_id": "06e665d4-2bfa-4ecd-a189-3b5506487a78",
+      "result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8"
+    },
+    {
+      "claim_id": "f56e290f-dfff-4d53-ab38-1a0ffb4d0be3",
+      "result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9"
+    },
+    {
+      "claim_id": "d933164d-6423-4a8c-a2d5-e6a675111960",
+      "result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9"
+    },
+    {
+      "claim_id": "1ffba441-9df9-4233-b01f-be58beb94c79",
+      "result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9"
+    },
+    {
+      "claim_id": "345aa21e-c9ad-4bee-90b9-1c12794d36b3",
+      "result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9"
+    },
+    {
+      "claim_id": "58ce0f30-5097-49f5-93cc-cc3b319dbcb6",
+      "result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9"
+    },
+    {
+      "claim_id": "64912c22-256f-449a-b9df-e5e131821b9c",
+      "result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9"
+    },
+    {
+      "claim_id": "e364a998-0ebe-4e50-99de-26a557b8e1a2",
+      "result_id": "f960e2b0-3db0-4cdf-969b-a3f56a6b0ca9"
+    },
+    {
+      "claim_id": "64066861-8224-4345-9373-d8b86733ab0e",
+      "result_id": "f960e2b0-3db0-4cdf-969b-a3f56a6b0ca9"
+    },
+    {
+      "claim_id": "9fdb233b-adc6-49eb-a108-e354f53f670e",
+      "result_id": "f960e2b0-3db0-4cdf-969b-a3f56a6b0ca9"
+    },
+    {
+      "claim_id": "f7a8a288-7093-443a-9647-95443f2f00b4",
+      "result_id": "f960e2b0-3db0-4cdf-969b-a3f56a6b0ca9"
+    },
+    {
+      "claim_id": "b00ae5e3-a730-432c-a1e8-b8eb942a57c8",
+      "result_id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809"
+    },
+    {
+      "claim_id": "b8b42aa6-0b86-4502-806b-08615effd90a",
+      "result_id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809"
+    },
+    {
+      "claim_id": "ecdae473-a34d-4029-807a-6dc4d97a71a7",
+      "result_id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809"
+    },
+    {
+      "claim_id": "0f03a3f4-2530-4e52-8545-b3432ef895d1",
+      "result_id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809"
+    },
+    {
+      "claim_id": "0c44e527-1d2e-41fe-8073-a46390d25c49",
+      "result_id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809"
+    },
+    {
+      "claim_id": "82c513a9-f562-4a2a-89cf-72e0ca8da6ac",
+      "result_id": "b7c54f87-b6e2-4d14-8f49-80840a8174cd"
+    },
+    {
+      "claim_id": "1f7d6b37-3087-4303-9a83-c3e2682ec42f",
+      "result_id": "b7c54f87-b6e2-4d14-8f49-80840a8174cd"
+    },
+    {
+      "claim_id": "5bc67290-0b13-4fd0-b7d1-4a2b0672e380",
+      "result_id": "b7c54f87-b6e2-4d14-8f49-80840a8174cd"
+    },
+    {
+      "claim_id": "0334369c-36e6-430d-a452-a279d0dd0dc1",
+      "result_id": "74a0647c-d44c-4a36-b21f-a998ab885070"
+    },
+    {
+      "claim_id": "7038f950-5a4f-4d80-a192-01c08c32324e",
+      "result_id": "74a0647c-d44c-4a36-b21f-a998ab885070"
+    },
+    {
+      "claim_id": "db76b58c-95d4-4bdd-aaeb-6938b4986b6f",
+      "result_id": "74a0647c-d44c-4a36-b21f-a998ab885070"
+    },
+    {
+      "claim_id": "c342a254-8779-4e69-af84-43e94c154d28",
+      "result_id": "c6cc5bcb-5c09-4e8a-b349-c8083de8828f"
+    },
+    {
+      "claim_id": "790c0ee8-49f0-4dd7-be90-56d135ad9135",
+      "result_id": "c6cc5bcb-5c09-4e8a-b349-c8083de8828f"
+    },
+    {
+      "claim_id": "0f2a940d-b707-4ee0-b74c-b2ce694a3c4d",
+      "result_id": "067ceb1b-6700-41ac-8d3d-d6842559e69c"
+    },
+    {
+      "claim_id": "fa204b41-3fd0-4aeb-9829-c6ddfd76395f",
+      "result_id": "067ceb1b-6700-41ac-8d3d-d6842559e69c"
+    },
+    {
+      "claim_id": "d6dfdf47-cea7-4fd5-8428-fc9979f4e618",
+      "result_id": "f56b8279-efb7-4864-a1ce-ddb98bb94034"
+    },
+    {
+      "claim_id": "7939787d-a2eb-40d2-a9a7-2f0b55c2c63f",
+      "result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564"
+    },
+    {
+      "claim_id": "98903cde-ad08-45ca-8d56-6ecaa380e95d",
+      "result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564"
+    },
+    {
+      "claim_id": "1b180461-ac33-4769-8780-a92e50d980c3",
+      "result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564"
+    },
+    {
+      "claim_id": "e8d90e42-665f-427a-8bde-7bcaa75261ed",
+      "result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564"
+    },
+    {
+      "claim_id": "8e7e5aff-9a8a-4248-9cbe-558a007bfee0",
+      "result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564"
+    },
+    {
+      "claim_id": "db316a8b-59dd-4949-9d79-20d9e20d0d78",
+      "result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564"
+    },
+    {
+      "claim_id": "a4cb0fdd-9c1e-4abf-bbe4-adc842db5813",
+      "result_id": "9285f020-1600-4ff2-ad91-465d1004e660"
+    },
+    {
+      "claim_id": "e318a0cf-0195-4eee-89e1-721f85d78c9f",
+      "result_id": "9285f020-1600-4ff2-ad91-465d1004e660"
+    },
+    {
+      "claim_id": "b45d2530-ae7b-4297-8985-eb07a9611943",
+      "result_id": "9285f020-1600-4ff2-ad91-465d1004e660"
+    },
+    {
+      "claim_id": "376c56cf-1aa7-468c-9f5a-e0c7bfef264d",
+      "result_id": "46b07667-2e1f-42a1-a509-a4e5c794ad38"
+    },
+    {
+      "claim_id": "54a33c82-5225-41b6-8bc5-092c59b4e8a4",
+      "result_id": "46b07667-2e1f-42a1-a509-a4e5c794ad38"
+    },
+    {
+      "claim_id": "574f3ef6-d176-4382-86f5-cd97e34f8b15",
+      "result_id": "46b07667-2e1f-42a1-a509-a4e5c794ad38"
+    },
+    {
+      "claim_id": "328cfe55-c0a7-48fc-80a8-317bb512d594",
+      "result_id": "bf1f44b4-5a8e-4c7a-9b92-8965f8c9e11d"
+    },
+    {
+      "claim_id": "abbf2c13-15c9-4857-9ec0-c6e9a3db98b7",
+      "result_id": "bf1f44b4-5a8e-4c7a-9b92-8965f8c9e11d"
+    },
+    {
+      "claim_id": "eadf6ffe-cbac-4a79-9878-4614a0060c17",
+      "result_id": "bf1f44b4-5a8e-4c7a-9b92-8965f8c9e11d"
+    },
+    {
+      "claim_id": "884360f6-4417-44bf-8a28-96c05867b5e6",
+      "result_id": "d9912653-c107-4090-8db9-e4e856ad2d94"
+    },
+    {
+      "claim_id": "5caad768-c215-4b0f-a780-884f84b363e9",
+      "result_id": "d9912653-c107-4090-8db9-e4e856ad2d94"
+    },
+    {
+      "claim_id": "7ecd69de-23c6-4f85-9e27-4dfa54ea5cc9",
+      "result_id": "d9912653-c107-4090-8db9-e4e856ad2d94"
+    },
+    {
+      "claim_id": "7cc9ce62-c971-46a9-9c52-3a36d5d74a73",
+      "result_id": "bde80535-b37a-4001-8e9b-ac7d1de40e60"
+    },
+    {
+      "claim_id": "a8c06ddc-4bb1-4dd0-b7a4-b900de7f6aac",
+      "result_id": "bde80535-b37a-4001-8e9b-ac7d1de40e60"
+    },
+    {
+      "claim_id": "56304c2c-5929-4d98-93d7-f2492491ffe9",
+      "result_id": "a01122fc-2d8f-47d7-a1b6-8e168f553820"
+    },
+    {
+      "claim_id": "8e714bd1-29ef-49d7-b275-f4eafb3a4797",
+      "result_id": "a01122fc-2d8f-47d7-a1b6-8e168f553820"
+    },
+    {
+      "claim_id": "5013d391-3fb6-4f4c-88b2-a94481237fa3",
+      "result_id": "0e01378f-48b2-4715-8efa-230054ab4995"
+    },
+    {
+      "claim_id": "3dfa3fc4-2720-4820-8cb2-c85e697e4388",
+      "result_id": "e18876fc-278e-49d6-ad5e-e2396e065100"
+    },
+    {
+      "claim_id": "1bb02473-6d2d-471e-b382-1995d2d9eafe",
+      "result_id": "e18876fc-278e-49d6-ad5e-e2396e065100"
+    },
+    {
+      "claim_id": "a903b842-a288-4d35-870d-492045c0c3da",
+      "result_id": "e18876fc-278e-49d6-ad5e-e2396e065100"
+    },
+    {
+      "claim_id": "a370a4af-e1d7-4037-a66b-95f143084fb5",
+      "result_id": "60e63e1a-de29-488a-ad75-3864e75b2feb"
+    },
+    {
+      "claim_id": "e530d4f5-9421-4a21-b848-33c1831dbcc2",
+      "result_id": "60e63e1a-de29-488a-ad75-3864e75b2feb"
+    },
+    {
+      "claim_id": "6de1ec74-1ba8-41f0-bd97-96c9ee901989",
+      "result_id": "9d239de2-0e47-4681-9cef-84237d254198"
+    },
+    {
+      "claim_id": "b3a7fdfe-4153-45db-802a-4b3b65798385",
+      "result_id": "9d239de2-0e47-4681-9cef-84237d254198"
+    },
+    {
+      "claim_id": "63f259c8-a8c3-4bd9-86d7-c1a5430fad8a",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "74ee4ec4-5c81-4070-9371-3ed1193909c3",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "584fa37f-9f94-4d9a-913c-075c9dd4456e",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "7f545b07-cf99-45f5-ace4-e2469be17790",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "6d641dac-ee4e-46b4-b41a-da80aebc98ab",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "1bfeb175-e2d2-4d15-9ace-4e55f59747e3",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "95364665-b173-4b41-b784-cc31c1cb4649",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "0334369c-36e6-430d-a452-a279d0dd0dc1",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "db76b58c-95d4-4bdd-aaeb-6938b4986b6f",
+      "result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a"
+    },
+    {
+      "claim_id": "048380e2-3108-4602-9cc6-1fc15ca676a0",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "a1f3c43e-f316-4e6a-8fbc-2025b605af82",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "701a9231-6319-4e75-863d-788838b56b84",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "b52805d8-3bac-466a-b819-c47f93dd7810",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "51fcc9e3-059f-44b3-988f-34885fc42ff6",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "fcd08666-e90e-4b93-94b2-78b44669ad38",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "4f6169da-e348-4ff0-9f42-ed44badd6f85",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "e5a6e786-0da3-4505-80c0-3659968db25c",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "bd52f333-3abf-4740-b578-154e18b0374a",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "7038f950-5a4f-4d80-a192-01c08c32324e",
+      "result_id": "1fe55c42-cf03-461b-a018-59028d3ba286"
+    },
+    {
+      "claim_id": "3855b4aa-60b5-4e4d-b040-c84ffb197ac5",
+      "result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9"
+    },
+    {
+      "claim_id": "c124e0e8-2c11-43e6-98c4-f64966de58ef",
+      "result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9"
+    },
+    {
+      "claim_id": "6e5625d2-2110-43c3-b7d2-ad49f8232e30",
+      "result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9"
+    },
+    {
+      "claim_id": "733f9de4-063d-418f-8da5-d136a98202c0",
+      "result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9"
+    },
+    {
+      "claim_id": "70a58bc8-f94c-4dce-b001-cda67827125f",
+      "result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9"
+    },
+    {
+      "claim_id": "91bd409e-f2b9-47b4-a96a-a284731321d0",
+      "result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9"
+    },
+    {
+      "claim_id": "1cc7409c-e2b2-4be4-8894-6dadab09e744",
+      "result_id": "931ea4db-6529-4481-954a-208699d2ac0d"
+    },
+    {
+      "claim_id": "016e4e91-7b5e-4f3a-aa63-ba10e5748684",
+      "result_id": "931ea4db-6529-4481-954a-208699d2ac0d"
+    },
+    {
+      "claim_id": "af8fdb5b-2c6a-48d3-8d66-aad17871db20",
+      "result_id": "931ea4db-6529-4481-954a-208699d2ac0d"
+    },
+    {
+      "claim_id": "9c03bfef-2106-4b10-99fd-c560dccd89b2",
+      "result_id": "931ea4db-6529-4481-954a-208699d2ac0d"
+    },
+    {
+      "claim_id": "06e665d4-2bfa-4ecd-a189-3b5506487a78",
+      "result_id": "931ea4db-6529-4481-954a-208699d2ac0d"
+    },
+    {
+      "claim_id": "e364a998-0ebe-4e50-99de-26a557b8e1a2",
+      "result_id": "d6ed359f-84cb-42a8-8ed8-374a31baebf6"
+    },
+    {
+      "claim_id": "64066861-8224-4345-9373-d8b86733ab0e",
+      "result_id": "d6ed359f-84cb-42a8-8ed8-374a31baebf6"
+    },
+    {
+      "claim_id": "9fdb233b-adc6-49eb-a108-e354f53f670e",
+      "result_id": "d6ed359f-84cb-42a8-8ed8-374a31baebf6"
+    },
+    {
+      "claim_id": "f7a8a288-7093-443a-9647-95443f2f00b4",
+      "result_id": "d6ed359f-84cb-42a8-8ed8-374a31baebf6"
+    },
+    {
+      "claim_id": "584fa37f-9f94-4d9a-913c-075c9dd4456e",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "f56e290f-dfff-4d53-ab38-1a0ffb4d0be3",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "d933164d-6423-4a8c-a2d5-e6a675111960",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "1ffba441-9df9-4233-b01f-be58beb94c79",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "345aa21e-c9ad-4bee-90b9-1c12794d36b3",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "58ce0f30-5097-49f5-93cc-cc3b319dbcb6",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "64912c22-256f-449a-b9df-e5e131821b9c",
+      "result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd"
+    },
+    {
+      "claim_id": "1f7d6b37-3087-4303-9a83-c3e2682ec42f",
+      "result_id": "21b9978b-db0d-4091-9f47-058e37172cb4"
+    },
+    {
+      "claim_id": "5bc67290-0b13-4fd0-b7d1-4a2b0672e380",
+      "result_id": "21b9978b-db0d-4091-9f47-058e37172cb4"
+    },
+    {
+      "claim_id": "b00ae5e3-a730-432c-a1e8-b8eb942a57c8",
+      "result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491"
+    },
+    {
+      "claim_id": "b8b42aa6-0b86-4502-806b-08615effd90a",
+      "result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491"
+    },
+    {
+      "claim_id": "ecdae473-a34d-4029-807a-6dc4d97a71a7",
+      "result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491"
+    },
+    {
+      "claim_id": "0f03a3f4-2530-4e52-8545-b3432ef895d1",
+      "result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491"
+    },
+    {
+      "claim_id": "0c44e527-1d2e-41fe-8073-a46390d25c49",
+      "result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491"
+    },
+    {
+      "claim_id": "d6dfdf47-cea7-4fd5-8428-fc9979f4e618",
+      "result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491"
+    },
+    {
+      "claim_id": "7939787d-a2eb-40d2-a9a7-2f0b55c2c63f",
+      "result_id": "e7a28fc3-34c1-414b-b2ec-b3cf018a718c"
+    },
+    {
+      "claim_id": "e8d90e42-665f-427a-8bde-7bcaa75261ed",
+      "result_id": "e7a28fc3-34c1-414b-b2ec-b3cf018a718c"
+    },
+    {
+      "claim_id": "8e7e5aff-9a8a-4248-9cbe-558a007bfee0",
+      "result_id": "e7a28fc3-34c1-414b-b2ec-b3cf018a718c"
+    },
+    {
+      "claim_id": "db316a8b-59dd-4949-9d79-20d9e20d0d78",
+      "result_id": "e7a28fc3-34c1-414b-b2ec-b3cf018a718c"
+    },
+    {
+      "claim_id": "328cfe55-c0a7-48fc-80a8-317bb512d594",
+      "result_id": "b5cc6bba-230f-4e38-80b9-bbdc9d7eb28d"
+    },
+    {
+      "claim_id": "abbf2c13-15c9-4857-9ec0-c6e9a3db98b7",
+      "result_id": "b5cc6bba-230f-4e38-80b9-bbdc9d7eb28d"
+    },
+    {
+      "claim_id": "eadf6ffe-cbac-4a79-9878-4614a0060c17",
+      "result_id": "b5cc6bba-230f-4e38-80b9-bbdc9d7eb28d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c3002142-4d52-4479-a362-669f134da6b8",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "07d70af7-c5c8-4f34-99e3-ed7df5093c66",
+      "peer_result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the core finding that gain decreases at ~0.02 R*/rod/s corresponding to behavioral threshold changes. OpenEval provides detailed technical support from Figure 3, while peer reviewers affirm this as a systematic experimental demonstration. High agreement on this central claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7a86101c-184f-4a16-91c5-3b1ad323c0f2",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0b0260a8-e65a-4aad-ae2b-047fd30c0fd4",
+      "peer_result_id": "1fe55c42-cf03-461b-a018-59028d3ba286",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the fluctuating background experiment and rapid gain changes. OpenEval emphasizes the mean vs. variance distinction (C3, C4, C36) and kinetics (C78), while peer reviewers focus on rapid adaptation and single-photon sensitivity (C39-C44, C78). Overlapping claims with different emphasis but consistent support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "06b0b237-9483-40f3-bc9c-8b24f31e27d3",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a1837afb-f297-4244-9d6a-fc504baa66d5",
+      "peer_result_id": "1fe55c42-cf03-461b-a018-59028d3ba286",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the rapid kinetics and spatial pooling findings. OpenEval focuses on gain kinetics and rod integration calculations (C39-C44), while peer reviewers affirm rapid adaptation at AII amacrine cells with photon absorption in hundreds of rods. Strong agreement on temporal dynamics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "4f556e29-a560-48ed-8e05-93678981da8b",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "44ae4340-ad1d-418d-a367-1863d6d013cc",
+      "peer_result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the spatial adaptation experiments showing complete transfer at 50 \u03bcm and incomplete at larger widths (C45-C49). OpenEval provides detailed technical support from Figures 7-8, while peer reviewers accept this as part of systematic experimental demonstration. High agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9d04d591-35ee-4908-9bb9-b156156455b0",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8",
+      "peer_result_id": "931ea4db-6529-4481-954a-208699d2ac0d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support localization to AII amacrine cells. OpenEval emphasizes no transfer from rod to cone pathways (C50-C54, C66) with multiple experimental constraints, while peer reviewers directly affirm adaptation occurs at the level of AII amacrine cells. Strong agreement on localization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7aa57252-7e8e-43fe-a734-fcd71e481769",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "fe7ea1cb-81d6-4170-b357-746957cb17f8",
+      "peer_result_id": "498299b4-6fa8-4b64-9cda-034bc6dfe6b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on C50 regarding spatial pooling requirements. OpenEval groups this with pathway localization evidence, while peer reviewers include it with spatial adaptation experiments. Both support the claim but in different contexts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "e3b61e65-a0e6-4d73-a005-8662d243e49c",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "167b4b66-ac16-454f-ae23-03dd5e851ab9",
+      "peer_result_id": "65f03bfb-c3e0-4e6f-a9c0-8ba8e43511fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address gain and noise measurements from Figure 3, but with different evaluations. OpenEval finds claims C25-C32 well-supported with clear data, while peer reviewers express uncertainty about terminology, requesting clearer definitions of 'gain', 'noise', and 'background' and questioning multiple gain measures. Disagreement on clarity rather than validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "01eccf62-84df-4599-a1be-7fe48a60893b",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f960e2b0-3db0-4cdf-969b-a3f56a6b0ca9",
+      "peer_result_id": "d6ed359f-84cb-42a8-8ed8-374a31baebf6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address spike responses vs. excitatory currents (C16-C19). OpenEval notes support but acknowledges missing inhibitory input data weakens conclusions. Peer reviewers critique lack of precision ('how small?') and request quantitative descriptions. Both express some uncertainty, though OpenEval is more supportive overall.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "fcac8b1a-c47b-4cc1-a024-e6e703c99935",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d8e904d0-1200-4112-a75e-d1b7f6bb9809",
+      "peer_result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the integration of multiple gain control mechanisms (C71-C75). OpenEval finds the hierarchy well-supported with appropriate citations and smooth function demonstrated. Peer reviewers affirm the systematic nature and high significance. Strong agreement, with peer reviewers also accepting the evolutionary interpretation (C76).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "f806b9e3-57f1-49a2-a323-e83071ad8fff",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b7c54f87-b6e2-4d14-8f49-80840a8174cd",
+      "peer_result_id": "21b9978b-db0d-4091-9f47-058e37172cb4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address threshold changes and post-retinal contributions (C61-C62). OpenEval finds claims supported by Figure 3F though notes speculation about post-retinal contributions. Peer reviewers accept the comparison to psychophysical experiments without challenge. Agreement on support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9a46da5b-8957-45e9-8d42-4e276189a00f",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "74a0647c-d44c-4a36-b21f-a998ab885070",
+      "peer_result_id": "e7ffc706-17f7-40ab-8b17-796f0bb0b60a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the main conclusion about gain control at physical limits (C77, C81). OpenEval synthesizes multiple findings to support this conclusion. Peer reviewers affirm this as part of the core systematic demonstration. Strong agreement on this high-level conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "ddb43a08-83f6-4a89-9c4f-28616ab5a018",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "74a0647c-d44c-4a36-b21f-a998ab885070",
+      "peer_result_id": "1fe55c42-cf03-461b-a018-59028d3ba286",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on C78 regarding rapid kinetics. OpenEval includes this in the physical limit synthesis, while peer reviewers include it in the rapid adaptation finding. Both support the claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "7711df52-6e66-46d7-be56-751227930e63",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f56b8279-efb7-4864-a1ce-ddb98bb94034",
+      "peer_result_id": "b45f9819-0991-4f46-b555-c1e8f6a5b491",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address evolutionary interpretation (C76). OpenEval rates as uncertain, noting the claim is speculative without comparative/evolutionary evidence. Peer reviewers accept it as part of the high-significance systematic findings without critique. Disagreement on the strength of this speculative claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "9502b7a3-79e5-4158-9607-d932f818252d",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "8fc22abf-8157-4e30-b971-9a690a9f8564",
+      "peer_result_id": "e7a28fc3-34c1-414b-b2ec-b3cf018a718c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address background on rod bipolar pathway and On parasol cells (C10-C15). OpenEval finds these well-cited and appropriately supported. Peer reviewers request better presentation and rationalization of cell choice, indicating uncertainty about clarity rather than validity. Mild disagreement on presentation quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "15cf1d46-ba1f-4cbe-abe4-d2b841000e25",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "bf1f44b4-5a8e-4c7a-9b92-8965f8c9e11d",
+      "peer_result_id": "b5cc6bba-230f-4e38-80b9-bbdc9d7eb28d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address methodological details (C82-C84). OpenEval finds these clearly stated and appropriate. Peer reviewers implicitly accept methods through enthusiasm for systematic experiments. Strong agreement on methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "0598892e-4514-4322-b96f-e3942c6254fd",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "c6cc5bcb-5c09-4e8a-b349-c8083de8828f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates C67-C68 as uncertain due to missing data for midget cells, though anatomical logic is sound. No corresponding peer review evaluation found for these specific claims about pathway anatomy and missing midget cell data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "2005fdaf-dca9-46e7-a3f7-1d7177af9d31",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "067ceb1b-6700-41ac-8d3d-d6842559e69c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates C56-C57 as uncertain due to reliance on unpublished data for spontaneous activation rate. No corresponding peer review evaluation found for these specific claims about rod noise comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "83ccbccb-35cc-4038-9865-c78eb3f82691",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "9285f020-1600-4ff2-ad91-465d1004e660",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C20-C22 (psychophysical background) well-supported with appropriate citations. No corresponding peer review evaluation found, though peer reviewers do affirm successful comparison to psychophysics generally.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "1439c7d9-d833-4b56-91ae-3dcaa0134c59",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "46b07667-2e1f-42a1-a509-a4e5c794ad38",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C63-C65 (comparison to prior mechanisms) well-supported for establishing novelty. No corresponding peer review evaluation found for these specific claims about how the mechanism differs from prior work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "84c14265-a717-453b-8194-6a1e4795bb3d",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "d9912653-c107-4090-8db9-e4e856ad2d94",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C5-C7 (motivating examples for gain control importance) well-supported. No corresponding peer review evaluation found for these introductory motivation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "3994da6d-9290-4855-aae8-8858217bd46a",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "bde80535-b37a-4001-8e9b-ac7d1de40e60",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C8-C9 (background on rod sensitivity and noise) well-cited and accurate. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "10069b34-3cf5-4ecf-bd16-10d9cc4fae7c",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "a01122fc-2d8f-47d7-a1b6-8e168f553820",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C29, C37 (Poisson predictions) theoretically sound and correctly derived. No corresponding peer review evaluation found for these specific theoretical predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "ed69440e-12f2-4829-b754-fafe5bcf967f",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP23",
+      "openeval_result_id": "0e01378f-48b2-4715-8efa-230054ab4995",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C38 (slow baseline changes) supported by Figure 5 supplement, important for understanding temporal dynamics. No corresponding peer review evaluation found for this specific observation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "aec4fe18-8685-4683-b994-94d0ba82cb86",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP24",
+      "openeval_result_id": "e18876fc-278e-49d6-ad5e-e2396e065100",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C58-C60 (citations comparing measurement approaches) accurate and appropriately contextualized. No corresponding peer review evaluation found for these specific literature comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "75d75679-4b68-45a3-b72d-d3bd6fef6323",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP25",
+      "openeval_result_id": "60e63e1a-de29-488a-ad75-3864e75b2feb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C69-C70 (RGC properties motivating multiple mechanisms) well-established and accurate. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    },
+    {
+      "id": "d05a5671-0608-4433-a5ce-f40b03504261",
+      "submission_id": "8dd40449-b09d-4f86-923e-14e8d63c30e4",
+      "comparison_id": "CMP26",
+      "openeval_result_id": "9d239de2-0e47-4681-9cef-84237d254198",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C79-C80 (prior work on rod bipolar-AII synapse) accurately cited. No corresponding peer review evaluation found for these specific citations to Dunn and Rieke 2008.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:07:57.100672Z"
+    }
+  ]
+}

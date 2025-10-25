@@ -1,0 +1,2240 @@
+{
+  "submission": {
+    "id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-10-25T01:21:46.432747Z",
+    "updated_at": "2025-10-25T01:21:46.432747Z"
+  },
+  "content": [
+    {
+      "id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "content_type": "manuscript",
+      "content_text": "# BRET-based RAS biosensors that show a novel small molecule is an inhibitor of RAS-effector protein-protein interactions\n\n## Authors\n\n- Nicolas Bery<sup>1</sup> ([ORCID: 0000-0002-2643-3897](https://orcid.org/0000-0002-2643-3897))\n- Abimael Cruz-Migoni<sup>1</sup>\n- Carole JR Bataille<sup>3</sup>\n- Camilo E Quevedo<sup>1</sup>\n- Hanna Tulmin<sup>1</sup>\n- Ami Miller<sup>1</sup>\n- Angela Russell<sup>3</sup>\n- Simon EV Phillips<sup>4</sup>\n- Stephen B Carr<sup>2</sup>\n- Terence H Rabbitts<sup>1</sup> ([ORCID: 0000-0002-4982-2609](https://orcid.org/0000-0002-4982-2609)) \u2020\n\n### Affiliations\n\n1. MRC Molecular Haematology Unit, Weatherall Institute of Molecular Medicine University of Oxford Oxford United Kingdom\n2. Research Complex at Harwell Rutherford Appleton Laboratory Didcot United Kingdom\n3. Chemistry Research Laboratory Oxford United Kingdom\n4. Department of Biochemistry University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\n10.7554/eLife.37122.001 The RAS family of proteins is amongst the most highly mutated in human cancers and has so far eluded drug therapy. Currently, much effort is being made to discover mutant RAS inhibitors and in vitro screening for RAS-binding drugs must be followed by cell-based assays. Here, we have developed a robust set of bioluminescence resonance energy transfer (BRET)-based RAS biosensors that enable monitoring of RAS-effector interaction inhibition in living cells. These include KRAS, HRAS and NRAS and a variety of different mutations that mirror those found in human cancers with the major RAS effectors such as CRAF, PI3K and RALGDS. We highlighted the utility of these RAS biosensors by showing a RAS-binding compound is a potent pan-RAS-effector interactions inhibitor in cells. The RAS biosensors represent a useful tool to investigate and characterize the potency of anti-RAS inhibitors in cells and more generally any RAS protein-protein interaction (PPI) in cells.\n\n## Introduction\n\nRAS is the most prominent oncogene identified in cancer. Mutation in RAS proteins can be found in approximately 30% of all human tumors (Downward, 2003; Prior et al., 2012) (http://cancer.sanger.ac.uk/cosmic) prompting interest in the discovery of anti-RAS therapeutics. However, there are still no RAS-targeted drugs currently available in the clinic even though such molecules could prove widely efficacious in many human cancers as front-line drugs for therapy. Some forms of cancer, like pancreatic cancer, present late and are difficult therefore to treat (Kleeff et al., 2016) but these contain a high proportion of KRAS mutations and are thus potentially susceptible to RAS-binding drugs.\n\nRAS has been regarded as undruggable partly because so far attempts to interfere with the protein have not been efficacious (Cox et al., 2014). RAS is a membrane-bound small GTPase switching between an inactive GDP-bound state and an active GTP-bound state. RAS signaling to the cell nucleus occurs after interaction of RAS-GTP with its effectors to trigger the activation of downstream signaling pathways. This activation thereby promotes cell survival and cell proliferation (Wennerberg et al., 2005) via gene modulation so that the blockade of mutant RAS signaling in tumors cells is an attractive therapeutic option. There are several ways in which this could be achieved (Athuluri-Divakar et al., 2016; Burns et al., 2014; Spiegel et al., 2014; Zimmermann et al., 2013) but methods such as implementing farnesylation inhibitors have limited success due to side effects (Berndt et al., 2011; James et al., 1995; Whyte et al., 1997). One avenue that has largely been avoided in inhibiting RAS is the interaction with its effectors, such as RAF, RALGDS and PI3K. However, the effectiveness of the orthosteric RAS-effector PPI inhibition was shown using intracellular antibodies (Tanaka and Rabbitts, 2003; Tanaka et al., 2007) (herein called macrodrugs (Tanaka and Rabbitts, 2008) to distinguish them from conventional small molecule drugs) and a single domain intracellular antibody that blocks effector interaction sites of RAS-GTP. This PPI inhibition can prevent tumor growth in xenograft models and tumor initiation in a transgenic mouse model (Tanaka and Rabbitts, 2010; Tanaka et al., 2007). Other macrodrugs, such as DARPins (Guillard et al., 2017), have also been shown to be effective in interfering with RAS PPIs. Moreover, for many years, RAS was regarded as a protein without any pockets suitable for small molecule interactions (McCormick, 2016) but recent studies have described compounds that are able to bind RAS-associated pockets (Gentile et al., 2017; Lito et al., 2016; Maurer et al., 2012; Ostrem et al., 2013; Patricelli et al., 2016; Shima et al., 2013; Sun et al., 2012; Waldmann et al., 2004; Welsch et al., 2017).\n\nMost of the current RAS inhibitors have been selected and identified through in vitro techniques (Ostrem et al., 2013; Trinh et al., 2016; Upadhyaya et al., 2015; Welsch et al., 2017) but cell-based assay technologies are needed to assess initial hits for efficacy before hit to lead development is undertaken. Indeed, a robust cell-based assay is a mandatory step in any drug discovery programme, as it provides insights into the behavior of compounds in physiological conditions, including cell permeability, stability and potency in the cellular complexity of a whole cell. We now describe a toolbox of mutant and wild-type RAS BRET-based biosensors that can be used to assess PPI between activated, GTP-bound RAS (KRAS, HRAS or NRAS) and effectors such as CRAF, RALGDS or PI3K in living cells. We validate the toolbox using a published anti-RAS intracellular domain antibody (hereafter named iDAb RAS) (Tanaka et al., 2007), which is an inhibitor of RAS PPI to establish the RAS biosensor resource. We have further used this methodology to test a RAS-binding compound (herein referred to as 3344) that we have derived from an in vitro medicinal chemistry programme starting with an intracellular antibody fragment. By monitoring the change in BRET2-specific signal in transfected HEK293T cells expressing different RAS-effector donor-acceptor combinations, we have been able to characterize the pan-RAS-effector PPI inhibitor properties of 3344. This inhibitory mechanism shown using the BRET biosensor toolbox was supported by the crystal structure of KRAS with bound 3344, showing binding to a pocket close to the RAS switch. Therefore, the BRET2 toolbox we describe here is a critical resource and is available for all investigators in the international effort to produce anti-RAS drugs, that can be employed in the treatment of cancers with RAS mutations.\n\n## Results\n\n## Engineering and validation of mutant RAS biosensors\n\nRAS biosensors were developed for use in the BRET2 method (Bacart et al., 2008) as a real-time system allowing the monitoring of protein-protein interactions and their inhibition in live cells. The scheme used is outlined in Figure 1A. The intracellular localization of BRET donor RAS proteins was recapitulated by expressing the full-length proteins including the CAAX box, which is the farnesylation site for trafficking to the plasma membrane. The CAAX sequences were fused to the carboxy terminal end of the Renilla Luciferase variant 8 (RLuc8) to act as the donor molecule in BRET2 (De et al., 2007) (for simplicity of the nomenclature, CAAX has been omitted from the RAS construct names). We used available structural data for RAS/effector and RAS/iDAb complexes to optimize the proximity of donor and acceptor moieties. Hence, RLuc8 was fused to the amino termini of full-length RAS family proteins and the GFP2 (Ramsay et al., 2002) fused to the C-termini of the effectors (RALGDS, CRAF, PI3K) or of the iDAbs. Other parameters can influence the BRET2 signal such as the linker length between RLuc8/RAS and effector-iDAb/GFP2. For our study, we observed a higher BRET signal with a (GGGS)3 linker between RLuc8-KRASG12D construct, a (GGGS)3 linker between the CRAF RBD-GFP2 molecule and a (GGGS)2 linker between iDAb RAS-GFP2 construct (Figure 1\u2014figure supplement 1A). Therefore, we implemented these observations to all our BRET biosensors (Supplementary file 1). When donor and acceptor plasmids are transfected into HEK293T cells (although any cell line of choice would be suitable), the resultant cells are fluorescent and bioluminescent if treated with the luciferase substrate (coelenterazine 400a). If an interaction occurs between RAS and a partner-GFP2 fusion, bringing the RLuc8 and GFP2 within 100 \u00c5, an energy transfer occurs from the RLuc8-RAS donor to the GFP2 acceptor and a BRET2 signal is achieved (Figure 1A, middle panel). Inhibitors of the donor-acceptor molecule interaction will decrease the BRET signal whilst maintaining the RLuc8 bioluminescence and GFP2 fluorescence signals (Figure 1A, right hand panel). The BRET signal (or BRET ratio) is calculated as the light emitted by the GFP2 acceptor constructs (at 515 nm) upon addition of coelenterazine 400a, divided by the light emitted by the RLuc8 donor constructs (at 410 nm) (Pfleger et al., 2006). A background BRET signal is only observed with the donor-only construct where the RLuc8 plasmid is transfected alone into the cells (Figure 1\u2014figure supplement 1B) and this signal is therefore subtracted from that BRET ratio. As shown in Figure 1\u2014figure supplement 1B, un-transfected cells and those transfected with GFP2-only construct have a negligible auto-luminescence and emission at 515 nm upon addition of the BRET substrate and are not considered in the calculation of the BRET ratio.\n\nBRET donor saturation assessments were first carried out with the RAS effector RAS binding domains (RBDs) to evaluate the optimal levels of expression plasmid transfection for the competition experiments (Figure 1B). All of the effector domains were found to interact specifically with KRASG12D since the BRET signal reached a donor saturation level (Figure 1B). Further, all the transfected plasmids expressed the proteins at equivalent levels as indicated by western blot analysis (Figure 1C) and their expression does not modify KRASG12D expression (Figure 1\u2014figure supplement 2A shows the increase of acceptor protein level has little effect of donor protein levels). To further characterize this BRET2 system, we used the dominant negative mutant KRASS17N, which does not interact with the effectors (Cool et al., 1999; Nassar et al., 2010; van den Berghe et al., 1997), as a donor. We found that the BRET signal increased linearly with the concentration of acceptor for all the RAS binding domains. This result is typical of non-specific interactions (Mercier et al., 2002), confirming the S17N mutant does not interact with the effectors and supports the sensitivity of this system (Figure 1\u2014figure supplement 2B).\n\nWe initially characterized the biosensor pairs with the iDAb RAS that is known to interact with mutant KRAS on the switch regions (Tanaka et al., 2007), compared with a non-relevant anti-LMO2 iDAb (Sewell et al., 2014; Tanaka et al., 2011) that was designated as iDAb control in this study (herein called iDAb Ctl). Introduction of mutations in the three CDRs of the iDAb RAS to generate a dematured iDAb RAS (iDAbdm RAS), was shown to reduce its affinity towards RAS-GTP from 6.2 nM to\u00a0~1 \u03bcM affinity (Assi et al., 2010). While this did not alter the protein expression (Figure 1\u2014figure supplement 2C,D), there was an expected BRET signal reduction (Figure 1\u2014figure supplement 2C). Indeed, it significantly increased the BRET50 (an approximation of the relative affinity of the acceptor fusion for the donor fusion proteins, corresponding to the acceptor/donor ratio necessary to reach 50% of the BRETmax) and significantly reduced the BRETmax (an approximation for the total number of complex RAS/iDAb and the distance between the donor and the acceptor within the dimer), which together are consistent with a decreased affinity of this mutant iDAb toward RAS. Therefore, the results obtained with the iDAb RAS confirmed the sensitivity and accuracy of the RAS biosensors.\n\nFinally, we tested the inhibition of interaction between RAS and its effector partners using BRET in a competition assay. HEK293T cells were transiently transfected with KRASG12D, each of the RAS-effector domain and a competitor (non-GFP2) version of the iDAb RAS or iDAb control. This competition showed that iDAb RAS, but not the control, drastically decreased the BRET ratio of all the interactions tested (Figure 1D). These results confirmed that the BRET2 biosensors enable monitoring of PPI inhibition of KRASG12D with each of the four effectors tested by the anti-RAS single domain antibody.\n\n## The BRET2 biosensors show that 3344 is an inhibitor of KRAS-effector interactions\n\nOur major purpose in the development of the RAS BRET2 biosensors was to create a validation tool for compounds that bind to RAS and interfere with its PPI in living cells. We have identified compounds that bind to KRAS using in vitro screening and one compound 3344 (chemical structure and 1-D NMR characterization shown in Figure 1\u2014figure supplement 3A\u2013C) binds to KRASG12V with an affinity of 126 nM using 1H Carr-Purcell-Meiboom-Gill (CPMG) NMR (Baldwin and Kay, 2009) (data are shown in Figure 1\u2014figure supplement 3D). In vitro competition studies of 3344 binding to KRASG12V in waterLOGSY NMR show the anti-RAS scFv inhibits 3344 binding to KRAS (Figure 1\u2014figure supplement 3E). In view of the in vitro inhibition by the anti-RAS scFv of 3344 binding to RAS and because the iDAb RAS interferes with BRET signal in cells (Figure 1D), 3344 was used for validation of the BRET2 toolbox for RAS-effector PPI inhibitors. In the subsequent experiments reported here, we compare 3344 with an initial compound (Abd-2) obtained through a SPR in vitro screening, which binds HRAS/KRAS with low affinity. It is the precursor of the 3344 compound and both share the same benzodioxane group (the structures of 3344 and Abd-2 are shown in Figure 1\u2014figure supplement 3A,F). These compounds have been selected from a medicinal chemistry programme in order to validate the BRET-based RAS biosensors.\n\nHEK293T cells were transiently transfected with BRET pairs and, after 24 hr to allow protein expression, the cells were seeded in 96-well plates. The compounds were added at different concentrations (5, 10 and 20 \u03bcM) and incubated on cells for a further 20 hr before the BRET reading. For each assay, the donor protein was RLuc8-KRASG12D and the acceptor proteins were PI3K\u03b1 RBD-GFP2, PI3K\u03b3 RBD-GFP2, CRAF RBD-GFP2 or RALGDS RA-GFP2. We observed a dose response reduction in BRET signal for the assays with compound 3344 but not with the Abd-2 indicating that only 3344 interferes with the RAS-effector PPI (Figure 1E). To rule out the possibility of false positive compounds (for instance, that might interfere directly with the BRET signal), we included control BRET-based biosensors. We tested the RAS compounds with the iDAbs RAS biosensors, either with RLuc8-LMO2 donor and iDAbdm LMO2 (a dematured anti-LMO2 iDAb (Sewell et al., 2014)) acceptor (Figure 1\u2014figure supplement 3G), RLuc8-KRASG12D donor with the iDAb RAS acceptor (Figure 1\u2014figure supplement 3H), or RLuc8-KRASG12D donor with the iDAbdm RAS acceptor (Figure 1\u2014figure supplement 3I). Abd-2 has no effect on any of these assays while 3344 only interferes, in a dose response, with KRASG12D/iDAbdm RAS-induced BRET without affecting the expression of the biosensors (Figure 1\u2014figure supplement 3J). Hence, the inhibitory effects of 3344 on KRASG12D-effectors interactions are not simply due to interference with the BRET assay.\n\n## BRET2 reporter and associated RAS-CRAF signaling are affected by compound 3344\n\nThe RAS binding domain of the effector molecules lack some regulatory domains, which impedes a direct study of RAS inhibitors on pathways downstream of RAS. To reduce this limitation, we developed an optimized RAS biosensor of the full-length CRAFS257L mutant (herein named CRAFFL) since the S257L mutation increases ERK phosphorylation (Razzaque et al., 2007) and because we found that CRAFFL interacts with KRASG12D but not with KRASS17N (Figure 2\u2014figure supplement 1A). We performed a competition assay with the iDAb RAS confirming that it impedes the BRET2 signal due to the binding of CRAFFL with KRASG12D, in a dose response mode, whereas the iDAb control had no effect (Figure 2A). There was no alteration in CRAFFL and KRASG12D protein expression due to the transfection of the iDAbs, shown by western analysis (Figure 2\u2014figure supplement 1B). In addition, iDAb RAS inhibition significantly decreased the phosphorylation of MEK1/2 and ERK1/2 kinases (Figure 2B shows western blot data, quantitated in Figure 2C), confirming results affecting endogenous ERK phosphorylation by iDAb RAS interaction with RAS (Tanaka and Rabbitts, 2010).\n\nWe further tested the ability of the small molecule 3344 to inhibit the KRASG12D/CRAFFL biosensor and the downstream biomarker pathways with either a long incubation (20 hr, Figure 2D\u2013F) or a short incubation (3 hr, Figure 2\u2014figure supplement 1D\u2013F) to further validate the specificity of inhibition. Indeed, long-term incubation with the compound may indirectly inhibit RAS downstream pathways by affecting autocrine mechanisms involved in secondary activation of RAS pathways (Arthur and Ley, 2013; Zhang et al., 2011). We compared the effect of Abd-2 and 3344 on the BRET pair and found a significant decrease in BRET signal with 3344 that occurred in a dose-dependent manner (Figure 2D and Figure 2\u2014figure supplement 1D) without modifying RAS or CRAF expression (as shown by western analysis, Figure 2\u2014figure supplement 1C,G). Western blots using anti-pMEK and anti-pERK showed that 3344 also significantly inhibited MEK1/2 and ERK1/2 phosphorylation whilst Abd-2 did not (Figure 2E, quantified in Figure 2F and Figure 2\u2014figure supplement 1E\u2013F). Therefore, these observations show a specific and functional effect of the inhibition of interaction between RAS and CRAFFL by the 3344 with a long and short incubation.\n\nSome compounds have been previously characterized that bind selectively on the cysteine of KRASG12C mutant (Lito et al., 2016; Ostrem et al., 2013; Patricelli et al., 2016). We assessed whether our compound 3344 was able to interfere with binding of a range of mutant KRAS Gly12 proteins, including G12C, with CRAF in BRET assays. Analysis of the BRET2 signals from interaction of KRASG12A, KRASG12C, KRASG12V and KRASG12R with CRAFFL showed a dose response effect of compound 3344 but not Abd-2 (Figure 2G). The corresponding BRET biosensor acceptor and donor proteins are equally expressed after transfection as judged by western blot analysis (Figure 2\u2014figure supplement 1H).\n\nTherefore, using this new set of validated RAS biosensors, we show that the compound disrupts mutant KRAS/CRAFFL interaction in cells. In turn, this leads to inhibition of the RAF/MEK/ERK downstream signaling pathway (that emanates from the transfected protein expression).\n\n## 3344 inhibits the wild type KRAS-CRAF biosensor and its downstream signaling pathway\n\nWe extended the repertoire of biosensors by analyzing wild-type KRAS (KRASWT) donor molecule and also assessed if epidermal growth factor (EGF)-stimulated MEK/ERK phosphorylation (Burgering et al., 1993; Lange-Carter and Johnson, 1994) could be altered through the interaction of a KRASWT/CRAFFL BRET2 biosensor protein pair. Although the iDAb RAS binds weakly to RASWT in transfected mammalian two-hybrid reporter cells (Tanaka et al., 2007), we first established if the BRET2 signal from RLuc8-KRASWT and GFP2-CRAFFL PPI could be inhibited by the iDAb RAS in the BRET transfection assay. HEK293T cells were transfected with the BRET pair and serum was removed for 24 hr, stimulated for 5 min with EGF and the BRET ratio directly determined after the stimulation. EGF treatment brings KRASWT and CRAFFL fusion proteins in a closer proximity and enhances the number of KRASWT/CRAFFL dimers because the BRETmax value increases from 4.02 to 10.01 (Figure 3\u2014figure supplement 1A). A dose response inhibition of the BRET2 signal was observed with iDAb RAS, but not iDAb control (Figure 3A), which correlated with the reduction of pMEK1/2 and pERK1/2 detected by western blots (Figure 3B and quantified in Figure 3C). This shows that the RAS BRET2 biosensors can be used to couple PPI effects and signaling effects.\n\nWe conducted parallel BRET2 dose response experiments with the 3344, compound compared to Abd-2, implementing EGF stimulation and using the KRASWT/CRAFFL biosensor with short and long incubation times (3 hr and 20 hr, respectively). Compound 3344 inhibits this interaction in a dose-response manner (Figure 3D and Figure 3\u2014figure supplement 1D) and prevents the phosphorylation of MEK1/2 and ERK1/2 kinases (Figure 3E, quantified in Figure 3F and Figure 3\u2014figure supplement 1E\u2013F). Protein levels per se were not affected by the BRET2 transfectants by either the iDAb expression (Figure 3\u2014figure supplement 1B) or Abd-2 or 3344 treatments (Figure 3\u2014figure supplement 1C,G). In conclusion, use of the 3344 with the BRET2 RAS biosensors confirms this compound is a pan-KRAS-effector PPI inhibitor.\n\n## 3344 inhibits the RAS-PI3K-AKT signaling pathway\n\nWe have also explored the second best-characterized RAS effector family, the RAS-PI3K\u03b1-AKT pathway (Castellano and Downward, 2011) by establishing a KRASG12D/full-length PI3K\u03b1 (herein PI3K\u03b1FL) biosensor. In this case, we required a tripartite system as we observed that co-expression of the p85\u03b1 regulatory subunit with PI3K\u03b1FL-GFP2 was required to obtain detectable, specific and optimized BRET signal from interaction of KRASG12D and PI3K\u03b1FL (Figure 4\u2014figure supplement 1A). KRASS17N mutant showed no specific interaction with PI3K\u03b1FL further confirming the accuracy of this biosensor (Figure 4\u2014figure supplement 1A). We validated the BRET biosensor by showing that the iDAb RAS impaired that interaction in a dose-dependent manner, whereas the iDAb control did not (Figure 4A). Western blot analysis showed some reduction in PI3K and RAS proteins, specifically concordant with expression of the iDAb RAS (Figure 4\u2014figure supplement 1B) and there was also a dose response reduction of phosphorylation of the downstream biomarker AKT at Ser473 (Figure 4B and quantified in Figure 4C).\n\nImplementing the same biosensor assay treated with the compound 3344 for 3 or 20 hr, we confirmed this compound interferes with the KRASG12D/PI3K\u03b1FL interaction (Figure 4D\u2013F and Figure 4\u2014figure supplement 1D\u2013F) without loss of protein (Figure 4\u2014figure supplement 1C,G). Abd-2 has no effect on the phosphorylation of AKT that results from KRASG12D/PI3K\u03b1FL interaction. Conversely, 3344 does affect RAS-PI3K interaction and AKT phosphorylation. When increasing doses of either Abd-2 or 3344 were used in the BRET-transfected cells, we observed dose response reduction of BRET signal with 3344 but not Abd-2 (Figure 4D and Figure 4\u2014figure supplement 1D). Associated with this inhibition, was a reduction in the downstream biomarker AKT Ser473 phosphorylation (Figure 4E, quantified in Figure 4F and Figure 4\u2014figure supplement 1E\u2013F). 3344 inhibits RAS-PI3K\u03b1 PPI and thus signaling through AKT.\n\n## The BRET2 biosensor toolbox includes NRAS and HRAS and shows 3344 inhibits PPI of the RAS family\n\nThe KRAS, NRAS and HRAS family members are conserved proteins that have an almost identical amino-acid domain (G domain) from residues 1\u2013166 but a C-terminal hypervariable domain (Wennerberg et al., 2005). We have extended the RAS biosensor toolbox to include NRAS and HRAS. We used full-length NRASQ61H and HRASG12V mutants to build these new RAS biosensors for use with the various effector RBDs. These mutants were used at the positions Q61 and G12, for NRAS and HRAS respectively, as these are the positions most frequently mutated in human cancer involving NRAS and HRAS mutants (Cox et al., 2014). Titration of the RAS donor and CRAFFL acceptor proteins show that the RLuc8-NRASQ61H and RLuc8-HRASG12V proteins interact and reach plateau BRET signals with GFP2-CRAFFL (Figure 5\u2014figure supplement 1A). Furthermore, the BRET2 signal is diminished by increasing levels of the iDAb RAS but not the iDAb control (Figure 5\u2014figure supplement 1B\u2013D) as expected from the analysis of the effects of the anti-RAS intracellular antibody (Tanaka and Rabbitts, 2010; Tanaka et al., 2007).\n\nWe further evaluated the efficacy of the RAS-binding compounds Abd-2 and 3344 in binding to NRAS and HRAS using a BRET assay in which the RAS protein donors were co-expressed with either PI3K, CRAF or RALGDS acceptors (Figure 5A\u2013D). While the low-affinity Abd-2 compound does not interfere with the BRET signal in any of the NRAS and HRAS BRET assays using either effector RBDs (Figure 5A,B) or full-length CRAF (Figure 5C,D), the compound 3344 disturbs the BRET2 signal in a\u00a0dose-response manner in all these RAS interactions (Figure 5 and Figure 5\u2014figure supplement 1E,F). Therefore, the BRET-based RAS biosensors characterization of 3344 shows this compound as a pan-RAS-effector interactions inhibitor that binds KRAS, NRAS and HRAS.\n\n## Compound 3344 binds to a pocket close to the switch regions of mutant KRAS\n\nThe implementation of our RAS BRET2 toolbox showed that the compound 3344 is able to bind the transfected RAS protein products at the plasma membrane and interfere with their effector interaction. In addition, the downstream signaling was impeded. The mechanism of the interaction inhibition was corroborated by X-ray crystallography of KRASQ61H soaked with compound 3344. Figure 6A shows that 3344 binds to KRAS in a previously identified pocket (Maurer et al., 2012; Sun et al., 2012) close to the switch regions where the effectors interact with RAS (Table 1 has the refinement statistics for the X-ray data). The superimposition of the structures of three RAS-effector protein complexes with the structure of KRAS-3344 complex shows that parts of 3344 would overlap with the bound effector structures, suggesting that the competition effect of 3344 can be explained by straightforward steric hindrance (Figure 6B). We further confirmed that 3344 could interfere with the endogenous RAS-effector PPI in two human cancer cell lines (viz. colorectal adenocarcinoma DLD-1 cells expressing KRASG13D and non-small cell lung carcinoma H358 cells expressing KRASG12C). The cells were serum starved 24 hr and stimulated 10 min with EGF in the presence of increasing amounts of 3344, followed by western blot protein analysis to detect phosphorylated AKT Ser473 or phosphorylated ERK (Figure 6C,D). 3344 decreases EGF-induced pAKT and pERK1/2 abundance in both cell types with an observed IC50 of\u00a0~5\u201310 \u03bcM without any change in the total levels of AKT or ERK1/2. Therefore, 3344 can interfere with endogenous RAS signaling in human cancer cell lines. As our BRET2 results show direct interference of RAS-effector PPI by 3344, we conclude that this is the mechanism of inhibition of the biomarkers in the tumor cell assay.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37122/elife-37122-fig6-v2.jpg)\n\n**Figure 6.:** The interaction of mutant KRAS with compound 3344 was analyzed by X-ray crystallography. (A) KRASQ61H crystals were soaked with 3344 compound and crystal structures obtained from X-ray diffraction. The compound is shown binding in the hydrophobic pocket near switch I (shown in red) and switch II (shown in blue). The electron density map of the compound (2Fo-Fc) is shown as green mesh, and contoured at 1.0 rms. (B) We have modeled the potential interactions that could prevent 3344 and a RAS effector binding simultaneously to the same RAS molecule by overlaying our structure of the KRAS-3344 complex onto the published structures of top panel: HRAS-CRAF RBD (PDB 4G3X), middle panel: HRAS-RALGDS RA (PDB 1LFD), bottom panel: HRAS-PI3K\u03b3 RBD (PDB 1HE8). (C, D) Two human mutant KRAS expressing lines (C: DLD-1 and D: H358) were serum-starved for 24 hr and treated 3 hr with different concentrations of 3344 (2, 5, 10 and 20 \u03bcM) before stimulation with EGF (50 ng/mL) for 10 min. Cells were harvested, proteins extracted and separated by SDS-PAGE for western blot analysis. Western membranes were treated with anti-pAKT S473; anti-pan AKT; anti-pERK1/2 and anti-ERK1/2 as indicated. Statistical analyses of pERK/ERK and pAKT/AKT quantifications were performed using a one-way ANOVA followed by Dunnett\u2019s post-tests (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). Where error bars are presented, they correspond to mean values\u00a0\u00b1\u00a0SEM of biological repeats (C\u2013D). Each experiment was performed twice (C\u2013D).\n\n## Discussion\n\nBRET-based biosensors have been successfully used to discover and characterize small molecules inhibitors (Beautrait et al., 2017; Corbel et al., 2011; Lavoie et al., 2013; Mazars and F\u00e5hraeus, 2010; Robinson et al., 2014). The development of such biosensors involves the optimization of multiple parameters such as the fusion position of the RLuc8 and GFP2 moieties on their respective protein N- or C-terminus and the determination of the appropriate quantity of donor and acceptor plasmids for intracellular expression. Notably, the latest parameter has to be optimized in order to avoid the titration of active compounds if transient protein expression is used (Couturier and Deprez, 2012). In this study, we have engineered and optimized a complete set of RAS biosensors that includes several different mutant forms of KRAS and other family members (viz. mutant NRAS and HRAS). This toolbox allows the monitoring of RAS-effector interactions and the assessment of RAS PPI inhibition by a macrodrug (iDAb RAS) and 3344, a new anti-RAS small molecule derived from an intracellular antibody fragment, in living cells. Furthermore, when the full-length biosensors were used, we could couple the RAS PPI inhibition to the signaling effects, thereby providing additional insights into the behavior of RAS inhibitors.\n\nThe inhibition of RAS PPI by 3344 in cells was demonstrated by the RAS biosensors toolbox and validated by X-ray crystallography. 3344 binds to a hydrophobic pocket near to the effector-binding switch regions of RAS (Figure 6). Whereas 3344 does not make direct contact with the switch regions, the BRET data show that the binding geometry and potency of 3344 is sufficient to interfere with the interaction of RAS-effector molecules that bind close to the 3344 site.\n\nWhile the RAS biosensors rely on transfection and expression of RAS with one of its partner proteins rather than observations of endogenous proteins, it nevertheless offers several advantages for the study of RAS-effector interactions inhibition. It provides a direct and quantitative measurement of the PPI interference with inhibitors (i.e. small molecules or macrodrugs), which could allow the comparison of different compounds (e.g. for structure-activity-relationship studies) or macrodrugs and therefore the selection of more potent inhibitors. It is also sensitive and consequently requires a small quantity of cells to study the inhibition of the interaction. Nonetheless, 3344 prevents endogenous RAS-dependent signaling in two different human tumor cell lines at a lower concentration (IC50 around 5 \u03bcM) (Figure 6C,D) than in the BRET assay with observed IC50 around 20 \u03bcM. This difference probably reflects the expression levels of the target proteins in the two assays, where the BRET2 assay relies on transient transfection. Indeed, the overexpression in HEK293T cells probably produces higher amount of mutant RAS/effector proteins than the endogenous counterparts in cancer cells. Therefore, it might be more difficult to quantitatively inhibit the exogenous RAS/effector interaction than the endogenous one with 3344 compound. Generating stable BRET2 cell lines could minimize this difference.\n\nAnother advantage of this toolbox has been shown by using the iDAb RAS as an acceptor within the RAS biosensors allowing a recapitulation of the published features of this intracellular single domain antibody. Therefore, the biosensors are also important tools to study RAS protein interactions in living cells and their effect on the RAS downstream pathways before being tested in cancer cell lines. RAS biosensors use should not be limited to the discovery and characterization of RAS inhibitors. Indeed, studies suggested that isoform and residue- or codon-specific RAS mutants show differences in their ability to engage effectors and signaling properties (Hunter et al., 2015; Nakhaeizadeh et al., 2016; Yan et al., 1998). Accordingly, RAS biosensors could also be a methodology to decipher RAS isoform/mutant properties in cells. Our toolbox is an available resource for RAS-drug development programmes, and more generally for the RAS community, since our results demonstrate the possibility of using these RAS biosensors as a generic method to characterize cell-potent RAS-binding compounds or RAS-binding macrodrugs.\n\nThe BRET2 biosensor system could also be used for direct screens of PPI inhibitors with libraries of compounds. However, because initial compounds from a library are not expected to have high affinity for their target, relatively weak interactions between donor and acceptors should be involved in the generation of BRET2 signal. This provides a further use of intracellular domain antibodies where reduction of affinity (dematuration) from a tool initially used for target validation, can be achieved to make a screening tool. Thus, the method is an approach that is transferable to other PPI situations required for drug development programmes in cancer or any other clinical indication.\n\n## Materials\u00a0and\u00a0methods\n\n## Cell culture\n\nHEK293T human embryonic kidney cells, DLD-1 cells and H358 cells were grown in DMEM medium (Life Technologies) supplemented with 10% FBS (Sigma) and 1% Penicillin/Streptomycin (Life Technologies). Cells were grown at 37\u00b0C with 5% CO2 and were tested using a MycoAlert Mycoplasma Detection Kit (Lonza) and found to be mycoplasma-free before use.\n\n## Mutation detection of RAS mutations using RT-PCR\n\nRNA was extracted from 5 \u00d7 106 DLD-1 or H358 cells using the RNeasy Plus Mini Kit (Qiagen) according to the manufacturer\u2019s instructions. cDNA was synthesized from 1.5 to 2 \u03bcg RNA using SuperScript II Reverse Transcriptase (Invitrogen). Primers were designed to amplify KRAS DNA and incorporate HindIII and BamHI restriction sites for subcloning:\n\n5\u2019- TAAGCAAAGCTTATGACTGAATATAAACTTGTGGTAG-3\u2019 and\n\n3\u2019-GAAAATTAAAAAATGCATTATAATGTAAGGATCCTAAGCA-5\u2019\n\nDNA was amplified using Phusion High-Fidelity DNA Polymerase (New England Biolabs) and, following digestion with HindIII and BamHI, the DNA was cloned into pBlueScript II SK (+) (Stratagene). Plasmid DNA was prepared from indivudial DH5\u03b1 transformants using a QIAprep Spin Miniprep Kit (QIAGEN). KRAS mutations were verified by Sanger sequencing (Source Bioscience) of at least six clones from each cell line. The KRAS mutations in the two human cancer cell lines were confirmed as KRASG13D in DLD-1 and KRASG12C in H358.\n\n## Cell treatment\n\nFor dose response experiments (BRET and western blot), drugs were prepared in 100% DMSO at 10 mM. Cells were treated with Abd-2 or 3344 compounds at concentration of 5, 10 or 20 \u03bcM for 3 hr (short-term incubation) or 20 hr (long-term incubation). The compounds were diluted in the BRET medium: OptiMEM no phenol red (Life Technologies) supplemented with 4% FBS and with a final concentration of 0.2% DMSO.\n\nFor serum starvation studies with the BRET assay, cells were grown 24 hr in the presence of OptiMEM no phenol red supplemented with 1% FBS and stimulated with 50 ng/mL EGF (Life Technologies) for 5 min at 37\u00b0C. For serum-starvation studies of cancer cell lines, cells were grown 24 hr in the presence of DMEM without FBS and stimulated 10 min with 50 ng/mL EGF. The compound was incubated for 3 hr before the EGF stimulation at 2, 5, 10 and 20 \u03bcM.\n\n## Molecular cloning\n\n## Generation of pEF-RLuc8 and pEF-GFP2 plasmids\n\nRLuc8 and GFP2 cDNA was amplified by PCR from pRLuc8-N3 and pGFP2-N3 vectors respectively (Felce et al., 2017). RLuc8 was cloned into the pEF-myc-cyto vector (Invitrogen) between BspHI/XhoI sites to produce a pEF-RLuc8-MCS plasmid or between NotI/XbaI sites to produce a pEF-MCS-RLuc8 plasmid. GFP2 was inserted into the pEF-myc-cyto vector between NcoI/XhoI sites to produce the pEF-GFP2-MCS plasmid or between NotI/XbaI to produce the pEF-MCS-GFP2 plasmid. A (GGGS)n linker was introduced between XhoI/NotI of all the RLuc8 and GFP2 plasmids.\n\n## Generation of KRAS mutants and BRET donor plasmids\n\nThe generation of the mutant and wild-type KRAS was PCR site-directed mutagenesis using pPGK-KRASG12D-CAAX-P2A-Puro as a template (a gift from Jennifer Chambers). The following full-length KRAS mutants have been produced: KRASG12A, KRASG12C, KRASG12D, KRASG12V, KRASG12R, KRASS17N and KRASWT, all with carboxy terminal CAAX. All RAS cDNAs (KRAS mutants, KRASWT, NRASQ61H and HRASG12V-CAAX) were cloned between NotI/XbaI of the pEF-RLuc8-MCS plasmid.\n\nLMO2 was amplified by PCR and cloned between NcoI/XhoI sites of the pEF-MCS-RLuc8 plasmid.\n\n## Generation of effectors/iDAb BRET plasmids\n\nCRAF RBD (1-149), PI3K\u03b1 RBD (161-315), full-length PI3K\u03b1 (a gift from Roger Williams and Olga Perisic), PI3K\u03b3 RBD (190-315), RALGDS RA (788-884), iDAb RAS, iDAbdm RAS and iDAb LMO2 (iDAb control) were amplified by PCR and cloned between NcoI/XhoI sites of the pEF-MCS-GFP2 plasmid. The full-length CRAFS257L was cloned between NotI/XbaI sites of pEF-GFP2-MCS as well as the iDAbdm LMO2.\n\nAll RAS and effectors are human sequences except RALGDS RA (mouse).\n\nAll the RAS BRET constructs DNA and protein sequences have been listed in the supplementary file 1.\n\n## BRET2 titration curves and competition assays\n\nThe BRET experiment protocols have been adapted from previous studies (Lavoie et al., 2013; Pfleger et al., 2006). For all BRET experiments (titration curves and competition assays) 650,000 HEK293T were seeded in each well of a six well plates. After 24 hr at 37\u00b0C, cells were transfected with a total of 1.6 \u03bcg of DNA mix, containing the donor\u00a0+ acceptor \u00b1 competitor plasmids, using Lipofectamine 2000 transfection reagent (Thermo-Fisher). Cells were detached 24 hr later, washed with PBS and seeded in a white 96 well plate (clear bottom, PerkinElmer) in OptiMEM no phenol red medium complemented with 4% FBS. Cells were incubated for an additional 20\u201324 hr at 37\u00b0C before the BRET assay reading.\n\n## BRET2 measurements\n\nBRET2 signal was determined immediately after addition of coelenterazine 400a substrate (10 \u03bcM final) to cells (Cayman Chemicals), using an Envision instrument (2103 Multilabel Reader, PerkinElmer) with the BRET2 Dual Emission optical module (515 nm \u2013 30 nm and 410 nm \u2013 80 nm; PerkinElmer). Total GFP2 fluorescence was detected with excitation and emission peaks set at 405 nm and 515 nm, respectively. Total RLuc8 luminescence was measured with the Luminescence 400\u2013700 nm-wavelength filter.\n\nThe BRET signal or BRET ratio corresponds to the light emitted by the GFP2 acceptor constructs (515 nm \u2013 30 nm) upon addition of coelenterazine 400a divided by the light emitted by the RLuc8 donor constructs (410 nm \u2013 80 nm). The background signal is subtracted from that BRET ratio using the donor-only negative control where only the RLuc8 plasmid is transfected into the cells. The normalized BRET ratio is the BRET ratio normalized to a negative control (DMSO, no competitor or iDAb control) during a competition assay. Total GFP2 and RLuc8 signals were used to control the protein expression from each plasmid.\n\n## Western blot analysis\n\nCells were washed once with PBS and lysed in SDS-Tris buffer (1% SDS, 10 mM Tris-HCl pH 7.4) supplemented with protease inhibitors (Sigma) and phosphatase inhibitors (Thermo-Fisher). Cell lysates were sonicated with a Branson Sonifier and the protein concentrations determined by using the Pierce BCA protein assay kit (Thermo-Fisher). Equal amounts of protein (10 \u03bcg) were resolved on 10 or 15% SDS-PAGE and subsequently transferred onto a PVDF membrane (GE). The membrane was blocked either with 10% non-fat milk (Sigma) or 10% BSA (Sigma) in TBS-0.1% Tween20 and incubated overnight with primary antibody at 4\u00b0C. After washing the membrane was incubated with HRP conjugated secondary antibody for 1 hr at room temperature (RT, 25\u00b0C). The membrane was washed with TBS-0.1% Tween and developed using Pierce ECL Western Blotting Substrate (Thermo-Fisher) and CL-XPosure films (Thermo-Fisher). Primary antibodies include anti-phospho-p44/22 MAPK (ERK1/2) (CST), anti-p44/42 MAPK (total ERK1/2) (CST), anti-phospho-MEK1/2 (CST), anti-MEK1/2 (CST), anti-phospho-AKT S473 (CST), anti-AKT (CST), anti-pan-RAS (Millipore), anti-GFP (Santa Cruz Biotechnologies), anti-\u03b2-actin (Sigma). Secondary antibodies include anti-CMYC HRP-linked (Novus Biologicals), anti-mouse IgG HRP-linked (CST) and anti-rabbit IgG HRP-linked (CST).\n\n## WaterLOGSY NMR\n\nThe waterLOGSY NMR method (Dalvit et al., 2001) was used to measure RAS ligand interaction (Huang et al., 2017). WaterLOGSY experiments were conducted at a 1H frequency of 600 MHz using a Bruker Avance spectrometer equipped with a BBI probe. All experiments were conducted at RT, 25\u00b0C. 3 mm diameter NMR tubes with a sample volume of 200 \u03bcL in all experiments. Solutions were buffered using an H2O PBS buffer corrected to pH 7.4. The sample preparation is exemplified as follows; the compound (10 \u03bcL of a 10 mM solution in DMSO-d6) was added to an Eppendorf tube before sequential addition of the H2O PBS buffer (163.6 \u03bcL), D2O (20 \u03bcL), and protein (6.4 \u03bcL, 311.8 \u03bcM). The resulting solution was vortexed to mix and transferred to a 3 mm NMR tube prior to the NMR analysis.\n\nFor competition experiments using anti-RAS scFv, protein preparation for NMR was carried out in a similar manner; the compound (10 \u03bcL of a 10 nM solution in DMSO-d6) was added to an Eppendorf tube before sequential addition of the H2O PBS buffer (146.4 \u03bcL), D2O (20 \u03bcL), protein (6.4 \u03bcL, 311.8 \u03bcM) and anti-RAS scFv (17.2 \u03bcL, 116.6 \u03bcM). The resulting solution was vortexed to mix and transferred to a 3 mm NMR tube prior to the NMR analysis.\n\nNegative controls (compound alone) were prepared in a similar manner, in order to obtain an end volume of 200 \u03bcL.\n\n## Chemical synthesis procedures\n\nAll reactions involving moisture-sensitive reagents were carried out under a nitrogen atmosphere using standard vacuum line techniques and glassware that was flame-dried before use. Anhydrous solvents were prepared following the procedure outlined (Pangborn et al., 1996). Water was purified by an Elix UV-10 system. All other solvents and reagents were used as supplied (analytical or HPLC grade) without prior purification. Brine refers to a sat. aq. solution of NaCl. In vacuo refers to the removal of solvent by the use of a rotary evaporator attached to a diaphragm pump.\n\nThin layer chromatography was performed on normal phase Merck silical gel 60 F254 aluminum-supported thin layer chromatography sheets. Visualization of spots was either by absorption of ultra violet light (\u03bbmax 254 nm), or by thermal development after staining with 1% aq. KMnO4. Flash column chromatography was performed on Kieselgel 60 silica in a glass column, under a positive pressure.\n\nNMR spectra were recorded on Bruker Avance spectrometer (AVIII 600) in the deuterated solvent stated. The field was locked by external referencing to the relevant deuteron resonance. Chemical shifts (\u03b4) are reported in parts per million (ppm). The multiplicity of each signal is indicated by: app. (apparent), s (singlet), br s (broad singlet), d (doublet), t (triplet), q (quartet), dd (doublet of doublets) or m (multiplet). Coupling constants (J) are quoted in Hz and are reported to the nearest 0.1 Hz.\n\nLow-resolution mass spectra were recorded on an Agilent 6120 spectrometer operating in positive or negative mode, from solutions of MeOH. Accurate mass measurements were run on either a Bruker MicroTOF internally calibrated with polyalanine, or a Micromass GCT instrument fitted with a Scientific Glass Instruments BPX5 column (15 m x 0.25 mm) using amyl acetate as a lock mass, by the mass spectrometry department of the Chemistry Research Laboratory, University of Oxford, UK. m/z values are reported in Daltons.\n\n## 5-bromo-2,3-dihydrobenzo[b][1,4]dioxine (3)\n\n![Chemical structure 1.](https://cdn.elifesciences.org/articles/37122/elife-37122-fig7-v2.jpg)\n\nA solution of 2-bromo-6-methoxyphenol 1 (2.50 g, 12.3 mmol) in CH2Cl2 (80 mL) was cooled to \u221278\u00b0C before dropwise addition of BBr3 (1 M in heptane, 14.8 mL, 14.8 mmol). The resulting mixture was warmed to room temperature and stirred for 2 hr before being poured onto an ice/water (200 mL) and stirred for 30 min. The organic phase was separated, washed with water (100 mL) and brine (100 mL), dried (Na2SO4), filtered and concentrated in vacuo to give the desired 3-bromobenzene-1,2-diol two as a brown oil (2.24 g, 11.9 mmol, 97%), which was used in the next step without further purification.\n\nA solution of diol 2 (1.00 g, 5.35 mmol) in DMF (20 mL) was treated sequentially with K2CO3 (1.77 g, 12.8 mmol), and 1,2-dibromoethane (507 \u00b5L, 5.88 mmol) before being heated to 60\u00b0C for 18 hr. The reaction was then cooled down before addition of water and brine (1:1, 50 mL) and EtOAc (100 mL). The organic phase was washed further with water and brine (1:1, 4 \u00d7 50 mL), dried (Na2SO4), filtered and concentrated in vacuo to give the crude material as a brown oil. Purification on silica gel (pentane/EtOAc, 4:1) afforded the desired 5-bromo-2,3-dihydrobenzo[b][1,4]dioxine three as a clear oil (1.11 g, 5.19 mmol, 97%).\n\n## 5-(4-chloro-3-methoxyphenyl)\u22122,3-dihydrobenzo[b][1,4]dioxine (4)\n\n![Chemical structure 2.](https://cdn.elifesciences.org/articles/37122/elife-37122-fig8-v2.jpg)\n\nBromide 3 (600 mg, 2.79 mmol) was added to a vial before addition of 1,4-dioxane/water (5:1, 8 mL); the solution was degassed before sequential addition of K2CO3 (1.16 g, 8.37 mmol), 4-chloro-3-methoxyphenyl boronic acid (572 mg, 3.07 mmol), and Pd(dppf)Cl2 (100 mg, 0.140 mmol). The vial was sealed and the reaction heated to 100\u00b0C for 18 hr, cooled down and concentrated in vacuo. The residue was purified on silica gel (pentane/EtOAc, 9:1) to afford the desired 5-(4-chloro-3-methoxyphenyl)\u22122,3-dihydrobenzo[b][1,4]dioxine four as a clear oil (745 mg, 2.70 mmol, 97%). 1H NMR (600 MHz, CDCl3) \u03b4 7.39 (1H, d, J 8.1 Hz), 7.11 (1H, s), 7.08 (1H, dd, J 8.2, 1.7 Hz), 6.91\u20136.89 (3H, m), 4.31\u20134.28 (4 hr, m), 3.94 (3H, s); 13C NMR (150 MHz, CDCl3) \u03b4 154.5, 143.9, 140.6, 137.5, 130.0, 129.6, 122.6, 122.4, 121.4, 121.1, 117.0, 113.5, 64.4, 64.1, 56.2; m/z (ESI+) 277 ([M\u00a0+\u00a0H]+); HRMS (ESI+) [C15H14ClO3] requires 277.0631, found 277.0591.\n\n## 4-(2,3-dihydrobenzo[b][1,4]dioxin-5-yl)-N-(4-(dimethylamino)methyl)phenyl)\u22122-methoxyaniline (3344)\n\n![Chemical structure 3.](https://cdn.elifesciences.org/articles/37122/elife-37122-fig9-v2.jpg)\n\nChloride 4 (75 mg, 0.272 mmol), Cs2CO3 (266 mg, 0.866 mmol), 3-((dimethylamino)methyl)aniline (61 mg, 0.408 mmol), XPhos (13 mg, 0.027 mmol) and Pd(OAc)2 (3 mg, 0.014 mmol) were added sequentially to a vial and degassed with N2 for 5 min. Degassed 1,4-dioxane (2 mL) was then added, the vial sealed and heated to 100\u00b0C for 18 hr. The mixture was cooled down, diluted with EtOAc (30 mL), and washed with a 50/50 solution of water and brine (2 \u00d7 30 mL). The organic phase was dried (Na2SO4) and concentrated in vacuo. Purification by column chromatography on silica gel (CH2Cl2/MeOH, 9:1) afforded the desired 4-(2,3-dihydrobenzo[b][1,4]dioxin-5-yl)-N-(3-((dimethylamino)methyl)phenyl)\u22122-methoxyaniline 3344 as a yellow oil (102 mg, 96%).\n\n1H NMR (400 MHz, MeOD) \u03b4 7.26 (1H, d, J 8.3 Hz), 7.20 (1H, dd, J 7.6, 0.2 Hz) 7.12 (1H, d, J 2.0 Hz) 7.08\u20137.04 (2H, m), 7.00 (1H, dd, J 8.3, 2.0 Hz), 6.88 (1H, dd, J 7.6, 2 Hz), 6.83 (2H, J 7.8, 0.2 Hz), 6.78 (1H, dd, J 7.8, 2.0 Hz), 4.25\u20134.20 (4H, m), 3.87 (3H, s), 3.45 (2H, s), 2.27 (6H, s), NH was not observed; 13C NMR (125 MHz, CDCl3) \u03b4 150.2, 145.5, 145.3, 142.2, 139.4, 133.2, 132.4, 131.7, 130.3, 123.5, 123.0, 122.9, 122.0, 120.1, 118.3, 117.1, 116.7, 113.6, 65.8, 65.5, 65.1, 56.4, 45.3; m/z (ESI\u2012) 38 ([M\u2012H]\u2012); HRMS (ESI\u2012) [C24H25N2O3] requires 389.1865, found 389.1841.\n\n## 1H CPMG NMR experiments for compound Kd calculation\n\nTypical experimental parameters for Carr-Purcell-Meiboom-Gill (CPMG) NMR spectroscopy were the following: total echo time, 40 ms; relaxation delay, 2 s; and number of transients, 264 (Abboud et al., 2016). The PROJECT-CPMG sequence (90\u00b0x-[T\u2212180\u00b0y-T- 90\u00b0y-T\u2212180\u00b0y-T]n-acq) was applied. Water suppression was achieved by presaturation. Prior to Fourier transformation, the data were multiplied with an exponential function with 3 Hz line broadening. The CPMG experiments were conducted at a 1H frequency of 700 MHz using a Bruker Avance with 5 mm inverse TCI 1 hr/13C/15N cryoprobe. All experiments were conducted at RT and lapsed 128 scans. 3 mm diameter NMR tubes with a sample volume of 200 \u03bcL were used in all experiments. Solutions were buffered using a D2O PBS buffer corrected to pH 7.4. The sample preparation is exemplified as follows: for a 5 \u03bcM GST-KRASG12V sample: 55 \u03bcM of the 3344 compound (1.1 \u03bcL of a 10 mM solution in DMSO-d6) was added to an Eppendorf before sequential addition of the D2O PBS buffer (194.0 \u03bcL) and GST-KRASG12V (4.9 \u03bcL of a 205 \u03bcM solution, the protein is in an H2O buffer for stability reason). The resulting solution was vortexed to be fully mixed and transferred to a 3 mm NMR tube before the run. Negative controls (compound alone, without the KRAS protein) were prepared in a similar manner, in order to obtain an end volume of 200 \u03bcL.\n\nCPMG experiments were carried out at a fixed 3344 concentration (55 \u03bcM, optimal concentration for these CPMG NMR experiments) and a variable GST-KRASG12V concentration. The amount of GST-KRASG12V was increased from 0 \u03bcM until the signals of the compound completely disappear in the proton NMR at 20 \u03bcM. Seven measurements were done in total with 0 \u03bcM, 2.5 \u03bcM, 5 \u03bcM, 7.5 \u03bcM, 10 \u03bcM, 15 \u03bcM and 20 \u03bcM of GST-KRASG12V. The integrations of the protons acquired were all compared to the compound alone (with no KRAS) in order to obtain a percentage decrease for each concentration of KRAS. Three different proton signals were used and a mean was calculated for each run. KRAS concentration experiments were run in triplicate and a mean was also calculated for each concentration. Concentration and percentage of decrease were plotted and Kd fitting was run on the generated curve using Origin\u00a02017 software with the following function: A*(1/ (2*C))*((B\u00a0+\u00a0x\u00a0+\u00a0C)-sqrt(((B\u00a0+\u00a0x\u00a0+\u00a0C)^2)-(4*x*C))) where A is the maximum % of inhibition (i.e. 100), B is the Kd, C is the concentration of compound and x the concentration of KRAS protein necessary to reach 100% of signal reduction of the compound.\n\n## Recombinant protein expression for crystallography and NMR: KRASG12V, KRASQ61H and scFv\n\nKRASG12V cDNA was cloned into the pGEX vector in-frame with an N-terminal Glutathione-S transferase (GST) tag. pGEX-GST-KRASG12V was transformed into E.coli BL21 (DE3) cells. Bacterial cells were cultured at 37\u00b0C to an OD600 of 0.5 and induced with IPTG (isopropyl 1-thio-beta-D-galactopyranoside, final concentration 0.1 mM) at 16\u00b0C overnight. The bacteria cultures were harvested by centrifugation and the cell pellets re-suspended in 50 mM Tris-HCl pH8.0, 140 mM NaCl, 1 mM mercaptoethanol supplemented with complete protease inhibitor (Roche). The GST-fusion proteins were purified by glutathione-sepharose column chromatography (GE Healthcare) and eluted with 50 mM Tris-HCl pH8.0, 10 mM reduced glutathione, 1 mM mercaptoethanol, 5 mM MgCl2.\n\nKRASQ61H cDNA was cloned into the pRK-172 vector in-frame with an N-terminal 6xHis-tag and TEV protease recognition site. The plasmid containing KRASQ61H sequence was transformed into E. coli B834(DE3) pLysS cells, which were grown in 25 mL LB medium with 50 \u03bcg/mL Carbenicillin and 34 \u03bcg/mL Chloramphenicol for 16 hr, prior to inoculation of 1L LB medium. Protein expression was induced at OD600\u00a0=\u00a00.6 by addition of IPTG to a final concentration of 0.5 mM and cells grown overnight at 16\u00b0C. Bacteria were harvested by centrifugation and sonicated in 50 mM Tris-HCl, pH 7.5, 500 mM NaCl, 5 mM MgCl2 and 10 mM imidazole and EDTA-free protease inhibitor cocktail (Roche Diagnostics). Proteins were purified using nickel agarose beads (Invitrogen) and bound proteins were eluted batch-wise in 50 mM Tris-HCl, pH 7.5, 500 mM NaCl, 5 mM MgCl2 and 300 mM imidazole. RAS protein samples were concentrated using Vivapore 10/20 mL concentrator (7.5 kDa molecular weight cut-off; Sartorius Vivapore) to a final volume of approximately 1 mL. Nucleotide exchange for crystallographic samples was carried out following published procedures (Herrmann et al., 1996). RAS proteins were further purified by gel filtration on a HiLoad Superdex 75 10/300 GL column (GE Healthcare) in a buffer containing 20 mM HEPES pH 8.0, 150 mM NaCl, 5 mM MgCl2 and 1 mM DTT at a flow rate of 0.5 mL/min. Fractions corresponding to the protein were pooled and concentrated to 45\u201375 mg/mL for crystallization trials. Protein concentration was determined by extinction coefficient (\u03b5280 = 12045 L/mol/cm). Protein purity was analyzed by SDS-PAGE stained with Coomassie Brilliant Blue. scFv recombinant protein was expressed and purified as described elsewhere (Tanaka et al., 2007).\n\n## Crystal structure and 3344 soaking\n\nFor X-ray diffraction experiments, KRASQ61H-GppNHp crystals were grown by vapour diffusion at 4\u00b0C by mixing 1.5\u00a0+\u00a01.5 volumes of KRAS solution at a concentration of 75 mg/mL KRASQ61H, with 8\u201315% w/v Polyethylene Glycol 3350 and 0.2 M lithium citrate pH 5.5. The resulting crystals are termed crystal form I hereafter. Prior to X-ray data collection, crystals were cryo-protected by addition of 20% glycerol to the crystallization buffer and flash-cooled in liquid nitrogen. 3344 was initially dissolved at 200 mM in 100% DMSO and sequentially mixed in a ratio of 1:1 with crystallization buffer (8\u201315% w/v Polyethylene Glycol 3350, 0.2 M lithium citrate 7.0 and 20 mM Tris-HCl pH 7.0) to give a final concentration of compound of 50 mM and 25% DMSO in a 5 \u03bcL drop. Soaked crystals were flash-cooled in liquid nitrogen prior to data collection using the final DMSO concentration on the soaking drop as cryo-protectant. X-ray diffraction data were collected at beamline ID30A-1 (Bowler et al., 2015; Bowler et al., 2016; Nurizzo et al., 2016; Svensson et al., 2015) at The European Synchrotron Radiation Facility (ESRF, Grenoble, France). The structure of KRASQ61H GppNHp-3344 was solved by molecular replacement using a KRAS169Q61H GPPNHP-Abd-2, (PDB ID 5OCO) as a search model within the program Phaser (McCoy, 2007; McCoy et al., 2007). Structures were manually adjusted using COOT (Emsley et al., 2010) and refined using REFMAC (Murshudov et al., 1997). Crystal Form I (KRASQ61H) has six KRAS molecules in the asymmetric unit, assembled as a hexamer. Electron density maps averaged with six-fold non-crystallographic symmetry (NCS) were used to improve the definition of the bound compounds. Refinements were also performed with the six fold NCS applied. The refined models were validated using PROCHECK (Laskowski et al., 1993a), MolProbity (Chen et al., 2010) and Phenix software packages (Adams et al., 2010; Laskowski et al., 1993b). Figures were created using PyMOL (Schrodinger). Data collection and refinement statistics are summarized in Table 1.\n\n## Quantification and statistical analysis\n\nAll quantifications were performed using ImageJ or Prism 7.0 c (GraphPad Software), BRET titration curves and statistical analysis were performed using Prism 7.0 c (GraphPad Software). Data are typically presented as mean\u00a0\u00b1\u00a0SD or SEM as specified in the figure legends. Statistical analyses were performed with a one-way ANOVA followed by Dunnett\u2019s post-hoc tests or Sidak\u2019s post-hoc tests unless otherwise indicated in the figure legends. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n## Data and software availability\n\nStructure files and coordinates have been deposited to PDB under this accession number: 6F76.\n",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roger J Davis, University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37122.025](https://doi.org/10.7554/eLife.37122.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"BRET-based RAS biosensors that show a novel small molecule is an inhibitor of RAS-effector protein-protein interactions\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Roger Davis as the Reviewing Editor, and the evaluation has been overseen Philip Cole as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: David Lambright (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a resource paper that describes the design, construction, and use of a series of BRET-based RAS biosensors that can be used to characterize inhibitors of RAS-effector protein-protein interactions. This approach will be of great interest to the cancer research community. The high quality data presented support the conclusions of the study. However, there are a number of points that require clarification.\n\nEssential revisions:\n\n1) The Kd identified for the 3344 compound binding to KRAS is not completely clear. The titration study (Figure 1\u2014figure supplement 2D) is interpreted to show an approximate Kd of 126nM, but the x-axis shows that the lowest concentration of 3344 studied is 2.5\u00b5M, which is many-fold above the estimated Kd and would presumably saturate the interaction. The interpretation of this study is therefore unclear. Moreover, while the x-axis is labeled as the concentration of 3344, the figure legend suggests that the x-axis refers to GST-KRAS. Please explain. The authors should consider the use of an alternative biophysical technique to confirm the Kd.\n\n2) These types of probes are usually subject to multiple rounds of optimization. However, no information is provided concerning the optimization procedures that were employed. The absence of this information means that it is unclear whether the BRET probes described can be further optimized.\n\n3) The DNA constructs are described in outline form. As a resource paper, it would be very helpful to the reader if more information could be provided. For example, supplementary files showing full sequence information should be included.\n\n4) No information is provided concerning how the small molecule 3344 was designed/identified.\n\n5) The structure of the control small molecule Abd-2 is not presented. Why was this molecule chosen rather than any other control molecule? How was this molecule obtained?\n\n6) The amount of bleed-through between the two channels should be characterized, and corrections for this bleed-through should be included in the calculations. RAS-RLuc8 alone and GFP alone should be used to characterize such bleed-through.\n\n7) The authors should comment on and address the amount of autoluminescence and autofluorescence from untransfected cells.\n\n8) Long incubation times (20h) are employed in the inhibitor studies of Ras signaling (e.g. Figures 3 and 4). This is a potential problem for studies to dissect signaling mechanisms because the inhibitor may act on signaling pathways indirectly by altering autocrine pathways (e.g. by blocking cytokine expression) that cause secondary activation of the ERK and AKT pathways. Short-term inhibition assays would prevent this caveat on the interpretation of these data.\n\n9) Figure 6B is simply an enlargement that does not provide additional information beyond what is obvious in Figure 6A. This panel should be replaced by a panel illustrating how the compound interferes with effector binding \u2013 this would support conclusions concerning the mechanism of inhibition.\n\n10) Although 3344 does not interact with the switch regions in the crystal structure, it would be helpful to clarify whether there are any changes (or not) in the conformation or b-factors in the switch regions compared with the un-soaked crystal structure.\n",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2627e7f8-d12f-4bb6-83a0-3de576c634db",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C1",
+      "claim": "RAS family proteins are amongst the most highly mutated in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAS family of proteins is amongst the most highly mutated in human cancers and has so far eluded drug therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature (Downward, 2003; Prior et al., 2012) and reference to the COSMIC database.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "3c9a40da-106b-4915-a281-3c763b39c0ae",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C2",
+      "claim": "RAS has so far eluded drug therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAS family of proteins is amongst the most highly mutated in human cancers and has so far eluded drug therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and the statement that there are still no RAS-targeted drugs currently available in the clinic.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "82e43969-3032-4176-b31c-af443768ffb6",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C3",
+      "claim": "BRET-based RAS biosensors enable monitoring of RAS-effector interaction inhibition in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have developed a robust set of bioluminescence resonance energy transfer (BRET)-based RAS biosensors that enable monitoring of RAS-effector interaction inhibition in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing BRET signal changes in transfected cells with various RAS-effector combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "5c3485b3-bff7-46a8-9525-a65a9cdbf1c8",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C4",
+      "claim": "The RAS biosensors include KRAS, HRAS and NRAS with various mutations that mirror those found in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These include KRAS, HRAS and NRAS and a variety of different mutations that mirror those found in human cancers with the major RAS effectors such as CRAF, PI3K and RALGDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing biosensors for multiple RAS isoforms and mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "28ed45b9-5815-42c0-bc77-09c4b4c16b6b",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C5",
+      "claim": "A RAS-binding compound (3344) is a potent pan-RAS-effector interactions inhibitor in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We highlighted the utility of these RAS biosensors by showing a RAS-binding compound is a potent pan-RAS-effector interactions inhibitor in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BRET assay data showing dose-dependent inhibition across multiple RAS-effector pairs and X-ray crystallography showing binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "5578757d-1095-40d8-bf6a-f77d68db43c6",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C6",
+      "claim": "Mutation in RAS proteins can be found in approximately 30% of all human tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation in RAS proteins can be found in approximately 30% of all human tumors (Downward, 2003; Prior et al., 2012) (http://cancer.sanger.ac.uk/cosmic)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature and reference to the COSMIC database.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "9d7256aa-bc90-4323-a959-5ee870a94f7d",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C7",
+      "claim": "There are still no RAS-targeted drugs currently available in the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are still no RAS-targeted drugs currently available in the clinic even though such molecules could prove widely efficacious in many human cancers as front-line drugs for therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of the current state of RAS drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "cd3a5acb-3435-4940-984f-642e37820aa3",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C8",
+      "claim": "Pancreatic cancer contains a high proportion of KRAS mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some forms of cancer, like pancreatic cancer, present late and are difficult therefore to treat (Kleeff et al., 2016) but these contain a high proportion of KRAS mutations and are thus potentially susceptible to RAS-binding drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "41c25927-609d-40ac-a8d0-df7c4f86c594",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C9",
+      "claim": "RAS has been regarded as undruggable partly because attempts to interfere with the protein have not been efficacious.",
+      "claim_type": "EXPLICIT",
+      "source": "RAS has been regarded as undruggable partly because so far attempts to interfere with the protein have not been efficacious (Cox et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "361dec96-f14d-4346-b27d-2c64c5b36f66",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C10",
+      "claim": "RAS is a membrane-bound small GTPase switching between an inactive GDP-bound state and an active GTP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "RAS is a membrane-bound small GTPase switching between an inactive GDP-bound state and an active GTP-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RAS protein biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "e44250d3-291e-4322-abcc-0b12ba0d660f",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C11",
+      "claim": "RAS signaling to the cell nucleus occurs after interaction of RAS-GTP with its effectors to trigger the activation of downstream signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "RAS signaling to the cell nucleus occurs after interaction of RAS-GTP with its effectors to trigger the activation of downstream signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RAS signaling mechanisms, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "94df953c-19ed-4dcd-a5d4-af4fca3adf2b",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C12",
+      "claim": "RAS activation promotes cell survival and cell proliferation via gene modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation thereby promotes cell survival and cell proliferation (Wennerberg et al., 2005) via gene modulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "16a5bebf-58cb-4fda-ad9e-f48c3b5e802e",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C13",
+      "claim": "Farnesylation inhibitors have limited success due to side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "methods such as implementing farnesylation inhibitors have limited success due to side effects (Berndt et al., 2011; James et al., 1995; Whyte et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "64cc70b7-ee50-468b-b018-0a8678a9568e",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C14",
+      "claim": "Intracellular antibodies that block effector interaction sites of RAS-GTP can prevent tumor growth in xenograft models and tumor initiation in a transgenic mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "This PPI inhibition can prevent tumor growth in xenograft models and tumor initiation in a transgenic mouse model (Tanaka and Rabbitts, 2010; Tanaka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "204d7ba5-2787-4c45-a7df-a2310862b456",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C15",
+      "claim": "RAS was regarded as a protein without any pockets suitable for small molecule interactions for many years.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for many years, RAS was regarded as a protein without any pockets suitable for small molecule interactions (McCormick, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "36f88946-093b-4b9b-8572-a81cb619af68",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C16",
+      "claim": "Recent studies have described compounds that are able to bind RAS-associated pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "but recent studies have described compounds that are able to bind RAS-associated pockets (Gentile et al., 2017; Lito et al., 2016; Maurer et al., 2012; Ostrem et al., 2013; Patricelli et al., 2016; Shima et al., 2013; Sun et al., 2012; Waldmann et al., 2004; Welsch et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "edf87026-b0cd-48b5-9ec0-3f9d20682f45",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C17",
+      "claim": "Most current RAS inhibitors have been selected and identified through in vitro techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the current RAS inhibitors have been selected and identified through in vitro techniques (Ostrem et al., 2013; Trinh et al., 2016; Upadhyaya et al., 2015; Welsch et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "8728e22c-3156-428b-a7ac-ac1f75f8d621",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C18",
+      "claim": "A robust cell-based assay is a mandatory step in any drug discovery programme.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a robust cell-based assay is a mandatory step in any drug discovery programme, as it provides insights into the behavior of compounds in physiological conditions, including cell permeability, stability and potency in the cellular complexity of a whole cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of drug discovery practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "48b5eb92-2d98-48db-8185-cbd03f1fa4db",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C19",
+      "claim": "RLuc8 was fused to the amino termini of full-length RAS family proteins and GFP2 fused to the C-termini of the effectors or iDAbs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, RLuc8 was fused to the amino termini of full-length RAS family proteins and the GFP2 (Ramsay et al., 2002) fused to the C-termini of the effectors (RALGDS, CRAF, PI3K) or of the iDAbs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the biosensor constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f55090e1-2d81-4a74-8fcd-32861e60bddd",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C20",
+      "claim": "A higher BRET signal was observed with a (GGGS)3 linker between RLuc8-KRASG12D construct and a (GGGS)3 linker between the CRAF RBD-GFP2 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "For our study, we observed a higher BRET signal with a (GGGS)3 linker between RLuc8-KRASG12D construct, a (GGGS)3 linker between the CRAF RBD-GFP2 molecule and a (GGGS)2 linker between iDAb RAS-GFP2 construct (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "8fa5ca7c-fdf5-498a-84ad-8db18d93dfbd",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C21",
+      "claim": "If an interaction occurs between RAS and a partner-GFP2 fusion, bringing the RLuc8 and GFP2 within 100 \u00c5, an energy transfer occurs from the RLuc8-RAS donor to the GFP2 acceptor and a BRET2 signal is achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "If an interaction occurs between RAS and a partner-GFP2 fusion, bringing the RLuc8 and GFP2 within 100 \u00c5, an energy transfer occurs from the RLuc8-RAS donor to the GFP2 acceptor and a BRET2 signal is achieved (Figure 1A, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the principle of BRET2 technology, which is established knowledge and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "a78b487c-20cd-4295-b90e-49a11c68920b",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C22",
+      "claim": "All of the effector domains were found to interact specifically with KRASG12D since the BRET signal reached a donor saturation level.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the effector domains were found to interact specifically with KRASG12D since the BRET signal reached a donor saturation level (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "e0aaa57f-15b9-4251-95a7-ef9af235ffea",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C23",
+      "claim": "All the transfected plasmids expressed the proteins at equivalent levels as indicated by western blot analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, all the transfected plasmids expressed the proteins at equivalent levels as indicated by western blot analysis (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f8216116-4eaa-49e1-8743-147d2b3e5ff7",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C24",
+      "claim": "The dominant negative mutant KRASS17N does not interact with the effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "To further characterize this BRET2 system, we used the dominant negative mutant KRASS17N, which does not interact with the effectors (Cool et al., 1999; Nassar et al., 2010; van den Berghe et al., 1997), as a donor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature and confirmed by experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "5b639683-2155-44c2-925d-2fe8aa214743",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C25",
+      "claim": "The BRET signal increased linearly with the concentration of acceptor for KRASS17N with all the RAS binding domains, which is typical of non-specific interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the BRET signal increased linearly with the concentration of acceptor for all the RAS binding domains. This result is typical of non-specific interactions (Mercier et al., 2002), confirming the S17N mutant does not interact with the effectors and supports the sensitivity of this system (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2B and citation to published literature on BRET interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "555e6f03-b19e-43f4-8f76-972843d38e66",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C26",
+      "claim": "iDAb RAS interacts with mutant KRAS on the switch regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially characterized the biosensor pairs with the iDAb RAS that is known to interact with mutant KRAS on the switch regions (Tanaka et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "74646bd4-59e0-44cc-9454-3eec3bf7ef26",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C27",
+      "claim": "Dematured iDAb RAS (iDAbdm RAS) has reduced affinity towards RAS-GTP from 6.2 nM to ~1 \u03bcM affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of mutations in the three CDRs of the iDAb RAS to generate a dematured iDAb RAS (iDAbdm RAS), was shown to reduce its affinity towards RAS-GTP from 6.2 nM to ~1 \u03bcM affinity (Assi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "285addc9-5c71-46a9-9fc4-2cdfebba0ec8",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C28",
+      "claim": "iDAbdm RAS significantly increased the BRET50 and significantly reduced the BRETmax compared to iDAb RAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it significantly increased the BRET50 (an approximation of the relative affinity of the acceptor fusion for the donor fusion proteins, corresponding to the acceptor/donor ratio necessary to reach 50% of the BRETmax) and significantly reduced the BRETmax (an approximation for the total number of complex RAS/iDAb and the distance between the donor and the acceptor within the dimer), which together are consistent with a decreased affinity of this mutant iDAb toward RAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "9a3cb32f-2891-4012-9013-87b36698c9c0",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C29",
+      "claim": "iDAb RAS, but not the control, drastically decreased the BRET ratio of all the KRASG12D-effector interactions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition showed that iDAb RAS, but not the control, drastically decreased the BRET ratio of all the interactions tested (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f77cebfc-7bf0-4aa1-a972-e93df744d282",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C30",
+      "claim": "Compound 3344 binds to KRASG12V with an affinity of 126 nM using 1H CPMG NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified compounds that bind to KRAS using in vitro screening and one compound 3344 (chemical structure and 1-D NMR characterization shown in Figure 1\u2014figure supplement 3A\u2013C) binds to KRASG12V with an affinity of 126 nM using 1H Carr-Purcell-Meiboom-Gill (CPMG) NMR (Baldwin and Kay, 2009) (data are shown in Figure 1\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR experimental data shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "fe88b4a4-f806-48fa-96f8-ccd36362b42a",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C31",
+      "claim": "In vitro competition studies show the anti-RAS scFv inhibits 3344 binding to KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro competition studies of 3344 binding to KRASG12V in waterLOGSY NMR show the anti-RAS scFv inhibits 3344 binding to KRAS (Figure 1\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by waterLOGSY NMR experimental data shown in Figure 1\u2014figure supplement 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "1dc28b88-380c-4599-be7e-ee5359badef1",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C32",
+      "claim": "Compound 3344 shows a dose response reduction in BRET signal for assays with KRASG12D and various effectors (PI3K\u03b1 RBD, PI3K\u03b3 RBD, CRAF RBD, RALGDS RA).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dose response reduction in BRET signal for the assays with compound 3344 but not with the Abd-2 indicating that only 3344 interferes with the RAS-effector PPI (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental BRET data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f6e9f779-30c5-412d-a044-91873817ab60",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C33",
+      "claim": "Abd-2 does not interfere with the RAS-effector PPI.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dose response reduction in BRET signal for the assays with compound 3344 but not with the Abd-2 indicating that only 3344 interferes with the RAS-effector PPI (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental BRET data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "d5c80692-defb-4804-89d0-70455d08ac60",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C34",
+      "claim": "3344 only interferes, in a dose response, with KRASG12D/iDAbdm RAS-induced BRET without affecting the expression of the biosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Abd-2 has no effect on any of these assays while 3344 only interferes, in a dose response, with KRASG12D/iDAbdm RAS-induced BRET without affecting the expression of the biosensors (Figure 1\u2014figure supplement 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3I and 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "bf784434-e070-450f-9751-cdf10fd4a15c",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C35",
+      "claim": "The CRAFS257L mutation increases ERK phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce this limitation, we developed an optimized RAS biosensor of the full-length CRAFS257L mutant (herein named CRAFFL) since the S257L mutation increases ERK phosphorylation (Razzaque et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "ab72d286-99b8-4339-9893-20b0468b403d",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C36",
+      "claim": "CRAFFL interacts with KRASG12D but not with KRASS17N.",
+      "claim_type": "EXPLICIT",
+      "source": "and because we found that CRAFFL interacts with KRASG12D but not with KRASS17N (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "d9783918-4de8-4ee8-a16d-bfee1a7ea73c",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C37",
+      "claim": "iDAb RAS impedes the BRET2 signal due to the binding of CRAFFL with KRASG12D in a dose response mode, whereas the iDAb control had no effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a competition assay with the iDAb RAS confirming that it impedes the BRET2 signal due to the binding of CRAFFL with KRASG12D, in a dose response mode, whereas the iDAb control had no effect (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "dff28a1c-dbc3-470c-ab94-f21e0b55ac18",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C38",
+      "claim": "iDAb RAS inhibition significantly decreased the phosphorylation of MEK1/2 and ERK1/2 kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, iDAb RAS inhibition significantly decreased the phosphorylation of MEK1/2 and ERK1/2 kinases (Figure 2B shows western blot data, quantitated in Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2B and quantified in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "55a89080-1cdd-4e1b-9bdc-bdff805ac1fb",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C39",
+      "claim": "Compound 3344 significantly decreases BRET signal with KRASG12D/CRAFFL biosensor in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the effect of Abd-2 and 3344 on the BRET pair and found a significant decrease in BRET signal with 3344 that occurred in a dose-dependent manner (Figure 2D and Figure 2\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "6ef6aee6-8196-44ae-bd87-19e76ebeed96",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C40",
+      "claim": "Compound 3344 significantly inhibited MEK1/2 and ERK1/2 phosphorylation whilst Abd-2 did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots using anti-pMEK and anti-pERK showed that 3344 also significantly inhibited MEK1/2 and ERK1/2 phosphorylation whilst Abd-2 did not (Figure 2E, quantified in Figure 2F and Figure 2\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2E and quantified in Figure 2F and Figure 2\u2014figure supplement 1E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "48254836-4ec9-4551-8728-5e5d7d29336e",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C41",
+      "claim": "Compound 3344 shows a dose response effect on KRASG12A, KRASG12C, KRASG12V and KRASG12R interaction with CRAFFL but Abd-2 does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the BRET2 signals from interaction of KRASG12A, KRASG12C, KRASG12V and KRASG12R with CRAFFL showed a dose response effect of compound 3344 but not Abd-2 (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "6778176e-28f7-42e7-adf3-e9861935c306",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C42",
+      "claim": "EGF treatment brings KRASWT and CRAFFL fusion proteins in a closer proximity and enhances the number of KRASWT/CRAFFL dimers because the BRETmax value increases from 4.02 to 10.01.",
+      "claim_type": "EXPLICIT",
+      "source": "EGF treatment brings KRASWT and CRAFFL fusion proteins in a closer proximity and enhances the number of KRASWT/CRAFFL dimers because the BRETmax value increases from 4.02 to 10.01 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "a185b1d4-64c0-48c7-9b89-ade1a814e4e3",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C43",
+      "claim": "A dose response inhibition of the BRET2 signal was observed with iDAb RAS, but not iDAb control, for KRASWT/CRAFFL interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "A dose response inhibition of the BRET2 signal was observed with iDAb RAS, but not iDAb control (Figure 3A), which correlated with the reduction of pMEK1/2 and pERK1/2 detected by western blots (Figure 3B and quantified in Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A, 3B, and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "aa53712a-cea2-40d1-a0fc-372c28dd5bd3",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C44",
+      "claim": "Compound 3344 inhibits KRASWT/CRAFFL interaction in a dose-response manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Compound 3344 inhibits this interaction in a dose-response manner (Figure 3D and Figure 3\u2014figure supplement 1D) and prevents the phosphorylation of MEK1/2 and ERK1/2 kinases (Figure 3E, quantified in Figure 3F and Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D, 3E, 3F and Figure 3\u2014figure supplement 1D, 1E, 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "3c62aa57-0a85-4ff6-acae-58f64c4e4df5",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C45",
+      "claim": "Co-expression of the p85\u03b1 regulatory subunit with PI3K\u03b1FL-GFP2 was required to obtain detectable, specific and optimized BRET signal from interaction of KRASG12D and PI3K\u03b1FL.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, we required a tripartite system as we observed that co-expression of the p85\u03b1 regulatory subunit with PI3K\u03b1FL-GFP2 was required to obtain detectable, specific and optimized BRET signal from interaction of KRASG12D and PI3K\u03b1FL (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "6c97ff90-52d1-4920-a0cf-c58a40aa7a5e",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C46",
+      "claim": "KRASS17N mutant showed no specific interaction with PI3K\u03b1FL.",
+      "claim_type": "EXPLICIT",
+      "source": "KRASS17N mutant showed no specific interaction with PI3K\u03b1FL further confirming the accuracy of this biosensor (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "12e0c32a-f998-4f35-9f64-6ea208f66d3f",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C47",
+      "claim": "iDAb RAS impaired KRASG12D/PI3K\u03b1FL interaction in a dose-dependent manner, whereas the iDAb control did not.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the BRET biosensor by showing that the iDAb RAS impaired that interaction in a dose-dependent manner, whereas the iDAb control did not (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "cbe10226-17bf-4a0f-9f7a-21338589a362",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C48",
+      "claim": "iDAb RAS caused a dose response reduction of phosphorylation of the downstream biomarker AKT at Ser473.",
+      "claim_type": "EXPLICIT",
+      "source": "and there was also a dose response reduction of phosphorylation of the downstream biomarker AKT at Ser473 (Figure 4B and quantified in Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4B and quantified in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "c8b1049f-7c4c-4e19-a612-90a77ec90e97",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C49",
+      "claim": "Compound 3344 interferes with the KRASG12D/PI3K\u03b1FL interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Implementing the same biosensor assay treated with the compound 3344 for 3 or 20 hr, we confirmed this compound interferes with the KRASG12D/PI3K\u03b1FL interaction (Figure 4D\u2013F and Figure 4\u2014figure supplement 1D\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D\u2013F and Figure 4\u2014figure supplement 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "b2a58961-17bb-47e9-9e26-ff573d9fa962",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C50",
+      "claim": "Compound 3344 causes dose response reduction of BRET signal with KRASG12D/PI3K\u03b1FL but Abd-2 does not.",
+      "claim_type": "EXPLICIT",
+      "source": "When increasing doses of either Abd-2 or 3344 were used in the BRET-transfected cells, we observed dose response reduction of BRET signal with 3344 but not Abd-2 (Figure 4D and Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "a19b457c-a6ab-4b95-8bbc-dbc5779eee99",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C51",
+      "claim": "Compound 3344 causes a reduction in the downstream biomarker AKT Ser473 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Associated with this inhibition, was a reduction in the downstream biomarker AKT Ser473 phosphorylation (Figure 4E, quantified in Figure 4F and Figure 4\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4E and quantified in Figure 4F and Figure 4\u2014figure supplement 1E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "3df0f207-6124-415e-adf3-0f1372e7c876",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C52",
+      "claim": "KRAS, NRAS and HRAS family members have an almost identical amino-acid domain (G domain) from residues 1\u2013166 but a C-terminal hypervariable domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The KRAS, NRAS and HRAS family members are conserved proteins that have an almost identical amino-acid domain (G domain) from residues 1\u2013166 but a C-terminal hypervariable domain (Wennerberg et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "d892c1e7-c460-46fd-9f97-7299125ecd8d",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C53",
+      "claim": "RLuc8-NRASQ61H and RLuc8-HRASG12V proteins interact and reach plateau BRET signals with GFP2-CRAFFL.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration of the RAS donor and CRAFFL acceptor proteins show that the RLuc8-NRASQ61H and RLuc8-HRASG12V proteins interact and reach plateau BRET signals with GFP2-CRAFFL (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "b634384a-096a-405d-a470-a4b8278b54b1",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C54",
+      "claim": "The BRET2 signal from NRASQ61H/CRAFFL and HRASG12V/CRAFFL is diminished by increasing levels of the iDAb RAS but not the iDAb control.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the BRET2 signal is diminished by increasing levels of the iDAb RAS but not the iDAb control (Figure 5\u2014figure supplement 1B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "3bbea39e-3625-48f7-9a66-4f5d8412b92d",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C55",
+      "claim": "Abd-2 compound does not interfere with the BRET signal in any of the NRAS and HRAS BRET assays using either effector RBDs or full-length CRAF.",
+      "claim_type": "EXPLICIT",
+      "source": "While the low-affinity Abd-2 compound does not interfere with the BRET signal in any of the NRAS and HRAS BRET assays using either effector RBDs (Figure 5A,B) or full-length CRAF (Figure 5C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A, 5B, 5C, and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "497fc6b2-bb10-4e1f-a429-38da3dbaa5df",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C56",
+      "claim": "Compound 3344 disturbs the BRET2 signal in a dose-response manner in all NRAS and HRAS interactions with effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "the compound 3344 disturbs the BRET2 signal in a dose-response manner in all these RAS interactions (Figure 5 and Figure 5\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and Figure 5\u2014figure supplement 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "3584d0fc-5057-4ca3-8148-52205a2c62a1",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C57",
+      "claim": "Compound 3344 binds to KRAS in a previously identified pocket close to the switch regions where the effectors interact with RAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6A shows that 3344 binds to KRAS in a previously identified pocket (Maurer et al., 2012; Sun et al., 2012) close to the switch regions where the effectors interact with RAS (Table 1 has the refinement statistics for the X-ray data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by X-ray crystallography data shown in Figure 6A and citations to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "ba542d75-079d-4770-b8e5-e1d8d72ff5bf",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C58",
+      "claim": "Parts of 3344 would overlap with the bound effector structures, suggesting that the competition effect of 3344 can be explained by straightforward steric hindrance.",
+      "claim_type": "EXPLICIT",
+      "source": "The superimposition of the structures of three RAS-effector protein complexes with the structure of KRAS-3344 complex shows that parts of 3344 would overlap with the bound effector structures, suggesting that the competition effect of 3344 can be explained by straightforward steric hindrance (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis and modeling shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f35e4ccb-9c64-4d9d-b233-5da956616991",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C59",
+      "claim": "Compound 3344 decreases EGF-induced pAKT and pERK1/2 abundance in DLD-1 and H358 cells with an observed IC50 of ~5\u201310 \u03bcM without any change in the total levels of AKT or ERK1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "3344 decreases EGF-induced pAKT and pERK1/2 abundance in both cell types with an observed IC50 of ~5\u201310 \u03bcM without any change in the total levels of AKT or ERK1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "eab5a368-6158-452c-b95c-22ed4149813d",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C60",
+      "claim": "DLD-1 cells express KRASG13D.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed that 3344 could interfere with the endogenous RAS-effector PPI in two human cancer cell lines (viz. colorectal adenocarcinoma DLD-1 cells expressing KRASG13D",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR and sequencing data described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f4019468-de0a-4960-a17d-5119674236f8",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C61",
+      "claim": "H358 cells express KRASG12C.",
+      "claim_type": "EXPLICIT",
+      "source": "and non-small cell lung carcinoma H358 cells expressing KRASG12C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR and sequencing data described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "7ada1079-bc88-401c-9791-6f00e31af369",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C62",
+      "claim": "BRET-based biosensors have been successfully used to discover and characterize small molecules inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "BRET-based biosensors have been successfully used to discover and characterize small molecules inhibitors (Beautrait et al., 2017; Corbel et al., 2011; Lavoie et al., 2013; Mazars and F\u00e5hraeus, 2010; Robinson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "47e1f8e0-cf87-47f6-ba3c-8cdc94265747",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C63",
+      "claim": "The RAS biosensors provide a direct and quantitative measurement of the PPI interference with inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "It provides a direct and quantitative measurement of the PPI interference with inhibitors (i.e. small molecules or macrodrugs), which could allow the comparison of different compounds (e.g. for structure-activity-relationship studies) or macrodrugs and therefore the selection of more potent inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the demonstrated capabilities of the BRET assay system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "8f28df32-fa41-4bd0-8c37-22c22ddbd5d4",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C64",
+      "claim": "Compound 3344 prevents endogenous RAS-dependent signaling in two different human tumor cell lines at a lower concentration (IC50 around 5 \u03bcM) than in the BRET assay with observed IC50 around 20 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, 3344 prevents endogenous RAS-dependent signaling in two different human tumor cell lines at a lower concentration (IC50 around 5 \u03bcM) (Figure 6C,D) than in the BRET assay with observed IC50 around 20 \u03bcM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of data from Figure 6C,D with BRET assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "b8b85ab6-5f49-462f-9420-7bddb74b4963",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C65",
+      "claim": "The difference in IC50 between BRET assay and endogenous assay probably reflects the expression levels of the target proteins in the two assays.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference probably reflects the expression levels of the target proteins in the two assays, where the BRET2 assay relies on transient transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference from the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "ba3635df-8fc1-48a9-9693-91be17151a47",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C66",
+      "claim": "The overexpression in HEK293T cells probably produces higher amount of mutant RAS/effector proteins than the endogenous counterparts in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the overexpression in HEK293T cells probably produces higher amount of mutant RAS/effector proteins than the endogenous counterparts in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference about transient transfection versus endogenous expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "8e911507-bb0d-408c-91f8-142bdea26b53",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C67",
+      "claim": "Studies suggested that isoform and residue- or codon-specific RAS mutants show differences in their ability to engage effectors and signaling properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, studies suggested that isoform and residue- or codon-specific RAS mutants show differences in their ability to engage effectors and signaling properties (Hunter et al., 2015; Nakhaeizadeh et al., 2016; Yan et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "61c33696-abb0-4ea2-967f-b429ac07ae1f",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C68",
+      "claim": "RAS biosensors could be a methodology to decipher RAS isoform/mutant properties in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, RAS biosensors could also be a methodology to decipher RAS isoform/mutant properties in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the capabilities of the biosensor system.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "65dd4535-799d-465f-80d9-5a149363fc3d",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C69",
+      "claim": "The BRET2 biosensor system could be used for direct screens of PPI inhibitors with libraries of compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The BRET2 biosensor system could also be used for direct screens of PPI inhibitors with libraries of compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential applications of the biosensor system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "a7b8b95f-1c9b-4a7c-b8e8-2f175b4d98ac",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C70",
+      "claim": "Initial compounds from a library are not expected to have high affinity for their target.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because initial compounds from a library are not expected to have high affinity for their target, relatively weak interactions between donor and acceptors should be involved in the generation of BRET2 signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of drug discovery practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "bb00e6cc-7cc3-464d-8f98-51ea87b2c88a",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C71",
+      "claim": "Reduction of affinity (dematuration) of an intracellular domain antibody from a tool initially used for target validation can be achieved to make a screening tool.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a further use of intracellular domain antibodies where reduction of affinity (dematuration) from a tool initially used for target validation, can be achieved to make a screening tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the demonstrated use of iDAbdm RAS in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "05b6a66d-d6ea-42d6-a413-201a887c6c36",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "claim_id": "C72",
+      "claim": "The method is an approach that is transferable to other PPI situations required for drug development programmes in cancer or any other clinical indication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the method is an approach that is transferable to other PPI situations required for drug development programmes in cancer or any other clinical indication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the general applicability of the BRET biosensor approach.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RAS proteins are highly mutated in human cancers (~30% of tumors) but have eluded drug therapy, with no RAS-targeted drugs currently available in the clinic despite their potential therapeutic value, particularly in cancers like pancreatic cancer with high KRAS mutation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, C7, C8, and C9 are well-supported by citations to established literature (Downward, 2003; Prior et al., 2012; Kleeff et al., 2016; Cox et al., 2014) and reference to the COSMIC database. These represent established knowledge in the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RAS is a membrane-bound GTPase that signals through effector interactions to promote cell survival and proliferation. Previous therapeutic approaches including farnesylation inhibitors have had limited success, though intracellular antibodies blocking RAS-effector interactions have shown efficacy in preclinical models, and recent studies have identified compounds binding RAS pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C18 provide well-supported background on RAS biology and prior therapeutic approaches, backed by multiple citations to published literature. These establish the rationale for developing cell-based assays to test RAS inhibitors and represent accurate summaries of established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "bb44b852-9af5-496f-b46b-03a4efbce3df",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed BRET-based RAS biosensors by fusing RLuc8 to the N-terminus of full-length RAS proteins (KRAS, HRAS, NRAS with various mutations) and GFP2 to the C-terminus of effectors, with optimized linker lengths. All effector domains interact specifically with KRASG12D, reaching donor saturation, and proteins are expressed at equivalent levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C19-C23 describe the biosensor design and initial validation, supported by experimental data in Figures 1A-C and supplementary figures. The BRET signal saturation curves (C22) and western blot data (C23) provide direct evidence for specific interactions and equivalent protein expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "4a264e27-5aab-40eb-b169-7138a8368513",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The BRET biosensors were validated using negative controls (KRASS17N showing linear non-specific BRET signal) and positive controls (iDAb RAS specifically inhibiting KRASG12D-effector interactions). A dematured iDAb RAS with reduced affinity (~1 \u03bcM vs 6.2 nM) showed expected changes in BRET50 and BRETmax parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 demonstrate rigorous validation of the biosensor system with appropriate positive and negative controls. The KRASS17N negative control (C24-C25) shows expected linear BRET signal typical of non-specific interactions, while iDAb RAS competition (C29) and the dematured iDAb variant (C27-C28) provide strong evidence for biosensor specificity and sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "fb807f8e-ac85-4399-991d-d8fa57aaba24",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Compound 3344 binds KRASG12V with 126 nM affinity by CPMG NMR and shows dose-dependent reduction in BRET signal for KRASG12D interactions with multiple effectors (PI3K\u03b1, PI3K\u03b3, CRAF, RALGDS), while control compound Abd-2 shows no effect. The inhibition is specific to RAS-effector interactions and does not affect biosensor expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are well-supported by NMR binding data (Figure 1\u2014figure supplement 3D-E) and BRET dose-response experiments (Figure 1E). The inclusion of Abd-2 as a negative control compound and multiple control BRET pairs (C34) strengthens the conclusion that 3344 specifically inhibits RAS-effector interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A full-length CRAFS257L biosensor was developed that interacts with KRASG12D but not KRASS17N. Both iDAb RAS and compound 3344 inhibit KRASG12D/CRAFFL interaction in a dose-dependent manner and reduce MEK1/2 and ERK1/2 phosphorylation. Compound 3344 shows pan-activity against multiple KRAS G12 mutants (G12A, G12C, G12V, G12R) while Abd-2 does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 are supported by BRET data (Figures 2A, 2D, 2G) and western blot analysis of downstream signaling (Figures 2B-C, 2E-F). The dose-dependent effects on both BRET signal and pathway biomarkers, tested at multiple time points (3 hr and 20 hr), provide strong evidence for functional inhibition. The pan-mutant activity (C41) is directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "21df25bc-401c-4ee3-9300-56112b06b49b",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wild-type KRAS biosensor responds to EGF stimulation, showing increased BRETmax from 4.02 to 10.01, indicating enhanced KRASWT/CRAFFL interaction. Both iDAb RAS and compound 3344 inhibit this EGF-stimulated interaction in a dose-dependent manner and reduce MEK1/2 and ERK1/2 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 extend the biosensor validation to wild-type KRAS with physiological stimulation (EGF). The data in Figures 3A-F demonstrate that the biosensor can detect stimulus-induced changes in RAS-effector interactions and that 3344 inhibits both mutant and wild-type KRAS signaling, supported by both BRET and western blot data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "60898d03-755c-419e-bb2b-766f25d10f65",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A tripartite KRASG12D/PI3K\u03b1FL/p85\u03b1 biosensor was developed requiring co-expression of p85\u03b1 regulatory subunit for optimal signal. KRASS17N shows no specific interaction. Both iDAb RAS and compound 3344 inhibit KRASG12D/PI3K\u03b1FL interaction in a dose-dependent manner and reduce AKT Ser473 phosphorylation, while Abd-2 shows no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 demonstrate extension of the biosensor platform to the PI3K pathway. The requirement for p85\u03b1 co-expression (C45) is experimentally justified, and the negative control with KRASS17N (C46) validates specificity. BRET and western blot data (Figures 4A-F) consistently show dose-dependent inhibition by 3344 but not Abd-2, affecting both interaction and downstream AKT phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "5c284f94-2c56-4486-a76b-cf2f751bc093",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The biosensor toolbox was extended to NRAS and HRAS family members. NRASQ61H and HRASG12V interact with CRAFFL and effector RBDs, showing plateau BRET signals. iDAb RAS inhibits these interactions while Abd-2 does not. Compound 3344 shows dose-dependent inhibition of all NRAS and HRAS interactions with effectors, demonstrating pan-RAS family activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by BRET titration and competition data (Figure 5 and supplements). The extension to NRAS and HRAS with appropriate controls (iDAb RAS vs control, 3344 vs Abd-2) demonstrates the broad applicability of the biosensor platform and establishes 3344 as a pan-RAS inhibitor across all three family members.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "bbd8fb61-08c3-44b7-9884-69ef7d5f1039",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "X-ray crystallography shows compound 3344 binds to KRASQ61H in a previously identified pocket close to the switch regions. Structural superimposition with RAS-effector complexes suggests 3344 inhibits effector binding through steric hindrance, as parts of 3344 would overlap with bound effector structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by X-ray crystallography data (Figure 6A-B, Table 1 with refinement statistics). The binding site identification is validated by citations to prior work (Maurer et al., 2012; Sun et al., 2012). The steric hindrance mechanism (C58) is a reasonable inference from structural superimposition, though it remains a model rather than direct experimental proof of the inhibition mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "c60de13e-1be5-49fb-97af-8685b960dbd2",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Compound 3344 inhibits endogenous RAS signaling in human cancer cell lines DLD-1 (expressing KRASG13D) and H358 (expressing KRASG12C), decreasing EGF-induced pAKT and pERK1/2 with IC50 of ~5-10 \u03bcM without affecting total AKT or ERK1/2 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by western blot data in cancer cell lines (Figure 6C-D) and RT-PCR/sequencing confirmation of KRAS mutations (Materials and Methods). The demonstration of activity in endogenous systems with mutant KRAS validates the biosensor findings and shows 3344 can inhibit RAS signaling in a physiologically relevant context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "e769d672-2b6d-496a-bd06-36c75ad42496",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Compound 3344 shows lower IC50 in endogenous cancer cell assays (~5 \u03bcM) compared to BRET assays (~20 \u03bcM), which the authors attribute to differences in protein expression levels between transient transfection in HEK293T cells versus endogenous expression in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 present a reasonable interpretation of the IC50 difference between overexpression and endogenous systems. The explanation (C65-C66) is logical and consistent with known effects of target protein concentration on apparent inhibitor potency. However, this remains an inference rather than directly tested hypothesis, as protein levels were not quantitatively compared between systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c",
+      "content_id": "3336a66f-b339-4d56-bd12-5024df0c75c4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors discuss broader applications of BRET biosensors, noting they have been used successfully for inhibitor discovery, provide quantitative PPI measurements, could be used for library screening with dematured antibodies as acceptors, and may be applicable to studying RAS isoform/mutant-specific properties and other PPI systems in drug development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C72 are largely speculative or represent potential future applications rather than demonstrated results. While C62 is supported by citations and C63 is a reasonable inference from the demonstrated capabilities, claims C68-C69 and C72 about future applications are explicitly speculative. The dematuration strategy (C71) is demonstrated but its general applicability to screening is not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed BRET-based RAS biosensors using RLuc8-RAS fusions and GFP2-effector fusions that enable monitoring of RAS-effector interactions in living cells. The biosensors include multiple RAS isoforms (KRAS, HRAS, NRAS) with various cancer-associated mutations paired with major effectors (CRAF, PI3K, RALGDS).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge this is a 'resource paper' with 'high quality data' but raise concerns about optimization procedures (Essential revision #2: 'no information is provided concerning the optimization procedures that were employed'). They also request technical clarifications about bleed-through characterization and autoluminescence/autofluorescence controls (Essential revisions #6-7), indicating the biosensor validation requires additional methodological details.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "b93e688d-78cc-4b7b-a33d-c443a03a92fb",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Compound 3344 binds to KRASG12V with an affinity of 126 nM as measured by 1H CPMG NMR, and in vitro competition studies show that anti-RAS scFv inhibits 3344 binding to KRAS.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant concern about the Kd determination (Essential revision #1: 'The Kd identified for the 3344 compound binding to KRAS is not completely clear' and 'the x-axis shows that the lowest concentration of 3344 studied is 2.5\u00b5M, which is many-fold above the estimated Kd'). They request clarification and suggest 'an alternative biophysical technique to confirm the Kd.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "c4e57c76-b959-472f-981a-8d691775b123",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Compound 3344 shows dose-dependent inhibition of RAS-effector interactions across multiple RAS isoforms and mutants (KRAS, NRAS, HRAS) with various effectors (CRAF, PI3K, RALGDS) in BRET assays, while the control compound Abd-2 shows no effect.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers state 'high quality data presented support the conclusions,' they raise concerns about the long incubation times used (Essential revision #8: 'Long incubation times (20h) are employed...This is a potential problem for studies to dissect signaling mechanisms because the inhibitor may act on signaling pathways indirectly'). They request short-term inhibition assays to address this caveat on interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "iDAb RAS impedes RAS-effector BRET signals in a dose-dependent manner and significantly decreases phosphorylation of downstream signaling markers (MEK1/2, ERK1/2, AKT), while control iDAb has no effect.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise specific concerns about the iDAb validation experiments. The summary states 'high quality data presented support the conclusions of the study,' and no essential revisions target these specific validation experiments with the intracellular antibody.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f25db934-4785-427b-b9a6-49a675a45892",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "X-ray crystallography shows that compound 3344 binds to KRAS in a previously identified pocket close to the switch regions, and structural superimposition suggests the competition effect can be explained by steric hindrance with bound effector structures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers critique the structural analysis presentation (Essential revision #9: 'Figure 6B is simply an enlargement that does not provide additional information beyond what is obvious in Figure 6A. This panel should be replaced by a panel illustrating how the compound interferes with effector binding'). They also request clarification about conformational changes (Essential revision #10: 'it would be helpful to clarify whether there are any changes (or not) in the conformation or b-factors in the switch regions').",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "0af44b87-00d4-44f6-8c21-b3be85d21601",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Compound 3344 decreases EGF-induced pAKT and pERK1/2 in endogenous cancer cell lines (DLD-1 expressing KRASG13D and H358 expressing KRASG12C) with an IC50 of ~5-10 \u00b5M, which is lower than the IC50 observed in BRET assays (~20 \u00b5M).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge 'high quality data,' they raise concerns about the long incubation times (Essential revision #8) that could affect interpretation of these endogenous signaling studies. The request for short-term inhibition assays applies to these experiments as well, creating uncertainty about whether the observed effects are direct or indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "e6eb5c72-b89f-4211-b632-bc4613e02551",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors developed optimized biosensors using full-length CRAFFL (with S257L mutation) and full-length PI3K\u03b1 (requiring p85\u03b1 co-expression) that interact specifically with mutant RAS proteins but not with dominant negative KRASS17N, and can be activated by EGF treatment for wild-type KRAS.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These full-length effector biosensors are part of the overall biosensor development that reviewers question regarding optimization procedures (Essential revision #2). The lack of information about optimization means 'it is unclear whether the BRET probes described can be further optimized,' which applies to these full-length constructs as well.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "b7b2d2e3-3b04-4371-9054-008d8d363368",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The RAS biosensors provide a direct and quantitative measurement of PPI interference with inhibitors, demonstrating that compound 3344 is a potent pan-RAS-effector interactions inhibitor, and the methodology could be transferable to other PPI situations and used for compound library screening.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge this is a resource paper 'of great interest to the cancer research community' but raise multiple concerns about technical details and methodology. Essential revisions #2-5 request critical missing information about optimization procedures, construct details, compound design/identification, and control molecule selection. These gaps prevent full evaluation of the biosensor's utility and transferability.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about RAS biology, cancer prevalence, drug development challenges, and established knowledge about RAS signaling mechanisms and previous approaches to RAS targeting.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are background and contextual claims supported by citations to established literature. Reviewers do not challenge any of these foundational statements about RAS biology or the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "69d53f43-b1d7-4387-8840-a86f6899515b",
+      "content_id": "aa68da37-668d-4424-9688-1717c37874c3",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Control compound Abd-2 does not interfere with BRET signals in NRAS and HRAS assays, and the difference in IC50 between BRET and endogenous assays likely reflects differences in protein expression levels between transiently transfected HEK293T cells and cancer cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers question the control molecule selection (Essential revision #5: 'The structure of the control small molecule Abd-2 is not presented. Why was this molecule chosen rather than any other control molecule? How was this molecule obtained?'). Without understanding the rationale for Abd-2 selection, the interpretation of negative control results remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2627e7f8-d12f-4bb6-83a0-3de576c634db",
+      "result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518"
+    },
+    {
+      "claim_id": "3c9a40da-106b-4915-a281-3c763b39c0ae",
+      "result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518"
+    },
+    {
+      "claim_id": "5578757d-1095-40d8-bf6a-f77d68db43c6",
+      "result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518"
+    },
+    {
+      "claim_id": "9d7256aa-bc90-4323-a959-5ee870a94f7d",
+      "result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518"
+    },
+    {
+      "claim_id": "cd3a5acb-3435-4940-984f-642e37820aa3",
+      "result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518"
+    },
+    {
+      "claim_id": "41c25927-609d-40ac-a8d0-df7c4f86c594",
+      "result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518"
+    },
+    {
+      "claim_id": "361dec96-f14d-4346-b27d-2c64c5b36f66",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "e44250d3-291e-4322-abcc-0b12ba0d660f",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "94df953c-19ed-4dcd-a5d4-af4fca3adf2b",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "16a5bebf-58cb-4fda-ad9e-f48c3b5e802e",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "64cc70b7-ee50-468b-b018-0a8678a9568e",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "204d7ba5-2787-4c45-a7df-a2310862b456",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "36f88946-093b-4b9b-8572-a81cb619af68",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "edf87026-b0cd-48b5-9ec0-3f9d20682f45",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "8728e22c-3156-428b-a7ac-ac1f75f8d621",
+      "result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26"
+    },
+    {
+      "claim_id": "82e43969-3032-4176-b31c-af443768ffb6",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "5c3485b3-bff7-46a8-9525-a65a9cdbf1c8",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "48b5eb92-2d98-48db-8185-cbd03f1fa4db",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "f55090e1-2d81-4a74-8fcd-32861e60bddd",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "8fa5ca7c-fdf5-498a-84ad-8db18d93dfbd",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "a78b487c-20cd-4295-b90e-49a11c68920b",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "e0aaa57f-15b9-4251-95a7-ef9af235ffea",
+      "result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df"
+    },
+    {
+      "claim_id": "f8216116-4eaa-49e1-8743-147d2b3e5ff7",
+      "result_id": "4a264e27-5aab-40eb-b169-7138a8368513"
+    },
+    {
+      "claim_id": "5b639683-2155-44c2-925d-2fe8aa214743",
+      "result_id": "4a264e27-5aab-40eb-b169-7138a8368513"
+    },
+    {
+      "claim_id": "555e6f03-b19e-43f4-8f76-972843d38e66",
+      "result_id": "4a264e27-5aab-40eb-b169-7138a8368513"
+    },
+    {
+      "claim_id": "74646bd4-59e0-44cc-9454-3eec3bf7ef26",
+      "result_id": "4a264e27-5aab-40eb-b169-7138a8368513"
+    },
+    {
+      "claim_id": "285addc9-5c71-46a9-9fc4-2cdfebba0ec8",
+      "result_id": "4a264e27-5aab-40eb-b169-7138a8368513"
+    },
+    {
+      "claim_id": "9a3cb32f-2891-4012-9013-87b36698c9c0",
+      "result_id": "4a264e27-5aab-40eb-b169-7138a8368513"
+    },
+    {
+      "claim_id": "f77cebfc-7bf0-4aa1-a972-e93df744d282",
+      "result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24"
+    },
+    {
+      "claim_id": "fe88b4a4-f806-48fa-96f8-ccd36362b42a",
+      "result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24"
+    },
+    {
+      "claim_id": "1dc28b88-380c-4599-be7e-ee5359badef1",
+      "result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24"
+    },
+    {
+      "claim_id": "f6e9f779-30c5-412d-a044-91873817ab60",
+      "result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24"
+    },
+    {
+      "claim_id": "d5c80692-defb-4804-89d0-70455d08ac60",
+      "result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24"
+    },
+    {
+      "claim_id": "bf784434-e070-450f-9751-cdf10fd4a15c",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "ab72d286-99b8-4339-9893-20b0468b403d",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "d9783918-4de8-4ee8-a16d-bfee1a7ea73c",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "dff28a1c-dbc3-470c-ab94-f21e0b55ac18",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "55a89080-1cdd-4e1b-9bdc-bdff805ac1fb",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "6ef6aee6-8196-44ae-bd87-19e76ebeed96",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "48254836-4ec9-4551-8728-5e5d7d29336e",
+      "result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb"
+    },
+    {
+      "claim_id": "6778176e-28f7-42e7-adf3-e9861935c306",
+      "result_id": "21df25bc-401c-4ee3-9300-56112b06b49b"
+    },
+    {
+      "claim_id": "a185b1d4-64c0-48c7-9b89-ade1a814e4e3",
+      "result_id": "21df25bc-401c-4ee3-9300-56112b06b49b"
+    },
+    {
+      "claim_id": "aa53712a-cea2-40d1-a0fc-372c28dd5bd3",
+      "result_id": "21df25bc-401c-4ee3-9300-56112b06b49b"
+    },
+    {
+      "claim_id": "3c62aa57-0a85-4ff6-acae-58f64c4e4df5",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "6c97ff90-52d1-4920-a0cf-c58a40aa7a5e",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "12e0c32a-f998-4f35-9f64-6ea208f66d3f",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "cbe10226-17bf-4a0f-9f7a-21338589a362",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "c8b1049f-7c4c-4e19-a612-90a77ec90e97",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "b2a58961-17bb-47e9-9e26-ff573d9fa962",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "a19b457c-a6ab-4b95-8bbc-dbc5779eee99",
+      "result_id": "60898d03-755c-419e-bb2b-766f25d10f65"
+    },
+    {
+      "claim_id": "3df0f207-6124-415e-adf3-0f1372e7c876",
+      "result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093"
+    },
+    {
+      "claim_id": "d892c1e7-c460-46fd-9f97-7299125ecd8d",
+      "result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093"
+    },
+    {
+      "claim_id": "b634384a-096a-405d-a470-a4b8278b54b1",
+      "result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093"
+    },
+    {
+      "claim_id": "3bbea39e-3625-48f7-9a66-4f5d8412b92d",
+      "result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093"
+    },
+    {
+      "claim_id": "497fc6b2-bb10-4e1f-a429-38da3dbaa5df",
+      "result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093"
+    },
+    {
+      "claim_id": "3584d0fc-5057-4ca3-8148-52205a2c62a1",
+      "result_id": "bbd8fb61-08c3-44b7-9884-69ef7d5f1039"
+    },
+    {
+      "claim_id": "ba542d75-079d-4770-b8e5-e1d8d72ff5bf",
+      "result_id": "bbd8fb61-08c3-44b7-9884-69ef7d5f1039"
+    },
+    {
+      "claim_id": "f35e4ccb-9c64-4d9d-b233-5da956616991",
+      "result_id": "c60de13e-1be5-49fb-97af-8685b960dbd2"
+    },
+    {
+      "claim_id": "eab5a368-6158-452c-b95c-22ed4149813d",
+      "result_id": "c60de13e-1be5-49fb-97af-8685b960dbd2"
+    },
+    {
+      "claim_id": "f4019468-de0a-4960-a17d-5119674236f8",
+      "result_id": "c60de13e-1be5-49fb-97af-8685b960dbd2"
+    },
+    {
+      "claim_id": "8f28df32-fa41-4bd0-8c37-22c22ddbd5d4",
+      "result_id": "e769d672-2b6d-496a-bd06-36c75ad42496"
+    },
+    {
+      "claim_id": "b8b85ab6-5f49-462f-9420-7bddb74b4963",
+      "result_id": "e769d672-2b6d-496a-bd06-36c75ad42496"
+    },
+    {
+      "claim_id": "ba3635df-8fc1-48a9-9693-91be17151a47",
+      "result_id": "e769d672-2b6d-496a-bd06-36c75ad42496"
+    },
+    {
+      "claim_id": "7ada1079-bc88-401c-9791-6f00e31af369",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "47e1f8e0-cf87-47f6-ba3c-8cdc94265747",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "8e911507-bb0d-408c-91f8-142bdea26b53",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "61c33696-abb0-4ea2-967f-b429ac07ae1f",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "65dd4535-799d-465f-80d9-5a149363fc3d",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "a7b8b95f-1c9b-4a7c-b8e8-2f175b4d98ac",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "bb00e6cc-7cc3-464d-8f98-51ea87b2c88a",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "05b6a66d-d6ea-42d6-a413-201a887c6c36",
+      "result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c"
+    },
+    {
+      "claim_id": "82e43969-3032-4176-b31c-af443768ffb6",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "5c3485b3-bff7-46a8-9525-a65a9cdbf1c8",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "48b5eb92-2d98-48db-8185-cbd03f1fa4db",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "f55090e1-2d81-4a74-8fcd-32861e60bddd",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "8fa5ca7c-fdf5-498a-84ad-8db18d93dfbd",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "a78b487c-20cd-4295-b90e-49a11c68920b",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "e0aaa57f-15b9-4251-95a7-ef9af235ffea",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "f8216116-4eaa-49e1-8743-147d2b3e5ff7",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "5b639683-2155-44c2-925d-2fe8aa214743",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "555e6f03-b19e-43f4-8f76-972843d38e66",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "74646bd4-59e0-44cc-9454-3eec3bf7ef26",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "285addc9-5c71-46a9-9fc4-2cdfebba0ec8",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "9a3cb32f-2891-4012-9013-87b36698c9c0",
+      "result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e"
+    },
+    {
+      "claim_id": "f77cebfc-7bf0-4aa1-a972-e93df744d282",
+      "result_id": "b93e688d-78cc-4b7b-a33d-c443a03a92fb"
+    },
+    {
+      "claim_id": "fe88b4a4-f806-48fa-96f8-ccd36362b42a",
+      "result_id": "b93e688d-78cc-4b7b-a33d-c443a03a92fb"
+    },
+    {
+      "claim_id": "1dc28b88-380c-4599-be7e-ee5359badef1",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "f6e9f779-30c5-412d-a044-91873817ab60",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "d5c80692-defb-4804-89d0-70455d08ac60",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "55a89080-1cdd-4e1b-9bdc-bdff805ac1fb",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "6ef6aee6-8196-44ae-bd87-19e76ebeed96",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "48254836-4ec9-4551-8728-5e5d7d29336e",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "aa53712a-cea2-40d1-a0fc-372c28dd5bd3",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "c8b1049f-7c4c-4e19-a612-90a77ec90e97",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "b2a58961-17bb-47e9-9e26-ff573d9fa962",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "a19b457c-a6ab-4b95-8bbc-dbc5779eee99",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "497fc6b2-bb10-4e1f-a429-38da3dbaa5df",
+      "result_id": "c4e57c76-b959-472f-981a-8d691775b123"
+    },
+    {
+      "claim_id": "d9783918-4de8-4ee8-a16d-bfee1a7ea73c",
+      "result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7"
+    },
+    {
+      "claim_id": "dff28a1c-dbc3-470c-ab94-f21e0b55ac18",
+      "result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7"
+    },
+    {
+      "claim_id": "a185b1d4-64c0-48c7-9b89-ade1a814e4e3",
+      "result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7"
+    },
+    {
+      "claim_id": "12e0c32a-f998-4f35-9f64-6ea208f66d3f",
+      "result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7"
+    },
+    {
+      "claim_id": "cbe10226-17bf-4a0f-9f7a-21338589a362",
+      "result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7"
+    },
+    {
+      "claim_id": "3584d0fc-5057-4ca3-8148-52205a2c62a1",
+      "result_id": "f25db934-4785-427b-b9a6-49a675a45892"
+    },
+    {
+      "claim_id": "ba542d75-079d-4770-b8e5-e1d8d72ff5bf",
+      "result_id": "f25db934-4785-427b-b9a6-49a675a45892"
+    },
+    {
+      "claim_id": "f35e4ccb-9c64-4d9d-b233-5da956616991",
+      "result_id": "0af44b87-00d4-44f6-8c21-b3be85d21601"
+    },
+    {
+      "claim_id": "eab5a368-6158-452c-b95c-22ed4149813d",
+      "result_id": "0af44b87-00d4-44f6-8c21-b3be85d21601"
+    },
+    {
+      "claim_id": "f4019468-de0a-4960-a17d-5119674236f8",
+      "result_id": "0af44b87-00d4-44f6-8c21-b3be85d21601"
+    },
+    {
+      "claim_id": "8f28df32-fa41-4bd0-8c37-22c22ddbd5d4",
+      "result_id": "0af44b87-00d4-44f6-8c21-b3be85d21601"
+    },
+    {
+      "claim_id": "bf784434-e070-450f-9751-cdf10fd4a15c",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "ab72d286-99b8-4339-9893-20b0468b403d",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "6778176e-28f7-42e7-adf3-e9861935c306",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "3c62aa57-0a85-4ff6-acae-58f64c4e4df5",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "6c97ff90-52d1-4920-a0cf-c58a40aa7a5e",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "d892c1e7-c460-46fd-9f97-7299125ecd8d",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "b634384a-096a-405d-a470-a4b8278b54b1",
+      "result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551"
+    },
+    {
+      "claim_id": "28ed45b9-5815-42c0-bc77-09c4b4c16b6b",
+      "result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368"
+    },
+    {
+      "claim_id": "47e1f8e0-cf87-47f6-ba3c-8cdc94265747",
+      "result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368"
+    },
+    {
+      "claim_id": "61c33696-abb0-4ea2-967f-b429ac07ae1f",
+      "result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368"
+    },
+    {
+      "claim_id": "65dd4535-799d-465f-80d9-5a149363fc3d",
+      "result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368"
+    },
+    {
+      "claim_id": "bb00e6cc-7cc3-464d-8f98-51ea87b2c88a",
+      "result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368"
+    },
+    {
+      "claim_id": "05b6a66d-d6ea-42d6-a413-201a887c6c36",
+      "result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368"
+    },
+    {
+      "claim_id": "2627e7f8-d12f-4bb6-83a0-3de576c634db",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "3c9a40da-106b-4915-a281-3c763b39c0ae",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "5578757d-1095-40d8-bf6a-f77d68db43c6",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "9d7256aa-bc90-4323-a959-5ee870a94f7d",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "cd3a5acb-3435-4940-984f-642e37820aa3",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "41c25927-609d-40ac-a8d0-df7c4f86c594",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "361dec96-f14d-4346-b27d-2c64c5b36f66",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "e44250d3-291e-4322-abcc-0b12ba0d660f",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "94df953c-19ed-4dcd-a5d4-af4fca3adf2b",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "16a5bebf-58cb-4fda-ad9e-f48c3b5e802e",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "64cc70b7-ee50-468b-b018-0a8678a9568e",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "204d7ba5-2787-4c45-a7df-a2310862b456",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "36f88946-093b-4b9b-8572-a81cb619af68",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "edf87026-b0cd-48b5-9ec0-3f9d20682f45",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "8728e22c-3156-428b-a7ac-ac1f75f8d621",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "3df0f207-6124-415e-adf3-0f1372e7c876",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "7ada1079-bc88-401c-9791-6f00e31af369",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "8e911507-bb0d-408c-91f8-142bdea26b53",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "a7b8b95f-1c9b-4a7c-b8e8-2f175b4d98ac",
+      "result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a"
+    },
+    {
+      "claim_id": "3bbea39e-3625-48f7-9a66-4f5d8412b92d",
+      "result_id": "69d53f43-b1d7-4387-8840-a86f6899515b"
+    },
+    {
+      "claim_id": "b8b85ab6-5f49-462f-9420-7bddb74b4963",
+      "result_id": "69d53f43-b1d7-4387-8840-a86f6899515b"
+    },
+    {
+      "claim_id": "ba3635df-8fc1-48a9-9693-91be17151a47",
+      "result_id": "69d53f43-b1d7-4387-8840-a86f6899515b"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f181c5b7-1570-4a19-9877-3c57576a1a3a",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "bbd8fb61-08c3-44b7-9884-69ef7d5f1039",
+      "peer_result_id": "f25db934-4785-427b-b9a6-49a675a45892",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate structural claims C57-C58. OpenEval finds them SUPPORTED by crystallography data, though notes the steric hindrance mechanism (C58) is inference rather than direct proof. Peer reviewers rate UNCERTAIN, requesting better visualization of effector interference and clarification about conformational changes in switch regions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "a0d080a7-6fdb-47fe-a826-55f1720f43b3",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c60de13e-1be5-49fb-97af-8685b960dbd2",
+      "peer_result_id": "0af44b87-00d4-44f6-8c21-b3be85d21601",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address endogenous cancer cell line validation (C59-C61). OpenEval finds SUPPORTED by western blot and mutation confirmation data. Peer reviewers rate UNCERTAIN due to concerns about long incubation times (20h) potentially causing indirect rather than direct effects, requesting short-term inhibition assays.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "a7b079e6-f89d-4a53-ad01-670785ecf22e",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bb44b852-9af5-496f-b46b-03a4efbce3df",
+      "peer_result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate biosensor design and initial validation (C3-C4, C19-C23). OpenEval finds SUPPORTED by BRET saturation curves and western blot data. Peer reviewers rate UNCERTAIN, requesting missing optimization procedures, bleed-through characterization, and autoluminescence/autofluorescence controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "dc0f2378-de19-4316-9f05-593bf68036b1",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "4a264e27-5aab-40eb-b169-7138a8368513",
+      "peer_result_id": "062b56a6-9a6e-4e2c-b9ef-2f8b51b6c29e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address biosensor validation with controls (C24-C29). OpenEval finds SUPPORTED by negative control KRASS17N, iDAb competition, and denatured variant data. Peer reviewers rate UNCERTAIN, requesting technical clarifications about optimization procedures and control characterization as part of overall biosensor validation concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "23bd7eea-0050-442c-9b72-421e263fd641",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24",
+      "peer_result_id": "b93e688d-78cc-4b7b-a33d-c443a03a92fb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate compound 3344 binding and specificity (C30-C31). OpenEval finds SUPPORTED by NMR and BRET dose-response data. Peer reviewers rate UNCERTAIN with significant concerns about Kd determination methodology, noting lowest concentration tested (2.5\u00b5M) is many-fold above estimated Kd, requesting alternative biophysical confirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "18c4c3c6-1787-4a76-aa62-842bb07c1aca",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "fb807f8e-ac85-4399-991d-d8fa57aaba24",
+      "peer_result_id": "c4e57c76-b959-472f-981a-8d691775b123",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Overlapping evaluation of compound specificity claims (C32-C34). OpenEval finds SUPPORTED by Abd-2 negative control and multiple control BRET pairs. Peer reviewers rate UNCERTAIN due to long incubation times (20h) that may cause indirect effects on signaling pathways, requesting short-term assays.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "9cea32dd-d0c6-4a77-abc4-b44224191110",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb",
+      "peer_result_id": "c4e57c76-b959-472f-981a-8d691775b123",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate functional inhibition claims (C39-C41). OpenEval finds SUPPORTED by BRET and western blot data showing dose-dependent effects and pan-mutant activity. Peer reviewers rate UNCERTAIN, concerned that 20h incubation times may reflect indirect rather than direct signaling effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "45169aea-4dbc-4163-a559-37579da975d1",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb",
+      "peer_result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address downstream signaling effects (C37-C38). OpenEval finds SUPPORTED by western blot analysis at multiple time points. Peer reviewers rate SUPPORTED, with no specific concerns raised about the iDAb validation experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "571f28df-9c16-4a3a-9056-ed57d120262f",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "21df25bc-401c-4ee3-9300-56112b06b49b",
+      "peer_result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate wild-type KRAS with EGF stimulation (C43). OpenEval finds SUPPORTED by BRET and western blot data. Peer reviewers rate SUPPORTED with no specific concerns about these iDAb validation experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f3081ba9-699b-4bfd-a911-3386055a4f36",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "60898d03-755c-419e-bb2b-766f25d10f65",
+      "peer_result_id": "c4e57c76-b959-472f-981a-8d691775b123",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address PI3K pathway biosensor claims (C49-C51). OpenEval finds SUPPORTED by BRET and western blot showing dose-dependent inhibition. Peer reviewers rate UNCERTAIN due to long incubation time concerns potentially causing indirect effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "d9265945-9e7f-402a-935c-a40fb5f6af60",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "60898d03-755c-419e-bb2b-766f25d10f65",
+      "peer_result_id": "40f6de3e-183b-42be-929f-7ad3a8c79cd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate PI3K pathway validation (C47-C48). OpenEval finds SUPPORTED by consistent BRET and western blot data. Peer reviewers rate SUPPORTED with no specific concerns raised about these validation experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "09b9f2c6-96cd-41cc-9a27-855c7c0d596a",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "60898d03-755c-419e-bb2b-766f25d10f65",
+      "peer_result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address PI3K biosensor development (C45-C46). OpenEval finds SUPPORTED with justified p85\u03b1 requirement and KRASS17N negative control. Peer reviewers rate UNCERTAIN, questioning optimization procedures for full-length effector biosensors.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "41b58146-a64f-43e9-b6cf-faba420ed5cc",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7df3c625-722e-41b4-b3b3-d528b7de9cbb",
+      "peer_result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate full-length RAF biosensor claims (C35-C36). OpenEval finds SUPPORTED by BRET data in Figures 2A, 2D, 2G. Peer reviewers rate UNCERTAIN, requesting missing information about optimization procedures for full-length effector constructs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "6c36ce32-f732-4bdf-808b-8fecccb6c280",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "21df25bc-401c-4ee3-9300-56112b06b49b",
+      "peer_result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address wild-type KRAS biosensor with EGF (C42). OpenEval finds SUPPORTED by stimulus-induced changes detected by biosensor. Peer reviewers rate UNCERTAIN due to lack of optimization procedure information for full-length constructs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "04c194bd-cdac-46fe-affb-293188b7c402",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093",
+      "peer_result_id": "e6eb5c72-b89f-4211-b632-bc4613e02551",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate NRAS/HRAS biosensor extension (C53-C54). OpenEval finds SUPPORTED by BRET titration and competition data. Peer reviewers rate UNCERTAIN, questioning optimization procedures for these full-length effector biosensors.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "aa625aca-e9e3-4b4d-87a7-f129e0a4e2c5",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093",
+      "peer_result_id": "69d53f43-b1d7-4387-8840-a86f6899515b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address pan-RAS activity claim (C55). OpenEval finds SUPPORTED by appropriate controls across all three RAS family members. Peer reviewers rate UNCERTAIN, questioning Abd-2 control molecule selection and rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "90923daa-faa1-4d38-bbe2-5a4b9f16d64e",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "5c284f94-2c56-4486-a76b-cf2f751bc093",
+      "peer_result_id": "c4e57c76-b959-472f-981a-8d691775b123",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate broad RAS family inhibition (C56). OpenEval finds SUPPORTED demonstrating pan-RAS inhibitor activity. Peer reviewers rate UNCERTAIN due to long incubation time concerns affecting interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "8d3d667a-c1b6-4f6d-b1b8-1baf261bbe08",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "e769d672-2b6d-496a-bd06-36c75ad42496",
+      "peer_result_id": "0af44b87-00d4-44f6-8c21-b3be85d21601",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address IC50 differences between systems (C64-C66). OpenEval finds SUPPORTED as reasonable interpretation of concentration effects, though notes it's inference not directly tested. Peer reviewers rate UNCERTAIN, with concerns about long incubation times affecting endogenous system results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "43cd4ff3-4ca0-4b63-aa9d-0d997f3a7f33",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "e769d672-2b6d-496a-bd06-36c75ad42496",
+      "peer_result_id": "69d53f43-b1d7-4387-8840-a86f6899515b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate IC50 interpretation (C65-C66). OpenEval finds SUPPORTED as logical explanation consistent with target concentration effects, though acknowledges it's inference. Peer reviewers rate UNCERTAIN, questioning Abd-2 control molecule selection which affects interpretation of comparative results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "90090d54-b5c2-4105-b60f-7f5dc0ebc60e",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c",
+      "peer_result_id": "b7b2d2e3-3b04-4371-9054-008d8d363368",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address biosensor utility and future applications (C63, C68-C69, C71-C72). OpenEval rates UNCERTAIN, noting claims are largely speculative about future applications rather than demonstrated results. Peer reviewers also rate UNCERTAIN, requesting critical missing information about optimization procedures, construct details, compound design, and control selection that prevent full evaluation of transferability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "42106daa-8adb-4648-b9e5-9c89bad338c5",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "d3e9645a-962e-4cd5-88f5-cc49615ffe5c",
+      "peer_result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate background context and rationale (C62, C67, C70). OpenEval rates UNCERTAIN as these represent potential applications not demonstrated results. Peer reviewers rate SUPPORTED, acknowledging the resource paper is of great interest and not challenging foundational statements about RAS biology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "db1cae4f-159b-4739-99c1-504c58a47d30",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "f8d594af-b9ed-4b2c-a7dc-3a00b0b12518",
+      "peer_result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background claims about RAS biology and cancer (C1-C2, C6-C9). OpenEval finds SUPPORTED by established literature citations providing appropriate context. Peer reviewers also rate SUPPORTED, not challenging any foundational statements about RAS biology or study rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    },
+    {
+      "id": "f38000f6-beed-4391-8130-3840ee11c4e4",
+      "submission_id": "2dcd00b3-b933-4001-aea5-a715e3117813",
+      "comparison_id": "CMP23",
+      "openeval_result_id": "4414e8cd-ae8d-472a-96d7-1a96b4b12c26",
+      "peer_result_id": "ee78f4bd-7fe7-4263-aff2-5847a4c2a83a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate RAS biology background and therapeutic context (C10-C18). OpenEval finds SUPPORTED by multiple literature citations establishing rationale for cell-based assays. Peer reviewers also rate SUPPORTED, not challenging these background claims about RAS biology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-10-25T01:21:46.432747Z"
+    }
+  ]
+}

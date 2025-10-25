@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Correlations between spine morphological features show that spine head area, spine head volume, and PSD area are strongly correlated with each other, while spine neck diameter shows weak correlation with spine head volume, and spine neck length shows no correlation with either spine head volume or neck diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 present a comprehensive correlation analysis of spine morphological features with regression analyses shown in Figure 1. The strong correlations between head-related features and lack of correlation for neck length are clearly demonstrated with appropriate statistical methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Presynaptic features including docked vesicles show strong correlations with postsynaptic features (PSD area and spine head volume), weak correlation with neck diameter, and no correlation with spine neck length, based on analysis of 236 complete axonal boutons and 31,377 vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 demonstrate correlations between presynaptic and postsynaptic features with appropriate regression analyses shown in Figure 2. The pattern of correlations mirrors the postsynaptic findings and is supported by substantial sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "All measured spine features (head volumes, PSD areas, docked vesicles, neck volumes, neck diameters, and neck lengths) show highly skewed distributions with long tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe the distributional properties of spine features shown in Figure 3. The skewed distributions are clearly visible in the histograms and are appropriately characterized, justifying the use of log-normal transformations in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Axon-coupled spine pairs on the same dendrite show nearly identical spine head volumes (slope=0.91), neck diameters (slope=0.93), PSD areas (slope=0.74), and docked vesicles (slope=0.91), but not neck lengths (slope=0.48), with whole spine volumes significantly different from random pairs (KS p=0.018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C35-C42 present the core finding of precise matching in axon-coupled pairs. The regression slopes near 1 for head volumes and neck diameters, combined with strong statistical significance (KS p=0.018 for whole spines, p=0.0002 mentioned in C68), provide compelling evidence for this result. The exclusion of neck length from this pattern is also well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "Spine head volumes span a 60-fold range with a constant coefficient of variation (CV=0.083) across all sizes, indicating that small and large synapses are matched with equal precision in axon-coupled pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C46 establish the constant precision across the size range. The constant CV of 0.083 shown in Figure 5, combined with the lack of correlation between size and variability, strongly supports scale-invariant precision. This is a critical finding for the information storage calculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C57",
+      "C58",
+      "C59",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Based on signal detection theory with a 69% discrimination threshold (SNR=1), the 60-fold range of spine sizes with CV=0.083 allows for a minimum of 26 distinguishable synaptic strengths, corresponding to 4.7 bits of information storage per synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C43-C45, C57-C59, C112-C114 present the information-theoretic calculation. The mathematical framework is sound, using established signal detection theory (C45, C112-C113) applied to the empirically measured CV. The calculation shown in Figure 8 and the Methods section is transparent and reproducible. The interpretation as non-uniform quantization (C59) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The observed precision requires time-window averaging over several minutes (2.42-21.8 minutes depending on release probability) to overcome stochastic variability in synaptic activation, with longer windows needed when accounting for additional sources of variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C60-C64 present the time-averaging model based on binomial statistics of vesicle release. The calculations in Table 1 are mathematically correct for the stated assumptions. However, the model only accounts for release probability variability and acknowledges (C64) that other sources would require longer windows, making these lower bounds rather than precise estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The near-identical size relationship observed in axon-coupled pairs on the same dendrite does not hold for axon-coupled spines on different dendrites or for randomly paired spines, showing no significant correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 demonstrate the specificity of the matching effect. Figure 6 shows clear lack of correlation for different-dendrite pairs (n=127) and random pairs, providing important negative controls that strengthen the interpretation that shared postsynaptic history on the same dendrite is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Proximity of astrocytic glial processes (engulfed spinules, ensheathed, adjacent, or distant) is not significantly correlated with spine head volumes, with all distributions statistically indistinguishable from the whole population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 test whether glial proximity affects spine size matching. Figure 7 shows KS tests for four categories of glial proximity, all with non-significant p-values, indicating glial proximity does not explain the observed precision. This is an appropriate control analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Time averaging through CaMKII phosphorylation, which integrates calcium signals over minutes to hours, provides a plausible biochemical mechanism for achieving the observed precision, with time scales matching those predicted by the binomial model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C86 propose CaMKII as the time-averaging mechanism. While the time scales of CaMKII activity (C83, C84) align with the calculated averaging windows, this remains speculative (C81 is labeled as SPECULATION). The convergence of time scales is suggestive but not definitive proof of mechanism. Additional experimental validation would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The current study provides improved precision estimates compared to prior work by focusing on spine head volume rather than whole spine volume, using an unbiased dense reconstruction, with findings replicated across three animals and achieving high statistical significance (p=0.0002, equivalent to 1 in 5000 chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 contextualize the findings relative to prior work. The methodological improvement of excluding neck volume (C65, supported by C42) is valid. The statistical significance (C68) is correctly interpreted. Replication across three animals (C67) strengthens generalizability, though the total sample of 20 pairs remains modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Both spine head volume and neck diameter are under tight control of synaptic plasticity in axon-coupled pairs (r\u00b2=0.70 for neck diameter), which is unexpected given the lack of correlation between these features in the general population, suggesting two independently regulated geometric aspects potentially reflecting different synaptic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 identify an unexpected finding about neck diameter control. The high correlation in axon-coupled pairs (C70, r\u00b2=0.70) despite weak population-level correlation (C19) is well-documented. The interpretation of dual control (C71) is reasonable, though the functional speculation about trafficking (C72) remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The findings of high precision in axon-coupled pairs are consistent with prior observations in neocortex and mouse cortex, with the current spine-based estimates showing an order of magnitude lower variability than release probability-based estimates, suggesting this may be a general principle across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 place findings in broader context. The comparison with neocortex (C73) and mouse cortex (C75) data from prior studies supports generalizability. The order of magnitude improvement over release probability estimates (C74) is a valid comparison highlighting the value of anatomical measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "An unusual triple synapse with a shared multi-synaptic bouton (MSB) was excluded from analysis, but its inclusion would not greatly affect the variability estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe a methodological decision with appropriate justification. The exclusion is based on structural differences (shared MSB for three synapses vs. two), and the robustness claim (C80) is reasonable given only 3 additional pairs would be added to the 17 analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study used serial EM reconstruction of hippocampal CA1 from three adult rats, analyzing 287 valid spine synapses from 449 total contacts in a 6\u00d76\u00d75 \u03bcm\u00b3 volume, with measurement error <5% for most spines (median ~1%), and appropriate statistical methods including log-normal transformations and KS tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C111 describe the methods comprehensively. Sample sizes are clearly reported with appropriate exclusion criteria (edge effects, shaft synapses). Measurement error assessment (C104) is rigorous with multiple tracers. Statistical methods (C109-C111) are appropriate for skewed distributions. The docked vesicle criterion (C107-C108) is validated against prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors speculate on several functional implications including dendritic compartmentalization effects, probabilistic sampling strategies for energy efficiency, analogies to dropout regularization in machine learning, and suggest future directions for studying axon-coupled pairs in other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 and C89-C94 are primarily speculative (labeled as SPECULATION in evidence). While these ideas are interesting and potentially valuable for generating hypotheses, they lack direct experimental support. The dropout analogy (C91-C92) is conceptually interesting but remains untested in biological systems. These represent discussion points rather than established results.",
+    "result_type": "MINOR"
+  }
+]
