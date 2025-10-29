@@ -4,7 +4,7 @@ Script to generate visualization plots for manuscripts based on visualize_result
 
 This script generates four types of plots for each manuscript:
 1. Bar plot showing agreement status counts
-2. Confusion matrix comparing peer vs LLM result statuses
+2. Confusion matrix comparing peer vs OpenEval result statuses
 3. Scatter plot showing claims per result
 4. Combined stacked bar and Jaccard index plot
 
@@ -93,7 +93,7 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
         
         if verbose:
             print(f"Generating plots for {manuscript_name}...")
-            print(f"  LLM results: {len(eval_llm)}")
+            print(f"  OpenEval results: {len(eval_llm)}")
             print(f"  Peer results: {len(eval_peer)}")
             print(f"  Concordance rows: {len(cmp_data)}")
             print(f"  Claims: {len(claims_data)}")
@@ -128,20 +128,20 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
         
         # Proper agreement category order and capitalization
         desired_agree_order = ["Agree", "Partial", "Disagree", "Disjoint"]
-        df_cmp["agreement_status"] = df_cmp["agreement_status"].astype(str).str.capitalize()
+        df_cmp["comparison_type"] = df_cmp["comparison_type"].astype(str).str.capitalize()
         
-        # Calculate intersection fraction (Jaccard denominator is max(n_llm, n_peer))
-        df_cmp["intersection_fraction"] = df_cmp["n_itx"] / df_cmp[["n_llm", "n_peer"]].max(axis=1)
+        # Calculate intersection fraction (Jaccard denominator is max(n_openeval, n_peer))
+        df_cmp["intersection_fraction"] = df_cmp["n_itx"] / df_cmp[["n_openeval", "n_peer"]].max(axis=1)
         
         def safe_int(s):
             return s.where(pd.notnull(s) & np.isfinite(s), 0).astype(int)
         
         df_cmp["n_peer_int"] = safe_int(df_cmp["n_peer"])
-        df_cmp["n_llm_int"] = safe_int(df_cmp["n_llm"])
+        df_cmp["n_openeval_int"] = safe_int(df_cmp["n_openeval"])
         
         # --- 1. Bar plot: agreement status count ---
         fig_agree, ax_agree = plt.subplots(figsize=(5.2, 5))
-        agreement_counts = df_cmp["agreement_status"].value_counts()
+        agreement_counts = df_cmp["comparison_type"].value_counts()
         agreement_counts = agreement_counts.reindex(desired_agree_order, fill_value=0)
         ax_agree.bar(agreement_counts.index, agreement_counts.values, color=bar_color)
         ax_agree.grid(axis='y', linestyle="--", color="#cccccc", linewidth=1, alpha=0.7, zorder=0)
@@ -160,14 +160,14 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
         
         # --- 2. Confusion Matrix: Peer vs LLM result status ---
         fig_conf, ax_conf = plt.subplots(figsize=(6.3, 6.3))
-        df_cmp["peer_status"] = df_cmp["peer_status"].fillna("Unknown").replace("Unknown", "Not reviewed")
-        df_cmp["llm_status"] = df_cmp["llm_status"].fillna("Unknown").replace("Unknown", "Not reviewed")
+        df_cmp["peer_evaluation_type"] = df_cmp["peer_evaluation_type"].fillna("Unknown").replace("Unknown", "Not reviewed")
+        df_cmp["openeval_evaluation_type"] = df_cmp["openeval_evaluation_type"].fillna("Unknown").replace("Unknown", "Not reviewed")
         ordered_statuses = ["Supported", "Uncertain", "Unsupported", "Not reviewed"]
-        df_cmp["peer_status"] = df_cmp["peer_status"].astype(str).str.capitalize()
-        df_cmp["llm_status"] = df_cmp["llm_status"].astype(str).str.capitalize()
-        df_cmp["peer_status"] = pd.Categorical(df_cmp["peer_status"], categories=ordered_statuses, ordered=True)
-        df_cmp["llm_status"] = pd.Categorical(df_cmp["llm_status"], categories=ordered_statuses, ordered=True)
-        conf_mat = pd.crosstab(df_cmp["peer_status"], df_cmp["llm_status"]).reindex(
+        df_cmp["peer_evaluation_type"] = df_cmp["peer_evaluation_type"].astype(str).str.capitalize()
+        df_cmp["openeval_evaluation_type"] = df_cmp["openeval_evaluation_type"].astype(str).str.capitalize()
+        df_cmp["peer_evaluation_type"] = pd.Categorical(df_cmp["peer_evaluation_type"], categories=ordered_statuses, ordered=True)
+        df_cmp["openeval_evaluation_type"] = pd.Categorical(df_cmp["openeval_evaluation_type"], categories=ordered_statuses, ordered=True)
+        conf_mat = pd.crosstab(df_cmp["peer_evaluation_type"], df_cmp["openeval_evaluation_type"]).reindex(
             index=ordered_statuses, columns=ordered_statuses, fill_value=0
         )
         im = ax_conf.imshow(conf_mat.T, cmap="Blues", aspect="equal")
@@ -193,17 +193,17 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
         ax_scatter.grid(axis='both', linestyle="--", color="#cccccc", linewidth=1, alpha=0.7, zorder=0)
         ax_scatter.set_axisbelow(True)
         for status in desired_agree_order:
-            group = df_cmp[df_cmp["agreement_status"] == status]
+            group = df_cmp[df_cmp["comparison_type"] == status]
             if not group.empty:
                 ax_scatter.scatter(
-                    group["n_peer_int"], group["n_llm_int"], s=110,
+                    group["n_peer_int"], group["n_openeval_int"], s=110,
                     label=status, color=colors.get(status, "gray"), edgecolors="black"
                 )
                 for _, row in group.iterrows():
-                    ax_scatter.text(row["n_peer_int"] + 0.2, row["n_llm_int"] + 0.2, 
-                                   str(row["llm_result_id"]) + "/" + str(row["peer_result_id"]), fontsize=8)
-        min_val = min(df_cmp["n_peer_int"].min(), df_cmp["n_llm_int"].min())
-        max_val = max(df_cmp["n_peer_int"].max(), df_cmp["n_llm_int"].max())
+                    ax_scatter.text(row["n_peer_int"] + 0.2, row["n_openeval_int"] + 0.2, 
+                                   str(row["openeval_result_id"]) + "/" + str(row["peer_result_id"]), fontsize=8)
+        min_val = min(df_cmp["n_peer_int"].min(), df_cmp["n_openeval_int"].min())
+        max_val = max(df_cmp["n_peer_int"].max(), df_cmp["n_openeval_int"].max())
         xlim = (-1, max_val + 1)
         ylim = (-1, max_val + 1)
         ax_scatter.set_xlim(xlim)
@@ -231,42 +231,42 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
         
         # --- 4. Combined stacked bar and Jaccard index plot (shared x-axis) ---
         # Prepare values for stacked & Jaccard bar charts
-        mask = (~df_cmp["n_peer"].isna()) & (~df_cmp["n_llm"].isna())
+        mask = (~df_cmp["n_peer"].isna()) & (~df_cmp["n_openeval"].isna())
         df_overlap = df_cmp[mask].reset_index(drop=True)
         
         sort_agree = desired_agree_order
         def sort_key(row):
-            status = str(row["agreement_status"]).capitalize()
+            status = str(row["comparison_type"]).capitalize()
             order = sort_agree.index(status) if status in sort_agree else 99
             jaccard = row["intersection_fraction"] if not pd.isnull(row["intersection_fraction"]) else 0
             return (order, -jaccard)
         
-        if "agreement_status" in df_overlap.columns and "intersection_fraction" in df_overlap.columns:
+        if "comparison_type" in df_overlap.columns and "intersection_fraction" in df_overlap.columns:
             df_overlap = df_overlap.copy()
-            df_overlap["agreement_status"] = df_overlap["agreement_status"].astype(str).str.capitalize()
+            df_overlap["comparison_type"] = df_overlap["comparison_type"].astype(str).str.capitalize()
             df_overlap["__sort__"] = df_overlap.apply(sort_key, axis=1)
             df_overlap = df_overlap.sort_values("__sort__").reset_index(drop=True)
             df_overlap = df_overlap.drop(columns="__sort__")
         
-        df_overlap["n_llm_only"] = df_overlap["n_llm"] - df_overlap["n_itx"]
+        df_overlap["n_openeval_only"] = df_overlap["n_openeval"] - df_overlap["n_itx"]
         df_overlap["n_peer_only"] = df_overlap["n_peer"] - df_overlap["n_itx"]
         df_overlap["n_shared"] = df_overlap["n_itx"]
         df_overlap["jaccard"] = df_overlap["intersection_fraction"]
-        llm_only_counts = df_overlap["n_llm_only"].values
+        llm_only_counts = df_overlap["n_openeval_only"].values
         peer_only_counts = df_overlap["n_peer_only"].values
         shared_counts = df_overlap["n_shared"].values
         jaccard_vals = df_overlap["jaccard"].values
         bar_width = 0.85
         indices = np.arange(len(df_overlap))
         
-        if ("llm_result_id" in df_overlap.columns) and ("peer_result_id" in df_overlap.columns):
-            xtick_labels = [f"{llm_id}/{peer_id}" for llm_id, peer_id in zip(df_overlap["llm_result_id"], df_overlap["peer_result_id"])]
+        if ("openeval_result_id" in df_overlap.columns) and ("peer_result_id" in df_overlap.columns):
+            xtick_labels = [f"{llm_id}/{peer_id}" for llm_id, peer_id in zip(df_overlap["openeval_result_id"], df_overlap["peer_result_id"])]
         else:
             xtick_labels = indices.astype(str)
         
         xtick_label_colors = []
-        if "agreement_status" in df_overlap.columns:
-            for status in df_overlap["agreement_status"]:
+        if "comparison_type" in df_overlap.columns:
+            for status in df_overlap["comparison_type"]:
                 status_cap = str(status).capitalize()
                 xtick_label_colors.append(status_colors.get(status_cap, "#000000"))
         else:
@@ -294,7 +294,7 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
             bottom=shared_counts,
             width=bar_width,
             color=colors_stacked["llm_only"],
-            label="LLM Only",
+            label="OpenEval Only",
             edgecolor="black"
         )
         p_peer_only = ax_stacked.bar(
@@ -323,7 +323,7 @@ def generate_plots(manuscript_dir: Path, v1_dir: Path, data: Dict[str, Any], ver
             indices, jaccard_vals, width=bar_width, color=jaccard_color, edgecolor="black"
         )
         ax_jaccard.set_ylabel("Jaccard Index", fontsize=fontsize+2)
-        ax_jaccard.set_xlabel("LLM Result ID / Peer Result ID", fontsize=fontsize+2, labelpad=6)
+        ax_jaccard.set_xlabel("OpenEval Result ID / Peer Result ID", fontsize=fontsize+2, labelpad=6)
         ax_jaccard.set_xticks(indices)
         tick_objs = ax_jaccard.set_xticklabels(xtick_labels, fontsize=fontsize, rotation=90)
         for lbl, color in zip(ax_jaccard.get_xticklabels(), xtick_label_colors):
@@ -379,7 +379,7 @@ def process_manuscript(manuscript_dir: Path, verbose: bool = False, dry_run: boo
 def main():
     parser = argparse.ArgumentParser(description="Generate visualization plots for manuscripts and save in v1 directories")
     parser.add_argument("--manuscripts-dir", type=Path, 
-                       default=Path(__file__).parent / "manuscripts",
+                       default=Path(__file__).parent / "../manuscripts",
                        help="Directory containing manuscript directories")
     parser.add_argument("--manuscript", type=str, 
                        help="Process only a specific manuscript (e.g., 'elife-00003')")
